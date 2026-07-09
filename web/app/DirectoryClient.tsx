@@ -71,13 +71,13 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
 
       <section className="max-w-[1120px] mx-auto px-5 pt-11 pb-2">
         <p className="uppercase tracking-[.16em] text-xs font-bold text-primary-deep mb-3.5">
-          Annuaire local · Activités &amp; loisirs
+          Annuaire local · Activités, restaurants &amp; adresses utiles
         </p>
         <h1 className="text-[clamp(30px,5vw,46px)] leading-[1.05] tracking-tight max-w-[15ch] text-balance m-0">
           Tout ce qu&apos;on peut <em className="not-italic text-primary">faire</em> à Grand Baie.
         </h1>
         <p className="text-muted text-[17px] leading-[1.55] max-w-[56ch] mt-4">
-          Excursions en mer, plongée, spa, sports nautiques, golf… Retrouvez les prestataires du
+          Excursions en mer, plongée, spa, restaurants, boutiques… Retrouvez les prestataires du
           Nord en un coup d&apos;œil — puis appelez, visitez leur site ou lancez l&apos;itinéraire.
         </p>
         <div className="relative max-w-[520px] mt-6">

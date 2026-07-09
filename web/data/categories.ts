@@ -11,6 +11,8 @@ export const CATEGORIES: Category[] = [
   { key: "golf", label: "Golf", emoji: "⛳", color: "#6a8f1f" },
   { key: "loisirs", label: "Loisirs & famille", emoji: "🎡", color: "#ef6a4c" },
   { key: "visites", label: "Visites guidées", emoji: "🗺️", color: "#a15c3a" },
+  { key: "restaurants", label: "Restaurants & bars", emoji: "🍽️", color: "#d4483f" },
+  { key: "shopping", label: "Shopping & boutiques", emoji: "🛍️", color: "#9c7a3c" },
 ];
 
 export const CATEGORY_MAP = Object.fromEntries(

@@ -45,7 +45,12 @@ const REQUETES = [
   { query: 'location jet ski Grand Baie',              categorie: 'Jet ski' },
   { query: 'quad buggy Grand Baie',                    categorie: 'Quad & Buggy' },
   { query: 'parachute ascensionnel Grand Baie',        categorie: 'Parasailing' },
-  { query: 'activités loisirs Grand Baie Ile Maurice', categorie: 'Activités & loisirs' }
+  { query: 'activités loisirs Grand Baie Ile Maurice', categorie: 'Activités & loisirs' },
+
+  { query: 'restaurants Grand Baie Ile Maurice',        categorie: 'restaurants' },
+  { query: 'bars Grand Baie Ile Maurice',                categorie: 'restaurants' },
+  { query: 'boutiques Grand Baie Ile Maurice',           categorie: 'shopping' },
+  { query: 'salon de beauté Grand Baie Ile Maurice',     categorie: 'shopping' }
 ];
 
 // Colonnes du Sheet (la dernière, place_id, sert au dédoublonnage : masquable)

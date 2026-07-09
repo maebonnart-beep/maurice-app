@@ -8,7 +8,9 @@ export type CategoryKey =
   | "spa"
   | "golf"
   | "loisirs"
-  | "visites";
+  | "visites"
+  | "restaurants"
+  | "shopping";
 
 export type Category = {
   key: CategoryKey;
