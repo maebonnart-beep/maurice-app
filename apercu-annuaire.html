@@ -1,0 +1,505 @@
+<style>
+  :root {
+    --bg: #eef4f3;
+    --surface: #ffffff;
+    --surface-2: #f4f8f7;
+    --ink: #0d2b2a;
+    --muted: #5c726f;
+    --border: #d9e6e3;
+    --primary: #0e8b84;
+    --primary-deep: #0a6d67;
+    --primary-tint: #e2f1ef;
+    --accent: #ef6a4c;
+    --shadow: 0 1px 2px rgba(13,43,42,.05), 0 12px 30px -14px rgba(13,43,42,.28);
+    --shadow-hover: 0 2px 4px rgba(13,43,42,.06), 0 22px 44px -18px rgba(13,43,42,.40);
+    --radius: 16px;
+    --font: "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #071b1a;
+      --surface: #0f2a28;
+      --surface-2: #0b211f;
+      --ink: #eaf3f1;
+      --muted: #90a9a6;
+      --border: #1d3f3c;
+      --primary: #2bb3aa;
+      --primary-deep: #56c9c0;
+      --primary-tint: #123330;
+      --accent: #ff7d5e;
+      --shadow: 0 1px 2px rgba(0,0,0,.4), 0 14px 34px -16px rgba(0,0,0,.7);
+      --shadow-hover: 0 2px 6px rgba(0,0,0,.5), 0 24px 48px -18px rgba(0,0,0,.8);
+    }
+  }
+  :root[data-theme="light"] {
+    --bg: #eef4f3; --surface: #ffffff; --surface-2: #f4f8f7; --ink: #0d2b2a;
+    --muted: #5c726f; --border: #d9e6e3; --primary: #0e8b84; --primary-deep: #0a6d67;
+    --primary-tint: #e2f1ef; --accent: #ef6a4c;
+    --shadow: 0 1px 2px rgba(13,43,42,.05), 0 12px 30px -14px rgba(13,43,42,.28);
+    --shadow-hover: 0 2px 4px rgba(13,43,42,.06), 0 22px 44px -18px rgba(13,43,42,.40);
+  }
+  :root[data-theme="dark"] {
+    --bg: #071b1a; --surface: #0f2a28; --surface-2: #0b211f; --ink: #eaf3f1;
+    --muted: #90a9a6; --border: #1d3f3c; --primary: #2bb3aa; --primary-deep: #56c9c0;
+    --primary-tint: #123330; --accent: #ff7d5e;
+    --shadow: 0 1px 2px rgba(0,0,0,.4), 0 14px 34px -16px rgba(0,0,0,.7);
+    --shadow-hover: 0 2px 6px rgba(0,0,0,.5), 0 24px 48px -18px rgba(0,0,0,.8);
+  }
+
+  * { box-sizing: border-box; }
+  body { margin: 0; }
+  .app {
+    font-family: var(--font);
+    color: var(--ink);
+    background:
+      radial-gradient(1200px 500px at 78% -8%, color-mix(in srgb, var(--primary) 16%, transparent), transparent 60%),
+      var(--bg);
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 0 20px; }
+
+  /* Header */
+  header.bar {
+    position: sticky; top: 0; z-index: 20;
+    background: color-mix(in srgb, var(--bg) 82%, transparent);
+    backdrop-filter: saturate(150%) blur(10px);
+    border-bottom: 1px solid var(--border);
+  }
+  .bar-in { display: flex; align-items: center; justify-content: space-between; height: 60px; }
+  .brand { display: flex; align-items: center; gap: 10px; font-weight: 700; letter-spacing: -.01em; font-size: 18px; }
+  .brand .dot { width: 12px; height: 12px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent) 22%, transparent); }
+  .brand small { color: var(--muted); font-weight: 500; }
+  .bar-loc { font-size: 13px; color: var(--muted); display: flex; align-items: center; gap: 6px; }
+
+  /* Hero */
+  .hero { padding: 44px 0 8px; }
+  .eyebrow { text-transform: uppercase; letter-spacing: .16em; font-size: 12px; font-weight: 700; color: var(--primary-deep); margin: 0 0 14px; }
+  .hero h1 { font-size: clamp(30px, 5vw, 46px); line-height: 1.05; letter-spacing: -.02em; margin: 0; text-wrap: balance; max-width: 15ch; }
+  .hero h1 em { font-style: normal; color: var(--primary); position: relative; }
+  .hero h1 em::after { content: ""; position: absolute; left: 0; right: 0; bottom: 2px; height: 6px; background: color-mix(in srgb, var(--accent) 55%, transparent); border-radius: 4px; z-index: -1; }
+  .hero p.lede { color: var(--muted); font-size: 17px; line-height: 1.55; max-width: 56ch; margin: 16px 0 0; }
+
+  /* Search */
+  .search { margin: 26px 0 4px; position: relative; max-width: 520px; }
+  .search svg { position: absolute; left: 16px; top: 50%; transform: translateY(-50%); width: 18px; height: 18px; color: var(--muted); }
+  .search input {
+    width: 100%; height: 52px; padding: 0 16px 0 46px;
+    border-radius: 999px; border: 1px solid var(--border); background: var(--surface);
+    color: var(--ink); font-size: 16px; font-family: inherit; box-shadow: var(--shadow);
+    transition: border-color .15s, box-shadow .15s;
+  }
+  .search input::placeholder { color: var(--muted); }
+  .search input:focus { outline: none; border-color: var(--primary); box-shadow: 0 0 0 4px color-mix(in srgb, var(--primary) 18%, transparent); }
+
+  /* Filter chips */
+  .filters { position: sticky; top: 60px; z-index: 15; background: color-mix(in srgb, var(--bg) 82%, transparent); backdrop-filter: blur(8px); margin-top: 22px; padding: 12px 0; border-bottom: 1px solid var(--border); }
+  .chips { display: flex; gap: 9px; overflow-x: auto; padding-bottom: 2px; scrollbar-width: thin; }
+  .chips::-webkit-scrollbar { height: 6px; }
+  .chips::-webkit-scrollbar-thumb { background: var(--border); border-radius: 999px; }
+  .chip {
+    flex: 0 0 auto; display: inline-flex; align-items: center; gap: 7px;
+    padding: 9px 15px; border-radius: 999px; border: 1px solid var(--border);
+    background: var(--surface); color: var(--ink); font-size: 14px; font-weight: 600;
+    font-family: inherit; cursor: pointer; white-space: nowrap; transition: all .15s;
+  }
+  .chip:hover { border-color: var(--primary); }
+  .chip[aria-pressed="true"] { background: var(--primary); border-color: var(--primary); color: #fff; }
+  .chip .n { font-size: 12px; font-weight: 700; opacity: .7; font-variant-numeric: tabular-nums; }
+
+  /* Count line */
+  .countline { padding: 20px 0 6px; font-size: 14px; color: var(--muted); }
+  .countline b { color: var(--ink); font-variant-numeric: tabular-nums; }
+
+  /* Grid */
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 18px; padding: 6px 0 60px; }
+  .card {
+    background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+    padding: 20px; box-shadow: var(--shadow); display: flex; flex-direction: column; gap: 12px;
+    transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+  }
+  .card:hover { transform: translateY(-4px); box-shadow: var(--shadow-hover); border-color: color-mix(in srgb, var(--primary) 40%, var(--border)); }
+  .badge { align-self: flex-start; display: inline-flex; align-items: center; gap: 6px; padding: 5px 11px; border-radius: 999px; background: var(--primary-tint); color: var(--primary-deep); font-size: 12.5px; font-weight: 700; letter-spacing: .01em; }
+  .card h3 { margin: 0; font-size: 18px; line-height: 1.25; letter-spacing: -.01em; text-wrap: balance; }
+  .addr { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.5; display: flex; gap: 7px; }
+  .addr svg { flex: 0 0 auto; width: 15px; height: 15px; margin-top: 2px; }
+  .actions { margin-top: auto; display: flex; flex-wrap: wrap; gap: 8px; padding-top: 4px; }
+  .btn { display: inline-flex; align-items: center; gap: 6px; padding: 9px 13px; border-radius: 10px; font-size: 13.5px; font-weight: 600; text-decoration: none; border: 1px solid var(--border); color: var(--ink); background: var(--surface-2); transition: all .14s; }
+  .btn svg { width: 15px; height: 15px; }
+  .btn:hover { border-color: var(--primary); color: var(--primary-deep); }
+  .btn.primary { background: var(--primary); border-color: var(--primary); color: #fff; }
+  .btn.primary:hover { background: var(--primary-deep); color: #fff; }
+  .btn.disabled { opacity: .45; pointer-events: none; }
+  .btn:focus-visible, .chip:focus-visible, .search input:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  /* Empty */
+  .empty { text-align: center; padding: 70px 20px; color: var(--muted); }
+  .empty .big { font-size: 40px; margin-bottom: 10px; }
+
+  footer { border-top: 1px solid var(--border); padding: 22px 0 40px; color: var(--muted); font-size: 13px; line-height: 1.6; }
+  footer b { color: var(--ink); }
+
+  /* Carte */
+  .mapcard { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow); overflow: hidden; margin-top: 22px; }
+  .maphead { display: flex; align-items: center; justify-content: space-between; gap: 12px 20px; padding: 14px 18px; border-bottom: 1px solid var(--border); flex-wrap: wrap; }
+  .maphead strong { font-size: 15px; display: block; letter-spacing: -.01em; }
+  .maphead .sub { font-size: 12.5px; color: var(--muted); }
+  .mapkey { display: flex; align-items: center; gap: 16px; font-size: 12.5px; color: var(--muted); }
+  .mapkey i { font-style: normal; display: inline-flex; align-items: center; gap: 6px; }
+  .mapkey .d1 { width: 10px; height: 10px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 2px color-mix(in srgb, var(--accent) 25%, transparent); }
+  .mapkey .d2 { width: 11px; height: 11px; border-radius: 50%; background: var(--primary); box-shadow: 0 0 0 2px color-mix(in srgb, var(--primary) 25%, transparent); }
+  .mapstage { position: relative; background: var(--surface-2); }
+  #map { display: block; width: 100%; height: auto; }
+  .water { fill: color-mix(in srgb, var(--primary) 12%, var(--surface)); }
+  .ring { fill: none; stroke: color-mix(in srgb, var(--primary) 32%, transparent); stroke-dasharray: 3 6; }
+  .ringlab { fill: var(--muted); font-size: 10px; text-anchor: middle; font-family: var(--font); }
+  .ctr { fill: var(--primary); stroke: var(--surface); stroke-width: 2.5; }
+  .ctrlab { fill: var(--primary-deep); font-size: 12.5px; font-weight: 700; text-anchor: middle; font-family: var(--font); }
+  .compass line, .compass path { stroke: var(--muted); fill: var(--muted); stroke-width: 1.5; stroke-linejoin: round; }
+  .compass text { fill: var(--muted); font-size: 11px; font-weight: 700; text-anchor: middle; font-family: var(--font); }
+  .mk { fill: var(--accent); stroke: var(--surface); stroke-width: 1.5; opacity: .88; cursor: pointer; transition: opacity .12s, r .12s; }
+  .mk:hover, .mk.on { opacity: 1; r: 9; }
+  .maptip { position: absolute; transform: translate(-50%, calc(-100% - 8px)); background: var(--ink); color: var(--bg); padding: 7px 11px; border-radius: 9px; font-size: 12.5px; line-height: 1.35; pointer-events: none; box-shadow: 0 8px 22px rgba(0,0,0,.28); z-index: 5; max-width: 210px; }
+  .maptip b { display: block; }
+  .maptip span { opacity: .72; font-size: 11.5px; }
+  .mapfoot { padding: 11px 18px; font-size: 11.5px; line-height: 1.5; color: var(--muted); border-top: 1px solid var(--border); }
+  .card.hl { border-color: color-mix(in srgb, var(--accent) 55%, var(--border)); box-shadow: var(--shadow-hover); }
+  .card.flash { animation: flash 1.2s ease; }
+  @keyframes flash {
+    0%, 100% { box-shadow: var(--shadow); }
+    18% { box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 60%, transparent), var(--shadow-hover); }
+  }
+
+  @media (max-width: 560px) {
+    .hero { padding: 30px 0 4px; }
+    .grid { grid-template-columns: 1fr; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; }
+    .card:hover { transform: none; }
+    .card.flash { animation: none; }
+  }
+</style>
+
+<div class="app">
+  <header class="bar">
+    <div class="wrap bar-in">
+      <div class="brand"><span class="dot"></span>Maurice<sup style="color:var(--accent)">+</sup>&nbsp;<small>Activités</small></div>
+      <div class="bar-loc">
+        <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0116 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        Grand Baie · Île Maurice
+      </div>
+    </div>
+  </header>
+
+  <section class="wrap hero">
+    <p class="eyebrow">Annuaire local · Activités &amp; loisirs</p>
+    <h1>Tout ce qu'on peut <em>faire</em> à Grand Baie.</h1>
+    <p class="lede">Excursions en mer, plongée, spa, sports nautiques, golf&nbsp;… Retrouvez les prestataires du Nord en un coup d'œil — puis appelez, visitez leur site ou lancez l'itinéraire.</p>
+    <div class="search">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/></svg>
+      <input id="q" type="search" placeholder="Rechercher une activité, un lieu, un nom…" aria-label="Rechercher" autocomplete="off">
+    </div>
+  </section>
+
+  <div class="filters">
+    <div class="wrap"><div class="chips" id="chips"></div></div>
+  </div>
+
+  <div class="wrap">
+    <div class="mapcard">
+      <div class="maphead">
+        <div>
+          <strong>Carte des activités</strong>
+          <span class="sub">Positions GPS réelles · survolez ou cliquez un point pour le retrouver dans la liste</span>
+        </div>
+        <div class="mapkey">
+          <i><span class="d2"></span>Grand Baie</i>
+          <i><span class="d1"></span>Activité</i>
+        </div>
+      </div>
+      <div class="mapstage" id="mapstage">
+        <svg id="map" viewBox="0 0 820 470" role="img" aria-label="Carte schématique des activités autour de Grand Baie"><g id="mapbase"></g><g id="mapmk"></g></svg>
+        <div class="maptip" id="maptip" hidden></div>
+      </div>
+      <div class="mapfoot">Carte schématique — sans fond satellite dans l'aperçu (les tuiles externes sont bloquées ici). Les anneaux indiquent la distance à Grand Baie ; le vrai fond de carte arrivera dans l'app.</div>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <p class="countline" id="count"></p>
+    <div class="grid" id="grid"></div>
+    <div class="empty" id="empty" hidden><div class="big">🔍</div>Aucun résultat. Essayez un autre mot-clé ou une autre catégorie.</div>
+  </div>
+
+  <footer>
+    <div class="wrap">
+      <b>Aperçu MVP</b> — sélection de <span id="ftotal"></span> fiches issues de l'import Google Places (Nord de l'île).
+      Les données seront enrichies et vérifiées avant mise en ligne. Statut, horaires et photos viendront ensuite.
+    </div>
+  </footer>
+</div>
+
+<script>
+  const CATS = [
+    { key: "excursions", label: "Excursions & tours", emoji: "🚐" },
+    { key: "croisieres", label: "Croisières & bateau", emoji: "⛵" },
+    { key: "plongee",    label: "Plongée",             emoji: "🤿" },
+    { key: "nautique",   label: "Sports nautiques",    emoji: "🏄" },
+    { key: "kitesurf",   label: "Kitesurf",            emoji: "🪁" },
+    { key: "peche",      label: "Pêche au gros",       emoji: "🎣" },
+    { key: "spa",        label: "Spa & bien-être",     emoji: "💆" },
+    { key: "golf",       label: "Golf",                emoji: "⛳" },
+    { key: "loisirs",    label: "Loisirs & famille",   emoji: "🎡" },
+    { key: "visites",    label: "Visites guidées",     emoji: "🗺️" }
+  ];
+  const CATMAP = Object.fromEntries(CATS.map(c => [c.key, c]));
+
+  const DATA = [
+    { n:"Blue Safari Catamaran — Grand Baie", c:"croisieres", a:"Sunset Boulevard, Coastal Road, Grand Baie", p:"+230 265 7272", w:"https://blue-safari.com/catamaran/", m:"https://maps.google.com/?cid=8681168533616269130" },
+    { n:"Z'ile Cruise", c:"croisieres", a:"Sunset Boulevard, Royal Road, Grand Baie", p:"+230 5709 0632", w:"http://www.zilecruise.com/", m:"https://maps.google.com/?cid=393444125259425734" },
+    { n:"TOPCAT Cruises", c:"croisieres", a:"Orchidées Street, Grand Baie", p:"+230 5790 8123", w:"", m:"https://maps.google.com/?cid=11001441866492693967" },
+    { n:"Passion Océane — Wind Dancer", c:"croisieres", a:"Public Beach, Grand Baie", p:"+230 5498 8585", w:"http://www.passionoceane.com/", m:"https://maps.google.com/?cid=2864065792299776409" },
+    { n:"Predator Cruiser", c:"croisieres", a:"Route Royale, Grand Baie 30510", p:"+230 5927 7109", w:"http://www.predatorcruiser.com/", m:"https://maps.google.com/?cid=7148306089398849181" },
+    { n:"Groove Boat", c:"croisieres", a:"Route côtière, Jetée Mamma Mia, Grand Baie", p:"+230 5254 4909", w:"http://grooveboat.mu/", m:"https://maps.google.com/?cid=4048905950325115564" },
+    { n:"Perle d'Océan Catamaran", c:"croisieres", a:"Grand Baie", p:"+230 5509 0713", w:"https://www.catamaranperledocean.com/", m:"https://maps.google.com/?cid=1727043392322724839" },
+    { n:"Captain Tamtam Glass Bottom Boat", c:"croisieres", a:"Coastal Road, Grand Baie 30510", p:"+230 5483 6696", w:"", m:"https://maps.google.com/?cid=15330380924514946695" },
+
+    { n:"Dauphiné Tours Mauritius", c:"excursions", a:"B13, Grand Baie", p:"+230 5767 6933", w:"http://www.dauphinetoursmauritius.com/", m:"https://maps.google.com/?cid=1857086100318987028" },
+    { n:"Mauritius Dream Excursion Tours", c:"excursions", a:"Royal Road, Grand Baie 30546", p:"+230 5940 2073", w:"https://mauritiusdreamexcursion.com/", m:"https://maps.google.com/?cid=2990814957000321122" },
+    { n:"Northview Tours", c:"excursions", a:"Grand Baie", p:"+230 5764 9866", w:"https://www.northviewtours.com/", m:"https://maps.google.com/?cid=12500453622541015109" },
+    { n:"Ebrahim Tours", c:"excursions", a:"Royal Road, Grand Baie", p:"+230 5745 0101", w:"https://www.ebrahimtours.mu/", m:"https://maps.google.com/?cid=217784278032965291" },
+    { n:"Monalysa Holidays & Tour Operator", c:"excursions", a:"Route La Salette, face Village Hall, Grand Baie", p:"+230 5937 7750", w:"http://monalysaholidays.com/", m:"https://maps.google.com/?cid=16358540185538023160" },
+    { n:"Grand Baie Travel & Tours", c:"excursions", a:"Route Royale, Grand Baie", p:"+230 263 8771", w:"", m:"https://maps.google.com/?cid=6866569456133710834" },
+
+    { n:"Panorama Divers", c:"plongee", a:"Shop 4, Orchid Street, Grand Baie", p:"+230 5859 0102", w:"https://panoramadivers.com/", m:"https://maps.google.com/?cid=5021957795007837402" },
+    { n:"Emperator Diving Center — Lux* Grand Baie", c:"plongee", a:"LUX* Grand Baie, Coastal Road", p:"+230 5256 6104", w:"https://www.emperatordiving.com/", m:"https://maps.google.com/?cid=8828463439379043748" },
+    { n:"Merman Diving Mauritius", c:"plongee", a:"Camp Carol, Mahatma Gandhi Road, Grand Baie", p:"+230 5909 6249", w:"", m:"https://maps.google.com/?cid=5484249657585698242" },
+    { n:"Just Diving In Mauritius", c:"plongee", a:"B13 Royal Road, Bain Bœuf, Pereybère", p:"+230 5834 0863", w:"http://www.justdivingmauritius.com/", m:"https://maps.google.com/?cid=10628860370312640503" },
+    { n:"Pro Dive Mauritius", c:"plongee", a:"Coastal Road, Trou aux Biches", p:"+230 265 6213", w:"http://www.prodivemauritius.com/", m:"https://maps.google.com/?cid=17608256195702833192" },
+    { n:"Diving World", c:"plongee", a:"Canonnier Beachcomber Resort, Grand Baie", p:"+230 209 7000", w:"https://www.diving-mauritius.com/", m:"https://maps.google.com/?cid=13046300199373907599" },
+    { n:"Ocean Spirit Scuba Diving", c:"plongee", a:"Coastal Road, Pereybère", p:"+230 5255 2732", w:"", m:"https://maps.google.com/?cid=9385306842462056370" },
+
+    { n:"Centre Sport Nautique", c:"nautique", a:"Route Royale, Grand Baie", p:"+230 263 8017", w:"http://www.centrenautique.com/", m:"https://maps.google.com/?cid=6349339379895925535" },
+    { n:"Espace Marin — Grand Bay", c:"nautique", a:"Coastal Road, Grand Baie", p:"+230 263 5204", w:"http://www.espacemarin.com/", m:"https://maps.google.com/?cid=7152740886112763831" },
+    { n:"eFoil Mauritius : SkySurf", c:"nautique", a:"Coastal Road, Grand Baie 30510", p:"+230 5511 9712", w:"https://www.skysurf.mu/", m:"https://maps.google.com/?cid=4118075574298566432" },
+    { n:"Seabob Mauritius", c:"nautique", a:"Ponton Sunset, face La Kaza, Grand Baie", p:"+230 5253 6704", w:"http://www.seabob.mu/", m:"https://maps.google.com/?cid=8287552743152804015" },
+    { n:"Efoil Mauritius", c:"nautique", a:"Public Beach, Grand Baie", p:"+230 5500 8811", w:"https://www.efoil-mauritius.mu/", m:"https://maps.google.com/?cid=6152584624360854018" },
+
+    { n:"Dreamteam Kitesurfing — Anse la Raie", c:"kitesurf", a:"Anse la Raie Beach, Cap Malheureux", p:"+230 5737 5677", w:"https://www.dreamteamkitesurfing.com/", m:"https://maps.google.com/?cid=7103393654984856578" },
+    { n:"Kite At North", c:"kitesurf", a:"Nelson Road, Grand Gaube", p:"+230 5499 3747", w:"https://www.kiteatnorth.com/", m:"https://maps.google.com/?cid=12215358812365174056" },
+
+    { n:"Horizon Big Game Fishing", c:"peche", a:"B13, Grand Baie", p:"+230 5421 7991", w:"http://mauritiusbiggamefishing.com/", m:"https://maps.google.com/?cid=9054963636092622209" },
+    { n:"Sportfisher", c:"peche", a:"Sunset Boulevard, Shopping Centre, Grand Baie", p:"+230 265 7272", w:"https://sportfisher.mu/", m:"https://maps.google.com/?cid=6092260544714924710" },
+    { n:"Tempo Fishing Club", c:"peche", a:"Royal Road, près du temple tamoul, Grand Baie", p:"+230 5718 5456", w:"https://tempofishingclub.com/", m:"https://maps.google.com/?cid=15086820737702099887" },
+
+    { n:"Luscious Spa", c:"spa", a:"Sottise Road, Grand Baie 30550", p:"+230 5786 7578", w:"http://www.luscious-spa.com/", m:"https://maps.google.com/?cid=4758131894032956476" },
+    { n:"Xtense Spa", c:"spa", a:"Domaine des Alizées, Chem. Vingt Pieds, Grand Baie", p:"+230 5256 0531", w:"https://xtensespa.com/", m:"https://maps.google.com/?cid=13939499645396669041" },
+    { n:"Johaness Spa Grand Baie", c:"spa", a:"Chem. Vingt Pieds, Grand Baie", p:"+230 5820 9841", w:"https://johanessspagrandbaie.com/", m:"https://maps.google.com/?cid=14610026775231580076" },
+    { n:"Spa Ceylon Mauritius", c:"spa", a:"La Croisette Mall, Grand Baie", p:"+230 5507 0746", w:"http://www.spaceylon.mu/", m:"https://maps.google.com/?cid=13298507193373720901" },
+    { n:"Ocea Wellness", c:"spa", a:"Grand Baie Business Park, Mont Choisy", p:"+230 5916 0367", w:"http://www.oceawellness.com/", m:"https://maps.google.com/?cid=16296516236920964023" },
+    { n:"Shantigiri Ayurveda Spa", c:"spa", a:"Suryamukhi Road, Grand Baie", p:"+230 5753 1177", w:"http://www.shantigiriayurvedaspa.com/", m:"https://maps.google.com/?cid=17663091752839048662" },
+    { n:"Sultana Moroccan Hammam & Spa", c:"spa", a:"Coastal Road, Grand Baie 22315", p:"+230 5907 2500", w:"https://sultana-mauritius.com/", m:"https://maps.google.com/?cid=2749757130329642063" },
+    { n:"Vallée de Beauté Spa", c:"spa", a:"La Salette Road, Grand Baie", p:"+230 5916 2335", w:"", m:"https://maps.google.com/?cid=8633443128245196073" },
+
+    { n:"Mont Choisy Le Golf", c:"golf", a:"Chem. Vingt Pieds, Grand Baie 30527", p:"+230 260 1000", w:"http://www.montchoisygolf.com/", m:"https://maps.google.com/?cid=3895903021099921581" },
+
+    { n:"Zaka — Parc accrobranche", c:"loisirs", a:"Super U, Grand Baie 30510", p:"+230 5746 1676", w:"https://www.zaka.mu/", m:"https://maps.google.com/?cid=2471787348365094399" },
+    { n:"Le Lucky Strike — Bowling & Lounge", c:"loisirs", a:"La Salette Road, Grand Baie", p:"+230 263 3308", w:"", m:"https://maps.google.com/?cid=2045537383654708163" },
+    { n:"Dodo Ride", c:"loisirs", a:"Chemin Bazaar, Grand Baie 30502", p:"+230 5925 6285", w:"http://www.dodoride.mu/", m:"https://maps.google.com/?cid=9095322175991038280" },
+    { n:"Fun World", c:"loisirs", a:"Super U, B11, Grand Baie 30551", p:"+230 263 0503", w:"", m:"https://maps.google.com/?cid=6504957089188208708" },
+    { n:"Solar Sea Walk", c:"loisirs", a:"Grand Gaube Coastal Road, Grand Baie", p:"+230 5253 6961", w:"http://www.solarseawalk.com/", m:"https://maps.google.com/?cid=16441129050101705848" },
+    { n:"E-Lab Bike — Vélos électriques", c:"loisirs", a:"Route Royale, Grand Baie 30501", p:"+230 5713 7263", w:"http://www.e-labbikes.com/", m:"https://maps.google.com/?cid=9615883501235171229" },
+
+    { n:"Moris Insider", c:"visites", a:"Route Royale, Grand Baie", p:"", w:"https://www.morisinsider.com/", m:"https://maps.google.com/?cid=5824297552098013610" },
+    { n:"Côte d'Azur Travel & Tours", c:"visites", a:"Royal Road, Pereybère 30546", p:"+230 5763 8665", w:"https://www.cotedazurtraveltours.com/", m:"https://maps.google.com/?cid=3540030587051400268" },
+    { n:"Taxi Mauritius Tours", c:"visites", a:"Royal Road, Grand Baie", p:"+230 5777 0256", w:"http://www.taximauritiustours.com/", m:"https://maps.google.com/?cid=8209468886149154428" }
+  ];
+
+  const COORDS = {
+    "Blue Safari Catamaran — Grand Baie":[-20.0131496,57.5837738],
+    "Z'ile Cruise":[-20.0141891,57.5836539],
+    "TOPCAT Cruises":[-20.0151038,57.5830927],
+    "Passion Océane — Wind Dancer":[-20.0124093,57.5836944],
+    "Predator Cruiser":[-20.0150967,57.5715728],
+    "Groove Boat":[-20.0151926,57.5703364],
+    "Perle d'Océan Catamaran":[-20.0128926,57.5833631],
+    "Captain Tamtam Glass Bottom Boat":[-20.0102014,57.5829068],
+    "Dauphiné Tours Mauritius":[-20.0105914,57.5843017],
+    "Mauritius Dream Excursion Tours":[-19.99429,57.5916873],
+    "Northview Tours":[-20.0104427,57.5841167],
+    "Ebrahim Tours":[-20.0128327,57.5846044],
+    "Monalysa Holidays & Tour Operator":[-20.0131024,57.5858],
+    "Grand Baie Travel & Tours":[-20.0152265,57.582275],
+    "Panorama Divers":[-20.0151895,57.5832472],
+    "Emperator Diving Center — Lux* Grand Baie":[-19.9997659,57.5829579],
+    "Merman Diving Mauritius":[-20.0097755,57.583992],
+    "Just Diving In Mauritius":[-19.9869018,57.603134],
+    "Pro Dive Mauritius":[-20.0254785,57.551332],
+    "Diving World":[-20.0010796,57.5519843],
+    "Ocean Spirit Scuba Diving":[-19.9934558,57.5920544],
+    "Centre Sport Nautique":[-20.0129023,57.5843379],
+    "Espace Marin — Grand Bay":[-20.0114144,57.5847779],
+    "eFoil Mauritius : SkySurf":[-20.0148005,57.5748237],
+    "Seabob Mauritius":[-20.0143029,57.5835717],
+    "Efoil Mauritius":[-20.0098874,57.5557532],
+    "Dreamteam Kitesurfing — Anse la Raie":[-19.9898592,57.6327248],
+    "Kite At North":[-20.0075659,57.6729617],
+    "Horizon Big Game Fishing":[-20.0137325,57.5836176],
+    "Sportfisher":[-20.013162,57.5836817],
+    "Tempo Fishing Club":[-20.0141601,57.5729077],
+    "Luscious Spa":[-20.02461,57.5892388],
+    "Xtense Spa":[-20.0095697,57.6004323],
+    "Johaness Spa Grand Baie":[-20.0195674,57.5847664],
+    "Spa Ceylon Mauritius":[-20.0221263,57.5787599],
+    "Ocea Wellness":[-20.0165125,57.5701138],
+    "Shantigiri Ayurveda Spa":[-20.0126339,57.5854009],
+    "Sultana Moroccan Hammam & Spa":[-20.0272326,57.5594683],
+    "Vallée de Beauté Spa":[-20.013086,57.5848692],
+    "Mont Choisy Le Golf":[-20.0232221,57.5636528],
+    "Zaka — Parc accrobranche":[-20.0134396,57.5867186],
+    "Le Lucky Strike — Bowling & Lounge":[-20.0130719,57.5867674],
+    "Dodo Ride":[-20.0099451,57.5863688],
+    "Fun World":[-20.0125722,57.5870105],
+    "Solar Sea Walk":[-20.0099894,57.5830305],
+    "E-Lab Bike — Vélos électriques":[-20.0152637,57.5815309],
+    "Moris Insider":[-20.0100147,57.5834178],
+    "Côte d'Azur Travel & Tours":[-19.9943993,57.5916746],
+    "Taxi Mauritius Tours":[-20.0093901,57.5827318]
+  };
+  DATA.forEach(d => { const c = COORDS[d.n]; if (c) { d.la = c[0]; d.lo = c[1]; } });
+
+  const ICON = {
+    phone: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012 4.2 2 2 0 014 2h3a2 2 0 012 1.7c.1.9.3 1.8.6 2.6a2 2 0 01-.5 2.1L8 9.6a16 16 0 006 6l1.2-1.1a2 2 0 012.1-.5c.8.3 1.7.5 2.6.6a2 2 0 011.7 2z"/></svg>',
+    web:   '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 010 18M12 3a15 15 0 000 18"/></svg>',
+    pin:   '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0116 0z"/><circle cx="12" cy="10" r="3"/></svg>'
+  };
+
+  let active = "all";
+  let currentRows = [];
+  const grid = document.getElementById("grid");
+  const empty = document.getElementById("empty");
+  const countEl = document.getElementById("count");
+  const chipsEl = document.getElementById("chips");
+  const qEl = document.getElementById("q");
+  document.getElementById("ftotal").textContent = DATA.length;
+
+  function tel(p){ return "tel:" + p.replace(/[^\d+]/g, ""); }
+  function webLabel(u){ return u.replace(/^https?:\/\//,"").replace(/^www\./,"").replace(/\/.*$/,""); }
+  function esc(s){ return s.replace(/[&<>"]/g, m => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[m])); }
+
+  function buildChips(){
+    const counts = {}; DATA.forEach(d => counts[d.c] = (counts[d.c]||0)+1);
+    const all = [{ key:"all", label:"Tout", emoji:"✨", n:DATA.length }]
+      .concat(CATS.map(c => ({ ...c, n: counts[c.key]||0 })));
+    chipsEl.innerHTML = all.map(c =>
+      `<button class="chip" data-k="${c.key}" aria-pressed="${c.key===active}">
+         <span>${c.emoji}</span>${esc(c.label)}<span class="n">${c.n}</span>
+       </button>`).join("");
+    chipsEl.querySelectorAll(".chip").forEach(b =>
+      b.addEventListener("click", () => { active = b.dataset.k; syncChips(); render(); }));
+  }
+  function syncChips(){ chipsEl.querySelectorAll(".chip").forEach(b => b.setAttribute("aria-pressed", b.dataset.k===active)); }
+
+  function render(){
+    const q = qEl.value.trim().toLowerCase();
+    const rows = DATA.filter(d => {
+      if (active !== "all" && d.c !== active) return false;
+      if (!q) return true;
+      return (d.n + " " + d.a + " " + CATMAP[d.c].label).toLowerCase().includes(q);
+    });
+
+    countEl.innerHTML = `<b>${rows.length}</b> activité${rows.length>1?"s":""}` +
+      (active!=="all" ? ` · ${CATMAP[active].emoji} ${esc(CATMAP[active].label)}` : "") +
+      (q ? ` · « ${esc(qEl.value.trim())} »` : "");
+
+    currentRows = rows;
+    empty.hidden = rows.length !== 0;
+    grid.innerHTML = rows.map((d, i) => {
+      const cat = CATMAP[d.c];
+      const call = d.p
+        ? `<a class="btn primary" href="${tel(d.p)}">${ICON.phone}Appeler</a>`
+        : `<span class="btn disabled">${ICON.phone}Sans tél.</span>`;
+      const site = d.w
+        ? `<a class="btn" href="${d.w}" target="_blank" rel="noopener">${ICON.web}${esc(webLabel(d.w))}</a>` : "";
+      const map = `<a class="btn" href="${d.m}" target="_blank" rel="noopener">${ICON.pin}Itinéraire</a>`;
+      return `<article class="card" data-i="${i}">
+        <span class="badge">${cat.emoji} ${esc(cat.label)}</span>
+        <h3>${esc(d.n)}</h3>
+        <p class="addr">${ICON.pin}<span>${esc(d.a)}</span></p>
+        <div class="actions">${call}${site}${map}</div>
+      </article>`;
+    }).join("");
+    renderMap(rows);
+  }
+
+  // ---- Carte interactive (schématique, positions GPS réelles) ----
+  const GB = { la: -20.0064, lo: 57.5802 };
+  const W = 820, H = 470, P = 30;
+  const cosL = Math.cos(-20.006 * Math.PI / 180);
+  const pts = DATA.filter(d => typeof d.la === "number");
+  let loMin = Math.min(...pts.map(d => d.lo)), loMax = Math.max(...pts.map(d => d.lo));
+  let laMin = Math.min(...pts.map(d => d.la)), laMax = Math.max(...pts.map(d => d.la));
+  const mLo = (loMax - loMin) * 0.08, mLa = (laMax - laMin) * 0.08;
+  loMin -= mLo; loMax += mLo; laMin -= mLa; laMax += mLa;
+  const spanX = (loMax - loMin) * cosL, spanY = (laMax - laMin);
+  const scale = Math.min((W - 2 * P) / spanX, (H - 2 * P) / spanY);
+  const OFFX = P + ((W - 2 * P) - spanX * scale) / 2, OFFY = P + ((H - 2 * P) - spanY * scale) / 2;
+  const pxPerKm = scale / 110.574;
+  function toXY(la, lo) { return { x: OFFX + (lo - loMin) * cosL * scale, y: OFFY + (laMax - la) * scale }; }
+
+  const base = document.getElementById("mapbase");
+  const mkLayer = document.getElementById("mapmk");
+  const mapstage = document.getElementById("mapstage");
+  const tip = document.getElementById("maptip");
+
+  function buildBase() {
+    const gb = toXY(GB.la, GB.lo), parts = [];
+    parts.push(`<rect class="water" x="0" y="0" width="${W}" height="${H}"/>`);
+    [2, 4, 6, 8].forEach(km => {
+      const rr = km * pxPerKm;
+      parts.push(`<circle class="ring" cx="${gb.x.toFixed(1)}" cy="${gb.y.toFixed(1)}" r="${rr.toFixed(1)}"/>`);
+      parts.push(`<text class="ringlab" x="${gb.x.toFixed(1)}" y="${(gb.y - rr - 3).toFixed(1)}">${km} km</text>`);
+    });
+    parts.push(`<circle class="ctr" cx="${gb.x.toFixed(1)}" cy="${gb.y.toFixed(1)}" r="7"/>`);
+    parts.push(`<text class="ctrlab" x="${gb.x.toFixed(1)}" y="${(gb.y - 13).toFixed(1)}">Grand Baie</text>`);
+    parts.push(`<g class="compass" transform="translate(${W - 38},40)"><line x1="0" y1="12" x2="0" y2="-10"/><path d="M0,-15 L4,-7 L-4,-7 Z"/><text x="0" y="-19">N</text></g>`);
+    base.innerHTML = parts.join("");
+  }
+
+  function renderMap(rows) {
+    mkLayer.innerHTML = rows.map((d, i) => {
+      if (typeof d.la !== "number") return "";
+      const pt = toXY(d.la, d.lo);
+      return `<circle class="mk" data-i="${i}" cx="${pt.x.toFixed(1)}" cy="${pt.y.toFixed(1)}" r="6"/>`;
+    }).join("");
+  }
+
+  function hl(i, on) {
+    const mk = mkLayer.querySelector(`.mk[data-i="${i}"]`);
+    const card = grid.querySelector(`.card[data-i="${i}"]`);
+    if (mk) mk.classList.toggle("on", on);
+    if (card) card.classList.toggle("hl", on);
+  }
+  function showTip(mk) {
+    const d = currentRows[+mk.dataset.i]; if (!d) return;
+    const r = mk.getBoundingClientRect(), s = mapstage.getBoundingClientRect();
+    tip.innerHTML = `<b>${esc(d.n)}</b><span>${CATMAP[d.c].emoji} ${esc(CATMAP[d.c].label)}</span>`;
+    tip.hidden = false;
+    tip.style.left = (r.left - s.left + r.width / 2) + "px";
+    tip.style.top = (r.top - s.top) + "px";
+  }
+  mkLayer.addEventListener("mouseover", e => { const m = e.target.closest(".mk"); if (!m) return; hl(m.dataset.i, true); showTip(m); });
+  mkLayer.addEventListener("mouseout", e => { const m = e.target.closest(".mk"); if (!m) return; hl(m.dataset.i, false); tip.hidden = true; });
+  mkLayer.addEventListener("click", e => {
+    const m = e.target.closest(".mk"); if (!m) return;
+    const card = grid.querySelector(`.card[data-i="${m.dataset.i}"]`);
+    if (card) { card.scrollIntoView({ behavior: "smooth", block: "center" }); card.classList.add("flash"); setTimeout(() => card.classList.remove("flash"), 1200); }
+  });
+  grid.addEventListener("mouseover", e => { const c = e.target.closest(".card"); if (!c) return; hl(c.dataset.i, true); });
+  grid.addEventListener("mouseout", e => { const c = e.target.closest(".card"); if (!c) return; hl(c.dataset.i, false); });
+
+  buildBase();
+  qEl.addEventListener("input", render);
+  buildChips(); render();
+</script>
