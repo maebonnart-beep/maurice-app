@@ -1,0 +1,233 @@
+"use client";
+
+import { useMemo, useRef, useState } from "react";
+import dynamic from "next/dynamic";
+import type { Business } from "@/lib/types";
+import { CATEGORIES, CATEGORY_MAP } from "@/data/categories";
+
+const Map = dynamic(() => import("./Map"), {
+  ssr: false,
+  loading: () => (
+    <div className="flex items-center justify-center h-full text-sm text-muted">
+      Chargement de la carte…
+    </div>
+  ),
+});
+
+function tel(phone: string) {
+  return "tel:" + phone.replace(/[^\d+]/g, "");
+}
+
+function webLabel(url: string) {
+  return url.replace(/^https?:\/\//, "").replace(/^www\./, "").replace(/\/.*$/, "");
+}
+
+export default function DirectoryClient({ businesses }: { businesses: Business[] }) {
+  const [query, setQuery] = useState("");
+  const [active, setActive] = useState<string>("all");
+  const [selectedId, setSelectedId] = useState<string | null>(null);
+  const cardRefs = useRef<Record<string, HTMLElement | null>>({});
+
+  const counts = useMemo(() => {
+    const c: Record<string, number> = {};
+    businesses.forEach((b) => {
+      c[b.category] = (c[b.category] || 0) + 1;
+    });
+    return c;
+  }, [businesses]);
+
+  const rows = useMemo(() => {
+    const q = query.trim().toLowerCase();
+    return businesses.filter((b) => {
+      if (active !== "all" && b.category !== active) return false;
+      if (!q) return true;
+      return (b.name + " " + b.address + " " + CATEGORY_MAP[b.category].label)
+        .toLowerCase()
+        .includes(q);
+    });
+  }, [businesses, query, active]);
+
+  function selectFromMap(id: string) {
+    setSelectedId(id);
+    cardRefs.current[id]?.scrollIntoView({ behavior: "smooth", block: "nearest" });
+  }
+
+  function selectFromCard(id: string) {
+    setSelectedId(id);
+  }
+
+  return (
+    <div className="app">
+      <header className="sticky top-0 z-20 border-b border-border bg-bg/85 backdrop-blur">
+        <div className="max-w-[1120px] mx-auto px-5 h-[60px] flex items-center justify-between">
+          <div className="flex items-center gap-2 font-bold text-lg tracking-tight">
+            <span className="w-3 h-3 rounded-full bg-accent shadow-[0_0_0_4px_color-mix(in_srgb,var(--accent)_22%,transparent)]" />
+            Maurice<sup className="text-accent">+</sup>&nbsp;
+            <small className="text-muted font-medium">Activités</small>
+          </div>
+          <div className="text-[13px] text-muted">Grand Baie · Île Maurice</div>
+        </div>
+      </header>
+
+      <section className="max-w-[1120px] mx-auto px-5 pt-11 pb-2">
+        <p className="uppercase tracking-[.16em] text-xs font-bold text-primary-deep mb-3.5">
+          Annuaire local · Activités &amp; loisirs
+        </p>
+        <h1 className="text-[clamp(30px,5vw,46px)] leading-[1.05] tracking-tight max-w-[15ch] text-balance m-0">
+          Tout ce qu&apos;on peut <em className="not-italic text-primary">faire</em> à Grand Baie.
+        </h1>
+        <p className="text-muted text-[17px] leading-[1.55] max-w-[56ch] mt-4">
+          Excursions en mer, plongée, spa, sports nautiques, golf… Retrouvez les prestataires du
+          Nord en un coup d&apos;œil — puis appelez, visitez leur site ou lancez l&apos;itinéraire.
+        </p>
+        <div className="relative max-w-[520px] mt-6">
+          <input
+            type="search"
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+            placeholder="Rechercher une activité, un lieu, un nom…"
+            aria-label="Rechercher"
+            autoComplete="off"
+            className="w-full h-[52px] pl-11 pr-4 rounded-full border border-border bg-surface text-ink text-base shadow-[0_1px_2px_rgba(13,43,42,.05),0_12px_30px_-14px_rgba(13,43,42,.28)] focus:outline-none focus:border-primary"
+          />
+        </div>
+      </section>
+
+      <div className="sticky top-[60px] z-10 bg-bg/85 backdrop-blur border-b border-border mt-5 py-3">
+        <div className="max-w-[1120px] mx-auto px-5 flex gap-2 overflow-x-auto">
+          {[{ key: "all", label: "Tout", emoji: "✨", color: "var(--muted)" }, ...CATEGORIES].map(
+            (c) => (
+              <button
+                key={c.key}
+                onClick={() => setActive(c.key)}
+                aria-pressed={active === c.key}
+                className={`flex-none inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full border text-sm font-semibold whitespace-nowrap transition-colors ${
+                  active === c.key
+                    ? "bg-primary border-primary text-white"
+                    : "bg-surface border-border text-ink hover:border-primary"
+                }`}
+              >
+                {c.key === "all" ? (
+                  "✨"
+                ) : (
+                  <span
+                    className="w-2 h-2 rounded-full"
+                    style={{ background: (c as (typeof CATEGORIES)[number]).color }}
+                  />
+                )}
+                {c.label}
+                <span className="text-xs font-bold opacity-70">
+                  {c.key === "all" ? businesses.length : counts[c.key] || 0}
+                </span>
+              </button>
+            )
+          )}
+        </div>
+      </div>
+
+      <div className="max-w-[1120px] mx-auto px-5">
+        <div className="rounded-2xl border border-border bg-surface shadow-[0_1px_2px_rgba(13,43,42,.05),0_12px_30px_-14px_rgba(13,43,42,.28)] overflow-hidden mt-6">
+          <div className="flex items-center justify-between gap-3 flex-wrap px-4.5 py-3.5 border-b border-border">
+            <div>
+              <strong className="block text-[15px] tracking-tight">Carte des activités</strong>
+              <span className="text-[12.5px] text-muted">
+                Positions GPS réelles · cliquez un point pour le retrouver dans la liste
+              </span>
+            </div>
+          </div>
+          <div className="h-[60vh] min-h-[380px] bg-surface-2">
+            <Map businesses={rows} selectedId={selectedId} onSelect={selectFromMap} />
+          </div>
+          <p className="text-[11.5px] leading-[1.5] text-muted border-t border-border px-4.5 py-2.5">
+            Fond de carte © OpenStreetMap. La carte se charge depuis internet — il faut donc être
+            connecté.
+          </p>
+        </div>
+
+        <p className="text-sm text-muted pt-5 pb-1.5">
+          <b className="text-ink tabular-nums">{rows.length}</b> activité
+          {rows.length > 1 ? "s" : ""}
+          {active !== "all" ? ` · ${CATEGORY_MAP[active as keyof typeof CATEGORY_MAP].emoji} ${CATEGORY_MAP[active as keyof typeof CATEGORY_MAP].label}` : ""}
+        </p>
+
+        {rows.length === 0 ? (
+          <div className="text-center py-[70px] px-5 text-muted">
+            <div className="text-4xl mb-2.5">🔍</div>
+            Aucun résultat. Essayez un autre mot-clé ou une autre catégorie.
+          </div>
+        ) : (
+          <div className="grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-4 py-1.5 pb-16">
+            {rows.map((b) => {
+              const cat = CATEGORY_MAP[b.category];
+              const isActive = b.id === selectedId;
+              return (
+                <article
+                  key={b.id}
+                  ref={(el) => {
+                    cardRefs.current[b.id] = el;
+                  }}
+                  onClick={() => selectFromCard(b.id)}
+                  className={`bg-surface border rounded-2xl p-5 shadow-[0_1px_2px_rgba(13,43,42,.05),0_12px_30px_-14px_rgba(13,43,42,.28)] flex flex-col gap-3 cursor-pointer transition-transform hover:-translate-y-1 ${
+                    isActive ? "border-accent" : "border-border"
+                  }`}
+                >
+                  <span
+                    className="self-start inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-white text-xs font-bold"
+                    style={{ background: cat.color }}
+                  >
+                    {cat.emoji} {cat.label}
+                  </span>
+                  <h3 className="m-0 text-[17px] leading-[1.25] tracking-tight">{b.name}</h3>
+                  <p className="m-0 text-muted text-[13.5px] leading-[1.5]">{b.address}</p>
+                  <div className="mt-auto flex flex-wrap gap-2 pt-1">
+                    {b.phone ? (
+                      <a
+                        href={tel(b.phone)}
+                        onClick={(e) => e.stopPropagation()}
+                        className="inline-flex items-center gap-1.5 px-3 py-2 rounded-[10px] text-[13px] font-semibold no-underline bg-primary border border-primary text-white"
+                      >
+                        📞 Appeler
+                      </a>
+                    ) : (
+                      <span className="inline-flex items-center gap-1.5 px-3 py-2 rounded-[10px] text-[13px] font-semibold bg-surface-2 border border-border text-ink opacity-45">
+                        📞 Sans tél.
+                      </span>
+                    )}
+                    {b.website && (
+                      <a
+                        href={b.website}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={(e) => e.stopPropagation()}
+                        className="inline-flex items-center gap-1.5 px-3 py-2 rounded-[10px] text-[13px] font-semibold no-underline bg-surface-2 border border-border text-ink hover:border-primary hover:text-primary-deep"
+                      >
+                        🌐 {webLabel(b.website)}
+                      </a>
+                    )}
+                    <a
+                      href={b.googleMapsUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={(e) => e.stopPropagation()}
+                      className="inline-flex items-center gap-1.5 px-3 py-2 rounded-[10px] text-[13px] font-semibold no-underline bg-surface-2 border border-border text-ink hover:border-primary hover:text-primary-deep"
+                    >
+                      📍 Itinéraire
+                    </a>
+                  </div>
+                </article>
+              );
+            })}
+          </div>
+        )}
+      </div>
+
+      <footer className="border-t border-border py-5 pb-10 text-muted text-[13px] leading-[1.6]">
+        <div className="max-w-[1120px] mx-auto px-5">
+          <b className="text-ink">Aperçu MVP</b> — sélection de {businesses.length} fiches issues
+          de l&apos;import Google Places (Nord de l&apos;île). Les données seront enrichies et
+          vérifiées avant mise en ligne. Statut, horaires et photos viendront ensuite.
+        </div>
+      </footer>
+    </div>
+  );
+}

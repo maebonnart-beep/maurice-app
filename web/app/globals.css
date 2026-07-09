@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #eef4f3;
+  --surface: #ffffff;
+  --surface-2: #f4f8f7;
+  --ink: #0d2b2a;
+  --muted: #5c726f;
+  --border: #d9e6e3;
+  --primary: #0e8b84;
+  --primary-deep: #0a6d67;
+  --primary-tint: #e2f1ef;
+  --accent: #ef6a4c;
+  --radius: 16px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #071b1a;
+    --surface: #0f2a28;
+    --surface-2: #0b211f;
+    --ink: #eaf3f1;
+    --muted: #90a9a6;
+    --border: #1d3f3c;
+    --primary: #2bb3aa;
+    --primary-deep: #56c9c0;
+    --primary-tint: #123330;
+    --accent: #ff7d5e;
+  }
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+  --color-primary: var(--primary);
+  --color-primary-deep: var(--primary-deep);
+  --color-primary-tint: var(--primary-tint);
+  --color-accent: var(--accent);
+  --font-sans: "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
