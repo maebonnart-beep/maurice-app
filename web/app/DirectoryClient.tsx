@@ -4,6 +4,7 @@ import { useMemo, useRef, useState } from "react";
 import dynamic from "next/dynamic";
 import type { Business } from "@/lib/types";
 import { CATEGORIES, CATEGORY_MAP, SUBCATEGORIES } from "@/data/categories";
+import { trackEvent } from "@/lib/track";
 
 const UNCLASSIFIED = "__unclassified__";
 
@@ -22,6 +23,10 @@ function tel(phone: string) {
 
 function webLabel(url: string) {
   return url.replace(/^https?:\/\//, "").replace(/^www\./, "").replace(/\/.*$/, "");
+}
+
+function whatsappLink(phone: string) {
+  return "https://wa.me/" + phone.replace(/[^\d]/g, "");
 }
 
 export default function DirectoryClient({ businesses }: { businesses: Business[] }) {
@@ -73,20 +78,22 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
 
   const rows = useMemo(() => {
     const q = query.trim().toLowerCase();
-    return businesses.filter((b) => {
-      if (active !== "all" && b.category !== active) return false;
-      if (activeThemes.size > 0) {
-        const themes = b.themes || [];
-        const matches =
-          (activeThemes.has(UNCLASSIFIED) && themes.length === 0) ||
-          themes.some((t) => activeThemes.has(t));
-        if (!matches) return false;
-      }
-      if (!q) return true;
-      return (b.name + " " + b.address + " " + CATEGORY_MAP[b.category].label)
-        .toLowerCase()
-        .includes(q);
-    });
+    return businesses
+      .filter((b) => {
+        if (active !== "all" && b.category !== active) return false;
+        if (activeThemes.size > 0) {
+          const themes = b.themes || [];
+          const matches =
+            (activeThemes.has(UNCLASSIFIED) && themes.length === 0) ||
+            themes.some((t) => activeThemes.has(t));
+          if (!matches) return false;
+        }
+        if (!q) return true;
+        return (b.name + " " + b.address + " " + CATEGORY_MAP[b.category].label)
+          .toLowerCase()
+          .includes(q);
+      })
+      .sort((a, b) => (b.tier === "premium" ? 1 : 0) - (a.tier === "premium" ? 1 : 0));
   }, [businesses, query, active, activeThemes]);
 
   function selectFromMap(id: string) {
@@ -246,6 +253,11 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                     >
                       {cat.emoji} {cat.label}
                     </span>
+                    {b.badge === "partenaire" && (
+                      <span className="self-start inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-white text-xs font-bold bg-accent">
+                        ⭐ Partenaire
+                      </span>
+                    )}
                     {b.themes?.map((tKey) => {
                       const theme = SUBCATEGORIES[b.category]?.find((t) => t.key === tKey);
                       return theme ? (
@@ -264,7 +276,10 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                     {b.phone ? (
                       <a
                         href={tel(b.phone)}
-                        onClick={(e) => e.stopPropagation()}
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          trackEvent(b.id, "call");
+                        }}
                         className="inline-flex items-center gap-1.5 px-3 py-2 rounded-[10px] text-[13px] font-semibold no-underline bg-primary border border-primary text-white"
                       >
                         📞 Appeler
@@ -274,12 +289,29 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                         📞 Sans tél.
                       </span>
                     )}
+                    {b.whatsapp && (
+                      <a
+                        href={whatsappLink(b.whatsapp)}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          trackEvent(b.id, "whatsapp");
+                        }}
+                        className="inline-flex items-center gap-1.5 px-3 py-2 rounded-[10px] text-[13px] font-semibold no-underline bg-surface-2 border border-border text-ink hover:border-primary hover:text-primary-deep"
+                      >
+                        💬 WhatsApp
+                      </a>
+                    )}
                     {b.website && (
                       <a
                         href={b.website}
                         target="_blank"
                         rel="noopener noreferrer"
-                        onClick={(e) => e.stopPropagation()}
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          trackEvent(b.id, "website");
+                        }}
                         className="inline-flex items-center gap-1.5 px-3 py-2 rounded-[10px] text-[13px] font-semibold no-underline bg-surface-2 border border-border text-ink hover:border-primary hover:text-primary-deep"
                       >
                         🌐 {webLabel(b.website)}
@@ -289,7 +321,10 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                       href={b.googleMapsUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      onClick={(e) => e.stopPropagation()}
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        trackEvent(b.id, "directions");
+                      }}
                       className="inline-flex items-center gap-1.5 px-3 py-2 rounded-[10px] text-[13px] font-semibold no-underline bg-surface-2 border border-border text-ink hover:border-primary hover:text-primary-deep"
                     >
                       📍 Itinéraire

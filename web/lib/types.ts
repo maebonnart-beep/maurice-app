@@ -19,6 +19,8 @@ export type Category = {
   color: string;
 };
 
+export type BusinessTier = "free" | "premium";
+
 export type Business = {
   id: string;
   name: string;
@@ -30,4 +32,13 @@ export type Business = {
   lat: number;
   lng: number;
   themes?: string[];
+  /** Absent = "free". Premium fiches surface first and unlock the perks below. */
+  tier?: BusinessTier;
+  /** True once a business owner has claimed/verified this fiche. */
+  claimed?: boolean;
+  badge?: "partenaire";
+  /** Premium perk: direct WhatsApp CTA. Digits/+ only, e.g. "+230..." */
+  whatsapp?: string;
+  /** Premium perk: short highlighted promo line. */
+  promoText?: string;
 };
