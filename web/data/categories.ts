@@ -1,4 +1,4 @@
-import type { Category } from "@/lib/types";
+import type { Category, CategoryKey } from "@/lib/types";
 
 export const CATEGORIES: Category[] = [
   { key: "excursions", label: "Excursions & tours", emoji: "🚐", color: "#e8873a" },
@@ -18,3 +18,21 @@ export const CATEGORIES: Category[] = [
 export const CATEGORY_MAP = Object.fromEntries(
   CATEGORIES.map((c) => [c.key, c])
 ) as Record<Category["key"], Category>;
+
+export type Subcategory = { key: string; label: string; emoji: string };
+
+export const SUBCATEGORIES: Partial<Record<CategoryKey, Subcategory[]>> = {
+  restaurants: [
+    { key: "mauricienne", label: "Mauricienne & créole", emoji: "🌶️" },
+    { key: "fruits-de-mer", label: "Fruits de mer", emoji: "🦐" },
+    { key: "indienne", label: "Indienne", emoji: "🍛" },
+    { key: "asiatique", label: "Chinoise & asiatique", emoji: "🥢" },
+    { key: "europeenne", label: "Européenne & française", emoji: "🥖" },
+    { key: "italien", label: "Italien & pizza", emoji: "🍕" },
+    { key: "grillades", label: "Viandes & grillades", emoji: "🥩" },
+    { key: "vegetarien", label: "Végétarien", emoji: "🥗" },
+    { key: "fastfood", label: "Fast-food & snack", emoji: "🍔" },
+    { key: "bar", label: "Bar & lounge", emoji: "🍹" },
+    { key: "cafe", label: "Café & pâtisserie", emoji: "☕" },
+  ],
+};

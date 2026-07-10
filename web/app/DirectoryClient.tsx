@@ -3,7 +3,9 @@
 import { useMemo, useRef, useState } from "react";
 import dynamic from "next/dynamic";
 import type { Business } from "@/lib/types";
-import { CATEGORIES, CATEGORY_MAP } from "@/data/categories";
+import { CATEGORIES, CATEGORY_MAP, SUBCATEGORIES } from "@/data/categories";
+
+const UNCLASSIFIED = "__unclassified__";
 
 const Map = dynamic(() => import("./Map"), {
   ssr: false,
@@ -25,8 +27,25 @@ function webLabel(url: string) {
 export default function DirectoryClient({ businesses }: { businesses: Business[] }) {
   const [query, setQuery] = useState("");
   const [active, setActive] = useState<string>("all");
+  const [activeThemes, setActiveThemes] = useState<Set<string>>(new Set());
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const cardRefs = useRef<Record<string, HTMLElement | null>>({});
+
+  const subcategories = SUBCATEGORIES[active as keyof typeof SUBCATEGORIES];
+
+  function selectCategory(key: string) {
+    setActive(key);
+    setActiveThemes(new Set());
+  }
+
+  function toggleTheme(key: string) {
+    setActiveThemes((prev) => {
+      const next = new Set(prev);
+      if (next.has(key)) next.delete(key);
+      else next.add(key);
+      return next;
+    });
+  }
 
   const counts = useMemo(() => {
     const c: Record<string, number> = {};
@@ -36,16 +55,39 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
     return c;
   }, [businesses]);
 
+  const themeCounts = useMemo(() => {
+    const c: Record<string, number> = {};
+    if (!subcategories) return c;
+    businesses.forEach((b) => {
+      if (active !== "all" && b.category !== active) return;
+      if (!b.themes || b.themes.length === 0) {
+        c[UNCLASSIFIED] = (c[UNCLASSIFIED] || 0) + 1;
+        return;
+      }
+      b.themes.forEach((t) => {
+        c[t] = (c[t] || 0) + 1;
+      });
+    });
+    return c;
+  }, [businesses, active, subcategories]);
+
   const rows = useMemo(() => {
     const q = query.trim().toLowerCase();
     return businesses.filter((b) => {
       if (active !== "all" && b.category !== active) return false;
+      if (activeThemes.size > 0) {
+        const themes = b.themes || [];
+        const matches =
+          (activeThemes.has(UNCLASSIFIED) && themes.length === 0) ||
+          themes.some((t) => activeThemes.has(t));
+        if (!matches) return false;
+      }
       if (!q) return true;
       return (b.name + " " + b.address + " " + CATEGORY_MAP[b.category].label)
         .toLowerCase()
         .includes(q);
     });
-  }, [businesses, query, active]);
+  }, [businesses, query, active, activeThemes]);
 
   function selectFromMap(id: string) {
     setSelectedId(id);
@@ -99,7 +141,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
             (c) => (
               <button
                 key={c.key}
-                onClick={() => setActive(c.key)}
+                onClick={() => selectCategory(c.key)}
                 aria-pressed={active === c.key}
                 className={`flex-none inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full border text-sm font-semibold whitespace-nowrap transition-colors ${
                   active === c.key
@@ -124,6 +166,32 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
           )}
         </div>
       </div>
+
+      {subcategories && (
+        <div className="sticky top-[108px] z-10 bg-bg/85 backdrop-blur border-b border-border py-2.5">
+          <div className="max-w-[1120px] mx-auto px-5 flex gap-2 overflow-x-auto">
+            {[...subcategories, { key: UNCLASSIFIED, label: "Non classé", emoji: "❔" }].map(
+              (t) => (
+                <button
+                  key={t.key}
+                  onClick={() => toggleTheme(t.key)}
+                  aria-pressed={activeThemes.has(t.key)}
+                  className={`flex-none inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full border text-[13px] font-medium whitespace-nowrap transition-colors ${
+                    activeThemes.has(t.key)
+                      ? "bg-accent border-accent text-white"
+                      : "bg-surface border-border text-muted hover:border-accent hover:text-ink"
+                  }`}
+                >
+                  {t.emoji} {t.label}
+                  <span className="text-[11px] font-bold opacity-70">
+                    {themeCounts[t.key] || 0}
+                  </span>
+                </button>
+              )
+            )}
+          </div>
+        </div>
+      )}
 
       <div className="max-w-[1120px] mx-auto px-5">
         <div className="rounded-2xl border border-border bg-surface shadow-[0_1px_2px_rgba(13,43,42,.05),0_12px_30px_-14px_rgba(13,43,42,.28)] overflow-hidden mt-6">
@@ -171,12 +239,25 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                     isActive ? "border-accent" : "border-border"
                   }`}
                 >
-                  <span
-                    className="self-start inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-white text-xs font-bold"
-                    style={{ background: cat.color }}
-                  >
-                    {cat.emoji} {cat.label}
-                  </span>
+                  <div className="flex flex-wrap items-center gap-1.5">
+                    <span
+                      className="self-start inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-white text-xs font-bold"
+                      style={{ background: cat.color }}
+                    >
+                      {cat.emoji} {cat.label}
+                    </span>
+                    {b.themes?.map((tKey) => {
+                      const theme = SUBCATEGORIES[b.category]?.find((t) => t.key === tKey);
+                      return theme ? (
+                        <span
+                          key={tKey}
+                          className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[11px] font-semibold border border-border bg-surface-2 text-muted"
+                        >
+                          {theme.emoji} {theme.label}
+                        </span>
+                      ) : null;
+                    })}
+                  </div>
                   <h3 className="m-0 text-[17px] leading-[1.25] tracking-tight">{b.name}</h3>
                   <p className="m-0 text-muted text-[13.5px] leading-[1.5]">{b.address}</p>
                   <div className="mt-auto flex flex-wrap gap-2 pt-1">

@@ -29,4 +29,5 @@ export type Business = {
   googleMapsUrl: string;
   lat: number;
   lng: number;
+  themes?: string[];
 };

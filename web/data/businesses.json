@@ -547,7 +547,8 @@
     "website": "http://www.la-kaza.mu/",
     "googleMapsUrl": "https://maps.google.com/?cid=13309702994671649217",
     "lat": -20.0143128,
-    "lng": 57.5837935
+    "lng": 57.5837935,
+    "themes": []
   },
   {
     "id": "au-feu-de-bois",
@@ -558,7 +559,8 @@
     "website": "",
     "googleMapsUrl": "https://maps.google.com/?cid=6228567486704498520",
     "lat": -20.0087533,
-    "lng": 57.5968468
+    "lng": 57.5968468,
+    "themes": []
   },
   {
     "id": "restaurant-coolen-chez-ram",
@@ -569,7 +571,8 @@
     "website": "https://chezram.com/sp/",
     "googleMapsUrl": "https://maps.google.com/?cid=2917654350838956785",
     "lat": -20.0151782,
-    "lng": 57.5728919
+    "lng": 57.5728919,
+    "themes": []
   },
   {
     "id": "la-rougaille-creole",
@@ -580,7 +583,8 @@
     "website": "",
     "googleMapsUrl": "https://maps.google.com/?cid=16091474196910346939",
     "lat": -20.0146399,
-    "lng": 57.5840541
+    "lng": 57.5840541,
+    "themes": []
   },
   {
     "id": "casa-verde",
@@ -591,7 +595,8 @@
     "website": "",
     "googleMapsUrl": "https://maps.google.com/?cid=16720201552058575660",
     "lat": -20.0132911,
-    "lng": 57.5863836
+    "lng": 57.5863836,
+    "themes": []
   },
   {
     "id": "the-trojan-horse-the-greeks-are-inside",
@@ -602,7 +607,8 @@
     "website": "http://www.thetrojanhorse.mu/",
     "googleMapsUrl": "https://maps.google.com/?cid=5645227488531178596",
     "lat": -20.0102405,
-    "lng": 57.5839465
+    "lng": 57.5839465,
+    "themes": []
   },
   {
     "id": "amazigh",
@@ -613,7 +619,8 @@
     "website": "",
     "googleMapsUrl": "https://maps.google.com/?cid=6271203639024536703",
     "lat": -20.0150887,
-    "lng": 57.584339
+    "lng": 57.584339,
+    "themes": []
   },
   {
     "id": "la-terrasse",
@@ -624,7 +631,8 @@
     "website": "",
     "googleMapsUrl": "https://maps.google.com/?cid=15324260242814895775",
     "lat": -20.0164183,
-    "lng": 57.5772363
+    "lng": 57.5772363,
+    "themes": []
   },
   {
     "id": "sauterelle-restaurant",
@@ -635,7 +643,8 @@
     "website": "",
     "googleMapsUrl": "https://maps.google.com/?cid=378004023255259688",
     "lat": -20.0135427,
-    "lng": 57.5845184
+    "lng": 57.5845184,
+    "themes": []
   },
   {
     "id": "le-poivrier",
@@ -646,7 +655,8 @@
     "website": "https://lepoivrier.mu/",
     "googleMapsUrl": "https://maps.google.com/?cid=7398739424861106479",
     "lat": -20.0015375,
-    "lng": 57.5824929
+    "lng": 57.5824929,
+    "themes": []
   },
   {
     "id": "cocoloko",
@@ -657,7 +667,8 @@
     "website": "https://www.cocoloko.net/",
     "googleMapsUrl": "https://maps.google.com/?cid=4630867257026631162",
     "lat": -20.0113925,
-    "lng": 57.5845549
+    "lng": 57.5845549,
+    "themes": []
   },
   {
     "id": "da-terra-restaurant-cafe",
@@ -668,7 +679,8 @@
     "website": "",
     "googleMapsUrl": "https://maps.google.com/?cid=2393410553442255760",
     "lat": -20.0028724,
-    "lng": 57.5546831
+    "lng": 57.5546831,
+    "themes": []
   },
   {
     "id": "mayniko-restaurant-lounge",
@@ -679,7 +691,8 @@
     "website": "",
     "googleMapsUrl": "https://maps.google.com/?cid=15637869008096353937",
     "lat": -20.0067643,
-    "lng": 57.5820937
+    "lng": 57.5820937,
+    "themes": []
   },
   {
     "id": "la-payotte-restaurant-grand-baie-cocktail-bar-tapas",
@@ -690,7 +703,8 @@
     "website": "http://lapayotte.mu/",
     "googleMapsUrl": "https://maps.google.com/?cid=6512649553092445951",
     "lat": -20.0082348,
-    "lng": 57.559939
+    "lng": 57.559939,
+    "themes": []
   },
   {
     "id": "botteghita-ristorante-bar",
@@ -701,7 +715,8 @@
     "website": "https://botteghita.com/",
     "googleMapsUrl": "https://maps.google.com/?cid=1809408652367407012",
     "lat": -20.0095339,
-    "lng": 57.5820612
+    "lng": 57.5820612,
+    "themes": []
   },
   {
     "id": "banditos-grand-baie",
@@ -712,7 +727,8 @@
     "website": "",
     "googleMapsUrl": "https://maps.google.com/?cid=6909474177337088418",
     "lat": -20.0131285,
-    "lng": 57.5863122
+    "lng": 57.5863122,
+    "themes": []
   },
   {
     "id": "la-cabane-de-jules",
@@ -723,7 +739,8 @@
     "website": "https://www.facebook.com/La-Cabane-de-Jules-1048065131924145/",
     "googleMapsUrl": "https://maps.google.com/?cid=5537020482598953178",
     "lat": -20.0130627,
-    "lng": 57.584807
+    "lng": 57.584807,
+    "themes": []
   },
   {
     "id": "lazy-lobster",
@@ -734,7 +751,8 @@
     "website": "https://veranda-resorts.com/en/mauritius-hotel-veranda-grand-baie/restaurants-and-bars",
     "googleMapsUrl": "https://maps.google.com/?cid=4389948295472760797",
     "lat": -20.0085572,
-    "lng": 57.5786818
+    "lng": 57.5786818,
+    "themes": []
   },
   {
     "id": "n-joy",
@@ -745,7 +763,8 @@
     "website": "http://njoy.mu/",
     "googleMapsUrl": "https://maps.google.com/?cid=9436126356883283085",
     "lat": -20.0077772,
-    "lng": 57.5786448
+    "lng": 57.5786448,
+    "themes": []
   },
   {
     "id": "ai-kisu-lux-grand-baie",
@@ -756,7 +775,8 @@
     "website": "https://www.luxresorts.com/en/mauritius/hotel/luxgrandbaie/restaurants-bars/ai-kisu?hotel=LUX-Grand-Baie",
     "googleMapsUrl": "https://maps.google.com/?cid=14924190043862077367",
     "lat": -20.0003914,
-    "lng": 57.582236
+    "lng": 57.582236,
+    "themes": []
   },
   {
     "id": "the-fisherman-lounge",
@@ -767,7 +787,8 @@
     "website": "http://www.thefishermanlounge.com/",
     "googleMapsUrl": "https://maps.google.com/?cid=5269121288664297039",
     "lat": -20.0130625,
-    "lng": 57.5866875
+    "lng": 57.5866875,
+    "themes": []
   },
   {
     "id": "beach-house-restaurant-bar",
@@ -778,7 +799,8 @@
     "website": "https://www.thebeachhouse.mu/",
     "googleMapsUrl": "https://maps.google.com/?cid=4521847715048970014",
     "lat": -20.0155571,
-    "lng": 57.5805129
+    "lng": 57.5805129,
+    "themes": []
   },
   {
     "id": "beach-rouge-lux-grand-baie",
@@ -789,7 +811,8 @@
     "website": "https://www.luxresorts.com/en/mauritius/hotel/luxgrandbaie/restaurants-bars/beach-rouge",
     "googleMapsUrl": "https://maps.google.com/?cid=1841653919877656780",
     "lat": -20.0005225,
-    "lng": 57.5826008
+    "lng": 57.5826008,
+    "themes": []
   },
   {
     "id": "eden-beach-restaurant-lounge-bar",
@@ -800,7 +823,8 @@
     "website": "",
     "googleMapsUrl": "https://maps.google.com/?cid=17721428035442258679",
     "lat": -20.0146206,
-    "lng": 57.5682246
+    "lng": 57.5682246,
+    "themes": []
   },
   {
     "id": "neo-s",
@@ -811,7 +835,8 @@
     "website": "http://topdeck.mu/",
     "googleMapsUrl": "https://maps.google.com/?cid=16815005777687846050",
     "lat": -20.0150087,
-    "lng": 57.5829938
+    "lng": 57.5829938,
+    "themes": []
   },
   {
     "id": "park25-restaurant",
@@ -822,7 +847,8 @@
     "website": "https://www.facebook.com/park25grandbaie",
     "googleMapsUrl": "https://maps.google.com/?cid=1595031037366146628",
     "lat": -20.0167856,
-    "lng": 57.5694443
+    "lng": 57.5694443,
+    "themes": []
   },
   {
     "id": "riri-foods-mauritius",
@@ -833,7 +859,8 @@
     "website": "",
     "googleMapsUrl": "https://maps.google.com/?cid=16361962267290234691",
     "lat": -20.0071904,
-    "lng": 57.5783313
+    "lng": 57.5783313,
+    "themes": []
   },
   {
     "id": "coco-piment",
@@ -844,7 +871,8 @@
     "website": "",
     "googleMapsUrl": "https://maps.google.com/?cid=16378013644907682126",
     "lat": -19.9910139,
-    "lng": 57.5937117
+    "lng": 57.5937117,
+    "themes": []
   },
   {
     "id": "blue-lagoon-cafe",
@@ -855,7 +883,8 @@
     "website": "",
     "googleMapsUrl": "https://maps.google.com/?cid=16828843929622784532",
     "lat": -20.014924,
-    "lng": 57.5828679
+    "lng": 57.5828679,
+    "themes": []
   },
   {
     "id": "bullies-social",
@@ -866,7 +895,8 @@
     "website": "http://www.bulliessocial.com/",
     "googleMapsUrl": "https://maps.google.com/?cid=3090620075617913423",
     "lat": -20.003863,
-    "lng": 57.5812062
+    "lng": 57.5812062,
+    "themes": []
   },
   {
     "id": "lecapitaine-restaurant",
@@ -877,7 +907,8 @@
     "website": "https://www.lecapitaine.restaurant/",
     "googleMapsUrl": "https://maps.google.com/?cid=3402339965061243573",
     "lat": -20.0150525,
-    "lng": 57.5713859
+    "lng": 57.5713859,
+    "themes": []
   },
   {
     "id": "2beach-club-by-2futures",
@@ -888,7 +919,8 @@
     "website": "https://2beachclub.mu/",
     "googleMapsUrl": "https://maps.google.com/?cid=17735784252625993969",
     "lat": -19.9926834,
-    "lng": 57.5922945
+    "lng": 57.5922945,
+    "themes": []
   },
   {
     "id": "chez-sabiir-briani",
@@ -899,7 +931,8 @@
     "website": "",
     "googleMapsUrl": "https://maps.google.com/?cid=4023679761140719140",
     "lat": -20.0111952,
-    "lng": 57.5843893
+    "lng": 57.5843893,
+    "themes": []
   },
   {
     "id": "bisou-rooftop-bar-restaurant-lux-grand-baie",
@@ -910,7 +943,8 @@
     "website": "https://www.luxresorts.com/en/mauritius/hotel/luxgrandbaie/restaurants-bars/bisou?hotel=LUX-Grand-Baie",
     "googleMapsUrl": "https://maps.google.com/?cid=10098446496927039148",
     "lat": -20.0000965,
-    "lng": 57.5824172
+    "lng": 57.5824172,
+    "themes": []
   },
   {
     "id": "sunset-cafe-restaurant-grand-baie",
@@ -921,7 +955,8 @@
     "website": "https://sunsetcafe-restaurant.com/",
     "googleMapsUrl": "https://maps.google.com/?cid=9967761230453159991",
     "lat": -20.0132209,
-    "lng": 57.5835885
+    "lng": 57.5835885,
+    "themes": []
   },
   {
     "id": "d-ernys-restaurant",
@@ -932,7 +967,8 @@
     "website": "",
     "googleMapsUrl": "https://maps.google.com/?cid=8400978038755356896",
     "lat": -19.9937314,
-    "lng": 57.5920459
+    "lng": 57.5920459,
+    "themes": []
   },
   {
     "id": "les-canisses-resto-plage",
@@ -943,7 +979,8 @@
     "website": "https://www.facebook.com/Lescanissesrestobarplage",
     "googleMapsUrl": "https://maps.google.com/?cid=2338052584137327452",
     "lat": -20.0150916,
-    "lng": 57.5812412
+    "lng": 57.5812412,
+    "themes": []
   },
   {
     "id": "la-raie-manta",
@@ -954,7 +991,8 @@
     "website": "https://www.facebook.com/profile.php?id=100090341207059",
     "googleMapsUrl": "https://maps.google.com/?cid=599271753932241099",
     "lat": -20.0130849,
-    "lng": 57.5848775
+    "lng": 57.5848775,
+    "themes": []
   },
   {
     "id": "fleur-de-mer",
@@ -965,7 +1003,8 @@
     "website": "",
     "googleMapsUrl": "https://maps.google.com/?cid=15460748578527106159",
     "lat": -20.0124367,
-    "lng": 57.5843843
+    "lng": 57.5843843,
+    "themes": []
   },
   {
     "id": "amigo-bar",
@@ -976,7 +1015,8 @@
     "website": "https://www.amigo-bar.com/",
     "googleMapsUrl": "https://maps.google.com/?cid=12985025556772101076",
     "lat": -19.9934894,
-    "lng": 57.613917
+    "lng": 57.613917,
+    "themes": []
   },
   {
     "id": "baywatch-bar",
@@ -987,7 +1027,8 @@
     "website": "",
     "googleMapsUrl": "https://maps.google.com/?cid=839877391750722750",
     "lat": -20.0090368,
-    "lng": 57.5800802
+    "lng": 57.5800802,
+    "themes": []
   },
   {
     "id": "the-tavern",
@@ -998,7 +1039,8 @@
     "website": "",
     "googleMapsUrl": "https://maps.google.com/?cid=8885315379827058199",
     "lat": -20.0064866,
-    "lng": 57.5818802
+    "lng": 57.5818802,
+    "themes": []
   },
   {
     "id": "rooftop-adults-only-restaurant-bar-lounge",
@@ -1009,7 +1051,8 @@
     "website": "https://searesortshotels.com/ocean-v/",
     "googleMapsUrl": "https://maps.google.com/?cid=13641827225285642346",
     "lat": -19.9963743,
-    "lng": 57.5878281
+    "lng": 57.5878281,
+    "themes": []
   },
   {
     "id": "the-hive-resto-bar",
@@ -1020,7 +1063,8 @@
     "website": "https://grubmates.io/locations/grandbaie/thehive.php",
     "googleMapsUrl": "https://maps.google.com/?cid=9118784454471385762",
     "lat": -19.9928935,
-    "lng": 57.5923242
+    "lng": 57.5923242,
+    "themes": []
   },
   {
     "id": "shisha-flavours-lounge",
@@ -1031,7 +1075,8 @@
     "website": "http://shishaflavourslounge.com/",
     "googleMapsUrl": "https://maps.google.com/?cid=13655304536411397284",
     "lat": -20.0150623,
-    "lng": 57.5831909
+    "lng": 57.5831909,
+    "themes": []
   },
   {
     "id": "omg-nightclub",
@@ -1042,7 +1087,8 @@
     "website": "",
     "googleMapsUrl": "https://maps.google.com/?cid=1536384170685276382",
     "lat": -20.00597,
-    "lng": 57.5817665
+    "lng": 57.5817665,
+    "themes": []
   },
   {
     "id": "bar",
@@ -1053,7 +1099,8 @@
     "website": "",
     "googleMapsUrl": "https://maps.google.com/?cid=15449283965678022259",
     "lat": -20.0127008,
-    "lng": 57.5842897
+    "lng": 57.5842897,
+    "themes": []
   },
   {
     "id": "mafiozzo-tavern",
@@ -1064,7 +1111,8 @@
     "website": "https://www.facebook.com/mafiozzo.tavern",
     "googleMapsUrl": "https://maps.google.com/?cid=12138684831547948063",
     "lat": -20.0101802,
-    "lng": 57.5838163
+    "lng": 57.5838163,
+    "themes": []
   },
   {
     "id": "deja-vu-nightclub",
@@ -1075,7 +1123,8 @@
     "website": "",
     "googleMapsUrl": "https://maps.google.com/?cid=4963609702497543160",
     "lat": -20.0060831,
-    "lng": 57.5818197
+    "lng": 57.5818197,
+    "themes": []
   },
   {
     "id": "cocochill-restaurant-bar-a-cocktails-swimming-pool",
@@ -1086,7 +1135,8 @@
     "website": "http://www.coco-chill.com/",
     "googleMapsUrl": "https://maps.google.com/?cid=1255695697121884396",
     "lat": -20.0106714,
-    "lng": 57.5637198
+    "lng": 57.5637198,
+    "themes": []
   },
   {
     "id": "bar-principal",
@@ -1097,7 +1147,8 @@
     "website": "",
     "googleMapsUrl": "https://maps.google.com/?cid=17331242519233348923",
     "lat": -20.0055927,
-    "lng": 57.553719
+    "lng": 57.553719,
+    "themes": []
   },
   {
     "id": "le-pole",
@@ -1108,7 +1159,8 @@
     "website": "https://www.facebook.com/lepolegb",
     "googleMapsUrl": "https://maps.google.com/?cid=9532550947943284175",
     "lat": -20.0167536,
-    "lng": 57.5838032
+    "lng": 57.5838032,
+    "themes": []
   },
   {
     "id": "ice-club",
@@ -1119,7 +1171,8 @@
     "website": "",
     "googleMapsUrl": "https://maps.google.com/?cid=981893433414283425",
     "lat": -20.017663,
-    "lng": 57.586387
+    "lng": 57.586387,
+    "themes": []
   },
   {
     "id": "le-cabanon-bar-a-coquillettes-grand-baie",
@@ -1130,7 +1183,8 @@
     "website": "",
     "googleMapsUrl": "https://maps.google.com/?cid=7553506428735104922",
     "lat": -20.0083844,
-    "lng": 57.5600337
+    "lng": 57.5600337,
+    "themes": []
   },
   {
     "id": "the-gourmet-grill",
@@ -1141,7 +1195,8 @@
     "website": "https://www.facebook.com/thegrill.page/",
     "googleMapsUrl": "https://maps.google.com/?cid=581802600573556325",
     "lat": -20.0098758,
-    "lng": 57.5829729
+    "lng": 57.5829729,
+    "themes": []
   },
   {
     "id": "la-boutique-grand-baie",
