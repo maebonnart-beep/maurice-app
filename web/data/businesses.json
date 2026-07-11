@@ -3073,5 +3073,95 @@
       "mauricienne"
     ],
     "priceRange": "prix-moyen"
+  },
+  {
+    "id": "tamarina-golf-club",
+    "name": "Tamarina Golf Club",
+    "category": "golf",
+    "address": "Tamarin, Rivière Noire (côte Ouest)",
+    "phone": "+230 401 3006",
+    "website": "https://tamarinagolfclub.com/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Tamarina%20Golf%20Club%20Tamarin%20Mauritius",
+    "lat": -20.3309,
+    "lng": 57.3839,
+    "hours": "Réservations Pro Shop tous les jours 7h-18h30",
+    "priceRange": "se-faire-plaisir"
+  },
+  {
+    "id": "heritage-golf-club-bel-ombre",
+    "name": "Heritage Golf Club",
+    "category": "golf",
+    "address": "Bel Ombre, Savanne (côte Sud)",
+    "phone": "+230 623 5600",
+    "website": "https://heritagegolfclub.mu/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Heritage%20Golf%20Club%20Bel%20Ombre%20Mauritius",
+    "lat": -20.5058,
+    "lng": 57.4147,
+    "hours": "Ouvert 365 jours/an",
+    "priceRange": "se-faire-plaisir"
+  },
+  {
+    "id": "ile-aux-cerfs-golf-club",
+    "name": "Ile aux Cerfs Golf Club",
+    "category": "golf",
+    "address": "Île aux Cerfs, au large de Trou d'Eau Douce (côte Est)",
+    "phone": "+230 402 7720",
+    "website": "https://www.ileauxcerfsgolfclub.com/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Ile%20aux%20Cerfs%20Golf%20Club%20Mauritius",
+    "lat": -20.2417,
+    "lng": 57.8072,
+    "hours": "Premier départ 7h30, twilight à partir de 15h",
+    "priceRange": "se-faire-plaisir"
+  },
+  {
+    "id": "anahita-golf-course",
+    "name": "Anahita Golf Course - Four Seasons",
+    "category": "golf",
+    "address": "Beau Champ, Grande Rivière Sud Est (côte Est)",
+    "phone": "",
+    "website": "https://golf.anahitamauritius.com/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Anahita%20Golf%20Course%20Four%20Seasons%20Mauritius",
+    "lat": -20.2681,
+    "lng": 57.7719,
+    "hours": "Ouvert tous les jours, réservation à l'avance requise",
+    "priceRange": "se-faire-plaisir"
+  },
+  {
+    "id": "gymkhana-club-vacoas",
+    "name": "The Gymkhana Club",
+    "category": "golf",
+    "address": "Vacoas (Centre de l'île)",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Mauritius%20Gymkhana%20Club%20Vacoas",
+    "lat": -20.2989,
+    "lng": 57.4772,
+    "hours": "Ouvert aux non-membres Lun-Ven 9h-14h",
+    "priceRange": "bon-marche"
+  },
+  {
+    "id": "avalon-golf-estate",
+    "name": "Avalon Golf Estate",
+    "category": "golf",
+    "address": "Bois Chéri, Savanne (Sud)",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Avalon%20Golf%20Estate%20Bois%20Cheri%20Mauritius",
+    "lat": -20.3961,
+    "lng": 57.5203,
+    "priceRange": "prix-moyen"
+  },
+  {
+    "id": "constance-belle-mare-plage-golf",
+    "name": "Constance Belle Mare Plage - Legend & Links Golf",
+    "category": "golf",
+    "address": "Belle Mare (côte Est)",
+    "phone": "",
+    "website": "https://www.constancehotels.com/en/hotels-resorts/belle-mare-plage/experiences/golf/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Constance%20Belle%20Mare%20Plage%20Golf%20Legend%20Links%20Mauritius",
+    "lat": -20.2367,
+    "lng": 57.7742,
+    "hours": "Tous les jours 7h-19h",
+    "priceRange": "se-faire-plaisir"
   }
 ]
