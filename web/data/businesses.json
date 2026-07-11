@@ -2772,5 +2772,306 @@
       "randonnee-guidee"
     ],
     "hours": "Tous les jours 8h-20h"
+  },
+  {
+    "id": "domaine-anna-flic-en-flac",
+    "name": "Domaine Anna",
+    "category": "restaurants",
+    "address": "Medine, Flic en Flac",
+    "phone": "+230 453 9650",
+    "website": "https://domaine-anna.restaurant.mu/en",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Domaine%20Anna%20restaurant%20Flic%20en%20Flac%20Mauritius",
+    "lat": -20.2833,
+    "lng": 57.3722,
+    "themes": [
+      "mauricienne",
+      "asiatique"
+    ],
+    "hours": "Mar-Dim 11h30-14h30 & 18h30-22h30, fermé lun",
+    "priceRange": "prix-moyen"
+  },
+  {
+    "id": "beach-shack-flic-en-flac",
+    "name": "The Beach Shack",
+    "category": "restaurants",
+    "address": "Klondike Rd, Flic en Flac",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=The%20Beach%20Shack%20Flic%20en%20Flac%20Mauritius",
+    "lat": -20.285,
+    "lng": 57.365,
+    "themes": [
+      "fruits-de-mer",
+      "mauricienne"
+    ]
+  },
+  {
+    "id": "la-bonne-chute-tamarin",
+    "name": "La Bonne Chute Restaurant & Bar",
+    "category": "restaurants",
+    "address": "Route Royale, Tamarin",
+    "phone": "+230 483 6552",
+    "website": "https://labonnechuterestaurantandbar.com/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=La%20Bonne%20Chute%20Restaurant%20Bar%20Tamarin%20Mauritius",
+    "lat": -20.3255,
+    "lng": 57.3745,
+    "themes": [
+      "fruits-de-mer",
+      "mauricienne",
+      "grillades",
+      "bar"
+    ],
+    "hours": "Ouvert midi et soir, fermé mar, jeu et dim",
+    "priceRange": "prix-moyen"
+  },
+  {
+    "id": "il-padrino-black-river",
+    "name": "Il Padrino Italian Restaurant \"Al Porticciolo\"",
+    "category": "restaurants",
+    "address": "La Balise Marina, Black River",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Il%20Padrino%20Italian%20Restaurant%20La%20Balise%20Marina%20Black%20River%20Mauritius",
+    "lat": -20.3592,
+    "lng": 57.3714,
+    "themes": [
+      "italien"
+    ],
+    "hours": "Fermé mar, Lun+Mer-Dim 12h-14h30 & 17h-21h30",
+    "priceRange": "se-faire-plaisir"
+  },
+  {
+    "id": "black-river-lounge-kitchen-tamarin",
+    "name": "Black River Lounge & Kitchen",
+    "category": "restaurants",
+    "address": "Tamarin",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Black%20River%20Lounge%20Kitchen%20Tamarin%20Mauritius",
+    "lat": -20.326,
+    "lng": 57.374,
+    "themes": [
+      "fruits-de-mer",
+      "bar"
+    ]
+  },
+  {
+    "id": "the-boathouse-grill-le-morne",
+    "name": "The Boathouse Bar & Grill - St. Regis",
+    "category": "restaurants",
+    "address": "St. Regis Mauritius Resort, Coastal Road, La Gaulette, Le Morne",
+    "phone": "+230 403 9000",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=The%20Boathouse%20Bar%20Grill%20St%20Regis%20Le%20Morne%20Mauritius",
+    "lat": -20.4547,
+    "lng": 57.3106,
+    "themes": [
+      "fruits-de-mer",
+      "bar"
+    ],
+    "priceRange": "se-faire-plaisir"
+  },
+  {
+    "id": "enso-la-gaulette",
+    "name": "ENSO Restaurant & Lounge Bar",
+    "category": "restaurants",
+    "address": "Village Walk, La Gaulette, Le Morne",
+    "phone": "+230 5451 5907",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=ENSO%20Restaurant%20Lounge%20Bar%20La%20Gaulette%20Mauritius",
+    "lat": -20.4258,
+    "lng": 57.3283,
+    "themes": [
+      "bar",
+      "fastfood",
+      "fruits-de-mer"
+    ],
+    "hours": "Tous les jours 12h-22h",
+    "priceRange": "prix-moyen"
+  },
+  {
+    "id": "lalchimiste-rhumerie-chamarel",
+    "name": "L'Alchimiste - La Rhumerie de Chamarel",
+    "category": "restaurants",
+    "address": "Chamarel, Rivière Noire",
+    "phone": "",
+    "website": "https://www.rhumeriedechamarel.com/en/le-restaurant/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Rhumerie%20de%20Chamarel%20restaurant%20Mauritius",
+    "lat": -20.4425,
+    "lng": 57.3855,
+    "themes": [
+      "mauricienne",
+      "europeenne"
+    ],
+    "hours": "Lun-Sam 11h30-15h30, fermé dim",
+    "priceRange": "se-faire-plaisir"
+  },
+  {
+    "id": "chateau-de-bel-ombre",
+    "name": "Le Château de Bel Ombre",
+    "category": "restaurants",
+    "address": "Domaine de Bel Ombre, Heritage Resorts, Coastal Road, Bel Ombre",
+    "phone": "+230 601 5529",
+    "website": "https://lechateaudebelombre.com/fr",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Le%20Chateau%20de%20Bel%20Ombre%20restaurant%20Mauritius",
+    "lat": -20.5058,
+    "lng": 57.4147,
+    "themes": [
+      "mauricienne"
+    ],
+    "hours": "Déjeuner 11h30-15h, dîner 19h-22h30, sur réservation",
+    "priceRange": "se-faire-plaisir"
+  },
+  {
+    "id": "chez-rosy-gris-gris-souillac",
+    "name": "Chez Rosy - Le Gris Gris Restaurant",
+    "category": "restaurants",
+    "address": "Site du Gris Gris, Souillac",
+    "phone": "+230 625 4179",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Chez%20Rosy%20Le%20Gris%20Gris%20Restaurant%20Souillac%20Mauritius",
+    "lat": -20.5178,
+    "lng": 57.5203,
+    "themes": [
+      "mauricienne",
+      "fruits-de-mer"
+    ],
+    "hours": "Tous les jours 12h-17h",
+    "priceRange": "bon-marche"
+  },
+  {
+    "id": "green-island-beach-restaurant-trou-eau-douce",
+    "name": "Green Island Beach Restaurant",
+    "category": "restaurants",
+    "address": "Royal Road, Trou d'Eau Douce",
+    "phone": "+230 480 0735",
+    "website": "https://green-island-beach-restaurant.restaurant.mu/en",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Green%20Island%20Beach%20Restaurant%20Trou%20d'Eau%20Douce%20Mauritius",
+    "lat": -20.2372,
+    "lng": 57.7908,
+    "themes": [
+      "mauricienne",
+      "fruits-de-mer",
+      "vegetarien"
+    ],
+    "hours": "Fermé lun, Mar-Dim 9h-22h",
+    "priceRange": "prix-moyen"
+  },
+  {
+    "id": "la-case-poisson-trou-eau-douce",
+    "name": "La Case Poisson",
+    "category": "restaurants",
+    "address": "Le Maho, Trou d'Eau Douce",
+    "phone": "+230 5836 8744",
+    "website": "https://lacasepoisson.mu",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=La%20Case%20Poisson%20Trou%20d'Eau%20Douce%20Mauritius",
+    "lat": -20.2372,
+    "lng": 57.7908,
+    "themes": [
+      "fruits-de-mer"
+    ],
+    "hours": "Tous les jours 11h30-22h30",
+    "priceRange": "prix-moyen"
+  },
+  {
+    "id": "le-bazilic-mahebourg",
+    "name": "Le Bazilic",
+    "category": "restaurants",
+    "address": "Rue Maurice, Mahébourg",
+    "phone": "+230 5254 8191",
+    "website": "https://lebazilic.mu/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Le%20Bazilic%20restaurant%20Mahebourg%20Mauritius",
+    "lat": -20.4081,
+    "lng": 57.7,
+    "themes": [
+      "mauricienne",
+      "fruits-de-mer",
+      "grillades",
+      "bar"
+    ],
+    "hours": "Tous les jours 10h-23h",
+    "priceRange": "prix-moyen"
+  },
+  {
+    "id": "le-capitaine-mahebourg",
+    "name": "Le Capitaine",
+    "category": "restaurants",
+    "address": "Rue de Maurice, Mahébourg",
+    "phone": "+230 631 7428",
+    "website": "https://www.lecapitaine.mu/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Le%20Capitaine%20restaurant%20Mahebourg%20Mauritius",
+    "lat": -20.4081,
+    "lng": 57.7,
+    "themes": [
+      "fruits-de-mer"
+    ],
+    "hours": "Tous les jours 8h30-22h30",
+    "priceRange": "prix-moyen"
+  },
+  {
+    "id": "namaste-restaurant-caudan",
+    "name": "Namaste Restaurant",
+    "category": "restaurants",
+    "address": "L'Observatoire, Le Caudan Waterfront, Port Louis",
+    "phone": "+230 211 6710",
+    "website": "https://namaste.mu/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Namaste%20Restaurant%20Caudan%20Waterfront%20Port%20Louis%20Mauritius",
+    "lat": -20.1619,
+    "lng": 57.4989,
+    "themes": [
+      "indienne"
+    ],
+    "hours": "Horaires variables selon les jours, généralement 11h30-15h30 & 18h30-22h30",
+    "priceRange": "bon-marche"
+  },
+  {
+    "id": "la-bonne-marmite-port-louis",
+    "name": "La Bonne Marmite",
+    "category": "restaurants",
+    "address": "18 Rue Sir William Newton, Port-Louis",
+    "phone": "+230 212 2403",
+    "website": "http://www.bonnemarmite.com/index.php/fr",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=La%20Bonne%20Marmite%20restaurant%20Port%20Louis%20Mauritius",
+    "lat": -20.1619,
+    "lng": 57.5017,
+    "themes": [
+      "indienne",
+      "asiatique",
+      "europeenne"
+    ],
+    "hours": "Lun-Ven, uniquement le midi",
+    "priceRange": "bon-marche"
+  },
+  {
+    "id": "escale-creole-moka",
+    "name": "Escale Créole",
+    "category": "restaurants",
+    "address": "B46, Bois Chéri Rd, Moka",
+    "phone": "+230 433 1641",
+    "website": "https://escalecreole.net/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Escale%20Creole%20restaurant%20Moka%20Mauritius",
+    "lat": -20.2318,
+    "lng": 57.5372,
+    "themes": [
+      "mauricienne"
+    ],
+    "hours": "Lun-Ven 12h-15h, réservation requise",
+    "priceRange": "prix-moyen"
+  },
+  {
+    "id": "la-table-matisse-curepipe",
+    "name": "La Table Matisse",
+    "category": "restaurants",
+    "address": "Angle rues Emile Sauzier / Sir Virgile Naz, Curepipe",
+    "phone": "+230 489 1500",
+    "website": "https://latablematisse.restaurant/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=La%20Table%20Matisse%20restaurant%20Curepipe%20Mauritius",
+    "lat": -20.3153,
+    "lng": 57.5222,
+    "themes": [
+      "europeenne",
+      "mauricienne"
+    ],
+    "priceRange": "prix-moyen"
   }
 ]
