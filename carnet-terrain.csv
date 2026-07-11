@@ -1,0 +1,22 @@
+﻿# Carnet de terrain Maurice+ — notes personnelles de visites (à fusionner plus tard dans web/data/businesses.json)
+# Une ligne = une visite. Champs séparés par point-virgule (;). Ouvrir avec Excel/Numbers/Google Sheets (encodage UTF-8).
+#
+# Colonnes :
+# date_visite       : AAAA-MM-JJ
+# nom               : nom du lieu tel que tu le connais
+# deja_dans_appli   : oui / non / je_ne_sais_pas — si "oui", ça évite de recréer un doublon
+# id_appli          : si tu connais l'identifiant existant dans businesses.json (sinon laisser vide)
+# categorie         : excursions, croisieres, plongee, nautique, kitesurf, peche, spa, golf, loisirs, visites, restaurants, hotels, shopping
+# adresse           : adresse ou repère (ex: nom de l'hôtel, rue)
+# telephone         :
+# site_web          :
+# themes            : pour restaurants/hotels, séparés par virgule — mauricienne, fruits-de-mer, indienne, asiatique, europeenne, italien, grecque, marocain, grillades, vegetarien, fastfood, bar, cafe, kids-friendly
+# horaires          : texte libre, ex: "Lun-Sam 9h-18h, fermé dim"
+# fourchette_prix   : bon-marche / prix-moyen / se-faire-plaisir
+# note_perso        : ta note sur 5
+# commentaire       : tes impressions, ce qui t'a marqué (accueil, cadre, rapport qualité-prix...)
+# photos            : noms de fichiers, séparés par virgule — mets les photos dans un dossier photos/nom-du-lieu/ à côté de ce fichier
+#
+# Exemple (à supprimer une fois que tu as compris le format) :
+2026-07-11;Exemple Bar Grand Baie;non;;restaurants;Coastal Road, Grand Baie;+230 5xxx xxxx;https://exemple.mu;bar,kids-friendly;Tous les jours 11h-23h;prix-moyen;4;Cadre superbe en bord de plage, service un peu lent le soir mais cocktails excellents et prix raisonnables pour la vue.;photo1.jpg,photo2.jpg
+date_visite;nom;deja_dans_appli;id_appli;categorie;adresse;telephone;site_web;themes;horaires;fourchette_prix;note_perso;commentaire;photos
