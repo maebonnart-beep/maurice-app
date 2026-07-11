@@ -10,6 +10,7 @@ export type CategoryKey =
   | "loisirs"
   | "visites"
   | "restaurants"
+  | "hotels"
   | "shopping";
 
 export type Category = {

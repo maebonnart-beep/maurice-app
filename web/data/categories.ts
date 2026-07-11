@@ -12,6 +12,7 @@ export const CATEGORIES: Category[] = [
   { key: "loisirs", label: "Loisirs & famille", emoji: "🎡", color: "#ef6a4c" },
   { key: "visites", label: "Visites guidées", emoji: "🗺️", color: "#a15c3a" },
   { key: "restaurants", label: "Restaurants & bars", emoji: "🍽️", color: "#d4483f" },
+  { key: "hotels", label: "Bars & restaurants d'hôtels", emoji: "🏨", color: "#8e4585" },
   { key: "shopping", label: "Shopping & boutiques", emoji: "🛍️", color: "#9c7a3c" },
 ];
 
@@ -38,6 +39,7 @@ export const SUBCATEGORIES: Partial<Record<CategoryKey, Subcategory[]>> = {
     { key: "cafe", label: "Café & pâtisserie", emoji: "☕" },
   ],
 };
+SUBCATEGORIES.hotels = SUBCATEGORIES.restaurants;
 
 export const PRICE_RANGES: { key: PriceRange; label: string; symbol: string }[] = [
   { key: "bon-marche", label: "Bon marché", symbol: "€" },

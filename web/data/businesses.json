@@ -850,7 +850,7 @@
   {
     "id": "lazy-lobster",
     "name": "Lazy Lobster",
-    "category": "restaurants",
+    "category": "hotels",
     "address": "MU, Royal Road, Grand Baie 30510",
     "phone": "+230 209 8000",
     "website": "https://veranda-resorts.com/en/mauritius-hotel-veranda-grand-baie/restaurants-and-bars",
@@ -884,7 +884,7 @@
   {
     "id": "ai-kisu-lux-grand-baie",
     "name": "Ai KISU - LUX* Grand Baie",
-    "category": "restaurants",
+    "category": "hotels",
     "address": "MU, MU LUX*, Coastal Road, Grand Baie 30510",
     "phone": "+230 209 2200",
     "website": "https://www.luxresorts.com/en/mauritius/hotel/luxgrandbaie/restaurants-bars/ai-kisu?hotel=LUX-Grand-Baie",
@@ -934,7 +934,7 @@
   {
     "id": "beach-rouge-lux-grand-baie",
     "name": "Beach Rouge - LUX* Grand Baie",
-    "category": "restaurants",
+    "category": "hotels",
     "address": "MU, MU LUX*, Coastal Road, Grand Baie 30510",
     "phone": "+230 209 2200",
     "website": "https://www.luxresorts.com/en/mauritius/hotel/luxgrandbaie/restaurants-bars/beach-rouge",
@@ -1114,7 +1114,7 @@
   {
     "id": "bisou-rooftop-bar-restaurant-lux-grand-baie",
     "name": "Bisou Rooftop Bar & Restaurant - LUX* Grand Baie",
-    "category": "restaurants",
+    "category": "hotels",
     "address": "MU, LUX* Grand Baie, Coastal Road, Grand Baie 30510",
     "phone": "+230 209 2200",
     "website": "https://www.luxresorts.com/en/mauritius/hotel/luxgrandbaie/restaurants-bars/bisou?hotel=LUX-Grand-Baie",
@@ -1253,7 +1253,7 @@
   {
     "id": "rooftop-adults-only-restaurant-bar-lounge",
     "name": "ROOFTOP (Adults only - Restaurant - Bar & Lounge)",
-    "category": "restaurants",
+    "category": "hotels",
     "address": "Inside Ocean V Hotel, Corner Royal Road and Old Mill Rd, Grand Baie",
     "phone": "+230 260 2200",
     "website": "https://searesortshotels.com/ocean-v/",
@@ -1379,7 +1379,7 @@
   {
     "id": "bar-principal",
     "name": "Bar principal",
-    "category": "restaurants",
+    "category": "hotels",
     "address": "XHV3+QF9 c/o Club Med La, Rte Cotière, Grand Baie",
     "phone": "",
     "website": "",
@@ -1455,7 +1455,7 @@
   {
     "id": "walima-by-bisou-lux-grand-baie",
     "name": "Walima by Bisou - LUX* Grand Baie",
-    "category": "restaurants",
+    "category": "hotels",
     "address": "MU, MU LUX*, Coastal Road, Grand Baie 30510",
     "phone": "+230 5942 9773",
     "website": "https://www.luxresorts.com/en/mauritius/hotel/luxgrandbaie/restaurants-bars/walima-by-bisou",
@@ -1472,7 +1472,7 @@
   {
     "id": "ici-lux-grand-baie",
     "name": "ICI - LUX* Grand Baie",
-    "category": "restaurants",
+    "category": "hotels",
     "address": "MU, MU LUX*, Coastal Road, Grand Baie 30510",
     "phone": "+230 209 2200",
     "website": "https://www.luxresorts.com/en/mauritius/hotel/luxgrandbaie/restaurants-bars/ici",
@@ -1487,7 +1487,7 @@
   {
     "id": "la-varangue-veranda-grand-baie",
     "name": "La Varangue - Veranda Grand Baie",
-    "category": "restaurants",
+    "category": "hotels",
     "address": "MU, Royal Road, Grand Baie 30510",
     "phone": "+230 209 8000",
     "website": "https://veranda-resorts.com/en/mauritius-hotel-veranda-grand-baie/restaurants-and-bars",
@@ -1502,7 +1502,7 @@
   {
     "id": "la-crique-veranda-grand-baie",
     "name": "La Crique - Veranda Grand Baie",
-    "category": "restaurants",
+    "category": "hotels",
     "address": "MU, Royal Road, Grand Baie 30510",
     "phone": "+230 209 8000",
     "website": "https://veranda-resorts.com/en/mauritius-hotel-veranda-grand-baie/restaurants-and-bars",
@@ -1517,7 +1517,7 @@
   {
     "id": "navigator-canonnier-beachcomber",
     "name": "Navigator - Canonnier Beachcomber",
-    "category": "restaurants",
+    "category": "hotels",
     "address": "Canonnier Beachcomber Resort, Grand Baie",
     "phone": "+230 209 7000",
     "website": "https://www.beachcomber-hotels.com/en/restaurants-pointe-aux-canonniers",
@@ -1534,7 +1534,7 @@
   {
     "id": "la-serenata-canonnier-beachcomber",
     "name": "La Serenata - Canonnier Beachcomber",
-    "category": "restaurants",
+    "category": "hotels",
     "address": "Canonnier Beachcomber Resort, Grand Baie",
     "phone": "+230 209 7000",
     "website": "https://la-serenata.restaurant.mu/en",
@@ -1550,7 +1550,7 @@
   {
     "id": "planteur-bar-canonnier-beachcomber",
     "name": "Planteur Bar - Canonnier Beachcomber",
-    "category": "restaurants",
+    "category": "hotels",
     "address": "Canonnier Beachcomber Resort, Grand Baie",
     "phone": "+230 209 7000",
     "website": "https://www.beachcomber-hotels.com/en/restaurants-pointe-aux-canonniers",
@@ -1565,7 +1565,7 @@
   {
     "id": "manzu-ocean-v-hotel",
     "name": "Manzu - Ocean V Hotel",
-    "category": "restaurants",
+    "category": "hotels",
     "address": "Inside Ocean V Hotel, Corner Royal Road and Old Mill Rd, Grand Baie",
     "phone": "+230 260 2200",
     "website": "https://searesortshotels.com/ocean-v/dining/",
