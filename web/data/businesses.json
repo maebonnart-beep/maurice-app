@@ -2511,5 +2511,266 @@
     "googleMapsUrl": "https://maps.google.com/?cid=13214605146820653055",
     "lat": -20.0126211,
     "lng": 57.5856349
+  },
+  {
+    "id": "le-morne-brabant",
+    "name": "Le Morne Brabant",
+    "category": "randonnees",
+    "address": "Le Morne, Rivière Noire",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Le%20Morne%20Brabant%20hiking%20trail%20Mauritius",
+    "lat": -20.4547,
+    "lng": 57.3106,
+    "themes": [
+      "montagnes",
+      "points-de-vue"
+    ],
+    "hours": "Sentier ouvert tous les jours 6h-16h (départ conseillé 6h30)"
+  },
+  {
+    "id": "black-river-gorges-national-park",
+    "name": "Parc National des Gorges de Rivière Noire",
+    "category": "randonnees",
+    "address": "Entrées à Rivière Noire et Pétrin, Rivière Noire",
+    "phone": "",
+    "website": "https://npcs.govmu.org/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Black%20River%20Gorges%20National%20Park%20Petrin%20entrance%20Mauritius",
+    "lat": -20.4165,
+    "lng": 57.4886,
+    "themes": [
+      "forets",
+      "points-de-vue",
+      "cascades"
+    ],
+    "hours": "Tous les jours 6h-18h",
+    "priceRange": "bon-marche"
+  },
+  {
+    "id": "chamarel-seven-coloured-earth",
+    "name": "Chamarel - Terres des 7 Couleurs & Cascade",
+    "category": "randonnees",
+    "address": "Chamarel, Rivière Noire",
+    "phone": "",
+    "website": "https://chamarel7colouredearth.com/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Chamarel%20Seven%20Coloured%20Earth%20Mauritius",
+    "lat": -20.4372,
+    "lng": 57.3819,
+    "themes": [
+      "cascades",
+      "points-de-vue"
+    ],
+    "hours": "Tous les jours 8h30-17h30 (17h en hiver)",
+    "priceRange": "prix-moyen"
+  },
+  {
+    "id": "lion-mountain",
+    "name": "Lion Mountain",
+    "category": "randonnees",
+    "address": "Départ Old Grand Port Police Station, Grand Port",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Lion%20Mountain%20Old%20Grand%20Port%20hiking%20Mauritius",
+    "lat": -20.3733,
+    "lng": 57.7075,
+    "themes": [
+      "montagnes",
+      "points-de-vue",
+      "randonnee-guidee"
+    ],
+    "hours": "Tous les jours, départ vers 9h",
+    "priceRange": "se-faire-plaisir"
+  },
+  {
+    "id": "pieter-both-mountain",
+    "name": "Pieter Both",
+    "category": "randonnees",
+    "address": "Départ La Laura-Malenga, Moka",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Pieter%20Both%20mountain%20hiking%20Mauritius",
+    "lat": -20.1719,
+    "lng": 57.5461,
+    "themes": [
+      "montagnes",
+      "randonnee-guidee"
+    ],
+    "priceRange": "se-faire-plaisir"
+  },
+  {
+    "id": "le-pouce-mountain",
+    "name": "Le Pouce",
+    "category": "randonnees",
+    "address": "Départ Saint-Pierre / Moka",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Le%20Pouce%20mountain%20hiking%20Mauritius",
+    "lat": -20.1858,
+    "lng": 57.5323,
+    "themes": [
+      "montagnes",
+      "points-de-vue"
+    ]
+  },
+  {
+    "id": "trois-mamelles",
+    "name": "Trois Mamelles",
+    "category": "randonnees",
+    "address": "Départ Bassin Estate, près Quatre Bornes",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Trois%20Mamelles%20mountain%20hiking%20Mauritius",
+    "lat": -20.2565,
+    "lng": 57.4645,
+    "themes": [
+      "montagnes",
+      "points-de-vue"
+    ]
+  },
+  {
+    "id": "corps-de-garde",
+    "name": "Corps de Garde",
+    "category": "randonnees",
+    "address": "Départ Stanley, Rose-Hill",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Corps%20de%20Garde%20mountain%20hiking%20Mauritius",
+    "lat": -20.2513,
+    "lng": 57.4785,
+    "themes": [
+      "montagnes",
+      "points-de-vue"
+    ]
+  },
+  {
+    "id": "tamarin-sept-cascades",
+    "name": "Tamarin - Sept Cascades (Tamarind Falls)",
+    "category": "randonnees",
+    "address": "Départ près de Henrietta, Réservoir de Tamarin",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Tamarind%20Falls%20Seven%20Cascades%20hiking%20Mauritius",
+    "lat": -20.3403,
+    "lng": 57.4858,
+    "themes": [
+      "cascades",
+      "randonnee-guidee"
+    ],
+    "priceRange": "bon-marche"
+  },
+  {
+    "id": "vallee-de-ferney",
+    "name": "Vallée de Ferney",
+    "category": "randonnees",
+    "address": "Ferney, Grand Port",
+    "phone": "",
+    "website": "https://ferney.mu/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Vallee%20de%20Ferney%20Mauritius",
+    "lat": -20.4372,
+    "lng": 57.6875,
+    "themes": [
+      "forets",
+      "reserves-naturelles",
+      "randonnee-guidee"
+    ],
+    "hours": "Tous les jours 9h-17h",
+    "priceRange": "prix-moyen"
+  },
+  {
+    "id": "ile-aux-aigrettes",
+    "name": "Île aux Aigrettes",
+    "category": "randonnees",
+    "address": "Départ Pointe Jérôme, Mahébourg",
+    "phone": "",
+    "website": "https://www.mauritian-wildlife.org/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Ile%20aux%20Aigrettes%20Mahebourg%20Mauritius",
+    "lat": -20.4133,
+    "lng": 57.7228,
+    "themes": [
+      "reserves-naturelles",
+      "randonnee-guidee"
+    ],
+    "hours": "Lun-Sam départs 9h30-14h30 (toutes les 30 min), Dim matin seulement 9h30-12h",
+    "priceRange": "se-faire-plaisir"
+  },
+  {
+    "id": "domaine-de-letoile",
+    "name": "Domaine de l'Étoile",
+    "category": "randonnees",
+    "address": "Est de l'île, à ~25km de Port-Louis",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Domaine%20de%20l'Etoile%20Mauritius",
+    "lat": -20.2144,
+    "lng": 57.6425,
+    "themes": [
+      "forets",
+      "randonnee-guidee"
+    ]
+  },
+  {
+    "id": "yemen-nature-reserve",
+    "name": "Réserve de Yemen",
+    "category": "randonnees",
+    "address": "Rivière Noire, Ouest",
+    "phone": "",
+    "website": "https://yemen.mu/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Yemen%20Nature%20Reserve%20Mauritius",
+    "lat": -20.3844,
+    "lng": 57.4356,
+    "themes": [
+      "reserves-naturelles",
+      "randonnee-guidee"
+    ],
+    "hours": "Lun, Mer, Sam - départ 14h (hiver) ou 15h (été)"
+  },
+  {
+    "id": "bel-ombre-hiking-trail",
+    "name": "Bel Ombre - Sentier de randonnée",
+    "category": "randonnees",
+    "address": "Bel Ombre, Savanne",
+    "phone": "",
+    "website": "https://www.belombrenaturereserve.com/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Bel%20Ombre%20hiking%20trail%20Mauritius",
+    "lat": -20.5058,
+    "lng": 57.4147,
+    "themes": [
+      "forets",
+      "sentiers-cotiers",
+      "randonnee-guidee"
+    ]
+  },
+  {
+    "id": "grand-bassin-ganga-talao",
+    "name": "Grand Bassin (Ganga Talao)",
+    "category": "randonnees",
+    "address": "Savanne, Sud-Ouest",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Grand%20Bassin%20Ganga%20Talao%20Mauritius",
+    "lat": -20.4189,
+    "lng": 57.4886,
+    "themes": [
+      "points-de-vue",
+      "forets"
+    ],
+    "hours": "Temple 5h-12h & 13h-18h, site accessible en permanence"
+  },
+  {
+    "id": "frederica-nature-reserve",
+    "name": "Frederica Nature Reserve",
+    "category": "randonnees",
+    "address": "Savanne, Sud",
+    "phone": "",
+    "website": "https://www.fredericanaturereserve.com/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Frederica%20Nature%20Reserve%20Mauritius",
+    "lat": -20.4681,
+    "lng": 57.4386,
+    "themes": [
+      "forets",
+      "reserves-naturelles",
+      "randonnee-guidee"
+    ],
+    "hours": "Tous les jours 8h-20h"
   }
 ]

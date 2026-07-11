@@ -15,6 +15,7 @@ export const CATEGORIES: Category[] = [
   { key: "hotels", label: "Bars & restaurants d'hôtels", emoji: "🏨", color: "#8e4585" },
   { key: "shopping", label: "Shopping & boutiques", emoji: "🛍️", color: "#9c7a3c" },
   { key: "alimentation", label: "Food shops", emoji: "🛒", color: "#2e8b57" },
+  { key: "randonnees", label: "Balades & randonnées", emoji: "🥾", color: "#6b4423" },
 ];
 
 export const CATEGORY_MAP = Object.fromEntries(
@@ -51,6 +52,15 @@ export const SUBCATEGORIES: Partial<Record<CategoryKey, Subcategory[]>> = {
     { key: "poissonnerie", label: "Poissonnerie", emoji: "🐟" },
     { key: "boulangerie-patisserie", label: "Boulangerie, pâtisseries & petit snacking", emoji: "🥐" },
     { key: "vins-bieres-spiritueux", label: "Vins, bières et spiritueux", emoji: "🍷" },
+  ],
+  randonnees: [
+    { key: "montagnes", label: "Montagnes", emoji: "⛰️" },
+    { key: "cascades", label: "Cascades", emoji: "💦" },
+    { key: "forets", label: "Forêts", emoji: "🌳" },
+    { key: "sentiers-cotiers", label: "Sentiers côtiers", emoji: "🌊" },
+    { key: "reserves-naturelles", label: "Réserves naturelles", emoji: "🦌" },
+    { key: "points-de-vue", label: "Points de vue", emoji: "📸" },
+    { key: "randonnee-guidee", label: "Randonnée guidée", emoji: "🧭" },
   ],
 };
 SUBCATEGORIES.hotels = SUBCATEGORIES.restaurants;
