@@ -3163,5 +3163,77 @@
     "lng": 57.7742,
     "hours": "Tous les jours 7h-19h",
     "priceRange": "se-faire-plaisir"
+  },
+  {
+    "id": "bagatelle-mall-moka",
+    "name": "Bagatelle Mall of Mauritius",
+    "category": "shopping",
+    "address": "Moka (Centre de l'île)",
+    "phone": "+230 460 0707",
+    "website": "https://www.ascenciamalls.com/bagatelle-mall/shops",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Bagatelle%20Mall%20of%20Mauritius%20Moka",
+    "lat": -20.2211,
+    "lng": 57.4931,
+    "hours": "Dim 9h30-17h, Lun-Jeu 9h30-20h30, Ven-Sam 9h30-22h"
+  },
+  {
+    "id": "port-louis-central-market",
+    "name": "Marché Central de Port-Louis",
+    "category": "shopping",
+    "address": "9 Corderie Street, Port-Louis",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Marche%20Central%20Port%20Louis%20Mauritius",
+    "lat": -20.1614,
+    "lng": 57.5011,
+    "hours": "Lun-Sam 5h30-17h30, Dim 5h30-11h30"
+  },
+  {
+    "id": "flacq-market",
+    "name": "Marché de Flacq",
+    "category": "shopping",
+    "address": "Centre de Flacq (Est)",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Marche%20de%20Flacq%20Central%20Flacq%20Market%20Mauritius",
+    "lat": -20.1978,
+    "lng": 57.7147,
+    "hours": "Lun-Sam 6h-17h, Dim et jours fériés 6h-12h — plus animé mer et dim"
+  },
+  {
+    "id": "phoenix-mall",
+    "name": "Phoenix Mall",
+    "category": "shopping",
+    "address": "Centre Commercial Phoenix, S Sivananda Ave, Vacoas-Phoenix (Centre)",
+    "phone": "",
+    "website": "https://www.ascenciamalls.com/phoenix-mall",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Phoenix%20Mall%20Vacoas%20Mauritius",
+    "lat": -20.2994,
+    "lng": 57.5006,
+    "hours": "Lun-Jeu 9h-20h30, Ven-Sam 9h-22h30, Dim 9h-19h"
+  },
+  {
+    "id": "la-city-trianon",
+    "name": "La City Trianon",
+    "category": "shopping",
+    "address": "St Jean Road, Quatre Bornes (Centre)",
+    "phone": "+230 466 8985",
+    "website": "https://www.lacity-trianon.com/shops/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=La%20City%20Trianon%20Quatre%20Bornes%20Mauritius",
+    "lat": -20.2637,
+    "lng": 57.4794,
+    "hours": "Tous les jours environ 10h-21h"
+  },
+  {
+    "id": "caudan-waterfront",
+    "name": "Le Caudan Waterfront",
+    "category": "shopping",
+    "address": "Port-Louis",
+    "phone": "",
+    "website": "https://caudan.com/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Le%20Caudan%20Waterfront%20Port%20Louis%20Mauritius",
+    "lat": -20.16,
+    "lng": 57.4986,
+    "hours": "Lun-Sam 9h30-18h/20h, Dim et jours fériés 9h30-13h"
   }
 ]
