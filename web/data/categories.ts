@@ -37,6 +37,7 @@ export const SUBCATEGORIES: Partial<Record<CategoryKey, Subcategory[]>> = {
     { key: "fastfood", label: "Fast-food & snack", emoji: "🍔" },
     { key: "bar", label: "Bar & lounge", emoji: "🍹" },
     { key: "cafe", label: "Café & pâtisserie", emoji: "☕" },
+    { key: "kids-friendly", label: "Kid's friendly", emoji: "🧒" },
   ],
 };
 SUBCATEGORIES.hotels = SUBCATEGORIES.restaurants;

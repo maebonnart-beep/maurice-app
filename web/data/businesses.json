@@ -711,7 +711,8 @@
     "lng": 57.5845184,
     "themes": [
       "europeenne",
-      "mauricienne"
+      "mauricienne",
+      "kids-friendly"
     ],
     "hours": "Fermé lun, Mar-Dim 12h-14h & 19h-22h",
     "priceRange": "prix-moyen"
@@ -858,7 +859,8 @@
     "lat": -20.0085572,
     "lng": 57.5786818,
     "themes": [
-      "fruits-de-mer"
+      "fruits-de-mer",
+      "kids-friendly"
     ],
     "hours": "Tous les jours 12h-15h & 19h-22h",
     "priceRange": "se-faire-plaisir"
@@ -892,7 +894,8 @@
     "lat": -20.0003914,
     "lng": 57.582236,
     "themes": [
-      "asiatique"
+      "asiatique",
+      "kids-friendly"
     ],
     "hours": "Mar-Dim 18h30-22h, fermé lun",
     "priceRange": "se-faire-plaisir"
@@ -943,7 +946,8 @@
     "lng": 57.5826008,
     "themes": [
       "europeenne",
-      "bar"
+      "bar",
+      "kids-friendly"
     ]
   },
   {
@@ -1387,7 +1391,8 @@
     "lat": -20.0055927,
     "lng": 57.553719,
     "themes": [
-      "bar"
+      "bar",
+      "kids-friendly"
     ]
   },
   {
@@ -1464,7 +1469,8 @@
     "lng": 57.582236,
     "themes": [
       "marocain",
-      "bar"
+      "bar",
+      "kids-friendly"
     ],
     "hours": "Mer-Lun 12h-15h & 18h30-22h30, fermé mar",
     "priceRange": "se-faire-plaisir"
@@ -1480,7 +1486,8 @@
     "lat": -20.0003914,
     "lng": 57.582236,
     "themes": [
-      "cafe"
+      "cafe",
+      "kids-friendly"
     ],
     "hours": "Tous les jours 10h-18h"
   },
@@ -1495,7 +1502,8 @@
     "lat": -20.0085572,
     "lng": 57.5786818,
     "themes": [
-      "bar"
+      "bar",
+      "kids-friendly"
     ],
     "hours": "Tous les jours 9h-23h"
   },
@@ -1510,7 +1518,8 @@
     "lat": -20.0085572,
     "lng": 57.5786818,
     "themes": [
-      "bar"
+      "bar",
+      "kids-friendly"
     ],
     "hours": "Tous les jours 12h-00h"
   },
@@ -1526,7 +1535,8 @@
     "lng": 57.5519843,
     "themes": [
       "mauricienne",
-      "bar"
+      "bar",
+      "kids-friendly"
     ],
     "hours": "Déj 12h30-14h30, dîner 19h30-21h30 (6 soirs/7), réservation requise",
     "priceRange": "se-faire-plaisir"
@@ -1542,7 +1552,8 @@
     "lat": -20.0010796,
     "lng": 57.5519843,
     "themes": [
-      "italien"
+      "italien",
+      "kids-friendly"
     ],
     "hours": "Dîner 19h30-21h30 (6 soirs/7), réservation requise",
     "priceRange": "se-faire-plaisir"
@@ -1558,7 +1569,8 @@
     "lat": -20.0010796,
     "lng": 57.5519843,
     "themes": [
-      "bar"
+      "bar",
+      "kids-friendly"
     ],
     "hours": "Tous les jours 9h-23h (sandwiches 10h-16h)"
   },
