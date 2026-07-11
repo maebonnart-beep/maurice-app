@@ -3235,5 +3235,687 @@
     "lat": -20.16,
     "lng": 57.4986,
     "hours": "Lun-Sam 9h30-18h/20h, Dim et jours fériés 9h30-13h"
+  },
+  {
+    "id": "ah-youn-flic-en-flac",
+    "name": "Ah Youn",
+    "category": "restaurants",
+    "address": "Coastal Road, Flic en Flac",
+    "phone": "+230 453 9099",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Ah%20Youn%20restaurant%20Flic%20en%20Flac%20Mauritius",
+    "lat": -20.279,
+    "lng": 57.3639,
+    "themes": [
+      "asiatique",
+      "fruits-de-mer",
+      "mauricienne"
+    ],
+    "priceRange": "prix-moyen"
+  },
+  {
+    "id": "le-bougainville-flic-en-flac",
+    "name": "Le Bougainville",
+    "category": "restaurants",
+    "address": "Route Cotiere, Flic-en-Flac",
+    "phone": "+230 453 5959",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Le%20Bougainville%20restaurant%20Flic%20en%20Flac%20Mauritius",
+    "lat": -20.279,
+    "lng": 57.3639,
+    "themes": [
+      "mauricienne",
+      "fruits-de-mer",
+      "italien"
+    ],
+    "hours": "Fermé mer, Lun-Mar + Jeu-Dim 10h-22h30",
+    "priceRange": "bon-marche"
+  },
+  {
+    "id": "zub-express-flic-en-flac",
+    "name": "Zub Express",
+    "category": "restaurants",
+    "address": "286 Coastal Road, Flic en Flac",
+    "phone": "+230 453 8868",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Zub%20Express%20restaurant%20Flic%20en%20Flac%20Mauritius",
+    "lat": -20.279,
+    "lng": 57.3639,
+    "themes": [
+      "indienne",
+      "asiatique"
+    ],
+    "priceRange": "bon-marche"
+  },
+  {
+    "id": "salt-lemon-flic-en-flac",
+    "name": "Salt & Lemon",
+    "category": "restaurants",
+    "address": "Avenue Verger, Flic en Flac",
+    "phone": "+230 460 2442",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Salt%20Lemon%20restaurant%20Flic%20en%20Flac%20Mauritius",
+    "lat": -20.279,
+    "lng": 57.3639,
+    "themes": [
+      "mauricienne",
+      "bar"
+    ],
+    "hours": "Petit-déj 7h30-10h30, déj/dîner 12h-22h, bar 14h-22h30",
+    "priceRange": "prix-moyen"
+  },
+  {
+    "id": "escale-cuisine-grill-flic-en-flac",
+    "name": "Escale Cuisine & Grill",
+    "category": "restaurants",
+    "address": "Coastal Road, Oasis Complex, Flic en Flac",
+    "phone": "+230 5711 0755",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Escale%20Cuisine%20Grill%20Flic%20en%20Flac%20Mauritius",
+    "lat": -20.279,
+    "lng": 57.3639,
+    "themes": [
+      "grillades",
+      "fruits-de-mer"
+    ],
+    "priceRange": "prix-moyen"
+  },
+  {
+    "id": "jeanno-burger-flic-en-flac",
+    "name": "Jeanno Burger",
+    "category": "restaurants",
+    "address": "Coastal Road (plage), Flic en Flac",
+    "phone": "+230 5753 1136",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Jeanno%20Burger%20Flic%20en%20Flac%20Mauritius",
+    "lat": -20.279,
+    "lng": 57.3639,
+    "themes": [
+      "fastfood"
+    ],
+    "hours": "Fermé lun, Mar-Dim 11h-20h",
+    "priceRange": "bon-marche"
+  },
+  {
+    "id": "mafiozzo-flic-en-flac",
+    "name": "Mafiozzo",
+    "category": "restaurants",
+    "address": "Royal Road, Pasadena Village, Flic en Flac",
+    "phone": "+230 453 9940",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Mafiozzo%20Flic%20en%20Flac%20Mauritius",
+    "lat": -20.279,
+    "lng": 57.3639,
+    "themes": [
+      "italien",
+      "bar"
+    ],
+    "hours": "Tous les jours 9h-23h",
+    "priceRange": "prix-moyen"
+  },
+  {
+    "id": "leslie-restaurant-flic-en-flac",
+    "name": "Leslie Restaurant",
+    "category": "restaurants",
+    "address": "Route Royale, Flic en Flac",
+    "phone": "+230 453 8172",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Leslie%20Restaurant%20Flic%20en%20Flac%20Mauritius",
+    "lat": -20.279,
+    "lng": 57.3639,
+    "themes": [
+      "mauricienne",
+      "fruits-de-mer"
+    ],
+    "priceRange": "prix-moyen"
+  },
+  {
+    "id": "pavillon-de-jade-tamarin",
+    "name": "Pavillon de Jade",
+    "category": "restaurants",
+    "address": "Tamarin, Rivière Noire",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Pavillon%20de%20Jade%20restaurant%20Tamarin%20Mauritius",
+    "lat": -20.3252,
+    "lng": 57.3736,
+    "themes": [
+      "asiatique"
+    ]
+  },
+  {
+    "id": "happy-rajah-tamarin",
+    "name": "Happy Rajah",
+    "category": "restaurants",
+    "address": "Av. des Jacarandas, Tamarin",
+    "phone": "",
+    "website": "https://happyrajah.com/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Happy%20Rajah%20restaurant%20Tamarin%20Mauritius",
+    "lat": -20.3252,
+    "lng": 57.3736,
+    "themes": [
+      "indienne"
+    ],
+    "hours": "Tous les jours 11h30-14h & 18h-21h30",
+    "priceRange": "prix-moyen"
+  },
+  {
+    "id": "ousaporn-thai-black-river",
+    "name": "Ousaporn Thai Restaurant",
+    "category": "restaurants",
+    "address": "La Mivoie, Black River",
+    "phone": "+230 483 7061",
+    "website": "https://www.ousaporn.com/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Ousaporn%20Thai%20Restaurant%20Black%20River%20Mauritius",
+    "lat": -20.3592,
+    "lng": 57.3714,
+    "themes": [
+      "asiatique"
+    ],
+    "hours": "Fermé lun, Mar-Dim 11h30-14h30 & 17h30-21h30",
+    "priceRange": "prix-moyen"
+  },
+  {
+    "id": "smasher-tamarin",
+    "name": "Smasher",
+    "category": "restaurants",
+    "address": "Tamarin, Black River",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Smasher%20burger%20Tamarin%20Mauritius",
+    "lat": -20.3252,
+    "lng": 57.3736,
+    "themes": [
+      "fastfood"
+    ],
+    "hours": "Tous les jours 11h-20h",
+    "priceRange": "bon-marche"
+  },
+  {
+    "id": "blue-marlin-paradis-le-morne",
+    "name": "Blue Marlin - Paradis Beachcomber",
+    "category": "hotels",
+    "address": "Paradis Beachcomber Golf Resort & Spa, Le Morne",
+    "phone": "+230 401 5050",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Blue%20Marlin%20restaurant%20Paradis%20Beachcomber%20Le%20Morne%20Mauritius",
+    "lat": -20.4547,
+    "lng": 57.3167,
+    "themes": [
+      "fruits-de-mer"
+    ],
+    "hours": "Tous les jours 12h30-15h & 19h-22h",
+    "priceRange": "se-faire-plaisir"
+  },
+  {
+    "id": "emba-filao-lux-le-morne",
+    "name": "Emba Filao - LUX* Le Morne",
+    "category": "hotels",
+    "address": "Route Côtière, Plage du Morne, Le Morne Brabant",
+    "phone": "+230 5919 1969",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Emba%20Filao%20LUX%20Le%20Morne%20Mauritius",
+    "lat": -20.4547,
+    "lng": 57.3167,
+    "themes": [
+      "mauricienne",
+      "europeenne",
+      "cafe"
+    ],
+    "hours": "Tous les jours 8h-10h30 & 11h30-15h, certains ven soir",
+    "priceRange": "bon-marche"
+  },
+  {
+    "id": "wapalapam-le-morne",
+    "name": "Wapalapam Island Eatery",
+    "category": "restaurants",
+    "address": "Centre Commercial de L'Harmonie, Le Morne Brabant",
+    "phone": "",
+    "website": "https://wapalapam.com/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Wapalapam%20Island%20Eatery%20Le%20Morne%20Mauritius",
+    "lat": -20.4547,
+    "lng": 57.3167,
+    "themes": [
+      "mauricienne",
+      "fruits-de-mer"
+    ],
+    "hours": "Tous les jours 8h-22h",
+    "priceRange": "prix-moyen"
+  },
+  {
+    "id": "simply-india-st-regis-le-morne",
+    "name": "Simply India - St. Regis",
+    "category": "hotels",
+    "address": "St. Regis Mauritius Resort, Le Morne",
+    "phone": "+230 403 9000",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Simply%20India%20St%20Regis%20Le%20Morne%20Mauritius",
+    "lat": -20.4547,
+    "lng": 57.3167,
+    "themes": [
+      "indienne"
+    ],
+    "hours": "Tous les jours 18h30-22h",
+    "priceRange": "se-faire-plaisir"
+  },
+  {
+    "id": "ginja-heritage-le-telfair-bel-ombre",
+    "name": "Gin'ja - Heritage Le Telfair",
+    "category": "hotels",
+    "address": "Heritage Le Telfair Golf & Spa Resort, Coastal Road, Bel Ombre",
+    "phone": "+230 601 5500",
+    "website": "https://heritageresorts.mu/hotels-mauritius/le-telfair/restaurants-bars/ginja",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Gin'ja%20restaurant%20Heritage%20Le%20Telfair%20Bel%20Ombre%20Mauritius",
+    "lat": -20.5058,
+    "lng": 57.4147,
+    "themes": [
+      "asiatique"
+    ],
+    "hours": "Dîner uniquement, tous les jours 19h-22h",
+    "priceRange": "se-faire-plaisir"
+  },
+  {
+    "id": "c-beach-club-bel-ombre",
+    "name": "C Beach Club",
+    "category": "hotels",
+    "address": "Domaine de Bel Ombre, Bel Ombre",
+    "phone": "+230 601 5529",
+    "website": "https://cbeachclub.mu/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=C%20Beach%20Club%20Bel%20Ombre%20Mauritius",
+    "lat": -20.5058,
+    "lng": 57.4147,
+    "themes": [
+      "europeenne",
+      "fruits-de-mer",
+      "bar"
+    ],
+    "hours": "Lun-Ven 8h30-22h, Sam jusqu'à minuit, Dim jusqu'à 18h",
+    "priceRange": "se-faire-plaisir"
+  },
+  {
+    "id": "infinity-blue-heritage-awali-bel-ombre",
+    "name": "Infinity Blue - Heritage Awali",
+    "category": "hotels",
+    "address": "Heritage Awali Golf & Spa Resort, Coastal Road, Bel Ombre",
+    "phone": "+230 601 1500",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Infinity%20Blue%20Heritage%20Awali%20Bel%20Ombre%20Mauritius",
+    "lat": -20.5058,
+    "lng": 57.4147,
+    "themes": [
+      "mauricienne",
+      "fruits-de-mer"
+    ]
+  },
+  {
+    "id": "le-palais-de-barbizon-chamarel",
+    "name": "Le Palais de Barbizon",
+    "category": "restaurants",
+    "address": "Route Sainte-Anne, Chamarel",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Le%20Palais%20de%20Barbizon%20Chamarel%20Mauritius",
+    "lat": -20.4372,
+    "lng": 57.3819,
+    "themes": [
+      "mauricienne"
+    ]
+  },
+  {
+    "id": "le-flamboyant-so-sofitel-bel-ombre",
+    "name": "Le Flamboyant - SO Sofitel",
+    "category": "hotels",
+    "address": "Royal Road, Beau Champs, Bel Ombre",
+    "phone": "+230 605 5800",
+    "website": "https://www.sofitel-so-mauritius.com/en/so-gourmet/le-flamboyant/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Le%20Flamboyant%20SO%20Sofitel%20Bel%20Ombre%20Mauritius",
+    "lat": -20.5058,
+    "lng": 57.4147,
+    "themes": [
+      "fruits-de-mer",
+      "europeenne"
+    ]
+  },
+  {
+    "id": "le-rochester-souillac",
+    "name": "Le Rochester",
+    "category": "restaurants",
+    "address": "Royal Road, près du pont, Souillac",
+    "phone": "+230 625 4180",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Le%20Rochester%20restaurant%20Souillac%20Mauritius",
+    "lat": -20.5178,
+    "lng": 57.5203,
+    "themes": [
+      "asiatique",
+      "fruits-de-mer",
+      "mauricienne"
+    ],
+    "priceRange": "bon-marche"
+  },
+  {
+    "id": "domaine-de-saint-aubin-souillac",
+    "name": "Domaine de Saint Aubin - Le Saint Aubin Restaurant",
+    "category": "restaurants",
+    "address": "Savanne Road, Domaine de Saint Aubin, Souillac",
+    "phone": "",
+    "website": "https://saintaubin.restaurant.mu/en",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Domaine%20de%20Saint%20Aubin%20restaurant%20Souillac%20Mauritius",
+    "lat": -20.5178,
+    "lng": 57.5203,
+    "themes": [
+      "mauricienne"
+    ],
+    "hours": "Tous les jours 9h-17h",
+    "priceRange": "prix-moyen"
+  },
+  {
+    "id": "symons-restaurant-belle-mare",
+    "name": "Symon's Restaurant",
+    "category": "restaurants",
+    "address": "Coastal Road, Belle Mare",
+    "phone": "+230 415 1135",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Symon's%20Restaurant%20Belle%20Mare%20Mauritius",
+    "lat": -20.2189,
+    "lng": 57.7867,
+    "themes": [
+      "indienne",
+      "asiatique",
+      "fruits-de-mer",
+      "grillades"
+    ],
+    "hours": "Tous les jours 9h30-22h30",
+    "priceRange": "prix-moyen"
+  },
+  {
+    "id": "hasu-long-beach-belle-mare",
+    "name": "Hasu - Long Beach A Sun Resort",
+    "category": "hotels",
+    "address": "Coastal Road, Belle Mare",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Hasu%20Long%20Beach%20A%20Sun%20Resort%20Belle%20Mare%20Mauritius",
+    "lat": -20.2189,
+    "lng": 57.7867,
+    "themes": [
+      "asiatique"
+    ],
+    "hours": "Dîner uniquement, tous les jours 19h-22h30",
+    "priceRange": "se-faire-plaisir"
+  },
+  {
+    "id": "amari-by-vineet-lux-belle-mare",
+    "name": "Amari by Vineet - LUX* Belle Mare",
+    "category": "hotels",
+    "address": "LUX* Belle Mare Hotel, Coastal Road, Belle Mare",
+    "phone": "+230 402 2000",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Amari%20by%20Vineet%20LUX%20Belle%20Mare%20Mauritius",
+    "lat": -20.2189,
+    "lng": 57.7867,
+    "themes": [
+      "indienne"
+    ],
+    "hours": "Dîner uniquement, tous les jours 19h-22h",
+    "priceRange": "se-faire-plaisir"
+  },
+  {
+    "id": "mamie-sophie-table-hote-camp-ithier",
+    "name": "Mamie Sophie - Table d'Hôte",
+    "category": "restaurants",
+    "address": "St Joseph Road, Camp Ithier",
+    "phone": "+230 5787 2999",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Mamie%20Sophie%20Table%20Hote%20Camp%20Ithier%20Mauritius",
+    "lat": -20.2369,
+    "lng": 57.7717,
+    "themes": [
+      "mauricienne"
+    ],
+    "priceRange": "prix-moyen"
+  },
+  {
+    "id": "la-spiaggia-constance-belle-mare",
+    "name": "La Spiaggia - Constance Belle Mare Plage",
+    "category": "hotels",
+    "address": "Constance Belle Mare Plage, Pointe de Flacq, Belle Mare",
+    "phone": "+230 402 2600",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=La%20Spiaggia%20Constance%20Belle%20Mare%20Plage%20Mauritius",
+    "lat": -20.2189,
+    "lng": 57.7867,
+    "themes": [
+      "italien"
+    ],
+    "hours": "Dîner uniquement",
+    "priceRange": "se-faire-plaisir"
+  },
+  {
+    "id": "chez-tino-trou-eau-douce",
+    "name": "Chez Tino",
+    "category": "restaurants",
+    "address": "Royal Road, Trou d'Eau Douce",
+    "phone": "+230 480 2769",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Chez%20Tino%20restaurant%20Trou%20d'Eau%20Douce%20Mauritius",
+    "lat": -20.2372,
+    "lng": 57.7908,
+    "themes": [
+      "fruits-de-mer",
+      "mauricienne"
+    ],
+    "hours": "Fermé mar, Mer-Lun 10h30-15h & 18h-22h",
+    "priceRange": "prix-moyen"
+  },
+  {
+    "id": "cafe-des-arts-trou-eau-douce",
+    "name": "Le Café des Arts",
+    "category": "restaurants",
+    "address": "Victoria 1840, Old Sugar Mill, Trou d'Eau Douce",
+    "phone": "+230 480 0220",
+    "website": "https://www.maniglier.com",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Le%20Cafe%20des%20Arts%20Trou%20d'Eau%20Douce%20Mauritius",
+    "lat": -20.2372,
+    "lng": 57.7908,
+    "themes": [
+      "europeenne"
+    ],
+    "hours": "Fermé dim, dîner sur réservation 19h-22h30",
+    "priceRange": "se-faire-plaisir"
+  },
+  {
+    "id": "cucina-italiana-trou-eau-douce",
+    "name": "Cucina Italiana",
+    "category": "restaurants",
+    "address": "Royal Road, Trou d'Eau Douce",
+    "phone": "+230 5251 4058",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Cucina%20Italiana%20Trou%20d'Eau%20Douce%20Mauritius",
+    "lat": -20.2372,
+    "lng": 57.7908,
+    "themes": [
+      "italien"
+    ]
+  },
+  {
+    "id": "restaurant-du-lac-mahebourg",
+    "name": "Restaurant du Lac",
+    "category": "restaurants",
+    "address": "Coastal Rd, Pointe Jérôme, Mahébourg",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Restaurant%20du%20Lac%20Mahebourg%20Mauritius",
+    "lat": -20.4081,
+    "lng": 57.7,
+    "themes": [
+      "fruits-de-mer",
+      "mauricienne"
+    ],
+    "hours": "Tous les jours 11h-21h30",
+    "priceRange": "se-faire-plaisir"
+  },
+  {
+    "id": "saveur-creole-mahebourg",
+    "name": "Saveur Créole",
+    "category": "restaurants",
+    "address": "Mahébourg",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Saveur%20Creole%20restaurant%20Mahebourg%20Mauritius",
+    "lat": -20.4081,
+    "lng": 57.7,
+    "themes": [
+      "mauricienne",
+      "vegetarien"
+    ],
+    "hours": "Dim 11h-22h30, Lun-Ven 11h-22h, Sam 11h-22h30"
+  },
+  {
+    "id": "chez-patrick-resto-mahebourg",
+    "name": "Chez Patrick Resto",
+    "category": "restaurants",
+    "address": "Royal Road, Mahébourg",
+    "phone": "+230 631 9298",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Chez%20Patrick%20Resto%20Mahebourg%20Mauritius",
+    "lat": -20.4081,
+    "lng": 57.7,
+    "themes": [
+      "fruits-de-mer",
+      "mauricienne"
+    ],
+    "hours": "Tous les jours, déjeuner et dîner",
+    "priceRange": "bon-marche"
+  },
+  {
+    "id": "stella-ti-baz-manze-mahebourg",
+    "name": "Stella Ti-Baz Manzé",
+    "category": "restaurants",
+    "address": "Mahébourg (près du monument)",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Stella%20Ti-Baz%20Manze%20Mahebourg%20Mauritius",
+    "lat": -20.4081,
+    "lng": 57.7,
+    "themes": [
+      "fruits-de-mer"
+    ],
+    "hours": "Tous les jours 11h-17h",
+    "priceRange": "bon-marche"
+  },
+  {
+    "id": "saveurs-de-shin-mahebourg",
+    "name": "Saveurs de Shin",
+    "category": "restaurants",
+    "address": "Rue Suffren, Mahébourg",
+    "phone": "+230 631 3668",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Saveurs%20de%20Shin%20Mahebourg%20Mauritius",
+    "lat": -20.4081,
+    "lng": 57.7,
+    "themes": [
+      "asiatique"
+    ],
+    "hours": "Fermé mar, Lun + Mer-Dim 10h-15h & 18h-22h",
+    "priceRange": "bon-marche"
+  },
+  {
+    "id": "dragon-de-chine-mahebourg",
+    "name": "Dragon De Chine",
+    "category": "restaurants",
+    "address": "Angle rue des Flamands / rue de la Colonie, Mahébourg",
+    "phone": "+230 631 0697",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Dragon%20De%20Chine%20Mahebourg%20Mauritius",
+    "lat": -20.4081,
+    "lng": 57.7,
+    "themes": [
+      "asiatique",
+      "mauricienne"
+    ],
+    "hours": "Tous les jours 10h30-17h & 18h30-22h30",
+    "priceRange": "bon-marche"
+  },
+  {
+    "id": "good-korma-beau-vallon",
+    "name": "Good Korma",
+    "category": "restaurants",
+    "address": "Bo'Valon Mall, Beau Vallon, Mahébourg",
+    "phone": "+230 630 0333",
+    "website": "https://goodkorma.mu/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Good%20Korma%20Beau%20Vallon%20Mahebourg%20Mauritius",
+    "lat": -20.4081,
+    "lng": 57.7,
+    "themes": [
+      "indienne"
+    ],
+    "priceRange": "prix-moyen"
+  },
+  {
+    "id": "les-copains-dabord-mahebourg",
+    "name": "Les Copains d'Abord",
+    "category": "restaurants",
+    "address": "Waterfront, rue Suffren, Mahébourg",
+    "phone": "+230 631 9728",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Les%20Copains%20d'Abord%20Mahebourg%20Mauritius",
+    "lat": -20.4081,
+    "lng": 57.7,
+    "themes": [
+      "mauricienne",
+      "fruits-de-mer"
+    ],
+    "hours": "Tous les jours, sans interruption",
+    "priceRange": "prix-moyen"
+  },
+  {
+    "id": "flame-n-grill-curepipe",
+    "name": "Flame N Grill",
+    "category": "restaurants",
+    "address": "Royal Road, Currimjee Arcade, Curepipe",
+    "phone": "+230 674 0437",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Flame%20N%20Grill%20Curepipe%20Mauritius",
+    "lat": -20.3153,
+    "lng": 57.5222,
+    "themes": [
+      "indienne"
+    ],
+    "priceRange": "bon-marche"
+  },
+  {
+    "id": "kasafe-curepipe",
+    "name": "Kasafé",
+    "category": "restaurants",
+    "address": "29 Sir Virgile Naz St, Curepipe",
+    "phone": "+230 5257 1055",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Kasafe%20Thai%20restaurant%20Curepipe%20Mauritius",
+    "lat": -20.3153,
+    "lng": 57.5222,
+    "themes": [
+      "asiatique"
+    ],
+    "priceRange": "bon-marche"
+  },
+  {
+    "id": "dallas-yesh-curepipe",
+    "name": "Dallas Yesh Cuisine 'n' Bar",
+    "category": "restaurants",
+    "address": "109 La Peyrouse, Eau Coulée, Curepipe",
+    "phone": "+230 5478 1518",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Dallas%20Yesh%20Cuisine%20n%20Bar%20Curepipe%20Mauritius",
+    "lat": -20.3153,
+    "lng": 57.5222,
+    "themes": [
+      "mauricienne",
+      "europeenne",
+      "asiatique",
+      "bar"
+    ],
+    "hours": "Dim-Jeu 15h-22h, Ven-Sam 12h-23h",
+    "priceRange": "bon-marche"
   }
 ]
