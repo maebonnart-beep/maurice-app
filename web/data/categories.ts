@@ -1,4 +1,4 @@
-import type { Category, CategoryKey } from "@/lib/types";
+import type { Category, CategoryKey, PriceRange } from "@/lib/types";
 
 export const CATEGORIES: Category[] = [
   { key: "excursions", label: "Excursions & tours", emoji: "🚐", color: "#e8873a" },
@@ -38,3 +38,9 @@ export const SUBCATEGORIES: Partial<Record<CategoryKey, Subcategory[]>> = {
     { key: "cafe", label: "Café & pâtisserie", emoji: "☕" },
   ],
 };
+
+export const PRICE_RANGES: { key: PriceRange; label: string; symbol: string }[] = [
+  { key: "bon-marche", label: "Bon marché", symbol: "€" },
+  { key: "prix-moyen", label: "Prix moyen", symbol: "€€" },
+  { key: "se-faire-plaisir", label: "Se faire plaisir", symbol: "€€€" },
+];

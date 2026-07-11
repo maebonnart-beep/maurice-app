@@ -550,7 +550,9 @@
     "lng": 57.5837935,
     "themes": [
       "fruits-de-mer"
-    ]
+    ],
+    "hours": "Tous les jours 10h-23h30",
+    "priceRange": "se-faire-plaisir"
   },
   {
     "id": "au-feu-de-bois",
@@ -580,7 +582,9 @@
       "mauricienne",
       "indienne",
       "fruits-de-mer"
-    ]
+    ],
+    "hours": "Lun-Mar 18h30-22h, Jeu-Dim 12h-14h & 18h30-22h, fermé mer",
+    "priceRange": "prix-moyen"
   },
   {
     "id": "la-rougaille-creole",
@@ -595,7 +599,9 @@
     "themes": [
       "mauricienne",
       "fruits-de-mer"
-    ]
+    ],
+    "hours": "Tous les jours 11h-22h",
+    "priceRange": "prix-moyen"
   },
   {
     "id": "casa-verde",
@@ -624,7 +630,9 @@
     "lng": 57.5839465,
     "themes": [
       "grecque"
-    ]
+    ],
+    "hours": "Lun 10h-22h, Mar-Sam 11h-22h, Dim 9h-21h",
+    "priceRange": "prix-moyen"
   },
   {
     "id": "amazigh",
@@ -655,7 +663,9 @@
       "indienne",
       "asiatique",
       "fruits-de-mer"
-    ]
+    ],
+    "hours": "Lun 10h30-14h & 17h30-22h, fermé mar, Mer-Dim 10h30-14h & 17h30-22h",
+    "priceRange": "bon-marche"
   },
   {
     "id": "sauterelle-restaurant",
@@ -670,7 +680,9 @@
     "themes": [
       "europeenne",
       "mauricienne"
-    ]
+    ],
+    "hours": "Fermé lun, Mar-Dim 12h-14h & 19h-22h",
+    "priceRange": "prix-moyen"
   },
   {
     "id": "le-poivrier",
@@ -687,7 +699,8 @@
       "italien",
       "fruits-de-mer",
       "grillades"
-    ]
+    ],
+    "hours": "Mar-Sam 12h-15h, Mer-Sam 19h-22h, fermé dim et lun"
   },
   {
     "id": "cocoloko",
@@ -702,7 +715,9 @@
     "themes": [
       "italien",
       "bar"
-    ]
+    ],
+    "hours": "Tous les jours 10h-23h",
+    "priceRange": "bon-marche"
   },
   {
     "id": "da-terra-restaurant-cafe",
@@ -716,7 +731,9 @@
     "lng": 57.5546831,
     "themes": [
       "cafe"
-    ]
+    ],
+    "hours": "Tous les jours 8h-22h",
+    "priceRange": "bon-marche"
   },
   {
     "id": "mayniko-restaurant-lounge",
@@ -746,7 +763,9 @@
     "themes": [
       "europeenne",
       "bar"
-    ]
+    ],
+    "hours": "Mar-Sam 11h45-14h30 & 18h-23h30, fermé dim et lun",
+    "priceRange": "se-faire-plaisir"
   },
   {
     "id": "botteghita-ristorante-bar",
@@ -761,7 +780,9 @@
     "themes": [
       "italien",
       "bar"
-    ]
+    ],
+    "hours": "Tous les jours 18h30-22h30",
+    "priceRange": "prix-moyen"
   },
   {
     "id": "banditos-grand-baie",
@@ -791,7 +812,8 @@
       "italien",
       "europeenne",
       "mauricienne"
-    ]
+    ],
+    "priceRange": "bon-marche"
   },
   {
     "id": "lazy-lobster",
@@ -805,7 +827,9 @@
     "lng": 57.5786818,
     "themes": [
       "fruits-de-mer"
-    ]
+    ],
+    "hours": "Tous les jours 12h-15h & 19h-22h",
+    "priceRange": "se-faire-plaisir"
   },
   {
     "id": "n-joy",
@@ -821,7 +845,9 @@
       "mauricienne",
       "europeenne",
       "bar"
-    ]
+    ],
+    "hours": "Lun, Mer-Jeu 11h-00h, Ven-Dim 11h-1h, fermé mar",
+    "priceRange": "prix-moyen"
   },
   {
     "id": "ai-kisu-lux-grand-baie",
@@ -835,7 +861,9 @@
     "lng": 57.582236,
     "themes": [
       "asiatique"
-    ]
+    ],
+    "hours": "Mar-Dim 18h30-22h, fermé lun",
+    "priceRange": "se-faire-plaisir"
   },
   {
     "id": "the-fisherman-lounge",
@@ -849,7 +877,9 @@
     "lng": 57.5866875,
     "themes": [
       "fruits-de-mer"
-    ]
+    ],
+    "hours": "Tous les jours 10h-22h",
+    "priceRange": "prix-moyen"
   },
   {
     "id": "beach-house-restaurant-bar",
@@ -865,7 +895,9 @@
       "mauricienne",
       "europeenne",
       "bar"
-    ]
+    ],
+    "hours": "Fermé lun, Mar-Dim 11h-00h",
+    "priceRange": "prix-moyen"
   },
   {
     "id": "beach-rouge-lux-grand-baie",
@@ -896,7 +928,9 @@
       "europeenne",
       "fruits-de-mer",
       "bar"
-    ]
+    ],
+    "hours": "Dim 10h-19h, Lun-Ven 10h-22h30",
+    "priceRange": "se-faire-plaisir"
   },
   {
     "id": "neo-s",
@@ -911,7 +945,8 @@
     "themes": [
       "mauricienne",
       "grillades"
-    ]
+    ],
+    "priceRange": "se-faire-plaisir"
   },
   {
     "id": "park25-restaurant",
@@ -925,7 +960,9 @@
     "lng": 57.5694443,
     "themes": [
       "cafe"
-    ]
+    ],
+    "hours": "Mar-Dim 8h-15h, Ven-Sam 18h30-22h",
+    "priceRange": "prix-moyen"
   },
   {
     "id": "riri-foods-mauritius",
@@ -953,7 +990,8 @@
     "lng": 57.5937117,
     "themes": [
       "asiatique"
-    ]
+    ],
+    "priceRange": "se-faire-plaisir"
   },
   {
     "id": "blue-lagoon-cafe",
@@ -969,7 +1007,9 @@
       "cafe",
       "fruits-de-mer",
       "italien"
-    ]
+    ],
+    "hours": "Lun-Jeu 7h-16h, Ven-Sam 7h-21h30",
+    "priceRange": "prix-moyen"
   },
   {
     "id": "bullies-social",
@@ -984,7 +1024,9 @@
     "themes": [
       "fastfood",
       "bar"
-    ]
+    ],
+    "hours": "Tous les jours à partir de 17h",
+    "priceRange": "prix-moyen"
   },
   {
     "id": "lecapitaine-restaurant",
@@ -1000,7 +1042,9 @@
       "fruits-de-mer",
       "mauricienne",
       "europeenne"
-    ]
+    ],
+    "hours": "Mar-Sam 11h-17h & 18h-22h, Dim 11h-17h, fermé lun",
+    "priceRange": "se-faire-plaisir"
   },
   {
     "id": "2beach-club-by-2futures",
@@ -1016,7 +1060,9 @@
       "asiatique",
       "fruits-de-mer",
       "bar"
-    ]
+    ],
+    "hours": "Dim 11h-21h, Lun 10h30-19h30, Mar-Jeu 10h30-22h, Ven-Sam 10h30-23h",
+    "priceRange": "se-faire-plaisir"
   },
   {
     "id": "chez-sabiir-briani",
@@ -1045,7 +1091,8 @@
     "lng": 57.5824172,
     "themes": [
       "bar"
-    ]
+    ],
+    "priceRange": "se-faire-plaisir"
   },
   {
     "id": "sunset-cafe-restaurant-grand-baie",
@@ -1061,7 +1108,9 @@
       "cafe",
       "fruits-de-mer",
       "italien"
-    ]
+    ],
+    "hours": "Tous les jours 8h15-22h",
+    "priceRange": "prix-moyen"
   },
   {
     "id": "d-ernys-restaurant",
@@ -1091,7 +1140,9 @@
     "themes": [
       "mauricienne",
       "fruits-de-mer"
-    ]
+    ],
+    "hours": "Lun-Jeu et Dim 12h-22h, Ven-Sam 12h-22h30",
+    "priceRange": "se-faire-plaisir"
   },
   {
     "id": "la-raie-manta",
@@ -1134,7 +1185,8 @@
     "lng": 57.613917,
     "themes": [
       "bar"
-    ]
+    ],
+    "priceRange": "prix-moyen"
   },
   {
     "id": "baywatch-bar",
@@ -1162,7 +1214,9 @@
     "lng": 57.5818802,
     "themes": [
       "bar"
-    ]
+    ],
+    "hours": "Fermé dim-lun-mar, Mer-Jeu 18h-00h, Ven-Sam 18h-2h",
+    "priceRange": "prix-moyen"
   },
   {
     "id": "rooftop-adults-only-restaurant-bar-lounge",
@@ -1176,7 +1230,9 @@
     "lng": 57.5878281,
     "themes": [
       "bar"
-    ]
+    ],
+    "hours": "Tous les jours 7h-23h",
+    "priceRange": "se-faire-plaisir"
   },
   {
     "id": "the-hive-resto-bar",
@@ -1192,7 +1248,9 @@
       "europeenne",
       "fastfood",
       "grillades"
-    ]
+    ],
+    "hours": "Lun-Sam 11h-16h30",
+    "priceRange": "bon-marche"
   },
   {
     "id": "shisha-flavours-lounge",
@@ -1206,7 +1264,8 @@
     "lng": 57.5831909,
     "themes": [
       "bar"
-    ]
+    ],
+    "hours": "Tous les jours 17h-2h"
   },
   {
     "id": "omg-nightclub",
@@ -1220,7 +1279,8 @@
     "lng": 57.5817665,
     "themes": [
       "bar"
-    ]
+    ],
+    "hours": "Mer, Ven-Sam 23h-5h"
   },
   {
     "id": "bar",
@@ -1249,7 +1309,8 @@
     "themes": [
       "italien",
       "asiatique"
-    ]
+    ],
+    "priceRange": "prix-moyen"
   },
   {
     "id": "deja-vu-nightclub",
@@ -1263,7 +1324,9 @@
     "lng": 57.5818197,
     "themes": [
       "bar"
-    ]
+    ],
+    "hours": "Tous les jours 22h-5h",
+    "priceRange": "prix-moyen"
   },
   {
     "id": "cocochill-restaurant-bar-a-cocktails-swimming-pool",
@@ -1277,7 +1340,9 @@
     "lng": 57.5637198,
     "themes": [
       "bar"
-    ]
+    ],
+    "hours": "Fermé mar, service non-stop les autres jours",
+    "priceRange": "prix-moyen"
   },
   {
     "id": "bar-principal",
@@ -1351,7 +1416,9 @@
       "grillades",
       "fruits-de-mer",
       "vegetarien"
-    ]
+    ],
+    "hours": "Tous les jours 19h-23h, Ven-Sam jusqu'à 2h",
+    "priceRange": "se-faire-plaisir"
   },
   {
     "id": "la-boutique-grand-baie",

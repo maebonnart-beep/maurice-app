@@ -21,6 +21,8 @@ export type Category = {
 
 export type BusinessTier = "free" | "premium";
 
+export type PriceRange = "bon-marche" | "prix-moyen" | "se-faire-plaisir";
+
 export type Business = {
   id: string;
   name: string;
@@ -32,6 +34,9 @@ export type Business = {
   lat: number;
   lng: number;
   themes?: string[];
+  /** Texte libre combinant jours + heures, ex: "Lun-Ven 11h30-22h, Sam-Dim 11h-23h". */
+  hours?: string;
+  priceRange?: PriceRange;
   /** Absent = "free". Premium fiches surface first and unlock the perks below. */
   tier?: BusinessTier;
   /** True once a business owner has claimed/verified this fiche. */

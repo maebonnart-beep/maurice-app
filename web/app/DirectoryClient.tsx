@@ -3,7 +3,7 @@
 import { useMemo, useRef, useState } from "react";
 import dynamic from "next/dynamic";
 import type { Business } from "@/lib/types";
-import { CATEGORIES, CATEGORY_MAP, SUBCATEGORIES } from "@/data/categories";
+import { CATEGORIES, CATEGORY_MAP, SUBCATEGORIES, PRICE_RANGES } from "@/data/categories";
 import { trackEvent } from "@/lib/track";
 
 const UNCLASSIFIED = "__unclassified__";
@@ -269,9 +269,21 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                         </span>
                       ) : null;
                     })}
+                    {b.priceRange &&
+                      (() => {
+                        const price = PRICE_RANGES.find((p) => p.key === b.priceRange);
+                        return price ? (
+                          <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[11px] font-semibold border border-border bg-surface-2 text-muted">
+                            {price.symbol} {price.label}
+                          </span>
+                        ) : null;
+                      })()}
                   </div>
                   <h3 className="m-0 text-[17px] leading-[1.25] tracking-tight">{b.name}</h3>
                   <p className="m-0 text-muted text-[13.5px] leading-[1.5]">{b.address}</p>
+                  {b.hours && (
+                    <p className="m-0 text-muted text-[13px] leading-[1.4] -mt-1.5">🕒 {b.hours}</p>
+                  )}
                   <div className="mt-auto flex flex-wrap gap-2 pt-1">
                     {b.phone ? (
                       <a
