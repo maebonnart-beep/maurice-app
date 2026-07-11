@@ -11,7 +11,8 @@ export type CategoryKey =
   | "visites"
   | "restaurants"
   | "hotels"
-  | "shopping";
+  | "shopping"
+  | "alimentation";
 
 export type Category = {
   key: CategoryKey;

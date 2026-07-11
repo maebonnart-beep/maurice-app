@@ -1590,6 +1590,200 @@
     "priceRange": "se-faire-plaisir"
   },
   {
+    "id": "super-u-grand-baie",
+    "name": "Super U Grand Baie",
+    "category": "alimentation",
+    "address": "Route de la Salette, Coeur de Ville, Grand Baie",
+    "phone": "",
+    "website": "https://www.superu.mu/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Super%20U%20Grand%20Baie%20Coeur%20de%20Ville%20Mauritius",
+    "lat": -20.0128721,
+    "lng": 57.5869003,
+    "themes": [
+      "hypermarches",
+      "livraison-domicile"
+    ],
+    "hours": "Lun-Jeu 9h-20h30, Ven-Sam 9h-21h30, Dim 9h-15h30"
+  },
+  {
+    "id": "winners-pereybere",
+    "name": "Winners - Péreybère",
+    "category": "alimentation",
+    "address": "Route Royale, Péreybère",
+    "phone": "+230 263 2700",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Winners%20supermarket%20Pereybere%20Mauritius",
+    "lat": -19.9973,
+    "lng": 57.5858,
+    "themes": [
+      "supermarches",
+      "livraison-domicile"
+    ]
+  },
+  {
+    "id": "intermart-grand-baie-la-croisette",
+    "name": "Intermart - Grand Baie La Croisette",
+    "category": "alimentation",
+    "address": "Royal Rd, La Croisette, Grand Baie 30517",
+    "phone": "+230 269 6666",
+    "website": "https://intermartmauritius.com/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Intermart%20La%20Croisette%20Grand%20Baie%20Mauritius",
+    "lat": -20.0219739,
+    "lng": 57.5787883,
+    "themes": [
+      "supermarches"
+    ],
+    "hours": "Lun-Jeu 9h-20h, Ven-Sam 9h-22h, Dim et jours fériés 9h-17h"
+  },
+  {
+    "id": "lepicerie-grand-baie",
+    "name": "L'Épicerie - Grand Baie",
+    "category": "alimentation",
+    "address": "Route Royale, Grand Baie",
+    "phone": "+230 5919 1708",
+    "website": "https://epicerie.mu/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=L'Epicerie%20Grand%20Baie%20Mauritius",
+    "lat": -20.003863,
+    "lng": 57.5812062,
+    "themes": [
+      "superettes-epiceries"
+    ],
+    "hours": "Lun-Jeu 9h-18h, Ven-Sam 9h-19h, Dim et jours fériés 8h-12h30",
+    "priceRange": "se-faire-plaisir"
+  },
+  {
+    "id": "marche-poissons-plage-publique-grand-baie",
+    "name": "Marché aux poissons - Plage publique de Grand Baie",
+    "category": "alimentation",
+    "address": "Parking de la plage publique, Grand Baie",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Grand%20Baie%20public%20beach%20parking%20Mauritius",
+    "lat": -20.0135,
+    "lng": 57.5835,
+    "themes": [
+      "marches",
+      "poissonnerie"
+    ],
+    "hours": "Tous les jours à partir de 16h",
+    "priceRange": "bon-marche"
+  },
+  {
+    "id": "bayside-butchery",
+    "name": "Bayside Butchery",
+    "category": "alimentation",
+    "address": "Lifestyle Boulevard, Grand Baie",
+    "phone": "+230 5719 8529",
+    "website": "https://baysidebutchery.mu/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Bayside%20Butchery%20Grand%20Baie%20Mauritius",
+    "lat": -20.0168865,
+    "lng": 57.5783922,
+    "themes": [
+      "boucherie"
+    ]
+  },
+  {
+    "id": "le-fournil-grand-baie",
+    "name": "Le Fournil - Grand Baie",
+    "category": "alimentation",
+    "address": "Chemin Vingt Pieds, Grand Baie",
+    "phone": "+230 268 1711",
+    "website": "https://lefournil-mauritius.com/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Le%20Fournil%20Grand%20Baie%20Mauritius%20boulangerie",
+    "lat": -20.0140044,
+    "lng": 57.5841981,
+    "themes": [
+      "boulangerie-patisserie"
+    ],
+    "hours": "Tous les jours à partir de 7h"
+  },
+  {
+    "id": "pains-et-moulins-grand-baie",
+    "name": "Pains et Moulins - Grand Baie",
+    "category": "alimentation",
+    "address": "Chemin 20 Pieds, B45, Grand Baie",
+    "phone": "+230 263 2590",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Pains%20et%20Moulins%20Grand%20Baie%20Mauritius%20boulangerie",
+    "lat": -20.0219739,
+    "lng": 57.5787883,
+    "themes": [
+      "boulangerie-patisserie"
+    ]
+  },
+  {
+    "id": "nicolas-grand-baie",
+    "name": "Nicolas - Grand Baie",
+    "category": "alimentation",
+    "address": "Coeur de Ville (Super U), Grand Baie",
+    "phone": "+230 268 0749",
+    "website": "https://www.nicolas.com/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Nicolas%20Grand%20Baie%20Coeur%20de%20Ville%20Mauritius",
+    "lat": -20.0128721,
+    "lng": 57.5869003,
+    "themes": [
+      "vins-bieres-spiritueux"
+    ],
+    "hours": "Lun-Jeu 9h30-20h30, Ven-Sam 9h30-21h30, Dim 9h30-16h30"
+  },
+  {
+    "id": "seaboxx-grand-baie",
+    "name": "Seaboxx",
+    "category": "alimentation",
+    "address": "Complexe Ventura, Route Royale, Grand Baie 30500",
+    "phone": "",
+    "website": "https://seaboxxonline.mu/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Seaboxx%20Complexe%20Ventura%20Grand%20Baie%20Mauritius",
+    "lat": -20.003863,
+    "lng": 57.5812062,
+    "themes": [
+      "vins-bieres-spiritueux"
+    ],
+    "priceRange": "se-faire-plaisir"
+  },
+  {
+    "id": "20vin-grand-baie-la-croisette",
+    "name": "20/Vin - Grand Baie La Croisette",
+    "category": "alimentation",
+    "address": "Grand Baie La Croisette, Chemin Vingt Pieds, Grand Baie",
+    "phone": "+230 269 6015",
+    "website": "https://vsv.mu/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=20%20Vin%20Grand%20Baie%20La%20Croisette%20Mauritius",
+    "lat": -20.0219739,
+    "lng": 57.5787883,
+    "themes": [
+      "vins-bieres-spiritueux"
+    ]
+  },
+  {
+    "id": "mychef-mauritius",
+    "name": "MyChef Mauritius",
+    "category": "restaurants",
+    "address": "Service à domicile, Nord de l'île (Grand Baie et environs)",
+    "phone": "+230 5825 0394",
+    "website": "https://privatechefmauritius.com/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Grand%20Baie%20Mauritius",
+    "lat": -20.0128,
+    "lng": 57.5807,
+    "themes": [
+      "chefs-domicile-traiteurs"
+    ]
+  },
+  {
+    "id": "cuisinier-ile-maurice",
+    "name": "Cuisinier à l'Île Maurice",
+    "category": "restaurants",
+    "address": "Service à domicile, Nord de l'île (Grand Baie et environs)",
+    "phone": "",
+    "website": "https://cuisinier-ile-maurice.com/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Grand%20Baie%20Mauritius",
+    "lat": -20.0128,
+    "lng": 57.5807,
+    "themes": [
+      "chefs-domicile-traiteurs"
+    ]
+  },
+  {
     "id": "la-boutique-grand-baie",
     "name": "La Boutique - Grand Baie",
     "category": "shopping",

@@ -14,6 +14,7 @@ export const CATEGORIES: Category[] = [
   { key: "restaurants", label: "Restaurants & bars", emoji: "🍽️", color: "#d4483f" },
   { key: "hotels", label: "Bars & restaurants d'hôtels", emoji: "🏨", color: "#8e4585" },
   { key: "shopping", label: "Shopping & boutiques", emoji: "🛍️", color: "#9c7a3c" },
+  { key: "alimentation", label: "Food shops", emoji: "🛒", color: "#2e8b57" },
 ];
 
 export const CATEGORY_MAP = Object.fromEntries(
@@ -38,6 +39,18 @@ export const SUBCATEGORIES: Partial<Record<CategoryKey, Subcategory[]>> = {
     { key: "bar", label: "Bar & lounge", emoji: "🍹" },
     { key: "cafe", label: "Café & pâtisserie", emoji: "☕" },
     { key: "kids-friendly", label: "Kid's friendly", emoji: "🧒" },
+    { key: "chefs-domicile-traiteurs", label: "Chefs à domicile & traiteurs", emoji: "👨‍🍳" },
+  ],
+  alimentation: [
+    { key: "hypermarches", label: "Hypermarchés", emoji: "🏬" },
+    { key: "supermarches", label: "Supermarchés", emoji: "🏪" },
+    { key: "superettes-epiceries", label: "Supérettes & épiceries", emoji: "🧺" },
+    { key: "marches", label: "Marchés", emoji: "🥭" },
+    { key: "livraison-domicile", label: "Livraisons à domicile", emoji: "🚚" },
+    { key: "boucherie", label: "Boucherie", emoji: "🥩" },
+    { key: "poissonnerie", label: "Poissonnerie", emoji: "🐟" },
+    { key: "boulangerie-patisserie", label: "Boulangerie, pâtisseries & petit snacking", emoji: "🥐" },
+    { key: "vins-bieres-spiritueux", label: "Vins, bières et spiritueux", emoji: "🍷" },
   ],
 };
 SUBCATEGORIES.hotels = SUBCATEGORIES.restaurants;
