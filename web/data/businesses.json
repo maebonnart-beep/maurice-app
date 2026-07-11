@@ -1461,7 +1461,8 @@
     "website": "http://www.laboutiquemu.com/",
     "googleMapsUrl": "https://maps.google.com/?cid=8409668431585815413",
     "lat": -20.0156383,
-    "lng": 57.5740808
+    "lng": 57.5740808,
+    "hours": "Lun-Sam 9h30-18h"
   },
   {
     "id": "cottons-grand-baie",
@@ -1472,7 +1473,8 @@
     "website": "http://www.cottons.mu/",
     "googleMapsUrl": "https://maps.google.com/?cid=2983573852861755050",
     "lat": -20.0216218,
-    "lng": 57.5792747
+    "lng": 57.5792747,
+    "hours": "Lun-Jeu 9h30-19h30, Ven-Sam 9h30-20h30, Dim 9h30-16h"
   },
   {
     "id": "le-concept-store-mademoiselle",
@@ -1483,7 +1485,8 @@
     "website": "",
     "googleMapsUrl": "https://maps.google.com/?cid=804030936071121401",
     "lat": -20.0150607,
-    "lng": 57.5827539
+    "lng": 57.5827539,
+    "hours": "Lun-Sam 10h-18h"
   },
   {
     "id": "le-rendez-vous-grand-baie",
@@ -1494,7 +1497,8 @@
     "website": "http://www.lerendezvous.mu/",
     "googleMapsUrl": "https://maps.google.com/?cid=1489840026301816551",
     "lat": -20.0218239,
-    "lng": 57.5792454
+    "lng": 57.5792454,
+    "hours": "Lun-Jeu 9h30-19h30, Ven-Sam 9h30-20h, Dim 9h30-16h"
   },
   {
     "id": "anacbelle",
@@ -1516,7 +1520,8 @@
     "website": "",
     "googleMapsUrl": "https://maps.google.com/?cid=10125623667860333321",
     "lat": -20.0160164,
-    "lng": 57.5760064
+    "lng": 57.5760064,
+    "hours": "Lun-Sam 10h-19h, fermé dim"
   },
   {
     "id": "goyco-lifestyle-boutique",
@@ -1582,7 +1587,8 @@
     "website": "",
     "googleMapsUrl": "https://maps.google.com/?cid=12943242891367283159",
     "lat": -20.0168865,
-    "lng": 57.5783922
+    "lng": 57.5783922,
+    "hours": "Dim 9h30-12h30, Lun-Ven 9h30-17h30"
   },
   {
     "id": "cotons-des-iles",
@@ -1604,7 +1610,8 @@
     "website": "",
     "googleMapsUrl": "https://maps.google.com/?cid=16526113218828132361",
     "lat": -20.0133158,
-    "lng": 57.5884049
+    "lng": 57.5884049,
+    "hours": "Lun-Sam 9h30-18h"
   },
   {
     "id": "la-croisette",
@@ -1615,7 +1622,8 @@
     "website": "http://gblc.mu/",
     "googleMapsUrl": "https://maps.google.com/?cid=18094724993469196491",
     "lat": -20.0219739,
-    "lng": 57.5787883
+    "lng": 57.5787883,
+    "hours": "Lun-Sam 9h30-20h30, Dim et jours fériés 9h30-16h"
   },
   {
     "id": "bazar-de-grand-baie",
@@ -1626,7 +1634,8 @@
     "website": "",
     "googleMapsUrl": "https://maps.google.com/?cid=2894149536143178184",
     "lat": -20.0101972,
-    "lng": 57.5864579
+    "lng": 57.5864579,
+    "hours": "Lun-Sam 9h-17h, fermé dim"
   },
   {
     "id": "go-duty-free-mauritius",
@@ -1637,7 +1646,8 @@
     "website": "https://www.godutyfree.mu/",
     "googleMapsUrl": "https://maps.google.com/?cid=12457623963668768562",
     "lat": -20.0124017,
-    "lng": 57.5847001
+    "lng": 57.5847001,
+    "hours": "Lun-Sam 9h30-18h, Dim 9h30-12h30"
   },
   {
     "id": "grand-bay-coeur-de-ville",
@@ -1648,7 +1658,8 @@
     "website": "http://coeurdeville.mu/",
     "googleMapsUrl": "https://maps.google.com/?cid=8024147001615276559",
     "lat": -20.0128721,
-    "lng": 57.5869003
+    "lng": 57.5869003,
+    "hours": "Lun-Jeu 9h-20h30, Ven-Sam 9h-21h30, Dim 9h-15h30"
   },
   {
     "id": "riverwalk-boutique",
@@ -1703,7 +1714,8 @@
     "website": "https://fh.boutique/",
     "googleMapsUrl": "https://maps.google.com/?cid=6803973054130250978",
     "lat": -20.0228924,
-    "lng": 57.5784708
+    "lng": 57.5784708,
+    "hours": "Lun-Sam 9h30-19h, Dim et jours fériés 9h30-16h"
   },
   {
     "id": "cocosun-ltd",
@@ -1758,7 +1770,8 @@
     "website": "",
     "googleMapsUrl": "https://maps.google.com/?cid=3440455858190697390",
     "lat": -20.0102196,
-    "lng": 57.5864559
+    "lng": 57.5864559,
+    "hours": "Tous les jours 9h-17h"
   },
   {
     "id": "marco-pearl-shop",
@@ -1769,7 +1782,8 @@
     "website": "",
     "googleMapsUrl": "https://maps.google.com/?cid=11015843410349809462",
     "lat": -20.0115431,
-    "lng": 57.5846077
+    "lng": 57.5846077,
+    "hours": "Lun-Sam 10h30-20h, Dim 10h30-18h"
   },
   {
     "id": "quiksilver-roxy-shop",
@@ -1780,7 +1794,8 @@
     "website": "https://www.ascenciamalls.com/fashion/roxy",
     "googleMapsUrl": "https://maps.google.com/?cid=2726967872079769415",
     "lat": -20.0126255,
-    "lng": 57.5871486
+    "lng": 57.5871486,
+    "hours": "Lun-Sam 9h30-17h30, Dim 10h-13h"
   },
   {
     "id": "u2-shop",
@@ -1791,7 +1806,8 @@
     "website": "https://links.mu/@u2shop",
     "googleMapsUrl": "https://maps.google.com/?cid=10619964255607418087",
     "lat": -20.0133055,
-    "lng": 57.5841293
+    "lng": 57.5841293,
+    "hours": "Lun-Ven 9h-17h30, Sam 9h-12h, fermé dim"
   },
   {
     "id": "citadel-grand-baie-coeur-de-ville",
@@ -1813,7 +1829,8 @@
     "website": "",
     "googleMapsUrl": "https://maps.google.com/?cid=7466298284971159978",
     "lat": -20.0218219,
-    "lng": 57.5790235
+    "lng": 57.5790235,
+    "hours": "Tous les jours 10h-18h, fermé dim"
   },
   {
     "id": "gaspard-boutique",
@@ -1835,7 +1852,8 @@
     "website": "https://atelier-inam.com/",
     "googleMapsUrl": "https://maps.google.com/?cid=3342733506416037603",
     "lat": -20.0140044,
-    "lng": 57.5841981
+    "lng": 57.5841981,
+    "hours": "Tous les jours 9h30-18h"
   },
   {
     "id": "alicia-swim-grand-baie",
@@ -1868,7 +1886,8 @@
     "website": "http://fr.shop-orchestra.com/",
     "googleMapsUrl": "https://maps.google.com/?cid=6461667787204317965",
     "lat": -20.0224641,
-    "lng": 57.5791544
+    "lng": 57.5791544,
+    "hours": "Tous les jours 9h30-22h"
   },
   {
     "id": "macumba-ltee",
@@ -1879,7 +1898,8 @@
     "website": "http://www.macumba.mu/",
     "googleMapsUrl": "https://maps.google.com/?cid=4875271780294695440",
     "lat": -20.0138212,
-    "lng": 57.5844803
+    "lng": 57.5844803,
+    "hours": "Lun-Sam 9h-18h, fermé dim et jours fériés"
   },
   {
     "id": "perfect-beauty-mauritius",
@@ -1890,7 +1910,8 @@
     "website": "https://www.fresha.com/fr/a/perfect-beauty-mauritius-grand-baie-adjacents-a-kalachand-chemin-vingt-pieds-wyoka148?utm_source=Fresha&utm_medium=LocShare&utm_campaign=11644507",
     "googleMapsUrl": "https://maps.google.com/?cid=8374510665645301715",
     "lat": -20.0144223,
-    "lng": 57.5901909
+    "lng": 57.5901909,
+    "priceRange": "prix-moyen"
   },
   {
     "id": "the-beauty-loft",
@@ -1901,7 +1922,8 @@
     "website": "http://www.facebook.com/cryotherapieilemaurice",
     "googleMapsUrl": "https://maps.google.com/?cid=3371077411121060300",
     "lat": -20.0188315,
-    "lng": 57.5796783
+    "lng": 57.5796783,
+    "hours": "Lun-Sam 9h-21h"
   },
   {
     "id": "chez-ema-institut-de-beaute",
@@ -2000,7 +2022,8 @@
     "website": "",
     "googleMapsUrl": "https://maps.google.com/?cid=1710193959093762589",
     "lat": -20.0134133,
-    "lng": 57.5852512
+    "lng": 57.5852512,
+    "hours": "Mar-Sam 9h-17h30"
   },
   {
     "id": "signature-hair-studio-by-anousha",
@@ -2055,7 +2078,8 @@
     "website": "https://www.facebook.com/NailandLashStudioGrandBaieMauritius/",
     "googleMapsUrl": "https://maps.google.com/?cid=17272750723656587911",
     "lat": -20.0133782,
-    "lng": 57.5862994
+    "lng": 57.5862994,
+    "hours": "Mar-Sam 9h30-17h"
   },
   {
     "id": "prim-rose",
@@ -2077,7 +2101,8 @@
     "website": "https://www.facebook.com/nuancehairlounge/",
     "googleMapsUrl": "https://maps.google.com/?cid=7423754584986198562",
     "lat": -20.0136027,
-    "lng": 57.5884693
+    "lng": 57.5884693,
+    "hours": "Lun-Sam 9h-19h"
   },
   {
     "id": "beauty-and-nail-centre",
