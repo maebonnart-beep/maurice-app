@@ -19,7 +19,8 @@
     "website": "http://www.zilecruise.com/",
     "googleMapsUrl": "https://maps.google.com/?cid=393444125259425734",
     "lat": -20.0141891,
-    "lng": 57.5836539
+    "lng": 57.5836539,
+    "hours": "Lun-Sam 9h-17h, fermé dim"
   },
   {
     "id": "topcat-cruises",
@@ -30,7 +31,9 @@
     "website": "",
     "googleMapsUrl": "https://maps.google.com/?cid=11001441866492693967",
     "lat": -20.0151038,
-    "lng": 57.5830927
+    "lng": 57.5830927,
+    "hours": "Tous les jours 8h45-16h",
+    "priceRange": "prix-moyen"
   },
   {
     "id": "passion-oceane-wind-dancer",
@@ -52,7 +55,8 @@
     "website": "http://www.predatorcruiser.com/",
     "googleMapsUrl": "https://maps.google.com/?cid=7148306089398849181",
     "lat": -20.0150967,
-    "lng": 57.5715728
+    "lng": 57.5715728,
+    "priceRange": "se-faire-plaisir"
   },
   {
     "id": "groove-boat",
@@ -63,7 +67,8 @@
     "website": "http://grooveboat.mu/",
     "googleMapsUrl": "https://maps.google.com/?cid=4048905950325115564",
     "lat": -20.0151926,
-    "lng": 57.5703364
+    "lng": 57.5703364,
+    "hours": "Mer 13h30-19h, Ven 17h-23h, Sam 11h-17h, fermé lun/mar/jeu"
   },
   {
     "id": "perle-docean-catamaran",
@@ -74,7 +79,8 @@
     "website": "https://www.catamaranperledocean.com/",
     "googleMapsUrl": "https://maps.google.com/?cid=1727043392322724839",
     "lat": -20.0128926,
-    "lng": 57.5833631
+    "lng": 57.5833631,
+    "hours": "Départ 8h30, retour 15h30"
   },
   {
     "id": "captain-tamtam-glass-bottom-boat",
@@ -129,7 +135,8 @@
     "website": "https://www.ebrahimtours.mu/",
     "googleMapsUrl": "https://maps.google.com/?cid=217784278032965291",
     "lat": -20.0128327,
-    "lng": 57.5846044
+    "lng": 57.5846044,
+    "hours": "Dim 8h30-13h, Lun-Sam 8h-17h30"
   },
   {
     "id": "monalysa-holidays-tour-operator",
@@ -140,7 +147,8 @@
     "website": "http://monalysaholidays.com/",
     "googleMapsUrl": "https://maps.google.com/?cid=16358540185538023160",
     "lat": -20.0131024,
-    "lng": 57.5858
+    "lng": 57.5858,
+    "hours": "Dim 8h-13h, Lun-Sam 8h-18h"
   },
   {
     "id": "grand-baie-travel-tours",
@@ -173,7 +181,8 @@
     "website": "https://www.emperatordiving.com/",
     "googleMapsUrl": "https://maps.google.com/?cid=8828463439379043748",
     "lat": -19.9997659,
-    "lng": 57.5829579
+    "lng": 57.5829579,
+    "hours": "Tous les jours 8h-16h"
   },
   {
     "id": "merman-diving-mauritius",
@@ -184,7 +193,8 @@
     "website": "",
     "googleMapsUrl": "https://maps.google.com/?cid=5484249657585698242",
     "lat": -20.0097755,
-    "lng": 57.583992
+    "lng": 57.583992,
+    "priceRange": "prix-moyen"
   },
   {
     "id": "just-diving-in-mauritius",
@@ -206,7 +216,9 @@
     "website": "http://www.prodivemauritius.com/",
     "googleMapsUrl": "https://maps.google.com/?cid=17608256195702833192",
     "lat": -20.0254785,
-    "lng": 57.551332
+    "lng": 57.551332,
+    "hours": "Lun-Sam 7h30-15h, fermé dim",
+    "priceRange": "prix-moyen"
   },
   {
     "id": "diving-world",
@@ -239,7 +251,9 @@
     "website": "http://www.centrenautique.com/",
     "googleMapsUrl": "https://maps.google.com/?cid=6349339379895925535",
     "lat": -20.0129023,
-    "lng": 57.5843379
+    "lng": 57.5843379,
+    "hours": "Tous les jours 9h-17h",
+    "priceRange": "prix-moyen"
   },
   {
     "id": "espace-marin-grand-bay",
@@ -272,7 +286,9 @@
     "website": "http://www.seabob.mu/",
     "googleMapsUrl": "https://maps.google.com/?cid=8287552743152804015",
     "lat": -20.0143029,
-    "lng": 57.5835717
+    "lng": 57.5835717,
+    "hours": "Lun-Sam 9h30-17h30, fermé dim",
+    "priceRange": "se-faire-plaisir"
   },
   {
     "id": "efoil-mauritius",
@@ -294,7 +310,8 @@
     "website": "https://www.dreamteamkitesurfing.com/",
     "googleMapsUrl": "https://maps.google.com/?cid=7103393654984856578",
     "lat": -19.9898592,
-    "lng": 57.6327248
+    "lng": 57.6327248,
+    "hours": "Tous les jours 9h-17h"
   },
   {
     "id": "kite-at-north",
@@ -305,7 +322,8 @@
     "website": "https://www.kiteatnorth.com/",
     "googleMapsUrl": "https://maps.google.com/?cid=12215358812365174056",
     "lat": -20.0075659,
-    "lng": 57.6729617
+    "lng": 57.6729617,
+    "hours": "Tous les jours 8h-19h"
   },
   {
     "id": "horizon-big-game-fishing",
@@ -316,7 +334,8 @@
     "website": "http://mauritiusbiggamefishing.com/",
     "googleMapsUrl": "https://maps.google.com/?cid=9054963636092622209",
     "lat": -20.0137325,
-    "lng": 57.5836176
+    "lng": 57.5836176,
+    "priceRange": "se-faire-plaisir"
   },
   {
     "id": "sportfisher",
@@ -327,7 +346,8 @@
     "website": "https://sportfisher.mu/",
     "googleMapsUrl": "https://maps.google.com/?cid=6092260544714924710",
     "lat": -20.013162,
-    "lng": 57.5836817
+    "lng": 57.5836817,
+    "priceRange": "se-faire-plaisir"
   },
   {
     "id": "tempo-fishing-club",
@@ -360,7 +380,8 @@
     "website": "https://xtensespa.com/",
     "googleMapsUrl": "https://maps.google.com/?cid=13939499645396669041",
     "lat": -20.0095697,
-    "lng": 57.6004323
+    "lng": 57.6004323,
+    "hours": "Tous les jours 9h30-18h30"
   },
   {
     "id": "johaness-spa-grand-baie",
@@ -371,7 +392,9 @@
     "website": "https://johanessspagrandbaie.com/",
     "googleMapsUrl": "https://maps.google.com/?cid=14610026775231580076",
     "lat": -20.0195674,
-    "lng": 57.5847664
+    "lng": 57.5847664,
+    "hours": "Lun-Jeu 9h30-20h, Ven 9h30-20h30, Dim 9h30-17h",
+    "priceRange": "bon-marche"
   },
   {
     "id": "spa-ceylon-mauritius",
@@ -382,7 +405,8 @@
     "website": "http://www.spaceylon.mu/",
     "googleMapsUrl": "https://maps.google.com/?cid=13298507193373720901",
     "lat": -20.0221263,
-    "lng": 57.5787599
+    "lng": 57.5787599,
+    "hours": "Tous les jours 9h30-22h"
   },
   {
     "id": "ocea-wellness",
@@ -404,7 +428,8 @@
     "website": "http://www.shantigiriayurvedaspa.com/",
     "googleMapsUrl": "https://maps.google.com/?cid=17663091752839048662",
     "lat": -20.0126339,
-    "lng": 57.5854009
+    "lng": 57.5854009,
+    "priceRange": "bon-marche"
   },
   {
     "id": "sultana-moroccan-hammam-spa",
@@ -415,7 +440,8 @@
     "website": "https://sultana-mauritius.com/",
     "googleMapsUrl": "https://maps.google.com/?cid=2749757130329642063",
     "lat": -20.0272326,
-    "lng": 57.5594683
+    "lng": 57.5594683,
+    "hours": "Femmes: Lun-Ven 9h-17h, Sam 10h-17h ; Hommes: Lun-Sam 17h-20h"
   },
   {
     "id": "vallee-de-beaute-spa",
@@ -437,7 +463,8 @@
     "website": "http://www.montchoisygolf.com/",
     "googleMapsUrl": "https://maps.google.com/?cid=3895903021099921581",
     "lat": -20.0232221,
-    "lng": 57.5636528
+    "lng": 57.5636528,
+    "priceRange": "se-faire-plaisir"
   },
   {
     "id": "zaka-parc-accrobranche",
@@ -481,7 +508,8 @@
     "website": "",
     "googleMapsUrl": "https://maps.google.com/?cid=6504957089188208708",
     "lat": -20.0125722,
-    "lng": 57.5870105
+    "lng": 57.5870105,
+    "hours": "Tous les jours 10h-4h"
   },
   {
     "id": "solar-sea-walk",
@@ -492,7 +520,9 @@
     "website": "http://www.solarseawalk.com/",
     "googleMapsUrl": "https://maps.google.com/?cid=16441129050101705848",
     "lat": -20.0099894,
-    "lng": 57.5830305
+    "lng": 57.5830305,
+    "hours": "Lun-Sam 9h-17h, fermé dim",
+    "priceRange": "bon-marche"
   },
   {
     "id": "e-lab-bike-velos-electriques",
@@ -503,7 +533,9 @@
     "website": "http://www.e-labbikes.com/",
     "googleMapsUrl": "https://maps.google.com/?cid=9615883501235171229",
     "lat": -20.0152637,
-    "lng": 57.5815309
+    "lng": 57.5815309,
+    "hours": "Lun-Dim 9h-12h, Lun-Sam 13h30-18h",
+    "priceRange": "bon-marche"
   },
   {
     "id": "moris-insider",
