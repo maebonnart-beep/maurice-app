@@ -1453,6 +1453,131 @@
     "priceRange": "se-faire-plaisir"
   },
   {
+    "id": "walima-by-bisou-lux-grand-baie",
+    "name": "Walima by Bisou - LUX* Grand Baie",
+    "category": "restaurants",
+    "address": "MU, MU LUX*, Coastal Road, Grand Baie 30510",
+    "phone": "+230 5942 9773",
+    "website": "https://www.luxresorts.com/en/mauritius/hotel/luxgrandbaie/restaurants-bars/walima-by-bisou",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Walima%20by%20Bisou%20LUX%20Grand%20Baie%20Mauritius",
+    "lat": -20.0003914,
+    "lng": 57.582236,
+    "themes": [
+      "marocain",
+      "bar"
+    ],
+    "hours": "Mer-Lun 12h-15h & 18h30-22h30, fermé mar",
+    "priceRange": "se-faire-plaisir"
+  },
+  {
+    "id": "ici-lux-grand-baie",
+    "name": "ICI - LUX* Grand Baie",
+    "category": "restaurants",
+    "address": "MU, MU LUX*, Coastal Road, Grand Baie 30510",
+    "phone": "+230 209 2200",
+    "website": "https://www.luxresorts.com/en/mauritius/hotel/luxgrandbaie/restaurants-bars/ici",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=ICI%20LUX%20Grand%20Baie%20gelato%20bar%20Mauritius",
+    "lat": -20.0003914,
+    "lng": 57.582236,
+    "themes": [
+      "cafe"
+    ],
+    "hours": "Tous les jours 10h-18h"
+  },
+  {
+    "id": "la-varangue-veranda-grand-baie",
+    "name": "La Varangue - Veranda Grand Baie",
+    "category": "restaurants",
+    "address": "MU, Royal Road, Grand Baie 30510",
+    "phone": "+230 209 8000",
+    "website": "https://veranda-resorts.com/en/mauritius-hotel-veranda-grand-baie/restaurants-and-bars",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=La%20Varangue%20Veranda%20Grand%20Baie%20Mauritius",
+    "lat": -20.0085572,
+    "lng": 57.5786818,
+    "themes": [
+      "bar"
+    ],
+    "hours": "Tous les jours 9h-23h"
+  },
+  {
+    "id": "la-crique-veranda-grand-baie",
+    "name": "La Crique - Veranda Grand Baie",
+    "category": "restaurants",
+    "address": "MU, Royal Road, Grand Baie 30510",
+    "phone": "+230 209 8000",
+    "website": "https://veranda-resorts.com/en/mauritius-hotel-veranda-grand-baie/restaurants-and-bars",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=La%20Crique%20beach%20bar%20Veranda%20Grand%20Baie%20Mauritius",
+    "lat": -20.0085572,
+    "lng": 57.5786818,
+    "themes": [
+      "bar"
+    ],
+    "hours": "Tous les jours 12h-00h"
+  },
+  {
+    "id": "navigator-canonnier-beachcomber",
+    "name": "Navigator - Canonnier Beachcomber",
+    "category": "restaurants",
+    "address": "Canonnier Beachcomber Resort, Grand Baie",
+    "phone": "+230 209 7000",
+    "website": "https://www.beachcomber-hotels.com/en/restaurants-pointe-aux-canonniers",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Navigator%20restaurant%20Canonnier%20Beachcomber%20Mauritius",
+    "lat": -20.0010796,
+    "lng": 57.5519843,
+    "themes": [
+      "mauricienne",
+      "bar"
+    ],
+    "hours": "Déj 12h30-14h30, dîner 19h30-21h30 (6 soirs/7), réservation requise",
+    "priceRange": "se-faire-plaisir"
+  },
+  {
+    "id": "la-serenata-canonnier-beachcomber",
+    "name": "La Serenata - Canonnier Beachcomber",
+    "category": "restaurants",
+    "address": "Canonnier Beachcomber Resort, Grand Baie",
+    "phone": "+230 209 7000",
+    "website": "https://la-serenata.restaurant.mu/en",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=La%20Serenata%20Canonnier%20Beachcomber%20Mauritius",
+    "lat": -20.0010796,
+    "lng": 57.5519843,
+    "themes": [
+      "italien"
+    ],
+    "hours": "Dîner 19h30-21h30 (6 soirs/7), réservation requise",
+    "priceRange": "se-faire-plaisir"
+  },
+  {
+    "id": "planteur-bar-canonnier-beachcomber",
+    "name": "Planteur Bar - Canonnier Beachcomber",
+    "category": "restaurants",
+    "address": "Canonnier Beachcomber Resort, Grand Baie",
+    "phone": "+230 209 7000",
+    "website": "https://www.beachcomber-hotels.com/en/restaurants-pointe-aux-canonniers",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Planteur%20Bar%20Canonnier%20Beachcomber%20Mauritius",
+    "lat": -20.0010796,
+    "lng": 57.5519843,
+    "themes": [
+      "bar"
+    ],
+    "hours": "Tous les jours 9h-23h (sandwiches 10h-16h)"
+  },
+  {
+    "id": "manzu-ocean-v-hotel",
+    "name": "Manzu - Ocean V Hotel",
+    "category": "restaurants",
+    "address": "Inside Ocean V Hotel, Corner Royal Road and Old Mill Rd, Grand Baie",
+    "phone": "+230 260 2200",
+    "website": "https://searesortshotels.com/ocean-v/dining/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Manzu%20restaurant%20Ocean%20V%20Hotel%20Mauritius",
+    "lat": -19.9963743,
+    "lng": 57.5878281,
+    "themes": [
+      "asiatique"
+    ],
+    "priceRange": "se-faire-plaisir"
+  },
+  {
     "id": "la-boutique-grand-baie",
     "name": "La Boutique - Grand Baie",
     "category": "shopping",
