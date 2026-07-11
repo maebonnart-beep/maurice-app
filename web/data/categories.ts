@@ -29,6 +29,8 @@ export const SUBCATEGORIES: Partial<Record<CategoryKey, Subcategory[]>> = {
     { key: "asiatique", label: "Chinoise & asiatique", emoji: "🥢" },
     { key: "europeenne", label: "Européenne & française", emoji: "🥖" },
     { key: "italien", label: "Italien & pizza", emoji: "🍕" },
+    { key: "grecque", label: "Grecque", emoji: "🫒" },
+    { key: "marocain", label: "Marocaine", emoji: "🫓" },
     { key: "grillades", label: "Viandes & grillades", emoji: "🥩" },
     { key: "vegetarien", label: "Végétarien", emoji: "🥗" },
     { key: "fastfood", label: "Fast-food & snack", emoji: "🍔" },

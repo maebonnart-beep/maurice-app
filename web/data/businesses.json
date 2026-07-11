@@ -607,7 +607,10 @@
     "googleMapsUrl": "https://maps.google.com/?cid=16720201552058575660",
     "lat": -20.0132911,
     "lng": 57.5863836,
-    "themes": []
+    "themes": [
+      "italien",
+      "fruits-de-mer"
+    ]
   },
   {
     "id": "the-trojan-horse-the-greeks-are-inside",
@@ -619,7 +622,9 @@
     "googleMapsUrl": "https://maps.google.com/?cid=5645227488531178596",
     "lat": -20.0102405,
     "lng": 57.5839465,
-    "themes": []
+    "themes": [
+      "grecque"
+    ]
   },
   {
     "id": "amazigh",
@@ -631,7 +636,9 @@
     "googleMapsUrl": "https://maps.google.com/?cid=6271203639024536703",
     "lat": -20.0150887,
     "lng": 57.584339,
-    "themes": []
+    "themes": [
+      "marocain"
+    ]
   },
   {
     "id": "la-terrasse",
@@ -930,7 +937,9 @@
     "googleMapsUrl": "https://maps.google.com/?cid=16361962267290234691",
     "lat": -20.0071904,
     "lng": 57.5783313,
-    "themes": []
+    "themes": [
+      "mauricienne"
+    ]
   },
   {
     "id": "coco-piment",
@@ -1109,7 +1118,9 @@
     "googleMapsUrl": "https://maps.google.com/?cid=15460748578527106159",
     "lat": -20.0124367,
     "lng": 57.5843843,
-    "themes": []
+    "themes": [
+      "bar"
+    ]
   },
   {
     "id": "amigo-bar",
