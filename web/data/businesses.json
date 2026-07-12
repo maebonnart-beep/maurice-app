@@ -4411,5 +4411,165 @@
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Croisieres%20Turquoise%20Mahebourg%20Mauritius",
     "lat": -20.4081,
     "lng": 57.7
+  },
+  {
+    "id": "plage-le-morne",
+    "name": "Plage du Morne",
+    "category": "loisirs",
+    "address": "Le Morne (Sud-Ouest)",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Le%20Morne%20public%20beach%20Mauritius",
+    "lat": -20.4547,
+    "lng": 57.3106,
+    "themes": [
+      "plages"
+    ],
+    "hours": "Accès libre",
+    "priceRange": "bon-marche"
+  },
+  {
+    "id": "plage-belle-mare",
+    "name": "Plage de Belle Mare",
+    "category": "loisirs",
+    "address": "Belle Mare (Est)",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Belle%20Mare%20public%20beach%20Mauritius",
+    "lat": -20.2189,
+    "lng": 57.7867,
+    "themes": [
+      "plages"
+    ],
+    "hours": "Accès libre",
+    "priceRange": "bon-marche"
+  },
+  {
+    "id": "plage-trou-aux-biches",
+    "name": "Plage de Trou aux Biches",
+    "category": "loisirs",
+    "address": "Trou aux Biches (Nord)",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Trou%20aux%20Biches%20public%20beach%20Mauritius",
+    "lat": -20.0254785,
+    "lng": 57.551332,
+    "themes": [
+      "plages"
+    ],
+    "hours": "Accès libre",
+    "priceRange": "bon-marche"
+  },
+  {
+    "id": "plage-flic-en-flac",
+    "name": "Plage de Flic en Flac",
+    "category": "loisirs",
+    "address": "Flic en Flac (Ouest)",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Flic%20en%20Flac%20public%20beach%20Mauritius",
+    "lat": -20.279,
+    "lng": 57.3639,
+    "themes": [
+      "plages"
+    ],
+    "hours": "Accès libre",
+    "priceRange": "bon-marche"
+  },
+  {
+    "id": "plage-blue-bay",
+    "name": "Plage de Blue Bay",
+    "category": "loisirs",
+    "address": "Blue Bay (Sud-Est)",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Blue%20Bay%20public%20beach%20Mauritius",
+    "lat": -20.4442,
+    "lng": 57.7092,
+    "themes": [
+      "plages"
+    ],
+    "hours": "Accès libre",
+    "priceRange": "bon-marche"
+  },
+  {
+    "id": "plage-la-cuvette-grand-baie",
+    "name": "Plage de La Cuvette",
+    "category": "loisirs",
+    "address": "La Cuvette, Grand Baie (Nord)",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=La%20Cuvette%20public%20beach%20Grand%20Baie%20Mauritius",
+    "lat": -20.0077772,
+    "lng": 57.5786448,
+    "themes": [
+      "plages"
+    ],
+    "hours": "Accès libre",
+    "priceRange": "bon-marche"
+  },
+  {
+    "id": "plage-ile-aux-cerfs",
+    "name": "Plages de l'Île aux Cerfs",
+    "category": "loisirs",
+    "address": "Île aux Cerfs, au large de Trou d'Eau Douce (Est)",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Ile%20aux%20Cerfs%20beach%20Mauritius",
+    "lat": -20.2417,
+    "lng": 57.8072,
+    "themes": [
+      "plages"
+    ],
+    "hours": "Accessible en bateau uniquement",
+    "priceRange": "prix-moyen"
+  },
+  {
+    "id": "plage-mont-choisy",
+    "name": "Plage de Mont Choisy",
+    "category": "loisirs",
+    "address": "Mont Choisy (Nord)",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Mont%20Choisy%20public%20beach%20Mauritius",
+    "lat": -20.0093,
+    "lng": 57.5716,
+    "themes": [
+      "plages"
+    ],
+    "hours": "Accès libre",
+    "priceRange": "bon-marche"
+  },
+  {
+    "id": "plage-pereybere",
+    "name": "Plage de Pereybère",
+    "category": "loisirs",
+    "address": "Pereybère (Nord)",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Pereybere%20public%20beach%20Mauritius",
+    "lat": -19.9967,
+    "lng": 57.5872,
+    "themes": [
+      "plages"
+    ],
+    "hours": "Accès libre",
+    "priceRange": "bon-marche"
+  },
+  {
+    "id": "plage-bel-ombre",
+    "name": "Plage de Bel Ombre",
+    "category": "loisirs",
+    "address": "Bel Ombre (Sud)",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Bel%20Ombre%20public%20beach%20Mauritius",
+    "lat": -20.5058,
+    "lng": 57.4147,
+    "themes": [
+      "plages"
+    ],
+    "hours": "Accès libre",
+    "priceRange": "bon-marche"
   }
 ]
