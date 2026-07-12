@@ -16,6 +16,7 @@ export const CATEGORIES: Category[] = [
   { key: "shopping", label: "Shopping & boutiques", emoji: "🛍️", color: "#9c7a3c" },
   { key: "alimentation", label: "Food shops", emoji: "🛒", color: "#2e8b57" },
   { key: "randonnees", label: "Balades & randonnées", emoji: "🥾", color: "#6b4423" },
+  { key: "tables-hotes", label: "Tables d'hôtes", emoji: "🍲", color: "#b8860b" },
 ];
 
 export const CATEGORY_MAP = Object.fromEntries(
@@ -64,6 +65,7 @@ export const SUBCATEGORIES: Partial<Record<CategoryKey, Subcategory[]>> = {
   ],
 };
 SUBCATEGORIES.hotels = SUBCATEGORIES.restaurants;
+SUBCATEGORIES["tables-hotes"] = SUBCATEGORIES.restaurants;
 
 export const PRICE_RANGES: { key: PriceRange; label: string; symbol: string }[] = [
   { key: "bon-marche", label: "Bon marché", symbol: "€" },
