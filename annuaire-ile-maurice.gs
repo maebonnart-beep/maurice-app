@@ -56,13 +56,16 @@ const REGIONS = [
   'Port Louis Curepipe Moka Centre'
 ];
 
-// Catégories recherchées dans chaque région (libellé = colonne "Catégorie" du Sheet).
-// Limité à 3 catégories pour ce premier passage — décommentez/ajoutez au besoin
-// pour les prochains lots (food shops, plongée, spa, etc.).
+// Catégories recherchées dans chaque région : "categorie" = une des 6 catégories
+// top-level de web/data/categories.ts (activites/food/utiles/coaching/seconde-main/
+// evenements), "theme" = une sous-catégorie (SUBCATEGORIES) de cette catégorie.
+// Limité à 3 mots-clés pour ce premier passage — décommentez/ajoutez au besoin
+// pour les prochains lots (food shops, plongée, spa, etc.), en reprenant les clés
+// exactes de web/data/categories.ts.
 const CATEGORIES = [
-  { mot: 'golf',                                 categorie: 'golf' },
-  { mot: 'restaurants',                          categorie: 'restaurants' },
-  { mot: 'bars',                                 categorie: 'restaurants' }
+  { mot: 'golf',                                 categorie: 'activites', theme: 'golf' },
+  { mot: 'restaurants',                          categorie: 'food',      theme: 'restaurants' },
+  { mot: 'bars',                                 categorie: 'food',      theme: 'bars' }
 ];
 
 // Construit REQUETES = produit cartésien REGIONS × CATEGORIES.
@@ -71,14 +74,15 @@ for (const region of REGIONS) {
   for (const cat of CATEGORIES) {
     REQUETES.push({
       query: cat.mot + ' ' + region + ' Ile Maurice',
-      categorie: cat.categorie
+      categorie: cat.categorie,
+      theme: cat.theme
     });
   }
 }
 
 // Colonnes du Sheet (la dernière, place_id, sert au dédoublonnage : masquable)
 const ENTETES = [
-  'Nom', 'Catégorie', 'Adresse', 'Téléphone', 'Site web',
+  'Nom', 'Catégorie', 'Thème', 'Adresse', 'Téléphone', 'Site web',
   'Latitude', 'Longitude', 'Lien Google Maps', "Date d'import", 'Statut', 'place_id'
 ];
 
@@ -154,7 +158,7 @@ function importerActivites() {
       for (const p of places) {
         if (!p.id || idsExistants.has(p.id)) continue; // doublon → ignoré
         idsExistants.add(p.id);
-        nouvellesLignes.push(construireLigne(p, item.categorie, dateImport));
+        nouvellesLignes.push(construireLigne(p, item.categorie, item.theme, dateImport));
         totalEcrits++;
         ajoutes++;
       }
@@ -227,13 +231,14 @@ function appelerTextSearch(texte, pageToken) {
 }
 
 // ============================ OUTILS ========================================
-function construireLigne(p, categorie, dateImport) {
+function construireLigne(p, categorie, theme, dateImport) {
   const nom = p.displayName ? p.displayName.text : '';
   const lat = p.location ? p.location.latitude : '';
   const lng = p.location ? p.location.longitude : '';
   return [
     nom,
     categorie,
+    theme,
     p.formattedAddress || '',
     p.internationalPhoneNumber || '',
     p.websiteUri || '',
