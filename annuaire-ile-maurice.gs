@@ -1,11 +1,20 @@
 /**
  * ============================================================================
- * ANNUAIRE GRAND BAIE — Import Google Places (New)
- * MVP catégorie "Activités & loisirs"
+ * ANNUAIRE MAURICE+ — Import Google Places (New), île entière
  * ----------------------------------------------------------------------------
- * Ce script interroge l'API Google Places (New) - Text Search pour plusieurs
- * requêtes ciblées, puis écrit chaque lieu dans la feuille Google Sheet active.
- * Il déduplique par place_id et bride le nombre d'appels API par exécution.
+ * Ce script interroge l'API Google Places (New) - Text Search pour chaque
+ * combinaison région × catégorie ci-dessous, puis écrit chaque lieu dans la
+ * feuille Google Sheet active. Il déduplique par place_id (relancer le script
+ * plus tard ne recrée pas de doublons) et bride le nombre d'appels API par
+ * exécution via CONFIG.MAX_REQUETES.
+ *
+ * MISE EN ROUTE :
+ * 1) Google Sheets → Extensions → Apps Script → collez ce fichier.
+ * 2) Dans CONFIG ci-dessous, remplacez API_KEY par votre clé Places API (New)
+ *    — ne collez jamais une clé API dans un chat ou un outil tiers, entrez-la
+ *    uniquement ici, directement dans l'éditeur Apps Script.
+ * 3) Enregistrez, rechargez le Sheet, menu "Annuaire Maurice+ → Importer".
+ * 4) Autorisez l'accès demandé (le script n'appelle que l'API Google Places).
  * ============================================================================
  */
 
@@ -14,44 +23,77 @@ const CONFIG = {
   // 1) Collez votre clé API Google Places entre les guillemets ci-dessous :
   API_KEY: 'COLLEZ_VOTRE_CLE_API_ICI',
 
-  // 2) Garde-fou budgétaire : nb MAX d'appels API par exécution
-  MAX_REQUETES: 200,
+  // 2) Garde-fou budgétaire : nb MAX d'appels API par exécution.
+  //    Chaque combinaison région × catégorie = 1 appel par page (PAGES_PAR_REQUETE).
+  //    Relancer le menu plusieurs fois (ex: un jour par tranche) ne pose aucun
+  //    problème : le dédoublonnage par place_id évite de repayer les mêmes lieux.
+  MAX_REQUETES: 250,
 
-  // 3) Pagination : nb de pages par requête (1 page = 20 résultats max ; 3 = 60 max)
-  PAGES_PAR_REQUETE: 2,
+  // 3) Pagination : nb de pages par requête (1 page = 20 résultats max ; 2 = 40 max)
+  PAGES_PAR_REQUETE: 1,
 
-  // 4) Centre approximatif de Grand Baie (cible géographiquement les résultats)
-  CENTRE: { latitude: -20.0064, longitude: 57.5802 },
-  RAYON_METRES: 6000,
+  // 4) Biais géographique : cercle centré sur l'île entière (pas une restriction
+  //    stricte — Text Search se base d'abord sur le texte de la requête, qui
+  //    inclut déjà le nom de chaque région ci-dessous).
+  CENTRE: { latitude: -20.2000, longitude: 57.5500 },
+  RAYON_METRES: 45000,
 
   // 5) Langue et région
   LANGUE: 'fr',
   REGION: 'MU'
 };
 
-// Requêtes ciblées (sous-catégories). "categorie" = libellé écrit dans le Sheet.
-const REQUETES = [
-  { query: 'excursions Grand Baie Ile Maurice',        categorie: 'Excursions' },
-  { query: 'sports nautiques Grand Baie Ile Maurice',  categorie: 'Sports nautiques' },
-  { query: 'plongée sous-marine Grand Baie',           categorie: 'Plongée' },
-  { query: 'snorkeling Grand Baie',                    categorie: 'Snorkeling' },
-  { query: 'randonnée Grand Baie Ile Maurice',         categorie: 'Randonnée' },
-  { query: 'spa bien-être Grand Baie',                 categorie: 'Spa & bien-être' },
-  { query: 'golf Grand Baie Ile Maurice',              categorie: 'Golf' },
-  { query: 'visites guidées Grand Baie',               categorie: 'Visites guidées' },
-  { query: 'croisière catamaran Grand Baie',           categorie: 'Croisières / Catamaran' },
-  { query: 'pêche au gros Grand Baie',                 categorie: 'Pêche au gros' },
-  { query: 'kitesurf Grand Baie',                      categorie: 'Kitesurf / Glisse' },
-  { query: 'location jet ski Grand Baie',              categorie: 'Jet ski' },
-  { query: 'quad buggy Grand Baie',                    categorie: 'Quad & Buggy' },
-  { query: 'parachute ascensionnel Grand Baie',        categorie: 'Parasailing' },
-  { query: 'activités loisirs Grand Baie Ile Maurice', categorie: 'Activités & loisirs' },
-
-  { query: 'restaurants Grand Baie Ile Maurice',        categorie: 'restaurants' },
-  { query: 'bars Grand Baie Ile Maurice',                categorie: 'restaurants' },
-  { query: 'boutiques Grand Baie Ile Maurice',           categorie: 'shopping' },
-  { query: 'salon de beauté Grand Baie Ile Maurice',     categorie: 'shopping' }
+// Régions couvrant l'île (utilisées pour cibler chaque requête texte).
+const REGIONS = [
+  'Grand Baie Nord',
+  'Flic en Flac Tamarin Riviere Noire',
+  'Le Morne Chamarel',
+  'Bel Ombre Souillac Sud',
+  'Belle Mare Trou d\'Eau Douce Est',
+  'Mahebourg Blue Bay Sud-Est',
+  'Port Louis Curepipe Moka Centre'
 ];
+
+// Catégories recherchées dans chaque région (libellé = colonne "Catégorie" du Sheet).
+const CATEGORIES = [
+  { mot: 'restaurants',                          categorie: 'restaurants' },
+  { mot: 'bars',                                 categorie: 'restaurants' },
+  { mot: 'tables d\'hôtes',                       categorie: 'tables-hotes' },
+  { mot: 'snacks de plage street food',          categorie: 'restaurants' },
+  { mot: 'hypermarché supermarché',              categorie: 'alimentation' },
+  { mot: 'boulangerie pâtisserie',                categorie: 'alimentation' },
+  { mot: 'boucherie',                            categorie: 'alimentation' },
+  { mot: 'poissonnerie',                          categorie: 'alimentation' },
+  { mot: 'cave à vin spiritueux',                categorie: 'alimentation' },
+  { mot: 'excursions',                           categorie: 'excursions' },
+  { mot: 'sports nautiques',                     categorie: 'nautique' },
+  { mot: 'plongée sous-marine',                  categorie: 'plongee' },
+  { mot: 'randonnée',                            categorie: 'randonnees' },
+  { mot: 'spa bien-être',                        categorie: 'spa' },
+  { mot: 'golf',                                 categorie: 'golf' },
+  { mot: 'visites guidées musée',                categorie: 'visites' },
+  { mot: 'croisière catamaran',                  categorie: 'croisieres' },
+  { mot: 'pêche au gros',                        categorie: 'peche' },
+  { mot: 'kitesurf',                             categorie: 'kitesurf' },
+  { mot: 'parc d\'attractions parc animalier',    categorie: 'visites' },
+  { mot: 'plages',                               categorie: 'loisirs' },
+  { mot: 'boutiques shopping',                   categorie: 'shopping' },
+  { mot: 'clinique privée',                      categorie: 'utiles' },
+  { mot: 'poste de police',                      categorie: 'utiles' },
+  { mot: 'banque',                               categorie: 'utiles' },
+  { mot: 'assurance',                            categorie: 'utiles' }
+];
+
+// Construit REQUETES = produit cartésien REGIONS × CATEGORIES.
+const REQUETES = [];
+for (const region of REGIONS) {
+  for (const cat of CATEGORIES) {
+    REQUETES.push({
+      query: cat.mot + ' ' + region + ' Ile Maurice',
+      categorie: cat.categorie
+    });
+  }
+}
 
 // Colonnes du Sheet (la dernière, place_id, sert au dédoublonnage : masquable)
 const ENTETES = [
@@ -76,8 +118,8 @@ const FIELD_MASK = [
 // ============================ MENU DANS LE SHEET ============================
 function onOpen() {
   SpreadsheetApp.getUi()
-    .createMenu('Annuaire Grand Baie')
-    .addItem('▶ Importer les activités', 'importerActivites')
+    .createMenu('Annuaire Maurice+')
+    .addItem('▶ Importer (île entière)', 'importerActivites')
     .addToUi();
 }
 
@@ -101,6 +143,7 @@ function importerActivites() {
   // Charger les place_id déjà présents (pour dédoublonner)
   const idsExistants = chargerIdsExistants(feuille);
   console.log('place_id déjà en base : ' + idsExistants.size);
+  console.log('Nombre de requêtes région×catégorie disponibles : ' + REQUETES.length);
 
   let compteurRequetes = 0;
   let totalEcrits = 0;
@@ -109,7 +152,7 @@ function importerActivites() {
 
   for (const item of REQUETES) {
     if (compteurRequetes >= CONFIG.MAX_REQUETES) {
-      console.warn('⚠️ Limite de ' + CONFIG.MAX_REQUETES + ' requêtes atteinte. Arrêt.');
+      console.warn('⚠️ Limite de ' + CONFIG.MAX_REQUETES + ' requêtes atteinte. Relancez le menu plus tard pour continuer (aucun doublon).');
       break;
     }
 
@@ -153,8 +196,11 @@ function importerActivites() {
 
   console.log('=========================================');
   console.log('✅ Terminé.');
-  console.log('   Requêtes API utilisées : ' + compteurRequetes + ' / ' + CONFIG.MAX_REQUETES);
+  console.log('   Requêtes API utilisées : ' + compteurRequetes + ' / ' + REQUETES.length + ' disponibles (plafond ' + CONFIG.MAX_REQUETES + ')');
   console.log('   Nouvelles fiches écrites : ' + totalEcrits);
+  if (compteurRequetes >= CONFIG.MAX_REQUETES && compteurRequetes < REQUETES.length) {
+    console.log('   ↻ Relancez le menu pour traiter les requêtes restantes (aucun doublon créé).');
+  }
   console.log('=========================================');
 
   SpreadsheetApp.getActiveSpreadsheet()
