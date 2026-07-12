@@ -851,7 +851,7 @@
   {
     "id": "lazy-lobster",
     "name": "Lazy Lobster",
-    "category": "hotels",
+    "category": "restaurants",
     "address": "MU, Royal Road, Grand Baie 30510",
     "phone": "+230 209 8000",
     "website": "https://veranda-resorts.com/en/mauritius-hotel-veranda-grand-baie/restaurants-and-bars",
@@ -886,7 +886,7 @@
   {
     "id": "ai-kisu-lux-grand-baie",
     "name": "Ai KISU - LUX* Grand Baie",
-    "category": "hotels",
+    "category": "restaurants",
     "address": "MU, MU LUX*, Coastal Road, Grand Baie 30510",
     "phone": "+230 209 2200",
     "website": "https://www.luxresorts.com/en/mauritius/hotel/luxgrandbaie/restaurants-bars/ai-kisu?hotel=LUX-Grand-Baie",
@@ -937,7 +937,7 @@
   {
     "id": "beach-rouge-lux-grand-baie",
     "name": "Beach Rouge - LUX* Grand Baie",
-    "category": "hotels",
+    "category": "restaurants",
     "address": "MU, MU LUX*, Coastal Road, Grand Baie 30510",
     "phone": "+230 209 2200",
     "website": "https://www.luxresorts.com/en/mauritius/hotel/luxgrandbaie/restaurants-bars/beach-rouge",
@@ -1118,7 +1118,7 @@
   {
     "id": "bisou-rooftop-bar-restaurant-lux-grand-baie",
     "name": "Bisou Rooftop Bar & Restaurant - LUX* Grand Baie",
-    "category": "hotels",
+    "category": "restaurants",
     "address": "MU, LUX* Grand Baie, Coastal Road, Grand Baie 30510",
     "phone": "+230 209 2200",
     "website": "https://www.luxresorts.com/en/mauritius/hotel/luxgrandbaie/restaurants-bars/bisou?hotel=LUX-Grand-Baie",
@@ -1257,7 +1257,7 @@
   {
     "id": "rooftop-adults-only-restaurant-bar-lounge",
     "name": "ROOFTOP (Adults only - Restaurant - Bar & Lounge)",
-    "category": "hotels",
+    "category": "restaurants",
     "address": "Inside Ocean V Hotel, Corner Royal Road and Old Mill Rd, Grand Baie",
     "phone": "+230 260 2200",
     "website": "https://searesortshotels.com/ocean-v/",
@@ -1383,7 +1383,7 @@
   {
     "id": "bar-principal",
     "name": "Bar principal",
-    "category": "hotels",
+    "category": "restaurants",
     "address": "XHV3+QF9 c/o Club Med La, Rte Cotière, Grand Baie",
     "phone": "",
     "website": "",
@@ -1460,7 +1460,7 @@
   {
     "id": "walima-by-bisou-lux-grand-baie",
     "name": "Walima by Bisou - LUX* Grand Baie",
-    "category": "hotels",
+    "category": "restaurants",
     "address": "MU, MU LUX*, Coastal Road, Grand Baie 30510",
     "phone": "+230 5942 9773",
     "website": "https://www.luxresorts.com/en/mauritius/hotel/luxgrandbaie/restaurants-bars/walima-by-bisou",
@@ -1478,7 +1478,7 @@
   {
     "id": "ici-lux-grand-baie",
     "name": "ICI - LUX* Grand Baie",
-    "category": "hotels",
+    "category": "restaurants",
     "address": "MU, MU LUX*, Coastal Road, Grand Baie 30510",
     "phone": "+230 209 2200",
     "website": "https://www.luxresorts.com/en/mauritius/hotel/luxgrandbaie/restaurants-bars/ici",
@@ -1494,7 +1494,7 @@
   {
     "id": "la-varangue-veranda-grand-baie",
     "name": "La Varangue - Veranda Grand Baie",
-    "category": "hotels",
+    "category": "restaurants",
     "address": "MU, Royal Road, Grand Baie 30510",
     "phone": "+230 209 8000",
     "website": "https://veranda-resorts.com/en/mauritius-hotel-veranda-grand-baie/restaurants-and-bars",
@@ -1510,7 +1510,7 @@
   {
     "id": "la-crique-veranda-grand-baie",
     "name": "La Crique - Veranda Grand Baie",
-    "category": "hotels",
+    "category": "restaurants",
     "address": "MU, Royal Road, Grand Baie 30510",
     "phone": "+230 209 8000",
     "website": "https://veranda-resorts.com/en/mauritius-hotel-veranda-grand-baie/restaurants-and-bars",
@@ -1526,7 +1526,7 @@
   {
     "id": "navigator-canonnier-beachcomber",
     "name": "Navigator - Canonnier Beachcomber",
-    "category": "hotels",
+    "category": "restaurants",
     "address": "Canonnier Beachcomber Resort, Grand Baie",
     "phone": "+230 209 7000",
     "website": "https://www.beachcomber-hotels.com/en/restaurants-pointe-aux-canonniers",
@@ -1544,7 +1544,7 @@
   {
     "id": "la-serenata-canonnier-beachcomber",
     "name": "La Serenata - Canonnier Beachcomber",
-    "category": "hotels",
+    "category": "restaurants",
     "address": "Canonnier Beachcomber Resort, Grand Baie",
     "phone": "+230 209 7000",
     "website": "https://la-serenata.restaurant.mu/en",
@@ -1561,7 +1561,7 @@
   {
     "id": "planteur-bar-canonnier-beachcomber",
     "name": "Planteur Bar - Canonnier Beachcomber",
-    "category": "hotels",
+    "category": "restaurants",
     "address": "Canonnier Beachcomber Resort, Grand Baie",
     "phone": "+230 209 7000",
     "website": "https://www.beachcomber-hotels.com/en/restaurants-pointe-aux-canonniers",
@@ -1577,7 +1577,7 @@
   {
     "id": "manzu-ocean-v-hotel",
     "name": "Manzu - Ocean V Hotel",
-    "category": "hotels",
+    "category": "restaurants",
     "address": "Inside Ocean V Hotel, Corner Royal Road and Old Mill Rd, Grand Baie",
     "phone": "+230 260 2200",
     "website": "https://searesortshotels.com/ocean-v/dining/",
@@ -3440,7 +3440,7 @@
   {
     "id": "blue-marlin-paradis-le-morne",
     "name": "Blue Marlin - Paradis Beachcomber",
-    "category": "hotels",
+    "category": "restaurants",
     "address": "Paradis Beachcomber Golf Resort & Spa, Le Morne",
     "phone": "+230 401 5050",
     "website": "",
@@ -3456,7 +3456,7 @@
   {
     "id": "emba-filao-lux-le-morne",
     "name": "Emba Filao - LUX* Le Morne",
-    "category": "hotels",
+    "category": "restaurants",
     "address": "Route Côtière, Plage du Morne, Le Morne Brabant",
     "phone": "+230 5919 1969",
     "website": "",
@@ -3491,7 +3491,7 @@
   {
     "id": "simply-india-st-regis-le-morne",
     "name": "Simply India - St. Regis",
-    "category": "hotels",
+    "category": "restaurants",
     "address": "St. Regis Mauritius Resort, Le Morne",
     "phone": "+230 403 9000",
     "website": "",
@@ -3507,7 +3507,7 @@
   {
     "id": "ginja-heritage-le-telfair-bel-ombre",
     "name": "Gin'ja - Heritage Le Telfair",
-    "category": "hotels",
+    "category": "restaurants",
     "address": "Heritage Le Telfair Golf & Spa Resort, Coastal Road, Bel Ombre",
     "phone": "+230 601 5500",
     "website": "https://heritageresorts.mu/hotels-mauritius/le-telfair/restaurants-bars/ginja",
@@ -3523,7 +3523,7 @@
   {
     "id": "c-beach-club-bel-ombre",
     "name": "C Beach Club",
-    "category": "hotels",
+    "category": "restaurants",
     "address": "Domaine de Bel Ombre, Bel Ombre",
     "phone": "+230 601 5529",
     "website": "https://cbeachclub.mu/",
@@ -3541,7 +3541,7 @@
   {
     "id": "infinity-blue-heritage-awali-bel-ombre",
     "name": "Infinity Blue - Heritage Awali",
-    "category": "hotels",
+    "category": "restaurants",
     "address": "Heritage Awali Golf & Spa Resort, Coastal Road, Bel Ombre",
     "phone": "+230 601 1500",
     "website": "",
@@ -3570,7 +3570,7 @@
   {
     "id": "le-flamboyant-so-sofitel-bel-ombre",
     "name": "Le Flamboyant - SO Sofitel",
-    "category": "hotels",
+    "category": "restaurants",
     "address": "Royal Road, Beau Champs, Bel Ombre",
     "phone": "+230 605 5800",
     "website": "https://www.sofitel-so-mauritius.com/en/so-gourmet/le-flamboyant/",
@@ -3637,7 +3637,7 @@
   {
     "id": "hasu-long-beach-belle-mare",
     "name": "Hasu - Long Beach A Sun Resort",
-    "category": "hotels",
+    "category": "restaurants",
     "address": "Coastal Road, Belle Mare",
     "phone": "",
     "website": "",
@@ -3653,7 +3653,7 @@
   {
     "id": "amari-by-vineet-lux-belle-mare",
     "name": "Amari by Vineet - LUX* Belle Mare",
-    "category": "hotels",
+    "category": "restaurants",
     "address": "LUX* Belle Mare Hotel, Coastal Road, Belle Mare",
     "phone": "+230 402 2000",
     "website": "",
@@ -3684,7 +3684,7 @@
   {
     "id": "la-spiaggia-constance-belle-mare",
     "name": "La Spiaggia - Constance Belle Mare Plage",
-    "category": "hotels",
+    "category": "restaurants",
     "address": "Constance Belle Mare Plage, Pointe de Flacq, Belle Mare",
     "phone": "+230 402 2600",
     "website": "",
@@ -4598,6 +4598,22 @@
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Menu%20Des%20Iles%20Flic%20en%20Flac%20Mauritius",
     "lat": -20.279,
     "lng": 57.3639,
+    "themes": [
+      "snacks-plage",
+      "mauricienne"
+    ],
+    "priceRange": "bon-marche"
+  },
+  {
+    "id": "chez-vanessa-pereybere",
+    "name": "Chez Vanessa",
+    "category": "restaurants",
+    "address": "Entrée de la plage publique de Pereybère (Nord)",
+    "phone": "+230 5911 9486",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Chez%20Vanessa%20Pereybere%20Mauritius",
+    "lat": -19.9967,
+    "lng": 57.5872,
     "themes": [
       "snacks-plage",
       "mauricienne"

@@ -10,7 +10,6 @@ export type CategoryKey =
   | "loisirs"
   | "visites"
   | "restaurants"
-  | "hotels"
   | "shopping"
   | "alimentation"
   | "randonnees"
