@@ -4001,5 +4001,23 @@
     ],
     "hours": "Fermé jeu, ouvre à partir de 12h30",
     "priceRange": "bon-marche"
+  },
+  {
+    "id": "les-palmiers-chez-dev-chamarel",
+    "name": "Les Palmiers Chez Dev",
+    "category": "tables-hotes",
+    "address": "Chamarel, Rivière Noire",
+    "phone": "+230 483 4364",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Les%20Palmiers%20Chez%20Dev%20Chamarel%20Mauritius",
+    "lat": -20.4372,
+    "lng": 57.3819,
+    "themes": [
+      "mauricienne",
+      "fruits-de-mer",
+      "vegetarien"
+    ],
+    "hours": "Tous les jours 11h-16h",
+    "priceRange": "prix-moyen"
   }
 ]
