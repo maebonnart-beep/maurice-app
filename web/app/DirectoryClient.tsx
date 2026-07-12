@@ -114,7 +114,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
             Maurice<sup className="text-accent">+</sup>&nbsp;
             <small className="text-muted font-medium">Activités</small>
           </div>
-          <div className="text-[13px] text-muted">Grand Baie · Île Maurice</div>
+          <div className="text-[13px] text-muted">Île Maurice</div>
         </div>
       </header>
 
@@ -123,11 +123,12 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
           Annuaire local · Activités, restaurants &amp; adresses utiles
         </p>
         <h1 className="text-[clamp(30px,5vw,46px)] leading-[1.05] tracking-tight max-w-[15ch] text-balance m-0">
-          Tout ce qu&apos;on peut <em className="not-italic text-primary">faire</em> à Grand Baie.
+          Maurice+, tout trouver <em className="not-italic text-primary">facilement</em>.
         </h1>
         <p className="text-muted text-[17px] leading-[1.55] max-w-[56ch] mt-4">
-          Excursions en mer, plongée, spa, restaurants, boutiques… Retrouvez les prestataires du
-          Nord en un coup d&apos;œil — puis appelez, visitez leur site ou lancez l&apos;itinéraire.
+          Excursions en mer, plongée, spa, restaurants, boutiques… Retrouvez les meilleures
+          adresses de l&apos;île en un coup d&apos;œil — puis appelez, visitez leur site ou
+          lancez l&apos;itinéraire.
         </p>
         <div className="relative max-w-[520px] mt-6">
           <input
@@ -278,6 +279,11 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                           </span>
                         ) : null;
                       })()}
+                    {b.takeaway && (
+                      <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[11px] font-semibold border border-border bg-surface-2 text-muted">
+                        🥡 À emporter
+                      </span>
+                    )}
                   </div>
                   <h3 className="m-0 text-[17px] leading-[1.25] tracking-tight">{b.name}</h3>
                   <p className="m-0 text-muted text-[13.5px] leading-[1.5]">{b.address}</p>
@@ -352,8 +358,8 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
       <footer className="border-t border-border py-5 pb-10 text-muted text-[13px] leading-[1.6]">
         <div className="max-w-[1120px] mx-auto px-5">
           <b className="text-ink">Aperçu MVP</b> — sélection de {businesses.length} fiches issues
-          de l&apos;import Google Places (Nord de l&apos;île). Les données seront enrichies et
-          vérifiées avant mise en ligne. Statut, horaires et photos viendront ensuite.
+          de l&apos;import Google Places, couvrant toute l&apos;île. Les données seront enrichies
+          et vérifiées avant mise en ligne. Statut, horaires et photos viendront ensuite.
         </div>
       </footer>
     </div>

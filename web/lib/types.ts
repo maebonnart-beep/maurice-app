@@ -1,20 +1,10 @@
 export type CategoryKey =
-  | "excursions"
-  | "croisieres"
-  | "plongee"
-  | "nautique"
-  | "kitesurf"
-  | "peche"
-  | "spa"
-  | "golf"
-  | "loisirs"
-  | "visites"
-  | "restaurants"
-  | "shopping"
-  | "alimentation"
-  | "randonnees"
-  | "tables-hotes"
-  | "utiles";
+  | "activites"
+  | "food"
+  | "utiles"
+  | "coaching"
+  | "seconde-main"
+  | "evenements";
 
 export type Category = {
   key: CategoryKey;
@@ -41,6 +31,8 @@ export type Business = {
   /** Texte libre combinant jours + heures, ex: "Lun-Ven 11h30-22h, Sam-Dim 11h-23h". */
   hours?: string;
   priceRange?: PriceRange;
+  /** Uniquement pertinent pour les fiches "restaurants" (thème food). */
+  takeaway?: boolean;
   /** Absent = "free". Premium fiches surface first and unlock the perks below. */
   tier?: BusinessTier;
   /** True once a business owner has claimed/verified this fiche. */

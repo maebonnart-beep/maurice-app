@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Maurice+ · Activités",
-  description: "Tout ce qu'on peut faire à Grand Baie, Île Maurice.",
+  description: "Maurice+, tout trouver facilement : activités, restaurants et adresses utiles à Île Maurice.",
 };
 
 export default function RootLayout({
