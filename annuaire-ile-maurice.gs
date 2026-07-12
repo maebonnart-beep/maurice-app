@@ -29,8 +29,10 @@ const CONFIG = {
   //    problème : le dédoublonnage par place_id évite de repayer les mêmes lieux.
   MAX_REQUETES: 250,
 
-  // 3) Pagination : nb de pages par requête (1 page = 20 résultats max ; 2 = 40 max)
-  PAGES_PAR_REQUETE: 1,
+  // 3) Pagination : nb de pages par requête (1 page = 20 résultats max ; 3 = 60 max).
+  //    Avec seulement 3 catégories × 7 régions = 21 requêtes de base, on peut se
+  //    permettre 3 pages chacune (63 appels max) sans s'approcher de MAX_REQUETES.
+  PAGES_PAR_REQUETE: 3,
 
   // 4) Biais géographique : cercle centré sur l'île entière (pas une restriction
   //    stricte — Text Search se base d'abord sur le texte de la requête, qui
@@ -55,33 +57,12 @@ const REGIONS = [
 ];
 
 // Catégories recherchées dans chaque région (libellé = colonne "Catégorie" du Sheet).
+// Limité à 3 catégories pour ce premier passage — décommentez/ajoutez au besoin
+// pour les prochains lots (food shops, plongée, spa, etc.).
 const CATEGORIES = [
-  { mot: 'restaurants',                          categorie: 'restaurants' },
-  { mot: 'bars',                                 categorie: 'restaurants' },
-  { mot: 'tables d\'hôtes',                       categorie: 'tables-hotes' },
-  { mot: 'snacks de plage street food',          categorie: 'restaurants' },
-  { mot: 'hypermarché supermarché',              categorie: 'alimentation' },
-  { mot: 'boulangerie pâtisserie',                categorie: 'alimentation' },
-  { mot: 'boucherie',                            categorie: 'alimentation' },
-  { mot: 'poissonnerie',                          categorie: 'alimentation' },
-  { mot: 'cave à vin spiritueux',                categorie: 'alimentation' },
-  { mot: 'excursions',                           categorie: 'excursions' },
-  { mot: 'sports nautiques',                     categorie: 'nautique' },
-  { mot: 'plongée sous-marine',                  categorie: 'plongee' },
-  { mot: 'randonnée',                            categorie: 'randonnees' },
-  { mot: 'spa bien-être',                        categorie: 'spa' },
   { mot: 'golf',                                 categorie: 'golf' },
-  { mot: 'visites guidées musée',                categorie: 'visites' },
-  { mot: 'croisière catamaran',                  categorie: 'croisieres' },
-  { mot: 'pêche au gros',                        categorie: 'peche' },
-  { mot: 'kitesurf',                             categorie: 'kitesurf' },
-  { mot: 'parc d\'attractions parc animalier',    categorie: 'visites' },
-  { mot: 'plages',                               categorie: 'loisirs' },
-  { mot: 'boutiques shopping',                   categorie: 'shopping' },
-  { mot: 'clinique privée',                      categorie: 'utiles' },
-  { mot: 'poste de police',                      categorie: 'utiles' },
-  { mot: 'banque',                               categorie: 'utiles' },
-  { mot: 'assurance',                            categorie: 'utiles' }
+  { mot: 'restaurants',                          categorie: 'restaurants' },
+  { mot: 'bars',                                 categorie: 'restaurants' }
 ];
 
 // Construit REQUETES = produit cartésien REGIONS × CATEGORIES.
