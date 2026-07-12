@@ -13,7 +13,8 @@ export type CategoryKey =
   | "shopping"
   | "alimentation"
   | "randonnees"
-  | "tables-hotes";
+  | "tables-hotes"
+  | "utiles";
 
 export type Category = {
   key: CategoryKey;

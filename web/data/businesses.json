@@ -4619,5 +4619,178 @@
       "mauricienne"
     ],
     "priceRange": "bon-marche"
+  },
+  {
+    "id": "clinique-darne-floreal",
+    "name": "Clinique Darné (C-Care Darné)",
+    "category": "utiles",
+    "address": "Rue Georges Guibert, Floréal (Centre)",
+    "phone": "+230 601 2300",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Clinique%20Darne%20Floreal%20Mauritius",
+    "lat": -20.3122,
+    "lng": 57.4972,
+    "themes": [
+      "cliniques-privees"
+    ],
+    "hours": "Urgences 24h/24"
+  },
+  {
+    "id": "clinique-du-nord-baie-du-tombeau",
+    "name": "Clinique du Nord",
+    "category": "utiles",
+    "address": "Baie du Tombeau Road, Pamplemousses (proche Port-Louis)",
+    "phone": "+230 247 2532",
+    "website": "https://www.cliniquedunord.mu",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Clinique%20du%20Nord%20Baie%20du%20Tombeau%20Mauritius",
+    "lat": -20.1119,
+    "lng": 57.4886,
+    "themes": [
+      "cliniques-privees"
+    ],
+    "hours": "Urgences 24h/24"
+  },
+  {
+    "id": "wellkin-hospital-moka",
+    "name": "C-Care Wellkin Hospital",
+    "category": "utiles",
+    "address": "Route Royale, Moka (Centre)",
+    "phone": "+230 605 1000",
+    "website": "https://www.wellkinhospital.com",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Wellkin%20Hospital%20Moka%20Mauritius",
+    "lat": -20.2318,
+    "lng": 57.5372,
+    "themes": [
+      "cliniques-privees"
+    ],
+    "hours": "Ouvert 7j/7, urgences 24h/24"
+  },
+  {
+    "id": "clinique-ferriere-curepipe",
+    "name": "Nouvelle Clinique Ferrière",
+    "category": "utiles",
+    "address": "College Lane, Curepipe (Centre)",
+    "phone": "+230 676 3332",
+    "website": "https://cliniqueferriere.com",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Clinique%20Ferriere%20Curepipe%20Mauritius",
+    "lat": -20.3153,
+    "lng": 57.5222,
+    "themes": [
+      "cliniques-privees"
+    ]
+  },
+  {
+    "id": "police-grand-baie",
+    "name": "Poste de Police - Grand Baie",
+    "category": "utiles",
+    "address": "Royal Road, Grand Baie (Nord)",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Grand%20Baie%20Police%20Station%20Mauritius",
+    "lat": -20.0134,
+    "lng": 57.5827,
+    "themes": [
+      "postes-police"
+    ]
+  },
+  {
+    "id": "police-flic-en-flac",
+    "name": "Poste de Police - Flic en Flac",
+    "category": "utiles",
+    "address": "Coastal Road, Flic en Flac (Ouest)",
+    "phone": "+230 453 9917",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Flic%20en%20Flac%20Police%20Station%20Mauritius",
+    "lat": -20.279,
+    "lng": 57.3639,
+    "themes": [
+      "postes-police"
+    ]
+  },
+  {
+    "id": "police-curepipe",
+    "name": "Poste de Police - Curepipe",
+    "category": "utiles",
+    "address": "College Lane, Curepipe (Centre)",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Curepipe%20Police%20Station%20Mauritius",
+    "lat": -20.3153,
+    "lng": 57.5222,
+    "themes": [
+      "postes-police"
+    ]
+  },
+  {
+    "id": "police-headquarters-port-louis",
+    "name": "Quartier Général de la Police - Line Barracks",
+    "category": "utiles",
+    "address": "Line Barracks, Port-Louis",
+    "phone": "999 (urgences) / 468 0034",
+    "website": "https://police.govmu.org/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Line%20Barracks%20Police%20Headquarters%20Port%20Louis%20Mauritius",
+    "lat": -20.1619,
+    "lng": 57.4989,
+    "themes": [
+      "postes-police"
+    ]
+  },
+  {
+    "id": "swan-grand-baie",
+    "name": "SWAN - Agence Grand Baie",
+    "category": "utiles",
+    "address": "La Croisette, Grand Baie (Nord)",
+    "phone": "+230 207 9075",
+    "website": "https://www.swanforlife.com",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=SWAN%20insurance%20La%20Croisette%20Grand%20Baie%20Mauritius",
+    "lat": -20.0219739,
+    "lng": 57.5787883,
+    "themes": [
+      "assurances"
+    ]
+  },
+  {
+    "id": "mua-grand-baie",
+    "name": "MUA - Agence Grand Baie",
+    "category": "utiles",
+    "address": "Grand Baie Business Quarter, Chemin Vingt Pieds, Grand Baie (Nord)",
+    "phone": "+230 269 4115",
+    "website": "https://www.mua.mu",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=MUA%20Mauritius%20Union%20Assurance%20Grand%20Baie%20Business%20Quarter",
+    "lat": -20.0134,
+    "lng": 57.5827,
+    "themes": [
+      "assurances"
+    ]
+  },
+  {
+    "id": "mcb-grand-baie",
+    "name": "MCB - Agence Grand Baie",
+    "category": "utiles",
+    "address": "B13, Grand Baie (Nord)",
+    "phone": "+230 202 6060",
+    "website": "https://mcb.mu",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=MCB%20Mauritius%20Commercial%20Bank%20Grand%20Baie",
+    "lat": -20.0134,
+    "lng": 57.5827,
+    "themes": [
+      "banques"
+    ],
+    "hours": "Lun-Jeu 9h-15h30, Ven 9h-16h"
+  },
+  {
+    "id": "sbm-grand-baie",
+    "name": "SBM - Agence Grand Baie",
+    "category": "utiles",
+    "address": "Grand Baie (Nord)",
+    "phone": "+230 207 0111",
+    "website": "https://banking.sbmgroup.mu",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=SBM%20State%20Bank%20of%20Mauritius%20Grand%20Baie",
+    "lat": -20.0134,
+    "lng": 57.5827,
+    "themes": [
+      "banques"
+    ],
+    "hours": "Lun-Jeu 9h-15h15, Ven 9h-16h"
   }
 ]

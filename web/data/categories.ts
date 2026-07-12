@@ -16,6 +16,7 @@ export const CATEGORIES: Category[] = [
   { key: "alimentation", label: "Food shops", emoji: "🛒", color: "#2e8b57" },
   { key: "randonnees", label: "Balades & randonnées", emoji: "🥾", color: "#6b4423" },
   { key: "tables-hotes", label: "Tables d'hôtes", emoji: "🍲", color: "#b8860b" },
+  { key: "utiles", label: "Utiles", emoji: "🧰", color: "#4a6572" },
 ];
 
 export const CATEGORY_MAP = Object.fromEntries(
@@ -72,6 +73,12 @@ export const SUBCATEGORIES: Partial<Record<CategoryKey, Subcategory[]>> = {
   ],
   loisirs: [
     { key: "plages", label: "Plages", emoji: "🏖️" },
+  ],
+  utiles: [
+    { key: "cliniques-privees", label: "Cliniques privées", emoji: "🏥" },
+    { key: "postes-police", label: "Postes de police", emoji: "🚓" },
+    { key: "assurances", label: "Assurances", emoji: "🛡️" },
+    { key: "banques", label: "Banques", emoji: "🏦" },
   ],
 };
 SUBCATEGORIES["tables-hotes"] = SUBCATEGORIES.restaurants;
