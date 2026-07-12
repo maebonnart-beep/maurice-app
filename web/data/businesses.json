@@ -540,7 +540,7 @@
   {
     "id": "moris-insider",
     "name": "Moris Insider",
-    "category": "visites",
+    "category": "excursions",
     "address": "Route Royale, Grand Baie",
     "phone": "",
     "website": "https://www.morisinsider.com/",
@@ -551,7 +551,7 @@
   {
     "id": "cote-dazur-travel-tours",
     "name": "Côte d'Azur Travel & Tours",
-    "category": "visites",
+    "category": "excursions",
     "address": "Royal Road, Pereybère 30546",
     "phone": "+230 5763 8665",
     "website": "https://www.cotedazurtraveltours.com/",
@@ -562,7 +562,7 @@
   {
     "id": "taxi-mauritius-tours",
     "name": "Taxi Mauritius Tours",
-    "category": "visites",
+    "category": "excursions",
     "address": "Royal Road, Grand Baie",
     "phone": "+230 5777 0256",
     "website": "http://www.taximauritiustours.com/",
@@ -4083,5 +4083,167 @@
       "points-de-vue"
     ],
     "hours": "Sentier ouvert tous les jours, point culminant de l'île (828m)"
+  },
+  {
+    "id": "casela-nature-parks",
+    "name": "Casela Nature Parks",
+    "category": "visites",
+    "address": "Royal Road, Cascavelle, Rivière Noire",
+    "phone": "+230 401 6500",
+    "website": "http://www.caselaparks.com/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Casela%20Nature%20Parks%20Cascavelle%20Mauritius",
+    "lat": -20.2739,
+    "lng": 57.3897,
+    "themes": [
+      "parcs-animaliers",
+      "parcs-attractions"
+    ],
+    "hours": "Tous les jours 9h-18h (été), 9h-17h (hiver)",
+    "priceRange": "se-faire-plaisir"
+  },
+  {
+    "id": "la-vanille-nature-park",
+    "name": "La Vanille Nature Park",
+    "category": "visites",
+    "address": "Rivière des Anguilles (Sud)",
+    "phone": "+230 626 2503",
+    "website": "https://www.lavanillenaturepark.com/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=La%20Vanille%20Nature%20Park%20Riviere%20des%20Anguilles%20Mauritius",
+    "lat": -20.4964,
+    "lng": 57.4972,
+    "themes": [
+      "parcs-animaliers"
+    ],
+    "hours": "Tous les jours 9h30-17h",
+    "priceRange": "prix-moyen"
+  },
+  {
+    "id": "chateau-de-labourdonnais",
+    "name": "Château de Labourdonnais",
+    "category": "visites",
+    "address": "Mapou (Nord)",
+    "phone": "+230 266 9533",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Chateau%20de%20Labourdonnais%20Mapou%20Mauritius",
+    "lat": -20.1103,
+    "lng": 57.5489,
+    "themes": [
+      "musees-patrimoine",
+      "jardins"
+    ],
+    "hours": "Tous les jours 9h-17h (dernière admission 16h)",
+    "priceRange": "prix-moyen"
+  },
+  {
+    "id": "ssr-botanical-garden-pamplemousses",
+    "name": "Jardin Botanique SSR (Pamplemousses)",
+    "category": "visites",
+    "address": "Royal Road, Pamplemousses (Nord)",
+    "phone": "",
+    "website": "https://ssrbg.govmu.org/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=SSR%20Botanical%20Garden%20Pamplemousses%20Mauritius",
+    "lat": -20.1017,
+    "lng": 57.5772,
+    "themes": [
+      "jardins"
+    ],
+    "hours": "Tous les jours 8h30-17h30",
+    "priceRange": "bon-marche"
+  },
+  {
+    "id": "aventure-du-sucre",
+    "name": "L'Aventure du Sucre",
+    "category": "visites",
+    "address": "Beau Plan, Pamplemousses (Nord)",
+    "phone": "",
+    "website": "https://aventuredusucre.com/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=L'Aventure%20du%20Sucre%20Beau%20Plan%20Mauritius",
+    "lat": -20.1128,
+    "lng": 57.5636,
+    "themes": [
+      "musees-patrimoine"
+    ],
+    "hours": "Lun-Sam 10h-16h (dernière entrée 15h15)",
+    "priceRange": "prix-moyen"
+  },
+  {
+    "id": "aapravasi-ghat-port-louis",
+    "name": "Aapravasi Ghat",
+    "category": "visites",
+    "address": "Port-Louis",
+    "phone": "",
+    "website": "https://aapravasi.govmu.org/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Aapravasi%20Ghat%20Port%20Louis%20Mauritius",
+    "lat": -20.1594,
+    "lng": 57.5011,
+    "themes": [
+      "musees-patrimoine"
+    ],
+    "hours": "Lun-Ven 9h-16h, Sam 9h-12h, fermé dim",
+    "priceRange": "bon-marche"
+  },
+  {
+    "id": "domaine-les-pailles",
+    "name": "Domaine Les Pailles",
+    "category": "visites",
+    "address": "Les Pailles, Port-Louis",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Domaine%20Les%20Pailles%20Port%20Louis%20Mauritius",
+    "lat": -20.1997,
+    "lng": 57.5119,
+    "themes": [
+      "parcs-attractions",
+      "musees-patrimoine"
+    ],
+    "hours": "Tous les jours, visites guidées 9h30-16h30",
+    "priceRange": "bon-marche"
+  },
+  {
+    "id": "blue-penny-museum",
+    "name": "Blue Penny Museum",
+    "category": "visites",
+    "address": "Caudan Waterfront, Port-Louis",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Blue%20Penny%20Museum%20Caudan%20Waterfront%20Mauritius",
+    "lat": -20.16,
+    "lng": 57.4986,
+    "themes": [
+      "musees-patrimoine"
+    ],
+    "hours": "Tous les jours 10h-17h",
+    "priceRange": "bon-marche"
+  },
+  {
+    "id": "rochester-falls-souillac",
+    "name": "Rochester Falls",
+    "category": "visites",
+    "address": "Souillac (Sud)",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Rochester%20Falls%20Souillac%20Mauritius",
+    "lat": -20.5142,
+    "lng": 57.5261,
+    "themes": [
+      "sites-naturels"
+    ],
+    "priceRange": "bon-marche"
+  },
+  {
+    "id": "eureka-house-moka",
+    "name": "Eureka House (Maison Eureka)",
+    "category": "visites",
+    "address": "Moka (Centre)",
+    "phone": "",
+    "website": "https://www.eureka-house.com/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Eureka%20House%20Maison%20Eureka%20Moka%20Mauritius",
+    "lat": -20.2318,
+    "lng": 57.5372,
+    "themes": [
+      "musees-patrimoine",
+      "jardins"
+    ],
+    "priceRange": "prix-moyen"
   }
 ]

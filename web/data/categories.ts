@@ -63,6 +63,13 @@ export const SUBCATEGORIES: Partial<Record<CategoryKey, Subcategory[]>> = {
     { key: "points-de-vue", label: "Points de vue", emoji: "📸" },
     { key: "randonnee-guidee", label: "Randonnée guidée", emoji: "🧭" },
   ],
+  visites: [
+    { key: "parcs-animaliers", label: "Parcs animaliers", emoji: "🦁" },
+    { key: "parcs-attractions", label: "Parcs d'attractions", emoji: "🎢" },
+    { key: "musees-patrimoine", label: "Musées & patrimoine", emoji: "🏛️" },
+    { key: "jardins", label: "Jardins", emoji: "🌺" },
+    { key: "sites-naturels", label: "Sites naturels", emoji: "⛰️" },
+  ],
 };
 SUBCATEGORIES.hotels = SUBCATEGORIES.restaurants;
 SUBCATEGORIES["tables-hotes"] = SUBCATEGORIES.restaurants;
