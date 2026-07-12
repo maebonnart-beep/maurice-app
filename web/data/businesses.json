@@ -3179,26 +3179,32 @@
   {
     "id": "port-louis-central-market",
     "name": "Marché Central de Port-Louis",
-    "category": "shopping",
+    "category": "alimentation",
     "address": "9 Corderie Street, Port-Louis",
     "phone": "",
     "website": "",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Marche%20Central%20Port%20Louis%20Mauritius",
     "lat": -20.1614,
     "lng": 57.5011,
-    "hours": "Lun-Sam 5h30-17h30, Dim 5h30-11h30"
+    "hours": "Lun-Sam 5h30-17h30, Dim 5h30-11h30",
+    "themes": [
+      "marches"
+    ]
   },
   {
     "id": "flacq-market",
     "name": "Marché de Flacq",
-    "category": "shopping",
+    "category": "alimentation",
     "address": "Centre de Flacq (Est)",
     "phone": "",
     "website": "",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Marche%20de%20Flacq%20Central%20Flacq%20Market%20Mauritius",
     "lat": -20.1978,
     "lng": 57.7147,
-    "hours": "Lun-Sam 6h-17h, Dim et jours fériés 6h-12h — plus animé mer et dim"
+    "hours": "Lun-Sam 6h-17h, Dim et jours fériés 6h-12h — plus animé mer et dim",
+    "themes": [
+      "marches"
+    ]
   },
   {
     "id": "phoenix-mall",
@@ -4245,5 +4251,94 @@
       "jardins"
     ],
     "priceRange": "prix-moyen"
+  },
+  {
+    "id": "jumbo-phoenix",
+    "name": "Jumbo - Phoenix Mall",
+    "category": "alimentation",
+    "address": "Centre Commercial Phoenix, Vacoas-Phoenix (Centre)",
+    "phone": "",
+    "website": "https://jumbo.mu/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Jumbo%20Phoenix%20Mall%20Mauritius",
+    "lat": -20.2994,
+    "lng": 57.5006,
+    "themes": [
+      "hypermarches"
+    ],
+    "hours": "Lun-Jeu 9h-21h, Ven-Sam 9h-22h, Dim et jours fériés 9h-20h"
+  },
+  {
+    "id": "jumbo-riche-terre",
+    "name": "Jumbo - Riche Terre",
+    "category": "alimentation",
+    "address": "Centre Commercial Riche Terre, Riche Terre Road, Port-Louis",
+    "phone": "",
+    "website": "https://jumbo.mu/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Jumbo%20Riche%20Terre%20Mauritius",
+    "lat": -20.1119,
+    "lng": 57.4886,
+    "themes": [
+      "hypermarches"
+    ],
+    "hours": "Lun-Jeu 9h-21h, Ven-Sam 9h-22h, Dim et jours fériés 9h-20h"
+  },
+  {
+    "id": "london-way-mon-choisy",
+    "name": "London Way - Mon Choisy",
+    "category": "alimentation",
+    "address": "Mon Choisy (Nord)",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=London%20Way%20Mon%20Choisy%20supermarket%20Mauritius",
+    "lat": -20.0316,
+    "lng": 57.5636,
+    "themes": [
+      "supermarches"
+    ],
+    "hours": "Lun-Ven 9h-17h"
+  },
+  {
+    "id": "king-savers-mahebourg",
+    "name": "King Savers Hyper",
+    "category": "alimentation",
+    "address": "Bo'Valon Mall, Beau Vallon, Mahébourg (Sud-Est)",
+    "phone": "+230 631 0580",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=King%20Savers%20Hyper%20Mahebourg%20Mauritius",
+    "lat": -20.4081,
+    "lng": 57.7,
+    "themes": [
+      "hypermarches"
+    ]
+  },
+  {
+    "id": "winners-cascavelle-flic-en-flac",
+    "name": "Winners - Cascavelle Shopping Mall",
+    "category": "alimentation",
+    "address": "Cascavelle Shopping Mall, Flic en Flac (Ouest)",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Winners%20Cascavelle%20Shopping%20Mall%20Flic%20en%20Flac%20Mauritius",
+    "lat": -20.2739,
+    "lng": 57.3897,
+    "themes": [
+      "supermarches"
+    ],
+    "hours": "Lun-Jeu 9h30-19h, Ven-Sam 9h30-20h, Dim 9h30-15h"
+  },
+  {
+    "id": "la-kaz-a-pain-riviere-noire",
+    "name": "La Kaz à Pain",
+    "category": "alimentation",
+    "address": "Avenue des Flamingos, A3, Rivière Noire (Ouest)",
+    "phone": "+230 483 8363",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=La%20Kaz%20a%20Pain%20Riviere%20Noire%20Mauritius",
+    "lat": -20.3592,
+    "lng": 57.3714,
+    "themes": [
+      "boulangerie-patisserie"
+    ],
+    "hours": "Dim 7h-13h, Lun 8h-18h, Mar-Sam 7h-18h"
   }
 ]
