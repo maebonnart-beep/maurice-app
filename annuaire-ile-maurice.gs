@@ -27,11 +27,12 @@ const CONFIG = {
   //    Chaque combinaison région × catégorie = 1 appel par page (PAGES_PAR_REQUETE).
   //    Relancer le menu plusieurs fois (ex: un jour par tranche) ne pose aucun
   //    problème : le dédoublonnage par place_id évite de repayer les mêmes lieux.
-  MAX_REQUETES: 250,
+  //    Avec ~41 mots-clés × 7 régions = ~287 requêtes de base (jusqu'à 861 avec la
+  //    pagination), un seul clic ne suffira probablement pas à tout couvrir —
+  //    relancez le menu "Importer" plusieurs fois, sans risque de doublons/surcoût.
+  MAX_REQUETES: 400,
 
   // 3) Pagination : nb de pages par requête (1 page = 20 résultats max ; 3 = 60 max).
-  //    Avec seulement 3 catégories × 7 régions = 21 requêtes de base, on peut se
-  //    permettre 3 pages chacune (63 appels max) sans s'approcher de MAX_REQUETES.
   PAGES_PAR_REQUETE: 3,
 
   // 4) Biais géographique : cercle centré sur l'île entière (pas une restriction
@@ -59,13 +60,62 @@ const REGIONS = [
 // Catégories recherchées dans chaque région : "categorie" = une des 6 catégories
 // top-level de web/data/categories.ts (activites/food/utiles/coaching/seconde-main/
 // evenements), "theme" = une sous-catégorie (SUBCATEGORIES) de cette catégorie.
-// Limité à 3 mots-clés pour ce premier passage — décommentez/ajoutez au besoin
-// pour les prochains lots (food shops, plongée, spa, etc.), en reprenant les clés
-// exactes de web/data/categories.ts.
+// Volontairement absentes (pas de vrais "lieux" Google Places individuels) :
+// activites/plages, activites/balades-familiales, utiles/bus, utiles/tram, et
+// toute la catégorie evenements (sportifs/culturels/business — ce sont des
+// événements ponctuels, pas des établissements ; à alimenter à la main).
 const CATEGORIES = [
+  // --- Activités & loisirs ---
   { mot: 'golf',                                 categorie: 'activites', theme: 'golf' },
+  { mot: 'excursions',                           categorie: 'activites', theme: 'excursions' },
+  { mot: 'parc animalier',                       categorie: 'activites', theme: 'parcs-animaliers' },
+  { mot: 'parc aventure accrobranche',           categorie: 'activites', theme: 'parcs-aventures' },
+  { mot: 'complexe sportif',                     categorie: 'activites', theme: 'complexes-sportifs' },
+  { mot: 'sports nautiques',                     categorie: 'activites', theme: 'sports-nautiques' },
+  { mot: 'randonnée guidée',                     categorie: 'activites', theme: 'randonnee-trail' },
+  { mot: 'pêche au gros',                        categorie: 'activites', theme: 'peche' },
+  { mot: 'jardin botanique',                     categorie: 'activites', theme: 'parcs-botaniques' },
+  { mot: 'musée patrimoine',                     categorie: 'activites', theme: 'culture-patrimoine' },
+  { mot: 'centre commercial boutiques',          categorie: 'activites', theme: 'malls-shopping' },
+  { mot: 'activités enfants famille',            categorie: 'activites', theme: 'activites-enfants-famille' },
+  { mot: 'animation anniversaire enfant',        categorie: 'activites', theme: 'centres-loisirs-animations-enfants' },
+  { mot: 'spa institut de beauté',               categorie: 'activites', theme: 'spa-bien-etre' },
+
+  // --- Food ---
   { mot: 'restaurants',                          categorie: 'food',      theme: 'restaurants' },
-  { mot: 'bars',                                 categorie: 'food',      theme: 'bars' }
+  { mot: 'bars',                                 categorie: 'food',      theme: 'bars' },
+  { mot: 'café terrasse',                        categorie: 'food',      theme: 'cafes-terrasses' },
+  { mot: 'snack plage',                          categorie: 'food',      theme: 'snacks-plage' },
+  { mot: 'table d\'hôtes',                       categorie: 'food',      theme: 'tables-hotes' },
+  { mot: 'chef à domicile traiteur',             categorie: 'food',      theme: 'chefs-domicile' },
+  { mot: 'supermarché hypermarché',              categorie: 'food',      theme: 'grandes-surfaces' },
+  { mot: 'épicerie',                             categorie: 'food',      theme: 'epiceries-specialisees' },
+  { mot: 'boucherie',                            categorie: 'food',      theme: 'boucheries' },
+  { mot: 'poissonnerie',                         categorie: 'food',      theme: 'poissonneries' },
+  { mot: 'marché',                               categorie: 'food',      theme: 'marches' },
+  { mot: 'livraison repas à domicile',           categorie: 'food',      theme: 'livraisons' },
+  { mot: 'boulangerie pâtisserie',               categorie: 'food',      theme: 'boulangeries' },
+
+  // --- Utiles ---
+  { mot: 'clinique privée',                      categorie: 'utiles',    theme: 'cliniques-privees' },
+  { mot: 'poste de police',                      categorie: 'utiles',    theme: 'postes-police' },
+  { mot: 'compagnie assurance',                  categorie: 'utiles',    theme: 'assurances' },
+  { mot: 'banque',                               categorie: 'utiles',    theme: 'banques' },
+  { mot: 'dépannage plombier électricien serrurier', categorie: 'utiles', theme: 'depannages' },
+  { mot: 'taxi',                                 categorie: 'utiles',    theme: 'taxis' },
+  { mot: 'transfert aéroport',                   categorie: 'utiles',    theme: 'transferts' },
+
+  // --- Coaching ---
+  { mot: 'coach sportif',                        categorie: 'coaching',  theme: 'sports-bien-etre' },
+  { mot: 'coach business entreprise',            categorie: 'coaching',  theme: 'business' },
+  { mot: 'coach parental famille',               categorie: 'coaching',  theme: 'famille' },
+
+  // --- Seconde main ---
+  { mot: 'brocante dépôt-vente meubles',         categorie: 'seconde-main', theme: 'equipement-maison' },
+  { mot: 'voitures occasion',                    categorie: 'seconde-main', theme: 'voitures-2-roues' },
+  { mot: 'friperie vêtements occasion',          categorie: 'seconde-main', theme: 'habits-adultes' },
+  { mot: 'vêtements enfants occasion',           categorie: 'seconde-main', theme: 'habits-enfants' },
+  { mot: 'livres jeux occasion',                 categorie: 'seconde-main', theme: 'jeux-livres' }
 ];
 
 // Construit REQUETES = produit cartésien REGIONS × CATEGORIES.
