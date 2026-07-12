@@ -4340,5 +4340,76 @@
       "boulangerie-patisserie"
     ],
     "hours": "Dim 7h-13h, Lun 8h-18h, Mar-Sam 7h-18h"
+  },
+  {
+    "id": "exploration-sous-marine-flic-en-flac",
+    "name": "Exploration Sous-Marine",
+    "category": "plongee",
+    "address": "Villas Caroline Road, Flic en Flac (Ouest)",
+    "phone": "+230 5728 9127",
+    "website": "https://en.exploration-sous-marine.com/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Exploration%20Sous-Marine%20Flic%20en%20Flac%20Mauritius",
+    "lat": -20.279,
+    "lng": 57.3639,
+    "hours": "Fermé dim, Lun-Sam 8h-15h",
+    "priceRange": "prix-moyen"
+  },
+  {
+    "id": "scuba-world-diving-mahebourg",
+    "name": "Scuba World Diving Mauritius",
+    "category": "plongee",
+    "address": "Preskil Island Resort, Pointe Jérôme, Mahébourg (Sud-Est)",
+    "phone": "+230 5944 9163",
+    "website": "https://scubaworld-mauritius.com/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Scuba%20World%20Diving%20Mauritius%20Preskil%20Mahebourg",
+    "lat": -20.4133,
+    "lng": 57.7228,
+    "hours": "Tous les jours 8h-17h"
+  },
+  {
+    "id": "dive-passion-belle-mare",
+    "name": "Dive Passion Mauritius",
+    "category": "plongee",
+    "address": "The Residence Hotel, Belle Mare (Est)",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Dive%20Passion%20Mauritius%20Belle%20Mare",
+    "lat": -20.2189,
+    "lng": 57.7867
+  },
+  {
+    "id": "mauritius-dolphins-black-river",
+    "name": "Mauritius Dolphins",
+    "category": "croisieres",
+    "address": "La Jetée Road, Black River (Ouest)",
+    "phone": "",
+    "website": "https://www.mauritiusdolphins.com/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Mauritius%20Dolphins%20Black%20River",
+    "lat": -20.3592,
+    "lng": 57.3714,
+    "hours": "Départs tôt le matin, 7h-9h30"
+  },
+  {
+    "id": "mauritius-ile-aux-cerfs-catamaran-tdd",
+    "name": "Mauritius Ile aux Cerfs - Catamaran",
+    "category": "croisieres",
+    "address": "Pointe Maurice, Trou d'Eau Douce (Est)",
+    "phone": "",
+    "website": "https://www.mauritiusileauxcerfs.com/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Mauritius%20Ile%20aux%20Cerfs%20catamaran%20Trou%20d'Eau%20Douce",
+    "lat": -20.2372,
+    "lng": 57.7908,
+    "hours": "Tous les jours 8h30-16h"
+  },
+  {
+    "id": "croisieres-turquoise-mahebourg",
+    "name": "Croisières Turquoise",
+    "category": "croisieres",
+    "address": "Mahébourg (Sud-Est)",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Croisieres%20Turquoise%20Mahebourg%20Mauritius",
+    "lat": -20.4081,
+    "lng": 57.7
   }
 ]
