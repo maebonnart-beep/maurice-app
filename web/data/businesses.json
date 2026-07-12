@@ -4019,5 +4019,69 @@
     ],
     "hours": "Tous les jours 11h-16h",
     "priceRange": "prix-moyen"
+  },
+  {
+    "id": "paradis-golf-club-le-morne",
+    "name": "Paradis Golf Club - Beachcomber",
+    "category": "golf",
+    "address": "Paradis Beachcomber Golf Resort & Spa, Le Morne",
+    "phone": "+230 401 5050",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Paradis%20Golf%20Club%20Beachcomber%20Le%20Morne%20Mauritius",
+    "lat": -20.4547,
+    "lng": 57.3167,
+    "priceRange": "se-faire-plaisir"
+  },
+  {
+    "id": "dodo-club-curepipe",
+    "name": "Dodo Club",
+    "category": "golf",
+    "address": "Botanical Street, Curepipe",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Dodo%20Club%20golf%20Curepipe%20Mauritius",
+    "lat": -20.3153,
+    "lng": 57.5222,
+    "priceRange": "bon-marche"
+  },
+  {
+    "id": "maritim-golf-course-balaclava",
+    "name": "Maritim Golf Course",
+    "category": "golf",
+    "address": "Maritim Resort & Spa, Balaclava (Nord-Ouest)",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Maritim%20Golf%20Course%20Balaclava%20Mauritius",
+    "lat": -20.0517,
+    "lng": 57.5197,
+    "priceRange": "bon-marche"
+  },
+  {
+    "id": "shandrani-golf-course-blue-bay",
+    "name": "Shandrani Golf Course",
+    "category": "golf",
+    "address": "Shandrani Beachcomber, Blue Bay (Sud-Est, près de l'aéroport)",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Shandrani%20Golf%20Course%20Blue%20Bay%20Mauritius",
+    "lat": -20.4442,
+    "lng": 57.7092,
+    "priceRange": "bon-marche"
+  },
+  {
+    "id": "piton-petite-riviere-noire",
+    "name": "Piton de la Petite Rivière Noire",
+    "category": "randonnees",
+    "address": "Départ Black River Viewpoint ou Plaine Champagne, route de Chamarel",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Piton%20de%20la%20Petite%20Riviere%20Noire%20hiking%20Mauritius",
+    "lat": -20.4225,
+    "lng": 57.4394,
+    "themes": [
+      "montagnes",
+      "points-de-vue"
+    ],
+    "hours": "Sentier ouvert tous les jours, point culminant de l'île (828m)"
   }
 ]
