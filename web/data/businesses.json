@@ -3045,7 +3045,7 @@
   {
     "id": "escale-creole-moka",
     "name": "Escale Créole",
-    "category": "restaurants",
+    "category": "tables-hotes",
     "address": "B46, Bois Chéri Rd, Moka",
     "phone": "+230 433 1641",
     "website": "https://escalecreole.net/",
@@ -3663,7 +3663,7 @@
   {
     "id": "mamie-sophie-table-hote-camp-ithier",
     "name": "Mamie Sophie - Table d'Hôte",
-    "category": "restaurants",
+    "category": "tables-hotes",
     "address": "St Joseph Road, Camp Ithier",
     "phone": "+230 5787 2999",
     "website": "",
@@ -3916,6 +3916,90 @@
       "bar"
     ],
     "hours": "Dim-Jeu 15h-22h, Ven-Sam 12h-23h",
+    "priceRange": "bon-marche"
+  },
+  {
+    "id": "chez-tante-athalie-pamplemousses",
+    "name": "Chez Tante Athalie",
+    "category": "tables-hotes",
+    "address": "Mon Repos, A2, Pamplemousses",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Chez%20Tante%20Athalie%20table%20hote%20Pamplemousses%20Mauritius",
+    "lat": -20.1017,
+    "lng": 57.5772,
+    "themes": [
+      "mauricienne"
+    ],
+    "hours": "Lun-Sam 12h-15h",
+    "priceRange": "bon-marche"
+  },
+  {
+    "id": "ebony-table-dhote-vacoas",
+    "name": "Ebony Table D'Hote",
+    "category": "tables-hotes",
+    "address": "Royal Road, La Marie, Vacoas-Phoenix",
+    "phone": "+230 5773 8293",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Ebony%20Table%20D'Hote%20Vacoas%20Mauritius",
+    "lat": -20.2989,
+    "lng": 57.4772,
+    "themes": [
+      "mauricienne",
+      "indienne",
+      "europeenne",
+      "fruits-de-mer"
+    ],
+    "hours": "Tous les jours 9h-16h",
+    "priceRange": "prix-moyen"
+  },
+  {
+    "id": "la-karaye-de-val-calodyne",
+    "name": "La Karaye de Val",
+    "category": "tables-hotes",
+    "address": "Calodyne, Grand Gaube (Nord)",
+    "phone": "+230 5855 8288",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=La%20Karaye%20de%20Val%20Calodyne%20Mauritius",
+    "lat": -19.9856,
+    "lng": 57.6272,
+    "themes": [
+      "mauricienne"
+    ],
+    "hours": "Déjeuner uniquement, jusqu'à 14h",
+    "priceRange": "bon-marche"
+  },
+  {
+    "id": "lambic-port-louis",
+    "name": "Lambic Restaurant, Lounge & Beer Shop",
+    "category": "restaurants",
+    "address": "4 St. Georges Street, Port-Louis",
+    "phone": "+230 212 6011",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Lambic%20Beer%20Bar%20Port%20Louis%20Mauritius",
+    "lat": -20.1619,
+    "lng": 57.5017,
+    "themes": [
+      "bar",
+      "europeenne"
+    ],
+    "hours": "Fermé dim, Lun-Jeu 9h30-21h, Ven 9h30-22h, Sam 13h-21h",
+    "priceRange": "prix-moyen"
+  },
+  {
+    "id": "esco-burger-blue-bay",
+    "name": "Esco Burger",
+    "category": "restaurants",
+    "address": "Coastal Road, Blue Bay",
+    "phone": "+230 5803 5676",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Esco%20Burger%20Blue%20Bay%20Mauritius",
+    "lat": -20.4442,
+    "lng": 57.7092,
+    "themes": [
+      "fastfood"
+    ],
+    "hours": "Fermé jeu, ouvre à partir de 12h30",
     "priceRange": "bon-marche"
   }
 ]
