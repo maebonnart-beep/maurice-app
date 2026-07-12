@@ -1856,8 +1856,11 @@
     "lat": -20.0168865,
     "lng": 57.5783922,
     "themes": [
-      "boucheries"
-    ]
+      "boucheries",
+      "livraisons"
+    ],
+    "badge": "coup-de-coeur",
+    "promoText": "Viande très correcte, livraison à J+1 et échanges WhatsApp faciles."
   },
   {
     "id": "le-fournil-grand-baie",
@@ -3307,10 +3310,13 @@
       "restaurants",
       "mauricienne",
       "fruits-de-mer",
-      "vegetarien"
+      "vegetarien",
+      "grillades"
     ],
     "hours": "Fermé lun, Mar-Dim 9h-22h",
-    "priceRange": "prix-moyen"
+    "priceRange": "prix-moyen",
+    "badge": "coup-de-coeur",
+    "promoText": "Produits frais, assiettes copieuses, service impeccable — superbe cadre en bord de lagon."
   },
   {
     "id": "la-case-poisson-trou-eau-douce",
@@ -5042,7 +5048,7 @@
     "name": "Roti Baboolall (Farata Baboolall)",
     "category": "food",
     "address": "Solitude, Triolet (près de Grand Baie)",
-    "phone": "",
+    "phone": "+230 5766 1800",
     "website": "",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Farata%20Baboolall%20Solitude%20Triolet%20Mauritius",
     "lat": -20.0333,
@@ -5051,7 +5057,10 @@
       "snacks-plage",
       "mauricienne"
     ],
-    "priceRange": "bon-marche"
+    "priceRange": "bon-marche",
+    "badge": "coup-de-coeur",
+    "promoText": "Très bons roti à prix mini (25 Rs) — un peu d’attente aux heures de pointe.",
+    "hours": "Lun-Sam 9h30-14h30, fermé dim"
   },
   {
     "id": "menu-des-iles-flic-en-flac",
@@ -11570,7 +11579,9 @@
     "lng": 57.485178,
     "themes": [
       "parcs-aventures"
-    ]
+    ],
+    "badge": "coup-de-coeur",
+    "promoText": "Superbe parc, organisation bien rodée. Idéal en famille."
   },
   {
     "id": "23-coloured-earth-by-valle-advenature-park",
@@ -25853,20 +25864,6 @@
     ]
   },
   {
-    "id": "green-island-beach-restaurant",
-    "name": "Green Island Beach Restaurant",
-    "category": "activites",
-    "address": "B59 Coastal Road la pelouse MU, Trou d'Eau Douce 42207",
-    "phone": "+230 480 0735",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=8560998064745417506&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.2383984,
-    "lng": 57.7928153,
-    "themes": [
-      "randonnee-trail"
-    ]
-  },
-  {
     "id": "bras-d-eau-visitor-s-center",
     "name": "Bras D'Eau Visitor's Center",
     "category": "activites",
@@ -28623,5 +28620,60 @@
     "themes": [
       "cliniques-privees"
     ]
+  },
+  {
+    "id": "plantation-vanille-st-julien-hotman",
+    "name": "La Plantation de Vanille — St Julien d’Hotman",
+    "category": "activites",
+    "address": "Royal Road, St Julien d’Hotman",
+    "phone": "+230 5754 7863",
+    "website": "https://www.plantationvanille.mu/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Plantation%20Vanille%20St%20Julien%20d%27Hotman%20Mauritius",
+    "lat": -20.2290556,
+    "lng": 57.6461392,
+    "themes": [
+      "culture-patrimoine"
+    ],
+    "hours": "Lun-Ven 8h30-17h30, Sam 8h-17h, fermé dim",
+    "priceRange": "prix-moyen",
+    "badge": "coup-de-coeur",
+    "promoText": "Très jolie exploitation, visite commentée de 25 min avec dégustation. (450 Rs/pers.)"
+  },
+  {
+    "id": "segala-intercontinental-balaclava",
+    "name": "Ségala — InterContinental Balaclava",
+    "category": "food",
+    "address": "InterContinental Resort, Balaclava Fort, Coastal Road, Balaclava",
+    "phone": "+230 261 1200",
+    "website": "https://segala.restaurant.mu/en",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Segala%20InterContinental%20Balaclava%20Mauritius",
+    "lat": -20.0855,
+    "lng": 57.515,
+    "themes": [
+      "restaurants",
+      "europeenne",
+      "fruits-de-mer"
+    ],
+    "hours": "Mar-Dim 12h-15h & 18h-22h30, fermé lun",
+    "priceRange": "se-faire-plaisir",
+    "badge": "coup-de-coeur",
+    "promoText": "Belles présentations, portions correctes, excellents desserts — haut de gamme mais raisonnable."
+  },
+  {
+    "id": "quarter-deck-bar-maritim-balaclava",
+    "name": "Quarter Deck Bar — Maritim Resort & Spa",
+    "category": "food",
+    "address": "Maritim Resort & Spa, Turtle Bay, Balaclava",
+    "phone": "+230 204 1000",
+    "website": "https://www.maritim.com/en/hotels/mauritius/hotel-mauritius/restaurants-bars",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Quarter%20Deck%20Bar%20Maritim%20Balaclava%20Mauritius",
+    "lat": -20.0874333,
+    "lng": 57.5164669,
+    "themes": [
+      "bars"
+    ],
+    "priceRange": "prix-moyen",
+    "badge": "coup-de-coeur",
+    "promoText": "Cadre et ambiance exceptionnels façon vieux gréement ; cocktails à prix très raisonnable."
   }
 ]

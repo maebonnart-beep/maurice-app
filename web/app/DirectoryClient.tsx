@@ -259,6 +259,11 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                         ⭐ Partenaire
                       </span>
                     )}
+                    {b.badge === "coup-de-coeur" && (
+                      <span className="self-start inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-white text-xs font-bold bg-primary">
+                        💛 Coup de cœur
+                      </span>
+                    )}
                     {b.themes?.map((tKey) => {
                       const theme = SUBCATEGORIES[b.category]?.find((t) => t.key === tKey);
                       return theme ? (
@@ -289,6 +294,11 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                   <p className="m-0 text-muted text-[13.5px] leading-[1.5]">{b.address}</p>
                   {b.hours && (
                     <p className="m-0 text-muted text-[13px] leading-[1.4] -mt-1.5">🕒 {b.hours}</p>
+                  )}
+                  {b.promoText && (
+                    <p className="m-0 text-[13px] leading-[1.45] text-primary-deep border-l-2 border-primary pl-2.5 py-0.5">
+                      💛 <span className="italic">{b.promoText}</span>
+                    </p>
                   )}
                   <div className="mt-auto flex flex-wrap gap-2 pt-1">
                     {b.phone ? (
