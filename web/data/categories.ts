@@ -42,6 +42,7 @@ export const SUBCATEGORIES: Partial<Record<CategoryKey, Subcategory[]>> = {
     { key: "cafe", label: "Café & pâtisserie", emoji: "☕" },
     { key: "kids-friendly", label: "Kid's friendly", emoji: "🧒" },
     { key: "chefs-domicile-traiteurs", label: "Chefs à domicile & traiteurs", emoji: "👨‍🍳" },
+    { key: "snacks-plage", label: "Snacks de plage", emoji: "🥙" },
   ],
   alimentation: [
     { key: "hypermarches", label: "Hypermarchés", emoji: "🏬" },

@@ -4571,5 +4571,37 @@
     ],
     "hours": "Accès libre",
     "priceRange": "bon-marche"
+  },
+  {
+    "id": "roti-baboolall-triolet",
+    "name": "Roti Baboolall (Farata Baboolall)",
+    "category": "restaurants",
+    "address": "Solitude, Triolet (près de Grand Baie)",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Farata%20Baboolall%20Solitude%20Triolet%20Mauritius",
+    "lat": -20.0333,
+    "lng": 57.5497,
+    "themes": [
+      "snacks-plage",
+      "mauricienne"
+    ],
+    "priceRange": "bon-marche"
+  },
+  {
+    "id": "menu-des-iles-flic-en-flac",
+    "name": "Menu Des Iles",
+    "category": "restaurants",
+    "address": "Royal Road On The Beach, Flic en Flac (Ouest)",
+    "phone": "+230 5726 0453",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Menu%20Des%20Iles%20Flic%20en%20Flac%20Mauritius",
+    "lat": -20.279,
+    "lng": 57.3639,
+    "themes": [
+      "snacks-plage",
+      "mauricienne"
+    ],
+    "priceRange": "bon-marche"
   }
 ]
