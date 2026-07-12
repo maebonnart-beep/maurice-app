@@ -180,20 +180,45 @@ function importerActivites() {
   console.log('place_id déjà en base : ' + idsExistants.size);
   console.log('Nombre de requêtes région×catégorie disponibles : ' + REQUETES.length);
 
+  // Garde-fou temps : Apps Script coupe l'exécution à 6 min pour un compte Google
+  // personnel. On s'arrête proprement à 5 min pour avoir le temps d'écrire le
+  // dernier lot, plutôt que de se faire tuer en pleine boucle (et perdre les
+  // fiches pas encore écrites).
+  const DEBUT = Date.now();
+  const LIMITE_TEMPS_MS = 5 * 60 * 1000;
+
   let compteurRequetes = 0;
   let totalEcrits = 0;
-  const nouvellesLignes = [];
+  let nouvellesLignes = [];
   const dateImport = new Date();
+  let arretTemps = false;
+
+  // Écrit et vide le tampon courant — appelé régulièrement (pas seulement à la
+  // fin) pour qu'un arrêt en cours de route (timeout, plafond) ne perde jamais
+  // les fiches déjà trouvées.
+  function ecrireLignes() {
+    if (nouvellesLignes.length === 0) return;
+    feuille.getRange(feuille.getLastRow() + 1, 1, nouvellesLignes.length, ENTETES.length)
+           .setValues(nouvellesLignes);
+    console.log('💾 Point de sauvegarde : ' + nouvellesLignes.length + ' fiche(s) écrite(s).');
+    nouvellesLignes = [];
+  }
 
   for (const item of REQUETES) {
     if (compteurRequetes >= CONFIG.MAX_REQUETES) {
       console.warn('⚠️ Limite de ' + CONFIG.MAX_REQUETES + ' requêtes atteinte. Relancez le menu plus tard pour continuer (aucun doublon).');
       break;
     }
+    if (Date.now() - DEBUT > LIMITE_TEMPS_MS) {
+      console.warn('⏱️ Limite de temps de sécurité atteinte (5 min). Arrêt propre.');
+      arretTemps = true;
+      break;
+    }
 
     let pageToken = null;
     for (let page = 0; page < CONFIG.PAGES_PAR_REQUETE; page++) {
       if (compteurRequetes >= CONFIG.MAX_REQUETES) break;
+      if (Date.now() - DEBUT > LIMITE_TEMPS_MS) { arretTemps = true; break; }
 
       compteurRequetes++;
       console.log('➡️  Requête #' + compteurRequetes + ' : "' + item.query + '" (page ' + (page + 1) + ')');
@@ -218,20 +243,21 @@ function importerActivites() {
       if (!pageToken) break;
       Utilities.sleep(2000); // laisser le token de page suivante se propager
     }
+
+    if (arretTemps) break;
+
+    // Point de sauvegarde périodique (pas seulement à la toute fin).
+    if (nouvellesLignes.length >= 50) ecrireLignes();
   }
 
-  // Écriture groupée (1 seule opération = rapide)
-  if (nouvellesLignes.length > 0) {
-    feuille.getRange(feuille.getLastRow() + 1, 1, nouvellesLignes.length, ENTETES.length)
-           .setValues(nouvellesLignes);
-    console.log('💾 Écriture effectuée : ' + nouvellesLignes.length + ' ligne(s) ajoutée(s).');
-  } else {
-    console.log('💾 Aucune nouvelle fiche à écrire.');
-  }
+  ecrireLignes(); // écrit le reliquat
 
   console.log('=========================================');
   console.log('✅ Terminé.');
   console.log('   Requêtes API utilisées : ' + compteurRequetes + ' / ' + REQUETES.length + ' disponibles (plafond ' + CONFIG.MAX_REQUETES + ')');
+  if (arretTemps) {
+    console.log('   ⏱️ Arrêté par la limite de temps de sécurité — relancez le menu pour continuer (rien n\'est perdu, dédoublonnage actif).');
+  }
   console.log('   Nouvelles fiches écrites : ' + totalEcrits);
   if (compteurRequetes >= CONFIG.MAX_REQUETES && compteurRequetes < REQUETES.length) {
     console.log('   ↻ Relancez le menu pour traiter les requêtes restantes (aucun doublon créé).');
