@@ -37,7 +37,7 @@ export type Business = {
   tier?: BusinessTier;
   /** True once a business owner has claimed/verified this fiche. */
   claimed?: boolean;
-  badge?: "partenaire" | "coup-de-coeur";
+  badge?: "partenaire" | "coup-de-coeur" | "selection";
   /** Premium perk: direct WhatsApp CTA. Digits/+ only, e.g. "+230..." */
   whatsapp?: string;
   /** Premium perk: short highlighted promo line. */

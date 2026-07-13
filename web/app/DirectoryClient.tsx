@@ -264,6 +264,11 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                         💛 Coup de cœur
                       </span>
                     )}
+                    {b.badge === "selection" && (
+                      <span className="self-start inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-white text-xs font-bold bg-primary-deep">
+                        🏅 Sélection Maurice<sup>+</sup>
+                      </span>
+                    )}
                     {b.themes?.map((tKey) => {
                       const theme = SUBCATEGORIES[b.category]?.find((t) => t.key === tKey);
                       return theme ? (
