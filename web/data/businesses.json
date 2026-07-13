@@ -874,7 +874,8 @@
       "kids-friendly"
     ],
     "hours": "Fermé lun, Mar-Dim 12h-14h & 19h-22h",
-    "priceRange": "prix-moyen"
+    "priceRange": "prix-moyen",
+    "badge": "selection"
   },
   {
     "id": "le-poivrier",
@@ -3293,7 +3294,8 @@
       "mauricienne"
     ],
     "hours": "Déjeuner 11h30-15h, dîner 19h-22h30, sur réservation",
-    "priceRange": "se-faire-plaisir"
+    "priceRange": "se-faire-plaisir",
+    "badge": "selection"
   },
   {
     "id": "chez-rosy-gris-gris-souillac",
@@ -3311,7 +3313,8 @@
       "fruits-de-mer"
     ],
     "hours": "Tous les jours 12h-17h",
-    "priceRange": "bon-marche"
+    "priceRange": "bon-marche",
+    "badge": "selection"
   },
   {
     "id": "green-island-beach-restaurant-trou-eau-douce",
@@ -3440,7 +3443,8 @@
       "mauricienne"
     ],
     "hours": "Lun-Ven 12h-15h, réservation requise",
-    "priceRange": "prix-moyen"
+    "priceRange": "prix-moyen",
+    "badge": "selection"
   },
   {
     "id": "la-table-matisse-curepipe",
@@ -3766,7 +3770,8 @@
       "fastfood"
     ],
     "hours": "Fermé lun, Mar-Dim 11h-20h",
-    "priceRange": "bon-marche"
+    "priceRange": "bon-marche",
+    "badge": "selection"
   },
   {
     "id": "mafiozzo-flic-en-flac",
@@ -6285,7 +6290,8 @@
     "lng": 57.369475,
     "themes": [
       "restaurants"
-    ]
+    ],
+    "badge": "selection"
   },
   {
     "id": "twin-s-garden-ii",
@@ -6314,7 +6320,8 @@
     "lng": 57.370634,
     "themes": [
       "restaurants"
-    ]
+    ],
+    "badge": "selection"
   },
   {
     "id": "canne-a-sucre",
@@ -8402,7 +8409,8 @@
     "lng": 57.746158,
     "themes": [
       "golf"
-    ]
+    ],
+    "badge": "selection"
   },
   {
     "id": "le-swing",
@@ -9061,7 +9069,8 @@
     "lng": 57.5216269,
     "themes": [
       "restaurants"
-    ]
+    ],
+    "badge": "selection"
   },
   {
     "id": "lakaz-sandrine",
@@ -9588,7 +9597,8 @@
     "lng": 57.709485,
     "themes": [
       "restaurants"
-    ]
+    ],
+    "badge": "selection"
   },
   {
     "id": "blue-bay-snack-blue-bay-tuck-shop",
@@ -10052,7 +10062,8 @@
     "lng": 57.509447,
     "themes": [
       "restaurants"
-    ]
+    ],
+    "badge": "selection"
   },
   {
     "id": "brasserie-chic-labourdonnais-waterfront-hotel",
@@ -10136,7 +10147,8 @@
     "lng": 57.5388403,
     "themes": [
       "restaurants"
-    ]
+    ],
+    "badge": "selection"
   },
   {
     "id": "dimashk",
@@ -13430,7 +13442,8 @@
     "lng": 57.5861166,
     "themes": [
       "snacks-plage"
-    ]
+    ],
+    "badge": "selection"
   },
   {
     "id": "la-roulotte-fast-food",
@@ -13642,7 +13655,8 @@
     "lng": 57.545056,
     "themes": [
       "snacks-plage"
-    ]
+    ],
+    "badge": "selection"
   },
   {
     "id": "mont-choisy-swimming-seaside",
@@ -23353,7 +23367,8 @@
     "lng": 57.4127738,
     "themes": [
       "sports-nautiques"
-    ]
+    ],
+    "badge": "selection"
   },
   {
     "id": "heritage-le-telfair-golf-wellness-resort",
@@ -27991,7 +28006,8 @@
     "lng": 57.5408332,
     "themes": [
       "livraisons"
-    ]
+    ],
+    "badge": "selection"
   },
   {
     "id": "maharaja-mithai",
