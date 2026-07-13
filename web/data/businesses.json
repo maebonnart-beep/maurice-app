@@ -4004,7 +4004,8 @@
     "themes": [
       "restaurants",
       "mauricienne"
-    ]
+    ],
+    "badge": "selection"
   },
   {
     "id": "le-flamboyant-so-sofitel-bel-ombre",
@@ -21264,7 +21265,8 @@
     "lng": 57.3906179,
     "themes": [
       "malls-shopping"
-    ]
+    ],
+    "badge": "selection"
   },
   {
     "id": "roots-of-chamarel",
@@ -27232,7 +27234,8 @@
     "lng": 57.7892,
     "themes": [
       "spa-bien-etre"
-    ]
+    ],
+    "badge": "selection"
   },
   {
     "id": "la-koquillishe-2",
@@ -28914,5 +28917,129 @@
     ],
     "badge": "selection",
     "promoText": "Cave à vins et bar à cocktails ; langouste, thon rouge, crevettes géantes."
+  },
+  {
+    "id": "chez-marilyn",
+    "name": "Chez Marilyn",
+    "category": "food",
+    "address": "Mahébourg (Sud-Est)",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://maps.app.goo.gl/GzM5A4nE8vRTYhZ27",
+    "lat": -20.4107756,
+    "lng": 57.710556,
+    "themes": [
+      "restaurants",
+      "mauricienne"
+    ],
+    "badge": "selection"
+  },
+  {
+    "id": "naked-foods",
+    "name": "Naked Foods",
+    "category": "food",
+    "address": "Pointe d'Esny / Blue Bay",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://maps.app.goo.gl/kpRaNk1x7km8rNBo7",
+    "lat": -20.4421933,
+    "lng": 57.7204477,
+    "themes": [
+      "restaurants"
+    ],
+    "badge": "selection"
+  },
+  {
+    "id": "station-a",
+    "name": "Station A",
+    "category": "food",
+    "address": "Baie du Cap",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://maps.app.goo.gl/nmt2AprVZUEHMxE6A",
+    "lat": -20.4960821,
+    "lng": 57.3842837,
+    "themes": [
+      "restaurants"
+    ],
+    "badge": "selection"
+  },
+  {
+    "id": "roots-spirits",
+    "name": "Roots Spirits",
+    "category": "food",
+    "address": "Rivière Noire",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://maps.app.goo.gl/Nj3Bax8oJEKiuKTe8",
+    "lat": -20.3553787,
+    "lng": 57.3659143,
+    "themes": [
+      "restaurants",
+      "bars"
+    ],
+    "badge": "selection"
+  },
+  {
+    "id": "sawasdee-flic-en-flac",
+    "name": "Sawasdee",
+    "category": "food",
+    "address": "Flic en Flac",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://maps.app.goo.gl/BES17HJkjsYnSaKWA",
+    "lat": -20.2759161,
+    "lng": 57.3702497,
+    "themes": [
+      "restaurants",
+      "asiatique"
+    ],
+    "badge": "selection"
+  },
+  {
+    "id": "restaurant-sands-suites",
+    "name": "Restaurant — Sands Suites Resort & Spa",
+    "category": "food",
+    "address": "Wolmar, Flic en Flac",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://maps.app.goo.gl/DdA2Za77JFM9vmZ88",
+    "lat": -20.3164139,
+    "lng": 57.3718134,
+    "themes": [
+      "restaurants"
+    ],
+    "badge": "selection"
+  },
+  {
+    "id": "bar-gold-beach-resort",
+    "name": "Bar du Gold Beach Resort",
+    "category": "food",
+    "address": "Flic en Flac",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://maps.app.goo.gl/3nBkTuch2xe3jm13A",
+    "lat": -20.294491,
+    "lng": 57.363588,
+    "themes": [
+      "bars"
+    ],
+    "badge": "selection"
+  },
+  {
+    "id": "le-dragon-vert",
+    "name": "Le Dragon Vert",
+    "category": "food",
+    "address": "Route Saint-Jean, Quatre Bornes",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://maps.app.goo.gl/7RTUAnwCoLYtDPLf8",
+    "lat": -20.2706534,
+    "lng": 57.475033,
+    "themes": [
+      "restaurants",
+      "asiatique"
+    ],
+    "badge": "selection"
   }
 ]
