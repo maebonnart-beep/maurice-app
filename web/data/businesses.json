@@ -29041,5 +29041,70 @@
       "asiatique"
     ],
     "badge": "selection"
+  },
+  {
+    "id": "dalon-gourmet-fast-food",
+    "name": "Dalon Gourmet Fast Food",
+    "category": "food",
+    "address": "Richmond Hill Complex, Grand Baie",
+    "phone": "+230 5755 6659",
+    "website": "",
+    "googleMapsUrl": "https://maps.app.goo.gl/",
+    "lat": -20.0141974,
+    "lng": 57.5881442,
+    "themes": [
+      "restaurants",
+      "fastfood"
+    ],
+    "badge": "selection"
+  },
+  {
+    "id": "kot-marie-michelle",
+    "name": "Kot Marie Michelle",
+    "category": "food",
+    "address": "Midlands",
+    "phone": "+230 5791 3271",
+    "website": "",
+    "googleMapsUrl": "https://plus.codes/MH7F+VX",
+    "lat": -20.33531,
+    "lng": 57.57494,
+    "themes": [
+      "tables-hotes",
+      "mauricienne"
+    ],
+    "badge": "selection"
+  },
+  {
+    "id": "chez-dauphin",
+    "name": "Chez Dauphin",
+    "category": "food",
+    "address": "Royal Road, Pointe aux Piments",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://plus.codes/WGP9+5V5",
+    "lat": -20.06456,
+    "lng": 57.51969,
+    "themes": [
+      "snacks-plage",
+      "mauricienne"
+    ],
+    "badge": "selection"
+  },
+  {
+    "id": "baz-gato-dalpuri-roti",
+    "name": "Baz Gato — Dalpuri & Roti",
+    "category": "food",
+    "address": "Vacoas-Phoenix",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://plus.codes/HFRF+7JV",
+    "lat": -20.40931,
+    "lng": 57.47406,
+    "themes": [
+      "snacks-plage",
+      "mauricienne"
+    ],
+    "badge": "selection",
+    "hours": "Sam-Dim uniquement"
   }
 ]
