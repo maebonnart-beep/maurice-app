@@ -1404,7 +1404,8 @@
     "themes": [
       "bars"
     ],
-    "priceRange": "prix-moyen"
+    "priceRange": "prix-moyen",
+    "badge": "selection"
   },
   {
     "id": "baywatch-bar",
@@ -3154,7 +3155,8 @@
       "asiatique"
     ],
     "hours": "Mar-Dim 11h30-14h30 & 18h30-22h30, fermé lun",
-    "priceRange": "prix-moyen"
+    "priceRange": "prix-moyen",
+    "badge": "selection"
   },
   {
     "id": "beach-shack-flic-en-flac",
@@ -3189,7 +3191,8 @@
       "bars"
     ],
     "hours": "Ouvert midi et soir, fermé mar, jeu et dim",
-    "priceRange": "prix-moyen"
+    "priceRange": "prix-moyen",
+    "badge": "selection"
   },
   {
     "id": "il-padrino-black-river",
@@ -3366,7 +3369,8 @@
       "bars"
     ],
     "hours": "Tous les jours 10h-23h",
-    "priceRange": "prix-moyen"
+    "priceRange": "prix-moyen",
+    "badge": "selection"
   },
   {
     "id": "le-capitaine-mahebourg",
@@ -3672,7 +3676,8 @@
       "fruits-de-mer",
       "mauricienne"
     ],
-    "priceRange": "prix-moyen"
+    "priceRange": "prix-moyen",
+    "badge": "selection"
   },
   {
     "id": "le-bougainville-flic-en-flac",
@@ -3691,7 +3696,8 @@
       "italien"
     ],
     "hours": "Fermé mer, Lun-Mar + Jeu-Dim 10h-22h30",
-    "priceRange": "bon-marche"
+    "priceRange": "bon-marche",
+    "badge": "selection"
   },
   {
     "id": "zub-express-flic-en-flac",
@@ -3708,7 +3714,8 @@
       "indienne",
       "asiatique"
     ],
-    "priceRange": "bon-marche"
+    "priceRange": "bon-marche",
+    "badge": "selection"
   },
   {
     "id": "salt-lemon-flic-en-flac",
@@ -3825,7 +3832,8 @@
       "indienne"
     ],
     "hours": "Tous les jours 11h30-14h & 18h-21h30",
-    "priceRange": "prix-moyen"
+    "priceRange": "prix-moyen",
+    "badge": "selection"
   },
   {
     "id": "ousaporn-thai-black-river",
@@ -3842,7 +3850,8 @@
       "asiatique"
     ],
     "hours": "Fermé lun, Mar-Dim 11h30-14h30 & 17h30-21h30",
-    "priceRange": "prix-moyen"
+    "priceRange": "prix-moyen",
+    "badge": "selection"
   },
   {
     "id": "smasher-tamarin",
@@ -4066,7 +4075,8 @@
       "grillades"
     ],
     "hours": "Tous les jours 9h30-22h30",
-    "priceRange": "prix-moyen"
+    "priceRange": "prix-moyen",
+    "badge": "selection"
   },
   {
     "id": "hasu-long-beach-belle-mare",
@@ -4151,7 +4161,8 @@
       "mauricienne"
     ],
     "hours": "Fermé mar, Mer-Lun 10h30-15h & 18h-22h",
-    "priceRange": "prix-moyen"
+    "priceRange": "prix-moyen",
+    "badge": "selection"
   },
   {
     "id": "cafe-des-arts-trou-eau-douce",
@@ -4168,7 +4179,8 @@
       "europeenne"
     ],
     "hours": "Fermé dim, dîner sur réservation 19h-22h30",
-    "priceRange": "se-faire-plaisir"
+    "priceRange": "se-faire-plaisir",
+    "badge": "selection"
   },
   {
     "id": "cucina-italiana-trou-eau-douce",
@@ -4270,7 +4282,8 @@
       "asiatique"
     ],
     "hours": "Fermé mar, Lun + Mer-Dim 10h-15h & 18h-22h",
-    "priceRange": "bon-marche"
+    "priceRange": "bon-marche",
+    "badge": "selection"
   },
   {
     "id": "dragon-de-chine-mahebourg",
@@ -4463,7 +4476,8 @@
       "fastfood"
     ],
     "hours": "Fermé jeu, ouvre à partir de 12h30",
-    "priceRange": "bon-marche"
+    "priceRange": "bon-marche",
+    "badge": "selection"
   },
   {
     "id": "les-palmiers-chez-dev-chamarel",
@@ -4808,7 +4822,8 @@
     "themes": [
       "boulangeries"
     ],
-    "hours": "Dim 7h-13h, Lun 8h-18h, Mar-Sam 7h-18h"
+    "hours": "Dim 7h-13h, Lun 8h-18h, Mar-Sam 7h-18h",
+    "badge": "selection"
   },
   {
     "id": "exploration-sous-marine-flic-en-flac",
@@ -5915,7 +5930,8 @@
     "lng": 57.3696168,
     "themes": [
       "restaurants"
-    ]
+    ],
+    "badge": "selection"
   },
   {
     "id": "hich-lounge",
@@ -6055,7 +6071,8 @@
     "lng": 57.3708327,
     "themes": [
       "restaurants"
-    ]
+    ],
+    "badge": "selection"
   },
   {
     "id": "mare-mare-beach-restaurant",
@@ -6195,7 +6212,8 @@
     "lng": 57.3768523,
     "themes": [
       "restaurants"
-    ]
+    ],
+    "badge": "selection"
   },
   {
     "id": "maravann-burgers",
@@ -6223,7 +6241,8 @@
     "lng": 57.3641009,
     "themes": [
       "restaurants"
-    ]
+    ],
+    "badge": "selection"
   },
   {
     "id": "coquillages-restaurant-bar",
@@ -6279,7 +6298,8 @@
     "lng": 57.3646416,
     "themes": [
       "restaurants"
-    ]
+    ],
+    "badge": "selection"
   },
   {
     "id": "mama-helene-so-lakwizine-table-d-hotes-cuisine-locale-creole-chez-l-habitant",
@@ -6307,7 +6327,8 @@
     "lng": 57.3705404,
     "themes": [
       "restaurants"
-    ]
+    ],
+    "badge": "selection"
   },
   {
     "id": "cilantro",
@@ -6363,7 +6384,8 @@
     "lng": 57.3802421,
     "themes": [
       "restaurants"
-    ]
+    ],
+    "badge": "selection"
   },
   {
     "id": "the-chaser-mauritian-bistro",
@@ -6447,7 +6469,8 @@
     "lng": 57.3680835,
     "themes": [
       "restaurants"
-    ]
+    ],
+    "badge": "selection"
   },
   {
     "id": "frenchie-cafe",
@@ -6503,7 +6526,8 @@
     "lng": 57.369279,
     "themes": [
       "restaurants"
-    ]
+    ],
+    "badge": "selection"
   },
   {
     "id": "oasis-beach-bar",
@@ -6545,7 +6569,8 @@
     "lng": 57.3651505,
     "themes": [
       "restaurants"
-    ]
+    ],
+    "badge": "selection"
   },
   {
     "id": "le-lounge-9381",
@@ -6643,7 +6668,8 @@
     "lng": 57.3663159,
     "themes": [
       "restaurants"
-    ]
+    ],
+    "badge": "selection"
   },
   {
     "id": "antidote",
@@ -6671,7 +6697,8 @@
     "lng": 57.3645046,
     "themes": [
       "restaurants"
-    ]
+    ],
+    "badge": "selection"
   },
   {
     "id": "lokal-adventure",
@@ -7007,7 +7034,8 @@
     "lng": 57.4176226,
     "themes": [
       "golf"
-    ]
+    ],
+    "badge": "selection"
   },
   {
     "id": "le-chamarel-restaurant",
@@ -7021,7 +7049,8 @@
     "lng": 57.3859837,
     "themes": [
       "restaurants"
-    ]
+    ],
+    "badge": "selection"
   },
   {
     "id": "restaurant-les-palmiers-chez-dev",
@@ -7035,7 +7064,8 @@
     "lng": 57.3917824,
     "themes": [
       "restaurants"
-    ]
+    ],
+    "badge": "selection"
   },
   {
     "id": "flamboyant-chamarel",
@@ -7175,7 +7205,8 @@
     "lng": 57.3966003,
     "themes": [
       "restaurants"
-    ]
+    ],
+    "badge": "selection"
   },
   {
     "id": "la-citronelle",
@@ -7931,7 +7962,8 @@
     "lng": 57.522337,
     "themes": [
       "restaurants"
-    ]
+    ],
+    "badge": "selection"
   },
   {
     "id": "saveurs-otentik-restaurant",
@@ -8199,7 +8231,8 @@
     "lng": 57.7181144,
     "themes": [
       "restaurants"
-    ]
+    ],
+    "badge": "selection"
   },
   {
     "id": "ramdonee-store-bar",
@@ -8241,7 +8274,8 @@
     "lng": 57.7098741,
     "themes": [
       "restaurants"
-    ]
+    ],
+    "badge": "selection"
   },
   {
     "id": "legend-golf-course",
@@ -8451,7 +8485,8 @@
     "lng": 57.7757772,
     "themes": [
       "restaurants"
-    ]
+    ],
+    "badge": "selection"
   },
   {
     "id": "beach-rouge-lux-belle-mare",
@@ -9265,7 +9300,8 @@
     "lng": 57.7841662,
     "themes": [
       "restaurants"
-    ]
+    ],
+    "badge": "selection"
   },
   {
     "id": "quatre-cocos-beach",
@@ -9321,7 +9357,8 @@
     "lng": 57.7011188,
     "themes": [
       "restaurants"
-    ]
+    ],
+    "badge": "selection"
   },
   {
     "id": "le-bistrot-d-edwige",
@@ -9335,7 +9372,8 @@
     "lng": 57.7111122,
     "themes": [
       "restaurants"
-    ]
+    ],
+    "badge": "selection"
   },
   {
     "id": "taste-of-freedom",
@@ -9349,7 +9387,8 @@
     "lng": 57.712124,
     "themes": [
       "restaurants"
-    ]
+    ],
+    "badge": "selection"
   },
   {
     "id": "la-vielle-rouge",
@@ -9377,7 +9416,8 @@
     "lng": 57.7074128,
     "themes": [
       "restaurants"
-    ]
+    ],
+    "badge": "selection"
   },
   {
     "id": "1810-hotel-restaurant",
@@ -9489,7 +9529,8 @@
     "lng": 57.7073763,
     "themes": [
       "restaurants"
-    ]
+    ],
+    "badge": "selection"
   },
   {
     "id": "le-phare-restaurant",
@@ -9517,7 +9558,8 @@
     "lng": 57.6979419,
     "themes": [
       "restaurants"
-    ]
+    ],
+    "badge": "selection"
   },
   {
     "id": "sea-fire-salt-restaurant",
@@ -9573,7 +9615,8 @@
     "lng": 57.7080926,
     "themes": [
       "restaurants"
-    ]
+    ],
+    "badge": "selection"
   },
   {
     "id": "saveur-kreol",
@@ -9643,7 +9686,8 @@
     "lng": 57.7224388,
     "themes": [
       "restaurants"
-    ]
+    ],
+    "badge": "selection"
   },
   {
     "id": "rum-library",
@@ -12726,7 +12770,8 @@
     "lng": 57.5772363,
     "themes": [
       "centres-loisirs-animations-enfants"
-    ]
+    ],
+    "badge": "selection"
   },
   {
     "id": "ti-vegas-casino",
@@ -17786,7 +17831,8 @@
     "lng": 57.3802421,
     "themes": [
       "spa-bien-etre"
-    ]
+    ],
+    "badge": "selection"
   },
   {
     "id": "rakesh-hair-styling",
@@ -18066,7 +18112,8 @@
     "lng": 57.3663729,
     "themes": [
       "snacks-plage"
-    ]
+    ],
+    "badge": "selection"
   },
   {
     "id": "beach-house-grill",
@@ -18542,7 +18589,8 @@
     "lng": 57.3648008,
     "themes": [
       "epiceries-specialisees"
-    ]
+    ],
+    "badge": "selection"
   },
   {
     "id": "la-vie-claire",
@@ -21328,7 +21376,8 @@
     "lng": 57.3917824,
     "themes": [
       "malls-shopping"
-    ]
+    ],
+    "badge": "selection"
   },
   {
     "id": "intermart-so-flo",
@@ -23918,7 +23967,8 @@
     "lng": 57.5635449,
     "themes": [
       "restaurants"
-    ]
+    ],
+    "badge": "selection"
   },
   {
     "id": "maconde-viewpoint",
@@ -28750,14 +28800,14 @@
   },
   {
     "id": "sakauye-moris",
-    "name": "Sakauye Moris",
+    "name": "Sakouye Moris",
     "category": "food",
     "address": "Pereybère",
     "phone": "",
     "website": "",
-    "googleMapsUrl": "https://maps.app.goo.gl/CVvPwywnzvKCSSxC9",
-    "lat": -19.994367,
-    "lng": 57.591638,
+    "googleMapsUrl": "https://maps.app.goo.gl/ysunM2f7pMRrPtbw7",
+    "lat": -19.9945486,
+    "lng": 57.5913157,
     "themes": [
       "restaurants",
       "mauricienne"
@@ -28847,5 +28897,22 @@
       "restaurants"
     ],
     "badge": "selection"
+  },
+  {
+    "id": "amigo-restaurant-cap-malheureux",
+    "name": "Amigo Restaurant",
+    "category": "food",
+    "address": "Cap Malheureux",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://maps.app.goo.gl/TrbNuD4ZqLocJtEi6",
+    "lat": -19.9934647,
+    "lng": 57.6139928,
+    "themes": [
+      "restaurants",
+      "fruits-de-mer"
+    ],
+    "badge": "selection",
+    "promoText": "Cave à vins et bar à cocktails ; langouste, thon rouge, crevettes géantes."
   }
 ]
