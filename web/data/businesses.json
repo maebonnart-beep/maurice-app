@@ -766,7 +766,8 @@
       "fruits-de-mer"
     ],
     "hours": "Lun-Mar 18h30-22h, Jeu-Dim 12h-14h & 18h30-22h, fermé mer",
-    "priceRange": "prix-moyen"
+    "priceRange": "prix-moyen",
+    "badge": "selection"
   },
   {
     "id": "la-rougaille-creole",
@@ -784,7 +785,8 @@
       "fruits-de-mer"
     ],
     "hours": "Tous les jours 11h-22h",
-    "priceRange": "prix-moyen"
+    "priceRange": "prix-moyen",
+    "badge": "selection"
   },
   {
     "id": "casa-verde",
@@ -852,7 +854,8 @@
       "fruits-de-mer"
     ],
     "hours": "Lun 10h30-14h & 17h30-22h, fermé mar, Mer-Dim 10h30-14h & 17h30-22h",
-    "priceRange": "bon-marche"
+    "priceRange": "bon-marche",
+    "badge": "selection"
   },
   {
     "id": "sauterelle-restaurant",
@@ -890,7 +893,9 @@
       "fruits-de-mer",
       "grillades"
     ],
-    "hours": "Mar-Sam 12h-15h, Mer-Sam 19h-22h, fermé dim et lun"
+    "hours": "Mar-Sam 12h-15h, Mer-Sam 19h-22h, fermé dim et lun",
+    "badge": "coup-de-coeur",
+    "promoText": "Cadre très plaisant sous les arbres, cuisine ouverte au feu de bois. Très bons plats."
   },
   {
     "id": "cocoloko",
@@ -907,7 +912,8 @@
       "bars"
     ],
     "hours": "Tous les jours 10h-23h",
-    "priceRange": "bon-marche"
+    "priceRange": "bon-marche",
+    "badge": "selection"
   },
   {
     "id": "da-terra-restaurant-cafe",
@@ -1042,7 +1048,8 @@
       "bars"
     ],
     "hours": "Lun, Mer-Jeu 11h-00h, Ven-Dim 11h-1h, fermé mar",
-    "priceRange": "prix-moyen"
+    "priceRange": "prix-moyen",
+    "badge": "selection"
   },
   {
     "id": "ai-kisu-lux-grand-baie",
@@ -1095,7 +1102,8 @@
       "bars"
     ],
     "hours": "Fermé lun, Mar-Dim 11h-00h",
-    "priceRange": "prix-moyen"
+    "priceRange": "prix-moyen",
+    "badge": "selection"
   },
   {
     "id": "beach-rouge-lux-grand-baie",
@@ -1193,7 +1201,9 @@
       "restaurants",
       "asiatique"
     ],
-    "priceRange": "se-faire-plaisir"
+    "priceRange": "se-faire-plaisir",
+    "badge": "selection",
+    "promoText": "Très joli cadre, assiettes copieuses et fraîches. Belle carte de tapas."
   },
   {
     "id": "blue-lagoon-cafe",
@@ -1330,7 +1340,8 @@
       "restaurants",
       "mauricienne",
       "fruits-de-mer"
-    ]
+    ],
+    "badge": "selection"
   },
   {
     "id": "les-canisses-resto-plage",
@@ -1348,7 +1359,8 @@
       "fruits-de-mer"
     ],
     "hours": "Lun-Jeu et Dim 12h-22h, Ven-Sam 12h-22h30",
-    "priceRange": "se-faire-plaisir"
+    "priceRange": "se-faire-plaisir",
+    "badge": "selection"
   },
   {
     "id": "la-raie-manta",
@@ -1875,7 +1887,9 @@
     "themes": [
       "boulangeries"
     ],
-    "hours": "Tous les jours à partir de 7h"
+    "hours": "Tous les jours à partir de 7h",
+    "badge": "selection",
+    "promoText": "Boulangerie à la française."
   },
   {
     "id": "pains-et-moulins-grand-baie",
@@ -4376,7 +4390,9 @@
       "mauricienne"
     ],
     "hours": "Lun-Sam 12h-15h",
-    "priceRange": "bon-marche"
+    "priceRange": "bon-marche",
+    "badge": "selection",
+    "promoText": "Uniquement le midi ; cuisine locale, terrasse extérieure, sorbets maison."
   },
   {
     "id": "ebony-table-dhote-vacoas",
@@ -5391,7 +5407,8 @@
     "lng": 57.5840102,
     "themes": [
       "restaurants"
-    ]
+    ],
+    "badge": "selection"
   },
   {
     "id": "le-5-terre-restaurant-et-pinsa",
@@ -5475,7 +5492,8 @@
     "lng": 57.5703797,
     "themes": [
       "restaurants"
-    ]
+    ],
+    "badge": "selection"
   },
   {
     "id": "the-beach-kitchen-restaurant",
@@ -5517,7 +5535,8 @@
     "lng": 57.592675,
     "themes": [
       "restaurants"
-    ]
+    ],
+    "badge": "selection"
   },
   {
     "id": "the-garden-grill",
@@ -5713,7 +5732,8 @@
     "lng": 57.5848298,
     "themes": [
       "restaurants"
-    ]
+    ],
+    "badge": "selection"
   },
   {
     "id": "esprit-libre-hotel-grand-baie",
@@ -8023,7 +8043,9 @@
     "lng": 57.5742361,
     "themes": [
       "restaurants"
-    ]
+    ],
+    "badge": "selection",
+    "promoText": "Restaurant du site de L'Aventure du Sucre — cadre bucolique en véranda, produits frais maison."
   },
   {
     "id": "les-robinsons-restaurant-bar",
@@ -9017,7 +9039,9 @@
     "lng": 57.6227656,
     "themes": [
       "restaurants"
-    ]
+    ],
+    "badge": "selection",
+    "promoText": "Poisson frais grillé au BBQ."
   },
   {
     "id": "lolita-marie-rhum-arrange",
@@ -12085,7 +12109,8 @@
     "lng": 57.5831259,
     "themes": [
       "randonnee-trail"
-    ]
+    ],
+    "badge": "selection"
   },
   {
     "id": "kidan-tours",
@@ -13387,7 +13412,8 @@
     "lng": 57.5762035,
     "themes": [
       "snacks-plage"
-    ]
+    ],
+    "badge": "selection"
   },
   {
     "id": "manisha-repas-local",
@@ -13443,7 +13469,8 @@
     "lng": 57.5765149,
     "themes": [
       "snacks-plage"
-    ]
+    ],
+    "badge": "selection"
   },
   {
     "id": "sarbon-burger-grill",
@@ -13933,7 +13960,9 @@
     "lng": 57.5905807,
     "themes": [
       "tables-hotes"
-    ]
+    ],
+    "badge": "coup-de-coeur",
+    "promoText": "Excellentes crêpes, produits locaux et régionaux. Super accueil, service aux petits soins."
   },
   {
     "id": "sannyasa-wellness",
@@ -14003,7 +14032,9 @@
     "lng": 57.6263627,
     "themes": [
       "tables-hotes"
-    ]
+    ],
+    "badge": "selection",
+    "promoText": "Cuisine végétarienne."
   },
   {
     "id": "hibiscus-boutique-hotel",
@@ -26701,7 +26732,9 @@
     "lng": 57.5440837,
     "themes": [
       "centres-loisirs-animations-enfants"
-    ]
+    ],
+    "badge": "selection",
+    "promoText": "Cuisine méditerranéenne et créole."
   },
   {
     "id": "le-jadis-beach-resort-wellness-mauritius",
@@ -28696,5 +28729,123 @@
     "takeaway": true,
     "badge": "coup-de-coeur",
     "promoText": "Mine frit sino-mauricien à moins de 3€ ; service très bien organisé malgré l’affluence du midi."
+  },
+  {
+    "id": "chez-stephanie-mont-choisy",
+    "name": "Chez Stéphanie",
+    "category": "food",
+    "address": "Mont Choisy",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://maps.app.goo.gl/vFSHAfRaqhs9eLnp8",
+    "lat": -20.013331,
+    "lng": 57.557361,
+    "themes": [
+      "restaurants",
+      "mauricienne"
+    ],
+    "badge": "selection",
+    "takeaway": true,
+    "promoText": "Salade tropicale, sandwichs et plats créoles."
+  },
+  {
+    "id": "sakauye-moris",
+    "name": "Sakauye Moris",
+    "category": "food",
+    "address": "Pereybère",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://maps.app.goo.gl/CVvPwywnzvKCSSxC9",
+    "lat": -19.994367,
+    "lng": 57.591638,
+    "themes": [
+      "restaurants",
+      "mauricienne"
+    ],
+    "badge": "selection",
+    "takeaway": true,
+    "promoText": "Boulettes, daubes — bonne adresse locale."
+  },
+  {
+    "id": "restaurant-malizo",
+    "name": "Restaurant Malizo",
+    "category": "food",
+    "address": "Trou aux Biches",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://maps.app.goo.gl/FTzmqjNA5NYYzyhX8",
+    "lat": -20.041506,
+    "lng": 57.541161,
+    "themes": [
+      "restaurants",
+      "italien"
+    ],
+    "badge": "selection",
+    "promoText": "Cuisine italienne, et crêpes au goûter."
+  },
+  {
+    "id": "la-charrette-dor",
+    "name": "La Charrette d'Or",
+    "category": "food",
+    "address": "Pointe aux Piments",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://maps.app.goo.gl/iwgMsQjWNhXHc9tP8",
+    "lat": -20.045698,
+    "lng": 57.533453,
+    "themes": [
+      "restaurants",
+      "italien",
+      "mauricienne"
+    ],
+    "badge": "selection",
+    "promoText": "Cuisine mixte, italienne et créole."
+  },
+  {
+    "id": "mystik-lifestyle-bar",
+    "name": "Mystik Lifestyle — Bar & Restaurant",
+    "category": "food",
+    "address": "Hôtel Mystik Lifestyle, Mont Choisy",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://maps.app.goo.gl/KJ9ZNH3koVcMGRwk9",
+    "lat": -20.020962,
+    "lng": 57.5538971,
+    "themes": [
+      "bars"
+    ],
+    "badge": "selection",
+    "promoText": "Bar en terrasse au 2ᵉ étage."
+  },
+  {
+    "id": "helenas-cafe",
+    "name": "Helena's Café",
+    "category": "food",
+    "address": "Cap Malheureux",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://maps.app.goo.gl/1E5w8xezEvFTEL747",
+    "lat": -19.9867458,
+    "lng": 57.6228135,
+    "themes": [
+      "cafes-terrasses"
+    ],
+    "badge": "selection",
+    "takeaway": true
+  },
+  {
+    "id": "restaurant-kanaco",
+    "name": "Restaurant Kanaco",
+    "category": "food",
+    "address": "Cap Malheureux",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://maps.app.goo.gl/87DkbKi6curz9DPC9",
+    "lat": -19.9848104,
+    "lng": 57.6129935,
+    "themes": [
+      "restaurants"
+    ],
+    "badge": "selection"
   }
 ]

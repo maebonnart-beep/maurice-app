@@ -302,7 +302,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                   )}
                   {b.promoText && (
                     <p className="m-0 text-[13px] leading-[1.45] text-primary-deep border-l-2 border-primary pl-2.5 py-0.5">
-                      💛 <span className="italic">{b.promoText}</span>
+                      💬 <span className="italic">{b.promoText}</span>
                     </p>
                   )}
                   <div className="mt-auto flex flex-wrap gap-2 pt-1">
