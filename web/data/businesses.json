@@ -29139,5 +29139,20 @@
     ],
     "priceRange": "se-faire-plaisir",
     "badge": "selection"
+  },
+  {
+    "id": "flowers-of-paradise-mont-choisy",
+    "name": "Flowers of Paradise",
+    "category": "food",
+    "address": "Beach Lane, Route côtière, Mont Choisy 30525",
+    "phone": "+230 5934 5320",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Flowers%20of%20Paradise%20Mont%20Choisy%20Mauritius",
+    "lat": -20.013,
+    "lng": 57.5565,
+    "themes": [
+      "restaurants"
+    ],
+    "badge": "selection"
   }
 ]
