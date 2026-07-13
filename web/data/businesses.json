@@ -28675,5 +28675,26 @@
     "priceRange": "prix-moyen",
     "badge": "coup-de-coeur",
     "promoText": "Cadre et ambiance exceptionnels façon vieux gréement ; cocktails à prix très raisonnable."
+  },
+  {
+    "id": "mine-saint-pierre-mangouste",
+    "name": "Mine Saint Pierre (Mangouste)",
+    "category": "food",
+    "address": "L'Agrément Road, St Pierre",
+    "phone": "+230 433 4325",
+    "website": "https://www.facebook.com/minestpierremangouste/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Mine%20St%20Pierre%20Mangouste%20Saint%20Pierre%20Mauritius",
+    "lat": -20.220984,
+    "lng": 57.534458,
+    "themes": [
+      "restaurants",
+      "asiatique",
+      "mauricienne"
+    ],
+    "hours": "Lun-Mar & Jeu-Sam 11h-16h, fermé mer et dim",
+    "priceRange": "bon-marche",
+    "takeaway": true,
+    "badge": "coup-de-coeur",
+    "promoText": "Mine frit sino-mauricien à moins de 3€ ; service très bien organisé malgré l’affluence du midi."
   }
 ]
