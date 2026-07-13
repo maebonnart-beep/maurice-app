@@ -29122,5 +29122,22 @@
     ],
     "badge": "selection",
     "hours": "Sam-Dim uniquement"
+  },
+  {
+    "id": "la-clef-des-champs",
+    "name": "La Clef des Champs",
+    "category": "food",
+    "address": "Avenue Queen Mary, Floréal",
+    "phone": "+230 686 3458",
+    "website": "",
+    "googleMapsUrl": "https://maps.app.goo.gl/tQHD5r3rCiyd5itd6",
+    "lat": -20.3109637,
+    "lng": 57.5044125,
+    "themes": [
+      "restaurants",
+      "mauricienne"
+    ],
+    "priceRange": "se-faire-plaisir",
+    "badge": "selection"
   }
 ]
