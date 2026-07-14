@@ -356,6 +356,15 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                         📞 Sans tél.
                       </span>
                     )}
+                    {b.email && (
+                      <a
+                        href={`mailto:${b.email}`}
+                        onClick={(e) => e.stopPropagation()}
+                        className="inline-flex items-center gap-1.5 px-3 py-2 rounded-[10px] text-[13px] font-semibold no-underline bg-surface-2 border border-border text-ink hover:border-primary hover:text-primary-deep"
+                      >
+                        ✉️ Email
+                      </a>
+                    )}
                     {b.whatsapp && (
                       <a
                         href={whatsappLink(b.whatsapp)}

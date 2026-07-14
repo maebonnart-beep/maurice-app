@@ -23,6 +23,7 @@ export type Business = {
   category: CategoryKey;
   address: string;
   phone: string;
+  email?: string;
   website: string;
   googleMapsUrl: string;
   lat: number;

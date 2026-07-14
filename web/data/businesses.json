@@ -29168,6 +29168,23 @@
     "themes": [
       "cours-de-cuisine",
       "culture-patrimoine"
+    ],
+    "hours": "Tous les jours 9h-17h"
+  },
+  {
+    "id": "chef-alessio-cours-cuisine",
+    "name": "Chef Alessio — Cours de cuisine",
+    "category": "activites",
+    "address": "Grand Baie (à domicile, sur réservation)",
+    "phone": "+230 5538 2315",
+    "email": "alessio@ajustconseil.com",
+    "whatsapp": "+230 5538 2315",
+    "website": "https://www.mychefalessio.com/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Chef%20Alessio%20Grand%20Baie%20Mauritius",
+    "lat": -20.0089,
+    "lng": 57.5817,
+    "themes": [
+      "cours-de-cuisine"
     ]
   }
 ]
