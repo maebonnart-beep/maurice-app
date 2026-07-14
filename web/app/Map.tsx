@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import { MapContainer, TileLayer, CircleMarker, Popup, useMap } from "react-leaflet";
+import { MapContainer, TileLayer, CircleMarker, Popup, useMap, useMapEvents } from "react-leaflet";
 import type { CircleMarker as LeafletCircleMarker } from "leaflet";
 import type { Business } from "@/lib/types";
 import { CATEGORY_MAP } from "@/data/categories";
@@ -15,6 +15,34 @@ function tel(phone: string) {
 
 function webLabel(url: string) {
   return url.replace(/^https?:\/\//, "").replace(/^www\./, "").replace(/\/.*$/, "");
+}
+
+export type MapBounds = { north: number; south: number; east: number; west: number };
+
+function BoundsReporter({
+  onBoundsChange,
+}: {
+  onBoundsChange?: (b: MapBounds) => void;
+}) {
+  const map = useMapEvents({
+    moveend: () => emit(),
+    zoomend: () => emit(),
+  });
+  function emit() {
+    if (!onBoundsChange) return;
+    const b = map.getBounds();
+    onBoundsChange({
+      north: b.getNorth(),
+      south: b.getSouth(),
+      east: b.getEast(),
+      west: b.getWest(),
+    });
+  }
+  useEffect(() => {
+    emit();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+  return null;
 }
 
 function MapController({
@@ -52,10 +80,12 @@ export default function Map({
   businesses,
   selectedId,
   onSelect,
+  onBoundsChange,
 }: {
   businesses: Business[];
   selectedId: string | null;
   onSelect: (id: string) => void;
+  onBoundsChange?: (b: MapBounds) => void;
 }) {
   const markersRef = useRef<Record<string, LeafletCircleMarker>>({});
 
@@ -71,6 +101,7 @@ export default function Map({
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
       />
       <MapController businesses={businesses} selectedId={selectedId} markersRef={markersRef} />
+      <BoundsReporter onBoundsChange={onBoundsChange} />
       {businesses.map((b) => {
         const cat = CATEGORY_MAP[b.category];
         return (

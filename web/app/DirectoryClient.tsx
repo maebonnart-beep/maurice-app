@@ -1,8 +1,9 @@
 "use client";
 
-import { useMemo, useRef, useState } from "react";
+import { useCallback, useMemo, useRef, useState } from "react";
 import dynamic from "next/dynamic";
 import type { Business } from "@/lib/types";
+import type { MapBounds } from "./Map";
 import { CATEGORIES, CATEGORY_MAP, SUBCATEGORIES, PRICE_RANGES } from "@/data/categories";
 import { trackEvent } from "@/lib/track";
 
@@ -34,7 +35,11 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
   const [active, setActive] = useState<string>("all");
   const [activeThemes, setActiveThemes] = useState<Set<string>>(new Set());
   const [selectedId, setSelectedId] = useState<string | null>(null);
+  const [filterByMap, setFilterByMap] = useState(true);
+  const [mapBounds, setMapBounds] = useState<MapBounds | null>(null);
   const cardRefs = useRef<Record<string, HTMLElement | null>>({});
+
+  const onBoundsChange = useCallback((b: MapBounds) => setMapBounds(b), []);
 
   const subcategories = SUBCATEGORIES[active as keyof typeof SUBCATEGORIES];
 
@@ -95,6 +100,18 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
       })
       .sort((a, b) => (b.tier === "premium" ? 1 : 0) - (a.tier === "premium" ? 1 : 0));
   }, [businesses, query, active, activeThemes]);
+
+  // Cartes affichées : limitées à la zone visible de la carte si le filtre est actif.
+  const visibleRows = useMemo(() => {
+    if (!filterByMap || !mapBounds) return rows;
+    return rows.filter(
+      (b) =>
+        b.lat <= mapBounds.north &&
+        b.lat >= mapBounds.south &&
+        b.lng <= mapBounds.east &&
+        b.lng >= mapBounds.west
+    );
+  }, [rows, filterByMap, mapBounds]);
 
   function selectFromMap(id: string) {
     setSelectedId(id);
@@ -210,9 +227,23 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                 Positions GPS réelles · cliquez un point pour le retrouver dans la liste
               </span>
             </div>
+            <label className="inline-flex items-center gap-2 text-[13px] font-medium text-ink cursor-pointer select-none">
+              <input
+                type="checkbox"
+                checked={filterByMap}
+                onChange={(e) => setFilterByMap(e.target.checked)}
+                className="w-4 h-4 accent-[var(--primary)]"
+              />
+              N&apos;afficher que la zone de la carte
+            </label>
           </div>
           <div className="h-[60vh] min-h-[380px] bg-surface-2">
-            <Map businesses={rows} selectedId={selectedId} onSelect={selectFromMap} />
+            <Map
+              businesses={rows}
+              selectedId={selectedId}
+              onSelect={selectFromMap}
+              onBoundsChange={onBoundsChange}
+            />
           </div>
           <p className="text-[11.5px] leading-[1.5] text-muted border-t border-border px-4.5 py-2.5">
             Fond de carte © OpenStreetMap. La carte se charge depuis internet — il faut donc être
@@ -221,19 +252,22 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
         </div>
 
         <p className="text-sm text-muted pt-5 pb-1.5">
-          <b className="text-ink tabular-nums">{rows.length}</b> activité
-          {rows.length > 1 ? "s" : ""}
+          <b className="text-ink tabular-nums">{visibleRows.length}</b> activité
+          {visibleRows.length > 1 ? "s" : ""}
           {active !== "all" ? ` · ${CATEGORY_MAP[active as keyof typeof CATEGORY_MAP].emoji} ${CATEGORY_MAP[active as keyof typeof CATEGORY_MAP].label}` : ""}
+          {filterByMap ? " · dans la zone visible" : ""}
         </p>
 
-        {rows.length === 0 ? (
+        {visibleRows.length === 0 ? (
           <div className="text-center py-[70px] px-5 text-muted">
             <div className="text-4xl mb-2.5">🔍</div>
-            Aucun résultat. Essayez un autre mot-clé ou une autre catégorie.
+            {filterByMap
+              ? "Aucune adresse dans cette zone. Dézoomez, déplacez la carte, ou décochez « N'afficher que la zone de la carte »."
+              : "Aucun résultat. Essayez un autre mot-clé ou une autre catégorie."}
           </div>
         ) : (
           <div className="grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-4 py-1.5 pb-16">
-            {rows.map((b) => {
+            {visibleRows.map((b) => {
               const cat = CATEGORY_MAP[b.category];
               const isActive = b.id === selectedId;
               return (
