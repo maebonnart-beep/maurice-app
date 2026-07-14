@@ -32,6 +32,7 @@ export const SUBCATEGORIES: Partial<Record<CategoryKey, Subcategory[]>> = {
     { key: "activites-enfants-famille", label: "Activités enfants & famille", emoji: "🎠" },
     { key: "centres-loisirs-animations-enfants", label: "Centres de loisirs & animations enfants", emoji: "🤹" },
     { key: "excursions", label: "Excursions", emoji: "🚐" },
+    { key: "cours-de-cuisine", label: "Cours de cuisine", emoji: "👨‍🍳" },
     { key: "spa-bien-etre", label: "Spa & bien-être", emoji: "💆" },
   ],
   food: [

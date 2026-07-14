@@ -29154,5 +29154,20 @@
       "restaurants"
     ],
     "badge": "selection"
+  },
+  {
+    "id": "domaine-des-aubineaux",
+    "name": "Cours de cuisine — Domaine des Aubineaux",
+    "category": "activites",
+    "address": "Route du Thé, Forest Side, Curepipe",
+    "phone": "",
+    "website": "https://groupe-saintaubin.com/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Domaine%20des%20Aubineaux%20Curepipe%20Mauritius",
+    "lat": -20.3277142,
+    "lng": 57.5324951,
+    "themes": [
+      "cours-de-cuisine",
+      "culture-patrimoine"
+    ]
   }
 ]
