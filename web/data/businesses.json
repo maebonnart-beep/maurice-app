@@ -26695,7 +26695,9 @@
     "googleMapsUrl": "https://maps.google.com/?cid=2619716589328617551&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.0853255,
     "lng": 57.5229693,
-    "themes": []
+    "themes": [
+      "centres-equestres"
+    ]
   },
   {
     "id": "the-source-natural-massage-centre-ltd",

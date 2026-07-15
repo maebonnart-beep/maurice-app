@@ -22,6 +22,7 @@ export const SUBCATEGORIES: Partial<Record<CategoryKey, Subcategory[]>> = {
     { key: "complexes-sportifs", label: "Complexes sportifs", emoji: "🏟️" },
     { key: "sports-nautiques", label: "Sports nautiques", emoji: "🏄" },
     { key: "golf", label: "Golf", emoji: "⛳" },
+    { key: "centres-equestres", label: "Centres équestres", emoji: "🐴" },
     { key: "randonnee-trail", label: "Randonnée & trail", emoji: "🥾" },
     { key: "parcs-nationaux-cascades", label: "Parcs nationaux & cascades", emoji: "🏞️" },
     { key: "peche", label: "Pêche", emoji: "🎣" },
