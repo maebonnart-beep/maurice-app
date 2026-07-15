@@ -5326,20 +5326,6 @@
     ]
   },
   {
-    "id": "sweet-brunch",
-    "name": "Sweet & Brunch",
-    "category": "food",
-    "address": "Reservoir Road, Grand Baie",
-    "phone": "+230 5847 8197",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=6731013717197093230&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0171421,
-    "lng": 57.57058,
-    "themes": [
-      "restaurants"
-    ]
-  },
-  {
     "id": "karai-kreol",
     "name": "Karaï Kreol",
     "category": "food",
@@ -29051,6 +29037,94 @@
     "themes": [
       "produits-francais",
       "epiceries-specialisees"
+    ]
+  },
+  {
+    "id": "eden-beach-grand-baie",
+    "name": "Eden Beach",
+    "category": "business-ttv",
+    "address": "Grand Baie (Nord)",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://maps.app.goo.gl/LhxPMpSDZeaPbGMa7",
+    "lat": -20.0146206,
+    "lng": 57.5682246,
+    "themes": [
+      "cafe-coworking"
+    ],
+    "promoText": "Vue magnifique, personnel attentionné et iced coffee délicieux. Musique parfois forte."
+  },
+  {
+    "id": "la-plage-beach-club-trou-aux-biches",
+    "name": "La Plage Beach Club",
+    "category": "business-ttv",
+    "address": "Trou aux Biches (Nord)",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://maps.app.goo.gl/48C6s3rwfYkwoPmy9",
+    "lat": -20.0368221,
+    "lng": 57.5440528,
+    "themes": [
+      "cafe-coworking"
+    ],
+    "promoText": "Vue splendide, les pieds dans le sable, du calme et un cheesecake à tomber !"
+  },
+  {
+    "id": "ava-beach-trou-aux-biches",
+    "name": "Ava Beach",
+    "category": "business-ttv",
+    "address": "Trou aux Biches (Nord)",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://maps.app.goo.gl/xWzNzq2QPPmymE5e7",
+    "lat": -20.0360865,
+    "lng": 57.546075,
+    "themes": [
+      "cafe-coworking"
+    ],
+    "promoText": "Hôtel où la nourriture est excellente (salade César, thali). Calme, face à la piscine — teste le iced matcha passion !"
+  },
+  {
+    "id": "zilwa-attitude-calodyne",
+    "name": "Zilwa Attitude",
+    "category": "business-ttv",
+    "address": "Calodyne (Nord)",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://maps.app.goo.gl/Xds2uS8miDfsipTL6",
+    "lat": -20.0031365,
+    "lng": 57.6476745,
+    "themes": [
+      "cafe-coworking"
+    ],
+    "promoText": "Hôtel où tu peux te restaurer et travailler même sans être résident. Baignade : sable parfois vaseux."
+  },
+  {
+    "id": "sweet-and-brunch-grand-baie",
+    "name": "Sweet & Brunch",
+    "category": "business-ttv",
+    "address": "Grand Baie (Nord)",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://maps.app.goo.gl/mepkcneTN6R512qC7",
+    "lat": -20.0171421,
+    "lng": 57.57058,
+    "themes": [
+      "cafe-coworking"
+    ]
+  },
+  {
+    "id": "chez-popo-tamarin",
+    "name": "Chez Popo & Anaïs",
+    "category": "business-ttv",
+    "address": "Tamarin (Ouest)",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://maps.app.goo.gl/cJZxqLfiV844bZrF9",
+    "lat": -20.2789674,
+    "lng": 57.3722864,
+    "themes": [
+      "cafe-coworking"
     ]
   }
 ]

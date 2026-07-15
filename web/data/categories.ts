@@ -6,6 +6,7 @@ export const CATEGORIES: Category[] = [
   { key: "utiles", label: "Utiles", emoji: "🧰", color: "#4a6572" },
   { key: "coaching", label: "Coaching", emoji: "🎯", color: "#7c5cf0" },
   { key: "seconde-main", label: "Seconde main", emoji: "♻️", color: "#2e8b57" },
+  { key: "business-ttv", label: "Business & TTV", emoji: "💻", color: "#1f8a9b" },
   { key: "evenements", label: "Événements", emoji: "🎉", color: "#e0518a" },
 ];
 
@@ -87,6 +88,11 @@ export const SUBCATEGORIES: Partial<Record<CategoryKey, Subcategory[]>> = {
     { key: "sports-bien-etre", label: "Sports & bien-être", emoji: "🏋️" },
     { key: "business", label: "Business", emoji: "💼" },
     { key: "famille", label: "Famille", emoji: "👨‍👩‍👧" },
+  ],
+  "business-ttv": [
+    { key: "coworking", label: "Espaces de coworking", emoji: "🧑‍💻" },
+    { key: "cafe-coworking", label: "Cafés & spots télétravail", emoji: "☕" },
+    { key: "garde-enfants", label: "Coworking + garde enfants", emoji: "👶" },
   ],
   "seconde-main": [
     { key: "equipement-maison", label: "Équipement maison", emoji: "🛋️" },
