@@ -29186,5 +29186,69 @@
     "themes": [
       "cours-de-cuisine"
     ]
+  },
+  {
+    "id": "moris-otreman-cours-cuisine",
+    "name": "Cours de cuisine — Moris Otreman",
+    "category": "activites",
+    "address": "Port Louis (atelier sur la plage, au feu de bois — sur réservation)",
+    "phone": "",
+    "email": "info@moris-otreman.com",
+    "website": "https://www.moris-otreman.com/cours-de-cuisine",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Port%20Louis%20Mauritius",
+    "lat": -20.1609,
+    "lng": 57.5012,
+    "themes": [
+      "cours-de-cuisine"
+    ],
+    "promoText": "Atelier de cuisine mauricienne traditionnelle sur la plage, au feu de bois. Sur réservation par email."
+  },
+  {
+    "id": "rosemonde-cours-cuisine",
+    "name": "Cours de cuisine créole — Rosemonde",
+    "category": "activites",
+    "address": "Goodlands, Nord (chez Rosemonde, sur réservation)",
+    "phone": "+230 269 1000",
+    "email": "info@vacancesmaurice.com",
+    "website": "https://vacancesmaurice.com/cuisine-culturelle-avec-rosemonde-visite-marche-local-p-1816.html",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Goodlands%20Mauritius",
+    "lat": -20.0364,
+    "lng": 57.6478,
+    "themes": [
+      "cours-de-cuisine"
+    ],
+    "promoText": "Cuisine créole chez l'habitant + visite guidée du marché local. Mercredi & samedi. Réservation via Vacances Maurice."
+  },
+  {
+    "id": "sejour-maurice-cours-cuisine",
+    "name": "Cours de cuisine chez l'habitant — Séjour Maurice",
+    "category": "activites",
+    "address": "Tamarin (chez l'habitant, sur réservation)",
+    "phone": "+230 5828 8685",
+    "email": "contact@sejour-maurice.com",
+    "website": "https://en.sejour-maurice.com/activite/cours-de-cuisine-et-repas-chez-lhabitant/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Tamarin%20Mauritius",
+    "lat": -20.326,
+    "lng": 57.3745,
+    "themes": [
+      "cours-de-cuisine"
+    ],
+    "promoText": "Cours de cuisine et repas partagé chez l'habitant. Sur réservation."
+  },
+  {
+    "id": "muse-villas-cours-cuisine",
+    "name": "Cours de cuisine en villa — Muse Villas",
+    "category": "activites",
+    "address": "Rivière Noire / La Preneuse, côte ouest (atelier en villa, sur réservation)",
+    "phone": "",
+    "whatsapp": "+230 5941 9881",
+    "website": "https://musevillas.com/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=La%20Preneuse%20Black%20River%20Mauritius",
+    "lat": -20.376,
+    "lng": 57.36,
+    "themes": [
+      "cours-de-cuisine"
+    ],
+    "promoText": "Atelier de cuisine privé en villa (concept « farm to table »). Sur réservation."
   }
 ]
