@@ -1791,8 +1791,7 @@
     "lat": -20.0128721,
     "lng": 57.5869003,
     "themes": [
-      "grandes-surfaces",
-      "livraisons"
+      "grandes-surfaces"
     ],
     "hours": "Lun-Jeu 9h-20h30, Ven-Sam 9h-21h30, Dim 9h-15h30"
   },
@@ -1807,8 +1806,7 @@
     "lat": -19.9973,
     "lng": 57.5858,
     "themes": [
-      "grandes-surfaces",
-      "livraisons"
+      "grandes-surfaces"
     ]
   },
   {
@@ -2926,10 +2924,10 @@
     "lat": -20.4165,
     "lng": 57.4886,
     "themes": [
-      "randonnee-trail"
+      "randonnee-trail",
+      "parcs-nationaux-cascades"
     ],
-    "hours": "Tous les jours 6h-18h",
-    "priceRange": "bon-marche"
+    "hours": "Tous les jours 6h-18h"
   },
   {
     "id": "chamarel-seven-coloured-earth",
@@ -2944,8 +2942,7 @@
     "themes": [
       "randonnee-trail"
     ],
-    "hours": "Tous les jours 8h30-17h30 (17h en hiver)",
-    "priceRange": "prix-moyen"
+    "hours": "Tous les jours 8h30-17h30 (17h en hiver)"
   },
   {
     "id": "lion-mountain",
@@ -2960,8 +2957,7 @@
     "themes": [
       "randonnee-trail"
     ],
-    "hours": "Tous les jours, départ vers 9h",
-    "priceRange": "se-faire-plaisir"
+    "hours": "Tous les jours, départ vers 9h"
   },
   {
     "id": "pieter-both-mountain",
@@ -2975,8 +2971,7 @@
     "lng": 57.5461,
     "themes": [
       "randonnee-trail"
-    ],
-    "priceRange": "se-faire-plaisir"
+    ]
   },
   {
     "id": "le-pouce-mountain",
@@ -3031,9 +3026,9 @@
     "lat": -20.3403,
     "lng": 57.4858,
     "themes": [
-      "randonnee-trail"
-    ],
-    "priceRange": "bon-marche"
+      "randonnee-trail",
+      "parcs-nationaux-cascades"
+    ]
   },
   {
     "id": "vallee-de-ferney",
@@ -3048,8 +3043,7 @@
     "themes": [
       "randonnee-trail"
     ],
-    "hours": "Tous les jours 9h-17h",
-    "priceRange": "prix-moyen"
+    "hours": "Tous les jours 9h-17h"
   },
   {
     "id": "ile-aux-aigrettes",
@@ -3064,8 +3058,7 @@
     "themes": [
       "randonnee-trail"
     ],
-    "hours": "Lun-Sam départs 9h30-14h30 (toutes les 30 min), Dim matin seulement 9h30-12h",
-    "priceRange": "se-faire-plaisir"
+    "hours": "Lun-Sam départs 9h30-14h30 (toutes les 30 min), Dim matin seulement 9h30-12h"
   },
   {
     "id": "domaine-de-letoile",
@@ -4721,9 +4714,9 @@
     "lat": -20.5142,
     "lng": 57.5261,
     "themes": [
-      "culture-patrimoine"
+      "parcs-nationaux-cascades"
     ],
-    "priceRange": "bon-marche"
+    "promoText": "Cascade, roches, bassin naturel, baignade."
   },
   {
     "id": "eureka-house-moka",
@@ -5371,7 +5364,8 @@
     "lat": -20.0074189,
     "lng": 57.5586266,
     "themes": [
-      "restaurants"
+      "cafes-terrasses",
+      "boulangeries"
     ]
   },
   {
@@ -9468,7 +9462,8 @@
     "lat": -20.4105283,
     "lng": 57.7091965,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "mauricienne"
     ]
   },
   {
@@ -11509,20 +11504,6 @@
     ]
   },
   {
-    "id": "tulawaka-gold-coaster",
-    "name": "Tulawaka Gold Coaster",
-    "category": "activites",
-    "address": "PC44+3Q, Cascavelle",
-    "phone": "",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=11107457678870228914&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.2948,
-    "lng": 57.406921,
-    "themes": [
-      "parcs-animaliers"
-    ]
-  },
-  {
     "id": "parc-national-de-bras-d-eau",
     "name": "Parc national de Bras d'Eau",
     "category": "activites",
@@ -11631,7 +11612,7 @@
     "lat": -20.4793396,
     "lng": 57.5202599,
     "themes": [
-      "parcs-animaliers"
+      "parcs-nationaux-cascades"
     ]
   },
   {
@@ -11745,8 +11726,10 @@
     "lat": -20.4403774,
     "lng": 57.4581699,
     "themes": [
-      "parcs-aventures"
-    ]
+      "parcs-nationaux-cascades",
+      "randonnee-trail"
+    ],
+    "promoText": "Randonnée pour marcheurs confirmés."
   },
   {
     "id": "le-chamouze-restaurant-by-valle-advenature-park",
@@ -11787,7 +11770,7 @@
     "lat": -20.433764,
     "lng": 57.4577934,
     "themes": [
-      "parcs-aventures"
+      "parcs-nationaux-cascades"
     ]
   },
   {
@@ -11801,7 +11784,7 @@
     "lat": -20.460002,
     "lng": 57.48689,
     "themes": [
-      "parcs-aventures"
+      "parcs-nationaux-cascades"
     ]
   },
   {
@@ -11829,7 +11812,7 @@
     "lat": -20.4432218,
     "lng": 57.3857787,
     "themes": [
-      "parcs-aventures"
+      "parcs-nationaux-cascades"
     ]
   },
   {
@@ -12095,7 +12078,7 @@
     "lat": -20.3399108,
     "lng": 57.4654447,
     "themes": [
-      "randonnee-trail"
+      "parcs-nationaux-cascades"
     ]
   },
   {
@@ -12614,7 +12597,7 @@
     "lat": -20.3444078,
     "lng": 57.4664723,
     "themes": [
-      "activites-enfants-famille"
+      "parcs-nationaux-cascades"
     ]
   },
   {
@@ -12754,37 +12737,8 @@
     "lat": -20.0130719,
     "lng": 57.5867674,
     "themes": [
-      "centres-loisirs-animations-enfants"
+      "bowling"
     ]
-  },
-  {
-    "id": "theo-fourneaux-restaurant-petit-dejeuner-brunch-salon-de-the-2",
-    "name": "Théo Fourneaux - Restaurant Petit déjeuner/Brunch Salon de Thé",
-    "category": "activites",
-    "address": "Royal Road Juste après ScubaPro et avant la rue de MU, la Coline, Grand Baie 30521",
-    "phone": "+230 268 0777",
-    "website": "https://www.instagram.com/theo.fourneaux?igsh=bHR0MWpmcnR6bzdi&utm_source=qr",
-    "googleMapsUrl": "https://maps.google.com/?cid=15908200962364211316&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0074189,
-    "lng": 57.5586266,
-    "themes": [
-      "centres-loisirs-animations-enfants"
-    ]
-  },
-  {
-    "id": "la-terrasse-2",
-    "name": "La Terrasse",
-    "category": "activites",
-    "address": "Rte Royal, Grand Baie",
-    "phone": "+230 263 6391",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=15324260242814895775&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0164183,
-    "lng": 57.5772363,
-    "themes": [
-      "centres-loisirs-animations-enfants"
-    ],
-    "badge": "selection"
   },
   {
     "id": "ti-vegas-casino",
@@ -12797,7 +12751,7 @@
     "lat": -20.0128501,
     "lng": 57.5870473,
     "themes": [
-      "centres-loisirs-animations-enfants"
+      "casinos"
     ]
   },
   {
@@ -17383,7 +17337,7 @@
     "lat": -20.3918097,
     "lng": 57.4468828,
     "themes": [
-      "activites-enfants-famille"
+      "parcs-nationaux-cascades"
     ]
   },
   {
@@ -23240,7 +23194,7 @@
     "lat": -20.512421,
     "lng": 57.5372602,
     "themes": [
-      "excursions"
+      "parcs-nationaux-cascades"
     ]
   },
   {
@@ -23437,7 +23391,7 @@
     "lat": -20.5026742,
     "lng": 57.5168429,
     "themes": [
-      "randonnee-trail"
+      "parcs-nationaux-cascades"
     ]
   },
   {
@@ -23451,7 +23405,7 @@
     "lat": -20.2804648,
     "lng": 57.7747597,
     "themes": [
-      "randonnee-trail"
+      "parcs-nationaux-cascades"
     ]
   },
   {
@@ -23788,20 +23742,6 @@
     "lng": 57.3706033,
     "themes": [
       "activites-enfants-famille"
-    ]
-  },
-  {
-    "id": "playa-restaurant-tamassa-resort-2",
-    "name": "Playa Restaurant, Tamassa Resort",
-    "category": "activites",
-    "address": "FCQ8+R4G Tamassa Resort, Coastal Rd, Bel Ombre",
-    "phone": "+230 603 7300",
-    "website": "https://www.tamassaresorts.com/",
-    "googleMapsUrl": "https://maps.google.com/?cid=17642380359485954270&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.510428,
-    "lng": 57.4153224,
-    "themes": [
-      "centres-loisirs-animations-enfants"
     ]
   },
   {
@@ -25878,20 +25818,6 @@
     ]
   },
   {
-    "id": "le-val-nature-park",
-    "name": "Le Val Nature Park",
-    "category": "activites",
-    "address": "JJPJ+69V, Unnamed Road, St Hubert",
-    "phone": "",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=2799014211001317031&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.3643801,
-    "lng": 57.6309105,
-    "themes": [
-      "parcs-animaliers"
-    ]
-  },
-  {
     "id": "aquacity-belle-mare-watersports",
     "name": "Aquacity Belle Mare Watersports",
     "category": "activites",
@@ -26760,106 +26686,6 @@
     ]
   },
   {
-    "id": "amari-by-vineet",
-    "name": "Amari By Vineet",
-    "category": "activites",
-    "address": "Quatre Cocos",
-    "phone": "+230 402 2000",
-    "website": "https://www.luxresorts.com/en/mauritius/hotel/luxbellemare/restaurants-bars/amari-by-vineet",
-    "googleMapsUrl": "https://maps.google.com/?cid=4079176432123200108&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.1995803,
-    "lng": 57.7820781,
-    "themes": [
-      "centres-loisirs-animations-enfants"
-    ]
-  },
-  {
-    "id": "maritim-resort-spa-mauritius",
-    "name": "Maritim Resort & Spa Mauritius",
-    "category": "activites",
-    "address": "Turtle Bay Balaclava MU, Terre Rouge 21416",
-    "phone": "+230 204 1000",
-    "website": "https://www.maritimresortandspa.mu/",
-    "googleMapsUrl": "https://maps.google.com/?cid=4598292814048658062&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0874333,
-    "lng": 57.5164669,
-    "themes": [
-      "centres-loisirs-animations-enfants"
-    ]
-  },
-  {
-    "id": "evaco-beach-club-la-plage",
-    "name": "Evaco Beach Club \"La Plage\"",
-    "category": "activites",
-    "address": "Evaco Beach Club \"La Plage\", Pamplemousses",
-    "phone": "+230 265 7591",
-    "website": "http://laplage.restaurant.mu/",
-    "googleMapsUrl": "https://maps.google.com/?cid=16973747808041056988&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0368788,
-    "lng": 57.5440837,
-    "themes": [
-      "centres-loisirs-animations-enfants"
-    ],
-    "badge": "selection",
-    "promoText": "Cuisine méditerranéenne et créole."
-  },
-  {
-    "id": "le-jadis-beach-resort-wellness-mauritius",
-    "name": "Le Jadis Beach Resort & Wellness Mauritius",
-    "category": "activites",
-    "address": "MU, Turtle Bay, Balaclava 21307",
-    "phone": "+230 204 1888",
-    "website": "https://www.lejadis.com/",
-    "googleMapsUrl": "https://maps.google.com/?cid=17931558397509416796&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.1000883,
-    "lng": 57.5135158,
-    "themes": [
-      "centres-loisirs-animations-enfants"
-    ]
-  },
-  {
-    "id": "la-pirogue",
-    "name": "La Pirogue",
-    "category": "activites",
-    "address": "Wolmar Coastal Rd, Flic en Flac",
-    "phone": "+230 403 3900",
-    "website": "https://www.yoursunlife.com/lapiroguemauritius/?utm_source=google&utm_medium=organic&utm_campaign=google_local_la_pirogue",
-    "googleMapsUrl": "https://maps.google.com/?cid=7386822460888986914&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.2986117,
-    "lng": 57.3648802,
-    "themes": [
-      "centres-loisirs-animations-enfants"
-    ]
-  },
-  {
-    "id": "veranda-pointe-aux-biches-hotel-mauritius",
-    "name": "Veranda Pointe Aux Biches Hotel - Mauritius",
-    "category": "activites",
-    "address": "MU, Royal Road, Pointe aux Piments 22310",
-    "phone": "+230 265 5901",
-    "website": "https://www.veranda-resorts.com/en/mauritius-hotel-veranda-pointe-aux-biches",
-    "googleMapsUrl": "https://maps.google.com/?cid=18345347214062210372&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0468781,
-    "lng": 57.5291278,
-    "themes": [
-      "centres-loisirs-animations-enfants"
-    ]
-  },
-  {
-    "id": "anelia-resort-spa-mauritius",
-    "name": "Anelia Resort & Spa Mauritius",
-    "category": "activites",
-    "address": "Klondike Rd, Flic en Flac",
-    "phone": "+230 453 8333",
-    "website": "https://aneliaresort.com/",
-    "googleMapsUrl": "https://maps.google.com/?cid=11378411877392065661&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.2721604,
-    "lng": 57.3718037,
-    "themes": [
-      "centres-loisirs-animations-enfants"
-    ]
-  },
-  {
     "id": "maritim-equestrian-centre",
     "name": "Maritim Equestrian Centre",
     "category": "activites",
@@ -26869,93 +26695,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=2619716589328617551&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.0853255,
     "lng": 57.5229693,
-    "themes": [
-      "centres-loisirs-animations-enfants"
-    ]
-  },
-  {
-    "id": "seasense-boutique-hotel-spa",
-    "name": "Seasense Boutique Hotel & Spa",
-    "category": "activites",
-    "address": "Coastal Road Palmar MU, Quatre Cocos 42210",
-    "phone": "+230 415 1800",
-    "website": "https://searesortshotels.com/seasense/",
-    "googleMapsUrl": "https://maps.google.com/?cid=7651918997192210613&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.2150809,
-    "lng": 57.7935937,
-    "themes": [
-      "centres-loisirs-animations-enfants"
-    ]
-  },
-  {
-    "id": "hilton-mauritius-resort-spa",
-    "name": "Hilton Mauritius Resort & Spa",
-    "category": "activites",
-    "address": "Coastal Road MU, Wolmar, Flic en Flac 90503",
-    "phone": "+230 403 1000",
-    "website": "https://www.hilton.com/en/hotels/mruhihi-hilton-mauritius-resort-and-spa/?SEO_id=GMB-EMEA-HI-MRUHIHI",
-    "googleMapsUrl": "https://maps.google.com/?cid=12221185262724499146&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.3084186,
-    "lng": 57.3672748,
-    "themes": [
-      "centres-loisirs-animations-enfants"
-    ]
-  },
-  {
-    "id": "hotel-le-pearle-beach",
-    "name": "Hotel Le Pearle Beach",
-    "category": "activites",
-    "address": "Belle Beach, Coastal Rd, Flic en Flac",
-    "phone": "+230 401 6300",
-    "website": "http://pearlebeachresort.com/",
-    "googleMapsUrl": "https://maps.google.com/?cid=7925866813415997501&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.29371,
-    "lng": 57.3634933,
-    "themes": [
-      "centres-loisirs-animations-enfants"
-    ]
-  },
-  {
-    "id": "bodrum-blue-lux-grand-gaube",
-    "name": "Bodrum Blue - LUX* Grand Gaube",
-    "category": "activites",
-    "address": "Unnamed Road, Grand Gaube",
-    "phone": "+230 5919 2456",
-    "website": "https://www.luxresorts.com/en/mauritius/hotel/luxgrandgaube/restaurants-bars/bodrum-blue",
-    "googleMapsUrl": "https://maps.google.com/?cid=15421974910148415161&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0009041,
-    "lng": 57.6609044,
-    "themes": [
-      "centres-loisirs-animations-enfants"
-    ]
-  },
-  {
-    "id": "victoria-beachcomber-resort-spa",
-    "name": "Victoria Beachcomber Resort & Spa",
-    "category": "activites",
-    "address": "MU, Coastal Road, Pointe aux Piments 21304",
-    "phone": "+230 204 2000",
-    "website": "https://www.beachcomber-hotels.com/en/hotel/victoria-beachcomber",
-    "googleMapsUrl": "https://maps.google.com/?cid=5670719850757001853&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0752048,
-    "lng": 57.5128287,
-    "themes": [
-      "centres-loisirs-animations-enfants"
-    ]
-  },
-  {
-    "id": "casuarina-resort-spa",
-    "name": "Casuarina Resort & Spa",
-    "category": "activites",
-    "address": "Coastal Road, Trou-aux-Biches",
-    "phone": "+230 204 5000",
-    "website": "http://hotel-casuarina.com/",
-    "googleMapsUrl": "https://maps.google.com/?cid=8860228770322053059&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0273218,
-    "lng": 57.5487528,
-    "themes": [
-      "centres-loisirs-animations-enfants"
-    ]
+    "themes": []
   },
   {
     "id": "the-source-natural-massage-centre-ltd",
@@ -28164,20 +27904,6 @@
     ]
   },
   {
-    "id": "welcome-inn",
-    "name": "Welcome Inn",
-    "category": "activites",
-    "address": "Chem. Vingt Pieds, Grand Baie",
-    "phone": "+230 5254 4950",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=6161970803562176903&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0085489,
-    "lng": 57.6002561,
-    "themes": [
-      "centres-loisirs-animations-enfants"
-    ]
-  },
-  {
     "id": "chez-nad",
     "name": "Chez Nad",
     "category": "food",
@@ -28460,7 +28186,7 @@
   {
     "id": "smarttraveller-ltd",
     "name": "SmartTraveller Ltd.",
-    "category": "activites",
+    "category": "utiles",
     "address": "Beau Manguier, Morcellement Swan Pereybère MU, Grand Baie 30546",
     "phone": "",
     "website": "http://smarttraveller.mu/",
@@ -28468,7 +28194,7 @@
     "lat": -19.9996002,
     "lng": 57.5930211,
     "themes": [
-      "activites-enfants-famille"
+      "expatriation-visas"
     ]
   },
   {
@@ -28553,48 +28279,6 @@
     "lng": 57.4881506,
     "themes": [
       "equipement-maison"
-    ]
-  },
-  {
-    "id": "mythic-suites-villas-location-de-vacances-avec-tous-les-serv",
-    "name": "Mythic Suites & Villas - Location de vacances avec tous les services hôteliers, by MJ Holidays - Grand-Gaube",
-    "category": "activites",
-    "address": "Disa Ln, Grand Gaube",
-    "phone": "+230 483 5020",
-    "website": "https://www.mjholidays.com/nos-resorts/mythic-suites-villas",
-    "googleMapsUrl": "https://maps.google.com/?cid=15127678362384878854&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0115316,
-    "lng": 57.6614937,
-    "themes": [
-      "centres-loisirs-animations-enfants"
-    ]
-  },
-  {
-    "id": "sofitel-mauritius-l-imperial-resort-spa",
-    "name": "Sofitel Mauritius L'Impérial Resort & Spa",
-    "category": "activites",
-    "address": "MU, Wolmar, Flic en Flac 90517",
-    "phone": "+230 453 8700",
-    "website": "http://sofitel.accor.com/hotels/1144?merchantid=seo-maps-MU-1144&sourceid=aw-cen&utm_source=google+Maps&utm_medium=seo+maps&utm_campaign=seo+maps&utm_term=Sofitel-Launch",
-    "googleMapsUrl": "https://maps.google.com/?cid=9887349482903030227&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.311618,
-    "lng": 57.367501,
-    "themes": [
-      "centres-loisirs-animations-enfants"
-    ]
-  },
-  {
-    "id": "royal-palm-beachcomber-luxury",
-    "name": "Royal Palm Beachcomber Luxury",
-    "category": "activites",
-    "address": "MU, Royal Road, Grand Baie 30512",
-    "phone": "+230 209 8300",
-    "website": "https://www.beachcomber-hotels.com/en/hotel/royal-palm-beachcomber-luxury",
-    "googleMapsUrl": "https://maps.google.com/?cid=15960345728171236651&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0065419,
-    "lng": 57.5789142,
-    "themes": [
-      "centres-loisirs-animations-enfants"
     ]
   },
   {
