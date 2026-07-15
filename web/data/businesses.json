@@ -23381,20 +23381,6 @@
     ]
   },
   {
-    "id": "cascade-rochester",
-    "name": "Cascade Rochester",
-    "category": "activites",
-    "address": "A9",
-    "phone": "+230 5903 4289",
-    "website": "https://www.facebook.com/Yassirhike",
-    "googleMapsUrl": "https://maps.google.com/?cid=10117162151483258519&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.5026742,
-    "lng": 57.5168429,
-    "themes": [
-      "parcs-nationaux-cascades"
-    ]
-  },
-  {
     "id": "grse-waterfall",
     "name": "GRSE Waterfall",
     "category": "activites",
@@ -28936,5 +28922,135 @@
       "cours-de-cuisine"
     ],
     "promoText": "Atelier de cuisine privé en villa (concept « farm to table »). Sur réservation."
+  },
+  {
+    "id": "biscuiterie-h-rault",
+    "name": "Biscuiterie H. Rault",
+    "category": "activites",
+    "address": "Ville Noire, Mahébourg (Sud-Est)",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://maps.app.goo.gl/L4H7byuH31Nztv8C8",
+    "lat": -20.4040066,
+    "lng": 57.6979217,
+    "themes": [
+      "activites-enfants-famille",
+      "culture-patrimoine"
+    ]
+  },
+  {
+    "id": "distillerie-ylang-ylang",
+    "name": "Distillerie Ylang Ylang",
+    "category": "activites",
+    "address": "Bambous Virieux (Sud-Est)",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://maps.app.goo.gl/HwDuwkviUNEByLyS8",
+    "lat": -20.3511533,
+    "lng": 57.7482305,
+    "themes": [
+      "activites-enfants-famille",
+      "culture-patrimoine"
+    ]
+  },
+  {
+    "id": "splash-n-fun-quatre-cocos",
+    "name": "Splash N Fun Leisure Park",
+    "category": "activites",
+    "address": "Quatre Cocos (Est)",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://maps.app.goo.gl/bp8yJz7EJWxg79Yc6",
+    "lat": -20.185167,
+    "lng": 57.7686483,
+    "themes": [
+      "activites-enfants-famille"
+    ]
+  },
+  {
+    "id": "refuge-animalier-gros-cailloux",
+    "name": "Refuge animalier de Gros Cailloux",
+    "category": "activites",
+    "address": "Domaine de Gros Cailloux, Petite Rivière (Ouest)",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Refuge%20animalier%20Gros%20Cailloux%20Mauritius",
+    "lat": -20.2128493,
+    "lng": 57.433716,
+    "themes": [
+      "activites-enfants-famille"
+    ],
+    "promoText": "Visite uniquement accompagnée d'une soignante."
+  },
+  {
+    "id": "vona-corona-moka",
+    "name": "Vona Corona",
+    "category": "food",
+    "address": "Moka",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://maps.app.goo.gl/YvqdaFFXiCFhyR1DA",
+    "lat": -20.2253398,
+    "lng": 57.49772,
+    "themes": [
+      "glaciers"
+    ]
+  },
+  {
+    "id": "zorbetteria-port-louis",
+    "name": "Zorbetteria Artigianale",
+    "category": "food",
+    "address": "Port Louis",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://maps.app.goo.gl/hgoMVnijQXK8n4PS7",
+    "lat": -20.159963,
+    "lng": 57.5093974,
+    "themes": [
+      "glaciers"
+    ]
+  },
+  {
+    "id": "kristens-ice-cream",
+    "name": "Kristen's Kick-Ass Ice Cream",
+    "category": "food",
+    "address": "Trou aux Biches (Nord)",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://maps.app.goo.gl/ww6onyRKgToY799r5",
+    "lat": -20.03688,
+    "lng": 57.5467151,
+    "themes": [
+      "glaciers"
+    ]
+  },
+  {
+    "id": "gelato-heaven-flic-en-flac",
+    "name": "Gelato Heaven",
+    "category": "food",
+    "address": "Flic en Flac (Ouest)",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://maps.app.goo.gl/V4htNLYzUYJdnQ186",
+    "lat": -20.28098,
+    "lng": 57.3685811,
+    "themes": [
+      "glaciers"
+    ]
+  },
+  {
+    "id": "lepicerie-clef-des-champs-floreal",
+    "name": "L'épicerie by La Clef des Champs",
+    "category": "food",
+    "address": "Avenue Queen Mary, Floréal",
+    "phone": "+230 686 3458",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=La%20Clef%20des%20Champs%20Flor%C3%A9al%20Mauritius",
+    "lat": -20.3109637,
+    "lng": 57.5044125,
+    "themes": [
+      "produits-francais",
+      "epiceries-specialisees"
+    ]
   }
 ]
