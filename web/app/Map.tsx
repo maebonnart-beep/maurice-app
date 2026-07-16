@@ -1,10 +1,11 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import { MapContainer, TileLayer, CircleMarker, Popup, useMap, useMapEvents } from "react-leaflet";
-import type { CircleMarker as LeafletCircleMarker } from "leaflet";
+import { MapContainer, TileLayer, Marker, Popup, useMap, useMapEvents } from "react-leaflet";
+import L from "leaflet";
+import type { Marker as LeafletMarker } from "leaflet";
 import type { Business } from "@/lib/types";
-import { CATEGORY_MAP } from "@/data/categories";
+import { CATEGORY_MAP, SUBCATEGORIES } from "@/data/categories";
 import "leaflet/dist/leaflet.css";
 
 const GRAND_BAIE: [number, number] = [-20.0064, 57.5802];
@@ -15,6 +16,29 @@ function tel(phone: string) {
 
 function webLabel(url: string) {
   return url.replace(/^https?:\/\//, "").replace(/^www\./, "").replace(/\/.*$/, "");
+}
+
+// Picto propre à la rubrique (thème) plutôt qu'un simple point de couleur.
+function markerEmoji(b: Business): string {
+  const subcats = SUBCATEGORIES[b.category as keyof typeof SUBCATEGORIES];
+  if (subcats && b.themes && b.themes.length > 0) {
+    const match = subcats.find((s) => s.key === b.themes![0]);
+    if (match) return match.emoji;
+  }
+  return CATEGORY_MAP[b.category].emoji;
+}
+
+function buildIcon(emoji: string, color: string, selected: boolean) {
+  const size = selected ? 34 : 27;
+  return L.divIcon({
+    html: `<div style="width:${size}px;height:${size}px;border-radius:50%;background:${color};display:flex;align-items:center;justify-content:center;font-size:${Math.round(
+      size * 0.55
+    )}px;line-height:1;border:2px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.35);">${emoji}</div>`,
+    className: "",
+    iconSize: [size, size],
+    iconAnchor: [size / 2, size / 2],
+    popupAnchor: [0, -size / 2],
+  });
 }
 
 export type MapBounds = { north: number; south: number; east: number; west: number };
@@ -49,20 +73,25 @@ function MapController({
   businesses,
   selectedId,
   markersRef,
+  fitKey,
 }: {
   businesses: Business[];
   selectedId: string | null;
-  markersRef: React.RefObject<Record<string, LeafletCircleMarker>>;
+  markersRef: React.RefObject<Record<string, LeafletMarker>>;
+  fitKey: string;
 }) {
   const map = useMap();
 
+  // Ne recadre la carte que sur un changement de catégorie (fitKey), pas à
+  // chaque changement de filtre/recherche — sinon un zoom manuel de
+  // l'utilisateur est annulé dès qu'il coche une sous-rubrique.
   useEffect(() => {
     const mappable = businesses.filter((b) => b.lat !== undefined && b.lng !== undefined);
     if (mappable.length === 0) return;
     const bounds = mappable.map((b) => [b.lat as number, b.lng as number] as [number, number]);
     map.fitBounds(bounds, { padding: [40, 40], maxZoom: 15 });
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [businesses]);
+  }, [fitKey]);
 
   useEffect(() => {
     if (!selectedId) return;
@@ -82,13 +111,15 @@ export default function Map({
   selectedId,
   onSelect,
   onBoundsChange,
+  fitKey = "all",
 }: {
   businesses: Business[];
   selectedId: string | null;
   onSelect: (id: string) => void;
   onBoundsChange?: (b: MapBounds) => void;
+  fitKey?: string;
 }) {
-  const markersRef = useRef<Record<string, LeafletCircleMarker>>({});
+  const markersRef = useRef<Record<string, LeafletMarker>>({});
   const mappable = businesses.filter((b) => b.lat !== undefined && b.lng !== undefined);
 
   return (
@@ -102,24 +133,18 @@ export default function Map({
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
       />
-      <MapController businesses={mappable} selectedId={selectedId} markersRef={markersRef} />
+      <MapController businesses={mappable} selectedId={selectedId} markersRef={markersRef} fitKey={fitKey} />
       <BoundsReporter onBoundsChange={onBoundsChange} />
       {mappable.map((b) => {
         const cat = CATEGORY_MAP[b.category];
         return (
-          <CircleMarker
+          <Marker
             key={b.id}
             ref={(el) => {
               if (el) markersRef.current[b.id] = el;
             }}
-            center={[b.lat as number, b.lng as number]}
-            radius={b.id === selectedId ? 10 : 8}
-            pathOptions={{
-              color: "#fff",
-              weight: 2,
-              fillColor: cat.color,
-              fillOpacity: 0.92,
-            }}
+            position={[b.lat as number, b.lng as number]}
+            icon={buildIcon(markerEmoji(b), cat.color, b.id === selectedId)}
             eventHandlers={{ click: () => onSelect(b.id) }}
           >
             <Popup minWidth={210}>
@@ -161,7 +186,7 @@ export default function Map({
                 </div>
               </div>
             </Popup>
-          </CircleMarker>
+          </Marker>
         );
       })}
     </MapContainer>

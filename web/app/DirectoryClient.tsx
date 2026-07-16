@@ -346,6 +346,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
               selectedId={selectedId}
               onSelect={selectFromMap}
               onBoundsChange={onBoundsChange}
+              fitKey={active}
             />
           </div>
           <p className="text-[11.5px] leading-[1.5] text-muted border-t border-border px-4.5 py-2.5">
