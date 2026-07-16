@@ -16935,21 +16935,6 @@
     "zone": "nord"
   },
   {
-    "id": "native-concept-store-cosmopolite",
-    "name": "Native - Concept Store Cosmopolite",
-    "category": "seconde-main",
-    "address": "Maison balinaise Face à la, quincaillerie Étoile, 58 Sottise Rd, Grand Baie",
-    "phone": "+230 5441 4814",
-    "website": "https://www.facebook.com/native.conceptstoredeco/",
-    "googleMapsUrl": "https://maps.google.com/?cid=12542968071847781747&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0193311,
-    "lng": 57.5801996,
-    "themes": [
-      "equipement-maison"
-    ],
-    "zone": "nord"
-  },
-  {
     "id": "africaimg-depot-vente",
     "name": "AfricaIMG Depot-Vente",
     "category": "seconde-main",
@@ -16959,36 +16944,6 @@
     "googleMapsUrl": "https://maps.google.com/?cid=5704591573434178791&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.0386949,
     "lng": 57.6484757,
-    "themes": [
-      "equipement-maison"
-    ],
-    "zone": "nord"
-  },
-  {
-    "id": "macumba-ltee-2",
-    "name": "Macumba Ltee.",
-    "category": "seconde-main",
-    "address": "Sunset Boulevard, Grand Baie",
-    "phone": "+230 263 6404",
-    "website": "http://www.macumba.mu/",
-    "googleMapsUrl": "https://maps.google.com/?cid=4875271780294695440&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0138212,
-    "lng": 57.5844803,
-    "themes": [
-      "equipement-maison"
-    ],
-    "zone": "nord"
-  },
-  {
-    "id": "urban-home",
-    "name": "Urban Home",
-    "category": "seconde-main",
-    "address": "Shop D0-01 MU, La Croisette, D, Grand Baie 30517",
-    "phone": "+230 268 3467",
-    "website": "http://www.urbanhome.mu/",
-    "googleMapsUrl": "https://maps.google.com/?cid=8131245874507367544&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0228041,
-    "lng": 57.57946,
     "themes": [
       "equipement-maison"
     ],
@@ -17010,66 +16965,6 @@
     "zone": "nord"
   },
   {
-    "id": "la-foir-fouille",
-    "name": "La Foir'Fouille",
-    "category": "seconde-main",
-    "address": "MU, Chem. Vingt Pieds, Grand Baie 30501",
-    "phone": "+230 268 6559",
-    "website": "https://magasins.lafoirfouille.fr/maurice/la-foirfouille-226",
-    "googleMapsUrl": "https://maps.google.com/?cid=11252614820370369465&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0223614,
-    "lng": 57.5792609,
-    "themes": [
-      "equipement-maison"
-    ],
-    "zone": "nord"
-  },
-  {
-    "id": "macumba-20-pieds-road",
-    "name": "Macumba - 20 Pieds road",
-    "category": "seconde-main",
-    "address": "Chem. Vingt Pieds, Grand Baie",
-    "phone": "+230 5942 2706",
-    "website": "http://www.macumba.mu/",
-    "googleMapsUrl": "https://maps.google.com/?cid=13215209423144180155&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.009488,
-    "lng": 57.5959912,
-    "themes": [
-      "equipement-maison"
-    ],
-    "zone": "nord"
-  },
-  {
-    "id": "j-kalachand",
-    "name": "J.Kalachand",
-    "category": "seconde-main",
-    "address": "XHPQ+4W9, Chem. Vingt Pieds, Grand Baie",
-    "phone": "+230 263 0872",
-    "website": "https://jkalachand.com/",
-    "googleMapsUrl": "https://maps.google.com/?cid=7390423409949217245&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0147103,
-    "lng": 57.5898695,
-    "themes": [
-      "equipement-maison"
-    ],
-    "zone": "nord"
-  },
-  {
-    "id": "quincaillerie-la-coruna",
-    "name": "Quincaillerie La Coruna",
-    "category": "seconde-main",
-    "address": "Royal Road, Grand Baie",
-    "phone": "+230 263 6879",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=8834728273956539660&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0158549,
-    "lng": 57.5760137,
-    "themes": [
-      "equipement-maison"
-    ],
-    "zone": "nord"
-  },
-  {
     "id": "double-life-saint-pierre",
     "name": "Double Life - Saint Pierre",
     "category": "seconde-main",
@@ -17083,96 +16978,6 @@
       "equipement-maison"
     ],
     "zone": "centre"
-  },
-  {
-    "id": "grewals-showroom-nord",
-    "name": "Grewals Showroom Nord",
-    "category": "seconde-main",
-    "address": "MU, 30513 Chem. Vingt Pieds, Grand Baie 30513",
-    "phone": "+230 268 3246",
-    "website": "https://www.grewals.mu/",
-    "googleMapsUrl": "https://maps.google.com/?cid=10552562201528053129&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.01714,
-    "lng": 57.586856,
-    "themes": [
-      "equipement-maison"
-    ],
-    "zone": "nord"
-  },
-  {
-    "id": "roche-bobois",
-    "name": "Roche Bobois",
-    "category": "seconde-main",
-    "address": "MU, Healthscape Circle Square, 30104",
-    "phone": "+230 244 3021",
-    "website": "http://www.roche-bobois.com/fr-MU/",
-    "googleMapsUrl": "https://maps.google.com/?cid=13187705890369567187&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0556747,
-    "lng": 57.6139329,
-    "themes": [
-      "equipement-maison"
-    ],
-    "zone": "nord"
-  },
-  {
-    "id": "popular-store",
-    "name": "Popular Store",
-    "category": "seconde-main",
-    "address": "WHX3+8C8, Grand Baie Rd, Triolet",
-    "phone": "+230 261 1248",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=16063857957716169609&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0517004,
-    "lng": 57.5535881,
-    "themes": [
-      "equipement-maison"
-    ],
-    "zone": "nord"
-  },
-  {
-    "id": "grewals-ltd",
-    "name": "Grewals Ltd",
-    "category": "seconde-main",
-    "address": "Grewals Lane Pailles MU, Port Louis 11221",
-    "phone": "+230 286 6619",
-    "website": "https://www.grewals.mu/",
-    "googleMapsUrl": "https://maps.google.com/?cid=2230070286767211432&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.1961518,
-    "lng": 57.4862585,
-    "themes": [
-      "equipement-maison"
-    ],
-    "zone": "centre"
-  },
-  {
-    "id": "jmd-international-ltd",
-    "name": "JMD International ltd",
-    "category": "seconde-main",
-    "address": "MU, Grewals Ln, Pailles 11221",
-    "phone": "+230 460 5670",
-    "website": "http://www.jmd.mu/",
-    "googleMapsUrl": "https://maps.google.com/?cid=5111438629926055349&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.1962612,
-    "lng": 57.4866449,
-    "themes": [
-      "equipement-maison"
-    ],
-    "zone": "centre"
-  },
-  {
-    "id": "magasin-central",
-    "name": "Magasin Central",
-    "category": "seconde-main",
-    "address": "Royal Rd, Grand Baie",
-    "phone": "+230 263 8936",
-    "website": "https://www.facebook.com/magasincentral.gbay/",
-    "googleMapsUrl": "https://maps.google.com/?cid=7476764685634308279&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.016536,
-    "lng": 57.578676,
-    "themes": [
-      "equipement-maison"
-    ],
-    "zone": "nord"
   },
   {
     "id": "lexpresscars",
@@ -17250,21 +17055,6 @@
     "zone": "nord"
   },
   {
-    "id": "toyota-mauritius-ltd",
-    "name": "Toyota (Mauritius) Ltd",
-    "category": "seconde-main",
-    "address": "State House Ave, Moka",
-    "phone": "+230 460 5200",
-    "website": "http://www.toyotamauritius.com/",
-    "googleMapsUrl": "https://maps.google.com/?cid=13165911727774971643&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.226778,
-    "lng": 57.4932594,
-    "themes": [
-      "voitures-2-roues"
-    ],
-    "zone": "centre"
-  },
-  {
     "id": "vintage-clothing",
     "name": "Vintage Clothing",
     "category": "seconde-main",
@@ -17289,21 +17079,6 @@
     "googleMapsUrl": "https://maps.google.com/?cid=8331998946049226366&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.0216408,
     "lng": 57.5783462,
-    "themes": [
-      "habits-adultes"
-    ],
-    "zone": "nord"
-  },
-  {
-    "id": "marco-pearl-shop-2",
-    "name": "Marco Pearl Shop",
-    "category": "seconde-main",
-    "address": "Royal Road, Grand Baie",
-    "phone": "+230 5256 6765",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=11015843410349809462&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0115431,
-    "lng": 57.5846077,
     "themes": [
       "habits-adultes"
     ],
@@ -17336,231 +17111,6 @@
     "lng": 57.5191259,
     "themes": [
       "habits-adultes"
-    ],
-    "zone": "centre"
-  },
-  {
-    "id": "luna-boutique-mauritius-2",
-    "name": "Lüna Boutique Mauritius",
-    "category": "seconde-main",
-    "address": "Richmond Hill, Rue la Salette, Grand Baie",
-    "phone": "+230 269 1317",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=16526113218828132361&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0133158,
-    "lng": 57.5884049,
-    "themes": [
-      "habits-adultes"
-    ],
-    "zone": "nord"
-  },
-  {
-    "id": "perhaps",
-    "name": "Perhaps",
-    "category": "seconde-main",
-    "address": "Perhaps, Coastal Road, Grand Baie, Mauritius, B13, Grand Baie",
-    "phone": "+230 5926 5055",
-    "website": "https://m.facebook.com/perhapsmauritius/",
-    "googleMapsUrl": "https://maps.google.com/?cid=6031484787188880995&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0156077,
-    "lng": 57.5682694,
-    "themes": [
-      "habits-adultes"
-    ],
-    "zone": "nord"
-  },
-  {
-    "id": "crazy-factory",
-    "name": "CRAZY FACTORY",
-    "category": "seconde-main",
-    "address": "Chemin 20 pieds, A côte de Ciseaux 3D et Face à GBBQ, Grand-Baie",
-    "phone": "+230 5250 0566",
-    "website": "https://www.facebook.com/crazyfactorymauritius",
-    "googleMapsUrl": "https://maps.google.com/?cid=5988398318922257063&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0199194,
-    "lng": 57.5841315,
-    "themes": [
-      "habits-adultes"
-    ],
-    "zone": "nord"
-  },
-  {
-    "id": "orchestra-grand-baie-2",
-    "name": "Orchestra GRAND BAIE",
-    "category": "seconde-main",
-    "address": "B45 Chem. Vingt Pieds, Grand Baie",
-    "phone": "+230 468 8341",
-    "website": "http://fr.shop-orchestra.com/",
-    "googleMapsUrl": "https://maps.google.com/?cid=6461667787204317965&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0224641,
-    "lng": 57.5791544,
-    "themes": [
-      "habits-enfants"
-    ],
-    "zone": "nord"
-  },
-  {
-    "id": "gecko-kids-mauritius",
-    "name": "Gecko Kids Mauritius (📍𝗗𝗶𝗮𝘀 𝗣𝗶𝗲𝗿, 𝗟𝗲 𝗖𝗮𝘂𝗱𝗮𝗻 𝗪𝗮𝘁𝗲𝗿𝗳𝗿𝗼𝗻𝘁, 𝗣𝗼𝗿𝘁-𝗟𝗼𝘂𝗶𝘀; 📍𝗠𝗼𝗻𝘁 𝗖𝗵𝗼𝗶𝘀𝘆 𝗟𝗲 𝗠𝗮𝗹𝗹, 𝗚𝗿𝗮𝗻𝗱-𝗕𝗮𝗶𝗲)",
-    "category": "seconde-main",
-    "address": "MU, Caudan Waterfront, Marina Quay, Port Louis 11307",
-    "phone": "+230 5813 6918",
-    "website": "https://www.geckomauritius.com/",
-    "googleMapsUrl": "https://maps.google.com/?cid=14901301779542471997&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.1616593,
-    "lng": 57.4995516,
-    "themes": [
-      "habits-enfants"
-    ],
-    "zone": "centre"
-  },
-  {
-    "id": "gemo-grand-baie-chaussures-et-vetements",
-    "name": "GEMO GRAND BAIE Chaussures et Vêtements",
-    "category": "seconde-main",
-    "address": "MU, Centre Commercial la Croisette, b45 Chem. Vingt Pieds, Grand Baie 30517",
-    "phone": "+230 268 6851",
-    "website": "https://www.gemo.mu/",
-    "googleMapsUrl": "https://maps.google.com/?cid=9004216179968117672&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0225417,
-    "lng": 57.578352,
-    "themes": [
-      "habits-enfants"
-    ],
-    "zone": "nord"
-  },
-  {
-    "id": "bookcourt-la-croisette",
-    "name": "Bookcourt La Croisette",
-    "category": "seconde-main",
-    "address": "XHHH+6G5, Grand Baie",
-    "phone": "+230 269 6062",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=16038370780477445505&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0219835,
-    "lng": 57.5788696,
-    "themes": [
-      "jeux-livres"
-    ],
-    "zone": "nord"
-  },
-  {
-    "id": "le-sortilege-du-shaman",
-    "name": "Le Sortilège du Shaman",
-    "category": "seconde-main",
-    "address": "Chem. Vingt Pieds, Grand Baie",
-    "phone": "+230 268 0435",
-    "website": "https://www.lesortilegedushaman.com/",
-    "googleMapsUrl": "https://maps.google.com/?cid=1897903962421296114&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0181315,
-    "lng": 57.5857836,
-    "themes": [
-      "jeux-livres"
-    ],
-    "zone": "nord"
-  },
-  {
-    "id": "whimzical-books",
-    "name": "Whimzical books",
-    "category": "seconde-main",
-    "address": "sam,s complex, Royal Road, Grand Baie",
-    "phone": "+230 268 3131",
-    "website": "https://sites.google.com/view/whimzical-world-of-books/home",
-    "googleMapsUrl": "https://maps.google.com/?cid=15450638657574833739&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0111554,
-    "lng": 57.5644082,
-    "themes": [
-      "jeux-livres"
-    ],
-    "zone": "nord"
-  },
-  {
-    "id": "purple-dodo-children-s-books",
-    "name": "Purple Dodo Children's Books",
-    "category": "seconde-main",
-    "address": "Sottise Rd, Grand Baie",
-    "phone": "+230 5740 7096",
-    "website": "https://purple-dodo-childrens-book.kyte.site/",
-    "googleMapsUrl": "https://maps.google.com/?cid=8567403453282247118&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0216905,
-    "lng": 57.5821685,
-    "themes": [
-      "jeux-livres"
-    ],
-    "zone": "nord"
-  },
-  {
-    "id": "au-bonheur-des-livres",
-    "name": "Au Bonheur Des Livres",
-    "category": "seconde-main",
-    "address": "MFXP+6Q8, Vacoas-Phœnix",
-    "phone": "+230 5724 1149",
-    "website": "https://m.facebook.com/Au-Bonheur-des-Livres",
-    "googleMapsUrl": "https://maps.google.com/?cid=462160258065034802&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.3019597,
-    "lng": 57.4869399,
-    "themes": [
-      "jeux-livres"
-    ],
-    "zone": "centre"
-  },
-  {
-    "id": "bookcourt-bagatelle",
-    "name": "Bookcourt Bagatelle",
-    "category": "seconde-main",
-    "address": "QFGW+675, Moka",
-    "phone": "+230 468 8039",
-    "website": "http://www.bookcourt.mu/",
-    "googleMapsUrl": "https://maps.google.com/?cid=6975162582997395592&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.2244925,
-    "lng": 57.495743,
-    "themes": [
-      "jeux-livres"
-    ],
-    "zone": "centre"
-  },
-  {
-    "id": "bookcourt-caudan",
-    "name": "Bookcourt Caudan",
-    "category": "seconde-main",
-    "address": "Immeuble Caudan Water Front, Port Louis",
-    "phone": "+230 211 9262",
-    "website": "https://bookcourt.mu/",
-    "googleMapsUrl": "https://maps.google.com/?cid=17512253934416805646&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.1612737,
-    "lng": 57.4979353,
-    "themes": [
-      "jeux-livres"
-    ],
-    "zone": "centre"
-  },
-  {
-    "id": "editions-de-l-ocean-indien",
-    "name": "Éditions De l'Océan Indien",
-    "category": "seconde-main",
-    "address": "22 B, Rue Marcel Cabon, Stanley,Port Louis District, Beau Bassin-Rose Hill",
-    "phone": "+230 464 6761",
-    "website": "http://www.bookstore.mu/",
-    "googleMapsUrl": "https://maps.google.com/?cid=7907375677011279275&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.2456405,
-    "lng": 57.4650194,
-    "themes": [
-      "jeux-livres"
-    ],
-    "zone": "centre"
-  },
-  {
-    "id": "editions-le-printemps-ltd",
-    "name": "Editions Le Printemps Ltd",
-    "category": "seconde-main",
-    "address": "4, Club Road Vacoas MU, Vacoas-Phoenix 73328",
-    "phone": "+230 696 1017",
-    "website": "http://www.elpmauritius.com/",
-    "googleMapsUrl": "https://maps.google.com/?cid=12391923049090233291&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.2957464,
-    "lng": 57.4926045,
-    "themes": [
-      "jeux-livres"
     ],
     "zone": "centre"
   },
@@ -20936,21 +20486,6 @@
     "zone": "ouest"
   },
   {
-    "id": "open-house",
-    "name": "Open House",
-    "category": "seconde-main",
-    "address": "La Mivoie Royal Road, Black River",
-    "phone": "+230 5251 6184",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=16431386705393748912&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.3517018,
-    "lng": 57.3648242,
-    "themes": [
-      "equipement-maison"
-    ],
-    "zone": "ouest"
-  },
-  {
     "id": "charity-center",
     "name": "Charity Center",
     "category": "seconde-main",
@@ -20990,21 +20525,6 @@
     "googleMapsUrl": "https://maps.google.com/?cid=16600829368767327316&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.3450666,
     "lng": 57.3643529,
-    "themes": [
-      "habits-adultes"
-    ],
-    "zone": "ouest"
-  },
-  {
-    "id": "la-p-tite-parisienne",
-    "name": "La p'tite Parisienne",
-    "category": "seconde-main",
-    "address": "royale road, Tamarin",
-    "phone": "",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=14794938185644605531&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.3377911,
-    "lng": 57.3750805,
     "themes": [
       "habits-adultes"
     ],
@@ -21054,36 +20574,6 @@
       "habits-adultes"
     ],
     "zone": "nord"
-  },
-  {
-    "id": "marhaba-boutique",
-    "name": "Marhaba Boutique",
-    "category": "seconde-main",
-    "address": "MU, 24 karikal street, Port Louis 97117",
-    "phone": "+230 5816 0198",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=10662422939534724880&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.1577092,
-    "lng": 57.5161865,
-    "themes": [
-      "habits-adultes"
-    ],
-    "zone": "centre"
-  },
-  {
-    "id": "meem",
-    "name": "Meem",
-    "category": "seconde-main",
-    "address": "PCC2+7X7, Flic en Flac",
-    "phone": "+230 452 9090",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=2178311735096716490&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.2793285,
-    "lng": 57.402429,
-    "themes": [
-      "habits-enfants"
-    ],
-    "zone": "ouest"
   },
   {
     "id": "lydia-boat-mauritius-whales-and-dolphins-encounter-swim-with",
@@ -24619,21 +24109,6 @@
     "zone": "ouest"
   },
   {
-    "id": "izaa-furniture",
-    "name": "IZAA FURNITURE",
-    "category": "seconde-main",
-    "address": "Royal Road, Terre Rouge",
-    "phone": "+230 5862 2707",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=1139229195982481692&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.1265061,
-    "lng": 57.5342071,
-    "themes": [
-      "equipement-maison"
-    ],
-    "zone": "nord"
-  },
-  {
     "id": "le-morne-dodo-contract-cars-ltd",
     "name": "Le Morne - Dodo Contract Cars Ltd",
     "category": "seconde-main",
@@ -27087,96 +26562,6 @@
       "voitures-2-roues"
     ],
     "zone": "ouest"
-  },
-  {
-    "id": "bm-bookcentre-co-ltd",
-    "name": "BM Bookcentre Co. Ltd",
-    "category": "seconde-main",
-    "address": "Royal Road, A10 Curepipe Road, Curepipe 74217",
-    "phone": "+230 670 0617",
-    "website": "https://www.facebook.com/bmbookcentre/",
-    "googleMapsUrl": "https://maps.google.com/?cid=17848338246054769287&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.3040575,
-    "lng": 57.5233215,
-    "themes": [
-      "jeux-livres"
-    ],
-    "zone": "centre"
-  },
-  {
-    "id": "editions-le-printemps-curepipe",
-    "name": "Éditions Le Printemps- Curepipe",
-    "category": "seconde-main",
-    "address": "Curepipe",
-    "phone": "+230 674 0052",
-    "website": "http://elpmauritius.com/",
-    "googleMapsUrl": "https://maps.google.com/?cid=3974247892972975812&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.3223125,
-    "lng": 57.5264375,
-    "themes": [
-      "jeux-livres"
-    ],
-    "zone": "centre"
-  },
-  {
-    "id": "friends-bookshop-goodlands",
-    "name": "Friends Bookshop ( Goodlands )",
-    "category": "seconde-main",
-    "address": "Arya Mandir Rd, Goodlands",
-    "phone": "+230 282 0885",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=16738638397028343461&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0379113,
-    "lng": 57.649871,
-    "themes": [
-      "jeux-livres"
-    ],
-    "zone": "nord"
-  },
-  {
-    "id": "librairie-des-mascareignes",
-    "name": "Librairie Des Mascareignes",
-    "category": "seconde-main",
-    "address": "5, S Soupramanien Street MU, S Soopramanien St, Beau Bassin-Rose Hill 71363",
-    "phone": "+230 464 2748",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=16239143084645299171&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.243434,
-    "lng": 57.4750977,
-    "themes": [
-      "jeux-livres"
-    ],
-    "zone": "centre"
-  },
-  {
-    "id": "librairie-le-trefle",
-    "name": "Librairie Le Trèfle",
-    "category": "seconde-main",
-    "address": "MGP9+PHH, Sauzier St, Curepipe",
-    "phone": "+230 676 3025",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=6981314217515083627&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.3131681,
-    "lng": 57.5189769,
-    "themes": [
-      "jeux-livres"
-    ],
-    "zone": "centre"
-  },
-  {
-    "id": "librairie-bourbon",
-    "name": "Librairie Bourbon",
-    "category": "seconde-main",
-    "address": "RGP4+P2V, Port Louis",
-    "phone": "+230 212 1467",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=8345281290942661645&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.1631319,
-    "lng": 57.5050378,
-    "themes": [
-      "jeux-livres"
-    ],
-    "zone": "centre"
   },
   {
     "id": "lux-belle-mare",
@@ -29901,81 +29286,6 @@
     "zone": "nord"
   },
   {
-    "id": "cosy-comfy-concept-store",
-    "name": "Cosy&Comfy Concept Store",
-    "category": "seconde-main",
-    "address": "Sottise Rd, Grand Baie",
-    "phone": "+230 5780 0485",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=16878743021426283476&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0188084,
-    "lng": 57.5794628,
-    "themes": [
-      "habits-adultes"
-    ],
-    "zone": "nord"
-  },
-  {
-    "id": "poonith-store",
-    "name": "Poonith Store",
-    "category": "seconde-main",
-    "address": "Royal road, Esperance Trebuchet",
-    "phone": "+230 5790 4928",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=15931148508809191538&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0721994,
-    "lng": 57.6488625,
-    "themes": [
-      "habits-adultes"
-    ],
-    "zone": "nord"
-  },
-  {
-    "id": "bureau-vallee-mauritius-papeterie-et-photocopie",
-    "name": "Bureau Vallée Mauritius - papeterie et photocopie",
-    "category": "seconde-main",
-    "address": "Grand Baie La Croisette Rivière du Rempart MU, Grand Baie 30517",
-    "phone": "+230 268 1601",
-    "website": "http://www.bureau-vallee.mu/",
-    "googleMapsUrl": "https://maps.google.com/?cid=12881488145774688210&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0229906,
-    "lng": 57.57865,
-    "themes": [
-      "habits-adultes"
-    ],
-    "zone": "nord"
-  },
-  {
-    "id": "adamas",
-    "name": "Adamas",
-    "category": "seconde-main",
-    "address": "Grand Baie",
-    "phone": "+230 269 1609",
-    "website": "http://www.adamasltd.com/",
-    "googleMapsUrl": "https://maps.google.com/?cid=17952922269885196932&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0142015,
-    "lng": 57.5880252,
-    "themes": [
-      "habits-adultes"
-    ],
-    "zone": "nord"
-  },
-  {
-    "id": "singisking-car-ltd",
-    "name": "SingIsKing Car Ltd",
-    "category": "seconde-main",
-    "address": "MU, Pave Rd, Petit Raffray 30711",
-    "phone": "+230 5763 8503",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=577146235684696124&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0186107,
-    "lng": 57.6168699,
-    "themes": [
-      "habits-adultes"
-    ],
-    "zone": "nord"
-  },
-  {
     "id": "la-ferme-reservoir-viewpoint",
     "name": "La Ferme Reservoir Viewpoint",
     "category": "activites",
@@ -30060,21 +29370,6 @@
     "lng": 57.3713069,
     "themes": [
       "banques"
-    ],
-    "zone": "ouest"
-  },
-  {
-    "id": "fabulous-island-concept-store",
-    "name": "Fabulous Island ( Concept Store )",
-    "category": "seconde-main",
-    "address": "Rivière Noire",
-    "phone": "+230 5253 8088",
-    "website": "https://www.fabulous-island.com/",
-    "googleMapsUrl": "https://maps.google.com/?cid=2932358033783539189&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.3517294,
-    "lng": 57.3648211,
-    "themes": [
-      "habits-adultes"
     ],
     "zone": "ouest"
   },
@@ -30167,21 +29462,6 @@
       "equipement-maison"
     ],
     "zone": "est"
-  },
-  {
-    "id": "fox-decor",
-    "name": "Fox Decor",
-    "category": "seconde-main",
-    "address": "Labourdonnais St, Beau Bassin-Rose Hill",
-    "phone": "+230 5947 3388",
-    "website": "http://www.foxdecor.ltd/",
-    "googleMapsUrl": "https://maps.google.com/?cid=14386246769026376396&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.246413,
-    "lng": 57.4718643,
-    "themes": [
-      "equipement-maison"
-    ],
-    "zone": "centre"
   },
   {
     "id": "boodhoo-saleem-auction-room",

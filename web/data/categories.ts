@@ -51,6 +51,23 @@ export const FAMILIES: Partial<Record<CategoryKey, Family[]>> = {
       ],
     },
   ],
+  "seconde-main": [
+    {
+      key: "particuliers",
+      label: "Particuliers",
+      emoji: "🙋",
+      children: ["eq-maison-particuliers", "vetements-particuliers", "livres-particuliers"],
+    },
+    {
+      key: "magasins-occasion",
+      label: "Magasins d'occasion",
+      emoji: "🏪",
+      children: [
+        "equipement-maison", "voitures-2-roues", "habits-adultes", "habits-enfants",
+        "jeux-livres", "jeux-livres-enfants",
+      ],
+    },
+  ],
 };
 
 export const SUBCATEGORIES: Partial<Record<CategoryKey, Subcategory[]>> = {
@@ -144,6 +161,9 @@ export const SUBCATEGORIES: Partial<Record<CategoryKey, Subcategory[]>> = {
     { key: "habits-enfants", label: "Habits & chaussures enfants", emoji: "👶" },
     { key: "jeux-livres", label: "Jeux & livres", emoji: "🎲" },
     { key: "jeux-livres-enfants", label: "Jeux & livres enfants", emoji: "🧸" },
+    { key: "eq-maison-particuliers", label: "Équipement maison", emoji: "🛋️" },
+    { key: "vetements-particuliers", label: "Vêtements", emoji: "👕" },
+    { key: "livres-particuliers", label: "Livres", emoji: "📚" },
   ],
   evenements: [
     { key: "sportifs", label: "Sportifs", emoji: "🏆" },
