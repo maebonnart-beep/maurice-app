@@ -1931,7 +1931,8 @@
     "lat": -20.003863,
     "lng": 57.5812062,
     "themes": [
-      "epiceries-specialisees"
+      "epiceries-specialisees",
+      "vins-spiritueux"
     ],
     "priceRange": "se-faire-plaisir"
   },
@@ -1946,7 +1947,8 @@
     "lat": -20.0219739,
     "lng": 57.5787883,
     "themes": [
-      "epiceries-specialisees"
+      "epiceries-specialisees",
+      "vins-spiritueux"
     ]
   },
   {
@@ -5803,7 +5805,8 @@
     "lat": -20.2890181,
     "lng": 57.4995748,
     "themes": [
-      "golf"
+      "golf",
+      "tennis-padel"
     ]
   },
   {
@@ -10842,7 +10845,8 @@
     "lat": -20.2243893,
     "lng": 57.496401,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "vins-spiritueux"
     ]
   },
   {
@@ -11882,7 +11886,8 @@
     "lat": -20.0114278,
     "lng": 57.5984873,
     "themes": [
-      "complexes-sportifs"
+      "complexes-sportifs",
+      "tennis-padel"
     ]
   },
   {
@@ -12022,7 +12027,8 @@
     "lat": -20.0026864,
     "lng": 57.5546221,
     "themes": [
-      "complexes-sportifs"
+      "complexes-sportifs",
+      "tennis-padel"
     ]
   },
   {
@@ -20252,7 +20258,8 @@
     "lat": -20.3644304,
     "lng": 57.382951,
     "themes": [
-      "complexes-sportifs"
+      "complexes-sportifs",
+      "tennis-padel"
     ]
   },
   {
@@ -29125,6 +29132,617 @@
     "lng": 57.3722864,
     "themes": [
       "cafe-coworking"
+    ]
+  },
+  {
+    "id": "cana-padel-club",
+    "name": "Caña Padel Sports & Social Club",
+    "category": "activites",
+    "address": "Mon Rocher, Beau Plan, Pamplemousses",
+    "phone": "+230 5763 4454",
+    "website": "https://www.monrocher.mu/cana-padel-sports-and-social-club/",
+    "lat": -20.0951958,
+    "lng": 57.5866028,
+    "themes": [
+      "tennis-padel"
+    ]
+  },
+  {
+    "id": "labourdonnais-sports-club",
+    "name": "Labourdonnais Sports Club (tennis & padel)",
+    "category": "activites",
+    "address": "Domaine de Labourdonnais, Mapou",
+    "phone": "+230 266 9621",
+    "website": "https://labourdonnaissportsclub.com/en/tennis/",
+    "lat": -20.0695805,
+    "lng": 57.6150265,
+    "themes": [
+      "tennis-padel"
+    ]
+  },
+  {
+    "id": "rm-club-mauritius",
+    "name": "RM Club (tennis, padel, squash, badminton)",
+    "category": "activites",
+    "address": "Healthscape, Forbach, Rivière du Rempart",
+    "phone": "+230 267 1440",
+    "website": "https://rmclub.mu",
+    "lat": -20.0671334,
+    "lng": 57.6318177,
+    "themes": [
+      "tennis-padel"
+    ]
+  },
+  {
+    "id": "mauritius-tennis-academy-azuri",
+    "name": "Mauritius Tennis Academy (Azuri)",
+    "category": "activites",
+    "address": "Azuri Ocean & Golf Village, Roches Noires",
+    "phone": "",
+    "website": "https://mauritiustennisacademy.com",
+    "lat": -20.0995029,
+    "lng": 57.7067159,
+    "themes": [
+      "tennis-padel"
+    ]
+  },
+  {
+    "id": "maison-scott-croisette",
+    "name": "La Maison Scott - La Croisette",
+    "category": "food",
+    "address": "La Croisette, Grand Baie",
+    "phone": "+230 268 6465",
+    "website": "https://www.scott.mu/la-maison-scott-wine-spirit-store/",
+    "lat": -20.0209862,
+    "lng": 57.5797641,
+    "themes": [
+      "vins-spiritueux"
+    ]
+  },
+  {
+    "id": "maison-scott-ruisseau-creole",
+    "name": "La Maison Scott - Ruisseau Créole",
+    "category": "food",
+    "address": "Ruisseau Créole, Rivière Noire",
+    "phone": "+230 483 1008",
+    "website": "https://www.scott.mu/la-maison-scott-wine-spirit-store/",
+    "lat": -20.3576932,
+    "lng": 57.3685551,
+    "themes": [
+      "vins-spiritueux"
+    ]
+  },
+  {
+    "id": "maison-scott-riche-terre",
+    "name": "La Maison Scott - Riche Terre",
+    "category": "food",
+    "address": "Industrial Park 1, Riche Terre",
+    "phone": "+230 206 9440",
+    "website": "https://www.scott.mu/la-maison-scott-wine-spirit-store/",
+    "lat": -20.1287242,
+    "lng": 57.5153882,
+    "themes": [
+      "vins-spiritueux"
+    ]
+  },
+  {
+    "id": "20vin-bagatelle",
+    "name": "20/Vin - Bagatelle Mall",
+    "category": "food",
+    "address": "Outlet 36B, Bagatelle Mall of Mauritius, Moka 80832",
+    "phone": "+230 468 8038",
+    "website": "https://vsv.mu/",
+    "lat": -20.2245474,
+    "lng": 57.4974807,
+    "themes": [
+      "vins-spiritueux"
+    ]
+  },
+  {
+    "id": "le-connoisseur-phoenix",
+    "name": "Le Connoisseur - Phoenix",
+    "category": "food",
+    "address": "St Jean Motorway, Phoenix",
+    "phone": "+230 696 7950",
+    "website": "https://www.leconnoisseur.mu/saint-jean-phoenix",
+    "lat": -20.2817857,
+    "lng": 57.5025288,
+    "themes": [
+      "vins-spiritueux"
+    ]
+  },
+  {
+    "id": "audacity-wines-curepipe",
+    "name": "Audacity Wines - Curepipe",
+    "category": "food",
+    "address": "Les Arcades Currimjee, Curepipe",
+    "phone": "+230 5437 0939",
+    "website": "https://shop.audacitywines.mu",
+    "lat": -20.3188144,
+    "lng": 57.5240972,
+    "themes": [
+      "vins-spiritueux"
+    ]
+  },
+  {
+    "id": "audacity-wines-flacq",
+    "name": "Audacity Wines - Flacq",
+    "category": "food",
+    "address": "1er étage, Flacq Retail Park, Flacq",
+    "phone": "+230 489 6861",
+    "website": "https://shop.audacitywines.mu",
+    "lat": -20.1995026,
+    "lng": 57.7215378,
+    "themes": [
+      "vins-spiritueux"
+    ]
+  },
+  {
+    "id": "kairali-spa-vacoas",
+    "name": "Kairali Spa",
+    "category": "utiles",
+    "address": "8 Remy Ollier Street, Vacoas-Phoenix",
+    "phone": "+230 5257 1440",
+    "website": "https://www.kairali.mu",
+    "lat": -20.2850909,
+    "lng": 57.4963974,
+    "themes": [
+      "soins-detente"
+    ]
+  },
+  {
+    "id": "rising-sun-spa-curepipe",
+    "name": "Rising Sun Spa",
+    "category": "utiles",
+    "address": "Daruty De Grandpré Avenue, Curepipe",
+    "phone": "+230 674 2648",
+    "website": "",
+    "lat": -20.3150516,
+    "lng": 57.5211497,
+    "themes": [
+      "soins-detente"
+    ]
+  },
+  {
+    "id": "asr-photo-studio",
+    "name": "ASR Photo Studio",
+    "category": "utiles",
+    "address": "Royal Road, Mon Désir, Vacoas-Phoenix",
+    "phone": "+230 5810 5405",
+    "website": "",
+    "lat": -20.2851777,
+    "lng": 57.480327,
+    "themes": [
+      "photographes"
+    ]
+  },
+  {
+    "id": "quick-lab-grand-baie",
+    "name": "Quick Lab",
+    "category": "utiles",
+    "address": "Royal Road, Grand Baie (face au parking du Sunset Grand Baie)",
+    "phone": "+230 263 7113",
+    "website": "",
+    "lat": -20.0132702,
+    "lng": 57.5839488,
+    "themes": [
+      "photographes"
+    ]
+  },
+  {
+    "id": "easyprint-croisette",
+    "name": "EasyPrint",
+    "category": "utiles",
+    "address": "Shop A0-02, sous-sol entrée Intermart, La Croisette, Grand Baie",
+    "phone": "+230 269 7431",
+    "website": "",
+    "lat": -20.0209862,
+    "lng": 57.5797641,
+    "themes": [
+      "photographes"
+    ]
+  },
+  {
+    "id": "siva-studio-photo-lab",
+    "name": "Siva Studio and Photo Lab",
+    "category": "utiles",
+    "address": "NPF Building, Jules Koenig Street, Port Louis",
+    "phone": "+230 213 2874",
+    "website": "",
+    "lat": -20.163875,
+    "lng": 57.5043058,
+    "themes": [
+      "photographes"
+    ]
+  },
+  {
+    "id": "atm-mcb-super-u-grand-baie",
+    "name": "MCB ATM - Super U Grand Baie",
+    "category": "utiles",
+    "address": "Super U Commercial Centre, Royal Road, Grand Baie",
+    "phone": "",
+    "website": "",
+    "lat": -20.012714,
+    "lng": 57.5877873,
+    "themes": [
+      "distributeurs"
+    ]
+  },
+  {
+    "id": "atm-sbm-croisette-grand-baie",
+    "name": "SBM ATM - La Croisette Grand Baie",
+    "category": "utiles",
+    "address": "La Croisette Shopping Mall, Grand Baie",
+    "phone": "",
+    "website": "",
+    "lat": -20.0218093,
+    "lng": 57.5793437,
+    "themes": [
+      "distributeurs"
+    ]
+  },
+  {
+    "id": "atm-mcb-pasadena-flic-en-flac",
+    "name": "MCB ATM - Pasadena Village, Flic en Flac",
+    "category": "utiles",
+    "address": "Pasadena Village, Flic en Flac",
+    "phone": "",
+    "website": "",
+    "lat": -20.2790488,
+    "lng": 57.3681301,
+    "themes": [
+      "distributeurs"
+    ]
+  },
+  {
+    "id": "atm-sbm-pasadena-flic-en-flac",
+    "name": "SBM ATM - Pasadena, Flic en Flac",
+    "category": "utiles",
+    "address": "Pasadena, Flic en Flac",
+    "phone": "",
+    "website": "",
+    "lat": -20.2790095,
+    "lng": 57.3680383,
+    "themes": [
+      "distributeurs"
+    ]
+  },
+  {
+    "id": "atm-mcb-caudan-port-louis",
+    "name": "MCB ATM - Caudan Waterfront, Port Louis",
+    "category": "utiles",
+    "address": "Block A, Caudan Waterfront, Port Louis",
+    "phone": "",
+    "website": "",
+    "lat": -20.159145,
+    "lng": 57.501189,
+    "themes": [
+      "distributeurs"
+    ]
+  },
+  {
+    "id": "atm-sbm-place-armes-port-louis",
+    "name": "SBM ATM - SBM Tower, Place d'Armes",
+    "category": "utiles",
+    "address": "SBM Tower, Place D'Armes, Port Louis",
+    "phone": "",
+    "website": "",
+    "lat": -20.161848,
+    "lng": 57.501544,
+    "themes": [
+      "distributeurs"
+    ]
+  },
+  {
+    "id": "atm-bankone-port-louis",
+    "name": "Bank One ATM - Port Louis",
+    "category": "utiles",
+    "address": "16 Sir William Newton Street, Port Louis",
+    "phone": "",
+    "website": "",
+    "lat": -20.1620763,
+    "lng": 57.5033108,
+    "themes": [
+      "distributeurs"
+    ]
+  },
+  {
+    "id": "atm-maubank-curepipe",
+    "name": "MauBank ATM - Curepipe",
+    "category": "utiles",
+    "address": "195 A 10, Curepipe",
+    "phone": "",
+    "website": "",
+    "lat": -20.3191386,
+    "lng": 57.5245237,
+    "themes": [
+      "distributeurs"
+    ]
+  },
+  {
+    "id": "atm-sbm-tamarin",
+    "name": "SBM ATM - Palm Square, Tamarin",
+    "category": "utiles",
+    "address": "Palm Square, La Mivoie, Tamarin",
+    "phone": "",
+    "website": "",
+    "lat": -20.3443409,
+    "lng": 57.3643978,
+    "themes": [
+      "distributeurs"
+    ]
+  },
+  {
+    "id": "atm-mcb-trou-eau-douce",
+    "name": "MCB ATM - Trou d'Eau Douce",
+    "category": "utiles",
+    "address": "Coastal Road, Trou d'Eau Douce",
+    "phone": "",
+    "website": "",
+    "lat": -20.2434614,
+    "lng": 57.7837421,
+    "themes": [
+      "distributeurs"
+    ]
+  },
+  {
+    "id": "pharmacie-ducasse-grand-baie",
+    "name": "Pharmacie Ducasse",
+    "category": "utiles",
+    "address": "B13, Route Royale, Grand Baie",
+    "phone": "+230 263 7877",
+    "website": "",
+    "lat": -20.0156641,
+    "lng": 57.580876,
+    "themes": [
+      "pharmacies"
+    ]
+  },
+  {
+    "id": "pharmacie-flic-en-flac",
+    "name": "Pharmacie Flic en Flac",
+    "category": "utiles",
+    "address": "Fortuna Beach Building, Avenue des Flamingos, Flic en Flac",
+    "phone": "+230 453 9112",
+    "website": "",
+    "lat": -20.2794924,
+    "lng": 57.3687287,
+    "themes": [
+      "pharmacies"
+    ]
+  },
+  {
+    "id": "pharmacie-du-port-port-louis",
+    "name": "Pharmacie du Port",
+    "category": "utiles",
+    "address": "Rue John Kennedy, Immeuble Harbour Front, Port Louis",
+    "phone": "+230 208 1037",
+    "website": "",
+    "lat": -20.1618332,
+    "lng": 57.5010409,
+    "themes": [
+      "pharmacies"
+    ]
+  },
+  {
+    "id": "newton-pharmacy-port-louis",
+    "name": "Newton Pharmacy",
+    "category": "utiles",
+    "address": "10 Sir William Newton Street, Port Louis",
+    "phone": "+230 208 2244",
+    "website": "https://newtonpharmacy.net",
+    "lat": -20.1616147,
+    "lng": 57.5027911,
+    "themes": [
+      "pharmacies"
+    ]
+  },
+  {
+    "id": "pharmacie-espace-sante-curepipe",
+    "name": "Pharmacie Espace Santé",
+    "category": "utiles",
+    "address": "Botanical Gardens Avenue, Curepipe",
+    "phone": "+230 674 6008",
+    "website": "",
+    "lat": -20.3233571,
+    "lng": 57.5183069,
+    "themes": [
+      "pharmacies"
+    ]
+  },
+  {
+    "id": "care4u-pharmacy-curepipe",
+    "name": "Care 4U Pharmacy",
+    "category": "utiles",
+    "address": "A10, Forest Side, Curepipe",
+    "phone": "+230 676 4034",
+    "website": "",
+    "lat": -20.3240994,
+    "lng": 57.5276103,
+    "themes": [
+      "pharmacies"
+    ]
+  },
+  {
+    "id": "tamarin-pharmacy",
+    "name": "Tamarin Pharmacy",
+    "category": "utiles",
+    "address": "London Way Complex, A3, Tamarin",
+    "phone": "+230 483 5247",
+    "website": "",
+    "lat": -20.3532462,
+    "lng": 57.3655849,
+    "themes": [
+      "pharmacies"
+    ]
+  },
+  {
+    "id": "pharmacie-trou-eau-douce",
+    "name": "Pharmacie Trou d'Eau Douce",
+    "category": "utiles",
+    "address": "Royal Road, Trou d'Eau Douce",
+    "phone": "+230 480 3103",
+    "website": "",
+    "lat": -20.2397513,
+    "lng": 57.784971,
+    "themes": [
+      "pharmacies"
+    ]
+  },
+  {
+    "id": "pharmacie-quatre-bornes",
+    "name": "Pharmacie de Quatre Bornes",
+    "category": "utiles",
+    "address": "Surcouf Road, La Louise/Candos, Quatre Bornes",
+    "phone": "",
+    "website": "",
+    "lat": -20.2669411,
+    "lng": 57.4777741,
+    "themes": [
+      "pharmacies"
+    ]
+  },
+  {
+    "id": "headcase-benedicte",
+    "name": "Headcase par Bénédicte",
+    "category": "utiles",
+    "address": "Endemika Nursery, Petit Raffray",
+    "phone": "+230 289 0694",
+    "website": "https://www.benedictesummers.com/fr/",
+    "lat": -20.034952,
+    "lng": 57.625061,
+    "themes": [
+      "coiffeurs"
+    ]
+  },
+  {
+    "id": "maison-sasha-grand-baie",
+    "name": "Maison Sasha - Grand Baie",
+    "category": "utiles",
+    "address": "Route Royale, Pointe aux Canonniers, Grand Baie",
+    "phone": "+230 268 3838",
+    "website": "https://www.maison-sasha.com",
+    "lat": -20.003945,
+    "lng": 57.5555128,
+    "themes": [
+      "coiffeurs"
+    ]
+  },
+  {
+    "id": "sj-coiffure-flic-en-flac",
+    "name": "SJ Coiffure Loreal Hair Saloon",
+    "category": "utiles",
+    "address": "Royal Road, Flic en Flac",
+    "phone": "+230 5982 8388",
+    "website": "",
+    "lat": -20.2908185,
+    "lng": 57.3637961,
+    "themes": [
+      "coiffeurs"
+    ]
+  },
+  {
+    "id": "mike-coiffure-port-louis",
+    "name": "Mike Coiffure",
+    "category": "utiles",
+    "address": "Citadelle Mall, Sir Virgil Naz Street, Port Louis",
+    "phone": "+230 208 5056",
+    "website": "",
+    "lat": -20.1741747,
+    "lng": 57.5095922,
+    "themes": [
+      "coiffeurs"
+    ]
+  },
+  {
+    "id": "allure-coiffure-port-louis",
+    "name": "Allure Coiffure",
+    "category": "utiles",
+    "address": "Dorval Center, 5 Rue Louis Pasteur, Port Louis",
+    "phone": "+230 217 4860",
+    "website": "https://www.allurecoiffuresalon.com",
+    "lat": -20.1624522,
+    "lng": 57.5028044,
+    "themes": [
+      "coiffeurs"
+    ]
+  },
+  {
+    "id": "maison-sasha-curepipe",
+    "name": "Maison Sasha - Curepipe",
+    "category": "utiles",
+    "address": "28B St Thérèse Street, Curepipe",
+    "phone": "+230 674 7014",
+    "website": "https://www.maison-sasha.com",
+    "lat": -20.3150516,
+    "lng": 57.5211497,
+    "themes": [
+      "coiffeurs"
+    ]
+  },
+  {
+    "id": "natural-hair-culture-curepipe",
+    "name": "Natural Hair Culture",
+    "category": "utiles",
+    "address": "Garden Village Shopping Centre, Route du Jardin, Curepipe",
+    "phone": "+230 5446 6010",
+    "website": "https://naturalhairculture.com",
+    "lat": -20.3150516,
+    "lng": 57.5211497,
+    "themes": [
+      "coiffeurs"
+    ]
+  },
+  {
+    "id": "le-studio-tamarin",
+    "name": "Le Studio Tamarin",
+    "category": "utiles",
+    "address": "Cœur de Ville (Super U), Tamarin",
+    "phone": "+230 650 3221",
+    "website": "https://lestudio.mu",
+    "lat": -20.3292161,
+    "lng": 57.3776792,
+    "themes": [
+      "coiffeurs"
+    ]
+  },
+  {
+    "id": "salon-art-de-coiffure-qb",
+    "name": "Salon Art De Coiffure",
+    "category": "utiles",
+    "address": "La Louise, Kelvic Court, Quatre Bornes",
+    "phone": "+230 5765 9681",
+    "website": "",
+    "lat": -20.2643015,
+    "lng": 57.4800061,
+    "themes": [
+      "coiffeurs"
+    ]
+  },
+  {
+    "id": "x-hair-beauty-quatre-bornes",
+    "name": "X Hair & Beauty Salon",
+    "category": "utiles",
+    "address": "1st Floor, 128 St Jean Road, Quatre Bornes",
+    "phone": "",
+    "website": "https://xhairnbeauty.com",
+    "lat": -20.2643015,
+    "lng": 57.4800061,
+    "themes": [
+      "coiffeurs"
+    ]
+  },
+  {
+    "id": "espace-coiffure-guy-perrin",
+    "name": "Espace Coiffure Guy Perrin",
+    "category": "utiles",
+    "address": "Les Allées d'Helvétia, Moka",
+    "phone": "+230 433 0762",
+    "website": "",
+    "lat": -20.2259298,
+    "lng": 57.5227185,
+    "themes": [
+      "coiffeurs"
     ]
   }
 ]
