@@ -4,7 +4,7 @@ import { useCallback, useMemo, useRef, useState } from "react";
 import dynamic from "next/dynamic";
 import type { Business } from "@/lib/types";
 import type { MapBounds } from "./Map";
-import { CATEGORIES, CATEGORY_MAP, SUBCATEGORIES, PRICE_RANGES } from "@/data/categories";
+import { CATEGORIES, CATEGORY_MAP, SUBCATEGORIES, PRICE_RANGES, FAMILIES } from "@/data/categories";
 import { trackEvent } from "@/lib/track";
 
 const UNCLASSIFIED = "__unclassified__";
@@ -60,6 +60,7 @@ function metaFacts(b: Business): { icon: string; label: string }[] {
 export default function DirectoryClient({ businesses }: { businesses: Business[] }) {
   const [query, setQuery] = useState("");
   const [active, setActive] = useState<string>("all");
+  const [activeFamily, setActiveFamily] = useState<string | null>(null);
   const [activeThemes, setActiveThemes] = useState<Set<string>>(new Set());
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [filterByMap, setFilterByMap] = useState(true);
@@ -69,9 +70,22 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
   const onBoundsChange = useCallback((b: MapBounds) => setMapBounds(b), []);
 
   const subcategories = SUBCATEGORIES[active as keyof typeof SUBCATEGORIES];
+  const families = FAMILIES[active as keyof typeof FAMILIES];
+  const familyChildKeys = useMemo(
+    () => new Set(families?.flatMap((f) => f.children) ?? []),
+    [families]
+  );
+  const ungroupedSubcategories = subcategories?.filter((s) => !familyChildKeys.has(s.key)) ?? [];
+  const activeFamilyDef = families?.find((f) => f.key === activeFamily);
 
   function selectCategory(key: string) {
     setActive(key);
+    setActiveFamily(null);
+    setActiveThemes(new Set());
+  }
+
+  function selectFamily(key: string) {
+    setActiveFamily((prev) => (prev === key ? null : key));
     setActiveThemes(new Set());
   }
 
@@ -108,6 +122,20 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
     return c;
   }, [businesses, active, subcategories]);
 
+  const familyCounts = useMemo(() => {
+    const c: Record<string, number> = {};
+    if (!families) return c;
+    businesses.forEach((b) => {
+      if (b.category !== active) return;
+      families.forEach((f) => {
+        if ((b.themes || []).some((t) => f.children.includes(t))) {
+          c[f.key] = (c[f.key] || 0) + 1;
+        }
+      });
+    });
+    return c;
+  }, [businesses, active, families]);
+
   const rows = useMemo(() => {
     const q = query.trim().toLowerCase();
     return businesses
@@ -119,6 +147,9 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
             (activeThemes.has(UNCLASSIFIED) && themes.length === 0) ||
             themes.some((t) => activeThemes.has(t));
           if (!matches) return false;
+        } else if (activeFamilyDef) {
+          const themes = b.themes || [];
+          if (!themes.some((t) => activeFamilyDef.children.includes(t))) return false;
         }
         if (!q) return true;
         return (b.name + " " + b.address + " " + CATEGORY_MAP[b.category].label)
@@ -126,7 +157,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
           .includes(q);
       })
       .sort((a, b) => (b.tier === "premium" ? 1 : 0) - (a.tier === "premium" ? 1 : 0));
-  }, [businesses, query, active, activeThemes]);
+  }, [businesses, query, active, activeThemes, activeFamilyDef]);
 
   // Cartes affichées : limitées à la zone visible de la carte si le filtre est actif.
   const visibleRows = useMemo(() => {
@@ -222,7 +253,22 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
       {subcategories && (
         <div className="sticky top-[108px] z-10 bg-bg/85 backdrop-blur border-b border-border py-2.5">
           <div className="max-w-[1120px] mx-auto px-5 flex gap-2 overflow-x-auto">
-            {[...subcategories, { key: UNCLASSIFIED, label: "Non classé", emoji: "❔" }].map(
+            {families?.map((f) => (
+              <button
+                key={f.key}
+                onClick={() => selectFamily(f.key)}
+                aria-pressed={activeFamily === f.key}
+                className={`flex-none inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full border text-[13px] font-semibold whitespace-nowrap transition-colors ${
+                  activeFamily === f.key
+                    ? "bg-primary border-primary text-white"
+                    : "bg-surface border-border text-ink hover:border-primary"
+                }`}
+              >
+                {f.emoji} {f.label}
+                <span className="text-[11px] font-bold opacity-70">{familyCounts[f.key] || 0}</span>
+              </button>
+            ))}
+            {[...ungroupedSubcategories, { key: UNCLASSIFIED, label: "Non classé", emoji: "❔" }].map(
               (t) => (
                 <button
                   key={t.key}
@@ -241,6 +287,34 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                 </button>
               )
             )}
+          </div>
+        </div>
+      )}
+
+      {activeFamilyDef && (
+        <div className="sticky top-[152px] z-10 bg-bg/85 backdrop-blur border-b border-border py-2.5">
+          <div className="max-w-[1120px] mx-auto px-5 flex gap-2 overflow-x-auto">
+            {activeFamilyDef.children.map((childKey) => {
+              const child = subcategories?.find((s) => s.key === childKey);
+              if (!child) return null;
+              return (
+                <button
+                  key={child.key}
+                  onClick={() => toggleTheme(child.key)}
+                  aria-pressed={activeThemes.has(child.key)}
+                  className={`flex-none inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full border text-[13px] font-medium whitespace-nowrap transition-colors ${
+                    activeThemes.has(child.key)
+                      ? "bg-accent border-accent text-white"
+                      : "bg-surface border-border text-muted hover:border-accent hover:text-ink"
+                  }`}
+                >
+                  {child.emoji} {child.label}
+                  <span className="text-[11px] font-bold opacity-70">
+                    {themeCounts[child.key] || 0}
+                  </span>
+                </button>
+              );
+            })}
           </div>
         </div>
       )}

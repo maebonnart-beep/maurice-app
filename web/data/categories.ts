@@ -16,6 +16,43 @@ export const CATEGORY_MAP = Object.fromEntries(
 
 export type Subcategory = { key: string; label: string; emoji: string };
 
+export type Family = { key: string; label: string; emoji: string; children: string[] };
+
+export const FAMILIES: Partial<Record<CategoryKey, Family[]>> = {
+  food: [
+    {
+      key: "restauration",
+      label: "Restauration",
+      emoji: "🍽️",
+      children: [
+        "restaurants", "bars", "cafes-terrasses", "snacks-plage", "tables-hotes", "chefs-domicile",
+        "mauricienne", "fruits-de-mer", "indienne", "asiatique", "europeenne", "italien",
+        "grecque", "marocain", "grillades", "vegetarien", "fastfood", "kids-friendly",
+      ],
+    },
+    {
+      key: "commerces",
+      label: "Commerces",
+      emoji: "🛒",
+      children: [
+        "grandes-surfaces", "epiceries-specialisees", "boucheries", "poissonneries", "marches",
+        "livraisons", "boulangeries", "glaciers", "produits-francais", "vins-spiritueux",
+      ],
+    },
+  ],
+  activites: [
+    {
+      key: "sports",
+      label: "Sports",
+      emoji: "🏃",
+      children: [
+        "complexes-sportifs", "golf", "randonnee-trail", "sports-nautiques",
+        "centres-equestres", "tennis-padel",
+      ],
+    },
+  ],
+};
+
 export const SUBCATEGORIES: Partial<Record<CategoryKey, Subcategory[]>> = {
   activites: [
     { key: "parcs-animaliers", label: "Parcs animaliers", emoji: "🦁" },
