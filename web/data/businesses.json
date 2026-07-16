@@ -2915,7 +2915,10 @@
     "themes": [
       "randonnee-trail"
     ],
-    "hours": "Sentier ouvert tous les jours 6h-16h (départ conseillé 6h30)"
+    "hours": "Sentier ouvert tous les jours 6h-16h (départ conseillé 6h30)",
+    "duration": "3h-4h aller-retour",
+    "difficultyLevel": "confirme",
+    "guideRecommended": true
   },
   {
     "id": "black-river-gorges-national-park",
@@ -2931,7 +2934,10 @@
       "randonnee-trail",
       "parcs-nationaux-cascades"
     ],
-    "hours": "Tous les jours 6h-18h"
+    "hours": "Tous les jours 6h-18h",
+    "duration": "2h30 à 7h30 selon le sentier choisi",
+    "difficultyLevel": "habitue",
+    "guideRecommended": false
   },
   {
     "id": "chamarel-seven-coloured-earth",
@@ -2946,7 +2952,10 @@
     "themes": [
       "randonnee-trail"
     ],
-    "hours": "Tous les jours 8h30-17h30 (17h en hiver)"
+    "hours": "Tous les jours 8h30-17h30 (17h en hiver)",
+    "duration": "~3h (cascade) ; ~1h (terres des 7 couleurs)",
+    "difficultyLevel": "habitue",
+    "guideRecommended": true
   },
   {
     "id": "lion-mountain",
@@ -2961,7 +2970,10 @@
     "themes": [
       "randonnee-trail"
     ],
-    "hours": "Tous les jours, départ vers 9h"
+    "hours": "Tous les jours, départ vers 9h",
+    "duration": "3h-5h aller-retour",
+    "difficultyLevel": "confirme",
+    "guideRecommended": true
   },
   {
     "id": "pieter-both-mountain",
@@ -2975,7 +2987,10 @@
     "lng": 57.5461,
     "themes": [
       "randonnee-trail"
-    ]
+    ],
+    "duration": "4h-5h aller-retour",
+    "difficultyLevel": "confirme",
+    "guideRecommended": true
   },
   {
     "id": "le-pouce-mountain",
@@ -2989,7 +3004,10 @@
     "lng": 57.5323,
     "themes": [
       "randonnee-trail"
-    ]
+    ],
+    "duration": "3h-4h aller-retour",
+    "difficultyLevel": "habitue",
+    "guideRecommended": true
   },
   {
     "id": "trois-mamelles",
@@ -3003,7 +3021,10 @@
     "lng": 57.4645,
     "themes": [
       "randonnee-trail"
-    ]
+    ],
+    "duration": "3h-4h aller-retour",
+    "difficultyLevel": "confirme",
+    "guideRecommended": true
   },
   {
     "id": "corps-de-garde",
@@ -3017,7 +3038,9 @@
     "lng": 57.4785,
     "themes": [
       "randonnee-trail"
-    ]
+    ],
+    "duration": "3h-4h (jusqu'à 5h) aller-retour",
+    "difficultyLevel": "habitue"
   },
   {
     "id": "tamarin-sept-cascades",
@@ -3032,7 +3055,10 @@
     "themes": [
       "randonnee-trail",
       "parcs-nationaux-cascades"
-    ]
+    ],
+    "duration": "~3h (jusqu'à 4h)",
+    "difficultyLevel": "habitue",
+    "guideRecommended": true
   },
   {
     "id": "vallee-de-ferney",
@@ -3047,7 +3073,10 @@
     "themes": [
       "randonnee-trail"
     ],
-    "hours": "Tous les jours 9h-17h"
+    "hours": "Tous les jours 9h-17h",
+    "duration": "1h30 à 4h selon circuit (5 à 13km)",
+    "difficultyLevel": "habitue",
+    "guideRecommended": true
   },
   {
     "id": "ile-aux-aigrettes",
@@ -3062,7 +3091,10 @@
     "themes": [
       "randonnee-trail"
     ],
-    "hours": "Lun-Sam départs 9h30-14h30 (toutes les 30 min), Dim matin seulement 9h30-12h"
+    "hours": "Lun-Sam départs 9h30-14h30 (toutes les 30 min), Dim matin seulement 9h30-12h",
+    "duration": "1h30-2h (visite guidée)",
+    "difficultyLevel": "debutant",
+    "guideRecommended": true
   },
   {
     "id": "domaine-de-letoile",
@@ -3076,7 +3108,10 @@
     "lng": 57.6425,
     "themes": [
       "randonnee-trail"
-    ]
+    ],
+    "duration": "1h-3h selon circuit (jusqu'à 8km)",
+    "difficultyLevel": "debutant",
+    "guideRecommended": true
   },
   {
     "id": "yemen-nature-reserve",
@@ -3091,7 +3126,10 @@
     "themes": [
       "randonnee-trail"
     ],
-    "hours": "Lun, Mer, Sam - départ 14h (hiver) ou 15h (été)"
+    "hours": "Lun, Mer, Sam - départ 14h (hiver) ou 15h (été)",
+    "duration": "Variable selon parcours (5 à 13km)",
+    "difficultyLevel": "habitue",
+    "guideRecommended": true
   },
   {
     "id": "bel-ombre-hiking-trail",
@@ -3105,7 +3143,10 @@
     "lng": 57.4147,
     "themes": [
       "randonnee-trail"
-    ]
+    ],
+    "duration": "4h-5h (sentier principal 7,6km)",
+    "difficultyLevel": "habitue",
+    "guideRecommended": true
   },
   {
     "id": "grand-bassin-ganga-talao",
@@ -3120,7 +3161,10 @@
     "themes": [
       "randonnee-trail"
     ],
-    "hours": "Temple 5h-12h & 13h-18h, site accessible en permanence"
+    "hours": "Temple 5h-12h & 13h-18h, site accessible en permanence",
+    "duration": "1h-2h (tour du lac + temples + 108 marches)",
+    "difficultyLevel": "debutant",
+    "guideRecommended": false
   },
   {
     "id": "frederica-nature-reserve",
@@ -3135,7 +3179,10 @@
     "themes": [
       "randonnee-trail"
     ],
-    "hours": "Tous les jours 8h-20h"
+    "hours": "Tous les jours 8h-20h",
+    "duration": "2h-3h",
+    "difficultyLevel": "habitue",
+    "guideRecommended": true
   },
   {
     "id": "domaine-anna-flic-en-flac",
@@ -4593,7 +4640,10 @@
     "themes": [
       "randonnee-trail"
     ],
-    "hours": "Sentier ouvert tous les jours, point culminant de l'île (828m)"
+    "hours": "Sentier ouvert tous les jours, point culminant de l'île (828m)",
+    "duration": "3h-4h aller-retour",
+    "difficultyLevel": "confirme",
+    "guideRecommended": true
   },
   {
     "id": "casela-nature-parks",
@@ -4611,7 +4661,10 @@
     ],
     "hours": "Tous les jours 9h-18h (été), 9h-17h (hiver)",
     "priceRange": "se-faire-plaisir",
-    "animalsVisible": "Lions, tigres du Bengale, rhinocéros, girafes, zèbres, gnous, antilopes africaines, chameaux, caracals, servals, guépards, cerfs de Java, macaques, sangliers, autruches, mangoustes, oiseaux (volière)"
+    "animalsVisible": "Lions, tigres du Bengale, rhinocéros, girafes, zèbres, gnous, antilopes africaines, chameaux, caracals, servals, guépards, cerfs de Java, macaques, sangliers, autruches, mangoustes, oiseaux (volière)",
+    "description": "Tyrolienne/zipline au-dessus de la savane avec traversée du pont népalais, au sein du grand parc animalier",
+    "duration": "~1h (zipline seule)",
+    "entryPrice": "Entrée parc ~34€/adulte + zipline en supplément ~40€/adulte"
   },
   {
     "id": "la-vanille-nature-park",
@@ -4711,7 +4764,9 @@
       "culture-patrimoine"
     ],
     "hours": "Tous les jours, visites guidées 9h30-16h30",
-    "priceRange": "bon-marche"
+    "priceRange": "bon-marche",
+    "description": "Domaine touristique : calèche/petit train, safari en Land Rover, moulin à sucre et distillerie de rhum du 18e siècle",
+    "entryPrice": "Rs 150/pers (entrée) ; safari complet Rs 650"
   },
   {
     "id": "blue-penny-museum",
@@ -4953,7 +5008,10 @@
       "plages"
     ],
     "hours": "Accès libre",
-    "priceRange": "bon-marche"
+    "priceRange": "bon-marche",
+    "sandType": "Sable blanc fin",
+    "beachActivities": "Kitesurf, snorkeling, plongée, kayak/pédalo, planche à voile, stand-up paddle",
+    "beachLength": "Environ 500 m à 3 km selon les sources"
   },
   {
     "id": "plage-belle-mare",
@@ -4969,7 +5027,10 @@
       "plages"
     ],
     "hours": "Accès libre",
-    "priceRange": "bon-marche"
+    "priceRange": "bon-marche",
+    "sandType": "Sable blanc",
+    "beachActivities": "Kitesurf, snorkeling, golf, parachute ascensionnel",
+    "beachLength": "Environ 8 km"
   },
   {
     "id": "plage-trou-aux-biches",
@@ -4985,7 +5046,10 @@
       "plages"
     ],
     "hours": "Accès libre",
-    "priceRange": "bon-marche"
+    "priceRange": "bon-marche",
+    "sandType": "Sable blanc fin",
+    "beachActivities": "Baignade, snorkeling, plongée bouteille, sports nautiques, restaurants/bars",
+    "beachLength": "Environ 3 km"
   },
   {
     "id": "plage-flic-en-flac",
@@ -5001,7 +5065,10 @@
       "plages"
     ],
     "hours": "Accès libre",
-    "priceRange": "bon-marche"
+    "priceRange": "bon-marche",
+    "sandType": "Sable fin",
+    "beachActivities": "Kayak, stand-up paddle, plongée bouteille (grottes/épaves), baignade",
+    "beachLength": "Environ 8 km"
   },
   {
     "id": "plage-blue-bay",
@@ -5017,7 +5084,10 @@
       "plages"
     ],
     "hours": "Accès libre",
-    "priceRange": "bon-marche"
+    "priceRange": "bon-marche",
+    "sandType": "Sable fin, blanc",
+    "beachActivities": "Snorkeling (parc marin), plongée",
+    "beachLength": "Environ 500 m"
   },
   {
     "id": "plage-la-cuvette-grand-baie",
@@ -5033,7 +5103,10 @@
       "plages"
     ],
     "hours": "Accès libre",
-    "priceRange": "bon-marche"
+    "priceRange": "bon-marche",
+    "sandType": "Sable fin",
+    "beachActivities": "Marche sous-marine, parachute ascensionnel, plongée, baignade, barbecues familiaux",
+    "beachLength": "Environ 70 m (petite plage en fer à cheval)"
   },
   {
     "id": "plage-ile-aux-cerfs",
@@ -5049,7 +5122,10 @@
       "plages"
     ],
     "hours": "Accessible en bateau uniquement",
-    "priceRange": "prix-moyen"
+    "priceRange": "prix-moyen",
+    "sandType": "Sable blanc fin / poudreux",
+    "beachActivities": "Plongée, snorkeling, parachute ascensionnel, golf 18 trous",
+    "beachLength": "Plage principale ~500 m (île ~4 km de sable au total)"
   },
   {
     "id": "plage-mont-choisy",
@@ -5065,7 +5141,10 @@
       "plages"
     ],
     "hours": "Accès libre",
-    "priceRange": "bon-marche"
+    "priceRange": "bon-marche",
+    "sandType": "Sable blanc fin",
+    "beachActivities": "Farniente, plongée, snorkeling, kayak/paddle, golf 18 trous, jogging",
+    "beachLength": "Environ 3 km"
   },
   {
     "id": "plage-pereybere",
@@ -5081,7 +5160,10 @@
       "plages"
     ],
     "hours": "Accès libre",
-    "priceRange": "bon-marche"
+    "priceRange": "bon-marche",
+    "sandType": "Sable blanc fin",
+    "beachActivities": "Kayak, SUP, kitesurf, ski nautique, pêche au gros, catamaran, snorkeling, planche à voile",
+    "beachLength": "Environ 200-400 m selon les sources"
   },
   {
     "id": "plage-bel-ombre",
@@ -5097,7 +5179,10 @@
       "plages"
     ],
     "hours": "Accès libre",
-    "priceRange": "bon-marche"
+    "priceRange": "bon-marche",
+    "sandType": "Sable doré",
+    "beachActivities": "Baignade, plongée, snorkeling, kitesurf, pêche en haute mer, golf",
+    "beachLength": "Plus de 2 km"
   },
   {
     "id": "roti-baboolall-triolet",
@@ -11606,7 +11691,10 @@
       "parcs-aventures"
     ],
     "badge": "coup-de-coeur",
-    "promoText": "Superbe parc, organisation bien rodée. Idéal en famille."
+    "promoText": "Superbe parc, organisation bien rodée. Idéal en famille.",
+    "description": "Parc naturel (sentiers, vallées, cascades) intégrant le site des 23 Coloured Earth",
+    "duration": "~5h de visite",
+    "entryPrice": "12€/adulte"
   },
   {
     "id": "23-coloured-earth-by-valle-advenature-park",
@@ -11620,7 +11708,10 @@
     "lng": 57.4851336,
     "themes": [
       "parcs-aventures"
-    ]
+    ],
+    "description": "Site inclus dans le billet standard de Vallé Advenature Park (même complexe)",
+    "duration": "~5h (visite globale du parc)",
+    "entryPrice": "12€/adulte (billet du parc, inclus)"
   },
   {
     "id": "lavilleon-adventure-park",
@@ -11634,7 +11725,9 @@
     "lng": 57.3729977,
     "themes": [
       "parcs-aventures"
-    ]
+    ],
+    "description": "Parcours ziplines/tyroliennes + via ferrata sur les hauteurs de Chamarel, vue sur la vallée et Baie du Cap",
+    "entryPrice": "Entrée + forêt Rs 250 ; Via Ferrata Rs 1300 ; 3 ziplines + pont Rs 1800"
   },
   {
     "id": "time-twisters-outdoor-recreational-park",
@@ -11648,7 +11741,8 @@
     "lng": 57.6409689,
     "themes": [
       "parcs-aventures"
-    ]
+    ],
+    "description": "Parc familial de loisirs en plein air (trampoline, aire de jeux, jeux d'eau)"
   },
   {
     "id": "lokal-adventure-2",
@@ -11662,7 +11756,9 @@
     "lng": 57.3777289,
     "themes": [
       "parcs-aventures"
-    ]
+    ],
+    "description": "Agence d'activités outdoor à Tamarin : kayak dauphins, randonnée/canyoning 7 Cascades, pirogue lagon Mahébourg, ascension Le Morne",
+    "entryPrice": "Variable selon activité : à partir de Rs 2000/pers (kayak dauphins) jusqu'à Rs 5500/pers (pirogue Mahébourg)"
   },
   {
     "id": "yanature",
@@ -11676,7 +11772,10 @@
     "lng": 57.3675079,
     "themes": [
       "parcs-aventures"
-    ]
+    ],
+    "description": "Société de randonnée/trekking à Rivière Noire : Gorges de Rivière Noire, 7 Cascades, trail running, kayak dauphins",
+    "duration": "Randonnée ~3-4h ; kayak ~2h30",
+    "entryPrice": "~50€/pers (rando) ; ~45€/pers (kayak dauphins)"
   },
   {
     "id": "cascade-500-pieds",
@@ -11692,7 +11791,10 @@
       "parcs-nationaux-cascades",
       "randonnee-trail"
     ],
-    "promoText": "Randonnée pour marcheurs confirmés."
+    "promoText": "Randonnée pour marcheurs confirmés.",
+    "duration": "4h-5h aller-retour",
+    "difficultyLevel": "confirme",
+    "guideRecommended": true
   },
   {
     "id": "le-chamouze-restaurant-by-valle-advenature-park",
@@ -11704,9 +11806,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=8525446929586443673&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.4600178,
     "lng": 57.4870915,
-    "themes": [
-      "parcs-aventures"
-    ]
+    "themes": []
   },
   {
     "id": "la-terre-des-7-couleurs",
@@ -11720,7 +11820,10 @@
     "lng": 57.3731676,
     "themes": [
       "parcs-aventures"
-    ]
+    ],
+    "description": "Site géologique des terres colorées de Chamarel + cascade, sentiers d'observation",
+    "duration": "~2h",
+    "entryPrice": "Rs 250/adulte"
   },
   {
     "id": "alexandra-falls",
@@ -11762,7 +11865,9 @@
     "lng": 57.7779502,
     "themes": [
       "parcs-aventures"
-    ]
+    ],
+    "description": "Éco-lodge/camping sur la Grande Rivière Sud-Est : kayak, SUP, randonnée, navette gratuite vers l'Île aux Cerfs",
+    "entryPrice": "Nuitée dès Rs 8000/tente (jusqu'à 4 pers., basse saison)"
   },
   {
     "id": "cascade-de-chamarel",
@@ -11788,9 +11893,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=2245916703703746791&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.0699488,
     "lng": 57.5491497,
-    "themes": [
-      "parcs-aventures"
-    ]
+    "themes": []
   },
   {
     "id": "skydive-mauritius",
@@ -11804,7 +11907,10 @@
     "lng": 57.6841354,
     "themes": [
       "parcs-aventures"
-    ]
+    ],
+    "description": "Saut en parachute en tandem depuis un Cessna à 10 000 pieds, au-dessus du lagon",
+    "duration": "Chute libre ~30 sec + voile 5-7 min ; expérience totale ~3-4h",
+    "entryPrice": "Dès Rs 18 900-21 500/pers"
   },
   {
     "id": "notre-dame-auxiliatrice-de-cap-malheureux",
@@ -11816,9 +11922,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=15513762636178040156&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -19.9866358,
     "lng": 57.6222496,
-    "themes": [
-      "parcs-aventures"
-    ]
+    "themes": []
   },
   {
     "id": "mauricia-beachcomber-resort-spa",
@@ -11830,9 +11934,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=9553554589427230571&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.0093006,
     "lng": 57.5799494,
-    "themes": [
-      "parcs-aventures"
-    ]
+    "themes": []
   },
   {
     "id": "rm-grand-baie",
@@ -11846,7 +11948,10 @@
     "lng": 57.6140781,
     "themes": [
       "complexes-sportifs"
-    ]
+    ],
+    "sportsListed": "Tennis, squash, padel, badminton, pickleball, beach tennis, foot à 5, escalade, musculation/cardio, cours collectifs, Pilates, Yoga",
+    "hasRestauration": true,
+    "kidsActivities": true
   },
   {
     "id": "urban-sport-grand-baie",
@@ -11861,7 +11966,9 @@
     "themes": [
       "complexes-sportifs",
       "tennis-padel"
-    ]
+    ],
+    "sportsListed": "Padel, foot5, pickleball, mini-basket, fitness, danse",
+    "hasRestauration": true
   },
   {
     "id": "shape-sport-club",
@@ -11875,7 +11982,9 @@
     "lng": 57.5797277,
     "themes": [
       "complexes-sportifs"
-    ]
+    ],
+    "sportsListed": "Musculation, arts martiaux (kickboxing, boxe, Muay Thai), cours collectifs rooftop (zumba, spinning, yoga...)",
+    "kidsActivities": true
   },
   {
     "id": "ennoia-grand-baie",
@@ -11889,7 +11998,10 @@
     "lng": 57.5770075,
     "themes": [
       "complexes-sportifs"
-    ]
+    ],
+    "sportsListed": "Boxe, natation, circuit training, LesMills, Aqua Gym, Yoga, Pilates, Zumba",
+    "hasRestauration": true,
+    "kidsActivities": true
   },
   {
     "id": "isla-padel-grand-baie-2",
@@ -11903,7 +12015,9 @@
     "lng": 57.5777735,
     "themes": [
       "complexes-sportifs"
-    ]
+    ],
+    "sportsListed": "Padel (6 courts), cours individuels/collectifs, tournois",
+    "hasRestauration": true
   },
   {
     "id": "crossfit-grand-baie",
@@ -11917,7 +12031,8 @@
     "lng": 57.5901603,
     "themes": [
       "complexes-sportifs"
-    ]
+    ],
+    "sportsListed": "CrossFit (WOD quotidien)"
   },
   {
     "id": "grand-baie-gym-hydro-spa",
@@ -11931,7 +12046,10 @@
     "lng": 57.5669265,
     "themes": [
       "complexes-sportifs"
-    ]
+    ],
+    "sportsListed": "Musculation/cardio, cours collectifs, piscine 25m, spa/hammam/sauna, TRX, Pilates, Yoga",
+    "hasRestauration": true,
+    "kidsActivities": true
   },
   {
     "id": "gymac-ltd",
@@ -11945,7 +12063,9 @@
     "lng": 57.5797004,
     "themes": [
       "complexes-sportifs"
-    ]
+    ],
+    "sportsListed": "Gymnastique, tumbling/trampoline, parkour, acrobatie aérienne, pole dance, breakdance, judo",
+    "kidsActivities": true
   },
   {
     "id": "city-sport-grand-baie",
@@ -11957,9 +12077,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=2464769298858570927&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.0122315,
     "lng": 57.5872783,
-    "themes": [
-      "complexes-sportifs"
-    ]
+    "themes": []
   },
   {
     "id": "rivage-dore-pilates",
@@ -11973,7 +12091,8 @@
     "lng": 57.6126886,
     "themes": [
       "complexes-sportifs"
-    ]
+    ],
+    "sportsListed": "Pilates (reformer)"
   },
   {
     "id": "basketball-playground-grand-baie",
@@ -11987,7 +12106,8 @@
     "lng": 57.5808789,
     "themes": [
       "complexes-sportifs"
-    ]
+    ],
+    "sportsListed": "Terrain de basketball public en plein air"
   },
   {
     "id": "energia-mauritius",
@@ -12002,7 +12122,9 @@
     "themes": [
       "complexes-sportifs",
       "tennis-padel"
-    ]
+    ],
+    "sportsListed": "Gym/fitness, personal training, cours collectifs, 2 courts padel",
+    "hasRestauration": true
   },
   {
     "id": "islandive",
@@ -12014,9 +12136,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=3697457454893286808&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.0165083,
     "lng": 57.5768209,
-    "themes": [
-      "randonnee-trail"
-    ]
+    "themes": []
   },
   {
     "id": "pereybere-beach",
@@ -12028,9 +12148,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=9398680607376591601&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -19.994091,
     "lng": 57.590907,
-    "themes": [
-      "randonnee-trail"
-    ]
+    "themes": []
   },
   {
     "id": "7-cascade",
@@ -12056,9 +12174,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=8203412095017759278&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.2332484,
     "lng": 57.7449342,
-    "themes": [
-      "randonnee-trail"
-    ]
+    "themes": []
   },
   {
     "id": "super-holidays-mauritius",
@@ -12070,9 +12186,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=12964198767202724838&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.0371532,
     "lng": 57.5468966,
-    "themes": [
-      "randonnee-trail"
-    ]
+    "themes": []
   },
   {
     "id": "island-ease-holidays-mauritius",
@@ -12084,9 +12198,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=15345093846425276351&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.0254023,
     "lng": 57.5516996,
-    "themes": [
-      "randonnee-trail"
-    ]
+    "themes": []
   },
   {
     "id": "top-travel-tours",
@@ -12098,9 +12210,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=4058551696530941528&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -19.9937205,
     "lng": 57.5920575,
-    "themes": [
-      "randonnee-trail"
-    ]
+    "themes": []
   },
   {
     "id": "banana-beach-club",
@@ -12112,9 +12222,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=12858547714873342062&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.0099581,
     "lng": 57.5831259,
-    "themes": [
-      "randonnee-trail"
-    ],
+    "themes": [],
     "badge": "selection"
   },
   {
@@ -12127,9 +12235,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=322944315205175398&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.0358808,
     "lng": 57.5456335,
-    "themes": [
-      "randonnee-trail"
-    ]
+    "themes": []
   },
   {
     "id": "ratana-travel-agent",
@@ -12141,9 +12247,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=13814110812568631851&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.0112882,
     "lng": 57.584556,
-    "themes": [
-      "randonnee-trail"
-    ]
+    "themes": []
   },
   {
     "id": "dive-spirit-mauritius",
@@ -12155,9 +12259,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=12743168454840637600&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.0415931,
     "lng": 57.5417211,
-    "themes": [
-      "randonnee-trail"
-    ]
+    "themes": []
   },
   {
     "id": "cap-malheureux",
@@ -12169,9 +12271,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=12733151424255617489&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -19.986414,
     "lng": 57.6221585,
-    "themes": [
-      "randonnee-trail"
-    ]
+    "themes": []
   },
   {
     "id": "sunset-boulevard",
@@ -12183,9 +12283,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=8577640576914899486&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.0133505,
     "lng": 57.5839125,
-    "themes": [
-      "randonnee-trail"
-    ]
+    "themes": []
   },
   {
     "id": "tamil-surya-oudya-sangam-temple",
@@ -12197,9 +12295,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=10162128145404463679&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.0150179,
     "lng": 57.5724526,
-    "themes": [
-      "randonnee-trail"
-    ]
+    "themes": []
   },
   {
     "id": "clos-du-littoral",
@@ -12211,9 +12307,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=13877793204047674273&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.024059,
     "lng": 57.592617,
-    "themes": [
-      "randonnee-trail"
-    ]
+    "themes": []
   },
   {
     "id": "le-performant-sport-fishing",
@@ -16800,9 +16894,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=11699566664869769216&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.2499364,
     "lng": 57.3833363,
-    "themes": [
-      "parcs-aventures"
-    ]
+    "themes": []
   },
   {
     "id": "sparc",
@@ -16816,7 +16908,10 @@
     "lng": 57.3957455,
     "themes": [
       "complexes-sportifs"
-    ]
+    ],
+    "sportsListed": "Piscine pro, foot (4 terrains 5), tennis/padel, basket/volley, pétanque, jogging, fitness, ~26 activités (yoga, zumba...)",
+    "hasRestauration": true,
+    "kidsActivities": true
   },
   {
     "id": "sport-center",
@@ -16942,7 +17037,10 @@
     "lng": 57.3737426,
     "themes": [
       "randonnee-trail"
-    ]
+    ],
+    "duration": "2h30 (version courte, 10.8km), plus si intégral",
+    "difficultyLevel": "debutant",
+    "guideRecommended": false
   },
   {
     "id": "golden-wave-charters-big-game-fishing-igfa-captain-victor-pe",
@@ -20201,7 +20299,10 @@
     "lng": 57.4849979,
     "themes": [
       "parcs-aventures"
-    ]
+    ],
+    "description": "Traversée du plus long pont suspendu de l'Océan Indien (350m, 100m au-dessus de la canopée), Vallé Advenature Park",
+    "duration": "20-25 min (traversée)",
+    "entryPrice": "48$/pers (billet combo incluant pont, cascades, ferme, musée, 23 Coloured Earth)"
   },
   {
     "id": "urban-sport",
@@ -20216,7 +20317,9 @@
     "themes": [
       "complexes-sportifs",
       "tennis-padel"
-    ]
+    ],
+    "sportsListed": "Padel (4 courts extérieurs), foot5 (adultes et enfants), boutique padel",
+    "hasRestauration": true
   },
   {
     "id": "ion-club-la-pointe-windsurf-kitesurf-wingfoil-surf-center",
@@ -20229,7 +20332,7 @@
     "lat": -20.4658432,
     "lng": 57.3086322,
     "themes": [
-      "complexes-sportifs"
+      "sports-nautiques"
     ]
   },
   {
@@ -20314,7 +20417,8 @@
     "lng": 57.4780216,
     "themes": [
       "randonnee-trail"
-    ]
+    ],
+    "guideRecommended": true
   },
   {
     "id": "sublime-point",
@@ -20328,7 +20432,9 @@
     "lng": 57.3743012,
     "themes": [
       "randonnee-trail"
-    ]
+    ],
+    "difficultyLevel": "debutant",
+    "guideRecommended": false
   },
   {
     "id": "radventure-experience-mauritius",
@@ -20342,7 +20448,8 @@
     "lng": 57.7071727,
     "themes": [
       "randonnee-trail"
-    ]
+    ],
+    "guideRecommended": true
   },
   {
     "id": "plateau-resmousse",
@@ -20356,7 +20463,10 @@
     "lng": 57.4305907,
     "themes": [
       "randonnee-trail"
-    ]
+    ],
+    "duration": "30-40 min (2.5km) ; jusqu'à 2h15-5h si combiné",
+    "difficultyLevel": "debutant",
+    "guideRecommended": false
   },
   {
     "id": "hiking-in-mauritius-zilwaventure",
@@ -20370,7 +20480,8 @@
     "lng": 57.3758358,
     "themes": [
       "randonnee-trail"
-    ]
+    ],
+    "guideRecommended": true
   },
   {
     "id": "petit-morne",
@@ -20396,9 +20507,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=6164962893733141136&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.4649444,
     "lng": 57.3425164,
-    "themes": [
-      "randonnee-trail"
-    ]
+    "themes": []
   },
   {
     "id": "black-river-peak-mauritius-friendly",
@@ -20412,7 +20521,10 @@
     "lng": 57.4272177,
     "themes": [
       "randonnee-trail"
-    ]
+    ],
+    "duration": "3h30-4h aller-retour",
+    "difficultyLevel": "confirme",
+    "guideRecommended": true
   },
   {
     "id": "case-noyale-embarqation-point",
@@ -23325,9 +23437,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=7008834189898105557&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.5243899,
     "lng": 57.5322158,
-    "themes": [
-      "randonnee-trail"
-    ]
+    "themes": []
   },
   {
     "id": "grse-waterfall",
@@ -23353,9 +23463,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=11352111291268169268&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.5245451,
     "lng": 57.5303605,
-    "themes": [
-      "randonnee-trail"
-    ]
+    "themes": []
   },
   {
     "id": "baie-du-jacotet",
@@ -23367,9 +23475,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=371396553297542256&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.5010625,
     "lng": 57.4461422,
-    "themes": [
-      "randonnee-trail"
-    ]
+    "themes": []
   },
   {
     "id": "la-cambuse-beach-2",
@@ -23381,9 +23487,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=13287811304313231758&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.455025,
     "lng": 57.6995352,
-    "themes": [
-      "randonnee-trail"
-    ]
+    "themes": []
   },
   {
     "id": "montagne-des-signaux",
@@ -23397,7 +23501,10 @@
     "lng": 57.4921706,
     "themes": [
       "randonnee-trail"
-    ]
+    ],
+    "duration": "~2h aller-retour",
+    "difficultyLevel": "debutant",
+    "guideRecommended": false
   },
   {
     "id": "domaine-de-saint-aubin-le-saint-aubin-restaurant",
@@ -23409,9 +23516,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=2533630118055846895&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.5012019,
     "lng": 57.5435746,
-    "themes": [
-      "randonnee-trail"
-    ]
+    "themes": []
   },
   {
     "id": "royal-big-game-fishing-original",
@@ -25759,7 +25864,7 @@
     "lat": -20.1962179,
     "lng": 57.7749207,
     "themes": [
-      "parcs-aventures"
+      "sports-nautiques"
     ]
   },
   {
@@ -25773,7 +25878,7 @@
     "lat": -20.1756856,
     "lng": 57.7704692,
     "themes": [
-      "parcs-aventures"
+      "sports-nautiques"
     ]
   },
   {
@@ -25787,7 +25892,7 @@
     "lat": -20.4448478,
     "lng": 57.709801,
     "themes": [
-      "parcs-aventures"
+      "sports-nautiques"
     ]
   },
   {
@@ -25830,7 +25935,10 @@
     "lng": 57.7265865,
     "themes": [
       "randonnee-trail"
-    ]
+    ],
+    "duration": "~2h (vers Poste Lafayette) ; boucles courtes ~1h-1h30",
+    "difficultyLevel": "debutant",
+    "guideRecommended": false
   },
   {
     "id": "la-cave-madame",
@@ -25842,9 +25950,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=18028474594421578445&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.1113051,
     "lng": 57.7184665,
-    "themes": [
-      "randonnee-trail"
-    ]
+    "themes": []
   },
   {
     "id": "calypso-excursion-mauritius",
@@ -25856,9 +25962,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=16432801802986067173&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.4440279,
     "lng": 57.7166553,
-    "themes": [
-      "randonnee-trail"
-    ]
+    "themes": []
   },
   {
     "id": "trou-d-eau-douce",
@@ -25870,9 +25974,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=2089374159881972576&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.2433824,
     "lng": 57.7836139,
-    "themes": [
-      "randonnee-trail"
-    ]
+    "themes": []
   },
   {
     "id": "ile-aux-cerfs-beach",
@@ -25884,9 +25986,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=7434272591009198434&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.2668926,
     "lng": 57.8056799,
-    "themes": [
-      "randonnee-trail"
-    ]
+    "themes": []
   },
   {
     "id": "vallee-d-osterlog-endemic-garden",
@@ -25900,7 +26000,10 @@
     "lng": 57.6186578,
     "themes": [
       "randonnee-trail"
-    ]
+    ],
+    "duration": "2h-3h",
+    "difficultyLevel": "debutant",
+    "guideRecommended": false
   },
   {
     "id": "escale-marine",
@@ -27818,9 +27921,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=8068880704887219508&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.003001,
     "lng": 57.6370702,
-    "themes": [
-      "randonnee-trail"
-    ]
+    "themes": []
   },
   {
     "id": "octopus-diving-centre",
@@ -27832,9 +27933,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=298787552549346363&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -19.9952945,
     "lng": 57.5901832,
-    "themes": [
-      "randonnee-trail"
-    ]
+    "themes": []
   },
   {
     "id": "chez-nad",
