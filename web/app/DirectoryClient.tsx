@@ -9,6 +9,14 @@ import { trackEvent } from "@/lib/track";
 
 const UNCLASSIFIED = "__unclassified__";
 
+const ZONES: { key: string; label: string; emoji: string }[] = [
+  { key: "nord", label: "Nord", emoji: "⬆️" },
+  { key: "est", label: "Est", emoji: "➡️" },
+  { key: "sud", label: "Sud", emoji: "⬇️" },
+  { key: "ouest", label: "Ouest", emoji: "⬅️" },
+  { key: "centre", label: "Centre", emoji: "🎯" },
+];
+
 const Map = dynamic(() => import("./Map"), {
   ssr: false,
   loading: () => (
@@ -36,6 +44,13 @@ const DIFFICULTY_LABELS: Record<string, string> = {
   confirme: "Confirmé",
 };
 
+function badgeAccentColor(badge?: Business["badge"]): string | undefined {
+  if (badge === "coup-de-coeur") return "var(--primary)";
+  if (badge === "selection") return "var(--primary-deep)";
+  if (badge === "partenaire") return "var(--accent)";
+  return undefined;
+}
+
 function metaFacts(b: Business): { icon: string; label: string }[] {
   const facts: { icon: string; label: string }[] = [];
   if (b.duration) facts.push({ icon: "⏱️", label: b.duration });
@@ -62,6 +77,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
   const [active, setActive] = useState<string>("all");
   const [activeFamily, setActiveFamily] = useState<string | null>(null);
   const [activeThemes, setActiveThemes] = useState<Set<string>>(new Set());
+  const [activeZones, setActiveZones] = useState<Set<string>>(new Set());
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [filterByMap, setFilterByMap] = useState(true);
   const [mapBounds, setMapBounds] = useState<MapBounds | null>(null);
@@ -87,6 +103,15 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
   function selectFamily(key: string) {
     setActiveFamily((prev) => (prev === key ? null : key));
     setActiveThemes(new Set());
+  }
+
+  function toggleZone(key: string) {
+    setActiveZones((prev) => {
+      const next = new Set(prev);
+      if (next.has(key)) next.delete(key);
+      else next.add(key);
+      return next;
+    });
   }
 
   function toggleTheme(key: string) {
@@ -136,10 +161,20 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
     return c;
   }, [businesses, active, families]);
 
+  const zoneCounts = useMemo(() => {
+    const c: Record<string, number> = {};
+    businesses.forEach((b) => {
+      if (active !== "all" && b.category !== active) return;
+      if (b.zone) c[b.zone] = (c[b.zone] || 0) + 1;
+    });
+    return c;
+  }, [businesses, active]);
+
   const rows = useMemo(() => {
     const q = query.trim().toLowerCase();
     return businesses
       .filter((b) => {
+        if (activeZones.size > 0 && (!b.zone || !activeZones.has(b.zone))) return false;
         if (active !== "all" && b.category !== active) return false;
         if (activeThemes.size > 0) {
           const themes = b.themes || [];
@@ -157,7 +192,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
           .includes(q);
       })
       .sort((a, b) => (b.tier === "premium" ? 1 : 0) - (a.tier === "premium" ? 1 : 0));
-  }, [businesses, query, active, activeThemes, activeFamilyDef]);
+  }, [businesses, query, active, activeThemes, activeFamilyDef, activeZones]);
 
   // Cartes affichées : limitées à la zone visible de la carte si le filtre est actif.
   const visibleRows = useMemo(() => {
@@ -217,6 +252,24 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
             autoComplete="off"
             className="w-full h-[52px] pl-11 pr-4 rounded-full border border-border bg-surface text-ink text-base shadow-[0_1px_2px_rgba(13,43,42,.05),0_12px_30px_-14px_rgba(13,43,42,.28)] focus:outline-none focus:border-primary"
           />
+        </div>
+        <div className="flex flex-wrap items-center gap-2 mt-4">
+          <span className="text-[13px] font-semibold text-muted">📍 Zone :</span>
+          {ZONES.map((z) => (
+            <button
+              key={z.key}
+              onClick={() => toggleZone(z.key)}
+              aria-pressed={activeZones.has(z.key)}
+              className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full border text-[13px] font-medium whitespace-nowrap transition-colors ${
+                activeZones.has(z.key)
+                  ? "bg-primary border-primary text-white"
+                  : "bg-surface border-border text-ink hover:border-primary"
+              }`}
+            >
+              {z.emoji} {z.label}
+              <span className="text-[11px] font-bold opacity-70">{zoneCounts[z.key] || 0}</span>
+            </button>
+          ))}
         </div>
       </section>
 
@@ -374,6 +427,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
             {visibleRows.map((b) => {
               const cat = CATEGORY_MAP[b.category];
               const isActive = b.id === selectedId;
+              const accentColor = badgeAccentColor(b.badge);
               return (
                 <article
                   key={b.id}
@@ -384,6 +438,15 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                   className={`bg-surface border rounded-2xl p-5 shadow-[0_1px_2px_rgba(13,43,42,.05),0_12px_30px_-14px_rgba(13,43,42,.28)] flex flex-col gap-3 cursor-pointer transition-transform hover:-translate-y-1 ${
                     isActive ? "border-accent" : "border-border"
                   }`}
+                  style={
+                    accentColor
+                      ? {
+                          borderLeftColor: accentColor,
+                          borderLeftWidth: 4,
+                          backgroundColor: `color-mix(in srgb, ${accentColor} 6%, var(--surface))`,
+                        }
+                      : undefined
+                  }
                 >
                   <div className="flex flex-wrap items-center gap-1.5">
                     <span

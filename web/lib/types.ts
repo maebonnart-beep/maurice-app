@@ -76,4 +76,6 @@ export type Business = {
   golfHoles?: number;
   /** Prix du practice et/ou du parcours, texte libre. Golf. */
   golfPricing?: string;
+  /** Zone géographique de l'île. Absent pour les fiches sans localisation physique (apps/plateformes). */
+  zone?: "nord" | "sud" | "est" | "ouest" | "centre";
 };
