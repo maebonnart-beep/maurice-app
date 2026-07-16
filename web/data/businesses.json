@@ -3514,9 +3514,9 @@
     "address": "Tamarin, Rivière Noire (côte Ouest)",
     "phone": "+230 401 3006",
     "website": "https://tamarinagolfclub.com/",
-    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Tamarina%20Golf%20Club%20Tamarin%20Mauritius",
-    "lat": -20.3309,
-    "lng": 57.3839,
+    "googleMapsUrl": "https://maps.google.com/?cid=8408050038486667467&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.3094896,
+    "lng": 57.3976276,
     "hours": "Réservations Pro Shop tous les jours 7h-18h30",
     "priceRange": "se-faire-plaisir",
     "themes": [
@@ -3532,9 +3532,9 @@
     "address": "Bel Ombre, Savanne (côte Sud)",
     "phone": "+230 623 5600",
     "website": "https://heritagegolfclub.mu/",
-    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Heritage%20Golf%20Club%20Bel%20Ombre%20Mauritius",
-    "lat": -20.5058,
-    "lng": 57.4147,
+    "googleMapsUrl": "https://maps.google.com/?cid=12604460668234039046&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.5054624,
+    "lng": 57.4124237,
     "hours": "Ouvert 365 jours/an",
     "priceRange": "se-faire-plaisir",
     "themes": [
@@ -3566,11 +3566,11 @@
     "name": "Anahita Golf Course - Four Seasons",
     "category": "activites",
     "address": "Beau Champ, Grande Rivière Sud Est (côte Est)",
-    "phone": "",
+    "phone": "+230 402 3991",
     "website": "https://golf.anahitamauritius.com/",
-    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Anahita%20Golf%20Course%20Four%20Seasons%20Mauritius",
-    "lat": -20.2681,
-    "lng": 57.7719,
+    "googleMapsUrl": "https://maps.google.com/?cid=10427265687659331545&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.2782635,
+    "lng": 57.7886822,
     "hours": "Ouvert tous les jours, réservation à l'avance requise",
     "priceRange": "se-faire-plaisir",
     "themes": [
@@ -3578,24 +3578,6 @@
     ],
     "golfHoles": 18,
     "golfPricing": "Green fee public ~125-175€ ; gratuit et illimité pour clients Four Seasons"
-  },
-  {
-    "id": "gymkhana-club-vacoas",
-    "name": "The Gymkhana Club",
-    "category": "activites",
-    "address": "Vacoas (Centre de l'île)",
-    "phone": "",
-    "website": "",
-    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Mauritius%20Gymkhana%20Club%20Vacoas",
-    "lat": -20.2989,
-    "lng": 57.4772,
-    "hours": "Ouvert aux non-membres Lun-Ven 9h-14h",
-    "priceRange": "bon-marche",
-    "themes": [
-      "golf"
-    ],
-    "golfHoles": 18,
-    "golfPricing": "Visiteurs Rs 2100 (18 trous) / Rs 1600 (9 trous)"
   },
   {
     "id": "avalon-golf-estate",
@@ -4632,11 +4614,11 @@
     "name": "Piton de la Petite Rivière Noire",
     "category": "activites",
     "address": "Départ Black River Viewpoint ou Plaine Champagne, route de Chamarel",
-    "phone": "",
+    "phone": "+230 5775 0628",
     "website": "",
-    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Piton%20de%20la%20Petite%20Riviere%20Noire%20hiking%20Mauritius",
-    "lat": -20.4225,
-    "lng": 57.4394,
+    "googleMapsUrl": "https://maps.google.com/?cid=15066766844914278421&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.4234947,
+    "lng": 57.4272177,
     "themes": [
       "randonnee-trail"
     ],
@@ -5421,22 +5403,6 @@
     "themes": []
   },
   {
-    "id": "anahita-golf-club-mauritius",
-    "name": "Anahita Golf Club Mauritius",
-    "category": "activites",
-    "address": "La place belgath, PQJQ+4C9, Beau Champ",
-    "phone": "+230 402 3991",
-    "website": "http://golf.anahitamauritius.com/",
-    "googleMapsUrl": "https://maps.google.com/?cid=10427265687659331545&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.2782635,
-    "lng": 57.7886822,
-    "themes": [
-      "golf"
-    ],
-    "golfHoles": 18,
-    "golfPricing": "Même parcours qu'Anahita Golf Course (Four Seasons). Green fee public ~125-175€"
-  },
-  {
     "id": "karai-kreol",
     "name": "Karaï Kreol",
     "category": "food",
@@ -5862,22 +5828,6 @@
     ]
   },
   {
-    "id": "tamarina-golf-estate",
-    "name": "Tamarina Golf Estate",
-    "category": "activites",
-    "address": "Tamarina Golf Estate Tamarina MU, 90922",
-    "phone": "+230 5743 7777",
-    "website": "http://tamarina.club/",
-    "googleMapsUrl": "https://maps.google.com/?cid=8408050038486667467&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.3094896,
-    "lng": 57.3976276,
-    "themes": [
-      "golf"
-    ],
-    "golfHoles": 18,
-    "golfPricing": "Même parcours que Tamarina Golf Club. Green fee 8500 MUR (18 trous) / 6000 MUR (9 trous)"
-  },
-  {
     "id": "tamarina-golf-spa-boutique-hotel",
     "name": "Tamarina Golf & Spa Boutique Hotel",
     "category": "activites",
@@ -5916,7 +5866,9 @@
       "tennis-padel"
     ],
     "golfHoles": 18,
-    "golfPricing": "Même club que The Gymkhana Club (fondé 1844, plus ancien golf de l'hémisphère sud). Visiteurs Rs 2100 (18 trous)"
+    "golfPricing": "Visiteurs Rs 2100 (18 trous) / Rs 1600 (9 trous). Fondé en 1844, plus ancien golf de l'hémisphère sud.",
+    "hours": "Ouvert aux non-membres Lun-Ven 9h-14h",
+    "priceRange": "bon-marche"
   },
   {
     "id": "harmonie-golf-beach-estate",
@@ -7861,22 +7813,6 @@
     "themes": [
       "restaurants"
     ]
-  },
-  {
-    "id": "heritage-resorts-golf",
-    "name": "Heritage Resorts & Golf",
-    "category": "activites",
-    "address": "Bel Ombre Territory MU, Bel Ombre 61002",
-    "phone": "+230 260 5101",
-    "website": "https://heritageresorts.mu/",
-    "googleMapsUrl": "https://maps.google.com/?cid=12604460668234039046&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.5054624,
-    "lng": 57.4124237,
-    "themes": [
-      "golf"
-    ],
-    "golfHoles": 18,
-    "golfPricing": "Même parcours que Heritage Golf Club. Green fee public ~195€ (18 trous)"
   },
   {
     "id": "annabella-s",
@@ -20508,23 +20444,6 @@
     "lat": -20.4649444,
     "lng": 57.3425164,
     "themes": []
-  },
-  {
-    "id": "black-river-peak-mauritius-friendly",
-    "name": "Black River Peak - Mauritius Friendly",
-    "category": "activites",
-    "address": "B103 - Plaine Champagne Road, Plaine Champagne",
-    "phone": "+230 5775 0628",
-    "website": "https://www.tripadvisor.com/AttractionProductReview-g293816-d26836765-Black_River_Peak_Guided_Hiking_Trip-Mauritius.html",
-    "googleMapsUrl": "https://maps.google.com/?cid=15066766844914278421&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.4234947,
-    "lng": 57.4272177,
-    "themes": [
-      "randonnee-trail"
-    ],
-    "duration": "3h30-4h aller-retour",
-    "difficultyLevel": "confirme",
-    "guideRecommended": true
   },
   {
     "id": "case-noyale-embarqation-point",
