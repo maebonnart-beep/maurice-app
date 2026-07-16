@@ -57,8 +57,9 @@ function MapController({
   const map = useMap();
 
   useEffect(() => {
-    if (businesses.length === 0) return;
-    const bounds = businesses.map((b) => [b.lat, b.lng] as [number, number]);
+    const mappable = businesses.filter((b) => b.lat !== undefined && b.lng !== undefined);
+    if (mappable.length === 0) return;
+    const bounds = mappable.map((b) => [b.lat as number, b.lng as number] as [number, number]);
     map.fitBounds(bounds, { padding: [40, 40], maxZoom: 15 });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [businesses]);
@@ -67,7 +68,7 @@ function MapController({
     if (!selectedId) return;
     const business = businesses.find((b) => b.id === selectedId);
     const marker = markersRef.current[selectedId];
-    if (!business || !marker) return;
+    if (!business || !marker || business.lat === undefined || business.lng === undefined) return;
     map.flyTo([business.lat, business.lng], 16, { duration: 0.6 });
     marker.openPopup();
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -88,6 +89,7 @@ export default function Map({
   onBoundsChange?: (b: MapBounds) => void;
 }) {
   const markersRef = useRef<Record<string, LeafletCircleMarker>>({});
+  const mappable = businesses.filter((b) => b.lat !== undefined && b.lng !== undefined);
 
   return (
     <MapContainer
@@ -100,9 +102,9 @@ export default function Map({
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
       />
-      <MapController businesses={businesses} selectedId={selectedId} markersRef={markersRef} />
+      <MapController businesses={mappable} selectedId={selectedId} markersRef={markersRef} />
       <BoundsReporter onBoundsChange={onBoundsChange} />
-      {businesses.map((b) => {
+      {mappable.map((b) => {
         const cat = CATEGORY_MAP[b.category];
         return (
           <CircleMarker
@@ -110,7 +112,7 @@ export default function Map({
             ref={(el) => {
               if (el) markersRef.current[b.id] = el;
             }}
-            center={[b.lat, b.lng]}
+            center={[b.lat as number, b.lng as number]}
             radius={b.id === selectedId ? 10 : 8}
             pathOptions={{
               color: "#fff",
@@ -146,14 +148,16 @@ export default function Map({
                       🌐 {webLabel(b.website)}
                     </a>
                   )}
-                  <a
-                    href={b.googleMapsUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center px-2 py-1.5 rounded-lg text-xs font-semibold no-underline bg-[#eef4f3] text-[#0a6d67]"
-                  >
-                    📍 Itinéraire
-                  </a>
+                  {b.googleMapsUrl && (
+                    <a
+                      href={b.googleMapsUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center px-2 py-1.5 rounded-lg text-xs font-semibold no-underline bg-[#eef4f3] text-[#0a6d67]"
+                    >
+                      📍 Itinéraire
+                    </a>
+                  )}
                 </div>
               </div>
             </Popup>

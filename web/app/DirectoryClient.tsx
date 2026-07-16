@@ -164,10 +164,12 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
     if (!filterByMap || !mapBounds) return rows;
     return rows.filter(
       (b) =>
-        b.lat <= mapBounds.north &&
-        b.lat >= mapBounds.south &&
-        b.lng <= mapBounds.east &&
-        b.lng >= mapBounds.west
+        b.lat === undefined ||
+        b.lng === undefined ||
+        (b.lat <= mapBounds.north &&
+          b.lat >= mapBounds.south &&
+          b.lng <= mapBounds.east &&
+          b.lng >= mapBounds.west)
     );
   }, [rows, filterByMap, mapBounds]);
 
@@ -509,18 +511,20 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                         🌐 {webLabel(b.website)}
                       </a>
                     )}
-                    <a
-                      href={b.googleMapsUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        trackEvent(b.id, "directions");
-                      }}
-                      className="inline-flex items-center gap-1.5 px-3 py-2 rounded-[10px] text-[13px] font-semibold no-underline bg-surface-2 border border-border text-ink hover:border-primary hover:text-primary-deep"
-                    >
-                      📍 Itinéraire
-                    </a>
+                    {b.googleMapsUrl && (
+                      <a
+                        href={b.googleMapsUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          trackEvent(b.id, "directions");
+                        }}
+                        className="inline-flex items-center gap-1.5 px-3 py-2 rounded-[10px] text-[13px] font-semibold no-underline bg-surface-2 border border-border text-ink hover:border-primary hover:text-primary-deep"
+                      >
+                        📍 Itinéraire
+                      </a>
+                    )}
                   </div>
                 </article>
               );

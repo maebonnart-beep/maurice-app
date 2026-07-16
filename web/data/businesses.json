@@ -15246,8 +15246,10 @@
     "lat": -20.4322618,
     "lng": 57.676592,
     "themes": [
-      "taxis"
-    ]
+      "taxis",
+      "plateformes-multiservices"
+    ],
+    "description": "Tour-opérateur agréé et familial, trajets planifiés à l'avance (réservation idéalement 24h avant). Prisé pour transferts aéroport, trajets hôtel à hôtel, excursions à la journée, prix fixes."
   },
   {
     "id": "taxi-mauritius-transfer",
@@ -29711,6 +29713,196 @@
     "lng": 57.5227185,
     "themes": [
       "coiffeurs"
+    ]
+  },
+  {
+    "id": "coworking-port-louis",
+    "name": "Coworking Port Louis",
+    "category": "business-ttv",
+    "address": "32 St Georges Street, Port Louis",
+    "phone": "+230 214 1243",
+    "website": "http://www.coworking.mu/",
+    "lat": -20.1667851,
+    "lng": 57.5015364,
+    "themes": [
+      "coworking"
+    ]
+  },
+  {
+    "id": "coworkin-progress",
+    "name": "Cowork'in Progress",
+    "category": "business-ttv",
+    "address": "La Tourelle View, Royal Road, Tamarin",
+    "phone": "+230 5745 4087",
+    "website": "https://coworkin-progress.com/",
+    "lat": -20.3466535,
+    "lng": 57.3645657,
+    "hours": "Ouvert 24h/24",
+    "themes": [
+      "coworking"
+    ]
+  },
+  {
+    "id": "workshop17-precinct",
+    "name": "Workshop17 The Precinct",
+    "category": "business-ttv",
+    "address": "The Precinct, Grand Baie",
+    "phone": "+230 650 0130",
+    "website": "http://workshop17.mu/",
+    "lat": -20.0130199,
+    "lng": 57.584627,
+    "hours": "Ouvert 24h/24",
+    "themes": [
+      "coworking"
+    ]
+  },
+  {
+    "id": "the-yard-black-river-coworking",
+    "name": "The Yard - Black River",
+    "category": "business-ttv",
+    "address": "Business Park, 99 Royal Road, Tamarin 90906",
+    "phone": "+230 651 9400",
+    "website": "https://theyard.mu/",
+    "lat": -20.330417,
+    "lng": 57.3720352,
+    "themes": [
+      "coworking"
+    ]
+  },
+  {
+    "id": "activ-solutions-coworking",
+    "name": "Activ Solutions",
+    "category": "business-ttv",
+    "address": "Hennessy Court, 2ème étage, Pope Hennessy Street, Port Louis",
+    "phone": "+230 214 2923",
+    "website": "",
+    "lat": -20.168313,
+    "lng": 57.5090577,
+    "themes": [
+      "coworking"
+    ]
+  },
+  {
+    "id": "workspace-by-the-docks",
+    "name": "Le Workspace by The Docks",
+    "category": "business-ttv",
+    "address": "UDL Business Park, Port Louis",
+    "phone": "+230 5253 9863",
+    "website": "",
+    "lat": -20.1624522,
+    "lng": 57.5028044,
+    "themes": [
+      "coworking"
+    ]
+  },
+  {
+    "id": "the-hive-nouvelle-usine",
+    "name": "THE HIVE workplace Nouvelle Usine",
+    "category": "business-ttv",
+    "address": "Mangalkhan, N°9 Nouvelle Usine, Vacoas-Phoenix",
+    "phone": "+230 690 0000",
+    "website": "http://www.thehive.mu/",
+    "lat": -20.2933761,
+    "lng": 57.4978036,
+    "themes": [
+      "coworking"
+    ]
+  },
+  {
+    "id": "regus-grand-baie",
+    "name": "Regus Grand Baie",
+    "category": "business-ttv",
+    "address": "Notre Dame de la Salette Street, Coeur de Ville (Super U), Grand Baie",
+    "phone": "",
+    "website": "https://www.regus.com/en-gb/mauritius/grand-baie/coworking",
+    "lat": -20.0130199,
+    "lng": 57.584627,
+    "themes": [
+      "coworking"
+    ]
+  },
+  {
+    "id": "uber-maurice",
+    "name": "Uber (Maurice)",
+    "category": "utiles",
+    "address": "Application mobile / réservation en ligne",
+    "phone": "",
+    "website": "https://www.uber.com/",
+    "description": "Fonctionne uniquement avec les taxis officiellement agréés (licence PSV), en partenariat avec le réseau local Alalila. Trajets Normal/Comfort/XL, tarifs affichés à l'avance.",
+    "themes": [
+      "vtc-apps"
+    ]
+  },
+  {
+    "id": "mokabb",
+    "name": "MoKabb",
+    "category": "utiles",
+    "address": "Application mobile / réservation en ligne",
+    "phone": "",
+    "website": "https://play.google.com/store/apps/details?id=com.mokabb.user",
+    "description": "Application locale à tarifs fixes et compétitifs, bonne couverture y compris en zones rurales. Paiement en espèces ou par carte via l'appli.",
+    "themes": [
+      "vtc-apps"
+    ]
+  },
+  {
+    "id": "yugo",
+    "name": "Yugo",
+    "category": "utiles",
+    "address": "Application mobile / réservation en ligne",
+    "phone": "",
+    "website": "https://www.yugo.mu/",
+    "description": "Une des applis locales les plus anciennes, chauffeurs de taxi enregistrés et agréés uniquement. Propose aussi la réservation à la journée et la livraison de colis.",
+    "themes": [
+      "vtc-apps"
+    ]
+  },
+  {
+    "id": "dodogo",
+    "name": "DodoGo (ex-DodoTaxi)",
+    "category": "utiles",
+    "address": "Application mobile / réservation en ligne",
+    "phone": "",
+    "website": "https://www.dodogo.mu/",
+    "description": "Réservation 24h/24, estimation des tarifs par IA selon trafic/météo. Propose aussi des vans 6-14 places pour familles/groupes.",
+    "themes": [
+      "vtc-apps"
+    ]
+  },
+  {
+    "id": "motaxi",
+    "name": "MoTaxi",
+    "category": "utiles",
+    "address": "Application mobile / réservation en ligne",
+    "phone": "",
+    "website": "https://play.google.com/store/apps/details?id=com.motaxi.app.rider",
+    "description": "Lancée par la Fédération des associations de taxis d'hôtels, met en relation avec des chauffeurs de taxi d'hôtels et régionaux agréés, tarifs standardisés.",
+    "themes": [
+      "vtc-apps"
+    ]
+  },
+  {
+    "id": "ala-lila",
+    "name": "Ala-lila",
+    "category": "utiles",
+    "address": "Application mobile / réservation en ligne",
+    "phone": "",
+    "website": "https://www.alalila.mu/",
+    "description": "Plateforme locale pionnière de réservation en ligne (Logidis Ltd), tarifs transparents. Infrastructure utilisée pour l'intégration officielle d'Uber à Maurice.",
+    "themes": [
+      "vtc-apps"
+    ]
+  },
+  {
+    "id": "vite-app",
+    "name": "Vite",
+    "category": "utiles",
+    "address": "Application mobile / réservation en ligne",
+    "phone": "",
+    "website": "https://www.viteapp.co/",
+    "description": "Application multiservices mauricienne : réservation de taxi agréé à la demande, nettoyage professionnel à domicile/bureau, livraison rapide de colis.",
+    "themes": [
+      "plateformes-multiservices"
     ]
   }
 ]

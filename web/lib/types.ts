@@ -26,9 +26,11 @@ export type Business = {
   phone: string;
   email?: string;
   website: string;
-  googleMapsUrl: string;
-  lat: number;
-  lng: number;
+  /** Absent pour les fiches sans point sur la carte (ex: applis/plateformes sans adresse physique). */
+  googleMapsUrl?: string;
+  /** lat/lng absents = fiche affichée dans la liste mais sans marqueur sur la carte (ex: applis/plateformes). */
+  lat?: number;
+  lng?: number;
   themes?: string[];
   /** Texte libre combinant jours + heures, ex: "Lun-Ven 11h30-22h, Sam-Dim 11h-23h". */
   hours?: string;
