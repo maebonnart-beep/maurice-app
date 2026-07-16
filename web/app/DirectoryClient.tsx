@@ -30,6 +30,33 @@ function whatsappLink(phone: string) {
   return "https://wa.me/" + phone.replace(/[^\d]/g, "");
 }
 
+const DIFFICULTY_LABELS: Record<string, string> = {
+  debutant: "Débutant",
+  habitue: "Habitué",
+  confirme: "Confirmé",
+};
+
+function metaFacts(b: Business): { icon: string; label: string }[] {
+  const facts: { icon: string; label: string }[] = [];
+  if (b.duration) facts.push({ icon: "⏱️", label: b.duration });
+  if (b.entryPrice) facts.push({ icon: "🎟️", label: b.entryPrice });
+  if (b.difficultyLevel) facts.push({ icon: "🥾", label: DIFFICULTY_LABELS[b.difficultyLevel] });
+  if (b.guideRecommended !== undefined)
+    facts.push({ icon: "🧭", label: b.guideRecommended ? "Guide conseillé" : "Sans guide" });
+  if (b.sportsListed) facts.push({ icon: "🏃", label: b.sportsListed });
+  if (b.hasRestauration !== undefined)
+    facts.push({ icon: "🍽️", label: b.hasRestauration ? "Restauration sur place" : "Pas de restauration" });
+  if (b.ttvFriendly) facts.push({ icon: "💻", label: "Adapté télétravail" });
+  if (b.kidsActivities) facts.push({ icon: "🧒", label: "Activités enfants" });
+  if (b.sandType) facts.push({ icon: "🏖️", label: b.sandType });
+  if (b.beachActivities) facts.push({ icon: "🎯", label: b.beachActivities });
+  if (b.beachLength) facts.push({ icon: "📏", label: b.beachLength });
+  if (b.animalsVisible) facts.push({ icon: "🦁", label: b.animalsVisible });
+  if (b.golfHoles) facts.push({ icon: "⛳", label: `${b.golfHoles} trous` });
+  if (b.golfPricing) facts.push({ icon: "💰", label: b.golfPricing });
+  return facts;
+}
+
 export default function DirectoryClient({ businesses }: { businesses: Business[] }) {
   const [query, setQuery] = useState("");
   const [active, setActive] = useState<string>("all");
@@ -331,8 +358,23 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                   </div>
                   <h3 className="m-0 text-[17px] leading-[1.25] tracking-tight">{b.name}</h3>
                   <p className="m-0 text-muted text-[13.5px] leading-[1.5]">{b.address}</p>
+                  {b.description && (
+                    <p className="m-0 text-ink text-[13.5px] leading-[1.5] -mt-1.5">{b.description}</p>
+                  )}
                   {b.hours && (
                     <p className="m-0 text-muted text-[13px] leading-[1.4] -mt-1.5">🕒 {b.hours}</p>
+                  )}
+                  {metaFacts(b).length > 0 && (
+                    <div className="flex flex-wrap gap-1.5 -mt-1">
+                      {metaFacts(b).map((f, i) => (
+                        <span
+                          key={i}
+                          className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[11px] font-semibold border border-border bg-surface-2 text-muted"
+                        >
+                          {f.icon} {f.label}
+                        </span>
+                      ))}
+                    </div>
                   )}
                   {b.promoText && (
                     <p className="m-0 text-[13px] leading-[1.45] text-primary-deep border-l-2 border-primary pl-2.5 py-0.5">

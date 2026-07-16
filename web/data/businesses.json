@@ -584,7 +584,9 @@
     "priceRange": "se-faire-plaisir",
     "themes": [
       "golf"
-    ]
+    ],
+    "golfHoles": 18,
+    "golfPricing": "Green fee ~166€ (18 trous) / ~100€ (9 trous), cart inclus ; practice 50 balles ~4€"
   },
   {
     "id": "zaka-parc-accrobranche",
@@ -3472,7 +3474,9 @@
     "priceRange": "se-faire-plaisir",
     "themes": [
       "golf"
-    ]
+    ],
+    "golfHoles": 18,
+    "golfPricing": "Green fee 8500 MUR (18 trous) / 6000 MUR (9 trous), cart inclus ; practice 60 balles 500 MUR"
   },
   {
     "id": "heritage-golf-club-bel-ombre",
@@ -3488,7 +3492,9 @@
     "priceRange": "se-faire-plaisir",
     "themes": [
       "golf"
-    ]
+    ],
+    "golfHoles": 18,
+    "golfPricing": "Green fee public ~195€ (18 trous) ; tarif clients Beachcomber ~95€"
   },
   {
     "id": "ile-aux-cerfs-golf-club",
@@ -3504,7 +3510,9 @@
     "priceRange": "se-faire-plaisir",
     "themes": [
       "golf"
-    ]
+    ],
+    "golfHoles": 18,
+    "golfPricing": "Green fee 150-200€ selon saison (transfert bateau inclus)"
   },
   {
     "id": "anahita-golf-course",
@@ -3520,7 +3528,9 @@
     "priceRange": "se-faire-plaisir",
     "themes": [
       "golf"
-    ]
+    ],
+    "golfHoles": 18,
+    "golfPricing": "Green fee public ~125-175€ ; gratuit et illimité pour clients Four Seasons"
   },
   {
     "id": "gymkhana-club-vacoas",
@@ -3536,7 +3546,9 @@
     "priceRange": "bon-marche",
     "themes": [
       "golf"
-    ]
+    ],
+    "golfHoles": 18,
+    "golfPricing": "Visiteurs Rs 2100 (18 trous) / Rs 1600 (9 trous)"
   },
   {
     "id": "avalon-golf-estate",
@@ -3551,7 +3563,9 @@
     "priceRange": "prix-moyen",
     "themes": [
       "golf"
-    ]
+    ],
+    "golfHoles": 18,
+    "golfPricing": "Green fee à partir de 100€ (18 trous) / 60€ (9 trous), cart inclus ; practice 50 balles 3€"
   },
   {
     "id": "constance-belle-mare-plage-golf",
@@ -3567,7 +3581,9 @@
     "priceRange": "se-faire-plaisir",
     "themes": [
       "golf"
-    ]
+    ],
+    "golfHoles": 18,
+    "golfPricing": "2 parcours 18 trous (Legend & Links). Gratuit pour clients CBMP (buggy en sus) ; tarif visiteur non trouvé"
   },
   {
     "id": "bagatelle-mall-moka",
@@ -4512,7 +4528,9 @@
     "priceRange": "se-faire-plaisir",
     "themes": [
       "golf"
-    ]
+    ],
+    "golfHoles": 18,
+    "golfPricing": "Résidents Beachcomber 30€ (+cart 65€) ; externes 100-170€/jour selon saison"
   },
   {
     "id": "dodo-club-curepipe",
@@ -4527,7 +4545,8 @@
     "priceRange": "bon-marche",
     "themes": [
       "golf"
-    ]
+    ],
+    "golfHoles": 9
   },
   {
     "id": "maritim-golf-course-balaclava",
@@ -4542,7 +4561,8 @@
     "priceRange": "bon-marche",
     "themes": [
       "golf"
-    ]
+    ],
+    "golfHoles": 9
   },
   {
     "id": "shandrani-golf-course-blue-bay",
@@ -4557,7 +4577,8 @@
     "priceRange": "bon-marche",
     "themes": [
       "golf"
-    ]
+    ],
+    "golfHoles": 9
   },
   {
     "id": "piton-petite-riviere-noire",
@@ -4589,7 +4610,8 @@
       "parcs-aventures"
     ],
     "hours": "Tous les jours 9h-18h (été), 9h-17h (hiver)",
-    "priceRange": "se-faire-plaisir"
+    "priceRange": "se-faire-plaisir",
+    "animalsVisible": "Lions, tigres du Bengale, rhinocéros, girafes, zèbres, gnous, antilopes africaines, chameaux, caracals, servals, guépards, cerfs de Java, macaques, sangliers, autruches, mangoustes, oiseaux (volière)"
   },
   {
     "id": "la-vanille-nature-park",
@@ -4605,7 +4627,9 @@
       "parcs-animaliers"
     ],
     "hours": "Tous les jours 9h30-17h",
-    "priceRange": "prix-moyen"
+    "priceRange": "prix-moyen",
+    "animalsVisible": "Crocodiles du Nil, tortues géantes d'Aldabra, iguanes, singes, chauves-souris, sangliers, animaux de ferme",
+    "entryPrice": "Rs 450 résident / Rs 975 non-résident (adulte)"
   },
   {
     "id": "chateau-de-labourdonnais",
@@ -5309,9 +5333,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=6125166870875583615&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.0273509,
     "lng": 57.5600931,
-    "themes": [
-      "golf"
-    ]
+    "themes": []
   },
   {
     "id": "anahita-golf-club-mauritius",
@@ -5325,7 +5347,9 @@
     "lng": 57.7886822,
     "themes": [
       "golf"
-    ]
+    ],
+    "golfHoles": 18,
+    "golfPricing": "Même parcours qu'Anahita Golf Course (Four Seasons). Green fee public ~125-175€"
   },
   {
     "id": "karai-kreol",
@@ -5764,7 +5788,9 @@
     "lng": 57.3976276,
     "themes": [
       "golf"
-    ]
+    ],
+    "golfHoles": 18,
+    "golfPricing": "Même parcours que Tamarina Golf Club. Green fee 8500 MUR (18 trous) / 6000 MUR (9 trous)"
   },
   {
     "id": "tamarina-golf-spa-boutique-hotel",
@@ -5776,9 +5802,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=3498760821048504690&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.3215734,
     "lng": 57.3799814,
-    "themes": [
-      "golf"
-    ]
+    "themes": []
   },
   {
     "id": "the-pro-shop-tamarin",
@@ -5790,9 +5814,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=2818103789546601513&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.3586054,
     "lng": 57.3693046,
-    "themes": [
-      "golf"
-    ]
+    "themes": []
   },
   {
     "id": "mauritius-gymkhana-club",
@@ -5807,7 +5829,9 @@
     "themes": [
       "golf",
       "tennis-padel"
-    ]
+    ],
+    "golfHoles": 18,
+    "golfPricing": "Même club que The Gymkhana Club (fondé 1844, plus ancien golf de l'hémisphère sud). Visiteurs Rs 2100 (18 trous)"
   },
   {
     "id": "harmonie-golf-beach-estate",
@@ -6897,9 +6921,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=11560982444590819122&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.4368993,
     "lng": 57.3206034,
-    "themes": [
-      "golf"
-    ]
+    "themes": []
   },
   {
     "id": "dinarobin-beachcomber-golf-resort-spa",
@@ -6911,9 +6933,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=6862853432857355115&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.4491054,
     "lng": 57.3150828,
-    "themes": [
-      "golf"
-    ]
+    "themes": []
   },
   {
     "id": "wapalapam-island-eatery",
@@ -6925,9 +6945,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=1033839942510263079&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.4433038,
     "lng": 57.3223417,
-    "themes": [
-      "golf"
-    ]
+    "themes": []
   },
   {
     "id": "le-morne",
@@ -6939,9 +6957,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=7443783797638077587&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.4533698,
     "lng": 57.3246525,
-    "themes": [
-      "golf"
-    ]
+    "themes": []
   },
   {
     "id": "lakaz-chamarel-exclusive-lodge",
@@ -6953,9 +6969,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=11444886041300554272&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.4267644,
     "lng": 57.3851603,
-    "themes": [
-      "golf"
-    ]
+    "themes": []
   },
   {
     "id": "ebony-forest-chamarel",
@@ -6967,9 +6981,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=1652038674893556352&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.4376375,
     "lng": 57.3738771,
-    "themes": [
-      "golf"
-    ]
+    "themes": []
   },
   {
     "id": "rocher-de-crystal",
@@ -6981,9 +6993,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=1208879837143061876&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.4143255,
     "lng": 57.3375848,
-    "themes": [
-      "golf"
-    ]
+    "themes": []
   },
   {
     "id": "l-harmonie",
@@ -6995,9 +7005,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=6372637050492476034&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.450185,
     "lng": 57.3145139,
-    "themes": [
-      "golf"
-    ]
+    "themes": []
   },
   {
     "id": "haras-du-morne",
@@ -7009,9 +7017,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=15904553807725480738&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.4580188,
     "lng": 57.3182853,
-    "themes": [
-      "golf"
-    ]
+    "themes": []
   },
   {
     "id": "varangue-sur-morne",
@@ -7023,9 +7029,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=9023349327015954931&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.4259191,
     "lng": 57.4176226,
-    "themes": [
-      "golf"
-    ],
+    "themes": [],
     "badge": "selection"
   },
   {
@@ -7785,7 +7789,9 @@
     "lng": 57.4124237,
     "themes": [
       "golf"
-    ]
+    ],
+    "golfHoles": 18,
+    "golfPricing": "Même parcours que Heritage Golf Club. Green fee public ~195€ (18 trous)"
   },
   {
     "id": "annabella-s",
@@ -8280,7 +8286,9 @@
     "lng": 57.7632805,
     "themes": [
       "golf"
-    ]
+    ],
+    "golfHoles": 18,
+    "golfPricing": "Parcours 'Legend' de Constance Belle Mare Plage. Gratuit pour clients CBMP ; tarif visiteur non trouvé"
   },
   {
     "id": "constance-belle-mare-plage-mauritius",
@@ -8292,9 +8300,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=3296589225165694097&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.1672764,
     "lng": 57.7661707,
-    "themes": [
-      "golf"
-    ]
+    "themes": []
   },
   {
     "id": "domaine-de-belle-mare",
@@ -8306,9 +8312,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=6650046946000434476&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.1790625,
     "lng": 57.7701875,
-    "themes": [
-      "golf"
-    ]
+    "themes": []
   },
   {
     "id": "long-beach-mauritius",
@@ -8320,9 +8324,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=15042326377101928759&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.1727242,
     "lng": 57.7698265,
-    "themes": [
-      "golf"
-    ]
+    "themes": []
   },
   {
     "id": "jetty-to-ile-aux-cerfs-the-golf-course-and-ilot-mangenie",
@@ -8334,9 +8336,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=17231035222633310625&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.2540003,
     "lng": 57.7980309,
-    "themes": [
-      "golf"
-    ]
+    "themes": []
   },
   {
     "id": "ile-aux-cerfs-leisure-island",
@@ -8348,9 +8348,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=9959686471443391219&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.2727844,
     "lng": 57.8030272,
-    "themes": [
-      "golf"
-    ]
+    "themes": []
   },
   {
     "id": "constance-hotels-resorts",
@@ -8362,9 +8360,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=7670361181876494279&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.1848699,
     "lng": 57.7127,
-    "themes": [
-      "golf"
-    ]
+    "themes": []
   },
   {
     "id": "belle-mare-beach",
@@ -8376,9 +8372,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=15497574960358871756&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.1948426,
     "lng": 57.7767335,
-    "themes": [
-      "golf"
-    ]
+    "themes": []
   },
   {
     "id": "constance-prince-maurice-mauritius",
@@ -8390,9 +8384,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=10507102149813328790&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.1496607,
     "lng": 57.746158,
-    "themes": [
-      "golf"
-    ],
+    "themes": [],
     "badge": "selection"
   },
   {
@@ -8405,9 +8397,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=12440176049595216799&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.1699742,
     "lng": 57.7534415,
-    "themes": [
-      "golf"
-    ]
+    "themes": []
   },
   {
     "id": "4-seasons-beach",
@@ -8419,9 +8409,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=6299815712369709552&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.2701309,
     "lng": 57.8056423,
-    "themes": [
-      "golf"
-    ]
+    "themes": []
   },
   {
     "id": "anahita-golf-spa-resort",
@@ -8433,9 +8421,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=14007750591001597883&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.2786431,
     "lng": 57.788894,
-    "themes": [
-      "golf"
-    ]
+    "themes": []
   },
   {
     "id": "indigo-beach-restaurant",
@@ -9320,9 +9306,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=4415034391960995278&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.4448614,
     "lng": 57.7171626,
-    "themes": [
-      "golf"
-    ]
+    "themes": []
   },
   {
     "id": "coin-bistro-by-casse-croute",
@@ -9960,9 +9944,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=10777496892707698342&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.316065,
     "lng": 57.5121112,
-    "themes": [
-      "golf"
-    ]
+    "themes": []
   },
   {
     "id": "ile-maurice",
@@ -9974,9 +9956,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=7590298818312096722&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.1608912,
     "lng": 57.5012222,
-    "themes": [
-      "golf"
-    ]
+    "themes": []
   },
   {
     "id": "moka-rangers-sports-club",
@@ -9988,9 +9968,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=11940382599814663975&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.228507,
     "lng": 57.520173,
-    "themes": [
-      "golf"
-    ]
+    "themes": []
   },
   {
     "id": "tribeca-mall",
@@ -10002,9 +9980,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=12645672014849055260&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.2446376,
     "lng": 57.4980787,
-    "themes": [
-      "golf"
-    ]
+    "themes": []
   },
   {
     "id": "l-assiette-d-antan",
@@ -11463,7 +11439,9 @@
     "lng": 57.6198216,
     "themes": [
       "parcs-animaliers"
-    ]
+    ],
+    "animalsVisible": "Chevaux, dromadaire, oiseaux, cochons d'inde, sangliers",
+    "entryPrice": "Gratuit"
   },
   {
     "id": "bel-ombre-nature-reserve",
@@ -11475,9 +11453,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=4618207020799967892&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.5009963,
     "lng": 57.4406611,
-    "themes": [
-      "parcs-animaliers"
-    ]
+    "themes": []
   },
   {
     "id": "safari-adventures",
@@ -11491,7 +11467,8 @@
     "lng": 57.40318,
     "themes": [
       "parcs-animaliers"
-    ]
+    ],
+    "animalsVisible": "Lions, tigres, guépards, caracals, servals (activité séparée, billet distinct de l'entrée Casela)"
   },
   {
     "id": "parc-national-de-bras-d-eau",
@@ -11503,9 +11480,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=5686250068587104788&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.1365566,
     "lng": 57.7331934,
-    "themes": [
-      "parcs-animaliers"
-    ]
+    "themes": []
   },
   {
     "id": "jardin-botanique-sir-seewoosagur-ramgoolam",
@@ -11517,9 +11492,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=12903162337128428707&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.1070516,
     "lng": 57.5797065,
-    "themes": [
-      "parcs-animaliers"
-    ]
+    "themes": []
   },
   {
     "id": "odysseo-oceanarium-mauritius-ltd",
@@ -11533,7 +11506,9 @@
     "lng": 57.4951185,
     "themes": [
       "parcs-animaliers"
-    ]
+    ],
+    "animalsVisible": "~200 espèces marines de l'Océan Indien (aquarium, 3500 spécimens, 45 bassins thématiques)",
+    "entryPrice": "Rs 650 résident / Rs 1280 non-résident (adulte)"
   },
   {
     "id": "rivulet-terre-rouge-estuary-bird-sanctuary",
@@ -11547,7 +11522,9 @@
     "lng": 57.5030394,
     "themes": [
       "parcs-animaliers"
-    ]
+    ],
+    "animalsVisible": "Oiseaux migrateurs et locaux : bécasseaux, chevaliers, pluviers, courlis, hérons, sternes ; observations notables crécerelle de Maurice, pigeon rose, gobemouche de paradis de Maurice",
+    "entryPrice": "Gratuit"
   },
   {
     "id": "big-foot-adventure",
@@ -11559,9 +11536,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=1011489801415386041&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.5081742,
     "lng": 57.5446242,
-    "themes": [
-      "parcs-animaliers"
-    ]
+    "themes": []
   },
   {
     "id": "explorers-mauritius",
@@ -11573,9 +11548,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=5728882638106505347&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.4461809,
     "lng": 57.3421985,
-    "themes": [
-      "parcs-animaliers"
-    ]
+    "themes": []
   },
   {
     "id": "macchabee-viewpoint",
@@ -11587,9 +11560,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=5644636859790519605&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.393453,
     "lng": 57.4403986,
-    "themes": [
-      "parcs-animaliers"
-    ]
+    "themes": []
   },
   {
     "id": "cascade-leon",
@@ -11617,7 +11588,9 @@
     "lng": 57.6935956,
     "themes": [
       "parcs-animaliers"
-    ]
+    ],
+    "animalsVisible": "Chiens et chats (refuge)",
+    "entryPrice": "Gratuit, don libre suggéré"
   },
   {
     "id": "valle-advenature-park-formerly-la-vallee-des-couleurs",
@@ -16742,7 +16715,8 @@
     "lng": 57.4078956,
     "themes": [
       "parcs-animaliers"
-    ]
+    ],
+    "animalsVisible": "Lions (activité 'Walking with Lions', billet séparé de l'entrée Casela)"
   },
   {
     "id": "black-river-visitors-centre",
@@ -16754,9 +16728,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=11298888972040309413&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.383602,
     "lng": 57.4216686,
-    "themes": [
-      "parcs-animaliers"
-    ]
+    "themes": []
   },
   {
     "id": "tamarin-la-tourelle-black-rock-mauritius",
@@ -16768,9 +16740,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=4075568904759010209&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.3409687,
     "lng": 57.3787423,
-    "themes": [
-      "parcs-animaliers"
-    ]
+    "themes": []
   },
   {
     "id": "gorges-viewpoint",
@@ -16782,9 +16752,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=10325181289514522704&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.4230272,
     "lng": 57.4298676,
-    "themes": [
-      "parcs-animaliers"
-    ]
+    "themes": []
   },
   {
     "id": "lakaz-kayak-ltd",
@@ -16796,9 +16764,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=10366757093572830617&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.3285212,
     "lng": 57.3813813,
-    "themes": [
-      "parcs-animaliers"
-    ]
+    "themes": []
   },
   {
     "id": "black-river-peak-north-trail",
@@ -16810,9 +16776,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=9282912044654003248&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.4031478,
     "lng": 57.4088858,
-    "themes": [
-      "parcs-animaliers"
-    ]
+    "themes": []
   },
   {
     "id": "salines-de-yemen-tamarin",
@@ -16824,9 +16788,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=5485675353332458449&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.3304389,
     "lng": 57.377896,
-    "themes": [
-      "parcs-animaliers"
-    ]
+    "themes": []
   },
   {
     "id": "bassin-vert",
@@ -20187,9 +20149,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=8751686734706565252&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.3772308,
     "lng": 57.4851069,
-    "themes": [
-      "parcs-animaliers"
-    ]
+    "themes": []
   },
   {
     "id": "la-vieille-cheminee",
@@ -20201,9 +20161,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=383126218730179435&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.4406171,
     "lng": 57.3918137,
-    "themes": [
-      "parcs-animaliers"
-    ]
+    "themes": []
   },
   {
     "id": "chamarel-coffee-plantation-tour",
@@ -20215,9 +20173,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=4957603188113904956&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.4396723,
     "lng": 57.3893461,
-    "themes": [
-      "parcs-animaliers"
-    ]
+    "themes": []
   },
   {
     "id": "aventures-mascareignes",
@@ -25442,9 +25398,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=16032839327999600309&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.1990171,
     "lng": 57.7823498,
-    "themes": [
-      "golf"
-    ]
+    "themes": []
   },
   {
     "id": "one-only-le-saint-geran",
@@ -25456,9 +25410,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=1761096461926582573&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.1605098,
     "lng": 57.7562809,
-    "themes": [
-      "golf"
-    ]
+    "themes": []
   },
   {
     "id": "belle-mare-tours",
@@ -28062,9 +28014,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=13113392350190772466&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.2529182,
     "lng": 57.4207458,
-    "themes": [
-      "parcs-animaliers"
-    ]
+    "themes": []
   },
   {
     "id": "pepiniere-exotica-tamarin",

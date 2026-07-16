@@ -44,4 +44,34 @@ export type Business = {
   whatsapp?: string;
   /** Premium perk: short highlighted promo line. */
   promoText?: string;
+  /** Descriptif rapide (1-2 phrases). Surtout utilisé pour parcs-aventures. */
+  description?: string;
+  /** Prix d'entrée en texte libre, ex: "Rs 450 adulte / Rs 250 enfant". Parcs-aventures, parcs-animaliers. */
+  entryPrice?: string;
+  /** Durée moyenne/approximative de l'activité, ex: "2h30". Parcs-aventures, randonnée-trail. */
+  duration?: string;
+  /** Niveau de pratique. Randonnée-trail. */
+  difficultyLevel?: "debutant" | "habitue" | "confirme";
+  /** Présence d'un guide conseillée. Randonnée-trail. */
+  guideRecommended?: boolean;
+  /** Sports/activités disponibles sur place, texte libre. Complexes-sportifs. */
+  sportsListed?: string;
+  /** Restauration sur place. Complexes-sportifs. */
+  hasRestauration?: boolean;
+  /** Adapté télétravail (wifi, prises, espace calme). Complexes-sportifs. */
+  ttvFriendly?: boolean;
+  /** Activités enfants sur place. Complexes-sportifs. */
+  kidsActivities?: boolean;
+  /** Type de sable, texte libre ex: "sable blanc fin". Plages. */
+  sandType?: string;
+  /** Activités praticables sur la plage, texte libre. Plages. */
+  beachActivities?: string;
+  /** Longueur approximative de la plage, ex: "1.5 km". Plages. */
+  beachLength?: string;
+  /** Types d'animaux visibles, texte libre. Parcs-animaliers. */
+  animalsVisible?: string;
+  /** Nombre de trous. Golf. */
+  golfHoles?: number;
+  /** Prix du practice et/ou du parcours, texte libre. Golf. */
+  golfPricing?: string;
 };
