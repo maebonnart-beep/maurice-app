@@ -7570,8 +7570,12 @@
     "googleMapsUrl": "https://maps.google.com/?cid=15904553807725480738&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.4580188,
     "lng": 57.3182853,
-    "themes": [],
-    "zone": "sud"
+    "themes": [
+      "centres-equestres"
+    ],
+    "zone": "sud",
+    "description": "Initiations, promenades, baignades à cheval, balades coucher de soleil, poneys, calèches.",
+    "whatsapp": "+230 5919 1377"
   },
   {
     "id": "varangue-sur-morne",
@@ -24381,9 +24385,11 @@
     "lat": -20.5133037,
     "lng": 57.4976027,
     "themes": [
-      "sports-nautiques"
+      "sports-nautiques",
+      "centres-equestres"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Promenades, séances photos, entraînements, pensions."
   },
   {
     "id": "c-beach-club",
@@ -31501,5 +31507,52 @@
     "photoUrl": "https://images.unsplash.com/photo-1775326383893-2709e9e62722?auto=format&fit=crop&w=800&q=70",
     "photoCredit": "Photo: Will Haddock / Unsplash",
     "description": "Parcours par-3 avec deux options de jeu par trou, conçu pour les parties rapides."
+  },
+  {
+    "id": "legasea-stables",
+    "name": "Legasea Stables",
+    "category": "activites",
+    "address": "Quatre Cocos, Belle Mare (côte Est)",
+    "phone": "+230 5857 9977",
+    "website": "https://legaseastables.com/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Legasea%20Stables%20Quatre%20Cocos%20Mauritius",
+    "lat": -20.2016,
+    "lng": 57.7743,
+    "themes": [
+      "centres-equestres"
+    ],
+    "description": "Promenades, séances photos, entraînements, pensions.",
+    "zone": "est"
+  },
+  {
+    "id": "the-forbach-stables",
+    "name": "The Forbach Stables",
+    "category": "activites",
+    "address": "Forbach Road, L'Espérance Trébuchet, Rivière du Rempart",
+    "phone": "+230 5701 3384",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=The%20Forbach%20Stables%20Mauritius",
+    "lat": -20.0705204,
+    "lng": 57.6428604,
+    "themes": [
+      "centres-equestres"
+    ],
+    "description": "Promenades, écuries, cours.",
+    "zone": "est"
+  },
+  {
+    "id": "sea-horse-adventure",
+    "name": "Sea Horse Adventure",
+    "category": "activites",
+    "address": "Black River",
+    "phone": "+230 5772 3999",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Sea%20Horse%20Adventure%20horse%20riding%20Black%20River%20Mauritius",
+    "lat": -20.3608,
+    "lng": 57.3742,
+    "themes": [
+      "centres-equestres"
+    ],
+    "zone": "ouest"
   }
 ]
