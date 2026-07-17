@@ -29217,21 +29217,6 @@
     "zone": "nord"
   },
   {
-    "id": "mr-bricolage-grand-baie",
-    "name": "Mr.Bricolage Grand Baie",
-    "category": "food",
-    "address": "Centre commercial MU, La Croisette, Grand Baie 30517",
-    "phone": "+230 269 4490",
-    "website": "https://magasin.mr-bricolage.fr/339-mr-bricolage-grand-baie?utm_source=gmb",
-    "googleMapsUrl": "https://maps.google.com/?cid=12975102205920949883&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.021343,
-    "lng": 57.57878,
-    "themes": [
-      "livraisons"
-    ],
-    "zone": "nord"
-  },
-  {
     "id": "pomodoro-pizzeria-trattoria",
     "name": "Pomodoro Pizzeria Trattoria",
     "category": "food",
