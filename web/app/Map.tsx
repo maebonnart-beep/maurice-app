@@ -18,6 +18,20 @@ function webLabel(url: string) {
   return url.replace(/^https?:\/\//, "").replace(/^www\./, "").replace(/\/.*$/, "");
 }
 
+function whatsappLink(phone: string) {
+  return "https://wa.me/" + phone.replace(/[^\d]/g, "");
+}
+
+// Les numéros mobiles mauriciens (+230 5xxx xxxx) sont presque toujours
+// joignables sur WhatsApp, contrairement aux lignes fixes.
+const MU_MOBILE_RE = /\+230\s?5\d{3}\s?\d{4}/;
+
+function whatsappNumber(b: Business): string | undefined {
+  if (b.whatsapp) return b.whatsapp;
+  if (b.phone && MU_MOBILE_RE.test(b.phone)) return b.phone;
+  return undefined;
+}
+
 // Picto propre à la rubrique (thème) plutôt qu'un simple point de couleur.
 function markerEmoji(b: Business): string {
   const subcats = SUBCATEGORIES[b.category as keyof typeof SUBCATEGORIES];
@@ -171,6 +185,16 @@ export default function Map({
                       className="inline-flex items-center px-2 py-1.5 rounded-lg text-xs font-semibold no-underline bg-[#eef4f3] text-[#0a6d67]"
                     >
                       🌐 {webLabel(b.website)}
+                    </a>
+                  )}
+                  {whatsappNumber(b) && (
+                    <a
+                      href={whatsappLink(whatsappNumber(b) as string)}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center px-2 py-1.5 rounded-lg text-xs font-semibold no-underline bg-[#eef4f3] text-[#0a6d67]"
+                    >
+                      💬 WhatsApp
                     </a>
                   )}
                   {b.googleMapsUrl && (

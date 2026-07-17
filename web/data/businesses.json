@@ -17395,9 +17395,12 @@
     "lat": -20.2576093,
     "lng": 57.793663,
     "themes": [
-      "excursions"
+      "excursions",
+      "sports-nautiques"
     ],
-    "zone": "est"
+    "zone": "est",
+    "email": "reservation@oceane.mu",
+    "description": "Croisières en catamaran + sorties kayak dans les mangroves (Ilot Mangénie, Île aux Bénitiers). Réservation conseillée 48h à l'avance."
   },
   {
     "id": "sundivers-diving-in-mauritius",
@@ -17490,11 +17493,13 @@
     "category": "activites",
     "address": "Les Barachois Estate Tamarin MU Parc de Tamarin MU, Cap Tamarin, Tamarin 90901",
     "phone": "+230 5492 8367",
-    "website": "https://www.lakazkayak.com/",
+    "website": "https://www.lakazkayak.com/en",
     "googleMapsUrl": "https://maps.google.com/?cid=10366757093572830617&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.3285212,
     "lng": 57.3813813,
-    "themes": [],
+    "themes": [
+      "sports-nautiques"
+    ],
     "zone": "ouest"
   },
   {
@@ -21432,7 +21437,8 @@
     "lat": -20.3511414,
     "lng": 57.3620592,
     "themes": [
-      "peche"
+      "peche",
+      "sports-nautiques"
     ],
     "zone": "ouest"
   },
@@ -31278,5 +31284,17 @@
     ],
     "zone": "nord",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=My%20Dodo%20Life%20Sottise%20Road%20Grand%20Baie%20Mauritius"
+  },
+  {
+    "id": "boxbuddy",
+    "name": "BoxBuddy",
+    "category": "utiles",
+    "address": "Application mobile / réservation en ligne",
+    "phone": "",
+    "website": "https://boxbuddy.fr/",
+    "description": "Application de partage de conteneurs maritimes : trouve ou partage de la place dans un conteneur pour envoyer des affaires personnelles à l'international.",
+    "themes": [
+      "expatriation-visas"
+    ]
   }
 ]

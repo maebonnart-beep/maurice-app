@@ -38,6 +38,16 @@ function whatsappLink(phone: string) {
   return "https://wa.me/" + phone.replace(/[^\d]/g, "");
 }
 
+// Les numéros mobiles mauriciens (+230 5xxx xxxx) sont presque toujours
+// joignables sur WhatsApp, contrairement aux lignes fixes.
+const MU_MOBILE_RE = /\+230\s?5\d{3}\s?\d{4}/;
+
+function whatsappNumber(b: Business): string | undefined {
+  if (b.whatsapp) return b.whatsapp;
+  if (b.phone && MU_MOBILE_RE.test(b.phone)) return b.phone;
+  return undefined;
+}
+
 const DIFFICULTY_LABELS: Record<string, string> = {
   debutant: "Débutant",
   habitue: "Habitué",
@@ -428,6 +438,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
               const cat = CATEGORY_MAP[b.category];
               const isActive = b.id === selectedId;
               const accentColor = badgeAccentColor(b.badge);
+              const waNumber = whatsappNumber(b);
               return (
                 <article
                   key={b.id}
@@ -547,9 +558,9 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                         ✉️ Email
                       </a>
                     )}
-                    {b.whatsapp && (
+                    {waNumber && (
                       <a
-                        href={whatsappLink(b.whatsapp)}
+                        href={whatsappLink(waNumber)}
                         target="_blank"
                         rel="noopener noreferrer"
                         onClick={(e) => {
