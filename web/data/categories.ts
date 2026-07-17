@@ -27,7 +27,7 @@ export const FAMILIES: Partial<Record<CategoryKey, Family[]>> = {
       emoji: "🍽️",
       children: [
         "restaurants", "bars", "cafes-terrasses", "snacks-plage", "tables-hotes", "chefs-domicile",
-        "mauricienne", "fruits-de-mer", "indienne", "asiatique", "europeenne", "italien",
+        "glaciers", "mauricienne", "fruits-de-mer", "indienne", "asiatique", "europeenne", "italien",
         "grecque", "marocain", "grillades", "vegetarien", "fastfood", "kids-friendly",
       ],
     },
@@ -37,7 +37,7 @@ export const FAMILIES: Partial<Record<CategoryKey, Family[]>> = {
       emoji: "🛒",
       children: [
         "grandes-surfaces", "epiceries-specialisees", "boucheries", "poissonneries", "marches",
-        "livraisons", "boulangeries", "glaciers", "produits-francais", "vins-spiritueux",
+        "livraisons", "boulangeries", "produits-francais", "vins-spiritueux",
       ],
     },
   ],
