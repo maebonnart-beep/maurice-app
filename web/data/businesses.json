@@ -5031,7 +5031,8 @@
     ],
     "hours": "Tous les jours 9h-17h (dernière admission 16h)",
     "priceRange": "prix-moyen",
-    "zone": "nord"
+    "zone": "nord",
+    "promoText": "Château colonial du 19e siècle entouré d'un verger, visite guidée de 45 min avec dégustation de jus et rhum. (à partir de 700 Rs/pers.)"
   },
   {
     "id": "ssr-botanical-garden-pamplemousses",
@@ -5065,7 +5066,8 @@
     ],
     "hours": "Lun-Sam 10h-16h (dernière entrée 15h15)",
     "priceRange": "prix-moyen",
-    "zone": "nord"
+    "zone": "nord",
+    "promoText": "Écomusée retraçant l'histoire du sucre à Maurice, parcours de 10 espaces thématiques avec dégustations de produits locaux. (1200 Rs/pers.)"
   },
   {
     "id": "aapravasi-ghat-port-louis",
@@ -5082,7 +5084,8 @@
     ],
     "hours": "Lun-Ven 9h-16h, Sam 9h-12h, fermé dim",
     "priceRange": "bon-marche",
-    "zone": "centre"
+    "zone": "centre",
+    "promoText": "Site classé UNESCO retraçant l'arrivée des travailleurs engagés indiens dès 1849, centre d'interprétation avec objets et témoignages. (entrée gratuite)"
   },
   {
     "id": "domaine-les-pailles",
@@ -5102,7 +5105,8 @@
     "priceRange": "bon-marche",
     "description": "Domaine touristique : calèche/petit train, safari en Land Rover, moulin à sucre et distillerie de rhum du 18e siècle",
     "entryPrice": "Rs 150/pers (entrée) ; safari complet Rs 650",
-    "zone": "centre"
+    "zone": "centre",
+    "promoText": "Grand domaine vallonné, balade en petit train de 15 min à travers jardins et ateliers d'antan (sucre, rhum). (150 Rs/pers., train 110 Rs)"
   },
   {
     "id": "blue-penny-museum",
@@ -5119,7 +5123,8 @@
     ],
     "hours": "Tous les jours 10h-17h",
     "priceRange": "bon-marche",
-    "zone": "centre"
+    "zone": "centre",
+    "promoText": "Musée d'art et d'histoire postale, célèbre pour ses timbres Blue Penny et Red Penny de 1847 visibles 10 min par heure. (225 Rs/pers.)"
   },
   {
     "id": "rochester-falls-souillac",
@@ -5152,7 +5157,8 @@
       "parcs-botaniques"
     ],
     "priceRange": "prix-moyen",
-    "zone": "centre"
+    "zone": "centre",
+    "promoText": "Grande maison créole coloniale, visite guidée de la demeure et du parc aux 4 cascades. (300 Rs/pers.)"
   },
   {
     "id": "jumbo-phoenix",
@@ -13190,7 +13196,8 @@
     "themes": [
       "culture-patrimoine"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "promoText": "Petit musée au fort hollandais du premier établissement colonial de Maurice, vue sur la baie. (entrée gratuite, fermé le mercredi)"
   },
   {
     "id": "musee-de-la-poste-mauricienne",
@@ -13205,7 +13212,8 @@
     "themes": [
       "culture-patrimoine"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "promoText": "Musée philatélique installé dans l'ancienne poste centrale de 1868, collection de timbres mauriciens. (entrée à petit prix, gratuit pour les -7 ans)"
   },
   {
     "id": "musee-intercontinental-de-l-esclavage",
@@ -13220,7 +13228,8 @@
     "themes": [
       "culture-patrimoine"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "promoText": "Musée dédié à l'histoire de l'esclavage et de l'engagisme, installé dans l'ancien hôpital militaire de 1740, ouvert en 2023. (entrée gratuite)"
   },
   {
     "id": "natural-history-museum",
@@ -13235,7 +13244,8 @@
     "themes": [
       "culture-patrimoine"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "promoText": "Petit musée abritant le célèbre squelette de dodo et des collections de faune mauricienne. (entrée gratuite)"
   },
   {
     "id": "musee-du-coquillage",
@@ -13250,7 +13260,8 @@
     "themes": [
       "culture-patrimoine"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "promoText": "Collection de plus de 8000 coquillages du monde entier, présentée dans une ancienne demeure coloniale du 19e siècle."
   },
   {
     "id": "galerie-francoise-vrot-chane-cane",
@@ -13265,7 +13276,8 @@
     "themes": [
       "culture-patrimoine"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "promoText": "Galerie d'art dans un centre commercial de Grand Baie, toiles acryliques de Françoise Vrot sur les scènes de vie mauriciennes."
   },
   {
     "id": "mont-choisy-le-mall",
@@ -17953,7 +17965,8 @@
     "themes": [
       "culture-patrimoine"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "promoText": "Ancienne tour de défense britannique du 19e siècle transformée en musée, visite guidée incluse dans le billet. (70 Rs/pers. en semaine, 50 Rs le week-end)"
   },
   {
     "id": "pasadena",
@@ -22106,21 +22119,6 @@
     "zone": "sud"
   },
   {
-    "id": "enbalao-bar-restaurant-chamarel-2",
-    "name": "Enbalao Bar & Restaurant Chamarel",
-    "category": "activites",
-    "address": "Curious Mauritius, Baie du Cap – Chamarel Rd, Chamarel",
-    "phone": "+230 5763 6651",
-    "website": "https://curiousmauritius.com/enbalao-restaurant-chamarel/",
-    "googleMapsUrl": "https://maps.google.com/?cid=15745540461427190874&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.4378164,
-    "lng": 57.3903757,
-    "themes": [
-      "culture-patrimoine"
-    ],
-    "zone": "sud"
-  },
-  {
     "id": "ruisseau-creole",
     "name": "Ruisseau Creole",
     "category": "activites",
@@ -24657,22 +24655,8 @@
     "themes": [
       "culture-patrimoine"
     ],
-    "zone": "sud"
-  },
-  {
-    "id": "musee-coquillage",
-    "name": "Musee Coquillage",
-    "category": "activites",
-    "address": "FCX7+64P, Bel Ombre",
-    "phone": "",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=8804812069452286160&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.5019079,
-    "lng": 57.4128295,
-    "themes": [
-      "culture-patrimoine"
-    ],
-    "zone": "sud"
+    "zone": "sud",
+    "promoText": "Ancienne demeure du poète mauricien Robert Edward Hart, avec ses effets personnels, manuscrits et éditions originales. (entrée gratuite)"
   },
   {
     "id": "sookdeo-bissoondoyal-memorial-museum",
@@ -24687,7 +24671,8 @@
     "themes": [
       "culture-patrimoine"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "promoText": "Maison natale du professeur Sookdeo Bissoondoyal à Tyack, transformée en musée avec souvenirs, photos et documents. (entrée gratuite)"
   },
   {
     "id": "musee-de-la-petite-collection",
@@ -24702,7 +24687,8 @@
     "themes": [
       "culture-patrimoine"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "promoText": "Collection privée éclectique de plus de 27 000 objets anciens (téléphones, machines à coudre, monnaies, vélos) réunis sur trois générations."
   },
   {
     "id": "mahogany-shopping-promenade",
@@ -27294,22 +27280,8 @@
     "themes": [
       "culture-patrimoine"
     ],
-    "zone": "est"
-  },
-  {
-    "id": "mauritius-museums-council",
-    "name": "Mauritius Museums Council",
-    "category": "activites",
-    "address": "Immediate to Mauritius Council, Port Louis",
-    "phone": "+230 212 6912",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=11312410069229544716&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.1631083,
-    "lng": 57.5025277,
-    "themes": [
-      "culture-patrimoine"
-    ],
-    "zone": "centre"
+    "zone": "est",
+    "promoText": "Vestiges d'une ancienne sucrerie construite en 1822 et fermée en 1875, murs et cheminées classés au patrimoine national. (accès libre)"
   },
   {
     "id": "monument-paul-et-virginie",
@@ -27324,7 +27296,8 @@
     "themes": [
       "culture-patrimoine"
     ],
-    "zone": "est"
+    "zone": "est",
+    "promoText": "Monument élevé en 1944 en mémoire du naufrage du Saint-Géran en 1744, qui inspira le roman Paul et Virginie. (accès libre)"
   },
   {
     "id": "coeur-de-ville-flacq",
@@ -30140,7 +30113,7 @@
   },
   {
     "id": "domaine-des-aubineaux",
-    "name": "Cours de cuisine — Domaine des Aubineaux",
+    "name": "Domaine des Aubineaux",
     "category": "activites",
     "address": "Route du Thé, Forest Side, Curepipe",
     "phone": "",
@@ -30149,11 +30122,11 @@
     "lat": -20.3277142,
     "lng": 57.5324951,
     "themes": [
-      "cours-de-cuisine",
       "culture-patrimoine"
     ],
     "hours": "Tous les jours 9h-17h",
-    "zone": "centre"
+    "zone": "centre",
+    "promoText": "Demeure coloniale restaurée en musée du thé mauricien, visite guidée d'1h se terminant par une dégustation. (330 Rs/pers.)"
   },
   {
     "id": "chef-alessio-cours-cuisine",
@@ -30254,7 +30227,8 @@
       "activites-enfants-famille",
       "culture-patrimoine"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "promoText": "Biscuiterie artisanale fondée en 1870, visite de la fabrication traditionnelle des biscuits manioc suivie d'une dégustation. (du lundi au vendredi, 9h-15h)"
   },
   {
     "id": "distillerie-ylang-ylang",
@@ -30270,7 +30244,8 @@
       "activites-enfants-famille",
       "culture-patrimoine"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "promoText": "Petite distillerie artisanale d'huiles essentielles (ylang-ylang, citronnelle, poivre rose), visite guidée des étapes de fabrication."
   },
   {
     "id": "splash-n-fun-quatre-cocos",
