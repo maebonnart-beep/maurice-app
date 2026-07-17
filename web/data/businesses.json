@@ -1980,7 +1980,8 @@
     ],
     "hours": "Tous les jours à partir de 16h",
     "priceRange": "bon-marche",
-    "zone": "nord"
+    "zone": "nord",
+    "promoText": "Les pêcheurs locaux se rassemblent sur la plage pour vendre du poisson frais de toutes les couleurs et de toutes les tailles. Le marchandage et l'ambiance locale sont à l'ordre du jour."
   },
   {
     "id": "bayside-butchery",
@@ -3913,7 +3914,8 @@
     "themes": [
       "marches"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "promoText": "Ambiance animée, nourriture au rez-de-chaussée et produits artisanaux à l'étage. La section sud est consacrée aux spécialités culinaires mauriciennes : dholl puri, farata, alouda, pâtisserie."
   },
   {
     "id": "flacq-market",
@@ -3929,7 +3931,8 @@
     "themes": [
       "marches"
     ],
-    "zone": "est"
+    "zone": "est",
+    "promoText": "Marché authentique, le plus grand de plein air : légumes, fruits, fruits de mer, vanille, spécialité de la région, tisanes et jus de canne."
   },
   {
     "id": "phoenix-mall",
@@ -15554,7 +15557,8 @@
     "themes": [
       "marches"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "promoText": "Marché artisanal (et non alimentaire) : textile, jupes de séga, paréos, souvenirs, dodos en bois artisanaux."
   },
   {
     "id": "grubmates-food-delivery-grand-baie",
@@ -29492,7 +29496,8 @@
     "themes": [
       "marches"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "promoText": "Des fleurs, de la street food mauricienne, du poisson frais, le meilleur de l'île, des légumes et des épices."
   },
   {
     "id": "second-hand-shop",
@@ -30298,7 +30303,8 @@
       "glaciers"
     ],
     "zone": "centre",
-    "description": "Glace à l'ancienne (1 à 4 parfums), garnitures au choix (confiture, noix de coco râpée). Institution ouverte depuis près d'un siècle, service tardif jusqu'à 23h."
+    "description": "Glace à l'ancienne (1 à 4 parfums), garnitures au choix (confiture, noix de coco râpée). Institution ouverte depuis près d'un siècle, service tardif jusqu'à 23h. Environ Rs 50-75 la glace.",
+    "priceRange": "bon-marche"
   },
   {
     "id": "zorbetteria-port-louis",
@@ -30314,7 +30320,8 @@
       "glaciers"
     ],
     "zone": "centre",
-    "description": "Gelato artisanal, plus de 20 parfums saisonniers sans colorants ni conservateurs, dont des saveurs locales (jamalak, avocat, goyave chinoise) et une sauce tamarin-piment."
+    "description": "Gelato artisanal, plus de 20 parfums saisonniers sans colorants ni conservateurs, dont des saveurs locales (jamalak, avocat, goyave chinoise) et une sauce tamarin-piment. Environ Rs 65-75 la boule.",
+    "priceRange": "bon-marche"
   },
   {
     "id": "kristens-ice-cream",
@@ -30330,7 +30337,8 @@
       "glaciers"
     ],
     "zone": "nord",
-    "description": "Glace artisanale maison à base d'ingrédients locaux, cônes faits maison, options sans sucre et végan."
+    "description": "Glace artisanale maison à base d'ingrédients locaux, cônes faits maison, options sans sucre et végan. Boule Rs 85, pot 500ml Rs 250.",
+    "priceRange": "bon-marche"
   },
   {
     "id": "gelato-heaven-flic-en-flac",
@@ -30346,7 +30354,8 @@
       "glaciers"
     ],
     "zone": "ouest",
-    "description": "Gelato artisanal (une vingtaine de parfums : Biscoff, cookie dough, cheesecake fraise, masala chai...) et sorbets, dont un sorbet litchi très apprécié."
+    "description": "Gelato artisanal (une vingtaine de parfums : Biscoff, cookie dough, cheesecake fraise, masala chai...) et sorbets, dont un sorbet litchi très apprécié. Tarifs plutôt abordables.",
+    "priceRange": "bon-marche"
   },
   {
     "id": "lepicerie-clef-des-champs-floreal",
@@ -31589,7 +31598,25 @@
     "themes": [
       "glaciers"
     ],
-    "description": "Gelato artisanal et chocolats/pâtisseries maison ; large choix de parfums crémeux (dont un chocolat 'mud' très prisé).",
-    "zone": "nord"
+    "description": "Gelato artisanal et chocolats/pâtisseries maison ; large choix de parfums crémeux (dont un chocolat 'mud' très prisé). Plus cher que la moyenne des glaciers de l'île, mais portions généreuses.",
+    "zone": "nord",
+    "priceRange": "se-faire-plaisir"
+  },
+  {
+    "id": "marche-de-quatre-bornes",
+    "name": "Marché de Quatre Bornes",
+    "category": "food",
+    "address": "Avenue des Girofliers, Quatre Bornes",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=March%C3%A9%20de%20Quatre%20Bornes%20Mauritius",
+    "lat": -20.2666,
+    "lng": 57.4794,
+    "themes": [
+      "marches"
+    ],
+    "hours": "Mer & Sam",
+    "promoText": "Objets atypiques et de nombreux tissus : tapisseries indiennes, nappes, vêtements traditionnels… plats typiques, du briani au mine frit en passant par le dholl puri.",
+    "zone": "centre"
   }
 ]
