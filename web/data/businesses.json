@@ -30297,7 +30297,8 @@
     "themes": [
       "glaciers"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Glace à l'ancienne (1 à 4 parfums), garnitures au choix (confiture, noix de coco râpée). Institution ouverte depuis près d'un siècle, service tardif jusqu'à 23h."
   },
   {
     "id": "zorbetteria-port-louis",
@@ -30312,7 +30313,8 @@
     "themes": [
       "glaciers"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Gelato artisanal, plus de 20 parfums saisonniers sans colorants ni conservateurs, dont des saveurs locales (jamalak, avocat, goyave chinoise) et une sauce tamarin-piment."
   },
   {
     "id": "kristens-ice-cream",
@@ -30327,7 +30329,8 @@
     "themes": [
       "glaciers"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Glace artisanale maison à base d'ingrédients locaux, cônes faits maison, options sans sucre et végan."
   },
   {
     "id": "gelato-heaven-flic-en-flac",
@@ -30342,7 +30345,8 @@
     "themes": [
       "glaciers"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Gelato artisanal (une vingtaine de parfums : Biscoff, cookie dough, cheesecake fraise, masala chai...) et sorbets, dont un sorbet litchi très apprécié."
   },
   {
     "id": "lepicerie-clef-des-champs-floreal",
@@ -31554,5 +31558,38 @@
       "centres-equestres"
     ],
     "zone": "ouest"
+  },
+  {
+    "id": "mamma-mia-che-gelato-grand-baie",
+    "name": "Mamma Mia Che Gelato - La Croisette",
+    "category": "food",
+    "address": "La Croisette, angle M2 et Chemin Vingt Pieds, Grand Baie",
+    "phone": "+230 269 7443",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Mamma%20Mia%20Che%20Gelato%20La%20Croisette%20Grand%20Baie%20Mauritius",
+    "lat": -20.0219,
+    "lng": 57.57873,
+    "themes": [
+      "glaciers"
+    ],
+    "description": "Gelato artisanal italien, sorbets traditionnels et créations comme Nutella ou cheesecake ; propose aussi pizzas, pâtes et pâtisseries.",
+    "hours": "Lun-Jeu 8h-22h, Ven-Sam 8h-23h, Dim 9h-23h",
+    "zone": "nord"
+  },
+  {
+    "id": "gelateria-love-grand-baie",
+    "name": "Gelateria Love",
+    "category": "food",
+    "address": "Complexe Super U, Grand Baie",
+    "phone": "+230 263 5402",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Gelateria%20Love%20Super%20U%20Grand%20Baie%20Mauritius",
+    "lat": -20.01278,
+    "lng": 57.58752,
+    "themes": [
+      "glaciers"
+    ],
+    "description": "Gelato artisanal et chocolats/pâtisseries maison ; large choix de parfums crémeux (dont un chocolat 'mud' très prisé).",
+    "zone": "nord"
   }
 ]
