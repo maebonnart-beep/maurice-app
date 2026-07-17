@@ -1962,7 +1962,8 @@
     ],
     "hours": "Lun-Jeu 9h-18h, Ven-Sam 9h-19h, Dim et jours fériés 8h-12h30",
     "priceRange": "se-faire-plaisir",
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Épicerie fine française, italienne, européenne et australienne : viandes australiennes, charcuterie, pâtes fraîches, fromages affinés, truffe, vins, plateaux de fruits de mer et sushis, glaces artisanales."
   },
   {
     "id": "marche-poissons-plage-publique-grand-baie",
@@ -2048,7 +2049,8 @@
       "epiceries-specialisees"
     ],
     "hours": "Lun-Jeu 9h30-20h30, Ven-Sam 9h30-21h30, Dim 9h30-16h30",
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Caviste français (depuis 1822) : large gamme de vins rouges/blancs/rosés, whiskies, cognacs, champagnes et crémants, rayon épicerie fine, livraison gratuite."
   },
   {
     "id": "seaboxx-grand-baie",
@@ -2065,7 +2067,8 @@
       "vins-spiritueux"
     ],
     "priceRange": "se-faire-plaisir",
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Cave à vins, champagnes et cigares : sélection de grands vins français (dont Bordeaux), champagne personnalisable pour occasions spéciales, livraison sur toute l'île."
   },
   {
     "id": "20vin-grand-baie-la-croisette",
@@ -2081,7 +2084,8 @@
       "epiceries-specialisees",
       "vins-spiritueux"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Cave à vins et spiritueux : plus de 900 références (vins du monde, grands crus), whisky, vodka, gin, tequila, rhum ; conseil sommelier sur place."
   },
   {
     "id": "mychef-mauritius",
@@ -19401,7 +19405,8 @@
     "themes": [
       "epiceries-specialisees"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Épicerie fine (même enseigne que Grand Baie/Floréal) : viandes, charcuterie, fromages affinés, vins, produits frais commandés à Rungis (huîtres, moules de bouchot)."
   },
   {
     "id": "lotus-alkatraz-shop",
@@ -19446,7 +19451,8 @@
     "themes": [
       "epiceries-specialisees"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Supermarché gourmet d'origine sud-africaine : saumon frais de Norvège, fruits/légumes importés, distributeur exclusif des marques Waitrose et Freshers, bar à sushis."
   },
   {
     "id": "krish-delights-local-streetfood-local-drinks",
@@ -19477,7 +19483,8 @@
     "themes": [
       "epiceries-specialisees"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Magasin bio français : alimentation sans gluten, produits bio en vrac, thés/infusions, et gamme de produits locaux (miel, riz, achards) de Maurice et Rodrigues."
   },
   {
     "id": "l-epicerie-floreal",
@@ -19492,7 +19499,8 @@
     "themes": [
       "epiceries-specialisees"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Boutique historique (1999) de l'enseigne L'Épicerie : viandes, charcuterie, fromages affinés, truffe, vins, pâtisserie et fine épicerie."
   },
   {
     "id": "the-meat-house",
@@ -23011,7 +23019,8 @@
     "themes": [
       "epiceries-specialisees"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Épicerie fine et boucherie haut de gamme : viandes premium (Wagyu), fruits de mer ultra-frais, fromages affinés, foie gras, panettone artisanal ; dégustations le week-end."
   },
   {
     "id": "maison-epifine",
@@ -23071,7 +23080,8 @@
     "themes": [
       "epiceries-specialisees"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Épicerie fine (Tribeca Mall) dédiée à la fine cuisine européenne : produits gourmets sélectionnés, épicerie salée/sucrée haut de gamme."
   },
   {
     "id": "citizen-store",
@@ -23161,7 +23171,8 @@
     "themes": [
       "epiceries-specialisees"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Produits sud-africains : biltong, droëwors, viande fraîche, plats préparés, biscuits 'Ouma Rusks', épices et sauces."
   },
   {
     "id": "sunset-store",
@@ -30371,7 +30382,8 @@
       "produits-francais",
       "epiceries-specialisees"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Produits fermiers locaux sélectionnés par Jacqueline Dalais (La Clef des Champs) : légumes péi (pipengaye, brèdes, chouchou), fruit à pain, manioc, patate douce."
   },
   {
     "id": "eden-beach-grand-baie",
