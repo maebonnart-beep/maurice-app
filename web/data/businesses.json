@@ -31544,12 +31544,12 @@
     "id": "sea-horse-adventure",
     "name": "Sea Horse Adventure",
     "category": "activites",
-    "address": "Black River",
+    "address": "Flic en Flac",
     "phone": "+230 5772 3999",
     "website": "",
-    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Sea%20Horse%20Adventure%20horse%20riding%20Black%20River%20Mauritius",
-    "lat": -20.3608,
-    "lng": 57.3742,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Sea%20Horse%20Adventure%20horse%20riding%20Flic%20en%20Flac%20Mauritius",
+    "lat": -20.2757,
+    "lng": 57.3646,
     "themes": [
       "centres-equestres"
     ],
