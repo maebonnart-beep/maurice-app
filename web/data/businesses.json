@@ -626,7 +626,13 @@
     ],
     "golfHoles": 18,
     "golfPricing": "Green fee ~166€ (18 trous) / ~100€ (9 trous), cart inclus ; practice 50 balles ~4€",
-    "zone": "nord"
+    "zone": "nord",
+    "golfPar": 72,
+    "golfLength": "6447m",
+    "golfDesigner": "Peter Matkovich",
+    "photoUrl": "https://images.unsplash.com/photo-1742498626135-67a7d3501eff?auto=format&fit=crop&w=800&q=70",
+    "photoCredit": "Photo: Keith Tanner / Unsplash",
+    "description": "Parcours de standard international au décor de roche volcanique noire caractéristique, sur la côte nord."
   },
   {
     "id": "zaka-parc-accrobranche",
@@ -3747,7 +3753,13 @@
     ],
     "golfHoles": 18,
     "golfPricing": "Green fee 8500 MUR (18 trous) / 6000 MUR (9 trous), cart inclus ; practice 60 balles 500 MUR",
-    "zone": "ouest"
+    "zone": "ouest",
+    "golfPar": 72,
+    "golfLength": "6886m",
+    "golfDesigner": "Rodney Wright",
+    "photoUrl": "https://images.unsplash.com/photo-1692087224072-83f25202ca4a?auto=format&fit=crop&w=800&q=70",
+    "photoCredit": "Photo: Bob Osias / Unsplash",
+    "description": "Parcours indépendant de 152 hectares dans la baie de Tamarin, avec tarifs préférentiels pour les hôtels voisins."
   },
   {
     "id": "heritage-golf-club-bel-ombre",
@@ -3766,7 +3778,13 @@
     ],
     "golfHoles": 18,
     "golfPricing": "Green fee public ~195€ (18 trous) ; tarif clients Beachcomber ~95€",
-    "zone": "sud"
+    "zone": "sud",
+    "golfPar": 72,
+    "golfLength": "6505m",
+    "golfDesigner": "Peter Matkovich",
+    "photoUrl": "https://images.unsplash.com/photo-1538648759472-7251f7cb2c2f?auto=format&fit=crop&w=800&q=70",
+    "photoCredit": "Photo: Edwin Compton / Unsplash",
+    "description": "Construit sur une ancienne sucrerie de 100 hectares, avec une approche de jeu différente à chaque trou."
   },
   {
     "id": "ile-aux-cerfs-golf-club",
@@ -3785,7 +3803,13 @@
     ],
     "golfHoles": 18,
     "golfPricing": "Green fee 150-200€ selon saison (transfert bateau inclus)",
-    "zone": "est"
+    "zone": "est",
+    "golfPar": 72,
+    "golfLength": "6476m",
+    "golfDesigner": "Bernhard Langer",
+    "photoUrl": "https://images.unsplash.com/photo-1587205476864-4a5a195167b4?auto=format&fit=crop&w=800&q=70",
+    "photoCredit": "Photo: Jura / Unsplash",
+    "description": "Parcours insulaire de 87 hectares accessible en 5 min de bateau depuis Trou d'Eau Douce, pensé pour les joueurs confirmés."
   },
   {
     "id": "anahita-golf-course",
@@ -3804,7 +3828,13 @@
     ],
     "golfHoles": 18,
     "golfPricing": "Green fee public ~125-175€ ; gratuit et illimité pour clients Four Seasons",
-    "zone": "est"
+    "zone": "est",
+    "golfPar": 72,
+    "golfLength": "6928m",
+    "golfDesigner": "Ernie Els",
+    "photoUrl": "https://images.unsplash.com/photo-1780702828814-b9ac93cf01a9?auto=format&fit=crop&w=800&q=70",
+    "photoCredit": "Photo: Taryn Kaahanui / Unsplash",
+    "description": "Larges fairways dessinés pour les joueurs expérimentés, en bord de lagon à Beau Champ."
   },
   {
     "id": "avalon-golf-estate",
@@ -3822,7 +3852,13 @@
     ],
     "golfHoles": 18,
     "golfPricing": "Green fee à partir de 100€ (18 trous) / 60€ (9 trous), cart inclus ; practice 50 balles 3€",
-    "zone": "sud"
+    "zone": "sud",
+    "golfPar": 72,
+    "golfLength": "6200m",
+    "golfDesigner": "Peter Matkovich",
+    "photoUrl": "https://images.unsplash.com/photo-1623567341691-1f47b5cf949e?auto=format&fit=crop&w=800&q=70",
+    "photoCredit": "Photo: Dan Congdon / Unsplash",
+    "description": "Domaine de 550 hectares au cœur des plantations de thé, avec vue sur la côte sud."
   },
   {
     "id": "constance-belle-mare-plage-golf",
@@ -3841,7 +3877,11 @@
     ],
     "golfHoles": 18,
     "golfPricing": "2 parcours 18 trous (Legend & Links). Gratuit pour clients CBMP (buggy en sus) ; tarif visiteur non trouvé",
-    "zone": "est"
+    "zone": "est",
+    "golfDesigner": "Legend (par 72, 6018m) : Hugh Baiocchi ; Links (par 71, 5942m) : Peter Alliss & Rodney Wright",
+    "photoUrl": "https://images.unsplash.com/photo-1777556597830-368613d1d26d?auto=format&fit=crop&w=800&q=70",
+    "photoCredit": "Photo: Margo Evardson / Unsplash",
+    "description": "Deux parcours 18 trous (Legend et Links) sur l'ancienne réserve à cerfs de Belle Mare."
   },
   {
     "id": "bagatelle-mall-moka",
@@ -4843,7 +4883,13 @@
     ],
     "golfHoles": 18,
     "golfPricing": "Résidents Beachcomber 30€ (+cart 65€) ; externes 100-170€/jour selon saison",
-    "zone": "sud"
+    "zone": "sud",
+    "golfPar": 72,
+    "golfLength": "5899m",
+    "golfDesigner": "David Button",
+    "photoUrl": "https://images.unsplash.com/photo-1780598346678-b3257f3761bd?auto=format&fit=crop&w=800&q=70",
+    "photoCredit": "Photo: STAR EV / Unsplash",
+    "description": "Cinq passages d'eau et des derniers trous en bord de lagon ; parcours accessible aux débutants."
   },
   {
     "id": "dodo-club-curepipe",
@@ -4860,7 +4906,9 @@
       "golf"
     ],
     "golfHoles": 9,
-    "zone": "centre"
+    "zone": "centre",
+    "photoUrl": "https://images.unsplash.com/photo-1592919505780-303950717480?auto=format&fit=crop&w=800&q=70",
+    "photoCredit": "Photo: Andrew Shelley / Unsplash"
   },
   {
     "id": "maritim-golf-course-balaclava",
@@ -4877,7 +4925,13 @@
       "golf"
     ],
     "golfHoles": 9,
-    "zone": "nord"
+    "zone": "nord",
+    "golfPar": 29,
+    "golfLength": "1260m",
+    "golfDesigner": "Graham Marsh",
+    "photoUrl": "https://images.unsplash.com/photo-1605147861225-7bcd55f8e513?auto=format&fit=crop&w=800&q=70",
+    "photoCredit": "Photo: Welcome / Unsplash",
+    "description": "Parcours 9 trous dans un parc de 25 hectares planté de fleurs tropicales, jouable sur deux départs différents."
   },
   {
     "id": "shandrani-golf-course-blue-bay",
@@ -4894,7 +4948,12 @@
       "golf"
     ],
     "golfHoles": 9,
-    "zone": "sud"
+    "zone": "sud",
+    "golfPar": 30,
+    "golfLength": "767m",
+    "photoUrl": "https://images.unsplash.com/photo-1612303383354-1d875e017a25?auto=format&fit=crop&w=800&q=70",
+    "photoCredit": "Photo: Zane Persaud / Unsplash",
+    "description": "Tracé stimulant en bord de lagon, idéal pour les débutants, départ à 100 m de la réception."
   },
   {
     "id": "piton-petite-riviere-noire",
@@ -5302,7 +5361,9 @@
     "sandType": "Sable blanc fin",
     "beachActivities": "Kitesurf, snorkeling, plongée, kayak/pédalo, planche à voile, stand-up paddle",
     "beachLength": "Environ 500 m à 3 km selon les sources",
-    "zone": "sud"
+    "zone": "sud",
+    "photoUrl": "https://images.unsplash.com/photo-1513415431848-a433b3de449f",
+    "photoCredit": "Xavier Coiffic / Unsplash"
   },
   {
     "id": "plage-belle-mare",
@@ -5320,7 +5381,9 @@
     "sandType": "Sable blanc",
     "beachActivities": "Kitesurf, snorkeling, golf, parachute ascensionnel",
     "beachLength": "Environ 8 km",
-    "zone": "est"
+    "zone": "est",
+    "photoUrl": "https://images.pexels.com/photos/30977598/pexels-photo-30977598.jpeg",
+    "photoCredit": "Justine Becker / Pexels"
   },
   {
     "id": "plage-trou-aux-biches",
@@ -5338,7 +5401,9 @@
     "sandType": "Sable blanc fin",
     "beachActivities": "Baignade, snorkeling, plongée bouteille, sports nautiques, restaurants/bars",
     "beachLength": "Environ 3 km",
-    "zone": "nord"
+    "zone": "nord",
+    "photoUrl": "https://images.pexels.com/photos/37485539/pexels-photo-37485539.jpeg",
+    "photoCredit": "Aurélie (Nomadaventure) / Pexels"
   },
   {
     "id": "plage-flic-en-flac",
@@ -5356,7 +5421,9 @@
     "sandType": "Sable fin",
     "beachActivities": "Kayak, stand-up paddle, plongée bouteille (grottes/épaves), baignade",
     "beachLength": "Environ 8 km",
-    "zone": "ouest"
+    "zone": "ouest",
+    "photoUrl": "https://images.unsplash.com/photo-1650928112892-36bdfb34da50",
+    "photoCredit": "Anton Marchuk / Unsplash"
   },
   {
     "id": "plage-blue-bay",
@@ -5374,7 +5441,9 @@
     "sandType": "Sable fin, blanc",
     "beachActivities": "Snorkeling (parc marin), plongée",
     "beachLength": "Environ 500 m",
-    "zone": "sud"
+    "zone": "sud",
+    "photoUrl": "https://images.pexels.com/photos/32866444/pexels-photo-32866444.jpeg",
+    "photoCredit": "Jyoti Pur / Pexels"
   },
   {
     "id": "plage-la-cuvette-grand-baie",
@@ -5392,7 +5461,9 @@
     "sandType": "Sable fin",
     "beachActivities": "Marche sous-marine, parachute ascensionnel, plongée, baignade, barbecues familiaux",
     "beachLength": "Environ 70 m (petite plage en fer à cheval)",
-    "zone": "nord"
+    "zone": "nord",
+    "photoUrl": "https://images.unsplash.com/photo-1712045266359-dccdbffc6075",
+    "photoCredit": "Florian Elbers / Unsplash"
   },
   {
     "id": "plage-ile-aux-cerfs",
@@ -5411,7 +5482,9 @@
     "sandType": "Sable blanc fin / poudreux",
     "beachActivities": "Plongée, snorkeling, parachute ascensionnel, golf 18 trous",
     "beachLength": "Plage principale ~500 m (île ~4 km de sable au total)",
-    "zone": "est"
+    "zone": "est",
+    "photoUrl": "https://images.pexels.com/photos/34732417/pexels-photo-34732417.jpeg",
+    "photoCredit": "Vincent Rivaud / Pexels"
   },
   {
     "id": "plage-mont-choisy",
@@ -5429,7 +5502,9 @@
     "sandType": "Sable blanc fin",
     "beachActivities": "Farniente, plongée, snorkeling, kayak/paddle, golf 18 trous, jogging",
     "beachLength": "Environ 3 km",
-    "zone": "nord"
+    "zone": "nord",
+    "photoUrl": "https://images.unsplash.com/photo-1633011303129-e1ed6e4b3595",
+    "photoCredit": "Xavier Coiffic / Unsplash"
   },
   {
     "id": "plage-pereybere",
@@ -5447,7 +5522,9 @@
     "sandType": "Sable blanc fin",
     "beachActivities": "Kayak, SUP, kitesurf, ski nautique, pêche au gros, catamaran, snorkeling, planche à voile",
     "beachLength": "Environ 200-400 m selon les sources",
-    "zone": "nord"
+    "zone": "nord",
+    "photoUrl": "https://images.pexels.com/photos/30977598/pexels-photo-30977598.jpeg",
+    "photoCredit": "Justine Becker / Pexels"
   },
   {
     "id": "plage-bel-ombre",
@@ -5465,7 +5542,9 @@
     "sandType": "Sable doré",
     "beachActivities": "Baignade, plongée, snorkeling, kitesurf, pêche en haute mer, golf",
     "beachLength": "Plus de 2 km",
-    "zone": "sud"
+    "zone": "sud",
+    "photoUrl": "https://images.pexels.com/photos/33791769/pexels-photo-33791769.jpeg",
+    "photoCredit": "Gopinath Mohanta / Pexels"
   },
   {
     "id": "roti-baboolall-triolet",
@@ -6218,7 +6297,12 @@
     "golfPricing": "Visiteurs Rs 2100 (18 trous) / Rs 1600 (9 trous). Fondé en 1844, plus ancien golf de l'hémisphère sud.",
     "hours": "Ouvert aux non-membres Lun-Ven 9h-14h",
     "priceRange": "bon-marche",
-    "zone": "centre"
+    "zone": "centre",
+    "golfPar": 68,
+    "golfLength": "4873m",
+    "photoUrl": "https://images.unsplash.com/photo-1593282153762-a41e3cceb06c?auto=format&fit=crop&w=800&q=70",
+    "photoCredit": "Photo: Matt Aylward / Unsplash",
+    "description": "Le plus ancien club de golf de l'île (fondé vers 1844), quatrième nation golfique au monde à l'époque."
   },
   {
     "id": "harmonie-golf-beach-estate",
@@ -6233,7 +6317,9 @@
     "themes": [
       "golf"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "photoUrl": "https://images.unsplash.com/photo-1774905175014-5f9de3e9c2d1?auto=format&fit=crop&w=800&q=70",
+    "photoCredit": "Photo: Y S / Unsplash"
   },
   {
     "id": "le-dix-neuf-restaurant",
@@ -8833,7 +8919,13 @@
     ],
     "golfHoles": 18,
     "golfPricing": "Parcours 'Legend' de Constance Belle Mare Plage. Gratuit pour clients CBMP ; tarif visiteur non trouvé",
-    "zone": "est"
+    "zone": "est",
+    "golfPar": 72,
+    "golfLength": "6018m",
+    "golfDesigner": "Hugh Baiocchi",
+    "photoUrl": "https://images.unsplash.com/photo-1516705416642-fa4f130a0bb3?auto=format&fit=crop&w=800&q=70",
+    "photoCredit": "Photo: Johnny Such / Unsplash",
+    "description": "Construit sur une ancienne réserve à cerfs, avec des éléments de roche volcanique intégrés au tracé."
   },
   {
     "id": "constance-belle-mare-plage-mauritius",
@@ -24440,7 +24532,9 @@
       "plages"
     ],
     "zone": "sud",
-    "description": "Hors lagon : l'océan se brise sur les falaises. Nature indomptée, le \"sud sauvage\" mauricien."
+    "description": "Hors lagon : l'océan se brise sur les falaises. Nature indomptée, le \"sud sauvage\" mauricien.",
+    "photoUrl": "https://images.pexels.com/photos/35540934/pexels-photo-35540934.jpeg",
+    "photoCredit": "Tristan Lafronte / Pexels"
   },
   {
     "id": "grse-waterfall",
@@ -24497,7 +24591,9 @@
       "plages"
     ],
     "zone": "sud",
-    "description": "La plage la plus proche de l'aéroport, sauvage et exposée au vent."
+    "description": "La plage la plus proche de l'aéroport, sauvage et exposée au vent.",
+    "photoUrl": "https://images.pexels.com/photos/7425281/pexels-photo-7425281.jpeg",
+    "photoCredit": "Dominik Ruhl / Pexels"
   },
   {
     "id": "montagne-des-signaux",
@@ -24725,7 +24821,9 @@
       "plages"
     ],
     "zone": "sud",
-    "description": "Entre Le Morne et Bel Ombre, plage ombragée avec vue sur les montagnes, lagon peu profond, idéale pour les familles."
+    "description": "Entre Le Morne et Bel Ombre, plage ombragée avec vue sur les montagnes, lagon peu profond, idéale pour les familles.",
+    "photoUrl": "https://images.pexels.com/photos/36731905/pexels-photo-36731905.jpeg",
+    "photoCredit": "Zak H / Pexels"
   },
   {
     "id": "tamassa",
@@ -29309,7 +29407,9 @@
     ],
     "zone": "ouest",
     "description": "Vue sur le Morne Brabant, entourée de filaos, lagon calme et peu profond, idéal pour le paddle.",
-    "beachActivities": "Paddle"
+    "beachActivities": "Paddle",
+    "photoUrl": "https://images.pexels.com/photos/36731894/pexels-photo-36731894.jpeg",
+    "photoCredit": "Zak H / Pexels"
   },
   {
     "id": "ateliers-theatre-oz",
@@ -31289,7 +31389,9 @@
       "plages"
     ],
     "description": "Le plus grand lagon de Maurice : eaux calmes et peu profondes protégées par la barrière de corail, sable blanc bordé de filaos et mangroves, atmosphère paisible et préservée, peu fréquentée.",
-    "sandType": "Sable blanc fin"
+    "sandType": "Sable blanc fin",
+    "photoUrl": "https://images.pexels.com/photos/32866444/pexels-photo-32866444.jpeg",
+    "photoCredit": "Jyoti Pur / Pexels"
   },
   {
     "id": "plage-tamarin",
@@ -31306,7 +31408,9 @@
       "plages"
     ],
     "description": "Idéale pour le surf, les couchers de soleil, et point d'embarquation pour aller voir les dauphins.",
-    "beachActivities": "Surf, observation des dauphins"
+    "beachActivities": "Surf, observation des dauphins",
+    "photoUrl": "https://images.pexels.com/photos/34190261/pexels-photo-34190261.jpeg",
+    "photoCredit": "Damini Gokool / Pexels"
   },
   {
     "id": "plage-balaclava",
@@ -31323,7 +31427,9 @@
       "plages"
     ],
     "description": "Plage familiale, snorkeling exceptionnel.",
-    "beachActivities": "Snorkeling"
+    "beachActivities": "Snorkeling",
+    "photoUrl": "https://images.pexels.com/photos/18069587/pexels-photo-18069587.jpeg",
+    "photoCredit": "Michał Sołowiej / Pexels"
   },
   {
     "id": "plage-pomponette-riambel",
@@ -31339,7 +31445,9 @@
     "themes": [
       "plages"
     ],
-    "description": "Petit bijou encore préservé, peu prisé : longue bande de sable bordée de filaos, coins d'ombre, eaux turquoise plus sauvages qu'ailleurs."
+    "description": "Petit bijou encore préservé, peu prisé : longue bande de sable bordée de filaos, coins d'ombre, eaux turquoise plus sauvages qu'ailleurs.",
+    "photoUrl": "https://images.pexels.com/photos/18069584/pexels-photo-18069584.jpeg",
+    "photoCredit": "Michał Sołowiej / Pexels"
   },
   {
     "id": "plage-saint-felix",
@@ -31355,7 +31463,9 @@
     "themes": [
       "plages"
     ],
-    "description": "Paisible, sauvage, à l'écart des zones touristiques. Lagon agréable à la baignade selon la saison."
+    "description": "Paisible, sauvage, à l'écart des zones touristiques. Lagon agréable à la baignade selon la saison.",
+    "photoUrl": "https://images.pexels.com/photos/32515327/pexels-photo-32515327.jpeg",
+    "photoCredit": "emre kağızmanlı / Pexels"
   },
   {
     "id": "plage-poste-lafayette",
@@ -31372,6 +31482,77 @@
       "plages"
     ],
     "description": "Longue plage bordée de filaos, plus sauvage que d'autres endroits de la côte est. Appréciée pour la baignade dans les zones protégées du vent, et par les kitesurfeurs dans les zones exposées.",
-    "beachActivities": "Baignade (zones protégées), kitesurf (zones exposées)"
+    "beachActivities": "Baignade (zones protégées), kitesurf (zones exposées)",
+    "photoUrl": "https://images.pexels.com/photos/3485360/pexels-photo-3485360.jpeg",
+    "photoCredit": "Andrew Harvard / Pexels"
+  },
+  {
+    "id": "la-reserve-golf-links",
+    "name": "La Réserve Golf Links",
+    "category": "activites",
+    "address": "Bel Ombre Territory, Bel Ombre 61002",
+    "phone": "+230 623 5600",
+    "website": "https://heritagegolfclub.mu/golf/la-reserve-golf-links/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=La%20Reserve%20Golf%20Links%20Bel%20Ombre%20Mauritius",
+    "lat": -20.5054624,
+    "lng": 57.4124237,
+    "priceRange": "se-faire-plaisir",
+    "themes": [
+      "golf"
+    ],
+    "golfHoles": 18,
+    "golfPar": 72,
+    "golfLength": "6727m",
+    "golfDesigner": "Peter Matkovich & Louis Oosthuizen",
+    "zone": "sud",
+    "photoUrl": "https://images.unsplash.com/photo-1629596545782-775f0792dbc8?auto=format&fit=crop&w=800&q=70",
+    "photoCredit": "Photo: Andrew Anderson / Unsplash",
+    "description": "Premier et unique parcours de style links de l'océan Indien, avec vues panoramiques sur tous les trous."
+  },
+  {
+    "id": "belle-mare-plage-links-golf-club",
+    "name": "Belle Mare Plage Links Golf Club",
+    "category": "activites",
+    "address": "Constance Belle Mare Plage, Belle Mare (côte Est)",
+    "phone": "+230 402 2600",
+    "website": "https://www.constancehotels.com/en/hotels-resorts/belle-mare-plage/experiences/golf/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Belle%20Mare%20Plage%20Links%20Golf%20Club%20Mauritius",
+    "lat": -20.2367,
+    "lng": 57.7742,
+    "priceRange": "se-faire-plaisir",
+    "themes": [
+      "golf"
+    ],
+    "golfHoles": 18,
+    "golfPar": 71,
+    "golfLength": "5942m",
+    "golfDesigner": "Peter Alliss & Rodney Wright",
+    "zone": "est",
+    "photoUrl": "https://images.unsplash.com/photo-1700667315305-ef2a027f9078?auto=format&fit=crop&w=800&q=70",
+    "photoCredit": "Photo: Troy Spoelma / Unsplash",
+    "description": "Larges fairways vallonnés épousant le relief naturel de la côte est."
+  },
+  {
+    "id": "the-nine-azuri-golf",
+    "name": "The Nine - Azuri Golf",
+    "category": "activites",
+    "address": "Azuri Ocean & Golf Village, Roches Noires",
+    "phone": "+230 5499 9995",
+    "website": "https://azuri.mu/play/the-nine/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=The%20Nine%20Azuri%20Golf%20Roches%20Noires%20Mauritius",
+    "lat": -20.0995029,
+    "lng": 57.7067159,
+    "priceRange": "prix-moyen",
+    "themes": [
+      "golf"
+    ],
+    "golfHoles": 9,
+    "golfPar": 27,
+    "golfLength": "1348m",
+    "golfDesigner": "IMG Architects",
+    "zone": "est",
+    "photoUrl": "https://images.unsplash.com/photo-1775326383893-2709e9e62722?auto=format&fit=crop&w=800&q=70",
+    "photoCredit": "Photo: Will Haddock / Unsplash",
+    "description": "Parcours par-3 avec deux options de jeu par trou, conçu pour les parties rapides."
   }
 ]

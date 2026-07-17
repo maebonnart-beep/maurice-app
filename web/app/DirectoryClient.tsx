@@ -77,7 +77,8 @@ function metaFacts(b: Business): { icon: string; label: string }[] {
   if (b.beachActivities) facts.push({ icon: "🎯", label: b.beachActivities });
   if (b.beachLength) facts.push({ icon: "📏", label: b.beachLength });
   if (b.animalsVisible) facts.push({ icon: "🦁", label: b.animalsVisible });
-  if (b.golfHoles) facts.push({ icon: "⛳", label: `${b.golfHoles} trous` });
+  if (b.golfHoles) facts.push({ icon: "⛳", label: `${b.golfHoles} trous${b.golfPar ? ` par ${b.golfPar}` : ""}${b.golfLength ? `, ${b.golfLength}` : ""}` });
+  if (b.golfDesigner) facts.push({ icon: "✏️", label: b.golfDesigner });
   if (b.golfPricing) facts.push({ icon: "💰", label: b.golfPricing });
   return facts;
 }
@@ -459,6 +460,21 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                       : undefined
                   }
                 >
+                  {b.photoUrl && (
+                    <div className="-mx-5 -mt-5 mb-1 relative h-40 overflow-hidden rounded-t-2xl bg-surface-2">
+                      <img
+                        src={b.photoUrl}
+                        alt={b.name}
+                        loading="lazy"
+                        className="w-full h-full object-cover"
+                      />
+                      {b.photoCredit && (
+                        <span className="absolute bottom-1 right-1.5 px-1.5 py-0.5 rounded text-[9px] leading-none text-white/90 bg-black/40">
+                          {b.photoCredit}
+                        </span>
+                      )}
+                    </div>
+                  )}
                   <div className="flex flex-wrap items-center gap-1.5">
                     <span
                       className="self-start inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-white text-xs font-bold"

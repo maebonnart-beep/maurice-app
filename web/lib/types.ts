@@ -76,6 +76,16 @@ export type Business = {
   golfHoles?: number;
   /** Prix du practice et/ou du parcours, texte libre. Golf. */
   golfPricing?: string;
+  /** Par du parcours. Golf. */
+  golfPar?: number;
+  /** Longueur du parcours, texte libre ex: "6505m". Golf. */
+  golfLength?: string;
+  /** Designer(s) du parcours, texte libre. Golf. */
+  golfDesigner?: string;
   /** Zone géographique de l'île. Absent pour les fiches sans localisation physique (apps/plateformes). */
   zone?: "nord" | "sud" | "est" | "ouest" | "centre";
+  /** URL d'une photo libre de droits (Unsplash/Pexels...) illustrant la fiche. */
+  photoUrl?: string;
+  /** Crédit/source de la photo, ex: "Photo: Jane Doe / Unsplash". */
+  photoCredit?: string;
 };
