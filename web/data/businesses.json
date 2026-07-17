@@ -487,7 +487,7 @@
   {
     "id": "luscious-spa",
     "name": "Luscious Spa",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "Sottise Road, Grand Baie 30550",
     "phone": "+230 5786 7578",
     "website": "http://www.luscious-spa.com/",
@@ -495,14 +495,14 @@
     "lat": -20.02461,
     "lng": 57.5892388,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "nord"
   },
   {
     "id": "xtense-spa",
     "name": "Xtense Spa",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "Domaine des Alizées, Chem. Vingt Pieds, Grand Baie",
     "phone": "+230 5256 0531",
     "website": "https://xtensespa.com/",
@@ -511,14 +511,14 @@
     "lng": 57.6004323,
     "hours": "Tous les jours 9h30-18h30",
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "nord"
   },
   {
     "id": "johaness-spa-grand-baie",
     "name": "Johaness Spa Grand Baie",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "Chem. Vingt Pieds, Grand Baie",
     "phone": "+230 5820 9841",
     "website": "https://johanessspagrandbaie.com/",
@@ -528,14 +528,14 @@
     "hours": "Lun-Jeu 9h30-20h, Ven 9h30-20h30, Dim 9h30-17h",
     "priceRange": "bon-marche",
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "nord"
   },
   {
     "id": "spa-ceylon-mauritius",
     "name": "Spa Ceylon Mauritius",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "La Croisette Mall, Grand Baie",
     "phone": "+230 5507 0746",
     "website": "http://www.spaceylon.mu/",
@@ -544,14 +544,14 @@
     "lng": 57.5787599,
     "hours": "Tous les jours 9h30-22h",
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "nord"
   },
   {
     "id": "ocea-wellness",
     "name": "Ocea Wellness",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "Grand Baie Business Park, Mont Choisy",
     "phone": "+230 5916 0367",
     "website": "http://www.oceawellness.com/",
@@ -559,14 +559,14 @@
     "lat": -20.0165125,
     "lng": 57.5701138,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "nord"
   },
   {
     "id": "shantigiri-ayurveda-spa",
     "name": "Shantigiri Ayurveda Spa",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "Suryamukhi Road, Grand Baie",
     "phone": "+230 5753 1177",
     "website": "http://www.shantigiriayurvedaspa.com/",
@@ -575,14 +575,14 @@
     "lng": 57.5854009,
     "priceRange": "bon-marche",
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "nord"
   },
   {
     "id": "sultana-moroccan-hammam-spa",
     "name": "Sultana Moroccan Hammam & Spa",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "Coastal Road, Grand Baie 22315",
     "phone": "+230 5907 2500",
     "website": "https://sultana-mauritius.com/",
@@ -591,14 +591,14 @@
     "lng": 57.5594683,
     "hours": "Femmes: Lun-Ven 9h-17h, Sam 10h-17h ; Hommes: Lun-Sam 17h-20h",
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "nord"
   },
   {
     "id": "vallee-de-beaute-spa",
     "name": "Vallée de Beauté Spa",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "La Salette Road, Grand Baie",
     "phone": "+230 5916 2335",
     "website": "",
@@ -606,7 +606,7 @@
     "lat": -20.013086,
     "lng": 57.5848692,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "nord"
   },
@@ -2720,7 +2720,7 @@
   {
     "id": "perfect-beauty-mauritius",
     "name": "Perfect Beauty Mauritius",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "adjacents à kalachand, Chem. Vingt Pieds, Grand Baie",
     "phone": "+230 5456 7820",
     "website": "https://www.fresha.com/fr/a/perfect-beauty-mauritius-grand-baie-adjacents-a-kalachand-chemin-vingt-pieds-wyoka148?utm_source=Fresha&utm_medium=LocShare&utm_campaign=11644507",
@@ -2729,14 +2729,14 @@
     "lng": 57.5901909,
     "priceRange": "prix-moyen",
     "themes": [
-      "malls-shopping"
+      "spa-instituts"
     ],
     "zone": "nord"
   },
   {
     "id": "the-beauty-loft",
     "name": "The Beauty Loft",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "MU, The Beauty Loft, 58 Sottise Rd, Grand Baie 30550",
     "phone": "+230 5949 1766",
     "website": "http://www.facebook.com/cryotherapieilemaurice",
@@ -2745,14 +2745,14 @@
     "lng": 57.5796783,
     "hours": "Lun-Sam 9h-21h",
     "themes": [
-      "malls-shopping"
+      "spa-instituts"
     ],
     "zone": "nord"
   },
   {
     "id": "chez-ema-institut-de-beaute",
     "name": "Chez Ema - Institut de Beauté",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "017, Business Park,Coastal Road Boulevard MU, de, Grand Baie 30515",
     "phone": "+230 5921 4908",
     "website": "",
@@ -2760,7 +2760,7 @@
     "lat": -20.0164706,
     "lng": 57.5697512,
     "themes": [
-      "malls-shopping"
+      "spa-instituts"
     ],
     "zone": "nord"
   },
@@ -2797,7 +2797,7 @@
   {
     "id": "coco-beaute-by-cf",
     "name": "Coco Beauté By CF",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "Baha Building, Grand Baie",
     "phone": "+230 5824 6243",
     "website": "",
@@ -2805,14 +2805,14 @@
     "lat": -20.016073,
     "lng": 57.57606,
     "themes": [
-      "malls-shopping"
+      "spa-instituts"
     ],
     "zone": "nord"
   },
   {
     "id": "sleek-beauty",
     "name": "Sleek Beauty",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "MU, Royal Road, Grand Baie 30525",
     "phone": "+230 5948 1818",
     "website": "",
@@ -2820,14 +2820,14 @@
     "lat": -20.019257,
     "lng": 57.5849084,
     "themes": [
-      "malls-shopping"
+      "spa-instituts"
     ],
     "zone": "nord"
   },
   {
     "id": "ishiana-salon-de-beaute",
     "name": "Ishiana Salon de Beauté",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "Géranium Rd, Grand Baie",
     "phone": "+230 5940 2272",
     "website": "http://ishiana.mu/",
@@ -2835,7 +2835,7 @@
     "lat": -20.0182976,
     "lng": 57.5773048,
     "themes": [
-      "malls-shopping"
+      "spa-instituts"
     ],
     "zone": "nord"
   },
@@ -2857,7 +2857,7 @@
   {
     "id": "asteria-beauty-atelier-spa",
     "name": "Asteria Beauty Atelier& spa",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "Swami Dayanand Road, Grand Baie",
     "phone": "+230 5906 2681",
     "website": "",
@@ -2865,7 +2865,7 @@
     "lat": -20.0114567,
     "lng": 57.5853549,
     "themes": [
-      "malls-shopping"
+      "spa-instituts"
     ],
     "zone": "nord"
   },
@@ -2903,7 +2903,7 @@
   {
     "id": "tcr-beauty-house",
     "name": "TCR Beauty House",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "Rte de la Salette, Grand Baie",
     "phone": "+230 5859 0714",
     "website": "",
@@ -2911,7 +2911,7 @@
     "lat": -20.0136929,
     "lng": 57.586881,
     "themes": [
-      "malls-shopping"
+      "spa-instituts"
     ],
     "zone": "nord"
   },
@@ -2948,7 +2948,7 @@
   {
     "id": "nail-and-lash-studio",
     "name": "Nail and Lash Studio",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "La Salette Rd, Grand Baie",
     "phone": "+230 263 5797",
     "website": "https://www.facebook.com/NailandLashStudioGrandBaieMauritius/",
@@ -2957,7 +2957,7 @@
     "lng": 57.5862994,
     "hours": "Mar-Sam 9h30-17h",
     "themes": [
-      "malls-shopping"
+      "spa-instituts"
     ],
     "zone": "nord"
   },
@@ -2995,7 +2995,7 @@
   {
     "id": "beauty-and-nail-centre",
     "name": "Beauty and Nail Centre",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "Casse Ghoon Road MU, Grand Baie 30520",
     "phone": "+230 263 4237",
     "website": "https://beautynailctr.com/",
@@ -3003,14 +3003,14 @@
     "lat": -20.0066522,
     "lng": 57.5632576,
     "themes": [
-      "malls-shopping"
+      "spa-instituts"
     ],
     "zone": "nord"
   },
   {
     "id": "cozy-nails-beauty",
     "name": "Cozy Nails & Beauty",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "MU, Racket road, Grand Baie 30502",
     "phone": "+230 5935 6220",
     "website": "https://www.instagram.com/cozynailsandbeauty?igsh=c3pxeWJ0aXVmNWN2&utm_source=qr",
@@ -3018,14 +3018,14 @@
     "lat": -20.0126387,
     "lng": 57.5859878,
     "themes": [
-      "malls-shopping"
+      "spa-instituts"
     ],
     "zone": "nord"
   },
   {
     "id": "sonali-nails",
     "name": "Sonali Nails",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "Royal Road, Grand Baie",
     "phone": "+230 5799 5581",
     "website": "https://www.facebook.com/share/17pbRZU62D/",
@@ -3033,14 +3033,14 @@
     "lat": -20.0229495,
     "lng": 57.5860363,
     "themes": [
-      "malls-shopping"
+      "spa-instituts"
     ],
     "zone": "nord"
   },
   {
     "id": "azure-sunstone-nails-by-nat-gd",
     "name": "Azure Sunstone Nails By NAT GD",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "XHMJ+9GH, Grand Baie",
     "phone": "",
     "website": "",
@@ -3048,14 +3048,14 @@
     "lat": -20.0165728,
     "lng": 57.581356,
     "themes": [
-      "malls-shopping"
+      "spa-instituts"
     ],
     "zone": "nord"
   },
   {
     "id": "rose-beauty",
     "name": "Rose Beauty",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "Super U, Grand Baie",
     "phone": "+230 269 0289",
     "website": "",
@@ -3063,7 +3063,7 @@
     "lat": -20.0128377,
     "lng": 57.5870119,
     "themes": [
-      "malls-shopping"
+      "spa-instituts"
     ],
     "zone": "nord"
   },
@@ -13691,7 +13691,7 @@
   {
     "id": "foraha-spa",
     "name": "FORAHA SPA",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "Clos du Littoral, Sottise Rd, Grand Baie",
     "phone": "+230 263 2996",
     "website": "",
@@ -13699,14 +13699,14 @@
     "lat": -20.0234165,
     "lng": 57.5924288,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "nord"
   },
   {
     "id": "massage-detox-grand-bay-bazaar",
     "name": "Massage & Detox Grand Bay Bazaar",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "MU, Chemin Bazaar, Grand Baie 30502",
     "phone": "+230 5504 5863",
     "website": "",
@@ -13714,14 +13714,14 @@
     "lat": -20.0100113,
     "lng": 57.5865142,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "nord"
   },
   {
     "id": "cosmetic-island-grand-baie",
     "name": "Cosmetic Island Grand Baie",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "Kogi Kogi Building, Twenty-Foot Rd, Grand Baie",
     "phone": "+230 5256 1681",
     "website": "https://www.fresha.com/a/cosmetic-island-grand-baie-grand-baie-sottise-road-rm38x2yq?preview=8d1467c5-1927-4e2b-aa26-65120b439c18&share&pId=1169272&_gl=1*5bym7w*_gcl_au*MTEwOTE3NTg5My4xNzM2NzM1NjMxLjE0MDc4ODA1NzEuMTc0MDkyMDcxOS4xNzQwOTIwNzE5*_ga*NzYxMzg2NzgzLjE3MDUyMzIxMzY.*_ga_SMQNG7NE8C*MTc0MTUyMDI5Ny44MDguMS4xNzQxNTIwNDU4LjYwLjAuMA..",
@@ -13729,14 +13729,14 @@
     "lat": -20.0178066,
     "lng": 57.5866391,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "nord"
   },
   {
     "id": "nu-zil-spa",
     "name": "Nu Zil Spa",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "Grand Baie",
     "phone": "+230 5252 2202",
     "website": "http://www.nuzilspa.net/",
@@ -13744,14 +13744,14 @@
     "lat": -19.9990893,
     "lng": 57.5919961,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "nord"
   },
   {
     "id": "institut-art-et-beaute-grand-baie-maurice",
     "name": "Institut Art Et Beauté Grand Baie Maurice",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "MU, B13 Coastal Road, Grand Baie 30512",
     "phone": "+230 5293 8260",
     "website": "https://institutartbeaute.com/",
@@ -13759,14 +13759,14 @@
     "lat": -20.0090179,
     "lng": 57.5817548,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "nord"
   },
   {
     "id": "vogue-spa-by-nc",
     "name": "VOGUE SPA BY NC",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "MU, School Lane, Grand Baie 30510",
     "phone": "+230 5707 7730",
     "website": "",
@@ -13774,14 +13774,14 @@
     "lat": -20.0151922,
     "lng": 57.5841705,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "nord"
   },
   {
     "id": "silhouette-spa-wellness",
     "name": "Silhouette Spa & Wellness",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "Opposite Shape Sport Club, Sottise Rd, Grand Baie",
     "phone": "+230 268 2100",
     "website": "https://www.facebook.com/SilhouetteWellness",
@@ -13789,14 +13789,14 @@
     "lat": -20.0192955,
     "lng": 57.579609,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "nord"
   },
   {
     "id": "le-square-beaute",
     "name": "Le Square Beauté",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "B13, Grand Baie",
     "phone": "+230 5509 1668",
     "website": "https://www.lesquarebeaute.com/",
@@ -13804,14 +13804,14 @@
     "lat": -20.0015846,
     "lng": 57.582445,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "nord"
   },
   {
     "id": "kobido-massage-mauritius",
     "name": "Kobido massage Mauritius",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "MU, Royal road, Grand Baie 30518",
     "phone": "+230 5836 9965",
     "website": "",
@@ -13819,14 +13819,14 @@
     "lat": -20.0114587,
     "lng": 57.56488,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "nord"
   },
   {
     "id": "plenitude",
     "name": "Plenitude",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "58 Sottise Rd, Grand Baie",
     "phone": "",
     "website": "",
@@ -13834,14 +13834,14 @@
     "lat": -20.0188426,
     "lng": 57.5796843,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "nord"
   },
   {
     "id": "my-space",
     "name": "my space",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "B11 La Salette Rd, Grand Baie",
     "phone": "+230 269 1502",
     "website": "",
@@ -13849,14 +13849,14 @@
     "lat": -20.0122002,
     "lng": 57.5871486,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "nord"
   },
   {
     "id": "the-beauty-oasis",
     "name": "The Beauty Oasis",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "MU, Domaine Victoria, Grand Baie 42213",
     "phone": "+230 5535 1314",
     "website": "http://www.beautyoasis.mu/",
@@ -13864,14 +13864,14 @@
     "lat": -20.0262933,
     "lng": 57.5936689,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "nord"
   },
   {
     "id": "sankara-spa-cratfs",
     "name": "SANKARA SPA & cratfs",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "MU, Royal Road, Grand Baie 30546",
     "phone": "+230 5809 6178",
     "website": "",
@@ -13879,14 +13879,14 @@
     "lat": -19.9953934,
     "lng": 57.590222,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "nord"
   },
   {
     "id": "nuad-boran-thai-n-indian-ayurveda-spa",
     "name": "Nuad Boran thai n indian Ayurveda spa",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "Chem. Vingt Pieds, Grand Baie",
     "phone": "+230 5829 0253",
     "website": "",
@@ -13894,14 +13894,14 @@
     "lat": -20.0134821,
     "lng": 57.5911397,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "nord"
   },
   {
     "id": "mackies-beauty-cafe",
     "name": "Mackies Beauty Cafe",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "MU, Persand Building, Royal Road, Grand Baie 30510",
     "phone": "+230 5825 5347",
     "website": "",
@@ -13909,14 +13909,14 @@
     "lat": -20.0062058,
     "lng": 57.5559571,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "nord"
   },
   {
     "id": "sultana-moroccan-hammam-beauty-salon",
     "name": "SULTANA Moroccan Hammam & Beauty Salon",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "MU, Coastal Rd, Grand Baie 22315",
     "phone": "+230 5907 2500",
     "website": "https://sultana-mauritius.com/",
@@ -13924,14 +13924,14 @@
     "lat": -20.0272326,
     "lng": 57.5594683,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "nord"
   },
   {
     "id": "lize-wellness-massage-home-service",
     "name": "Lize wellness massage (Home service)",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "MU, coastal road, grand baie 30510",
     "phone": "+230 5507 5536",
     "website": "https://www.facebook.com/people/Lize-Wellness-Massages/61550959630462/",
@@ -13939,14 +13939,14 @@
     "lat": -20.3522228,
     "lng": 57.363733,
     "themes": [
-      "spa-bien-etre"
+      "professionnels-soins"
     ],
     "zone": "nord"
   },
   {
     "id": "massage-therapy-grand-baie",
     "name": "Massage Therapy Grand Baie",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "MU, Royal Rd, Grand Baie 30510",
     "phone": "+230 5709 5112",
     "website": "",
@@ -13954,14 +13954,14 @@
     "lat": -20.0160812,
     "lng": 57.5692147,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "nord"
   },
   {
     "id": "spa-mirage-ltd",
     "name": "SPA MIRAGE LTD",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "2 Morcellement Wiehe MU, Twenty-Foot Rd, Grand Baie 30550",
     "phone": "+230 5797 7155 ext. 2631488",
     "website": "",
@@ -13969,14 +13969,14 @@
     "lat": -20.0217656,
     "lng": 57.5817491,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "nord"
   },
   {
     "id": "divine-touch-wellness-spa",
     "name": "Divine Touch Wellness & Spa",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "XHPP+FVM, La Salette Rd, Grand Baie",
     "phone": "+230 5788 5005",
     "website": "",
@@ -13984,14 +13984,14 @@
     "lat": -20.0137909,
     "lng": 57.5871728,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "nord"
   },
   {
     "id": "ourania-spa",
     "name": "Ourania Spa",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "Grand Baie",
     "phone": "+230 263 6497",
     "website": "",
@@ -13999,14 +13999,14 @@
     "lat": -20.0081627,
     "lng": 57.5593483,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "nord"
   },
   {
     "id": "royal-beauty-spa",
     "name": "Royal Beauty & Spa",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "XHQM+RJR, Grand Baie",
     "phone": "+230 5797 2643",
     "website": "",
@@ -14014,14 +14014,14 @@
     "lat": -20.0103557,
     "lng": 57.5841033,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "nord"
   },
   {
     "id": "harmony-spa",
     "name": "Harmony Spa",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "Coastal Road, Grand Baie",
     "phone": "+230 263 9475",
     "website": "",
@@ -14029,14 +14029,14 @@
     "lat": -19.9933808,
     "lng": 57.592422,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "nord"
   },
   {
     "id": "royal-therapy",
     "name": "Royal Therapy",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "Route Royale, Grand Baie",
     "phone": "+230 5518 2819",
     "website": "",
@@ -14044,14 +14044,14 @@
     "lat": -20.0048312,
     "lng": 57.5814929,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "nord"
   },
   {
     "id": "appearances-spa",
     "name": "Appearances Spa",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "Shop A Lifestyle, Sottise Rd, Grand Baie",
     "phone": "+230 263 6244",
     "website": "",
@@ -14059,14 +14059,14 @@
     "lat": -20.0260843,
     "lng": 57.5929978,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "nord"
   },
   {
     "id": "l-art-du-visage-by-sandra",
     "name": "L'art du visage by Sandra",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "Chem. Vingt Pieds, Grand Baie",
     "phone": "+230 5847 3577",
     "website": "",
@@ -14074,14 +14074,14 @@
     "lat": -20.0106191,
     "lng": 57.5946838,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "nord"
   },
   {
     "id": "beauty-care-spa-massage",
     "name": "Beauty Care Spa Massage",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "XHQM+FVW, Grand Baie Rd, Grand Baie",
     "phone": "+230 5472 6013",
     "website": "",
@@ -14089,14 +14089,14 @@
     "lat": -20.0112512,
     "lng": 57.5847052,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "nord"
   },
   {
     "id": "summer-spa",
     "name": "Summer Spa",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "Ground floor, Azur Beach Complex, Unnamed road, 2H4R+PW9 near the Hive restaurant, Costal road, Grand Baie",
     "phone": "+230 5705 9967",
     "website": "",
@@ -14104,14 +14104,14 @@
     "lat": -19.993201,
     "lng": 57.5923682,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "nord"
   },
   {
     "id": "angsana-spa-and-wellness-centre",
     "name": "Angsana Spa and Wellness Centre",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "Turtle Bay Balaclava, Balaclava",
     "phone": "+230 204 1888",
     "website": "https://www.angsana.com/en/mauritius/balaclava-mauritius/spa-and-wellness",
@@ -14119,14 +14119,14 @@
     "lat": -20.0998743,
     "lng": 57.5131793,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "nord"
   },
   {
     "id": "ayurvedic-healing-spa",
     "name": "Ayurvedic Healing Spa",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "Super U Grand Bay Coeur de Ville, Grand Baie",
     "phone": "+230 269 0433",
     "website": "https://www.facebook.com/Ayurvedic-Healing-Spa-109162788520919/?ref=page_internal",
@@ -14134,14 +14134,14 @@
     "lat": -20.011904,
     "lng": 57.587729,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "nord"
   },
   {
     "id": "obienaitre",
     "name": "OBIENAITRE",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "30525 MU, Grand Baie 30525",
     "phone": "+230 5254 1300",
     "website": "https://www.obienaitre.com/formation-massage-fertilite",
@@ -14149,14 +14149,14 @@
     "lat": -20.0122449,
     "lng": 57.5868085,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "nord"
   },
   {
     "id": "body-lounge-ltee",
     "name": "body lounge LTEE",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "CAP MALHEUREUX MU, BAI BOEUF 31702",
     "phone": "+230 262 8888",
     "website": "",
@@ -14164,14 +14164,14 @@
     "lat": -19.9870069,
     "lng": 57.6022032,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "nord"
   },
   {
     "id": "prana-skin-laser-clinic-grand-baie",
     "name": "Prana Skin & Laser Clinic Grand Baie",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "Chem. Vingt Pieds, Grand Baie",
     "phone": "+230 5258 5177",
     "website": "https://prana.mu/",
@@ -14179,14 +14179,14 @@
     "lat": -20.0182618,
     "lng": 57.5857099,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "nord"
   },
   {
     "id": "elegance-coiffure-et-beaute",
     "name": "Elegance Coiffure et Beauté",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "Route Royale, Grand Baie",
     "phone": "+230 5477 3818",
     "website": "",
@@ -14194,7 +14194,7 @@
     "lat": -20.0066288,
     "lng": 57.5574058,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "nord"
   },
@@ -18170,7 +18170,7 @@
   {
     "id": "seven-colours-spa-veranda-tamarin-hotel",
     "name": "Seven Colours Spa - Veranda Tamarin Hotel",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "Anthurium Ln, Tamarin",
     "phone": "+230 460 0492",
     "website": "https://www.sevencolours.mu/spa-veranda-resorts.html",
@@ -18178,14 +18178,14 @@
     "lat": -20.3277175,
     "lng": 57.3774586,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "ouest"
   },
   {
     "id": "soul-therapy-onglerie-esthetique-massage",
     "name": "Soul Therapy (onglerie-Esthétique-massage)",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "Coastal Rd, Flic en Flac",
     "phone": "+230 5776 0003",
     "website": "",
@@ -18193,14 +18193,14 @@
     "lat": -20.2765603,
     "lng": 57.3743005,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "ouest"
   },
   {
     "id": "ocean-spa-black-river",
     "name": "Ocean Spa Black River",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "Les Terrasses de Martello, Avenue des Tulipes, Rivière Noire",
     "phone": "+230 483 8016",
     "website": "http://www.ocean-spa.mu/",
@@ -18208,14 +18208,14 @@
     "lat": -20.3565782,
     "lng": 57.3660082,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "ouest"
   },
   {
     "id": "nature-spa-massage-wellness-therapy",
     "name": "Nature Spa ( massage & wellness therapy )",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "Coastal Rd, Flic en Flac",
     "phone": "+230 5805 8724",
     "website": "",
@@ -18223,14 +18223,14 @@
     "lat": -20.2771756,
     "lng": 57.3695061,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "ouest"
   },
   {
     "id": "l-oiseau-du-paradis-wellness-center",
     "name": "L'Oiseau du Paradis Wellness Center",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "P9F9+6VJ, Flic en Flac",
     "phone": "+230 5792 9774",
     "website": "",
@@ -18238,14 +18238,14 @@
     "lat": -20.2769106,
     "lng": 57.3696529,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "ouest"
   },
   {
     "id": "om-spa",
     "name": "Om Spa",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "Wolmar Coastal Rd, Flic en Flac",
     "phone": "+230 5769 2676",
     "website": "http://www.omspamauritius.com/",
@@ -18253,14 +18253,14 @@
     "lat": -20.2894673,
     "lng": 57.363696,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "ouest"
   },
   {
     "id": "manisa-ayurvedic-spa",
     "name": "Manisa Ayurvedic Spa",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "MU, P987+4W Mauritius Islands, Coastal Rd, Flic en Flac 90502",
     "phone": "+230 453 8558",
     "website": "",
@@ -18268,14 +18268,14 @@
     "lat": -20.2848516,
     "lng": 57.3648295,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "ouest"
   },
   {
     "id": "heaven-earth-ayurvedic-wellness-spa",
     "name": "Heaven & Earth Ayurvedic Wellness Spa",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "MU, wolmar Royal road, Flic en Flac 90521",
     "phone": "+230 5776 5922",
     "website": "",
@@ -18283,14 +18283,14 @@
     "lat": -20.2934062,
     "lng": 57.3638986,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "ouest"
   },
   {
     "id": "bloomy-foot-care-spa",
     "name": "Bloomy foot care spa",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "P989+QQW, Flic en Flac",
     "phone": "+230 5981 6977",
     "website": "",
@@ -18298,14 +18298,14 @@
     "lat": -20.2830154,
     "lng": 57.3694529,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "ouest"
   },
   {
     "id": "athena-beauty-spa",
     "name": "Athena Beauty Spa",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "Avenue lauriers roses morcellement Carlos Tamarin Avenue Lauriers Roses Morcellement Carlos Tamarin tamarin MU, black River 90910",
     "phone": "+230 484 2179",
     "website": "https://athenaspabeauty.com/",
@@ -18313,14 +18313,14 @@
     "lat": -20.3398619,
     "lng": 57.373339,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "ouest"
   },
   {
     "id": "pascale-nuyou-massage-spa",
     "name": "Pascale (Nuyou) Massage Spa",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "Résidence Saint Jacques, Coastal Rd, Flic en Flac",
     "phone": "+230 5798 4480",
     "website": "",
@@ -18328,14 +18328,14 @@
     "lat": -20.2764744,
     "lng": 57.3781362,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "ouest"
   },
   {
     "id": "holysticare",
     "name": "Holysticare",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "MU, 2 Sun, palm residence, Flic en Flac 90502",
     "phone": "+230 5844 0525",
     "website": "https://www.holysticare.mu/",
@@ -18343,14 +18343,14 @@
     "lat": -20.2764131,
     "lng": 57.3779579,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "ouest"
   },
   {
     "id": "wholistic-studio",
     "name": "Wholistic Studio",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "Morcellement Anna, Ave des Capitaines, Flic en Flac",
     "phone": "+230 5890 5941",
     "website": "",
@@ -18358,14 +18358,14 @@
     "lat": -20.2735029,
     "lng": 57.3751082,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "ouest"
   },
   {
     "id": "luminous-nail-beauty-spa-mauritius",
     "name": "Luminous Nail & Beauty Spa Mauritius",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "Cascavelle, Shopping Mall, Flic en Flac",
     "phone": "+230 5758 2880",
     "website": "",
@@ -18373,14 +18373,14 @@
     "lat": -20.279328,
     "lng": 57.4023666,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "ouest"
   },
   {
     "id": "sofitel-spa",
     "name": "Sofitel Spa",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "MU, Wolmar, Flic en Flac 90517",
     "phone": "+230 453 8700",
     "website": "https://sofitel.accor.com/hotels/1144?merchantid=seo-maps-MU-1144&sourceid=aw-cen&utm_source=google+Maps&utm_medium=seo+maps&utm_campaign=seo+maps&utm_term=Sofitel-Launch",
@@ -18388,14 +18388,14 @@
     "lat": -20.3110843,
     "lng": 57.3681749,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "ouest"
   },
   {
     "id": "inner-eye-wellness-traveling-massage-therapist",
     "name": "Inner Eye Wellness (Traveling Massage Therapist)",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "MU, Lot 99, Avenue des Bengalis, Flic en Flac 90509",
     "phone": "+230 5256 7926",
     "website": "https://m.facebook.com/profile.php/?id=100063451847883",
@@ -18403,14 +18403,14 @@
     "lat": -20.2869131,
     "lng": 57.3649707,
     "themes": [
-      "spa-bien-etre"
+      "professionnels-soins"
     ],
     "zone": "ouest"
   },
   {
     "id": "serenite-spa",
     "name": "Serenité Spa",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "P947+FF5, Flic en Flac",
     "phone": "",
     "website": "",
@@ -18418,14 +18418,14 @@
     "lat": -20.2938587,
     "lng": 57.363738,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "ouest"
   },
   {
     "id": "younique-energy-ltd",
     "name": "Younique Energy Ltd",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "Cascavelle Shopping Mall, Coastal Rd, Bambous",
     "phone": "+230 5421 7302",
     "website": "http://www.younique.cc/",
@@ -18433,14 +18433,14 @@
     "lat": -20.2794513,
     "lng": 57.4020699,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "ouest"
   },
   {
     "id": "fit-and-fabulous-professionnal-esthetic-center-ltd",
     "name": "Fit and Fabulous Professionnal Esthetic Center Ltd",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "MU, The Barachois estate, A3, Tamarin 90901",
     "phone": "+230 5500 9584",
     "website": "",
@@ -18448,14 +18448,14 @@
     "lat": -20.3272919,
     "lng": 57.3858563,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "ouest"
   },
   {
     "id": "siroo-coiffure-esthetique",
     "name": "siroo coiffure & esthetique",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "MU, wolmar, Royal road, Flic en Flac 90521",
     "phone": "+230 5741 3402",
     "website": "",
@@ -18463,14 +18463,14 @@
     "lat": -20.293454,
     "lng": 57.3638849,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "ouest"
   },
   {
     "id": "3h-ayurvedic-massage-centre",
     "name": "3h Ayurvedic Massage Centre",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "Coastal Rd, Flic en Flac",
     "phone": "+230 5751 5293",
     "website": "",
@@ -18478,14 +18478,14 @@
     "lat": -20.2780754,
     "lng": 57.3689945,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "ouest"
   },
   {
     "id": "nail-it-by-sabi",
     "name": "Nail it by Sabi",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "Coastal Rd, Flic en Flac",
     "phone": "+230 5838 9187",
     "website": "https://www.facebook.com/share/18YB5QAyrA/",
@@ -18493,14 +18493,14 @@
     "lat": -20.2848616,
     "lng": 57.364937,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "ouest"
   },
   {
     "id": "myspace-tamarin",
     "name": "mySPAce Tamarin",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "Lot G1 Cap Tamarin Smart City Le Barachois Tamarin MU, 90901",
     "phone": "",
     "website": "",
@@ -18508,14 +18508,14 @@
     "lat": -20.3290512,
     "lng": 57.385946,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "ouest"
   },
   {
     "id": "beautes-sensuelles-mauritius",
     "name": "Beautés Sensuelles Mauritius",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "7, Key West Plaza Building MU, La Mivoie Road, Rivière Noire 90607",
     "phone": "+230 5824 5174",
     "website": "",
@@ -18523,14 +18523,14 @@
     "lat": -20.3462864,
     "lng": 57.3643131,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "ouest"
   },
   {
     "id": "maison-sasha-tamarin",
     "name": "Maison Sasha Tamarin",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "The Tamarin Commercial Hub, Des Jacarandas Avenue, Tamarin",
     "phone": "+230 484 1201",
     "website": "https://www.maison-sasha.com/",
@@ -18538,14 +18538,14 @@
     "lat": -20.3302443,
     "lng": 57.373032,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "ouest"
   },
   {
     "id": "deep-fascia-massage-therapy-mauritius",
     "name": "Deep Fascia Massage Therapy MAURITIUS",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "Appartment 4 MU, La Cannelle, All. des Tamariniers, Tamarin 90907",
     "phone": "+230 5456 0035",
     "website": "https://calendly.com/victorcassius-office",
@@ -18553,14 +18553,14 @@
     "lat": -20.3500849,
     "lng": 57.3667016,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "ouest"
   },
   {
     "id": "curlies",
     "name": "Curlies",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "Seaview Terrace, Lot 8 Avenue des cardinaux MU, Flic en Flac 90502",
     "phone": "+230 5854 3235",
     "website": "https://www.facebook.com/CurliesMauritius",
@@ -18568,14 +18568,14 @@
     "lat": -20.2764816,
     "lng": 57.3721764,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "ouest"
   },
   {
     "id": "purglam",
     "name": "PURGLAM",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "MU, Av. des Jacarandas, Tamarin 90908",
     "phone": "+230 5819 8827",
     "website": "https://www.instagram.com/frenchy_touch_?igsh=aDdxcnQzdzNlMGE0&utm_source=qr",
@@ -18583,14 +18583,14 @@
     "lat": -20.3342412,
     "lng": 57.3717153,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "ouest"
   },
   {
     "id": "blessings-holistics",
     "name": "Blessings Holistics",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "MU, Residence st Jacques, Avenue Filaos, Flic en Flac 90515",
     "phone": "",
     "website": "",
@@ -18598,14 +18598,14 @@
     "lat": -20.2794121,
     "lng": 57.37976,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "ouest"
   },
   {
     "id": "legend-hill-residences-spa-2",
     "name": "Legend Hill Residences & Spa",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "La Plantation Marguery, Rivière Noire",
     "phone": "+230 484 2035",
     "website": "https://www.legendhill-mauritius.com/",
@@ -18613,14 +18613,14 @@
     "lat": -20.3497624,
     "lng": 57.369781,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "ouest"
   },
   {
     "id": "maradiva-villas-resort-spa",
     "name": "Maradiva Villas Resort & Spa",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "Wolmar, Wolmar Coastal Rd, Flic en Flac",
     "phone": "+230 403 1500",
     "website": "http://www.maradiva.com/",
@@ -18628,14 +18628,14 @@
     "lat": -20.3143405,
     "lng": 57.3697683,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "ouest"
   },
   {
     "id": "vanilla-village-2",
     "name": "Vanilla Village",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "Route Royale, Black River",
     "phone": "+230 483 6778",
     "website": "http://www.vanillavillage.mu/",
@@ -18643,7 +18643,7 @@
     "lat": -20.3681978,
     "lng": 57.3802421,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "badge": "selection",
     "zone": "ouest"
@@ -18651,7 +18651,7 @@
   {
     "id": "rakesh-hair-styling",
     "name": "Rakesh Hair Styling",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "Flic en Flac",
     "phone": "+230 5798 7609",
     "website": "",
@@ -18659,7 +18659,7 @@
     "lat": -20.2800045,
     "lng": 57.3685162,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "ouest"
   },
@@ -22487,7 +22487,7 @@
   {
     "id": "renova-spa",
     "name": "Renova Spa",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "MU, Pointe Sud Ouest, Le Morne 91202",
     "phone": "",
     "website": "https://renovaspa.com/hotel/details/3abbfd4c-b988-11e7-b164-00002d3a2f3d",
@@ -22495,7 +22495,7 @@
     "lat": -20.4675991,
     "lng": 57.3150662,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "sud"
   },
@@ -24911,7 +24911,7 @@
   {
     "id": "glow-atelier",
     "name": "Glow Atelier",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "MU, Chapel Ln, L'Escalier 61401",
     "phone": "+230 5538 2846",
     "website": "",
@@ -24919,14 +24919,14 @@
     "lat": -20.4714243,
     "lng": 57.6202303,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "sud"
   },
   {
     "id": "seven-colours-wellness-pavilion",
     "name": "Seven colours wellness pavilion",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "FCV6+95R, Bel Ombre",
     "phone": "",
     "website": "",
@@ -24934,14 +24934,14 @@
     "lat": -20.5052041,
     "lng": 57.4101302,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "sud"
   },
   {
     "id": "white-spa-salon",
     "name": "white spa & salon",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "Bissoondoyal Road, Cottage Riviere du Rempart MU, Cottage 30202",
     "phone": "+230 5768 3138",
     "website": "",
@@ -24949,14 +24949,14 @@
     "lat": -20.0652039,
     "lng": 57.6365527,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "nord"
   },
   {
     "id": "belia-beauty-spa",
     "name": "Belia Beauty & spa",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "Royal Road, Calodyne",
     "phone": "+230 5511 2024",
     "website": "",
@@ -24964,14 +24964,14 @@
     "lat": -20.0072186,
     "lng": 57.6443065,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "nord"
   },
   {
     "id": "pure-natural-spa",
     "name": "Pure natural spa",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "MU, 7eme Mille, Royal Rd, Triolet 21507",
     "phone": "+230 5961 6164",
     "website": "",
@@ -24979,14 +24979,14 @@
     "lat": -20.073644,
     "lng": 57.547846,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "nord"
   },
   {
     "id": "massage-beauty",
     "name": "Massage & Beauty",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "Costel road, Mahebourg",
     "phone": "+230 5776 6139",
     "website": "https://www.facebook.com/MassagesCosmetic",
@@ -24994,14 +24994,14 @@
     "lat": -20.4190465,
     "lng": 57.7110314,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "sud"
   },
   {
     "id": "sanja-beauty-spa",
     "name": "Sanja Beauty Spa",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "VGH4+R2W, Port Louis",
     "phone": "+230 5811 8885",
     "website": "",
@@ -25009,14 +25009,14 @@
     "lat": -20.1203982,
     "lng": 57.5050838,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "centre"
   },
   {
     "id": "luxury-escape",
     "name": "Luxury Escape",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "9 Lees St, Curepipe",
     "phone": "+230 5902 4693",
     "website": "",
@@ -25024,14 +25024,14 @@
     "lat": -20.3185771,
     "lng": 57.5297111,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "centre"
   },
   {
     "id": "grace-secrets-spa",
     "name": "Grace Secrets Spa",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "Av. des Carpes, Albion",
     "phone": "+230 5259 7057",
     "website": "",
@@ -25039,14 +25039,14 @@
     "lat": -20.2175754,
     "lng": 57.4026782,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "ouest"
   },
   {
     "id": "excellence-salon",
     "name": "Excellence Salon",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "Nouvelle France",
     "phone": "+230 5806 2396",
     "website": "",
@@ -25054,7 +25054,7 @@
     "lat": -20.3761919,
     "lng": 57.5660161,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "sud"
   },
@@ -27953,7 +27953,7 @@
   {
     "id": "the-source-natural-massage-centre-ltd",
     "name": "The Source Natural Massage Centre Ltd",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "Royal Road, Trou d'Eau Douce",
     "phone": "+230 5491 6219",
     "website": "http://www.sourcenaturalmassage.com/",
@@ -27961,14 +27961,14 @@
     "lat": -20.2417158,
     "lng": 57.7841404,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "est"
   },
   {
     "id": "christelle-spa",
     "name": "Christelle Spa",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "B59, Trou d'Eau Douce",
     "phone": "+230 5915 1391",
     "website": "",
@@ -27976,14 +27976,14 @@
     "lat": -20.2370384,
     "lng": 57.7948476,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "est"
   },
   {
     "id": "the-sanctuary-spa",
     "name": "The Sanctuary Spa",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "RQ2H+RW5, Quatre Cocos",
     "phone": "",
     "website": "https://www.cenizaro.com/theresidence/mauritius/spa-wellness",
@@ -27991,14 +27991,14 @@
     "lat": -20.1979875,
     "lng": 57.7798594,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "est"
   },
   {
     "id": "noor-beach-care-centre",
     "name": "Noor beach care centre",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "Royal road Morcellement jubhoo MU, Trou-aux-Biches 22321",
     "phone": "+230 5776 1533",
     "website": "",
@@ -28006,14 +28006,14 @@
     "lat": -20.0373851,
     "lng": 57.5473951,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "nord"
   },
   {
     "id": "constance-spa",
     "name": "Constance Spa",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "RQM7+PPX Constance, Poste de Flacq",
     "phone": "",
     "website": "",
@@ -28021,14 +28021,14 @@
     "lat": -20.1656374,
     "lng": 57.7643574,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "est"
   },
   {
     "id": "inner-bliss-spa-mobile",
     "name": "Inner Bliss Spa & Mobile",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "MU, Coastal Rd, Blue Bay 50802",
     "phone": "+230 5808 4081",
     "website": "https://innerblisssmobilespa.com/",
@@ -28036,14 +28036,14 @@
     "lat": -20.4408867,
     "lng": 57.7204215,
     "themes": [
-      "spa-bien-etre"
+      "professionnels-soins"
     ],
     "zone": "sud"
   },
   {
     "id": "rituals-spa",
     "name": "Rituals Spa",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "B11, Fond du Sac",
     "phone": "+230 266 9595",
     "website": "https://www.rituals.mu/",
@@ -28051,14 +28051,14 @@
     "lat": -20.0558205,
     "lng": 57.5833579,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "nord"
   },
   {
     "id": "vinesh-wellness-spa",
     "name": "Vinesh Wellness Spa",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "B58, Mare La Chaux",
     "phone": "+230 415 5155",
     "website": "",
@@ -28066,14 +28066,14 @@
     "lat": -20.1995529,
     "lng": 57.7571501,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "est"
   },
   {
     "id": "ocean-heaven-pure-harmony-ltd-spa",
     "name": "Ocean heaven pure harmony ltd spa",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "Coastal road, Pointe aux Biches",
     "phone": "+230 5814 6299",
     "website": "",
@@ -28081,14 +28081,14 @@
     "lat": -20.0464548,
     "lng": 57.5312539,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "nord"
   },
   {
     "id": "glamour-beauty-saloon",
     "name": "Glamour Beauty Saloon.",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "Trou Aux Biches Rd, Trou aux Biches",
     "phone": "+230 5772 8355",
     "website": "https://m.facebook.com/Sonals-Glamour-Beauty-Saloon-375775269150784/",
@@ -28096,14 +28096,14 @@
     "lat": -20.0368561,
     "lng": 57.546487,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "nord"
   },
   {
     "id": "crystal-cove-beauty-salon",
     "name": "Crystal Cove Beauty Salon",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "66 A8, Quatre Bornes",
     "phone": "+230 467 6035",
     "website": "",
@@ -28111,14 +28111,14 @@
     "lat": -20.2644925,
     "lng": 57.4803496,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "centre"
   },
   {
     "id": "ispa-fitness-wellness-club-le-suffren-hotel",
     "name": "iSpa Fitness & Wellness Club - Le Suffren Hotel",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "Port Louis",
     "phone": "+230 202 4930",
     "website": "https://ninetysixhotels.com/i-spa-wellness-and-fitness-centre.html",
@@ -28126,14 +28126,14 @@
     "lat": -20.1601676,
     "lng": 57.4951896,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "centre"
   },
   {
     "id": "five-elements-spa",
     "name": "Five Elements Spa",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "40 Sodnac Avenue, Quatre Bornes,, Sodnac Avenue, Mauritius, Sodnac Avenue, Quatre Bornes",
     "phone": "+230 424 5800",
     "website": "http://www.5elementsspa.mu/",
@@ -28141,14 +28141,14 @@
     "lat": -20.2693499,
     "lng": 57.4854187,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "centre"
   },
   {
     "id": "navasana-spa",
     "name": "Navasana spa",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "FCQ8+JX8, B9, Bel Ombre",
     "phone": "",
     "website": "",
@@ -28156,14 +28156,14 @@
     "lat": -20.5109564,
     "lng": 57.4174619,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "sud"
   },
   {
     "id": "maritim-tropical-flower-spa",
     "name": "Maritim Tropical Flower Spa",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "WG79+H5C Maritim Resort & Spa, Balaclava",
     "phone": "+230 204 1000",
     "website": "https://www.maritimresortandspa.mu/spa-wellness/",
@@ -28171,14 +28171,14 @@
     "lat": -20.0860522,
     "lng": 57.5178988,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "nord"
   },
   {
     "id": "eurospa-beauty-care-center",
     "name": "Eurospa Beauty Care Center",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "London Way Complex Pointe D'Esny MU, Mahebourg 50810",
     "phone": "+230 631 1997",
     "website": "http://eurospa.net/",
@@ -28186,14 +28186,14 @@
     "lat": -20.4176229,
     "lng": 57.7100632,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "sud"
   },
   {
     "id": "espace-beaute",
     "name": "Espace Beaute",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "Route St Jean, Port Louis, Port Louis District, PFMH+25P A8, Quatre Bornes",
     "phone": "+230 424 9708",
     "website": "https://espace-beaute-mauritius.com/",
@@ -28201,14 +28201,14 @@
     "lat": -20.2674045,
     "lng": 57.4779458,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "centre"
   },
   {
     "id": "ispa-fitness-wellness-club",
     "name": "iSpa Fitness & Wellness Club",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "MU, 65, Quatre Bornes 72201",
     "phone": "+230 403 7294",
     "website": "https://ninetysixhotels.com/i-spa-wellness-and-fitness-centre.html#section_spa",
@@ -28216,14 +28216,14 @@
     "lat": -20.2424553,
     "lng": 57.4897403,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "centre"
   },
   {
     "id": "hotel-long-beach",
     "name": "Hotel Long Beach",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "RQ2G+5V7, Quatre Cocos",
     "phone": "",
     "website": "https://www.yoursunlife.com/longbeachmauritius/",
@@ -28231,14 +28231,14 @@
     "lat": -20.1995813,
     "lng": 57.7771566,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "est"
   },
   {
     "id": "lux-me-spa",
     "name": "LUX* ME Spa",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "G8V6+7QC, Unnamed Road, Le Morne",
     "phone": "",
     "website": "",
@@ -28246,14 +28246,14 @@
     "lat": -20.4568019,
     "lng": 57.3118931,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "sud"
   },
   {
     "id": "the-bay-club-at-anahita",
     "name": "The Bay Club at Anahita",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "Deep River, Beau Champ MU, PQCQ+MMP, Grand River South East 40901",
     "phone": "+230 402 2200",
     "website": "https://www.yoursunlife.com/thebayclubatanahita/",
@@ -28261,7 +28261,7 @@
     "lat": -20.27828,
     "lng": 57.7892,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "badge": "selection",
     "zone": "est"
@@ -28269,7 +28269,7 @@
   {
     "id": "la-koquillishe-2",
     "name": "La Koquillishe",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "Trou d'Eau Douce",
     "phone": "+230 5976 8645",
     "website": "http://www.lakoquillishe.com/",
@@ -28277,14 +28277,14 @@
     "lat": -20.2385528,
     "lng": 57.7895344,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "est"
   },
   {
     "id": "la-beaute-du-sud-est",
     "name": "La Beauté Du Sud-Est",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "MU, Rue des Hollandais, Mahébourg 50802",
     "phone": "+230 5759 9351",
     "website": "https://labeautedusudestmauritius.live/",
@@ -28292,14 +28292,14 @@
     "lat": -20.4069732,
     "lng": 57.7087176,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "sud"
   },
   {
     "id": "preskil-island-resort-2",
     "name": "Preskil Island Resort",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "Pointe Jerome, HPHC+6QX, Mahebourg",
     "phone": "+230 604 1000",
     "website": "https://preskilislandresort.mu/",
@@ -28307,14 +28307,14 @@
     "lat": -20.4218143,
     "lng": 57.7219741,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "sud"
   },
   {
     "id": "villa-victoria",
     "name": "Villa victoria",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "QQ7Q+X33, Trou d'Eau Douce",
     "phone": "+230 5784 7492",
     "website": "https://villavictoria.hotelf1.top/",
@@ -28322,7 +28322,7 @@
     "lat": -20.235111,
     "lng": 57.7876792,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "est"
   },
@@ -29392,7 +29392,7 @@
   {
     "id": "l-atelier-de-malena",
     "name": "L’Atelier de Malena",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "MU, Ajmal Le Salon d’Albion (à l’étage, Albion Mall, Albion 91007",
     "phone": "+230 5829 6029",
     "website": "",
@@ -29400,7 +29400,7 @@
     "lat": -20.2149897,
     "lng": 57.4111048,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "ouest"
   },
@@ -29527,7 +29527,7 @@
   {
     "id": "bigorno-diving-centre-mauritius",
     "name": "Bigorno Diving Centre Mauritius",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "Costal Rd, Trou-aux-Biches",
     "phone": "+230 5802 4869",
     "website": "http://www.bigornodiving.com/",
@@ -29535,14 +29535,14 @@
     "lat": -20.0364322,
     "lng": 57.5453071,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "nord"
   },
   {
     "id": "le-palmiste-resort-spa",
     "name": "Le Palmiste Resort & Spa",
-    "category": "activites",
+    "category": "soins-bien-etre",
     "address": "XG6W+X35, Route Cotière, Trou aux Biches",
     "phone": "+230 265 6815",
     "website": "https://www.hotel-lepalmiste.mu/index.php/en/",
@@ -29550,7 +29550,7 @@
     "lat": -20.0376094,
     "lng": 57.5452192,
     "themes": [
-      "spa-bien-etre"
+      "spa-instituts"
     ],
     "zone": "nord"
   },
@@ -30611,28 +30611,28 @@
   {
     "id": "kairali-spa-vacoas",
     "name": "Kairali Spa",
-    "category": "utiles",
+    "category": "soins-bien-etre",
     "address": "8 Remy Ollier Street, Vacoas-Phoenix",
     "phone": "+230 5257 1440",
     "website": "https://www.kairali.mu",
     "lat": -20.2850909,
     "lng": 57.4963974,
     "themes": [
-      "soins-detente"
+      "spa-instituts"
     ],
     "zone": "centre"
   },
   {
     "id": "rising-sun-spa-curepipe",
     "name": "Rising Sun Spa",
-    "category": "utiles",
+    "category": "soins-bien-etre",
     "address": "Daruty De Grandpré Avenue, Curepipe",
     "phone": "+230 674 2648",
     "website": "",
     "lat": -20.3150516,
     "lng": 57.5211497,
     "themes": [
-      "soins-detente"
+      "spa-instituts"
     ],
     "zone": "centre"
   },
@@ -30961,7 +30961,7 @@
   {
     "id": "headcase-benedicte",
     "name": "Headcase par Bénédicte",
-    "category": "utiles",
+    "category": "soins-bien-etre",
     "address": "Endemika Nursery, Petit Raffray",
     "phone": "+230 289 0694",
     "website": "https://www.benedictesummers.com/fr/",
@@ -30975,7 +30975,7 @@
   {
     "id": "maison-sasha-grand-baie",
     "name": "Maison Sasha - Grand Baie",
-    "category": "utiles",
+    "category": "soins-bien-etre",
     "address": "Route Royale, Pointe aux Canonniers, Grand Baie",
     "phone": "+230 268 3838",
     "website": "https://www.maison-sasha.com",
@@ -30989,7 +30989,7 @@
   {
     "id": "sj-coiffure-flic-en-flac",
     "name": "SJ Coiffure Loreal Hair Saloon",
-    "category": "utiles",
+    "category": "soins-bien-etre",
     "address": "Royal Road, Flic en Flac",
     "phone": "+230 5982 8388",
     "website": "",
@@ -31003,7 +31003,7 @@
   {
     "id": "mike-coiffure-port-louis",
     "name": "Mike Coiffure",
-    "category": "utiles",
+    "category": "soins-bien-etre",
     "address": "Citadelle Mall, Sir Virgil Naz Street, Port Louis",
     "phone": "+230 208 5056",
     "website": "",
@@ -31017,7 +31017,7 @@
   {
     "id": "allure-coiffure-port-louis",
     "name": "Allure Coiffure",
-    "category": "utiles",
+    "category": "soins-bien-etre",
     "address": "Dorval Center, 5 Rue Louis Pasteur, Port Louis",
     "phone": "+230 217 4860",
     "website": "https://www.allurecoiffuresalon.com",
@@ -31031,7 +31031,7 @@
   {
     "id": "maison-sasha-curepipe",
     "name": "Maison Sasha - Curepipe",
-    "category": "utiles",
+    "category": "soins-bien-etre",
     "address": "28B St Thérèse Street, Curepipe",
     "phone": "+230 674 7014",
     "website": "https://www.maison-sasha.com",
@@ -31045,7 +31045,7 @@
   {
     "id": "natural-hair-culture-curepipe",
     "name": "Natural Hair Culture",
-    "category": "utiles",
+    "category": "soins-bien-etre",
     "address": "Garden Village Shopping Centre, Route du Jardin, Curepipe",
     "phone": "+230 5446 6010",
     "website": "https://naturalhairculture.com",
@@ -31059,7 +31059,7 @@
   {
     "id": "le-studio-tamarin",
     "name": "Le Studio Tamarin",
-    "category": "utiles",
+    "category": "soins-bien-etre",
     "address": "Cœur de Ville (Super U), Tamarin",
     "phone": "+230 650 3221",
     "website": "https://lestudio.mu",
@@ -31073,7 +31073,7 @@
   {
     "id": "salon-art-de-coiffure-qb",
     "name": "Salon Art De Coiffure",
-    "category": "utiles",
+    "category": "soins-bien-etre",
     "address": "La Louise, Kelvic Court, Quatre Bornes",
     "phone": "+230 5765 9681",
     "website": "",
@@ -31087,7 +31087,7 @@
   {
     "id": "x-hair-beauty-quatre-bornes",
     "name": "X Hair & Beauty Salon",
-    "category": "utiles",
+    "category": "soins-bien-etre",
     "address": "1st Floor, 128 St Jean Road, Quatre Bornes",
     "phone": "",
     "website": "https://xhairnbeauty.com",
@@ -31101,7 +31101,7 @@
   {
     "id": "espace-coiffure-guy-perrin",
     "name": "Espace Coiffure Guy Perrin",
-    "category": "utiles",
+    "category": "soins-bien-etre",
     "address": "Les Allées d'Helvétia, Moka",
     "phone": "+230 433 0762",
     "website": "",

@@ -3,6 +3,7 @@ export type CategoryKey =
   | "food"
   | "utiles"
   | "coaching"
+  | "soins-bien-etre"
   | "seconde-main"
   | "business-ttv"
   | "evenements";

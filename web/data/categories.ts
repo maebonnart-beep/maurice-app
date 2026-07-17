@@ -5,6 +5,7 @@ export const CATEGORIES: Category[] = [
   { key: "food", label: "Food", emoji: "🍽️", color: "#d4483f" },
   { key: "utiles", label: "Utiles", emoji: "🧰", color: "#4a6572" },
   { key: "coaching", label: "Coaching", emoji: "🎯", color: "#7c5cf0" },
+  { key: "soins-bien-etre", label: "Soins et Bien-être", emoji: "💆", color: "#c9457a" },
   { key: "seconde-main", label: "Seconde main", emoji: "♻️", color: "#2e8b57" },
   { key: "business-ttv", label: "Business & TTV", emoji: "💻", color: "#1f8a9b" },
   { key: "evenements", label: "Événements", emoji: "🎉", color: "#e0518a" },
@@ -93,7 +94,6 @@ export const SUBCATEGORIES: Partial<Record<CategoryKey, Subcategory[]>> = {
     { key: "cours-de-cuisine", label: "Cours de cuisine", emoji: "👨‍🍳" },
     { key: "casinos", label: "Casinos", emoji: "🎰" },
     { key: "bowling", label: "Bowling", emoji: "🎳" },
-    { key: "spa-bien-etre", label: "Spa & bien-être", emoji: "💆" },
   ],
   food: [
     { key: "restaurants", label: "Restaurants", emoji: "🍽️" },
@@ -132,8 +132,6 @@ export const SUBCATEGORIES: Partial<Record<CategoryKey, Subcategory[]>> = {
     { key: "banques", label: "Banques", emoji: "🏦" },
     { key: "distributeurs", label: "Distributeurs (ATM)", emoji: "🏧" },
     { key: "pharmacies", label: "Pharmacies", emoji: "💊" },
-    { key: "coiffeurs", label: "Coiffeurs", emoji: "💇" },
-    { key: "soins-detente", label: "Soins & détente (spa, massages, instituts)", emoji: "💆" },
     { key: "expatriation-visas", label: "Expatriation & visas", emoji: "🛂" },
     { key: "photographes", label: "Photographes (passeport & ID)", emoji: "📷" },
     { key: "depannages", label: "Dépannages", emoji: "🔧" },
@@ -148,6 +146,11 @@ export const SUBCATEGORIES: Partial<Record<CategoryKey, Subcategory[]>> = {
     { key: "sports-bien-etre", label: "Sports & bien-être", emoji: "🏋️" },
     { key: "business", label: "Business", emoji: "💼" },
     { key: "famille", label: "Famille", emoji: "👨‍👩‍👧" },
+  ],
+  "soins-bien-etre": [
+    { key: "spa-instituts", label: "Spa et instituts", emoji: "🧖‍♀️" },
+    { key: "coiffeurs", label: "Coiffeurs", emoji: "💇" },
+    { key: "professionnels-soins", label: "Professionnels des soins", emoji: "✋" },
   ],
   "business-ttv": [
     { key: "coworking", label: "Espaces de coworking", emoji: "🧑‍💻" },
