@@ -31261,5 +31261,22 @@
     "themes": [
       "plateformes-multiservices"
     ]
+  },
+  {
+    "id": "my-dodo-life",
+    "name": "My Dodo Life",
+    "category": "utiles",
+    "address": "Lifestyle Boulevard, Sottise Road, Grand Baie",
+    "phone": "+230 5253 6697",
+    "email": "contact@mydodolife.com",
+    "website": "https://mydodolife.com/",
+    "lat": -20.0230107,
+    "lng": 57.5858993,
+    "hours": "09h-17h",
+    "themes": [
+      "expatriation-visas"
+    ],
+    "zone": "nord",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=My%20Dodo%20Life%20Sottise%20Road%20Grand%20Baie%20Mauritius"
   }
 ]
