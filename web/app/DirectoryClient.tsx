@@ -54,6 +54,8 @@ const DIFFICULTY_LABELS: Record<string, string> = {
   confirme: "Confirmé",
 };
 
+const AGENCY_COLOR = "#6366f1";
+
 function badgeAccentColor(badge?: Business["badge"]): string | undefined {
   if (badge === "coup-de-coeur") return "var(--primary)";
   if (badge === "selection") return "var(--primary-deep)";
@@ -66,7 +68,7 @@ function metaFacts(b: Business): { icon: string; label: string }[] {
   if (b.duration) facts.push({ icon: "⏱️", label: b.duration });
   if (b.entryPrice) facts.push({ icon: "🎟️", label: b.entryPrice });
   if (b.difficultyLevel) facts.push({ icon: "🥾", label: DIFFICULTY_LABELS[b.difficultyLevel] });
-  if (b.guideRecommended !== undefined)
+  if (b.guideRecommended !== undefined && !b.isAgency)
     facts.push({ icon: "🧭", label: b.guideRecommended ? "Guide conseillé" : "Sans guide" });
   if (b.sportsListed) facts.push({ icon: "🏃", label: b.sportsListed });
   if (b.hasRestauration !== undefined)
@@ -438,7 +440,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
             {visibleRows.map((b) => {
               const cat = CATEGORY_MAP[b.category];
               const isActive = b.id === selectedId;
-              const accentColor = badgeAccentColor(b.badge);
+              const accentColor = badgeAccentColor(b.badge) ?? (b.isAgency ? AGENCY_COLOR : undefined);
               const waNumber = whatsappNumber(b);
               return (
                 <article
@@ -495,6 +497,14 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                     {b.badge === "selection" && (
                       <span className="self-start inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-white text-xs font-bold bg-primary-deep">
                         🏅 Sélection Maurice<sup>+</sup>
+                      </span>
+                    )}
+                    {b.isAgency && (
+                      <span
+                        className="self-start inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-white text-xs font-bold"
+                        style={{ background: AGENCY_COLOR }}
+                      >
+                        🏢 Agence organisatrice
                       </span>
                     )}
                     {b.themes?.map((tKey) => {

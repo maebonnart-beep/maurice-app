@@ -21316,8 +21316,8 @@
     "themes": [
       "randonnee-trail"
     ],
-    "guideRecommended": true,
-    "zone": "centre"
+    "zone": "centre",
+    "isAgency": true
   },
   {
     "id": "sublime-point",
@@ -21349,8 +21349,8 @@
     "themes": [
       "randonnee-trail"
     ],
-    "guideRecommended": true,
-    "zone": "est"
+    "zone": "est",
+    "isAgency": true
   },
   {
     "id": "plateau-resmousse",
@@ -21383,8 +21383,8 @@
     "themes": [
       "randonnee-trail"
     ],
-    "guideRecommended": true,
-    "zone": "ouest"
+    "zone": "ouest",
+    "isAgency": true
   },
   {
     "id": "petit-morne",
