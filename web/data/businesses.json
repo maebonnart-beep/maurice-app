@@ -5381,9 +5381,7 @@
     "sandType": "Sable blanc",
     "beachActivities": "Kitesurf, snorkeling, golf, parachute ascensionnel",
     "beachLength": "Environ 8 km",
-    "zone": "est",
-    "photoUrl": "https://images.pexels.com/photos/30977598/pexels-photo-30977598.jpeg",
-    "photoCredit": "Justine Becker / Pexels"
+    "zone": "est"
   },
   {
     "id": "plage-trou-aux-biches",
@@ -5461,9 +5459,7 @@
     "sandType": "Sable fin",
     "beachActivities": "Marche sous-marine, parachute ascensionnel, plongée, baignade, barbecues familiaux",
     "beachLength": "Environ 70 m (petite plage en fer à cheval)",
-    "zone": "nord",
-    "photoUrl": "https://images.unsplash.com/photo-1712045266359-dccdbffc6075",
-    "photoCredit": "Florian Elbers / Unsplash"
+    "zone": "nord"
   },
   {
     "id": "plage-ile-aux-cerfs",
@@ -5482,9 +5478,7 @@
     "sandType": "Sable blanc fin / poudreux",
     "beachActivities": "Plongée, snorkeling, parachute ascensionnel, golf 18 trous",
     "beachLength": "Plage principale ~500 m (île ~4 km de sable au total)",
-    "zone": "est",
-    "photoUrl": "https://images.pexels.com/photos/34732417/pexels-photo-34732417.jpeg",
-    "photoCredit": "Vincent Rivaud / Pexels"
+    "zone": "est"
   },
   {
     "id": "plage-mont-choisy",
@@ -5522,9 +5516,7 @@
     "sandType": "Sable blanc fin",
     "beachActivities": "Kayak, SUP, kitesurf, ski nautique, pêche au gros, catamaran, snorkeling, planche à voile",
     "beachLength": "Environ 200-400 m selon les sources",
-    "zone": "nord",
-    "photoUrl": "https://images.pexels.com/photos/34732381/pexels-photo-34732381.jpeg",
-    "photoCredit": "Vincent Rivaud / Pexels"
+    "zone": "nord"
   },
   {
     "id": "plage-bel-ombre",
@@ -5542,9 +5534,7 @@
     "sandType": "Sable doré",
     "beachActivities": "Baignade, plongée, snorkeling, kitesurf, pêche en haute mer, golf",
     "beachLength": "Plus de 2 km",
-    "zone": "sud",
-    "photoUrl": "https://images.pexels.com/photos/33791769/pexels-photo-33791769.jpeg",
-    "photoCredit": "Gopinath Mohanta / Pexels"
+    "zone": "sud"
   },
   {
     "id": "roti-baboolall-triolet",
@@ -24591,9 +24581,7 @@
       "plages"
     ],
     "zone": "sud",
-    "description": "La plage la plus proche de l'aéroport, sauvage et exposée au vent.",
-    "photoUrl": "https://images.pexels.com/photos/7425281/pexels-photo-7425281.jpeg",
-    "photoCredit": "Dominik Ruhl / Pexels"
+    "description": "La plage la plus proche de l'aéroport, sauvage et exposée au vent."
   },
   {
     "id": "montagne-des-signaux",
@@ -24821,9 +24809,7 @@
       "plages"
     ],
     "zone": "sud",
-    "description": "Entre Le Morne et Bel Ombre, plage ombragée avec vue sur les montagnes, lagon peu profond, idéale pour les familles.",
-    "photoUrl": "https://images.pexels.com/photos/36731905/pexels-photo-36731905.jpeg",
-    "photoCredit": "Zak H / Pexels"
+    "description": "Entre Le Morne et Bel Ombre, plage ombragée avec vue sur les montagnes, lagon peu profond, idéale pour les familles."
   },
   {
     "id": "tamassa",
@@ -29407,9 +29393,7 @@
     ],
     "zone": "ouest",
     "description": "Vue sur le Morne Brabant, entourée de filaos, lagon calme et peu profond, idéal pour le paddle.",
-    "beachActivities": "Paddle",
-    "photoUrl": "https://images.pexels.com/photos/36731894/pexels-photo-36731894.jpeg",
-    "photoCredit": "Zak H / Pexels"
+    "beachActivities": "Paddle"
   },
   {
     "id": "ateliers-theatre-oz",
@@ -31389,9 +31373,7 @@
       "plages"
     ],
     "description": "Le plus grand lagon de Maurice : eaux calmes et peu profondes protégées par la barrière de corail, sable blanc bordé de filaos et mangroves, atmosphère paisible et préservée, peu fréquentée.",
-    "sandType": "Sable blanc fin",
-    "photoUrl": "https://images.unsplash.com/photo-1513415277900-a62401e19be4",
-    "photoCredit": "Xavier Coiffic / Unsplash"
+    "sandType": "Sable blanc fin"
   },
   {
     "id": "plage-tamarin",
@@ -31408,9 +31390,7 @@
       "plages"
     ],
     "description": "Idéale pour le surf, les couchers de soleil, et point d'embarquation pour aller voir les dauphins.",
-    "beachActivities": "Surf, observation des dauphins",
-    "photoUrl": "https://images.pexels.com/photos/34190261/pexels-photo-34190261.jpeg",
-    "photoCredit": "Damini Gokool / Pexels"
+    "beachActivities": "Surf, observation des dauphins"
   },
   {
     "id": "plage-balaclava",
@@ -31427,9 +31407,7 @@
       "plages"
     ],
     "description": "Plage familiale, snorkeling exceptionnel.",
-    "beachActivities": "Snorkeling",
-    "photoUrl": "https://images.pexels.com/photos/18069587/pexels-photo-18069587.jpeg",
-    "photoCredit": "Michał Sołowiej / Pexels"
+    "beachActivities": "Snorkeling"
   },
   {
     "id": "plage-pomponette-riambel",
@@ -31445,9 +31423,7 @@
     "themes": [
       "plages"
     ],
-    "description": "Petit bijou encore préservé, peu prisé : longue bande de sable bordée de filaos, coins d'ombre, eaux turquoise plus sauvages qu'ailleurs.",
-    "photoUrl": "https://images.pexels.com/photos/18069584/pexels-photo-18069584.jpeg",
-    "photoCredit": "Michał Sołowiej / Pexels"
+    "description": "Petit bijou encore préservé, peu prisé : longue bande de sable bordée de filaos, coins d'ombre, eaux turquoise plus sauvages qu'ailleurs."
   },
   {
     "id": "plage-saint-felix",
@@ -31463,9 +31439,7 @@
     "themes": [
       "plages"
     ],
-    "description": "Paisible, sauvage, à l'écart des zones touristiques. Lagon agréable à la baignade selon la saison.",
-    "photoUrl": "https://images.pexels.com/photos/32515327/pexels-photo-32515327.jpeg",
-    "photoCredit": "emre kağızmanlı / Pexels"
+    "description": "Paisible, sauvage, à l'écart des zones touristiques. Lagon agréable à la baignade selon la saison."
   },
   {
     "id": "plage-poste-lafayette",
@@ -31482,9 +31456,7 @@
       "plages"
     ],
     "description": "Longue plage bordée de filaos, plus sauvage que d'autres endroits de la côte est. Appréciée pour la baignade dans les zones protégées du vent, et par les kitesurfeurs dans les zones exposées.",
-    "beachActivities": "Baignade (zones protégées), kitesurf (zones exposées)",
-    "photoUrl": "https://images.pexels.com/photos/3485360/pexels-photo-3485360.jpeg",
-    "photoCredit": "Andrew Harvard / Pexels"
+    "beachActivities": "Baignade (zones protégées), kitesurf (zones exposées)"
   },
   {
     "id": "la-reserve-golf-links",
