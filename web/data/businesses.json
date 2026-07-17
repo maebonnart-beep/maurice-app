@@ -5299,8 +5299,6 @@
     "themes": [
       "plages"
     ],
-    "hours": "Accès libre",
-    "priceRange": "bon-marche",
     "sandType": "Sable blanc fin",
     "beachActivities": "Kitesurf, snorkeling, plongée, kayak/pédalo, planche à voile, stand-up paddle",
     "beachLength": "Environ 500 m à 3 km selon les sources",
@@ -5319,8 +5317,6 @@
     "themes": [
       "plages"
     ],
-    "hours": "Accès libre",
-    "priceRange": "bon-marche",
     "sandType": "Sable blanc",
     "beachActivities": "Kitesurf, snorkeling, golf, parachute ascensionnel",
     "beachLength": "Environ 8 km",
@@ -5339,8 +5335,6 @@
     "themes": [
       "plages"
     ],
-    "hours": "Accès libre",
-    "priceRange": "bon-marche",
     "sandType": "Sable blanc fin",
     "beachActivities": "Baignade, snorkeling, plongée bouteille, sports nautiques, restaurants/bars",
     "beachLength": "Environ 3 km",
@@ -5359,8 +5353,6 @@
     "themes": [
       "plages"
     ],
-    "hours": "Accès libre",
-    "priceRange": "bon-marche",
     "sandType": "Sable fin",
     "beachActivities": "Kayak, stand-up paddle, plongée bouteille (grottes/épaves), baignade",
     "beachLength": "Environ 8 km",
@@ -5379,8 +5371,6 @@
     "themes": [
       "plages"
     ],
-    "hours": "Accès libre",
-    "priceRange": "bon-marche",
     "sandType": "Sable fin, blanc",
     "beachActivities": "Snorkeling (parc marin), plongée",
     "beachLength": "Environ 500 m",
@@ -5399,8 +5389,6 @@
     "themes": [
       "plages"
     ],
-    "hours": "Accès libre",
-    "priceRange": "bon-marche",
     "sandType": "Sable fin",
     "beachActivities": "Marche sous-marine, parachute ascensionnel, plongée, baignade, barbecues familiaux",
     "beachLength": "Environ 70 m (petite plage en fer à cheval)",
@@ -5420,7 +5408,6 @@
       "plages"
     ],
     "hours": "Accessible en bateau uniquement",
-    "priceRange": "prix-moyen",
     "sandType": "Sable blanc fin / poudreux",
     "beachActivities": "Plongée, snorkeling, parachute ascensionnel, golf 18 trous",
     "beachLength": "Plage principale ~500 m (île ~4 km de sable au total)",
@@ -5439,8 +5426,6 @@
     "themes": [
       "plages"
     ],
-    "hours": "Accès libre",
-    "priceRange": "bon-marche",
     "sandType": "Sable blanc fin",
     "beachActivities": "Farniente, plongée, snorkeling, kayak/paddle, golf 18 trous, jogging",
     "beachLength": "Environ 3 km",
@@ -5459,8 +5444,6 @@
     "themes": [
       "plages"
     ],
-    "hours": "Accès libre",
-    "priceRange": "bon-marche",
     "sandType": "Sable blanc fin",
     "beachActivities": "Kayak, SUP, kitesurf, ski nautique, pêche au gros, catamaran, snorkeling, planche à voile",
     "beachLength": "Environ 200-400 m selon les sources",
@@ -5479,8 +5462,6 @@
     "themes": [
       "plages"
     ],
-    "hours": "Accès libre",
-    "priceRange": "bon-marche",
     "sandType": "Sable doré",
     "beachActivities": "Baignade, plongée, snorkeling, kitesurf, pêche en haute mer, golf",
     "beachLength": "Plus de 2 km",
@@ -24455,8 +24436,11 @@
     "googleMapsUrl": "https://maps.google.com/?cid=7008834189898105557&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.5243899,
     "lng": 57.5322158,
-    "themes": [],
-    "zone": "sud"
+    "themes": [
+      "plages"
+    ],
+    "zone": "sud",
+    "description": "Hors lagon : l'océan se brise sur les falaises. Nature indomptée, le \"sud sauvage\" mauricien."
   },
   {
     "id": "grse-waterfall",
@@ -24509,8 +24493,11 @@
     "googleMapsUrl": "https://maps.google.com/?cid=13287811304313231758&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.455025,
     "lng": 57.6995352,
-    "themes": [],
-    "zone": "sud"
+    "themes": [
+      "plages"
+    ],
+    "zone": "sud",
+    "description": "La plage la plus proche de l'aéroport, sauvage et exposée au vent."
   },
   {
     "id": "montagne-des-signaux",
@@ -24734,9 +24721,11 @@
     "lat": -20.4832233,
     "lng": 57.353759,
     "themes": [
-      "activites-enfants-famille"
+      "activites-enfants-famille",
+      "plages"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Entre Le Morne et Bel Ombre, plage ombragée avec vue sur les montagnes, lagon peu profond, idéale pour les familles."
   },
   {
     "id": "tamassa",
@@ -29315,9 +29304,12 @@
     "lat": -20.3545667,
     "lng": 57.361384,
     "themes": [
-      "parcs-botaniques"
+      "parcs-botaniques",
+      "plages"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Vue sur le Morne Brabant, entourée de filaos, lagon calme et peu profond, idéal pour le paddle.",
+    "beachActivities": "Paddle"
   },
   {
     "id": "ateliers-theatre-oz",
@@ -31281,5 +31273,105 @@
     "themes": [
       "expatriation-visas"
     ]
+  },
+  {
+    "id": "plage-pointe-esny",
+    "name": "Plage de Pointe d'Esny",
+    "category": "activites",
+    "address": "Pointe d'Esny, Grand Port (Sud-Est)",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Pointe%20d'Esny%20beach%20Mauritius",
+    "lat": -20.4324915,
+    "lng": 57.7265385,
+    "zone": "est",
+    "themes": [
+      "plages"
+    ],
+    "description": "Le plus grand lagon de Maurice : eaux calmes et peu profondes protégées par la barrière de corail, sable blanc bordé de filaos et mangroves, atmosphère paisible et préservée, peu fréquentée.",
+    "sandType": "Sable blanc fin"
+  },
+  {
+    "id": "plage-tamarin",
+    "name": "Plage de Tamarin",
+    "category": "activites",
+    "address": "Baie de Tamarin (Ouest)",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Tamarin%20Bay%20beach%20Mauritius",
+    "lat": -20.3292161,
+    "lng": 57.3776792,
+    "zone": "ouest",
+    "themes": [
+      "plages"
+    ],
+    "description": "Idéale pour le surf, les couchers de soleil, et point d'embarquation pour aller voir les dauphins.",
+    "beachActivities": "Surf, observation des dauphins"
+  },
+  {
+    "id": "plage-balaclava",
+    "name": "Plage de Balaclava",
+    "category": "activites",
+    "address": "Balaclava (Nord-Ouest)",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Balaclava%20beach%20Turtle%20Bay%20Mauritius",
+    "lat": -20.0867931,
+    "lng": 57.5165204,
+    "zone": "nord",
+    "themes": [
+      "plages"
+    ],
+    "description": "Plage familiale, snorkeling exceptionnel.",
+    "beachActivities": "Snorkeling"
+  },
+  {
+    "id": "plage-pomponette-riambel",
+    "name": "Pomponette & Riambel Beach",
+    "category": "activites",
+    "address": "Riambel, Savanne (Sud)",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Riambel%20beach%20Mauritius",
+    "lat": -20.5169117,
+    "lng": 57.4929368,
+    "zone": "sud",
+    "themes": [
+      "plages"
+    ],
+    "description": "Petit bijou encore préservé, peu prisé : longue bande de sable bordée de filaos, coins d'ombre, eaux turquoise plus sauvages qu'ailleurs."
+  },
+  {
+    "id": "plage-saint-felix",
+    "name": "Plage de Saint Félix",
+    "category": "activites",
+    "address": "Saint Félix, Chemin Grenier (Sud)",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Saint%20Felix%20beach%20Mauritius",
+    "lat": -20.4920408,
+    "lng": 57.4713418,
+    "zone": "sud",
+    "themes": [
+      "plages"
+    ],
+    "description": "Paisible, sauvage, à l'écart des zones touristiques. Lagon agréable à la baignade selon la saison."
+  },
+  {
+    "id": "plage-poste-lafayette",
+    "name": "Plage de Poste Lafayette",
+    "category": "activites",
+    "address": "Poste Lafayette (Est)",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Poste%20Lafayette%20beach%20Mauritius",
+    "lat": -20.1391452,
+    "lng": 57.751286,
+    "zone": "est",
+    "themes": [
+      "plages"
+    ],
+    "description": "Longue plage bordée de filaos, plus sauvage que d'autres endroits de la côte est. Appréciée pour la baignade dans les zones protégées du vent, et par les kitesurfeurs dans les zones exposées.",
+    "beachActivities": "Baignade (zones protégées), kitesurf (zones exposées)"
   }
 ]
