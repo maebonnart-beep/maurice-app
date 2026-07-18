@@ -17,7 +17,16 @@ export const CATEGORY_MAP = Object.fromEntries(
 
 export type Subcategory = { key: string; label: string; emoji: string };
 
-export type Family = { key: string; label: string; emoji: string; children: string[] };
+export type Subgroup = { key: string; label: string; emoji: string; parent: string; children: string[] };
+
+export type Family = {
+  key: string;
+  label: string;
+  emoji: string;
+  children: string[];
+  /** Sous-groupes nichés sous un thème précis de `children` (ex: cuisines sous "restaurants"). */
+  subgroups?: Subgroup[];
+};
 
 export const FAMILIES: Partial<Record<CategoryKey, Family[]>> = {
   food: [
@@ -27,8 +36,19 @@ export const FAMILIES: Partial<Record<CategoryKey, Family[]>> = {
       emoji: "🍽️",
       children: [
         "restaurants", "bars", "cafes-terrasses", "snacks-plage", "tables-hotes", "chefs-domicile",
-        "glaciers", "mauricienne", "fruits-de-mer", "indienne", "asiatique", "europeenne", "italien",
-        "grecque", "marocain", "grillades", "vegetarien", "fastfood", "kids-friendly",
+        "glaciers",
+      ],
+      subgroups: [
+        {
+          key: "cuisines",
+          label: "Cuisines",
+          emoji: "🌍",
+          parent: "restaurants",
+          children: [
+            "mauricienne", "fruits-de-mer", "indienne", "asiatique", "europeenne", "italien",
+            "grecque", "marocain", "grillades", "vegetarien", "fastfood", "kids-friendly",
+          ],
+        },
       ],
     },
     {

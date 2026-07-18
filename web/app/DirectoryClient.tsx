@@ -101,7 +101,13 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
   const subcategories = SUBCATEGORIES[active as keyof typeof SUBCATEGORIES];
   const families = FAMILIES[active as keyof typeof FAMILIES];
   const familyChildKeys = useMemo(
-    () => new Set(families?.flatMap((f) => f.children) ?? []),
+    () =>
+      new Set(
+        families?.flatMap((f) => [
+          ...f.children,
+          ...(f.subgroups?.flatMap((sg) => sg.children) ?? []),
+        ]) ?? []
+      ),
     [families]
   );
   const ungroupedSubcategories = subcategories?.filter((s) => !familyChildKeys.has(s.key)) ?? [];
@@ -166,7 +172,8 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
     businesses.forEach((b) => {
       if (b.category !== active) return;
       families.forEach((f) => {
-        if ((b.themes || []).some((t) => f.children.includes(t))) {
+        const allKeys = [...f.children, ...(f.subgroups?.flatMap((sg) => sg.children) ?? [])];
+        if ((b.themes || []).some((t) => allKeys.includes(t))) {
           c[f.key] = (c[f.key] || 0) + 1;
         }
       });
@@ -196,8 +203,12 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
             themes.some((t) => activeThemes.has(t));
           if (!matches) return false;
         } else if (activeFamilyDef) {
+          const allKeys = [
+            ...activeFamilyDef.children,
+            ...(activeFamilyDef.subgroups?.flatMap((sg) => sg.children) ?? []),
+          ];
           const themes = b.themes || [];
-          if (!themes.some((t) => activeFamilyDef.children.includes(t))) return false;
+          if (!themes.some((t) => allKeys.includes(t))) return false;
         }
         if (!q) return true;
         return (b.name + " " + b.address + " " + CATEGORY_MAP[b.category].label)
@@ -386,6 +397,39 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
           </div>
         </div>
       )}
+
+      {activeFamilyDef?.subgroups
+        ?.filter((sg) => activeThemes.has(sg.parent))
+        .map((sg) => (
+          <div
+            key={sg.key}
+            className="sticky top-[196px] z-10 bg-bg/85 backdrop-blur border-b border-border py-2.5"
+          >
+            <div className="max-w-[1120px] mx-auto px-5 flex gap-2 overflow-x-auto">
+              {sg.children.map((childKey) => {
+                const child = subcategories?.find((s) => s.key === childKey);
+                if (!child) return null;
+                return (
+                  <button
+                    key={child.key}
+                    onClick={() => toggleTheme(child.key)}
+                    aria-pressed={activeThemes.has(child.key)}
+                    className={`flex-none inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full border text-[13px] font-medium whitespace-nowrap transition-colors ${
+                      activeThemes.has(child.key)
+                        ? "bg-accent border-accent text-white"
+                        : "bg-surface border-border text-muted hover:border-accent hover:text-ink"
+                    }`}
+                  >
+                    {child.emoji} {child.label}
+                    <span className="text-[11px] font-bold opacity-70">
+                      {themeCounts[child.key] || 0}
+                    </span>
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+        ))}
 
       <div className="max-w-[1120px] mx-auto px-5">
         <div className="rounded-2xl border border-border bg-surface shadow-[0_1px_2px_rgba(13,43,42,.05),0_12px_30px_-14px_rgba(13,43,42,.28)] overflow-hidden mt-6">
