@@ -128,6 +128,7 @@ export const SUBCATEGORIES: Partial<Record<CategoryKey, Subcategory[]>> = {
     { key: "balades-familiales", label: "Balades familiales", emoji: "🚶" },
     { key: "plages", label: "Plages", emoji: "🏖️" },
     { key: "parcs-botaniques", label: "Parcs botaniques", emoji: "🌺" },
+    { key: "points-de-vue", label: "Points de vue", emoji: "🔭" },
     { key: "culture-patrimoine", label: "Culture & patrimoine", emoji: "🏛️" },
     { key: "malls-shopping", label: "Malls & shopping", emoji: "🛍️" },
     { key: "activites-enfants-famille", label: "Activités enfants & famille", emoji: "🎠" },

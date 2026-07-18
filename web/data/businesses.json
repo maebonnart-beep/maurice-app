@@ -5049,7 +5049,8 @@
     "hours": "Tous les jours 9h-17h (dernière admission 16h)",
     "priceRange": "prix-moyen",
     "zone": "nord",
-    "promoText": "Château colonial du 19e siècle entouré d'un verger, visite guidée de 45 min avec dégustation de jus et rhum. (à partir de 700 Rs/pers.)"
+    "promoText": "Château colonial du 19e siècle entouré d'un verger, visite guidée de 45 min avec dégustation de jus et rhum. (à partir de 700 Rs/pers.)",
+    "description": "Manoir colonial de 1856 entouré d'un verger de 45 hectares réunissant plus de 30 familles botaniques, dont des manguiers centenaires et arbres à épices."
   },
   {
     "id": "ssr-botanical-garden-pamplemousses",
@@ -5058,15 +5059,16 @@
     "address": "Royal Road, Pamplemousses (Nord)",
     "phone": "",
     "website": "https://ssrbg.govmu.org/",
-    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=SSR%20Botanical%20Garden%20Pamplemousses%20Mauritius",
-    "lat": -20.1017,
-    "lng": 57.5772,
+    "googleMapsUrl": "https://maps.google.com/?cid=6833054482258986553&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.1071182,
+    "lng": 57.5797049,
     "themes": [
       "parcs-botaniques"
     ],
     "hours": "Tous les jours 8h30-17h30",
     "priceRange": "bon-marche",
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Plus ancien jardin botanique de l'hémisphère Sud, fondé en 1770 par Pierre Poivre, célèbre pour son bassin de nénuphars géants Victoria amazonica."
   },
   {
     "id": "aventure-du-sucre",
@@ -5175,7 +5177,8 @@
     ],
     "priceRange": "prix-moyen",
     "zone": "centre",
-    "promoText": "Grande maison créole coloniale, visite guidée de la demeure et du parc aux 4 cascades. (300 Rs/pers.)"
+    "promoText": "Grande maison créole coloniale, visite guidée de la demeure et du parc aux 4 cascades. (300 Rs/pers.)",
+    "description": "Demeure créole coloniale d'environ 1830, entourée d'un jardin luxuriant menant, par un sentier, à quatre cascades le long de la rivière Moka."
   },
   {
     "id": "jumbo-phoenix",
@@ -13178,36 +13181,6 @@
     "zone": "nord"
   },
   {
-    "id": "pamplemousses-garden",
-    "name": "Pamplemousses Garden",
-    "category": "activites",
-    "address": "VHVH+5V4, Pamplemousses",
-    "phone": "",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=6833054482258986553&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.1071182,
-    "lng": 57.5797049,
-    "themes": [
-      "parcs-botaniques"
-    ],
-    "zone": "nord"
-  },
-  {
-    "id": "etape-1-entree-du-parc",
-    "name": "Étape 1 - Entrée du Parc",
-    "category": "activites",
-    "address": "VHWH+FJ9, Pamplemousses",
-    "phone": "",
-    "website": "https://www.ilemaurice.im/jardin-botanique-sir-seewoosagur-ramgoolam-pamplemousses/",
-    "googleMapsUrl": "https://maps.google.com/?cid=3437492756521038618&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.1037732,
-    "lng": 57.5794289,
-    "themes": [
-      "parcs-botaniques"
-    ],
-    "zone": "nord"
-  },
-  {
     "id": "frederick-hendrick-museum",
     "name": "Frederick Hendrick Museum",
     "category": "activites",
@@ -17923,7 +17896,8 @@
     "themes": [
       "parcs-botaniques"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Second jardin botanique de l'île, fondé en 1870, abritant le Hyophorbe amaricaulis — palmier le plus rare au monde — ainsi que des espèces endémiques menacées."
   },
   {
     "id": "le-parc-captamarin",
@@ -17938,37 +17912,8 @@
     "themes": [
       "parcs-botaniques"
     ],
-    "zone": "ouest"
-  },
-  {
-    "id": "supermarche-super-u",
-    "name": "Supermarché Super U",
-    "category": "activites",
-    "address": "Barachois Estate MU, Tamarin 90901",
-    "phone": "+230 483 4975",
-    "website": "https://www.captamarin.mu/",
-    "googleMapsUrl": "https://maps.google.com/?cid=12220238758822048776&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.3277204,
-    "lng": 57.3837762,
-    "themes": [
-      "parcs-botaniques"
-    ],
-    "zone": "ouest"
-  },
-  {
-    "id": "martello-tower-museum",
-    "name": "Martello Tower Museum",
-    "category": "activites",
-    "address": "Coastal Rd, Black River",
-    "phone": "+230 5471 0178",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=17566982013416872874&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.3546998,
-    "lng": 57.3618799,
-    "themes": [
-      "parcs-botaniques"
-    ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Parc riverain de 4 hectares au sein du quartier éco-responsable de Cap Tamarin, avec vue sur la baie de Tamarin et le mont La Tourelle."
   },
   {
     "id": "jardin-d-anna-2",
@@ -22120,22 +22065,8 @@
     "themes": [
       "parcs-botaniques"
     ],
-    "zone": "centre"
-  },
-  {
-    "id": "slave-route-monument",
-    "name": "Slave Route Monument",
-    "category": "activites",
-    "address": "Le Morne Cultural Landscape, Unnamed Road, Le Morne",
-    "phone": "",
-    "website": "https://www.ilemaurice.im/monument-de-la-route-de-lesclave/",
-    "googleMapsUrl": "https://maps.google.com/?cid=1957323751211882403&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.4522813,
-    "lng": 57.3142741,
-    "themes": [
-      "parcs-botaniques"
-    ],
-    "zone": "sud"
+    "zone": "centre",
+    "description": "Jardin public historique au cœur de Port-Louis, aménagé dès 1770 sous l'administration Decaen, planté de vieux banians et haut lieu de rassemblements populaires."
   },
   {
     "id": "la-nicoliere-viewpoint",
@@ -22148,7 +22079,7 @@
     "lat": -20.16247,
     "lng": 57.6228699,
     "themes": [
-      "parcs-botaniques"
+      "points-de-vue"
     ],
     "zone": "sud"
   },
@@ -24689,21 +24620,6 @@
       "peche"
     ],
     "zone": "est"
-  },
-  {
-    "id": "jardin-telfair",
-    "name": "Jardin Telfair",
-    "category": "activites",
-    "address": "FGHF+H52, B9, Souillac",
-    "phone": "",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=13749643832751343092&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.5211015,
-    "lng": 57.5228872,
-    "themes": [
-      "parcs-botaniques"
-    ],
-    "zone": "sud"
   },
   {
     "id": "robert-edward-hart-memorial-museum",
@@ -29423,7 +29339,8 @@
     "themes": [
       "parcs-botaniques"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Pépinière mauricienne depuis 1991 proposant un large choix de plantes vertes et fleuries — succulentes, palmiers, plantes grimpantes — pour tous types de jardins."
   },
   {
     "id": "la-preneuse-public-beach",
