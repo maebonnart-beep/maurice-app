@@ -228,7 +228,8 @@
     "lat": -20.0151895,
     "lng": 57.5832472,
     "themes": [
-      "sports-nautiques"
+      "sports-nautiques",
+      "plongee-sous-marine"
     ],
     "zone": "nord"
   },
@@ -244,7 +245,8 @@
     "lng": 57.5829579,
     "hours": "Tous les jours 8h-16h",
     "themes": [
-      "sports-nautiques"
+      "sports-nautiques",
+      "plongee-sous-marine"
     ],
     "zone": "nord"
   },
@@ -260,7 +262,8 @@
     "lng": 57.583992,
     "priceRange": "prix-moyen",
     "themes": [
-      "sports-nautiques"
+      "sports-nautiques",
+      "plongee-sous-marine"
     ],
     "zone": "nord"
   },
@@ -275,7 +278,8 @@
     "lat": -19.9869018,
     "lng": 57.603134,
     "themes": [
-      "sports-nautiques"
+      "sports-nautiques",
+      "plongee-sous-marine"
     ],
     "zone": "nord"
   },
@@ -292,7 +296,8 @@
     "hours": "Lun-Sam 7h30-15h, fermé dim",
     "priceRange": "prix-moyen",
     "themes": [
-      "sports-nautiques"
+      "sports-nautiques",
+      "plongee-sous-marine"
     ],
     "zone": "nord"
   },
@@ -307,7 +312,8 @@
     "lat": -20.0010796,
     "lng": 57.5519843,
     "themes": [
-      "sports-nautiques"
+      "sports-nautiques",
+      "plongee-sous-marine"
     ],
     "zone": "nord"
   },
@@ -322,7 +328,8 @@
     "lat": -19.9934558,
     "lng": 57.5920544,
     "themes": [
-      "sports-nautiques"
+      "sports-nautiques",
+      "plongee-sous-marine"
     ],
     "zone": "nord"
   },
@@ -354,7 +361,8 @@
     "lat": -20.0114144,
     "lng": 57.5847779,
     "themes": [
-      "sports-nautiques"
+      "sports-nautiques",
+      "stand-up-paddle"
     ],
     "zone": "nord"
   },
@@ -417,7 +425,8 @@
     "lng": 57.6327248,
     "hours": "Tous les jours 9h-17h",
     "themes": [
-      "sports-nautiques"
+      "sports-nautiques",
+      "kitesurf"
     ],
     "zone": "nord"
   },
@@ -433,7 +442,8 @@
     "lng": 57.6729617,
     "hours": "Tous les jours 8h-19h",
     "themes": [
-      "sports-nautiques"
+      "sports-nautiques",
+      "kitesurf"
     ],
     "zone": "nord"
   },
@@ -5276,7 +5286,8 @@
     "hours": "Fermé dim, Lun-Sam 8h-15h",
     "priceRange": "prix-moyen",
     "themes": [
-      "sports-nautiques"
+      "sports-nautiques",
+      "plongee-sous-marine"
     ],
     "zone": "ouest"
   },
@@ -5292,7 +5303,8 @@
     "lng": 57.7228,
     "hours": "Tous les jours 8h-17h",
     "themes": [
-      "sports-nautiques"
+      "sports-nautiques",
+      "plongee-sous-marine"
     ],
     "zone": "sud"
   },
@@ -5307,7 +5319,8 @@
     "lat": -20.2189,
     "lng": 57.7867,
     "themes": [
-      "sports-nautiques"
+      "sports-nautiques",
+      "plongee-sous-marine"
     ],
     "zone": "est"
   },
@@ -17483,7 +17496,8 @@
     "lng": 57.793663,
     "themes": [
       "excursions",
-      "sports-nautiques"
+      "sports-nautiques",
+      "kayak"
     ],
     "zone": "est",
     "email": "reservation@oceane.mu",
@@ -17585,7 +17599,8 @@
     "lat": -20.3285212,
     "lng": 57.3813813,
     "themes": [
-      "sports-nautiques"
+      "sports-nautiques",
+      "kayak"
     ],
     "zone": "ouest"
   },
@@ -17687,7 +17702,8 @@
     "lat": -20.2958903,
     "lng": 57.3629785,
     "themes": [
-      "sports-nautiques"
+      "sports-nautiques",
+      "navigation-bateau"
     ],
     "zone": "ouest"
   },
@@ -17702,7 +17718,8 @@
     "lat": -20.3377911,
     "lng": 57.3750805,
     "themes": [
-      "sports-nautiques"
+      "sports-nautiques",
+      "navigation-bateau"
     ],
     "zone": "ouest"
   },
@@ -17717,7 +17734,8 @@
     "lat": -20.2752067,
     "lng": 57.3741259,
     "themes": [
-      "sports-nautiques"
+      "sports-nautiques",
+      "plongee-sous-marine"
     ],
     "zone": "ouest"
   },
@@ -17732,7 +17750,8 @@
     "lat": -20.197473,
     "lng": 57.4877906,
     "themes": [
-      "sports-nautiques"
+      "sports-nautiques",
+      "stand-up-paddle"
     ],
     "zone": "centre"
   },
@@ -17747,7 +17766,9 @@
     "lat": -20.4257987,
     "lng": 57.3622366,
     "themes": [
-      "sports-nautiques"
+      "sports-nautiques",
+      "surf",
+      "stand-up-paddle"
     ],
     "zone": "ouest"
   },
@@ -21253,7 +21274,11 @@
     "lat": -20.4658432,
     "lng": 57.3086322,
     "themes": [
-      "sports-nautiques"
+      "sports-nautiques",
+      "kitesurf",
+      "planche-a-voile",
+      "surf",
+      "stand-up-paddle"
     ],
     "zone": "sud"
   },
@@ -21268,7 +21293,8 @@
     "lat": -20.4640669,
     "lng": 57.3180754,
     "themes": [
-      "sports-nautiques"
+      "sports-nautiques",
+      "surf"
     ],
     "zone": "sud"
   },
@@ -21283,7 +21309,10 @@
     "lat": -20.4330779,
     "lng": 57.3227116,
     "themes": [
-      "sports-nautiques"
+      "sports-nautiques",
+      "ski-nautique",
+      "plongee-sous-marine",
+      "kayak"
     ],
     "zone": "sud"
   },
@@ -21313,7 +21342,8 @@
     "lat": -20.465161,
     "lng": 57.3178504,
     "themes": [
-      "sports-nautiques"
+      "sports-nautiques",
+      "kitesurf"
     ],
     "zone": "sud"
   },
@@ -21328,7 +21358,9 @@
     "lat": -20.464675,
     "lng": 57.317705,
     "themes": [
-      "sports-nautiques"
+      "sports-nautiques",
+      "kitesurf",
+      "planche-a-voile"
     ],
     "zone": "sud"
   },
@@ -21530,7 +21562,8 @@
     "lng": 57.3620592,
     "themes": [
       "peche",
-      "sports-nautiques"
+      "sports-nautiques",
+      "kayak"
     ],
     "zone": "ouest"
   },
@@ -24370,7 +24403,9 @@
     "lat": -20.5059001,
     "lng": 57.4076951,
     "themes": [
-      "sports-nautiques"
+      "sports-nautiques",
+      "kitesurf",
+      "planche-a-voile"
     ],
     "zone": "sud"
   },
@@ -24385,7 +24420,8 @@
     "lat": -20.0141067,
     "lng": 57.5837083,
     "themes": [
-      "sports-nautiques"
+      "sports-nautiques",
+      "plongee-sous-marine"
     ],
     "zone": "nord"
   },
@@ -24417,7 +24453,13 @@
     "lat": -20.5057933,
     "lng": 57.4079315,
     "themes": [
-      "sports-nautiques"
+      "sports-nautiques",
+      "kayak",
+      "kitesurf",
+      "plongee-sous-marine",
+      "ski-nautique",
+      "stand-up-paddle",
+      "navigation-bateau"
     ],
     "zone": "sud"
   },
@@ -24432,7 +24474,8 @@
     "lat": -20.5108919,
     "lng": 57.4170566,
     "themes": [
-      "sports-nautiques"
+      "sports-nautiques",
+      "stand-up-paddle"
     ],
     "zone": "sud"
   },
@@ -24462,7 +24505,8 @@
     "lat": -20.5080444,
     "lng": 57.4126582,
     "themes": [
-      "sports-nautiques"
+      "sports-nautiques",
+      "ski-nautique"
     ],
     "zone": "sud"
   },
@@ -24476,9 +24520,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=2387496215101094574&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.5020439,
     "lng": 57.4127738,
-    "themes": [
-      "sports-nautiques"
-    ],
+    "themes": [],
     "badge": "selection",
     "zone": "sud"
   },
@@ -24493,7 +24535,9 @@
     "lat": -20.5064401,
     "lng": 57.4097372,
     "themes": [
-      "sports-nautiques"
+      "sports-nautiques",
+      "navigation-bateau",
+      "ski-nautique"
     ],
     "zone": "sud"
   },
@@ -24507,9 +24551,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=10801883596028035330&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.5015491,
     "lng": 57.5443909,
-    "themes": [
-      "sports-nautiques"
-    ],
+    "themes": [],
     "zone": "sud"
   },
   {
@@ -27046,7 +27088,8 @@
     "lat": -20.1962179,
     "lng": 57.7749207,
     "themes": [
-      "sports-nautiques"
+      "sports-nautiques",
+      "parachute-ascensionnel"
     ],
     "zone": "est"
   },
@@ -27061,7 +27104,9 @@
     "lat": -20.1756856,
     "lng": 57.7704692,
     "themes": [
-      "sports-nautiques"
+      "sports-nautiques",
+      "navigation-bateau",
+      "parachute-ascensionnel"
     ],
     "zone": "est"
   },
@@ -27076,7 +27121,9 @@
     "lat": -20.4448478,
     "lng": 57.709801,
     "themes": [
-      "sports-nautiques"
+      "sports-nautiques",
+      "navigation-bateau",
+      "snorkeling"
     ],
     "zone": "sud"
   },
@@ -27106,7 +27153,12 @@
     "lat": -20.2385926,
     "lng": 57.7926919,
     "themes": [
-      "sports-nautiques"
+      "sports-nautiques",
+      "navigation-bateau",
+      "ski-nautique",
+      "parachute-ascensionnel",
+      "kayak",
+      "snorkeling"
     ],
     "zone": "est"
   },
@@ -27841,7 +27893,9 @@
     "lat": -20.3272756,
     "lng": 57.377816,
     "themes": [
-      "activites-enfants-famille"
+      "activites-enfants-famille",
+      "sports-nautiques",
+      "surf"
     ],
     "zone": "ouest"
   },
@@ -31630,5 +31684,96 @@
     "hours": "Mer & Sam",
     "promoText": "Objets atypiques et de nombreux tissus : tapisseries indiennes, nappes, vêtements traditionnels… plats typiques, du briani au mine frit en passant par le dholl puri.",
     "zone": "centre"
+  },
+  {
+    "id": "yemaya-adventures",
+    "name": "Yemaya Adventures",
+    "category": "activites",
+    "address": "Butte à l'Herbe, Calodyne",
+    "phone": "+230 5254 3205",
+    "website": "https://www.yemayaadventures.com/",
+    "lat": -20.0067831,
+    "lng": 57.6477936,
+    "themes": [
+      "sports-nautiques",
+      "kayak"
+    ],
+    "zone": "nord"
+  },
+  {
+    "id": "sea-urchin-diving-center",
+    "name": "Sea Urchin Diving Center",
+    "category": "activites",
+    "address": "Royal Road, Flic en Flac",
+    "phone": "+230 453 8825",
+    "website": "https://www.diveseaurchin.com/",
+    "lat": -20.2866909,
+    "lng": 57.4030764,
+    "themes": [
+      "sports-nautiques",
+      "plongee-sous-marine"
+    ],
+    "zone": "ouest"
+  },
+  {
+    "id": "kiteaholic-bastard",
+    "name": "Kiteaholic Bastard",
+    "category": "activites",
+    "address": "Anse La Raie Beach, Cap Malheureux",
+    "phone": "+230 5973 0063",
+    "website": "https://www.surfmauritius.com/",
+    "lat": -19.9878503,
+    "lng": 57.6310821,
+    "themes": [
+      "sports-nautiques",
+      "kitesurf"
+    ],
+    "zone": "nord"
+  },
+  {
+    "id": "jc-wind-and-waves",
+    "name": "JC Wind & Waves",
+    "category": "activites",
+    "address": "Le Morne",
+    "website": "https://www.mauritiuskiteschool.com/",
+    "lat": -20.4540752,
+    "lng": 57.3213024,
+    "themes": [
+      "sports-nautiques",
+      "kitesurf",
+      "surf"
+    ],
+    "zone": "ouest"
+  },
+  {
+    "id": "lokal-surf",
+    "name": "Lokal Surf",
+    "category": "activites",
+    "address": "Tamarin",
+    "phone": "+230 5491 5309",
+    "website": "https://www.lokalsurf.com/",
+    "lat": -20.3292161,
+    "lng": 57.3776792,
+    "themes": [
+      "sports-nautiques",
+      "surf"
+    ],
+    "zone": "ouest"
+  },
+  {
+    "id": "hang-loose-tours",
+    "name": "Hang Loose Tours",
+    "category": "activites",
+    "address": "La Gaulette, Le Morne",
+    "phone": "+230 5745 9745",
+    "website": "https://www.hangloosetours.com/",
+    "lat": -20.4481939,
+    "lng": 57.3468767,
+    "themes": [
+      "sports-nautiques",
+      "surf",
+      "stand-up-paddle"
+    ],
+    "zone": "ouest"
   }
 ]
