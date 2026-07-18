@@ -17916,21 +17916,6 @@
     "description": "Parc riverain de 4 hectares au sein du quartier éco-responsable de Cap Tamarin, avec vue sur la baie de Tamarin et le mont La Tourelle."
   },
   {
-    "id": "jardin-d-anna-2",
-    "name": "Jardin D Anna 2",
-    "category": "activites",
-    "address": "Jardins d'Anna 2, 307 Serengeti Street, Flic en Flac",
-    "phone": "",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=15405136127444119405&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.272508,
-    "lng": 57.3833215,
-    "themes": [
-      "parcs-botaniques"
-    ],
-    "zone": "ouest"
-  },
-  {
     "id": "la-tour-martello",
     "name": "La Tour Martello",
     "category": "activites",
@@ -22080,21 +22065,6 @@
     "lng": 57.6228699,
     "themes": [
       "points-de-vue"
-    ],
-    "zone": "sud"
-  },
-  {
-    "id": "chalets-chamarel-2",
-    "name": "Chalets Chamarel",
-    "category": "activites",
-    "address": "MU, Route Terres des Sept Couleurs, Chamarel 90404",
-    "phone": "+230 660 9796",
-    "website": "https://searesortshotels.com/chaletschamarel/",
-    "googleMapsUrl": "https://maps.google.com/?cid=108397178541874593&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.4397331,
-    "lng": 57.3649636,
-    "themes": [
-      "parcs-botaniques"
     ],
     "zone": "sud"
   },
