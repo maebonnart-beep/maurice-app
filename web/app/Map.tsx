@@ -42,12 +42,13 @@ function markerEmoji(b: Business): string {
   return CATEGORY_MAP[b.category].emoji;
 }
 
-function buildIcon(emoji: string, color: string, selected: boolean) {
-  const size = selected ? 34 : 27;
+function buildIcon(emoji: string, color: string, selected: boolean, hovered: boolean) {
+  const size = selected ? 34 : hovered ? 31 : 27;
+  const ring = hovered && !selected ? "0 0 0 3px #fff, 0 0 0 5px " + color : "0 1px 4px rgba(0,0,0,.35)";
   return L.divIcon({
     html: `<div style="width:${size}px;height:${size}px;border-radius:50%;background:${color};display:flex;align-items:center;justify-content:center;font-size:${Math.round(
       size * 0.55
-    )}px;line-height:1;border:2px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.35);">${emoji}</div>`,
+    )}px;line-height:1;border:2px solid #fff;box-shadow:${ring};">${emoji}</div>`,
     className: "",
     iconSize: [size, size],
     iconAnchor: [size / 2, size / 2],
@@ -126,12 +127,16 @@ export default function Map({
   onSelect,
   onBoundsChange,
   fitKey = "all",
+  hoveredId = null,
+  onHover,
 }: {
   businesses: Business[];
   selectedId: string | null;
   onSelect: (id: string) => void;
   onBoundsChange?: (b: MapBounds) => void;
   fitKey?: string;
+  hoveredId?: string | null;
+  onHover?: (id: string | null) => void;
 }) {
   const markersRef = useRef<Record<string, LeafletMarker>>({});
   const mappable = businesses.filter((b) => b.lat !== undefined && b.lng !== undefined);
@@ -158,8 +163,12 @@ export default function Map({
               if (el) markersRef.current[b.id] = el;
             }}
             position={[b.lat as number, b.lng as number]}
-            icon={buildIcon(markerEmoji(b), cat.color, b.id === selectedId)}
-            eventHandlers={{ click: () => onSelect(b.id) }}
+            icon={buildIcon(markerEmoji(b), cat.color, b.id === selectedId, b.id === hoveredId)}
+            eventHandlers={{
+              click: () => onSelect(b.id),
+              mouseover: () => onHover?.(b.id),
+              mouseout: () => onHover?.(null),
+            }}
           >
             <Popup minWidth={210}>
               <div>
