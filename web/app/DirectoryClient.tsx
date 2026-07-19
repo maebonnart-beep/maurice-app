@@ -818,7 +818,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                     selectedId={selectedId}
                     onSelect={selectFromMap}
                     onBoundsChange={onBoundsChange}
-                    fitKey={active}
+                    fitKey={`${active}|${[...activeThemes].join(",")}|${activeZone ?? ""}`}
                     hoveredId={hoveredId}
                     onHover={setHoveredId}
                   />

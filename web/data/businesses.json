@@ -30436,11 +30436,14 @@
     "address": "Domaine de Labourdonnais, Mapou",
     "phone": "+230 266 9621",
     "website": "https://labourdonnaissportsclub.com/en/tennis/",
+    "googleMapsUrl": "https://maps.app.goo.gl/zCnnqVkxdGomTyiJ9",
     "lat": -20.0695805,
     "lng": 57.6150265,
     "themes": [
-      "tennis-padel"
+      "tennis-padel",
+      "complexes-sportifs"
     ],
+    "badge": "coup-de-coeur",
     "zone": "nord"
   },
   {
