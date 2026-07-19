@@ -22,6 +22,24 @@ function whatsappLink(phone: string) {
   return "https://wa.me/" + phone.replace(/[^\d]/g, "");
 }
 
+function displayName(name: string): string {
+  return name.replace(/\p{L}+/gu, (word) => {
+    if (word.length > 1 && word === word.toUpperCase() && word !== word.toLowerCase()) {
+      return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
+    }
+    return word;
+  });
+}
+
+function displayCity(address: string): string {
+  const parts = address
+    .split(",")
+    .map((s) => s.trim())
+    .filter((s) => s && !/^-?\d{1,3}\.\d+$/.test(s));
+  const last = parts[parts.length - 1] || address;
+  return last.replace(/\s+\d{4,6}$/, "").trim();
+}
+
 // Les numéros mobiles mauriciens (+230 5xxx xxxx) sont presque toujours
 // joignables sur WhatsApp, contrairement aux lignes fixes.
 const MU_MOBILE_RE = /\+230\s?5\d{3}\s?\d{4}/;
@@ -172,11 +190,11 @@ export default function Map({
           >
             <Popup minWidth={210}>
               <div>
-                <b className="block text-sm mb-0.5">{b.name}</b>
+                <b className="block text-sm mb-0.5">{displayName(b.name)}</b>
                 <span className="block text-xs text-gray-600 mb-1.5">
                   {cat.emoji} {cat.label}
                 </span>
-                <div className="text-[12.5px] text-gray-700 mb-2">{b.address}</div>
+                <div className="text-[12.5px] text-gray-700 mb-2">📍 {displayCity(b.address)}</div>
                 <div className="flex flex-wrap gap-1.5">
                   {b.phone && (
                     <a

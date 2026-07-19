@@ -31,6 +31,28 @@ function tel(phone: string) {
   return "tel:" + phone.replace(/[^\d+]/g, "");
 }
 
+// Corrige les noms saisis TOUT EN MAJUSCULES : ne touche que les mots
+// entièrement en capitales, laisse les noms déjà bien casés intacts.
+function displayName(name: string): string {
+  return name.replace(/\p{L}+/gu, (word) => {
+    if (word.length > 1 && word === word.toUpperCase() && word !== word.toLowerCase()) {
+      return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
+    }
+    return word;
+  });
+}
+
+// N'affiche que la ville : dernier segment de l'adresse, sans coordonnées
+// GPS ni code postal.
+function displayCity(address: string): string {
+  const parts = address
+    .split(",")
+    .map((s) => s.trim())
+    .filter((s) => s && !/^-?\d{1,3}\.\d+$/.test(s));
+  const last = parts[parts.length - 1] || address;
+  return last.replace(/\s+\d{4,6}$/, "").trim();
+}
+
 function webLabel(url: string) {
   return url.replace(/^https?:\/\//, "").replace(/^www\./, "").replace(/\/.*$/, "");
 }
@@ -56,10 +78,12 @@ const DIFFICULTY_LABELS: Record<string, string> = {
 };
 
 const AGENCY_COLOR = "#6366f1";
+const COUP_DE_COEUR_COLOR = "#ff2d6a";
+const SELECTION_COLOR = "#7c3aed";
 
 function badgeAccentColor(badge?: Business["badge"]): string | undefined {
-  if (badge === "coup-de-coeur") return "var(--primary)";
-  if (badge === "selection") return "var(--primary-deep)";
+  if (badge === "coup-de-coeur") return COUP_DE_COEUR_COLOR;
+  if (badge === "selection") return SELECTION_COLOR;
   if (badge === "partenaire") return "var(--accent)";
   return undefined;
 }
@@ -127,12 +151,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
   }
 
   function toggleTheme(key: string) {
-    setActiveThemes((prev) => {
-      const next = new Set(prev);
-      if (next.has(key)) next.delete(key);
-      else next.add(key);
-      return next;
-    });
+    setActiveThemes((prev) => (prev.has(key) ? new Set() : new Set([key])));
     setSidebarOpen(false);
   }
 
@@ -593,7 +612,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                             <>
                               <img
                                 src={b.photoUrl}
-                                alt={b.name}
+                                alt={displayName(b.name)}
                                 loading="lazy"
                                 className="w-full h-full object-cover"
                               />
@@ -623,12 +642,18 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                               </span>
                             )}
                             {b.badge === "coup-de-coeur" && (
-                              <span className="self-start inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-white text-xs font-bold bg-primary">
+                              <span
+                                className="self-start inline-flex items-center gap-1 px-3 py-1.5 rounded-full text-white text-sm font-extrabold tracking-tight shadow-[0_2px_10px_-2px_rgba(255,45,106,.65)]"
+                                style={{ background: COUP_DE_COEUR_COLOR }}
+                              >
                                 💛 Coup de cœur
                               </span>
                             )}
                             {b.badge === "selection" && (
-                              <span className="self-start inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-white text-xs font-bold bg-primary-deep">
+                              <span
+                                className="self-start inline-flex items-center gap-1 px-3 py-1.5 rounded-full text-white text-sm font-extrabold tracking-tight shadow-[0_2px_10px_-2px_rgba(124,58,237,.65)]"
+                                style={{ background: SELECTION_COLOR }}
+                              >
                                 🏅 Sélection Maurice<sup>+</sup>
                               </span>
                             )}
@@ -666,8 +691,8 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                               </span>
                             )}
                           </div>
-                          <h3 className="m-0 text-[16px] leading-[1.25] tracking-tight">{b.name}</h3>
-                          <p className="m-0 text-muted text-[13px] leading-[1.5]">{b.address}</p>
+                          <h3 className="m-0 text-[16px] leading-[1.25] tracking-tight">{displayName(b.name)}</h3>
+                          <p className="m-0 text-muted text-[13px] leading-[1.5]">📍 {displayCity(b.address)}</p>
                           {b.description && (
                             <p className="m-0 text-ink text-[13px] leading-[1.5] -mt-1">{b.description}</p>
                           )}

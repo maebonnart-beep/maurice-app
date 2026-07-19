@@ -260,7 +260,6 @@
     "googleMapsUrl": "https://maps.google.com/?cid=5484249657585698242",
     "lat": -20.0097755,
     "lng": 57.583992,
-    "priceRange": "prix-moyen",
     "themes": [
       "sports-nautiques",
       "plongee-sous-marine"
@@ -294,7 +293,6 @@
     "lat": -20.0254785,
     "lng": 57.551332,
     "hours": "Lun-Sam 7h30-15h, fermé dim",
-    "priceRange": "prix-moyen",
     "themes": [
       "sports-nautiques",
       "plongee-sous-marine"
@@ -344,7 +342,6 @@
     "lat": -20.0129023,
     "lng": 57.5843379,
     "hours": "Tous les jours 9h-17h",
-    "priceRange": "prix-moyen",
     "themes": [
       "sports-nautiques"
     ],
@@ -392,7 +389,6 @@
     "lat": -20.0143029,
     "lng": 57.5835717,
     "hours": "Lun-Sam 9h30-17h30, fermé dim",
-    "priceRange": "se-faire-plaisir",
     "themes": [
       "sports-nautiques"
     ],
@@ -5287,7 +5283,6 @@
     "lat": -20.279,
     "lng": 57.3639,
     "hours": "Fermé dim, Lun-Sam 8h-15h",
-    "priceRange": "prix-moyen",
     "themes": [
       "sports-nautiques",
       "plongee-sous-marine"
@@ -31662,5 +31657,24 @@
       "stand-up-paddle"
     ],
     "zone": "ouest"
+  },
+  {
+    "id": "sea-kayak-adventures",
+    "name": "Sea Kayak Adventures",
+    "category": "activites",
+    "address": "Bain du Rosnay, St Antoine, Riviere du Rempart",
+    "phone": "+230 5250 5575",
+    "website": "https://www.facebook.com/kayakmauritius/",
+    "lat": -20.03592,
+    "lng": 57.68571,
+    "themes": [
+      "sports-nautiques",
+      "kayak"
+    ],
+    "zone": "nord",
+    "badge": "coup-de-coeur",
+    "description": "Sortie guidée en petit groupe (6-8 pers.) avec un guide passionné qui partage sa culture de l'île. Balade en kayak dans les mangroves jusqu'à l'Île d'Ambre, exploration à pied de l'île, goûter de samoussas maison inclus. Paysages sauvages loin des circuits touristiques, super rapport qualité-prix.",
+    "entryPrice": "~30€/pers la demi-journée",
+    "photoUrl": "/photos/sea-kayak-adventures-1.jpg"
   }
 ]
