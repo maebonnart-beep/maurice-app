@@ -31679,5 +31679,58 @@
     "description": "Sortie guidée en petit groupe (6-8 pers.) avec un guide passionné qui partage sa culture de l'île. Balade en kayak dans les mangroves jusqu'à l'Île d'Ambre, exploration à pied de l'île, goûter de samoussas maison inclus. Paysages sauvages loin des circuits touristiques, super rapport qualité-prix.",
     "entryPrice": "~30€/pers la demi-journée",
     "photoUrl": "/photos/sea-kayak-adventures-1.jpg"
+  },
+  {
+    "id": "ufe-maurice",
+    "name": "Union des Français de l'Étranger (UFE) Maurice",
+    "category": "business-ttv",
+    "address": "Association – événements ponctuels, Port-Louis",
+    "phone": "+230 5258 5214",
+    "website": "https://www.ufe-maurice.org/",
+    "themes": [
+      "networking"
+    ],
+    "description": "Association de la communauté française à Maurice, organise régulièrement des événements networking (dîners-conférences, rencontres mensuelles)."
+  },
+  {
+    "id": "alliance-francaise-maurice",
+    "name": "Alliance Française de Maurice",
+    "category": "business-ttv",
+    "address": "1 rue Victor Hugo, Bell Village, Port-Louis",
+    "phone": "+230 212 29 49",
+    "website": "https://www.afmaurice.org/",
+    "themes": [
+      "networking"
+    ],
+    "description": "Au-delà de son rôle culturel, un lieu de rencontre pour la communauté francophone de Maurice.",
+    "zone": "centre"
+  },
+  {
+    "id": "club-entreprendre-france-maurice",
+    "name": "Club Entreprendre France-Maurice (CCIFM)",
+    "category": "business-ttv",
+    "address": "Blue Tower, Rue de l'Institut, Rez-de-chaussée, Ébène",
+    "phone": "+230 466 90 30",
+    "website": "https://www.ccifm.mu/",
+    "themes": [
+      "networking"
+    ],
+    "description": "Club d'entrepreneurs francophones issu de la fusion de la CCI France-Maurice et du Club Entreprendre Maurice.",
+    "zone": "centre"
+  },
+  {
+    "id": "le-glacier-gourmand-mahogany",
+    "name": "Le Glacier Gourmand",
+    "category": "food",
+    "address": "Mahogany Shopping Promenade, Beau Plan, Pamplemousses",
+    "phone": "",
+    "website": "https://www.facebook.com/glaciergourmand/",
+    "lat": -20.099693,
+    "lng": 57.5767875,
+    "themes": [
+      "glaciers"
+    ],
+    "description": "Glaces artisanales 100% naturelles, faites maison, sans conservateurs, options vegan et sans gluten, saveurs locales.",
+    "zone": "nord"
   }
 ]

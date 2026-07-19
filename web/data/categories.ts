@@ -199,6 +199,7 @@ export const SUBCATEGORIES: Partial<Record<CategoryKey, Subcategory[]>> = {
     { key: "coworking", label: "Espaces de coworking", emoji: "🧑‍💻" },
     { key: "cafe-coworking", label: "Cafés & spots télétravail", emoji: "☕" },
     { key: "garde-enfants", label: "Coworking + garde enfants", emoji: "👶" },
+    { key: "networking", label: "Networking", emoji: "🤝" },
   ],
   "seconde-main": [
     { key: "equipement-maison", label: "Équipement maison", emoji: "🛋️" },
