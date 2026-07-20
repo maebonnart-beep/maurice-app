@@ -32838,19 +32838,6 @@
     "zone": "centre"
   },
   {
-    "id": "le-telfair-gym",
-    "name": "Le Telfair gym",
-    "category": "activites",
-    "address": "FCV6+95R, Bel Ombre",
-    "googleMapsUrl": "https://maps.google.com/?cid=6181299661773948136&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.5061945,
-    "lng": 57.4113187,
-    "themes": [
-      "complexes-sportifs"
-    ],
-    "zone": "sud"
-  },
-  {
     "id": "the-gym-hub",
     "name": "THE GYM HUB",
     "category": "activites",
@@ -33421,19 +33408,6 @@
     "zone": "est"
   },
   {
-    "id": "constance-fitness-center",
-    "name": "Constance fitness center",
-    "category": "activites",
-    "address": "c/o Constance, RQM7+MQG Plage hotel, B59, Poste de Flacq",
-    "googleMapsUrl": "https://maps.google.com/?cid=11562953055171229063&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.165824,
-    "lng": 57.7644562,
-    "themes": [
-      "complexes-sportifs"
-    ],
-    "zone": "est"
-  },
-  {
     "id": "the-power-house",
     "name": "The Power House",
     "category": "activites",
@@ -33778,21 +33752,6 @@
     "googleMapsUrl": "https://maps.google.com/?cid=16037094461013271426&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.1518067,
     "lng": 57.52183,
-    "themes": [
-      "complexes-sportifs"
-    ],
-    "zone": "centre"
-  },
-  {
-    "id": "club-med-albion-mauritius",
-    "name": "Club Med Albion - Mauritius",
-    "category": "activites",
-    "address": "Avenue Du Club Med, Albion",
-    "phone": "+230 206 0700",
-    "website": "https://www.clubmed.com/albc",
-    "googleMapsUrl": "https://maps.google.com/?cid=14170838550251383844&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.217638,
-    "lng": 57.397294,
     "themes": [
       "complexes-sportifs"
     ],
