@@ -457,7 +457,9 @@
     "themes": [
       "peche"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Pêche au gros à la traîne à bord d'un cabin cruiser D'Unienville de 42 pieds restauré (bimoteur 220HP Cummins, 3 fighting chairs) ; marlin, thon, dorade, wahoo, requin, barracuda.",
+    "duration": "Demi-journée (7h-12h) ou journée complète (7h-15h), sorties privées"
   },
   {
     "id": "sportfisher",
@@ -473,7 +475,9 @@
     "themes": [
       "peche"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Pêche au gros à bord d'un cabin cruiser de 50 pieds (construit 2016, rénové 2024, bimoteur 500HP Yanmar, jusqu'à 10 personnes) ; marlin bleu/noir/rayé, voilier, thons, dorade.",
+    "duration": "6h ou 9h"
   },
   {
     "id": "tempo-fishing-club",
@@ -488,7 +492,11 @@
     "themes": [
       "peche"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Club de pêche sportive pratiquant jigging, popping, appât vivant, leurres et palangrotte, à bord d'un Apex Panga 26 pieds ; approche catch-and-release, coral trout, thon jaune, GT, wahoo.",
+    "duration": "Demi-journée",
+    "entryPrice": "À partir de 160€/personne (demi-journée)",
+    "priceRange": "prix-moyen"
   },
   {
     "id": "luscious-spa",
@@ -13173,7 +13181,8 @@
     "themes": [
       "peche"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Pêche au gros, jigging et sorties dauphins, entreprise familiale depuis 1968, en face de la plage publique de Pereybère ; transferts hôtel gratuits."
   },
   {
     "id": "frederick-hendrick-museum",
@@ -17786,7 +17795,8 @@
     "themes": [
       "peche"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Deux formules : Big Game Fishing (traîne à la cuillère/appât mort ou vivant, sportfisher 13m \"Golden Wave III\" avec sondeur/GPS/pilote automatique ; marlin bleu/noir, thon jaune, espadon, voilier) et Small Game Fishing (traîne de surface, jigging au downrigger, casting ; panga 7,5m bimoteur 60HP ; dorade coryphène, barracuda, petit thon jaune, bonite). Capitaine Victor Pelletier, certifié IGFA."
   },
   {
     "id": "big-game-fishing-mauritius-fish-whisperer-ltd",
@@ -17801,7 +17811,9 @@
     "themes": [
       "peche"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Pêche au gros (marlin bleu/noir/rayé, voilier, espadon, requin marteau, wahoo, dorade, thon jaune, bonite) et pêche récif/petit gibier, à bord d'un Ocean Master 30 pieds (2020, bimoteur 115HP Mercury, jusqu'à 5 pêcheurs). Capitaines Ian Koenig et Michael Forget, départ du Morne Anglers Club, Rivière Noire.",
+    "duration": "Demi-journée (6h) ou journée complète (9h)"
   },
   {
     "id": "sevenshots-fishing",
@@ -17816,7 +17828,8 @@
     "themes": [
       "peche"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Charter de pêche basé au Sugar Reef Complex, Coastal Road, Flic en Flac."
   },
   {
     "id": "big-game-fishing-mauritius-maranatha-big-game-fishing-and-ex",
@@ -17831,7 +17844,8 @@
     "themes": [
       "peche"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Pêche sportive et pêche au gros au large du Morne ; bonite, maquereau, thon jaune, barracuda, dorade, voilier, marlin bleu/noir, requins. Propose aussi observation des dauphins (baie de Tamarin) et snorkeling."
   },
   {
     "id": "fishing-guru",
@@ -17861,7 +17875,11 @@
     "themes": [
       "peche"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Pêche au gros, spécialiste marlin, à bord d'un sportfisher 36 pieds classe \"Legend\" (2015, bimoteur 240HP Yanmar, jusqu'à 8 passagers, salons intérieur/extérieur/pont supérieur) ; marlin bleu/noir, mahi-mahi, thon, barracuda, espadon, voilier, wahoo. Départ du ponton Club Med Albion.",
+    "duration": "Demi-journée (4h ou 5h), 3/4 journée (6h) ou journée complète (8h ou 10h)",
+    "entryPrice": "330€ (4h) à 650€ (10h) par sortie",
+    "priceRange": "se-faire-plaisir"
   },
   {
     "id": "aquaman-trip",
@@ -17876,7 +17894,9 @@
     "themes": [
       "peche"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Pêche au gros à bord d'un center console Mario Berger 27 pieds, jusqu'à 8 passagers ; Capitaine Jayvine ; barracuda, bonite, mahi-mahi, marlin bleu/noir, thons, wahoo, espadon. Pêche à la mouche possible (matériel non fourni).",
+    "duration": "Sorties de 5h (départ 7h)"
   },
   {
     "id": "ssr-botanical-garden-of-curepipe",
@@ -21443,7 +21463,11 @@
     "themes": [
       "peche"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Pêche en haute mer à bord d'un cabin cruiser 38 pieds, secteur Le Morne ; possibilité d'observer dauphins et baleines.",
+    "duration": "Demi-journée (4h) à journée complète étendue (9h)",
+    "entryPrice": "22 000 à 45 000 Rs par bateau selon durée",
+    "priceRange": "se-faire-plaisir"
   },
   {
     "id": "le-chasseur-mauricien",
@@ -21458,7 +21482,8 @@
     "themes": [
       "peche"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Pêche en haute mer ciblant le marlin bleu ou noir, sortie en famille."
   },
   {
     "id": "sea-life-holidays-tours",
@@ -21473,7 +21498,8 @@
     "themes": [
       "peche"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Tour-opérateur à La Gaulette proposant sorties bateau incluant pêche en haute mer et observation des dauphins."
   },
   {
     "id": "kayak-fishing-la-preneuse-departure",
@@ -21538,21 +21564,6 @@
     "zone": "ouest"
   },
   {
-    "id": "eglise-la-peche-miraculeuse",
-    "name": "Église La Pêche Miraculeuse",
-    "category": "activites",
-    "address": "H995+H6C, La Gaulette",
-    "phone": "",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=4006089519111588231&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.4310546,
-    "lng": 57.3580219,
-    "themes": [
-      "peche"
-    ],
-    "zone": "ouest"
-  },
-  {
     "id": "zone-peche",
     "name": "zone peche",
     "category": "activites",
@@ -21610,7 +21621,9 @@
     "themes": [
       "peche"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Charter de pêche au départ de Rivière Noire, entre Flic-en-Flac et Le Morne ; pêche traditionnelle et slow-jig ; marlin bleu, thon, bonite, dorade. Les clients repartent avec 10% de la prise.",
+    "duration": "Variable selon créneau ; briefing 6h50, départ 7h pour les sorties traditionnelles"
   },
   {
     "id": "pulsator-fishing-shop",
@@ -21622,21 +21635,6 @@
     "googleMapsUrl": "https://maps.google.com/?cid=9998881912263645924&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.3641966,
     "lng": 57.3803097,
-    "themes": [
-      "peche"
-    ],
-    "zone": "ouest"
-  },
-  {
-    "id": "fishing-whisperer-black-river",
-    "name": "Fishing whisperer Black River",
-    "category": "activites",
-    "address": "J9PC+RHM La morne anglers club, Grande Riviere Noire",
-    "phone": "",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=1150119544133235051&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.3629097,
-    "lng": 57.3714363,
     "themes": [
       "peche"
     ],
@@ -21670,7 +21668,10 @@
     "themes": [
       "peche"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Pionnier de la pêche à Maurice depuis 1975 ; pêche au gros, jigging et popping. Exploite aussi 3 catamarans (Madiana 1/2/3), vedettes rapides, baignade avec dauphins et observation des baleines (juin-sept).",
+    "entryPrice": "À partir de 16 500 Rs (pêche au gros)",
+    "priceRange": "prix-moyen"
   },
   {
     "id": "green-ocean-mauritius",
@@ -21712,9 +21713,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=17834554261568132427&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.1220799,
     "lng": 57.5314056,
-    "themes": [
-      "peche"
-    ],
+    "themes": [],
     "zone": "nord"
   },
   {
@@ -21745,7 +21744,8 @@
     "themes": [
       "peche"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Pêche au gros en haute mer à bord de bateaux de 38 ou 47 pieds, en activité depuis 2003 ; marlin bleu/noir/rayé (jusqu'à 500 lbs), thon jaune/dents de chien, wahoo, dorade, barracuda."
   },
   {
     "id": "big-game-fishing-mauritius",
@@ -21760,22 +21760,8 @@
     "themes": [
       "peche"
     ],
-    "zone": "ouest"
-  },
-  {
-    "id": "vacances-aventures",
-    "name": "Vacances Aventures",
-    "category": "activites",
-    "address": "La Tourelle view, Coastal Rd coastal Rd MU, Black River 00000",
-    "phone": "+230 5734 7760",
-    "website": "http://www.vacancesaventures.com/",
-    "googleMapsUrl": "https://maps.google.com/?cid=835078444010222545&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.3466865,
-    "lng": 57.3645751,
-    "themes": [
-      "peche"
-    ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Pêche au gros à bord du \"Magic Hooker\" (47 pieds), ainsi que popping et jigging ; marlin bleu/noir, thon, requin, dorade, wahoo. Dirigé par Ivan Charoux."
   },
   {
     "id": "whales-watching-swim-with-dolphins-fishing-in-mauritius",
@@ -21895,7 +21881,11 @@
     "themes": [
       "peche"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Pêche côtière et hauturière ciblant marlin, thon, dorade ; observation de baleines (cachalots toute l'année, mégaptères sept-oct). Plusieurs bateaux/formules (Tamarin, Trou-aux-Biches, Albion).",
+    "duration": "4h à 9h30 selon formule",
+    "entryPrice": "À partir de 45 000 MUR (formule la plus courte/petit bateau)",
+    "priceRange": "se-faire-plaisir"
   },
   {
     "id": "the-wan-fishing-shop",
@@ -21997,9 +21987,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=3489459327634240155&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.1865286,
     "lng": 57.4859522,
-    "themes": [
-      "peche"
-    ],
+    "themes": [],
     "zone": "centre"
   },
   {
@@ -24584,7 +24572,8 @@
     "themes": [
       "peche"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Pêche au gros ciblant marlin et dorade ; flotte de yachts 55 pieds (côtes nord et ouest) avec 2 cabines, salon, pont supérieur ~8 places. Propose aussi vedettes rapides, croisières catamaran, location de yacht de luxe."
   },
   {
     "id": "robert-edward-hart-memorial-museum",
@@ -27159,7 +27148,9 @@
     "themes": [
       "peche"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Bateau récemment restauré, jusqu'à 9 pêcheurs, système d'ancrage, fighting chair, outriggers, flybridge ; marlin bleu/noir, voilier, dorade, thon jaune, thon dents de chien, barracuda, bonite.",
+    "duration": "Journée complète (8-9h)"
   },
   {
     "id": "izumi-fishing-and-outdoor-equipment-trou-aux-biches",
@@ -27204,7 +27195,8 @@
     "themes": [
       "peche"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Sportfisher 30 pieds Northern Boat Works, bimoteur Yamaha 80HP, outriggers, downriggers, viviers à thon, fighting chair, jusqu'à 8 invités ; capitaine avec 19 ans d'expérience, spécialiste pêche au gros."
   },
   {
     "id": "pyramide-fishing-boat",
@@ -27219,7 +27211,8 @@
     "themes": [
       "peche"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Bateau restauré Pro 2000 26 pieds, bimoteur Suzuki 90HP, jusqu'à 4 invités ; skippers Mike et Hansley Seblin ; marlin, thon, espadon, wahoo, carangue. Équipement, permis et collations inclus."
   },
   {
     "id": "belle-mare-ruins",
