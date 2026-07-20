@@ -607,27 +607,21 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                             : undefined
                         }
                       >
-                        <div className="shrink-0 w-[76px] h-[76px] rounded-xl overflow-hidden bg-surface-2 relative">
-                          {b.photoUrl ? (
-                            <>
-                              <img
-                                src={b.photoUrl}
-                                alt={displayName(b.name)}
-                                loading="lazy"
-                                className="w-full h-full object-cover"
-                              />
-                              {b.photoCredit && (
-                                <span className="absolute bottom-0.5 right-0.5 px-1 py-0.5 rounded text-[8px] leading-none text-white/90 bg-black/40">
-                                  {b.photoCredit}
-                                </span>
-                              )}
-                            </>
-                          ) : (
-                            <div className="w-full h-full flex items-center justify-center text-[10px] text-muted">
-                              photo
-                            </div>
-                          )}
-                        </div>
+                        {b.photoUrl && (
+                          <div className="shrink-0 w-[76px] h-[76px] rounded-xl overflow-hidden bg-surface-2 relative">
+                            <img
+                              src={b.photoUrl}
+                              alt={displayName(b.name)}
+                              loading="lazy"
+                              className="w-full h-full object-cover"
+                            />
+                            {b.photoCredit && (
+                              <span className="absolute bottom-0.5 right-0.5 px-1 py-0.5 rounded text-[8px] leading-none text-white/90 bg-black/40">
+                                {b.photoCredit}
+                              </span>
+                            )}
+                          </div>
+                        )}
                         <div className="flex-1 min-w-0 flex flex-col gap-2">
                           <div className="flex flex-wrap items-center gap-1.5">
                             <span

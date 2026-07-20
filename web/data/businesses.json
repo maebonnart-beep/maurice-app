@@ -31732,5 +31732,2281 @@
     ],
     "description": "Glaces artisanales 100% naturelles, faites maison, sans conservateurs, options vegan et sans gluten, saveurs locales.",
     "zone": "nord"
+  },
+  {
+    "id": "mont-choisy-leisure-wellness-centre",
+    "name": "Mont Choisy Leisure & Wellness Centre",
+    "category": "activites",
+    "address": "XHH6+633, Grand Baie",
+    "googleMapsUrl": "https://maps.google.com/?cid=1597153650522642492&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.0222055,
+    "lng": 57.5603407,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "nord"
+  },
+  {
+    "id": "pointe-aux-canonniers-muaythai-sport-club",
+    "name": "Pointe aux canonniers Muaythai sport club",
+    "category": "activites",
+    "address": "Casse Ghoon Road, XHR6+RW6, Grand Baie",
+    "googleMapsUrl": "https://maps.google.com/?cid=8595518350910636716&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.0079541,
+    "lng": 57.5622724,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "nord"
+  },
+  {
+    "id": "cana-padel-sports-and-social-club",
+    "name": "Caña Padel - Sports and Social Club",
+    "category": "activites",
+    "address": "MU, Mon Rocher, 21012",
+    "phone": "+230 245 8909",
+    "website": "https://www.monrocher.mu/cana-padel-sports-and-social-club/",
+    "googleMapsUrl": "https://maps.google.com/?cid=11603483659055037852&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.0951958,
+    "lng": 57.5866028,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "nord"
+  },
+  {
+    "id": "cue-club-snooker-pool",
+    "name": "Cue Club (Snooker & Pool)",
+    "category": "activites",
+    "address": "MU, Arcade Dabee, Coastal Road, Grand Baie 30550",
+    "phone": "+230 5858 0082",
+    "googleMapsUrl": "https://maps.google.com/?cid=12185135718223987325&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.0150542,
+    "lng": 57.5823732,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "nord"
+  },
+  {
+    "id": "tennis-nord",
+    "name": "Tennis Nord",
+    "category": "activites",
+    "address": "WJH7+PV9, Mapou",
+    "phone": "+230 266 8782",
+    "googleMapsUrl": "https://maps.google.com/?cid=7189533234546859868&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.0707036,
+    "lng": 57.6147407,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "nord"
+  },
+  {
+    "id": "dharel-barbell-gym",
+    "name": "Dharel Barbell Gym",
+    "category": "activites",
+    "address": "XHJM+7GH, Chem. Vingt Pieds, Grand Baie",
+    "googleMapsUrl": "https://maps.google.com/?cid=13572649724550316341&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.0193037,
+    "lng": 57.5838593,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "nord"
+  },
+  {
+    "id": "studio-bodytech-grand-bay",
+    "name": "Studio Bodytech Grand Bay",
+    "category": "activites",
+    "address": "XHJP+RFQ, Vingt Pieds Rd, Grand Baie",
+    "phone": "+230 5253 2870",
+    "googleMapsUrl": "https://maps.google.com/?cid=6549174084059257792&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.0179148,
+    "lng": 57.5862228,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "nord"
+  },
+  {
+    "id": "xfit-gym",
+    "name": "XFit GYM",
+    "category": "activites",
+    "address": "WHPJ+5V6, Middle Rd, Plaine Des Papayes",
+    "phone": "+230 5908 5411",
+    "googleMapsUrl": "https://maps.google.com/?cid=5910460268292599453&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.0645851,
+    "lng": 57.5821553,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "nord"
+  },
+  {
+    "id": "elysian-fitness",
+    "name": "Elysian Fitness",
+    "category": "activites",
+    "address": "Choisy Les Bains Mon Choisy MU, Trou-aux-Biches 30525",
+    "phone": "+230 5949 4218",
+    "website": "https://www.facebook.com/ElysianFitnessWorld/about/?ref=page_internal",
+    "googleMapsUrl": "https://maps.google.com/?cid=17115124507020944308&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.0232289,
+    "lng": 57.5566173,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "nord"
+  },
+  {
+    "id": "padelshop-mu",
+    "name": "PadelShop.mu",
+    "category": "activites",
+    "address": "MU, Chem. Vingt Pieds, Grand Baie 20000",
+    "phone": "+230 5503 0590",
+    "website": "https://www.padelshop.mu/",
+    "googleMapsUrl": "https://maps.google.com/?cid=10240021483689727918&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.010903,
+    "lng": 57.5982364,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "nord"
+  },
+  {
+    "id": "ace-tennis-mauritius-gblc",
+    "name": "Ace Tennis Mauritius GBLC",
+    "category": "activites",
+    "address": "MU, La Croisette, Grand Baie 30517",
+    "phone": "+230 269 4200",
+    "website": "https://www.tennismauritius.com/",
+    "googleMapsUrl": "https://maps.google.com/?cid=1587058432557542913&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.0219872,
+    "lng": 57.5774742,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "nord"
+  },
+  {
+    "id": "ennoia-tennis-courts",
+    "name": "Ennoia Tennis Courts",
+    "category": "activites",
+    "address": "MU, La Croisette, Grand Baie 30517",
+    "phone": "+230 269 4200",
+    "website": "https://www.ennoia.club/",
+    "googleMapsUrl": "https://maps.google.com/?cid=17405753524851891859&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.0219229,
+    "lng": 57.5774793,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "nord"
+  },
+  {
+    "id": "footprints-beach-tennis",
+    "name": "Footprints Beach Tennis",
+    "category": "activites",
+    "address": "Chem. Vingt Pieds, Grand Baie",
+    "phone": "+230 5930 1364",
+    "googleMapsUrl": "https://maps.google.com/?cid=10103312339111540982&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -19.9983104,
+    "lng": 57.6157411,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "nord"
+  },
+  {
+    "id": "mauritius-tennis-academy-mta-cottage",
+    "name": "Mauritius Tennis Academy (MTA) Cottage",
+    "category": "activites",
+    "address": "Club d'equitation du nord, Mauritius tennis Academy Cottage MU, 30204",
+    "phone": "+230 5746 3006",
+    "googleMapsUrl": "https://maps.google.com/?cid=13897457512448212083&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.0812807,
+    "lng": 57.6716283,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "nord"
+  },
+  {
+    "id": "ghurburun-football-stadium",
+    "name": "Ghurburun Football Stadium",
+    "category": "activites",
+    "address": "WHV2+73G, Triolet",
+    "googleMapsUrl": "https://maps.google.com/?cid=17899171068309143715&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.0568081,
+    "lng": 57.5501955,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "nord"
+  },
+  {
+    "id": "switch-fitness",
+    "name": "Switch Fitness",
+    "category": "activites",
+    "address": "Ave des Lauriers roses, Tamarin",
+    "phone": "+230 5256 4044",
+    "googleMapsUrl": "https://maps.google.com/?cid=9227471117035496178&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.3391513,
+    "lng": 57.3704747,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "ouest"
+  },
+  {
+    "id": "retroflex-gym",
+    "name": "Retroflex Gym",
+    "category": "activites",
+    "address": "PCQ7+V3R, Allee Tamarin Rd, Bambous",
+    "phone": "+230 5834 9549",
+    "website": "https://www.facebook.com/RetroFlexGym",
+    "googleMapsUrl": "https://maps.google.com/?cid=13843180075057083878&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.2602593,
+    "lng": 57.4126377,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "ouest"
+  },
+  {
+    "id": "planet-gym",
+    "name": "Planet Gym",
+    "category": "activites",
+    "address": "Geoffroy Road, Bambous",
+    "phone": "+230 5744 0022",
+    "website": "https://www.planetgymbambous.com/",
+    "googleMapsUrl": "https://maps.google.com/?cid=6654728515184039430&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.2614898,
+    "lng": 57.417212,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "ouest"
+  },
+  {
+    "id": "ifd-ajl-maurice",
+    "name": "IFD AJL Maurice",
+    "category": "activites",
+    "address": "Allee Tamarin Rd, Bambous",
+    "phone": "+230 5781 4227",
+    "googleMapsUrl": "https://maps.google.com/?cid=17610310634657360379&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.258873,
+    "lng": 57.4086272,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "ouest"
+  },
+  {
+    "id": "amelia-s-gymnasts",
+    "name": "Amelia's Gymnasts",
+    "category": "activites",
+    "address": "Riverland Sports Club Tamarin MU, Les Barachoir Estate A3, Tamarin 90921",
+    "phone": "+230 5989 1644",
+    "website": "https://www.facebook.com/ameliasgymnasts.mu",
+    "googleMapsUrl": "https://maps.google.com/?cid=17195902284086215338&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.329772,
+    "lng": 57.3807979,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "ouest"
+  },
+  {
+    "id": "goflex-gym",
+    "name": "GoFlex Gym",
+    "category": "activites",
+    "address": "1st Floor, Le Windsor Complex (Jumbo Express, Route Royal, Beau Bassin-Rose Hill",
+    "phone": "+230 5824 2700",
+    "website": "https://www.facebook.com/GoFlex-Gym-1456934337741566/",
+    "googleMapsUrl": "https://maps.google.com/?cid=7748967604243145522&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.2337284,
+    "lng": 57.4704161,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "fighting-fit-fitness-training-and-nutrition",
+    "name": "Fighting Fit : Fitness Training and Nutrition",
+    "category": "activites",
+    "address": "MU, unit A3, La Balise Business Park, Black River 90601",
+    "phone": "+230 5825 5605",
+    "website": "https://mauritius.fightingfit.studio/",
+    "googleMapsUrl": "https://maps.google.com/?cid=10250621792471720922&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.3665099,
+    "lng": 57.3793781,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "ouest"
+  },
+  {
+    "id": "ragnarok-gym-fitness-centre",
+    "name": "Ragnarok Gym & Fitness Centre",
+    "category": "activites",
+    "address": "St Pierre",
+    "phone": "+230 432 1265",
+    "googleMapsUrl": "https://maps.google.com/?cid=8933631589604594711&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.2249411,
+    "lng": 57.5411825,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "flex-fitness-gym",
+    "name": "Flex & Fitness Gym",
+    "category": "activites",
+    "address": "MU, VG6F+2RH, Terre Rouge 21416",
+    "phone": "+230 5948 0024",
+    "googleMapsUrl": "https://maps.google.com/?cid=16474375811631120594&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.1399475,
+    "lng": 57.5246059,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "fitbox-international",
+    "name": "Fitbox International",
+    "category": "activites",
+    "address": "MU, Ave des Capitaines, Flic en Flac 90506",
+    "phone": "+230 5832 2072",
+    "website": "https://www.fitboxinternational.com/",
+    "googleMapsUrl": "https://maps.google.com/?cid=10480347625041001516&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.2753889,
+    "lng": 57.3767649,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "ouest"
+  },
+  {
+    "id": "gymlife",
+    "name": "GymLife",
+    "category": "activites",
+    "address": "Ebene Commercial Centre, QF4Q+G9J, Ebene 72201",
+    "phone": "+230 5930 3373",
+    "googleMapsUrl": "https://maps.google.com/?cid=6872464833312130861&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.2436678,
+    "lng": 57.4883808,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "bodyfit-gym",
+    "name": "Bodyfit Gym",
+    "category": "activites",
+    "address": "PFJG+39H Indian Ocean, Quatre Bornes",
+    "phone": "+230 5708 3388",
+    "googleMapsUrl": "https://maps.google.com/?cid=6757441988221670153&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.2698151,
+    "lng": 57.4759898,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "bravo-fitness-club",
+    "name": "Bravo fitness club",
+    "category": "activites",
+    "address": "XJ7X+4P8, Goodlands",
+    "phone": "+230 5791 5461",
+    "googleMapsUrl": "https://maps.google.com/?cid=6357252020144446811&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.0372146,
+    "lng": 57.6493262,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "nord"
+  },
+  {
+    "id": "kwick-fitness-gym",
+    "name": "Kwick Fitness Gym",
+    "category": "activites",
+    "address": "Royal Road, Montagne Blanche",
+    "phone": "+230 5252 4709 ext. 57633427",
+    "googleMapsUrl": "https://maps.google.com/?cid=17396602463879791649&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.285585,
+    "lng": 57.6617428,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "est"
+  },
+  {
+    "id": "warriors-fitness-gym",
+    "name": "WARRIORS FITNESS GYM",
+    "category": "activites",
+    "address": "A 10, Vacoas-Phoenix",
+    "phone": "+230 5255 5619",
+    "website": "https://m.facebook.com/WarriorsFitnessGYMMauritius/",
+    "googleMapsUrl": "https://maps.google.com/?cid=3194278503044417369&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.2920207,
+    "lng": 57.5158883,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "dan-jay-fitness-center",
+    "name": "Dan & Jay Fitness Center",
+    "category": "activites",
+    "address": "XH4P+MM8, Fond du Sac",
+    "phone": "+230 5913 7595",
+    "googleMapsUrl": "https://maps.google.com/?cid=16060899995785100689&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.0433416,
+    "lng": 57.5867058,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "nord"
+  },
+  {
+    "id": "ennoia-fitness-club",
+    "name": "Ennoia Fitness Club",
+    "category": "activites",
+    "address": "MU, 1st Floor, 1 Exchange Square, Wall St, Ebene 72201",
+    "phone": "+230 468 6787",
+    "website": "https://www.ennoia.club/",
+    "googleMapsUrl": "https://maps.google.com/?cid=12604469998197501792&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.2478975,
+    "lng": 57.4924028,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "dynamic-gymnastics-mauritius",
+    "name": "Dynamic Gymnastics Mauritius",
+    "category": "activites",
+    "address": "Bambous Geoffroy Bambous, Bambous",
+    "phone": "+230 5790 7879",
+    "googleMapsUrl": "https://maps.google.com/?cid=16654903573095046403&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.2709696,
+    "lng": 57.4191839,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "ouest"
+  },
+  {
+    "id": "synergy-sport-and-wellness-institute",
+    "name": "Synergy Sport and Wellness Institute",
+    "category": "activites",
+    "address": "Les Allées d'Helvétia, QGFG+G5, Moka",
+    "phone": "+230 433 8666",
+    "website": "http://www.synergy.mu/",
+    "googleMapsUrl": "https://maps.google.com/?cid=6711794676262354758&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.2262417,
+    "lng": 57.5254172,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "smart-combat-brazilian-jiu-jitsu-tamarin-mauritius",
+    "name": "SMART COMBAT - Brazilian Jiu Jitsu Tamarin (Mauritius)",
+    "category": "activites",
+    "address": "Morcelement Desjardins, 76 Av. des Marlins, Tamarin",
+    "phone": "+230 5763 7061",
+    "website": "https://www.instagram.com/brazilian_jiu_jitsu_tamarin/",
+    "googleMapsUrl": "https://maps.google.com/?cid=4128198479692187330&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.3385294,
+    "lng": 57.372919,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "ouest"
+  },
+  {
+    "id": "gym-24-7",
+    "name": "Gym 24/7",
+    "category": "activites",
+    "address": "RFMR+7V4, Rue Mgr Leen, Port Louis",
+    "phone": "+230 211 7536",
+    "googleMapsUrl": "https://maps.google.com/?cid=7896528274589960429&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.1668743,
+    "lng": 57.4922041,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "lo-bosco-pole-studio",
+    "name": "Lo Bosco Pole Studio",
+    "category": "activites",
+    "address": "Les Gorges Road",
+    "phone": "+230 5904 4702",
+    "website": "https://bookwhen.com/poledancemauritius#focus=ev-sg8z-20221124170000",
+    "googleMapsUrl": "https://maps.google.com/?cid=16013339202052815652&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.3642082,
+    "lng": 57.3805483,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "ouest"
+  },
+  {
+    "id": "space-fitness-beau-bassin",
+    "name": "Space Fitness Beau Bassin",
+    "category": "activites",
+    "address": "Boulevard Cowin, Beau Bassin-Rose Hill",
+    "phone": "+230 5443 3300",
+    "googleMapsUrl": "https://maps.google.com/?cid=105353045214709894&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.2309585,
+    "lng": 57.4734111,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "life-fitness",
+    "name": "Life Fitness",
+    "category": "activites",
+    "address": "RP8F+36W, Avenue François Mitterand, Central Flacq",
+    "phone": "+230 413 4144",
+    "website": "http://www.facebook.com/lfmru",
+    "googleMapsUrl": "https://maps.google.com/?cid=920440976447792085&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.1847611,
+    "lng": 57.7230763,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "est"
+  },
+  {
+    "id": "gym-25",
+    "name": "GYM 25",
+    "category": "activites",
+    "address": "A10 Royal Road, New Grove",
+    "phone": "+230 627 1212",
+    "googleMapsUrl": "https://maps.google.com/?cid=12522067883552510785&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.4124208,
+    "lng": 57.6191508,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "sud"
+  },
+  {
+    "id": "venom-gym",
+    "name": "VENOM GYM",
+    "category": "activites",
+    "address": "Royal road Av. d'Helvétia, Moka",
+    "phone": "+230 5927 3970",
+    "googleMapsUrl": "https://maps.google.com/?cid=8931220260988322149&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.224096,
+    "lng": 57.5268711,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "marshalls-fitness-club",
+    "name": "Marshalls Fitness Club",
+    "category": "activites",
+    "address": "PGF2+P8Q, Valentina Road, Vacoas-Phœnix",
+    "phone": "+230 5912 6427",
+    "googleMapsUrl": "https://maps.google.com/?cid=17008830642037910104&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.2756662,
+    "lng": 57.5008555,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "perfect-shape-fitness-club",
+    "name": "Perfect Shape Fitness Club",
+    "category": "activites",
+    "address": "lamairee street, Vacoas-Phoenix",
+    "phone": "+230 5772 2945",
+    "googleMapsUrl": "https://maps.google.com/?cid=17837254082140545781&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.3024765,
+    "lng": 57.5183137,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "flexellence-thezengen",
+    "name": "Flexellence_TheZenGen",
+    "category": "activites",
+    "address": "MU, Lavenir, St Pierre 80829",
+    "phone": "+230 5507 5315",
+    "googleMapsUrl": "https://maps.google.com/?cid=12530174010166665790&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.2195851,
+    "lng": 57.5472586,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "best-physique-gym",
+    "name": "Best Physique Gym",
+    "category": "activites",
+    "address": "MFPP+R92, Nanapragassen Rd, Vacoas-Phoenix",
+    "phone": "+230 5938 0119",
+    "googleMapsUrl": "https://maps.google.com/?cid=8646251983784931672&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.3129837,
+    "lng": 57.4858775,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "neezfitness-ladies-gym-neezfit-female-club",
+    "name": "Neezfitness Ladies gym/neezfit female club",
+    "category": "activites",
+    "address": "5/405 SSR Street, Sir William Newton St, Port Louis",
+    "phone": "+230 5773 3809",
+    "googleMapsUrl": "https://maps.google.com/?cid=5611063793051480641&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.1638639,
+    "lng": 57.5047216,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "eastern-fitness-centre",
+    "name": "Eastern Fitness Centre",
+    "category": "activites",
+    "address": "RMWX+RWH, Grand Retraite",
+    "googleMapsUrl": "https://maps.google.com/?cid=4186438031381959026&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.1529451,
+    "lng": 57.6998492,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "est"
+  },
+  {
+    "id": "gino-x-max",
+    "name": "Gino x Max",
+    "category": "activites",
+    "address": "M96G+V2P Jacaranda des, Av. des Jacarandas, Tamarin",
+    "phone": "+230 5428 9501",
+    "googleMapsUrl": "https://maps.google.com/?cid=12455791884702898423&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.3377911,
+    "lng": 57.3750805,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "ouest"
+  },
+  {
+    "id": "reaper-crew-gym",
+    "name": "Reaper Crew Gym",
+    "category": "activites",
+    "address": "MGX9+287 Lamairee, Curepipe",
+    "phone": "+230 5772 2945",
+    "googleMapsUrl": "https://maps.google.com/?cid=654760150453718794&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.3024635,
+    "lng": 57.518308,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "fagiani-cross-centre",
+    "name": "Fagiani Cross centre",
+    "category": "activites",
+    "address": "Yusuf Ali Hall, Khadafi Square, 49 Madad ul Islam St, Port Louis",
+    "phone": "+230 5811 1558",
+    "website": "http://gym.fagianibiorganic.com/",
+    "googleMapsUrl": "https://maps.google.com/?cid=6774199662859502451&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.158329,
+    "lng": 57.511485,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "vassen-barbell-gym-riviere-des-anguilles",
+    "name": "Vassen barbell Gym Riviere Des Anguilles",
+    "category": "activites",
+    "address": "Contour Perrault, Riviere des Anguilles",
+    "phone": "+230 5794 6130",
+    "website": "https://www.facebook.com/747521215303026",
+    "googleMapsUrl": "https://maps.google.com/?cid=1540795248704687746&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.4865468,
+    "lng": 57.5578813,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "sud"
+  },
+  {
+    "id": "mind-to-body-pilates-studio",
+    "name": "Mind to Body Pilates Studio",
+    "category": "activites",
+    "address": "1st Floor, Riverview Commercial Centre",
+    "phone": "+230 5727 0441",
+    "googleMapsUrl": "https://maps.google.com/?cid=6600430017926109185&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.3641908,
+    "lng": 57.3808745,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "ouest"
+  },
+  {
+    "id": "hybrid-workout-fitness-studio",
+    "name": "Hybrid Workout Fitness Studio",
+    "category": "activites",
+    "address": "RGJ7+VXV, Port Louis",
+    "website": "https://www.facebook.com/profile.php?id=61568413873242",
+    "googleMapsUrl": "https://maps.google.com/?cid=8991879076699272954&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.1677656,
+    "lng": 57.5149271,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "arena-gym",
+    "name": "Arena Gym",
+    "category": "activites",
+    "address": "RGM9+J8F, Port Louis",
+    "phone": "+230 5764 6503",
+    "googleMapsUrl": "https://maps.google.com/?cid=9486435734383322789&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.1659302,
+    "lng": 57.518289,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "la-laura-village-hall-and-gym",
+    "name": "La-laura Village Hall And Gym",
+    "category": "activites",
+    "address": "QHW2+MRJ, La Laura-Malenga",
+    "googleMapsUrl": "https://maps.google.com/?cid=18035073056113654815&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.2032779,
+    "lng": 57.5520043,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "salt-yoga-bounce",
+    "name": "SALT Yoga & Bounce",
+    "category": "activites",
+    "address": "Cap Dal, Tamarin",
+    "phone": "+230 5475 2134",
+    "googleMapsUrl": "https://maps.google.com/?cid=6784963217666731966&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.3302264,
+    "lng": 57.3783003,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "ouest"
+  },
+  {
+    "id": "hilo-functional-training-moka",
+    "name": "Hilo Functional Training Moka",
+    "category": "activites",
+    "address": "Industrial Zone, St Pierre",
+    "googleMapsUrl": "https://maps.google.com/?cid=12688230538732829159&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.2288136,
+    "lng": 57.5391957,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "vanilla-connect",
+    "name": "Vanilla Connect",
+    "category": "activites",
+    "address": "Grande Riviere Noire",
+    "googleMapsUrl": "https://maps.google.com/?cid=4727205224147236036&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.3691814,
+    "lng": 57.3799888,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "ouest"
+  },
+  {
+    "id": "padel-port-chambly",
+    "name": "Padel Port Chambly",
+    "category": "activites",
+    "address": "VGQF+6G3, Coastal Rd, Port Chambly",
+    "googleMapsUrl": "https://maps.google.com/?cid=13021374786715069729&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.111975,
+    "lng": 57.523808,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "nord"
+  },
+  {
+    "id": "petit-camp-tennis-club",
+    "name": "Petit Camp Tennis Club",
+    "category": "activites",
+    "address": "PFHX+WM3, Petit Camp Branch Road, Quatre Bornes",
+    "phone": "+230 5755 3320",
+    "googleMapsUrl": "https://maps.google.com/?cid=17293138212134435514&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.2702369,
+    "lng": 57.4991607,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "fairplay-tennis-club",
+    "name": "Fairplay Tennis Club",
+    "category": "activites",
+    "address": "WG8V+64P, Triolet",
+    "phone": "+230 5757 7484",
+    "website": "http://www.fairplaytennisclub.com/",
+    "googleMapsUrl": "https://maps.google.com/?cid=1209084505834508224&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.0844047,
+    "lng": 57.5428355,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "nord"
+  },
+  {
+    "id": "port-louis-tennis-club",
+    "name": "Port louis tennis club",
+    "category": "activites",
+    "address": "Champ de Mars, Port Louis",
+    "googleMapsUrl": "https://maps.google.com/?cid=6886688692465006961&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.1685222,
+    "lng": 57.5099513,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "national-tennis-centre",
+    "name": "National Tennis Centre",
+    "category": "activites",
+    "address": "Petit Camp Branch Road, Quatre Bornes",
+    "phone": "+230 686 3214",
+    "googleMapsUrl": "https://maps.google.com/?cid=10958491318589970192&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.2687556,
+    "lng": 57.4980792,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "advantage-tennis",
+    "name": "Advantage Tennis",
+    "category": "activites",
+    "address": "Captain Bruce St, Beau Bassin-Rose Hill",
+    "phone": "+230 5764 1553",
+    "googleMapsUrl": "https://maps.google.com/?cid=5420988983849940916&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.2411975,
+    "lng": 57.4676937,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "football-field",
+    "name": "Football field",
+    "category": "activites",
+    "address": "1 Impass Dorades Morcellement Anna, Eglise St. Anna, Flic en Flac",
+    "googleMapsUrl": "https://maps.google.com/?cid=4018264653354040579&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.277645,
+    "lng": 57.368447,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "ouest"
+  },
+  {
+    "id": "born-to-kite",
+    "name": "Born To Kite",
+    "category": "activites",
+    "address": "Beachfront Kitelagoon, Le Morne",
+    "phone": "+230 5487 9629",
+    "googleMapsUrl": "https://maps.google.com/?cid=16583647237779172102&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.4638821,
+    "lng": 57.3181116,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "ouest"
+  },
+  {
+    "id": "ion-club-dinarobin",
+    "name": "ION CLUB Dinarobin",
+    "category": "activites",
+    "address": "G8X7+JHR, Le Morne",
+    "phone": "+230 5734 4667",
+    "website": "https://www.ion-club.net/le-morne/",
+    "googleMapsUrl": "https://maps.google.com/?cid=1081290530037603553&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.4509375,
+    "lng": 57.3139375,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "ouest"
+  },
+  {
+    "id": "ion-club-shop",
+    "name": "ION CLUB Shop",
+    "category": "activites",
+    "address": "H973+8H, La Gaulette",
+    "phone": "+230 5734 4667",
+    "website": "https://www.ion-club.net/fr/le-morne/",
+    "googleMapsUrl": "https://maps.google.com/?cid=597514902063707502&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.4366591,
+    "lng": 57.353889,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "ouest"
+  },
+  {
+    "id": "terry-s-kiteboarding-school",
+    "name": "Terry’s Kiteboarding School",
+    "category": "activites",
+    "address": "Unnamed Road, Le Morne",
+    "phone": "+230 5721 5661",
+    "googleMapsUrl": "https://maps.google.com/?cid=12860078231315447792&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.4653094,
+    "lng": 57.3176372,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "ouest"
+  },
+  {
+    "id": "heritage-fitness-gym",
+    "name": "Heritage fitness gym",
+    "category": "activites",
+    "address": "H9C6+XQC, La Gaulette",
+    "phone": "+230 5947 8639",
+    "website": "http://heritage.fitness/",
+    "googleMapsUrl": "https://maps.google.com/?cid=11633352845039677535&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.4275629,
+    "lng": 57.36188,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "ouest"
+  },
+  {
+    "id": "gym-shanti-maurice",
+    "name": "Gym Shanti Maurice",
+    "category": "activites",
+    "address": "FFQC+4C, Chemin Grenier",
+    "googleMapsUrl": "https://maps.google.com/?cid=16087939692682845626&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.5121591,
+    "lng": 57.4710284,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "sud"
+  },
+  {
+    "id": "seerouven-muscle-fitness-gym",
+    "name": "Seerouven Muscle & Fitness Gym",
+    "category": "activites",
+    "address": "Henrietta Branch Rd, Vacoas-Phoenix",
+    "phone": "+230 5946 0405",
+    "googleMapsUrl": "https://maps.google.com/?cid=10900968811928205903&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.3277889,
+    "lng": 57.478148,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "peak-performance-gym",
+    "name": "Peak Performance Gym",
+    "category": "activites",
+    "address": "B10 Chemin Grenier Road, Chemin Grenier",
+    "googleMapsUrl": "https://maps.google.com/?cid=978600218245025581&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.4934673,
+    "lng": 57.4759436,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "sud"
+  },
+  {
+    "id": "muscles-and-curves-fitness-hub",
+    "name": "Muscles and Curves Fitness Hub",
+    "category": "activites",
+    "address": "Royal Rd, Morcellement St Andre",
+    "phone": "+230 5734 9550",
+    "googleMapsUrl": "https://maps.google.com/?cid=11109280285464129824&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.0711474,
+    "lng": 57.5675566,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "nord"
+  },
+  {
+    "id": "team-bad-muay-thai-fitness-gym",
+    "name": "Team Bad Muay Thai & Fitness Gym",
+    "category": "activites",
+    "address": "Royal Road, Petite Riviere",
+    "phone": "+230 5500 8342",
+    "googleMapsUrl": "https://maps.google.com/?cid=7409692667757750572&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.1965064,
+    "lng": 57.4461066,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "mogym-fitness-ltd",
+    "name": "MoGym Fitness Ltd",
+    "category": "activites",
+    "address": "HM96+8JR, Rishi Dayanand Rd, Plaine Magnien",
+    "website": "http://www.mogym.mu/",
+    "googleMapsUrl": "https://maps.google.com/?cid=15509694476946373819&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.4316298,
+    "lng": 57.6615014,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "sud"
+  },
+  {
+    "id": "harder-barbell-gym",
+    "name": "Harder Barbell Gym",
+    "category": "activites",
+    "address": "MGGG+726, Chadwick St, Curepipe",
+    "phone": "+230 5910 2024",
+    "website": "https://www.facebook.com/Harder.Barbell.Gym/",
+    "googleMapsUrl": "https://maps.google.com/?cid=7986478143710707912&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.3243304,
+    "lng": 57.5250094,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "my-universe-gym-fitness",
+    "name": "My Universe Gym & Fitness",
+    "category": "activites",
+    "address": "A8, Quatre Bornes",
+    "phone": "+230 463 8209",
+    "website": "https://www.facebook.com/My-Universe-Gym-Fitness-109000991798482/",
+    "googleMapsUrl": "https://maps.google.com/?cid=18028581216223898483&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.2672786,
+    "lng": 57.4787507,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "le-telfair-gym",
+    "name": "Le Telfair gym",
+    "category": "activites",
+    "address": "FCV6+95R, Bel Ombre",
+    "googleMapsUrl": "https://maps.google.com/?cid=6181299661773948136&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.5061945,
+    "lng": 57.4113187,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "sud"
+  },
+  {
+    "id": "the-gym-hub",
+    "name": "THE GYM HUB",
+    "category": "activites",
+    "address": "MGWC+MRG, A 10, Curepipe",
+    "phone": "+230 5771 0108",
+    "website": "https://www.facebook.com/The-Gym-Hub-270994243521454",
+    "googleMapsUrl": "https://maps.google.com/?cid=15890938473812721196&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.303301,
+    "lng": 57.5220801,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "athletic-fitness-club",
+    "name": "Athletic Fitness Club",
+    "category": "activites",
+    "address": "MGV4+5W6 Business Center, Vacoas-Phoenix",
+    "phone": "+230 5925 0592",
+    "googleMapsUrl": "https://maps.google.com/?cid=12410337736409026152&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.3070952,
+    "lng": 57.5072884,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "infinity-fitness-gym",
+    "name": "INFINITY Fitness Gym",
+    "category": "activites",
+    "address": "QF75+MP9, Av. de l'Indépendance, Beau Bassin-Rose Hill",
+    "phone": "+230 658 7684",
+    "googleMapsUrl": "https://maps.google.com/?cid=4008616255960636657&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.2358398,
+    "lng": 57.4593467,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "kestrel-gym",
+    "name": "Kestrel Gym",
+    "category": "activites",
+    "address": "25 Sir Celicourt Antelme St, Beau Bassin-Rose Hill",
+    "phone": "+230 463 2034",
+    "website": "http://www.kestrelgym.com/",
+    "googleMapsUrl": "https://maps.google.com/?cid=7564908560719174785&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.2440316,
+    "lng": 57.4673845,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "gymbox-2018",
+    "name": "Gymbox 2018",
+    "category": "activites",
+    "address": "B10 Chemin Grenier Road, Surinam",
+    "phone": "+230 5757 0094",
+    "googleMapsUrl": "https://maps.google.com/?cid=11982236361787863921&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.5102146,
+    "lng": 57.4998891,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "sud"
+  },
+  {
+    "id": "beyond-fitness",
+    "name": "Beyond Fitness",
+    "category": "activites",
+    "address": "A7, Ctre de Flacq",
+    "googleMapsUrl": "https://maps.google.com/?cid=13245812216330387213&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.1984635,
+    "lng": 57.7214096,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "est"
+  },
+  {
+    "id": "outdoor-workout-albion",
+    "name": "Outdoor Workout Albion",
+    "category": "activites",
+    "address": "MU, QCJ2+JP8, Av. des Carpes, Albion 91005",
+    "phone": "+230 5703 0182",
+    "website": "https://outdoorworkoutmauritius.com/",
+    "googleMapsUrl": "https://maps.google.com/?cid=12291882364856954982&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.2183809,
+    "lng": 57.4018803,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "morfoisse-wellness",
+    "name": "Morfoisse Wellness",
+    "category": "activites",
+    "address": "Gopaul, PF8P+4JW, Lalloo Lane, Phoenix",
+    "phone": "+230 428 1618",
+    "website": "http://www.morfoisse-wellness.com/",
+    "googleMapsUrl": "https://maps.google.com/?cid=7681219502520139015&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.2846298,
+    "lng": 57.4865837,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "oxygen-mauritius",
+    "name": "Oxygen Mauritius",
+    "category": "activites",
+    "address": "MU, Azuri, Roches Noires 31201",
+    "phone": "+230 5923 8804",
+    "website": "https://www.oxygenmauritius.com/",
+    "googleMapsUrl": "https://maps.google.com/?cid=9471091141349464243&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.0938472,
+    "lng": 57.7070879,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "est"
+  },
+  {
+    "id": "prit-fitness-co-ltd",
+    "name": "Prit Fitness Co Ltd",
+    "category": "activites",
+    "address": "Royal Road, Chemin Grenier",
+    "phone": "+230 5704 4021",
+    "googleMapsUrl": "https://maps.google.com/?cid=8692367769573772146&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.4967315,
+    "lng": 57.468383,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "sud"
+  },
+  {
+    "id": "myfit-360-riche-terre",
+    "name": "MYFIT 360 Riche Terre",
+    "category": "activites",
+    "address": "Riche Terre Rd, Port Louis",
+    "phone": "+230 249 5955",
+    "website": "http://www.myfit360.mu/",
+    "googleMapsUrl": "https://maps.google.com/?cid=4530231660871579990&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.1286157,
+    "lng": 57.5225258,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "myfit-360-caudan",
+    "name": "MYFIT 360 Caudan",
+    "category": "activites",
+    "address": "1st floor, Caudan Waterfront, Dias Pier Building, Port Louis",
+    "phone": "+230 5250 3360",
+    "website": "https://www.myfit360.mu/les-clubs/caudan",
+    "googleMapsUrl": "https://maps.google.com/?cid=17965670835610839591&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.1616803,
+    "lng": 57.4997677,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "panthers-fc-sub-office",
+    "name": "Panthers FC Sub Office",
+    "category": "activites",
+    "address": "Community Center Road, Chemin Grenier",
+    "phone": "+230 5749 2100",
+    "googleMapsUrl": "https://maps.google.com/?cid=8377577169393560759&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.4855589,
+    "lng": 57.4726565,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "sud"
+  },
+  {
+    "id": "personal-trainer",
+    "name": "Personal trainer",
+    "category": "activites",
+    "address": "Grannum Multipurpose Complex, Vacoas-Phoenix",
+    "phone": "+230 5713 2402",
+    "googleMapsUrl": "https://maps.google.com/?cid=13663692945181381134&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.3012434,
+    "lng": 57.4987274,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "studio-by-rm-azuri",
+    "name": "STUDIO by RM AZURI",
+    "category": "activites",
+    "address": "MU, Azuri Ocean & Golf Village, Roches Noires 31201",
+    "phone": "+230 5988 3058",
+    "website": "https://www.rmclub.mu/",
+    "googleMapsUrl": "https://maps.google.com/?cid=16348814954453861949&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.0991498,
+    "lng": 57.7083372,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "est"
+  },
+  {
+    "id": "les-domes-d-albion",
+    "name": "Les Domes D'Albion",
+    "category": "activites",
+    "address": "Albion Branch Road, Albion",
+    "phone": "+230 5727 0466",
+    "website": "http://www.lesdomesdalbion.com/",
+    "googleMapsUrl": "https://maps.google.com/?cid=15485877050181437202&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.2257964,
+    "lng": 57.4179322,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "popular-fitness-gym",
+    "name": "Popular Fitness Gym",
+    "category": "activites",
+    "address": "9th mille, Triolet",
+    "phone": "+230 5776 9719",
+    "googleMapsUrl": "https://maps.google.com/?cid=7294188778296999752&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.0548314,
+    "lng": 57.5529956,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "nord"
+  },
+  {
+    "id": "fitness-forever",
+    "name": "Fitness Forever",
+    "category": "activites",
+    "address": "Prince of Wales, Triolet",
+    "phone": "+230 5925 9148",
+    "googleMapsUrl": "https://maps.google.com/?cid=7303998370471783505&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.0723343,
+    "lng": 57.548431,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "nord"
+  },
+  {
+    "id": "belle-rose-fitness-centre",
+    "name": "Belle Rose Fitness Centre",
+    "category": "activites",
+    "address": "PFVP+VCF, Quatre Bornes",
+    "phone": "+230 465 9012",
+    "website": "https://www.facebook.com/pages/Belle-Rose-Fitness-Centre/192316834122149",
+    "googleMapsUrl": "https://maps.google.com/?cid=4503683465857267575&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.2553187,
+    "lng": 57.4860411,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "legacy-fitness-gym",
+    "name": "Legacy Fitness Gym",
+    "category": "activites",
+    "address": "Royal Road, Rivière du Rempart",
+    "phone": "+230 5255 8237",
+    "googleMapsUrl": "https://maps.google.com/?cid=1639421227042998950&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.1085088,
+    "lng": 57.6917344,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "est"
+  },
+  {
+    "id": "space-fitness-albion",
+    "name": "Space Fitness Albion",
+    "category": "activites",
+    "address": "Albion",
+    "phone": "+230 5441 3434",
+    "website": "https://www.facebook.com/Space-Fitness-Albion-1096821360413384/",
+    "googleMapsUrl": "https://maps.google.com/?cid=6254420499850939749&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.2251634,
+    "lng": 57.4180437,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "health-and-fitness-gym",
+    "name": "Health And Fitness Gym",
+    "category": "activites",
+    "address": "Domaine du Moulin Goodlands MU, Goodlands 30407",
+    "phone": "+230 283 5250",
+    "googleMapsUrl": "https://maps.google.com/?cid=11240906933922820933&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.0469159,
+    "lng": 57.6527716,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "nord"
+  },
+  {
+    "id": "bodyshaper-gym",
+    "name": "Bodyshaper Gym",
+    "category": "activites",
+    "address": "GH95+33V, Savanne Road, Riviere des Anguilles",
+    "googleMapsUrl": "https://maps.google.com/?cid=1935468649531373506&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.4822573,
+    "lng": 57.5576813,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "sud"
+  },
+  {
+    "id": "oxygen-gym",
+    "name": "OXYGEN GYM",
+    "category": "activites",
+    "address": "XM75+92P, C.E.B Road, Goodlands",
+    "phone": "+230 5250 2672",
+    "googleMapsUrl": "https://maps.google.com/?cid=99772435156009940&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.0365262,
+    "lng": 57.6575676,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "nord"
+  },
+  {
+    "id": "aldo-fortress-fitness-gym",
+    "name": "Aldo Fortress | Fitness Gym",
+    "category": "activites",
+    "address": "2nd Floor Manhattan Mall Lees Street Curepipe MU, Curepipe 74404",
+    "phone": "+230 5485 1966",
+    "website": "http://www.facebook.com/aldofortress",
+    "googleMapsUrl": "https://maps.google.com/?cid=18406416905711141825&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.3195171,
+    "lng": 57.5289802,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "reviva-gym",
+    "name": "Reviva Gym...",
+    "category": "activites",
+    "address": "HJW2+XJG, Old Market lane, Rose Belle",
+    "phone": "+230 627 1322",
+    "googleMapsUrl": "https://maps.google.com/?cid=2866435428624351871&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.4025627,
+    "lng": 57.6015735,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "sud"
+  },
+  {
+    "id": "just-lift-gym-ltd",
+    "name": "JUST LIFT GYM LTD",
+    "category": "activites",
+    "address": "Ave MGR Murphy, Quatre Bornes",
+    "phone": "+230 5981 4031",
+    "googleMapsUrl": "https://maps.google.com/?cid=252345533016043119&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.2701147,
+    "lng": 57.4748698,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "fitness-flo",
+    "name": "Fitness Flo",
+    "category": "activites",
+    "address": "MGR7+C66 So'Flo, Georges Guibert St, Vacoas-Phoenix",
+    "phone": "+230 606 4414",
+    "googleMapsUrl": "https://maps.google.com/?cid=11366104812156336552&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.3089664,
+    "lng": 57.5130225,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "myfit-360-trianon",
+    "name": "MYFIT 360 Trianon",
+    "category": "activites",
+    "address": "Centre Commercial Emerald Park Ltee, Trianon 72262",
+    "phone": "+230 465 4062",
+    "website": "http://www.myfit360.mu/",
+    "googleMapsUrl": "https://maps.google.com/?cid=8599007330346442851&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.2534203,
+    "lng": 57.4915302,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "ultimate-muscle-gym",
+    "name": "Ultimate Muscle GYM",
+    "category": "activites",
+    "address": "Royal Rd, Mahébourg",
+    "phone": "+230 5500 3994",
+    "googleMapsUrl": "https://maps.google.com/?cid=7532313229870109867&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.4147786,
+    "lng": 57.7048841,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "est"
+  },
+  {
+    "id": "shape-mahebourg",
+    "name": "Shape Mahebourg",
+    "category": "activites",
+    "address": "HPM5+8JG Mahebourg Lorette street, Mahebourg",
+    "phone": "+230 263 6640",
+    "googleMapsUrl": "https://maps.google.com/?cid=14496523333809980381&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.4166985,
+    "lng": 57.7090865,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "est"
+  },
+  {
+    "id": "top-spin-tennis-club",
+    "name": "Top Spin Tennis Club",
+    "category": "activites",
+    "address": "Corner sir Victor Hugo St, Beau Bassin-Rose Hill",
+    "googleMapsUrl": "https://maps.google.com/?cid=9624465258068173610&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.2312142,
+    "lng": 57.4733609,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "rose-hill-club",
+    "name": "Rose Hill Club",
+    "category": "activites",
+    "address": "QF59+F3V, Captain Bruce St, Beau Bassin-Rose Hill",
+    "phone": "+230 464 1666",
+    "googleMapsUrl": "https://maps.google.com/?cid=2169701447962206164&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.2412607,
+    "lng": 57.46768,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "rose-hill-sports-complex",
+    "name": "Rose Hill Sports Complex",
+    "category": "activites",
+    "address": "QF4H+6CM, Beau Bassin-Rose Hill",
+    "phone": "+230 467 2991",
+    "website": "http://www.mauritiussportcouncil.com/",
+    "googleMapsUrl": "https://maps.google.com/?cid=271228393134162560&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.2444224,
+    "lng": 57.4785513,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "bel-mont-football-ground",
+    "name": "Bel Mont Football Ground",
+    "category": "activites",
+    "address": "WMX9+3H8, Goodlands",
+    "googleMapsUrl": "https://maps.google.com/?cid=10270684296632469536&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.0523465,
+    "lng": 57.6689627,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "nord"
+  },
+  {
+    "id": "terrain-de-football",
+    "name": "Terrain de Football",
+    "category": "activites",
+    "address": "Q9JW+4MJ, Albion",
+    "googleMapsUrl": "https://maps.google.com/?cid=2793700480094276546&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.218233,
+    "lng": 57.3951963,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "cote-d-or-national-sports-complex",
+    "name": "Cote d'Or National Sports Complex",
+    "category": "activites",
+    "address": "Motorway M3, Cote D'Or, St Pierre",
+    "phone": "+230 460 0418",
+    "website": "https://www.cotedorsports.mu/",
+    "googleMapsUrl": "https://maps.google.com/?cid=14259472021657998769&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.2440729,
+    "lng": 57.5425441,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "espace-sante-fitness-and-medical-center",
+    "name": "Espace Sante Fitness and Medical center",
+    "category": "activites",
+    "address": "RP69+V45, St Rémy, Central Flacq",
+    "phone": "+230 5797 9084",
+    "googleMapsUrl": "https://maps.google.com/?cid=7152901204397259868&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.1878676,
+    "lng": 57.7178577,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "est"
+  },
+  {
+    "id": "amazing-fitness-24-7",
+    "name": "Amazing Fitness 24/7",
+    "category": "activites",
+    "address": "RPJM+QJQ, Poste de Flacq",
+    "phone": "+230 5754 3139",
+    "googleMapsUrl": "https://maps.google.com/?cid=11571738719436546484&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.1680369,
+    "lng": 57.7341216,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "est"
+  },
+  {
+    "id": "happy-gym",
+    "name": "Happy Gym",
+    "category": "activites",
+    "address": "MU, Royal Road, Bel Air 40101",
+    "phone": "+230 5783 2524",
+    "googleMapsUrl": "https://maps.google.com/?cid=17818288309071833039&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.2568614,
+    "lng": 57.7577268,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "est"
+  },
+  {
+    "id": "constance-fitness-center",
+    "name": "Constance fitness center",
+    "category": "activites",
+    "address": "c/o Constance, RQM7+MQG Plage hotel, B59, Poste de Flacq",
+    "googleMapsUrl": "https://maps.google.com/?cid=11562953055171229063&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.165824,
+    "lng": 57.7644562,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "est"
+  },
+  {
+    "id": "the-power-house",
+    "name": "The Power House",
+    "category": "activites",
+    "address": "MU, Royal Rd, Flacq 40606",
+    "phone": "+230 5916 6205",
+    "website": "https://thepowerhousegymequipment.com/",
+    "googleMapsUrl": "https://maps.google.com/?cid=17609934282144233209&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.1877556,
+    "lng": 57.7178362,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "est"
+  },
+  {
+    "id": "anytime-fitness",
+    "name": "ANYTIME FITNESS",
+    "category": "activites",
+    "address": "PQV4+FG9, Bel Air",
+    "phone": "+230 5759 1622",
+    "googleMapsUrl": "https://maps.google.com/?cid=18137762732634034903&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.2563334,
+    "lng": 57.7563618,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "est"
+  },
+  {
+    "id": "bel-air-jujitsu-mma-sports-club",
+    "name": "Bel Air Jujitsu MMA Sports Club",
+    "category": "activites",
+    "address": "PPQX+HG2, Bel Air",
+    "googleMapsUrl": "https://maps.google.com/?cid=12988900177475668604&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.2611072,
+    "lng": 57.7487571,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "est"
+  },
+  {
+    "id": "sports-centre",
+    "name": "Sports Centre",
+    "category": "activites",
+    "address": "RQG9+JHH, B59, Poste de Flacq",
+    "googleMapsUrl": "https://maps.google.com/?cid=6152491092786900373&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.1734325,
+    "lng": 57.7689788,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "est"
+  },
+  {
+    "id": "iron-barbell-gym",
+    "name": "IRON BARBELL GYM",
+    "category": "activites",
+    "address": "PQV2+W75, Chemain l'église, Bel Air",
+    "phone": "+230 5766 5620",
+    "googleMapsUrl": "https://maps.google.com/?cid=1041893489029327673&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.2552481,
+    "lng": 57.7507233,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "est"
+  },
+  {
+    "id": "waves-club",
+    "name": "Waves Club",
+    "category": "activites",
+    "address": "RQG9+HPV, Poste de Flacq",
+    "phone": "+230 401 1919",
+    "googleMapsUrl": "https://maps.google.com/?cid=6025028292107415293&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.1735233,
+    "lng": 57.7693029,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "est"
+  },
+  {
+    "id": "nextgen-fitness-healthy-living-company-ltd",
+    "name": "NEXTGEN FITNESS (healthy living company ltd)",
+    "category": "activites",
+    "address": "VHQ9+GWM, Royal Rd, Pamplemousses",
+    "phone": "+230 245 8555",
+    "googleMapsUrl": "https://maps.google.com/?cid=1788795425875205450&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.1111513,
+    "lng": 57.5697851,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "nord"
+  },
+  {
+    "id": "pont-lardier-community-center",
+    "name": "Pont Lardier community center",
+    "category": "activites",
+    "address": "PPJV+FXG, Bel Air",
+    "googleMapsUrl": "https://maps.google.com/?cid=16201429151323656515&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.2688093,
+    "lng": 57.7449627,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "est"
+  },
+  {
+    "id": "baillache-barbell-gym",
+    "name": "Baillache Barbell Gym",
+    "category": "activites",
+    "address": "Royal Road, Baillache MU, Long Mountain 20801",
+    "phone": "+230 5826 0497",
+    "googleMapsUrl": "https://maps.google.com/?cid=16596130192502765107&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.1457611,
+    "lng": 57.5693715,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "win-champion-engineer",
+    "name": "WIN CHAMPION ENGINEER",
+    "category": "activites",
+    "address": "Avenue francois mitterand, Flacq MU, Ctre de Flacq 40606",
+    "phone": "+230 5774 2572",
+    "googleMapsUrl": "https://maps.google.com/?cid=12061109907697293956&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.1918626,
+    "lng": 57.7213572,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "est"
+  },
+  {
+    "id": "ken-gym",
+    "name": "Ken Gym",
+    "category": "activites",
+    "address": "Palma Road \"B.2\", Quatre Bornes",
+    "phone": "+230 5795 4936",
+    "googleMapsUrl": "https://maps.google.com/?cid=10341813844078601405&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.2752544,
+    "lng": 57.466499,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "queen-s-sport-leisure-centre",
+    "name": "Queen's sport & Leisure Centre",
+    "category": "activites",
+    "address": "RF6Q+CV8, Port Louis",
+    "phone": "+230 285 3627",
+    "googleMapsUrl": "https://maps.google.com/?cid=1039053693907914732&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.1889683,
+    "lng": 57.489714,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "army-gym",
+    "name": "Army Gym",
+    "category": "activites",
+    "address": "Shivala Road Bramsthan Flacq, Central Flacq",
+    "phone": "+230 5815 4461",
+    "googleMapsUrl": "https://maps.google.com/?cid=7760005607890435069&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.2022929,
+    "lng": 57.7299408,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "est"
+  },
+  {
+    "id": "urban-pace-by-mag-fabulous-deals",
+    "name": "URBAN PACE by Mag Fabulous Deals",
+    "category": "activites",
+    "address": "28 Rue Desforges, Port Louis",
+    "phone": "+230 5791 8511",
+    "googleMapsUrl": "https://maps.google.com/?cid=4189306316087504247&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.1621254,
+    "lng": 57.506856,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "tranquebar-boxing-club",
+    "name": "Tranquebar boxing Club",
+    "category": "activites",
+    "address": "RGF7+C2X, Bathfield St, Port Louis",
+    "phone": "+230 5859 5075",
+    "googleMapsUrl": "https://maps.google.com/?cid=3638283580273840744&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.1763858,
+    "lng": 57.5125945,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "king-tas-fitness-club",
+    "name": "King Tas Fitness Club",
+    "category": "activites",
+    "address": "RF5Q+MQ3, Port Louis",
+    "phone": "+230 5483 9350",
+    "googleMapsUrl": "https://maps.google.com/?cid=3501621834059054928&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.1908706,
+    "lng": 57.4894153,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "sport-power-club",
+    "name": "Sport Power Club",
+    "category": "activites",
+    "address": "RGR4+576, Rte Royale, Port Louis",
+    "phone": "+230 5767 5540",
+    "website": "https://www.facebook.com/kadafisportpowerclub5/",
+    "googleMapsUrl": "https://maps.google.com/?cid=12906705584391017906&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.1595782,
+    "lng": 57.505652,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "timoo-outdoor-gymnasium",
+    "name": "Timoo Outdoor Gymnasium",
+    "category": "activites",
+    "address": "RGF8+G84, Chateau D'Eau St, Port Louis",
+    "googleMapsUrl": "https://maps.google.com/?cid=17627491046167248567&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.1762426,
+    "lng": 57.5158417,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "superfit-gym",
+    "name": "Superfit Gym",
+    "category": "activites",
+    "address": "Ruisseau Rose, Long Mountain",
+    "phone": "+230 5767 5184",
+    "googleMapsUrl": "https://maps.google.com/?cid=391170345532874955&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.1547962,
+    "lng": 57.5734467,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "fitcity",
+    "name": "Fitcity",
+    "category": "activites",
+    "address": "City Center, Port Louis",
+    "phone": "+230 5771 9335",
+    "website": "https://www.facebook.com/fitcitymauritius",
+    "googleMapsUrl": "https://maps.google.com/?cid=15970822943862476820&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.1622101,
+    "lng": 57.5060245,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "university-of-mauritius-gymnasium-complex",
+    "name": "University of Mauritius Gymnasium Complex",
+    "category": "activites",
+    "address": "QF8X+RMX, Moka",
+    "phone": "+230 467 6576",
+    "website": "http://www.uom.ac.mu/SPORTS/",
+    "googleMapsUrl": "https://maps.google.com/?cid=14544984850324357987&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.2328853,
+    "lng": 57.4992228,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "argy-brazilian-jiu-jitsu-club",
+    "name": "Argy Brazilian Jiu-Jitsu Club",
+    "category": "activites",
+    "address": "Chemin de Poste MU, Ctre de Flacq 40607",
+    "phone": "+230 5259 1269",
+    "googleMapsUrl": "https://maps.google.com/?cid=11003941821884938108&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.1929204,
+    "lng": 57.7362181,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "est"
+  },
+  {
+    "id": "muga-bel-air",
+    "name": "MUGA Bel Air",
+    "category": "activites",
+    "address": "PQV4+MFC, Bel Air",
+    "googleMapsUrl": "https://maps.google.com/?cid=7630521905235748174&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.2543998,
+    "lng": 57.7559745,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "est"
+  },
+  {
+    "id": "modern-martial-arts-mma-gym",
+    "name": "Modern Martial Arts - MMA Gym",
+    "category": "activites",
+    "address": "MU, Royal Road, Montagne Longue 20807",
+    "phone": "+230 5777 7873",
+    "website": "http://www.facebook.com/modern.mru",
+    "googleMapsUrl": "https://maps.google.com/?cid=16023253460854702055&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.1509075,
+    "lng": 57.5723533,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "swoldier-nation-gym",
+    "name": "Swoldier Nation Gym",
+    "category": "activites",
+    "address": "Rte des Pamplemousses, Port Louis",
+    "phone": "+230 5920 4865",
+    "googleMapsUrl": "https://maps.google.com/?cid=16037094461013271426&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.1518067,
+    "lng": 57.52183,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "club-med-albion-mauritius",
+    "name": "Club Med Albion - Mauritius",
+    "category": "activites",
+    "address": "Avenue Du Club Med, Albion",
+    "phone": "+230 206 0700",
+    "website": "https://www.clubmed.com/albc",
+    "googleMapsUrl": "https://maps.google.com/?cid=14170838550251383844&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.217638,
+    "lng": 57.397294,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "club-protennis",
+    "name": "Club Protennis",
+    "category": "activites",
+    "address": "251 Marguerites St, Morc. Montreal 2, COROMANDEL Beau Bassin MU, Quatre Bornes 71618",
+    "phone": "+230 5253 6685",
+    "website": "http://www.protennis.mu/",
+    "googleMapsUrl": "https://maps.google.com/?cid=1450903326770350205&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.2695042,
+    "lng": 57.4726126,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "popy-tennis-club-of-quatre-bornes",
+    "name": "Popy Tennis Club Of Quatre-Bornes",
+    "category": "activites",
+    "address": "28 Ave Berthaud Quatre-Bornes, berthaud lane Berthaud Ln, Quatre Bornes 72350",
+    "phone": "+230 5976 4481",
+    "googleMapsUrl": "https://maps.google.com/?cid=7968228404544010370&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.2694759,
+    "lng": 57.4726181,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "plaine-verte-sports-arena",
+    "name": "Plaine Verte Sports Arena",
+    "category": "activites",
+    "address": "RGQ7+JC3, Port Louis",
+    "phone": "+230 5450 6168",
+    "googleMapsUrl": "https://maps.google.com/?cid=10323305725874043971&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.160982,
+    "lng": 57.5135316,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "mare-tabac-football-ground",
+    "name": "Mare Tabac Football Ground",
+    "category": "activites",
+    "address": "HH5V+V3G, B82, Mare Tabac",
+    "googleMapsUrl": "https://maps.google.com/?cid=4217275976095664240&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.4403233,
+    "lng": 57.5927098,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "sud"
+  },
+  {
+    "id": "mauritius-sports-council",
+    "name": "Mauritius Sports Council",
+    "category": "activites",
+    "address": "Royal Road Belle Rose, PFXM+CH9, Quatre Bornes",
+    "phone": "+230 454 1009",
+    "googleMapsUrl": "https://maps.google.com/?cid=4634518984578048481&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.2514705,
+    "lng": 57.4839935,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "piscine-de-mare-d-albert",
+    "name": "Piscine de Mare d'Albert",
+    "category": "activites",
+    "address": "A10 Royal Road, Mare D Albert",
+    "phone": "+230 5824 6875",
+    "googleMapsUrl": "https://maps.google.com/?cid=12873990474168043447&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.4194749,
+    "lng": 57.631421,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "sud"
+  },
+  {
+    "id": "maryse-justin-stadium",
+    "name": "Maryse Justin Stadium",
+    "category": "activites",
+    "address": "QF9W+9WP, Moka",
+    "googleMapsUrl": "https://maps.google.com/?cid=10950095025002910777&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.2315434,
+    "lng": 57.4973257,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "glen-park-multisports-complex",
+    "name": "Glen Park Multisports Complex",
+    "category": "activites",
+    "address": "MFCM+MFH, Meerun Ln, Vacoas-Phoenix",
+    "phone": "+230 684 0271",
+    "website": "https://mauritiussportscouncil.govmu.org/mauritiussportscouncil/?page_id=282",
+    "googleMapsUrl": "https://maps.google.com/?cid=17792309275911324836&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.3283214,
+    "lng": 57.4837188,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "bel-etang-football-pitch",
+    "name": "Bel Etang Football Pitch",
+    "category": "activites",
+    "address": "QM34+HR7, Bel Etang",
+    "googleMapsUrl": "https://maps.google.com/?cid=16825736943588572226&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.245374,
+    "lng": 57.6564709,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "est"
+  },
+  {
+    "id": "stade-st-francois-xavier",
+    "name": "Stade St. François Xavier",
+    "category": "activites",
+    "address": "RGW7+GP7, Port Louis",
+    "phone": "+230 216 6902",
+    "googleMapsUrl": "https://maps.google.com/?cid=4440271322674863733&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.1537206,
+    "lng": 57.5143112,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "racing-club-de-maurice",
+    "name": "Racing Club de Maurice",
+    "category": "activites",
+    "address": "PFVW+8F9, Quatre Bornes",
+    "phone": "+230 454 9071",
+    "website": "https://www.facebook.com/share/1AEB3EPHXa/",
+    "googleMapsUrl": "https://maps.google.com/?cid=11794954394922438005&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.256722,
+    "lng": 57.4962229,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "le-cerf-d-or",
+    "name": "Le Cerf d'Or",
+    "category": "activites",
+    "address": "Impasse de la Foret Chamouny MU, Chamouny 61301",
+    "phone": "+230 5422 1233",
+    "googleMapsUrl": "https://maps.google.com/?cid=13595295894791741133&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.4649195,
+    "lng": 57.4603969,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "sud"
+  },
+  {
+    "id": "stade-anjalay",
+    "name": "Stade Anjalay",
+    "category": "activites",
+    "address": "WJC2+F5V, Mapou",
+    "phone": "+230 266 6006",
+    "googleMapsUrl": "https://maps.google.com/?cid=10744037232623455265&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.0787587,
+    "lng": 57.6004181,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "nord"
+  },
+  {
+    "id": "cote-d-or-swimming-pool",
+    "name": "Côte d'Or Swimming Pool",
+    "category": "activites",
+    "address": "Motorway M3 Côte D'or National Sports Complex Cote d'Or, St Pierre MU, 97410",
+    "phone": "+230 460 0418",
+    "website": "https://www.cotedorsports.mu/",
+    "googleMapsUrl": "https://maps.google.com/?cid=427168279722039307&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.2424179,
+    "lng": 57.541358,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "w-life-health-wellness-center",
+    "name": "W+Life Health & Wellness Center",
+    "category": "activites",
+    "address": "Barachois Estate - Riverland Sports Club, Tamarin",
+    "phone": "+230 483 5907",
+    "googleMapsUrl": "https://maps.google.com/?cid=7774029674903101842&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.3299038,
+    "lng": 57.3807458,
+    "themes": [
+      "complexes-sportifs"
+    ],
+    "zone": "ouest"
   }
 ]
