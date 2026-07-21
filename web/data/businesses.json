@@ -12287,7 +12287,7 @@
       "parcs-animaliers"
     ],
     "badge": "coup-de-coeur",
-    "description": "Jolie petite parenthèse faune-flore au nord de l'île. Petit mais charmant.",
+    "description": "Jolie parenthèse faune-flore au nord de l'île, modeste en taille mais charmante.",
     "animalsVisible": "Chevaux, dromadaire, oiseaux, cochons d'inde, sangliers",
     "entryPrice": "Gratuit",
     "zone": "nord"
@@ -31350,7 +31350,6 @@
     "name": "Le Glacier Gourmand",
     "category": "food",
     "address": "Mahogany Shopping Promenade, Beau Plan, Pamplemousses",
-    "phone": "",
     "website": "https://www.facebook.com/glaciergourmand/",
     "lat": -20.099693,
     "lng": 57.5767875,
