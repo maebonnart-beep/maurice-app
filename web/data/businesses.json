@@ -12303,9 +12303,11 @@
     "lat": -20.5009963,
     "lng": 57.4406611,
     "themes": [
-      "parcs-nationaux-cascades"
+      "parcs-nationaux-cascades",
+      "parcs-animaliers"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Safari de 2h en 4x4."
   },
   {
     "id": "safari-adventures",
@@ -12464,31 +12466,14 @@
     "lat": -20.457614,
     "lng": 57.485178,
     "themes": [
-      "parcs-aventures"
+      "parcs-aventures",
+      "parcs-animaliers"
     ],
     "badge": "coup-de-coeur",
     "promoText": "Superbe parc, organisation bien rodée. Idéal en famille.",
-    "description": "Parc naturel (sentiers, vallées, cascades) intégrant le site des 23 Coloured Earth",
+    "description": "Parc naturel (sentiers, vallées, cascades) intégrant le site des 23 Coloured Earth Grand enclos animalier où tortues, paons et basse-cour évoluent en semi-liberté ; approche des animaux libre en autonomie, possibilité de les nourrir.",
     "duration": "~5h de visite",
     "entryPrice": "12€/adulte",
-    "zone": "sud"
-  },
-  {
-    "id": "23-coloured-earth-by-valle-advenature-park",
-    "name": "23 Coloured Earth by Vallé Advenature Park",
-    "category": "activites",
-    "address": "MU, Mare Anguilles, Chamouny 61303",
-    "phone": "+230 5292 8841",
-    "website": "https://www.vallepark.com/",
-    "googleMapsUrl": "https://maps.google.com/?cid=11078538177701092033&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.45749,
-    "lng": 57.4851336,
-    "themes": [
-      "parcs-aventures"
-    ],
-    "description": "Site inclus dans le billet standard de Vallé Advenature Park (même complexe)",
-    "duration": "~5h (visite globale du parc)",
-    "entryPrice": "12€/adulte (billet du parc, inclus)",
     "zone": "sud"
   },
   {
@@ -12535,7 +12520,7 @@
     "lat": -20.326921,
     "lng": 57.3777289,
     "themes": [
-      "parcs-aventures"
+      "activites-enfants-famille"
     ],
     "description": "Agence d'activités outdoor à Tamarin : kayak dauphins, randonnée/canyoning 7 Cascades, pirogue lagon Mahébourg, ascension Le Morne",
     "entryPrice": "Variable selon activité : à partir de Rs 2000/pers (kayak dauphins) jusqu'à Rs 5500/pers (pirogue Mahébourg)",
@@ -12552,7 +12537,7 @@
     "lat": -20.3578786,
     "lng": 57.3675079,
     "themes": [
-      "parcs-aventures"
+      "randonnee-trail"
     ],
     "description": "Société de randonnée/trekking à Rivière Noire : Gorges de Rivière Noire, 7 Cascades, trail running, kayak dauphins",
     "duration": "Randonnée ~3-4h ; kayak ~2h30",
@@ -12653,7 +12638,7 @@
     "lat": -20.2868785,
     "lng": 57.7779502,
     "themes": [
-      "parcs-aventures"
+      "activites-enfants-famille"
     ],
     "description": "Éco-lodge/camping sur la Grande Rivière Sud-Est : kayak, SUP, randonnée, navette gratuite vers l'Île aux Cerfs",
     "entryPrice": "Nuitée dès Rs 8000/tente (jusqu'à 4 pers., basse saison)",
@@ -12700,7 +12685,7 @@
     "lat": -20.1241283,
     "lng": 57.6841354,
     "themes": [
-      "parcs-aventures"
+      "activites-enfants-famille"
     ],
     "description": "Saut en parachute en tandem depuis un Cessna à 10 000 pieds, au-dessus du lagon",
     "duration": "Chute libre ~30 sec + voile 5-7 min ; expérience totale ~3-4h",
@@ -21043,27 +21028,9 @@
     "lat": -20.3161875,
     "lng": 57.6906875,
     "themes": [
-      "parcs-aventures"
+      "randonnee-trail"
     ],
     "zone": "est"
-  },
-  {
-    "id": "nepalese-bridge-by-valle-advenature-park",
-    "name": "Nepalese Bridge by Vallé Advenature Park",
-    "category": "activites",
-    "address": "MU, Mare Anguilles, Chamouny 61303",
-    "phone": "+230 5292 8841",
-    "website": "https://www.vallepark.com/",
-    "googleMapsUrl": "https://maps.google.com/?cid=13246597006501842454&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.4575433,
-    "lng": 57.4849979,
-    "themes": [
-      "parcs-aventures"
-    ],
-    "description": "Traversée du plus long pont suspendu de l'Océan Indien (350m, 100m au-dessus de la canopée), Vallé Advenature Park",
-    "duration": "20-25 min (traversée)",
-    "entryPrice": "48$/pers (billet combo incluant pont, cascades, ferme, musée, 23 Coloured Earth)",
-    "zone": "sud"
   },
   {
     "id": "urban-sport",
