@@ -68,7 +68,7 @@ export const FAMILIES: Partial<Record<CategoryKey, Family[]>> = {
       emoji: "🏃",
       children: [
         "complexes-sportifs", "golf", "randonnee-trail", "sports-nautiques",
-        "centres-equestres", "tennis-padel",
+        "centres-equestres", "tennis-padel", "gym-fitness",
       ],
       subgroups: [
         {
@@ -125,6 +125,7 @@ export const SUBCATEGORIES: Partial<Record<CategoryKey, Subcategory[]>> = {
     { key: "parcs-animaliers", label: "Parcs animaliers", emoji: "🦁" },
     { key: "parcs-aventures", label: "Parcs aventures", emoji: "🎢" },
     { key: "complexes-sportifs", label: "Complexes sportifs", emoji: "🏟️" },
+    { key: "gym-fitness", label: "Gym & fitness", emoji: "💪" },
     { key: "sports-nautiques", label: "Sports nautiques", emoji: "🏄" },
     { key: "kitesurf", label: "Kitesurf", emoji: "🪁" },
     { key: "stand-up-paddle", label: "Stand Up Paddle", emoji: "🏄‍♀️" },

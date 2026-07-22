@@ -3166,7 +3166,8 @@
     "duration": "3h-4h aller-retour",
     "difficultyLevel": "confirme",
     "guideRecommended": true,
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "6,9 km aller-retour, 456 m de dénivelé positif. Piste large en forêt sèche jusqu'au panneau d'avertissement, puis escalade technique (mains libres, passages exposés) jusqu'à la croix sommitale (490 m). Vue sur les récifs du sud-ouest et la célèbre \"cascade sous-marine\". Site classé UNESCO ; guide recommandé pour la partie finale, départ tôt conseillé."
   },
   {
     "id": "black-river-gorges-national-park",
@@ -3224,7 +3225,8 @@
     "duration": "3h-5h aller-retour",
     "difficultyLevel": "confirme",
     "guideRecommended": true,
-    "zone": "sud"
+    "zone": "sud",
+    "description": "4,8 km, 500 m de dénivelé positif. Traversée de champs de canne à sucre puis ascension technique de l'arête rocheuse jusqu'à la \"Tête de Lion\", passage exposé demandant de la précision. Panorama à 360° sur le lagon, la ceinture sucrière et le site de la bataille navale de Grand Port (1810). À éviter par temps humide (sol argileux glissant) ; pensez au répulsif anti-moustiques."
   },
   {
     "id": "pieter-both-mountain",
@@ -3260,7 +3262,8 @@
     "duration": "3h-4h aller-retour",
     "difficultyLevel": "habitue",
     "guideRecommended": true,
-    "zone": "centre"
+    "zone": "centre",
+    "description": "4,3 km aller-retour, 370 m de dénivelé positif. Départ du village de Petit Verger (Saint-Pierre), sentier balisé à travers cannes à sucre et forêt avant une montée rocailleuse vers le sommet du Pouce (812 m), 3ᵉ plus haut sommet de l'île. Vue à 360° sur Port-Louis, la chaîne de Moka et les îles du Nord. Terrain glissant après la pluie, bonnes chaussures indispensables."
   },
   {
     "id": "trois-mamelles",
@@ -3314,7 +3317,8 @@
     "duration": "~3h (jusqu'à 4h)",
     "difficultyLevel": "habitue",
     "guideRecommended": true,
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "5,8 km en boucle, 327 m de dénivelé positif, environ 3-4h. Descente technique dans les gorges de la rivière Tamarin le long des 7 Cascades (la principale chute avoisinant 300 m) : parois de basalte glissantes, passages à la corde, baignades possibles dans les vasques. Terrain exigeant, risque de crue soudaine — guide local fortement recommandé."
   },
   {
     "id": "vallee-de-ferney",
@@ -3593,25 +3597,6 @@
     "hours": "Lun-Sam 11h30-15h30, fermé dim",
     "priceRange": "se-faire-plaisir",
     "zone": "ouest"
-  },
-  {
-    "id": "chateau-de-bel-ombre",
-    "name": "Le Château de Bel Ombre",
-    "category": "food",
-    "address": "Domaine de Bel Ombre, Heritage Resorts, Coastal Road, Bel Ombre",
-    "phone": "+230 601 5529",
-    "website": "https://lechateaudebelombre.com/fr",
-    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Le%20Chateau%20de%20Bel%20Ombre%20restaurant%20Mauritius",
-    "lat": -20.5058,
-    "lng": 57.4147,
-    "themes": [
-      "restaurants",
-      "mauricienne"
-    ],
-    "hours": "Déjeuner 11h30-15h, dîner 19h-22h30, sur réservation",
-    "priceRange": "se-faire-plaisir",
-    "badge": "selection",
-    "zone": "sud"
   },
   {
     "id": "chez-rosy-gris-gris-souillac",
@@ -4296,7 +4281,7 @@
   {
     "id": "wapalapam-le-morne",
     "name": "Wapalapam Island Eatery",
-    "category": "food",
+    "category": "activites",
     "address": "Centre Commercial de L'Harmonie, Le Morne Brabant",
     "phone": "",
     "website": "https://wapalapam.com/",
@@ -4304,11 +4289,7 @@
     "lat": -20.4547,
     "lng": 57.3167,
     "themes": [
-      "restaurants",
-      "mauricienne",
-      "fruits-de-mer",
-      "malls",
-      "shopping"
+      "malls"
     ],
     "hours": "Tous les jours 8h-22h",
     "priceRange": "prix-moyen",
@@ -8716,8 +8697,8 @@
     "themes": [
       "restaurants"
     ],
-    "badge": "selection",
-    "promoText": "Restaurant du site de L'Aventure du Sucre — cadre bucolique en véranda, produits frais maison.",
+    "badge": "coup-de-coeur",
+    "promoText": "Testé par nous : terrasse très agréable au cœur du parc de l'Aventure du Sucre, produits frais et bien cuisinés, jolie présentation, superbes boissons fraîches aux herbes du jardin.",
     "zone": "nord"
   },
   {
@@ -12608,9 +12589,13 @@
     "lat": -20.433764,
     "lng": 57.4577934,
     "themes": [
-      "parcs-nationaux-cascades"
+      "parcs-nationaux-cascades",
+      "randonnee-trail"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "duration": "1h30",
+    "difficultyLevel": "habitue",
+    "description": "2,7 km aller-retour, 157 m de dénivelé positif, environ 1h30. Balade modérée près de St. Martin (Savanne) offrant un point de vue sur la cascade et la végétation environnante. Appréciée pour l'observation des oiseaux ; chiens acceptés. Meilleure période : mars à janvier."
   },
   {
     "id": "cascade-chamouze",
@@ -12718,7 +12703,8 @@
     "lat": -20.0568375,
     "lng": 57.6140781,
     "themes": [
-      "complexes-sportifs"
+      "complexes-sportifs",
+      "gym-fitness"
     ],
     "sportsListed": "Tennis, squash, padel, badminton, pickleball, beach tennis, foot à 5, escalade, musculation/cardio, cours collectifs, Pilates, Yoga",
     "hasRestauration": true,
@@ -12754,7 +12740,8 @@
     "lat": -20.0189158,
     "lng": 57.5797277,
     "themes": [
-      "complexes-sportifs"
+      "complexes-sportifs",
+      "gym-fitness"
     ],
     "sportsListed": "Musculation, arts martiaux (kickboxing, boxe, Muay Thai), cours collectifs rooftop (zumba, spinning, yoga...)",
     "kidsActivities": true,
@@ -12789,7 +12776,7 @@
     "lat": -20.0221543,
     "lng": 57.5777735,
     "themes": [
-      "complexes-sportifs"
+      "tennis-padel"
     ],
     "sportsListed": "Padel (6 courts), cours individuels/collectifs, tournois",
     "hasRestauration": true,
@@ -12806,7 +12793,7 @@
     "lat": -20.0329163,
     "lng": 57.5901603,
     "themes": [
-      "complexes-sportifs"
+      "gym-fitness"
     ],
     "sportsListed": "CrossFit (WOD quotidien)",
     "zone": "nord"
@@ -12822,7 +12809,7 @@
     "lat": -20.0093828,
     "lng": 57.5669265,
     "themes": [
-      "complexes-sportifs"
+      "gym-fitness"
     ],
     "sportsListed": "Musculation/cardio, cours collectifs, piscine 25m, spa/hammam/sauna, TRX, Pilates, Yoga",
     "hasRestauration": true,
@@ -12840,7 +12827,7 @@
     "lat": -20.0173732,
     "lng": 57.5797004,
     "themes": [
-      "complexes-sportifs"
+      "gym-fitness"
     ],
     "sportsListed": "Gymnastique, tumbling/trampoline, parkour, acrobatie aérienne, pole dance, breakdance, judo",
     "kidsActivities": true,
@@ -12872,7 +12859,7 @@
     "lat": -19.9995825,
     "lng": 57.6126886,
     "themes": [
-      "complexes-sportifs"
+      "gym-fitness"
     ],
     "sportsListed": "Pilates (reformer)",
     "zone": "nord"
@@ -24143,21 +24130,6 @@
     "zone": "sud"
   },
   {
-    "id": "heritage-awali-golf-and-spa-resort",
-    "name": "Heritage Awali Golf and Spa Resort",
-    "category": "activites",
-    "address": "MU, Coastal Rd, Bel Ombre 61002",
-    "phone": "+230 601 1500",
-    "website": "https://heritageresorts.mu/hotels-mauritius/awali-all-inclusive",
-    "googleMapsUrl": "https://maps.google.com/?cid=7977145332172372494&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.5080444,
-    "lng": 57.4126582,
-    "themes": [
-      "golf"
-    ],
-    "zone": "sud"
-  },
-  {
     "id": "heritage-le-telfair-golf-wellness-resort",
     "name": "Heritage Le Telfair Golf & Wellness Resort",
     "category": "activites",
@@ -31365,7 +31337,7 @@
     "lat": -20.0951958,
     "lng": 57.5866028,
     "themes": [
-      "complexes-sportifs"
+      "tennis-padel"
     ],
     "zone": "nord"
   },
@@ -31384,20 +31356,6 @@
     "zone": "nord"
   },
   {
-    "id": "tennis-nord",
-    "name": "Tennis Nord",
-    "category": "activites",
-    "address": "WJH7+PV9, Mapou",
-    "phone": "+230 266 8782",
-    "googleMapsUrl": "https://maps.google.com/?cid=7189533234546859868&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0707036,
-    "lng": 57.6147407,
-    "themes": [
-      "complexes-sportifs"
-    ],
-    "zone": "nord"
-  },
-  {
     "id": "dharel-barbell-gym",
     "name": "Dharel Barbell Gym",
     "category": "activites",
@@ -31406,7 +31364,7 @@
     "lat": -20.0193037,
     "lng": 57.5838593,
     "themes": [
-      "complexes-sportifs"
+      "gym-fitness"
     ],
     "zone": "nord"
   },
@@ -31420,7 +31378,7 @@
     "lat": -20.0179148,
     "lng": 57.5862228,
     "themes": [
-      "complexes-sportifs"
+      "gym-fitness"
     ],
     "zone": "nord"
   },
@@ -31434,7 +31392,7 @@
     "lat": -20.0645851,
     "lng": 57.5821553,
     "themes": [
-      "complexes-sportifs"
+      "gym-fitness"
     ],
     "zone": "nord"
   },
@@ -31449,7 +31407,7 @@
     "lat": -20.0232289,
     "lng": 57.5566173,
     "themes": [
-      "complexes-sportifs"
+      "gym-fitness"
     ],
     "zone": "nord"
   },
@@ -31464,7 +31422,7 @@
     "lat": -20.010903,
     "lng": 57.5982364,
     "themes": [
-      "complexes-sportifs"
+      "materiel-sports"
     ],
     "zone": "nord"
   },
@@ -31479,7 +31437,7 @@
     "lat": -20.0219872,
     "lng": 57.5774742,
     "themes": [
-      "complexes-sportifs"
+      "tennis-padel"
     ],
     "zone": "nord"
   },
@@ -31494,7 +31452,7 @@
     "lat": -20.0219229,
     "lng": 57.5774793,
     "themes": [
-      "complexes-sportifs"
+      "tennis-padel"
     ],
     "zone": "nord"
   },
@@ -31508,7 +31466,7 @@
     "lat": -19.9983104,
     "lng": 57.6157411,
     "themes": [
-      "complexes-sportifs"
+      "tennis-padel"
     ],
     "zone": "nord"
   },
@@ -31522,7 +31480,7 @@
     "lat": -20.0812807,
     "lng": 57.6716283,
     "themes": [
-      "complexes-sportifs"
+      "tennis-padel"
     ],
     "zone": "nord"
   },
@@ -31549,7 +31507,7 @@
     "lat": -20.3391513,
     "lng": 57.3704747,
     "themes": [
-      "complexes-sportifs"
+      "gym-fitness"
     ],
     "zone": "ouest"
   },
@@ -31564,7 +31522,7 @@
     "lat": -20.2602593,
     "lng": 57.4126377,
     "themes": [
-      "complexes-sportifs"
+      "gym-fitness"
     ],
     "zone": "ouest"
   },
@@ -31579,7 +31537,7 @@
     "lat": -20.2614898,
     "lng": 57.417212,
     "themes": [
-      "complexes-sportifs"
+      "gym-fitness"
     ],
     "zone": "ouest"
   },
@@ -31608,7 +31566,7 @@
     "lat": -20.329772,
     "lng": 57.3807979,
     "themes": [
-      "complexes-sportifs"
+      "gym-fitness"
     ],
     "zone": "ouest"
   },
@@ -31623,7 +31581,7 @@
     "lat": -20.2337284,
     "lng": 57.4704161,
     "themes": [
-      "complexes-sportifs"
+      "gym-fitness"
     ],
     "zone": "centre"
   },
@@ -31638,7 +31596,7 @@
     "lat": -20.3665099,
     "lng": 57.3793781,
     "themes": [
-      "complexes-sportifs"
+      "gym-fitness"
     ],
     "zone": "ouest"
   },
@@ -31652,7 +31610,7 @@
     "lat": -20.2249411,
     "lng": 57.5411825,
     "themes": [
-      "complexes-sportifs"
+      "gym-fitness"
     ],
     "zone": "centre"
   },
@@ -31666,7 +31624,7 @@
     "lat": -20.1399475,
     "lng": 57.5246059,
     "themes": [
-      "complexes-sportifs"
+      "gym-fitness"
     ],
     "zone": "centre"
   },
@@ -31681,7 +31639,7 @@
     "lat": -20.2753889,
     "lng": 57.3767649,
     "themes": [
-      "complexes-sportifs"
+      "gym-fitness"
     ],
     "zone": "ouest"
   },
@@ -31695,7 +31653,7 @@
     "lat": -20.2436678,
     "lng": 57.4883808,
     "themes": [
-      "complexes-sportifs"
+      "gym-fitness"
     ],
     "zone": "centre"
   },
@@ -31709,7 +31667,7 @@
     "lat": -20.2698151,
     "lng": 57.4759898,
     "themes": [
-      "complexes-sportifs"
+      "gym-fitness"
     ],
     "zone": "centre"
   },
@@ -31723,7 +31681,7 @@
     "lat": -20.0372146,
     "lng": 57.6493262,
     "themes": [
-      "complexes-sportifs"
+      "gym-fitness"
     ],
     "zone": "nord"
   },
@@ -31737,7 +31695,7 @@
     "lat": -20.285585,
     "lng": 57.6617428,
     "themes": [
-      "complexes-sportifs"
+      "gym-fitness"
     ],
     "zone": "est"
   },
@@ -31752,7 +31710,7 @@
     "lat": -20.2920207,
     "lng": 57.5158883,
     "themes": [
-      "complexes-sportifs"
+      "gym-fitness"
     ],
     "zone": "centre"
   },
@@ -31766,7 +31724,7 @@
     "lat": -20.0433416,
     "lng": 57.5867058,
     "themes": [
-      "complexes-sportifs"
+      "gym-fitness"
     ],
     "zone": "nord"
   },
@@ -31781,7 +31739,7 @@
     "lat": -20.2478975,
     "lng": 57.4924028,
     "themes": [
-      "complexes-sportifs"
+      "gym-fitness"
     ],
     "zone": "centre"
   },
@@ -31795,7 +31753,7 @@
     "lat": -20.2709696,
     "lng": 57.4191839,
     "themes": [
-      "complexes-sportifs"
+      "gym-fitness"
     ],
     "zone": "ouest"
   },
@@ -31810,7 +31768,8 @@
     "lat": -20.2262417,
     "lng": 57.5254172,
     "themes": [
-      "complexes-sportifs"
+      "complexes-sportifs",
+      "gym-fitness"
     ],
     "zone": "centre"
   },
@@ -31839,7 +31798,7 @@
     "lat": -20.1668743,
     "lng": 57.4922041,
     "themes": [
-      "complexes-sportifs"
+      "gym-fitness"
     ],
     "zone": "centre"
   },
@@ -31854,7 +31813,8 @@
     "lat": -20.3642082,
     "lng": 57.3805483,
     "themes": [
-      "complexes-sportifs"
+      "complexes-sportifs",
+      "gym-fitness"
     ],
     "zone": "ouest"
   },
@@ -31868,7 +31828,7 @@
     "lat": -20.2309585,
     "lng": 57.4734111,
     "themes": [
-      "complexes-sportifs"
+      "gym-fitness"
     ],
     "zone": "centre"
   },
@@ -31883,7 +31843,7 @@
     "lat": -20.1847611,
     "lng": 57.7230763,
     "themes": [
-      "complexes-sportifs"
+      "gym-fitness"
     ],
     "zone": "est"
   },
@@ -31897,7 +31857,7 @@
     "lat": -20.4124208,
     "lng": 57.6191508,
     "themes": [
-      "complexes-sportifs"
+      "gym-fitness"
     ],
     "zone": "sud"
   },
@@ -31911,7 +31871,7 @@
     "lat": -20.224096,
     "lng": 57.5268711,
     "themes": [
-      "complexes-sportifs"
+      "gym-fitness"
     ],
     "zone": "centre"
   },
@@ -31925,7 +31885,7 @@
     "lat": -20.2756662,
     "lng": 57.5008555,
     "themes": [
-      "complexes-sportifs"
+      "gym-fitness"
     ],
     "zone": "centre"
   },
@@ -31939,7 +31899,7 @@
     "lat": -20.3024765,
     "lng": 57.5183137,
     "themes": [
-      "complexes-sportifs"
+      "gym-fitness"
     ],
     "zone": "centre"
   },
@@ -31953,7 +31913,7 @@
     "lat": -20.2195851,
     "lng": 57.5472586,
     "themes": [
-      "complexes-sportifs"
+      "gym-fitness"
     ],
     "zone": "centre"
   },
@@ -31967,7 +31927,7 @@
     "lat": -20.3129837,
     "lng": 57.4858775,
     "themes": [
-      "complexes-sportifs"
+      "gym-fitness"
     ],
     "zone": "centre"
   },
@@ -31981,7 +31941,7 @@
     "lat": -20.1638639,
     "lng": 57.5047216,
     "themes": [
-      "complexes-sportifs"
+      "gym-fitness"
     ],
     "zone": "centre"
   },
@@ -31994,7 +31954,7 @@
     "lat": -20.1529451,
     "lng": 57.6998492,
     "themes": [
-      "complexes-sportifs"
+      "gym-fitness"
     ],
     "zone": "est"
   },
@@ -32022,7 +31982,7 @@
     "lat": -20.3024635,
     "lng": 57.518308,
     "themes": [
-      "complexes-sportifs"
+      "gym-fitness"
     ],
     "zone": "centre"
   },
@@ -32052,7 +32012,7 @@
     "lat": -20.4865468,
     "lng": 57.5578813,
     "themes": [
-      "complexes-sportifs"
+      "gym-fitness"
     ],
     "zone": "sud"
   },
@@ -32066,7 +32026,7 @@
     "lat": -20.3641908,
     "lng": 57.3808745,
     "themes": [
-      "complexes-sportifs"
+      "gym-fitness"
     ],
     "zone": "ouest"
   },
@@ -32080,7 +32040,7 @@
     "lat": -20.1677656,
     "lng": 57.5149271,
     "themes": [
-      "complexes-sportifs"
+      "gym-fitness"
     ],
     "zone": "centre"
   },
@@ -32094,7 +32054,7 @@
     "lat": -20.1659302,
     "lng": 57.518289,
     "themes": [
-      "complexes-sportifs"
+      "gym-fitness"
     ],
     "zone": "centre"
   },
@@ -32107,7 +32067,7 @@
     "lat": -20.2032779,
     "lng": 57.5520043,
     "themes": [
-      "complexes-sportifs"
+      "gym-fitness"
     ],
     "zone": "centre"
   },
@@ -32121,7 +32081,8 @@
     "lat": -20.3302264,
     "lng": 57.3783003,
     "themes": [
-      "complexes-sportifs"
+      "complexes-sportifs",
+      "gym-fitness"
     ],
     "zone": "ouest"
   },
@@ -32134,7 +32095,7 @@
     "lat": -20.2288136,
     "lng": 57.5391957,
     "themes": [
-      "complexes-sportifs"
+      "gym-fitness"
     ],
     "zone": "centre"
   },
@@ -32160,7 +32121,7 @@
     "lat": -20.111975,
     "lng": 57.523808,
     "themes": [
-      "complexes-sportifs"
+      "tennis-padel"
     ],
     "zone": "nord"
   },
@@ -32174,7 +32135,7 @@
     "lat": -20.2702369,
     "lng": 57.4991607,
     "themes": [
-      "complexes-sportifs"
+      "tennis-padel"
     ],
     "zone": "centre"
   },
@@ -32189,7 +32150,7 @@
     "lat": -20.0844047,
     "lng": 57.5428355,
     "themes": [
-      "complexes-sportifs"
+      "tennis-padel"
     ],
     "zone": "nord"
   },
@@ -32202,7 +32163,7 @@
     "lat": -20.1685222,
     "lng": 57.5099513,
     "themes": [
-      "complexes-sportifs"
+      "tennis-padel"
     ],
     "zone": "centre"
   },
@@ -32216,7 +32177,7 @@
     "lat": -20.2687556,
     "lng": 57.4980792,
     "themes": [
-      "complexes-sportifs"
+      "tennis-padel"
     ],
     "zone": "centre"
   },
@@ -32230,7 +32191,7 @@
     "lat": -20.2411975,
     "lng": 57.4676937,
     "themes": [
-      "complexes-sportifs"
+      "tennis-padel"
     ],
     "zone": "centre"
   },
@@ -32316,7 +32277,7 @@
     "lat": -20.4275629,
     "lng": 57.36188,
     "themes": [
-      "complexes-sportifs"
+      "gym-fitness"
     ],
     "zone": "ouest"
   },
@@ -32329,7 +32290,7 @@
     "lat": -20.5121591,
     "lng": 57.4710284,
     "themes": [
-      "complexes-sportifs"
+      "gym-fitness"
     ],
     "zone": "sud"
   },
@@ -32343,7 +32304,7 @@
     "lat": -20.3277889,
     "lng": 57.478148,
     "themes": [
-      "complexes-sportifs"
+      "gym-fitness"
     ],
     "zone": "centre"
   },
@@ -32356,7 +32317,7 @@
     "lat": -20.4934673,
     "lng": 57.4759436,
     "themes": [
-      "complexes-sportifs"
+      "gym-fitness"
     ],
     "zone": "sud"
   },
@@ -32370,7 +32331,7 @@
     "lat": -20.0711474,
     "lng": 57.5675566,
     "themes": [
-      "complexes-sportifs"
+      "gym-fitness"
     ],
     "zone": "nord"
   },
@@ -32384,7 +32345,7 @@
     "lat": -20.1965064,
     "lng": 57.4461066,
     "themes": [
-      "complexes-sportifs"
+      "gym-fitness"
     ],
     "zone": "centre"
   },
@@ -32398,7 +32359,7 @@
     "lat": -20.4316298,
     "lng": 57.6615014,
     "themes": [
-      "complexes-sportifs"
+      "gym-fitness"
     ],
     "zone": "sud"
   },
@@ -32413,7 +32374,7 @@
     "lat": -20.3243304,
     "lng": 57.5250094,
     "themes": [
-      "complexes-sportifs"
+      "gym-fitness"
     ],
     "zone": "centre"
   },
@@ -32428,7 +32389,7 @@
     "lat": -20.2672786,
     "lng": 57.4787507,
     "themes": [
-      "complexes-sportifs"
+      "gym-fitness"
     ],
     "zone": "centre"
   },
@@ -32443,7 +32404,7 @@
     "lat": -20.303301,
     "lng": 57.5220801,
     "themes": [
-      "complexes-sportifs"
+      "gym-fitness"
     ],
     "zone": "centre"
   },
@@ -32457,7 +32418,7 @@
     "lat": -20.3070952,
     "lng": 57.5072884,
     "themes": [
-      "complexes-sportifs"
+      "gym-fitness"
     ],
     "zone": "centre"
   },
@@ -32471,7 +32432,7 @@
     "lat": -20.2358398,
     "lng": 57.4593467,
     "themes": [
-      "complexes-sportifs"
+      "gym-fitness"
     ],
     "zone": "centre"
   },
@@ -32486,7 +32447,7 @@
     "lat": -20.2440316,
     "lng": 57.4673845,
     "themes": [
-      "complexes-sportifs"
+      "gym-fitness"
     ],
     "zone": "centre"
   },
@@ -32500,7 +32461,7 @@
     "lat": -20.5102146,
     "lng": 57.4998891,
     "themes": [
-      "complexes-sportifs"
+      "gym-fitness"
     ],
     "zone": "sud"
   },
@@ -32513,7 +32474,7 @@
     "lat": -20.1984635,
     "lng": 57.7214096,
     "themes": [
-      "complexes-sportifs"
+      "gym-fitness"
     ],
     "zone": "est"
   },
@@ -32543,7 +32504,8 @@
     "lat": -20.2846298,
     "lng": 57.4865837,
     "themes": [
-      "complexes-sportifs"
+      "complexes-sportifs",
+      "gym-fitness"
     ],
     "zone": "centre"
   },
@@ -32558,7 +32520,8 @@
     "lat": -20.0938472,
     "lng": 57.7070879,
     "themes": [
-      "complexes-sportifs"
+      "complexes-sportifs",
+      "gym-fitness"
     ],
     "zone": "est"
   },
@@ -32572,7 +32535,7 @@
     "lat": -20.4967315,
     "lng": 57.468383,
     "themes": [
-      "complexes-sportifs"
+      "gym-fitness"
     ],
     "zone": "sud"
   },
@@ -32587,7 +32550,7 @@
     "lat": -20.1286157,
     "lng": 57.5225258,
     "themes": [
-      "complexes-sportifs"
+      "gym-fitness"
     ],
     "zone": "centre"
   },
@@ -32602,7 +32565,7 @@
     "lat": -20.1616803,
     "lng": 57.4997677,
     "themes": [
-      "complexes-sportifs"
+      "gym-fitness"
     ],
     "zone": "centre"
   },
@@ -32630,7 +32593,7 @@
     "lat": -20.3012434,
     "lng": 57.4987274,
     "themes": [
-      "complexes-sportifs"
+      "gym-fitness"
     ],
     "zone": "centre"
   },
@@ -32645,7 +32608,8 @@
     "lat": -20.0991498,
     "lng": 57.7083372,
     "themes": [
-      "complexes-sportifs"
+      "complexes-sportifs",
+      "gym-fitness"
     ],
     "zone": "est"
   },
@@ -32674,7 +32638,7 @@
     "lat": -20.0548314,
     "lng": 57.5529956,
     "themes": [
-      "complexes-sportifs"
+      "gym-fitness"
     ],
     "zone": "nord"
   },
@@ -32688,7 +32652,7 @@
     "lat": -20.0723343,
     "lng": 57.548431,
     "themes": [
-      "complexes-sportifs"
+      "gym-fitness"
     ],
     "zone": "nord"
   },
@@ -32703,7 +32667,7 @@
     "lat": -20.2553187,
     "lng": 57.4860411,
     "themes": [
-      "complexes-sportifs"
+      "gym-fitness"
     ],
     "zone": "centre"
   },
@@ -32717,7 +32681,7 @@
     "lat": -20.1085088,
     "lng": 57.6917344,
     "themes": [
-      "complexes-sportifs"
+      "gym-fitness"
     ],
     "zone": "est"
   },
@@ -32732,7 +32696,7 @@
     "lat": -20.2251634,
     "lng": 57.4180437,
     "themes": [
-      "complexes-sportifs"
+      "gym-fitness"
     ],
     "zone": "centre"
   },
@@ -32746,7 +32710,7 @@
     "lat": -20.0469159,
     "lng": 57.6527716,
     "themes": [
-      "complexes-sportifs"
+      "gym-fitness"
     ],
     "zone": "nord"
   },
@@ -32759,7 +32723,7 @@
     "lat": -20.4822573,
     "lng": 57.5576813,
     "themes": [
-      "complexes-sportifs"
+      "gym-fitness"
     ],
     "zone": "sud"
   },
@@ -32773,7 +32737,7 @@
     "lat": -20.0365262,
     "lng": 57.6575676,
     "themes": [
-      "complexes-sportifs"
+      "gym-fitness"
     ],
     "zone": "nord"
   },
@@ -32788,7 +32752,7 @@
     "lat": -20.3195171,
     "lng": 57.5289802,
     "themes": [
-      "complexes-sportifs"
+      "gym-fitness"
     ],
     "zone": "centre"
   },
@@ -32802,7 +32766,7 @@
     "lat": -20.4025627,
     "lng": 57.6015735,
     "themes": [
-      "complexes-sportifs"
+      "gym-fitness"
     ],
     "zone": "sud"
   },
@@ -32816,7 +32780,7 @@
     "lat": -20.2701147,
     "lng": 57.4748698,
     "themes": [
-      "complexes-sportifs"
+      "gym-fitness"
     ],
     "zone": "centre"
   },
@@ -32830,7 +32794,7 @@
     "lat": -20.3089664,
     "lng": 57.5130225,
     "themes": [
-      "complexes-sportifs"
+      "gym-fitness"
     ],
     "zone": "centre"
   },
@@ -32845,7 +32809,7 @@
     "lat": -20.2534203,
     "lng": 57.4915302,
     "themes": [
-      "complexes-sportifs"
+      "gym-fitness"
     ],
     "zone": "centre"
   },
@@ -32859,7 +32823,7 @@
     "lat": -20.4147786,
     "lng": 57.7048841,
     "themes": [
-      "complexes-sportifs"
+      "gym-fitness"
     ],
     "zone": "est"
   },
@@ -32873,7 +32837,7 @@
     "lat": -20.4166985,
     "lng": 57.7090865,
     "themes": [
-      "complexes-sportifs"
+      "gym-fitness"
     ],
     "zone": "est"
   },
@@ -32886,7 +32850,7 @@
     "lat": -20.2312142,
     "lng": 57.4733609,
     "themes": [
-      "complexes-sportifs"
+      "tennis-padel"
     ],
     "zone": "centre"
   },
@@ -32970,7 +32934,7 @@
     "lat": -20.1878676,
     "lng": 57.7178577,
     "themes": [
-      "complexes-sportifs"
+      "gym-fitness"
     ],
     "zone": "est"
   },
@@ -32984,7 +32948,7 @@
     "lat": -20.1680369,
     "lng": 57.7341216,
     "themes": [
-      "complexes-sportifs"
+      "gym-fitness"
     ],
     "zone": "est"
   },
@@ -32998,7 +32962,7 @@
     "lat": -20.2568614,
     "lng": 57.7577268,
     "themes": [
-      "complexes-sportifs"
+      "gym-fitness"
     ],
     "zone": "est"
   },
@@ -33013,7 +32977,7 @@
     "lat": -20.1877556,
     "lng": 57.7178362,
     "themes": [
-      "complexes-sportifs"
+      "gym-fitness"
     ],
     "zone": "est"
   },
@@ -33027,7 +32991,7 @@
     "lat": -20.2563334,
     "lng": 57.7563618,
     "themes": [
-      "complexes-sportifs"
+      "gym-fitness"
     ],
     "zone": "est"
   },
@@ -33067,7 +33031,7 @@
     "lat": -20.2552481,
     "lng": 57.7507233,
     "themes": [
-      "complexes-sportifs"
+      "gym-fitness"
     ],
     "zone": "est"
   },
@@ -33095,7 +33059,7 @@
     "lat": -20.1111513,
     "lng": 57.5697851,
     "themes": [
-      "complexes-sportifs"
+      "gym-fitness"
     ],
     "zone": "nord"
   },
@@ -33122,7 +33086,7 @@
     "lat": -20.1457611,
     "lng": 57.5693715,
     "themes": [
-      "complexes-sportifs"
+      "gym-fitness"
     ],
     "zone": "centre"
   },
@@ -33150,7 +33114,7 @@
     "lat": -20.2752544,
     "lng": 57.466499,
     "themes": [
-      "complexes-sportifs"
+      "gym-fitness"
     ],
     "zone": "centre"
   },
@@ -33178,7 +33142,7 @@
     "lat": -20.2022929,
     "lng": 57.7299408,
     "themes": [
-      "complexes-sportifs"
+      "gym-fitness"
     ],
     "zone": "est"
   },
@@ -33220,7 +33184,7 @@
     "lat": -20.1908706,
     "lng": 57.4894153,
     "themes": [
-      "complexes-sportifs"
+      "gym-fitness"
     ],
     "zone": "centre"
   },
@@ -33248,7 +33212,7 @@
     "lat": -20.1762426,
     "lng": 57.5158417,
     "themes": [
-      "complexes-sportifs"
+      "gym-fitness"
     ],
     "zone": "centre"
   },
@@ -33262,7 +33226,7 @@
     "lat": -20.1547962,
     "lng": 57.5734467,
     "themes": [
-      "complexes-sportifs"
+      "gym-fitness"
     ],
     "zone": "centre"
   },
@@ -33277,7 +33241,7 @@
     "lat": -20.1622101,
     "lng": 57.5060245,
     "themes": [
-      "complexes-sportifs"
+      "gym-fitness"
     ],
     "zone": "centre"
   },
@@ -33292,7 +33256,7 @@
     "lat": -20.2328853,
     "lng": 57.4992228,
     "themes": [
-      "complexes-sportifs"
+      "gym-fitness"
     ],
     "zone": "centre"
   },
@@ -33334,7 +33298,7 @@
     "lat": -20.1509075,
     "lng": 57.5723533,
     "themes": [
-      "complexes-sportifs"
+      "gym-fitness"
     ],
     "zone": "centre"
   },
@@ -33348,7 +33312,7 @@
     "lat": -20.1518067,
     "lng": 57.52183,
     "themes": [
-      "complexes-sportifs"
+      "gym-fitness"
     ],
     "zone": "centre"
   },
@@ -33363,7 +33327,7 @@
     "lat": -20.2695042,
     "lng": 57.4726126,
     "themes": [
-      "complexes-sportifs"
+      "tennis-padel"
     ],
     "zone": "centre"
   },
@@ -33377,7 +33341,7 @@
     "lat": -20.2694759,
     "lng": 57.4726181,
     "themes": [
-      "complexes-sportifs"
+      "tennis-padel"
     ],
     "zone": "centre"
   },
@@ -33559,7 +33523,8 @@
     "lat": -20.3299038,
     "lng": 57.3807458,
     "themes": [
-      "complexes-sportifs"
+      "complexes-sportifs",
+      "gym-fitness"
     ],
     "zone": "ouest"
   },
@@ -35818,6 +35783,41 @@
       "boulangeries",
       "produits-francais"
     ],
+    "zone": "nord"
+  },
+  {
+    "id": "boucle-courte-7-cascades",
+    "name": "Boucle courte des 7 Cascades",
+    "category": "activites",
+    "address": "Départ près de Henrietta, Réservoir de Tamarin (secteur Tamarind Falls)",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Tamarind%20Falls%20Seven%20Cascades%20hiking%20Mauritius",
+    "lat": -20.3403,
+    "lng": 57.4858,
+    "themes": [
+      "randonnee-trail"
+    ],
+    "duration": "~2h",
+    "difficultyLevel": "debutant",
+    "guideRecommended": false,
+    "description": "2,3 km en boucle, 116 m de dénivelé positif, environ 2h. Version courte et accessible le long de la rivière Tamarin jusqu'aux premières vasques des 7 Cascades, avec possibilité de baignade selon la saison. Chaussures à bonne adhérence recommandées, sentier glissant après la pluie.",
+    "zone": "ouest"
+  },
+  {
+    "id": "ad-events-ecole-du-nord",
+    "name": "AD Events (Ecole du Nord)",
+    "category": "activites",
+    "address": "Village Labourdonnais, Mapou",
+    "phone": "+230 266 3009",
+    "website": "https://www.edn-adeventsports.com",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Ecole%20du%20Nord%20Mapou%20Mauritius",
+    "lat": -20.0758,
+    "lng": 57.6014,
+    "themes": [
+      "centres-loisirs-animations-enfants"
+    ],
+    "description": "Club de vacances, centre aéré et activités périscolaires de l'École du Nord (Mapou).",
     "zone": "nord"
   }
 ]
