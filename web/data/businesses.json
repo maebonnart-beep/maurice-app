@@ -3208,7 +3208,9 @@
     "duration": "~3h (cascade) ; ~1h (terres des 7 couleurs)",
     "difficultyLevel": "habitue",
     "guideRecommended": true,
-    "zone": "ouest"
+    "zone": "ouest",
+    "distance": "6 km",
+    "description": "Boucle de 6 km menant à la cascade de 100 m et aux dunes de sable multicolores, avec parfois des tortues géantes en chemin."
   },
   {
     "id": "lion-mountain",
@@ -3248,7 +3250,8 @@
     "duration": "4h-5h aller-retour",
     "difficultyLevel": "confirme",
     "guideRecommended": true,
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Ascension technique vers le deuxième plus haut sommet de l'île (820 m), au départ du village de La Laura ; pentes raides et usage de cordes pour l'approche finale du rocher sommital."
   },
   {
     "id": "le-pouce-mountain",
@@ -3351,7 +3354,8 @@
     "duration": "1h30 à 4h selon circuit (5 à 13km)",
     "difficultyLevel": "habitue",
     "guideRecommended": true,
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Trois parcours balisés (bleu 5 km/75 m D+, jaune 13 km/530 m D+, rouge 18-20 km/970 m D+) en forêt endémique protégée, avec vue sur la baie de Mahébourg et observation possible de la crécerelle de Maurice."
   },
   {
     "id": "ile-aux-aigrettes",
@@ -3370,7 +3374,8 @@
     "duration": "1h30-2h (visite guidée)",
     "difficultyLevel": "debutant",
     "guideRecommended": true,
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Îlot-sanctuaire accessible en visite guidée par bateau (10 min de traversée depuis Pointe Jérôme), où évoluent en liberté tortues géantes d'Aldabra, geckos ornés et pigeons roses."
   },
   {
     "id": "domaine-de-letoile",
@@ -3388,7 +3393,9 @@
     "duration": "1h-3h selon circuit (jusqu'à 8km)",
     "difficultyLevel": "debutant",
     "guideRecommended": true,
-    "zone": "centre"
+    "zone": "centre",
+    "entryPrice": "Rs 250 adulte / Rs 175 enfant (boucle libre) ; ~Rs 2500/pers. (guidée)",
+    "description": "Réserve privée avec boucle en accès libre de 7 km (~2h) ou sortie guidée de 3h, peuplée de cerfs, sangliers et oiseaux endémiques comme la crécerelle de Maurice."
   },
   {
     "id": "yemen-nature-reserve",
@@ -3407,7 +3414,8 @@
     "duration": "Variable selon parcours (5 à 13km)",
     "difficultyLevel": "habitue",
     "guideRecommended": true,
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Domaine privé de savane africaine (acacias, cerfs) à parcourir à pied ou en vélo électrique sur le Medine Trail, avec vue sur mer ; accès restreint en période de chasse (juin-septembre)."
   },
   {
     "id": "bel-ombre-hiking-trail",
@@ -3425,7 +3433,8 @@
     "duration": "4h-5h (sentier principal 7,6km)",
     "difficultyLevel": "habitue",
     "guideRecommended": true,
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Randonnée guidée de 2h à travers la forêt endémique de la réserve, avec une halte rafraîchissante à une cascade en cours de route."
   },
   {
     "id": "grand-bassin-ganga-talao",
@@ -3437,9 +3446,7 @@
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Grand%20Bassin%20Ganga%20Talao%20Mauritius",
     "lat": -20.4189,
     "lng": 57.4886,
-    "themes": [
-      "randonnee-trail"
-    ],
+    "themes": [],
     "hours": "Temple 5h-12h & 13h-18h, site accessible en permanence",
     "duration": "1h-2h (tour du lac + temples + 108 marches)",
     "distance": "2,6 km",
@@ -3466,7 +3473,8 @@
     "duration": "2h-3h",
     "difficultyLevel": "habitue",
     "guideRecommended": true,
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Réserve de 1300 hectares intégrée au domaine de Bel Ombre, sentiers de 1h à une journée selon le circuit, dont le Two Waterfalls Trail menant à la cascade L'Exemple."
   },
   {
     "id": "domaine-anna-flic-en-flac",
@@ -12562,8 +12570,7 @@
     "lat": -20.4403774,
     "lng": 57.4581699,
     "themes": [
-      "parcs-nationaux-cascades",
-      "randonnee-trail"
+      "parcs-nationaux-cascades"
     ],
     "promoText": "Randonnée pour marcheurs confirmés.",
     "duration": "4h-5h aller-retour",
@@ -17422,7 +17429,12 @@
     "themes": [
       "randonnee-trail"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "distance": "3,1 km",
+    "elevationGain": "432 m D+",
+    "duration": "2h05, boucle",
+    "difficultyLevel": "confirme",
+    "description": "Boucle pentue et technique jusqu'au sommet de la Tourelle du Tamarin, point de vue à 360°, avec des cordes fixes sur les passages les plus raides."
   },
   {
     "id": "gorges-viewpoint",
@@ -17468,7 +17480,11 @@
     "themes": [
       "randonnee-trail"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "distance": "4,6 km (aller simple)",
+    "elevationGain": "721 m D+",
+    "difficultyLevel": "confirme",
+    "description": "Sentier Machabée exigeant menant au point culminant de l'île (828 m) par le versant nord du Piton de la Petite Rivière Noire."
   },
   {
     "id": "salines-de-yemen-tamarin",
@@ -17495,9 +17511,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=11699566664869769216&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.2499364,
     "lng": 57.3833363,
-    "themes": [
-      "randonnee-trail"
-    ],
+    "themes": [],
     "zone": "ouest"
   },
   {
@@ -17645,7 +17659,9 @@
     "duration": "2h30 (version courte, 10.8km), plus si intégral",
     "difficultyLevel": "debutant",
     "guideRecommended": false,
-    "zone": "ouest"
+    "zone": "ouest",
+    "distance": "9,2 km",
+    "description": "Balade côtière reliant les plages de Tamarin et de Flic en Flac le long du littoral rocheux, avec vue continue sur le lagon et les collines de l'ouest."
   },
   {
     "id": "golden-wave-charters-big-game-fishing-igfa-captain-victor-pe",
@@ -21054,9 +21070,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=2216346035158716349&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.3161875,
     "lng": 57.6906875,
-    "themes": [
-      "randonnee-trail"
-    ],
+    "themes": [],
     "zone": "est"
   },
   {
@@ -21192,7 +21206,9 @@
       "randonnee-trail"
     ],
     "zone": "centre",
-    "isAgency": true
+    "isAgency": true,
+    "duration": "~3h30-4h de marche",
+    "description": "Agence locale organisant des sorties de randonnée guidées d'environ 3h30 à 4h à travers l'île."
   },
   {
     "id": "sublime-point",
@@ -21204,9 +21220,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=12658710268544312044&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.430543,
     "lng": 57.3743012,
-    "themes": [
-      "randonnee-trail"
-    ],
+    "themes": [],
     "difficultyLevel": "debutant",
     "guideRecommended": false,
     "zone": "sud"
@@ -21243,7 +21257,10 @@
     "duration": "30-40 min (2.5km) ; jusqu'à 2h15-5h si combiné",
     "difficultyLevel": "debutant",
     "guideRecommended": false,
-    "zone": "sud"
+    "zone": "sud",
+    "distance": "5,6 km",
+    "elevationGain": "217 m D+",
+    "description": "Traversée forestière tranquille jusqu'à un plateau isolé du parc national des Gorges de Rivière Noire, apprécié pour son calme, loin des sentiers les plus fréquentés."
   },
   {
     "id": "hiking-in-mauritius-zilwaventure",
@@ -24196,9 +24213,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=10801883596028035330&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.5015491,
     "lng": 57.5443909,
-    "themes": [
-      "randonnee-trail"
-    ],
+    "themes": [],
     "zone": "sud"
   },
   {
@@ -24296,7 +24311,10 @@
     "duration": "~2h aller-retour",
     "difficultyLevel": "debutant",
     "guideRecommended": false,
-    "zone": "centre"
+    "zone": "centre",
+    "distance": "3 km",
+    "elevationGain": "280 m D+",
+    "description": "Montée courte et accessible sur route asphaltée depuis Port-Louis, avec vue panoramique sur la capitale, le port et la côte ouest ; sentier prisé au coucher de soleil."
   },
   {
     "id": "domaine-de-saint-aubin-le-saint-aubin-restaurant",
@@ -26779,7 +26797,7 @@
     "zone": "est",
     "distance": "5,3 km",
     "elevationGain": "76 m D+",
-    "description": "Boucle plane et ombragée dans une forêt d'espèces exotiques et d'un ancien verger, propice à l'observation du gobemouche de paradis, avec les ruines d'un moulin sucrier du XIXe siècle en chemin."
+    "description": "Boucle ombragée dans une forêt de mahogany et de vergers, passant par les ruines d'une ancienne usine sucrière (Puits Français) et le lac Mare Sarcelle ; oiseaux tropicaux et singes macaques fréquents."
   },
   {
     "id": "calypso-excursion-mauritius",
@@ -26827,7 +26845,8 @@
     "duration": "2h-3h",
     "difficultyLevel": "debutant",
     "guideRecommended": false,
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Réserve de 275 hectares avec deux sentiers : la boucle facile de la Cascade Tortue et le sentier plus technique du Mirador (Tambalacoque), avec vues sur les monts Lagrave et Laselle."
   },
   {
     "id": "escale-marine",
@@ -34603,7 +34622,9 @@
     "themes": [
       "randonnee-trail"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "duration": "2h-5h selon circuit",
+    "description": "Parcours guidés dans la réserve de biosphère de Bel Ombre, entre forêt dense, cascades secrètes et points de vue sur la côte sud, avec possibilité de baignade."
   },
   {
     "id": "flacq-retail-park",
