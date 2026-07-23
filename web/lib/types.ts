@@ -53,6 +53,10 @@ export type Business = {
   entryPrice?: string;
   /** Durée moyenne/approximative de l'activité, ex: "2h30". Parcs-aventures, randonnée-trail. */
   duration?: string;
+  /** Distance du sentier, ex: "6,9 km". Randonnée-trail. */
+  distance?: string;
+  /** Dénivelé positif, ex: "456 m D+". Randonnée-trail. */
+  elevationGain?: string;
   /** Niveau de pratique. Randonnée-trail. */
   difficultyLevel?: "debutant" | "habitue" | "confirme";
   /** Présence d'un guide conseillée. Randonnée-trail. */

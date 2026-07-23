@@ -90,6 +90,8 @@ function badgeAccentColor(badge?: Business["badge"]): string | undefined {
 
 function metaFacts(b: Business): { icon: string; label: string }[] {
   const facts: { icon: string; label: string }[] = [];
+  if (b.distance) facts.push({ icon: "📏", label: b.distance });
+  if (b.elevationGain) facts.push({ icon: "⛰️", label: b.elevationGain });
   if (b.duration) facts.push({ icon: "⏱️", label: b.duration });
   if (b.entryPrice) facts.push({ icon: "🎟️", label: b.entryPrice });
   if (b.difficultyLevel) facts.push({ icon: "🥾", label: DIFFICULTY_LABELS[b.difficultyLevel] });
