@@ -7567,9 +7567,15 @@
     "lat": -20.4376375,
     "lng": 57.3738771,
     "themes": [
-      "parcs-nationaux-cascades"
+      "parcs-nationaux-cascades",
+      "randonnee-trail"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "distance": "4,8 km",
+    "elevationGain": "259 m D+",
+    "duration": "1,5-2h, aller-retour",
+    "difficultyLevel": "habitue",
+    "description": "Traversée de la forêt d'ébène restaurée, riche en espèces endémiques, avant une montée finale vers le belvédère du Piton Canot dominant tout l'ouest de l'île."
   },
   {
     "id": "rocher-de-crystal",
@@ -17985,9 +17991,15 @@
     "lat": -20.3918097,
     "lng": 57.4468828,
     "themes": [
-      "parcs-nationaux-cascades"
+      "parcs-nationaux-cascades",
+      "randonnee-trail"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "distance": "8,4 km",
+    "elevationGain": "302 m D+",
+    "duration": "2,5-3h, boucle",
+    "difficultyLevel": "habitue",
+    "description": "Longue boucle en forêt indigène du plateau, ponctuée par la cascade cachée de la Mare aux Joncs, entre sous-bois dense et clairières ouvertes."
   },
   {
     "id": "casa-events-renting-jumping-castle-chateau-gonflable-mauriti",
@@ -20632,9 +20644,15 @@
     "lat": -20.4304733,
     "lng": 57.3789051,
     "themes": [
-      "excursions"
+      "excursions",
+      "randonnee-trail"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "distance": "2,7 km",
+    "elevationGain": "208 m D+",
+    "duration": "Aller-retour",
+    "difficultyLevel": "habitue",
+    "description": "Montée régulière mais escarpée par endroits, alternant sections boueuses et vue dégagée, jusqu'au sommet du Piton du Canot au cœur du parc national des Gorges de Rivière Noire."
   },
   {
     "id": "mauritius-dolphin-swimming-snorkling-ile-aux-benitiers-live-",
@@ -26755,10 +26773,13 @@
     "themes": [
       "randonnee-trail"
     ],
-    "duration": "~2h (vers Poste Lafayette) ; boucles courtes ~1h-1h30",
+    "duration": "1-1,5h (Coq de Bois Loop, boucle)",
     "difficultyLevel": "debutant",
     "guideRecommended": false,
-    "zone": "est"
+    "zone": "est",
+    "distance": "5,3 km",
+    "elevationGain": "76 m D+",
+    "description": "Boucle plane et ombragée dans une forêt d'espèces exotiques et d'un ancien verger, propice à l'observation du gobemouche de paradis, avec les ruines d'un moulin sucrier du XIXe siècle en chemin."
   },
   {
     "id": "calypso-excursion-mauritius",
