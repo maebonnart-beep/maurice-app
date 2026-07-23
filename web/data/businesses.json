@@ -3164,10 +3164,12 @@
     ],
     "hours": "Sentier ouvert tous les jours 6h-16h (départ conseillé 6h30)",
     "duration": "3h-4h aller-retour",
+    "distance": "6,9 km",
+    "elevationGain": "456 m D+",
     "difficultyLevel": "confirme",
     "guideRecommended": true,
     "zone": "ouest",
-    "description": "6,9 km aller-retour, 456 m de dénivelé positif. Piste large en forêt sèche jusqu'au panneau d'avertissement, puis escalade technique (mains libres, passages exposés) jusqu'à la croix sommitale (490 m). Vue sur les récifs du sud-ouest et la célèbre \"cascade sous-marine\". Site classé UNESCO ; guide recommandé pour la partie finale, départ tôt conseillé."
+    "description": "Piste large en forêt sèche jusqu'au panneau d'avertissement, puis escalade technique (mains libres, passages exposés) vers la croix sommitale. Vue sur les récifs du sud-ouest et la \"cascade sous-marine\". Site classé UNESCO ; guide recommandé pour la partie finale."
   },
   {
     "id": "black-river-gorges-national-park",
@@ -3223,10 +3225,12 @@
     ],
     "hours": "Tous les jours, départ vers 9h",
     "duration": "3h-5h aller-retour",
+    "distance": "4,8 km",
+    "elevationGain": "500 m D+",
     "difficultyLevel": "confirme",
     "guideRecommended": true,
     "zone": "sud",
-    "description": "4,8 km, 500 m de dénivelé positif. Traversée de champs de canne à sucre puis ascension technique de l'arête rocheuse jusqu'à la \"Tête de Lion\", passage exposé demandant de la précision. Panorama à 360° sur le lagon, la ceinture sucrière et le site de la bataille navale de Grand Port (1810). À éviter par temps humide (sol argileux glissant) ; pensez au répulsif anti-moustiques."
+    "description": "Traversée de champs de canne à sucre puis ascension technique de l'arête rocheuse jusqu'à la \"Tête de Lion\", passage exposé. Panorama à 360° sur le lagon et la ceinture sucrière. À éviter par temps humide ; pensez au répulsif anti-moustiques."
   },
   {
     "id": "pieter-both-mountain",
@@ -3260,10 +3264,12 @@
       "randonnee-trail"
     ],
     "duration": "3h-4h aller-retour",
+    "distance": "4,3 km",
+    "elevationGain": "370 m D+",
     "difficultyLevel": "habitue",
     "guideRecommended": true,
     "zone": "centre",
-    "description": "4,3 km aller-retour, 370 m de dénivelé positif. Départ du village de Petit Verger (Saint-Pierre), sentier balisé à travers cannes à sucre et forêt avant une montée rocailleuse vers le sommet du Pouce (812 m), 3ᵉ plus haut sommet de l'île. Vue à 360° sur Port-Louis, la chaîne de Moka et les îles du Nord. Terrain glissant après la pluie, bonnes chaussures indispensables."
+    "description": "Départ de Petit Verger, sentier balisé à travers cannes à sucre et forêt avant une montée rocailleuse vers le sommet du Pouce, 3ᵉ plus haut sommet de l'île. Vue à 360° sur Port-Louis et la chaîne de Moka."
   },
   {
     "id": "trois-mamelles",
@@ -3279,9 +3285,12 @@
       "randonnee-trail"
     ],
     "duration": "3h-4h aller-retour",
+    "distance": "4,2 km",
+    "elevationGain": "255 m D+",
     "difficultyLevel": "confirme",
     "guideRecommended": true,
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Traversée d'un champ agricole puis crête rocheuse étroite jusqu'à la selle des Trois Mamelles, final vertigineux entre corniches et à-pics, avec vue globale sur l'île."
   },
   {
     "id": "corps-de-garde",
@@ -3297,8 +3306,11 @@
       "randonnee-trail"
     ],
     "duration": "3h-4h (jusqu'à 5h) aller-retour",
+    "distance": "5,1 km",
+    "elevationGain": "593 m D+",
     "difficultyLevel": "habitue",
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Montée soutenue vers le rocher perché emblématique de Beau Bassin-Rose Hill, panorama à 360° sur la côte ouest, les plaines centrales et Pieter Both."
   },
   {
     "id": "tamarin-sept-cascades",
@@ -3315,10 +3327,12 @@
       "parcs-nationaux-cascades"
     ],
     "duration": "~3h (jusqu'à 4h)",
+    "distance": "5,8 km",
+    "elevationGain": "327 m D+",
     "difficultyLevel": "habitue",
     "guideRecommended": true,
     "zone": "ouest",
-    "description": "5,8 km en boucle, 327 m de dénivelé positif, environ 3-4h. Descente technique dans les gorges de la rivière Tamarin le long des 7 Cascades (la principale chute avoisinant 300 m) : parois de basalte glissantes, passages à la corde, baignades possibles dans les vasques. Terrain exigeant, risque de crue soudaine — guide local fortement recommandé."
+    "description": "Descente technique dans les gorges de la rivière Tamarin le long des 7 Cascades (chute principale d'environ 300 m), parois de basalte glissantes, passages à la corde. Baignades possibles dans les vasques ; guide local fortement recommandé."
   },
   {
     "id": "vallee-de-ferney",
@@ -3428,9 +3442,12 @@
     ],
     "hours": "Temple 5h-12h & 13h-18h, site accessible en permanence",
     "duration": "1h-2h (tour du lac + temples + 108 marches)",
+    "distance": "2,6 km",
+    "elevationGain": "52 m D+",
     "difficultyLevel": "debutant",
     "guideRecommended": false,
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Balade tranquille jusqu'au lac de cratère sacré, entouré de statues hindoues monumentales et de temples colorés, dans les hauteurs du Savanne."
   },
   {
     "id": "frederica-nature-reserve",
@@ -5007,9 +5024,12 @@
     ],
     "hours": "Sentier ouvert tous les jours, point culminant de l'île (828m)",
     "duration": "3h-4h aller-retour",
+    "distance": "7,1 km",
+    "elevationGain": "273 m D+",
     "difficultyLevel": "confirme",
     "guideRecommended": true,
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Montée régulière depuis le Black River Viewpoint ou Plaine Champagne jusqu'au sommet du Piton, point culminant de l'île, avec panorama sur le parc national et la côte ouest."
   },
   {
     "id": "casela-nature-parks",
@@ -12594,8 +12614,10 @@
     ],
     "zone": "centre",
     "duration": "1h30",
+    "distance": "2,7 km",
+    "elevationGain": "157 m D+",
     "difficultyLevel": "habitue",
-    "description": "2,7 km aller-retour, 157 m de dénivelé positif, environ 1h30. Balade modérée près de St. Martin (Savanne) offrant un point de vue sur la cascade et la végétation environnante. Appréciée pour l'observation des oiseaux ; chiens acceptés. Meilleure période : mars à janvier."
+    "description": "Balade courte près de St. Martin jusqu'à un point de vue sur la cascade et sa végétation environnante, appréciée pour l'observation des oiseaux. Chiens acceptés."
   },
   {
     "id": "cascade-chamouze",
@@ -35799,9 +35821,11 @@
       "randonnee-trail"
     ],
     "duration": "~2h",
+    "distance": "2,3 km",
+    "elevationGain": "116 m D+",
     "difficultyLevel": "debutant",
     "guideRecommended": false,
-    "description": "2,3 km en boucle, 116 m de dénivelé positif, environ 2h. Version courte et accessible le long de la rivière Tamarin jusqu'aux premières vasques des 7 Cascades, avec possibilité de baignade selon la saison. Chaussures à bonne adhérence recommandées, sentier glissant après la pluie.",
+    "description": "Version courte et accessible le long de la rivière Tamarin jusqu'aux premières vasques des 7 Cascades, avec possibilité de baignade selon la saison. Sentier glissant après la pluie.",
     "zone": "ouest"
   },
   {
