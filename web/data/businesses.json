@@ -21279,21 +21279,6 @@
     "isAgency": true
   },
   {
-    "id": "petit-morne",
-    "name": "Petit Morne",
-    "category": "activites",
-    "address": "RHQ2+W3H",
-    "phone": "",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=11060766720528256402&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.1601795,
-    "lng": 57.5502302,
-    "themes": [
-      "randonnee-trail"
-    ],
-    "zone": "centre"
-  },
-  {
     "id": "local-spirit",
     "name": "Local Spirit",
     "category": "activites",
