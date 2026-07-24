@@ -4965,12 +4965,14 @@
     "lng": 57.5222,
     "priceRange": "bon-marche",
     "themes": [
-      "golf"
+      "golf",
+      "tennis-padel"
     ],
     "golfHoles": 9,
     "zone": "centre",
     "photoUrl": "https://images.unsplash.com/photo-1592919505780-303950717480?auto=format&fit=crop&w=800&q=70",
-    "photoCredit": "Photo: Andrew Shelley / Unsplash"
+    "photoCredit": "Photo: Andrew Shelley / Unsplash",
+    "sportsListed": "Padel (3 courts, O2 Padel Pro), coaching"
   },
   {
     "id": "maritim-golf-course-balaclava",
@@ -6377,7 +6379,8 @@
     "golfLength": "4873m",
     "photoUrl": "https://images.unsplash.com/photo-1593282153762-a41e3cceb06c?auto=format&fit=crop&w=800&q=70",
     "photoCredit": "Photo: Matt Aylward / Unsplash",
-    "description": "Le plus ancien club de golf de l'île (fondé vers 1844), quatrième nation golfique au monde à l'époque."
+    "description": "Le plus ancien club de golf de l'île (fondé vers 1844), quatrième nation golfique au monde à l'époque.",
+    "sportsListed": "Tennis (≈18 courts, dur et terre battue), Padel (4 courts), squash, badminton, cricket, piscine"
   },
   {
     "id": "harmonie-golf-beach-estate",
@@ -12722,7 +12725,7 @@
       "complexes-sportifs",
       "tennis-padel"
     ],
-    "sportsListed": "Padel, foot5, pickleball, mini-basket, fitness, danse",
+    "sportsListed": "Padel (3 courts), foot5, pickleball, mini-basket, fitness, danse, boutique",
     "hasRestauration": true,
     "zone": "nord"
   },
@@ -12775,7 +12778,7 @@
     "themes": [
       "tennis-padel"
     ],
-    "sportsListed": "Padel (6 courts), cours individuels/collectifs, tournois",
+    "sportsListed": "Padel (6 courts), cours individuels/collectifs, tournois, proshop, vestiaires",
     "hasRestauration": true,
     "zone": "nord"
   },
@@ -17443,9 +17446,10 @@
     "lat": -20.2769657,
     "lng": 57.3957455,
     "themes": [
-      "complexes-sportifs"
+      "complexes-sportifs",
+      "tennis-padel"
     ],
-    "sportsListed": "Piscine pro, foot (4 terrains 5), tennis/padel, basket/volley, pétanque, jogging, fitness, ~26 activités (yoga, zumba...)",
+    "sportsListed": "Piscine pro, foot (4 terrains 5), Padel (2 courts), basket/volley, pétanque, jogging, fitness, ~26 activités (yoga, zumba...)",
     "hasRestauration": true,
     "kidsActivities": true,
     "zone": "ouest"
@@ -20248,7 +20252,8 @@
     "lat": -20.3299711,
     "lng": 57.3804099,
     "themes": [
-      "sports-bien-etre"
+      "sports-bien-etre",
+      "tennis-padel"
     ],
     "zone": "ouest"
   },
@@ -20263,9 +20268,11 @@
     "lat": -20.369102,
     "lng": 57.3794156,
     "themes": [
-      "sports-bien-etre"
+      "sports-bien-etre",
+      "tennis-padel"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "sportsListed": "Padel (2 courts), club-house, événements"
   },
   {
     "id": "institut-patrice-avrillon",
@@ -21005,7 +21012,7 @@
       "complexes-sportifs",
       "tennis-padel"
     ],
-    "sportsListed": "Padel (4 courts extérieurs), foot5 (adultes et enfants), boutique padel",
+    "sportsListed": "Padel (4 courts extérieurs), foot5 (adultes et enfants), boutique padel, club-house",
     "hasRestauration": true,
     "zone": "ouest"
   },
@@ -29932,7 +29939,8 @@
       "complexes-sportifs"
     ],
     "badge": "coup-de-coeur",
-    "zone": "nord"
+    "zone": "nord",
+    "sportsListed": "Tennis (2 courts, dur), piscine, football, fitness"
   },
   {
     "id": "rm-club-mauritius",
@@ -29946,7 +29954,8 @@
     "themes": [
       "tennis-padel"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "sportsListed": "Tennis (4 courts, dur), Padel (5 courts), squash, badminton, escalade, foot5, fitness"
   },
   {
     "id": "mauritius-tennis-academy-azuri",
@@ -31361,7 +31370,8 @@
     "themes": [
       "tennis-padel"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "sportsListed": "Tennis (4 courts, dur), académie, stages"
   },
   {
     "id": "ennoia-tennis-courts",
@@ -32045,7 +32055,9 @@
     "themes": [
       "tennis-padel"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "sportsListed": "Padel (2 courts), restaurant, bar",
+    "hasRestauration": true
   },
   {
     "id": "petit-camp-tennis-club",
@@ -32059,7 +32071,8 @@
     "themes": [
       "tennis-padel"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "sportsListed": "Tennis (10+ courts, dur), centre national, tribunes"
   },
   {
     "id": "fairplay-tennis-club",
@@ -32774,7 +32787,8 @@
     "themes": [
       "tennis-padel"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "sportsListed": "Tennis (2 courts, dur), coaching"
   },
   {
     "id": "rose-hill-club",
@@ -33251,7 +33265,8 @@
     "themes": [
       "tennis-padel"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "sportsListed": "Tennis (2 courts, dur), académie"
   },
   {
     "id": "popy-tennis-club-of-quatre-bornes",
@@ -33265,7 +33280,8 @@
     "themes": [
       "tennis-padel"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "sportsListed": "Tennis (3 courts, dur), école de tennis"
   },
   {
     "id": "plaine-verte-sports-arena",
@@ -35876,5 +35892,20 @@
     "zone": "est",
     "hours": "Ouvert 24h/24",
     "description": "Réseau de grottes volcaniques (tubes de lave) près du village de Roches Noires, dans le nord-est de l'île. Le sentier des Roches Noires mène à la cavité principale, Princess Margaret Cave, accessible par un large escalier jusqu'à des chambres souterraines, bassins d'eau douce et formations rocheuses. Petit musée sur place expliquant la formation des tubes de lave."
+  },
+  {
+    "id": "tennis-nord",
+    "name": "Tennis Nord",
+    "category": "activites",
+    "address": "WJH7+PV9, Mapou",
+    "phone": "+230 266 8782",
+    "googleMapsUrl": "https://www.google.com/maps/place/Tennis+Nord/@-20.0707036,57.6147407,17z",
+    "lat": -20.0707036,
+    "lng": 57.6147407,
+    "themes": [
+      "tennis-padel"
+    ],
+    "sportsListed": "Tennis (4 courts, dur), club-house, école de tennis",
+    "zone": "nord"
   }
 ]
