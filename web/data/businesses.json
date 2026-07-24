@@ -3188,7 +3188,8 @@
     "duration": "2h30 à 7h30 selon le sentier choisi",
     "difficultyLevel": "habitue",
     "guideRecommended": false,
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Plus grand parc national de l'île, couvrant 2 % de sa surface : dernière forêt tropicale de Maurice, plus de 50 km de sentiers du Black River Peak (828 m, point culminant de l'île) aux promenades faciles. Faune et flore endémiques remarquables (renard volant, macaques, cerfs, plus de 300 espèces de plantes à fleurs, 9 espèces d'oiseaux uniques à Maurice)."
   },
   {
     "id": "chamarel-seven-coloured-earth",
@@ -3319,7 +3320,7 @@
     "name": "Tamarin - Sept Cascades (Tamarind Falls)",
     "category": "activites",
     "address": "Départ près de Henrietta, Réservoir de Tamarin",
-    "phone": "",
+    "phone": "+230 5483 5420",
     "website": "",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Tamarind%20Falls%20Seven%20Cascades%20hiking%20Mauritius",
     "lat": -20.3403,
@@ -3334,7 +3335,7 @@
     "difficultyLevel": "habitue",
     "guideRecommended": true,
     "zone": "ouest",
-    "description": "Descente technique dans les gorges de la rivière Tamarin le long des 7 Cascades (chute principale d'environ 300 m), parois de basalte glissantes, passages à la corde. Baignades possibles dans les vasques ; guide local fortement recommandé."
+    "description": "Descente technique dans les gorges de la rivière Tamarin le long des 7 Cascades (chute principale d'environ 300 m), parois de basalte glissantes, passages à la corde ; possibilité de canyoning (rappels, glissades, sauts) avec un prestataire spécialisé. Baignades possibles dans les vasques ; guide local fortement recommandé."
   },
   {
     "id": "vallee-de-ferney",
@@ -5207,7 +5208,8 @@
       "parcs-nationaux-cascades"
     ],
     "promoText": "Cascade, roches, bassin naturel, baignade.",
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Cascade large de 10 m à 2,5 km du village de Souillac, réputée pour ses parois de basalte fracturées en blocs presque rectangulaires par l'érosion. Accès libre sans guide, parking sur place ; baignade possible avec prudence, débit maximal après les pluies d'été."
   },
   {
     "id": "eureka-house-moka",
@@ -7582,22 +7584,8 @@
     "elevationGain": "259 m D+",
     "duration": "1,5-2h, aller-retour",
     "difficultyLevel": "habitue",
-    "description": "Traversée de la forêt d'ébène restaurée, riche en espèces endémiques, avant une montée finale vers le belvédère du Piton Canot dominant tout l'ouest de l'île."
-  },
-  {
-    "id": "rocher-de-crystal",
-    "name": "Rocher de Crystal",
-    "category": "activites",
-    "address": "MU, coastal road, 91100",
-    "phone": "",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=1208879837143061876&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.4143255,
-    "lng": 57.3375848,
-    "themes": [
-      "parcs-nationaux-cascades"
-    ],
-    "zone": "ouest"
+    "description": "Traversée de la forêt d'ébène restaurée, riche en espèces endémiques, avant une montée finale vers le belvédère du Piton Canot dominant tout l'ouest de l'île. Comptez 1h30 à 4h selon les sentiers choisis.",
+    "hours": "Tous les jours 9h-17h"
   },
   {
     "id": "haras-du-morne",
@@ -12321,7 +12309,8 @@
       "parcs-animaliers"
     ],
     "zone": "sud",
-    "description": "Safari de 2h en 4x4."
+    "description": "Réserve nichée dans le Domaine de Bel Ombre, avec deux cascades se jetant vers l'océan et un point de vue dégagé sur le littoral. Accessible via les activités du domaine Heritage (safari 4x4, tour en bus) ; randonnée guidée incluse pour les résidents des hôtels Heritage Le Telfair et Awali. Guide obligatoire.",
+    "hours": "8h30-17h00"
   },
   {
     "id": "safari-adventures",
@@ -12353,7 +12342,8 @@
     "themes": [
       "parcs-nationaux-cascades"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Parc national créé en 2011, moins fréquenté que les Gorges de Rivière Noire, au nord-est de l'île. Ancienne zone de plantations abritant une biodiversité rare (ébéniers mauriciens géants, Bois de Fer, fougères et orchidées). La boucle du Coq du Bois convient à tous niveaux et traverse un verger de manguiers et litchis ; bonne zone d'observation d'oiseaux (fody de Maurice, gobe-mouches des Mascareignes) et le lac Mare Sarcelle, sanctuaire pour oiseaux migrateurs. Centre d'accueil sur place ; à combiner avec la plage de Poste Lafayette."
   },
   {
     "id": "odysseo-oceanarium-mauritius-ltd",
@@ -12422,21 +12412,6 @@
     "zone": "sud"
   },
   {
-    "id": "macchabee-viewpoint",
-    "name": "Macchabée Viewpoint",
-    "category": "activites",
-    "address": "JC4R+J56, Chamarel",
-    "phone": "",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=5644636859790519605&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.393453,
-    "lng": 57.4403986,
-    "themes": [
-      "parcs-nationaux-cascades"
-    ],
-    "zone": "sud"
-  },
-  {
     "id": "cascade-leon",
     "name": "Cascade Leon",
     "category": "activites",
@@ -12449,7 +12424,8 @@
     "themes": [
       "parcs-nationaux-cascades"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Cascade d'environ 6 m dans la rivière des Anguilles près de Souillac, accessible par un sentier en forêt tropicale puis quelques rochers à franchir. Bassin propice à la baignade, avec une grotte cachée derrière la chute ; bon spot pique-nique."
   },
   {
     "id": "paws",
@@ -12575,7 +12551,8 @@
     "duration": "4h-5h aller-retour",
     "difficultyLevel": "confirme",
     "guideRecommended": true,
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Randonnée exigeante (3h aller-retour) au départ du point de vue des Chutes d'Alexandra dans le Parc national des Gorges de Rivière Noire, jusqu'au bassin au sommet de la Cascade 500 Pieds. Sentier balisé de foulards orange, terrain dangereux ; réservé aux randonneurs expérimentés accompagnés d'un guide certifié."
   },
   {
     "id": "le-chamouze-restaurant-by-valle-advenature-park",
@@ -12629,22 +12606,7 @@
     "distance": "2,7 km",
     "elevationGain": "157 m D+",
     "difficultyLevel": "habitue",
-    "description": "Balade courte près de St. Martin jusqu'à un point de vue sur la cascade et sa végétation environnante, appréciée pour l'observation des oiseaux. Chiens acceptés."
-  },
-  {
-    "id": "cascade-chamouze",
-    "name": "Cascade Chamouzé",
-    "category": "activites",
-    "address": "Unnamed Road, Plaine Champagne, GFQP+XQR, Chamouny",
-    "phone": "",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=11891438260264592475&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.460002,
-    "lng": 57.48689,
-    "themes": [
-      "parcs-nationaux-cascades"
-    ],
-    "zone": "sud"
+    "description": "Balade courte près de St. Martin jusqu'à un point de vue sur la cascade et sa végétation environnante, appréciée pour l'observation des oiseaux. Accessible sans guide depuis le centre d'information du parc, contrairement à la Cascade 500 Pieds voisine — la plus adaptée aux familles. Chiens acceptés."
   },
   {
     "id": "otentic-eco-tent-experience",
@@ -12676,7 +12638,8 @@
     "themes": [
       "parcs-nationaux-cascades"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Cascade d'environ 100 m de haut (la plus haute de l'île), alimentée par les rivières Saint Denis et Viande Salée avant de rejoindre la Baie du Cap. Visible depuis un point de vue sur le sentier menant aux Terres des 7 Couleurs, où les strates de roche volcanique sont bien visibles ; un sentier plus engagé descend jusqu'à la crique de la cascade pour la baignade."
   },
   {
     "id": "mauritius-attractions",
@@ -12961,21 +12924,6 @@
       "plages"
     ],
     "zone": "nord"
-  },
-  {
-    "id": "7-cascade",
-    "name": "7 cascade",
-    "category": "activites",
-    "address": "MF68+25P, Flic en Flac",
-    "phone": "+230 5483 5420",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=11159921699122617574&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.3399108,
-    "lng": 57.4654447,
-    "themes": [
-      "parcs-nationaux-cascades"
-    ],
-    "zone": "ouest"
   },
   {
     "id": "mauritius-guided-tours",
@@ -13389,21 +13337,6 @@
       "activites-enfants-famille"
     ],
     "zone": "nord"
-  },
-  {
-    "id": "chutes-de-tamarin",
-    "name": "Chutes de Tamarin",
-    "category": "activites",
-    "address": "Henrietta Branch Rd",
-    "phone": "",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=11815687722030527513&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.3444078,
-    "lng": 57.4664723,
-    "themes": [
-      "parcs-nationaux-cascades"
-    ],
-    "zone": "centre"
   },
   {
     "id": "club-med-pointe-aux-canonniers-mauritius",
@@ -17401,21 +17334,6 @@
     "zone": "ouest"
   },
   {
-    "id": "black-river-visitors-centre",
-    "name": "Black River Visitors Centre",
-    "category": "activites",
-    "address": "JC8C+HM3, La Preneuse",
-    "phone": "",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=11298888972040309413&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.383602,
-    "lng": 57.4216686,
-    "themes": [
-      "parcs-nationaux-cascades"
-    ],
-    "zone": "ouest"
-  },
-  {
     "id": "tamarin-la-tourelle-black-rock-mauritius",
     "name": "Tamarin, La Tourelle Black Rock, Mauritius",
     "category": "activites",
@@ -17448,7 +17366,8 @@
     "themes": [
       "parcs-nationaux-cascades"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Point de vue situé à l'intérieur du Parc national des Gorges de Rivière Noire, le long de la Plaine Champagne Road."
   },
   {
     "id": "lakaz-kayak-ltd",
@@ -18010,11 +17929,11 @@
       "randonnee-trail"
     ],
     "zone": "centre",
-    "distance": "8,4 km",
-    "elevationGain": "302 m D+",
-    "duration": "2,5-3h, boucle",
+    "distance": "9,20 km",
+    "elevationGain": "240 m D+",
+    "duration": "2h42, boucle",
     "difficultyLevel": "habitue",
-    "description": "Longue boucle en forêt indigène du plateau, ponctuée par la cascade cachée de la Mare aux Joncs, entre sous-bois dense et clairières ouvertes."
+    "description": "Longue boucle en forêt indigène du plateau, ponctuée par la cascade cachée de la Mare aux Joncs, entre sous-bois dense et clairières ouvertes. Point de départ à proximité d'un parking."
   },
   {
     "id": "casa-events-renting-jumping-castle-chateau-gonflable-mauriti",
@@ -21914,21 +21833,6 @@
     "description": "Jardin public historique au cœur de Port-Louis, aménagé dès 1770 sous l'administration Decaen, planté de vieux banians et haut lieu de rassemblements populaires."
   },
   {
-    "id": "la-nicoliere-viewpoint",
-    "name": "La Nicolière Viewpoint",
-    "category": "activites",
-    "address": "B49",
-    "phone": "",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=17318035148116312594&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.16247,
-    "lng": 57.6228699,
-    "themes": [
-      "parcs-nationaux-cascades"
-    ],
-    "zone": "sud"
-  },
-  {
     "id": "ruisseau-creole",
     "name": "Ruisseau Creole",
     "category": "activites",
@@ -24052,7 +23956,8 @@
     "themes": [
       "parcs-nationaux-cascades"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Cascade discrète dans le sud sauvage de l'île, près de Souillac, surtout connue des habitants ; guide recommandé pour trouver le sentier. À proximité de la plage de Gris Gris et du site de la Roche Qui Pleure. Environ 4 km, 2h aller-retour."
   },
   {
     "id": "roche-qui-pleure",
@@ -24246,22 +24151,8 @@
     "themes": [
       "parcs-nationaux-cascades"
     ],
-    "zone": "est"
-  },
-  {
-    "id": "baie-du-jacotet",
-    "name": "Baie du Jacotet",
-    "category": "activites",
-    "address": "FCXW+HFC, Bel Ombre",
-    "phone": "",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=371396553297542256&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.5010625,
-    "lng": 57.4461422,
-    "themes": [
-      "parcs-nationaux-cascades"
-    ],
-    "zone": "sud"
+    "zone": "est",
+    "description": "Section accidentée de la Grande Rivière Sud-Est, avec rapides sur roche volcanique noire aboutissant à une cascade où l'on peut nager et sauter depuis les rochers. Généralement visitée en bateau depuis le village voisin ; la randonnée le long de la rivière offre une expérience plus complète (environ 1h aller-retour). Guide, informations et location de kayak disponibles chez Otentic à proximité."
   },
   {
     "id": "la-cambuse-beach-2",
@@ -24299,21 +24190,6 @@
     "distance": "3 km",
     "elevationGain": "280 m D+",
     "description": "Montée courte et accessible sur route asphaltée depuis Port-Louis, avec vue panoramique sur la capitale, le port et la côte ouest ; sentier prisé au coucher de soleil."
-  },
-  {
-    "id": "domaine-de-saint-aubin-le-saint-aubin-restaurant",
-    "name": "Domaine de Saint Aubin / Le Saint Aubin Restaurant",
-    "category": "activites",
-    "address": "Saint Aubin, A9, St Aubin",
-    "phone": "+230 626 1819",
-    "website": "https://groupe-saintaubin.com/saint-aubin-loisirs/domaine-de-saint-aubin/auberge-de-saint-aubin/",
-    "googleMapsUrl": "https://maps.google.com/?cid=2533630118055846895&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.5012019,
-    "lng": 57.5435746,
-    "themes": [
-      "parcs-nationaux-cascades"
-    ],
-    "zone": "sud"
   },
   {
     "id": "royal-big-game-fishing-original",
@@ -35869,5 +35745,136 @@
     ],
     "description": "Club de vacances, centre aéré et activités périscolaires de l'École du Nord (Mapou).",
     "zone": "nord"
+  },
+  {
+    "id": "cascade-eau-bleue",
+    "name": "Cascade d'Eau Bleue",
+    "category": "activites",
+    "address": "JJHF+7H, Mare Chicose",
+    "phone": "+230 5251 5662",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/place/JJHF%2B7H,+Mare+Chicose/@-20.3718125,57.6239375,17z",
+    "lat": -20.3718125,
+    "lng": 57.6239375,
+    "themes": [
+      "parcs-nationaux-cascades"
+    ],
+    "zone": "est",
+    "description": "Réseau de cascades caché en forêt tropicale, formé de trois chutes principales (environ 15 m) aux bassins turquoise ; jusqu'à 13 cascades sur l'ensemble du site. Sentiers escarpés et non balisés, guide recommandé ; canyoning possible (rappel) à partir de 60 € par personne."
+  },
+  {
+    "id": "cascades-eureka",
+    "name": "Les cascades d'Eureka",
+    "category": "activites",
+    "address": "Eureka Lane, Moka",
+    "phone": "+230 433 8477",
+    "website": "http://maison-eureka.restaurant.mu/",
+    "googleMapsUrl": "https://www.google.com/maps/place/Maison+Eureka/@-20.2179404,57.4978549,17z",
+    "lat": -20.2179404,
+    "lng": 57.4978549,
+    "themes": [
+      "parcs-nationaux-cascades",
+      "activites-enfants-famille"
+    ],
+    "zone": "centre",
+    "description": "Petites cascades faciles d'accès dans les jardins du domaine de la Maison Eureka, demeure créole de 1830 à Moka. Visite combinée maison + jardins, adaptée à toute la famille ; accès payant inclus dans le billet de la Maison Eureka."
+  },
+  {
+    "id": "cascade-sous-marine-le-morne",
+    "name": "La cascade sous-marine du Morne",
+    "category": "activites",
+    "address": "Le Morne, Rivière Noire",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Le%20Morne%20Brabant%20hiking%20trail%20Mauritius",
+    "lat": -20.4547,
+    "lng": 57.3106,
+    "themes": [
+      "parcs-nationaux-cascades"
+    ],
+    "zone": "ouest",
+    "description": "Illusion d'optique créée par des courants de sable et de limon tombant depuis la falaise sous-marine au large de la pointe du Morne, à environ 4 000 m de profondeur. Visible uniquement depuis les airs (hélicoptère ou hydravion) ; circuits combinant Le Morne Brabant et les Terres des 7 Couleurs de Chamarel."
+  },
+  {
+    "id": "viator-cascades",
+    "name": "Viator",
+    "category": "activites",
+    "address": "Site web / réservation en ligne",
+    "phone": "",
+    "website": "https://www.viator.com/",
+    "themes": [
+      "parcs-nationaux-cascades",
+      "excursions"
+    ],
+    "description": "Agence d'excursion en ligne : plus de 15 excursions cascades référencées à Maurice, avis vérifiés, annulation gratuite jusqu'à 24h avant."
+  },
+  {
+    "id": "getyourguide-cascades",
+    "name": "GetYourGuide",
+    "category": "activites",
+    "address": "Site web / réservation en ligne",
+    "phone": "",
+    "website": "https://www.getyourguide.fr/",
+    "themes": [
+      "parcs-nationaux-cascades",
+      "excursions"
+    ],
+    "description": "Agence d'excursion en ligne : excursions guidées Sept Cascades (Tamarin) à partir de 79 €."
+  },
+  {
+    "id": "excursion-ile-maurice-cascades",
+    "name": "excursionilemaurice.com",
+    "category": "activites",
+    "address": "Site web / réservation en ligne",
+    "phone": "",
+    "website": "https://www.excursionilemaurice.com/",
+    "themes": [
+      "parcs-nationaux-cascades",
+      "excursions"
+    ],
+    "description": "Agence d'excursion locale spécialiste des cascades de Tamarin, avec transfert et déjeuner inclus."
+  },
+  {
+    "id": "visiter-ile-maurice-cascades",
+    "name": "visiterilemaurice.com",
+    "category": "activites",
+    "address": "Site web / réservation en ligne",
+    "phone": "",
+    "website": "https://www.visiterilemaurice.com/",
+    "themes": [
+      "parcs-nationaux-cascades",
+      "excursions"
+    ],
+    "description": "Agence d'excursion locale : randonnée guidée des 7 Cascades avec guide certifié."
+  },
+  {
+    "id": "checkyeti-cascades",
+    "name": "CheckYeti",
+    "category": "activites",
+    "address": "Site web / réservation en ligne",
+    "phone": "",
+    "website": "https://www.checkyeti.com/",
+    "themes": [
+      "parcs-nationaux-cascades",
+      "excursions"
+    ],
+    "description": "Comparateur d'agences d'excursion en ligne, avec filtres dédiés randonnée et cascade."
+  },
+  {
+    "id": "roches-noires-lava-tubes",
+    "name": "Roches Noires Lava Tubes",
+    "category": "activites",
+    "address": "VPM5+2P7, Plaine des Roches",
+    "phone": "",
+    "website": "https://exploremauritius.org/",
+    "googleMapsUrl": "https://www.google.com/maps/place/Roche+Noire+Lava+Tubes/@-20.1174653,57.7093085,17z",
+    "lat": -20.1174653,
+    "lng": 57.7093085,
+    "themes": [
+      "parcs-nationaux-cascades"
+    ],
+    "zone": "est",
+    "hours": "Ouvert 24h/24",
+    "description": "Réseau de grottes volcaniques (tubes de lave) près du village de Roches Noires, dans le nord-est de l'île. Le sentier des Roches Noires mène à la cavité principale, Princess Margaret Cave, accessible par un large escalier jusqu'à des chambres souterraines, bassins d'eau douce et formations rocheuses. Petit musée sur place expliquant la formation des tubes de lave."
   }
 ]
