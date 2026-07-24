@@ -122,7 +122,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
   const [resultsView, setResultsView] = useState<"liste" | "carte">("liste");
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [hoveredId, setHoveredId] = useState<string | null>(null);
-  const [filterByMap, setFilterByMap] = useState(true);
+  const [filterByMap, setFilterByMap] = useState(false);
   const [mapBounds, setMapBounds] = useState<MapBounds | null>(null);
   const cardRefs = useRef<Record<string, HTMLElement | null>>({});
 
@@ -326,15 +326,16 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
     }
 
     const allEntries: { key: string; header?: string; row: { key: string; label: string; emoji: string } }[] = [];
-    fams?.forEach((f) => {
+    function pushFamily(f: NonNullable<typeof fams>[number]) {
       f.children.forEach((childKey) => {
         const child = cats.find((s) => s.key === childKey);
         if (child) allEntries.push({ key: child.key, header: f.label, row: child });
       });
-    });
-    [...ungrouped, { key: UNCLASSIFIED, label: "Non classé", emoji: "❔" }].forEach((t) => {
-      allEntries.push({ key: t.key, row: t });
-    });
+    }
+    fams?.filter((f) => f.position !== "end").forEach(pushFamily);
+    ungrouped.forEach((t) => allEntries.push({ key: t.key, row: t }));
+    fams?.filter((f) => f.position === "end").forEach(pushFamily);
+    allEntries.push({ key: UNCLASSIFIED, row: { key: UNCLASSIFIED, label: "Non classé", emoji: "❔" } });
 
     const expanded = expandedInSidebar.has(catKey);
     const visibleEntries = expanded ? allEntries : allEntries.slice(0, SIDEBAR_VISIBLE_RUBRIQUES);

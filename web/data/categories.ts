@@ -26,6 +26,8 @@ export type Family = {
   children: string[];
   /** Sous-groupes nichés sous un thème précis de `children` (ex: cuisines sous "restaurants"). */
   subgroups?: Subgroup[];
+  /** "end" affiche ce groupe après toutes les rubriques non groupées, au lieu de l'ordre de déclaration. */
+  position?: "end";
 };
 
 export const FAMILIES: Partial<Record<CategoryKey, Family[]>> = {
@@ -87,6 +89,7 @@ export const FAMILIES: Partial<Record<CategoryKey, Family[]>> = {
       key: "malls-shopping",
       label: "Malls & shopping",
       emoji: "🛍️",
+      position: "end",
       children: ["malls", "shopping"],
       subgroups: [
         {
