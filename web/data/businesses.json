@@ -5445,7 +5445,8 @@
     "beachLength": "Environ 500 m à 3 km selon les sources",
     "zone": "sud",
     "photoUrl": "https://images.unsplash.com/photo-1513415431848-a433b3de449f",
-    "photoCredit": "Xavier Coiffic / Unsplash"
+    "photoCredit": "Xavier Coiffic / Unsplash",
+    "description": "La péninsule du Morne offre plusieurs plages idylliques, entre longues étendues immaculées et petites anses discrètes, avec la montagne du Morne Brabant en toile de fond. Lagon translucide réputé pour le kitesurf."
   },
   {
     "id": "plage-belle-mare",
@@ -5454,16 +5455,17 @@
     "address": "Belle Mare (Est)",
     "phone": "",
     "website": "",
-    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Belle%20Mare%20public%20beach%20Mauritius",
-    "lat": -20.2189,
-    "lng": 57.7867,
+    "googleMapsUrl": "https://maps.google.com/?cid=15497574960358871756&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.1948426,
+    "lng": 57.7767335,
     "themes": [
       "plages"
     ],
     "sandType": "Sable blanc",
     "beachActivities": "Kitesurf, snorkeling, golf, parachute ascensionnel",
     "beachLength": "Environ 8 km",
-    "zone": "est"
+    "zone": "est",
+    "description": "Plage la plus longue de l'île (environ 10 km de sable immaculé) sur la côte est, bordant un lagon peu profond aux teintes de vert et de bleu. Récif éloigné, eaux calmes idéales pour la baignade, le snorkeling et les activités nautiques en famille."
   },
   {
     "id": "plage-trou-aux-biches",
@@ -5483,7 +5485,8 @@
     "beachLength": "Environ 3 km",
     "zone": "nord",
     "photoUrl": "https://images.pexels.com/photos/37485539/pexels-photo-37485539.jpeg",
-    "photoCredit": "Aurélie (Nomadaventure) / Pexels"
+    "photoCredit": "Aurélie (Nomadaventure) / Pexels",
+    "description": "Sable parmi les plus blancs et les plus fins de l'île, sur plusieurs kilomètres au bord d'un lagon limpide. Baignade agréable avec plus de profondeur, fonds marins colorés propices à des plongées fantastiques."
   },
   {
     "id": "plage-flic-en-flac",
@@ -5503,7 +5506,8 @@
     "beachLength": "Environ 8 km",
     "zone": "ouest",
     "photoUrl": "https://images.unsplash.com/photo-1650928112892-36bdfb34da50",
-    "photoCredit": "Anton Marchuk / Unsplash"
+    "photoCredit": "Anton Marchuk / Unsplash",
+    "description": "Ancien village de pêcheurs, plage la plus populaire et sans doute la plus authentique de la côte ouest. Grottes et épaves prisées des plongeurs, lagon imperturbable pour une baignade sereine."
   },
   {
     "id": "plage-blue-bay",
@@ -5523,7 +5527,8 @@
     "beachLength": "Environ 500 m",
     "zone": "sud",
     "photoUrl": "https://images.pexels.com/photos/32866444/pexels-photo-32866444.jpeg",
-    "photoCredit": "Jyoti Pur / Pexels"
+    "photoCredit": "Jyoti Pur / Pexels",
+    "description": "Au sud de la pointe d'Esny, sable fin et atmosphère sereine. Abrite le parc marin de Blue Bay, réserve protégée de plus de 350 hectares au lagon peu profond (6 m max) et à l'eau translucide, idéale pour le snorkeling (coraux, poissons tropicaux, tortues) débutants comme confirmés, ou en bateau à fond de verre."
   },
   {
     "id": "plage-la-cuvette-grand-baie",
@@ -5541,7 +5546,8 @@
     "sandType": "Sable fin",
     "beachActivities": "Marche sous-marine, parachute ascensionnel, plongée, baignade, barbecues familiaux",
     "beachLength": "Environ 70 m (petite plage en fer à cheval)",
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Plage dépourvue de rochers et de coraux, à l'eau cristalline. Prisée par ceux qui fuient l'agitation de Grand Baie pour se détendre au soleil ou se rafraîchir dans les eaux turquoise ; nombreux arbres offrant de l'ombre."
   },
   {
     "id": "plage-ile-aux-cerfs",
@@ -5560,7 +5566,8 @@
     "sandType": "Sable blanc fin / poudreux",
     "beachActivities": "Plongée, snorkeling, parachute ascensionnel, golf 18 trous",
     "beachLength": "Plage principale ~500 m (île ~4 km de sable au total)",
-    "zone": "est"
+    "zone": "est",
+    "description": "À quelques minutes de Trou d'Eau Douce, site emblématique apprécié pour la beauté de ses plages et sa végétation dense (sable fin, filaos, eaux claires, fonds marins riches). Parcours de golf 18 trous, nombreux sports nautiques et deux restaurants sur l'îlot."
   },
   {
     "id": "plage-mont-choisy",
@@ -5580,7 +5587,8 @@
     "beachLength": "Environ 3 km",
     "zone": "nord",
     "photoUrl": "https://images.unsplash.com/photo-1633011303129-e1ed6e4b3595",
-    "photoCredit": "Xavier Coiffic / Unsplash"
+    "photoCredit": "Xavier Coiffic / Unsplash",
+    "description": "Dans le nord-ouest de l'île, idéale pour admirer le coucher du soleil. Cadre sauvage avec ses filaos préservés bordant une très longue bande de sable, offrant des coins paisibles sans être collé aux autres voyageurs."
   },
   {
     "id": "plage-pereybere",
@@ -5598,7 +5606,8 @@
     "sandType": "Sable blanc fin",
     "beachActivities": "Kayak, SUP, kitesurf, ski nautique, pêche au gros, catamaran, snorkeling, planche à voile",
     "beachLength": "Environ 200-400 m selon les sources",
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Incontournable du nord de l'île. Lagon aux eaux cristallines et plage en pente douce, spot très populaire auprès des habitants et des voyageurs. Ambiance conviviale, accès facile à restaurants et cafés — plébiscitée par les familles."
   },
   {
     "id": "plage-bel-ombre",
@@ -8963,21 +8972,6 @@
     "description": "Construit sur une ancienne réserve à cerfs, avec des éléments de roche volcanique intégrés au tracé."
   },
   {
-    "id": "long-beach-mauritius",
-    "name": "Long Beach Mauritius",
-    "category": "activites",
-    "address": "MU, Coastal Road, Poste de Flacq 41601",
-    "phone": "+230 401 1919",
-    "website": "https://www.yoursunlife.com/longbeachmauritius/?utm_source=google&utm_medium=organic&utm_campaign=google_local_long_beach_mauritius",
-    "googleMapsUrl": "https://maps.google.com/?cid=15042326377101928759&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.1727242,
-    "lng": 57.7698265,
-    "themes": [
-      "plages"
-    ],
-    "zone": "est"
-  },
-  {
     "id": "jetty-to-ile-aux-cerfs-the-golf-course-and-ilot-mangenie",
     "name": "Jetty to Ile aux Cerfs the Golf Course and Ilot Mangénie",
     "category": "activites",
@@ -9008,21 +9002,6 @@
     "zone": "est"
   },
   {
-    "id": "belle-mare-beach",
-    "name": "Belle Mare Beach",
-    "category": "activites",
-    "address": "RQ4G+3M9, Quatre Cocos",
-    "phone": "",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=15497574960358871756&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.1948426,
-    "lng": 57.7767335,
-    "themes": [
-      "plages"
-    ],
-    "zone": "est"
-  },
-  {
     "id": "le-swing",
     "name": "Le Swing",
     "category": "food",
@@ -9034,21 +9013,6 @@
     "lng": 57.7534415,
     "themes": [
       "restaurants"
-    ],
-    "zone": "est"
-  },
-  {
-    "id": "4-seasons-beach",
-    "name": "4 Seasons Beach",
-    "category": "activites",
-    "address": "Beau Champ, Unnamed RoadPRH4+W7R",
-    "phone": "",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=6299815712369709552&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.2701309,
-    "lng": 57.8056423,
-    "themes": [
-      "plages"
     ],
     "zone": "est"
   },
@@ -10001,21 +9965,6 @@
       "restaurants"
     ],
     "zone": "est"
-  },
-  {
-    "id": "blue-lagoon-beach-hotel",
-    "name": "Blue Lagoon Beach Hotel",
-    "category": "activites",
-    "address": "Blue Bay, HP48+3V3, Mahebourg",
-    "phone": "+230 631 9046",
-    "website": "https://lepeninsulabay.com/",
-    "googleMapsUrl": "https://maps.google.com/?cid=4415034391960995278&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.4448614,
-    "lng": 57.7171626,
-    "themes": [
-      "plages"
-    ],
-    "zone": "sud"
   },
   {
     "id": "coin-bistro-by-casse-croute",
@@ -12912,21 +12861,6 @@
     "lng": 57.5768209,
     "themes": [
       "plongee-sous-marine"
-    ],
-    "zone": "nord"
-  },
-  {
-    "id": "pereybere-beach",
-    "name": "Pereybere Beach местные",
-    "category": "activites",
-    "address": "2H4R+997, Grand Baie",
-    "phone": "",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=9398680607376591601&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -19.994091,
-    "lng": 57.590907,
-    "themes": [
-      "plages"
     ],
     "zone": "nord"
   },
@@ -24179,7 +24113,7 @@
       "plages"
     ],
     "zone": "sud",
-    "description": "La plage la plus proche de l'aéroport, sauvage et exposée au vent."
+    "description": "Destination proche de l'aéroport, permettant un transfert rapide, mais qui reste une plage préservée et peu fréquentée par les touristes. Végétation tropicale, sable clair, eau turquoise. La mer peut y être agitée (vents, courants) mais l'ambiance authentique en fait un petit écrin sauvage."
   },
   {
     "id": "montagne-des-signaux",
@@ -30838,7 +30772,7 @@
     "themes": [
       "plages"
     ],
-    "description": "Idéale pour le surf, les couchers de soleil, et point d'embarquation pour aller voir les dauphins.",
+    "description": "Un des bijoux de la côte ouest, réputée pour son caractère et son atmosphère décontractée, dans une baie enveloppée de montagnes. Le surf y est légion, surtout en hiver austral. Couchers de soleil sublimes et point de départ idéal pour observer les dauphins sauvages en sortie bateau.",
     "beachActivities": "Surf, observation des dauphins"
   },
   {
