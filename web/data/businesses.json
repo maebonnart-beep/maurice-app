@@ -1155,11 +1155,13 @@
     "themes": [
       "restaurants",
       "asiatique",
-      "kids-friendly"
+      "kids-friendly",
+      "sushis"
     ],
     "hours": "Mar-Dim 18h30-22h, fermé lun",
     "priceRange": "se-faire-plaisir",
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Restaurant asiatique fusion au design japonais épuré, cuisine ouverte et sommelier saké à table. Expérience raffinée, quoique jugée parfois un peu froide côté ambiance."
   },
   {
     "id": "the-fisherman-lounge",
@@ -4352,11 +4354,13 @@
     "lng": 57.4147,
     "themes": [
       "restaurants",
-      "asiatique"
+      "asiatique",
+      "sushis"
     ],
     "hours": "Dîner uniquement, tous les jours 19h-22h",
     "priceRange": "se-faire-plaisir",
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Restaurant fusion pan-asiatique les pieds dans le sable, à l'embouchure d'une rivière. Sushis préparés avec du poisson local, ambiance romantique en soirée."
   },
   {
     "id": "c-beach-club-bel-ombre",
@@ -4499,11 +4503,13 @@
     "lng": 57.7867,
     "themes": [
       "restaurants",
-      "asiatique"
+      "asiatique",
+      "sushis"
     ],
     "hours": "Dîner uniquement, tous les jours 19h-22h30",
     "priceRange": "se-faire-plaisir",
-    "zone": "est"
+    "zone": "est",
+    "description": "Table japonaise haut de gamme avec menu omakase en plusieurs services. Considéré par de nombreux avis comme le meilleur restaurant japonais de l'île, pour la finesse des produits et un service très attentionné."
   },
   {
     "id": "amari-by-vineet-lux-belle-mare",
@@ -6572,9 +6578,11 @@
     "lat": -20.3043465,
     "lng": 57.3651045,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "sushis"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Adresse emblématique en bord de plage, animée en soirée (DJ, spectacle de feu). Sushis et cuisine fusion, prix élevés, plus pour l'expérience que la prouesse culinaire pure."
   },
   {
     "id": "blacksalt-mauritius",
@@ -10956,7 +10964,8 @@
       "restaurants",
       "sushis"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Adresse devenue virale sur les réseaux pour ses sushis à la truffe. Présentation soignée, formules bento et grill en complément."
   },
   {
     "id": "wapalapam-les-arcades",
@@ -35849,5 +35858,62 @@
     "zone": "est",
     "hours": "Ouvert 24h/24",
     "description": "Réseau de grottes volcaniques (tubes de lave) près du village de Roches Noires, dans le nord-est de l'île. Le sentier des Roches Noires mène à la cavité principale, Princess Margaret Cave, accessible par un large escalier jusqu'à des chambres souterraines, bassins d'eau douce et formations rocheuses. Petit musée sur place expliquant la formation des tubes de lave."
+  },
+  {
+    "id": "seven-locks-sushi-port-louis",
+    "name": "Seven Lock's Sushi",
+    "category": "food",
+    "address": "Rue Sir Virgile Naz, Port Louis",
+    "phone": "+230 5816 4589",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Seven%20Lock%27s%20Sushi%20Sir%20Virgile%20Naz%20Port%20Louis%20Mauritius",
+    "lat": -20.162142,
+    "lng": 57.5076823,
+    "themes": [
+      "restaurants",
+      "sushis",
+      "asiatique"
+    ],
+    "priceRange": "bon-marche",
+    "description": "Petite adresse de quartier très plébiscitée pour la fraîcheur du poisson et des portions généreuses à prix doux. Fonctionne surtout sur commande à l'avance.",
+    "zone": "nord"
+  },
+  {
+    "id": "the-altimate-sushi-bar-grill-grand-baie",
+    "name": "The Altimate Sushi Bar & Grill",
+    "category": "food",
+    "address": "Food Court Super U, Route de la Salette, Grand Baie",
+    "phone": "+230 5807 8830",
+    "website": "https://www.facebook.com/thealtimatesushi/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=The%20Altimate%20Sushi%20Grand%20Baie%20Mauritius",
+    "lat": -20.0125282,
+    "lng": 57.588194,
+    "themes": [
+      "restaurants",
+      "sushis"
+    ],
+    "priceRange": "bon-marche",
+    "description": "Comptoir/restaurant décontracté proposant sushis préparés minute, sur place ou à emporter. Bon équilibre fraîcheur/prix, apprécié des habitués.",
+    "zone": "nord"
+  },
+  {
+    "id": "izumi-teppanyaki-port-chambly",
+    "name": "Izumi Teppanyaki",
+    "category": "food",
+    "address": "The Address Boutique Hotel, Port Chambly, Terre Rouge, Pamplemousses",
+    "phone": "+230 405 3000",
+    "website": "https://izumiteppanyaki.restaurant.mu/en",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Izumi%20Teppanyaki%20Port%20Chambly%20Mauritius",
+    "lat": -20.1109117,
+    "lng": 57.5242511,
+    "themes": [
+      "restaurants",
+      "sushis",
+      "asiatique"
+    ],
+    "hours": "Lun-Sam 11h-15h et 19h-22h30",
+    "priceRange": "se-faire-plaisir",
+    "description": "Restaurant japonais avec cuisine live au grill teppanyaki en plus de la carte sushi/sashimi. Promotion sushis le mardi, ambiance conviviale.",
+    "zone": "nord"
   }
 ]
