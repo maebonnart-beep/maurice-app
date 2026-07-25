@@ -12778,7 +12778,7 @@
     "themes": [
       "tennis-padel"
     ],
-    "sportsListed": "Padel : 6 courts. Infrastructures : club-house, pro-shop, vestiaires. Réservation en ligne.",
+    "sportsListed": "Padel : 6 courts. Fait partie du complexe EONIA. Infrastructures : club-house, pro-shop, vestiaires. Réservation en ligne.",
     "hasRestauration": true,
     "zone": "nord"
   },
@@ -29922,7 +29922,9 @@
     "themes": [
       "tennis-padel"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "sportsListed": "Padel : 5 courts dont 1 court panoramique, conforme aux normes de la Fédération internationale de padel.",
+    "hours": "Lun-Ven 6h30-21h, Sam 6h30-19h, Dim 6h30-17h"
   },
   {
     "id": "labourdonnais-sports-club",
@@ -29969,7 +29971,8 @@
     "themes": [
       "tennis-padel"
     ],
-    "zone": "est"
+    "zone": "est",
+    "sportsListed": "Tennis : 1 court."
   },
   {
     "id": "maison-scott-croisette",
@@ -31270,7 +31273,9 @@
     "themes": [
       "tennis-padel"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "sportsListed": "Padel : 5 courts dont 1 court panoramique, conforme aux normes de la Fédération internationale de padel.",
+    "hours": "Lun-Ven 6h30-21h, Sam 6h30-19h, Dim 6h30-17h"
   },
   {
     "id": "cue-club-snooker-pool",
@@ -32128,7 +32133,8 @@
     "themes": [
       "tennis-padel"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "sportsListed": "Tennis. Abonnement à partir de Rs 1200/mois."
   },
   {
     "id": "football-field",
@@ -35892,20 +35898,5 @@
     "zone": "est",
     "hours": "Ouvert 24h/24",
     "description": "Réseau de grottes volcaniques (tubes de lave) près du village de Roches Noires, dans le nord-est de l'île. Le sentier des Roches Noires mène à la cavité principale, Princess Margaret Cave, accessible par un large escalier jusqu'à des chambres souterraines, bassins d'eau douce et formations rocheuses. Petit musée sur place expliquant la formation des tubes de lave."
-  },
-  {
-    "id": "tennis-nord",
-    "name": "Tennis Nord",
-    "category": "activites",
-    "address": "WJH7+PV9, Mapou",
-    "phone": "+230 266 8782",
-    "googleMapsUrl": "https://www.google.com/maps/place/Tennis+Nord/@-20.0707036,57.6147407,17z",
-    "lat": -20.0707036,
-    "lng": 57.6147407,
-    "themes": [
-      "tennis-padel"
-    ],
-    "sportsListed": "Tennis : 4 courts (dur). Infrastructures : club-house, école de tennis. Réservation possible.",
-    "zone": "nord"
   }
 ]
