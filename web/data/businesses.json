@@ -9074,8 +9074,10 @@
     "themes": [
       "restaurants"
     ],
-    "badge": "selection",
-    "zone": "est"
+    "badge": "coup-de-coeur",
+    "zone": "est",
+    "promoText": "Superbe restaurant familial (chez Charlène), niché entre les filaos qui bordent la plage publique. Endroit idyllique, cuisine créole fraîche et bien cuisinée (poissons, grillades, salades), prix très raisonnables.",
+    "photoUrl": "/photos/sun-and-sand-exterior.jpg"
   },
   {
     "id": "beach-rouge-lux-belle-mare",
