@@ -3743,7 +3743,8 @@
     ],
     "hours": "Horaires variables selon les jours, généralement 11h30-15h30 & 18h30-22h30",
     "priceRange": "bon-marche",
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Table indienne raffinée avec vue sur l'océan, spécialisée dans la cuisine moghole et les grillades au tandoor. Chefs originaires de Delhi, boissons traditionnelles (lassis, infusions) à la carte."
   },
   {
     "id": "la-bonne-marmite-port-louis",
@@ -4105,7 +4106,8 @@
     ],
     "priceRange": "bon-marche",
     "badge": "selection",
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Cuisine fusion indienne et européenne en bord de plage, portions généreuses et salle de prière sur place. Très bon rapport qualité-prix ; l'établissement ne sert pas d'alcool."
   },
   {
     "id": "salt-lemon-flic-en-flac",
@@ -4231,7 +4233,8 @@
     "hours": "Tous les jours 11h30-14h & 18h-21h30",
     "priceRange": "prix-moyen",
     "badge": "selection",
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Enseigne locale emblématique au décor chiné au Rajasthan (meubles anciens). Cuisine indienne traditionnelle et chaleureuse, même si le service peut sembler pressé aux heures d'affluence."
   },
   {
     "id": "ousaporn-thai-black-river",
@@ -6746,8 +6749,7 @@
     "lat": -20.3552174,
     "lng": 57.3658962,
     "themes": [
-      "restaurants",
-      "sushis"
+      "restaurants"
     ],
     "zone": "ouest"
   },
@@ -9579,8 +9581,7 @@
     "lat": -20.1668419,
     "lng": 57.7662152,
     "themes": [
-      "restaurants",
-      "sushis"
+      "restaurants"
     ],
     "zone": "est"
   },
@@ -9748,9 +9749,11 @@
     "lat": -20.2517824,
     "lng": 57.7977147,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "indienne"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Restaurant signature d'un hôtel 5 étoiles avec vue sur la baie. Relecture moderne de classiques indiens (saumon tandoori, agneau en croûte de curry), mais des tarifs jugés élevés."
   },
   {
     "id": "pelouse-snack",
@@ -11023,9 +11026,11 @@
     "lat": -20.2248182,
     "lng": 57.4960846,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "indienne"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Une des adresses indiennes les plus courues de l'île, appréciée par toutes les communautés. Décor immersif et portions généreuses ; réservation conseillée le week-end."
   },
   {
     "id": "domaine-les-pailles-2",
@@ -15426,8 +15431,7 @@
     "lat": -20.0168727,
     "lng": 57.5823602,
     "themes": [
-      "livraisons",
-      "sushis"
+      "livraisons"
     ],
     "zone": "nord"
   },
@@ -19454,8 +19458,7 @@
     "lat": -20.3349154,
     "lng": 57.3711399,
     "themes": [
-      "livraisons",
-      "sushis"
+      "livraisons"
     ],
     "zone": "ouest"
   },
@@ -19470,8 +19473,7 @@
     "lat": -20.2767908,
     "lng": 57.3697485,
     "themes": [
-      "livraisons",
-      "sushis"
+      "livraisons"
     ],
     "zone": "ouest"
   },
@@ -35914,6 +35916,117 @@
     "hours": "Lun-Sam 11h-15h et 19h-22h30",
     "priceRange": "se-faire-plaisir",
     "description": "Restaurant japonais qui associe cuisine live au grill teppanyaki et carte de sushis/sashimis. Promotion sur les sushis le mardi, dans une ambiance conviviale.",
+    "zone": "nord"
+  },
+  {
+    "id": "indian-summer-restaurant-ebene",
+    "name": "Indian Summer Restaurant",
+    "category": "food",
+    "address": "Ebène Commercial Centre, 2e étage, Ébène",
+    "phone": "+230 468 1399",
+    "website": "https://indiansummer.mu/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Indian%20Summer%20Restaurant%20Ebene%20Commercial%20Centre%20Mauritius",
+    "lat": -20.2435831,
+    "lng": 57.4883779,
+    "themes": [
+      "restaurants",
+      "indienne"
+    ],
+    "hours": "Tous les jours 11h-14h30 & 18h-21h30",
+    "priceRange": "bon-marche",
+    "description": "Cuisine du nord et du sud de l'Inde réunies, buffet déjeuner copieux et abordable, ambiance Bollywood avec écrans musicaux. Accueil en anglais uniquement.",
+    "zone": "centre"
+  },
+  {
+    "id": "padharo-sa-jains-little-india-quatre-bornes",
+    "name": "Padharo Sa by Jain's Little India",
+    "category": "food",
+    "address": "Lot 107, CentrePoint Trianon, Quatre Bornes",
+    "phone": "",
+    "website": "https://jainslittleindia.com/padharo-sa/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Padharo%20Sa%20by%20Jain%27s%20Little%20India%20CentrePoint%20Trianon%20Quatre%20Bornes%20Mauritius",
+    "lat": -20.2552974,
+    "lng": 57.4911386,
+    "themes": [
+      "restaurants",
+      "indienne",
+      "vegetarien"
+    ],
+    "hours": "Lun-Ven 11h-21h, Sam fermé, Dim & jours fériés 11h-21h",
+    "priceRange": "bon-marche",
+    "description": "Cuisine indienne végétarienne préparée à la vue des clients, niveau d'épices ajustable à la demande. Ambiance conviviale et très bon rapport qualité-prix.",
+    "zone": "centre"
+  },
+  {
+    "id": "nenban-indian-restaurant-bagatelle",
+    "name": "Nenban Indian Restaurant",
+    "category": "food",
+    "address": "42 Market Street, Bagatelle Mall, Moka",
+    "phone": "+230 5250 4624",
+    "website": "https://www.nenbanrestaurant.com/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Nenban%20Indian%20Restaurant%20Bagatelle%20Mall%20Moka%20Mauritius",
+    "lat": -20.2245474,
+    "lng": 57.4974807,
+    "themes": [
+      "restaurants",
+      "indienne"
+    ],
+    "priceRange": "prix-moyen",
+    "description": "Cuisine fusion sud-indienne dans un cadre moderne, avec biryani et naans en vedette et une carte de cocktails travaillée. La mieux notée de cette sélection.",
+    "zone": "centre"
+  },
+  {
+    "id": "namo-india-port-louis",
+    "name": "Namo India",
+    "category": "food",
+    "address": "St Georges Street, Port Louis",
+    "phone": "",
+    "website": "https://namo-india.restaurant.mu/en",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Namo%20India%20St%20Georges%20Street%20Port%20Louis%20Mauritius",
+    "lat": -20.1667851,
+    "lng": 57.5015364,
+    "themes": [
+      "restaurants",
+      "indienne",
+      "vegetarien"
+    ],
+    "priceRange": "bon-marche",
+    "description": "Adresse entièrement végétarienne réputée pour ses thalis copieux et ses saveurs authentiques du nord de l'Inde, à prix très doux.",
+    "zone": "nord"
+  },
+  {
+    "id": "indra-port-louis-waterfront",
+    "name": "Indra Port Louis Waterfront",
+    "category": "food",
+    "address": "Astrolabe Building, Le Caudan Waterfront, Port Louis",
+    "phone": "+230 5948 2185",
+    "website": "https://indra.mu/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Indra%20Astrolabe%20Building%20Caudan%20Waterfront%20Port%20Louis%20Mauritius",
+    "lat": -20.1609547,
+    "lng": 57.4985423,
+    "themes": [
+      "restaurants",
+      "indienne"
+    ],
+    "hours": "Mar-Dim 10h30-22h30, fermé lun",
+    "priceRange": "prix-moyen",
+    "description": "Décor raffiné (rideaux de soie, mobilier ancien) avec vue sur le port. Cuisine préparée minute, service attentionné et chaleureux.",
+    "zone": "nord"
+  },
+  {
+    "id": "nitzana-restaurant-pereybere",
+    "name": "Nitzana Restaurant",
+    "category": "food",
+    "address": "Royal Road, Pereybère",
+    "phone": "+230 262 7777",
+    "website": "https://www.nitzanamauritius.com/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Nitzana%20Restaurant%20Royal%20Road%20Pereybere%20Mauritius",
+    "lat": -19.9942022,
+    "lng": 57.5914021,
+    "themes": [
+      "restaurants",
+      "indienne"
+    ],
     "zone": "nord"
   }
 ]
