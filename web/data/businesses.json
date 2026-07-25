@@ -799,8 +799,7 @@
     "lat": -20.0143128,
     "lng": 57.5837935,
     "themes": [
-      "restaurants",
-      "fruits-de-mer"
+      "restaurants"
     ],
     "hours": "Tous les jours 10h-23h30",
     "priceRange": "se-faire-plaisir",
@@ -861,7 +860,8 @@
     "hours": "Tous les jours 11h-22h",
     "priceRange": "prix-moyen",
     "badge": "selection",
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Référence incontournable de Grand Baie, fondée par une famille locale. Fruits de mer marinés aux épices créoles, ambiance conviviale avec musiciens en soirée."
   },
   {
     "id": "casa-verde",
@@ -875,8 +875,7 @@
     "lng": 57.5863836,
     "themes": [
       "restaurants",
-      "italien",
-      "fruits-de-mer"
+      "italien"
     ],
     "zone": "nord"
   },
@@ -971,8 +970,8 @@
       "restaurants",
       "europeenne",
       "italien",
-      "fruits-de-mer",
-      "grillades"
+      "grillades",
+      "fruits-de-mer"
     ],
     "hours": "Mar-Sam 12h-15h, Mer-Sam 19h-22h, fermé dim et lun",
     "badge": "coup-de-coeur",
@@ -1115,7 +1114,6 @@
     "lng": 57.5786818,
     "themes": [
       "restaurants",
-      "fruits-de-mer",
       "kids-friendly"
     ],
     "hours": "Tous les jours 12h-15h & 19h-22h",
@@ -1174,8 +1172,7 @@
     "lat": -20.0130625,
     "lng": 57.5866875,
     "themes": [
-      "restaurants",
-      "fruits-de-mer"
+      "restaurants"
     ],
     "hours": "Tous les jours 10h-22h",
     "priceRange": "prix-moyen",
@@ -1230,7 +1227,6 @@
     "lng": 57.5682246,
     "themes": [
       "europeenne",
-      "fruits-de-mer",
       "bars"
     ],
     "hours": "Dim 10h-19h, Lun-Ven 10h-22h30",
@@ -1319,7 +1315,6 @@
     "lng": 57.5828679,
     "themes": [
       "cafes-terrasses",
-      "fruits-de-mer",
       "italien"
     ],
     "hours": "Lun-Jeu 7h-16h, Ven-Sam 7h-21h30",
@@ -1362,7 +1357,8 @@
     ],
     "hours": "Mar-Sam 11h-17h & 18h-22h, Dim 11h-17h, fermé lun",
     "priceRange": "se-faire-plaisir",
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Restaurant les pieds dans l'eau avec vue sur la baie de Grand Baie. Langouste et fruits de mer frais, musique live, coucher de soleil en toile de fond."
   },
   {
     "id": "2beach-club-by-2futures",
@@ -1376,7 +1372,6 @@
     "lng": 57.5922945,
     "themes": [
       "asiatique",
-      "fruits-de-mer",
       "bars"
     ],
     "hours": "Dim 11h-21h, Lun 10h30-19h30, Mar-Jeu 10h30-22h, Ven-Sam 10h30-23h",
@@ -1428,7 +1423,6 @@
     "lng": 57.5835885,
     "themes": [
       "cafes-terrasses",
-      "fruits-de-mer",
       "italien"
     ],
     "hours": "Tous les jours 8h15-22h",
@@ -1767,7 +1761,6 @@
     "themes": [
       "restaurants",
       "grillades",
-      "fruits-de-mer",
       "vegetarien"
     ],
     "hours": "Tous les jours 19h-23h, Ven-Sam jusqu'à 2h",
@@ -3512,7 +3505,6 @@
     "lng": 57.365,
     "themes": [
       "restaurants",
-      "fruits-de-mer",
       "mauricienne"
     ],
     "zone": "ouest"
@@ -3528,10 +3520,10 @@
     "lat": -20.3255,
     "lng": 57.3745,
     "themes": [
-      "fruits-de-mer",
       "mauricienne",
       "grillades",
-      "bars"
+      "bars",
+      "fruits-de-mer"
     ],
     "hours": "Ouvert midi et soir, fermé mar, jeu et dim",
     "priceRange": "prix-moyen",
@@ -3567,7 +3559,6 @@
     "lat": -20.326,
     "lng": 57.374,
     "themes": [
-      "fruits-de-mer",
       "bars"
     ],
     "zone": "ouest"
@@ -3583,7 +3574,6 @@
     "lat": -20.4547,
     "lng": 57.3106,
     "themes": [
-      "fruits-de-mer",
       "bars"
     ],
     "priceRange": "se-faire-plaisir",
@@ -3601,8 +3591,7 @@
     "lng": 57.3283,
     "themes": [
       "bars",
-      "fastfood",
-      "fruits-de-mer"
+      "fastfood"
     ],
     "hours": "Tous les jours 12h-22h",
     "priceRange": "prix-moyen",
@@ -3660,9 +3649,9 @@
     "themes": [
       "restaurants",
       "mauricienne",
-      "fruits-de-mer",
       "vegetarien",
-      "grillades"
+      "grillades",
+      "fruits-de-mer"
     ],
     "hours": "Fermé lun, Mar-Dim 9h-22h",
     "priceRange": "prix-moyen",
@@ -3681,8 +3670,7 @@
     "lat": -20.2372,
     "lng": 57.7908,
     "themes": [
-      "restaurants",
-      "fruits-de-mer"
+      "restaurants"
     ],
     "hours": "Tous les jours 11h30-22h30",
     "priceRange": "prix-moyen",
@@ -3700,9 +3688,9 @@
     "lng": 57.7,
     "themes": [
       "mauricienne",
-      "fruits-de-mer",
       "grillades",
-      "bars"
+      "bars",
+      "fruits-de-mer"
     ],
     "hours": "Tous les jours 10h-23h",
     "priceRange": "prix-moyen",
@@ -3720,8 +3708,7 @@
     "lat": -20.4081,
     "lng": 57.7,
     "themes": [
-      "restaurants",
-      "fruits-de-mer"
+      "restaurants"
     ],
     "hours": "Tous les jours 8h30-22h30",
     "priceRange": "prix-moyen",
@@ -4061,8 +4048,8 @@
     "themes": [
       "restaurants",
       "asiatique",
-      "fruits-de-mer",
-      "mauricienne"
+      "mauricienne",
+      "fruits-de-mer"
     ],
     "priceRange": "prix-moyen",
     "badge": "selection",
@@ -4081,8 +4068,8 @@
     "themes": [
       "restaurants",
       "mauricienne",
-      "fruits-de-mer",
-      "italien"
+      "italien",
+      "fruits-de-mer"
     ],
     "hours": "Fermé mer, Lun-Mar + Jeu-Dim 10h-22h30",
     "priceRange": "bon-marche",
@@ -4139,8 +4126,7 @@
     "lng": 57.3639,
     "themes": [
       "restaurants",
-      "grillades",
-      "fruits-de-mer"
+      "grillades"
     ],
     "priceRange": "prix-moyen",
     "zone": "ouest"
@@ -4194,8 +4180,7 @@
     "lng": 57.3639,
     "themes": [
       "restaurants",
-      "mauricienne",
-      "fruits-de-mer"
+      "mauricienne"
     ],
     "priceRange": "prix-moyen",
     "zone": "ouest"
@@ -4284,8 +4269,7 @@
     "lat": -20.4547,
     "lng": 57.3167,
     "themes": [
-      "restaurants",
-      "fruits-de-mer"
+      "restaurants"
     ],
     "hours": "Tous les jours 12h30-15h & 19h-22h",
     "priceRange": "se-faire-plaisir",
@@ -4377,7 +4361,6 @@
     "lng": 57.4147,
     "themes": [
       "europeenne",
-      "fruits-de-mer",
       "bars"
     ],
     "hours": "Lun-Ven 8h30-22h, Sam jusqu'à minuit, Dim jusqu'à 18h",
@@ -4396,8 +4379,7 @@
     "lng": 57.4147,
     "themes": [
       "restaurants",
-      "mauricienne",
-      "fruits-de-mer"
+      "mauricienne"
     ],
     "zone": "sud"
   },
@@ -4430,7 +4412,6 @@
     "lng": 57.4147,
     "themes": [
       "restaurants",
-      "fruits-de-mer",
       "europeenne"
     ],
     "zone": "est"
@@ -4448,7 +4429,6 @@
     "themes": [
       "restaurants",
       "asiatique",
-      "fruits-de-mer",
       "mauricienne"
     ],
     "priceRange": "bon-marche",
@@ -4486,8 +4466,8 @@
       "restaurants",
       "indienne",
       "asiatique",
-      "fruits-de-mer",
-      "grillades"
+      "grillades",
+      "fruits-de-mer"
     ],
     "hours": "Tous les jours 9h30-22h30",
     "priceRange": "prix-moyen",
@@ -4579,8 +4559,8 @@
     "lng": 57.7908,
     "themes": [
       "restaurants",
-      "fruits-de-mer",
-      "mauricienne"
+      "mauricienne",
+      "fruits-de-mer"
     ],
     "hours": "Fermé mar, Mer-Lun 10h30-15h & 18h-22h",
     "priceRange": "prix-moyen",
@@ -4634,7 +4614,6 @@
     "lng": 57.7,
     "themes": [
       "restaurants",
-      "fruits-de-mer",
       "mauricienne"
     ],
     "hours": "Tous les jours 11h-21h30",
@@ -4676,7 +4655,8 @@
     ],
     "hours": "Tous les jours, déjeuner et dîner",
     "priceRange": "bon-marche",
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Adresse locale du sud de l'île pour des spécialités mauriciennes (marlin fumé, mine frite aux fruits de mer), simple et généreuse."
   },
   {
     "id": "stella-ti-baz-manze-mahebourg",
@@ -4689,8 +4669,7 @@
     "lat": -20.4081,
     "lng": 57.7,
     "themes": [
-      "restaurants",
-      "fruits-de-mer"
+      "restaurants"
     ],
     "hours": "Tous les jours 11h-17h",
     "priceRange": "bon-marche",
@@ -4763,8 +4742,7 @@
     "lng": 57.7,
     "themes": [
       "restaurants",
-      "mauricienne",
-      "fruits-de-mer"
+      "mauricienne"
     ],
     "hours": "Tous les jours, sans interruption",
     "priceRange": "prix-moyen",
@@ -4858,8 +4836,7 @@
       "tables-hotes",
       "mauricienne",
       "indienne",
-      "europeenne",
-      "fruits-de-mer"
+      "europeenne"
     ],
     "hours": "Tous les jours 9h-16h",
     "priceRange": "prix-moyen",
@@ -4933,7 +4910,6 @@
     "themes": [
       "tables-hotes",
       "mauricienne",
-      "fruits-de-mer",
       "vegetarien"
     ],
     "hours": "Tous les jours 11h-16h",
@@ -6719,9 +6695,11 @@
     "lat": -20.2838906,
     "lng": 57.3646953,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "fruits-de-mer"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Adresse de quartier réputée pour sa soupe de crabe et sa salade de fruits de mer à la mangue, dans une ambiance décontractée."
   },
   {
     "id": "mosaic-restaurant-bar",
@@ -6886,9 +6864,11 @@
     "lat": -20.2990532,
     "lng": 57.3638831,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "fruits-de-mer"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Table d'un hôtel 5 étoiles installée entre piscine et lagon. Fruits de mer haut de gamme (langouste, plateau de fruits de mer) et wagyu, service très soigné ; réservation indispensable."
   },
   {
     "id": "marco-polo-resto-bar",
@@ -9446,9 +9426,11 @@
     "lat": -20.0251125,
     "lng": 57.5505659,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "fruits-de-mer"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Institution mauricienne tenue par la même famille depuis plus de 35 ans, terrasse sur pilotis face à l'océan. Menu dégustation en six services autour des poissons et crustacés locaux."
   },
   {
     "id": "ashley-grillade",
@@ -10768,9 +10750,11 @@
     "lat": -20.1612114,
     "lng": 57.5020813,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "fruits-de-mer"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Cour cachée au cœur de Port Louis, ambiance bohème-chic. Cuisine inspirée des îles de l'océan Indien, brochettes de la mer et poisson grillé."
   },
   {
     "id": "pomme-de-mat-restaurant",
@@ -11433,9 +11417,11 @@
     "lat": -20.2243269,
     "lng": 57.4965592,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "fruits-de-mer"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Chaîne sud-africaine spécialisée dans les fruits de mer à partager, ambiance décontractée et familiale, plusieurs adresses sur l'île."
   },
   {
     "id": "eighty-eight",
@@ -25044,9 +25030,12 @@
     "lat": -20.0099296,
     "lng": 57.6175575,
     "themes": [
-      "poissonneries"
+      "poissonneries",
+      "restaurants",
+      "fruits-de-mer"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Grand jardin tropical avec vue sur l'îlot Coin de Mire. Produits frais et locaux (langouste, crabe, crevettes) pour un déjeuner ou dîner dans un cadre enchanteur."
   },
   {
     "id": "bel-air-market-fair",
@@ -36028,5 +36017,25 @@
       "indienne"
     ],
     "zone": "nord"
+  },
+  {
+    "id": "sunshine-fusion-poste-lafayette",
+    "name": "Sunshine Fusion",
+    "category": "food",
+    "address": "Coastal Road, Poste Lafayette",
+    "phone": "+230 410 5438",
+    "website": "https://sunshinefusion.com/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Sunshine%20Fusion%20Restaurant%20Coastal%20Road%20Poste%20Lafayette%20Mauritius",
+    "lat": -20.1391452,
+    "lng": 57.751286,
+    "themes": [
+      "restaurants",
+      "fruits-de-mer",
+      "mauricienne"
+    ],
+    "hours": "Tous les jours 11h-22h",
+    "priceRange": "bon-marche",
+    "description": "Petite affaire familiale très chaleureuse en bord de route côtière. Langoustes jusqu'à 2 kg, cuisine généreuse et prix raisonnables.",
+    "zone": "est"
   }
 ]
