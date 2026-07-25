@@ -1161,7 +1161,7 @@
     "hours": "Mar-Dim 18h30-22h, fermé lun",
     "priceRange": "se-faire-plaisir",
     "zone": "nord",
-    "description": "Restaurant asiatique fusion au design japonais épuré, cuisine ouverte et sommelier saké à table. Expérience raffinée, quoique jugée parfois un peu froide côté ambiance."
+    "description": "Restaurant fusion asiatique au décor japonais épuré, avec cuisine ouverte et un sommelier saké dédié. Cadre élégant, même si l'ambiance peut sembler un peu formelle à certains."
   },
   {
     "id": "the-fisherman-lounge",
@@ -4360,7 +4360,7 @@
     "hours": "Dîner uniquement, tous les jours 19h-22h",
     "priceRange": "se-faire-plaisir",
     "zone": "sud",
-    "description": "Restaurant fusion pan-asiatique les pieds dans le sable, à l'embouchure d'une rivière. Sushis préparés avec du poisson local, ambiance romantique en soirée."
+    "description": "Restaurant fusion pan-asiatique installé les pieds dans le sable, à l'embouchure d'une rivière. Les sushis sont préparés à partir de poisson local, dans une atmosphère romantique en soirée."
   },
   {
     "id": "c-beach-club-bel-ombre",
@@ -4509,7 +4509,7 @@
     "hours": "Dîner uniquement, tous les jours 19h-22h30",
     "priceRange": "se-faire-plaisir",
     "zone": "est",
-    "description": "Table japonaise haut de gamme avec menu omakase en plusieurs services. Considéré par de nombreux avis comme le meilleur restaurant japonais de l'île, pour la finesse des produits et un service très attentionné."
+    "description": "Table japonaise gastronomique proposant un menu omakase en plusieurs services. Régulièrement citée parmi les meilleures adresses japonaises de l'île, pour la qualité des produits et le soin apporté au service."
   },
   {
     "id": "amari-by-vineet-lux-belle-mare",
@@ -6582,7 +6582,7 @@
       "sushis"
     ],
     "zone": "ouest",
-    "description": "Adresse emblématique en bord de plage, animée en soirée (DJ, spectacle de feu). Sushis et cuisine fusion, prix élevés, plus pour l'expérience que la prouesse culinaire pure."
+    "description": "Adresse incontournable en bord de plage, très animée le soir (DJ, spectacle de feu). On y vient surtout pour l'ambiance festive ; la cuisine fusion et les sushis restent secondaires face à l'expérience, avec des prix élevés."
   },
   {
     "id": "blacksalt-mauritius",
@@ -10965,7 +10965,7 @@
       "sushis"
     ],
     "zone": "centre",
-    "description": "Adresse devenue virale sur les réseaux pour ses sushis à la truffe. Présentation soignée, formules bento et grill en complément."
+    "description": "Adresse devenue très populaire sur les réseaux sociaux grâce à ses sushis à la truffe. Présentation travaillée, avec des formules bento et un grill en complément de la carte sushi."
   },
   {
     "id": "wapalapam-les-arcades",
@@ -35875,7 +35875,7 @@
       "asiatique"
     ],
     "priceRange": "bon-marche",
-    "description": "Petite adresse de quartier très plébiscitée pour la fraîcheur du poisson et des portions généreuses à prix doux. Fonctionne surtout sur commande à l'avance.",
+    "description": "Petite adresse de quartier appréciée pour la fraîcheur du poisson et des portions généreuses à prix doux. Fonctionne surtout sur commande à l'avance.",
     "zone": "nord"
   },
   {
@@ -35893,7 +35893,7 @@
       "sushis"
     ],
     "priceRange": "bon-marche",
-    "description": "Comptoir/restaurant décontracté proposant sushis préparés minute, sur place ou à emporter. Bon équilibre fraîcheur/prix, apprécié des habitués.",
+    "description": "Comptoir décontracté proposant des sushis préparés minute, à consommer sur place ou à emporter. Un bon compromis fraîcheur/prix, plébiscité par les habitués.",
     "zone": "nord"
   },
   {
@@ -35913,7 +35913,7 @@
     ],
     "hours": "Lun-Sam 11h-15h et 19h-22h30",
     "priceRange": "se-faire-plaisir",
-    "description": "Restaurant japonais avec cuisine live au grill teppanyaki en plus de la carte sushi/sashimi. Promotion sushis le mardi, ambiance conviviale.",
+    "description": "Restaurant japonais qui associe cuisine live au grill teppanyaki et carte de sushis/sashimis. Promotion sur les sushis le mardi, dans une ambiance conviviale.",
     "zone": "nord"
   }
 ]
