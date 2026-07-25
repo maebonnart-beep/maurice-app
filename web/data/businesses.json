@@ -4972,7 +4972,7 @@
     "zone": "centre",
     "photoUrl": "https://images.unsplash.com/photo-1592919505780-303950717480?auto=format&fit=crop&w=800&q=70",
     "photoCredit": "Photo: Andrew Shelley / Unsplash",
-    "sportsListed": "Padel (3 courts, O2 Padel Pro), coaching"
+    "sportsListed": "Padel : 3 courts (O2 Padel Pro). Services : coaching. Réservation possible."
   },
   {
     "id": "maritim-golf-course-balaclava",
@@ -6380,7 +6380,7 @@
     "photoUrl": "https://images.unsplash.com/photo-1593282153762-a41e3cceb06c?auto=format&fit=crop&w=800&q=70",
     "photoCredit": "Photo: Matt Aylward / Unsplash",
     "description": "Le plus ancien club de golf de l'île (fondé vers 1844), quatrième nation golfique au monde à l'époque.",
-    "sportsListed": "Tennis (≈18 courts, dur et terre battue), Padel (4 courts), squash, badminton, cricket, piscine"
+    "sportsListed": "Tennis : environ 18 courts (dur et terre battue). Padel : 4 courts (Island Padel, situé dans l'enceinte du Gymkhana). Infrastructures : golf, cricket, squash, badminton, piscine. Réservation possible."
   },
   {
     "id": "harmonie-golf-beach-estate",
@@ -12725,7 +12725,7 @@
       "complexes-sportifs",
       "tennis-padel"
     ],
-    "sportsListed": "Padel (3 courts), foot5, pickleball, mini-basket, fitness, danse, boutique",
+    "sportsListed": "Padel : 3 courts. Infrastructures : club-house, boutique. Réservation en ligne.",
     "hasRestauration": true,
     "zone": "nord"
   },
@@ -12778,7 +12778,7 @@
     "themes": [
       "tennis-padel"
     ],
-    "sportsListed": "Padel (6 courts), cours individuels/collectifs, tournois, proshop, vestiaires",
+    "sportsListed": "Padel : 6 courts. Infrastructures : club-house, pro-shop, vestiaires. Réservation en ligne.",
     "hasRestauration": true,
     "zone": "nord"
   },
@@ -12894,7 +12894,7 @@
       "complexes-sportifs",
       "tennis-padel"
     ],
-    "sportsListed": "Gym/fitness, personal training, cours collectifs, 2 courts padel",
+    "sportsListed": "Padel : 2 courts. Infrastructures : salle de sport/fitness, personal training, cours collectifs, restaurant. Réservation possible.",
     "hasRestauration": true,
     "zone": "nord"
   },
@@ -17449,7 +17449,7 @@
       "complexes-sportifs",
       "tennis-padel"
     ],
-    "sportsListed": "Piscine pro, foot (4 terrains 5), Padel (2 courts), basket/volley, pétanque, jogging, fitness, ~26 activités (yoga, zumba...)",
+    "sportsListed": "Padel : 2 courts. Infrastructures : complexe multisports (piscine, foot à 5, basket/volley, pétanque, jogging), fitness, ~26 activités (yoga, zumba...). Réservation possible.",
     "hasRestauration": true,
     "kidsActivities": true,
     "zone": "ouest"
@@ -20272,7 +20272,7 @@
       "tennis-padel"
     ],
     "zone": "ouest",
-    "sportsListed": "Padel (2 courts), club-house, événements"
+    "sportsListed": "Padel : 2 courts. Infrastructures : club-house, espace événements. Réservation possible."
   },
   {
     "id": "institut-patrice-avrillon",
@@ -21012,7 +21012,7 @@
       "complexes-sportifs",
       "tennis-padel"
     ],
-    "sportsListed": "Padel (4 courts extérieurs), foot5 (adultes et enfants), boutique padel, club-house",
+    "sportsListed": "Padel : 4 courts extérieurs. Infrastructures : club-house, pro-shop, football à 5. Réservation en ligne.",
     "hasRestauration": true,
     "zone": "ouest"
   },
@@ -29940,7 +29940,7 @@
     ],
     "badge": "coup-de-coeur",
     "zone": "nord",
-    "sportsListed": "Tennis (2 courts, dur), piscine, football, fitness"
+    "sportsListed": "Tennis : 2 courts (dur). Infrastructures : piscine, terrain de football, salle de fitness. Réservation possible."
   },
   {
     "id": "rm-club-mauritius",
@@ -29955,7 +29955,7 @@
       "tennis-padel"
     ],
     "zone": "nord",
-    "sportsListed": "Tennis (4 courts, dur), Padel (5 courts), squash, badminton, escalade, foot5, fitness"
+    "sportsListed": "Tennis : 4 courts (dur). Padel : 5 courts (dur). Infrastructures : squash, badminton, mur d'escalade, football à 5, salle de fitness. Réservation en ligne."
   },
   {
     "id": "mauritius-tennis-academy-azuri",
@@ -31371,7 +31371,7 @@
       "tennis-padel"
     ],
     "zone": "nord",
-    "sportsListed": "Tennis (4 courts, dur), académie, stages"
+    "sportsListed": "Tennis : 4 courts (dur). Services : académie, stages. Réservation possible."
   },
   {
     "id": "ennoia-tennis-courts",
@@ -32056,7 +32056,7 @@
       "tennis-padel"
     ],
     "zone": "nord",
-    "sportsListed": "Padel (2 courts), restaurant, bar",
+    "sportsListed": "Padel : 2 courts. Infrastructures : restaurant, bar. Réservation possible.",
     "hasRestauration": true
   },
   {
@@ -32072,7 +32072,7 @@
       "tennis-padel"
     ],
     "zone": "centre",
-    "sportsListed": "Tennis (10+ courts, dur), centre national, tribunes"
+    "sportsListed": "Tennis : 10+ courts (dur). Infrastructures : centre national, tribunes. Réservation possible."
   },
   {
     "id": "fairplay-tennis-club",
@@ -32788,7 +32788,7 @@
       "tennis-padel"
     ],
     "zone": "centre",
-    "sportsListed": "Tennis (2 courts, dur), coaching"
+    "sportsListed": "Tennis : 2 courts (dur). Services : coaching. Réservation possible."
   },
   {
     "id": "rose-hill-club",
@@ -33266,7 +33266,7 @@
       "tennis-padel"
     ],
     "zone": "centre",
-    "sportsListed": "Tennis (2 courts, dur), académie"
+    "sportsListed": "Tennis : 2 courts (dur). Services : académie. Réservation possible."
   },
   {
     "id": "popy-tennis-club-of-quatre-bornes",
@@ -33281,7 +33281,7 @@
       "tennis-padel"
     ],
     "zone": "centre",
-    "sportsListed": "Tennis (3 courts, dur), école de tennis"
+    "sportsListed": "Tennis : 3 courts (dur). Infrastructures : école de tennis. Réservation possible."
   },
   {
     "id": "plaine-verte-sports-arena",
@@ -35905,7 +35905,7 @@
     "themes": [
       "tennis-padel"
     ],
-    "sportsListed": "Tennis (4 courts, dur), club-house, école de tennis",
+    "sportsListed": "Tennis : 4 courts (dur). Infrastructures : club-house, école de tennis. Réservation possible.",
     "zone": "nord"
   }
 ]
