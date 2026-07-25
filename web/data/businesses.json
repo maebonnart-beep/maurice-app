@@ -6738,7 +6738,8 @@
     "lat": -20.3552174,
     "lng": 57.3658962,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "sushis"
     ],
     "zone": "ouest"
   },
@@ -9570,7 +9571,8 @@
     "lat": -20.1668419,
     "lng": 57.7662152,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "sushis"
     ],
     "zone": "est"
   },
@@ -10951,7 +10953,8 @@
     "lat": -20.230709,
     "lng": 57.5099556,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "sushis"
     ],
     "zone": "centre"
   },
@@ -15414,7 +15417,8 @@
     "lat": -20.0168727,
     "lng": 57.5823602,
     "themes": [
-      "livraisons"
+      "livraisons",
+      "sushis"
     ],
     "zone": "nord"
   },
@@ -15624,7 +15628,8 @@
     "lat": -20.0130992,
     "lng": 57.5863101,
     "themes": [
-      "boulangeries"
+      "boulangeries",
+      "creperie"
     ],
     "zone": "nord"
   },
@@ -19440,7 +19445,8 @@
     "lat": -20.3349154,
     "lng": 57.3711399,
     "themes": [
-      "livraisons"
+      "livraisons",
+      "sushis"
     ],
     "zone": "ouest"
   },
@@ -19455,7 +19461,8 @@
     "lat": -20.2767908,
     "lng": 57.3697485,
     "themes": [
-      "livraisons"
+      "livraisons",
+      "sushis"
     ],
     "zone": "ouest"
   },
