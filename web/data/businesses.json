@@ -3341,21 +3341,23 @@
     "id": "vallee-de-ferney",
     "name": "Vallée de Ferney",
     "category": "activites",
-    "address": "Ferney, Grand Port",
-    "phone": "",
+    "address": "B28, Vieux Grand Port, Mahébourg",
+    "phone": "+230 660 1937",
     "website": "https://ferney.mu/",
-    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Vallee%20de%20Ferney%20Mauritius",
-    "lat": -20.4372,
-    "lng": 57.6875,
+    "googleMapsUrl": "https://www.google.com/maps/place/La+Vall%C3%A9e+de+Ferney/@-20.3625775,57.7064693,17z",
+    "lat": -20.3625775,
+    "lng": 57.7064693,
     "themes": [
-      "randonnee-trail"
+      "randonnee-trail",
+      "parcs-aventures"
     ],
     "hours": "Tous les jours 9h-17h",
     "duration": "1h30 à 4h selon circuit (5 à 13km)",
     "difficultyLevel": "habitue",
     "guideRecommended": true,
     "zone": "sud",
-    "description": "Trois parcours balisés (bleu 5 km/75 m D+, jaune 13 km/530 m D+, rouge 18-20 km/970 m D+) en forêt endémique protégée, avec vue sur la baie de Mahébourg et observation possible de la crécerelle de Maurice."
+    "description": "Trois parcours balisés (bleu 5 km/75 m D+, jaune 13 km/530 m D+, rouge 18-20 km/970 m D+) en forêt endémique protégée, avec vue sur la baie de Mahébourg et observation possible de la crécerelle de Maurice.",
+    "entryPrice": "200 Rs"
   },
   {
     "id": "ile-aux-aigrettes",
@@ -20995,7 +20997,9 @@
     "googleMapsUrl": "https://maps.google.com/?cid=2216346035158716349&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.3161875,
     "lng": 57.6906875,
-    "themes": [],
+    "themes": [
+      "randonnee-trail"
+    ],
     "zone": "est"
   },
   {
@@ -31081,7 +31085,8 @@
     "lng": 57.6477936,
     "themes": [
       "sports-nautiques",
-      "kayak"
+      "kayak",
+      "parcs-aventures"
     ],
     "zone": "nord"
   },
