@@ -1454,7 +1454,8 @@
     "themes": [
       "restaurants",
       "mauricienne",
-      "fruits-de-mer"
+      "fruits-de-mer",
+      "europeenne"
     ],
     "hours": "Lun-Jeu et Dim 12h-22h, Ven-Sam 12h-22h30",
     "priceRange": "se-faire-plaisir",
@@ -3483,7 +3484,8 @@
     "themes": [
       "restaurants",
       "mauricienne",
-      "asiatique"
+      "asiatique",
+      "europeenne"
     ],
     "hours": "Mar-Dim 11h30-14h30 & 18h30-22h30, fermé lun",
     "priceRange": "prix-moyen",
@@ -3546,7 +3548,8 @@
     ],
     "hours": "Fermé mar, Lun+Mer-Dim 12h-14h30 & 17h-21h30",
     "priceRange": "se-faire-plaisir",
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Restaurant italien haut de gamme de La Balise Marina, spécialisé dans les pâtes fraîches artisanales et les pizzas, avec vue sur la marina."
   },
   {
     "id": "black-river-lounge-kitchen-tamarin",
@@ -5944,9 +5947,11 @@
     "lat": -20.0034653,
     "lng": 57.6057364,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "europeenne"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Restaurant-jardin convivial de Pereybère mettant en avant une cuisine légère à base de produits frais, avec animations musicales certains soirs."
   },
   {
     "id": "dumpling-noodles-house",
@@ -6447,9 +6452,11 @@
     "lat": -20.3174289,
     "lng": 57.3936922,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "europeenne"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Restaurant du club-house de Tamarina Golf Club, en bord de terrain de golf, cuisine mauricienne et française revisitée à base de produits frais."
   },
   {
     "id": "creole-shack",
@@ -6537,10 +6544,12 @@
     "lat": -20.2770133,
     "lng": 57.3696168,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "europeenne"
     ],
     "badge": "selection",
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Restaurant au décor tout en blanc évoquant un paquebot (« pakbo » en créole), cuisine fusion mêlant influences créole, indienne, chinoise et française."
   },
   {
     "id": "hich-lounge",
@@ -6847,10 +6856,13 @@
     "lat": -20.3289141,
     "lng": 57.3768523,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "italien"
     ],
     "badge": "selection",
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Restaurant italien reconnu pour ses pizzas au feu de bois et ses pâtes fraîches à Tamarin, musique live le vendredi.",
+    "hours": "Mar-Dim 10h-15h & 18h-22h"
   },
   {
     "id": "maravann-burgers",
@@ -6878,10 +6890,12 @@
     "lat": -20.3449354,
     "lng": 57.3641009,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "italien"
     ],
     "badge": "selection",
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Restaurant italien du chef Rocco à Tamarin, recettes sardes et siciliennes faites maison, glaces artisanales, jardin extérieur avec musique live le week-end."
   },
   {
     "id": "coquillages-restaurant-bar",
@@ -8194,9 +8208,11 @@
     "lat": -20.4500308,
     "lng": 57.3146063,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "europeenne"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Restaurant de l'hôtel Dinarobin au Morne, concept bistronomique mêlant héritage colonial français et influences indiennes, cuisine mettant en avant les produits locaux."
   },
   {
     "id": "chez-bhim",
@@ -9755,7 +9771,8 @@
     "lng": 57.5216269,
     "themes": [
       "restaurants",
-      "mauricienne"
+      "mauricienne",
+      "europeenne"
     ],
     "badge": "selection",
     "zone": "nord",
@@ -18749,9 +18766,11 @@
     "lat": -20.283472,
     "lng": 57.3649725,
     "themes": [
-      "snacks-plage"
+      "snacks-plage",
+      "italien"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Restaurant italien au four à bois à Flic-en-Flac, connu pour ses pizzas artisanales, pâtes maison et calamars croustillants dans une ambiance décontractée."
   },
   {
     "id": "farata-aka-vinoda",
@@ -19415,9 +19434,12 @@
     "lat": -20.277133,
     "lng": 57.3693057,
     "themes": [
-      "livraisons"
+      "livraisons",
+      "italien",
+      "restaurants"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Pizzeria de quartier sur la route côtière de Flic-en-Flac, four à pizza et pâtes fraîches maison, à emporter, en livraison ou sur place en terrasse."
   },
   {
     "id": "kfc-tamarin",
@@ -36361,5 +36383,111 @@
     ],
     "entryPrice": "Rs 1000",
     "zone": "nord"
+  },
+  {
+    "id": "la-goelette-royal-palm-grand-baie",
+    "name": "La Goélette",
+    "category": "food",
+    "address": "Royal Palm Beachcomber Luxury, Coastal Road, Grand Baie",
+    "phone": "+230 209 8300",
+    "zone": "nord",
+    "lat": -20.0167,
+    "lng": 57.5833,
+    "themes": [
+      "restaurants",
+      "europeenne",
+      "mauricienne"
+    ],
+    "priceRange": "se-faire-plaisir",
+    "hours": "Dîner env. 19h30-22h30",
+    "description": "Restaurant principal du Royal Palm Beachcomber Luxury à Grand Baie, terrasse face à la mer, cuisine créole et internationale gastronomique, cave à vin, tenue correcte exigée le soir.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=La%20Go%C3%A9lette%20Royal%20Palm%20Beachcomber%20Luxury%2C%20Coastal%20Road%2C%20Grand%20Baie%20Mauritius"
+  },
+  {
+    "id": "le-bistro-morisyen-flic-en-flac",
+    "name": "Le Bistro Morisyen",
+    "category": "food",
+    "address": "Coastal Road, Flic-en-Flac",
+    "phone": "+230 5783 4904",
+    "zone": "ouest",
+    "lat": -20.2833,
+    "lng": 57.3667,
+    "themes": [
+      "restaurants",
+      "italien",
+      "europeenne"
+    ],
+    "priceRange": "bon-marche",
+    "description": "Restaurant de Flic-en-Flac à la carte éclectique (italien, français, chinois, indien, créole-cajun), réputé pour son bon rapport qualité-prix.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Le%20Bistro%20Morisyen%20Coastal%20Road%2C%20Flic-en-Flac%20Mauritius"
+  },
+  {
+    "id": "o8-wellness-cafe-flic-en-flac",
+    "name": "Ô8 Wellness Café",
+    "category": "food",
+    "address": "Avenue des Kestrels, Flic-en-Flac",
+    "phone": "+230 5733 3818",
+    "zone": "ouest",
+    "lat": -20.2833,
+    "lng": 57.3667,
+    "themes": [
+      "restaurants",
+      "europeenne"
+    ],
+    "priceRange": "prix-moyen",
+    "description": "Café bien-être ouvert en 2024 à Flic-en-Flac par une ex-juriste reconvertie, jus frais, bowls, granola et événements bien-être.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=%C3%948%20Wellness%20Caf%C3%A9%20Avenue%20des%20Kestrels%2C%20Flic-en-Flac%20Mauritius"
+  },
+  {
+    "id": "fynbos-meeting-place-grand-baie",
+    "name": "Fynbos Meeting Place",
+    "category": "food",
+    "address": "Chemin Vingt Pieds, Grand Baie",
+    "zone": "nord",
+    "lat": -20.0167,
+    "lng": 57.5833,
+    "themes": [
+      "restaurants",
+      "cafes-terrasses",
+      "europeenne"
+    ],
+    "priceRange": "prix-moyen",
+    "hours": "Lun-Ven 8h-16h, Sam 8h-14h, fermé dimanche",
+    "description": "Café-brunch de Grand Baie réputé pour son Signature Benedict et ses cinnamon rolls, ambiance décontractée avec parking dédié.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Fynbos%20Meeting%20Place%20Chemin%20Vingt%20Pieds%2C%20Grand%20Baie%20Mauritius"
+  },
+  {
+    "id": "desirata-boudoir-gourmand-quatre-bornes",
+    "name": "Désirata le Boudoir Gourmand.mu by Gelatissimo",
+    "category": "food",
+    "address": "5 Avenue des Glaïeuls, Quatre Bornes",
+    "zone": "centre",
+    "lat": -20.2667,
+    "lng": 57.4833,
+    "themes": [
+      "restaurants",
+      "europeenne",
+      "glaciers"
+    ],
+    "priceRange": "prix-moyen",
+    "description": "Pâtisserie française et gelato artisanal à Quatre Bornes, salon de thé avec salle à l'étage et salon privé sur réservation.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=D%C3%A9sirata%20le%20Boudoir%20Gourmand.mu%20by%20Gelatissimo%205%20Avenue%20des%20Gla%C3%AFeuls%2C%20Quatre%20Bornes%20Mauritius"
+  },
+  {
+    "id": "the-cloud-rooftop-lounge-bar-pointe-aux-canonniers",
+    "name": "The Cloud Rooftop & Lounge Bar",
+    "category": "food",
+    "address": "Les Enfants Terribles, Royal Road, Pointe aux Canonniers",
+    "zone": "nord",
+    "lat": -20.0167,
+    "lng": 57.5833,
+    "themes": [
+      "restaurants",
+      "bars",
+      "europeenne"
+    ],
+    "priceRange": "prix-moyen",
+    "description": "Rooftop-bar sur le toit de l'établissement Les Enfants Terribles à Pointe aux Canonniers, vue sur Hibiscus Beach, tapas et burgers gourmets, soirées à thème.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=The%20Cloud%20Rooftop%20%26%20Lounge%20Bar%20Les%20Enfants%20Terribles%2C%20Royal%20Road%2C%20Pointe%20aux%20Canonniers%20Mauritius"
   }
 ]
