@@ -1031,8 +1031,7 @@
     "lng": 57.5820937,
     "themes": [
       "restaurants",
-      "asiatique",
-      "europeenne"
+      "sushis"
     ],
     "zone": "nord"
   },
@@ -1571,10 +1570,7 @@
     "lat": -19.9928935,
     "lng": 57.5923242,
     "themes": [
-      "restaurants",
-      "europeenne",
-      "fastfood",
-      "grillades"
+      "bars"
     ],
     "hours": "Lun-Sam 11h-16h30",
     "priceRange": "bon-marche",
@@ -3752,9 +3748,7 @@
     "lng": 57.5017,
     "themes": [
       "restaurants",
-      "indienne",
-      "asiatique",
-      "europeenne"
+      "mauricienne"
     ],
     "hours": "Lun-Ven, uniquement le midi",
     "priceRange": "bon-marche",
@@ -4891,24 +4885,6 @@
     "priceRange": "bon-marche",
     "zone": "nord",
     "description": "Table d'hôte tenue par Val dans une ambiance chez l'habitant, où les convives dînent au bord de la piscine et découvrent un menu du jour composé selon les produits frais disponibles."
-  },
-  {
-    "id": "lambic-port-louis",
-    "name": "Lambic Restaurant, Lounge & Beer Shop",
-    "category": "food",
-    "address": "4 St. Georges Street, Port-Louis",
-    "phone": "+230 212 6011",
-    "website": "",
-    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Lambic%20Beer%20Bar%20Port%20Louis%20Mauritius",
-    "lat": -20.1619,
-    "lng": 57.5017,
-    "themes": [
-      "bars",
-      "europeenne"
-    ],
-    "hours": "Fermé dim, Lun-Jeu 9h30-21h, Ven 9h30-22h, Sam 13h-21h",
-    "priceRange": "prix-moyen",
-    "zone": "centre"
   },
   {
     "id": "esco-burger-blue-bay",
