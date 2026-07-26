@@ -892,7 +892,7 @@
     "lng": 57.5839465,
     "themes": [
       "restaurants",
-      "grecque"
+      "europeenne"
     ],
     "hours": "Lun 10h-22h, Mar-Sam 11h-22h, Dim 9h-21h",
     "priceRange": "prix-moyen",
@@ -909,8 +909,7 @@
     "lat": -20.0150887,
     "lng": 57.584339,
     "themes": [
-      "restaurants",
-      "marocain"
+      "restaurants"
     ],
     "zone": "nord"
   },
@@ -1771,7 +1770,6 @@
     "lat": -20.0003914,
     "lng": 57.582236,
     "themes": [
-      "marocain",
       "bars",
       "kids-friendly"
     ],
