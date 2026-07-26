@@ -36443,7 +36443,8 @@
     "lng": 57.3667,
     "themes": [
       "restaurants",
-      "europeenne"
+      "europeenne",
+      "vegetarien"
     ],
     "priceRange": "prix-moyen",
     "description": "Café bien-être ouvert en 2024 à Flic-en-Flac par une ex-juriste reconvertie, jus frais, bowls, granola et événements bien-être.",
@@ -36460,7 +36461,8 @@
     "themes": [
       "restaurants",
       "cafes-terrasses",
-      "europeenne"
+      "europeenne",
+      "vegetarien"
     ],
     "priceRange": "prix-moyen",
     "hours": "Lun-Ven 8h-16h, Sam 8h-14h, fermé dimanche",
@@ -36623,5 +36625,115 @@
     "priceRange": "prix-moyen",
     "description": "Restaurant italien du centre commercial Cascavelle Shopping Village, ouvert depuis 2019, pizzas et pâtes, exploité par le groupe local qui gère aussi Okiya dans le même centre.",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Linguini%20Cascavelle%20Shopping%20Village%2C%20Bambous%20Mauritius"
+  },
+  {
+    "id": "marmite-divine-quatre-bornes",
+    "name": "Marmite Divine",
+    "category": "food",
+    "address": "St Jean Road, Quatre Bornes",
+    "phone": "+230 4245712",
+    "zone": "centre",
+    "lat": -20.2667,
+    "lng": 57.4833,
+    "themes": [
+      "restaurants",
+      "vegetarien",
+      "indienne"
+    ],
+    "priceRange": "bon-marche",
+    "hours": "Lun-Sam 7h-18h, Dim 7h30-14h",
+    "description": "Restaurant-pâtisserie 100% végétarien de Quatre Bornes, maison sœur de la Pâtisserie Divine, adapté aux repas de jeûne religieux, gâteaux végans selon disponibilité.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Marmite%20Divine%20St%20Jean%20Road%2C%20Quatre%20Bornes%20Mauritius"
+  },
+  {
+    "id": "ninety-nine-bistro-sodnac",
+    "name": "Ninety Nine Bistro (99 Bistrot)",
+    "category": "food",
+    "address": "33 Avenue Hillcrest, Sodnac, Quatre Bornes",
+    "phone": "+230 5286 3333",
+    "zone": "centre",
+    "lat": -20.25,
+    "lng": 57.4833,
+    "themes": [
+      "restaurants",
+      "vegetarien",
+      "indienne"
+    ],
+    "priceRange": "prix-moyen",
+    "description": "Restaurant 100% végétarien fusion indo-chinoise à Sodnac, ouvert par la même famille que Namo India, thalis quotidiens, momos, pizzas et pâtes végétariennes.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Ninety%20Nine%20Bistro%20(99%20Bistrot)%2033%20Avenue%20Hillcrest%2C%20Sodnac%2C%20Quatre%20Bornes%20Mauritius"
+  },
+  {
+    "id": "shamiana-restaurant-rose-hill",
+    "name": "Shamiana Restaurant",
+    "category": "food",
+    "address": "Edward VII Street, Beau Bassin-Rose Hill",
+    "phone": "+230 466 4292",
+    "zone": "centre",
+    "lat": -20.2333,
+    "lng": 57.4667,
+    "themes": [
+      "restaurants",
+      "vegetarien",
+      "indienne"
+    ],
+    "priceRange": "prix-moyen",
+    "hours": "Tous les jours env. 8h-20h",
+    "description": "Restaurant indien 100% halal de Rose Hill avec cuisines séparées pour les plats végétariens et non-végétariens, chefs venus d'Inde.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Shamiana%20Restaurant%20Edward%20VII%20Street%2C%20Beau%20Bassin-Rose%20Hill%20Mauritius"
+  },
+  {
+    "id": "namo-india-belle-rose",
+    "name": "Namo India (Belle Rose)",
+    "category": "food",
+    "address": "2 Avenue Remy Ollier, Belle Rose, Quatre Bornes",
+    "zone": "centre",
+    "lat": -20.2667,
+    "lng": 57.4833,
+    "themes": [
+      "restaurants",
+      "vegetarien",
+      "indienne"
+    ],
+    "priceRange": "prix-moyen",
+    "hours": "Tous les jours 10h-21h30",
+    "description": "Seconde adresse de l'enseigne Namo India à Belle Rose (Quatre Bornes), cuisine 100% végétarienne indienne : chaat, pani puri, indo-chinois, tandoori et sud-indien.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Namo%20India%20(Belle%20Rose)%202%20Avenue%20Remy%20Ollier%2C%20Belle%20Rose%2C%20Quatre%20Bornes%20Mauritius"
+  },
+  {
+    "id": "jains-little-india-sodnac",
+    "name": "Jain's Little India (Sodnac)",
+    "category": "food",
+    "address": "41 Avenue des Glaïeuls, Sodnac, Quatre Bornes",
+    "zone": "centre",
+    "lat": -20.25,
+    "lng": 57.4833,
+    "themes": [
+      "restaurants",
+      "vegetarien",
+      "indienne"
+    ],
+    "priceRange": "prix-moyen",
+    "hours": "Mar-Dim 10h-22h",
+    "description": "Boutique de sucreries et snacks 100% végétariens indiens de Sodnac, enseigne familiale distincte du comptoir Padharo Sa de CentrePoint Trianon.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Jain's%20Little%20India%20(Sodnac)%2041%20Avenue%20des%20Gla%C3%AFeuls%2C%20Sodnac%2C%20Quatre%20Bornes%20Mauritius"
+  },
+  {
+    "id": "jains-little-india-rose-belle",
+    "name": "Jain's Little India (Rose-Belle)",
+    "category": "food",
+    "address": "Plaisance Shopping Village, Rose-Belle",
+    "zone": "sud",
+    "lat": -20.3833,
+    "lng": 57.5667,
+    "themes": [
+      "restaurants",
+      "vegetarien",
+      "indienne"
+    ],
+    "priceRange": "prix-moyen",
+    "hours": "Lun-Jeu 10h-21h, Ven-Dim 10h-22h",
+    "description": "Antenne de l'enseigne Jain's Little India à Rose-Belle, sucreries et snacks végétariens indiens.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Jain's%20Little%20India%20(Rose-Belle)%20Plaisance%20Shopping%20Village%2C%20Rose-Belle%20Mauritius"
   }
 ]
