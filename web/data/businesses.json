@@ -978,7 +978,7 @@
     "badge": "coup-de-coeur",
     "promoText": "Cadre très plaisant sous les arbres, cuisine ouverte au feu de bois. Très bons plats.",
     "zone": "nord",
-    "description": "Branche \"Le Jardin\" de la chaîne Le Poivrier à Grand Baie : cuisine créole locale fraîche dans un cadre extérieur exotique."
+    "description": "Antenne \"Le Jardin\" de la chaîne Le Poivrier à Grand Baie, installée dans un jardin extérieur au décor exotique, cuisine créole du quotidien."
   },
   {
     "id": "cocoloko",
@@ -3494,7 +3494,7 @@
     "priceRange": "prix-moyen",
     "badge": "selection",
     "zone": "ouest",
-    "description": "Cuisine créole traditionnelle réputée pour son excellent rapport qualité-prix, menu complet entrée-plat-dessert."
+    "description": "Formule complète entrée-plat-dessert autour de recettes mauriciennes classiques, à Flic-en-Flac, avec un rapport qualité-prix qui revient souvent dans les retours."
   },
   {
     "id": "beach-shack-flic-en-flac",
@@ -3774,7 +3774,7 @@
     "priceRange": "prix-moyen",
     "badge": "selection",
     "zone": "sud",
-    "description": "Table d'hôtes familiale très plébiscitée pour son authenticité, réputée pour son rougail saucisse maison. Ouvert midi seulement en semaine, réservation obligatoire."
+    "description": "Table d'hôtes tenue en famille à Moka, prisée pour son ambiance conviviale et son rougail saucisse fait maison. Service uniquement le midi en semaine, sur réservation."
   },
   {
     "id": "la-table-matisse-curepipe",
@@ -4570,7 +4570,7 @@
     "priceRange": "prix-moyen",
     "badge": "selection",
     "zone": "est",
-    "description": "Petit restaurant familial avec vue sur l'Île aux Cerfs, tenu par le fils d'un ancien pêcheur. Le cari d'ourite (poulpe) est le plat le plus recommandé."
+    "description": "À Trou d'Eau Douce, petite adresse conviviale gérée par le fils d'un pêcheur du coin, avec vue dégagée sur l'Île aux Cerfs. Le curry de poulpe local fait partie des plats les plus demandés."
   },
   {
     "id": "cafe-des-arts-trou-eau-douce",
@@ -5964,7 +5964,7 @@
     ],
     "badge": "selection",
     "zone": "nord",
-    "description": "Petite adresse discrète à Grand Baie, appréciée pour sa cuisine sino-mauricienne simple préparée à la minute (mine frit et plats sino-créoles).",
+    "description": "À Grand Baie, petite cantine peu visible depuis la rue qui prépare à la commande des plats d'inspiration chinoise et créole, mine frite en tête.",
     "priceRange": "bon-marche"
   },
   {
@@ -6988,7 +6988,7 @@
       "mauricienne"
     ],
     "zone": "ouest",
-    "description": "Plateforme flottante en plein lagon proposant du finger food à base de produits locaux, concept original pour l'apéritif ou le coucher de soleil."
+    "description": "Ponton flottant installé en plein lagon, pensé davantage comme un lieu d'apéritif au coucher du soleil que comme un restaurant classique."
   },
   {
     "id": "vanilla-village",
@@ -7653,7 +7653,7 @@
     ],
     "badge": "selection",
     "zone": "sud",
-    "description": "Restaurant semi-gastronomique à 260m d'altitude avec vue panoramique sur la côte ouest et Le Morne. Décor typique créole, ambiance familiale, cuisine locale et européenne."
+    "description": "Perché à 260 mètres d'altitude à Chamarel, avec une vue dégagée sur la côte ouest et la presqu'île du Morne. L'ambiance reste familiale, dans un décor aux accents créoles, pour une carte mêlant plats locaux et influences européennes."
   },
   {
     "id": "restaurant-les-palmiers-chez-dev",
@@ -8740,7 +8740,7 @@
     "badge": "coup-de-coeur",
     "promoText": "Testé par nous : terrasse très agréable au cœur du parc de l'Aventure du Sucre, produits frais et bien cuisinés, jolie présentation, superbes boissons fraîches aux herbes du jardin.",
     "zone": "nord",
-    "description": "Créole revisitée dans le jardin de l'ancienne sucrerie de Beau Plan (site de l'Aventure du Sucre), salué pour son attachement aux racines créoles dans un cadre patrimonial sucrier."
+    "description": "Installé dans les jardins de l'ancienne usine sucrière de Beau Plan, à côté du site de l'Aventure du Sucre. La carte met en avant les racines créoles de l'île dans un décor industriel et patrimonial."
   },
   {
     "id": "les-robinsons-restaurant-bar",
@@ -9478,7 +9478,7 @@
       "mauricienne"
     ],
     "zone": "est",
-    "description": "Célébration animée et rustique de la cuisine mauricienne traditionnelle dans le domaine de Constance Belle Mare Plage, ambiance bucolique et plats locaux copieux.",
+    "description": "Dans le domaine de Constance Belle Mare Plage, propose un repas convivial et généreux façon banquet rustique, centré sur les grands classiques de la cuisine locale.",
     "priceRange": "se-faire-plaisir"
   },
   {
@@ -9707,7 +9707,7 @@
     ],
     "badge": "selection",
     "zone": "nord",
-    "description": "Bâtiment colonial surplombant la Rivière Citron et les ruines de Balaclava. Cuisine créole/coloniale raffinée, jugée chère mais en valoir la peine.",
+    "description": "Ancienne bâtisse coloniale dominant la Rivière Citron et les vestiges du site de Balaclava. Le tarif est élevé pour les standards locaux, mais l'expérience est généralement saluée.",
     "priceRange": "se-faire-plaisir"
   },
   {
@@ -10110,7 +10110,7 @@
       "fruits-de-mer"
     ],
     "zone": "sud",
-    "description": "Cadre créole authentique réputé pour sa langouste grillée et son rougaille saucisse, avis partagés sur le rapport qualité-prix."
+    "description": "À Mahébourg, propose langouste grillée et rougaille saucisse dans un décor créole. Les retours sont partagés, certains trouvant le rapport qualité-prix un peu élevé."
   },
   {
     "id": "ti-kaz-kreol",
@@ -11116,7 +11116,7 @@
       "mauricienne"
     ],
     "zone": "centre",
-    "description": "Cuisine créole traditionnelle servie dans une demeure coloniale historique entourée d'un jardin avec cascades. Cadre autant patrimonial que culinaire, service de qualité."
+    "description": "Repas créole servi dans une ancienne demeure coloniale entourée de jardins et de petites cascades, à Moka. L'intérêt vient autant du décor patrimonial que de l'assiette, avec un service soigné."
   },
   {
     "id": "mystic-masala",
@@ -29521,7 +29521,7 @@
     "priceRange": "se-faire-plaisir",
     "badge": "selection",
     "zone": "centre",
-    "description": "Référence citée pour le créole authentique, plats mijotés à base de produits du terroir."
+    "description": "Souvent mentionné, aux côtés d'Escale Créole et Chez Tino, comme une des adresses de référence pour la cuisine créole traditionnelle à Floréal."
   },
   {
     "id": "flowers-of-paradise-mont-choisy",
@@ -29540,7 +29540,7 @@
     ],
     "badge": "selection",
     "zone": "nord",
-    "description": "Une des meilleures tables du nord selon les guides, mêlant saveurs créoles et savoir-faire français au sein de l'hôtel du même nom.",
+    "description": "Considérée comme l'une des bonnes tables du nord de l'île, cette adresse au sein de l'hôtel du même nom associe cuisine créole et technique française.",
     "priceRange": "se-faire-plaisir"
   },
   {
@@ -36083,7 +36083,7 @@
       "mauricienne"
     ],
     "priceRange": "prix-moyen",
-    "description": "Expérience créole \"à l'ancienne\" avec plats mijotés servis dans une karaï traditionnelle (marmite en fonte) : cari ourite, cerf mijoté, poisson sauce créole. Retour aux saveurs mauriciennes d'antan.",
+    "description": "Concept qui met en scène la cuisine créole des générations précédentes : plats mijotés et servis dans une karaï en fonte, sur le modèle de la cuisine familiale d'autrefois.",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Karai%20Creole%20Grand%20Baie%20Mauritius"
   },
   {
@@ -36100,7 +36100,7 @@
       "indienne"
     ],
     "priceRange": "se-faire-plaisir",
-    "description": "Table gastronomique de l'hôtel 5 étoiles One&Only Le Saint Géran, mélange raffiné d'influences indiennes et mauriciennes.",
+    "description": "Table gastronomique du One&Only Le Saint Géran, où la carte marie techniques indiennes et produits mauriciens dans un registre haut de gamme.",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Rasoi%20par%20Vineet%20One%26Only%20Le%20Saint%20G%C3%A9ran%2C%20Pointe%20de%20Flacq%20Mauritius"
   },
   {
@@ -36116,7 +36116,7 @@
       "mauricienne"
     ],
     "priceRange": "se-faire-plaisir",
-    "description": "Table gastronomique fusion créole citée parmi les meilleures du domaine de Constance Belle Mare Plage, cuisine créative haut de gamme.",
+    "description": "Une des tables les plus abouties du domaine de Constance Belle Mare Plage, avec une cuisine créative qui revisite les codes créoles.",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Blue%20Bamboo%20Constance%20Belle%20Mare%20Plage%2C%20Belle%20Mare%20Mauritius"
   },
   {
@@ -36133,7 +36133,7 @@
       "fruits-de-mer"
     ],
     "priceRange": "se-faire-plaisir",
-    "description": "Table gastronomique réputée pour ses fruits de mer raffinés, régulièrement citée parmi les meilleures adresses de l'île.",
+    "description": "À Phoenix, restaurant tourné vers des préparations soignées de fruits de mer, souvent recommandé parmi les bonnes tables de l'île.",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=La%20Pescaria%20Phoenix%20Mauritius"
   },
   {
@@ -36149,7 +36149,7 @@
       "mauricienne"
     ],
     "priceRange": "se-faire-plaisir",
-    "description": "Domaine historique du sud proposant une cuisine gastronomique créole/coloniale (menu dégustation), régulièrement cité parmi les meilleurs classements.",
+    "description": "Dans le domaine historique de Bel Ombre, propose un menu dégustation autour d'une cuisine créole/coloniale élaborée, dans un cadre haut de gamme.",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Ch%C3%A2teau%20de%20Bel%20Ombre%20Bel%20Ombre%20Mauritius"
   },
   {
@@ -36165,7 +36165,7 @@
       "mauricienne"
     ],
     "priceRange": "se-faire-plaisir",
-    "description": "Établissement gastronomique haut de gamme cité parmi les tables dirigées par des chefs renommés, cuisine créole revisitée.",
+    "description": "À Mapou, table haut de gamme associée à des cuisiniers qui ont une certaine notoriété localement, avec une carte créole travaillée.",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=La%20Table%20du%20Ch%C3%A2teau%20Mapou%20Mauritius"
   },
   {
@@ -36182,7 +36182,7 @@
       "indienne"
     ],
     "priceRange": "se-faire-plaisir",
-    "description": "Référence citée pour la fusion indo-créole à Tamarin.",
+    "description": "À Tamarin, une des adresses qui reviennent le plus souvent quand on évoque une cuisine mêlant influences indiennes et créoles.",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Cannelle%20Tamarin%20Mauritius"
   },
   {
@@ -36199,7 +36199,7 @@
       "fruits-de-mer"
     ],
     "priceRange": "se-faire-plaisir",
-    "description": "Adresse pieds dans l'eau très citée à Flic-en-Flac, poisson et fruits de mer en cuisine créole.",
+    "description": "Restaurant les pieds dans le sable à Flic-en-Flac, orienté poissons et fruits de mer préparés à la créole.",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Le%20Manjaro%20Flic-en-Flac%20Mauritius"
   },
   {
@@ -36216,7 +36216,7 @@
       "fruits-de-mer"
     ],
     "priceRange": "se-faire-plaisir",
-    "description": "Cadre pieds dans l'eau apprécié dans le sud-est, au sein du domaine Preskil, spécialités créoles et fruits de mer.",
+    "description": "Au sein du domaine Preskil à Mahébourg, cadre les pieds dans l'eau pour une cuisine créole tournée vers les produits de la mer.",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Horizon%20Preskil%20Beach%20Resort%2C%20Mah%C3%A9bourg%20Mauritius"
   },
   {
@@ -36232,7 +36232,7 @@
       "mauricienne"
     ],
     "priceRange": "prix-moyen",
-    "description": "Branche \"La Rivière\" de la chaîne Le Poivrier à Tamarin : tables essentiellement en extérieur, cadre dépaysant apprécié des résidents.",
+    "description": "Antenne \"La Rivière\" de la chaîne Le Poivrier à Tamarin, avec des tables surtout en extérieur, une adresse fréquentée par les habitants du coin.",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Le%20Poivrier%20-%20La%20Rivi%C3%A8re%20Tamarin%20Mauritius"
   },
   {
@@ -36248,7 +36248,7 @@
       "mauricienne"
     ],
     "priceRange": "prix-moyen",
-    "description": "Branche \"La Plage\" de la chaîne Le Poivrier en bord de mer à Roches Noires, ambiance décontractée façon plage.",
+    "description": "Antenne \"La Plage\" de la chaîne Le Poivrier à Roches Noires, en bord de mer, dans une ambiance décontractée de bord de plage.",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Le%20Poivrier%20-%20La%20Plage%20Roches%20Noires%20Mauritius"
   },
   {
@@ -36264,7 +36264,7 @@
       "mauricienne"
     ],
     "priceRange": "prix-moyen",
-    "description": "Quatrième adresse de la chaîne Le Poivrier, même concept créole convivial.",
+    "description": "Quatrième antenne de la chaîne Le Poivrier, sur le même principe de cuisine créole conviviale que les trois autres adresses.",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Le%20Poivrier%20-%20%C3%8Ele%20Plate%20%C3%8Ele%20Plate%20Mauritius"
   }
 ]
