@@ -1438,7 +1438,8 @@
     ],
     "badge": "selection",
     "zone": "nord",
-    "description": "Restaurant familial du secteur de Grand Baie/Pereybère proposant une cuisine mauricienne et internationale, réputé pour ses plateaux de fruits de mer et son cadre extérieur convivial."
+    "description": "Restaurant familial du secteur de Grand Baie/Pereybère proposant une cuisine mauricienne et internationale, réputé pour ses plateaux de fruits de mer et son cadre extérieur convivial.",
+    "hours": "Lun-Sam 11h-22h30, Dim 11h-16h30 & 18h-22h30"
   },
   {
     "id": "les-canisses-resto-plage",
@@ -4059,7 +4060,8 @@
     "priceRange": "prix-moyen",
     "badge": "selection",
     "zone": "ouest",
-    "description": "Restaurant familial établi de longue date sur la route royale de Flic en Flac, spécialisé dans la cuisine chinoise (raviolis, rouleaux de printemps, sautés) dans un cadre décontracté."
+    "description": "Restaurant familial établi de longue date sur la route royale de Flic en Flac, spécialisé dans la cuisine chinoise (raviolis, rouleaux de printemps, sautés) dans un cadre décontracté.",
+    "hours": "Mar-Dim 11h30-22h, fermé lundi"
   },
   {
     "id": "le-bougainville-flic-en-flac",
@@ -4192,7 +4194,8 @@
     ],
     "priceRange": "prix-moyen",
     "zone": "ouest",
-    "description": "Petit restaurant familial mauricien sur la route royale de Flic en Flac, réputé pour ses langoustes et crevettes à l'ail, considéré comme l'une des adresses locales authentiques du secteur."
+    "description": "Petit restaurant familial mauricien sur la route royale de Flic en Flac, réputé pour ses langoustes et crevettes à l'ail, considéré comme l'une des adresses locales authentiques du secteur.",
+    "hours": "Tous les jours 11h-14h30 & 18h-21h30"
   },
   {
     "id": "pavillon-de-jade-tamarin",
@@ -4392,7 +4395,8 @@
       "mauricienne"
     ],
     "zone": "sud",
-    "description": "Restaurant de plage de l'hôtel Heritage Awali à Bel Ombre, les pieds dans le sable face à l'océan, spécialisé dans la cuisine créole et les produits de la mer."
+    "description": "Restaurant de plage de l'hôtel Heritage Awali à Bel Ombre, les pieds dans le sable face à l'océan, spécialisé dans la cuisine créole et les produits de la mer.",
+    "hours": "Déjeuner 12h-14h30, dîner 19h-22h, bar 10h-23h (tous les jours)"
   },
   {
     "id": "le-palais-de-barbizon-chamarel",
@@ -4410,7 +4414,8 @@
     ],
     "badge": "selection",
     "zone": "sud",
-    "description": "Petit restaurant familial tenu par Marie-Ange et Rico, où la cuisine créole traditionnelle est préparée avec des produits du potager et du marché local, sous forme de buffet dont le menu change chaque jour."
+    "description": "Petit restaurant familial tenu par Marie-Ange et Rico, où la cuisine créole traditionnelle est préparée avec des produits du potager et du marché local, sous forme de buffet dont le menu change chaque jour.",
+    "hours": "Tous les jours 11h30-16h (soir sur réservation uniquement)"
   },
   {
     "id": "le-flamboyant-so-sofitel-bel-ombre",
@@ -4542,7 +4547,8 @@
     ],
     "priceRange": "prix-moyen",
     "zone": "est",
-    "description": "Table d'hôte familiale fonctionnant uniquement sur réservation, proposant une cuisine créole maison à base de produits frais, avec des plats comme le curry de poisson ou la salade d'ourite."
+    "description": "Table d'hôte familiale fonctionnant uniquement sur réservation, proposant une cuisine créole maison à base de produits frais, avec des plats comme le curry de poisson ou la salade d'ourite.",
+    "hours": "Dim 10h-15h30, Mar-Sam 16h-22h, fermé lundi"
   },
   {
     "id": "la-spiaggia-constance-belle-mare",
@@ -5987,7 +5993,8 @@
     "badge": "selection",
     "zone": "nord",
     "description": "À Grand Baie, petite cantine peu visible depuis la rue qui prépare à la commande des plats d'inspiration chinoise et créole, mine frite en tête.",
-    "priceRange": "bon-marche"
+    "priceRange": "bon-marche",
+    "hours": "Lun-Sam 11h-19h, fermé dimanche"
   },
   {
     "id": "le-5-terre-restaurant-et-pinsa",
@@ -7010,7 +7017,8 @@
       "mauricienne"
     ],
     "zone": "ouest",
-    "description": "Ponton flottant installé en plein lagon, pensé davantage comme un lieu d'apéritif au coucher du soleil que comme un restaurant classique."
+    "description": "Ponton flottant installé en plein lagon, pensé davantage comme un lieu d'apéritif au coucher du soleil que comme un restaurant classique.",
+    "hours": "Mer-Sam 11h-23h, Mar et Dim 17h-19h"
   },
   {
     "id": "vanilla-village",
@@ -7658,7 +7666,8 @@
     ],
     "badge": "selection",
     "zone": "ouest",
-    "description": "Restaurant panoramique perché sur les hauteurs de la route de Plaine Champagne près de Chamarel, avec véranda de style colonial dominant le Parc national des Gorges de la Rivière Noire ; cuisine mêlant influences françaises et mauriciennes (currys, grillades de fruits de mer)."
+    "description": "Restaurant panoramique perché sur les hauteurs de la route de Plaine Champagne près de Chamarel, avec véranda de style colonial dominant le Parc national des Gorges de la Rivière Noire ; cuisine mêlant influences françaises et mauriciennes (currys, grillades de fruits de mer).",
+    "hours": "Tous les jours 12h-16h30"
   },
   {
     "id": "le-chamarel-restaurant",
@@ -8763,7 +8772,8 @@
     "badge": "coup-de-coeur",
     "promoText": "Testé par nous : terrasse très agréable au cœur du parc de l'Aventure du Sucre, produits frais et bien cuisinés, jolie présentation, superbes boissons fraîches aux herbes du jardin.",
     "zone": "nord",
-    "description": "Installé dans les jardins de l'ancienne usine sucrière de Beau Plan, à côté du site de l'Aventure du Sucre. La carte met en avant les racines créoles de l'île dans un décor industriel et patrimonial."
+    "description": "Installé dans les jardins de l'ancienne usine sucrière de Beau Plan, à côté du site de l'Aventure du Sucre. La carte met en avant les racines créoles de l'île dans un décor industriel et patrimonial.",
+    "hours": "Tous les jours 9h-17h"
   },
   {
     "id": "les-robinsons-restaurant-bar",
@@ -9469,7 +9479,8 @@
       "mauricienne"
     ],
     "zone": "nord",
-    "description": "Institution mauricienne tenue par la même famille depuis plus de 35 ans, terrasse sur pilotis face à l'océan. Menu dégustation en six services autour des poissons et crustacés locaux."
+    "description": "Institution mauricienne tenue par la même famille depuis plus de 35 ans, terrasse sur pilotis face à l'océan. Menu dégustation en six services autour des poissons et crustacés locaux.",
+    "hours": "Mar-Sam 12h-14h & 19h-22h, fermé Dim et Lun"
   },
   {
     "id": "ashley-grillade",
@@ -9502,7 +9513,8 @@
     ],
     "zone": "est",
     "description": "Dans le domaine de Constance Belle Mare Plage, propose un repas convivial et généreux façon banquet rustique, centré sur les grands classiques de la cuisine locale.",
-    "priceRange": "se-faire-plaisir"
+    "priceRange": "se-faire-plaisir",
+    "hours": "Tous les jours 7h-10h, 12h-17h30, 19h-22h30"
   },
   {
     "id": "oasis-bistro",
@@ -9731,7 +9743,8 @@
     "badge": "selection",
     "zone": "nord",
     "description": "Ancienne bâtisse coloniale dominant la Rivière Citron et les vestiges du site de Balaclava. Le tarif est élevé pour les standards locaux, mais l'expérience est généralement saluée.",
-    "priceRange": "se-faire-plaisir"
+    "priceRange": "se-faire-plaisir",
+    "hours": "Dîner Sam 19h-22h, Brunch Dim 11h-14h"
   },
   {
     "id": "lakaz-sandrine",
@@ -10133,7 +10146,8 @@
       "fruits-de-mer"
     ],
     "zone": "sud",
-    "description": "À Mahébourg, propose langouste grillée et rougaille saucisse dans un décor créole. Les retours sont partagés, certains trouvant le rapport qualité-prix un peu élevé."
+    "description": "À Mahébourg, propose langouste grillée et rougaille saucisse dans un décor créole. Les retours sont partagés, certains trouvant le rapport qualité-prix un peu élevé.",
+    "hours": "Tous les jours 10h-21h"
   },
   {
     "id": "ti-kaz-kreol",
@@ -29203,7 +29217,8 @@
     "takeaway": true,
     "promoText": "Salade tropicale, sandwichs et plats créoles.",
     "zone": "nord",
-    "description": "Petite adresse conviviale sur la plage de Mont Choisy, tenue en famille, connue pour ses plats locaux comme le marlin fumé, le curry de poisson et ses samoussas maison."
+    "description": "Petite adresse conviviale sur la plage de Mont Choisy, tenue en famille, connue pour ses plats locaux comme le marlin fumé, le curry de poisson et ses samoussas maison.",
+    "hours": "Tous les jours 10h30-14h30 & 18h-22h"
   },
   {
     "id": "sakauye-moris",
@@ -29259,7 +29274,8 @@
     "badge": "selection",
     "promoText": "Cuisine mixte, italienne et créole.",
     "zone": "nord",
-    "description": "Restaurant de fruits de mer au décor chaleureux en bois, ouvert en 2018 dans le nord de l'île (secteur Pointe aux Piments/Pointe aux Biches), réputé pour son homard grillé et ses plateaux de fruits de mer."
+    "description": "Restaurant de fruits de mer au décor chaleureux en bois, ouvert en 2018 dans le nord de l'île (secteur Pointe aux Piments/Pointe aux Biches), réputé pour son homard grillé et ses plateaux de fruits de mer.",
+    "hours": "Mar-Dim 10h-22h, fermé lundi"
   },
   {
     "id": "mystik-lifestyle-bar",
@@ -36096,7 +36112,8 @@
     ],
     "priceRange": "prix-moyen",
     "description": "Concept qui met en scène la cuisine créole des générations précédentes : plats mijotés et servis dans une karaï en fonte, sur le modèle de la cuisine familiale d'autrefois.",
-    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Karai%20Creole%20Grand%20Baie%20Mauritius"
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Karai%20Creole%20Grand%20Baie%20Mauritius",
+    "hours": "Mar-Sam 11h-15h, fermé Dim et Lun"
   },
   {
     "id": "rasoi-par-vineet-saint-geran",
@@ -36162,7 +36179,8 @@
     ],
     "priceRange": "se-faire-plaisir",
     "description": "Dans le domaine historique de Bel Ombre, propose un menu dégustation autour d'une cuisine créole/coloniale élaborée, dans un cadre haut de gamme.",
-    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Ch%C3%A2teau%20de%20Bel%20Ombre%20Bel%20Ombre%20Mauritius"
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Ch%C3%A2teau%20de%20Bel%20Ombre%20Bel%20Ombre%20Mauritius",
+    "hours": "Tous les jours, déjeuner 11h30-16h, dîner 19h-21h30"
   },
   {
     "id": "la-table-du-chateau-mapou",
