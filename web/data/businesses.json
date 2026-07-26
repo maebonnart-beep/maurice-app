@@ -1288,7 +1288,7 @@
     "lat": -20.0071904,
     "lng": 57.5783313,
     "themes": [
-      "restaurants",
+      "snacks-plage",
       "mauricienne"
     ],
     "zone": "nord"
@@ -1385,23 +1385,6 @@
     ],
     "hours": "Dim 11h-21h, Lun 10h30-19h30, Mar-Jeu 10h30-22h, Ven-Sam 10h30-23h",
     "priceRange": "se-faire-plaisir",
-    "zone": "nord"
-  },
-  {
-    "id": "chez-sabiir-briani",
-    "name": "Chez Sabiir Briani",
-    "category": "food",
-    "address": "b13 Grand Baie Rd, Grand Baie",
-    "phone": "",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=4023679761140719140",
-    "lat": -20.0111952,
-    "lng": 57.5843893,
-    "themes": [
-      "restaurants",
-      "mauricienne",
-      "indienne"
-    ],
     "zone": "nord"
   },
   {
