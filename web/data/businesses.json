@@ -29498,23 +29498,6 @@
     "description": "Table d'hôte à Midlands tenue par Marie-Michèlle, proposant une cuisine créole familiale à base de produits du potager, sur réservation uniquement."
   },
   {
-    "id": "chez-dauphin",
-    "name": "Chez Dauphin",
-    "category": "food",
-    "address": "Royal Road, Pointe aux Piments",
-    "phone": "",
-    "website": "",
-    "googleMapsUrl": "https://plus.codes/WGP9+5V5",
-    "lat": -20.06456,
-    "lng": 57.51969,
-    "themes": [
-      "snacks-plage",
-      "mauricienne"
-    ],
-    "badge": "selection",
-    "zone": "nord"
-  },
-  {
     "id": "baz-gato-dalpuri-roti",
     "name": "Baz Gato — Dalpuri & Roti",
     "category": "food",
