@@ -1159,7 +1159,8 @@
       "restaurants",
       "asiatique",
       "kids-friendly",
-      "sushis"
+      "sushis",
+      "tables-exception"
     ],
     "hours": "Mar-Dim 18h30-22h, fermé lun",
     "priceRange": "se-faire-plaisir",
@@ -1360,7 +1361,8 @@
       "restaurants",
       "fruits-de-mer",
       "mauricienne",
-      "europeenne"
+      "europeenne",
+      "tables-exception"
     ],
     "hours": "Mar-Sam 11h-17h & 18h-22h, Dim 11h-17h, fermé lun",
     "priceRange": "se-faire-plaisir",
@@ -3764,7 +3766,8 @@
     "lng": 57.5372,
     "themes": [
       "tables-hotes",
-      "mauricienne"
+      "mauricienne",
+      "tables-exception"
     ],
     "hours": "Lun-Ven 12h-15h, réservation requise",
     "priceRange": "prix-moyen",
@@ -4305,7 +4308,7 @@
   {
     "id": "wapalapam-le-morne",
     "name": "Wapalapam Island Eatery",
-    "category": "activites",
+    "category": "food",
     "address": "Centre Commercial de L'Harmonie, Le Morne Brabant",
     "phone": "",
     "website": "https://wapalapam.com/",
@@ -4313,11 +4316,13 @@
     "lat": -20.4547,
     "lng": 57.3167,
     "themes": [
-      "malls"
+      "restaurants",
+      "tables-exception"
     ],
     "hours": "Tous les jours 8h-22h",
     "priceRange": "prix-moyen",
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Ancienne maison coloniale au pied du Morne Brabant reconvertie par un ex-champion du monde de snowboard et son épouse, cuisine maison fusionnant influences africaines, asiatiques et indonésiennes."
   },
   {
     "id": "simply-india-st-regis-le-morne",
@@ -4459,7 +4464,8 @@
     "lng": 57.5203,
     "themes": [
       "restaurants",
-      "mauricienne"
+      "mauricienne",
+      "tables-exception"
     ],
     "hours": "Tous les jours 9h-17h",
     "priceRange": "prix-moyen",
@@ -4761,7 +4767,8 @@
     "lng": 57.7,
     "themes": [
       "restaurants",
-      "mauricienne"
+      "mauricienne",
+      "tables-exception"
     ],
     "hours": "Tous les jours, sans interruption",
     "priceRange": "prix-moyen",
@@ -6993,9 +7000,13 @@
     "lat": -20.3572883,
     "lng": 57.3682556,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "tables-exception",
+      "europeenne",
+      "grillades"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Steakhouse haut de gamme de Rivière Noire, référence de la côte ouest pour ses viandes premium et sa sélection de vins."
   },
   {
     "id": "moon-bar-k-floating-bar-dining-on-the-sea",
@@ -8499,9 +8510,12 @@
     "lat": -20.5102857,
     "lng": 57.4333507,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "tables-exception",
+      "fruits-de-mer"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Restaurant étoilé en bord de plage du Sofitel So Mauritius à Beau Champ, très souvent cité comme une adresse incontournable de la côte sud, accueil mauricien chaleureux et vue sur le lagon."
   },
   {
     "id": "sunset-restaurant",
@@ -9148,9 +9162,12 @@
     "lat": -20.167311,
     "lng": 57.766079,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "tables-exception",
+      "europeenne"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Restaurant gastronomique du domaine de Constance Belle Mare Plage, réputé pour sa cave à vins de 15 000 bouteilles issues de plus de 1300 domaines et l'accueil régulier de chefs étoilés invités."
   },
   {
     "id": "duck-laundry-lux-belle-mare",
@@ -9480,7 +9497,8 @@
     "themes": [
       "restaurants",
       "fruits-de-mer",
-      "mauricienne"
+      "mauricienne",
+      "tables-exception"
     ],
     "zone": "nord",
     "description": "Institution mauricienne tenue par la même famille depuis plus de 35 ans, terrasse sur pilotis face à l'océan. Menu dégustation en six services autour des poissons et crustacés locaux.",
@@ -9513,7 +9531,8 @@
     "lng": 57.7631811,
     "themes": [
       "restaurants",
-      "mauricienne"
+      "mauricienne",
+      "tables-exception"
     ],
     "zone": "est",
     "description": "Dans le domaine de Constance Belle Mare Plage, propose un repas convivial et généreux façon banquet rustique, centré sur les grands classiques de la cuisine locale.",
@@ -9746,7 +9765,8 @@
     "themes": [
       "restaurants",
       "mauricienne",
-      "europeenne"
+      "europeenne",
+      "tables-exception"
     ],
     "badge": "selection",
     "zone": "nord",
@@ -10883,10 +10903,13 @@
     "lat": -20.3133266,
     "lng": 57.5388403,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "tables-exception",
+      "europeenne"
     ],
     "badge": "selection",
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Table gastronomique de Curepipe avec vue sur les plantations de thé, ambiance cosy et élégante, cuisine franco-créole aux influences orientales."
   },
   {
     "id": "dimashk",
@@ -10989,9 +11012,11 @@
     "lat": -20.3282198,
     "lng": 57.5316759,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "tables-exception"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Restaurant installé dans une demeure coloniale de 1872 en bois de teck à Forest-Side (Curepipe), aujourd'hui musée du thé mauricien, cadre patrimonial associé à un jardin de camphriers."
   },
   {
     "id": "la-rose-de-damas",
@@ -11159,7 +11184,8 @@
     "lng": 57.4974066,
     "themes": [
       "restaurants",
-      "mauricienne"
+      "mauricienne",
+      "tables-exception"
     ],
     "zone": "centre",
     "description": "Repas créole servi dans une ancienne demeure coloniale entourée de jardins et de petites cascades, à Moka. L'intérêt vient autant du décor patrimonial que de l'assiette, avec un service soigné."
@@ -11543,9 +11569,12 @@
     "lat": -20.1924732,
     "lng": 57.4900436,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "tables-exception",
+      "indienne"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Adresse indienne du Domaine Les Pailles, équipe de chefs venus du sous-continent proposant une grande variété de spécialités régionales."
   },
   {
     "id": "yum-cha-restaurant",
@@ -14928,7 +14957,8 @@
     "lat": -20.0424725,
     "lng": 57.657666,
     "themes": [
-      "tables-hotes"
+      "tables-hotes",
+      "tables-exception"
     ],
     "zone": "nord"
   },
@@ -28080,9 +28110,12 @@
     "lat": -20.1180254,
     "lng": 57.7516265,
     "themes": [
-      "tables-hotes"
+      "tables-hotes",
+      "tables-exception",
+      "mauricienne"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Table réputée de Poste Lafayette mettant en avant les produits locaux dans une cuisine mauricienne raffinée."
   },
   {
     "id": "le-clos-des-bains",
@@ -29566,7 +29599,8 @@
     "lng": 57.5044125,
     "themes": [
       "restaurants",
-      "mauricienne"
+      "mauricienne",
+      "tables-exception"
     ],
     "priceRange": "se-faire-plaisir",
     "badge": "selection",
@@ -29586,7 +29620,8 @@
     "themes": [
       "restaurants",
       "mauricienne",
-      "europeenne"
+      "europeenne",
+      "tables-exception"
     ],
     "badge": "selection",
     "zone": "nord",
@@ -36148,7 +36183,8 @@
     "themes": [
       "restaurants",
       "mauricienne",
-      "indienne"
+      "indienne",
+      "tables-exception"
     ],
     "priceRange": "se-faire-plaisir",
     "description": "Table gastronomique du One&Only Le Saint Géran, où la carte marie techniques indiennes et produits mauriciens dans un registre haut de gamme.",
@@ -36164,7 +36200,8 @@
     "lng": 57.4167,
     "themes": [
       "restaurants",
-      "mauricienne"
+      "mauricienne",
+      "tables-exception"
     ],
     "priceRange": "se-faire-plaisir",
     "description": "Dans le domaine historique de Bel Ombre, propose un menu dégustation autour d'une cuisine créole/coloniale élaborée, dans un cadre haut de gamme.",
