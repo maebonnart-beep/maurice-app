@@ -971,12 +971,14 @@
       "europeenne",
       "italien",
       "grillades",
-      "fruits-de-mer"
+      "fruits-de-mer",
+      "mauricienne"
     ],
     "hours": "Mar-Sam 12h-15h, Mer-Sam 19h-22h, fermé dim et lun",
     "badge": "coup-de-coeur",
     "promoText": "Cadre très plaisant sous les arbres, cuisine ouverte au feu de bois. Très bons plats.",
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Branche \"Le Jardin\" de la chaîne Le Poivrier à Grand Baie : cuisine créole locale fraîche dans un cadre extérieur exotique."
   },
   {
     "id": "cocoloko",
@@ -3491,7 +3493,8 @@
     "hours": "Mar-Dim 11h30-14h30 & 18h30-22h30, fermé lun",
     "priceRange": "prix-moyen",
     "badge": "selection",
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Cuisine créole traditionnelle réputée pour son excellent rapport qualité-prix, menu complet entrée-plat-dessert."
   },
   {
     "id": "beach-shack-flic-en-flac",
@@ -3770,7 +3773,8 @@
     "hours": "Lun-Ven 12h-15h, réservation requise",
     "priceRange": "prix-moyen",
     "badge": "selection",
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Table d'hôtes familiale très plébiscitée pour son authenticité, réputée pour son rougail saucisse maison. Ouvert midi seulement en semaine, réservation obligatoire."
   },
   {
     "id": "la-table-matisse-curepipe",
@@ -4565,7 +4569,8 @@
     "hours": "Fermé mar, Mer-Lun 10h30-15h & 18h-22h",
     "priceRange": "prix-moyen",
     "badge": "selection",
-    "zone": "est"
+    "zone": "est",
+    "description": "Petit restaurant familial avec vue sur l'Île aux Cerfs, tenu par le fils d'un ancien pêcheur. Le cari d'ourite (poulpe) est le plat le plus recommandé."
   },
   {
     "id": "cafe-des-arts-trou-eau-douce",
@@ -5953,10 +5958,14 @@
     "lat": -20.014695,
     "lng": 57.5840102,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "mauricienne",
+      "asiatique"
     ],
     "badge": "selection",
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Petite adresse discrète à Grand Baie, appréciée pour sa cuisine sino-mauricienne simple préparée à la minute (mine frit et plats sino-créoles).",
+    "priceRange": "bon-marche"
   },
   {
     "id": "le-5-terre-restaurant-et-pinsa",
@@ -6975,9 +6984,11 @@
     "lat": -20.3632951,
     "lng": 57.3679295,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "mauricienne"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Plateforme flottante en plein lagon proposant du finger food à base de produits locaux, concept original pour l'apéritif ou le coucher de soleil."
   },
   {
     "id": "vanilla-village",
@@ -7637,10 +7648,12 @@
     "lat": -20.422115,
     "lng": 57.3859837,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "mauricienne"
     ],
     "badge": "selection",
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Restaurant semi-gastronomique à 260m d'altitude avec vue panoramique sur la côte ouest et Le Morne. Décor typique créole, ambiance familiale, cuisine locale et européenne."
   },
   {
     "id": "restaurant-les-palmiers-chez-dev",
@@ -8721,11 +8734,13 @@
     "lat": -20.0983974,
     "lng": 57.5742361,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "mauricienne"
     ],
     "badge": "coup-de-coeur",
     "promoText": "Testé par nous : terrasse très agréable au cœur du parc de l'Aventure du Sucre, produits frais et bien cuisinés, jolie présentation, superbes boissons fraîches aux herbes du jardin.",
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Créole revisitée dans le jardin de l'ancienne sucrerie de Beau Plan (site de l'Aventure du Sucre), salué pour son attachement aux racines créoles dans un cadre patrimonial sucrier."
   },
   {
     "id": "les-robinsons-restaurant-bar",
@@ -9427,7 +9442,8 @@
     "lng": 57.5505659,
     "themes": [
       "restaurants",
-      "fruits-de-mer"
+      "fruits-de-mer",
+      "mauricienne"
     ],
     "zone": "nord",
     "description": "Institution mauricienne tenue par la même famille depuis plus de 35 ans, terrasse sur pilotis face à l'océan. Menu dégustation en six services autour des poissons et crustacés locaux."
@@ -9458,9 +9474,12 @@
     "lat": -20.1655303,
     "lng": 57.7631811,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "mauricienne"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Célébration animée et rustique de la cuisine mauricienne traditionnelle dans le domaine de Constance Belle Mare Plage, ambiance bucolique et plats locaux copieux.",
+    "priceRange": "se-faire-plaisir"
   },
   {
     "id": "oasis-bistro",
@@ -9683,10 +9702,13 @@
     "lat": -20.0851383,
     "lng": 57.5216269,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "mauricienne"
     ],
     "badge": "selection",
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Bâtiment colonial surplombant la Rivière Citron et les ruines de Balaclava. Cuisine créole/coloniale raffinée, jugée chère mais en valoir la peine.",
+    "priceRange": "se-faire-plaisir"
   },
   {
     "id": "lakaz-sandrine",
@@ -10083,9 +10105,12 @@
     "lat": -20.4218043,
     "lng": 57.716511,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "mauricienne",
+      "fruits-de-mer"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Cadre créole authentique réputé pour sa langouste grillée et son rougaille saucisse, avis partagés sur le rapport qualité-prix."
   },
   {
     "id": "ti-kaz-kreol",
@@ -11087,9 +11112,11 @@
     "lat": -20.2179386,
     "lng": 57.4974066,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "mauricienne"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Cuisine créole traditionnelle servie dans une demeure coloniale historique entourée d'un jardin avec cascades. Cadre autant patrimonial que culinaire, service de qualité."
   },
   {
     "id": "mystic-masala",
@@ -29493,7 +29520,8 @@
     ],
     "priceRange": "se-faire-plaisir",
     "badge": "selection",
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Référence citée pour le créole authentique, plats mijotés à base de produits du terroir."
   },
   {
     "id": "flowers-of-paradise-mont-choisy",
@@ -29506,10 +29534,14 @@
     "lat": -20.013,
     "lng": 57.5565,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "mauricienne",
+      "europeenne"
     ],
     "badge": "selection",
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Une des meilleures tables du nord selon les guides, mêlant saveurs créoles et savoir-faire français au sein de l'hôtel du même nom.",
+    "priceRange": "se-faire-plaisir"
   },
   {
     "id": "domaine-des-aubineaux",
@@ -36037,5 +36069,202 @@
     "priceRange": "bon-marche",
     "description": "Petite affaire familiale très chaleureuse en bord de route côtière. Langoustes jusqu'à 2 kg, cuisine généreuse et prix raisonnables.",
     "zone": "est"
+  },
+  {
+    "id": "karai-creole-grand-baie",
+    "name": "Karai Creole",
+    "category": "food",
+    "address": "Grand Baie",
+    "zone": "nord",
+    "lat": -20.0167,
+    "lng": 57.5833,
+    "themes": [
+      "restaurants",
+      "mauricienne"
+    ],
+    "priceRange": "prix-moyen",
+    "description": "Expérience créole \"à l'ancienne\" avec plats mijotés servis dans une karaï traditionnelle (marmite en fonte) : cari ourite, cerf mijoté, poisson sauce créole. Retour aux saveurs mauriciennes d'antan.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Karai%20Creole%20Grand%20Baie%20Mauritius"
+  },
+  {
+    "id": "rasoi-par-vineet-saint-geran",
+    "name": "Rasoi par Vineet",
+    "category": "food",
+    "address": "One&Only Le Saint Géran, Pointe de Flacq",
+    "zone": "est",
+    "lat": -20.0167,
+    "lng": 57.7833,
+    "themes": [
+      "restaurants",
+      "mauricienne",
+      "indienne"
+    ],
+    "priceRange": "se-faire-plaisir",
+    "description": "Table gastronomique de l'hôtel 5 étoiles One&Only Le Saint Géran, mélange raffiné d'influences indiennes et mauriciennes.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Rasoi%20par%20Vineet%20One%26Only%20Le%20Saint%20G%C3%A9ran%2C%20Pointe%20de%20Flacq%20Mauritius"
+  },
+  {
+    "id": "blue-bamboo-constance-belle-mare",
+    "name": "Blue Bamboo",
+    "category": "food",
+    "address": "Constance Belle Mare Plage, Belle Mare",
+    "zone": "est",
+    "lat": -20.15,
+    "lng": 57.7667,
+    "themes": [
+      "restaurants",
+      "mauricienne"
+    ],
+    "priceRange": "se-faire-plaisir",
+    "description": "Table gastronomique fusion créole citée parmi les meilleures du domaine de Constance Belle Mare Plage, cuisine créative haut de gamme.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Blue%20Bamboo%20Constance%20Belle%20Mare%20Plage%2C%20Belle%20Mare%20Mauritius"
+  },
+  {
+    "id": "la-pescaria-phoenix",
+    "name": "La Pescaria",
+    "category": "food",
+    "address": "Phoenix",
+    "zone": "centre",
+    "lat": -20.2167,
+    "lng": 57.5,
+    "themes": [
+      "restaurants",
+      "mauricienne",
+      "fruits-de-mer"
+    ],
+    "priceRange": "se-faire-plaisir",
+    "description": "Table gastronomique réputée pour ses fruits de mer raffinés, régulièrement citée parmi les meilleures adresses de l'île.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=La%20Pescaria%20Phoenix%20Mauritius"
+  },
+  {
+    "id": "chateau-de-bel-ombre-restaurant",
+    "name": "Château de Bel Ombre",
+    "category": "food",
+    "address": "Bel Ombre",
+    "zone": "sud",
+    "lat": -20.5,
+    "lng": 57.4167,
+    "themes": [
+      "restaurants",
+      "mauricienne"
+    ],
+    "priceRange": "se-faire-plaisir",
+    "description": "Domaine historique du sud proposant une cuisine gastronomique créole/coloniale (menu dégustation), régulièrement cité parmi les meilleurs classements.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Ch%C3%A2teau%20de%20Bel%20Ombre%20Bel%20Ombre%20Mauritius"
+  },
+  {
+    "id": "la-table-du-chateau-mapou",
+    "name": "La Table du Château",
+    "category": "food",
+    "address": "Mapou",
+    "zone": "nord",
+    "lat": -20.1,
+    "lng": 57.5833,
+    "themes": [
+      "restaurants",
+      "mauricienne"
+    ],
+    "priceRange": "se-faire-plaisir",
+    "description": "Établissement gastronomique haut de gamme cité parmi les tables dirigées par des chefs renommés, cuisine créole revisitée.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=La%20Table%20du%20Ch%C3%A2teau%20Mapou%20Mauritius"
+  },
+  {
+    "id": "cannelle-tamarin",
+    "name": "Cannelle",
+    "category": "food",
+    "address": "Tamarin",
+    "zone": "ouest",
+    "lat": -20.3167,
+    "lng": 57.3667,
+    "themes": [
+      "restaurants",
+      "mauricienne",
+      "indienne"
+    ],
+    "priceRange": "se-faire-plaisir",
+    "description": "Référence citée pour la fusion indo-créole à Tamarin.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Cannelle%20Tamarin%20Mauritius"
+  },
+  {
+    "id": "le-manjaro-flic-en-flac",
+    "name": "Le Manjaro",
+    "category": "food",
+    "address": "Flic-en-Flac",
+    "zone": "ouest",
+    "lat": -20.2833,
+    "lng": 57.3667,
+    "themes": [
+      "restaurants",
+      "mauricienne",
+      "fruits-de-mer"
+    ],
+    "priceRange": "se-faire-plaisir",
+    "description": "Adresse pieds dans l'eau très citée à Flic-en-Flac, poisson et fruits de mer en cuisine créole.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Le%20Manjaro%20Flic-en-Flac%20Mauritius"
+  },
+  {
+    "id": "horizon-preskil-mahebourg",
+    "name": "Horizon",
+    "category": "food",
+    "address": "Preskil Beach Resort, Mahébourg",
+    "zone": "sud",
+    "lat": -20.4333,
+    "lng": 57.6833,
+    "themes": [
+      "restaurants",
+      "mauricienne",
+      "fruits-de-mer"
+    ],
+    "priceRange": "se-faire-plaisir",
+    "description": "Cadre pieds dans l'eau apprécié dans le sud-est, au sein du domaine Preskil, spécialités créoles et fruits de mer.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Horizon%20Preskil%20Beach%20Resort%2C%20Mah%C3%A9bourg%20Mauritius"
+  },
+  {
+    "id": "le-poivrier-la-riviere-tamarin",
+    "name": "Le Poivrier - La Rivière",
+    "category": "food",
+    "address": "Tamarin",
+    "zone": "ouest",
+    "lat": -20.3167,
+    "lng": 57.3667,
+    "themes": [
+      "restaurants",
+      "mauricienne"
+    ],
+    "priceRange": "prix-moyen",
+    "description": "Branche \"La Rivière\" de la chaîne Le Poivrier à Tamarin : tables essentiellement en extérieur, cadre dépaysant apprécié des résidents.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Le%20Poivrier%20-%20La%20Rivi%C3%A8re%20Tamarin%20Mauritius"
+  },
+  {
+    "id": "le-poivrier-la-plage-roches-noires",
+    "name": "Le Poivrier - La Plage",
+    "category": "food",
+    "address": "Roches Noires",
+    "zone": "est",
+    "lat": -20.15,
+    "lng": 57.7833,
+    "themes": [
+      "restaurants",
+      "mauricienne"
+    ],
+    "priceRange": "prix-moyen",
+    "description": "Branche \"La Plage\" de la chaîne Le Poivrier en bord de mer à Roches Noires, ambiance décontractée façon plage.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Le%20Poivrier%20-%20La%20Plage%20Roches%20Noires%20Mauritius"
+  },
+  {
+    "id": "le-poivrier-ile-plate",
+    "name": "Le Poivrier - Île Plate",
+    "category": "food",
+    "address": "Île Plate",
+    "zone": "nord",
+    "lat": -20.05,
+    "lng": 57.6167,
+    "themes": [
+      "restaurants",
+      "mauricienne"
+    ],
+    "priceRange": "prix-moyen",
+    "description": "Quatrième adresse de la chaîne Le Poivrier, même concept créole convivial.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Le%20Poivrier%20-%20%C3%8Ele%20Plate%20%C3%8Ele%20Plate%20Mauritius"
   }
 ]
