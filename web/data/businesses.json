@@ -4639,16 +4639,16 @@
   },
   {
     "id": "saveur-creole-mahebourg",
-    "name": "Saveur Créole",
+    "name": "Saveur Kreol",
     "category": "food",
     "address": "Mahébourg",
     "phone": "",
     "website": "",
-    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Saveur%20Creole%20restaurant%20Mahebourg%20Mauritius",
-    "lat": -20.4081,
-    "lng": 57.7,
+    "googleMapsUrl": "https://maps.google.com/?cid=10653758056361658403",
+    "lat": -20.4219377,
+    "lng": 57.7025526,
     "themes": [
-      "restaurants",
+      "fastfood",
       "mauricienne",
       "vegetarien"
     ],
@@ -29216,8 +29216,7 @@
     "lat": -19.9945486,
     "lng": 57.5913157,
     "themes": [
-      "restaurants",
-      "mauricienne"
+      "snacks-plage"
     ],
     "badge": "selection",
     "takeaway": true,
