@@ -840,7 +840,8 @@
     "hours": "Lun-Mar 18h30-22h, Jeu-Dim 12h-14h & 18h30-22h, fermé mer",
     "priceRange": "prix-moyen",
     "badge": "selection",
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Restaurant familial de Grand Baie réputé pour sa cuisine mauricienne et indienne, en particulier ses currys de poisson et fruits de mer frais, servis dans une ambiance conviviale à prix raisonnables."
   },
   {
     "id": "la-rougaille-creole",
@@ -933,7 +934,8 @@
     "hours": "Lun 10h30-14h & 17h30-22h, fermé mar, Mer-Dim 10h30-14h & 17h30-22h",
     "priceRange": "bon-marche",
     "badge": "selection",
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Table familiale de la Route Royale à Grand Baie proposant une cuisine locale aux influences européennes, indiennes et chinoises, avec vue sur la baie depuis son étage supérieur."
   },
   {
     "id": "sauterelle-restaurant",
@@ -954,7 +956,8 @@
     "hours": "Fermé lun, Mar-Dim 12h-14h & 19h-22h",
     "priceRange": "prix-moyen",
     "badge": "selection",
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Restaurant de Sunset Boulevard à Grand Baie mêlant influences françaises, mauriciennes et méditerranéennes, dans un cadre bistrot chic avec terrasse donnant sur une place à fontaine."
   },
   {
     "id": "le-poivrier",
@@ -1102,7 +1105,8 @@
       "mauricienne"
     ],
     "priceRange": "bon-marche",
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Restaurant-pizzeria-brasserie de la Route de la Salette à Grand Baie, spécialisé dans les pizzas au feu de bois, avec aussi burgers, pâtes et grillades sur une terrasse conviviale."
   },
   {
     "id": "lazy-lobster",
@@ -1140,7 +1144,8 @@
     "hours": "Lun, Mer-Jeu 11h-00h, Ven-Dim 11h-1h, fermé mar",
     "priceRange": "prix-moyen",
     "badge": "selection",
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Restaurant-lounge en bord de plage à La Cuvette, Grand Baie, mêlant cuisine fusion mauricienne et internationale à une ambiance festive animée par DJs et concerts live."
   },
   {
     "id": "ai-kisu-lux-grand-baie",
@@ -1198,7 +1203,8 @@
     "hours": "Fermé lun, Mar-Dim 11h-00h",
     "priceRange": "prix-moyen",
     "badge": "selection",
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Bar-restaurant décontracté de la Route Royale à Grand Baie offrant une vue imprenable sur la baie, connu pour ses burgers et sa carte façon sports bar (ailes de poulet, tapas, grillades)."
   },
   {
     "id": "beach-rouge-lux-grand-baie",
@@ -1251,7 +1257,8 @@
       "grillades"
     ],
     "priceRange": "se-faire-plaisir",
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Bar-grill de Coastal Road à Grand Baie, en face du poste de police, avec vue sur la baie et une cuisine aux influences portugaises (grillades, foies, poulet, gambas)."
   },
   {
     "id": "park25-restaurant",
@@ -1447,7 +1454,8 @@
       "fruits-de-mer"
     ],
     "badge": "selection",
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Restaurant familial du secteur de Grand Baie/Pereybère proposant une cuisine mauricienne et internationale, réputé pour ses plateaux de fruits de mer et son cadre extérieur convivial."
   },
   {
     "id": "les-canisses-resto-plage",
@@ -1467,7 +1475,8 @@
     "hours": "Lun-Jeu et Dim 12h-22h, Ven-Sam 12h-22h30",
     "priceRange": "se-faire-plaisir",
     "badge": "selection",
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Bar-restaurant en bord de plage à Grand Baie, réputé pour ses fruits de mer frais et ses plats d'agneau et de bœuf, avec animations musicales live et vue sur le coucher de soleil."
   },
   {
     "id": "la-raie-manta",
@@ -1716,7 +1725,8 @@
       "europeenne",
       "mauricienne"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Restaurant de School Road (Boucan) à Grand Baie mêlant cuisine européenne et mauricienne à base de produits frais, avec piscine chauffée et ambiance musicale."
   },
   {
     "id": "ice-club",
@@ -1856,7 +1866,8 @@
     ],
     "hours": "Déj 12h30-14h30, dîner 19h30-21h30 (6 soirs/7), réservation requise",
     "priceRange": "se-faire-plaisir",
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Restaurant panoramique de l'hôtel Canonnier Beachcomber, perché en hauteur avec vue sur la mer, spécialisé dans les fruits de mer et poissons frais, réputé pour ses soirées homard."
   },
   {
     "id": "la-serenata-canonnier-beachcomber",
@@ -3510,7 +3521,8 @@
       "restaurants",
       "mauricienne"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Restaurant en bord de lagon sur la route côtière de Flic en Flac, réputé pour ses plateaux de fruits de mer et sa cuisine fusion dans un cadre moderne."
   },
   {
     "id": "la-bonne-chute-tamarin",
@@ -3531,7 +3543,8 @@
     "hours": "Ouvert midi et soir, fermé mar, jeu et dim",
     "priceRange": "prix-moyen",
     "badge": "selection",
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Ouvert depuis 1969, ce restaurant au cadre champêtre propose une cuisine mêlant influences européennes et créoles, avec des spécialités de gibier (sanglier, cerf) et des produits de la mer."
   },
   {
     "id": "il-padrino-black-river",
@@ -3617,7 +3630,8 @@
     ],
     "hours": "Lun-Sam 11h30-15h30, fermé dim",
     "priceRange": "se-faire-plaisir",
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Table gastronomique installée au sein de la Rhumerie de Chamarel, mettant à l'honneur les produits du domaine à travers des plats à base de cœur de palmiste, de cerf ou de sanglier, avec visite de la distillerie incluse."
   },
   {
     "id": "chez-rosy-gris-gris-souillac",
@@ -3637,7 +3651,8 @@
     "hours": "Tous les jours 12h-17h",
     "priceRange": "bon-marche",
     "badge": "selection",
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Petite adresse familiale tenue par Rosy près du site du Gris Gris, ouverte uniquement le midi, réputée pour sa cuisine créole maison et sa langouste grillée au beurre persillé."
   },
   {
     "id": "green-island-beach-restaurant-trou-eau-douce",
@@ -3660,7 +3675,8 @@
     "priceRange": "prix-moyen",
     "badge": "coup-de-coeur",
     "promoText": "Produits frais, assiettes copieuses, service impeccable — superbe cadre en bord de lagon.",
-    "zone": "est"
+    "zone": "est",
+    "description": "Petite adresse reconnaissable à sa façade vert vif sur la route côtière de Trou d'Eau Douce, proposant une cuisine mauricienne et asiatique à base de produits de la mer (soupe de crabe, salade d'ourite, curry de poulet aux crevettes), avec options végétariennes et halal."
   },
   {
     "id": "la-case-poisson-trou-eau-douce",
@@ -3698,7 +3714,8 @@
     "hours": "Tous les jours 10h-23h",
     "priceRange": "prix-moyen",
     "badge": "selection",
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Situé rue Maurice à Mahébourg, ce restaurant au décor industriel marie saveurs mauriciennes et touches thaïlandaises, entre produits de la mer frais et plats traditionnels revisités."
   },
   {
     "id": "le-capitaine-mahebourg",
@@ -3792,7 +3809,8 @@
       "mauricienne"
     ],
     "priceRange": "prix-moyen",
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Bistrot chic situé à l'angle des rues Emile Sauzier et Sir Virgile Naz à Curepipe, proposant une cuisine française revisitée avec une touche mauricienne, complété par une galerie d'art à l'étage."
   },
   {
     "id": "tamarina-golf-club",
@@ -4057,7 +4075,8 @@
     ],
     "priceRange": "prix-moyen",
     "badge": "selection",
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Restaurant familial établi de longue date sur la route royale de Flic en Flac, spécialisé dans la cuisine chinoise (raviolis, rouleaux de printemps, sautés) dans un cadre décontracté."
   },
   {
     "id": "le-bougainville-flic-en-flac",
@@ -4078,7 +4097,8 @@
     "hours": "Fermé mer, Lun-Mar + Jeu-Dim 10h-22h30",
     "priceRange": "bon-marche",
     "badge": "selection",
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Restaurant en bord de plage sur la route côtière de Flic en Flac, offrant vue sur le coucher de soleil et une carte mêlant cuisine créole mauricienne, produits de la mer et pizzas."
   },
   {
     "id": "zub-express-flic-en-flac",
@@ -4116,7 +4136,8 @@
     ],
     "hours": "Petit-déj 7h30-10h30, déj/dîner 12h-22h, bar 14h-22h30",
     "priceRange": "prix-moyen",
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Restaurant d'Avenue Verger à Flic en Flac doté d'une cuisine ouverte, mariant produits locaux et influences internationales, avec des soirées à thème (spectacle de séga, musique live, buffet barbecue) selon les jours."
   },
   {
     "id": "escale-cuisine-grill-flic-en-flac",
@@ -4187,7 +4208,8 @@
       "mauricienne"
     ],
     "priceRange": "prix-moyen",
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Petit restaurant familial mauricien sur la route royale de Flic en Flac, réputé pour ses langoustes et crevettes à l'ail, considéré comme l'une des adresses locales authentiques du secteur."
   },
   {
     "id": "pavillon-de-jade-tamarin",
@@ -4296,7 +4318,8 @@
     ],
     "hours": "Tous les jours 8h-10h30 & 11h30-15h, certains ven soir",
     "priceRange": "bon-marche",
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Restaurant de plage les pieds dans le sable, situé entre les hôtels Dinarobin et LUX* Le Morne, accessible à tous et proposant des spécialités mauriciennes comme le curry de poisson ou la salade de marlin fumé."
   },
   {
     "id": "wapalapam-le-morne",
@@ -4385,7 +4408,8 @@
       "restaurants",
       "mauricienne"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Restaurant de plage de l'hôtel Heritage Awali à Bel Ombre, les pieds dans le sable face à l'océan, spécialisé dans la cuisine créole et les produits de la mer."
   },
   {
     "id": "le-palais-de-barbizon-chamarel",
@@ -4402,7 +4426,8 @@
       "mauricienne"
     ],
     "badge": "selection",
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Petit restaurant familial tenu par Marie-Ange et Rico, où la cuisine créole traditionnelle est préparée avec des produits du potager et du marché local, sous forme de buffet dont le menu change chaque jour."
   },
   {
     "id": "le-flamboyant-so-sofitel-bel-ombre",
@@ -4436,7 +4461,8 @@
       "mauricienne"
     ],
     "priceRange": "bon-marche",
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Installé dans un ancien bâtiment colonial près du pont, ce restaurant tenu par Madame Appadu sert des plats créoles, indiens et chinois sur une terrasse ombragée dominant un ravin."
   },
   {
     "id": "domaine-de-saint-aubin-souillac",
@@ -4454,7 +4480,8 @@
     ],
     "hours": "Tous les jours 9h-17h",
     "priceRange": "prix-moyen",
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Le restaurant occupe une demeure de planteur datant de 1819, où la cuisine créole traditionnelle (fritures, salade de palmiste, poulet à la vanille) est servie sous la véranda dans un cadre d'époque coloniale."
   },
   {
     "id": "symons-restaurant-belle-mare",
@@ -4531,7 +4558,8 @@
       "mauricienne"
     ],
     "priceRange": "prix-moyen",
-    "zone": "est"
+    "zone": "est",
+    "description": "Table d'hôte familiale fonctionnant uniquement sur réservation, proposant une cuisine créole maison à base de produits frais, avec des plats comme le curry de poisson ou la salade d'ourite."
   },
   {
     "id": "la-spiaggia-constance-belle-mare",
@@ -4623,7 +4651,8 @@
     ],
     "hours": "Tous les jours 11h-21h30",
     "priceRange": "se-faire-plaisir",
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Restaurant en bord de lagon à Pointe Jérôme, avec terrasse et kiosques individuels, réputé pour ses fruits de mer et poissons grillés."
   },
   {
     "id": "saveur-creole-mahebourg",
@@ -4716,7 +4745,8 @@
     ],
     "hours": "Tous les jours 10h30-17h & 18h30-22h30",
     "priceRange": "bon-marche",
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Restaurant chinois installé à l'angle des rues des Flamands et de la Colonie, dans un décor ancien garni d'antiquités et de coquillages, ouvert midi et soir tous les jours."
   },
   {
     "id": "good-korma-beau-vallon",
@@ -4751,7 +4781,8 @@
     ],
     "hours": "Tous les jours, sans interruption",
     "priceRange": "prix-moyen",
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Restaurant en front de mer sur la rue Suffren, offrant une vue sur toute la baie de Mahébourg, avec une cuisine créole à base de produits locaux (gibier, ourite, cœur de palmiste) et une ambiance piano-bar en soirée."
   },
   {
     "id": "flame-n-grill-curepipe",
@@ -4805,7 +4836,8 @@
     ],
     "hours": "Dim-Jeu 15h-22h, Ven-Sam 12h-23h",
     "priceRange": "bon-marche",
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Adresse conviviale d'Eau Coulée mêlant cuisine mauricienne et internationale, avec musique live et des cours de cuisine proposés par le chef aux visiteurs curieux de la gastronomie locale."
   },
   {
     "id": "chez-tante-athalie-pamplemousses",
@@ -4825,7 +4857,8 @@
     "priceRange": "bon-marche",
     "badge": "selection",
     "promoText": "Uniquement le midi ; cuisine locale, terrasse extérieure, sorbets maison.",
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Restaurant installé sur une ancienne propriété sucrière près du Jardin Botanique de Pamplemousses, servant une cuisine créole traditionnelle dans un jardin où sont exposées des voitures anciennes."
   },
   {
     "id": "ebony-table-dhote-vacoas",
@@ -4845,7 +4878,8 @@
     ],
     "hours": "Tous les jours 9h-16h",
     "priceRange": "prix-moyen",
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Table d'hôte familiale de La Marie proposant une cuisine mauricienne mêlant influences créoles et indiennes, avec dholl puri, curry de poisson et fruits de mer grillés."
   },
   {
     "id": "la-karaye-de-val-calodyne",
@@ -4863,7 +4897,8 @@
     ],
     "hours": "Déjeuner uniquement, jusqu'à 14h",
     "priceRange": "bon-marche",
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Table d'hôte tenue par Val dans une ambiance chez l'habitant, où les convives dînent au bord de la piscine et découvrent un menu du jour composé selon les produits frais disponibles."
   },
   {
     "id": "lambic-port-louis",
@@ -4919,7 +4954,8 @@
     ],
     "hours": "Tous les jours 11h-16h",
     "priceRange": "prix-moyen",
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Restaurant familial de Chamarel servant une cuisine mauricienne typique à partir de fruits et légumes en partie issus de son propre jardin, réputé pour sa salade de palmiste."
   },
   {
     "id": "paradis-golf-club-le-morne",
@@ -5635,7 +5671,8 @@
     "badge": "coup-de-coeur",
     "promoText": "Très bons roti à prix mini (25 Rs) — un peu d’attente aux heures de pointe.",
     "hours": "Lun-Sam 9h30-14h30, fermé dim",
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Institution locale de Solitude (Triolet) spécialisée dans le roti et la farata, très fréquentée et bien notée par les habitués du coin."
   },
   {
     "id": "menu-des-iles-flic-en-flac",
@@ -5652,7 +5689,8 @@
       "mauricienne"
     ],
     "priceRange": "bon-marche",
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Restaurant les pieds dans le sable sur Royal Road à Flic en Flac, réputé pour sa cuisine mauricienne aux influences indiennes et asiatiques (poisson frais, riz frit, wraps grillés)."
   },
   {
     "id": "chez-vanessa-pereybere",
@@ -5669,7 +5707,8 @@
       "mauricienne"
     ],
     "priceRange": "bon-marche",
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Petit stand de street-food tenu par Vanessa et sa famille à l'entrée de la plage publique de Pereybère, à l'origine axé sur les rotis puis élargi aux nouilles et riz frits."
   },
   {
     "id": "clinique-darne-floreal",
@@ -7635,7 +7674,8 @@
       "mauricienne"
     ],
     "badge": "selection",
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Restaurant panoramique perché sur les hauteurs de la route de Plaine Champagne près de Chamarel, avec véranda de style colonial dominant le Parc national des Gorges de la Rivière Noire ; cuisine mêlant influences françaises et mauriciennes (currys, grillades de fruits de mer)."
   },
   {
     "id": "le-chamarel-restaurant",
@@ -10126,7 +10166,8 @@
       "restaurants",
       "mauricienne"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Restaurant familial de Mahébourg à la terrasse ouverte sur l'animation de la rue, apprécié pour sa cuisine créole authentique et ses croquettes de fruits de mer en entrée."
   },
   {
     "id": "chez-marilyn-resto",
@@ -29158,7 +29199,8 @@
     "takeaway": true,
     "badge": "coup-de-coeur",
     "promoText": "Mine frit sino-mauricien à moins de 3€ ; service très bien organisé malgré l’affluence du midi.",
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Aussi connu sous le nom de Chez Jacques, ce petit établissement de L'Agrément Road à Saint-Pierre sert des nouilles maison (mine bouilli, mine gros pois) depuis les années 1970."
   },
   {
     "id": "chez-stephanie-mont-choisy",
@@ -29177,7 +29219,8 @@
     "badge": "selection",
     "takeaway": true,
     "promoText": "Salade tropicale, sandwichs et plats créoles.",
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Petite adresse conviviale sur la plage de Mont Choisy, tenue en famille, connue pour ses plats locaux comme le marlin fumé, le curry de poisson et ses samoussas maison."
   },
   {
     "id": "sakauye-moris",
@@ -29233,7 +29276,8 @@
     ],
     "badge": "selection",
     "promoText": "Cuisine mixte, italienne et créole.",
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Restaurant de fruits de mer au décor chaleureux en bois, ouvert en 2018 dans le nord de l'île (secteur Pointe aux Piments/Pointe aux Biches), réputé pour son homard grillé et ses plateaux de fruits de mer."
   },
   {
     "id": "mystik-lifestyle-bar",
@@ -29318,7 +29362,8 @@
       "mauricienne"
     ],
     "badge": "selection",
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Restaurant créole de la rue de Labourdonnais à Mahébourg, apprécié pour son vindaye de poisson, sa soupe de fruits de mer et ses currys."
   },
   {
     "id": "naked-foods",
@@ -29467,7 +29512,8 @@
       "mauricienne"
     ],
     "badge": "selection",
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Table d'hôte à Midlands tenue par Marie-Michèlle, proposant une cuisine créole familiale à base de produits du potager, sur réservation uniquement."
   },
   {
     "id": "chez-dauphin",
@@ -29502,7 +29548,8 @@
     ],
     "badge": "selection",
     "hours": "Sam-Dim uniquement",
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Petit point de restauration de rue à Vacoas-Phoenix, connu pour ses roti dalpuri garnis de curry de haricots et de sauce rougaille, surtout le week-end."
   },
   {
     "id": "la-clef-des-champs",
