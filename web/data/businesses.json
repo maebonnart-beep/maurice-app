@@ -6596,7 +6596,8 @@
     "lng": 57.3651045,
     "themes": [
       "restaurants",
-      "sushis"
+      "sushis",
+      "asiatique"
     ],
     "zone": "ouest",
     "description": "Adresse incontournable en bord de plage, très animée le soir (DJ, spectacle de feu). On y vient surtout pour l'ambiance festive ; la cuisine fusion et les sushis restent secondaires face à l'expérience, avec des prix élevés."
@@ -6765,9 +6766,12 @@
     "lat": -20.3552174,
     "lng": 57.3658962,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "asiatique",
+      "sushis"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Restaurant de sushis japonais à La Preneuse (Rivière Noire), carte variée incluant makis végétariens et rolls aux crevettes."
   },
   {
     "id": "ravinala",
@@ -7062,9 +7066,14 @@
     "lat": -20.3117543,
     "lng": 57.3677544,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "asiatique",
+      "sushis"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Restaurant-spectacle du Sofitel Mauritius L'Impérial (Wolmar) où les chefs préparent viandes, poissons et légumes locaux sur plancha devant les convives, dans un registre teppanyaki japonais.",
+    "hours": "Lun-Sam 19h-23h, fermé dimanche",
+    "priceRange": "se-faire-plaisir"
   },
   {
     "id": "jiva-coffee-and-roastery",
@@ -7153,9 +7162,11 @@
     "lat": -20.3610973,
     "lng": 57.3721237,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "asiatique"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Petit restaurant chinois familial de La Mivoie, Rivière Noire, tenu par un chef originaire de Chine, réputé pour son authenticité à prix modéré."
   },
   {
     "id": "hibiscus-bar",
@@ -9662,9 +9673,12 @@
     "lat": -20.1619829,
     "lng": 57.755783,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "asiatique"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Restaurant sur pilotis au-dessus du lagon du One&Only Le Saint Géran, mêlant tapas et cuisine pan-asiatique (sushis, sashimis) dans une ambiance chic et animée.",
+    "hours": "Tous les jours, service continu jusqu'à 22h30 environ"
   },
   {
     "id": "la-citronnelle-restaurant",
@@ -11287,9 +11301,12 @@
     "lat": -20.1585946,
     "lng": 57.5056922,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "asiatique"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Table cantonaise et fruits de mer de Queen Street à Port-Louis, ouverte depuis 2011, avec service continu midi et soir.",
+    "hours": "Tous les jours 11h-15h & 18h-21h30"
   },
   {
     "id": "nobby-s-resto-bar",
@@ -11332,9 +11349,12 @@
     "lat": -20.1622859,
     "lng": 57.5040317,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "asiatique"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Restaurant cantonais historique du quartier chinois de Port-Louis, ouvert depuis 2004, avec des chefs originaires du Guangdong.",
+    "hours": "Tous les jours 11h30-14h & 18h30-21h30"
   },
   {
     "id": "rozi-darbarr-restaurant",
@@ -14108,9 +14128,12 @@
     "lat": -20.0061529,
     "lng": 57.5558529,
     "themes": [
-      "snacks-plage"
+      "snacks-plage",
+      "asiatique"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Snack de Grand Baie proposant une cuisine chinoise et indienne à petit prix, portions généreuses.",
+    "hours": "Tous les jours 7h30-18h30"
   },
   {
     "id": "cafe-de-grand-baie-plage",
@@ -36213,5 +36236,112 @@
     "priceRange": "prix-moyen",
     "description": "Quatrième antenne de la chaîne Le Poivrier, sur le même principe de cuisine créole conviviale que les trois autres adresses.",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Le%20Poivrier%20-%20%C3%8Ele%20Plate%20%C3%8Ele%20Plate%20Mauritius"
+  },
+  {
+    "id": "first-restaurant-port-louis",
+    "name": "First Restaurant",
+    "category": "food",
+    "address": "Angle Route Royale / Rue de la Corderie, China Town, Port-Louis",
+    "phone": "+230 211 9898",
+    "zone": "centre",
+    "lat": -20.1611,
+    "lng": 57.5,
+    "themes": [
+      "restaurants",
+      "asiatique"
+    ],
+    "priceRange": "bon-marche",
+    "hours": "Mar-Dim 11h30-14h30 & 18h-21h30, fermé lundi",
+    "description": "Établissement historique du China Town de Port-Louis, considéré comme le tout premier restaurant ouvert par la communauté chinoise dans le quartier, décor rétro et cuisine cantonaise traditionnelle.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=First%20Restaurant%20Angle%20Route%20Royale%20%2F%20Rue%20de%20la%20Corderie%2C%20China%20Town%2C%20Port-Louis%20Mauritius"
+  },
+  {
+    "id": "lao-zhao-hotpot-caudan",
+    "name": "Lao Zhao Hotpot",
+    "category": "food",
+    "address": "2e étage, Observatoire Building, Caudan Waterfront, Port-Louis",
+    "phone": "+230 5733 9899",
+    "zone": "centre",
+    "lat": -20.1611,
+    "lng": 57.5,
+    "themes": [
+      "restaurants",
+      "asiatique"
+    ],
+    "priceRange": "prix-moyen",
+    "hours": "Tous les jours 11h30-15h & 17h30-22h30",
+    "description": "Concept de fondue chinoise (hotpot) au Caudan Waterfront où chaque client compose ses ingrédients et sa sauce, cuisson directement à table.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Lao%20Zhao%20Hotpot%202e%20%C3%A9tage%2C%20Observatoire%20Building%2C%20Caudan%20Waterfront%2C%20Port-Louis%20Mauritius"
+  },
+  {
+    "id": "canton-port-louis",
+    "name": "Canton",
+    "category": "food",
+    "address": "15 Rue Emmanuel Anquetil, Port-Louis",
+    "phone": "+230 241 4911",
+    "website": "https://canton.restaurant.mu",
+    "zone": "centre",
+    "lat": -20.1611,
+    "lng": 57.5,
+    "themes": [
+      "restaurants",
+      "asiatique"
+    ],
+    "priceRange": "bon-marche",
+    "hours": "Lun-Sam 10h-20h30, fermé dimanche",
+    "description": "Restaurant chinois traditionnel du centre-ville de Port-Louis, ambiance simple, cuisine cantonaise/hongkongaise à prix modeste.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Canton%2015%20Rue%20Emmanuel%20Anquetil%2C%20Port-Louis%20Mauritius"
+  },
+  {
+    "id": "yuzu-caudan-port-louis",
+    "name": "Yuzu",
+    "category": "food",
+    "address": "Labourdonnais Waterfront Hotel, Caudan Waterfront, Port-Louis",
+    "zone": "centre",
+    "lat": -20.1611,
+    "lng": 57.5,
+    "themes": [
+      "restaurants",
+      "asiatique",
+      "sushis"
+    ],
+    "priceRange": "se-faire-plaisir",
+    "description": "Table pan-asiatique haut de gamme du Labourdonnais Waterfront Hotel, mêlant influences thaïe, vietnamienne, chinoise et japonaise autour d'un menu dégustation.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Yuzu%20Labourdonnais%20Waterfront%20Hotel%2C%20Caudan%20Waterfront%2C%20Port-Louis%20Mauritius"
+  },
+  {
+    "id": "bento-sushi-grand-baie",
+    "name": "Bento Sushi Grand Baie",
+    "category": "food",
+    "address": "Coeur de Ville, Grand Baie",
+    "zone": "nord",
+    "lat": -20.0167,
+    "lng": 57.5833,
+    "themes": [
+      "restaurants",
+      "asiatique",
+      "sushis"
+    ],
+    "priceRange": "bon-marche",
+    "hours": "Tous les jours à partir de 9h30",
+    "description": "Comptoir de sushis dans le centre commercial Coeur de Ville à Grand Baie, formule rapide et à emporter.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Bento%20Sushi%20Grand%20Baie%20Coeur%20de%20Ville%2C%20Grand%20Baie%20Mauritius"
+  },
+  {
+    "id": "sumo-sushi-bar-grill-grand-baie",
+    "name": "Sumo Sushi Bar & Grill",
+    "category": "food",
+    "address": "La Salette Road, Grand Baie",
+    "zone": "nord",
+    "lat": -20.0167,
+    "lng": 57.5833,
+    "themes": [
+      "restaurants",
+      "asiatique",
+      "sushis"
+    ],
+    "priceRange": "prix-moyen",
+    "description": "Restaurant japonais sushi/grill avec lounge et bar à l'étage et terrasse extérieure, devenu populaire sur les réseaux sociaux pour son cadre photogénique.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Sumo%20Sushi%20Bar%20%26%20Grill%20La%20Salette%20Road%2C%20Grand%20Baie%20Mauritius"
   }
 ]
