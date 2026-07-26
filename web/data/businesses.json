@@ -36489,5 +36489,128 @@
     "priceRange": "prix-moyen",
     "description": "Rooftop-bar sur le toit de l'établissement Les Enfants Terribles à Pointe aux Canonniers, vue sur Hibiscus Beach, tapas et burgers gourmets, soirées à thème.",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=The%20Cloud%20Rooftop%20%26%20Lounge%20Bar%20Les%20Enfants%20Terribles%2C%20Royal%20Road%2C%20Pointe%20aux%20Canonniers%20Mauritius"
+  },
+  {
+    "id": "lartista-caudan-port-louis",
+    "name": "L'Artista",
+    "category": "food",
+    "address": "1er étage foodcourt, Le Caudan Waterfront, Port-Louis",
+    "phone": "+230 260 0591",
+    "zone": "centre",
+    "lat": -20.1611,
+    "lng": 57.5,
+    "themes": [
+      "restaurants",
+      "italien"
+    ],
+    "priceRange": "prix-moyen",
+    "hours": "Lun-Mar 11h-16h, Mer-Sam 11h-22h, Dim 11h-16h",
+    "description": "Restaurant italien au 1er étage du foodcourt du Caudan Waterfront, seule table du complexe avec vue sur le port de Port-Louis, pizzas, pâtes maison et fruits de mer, bar extérieur attenant.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=L'Artista%201er%20%C3%A9tage%20foodcourt%2C%20Le%20Caudan%20Waterfront%2C%20Port-Louis%20Mauritius"
+  },
+  {
+    "id": "botteghita-ristorante-bar-grand-baie",
+    "name": "Botteghita Ristorante & Bar",
+    "category": "food",
+    "address": "Royal Road, Grand Baie",
+    "phone": "+230 263 1635",
+    "zone": "nord",
+    "lat": -20.0167,
+    "lng": 57.5833,
+    "themes": [
+      "restaurants",
+      "italien"
+    ],
+    "priceRange": "se-faire-plaisir",
+    "hours": "Déjeuner 11h30-14h30, dîner 18h-22h30",
+    "description": "Restaurant italien traditionnel de Grand Baie à l'ambiance élégante, service soigné en salle, qui se transforme en bar de nuit après 22h.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Botteghita%20Ristorante%20%26%20Bar%20Royal%20Road%2C%20Grand%20Baie%20Mauritius"
+  },
+  {
+    "id": "kazafrica-dodo-nero-grand-baie",
+    "name": "Kazafrica Dodo Nero Italian Restaurant, Pub & Music Bar",
+    "category": "food",
+    "address": "Mont Choisy Le Mall, Grand Baie",
+    "phone": "+230 289 9090",
+    "zone": "nord",
+    "lat": -20.0167,
+    "lng": 57.5833,
+    "themes": [
+      "restaurants",
+      "italien",
+      "bars"
+    ],
+    "priceRange": "prix-moyen",
+    "hours": "Tous les jours env. 10h-minuit",
+    "description": "Pub-restaurant italien tenu par un patron toscan à Mont Choisy Le Mall, musique live, grande terrasse, buffet le vendredi et samedi.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Kazafrica%20Dodo%20Nero%20Italian%20Restaurant%2C%20Pub%20%26%20Music%20Bar%20Mont%20Choisy%20Le%20Mall%2C%20Grand%20Baie%20Mauritius"
+  },
+  {
+    "id": "la-voglia-matta-trou-aux-biches",
+    "name": "La Voglia Matta (by Aaron / Chez Marco)",
+    "category": "food",
+    "address": "Royal Road, Trou aux Biches",
+    "zone": "nord",
+    "lat": -20.0333,
+    "lng": 57.55,
+    "themes": [
+      "restaurants",
+      "italien"
+    ],
+    "priceRange": "prix-moyen",
+    "description": "Pizzeria italienne réputée de longue date à Trou aux Biches, pizzas classiques et complètes, pâtes fraîches et lasagnes maison, réservation conseillée le week-end.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=La%20Voglia%20Matta%20(by%20Aaron%20%2F%20Chez%20Marco)%20Royal%20Road%2C%20Trou%20aux%20Biches%20Mauritius"
+  },
+  {
+    "id": "anno-1743-maritim-balaclava",
+    "name": "Anno 1743",
+    "category": "food",
+    "address": "Maritim Resort & Spa, Balaclava",
+    "zone": "nord",
+    "lat": -20.0667,
+    "lng": 57.4833,
+    "themes": [
+      "restaurants",
+      "italien",
+      "europeenne"
+    ],
+    "priceRange": "se-faire-plaisir",
+    "description": "Restaurant style brasserie intégré dans les vestiges restaurés de la poudrerie historique de 1743 (Ruines de Balaclava), au sein du domaine du Maritim Resort & Spa, cuisine rustique et grande carte de rhums.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Anno%201743%20Maritim%20Resort%20%26%20Spa%2C%20Balaclava%20Mauritius"
+  },
+  {
+    "id": "la-marmite-mauricienne-trou-aux-biches",
+    "name": "La Marmite Mauricienne (Trou aux Biches)",
+    "category": "food",
+    "address": "Trou aux Biches Road, Trou aux Biches",
+    "phone": "+230 265 7604",
+    "zone": "nord",
+    "lat": -20.0333,
+    "lng": 57.55,
+    "themes": [
+      "restaurants",
+      "mauricienne",
+      "italien"
+    ],
+    "priceRange": "prix-moyen",
+    "hours": "Tous les jours 12h-14h & 18h-22h",
+    "description": "Restaurant de Trou aux Biches (enseigne distincte de celle de Flic-en-Flac) proposant une cuisine du monde et mauricienne, rougaille, fruits de mer et curry.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=La%20Marmite%20Mauricienne%20(Trou%20aux%20Biches)%20Trou%20aux%20Biches%20Road%2C%20Trou%20aux%20Biches%20Mauritius"
+  },
+  {
+    "id": "linguini-cascavelle",
+    "name": "Linguini",
+    "category": "food",
+    "address": "Cascavelle Shopping Village, Bambous",
+    "zone": "ouest",
+    "lat": -20.27,
+    "lng": 57.38,
+    "themes": [
+      "restaurants",
+      "italien"
+    ],
+    "priceRange": "prix-moyen",
+    "description": "Restaurant italien du centre commercial Cascavelle Shopping Village, ouvert depuis 2019, pizzas et pâtes, exploité par le groupe local qui gère aussi Okiya dans le même centre.",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Linguini%20Cascavelle%20Shopping%20Village%2C%20Bambous%20Mauritius"
   }
 ]
