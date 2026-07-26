@@ -5112,13 +5112,16 @@
     "lng": 57.5489,
     "themes": [
       "culture-patrimoine",
-      "parcs-botaniques"
+      "parcs-botaniques",
+      "parcs-animaliers"
     ],
     "hours": "Tous les jours 9h-17h (dernière admission 16h)",
     "priceRange": "prix-moyen",
     "zone": "nord",
     "promoText": "Château colonial du 19e siècle entouré d'un verger, visite guidée de 45 min avec dégustation de jus et rhum. (à partir de 700 Rs/pers.)",
-    "description": "Manoir colonial de 1856 entouré d'un verger de 45 hectares réunissant plus de 30 familles botaniques, dont des manguiers centenaires et arbres à épices."
+    "description": "Manoir colonial de 1856 entouré d'un verger de 45 hectares réunissant plus de 30 familles botaniques, dont des manguiers centenaires et arbres à épices.",
+    "entryPrice": "Rs 150 (parc animalier)",
+    "animalsVisible": "Volière et enclos avec paons, tortues et autres animaux du domaine"
   },
   {
     "id": "ssr-botanical-garden-pamplemousses",
@@ -36343,5 +36346,20 @@
     "priceRange": "prix-moyen",
     "description": "Restaurant japonais sushi/grill avec lounge et bar à l'étage et terrasse extérieure, devenu populaire sur les réseaux sociaux pour son cadre photogénique.",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Sumo%20Sushi%20Bar%20%26%20Grill%20La%20Salette%20Road%2C%20Grand%20Baie%20Mauritius"
+  },
+  {
+    "id": "parc-animalier-maritim-resort-balaclava",
+    "name": "Parc Animalier - Maritim Resort & Spa",
+    "category": "activites",
+    "address": "Maritim Resort & Spa, Balaclava",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Maritim%20Resort%20%26%20Spa%20Balaclava%20Mauritius",
+    "lat": -20.0517,
+    "lng": 57.5197,
+    "themes": [
+      "parcs-animaliers"
+    ],
+    "entryPrice": "Rs 1000",
+    "zone": "nord"
   }
 ]
