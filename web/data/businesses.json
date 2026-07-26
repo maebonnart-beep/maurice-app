@@ -36133,39 +36133,6 @@
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Rasoi%20par%20Vineet%20One%26Only%20Le%20Saint%20G%C3%A9ran%2C%20Pointe%20de%20Flacq%20Mauritius"
   },
   {
-    "id": "blue-bamboo-constance-belle-mare",
-    "name": "Blue Bamboo",
-    "category": "food",
-    "address": "Constance Belle Mare Plage, Belle Mare",
-    "zone": "est",
-    "lat": -20.15,
-    "lng": 57.7667,
-    "themes": [
-      "restaurants",
-      "mauricienne"
-    ],
-    "priceRange": "se-faire-plaisir",
-    "description": "Une des tables les plus abouties du domaine de Constance Belle Mare Plage, avec une cuisine créative qui revisite les codes créoles.",
-    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Blue%20Bamboo%20Constance%20Belle%20Mare%20Plage%2C%20Belle%20Mare%20Mauritius"
-  },
-  {
-    "id": "la-pescaria-phoenix",
-    "name": "La Pescaria",
-    "category": "food",
-    "address": "Phoenix",
-    "zone": "centre",
-    "lat": -20.2167,
-    "lng": 57.5,
-    "themes": [
-      "restaurants",
-      "mauricienne",
-      "fruits-de-mer"
-    ],
-    "priceRange": "se-faire-plaisir",
-    "description": "À Phoenix, restaurant tourné vers des préparations soignées de fruits de mer, souvent recommandé parmi les bonnes tables de l'île.",
-    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=La%20Pescaria%20Phoenix%20Mauritius"
-  },
-  {
     "id": "chateau-de-bel-ombre-restaurant",
     "name": "Château de Bel Ombre",
     "category": "food",
@@ -36183,22 +36150,6 @@
     "hours": "Tous les jours, déjeuner 11h30-16h, dîner 19h-21h30"
   },
   {
-    "id": "la-table-du-chateau-mapou",
-    "name": "La Table du Château",
-    "category": "food",
-    "address": "Mapou",
-    "zone": "nord",
-    "lat": -20.1,
-    "lng": 57.5833,
-    "themes": [
-      "restaurants",
-      "mauricienne"
-    ],
-    "priceRange": "se-faire-plaisir",
-    "description": "À Mapou, table haut de gamme associée à des cuisiniers qui ont une certaine notoriété localement, avec une carte créole travaillée.",
-    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=La%20Table%20du%20Ch%C3%A2teau%20Mapou%20Mauritius"
-  },
-  {
     "id": "cannelle-tamarin",
     "name": "Cannelle",
     "category": "food",
@@ -36214,40 +36165,6 @@
     "priceRange": "se-faire-plaisir",
     "description": "À Tamarin, une des adresses qui reviennent le plus souvent quand on évoque une cuisine mêlant influences indiennes et créoles.",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Cannelle%20Tamarin%20Mauritius"
-  },
-  {
-    "id": "le-manjaro-flic-en-flac",
-    "name": "Le Manjaro",
-    "category": "food",
-    "address": "Flic-en-Flac",
-    "zone": "ouest",
-    "lat": -20.2833,
-    "lng": 57.3667,
-    "themes": [
-      "restaurants",
-      "mauricienne",
-      "fruits-de-mer"
-    ],
-    "priceRange": "se-faire-plaisir",
-    "description": "Restaurant les pieds dans le sable à Flic-en-Flac, orienté poissons et fruits de mer préparés à la créole.",
-    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Le%20Manjaro%20Flic-en-Flac%20Mauritius"
-  },
-  {
-    "id": "horizon-preskil-mahebourg",
-    "name": "Horizon",
-    "category": "food",
-    "address": "Preskil Beach Resort, Mahébourg",
-    "zone": "sud",
-    "lat": -20.4333,
-    "lng": 57.6833,
-    "themes": [
-      "restaurants",
-      "mauricienne",
-      "fruits-de-mer"
-    ],
-    "priceRange": "se-faire-plaisir",
-    "description": "Au sein du domaine Preskil à Mahébourg, cadre les pieds dans l'eau pour une cuisine créole tournée vers les produits de la mer.",
-    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Horizon%20Preskil%20Beach%20Resort%2C%20Mah%C3%A9bourg%20Mauritius"
   },
   {
     "id": "le-poivrier-la-riviere-tamarin",
