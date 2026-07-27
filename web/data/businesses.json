@@ -835,7 +835,8 @@
       "restaurants",
       "mauricienne",
       "indienne",
-      "fruits-de-mer"
+      "fruits-de-mer",
+      "grillades"
     ],
     "hours": "Lun-Mar 18h30-22h, Jeu-Dim 12h-14h & 18h30-22h, fermé mer",
     "priceRange": "prix-moyen",
@@ -3480,7 +3481,8 @@
       "restaurants",
       "mauricienne",
       "asiatique",
-      "europeenne"
+      "europeenne",
+      "grillades"
     ],
     "hours": "Mar-Dim 11h30-14h30 & 18h30-22h30, fermé lun",
     "priceRange": "prix-moyen",
@@ -3608,7 +3610,8 @@
     "themes": [
       "restaurants",
       "mauricienne",
-      "europeenne"
+      "europeenne",
+      "grillades"
     ],
     "hours": "Lun-Sam 11h30-15h30, fermé dim",
     "priceRange": "se-faire-plaisir",
@@ -4221,7 +4224,8 @@
     "lng": 57.3736,
     "themes": [
       "restaurants",
-      "indienne"
+      "indienne",
+      "grillades"
     ],
     "hours": "Tous les jours 11h30-14h & 18h-21h30",
     "priceRange": "prix-moyen",
@@ -4785,7 +4789,8 @@
     "lng": 57.5222,
     "themes": [
       "restaurants",
-      "indienne"
+      "indienne",
+      "grillades"
     ],
     "priceRange": "bon-marche",
     "zone": "centre"
@@ -7860,7 +7865,8 @@
     "lat": -20.4275018,
     "lng": 57.3966003,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "grillades"
     ],
     "badge": "selection",
     "zone": "ouest"
@@ -8952,7 +8958,8 @@
     "lat": -20.4446226,
     "lng": 57.7181144,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "grillades"
     ],
     "badge": "selection",
     "zone": "sud"
@@ -9097,7 +9104,8 @@
     "lat": -20.1666005,
     "lng": 57.7661686,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "grillades"
     ],
     "zone": "est"
   },
@@ -9530,7 +9538,8 @@
     "themes": [
       "restaurants",
       "mauricienne",
-      "tables-exception"
+      "tables-exception",
+      "grillades"
     ],
     "zone": "est",
     "description": "Dans le domaine de Constance Belle Mare Plage, propose un repas convivial et généreux façon banquet rustique, centré sur les grands classiques de la cuisine locale.",
@@ -9764,7 +9773,8 @@
       "restaurants",
       "mauricienne",
       "europeenne",
-      "tables-exception"
+      "tables-exception",
+      "grillades"
     ],
     "badge": "selection",
     "zone": "nord",
@@ -18773,7 +18783,8 @@
     "lng": 57.3649725,
     "themes": [
       "snacks-plage",
-      "italien"
+      "italien",
+      "grillades"
     ],
     "zone": "ouest",
     "description": "Restaurant italien au four à bois à Flic-en-Flac, connu pour ses pizzas artisanales, pâtes maison et calamars croustillants dans une ambiance décontractée."
@@ -34008,7 +34019,8 @@
     "lat": -20.3684699,
     "lng": 57.3837626,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "grillades"
     ],
     "zone": "ouest"
   },
@@ -36203,7 +36215,8 @@
     "themes": [
       "restaurants",
       "mauricienne",
-      "tables-exception"
+      "tables-exception",
+      "grillades"
     ],
     "priceRange": "se-faire-plaisir",
     "description": "Dans le domaine historique de Bel Ombre, propose un menu dégustation autour d'une cuisine créole/coloniale élaborée, dans un cadre haut de gamme.",
@@ -36772,6 +36785,44 @@
     ],
     "priceRange": "prix-moyen",
     "description": "Petit café cosy et chaleureux de Grand Baie, tenu par une femme, salué pour son café, ses pâtisseries maison (dont pain au levain) et son ice tea mangue ; accueil très apprécié (5/5, 18 avis).",
+    "zone": "nord"
+  },
+  {
+    "id": "hotstone-grill-restaurant",
+    "name": "Hotstone Grill Restaurant",
+    "category": "food",
+    "address": "Ambrose St, Beau Bassin-Rose Hill, Maurice",
+    "phone": "+230 5252 3938",
+    "website": "",
+    "googleMapsUrl": "https://maps.google.com/?cid=3247326332560415716",
+    "lat": -20.2387599,
+    "lng": 57.4720434,
+    "themes": [
+      "restaurants",
+      "grillades"
+    ],
+    "hours": "Lun-Sam 18h-22h, Dim fermé",
+    "priceRange": "se-faire-plaisir",
+    "description": "Steakhouse incontournable de Rose Hill (4,4/5, 337 avis) : cuisson sur pierre chaude individuelle permettant de griller sa viande à volonté (Wagyu, Black Angus, agneau), viande tendre et savoureuse, personnel très compétent sur les conseils de cuisson et de vin ; réservation fortement conseillée.",
+    "zone": "centre"
+  },
+  {
+    "id": "cafe-international-pointe-aux-biches",
+    "name": "Café International",
+    "category": "food",
+    "address": "Coastal Road, Pointe aux Biches, Maurice",
+    "phone": "+230 5765 8735",
+    "website": "https://cafeinternational.net",
+    "googleMapsUrl": "https://maps.google.com/?cid=337395031694001238",
+    "lat": -20.0413723,
+    "lng": 57.5419693,
+    "themes": [
+      "restaurants",
+      "grillades"
+    ],
+    "hours": "Tous les jours 17h-22h",
+    "priceRange": "bon-marche",
+    "description": "Café-restaurant de grillades à la flamme très populaire à Pointe aux Biches (4,5/5, 463 avis), réputé pour ses viandes grillées (ribs, faux-filet, burgers), portions généreuses et excellent rapport qualité-prix ; cadre récemment rénové.",
     "zone": "nord"
   }
 ]
