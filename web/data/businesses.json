@@ -25193,7 +25193,8 @@
     "lat": -20.516609,
     "lng": 57.5204652,
     "themes": [
-      "boulangeries"
+      "boulangeries",
+      "glaciers"
     ],
     "zone": "sud"
   },
@@ -36618,7 +36619,8 @@
     "themes": [
       "restaurants",
       "mauricienne",
-      "italien"
+      "italien",
+      "glaciers"
     ],
     "priceRange": "prix-moyen",
     "hours": "Tous les jours 12h-14h & 18h-22h",
@@ -36824,5 +36826,23 @@
     "priceRange": "bon-marche",
     "description": "Café-restaurant de grillades à la flamme très populaire à Pointe aux Biches (4,5/5, 463 avis), réputé pour ses viandes grillées (ribs, faux-filet, burgers), portions généreuses et excellent rapport qualité-prix ; cadre récemment rénové.",
     "zone": "nord"
+  },
+  {
+    "id": "frutti-swirl-caudan-waterfront",
+    "name": "Frutti Swirl (Caudan Waterfront)",
+    "category": "food",
+    "address": "Marina Quay, Le Caudan Waterfront, Port Louis, Maurice",
+    "phone": "+230 5433 3802",
+    "website": "",
+    "googleMapsUrl": "https://maps.google.com/?cid=4543036946409486933",
+    "lat": -20.1608904,
+    "lng": 57.4985758,
+    "themes": [
+      "glaciers"
+    ],
+    "hours": "Lun-Jeu 10h-21h, Ven 10h-21h30, Sam-Dim 10h-22h",
+    "priceRange": "bon-marche",
+    "description": "Boutique de desserts glacés au Caudan Waterfront (3,8/5, 38 avis), jus de fruits frais et milkshakes appréciés ; yaourts glacés et smoothies également au menu.",
+    "zone": "centre"
   }
 ]
