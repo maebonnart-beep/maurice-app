@@ -49,6 +49,7 @@ export const FAMILIES: Partial<Record<CategoryKey, Family[]>> = {
           children: [
             "mauricienne", "fruits-de-mer", "indienne", "asiatique", "sushis", "europeenne",
             "italien", "grillades", "vegetarien", "fastfood", "kids-friendly", "tables-exception",
+            "plus-belles-vues", "frequente-locaux",
           ],
         },
       ],
@@ -194,6 +195,8 @@ export const SUBCATEGORIES: Partial<Record<CategoryKey, Subcategory[]>> = {
     { key: "fastfood", label: "Fast-food & snack", emoji: "🍔" },
     { key: "kids-friendly", label: "Kid's friendly", emoji: "🧒" },
     { key: "tables-exception", label: "Tables d'exception", emoji: "🏆" },
+    { key: "plus-belles-vues", label: "Plus belles vues", emoji: "🌅" },
+    { key: "frequente-locaux", label: "Fréquenté par les locaux", emoji: "👥" },
   ],
   utiles: [
     { key: "cliniques-privees", label: "Cliniques privées", emoji: "🏥" },
