@@ -47,7 +47,7 @@ export const FAMILIES: Partial<Record<CategoryKey, Family[]>> = {
           emoji: "🌍",
           parent: "restaurants",
           children: [
-            "mauricienne", "fruits-de-mer", "indienne", "asiatique", "sushis", "creperie", "europeenne",
+            "mauricienne", "fruits-de-mer", "indienne", "asiatique", "sushis", "europeenne",
             "italien", "grillades", "vegetarien", "fastfood", "kids-friendly", "tables-exception",
           ],
         },
@@ -187,7 +187,6 @@ export const SUBCATEGORIES: Partial<Record<CategoryKey, Subcategory[]>> = {
     { key: "indienne", label: "Indienne", emoji: "🍛" },
     { key: "asiatique", label: "Chinoise & asiatique", emoji: "🥢" },
     { key: "sushis", label: "Sushis", emoji: "🍣" },
-    { key: "creperie", label: "Crêperie", emoji: "🥞" },
     { key: "europeenne", label: "Européenne & française", emoji: "🥖" },
     { key: "italien", label: "Italien & pizza", emoji: "🍕" },
     { key: "grillades", label: "Viandes & grillades", emoji: "🥩" },

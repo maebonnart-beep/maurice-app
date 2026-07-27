@@ -1754,8 +1754,7 @@
     "lng": 57.5829729,
     "themes": [
       "restaurants",
-      "grillades",
-      "vegetarien"
+      "grillades"
     ],
     "hours": "Tous les jours 19h-23h, Ven-Sam jusqu'à 2h",
     "priceRange": "se-faire-plaisir",
@@ -3650,7 +3649,6 @@
     "themes": [
       "restaurants",
       "mauricienne",
-      "vegetarien",
       "grillades",
       "fruits-de-mer"
     ],
@@ -15740,9 +15738,13 @@
     "lng": 57.5863101,
     "themes": [
       "boulangeries",
-      "creperie"
+      "europeenne",
+      "cafes-terrasses",
+      "vegetarien"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "hours": "Lun-Jeu 7h45-17h30, Ven-Sam 7h45-19h30, Dim 8h-13h",
+    "description": "Crêperie très populaire de Grand Baie (4,8/5, 300+ avis) réputée pour ses crêpes généreuses et savoureuses, ses gaufres, ses smoothies maison et son accueil chaleureux ; propose aussi des options sans gluten."
   },
   {
     "id": "brandon-l-artisant-patissier",
@@ -36735,5 +36737,41 @@
     "hours": "Lun-Jeu 10h-21h, Ven-Dim 10h-22h",
     "description": "Antenne de l'enseigne Jain's Little India à Rose-Belle, sucreries et snacks végétariens indiens.",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Jain's%20Little%20India%20(Rose-Belle)%20Plaisance%20Shopping%20Village%2C%20Rose-Belle%20Mauritius"
+  },
+  {
+    "id": "shlomo-grand-baie",
+    "name": "Shlomo",
+    "category": "food",
+    "address": "Coastal Road, B13, Grand Baie 30510, Maurice",
+    "phone": "+230 269 1557",
+    "website": "",
+    "googleMapsUrl": "https://maps.google.com/?cid=13262800032137870717",
+    "lat": -20.0149999,
+    "lng": 57.5822061,
+    "themes": [
+      "restaurants",
+      "vegetarien"
+    ],
+    "hours": "Lun-Ven fermé, Sam-Dim 11h30-15h",
+    "description": "Restaurant entièrement vegan à Grand Baie, une rareté à Maurice : ambiance intimiste et cosy, cuisine généreuse et originale (burritos, wraps, wedges), accueil chaleureux unanimement salué (4,7/5, 184 avis).",
+    "zone": "nord"
+  },
+  {
+    "id": "cafe-moris-grand-baie",
+    "name": "Café Moris",
+    "category": "food",
+    "address": "Royal Road, Grand Baie 30517, Maurice",
+    "phone": "+230 5945 3015",
+    "website": "",
+    "googleMapsUrl": "https://maps.google.com/?cid=991200631459586281",
+    "lat": -20.0163977,
+    "lng": 57.5768411,
+    "themes": [
+      "cafes-terrasses",
+      "vegetarien"
+    ],
+    "priceRange": "prix-moyen",
+    "description": "Petit café cosy et chaleureux de Grand Baie, tenu par une femme, salué pour son café, ses pâtisseries maison (dont pain au levain) et son ice tea mangue ; accueil très apprécié (5/5, 18 avis).",
+    "zone": "nord"
   }
 ]
