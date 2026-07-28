@@ -9667,9 +9667,13 @@
     "lat": -20.1423808,
     "lng": 57.7388756,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "fruits-de-mer",
+      "mauricienne"
     ],
-    "zone": "est"
+    "zone": "est",
+    "hours": "Tous les jours 10h30-15h & 18h-22h",
+    "description": "Restaurant familial de Poste Lafayette, à 5 minutes de la plage, réputé pour ses produits frais préparés à la minute. Spécialité de curry de poisson à l'aubergine, fruits de mer et sauces mauriciennes légères. Très bien noté par les clients."
   },
   "576": {
     "id": "indigo-restaurant",
@@ -35612,6 +35616,45 @@
       "mauricienne"
     ],
     "description": "Table d'hôte familiale et chaleureuse de Pereybère/Bain Bœuf, ouverte de septembre à mars. Cuisine créole et française avec des produits frais, réputée pour sa salade de marlin fumé, ses entrées de poulpe et ses poissons/curry locaux. Carte courte gage de qualité, accueil très apprécié des clients.",
+    "zone": "nord"
+  },
+  "2277": {
+    "id": "le-barachois-constance-prince-maurice",
+    "name": "Le Barachois",
+    "category": "food",
+    "address": "Constance Le Prince Maurice, Choisy Road, Poste de Flacq",
+    "phone": "+230 402 3636",
+    "website": "https://le-barachois.restaurant.mu/fr",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Le%20Barachois%20Constance%20Prince%20Maurice%20Mauritius",
+    "lat": -20.1636,
+    "lng": 57.7642,
+    "themes": [
+      "restaurants",
+      "fruits-de-mer",
+      "tables-exception"
+    ],
+    "hours": "Dîner 19h-22h30, fermé dimanche, réservation 48h à l'avance",
+    "priceRange": "se-faire-plaisir",
+    "description": "Restaurant flottant unique sur cinq pontons au-dessus du lagon, dans une réserve de poissons naturelle bordée de mangroves. Cuisine gastronomique de poissons et fruits de mer (camarons, saint-pierre grillé, curry vert) dans un cadre idyllique et romantique, l'une des tables les plus exceptionnelles de l'île.",
+    "zone": "est"
+  },
+  "2278": {
+    "id": "inti-lux-grand-gaube",
+    "name": "INTI - LUX* Grand Gaube",
+    "category": "food",
+    "address": "Coastal Road, LUX* Grand Gaube Hotel, Grand Gaube",
+    "phone": "+230 204 9191",
+    "website": "https://inti-lux-grand-gaube-resort-villas.restaurant.mu/fr",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=INTI%20LUX%20Grand%20Gaube%20Mauritius",
+    "lat": -20.0075,
+    "lng": 57.66,
+    "themes": [
+      "restaurants",
+      "tables-exception"
+    ],
+    "priceRange": "se-faire-plaisir",
+    "badge": "coup-de-coeur",
+    "description": "Recommandation Maurice+ : cuisine fusion péruvienne, argentine et asiatique autour d'une cuisine ouverte au feu de bois et d'un bar à pisco. Présentation soignée, ceviches et grillades remarqués, ambiance animée avec musique live. Élu meilleur restaurant du nord de l'île par de nombreux avis. Sur réservation, prix élevé mais expérience jugée à la hauteur.",
     "zone": "nord"
   }
 }
