@@ -1053,8 +1053,7 @@
     "lat": -20.0131285,
     "lng": 57.5863122,
     "themes": [
-      "restaurants",
-      "fastfood"
+      "restaurants"
     ],
     "zone": "nord"
   },
@@ -1311,7 +1310,6 @@
     "lat": -20.003863,
     "lng": 57.5812062,
     "themes": [
-      "fastfood",
       "bars"
     ],
     "hours": "Tous les jours à partir de 17h",
@@ -1691,8 +1689,7 @@
     "lng": 57.5600337,
     "themes": [
       "restaurants",
-      "italien",
-      "fastfood"
+      "italien"
     ],
     "zone": "nord",
     "hours": "Lun-Ven 10h-15h",
@@ -3562,8 +3559,7 @@
     "lat": -20.4258,
     "lng": 57.3283,
     "themes": [
-      "bars",
-      "fastfood"
+      "bars"
     ],
     "hours": "Tous les jours 12h-22h",
     "priceRange": "prix-moyen",
@@ -4124,7 +4120,7 @@
     "lng": 57.3639,
     "themes": [
       "restaurants",
-      "fastfood"
+      "grillades"
     ],
     "hours": "Fermé lun, Mar-Dim 11h-20h",
     "priceRange": "bon-marche",
@@ -4217,8 +4213,7 @@
     "lat": -20.3252,
     "lng": 57.3736,
     "themes": [
-      "restaurants",
-      "fastfood"
+      "restaurants"
     ],
     "hours": "Tous les jours 11h-20h",
     "priceRange": "bon-marche",
@@ -4595,7 +4590,6 @@
     "lat": -20.4219377,
     "lng": 57.7025526,
     "themes": [
-      "fastfood",
       "mauricienne",
       "vegetarien"
     ],
@@ -4844,7 +4838,7 @@
     "lng": 57.7092,
     "themes": [
       "restaurants",
-      "fastfood"
+      "grillades"
     ],
     "hours": "Fermé jeu, ouvre à partir de 12h30",
     "priceRange": "bon-marche",
@@ -14460,11 +14454,12 @@
     "lng": 57.657666,
     "themes": [
       "tables-hotes",
-      "tables-exception"
+      "tables-exception",
+      "mauricienne"
     ],
     "zone": "nord",
     "hours": "Lun-Sam 12h-15h & 19h-22h (réservation obligatoire)",
-    "description": "La Salle à Manger, table d'hôte de La Demeure Saint Antoine, propriété créole historique de Goodlands. Cuisine légère à base de produits du marché ou du jardin, classiques mauriciens revisités, servis dans une salle à manger raffinée ou en terrasse."
+    "description": "Demeure coloniale de 1830, ancienne propriété d'un baron du sucre, superbement préservée à Goodlands. La Salle à Manger, son restaurant classé n°1 de l'île sur les avis clients, sert une cuisine mauricienne raffinée (fruits de mer, plats créoles revisités) dans un cadre chargé d'histoire, entre véranda à colonnades et jardin où volent les chauves-souris géantes à la tombée du jour. Sur réservation, ouvert aussi sans y loger."
   },
   "884": {
     "id": "la-french-cuisine",
@@ -28300,7 +28295,7 @@
     "lng": 57.5881442,
     "themes": [
       "restaurants",
-      "fastfood"
+      "grillades"
     ],
     "badge": "selection",
     "zone": "nord"
