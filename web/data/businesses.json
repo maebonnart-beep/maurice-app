@@ -28784,7 +28784,8 @@
     ],
     "badge": "coup-de-coeur",
     "zone": "nord",
-    "sportsListed": "Tennis : 2 courts (dur). Infrastructures : piscine, terrain de football, salle de fitness. Réservation possible."
+    "sportsListed": "Tennis : 2 courts (dur). Infrastructures : piscine, terrain de football, salle de fitness. Réservation possible.",
+    "description": "Complexe sportif du Domaine de Labourdonnais (tennis, padel, piscine, terrain de football, salle de fitness). La restauration du Club House est très bonne, dans un cadre magnifique donnant sur les terrains de sport."
   },
   {
     "id": "rm-club-mauritius",
@@ -36029,5 +36030,23 @@
     "zone": "centre",
     "hours": "Lun-Mer et Sam 9h15-17h30, Jeu 9h15-13h, Ven 9h15-12h30 & 14h-17h30, Dim 10h-12h15",
     "description": "Librairie historique de Rose Hill, présente depuis les années 1970, référence pour les manuels scolaires du primaire et du secondaire. 100% d'avis positifs sur les 7 avis recueillis."
+  },
+  {
+    "id": "club-house-labourdonnais-sports-club",
+    "name": "Le Club House - Labourdonnais Sports Club",
+    "category": "food",
+    "address": "Domaine de Labourdonnais, Mapou",
+    "phone": "+230 266 9621",
+    "website": "https://domainedelabourdonnais.com/dine/the-clubhouse/",
+    "googleMapsUrl": "https://maps.app.goo.gl/zCnnqVkxdGomTyiJ9",
+    "lat": -20.0695805,
+    "lng": 57.6150265,
+    "themes": [
+      "restaurants",
+      "europeenne"
+    ],
+    "badge": "coup-de-coeur",
+    "zone": "nord",
+    "description": "Restaurant du Club House du Labourdonnais Sports Club : cuisine snacking et européenne servie dans une ambiance bar-restaurant conviviale, avec un cadre magnifique donnant sur les terrains de sport (tennis, padel, football). Très bonne restauration, idéal après le sport ou pour un moment détente entre amis."
   }
 ]
