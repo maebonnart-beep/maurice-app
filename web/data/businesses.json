@@ -35801,5 +35801,27 @@
     ],
     "zone": "nord",
     "description": "Antenne de Pereybère du centre de soutien scolaire Travelling Teachers, avec journées thématiques pour les enfants."
+  },
+  {
+    "id": "vidange-fosse-septique-yogesh",
+    "name": "Vidange fosse septique - Yogesh",
+    "category": "utiles",
+    "themes": [
+      "depannages"
+    ],
+    "description": "Service de vidange de fosse septique.",
+    "address": "Maurice"
+  },
+  {
+    "id": "electrostar-ltd-reparation-lave-vaisselle",
+    "name": "Electrostar Ltd - Réparateur lave-vaisselle (Akash)",
+    "category": "utiles",
+    "phone": "+230 5257 8281",
+    "whatsapp": "+230 5257 8281",
+    "themes": [
+      "depannages"
+    ],
+    "description": "Réparation de lave-vaisselle à domicile. Contact : Akash.",
+    "address": "Maurice"
   }
 ]
