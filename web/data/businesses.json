@@ -35760,5 +35760,46 @@
     "badge": "coup-de-coeur",
     "zone": "sud",
     "description": "Excursion en bateau à taille humaine dans le sud-est : baignade à la cascade de la Grande Rivière Sud-Est (accessible uniquement par bateau), snorkeling, observation de dauphins et repas créole convivial. Les avis saluent un accueil chaleureux, un capitaine attentif et une sortie loin de la foule."
+  },
+  {
+    "id": "zouzou-loisirs-trou-aux-biches",
+    "name": "Zouzou Loisirs",
+    "category": "activites",
+    "address": "Chemin La Balade, Trou aux Biches",
+    "lat": -20.0254785,
+    "lng": 57.551332,
+    "themes": [
+      "centres-loisirs-animations-enfants"
+    ],
+    "zone": "nord",
+    "description": "Centre de loisirs et garderie pour enfants de 3 à 12 ans, du lundi au vendredi de 9h à 17h. Chaque jour est dédié à un atelier ou thème différent (cuisine, cirque, bowling...), avec sorties régulières sur l'île (Île aux Aigrettes, sites culturels). Contact : Kesia."
+  },
+  {
+    "id": "centre-avek-twae-pereybere",
+    "name": "Centre Avek Twaé",
+    "category": "activites",
+    "address": "Pereybère",
+    "lat": -19.9934558,
+    "lng": 57.5920544,
+    "phone": "+230 5421 8086",
+    "whatsapp": "+230 5421 8086",
+    "themes": [
+      "centres-loisirs-animations-enfants"
+    ],
+    "zone": "nord"
+  },
+  {
+    "id": "travelling-teachers-pereybere",
+    "name": "Travelling Teachers - Pereybère",
+    "category": "activites",
+    "address": "Pereybère",
+    "lat": -19.9943993,
+    "lng": 57.5916746,
+    "website": "https://www.travellingteachers.org/",
+    "themes": [
+      "centres-loisirs-animations-enfants"
+    ],
+    "zone": "nord",
+    "description": "Antenne de Pereybère du centre de soutien scolaire Travelling Teachers, avec journées thématiques pour les enfants."
   }
 ]
