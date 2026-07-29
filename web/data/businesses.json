@@ -15618,7 +15618,7 @@
     "lat": -20.0136894,
     "lng": 57.5875124,
     "themes": [
-      "taxis"
+      "taxis-transferts"
     ],
     "zone": "nord"
   },
@@ -15633,7 +15633,7 @@
     "lat": -20.0298566,
     "lng": 57.560659,
     "themes": [
-      "taxis"
+      "taxis-transferts"
     ],
     "zone": "nord"
   },
@@ -15648,7 +15648,7 @@
     "lat": -19.9937023,
     "lng": 57.5919253,
     "themes": [
-      "taxis"
+      "taxis-transferts"
     ],
     "zone": "nord"
   },
@@ -15663,7 +15663,7 @@
     "lat": -20.0089031,
     "lng": 57.5817315,
     "themes": [
-      "taxis"
+      "taxis-transferts"
     ],
     "zone": "nord"
   },
@@ -15678,7 +15678,7 @@
     "lat": -20.0165656,
     "lng": 57.5832247,
     "themes": [
-      "taxis"
+      "taxis-transferts"
     ],
     "zone": "nord"
   },
@@ -15693,7 +15693,7 @@
     "lat": -20.0047957,
     "lng": 57.6373076,
     "themes": [
-      "taxis"
+      "taxis-transferts"
     ],
     "zone": "nord"
   },
@@ -15708,7 +15708,7 @@
     "lat": -20.0234534,
     "lng": 57.5539603,
     "themes": [
-      "taxis"
+      "taxis-transferts"
     ],
     "zone": "nord"
   },
@@ -15723,7 +15723,7 @@
     "lat": -20.4322618,
     "lng": 57.676592,
     "themes": [
-      "taxis",
+      "taxis-transferts",
       "plateformes-multiservices"
     ],
     "description": "Tour-opérateur agréé et familial, trajets planifiés à l'avance (réservation idéalement 24h avant). Prisé pour transferts aéroport, trajets hôtel à hôtel, excursions à la journée, prix fixes.",
@@ -15740,7 +15740,7 @@
     "lat": -20.2240362,
     "lng": 57.463488,
     "themes": [
-      "taxis"
+      "taxis-transferts"
     ],
     "zone": "centre"
   },
@@ -15755,7 +15755,7 @@
     "lat": -20.0044333,
     "lng": 57.6350915,
     "themes": [
-      "taxis"
+      "taxis-transferts"
     ],
     "zone": "nord"
   },
@@ -15770,7 +15770,7 @@
     "lat": -20.4416983,
     "lng": 57.7210612,
     "themes": [
-      "transferts"
+      "taxis-transferts"
     ],
     "zone": "sud"
   },
@@ -15785,7 +15785,7 @@
     "lat": -20.4521719,
     "lng": 57.6506686,
     "themes": [
-      "transferts"
+      "taxis-transferts"
     ],
     "zone": "sud"
   },
@@ -15800,7 +15800,7 @@
     "lat": -20.1337557,
     "lng": 57.6649963,
     "themes": [
-      "transferts"
+      "taxis-transferts"
     ],
     "zone": "est"
   },
@@ -15815,9 +15815,11 @@
     "lat": -20.266061,
     "lng": 57.4868812,
     "themes": [
-      "transferts"
+      "taxis-transferts"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "badge": "coup-de-coeur",
+    "description": "Contacts Anshika et Shawan : accompagnement sur mesure selon vos besoins, avec une équipe chaleureuse et à l'écoute."
   },
   {
     "id": "soleiro-car-rental-ltd",
@@ -15830,7 +15832,7 @@
     "lat": -20.0146024,
     "lng": 57.5725748,
     "themes": [
-      "transferts"
+      "taxis-transferts"
     ],
     "zone": "nord"
   },
@@ -15845,7 +15847,7 @@
     "lat": -20.227929,
     "lng": 57.741701,
     "themes": [
-      "transferts"
+      "taxis-transferts"
     ],
     "zone": "est"
   },
@@ -15860,7 +15862,7 @@
     "lat": -19.993034,
     "lng": 57.5921835,
     "themes": [
-      "transferts"
+      "taxis-transferts"
     ],
     "zone": "nord"
   },
@@ -15875,7 +15877,7 @@
     "lat": -20.2792685,
     "lng": 57.3688158,
     "themes": [
-      "transferts"
+      "taxis-transferts"
     ],
     "zone": "ouest"
   },
@@ -15890,7 +15892,7 @@
     "lat": -20.4334615,
     "lng": 57.6787266,
     "themes": [
-      "transferts"
+      "taxis-transferts"
     ],
     "zone": "sud"
   },
@@ -15905,7 +15907,7 @@
     "lat": -20.0094913,
     "lng": 57.5819431,
     "themes": [
-      "transferts"
+      "taxis-transferts"
     ],
     "zone": "nord"
   },
@@ -15920,7 +15922,7 @@
     "lat": -20.2020469,
     "lng": 57.7748267,
     "themes": [
-      "transferts"
+      "taxis-transferts"
     ],
     "zone": "est"
   },
@@ -15935,7 +15937,7 @@
     "lat": -20.27931,
     "lng": 57.3687843,
     "themes": [
-      "transferts"
+      "taxis-transferts"
     ],
     "zone": "ouest"
   },
@@ -15950,7 +15952,7 @@
     "lat": -20.0477013,
     "lng": 57.5545734,
     "themes": [
-      "transferts"
+      "taxis-transferts"
     ],
     "zone": "nord"
   },
@@ -15965,7 +15967,7 @@
     "lat": -20.2789674,
     "lng": 57.3722864,
     "themes": [
-      "transferts"
+      "taxis-transferts"
     ],
     "zone": "ouest"
   },
@@ -15980,7 +15982,7 @@
     "lat": -20.0099451,
     "lng": 57.5863688,
     "themes": [
-      "transferts"
+      "taxis-transferts"
     ],
     "zone": "nord"
   },
@@ -15995,7 +15997,7 @@
     "lat": -20.2791981,
     "lng": 57.4677139,
     "themes": [
-      "transferts"
+      "taxis-transferts"
     ],
     "zone": "centre"
   },
@@ -19369,7 +19371,7 @@
     "lat": -20.3025522,
     "lng": 57.3663091,
     "themes": [
-      "taxis"
+      "taxis-transferts"
     ],
     "zone": "ouest"
   },
@@ -19384,7 +19386,7 @@
     "lat": -20.2827654,
     "lng": 57.3667997,
     "themes": [
-      "taxis"
+      "taxis-transferts"
     ],
     "zone": "ouest"
   },
@@ -19399,7 +19401,7 @@
     "lat": -20.3295409,
     "lng": 57.3779045,
     "themes": [
-      "taxis"
+      "taxis-transferts"
     ],
     "zone": "ouest"
   },
@@ -19414,7 +19416,7 @@
     "lat": -20.2912614,
     "lng": 57.3637215,
     "themes": [
-      "taxis"
+      "taxis-transferts"
     ],
     "zone": "ouest"
   },
@@ -19429,7 +19431,7 @@
     "lat": -20.2788882,
     "lng": 57.4035975,
     "themes": [
-      "taxis"
+      "taxis-transferts"
     ],
     "zone": "ouest"
   },
@@ -19444,7 +19446,7 @@
     "lat": -20.2786103,
     "lng": 57.4032722,
     "themes": [
-      "taxis"
+      "taxis-transferts"
     ],
     "zone": "ouest"
   },
@@ -19459,7 +19461,7 @@
     "lat": -20.2756161,
     "lng": 57.3729359,
     "themes": [
-      "taxis"
+      "taxis-transferts"
     ],
     "zone": "ouest"
   },
@@ -19474,7 +19476,7 @@
     "lat": -20.3283563,
     "lng": 57.3774112,
     "themes": [
-      "taxis"
+      "taxis-transferts"
     ],
     "zone": "ouest"
   },
@@ -19489,7 +19491,7 @@
     "lat": -20.2981944,
     "lng": 57.3656219,
     "themes": [
-      "taxis"
+      "taxis-transferts"
     ],
     "zone": "ouest"
   },
@@ -19504,7 +19506,7 @@
     "lat": -20.3272089,
     "lng": 57.3775543,
     "themes": [
-      "taxis"
+      "taxis-transferts"
     ],
     "zone": "ouest"
   },
@@ -19519,7 +19521,7 @@
     "lat": -20.302797,
     "lng": 57.3660833,
     "themes": [
-      "taxis"
+      "taxis-transferts"
     ],
     "zone": "ouest"
   },
@@ -19534,7 +19536,7 @@
     "lat": -20.3282151,
     "lng": 57.3773829,
     "themes": [
-      "taxis"
+      "taxis-transferts"
     ],
     "zone": "ouest"
   },
@@ -19549,7 +19551,7 @@
     "lat": -20.2796591,
     "lng": 57.3685107,
     "themes": [
-      "taxis"
+      "taxis-transferts"
     ],
     "zone": "ouest"
   },
@@ -19564,7 +19566,7 @@
     "lat": -20.3293827,
     "lng": 57.3749367,
     "themes": [
-      "taxis"
+      "taxis-transferts"
     ],
     "zone": "ouest"
   },
@@ -22841,7 +22843,7 @@
     "lat": -20.4518707,
     "lng": 57.313764,
     "themes": [
-      "taxis"
+      "taxis-transferts"
     ],
     "zone": "sud"
   },
@@ -22856,7 +22858,7 @@
     "lat": -20.4527924,
     "lng": 57.3134161,
     "themes": [
-      "taxis"
+      "taxis-transferts"
     ],
     "zone": "sud"
   },
@@ -22871,7 +22873,7 @@
     "lat": -20.4916501,
     "lng": 57.3775903,
     "themes": [
-      "taxis"
+      "taxis-transferts"
     ],
     "zone": "sud"
   },
@@ -22886,7 +22888,7 @@
     "lat": -20.4179451,
     "lng": 57.3646535,
     "themes": [
-      "taxis"
+      "taxis-transferts"
     ],
     "zone": "ouest"
   },
@@ -22901,7 +22903,7 @@
     "lat": -20.4286559,
     "lng": 57.3602703,
     "themes": [
-      "taxis"
+      "taxis-transferts"
     ],
     "zone": "ouest"
   },
@@ -22916,7 +22918,7 @@
     "lat": -20.4326587,
     "lng": 57.6758807,
     "themes": [
-      "taxis"
+      "taxis-transferts"
     ],
     "zone": "sud"
   },
@@ -22931,7 +22933,7 @@
     "lat": -20.4211805,
     "lng": 57.7074101,
     "themes": [
-      "taxis"
+      "taxis-transferts"
     ],
     "zone": "sud"
   },
@@ -22946,7 +22948,7 @@
     "lat": -20.4206955,
     "lng": 57.3638887,
     "themes": [
-      "taxis"
+      "taxis-transferts"
     ],
     "zone": "ouest"
   },
@@ -22961,7 +22963,7 @@
     "lat": -20.4327063,
     "lng": 57.6748862,
     "themes": [
-      "taxis"
+      "taxis-transferts"
     ],
     "zone": "sud"
   },
@@ -22976,7 +22978,7 @@
     "lat": -20.4172038,
     "lng": 57.3654953,
     "themes": [
-      "taxis"
+      "taxis-transferts"
     ],
     "zone": "ouest"
   },
@@ -22991,7 +22993,7 @@
     "lat": -20.4204494,
     "lng": 57.627226,
     "themes": [
-      "taxis"
+      "taxis-transferts"
     ],
     "zone": "sud"
   },
@@ -23006,7 +23008,7 @@
     "lat": -20.2288141,
     "lng": 57.7429585,
     "themes": [
-      "taxis"
+      "taxis-transferts"
     ],
     "zone": "est"
   },
@@ -23021,7 +23023,7 @@
     "lat": -20.0302581,
     "lng": 57.5495695,
     "themes": [
-      "taxis"
+      "taxis-transferts"
     ],
     "zone": "nord"
   },
@@ -23036,7 +23038,7 @@
     "lat": -20.4317297,
     "lng": 57.6750764,
     "themes": [
-      "taxis"
+      "taxis-transferts"
     ],
     "zone": "sud"
   },
@@ -23051,7 +23053,7 @@
     "lat": -20.2891877,
     "lng": 57.4608519,
     "themes": [
-      "taxis"
+      "taxis-transferts"
     ],
     "zone": "centre"
   },
@@ -23066,7 +23068,7 @@
     "lat": -20.452658,
     "lng": 57.373467,
     "themes": [
-      "taxis"
+      "taxis-transferts"
     ],
     "zone": "ouest"
   },
@@ -23081,7 +23083,7 @@
     "lat": -20.1975277,
     "lng": 57.7262223,
     "themes": [
-      "taxis"
+      "taxis-transferts"
     ],
     "zone": "est"
   },
@@ -23096,7 +23098,7 @@
     "lat": -20.1264611,
     "lng": 57.5335349,
     "themes": [
-      "taxis"
+      "taxis-transferts"
     ],
     "zone": "nord"
   },
@@ -23111,7 +23113,7 @@
     "lat": -20.3143765,
     "lng": 57.5134027,
     "themes": [
-      "taxis"
+      "taxis-transferts"
     ],
     "zone": "centre"
   },
@@ -23126,7 +23128,7 @@
     "lat": -20.4317297,
     "lng": 57.6750764,
     "themes": [
-      "taxis"
+      "taxis-transferts"
     ],
     "zone": "sud"
   },
@@ -23141,7 +23143,7 @@
     "lat": -20.424747,
     "lng": 57.3638343,
     "themes": [
-      "taxis"
+      "taxis-transferts"
     ],
     "zone": "ouest"
   },
@@ -25132,7 +25134,7 @@
     "lat": -20.0571673,
     "lng": 57.5259451,
     "themes": [
-      "taxis"
+      "taxis-transferts"
     ],
     "zone": "nord"
   },
@@ -25147,7 +25149,7 @@
     "lat": -20.1044031,
     "lng": 57.6913767,
     "themes": [
-      "taxis"
+      "taxis-transferts"
     ],
     "zone": "est"
   },
@@ -25162,7 +25164,7 @@
     "lat": -20.519913,
     "lng": 57.5223434,
     "themes": [
-      "taxis"
+      "taxis-transferts"
     ],
     "zone": "sud"
   },
@@ -25177,7 +25179,7 @@
     "lat": -20.3543559,
     "lng": 57.3653071,
     "themes": [
-      "taxis"
+      "taxis-transferts"
     ],
     "zone": "ouest"
   },
@@ -25192,7 +25194,7 @@
     "lat": -20.2400278,
     "lng": 57.4852315,
     "themes": [
-      "transferts"
+      "taxis-transferts"
     ],
     "zone": "centre"
   },
@@ -35651,5 +35653,77 @@
     "badge": "coup-de-coeur",
     "description": "Recommandation Maurice+ : cuisine fusion péruvienne, argentine et asiatique autour d'une cuisine ouverte au feu de bois et d'un bar à pisco. Présentation soignée, ceviches et grillades remarqués, ambiance animée avec musique live. Élu meilleur restaurant du nord de l'île par de nombreux avis. Sur réservation, prix élevé mais expérience jugée à la hauteur.",
     "zone": "nord"
+  },
+  {
+    "id": "atlantis-diving-center-vellin-bhurtun",
+    "name": "Atlantis Diving Center (Vellin Bhurtun)",
+    "category": "activites",
+    "address": "Coastal Road, Pointe-aux-Biches / Trou-aux-Biches",
+    "phone": "+230 265 7172",
+    "whatsapp": "+230 422 7126",
+    "email": "atlantis_divers@yahoo.co.uk",
+    "website": "http://atlantisdiving.net/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Atlantis%20Diving%20Center%20Trou%20aux%20Biches%20Mauritius",
+    "lat": -20.044,
+    "lng": 57.537,
+    "themes": [
+      "sports-nautiques",
+      "plongee-sous-marine"
+    ],
+    "badge": "coup-de-coeur",
+    "zone": "nord",
+    "description": "Centre de plongée familial dirigé par Vellin Bhurtun, Master Instructor PADI avec plus de 30 ans d'expérience, à l'écart des grandes structures touristiques. Sorties limitées (jamais plus de 6 plongeurs), baptêmes accessibles aux enfants dès 7 ans, prise en charge parfaite et personnalisée dans une ambiance chaleureuse."
+  },
+  {
+    "id": "vanillart-visite-vanilleraie",
+    "name": "Vanill'Art — Visite de la vanilleraie",
+    "category": "activites",
+    "address": "Mont Blanc, Chamouny",
+    "phone": "+230 5252 5940",
+    "whatsapp": "+230 5252 5940",
+    "website": "https://vanillart.mu/",
+    "googleMapsUrl": "https://share.google/YccJ3ufCBmkyqK0hP",
+    "lat": -20.465,
+    "lng": 57.48,
+    "themes": [
+      "culture-patrimoine",
+      "activites-enfants-famille"
+    ],
+    "badge": "coup-de-coeur",
+    "zone": "sud",
+    "hours": "Lun-Sam 9h30-10h30 / 11h-12h",
+    "entryPrice": "Rs 1500 par visiteur / Rs 400 par enfant (6-12 ans) / gratuit pour les 0-5 ans",
+    "description": "Visite très instructive et intimiste d'une vanilleraie cultivée dans l'art du bio, loin des sites touristiques. Sur réservation uniquement, en français et en anglais 🇬🇧🇫🇷."
+  },
+  {
+    "id": "street-food-tour-port-louis",
+    "name": "Street Food Tour",
+    "category": "activites",
+    "address": "Port Louis",
+    "phone": "+230 5787 4725",
+    "whatsapp": "+230 5787 4725",
+    "themes": [
+      "activites-enfants-famille",
+      "culture-patrimoine"
+    ],
+    "badge": "coup-de-coeur",
+    "zone": "centre",
+    "entryPrice": "Environ 40-50€ / pers.",
+    "description": "Balade guidée à travers Port Louis pour découvrir la ville culinairement et culturellement : marché central, ruelles animées et dégustations de street food mauricienne (dholl puri, samoussas, alouda...). Idéal en famille."
+  },
+  {
+    "id": "guy-noel-verny-sculpteur",
+    "name": "Guy Noël Verny (sculpteur)",
+    "category": "activites",
+    "address": "Caudan Waterfront, Port Louis",
+    "lat": -20.161,
+    "lng": 57.4985,
+    "themes": [
+      "shopping",
+      "souvenirs"
+    ],
+    "badge": "coup-de-coeur",
+    "zone": "centre",
+    "description": "Sculpteur sur bois installé au Caudan Waterfront, connu pour ses œuvres façonnées à partir de bois flotté. Atelier découverte possible pour les enfants."
   }
 ]
