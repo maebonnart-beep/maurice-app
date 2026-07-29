@@ -13455,7 +13455,8 @@
     "themes": [
       "centres-loisirs-animations-enfants"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Crèche et maternelle pour enfants de 3 mois à 6 ans, installée dans un jardin clos et arboré de 1200 m² proche de la Croisette à Grand Baie. Nombreux jeux et activités adaptés à chaque âge, ouvert du lundi au vendredi."
   },
   {
     "id": "bowling-le-lucky-strike-bar-lounge-billard",
@@ -17500,7 +17501,8 @@
     "themes": [
       "centres-loisirs-animations-enfants"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Location de châteaux gonflables, toboggans aquatiques, machines à popcorn/barbe à papa et animations (maquillage, mascottes Disney) pour anniversaires et événements. 94% d'avis positifs, clients satisfaits depuis 2020."
   },
   {
     "id": "seven-colours-spa-veranda-tamarin-hotel",
@@ -23811,7 +23813,8 @@
     "themes": [
       "centres-loisirs-animations-enfants"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Parc de loisirs familial dans l'Ouest, sur un vaste domaine traversé par une rivière et un lac : ziplining, quad, kayak, pêche à la tilapia pour les enfants, ferme pédagogique et vélo. Avis positifs sur les tarifs abordables, l'équipe dynamique et le restaurant Tekoma sur place."
   },
   {
     "id": "glow-atelier",
@@ -27681,7 +27684,8 @@
     "themes": [
       "centres-loisirs-animations-enfants"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Ateliers de théâtre ludiques et créatifs pour enfants (dès 6 ans), ados et adultes à Tamarin, par groupes d'âge, avec spectacle de fin d'année au Théâtre du Caudan. Développe la confiance en soi, la concentration et la créativité."
   },
   {
     "id": "l-atelier-de-malena",
@@ -32738,7 +32742,8 @@
     "themes": [
       "centres-loisirs-animations-enfants"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "École d'équitation entre mer et montagnes à Cascavelle : cours d'équitation, dressage, saut d'obstacles, Pony Club pour les plus jeunes et voltige. Instructeurs sélectionnés avec rigueur ; 98% d'avis positifs sur un accueil chaleureux et un encadrement sécurisant."
   },
   {
     "id": "nomad",
