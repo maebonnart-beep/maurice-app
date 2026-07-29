@@ -155,7 +155,7 @@ export const SUBCATEGORIES: Partial<Record<CategoryKey, Subcategory[]>> = {
     { key: "mode-adultes", label: "Mode adultes", emoji: "👗" },
     { key: "mode-enfants", label: "Mode enfants", emoji: "🧒" },
     { key: "materiel-sports", label: "Matériel de sports", emoji: "🏸" },
-    { key: "livres", label: "Livres", emoji: "📚" },
+    { key: "livres", label: "Librairies", emoji: "📚" },
     { key: "jeux", label: "Jeux", emoji: "🎲" },
     { key: "souvenirs", label: "Souvenirs", emoji: "🎁" },
     { key: "activites-enfants-famille", label: "Activités enfants & famille", emoji: "🎠" },

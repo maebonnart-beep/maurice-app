@@ -1006,7 +1006,8 @@
     ],
     "hours": "Tous les jours 8h-22h",
     "priceRange": "bon-marche",
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Restaurant & café face au Canonnier Beachcomber, dans le cadre de La Pointe Luxury Apartments, cuisine du chef Franco Salon mettant en valeur les produits locaux. Noté 4,8/5, avis élogieux sur le service et les plats ; happy hour de 18h à 20h."
   },
   {
     "id": "mayniko-restaurant-lounge",
@@ -1243,9 +1244,10 @@
     "themes": [
       "cafes-terrasses"
     ],
-    "hours": "Mar-Dim 8h-15h, Ven-Sam 18h30-22h",
+    "hours": "Mar-Dim 8h30-15h (petit-déj/déjeuner), Ven-Sam 18h30-22h (dîner)",
     "priceRange": "prix-moyen",
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Adresse moderne du Grand Baie Business Park, notée 4,4/5. Avis élogieux sur le club sandwich, le burger et les poke bowls, ainsi que sur l'attention du service en brunch comme en dîner."
   },
   {
     "id": "riri-foods-mauritius",
@@ -1295,9 +1297,10 @@
     "themes": [
       "cafes-terrasses"
     ],
-    "hours": "Lun-Jeu 7h-16h, Ven-Sam 7h-21h30",
+    "hours": "Mar-Dim 7h-21h30, fermé lundi",
     "priceRange": "prix-moyen",
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Restaurant en bord de lagon, noté 4,6/5 (parmi les mieux notés de Grand Baie). Cuisine mêlant saveurs locales et internationales, produits de la mer frais, belle terrasse vue lagon ; avis unanimement positifs sur le service et le rapport qualité-prix."
   },
   {
     "id": "bullies-social",
@@ -1745,8 +1748,9 @@
       "cafes-terrasses",
       "kids-friendly"
     ],
-    "hours": "Tous les jours 10h-18h",
-    "zone": "nord"
+    "hours": "11h-18h",
+    "zone": "nord",
+    "description": "Glacier artisanal du LUX* Grand Baie : glaces, sorbets et options vegan préparés en petites quantités devant les clients, bar à toppings et ateliers glace pour enfants."
   },
   {
     "id": "la-varangue-veranda-grand-baie",
@@ -5850,7 +5854,9 @@
       "cafes-terrasses",
       "boulangeries"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "hours": "Lun-Sam 8h30-17h, fermé dim",
+    "description": "Petit-déjeuner/brunch et salon de thé au cadre chaleureux façon oasis tropicale à Pointe aux Canonniers. Avis très positifs sur les pâtisseries françaises et macarons, les sandwichs, et un service attentionné ; plats du jour faits maison avec des produits frais."
   },
   {
     "id": "kalatua-garden-restaurant",
@@ -15246,7 +15252,7 @@
     ],
     "zone": "nord",
     "hours": "Lun-Jeu 7h45-17h30, Ven-Sam 7h45-19h30, Dim 8h-13h",
-    "description": "Crêperie très populaire de Grand Baie (4,8/5, 300+ avis) réputée pour ses crêpes généreuses et savoureuses, ses gaufres, ses smoothies maison et son accueil chaleureux ; propose aussi des options sans gluten."
+    "description": "Crêperie artisanale prisée à l'angle du Grand Bazaar, notée 5/5 par ses visiteurs. Crêpes et gaufres maison avec options sans gluten et vegan ; avis unanimes sur la gentillesse du personnel et la personnalisation des commandes."
   },
   {
     "id": "brandon-l-artisant-patissier",
@@ -18103,7 +18109,9 @@
     "themes": [
       "cafes-terrasses"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "hours": "Tous les jours 8h30-16h30",
+    "description": "Café niché près du Super U de Tamarin, spécialisé dans le petit-déjeuner et le déjeuner : avocado toast, pancakes, omelettes, quinoa protein balls, jus frais et cafés."
   },
   {
     "id": "michael-s-coffee-house-mch",
@@ -18118,7 +18126,8 @@
     "themes": [
       "cafes-terrasses"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Coffee house de Flic en Flac fonctionnant en grab & go / livraison (commande via mchmru.com ou téléphone). Noté 5/5, considéré comme le meilleur café du coin."
   },
   {
     "id": "le-palm-tree-garden-restaurant",
@@ -18133,7 +18142,8 @@
     "themes": [
       "cafes-terrasses"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Restaurant familial au cadre tropical à Flic en Flac, tenu par Ruben (qui possède aussi une adresse à Chamarel). Cuisine mauricienne servie en intérieur comme en extérieur ; avis partagés, certains visiteurs regrettant un entretien inégal des lieux."
   },
   {
     "id": "o8-the-wellness-cafe",
@@ -18148,7 +18158,8 @@
     "themes": [
       "cafes-terrasses"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Wellness café ouvert en 2024 par Sabrina Patten : petits-déjeuners, déjeuners et dîners sains aux influences variées, massages ayurvédiques, et événements (projections, art-thérapie, soirées karaoké). Très bien noté (5/5), avis élogieux sur la fraîcheur des plats et l'ambiance calme."
   },
   {
     "id": "tidez",
@@ -18163,7 +18174,9 @@
     "themes": [
       "cafes-terrasses"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "hours": "Tous les jours 7h30-18h, fermé jeudi",
+    "description": "Petit café authentique face à la plage de Flic en Flac, réputé pour ses petits-déjeuners (French/English breakfast, omelettes) et son café Illy. Avis très positifs sur le service rapide, les prix raisonnables et l'ambiance décontractée ; souvent complet le matin."
   },
   {
     "id": "mcdonald-s",
@@ -18178,7 +18191,8 @@
     "themes": [
       "cafes-terrasses"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Enseigne internationale bien connue, située au Cascavelle Shopping Mall."
   },
   {
     "id": "king-snack-seafood-corner",
@@ -21554,7 +21568,8 @@
     "themes": [
       "cafes-terrasses"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Chambre d'hôtes de La Gaulette avec terrasse vue mer, piscine et jacuzzi sur le toit, à proximité du Morne Brabant et de l'Île aux Bénitiers. Avis élogieux sur la propreté et l'accueil de l'hôte Mathieu ; pas de restaurant sur place mais plusieurs adresses à proximité."
   },
   {
     "id": "la-prairie-snack",
@@ -27015,7 +27030,8 @@
     "themes": [
       "cafes-terrasses"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Café niché entre l'église de Cap Malheureux et la plage d'Anse La Raie : cappuccinos, lattes, thés bio et douceurs maison (pancakes moelleux, pain perdu, cheesecake, fondant au chocolat). Avis élogieux sur l'accueil et le cadre."
   },
   {
     "id": "royce-street",
@@ -28120,7 +28136,8 @@
     ],
     "badge": "selection",
     "takeaway": true,
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Café en bord de mer sur la route de Mon Choisy à Cap Malheureux, réputé pour ses plats mauriciens et son bon café."
   },
   {
     "id": "restaurant-kanaco",
@@ -32803,7 +32820,9 @@
     "themes": [
       "cafes-terrasses"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "hours": "Mar-Jeu 14h-23h, Ven-Sam 12h-23h, fermé dim-lun",
+    "description": "Bistrot et cave à vin de Tamarin : tapas et menu du marché sur ardoise, large sélection de vins du monde. Avis très élogieux — cuisine fusion parmi les meilleures de l'île, service professionnel, cadre charmant ; Certificat d'Excellence TripAdvisor."
   },
   {
     "id": "artisan-coffee-cascavelle-shopping-village",
@@ -32818,7 +32837,9 @@
     "themes": [
       "cafes-terrasses"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "hours": "Lun-Ven 8h-20h",
+    "description": "Coffee shop du Cascavelle Shopping Village au décor vintage : café barista, jus pressés à froid, muffins, cookies, macarons et croissants. Avis partagés, entre coups de cœur pour l'iced coffee et remarques sur un service inégal."
   },
   {
     "id": "cafe-lux-cascavelle",
@@ -32833,7 +32854,9 @@
     "themes": [
       "cafes-terrasses"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "hours": "Lun-Ven 11h-19h, Sam-Dim 11h-14h30",
+    "description": "Coffee shop de l'enseigne Café LUX* au Cascavelle Mall : blend maison torréfié à LUX* Belle Mare, pâtisseries et petite restauration, wifi gratuit et personnel formé à l'art du café."
   },
   {
     "id": "phat-fish",
@@ -33847,7 +33870,8 @@
     "themes": [
       "cafes-terrasses"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Restaurant de Trou d'Eau Douce à la cuisine créole, cajun et asiatique."
   },
   {
     "id": "island-cove-mauritius",
@@ -35823,5 +35847,187 @@
     ],
     "description": "Réparation de lave-vaisselle à domicile. Contact : Akash.",
     "address": "Maurice"
+  },
+  {
+    "id": "chelseas-cup-n-cake-curepipe",
+    "name": "Chelsea's Cup N' Cake",
+    "category": "food",
+    "address": "Arcade Currimjee, Royal Road, Curepipe",
+    "phone": "+230 5500 2101",
+    "lat": -20.3187787,
+    "lng": 57.5239258,
+    "themes": [
+      "cafes-terrasses"
+    ],
+    "zone": "centre",
+    "description": "Salon de thé cosy connu pour ses cupcakes, cheesecakes, red velvet, muffins et donuts faits maison, accompagnés de thés Twinings ou milkshakes. Décor chaleureux très apprécié, mais quelques avis récents signalent un service parfois lent aux heures de pointe."
+  },
+  {
+    "id": "cafe-de-la-presse-port-louis",
+    "name": "Cafe De La Presse",
+    "category": "food",
+    "address": "5 Rue La Chaussée, Port Louis",
+    "phone": "+230 212 8590",
+    "lat": -20.1637106,
+    "lng": 57.5005815,
+    "themes": [
+      "cafes-terrasses"
+    ],
+    "zone": "centre",
+    "hours": "Lun-Ven 10h-16h30, fermé sam-dim",
+    "priceRange": "prix-moyen",
+    "description": "Adresse prisée des locaux et habitués du centre-ville, au décor industriel apaisant à l'étage. Les avis saluent une ambiance relaxante et un personnel accueillant ; carte variée (salades de crevettes, sandwichs, burgers, desserts)."
+  },
+  {
+    "id": "mugg-and-bean-bo-valon-mahebourg",
+    "name": "Mugg & Bean",
+    "category": "food",
+    "address": "Bo'Valon Mall, Mahébourg",
+    "lat": -20.4235011,
+    "lng": 57.6984158,
+    "themes": [
+      "cafes-terrasses"
+    ],
+    "zone": "sud",
+    "description": "Chaîne sud-africaine installée au Bo'Valon Mall, réputée pour ses giant muffins (chocolat, myrtille), ses cafés et sa carte réconfortante (steaks, pâtes, gâteaux maison). Avis partagés, certains visiteurs signalant des repas inégaux."
+  },
+  {
+    "id": "vida-e-cafe-bo-valon-mahebourg",
+    "name": "Vida E Café",
+    "category": "food",
+    "address": "Bo'Valon Mall, Mahébourg",
+    "phone": "+230 5256 1456",
+    "lat": -20.4233109,
+    "lng": 57.6984668,
+    "themes": [
+      "cafes-terrasses"
+    ],
+    "zone": "sud",
+    "hours": "Tous les jours et jours fériés 8h-21h30",
+    "description": "Coffee shop sud-africain au sein du Bo'Valon Mall, halte appréciée pour son bon café et ses en-cas. Avis élogieux sur l'efficacité et la gentillesse du personnel, ainsi que sur la qualité des cappuccinos et des gâteaux."
+  },
+  {
+    "id": "the-lemon-tree-cafe-mapou",
+    "name": "The Lemon Tree Café",
+    "category": "food",
+    "address": "Circle Square Forbach, Mapou",
+    "phone": "+230 266 8685",
+    "lat": -20.0547225,
+    "lng": 57.6132525,
+    "themes": [
+      "cafes-terrasses"
+    ],
+    "zone": "nord",
+    "hours": "Lun-Jeu et Sam 8h-17h, Ven 8h-23h, Dim 8h-14h",
+    "description": "Café au joli cadre de jardin, à l'inspiration portugaise : petits-déjeuners réputés, pasteis de nata et cupcakes qui feraient partie des meilleurs de l'île. Ambiance conviviale, aussi utilisé pour des fêtes privées."
+  },
+  {
+    "id": "cafe-la-fournaise-riche-terre",
+    "name": "Café La Fournaise",
+    "category": "food",
+    "address": "Route Royale, Zone Industrielle, Riche Terre",
+    "lat": -20.1275714,
+    "lng": 57.5166846,
+    "themes": [
+      "cafes-terrasses"
+    ],
+    "zone": "nord",
+    "hours": "Lun-Ven 8h-17h",
+    "description": "Torréfacteur mauricien historique (depuis 1990), premier torréfacteur de cafés de spécialité de l'île, avec des grains sélectionnés au Brésil, en Colombie, au Mexique, au Guatemala, au Costa Rica et en Éthiopie. Les avis saluent la passion des baristas et un café frais et savoureux ; vente de capsules et de café moulu sur place."
+  },
+  {
+    "id": "cafe-lux-caudan",
+    "name": "Café LUX* Caudan",
+    "category": "food",
+    "address": "Caudan Waterfront, Port Louis",
+    "phone": "+230 5922 2380",
+    "website": "http://www.cafelux.mu/",
+    "lat": -20.1608,
+    "lng": 57.4985,
+    "themes": [
+      "cafes-terrasses"
+    ],
+    "zone": "centre",
+    "description": "5e coffee shop de l'enseigne Café LUX*, au design façon Brooklyn, avec vue sur le port. Large choix de cafés et thés, pâtisseries fraîches, sandwichs, salades et soupes (bar à salades à composer). Avis positifs sur le bon café et le service rapide et attentionné."
+  },
+  {
+    "id": "editions-le-printemps-curepipe",
+    "name": "Éditions Le Printemps - Curepipe",
+    "category": "activites",
+    "address": "Angle Brown Sequard & Royal Road, Curepipe",
+    "phone": "+230 674 0052",
+    "website": "https://elpmauritius.com/",
+    "lat": -20.3153,
+    "lng": 57.5222,
+    "themes": [
+      "shopping",
+      "livres"
+    ],
+    "zone": "centre",
+    "description": "Librairie mauricienne fondée en 1989 (groupe libraire, distributeur et éditeur), large choix de littérature, papeterie et cadeaux, avec possibilité de commander des livres depuis l'étranger."
+  },
+  {
+    "id": "editions-le-printemps-vacoas",
+    "name": "Éditions Le Printemps - Vacoas (siège)",
+    "category": "activites",
+    "address": "Club Road, Vacoas",
+    "phone": "+230 696 1017",
+    "website": "https://elpmauritius.com/",
+    "lat": -20.2994,
+    "lng": 57.5006,
+    "themes": [
+      "shopping",
+      "livres"
+    ],
+    "zone": "centre",
+    "description": "Siège d'Éditions Le Printemps, groupe libraire mauricien fondé en 1989. Avis élogieux sur le grand choix de livres, l'emplacement pratique avec parking et le personnel serviable ; possibilité de commander des livres depuis l'étranger à des frais de port raisonnables."
+  },
+  {
+    "id": "librairie-le-cygne-rose-hill",
+    "name": "Librairie Le Cygne",
+    "category": "activites",
+    "address": "F2 Magic Lantern Complex, Rose Hill",
+    "phone": "+230 464 2444",
+    "lat": -20.244828,
+    "lng": 57.4691744,
+    "themes": [
+      "shopping",
+      "livres"
+    ],
+    "zone": "centre",
+    "description": "Librairie familiale de Rose Hill fondée en 1981 : romans, pièces de théâtre, livres jeunesse, manuels scolaires et ouvrages de référence en français, anglais et créole, ainsi que papeterie et jouets."
+  },
+  {
+    "id": "bookcourt-la-croisette-grand-baie",
+    "name": "Bookcourt - La Croisette",
+    "category": "activites",
+    "address": "La Croisette Mall, Grand Baie",
+    "phone": "+230 269 6062",
+    "website": "https://bookcourt.mu/",
+    "lat": -20.0219739,
+    "lng": 57.5787883,
+    "themes": [
+      "shopping",
+      "livres"
+    ],
+    "zone": "nord",
+    "hours": "Lun-Jeu 9h30-19h30, Ven-Sam 9h30-20h30, Dim 9h30-15h",
+    "description": "Principal importateur de livres français et anglais à Maurice : best-sellers internationaux, guides de voyage, littérature locale, ainsi que papeterie et grandes marques (Lamy, Moleskine, Leuchtturm, Uniball)."
+  },
+  {
+    "id": "librairie-des-mascareignes-rose-hill",
+    "name": "Librairie des Mascareignes",
+    "category": "activites",
+    "address": "5 S Soopramanien St, Rose Hill",
+    "phone": "+230 464 2748",
+    "lat": -20.244828,
+    "lng": 57.4691744,
+    "themes": [
+      "shopping",
+      "livres"
+    ],
+    "zone": "centre",
+    "hours": "Lun-Mer et Sam 9h15-17h30, Jeu 9h15-13h, Ven 9h15-12h30 & 14h-17h30, Dim 10h-12h15",
+    "description": "Librairie historique de Rose Hill, présente depuis les années 1970, référence pour les manuels scolaires du primaire et du secondaire. 100% d'avis positifs sur les 7 avis recueillis."
   }
 ]
