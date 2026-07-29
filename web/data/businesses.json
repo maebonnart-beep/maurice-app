@@ -35725,5 +35725,21 @@
     "badge": "coup-de-coeur",
     "zone": "centre",
     "description": "Sculpteur sur bois installé au Caudan Waterfront, connu pour ses œuvres façonnées à partir de bois flotté. Atelier découverte possible pour les enfants."
+  },
+  {
+    "id": "maison-coloniale-de-ferney",
+    "name": "Maison coloniale de Ferney",
+    "category": "activites",
+    "address": "B28, Vieux Grand Port, Mahébourg",
+    "website": "https://ferney.mu/",
+    "googleMapsUrl": "https://www.google.com/maps/place/La+Vall%C3%A9e+de+Ferney/@-20.3625775,57.7064693,17z",
+    "lat": -20.3625775,
+    "lng": 57.7064693,
+    "themes": [
+      "culture-patrimoine"
+    ],
+    "badge": "coup-de-coeur",
+    "zone": "sud",
+    "description": "Maison coloniale en bois centenaire entièrement restaurée en 2022, aujourd'hui transformée en pavillon d'accueil de la Vallée de Ferney. Point de départ des sentiers de randonnée de la réserve, où passé colonial et nature se mêlent le temps d'une visite."
   }
 ]
