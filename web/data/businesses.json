@@ -35741,5 +35741,19 @@
     "badge": "coup-de-coeur",
     "zone": "sud",
     "description": "Maison coloniale en bois centenaire entièrement restaurée en 2022, aujourd'hui transformée en pavillon d'accueil de la Vallée de Ferney. Point de départ des sentiers de randonnée de la réserve, où passé colonial et nature se mêlent le temps d'une visite."
+  },
+  {
+    "id": "dino-boat-trip",
+    "name": "Dino Boat Trip",
+    "category": "activites",
+    "address": "Beau Vallon, Mahébourg",
+    "lat": -20.4081,
+    "lng": 57.7,
+    "themes": [
+      "excursions"
+    ],
+    "badge": "coup-de-coeur",
+    "zone": "sud",
+    "description": "Excursion en bateau à taille humaine dans le sud-est : baignade à la cascade de la Grande Rivière Sud-Est (accessible uniquement par bateau), snorkeling, observation de dauphins et repas créole convivial. Les avis saluent un accueil chaleureux, un capitaine attentif et une sortie loin de la foule."
   }
 ]
