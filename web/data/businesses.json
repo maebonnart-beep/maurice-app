@@ -35494,5 +35494,189 @@
     "badge": "coup-de-coeur",
     "zone": "nord",
     "description": "Restaurant du Club House du Labourdonnais Sports Club : cuisine snacking et européenne servie dans une ambiance bar-restaurant conviviale, avec un cadre magnifique donnant sur les terrains de sport (tennis, padel, football). Très bonne restauration, idéal après le sport ou pour un moment détente entre amis."
+  },
+  {
+    "id": "orchestra-bagatelle-mall",
+    "name": "Orchestra - Bagatelle Mall",
+    "category": "activites",
+    "address": "Shop N°50, Bagatelle Mall of Mauritius, Moka",
+    "phone": "+230 468 8341",
+    "website": "http://fr.shop-orchestra.com/",
+    "lat": -20.2245779,
+    "lng": 57.4969998,
+    "hours": "Lun-Jeu 09:30-20:30, Ven-Sam 09:30-22:00, Dim/Férié 09:30-17:00",
+    "themes": [
+      "shopping",
+      "mode-enfants"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "orchestra-tribeca-mall",
+    "name": "Orchestra - Tribeca Mall",
+    "category": "activites",
+    "address": "Tribeca Mall, 1er étage, Trianon",
+    "phone": "+230 290 8538",
+    "website": "http://fr.shop-orchestra.com/",
+    "lat": -20.2446376,
+    "lng": 57.4980787,
+    "hours": "Lun-Jeu 09:30-21:00, Ven-Sam 09:30-22:00, Dim/Férié 09:30-17:00",
+    "themes": [
+      "shopping",
+      "mode-enfants"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "kiabi-bagatelle-mall",
+    "name": "Kiabi - Bagatelle Mall",
+    "category": "activites",
+    "address": "Bagatelle Mall of Mauritius, Moka",
+    "phone": "+230 471 2141",
+    "website": "https://kiabi.mu/",
+    "lat": -20.2245779,
+    "lng": 57.4969998,
+    "hours": "Lun-Jeu 09:30-20:30, Ven-Sam 09:30-22:00, Dim/Férié 09:30-17:00",
+    "themes": [
+      "shopping",
+      "mode-enfants"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "okaidi-obaibi-bagatelle-mall",
+    "name": "Okaïdi - Obaïbi - Bagatelle Mall",
+    "category": "activites",
+    "address": "Bagatelle Mall of Mauritius, Moka",
+    "website": "https://www.okaidi.mu/",
+    "lat": -20.2245779,
+    "lng": 57.4969998,
+    "hours": "Lun-Jeu 09:30-20:30, Ven-Sam 09:30-22:00, Dim/Férié 09:30-17:00",
+    "themes": [
+      "shopping",
+      "mode-enfants"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "gap-bagatelle-mall",
+    "name": "Gap - Bagatelle Mall",
+    "category": "activites",
+    "address": "Bagatelle Mall of Mauritius, Moka",
+    "phone": "+230 5500 9916",
+    "lat": -20.2245779,
+    "lng": 57.4969998,
+    "hours": "Lun-Jeu 09:30-20:30, Ven-Sam 09:30-22:00, Dim/Férié 09:30-17:00",
+    "themes": [
+      "shopping",
+      "mode-enfants"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "next-bagatelle-mall",
+    "name": "Next - Bagatelle Mall",
+    "category": "activites",
+    "address": "Shop 211-212, Bagatelle Mall of Mauritius, Moka",
+    "phone": "+230 414 0124",
+    "lat": -20.2245779,
+    "lng": 57.4969998,
+    "hours": "Lun-Jeu 09:30-20:30, Ven-Sam 09:30-22:00, Dim/Férié 09:30-17:00",
+    "themes": [
+      "shopping",
+      "mode-enfants"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "gemo-la-croisette",
+    "name": "Gémo - La Croisette",
+    "category": "activites",
+    "address": "Centre Commercial La Croisette, Chemin Vingt Pieds, Grand Baie",
+    "phone": "+230 268 6851",
+    "website": "https://www.gemo.mu/",
+    "lat": -20.0219739,
+    "lng": 57.5787883,
+    "hours": "Lun-Jeu 09:30-19:30, Ven-Sam 09:30-20:30, Dim 09:30-16:00",
+    "themes": [
+      "shopping",
+      "mode-enfants"
+    ],
+    "zone": "nord"
+  },
+  {
+    "id": "lcw-tribeca-mall",
+    "name": "LCW (LC Waikiki) - Tribeca Mall",
+    "category": "activites",
+    "address": "Tribeca Mall, Trianon",
+    "lat": -20.2446376,
+    "lng": 57.4980787,
+    "themes": [
+      "shopping",
+      "mode-enfants"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "happinest-tribeca-mall",
+    "name": "Happinest - Tribeca Mall",
+    "category": "activites",
+    "address": "Tribeca Mall, Trianon",
+    "phone": "+230 5782 4013",
+    "website": "https://happinest.mu/",
+    "lat": -20.2446376,
+    "lng": 57.4980787,
+    "themes": [
+      "shopping",
+      "mode-enfants"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "baobab-pasadena-flic-en-flac",
+    "name": "Baobab Company - Pasadena",
+    "category": "activites",
+    "address": "Pasadena Shopping Mall, Coastal Road, Flic en Flac",
+    "phone": "+230 453 1016",
+    "website": "https://www.baobabcompany.com/en",
+    "lat": -20.2790562,
+    "lng": 57.3682813,
+    "themes": [
+      "shopping",
+      "mode-enfants"
+    ],
+    "zone": "ouest"
+  },
+  {
+    "id": "oh-baby-city-trianon",
+    "name": "Oh Baby - City Trianon",
+    "category": "activites",
+    "address": "La City Trianon, St Jean Road, Quatre Bornes",
+    "phone": "+230 628 1519",
+    "website": "https://www.ohbaby.mu/",
+    "lat": -20.2637,
+    "lng": 57.4794,
+    "hours": "Lun-Jeu 10h-20h, Ven-Sam 10h-21h, Dim 10h-15h",
+    "themes": [
+      "shopping",
+      "mode-enfants"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "island-kidz-quatre-bornes",
+    "name": "Island Kidz",
+    "category": "activites",
+    "address": "43 Route Saint Jean, Quatre Bornes",
+    "phone": "+230 5815 5340",
+    "website": "https://islandkidz.eshops.mu/",
+    "lat": -20.2676,
+    "lng": 57.4776,
+    "hours": "Lun-Sam 09h-17h30, Dim 09h-14h",
+    "themes": [
+      "shopping",
+      "mode-enfants"
+    ],
+    "zone": "centre"
   }
 ]
