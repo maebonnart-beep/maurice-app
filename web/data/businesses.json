@@ -511,7 +511,9 @@
     "themes": [
       "spa-instituts"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Spa avec deux adresses (Haute Rive et Grand Baie Sottise Road), large carte de soins à prix clairement affichés. Massages : Relaxing, Indian Deep, Abhyanga, Thai Oil, Candle, Hot Stone, réflexologie, massage grossesse et massage enfant. Soins du visage (express, anti-âge, peaux grasses/sensibles), épilation, manucure-pédicure et gommages/enveloppements corps. Tarifs de Rs 800 (massage dos ou tête, 30 min) à Rs 2 300 (massage pierres chaudes, 90 min) ; soins visage de Rs 1 000 à Rs 2 000.",
+    "priceRange": "prix-moyen"
   },
   {
     "id": "xtense-spa",
@@ -527,7 +529,9 @@
     "themes": [
       "spa-instituts"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Spa très bien noté (4,8/5, 200 avis) organisé autour d'une piscine avec 7 cabines, hammam signature, sauna et bain de vapeur. Soins phares : massages Ultimate Relaxation et Deep Renewal, pratiques ayurvédiques, Detox Bliss, soins du visage Crystal Clarity et Innofacial, soins du corps (minceur, anti-cellulite, raffermissant). Ambiance intimiste, personnel décrit comme très attentionné.",
+    "priceRange": "se-faire-plaisir"
   },
   {
     "id": "johaness-spa-grand-baie",
@@ -540,16 +544,17 @@
     "lat": -20.0195674,
     "lng": 57.5847664,
     "hours": "Lun-Jeu 9h30-20h, Ven 9h30-20h30, Dim 9h30-17h",
-    "priceRange": "bon-marche",
+    "priceRange": "prix-moyen",
     "themes": [
       "spa-instituts"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Spa avec plusieurs adresses à Maurice (dont Grand Baie La Croisette), pionnier du fish spa sur l'île. Soins : massages (dont l'Abyanga ayurvédique, salué comme apaisant), soins du visage et du corps, hammam, jacuzzi, épilation, manucure-pédicure. Tarifs à partir de Rs 375 pour le fish spa (15 min) et Rs 600 pour un massage ; quelques avis récents notent une hausse des prix."
   },
   {
     "id": "spa-ceylon-mauritius",
     "name": "Spa Ceylon Mauritius",
-    "category": "soins-bien-etre",
+    "category": "activites",
     "address": "La Croisette Mall, Grand Baie",
     "phone": "+230 5507 0746",
     "website": "http://www.spaceylon.mu/",
@@ -558,9 +563,11 @@
     "lng": 57.5787599,
     "hours": "Tous les jours 9h30-22h",
     "themes": [
-      "spa-instituts"
+      "shopping"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Boutique de la marque srilankaise Spa Ceylon Luxury Ayurveda, à La Croisette Mall. Vente de produits ayurvédiques : huiles de massage et de soin, baumes, gommages et exfoliants corps, laits et lotions pour le corps, brumes et huiles essentielles, savons et soins des pieds. Vente de produits uniquement, pas de soins/massages sur place.",
+    "priceRange": "se-faire-plaisir"
   },
   {
     "id": "ocea-wellness",
@@ -575,7 +582,8 @@
     "themes": [
       "spa-instituts"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Institut de massage et bien-être tenu par Geneviève, spa manager pendant 20 ans dans des hôtels de luxe et formatrice de thérapeutes spa. Soin signature « Ocea Mind Face » associant baumes, huiles essentielles, ventouses et pierres chaudes/froides. Avis élogieux sur la qualité du massage, à des tarifs jugés nettement plus accessibles qu'en spa d'hôtel (grille tarifaire précise non trouvée en ligne)."
   },
   {
     "id": "shantigiri-ayurveda-spa",
@@ -591,7 +599,8 @@
     "themes": [
       "spa-instituts"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Spa ayurvédique tenu par Satheesh et son épouse Ouma, très largement plébiscité comme l'un des meilleurs massages de l'île, à prix accessibles. Soins : massage indien traditionnel, shirodhara (filet d'huile tiède sur le front), massage profond, formule à 4 mains (à réserver à l'avance, 2 thérapeutes nécessaires). Rs 1 200/h pour un massage indien, Rs 1 500/h pour un massage classique — mêmes tarifs pour résidents et touristes."
   },
   {
     "id": "sultana-moroccan-hammam-spa",
@@ -607,22 +616,9 @@
     "themes": [
       "spa-instituts"
     ],
-    "zone": "nord"
-  },
-  {
-    "id": "vallee-de-beaute-spa",
-    "name": "Vallée de Beauté Spa",
-    "category": "soins-bien-etre",
-    "address": "La Salette Road, Grand Baie",
-    "phone": "+230 5916 2335",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=8633443128245196073",
-    "lat": -20.013086,
-    "lng": 57.5848692,
-    "themes": [
-      "spa-instituts"
-    ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Premier hammam marocain de l'île, avec créneaux dédiés femmes (lun-ven 9h-17h, sam 10h-17h) et hommes (lun-sam 17h-20h). Plus de 230 prestations : rituels hammam-gommage-massage (Rituel Casablanca 1h45 à Rs 3 000 ; Rituel Marrakech avec shampoing-brushing 1h45 à Rs 2 600), massages, épilation laser, soins du visage, onglerie, threading, sugaring, épilation à la cire, cils/sourcils, coiffure homme. Pédicure deluxe à partir de Rs 1 000.",
+    "priceRange": "prix-moyen"
   },
   {
     "id": "mont-choisy-le-golf",
@@ -2727,7 +2723,8 @@
     "themes": [
       "spa-instituts"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Institut de beauté très bien noté sur Fresha (4,9/5, plusieurs centaines d'avis). Soins : soins de la peau, massages, manucure/pédicure (dont vernis bio). Accueil chaleureux souvent cité par les client·e·s (notamment Mevina et Ouma). Réservation et grille tarifaire disponibles sur Fresha ; pas de fourchette de prix précise trouvée en dehors de la plateforme."
   },
   {
     "id": "the-beauty-loft",
@@ -2743,37 +2740,8 @@
     "themes": [
       "spa-instituts"
     ],
-    "zone": "nord"
-  },
-  {
-    "id": "chez-ema-institut-de-beaute",
-    "name": "Chez Ema - Institut de Beauté",
-    "category": "soins-bien-etre",
-    "address": "017, Business Park,Coastal Road Boulevard MU, de, Grand Baie 30515",
-    "phone": "+230 5921 4908",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=15018210809989663515",
-    "lat": -20.0164706,
-    "lng": 57.5697512,
-    "themes": [
-      "spa-instituts"
-    ],
-    "zone": "nord"
-  },
-  {
-    "id": "dame-nature",
-    "name": "Dame Nature",
-    "category": "soins-bien-etre",
-    "address": "XHRM+9QW, Grand Baie",
-    "phone": "",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=12088917450482192749",
-    "lat": -20.008955,
-    "lng": 57.584042,
-    "themes": [
-      "spa-instituts"
-    ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Espace beauté de Grand Baie, à deux pas de La Croisette, spécialisé dans les soins esthétiques technologiques : cryolipolyse (réduction des amas graisseux par le froid), épilation laser diode, lifting brésilien des fessiers par ventouses, ainsi que pose d'ongles bio et coiffure. Grille tarifaire non publiée en ligne."
   },
   {
     "id": "amari-radiance",
@@ -2788,7 +2756,8 @@
     "themes": [
       "spa-instituts"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Clinique de soins esthétiques avancés spécialisée dans l'anti-âge, l'hyperpigmentation, l'acné, les cicatrices et vergetures. Propose analyse faciale et scan corporel, épilation au laser, et une ligne de produits cosmeceutical DermaFix pour prolonger les soins à la maison. Fonctionne aussi par abonnement mensuel (remises sur soins et produits pour les membres). Grille tarifaire non publiée en ligne — sur devis."
   },
   {
     "id": "coco-beaute-by-cf",
@@ -2803,7 +2772,8 @@
     "themes": [
       "spa-instituts"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Institut spécialisé ongles, extensions de cils et sourcils à Pointe aux Canonniers (Coco Chill). Manucure et pédicure classiques à nail art, pose de vernis semi-permanent, lash lift et rehaussement de sourcils. Grille tarifaire disponible sur réservation Fresha."
   },
   {
     "id": "sleek-beauty",
@@ -2833,7 +2803,8 @@
     "themes": [
       "spa-instituts"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Conciergerie beauté et style à domicile plutôt qu'institut fixe : maquillage professionnel, tri de dressing et analyse des couleurs, conseil en style personnel, relooking complet pour un événement, vente de maquillage haut de gamme. Prestations sur rendez-vous, tarifs non publiés en ligne."
   },
   {
     "id": "joye-hair-salon",
@@ -2847,21 +2818,6 @@
     "lng": 57.5833704,
     "themes": [
       "coiffeurs"
-    ],
-    "zone": "nord"
-  },
-  {
-    "id": "asteria-beauty-atelier-spa",
-    "name": "Asteria Beauty Atelier& spa",
-    "category": "soins-bien-etre",
-    "address": "Swami Dayanand Road, Grand Baie",
-    "phone": "+230 5906 2681",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=2037569466130455362",
-    "lat": -20.0114567,
-    "lng": 57.5853549,
-    "themes": [
-      "spa-instituts"
     ],
     "zone": "nord"
   },
@@ -2893,21 +2849,6 @@
     "lng": 57.58559,
     "themes": [
       "coiffeurs"
-    ],
-    "zone": "nord"
-  },
-  {
-    "id": "tcr-beauty-house",
-    "name": "TCR Beauty House",
-    "category": "soins-bien-etre",
-    "address": "Rte de la Salette, Grand Baie",
-    "phone": "+230 5859 0714",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=15008125395553475023",
-    "lat": -20.0136929,
-    "lng": 57.586881,
-    "themes": [
-      "spa-instituts"
     ],
     "zone": "nord"
   },
@@ -2955,7 +2896,8 @@
     "themes": [
       "spa-instituts"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Studio d'onglerie et cils tenu par une esthéticienne/prothésiste ongulaire certifiée (formée à Glasgow). 100% de recommandation sur 23 avis. Soins : manucure-pédicure, nail art, extensions de cils, microblading des sourcils, et détatouage laser Q-Switched. Prix non publiés en ligne (contact direct)."
   },
   {
     "id": "prim-rose",
@@ -3002,57 +2944,13 @@
     "themes": [
       "spa-instituts"
     ],
-    "zone": "nord"
-  },
-  {
-    "id": "cozy-nails-beauty",
-    "name": "Cozy Nails & Beauty",
-    "category": "soins-bien-etre",
-    "address": "MU, Racket road, Grand Baie 30502",
-    "phone": "+230 5935 6220",
-    "website": "https://www.instagram.com/cozynailsandbeauty?igsh=c3pxeWJ0aXVmNWN2&utm_source=qr",
-    "googleMapsUrl": "https://maps.google.com/?cid=5709209387208904564",
-    "lat": -20.0126387,
-    "lng": 57.5859878,
-    "themes": [
-      "spa-instituts"
-    ],
-    "zone": "nord"
-  },
-  {
-    "id": "sonali-nails",
-    "name": "Sonali Nails",
-    "category": "soins-bien-etre",
-    "address": "Royal Road, Grand Baie",
-    "phone": "+230 5799 5581",
-    "website": "https://www.facebook.com/share/17pbRZU62D/",
-    "googleMapsUrl": "https://maps.google.com/?cid=10663385511960999753",
-    "lat": -20.0229495,
-    "lng": 57.5860363,
-    "themes": [
-      "spa-instituts"
-    ],
-    "zone": "nord"
-  },
-  {
-    "id": "azure-sunstone-nails-by-nat-gd",
-    "name": "Azure Sunstone Nails By NAT GD",
-    "category": "soins-bien-etre",
-    "address": "XHMJ+9GH, Grand Baie",
-    "phone": "",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=16795216764200947931",
-    "lat": -20.0165728,
-    "lng": 57.581356,
-    "themes": [
-      "spa-instituts"
-    ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Institut d'onglerie et esthétique : manucure-pédicure classique et gel, extensions d'ongles, soins du visage (produits Matis et LCP), épilation au sugaring, mise en beauté sourcils et cils, pose de vernis gel. Grille tarifaire disponible sur demande (page prix dédiée sur le site, non détaillée)."
   },
   {
     "id": "rose-beauty",
     "name": "Rose Beauty",
-    "category": "soins-bien-etre",
+    "category": "utiles",
     "address": "Super U, Grand Baie",
     "phone": "+230 269 0289",
     "website": "",
@@ -3060,9 +2958,10 @@
     "lat": -20.0128377,
     "lng": 57.5870119,
     "themes": [
-      "spa-instituts"
+      "pharmacies"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Pharmacie (Rose Beauty & Health Pharmacy) installée dans le bâtiment Super U de Grand Baie, avec un large choix de produits de santé et de beauté en libre accès."
   },
   {
     "id": "darwin-hair-lounge",
@@ -13507,22 +13406,9 @@
     "themes": [
       "spa-instituts"
     ],
-    "zone": "nord"
-  },
-  {
-    "id": "massage-detox-grand-bay-bazaar",
-    "name": "Massage & Detox Grand Bay Bazaar",
-    "category": "soins-bien-etre",
-    "address": "MU, Chemin Bazaar, Grand Baie 30502",
-    "phone": "+230 5504 5863",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=486638430920303368&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0100113,
-    "lng": 57.5865142,
-    "themes": [
-      "spa-instituts"
-    ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Spa niché dans une résidence de standing en retrait de Grand Baie (Clos du Littoral), tenu par un naturopathe français proposant aussi des conseils nutritionnels. Le massage signature utilise l'huile de foraha (arbre mascarin réputé pour les peaux exposées au soleil). Soins : massages, soins du visage (produits Eshel aux minéraux de la Mer Morte), gommages, enveloppements, épilation, sauna, hammam. Massage 60 min à partir de Rs 2 200, soin du visage à partir de Rs 2 060, gommage à partir de Rs 1 400. Avis très positifs sur le professionnalisme et le cadre.",
+    "priceRange": "se-faire-plaisir"
   },
   {
     "id": "cosmetic-island-grand-baie",
@@ -13537,7 +13423,8 @@
     "themes": [
       "spa-instituts"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Institut bien noté (4,8/5, 92 avis) sur Chemin Vingt Pieds. Soins : épilation IPL, épilation au fil des sourcils, pédicure classique, épilation à la cire, massages, soins de la peau. Ambiance sereine, personnel décrit comme très accueillant. Réservation via Fresha."
   },
   {
     "id": "nu-zil-spa",
@@ -13552,7 +13439,8 @@
     "themes": [
       "spa-instituts"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Spa avec 6 cabines de soin, hammam et piscine, à Pereybère. Soins inspirés des traditions chinoise et balinaise : massages (y compris en couple, en famille ou en groupe), manucure, pédicure, soin du visage, gommage corps. Formule possible avec déjeuner. Avis élogieux (\"meilleur spa de Grand Baie\"), tarifs jugés très raisonnables par rapport aux autres spas. Ouvert lundi et vendredi 8h30-17h (fermé le week-end selon les derniers avis)."
   },
   {
     "id": "institut-art-et-beaute-grand-baie-maurice",
@@ -13567,22 +13455,8 @@
     "themes": [
       "spa-instituts"
     ],
-    "zone": "nord"
-  },
-  {
-    "id": "vogue-spa-by-nc",
-    "name": "VOGUE SPA BY NC",
-    "category": "soins-bien-etre",
-    "address": "MU, School Lane, Grand Baie 30510",
-    "phone": "+230 5707 7730",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=10136265100304576473&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0151922,
-    "lng": 57.5841705,
-    "themes": [
-      "spa-instituts"
-    ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Institut de beauté avec deux adresses (Grand Baie et Pereybère), proposant spa, coiffure et soins thérapeutiques. Peu d'avis en ligne disponibles à ce jour ; détail des soins et tarifs à confirmer sur place."
   },
   {
     "id": "silhouette-spa-wellness",
@@ -13597,7 +13471,8 @@
     "themes": [
       "spa-instituts"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Spa de Sottise Road misant sur l'équilibre bien-être dans des cabines calmes et parfumées. Soins : massages, soins du visage, nail art, épilation à la cire, manucure-pédicure, sauna, hammam. 88% de recommandation sur les avis Facebook."
   },
   {
     "id": "le-square-beaute",
@@ -13612,37 +13487,9 @@
     "themes": [
       "spa-instituts"
     ],
-    "zone": "nord"
-  },
-  {
-    "id": "kobido-massage-mauritius",
-    "name": "Kobido massage Mauritius",
-    "category": "soins-bien-etre",
-    "address": "MU, Royal road, Grand Baie 30518",
-    "phone": "+230 5836 9965",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=1427433636345118350&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0114587,
-    "lng": 57.56488,
-    "themes": [
-      "spa-instituts"
-    ],
-    "zone": "nord"
-  },
-  {
-    "id": "plenitude",
-    "name": "Plenitude",
-    "category": "soins-bien-etre",
-    "address": "58 Sottise Rd, Grand Baie",
-    "phone": "",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=14769755621750633912&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0188426,
-    "lng": 57.5796843,
-    "themes": [
-      "spa-instituts"
-    ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Institut de beauté et salon de coiffure avec 2 adresses (Grand Baie et Floréal), utilisant des marques françaises (Leonor Greyl pour les cheveux, Académie Scientifique de Beauté pour visage/corps) et sud-africaines (EVO, Bio Sculpture) ainsi qu'OPI pour les ongles. Soins : coiffure, massages, épilation, soins du visage et du corps. Shampoing-coupe-brushing autour de Rs 1 500, shampoing-coupe femme dès Rs 1 000. Avis très positifs sur le rapport qualité-prix et l'accueil.",
+    "priceRange": "prix-moyen"
   },
   {
     "id": "my-space",
@@ -13657,52 +13504,8 @@
     "themes": [
       "spa-instituts"
     ],
-    "zone": "nord"
-  },
-  {
-    "id": "the-beauty-oasis",
-    "name": "The Beauty Oasis",
-    "category": "soins-bien-etre",
-    "address": "MU, Domaine Victoria, Grand Baie 42213",
-    "phone": "+230 5535 1314",
-    "website": "http://www.beautyoasis.mu/",
-    "googleMapsUrl": "https://maps.google.com/?cid=15668442549585651105&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0262933,
-    "lng": 57.5936689,
-    "themes": [
-      "spa-instituts"
-    ],
-    "zone": "nord"
-  },
-  {
-    "id": "sankara-spa-cratfs",
-    "name": "SANKARA SPA & cratfs",
-    "category": "soins-bien-etre",
-    "address": "MU, Royal Road, Grand Baie 30546",
-    "phone": "+230 5809 6178",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=14193605857545096385&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -19.9953934,
-    "lng": 57.590222,
-    "themes": [
-      "spa-instituts"
-    ],
-    "zone": "nord"
-  },
-  {
-    "id": "nuad-boran-thai-n-indian-ayurveda-spa",
-    "name": "Nuad Boran thai n indian Ayurveda spa",
-    "category": "soins-bien-etre",
-    "address": "Chem. Vingt Pieds, Grand Baie",
-    "phone": "+230 5829 0253",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=12917703927249876766&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0134821,
-    "lng": 57.5911397,
-    "themes": [
-      "spa-instituts"
-    ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Institut au 1er étage du centre commercial Coeur de Ville (Super U), Grand Baie. Soins : soins du visage Thalgo, pose et extension d'ongles (marque Indigo Nail Lab), extensions et teinture de cils, épilation à la cire (Roial), soins adaptés aux ados/enfants. Avis partagés : plusieurs client·e·s fidèles saluent les soins du visage, d'autres avis pointent un accueil inégal."
   },
   {
     "id": "mackies-beauty-cafe",
@@ -13717,7 +13520,8 @@
     "themes": [
       "spa-instituts"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Salon esthétique et centre de distribution/formation Essel, proposant soins spa et soins du visage. Présence active sur les réseaux sociaux (TikTok, Instagram) mais peu d'avis client détaillés en ligne à ce jour."
   },
   {
     "id": "sultana-moroccan-hammam-beauty-salon",
@@ -13732,7 +13536,9 @@
     "themes": [
       "spa-instituts"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Premier hammam marocain de l'île, avec créneaux dédiés femmes (lun-ven 9h-17h, sam 10h-17h) et hommes (lun-sam 17h-20h). Plus de 230 prestations : rituels hammam-gommage-massage (Rituel Casablanca 1h45 à Rs 3 000 ; Rituel Marrakech avec shampoing-brushing 1h45 à Rs 2 600), massages, épilation laser, soins du visage, onglerie, threading, sugaring, épilation à la cire, cils/sourcils, coiffure homme. Pédicure deluxe à partir de Rs 1 000.",
+    "priceRange": "prix-moyen"
   },
   {
     "id": "lize-wellness-massage-home-service",
@@ -13762,7 +13568,9 @@
     "themes": [
       "spa-instituts"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Studio de massage à l'ambiance calme et soignée (eau de coco fraîche offerte). Masseuses professionnelles proposant massage balinais, massage profond des tissus (deep tissue) et drainage lymphatique. Avis élogieux sur le professionnalisme et la propreté. Massage 60 min à partir d'environ Rs 1 975 (référence tarifaire du quartier).",
+    "priceRange": "prix-moyen"
   },
   {
     "id": "spa-mirage-ltd",
@@ -27845,7 +27653,7 @@
   {
     "id": "bigorno-diving-centre-mauritius",
     "name": "Bigorno Diving Centre Mauritius",
-    "category": "soins-bien-etre",
+    "category": "activites",
     "address": "Costal Rd, Trou-aux-Biches",
     "phone": "+230 5802 4869",
     "website": "http://www.bigornodiving.com/",
@@ -27853,7 +27661,8 @@
     "lat": -20.0364322,
     "lng": 57.5453071,
     "themes": [
-      "spa-instituts"
+      "sports-nautiques",
+      "plongee-sous-marine"
     ],
     "zone": "nord"
   },
