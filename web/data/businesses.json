@@ -35509,7 +35509,8 @@
       "shopping",
       "mode-enfants"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Enseigne française spécialiste de la mode, de la puériculture et de la maternité, avec des collections pour enfants de la naissance à 14 ans et un espace décoration dédié aux chambres d'enfants."
   },
   {
     "id": "orchestra-tribeca-mall",
@@ -35525,7 +35526,8 @@
       "shopping",
       "mode-enfants"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Enseigne française spécialiste de la mode, de la puériculture et de la maternité, avec des collections pour enfants de la naissance à 14 ans et un espace décoration dédié aux chambres d'enfants."
   },
   {
     "id": "kiabi-bagatelle-mall",
@@ -35541,7 +35543,8 @@
       "shopping",
       "mode-enfants"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Enseigne française de mode à petits prix (1 000 m² à Bagatelle, première boutique Kiabi à Maurice), habillant toute la famille : femmes, hommes, enfants et bébés, avec un large choix de vêtements et chaussures pour enfants."
   },
   {
     "id": "okaidi-obaibi-bagatelle-mall",
@@ -35556,7 +35559,8 @@
       "shopping",
       "mode-enfants"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Enseigne française de vêtements pour enfants (Okaïdi) et bébés (Obaïbi), collections colorées pensées pour permettre à chaque enfant d'exprimer sa personnalité."
   },
   {
     "id": "gap-bagatelle-mall",
@@ -35571,7 +35575,8 @@
       "shopping",
       "mode-enfants"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Enseigne américaine de prêt-à-porter proposant une ligne enfants au style casual et accessible, aux côtés de ses collections femme et homme."
   },
   {
     "id": "next-bagatelle-mall",
@@ -35586,7 +35591,8 @@
       "shopping",
       "mode-enfants"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Enseigne britannique de mode (Next Plc, franchise officielle à Maurice), avec un large rayon vêtements et chaussures pour enfants aux côtés des collections adultes ; également présente à La Croisette, Grand Baie."
   },
   {
     "id": "gemo-la-croisette",
@@ -35602,7 +35608,8 @@
       "shopping",
       "mode-enfants"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Enseigne française de chaussures et vêtements à petits prix pour toute la famille, avec un rayon dédié aux enfants et un service de retouche (ourlets, ceintures)."
   },
   {
     "id": "lcw-tribeca-mall",
@@ -35615,7 +35622,8 @@
       "shopping",
       "mode-enfants"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Enseigne turque de mode (numéro un du secteur en Turquie), ouverte en 2023 sur 1 300 m² au Tribeca Mall, habillant toute la famille dont les enfants, avec des lignes lingerie et maternité."
   },
   {
     "id": "happinest-tribeca-mall",
@@ -35630,7 +35638,8 @@
       "shopping",
       "mode-enfants"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Petit corner dédié aux nouveau-nés au Tribeca Mall : doudous, mobiles, couvertures et autres essentiels pour bébé."
   },
   {
     "id": "baobab-pasadena-flic-en-flac",
@@ -35645,7 +35654,8 @@
       "shopping",
       "mode-enfants"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Factory shop de la marque mauricienne Baobab Company (fondée en 1995), vêtements en coton biologique certifié Ecocert au style casual et ethnique, pour hommes, femmes et enfants."
   },
   {
     "id": "oh-baby-city-trianon",
@@ -35661,7 +35671,8 @@
       "shopping",
       "mode-enfants"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Boutique spécialisée en vêtements et accessoires pour bébés à La City Trianon, avec plus de 25 ans d'expérience ; puériculture, poussettes, lits et jouets."
   },
   {
     "id": "island-kidz-quatre-bornes",
@@ -35677,7 +35688,8 @@
       "shopping",
       "mode-enfants"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Boutique de vêtements, chaussures et jouets pour bébés et enfants de 2 à 10 ans, avec des marques d'alimentation et de matériel de puériculture comme Tommee Tippee ; commande possible par WhatsApp avec livraison sous 48h."
   },
   {
     "id": "redline-home-centre-bagatelle-motor-city",
@@ -35693,7 +35705,8 @@
       "shopping",
       "equipement-maison"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Concept store multimarques d'électroménager (distributeur officiel Sharp, AEG, Electrolux, Elica, Indesit, Toshiba entre autres), au sein d'un espace maison réunissant aussi carrelage, cuisines équipées, alarmes et menuiserie aluminium."
   },
   {
     "id": "redline-grand-baie",
@@ -35708,7 +35721,8 @@
       "shopping",
       "equipement-maison"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Showroom Redline (distributeur officiel Sharp, AEG, Electrolux, Elica, Indesit, Toshiba entre autres) d'électroménager et de gros électroménager."
   },
   {
     "id": "conforama-bagatelle",
@@ -35724,7 +35738,8 @@
       "shopping",
       "equipement-maison"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Première enseigne Conforama à Maurice, sur 3 000 m² à Bagatelle Home & Leisure : meubles d'intérieur et d'extérieur, électroménager, literie et décoration, avec des espaces d'exposition mettant en scène salon, cuisine et chambre."
   },
   {
     "id": "courts-mammouth-port-louis",
@@ -35740,7 +35755,8 @@
       "shopping",
       "equipement-maison"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Numéro un de l'ameublement, de l'électroménager et de l'informatique à Maurice (fondé en 1985, 23 showrooms sur l'île), avec service de livraison et d'installation (climatiseurs, chauffe-eau au gaz)."
   },
   {
     "id": "homedeals-port-louis",
@@ -35755,7 +35771,8 @@
       "shopping",
       "equipement-maison"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Magasin d'électroménager et de multimédia ouvert en 2007, élargi aux téléphones, ordinateurs, équipements de sécurité, climatisation, meubles et vélos/motos électriques, avec facilités de crédit jusqu'à 36 mois et livraison gratuite sur l'île."
   },
   {
     "id": "j-kalachand-port-louis",
@@ -35771,7 +35788,8 @@
       "shopping",
       "equipement-maison"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Enseigne d'électroménager historique à Maurice (depuis 1956) : lave-linge, réfrigérateurs, micro-ondes, cuisinières et lave-vaisselle, avec plusieurs showrooms sur l'île et service après-vente."
   },
   {
     "id": "j-kalachand-grand-baie",
@@ -35786,7 +35804,8 @@
       "shopping",
       "equipement-maison"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Enseigne d'électroménager historique à Maurice (depuis 1956) : lave-linge, réfrigérateurs, micro-ondes, cuisinières et lave-vaisselle, avec service après-vente."
   },
   {
     "id": "galaxy-beau-bassin",
@@ -35802,7 +35821,8 @@
       "shopping",
       "equipement-maison"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Chaîne d'électronique grand public et d'électroménager lancée en 1991, comptant aujourd'hui 16 showrooms sur l'île."
   },
   {
     "id": "galaxy-grand-baie",
@@ -35818,7 +35838,8 @@
       "shopping",
       "equipement-maison"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Chaîne d'électronique grand public et d'électroménager lancée en 1991, comptant aujourd'hui 16 showrooms sur l'île."
   },
   {
     "id": "361-cascavelle",
@@ -35833,7 +35854,8 @@
       "shopping",
       "equipement-maison"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Enseigne d'électroménager et d'électronique grand public (plus de 20 showrooms sur l'île), distribuant notamment les marques Samsung, Huawei, TCL, WestPoint et Moulinex."
   },
   {
     "id": "361-tribeca-mall",
@@ -35848,7 +35870,8 @@
       "shopping",
       "equipement-maison"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Enseigne d'électroménager et d'électronique grand public (plus de 20 showrooms sur l'île), distribuant notamment les marques Samsung, Huawei, TCL, WestPoint et Moulinex."
   },
   {
     "id": "maison-and-co-bagatelle",
@@ -35863,7 +35886,8 @@
       "shopping",
       "equipement-maison"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Boutique de linge de maison au sein de Bagatelle Home & Leisure, l'espace du centre commercial dédié à l'habitat et à la décoration."
   },
   {
     "id": "cateco-ebene",
@@ -35878,7 +35902,8 @@
       "shopping",
       "equipement-maison"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Enseigne généraliste maison, cuisine, entretien, jardin, bricolage, auto-moto et bien-être ; produits contrôlés à la sélection et garantis 6 mois sur l'outillage électrique."
   },
   {
     "id": "miniso-cascavelle",
@@ -35893,7 +35918,8 @@
       "shopping",
       "equipement-maison"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Enseigne japonaise de lifestyle et petite déco à petits prix (fondée en 2013, plus de 4 200 magasins dans 80 pays)."
   },
   {
     "id": "homestop-bagatelle",
@@ -35938,7 +35964,8 @@
       "shopping",
       "equipement-maison"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Enseigne du groupe Albert dédiée à l'aménagement intérieur (ouverte à Bagatelle Home & Leisure en 2015, 600 m²) : cuisines sur mesure, mobilier prêt-à-monter, luminaires et objets déco, sourcés en Europe, Asie et Afrique du Sud, avec atelier de montage sur place."
   },
   {
     "id": "ligne-doran-bagatelle",
@@ -35968,7 +35995,8 @@
       "shopping",
       "equipement-maison"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Enseigne de mobilier d'intérieur et d'extérieur (depuis 2007), historiquement spécialisée en teck et aujourd'hui élargie aux canapés, salons, chambres, matelas et mobilier de jardin, importés d'Indonésie, de Turquie, de Chine et d'Europe, avec option de personnalisation."
   },
   {
     "id": "ikhaya-craft-flic-en-flac",
@@ -35983,7 +36011,8 @@
       "shopping",
       "equipement-maison"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Boutique de décoration artisanale en matériaux naturels sourcés à Bali : lampes et paniers en rotin, tapis en fibres végétales, miroirs, fauteuils et bancs en rotin tressé."
   },
   {
     "id": "cosy-and-comfy-home-decor-port-louis",
@@ -35997,7 +36026,8 @@
       "shopping",
       "equipement-maison"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Concept store de décoration d'inspiration bohème et balinaise : fauteuils vintage en rotin, tapis en jute et sisal naturels, paniers, cache-pots et créations en bois de palette."
   },
   {
     "id": "espace-maison-trianon",
@@ -36014,7 +36044,8 @@
       "shopping",
       "equipement-maison"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Enseigne du groupe UBP dédiée à l'habitat (fondée en 2002, six magasins sur l'île), plus de 35 000 références en décoration, sanitaire, quincaillerie, carrelage et jardinage, avec un service dédié aux architectes et décorateurs."
   },
   {
     "id": "maison-rouillard-pepiniere-endemika",
@@ -36030,7 +36061,8 @@
       "shopping",
       "equipement-maison"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Pépinière fondée en 1998 par le groupe Rouillard, spécialisée dans la flore endémique mauricienne (plus de 80 espèces indigènes cultivées) et proposant au total plus de 450 variétés de plantes exotiques, palmiers, gazon et poteries."
   },
   {
     "id": "pepiniere-exotica",
@@ -36047,7 +36079,8 @@
       "shopping",
       "equipement-maison"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Pépinière historique (depuis 1991) proposant plantes annuelles, grimpantes, indigènes, palmiers, cactées, succulentes et plus de 200 variétés d'hibiscus ; intervient aussi en décoration et entretien de plantes pour les entreprises."
   },
   {
     "id": "vaneron-garden-center",
@@ -36062,7 +36095,8 @@
       "shopping",
       "equipement-maison"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Pépinière familiale (fondée en 1997) réunissant plus de 5 000 variétés de plantes réparties dans une grande serre et six petites, avec accessoires de jardin, contenants et service de rempotage gratuit ; abrite le restaurant Hideaway."
   },
   {
     "id": "serredepalma",
@@ -36078,6 +36112,7 @@
       "shopping",
       "equipement-maison"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Jardinerie proposant un large choix de plantes, de terreaux et substrats de qualité et de poteries en divers matériaux et formats."
   }
 ]
