@@ -17176,22 +17176,9 @@
     "themes": [
       "spa-instituts"
     ],
-    "zone": "ouest"
-  },
-  {
-    "id": "soul-therapy-onglerie-esthetique-massage",
-    "name": "Soul Therapy (onglerie-Esthétique-massage)",
-    "category": "soins-bien-etre",
-    "address": "Coastal Rd, Flic en Flac",
-    "phone": "+230 5776 0003",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=7166043060281319838&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.2765603,
-    "lng": 57.3743005,
-    "themes": [
-      "spa-instituts"
-    ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Spa de l'hôtel Veranda Tamarin, inspiré des 7 chakras (chromothérapie, musique vibratoire, aromathérapie). Soins : massage mauricien, rituel signature Seven Colours (gommage coco + massage détox + mini soin du visage). Avis élogieux sur l'accueil et le personnel attentionné. Grille tarifaire non publiée en ligne.",
+    "priceRange": "se-faire-plaisir"
   },
   {
     "id": "ocean-spa-black-river",
@@ -17206,7 +17193,8 @@
     "themes": [
       "spa-instituts"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Spa à l'ambiance zen (déco bois flotté, sisal, thème océan) aux Terrasses de Martello, Rivière Noire, en partenariat avec la marque française Thalion. Soins esthétiques pour hommes et femmes, jardin zen, fish spa. Avis partagés : certain·e·s client·e·s saluent des thérapeutes comme Géraldine, d'autres jugent la qualité du massage inégale. Ouvert tous les jours 9h-19h, fermé le dimanche."
   },
   {
     "id": "nature-spa-massage-wellness-therapy",
@@ -17221,7 +17209,9 @@
     "themes": [
       "spa-instituts"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Institut de massage de Flic en Flac, salué pour un excellent rapport qualité-prix. Massages aromathérapie pratiqués par des masseurs formés, cabines calmes et confortables, tisane offerte après la séance. Avis très positifs sur l'accueil et le savoir-faire technique.",
+    "priceRange": "bon-marche"
   },
   {
     "id": "l-oiseau-du-paradis-wellness-center",
@@ -17236,7 +17226,8 @@
     "themes": [
       "spa-instituts"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Petit institut de massage de Flic en Flac, tenu par une gérante décrite comme accueillante et professionnelle. Massage complet du corps 60 min très bien noté et à prix attractif. Rendez-vous possibles au dernier moment. Quelques avis suggèrent une ambiance un peu plus soignée (bougies, choix d'huiles)."
   },
   {
     "id": "om-spa",
@@ -17251,22 +17242,9 @@
     "themes": [
       "spa-instituts"
     ],
-    "zone": "ouest"
-  },
-  {
-    "id": "manisa-ayurvedic-spa",
-    "name": "Manisa Ayurvedic Spa",
-    "category": "soins-bien-etre",
-    "address": "MU, P987+4W Mauritius Islands, Coastal Rd, Flic en Flac 90502",
-    "phone": "+230 453 8558",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=14063121551184969907&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.2848516,
-    "lng": 57.3648295,
-    "themes": [
-      "spa-instituts"
-    ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Petit spa du centre de Flic en Flac, à côté du restaurant Zub Express. Massages suédois, aromathérapie, ayurvédique, balinais, boue, minceur, bambou, réflexologie, reiki. Massage relaxant 1h à Rs 1 500, soin signature Om (1h30) à Rs 1 900. Tisane offerte en fin de soin. Avis très positifs : tarifs plus doux qu'en hôtel, accueil professionnel.",
+    "priceRange": "prix-moyen"
   },
   {
     "id": "heaven-earth-ayurvedic-wellness-spa",
@@ -17281,22 +17259,8 @@
     "themes": [
       "spa-instituts"
     ],
-    "zone": "ouest"
-  },
-  {
-    "id": "bloomy-foot-care-spa",
-    "name": "Bloomy foot care spa",
-    "category": "soins-bien-etre",
-    "address": "P989+QQW, Flic en Flac",
-    "phone": "+230 5981 6977",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=14155554893807303134&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.2830154,
-    "lng": 57.3694529,
-    "themes": [
-      "spa-instituts"
-    ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Spa classé #2 des spas de Flic en Flac, au Gold Beach Hotel (Wolmar). Massages et rituels ayurvédiques combinant techniques modernes et traditionnelles, produits vegan et cruelty-free. Avis très positifs (100% de recommandation dans plusieurs avis) sur le professionnalisme et des tarifs plus doux qu'en hôtel."
   },
   {
     "id": "athena-beauty-spa",
@@ -17311,37 +17275,8 @@
     "themes": [
       "spa-instituts"
     ],
-    "zone": "ouest"
-  },
-  {
-    "id": "pascale-nuyou-massage-spa",
-    "name": "Pascale (Nuyou) Massage Spa",
-    "category": "soins-bien-etre",
-    "address": "Résidence Saint Jacques, Coastal Rd, Flic en Flac",
-    "phone": "+230 5798 4480",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=4513741415502906876&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.2764744,
-    "lng": 57.3781362,
-    "themes": [
-      "spa-instituts"
-    ],
-    "zone": "ouest"
-  },
-  {
-    "id": "holysticare",
-    "name": "Holysticare",
-    "category": "soins-bien-etre",
-    "address": "MU, 2 Sun, palm residence, Flic en Flac 90502",
-    "phone": "+230 5844 0525",
-    "website": "https://www.holysticare.mu/",
-    "googleMapsUrl": "https://maps.google.com/?cid=16703567858083552248&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.2764131,
-    "lng": 57.3779579,
-    "themes": [
-      "spa-instituts"
-    ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Spa de Tamarin (proche La Balise Marina), équipe de 10 thérapeutes certifié·e·s avec plus de 10 ans d'expérience. Soins : massages, yoga, épilation laser, soins du visage (LED notamment). Peu d'avis en ligne pour l'instant mais témoignages positifs sur le site officiel concernant la propreté et le professionnalisme."
   },
   {
     "id": "wholistic-studio",
@@ -17356,7 +17291,8 @@
     "themes": [
       "spa-instituts"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Institut de massage de Flic en Flac très bien noté (5/5, 51 avis). Détail précis des soins non trouvé en ligne au-delà du massage thérapeutique ; à confirmer sur place."
   },
   {
     "id": "luminous-nail-beauty-spa-mauritius",
@@ -17371,7 +17307,8 @@
     "themes": [
       "spa-instituts"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Institut du centre commercial Cascavelle, premier spa à ongles de Maurice équipé d'une imprimante à ongles numérique (nail art en moins de 5 minutes). Soins : manucure, pédicure, réflexologie, soins du visage pour hommes et femmes. Forte présence Facebook (plus de 15 000 abonnés)."
   },
   {
     "id": "sofitel-spa",
@@ -17386,7 +17323,9 @@
     "themes": [
       "spa-instituts"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Spa 5 étoiles du Sofitel Mauritius L'Impérial (Wolmar), avec vue sur un jardin japonais. Soins L'Occitane, rituels mauriciens et massages d'inspiration asiatique, hammam, sauna, cabines duo, thés aromatiques. Note moyenne 4,1/5 (78 avis). Offres spéciales lune de miel avec réduction sur les soins.",
+    "priceRange": "se-faire-plaisir"
   },
   {
     "id": "inner-eye-wellness-traveling-massage-therapist",
@@ -17416,12 +17355,14 @@
     "themes": [
       "spa-instituts"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Spa principal du Pearle Beach Resort & Spa (Flic en Flac), primé aux World Luxury Spa Awards 2017. 3 cabines de soin dont une dédiée aux couples, hammam, sauna, accompagnement personnalisé par une équipe dédiée.",
+    "priceRange": "se-faire-plaisir"
   },
   {
     "id": "younique-energy-ltd",
     "name": "Younique Energy Ltd",
-    "category": "soins-bien-etre",
+    "category": "activites",
     "address": "Cascavelle Shopping Mall, Coastal Rd, Bambous",
     "phone": "+230 5421 7302",
     "website": "http://www.younique.cc/",
@@ -17429,39 +17370,10 @@
     "lat": -20.2794513,
     "lng": 57.4020699,
     "themes": [
-      "spa-instituts"
+      "shopping"
     ],
-    "zone": "ouest"
-  },
-  {
-    "id": "fit-and-fabulous-professionnal-esthetic-center-ltd",
-    "name": "Fit and Fabulous Professionnal Esthetic Center Ltd",
-    "category": "soins-bien-etre",
-    "address": "MU, The Barachois estate, A3, Tamarin 90901",
-    "phone": "+230 5500 9584",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=9507903360370141609&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.3272919,
-    "lng": 57.3858563,
-    "themes": [
-      "spa-instituts"
-    ],
-    "zone": "ouest"
-  },
-  {
-    "id": "siroo-coiffure-esthetique",
-    "name": "siroo coiffure & esthetique",
-    "category": "soins-bien-etre",
-    "address": "MU, wolmar, Royal road, Flic en Flac 90521",
-    "phone": "+230 5741 3402",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=1115899253740170653&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.293454,
-    "lng": 57.3638849,
-    "themes": [
-      "spa-instituts"
-    ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Point de vente de la marque de cosmétiques américaine Younique (maquillage : mascara, eyeliner, rouge à lèvres, ombres à paupières ; soins du visage : nettoyants, masques, crèmes hydratantes). Vente de produits uniquement, pas de soins/massages sur place."
   },
   {
     "id": "3h-ayurvedic-massage-centre",
@@ -17476,22 +17388,9 @@
     "themes": [
       "spa-instituts"
     ],
-    "zone": "ouest"
-  },
-  {
-    "id": "nail-it-by-sabi",
-    "name": "Nail it by Sabi",
-    "category": "soins-bien-etre",
-    "address": "Coastal Rd, Flic en Flac",
-    "phone": "+230 5838 9187",
-    "website": "https://www.facebook.com/share/18YB5QAyrA/",
-    "googleMapsUrl": "https://maps.google.com/?cid=771081068600431022&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.2848616,
-    "lng": 57.364937,
-    "themes": [
-      "spa-instituts"
-    ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Centre de massage ayurvédique très bien noté (4,4/5, plus de 21 000 avis). Avis élogieux sur la qualité du massage et le rapport qualité-prix. Souvent complet — réservation conseillée au moins 2 jours à l'avance. Ouvert lun-sam 9h30-18h, fermé dimanche.",
+    "priceRange": "bon-marche"
   },
   {
     "id": "myspace-tamarin",
@@ -17506,7 +17405,8 @@
     "themes": [
       "spa-instituts"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Institut du centre commercial Coeur de Ville Tamarin (au-dessus de Super U), ouvert depuis 2020. Soins complets de la tête aux pieds : massages, soins du visage et du corps, épilation, extensions de cils. Avis partagés : personnel salué comme accueillant et massages appréciés, mais quelques critiques sur la facturation."
   },
   {
     "id": "beautes-sensuelles-mauritius",
@@ -17521,7 +17421,8 @@
     "themes": [
       "spa-instituts"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Institut de Key West Plaza (La Mivoie Road, Rivière Noire), ambiance zen et cosy, parking gratuit. Soins dédiés aux femmes : extensions de cils, pose d'ongles gel et nail art, extensions de cheveux, maquillage permanent (sourcils, lèvres, eyeliner), soins du visage, épilation. Ouvert lun-sam 9h-17h."
   },
   {
     "id": "maison-sasha-tamarin",
@@ -17536,7 +17437,9 @@
     "themes": [
       "spa-instituts"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Antenne ouest du célèbre salon Maison Sasha (Curepipe), fondé par le coiffeur multi-primé Sasha. Spa avec vue mer sur 2 niveaux, plus de 10 employés : coiffure, coloration, soins capillaires, massages, gommages, coin barbier, terrasse bar. Avis très positifs sur le professionnalisme et le cadre. Massage 45 min dès Rs 1 155, soin du visage dès Rs 3 050. Ouvert 8h30-17h30 (20h le vendredi), fermé le dimanche.",
+    "priceRange": "se-faire-plaisir"
   },
   {
     "id": "deep-fascia-massage-therapy-mauritius",
@@ -17551,22 +17454,8 @@
     "themes": [
       "spa-instituts"
     ],
-    "zone": "ouest"
-  },
-  {
-    "id": "curlies",
-    "name": "Curlies",
-    "category": "soins-bien-etre",
-    "address": "Seaview Terrace, Lot 8 Avenue des cardinaux MU, Flic en Flac 90502",
-    "phone": "+230 5854 3235",
-    "website": "https://www.facebook.com/CurliesMauritius",
-    "googleMapsUrl": "https://maps.google.com/?cid=4976457456449175395&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.2764816,
-    "lng": 57.3721764,
-    "themes": [
-      "spa-instituts"
-    ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Cabinet de thérapie manuelle à Tamarin (Peak Performance Wellness), tenu par Victor Bhatoolaul, plus de 10 ans d'expérience en préparation physique et thérapie fasciale avancée. Massage profond du fascia ciblant les douleurs chroniques et leurs causes sous-jacentes. Note 5/5 sur Google, réservation sur agenda en ligne."
   },
   {
     "id": "purglam",
@@ -17581,22 +17470,8 @@
     "themes": [
       "spa-instituts"
     ],
-    "zone": "ouest"
-  },
-  {
-    "id": "blessings-holistics",
-    "name": "Blessings Holistics",
-    "category": "soins-bien-etre",
-    "address": "MU, Residence st Jacques, Avenue Filaos, Flic en Flac 90515",
-    "phone": "",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=2298743946442092893&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.2794121,
-    "lng": 57.37976,
-    "themes": [
-      "spa-instituts"
-    ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Institut de Tamarin (Av. des Jacarandas) réunissant prothésiste ongulaire, esthéticienne et technicienne cils. Soins : extensions et lifting de cils, pose d'ongles gel et semi-permanent, épilation (dont brésilienne intégrale). Avis positifs sur les extensions de cils et l'épilation."
   },
   {
     "id": "legend-hill-residences-spa-2",
@@ -17611,7 +17486,9 @@
     "themes": [
       "spa-instituts"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Spa du Legend Hill Residences (perché sur la colline de La Tourelle, Rivière Noire), en partenariat avec la marque Cinq Mondes. Équipements haut de gamme, ouvert à tous et pas seulement aux résidents de l'hôtel. Avis élogieux sur le cadre et la vue.",
+    "priceRange": "se-faire-plaisir"
   },
   {
     "id": "maradiva-villas-resort-spa",
@@ -17626,7 +17503,9 @@
     "themes": [
       "spa-instituts"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Spa primé du Maradiva Villas Resort & Spa (Wolmar), mêlant architecture occidentale et philosophie indienne. 6 cabines de soin (dont 2 dédiées à l'ayurvéda), hammam, sauna, bassin d'eau froide, jacuzzi, pavillon de yoga (8h-20h). Avis très positifs sur le personnel attentionné.",
+    "priceRange": "se-faire-plaisir"
   },
   {
     "id": "vanilla-village-2",
@@ -17642,22 +17521,8 @@
       "spa-instituts"
     ],
     "badge": "selection",
-    "zone": "ouest"
-  },
-  {
-    "id": "rakesh-hair-styling",
-    "name": "Rakesh Hair Styling",
-    "category": "soins-bien-etre",
-    "address": "Flic en Flac",
-    "phone": "+230 5798 7609",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=16070019012428332757&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.2800045,
-    "lng": 57.3685162,
-    "themes": [
-      "spa-instituts"
-    ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Spa intégré à la guesthouse Vanilla Village (Black River Bay, sous les acacias), aux côtés du restaurant et de boutiques. Avis très positifs sur l'ambiance et l'accueil général de l'établissement ; détail précis des soins spa non trouvé en ligne."
   },
   {
     "id": "pizzart",
@@ -23608,21 +23473,6 @@
     "zone": "centre"
   },
   {
-    "id": "grace-secrets-spa",
-    "name": "Grace Secrets Spa",
-    "category": "soins-bien-etre",
-    "address": "Av. des Carpes, Albion",
-    "phone": "+230 5259 7057",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=157365071121398539&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.2175754,
-    "lng": 57.4026782,
-    "themes": [
-      "spa-instituts"
-    ],
-    "zone": "ouest"
-  },
-  {
     "id": "excellence-salon",
     "name": "Excellence Salon",
     "category": "soins-bien-etre",
@@ -27350,21 +27200,6 @@
     ],
     "zone": "ouest",
     "description": "Ateliers de théâtre ludiques et créatifs pour enfants (dès 6 ans), ados et adultes à Tamarin, par groupes d'âge, avec spectacle de fin d'année au Théâtre du Caudan. Développe la confiance en soi, la concentration et la créativité."
-  },
-  {
-    "id": "l-atelier-de-malena",
-    "name": "L’Atelier de Malena",
-    "category": "soins-bien-etre",
-    "address": "MU, Ajmal Le Salon d’Albion (à l’étage, Albion Mall, Albion 91007",
-    "phone": "+230 5829 6029",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=9651933361762516302&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.2149897,
-    "lng": 57.4111048,
-    "themes": [
-      "spa-instituts"
-    ],
-    "zone": "ouest"
   },
   {
     "id": "shibani-foreign-exchange",
