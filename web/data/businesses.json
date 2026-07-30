@@ -2776,21 +2776,6 @@
     "description": "Institut spécialisé ongles, extensions de cils et sourcils à Pointe aux Canonniers (Coco Chill). Manucure et pédicure classiques à nail art, pose de vernis semi-permanent, lash lift et rehaussement de sourcils. Grille tarifaire disponible sur réservation Fresha."
   },
   {
-    "id": "sleek-beauty",
-    "name": "Sleek Beauty",
-    "category": "soins-bien-etre",
-    "address": "MU, Royal Road, Grand Baie 30525",
-    "phone": "+230 5948 1818",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=17077407852028323252",
-    "lat": -20.019257,
-    "lng": 57.5849084,
-    "themes": [
-      "spa-instituts"
-    ],
-    "zone": "nord"
-  },
-  {
     "id": "ishiana-salon-de-beaute",
     "name": "Ishiana Salon de Beauté",
     "category": "soins-bien-etre",
@@ -2880,7 +2865,8 @@
     "themes": [
       "spa-instituts"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Salon de coiffure et bar à ongles (KM Beauty / Koko Milan) à La Croisette Mall. Coupe, soins capillaires, brushing, manucure et pédicure sous le même toit. Ouvert lun-jeu 9h-19h30, ven-sam 9h-20h30."
   },
   {
     "id": "nail-and-lash-studio",
@@ -13573,66 +13559,6 @@
     "priceRange": "prix-moyen"
   },
   {
-    "id": "spa-mirage-ltd",
-    "name": "SPA MIRAGE LTD",
-    "category": "soins-bien-etre",
-    "address": "2 Morcellement Wiehe MU, Twenty-Foot Rd, Grand Baie 30550",
-    "phone": "+230 5797 7155 ext. 2631488",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=18109146005922993876&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0217656,
-    "lng": 57.5817491,
-    "themes": [
-      "spa-instituts"
-    ],
-    "zone": "nord"
-  },
-  {
-    "id": "divine-touch-wellness-spa",
-    "name": "Divine Touch Wellness & Spa",
-    "category": "soins-bien-etre",
-    "address": "XHPP+FVM, La Salette Rd, Grand Baie",
-    "phone": "+230 5788 5005",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=13585947933159334295&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0137909,
-    "lng": 57.5871728,
-    "themes": [
-      "spa-instituts"
-    ],
-    "zone": "nord"
-  },
-  {
-    "id": "ourania-spa",
-    "name": "Ourania Spa",
-    "category": "soins-bien-etre",
-    "address": "Grand Baie",
-    "phone": "+230 263 6497",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=1201979480948960210&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0081627,
-    "lng": 57.5593483,
-    "themes": [
-      "spa-instituts"
-    ],
-    "zone": "nord"
-  },
-  {
-    "id": "royal-beauty-spa",
-    "name": "Royal Beauty & Spa",
-    "category": "soins-bien-etre",
-    "address": "XHQM+RJR, Grand Baie",
-    "phone": "+230 5797 2643",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=18020348173917987485&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0103557,
-    "lng": 57.5841033,
-    "themes": [
-      "spa-instituts"
-    ],
-    "zone": "nord"
-  },
-  {
     "id": "harmony-spa",
     "name": "Harmony Spa",
     "category": "soins-bien-etre",
@@ -13645,82 +13571,8 @@
     "themes": [
       "spa-instituts"
     ],
-    "zone": "nord"
-  },
-  {
-    "id": "royal-therapy",
-    "name": "Royal Therapy",
-    "category": "soins-bien-etre",
-    "address": "Route Royale, Grand Baie",
-    "phone": "+230 5518 2819",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=14182810770629684091&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0048312,
-    "lng": 57.5814929,
-    "themes": [
-      "spa-instituts"
-    ],
-    "zone": "nord"
-  },
-  {
-    "id": "appearances-spa",
-    "name": "Appearances Spa",
-    "category": "soins-bien-etre",
-    "address": "Shop A Lifestyle, Sottise Rd, Grand Baie",
-    "phone": "+230 263 6244",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=8534214515016215561&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0260843,
-    "lng": 57.5929978,
-    "themes": [
-      "spa-instituts"
-    ],
-    "zone": "nord"
-  },
-  {
-    "id": "l-art-du-visage-by-sandra",
-    "name": "L'art du visage by Sandra",
-    "category": "soins-bien-etre",
-    "address": "Chem. Vingt Pieds, Grand Baie",
-    "phone": "+230 5847 3577",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=3779466812895748059&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0106191,
-    "lng": 57.5946838,
-    "themes": [
-      "spa-instituts"
-    ],
-    "zone": "nord"
-  },
-  {
-    "id": "beauty-care-spa-massage",
-    "name": "Beauty Care Spa Massage",
-    "category": "soins-bien-etre",
-    "address": "XHQM+FVW, Grand Baie Rd, Grand Baie",
-    "phone": "+230 5472 6013",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=14695611070794232826&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0112512,
-    "lng": 57.5847052,
-    "themes": [
-      "spa-instituts"
-    ],
-    "zone": "nord"
-  },
-  {
-    "id": "summer-spa",
-    "name": "Summer Spa",
-    "category": "soins-bien-etre",
-    "address": "Ground floor, Azur Beach Complex, Unnamed road, 2H4R+PW9 near the Hive restaurant, Costal road, Grand Baie",
-    "phone": "+230 5705 9967",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=3114439399211943146&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -19.993201,
-    "lng": 57.5923682,
-    "themes": [
-      "spa-instituts"
-    ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Spa de Coastal Road, Grand Baie, très bien noté (5/5 sur Google). Soins : massages (dont en couple), soins du visage, gommages corps, aromathérapie, mêlant techniques traditionnelles et pratiques de spa modernes. Avis élogieux sur les thérapeutes (Julie, Piona, Veena citées nommément) et un bon rapport qualité-prix. Parking gratuit. Ouvert tous les jours 9h30-17h30."
   },
   {
     "id": "angsana-spa-and-wellness-centre",
@@ -13735,7 +13587,9 @@
     "themes": [
       "spa-instituts"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Spa d'hôtel (Angsana Balaclava) niché dans les jardins de Turtle Bay. Parcours spa complet : soins utilisant des ingrédients locaux frais (gommage corps noix de coco-citron vert, gingembre-citronnelle, avoine-banane), yoga, salle de sport, sauna, hammam et bassin de vitalité. Avis élogieux sur le cadre et le professionnalisme du personnel. Grille tarifaire non publiée en ligne (accessible aux résidents et parfois aux extérieurs sur réservation).",
+    "priceRange": "se-faire-plaisir"
   },
   {
     "id": "ayurvedic-healing-spa",
@@ -13750,12 +13604,13 @@
     "themes": [
       "spa-instituts"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Institut ayurvédique situé au centre commercial Coeur de Ville (Super U), Grand Baie. Massages et soins traditionnels indiens. Détail des soins et tarifs à confirmer sur place (peu d'avis détaillés en ligne à ce jour)."
   },
   {
     "id": "obienaitre",
     "name": "OBIENAITRE",
-    "category": "soins-bien-etre",
+    "category": "coaching",
     "address": "30525 MU, Grand Baie 30525",
     "phone": "+230 5254 1300",
     "website": "https://www.obienaitre.com/formation-massage-fertilite",
@@ -13763,9 +13618,10 @@
     "lat": -20.0122449,
     "lng": 57.5868085,
     "themes": [
-      "spa-instituts"
+      "famille"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Formation et coaching bien-être autour de la périnatalité et de la fertilité (massage fertilité, Reiki, Lahochi), fondés par Adeline après son propre parcours d'infertilité. Formation de 6 mois en ligne + ateliers pratiques, ouverte aux massothérapeutes, naturopathes, sages-femmes et praticiens en reconversion. Avis très positifs des stagiaires sur la clarté et la structure du contenu. Ce n'est pas un institut de soins pour le grand public mais un organisme de formation professionnelle."
   },
   {
     "id": "body-lounge-ltee",
@@ -13780,7 +13636,8 @@
     "themes": [
       "spa-instituts"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Spa très bien noté à Cap Malheureux (4,3/5, plus de 12 900 avis). Ambiance calme et chaleureuse, personnel attentionné, massages salués pour leur qualité. Fermé quotidiennement 12h-13h (12h-12h30 le dimanche et jours fériés). Quelques avis signalent un écart entre les tarifs affichés en ligne et ceux donnés par téléphone — à vérifier au moment de la réservation."
   },
   {
     "id": "prana-skin-laser-clinic-grand-baie",
@@ -13795,22 +13652,8 @@
     "themes": [
       "spa-instituts"
     ],
-    "zone": "nord"
-  },
-  {
-    "id": "elegance-coiffure-et-beaute",
-    "name": "Elegance Coiffure et Beauté",
-    "category": "soins-bien-etre",
-    "address": "Route Royale, Grand Baie",
-    "phone": "+230 5477 3818",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=6474557953466484820&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0066288,
-    "lng": 57.5574058,
-    "themes": [
-      "spa-instituts"
-    ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Clinique de dermatologie esthétique (2 adresses : Grand Baie et Moka), spécialisée dans les soins technologiques : épilation laser définitive, peeling au laser carbone, remodelage corporel, cryolipolyse (fat freezing), peelings chimiques, microdermabrasion anti-acné, rajeunissement cutané par HIFU, hydrafacial. Avis partagés : soins du visage salués, quelques critiques sur le démarchage commercial. 10% de réduction pour les détenteurs de carte MCB."
   },
   {
     "id": "zaka",
@@ -23684,7 +23527,8 @@
     "themes": [
       "spa-instituts"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Spa & salon de Cottage (Rivière du Rempart), 96% de recommandation sur 19 avis. Détail précis des soins non trouvé en ligne au-delà de la mention spa/salon ; à confirmer sur place."
   },
   {
     "id": "belia-beauty-spa",
@@ -23699,7 +23543,8 @@
     "themes": [
       "spa-instituts"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Day spa de Calodyne axé sur les soins personnalisés : manucures, soins du visage, massages relaxants et épilation spécialisée."
   },
   {
     "id": "pure-natural-spa",
@@ -23714,7 +23559,8 @@
     "themes": [
       "spa-instituts"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Spa de Triolet (7ème Mille, Royal Road), aussi appelé « The Green Spa ». 100% de recommandation sur 9 avis. Positionnement bien-être/reconnexion à soi (« Relax, Renew and Revive »). Détail des soins non trouvé en ligne ; à confirmer sur place."
   },
   {
     "id": "massage-beauty",
@@ -26494,7 +26340,9 @@
     "themes": [
       "spa-instituts"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Salon classé #3 des spas & bien-être de Trou aux Biches, en face de la pharmacie centrale. Soins : coiffure (coupes, traitements capillaires), massages, épilation. Avis positifs sur la propreté, l'accueil (notamment Fazil) et des prix très raisonnables : coupe autour de Rs 200.",
+    "priceRange": "bon-marche"
   },
   {
     "id": "constance-spa",
@@ -26539,7 +26387,8 @@
     "themes": [
       "spa-instituts"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Premier spa de jour indépendant construit à Maurice (2 adresses : Fond du Sac et Ebène Junction). Soins : massages, gommages et enveloppements corps, hammam/bain turc, manucure-pédicure, vernis semi-permanent, soins du visage, épilation. Thérapeutes formés, cadre naturel apprécié des avis en ligne."
   },
   {
     "id": "vinesh-wellness-spa",
@@ -26557,21 +26406,6 @@
     "zone": "est"
   },
   {
-    "id": "ocean-heaven-pure-harmony-ltd-spa",
-    "name": "Ocean heaven pure harmony ltd spa",
-    "category": "soins-bien-etre",
-    "address": "Coastal road, Pointe aux Biches",
-    "phone": "+230 5814 6299",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=14129320709835818338&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0464548,
-    "lng": 57.5312539,
-    "themes": [
-      "spa-instituts"
-    ],
-    "zone": "nord"
-  },
-  {
     "id": "glamour-beauty-saloon",
     "name": "Glamour Beauty Saloon.",
     "category": "soins-bien-etre",
@@ -26584,7 +26418,9 @@
     "themes": [
       "spa-instituts"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Salon (Sonal's Glamour Beauty Saloon), classé #1 des spas & bien-être de Trou aux Biches. Soins : coiffure, coloration, ongles, maquillage, massages à prix abordables. Avis très positifs sur l'accueil chaleureux et la gérante Sonal, personnellement impliquée auprès des clients.",
+    "priceRange": "bon-marche"
   },
   {
     "id": "crystal-cove-beauty-salon",
@@ -26659,7 +26495,9 @@
     "themes": [
       "spa-instituts"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Spa d'hôtel multi-primé (Maritim Resort & Spa), installé sur 3 500 m² de jardins tropicaux. Large éventail de soins, de l'ayurvéda aux rituels traditionnels (massage à la citronnelle, massage ylang-ylang), hammam, jacuzzi, sauna, salle de vapeur, bassin de plongée. Avis très positifs sur l'ambiance et la qualité des massages ; tarifs jugés raisonnables pour un spa d'hôtel.",
+    "priceRange": "se-faire-plaisir"
   },
   {
     "id": "eurospa-beauty-care-center",
@@ -27679,7 +27517,8 @@
     "themes": [
       "spa-instituts"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Spa de l'hôtel Le Palmiste Resort & Spa, à 150 m de la plage de Trou aux Biches. Soins : massages, soins corporels et soins du visage, dont des soins mauriciens traditionnels, à profiter depuis les transats au bord de la piscine. Avis clients très positifs sur l'accueil et le personnel attentionné."
   },
   {
     "id": "boulangerie-vallee-d-or",
