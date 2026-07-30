@@ -35678,5 +35678,406 @@
       "mode-enfants"
     ],
     "zone": "centre"
+  },
+  {
+    "id": "redline-home-centre-bagatelle-motor-city",
+    "name": "Redline Home Centre - Bagatelle Motor City",
+    "category": "activites",
+    "address": "Bagatelle Motor City, Bagatelle, Moka",
+    "phone": "+230 5500 6068",
+    "website": "https://www.redline.mu/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Redline%20Home%20Centre%20Bagatelle%20Motor%20City%20Moka%20Mauritius",
+    "lat": -20.2274927,
+    "lng": 57.491472,
+    "themes": [
+      "shopping",
+      "equipement-maison"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "redline-grand-baie",
+    "name": "Redline - Grand Baie",
+    "category": "activites",
+    "address": "Kogi Kogi Building, Chemin Vingt Pieds, Grand Baie",
+    "website": "https://www.redline.mu/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Redline%20Grand%20Baie%20Chemin%20Vingt%20Pieds%20Mauritius",
+    "lat": -20.0178066,
+    "lng": 57.5866391,
+    "themes": [
+      "shopping",
+      "equipement-maison"
+    ],
+    "zone": "nord"
+  },
+  {
+    "id": "conforama-bagatelle",
+    "name": "Conforama - Bagatelle Home & Leisure",
+    "category": "activites",
+    "address": "Bagatelle Home & Leisure, Bagatelle Mall, Moka",
+    "website": "https://conforama.mu/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Conforama%20Bagatelle%20Home%20and%20Leisure%20Moka%20Mauritius",
+    "lat": -20.2261417,
+    "lng": 57.4990057,
+    "hours": "Lun-Jeu 09h30-20h30, Ven-Sam 09h30-22h00, Dim/Férié 09h30-15h00",
+    "themes": [
+      "shopping",
+      "equipement-maison"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "courts-mammouth-port-louis",
+    "name": "Courts Mammouth - Port Louis",
+    "category": "activites",
+    "address": "Menagerie Road, Brabant Street, Bell Village, Port Louis",
+    "phone": "+230 207 1100",
+    "website": "https://www.courtsmammouth.mu/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Courts%20Mammouth%20Bell%20Village%20Port%20Louis%20Mauritius",
+    "lat": -20.1669788,
+    "lng": 57.4879145,
+    "themes": [
+      "shopping",
+      "equipement-maison"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "homedeals-port-louis",
+    "name": "Homedeals - Port Louis",
+    "category": "activites",
+    "address": "21, Spar Brabant Street, Port Louis",
+    "website": "https://homedeals.mu/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Homedeals%20Spar%20Brabant%20Street%20Port%20Louis%20Mauritius",
+    "lat": -20.1669788,
+    "lng": 57.4879145,
+    "themes": [
+      "shopping",
+      "equipement-maison"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "j-kalachand-port-louis",
+    "name": "J. Kalachand - Port Louis",
+    "category": "activites",
+    "address": "20, Lord Kitchener Street, Port Louis",
+    "phone": "+230 206 0690",
+    "website": "https://jkalachand.com/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=J%20Kalachand%20Lord%20Kitchener%20Street%20Port%20Louis%20Mauritius",
+    "lat": -20.1636052,
+    "lng": 57.4992003,
+    "themes": [
+      "shopping",
+      "equipement-maison"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "j-kalachand-grand-baie",
+    "name": "J. Kalachand - Grand Baie",
+    "category": "activites",
+    "address": "Chemin Vingt Pieds, Grand Baie",
+    "website": "https://jkalachand.com/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=J%20Kalachand%20Chemin%20Vingt%20Pieds%20Grand%20Baie%20Mauritius",
+    "lat": -20.0178066,
+    "lng": 57.5866391,
+    "themes": [
+      "shopping",
+      "equipement-maison"
+    ],
+    "zone": "nord"
+  },
+  {
+    "id": "galaxy-beau-bassin",
+    "name": "Galaxy - Beau Bassin",
+    "category": "activites",
+    "address": "1A Serge Alfred Street, Beau Bassin",
+    "phone": "+230 207 1767",
+    "website": "https://www.galaxy.mu/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Galaxy%20Beau%20Bassin%20Serge%20Alfred%20Street%20Mauritius",
+    "lat": -20.2245312,
+    "lng": 57.4663997,
+    "themes": [
+      "shopping",
+      "equipement-maison"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "galaxy-grand-baie",
+    "name": "Galaxy - Grand Baie",
+    "category": "activites",
+    "address": "Richmond Hill Complex, Grand Baie",
+    "phone": "+230 207 1773",
+    "website": "https://www.galaxy.mu/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Galaxy%20Richmond%20Hill%20Complex%20Grand%20Baie%20Mauritius",
+    "lat": -20.0135806,
+    "lng": 57.5886332,
+    "themes": [
+      "shopping",
+      "equipement-maison"
+    ],
+    "zone": "nord"
+  },
+  {
+    "id": "361-cascavelle",
+    "name": "361 - Cascavelle Mall",
+    "category": "activites",
+    "address": "Cascavelle Mall, Coastal Rd, Bambous",
+    "website": "https://361.mu/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=361%20Cascavelle%20Mall%20Mauritius",
+    "lat": -20.2788296,
+    "lng": 57.402796,
+    "themes": [
+      "shopping",
+      "equipement-maison"
+    ],
+    "zone": "ouest"
+  },
+  {
+    "id": "361-tribeca-mall",
+    "name": "361 - Tribeca Mall",
+    "category": "activites",
+    "address": "Tribeca Mall, Trianon",
+    "website": "https://361.mu/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=361%20Tribeca%20Mall%20Trianon%20Mauritius",
+    "lat": -20.2446376,
+    "lng": 57.4980787,
+    "themes": [
+      "shopping",
+      "equipement-maison"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "maison-and-co-bagatelle",
+    "name": "Maison & Co (L'Épongerie et Charabia) - Bagatelle",
+    "category": "activites",
+    "address": "Bagatelle Home & Leisure, Bagatelle Mall, Moka",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Maison%20and%20Co%20Epongerie%20Bagatelle%20Home%20and%20Leisure%20Moka%20Mauritius",
+    "lat": -20.2261417,
+    "lng": 57.4990057,
+    "hours": "Lun-Jeu 09h30-20h30, Ven-Sam 09h30-22h00, Dim/Férié 09h30-15h00",
+    "themes": [
+      "shopping",
+      "equipement-maison"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "cateco-ebene",
+    "name": "Catéco - Ebène",
+    "category": "activites",
+    "address": "LOT 102, Bâtiment Ebène Link E43, Rue la Canelle, Ebène",
+    "website": "https://cateco.mu/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Cateco%20Maurice%20Ebene%20Link%20Rue%20la%20Canelle%20Mauritius",
+    "lat": -20.2427628,
+    "lng": 57.4833748,
+    "themes": [
+      "shopping",
+      "equipement-maison"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "miniso-cascavelle",
+    "name": "Miniso - Cascavelle Mall",
+    "category": "activites",
+    "address": "Cascavelle Shopping Mall, Cascavelle, Flic en Flac",
+    "website": "https://miniso.mu/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Miniso%20Cascavelle%20Shopping%20Mall%20Mauritius",
+    "lat": -20.2780268,
+    "lng": 57.4018217,
+    "themes": [
+      "shopping",
+      "equipement-maison"
+    ],
+    "zone": "ouest"
+  },
+  {
+    "id": "homestop-bagatelle",
+    "name": "Homestop - Bagatelle Home & Leisure",
+    "category": "activites",
+    "address": "Bagatelle Home & Leisure, Bagatelle Mall, Moka",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Homestop%20Bagatelle%20Home%20and%20Leisure%20Moka%20Mauritius",
+    "lat": -20.2261417,
+    "lng": 57.4990057,
+    "hours": "Lun-Jeu 09h30-20h30, Ven-Sam 09h30-22h00, Dim/Férié 09h30-15h00",
+    "themes": [
+      "shopping",
+      "equipement-maison"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "casa-bella-interiors-bagatelle",
+    "name": "Casa Bella Interiors - Bagatelle Home & Leisure",
+    "category": "activites",
+    "address": "Bagatelle Home & Leisure, Bagatelle Mall, Moka",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Casa%20Bella%20Interiors%20Bagatelle%20Home%20and%20Leisure%20Moka%20Mauritius",
+    "lat": -20.2261417,
+    "lng": 57.4990057,
+    "hours": "Lun-Jeu 09h30-20h30, Ven-Sam 09h30-22h00, Dim/Férié 09h30-15h00",
+    "themes": [
+      "shopping",
+      "equipement-maison"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "urban-home-bagatelle",
+    "name": "Urban Home (Albert Trading) - Bagatelle Home & Leisure",
+    "category": "activites",
+    "address": "Bagatelle Home & Leisure, Bagatelle Mall, Moka",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Urban%20Home%20Albert%20Trading%20Bagatelle%20Home%20and%20Leisure%20Moka%20Mauritius",
+    "lat": -20.2261417,
+    "lng": 57.4990057,
+    "hours": "Lun-Jeu 09h30-20h30, Ven-Sam 09h30-22h00, Dim/Férié 09h30-15h00",
+    "themes": [
+      "shopping",
+      "equipement-maison"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "ligne-doran-bagatelle",
+    "name": "Ligne Doran - Bagatelle Home & Leisure",
+    "category": "activites",
+    "address": "Bagatelle Home & Leisure, Bagatelle Mall, Moka",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Ligne%20Doran%20Bagatelle%20Home%20and%20Leisure%20Moka%20Mauritius",
+    "lat": -20.2261417,
+    "lng": 57.4990057,
+    "hours": "Lun-Jeu 09h30-20h30, Ven-Sam 09h30-22h00, Dim/Férié 09h30-15h00",
+    "themes": [
+      "shopping",
+      "equipement-maison"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "teak-world-bagatelle",
+    "name": "Teak World - Bagatelle Home & Leisure",
+    "category": "activites",
+    "address": "Bagatelle Home & Leisure, Bagatelle Mall, Moka",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Teak%20World%20Bagatelle%20Home%20and%20Leisure%20Moka%20Mauritius",
+    "lat": -20.2261417,
+    "lng": 57.4990057,
+    "hours": "Lun-Jeu 09h30-20h30, Ven-Sam 09h30-22h00, Dim/Férié 09h30-15h00",
+    "themes": [
+      "shopping",
+      "equipement-maison"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "ikhaya-craft-flic-en-flac",
+    "name": "Ikhaya Craft",
+    "category": "activites",
+    "address": "Avenue Carrière, Flic en Flac",
+    "phone": "+230 5250 6310",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Ikhaya%20Craft%20Avenue%20Carriere%20Flic%20en%20Flac%20Mauritius",
+    "lat": -20.2789702,
+    "lng": 57.36914,
+    "themes": [
+      "shopping",
+      "equipement-maison"
+    ],
+    "zone": "ouest"
+  },
+  {
+    "id": "cosy-and-comfy-home-decor-port-louis",
+    "name": "Cosy & Comfy Home Decor - Port Louis",
+    "category": "activites",
+    "address": "13, Rue Nicolay, Port Louis",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Cosy%20and%20Comfy%20Home%20Decor%20Nicolay%20Street%20Port%20Louis%20Mauritius",
+    "lat": -20.1624522,
+    "lng": 57.5028044,
+    "themes": [
+      "shopping",
+      "equipement-maison"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "espace-maison-trianon",
+    "name": "Espace Maison - Trianon",
+    "category": "activites",
+    "address": "Trianon Shopping Park (La City Trianon), St Jean Road, Quatre Bornes",
+    "phone": "+230 467 9990",
+    "website": "https://www.espacemaison.mu/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Espace%20Maison%20Trianon%20Shopping%20Park%20Quatre%20Bornes%20Mauritius",
+    "lat": -20.2637,
+    "lng": 57.4794,
+    "hours": "Lun-Ven 08h-20h, Sam 08h-19h, Dim 09h-15h",
+    "themes": [
+      "shopping",
+      "equipement-maison"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "maison-rouillard-pepiniere-endemika",
+    "name": "Maison Rouillard - Pépinière Endemika",
+    "category": "activites",
+    "address": "Route Royale A5, Petit Raffray",
+    "phone": "+230 282 1826",
+    "website": "https://www.endemika.mu/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Endemika%20Nursery%20Petit%20Raffray%20Mauritius",
+    "lat": -20.0194661,
+    "lng": 57.6261351,
+    "themes": [
+      "shopping",
+      "equipement-maison"
+    ],
+    "zone": "nord"
+  },
+  {
+    "id": "pepiniere-exotica",
+    "name": "Pépinière Exotica",
+    "category": "activites",
+    "address": "Chemin Saint François, Petit Raffray",
+    "phone": "+230 283 3626",
+    "website": "https://pepiniereexotica.com/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Pepiniere%20Exotica%20Chemin%20Saint%20Francois%20Petit%20Raffray%20Mauritius",
+    "lat": -20.0194661,
+    "lng": 57.6261351,
+    "hours": "Lun-Sam 08h00-17h00, Dim fermé",
+    "themes": [
+      "shopping",
+      "equipement-maison"
+    ],
+    "zone": "nord"
+  },
+  {
+    "id": "vaneron-garden-center",
+    "name": "Vaneron Garden Center",
+    "category": "activites",
+    "address": "Marbella Road, Trianon, Quatre Bornes",
+    "phone": "+230 466 7108",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Vaneron%20Garden%20Center%20Marbella%20Road%20Trianon%20Quatre%20Bornes%20Mauritius",
+    "lat": -20.2552974,
+    "lng": 57.4911386,
+    "themes": [
+      "shopping",
+      "equipement-maison"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "serredepalma",
+    "name": "Serredepalma",
+    "category": "activites",
+    "address": "Avenue Felico, Palma Road, Quatre Bornes",
+    "phone": "+230 5255 1259",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Serre%20de%20Palma%20Ave%20Felico%20Palma%20Road%20Quatre%20Bornes%20Mauritius",
+    "lat": -20.2880051,
+    "lng": 57.4452697,
+    "hours": "Lun-Sam 09h00-17h30, Dim 09h00-13h00",
+    "themes": [
+      "shopping",
+      "equipement-maison"
+    ],
+    "zone": "centre"
   }
 ]
