@@ -15252,7 +15252,9 @@
     ],
     "zone": "nord",
     "hours": "Lun-Jeu 7h45-17h30, Ven-Sam 7h45-19h30, Dim 8h-13h",
-    "description": "Crêperie artisanale prisée à l'angle du Grand Bazaar, notée 5/5 par ses visiteurs. Crêpes et gaufres maison avec options sans gluten et vegan ; avis unanimes sur la gentillesse du personnel et la personnalisation des commandes."
+    "badge": "coup-de-coeur",
+    "photoUrl": "/photos/maison-des-crepes.jpg",
+    "description": "Petite enseigne artisanale prisée à l'angle du Grand Bazaar, notée 5/5 par ses visiteurs. Crêpes et gaufres maison, sucrées et salées, avec options sans gluten et vegan, ainsi qu'un large choix de boissons maison (smoothies, infusions glacées, milkshakes). Le tout préparé avec grand soin ; avis unanimes sur la gentillesse du personnel, la personnalisation des commandes et un service aux petits soins."
   },
   {
     "id": "brandon-l-artisant-patissier",
