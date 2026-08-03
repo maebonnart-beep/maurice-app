@@ -27067,9 +27067,15 @@
     "lat": -20.0244504,
     "lng": 57.576298,
     "themes": [
-      "livraisons"
+      "restaurants",
+      "sushis",
+      "asiatique"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "hours": "Lun-Sam 11h-22h, Dim soir buffet à volonté",
+    "priceRange": "se-faire-plaisir",
+    "badge": "coup-de-coeur",
+    "description": "Sushi Cabaret dans une ambiance feutrée aux murs rouges et bois poli, bossa nova en fond sonore. Cuisine japonaise créative et généreuse (sushis, truffe, foie gras, tempuras), buffet à volonté le dimanche soir. Note de 4,6/5 sur 127 avis Google (4,8/5 sur Tripadvisor) — clients unanimes sur la fraîcheur des produits et l'ambiance, quelques bémols ponctuels sur le service en soirée très fréquentée."
   },
   {
     "id": "hangout-restaurant",
