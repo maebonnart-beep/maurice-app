@@ -8361,7 +8361,10 @@
     "themes": [
       "restaurants"
     ],
-    "zone": "sud"
+    "priceRange": "bon-marche",
+    "badge": "selection",
+    "zone": "sud",
+    "description": "Snack de bord de route à Saint Martin où la cuisine mauricienne est préparée avec soin et générosité : assiettes copieuses et colorées, accueil chaleureux, prix très doux."
   },
   {
     "id": "le-tropical",
