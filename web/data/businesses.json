@@ -36125,5 +36125,25 @@
     "zone": "nord",
     "description": "Bistrot caché au coeur de la pépinière Endemika, ouvert uniquement le midi. Cuisine maison et plats du jour au tableau, terrasse ombragée parmi les palmiers, accueil chaleureux. Note de 4,6/5 sur 118 avis Google — une adresse familiale très appréciée dans le Nord pour son authenticité et son ambiance décontractée.",
     "badge": "coup-de-coeur"
+  },
+  {
+    "id": "le-french-rooftop",
+    "name": "Le French Rooftop",
+    "category": "food",
+    "address": "5th Floor, Rushmore Complex, Sodnac Link Road, Quatre Bornes",
+    "phone": "+230 5457 5817",
+    "website": "https://lefrench.mu/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Le%20French%20Rooftop%20Quatre%20Bornes%20Mauritius",
+    "themes": [
+      "restaurants",
+      "europeenne",
+      "tables-exception"
+    ],
+    "hours": "Lun-Ven 11h-22h, Sam 16h-22h, fermé dim",
+    "priceRange": "se-faire-plaisir",
+    "zone": "centre",
+    "description": "Rooftop perché au 5e étage du Rushmore Complex, entre mer et montagnes. Gastronomie française revisitée avec une touche tropicale, produits de saison et terroir mauricien, dans un cadre chic pensé pour admirer le coucher de soleil. Ambiance chaleureuse et service attentionné, une adresse pour une soirée d'exception à Quatre Bornes.",
+    "lat": -20.25,
+    "lng": 57.4833
   }
 ]
