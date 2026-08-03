@@ -36105,5 +36105,25 @@
     ],
     "zone": "centre",
     "description": "Jardinerie proposant un large choix de plantes, de terreaux et substrats de qualité et de poteries en divers matériaux et formats."
+  },
+  {
+    "id": "la-mandrinette",
+    "name": "La Mandrinette",
+    "category": "food",
+    "address": "Endémika Mon Loisir Rouillard, Petit Raffray 30717",
+    "phone": "+230 282 7474",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=La%20Mandrinette%20Petit%20Raffray%20Mauritius",
+    "lat": -20.0194661,
+    "lng": 57.6261351,
+    "themes": [
+      "restaurants",
+      "mauricienne"
+    ],
+    "hours": "Lun-Sam 12h-14h30, fermé dim",
+    "priceRange": "prix-moyen",
+    "zone": "nord",
+    "description": "Bistrot caché au coeur de la pépinière Endemika, ouvert uniquement le midi. Cuisine maison et plats du jour au tableau, terrasse ombragée parmi les palmiers, accueil chaleureux. Note de 4,6/5 sur 118 avis Google — une adresse familiale très appréciée dans le Nord pour son authenticité et son ambiance décontractée.",
+    "badge": "coup-de-coeur"
   }
 ]
