@@ -8823,7 +8823,8 @@
       "restaurants"
     ],
     "badge": "selection",
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Petite adresse tenue par deux personnes accueillantes, sur rue Souffleur à Mahébourg. Cuisine simple, copieuse et très bon marché : panini au marlin fumé, poisson frit, riz frit, samoussas. Ambiance décontractée avec parfois un groupe local en live (reggae bar) — une adresse authentique où les touristes se font rares."
   },
   {
     "id": "legend-golf-course",
@@ -9905,7 +9906,8 @@
       "restaurants"
     ],
     "badge": "selection",
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Ancienne maison coloniale en bois du 19e siècle, toit de tôle, jardin arboré et cottages. Cuisine créole aux produits locaux : bouillon de crabe, currys, filet de cerf en saison, poisson du jour tout juste sorti du lagon. Cadre unique et plats généreux saluent par les avis, même si le service peut être lent aux heures de forte affluence."
   },
   {
     "id": "le-bistrot-d-edwige",
@@ -9921,7 +9923,8 @@
       "restaurants"
     ],
     "badge": "selection",
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Bistrot ouvert tous les jours de 10h à 23h à Mahébourg, servant des plats typiquement mauriciens préparés avec soin dans une ambiance conviviale. Bonne réputation locale (plus de 800 abonnés sur sa page Facebook)."
   },
   {
     "id": "taste-of-freedom",
@@ -9937,7 +9940,8 @@
       "restaurants"
     ],
     "badge": "selection",
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Food truck posé face à la baie de Mahébourg, quelques tables et tonneaux sous toile tendue, esprit rootsy et vue imprenable. Poissons ultra-frais et fruits de mer bien assaisonnés (poulpe et calamars grillés, poisson entier), soirée langouste le lundi. Service parfois lent car le chef cuisine pour toutes les tables, mais l'attente est unanimement jugée méritée. Cash only."
   },
   {
     "id": "la-vielle-rouge",
@@ -9952,7 +9956,8 @@
     "themes": [
       "restaurants"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Table de fruits de mer et cuisine fusion au coin des rues Hangard et des Mares à Mahébourg, classée #4 sur 33 restaurants de la ville. Accueil très chaleureux, plats copieux et savoureux : poisson épicé aux raisins et cacahuètes cuit en feuille de bananier, crevettes créoles, curry de poisson. Excellent rapport qualité-prix, transfert hôtel gratuit proposé."
   },
   {
     "id": "coin-casse-croute",
@@ -9968,7 +9973,8 @@
       "restaurants"
     ],
     "badge": "selection",
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Petite salle simple (une vingtaine de couverts) rue la Passe à Mahébourg, à l'accueil chaleureux et authentique. Spécialité de nouilles sauté aux fruits de mer, beignets croustillants en entrée, calamars croustillants — bon rapport qualité-prix et portions généreuses, service rapide."
   },
   {
     "id": "1810-hotel-restaurant",
@@ -9983,7 +9989,8 @@
     "themes": [
       "restaurants"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Le 1810, restaurant du Preskil Island Resort avec accès direct à la plage. Tartare de thon rouge, crevettes, cuisine locale et internationale dans un cadre soigné avec vue sur l'océan. Bien noté par les clients de l'hôtel, quelques avis mentionnent des tarifs élevés pour les non-résidents."
   },
   {
     "id": "la-belle-creole-restaurant",
@@ -10110,7 +10117,8 @@
     "themes": [
       "restaurants"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Restaurant, grill & bar à Mahébourg noté 4/5 sur 29 avis Tripadvisor. Calamars, poulet, thon, samoussas au fromage et curry de fruits de mer plébiscités, nouilles frites très appréciées. Ambiance simple près d'une gare routière, service rapide et prix raisonnables, mais avis partagés sur la régularité (erreurs de commande, propreté) selon les visites."
   },
   {
     "id": "ferney-falaise-rouge-restaurant",
@@ -10248,7 +10256,8 @@
     "themes": [
       "restaurants"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Restaurant Etoile de Mer de l'hôtel Astroea Beach, les pieds dans le lagon de Pointe d'Esny. Cuisine familiale du chef Tommy Veerapatren (formé au Preskil et au Heritage Le Telfair), inspirée de ses souvenirs d'enfance : farata maison, curry de poisson, produits locaux. 96% de recommandation sur la page Facebook (227 avis)."
   },
   {
     "id": "the-bamboo-restaurant-bar",
@@ -10309,7 +10318,8 @@
     "themes": [
       "restaurants"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Restaurant au décor rustique fait de matériaux recyclés, en plein air près d'une rivière (geckos et grenouilles en soirée). Avis mitigés : plusieurs clients saluent des plats savoureux (frites excellentes, gâteau au chocolat recommandé) et un personnel attentionné, d'autres pointent des soucis d'organisation lors de travaux de rénovation."
   },
   {
     "id": "blue-bay-marine-park",
@@ -10329,7 +10339,7 @@
   {
     "id": "saltyvibes",
     "name": "SaltyVibes",
-    "category": "food",
+    "category": "activites",
     "address": "blue bay MU, Mahebourg 50810",
     "phone": "+230 5987 4292",
     "website": "https://s7mqxgf4pm.wixsite.com/saltyvibes",
@@ -10337,9 +10347,10 @@
     "lat": -20.4437063,
     "lng": 57.7166557,
     "themes": [
-      "restaurants"
+      "excursions"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Sorties en bateau privées à Blue Bay, navigation dans le lagon avec BBQ sur la plage ou option éco-responsable. Structure locale mauricienne mettant en avant son expertise régionale."
   },
   {
     "id": "mahebourg-waterfront",
@@ -10369,7 +10380,8 @@
     "themes": [
       "restaurants"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Restaurant vue mer et snack 'The Spot' côté jardin, au sein de cette guesthouse de Pointe d'Esny posée sur un lagon superbe. Avis partagés : petit-déjeuner copieux et personnel attentionné saluent par plusieurs clients, menu correct sans plus pour d'autres. Emplacement jugé excellent, établissement qui gagnerait à être rénové."
   },
   {
     "id": "chillpill-guest-house",
@@ -10384,7 +10396,8 @@
     "themes": [
       "restaurants"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Restaurant en bord d'eau de cette guesthouse de Mahébourg, avec vue sur le lagon et la baie du Vieux Grand Port — possibilité de manger sur place ou en chambre. Accueil chaleureux et cadre de rêve unanimement salués par les clients, établissement très propre."
   },
   {
     "id": "explora-prestige-guesthouse",
@@ -10489,7 +10502,8 @@
     "themes": [
       "restaurants"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Le Preskil Island Resort propose trois restaurants avec vue sur l'océan (dont le 1810, accès plage direct). Buffet varié et frais (pizzas, pâtes, salades, rougail, poisson grillé), salami de cerf apprécié. Avis globalement positifs sur la qualité et le service, quelques réserves sur le prix du restaurant de plage et une offre mauricienne jugée en retrait."
   },
   {
     "id": "the-spot-mauritius",
@@ -10524,7 +10538,7 @@
   {
     "id": "coco-de-zil-mauritius",
     "name": "Coco De Zil Mauritius",
-    "category": "food",
+    "category": "activites",
     "address": "Pointe Jerome Mahebourg MU, 50817",
     "phone": "+230 5770 7235",
     "website": "https://tantulika1.wixsite.com/tour/mauritius",
@@ -10532,9 +10546,10 @@
     "lat": -20.424766,
     "lng": 57.7233151,
     "themes": [
-      "restaurants"
+      "excursions"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Excursions en bateau/catamaran au départ de la jetée de Pointe Jérôme (Mahébourg) vers l'Île aux Cerfs, avec déjeuner simple servi sur l'île. Guides décrits comme sympathiques et attentifs, tarif jugé correct par rapport à la concurrence."
   },
   {
     "id": "le-bouchon-public-beach",
