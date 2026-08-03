@@ -13128,8 +13128,9 @@
     "themes": [
       "activites-enfants-famille"
     ],
+    "badge": "selection",
     "zone": "sud",
-    "description": "Galerie ludique d'illusions d'optique face au Chamarel Geo Park, avec pièce à l'envers, labyrinthe de miroirs et jeux visuels pour petits et grands."
+    "description": "Galerie ludique d'illusions d'optique face au Chamarel Geo Park, avec pièce à l'envers, labyrinthe de miroirs et jeux visuels pour petits et grands. Équipe aux petits soins pour un superbe moment ludique en famille. Compter environ 45 min de visite. Billets à environ 650 Rs par adulte et 550 Rs par enfant."
   },
   {
     "id": "eclats-d-eden-2",
@@ -22819,10 +22820,12 @@
     "lat": -20.512421,
     "lng": 57.5372602,
     "themes": [
-      "parcs-nationaux-cascades"
+      "parcs-nationaux-cascades",
+      "activites-enfants-famille"
     ],
     "zone": "sud",
-    "description": "Cascade discrète dans le sud sauvage de l'île, près de Souillac, surtout connue des habitants ; guide recommandé pour trouver le sentier. À proximité de la plage de Gris Gris et du site de la Roche Qui Pleure. Environ 4 km, 2h aller-retour."
+    "description": "Cascade discrète dans le sud sauvage de l'île, près de Souillac, surtout connue des habitants ; guide recommandé pour trouver le sentier. À proximité de la plage de Gris Gris et du site de la Roche Qui Pleure. Accessible avec des enfants, mais peut devenir boueux par temps de pluie. Environ 4 km, 1h à 2h aller-retour selon le parking de départ.",
+    "photoUrl": "/photos/cascade-mamzelle.jpg"
   },
   {
     "id": "roche-qui-pleure",
