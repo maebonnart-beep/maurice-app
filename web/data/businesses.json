@@ -8673,21 +8673,6 @@
     "zone": "sud"
   },
   {
-    "id": "gris-gris-beach",
-    "name": "Gris Gris Beach",
-    "category": "food",
-    "address": "Gris Gris, Souillac",
-    "phone": "",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=7008834189898105557&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.5243899,
-    "lng": 57.5322158,
-    "themes": [
-      "restaurants"
-    ],
-    "zone": "sud"
-  },
-  {
     "id": "auberge-de-saint-aubin",
     "name": "Auberge de Saint-Aubin",
     "category": "food",
