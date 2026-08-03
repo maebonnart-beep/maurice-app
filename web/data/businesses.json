@@ -36166,5 +36166,49 @@
     "description": "Rooftop perché au 5e étage du Rushmore Complex, entre mer et montagnes. Gastronomie française revisitée avec une touche tropicale, produits de saison et terroir mauricien, dans un cadre chic pensé pour admirer le coucher de soleil. Ambiance chaleureuse et service attentionné, une adresse pour une soirée d'exception à Quatre Bornes.",
     "lat": -20.25,
     "lng": 57.4833
+  },
+  {
+    "id": "mediatheque-institut-francais-maurice",
+    "name": "Médiathèque de l'Institut Français de Maurice",
+    "category": "utiles",
+    "address": "30 Avenue Julius Nyerere, Beau-Bassin Rose Hill",
+    "phone": "+230 465 5222",
+    "website": "https://www.institutfrancais.mu/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Institut%20Francais%20de%20Maurice%20Rose%20Hill",
+    "themes": [
+      "bibliotheque-mediatheque"
+    ],
+    "hours": "Mar-Mer 13h-17h, Jeu-Ven 10h-17h, Sam 9h-16h",
+    "zone": "centre",
+    "description": "Près de 30 000 documents (livres, CD, DVD) consultables sur place ou empruntables, au sein de l'Institut Français de Maurice. Large choix francophone, ouverte à tous."
+  },
+  {
+    "id": "bibliotheque-carnegie-curepipe",
+    "name": "Bibliothèque Carnegie",
+    "category": "utiles",
+    "address": "Centre-ville, Curepipe",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Carnegie%20Library%20Curepipe%20Mauritius",
+    "themes": [
+      "bibliotheque-mediatheque"
+    ],
+    "zone": "centre",
+    "description": "Bâtiment néoclassique construit en 1917 grâce à la fondation Carnegie, ouvert au public depuis 1920. Plus de 75 000 documents dont 15 000 ouvrages sur les îles de l'océan Indien, collections rares et manuscrits historiques (lettres de Mahé de Labourdonnais, Matthew Flinders). Gérée par la municipalité de Curepipe."
+  },
+  {
+    "id": "national-library-mauritius",
+    "name": "National Library of Mauritius",
+    "category": "utiles",
+    "address": "1st & 2nd Floors, Fon Sing Building, 12 Edith Cavell Street, Port-Louis",
+    "phone": "+230 211 9891",
+    "website": "https://www.national-library.mu/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=National%20Library%20of%20Mauritius%20Port%20Louis",
+    "themes": [
+      "bibliotheque-mediatheque"
+    ],
+    "hours": "Lun-Ven 9h-16h, Sam 9h-12h",
+    "zone": "centre",
+    "description": "Bibliothèque nationale ouverte au public depuis 2000, plus de 230 000 documents : livres, journaux, cartes et archives historiques du pays."
   }
 ]

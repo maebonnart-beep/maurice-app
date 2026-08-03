@@ -214,6 +214,7 @@ export const SUBCATEGORIES: Partial<Record<CategoryKey, Subcategory[]>> = {
     { key: "tram", label: "Tram", emoji: "🚊" },
     { key: "vtc-apps", label: "Applications VTC & réservation", emoji: "📱" },
     { key: "plateformes-multiservices", label: "Plateformes multiservices & touristiques", emoji: "🧳" },
+    { key: "bibliotheque-mediatheque", label: "Bibliothèque & médiathèque", emoji: "📚" },
   ],
   coaching: [
     { key: "sports-bien-etre", label: "Sports & bien-être", emoji: "🏋️" },
