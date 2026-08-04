@@ -1543,22 +1543,6 @@
     "zone": "nord"
   },
   {
-    "id": "bar-principal",
-    "name": "Bar principal",
-    "category": "food",
-    "address": "XHV3+QF9 c/o Club Med La, Rte Cotière, Grand Baie",
-    "phone": "",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=17331242519233348923",
-    "lat": -20.0055927,
-    "lng": 57.553719,
-    "themes": [
-      "bars",
-      "kids-friendly"
-    ],
-    "zone": "nord"
-  },
-  {
     "id": "le-pole",
     "name": "Le Pôle",
     "category": "food",
@@ -1664,40 +1648,6 @@
     "hours": "11h-18h",
     "zone": "nord",
     "description": "Glacier artisanal du LUX* Grand Baie : glaces, sorbets et options vegan préparés en petites quantités devant les clients, bar à toppings et ateliers glace pour enfants."
-  },
-  {
-    "id": "la-varangue-veranda-grand-baie",
-    "name": "La Varangue - Veranda Grand Baie",
-    "category": "food",
-    "address": "MU, Royal Road, Grand Baie 30510",
-    "phone": "+230 209 8000",
-    "website": "https://veranda-resorts.com/en/mauritius-hotel-veranda-grand-baie/restaurants-and-bars",
-    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=La%20Varangue%20Veranda%20Grand%20Baie%20Mauritius",
-    "lat": -20.0085572,
-    "lng": 57.5786818,
-    "themes": [
-      "bars",
-      "kids-friendly"
-    ],
-    "hours": "Tous les jours 9h-23h",
-    "zone": "nord"
-  },
-  {
-    "id": "la-crique-veranda-grand-baie",
-    "name": "La Crique - Veranda Grand Baie",
-    "category": "food",
-    "address": "MU, Royal Road, Grand Baie 30510",
-    "phone": "+230 209 8000",
-    "website": "https://veranda-resorts.com/en/mauritius-hotel-veranda-grand-baie/restaurants-and-bars",
-    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=La%20Crique%20beach%20bar%20Veranda%20Grand%20Baie%20Mauritius",
-    "lat": -20.0085572,
-    "lng": 57.5786818,
-    "themes": [
-      "bars",
-      "kids-friendly"
-    ],
-    "hours": "Tous les jours 12h-00h",
-    "zone": "nord"
   },
   {
     "id": "navigator-canonnier-beachcomber",
@@ -5580,22 +5530,6 @@
     "description": "Restaurant-jardin convivial de Pereybère mettant en avant une cuisine légère à base de produits frais, avec animations musicales certains soirs."
   },
   {
-    "id": "dumpling-noodles-house",
-    "name": "Dumpling & noodles house 餃子麵館",
-    "category": "food",
-    "address": "Royal Rd, Grand Baie",
-    "phone": "+230 5811 6666",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=8428366996511145465&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0164883,
-    "lng": 57.5770243,
-    "themes": [
-      "restaurants",
-      "asiatique"
-    ],
-    "zone": "nord"
-  },
-  {
     "id": "chez-vassen-restaurant",
     "name": "Chez vassen restaurant",
     "category": "food",
@@ -6914,23 +6848,6 @@
     "description": "Resto-pub de Coeur de Ville Tamarin, cuisine européenne simple (pâtes bolognaise, steak grillé). Ouvert 7j/7, ambiance décontractée de quartier."
   },
   {
-    "id": "le-morne-restaurant",
-    "name": "Le Morne Restaurant",
-    "category": "food",
-    "address": "P927+6G, Flic en Flac",
-    "phone": "",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=10343569127973273540&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.2993951,
-    "lng": 57.3638507,
-    "themes": [
-      "restaurants",
-      "mauricienne",
-      "fruits-de-mer"
-    ],
-    "zone": "ouest"
-  },
-  {
     "id": "chez-christelle",
     "name": "Chez Christelle",
     "category": "food",
@@ -7616,23 +7533,6 @@
     ],
     "zone": "sud",
     "description": "Restaurant de plage sous les filaos, entre les hôtels Dinarobin et LUX* Le Morne : paninis, salades, spécialités créoles et asiatiques, camarons grillés et marlin fumé. Ouvert 7j/7, prix doux."
-  },
-  {
-    "id": "noel-desiree-ave",
-    "name": "Noel Desirée Ave",
-    "category": "food",
-    "address": "H9CQ+PVP, Chamarel",
-    "phone": "",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=5207754407211614199&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.4281741,
-    "lng": 57.3897135,
-    "themes": [
-      "restaurants",
-      "mauricienne",
-      "fruits-de-mer"
-    ],
-    "zone": "sud"
   },
   {
     "id": "kot-moukesh",
@@ -8363,22 +8263,6 @@
     "description": "Tapas-bar d'Albion avec dîner et soirées karaoké, cuisine mauricienne soignée. Très bien noté (4,7/5), ambiance chaleureuse."
   },
   {
-    "id": "le-gris-gris-food-van",
-    "name": "Le gris gris food van",
-    "category": "food",
-    "address": "FGGJ+65W, Souillac",
-    "phone": "+230 5765 7780",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=12149635690825128832&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.5243978,
-    "lng": 57.5304475,
-    "themes": [
-      "restaurants",
-      "frequente-locaux"
-    ],
-    "zone": "sud"
-  },
-  {
     "id": "mo-filaos-restaurant",
     "name": "Mo Filaos Restaurant",
     "category": "food",
@@ -8474,22 +8358,6 @@
     "badge": "selection",
     "zone": "sud",
     "description": "Adresse animée en bord de route côtière à Pointe d'Esny, cuisine cajun/créole, pizzas réputées et calamars. Ambiance plage rustique, musique live, terrasse ombragée."
-  },
-  {
-    "id": "ramdonee-store-bar",
-    "name": "Ramdonee Store (Bar)",
-    "category": "food",
-    "address": "Awatar lane, Plaine Magnien",
-    "phone": "+230 5902 4492",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=6592367289365442564&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.4286249,
-    "lng": 57.6685442,
-    "themes": [
-      "restaurants",
-      "frequente-locaux"
-    ],
-    "zone": "sud"
   },
   {
     "id": "sunset-snack",
@@ -8976,22 +8844,6 @@
     "themes": [
       "restaurants",
       "mauricienne"
-    ],
-    "zone": "est"
-  },
-  {
-    "id": "beach-bbq",
-    "name": "Beach BBQ",
-    "category": "food",
-    "address": "PQVX+4GP, Unnamed Road, Trou d'Eau Douce",
-    "phone": "",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=1377281773201896096&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.2571715,
-    "lng": 57.7988213,
-    "themes": [
-      "restaurants",
-      "grillades"
     ],
     "zone": "est"
   },
@@ -10628,22 +10480,6 @@
     ],
     "zone": "centre",
     "description": "Doyen des restaurants chinois de Maurice, fondé en 1946 par Edmond Lai Min, à Chinatown (Port Louis). Grill chinois à table, plats signature (canard farci, poulet vapeur), dîner-dansant le samedi."
-  },
-  {
-    "id": "chinese-resto",
-    "name": "chinese resto",
-    "category": "food",
-    "address": "Riche Terre Rd, Port Louis",
-    "phone": "+230 5259 1666",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=14961400021827558031&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.1242549,
-    "lng": 57.517217,
-    "themes": [
-      "restaurants",
-      "asiatique"
-    ],
-    "zone": "nord"
   },
   {
     "id": "la-case-75",
