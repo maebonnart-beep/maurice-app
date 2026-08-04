@@ -1223,7 +1223,8 @@
     "priceRange": "se-faire-plaisir",
     "badge": "selection",
     "promoText": "Très joli cadre, assiettes copieuses et fraîches. Belle carte de tapas.",
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Restaurant de Pereybère/Grand Baie tenu par Ashley et Shiran, très bien noté (4,8/5). Fruits de mer et viandes frais, rhum vanille maison ; paiement en espèces uniquement, stationnement limité."
   },
   {
     "id": "blue-lagoon-cafe",
@@ -4360,7 +4361,8 @@
     ],
     "hours": "Tous les jours 11h-17h",
     "priceRange": "bon-marche",
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Petite table familiale de Mahébourg : le poisson est pêché le matin même par le mari de Stella et cuisiné par elle, poulpe et crevettes selon arrivage. Très bien notée (5/5)."
   },
   {
     "id": "dragon-de-chine-mahebourg",
@@ -5529,7 +5531,8 @@
       "restaurants",
       "mauricienne"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Petit restaurant de School Lane à Grand Baie, carte courte qui change chaque jour (rougaille saucisse, vindaye poisson), déco bois-bambou, séga live."
   },
   {
     "id": "theo-fourneaux-restaurant-petit-dejeuner-brunch-salon-de-the",
@@ -5597,7 +5600,8 @@
       "mauricienne",
       "frequente-locaux"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Petit restaurant de Grand Baie tenu par Iven, ancien plongeur : poissons frits, samoussas, gâteaux piment, curry d'ourite, carte courte et prix raisonnables."
   },
   {
     "id": "ti-kouloir",
@@ -5666,7 +5670,8 @@
       "restaurants",
       "mauricienne"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Café-restaurant de cuisine créole/cajun sur la Royal Road à Grand Baie, bien noté mais avec peu d'avis en ligne à ce jour."
   },
   {
     "id": "restaurant-la-voglia-matta-2-grand-baie",
@@ -5926,7 +5931,8 @@
       "restaurants",
       "mauricienne"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Résidence hôtelière de Grand Baie avec deux restaurants : Le Grand B (cuisine locale et internationale, petit-déjeuner et dîner) et Koté Jardin (gastronomie mauricienne-française, sous la direction d'une Meilleure Ouvrière de Maurice)."
   },
   {
     "id": "kiosque-magique",
@@ -5943,7 +5949,8 @@
       "mauricienne",
       "fruits-de-mer"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Minuscule cuisine de Mont Choisy (aussi appelée \"Chez Hans\"), tenue par un frère et une sœur : samoussas au poisson, jus offert et rhum en fin de repas, les pieds dans le sable."
   },
   {
     "id": "restaurant-vieille-rouge",
@@ -5960,7 +5967,8 @@
       "mauricienne"
     ],
     "badge": "selection",
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Restaurant de Grand Baie à l'ambiance décontractée, musique live le vendredi, cuisine créole/poissons et fruits de mer ; avis mitigés sur le service."
   },
   {
     "id": "esprit-libre-hotel-grand-baie",
@@ -5977,7 +5985,8 @@
       "mauricienne",
       "europeenne"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Guesthouse-restaurant de Pointe aux Canonniers (Grand Baie), 12 chambres et resto-bar de cuisine locale et européenne (poissons, fruits de mer, viandes), plats faits maison. Ambiance bar animée le soir avec DJ/lounge."
   },
   {
     "id": "tamarina-golf-spa-boutique-hotel",
@@ -6152,7 +6161,8 @@
       "restaurants",
       "mauricienne"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Restaurant familial de Flic en Flac face à la plage, cuisine mauricienne authentique (bol renversé, cari poulpe). Bien noté (4,3/5) et bon rapport qualité-prix."
   },
   {
     "id": "melanzana",
@@ -6219,7 +6229,8 @@
       "restaurants",
       "mauricienne"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Restaurant de Grande Rivière Noire, cuisine fusion créole/asiatique (crevettes croustillantes, bouillon de crabe, ourite créole). Très bien noté (4,8/5), livraison disponible."
   },
   {
     "id": "big-willy-s",
@@ -6285,7 +6296,8 @@
       "fruits-de-mer"
     ],
     "badge": "selection",
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Jardin tropical caché derrière un grand mur à Flic en Flac, cuisine mauricienne et européenne, produits de saison et fruits de mer, musique live le week-end."
   },
   {
     "id": "mare-mare-beach-restaurant",
@@ -6318,7 +6330,8 @@
       "mauricienne",
       "asiatique"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Table de Flic en Flac tenue par un couple, spécialisée en poissons et fruits de mer (curry de poisson réputé), aussi cuisine chinoise et créole."
   },
   {
     "id": "rib-reef",
@@ -6418,7 +6431,8 @@
       "restaurants",
       "mauricienne"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Restaurant gastronomique du Sofitel Mauritius L'Impérial (Wolmar), cuisine mauricienne raffinée (soupe de crabe, bouillabaisse mauricienne). À vérifier : pourrait être temporairement fermé selon le site de l'hôtel."
   },
   {
     "id": "la-cosa-nostra",
@@ -6522,7 +6536,8 @@
       "grillades"
     ],
     "badge": "selection",
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Affaire familiale de Flic en Flac réputée pour ses grillades (poulet, poisson, langouste) préparées devant le restaurant ; bien notée (4,4/5), files d'attente fréquentes."
   },
   {
     "id": "twin-s-garden-ii",
@@ -6539,7 +6554,8 @@
       "mauricienne"
     ],
     "badge": "selection",
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Restaurant familial de Flic en Flac dans un jardin tropical, cuisine mauricienne/internationale, soirées animées de séga et musique live le vendredi."
   },
   {
     "id": "mama-helene-so-lakwizine-table-d-hotes-cuisine-locale-creole-chez-l-habitant",
@@ -6574,7 +6590,8 @@
       "mauricienne"
     ],
     "badge": "selection",
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Petit restaurant familial de Flic en Flac (aussi connu sous \"Chez May\"), au menu unique : festin créole multi-plats (riz, poulet, poulpe, saucisses créoles, légumes, dessert, rhum) pour environ Rs 1000/pers. Réservation obligatoire, peu de tables."
   },
   {
     "id": "cilantro",
@@ -6661,7 +6678,8 @@
       "restaurants",
       "mauricienne"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Bistro cosy de La Gaulette, cuisine locale et internationale changeant selon les arrivages (poke bowls, nouilles aux fruits de mer, spring rolls), bons cocktails. Très bien noté (5/5)."
   },
   {
     "id": "teppanyaki",
@@ -6697,7 +6715,8 @@
       "restaurants",
       "mauricienne"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Grand établissement de Cascavelle combinant restaurant créole (buffet en journée), bar et espace concerts live, ambiance conviviale sur la côte ouest."
   },
   {
     "id": "vanilla-cafe-restaurant",
@@ -6714,7 +6733,8 @@
       "vegetarien",
       "mauricienne"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Café en plein air sous les arbres au sein du \"Vanilla Village\" à Grande Rivière Noire, cartes fraîches et de saison, burgers réputés, cadre familial avec jeux pour enfants."
   },
   {
     "id": "recif-bleu",
@@ -6731,7 +6751,8 @@
       "mauricienne"
     ],
     "badge": "selection",
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Petit restaurant de Flic en Flac tenu par un patron mauricien qui cuisine lui-même, produits frais et portions généreuses (agneau, poulpe, langouste sur commande) ; bien noté (4,2/5)."
   },
   {
     "id": "frenchie-cafe",
@@ -6748,7 +6769,8 @@
       "europeenne",
       "mauricienne"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Restaurant de Plaine Champagne mêlant technique française et produits locaux mauriciens, avec une carte de vins et cocktails."
   },
   {
     "id": "apo-black-river",
@@ -7018,7 +7040,8 @@
       "restaurants",
       "mauricienne"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Petite adresse type taverne de Camp Fouquereaux (Vacoas-Phœnix), menu court (poisson, calamars, salades), cocktails créatifs signés par un mixologue local."
   },
   {
     "id": "domaine-de-wolmar",
@@ -7060,11 +7083,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=5615807127976202553&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.3278485,
     "lng": 57.3831894,
-    "themes": [
-      "restaurants",
-      "mauricienne",
-      "europeenne"
-    ],
+    "themes": [],
     "zone": "ouest"
   },
   {
@@ -7217,7 +7236,8 @@
       "mauricienne"
     ],
     "badge": "selection",
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Table d'hôtes familiale de Chamarel, cuisine mauricienne authentique avec fruits et légumes de leur propre potager bio ; bien notée (4,2/5)."
   },
   {
     "id": "chez-pierre-paul",
@@ -7233,7 +7253,8 @@
       "restaurants",
       "mauricienne"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Restaurant sur la Route Royale menant à la Terre des 7 Couleurs, à Chamarel. Cuisine locale, curries et grillades ; bien noté (4,4/5)."
   },
   {
     "id": "chez-ruben-restaurant",
@@ -7266,7 +7287,8 @@
       "restaurants",
       "mauricienne"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Domaine élégant de Chamarel associant visite de distillerie, dégustation de rhum et restaurant à influence française, dans un jardin tropical soigné."
   },
   {
     "id": "mich-resto",
@@ -7283,7 +7305,8 @@
       "fruits-de-mer",
       "mauricienne"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Restaurant créole-cajun de Chamarel, proche des Terres des Sept Couleurs, cuisine fruits de mer avec options végétariennes. Bien noté (4,3/5), avis mitigés sur les prix."
   },
   {
     "id": "lakaz-chamarel-view-bar",
@@ -7336,7 +7359,8 @@
       "restaurants",
       "mauricienne"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Table d'hôte du Morne tenue par Elijah et son épouse, très bien notée (4,9/5). Plats expliqués par l'hôte, ambiance chaleureuse et prix abordables."
   },
   {
     "id": "la-citronelle",
@@ -7352,7 +7376,8 @@
       "restaurants",
       "mauricienne"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Restaurant de la Route Royale à Chamarel, cuisine indienne/mauricienne/italienne et poissons. Avis très partagés, certains dénonçant des prix jugés touristiques."
   },
   {
     "id": "saveur-tropical",
@@ -7369,7 +7394,8 @@
       "mauricienne",
       "asiatique"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Restaurant de Chamarel, cuisine mauricienne (gambas, foie de volaille épicé, calamars, langouste) à prix raisonnables et service attentif. Cartes bancaires non acceptées."
   },
   {
     "id": "one-love-snack",
@@ -7385,7 +7411,8 @@
       "restaurants",
       "mauricienne"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Petite gargote conviviale de Chamarel, cuisine mauricienne simple et fraîche, très bon rapport qualité-prix et service chaleureux."
   },
   {
     "id": "le-benitier",
@@ -7402,7 +7429,8 @@
       "mauricienne",
       "fruits-de-mer"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Restaurant de Case Noyale, tables les pieds dans le sable avec vue mer. Cuisine mauricienne (fruits de mer, caris épicés) ; réservation conseillée le week-end."
   },
   {
     "id": "heritage-sunset-cafe",
@@ -7454,7 +7482,8 @@
       "restaurants",
       "mauricienne"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Restaurant routier de Chamarel, cuisine locale variée. Accueil apprécié mais jugé cher par plusieurs visiteurs, fréquenté par les groupes en excursion."
   },
   {
     "id": "chamarel-cafe",
@@ -7503,7 +7532,8 @@
       "mauricienne",
       "fruits-de-mer"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Restaurant de l'hôtel Paradis Golf Club au Morne, cuisine fusion locale et internationale, vue sur mer et montagne, cadre élégant et décontracté."
   },
   {
     "id": "le-morne-snack",
@@ -7520,7 +7550,8 @@
       "mauricienne",
       "frequente-locaux"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Petite affaire familiale du Morne Brabant, carte limitée mais excellent rapport qualité-prix : roti, samoussas, mines frites, appréciée des touristes comme des locaux."
   },
   {
     "id": "emba-filao-restaurant",
@@ -7537,7 +7568,8 @@
       "mauricienne",
       "frequente-locaux"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Restaurant de plage sous les filaos, entre les hôtels Dinarobin et LUX* Le Morne : paninis, salades, spécialités créoles et asiatiques, camarons grillés et marlin fumé. Ouvert 7j/7, prix doux."
   },
   {
     "id": "noel-desiree-ave",
@@ -7689,7 +7721,8 @@
       "mauricienne",
       "frequente-locaux"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Petite gargote de bord de route à La Gaulette, nouilles frites, bouillie et cuisine locale simple avec options végé/viande/poisson, portions généreuses. Propriétaire passionné, connu pour rester ouvert malgré les alertes cycloniques."
   },
   {
     "id": "table-d-hote-uniquement-sur-reservation",
@@ -7825,7 +7858,8 @@
       "mauricienne",
       "italien"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Petite adresse les pieds dans le sable à La Gaulette, cuisine locale et pizzas maison, réputée pour son thon et ses samoussas. Bien notée (4,5/5), fermé le mardi."
   },
   {
     "id": "indya",
@@ -7870,7 +7904,8 @@
       "restaurants",
       "mauricienne"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Petite table fusion-créole du Morne (une quinzaine de places), menu du jour selon arrivage, sans alcool. Excellents avis, réservation indispensable."
   },
   {
     "id": "rangoli",
@@ -7988,7 +8023,8 @@
       "restaurants",
       "mauricienne"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Petite adresse locale de Bel Ombre tenue par Doris, cuisine mauricienne simple et généreuse à prix raisonnable ; bien notée (4,5/5)."
   },
   {
     "id": "the-plantation-club",
@@ -8005,7 +8041,8 @@
       "tables-exception",
       "mauricienne"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Restaurant gastronomique de l'Outrigger (Bel Ombre), cuisine mauricienne revisitée (tartare, crabe girafe, langouste), cadre romantique en surplomb des champs de canne. Très bien noté (4,7/5)."
   },
   {
     "id": "zafarani",
@@ -8054,7 +8091,8 @@
       "restaurants",
       "mauricienne"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Petite table de Bel Ombre face à la mer, tenue par une habitante accueillante, sans carte fixe (poisson ou calamar du jour). Avis partagés, jugée chère par certains."
   },
   {
     "id": "savana-restaurant",
@@ -8071,7 +8109,8 @@
       "mauricienne",
       "kids-friendly"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Restaurant principal de l'hôtel Heritage Awali (Bel Ombre), buffets à thème et cuisine mauricienne dans un décor inspiré de l'Afrique."
   },
   {
     "id": "playa-restaurant-tamassa-resort",
@@ -8139,7 +8178,8 @@
       "fruits-de-mer",
       "mauricienne"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Petite adresse discrète de Rivière des Anguilles, fruits de mer frais (langouste, moules sauce safran), personnel avenant. Très bien notée (4,8/5)."
   },
   {
     "id": "rum-shed-bar-grill-restaurant-at-shanti-maurice-resort-spa",
@@ -8171,7 +8211,8 @@
       "restaurants",
       "mauricienne"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Table d'hôte de Mahébourg tenue par Filo et Stéphanie, accueil familial. Menu unique à environ Rs 1000 avec boisson (vindaye d'ourite, gratin de haricots), réservation obligatoire."
   },
   {
     "id": "le-batelage",
@@ -8188,7 +8229,8 @@
       "fruits-de-mer",
       "mauricienne"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Restaurant historique de Surinam installé dans un bâtiment du XVIIIe siècle, là où la rivière rencontre l'océan. Spécialisé fruits de mer frais, avis mitigés sur le service et les prix."
   },
   {
     "id": "pearl-fisher",
@@ -8257,7 +8299,8 @@
       "mauricienne",
       "asiatique"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Tapas-bar d'Albion avec dîner et soirées karaoké, cuisine mauricienne soignée. Très bien noté (4,7/5), ambiance chaleureuse."
   },
   {
     "id": "le-gris-gris-food-van",
@@ -8290,7 +8333,8 @@
       "mauricienne",
       "fruits-de-mer"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Petit restaurant propre et convivial de Baie du Cap, spécialités créoles (crevettes, calamars), plats copieux. Paiement en espèces uniquement ; bien noté (4,2/5)."
   },
   {
     "id": "auberge-de-saint-aubin",
@@ -8306,7 +8350,8 @@
       "restaurants",
       "mauricienne"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Restaurant du Domaine de Saint-Aubin, ancienne propriété sucrière fondée en 1778, dans une demeure coloniale classée. Cuisine mauricienne aux produits du domaine : poulet vanille ou créole, salade de palmiste, marlin fumé."
   },
   {
     "id": "andrea-lodges",
@@ -8638,7 +8683,8 @@
       "fruits-de-mer",
       "mauricienne"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Café-restaurant en bord de mer sur la Coastal Road de Trou-aux-Biches, ouvert fin 2020. Réputé pour ses plateaux de fruits de mer, poissons grillés et curries ; bien classé parmi les restaurants de l'île sur TripAdvisor."
   },
   {
     "id": "vicky-s-restaurant",
@@ -8655,7 +8701,8 @@
       "mauricienne",
       "fruits-de-mer"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Petit restaurant local de fruits de mer à Quatre Cocos, peu référencé en ligne — vraisemblablement une petite table peu connue hors des habitués."
   },
   {
     "id": "tides",
@@ -8672,7 +8719,8 @@
       "mauricienne",
       "fruits-de-mer"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Restaurant à la carte de l'hôtel Long Beach Mauritius (Poste de Flacq), poisson frais et cuisine mauricienne/internationale, cadre bord de plage."
   },
   {
     "id": "le-comptoir-constance",
@@ -8722,7 +8770,8 @@
       "restaurants",
       "mauricienne"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Table d'hôte familiale de Camp Ithier, sur réservation uniquement. Cuisine créole (cari poisson, salade ourite, gâteau piment) dans un jardin intimiste ; très bien notée."
   },
   {
     "id": "le-skipper",
@@ -8889,7 +8938,8 @@
       "restaurants",
       "mauricienne"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Restaurant-buffet de l'hôtel Long Beach Mauritius, cuisine live et buffets internationaux copieux dans un cadre haut de gamme."
   },
   {
     "id": "escape-restaurant-bar",
@@ -9122,7 +9172,8 @@
       "restaurants",
       "mauricienne"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Restaurant de Poste de Flacq, cuisine locale et internationale servie en terrasse extérieure. Informations en ligne limitées."
   },
   {
     "id": "seabell-restaurant",
@@ -9216,7 +9267,8 @@
     ],
     "badge": "selection",
     "promoText": "Poisson frais grillé au BBQ.",
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Table familiale de Cap Malheureux ouverte depuis 2019, face à la chapelle rouge, les pieds dans le sable sous un banian. Poisson grillé du jour ; avis partagés sur la transparence des prix (pas de carte affichée)."
   },
   {
     "id": "safran",
@@ -9266,7 +9318,8 @@
       "fruits-de-mer",
       "mauricienne"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Adresse de Trou d'Eau Douce bien notée en ligne, cuisine de plage type fruits de mer et grillades. À vérifier : deux établissements \"Coco's\" existent dans la zone (Beach House / Beach Bar), l'identité exacte de cette fiche reste à confirmer."
   },
   {
     "id": "langer-s-bar-grill",
@@ -9355,7 +9408,8 @@
       "asiatique"
     ],
     "badge": "selection",
-    "zone": "est"
+    "zone": "est",
+    "description": "Petite table de Trou d'Eau Douce tenue par Noel, cuisine asiatique/mauricienne abordable, réputée pour ses boulettes et nouilles ; très bien notée (4,8/5)."
   },
   {
     "id": "quatre-cocos-beach",
@@ -9385,7 +9439,8 @@
       "mauricienne",
       "frequente-locaux"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Snack populaire de Mahébourg, plats emblématiques comme le \"Mine Bouille Mangouak\" et le calamar croustillant, ambiance séga. Un corner \"Bistro\" complémentaire a ouvert récemment."
   },
   {
     "id": "le-jardin-de-beau-vallon",
@@ -9545,7 +9600,8 @@
       "mauricienne",
       "frequente-locaux"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Adresse typique de la rue de Labourdonnais à Mahébourg, cuisine créole authentique. Vindaye de poisson et daube de calamars particulièrement recommandés, accueil chaleureux, réservation conseillée."
   },
   {
     "id": "restaurant-take-baz-take",
@@ -9561,7 +9617,8 @@
       "restaurants",
       "mauricienne"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Petite adresse locale de Mahébourg, ouverte tard (17h-3h), spécialités type minbwi, snacks et boissons."
   },
   {
     "id": "indian-saveur",
@@ -9593,7 +9650,8 @@
       "restaurants",
       "mauricienne"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Restaurant de Mahébourg à l'ambiance kitsch et conviviale, spécialités de venaison et fruits de mer, cuisine créole authentique."
   },
   {
     "id": "salut-les-copains-kaushik",
@@ -9682,7 +9740,8 @@
       "fruits-de-mer"
     ],
     "badge": "selection",
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Petite table simple de Mahébourg, très bien notée (4,5-4,6/5). Spécialité \"Minn Bwi Mangwak\" (nouilles aux palourdes locales), nouilles au bœuf et crevettes créoles, ambiance familiale."
   },
   {
     "id": "blue-bay-snack-blue-bay-tuck-shop",
@@ -9750,7 +9809,8 @@
       "restaurants",
       "mauricienne"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Petite adresse locale au centre de Mahébourg, portions généreuses à bon prix ; peu d'avis disponibles en ligne à ce jour."
   },
   {
     "id": "kot-nini-la-meilleure-pizzeria",
@@ -9797,7 +9857,8 @@
       "mauricienne"
     ],
     "badge": "selection",
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Bar-restaurant animé de Blue Bay, pizzas au feu de bois et cuisine créole aux sauces maison, ambiance festive avec musique live."
   },
   {
     "id": "nativ-lodge-spa",
@@ -9994,7 +10055,8 @@
       "mauricienne",
       "fruits-de-mer"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Café-brunch en bord de plage à Pointe d'Esny, ambiance rustique, cuisine créole et fruits de mer (pizza, calamars), bons cocktails."
   },
   {
     "id": "aqua-soleil-mauritius",
@@ -10097,7 +10159,8 @@
       "restaurants",
       "mauricienne"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Restaurant de Moka ouvert fin 2022 dans une bâtisse coloniale de 187 ans. Cuisine ancestrale mauricienne (farata, dal pita, fruits de mer), options végé/vegan/halal."
   },
   {
     "id": "l-ardoise-brasserie",
@@ -10315,7 +10378,8 @@
       "fruits-de-mer",
       "mauricienne"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Restaurant de Curepipe dans un bâtiment centenaire, cuisine créole/cajun et fruits de mer, plateau de fruits de mer réputé, thé glacé au tamarin, ambiance chaleureuse. Bien noté (4,1/5)."
   },
   {
     "id": "the-indian-symphony",
@@ -10377,7 +10441,8 @@
       "restaurants",
       "mauricienne"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Restaurant chic en plein air au cœur de Port Louis, cuisine mêlant influences françaises et mauriciennes, service soigné, plutôt haut de gamme."
   },
   {
     "id": "l-artista",
@@ -10410,7 +10475,8 @@
       "asiatique",
       "mauricienne"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Institution de Curepipe depuis 25 ans, mêlant cuisines chinoise et mauricienne, réputée pour son poulet croustillant. Réservation conseillée."
   },
   {
     "id": "eureka-la-maison-creole",
@@ -10576,7 +10642,8 @@
       "asiatique",
       "mauricienne"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Restaurant populaire de Port Louis, cuisine fusion locale/chinoise réputée pour son biryani et son riz frit. Ambiance conviviale (bière, foot, musique) avec vue sur le port."
   },
   {
     "id": "the-city-orient-restaurant",
@@ -10851,7 +10918,8 @@
       "mauricienne",
       "frequente-locaux"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Bar-gargote populaire de Port Louis, cuisine mauricienne faite maison (viande masala, cari halim), prix très accessibles, ambiance conviviale."
   },
   {
     "id": "hola-cafe",
@@ -11768,7 +11836,8 @@
       "mauricienne",
       "grillades"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Restaurant du Vallée Adventure Park à Chamouny, cadre rustique en terrasse au bord d'une cascade. Cuisine mauricienne/indienne (burgers, grillades), bien apprécié."
   },
   {
     "id": "la-terre-des-7-couleurs",
@@ -16874,7 +16943,8 @@
       "mauricienne",
       "asiatique"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Cantine conviviale et sans prétention de Tamarin, cuisine chinoise-mauricienne (bol renversé, mine bouilli) à prix accessibles ; bien notée (4,5/5)."
   },
   {
     "id": "mei-yan-restaurant",
@@ -22765,7 +22835,8 @@
       "restaurants",
       "mauricienne"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Restaurant à thème hollywoodien sur la Coastal Road à St Martin (Savanne), cuisine mauricienne (nouilles, caris, riz), réputé pour son cari langouste."
   },
   {
     "id": "le-crocodile-affame",
@@ -22783,7 +22854,8 @@
       "europeenne"
     ],
     "badge": "selection",
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Restaurant perché dans les arbres au sein de La Vanille Nature Park (Rivière des Anguilles), spécialité viande de crocodile (brochettes, cari, burger). Avis mitigés sur le rapport quantité/prix."
   },
   {
     "id": "maconde-viewpoint",
@@ -31437,7 +31509,8 @@
       "restaurants",
       "mauricienne"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Restaurant du guesthouse The Bay, à La Preneuse (Black River), en bord de plage : menu créole (poissons frais, plats en cari) et spécialités européennes, cadre décontracté face à l'océan."
   },
   {
     "id": "le-bistrot-de-la-poste",
