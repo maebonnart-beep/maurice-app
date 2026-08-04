@@ -5778,24 +5778,6 @@
     "description": "Crêperie-restaurant du Sunset Boulevard à Grand Baie, avec vue sur le lagon. Grillades, options sans gluten, wagyu bœuf et poulet, crêpes sucrées. Très bien noté (5/5)."
   },
   {
-    "id": "chez-cousine-farata-et-gateaux",
-    "name": "Chez cousine - farata et gateaux",
-    "category": "food",
-    "address": "2H4R+6G3, Grand Baie",
-    "phone": "",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=11187342399705637432&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -19.9944771,
-    "lng": 57.5912872,
-    "themes": [
-      "restaurants",
-      "mauricienne",
-      "frequente-locaux"
-    ],
-    "zone": "nord",
-    "description": "Petite adresse street-food de Grand Baie/Pereybère, spécialisée en farata et gâteaux piments."
-  },
-  {
     "id": "divino",
     "name": "Divino",
     "category": "food",
@@ -7654,24 +7636,6 @@
     "zone": "sud"
   },
   {
-    "id": "chez-conchita",
-    "name": "Chez Conchita",
-    "category": "food",
-    "address": "G8JV+P88, Le Morne",
-    "phone": "",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=14134520294450116654&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.4682241,
-    "lng": 57.3433398,
-    "themes": [
-      "restaurants",
-      "mauricienne",
-      "kids-friendly"
-    ],
-    "zone": "sud",
-    "description": "Restaurant familial du Morne à la déco colorée, mélange de plats mauriciens traditionnels et internationaux, ingrédients frais issus des marchés locaux, accueil convivial."
-  },
-  {
     "id": "le-plage-restaurant-dinarobin-beachcomber",
     "name": "Le Plage (Restaurant Dinarobin Beachcomber)",
     "category": "food",
@@ -9077,24 +9041,6 @@
     ],
     "zone": "est",
     "description": "Restaurant principal de l'Ambre Resort & Spa (Palmar), à côté de la piscine, buffet international vivant (cuisines mauricienne, indienne, chinoise) avec stations \"live cooking\". Un des buffets les mieux notés du resort selon TripAdvisor."
-  },
-  {
-    "id": "belle-mare-snack",
-    "name": "Belle Mare Snack",
-    "category": "food",
-    "address": "RQ2G+X29, Quatre Cocos",
-    "phone": "+230 415 1332",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=2157781993544928878&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.1975902,
-    "lng": 57.775098,
-    "themes": [
-      "restaurants",
-      "mauricienne",
-      "frequente-locaux"
-    ],
-    "zone": "est",
-    "description": "Petite adresse décontractée de Quatre Cocos, cuisine mauricienne locale (curries, spécialités de fruits de mer), appréciée des touristes de passage à Belle Mare."
   },
   {
     "id": "chateau-mon-desir",
