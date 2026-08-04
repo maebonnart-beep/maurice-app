@@ -799,7 +799,8 @@
     "lat": -20.0143128,
     "lng": 57.5837935,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "fruits-de-mer"
     ],
     "hours": "Tous les jours 10h-23h30",
     "priceRange": "se-faire-plaisir",
@@ -1133,7 +1134,8 @@
     "lat": -20.0130625,
     "lng": 57.5866875,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "fruits-de-mer"
     ],
     "hours": "Tous les jours 10h-22h",
     "priceRange": "prix-moyen",
@@ -3453,7 +3455,8 @@
     "lat": -20.2372,
     "lng": 57.7908,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "fruits-de-mer"
     ],
     "hours": "Tous les jours 11h30-22h30",
     "priceRange": "prix-moyen",
@@ -3492,7 +3495,8 @@
     "lat": -20.4081,
     "lng": 57.7,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "fruits-de-mer"
     ],
     "hours": "Tous les jours 8h30-22h30",
     "priceRange": "prix-moyen",
@@ -3996,7 +4000,8 @@
     "lat": -20.3252,
     "lng": 57.3736,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "grillades"
     ],
     "hours": "Tous les jours 11h-20h",
     "priceRange": "bon-marche",
@@ -4013,7 +4018,9 @@
     "lat": -20.4547,
     "lng": 57.3167,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "fruits-de-mer",
+      "tables-exception"
     ],
     "hours": "Tous les jours 12h30-15h & 19h-22h",
     "priceRange": "se-faire-plaisir",
@@ -4378,7 +4385,8 @@
     "lat": -20.4081,
     "lng": 57.7,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "mauricienne"
     ],
     "hours": "Tous les jours 11h-17h",
     "priceRange": "bon-marche",
@@ -5548,7 +5556,8 @@
     "lat": -20.0134166,
     "lng": 57.5861091,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "mauricienne"
     ],
     "zone": "nord"
   },
@@ -5598,7 +5607,8 @@
     "lat": -20.0164883,
     "lng": 57.5770243,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "asiatique"
     ],
     "zone": "nord"
   },
@@ -5613,7 +5623,9 @@
     "lat": -19.9868249,
     "lng": 57.6007683,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "mauricienne",
+      "frequente-locaux"
     ],
     "zone": "nord"
   },
@@ -5649,7 +5661,8 @@
     "lat": -20.0090902,
     "lng": 57.5964341,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "italien"
     ],
     "zone": "nord"
   },
@@ -5664,7 +5677,8 @@
     "lat": -20.0066477,
     "lng": 57.5575768,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "italien"
     ],
     "zone": "nord"
   },
@@ -5679,7 +5693,8 @@
     "lat": -20.006957,
     "lng": 57.5820578,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "mauricienne"
     ],
     "zone": "nord"
   },
@@ -5694,7 +5709,8 @@
     "lat": -20.0175403,
     "lng": 57.5864954,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "italien"
     ],
     "zone": "nord"
   },
@@ -5709,7 +5725,9 @@
     "lat": -20.0154554,
     "lng": 57.5703067,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "europeenne",
+      "plus-belles-vues"
     ],
     "zone": "nord"
   },
@@ -5724,7 +5742,8 @@
     "lat": -20.0154755,
     "lng": 57.5703797,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "italien"
     ],
     "badge": "selection",
     "zone": "nord"
@@ -5740,7 +5759,9 @@
     "lat": -20.0118002,
     "lng": 57.5668986,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "fruits-de-mer",
+      "asiatique"
     ],
     "zone": "nord"
   },
@@ -5755,7 +5776,8 @@
     "lat": -20.0072954,
     "lng": 57.5607201,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "asiatique"
     ],
     "zone": "nord"
   },
@@ -5770,7 +5792,8 @@
     "lat": -19.9925863,
     "lng": 57.592675,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "asiatique"
     ],
     "badge": "selection",
     "zone": "nord"
@@ -5786,7 +5809,8 @@
     "lat": -20.0089658,
     "lng": 57.5817855,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "grillades"
     ],
     "zone": "nord"
   },
@@ -5801,7 +5825,9 @@
     "lat": -20.0177948,
     "lng": 57.5866343,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "asiatique",
+      "kids-friendly"
     ],
     "zone": "nord"
   },
@@ -5816,7 +5842,8 @@
     "lat": -20.0134331,
     "lng": 57.5844538,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "europeenne"
     ],
     "zone": "nord"
   },
@@ -5831,7 +5858,9 @@
     "lat": -19.9944771,
     "lng": 57.5912872,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "mauricienne",
+      "frequente-locaux"
     ],
     "zone": "nord"
   },
@@ -5846,7 +5875,8 @@
     "lat": -20.0222701,
     "lng": 57.5790195,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "italien"
     ],
     "zone": "nord"
   },
@@ -5861,7 +5891,8 @@
     "lat": -19.9929895,
     "lng": 57.5978211,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "vegetarien"
     ],
     "zone": "nord"
   },
@@ -5876,7 +5907,8 @@
     "lat": -20.0243143,
     "lng": 57.5763775,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "italien"
     ],
     "zone": "nord"
   },
@@ -5921,7 +5953,8 @@
     "lat": -19.9942936,
     "lng": 57.5916957,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "grillades"
     ],
     "zone": "nord"
   },
@@ -5966,7 +5999,9 @@
     "lat": -20.0138607,
     "lng": 57.5573814,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "mauricienne",
+      "fruits-de-mer"
     ],
     "zone": "nord"
   },
@@ -5981,7 +6016,8 @@
     "lat": -20.0130699,
     "lng": 57.5848298,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "mauricienne"
     ],
     "badge": "selection",
     "zone": "nord"
@@ -5997,7 +6033,9 @@
     "lat": -20.007841,
     "lng": 57.5580625,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "mauricienne",
+      "europeenne"
     ],
     "zone": "nord"
   },
@@ -6135,7 +6173,9 @@
     "lat": -20.3299421,
     "lng": 57.3802691,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "italien",
+      "europeenne"
     ],
     "zone": "ouest"
   },
@@ -6213,7 +6253,8 @@
     "lat": -20.2837738,
     "lng": 57.3647983,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "mauricienne"
     ],
     "zone": "ouest"
   },
@@ -6228,7 +6269,8 @@
     "lat": -20.2763553,
     "lng": 57.370119,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "italien"
     ],
     "zone": "ouest"
   },
@@ -6261,7 +6303,9 @@
     "lat": -20.2788646,
     "lng": 57.4025571,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "grillades",
+      "fruits-de-mer"
     ],
     "zone": "ouest"
   },
@@ -6276,7 +6320,8 @@
     "lat": -20.3611823,
     "lng": 57.3722547,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "mauricienne"
     ],
     "zone": "ouest"
   },
@@ -6291,7 +6336,8 @@
     "lat": -20.3274529,
     "lng": 57.3855759,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "grillades"
     ],
     "zone": "ouest"
   },
@@ -6306,7 +6352,8 @@
     "lat": -20.3274999,
     "lng": 57.3836534,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "europeenne"
     ],
     "zone": "ouest"
   },
@@ -6321,7 +6368,8 @@
     "lat": -20.3310057,
     "lng": 57.3852041,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "europeenne"
     ],
     "zone": "ouest"
   },
@@ -6352,7 +6400,8 @@
     "lat": -20.301848,
     "lng": 57.3644832,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "italien"
     ],
     "zone": "ouest"
   },
@@ -6367,7 +6416,9 @@
     "lat": -20.2761548,
     "lng": 57.3713978,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "mauricienne",
+      "asiatique"
     ],
     "zone": "ouest"
   },
@@ -6447,7 +6498,8 @@
     "lat": -20.2799314,
     "lng": 57.3665567,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "grillades"
     ],
     "zone": "ouest"
   },
@@ -6477,7 +6529,8 @@
     "lat": -20.3108011,
     "lng": 57.368109,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "mauricienne"
     ],
     "zone": "ouest"
   },
@@ -6511,7 +6564,8 @@
     "lat": -20.2798512,
     "lng": 57.3685266,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "grillades"
     ],
     "zone": "ouest"
   },
@@ -6544,7 +6598,8 @@
     "lat": -20.3088869,
     "lng": 57.366447,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "fruits-de-mer"
     ],
     "zone": "ouest"
   },
@@ -6576,7 +6631,9 @@
     "lat": -20.2772421,
     "lng": 57.369475,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "mauricienne",
+      "grillades"
     ],
     "badge": "selection",
     "zone": "ouest"
@@ -6626,7 +6683,8 @@
     "lat": -20.2757694,
     "lng": 57.3705404,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "mauricienne"
     ],
     "badge": "selection",
     "zone": "ouest"
@@ -6642,7 +6700,9 @@
     "lat": -20.3147043,
     "lng": 57.3703734,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "indienne",
+      "tables-exception"
     ],
     "zone": "ouest"
   },
@@ -6710,7 +6770,8 @@
     "lat": -20.4235243,
     "lng": 57.3631214,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "mauricienne"
     ],
     "zone": "ouest"
   },
@@ -6760,7 +6821,8 @@
     "lat": -20.2792457,
     "lng": 57.4036603,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "mauricienne"
     ],
     "zone": "ouest"
   },
@@ -6790,7 +6852,8 @@
     "lat": -20.2787779,
     "lng": 57.3680835,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "mauricienne"
     ],
     "badge": "selection",
     "zone": "ouest"
@@ -6806,7 +6869,9 @@
     "lat": -20.3640805,
     "lng": 57.3808757,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "europeenne",
+      "mauricienne"
     ],
     "zone": "ouest"
   },
@@ -6853,7 +6918,8 @@
     "lat": -20.2796419,
     "lng": 57.369279,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "grillades"
     ],
     "badge": "selection",
     "zone": "ouest"
@@ -6915,7 +6981,8 @@
     "lat": -20.3279508,
     "lng": 57.3850676,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "europeenne"
     ],
     "zone": "ouest"
   },
@@ -6990,7 +7057,9 @@
     "lat": -20.2993951,
     "lng": 57.3638507,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "mauricienne",
+      "fruits-de-mer"
     ],
     "zone": "ouest"
   },
@@ -7005,7 +7074,8 @@
     "lat": -20.280061,
     "lng": 57.3663159,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "grillades"
     ],
     "badge": "selection",
     "zone": "ouest"
@@ -7121,7 +7191,8 @@
     "lat": -20.3580548,
     "lng": 57.3686274,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "grillades"
     ],
     "zone": "ouest"
   },
@@ -7164,7 +7235,8 @@
     "lat": -20.2838553,
     "lng": 57.5297208,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "mauricienne"
     ],
     "zone": "centre"
   },
@@ -7179,7 +7251,8 @@
     "lat": -20.2948211,
     "lng": 57.3655453,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "plus-belles-vues"
     ],
     "zone": "ouest"
   },
@@ -7207,7 +7280,9 @@
     "lat": -20.3278485,
     "lng": 57.3831894,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "mauricienne",
+      "europeenne"
     ],
     "zone": "ouest"
   },
@@ -7237,7 +7312,8 @@
     "lat": -20.2195586,
     "lng": 57.5023321,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "mauricienne"
     ],
     "zone": "centre"
   },
@@ -7358,7 +7434,8 @@
     "lat": -20.4337783,
     "lng": 57.3917824,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "mauricienne"
     ],
     "badge": "selection",
     "zone": "sud"
@@ -7389,7 +7466,8 @@
     "lat": -20.4334616,
     "lng": 57.3913886,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "mauricienne"
     ],
     "zone": "sud"
   },
@@ -7404,7 +7482,9 @@
     "lat": -20.4314628,
     "lng": 57.3902639,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "indienne",
+      "fruits-de-mer"
     ],
     "zone": "ouest"
   },
@@ -7434,7 +7514,8 @@
     "lat": -20.4279284,
     "lng": 57.3963316,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "mauricienne"
     ],
     "zone": "sud"
   },
@@ -7483,7 +7564,9 @@
     "lat": -20.4296863,
     "lng": 57.4237367,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "mauricienne",
+      "plus-belles-vues"
     ],
     "zone": "sud"
   },
@@ -7498,7 +7581,8 @@
     "lat": -20.4756375,
     "lng": 57.3479405,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "mauricienne"
     ],
     "zone": "sud"
   },
@@ -7513,7 +7597,8 @@
     "lat": -20.4289169,
     "lng": 57.3898353,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "mauricienne"
     ],
     "zone": "sud"
   },
@@ -7573,7 +7658,9 @@
     "lat": -20.408582,
     "lng": 57.3695982,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "mauricienne",
+      "fruits-de-mer"
     ],
     "zone": "ouest"
   },
@@ -7588,7 +7675,9 @@
     "lat": -20.4277619,
     "lng": 57.3621092,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "mauricienne",
+      "plus-belles-vues"
     ],
     "zone": "ouest"
   },
@@ -7618,7 +7707,8 @@
     "lat": -20.4293749,
     "lng": 57.3897568,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "mauricienne"
     ],
     "zone": "sud"
   },
@@ -7633,7 +7723,8 @@
     "lat": -20.4407478,
     "lng": 57.3737084,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "plus-belles-vues"
     ],
     "zone": "ouest"
   },
@@ -7648,7 +7739,8 @@
     "lat": -20.4392694,
     "lng": 57.3522416,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "fruits-de-mer"
     ],
     "zone": "ouest"
   },
@@ -7678,7 +7770,9 @@
     "lat": -20.4732925,
     "lng": 57.3464705,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "mauricienne",
+      "frequente-locaux"
     ],
     "zone": "sud"
   },
@@ -7693,7 +7787,9 @@
     "lat": -20.4544526,
     "lng": 57.312328,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "mauricienne",
+      "frequente-locaux"
     ],
     "zone": "sud"
   },
@@ -7723,7 +7819,8 @@
     "lat": -20.4340233,
     "lng": 57.3915771,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "mauricienne"
     ],
     "zone": "sud"
   },
@@ -7753,7 +7850,8 @@
     "lat": -20.4607717,
     "lng": 57.3096982,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "asiatique"
     ],
     "zone": "sud"
   },
@@ -7768,7 +7866,8 @@
     "lat": -20.4184787,
     "lng": 57.3673421,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "fruits-de-mer"
     ],
     "zone": "ouest"
   },
@@ -7798,7 +7897,8 @@
     "lat": -20.4397331,
     "lng": 57.3649636,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "plus-belles-vues"
     ],
     "zone": "sud"
   },
@@ -7813,7 +7913,9 @@
     "lat": -20.4244375,
     "lng": 57.3623125,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "fruits-de-mer",
+      "plus-belles-vues"
     ],
     "zone": "ouest"
   },
@@ -7845,7 +7947,9 @@
     "lat": -20.4311496,
     "lng": 57.3572757,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "mauricienne",
+      "frequente-locaux"
     ],
     "zone": "ouest"
   },
@@ -7860,7 +7964,8 @@
     "lat": -20.4421066,
     "lng": 57.4045033,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "mauricienne"
     ],
     "zone": "sud"
   },
@@ -7888,7 +7993,9 @@
     "lat": -20.4682241,
     "lng": 57.3433398,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "mauricienne",
+      "kids-friendly"
     ],
     "zone": "sud"
   },
@@ -7903,7 +8010,9 @@
     "lat": -20.4474726,
     "lng": 57.3153323,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "kids-friendly",
+      "plus-belles-vues"
     ],
     "zone": "sud"
   },
@@ -7944,7 +8053,8 @@
     "lat": -20.4503449,
     "lng": 57.3142057,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "asiatique"
     ],
     "zone": "sud"
   },
@@ -8002,7 +8112,8 @@
     "lat": -20.4611596,
     "lng": 57.3102354,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "indienne"
     ],
     "zone": "sud"
   },
@@ -8032,7 +8143,8 @@
     "lat": -20.4653684,
     "lng": 57.3420169,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "mauricienne"
     ],
     "zone": "sud"
   },
@@ -8047,7 +8159,8 @@
     "lat": -20.4499646,
     "lng": 57.3146224,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "indienne"
     ],
     "zone": "sud"
   },
@@ -8062,7 +8175,8 @@
     "lat": -20.4339234,
     "lng": 57.3537391,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "fruits-de-mer"
     ],
     "zone": "ouest"
   },
@@ -8122,7 +8236,8 @@
     "lat": -20.5062891,
     "lng": 57.4101924,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "tables-exception"
     ],
     "zone": "sud"
   },
@@ -8155,7 +8270,8 @@
     "lat": -20.503746,
     "lng": 57.401757,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "mauricienne"
     ],
     "priceRange": "bon-marche",
     "badge": "selection",
@@ -8173,7 +8289,8 @@
     "lat": -20.5024899,
     "lng": 57.4007548,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "mauricienne"
     ],
     "zone": "sud"
   },
@@ -8218,7 +8335,8 @@
     "lat": -20.5243294,
     "lng": 57.5301117,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "plus-belles-vues"
     ],
     "zone": "sud"
   },
@@ -8233,7 +8351,8 @@
     "lat": -20.5038055,
     "lng": 57.4019573,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "mauricienne"
     ],
     "zone": "sud"
   },
@@ -8263,7 +8382,8 @@
     "lat": -20.510428,
     "lng": 57.4153224,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "europeenne"
     ],
     "zone": "sud"
   },
@@ -8278,7 +8398,8 @@
     "lat": -20.5039068,
     "lng": 57.4020514,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "europeenne"
     ],
     "zone": "sud"
   },
@@ -8293,7 +8414,9 @@
     "lat": -20.4281954,
     "lng": 57.522337,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "mauricienne",
+      "plus-belles-vues"
     ],
     "badge": "selection",
     "zone": "sud"
@@ -8324,7 +8447,8 @@
     "lat": -20.5129218,
     "lng": 57.4733841,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "grillades"
     ],
     "zone": "sud"
   },
@@ -8339,7 +8463,8 @@
     "lat": -20.4231186,
     "lng": 57.7085353,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "mauricienne"
     ],
     "zone": "sud"
   },
@@ -8354,7 +8479,9 @@
     "lat": -20.5162546,
     "lng": 57.5190763,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "fruits-de-mer",
+      "mauricienne"
     ],
     "zone": "sud"
   },
@@ -8369,7 +8496,8 @@
     "lat": -20.503238,
     "lng": 57.4562078,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "fruits-de-mer"
     ],
     "zone": "sud"
   },
@@ -8384,7 +8512,8 @@
     "lat": -20.5171068,
     "lng": 57.5284577,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "italien"
     ],
     "zone": "sud"
   },
@@ -8434,7 +8563,9 @@
     "lat": -20.2139358,
     "lng": 57.4080123,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "mauricienne",
+      "asiatique"
     ],
     "zone": "ouest"
   },
@@ -8479,7 +8610,8 @@
     "lat": -20.5024735,
     "lng": 57.5441102,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "mauricienne"
     ],
     "zone": "sud"
   },
@@ -8598,7 +8730,9 @@
     "lat": -20.5205862,
     "lng": 57.523404,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "asiatique",
+      "frequente-locaux"
     ],
     "zone": "sud"
   },
@@ -8613,7 +8747,8 @@
     "lat": -20.4102622,
     "lng": 57.7098741,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "mauricienne"
     ],
     "badge": "selection",
     "zone": "sud",
@@ -8683,7 +8818,8 @@
     "lat": -20.1699742,
     "lng": 57.7534415,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "grillades"
     ],
     "zone": "est"
   },
@@ -8746,7 +8882,9 @@
     "lat": -20.1988801,
     "lng": 57.782395,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "europeenne",
+      "plus-belles-vues"
     ],
     "zone": "est"
   },
@@ -8779,7 +8917,8 @@
     "lat": -20.1987355,
     "lng": 57.7823064,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "asiatique"
     ],
     "zone": "est"
   },
@@ -8794,7 +8933,9 @@
     "lat": -20.2475625,
     "lng": 57.7831875,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "indienne",
+      "asiatique"
     ],
     "zone": "est"
   },
@@ -8809,7 +8950,9 @@
     "lat": -20.1636607,
     "lng": 57.7642074,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "europeenne",
+      "plus-belles-vues"
     ],
     "zone": "est"
   },
@@ -8824,7 +8967,8 @@
     "lat": -20.2054736,
     "lng": 57.7866169,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "italien"
     ],
     "zone": "est"
   },
@@ -8901,7 +9045,9 @@
     "lat": -20.1596108,
     "lng": 57.7541382,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "fruits-de-mer",
+      "plus-belles-vues"
     ],
     "zone": "est"
   },
@@ -8916,7 +9062,8 @@
     "lat": -20.2184739,
     "lng": 57.7596995,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "mauricienne"
     ],
     "zone": "est"
   },
@@ -8931,7 +9078,9 @@
     "lat": -20.0469427,
     "lng": 57.5276199,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "fruits-de-mer",
+      "plus-belles-vues"
     ],
     "zone": "nord"
   },
@@ -8946,7 +9095,8 @@
     "lat": -20.1721558,
     "lng": 57.7701926,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "asiatique"
     ],
     "zone": "est"
   },
@@ -8961,7 +9111,9 @@
     "lat": -20.2744472,
     "lng": 57.8076443,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "fruits-de-mer",
+      "plus-belles-vues"
     ],
     "zone": "est"
   },
@@ -8976,7 +9128,8 @@
     "lat": -20.0869523,
     "lng": 57.5160307,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "plus-belles-vues"
     ],
     "zone": "nord"
   },
@@ -8991,7 +9144,9 @@
     "lat": -20.0244385,
     "lng": 57.5523295,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "fruits-de-mer",
+      "grillades"
     ],
     "zone": "nord"
   },
@@ -9006,7 +9161,8 @@
     "lat": -20.2842018,
     "lng": 57.7910523,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "plus-belles-vues"
     ],
     "zone": "est"
   },
@@ -9021,7 +9177,8 @@
     "lat": -20.1725397,
     "lng": 57.770316,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "italien"
     ],
     "zone": "est"
   },
@@ -9036,7 +9193,8 @@
     "lat": -20.1978461,
     "lng": 57.7748409,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "mauricienne"
     ],
     "zone": "est"
   },
@@ -9051,7 +9209,8 @@
     "lat": -20.2571715,
     "lng": 57.7988213,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "grillades"
     ],
     "zone": "est"
   },
@@ -9066,7 +9225,8 @@
     "lat": -20.172648,
     "lng": 57.7700424,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "mauricienne"
     ],
     "zone": "est"
   },
@@ -9081,7 +9241,8 @@
     "lat": -20.1649302,
     "lng": 57.7402363,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "grillades"
     ],
     "zone": "est"
   },
@@ -9116,7 +9277,8 @@
     "lat": -20.1979257,
     "lng": 57.7750013,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "grillades"
     ],
     "zone": "est"
   },
@@ -9152,7 +9314,8 @@
     "lat": -20.1676461,
     "lng": 57.7340553,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "europeenne"
     ],
     "zone": "est"
   },
@@ -9167,7 +9330,8 @@
     "lat": -20.264069,
     "lng": 57.803956,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "grillades"
     ],
     "zone": "est"
   },
@@ -9197,7 +9361,8 @@
     "lat": -20.1759279,
     "lng": 57.7699533,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "asiatique"
     ],
     "zone": "est"
   },
@@ -9227,7 +9392,8 @@
     "lat": -20.1982271,
     "lng": 57.7751315,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "asiatique"
     ],
     "zone": "est"
   },
@@ -9242,7 +9408,8 @@
     "lat": -20.1668419,
     "lng": 57.7662152,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "sushis"
     ],
     "zone": "est"
   },
@@ -9305,7 +9472,8 @@
     "lat": -20.1674867,
     "lng": 57.7665884,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "mauricienne"
     ],
     "zone": "est"
   },
@@ -9339,7 +9507,8 @@
     "lat": -20.2056186,
     "lng": 57.787015,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "plus-belles-vues"
     ],
     "zone": "est"
   },
@@ -9354,7 +9523,9 @@
     "lat": -20.1975902,
     "lng": 57.775098,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "mauricienne",
+      "frequente-locaux"
     ],
     "zone": "est"
   },
@@ -9392,7 +9563,8 @@
     "lat": -19.986258,
     "lng": 57.6227656,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "mauricienne"
     ],
     "badge": "selection",
     "promoText": "Poisson frais grillé au BBQ.",
@@ -9441,7 +9613,8 @@
     "lat": -20.2385234,
     "lng": 57.7927393,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "fruits-de-mer"
     ],
     "zone": "est"
   },
@@ -9486,7 +9659,9 @@
     "lat": -20.2508661,
     "lng": 57.7976942,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "fruits-de-mer",
+      "mauricienne"
     ],
     "zone": "est"
   },
@@ -9531,7 +9706,8 @@
     "lat": -20.2703411,
     "lng": 57.802012,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "grillades"
     ],
     "zone": "est"
   },
@@ -9632,7 +9808,9 @@
     "lat": -20.2412249,
     "lng": 57.7841662,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "mauricienne",
+      "asiatique"
     ],
     "badge": "selection",
     "zone": "est"
@@ -9661,7 +9839,9 @@
     "lat": -20.4234247,
     "lng": 57.7103981,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "mauricienne",
+      "frequente-locaux"
     ],
     "zone": "sud"
   },
@@ -9676,7 +9856,8 @@
     "lat": -20.4247573,
     "lng": 57.7011188,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "mauricienne"
     ],
     "badge": "selection",
     "zone": "sud",
@@ -9693,7 +9874,8 @@
     "lat": -20.4188128,
     "lng": 57.7111122,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "europeenne"
     ],
     "badge": "selection",
     "zone": "sud",
@@ -9710,7 +9892,8 @@
     "lat": -20.4200524,
     "lng": 57.712124,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "fruits-de-mer"
     ],
     "badge": "selection",
     "zone": "sud",
@@ -9727,7 +9910,8 @@
     "lat": -20.4091847,
     "lng": 57.7110733,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "fruits-de-mer"
     ],
     "zone": "sud",
     "description": "Table de fruits de mer et cuisine fusion au coin des rues Hangard et des Mares à Mahébourg, classée #4 sur 33 restaurants de la ville. Accueil très chaleureux, plats copieux et savoureux : poisson épicé aux raisins et cacahuètes cuit en feuille de bananier, crevettes créoles, curry de poisson. Excellent rapport qualité-prix, transfert hôtel gratuit proposé."
@@ -9743,7 +9927,9 @@
     "lat": -20.4063472,
     "lng": 57.7074128,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "mauricienne",
+      "frequente-locaux"
     ],
     "badge": "selection",
     "zone": "sud",
@@ -9760,7 +9946,8 @@
     "lat": -20.4216796,
     "lng": 57.7222159,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "fruits-de-mer"
     ],
     "zone": "sud",
     "description": "Le 1810, restaurant du Preskil Island Resort avec accès direct à la plage. Tartare de thon rouge, crevettes, cuisine locale et internationale dans un cadre soigné avec vue sur l'océan. Bien noté par les clients de l'hôtel, quelques avis mentionnent des tarifs élevés pour les non-résidents."
@@ -9812,7 +9999,9 @@
     "lat": -20.4107756,
     "lng": 57.710556,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "mauricienne",
+      "frequente-locaux"
     ],
     "zone": "sud"
   },
@@ -9827,7 +10016,8 @@
     "lat": -20.4138225,
     "lng": 57.7084353,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "mauricienne"
     ],
     "zone": "sud"
   },
@@ -9842,7 +10032,8 @@
     "lat": -20.4059058,
     "lng": 57.7062682,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "indienne"
     ],
     "zone": "sud"
   },
@@ -9857,7 +10048,8 @@
     "lat": -20.4086808,
     "lng": 57.7093591,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "mauricienne"
     ],
     "zone": "sud"
   },
@@ -9888,7 +10080,9 @@
     "lat": -20.4058373,
     "lng": 57.7081685,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "mauricienne",
+      "grillades"
     ],
     "zone": "sud",
     "description": "Restaurant, grill & bar à Mahébourg noté 4/5 sur 29 avis Tripadvisor. Calamars, poulet, thon, samoussas au fromage et curry de fruits de mer plébiscités, nouilles frites très appréciées. Ambiance simple près d'une gare routière, service rapide et prix raisonnables, mais avis partagés sur la régularité (erreurs de commande, propreté) selon les visites."
@@ -9904,7 +10098,9 @@
     "lat": -20.3816746,
     "lng": 57.6979419,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "mauricienne",
+      "plus-belles-vues"
     ],
     "badge": "selection",
     "zone": "sud"
@@ -9935,7 +10131,9 @@
     "lat": -20.4100128,
     "lng": 57.709485,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "mauricienne",
+      "fruits-de-mer"
     ],
     "badge": "selection",
     "zone": "sud"
@@ -9951,7 +10149,8 @@
     "lat": -20.4439282,
     "lng": 57.7175239,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "frequente-locaux"
     ],
     "zone": "sud"
   },
@@ -9966,7 +10165,9 @@
     "lat": -20.4075253,
     "lng": 57.7080926,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "indienne",
+      "frequente-locaux"
     ],
     "badge": "selection",
     "zone": "sud"
@@ -10000,7 +10201,8 @@
     "lat": -20.407543,
     "lng": 57.7088634,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "mauricienne"
     ],
     "zone": "sud"
   },
@@ -10015,7 +10217,8 @@
     "lat": -20.4086937,
     "lng": 57.708871,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "italien"
     ],
     "zone": "sud"
   },
@@ -10044,7 +10247,8 @@
     "lat": -20.4398928,
     "lng": 57.7224388,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "mauricienne"
     ],
     "badge": "selection",
     "zone": "sud"
@@ -10230,7 +10434,8 @@
     "lat": -20.4487075,
     "lng": 57.7109832,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "plus-belles-vues"
     ],
     "zone": "sud"
   },
@@ -10376,7 +10581,8 @@
     "lat": -20.2205543,
     "lng": 57.5013126,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "mauricienne"
     ],
     "zone": "centre"
   },
@@ -10391,7 +10597,8 @@
     "lat": -20.2244415,
     "lng": 57.5254962,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "europeenne"
     ],
     "zone": "centre"
   },
@@ -10406,7 +10613,8 @@
     "lat": -20.16057,
     "lng": 57.4979611,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "europeenne"
     ],
     "zone": "centre"
   },
@@ -10438,7 +10646,9 @@
     "lat": -20.1604302,
     "lng": 57.4954777,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "fruits-de-mer",
+      "sushis"
     ],
     "zone": "centre"
   },
@@ -10532,7 +10742,9 @@
     "lat": -20.3175135,
     "lng": 57.5231855,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "fruits-de-mer",
+      "kids-friendly"
     ],
     "zone": "centre"
   },
@@ -10547,7 +10759,8 @@
     "lat": -20.2250575,
     "lng": 57.4965388,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "fruits-de-mer"
     ],
     "zone": "centre"
   },
@@ -10577,7 +10790,8 @@
     "lat": -20.3230382,
     "lng": 57.5103677,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "asiatique"
     ],
     "zone": "centre"
   },
@@ -10671,7 +10885,8 @@
     "lat": -20.2306259,
     "lng": 57.5103578,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "indienne"
     ],
     "zone": "centre"
   },
@@ -10718,7 +10933,8 @@
     "lat": -20.1650314,
     "lng": 57.5004619,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "mauricienne"
     ],
     "zone": "centre"
   },
@@ -10733,7 +10949,8 @@
     "lat": -20.1608942,
     "lng": 57.4985861,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "italien"
     ],
     "zone": "centre"
   },
@@ -10748,7 +10965,9 @@
     "lat": -20.3197343,
     "lng": 57.517543,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "asiatique",
+      "mauricienne"
     ],
     "zone": "centre"
   },
@@ -10781,7 +11000,8 @@
     "lat": -20.1610803,
     "lng": 57.5005004,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "indienne"
     ],
     "zone": "centre"
   },
@@ -10796,7 +11016,8 @@
     "lat": -20.1591027,
     "lng": 57.5063561,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "asiatique"
     ],
     "zone": "centre"
   },
@@ -10811,7 +11032,8 @@
     "lat": -20.1242549,
     "lng": 57.517217,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "asiatique"
     ],
     "zone": "nord"
   },
@@ -10841,7 +11063,9 @@
     "lat": -20.31741,
     "lng": 57.5232802,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "fruits-de-mer",
+      "europeenne"
     ],
     "zone": "centre"
   },
@@ -10856,7 +11080,8 @@
     "lat": -20.1681607,
     "lng": 57.4985707,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "asiatique"
     ],
     "zone": "centre"
   },
@@ -10871,7 +11096,8 @@
     "lat": -20.1307202,
     "lng": 57.5207188,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "asiatique"
     ],
     "zone": "nord"
   },
@@ -10967,7 +11193,8 @@
     "lat": -20.1622536,
     "lng": 57.5043747,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "indienne"
     ],
     "zone": "centre"
   },
@@ -10982,7 +11209,8 @@
     "lat": -20.3058118,
     "lng": 57.5302431,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "grillades"
     ],
     "zone": "centre"
   },
@@ -10997,7 +11225,8 @@
     "lat": -20.1655907,
     "lng": 57.5004343,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "europeenne"
     ],
     "zone": "centre"
   },
@@ -11012,7 +11241,8 @@
     "lat": -20.3383425,
     "lng": 57.7667997,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "fruits-de-mer"
     ],
     "zone": "est"
   },
@@ -11027,7 +11257,8 @@
     "lat": -20.1626146,
     "lng": 57.5066763,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "asiatique"
     ],
     "zone": "centre"
   },
@@ -11057,7 +11288,8 @@
     "lat": -20.2425083,
     "lng": 57.4884031,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "asiatique"
     ],
     "zone": "centre"
   },
@@ -11085,7 +11317,8 @@
     "lat": -20.3186676,
     "lng": 57.5241636,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "grillades"
     ],
     "zone": "centre"
   },
@@ -11117,7 +11350,8 @@
     "lat": -20.2249012,
     "lng": 57.4965885,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "asiatique"
     ],
     "zone": "centre"
   },
@@ -11132,7 +11366,8 @@
     "lat": -20.1581587,
     "lng": 57.5136771,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "grillades"
     ],
     "zone": "centre"
   },
@@ -11165,7 +11400,8 @@
     "lat": -20.2248893,
     "lng": 57.4967467,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "asiatique"
     ],
     "zone": "centre"
   },
@@ -11180,7 +11416,8 @@
     "lat": -20.316841,
     "lng": 57.5234233,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "asiatique"
     ],
     "zone": "centre"
   },
@@ -11240,7 +11477,8 @@
     "lat": -20.1633751,
     "lng": 57.5003306,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "asiatique"
     ],
     "zone": "centre"
   },
@@ -11301,7 +11539,8 @@
     "lat": -20.1604224,
     "lng": 57.5084117,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "asiatique"
     ],
     "zone": "centre"
   },
@@ -11376,7 +11615,8 @@
     "lat": -20.2707909,
     "lng": 57.806158,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "grillades"
     ],
     "zone": "est"
   },
@@ -11436,7 +11676,9 @@
     "lat": -20.1624316,
     "lng": 57.5040031,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "grillades",
+      "kids-friendly"
     ],
     "zone": "centre"
   },
@@ -11464,7 +11706,8 @@
     "lat": -20.2245779,
     "lng": 57.4969998,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "grillades"
     ],
     "zone": "centre"
   },
@@ -12209,7 +12452,9 @@
     "lat": -20.4600178,
     "lng": 57.4870915,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "mauricienne",
+      "grillades"
     ],
     "zone": "sud"
   },
@@ -13465,7 +13710,8 @@
     "lat": -20.0107988,
     "lng": 57.5638409,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "fruits-de-mer"
     ],
     "zone": "nord"
   },
@@ -17290,7 +17536,8 @@
     "lat": -20.2810281,
     "lng": 57.3687641,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "italien"
     ],
     "zone": "ouest"
   },
@@ -17305,7 +17552,9 @@
     "lat": -20.3290235,
     "lng": 57.377495,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "mauricienne",
+      "asiatique"
     ],
     "zone": "ouest"
   },
@@ -17320,7 +17569,8 @@
     "lat": -20.279226,
     "lng": 57.367666,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "asiatique"
     ],
     "zone": "ouest"
   },
@@ -17335,7 +17585,9 @@
     "lat": -20.3609224,
     "lng": 57.3718187,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "italien",
+      "grillades"
     ],
     "zone": "ouest"
   },
@@ -23222,7 +23474,8 @@
     "lat": -20.5038613,
     "lng": 57.4018726,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "mauricienne"
     ],
     "zone": "sud"
   },
@@ -23237,7 +23490,9 @@
     "lat": -20.4998681,
     "lng": 57.5635449,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "mauricienne",
+      "europeenne"
     ],
     "badge": "selection",
     "zone": "sud"
@@ -27362,7 +27617,9 @@
     "lat": -19.9848104,
     "lng": 57.6129935,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "fruits-de-mer",
+      "frequente-locaux"
     ],
     "badge": "selection",
     "zone": "nord"
@@ -27431,7 +27688,9 @@
     "lat": -20.4960821,
     "lng": 57.3842837,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "mauricienne",
+      "plus-belles-vues"
     ],
     "badge": "selection",
     "zone": "sud"
@@ -31938,7 +32197,8 @@
     "lat": -20.3514749,
     "lng": 57.3619171,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "mauricienne"
     ],
     "zone": "ouest"
   },
@@ -32268,7 +32528,9 @@
     "lat": -20.4568842,
     "lng": 57.3113775,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "sushis",
+      "tables-exception"
     ],
     "zone": "ouest"
   },
@@ -32541,7 +32803,8 @@
     "lat": -20.0536532,
     "lng": 57.5225119,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "fruits-de-mer"
     ],
     "zone": "nord"
   },
