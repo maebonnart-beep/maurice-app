@@ -7641,15 +7641,19 @@
     "name": "Lakaz Chamarel View Bar",
     "category": "food",
     "address": "H9FM+VCV, Chamarel",
-    "phone": "",
+    "phone": "+230 483 4240",
     "website": "",
     "googleMapsUrl": "https://maps.google.com/?cid=3068299498280737978&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.4252715,
     "lng": 57.3835498,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "bars",
+      "plus-belles-vues"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "badge": "coup-de-coeur",
+    "description": "Bar perché sur les hauteurs du domaine de Lakaz Chamarel, à Piton Canot, avec une vue panoramique sur les terres colorées de Chamarel jusqu'à la mer. Réputé pour ses couchers de soleil \"magiques\", ses cocktails travaillés (dont le Chamarel Passion Mojito) et son ambiance intimiste ; DJ live le samedi soir. Ouvert tous les jours de 16h30 à 19h30, accessible aux résidents comme aux visiteurs sur réservation."
   },
   {
     "id": "la-table-du-currybou",
