@@ -19726,9 +19726,14 @@
     "lat": -20.4396723,
     "lng": 57.3893461,
     "themes": [
-      "culture-patrimoine"
+      "culture-patrimoine",
+      "activites-enfants-famille"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Visite guidée de la plantation de café de Chamarel (7 Coloured Earth Road), avec balade au cœur des caféiers puis séance de dégustation (cupping) en fin de parcours. Durée d'environ 80 minutes, réservation à l'avance recommandée.",
+    "hours": "Départs guidés à 9h, 11h, 13h et 15h tous les jours",
+    "entryPrice": "Rs 750 non-résidents / Rs 500 résidents (enfants : Rs 375 / Rs 250)",
+    "duration": "Environ 1h20"
   },
   {
     "id": "aventures-mascareignes",
@@ -35950,5 +35955,24 @@
     "hours": "Lun-Ven 9h-16h, Sam 9h-12h",
     "zone": "centre",
     "description": "Bibliothèque nationale ouverte au public depuis 2000, plus de 230 000 documents : livres, journaux, cartes et archives historiques du pays."
+  },
+  {
+    "id": "world-of-seashells-bel-ombre",
+    "name": "World of Seashells",
+    "category": "activites",
+    "address": "Place du Moulin, Bel Ombre",
+    "phone": "+230 623 7984",
+    "website": "https://www.worldofseashells.mu/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.5047007,57.4117423",
+    "lat": -20.5047007,
+    "lng": 57.4117423,
+    "themes": [
+      "activites-enfants-famille",
+      "culture-patrimoine"
+    ],
+    "zone": "sud",
+    "description": "Le plus grand musée de coquillages d'Afrique, installé sur le site de l'ancienne sucrerie de Bel Ombre. Plus de 8 000 spécimens représentant environ 1 500 espèces et 150 familles venus du monde entier, présentés à travers un parcours pédagogique et interactif, avec boutique sur place.",
+    "hours": "Lun-Sam 9h-17h (dernière entrée 16h), Dim & jours fériés 9h-16h (dernière entrée 15h)",
+    "entryPrice": "Résidents : Rs 175 adulte / Rs 90 enfant (5-11 ans) — Non-résidents : Rs 350 adulte / Rs 175 enfant (5-11 ans), gratuit -5 ans"
   }
 ]
