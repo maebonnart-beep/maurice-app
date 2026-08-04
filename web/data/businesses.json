@@ -7468,8 +7468,7 @@
     "lng": 57.3737084,
     "themes": [
       "restaurants",
-      "cafes-terrasses",
-      "snacks-plage"
+      "cafes-terrasses"
     ],
     "zone": "ouest"
   },
@@ -8706,7 +8705,8 @@
       "fruits-de-mer",
       "plus-belles-vues"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Restaurant de plage du One&Only Le Saint Géran (Pointe de Flacq), ambiance décontractée et rustique face à l'océan : fruits de mer et poisson grillés au feu de bois, pizzas au feu de bois les pieds dans le sable, cocktails tropicaux. Vue panoramique sur mer et lagon depuis la piscine principale ; pop-up grec 3 fois par semaine avec saveurs méditerranéennes."
   },
   {
     "id": "mamie-sophie-table-d-hote",
