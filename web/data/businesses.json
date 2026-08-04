@@ -5968,9 +5968,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=1988431656985338374&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.0221543,
     "lng": 57.5777735,
-    "themes": [
-      "restaurants"
-    ],
+    "themes": [],
     "zone": "nord"
   },
   {
@@ -5984,7 +5982,8 @@
     "lat": -20.0238137,
     "lng": 57.5751156,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "mauricienne"
     ],
     "zone": "nord"
   },
@@ -6205,7 +6204,8 @@
     "lat": -20.3454487,
     "lng": 57.3643791,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "grillades"
     ],
     "zone": "ouest"
   },
@@ -6384,7 +6384,9 @@
     "lat": -20.2755218,
     "lng": 57.3708327,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "mauricienne",
+      "fruits-de-mer"
     ],
     "badge": "selection",
     "zone": "ouest"
@@ -6483,7 +6485,8 @@
     "lat": -20.3109361,
     "lng": 57.3674046,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "plus-belles-vues"
     ],
     "zone": "ouest"
   },
@@ -6514,7 +6517,8 @@
     "lat": -20.3285107,
     "lng": 57.3776225,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "frequente-locaux"
     ],
     "zone": "ouest"
   },
@@ -6649,7 +6653,8 @@
     "lat": -20.2846237,
     "lng": 57.3646416,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "mauricienne"
     ],
     "badge": "selection",
     "zone": "ouest"
@@ -6754,7 +6759,8 @@
     "lat": -20.3681978,
     "lng": 57.3802421,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "vegetarien"
     ],
     "badge": "selection",
     "zone": "ouest"
@@ -6837,7 +6843,9 @@
     "lat": -20.3681968,
     "lng": 57.3802421,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "vegetarien",
+      "mauricienne"
     ],
     "zone": "ouest"
   },
@@ -6903,7 +6911,8 @@
     "lat": -20.3096474,
     "lng": 57.3667657,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "plus-belles-vues"
     ],
     "zone": "ouest"
   },
@@ -6935,7 +6944,9 @@
     "lat": -20.2831426,
     "lng": 57.3651032,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "asiatique",
+      "fruits-de-mer"
     ],
     "zone": "ouest"
   },
@@ -7105,9 +7116,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=7081802525506342010&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.3483231,
     "lng": 57.3645046,
-    "themes": [
-      "restaurants"
-    ],
+    "themes": [],
     "badge": "selection",
     "zone": "ouest"
   },
@@ -7121,9 +7130,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=1102588889513155864&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.326921,
     "lng": 57.3777289,
-    "themes": [
-      "restaurants"
-    ],
+    "themes": [],
     "zone": "ouest"
   },
   {
@@ -7136,9 +7143,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=13539480244149342717&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.355836,
     "lng": 57.3656187,
-    "themes": [
-      "restaurants"
-    ],
+    "themes": [],
     "zone": "ouest"
   },
   {
@@ -7219,9 +7224,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=351596581513574645&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.2825257,
     "lng": 57.3648028,
-    "themes": [
-      "restaurants"
-    ],
+    "themes": [],
     "zone": "ouest"
   },
   {
@@ -7296,9 +7299,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=10779353301087393037&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.3571875,
     "lng": 57.3673125,
-    "themes": [
-      "restaurants"
-    ],
+    "themes": [],
     "zone": "ouest"
   },
   {
@@ -7530,7 +7531,9 @@
     "lat": -20.4348847,
     "lng": 57.3913886,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "fruits-de-mer",
+      "mauricienne"
     ],
     "zone": "sud"
   },
@@ -7613,7 +7616,9 @@
     "lat": -20.4336301,
     "lng": 57.3914597,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "mauricienne",
+      "asiatique"
     ],
     "zone": "sud"
   },
@@ -7628,7 +7633,8 @@
     "lat": -20.4250079,
     "lng": 57.3909083,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "mauricienne"
     ],
     "zone": "sud"
   },
@@ -7692,7 +7698,9 @@
     "lat": -20.4404306,
     "lng": 57.3650022,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "fruits-de-mer",
+      "plus-belles-vues"
     ],
     "zone": "ouest"
   },
@@ -7755,7 +7763,9 @@
     "lat": -20.4363639,
     "lng": 57.3206411,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "mauricienne",
+      "fruits-de-mer"
     ],
     "zone": "sud"
   },
@@ -7804,7 +7814,9 @@
     "lat": -20.4281741,
     "lng": 57.3897135,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "mauricienne",
+      "fruits-de-mer"
     ],
     "zone": "sud"
   },
@@ -7882,7 +7894,9 @@
     "lat": -20.4549813,
     "lng": 57.3118306,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "italien",
+      "plus-belles-vues"
     ],
     "zone": "sud"
   },
@@ -8097,7 +8111,9 @@
     "lat": -20.4265396,
     "lng": 57.3605965,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "mauricienne",
+      "italien"
     ],
     "zone": "ouest"
   },
@@ -8127,9 +8143,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=13191360546103437183&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.4257913,
     "lng": 57.3915033,
-    "themes": [
-      "restaurants"
-    ],
+    "themes": [],
     "zone": "sud"
   },
   {
@@ -8191,7 +8205,8 @@
     "lat": -20.4366633,
     "lng": 57.3201947,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "plus-belles-vues"
     ],
     "zone": "sud"
   },
@@ -8305,7 +8320,9 @@
     "lat": -20.5111529,
     "lng": 57.4198119,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "tables-exception",
+      "mauricienne"
     ],
     "zone": "sud"
   },
@@ -8320,7 +8337,8 @@
     "lat": -20.5084794,
     "lng": 57.4129135,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "indienne"
     ],
     "zone": "sud"
   },
@@ -8367,7 +8385,9 @@
     "lat": -20.5090541,
     "lng": 57.4131252,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "mauricienne",
+      "kids-friendly"
     ],
     "zone": "sud"
   },
@@ -8432,7 +8452,9 @@
     "lat": -20.497237,
     "lng": 57.5571769,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "fruits-de-mer",
+      "mauricienne"
     ],
     "zone": "sud"
   },
@@ -8580,7 +8602,8 @@
     "lat": -20.5243978,
     "lng": 57.5304475,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "frequente-locaux"
     ],
     "zone": "sud"
   },
@@ -8595,7 +8618,9 @@
     "lat": -20.4928768,
     "lng": 57.3789877,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "mauricienne",
+      "fruits-de-mer"
     ],
     "zone": "sud"
   },
@@ -8652,7 +8677,8 @@
     "lat": -20.5114824,
     "lng": 57.4160183,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "plus-belles-vues"
     ],
     "zone": "sud"
   },
@@ -8715,7 +8741,8 @@
     "lat": -20.4286249,
     "lng": 57.6685442,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "frequente-locaux"
     ],
     "zone": "sud"
   },
@@ -8849,7 +8876,8 @@
     "lat": -20.2053907,
     "lng": 57.7852439,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "asiatique"
     ],
     "zone": "est"
   },
@@ -9000,7 +9028,9 @@
     "lat": -20.1961994,
     "lng": 57.7748967,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "mauricienne",
+      "fruits-de-mer"
     ],
     "zone": "est"
   },
@@ -9015,7 +9045,9 @@
     "lat": -20.1714886,
     "lng": 57.7707787,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "mauricienne",
+      "fruits-de-mer"
     ],
     "zone": "est"
   },
@@ -9030,7 +9062,8 @@
     "lat": -20.1837521,
     "lng": 57.714277,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "europeenne"
     ],
     "zone": "est"
   },
@@ -9376,9 +9409,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=7072534284327991378&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.2009255,
     "lng": 57.765798,
-    "themes": [
-      "restaurants"
-    ],
+    "themes": [],
     "zone": "est"
   },
   {
@@ -9424,7 +9455,8 @@
     "lat": -20.1987355,
     "lng": 57.7823064,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "plus-belles-vues"
     ],
     "zone": "est"
   },
@@ -9439,7 +9471,8 @@
     "lat": -20.1988589,
     "lng": 57.7822886,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "kids-friendly"
     ],
     "zone": "est"
   },
@@ -9722,7 +9755,8 @@
     "lat": -20.2419901,
     "lng": 57.783877,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "grillades"
     ],
     "zone": "est"
   },
@@ -9779,9 +9813,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=1210452619120410095&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.2385528,
     "lng": 57.7895344,
-    "themes": [
-      "restaurants"
-    ],
+    "themes": [],
     "zone": "est"
   },
   {
@@ -10064,7 +10096,8 @@
     "lat": -20.407782,
     "lng": 57.7073763,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "asiatique"
     ],
     "badge": "selection",
     "zone": "sud"
@@ -10116,7 +10149,9 @@
     "lat": -20.4513156,
     "lng": 57.7010365,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "grillades",
+      "fruits-de-mer"
     ],
     "zone": "sud"
   },
@@ -10336,9 +10371,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=8905464183716599138&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.4050275,
     "lng": 57.7097567,
-    "themes": [
-      "restaurants"
-    ],
+    "themes": [],
     "zone": "sud"
   },
   {
@@ -10405,9 +10438,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=16089855110617734159&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.4451136,
     "lng": 57.7173644,
-    "themes": [
-      "restaurants"
-    ],
+    "themes": [],
     "zone": "sud"
   },
   {
@@ -10477,7 +10508,9 @@
     "lat": -20.44518,
     "lng": 57.7187576,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "mauricienne",
+      "fruits-de-mer"
     ],
     "zone": "sud"
   },
@@ -10491,9 +10524,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=9567869243168682125&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.4453788,
     "lng": 57.702048,
-    "themes": [
-      "restaurants"
-    ],
+    "themes": [],
     "zone": "sud"
   },
   {
@@ -10727,7 +10758,9 @@
     "lat": -20.3172417,
     "lng": 57.5086754,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "grillades",
+      "kids-friendly"
     ],
     "zone": "centre"
   },
@@ -10775,7 +10808,8 @@
     "lat": -20.21759,
     "lng": 57.4919939,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "italien"
     ],
     "zone": "centre"
   },
@@ -10855,7 +10889,9 @@
     "lat": -20.3189494,
     "lng": 57.524023,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "fruits-de-mer",
+      "mauricienne"
     ],
     "zone": "centre"
   },
@@ -10917,9 +10953,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=17467035142178210687&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.1928576,
     "lng": 57.4912762,
-    "themes": [
-      "restaurants"
-    ],
+    "themes": [],
     "zone": "centre"
   },
   {
@@ -11145,7 +11179,8 @@
     "lat": -20.3168305,
     "lng": 57.5234481,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "grillades"
     ],
     "zone": "centre"
   },
@@ -11160,7 +11195,9 @@
     "lat": -20.1620773,
     "lng": 57.5045264,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "asiatique",
+      "mauricienne"
     ],
     "zone": "centre"
   },
@@ -11447,7 +11484,8 @@
     "lat": -20.2309437,
     "lng": 57.5090128,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "europeenne"
     ],
     "zone": "centre"
   },
@@ -11462,7 +11500,9 @@
     "lat": -20.1262467,
     "lng": 57.5379679,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "mauricienne",
+      "frequente-locaux"
     ],
     "zone": "centre"
   },
@@ -11508,7 +11548,6 @@
     "lat": -20.2243893,
     "lng": 57.496401,
     "themes": [
-      "restaurants",
       "vins-spiritueux"
     ],
     "zone": "centre"
@@ -11524,7 +11563,8 @@
     "lat": -20.2261417,
     "lng": 57.4990057,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "kids-friendly"
     ],
     "zone": "centre"
   },
@@ -11569,9 +11609,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=18080755012198366233&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.2250377,
     "lng": 57.5060374,
-    "themes": [
-      "restaurants"
-    ],
+    "themes": [],
     "zone": "centre"
   },
   {
@@ -11631,7 +11669,8 @@
     "lat": -20.2247369,
     "lng": 57.4968745,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "asiatique"
     ],
     "zone": "centre"
   },
@@ -11661,7 +11700,8 @@
     "lat": -20.2666171,
     "lng": 57.4937829,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "frequente-locaux"
     ],
     "zone": "centre"
   },
@@ -13665,7 +13705,9 @@
     "lat": -20.0134396,
     "lng": 57.5867186,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "fruits-de-mer",
+      "plus-belles-vues"
     ],
     "zone": "nord"
   },
@@ -13680,7 +13722,9 @@
     "lat": -20.009677,
     "lng": 57.5859394,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "fruits-de-mer",
+      "europeenne"
     ],
     "zone": "nord"
   },
@@ -13695,7 +13739,8 @@
     "lat": -20.0139851,
     "lng": 57.5872349,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "grillades"
     ],
     "zone": "nord"
   },
@@ -19910,9 +19955,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=383126218730179435&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.4406171,
     "lng": 57.3918137,
-    "themes": [
-      "restaurants"
-    ],
+    "themes": [],
     "zone": "sud"
   },
   {
@@ -25681,9 +25724,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=17905969580795792854&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.1684156,
     "lng": 57.7659135,
-    "themes": [
-      "restaurants"
-    ],
+    "themes": [],
     "zone": "est"
   },
   {
@@ -27671,9 +27712,7 @@
     "googleMapsUrl": "https://maps.app.goo.gl/kpRaNk1x7km8rNBo7",
     "lat": -20.4421933,
     "lng": 57.7204477,
-    "themes": [
-      "restaurants"
-    ],
+    "themes": [],
     "badge": "selection",
     "zone": "sud"
   },
