@@ -5699,7 +5699,8 @@
       "europeenne",
       "plus-belles-vues"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Restaurant familial de Grand Baie réputé pour ses fruits de mer frais et sa côte de bœuf, avec une belle vue mer malgré la proximité de la route côtière. Noté 4,5/5 sur TripAdvisor, ambiance conviviale."
   },
   {
     "id": "max-mamma-mia",
@@ -6368,7 +6369,8 @@
       "restaurants",
       "plus-belles-vues"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Restaurant principal du Sofitel Mauritius L'Impérial (Wolmar), buffets thématiques (mauricien, français, indien, pêcheur, latino, BBQ) sous une charpente en bois de style asiatique. Tables en bord de piscine avec vue dégagée sur l'océan, particulièrement appréciées au dîner à la bougie."
   },
   {
     "id": "tiger-s-milk-flic-en-flac",
@@ -6779,7 +6781,8 @@
       "restaurants",
       "plus-belles-vues"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Bar d'ambiance du Hilton Mauritius Resort & Spa (Wolmar), au bord de la piscine à débordement. Cocktails signature, bières locales et snacks mauriciens dans un décor tropical, animé en soirée avec parfois de la musique live."
   },
   {
     "id": "kenzi-bar",
@@ -7031,7 +7034,8 @@
       "restaurants",
       "plus-belles-vues"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Restaurant du domaine de Wolmar (600 hectares), servant petit-déjeuner, déjeuner et dîner autour d'une cuisine mêlant saveurs mauriciennes et internationales. À privilégier au coucher du soleil pour la meilleure vue et une ambiance romantique en bord de mer."
   },
   {
     "id": "london-way-supermarket-black-river",
@@ -7315,7 +7319,8 @@
       "mauricienne",
       "plus-belles-vues"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Restaurant rustique et convivial du Domaine St Denis à Chamarel, présenté comme l'un des restaurants les plus hauts de l'île, avec vue sur les montagnes et, au loin, sur la Montagne du Morne. Cuisine locale généreuse (buffets, burgers, langoustes grillées) ; accueille aussi mariages et événements."
   },
   {
     "id": "kot-zanane-food-adventure-table-dhote",
@@ -7414,7 +7419,8 @@
       "mauricienne",
       "plus-belles-vues"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Café-restaurant familial de La Gaulette, tenu par un couple local, servant une cuisine mauricienne à base de produits locaux pour le petit-déjeuner, le déjeuner et le dîner. Réputé pour ses superbes vues dans une ambiance familiale et décontractée."
   },
   {
     "id": "seaforest-restaurant",
@@ -7431,7 +7437,8 @@
       "fruits-de-mer",
       "plus-belles-vues"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Restaurant-bar des Chalets Chamarel, à La Gaulette, offrant une vue panoramique sur les forêts de Chamarel, Bel Ombre et l'océan. Cuisine locale et internationale dans un cadre montagnard préservé."
   },
   {
     "id": "la-marmite-de-chamarel",
@@ -7612,7 +7619,8 @@
       "italien",
       "plus-belles-vues"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Restaurant de plage du LUX* Le Morne, inspiré de la cuisine méditerranéenne et italienne, servi au déjeuner et au dîner face à la mer sur la côte ouest. Ambiance \"island chic\" recommandée le soir, pour une véritable escapade en plein air."
   },
   {
     "id": "chalets-chamarel",
@@ -7628,7 +7636,8 @@
       "restaurants",
       "plus-belles-vues"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Petit lodge adults-only (11 chalets/suites) niché en montagne à Chamarel, doté d'un bar-restaurant (SeaForest) à la vue panoramique sur les forêts de Chamarel, Bel Ombre et l'océan. Toutes les chambres bénéficient également d'une vue sur mer."
   },
   {
     "id": "eldorade-resto-bar",
@@ -7645,7 +7654,8 @@
       "fruits-de-mer",
       "plus-belles-vues"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Restaurant-bar du village de La Gaulette, réputé pour ses fruits de mer (calamars, salade de poulpe, thon) et son bon rapport qualité-prix. Noté 4,1/5 sur TripAdvisor ; la vue est particulièrement appréciée au coucher du soleil."
   },
   {
     "id": "dina-s",
@@ -7742,7 +7752,8 @@
       "kids-friendly",
       "plus-belles-vues"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Restaurant de plage de l'hôtel Dinarobin Beachcomber (100 couverts), au pied du Morne Brabant, face à une plage de sable blanc et un lagon turquoise. Spécialités de poissons et fruits de mer locaux, service le midi tous les jours, dîner sur la plage un soir par semaine en saison."
   },
   {
     "id": "le-morne-tamarin-viewpoint",
@@ -7907,7 +7918,8 @@
       "restaurants",
       "plus-belles-vues"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Bar principal de l'hôtel Paradis Beachcomber (Le Morne), surplombant la piscine et le lagon. Cocktails tropicaux, terrasse ouverte avec vue sur piscine et plage, animations musicales en soirée."
   },
   {
     "id": "annabella-s",
@@ -8025,7 +8037,8 @@
       "restaurants",
       "plus-belles-vues"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Restaurant de Souillac face à la plage publique de Gris-Gris, cuisine fruits de mer/mauricienne/chinoise/européenne/indienne. Avis contrastés : belle vue et soupe de crabe appréciées par certains, prix jugés élevés par d'autres."
   },
   {
     "id": "la-roche-cari",
@@ -8108,7 +8121,8 @@
       "plus-belles-vues"
     ],
     "badge": "selection",
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Restaurant tout en verre du Domaine de Bois Chéri, perché en bordure du lac de cratère des Cygnes depuis 2008, avec une vue panoramique confirmée sur la plantation de thé et la côte sud. Cuisine mauricienne mettant le thé à l'honneur."
   },
   {
     "id": "saveurs-otentik-restaurant",
@@ -8334,7 +8348,8 @@
       "restaurants",
       "plus-belles-vues"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Bar-restaurant convivial de Bel Ombre (Allée des Cocotiers), musique live, cuisine fruits de mer et viandes. Avis soulignant de bonnes boissons fraîches avec une vue magnifique et un bon rapport qualité-prix."
   },
   {
     "id": "the-spot-cafe",
@@ -8520,7 +8535,8 @@
       "europeenne",
       "plus-belles-vues"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Beach club et restaurant du LUX* Belle Mare, sur la plage, cuisine méditerranéenne avec options végé/vegan/sans gluten. Déjeuners avec vue sur mer confirmée par les avis, ambiance qui vire au \"rouge électrique\" au coucher du soleil."
   },
   {
     "id": "blue-penny-cellar",
@@ -8588,7 +8604,8 @@
       "europeenne",
       "plus-belles-vues"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Restaurant italien/méditerranéen de Poste de Flacq (distinct de La Spiaggia du Constance Belle Mare Plage), sur un deck en bois avec vue sur mer. Pâtes maison, pizzas au feu de bois, fruits de mer et langouste hebdomadaire ; très bien noté (4,7/5)."
   },
   {
     "id": "dolce-vita-restaurant",
@@ -8721,7 +8738,8 @@
       "fruits-de-mer",
       "plus-belles-vues"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Restaurant de plage de l'hôtel Voile Bleue à Pointe aux Biches (Trou-aux-Biches), cuisine créole et internationale à base de fruits de mer frais. Vue superbe au coucher du soleil, accès direct à la plage, buffet avec musique live le mercredi soir."
   },
   {
     "id": "chopsticks",
@@ -8754,7 +8772,8 @@
       "fruits-de-mer",
       "plus-belles-vues"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Restaurant de plage niché sur l'Île aux Cerfs, réputé pour sa vue panoramique sur l'océan et son cadre balnéaire préservé. Poissons et fruits de mer, viandes grillées et plats végétariens, accueil chaleureux salué par les avis."
   },
   {
     "id": "restaurant-belle-vue",
@@ -8770,7 +8789,8 @@
       "restaurants",
       "plus-belles-vues"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Restaurant principal à l'ambiance coloniale de l'hôtel Maritim (Balaclava/Turtle Bay), dominant la piscine et la mer. Buffet varié avec stations \"live cooking\" et comptoir à sushis en soirée."
   },
   {
     "id": "langouste-griller-dine-in-restaurant",
@@ -8803,7 +8823,8 @@
       "restaurants",
       "plus-belles-vues"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Bar-lounge du Four Seasons Anahita (Beau Champ), en bord de lagon, cocktails d'exception (rhums de 14 pays) et ambiance festive du jour à la nuit. Vue sur le lagon scintillant, entre terrasse extérieure et salon intérieur."
   },
   {
     "id": "sapori",
@@ -9049,7 +9070,8 @@
       "restaurants",
       "plus-belles-vues"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Bar au bord de la piscine du LUX* Belle Mare, avec vue dégagée sur le lagon et le bassin. Cocktails inventifs, mocktails, vins et bières artisanales, idéal pour une pause en fin d'après-midi."
   },
   {
     "id": "mondo-lux-belle-mare",
@@ -9134,7 +9156,8 @@
       "restaurants",
       "plus-belles-vues"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Restaurant principal de l'Ambre Resort & Spa (Palmar), à côté de la piscine, buffet international vivant (cuisines mauricienne, indienne, chinoise) avec stations \"live cooking\". Un des buffets les mieux notés du resort selon TripAdvisor."
   },
   {
     "id": "belle-mare-snack",
@@ -9622,7 +9645,8 @@
       "plus-belles-vues"
     ],
     "badge": "selection",
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Restaurant perché en léger surplomb de la côte à Vieux Grand Port, avec vue remarquable sur la baie du Grand Port et la Montagne du Lion, entre mer et forêt native. Cuisine locale et de saison à base de produits de fermes voisines, sur un site chargé d'histoire."
   },
   {
     "id": "sea-fire-salt-restaurant",
@@ -9924,7 +9948,8 @@
       "restaurants",
       "plus-belles-vues"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Île privée accessible en 5 minutes de bateau depuis la jetée de Blue Bay, au sein du parc marin. Buffet généreux préparé en plein air (grillades, salades du jardin) dans un cadre insulaire exceptionnel, ancienne propriété d'un gouverneur britannique des années 1920."
   },
   {
     "id": "hotel-les-aigrettes",
@@ -12955,7 +12980,8 @@
       "fruits-de-mer",
       "plus-belles-vues"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Restaurant de fruits de mer de Grand Baie (route de la Salette), qui se présente comme l'un des restaurants avec la meilleure vue de la région. Très bien noté sur TripAdvisor, réputé pour ses fruits de mer."
   },
   {
     "id": "dodo-loco",
@@ -26935,7 +26961,8 @@
       "plus-belles-vues"
     ],
     "badge": "selection",
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Restaurant-bar en bord de route royale à Baie du Cap, terrasse lumineuse avec vue dégagée sur le lagon et la mer. Cuisine mauricienne revisitée mêlée à la gastronomie française, concerts le samedi soir ; noté 4,3/5."
   },
   {
     "id": "bar-gold-beach-resort",
