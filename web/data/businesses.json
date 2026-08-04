@@ -7061,22 +7061,6 @@
     "zone": "ouest"
   },
   {
-    "id": "ti-karaye",
-    "name": "Ti karaye",
-    "category": "food",
-    "address": "Moka, Maurice",
-    "phone": "+230 484 1473",
-    "website": "http://www.tikaraye.mu/",
-    "googleMapsUrl": "https://maps.google.com/?cid=11680465485344758465&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.2195586,
-    "lng": 57.5023321,
-    "themes": [
-      "restaurants",
-      "mauricienne"
-    ],
-    "zone": "centre"
-  },
-  {
     "id": "paradis-beachcomber-golf-resort-spa",
     "name": "Paradis Beachcomber Golf Resort & Spa",
     "category": "activites",
@@ -7535,22 +7519,6 @@
     "description": "Restaurant de plage sous les filaos, entre les hôtels Dinarobin et LUX* Le Morne : paninis, salades, spécialités créoles et asiatiques, camarons grillés et marlin fumé. Ouvert 7j/7, prix doux."
   },
   {
-    "id": "kot-moukesh",
-    "name": "Kot Moukesh",
-    "category": "food",
-    "address": "Baie du Cap – Chamarel Rd",
-    "phone": "+230 5478 2105",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=3673205091146040356&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.4340233,
-    "lng": 57.3915771,
-    "themes": [
-      "restaurants",
-      "mauricienne"
-    ],
-    "zone": "sud"
-  },
-  {
     "id": "floating-market-restaurant",
     "name": "Floating Market Restaurant",
     "category": "food",
@@ -7671,22 +7639,6 @@
     ],
     "zone": "ouest",
     "description": "Petite gargote de bord de route à La Gaulette, nouilles frites, bouillie et cuisine locale simple avec options végé/viande/poisson, portions généreuses. Propriétaire passionné, connu pour rester ouvert malgré les alertes cycloniques."
-  },
-  {
-    "id": "table-d-hote-uniquement-sur-reservation",
-    "name": "Table d’hôte uniquement sur réservation",
-    "category": "food",
-    "address": "HC53+5R2, Chamarel",
-    "phone": "+230 483 5626",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=2309516039622012145&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.4421066,
-    "lng": 57.4045033,
-    "themes": [
-      "restaurants",
-      "mauricienne"
-    ],
-    "zone": "sud"
   },
   {
     "id": "chamarel-view-point",
@@ -8830,22 +8782,6 @@
     ],
     "zone": "est",
     "description": "Restaurant italien de l'hôtel Long Beach (Belle Mare/Poste de Flacq), antipasti, pâtes, pizzas et fruits de mer. Bien noté (4,3/5)."
-  },
-  {
-    "id": "chez-beny-restaurant",
-    "name": "Chez Beny Restaurant",
-    "category": "food",
-    "address": "MU, Quatre Cocos 41601",
-    "phone": "+230 5538 4004",
-    "website": "https://www.facebook.com/profile.php?id=61580138705763",
-    "googleMapsUrl": "https://maps.google.com/?cid=3602911413137342413&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.1978461,
-    "lng": 57.7748409,
-    "themes": [
-      "restaurants",
-      "mauricienne"
-    ],
-    "zone": "est"
   },
   {
     "id": "le-marche",
