@@ -6884,7 +6884,7 @@
     "lat": -20.2847941,
     "lng": 57.3645382,
     "themes": [
-      "restaurants"
+      "bars"
     ],
     "zone": "ouest"
   },
@@ -7081,9 +7081,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=17718547834765416395&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.3288391,
     "lng": 57.3852137,
-    "themes": [
-      "restaurants"
-    ],
+    "themes": [],
     "zone": "ouest"
   },
   {
@@ -7096,9 +7094,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=11341844712611684207&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.3268991,
     "lng": 57.3784187,
-    "themes": [
-      "restaurants"
-    ],
+    "themes": [],
     "zone": "ouest"
   },
   {
@@ -7111,9 +7107,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=6756452938985211660&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.3775721,
     "lng": 57.4135497,
-    "themes": [
-      "restaurants"
-    ],
+    "themes": [],
     "zone": "ouest"
   },
   {
@@ -7141,9 +7135,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=13511967466805699484&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.3497624,
     "lng": 57.369781,
-    "themes": [
-      "restaurants"
-    ],
+    "themes": [],
     "zone": "ouest"
   },
   {
@@ -7201,9 +7193,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=2969971752838478436&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.353357,
     "lng": 57.3653692,
-    "themes": [
-      "restaurants"
-    ],
+    "themes": [],
     "zone": "ouest"
   },
   {
@@ -7884,9 +7874,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=923483892648852162&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.4212564,
     "lng": 57.3864302,
-    "themes": [
-      "restaurants"
-    ],
+    "themes": [],
     "zone": "sud"
   },
   {
@@ -7929,9 +7917,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=2166585573967639460&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.4212382,
     "lng": 57.3864687,
-    "themes": [
-      "restaurants"
-    ],
+    "themes": [],
     "zone": "sud"
   },
   {
@@ -7944,9 +7930,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=14808461227091775137&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.4430932,
     "lng": 57.3839598,
-    "themes": [
-      "restaurants"
-    ],
+    "themes": [],
     "zone": "sud"
   },
   {
@@ -7974,9 +7958,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=2114892423270830152&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.4175264,
     "lng": 57.3815921,
-    "themes": [
-      "restaurants"
-    ],
+    "themes": [],
     "zone": "ouest"
   },
   {
@@ -8511,9 +8493,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=1171677285085813046&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.5177441,
     "lng": 57.5530581,
-    "themes": [
-      "restaurants"
-    ],
+    "themes": [],
     "zone": "sud"
   },
   {
@@ -8526,9 +8506,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=3514937622748465639&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.5093527,
     "lng": 57.4357638,
-    "themes": [
-      "restaurants"
-    ],
+    "themes": [],
     "zone": "est"
   },
   {
@@ -8861,7 +8839,9 @@
     "lat": -20.0418787,
     "lng": 57.5403463,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "fruits-de-mer",
+      "mauricienne"
     ],
     "zone": "nord"
   },
@@ -9610,9 +9590,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=2335362142634286642&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.2325092,
     "lng": 57.803885,
-    "themes": [
-      "restaurants"
-    ],
+    "themes": [],
     "zone": "est"
   },
   {
@@ -9640,9 +9618,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=15285443143570421008&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.2376486,
     "lng": 57.793471,
-    "themes": [
-      "restaurants"
-    ],
+    "themes": [],
     "zone": "est"
   },
   {
@@ -9671,9 +9647,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=12203735894504179347&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.1988549,
     "lng": 57.7830427,
-    "themes": [
-      "restaurants"
-    ],
+    "themes": [],
     "zone": "est"
   },
   {
@@ -10055,9 +10029,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=4728381908586370418&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.436045,
     "lng": 57.726454,
-    "themes": [
-      "restaurants"
-    ],
+    "themes": [],
     "zone": "sud",
     "description": "Restaurant Etoile de Mer de l'hôtel Astroea Beach, les pieds dans le lagon de Pointe d'Esny. Cuisine familiale du chef Tommy Veerapatren (formé au Preskil et au Heritage Le Telfair), inspirée de ses souvenirs d'enfance : farata maison, curry de poisson, produits locaux. 96% de recommandation sur la page Facebook (227 avis)."
   },
@@ -10117,9 +10089,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=3772455338355153646&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.4150946,
     "lng": 57.7025073,
-    "themes": [
-      "restaurants"
-    ],
+    "themes": [],
     "zone": "sud",
     "description": "Restaurant au décor rustique fait de matériaux recyclés, en plein air près d'une rivière (geckos et grenouilles en soirée). Avis mitigés : plusieurs clients saluent des plats savoureux (frites excellentes, gâteau au chocolat recommandé) et un personnel attentionné, d'autres pointent des soucis d'organisation lors de travaux de rénovation."
   },
@@ -10133,9 +10103,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=7366073119097956327&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.4448478,
     "lng": 57.709801,
-    "themes": [
-      "restaurants"
-    ],
+    "themes": [],
     "zone": "sud"
   },
   {
@@ -10179,9 +10147,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=6867280026819548610&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.4449929,
     "lng": 57.7187004,
-    "themes": [
-      "restaurants"
-    ],
+    "themes": [],
     "zone": "sud",
     "description": "Restaurant vue mer et snack 'The Spot' côté jardin, au sein de cette guesthouse de Pointe d'Esny posée sur un lagon superbe. Avis partagés : petit-déjeuner copieux et personnel attentionné saluent par plusieurs clients, menu correct sans plus pour d'autres. Emplacement jugé excellent, établissement qui gagnerait à être rénové."
   },
@@ -10195,9 +10161,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=17759978354002528000&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.4121704,
     "lng": 57.7110761,
-    "themes": [
-      "restaurants"
-    ],
+    "themes": [],
     "zone": "sud",
     "description": "Restaurant en bord d'eau de cette guesthouse de Mahébourg, avec vue sur le lagon et la baie du Vieux Grand Port — possibilité de manger sur place ou en chambre. Accueil chaleureux et cadre de rêve unanimement salués par les clients, établissement très propre."
   },
@@ -10211,9 +10175,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=3017584434507473506&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.4419429,
     "lng": 57.7122073,
-    "themes": [
-      "restaurants"
-    ],
+    "themes": [],
     "zone": "sud"
   },
   {
@@ -10226,9 +10188,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=11287047452636957070&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.4441928,
     "lng": 57.7164692,
-    "themes": [
-      "restaurants"
-    ],
+    "themes": [],
     "zone": "sud"
   },
   {
@@ -10256,9 +10216,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=13287811304313231758&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.455025,
     "lng": 57.6995352,
-    "themes": [
-      "restaurants"
-    ],
+    "themes": [],
     "zone": "sud"
   },
   {
@@ -10286,9 +10244,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=15714163199669840059&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.4113653,
     "lng": 57.7101562,
-    "themes": [
-      "restaurants"
-    ],
+    "themes": [],
     "zone": "sud"
   },
   {
@@ -10301,9 +10257,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=1328625729415948709&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.4218143,
     "lng": 57.7219741,
-    "themes": [
-      "restaurants"
-    ],
+    "themes": [],
     "zone": "sud",
     "description": "Le Preskil Island Resort propose trois restaurants avec vue sur l'océan (dont le 1810, accès plage direct). Buffet varié et frais (pizzas, pâtes, salades, rougail, poisson grillé), salami de cerf apprécié. Avis globalement positifs sur la qualité et le service, quelques réserves sur le prix du restaurant de plage et une offre mauricienne jugée en retrait."
   },
@@ -10363,9 +10317,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=14306707779467193518&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.469506,
     "lng": 57.6810926,
-    "themes": [
-      "restaurants"
-    ],
+    "themes": [],
     "zone": "est"
   },
   {
@@ -11119,9 +11071,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=7280923910619814227&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.2254142,
     "lng": 57.4967967,
-    "themes": [
-      "restaurants"
-    ],
+    "themes": [],
     "zone": "centre"
   },
   {
@@ -11500,9 +11450,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=15241955452140046880&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.2247043,
     "lng": 57.5255758,
-    "themes": [
-      "restaurants"
-    ],
+    "themes": [],
     "zone": "centre"
   },
   {
@@ -23304,9 +23252,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=8880419420183328100&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.4911109,
     "lng": 57.371133,
-    "themes": [
-      "restaurants"
-    ],
+    "themes": [],
     "zone": "ouest"
   },
   {
