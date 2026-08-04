@@ -804,7 +804,8 @@
     ],
     "hours": "Tous les jours 10h-23h30",
     "priceRange": "se-faire-plaisir",
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Restaurant de bord de route à Grand Baie spécialisé fruits de mer, réputé pour son plateau généreux (moules, gambas, vivaneau, crabe, langouste) et ses accras de morue. Chanteur en live le soir."
   },
   {
     "id": "restaurant-coolen-chez-ram",
@@ -1048,7 +1049,8 @@
     ],
     "hours": "Tous les jours 12h-15h & 19h-22h",
     "priceRange": "se-faire-plaisir",
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Restaurant de plage de l'hôtel Veranda Grand Baie, carte à la carte de fruits de mer pêchés dans le lagon, poisson du jour grillé. Cadre les pieds dans le sable, service attentionné."
   },
   {
     "id": "n-joy",
@@ -1109,7 +1111,8 @@
     ],
     "hours": "Tous les jours 10h-22h",
     "priceRange": "prix-moyen",
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Restaurant de fruits de mer au cœur du quartier commerçant de Grand Baie : poisson grillé, crevettes, poulpe, plateaux sushi, curry de fruits de mer."
   },
   {
     "id": "beach-house-restaurant-bar",
@@ -1622,7 +1625,8 @@
     ],
     "hours": "Tous les jours 19h-23h, Ven-Sam jusqu'à 2h",
     "priceRange": "se-faire-plaisir",
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Institution de Grand Baie ouverte depuis 1970, adossée au Banana Beach Club, ambiance rock'n'roll avec concerts live. Cuisine française/américaine/mauricienne : fruits de mer, foie gras, steaks, burgers."
   },
   {
     "id": "walima-by-bisou-lux-grand-baie",
@@ -1640,7 +1644,8 @@
     ],
     "hours": "Mer-Lun 12h-15h & 18h30-22h30, fermé mar",
     "priceRange": "se-faire-plaisir",
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Restaurant rooftop du LUX* Grand Baie ouvert fin novembre 2024, fusion libano-marocaine imaginée par les chefs Hani Totonji et Naima Moussaoui. Vue sur l'océan."
   },
   {
     "id": "ici-lux-grand-baie",
@@ -1749,7 +1754,8 @@
       "kids-friendly"
     ],
     "hours": "Tous les jours 9h-23h (sandwiches 10h-16h)",
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Bar de l'hôtel Canonnier Beachcomber (Grand Baie), terrasse au milieu des jardins et piscines, cocktails et petites assiettes en journée, ambiance lounge en soirée."
   },
   {
     "id": "super-u-grand-baie",
@@ -3431,7 +3437,8 @@
     ],
     "hours": "Tous les jours 11h30-22h30",
     "priceRange": "prix-moyen",
-    "zone": "est"
+    "zone": "est",
+    "description": "Restaurant de poissons de Trou d'Eau Douce (2014), produits achetés chaque matin auprès des pêcheurs locaux, poisson grillé au feu de charbon. Bien noté (4,3/5), pêche durable."
   },
   {
     "id": "le-bazilic-mahebourg",
@@ -3471,7 +3478,8 @@
     ],
     "hours": "Tous les jours 8h30-22h30",
     "priceRange": "prix-moyen",
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Restaurant de fruits de mer de Mahébourg, carte d'une quarantaine de plats mêlant cuisine mauricienne, française et créole : poisson frais, langouste, gambas, thermidor Isle de France."
   },
   {
     "id": "namaste-restaurant-caudan",
@@ -3976,7 +3984,8 @@
     ],
     "hours": "Tous les jours 11h-20h",
     "priceRange": "bon-marche",
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Restaurant américain de Tamarin spécialisé dans les smash burgers, tenu par le propriétaire Abdallah."
   },
   {
     "id": "blue-marlin-paradis-le-morne",
@@ -3995,7 +4004,8 @@
     ],
     "hours": "Tous les jours 12h30-15h & 19h-22h",
     "priceRange": "se-faire-plaisir",
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Restaurant de fruits de mer haut de gamme du Paradis Golf Resort & Spa (Le Morne), décor marin thématique. Poissons du jour et cuisine raffinée face à l'océan."
   },
   {
     "id": "emba-filao-lux-le-morne",
@@ -5638,7 +5648,8 @@
       "restaurants",
       "italien"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Restaurant italien familial de Grand Baie tenu par un jeune couple originaire des Cinque Terre, spécialisé pinsa (pâte romaine croustillante), pâtes et pizzas maison. Bien noté (4,3/5)."
   },
   {
     "id": "roots",
@@ -5654,7 +5665,8 @@
       "restaurants",
       "italien"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Restaurant italo-mauricien de Pointe aux Canonniers (Grand Baie) dans un cadre de jardin, plats phares : risotto aux champignons, cannelloni ricotta-épinards, lasagne maison. Fermé le dimanche."
   },
   {
     "id": "la-creolo-cafe-resto",
@@ -5687,7 +5699,8 @@
       "restaurants",
       "italien"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Pizzeria italienne réputée, pizzas et pâtes artisanales (carbonara). Note : l'établissement principal identifié se situe à Trou aux Biches, adresse à confirmer pour cette seconde enseigne."
   },
   {
     "id": "l-horizon-restaurant",
@@ -5722,7 +5735,8 @@
       "italien"
     ],
     "badge": "selection",
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Restaurant de bord de mer à Grand Baie ouvert en 2009, cuisine romaine traditionnelle, pâtes et pizzas maison (pâte reposée 24h). Happy hour dès 15h, brunch le week-end."
   },
   {
     "id": "the-beach-kitchen-restaurant",
@@ -5739,7 +5753,8 @@
       "fruits-de-mer",
       "asiatique"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Concept multi-espaces en bord de mer à Grand Baie depuis 1999, cuisine ouverte, bar et buffet. Fruits de mer et salades, plus cantonais et sushi ; musique live le midi."
   },
   {
     "id": "chez-meung",
@@ -5755,7 +5770,8 @@
       "restaurants",
       "asiatique"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Adresse de street-food mauricienne dans un jardin cosy à Grand Baie, réputée pour son mine bouillie (nouilles) décliné en curries variés et son satini pomme d'amour."
   },
   {
     "id": "wang-thai",
@@ -5772,7 +5788,8 @@
       "asiatique"
     ],
     "badge": "selection",
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Restaurant thaï réputé et abordable de Pereybère/Grand Baie, décor bouddhas et soieries. Tom yum, curry vert, poisson au tamarin, pad thaï, options véganes. Très bien noté (4,2/5)."
   },
   {
     "id": "the-garden-grill",
@@ -5788,7 +5805,8 @@
       "restaurants",
       "grillades"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Churrascaria façon rodizio à Grand Baie où les brochettes de viande grillée sont servies directement à table. Steakhouse/méditerranéen, bien noté (4,3/5), fermé le lundi."
   },
   {
     "id": "kogi-kogi-grand-baie",
@@ -5805,7 +5823,8 @@
       "asiatique",
       "kids-friendly"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Restaurant coréen BBQ de Grand Baie, décor chic d'inspiration asiatique, cuisson à table (bibimbap, samgyeopsal, sundubu-jjigae). Salle enfants dédiée avec jeux."
   },
   {
     "id": "eclats-d-eden",
@@ -5821,7 +5840,8 @@
       "restaurants",
       "europeenne"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Crêperie-restaurant du Sunset Boulevard à Grand Baie, avec vue sur le lagon. Grillades, options sans gluten, wagyu bœuf et poulet, crêpes sucrées. Très bien noté (5/5)."
   },
   {
     "id": "chez-cousine-farata-et-gateaux",
@@ -5838,7 +5858,8 @@
       "mauricienne",
       "frequente-locaux"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Petite adresse street-food de Grand Baie/Pereybère, spécialisée en farata et gâteaux piments."
   },
   {
     "id": "divino",
@@ -5854,7 +5875,8 @@
       "restaurants",
       "italien"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Restaurant italien de La Croisette à Grand Baie, pâtes et pizzas au feu de bois, poisson de pêcheurs locaux et viandes importées d'Australie/Nouvelle-Zélande. Musique live vendredi-samedi soir."
   },
   {
     "id": "island-babe-mauritius-pereybere",
@@ -5870,7 +5892,8 @@
       "restaurants",
       "vegetarien"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Restaurant healthy niché dans un jardin secret de Pereybère, options vegan/végétariennes/sans gluten : avocado toast, poke bowl, Buddha bowl, jus frais. Ouvert 8h-14h30."
   },
   {
     "id": "luigi-s-italian-pizzeria-pasta-bar",
@@ -5886,7 +5909,8 @@
       "restaurants",
       "italien"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Institution italienne du nord de l'île à Grand Baie, tenue par une famille italienne. Pizzas au four à bois, pâtes maison, viandes et fruits de mer à prix raisonnables."
   },
   {
     "id": "grill-chill",
@@ -5902,7 +5926,8 @@
       "restaurants",
       "grillades"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Adresse locale face à la plage publique de Pereybère : poissons entiers grillés sur place (vivaneau, capitaine, thazard), fruits de mer et viandes. Ambiance conviviale."
   },
   {
     "id": "isla-padel-grand-baie",
@@ -6111,7 +6136,8 @@
       "italien",
       "europeenne"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Restaurant franco-italien niché sur les rives de la rivière Tamarin, tables sous les arbres ou sous toile façon lodge. Cuisine bistronomique de qualité à base de produits de saison."
   },
   {
     "id": "the-old-brothers-ltd",
@@ -6127,7 +6153,8 @@
       "restaurants",
       "grillades"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Seul restaurant américain BBQ de la zone Black River/Tamarin, cuisson low & slow façon Texas smoker : pulled pork, brisket, mac & cheese, wings, tacos. Très bien noté (4,9/5)."
   },
   {
     "id": "pakbo-restaurant",
@@ -6178,7 +6205,8 @@
       "restaurants",
       "italien"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Restaurant italien moderne en bord de plage à Flic en Flac, pâtes fraîches et pizzas au feu de bois. Fruits de mer, steaks, options vegan."
   },
   {
     "id": "buddha-bar-beach",
@@ -6213,7 +6241,8 @@
       "grillades",
       "fruits-de-mer"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Restaurant steak & seafood à l'étage du centre commercial Cascavelle (Flic en Flac), avec vue sur les fontaines et les couchers de soleil. Cuisine axée viandes premium et fruits de mer frais de la côte ouest."
   },
   {
     "id": "la-flamme-kreol",
@@ -6246,7 +6275,8 @@
       "restaurants",
       "grillades"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Restaurant-bar et lieu de sortie nocturne de Barachois (Tamarin), spécialisé grillades, tapas et ambiance sports bar en bord de mer. Terrasse extérieure et salle climatisée, DJ et concerts en soirée."
   },
   {
     "id": "le-whatever-tamarin",
@@ -6262,7 +6292,8 @@
       "restaurants",
       "europeenne"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Bistrot-restaurant et cave à vin bio de Tamarin, plus de 150 vins français majoritairement bio. Cuisine française façon brasserie parisienne, terrasse avec vue sur les montagnes. Fermé dimanche et lundi."
   },
   {
     "id": "ava-bistrot-tamarin",
@@ -6278,7 +6309,8 @@
       "restaurants",
       "europeenne"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Bistrot du club sportif RM Tamarin, ouvert à tous, terrasse suspendue surplombant les murs d'escalade. Carte élaborée avec une nutritionniste, entre cuisine bistrot saine et plats healthy."
   },
   {
     "id": "sunset-garden",
@@ -6313,7 +6345,8 @@
       "restaurants",
       "italien"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Restaurant de plage rénové de l'hôtel Sugar Beach (Flic en Flac), cuisine italo-méditerranéenne : pizzas au feu de bois, antipasti, tapas espagnoles. Options végé/vegan/sans gluten. Bien noté (4,3/5)."
   },
   {
     "id": "restaurant-le-bois-noir-number-1",
@@ -6399,7 +6432,8 @@
       "restaurants",
       "grillades"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Enseigne d'origine sud-africaine en bord de plage à Flic en Flac : pizzas, grillades, burgers et bière, ambiance décontractée. Concerts live le week-end."
   },
   {
     "id": "the-break",
@@ -6415,7 +6449,8 @@
       "restaurants",
       "frequente-locaux"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Café-surf décontracté au cœur de Tamarin, apprécié des surfeurs et habitués du coin. Café de spécialité, jus frais, poke bowls, pâtisseries maison."
   },
   {
     "id": "jacaranda",
@@ -6467,7 +6502,8 @@
       "restaurants",
       "grillades"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Burger house récente de Flic en Flac spécialisée dans des burgers mauriciens exotiques (poulet-mangue, bœuf), options végé/vegan. Ouvert à partir de 18h ; très bien notée (4,7/5)."
   },
   {
     "id": "s-arrastu-ristorante-gelateria-bar",
@@ -6501,7 +6537,8 @@
       "restaurants",
       "fruits-de-mer"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Restaurant de fruits de mer de l'Hilton Mauritius Resort & Spa (Wolmar), en bord de plage. Déjeuner décontracté (salades, burgers, poisson du jour) et dîner plus gastronomique."
   },
   {
     "id": "magenta-seafood-restaurant",
@@ -6608,7 +6645,8 @@
       "indienne",
       "tables-exception"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Table gastronomique indienne du Maradiva Villas Resort & Spa (Flic en Flac), cuisine indienne et pan-asiatique raffinée, dîner uniquement, tenue smart casual exigée."
   },
   {
     "id": "medium-rare-steakhouse",
@@ -6662,7 +6700,8 @@
       "vegetarien"
     ],
     "badge": "selection",
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Éco-lodge et concept familial de Black River combinant guesthouse, café, boutique et restaurant végétarien/végan. Cuisine farm-to-table : wraps, salades, burgers végétaux, produits locaux."
   },
   {
     "id": "the-chaser-mauritian-bistro",
@@ -6821,7 +6860,8 @@
       "grillades"
     ],
     "badge": "selection",
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Bar-restaurant au décor africain de Flic en Flac, jardin et lanternes. Spécialités burgers et poulet croustillant ; concerts live vendredi et dimanche."
   },
   {
     "id": "oasis-beach-bar",
@@ -6838,7 +6878,8 @@
       "asiatique",
       "fruits-de-mer"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Bar-restaurant en bord de plage à Flic en Flac, ambiance tropicale, cocktails et coucher de soleil, animations musicales le vendredi."
   },
   {
     "id": "saxo-beach-club",
@@ -6869,7 +6910,8 @@
       "restaurants",
       "europeenne"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Resto-pub de Coeur de Ville Tamarin, cuisine européenne simple (pâtes bolognaise, steak grillé). Ouvert 7j/7, ambiance décontractée de quartier."
   },
   {
     "id": "le-morne-restaurant",
@@ -6903,7 +6945,8 @@
       "grillades"
     ],
     "badge": "selection",
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Restaurant de grillades au cœur de Flic en Flac, viandes marinées, poissons grillés et spécialités locales (boulette chou-chou). Portions généreuses, réservation conseillée le week-end."
   },
   {
     "id": "la-kaz-a-pain",
@@ -6998,7 +7041,8 @@
       "restaurants",
       "grillades"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Restaurant-bar en plein air du centre commercial Ruisseau Créole (La Preneuse), tables sous grands parasols. Sandwichs, salades, poisson et calamars grillés, burgers ; écran géant pour le sport le week-end."
   },
   {
     "id": "legend-hill-residences-spa",
@@ -7271,7 +7315,8 @@
       "indienne",
       "fruits-de-mer"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Restaurant au cœur du village de Chamarel, près des Terres Colorées, cuisine mauricienne, fruits de mer et plats indiens du nord et du sud préparés par des cuisiniers indiens. Grande terrasse fleurie."
   },
   {
     "id": "rhumerie-de-chamarel-restaurant-rum-distillery",
@@ -7515,7 +7560,8 @@
       "restaurants",
       "fruits-de-mer"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Restaurant de fruits de mer de La Gaulette (exploité sous \"Sugar by Sirokan\"), réputé pour son homard frais et ses plateaux de fruits de mer."
   },
   {
     "id": "le-brabant",
@@ -7618,7 +7664,8 @@
       "restaurants",
       "asiatique"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Restaurant du St. Regis Le Morne inspiré des marchés flottants thaïlandais : cuisine thaïe, malaise, vietnamienne, indonésienne et singapourienne, dans un cadre entouré d'eau. Très bien noté (4,6/5)."
   },
   {
     "id": "gregory-s-secret-restaurant",
@@ -7634,7 +7681,8 @@
       "restaurants",
       "fruits-de-mer"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Adresse confidentielle nichée dans un jardin tropical de La Gaulette, tenue par Gregory qui accueille personnellement ses convives (menus sur mesure, contact WhatsApp conseillé). Cuisine créole, chinoise, indienne et fruits de mer frais."
   },
   {
     "id": "the-beach-lux-le-morne",
@@ -7768,7 +7816,8 @@
       "mauricienne",
       "kids-friendly"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Restaurant familial du Morne à la déco colorée, mélange de plats mauriciens traditionnels et internationaux, ingrédients frais issus des marchés locaux, accueil convivial."
   },
   {
     "id": "le-plage-restaurant-dinarobin-beachcomber",
@@ -7828,7 +7877,8 @@
       "restaurants",
       "asiatique"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Restaurant japonais/asiatique de l'hôtel Beachcomber Dinarobin (Le Morne), en bordure de piscine sous les palmiers. Très bien noté (4,8/5), ouvert le soir uniquement."
   },
   {
     "id": "view-point-chamarel-carpark",
@@ -7875,7 +7925,8 @@
       "restaurants",
       "indienne"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Restaurant de cuisine indienne progressive au St. Regis Le Morne, mêlant tradition et innovation : kebabs de poulet malai, butter chicken, paneer tikka au pesto de coriandre."
   },
   {
     "id": "nadi-miel-chamarel",
@@ -7921,7 +7972,8 @@
       "restaurants",
       "indienne"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Restaurant indien de l'hôtel Dinarobin Beachcomber (Le Morne), au sein d'un complexe balnéaire avec vue sur le Morne."
   },
   {
     "id": "la-table-du-pecheur-table-d-hote-chez-laurent-et-zereen-only-on-reservation",
@@ -7937,7 +7989,8 @@
       "restaurants",
       "fruits-de-mer"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Table d'hôte chez l'habitant à La Gaulette, vue panoramique sur le Morne Brabant et l'île aux Bénitiers. Cuisine locale authentique (curry, sauce créole, fruits de mer, BBQ), accueil familial très apprécié."
   },
   {
     "id": "paradis-bar",
@@ -7970,7 +8023,8 @@
       "restaurants",
       "tables-exception"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Restaurant principal du Heritage Le Telfair Golf & Wellness Resort (Bel Ombre), déco élégante d'inspiration coloniale. Cuisine mauricienne et internationale en cuisine ouverte, belle carte des vins français et sud-africains. Bien noté (4,4/5)."
   },
   {
     "id": "la-plage",
@@ -8058,7 +8112,8 @@
       "restaurants",
       "indienne"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Restaurant indien de l'hôtel Heritage Awali (Bel Ombre), décor inspiré des palais indiens. Tandoori, paneer, currys parfumés, nombreuses options végétariennes. Très bien noté (5/5)."
   },
   {
     "id": "escale-des-iles-restaurant-and-inn",
@@ -8126,7 +8181,8 @@
       "restaurants",
       "europeenne"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Restaurant de plage du Tamassa (Bel Ombre), cuisine méditerranéenne à touche mauricienne, dîner les pieds dans le sable, carte de vins internationaux et rhums locaux."
   },
   {
     "id": "restaurant-bistro-anvers-bel-ombre-mauritius",
@@ -8142,7 +8198,8 @@
       "restaurants",
       "europeenne"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Bistro de Bel Ombre tenu par un Belge marié à une Mauricienne, connu pour ses bières belges (Leffe) et ses plats de fruits de mer locaux."
   },
   {
     "id": "bois-cheri",
@@ -8195,7 +8252,8 @@
       "restaurants",
       "grillades"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Restaurant chic-décontracté de l'hôtel Shanti Maurice (Saint Félix), plus de 250 rhums du monde, grillades et comfort food. Dîner sur réservation."
   },
   {
     "id": "kwizine-mama-manze-lakaz",
@@ -8246,7 +8304,8 @@
       "restaurants",
       "fruits-de-mer"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Restaurant de fruits de mer façon cajun & créole à Riviere Des Galets (Bel Ombre), mettant en avant le poisson frais du jour."
   },
   {
     "id": "la-glace-italiana-souillac",
@@ -8262,7 +8321,8 @@
       "restaurants",
       "italien"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Pizzeria-restaurant italien de Souillac tenu par un couple napolitain, réputé pour ses pizzas, lasagnes et pâtes maison. Ouvert mardi-dimanche."
   },
   {
     "id": "le-fangourin",
@@ -8412,7 +8472,8 @@
       "cafes-terrasses"
     ],
     "badge": "selection",
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Adresse animée en bord de route côtière à Pointe d'Esny, cuisine cajun/créole, pizzas réputées et calamars. Ambiance plage rustique, musique live, terrasse ombragée."
   },
   {
     "id": "ramdonee-store-bar",
@@ -8445,7 +8506,8 @@
       "asiatique",
       "frequente-locaux"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Petite adresse populaire locale de Souillac, cuisine asiatique/fusion et fast-food (mine bouille, boulettes, nouilles frites). Prix très abordables, paiement cash uniquement."
   },
   {
     "id": "l-ajoupa",
@@ -8532,7 +8594,8 @@
       "restaurants",
       "grillades"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Restaurant du golf de Belle Mare (Links) à Poste de Flacq, spécialités grillées : bœuf, poisson et travers de porc. Ouvert le midi ; très bien noté (5/5)."
   },
   {
     "id": "anahita-golf-spa-resort",
@@ -8563,7 +8626,8 @@
       "restaurants",
       "asiatique"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Restaurant chinois/asiatique réputé de la région de Belle Mare, cuisine mauricienne et orientale mêlée d'influences européennes (curry thaï, poisson grillé au wok, homard grillé). Bien noté (4,5/5)."
   },
   {
     "id": "beach-rouge-lux-belle-mare",
@@ -8615,7 +8679,8 @@
       "restaurants",
       "asiatique"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Restaurant gastronomique chinois du LUX* Belle Mare, ambiance feutrée et décor asiatique soigné. Classiques sichuanais, shanghaïens et cantonais : canard laqué, dim sum artisanaux, station de nouilles fraîches."
   },
   {
     "id": "resto-7-by-kazi",
@@ -8632,7 +8697,8 @@
       "indienne",
       "asiatique"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Restaurant de Trou d'Eau Douce, cuisine fusion indienne, chinoise et créole, spécialités tandoor, prix abordables. Très bien noté (5/5), fermé le lundi."
   },
   {
     "id": "la-spiaggia-restaurant-bar",
@@ -8666,7 +8732,8 @@
       "restaurants",
       "italien"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Trattoria de l'Ambre Resort & Spa (Palmar), antipasti maison, pâtes et pizzas au feu de bois, carte des vins étoffée."
   },
   {
     "id": "beach-hut",
@@ -8736,7 +8803,8 @@
       "restaurants",
       "europeenne"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Café-boulangerie-épicerie dans une ancienne maison créole en pierre du domaine de Constance Estate (Central Flacq). Cuisine locale et française, pâtisserie appréciée. Fermé le dimanche."
   },
   {
     "id": "la-pointe-restaurant",
@@ -8805,7 +8873,8 @@
       "restaurants",
       "asiatique"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Restaurant chinois moderne du Long Beach Golf & Spa Resort (Poste de Flacq), cuisines sichuanaise, cantonaise et hunanaise, nouilles lamian tirées à la main en cuisine ouverte, dim sum et canard laqué."
   },
   {
     "id": "la-flibuste",
@@ -8857,7 +8926,8 @@
       "fruits-de-mer",
       "grillades"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Restaurant de bord de plage entre Trou-aux-Biches et Pointe aux Piments, réputé pour sa langouste grillée. Ambiance simple, déco de plage romantique."
   },
   {
     "id": "blu-zil",
@@ -8890,7 +8960,8 @@
       "restaurants",
       "italien"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Restaurant italien de l'hôtel Long Beach (Belle Mare/Poste de Flacq), antipasti, pâtes, pizzas et fruits de mer. Bien noté (4,3/5)."
   },
   {
     "id": "chez-beny-restaurant",
@@ -8955,7 +9026,8 @@
       "restaurants",
       "grillades"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Bar-restaurant convivial de Poste de Flacq, prisé pour ses grillades et fruits de mer, cocktails et ambiance décontractée."
   },
   {
     "id": "le-pescatore",
@@ -8991,7 +9063,8 @@
       "restaurants",
       "grillades"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Petite adresse de grillades à Quatre Cocos, techniques de cuisson traditionnelles, ouverte tous les jours de 8h à 18h. Bien noté par les visiteurs de la région de Belle Mare."
   },
   {
     "id": "the-deer-hunter",
@@ -9028,7 +9101,8 @@
       "restaurants",
       "europeenne"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Bistro de Poste de Flacq sur la Royal Road, cuisine fast-food/healthy : burgers, pâtes. Ouvert brunch/déjeuner/dîner."
   },
   {
     "id": "sands-grill",
@@ -9044,7 +9118,8 @@
       "restaurants",
       "grillades"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Grand restaurant de plage en paillote sur l'Ile aux Cerfs Leisure Island, poissons et fruits de mer grillés, pizzas au feu de bois, cocktails au rhum mauricien."
   },
   {
     "id": "restaurant-l-empereur",
@@ -9060,7 +9135,8 @@
       "restaurants",
       "asiatique"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Restaurant chinois local de Poste de Flacq."
   },
   {
     "id": "cook-with-luca",
@@ -9089,7 +9165,8 @@
       "restaurants",
       "asiatique"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Restaurant chinois traditionnel de Quatre Cocos (dumplings, sautés, nouilles), réputé pour son canard laqué à commander à l'avance. Fermé le lundi."
   },
   {
     "id": "blu-sushi-lounge",
@@ -9105,7 +9182,8 @@
       "restaurants",
       "sushis"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Restaurant asiatique du complexe Constance Belle Mare Plage, en bord d'océan, spécialisé sushis, whiskys japonais et sakés. Ambiance élégante, tenue soignée recommandée pour le dîner."
   },
   {
     "id": "the-mixologist-lux-belle-mare",
@@ -9138,7 +9216,8 @@
       "restaurants",
       "kids-friendly"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Restaurant principal all-day dining du LUX* Belle Mare, en bord de piscine avec stations de cuisine live (asiatique, curry, chocolat, pizza). Buffet international varié, espace dédié aux enfants."
   },
   {
     "id": "tapasake-one-only-le-saint-geran",
@@ -9226,7 +9305,8 @@
       "mauricienne",
       "frequente-locaux"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Petite adresse décontractée de Quatre Cocos, cuisine mauricienne locale (curries, spécialités de fruits de mer), appréciée des touristes de passage à Belle Mare."
   },
   {
     "id": "chateau-mon-desir",
@@ -9301,7 +9381,8 @@
       "restaurants",
       "fruits-de-mer"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Snack de Trou d'Eau Douce face à la plage, vue sur le lagon, spécialités fruits de mer (homard, poisson, crevettes) et plats simples. Très bien noté (4,7/5)."
   },
   {
     "id": "coco-s",
@@ -9335,7 +9416,8 @@
       "restaurants",
       "grillades"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Restaurant au point culminant de l'Ile aux Cerfs Golf Club, vue sur le practice et le 18e trou. Cuisine mauricienne et internationale, poissons, viandes grillées, salades ; ambiance décontractée-chic."
   },
   {
     "id": "the-hot-spot",
@@ -9351,7 +9433,8 @@
       "restaurants",
       "grillades"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Petite adresse décorée avec soin à Trou d'Eau Douce tenue par Tarik et Aurélie, ambiance chaleureuse. Cuisine plutôt libanaise (tapas) et burgers."
   },
   {
     "id": "friday-attitude-hotel",
@@ -9634,7 +9717,8 @@
       "restaurants",
       "indienne"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Petit restaurant indien récent de Mahébourg, propre et modeste, près du pont Cavendish. Large carte indienne sur place et à emporter ; bien noté (4,3/5)."
   },
   {
     "id": "restaurant-la-colombe",
@@ -9668,7 +9752,8 @@
       "asiatique"
     ],
     "badge": "selection",
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Petit restaurant en front de mer à Mahébourg tenu par Kaushik Rungloll, cuisine asiatique (calamars, nouilles sautées, samoussas, crevettes à l'ail). Bon rapport qualité-prix (4,5/5)."
   },
   {
     "id": "le-phare-restaurant",
@@ -9722,7 +9807,8 @@
       "grillades",
       "fruits-de-mer"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Restaurant de l'hôtel Anantara Iko (Plaine Magnien), spécialisé fruits de mer frais et viandes grillées, relevés de sels du monde entier. Salle moderne et bar en plein air."
   },
   {
     "id": "chez-francois",
@@ -9757,7 +9843,8 @@
       "restaurants",
       "frequente-locaux"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Snack local et abordable à deux pas de la plage de Blue Bay, prisé pour ses samoussas, poulets croustillants et beignets. Ambiance familiale et décontractée."
   },
   {
     "id": "pyramid-briani-baguettes",
@@ -9775,7 +9862,8 @@
       "frequente-locaux"
     ],
     "badge": "selection",
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Adresse locale très simple de Mahébourg tenue en famille, uniquement briani au poulet et kebabs, sans carte ni service à table, très prisée des habitants."
   },
   {
     "id": "saveur-kreol",
@@ -9826,7 +9914,8 @@
       "restaurants",
       "italien"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Petite pizzeria familiale de Mahébourg tenue par Nini, pizzas maison à pâte croustillante, livraison et emporter. Très bien notée (5/5)."
   },
   {
     "id": "astroea-beach-mauritius",
@@ -10176,7 +10265,8 @@
       "restaurants",
       "europeenne"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Brasserie française aux Allées d'Helvetia (Moka), décor mêlant moderne et rustique. Cuisine française revisitée (coq au vin, fruits de mer) et pizzas à emporter. Bien notée (4,6/5)."
   },
   {
     "id": "brasserie-chic-labourdonnais-waterfront-hotel",
@@ -10192,7 +10282,8 @@
       "restaurants",
       "europeenne"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Brasserie chic surplombant la marina du Caudan à Port Louis, cuisine classique revisitée avec bar à curry (six curries), plus de 60 plats à la carte. Ouvert tous les jours de 6h30 à 22h30."
   },
   {
     "id": "wapalapam-la-place",
@@ -10226,7 +10317,8 @@
       "fruits-de-mer",
       "sushis"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Restaurant marin en bord de marina de l'Hôtel Le Suffren (Port Louis), bar à sushis et huîtres, poke bowl, aquarium à homards vivants. Ouvert 7j/7."
   },
   {
     "id": "la-potiniere",
@@ -10262,7 +10354,8 @@
       "grillades",
       "kids-friendly"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Restaurant familial de Curepipe/Floréal avec vue sur les montagnes, intérieur chaleureux et terrasse. Concept original de fruits de mer servis directement sur la table."
   },
   {
     "id": "makalapo-restaurant",
@@ -10279,7 +10372,8 @@
       "fruits-de-mer",
       "kids-friendly"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Restaurant 100% fruits de mer de Curepipe ouvert en 2022 par le chef Jean Loup Fraise, au 1er étage de La Case 75. Concept original, plateaux généreux, sauce cajun réputée."
   },
   {
     "id": "the-sea-folks",
@@ -10295,7 +10389,8 @@
       "restaurants",
       "fruits-de-mer"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Restaurant fusion indo-méditerranéenne du Bagatelle Mall (Moka), spécialisé fruits de mer : poisson grillé, curry de fruits de mer, cuisine tandoor et italienne. Décor à thème maritime."
   },
   {
     "id": "yo-l-artisan",
@@ -10311,7 +10406,8 @@
       "restaurants",
       "italien"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Une des meilleures pizzerias de l'île, à Moka, mêlant tradition mauricienne et cuisine italienne. Pizzas à la mauricienne réputées, ingrédients frais et locaux."
   },
   {
     "id": "taste-of-siam",
@@ -10327,7 +10423,8 @@
       "restaurants",
       "asiatique"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Restaurant thaï authentique de Curepipe fondé en 2022 par le Chef Jonathan, à l'étage avec vue sur la ville. Pad thaï, curry vert, tom yum, salade de papaye ; portions généreuses."
   },
   {
     "id": "domaine-des-aubineaux-les-aubineaux-restaurant",
@@ -10395,7 +10492,8 @@
       "restaurants",
       "indienne"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Restaurant indien de Moka réputé pour ses épices bien dosées : butter chicken, paneer tikka korma. Service chaleureux, bien noté (4,6/5), options véganes."
   },
   {
     "id": "sitar-indian-restaurant",
@@ -10458,7 +10556,8 @@
       "restaurants",
       "italien"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Restaurant italien au 1er étage du Caudan Waterfront (Port Louis), terrasse ombragée avec vue sur le port. Pizzas, pâtes maison, fruits de mer et desserts."
   },
   {
     "id": "le-sapin-d-or",
@@ -10510,7 +10609,8 @@
       "restaurants",
       "indienne"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Snack indien de Port Louis (Caudan) ouvert depuis 1998, pionnier du dosa à Maurice. Spécialités sud-indiennes : dosa, pani puri, sev puri, briani. Bien noté (4,2/5)."
   },
   {
     "id": "restaurant-lai-min",
@@ -10526,7 +10626,8 @@
       "restaurants",
       "asiatique"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Doyen des restaurants chinois de Maurice, fondé en 1946 par Edmond Lai Min, à Chinatown (Port Louis). Grill chinois à table, plats signature (canard farci, poulet vapeur), dîner-dansant le samedi."
   },
   {
     "id": "chinese-resto",
@@ -10559,7 +10660,8 @@
       "fruits-de-mer",
       "europeenne"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Restaurant familial de Curepipe près du Royal College, spécialisé fruits de mer et cuisine européenne."
   },
   {
     "id": "red-phoenix-restaurant",
@@ -10575,7 +10677,8 @@
       "restaurants",
       "asiatique"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Restaurant de cuisine chinoise et mauricienne à Port Louis, décor soigné, plats signature : bœuf au poivre, calamars au safran, paella. Bien noté (4,2/5)."
   },
   {
     "id": "food-sensei",
@@ -10591,7 +10694,8 @@
       "restaurants",
       "asiatique"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Restaurant de cuisine asiatique fusion à Riche Terre (Port Louis), connu pour son Magic Noodles Bowl et son Wutang Chicken, options végétariennes."
   },
   {
     "id": "grand-canton-restaurant",
@@ -10625,7 +10729,8 @@
       "restaurants",
       "grillades"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Steakhouse/grill de Curepipe proposant des grillades dans une ambiance conviviale."
   },
   {
     "id": "new-ravinale-restaurant",
@@ -10677,7 +10782,8 @@
       "restaurants",
       "indienne"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Restaurant indien/indo-chinois de Port Louis fondé en 1996, spécialités tandoori et naans, certifié halal. Très bien noté (4,1/5)."
   },
   {
     "id": "kono-grills",
@@ -10693,7 +10799,8 @@
       "restaurants",
       "grillades"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Restaurant halal de grillades et burgers de Curepipe, deux niveaux, parking facile. Wraps et burgers d'agneau, frites réputées ; très bien noté (5/5)."
   },
   {
     "id": "cote-jasmin-jardin-bar",
@@ -10709,7 +10816,8 @@
       "restaurants",
       "europeenne"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Bar-restaurant caché au cœur de Port Louis, tenu par un couple belgo-italien, jardin lounge, cocktails créatifs et plat différent chaque jour (thaï, tartare de thon, pâtes). Bien noté (4,4/5)."
   },
   {
     "id": "la-case-du-pecheur",
@@ -10725,7 +10833,8 @@
       "restaurants",
       "fruits-de-mer"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Restaurant-lodge posé autour d'un plan d'eau à Bambous-Virieux, cadre naturel préservé. Cuisine mauricienne autour du curry, vindaloo et crevettes ; bar à rhum arrangé."
   },
   {
     "id": "le-parfum-de-l-orient-restaurant",
@@ -10741,7 +10850,8 @@
       "restaurants",
       "asiatique"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Restaurant halal de cuisine orientale fusion à l'étage rue Desforges (Port Louis). Grosses portions, spécialité de briani (commande la veille). Noté 3,8/5."
   },
   {
     "id": "house-of-canton",
@@ -10757,7 +10867,8 @@
       "restaurants",
       "asiatique"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Restaurant cantonais de Quatre Bornes réputé pour son dim sum servi dès 11h (vapeur, frit, cuit au four), canard laqué et porc à l'aigre-douce."
   },
   {
     "id": "bagatelle-mall-of-mauritius",
@@ -10786,7 +10897,8 @@
       "restaurants",
       "grillades"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Enseigne de burgers aux Arcades Currimjee (Curepipe), connue pour ses burgers en forme d'ovni. Service sur place, à emporter et livraison."
   },
   {
     "id": "ocean-basket",
@@ -10819,7 +10931,8 @@
       "restaurants",
       "asiatique"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Restaurant chinois du Bagatelle Mall (Moka), décor élégant avec mezzanine privatisable. Carte à la carte ou buffet à volonté vendredi/samedi et dimanche soir."
   },
   {
     "id": "elizabeth-burger-and-grill",
@@ -10835,7 +10948,8 @@
       "restaurants",
       "grillades"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Adresse populaire du centre de Port Louis réputée pour ses kebabs, poulet croustillant et burgers copieux. Idéal pour une pause déjeuner rapide."
   },
   {
     "id": "indra-domaines-les-pailles",
@@ -10869,7 +10983,8 @@
       "restaurants",
       "asiatique"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Restaurant cantonais du Bagatelle Mall (Moka) spécialisé dim sum faits main servis en paniers bambou, ainsi que rôtis cantonais, riz et nouilles sautés. Sans porc ni bœuf, sans MSG."
   },
   {
     "id": "chinese-wok-restaurant",
@@ -10885,7 +11000,8 @@
       "restaurants",
       "asiatique"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Institution de Curepipe depuis 1980, réputée pour son canard laqué et l'influence singapourienne du chef, notamment sa pâte de piment vert. Petite salle, sur place et à emporter."
   },
   {
     "id": "thirsty-bistro",
@@ -10901,7 +11017,8 @@
       "restaurants",
       "europeenne"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Adresse du groupe Oxenham à Moka ouverte en octobre 2025 : bières artisanales, vins, cocktails et tapas, ambiance after-work avec DJ et concerts live."
   },
   {
     "id": "santana-bar",
@@ -10935,7 +11052,8 @@
       "restaurants",
       "asiatique"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Petit café-restaurant tendance du centre-ville de Port Louis, cuisine fusion japonaise (ramen, gyoza) et italienne, iced teas maison. Réservation recommandée."
   },
   {
     "id": "nicolas-ile-maurice",
@@ -10966,7 +11084,8 @@
       "restaurants",
       "kids-friendly"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Complexe loisirs (bowling 8 pistes, billard, karaoké) du Bagatelle Mall (Moka) avec restaurant de cuisine internationale, adapté aux familles."
   },
   {
     "id": "gansu-barakah",
@@ -10982,7 +11101,8 @@
       "restaurants",
       "asiatique"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Restaurant chinois halal de Port Louis, spécialisé nouilles tirées à la main façon Lanzhou et raviolis. Portions généreuses, espace prière disponible ; très bien noté (4,8/5)."
   },
   {
     "id": "la-maison-du-gourmet",
@@ -11011,7 +11131,8 @@
       "restaurants",
       "grillades"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Grill de plage décontracté sur la route côtière de Beau Champ, ambiance ouverte sur l'océan. Poissons grillés et fruits de mer frais, large carte de vins ; très bien noté (5/5)."
   },
   {
     "id": "sen-ken",
@@ -11027,7 +11148,8 @@
       "restaurants",
       "asiatique"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Enseigne de cuisine rapide asiatique-mauricienne au Bagatelle Mall (Moka), cuisine ouverte avec woks flambants. Curry, nouilles et riz sautés, thali, briani, boulettes chinoises."
   },
   {
     "id": "the-thirsty-fox-brewery",
@@ -11043,7 +11165,8 @@
       "restaurants",
       "frequente-locaux"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Micro-brasserie artisanale de Quatre Bornes (groupe Oxenham, depuis 2019), fondée par les cousins Fabien et Cedric Oxenham. Gamme de bières brassées en petites cuves (lager, weiss, pale ale, IPA)."
   },
   {
     "id": "burger-king-port-louis",
@@ -11060,7 +11183,8 @@
       "grillades",
       "kids-friendly"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Enseigne internationale de fast-food à l'angle des rues Sir William Newton et Léoville L'Homme (Port Louis), salle pouvant accueillir jusqu'à 105 personnes, livraison le midi pour les bureaux voisins."
   },
   {
     "id": "helvetia-shopping-centre",
@@ -11089,7 +11213,8 @@
       "restaurants",
       "grillades"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Chaîne d'origine sud-africaine à Port Louis, spécialisée dans le poulet grillé au feu de bois façon péri-péri, options végétariennes. Halal."
   },
   {
     "id": "excursion-de-reve",
@@ -13068,7 +13193,8 @@
       "fruits-de-mer",
       "europeenne"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Restaurant familial dans un jardin tropical à Grand Baie, cuisine française avec produits locaux, curries, fruits de mer et grillades. Très bien noté (4,8/5), cocktails appréciés."
   },
   {
     "id": "seb-s-kitchen-grand-baie",
@@ -13084,7 +13210,8 @@
       "restaurants",
       "grillades"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Burger joint de Grand Baie spécialisé dans le smash burger de bœuf maturé, tout fait maison (pain, frites, sauces). Ambiance décontractée rock'n'roll, menu volontairement restreint."
   },
   {
     "id": "l-espadon-restaurant",
@@ -13100,7 +13227,8 @@
       "restaurants",
       "fruits-de-mer"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Institution familiale en bord de route royale à Pointe aux Canonniers (Grand Baie), spécialisée en poissons et fruits de mer frais (thon, langouste réputés)."
   },
   {
     "id": "insomnia-night-club",
@@ -16926,7 +17054,8 @@
       "restaurants",
       "italien"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Pizzeria italienne familiale de Flic en Flac, très appréciée (4,8/5), pizzas artisanales, options végétariennes et halal. Ouvert le soir uniquement."
   },
   {
     "id": "les-salines-cafeteria",
@@ -16960,7 +17089,8 @@
       "restaurants",
       "asiatique"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Restaurant chinois de l'hôtel Aanari (Flic en Flac), réputé pour son canard laqué pékinois et ses fruits de mer, chefs venus de Chine continentale."
   },
   {
     "id": "cheesy-latte",
@@ -16977,7 +17107,8 @@
       "italien",
       "grillades"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Pizzeria-burger house sur la Route Royale à Black River, ambiance cosy, ingrédients locaux (pizza chèvre-miel truffé). Ouvert du mardi au dimanche."
   },
   {
     "id": "casa-pizza",
@@ -26965,7 +27096,8 @@
       "frequente-locaux"
     ],
     "badge": "selection",
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Petit restaurant familial de Cap Malheureux fondé en 1984, cabane de pêcheur, réputé pour ses homards frais, curry de poisson/ourite et rhum arrangé maison. Excellente note (4,7/5)."
   },
   {
     "id": "amigo-restaurant-cap-malheureux",
@@ -31842,7 +31974,8 @@
       "sushis",
       "tables-exception"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Bar à sushi omakase de 8 places au LUX* Le Morne, jusqu'à 12 services confectionnés devant le client par un chef formé chez Nobu. Tenue correcte exigée."
   },
   {
     "id": "intermart-ebene",
@@ -32116,7 +32249,8 @@
       "restaurants",
       "fruits-de-mer"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Cabane de plage de Pointe aux Piments tenue par un couple de pêcheurs, uniquement du poisson et fruits de mer du jour (langouste, gambas grillées, curry de crabe). Fermée s'il n'y a pas de pêche ; très bien notée (4,6/5)."
   },
   {
     "id": "la-ravanne",
