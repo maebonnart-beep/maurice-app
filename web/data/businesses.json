@@ -806,22 +806,6 @@
     "zone": "nord"
   },
   {
-    "id": "au-feu-de-bois",
-    "name": "Au Feu De Bois",
-    "category": "food",
-    "address": "Chem. Vingt Pieds, Grand Baie",
-    "phone": "+230 5942 0708",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=6228567486704498520",
-    "lat": -20.0087533,
-    "lng": 57.5968468,
-    "themes": [
-      "restaurants",
-      "grillades"
-    ],
-    "zone": "nord"
-  },
-  {
     "id": "restaurant-coolen-chez-ram",
     "name": "Restaurant Coolen Chez Ram",
     "category": "food",
@@ -881,7 +865,8 @@
     ],
     "hours": "Lun 10h-22h, Mar-Sam 11h-22h, Dim 9h-21h",
     "priceRange": "prix-moyen",
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Restaurant grec de Dodo Square à Grand Baie, plats authentiques selon des recettes traditionnelles (moussaka, souvlaki grillé), concept de repas façon mezze à partager. Décor méditerranéen convivial, plusieurs avis le désignent comme la meilleure table grecque de l'île ; prix jugés un peu élevés par certains."
   },
   {
     "id": "amazigh",
@@ -1019,7 +1004,8 @@
       "restaurants",
       "sushis"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Concept original à Grand Baie mêlant gastronomie fusion japonaise et française à un bar-lounge autour de cocktails, sushis et snacks. Ambiance à la fois décontractée et raffinée ; excellentes notes en ligne (4,9/5 sur TripAdvisor et Google)."
   },
   {
     "id": "la-payotte-restaurant-grand-baie-cocktail-bar-tapas",
@@ -1037,7 +1023,8 @@
     ],
     "hours": "Mar-Sam 11h45-14h30 & 18h-23h30, fermé dim et lun",
     "priceRange": "se-faire-plaisir",
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Restaurant et bar à cocktails à Pointe aux Canonniers, décor bohème-chic en bois flotté façon Bali. Cuisine française semi-gastronomique et tapas ; jardin de 400 m², excellents cocktails. Ouvert du mardi au samedi, 18h-minuit."
   },
   {
     "id": "banditos-grand-baie",
@@ -1188,7 +1175,8 @@
       "bars",
       "kids-friendly"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Beach club et restaurant de l'hôtel LUX* Grand Baie, ambiance conviviale et vue sur le lagon. Cuisine d'inspiration méditerranéenne avec Italian Kitchen et bar à mozzarella, boulangerie, grillades de fruits de mer. Service salué, attentif aux régimes spécifiques ; carte qui évolue du petit-déjeuner au dîner."
   },
   {
     "id": "eden-beach-restaurant-lounge-bar",
@@ -1206,7 +1194,8 @@
     ],
     "hours": "Dim 10h-19h, Lun-Ven 10h-22h30",
     "priceRange": "se-faire-plaisir",
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Restaurant, plage et lounge-bar ouvert en continu du petit-déjeuner au dîner, en bord de lagon à Grand Baie. Cuisine méditerranéenne et fraîcheur mauricienne (pâtes aux fruits de mer, poisson du jour, gambas, calamars). Noté 4/5 sur TripAdvisor, cadre les pieds dans l'eau, portions généreuses ; service parfois jugé lent."
   },
   {
     "id": "neo-s",
@@ -1246,22 +1235,6 @@
     "description": "Adresse moderne du Grand Baie Business Park, notée 4,4/5. Avis élogieux sur le club sandwich, le burger et les poke bowls, ainsi que sur l'attention du service en brunch comme en dîner."
   },
   {
-    "id": "riri-foods-mauritius",
-    "name": "RIRI FOODS, MAURITIUS",
-    "category": "food",
-    "address": "La Cuvette Beach, Grand Baie",
-    "phone": "+230 5810 4919",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=16361962267290234691",
-    "lat": -20.0071904,
-    "lng": 57.5783313,
-    "themes": [
-      "snacks-plage",
-      "mauricienne"
-    ],
-    "zone": "nord"
-  },
-  {
     "id": "coco-piment",
     "name": "Coco piment",
     "category": "food",
@@ -1273,7 +1246,7 @@
     "lng": 57.5937117,
     "themes": [
       "restaurants",
-      "asiatique"
+      "mauricienne"
     ],
     "priceRange": "se-faire-plaisir",
     "badge": "selection",
@@ -1336,24 +1309,6 @@
     "priceRange": "se-faire-plaisir",
     "zone": "nord",
     "description": "Restaurant les pieds dans l'eau avec vue sur la baie de Grand Baie. Langouste et fruits de mer frais, musique live, coucher de soleil en toile de fond."
-  },
-  {
-    "id": "2beach-club-by-2futures",
-    "name": "2Beach Club by 2Futures",
-    "category": "food",
-    "address": "Impasse Pointe d'Azur, Grand Baie",
-    "phone": "+230 5800 4713",
-    "website": "https://2beachclub.mu/",
-    "googleMapsUrl": "https://maps.google.com/?cid=17735784252625993969",
-    "lat": -19.9926834,
-    "lng": 57.5922945,
-    "themes": [
-      "asiatique",
-      "bars"
-    ],
-    "hours": "Dim 11h-21h, Lun 10h30-19h30, Mar-Jeu 10h30-22h, Ven-Sam 10h30-23h",
-    "priceRange": "se-faire-plaisir",
-    "zone": "nord"
   },
   {
     "id": "bisou-rooftop-bar-restaurant-lux-grand-baie",
@@ -1431,22 +1386,6 @@
     "badge": "selection",
     "zone": "nord",
     "description": "Bar-restaurant en bord de plage à Grand Baie, réputé pour ses fruits de mer frais et ses plats d'agneau et de bœuf, avec animations musicales live et vue sur le coucher de soleil."
-  },
-  {
-    "id": "la-raie-manta",
-    "name": "La Raie Manta",
-    "category": "food",
-    "address": "Rte de la Salette, Grand Baie",
-    "phone": "+230 5752 2591",
-    "website": "https://www.facebook.com/profile.php?id=100090341207059",
-    "googleMapsUrl": "https://maps.google.com/?cid=599271753932241099",
-    "lat": -20.0130849,
-    "lng": 57.5848775,
-    "themes": [
-      "bars",
-      "grillades"
-    ],
-    "zone": "nord"
   },
   {
     "id": "fleur-de-mer",
@@ -1837,23 +1776,6 @@
       "kids-friendly"
     ],
     "hours": "Tous les jours 9h-23h (sandwiches 10h-16h)",
-    "zone": "nord"
-  },
-  {
-    "id": "manzu-ocean-v-hotel",
-    "name": "Manzu - Ocean V Hotel",
-    "category": "food",
-    "address": "Inside Ocean V Hotel, Corner Royal Road and Old Mill Rd, Grand Baie",
-    "phone": "+230 260 2200",
-    "website": "https://searesortshotels.com/ocean-v/dining/",
-    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Manzu%20restaurant%20Ocean%20V%20Hotel%20Mauritius",
-    "lat": -19.9963743,
-    "lng": 57.5878281,
-    "themes": [
-      "restaurants",
-      "asiatique"
-    ],
-    "priceRange": "se-faire-plaisir",
     "zone": "nord"
   },
   {
@@ -3468,12 +3390,13 @@
       "restaurants",
       "mauricienne",
       "europeenne",
-      "grillades"
+      "grillades",
+      "tables-exception"
     ],
     "hours": "Lun-Sam 11h30-15h30, fermé dim",
     "priceRange": "se-faire-plaisir",
     "zone": "ouest",
-    "description": "Table gastronomique installée au sein de la Rhumerie de Chamarel, mettant à l'honneur les produits du domaine à travers des plats à base de cœur de palmiste, de cerf ou de sanglier, avec visite de la distillerie incluse."
+    "description": "Restaurant gastronomique au sein de la Rhumerie de Chamarel, dans un cadre cosy avec cour intérieure et gazébos. Cuisine mauricienne aux ingrédients du domaine : porc braisé mariné au rhum de Chamarel, langouste grillée au riz et sauce crustacés, belle carte de vins français. Ouvert du lundi au samedi, 11h30-15h30 (dès Rs 1925/pers.) ; visite et dégustation de la distillerie offertes pour les clients du restaurant."
   },
   {
     "id": "chez-rosy-gris-gris-souillac",
@@ -3593,24 +3516,6 @@
     "priceRange": "bon-marche",
     "zone": "centre",
     "description": "Table indienne raffinée avec vue sur l'océan, spécialisée dans la cuisine moghole et les grillades au tandoor. Chefs originaires de Delhi, boissons traditionnelles (lassis, infusions) à la carte."
-  },
-  {
-    "id": "la-bonne-marmite-port-louis",
-    "name": "La Bonne Marmite",
-    "category": "food",
-    "address": "18 Rue Sir William Newton, Port-Louis",
-    "phone": "+230 212 2403",
-    "website": "http://www.bonnemarmite.com/index.php/fr",
-    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=La%20Bonne%20Marmite%20restaurant%20Port%20Louis%20Mauritius",
-    "lat": -20.1619,
-    "lng": 57.5017,
-    "themes": [
-      "restaurants",
-      "mauricienne"
-    ],
-    "hours": "Lun-Ven, uniquement le midi",
-    "priceRange": "bon-marche",
-    "zone": "centre"
   },
   {
     "id": "escale-creole-moka",
@@ -3995,7 +3900,8 @@
       "grillades"
     ],
     "priceRange": "prix-moyen",
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Restaurant familial récent de Flic en Flac, spécialisé dans les grillades de viande et de poisson accompagnées de sauces maison (poulpe grillé, poisson entier ou en filet). Accueil chaleureux et bon rapport qualité-prix ; propose également la livraison."
   },
   {
     "id": "jeanno-burger-flic-en-flac",
@@ -4009,12 +3915,15 @@
     "lng": 57.3639,
     "themes": [
       "restaurants",
-      "grillades"
+      "grillades",
+      "snacks-plage"
     ],
     "hours": "Fermé lun, Mar-Dim 11h-20h",
     "priceRange": "bon-marche",
     "badge": "selection",
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Stand de burgers (roulotte) posé directement sur le sable de la plage publique de Flic en Flac. Burgers, hot-dogs et paninis, options végétariennes et halal, prix très abordables. Noté 4,5/5 sur TripAdvisor, plébiscité pour sa sauce maison.",
+    "takeaway": true
   },
   {
     "id": "leslie-restaurant-flic-en-flac",
@@ -4034,22 +3943,6 @@
     "zone": "ouest",
     "description": "Petit restaurant familial mauricien sur la route royale de Flic en Flac, réputé pour ses langoustes et crevettes à l'ail, considéré comme l'une des adresses locales authentiques du secteur.",
     "hours": "Tous les jours 11h-14h30 & 18h-21h30"
-  },
-  {
-    "id": "pavillon-de-jade-tamarin",
-    "name": "Pavillon de Jade",
-    "category": "food",
-    "address": "Tamarin, Rivière Noire",
-    "phone": "",
-    "website": "",
-    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Pavillon%20de%20Jade%20restaurant%20Tamarin%20Mauritius",
-    "lat": -20.3252,
-    "lng": 57.3736,
-    "themes": [
-      "restaurants",
-      "asiatique"
-    ],
-    "zone": "ouest"
   },
   {
     "id": "happy-rajah-tamarin",
@@ -4089,7 +3982,8 @@
     "hours": "Fermé lun, Mar-Dim 11h30-14h30 & 17h30-21h30",
     "priceRange": "prix-moyen",
     "badge": "selection",
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Restaurant thaïlandais situé à Tamarin/La Mivoie (derrière Food Lovers Market), avec des chefs originaires de Thaïlande garantissant une cuisine authentique de style maison et street-food, dans un cadre de jardin arboré et calme. Plats parfumés et relevés, bonne offre végétarienne."
   },
   {
     "id": "smasher-tamarin",
@@ -4180,7 +4074,8 @@
     ],
     "hours": "Tous les jours 18h30-22h",
     "priceRange": "se-faire-plaisir",
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Restaurant indien de l'hôtel St. Regis Mauritius Resort au Morne, proposant une cuisine fraîche et généreuse en épices (butter chicken, biryani, malai kebabs). Noté 4,5/5 sur TripAdvisor pour la constance des plats et un service chaleureux."
   },
   {
     "id": "ginja-heritage-le-telfair-bel-ombre",
@@ -4218,7 +4113,8 @@
     ],
     "hours": "Lun-Ven 8h30-22h, Sam jusqu'à minuit, Dim jusqu'à 18h",
     "priceRange": "se-faire-plaisir",
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Beach club chic du Domaine de Bel Ombre, atmosphère bohème-chic. Brunch buffet varié, buffet de desserts apprécié, bons cocktails, deux bars avec vue sur mer, musique live et soirées à thème. Quelques avis évoquent un service inégal selon les périodes."
   },
   {
     "id": "infinity-blue-heritage-awali-bel-ombre",
@@ -4271,7 +4167,8 @@
       "restaurants",
       "europeenne"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Restaurant buffet à ciel ouvert de l'hôtel SO Sofitel Bel Ombre, sous un toit de chaume de 17 mètres entouré d'eau, vue sur le lagon turquoise. Cuisine internationale aux accents locaux, vaisselle signée Kenzo Takada. Bon accueil, options végétariennes."
   },
   {
     "id": "le-rochester-souillac",
@@ -4313,28 +4210,6 @@
     "description": "Le restaurant occupe une demeure de planteur datant de 1819, où la cuisine créole traditionnelle (fritures, salade de palmiste, poulet à la vanille) est servie sous la véranda dans un cadre d'époque coloniale."
   },
   {
-    "id": "symons-restaurant-belle-mare",
-    "name": "Symon's Restaurant",
-    "category": "food",
-    "address": "Coastal Road, Belle Mare",
-    "phone": "+230 415 1135",
-    "website": "",
-    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Symon's%20Restaurant%20Belle%20Mare%20Mauritius",
-    "lat": -20.2189,
-    "lng": 57.7867,
-    "themes": [
-      "restaurants",
-      "indienne",
-      "asiatique",
-      "grillades",
-      "fruits-de-mer"
-    ],
-    "hours": "Tous les jours 9h30-22h30",
-    "priceRange": "prix-moyen",
-    "badge": "selection",
-    "zone": "est"
-  },
-  {
     "id": "hasu-long-beach-belle-mare",
     "name": "Hasu - Long Beach A Sun Resort",
     "category": "food",
@@ -4366,11 +4241,13 @@
     "lng": 57.7867,
     "themes": [
       "restaurants",
-      "indienne"
+      "indienne",
+      "tables-exception"
     ],
     "hours": "Dîner uniquement, tous les jours 19h-22h",
     "priceRange": "se-faire-plaisir",
-    "zone": "est"
+    "zone": "est",
+    "description": "Restaurant indien contemporain du LUX* Belle Mare, placé sous la direction du chef étoilé Vineet Bhatia MBE, pionnier de la cuisine indienne moderne. Carte à la carte ou en menu dégustation, mêlant influences indiennes et mauriciennes dans un décor chaleureux évoquant l'Inde. Très bien noté (4,8/5 sur TripAdvisor), régulièrement comparé aux meilleures tables de l'île."
   },
   {
     "id": "mamie-sophie-table-hote-camp-ithier",
@@ -4407,7 +4284,8 @@
     ],
     "hours": "Dîner uniquement",
     "priceRange": "se-faire-plaisir",
-    "zone": "est"
+    "zone": "est",
+    "description": "Restaurant italien gastronomique du Constance Belle Mare Plage, sur une terrasse en bois surplombant l'océan. Un chef italien y prépare chaque jour des pâtes fraîches maison (carbonara, pappardelle au ragù de cerf local) et un four à bois cuit pizzas napolitaines et poissons entiers. Service attentionné, tenue correcte exigée le soir ; prix jugés élevés par plusieurs avis."
   },
   {
     "id": "chez-tino-trou-eau-douce",
@@ -4447,7 +4325,8 @@
     "hours": "Fermé dim, dîner sur réservation 19h-22h30",
     "priceRange": "se-faire-plaisir",
     "badge": "selection",
-    "zone": "est"
+    "zone": "est",
+    "description": "Restaurant confidentiel installé dans l'ancienne sucrerie Victoria 1840, à la fois table gastronomique française et galerie d'art (œuvres de Maniglier, dernier élève mauricien de Matisse). Produits locaux mis à l'honneur (langouste entière, filets de loup, poisson en croûte de sel). Avis partagés, certains jugent le rapport qualité-prix décevant."
   },
   {
     "id": "restaurant-du-lac-mahebourg",
@@ -4467,23 +4346,6 @@
     "priceRange": "se-faire-plaisir",
     "zone": "sud",
     "description": "Restaurant en bord de lagon à Pointe Jérôme, avec terrasse et kiosques individuels, réputé pour ses fruits de mer et poissons grillés."
-  },
-  {
-    "id": "saveur-creole-mahebourg",
-    "name": "Saveur Kreol",
-    "category": "food",
-    "address": "Mahébourg",
-    "phone": "",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=10653758056361658403",
-    "lat": -20.4219377,
-    "lng": 57.7025526,
-    "themes": [
-      "mauricienne",
-      "vegetarien"
-    ],
-    "hours": "Dim 11h-22h30, Lun-Ven 11h-22h, Sam 11h-22h30",
-    "zone": "sud"
   },
   {
     "id": "chez-patrick-resto-mahebourg",
@@ -4523,25 +4385,6 @@
     "zone": "sud"
   },
   {
-    "id": "saveurs-de-shin-mahebourg",
-    "name": "Saveurs de Shin",
-    "category": "food",
-    "address": "Rue Suffren, Mahébourg",
-    "phone": "+230 631 3668",
-    "website": "",
-    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Saveurs%20de%20Shin%20Mahebourg%20Mauritius",
-    "lat": -20.4081,
-    "lng": 57.7,
-    "themes": [
-      "restaurants",
-      "asiatique"
-    ],
-    "hours": "Fermé mar, Lun + Mer-Dim 10h-15h & 18h-22h",
-    "priceRange": "bon-marche",
-    "badge": "selection",
-    "zone": "sud"
-  },
-  {
     "id": "dragon-de-chine-mahebourg",
     "name": "Dragon De Chine",
     "category": "food",
@@ -4576,7 +4419,8 @@
       "indienne"
     ],
     "priceRange": "prix-moyen",
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Restaurant indien situé dans le centre commercial Bo'Valon Mall à Beau Vallon (Mahébourg), réputé pour sa cuisine authentique et savoureuse à prix abordables : curry, poulet tandoori, korma, et la Maharaja Thali à partager (sur réservation)."
   },
   {
     "id": "les-copains-dabord-mahebourg",
@@ -4614,7 +4458,8 @@
       "grillades"
     ],
     "priceRange": "bon-marche",
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Restaurant indien des Arcades Currimjee à Curepipe, ouvert depuis 2012, avec buffet du midi et large carte à l'assiette dans un cadre moderne. Classé n°1 des restaurants de Curepipe sur TripAdvisor (4,3/5), réputé pour ses grillades au tandoor."
   },
   {
     "id": "kasafe-curepipe",
@@ -4631,7 +4476,8 @@
       "asiatique"
     ],
     "priceRange": "bon-marche",
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Petit restaurant thaïlandais familial de Curepipe (une vingtaine de couverts), tenu par un couple dont la cheffe, originaire de Thaïlande, a participé au concours télévisé thaïlandais \"Top Chef\". Plats préparés à la commande avec des produits frais, dans l'esprit de la cuisine de rue thaïlandaise ; considéré comme l'une des meilleures adresses thaïes de l'île."
   },
   {
     "id": "dallas-yesh-curepipe",
@@ -4714,25 +4560,6 @@
     "priceRange": "bon-marche",
     "zone": "nord",
     "description": "Table d'hôte tenue par Val dans une ambiance chez l'habitant, où les convives dînent au bord de la piscine et découvrent un menu du jour composé selon les produits frais disponibles."
-  },
-  {
-    "id": "esco-burger-blue-bay",
-    "name": "Esco Burger",
-    "category": "food",
-    "address": "Coastal Road, Blue Bay",
-    "phone": "+230 5803 5676",
-    "website": "",
-    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Esco%20Burger%20Blue%20Bay%20Mauritius",
-    "lat": -20.4442,
-    "lng": 57.7092,
-    "themes": [
-      "restaurants",
-      "grillades"
-    ],
-    "hours": "Fermé jeu, ouvre à partir de 12h30",
-    "priceRange": "bon-marche",
-    "badge": "selection",
-    "zone": "sud"
   },
   {
     "id": "les-palmiers-chez-dev-chamarel",
@@ -7686,23 +7513,6 @@
     "zone": "sud"
   },
   {
-    "id": "l-alchimiste-restaurant",
-    "name": "L’Alchimiste restaurant",
-    "category": "food",
-    "address": "H9CW+XJX",
-    "phone": "+230 483 4980",
-    "website": "http://www.rhumeriedechamarel.com/",
-    "googleMapsUrl": "https://maps.google.com/?cid=11744627147797958219&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.4275018,
-    "lng": 57.3966003,
-    "themes": [
-      "restaurants",
-      "grillades"
-    ],
-    "badge": "selection",
-    "zone": "ouest"
-  },
-  {
     "id": "la-citronelle",
     "name": "La Citronelle",
     "category": "food",
@@ -8778,7 +8588,8 @@
     "lng": 57.7181144,
     "themes": [
       "restaurants",
-      "grillades"
+      "grillades",
+      "cafes-terrasses"
     ],
     "badge": "selection",
     "zone": "sud"
@@ -8910,22 +8721,6 @@
     "lng": 57.788894,
     "themes": [
       "golf"
-    ],
-    "zone": "est"
-  },
-  {
-    "id": "indigo-beach-restaurant",
-    "name": "Indigo Beach Restaurant",
-    "category": "food",
-    "address": "RQM8+9F3, Poste de Flacq",
-    "phone": "",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=6054076222996800015&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.1666005,
-    "lng": 57.7661686,
-    "themes": [
-      "restaurants",
-      "grillades"
     ],
     "zone": "est"
   },
@@ -10204,7 +9999,7 @@
   },
   {
     "id": "saveur-kreol",
-    "name": "Saveur kreol",
+    "name": "Saveur Kreol",
     "category": "food",
     "address": "Chemin Point D'esny Beau Vallon Mahébourg MU, Mahébourg 52201",
     "phone": "+230 5703 1655",
@@ -10213,9 +10008,12 @@
     "lat": -20.4219377,
     "lng": 57.7025526,
     "themes": [
-      "restaurants"
+      "restaurants",
+      "mauricienne"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "hours": "Dim 11h-22h30, Lun-Ven 11h-22h, Sam 11h-22h30",
+    "description": "Restaurant familial de Mahébourg servant une cuisine créole mauricienne généreuse, avec fruits de mer frais (curry de poulpe, poisson grillé mariné aux épices) et plats traditionnels, dans un cadre rustique proche du littoral."
   },
   {
     "id": "letincelle",
@@ -14106,7 +13904,8 @@
     ],
     "badge": "coup-de-coeur",
     "promoText": "Excellentes crêpes, produits locaux et régionaux. Super accueil, service aux petits soins.",
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Crêperie bretonne authentique installée dans le complexe Dodo La Lodge à Grand Baie, tenue par un couple français attaché aux recettes traditionnelles de galettes de sarrasin et crêpes sucrées. Avis très positifs, produits de qualité, service chaleureux, face à la plage."
   },
   {
     "id": "la-demeure-saint-antoine",
@@ -27443,7 +27242,8 @@
     "priceRange": "se-faire-plaisir",
     "badge": "coup-de-coeur",
     "promoText": "Belles présentations, portions correctes, excellents desserts — haut de gamme mais raisonnable.",
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Table de l'hôtel InterContinental Balaclava Fort, Ségala propose une cuisine créole modernisée d'inspiration méditerranéenne (soupes, salades fraîches, grillades de viandes et de poissons), servie en salle ou en terrasse face à l'océan. Cadre élégant, service attentif ; fermé le lundi, dress code smart casual."
   },
   {
     "id": "quarter-deck-bar-maritim-balaclava",
@@ -27541,7 +27341,8 @@
     ],
     "badge": "selection",
     "promoText": "Cuisine italienne, et crêpes au goûter.",
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Restaurant méditerranéen de Trou aux Biches, repris par un nouveau propriétaire en 2023. Accueil décrit comme professionnel et chaleureux, très bien noté sur TripAdvisor ; gamme de prix moyenne à élevée."
   },
   {
     "id": "la-charrette-dor",
@@ -27631,7 +27432,8 @@
     ],
     "badge": "selection",
     "promoText": "Cave à vins et bar à cocktails ; langouste, thon rouge, crevettes géantes.",
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Depuis près de quarante ans, Amigo est l'une des adresses de référence pour la langouste à l'Île Maurice, servie entière et grillée à la flamme, accompagnée de poissons frais et de plateaux de fruits de mer. Cadre convivial en bord de mer, personnel aux petits soins ; 4,5/5 sur TripAdvisor, quelques avis mentionnent un rapport qualité-prix élevé."
   },
   {
     "id": "chez-marilyn",
@@ -27701,23 +27503,6 @@
     "zone": "ouest"
   },
   {
-    "id": "sawasdee-flic-en-flac",
-    "name": "Sawasdee",
-    "category": "food",
-    "address": "Flic en Flac",
-    "phone": "",
-    "website": "",
-    "googleMapsUrl": "https://maps.app.goo.gl/BES17HJkjsYnSaKWA",
-    "lat": -20.2759161,
-    "lng": 57.3702497,
-    "themes": [
-      "restaurants",
-      "asiatique"
-    ],
-    "badge": "selection",
-    "zone": "ouest"
-  },
-  {
     "id": "restaurant-sands-suites",
     "name": "Restaurant — Sands Suites Resort & Spa",
     "category": "food",
@@ -27748,40 +27533,6 @@
     ],
     "badge": "selection",
     "zone": "ouest"
-  },
-  {
-    "id": "le-dragon-vert",
-    "name": "Le Dragon Vert",
-    "category": "food",
-    "address": "Route Saint-Jean, Quatre Bornes",
-    "phone": "",
-    "website": "",
-    "googleMapsUrl": "https://maps.app.goo.gl/7RTUAnwCoLYtDPLf8",
-    "lat": -20.2706534,
-    "lng": 57.475033,
-    "themes": [
-      "restaurants",
-      "asiatique"
-    ],
-    "badge": "selection",
-    "zone": "centre"
-  },
-  {
-    "id": "dalon-gourmet-fast-food",
-    "name": "Dalon Gourmet Fast Food",
-    "category": "food",
-    "address": "Richmond Hill Complex, Grand Baie",
-    "phone": "+230 5755 6659",
-    "website": "",
-    "googleMapsUrl": "https://maps.app.goo.gl/",
-    "lat": -20.0141974,
-    "lng": 57.5881442,
-    "themes": [
-      "restaurants",
-      "grillades"
-    ],
-    "badge": "selection",
-    "zone": "nord"
   },
   {
     "id": "kot-marie-michelle",
@@ -32226,22 +31977,6 @@
     "description": "École d'équitation entre mer et montagnes à Cascavelle : cours d'équitation, dressage, saut d'obstacles, Pony Club pour les plus jeunes et voltige. Instructeurs sélectionnés avec rigueur ; 98% d'avis positifs sur un accueil chaleureux et un encadrement sécurisant."
   },
   {
-    "id": "nomad",
-    "name": "NOMAD",
-    "category": "food",
-    "address": "Morcellement Ramdenee Riviere Noire MU, 90619",
-    "phone": "+230 5858 4990",
-    "website": "https://nomad.restaurant/",
-    "googleMapsUrl": "https://maps.google.com/?cid=11576327729396124620&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.3684699,
-    "lng": 57.3837626,
-    "themes": [
-      "restaurants",
-      "grillades"
-    ],
-    "zone": "ouest"
-  },
-  {
     "id": "the-bay-guest-house-restaurant",
     "name": "The Bay Guest House & Restaurant",
     "category": "food",
@@ -34375,7 +34110,8 @@
       "restaurants",
       "indienne"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Restaurant indien situé au cœur de Péreybère, apprécié pour sa cuisine fine (biryani, paneer, plats classiques et plus exotiques du sous-continent) servie dans un cadre élégant mais décontracté. Noté 4,5/5 sur TripAdvisor pour son service attentionné."
   },
   {
     "id": "sunshine-fusion-poste-lafayette",
