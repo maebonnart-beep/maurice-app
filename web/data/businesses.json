@@ -20217,9 +20217,11 @@
     "lng": 57.5132708,
     "themes": [
       "shopping",
-      "mode-adultes"
+      "mode-adultes",
+      "equipement-maison"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Enseigne sud-africaine de mode et d'articles pour la maison, au So'Flo Mall de Vacoas-Phoenix : linge de maison, arts de la table et petite décoration en plus de ses collections vêtements homme/femme/enfant."
   },
   {
     "id": "le-gall-clothing-shop",
@@ -35390,5 +35392,58 @@
     "description": "Le plus grand musée de coquillages d'Afrique, installé sur le site de l'ancienne sucrerie de Bel Ombre. Plus de 8 000 spécimens représentant environ 1 500 espèces et 150 familles venus du monde entier, présentés à travers un parcours pédagogique et interactif, avec boutique sur place.",
     "hours": "Lun-Sam 9h-17h (dernière entrée 16h), Dim & jours fériés 9h-16h (dernière entrée 15h)",
     "entryPrice": "Résidents : Rs 175 adulte / Rs 90 enfant (5-11 ans) — Non-résidents : Rs 350 adulte / Rs 175 enfant (5-11 ans), gratuit -5 ans"
+  },
+  {
+    "id": "china-mall-mauritius",
+    "name": "China Mall Mauritius",
+    "category": "activites",
+    "address": "Jin Fei Link Road, Baie du Tombeau, Pamplemousses",
+    "phone": "+230 249 6666",
+    "website": "https://www.chinamallmauritius.com",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.1242947,57.5165785",
+    "lat": -20.1242947,
+    "lng": 57.5165785,
+    "themes": [
+      "shopping",
+      "equipement-maison"
+    ],
+    "zone": "nord",
+    "description": "Immense centre commercial de gros et de détail (le plus grand \"supermarché chinois\" d'Afrique selon l'enseigne), à Baie du Tombeau. Articles pour la maison, mobilier, électroménager, déco, jouets, vêtements et bien plus, à prix compétitifs sur plusieurs étages.",
+    "hours": "Tous les jours 9h-21h"
+  },
+  {
+    "id": "la-foirfouille-grand-baie",
+    "name": "La Foir'Fouille Grand Baie",
+    "category": "activites",
+    "address": "Chemin Vingt Pieds, Shop C1-06, La Croisette, Grand Baie",
+    "phone": "+230 268 6559",
+    "website": "https://magasins.lafoirfouille.fr/maurice/la-foirfouille-226",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.0212692,57.5785712",
+    "lat": -20.0212692,
+    "lng": 57.5785712,
+    "themes": [
+      "shopping",
+      "equipement-maison"
+    ],
+    "zone": "nord",
+    "description": "Enseigne française de déco et petit équipement de la maison (vases, miroirs, coussins, linge de maison, mobilier extérieur, ustensiles de cuisine, arts de la table, décorations saisonnières...) à la Croisette de Grand Baie. Autres magasins à Flacq et Ebène.",
+    "hours": "9h30-20h30"
+  },
+  {
+    "id": "gifi-phoenix",
+    "name": "GiFi Phoenix",
+    "category": "activites",
+    "address": "Phoenix Mall, Swami Sivananda Avenue, Vacoas-Phoenix",
+    "phone": "+230 428 3189",
+    "website": "https://gifimauritius.com/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.2792616,57.4955633",
+    "lat": -20.2792616,
+    "lng": 57.4955633,
+    "themes": [
+      "shopping",
+      "equipement-maison"
+    ],
+    "zone": "centre",
+    "description": "Enseigne française de déco et petits objets pour la maison à prix accessibles : linge de maison, arts de la table, jeux, petit électroménager, mobilier et articles d'extérieur, au Phoenix Mall."
   }
 ]
