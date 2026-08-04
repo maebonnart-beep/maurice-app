@@ -35445,5 +35445,22 @@
     ],
     "zone": "centre",
     "description": "Enseigne française de déco et petits objets pour la maison à prix accessibles : linge de maison, arts de la table, jeux, petit électroménager, mobilier et articles d'extérieur, au Phoenix Mall."
+  },
+  {
+    "id": "concepts-vacoas-phoenix",
+    "name": "Concepts Vacoas-Phoenix",
+    "category": "activites",
+    "address": "PGF4+FCG, Vacoas-Phoenix",
+    "phone": "+230 427 8356",
+    "website": "https://aldrex.mu/catalogues-2/concepts-department-stores/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Concepts+Vacoas-Phoenix+Mauritius",
+    "lat": -20.2933761,
+    "lng": 57.4978036,
+    "themes": [
+      "shopping",
+      "equipement-maison"
+    ],
+    "zone": "centre",
+    "description": "Enseigne mauricienne multi-marques dédiée à la maison (créée en 2013) : décoration tendance, petit électroménager, linge de maison, arts de la table et idées cadeaux à prix accessibles, succursale de Vacoas-Phoenix."
   }
 ]
