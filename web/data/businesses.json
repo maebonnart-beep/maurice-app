@@ -870,21 +870,6 @@
     "description": "Restaurant grec de Dodo Square à Grand Baie, plats authentiques selon des recettes traditionnelles (moussaka, souvlaki grillé), concept de repas façon mezze à partager. Décor méditerranéen convivial, plusieurs avis le désignent comme la meilleure table grecque de l'île ; prix jugés un peu élevés par certains."
   },
   {
-    "id": "amazigh",
-    "name": "AMAZIGH",
-    "category": "food",
-    "address": "School lane, Grand Baie",
-    "phone": "+230 5731 6062",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=6271203639024536703",
-    "lat": -20.0150887,
-    "lng": 57.584339,
-    "themes": [
-      "restaurants"
-    ],
-    "zone": "nord"
-  },
-  {
     "id": "la-terrasse",
     "name": "La Terrasse",
     "category": "food",
@@ -1026,21 +1011,6 @@
     "priceRange": "se-faire-plaisir",
     "zone": "nord",
     "description": "Restaurant et bar à cocktails à Pointe aux Canonniers, décor bohème-chic en bois flotté façon Bali. Cuisine française semi-gastronomique et tapas ; jardin de 400 m², excellents cocktails. Ouvert du mardi au samedi, 18h-minuit."
-  },
-  {
-    "id": "banditos-grand-baie",
-    "name": "Banditos Grand Baie",
-    "category": "food",
-    "address": "MU, La Salette Rd, Grand Baie 12157",
-    "phone": "+230 5708 7958",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=6909474177337088418",
-    "lat": -20.0131285,
-    "lng": 57.5863122,
-    "themes": [
-      "restaurants"
-    ],
-    "zone": "nord"
   },
   {
     "id": "la-cabane-de-jules",
@@ -5913,36 +5883,6 @@
     "zone": "nord"
   },
   {
-    "id": "l-endroit",
-    "name": "L'Endroit",
-    "category": "food",
-    "address": "XHJP+WHJ, Chem. Vingt Pieds, Grand Baie",
-    "phone": "",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=15151486916058239524&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0176307,
-    "lng": 57.5863536,
-    "themes": [
-      "restaurants"
-    ],
-    "zone": "nord"
-  },
-  {
-    "id": "black-basement-restaurant-rum-bar",
-    "name": "Black Basement - Restaurant & Rum Bar",
-    "category": "food",
-    "address": "MU, Royal Road, Grand Gaube 30604",
-    "phone": "+230 5851 6656",
-    "website": "https://www.facebook.com/profile.php?id=61564371025993",
-    "googleMapsUrl": "https://maps.google.com/?cid=2966331538506912632&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0080134,
-    "lng": 57.6427798,
-    "themes": [
-      "restaurants"
-    ],
-    "zone": "nord"
-  },
-  {
     "id": "grill-chill",
     "name": "Grill & Chill",
     "category": "food",
@@ -6147,21 +6087,6 @@
     "description": "Table d'hôte à Flic en Flac : buffet à volonté, menu surprise en 3 services, ambiance conviviale. Réservation par WhatsApp."
   },
   {
-    "id": "sketch",
-    "name": "Sketch",
-    "category": "food",
-    "address": "Rivière Noire",
-    "phone": "+230 5421 6728",
-    "website": "http://www.sketchmauritius.com/",
-    "googleMapsUrl": "https://maps.google.com/?cid=9998847354098555773&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.3452195,
-    "lng": 57.3643504,
-    "themes": [
-      "restaurants"
-    ],
-    "zone": "ouest"
-  },
-  {
     "id": "la-riviere",
     "name": "La Rivière",
     "category": "food",
@@ -6175,21 +6100,6 @@
       "restaurants",
       "italien",
       "europeenne"
-    ],
-    "zone": "ouest"
-  },
-  {
-    "id": "coco-lolo-co",
-    "name": "Coco Lolo & Co 🍽️",
-    "category": "food",
-    "address": "M9CM+M5X, Tamarin",
-    "phone": "+230 5907 2812",
-    "website": "https://www.instagram.com/cocololo.mu?igsh=MXJxcWFiMWh2a3JkcA==&utm_source=qr",
-    "googleMapsUrl": "https://maps.google.com/?cid=8531973989015324579&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.3282821,
-    "lng": 57.3828763,
-    "themes": [
-      "restaurants"
     ],
     "zone": "ouest"
   },
@@ -6226,21 +6136,6 @@
     "badge": "selection",
     "zone": "ouest",
     "description": "Restaurant au décor tout en blanc évoquant un paquebot (« pakbo » en créole), cuisine fusion mêlant influences créole, indienne, chinoise et française."
-  },
-  {
-    "id": "hich-lounge",
-    "name": "Hich lounge",
-    "category": "food",
-    "address": "Jacques Morcellement, B1, St, Flic en Flac",
-    "phone": "+230 5507 5552",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=638944440052240601&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.2762553,
-    "lng": 57.3769514,
-    "themes": [
-      "restaurants"
-    ],
-    "zone": "ouest"
   },
   {
     "id": "la-marmite-mauricienne-flic-en-flac-restaurant",
@@ -6440,21 +6335,6 @@
     ],
     "zone": "ouest",
     "description": "Adresse de quartier réputée pour sa soupe de crabe et sa salade de fruits de mer à la mangue, dans une ambiance décontractée."
-  },
-  {
-    "id": "mosaic-restaurant-bar",
-    "name": "Mosaic - Restaurant & Bar",
-    "category": "food",
-    "address": "MU, Pasadena Shopping Centre, Coastal Rd, Flic en Flac 90502",
-    "phone": "+230 453 5968",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=6578129771210666884&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.2790211,
-    "lng": 57.3680628,
-    "themes": [
-      "restaurants"
-    ],
-    "zone": "ouest"
   },
   {
     "id": "osaka-sushi",
@@ -6802,21 +6682,6 @@
     "priceRange": "se-faire-plaisir"
   },
   {
-    "id": "jiva-coffee-and-roastery",
-    "name": "JIVA Coffee and Roastery",
-    "category": "food",
-    "address": "Black River Road, La Preneuse, Black River",
-    "phone": "+230 484 6251",
-    "website": "https://www.jivacoffee.mu/",
-    "googleMapsUrl": "https://maps.google.com/?cid=13409813771264481076&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.3551291,
-    "lng": 57.3662095,
-    "themes": [
-      "restaurants"
-    ],
-    "zone": "ouest"
-  },
-  {
     "id": "lakaz-cascavelle",
     "name": "Lakaz Cascavelle",
     "category": "food",
@@ -6966,22 +6831,6 @@
     "zone": "ouest"
   },
   {
-    "id": "shotz",
-    "name": "Shotz",
-    "category": "food",
-    "address": "MU, Coastal Rd, Flic en Flac 90502",
-    "phone": "+230 453 5626",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=8535008431292741341&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.283294,
-    "lng": 57.3651505,
-    "themes": [
-      "restaurants"
-    ],
-    "badge": "selection",
-    "zone": "ouest"
-  },
-  {
     "id": "le-lounge-9381",
     "name": "Le Lounge 9381",
     "category": "food",
@@ -6994,66 +6843,6 @@
     "themes": [
       "restaurants",
       "europeenne"
-    ],
-    "zone": "ouest"
-  },
-  {
-    "id": "saphire-bar-resto",
-    "name": "Saphire Bar & Resto",
-    "category": "food",
-    "address": "P9C9+5CJ, Flic en Flac",
-    "phone": "+230 5705 1387",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=7857382026804928260&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.2795468,
-    "lng": 57.3685084,
-    "themes": [
-      "restaurants"
-    ],
-    "zone": "ouest"
-  },
-  {
-    "id": "ti-port-bar-restaurant",
-    "name": "Ti Port Bar Restaurant",
-    "category": "food",
-    "address": "MU, Route Royale Avenue Débarcadère, Flic en Flac 90502",
-    "phone": "+230 5713 0862",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=3927274166169394130&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.2757203,
-    "lng": 57.3703165,
-    "themes": [
-      "restaurants"
-    ],
-    "zone": "ouest"
-  },
-  {
-    "id": "sunset-bar",
-    "name": "Sunset bar",
-    "category": "food",
-    "address": "Wolmar, Flic en Flac 90503",
-    "phone": "+230 403 1000",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=6416652679435944580&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.3083318,
-    "lng": 57.3667397,
-    "themes": [
-      "restaurants"
-    ],
-    "zone": "ouest"
-  },
-  {
-    "id": "medine-bar",
-    "name": "Medine bar",
-    "category": "food",
-    "address": "P927+6G, Wolmar Villa Rd, Flic en Flac",
-    "phone": "",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=9498356791911089637&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.2983958,
-    "lng": 57.3645011,
-    "themes": [
-      "restaurants"
     ],
     "zone": "ouest"
   },
@@ -7089,21 +6878,6 @@
       "grillades"
     ],
     "badge": "selection",
-    "zone": "ouest"
-  },
-  {
-    "id": "antidote",
-    "name": "Antidote",
-    "category": "food",
-    "address": "La Mivoie Royal Road, Rivière Noire",
-    "phone": "+230 5421 4706",
-    "website": "http://www.antidote-studios.com/",
-    "googleMapsUrl": "https://maps.google.com/?cid=11812686395658132427&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.3451041,
-    "lng": 57.3643677,
-    "themes": [
-      "restaurants"
-    ],
     "zone": "ouest"
   },
   {
@@ -7442,21 +7216,6 @@
     "zone": "sud"
   },
   {
-    "id": "flamboyant-chamarel",
-    "name": "Flamboyant Chamarel",
-    "category": "food",
-    "address": "Royal road, Chamarel",
-    "phone": "+230 5774 3060",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=9861140946443720102&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.4285391,
-    "lng": 57.3897507,
-    "themes": [
-      "restaurants"
-    ],
-    "zone": "sud"
-  },
-  {
     "id": "chez-pierre-paul",
     "name": "Chez Pierre Paul",
     "category": "food",
@@ -7488,21 +7247,6 @@
       "fruits-de-mer"
     ],
     "zone": "ouest"
-  },
-  {
-    "id": "chez-m-chamarel",
-    "name": "Chez M Chamarel",
-    "category": "food",
-    "address": "H9FR+H5V, Chamarel",
-    "phone": "+230 5759 2344",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=10787781267045747389&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.4260197,
-    "lng": 57.3904233,
-    "themes": [
-      "restaurants"
-    ],
-    "zone": "sud"
   },
   {
     "id": "rhumerie-de-chamarel-restaurant-rum-distillery",
@@ -7635,21 +7379,6 @@
     "themes": [
       "restaurants",
       "mauricienne"
-    ],
-    "zone": "sud"
-  },
-  {
-    "id": "enbalao-bar-restaurant-chamarel",
-    "name": "Enbalao Bar & Restaurant Chamarel",
-    "category": "food",
-    "address": "Curious Mauritius, Baie du Cap – Chamarel Rd, Chamarel",
-    "phone": "+230 5763 6651",
-    "website": "https://curiousmauritius.com/enbalao-restaurant-chamarel/",
-    "googleMapsUrl": "https://maps.google.com/?cid=15745540461427190874&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.4378164,
-    "lng": 57.3903757,
-    "themes": [
-      "restaurants"
     ],
     "zone": "sud"
   },
@@ -7833,21 +7562,6 @@
     "themes": [
       "restaurants",
       "mauricienne"
-    ],
-    "zone": "sud"
-  },
-  {
-    "id": "taste-of-flo",
-    "name": "Taste of Flo",
-    "category": "food",
-    "address": "G8MV+63C, B9, Le Morne",
-    "phone": "+230 5733 0355",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=14332789155574406478&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.4666623,
-    "lng": 57.3426457,
-    "themes": [
-      "restaurants"
     ],
     "zone": "sud"
   },
@@ -8086,21 +7800,6 @@
     "zone": "ouest"
   },
   {
-    "id": "aloha-restaurant",
-    "name": "aloha restaurant",
-    "category": "food",
-    "address": "royal road, La Gaulette",
-    "phone": "+230 5486 9921",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=15668511122270095586&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.4265003,
-    "lng": 57.3606846,
-    "themes": [
-      "restaurants"
-    ],
-    "zone": "ouest"
-  },
-  {
     "id": "ocean-vibes",
     "name": "Ocean Vibes",
     "category": "food",
@@ -8207,36 +7906,6 @@
     "themes": [
       "restaurants",
       "plus-belles-vues"
-    ],
-    "zone": "sud"
-  },
-  {
-    "id": "juice-shack",
-    "name": "Juice Shack",
-    "category": "food",
-    "address": "H9FR+W9V, B103 - Plaine Champagne Road, Chamarel",
-    "phone": "",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=16667116570714445057&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.4251304,
-    "lng": 57.3909314,
-    "themes": [
-      "restaurants"
-    ],
-    "zone": "sud"
-  },
-  {
-    "id": "lounge-bar-maravanne",
-    "name": "Lounge Bar \"Maravanne\"",
-    "category": "food",
-    "address": "G8M6+G4Q, Le Morne",
-    "phone": "+230 650 4203",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=2408252273843687545&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.4661616,
-    "lng": 57.3103517,
-    "themes": [
-      "restaurants"
     ],
     "zone": "sud"
   },
@@ -8540,21 +8209,6 @@
     "zone": "sud"
   },
   {
-    "id": "amafrooty",
-    "name": "Amafrooty",
-    "category": "food",
-    "address": "FCR7+952, Bel Ombre",
-    "phone": "",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=14817269669849061231&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.5091247,
-    "lng": 57.4128804,
-    "themes": [
-      "restaurants"
-    ],
-    "zone": "sud"
-  },
-  {
     "id": "le-fangourin",
     "name": "Le Fangourin",
     "category": "food",
@@ -8679,36 +8333,6 @@
     "themes": [
       "restaurants",
       "plus-belles-vues"
-    ],
-    "zone": "sud"
-  },
-  {
-    "id": "takamaka",
-    "name": "TAKAMAKA",
-    "category": "food",
-    "address": "FCRP+55, Bel Ombre",
-    "phone": "",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=1658614973355525673&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.5095766,
-    "lng": 57.4354053,
-    "themes": [
-      "restaurants"
-    ],
-    "zone": "sud"
-  },
-  {
-    "id": "texas-bar",
-    "name": "Texas bar",
-    "category": "food",
-    "address": "GF4H+3JM, Royal road, Chemin Grenier",
-    "phone": "+230 5901 1082",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=10378191756807927122&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.4947967,
-    "lng": 57.4790485,
-    "themes": [
-      "restaurants"
     ],
     "zone": "sud"
   },
@@ -8880,24 +8504,6 @@
       "asiatique"
     ],
     "zone": "est"
-  },
-  {
-    "id": "sun-and-sand",
-    "name": "Sun and Sand",
-    "category": "food",
-    "address": "The Residence, Coastal Road, Quatre Cocos",
-    "phone": "",
-    "website": "https://www.facebook.com/profile.php?id=100057227029325",
-    "googleMapsUrl": "https://maps.google.com/?cid=9572060218816226627&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.1947792,
-    "lng": 57.7757772,
-    "themes": [
-      "restaurants"
-    ],
-    "badge": "coup-de-coeur",
-    "zone": "est",
-    "promoText": "Superbe restaurant familial (chez Charlène), niché entre les filaos qui bordent la plage publique. Endroit idyllique, cuisine créole fraîche et bien cuisinée (poissons, grillades, salades), prix très raisonnables.",
-    "photoUrl": "/photos/sun-and-sand-exterior.jpg"
   },
   {
     "id": "beach-rouge-lux-belle-mare",
@@ -9369,21 +8975,6 @@
     "zone": "est"
   },
   {
-    "id": "waterside-tasty-foods",
-    "name": "Waterside Tasty foods",
-    "category": "food",
-    "address": "Deux frères, Royal road",
-    "phone": "+230 5504 4939",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=9210709181196547420&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.2945476,
-    "lng": 57.774438,
-    "themes": [
-      "restaurants"
-    ],
-    "zone": "est"
-  },
-  {
     "id": "restaurant-l-empereur",
     "name": "Restaurant L'Empereur",
     "category": "food",
@@ -9604,21 +9195,6 @@
     "zone": "nord"
   },
   {
-    "id": "lolita-marie-rhum-arrange",
-    "name": "Lolita Marie Rhum Arrange",
-    "category": "food",
-    "address": "Montee Bastille N.61 MU, Trou d'Eau Douce 42209",
-    "phone": "+230 5814 8925",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=4288401653707636492&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.2389858,
-    "lng": 57.7828052,
-    "themes": [
-      "restaurants"
-    ],
-    "zone": "est"
-  },
-  {
     "id": "safran",
     "name": "Safran",
     "category": "food",
@@ -9652,36 +9228,6 @@
     "zone": "est"
   },
   {
-    "id": "shores",
-    "name": "Shores",
-    "category": "food",
-    "address": "Long Beach Mauritius, Quatre Cocos",
-    "phone": "",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=390649497490487276&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.1722986,
-    "lng": 57.7703557,
-    "themes": [
-      "restaurants"
-    ],
-    "zone": "est"
-  },
-  {
-    "id": "k-bar",
-    "name": "K bar",
-    "category": "food",
-    "address": "RQ2M+554, Quatre Cocos",
-    "phone": "",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=2726178656373311101&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.1994137,
-    "lng": 57.7829012,
-    "themes": [
-      "restaurants"
-    ],
-    "zone": "est"
-  },
-  {
     "id": "coco-s",
     "name": "Coco's",
     "category": "food",
@@ -9697,36 +9243,6 @@
       "mauricienne"
     ],
     "zone": "est"
-  },
-  {
-    "id": "shisha-maurisha-lux-belle-mare",
-    "name": "Shisha Maurisha LUX* Belle Mare",
-    "category": "food",
-    "address": "MU, LUX* Belle Mare, Coastal Road, Quatre Cocos 742CU001",
-    "phone": "+230 5973 0789",
-    "website": "https://www.shishamaurisha.com/",
-    "googleMapsUrl": "https://maps.google.com/?cid=5728767758401969340&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.199331,
-    "lng": 57.7819705,
-    "themes": [
-      "restaurants"
-    ],
-    "zone": "est"
-  },
-  {
-    "id": "flying-dodo-brewing-company",
-    "name": "Flying Dodo Brewing Company",
-    "category": "food",
-    "address": "1, Mall of Mauritius, Bagatelle, Reduit 80832",
-    "phone": "+230 468 8810",
-    "website": "http://www.flyingdodo.com/",
-    "googleMapsUrl": "https://maps.google.com/?cid=9390953162910928132&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.2240861,
-    "lng": 57.4952662,
-    "themes": [
-      "restaurants"
-    ],
-    "zone": "centre"
   },
   {
     "id": "langer-s-bar-grill",
@@ -9757,36 +9273,6 @@
     "themes": [
       "restaurants",
       "grillades"
-    ],
-    "zone": "est"
-  },
-  {
-    "id": "wrap-and-juice-bar-long-beach",
-    "name": "Wrap and Juice Bar Long Beach",
-    "category": "food",
-    "address": "RQHC+HFM, Unnamed Road, Poste de Flacq",
-    "phone": "",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=9537116154550570658&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.1710346,
-    "lng": 57.7711624,
-    "themes": [
-      "restaurants"
-    ],
-    "zone": "est"
-  },
-  {
-    "id": "sega-bar",
-    "name": "Sega bar",
-    "category": "food",
-    "address": "PQXW+8W4, Trou d'Eau Douce",
-    "phone": "",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=1750921615486576056&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.2517413,
-    "lng": 57.7973493,
-    "themes": [
-      "restaurants"
     ],
     "zone": "est"
   },
@@ -10289,36 +9775,6 @@
     "zone": "sud"
   },
   {
-    "id": "rum-library",
-    "name": "Rum Library",
-    "category": "food",
-    "address": "MU, Coastal Road, Beau Champ 71501",
-    "phone": "+230 402 3100",
-    "website": "https://www.fourseasons.com/mauritius/dining/restaurants/rum-library/?utm_source=google&utm_medium=organicsearch&utm_campaign=tor-mas-fab-mid-seo-na&utm_content=socialpost-na&utm_term=na",
-    "googleMapsUrl": "https://maps.google.com/?cid=14521882117405752881&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.2840407,
-    "lng": 57.7909022,
-    "themes": [
-      "restaurants"
-    ],
-    "zone": "est"
-  },
-  {
-    "id": "take-off-bar",
-    "name": "Take Off Bar",
-    "category": "food",
-    "address": "New Terminal Building, Plaine Magnien",
-    "phone": "+230 5758 9189",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=2260028827490963706&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.4324057,
-    "lng": 57.6785258,
-    "themes": [
-      "restaurants"
-    ],
-    "zone": "sud"
-  },
-  {
     "id": "nativ-lodge-spa",
     "name": "Nativ Lodge & Spa",
     "category": "food",
@@ -10684,36 +10140,6 @@
     "zone": "centre"
   },
   {
-    "id": "l-entracte",
-    "name": "L'entracte",
-    "category": "food",
-    "address": "Barkly Wharf, Rue Old Pavillon, Le Caudan, Port Louis",
-    "phone": "+230 260 0595",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=9326105648084283930&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.1617361,
-    "lng": 57.4980624,
-    "themes": [
-      "restaurants"
-    ],
-    "zone": "centre"
-  },
-  {
-    "id": "meltin-potes",
-    "name": "Meltin' Potes",
-    "category": "food",
-    "address": "Moka Business Park, Moka",
-    "phone": "+230 433 8105",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=9637760402571606978&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.2248358,
-    "lng": 57.5058711,
-    "themes": [
-      "restaurants"
-    ],
-    "zone": "centre"
-  },
-  {
     "id": "la-potiniere",
     "name": "La Potinière",
     "category": "food",
@@ -10731,21 +10157,6 @@
     "badge": "selection",
     "zone": "centre",
     "description": "Table gastronomique de Curepipe avec vue sur les plantations de thé, ambiance cosy et élégante, cuisine franco-créole aux influences orientales."
-  },
-  {
-    "id": "dimashk",
-    "name": "Dimashk",
-    "category": "food",
-    "address": "CentrePoint Mall Trianon, Quatre Bornes",
-    "phone": "+230 5923 5682",
-    "website": "https://dimashk.restaurant/",
-    "googleMapsUrl": "https://maps.google.com/?cid=17310883776559220946&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.25574,
-    "lng": 57.4901763,
-    "themes": [
-      "restaurants"
-    ],
-    "zone": "centre"
   },
   {
     "id": "volcan-restaurant",
@@ -10847,21 +10258,6 @@
     "description": "Restaurant installé dans une demeure coloniale de 1872 en bois de teck à Forest-Side (Curepipe), aujourd'hui musée du thé mauricien, cadre patrimonial associé à un jardin de camphriers."
   },
   {
-    "id": "la-rose-de-damas",
-    "name": "La Rose de Damas",
-    "category": "food",
-    "address": "Moka",
-    "phone": "+230 5444 4444",
-    "website": "https://www.facebook.com/larosededamasmauritius/",
-    "googleMapsUrl": "https://maps.google.com/?cid=5150577118883835787&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.2245789,
-    "lng": 57.4963666,
-    "themes": [
-      "restaurants"
-    ],
-    "zone": "centre"
-  },
-  {
     "id": "naoki-sushi-grill",
     "name": "Naōki Sushi & Grill",
     "category": "food",
@@ -10892,21 +10288,6 @@
       "restaurants",
       "fruits-de-mer",
       "mauricienne"
-    ],
-    "zone": "centre"
-  },
-  {
-    "id": "moka-z",
-    "name": "MOKA'Z",
-    "category": "food",
-    "address": "Moka'z, QGGG+48M, Helvetia Shopping Centre, Moka",
-    "phone": "+230 432 0633",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=311548119284622051&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.2246628,
-    "lng": 57.5258021,
-    "themes": [
-      "restaurants"
     ],
     "zone": "centre"
   },
@@ -11072,21 +10453,6 @@
     "zone": "nord"
   },
   {
-    "id": "cafe-de-la-presse",
-    "name": "Cafe De La Presse",
-    "category": "food",
-    "address": "RGP2+F6P, La Chaussée, Port Louis",
-    "phone": "+230 212 8590",
-    "website": "https://m.facebook.com/cafedelapressemauritius/",
-    "googleMapsUrl": "https://maps.google.com/?cid=5262303486245385707&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.1637756,
-    "lng": 57.500569,
-    "themes": [
-      "restaurants"
-    ],
-    "zone": "centre"
-  },
-  {
     "id": "la-case-75",
     "name": "La Case 75",
     "category": "food",
@@ -11134,21 +10500,6 @@
       "asiatique"
     ],
     "zone": "nord"
-  },
-  {
-    "id": "the-court-cafe",
-    "name": "The Court Café",
-    "category": "food",
-    "address": "0000 Lislet Geoffrey St, Port Louis",
-    "phone": "+230 212 6705",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=15877191850045125122&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.1659148,
-    "lng": 57.5051193,
-    "themes": [
-      "restaurants"
-    ],
-    "zone": "centre"
   },
   {
     "id": "grand-canton-restaurant",
@@ -11300,21 +10651,6 @@
     "zone": "centre"
   },
   {
-    "id": "tout-de-sweet",
-    "name": "TOUT DE \"SWEET\"",
-    "category": "food",
-    "address": "Corner Diego Garcia /Sir edgar laurent street, China Rd, Port Louis 11402",
-    "phone": "+230 5825 6256",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=423550752581398923&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.164354,
-    "lng": 57.5167098,
-    "themes": [
-      "restaurants"
-    ],
-    "zone": "centre"
-  },
-  {
     "id": "house-of-canton",
     "name": "House of Canton",
     "category": "food",
@@ -11459,21 +10795,6 @@
     "zone": "centre"
   },
   {
-    "id": "atelier-27",
-    "name": "Atelier 27",
-    "category": "food",
-    "address": "6 Edith Cavell St, Port Louis",
-    "phone": "+230 5835 0022",
-    "website": "https://www.facebook.com/atelier27.mu",
-    "googleMapsUrl": "https://maps.google.com/?cid=6414695143409159183&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.1640961,
-    "lng": 57.499862,
-    "themes": [
-      "restaurants"
-    ],
-    "zone": "centre"
-  },
-  {
     "id": "thirsty-bistro",
     "name": "Thirsty Bistro",
     "category": "food",
@@ -11519,21 +10840,6 @@
     "themes": [
       "restaurants",
       "asiatique"
-    ],
-    "zone": "centre"
-  },
-  {
-    "id": "pink-socks",
-    "name": "Pink Socks",
-    "category": "food",
-    "address": "RFQW+Q6R, Port Louis",
-    "phone": "+230 202 4900",
-    "website": "https://ninetysixhotels.com/le-suffren-hotel-and-marina-port-louis-mauritius.html",
-    "googleMapsUrl": "https://maps.google.com/?cid=1575811017344203300&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.1605068,
-    "lng": 57.495511,
-    "themes": [
-      "restaurants"
     ],
     "zone": "centre"
   },
@@ -11585,21 +10891,6 @@
     "zone": "centre"
   },
   {
-    "id": "le-cafe-du-theatre",
-    "name": "Le Cafe du Theatre",
-    "category": "food",
-    "address": "Gallerie Remy Ollier, Nelson Mandela Square, RGP3+JRJ, Remy Ollier St, Port Louis",
-    "phone": "+230 212 5541",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=15567323592469880810&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.1634229,
-    "lng": 57.5045183,
-    "themes": [
-      "restaurants"
-    ],
-    "zone": "centre"
-  },
-  {
     "id": "la-maison-du-gourmet",
     "name": "La Maison du Gourmet",
     "category": "food",
@@ -11610,36 +10901,6 @@
     "lat": -20.2250377,
     "lng": 57.5060374,
     "themes": [],
-    "zone": "centre"
-  },
-  {
-    "id": "cafetino-port-louis",
-    "name": "CAFETINO PORT LOUIS",
-    "category": "food",
-    "address": "Rue Desforges, Port Louis",
-    "phone": "+230 5257 3727",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=3492624049228407276&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.1611934,
-    "lng": 57.507638,
-    "themes": [
-      "restaurants"
-    ],
-    "zone": "centre"
-  },
-  {
-    "id": "cafetino-curepipe",
-    "name": "CAFETINO CUREPIPE",
-    "category": "food",
-    "address": "Louis Pasteur St, Curepipe",
-    "phone": "+230 5257 3727",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=18145916121750107433&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.3191864,
-    "lng": 57.5286677,
-    "themes": [
-      "restaurants"
-    ],
     "zone": "centre"
   },
   {
@@ -11671,21 +10932,6 @@
     "themes": [
       "restaurants",
       "asiatique"
-    ],
-    "zone": "centre"
-  },
-  {
-    "id": "artisan-coffee-sir-william-newton",
-    "name": "Artisan Coffee - Sir William Newton",
-    "category": "food",
-    "address": "16 Sir William Newton St, Port Louis",
-    "phone": "+230 212 7802",
-    "website": "https://www.artisancoffee.mu/",
-    "googleMapsUrl": "https://maps.google.com/?cid=11066067966344832552&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.1623771,
-    "lng": 57.5038398,
-    "themes": [
-      "restaurants"
     ],
     "zone": "centre"
   },
@@ -20960,21 +20206,6 @@
     "zone": "sud"
   },
   {
-    "id": "roots-of-chamarel",
-    "name": "Roots of Chamarel",
-    "category": "food",
-    "address": "H9CQ+CWP, Route Royale, Chamarel",
-    "phone": "",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=16045030348134905846&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.428912,
-    "lng": 57.3898412,
-    "themes": [
-      "restaurants"
-    ],
-    "zone": "sud"
-  },
-  {
     "id": "woolworths-so-flo-mauritius",
     "name": "Woolworths So'flo Mauritius",
     "category": "activites",
@@ -21051,21 +20282,6 @@
       "grandes-surfaces"
     ],
     "zone": "centre"
-  },
-  {
-    "id": "chez-nella-roots-chamarel",
-    "name": "Chez Nella - Roots Chamarel",
-    "category": "food",
-    "address": "H9CQ+CWP, Route Royale, Chamarel",
-    "phone": "",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=17638787837381444589&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.429142,
-    "lng": 57.389951,
-    "themes": [
-      "restaurants"
-    ],
-    "zone": "sud"
   },
   {
     "id": "club-sixty-nine",
@@ -26516,21 +25732,6 @@
     "description": "Guesthouse de Trou d'Eau Douce (note 8,6) avec spa, coiffeur, piscine intérieure et centre de bien-être intégrés. Formules de soins bien-être disponibles pour les résidents. Avis très positifs sur la propreté et l'accueil (Brigitte et son équipe citées nommément)."
   },
   {
-    "id": "restaurant-les-cocotiers",
-    "name": "Restaurant Les cocotiers",
-    "category": "food",
-    "address": "Quatre Cocos",
-    "phone": "+230 415 8110",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=4880628906297992956&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.1997243,
-    "lng": 57.7748245,
-    "themes": [
-      "restaurants"
-    ],
-    "zone": "est"
-  },
-  {
     "id": "the-good-cafe",
     "name": "The Good Café",
     "category": "food",
@@ -27733,39 +26934,6 @@
     ],
     "badge": "selection",
     "zone": "sud"
-  },
-  {
-    "id": "roots-spirits",
-    "name": "Roots Spirits",
-    "category": "food",
-    "address": "Rivière Noire",
-    "phone": "",
-    "website": "",
-    "googleMapsUrl": "https://maps.app.goo.gl/Nj3Bax8oJEKiuKTe8",
-    "lat": -20.3553787,
-    "lng": 57.3659143,
-    "themes": [
-      "restaurants",
-      "bars"
-    ],
-    "badge": "selection",
-    "zone": "ouest"
-  },
-  {
-    "id": "restaurant-sands-suites",
-    "name": "Restaurant — Sands Suites Resort & Spa",
-    "category": "food",
-    "address": "Wolmar, Flic en Flac",
-    "phone": "",
-    "website": "",
-    "googleMapsUrl": "https://maps.app.goo.gl/DdA2Za77JFM9vmZ88",
-    "lat": -20.3164139,
-    "lng": 57.3718134,
-    "themes": [
-      "restaurants"
-    ],
-    "badge": "selection",
-    "zone": "ouest"
   },
   {
     "id": "bar-gold-beach-resort",
