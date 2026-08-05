@@ -13597,7 +13597,8 @@
     "themes": [
       "livraisons"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Plateforme de livraison de repas (commande via WhatsApp) pour la zone de Grand Baie : livre des plats de restaurants partenaires ainsi que de l'épicerie/pharmacie, 7j/7."
   },
   {
     "id": "paradisio-pizza-maurice",
@@ -13612,7 +13613,8 @@
     "themes": [
       "livraisons"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Pizzeria napolitaine de Pereybère/Grand Baie, livraison de pizzas fraîches chaque soir sur le secteur."
   },
   {
     "id": "the-food-factory",
@@ -13627,7 +13629,8 @@
     "themes": [
       "livraisons"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Restauration rapide healthy à Grand Baie (burgers, sauces allégées), ouvert tous les jours de 11h à 22h."
   },
   {
     "id": "felicita-authentic-neapolitan-pizza",
@@ -13642,7 +13645,8 @@
     "themes": [
       "livraisons"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Pizzeria napolitaine au four à bois de Grand Baie (ingrédients importés d'Italie), bar à burrata. Sur place, à emporter et en livraison."
   },
   {
     "id": "grubmates-food-delivery-flic-en-flac",
@@ -13657,7 +13661,8 @@
     "themes": [
       "livraisons"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Plateforme de livraison de repas multi-restaurants pour la zone Flic en Flac / Tamarin / Black River."
   },
   {
     "id": "nando-s-grand-baie",
@@ -13672,7 +13677,8 @@
     "themes": [
       "livraisons"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Chaîne de poulet peri-peri (fast-food) à La Croisette Mall, Grand Baie, ouvert tous les jours de 11h30 à 20h."
   },
   {
     "id": "delivery-services-for-home-and-office-mauritius-livraison-a-",
@@ -13684,9 +13690,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=5646701705102803256&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.008903,
     "lng": 57.5817316,
-    "themes": [
-      "livraisons"
-    ],
+    "themes": [],
     "zone": "nord"
   },
   {
@@ -13702,7 +13706,8 @@
     "themes": [
       "livraisons"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Livraison de sushis à Grand Baie."
   },
   {
     "id": "homemade110",
@@ -13732,7 +13737,8 @@
     "themes": [
       "livraisons"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Fast-food de Grand Baie : burgers, frites, poulet frit, wraps et paninis, ouvert tous les jours de 11h à 20h."
   },
   {
     "id": "chez-le-tamarinier-bistrot",
@@ -13762,7 +13768,8 @@
     "themes": [
       "livraisons"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Cuisine indienne (butter chicken, naan) au food court du Victoria Urban Terminal, Port Louis."
   },
   {
     "id": "italian-pizza-da-mario",
@@ -13777,7 +13784,8 @@
     "themes": [
       "livraisons"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Pizza au four à bois à Grand Baie, pâte au levain préparée à la minute, plutôt à emporter."
   },
   {
     "id": "la-cigale-pizzeria",
@@ -13792,7 +13800,8 @@
     "themes": [
       "livraisons"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Cuisine italienne à Pointe aux Canonniers/Grand Baie : pizzas, pâtes fraîches, lasagnes, déjeuner et dîner, sur place ou à emporter."
   },
   {
     "id": "burger-mania-rose-hill",
@@ -13807,7 +13816,8 @@
     "themes": [
       "livraisons"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Burgers 100% halal à Rose Hill, service déjeuner et dîner."
   },
   {
     "id": "tasty-panino",
@@ -13822,7 +13832,8 @@
     "themes": [
       "livraisons"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Pizzas et paninis italiens artisanaux à Triolet. Horaires : mer-jeu 17h-22h, ven-sam 12h-22h, dim 17h30-22h, lun 12h-22h (fermé le mardi)."
   },
   {
     "id": "panarottis-express-la-croisette",
@@ -13837,7 +13848,8 @@
     "themes": [
       "livraisons"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Cuisine italienne (pizzas, pâtes) au Food Pavilion de La Croisette, Grand Baie, ouvert jusqu'à 21h."
   },
   {
     "id": "oh-my-cake",
@@ -17270,7 +17282,8 @@
     "themes": [
       "livraisons"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Pizzeria napolitaine artisanale de Tamarin (pâte fermentée 48h, four à bois). Horaires : mer 11h30-14h/18h-21h, ven-sam 11h30-14h/18h-22h, dim 18h-21h (fermé le mardi)."
   },
   {
     "id": "pizz-a-gogo",
@@ -17303,7 +17316,8 @@
     "themes": [
       "livraisons"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Fast-food de poulet frit au Barachois, Tamarin, ouvert au moins du lundi au vendredi 10h-20h30."
   },
   {
     "id": "cafe-alexia",
@@ -17318,7 +17332,8 @@
     "themes": [
       "livraisons"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Café/petit-déjeuner au Food Avenue de Coeur Cap Tamarin, ouvert tous les jours de 11h à 19h."
   },
   {
     "id": "euro-food-truck",
@@ -17348,7 +17363,8 @@
     "themes": [
       "livraisons"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Kebabs artisanaux (pain maison, poulet/agneau mariné 48h) au Cascavelle Mall, avec service de livraison."
   },
   {
     "id": "lapas",
@@ -17378,7 +17394,8 @@
     "themes": [
       "livraisons"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Pizzeria italienne de Tamarin, pâte artisanale, sur place et à emporter, ouvert tous les jours midi et soir."
   },
   {
     "id": "da-vinci-s",
@@ -17393,7 +17410,8 @@
     "themes": [
       "livraisons"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Pizzeria italienne authentique à Vacoas-Phoenix (Castel), ouverte du mardi au dimanche, 18h-21h30."
   },
   {
     "id": "jiro-sushi-tamarin",
@@ -17408,7 +17426,8 @@
     "themes": [
       "livraisons"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Sushis et cuisine japonaise à Tamarin, ouvert du mardi au samedi 11h30-14h30 et 17h30-21h30 (fermé le lundi)."
   },
   {
     "id": "albatrosses-sushi",
@@ -17423,7 +17442,8 @@
     "themes": [
       "livraisons"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Sushis et cuisine japonaise à Flic en Flac, principalement à emporter, ouvert tous les jours de 12h à 22h."
   },
   {
     "id": "aly-fast-food-by-gloria",
@@ -17438,7 +17458,8 @@
     "themes": [
       "livraisons"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Fast-food à Rose Hill (burgers, kebabs, plats chinois, wraps), ouvert mardi-samedi 11h-21h, dimanche/jours fériés 15h-21h (fermé le lundi)."
   },
   {
     "id": "ti-kabann",
@@ -17453,7 +17474,8 @@
     "themes": [
       "livraisons"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Bistro de cuisine mauricienne à Long Mountain (nouilles, boulettes, mine bouillie, œuf rôti), livraison, à emporter et sur place."
   },
   {
     "id": "tiffin-cuisine-creole",
@@ -17480,9 +17502,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=858698793522989996&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.3274859,
     "lng": 57.3844659,
-    "themes": [
-      "livraisons"
-    ],
+    "themes": [],
     "zone": "ouest"
   },
   {
@@ -17498,7 +17518,8 @@
     "themes": [
       "livraisons"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Fast-food/snacks à Triolet (briani, riz frit, nouilles, boulettes, kebabs, grillades), ouvert tous les jours de 10h30 à 20h30."
   },
   {
     "id": "vrndavana-s-pani-puri",
@@ -17513,7 +17534,8 @@
     "themes": [
       "livraisons"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Cuisine indienne végétarienne à Vacoas-Phoenix (pani puri, dahi puri, sev puri, bhel puri, chaat)."
   },
   {
     "id": "bois-noir-cafe",
@@ -17528,7 +17550,8 @@
     "themes": [
       "livraisons"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Cuisine chinoise/créole/mauricienne et fruits de mer à Flic en Flac, sur place et à emporter, ouvert lun-sam 11h30-22h, dim 11h30-14h et 18h-22h."
   },
   {
     "id": "ch-ti-delice-patisserie-boulangerie",
@@ -20732,7 +20755,8 @@
     "themes": [
       "livraisons"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Plateforme/appli de livraison desservant restaurants et commerces dans un rayon de 5 km autour de Phoenix, ouverte lun-sam 10h30-21h, dim 16h-21h."
   },
   {
     "id": "alisson-pizza",
@@ -20747,7 +20771,8 @@
     "themes": [
       "livraisons"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Pizzeria (pizzas maison) à Riambel, Surinam, ouverte du mardi au dimanche, 10h30-19h30 (fermée le lundi)."
   },
   {
     "id": "bongeni-delivery-moving",
@@ -20759,9 +20784,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=5159158823739837888&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.1633889,
     "lng": 57.5180541,
-    "themes": [
-      "livraisons"
-    ],
+    "themes": [],
     "zone": "centre"
   },
   {
@@ -20777,7 +20800,8 @@
     "themes": [
       "livraisons"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Burgers à Rose Hill (style cajun, smash burger, tenders/wings), livraison gratuite vers plusieurs zones, ouvert du mardi au dimanche (fermé le lundi)."
   },
   {
     "id": "kebab-chez-lucie",
@@ -20807,7 +20831,8 @@
     "themes": [
       "livraisons"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Cuisine indienne à Curepipe, ouverte lun-mer et ven-dim 10h-21h (fermé le jeudi)."
   },
   {
     "id": "vatel-bleu-boulangerie-patisserie",
@@ -25608,7 +25633,8 @@
     "themes": [
       "livraisons"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Pizzeria italienne à Bel Air, ouverte lundi et jeudi-dimanche 12h-20h (fermée mardi/mercredi), livraison à Rs 150."
   },
   {
     "id": "selvi-s",
@@ -25623,7 +25649,8 @@
     "themes": [
       "livraisons"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Cuisine fusion (japonaise, mexicaine, hakka et mauricienne) à Centre de Flacq."
   },
   {
     "id": "tipik-fusion-food",
@@ -25638,7 +25665,8 @@
     "themes": [
       "livraisons"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Cuisine fusion mauricienne à Central Flacq."
   },
   {
     "id": "reza-briani-snack",
@@ -25653,7 +25681,8 @@
     "themes": [
       "livraisons"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Spécialiste du briani/biryani (poulet, riz frit), secteur Terre Rouge/Pamplemousses."
   },
   {
     "id": "nature-et-delices",
@@ -25668,7 +25697,8 @@
     "themes": [
       "livraisons"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Restaurant français de cuisine de saison à Pointe aux Canonniers/Grand Baie."
   },
   {
     "id": "bol-local-fastfood-takeaway",
@@ -25699,7 +25729,8 @@
       "livraisons"
     ],
     "badge": "selection",
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Cabane de plage à Trou-aux-Biches, cuisine créole et fruits de mer (poisson frais, crustacés, plat du jour)."
   },
   {
     "id": "maharaja-mithai",
@@ -25714,7 +25745,8 @@
     "themes": [
       "livraisons"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Sucreries et mithai indiennes au food court de Coeur de Ville, Flacq, ouvert tous les jours à partir de 10h30."
   },
   {
     "id": "china-palace",
@@ -25729,7 +25761,8 @@
     "themes": [
       "livraisons"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Cuisine chinoise et mauricienne à Trou aux Biches (canard laqué, plats sizzling, fruits de mer), ouvert tous les jours de 10h à 22h30."
   },
   {
     "id": "panarottis-ebene",
@@ -25744,7 +25777,8 @@
     "themes": [
       "livraisons"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Pizzas et pâtes italiennes à Quatre Bornes/Ébène."
   },
   {
     "id": "florensuc-patisserie",
@@ -25912,7 +25946,8 @@
     "themes": [
       "livraisons"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Pizzeria italienne à La Croisette, Grand Baie (pizzas, pâtes, pizza d'un mètre)."
   },
   {
     "id": "tambourine",
@@ -25948,7 +25983,8 @@
     "themes": [
       "livraisons"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Grill et cuisine locale/internationale (viandes grillées, fruits de mer) sur la côte nord-ouest."
   },
   {
     "id": "travelling-teachers-grand-baie",
@@ -31083,7 +31119,8 @@
     "themes": [
       "livraisons"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Cuisine africaine/ouest-africaine à Flic en Flac (Coastal Road)."
   },
   {
     "id": "basilico-pizzeria-italian-specialty",
@@ -31097,7 +31134,8 @@
     "themes": [
       "livraisons"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Pizzas napolitaines au four à bois et cuisine italienne à Flic en Flac (Coastal Road)."
   },
   {
     "id": "parasol-chemin-grenier",
@@ -31111,7 +31149,8 @@
     "themes": [
       "livraisons"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Fast-food/grill à Chemin Grenier (shawarma, poulet et agneau grillés), sur place ou à emporter."
   },
   {
     "id": "investec-bank-mauritius-limited",
