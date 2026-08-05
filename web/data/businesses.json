@@ -13557,7 +13557,8 @@
     "themes": [
       "poissonneries"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Poissonnerie de quartier a Grand Baie, vente de poisson frais."
   },
   {
     "id": "fish-market",
@@ -13604,7 +13605,8 @@
     "themes": [
       "poissonneries"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Marche aux poissons et fruits de mer de Grand Gaube."
   },
   {
     "id": "cabane-du-pecheur",
