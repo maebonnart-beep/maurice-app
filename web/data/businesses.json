@@ -1366,21 +1366,6 @@
     "description": "Bar-restaurant en bord de plage à Grand Baie, réputé pour ses fruits de mer frais et ses plats d'agneau et de bœuf, avec animations musicales live et vue sur le coucher de soleil."
   },
   {
-    "id": "fleur-de-mer",
-    "name": "Fleur de mer",
-    "category": "food",
-    "address": "XHQM+2QC Plage, Grand Baie",
-    "phone": "",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=15460748578527106159",
-    "lat": -20.0124367,
-    "lng": 57.5843843,
-    "themes": [
-      "snacks-plage"
-    ],
-    "zone": "nord"
-  },
-  {
     "id": "amigo-bar",
     "name": "Amigo Bar",
     "category": "food",
@@ -16683,21 +16668,6 @@
     ],
     "zone": "ouest",
     "description": "Pizzeria italienne du complexe Cap Dale à Tamarin, four à bois traditionnel, pizzas artisanales aux ingrédients frais. Cadre convivial et calme, bien notée (4,6/5 sur TripAdvisor)."
-  },
-  {
-    "id": "sky",
-    "name": "SKY",
-    "category": "food",
-    "address": "Wolmar Coastal Rd, Flic en Flac",
-    "phone": "",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=8662984943257971305&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.2920927,
-    "lng": 57.3638813,
-    "themes": [
-      "cafes-terrasses"
-    ],
-    "zone": "ouest"
   },
   {
     "id": "terrace",
