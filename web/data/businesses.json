@@ -1687,7 +1687,8 @@
       "grandes-surfaces"
     ],
     "hours": "Lun-Jeu 9h-20h30, Ven-Sam 9h-21h30, Dim 9h-15h30",
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Hypermarché de l'enseigne française Super U, situé dans le centre Coeur de Ville à Grand Baie, avec un large choix de produits alimentaires, vins et produits bio/français."
   },
   {
     "id": "winners-pereybere",
@@ -1702,7 +1703,8 @@
     "themes": [
       "grandes-surfaces"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Supermarché de la chaîne Winner's proposant produits du quotidien et un rayon épicerie fine, avec boulangerie et pain frais chaque matin."
   },
   {
     "id": "intermart-grand-baie-la-croisette",
@@ -1717,8 +1719,9 @@
     "themes": [
       "grandes-surfaces"
     ],
-    "hours": "Lun-Jeu 9h-20h, Ven-Sam 9h-22h, Dim et jours fériés 9h-17h",
-    "zone": "nord"
+    "hours": "Lun-Jeu 9h-21h, Ven-Sam 9h-22h, Dim et jours fériés 9h-17h",
+    "zone": "nord",
+    "description": "Supermarché de l'enseigne Intermart situé dans le centre commercial La Croisette à Grand Baie."
   },
   {
     "id": "lepicerie-grand-baie",
@@ -4818,7 +4821,8 @@
       "grandes-surfaces"
     ],
     "hours": "Lun-Jeu 9h-21h, Ven-Sam 9h-22h, Dim et jours fériés 9h-20h",
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Hypermarché historiquement exploité sous l'enseigne Jumbo au Phoenix Mall, l'établissement a été rebaptisé Carrefour en 2025 dans le cadre du changement de marque de Jumbo Maurice."
   },
   {
     "id": "jumbo-riche-terre",
@@ -4834,7 +4838,8 @@
       "grandes-surfaces"
     ],
     "hours": "Lun-Jeu 9h-21h, Ven-Sam 9h-22h, Dim et jours fériés 9h-20h",
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Hypermarché du centre commercial Riche Terre, anciennement sous l'enseigne Jumbo, aujourd'hui rebaptisé Carrefour Maurice après une rénovation complète."
   },
   {
     "id": "london-way-mon-choisy",
@@ -4850,7 +4855,8 @@
       "grandes-surfaces"
     ],
     "hours": "Lun-Ven 9h-17h",
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Supermarché de la chaîne mauricienne London Way (groupe familial Kan Wah, présent depuis plus de 50 ans), ouvert à Mont Choisy Le Mall fin 2022 avec un espace boulangerie."
   },
   {
     "id": "king-savers-mahebourg",
@@ -4865,7 +4871,9 @@
     "themes": [
       "grandes-surfaces"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Hypermarché King Savers, enseigne créée en 2008, installé au Bo'Valon Mall à Beau Vallon près de Mahébourg, avec un large choix de produits frais et d'articles ménagers.",
+    "hours": "Lun-Sam 8h30-20h, Dim 8h30-15h"
   },
   {
     "id": "winners-cascavelle-flic-en-flac",
@@ -4880,8 +4888,9 @@
     "themes": [
       "grandes-surfaces"
     ],
-    "hours": "Lun-Jeu 9h30-19h, Ven-Sam 9h30-20h, Dim 9h30-15h",
-    "zone": "ouest"
+    "hours": "Lun-Ven 8h-20h, Sam 8h-21h, Dim 8h-20h",
+    "zone": "ouest",
+    "description": "Supermarché Winner's, plus grande chaîne de distribution alimentaire de l'île avec une vingtaine de points de vente, installé au Cascavelle Shopping Mall."
   },
   {
     "id": "la-kaz-a-pain-riviere-noire",
@@ -13320,7 +13329,8 @@
     "themes": [
       "grandes-surfaces"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Enseigne mauricienne Store 2000, chaîne d'une trentaine de magasins à travers l'île, proposant alimentation, produits d'hygiène, articles pour la maison et petit électroménager."
   },
   {
     "id": "carrefour-phoenix",
@@ -13335,7 +13345,9 @@
     "themes": [
       "grandes-surfaces"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Hypermarché Carrefour Maurice au Phoenix Mall (ex-enseigne Jumbo, rebaptisée Carrefour en 2025).",
+    "hours": "Lun-Jeu 9h-21h, Ven-Sam 9h-22h, Dim et jours fériés 9h-20h"
   },
   {
     "id": "super-shop",
@@ -13365,7 +13377,9 @@
     "themes": [
       "grandes-surfaces"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Supermarché de proximité Carrefour City, situé au centre commercial Les Allées à Moka.",
+    "hours": "Lun-Sam 7h-20h, Dim et jours fériés 7h-18h"
   },
   {
     "id": "la-croisette-food-court",
@@ -13395,7 +13409,8 @@
     "themes": [
       "grandes-surfaces"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Supermarché de quartier Vana, situé à Pointe aux Canonniers près de Grand Baie, réputé notamment pour ses pâtes fraîches faites maison."
   },
   {
     "id": "artisan-boucher",
@@ -16896,7 +16911,8 @@
     "themes": [
       "grandes-surfaces"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Supermarché de proximité Carrefour City sur la Coastal Road à Flic en Flac, apprécié pour son pain frais et son rayon traiteur."
   },
   {
     "id": "winner-s-cascavelle",
@@ -16911,7 +16927,9 @@
     "themes": [
       "grandes-surfaces"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Supermarché Winner's, plus grande chaîne de distribution alimentaire de l'île avec une vingtaine de points de vente, installé au Cascavelle Shopping Mall.",
+    "hours": "Lun-Ven 8h-20h, Sam 8h-21h, Dim 8h-20h"
   },
   {
     "id": "wolmar-supermarket",
@@ -16926,7 +16944,9 @@
     "themes": [
       "grandes-surfaces"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Supermarché de quartier à Flic en Flac proposant boissons, produits de boulangerie et produits importés, avec un service de point de vente loterie.",
+    "hours": "Lun-Ven 8h-19h30, Sam 8h-20h"
   },
   {
     "id": "sadouva-supermarket",
@@ -16941,7 +16961,9 @@
     "themes": [
       "grandes-surfaces"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Supérette de quartier à Flic en Flac (avenue des Manguiers), ouverte tous les jours avec un large choix de produits du quotidien.",
+    "hours": "Tous les jours 8h-20h"
   },
   {
     "id": "monop-monoprix-maison-riviere-noire",
@@ -16956,7 +16978,8 @@
     "themes": [
       "grandes-surfaces"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Point de vente du concept de proximité Monop', enseigne du groupe Monoprix (Casino) relancée à Maurice fin 2025 avec Groupe Aldis ; plus de 8500 références entre produits alimentaires locaux et importés, rayon maison et caisses libre-service."
   },
   {
     "id": "chez-mi-bazaar",
@@ -16971,7 +16994,9 @@
     "themes": [
       "grandes-surfaces"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Petit marché de fruits et légumes frais au rond-point Dodo à Flic en Flac, tenu par une famille locale, avec produits de saison et conseils sur les produits mauriciens.",
+    "hours": "Lun-Jeu 7h-13h et 15h-19h, Ven 15h-19h, Sam-Dim 7h-18h30"
   },
   {
     "id": "6-ten-flic-en-flac",
@@ -17001,7 +17026,8 @@
     "themes": [
       "grandes-surfaces"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Supérette du complexe Les Cocotiers à Flic en Flac, proposant produits de première nécessité et faisant aussi office de point de vente loterie."
   },
   {
     "id": "chantefrais",
@@ -17016,7 +17042,9 @@
     "themes": [
       "grandes-surfaces"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Enseigne de boucherie-volaille de la chaîne mauricienne Chantefrais, spécialisée dans le poulet frais et les produits de boucherie, avec service de poulet grillé sur commande.",
+    "hours": "Fermé le lundi, Mar-Sam 10h-18h, Dim 10h-13h"
   },
   {
     "id": "l-epicerie-tamarin",
@@ -17047,7 +17075,9 @@
     "themes": [
       "grandes-surfaces"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Épicerie de quartier avenue Carrière à Flic en Flac, proposant fruits et légumes frais, snacks locaux et boissons.",
+    "hours": "Tous les jours 6h-20h30"
   },
   {
     "id": "nenuphar-alimentation",
@@ -19841,7 +19871,8 @@
     "themes": [
       "grandes-surfaces"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Supermarché de l'enseigne Intermart, l'une des plus grandes chaînes de supermarchés de Maurice, situé dans le centre commercial So'flo."
   },
   {
     "id": "club-sixty-nine",
@@ -19966,7 +19997,9 @@
     "themes": [
       "grandes-surfaces"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Hypermarché Carrefour à Riche Terre (ex-Jumbo, rebaptisé Carrefour Maurice en mai 2025), l'un des magasins phares du groupe après rénovation complète, avec un très large assortiment alimentaire et non-alimentaire.",
+    "hours": "Lun-Jeu 9h-21h, Ven-Sam 9h-22h, Dim et jours fériés 9h-20h"
   },
   {
     "id": "gsr-la-gaulette-supermarket",
@@ -19981,7 +20014,9 @@
     "themes": [
       "grandes-surfaces"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Supermarché bien approvisionné à La Gaulette (Black River), avec un café extérieur proposant boissons et pâtisseries.",
+    "hours": "Lun-Sam 8h30-19h, Dim 8h30-12h30"
   },
   {
     "id": "intermart-bagatelle",
@@ -19996,7 +20031,9 @@
     "themes": [
       "grandes-surfaces"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Supermarché de l'enseigne Intermart situé dans le centre commercial Bagatelle Mall of Mauritius, avec un grand espace restauration.",
+    "hours": "Lun-Jeu 9h-21h, Ven-Sam 9h-22h, Dim 9h-19h"
   },
   {
     "id": "intermart-mahogany-beau-plan",
@@ -20011,7 +20048,9 @@
     "themes": [
       "grandes-surfaces"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Supermarché Intermart implanté à la Mahogany Shopping Promenade à Beau Plan, premier magasin de l'enseigne équipé d'un système de réfrigération au gaz naturel dans une démarche de développement durable.",
+    "hours": "Lun-Jeu 8h30-20h, Ven-Sam 8h30-21h, Dim et jours fériés 8h30-19h"
   },
   {
     "id": "lolo-hypermarket",
@@ -20026,7 +20065,9 @@
     "themes": [
       "grandes-surfaces"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Hypermarché de la chaîne mauricienne Lolo Hyper, née d'une petite épicerie ouverte en 1990 à Morcellement Saint-André et devenue un centre commercial avec poissonnerie, boucherie et boulangerie.",
+    "hours": "Dim 8h30-14h, Lun-Jeu 9h-20h, Ven 9h-20h30"
   },
   {
     "id": "lolo-hypermarket-valentina",
@@ -20041,7 +20082,9 @@
     "themes": [
       "grandes-surfaces"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Second hypermarché du groupe Lolo, ouvert fin 2019 au sein du centre commercial Valentina Mall à Vacoas-Phoenix.",
+    "hours": "Lun-Sam 9h-21h, Dim et jours fériés 9h-17h"
   },
   {
     "id": "intermart-montebello",
@@ -20071,7 +20114,8 @@
     "themes": [
       "grandes-surfaces"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Boutiques duty-free officielles de l'aéroport international SSR, exploitées par Mauritius Duty Free Paradise en partenariat avec Gebr. Heinemann, avec des espaces en zones d'arrivée et de départ proposant parfums, alcools, tabac et produits de luxe."
   },
   {
     "id": "intermart-partenaire-intermarche-curepipe",
@@ -20086,7 +20130,9 @@
     "themes": [
       "grandes-surfaces"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Supermarché de l'enseigne Intermart, partenaire local d'Intermarché, situé près du Jardin botanique de Curepipe ; l'un des 12 magasins du réseau à travers l'île.",
+    "hours": "Lun-Sam 8h-20h, Dim et jours fériés 8h-15h"
   },
   {
     "id": "l-embrazure-store",
@@ -20378,7 +20424,9 @@
     "themes": [
       "grandes-surfaces"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Petite supérette de quartier à Upper Dagotière, ouverte tous les jours, proposant notamment un service de loterie.",
+    "hours": "Tous les jours 9h-21h"
   },
   {
     "id": "telfair-store",
@@ -20408,7 +20456,9 @@
     "themes": [
       "grandes-surfaces"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Supermarché discount situé à Circonstance, Saint-Pierre, réputé pour ses prix réduits et ses promotions fréquentes sur une large gamme de produits alimentaires.",
+    "hours": "Lun-Ven 8h30-21h, Dim 8h30-13h"
   },
   {
     "id": "food-paradise",
@@ -20530,7 +20580,9 @@
     "themes": [
       "grandes-surfaces"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Supermarché de l'enseigne Winner's, proposant un large choix de produits alimentaires, frais et non-alimentaires.",
+    "hours": "Lun-Sam 8h-19h, Dim 8h-16h"
   },
   {
     "id": "mini-markt",
@@ -22304,7 +22356,9 @@
     "themes": [
       "grandes-surfaces"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Supermarché de l'enseigne Dream Price à Souillac, rénové en 2024, proposant produits alimentaires à prix réduits avec service de livraison.",
+    "hours": "Lun-Sam 8h30-21h, Dim 8h30-14h"
   },
   {
     "id": "low-cost-point",
@@ -22334,7 +22388,8 @@
     "themes": [
       "grandes-surfaces"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Centre commercial du cœur de Quatre Bornes abritant un supermarché, plusieurs boutiques et un espace restauration."
   },
   {
     "id": "poissons-frais-ecaille-bleue-ex-noulamer-poissons",
@@ -22429,7 +22484,9 @@
     "themes": [
       "grandes-surfaces"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Supermarché de l'enseigne GSR (anciennement connu localement sous le nom Chez Popo), à quelques pas de la plage de Trou-aux-Biches, proposant produits frais, surgelés et articles de plage.",
+    "hours": "Lun-Sam 8h-19h, Dim et jours fériés 8h-12h30"
   },
   {
     "id": "restaurant-reve-d-r-member-of-bella-amigo-group",
@@ -24452,7 +24509,8 @@
     "themes": [
       "grandes-surfaces"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Supermarché situé sur la route côtière reliant Quatre Cocos et Belle Mare, proposant les produits du quotidien pour résidents et vacanciers."
   },
   {
     "id": "gift-deco-flacq",
@@ -24544,7 +24602,9 @@
     "themes": [
       "grandes-surfaces"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Supermarché de l'enseigne Intermart situé à Chebel, proposant un large assortiment alimentaire et non-alimentaire.",
+    "hours": "Lun-Jeu 9h-20h, Ven-Sam 9h-21h, Dim et jours fériés 9h-17h"
   },
   {
     "id": "blue-world-explorer-diving-shop",
@@ -25198,7 +25258,8 @@
     "themes": [
       "grandes-surfaces"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Centre commercial de la Cyber City regroupant plusieurs commerces, dont un supermarché Intermart, des restaurants et un food court."
   },
   {
     "id": "intermart-express-quatre-bornes",
@@ -25213,7 +25274,9 @@
     "themes": [
       "grandes-surfaces"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Supermarché de proximité de l'enseigne Intermart, partenaire du groupe Intermarché, proposant produits frais, français et internationaux.",
+    "hours": "Lun-Jeu 8h-19h30, Ven-Sam 8h-20h, Dim 8h-16h"
   },
   {
     "id": "intermart-plaza-boulevard-rose-hill",
@@ -25228,7 +25291,9 @@
     "themes": [
       "grandes-surfaces"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Supermarché Intermart, partenaire du groupe Intermarché, installé au sein du Plaza Boulevard en plein centre de Rose-Hill.",
+    "hours": "Lun-Jeu 9h-20h, Ven-Sam 9h-21h, Dim 9h-17h"
   },
   {
     "id": "rose-belle-mall",
@@ -25243,7 +25308,8 @@
     "themes": [
       "grandes-surfaces"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Centre commercial de Rose Belle, ouvert fin 2025, réunissant boutiques et espace de restauration."
   },
   {
     "id": "save-win-supermarket",
@@ -25258,7 +25324,9 @@
     "themes": [
       "grandes-surfaces"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Supérette de quartier à Trou d'Eau Douce proposant produits alimentaires de base, pain frais, boissons et cartes SIM prépayées.",
+    "hours": "Lun-Ven 5h45-21h, Sam 5h45-22h"
   },
   {
     "id": "loyeung-supermarket",
@@ -25273,7 +25341,9 @@
     "themes": [
       "grandes-surfaces"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Supermarché du centre de Mahébourg proposant produits frais, spécialités locales et un large choix de produits importés, avec un espace café sur place.",
+    "hours": "Lun-Sam 8h30-19h, Dim 8h30-13h"
   },
   {
     "id": "intermart-express-calodyne",
@@ -25288,7 +25358,9 @@
     "themes": [
       "grandes-surfaces"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Supermarché de proximité Intermart, partenaire du groupe Intermarché, situé sur la route Royale à Calodyne.",
+    "hours": "Lun-Sam 8h-20h, Dim et jours fériés 8h-17h"
   },
   {
     "id": "l-epicerie-chez-moise",
@@ -31102,7 +31174,9 @@
     "themes": [
       "grandes-surfaces"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Supermarché Intermart, partenaire du groupe Intermarché, situé au sein de l'Ebène Commercial Centre en Cyber City.",
+    "hours": "Lun-Jeu 9h-20h, Ven-Sam 9h-20h30, Dim et jours fériés 9h-14h30"
   },
   {
     "id": "simla-way",
@@ -31116,7 +31190,9 @@
     "themes": [
       "grandes-surfaces"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Supermarché de quartier à Baie du Tombeau, également présent à Triolet, proposant des produits alimentaires et de consommation courante à prix accessibles.",
+    "hours": "Lun 8h30-20h30, Mar-Sam 8h30-20h, Dim 8h30-14h"
   },
   {
     "id": "sik-yuen-supermarket",
@@ -31131,7 +31207,9 @@
     "themes": [
       "grandes-surfaces"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Supermarché historique du centre de Curepipe, dont l'activité de la famille Sik Yuen remonte à 1937, proposant produits alimentaires courants et une gamme gourmet.",
+    "hours": "Lun-Sam 8h30-19h30, Dim 8h30-13h"
   },
   {
     "id": "tangs-way",
@@ -31146,7 +31224,9 @@
     "themes": [
       "grandes-surfaces"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "L'un des plus anciens supermarchés de Beau Bassin-Rose Hill, de l'enseigne Way Supermarket, proposant produits frais, surgelés, poissonnerie et boissons.",
+    "hours": "Lun-Sam 8h30-20h, Dim 8h-13h"
   },
   {
     "id": "l-epicerie-gourmande",
@@ -31787,7 +31867,9 @@
     "themes": [
       "grandes-surfaces"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Supermarché de l'enseigne Winner's, chaîne leader à Maurice opérée par le groupe IBL, situé sur la route Royale à Pereybère.",
+    "hours": "Lun-Sam 8h-19h, Dim 8h-13h"
   },
   {
     "id": "comido-e-vida",
@@ -31992,7 +32074,8 @@
     "themes": [
       "grandes-surfaces"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Supermarché Winner's situé au sein du centre commercial de Rose Belle (ex-Plaisance Shopping Village)."
   },
   {
     "id": "london-way-vacoas-phoenix",
@@ -32006,7 +32089,8 @@
     "themes": [
       "grandes-surfaces"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Supermarché de l'enseigne London Way à Vacoas-Phoenix, proposant un large choix de produits frais, d'épicerie et d'articles ménagers."
   },
   {
     "id": "winner-s-vacoas",
@@ -32021,7 +32105,9 @@
     "themes": [
       "grandes-surfaces"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Supermarché Winner's situé avenue Jules Koenig à Vacoas-Phoenix.",
+    "hours": "Lun-Sam 8h-20h, Dim 8h-13h"
   },
   {
     "id": "winner-s-bambous",
@@ -32036,7 +32122,9 @@
     "themes": [
       "grandes-surfaces"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Supermarché Winner's à Bambous, apprécié pour son rayon boulangerie et son grand parking.",
+    "hours": "Lun-Sam 8h-19h, Dim 8h-13h"
   },
   {
     "id": "moka-community-health-center",
