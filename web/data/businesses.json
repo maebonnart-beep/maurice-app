@@ -7399,22 +7399,6 @@
     "description": "Restaurant routier de Chamarel, cuisine locale variée. Accueil apprécié mais jugé cher par plusieurs visiteurs, fréquenté par les groupes en excursion."
   },
   {
-    "id": "chamarel-cafe",
-    "name": "Chamarel Café",
-    "category": "food",
-    "address": "H95F+PF4, La Gaulette",
-    "phone": "+230 483 4205",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=5838197420757713773&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.4407478,
-    "lng": 57.3737084,
-    "themes": [
-      "restaurants",
-      "cafes-terrasses"
-    ],
-    "zone": "ouest"
-  },
-  {
     "id": "sugar-restaurant-bar",
     "name": "Sugar Restaurant & Bar",
     "category": "food",
