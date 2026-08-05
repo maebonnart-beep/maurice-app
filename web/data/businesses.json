@@ -13469,36 +13469,6 @@
     "description": "Halles à la française de Grand Baie réunissant boucherie, charcuterie, fromagerie, poissonnerie et maraîcher sous un même toit, produits français et locaux."
   },
   {
-    "id": "la-boucherie-grand-baie",
-    "name": "La Boucherie grand baie",
-    "category": "food",
-    "address": "Sottise Rd, Grand Baie",
-    "phone": "+230 5760 9980",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=9793907146286255461&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0175731,
-    "lng": 57.5782989,
-    "themes": [
-      "boucheries"
-    ],
-    "zone": "nord"
-  },
-  {
-    "id": "gc-meat-shop",
-    "name": "GC MEAT SHOP",
-    "category": "food",
-    "address": "XHQP+G5H, Grand Baie",
-    "phone": "+230 5777 4003",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=18077347915739553408&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0111757,
-    "lng": 57.5854846,
-    "themes": [
-      "boucheries"
-    ],
-    "zone": "nord"
-  },
-  {
     "id": "meat-me-butchery-deli",
     "name": "Meat Me Butchery & Deli",
     "category": "food",
@@ -13513,36 +13483,6 @@
     ],
     "zone": "nord",
     "description": "Chaîne mauricienne de boucherie-delicatessen (points de vente notamment à Super U Grand Baie, Haute Rive, Calodyne) : viande et volaille, biltong, chilli bites, saucisses, boulettes, burgers, brochettes marinées et plats faits maison."
-  },
-  {
-    "id": "la-bovida",
-    "name": "La Bovida",
-    "category": "food",
-    "address": "ST Clement Street Curepipe MU, Curepipe 742CU001",
-    "phone": "+230 674 2010",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=13551018522310417800&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.321853,
-    "lng": 57.5200352,
-    "themes": [
-      "boucheries"
-    ],
-    "zone": "centre"
-  },
-  {
-    "id": "casa-frais",
-    "name": "Casa Frais",
-    "category": "food",
-    "address": "Mme Grand Pierre, XHMP+6VH, Vingt Pieds Road B45, Grand Baie",
-    "phone": "+230 5979 1642",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=15431094948170309680&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0169439,
-    "lng": 57.5872207,
-    "themes": [
-      "boucheries"
-    ],
-    "zone": "nord"
   },
   {
     "id": "ms-poisson-la-frais",
@@ -20792,21 +20732,6 @@
     "description": "Boucherie familiale de Triolet avec sa propre ferme d'élevage (Khaleel Cattle Farm), bœuf, agneau et mouton 100% frais (jamais surgelé), livraison disponible."
   },
   {
-    "id": "fish-n-seafood",
-    "name": "Fish N seafood",
-    "category": "food",
-    "address": "Le Morne village Portlouis MU, Le Morne Brabant 91203",
-    "phone": "",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=9820160912597898151&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.4742867,
-    "lng": 57.347159,
-    "themes": [
-      "poissonneries"
-    ],
-    "zone": "sud"
-  },
-  {
     "id": "delivoo",
     "name": "Delivoo",
     "category": "food",
@@ -22595,21 +22520,6 @@
     ],
     "zone": "ouest",
     "description": "Chaîne mauricienne de poissonneries avec plusieurs points de vente (Tribeca, La City Trianon, Cascavelle, Rivière du Rempart, Victoria Beau Bassin-Rose Hill), anciennement connue sous le nom Noulamer Poissons."
-  },
-  {
-    "id": "poissonerie-alain",
-    "name": "Poissonerie Alain",
-    "category": "food",
-    "address": "B23",
-    "phone": "+230 5757 6132",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=12969297308361744892&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.2052696,
-    "lng": 57.6756169,
-    "themes": [
-      "poissonneries"
-    ],
-    "zone": "est"
   },
   {
     "id": "aquaholic-fish-shop",
