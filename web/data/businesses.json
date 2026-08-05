@@ -22581,7 +22581,8 @@
     "themes": [
       "chefs-domicile"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Traiteur d'Arnaud Desmarais (Route Côtière, Pointe d'Esny) : cocktails et apéritifs, réceptions (anniversaires, baptêmes, communions, mariages), repas entre amis livrés à domicile, ainsi que des cours de cuisine."
   },
   {
     "id": "dream-price-supermarket-souillac",
@@ -22795,7 +22796,8 @@
       "boulangeries",
       "glaciers"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Pâtisserie-café de Lady Barkly Street à Souillac : pâtisseries sucrées et salées, tourtes, douceurs indiennes et vrai café. Sur place, à emporter ou en livraison, prix raisonnables pensés pour la clientèle locale. Considérée par beaucoup comme la meilleure pâtisserie du sud de l'île (4,5/5)."
   },
   {
     "id": "cakelover-mauritius",
