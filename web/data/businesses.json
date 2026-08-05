@@ -13265,36 +13265,6 @@
     "description": "Traiteur et livraison de repas à domicile de gastronomie française, basé à Grand Baie, menu renouvelé chaque semaine, paniers-cadeaux. Fonctionne surtout en livraison de plats préparés plutôt qu'en chef sur place."
   },
   {
-    "id": "chef-yanick-bablee-catering-vip",
-    "name": "Chef Yanick Bablee Catering Vip",
-    "category": "food",
-    "address": "MU, perey pere, Grand Baie 30502",
-    "phone": "+230 5746 8850",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=3249094845690588828&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -19.9932085,
-    "lng": 57.5931426,
-    "themes": [
-      "chefs-domicile"
-    ],
-    "zone": "nord"
-  },
-  {
-    "id": "service-treteur-vip-a-ils-maurice",
-    "name": "Service Treteur Vip a Ils Maurice",
-    "category": "food",
-    "address": "MU, perey pere, pamplemous 21722",
-    "phone": "+230 5746 8850",
-    "website": "https://www.facebook.com/Pravate.Chef.Catering.VIP",
-    "googleMapsUrl": "https://maps.google.com/?cid=6476699120670535398&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -19.9941989,
-    "lng": 57.5920495,
-    "themes": [
-      "chefs-domicile"
-    ],
-    "zone": "nord"
-  },
-  {
     "id": "la-table-d-argent-traiteur-a-l-ile-maurice-pour-clients-exig",
     "name": "La table d'argent - Traiteur à l'ile Maurice pour clients exigeants",
     "category": "food",
@@ -13327,21 +13297,6 @@
     "description": "Expérience brunch gourmande dans le nord de l'île (Grand Baie, Trou aux Biches, Pereybère, Mont Choisy, Pointe aux Canonniers) : brunch installé sur la plage avec service à table, box brunch livrée à domicile/villa, et option chef privé sur place pour les groupes de 6 personnes et plus."
   },
   {
-    "id": "made-by-fatima-i-mauritius",
-    "name": "Made by Fatima I Mauritius",
-    "category": "food",
-    "address": "Avenue des flamants, Grand Baie",
-    "phone": "+230 5842 5758",
-    "website": "https://www.facebook.com/madebyfatimamauritius",
-    "googleMapsUrl": "https://maps.google.com/?cid=1208153122276199224&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -19.9898943,
-    "lng": 57.5980014,
-    "themes": [
-      "chefs-domicile"
-    ],
-    "zone": "nord"
-  },
-  {
     "id": "feast-of-mauritius",
     "name": "Feast Of Mauritius",
     "category": "activites",
@@ -13356,21 +13311,6 @@
     ],
     "zone": "nord",
     "description": "Cours de cuisine mauricienne à Grand Baie animés par la Cheffe Sandy, avec transferts hôtel inclus : apprentissage de recettes locales et livre de recettes offert en fin de séance."
-  },
-  {
-    "id": "top-chef-pereybere",
-    "name": "Top Chef Pereybere",
-    "category": "food",
-    "address": "2H4X+C62, Grand Baie",
-    "phone": "+230 5782 4189",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=10150796464748960976&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -19.9940155,
-    "lng": 57.597232,
-    "themes": [
-      "chefs-domicile"
-    ],
-    "zone": "nord"
   },
   {
     "id": "intermart-la-croisette",
@@ -17082,21 +17022,6 @@
     "description": "Traiteur et vente à emporter de Ruisseau Créole (Grande Rivière Noire) tenu par un chef français, cuisine du monde (asiatique, française, italienne, mauricienne) : sushis, quiches, blanquette de veau, barbecues à cuire, plateaux salés/sucrés sur commande."
   },
   {
-    "id": "eclat-gourmand-catering-events-mauritius",
-    "name": "Éclat Gourmand - Catering & Events Mauritius",
-    "category": "food",
-    "address": "MU, Rue des Orchidées, La Gaulette 91101",
-    "phone": "+230 5708 0679",
-    "website": "https://wa.me/c/23057080679",
-    "googleMapsUrl": "https://maps.google.com/?cid=1048960782761639743&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.4339264,
-    "lng": 57.3538858,
-    "themes": [
-      "chefs-domicile"
-    ],
-    "zone": "ouest"
-  },
-  {
     "id": "carrefour-city-flic-en-flac",
     "name": "Carrefour City Flic en Flac",
     "category": "food",
@@ -20220,21 +20145,6 @@
     "lat": -20.4508755,
     "lng": 57.3138767,
     "themes": [],
-    "zone": "sud"
-  },
-  {
-    "id": "beachcomber-catering-plaisance-catering",
-    "name": "Beachcomber Catering (Plaisance Catering)",
-    "category": "food",
-    "address": "Plaine Magnien",
-    "phone": "+230 603 2600",
-    "website": "http://www.cccs.co.in/",
-    "googleMapsUrl": "https://maps.google.com/?cid=17099812315267591801&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.431308,
-    "lng": 57.6706533,
-    "themes": [
-      "chefs-domicile"
-    ],
     "zone": "sud"
   },
   {
