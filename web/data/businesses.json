@@ -1888,7 +1888,8 @@
     "themes": [
       "chefs-domicile"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Service de chef privé à domicile pour villas et résidences dans le nord de l'île (Grand Baie et environs) : sourcing des ingrédients, préparation du menu, service et nettoyage inclus. Cuisines mauricienne, asiatique, occidentale et méditerranéenne, options végé/vegan/sans gluten."
   },
   {
     "id": "cuisinier-ile-maurice",
@@ -1903,7 +1904,8 @@
     "themes": [
       "chefs-domicile"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Chef à domicile (minimum 4 personnes), plats à emporter quotidiens et traiteur événementiel (20 à 150 personnes), livraison de repas d'entreprise. Couvre 8 zones de l'île dont Grand Baie, Tamarin, Flic en Flac, Belle Mare, Port-Louis, Curepipe, Quatre-Bornes et Rivière Noire."
   },
   {
     "id": "la-boutique-grand-baie",
@@ -13259,7 +13261,8 @@
     "themes": [
       "chefs-domicile"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Traiteur et livraison de repas à domicile de gastronomie française, basé à Grand Baie, menu renouvelé chaque semaine, paniers-cadeaux. Fonctionne surtout en livraison de plats préparés plutôt qu'en chef sur place."
   },
   {
     "id": "chef-yanick-bablee-catering-vip",
@@ -13304,7 +13307,8 @@
     "themes": [
       "chefs-domicile"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Traiteur événementiel de Flic en Flac (\"pour clients exigeants\"), ouvert 7j/7 de 8h à 20h, menus sur demande pour réceptions privées et événements."
   },
   {
     "id": "brunch-moris-experience-gourmande",
@@ -13319,7 +13323,8 @@
     "themes": [
       "chefs-domicile"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Expérience brunch gourmande dans le nord de l'île (Grand Baie, Trou aux Biches, Pereybère, Mont Choisy, Pointe aux Canonniers) : brunch installé sur la plage avec service à table, box brunch livrée à domicile/villa, et option chef privé sur place pour les groupes de 6 personnes et plus."
   },
   {
     "id": "made-by-fatima-i-mauritius",
@@ -13339,7 +13344,7 @@
   {
     "id": "feast-of-mauritius",
     "name": "Feast Of Mauritius",
-    "category": "food",
+    "category": "activites",
     "address": "Grand Baie",
     "phone": "+230 5764 3829",
     "website": "",
@@ -13347,9 +13352,10 @@
     "lat": -20.008903,
     "lng": 57.5817316,
     "themes": [
-      "chefs-domicile"
+      "cours-de-cuisine"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Cours de cuisine mauricienne à Grand Baie animés par la Cheffe Sandy, avec transferts hôtel inclus : apprentissage de recettes locales et livre de recettes offert en fin de séance."
   },
   {
     "id": "top-chef-pereybere",
@@ -17024,12 +17030,13 @@
     "themes": [
       "chefs-domicile"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Chef privé à domicile pour villas et résidences à travers l'île (Tamarin et alentours) : menu personnalisé, courses, préparation sur place, service et nettoyage inclus. Formules ponctuelles (dîners, anniversaires) ou séjours prolongés."
   },
   {
     "id": "adrien-s-dream-wedding-organiser-flic-en-flac-mauritius",
     "name": "Adrien's Dream - Wedding Organiser Flic en Flac - Mauritius",
-    "category": "food",
+    "category": "activites",
     "address": "P9GC+G94, Flic en Flac",
     "phone": "+230 5940 1170",
     "website": "",
@@ -17037,9 +17044,10 @@
     "lat": -20.2737411,
     "lng": 57.3709535,
     "themes": [
-      "chefs-domicile"
+      "excursions"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Excursions en mer au départ de Flic en Flac : croisières coucher de soleil, nage avec dauphins/baleines, sorties à l'Île aux Bénitiers, avec repas/BBQ préparés à bord par l'équipage."
   },
   {
     "id": "le-cap-taisne",
@@ -17054,7 +17062,8 @@
     "themes": [
       "chefs-domicile"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Boucherie-traiteur français (le chef officie depuis 1985) desservant Rivière Noire, Tamarin, La Preneuse et Flic-en-Flac : charcuterie maison, plats traiteur à emporter (gratins, terrines, pâtés en croûte), viande charolaise et épicerie fine."
   },
   {
     "id": "chez-philippe",
@@ -17069,7 +17078,8 @@
     "themes": [
       "chefs-domicile"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Traiteur et vente à emporter de Ruisseau Créole (Grande Rivière Noire) tenu par un chef français, cuisine du monde (asiatique, française, italienne, mauricienne) : sushis, quiches, blanquette de veau, barbecues à cuire, plateaux salés/sucrés sur commande."
   },
   {
     "id": "eclat-gourmand-catering-events-mauritius",
@@ -26305,7 +26315,8 @@
     "themes": [
       "chefs-domicile"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Établissement de Fond du Sac se présentant à la fois comme restaurant semi-gastronomique et atelier de cuisine, chef réputé flexible qui personnalise les plats. À confirmer : le type exact de prestation (chef à domicile ou restaurant sur place) reste à préciser."
   },
   {
     "id": "mahebourg-market",
