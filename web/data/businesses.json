@@ -3641,7 +3641,8 @@
       "marches"
     ],
     "zone": "centre",
-    "promoText": "Ambiance animée, nourriture au rez-de-chaussée et produits artisanaux à l'étage. La section sud est consacrée aux spécialités culinaires mauriciennes : dholl puri, farata, alouda, pâtisserie."
+    "promoText": "Ambiance animée, nourriture au rez-de-chaussée et produits artisanaux à l'étage. La section sud est consacrée aux spécialités culinaires mauriciennes : dholl puri, farata, alouda, pâtisserie.",
+    "description": "Coeur vibrant de la capitale : fruits, legumes, epices, vetements, artisanat et souvenirs. Ouvert du lundi au samedi 5h30-17h30, dimanche 5h30-11h30. Ambiance tres animee et touristique - mieux vaut y aller tot le matin pour les produits frais, et negocier les prix cote artisanat."
   },
   {
     "id": "flacq-market",
@@ -3658,7 +3659,8 @@
       "marches"
     ],
     "zone": "est",
-    "promoText": "Marché authentique, le plus grand de plein air : légumes, fruits, fruits de mer, vanille, spécialité de la région, tisanes et jus de canne."
+    "promoText": "Marché authentique, le plus grand de plein air : légumes, fruits, fruits de mer, vanille, spécialité de la région, tisanes et jus de canne.",
+    "description": "Marche ouvert tous les jours (env. 6h-17h/18h), mais mercredi et dimanche sont les vrais jours de marche, quand les agriculteurs locaux apportent fruits, legumes et cereales frais. Trois zones : legumes, vetements/accessoires, et restauration (food court)."
   },
   {
     "id": "phoenix-mall",
@@ -13579,7 +13581,8 @@
       "marches"
     ],
     "zone": "nord",
-    "promoText": "Marché artisanal (et non alimentaire) : textile, jupes de séga, paréos, souvenirs, dodos en bois artisanaux."
+    "promoText": "Marché artisanal (et non alimentaire) : textile, jupes de séga, paréos, souvenirs, dodos en bois artisanaux.",
+    "description": "Marche couvert de Grand Baie, ouvert lundi-samedi 6h-18h, dimanche/jours feries 6h-12h. Fruits et legumes frais, artisanat local et souvenirs (vetements, bibelots, objets en bois, bijoux). Bon rapport qualite-prix, ambiance fraiche et locale."
   },
   {
     "id": "grubmates-food-delivery-grand-baie",
@@ -17253,21 +17256,6 @@
     ],
     "zone": "ouest",
     "description": "Poissonnerie de Rivière Noire proposant une large sélection de fruits de mer locaux, réputée pour sa fraîcheur ; conseillé de venir tôt le matin pour le meilleur choix."
-  },
-  {
-    "id": "marche-de-centre-de-flacq",
-    "name": "Marché de Centre de Flacq",
-    "category": "food",
-    "address": "RP6G+87V, Ctre de Flacq",
-    "phone": "",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=1813309801773054223&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.1891411,
-    "lng": 57.7256773,
-    "themes": [
-      "marches"
-    ],
-    "zone": "est"
   },
   {
     "id": "l-envol",
@@ -22646,7 +22634,8 @@
     "themes": [
       "marches"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Marche hebdomadaire de Bel Air (Riviere Seche, Flacq), le dimanche le long de la route principale. Fruits et legumes frais principalement, produits locaux, ambiance conviviale et authentique, loin des foules touristiques."
   },
   {
     "id": "zoza-pastry-and-coffee-shop",
@@ -26117,7 +26106,8 @@
       "marches"
     ],
     "zone": "sud",
-    "promoText": "Des fleurs, de la street food mauricienne, du poisson frais, le meilleur de l'île, des légumes et des épices."
+    "promoText": "Des fleurs, de la street food mauricienne, du poisson frais, le meilleur de l'île, des légumes et des épices.",
+    "description": "Marche ouvert tous les jours mais double de taille le lundi (\"Monday Market\"). Fruits, legumes, fleurs, textiles, bric-a-brac et stands de street-food (gateaux piments, dholl puri, samoussas). Tres anime le lundi matin - arriver avant 9h30 pour eviter la foule."
   },
   {
     "id": "second-hand-shop",
@@ -28100,7 +28090,8 @@
     ],
     "hours": "Mer & Sam",
     "promoText": "Objets atypiques et de nombreux tissus : tapisseries indiennes, nappes, vêtements traditionnels… plats typiques, du briani au mine frit en passant par le dholl puri.",
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Ouvert du mardi au dimanche, 8h-17h (ferme le lundi). Reputé plus grand marche textile de l ile. Mercredi et samedi dedies aux legumes ; jeudi et dimanche dedies aux vetements. Ambiance tres locale et commercante, attire des visiteurs de toute l ile."
   },
   {
     "id": "yemaya-adventures",
