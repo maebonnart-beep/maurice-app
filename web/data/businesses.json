@@ -12980,7 +12980,8 @@
     "themes": [
       "snacks-plage"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Adresse les pieds dans le sable à Grand Baie, appréciée pour l'ambiance et les soirées séga du samedi. Cuisine mauricienne traditionnelle ; avis partagés sur le service et les prix des boissons."
   },
   {
     "id": "camille-snack",
@@ -12995,7 +12996,8 @@
     "themes": [
       "snacks-plage"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Petit snack de plage de La Cuvette Beach (Grand Baie) tenu par Camille, cuisine mauricienne typique sur place ou à emporter. Bon rapport qualité-prix, vestiaires/toilettes disponibles, ambiance conviviale."
   },
   {
     "id": "a1-snack",
@@ -13041,7 +13043,8 @@
       "snacks-plage"
     ],
     "badge": "selection",
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Snack local de Grand Baie, cuisine mauricienne préparée à la commande, bon rapport qualité-prix selon les avis disponibles."
   },
   {
     "id": "la-roulotte-fast-food",
@@ -13056,7 +13059,8 @@
     "themes": [
       "snacks-plage"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Fast-food du secteur de Mont Choisy (Grand Baie)."
   },
   {
     "id": "nanda-snack",
@@ -13072,7 +13076,8 @@
       "snacks-plage"
     ],
     "badge": "selection",
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Snack de la Route Royale à Grand Baie (aussi connu sous \"Chez Nanda\"), cuisine mauricienne et chinoise (soupe halim, riz frit) midi et soir. Très bien noté (5/5)."
   },
   {
     "id": "manisha-repas-local",
@@ -13117,7 +13122,8 @@
     "themes": [
       "snacks-plage"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Food-truck de Grand Baie tenu par un couple, spécialisé dans les tacos birria (bœuf braisé, fromage) façon mexicaine, portions généreuses et accueil chaleureux."
   },
   {
     "id": "la-marinara",
@@ -13133,7 +13139,8 @@
       "snacks-plage"
     ],
     "badge": "selection",
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Pizzeria-focacceria de Grand Baie tenue par Rishi Gukhool, formé en Italie (Sicile/Turin), pizzas au levain, pâtes et focaccias. Très bien notée (5/5)."
   },
   {
     "id": "sarbon-burger-grill",
@@ -13148,7 +13155,8 @@
     "themes": [
       "snacks-plage"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Snack de rue de Grand Baie au bon rapport qualité-prix : paninis/wraps au poulet ou agneau, sauce piment vert mauricien, crêpes au lait concentré. Bien noté (5/5)."
   },
   {
     "id": "le-moment-de-plaisir-snack",
@@ -13178,7 +13186,8 @@
     "themes": [
       "snacks-plage"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Food-truck de la plage de Mont Choisy ouvert depuis 1989, réputé pour ses \"magic bowls\", riz frit, nouilles, paninis et burgers à prix raisonnables. Bien noté (4,4/5)."
   },
   {
     "id": "chez-poum-la-cuisine-roulante",
@@ -13193,7 +13202,8 @@
     "themes": [
       "snacks-plage"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Snack de la plage de Mont Choisy servant directement les clients sur leur serviette ; samoussas au poisson, calamars et crevettes croustillants très appréciés, clientèle fidèle."
   },
   {
     "id": "pizza-panpiz",
@@ -13208,7 +13218,8 @@
     "themes": [
       "snacks-plage"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Petite pizzeria familiale de Grand Baie (près de La Cuvette Beach) tenue par Franck et Audrey, très bien notée (4,9/5) pour ses pizzas généreuses et son ambiance chaleureuse."
   },
   {
     "id": "nana-mama",
@@ -13223,7 +13234,8 @@
     "themes": [
       "snacks-plage"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Restaurant familial bien noté (4,9/5) du village de pêcheurs de Cap Malheureux."
   },
   {
     "id": "sunset-filaos",
@@ -13238,7 +13250,8 @@
     "themes": [
       "snacks-plage"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Restaurant en bord de mer de Pointe aux Piments réputé pour ses vues sur le coucher de soleil, cuisine mauricienne (fruits de mer, caris) ; avis mitigés selon certains retours."
   },
   {
     "id": "mississippi-fried-chicken",
@@ -13253,7 +13266,8 @@
     "themes": [
       "snacks-plage"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Fast-food de poulet frit et burgers à Max Plaza (Péreybère/Grand Baie) ; avis mitigés sur la qualité et le service."
   },
   {
     "id": "blu-vital-fast-food-snack",
@@ -13269,7 +13283,8 @@
       "snacks-plage"
     ],
     "badge": "selection",
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Snack familial de la plage de Trou aux Biches fondé en 1979, cuisine locale abordable (repas complet dès 3€), rotis/farathas au poulet. Très bien noté (4,9/5)."
   },
   {
     "id": "mont-choisy-swimming-seaside",
@@ -13281,9 +13296,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=6201029223008778051&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.0179576,
     "lng": 57.555993,
-    "themes": [
-      "snacks-plage"
-    ],
+    "themes": [],
     "zone": "nord"
   },
   {
@@ -16942,7 +16955,8 @@
     "themes": [
       "snacks-plage"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Concept original de Flic en Flac où les clients choisissent leur poisson, coquillages ou crevettes dans une vitrine réfrigérée avant cuisson à la sauce maison. Calamar grillé et poisson entier plébiscités, options végétariennes."
   },
   {
     "id": "katy-fast-food",
@@ -16957,7 +16971,8 @@
     "themes": [
       "snacks-plage"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Food-truck populaire de Flic en Flac (4,3/5), cuisine locale et occidentale : pizzas, kebabs, sandwichs, nouilles sautées, pain kebab, poulet croustillant."
   },
   {
     "id": "dollar-beach-food",
@@ -16987,7 +17002,8 @@
     "themes": [
       "snacks-plage"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Petite affaire familiale de Flic en Flac tenue par \"Papa Joe\" et son fils Gavin, cuisine mauricienne ultra-abordable près de la plage. Magic Bowl et burger maison plébiscités (5/5)."
   },
   {
     "id": "chef-jean-claude",
@@ -17036,7 +17052,8 @@
       "snacks-plage"
     ],
     "badge": "selection",
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Kiosque de rue emblématique de Flic en Flac, considéré comme le vendeur de farata (roti) le plus célèbre du coin, garni au choix de poisson, bœuf, poulet ou légumes. Prix très bas, forte affluence. Ouvert tous les jours 10h-18h."
   },
   {
     "id": "beach-house-grill",
@@ -17051,7 +17068,8 @@
     "themes": [
       "snacks-plage"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Restaurant de plage haut de gamme du Maradiva Villas Resort & Spa (Wolmar, Flic en Flac), terrasse en bois à même le sable sous un arbre indigène. Poissons et fruits de mer cuits au feu de bois, couchers de soleil sur la côte ouest."
   },
   {
     "id": "bistro-de-marius",
@@ -17066,7 +17084,8 @@
     "themes": [
       "snacks-plage"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Petit établissement d'une trentaine de couverts à Cascavelle Shopping Village (Bambous, Flic en Flac), cuisine méditerranéenne inspirée de la côte européenne. Ambiance cosy adaptée aux dîners en couple."
   },
   {
     "id": "steers",
@@ -17081,7 +17100,8 @@
     "themes": [
       "snacks-plage"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Enseigne de fast-food sud-africaine du Cascavelle Shopping Mall (Flic en Flac), spécialisée burgers de bœuf, poulet et végétariens, et frites. Note moyenne 3,4/5."
   },
   {
     "id": "ginger-thai-restaurant",
@@ -17096,7 +17116,8 @@
     "themes": [
       "snacks-plage"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Restaurant thaï du Hilton Mauritius Resort & Spa (Wolmar, Flic en Flac), dirigé par la cheffe Karnsinee Thirapuncharoj, pavillon thaï romantique et cocktails d'inspiration locale. Options végétariennes et véganes, dîner uniquement, fermé le lundi."
   },
   {
     "id": "sugar-beach",
@@ -17108,9 +17129,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=14010051229176848781&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.3036689,
     "lng": 57.3656419,
-    "themes": [
-      "snacks-plage"
-    ],
+    "themes": [],
     "zone": "ouest"
   },
   {
@@ -20298,7 +20317,8 @@
     "themes": [
       "snacks-plage"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Petite adresse de restauration rapide (burgers, frites) route Alamanda au Morne Brabant, appréciée pour son cadre naturel environnant."
   },
   {
     "id": "plage-du-morne",
@@ -20310,9 +20330,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=18242673361527985531&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.4508755,
     "lng": 57.3138767,
-    "themes": [
-      "snacks-plage"
-    ],
+    "themes": [],
     "zone": "sud"
   },
   {
@@ -22719,9 +22737,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=9691104728444070345&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.504593,
     "lng": 57.399579,
-    "themes": [
-      "snacks-plage"
-    ],
+    "themes": [],
     "zone": "ouest"
   },
   {
@@ -22734,9 +22750,7 @@
     "googleMapsUrl": "https://maps.google.com/?cid=3764984874816985918&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.5215282,
     "lng": 57.522102,
-    "themes": [
-      "snacks-plage"
-    ],
+    "themes": [],
     "zone": "sud"
   },
   {
@@ -22752,7 +22766,8 @@
     "themes": [
       "snacks-plage"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Snack installé dans un ancien bus rétro vert en bord de route face à l'océan à Baie du Cap, cuisine mauricienne authentique : soupe de crabe, mine bouillie au salami de mouton/cerf, salade de poulpe. Portions généreuses, prix abordables."
   },
   {
     "id": "desmarais-experience",
@@ -25685,7 +25700,8 @@
     "themes": [
       "snacks-plage"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Snack très bien noté de Trou d'Eau Douce, recommandé par les locaux : riz frit, nouilles, curry de poisson, bol renversé, calamars et homard/poisson grillé au barbecue. Wifi gratuit, mieux vaut réserver ou arriver tôt."
   },
   {
     "id": "la-maison-d-ete",
@@ -26200,7 +26216,8 @@
     "themes": [
       "snacks-plage"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Restaurant familial mauricien/chinois/fruits de mer de Grand Baie, réputé pour son cari de fruits de mer et sa liqueur maison offerte en fin de repas."
   },
   {
     "id": "la-jonque-restaurant",
@@ -26215,7 +26232,8 @@
     "themes": [
       "snacks-plage"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Restaurant chinois de Grand Baie au 3e étage avec vue mer, connu pour son canard laqué et son poulet croustillant ; avis mitigés sur la régularité du service."
   },
   {
     "id": "pomodoro-pizzeria-trattoria",
@@ -31369,7 +31387,8 @@
     "themes": [
       "snacks-plage"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Petit restaurant de bord de route à Flic en Flac, bien noté (5/5) mais avec peu d'avis publiés, adresse plutôt confidentielle."
   },
   {
     "id": "dauphin-gourmand",
@@ -31384,7 +31403,8 @@
     "themes": [
       "snacks-plage"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Restaurant de Muneeram Road (Flic en Flac) proposant cuisine chinoise, créole/cajun et fruits de mer à prix accessibles ; loue aussi des studios meublés sur place."
   },
   {
     "id": "gourmet-biltong",
@@ -32141,7 +32161,8 @@
     "themes": [
       "snacks-plage"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Premier restaurant chinois mauricien ouvert à Grand Baie, toujours tenu en famille, réputé pour ses plats de poisson, crevettes, poulpe, bœuf et poulet en bord de route animée."
   },
   {
     "id": "volcan-cruiser",
