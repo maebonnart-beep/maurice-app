@@ -4894,7 +4894,8 @@
     "lat": -20.3592,
     "lng": 57.3714,
     "themes": [
-      "boulangeries"
+      "boulangeries",
+      "produits-francais"
     ],
     "hours": "Dim 7h-13h, Lun 8h-18h, Mar-Sam 7h-18h",
     "badge": "selection",
@@ -6825,24 +6826,6 @@
     "badge": "selection",
     "zone": "ouest",
     "description": "Restaurant de grillades au cœur de Flic en Flac, viandes marinées, poissons grillés et spécialités locales (boulette chou-chou). Portions généreuses, réservation conseillée le week-end."
-  },
-  {
-    "id": "la-kaz-a-pain",
-    "name": "La Kaz A Pain",
-    "category": "food",
-    "address": "Rivière Noire",
-    "phone": "+230 483 1747",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=7081802525506342010&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.3483231,
-    "lng": 57.3645046,
-    "themes": [
-      "boulangeries",
-      "produits-francais"
-    ],
-    "badge": "selection",
-    "zone": "ouest",
-    "description": "Boulangerie de Riviere Noire reputee pour ses croissants, ambiance conviviale melant influences locales et francaises. Ouverture tot le matin, fermeture en debut d apres-midi."
   },
   {
     "id": "lokal-adventure",
