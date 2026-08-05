@@ -13681,19 +13681,6 @@
     "description": "Chaîne de poulet peri-peri (fast-food) à La Croisette Mall, Grand Baie, ouvert tous les jours de 11h30 à 20h."
   },
   {
-    "id": "delivery-services-for-home-and-office-mauritius-livraison-a-",
-    "name": "DELIVERY SERVICES FOR HOME AND OFFICE MAURITIUS - Livraison a domicile",
-    "category": "food",
-    "address": "Grand Baie",
-    "phone": "+230 5800 4274",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=5646701705102803256&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.008903,
-    "lng": 57.5817316,
-    "themes": [],
-    "zone": "nord"
-  },
-  {
     "id": "sushibay",
     "name": "Sushibay",
     "category": "food",
@@ -13710,21 +13697,6 @@
     "description": "Livraison de sushis à Grand Baie."
   },
   {
-    "id": "homemade110",
-    "name": "Homemade110",
-    "category": "food",
-    "address": "Grand Baie",
-    "phone": "+230 5780 5430",
-    "website": "https://wa.me/+23057805430",
-    "googleMapsUrl": "https://maps.google.com/?cid=9908975053920427064&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0089031,
-    "lng": 57.5817315,
-    "themes": [
-      "livraisons"
-    ],
-    "zone": "nord"
-  },
-  {
     "id": "gloria-fast-food",
     "name": "Gloria Fast Food",
     "category": "food",
@@ -13739,21 +13711,6 @@
     ],
     "zone": "nord",
     "description": "Fast-food de Grand Baie : burgers, frites, poulet frit, wraps et paninis, ouvert tous les jours de 11h à 20h."
-  },
-  {
-    "id": "chez-le-tamarinier-bistrot",
-    "name": "Chez Le Tamarinier Bistrot",
-    "category": "food",
-    "address": "B13, Grand Baie",
-    "phone": "+230 263 0855",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=16892767871923174893&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0154715,
-    "lng": 57.5743955,
-    "themes": [
-      "livraisons"
-    ],
-    "zone": "nord"
   },
   {
     "id": "zaika-restaurant",
@@ -17336,21 +17293,6 @@
     "description": "Café/petit-déjeuner au Food Avenue de Coeur Cap Tamarin, ouvert tous les jours de 11h à 19h."
   },
   {
-    "id": "euro-food-truck",
-    "name": "Euro food (truck)",
-    "category": "food",
-    "address": "P998+GQH, Ave Des Perruches, Flic en Flac",
-    "phone": "",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=7285149925118445608&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.2808834,
-    "lng": 57.3658425,
-    "themes": [
-      "livraisons"
-    ],
-    "zone": "ouest"
-  },
-  {
     "id": "les-artisans-kebabier-el-pando",
     "name": "Les artisans kebabier El Pando",
     "category": "food",
@@ -17365,21 +17307,6 @@
     ],
     "zone": "ouest",
     "description": "Kebabs artisanaux (pain maison, poulet/agneau mariné 48h) au Cascavelle Mall, avec service de livraison."
-  },
-  {
-    "id": "lapas",
-    "name": "Lapas",
-    "category": "food",
-    "address": "Coeur cap tamarin Le barachois Tamarin MU, 90901",
-    "phone": "+230 5830 7212",
-    "website": "https://grubmates.io/locations/tamarinblackriver/lapas.php",
-    "googleMapsUrl": "https://maps.google.com/?cid=1058808513504543427&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.3279099,
-    "lng": 57.3849989,
-    "themes": [
-      "livraisons"
-    ],
-    "zone": "ouest"
   },
   {
     "id": "portofino-s-pizza",
@@ -17476,34 +17403,6 @@
     ],
     "zone": "nord",
     "description": "Bistro de cuisine mauricienne à Long Mountain (nouilles, boulettes, mine bouillie, œuf rôti), livraison, à emporter et sur place."
-  },
-  {
-    "id": "tiffin-cuisine-creole",
-    "name": "Tiffin Cuisine Créole",
-    "category": "food",
-    "address": "Route Côtière Rivière Noire MU, Rivière Noire 90608",
-    "phone": "+230 5760 6262",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=1785933868696569048&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.354275,
-    "lng": 57.3620494,
-    "themes": [
-      "livraisons"
-    ],
-    "zone": "ouest"
-  },
-  {
-    "id": "espace-maison-cap-tamarin",
-    "name": "Espace Maison Cap Tamarin",
-    "category": "food",
-    "address": "La place Cap, Tamarin",
-    "phone": "+230 460 8585",
-    "website": "http://www.espacemaison.mu/",
-    "googleMapsUrl": "https://maps.google.com/?cid=858698793522989996&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.3274859,
-    "lng": 57.3844659,
-    "themes": [],
-    "zone": "ouest"
   },
   {
     "id": "tariq",
@@ -20775,19 +20674,6 @@
     "description": "Pizzeria (pizzas maison) à Riambel, Surinam, ouverte du mardi au dimanche, 10h30-19h30 (fermée le lundi)."
   },
   {
-    "id": "bongeni-delivery-moving",
-    "name": "Bongéni Delivery & Moving",
-    "category": "food",
-    "address": "MU, 4 Diego Garcia St, Port Louis 11502",
-    "phone": "+230 5936 1280",
-    "website": "https://bongeni.mu/",
-    "googleMapsUrl": "https://maps.google.com/?cid=5159158823739837888&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.1633889,
-    "lng": 57.5180541,
-    "themes": [],
-    "zone": "centre"
-  },
-  {
     "id": "cozy-burger",
     "name": "Cozy Burger",
     "category": "food",
@@ -20802,21 +20688,6 @@
     ],
     "zone": "centre",
     "description": "Burgers à Rose Hill (style cajun, smash burger, tenders/wings), livraison gratuite vers plusieurs zones, ouvert du mardi au dimanche (fermé le lundi)."
-  },
-  {
-    "id": "kebab-chez-lucie",
-    "name": "Kebab chez Lucie",
-    "category": "food",
-    "address": "MU, Royal road, Le Morne 91201",
-    "phone": "+230 5931 5957",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=17629994412690737450&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.4671856,
-    "lng": 57.3429504,
-    "themes": [
-      "livraisons"
-    ],
-    "zone": "sud"
   },
   {
     "id": "indian-express-restaurant-curepipe",
@@ -22581,21 +22452,6 @@
     ],
     "zone": "centre",
     "description": "Poissonnerie de Curepipe proposant une variété de poissons et fruits de mer frais, appréciée pour sa qualité."
-  },
-  {
-    "id": "vacoas-market",
-    "name": "Vacoas Market",
-    "category": "food",
-    "address": "PF3V+7H3, Greenville Ave, Vacoas-Phoenix",
-    "phone": "",
-    "website": "http://www.vacoasphoenix.org/health4.php",
-    "googleMapsUrl": "https://maps.google.com/?cid=2210147390410679882&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.2968568,
-    "lng": 57.4939334,
-    "themes": [
-      "marches"
-    ],
-    "zone": "centre"
   },
   {
     "id": "ocean-finest",
@@ -24462,21 +24318,6 @@
     "zone": "est"
   },
   {
-    "id": "home-delivery-service",
-    "name": "Home Delivery Service",
-    "category": "food",
-    "address": "Plaisance Shopping Village Rosebelle Grand Port Mauritius Veux Moulin Shopping complex Rosebelle, Bo'Vallon Mall BeauVallon, Mahebourg",
-    "phone": "+230 5798 3526",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=2534381049940882134&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.400411,
-    "lng": 57.598659,
-    "themes": [
-      "livraisons"
-    ],
-    "zone": "sud"
-  },
-  {
     "id": "riverside-shopping-centre",
     "name": "Riverside Shopping Centre",
     "category": "activites",
@@ -25699,21 +25540,6 @@
     ],
     "zone": "nord",
     "description": "Restaurant français de cuisine de saison à Pointe aux Canonniers/Grand Baie."
-  },
-  {
-    "id": "bol-local-fastfood-takeaway",
-    "name": "Bol Local Fastfood & Takeaway",
-    "category": "food",
-    "address": "MU, Bel Air 41408",
-    "phone": "+230 5474 7061",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=17922736626123082895&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.2575749,
-    "lng": 57.758171,
-    "themes": [
-      "livraisons"
-    ],
-    "zone": "est"
   },
   {
     "id": "chez-flipper-2k22",
@@ -30834,20 +30660,6 @@
     "description": "Prestataire d'excursions en mer sur mesure basé à Albion, proposant baignade avec dauphins ou tortues, sorties pêche, plongée et observation des baleines."
   },
   {
-    "id": "africa-food-mauritius",
-    "name": "Africa Food Mauritius",
-    "category": "food",
-    "address": "MU, Grand Baie 30546",
-    "phone": "+230 5510 9160",
-    "googleMapsUrl": "https://maps.google.com/?cid=2665686187612864863&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0007334,
-    "lng": 57.604333,
-    "themes": [
-      "livraisons"
-    ],
-    "zone": "nord"
-  },
-  {
     "id": "gourmand-ile",
     "name": "Gourmand’île",
     "category": "food",
@@ -31434,20 +31246,6 @@
     ],
     "zone": "ouest",
     "description": "Épicerie générale du Morne Brabant, produits frais, épices locales et artisanat local, accueil chaleureux, à proximité des sites naturels."
-  },
-  {
-    "id": "top-snack",
-    "name": "Top Snack",
-    "category": "food",
-    "address": "Petit Camp Branch Road, Vacoas-Phoenix",
-    "phone": "+230 5775 1650",
-    "googleMapsUrl": "https://maps.google.com/?cid=5270313897177844635&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.2715704,
-    "lng": 57.4990817,
-    "themes": [
-      "livraisons"
-    ],
-    "zone": "centre"
   },
   {
     "id": "montagne-blanche-police-station",
