@@ -13000,36 +13000,6 @@
     "description": "Petit snack de plage de La Cuvette Beach (Grand Baie) tenu par Camille, cuisine mauricienne typique sur place ou à emporter. Bon rapport qualité-prix, vestiaires/toilettes disponibles, ambiance conviviale."
   },
   {
-    "id": "a1-snack",
-    "name": "A1 snack",
-    "category": "food",
-    "address": "XHM5+Q28, Grand Baie",
-    "phone": "",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=2496963481294887752&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0157726,
-    "lng": 57.5576748,
-    "themes": [
-      "snacks-plage"
-    ],
-    "zone": "nord"
-  },
-  {
-    "id": "qg",
-    "name": "QG",
-    "category": "food",
-    "address": "MU, Rte de la Salette, Grand Baie 30551",
-    "phone": "+230 5985 1168",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=10963546888944918625&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.013409,
-    "lng": 57.5862494,
-    "themes": [
-      "snacks-plage"
-    ],
-    "zone": "nord"
-  },
-  {
     "id": "vik-snack",
     "name": "Vik Snack",
     "category": "food",
@@ -13080,36 +13050,6 @@
     "description": "Snack de la Route Royale à Grand Baie (aussi connu sous \"Chez Nanda\"), cuisine mauricienne et chinoise (soupe halim, riz frit) midi et soir. Très bien noté (5/5)."
   },
   {
-    "id": "manisha-repas-local",
-    "name": "Manisha Repas Local",
-    "category": "food",
-    "address": "XHVJ+2P4, Grand Baie",
-    "phone": "+230 5926 9234",
-    "website": "https://www.facebook.com/manisharepaslocal/",
-    "googleMapsUrl": "https://maps.google.com/?cid=16088627625539210196&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0074529,
-    "lng": 57.58188,
-    "themes": [
-      "snacks-plage"
-    ],
-    "zone": "nord"
-  },
-  {
-    "id": "chez-stef-snack",
-    "name": "Chez Stef Snack",
-    "category": "food",
-    "address": "XHMF+QM9 Route Royale, Route Royale, Grand Baie",
-    "phone": "+230 5914 7663",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=1448008871810503057&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.015582,
-    "lng": 57.5742291,
-    "themes": [
-      "snacks-plage"
-    ],
-    "zone": "nord"
-  },
-  {
     "id": "la-jefa-loca",
     "name": "La Jefa Loca",
     "category": "food",
@@ -13157,21 +13097,6 @@
     ],
     "zone": "nord",
     "description": "Snack de rue de Grand Baie au bon rapport qualité-prix : paninis/wraps au poulet ou agneau, sauce piment vert mauricien, crêpes au lait concentré. Bien noté (5/5)."
-  },
-  {
-    "id": "le-moment-de-plaisir-snack",
-    "name": "Le Moment De Plaisir Snack",
-    "category": "food",
-    "address": "XJXP+39V, Calodyne",
-    "phone": "+230 5788 3324",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=18324607939911370139&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0022695,
-    "lng": 57.6359291,
-    "themes": [
-      "snacks-plage"
-    ],
-    "zone": "nord"
   },
   {
     "id": "sundeck-beach-food",
@@ -16975,21 +16900,6 @@
     "description": "Food-truck populaire de Flic en Flac (4,3/5), cuisine locale et occidentale : pizzas, kebabs, sandwichs, nouilles sautées, pain kebab, poulet croustillant."
   },
   {
-    "id": "dollar-beach-food",
-    "name": "Dollar Beach Foodحلال",
-    "category": "food",
-    "address": "P998+WCH, Flic en Flac",
-    "phone": "",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=18336142504126878513&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.2802047,
-    "lng": 57.3660377,
-    "themes": [
-      "snacks-plage"
-    ],
-    "zone": "ouest"
-  },
-  {
     "id": "joe-snack",
     "name": "Joe Snack",
     "category": "food",
@@ -17004,21 +16914,6 @@
     ],
     "zone": "ouest",
     "description": "Petite affaire familiale de Flic en Flac tenue par \"Papa Joe\" et son fils Gavin, cuisine mauricienne ultra-abordable près de la plage. Magic Bowl et burger maison plébiscités (5/5)."
-  },
-  {
-    "id": "chef-jean-claude",
-    "name": "Chef Jean Claude",
-    "category": "food",
-    "address": "P9FC+J3, Flic en Flac",
-    "phone": "+230 5759 3272",
-    "website": "https://grubmates.io/locations/flicenflac/jeanclaude.php",
-    "googleMapsUrl": "https://maps.google.com/?cid=5333570293865152430&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.2759171,
-    "lng": 57.3702227,
-    "themes": [
-      "snacks-plage"
-    ],
-    "zone": "ouest"
   },
   {
     "id": "chez-pepe",
@@ -26683,24 +26578,6 @@
     "zone": "nord",
     "description": "Petite adresse conviviale sur la plage de Mont Choisy, tenue en famille, connue pour ses plats locaux comme le marlin fumé, le curry de poisson et ses samoussas maison.",
     "hours": "Tous les jours 10h30-14h30 & 18h-22h"
-  },
-  {
-    "id": "sakauye-moris",
-    "name": "Sakouye Moris",
-    "category": "food",
-    "address": "Pereybère",
-    "phone": "",
-    "website": "",
-    "googleMapsUrl": "https://maps.app.goo.gl/ysunM2f7pMRrPtbw7",
-    "lat": -19.9945486,
-    "lng": 57.5913157,
-    "themes": [
-      "snacks-plage"
-    ],
-    "badge": "selection",
-    "takeaway": true,
-    "promoText": "Boulettes, daubes — bonne adresse locale.",
-    "zone": "nord"
   },
   {
     "id": "restaurant-malizo",
