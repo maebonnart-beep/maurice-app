@@ -20285,21 +20285,6 @@
     "description": "Épicerie/supérette de quartier au village du Morne, produits du quotidien et essentiels locaux."
   },
   {
-    "id": "sambilla-vanille-vanilla-house",
-    "name": "SamBilla Vanille | Vanilla House",
-    "category": "food",
-    "address": "MU, 25 royale road dilo pouri, Le Morne 91201",
-    "phone": "+230 5732 0399",
-    "website": "https://www.facebook.com/share/18WPBDWUqg/?mibextid=wwXIfr",
-    "googleMapsUrl": "https://maps.google.com/?cid=1323517702608964486&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.4773952,
-    "lng": 57.349026,
-    "themes": [
-      "epiceries-specialisees"
-    ],
-    "zone": "sud"
-  },
-  {
     "id": "chez-robert",
     "name": "Chez Robert",
     "category": "food",
@@ -20360,21 +20345,6 @@
     ],
     "zone": "ouest",
     "description": "Étal familial de fruits et légumes frais à La Gaulette, prix raisonnables et service personnalisé (le vendeur coupe/prépare les fruits sur demande, conseils de cuisine) ; glacier artisanal juste à côté."
-  },
-  {
-    "id": "shein-dhaka-product-foodstuff-ltd",
-    "name": "Shein Dhaka Product & Foodstuff Ltd",
-    "category": "food",
-    "address": "One Way ST, St Pierre",
-    "phone": "+230 5837 5101",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=16617045378845331265&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.2238438,
-    "lng": 57.5364166,
-    "themes": [
-      "epiceries-specialisees"
-    ],
-    "zone": "centre"
   },
   {
     "id": "bienvenue-boutik",
@@ -20771,21 +20741,6 @@
       "grandes-surfaces"
     ],
     "zone": "centre"
-  },
-  {
-    "id": "rhum-de-l-ouest",
-    "name": "Rhum De L'ouest",
-    "category": "food",
-    "address": "La Gaulette MU, Black-River 91101",
-    "phone": "+230 5732 2850",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=8758814069166845832&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.4157638,
-    "lng": 57.3437759,
-    "themes": [
-      "epiceries-specialisees"
-    ],
-    "zone": "ouest"
   },
   {
     "id": "charcuterie-isle-de-france",
@@ -31480,20 +31435,6 @@
     ],
     "zone": "centre",
     "description": "Épicerie fine haut de gamme (antenne du réseau L'Épicerie, fondé en 1999 à Floréal) à Vacoas-Phœnix, produits gourmets majoritairement français (charcuterie, fromages) avec service traiteur."
-  },
-  {
-    "id": "el-shaddai-store",
-    "name": "El Shaddai Store",
-    "category": "food",
-    "address": "Bois Cheri Rd, Moka",
-    "phone": "+230 5907 5582",
-    "googleMapsUrl": "https://maps.google.com/?cid=13478363999743900595&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.2194627,
-    "lng": 57.5164327,
-    "themes": [
-      "epiceries-specialisees"
-    ],
-    "zone": "centre"
   },
   {
     "id": "kiran-store",
