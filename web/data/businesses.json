@@ -1755,7 +1755,8 @@
     "hours": "Tous les jours à partir de 16h",
     "priceRange": "bon-marche",
     "zone": "nord",
-    "promoText": "Les pêcheurs locaux se rassemblent sur la plage pour vendre du poisson frais de toutes les couleurs et de toutes les tailles. Le marchandage et l'ambiance locale sont à l'ordre du jour."
+    "promoText": "Les pêcheurs locaux se rassemblent sur la plage pour vendre du poisson frais de toutes les couleurs et de toutes les tailles. Le marchandage et l'ambiance locale sont à l'ordre du jour.",
+    "description": "Marché improvisé sur le parking de la plage publique de Grand Baie, pêcheurs locaux vendant leur pêche du jour tous les après-midi (à partir d'environ 15h), prix à négocier."
   },
   {
     "id": "bayside-butchery",
@@ -13571,7 +13572,8 @@
     "themes": [
       "poissonneries"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Marché de pêcheurs sur le front de mer de Grand Baie, ouvert environ 15h-18h tous les jours sauf dimanche ; poisson (mérou, thon, poulpe, calmar) vendu au demi-kilo, prix négociables."
   },
   {
     "id": "bella-amigo-co-ltd",
@@ -13586,7 +13588,8 @@
     "themes": [
       "poissonneries"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Poissonnerie-boutique haut de gamme de Petit Raffray adossée à une usine de conditionnement (poisson, crabe, gambas géantes, langouste), produits nettoyés/filetés/emballés sous vide, agréée HACCP/UE. Restaurant attenant ouvert 7j/7, 11h-23h."
   },
   {
     "id": "bina-fish-ltd",
@@ -13614,9 +13617,11 @@
     "lat": -20.0098825,
     "lng": 57.5859374,
     "themes": [
-      "poissonneries"
+      "restaurants",
+      "fruits-de-mer"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Restaurant de Grand Baie : curry de poisson, poulpe sauté, fruits de mer grillés."
   },
   {
     "id": "ti-bazaar-de-grand-baie",
@@ -17288,7 +17293,8 @@
     "themes": [
       "poissonneries"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Point de vente de poisson frais sur la Coastal Road à Flic en Flac, ouvert du lundi au samedi, 11h-16h."
   },
   {
     "id": "west-coast-seafood",
@@ -17303,7 +17309,8 @@
     "themes": [
       "poissonneries"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Poissonnerie de Rivière Noire proposant une large sélection de fruits de mer locaux, réputée pour sa fraîcheur ; conseillé de venir tôt le matin pour le meilleur choix."
   },
   {
     "id": "marche-de-centre-de-flacq",
@@ -22584,7 +22591,8 @@
     "themes": [
       "poissonneries"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Chaîne mauricienne de poissonneries avec plusieurs points de vente (Tribeca, La City Trianon, Cascavelle, Rivière du Rempart, Victoria Beau Bassin-Rose Hill), anciennement connue sous le nom Noulamer Poissons."
   },
   {
     "id": "poissonerie-alain",
@@ -22614,7 +22622,8 @@
     "themes": [
       "poissonneries"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Poissonnerie de Mahébourg proposant du poisson frais (cateau bleu et rouge notamment), avec service de nettoyage du poisson et livraison."
   },
   {
     "id": "dayanand-boholah-seafoods-co-ltd",
@@ -22629,7 +22638,8 @@
     "themes": [
       "poissonneries"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Grossiste en fruits de mer de Poste de Flacq établi depuis 2002, présenté comme le plus grand fournisseur indépendant de fruits de mer de l'île ; importe/distribue fruits de mer et viandes surgelés, vend aussi du poisson local frais et congelé."
   },
   {
     "id": "ns-poisson-frais",
@@ -22644,7 +22654,8 @@
     "themes": [
       "poissonneries"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Poissonnerie de Curepipe proposant une variété de poissons et fruits de mer frais, appréciée pour sa qualité."
   },
   {
     "id": "vacoas-market",
@@ -22657,7 +22668,7 @@
     "lat": -20.2968568,
     "lng": 57.4939334,
     "themes": [
-      "poissonneries"
+      "marches"
     ],
     "zone": "centre"
   },
@@ -22674,7 +22685,8 @@
     "themes": [
       "poissonneries"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Poissonnerie de Vacoas-Phœnix (la Marie Road), \"de l'océan à votre porte\" - service de livraison suggéré par l'enseigne."
   },
   {
     "id": "gsr-trou-aux-biches",
@@ -25660,9 +25672,11 @@
     "lat": -20.0352384,
     "lng": 57.5448455,
     "themes": [
-      "poissonneries"
+      "restaurants",
+      "fruits-de-mer"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Restaurant de plage à Trou-aux-Biches : poisson grillé, calmars, fruits de mer."
   },
   {
     "id": "souvenir",
@@ -25675,9 +25689,10 @@
     "lat": -20.0358431,
     "lng": 57.5457175,
     "themes": [
-      "poissonneries"
+      "restaurants"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Restaurant de Trou-aux-Biches : pizza, pâtes, poisson frais local, cuisine mauricienne et asiatique."
   },
   {
     "id": "family-pizza",
