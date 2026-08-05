@@ -10736,7 +10736,8 @@
     "themes": [
       "vins-spiritueux"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Enseigne francaise Nicolas, caviste ouvert en juillet 2016 au Bagatelle Mall : plus de 300 references de vins francais, large gamme de spiritueux et idees cadeaux, conseillers formes a l accord mets-vins. Ouvert lun-jeu 9h30-20h30, ven-sam 9h30-22h, dim 9h30-15h."
   },
   {
     "id": "strike-city-bagatelle",
@@ -26800,7 +26801,8 @@
     "themes": [
       "vins-spiritueux"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Boutique premium de vins et spiritueux a La Croisette (Grand Baie) : plus de 200 vins (dont Gerard Bertrand) et plus de 100 spiritueux (dont plusieurs gins Malfy). Vente en ligne et livraison sur l ile."
   },
   {
     "id": "maison-scott-ruisseau-creole",
@@ -26814,7 +26816,8 @@
     "themes": [
       "vins-spiritueux"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Boutique La Maison Scott du Ruisseau Creole Shopping Centre (Riviere Noire) : plus de 200 vins, plus de 100 spiritueux premium, degustations, conseils de barmen et sommeliers, programme fidelite."
   },
   {
     "id": "maison-scott-riche-terre",
@@ -26828,7 +26831,8 @@
     "themes": [
       "vins-spiritueux"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Boutique La Maison Scott de Riche Terre (ex-thewinestore by Scott) : une des selections de spiritueux les plus completes du marche et une cave a vins variee ; sert aussi de point de retrait pour les commandes."
   },
   {
     "id": "20vin-bagatelle",
@@ -26842,7 +26846,8 @@
     "themes": [
       "vins-spiritueux"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Boutique specialisee vins et spiritueux au Bagatelle Mall : plus de 900 references du monde entier (France, Italie, Afrique du Sud, Maurice), grande selection de champagnes, degustations regulieres. Dim 9h30-20h, lun-jeu 9h30-20h30, ven 9h30-22h, sam 9h30-23h."
   },
   {
     "id": "le-connoisseur-phoenix",
@@ -26856,7 +26861,8 @@
     "themes": [
       "vins-spiritueux"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Vins et spiritueux internationaux haut de gamme a Phoenix, gamme etendue aux produits gourmets (foie gras, chocolats, olives). Ouvert lun-jeu 8h30-17h, ven 8h30-18h, sam 9h-12h, ferme dimanche et jours feries."
   },
   {
     "id": "audacity-wines-curepipe",
@@ -26870,7 +26876,8 @@
     "themes": [
       "vins-spiritueux"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Experience Room d Audacity Wines a Curepipe : degustations de vins et spiritueux australiens (Barossa Valley, Margaret River, Geographe), degustations de gin avec mixologiste (groupes de 10 max)."
   },
   {
     "id": "audacity-wines-flacq",
@@ -26884,7 +26891,8 @@
     "themes": [
       "vins-spiritueux"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Magasin Audacity Wines du Flacq Retail Park : vins, spiritueux, cidres, sake et boissons non-alcoolisees d Australie, livraison sur toute l ile."
   },
   {
     "id": "kairali-spa-vacoas",
