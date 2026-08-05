@@ -4544,7 +4544,8 @@
     "zone": "centre",
     "photoUrl": "https://images.unsplash.com/photo-1592919505780-303950717480?auto=format&fit=crop&w=800&q=70",
     "photoCredit": "Photo: Andrew Shelley / Unsplash",
-    "sportsListed": "Padel : 3 courts (O2 Padel Pro). Services : coaching. Réservation possible."
+    "sportsListed": "Padel : 3 courts (O2 Padel Pro). Services : coaching. Réservation possible.",
+    "description": "Club privé fondé en 1950 à Curepipe, doté d'un parcours de golf 9 trous, de courts de tennis, d'un terrain de rugby/football et de courts de squash et badminton, réservé à ses membres."
   },
   {
     "id": "maritim-golf-course-balaclava",
@@ -5463,7 +5464,9 @@
     "themes": [
       "golf"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Parcours de golf 18 trous championship (par 72, 6245 m) dessiné par Peter Matkovich, ouvert à tous les visiteurs, voiturettes GPS obligatoires.",
+    "hours": "Lun-Jeu 6h30-19h, Ven-Sam 6h30-20h"
   },
   {
     "id": "karai-kreol",
@@ -5930,7 +5933,8 @@
     "themes": [
       "golf"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Parcours 18 trous par 72 (6886 m) dessiné par Rodney Wright, inauguré en 2006 sur un domaine de 206 hectares en bord de la baie de Tamarin ; comprend académie de golf, practice couvert, courts de tennis et restaurant."
   },
   {
     "id": "the-pro-shop-tamarin",
@@ -5989,7 +5993,8 @@
     ],
     "zone": "ouest",
     "photoUrl": "https://images.unsplash.com/photo-1774905175014-5f9de3e9c2d1?auto=format&fit=crop&w=800&q=70",
-    "photoCredit": "Photo: Y S / Unsplash"
+    "photoCredit": "Photo: Y S / Unsplash",
+    "description": "Domaine résidentiel de luxe à Rivière Noire construit autour d'un parcours de golf 18 trous certifié GEO dessiné par Ernie Els, ouvert à tous avec tarifs préférentiels pour les résidents via Beachcomber."
   },
   {
     "id": "le-dix-neuf-restaurant",
@@ -7030,7 +7035,8 @@
     "themes": [
       "golf"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Hôtel 5 étoiles au pied du Morne Brabant doté d'un parcours de golf 18 trous par 72 (5924 m) conçu par Tony Johnstone, dont neuf trous longent le lagon."
   },
   {
     "id": "dinarobin-beachcomber-golf-resort-spa",
@@ -7045,7 +7051,8 @@
     "themes": [
       "golf"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Hôtel 5 étoiles voisin du Paradis sur la péninsule du Morne ; ne possède pas de parcours propre mais donne à ses clients un accès privilégié aux golfs de Paradis et de Mont Choisy via navette."
   },
   {
     "id": "ebony-forest-chamarel",
@@ -8353,7 +8360,8 @@
     "themes": [
       "golf"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Resort à Beau Champ donnant accès à deux parcours 18 trous : le parcours Anahita dessiné par Ernie Els sur place, et celui d'Île aux Cerfs (Bernhard Langer) via navette bateau gratuite."
   },
   {
     "id": "seasons-restaurant-bar",
@@ -9910,7 +9918,8 @@
     "themes": [
       "complexes-sportifs"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Club multisports ouvert récemment au cœur de Moka sur plus de 130 000 m², proposant une dizaine de disciplines (football, natation, escrime, tennis, padel, golf...) avec entraîneurs qualifiés, piscine chauffée et restaurant."
   },
   {
     "id": "tribeca-mall",
@@ -11779,7 +11788,9 @@
     "sportsListed": "Tennis, squash, padel, badminton, pickleball, beach tennis, foot à 5, escalade, musculation/cardio, cours collectifs, Pilates, Yoga",
     "hasRestauration": true,
     "kidsActivities": true,
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Country club multisports du réseau HealthScape à Forbach, à cinq minutes de Grand Baie, avec padel, tennis, squash, salle de fitness et mini-foot sur près de 6000 m² d'espace couvert.",
+    "hours": "Lun-Ven 6h-21h30, Sam-Dim 7h-19h"
   },
   {
     "id": "urban-sport-grand-baie",
@@ -11797,7 +11808,9 @@
     ],
     "sportsListed": "Padel : 3 courts. Infrastructures : club-house, boutique. Réservation en ligne.",
     "hasRestauration": true,
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Centre lancé en 2021 proposant 3 courts de padel extérieurs, un terrain de basket et un terrain de foot à 5, avec coaching assuré par la Hello Padel Academy.",
+    "hours": "Tous les jours 7h-22h"
   },
   {
     "id": "shape-sport-club",
@@ -11815,7 +11828,8 @@
     ],
     "sportsListed": "Musculation, arts martiaux (kickboxing, boxe, Muay Thai), cours collectifs rooftop (zumba, spinning, yoga...)",
     "kidsActivities": true,
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Salle de sport sur deux niveaux fondée en 2013 par le champion de kick-boxing James Agathe, proposant musculation, entraînement fonctionnel en extérieur et cours de Muay Thai."
   },
   {
     "id": "ennoia-grand-baie",
@@ -11833,7 +11847,8 @@
     "sportsListed": "Boxe, natation, circuit training, LesMills, Aqua Gym, Yoga, Pilates, Zumba",
     "hasRestauration": true,
     "kidsActivities": true,
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Club de sport et fitness de 6660 m² à La Croisette, avec zones cardio et musculation, piscine semi-olympique chauffée, sauna, courts de tennis et cours collectifs (yoga, pilates, zumba)."
   },
   {
     "id": "isla-padel-grand-baie-2",
@@ -11850,7 +11865,9 @@
     ],
     "sportsListed": "Padel : 6 courts. Fait partie du complexe EONIA. Infrastructures : club-house, pro-shop, vestiaires. Réservation en ligne.",
     "hasRestauration": true,
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Club de padel à La Croisette doté de 6 courts Adidas dont un court central panoramique et quatre semi-couverts, avec un café-restaurant sur place.",
+    "hours": "Lun-Ven 6h-21h30, Sam-Dim et jours fériés 7h-19h"
   },
   {
     "id": "crossfit-grand-baie",
@@ -11914,9 +11931,10 @@
     "lat": -20.0122315,
     "lng": 57.5872783,
     "themes": [
-      "complexes-sportifs"
+      "shopping"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Enseigne de vente d'articles et vêtements de sport (Nike, Adidas, Puma...) située dans le centre commercial Coeur de Ville à Grand Baie."
   },
   {
     "id": "rivage-dore-pilates",
@@ -11966,7 +11984,8 @@
     ],
     "sportsListed": "Padel : 2 courts. Infrastructures : salle de sport/fitness, personal training, cours collectifs, restaurant. Réservation possible.",
     "hasRestauration": true,
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Salle de sport et club de padel ouvert mi-2024 à Pointe aux Cannoniers, avec deux courts de padel extérieurs éclairés en soirée et un restaurant international sur place."
   },
   {
     "id": "islandive",
@@ -15636,7 +15655,8 @@
     "sportsListed": "Padel : 2 courts. Infrastructures : complexe multisports (piscine, foot à 5, basket/volley, pétanque, jogging), fitness, ~26 activités (yoga, zumba...). Réservation possible.",
     "hasRestauration": true,
     "kidsActivities": true,
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Plus grand complexe multisports de l'ouest de l'île à Cascavelle/Uniciti, avec piscine de 50 m à 10 couloirs, terrains de foot/rugby, terrains de foot à 5, courts de tennis, terrain de basket, terrains de pétanque et piste de jogging."
   },
   {
     "id": "sport-center",
@@ -18843,7 +18863,8 @@
     ],
     "sportsListed": "Padel : 4 courts extérieurs. Infrastructures : club-house, pro-shop, football à 5. Réservation en ligne.",
     "hasRestauration": true,
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Club de padel disposant d'un site à Rivière Noire pensé pour les grandes sessions, événements et compétitions, en complément de son site historique de Grand Baie ; coaching, animations et réservation via application mobile dédiée."
   },
   {
     "id": "ion-club-la-pointe-windsurf-kitesurf-wingfoil-surf-center",
@@ -26810,7 +26831,8 @@
     ],
     "zone": "nord",
     "sportsListed": "Padel : 5 courts dont 1 court panoramique, conforme aux normes de la Fédération internationale de padel.",
-    "hours": "Lun-Ven 6h30-21h, Sam 6h30-19h, Dim 6h30-17h"
+    "hours": "Lun-Ven 6h30-21h, Sam 6h30-19h, Dim 6h30-17h",
+    "description": "Club de padel du domaine Mon Rocher à Beau Plan, courts aux normes de la Fédération internationale de padel, programme d'initiation encadré (coaching en petits groupes) et location d'équipement."
   },
   {
     "id": "labourdonnais-sports-club",
@@ -26844,7 +26866,8 @@
       "tennis-padel"
     ],
     "zone": "nord",
-    "sportsListed": "Tennis : 4 courts (dur). Padel : 5 courts (dur). Infrastructures : squash, badminton, mur d'escalade, football à 5, salle de fitness. Réservation en ligne."
+    "sportsListed": "Tennis : 4 courts (dur). Padel : 5 courts (dur). Infrastructures : squash, badminton, mur d'escalade, football à 5, salle de fitness. Réservation en ligne.",
+    "description": "Complexe multisports de Forbach réunissant padel, squash, tennis, badminton, foot à 5, fitness et escalade sous des installations couvertes protégées des intempéries."
   },
   {
     "id": "mauritius-tennis-academy-azuri",
@@ -26859,7 +26882,8 @@
       "tennis-padel"
     ],
     "zone": "est",
-    "sportsListed": "Tennis : 1 court."
+    "sportsListed": "Tennis : 1 court.",
+    "description": "Académie de tennis basée au sein du village Azuri Ocean & Golf Village à Roches Noires, proposant un encadrement individuel et collectif pour tous niveaux de jeu."
   },
   {
     "id": "maison-scott-croisette",
@@ -28146,7 +28170,8 @@
     "themes": [
       "complexes-sportifs"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Centre de loisirs et de bien-être du domaine Mont Choisy Golf & Beach Estate : salle de fitness, courts de tennis et de padel, sauna, hammam, espaces yoga/pilates et piscine chauffée, réservé aux résidents du domaine."
   },
   {
     "id": "pointe-aux-canonniers-muaythai-sport-club",
@@ -28159,7 +28184,8 @@
     "themes": [
       "complexes-sportifs"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Club de boxe thaïlandaise de la route Côtière à Pointe aux Canonniers, affilié à la Fédération mauricienne de Muay Thai, dont plusieurs combattants ont décroché des titres nationaux et des ceintures WMC."
   },
   {
     "id": "cana-padel-sports-and-social-club",
@@ -28176,7 +28202,8 @@
     ],
     "zone": "nord",
     "sportsListed": "Padel : 5 courts dont 1 court panoramique, conforme aux normes de la Fédération internationale de padel.",
-    "hours": "Lun-Ven 6h30-21h, Sam 6h30-19h, Dim 6h30-17h"
+    "hours": "Lun-Ven 6h30-21h, Sam 6h30-19h, Dim 6h30-17h",
+    "description": "Club de padel du domaine Mon Rocher à Beau Plan, courts aux normes de la Fédération internationale de padel, programme d'initiation encadré et location d'équipement."
   },
   {
     "id": "cue-club-snooker-pool",
@@ -28277,7 +28304,9 @@
       "tennis-padel"
     ],
     "zone": "nord",
-    "sportsListed": "Tennis : 4 courts (dur). Services : académie, stages. Réservation possible."
+    "sportsListed": "Tennis : 4 courts (dur). Services : académie, stages. Réservation possible.",
+    "description": "Club de tennis de La Croisette à Grand Baie avec trois courts en surfaces dure et synthétique, cours particuliers et collectifs encadrés par des entraîneurs.",
+    "hours": "Lun-Ven 6h-21h, Sam 7h-19h30, Dim 7h30-12h"
   },
   {
     "id": "ennoia-tennis-courts",
@@ -28292,7 +28321,8 @@
     "themes": [
       "tennis-padel"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Quatre courts de tennis éclairés (surface Rebound Ace) intégrés au complexe Ennoia Sports & Fitness Club de La Croisette à Grand Baie, aux côtés d'une piscine et d'une salle de fitness."
   },
   {
     "id": "footprints-beach-tennis",
@@ -28306,7 +28336,8 @@
     "themes": [
       "tennis-padel"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Premier club de beach tennis de Maurice, situé à Grand Baie, avec cinq terrains de sable, piscine, bar-restaurant et espace enfants."
   },
   {
     "id": "mauritius-tennis-academy-mta-cottage",
@@ -28320,7 +28351,8 @@
     "themes": [
       "tennis-padel"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Antenne de la Mauritius Tennis Academy installée dans l'enceinte du Club d'Equitation du Nord à Poudre d'Or, club fondé en 1999 et historiquement dédié à l'équitation autant qu'au tennis."
   },
   {
     "id": "ghurburun-football-stadium",
@@ -28333,7 +28365,8 @@
     "themes": [
       "complexes-sportifs"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Stade municipal Sir R. Ghurburrun de Triolet, terrain de football éclairé en soirée, également utilisé au quotidien par les habitants pour la marche et le jogging."
   },
   {
     "id": "switch-fitness",
@@ -28391,7 +28424,8 @@
     "themes": [
       "complexes-sportifs"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Club d'arts martiaux de close-combat basé à Bambous, issu du regroupement des clubs AJL, KME et IFD de Maurice affiliés à la fédération internationale FICC."
   },
   {
     "id": "amelia-s-gymnasts",
@@ -28609,7 +28643,9 @@
       "complexes-sportifs",
       "gym-fitness"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Centre sportif et bien-être du groupe ENL à Moka, ouvert depuis 2012 : salle de fitness, salles de cours collectifs, spinning, deux piscines chauffées, quatre courts de tennis et pôle bien-être (ostéopathie, acupuncture, podologie).",
+    "hours": "Ouvert 7j/7"
   },
   {
     "id": "smart-combat-brazilian-jiu-jitsu-tamarin-mauritius",
@@ -28624,7 +28660,8 @@
     "themes": [
       "complexes-sportifs"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Club de jiu-jitsu brésilien de Tamarin, enregistré auprès de la Fédération mauricienne de BJJ, proposant des cours de jiu-jitsu et d'auto-défense pour enfants et adultes."
   },
   {
     "id": "gym-24-7",
@@ -28654,7 +28691,8 @@
       "complexes-sportifs",
       "gym-fitness"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Studio de pole dance fondé par Yulia Lo Bosco, proposant des cours de pole fitness, pole exotic et renforcement/étirement pour tous niveaux, du débutant au confirmé."
   },
   {
     "id": "space-fitness-beau-bassin",
@@ -28837,7 +28875,8 @@
     "themes": [
       "complexes-sportifs"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Salle d'entraînement de type cross-training à Plaine-Verte (Port Louis), reconnue pour ses séances de fitness fonctionnel intense et bien notée par ses membres."
   },
   {
     "id": "vassen-barbell-gym-riviere-des-anguilles",
@@ -28922,7 +28961,8 @@
       "complexes-sportifs",
       "gym-fitness"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Studio à Tamarin combinant cours de yoga vinyasa et séances de bounce (fitness sur trampoline), avec des cours également ouverts aux enfants."
   },
   {
     "id": "hilo-functional-training-moka",
@@ -28963,7 +29003,9 @@
     ],
     "zone": "nord",
     "sportsListed": "Padel : 2 courts. Infrastructures : restaurant, bar. Réservation possible.",
-    "hasRestauration": true
+    "hasRestauration": true,
+    "description": "Complexe de padel (iPadel by RM) situé à l'Address Boutique Hotel & Residences de Port Chambly, avec trois terrains accessibles sur réservation via une application, dans le cadre d'un partenariat entre Ninety-Six Hotels et RMClub Mauritius.",
+    "hours": "Accès 24h/24 sur réservation"
   },
   {
     "id": "petit-camp-tennis-club",
@@ -28978,7 +29020,8 @@
       "tennis-padel"
     ],
     "zone": "centre",
-    "sportsListed": "Tennis : 10+ courts (dur). Infrastructures : centre national, tribunes. Réservation possible."
+    "sportsListed": "Tennis : 10+ courts (dur). Infrastructures : centre national, tribunes. Réservation possible.",
+    "description": "Club de tennis de quartier à Quatre Bornes offrant des courts pour joueurs occasionnels et compétiteurs, des séances de coaching et l'organisation de tournois locaux."
   },
   {
     "id": "fairplay-tennis-club",
@@ -28993,7 +29036,8 @@
     "themes": [
       "tennis-padel"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Club de tennis à Triolet proposant un programme de coaching à l'année pour juniors et adultes de tous niveaux, encadré notamment par les entraîneurs Christine Faustin et Charlene Nayna."
   },
   {
     "id": "port-louis-tennis-club",
@@ -29020,7 +29064,8 @@
     "themes": [
       "tennis-padel"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Centre national de tennis de Petit Camp, siège de la Fédération mauricienne de tennis, inauguré en 2003 et dédié à la formation des joueurs et entraîneurs ainsi qu'à l'organisation de tournois nationaux et internationaux (dont des étapes du circuit junior ITF)."
   },
   {
     "id": "advantage-tennis",
@@ -29035,7 +29080,8 @@
       "tennis-padel"
     ],
     "zone": "centre",
-    "sportsListed": "Tennis. Abonnement à partir de Rs 1200/mois."
+    "sportsListed": "Tennis. Abonnement à partir de Rs 1200/mois.",
+    "description": "Académie de tennis à Rose Hill proposant mini-tennis, cours collectifs et individuels, tennis social et entraînement pour joueurs de niveau élite."
   },
   {
     "id": "football-field",
@@ -29077,7 +29123,8 @@
     "themes": [
       "complexes-sportifs"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Antenne du réseau ION CLUB basée à l'hôtel Dinarobin, offrant cours et location de matériel de kitesurf, windsurf, wingfoil et SUP, avec accès en bateau au lagon de kitesurf du Morne."
   },
   {
     "id": "ion-club-shop",
@@ -29092,7 +29139,8 @@
     "themes": [
       "complexes-sportifs"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Boutique du réseau ION CLUB à La Gaulette, en bordure du lagon de kitesurf du Morne, vendant du matériel de sports nautiques d'occasion, des accessoires et des souvenirs de la marque."
   },
   {
     "id": "terry-s-kiteboarding-school",
@@ -29106,7 +29154,8 @@
     "themes": [
       "complexes-sportifs"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "École de kitesurf au Morne dirigée par le moniteur Terry Lamarque, avec instructeurs certifiés IKO, proposant aussi la location de wakeboards et de paddles (SUP)."
   },
   {
     "id": "heritage-fitness-gym",
@@ -29333,7 +29382,8 @@
     "themes": [
       "complexes-sportifs"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Salle de sport en plein air à Albion, près de la plage, animée par le coach personnel Olivier Malherbe qui propose entraînements en groupe, suivi individuel et plans nutritionnels personnalisés."
   },
   {
     "id": "morfoisse-wellness",
@@ -29349,7 +29399,8 @@
       "complexes-sportifs",
       "gym-fitness"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Centre de bien-être fondé par Nathalie et Nicolas Morfoisse, coachs expérimentés en fitness et naturopathie, proposant des programmes personnalisés combinant activité physique et nutrition, y compris pour les entreprises."
   },
   {
     "id": "oxygen-mauritius",
@@ -29365,7 +29416,8 @@
       "complexes-sportifs",
       "gym-fitness"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Salle de sport et club de raquettes installé dans le domaine d'Azuri, avec une trentaine d'appareils de musculation et près de trente heures de cours collectifs par semaine (yoga, pilates, spinning, aquagym), encadrés par plusieurs coachs."
   },
   {
     "id": "prit-fitness-co-ltd",
@@ -29453,7 +29505,8 @@
       "complexes-sportifs",
       "gym-fitness"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Studio du réseau RMCLUB situé dans l'Azuri Golf Resort & Spa, réunissant courts de padel, tennis et pickleball, salle de fitness équipée Technogym, piscine et cours collectifs avec coachs."
   },
   {
     "id": "les-domes-d-albion",
@@ -29468,7 +29521,8 @@
     "themes": [
       "complexes-sportifs"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Centre de bien-être de la résidence Les Dômes d'Albion, formé de trois dômes reliés proposant des activités fitness, une piscine pour l'aquagym et un espace détente avec hammam et sauna."
   },
   {
     "id": "popular-fitness-gym",
@@ -29695,7 +29749,8 @@
       "tennis-padel"
     ],
     "zone": "centre",
-    "sportsListed": "Tennis : 2 courts (dur). Services : coaching. Réservation possible."
+    "sportsListed": "Tennis : 2 courts (dur). Services : coaching. Réservation possible.",
+    "description": "Club de tennis à Rose Hill proposant cours collectifs et individuels, séances de tennis-cardio, tournois et programmes adaptés aux enfants dès 3 ans."
   },
   {
     "id": "rose-hill-club",
@@ -29709,7 +29764,8 @@
     "themes": [
       "complexes-sportifs"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Club de tennis historique de Rose Hill, connu pour ses courts en terre battue et ses entraîneurs expérimentés."
   },
   {
     "id": "rose-hill-sports-complex",
@@ -29724,7 +29780,8 @@
     "themes": [
       "complexes-sportifs"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Complexe multisports géré par le Mauritius Sports Council, doté d'installations pour le volleyball, le handball, le basketball, le tennis et le football."
   },
   {
     "id": "bel-mont-football-ground",
@@ -29765,7 +29822,8 @@
     "themes": [
       "complexes-sportifs"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Complexe sportif national regroupant une salle principale aux normes olympiques (basketball, volleyball, judo, karaté), un centre aquatique avec piscine et un stade doté de terrains de football et de pistes d'athlétisme."
   },
   {
     "id": "espace-sante-fitness-and-medical-center",
@@ -29849,7 +29907,8 @@
     "themes": [
       "complexes-sportifs"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Club de jiu-jitsu brésilien et arts martiaux mixtes basé à Bel Air, affilié à la fédération mauricienne de jiu-jitsu brésilien."
   },
   {
     "id": "sports-centre",
@@ -29945,7 +30004,8 @@
     "themes": [
       "complexes-sportifs"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Salle de fitness à Centre de Flacq proposant entraînement encadré, massages sportifs et vente de compléments alimentaires pour sportifs."
   },
   {
     "id": "ken-gym",
@@ -29973,7 +30033,9 @@
     "themes": [
       "complexes-sportifs"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Centre de loisirs sportifs situé aux Pailles, avec piscine, jacuzzi, sauna, bassin pour enfants et terrain de football en gazon synthétique.",
+    "hours": "Tous les jours 6h45-22h"
   },
   {
     "id": "army-gym",
@@ -30015,7 +30077,8 @@
     "themes": [
       "complexes-sportifs"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Salle de boxe du quartier de Tranquebar à Port-Louis, fréquentée par de nombreux jeunes du quartier qui s'y entraînent."
   },
   {
     "id": "king-tas-fitness-club",
@@ -30044,7 +30107,8 @@
     "themes": [
       "complexes-sportifs"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Salle de musculation à l'ancienne sur la Route Royale à Port Louis, animée par le coach Kadafi qui y propose des cours collectifs de renforcement musculaire."
   },
   {
     "id": "timoo-outdoor-gymnasium",
@@ -30115,7 +30179,8 @@
     "themes": [
       "complexes-sportifs"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Club de jiu-jitsu brésilien basé à Argy (Centre de Flacq), affilié à la Fédération mauricienne de BJJ, qui réunit une trentaine de pratiquants et organise chaque année un tournoi régional open."
   },
   {
     "id": "muga-bel-air",
@@ -30173,7 +30238,8 @@
       "tennis-padel"
     ],
     "zone": "centre",
-    "sportsListed": "Tennis : 2 courts (dur). Services : académie. Réservation possible."
+    "sportsListed": "Tennis : 2 courts (dur). Services : académie. Réservation possible.",
+    "description": "École de tennis fondée en 2009 à Quatre Bornes, proposant des leçons individuelles et collectives pour enfants dès 5 ans et pour adultes."
   },
   {
     "id": "popy-tennis-club-of-quatre-bornes",
@@ -30188,7 +30254,9 @@
       "tennis-padel"
     ],
     "zone": "centre",
-    "sportsListed": "Tennis : 3 courts (dur). Infrastructures : école de tennis. Réservation possible."
+    "sportsListed": "Tennis : 3 courts (dur). Infrastructures : école de tennis. Réservation possible.",
+    "description": "Club de tennis de quartier situé avenue Berthaud à Quatre-Bornes.",
+    "hours": "Lun-Dim 8h30-20h30"
   },
   {
     "id": "plaine-verte-sports-arena",
@@ -30202,7 +30270,8 @@
     "themes": [
       "complexes-sportifs"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Complexe sportif de trois étages inauguré en septembre 2024 en plein cœur de Port Louis, avec terrain de futsal, salle de sport et auditorium équipé d'écrans géants pour la diffusion de matchs."
   },
   {
     "id": "mare-tabac-football-ground",
@@ -30229,7 +30298,8 @@
     "themes": [
       "complexes-sportifs"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Siège de l'organisme public chargé de soutenir les fédérations sportives mauriciennes et de gérer les infrastructures sportives nationales, situé Royal Road à Belle Rose."
   },
   {
     "id": "piscine-de-mare-d-albert",
@@ -30243,7 +30313,8 @@
     "themes": [
       "complexes-sportifs"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Piscine publique à six couloirs gérée par la Mauritius Sports Council, inaugurée en mai 2011, proposant cours de natation et baignade pour les habitants de la région."
   },
   {
     "id": "maryse-justin-stadium",
@@ -30256,7 +30327,8 @@
     "themes": [
       "complexes-sportifs"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Stade doté d'une piste d'athlétisme à six couloirs et d'environ 3000 places, situé au Réduit à Moka, domicile du club Olympique de Moka; il porte le nom de la marathonienne mauricienne Maryse Justin-Pyndiah."
   },
   {
     "id": "glen-park-multisports-complex",
@@ -30271,7 +30343,8 @@
     "themes": [
       "complexes-sportifs"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Complexe multisports géré par la Mauritius Sports Council à Glen Park (Vacoas), inauguré en 2003, avec une salle couverte accueillant badminton, tennis de table, taekwondo, karaté, basketball, handball et pétanque."
   },
   {
     "id": "bel-etang-football-pitch",
@@ -30298,7 +30371,8 @@
     "themes": [
       "complexes-sportifs"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Stade à pelouse synthétique inauguré en 2009 et rénové en 2013, d'une capacité d'environ 2500 places, domicile du club de football AS Port-Louis 2000."
   },
   {
     "id": "racing-club-de-maurice",
@@ -30313,7 +30387,8 @@
     "themes": [
       "complexes-sportifs"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Club sportif et social fondé en 1952 à Quatre Bornes, disposant d'un terrain de football et d'espaces de loisirs en plein air."
   },
   {
     "id": "le-cerf-d-or",
@@ -30341,7 +30416,8 @@
     "themes": [
       "complexes-sportifs"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Grand stade multisports de Belle Vue Harel (Mapou), inauguré en 1991 et rénové en 2003, d'une capacité d'environ 16000 places, terrain d'entraînement de l'équipe nationale de football et de plusieurs clubs de la région."
   },
   {
     "id": "cote-d-or-swimming-pool",
@@ -30356,7 +30432,8 @@
     "themes": [
       "complexes-sportifs"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Piscine olympique de 50 mètres homologuée FINA au sein du Côte d'Or National Sports Complex à Saint-Pierre, ouverte en 2019 à l'occasion des Jeux des îles de l'océan Indien."
   },
   {
     "id": "w-life-health-wellness-center",
@@ -30371,7 +30448,8 @@
       "complexes-sportifs",
       "gym-fitness"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Centre de santé et bien-être installé au sein du Riverland Sports Club à Tamarin, réunissant une équipe pluridisciplinaire (ostéopathes, kinésithérapeutes, nutritionnistes, psychologues) pour l'accompagnement physique et mental des membres."
   },
   {
     "id": "pamplemousses-garden",
