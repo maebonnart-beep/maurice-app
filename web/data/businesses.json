@@ -1773,7 +1773,8 @@
     ],
     "badge": "coup-de-coeur",
     "promoText": "Viande très correcte, livraison à J+1 et échanges WhatsApp faciles.",
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Boucherie familiale haut de gamme de Grand Baie (Lifestyle Boulevard), viandes fraîches locales et importées (bœuf, poulet, porc), biltong sud-africain, snacks et plats faits maison. Vente en boutique, appli et livraison à domicile."
   },
   {
     "id": "le-fournil-grand-baie",
@@ -13415,7 +13416,8 @@
     "themes": [
       "boucheries"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Boucherie de quartier de Grand Baie (Sottise Road), sélection de viandes et service personnalisé."
   },
   {
     "id": "famous-butchers",
@@ -13430,7 +13432,8 @@
     "themes": [
       "boucheries"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Boucherie réputée de Grand Baie (Chemin Vingt Pieds), bœuf, veau, agneau, porc et volaille de qualité, appréciée des locaux et touristes."
   },
   {
     "id": "the-butcher-block-mauritius",
@@ -13445,7 +13448,8 @@
     "themes": [
       "boucheries"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Boucherie de Grand Baie (Pointe aux Canonniers) sourçant bœuf grain-fed classe A, agneau australien, porc et poulet locaux, plats d'accompagnement/salades faits maison et biltong signature. Livraison à domicile."
   },
   {
     "id": "les-halles-francaises-grand-baie",
@@ -13460,7 +13464,8 @@
     "themes": [
       "boucheries"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Halles à la française de Grand Baie réunissant boucherie, charcuterie, fromagerie, poissonnerie et maraîcher sous un même toit, produits français et locaux."
   },
   {
     "id": "la-boucherie-grand-baie",
@@ -13505,7 +13510,8 @@
     "themes": [
       "boucheries"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Chaîne mauricienne de boucherie-delicatessen (points de vente notamment à Super U Grand Baie, Haute Rive, Calodyne) : viande et volaille, biltong, chilli bites, saucisses, boulettes, burgers, brochettes marinées et plats faits maison."
   },
   {
     "id": "la-bovida",
@@ -17250,7 +17256,8 @@
     "themes": [
       "boucheries"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Boucherie style français de Rivière Noire, bien notée pour la propreté et la qualité de la viande."
   },
   {
     "id": "phil-s-meat-co-ltd",
@@ -17265,7 +17272,8 @@
     "themes": [
       "boucheries"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Boucherie-delicatessen de Tamarin (Palm Square), large sélection de viandes fraîches soigneusement choisies, commande en ligne disponible."
   },
   {
     "id": "poisson-frais-direct-du-pecheur",
@@ -20755,7 +20763,8 @@
     "themes": [
       "boucheries"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Charcutier-transformateur de Roche Bois (Port Louis), plus de 40 produits (jambons, saucisses), certifié HACCP, avec livraison à domicile sur toute l'île."
   },
   {
     "id": "khaleel-butcher-shop",
@@ -20770,7 +20779,8 @@
     "themes": [
       "boucheries"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Boucherie familiale de Triolet avec sa propre ferme d'élevage (Khaleel Cattle Farm), bœuf, agneau et mouton 100% frais (jamais surgelé), livraison disponible."
   },
   {
     "id": "fish-n-seafood",
@@ -25589,7 +25599,8 @@
     "themes": [
       "boucheries"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Boucherie de quartier de Beau Bassin-Rose Hill, gamme de viandes de qualité."
   },
   {
     "id": "zoe-farm-baie-du-tombeau",
@@ -25604,7 +25615,8 @@
     "themes": [
       "boucheries"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Boucherie-charcuterie de Baie du Tombeau, fabrication de saucisses, hamburgers, boulettes, bacon et jambons ; second point de vente à Beau Bassin-Rose Hill."
   },
   {
     "id": "chebel-meat-shop-fresh-halal-beef",
@@ -25619,7 +25631,8 @@
     "themes": [
       "boucheries"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Boucherie halal certifiée de Beau Bassin-Rose Hill, spécialisée bœuf frais, propose aussi de la graisse de bœuf (tallow) en pot."
   },
   {
     "id": "frid-mer",
@@ -31136,7 +31149,8 @@
     "themes": [
       "boucheries"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Entreprise familiale de Flic en Flac spécialisée dans le biltong et le boerewors façon sud-africaine (viande séchée), avec quelques déclinaisons gourmandes."
   },
   {
     "id": "taste-of-motherland-motherland-kitchen",
