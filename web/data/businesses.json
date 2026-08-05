@@ -1376,7 +1376,7 @@
     "lat": -20.0124367,
     "lng": 57.5843843,
     "themes": [
-      "bars"
+      "snacks-plage"
     ],
     "zone": "nord"
   },
@@ -1503,21 +1503,6 @@
     "description": "Boîte de nuit incontournable de Grand Baie, grande piste de danse, système son et jeux de lumière modernes, DJ résidents et invités (house, hip-hop). Ouvert du mercredi au samedi, 23h-5h."
   },
   {
-    "id": "bar",
-    "name": "Bar",
-    "category": "food",
-    "address": "XHPM+WP7, Grand Baie",
-    "phone": "+230 263 7041",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=15449283965678022259",
-    "lat": -20.0127008,
-    "lng": 57.5842897,
-    "themes": [
-      "bars"
-    ],
-    "zone": "nord"
-  },
-  {
     "id": "deja-vu-nightclub",
     "name": "DEJA VU Nightclub",
     "category": "food",
@@ -1570,21 +1555,6 @@
     ],
     "zone": "nord",
     "description": "Restaurant de School Road (Boucan) à Grand Baie mêlant cuisine européenne et mauricienne à base de produits frais, avec piscine chauffée et ambiance musicale."
-  },
-  {
-    "id": "ice-club",
-    "name": "ICE CLUB",
-    "category": "food",
-    "address": "XHJP+WHJ, Chem. Vingt Pieds, Grand Baie",
-    "phone": "+230 5477 2168",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=981893433414283425",
-    "lat": -20.017663,
-    "lng": 57.586387,
-    "themes": [
-      "bars"
-    ],
-    "zone": "nord"
   },
   {
     "id": "le-cabanon-bar-a-coquillettes-grand-baie",
@@ -12980,21 +12950,6 @@
     "description": "Discothèque phare du nord de l'île à Grand Baie, deux pistes de danse (intérieure trance/house, extérieure années 80), son de qualité et lounge cocktails. Ouvert vendredi-samedi, 23h-6h."
   },
   {
-    "id": "the-shacks-grand-bay-mauritius",
-    "name": "The Shacks ~ Grand Bay Mauritius",
-    "category": "food",
-    "address": "Chemin Vingt pieds MU, Sottise Roundabout, Grand Baie 00000",
-    "phone": "+230 5500 1234",
-    "website": "http://www.theshacks.mu/",
-    "googleMapsUrl": "https://maps.google.com/?cid=11100221800139126170&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.019541,
-    "lng": 57.5842004,
-    "themes": [
-      "bars"
-    ],
-    "zone": "nord"
-  },
-  {
     "id": "mamou-snack",
     "name": "Mamou Snack",
     "category": "food",
@@ -22739,21 +22694,6 @@
     "zone": "ouest"
   },
   {
-    "id": "venici-resto-pub",
-    "name": "Venici Resto Pub",
-    "category": "food",
-    "address": "MGMF+R8J, Curepipe",
-    "phone": "+230 5440 2933",
-    "website": "http://www.lexpress.mu/",
-    "googleMapsUrl": "https://maps.google.com/?cid=3340614762606022247&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.3154138,
-    "lng": 57.5232544,
-    "themes": [
-      "bars"
-    ],
-    "zone": "centre"
-  },
-  {
     "id": "beach-rouge-lux-grand-gaube",
     "name": "Beach Rouge - LUX* Grand Gaube",
     "category": "food",
@@ -26785,23 +26725,6 @@
     "hours": "Mar-Dim 10h-22h, fermé lundi"
   },
   {
-    "id": "mystik-lifestyle-bar",
-    "name": "Mystik Lifestyle — Bar & Restaurant",
-    "category": "food",
-    "address": "Hôtel Mystik Lifestyle, Mont Choisy",
-    "phone": "",
-    "website": "",
-    "googleMapsUrl": "https://maps.app.goo.gl/KJ9ZNH3koVcMGRwk9",
-    "lat": -20.020962,
-    "lng": 57.5538971,
-    "themes": [
-      "bars"
-    ],
-    "badge": "selection",
-    "promoText": "Bar en terrasse au 2ᵉ étage.",
-    "zone": "nord"
-  },
-  {
     "id": "helenas-cafe",
     "name": "Helena's Café",
     "category": "food",
@@ -26907,22 +26830,6 @@
     "badge": "selection",
     "zone": "sud",
     "description": "Restaurant-bar en bord de route royale à Baie du Cap, terrasse lumineuse avec vue dégagée sur le lagon et la mer. Cuisine mauricienne revisitée mêlée à la gastronomie française, concerts le samedi soir ; noté 4,3/5."
-  },
-  {
-    "id": "bar-gold-beach-resort",
-    "name": "Bar du Gold Beach Resort",
-    "category": "food",
-    "address": "Flic en Flac",
-    "phone": "",
-    "website": "",
-    "googleMapsUrl": "https://maps.app.goo.gl/3nBkTuch2xe3jm13A",
-    "lat": -20.294491,
-    "lng": 57.363588,
-    "themes": [
-      "bars"
-    ],
-    "badge": "selection",
-    "zone": "ouest"
   },
   {
     "id": "kot-marie-michelle",
