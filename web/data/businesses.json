@@ -25578,9 +25578,10 @@
     "lat": -20.1988461,
     "lng": 57.7823379,
     "themes": [
-      "cafes-terrasses"
+      "snacks-plage"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Food-truck original du LUX* Belle Mare, installe dans une authentique limousine Rolls-Royce Hooper de 1933 amenagee en cuisine mobile, au coeur des jardins du resort. Street-food gourmet d'Asie du Sud-Est : bao au porc BBQ, satay de poulet, nems vietnamiens, brochettes yakitori de legumes - ideal apres la piscine ou la mer."
   },
   {
     "id": "sous-le-manguier-snack",
