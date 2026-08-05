@@ -1262,7 +1262,8 @@
     ],
     "hours": "Tous les jours à partir de 17h",
     "priceRange": "prix-moyen",
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Bar-restaurant convivial du Ventura Complex à Grand Baie, style fusion pensé pour le partage (plats servis en \"platter\" à plusieurs), bonne ambiance et cocktails. Très bien noté (4,8/5)."
   },
   {
     "id": "lecapitaine-restaurant",
@@ -1300,7 +1301,8 @@
       "bars"
     ],
     "priceRange": "se-faire-plaisir",
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Rooftop adultes uniquement du LUX* Grand Baie (1190 m²) surplombant le lagon et les îlots du nord, piscine à débordement de 30 m, cabanas, cocktails créatifs et sessions DJ live. Idéal coucher de soleil, tapas, ambiance lounge du jour à la nuit."
   },
   {
     "id": "sunset-cafe-restaurant-grand-baie",
@@ -1393,7 +1395,8 @@
     ],
     "priceRange": "prix-moyen",
     "badge": "selection",
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Bar familial de Chemin Vingt Pieds (Grand Baie/Pereybère) depuis 1985, récemment rénové. Cocktails signature, infusions locales, happy hour, tapas et plats plus consistants (fruits de mer, grillades) ; apprécié pour les couchers de soleil et soirées à thème."
   },
   {
     "id": "baywatch-bar",
@@ -1408,7 +1411,8 @@
     "themes": [
       "bars"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Bar à vins de Grand Baie, ambiance décontractée façon plage, cocktails tropicaux et vue dégagée, au cœur du quartier festif."
   },
   {
     "id": "the-tavern",
@@ -1425,7 +1429,8 @@
     ],
     "hours": "Fermé dim-lun-mar, Mer-Jeu 18h-00h, Ven-Sam 18h-2h",
     "priceRange": "prix-moyen",
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Pub climatisé de Grand Baie à l'ambiance décontractée, happy hour, billard, fléchettes, jeux de société et cuisine ouverte préparée à la demande. Karaoké vendredi-samedi soir, tournoi de billard le mercredi."
   },
   {
     "id": "rooftop-adults-only-restaurant-bar-lounge",
@@ -1442,7 +1447,8 @@
     ],
     "hours": "Tous les jours 7h-23h",
     "priceRange": "se-faire-plaisir",
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Rooftop signature de l'Ocean V Hotel à Grand Baie, boutique-hôtel adultes uniquement, piscine à débordement, restaurant chic et bar-lounge avec vue panoramique sur la baie turquoise de Pereybère."
   },
   {
     "id": "the-hive-resto-bar",
@@ -1459,7 +1465,8 @@
     ],
     "hours": "Lun-Sam 11h-16h30",
     "priceRange": "bon-marche",
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Bar-restaurant familial du complexe Azur Beach (Pereybère/Grand Baie), fast-food européen et BBQ (burgers, pâtes), billard, fléchettes, jardin, musique live et karaoké gratuit."
   },
   {
     "id": "shisha-flavours-lounge",
@@ -1475,7 +1482,8 @@
       "bars"
     ],
     "hours": "Tous les jours 17h-2h",
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Lounge à chicha de Grand Baie réputé pour son ambiance relaxante et sa large carte de saveurs, du tabac traditionnel aux mélanges innovants. Ouvert tous les jours de 17h à 2h."
   },
   {
     "id": "omg-nightclub",
@@ -1491,7 +1499,8 @@
       "bars"
     ],
     "hours": "Mer, Ven-Sam 23h-5h",
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Boîte de nuit incontournable de Grand Baie, grande piste de danse, système son et jeux de lumière modernes, DJ résidents et invités (house, hip-hop). Ouvert du mercredi au samedi, 23h-5h."
   },
   {
     "id": "bar",
@@ -1523,7 +1532,8 @@
     ],
     "hours": "Tous les jours 22h-5h",
     "priceRange": "prix-moyen",
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Boîte de nuit de Grand Baie entre OMG et Insomnia sur la route Royale, ambiance disco, DJ locaux et internationaux. Ouvre à 22h jusqu'au petit matin."
   },
   {
     "id": "cocochill-restaurant-bar-a-cocktails-swimming-pool",
@@ -1540,7 +1550,8 @@
     ],
     "hours": "Fermé mar, service non-stop les autres jours",
     "priceRange": "prix-moyen",
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Restaurant-bar à cocktails et piscine de Pointe aux Canonniers (Grand Baie), cuisine fusion mauricienne et française, terrasse ombragée par les cocotiers. Musique live, disponible pour événements privés ; ouvert tous les jours sauf le mardi."
   },
   {
     "id": "le-pole",
@@ -3270,7 +3281,8 @@
     "themes": [
       "bars"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Bar-lounge afterwork de Tamarin (Palm Square Building), tapas, cocktails à base de gin et produits de mer du lagon ouest. Ambiance décontractée très appréciée."
   },
   {
     "id": "the-boathouse-grill-le-morne",
@@ -3286,7 +3298,8 @@
       "bars"
     ],
     "priceRange": "se-faire-plaisir",
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Restaurant-bar de plage haut de gamme du St. Regis Mauritius Resort (La Gaulette, Le Morne), spécialisé fruits de mer (huîtres, gambas grillées) accompagnés de champagnes, les pieds dans le sable. Ambiance élégante en soirée."
   },
   {
     "id": "enso-la-gaulette",
@@ -3303,7 +3316,8 @@
     ],
     "hours": "Tous les jours 12h-22h",
     "priceRange": "prix-moyen",
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Restaurant-bar convivial de La Gaulette (Le Morne) mêlant locaux, surfeurs et touristes, cuisine française/italienne/méditerranéenne et fruits de mer, musique live le week-end. Ouvert tous les jours de midi à 22h."
   },
   {
     "id": "lalchimiste-rhumerie-chamarel",
@@ -6810,7 +6824,8 @@
     "themes": [
       "bars"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Beach club/night-club de Flic en Flac mêlant lounge de plage décontracté et ambiance clubbing (DJ, karaoké, foot en salle, billard, fléchettes), vue sur l'océan. Ouvert 8h-3h du mardi au dimanche."
   },
   {
     "id": "le-lounge-9381",
@@ -12961,7 +12976,8 @@
     "themes": [
       "bars"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Discothèque phare du nord de l'île à Grand Baie, deux pistes de danse (intérieure trance/house, extérieure années 80), son de qualité et lounge cocktails. Ouvert vendredi-samedi, 23h-6h."
   },
   {
     "id": "the-shacks-grand-bay-mauritius",
@@ -16839,9 +16855,11 @@
     "lat": -20.3305492,
     "lng": 57.3784408,
     "themes": [
-      "bars"
+      "restaurants",
+      "italien"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Pizzeria italienne du complexe Cap Dale à Tamarin, four à bois traditionnel, pizzas artisanales aux ingrédients frais. Cadre convivial et calme, bien notée (4,6/5 sur TripAdvisor)."
   },
   {
     "id": "sky",
@@ -20244,7 +20262,8 @@
     "themes": [
       "bars"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Bar-restaurant au premier étage du centre commercial Cascavelle (Bambous), expérience culinaire signature sud-africaine dans une ambiance chaleureuse et vibrante."
   },
   {
     "id": "marche-central",
@@ -22747,7 +22766,8 @@
     "themes": [
       "bars"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Beach club et restaurant du LUX* Grand Gaube, cuisine méditerranéenne (bar à mozzarella) servie sur le sable, éclairage rouge caractéristique au coucher du soleil, DJ résident pour une ambiance festive."
   },
   {
     "id": "bel-ombre-public-beach",
@@ -26659,7 +26679,8 @@
     "priceRange": "prix-moyen",
     "badge": "coup-de-coeur",
     "promoText": "Cadre et ambiance exceptionnels façon vieux gréement ; cocktails à prix très raisonnable.",
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Bar du Maritim Resort & Spa (Turtle Bay, Balaclava), boissons locales/internationales et snacks (dont thé de l'après-midi), inclus en formule all-inclusive. Bonne ambiance en soirée avec piano live selon les avis."
   },
   {
     "id": "mine-saint-pierre-mangouste",
@@ -31374,7 +31395,8 @@
     "themes": [
       "bars"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Bistrot français du centre commercial Nautica (Black River), plats de saison (terrines, viandes, poissons, salades), décor rustique-moderne, terrasse extérieure. Très bien noté (4,7/5), fermé le dimanche."
   },
   {
     "id": "moustache-bistro",
@@ -31983,7 +32005,8 @@
     "themes": [
       "bars"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Restaurant-bar de plage du Paradis Beachcomber Golf Resort & Spa (Case Noyale), cuisine créole mauricienne authentique, élu meilleur restaurant mauricien de la région du Morne Brabant en 2023. Accès en pirogue traditionnelle, tables sous kiosques de chaume sur le sable."
   },
   {
     "id": "patisserie-mahe",
