@@ -17199,10 +17199,11 @@
     "lat": -20.2840765,
     "lng": 57.3648008,
     "themes": [
-      "epiceries-specialisees"
+      "snacks-plage"
     ],
     "badge": "selection",
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Petit stand de streetfood mauricienne à Flic en Flac/Rivière Noire : gâteaux piments, samoussas, rotis, nouilles et riz frits, boissons locales."
   },
   {
     "id": "la-vie-claire",
@@ -20280,7 +20281,8 @@
     "themes": [
       "epiceries-specialisees"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Épicerie/supérette de quartier au village du Morne, produits du quotidien et essentiels locaux."
   },
   {
     "id": "sambilla-vanille-vanilla-house",
@@ -20355,7 +20357,8 @@
     "themes": [
       "epiceries-specialisees"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Étal familial de fruits et légumes frais à La Gaulette, prix raisonnables et service personnalisé (le vendeur coupe/prépare les fruits sur demande, conseils de cuisine) ; glacier artisanal juste à côté."
   },
   {
     "id": "shein-dhaka-product-foodstuff-ltd",
@@ -31470,7 +31473,8 @@
     "themes": [
       "epiceries-specialisees"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Épicerie fine haut de gamme (antenne du réseau L'Épicerie, fondé en 1999 à Floréal) à Vacoas-Phœnix, produits gourmets majoritairement français (charcuterie, fromages) avec service traiteur."
   },
   {
     "id": "el-shaddai-store",
@@ -31510,7 +31514,8 @@
     "themes": [
       "epiceries-specialisees"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Épicerie générale du Morne Brabant, produits frais, épices locales et artisanat local, accueil chaleureux, à proximité des sites naturels."
   },
   {
     "id": "top-snack",
