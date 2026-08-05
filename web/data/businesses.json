@@ -20342,7 +20342,8 @@
     "themes": [
       "epiceries-specialisees"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Cafe-boutique specialise matcha a Helvetia (Moka), ouvert par Sandrine How. Matcha de qualite prepare sur place et produits associes ; ouvert du lundi au samedi, 10h-18h."
   },
   {
     "id": "fruits-and-vegetables-markets-chez-vinod-la-gaulette-mauriti",
@@ -20507,9 +20508,11 @@
     "lat": -20.2308578,
     "lng": 57.5093843,
     "themes": [
-      "epiceries-specialisees"
+      "restaurants",
+      "europeenne"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Restaurant francais de Moka."
   },
   {
     "id": "nalla-store",
@@ -20676,7 +20679,8 @@
     "themes": [
       "epiceries-specialisees"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Possiblement lie a Island Taste Ltd, fabricant mauricien de sirops de fruits (13 varietes) et de concentres de jus 100% mauriciens base a St Pierre - le lien exact entre les deux noms n'a pas pu etre confirme avec certitude."
   },
   {
     "id": "boutique-ocean-bleu",
@@ -25614,7 +25618,8 @@
     "themes": [
       "epiceries-specialisees"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Epicerie pop-up de Trou d'Eau Douce (cote est), tenue par Moise et son epouse Claudia, egalement lies a une petite cooperative de pecheurs locale."
   },
   {
     "id": "boucherie-la-belle-creole",
@@ -31501,7 +31506,8 @@
     "themes": [
       "epiceries-specialisees"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Petite epicerie/boutique de proximite a St Pierre : produits du quotidien, cadeaux, cosmetiques, gateaux d'anniversaire et produits laitiers."
   },
   {
     "id": "cold-storage",
