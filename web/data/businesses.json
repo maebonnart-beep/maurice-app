@@ -13815,21 +13815,6 @@
     "description": "Café-pâtisserie de Péreybère/Grand Baie : gâteaux sur commande, viennoiseries, cookies, tartes, babkas, petit-déjeuner et déjeuner, service traiteur événementiel. Très bien noté (5/5)."
   },
   {
-    "id": "patisserie-le-gourmand",
-    "name": "Patisserie Le Gourmand",
-    "category": "food",
-    "address": "Royal Road, Opposite Tamil Temple Grand Bay MU, Grand Baie 30510",
-    "phone": "+230 5256 7488",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=940909800118845026&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0151758,
-    "lng": 57.5720515,
-    "themes": [
-      "boulangeries"
-    ],
-    "zone": "nord"
-  },
-  {
     "id": "maison-lux-lux-grand-baie",
     "name": "Maison LUX* - LUX* Grand Baie",
     "category": "food",
@@ -13844,21 +13829,6 @@
     ],
     "zone": "nord",
     "description": "Boulangerie-pâtisserie française au sein de l'hôtel LUX* Grand Baie, sélection de pâtisseries fines, high tea sucré-salé, café ; démarche éco-responsable."
-  },
-  {
-    "id": "patisserie-pillay",
-    "name": "Patisserie Pillay",
-    "category": "food",
-    "address": "XHQ7+HM, Grand Baie",
-    "phone": "",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=15216571865661820041&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0110491,
-    "lng": 57.5641842,
-    "themes": [
-      "boulangeries"
-    ],
-    "zone": "nord"
   },
   {
     "id": "maison-des-crepes",
@@ -20847,36 +20817,6 @@
     "description": "Boulangerie-pâtisserie de quartier à Quatre Bornes."
   },
   {
-    "id": "boulangerie-loul",
-    "name": "Boulangerie Loul",
-    "category": "food",
-    "address": "PG74+RRV, Vacoas-Phœnix",
-    "phone": "",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=15024675224073845554&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.2853795,
-    "lng": 57.5070459,
-    "themes": [
-      "boulangeries"
-    ],
-    "zone": "centre"
-  },
-  {
-    "id": "spot-veil-rouge",
-    "name": "Spot veil rouge",
-    "category": "food",
-    "address": "G855+8H, Le Morne",
-    "phone": "",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=16766493407077938167&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.4916284,
-    "lng": 57.3089854,
-    "themes": [
-      "boulangeries"
-    ],
-    "zone": "sud"
-  },
-  {
     "id": "chamarel-chc",
     "name": "Chamarel CHC",
     "category": "utiles",
@@ -22684,21 +22624,6 @@
     ],
     "zone": "centre",
     "description": "Pâtisserie de Beau Bassin-Rose Hill réputée pour ses feuilletés salés (samoussas, petits pâtés), considérés parmi les meilleurs de l'île selon les avis."
-  },
-  {
-    "id": "atelier-de-la-patisserie-et-boulangerie",
-    "name": "Atelier de la Patisserie et Boulangerie",
-    "category": "food",
-    "address": "PG74+Q9, Vacoas-Phœnix",
-    "phone": "+230 5494 0906",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=16045468193542755819&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.2855145,
-    "lng": 57.5059469,
-    "themes": [
-      "boulangeries"
-    ],
-    "zone": "centre"
   },
   {
     "id": "bel-air-mediclinic",
@@ -25636,21 +25561,6 @@
     ],
     "zone": "nord",
     "description": "Café-pâtisserie de Triolet réputé pour ses créations artisanales (Sacher Blanc, Anémone) et ses petits-déjeuners (œufs brouillés, plateaux de fruits frais), décor rotin/jardin. Réservation conseillée le soir."
-  },
-  {
-    "id": "escale-m-cafe",
-    "name": "Escale M Café",
-    "category": "food",
-    "address": "Royal Road Baramia MU, Rose Belle 51801",
-    "phone": "",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=4253812445518488309&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.4058293,
-    "lng": 57.6085348,
-    "themes": [
-      "boulangeries"
-    ],
-    "zone": "sud"
   },
   {
     "id": "la-boite-a-gateaux-ile-maurice",
@@ -31683,21 +31593,6 @@
     "zone": "ouest"
   },
   {
-    "id": "ble-d-or-boulangerie-et-patisserie",
-    "name": "Blé D'or Boulangerie et Patisserie",
-    "category": "food",
-    "address": "Near, Kashmir Ln, Plaine Magnien",
-    "phone": "+230 5827 0572",
-    "website": "https://instagram.com/bledor_patisserie?igshid=YmMyMTA2M2Y=",
-    "googleMapsUrl": "https://maps.google.com/?cid=7592483793273210073&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.431963,
-    "lng": 57.6622672,
-    "themes": [
-      "boulangeries"
-    ],
-    "zone": "sud"
-  },
-  {
     "id": "ai-broker-conlsutant-ltd",
     "name": "AI Broker & Conlsutant Ltd",
     "category": "utiles",
@@ -32003,20 +31898,6 @@
     ],
     "zone": "est",
     "description": "Agence de location de villas de standing et service de conciergerie, avec des biens principalement en bord de mer sur la côte est ; propose transferts aéroport, location de voiture et services de personnel de maison (chef, majordome, femme de ménage)."
-  },
-  {
-    "id": "patisserie-merveille",
-    "name": "Patisserie Merveille",
-    "category": "food",
-    "address": "A6, Rivière du Rempart",
-    "phone": "+230 412 4372",
-    "googleMapsUrl": "https://maps.google.com/?cid=1282079694174840713&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.106263,
-    "lng": 57.6967862,
-    "themes": [
-      "boulangeries"
-    ],
-    "zone": "est"
   },
   {
     "id": "la-friandise",
@@ -32580,32 +32461,6 @@
     "themes": [
       "expatriation-visas"
     ]
-  },
-  {
-    "id": "la-parisienne-port-louis",
-    "name": "La Parisienne",
-    "category": "food",
-    "address": "Port Louis",
-    "phone": "",
-    "website": "",
-    "themes": [
-      "boulangeries",
-      "produits-francais"
-    ],
-    "zone": "centre"
-  },
-  {
-    "id": "la-parisienne-grand-baie",
-    "name": "La Parisienne",
-    "category": "food",
-    "address": "Grand Baie",
-    "phone": "",
-    "website": "",
-    "themes": [
-      "boulangeries",
-      "produits-francais"
-    ],
-    "zone": "nord"
   },
   {
     "id": "boucle-courte-7-cascades",
