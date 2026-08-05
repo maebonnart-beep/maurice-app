@@ -12,7 +12,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Croisières en catamaran au départ de plusieurs régions de l'île (Grand Baie, Grand Gaube, Mahébourg, Rivière Noire), avec BBQ, snorkeling et découverte d'îlots comme Coin de Mire ou l'Île aux Bénitiers."
   },
   {
     "id": "zile-cruise",
@@ -28,7 +29,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Croisières privées en catamaran (le Sunset Copper, 43 pieds, 4 cabines) au départ de Grand Baie, avec itinéraires sur mesure vers les îles du Nord et choix de menus à bord."
   },
   {
     "id": "topcat-cruises",
@@ -45,7 +47,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Croisière en catamaran au départ de Grand Baie vers Flat Island, l'Île Gabriel et Coin de Mire, avec petit-déjeuner, déjeuner barbecue et boissons à volonté."
   },
   {
     "id": "passion-oceane-wind-dancer",
@@ -60,7 +63,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Croisières à voile en catamaran (le Wind Dancer) au départ de Grand Baie vers les îles du Nord, avec arrêts snorkeling et croisière au coucher du soleil."
   },
   {
     "id": "predator-cruiser",
@@ -76,7 +80,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Location de bateau privé rapide au départ de Grand Baie, pour excursions vers les îles du Nord, Tamarin/Rivière Noire ou le Morne, repas et boissons inclus."
   },
   {
     "id": "groove-boat",
@@ -92,7 +97,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Grand catamaran de luxe conçu par une équipe mauricienne, proposant croisières vers les îles du Nord, sorties coucher de soleil et soirées musicales au départ de Grand Baie."
   },
   {
     "id": "perle-docean-catamaran",
@@ -108,7 +114,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Excursion en catamaran au départ de la plage de Grand Baie vers l'Île Plate et l'Île Gabriel, avec petit-déjeuner, déjeuner barbecue et boissons inclus (capacité limitée à 25 personnes)."
   },
   {
     "id": "captain-tamtam-glass-bottom-boat",
@@ -123,7 +130,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Sorties en bateau à fond de verre au départ de Grand Baie pour observer les récifs coralliens et la vie marine de la baie, avec possibilité de snorkeling."
   },
   {
     "id": "dauphine-tours-mauritius",
@@ -138,7 +146,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Agence organisant excursions en catamaran vers Crystal Rock, Gabriel et Flat Island, sorties dauphins, pêche au gros ainsi que visites de l'île (Casela, Île aux Cerfs), transferts et location de voitures."
   },
   {
     "id": "mauritius-dream-excursion-tours",
@@ -153,7 +162,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Agence d'excursions basée à Grand Baie proposant sorties en bateau à fond de verre, pêche au gros, visite de l'Île aux Deux Cocos et circuits sur mesure de l'île."
   },
   {
     "id": "northview-tours",
@@ -168,7 +178,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Agence proposant des sorties dauphins avec snorkeling près de l'Île aux Bénitiers, des croisières en catamaran vers les îles du Nord et des activités nautiques comme le seabob ou la marche sous-marine."
   },
   {
     "id": "ebrahim-tours",
@@ -184,7 +195,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Agence de voyage basée à Grand Baie organisant des excursions à la journée (nord, sud-ouest, sud-est), sorties dauphins, plongée/snorkeling et activités d'aventure, avec location de voiture et transferts aéroport."
   },
   {
     "id": "monalysa-holidays-tour-operator",
@@ -200,7 +212,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Agence de voyage à Grand Baie proposant hébergements, location de voiture ou scooter, excursions en mer (Île aux Cerfs, Flat Island, nage avec les dauphins) et visites guidées de l'île."
   },
   {
     "id": "grand-baie-travel-tours",
@@ -756,7 +769,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Plateforme numérique et guide de voyage pour l'île Maurice recensant environ 235 lieux et activités, avec conditions météo/marine en temps réel et réductions sur excursions, restaurants et spas."
   },
   {
     "id": "cote-dazur-travel-tours",
@@ -771,7 +785,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Agence de voyage à Péreybère proposant un large choix d'excursions (catamaran, speedboat, dauphins, snorkeling), circuits guidés de l'île, activités d'aventure et location de voiture."
   },
   {
     "id": "taxi-mauritius-tours",
@@ -786,7 +801,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Service de taxi et minibus basé à Grand Baie pour les transferts aéroport, ainsi que circuits touristiques (Port-Louis, jardins botaniques, Terres des 7 Couleurs) et sorties dauphins avec snorkeling."
   },
   {
     "id": "la-kaza",
@@ -4976,7 +4992,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Croisières en speedboat au départ de la région de Tamarin/La Preneuse pour nager avec les dauphins, avec halte snorkeling à Crystal Rock et déjeuner barbecue sur l'Île aux Bénitiers."
   },
   {
     "id": "mauritius-ile-aux-cerfs-catamaran-tdd",
@@ -4992,7 +5009,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Excursion en speedboat puis catamaran au départ de Trou d'Eau Douce, avec passage devant la cascade de la Grande Rivière Sud-Est, arrêts snorkeling et déjeuner barbecue jusqu'à l'Île aux Cerfs."
   },
   {
     "id": "croisieres-turquoise-mahebourg",
@@ -5007,7 +5025,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Croisières en catamaran depuis Pointe Jérôme, près de Mahébourg, vers l'Île aux Cerfs, avec snorkeling, passage par la cascade de la Grande Rivière Sud-Est et repas grillades à bord ; l'entreprise opère depuis 1987."
   },
   {
     "id": "plage-le-morne",
@@ -8313,7 +8332,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Point d'embarquement à la jetée de Pointe Maurice pour les navettes en bateau vers l'Île aux Cerfs, son golf et l'îlot Mangénie, avec départs réguliers toutes les 20 minutes."
   },
   {
     "id": "ile-aux-cerfs-leisure-island",
@@ -8328,7 +8348,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Accès en navette maritime depuis la jetée de Pointe Maurice vers l'Île aux Cerfs, île de loisirs avec plages, lagon et parcours de golf 18 trous dessiné par Bernhard Langer."
   },
   {
     "id": "le-swing",
@@ -10931,7 +10952,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Sorties en bateau à voile (péniche de 32 pieds) basé à Grand Baie, pour des excursions personnalisées, snorkeling et croisières au coucher du soleil dans le nord de l'île."
   },
   {
     "id": "tibo-mona-excursions",
@@ -10946,7 +10968,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Excursions en bateau depuis Grand Baie vers des îlots proches, avec snorkeling et croisières au coucher du soleil."
   },
   {
     "id": "keiffel-tours",
@@ -10961,7 +10984,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Agence d'excursions basée à Grand Baie proposant des circuits touristiques et sorties organisées à travers l'île Maurice."
   },
   {
     "id": "one-drop-excursions-mauritius",
@@ -10976,7 +11000,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Excursions privées en bateau au départ du nord de l'île vers les îles du Nord (Gabriel, Île Plate, Coin de Mire), avec snorkeling, observation de dauphins et baleines, barbecue et croisières au coucher du soleil."
   },
   {
     "id": "blue-vibes",
@@ -10991,7 +11016,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Excursions familiales en bateau au départ de Cap Malheureux vers les îles du Nord, avec repas faits maison et sorties en bateau traditionnel mauricien vers des îlots peu fréquentés."
   },
   {
     "id": "sunrise-paradise-excursions-mauritius",
@@ -11006,7 +11032,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Excursions en speedboat depuis la plage publique de Trou aux Biches, agréées par la Tourism Authority, incluant baignade avec dauphins, observation de baleines, tours des îles du Nord et croisières au coucher du soleil."
   },
   {
     "id": "blue-yonko-ltd",
@@ -11021,7 +11048,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Excursions en speedboat depuis Grand Baie vers Coin de Mire (Gunner's Quoin), avec pause snorkeling, barbecue et cocktails préparés par l'équipage sur un îlot du Nord."
   },
   {
     "id": "sexyboy-watersports",
@@ -11036,7 +11064,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Sorties en bateau depuis la plage de Bain Bœuf pour rejoindre Coin de Mire, avec snorkeling, repas et boissons offerts par l'équipage."
   },
   {
     "id": "whitsundays-excursion-maurice-speedboat",
@@ -11051,7 +11080,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Excursions en speedboat au départ de Bain Bœuf vers Coin de Mire, Île Plate et l'Îlot Gabriel, avec snorkeling, déjeuner, collations mauriciennes et sorties coucher de soleil."
   },
   {
     "id": "sea-serenity-mauritius",
@@ -11066,7 +11096,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Excursions privées en speedboat depuis Bain Bœuf, Cap Malheureux, vers Îlot Gabriel, Île Plate et Coin de Mire, avec formules snorkeling, repas et croisières au lever ou coucher du soleil."
   },
   {
     "id": "purefive-tours-mauritius",
@@ -11111,7 +11142,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Croisière en catamaran au départ de Trou-aux-Biches, aujourd'hui intégrée à l'offre de Blue Safari, vers le nord du lagon avec baignade et déjeuner à bord."
   },
   {
     "id": "king-cruise-catamaran-grand-baie",
@@ -11126,7 +11158,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Excursion quotidienne en catamaran au départ de Grand Baie vers Ile Plate, Ilot Gabriel et Coin de Mire, avec déjeuner barbecue et animation à bord."
   },
   {
     "id": "nauti-buoy-mauritius",
@@ -11141,7 +11174,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Sorties en petit groupe (14 personnes maximum) en hors-bord au départ de l'église de Cap Malheureux vers Ile Plate, Coin de Mire et Ilot Gabriel, avec snorkeling et barbecue."
   },
   {
     "id": "l-indien-private-speedboat-trips",
@@ -11171,7 +11205,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Tour-opérateur mauricien basé à Grand Baie (marque Autentica Avventura), fondé par une résidente italienne installée depuis 2010, proposant séjours et excursions sur mesure axés sur des expériences authentiques."
   },
   {
     "id": "reyaz-tour-guide-ltd",
@@ -11186,7 +11221,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Guide touristique et chauffeur privé basé à Grand Baie, proposant des visites personnalisées de l'île sur demande."
   },
   {
     "id": "respect-water-sports",
@@ -11216,7 +11252,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Sorties en catamaran au départ de Grand Baie, à une quinzaine de kilomètres jusqu'à l'Ilot Gabriel, entre journées complètes vers le nord et croisières au coucher du soleil."
   },
   {
     "id": "vava-voom-cruise",
@@ -11231,7 +11268,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Compagnie de croisières en catamaran active depuis 2003 à Pointe aux Piments, avec journées vers Ilot Gabriel et Coin de Mire (barbecue) et sorties en hors-bord vers l'Ile aux Bénitiers avec baignade parmi les dauphins."
   },
   {
     "id": "ocean-whisper-mauritius",
@@ -11246,7 +11284,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Sorties en hors-bord (14 passagers maximum) au départ de Cap Malheureux, entreprise familiale créée en 2019, avec snorkeling avec les tortues, déjeuner sur un îlot et croisières dauphins/baleines."
   },
   {
     "id": "mauritius-island-tours-rentals",
@@ -11261,7 +11300,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Agence basée à Triolet proposant transferts aéroport, location de véhicules et excursions en mer vers les îles du nord, avec snorkeling et observation des dauphins."
   },
   {
     "id": "lune-d-or-souben-cunee",
@@ -11276,7 +11316,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Bateau privé au départ de Grand Baie, piloté par Souben Cunée, pour des excursions vers Ile Plate avec repas à bord."
   },
   {
     "id": "isa-mauritius-kalodyne-mauritius",
@@ -11291,7 +11332,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Agence de voyage basée à Kalodyne (Grand Gaube), tenue par Isabelle, organisant excursions, transferts aéroport, location de voitures et vols en hydravion."
   },
   {
     "id": "flora-and-marina-tours",
@@ -11306,7 +11348,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Agence de tours basée à Pointe aux Piments, tenue par son propriétaire Mico, proposant location de vélos/scooters ainsi que des excursions comme la baignade avec les dauphins ou la pêche au gros."
   },
   {
     "id": "sejour-maurice",
@@ -11321,7 +11364,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Agence installée à Tamarin qui organise excursions (catamaran, kayak, sous-marin, randonnée), location de voitures et conciergerie pour des séjours sur mesure à Maurice."
   },
   {
     "id": "your-island-voyage-mauritius",
@@ -11336,7 +11380,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Excursions en hors-bord au départ de Cap Malheureux vers les trois îles du nord (Ilot Gabriel, Ile Plate, Coin de Mire), avec snorkeling et déjeuner barbecue sur la plage."
   },
   {
     "id": "catamaran-gabriel-island-cruise-mauritius",
@@ -11351,7 +11396,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Croisière en catamaran au départ de Grand Baie vers l'îlot Gabriel, avec arrêts snorkeling, déjeuner barbecue et boissons incluses sur une journée complète."
   },
   {
     "id": "jardin-endemique-et-animalier-de-cap",
@@ -11488,7 +11534,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Agence basée au Morne spécialisée dans la randonnée et les balades nature, notamment l'ascension guidée du Morne Brabant, site classé UNESCO ; opérateur reconnu par l'Office du tourisme mauricien pour l'écotourisme."
   },
   {
     "id": "cascade-leon",
@@ -11736,7 +11783,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Plateforme de réservation d'activités touristiques basée à Pointe aux Canonniers, proposant croisières en catamaran, excursions dauphins et autres visites autour de l'île."
   },
   {
     "id": "skydive-mauritius",
@@ -12015,7 +12063,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Circuits guidés à travers l'île (forêts, cascades, sites culturels comme la Terre des Sept Couleurs de Chamarel ou le marché de Port-Louis), avec transport et guides locaux."
   },
   {
     "id": "island-ease-holidays-mauritius",
@@ -12030,7 +12079,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Agence de Trou-aux-Biches organisant des circuits sur mesure avec chauffeur-guide, dont un tour du Sud-Ouest (Trou aux Cerfs, Gorges de la Rivière Noire, Chamarel) et un circuit vers le Nord (Port-Louis, jardin botanique, Grand Baie, Cap Malheureux)."
   },
   {
     "id": "top-travel-tours",
@@ -12060,7 +12110,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Opérateur de Trou-aux-Biches proposant des excursions à la journée avec baignade avec les dauphins, passage par l'îlot Bénitier et barbecue sur l'île."
   },
   {
     "id": "ratana-travel-agent",
@@ -15213,7 +15264,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Charter basé à Flic en Flac pour l'observation des dauphins et la pêche, avec sorties adaptées sur demande et possibilité d'apercevoir des baleines selon la saison."
   },
   {
     "id": "adrien-s-dream-boat-charters",
@@ -15228,7 +15280,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Charter au départ de la station de pêcheurs de Flic en Flac pour l'observation des dauphins et baleines, avec halte snorkeling sur un récif et déjeuner barbecue sur un îlot privé."
   },
   {
     "id": "whale-dream-whales-watching-and-swim-with-dolphins-excursion",
@@ -15243,7 +15296,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Excursions au départ du yacht club de Rivière Noire pour l'observation des baleines et la baignade avec les dauphins, dans une approche respectueuse qui exclut la nage avec les baleines."
   },
   {
     "id": "ocean-brothers-mauritius",
@@ -15258,7 +15312,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Sorties en bateau depuis la Rivière Noire pour observer dauphins et baleines, sur une embarcation pouvant accueillir jusqu'à une vingtaine de passagers, avec une approche axée sur le respect de la faune marine."
   },
   {
     "id": "dolswim-ltd",
@@ -15273,7 +15328,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Excursions d'une demi-journée ou journée complète depuis Grande Rivière Noire pour l'observation des baleines et dauphins, avec arrêts snorkeling sur les récifs coralliens."
   },
   {
     "id": "oceane-cruises-black-river-mauritius",
@@ -15288,7 +15344,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Pionnier de la croisière en catamaran à l'île Maurice avec plus de 35 ans d'expérience ; sorties côte ouest au départ de la Rivière Noire vers la baie de Tamarin, l'îlot Bénitier et Crystal Rock, ainsi que des croisières coucher de soleil."
   },
   {
     "id": "clubbing-tours",
@@ -15303,7 +15360,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Agence de Flic en Flac organisant des sorties en bateau et catamaran vers l'Île aux Cerfs, l'îlot Gabriel et les Cinq Îles, ainsi que d'autres services touristiques et transferts."
   },
   {
     "id": "big-game-deep-sea-fishing-mauritius-dolphin-whale-watching",
@@ -15318,7 +15376,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Sorties de pêche au gros au large de Tamarin (marlin, thon, mahi-mahi) ainsi que sorties d'observation des baleines et de nage avec les dauphins, avec skipper expérimenté."
   },
   {
     "id": "catamaran-cruises-ltd",
@@ -15333,7 +15392,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Croisières en catamaran au départ de l'embarcadère de l'Estuaire à Rivière Noire vers la baie de Tamarin et ses dauphins, l'îlot Bénitier et Crystal Rock, avec arrêt snorkeling."
   },
   {
     "id": "cedric-s-tamarin-dolphin-whale-adventures",
@@ -15348,7 +15408,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Petite structure basée à Tamarin proposant des sorties en bateau pour observer dauphins et cachalots dans leur milieu naturel, avec des guides locaux réputés pour leur sérieux."
   },
   {
     "id": "vitamin-sea-your-ocean-guide-photographer-in-mauritius",
@@ -15363,7 +15424,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Opérateur mauricien basé à Rivière Noire proposant des sorties privées en speedboat ou catamaran (nage avec les dauphins, observation des baleines, snorkeling, tours des îlots), avec possibilité de reportage photo et vidéo sous-marin."
   },
   {
     "id": "dolphin-warrior-dolphin-and-whale-excursion",
@@ -15378,7 +15440,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Opérateur basé au Morne proposant des excursions en bateau centrées sur l'observation des dauphins et des baleines."
   },
   {
     "id": "dolphin-encounter-mauritius",
@@ -15408,7 +15471,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Agence de voyages basée à Flic en Flac, active depuis 2014, organisant excursions, transferts aéroport, réservations d'hôtels et sorties nautiques (nage avec les dauphins, observation des baleines, croisières en catamaran, survol en hélicoptère)."
   },
   {
     "id": "karlos-excursions-boat-tours-departure-2-mauritius",
@@ -15423,7 +15487,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Entreprise familiale du Morne active depuis 1988, organisant des sorties en bateau vers l'Île aux Bénitiers avec observation des dauphins, snorkeling et BBQ animé de musique locale."
   },
   {
     "id": "7-waterfalls",
@@ -15438,7 +15503,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Excursion de randonnée guidée d'environ 7 heures vers les Sept Cascades (Tamarind Falls), proposée par l'agence Mauritius Discoveries."
   },
   {
     "id": "lmc-tours",
@@ -15453,7 +15519,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Opérateur basé à Flic en Flac proposant transferts, location de voitures et sorties en mer (catamaran, speedboat), dont une excursion avec observation des dauphins, arrêt à Crystal Rock, snorkeling et déjeuner BBQ au Morne."
   },
   {
     "id": "blackriver-charters",
@@ -15468,7 +15535,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Charter familial de Rivière Noire actif depuis 1992, spécialisé dans la pêche au gros (thon, dorade, marlin bleu, double vainqueur du Marlin World Cup), les croisières en catamaran au coucher du soleil et les sorties en speedboat vers Crystal Rock et l'Île aux Bénitiers, avec rencontres de dauphins."
   },
   {
     "id": "oceane-cruises-mauritius",
@@ -15502,7 +15570,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Centre de plongée basé à l'hôtel La Pirogue à Flic en Flac, proposant cours PADI et SSI ainsi que plongées encadrées sur la côte ouest, avec un photographe sous-marin dont les clichés ont été repris par CNN et National Geographic."
   },
   {
     "id": "taxi-a-maurice",
@@ -15517,7 +15586,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Service de taxi et d'excursions guidées à travers l'île (Port-Louis, jardins de Pamplemousses, Trou aux Cerfs, Grand Bassin), proposant aussi des sorties en catamaran vers l'Île aux Cerfs et la nage avec les dauphins à l'Île aux Bénitiers."
   },
   {
     "id": "lions-interaction",
@@ -18311,7 +18381,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Sortie en bateau privée au départ du Morne, dès le lever du soleil, pour observer et nager avec des dauphins souffleurs et à long bec, suivie de snorkeling près de Crystal Rock et d'un barbecue de fruits de mer sur l'Île aux Bénitiers."
   },
   {
     "id": "karlos-excursions-boat-departure-point-1",
@@ -18326,7 +18397,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Entreprise familiale du Morne active depuis 1988, organisant des sorties en bateau vers l'Île aux Bénitiers avec observation des dauphins, snorkeling et BBQ animé de musique locale."
   },
   {
     "id": "aqua-morne",
@@ -18356,7 +18428,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Sorties en bateau privées au départ du Morne, avec baignade auprès de dauphins sauvages, snorkeling à Crystal Rock, escale à l'Île aux Bénitiers et déjeuner BBQ face au Morne Brabant."
   },
   {
     "id": "dolphin-whale-watching-the-blue-mystery-tours",
@@ -18371,7 +18444,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Petite structure du Morne opérée à bord du speedboat « Tracy », proposant sorties d'observation des dauphins et des baleines à bosse, snorkeling et journées BBQ, avec une approche respectueuse de la faune marine."
   },
   {
     "id": "whales-watching-dolphins-swimming-in-mauritius-with-matteo",
@@ -18386,7 +18460,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Guide indépendant, Matteo, proposant depuis Le Morne, Tamarin et Rivière Noire des sorties de nage avec les dauphins et d'observation des cachalots, en petits groupes privés ou partagés."
   },
   {
     "id": "chamarel-waterfall-viewpoint-2",
@@ -18401,7 +18476,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Point de vue sur la cascade de Chamarel, la plus haute de l'île avec près de 100 mètres de chute, au cœur du Parc national des Gorges de Rivière Noire. Deux belvédères permettent d'admirer la chute entourée de forêt tropicale."
   },
   {
     "id": "karlos-excursions-boat-tours-departure-3",
@@ -18416,7 +18492,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Opérateur familial installé au Morne depuis 1988, parmi les premiers bateaux licenciés de l'île, proposant sorties dauphins, snorkeling à Coral Rock et BBQ animé de musique locale sur l'île aux Bénitiers."
   },
   {
     "id": "piton-du-canot",
@@ -18482,7 +18559,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Agence basée à La Gaulette, en activité depuis 2001, spécialisée dans l'observation et la nage avec les dauphins et les baleines, avec halte snorkeling possible à Crystal Rock."
   },
   {
     "id": "mauritius-boat-tours-la-gaulette-labonne-gille",
@@ -18512,7 +18590,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Sorties en mer au départ du Morne combinant observation des dauphins et baleines (juillet à novembre) et pêche au gros au large - thon, marlin, wahoo, carangue - de novembre à avril."
   },
   {
     "id": "corail-helicopteres",
@@ -18527,7 +18606,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Survols en hélicoptère au départ de Chamarel, offrant une vue sur la cascade sous-marine du Morne, les gorges de Rivière Noire, l'île aux Bénitiers et Crystal Rock, avec une flotte d'hélicoptères Airbus."
   },
   {
     "id": "daryeau-adventure",
@@ -18542,7 +18622,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Guide qui accompagne les visiteurs dans l'ascension du Morne Brabant, avec commentaires sur l'histoire du site et un passage technique près du sommet nécessitant un peu d'escalade."
   },
   {
     "id": "escape-cruise-dolphins-trips",
@@ -18572,7 +18653,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Agence de voyage familiale basée à Terre Rouge proposant transferts aéroport, location de voiture, excursions et réservations d'hôtels à travers l'île."
   },
   {
     "id": "le-havanah-boat-dolphin-paradise",
@@ -18587,7 +18669,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Sorties en bateau (Legend 19 de 2018) au départ du Morne pour nager avec les dauphins, observer les baleines et rejoindre l'île aux Bénitiers pour un déjeuner, rendez-vous au supermarché GRS de La Gaulette ou à la plage publique du Morne."
   },
   {
     "id": "skipper-dan",
@@ -18602,7 +18685,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Skipper avec plus de 25 ans d'expérience opérant le bateau 'Navy' (29 pieds, deux moteurs Suzuki 140 CV) au Morne, pour la pêche au récif ou au large et des sorties nage avec les dauphins tôt le matin."
   },
   {
     "id": "hibiscus-dolphin-trip",
@@ -18632,7 +18716,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Guide de randonnée menant la boucle des 7 Cascades (Tamarind Falls), avec pauses baignade et saut depuis les rochers en chemin."
   },
   {
     "id": "underwater-waterfall-mauritius-5-island-tour-things-to-do-il",
@@ -18677,7 +18762,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Petite structure de Bel Ombre proposant sorties coucher de soleil, excursions avec déjeuner à bord, pêche au gros et observation de dauphins et baleines, avec un bateau équipé de deux moteurs Mercury."
   },
   {
     "id": "underwater-waterfall-mauritius-with-lagoonflight",
@@ -18692,7 +18778,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "LagoonFLIGHT propose des survols en hydravion au-dessus du lagon du Morne, permettant d'admirer depuis les airs la fameuse illusion de la « cascade sous-marine »."
   },
   {
     "id": "the-pearl-cruise-ltd",
@@ -18707,7 +18794,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Excursions privées en bateau au départ de Bel Ombre pour nager avec les dauphins sauvages, observer tortues et raies, avec arrêt snorkeling et barbecue sur l'Îlot Bénitier."
   },
   {
     "id": "glasbottom-boat",
@@ -18737,7 +18825,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Sorties en mer depuis Bel Ombre axées sur l'observation des dauphins et des baleines, avec repas barbecue (langouste, poulet, poisson local) servi à bord."
   },
   {
     "id": "mjolnir-expedition",
@@ -18752,7 +18841,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Excursions privées en hors-bord sur mesure au départ de La Balise Marina, à bord d'un bateau familial entretenu et piloté par ses propriétaires."
   },
   {
     "id": "scubacaribe-diving-water-sports",
@@ -18767,7 +18857,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Centre de plongée et sports nautiques basé à l'hôtel Riu du Morne, proposant plongée PADI, snorkeling et sorties bateau vers le lagon blanc avec possibilité de nager avec des dauphins."
   },
   {
     "id": "beb-s-cruiseboat",
@@ -21578,7 +21669,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Sorties en bateau depuis Bel Ombre pour nager avec les dauphins, observer les baleines et profiter d'un barbecue sur l'Île aux Bénitiers."
   },
   {
     "id": "sud-tropical",
@@ -21593,7 +21685,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Petite équipe familiale organisant des excursions privées en bateau au départ de Mahébourg, dont une sortie matinale pour observer les dauphins résidents de la baie de Tamarin."
   },
   {
     "id": "samuel-monica-excursion",
@@ -21608,7 +21701,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Excursions en bateau depuis Trou d'Eau Douce, avec un circuit des 5 îles incluant l'observation de dauphins, et une sortie plus courte vers l'Île aux Cerfs avec passage par une chute d'eau et un site où nourrir les singes."
   },
   {
     "id": "cascade-mamzelle",
@@ -23647,7 +23741,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Agence locale organisant excursions et transferts depuis la région de Belle Mare, dont circuits Sud et Nord de l'île, sorties en hors-bord, en catamaran vers l'Île aux Cerfs, et transferts aéroport."
   },
   {
     "id": "blue-alize-catamaran-ile-aux-cerfs",
@@ -23662,7 +23757,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Croisières en catamaran (flotte d'Admiral 38) au départ de Trou d'Eau Douce vers l'Île aux Cerfs, avec passage devant la Grande Rivière Sud-Est et repas à bord."
   },
   {
     "id": "tino-boats-5-island-tour-catamaran-ile-aux-cerfs",
@@ -23677,7 +23773,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Opérateur familial actif depuis plus de 25 ans, proposant un circuit des 5 îles en journée (Île aux Cerfs, Grande Rivière Sud-Est, Île aux Phares, Île de la Passe, Île aux Aigrettes) avec toboggan, snorkeling, barbecue et boissons incluses."
   },
   {
     "id": "excursion-ile-aux-cerfs-catamaran-tour-five-islands-speed-bo",
@@ -23692,7 +23789,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Propose plusieurs formules de sorties en mer depuis Trou d'Eau Douce : circuit des 5 îles en catamaran, excursion vers l'Île aux Cerfs et tour en hors-bord rapide, avec une option haut de gamme."
   },
   {
     "id": "sea-sensation-sea-activities-boat-tours",
@@ -23722,7 +23820,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Excursion en speedboat ou cataspeed au départ de Trou d'Eau Douce vers les 5 îles de l'est, avec halte à la réserve naturelle, snorkeling sur le récif et déjeuner BBQ sur la plage."
   },
   {
     "id": "5-islands-tour-ile-aux-cerfs-excursions-activities-catamaran",
@@ -23737,7 +23836,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Circuit des 5 îles en catamaran ou speedboat depuis la jetée de Trou d'Eau Douce, avec snorkeling au parc marin, passage devant l'épave du Dalbair, l'îlot aux Aigrettes et le phare, cascade de la GRSE et déjeuner inclus."
   },
   {
     "id": "blueberry-boat-trips-southeast-cruise",
@@ -23752,7 +23852,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Sorties en bateau au départ de Mahébourg vers le lagon du sud-est, avec baignade, snorkeling et possibilité d'observer dauphins et baleines selon la saison."
   },
   {
     "id": "5-islands-excursions-dolphins-catamaran-private-speedboat",
@@ -23767,7 +23868,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Formule du circuit des 5 îles orientée observation des dauphins, en catamaran ou speedboat privé, proposée par le même opérateur que le tour classique de Trou d'Eau Douce."
   },
   {
     "id": "johaness-catamaran-speedboat-cruises",
@@ -23782,7 +23884,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Traversées en speedboat depuis Trou d'Eau Douce vers Île aux Cerfs, la cascade de la Grande Rivière Sud-Est et le parc marin de Blue Bay, avec activités nautiques sur ponton (bouée tractée, parachute ascensionnel, marche sous-marine)."
   },
   {
     "id": "la-criee-excursion-en-bateau",
@@ -23797,7 +23900,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Excursions en speedboat au départ de Blue Bay vers les îlots du sud-est et Île aux Cerfs, avec arrêt snorkeling dans le parc marin."
   },
   {
     "id": "falconboats",
@@ -23812,7 +23916,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Opérateur basé à Trou d'Eau Douce proposant des sorties en speedboat vers les îles du sud-est de l'île, avec location de bateaux, pêche et haltes snorkeling."
   },
   {
     "id": "aquaventure-ltd",
@@ -23827,7 +23932,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Centre d'activités nautiques à Belle Mare, pionnier de la marche sous-marine sur la côte est, proposant aussi parachute ascensionnel, bouée tractée et sorties en bateau."
   },
   {
     "id": "aqua-soleil-mauritius-2",
@@ -23842,7 +23948,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Journée privée en speedboat au départ de Blue Bay vers les îlots du sud-est (Île aux Flamants, Île aux Phares, Île aux Cerfs), avec snorkeling, observation de dauphins, halte à la cascade de la GRSE et déjeuner BBQ."
   },
   {
     "id": "seafan-diving-adventures-belle-mare",
@@ -23857,7 +23964,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Centre de plongée sous-marine basé à Belle Mare, encadrant des sorties sur les sites récifaux de la côte est (dont Seafan Valley) pour plongeurs débutants et confirmés."
   },
   {
     "id": "robin-de-mer",
@@ -23872,7 +23980,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Transfert partagé en speedboat depuis Trou d'Eau Douce vers Île aux Cerfs, avec passage par la cascade de la Grande Rivière Sud-Est et déjeuner BBQ sur la plage."
   },
   {
     "id": "neptune-cruises",
@@ -23887,7 +23996,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Croisière en bateau au départ de Trou d'Eau Douce vers la cascade de la Grande Rivière Sud-Est puis Île aux Cerfs, avec déjeuner BBQ, boissons et animation musicale à bord."
   },
   {
     "id": "excursion-5-iles-traversee-turquoise-ile-aux-cerfs-belle-mar",
@@ -23902,7 +24012,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Circuit des 5 îles proposé par Belle Mare Tours, avec snorkeling dans le lagon turquoise, arrêt à Île aux Cerfs, visite de la cascade de la GRSE et déjeuner BBQ poulet-poisson inclus."
   },
   {
     "id": "private-boat-trip-5-island-tour-mauritius-ile-aux-cerfs-excu",
@@ -23917,7 +24028,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Formule privée du circuit des 5 îles vers Île aux Cerfs, en speedboat exclusif avec déjeuner à bord, proposée par le même opérateur que le tour classique de Trou d'Eau Douce."
   },
   {
     "id": "prestige-scuba-adventures-belle-mare",
@@ -23932,7 +24044,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Centre de plongée basé dans les hôtels de Belle Mare (Solana Beach, Lux Belle Mare, Salt Palmar), proposant baptêmes, cours PADI et sorties sur récifs et épaves pour tous niveaux."
   },
   {
     "id": "vicky-boats",
@@ -23947,7 +24060,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Compagnie historique de speedboats de Trou d'Eau Douce, fondée par Jean Claude « Missié Vicky » Dardenne et aujourd'hui dirigée par son fils, assurant la majorité des transferts vers les îles de l'est et la cascade de la Grande Rivière Sud-Est, avec déjeuner BBQ sur la plage."
   },
   {
     "id": "turquoise-voyages-samtours-mauritius",
@@ -23962,7 +24076,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Agence de voyage et de taxi basée à Flic en Flac depuis 1998, organisant excursions en catamaran et speedboat, sorties nature et transferts à travers l'île."
   },
   {
     "id": "mauritius-bookings",
@@ -23977,7 +24092,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Plateforme de réservation en ligne pour excursions en mer à l'île Maurice, avec notamment une croisière en catamaran vers l'Ile aux Cerfs au départ de Pointe Jérôme et une sortie dauphins sur la côte sud-ouest, déjeuner BBQ inclus."
   },
   {
     "id": "coco-de-zil-mauritius-2",
@@ -23992,7 +24108,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Excursions privées en bateau au départ de Pointe Jérôme à Mahébourg, à la découverte du lagon et de ses eaux turquoise, avec observation possible de tortues, dauphins et singes selon les sorties."
   },
   {
     "id": "aquacity-belle-mare-watersports",
@@ -24113,7 +24230,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Petite entreprise familiale basée à Blue Bay proposant des excursions sur mesure en mer et à terre, en italien, anglais et français, loin des circuits touristiques classiques."
   },
   {
     "id": "ile-aux-cerfs-beach",
@@ -30658,7 +30776,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Croisière en catamaran au départ de Grand Baie vers les îlots du Nord (Coin de Mire, Ilot Gabriel, Ile Plate), avec arrêt snorkeling et déjeuner barbecue servi sur Ile Plate."
   },
   {
     "id": "eco-holidays-mauritius-dmc",
@@ -30673,7 +30792,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Agence réceptive (DMC) basée à Grand Baie, proposant transferts aéroport, excursions et circuits sur l'île, avec une orientation vers le tourisme durable (randonnées nature, plongée, snorkeling)."
   },
   {
     "id": "dreamcatcher-mauritius",
@@ -30688,7 +30808,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Excursions en catamaran au départ de Cap Malheureux vers l'Ile Plate, avec traversée d'environ une heure et arrêt snorkeling sur un récif préservé; possibilité de privatiser le bateau en petit groupe."
   },
   {
     "id": "gone-fishing",
@@ -30864,7 +30985,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Sorties en bateau à moteur rapide basées à La Balise Marina (Rivière Noire), tenues par une famille de pêcheurs locaux, spécialisées dans la rencontre avec les dauphins, pour des sorties de deux à six heures."
   },
   {
     "id": "cavalia-ecole-d-equitation",
@@ -31756,7 +31878,8 @@
     "themes": [
       "excursions"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Catamaran privé opéré par Sud Sauvage Adventure au départ de la plage publique du Morne, proposant des sorties d'observation des baleines et dauphins ainsi que des excursions en mer sur la côte ouest."
   },
   {
     "id": "ai-broker-conlsutant-ltd",
