@@ -1793,7 +1793,8 @@
     "hours": "Tous les jours à partir de 7h",
     "badge": "selection",
     "promoText": "Boulangerie à la française.",
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Boulangerie-pâtisserie artisanale française (siège à Pointe aux Canonniers, succursale Grand Baie depuis 2017) : pain, viennoiseries, pâtisseries, gâteaux sur commande, café, terrasse."
   },
   {
     "id": "pains-et-moulins-grand-baie",
@@ -1808,7 +1809,8 @@
     "themes": [
       "boulangeries"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Boulangerie-pâtisserie de tradition française, pain au levain naturel, viennoiseries au beurre de Normandie, millefeuilles, macarons, gâteaux sur commande. Chaîne comptant 7 points de vente à Maurice."
   },
   {
     "id": "nicolas-grand-baie",
@@ -4896,7 +4898,8 @@
     ],
     "hours": "Dim 7h-13h, Lun 8h-18h, Mar-Sam 7h-18h",
     "badge": "selection",
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Boulangerie de Rivière Noire réputée pour ses croissants, ambiance conviviale mêlant influences locales et françaises. Ouvert dim 7h-13h, lun 8h-18h, mar-sam 7h-18h."
   },
   {
     "id": "exploration-sous-marine-flic-en-flac",
@@ -6833,9 +6836,13 @@
     "googleMapsUrl": "https://maps.google.com/?cid=7081802525506342010&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.3483231,
     "lng": 57.3645046,
-    "themes": [],
+    "themes": [
+      "boulangeries",
+      "produits-francais"
+    ],
     "badge": "selection",
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Boulangerie de Riviere Noire reputee pour ses croissants, ambiance conviviale melant influences locales et francaises. Ouverture tot le matin, fermeture en debut d apres-midi."
   },
   {
     "id": "lokal-adventure",
@@ -13821,7 +13828,8 @@
     "themes": [
       "boulangeries"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Café-pâtisserie de Péreybère/Grand Baie : gâteaux sur commande, viennoiseries, cookies, tartes, babkas, petit-déjeuner et déjeuner, service traiteur événementiel. Très bien noté (5/5)."
   },
   {
     "id": "patisserie-le-gourmand",
@@ -13851,7 +13859,8 @@
     "themes": [
       "boulangeries"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Boulangerie-pâtisserie française au sein de l'hôtel LUX* Grand Baie, sélection de pâtisseries fines, high tea sucré-salé, café ; démarche éco-responsable."
   },
   {
     "id": "patisserie-pillay",
@@ -13903,7 +13912,8 @@
     "themes": [
       "boulangeries"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Pâtisserie artisanale de Grand Baie (School Lane), bien notée (4,6/5)."
   },
   {
     "id": "lady-mary-patisserie",
@@ -13918,7 +13928,8 @@
     "themes": [
       "boulangeries"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Pâtisserie artisanale (avec gelato) de la région de Grand Baie, propose aussi un service traiteur."
   },
   {
     "id": "patisserie-du-nord",
@@ -13933,7 +13944,8 @@
     "themes": [
       "boulangeries"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Pâtisserie de Port Louis mêlant tradition française et mauricienne : Rasmalai Cake, Cake Barfi, doughnuts, tarte banane, puits d'amour, brownies, muffins."
   },
   {
     "id": "exquisitely-iced-ltd",
@@ -13948,7 +13960,8 @@
     "themes": [
       "boulangeries"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Café-pâtisserie de Grand Baie (Mont Choisy Le Mall) tenu par des Sud-Africaines : cupcakes, milkshakes, pâtisseries, baked potatoes, petit-déjeuner all-day, plats surgelés à emporter. Très bien noté (5/5)."
   },
   {
     "id": "clinique-de-grand-baie",
@@ -17465,7 +17478,8 @@
     "themes": [
       "boulangeries"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Boulangerie-pâtisserie franco-mauricienne de Flic en Flac depuis 2017, spécialités françaises, livraison de pain et pâtisseries."
   },
   {
     "id": "clinique-de-l-occident",
@@ -20718,7 +20732,8 @@
     "themes": [
       "boulangeries"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Boulangerie-pâtisserie familiale de Curepipe depuis 1995, réputée pour son croissant fromage, ses biscuits fromage et pâtisseries salées. Ouvert tous les jours 4h30-20h."
   },
   {
     "id": "boulangerie-l-amiral",
@@ -20733,7 +20748,8 @@
     "themes": [
       "boulangeries"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Boulangerie-pâtisserie de Triolet (7th Mile)."
   },
   {
     "id": "patisserie-corps-de-garde",
@@ -20748,7 +20764,8 @@
     "themes": [
       "boulangeries"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Pâtisserie-boulangerie de Beau Bassin-Rose Hill (Camp Levieux, angle Takoor Lane & Cretin Avenue)."
   },
   {
     "id": "baker-s-delice",
@@ -20763,7 +20780,8 @@
     "themes": [
       "boulangeries"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Boulangerie artisanale de Terre Rouge : pain frais, viennoiseries (croissants, burger buns), gâteaux, snacks locaux (kalakand). Ouvert lun-sam 5h-21h, dim 5h-13h ; livraison à l'île entière."
   },
   {
     "id": "chaudlepain",
@@ -20778,7 +20796,8 @@
     "themes": [
       "boulangeries"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Boulangerie-pâtisserie de quartier à Chebel (Beau Bassin)."
   },
   {
     "id": "pains-moulins",
@@ -20793,7 +20812,8 @@
     "themes": [
       "boulangeries"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Boulangerie-pâtisserie française du Cascavelle Mall (Flic en Flac) : pains artisanaux, viennoiseries et pâtisseries sucrées/salées préparés frais chaque jour."
   },
   {
     "id": "boulangerie-isle-de-france",
@@ -20808,7 +20828,8 @@
     "themes": [
       "boulangeries"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Institution familiale mauricienne (plusieurs décennies, aussi présente à Curepipe et Vacoas) : baguettes, pains maison, croissants, pâtés, vol-au-vents, muffins, napolitaines, massepain, pain au chocolat."
   },
   {
     "id": "patisserie-eclair",
@@ -20823,7 +20844,8 @@
     "themes": [
       "boulangeries"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Boulangerie-pâtisserie de Port Louis."
   },
   {
     "id": "patisserie-du-quartier",
@@ -20838,7 +20860,8 @@
     "themes": [
       "boulangeries"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Boulangerie-pâtisserie de quartier à Quatre Bornes."
   },
   {
     "id": "boulangerie-loul",
@@ -22548,7 +22571,8 @@
     "themes": [
       "boulangeries"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Pâtisserie de Moka spécialisée dans les gâteaux au chocolat sur mesure avec ingrédients fins, réservation en ligne et retrait sur place, très bien notée."
   },
   {
     "id": "patisserie-al-jumeira",
@@ -22563,7 +22587,8 @@
     "themes": [
       "boulangeries"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Boulangerie-pâtisserie de Port Louis."
   },
   {
     "id": "r-b-cake-studio-blekcreations",
@@ -22578,7 +22603,8 @@
     "themes": [
       "boulangeries"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Pâtisserie germano-mauricienne de Lalmatie fondée en 2007 par le couple pâtissier Blek et Romy Ramdass : gâteaux de mariage et pâtisseries haut de gamme sur commande. Ouvert lun-sam 9h-18h, dim 9h-12h."
   },
   {
     "id": "boulangerie-de-pamplemousses-ltee",
@@ -22593,7 +22619,8 @@
     "themes": [
       "boulangeries"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Boulangerie de Pamplemousses établie depuis plus de 30 ans : large gamme de pains frais, pizzas, friands/quiches, cookies et gâteaux (dont végétariens) ; fournit aussi hôtels, restaurants et supermarchés."
   },
   {
     "id": "modern-cake-shop",
@@ -22608,7 +22635,8 @@
     "themes": [
       "boulangeries"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Boutique de gâteaux de Vacoas : gâteaux traditionnels, aux fruits, spéciaux et tartes, plus d'une centaine de variétés et styles."
   },
   {
     "id": "maison-escoffier",
@@ -22623,7 +22651,8 @@
     "themes": [
       "boulangeries"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Pâtisserie fine de Bon-Air ouverte en mars 2024, alliant techniques françaises et saveurs mauriciennes, moins sucrée, options sans gluten et végan. Ouvert dim 8h30-13h30, lun-sam 8h30-18h."
   },
   {
     "id": "brioche-d-or-patisserie",
@@ -22638,7 +22667,8 @@
     "themes": [
       "boulangeries"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Boulangerie-pâtisserie de Belle Vue Maurel, gâteaux d'anniversaire et de mariage sur commande ; autres points de vente à Goodlands et Flacq."
   },
   {
     "id": "yovicooks",
@@ -22653,7 +22683,8 @@
     "themes": [
       "boulangeries"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Pâtisserie artisanale de Cap Malheureux : gâteaux et cupcakes personnalisés pour fêtes et événements, propose aussi des ateliers de cuisine. Ouvert lun-sam 10h-17h, fermé le dimanche."
   },
   {
     "id": "patisserie-maingard",
@@ -22668,7 +22699,8 @@
     "themes": [
       "boulangeries"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Pâtisserie de Beau Bassin-Rose Hill réputée pour ses feuilletés salés (samoussas, petits pâtés), considérés parmi les meilleurs de l'île selon les avis."
   },
   {
     "id": "atelier-de-la-patisserie-et-boulangerie",
@@ -25619,7 +25651,8 @@
     "themes": [
       "boulangeries"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Café-pâtisserie de Triolet réputé pour ses créations artisanales (Sacher Blanc, Anémone) et ses petits-déjeuners (œufs brouillés, plateaux de fruits frais), décor rotin/jardin. Réservation conseillée le soir."
   },
   {
     "id": "escale-m-cafe",
@@ -25649,7 +25682,8 @@
     "themes": [
       "boulangeries"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Pâtisserie artisanale de Vacoas-Phoenix : cannelés (mardi/vendredi), sandwichs/paninis et gâteaux tous les jours (chocolat, cheesecakes, éclairs), pain, desserts glacés, café."
   },
   {
     "id": "patisserie-marimootoo",
@@ -25664,7 +25698,8 @@
     "themes": [
       "boulangeries"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Pâtisserie familiale de Curepipe fondée en 2006, spécialités mauriciennes traditionnelles : puits d'amour, langue de belle-mère, gâteaux piments, éclairs."
   },
   {
     "id": "patisserie-puits-d-amour",
@@ -25679,7 +25714,8 @@
     "themes": [
       "boulangeries"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Pâtisserie de Port Louis spécialisée dans le puits d'amour (classique et variante à la crème de coco), aussi utilisée pour les gâteaux d'anniversaire."
   },
   {
     "id": "patisserie-al-safa",
@@ -25694,7 +25730,8 @@
     "themes": [
       "boulangeries"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Fabricant-grossiste en pâtisserie de la région de Quatre Bornes/Belle Rose, vente en gros sur commande et en boutique."
   },
   {
     "id": "storm-e-bikes-tours",
@@ -25905,7 +25942,8 @@
     "themes": [
       "boulangeries"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Boutique de cupcakes de Quartier-Militaire (Valetta), très bien notée."
   },
   {
     "id": "smarttraveller-ltd",
@@ -26046,7 +26084,8 @@
     "themes": [
       "boulangeries"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Boulangerie-pâtisserie de Port Louis (Vallée des Prêtres)."
   },
   {
     "id": "medisave",
@@ -26331,14 +26370,17 @@
     "name": "Naked Foods",
     "category": "food",
     "address": "Pointe d'Esny / Blue Bay",
-    "phone": "",
+    "phone": "+230 5456 3960",
     "website": "",
     "googleMapsUrl": "https://maps.app.goo.gl/kpRaNk1x7km8rNBo7",
     "lat": -20.4421933,
     "lng": 57.7204477,
-    "themes": [],
+    "themes": [
+      "cafes-terrasses"
+    ],
     "badge": "selection",
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Cafe convivial de Pointe d Esny/Blue Bay (Main Coastal Road), reputee pour son pain au levain maison. Petit-dejeuner (crepes, mango bowl, plats faits maison), laits vegetaux disponibles."
   },
   {
     "id": "station-a",
@@ -30670,7 +30712,8 @@
     "themes": [
       "boulangeries"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Boulangerie intégrée au supermarché Winner's de Pereybère : pain frais et fast-food abordable, croissants et pâtisseries du matin, baguettes traditionnelles, pain complet, céréales."
   },
   {
     "id": "medicheck-medical-center",
@@ -31423,7 +31466,8 @@
     "themes": [
       "boulangeries"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Pâtisserie de Mahébourg à bonne réputation locale, large gamme de produits. Ouvert 8h-20h."
   },
   {
     "id": "new-souillac-hospital",
@@ -32004,7 +32048,8 @@
     "themes": [
       "boulangeries"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Pâtisserie de Port Louis (Rue Labourdonnais), gâteaux à prix abordables et grosses parts, genoise au chocolat appréciée."
   },
   {
     "id": "crealia-boutik",
