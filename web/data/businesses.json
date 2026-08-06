@@ -16977,7 +16977,7 @@
     "lat": -20.2763542,
     "lng": 57.3689018,
     "themes": [
-      "cliniques-privees"
+      "centres-sante-publics"
     ],
     "zone": "ouest",
     "description": "Centre de santé communautaire public à Flic en Flac, proposant médecine générale, dentisterie, santé mentale, soins préventifs et services de kinésithérapie/ergothérapie."
@@ -20353,7 +20353,7 @@
     "lat": -20.4310759,
     "lng": 57.3898856,
     "themes": [
-      "cliniques-privees"
+      "centres-sante-publics"
     ],
     "zone": "sud",
     "description": "Centre de santé communautaire public (CHC) à Chamarel, offrant consultations médicales générales, santé familiale et programmes de prévention/vaccination."
@@ -22137,7 +22137,7 @@
     "lat": -20.2583598,
     "lng": 57.7615602,
     "themes": [
-      "cliniques-privees"
+      "centres-sante-publics"
     ],
     "zone": "est",
     "description": "Mediclinic publique à Bel Air Rivière Sèche proposant médecine générale, pédiatrie, psychiatrie, radiologie et dépistage des IST, en collaboration avec les centres de santé de la région."
@@ -22153,7 +22153,7 @@
     "lat": -20.1783854,
     "lng": 57.6620418,
     "themes": [
-      "cliniques-privees"
+      "centres-sante-publics"
     ],
     "zone": "est",
     "description": "Centre médical privé à Belvedere/Bon Accueil proposant consultations généralistes et spécialisées, laboratoire, radiologie/imagerie et soins infirmiers."
@@ -30716,7 +30716,7 @@
     "lat": -20.5214932,
     "lng": 57.5238902,
     "themes": [
-      "cliniques-privees"
+      "centres-sante-publics"
     ],
     "zone": "sud",
     "description": "Hôpital public régional de 150 lits à Souillac, avec service d'urgences, hospitalisation, consultations spécialisées, imagerie, laboratoire, chirurgie et un centre dédié au diabète et à la santé vasculaire."
@@ -31407,7 +31407,7 @@
     "lat": -20.2218907,
     "lng": 57.5049593,
     "themes": [
-      "cliniques-privees"
+      "centres-sante-publics"
     ],
     "zone": "centre",
     "description": "Centre de santé communautaire public à Moka offrant consultations, planning familial, vaccinations et éducation à la santé (services de base gratuits)."
