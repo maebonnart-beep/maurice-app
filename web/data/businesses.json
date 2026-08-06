@@ -23522,22 +23522,6 @@
     "description": "Plateforme de réservation en ligne pour excursions en mer à l'île Maurice, avec notamment une croisière en catamaran vers l'Ile aux Cerfs au départ de Pointe Jérôme et une sortie dauphins sur la côte sud-ouest, déjeuner BBQ inclus."
   },
   {
-    "id": "coco-de-zil-mauritius-2",
-    "name": "Coco De Zil Mauritius",
-    "category": "activites",
-    "address": "Pointe Jerome Mahebourg MU, 50817",
-    "phone": "+230 5770 7235",
-    "website": "https://cocodezil.com/",
-    "googleMapsUrl": "https://maps.google.com/?cid=16888500749114245885&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.424766,
-    "lng": 57.7233151,
-    "themes": [
-      "excursions"
-    ],
-    "zone": "sud",
-    "description": "Excursions privées en bateau au départ de Pointe Jérôme à Mahébourg, à la découverte du lagon et de ses eaux turquoise, avec observation possible de tortues, dauphins et singes selon les sorties."
-  },
-  {
     "id": "aquacity-belle-mare-watersports",
     "name": "Aquacity Belle Mare Watersports",
     "category": "activites",
