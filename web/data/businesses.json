@@ -11456,7 +11456,8 @@
     "lat": -20.0122315,
     "lng": 57.5872783,
     "themes": [
-      "shopping"
+      "shopping",
+      "materiel-sports"
     ],
     "zone": "nord",
     "description": "Enseigne de vente d'articles et vêtements de sport (Nike, Adidas, Puma...) située dans le centre commercial Coeur de Ville à Grand Baie."
@@ -12207,21 +12208,6 @@
     "zone": "nord",
     "description": "Premier hammam marocain de l'île, avec créneaux dédiés femmes (lun-ven 9h-17h, sam 10h-17h) et hommes (lun-sam 17h-20h). Plus de 230 prestations : rituels hammam-gommage-massage (Rituel Casablanca 1h45 à Rs 3 000 ; Rituel Marrakech avec shampoing-brushing 1h45 à Rs 2 600), massages, épilation laser, soins du visage, onglerie, threading, sugaring, épilation à la cire, cils/sourcils, coiffure homme. Pédicure deluxe à partir de Rs 1 000.",
     "priceRange": "prix-moyen"
-  },
-  {
-    "id": "lize-wellness-massage-home-service",
-    "name": "Lize wellness massage (Home service)",
-    "category": "soins-bien-etre",
-    "address": "MU, coastal road, grand baie 30510",
-    "phone": "+230 5507 5536",
-    "website": "https://www.facebook.com/people/Lize-Wellness-Massages/61550959630462/",
-    "googleMapsUrl": "https://maps.google.com/?cid=15999912480592873335&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.3522228,
-    "lng": 57.363733,
-    "themes": [
-      "professionnels-soins"
-    ],
-    "zone": "nord"
   },
   {
     "id": "massage-therapy-grand-baie",
@@ -15803,21 +15789,6 @@
     "zone": "ouest",
     "description": "Spa 5 étoiles du Sofitel Mauritius L'Impérial (Wolmar), avec vue sur un jardin japonais. Soins L'Occitane, rituels mauriciens et massages d'inspiration asiatique, hammam, sauna, cabines duo, thés aromatiques. Note moyenne 4,1/5 (78 avis). Offres spéciales lune de miel avec réduction sur les soins.",
     "priceRange": "se-faire-plaisir"
-  },
-  {
-    "id": "inner-eye-wellness-traveling-massage-therapist",
-    "name": "Inner Eye Wellness (Traveling Massage Therapist)",
-    "category": "soins-bien-etre",
-    "address": "MU, Lot 99, Avenue des Bengalis, Flic en Flac 90509",
-    "phone": "+230 5256 7926",
-    "website": "https://m.facebook.com/profile.php/?id=100063451847883",
-    "googleMapsUrl": "https://maps.google.com/?cid=5506310511926228549&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.2869131,
-    "lng": 57.3649707,
-    "themes": [
-      "professionnels-soins"
-    ],
-    "zone": "ouest"
   },
   {
     "id": "serenite-spa",
@@ -24421,21 +24392,6 @@
     "priceRange": "se-faire-plaisir"
   },
   {
-    "id": "inner-bliss-spa-mobile",
-    "name": "Inner Bliss Spa & Mobile",
-    "category": "soins-bien-etre",
-    "address": "MU, Coastal Rd, Blue Bay 50802",
-    "phone": "+230 5808 4081",
-    "website": "https://innerblisssmobilespa.com/",
-    "googleMapsUrl": "https://maps.google.com/?cid=9593827817205429266&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.4408867,
-    "lng": 57.7204215,
-    "themes": [
-      "professionnels-soins"
-    ],
-    "zone": "sud"
-  },
-  {
     "id": "rituals-spa",
     "name": "Rituals Spa",
     "category": "soins-bien-etre",
@@ -27785,7 +27741,9 @@
     "themes": [
       "materiel-sports"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "hours": "Lun-Ven 8h-18h, fermé Sam-Dim",
+    "description": "Boutique spécialisée dans le matériel de padel (raquettes, chaussures, balles et accessoires) des plus grandes marques, à Grand Baie."
   },
   {
     "id": "ace-tennis-mauritius-gblc",
@@ -34667,5 +34625,72 @@
     "hours": "Lun 11h30-23h30, Mar-Dim 11h30-23h45",
     "zone": "est",
     "description": "Bowling du Flacq Retail Park, avec billard et bar, dans le même esprit que Strike City Bagatelle."
+  },
+  {
+    "id": "decathlon-beau-plan",
+    "name": "Decathlon Beau Plan",
+    "category": "activites",
+    "address": "Business District, Beau Plan, Pamplemousses",
+    "phone": "+230 650 2400",
+    "website": "https://decathlon.mu/",
+    "googleMapsUrl": "https://www.google.com/maps/place/Decathlon+Beau+Plan/@-20.1036252,57.5670016,17z",
+    "lat": -20.1036252,
+    "lng": 57.5670016,
+    "themes": [
+      "materiel-sports"
+    ],
+    "hours": "Lun-Sam 10h-20h, Dim et jours fériés 10h-18h",
+    "zone": "nord",
+    "description": "Magasin Decathlon de 1800 m² dans le Business District de Beau Plan, avec plus de 5000 produits couvrant une soixantaine d'activités sportives."
+  },
+  {
+    "id": "decathlon-bagatelle",
+    "name": "Decathlon Bagatelle",
+    "category": "activites",
+    "address": "Bagatelle Mall of Mauritius, Moka",
+    "phone": "+230 650 2400",
+    "website": "https://decathlon.mu/",
+    "googleMapsUrl": "https://www.google.com/maps/place/Decathlon+Bagatelle/@-20.2217542,57.4943636,17z",
+    "lat": -20.2217542,
+    "lng": 57.4943636,
+    "themes": [
+      "materiel-sports"
+    ],
+    "hours": "Lun-Sam 10h-20h, Dim et jours fériés 10h-18h",
+    "zone": "centre",
+    "description": "Magasin Decathlon de 2500 m² au Bagatelle Mall, avec plus de 60 sports représentés, équipements et conseils."
+  },
+  {
+    "id": "sport-2000-tribeca",
+    "name": "Sport 2000 Tribeca",
+    "category": "activites",
+    "address": "Tribeca Mall, Trianon, Quatre Bornes",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/place/Sport+2000+Tribeca/@-20.2449963,57.4977242,17z",
+    "lat": -20.2449963,
+    "lng": 57.4977242,
+    "themes": [
+      "materiel-sports"
+    ],
+    "hours": "Lun-Jeu 9h30-21h, Ven-Sam 9h30-22h, Dim 9h30-17h",
+    "zone": "centre",
+    "description": "Premier magasin Sport 2000 à Maurice (plus de 1000 m²), ouvert en 2023 au Tribeca Mall : vêtements, chaussures et équipements de grandes marques (Nike, Adidas, Puma, Hoka, New Balance, The North Face) organisés par univers running, natation, outdoor et training."
+  },
+  {
+    "id": "anou-rakonte-port-louis",
+    "name": "Anou Rakonte",
+    "category": "activites",
+    "address": "Port Louis",
+    "phone": "+230 5833 7861",
+    "website": "https://anourakonte.com",
+    "googleMapsUrl": "https://www.google.com/maps/place/Anou+Rakonte/@-20.1637824,57.5041108,17z",
+    "lat": -20.1637824,
+    "lng": 57.5041108,
+    "themes": [
+      "culture-patrimoine"
+    ],
+    "zone": "centre",
+    "description": "Nouvelle initiative culturelle à Port-Louis (fiche Google mise à jour très récemment, site en construction) — à suivre, 'Anou Rakonte' ('racontons-nous', en créole) semble annoncer une expérience autour de la narration et du patrimoine mauricien."
   }
 ]
