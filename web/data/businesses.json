@@ -5309,22 +5309,6 @@
     "description": "Petit stand de street-food tenu par Vanessa et sa famille à l'entrée de la plage publique de Pereybère, à l'origine axé sur les rotis puis élargi aux nouilles et riz frits."
   },
   {
-    "id": "clinique-darne-floreal",
-    "name": "Clinique Darné (C-Care Darné)",
-    "category": "utiles",
-    "address": "Rue Georges Guibert, Floréal (Centre)",
-    "phone": "+230 601 2300",
-    "website": "",
-    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Clinique%20Darne%20Floreal%20Mauritius",
-    "lat": -20.3122,
-    "lng": 57.4972,
-    "themes": [
-      "cliniques-privees"
-    ],
-    "hours": "Urgences 24h/24",
-    "zone": "centre"
-  },
-  {
     "id": "clinique-du-nord-baie-du-tombeau",
     "name": "Clinique du Nord",
     "category": "utiles",
@@ -5338,7 +5322,8 @@
       "cliniques-privees"
     ],
     "hours": "Urgences 24h/24",
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Clinique privée pluridisciplinaire ouverte 24h/24, offrant médecine générale et urgences, avec consultations de spécialistes (cardiologie, ORL, orthopédie, ophtalmologie, dermatologie), maternité/gynécologie, pédiatrie, radiologie/imagerie (mammographie, scanner) et pharmacie."
   },
   {
     "id": "wellkin-hospital-moka",
@@ -5354,7 +5339,8 @@
       "cliniques-privees"
     ],
     "hours": "Ouvert 7j/7, urgences 24h/24",
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Hôpital privé multidisciplinaire (200 chambres) du groupe C-Care, offrant un large éventail de spécialités : cardiologie et chirurgie cardiothoracique, neurologie/neurochirurgie, maternité et gynécologie-obstétrique, pédiatrie/néonatologie, orthopédie, néphrologie et dialyse, urologie, gastro-entérologie, ophtalmologie, ORL, soins intensifs et bloc opératoire."
   },
   {
     "id": "clinique-ferriere-curepipe",
@@ -5369,7 +5355,8 @@
     "themes": [
       "cliniques-privees"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Clinique privée à Curepipe avec urgences 24h/24, spécialisée notamment en soins palliatifs, et proposant aussi médecine générale/interne, cardiologie, ORL, chirurgie orthopédique et générale, gynécologie, gastro-entérologie, dermatologie, pédiatrie, psychiatrie, gériatrie, ainsi que physiothérapie et imagerie diagnostique."
   },
   {
     "id": "police-grand-baie",
@@ -13423,7 +13410,8 @@
     "themes": [
       "cliniques-privees"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Centre médical et diagnostique pluridisciplinaire à Grand Baie, avec service d'urgences, bloc opératoire, imagerie (radio, échographie, scanner) et consultations en cardiologie, chirurgie générale, médecine générale, gynécologie-obstétrique, pédiatrie, dentisterie, dermatologie, orthopédie, rhumatologie et urologie."
   },
   {
     "id": "c-care-grand-baie",
@@ -13438,7 +13426,8 @@
     "themes": [
       "cliniques-privees"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Clinique privée du réseau C-Care à Mont Choisy (Grand Baie), avec urgences 24h/24, bloc opératoire, service de radiologie (radio, échographie, scanner) et consultations pluridisciplinaires couvrant une trentaine de spécialités dont cardiologie, chirurgie générale, gynécologie-obstétrique, pédiatrie, dermatologie et orthopédie."
   },
   {
     "id": "centre-medical-du-nord",
@@ -13453,7 +13442,8 @@
     "themes": [
       "cliniques-privees"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Centre médical du groupe Clinique du Nord à Grand Baie, ouvert 24h/24 avec ambulance médicalisée, laboratoire et service d'urgence, proposant notamment radiologie numérique, cardiologie, dermatologie et échographie."
   },
   {
     "id": "grand-bay-police-station",
@@ -16941,7 +16931,8 @@
     "themes": [
       "cliniques-privees"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Clinique privée à Flic en Flac (groupe Clinique du Nord), avec ambulance médicalisée 24h/24, consultations de généralistes et spécialistes (gynécologie, dentisterie, physiothérapie), laboratoire d'analyses, radiologie, ECG, unité de dialyse 24h/24 et scanner 3D 64 barrettes."
   },
   {
     "id": "life-medical-clinic-tamarin",
@@ -16956,7 +16947,8 @@
     "themes": [
       "cliniques-privees"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Clinique privée pluridisciplinaire du réseau Life Together à Cap Tamarin, offrant diagnostic (laboratoire, imagerie), médecine et chirurgie (orthopédie, chirurgie générale/digestive, urologie, gastro-entérologie, gynécologie, ORL, chirurgie esthétique), ainsi que rééducation (kinésithérapie, ostéopathie, orthophonie) et chirurgie ambulatoire."
   },
   {
     "id": "c-care-tamarin",
@@ -16971,7 +16963,8 @@
     "themes": [
       "cliniques-privees"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Clinique privée du réseau C-Care à Cap Tamarin réunissant plus de 30 professionnels médicaux et paramédicaux, avec ambulance d'urgence et spécialités incluant cardiologie, dermatologie, diabétologie-endocrinologie, ORL, chirurgie générale/laparoscopique, neurologie, gynécologie-obstétrique, oncologie, orthopédie, pédiatrie/néonatologie, psychiatrie et radiologie."
   },
   {
     "id": "flic-en-flac-community-health-centre",
@@ -16986,7 +16979,8 @@
     "themes": [
       "cliniques-privees"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Centre de santé communautaire public à Flic en Flac, proposant médecine générale, dentisterie, santé mentale, soins préventifs et services de kinésithérapie/ergothérapie."
   },
   {
     "id": "felix-mace-physiotherapist",
@@ -17001,7 +16995,8 @@
     "themes": [
       "cliniques-privees"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Praticien indépendant de kinésithérapie/physiothérapie basé à Cap Tamarin (au sein du centre W+Life - Health & Wellness Center), spécialisé dans la prise en charge des douleurs musculaires, tendineuses, articulaires et neuropathiques ainsi que la rééducation post-chirurgicale."
   },
   {
     "id": "life-viva",
@@ -17016,7 +17011,8 @@
     "themes": [
       "cliniques-privees"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Clinique privée de chirurgie ambulatoire à Cap Tamarin (groupe Life Together/IBL), spécialisée en orthopédie, gynécologie, urologie et chirurgie générale, en cours de transformation en hôpital 24h/24 avec urgences, imagerie et médecine générale."
   },
   {
     "id": "medical-services-in-flic-en-flac",
@@ -17031,7 +17027,8 @@
     "themes": [
       "cliniques-privees"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Clinique médicale générale à Flic en Flac (The West Doctors)."
   },
   {
     "id": "polyclinique-de-l-quest",
@@ -17046,7 +17043,8 @@
     "themes": [
       "cliniques-privees"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Polyclinique privée à Flic en Flac axée sur les urgences médicales et la traumatologie, destinée à réduire les délais d'intervention dans l'ouest de l'île."
   },
   {
     "id": "police-station-flic-en-flac",
@@ -20357,7 +20355,8 @@
     "themes": [
       "cliniques-privees"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Centre de santé communautaire public (CHC) à Chamarel, offrant consultations médicales générales, santé familiale et programmes de prévention/vaccination."
   },
   {
     "id": "police-station-saint-pierre",
@@ -22140,7 +22139,8 @@
     "themes": [
       "cliniques-privees"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Mediclinic publique à Bel Air Rivière Sèche proposant médecine générale, pédiatrie, psychiatrie, radiologie et dépistage des IST, en collaboration avec les centres de santé de la région."
   },
   {
     "id": "lady-sushil-ramgoolam-belvedere-medi-clinic",
@@ -22155,7 +22155,8 @@
     "themes": [
       "cliniques-privees"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Centre médical privé à Belvedere/Bon Accueil proposant consultations généralistes et spécialisées, laboratoire, radiologie/imagerie et soins infirmiers."
   },
   {
     "id": "premium-care-clinic-phoenix",
@@ -22170,7 +22171,8 @@
     "themes": [
       "cliniques-privees"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Établissement médical multi-spécialités de 70 lits à Phoenix, avec neurologie, gastro-entérologie, ORL, chirurgie générale, radiologie, laboratoire et urgences 24h/24."
   },
   {
     "id": "stella-maris-clinic",
@@ -22185,7 +22187,8 @@
     "themes": [
       "cliniques-privees"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Centre médical spécialisé en orthopédie à Triolet, avec chirurgie orthopédique, centre de chirurgie ambulatoire, kinésithérapie, imagerie, arthroscopie et soins d'urgence (walk-in)."
   },
   {
     "id": "aegle-clinic",
@@ -22200,7 +22203,8 @@
     "themes": [
       "cliniques-privees"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Clinique multi-spécialités à Central Flacq (plus de 30 spécialités) : chirurgie générale, neurochirurgie, orthopédie, cardiologie, neurologie, pédiatrie, gynécologie-obstétrique, dermatologie, radiologie/imagerie (scanner, échographie 4D), urgences 24h/24 et unité de soins intensifs."
   },
   {
     "id": "aegle-cancer-hospital",
@@ -22215,7 +22219,8 @@
     "themes": [
       "cliniques-privees"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Premier hôpital dédié entièrement à la cancérologie à Maurice (Rose Belle) : chimiothérapie, radiothérapie de précision, chirurgie oncologique, immunothérapie ciblée, imagerie diagnostique (PET/CT, IRM, scanner) et programmes de dépistage."
   },
   {
     "id": "fortis-clinique-darne",
@@ -22230,7 +22235,8 @@
     "themes": [
       "cliniques-privees"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Hôpital privé historique à Curepipe (112 lits, réseau C-Care) offrant plus de 25 spécialités : cardiologie, gynécologie-obstétrique, oncologie, neurochirurgie, pédiatrie, orthopédie, chirurgie générale et vasculaire, radiologie, et urgences 24h/24, 7j/7."
   },
   {
     "id": "clinique-muller-ex-lorette",
@@ -22245,7 +22251,8 @@
     "themes": [
       "cliniques-privees"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Clinique privée à Curepipe offrant urgences 24h/24, laboratoire, imagerie (scanner, IRM, échographie, radiographie), maternité, bloc opératoire, soins intensifs et dialyse."
   },
   {
     "id": "city-clinic",
@@ -22260,7 +22267,8 @@
     "themes": [
       "cliniques-privees"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Hôpital multi-spécialités à Port-Louis (60 lits) proposant cardiologie, chirurgie, gynécologie, oncologie, radiologie, neurochirurgie, ophtalmologie, ORL, dialyse rénale et urgences 24h/24."
   },
   {
     "id": "la-clinique-mauricienne",
@@ -22275,7 +22283,8 @@
     "themes": [
       "cliniques-privees"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Polyclinique privée à Moka (Réduit) offrant médecine générale, ophtalmologie, cardiologie, orthopédie, gastro-entérologie, gynécologie-obstétrique, pédiatrie, chirurgie, dentisterie, imagerie, laboratoire et urgences 24h/24."
   },
   {
     "id": "police-station-bel-ombre",
@@ -25500,7 +25509,8 @@
     "themes": [
       "cliniques-privees"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Clinique de médecine générale à Quatre Bornes proposant consultations, bilans de santé et dépistage (diabète), et analyses sanguines."
   },
   {
     "id": "chisti-shifa-clinic",
@@ -25515,7 +25525,8 @@
     "themes": [
       "cliniques-privees"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Clinique privée polyvalente à Port-Louis offrant médecine générale, cardiologie, orthopédie, pédiatrie, gynécologie, ophtalmologie, dermatologie, ainsi que des soins de fertilité et d'esthétique, avec laboratoire et pharmacie sur place."
   },
   {
     "id": "centre-de-chirurgie-esthetique-de-l-ocean-indien",
@@ -25530,7 +25541,8 @@
     "themes": [
       "cliniques-privees"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Centre de chirurgie et médecine esthétique à Trou aux Biches, spécialisé en greffe de cheveux, dentisterie, chirurgie esthétique (corporelle, faciale, mammaire) et médecine esthétique non chirurgicale."
   },
   {
     "id": "bambous-medicare",
@@ -25545,7 +25557,8 @@
     "themes": [
       "cliniques-privees"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Clinique médicale de proximité à Bambous proposant consultations générales, électrocardiogramme, électrostimulation et suivi de perte de poids, ouverte 7 jours sur 7."
   },
   {
     "id": "plantation-vanille-st-julien-hotman",
@@ -29935,7 +29948,8 @@
     "themes": [
       "cliniques-privees"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Centre médical à Grand Baie, dirigé par un cardiologue, proposant consultations générales et spécialisées, rééducation/kinésithérapie, médecine esthétique, thérapies régénératives et greffe de cheveux."
   },
   {
     "id": "mua-insurance",
@@ -30704,7 +30718,8 @@
     "themes": [
       "cliniques-privees"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Hôpital public régional de 150 lits à Souillac, avec service d'urgences, hospitalisation, consultations spécialisées, imagerie, laboratoire, chirurgie et un centre dédié au diabète et à la santé vasculaire."
   },
   {
     "id": "lamco-international-insurance-ltd",
@@ -31173,7 +31188,8 @@
     "themes": [
       "cliniques-privees"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Clinique privée desservant la région de Le Morne/Flic en Flac, proposant consultations généralistes et spécialisées (gynécologie, dentisterie, kinésithérapie), laboratoire d'analyses, radiologie, ECG et ambulance médicalisée 24h/24."
   },
   {
     "id": "high-performance-waterproofing",
@@ -31393,7 +31409,8 @@
     "themes": [
       "cliniques-privees"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Centre de santé communautaire public à Moka offrant consultations, planning familial, vaccinations et éducation à la santé (services de base gratuits)."
   },
   {
     "id": "belle-mare-police-station",
