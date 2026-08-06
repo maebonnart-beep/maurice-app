@@ -1826,7 +1826,8 @@
     "lat": -20.0219739,
     "lng": 57.5787883,
     "themes": [
-      "boulangeries"
+      "boulangeries",
+      "produits-francais"
     ],
     "zone": "nord",
     "description": "Boulangerie-pâtisserie de tradition française, pain au levain naturel, viennoiseries au beurre de Normandie, millefeuilles, macarons, gâteaux sur commande. Chaîne comptant 7 points de vente à Maurice."
@@ -4926,7 +4927,7 @@
     "hours": "Dim 7h-13h, Lun 8h-18h, Mar-Sam 7h-18h",
     "badge": "selection",
     "zone": "ouest",
-    "description": "Boulangerie de Rivière Noire réputée pour ses croissants, ambiance conviviale mêlant influences locales et françaises. Ouvert dim 7h-13h, lun 8h-18h, mar-sam 7h-18h."
+    "description": "Boulangerie de Rivière Noire réputée pour ses croissants, ambiance conviviale mêlant influences locales et françaises."
   },
   {
     "id": "exploration-sous-marine-flic-en-flac",
@@ -5854,19 +5855,6 @@
     ],
     "zone": "nord",
     "description": "Adresse locale face à la plage publique de Pereybère : poissons entiers grillés sur place (vivaneau, capitaine, thazard), fruits de mer et viandes. Ambiance conviviale."
-  },
-  {
-    "id": "isla-padel-grand-baie",
-    "name": "Isla Padel Grand Baie",
-    "category": "food",
-    "address": "MU, La Croisette, Prom. des Artistes, Grand Baie 30525",
-    "phone": "+230 5741 1112",
-    "website": "https://islapadel.mu/",
-    "googleMapsUrl": "https://maps.google.com/?cid=1988431656985338374&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0221543,
-    "lng": 57.5777735,
-    "themes": [],
-    "zone": "nord"
   },
   {
     "id": "le-domaine-de-grand-baie",
@@ -6861,71 +6849,6 @@
     "description": "Restaurant de grillades au cœur de Flic en Flac, viandes marinées, poissons grillés et spécialités locales (boulette chou-chou). Portions généreuses, réservation conseillée le week-end."
   },
   {
-    "id": "lokal-adventure",
-    "name": "Lokal Adventure",
-    "category": "food",
-    "address": "MU, Tamarin Baie de Tamarin, Tamarin 99999",
-    "phone": "+230 5934 8828",
-    "website": "https://lokaladventure.com/",
-    "googleMapsUrl": "https://maps.google.com/?cid=1102588889513155864&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.326921,
-    "lng": 57.3777289,
-    "themes": [],
-    "zone": "ouest"
-  },
-  {
-    "id": "grubmates-food-delivery-tamarin-black-river",
-    "name": "Grubmates - food delivery, Tamarin Black River.",
-    "category": "food",
-    "address": "MU, A3, Tamarin 90904",
-    "phone": "+230 5711 0755",
-    "website": "https://grubmates.io/",
-    "googleMapsUrl": "https://maps.google.com/?cid=13539480244149342717&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.355836,
-    "lng": 57.3656187,
-    "themes": [],
-    "zone": "ouest"
-  },
-  {
-    "id": "super-u",
-    "name": "Super U",
-    "category": "food",
-    "address": "Smart City Cap Tamarin, Royal Road, Tamarin",
-    "phone": "+230 484 0062",
-    "website": "http://www.superu.mu/",
-    "googleMapsUrl": "https://maps.google.com/?cid=17718547834765416395&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.3288391,
-    "lng": 57.3852137,
-    "themes": [],
-    "zone": "ouest"
-  },
-  {
-    "id": "veranda-tamarin-hotel-and-spa",
-    "name": "Veranda Tamarin Hotel and Spa",
-    "category": "food",
-    "address": "Tamarin Bay, Royal Road Tamarin MU, 90921",
-    "phone": "+230 483 3100",
-    "website": "https://www.veranda-resorts.com/en/mauritius-hotel-tamarin",
-    "googleMapsUrl": "https://maps.google.com/?cid=11341844712611684207&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.3268991,
-    "lng": 57.3784187,
-    "themes": [],
-    "zone": "ouest"
-  },
-  {
-    "id": "black-river-gorges-nature-park",
-    "name": "Black River Gorges Nature Park",
-    "category": "food",
-    "address": "Les Gorges Road",
-    "phone": "",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=6756452938985211660&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.3775721,
-    "lng": 57.4135497,
-    "themes": [],
-    "zone": "ouest"
-  },
-  {
     "id": "le-kiosk-ruisseau-creole",
     "name": "Le Kiosk - Ruisseau Creole",
     "category": "food",
@@ -6941,32 +6864,6 @@
     ],
     "zone": "ouest",
     "description": "Restaurant-bar en plein air du centre commercial Ruisseau Créole (La Preneuse), tables sous grands parasols. Sandwichs, salades, poisson et calamars grillés, burgers ; écran géant pour le sport le week-end."
-  },
-  {
-    "id": "legend-hill-residences-spa",
-    "name": "Legend Hill Residences & Spa",
-    "category": "food",
-    "address": "La Plantation Marguery, Rivière Noire",
-    "phone": "+230 484 2035",
-    "website": "https://www.legendhill-mauritius.com/",
-    "googleMapsUrl": "https://maps.google.com/?cid=13511967466805699484&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.3497624,
-    "lng": 57.369781,
-    "themes": [],
-    "zone": "ouest"
-  },
-  {
-    "id": "plage-de-flic-en-flac",
-    "name": "Plage de Flic en Flac",
-    "category": "food",
-    "address": "Flic en Flac",
-    "phone": "",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=351596581513574645&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.2825257,
-    "lng": 57.3648028,
-    "themes": [],
-    "zone": "ouest"
   },
   {
     "id": "ti-mari-restaurant-bar",
@@ -7001,45 +6898,6 @@
     ],
     "zone": "ouest",
     "description": "Restaurant du domaine de Wolmar (600 hectares), servant petit-déjeuner, déjeuner et dîner autour d'une cuisine mêlant saveurs mauriciennes et internationales. À privilégier au coucher du soleil pour la meilleure vue et une ambiance romantique en bord de mer."
-  },
-  {
-    "id": "london-way-supermarket-black-river",
-    "name": "London Way Supermarket Black River",
-    "category": "food",
-    "address": "MU, Rivière Noire 90601",
-    "phone": "+230 483 8888",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=2969971752838478436&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.353357,
-    "lng": 57.3653692,
-    "themes": [],
-    "zone": "ouest"
-  },
-  {
-    "id": "la-place-cap-tamarin",
-    "name": "La Place Cap Tamarin",
-    "category": "food",
-    "address": "MU, Barachois Estate Cap, Tamarin 90901",
-    "phone": "+230 483 4977",
-    "website": "https://www.facebook.com/LaPlaceCapTamarin/",
-    "googleMapsUrl": "https://maps.google.com/?cid=5615807127976202553&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.3278485,
-    "lng": 57.3831894,
-    "themes": [],
-    "zone": "ouest"
-  },
-  {
-    "id": "cocoa-crafters",
-    "name": "Cocoa Crafters",
-    "category": "food",
-    "address": "J9V8+4WM Rivière Noire, Maurice Bâtiment La Preneuse MU, shop 5, Tamarin 90608",
-    "phone": "+230 5729 7385",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=10779353301087393037&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.3571875,
-    "lng": 57.3673125,
-    "themes": [],
-    "zone": "ouest"
   },
   {
     "id": "paradis-beachcomber-golf-resort-spa",
@@ -7608,19 +7466,6 @@
     "description": "Petite gargote de bord de route à La Gaulette, nouilles frites, bouillie et cuisine locale simple avec options végé/viande/poisson, portions généreuses. Propriétaire passionné, connu pour rester ouvert malgré les alertes cycloniques."
   },
   {
-    "id": "chamarel-view-point",
-    "name": "Chamarel View Point",
-    "category": "food",
-    "address": "Baie du Cap – Chamarel Rd",
-    "phone": "",
-    "website": "https://wowmauritius.com/2025/03/24/mauritius-attractions-the-7-colored-earth-and-chamarel-waterfall/",
-    "googleMapsUrl": "https://maps.google.com/?cid=923483892648852162&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.4212564,
-    "lng": 57.3864302,
-    "themes": [],
-    "zone": "sud"
-  },
-  {
     "id": "le-plage-restaurant-dinarobin-beachcomber",
     "name": "Le Plage (Restaurant Dinarobin Beachcomber)",
     "category": "food",
@@ -7639,32 +7484,6 @@
     "description": "Restaurant de plage de l'hôtel Dinarobin Beachcomber (100 couverts), au pied du Morne Brabant, face à une plage de sable blanc et un lagon turquoise. Spécialités de poissons et fruits de mer locaux, service le midi tous les jours, dîner sur la plage un soir par semaine en saison."
   },
   {
-    "id": "le-morne-tamarin-viewpoint",
-    "name": "Le morne Tamarin Viewpoint",
-    "category": "food",
-    "address": "H9HP+GH4, Chamarel",
-    "phone": "",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=2166585573967639460&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.4212382,
-    "lng": 57.3864687,
-    "themes": [],
-    "zone": "sud"
-  },
-  {
-    "id": "chamarel-waterfall-viewpoint",
-    "name": "Chamarel Waterfall Viewpoint",
-    "category": "food",
-    "address": "H94M+QH, Chamarel",
-    "phone": "",
-    "website": "https://www.chamarel7colouredearth.com/",
-    "googleMapsUrl": "https://maps.google.com/?cid=14808461227091775137&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.4430932,
-    "lng": 57.3839598,
-    "themes": [],
-    "zone": "sud"
-  },
-  {
     "id": "umami",
     "name": "Umami",
     "category": "food",
@@ -7680,19 +7499,6 @@
     ],
     "zone": "sud",
     "description": "Restaurant japonais/asiatique de l'hôtel Beachcomber Dinarobin (Le Morne), en bordure de piscine sous les palmiers. Très bien noté (4,8/5), ouvert le soir uniquement."
-  },
-  {
-    "id": "view-point-chamarel-carpark",
-    "name": "View Point Chamarel (Carpark)",
-    "category": "food",
-    "address": "H9JJ+XJ, Case Noyale",
-    "phone": "",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=2114892423270830152&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.4175264,
-    "lng": 57.3815921,
-    "themes": [],
-    "zone": "ouest"
   },
   {
     "id": "ocean-vibes",
@@ -7728,19 +7534,6 @@
     ],
     "zone": "sud",
     "description": "Restaurant de cuisine indienne progressive au St. Regis Le Morne, mêlant tradition et innovation : kebabs de poulet malai, butter chicken, paneer tikka au pesto de coriandre."
-  },
-  {
-    "id": "nadi-miel-chamarel",
-    "name": "Nadi'Miel Chamarel",
-    "category": "food",
-    "address": "Jean-François Quint Rd, Chamarel",
-    "phone": "+230 5253 8760",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=13191360546103437183&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.4257913,
-    "lng": 57.3915033,
-    "themes": [],
-    "zone": "sud"
   },
   {
     "id": "molakaz-bistrot-work-on-reservation",
@@ -8197,32 +7990,6 @@
     ],
     "zone": "sud",
     "description": "Restaurant du Domaine de Saint-Aubin, ancienne propriété sucrière fondée en 1778, dans une demeure coloniale classée. Cuisine mauricienne aux produits du domaine : poulet vanille ou créole, salade de palmiste, marlin fumé."
-  },
-  {
-    "id": "andrea-lodges",
-    "name": "Andrea Lodges",
-    "category": "food",
-    "address": "St Aubin",
-    "phone": "+230 5727 8744",
-    "website": "http://www.andrea-lodges.com/",
-    "googleMapsUrl": "https://maps.google.com/?cid=1171677285085813046&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.5177441,
-    "lng": 57.5530581,
-    "themes": [],
-    "zone": "sud"
-  },
-  {
-    "id": "so-sofitel-mauritius",
-    "name": "SO Sofitel Mauritius",
-    "category": "food",
-    "address": "MU, Beau Champs, Royal Road, Bel Ombre 61008",
-    "phone": "+230 605 5800",
-    "website": "http://sofitel.accor.com/hotels/6707?merchantid=seo-maps-MU-6707&sourceid=aw-cen&utm_source=google+Maps&utm_medium=seo+maps&utm_campaign=seo+maps&utm_term=Sofitel-Launch",
-    "googleMapsUrl": "https://maps.google.com/?cid=3514937622748465639&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.5093527,
-    "lng": 57.4357638,
-    "themes": [],
-    "zone": "est"
   },
   {
     "id": "blue-bar",
@@ -8879,19 +8646,6 @@
     "description": "Restaurant chinois local de Poste de Flacq."
   },
   {
-    "id": "cook-with-luca",
-    "name": "Cook With Luca",
-    "category": "food",
-    "address": "ALLAMANDA ROAD, Quatre Cocos",
-    "phone": "+230 5835 1337",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=7072534284327991378&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.2009255,
-    "lng": 57.765798,
-    "themes": [],
-    "zone": "est"
-  },
-  {
     "id": "chinese-gourmet",
     "name": "Chinese Gourmet",
     "category": "food",
@@ -9159,45 +8913,6 @@
     "description": "Petite adresse décorée avec soin à Trou d'Eau Douce tenue par Tarik et Aurélie, ambiance chaleureuse. Cuisine plutôt libanaise (tapas) et burgers."
   },
   {
-    "id": "friday-attitude-hotel",
-    "name": "Friday Attitude Hotel",
-    "category": "food",
-    "address": "B59, Royal Road Belle Mare MU, Trou d'Eau Douce 742CU001",
-    "phone": "+230 402 7070",
-    "website": "https://hotels-attitude.com/en/friday-attitude",
-    "googleMapsUrl": "https://maps.google.com/?cid=2335362142634286642&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.2325092,
-    "lng": 57.803885,
-    "themes": [],
-    "zone": "est"
-  },
-  {
-    "id": "la-koquillishe",
-    "name": "La Koquillishe",
-    "category": "food",
-    "address": "Trou d'Eau Douce",
-    "phone": "+230 5976 8645",
-    "website": "http://www.lakoquillishe.com/",
-    "googleMapsUrl": "https://maps.google.com/?cid=1210452619120410095&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.2385528,
-    "lng": 57.7895344,
-    "themes": [],
-    "zone": "est"
-  },
-  {
-    "id": "colibri-beach-house",
-    "name": "Colibri Beach House",
-    "category": "food",
-    "address": "QQ6V+W9X, Trou d'Eau Douce",
-    "phone": "",
-    "website": "https://colibribeach.hoteelguru.com/",
-    "googleMapsUrl": "https://maps.google.com/?cid=15285443143570421008&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.2376486,
-    "lng": 57.793471,
-    "themes": [],
-    "zone": "est"
-  },
-  {
     "id": "les-alizes",
     "name": "Les Alizés",
     "category": "food",
@@ -9215,19 +8930,6 @@
     "badge": "selection",
     "zone": "est",
     "description": "Petite table de Trou d'Eau Douce tenue par Noel, cuisine asiatique/mauricienne abordable, réputée pour ses boulettes et nouilles ; très bien notée (4,8/5)."
-  },
-  {
-    "id": "quatre-cocos-beach",
-    "name": "Quatre Cocos beach",
-    "category": "food",
-    "address": "RQ2J+CXR, Quatre Cocos",
-    "phone": "",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=12203735894504179347&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.1988549,
-    "lng": 57.7830427,
-    "themes": [],
-    "zone": "est"
   },
   {
     "id": "coin-bistro-by-casse-croute",
@@ -9640,20 +9342,6 @@
     "description": "Petite pizzeria familiale de Mahébourg tenue par Nini, pizzas maison à pâte croustillante, livraison et emporter. Très bien notée (5/5)."
   },
   {
-    "id": "astroea-beach-mauritius",
-    "name": "Astroea Beach Mauritius",
-    "category": "food",
-    "address": "Coastal Road, Pointe d'Esny, Mahebourg",
-    "phone": "+230 631 4282",
-    "website": "https://bvhospitality.mu/astroea-beach-mauritius/",
-    "googleMapsUrl": "https://maps.google.com/?cid=4728381908586370418&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.436045,
-    "lng": 57.726454,
-    "themes": [],
-    "zone": "sud",
-    "description": "Restaurant Etoile de Mer de l'hôtel Astroea Beach, les pieds dans le lagon de Pointe d'Esny. Cuisine familiale du chef Tommy Veerapatren (formé au Preskil et au Heritage Le Telfair), inspirée de ses souvenirs d'enfance : farata maison, curry de poisson, produits locaux. 96% de recommandation sur la page Facebook (227 avis)."
-  },
-  {
     "id": "the-bamboo-restaurant-bar",
     "name": "The Bamboo Restaurant & Bar",
     "category": "food",
@@ -9672,33 +9360,6 @@
     "description": "Bar-restaurant animé de Blue Bay, pizzas au feu de bois et cuisine créole aux sauces maison, ambiance festive avec musique live."
   },
   {
-    "id": "nativ-lodge-spa",
-    "name": "Nativ Lodge & Spa",
-    "category": "food",
-    "address": "Tombeau Lane, Mahebourg",
-    "phone": "+230 631 1058",
-    "website": "http://www.nativlodge-spa.com/",
-    "googleMapsUrl": "https://maps.google.com/?cid=3772455338355153646&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.4150946,
-    "lng": 57.7025073,
-    "themes": [],
-    "zone": "sud",
-    "description": "Restaurant au décor rustique fait de matériaux recyclés, en plein air près d'une rivière (geckos et grenouilles en soirée). Avis mitigés : plusieurs clients saluent des plats savoureux (frites excellentes, gâteau au chocolat recommandé) et un personnel attentionné, d'autres pointent des soucis d'organisation lors de travaux de rénovation."
-  },
-  {
-    "id": "blue-bay-marine-park",
-    "name": "Blue Bay Marine Park",
-    "category": "food",
-    "address": "Blue Bay",
-    "phone": "+230 5915 1351",
-    "website": "https://tantulika125.wixsite.com/blue-bay-marine-park",
-    "googleMapsUrl": "https://maps.google.com/?cid=7366073119097956327&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.4448478,
-    "lng": 57.709801,
-    "themes": [],
-    "zone": "sud"
-  },
-  {
     "id": "saltyvibes",
     "name": "SaltyVibes",
     "category": "activites",
@@ -9713,99 +9374,6 @@
     ],
     "zone": "sud",
     "description": "Sorties en bateau privées à Blue Bay, navigation dans le lagon avec BBQ sur la plage ou option éco-responsable. Structure locale mauricienne mettant en avant son expertise régionale."
-  },
-  {
-    "id": "mahebourg-waterfront",
-    "name": "Mahébourg Waterfront",
-    "category": "food",
-    "address": "HPV5+XWJ, Mahébourg",
-    "phone": "+230 5946 9721",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=8905464183716599138&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.4050275,
-    "lng": 57.7097567,
-    "themes": [],
-    "zone": "sud"
-  },
-  {
-    "id": "chantauvent-guesthouse-maison-d-hotes",
-    "name": "Chantauvent Guesthouse / Maison d'Hotes",
-    "category": "food",
-    "address": "Route cotiere HP49+2F4 Pointe d Esny, Mahebourg",
-    "phone": "+230 631 9614",
-    "website": "http://www.chantauvent.com/",
-    "googleMapsUrl": "https://maps.google.com/?cid=6867280026819548610&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.4449929,
-    "lng": 57.7187004,
-    "themes": [],
-    "zone": "sud",
-    "description": "Restaurant vue mer et snack 'The Spot' côté jardin, au sein de cette guesthouse de Pointe d'Esny posée sur un lagon superbe. Avis partagés : petit-déjeuner copieux et personnel attentionné saluent par plusieurs clients, menu correct sans plus pour d'autres. Emplacement jugé excellent, établissement qui gagnerait à être rénové."
-  },
-  {
-    "id": "chillpill-guest-house",
-    "name": "Chillpill Guest House",
-    "category": "food",
-    "address": "6 Rue Sivananda, Mahebourg",
-    "phone": "+230 5259 5324",
-    "website": "https://www.chillpillguesthouse.com/",
-    "googleMapsUrl": "https://maps.google.com/?cid=17759978354002528000&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.4121704,
-    "lng": 57.7110761,
-    "themes": [],
-    "zone": "sud",
-    "description": "Restaurant en bord d'eau de cette guesthouse de Mahébourg, avec vue sur le lagon et la baie du Vieux Grand Port — possibilité de manger sur place ou en chambre. Accueil chaleureux et cadre de rêve unanimement salués par les clients, établissement très propre."
-  },
-  {
-    "id": "explora-prestige-guesthouse",
-    "name": "Explora Prestige - Guesthouse",
-    "category": "food",
-    "address": "Blue Bay Link Road, Blue Bay",
-    "phone": "+230 5939 3309",
-    "website": "https://www.exploraprestige.com/",
-    "googleMapsUrl": "https://maps.google.com/?cid=3017584434507473506&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.4419429,
-    "lng": 57.7122073,
-    "themes": [],
-    "zone": "sud"
-  },
-  {
-    "id": "blue-bay-beach",
-    "name": "Blue Bay Beach",
-    "category": "food",
-    "address": "Blue Bay Beach, Blue Bay NCG Rd, Blue Bay",
-    "phone": "+230 5252 6567",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=11287047452636957070&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.4441928,
-    "lng": 57.7164692,
-    "themes": [],
-    "zone": "sud"
-  },
-  {
-    "id": "la-peninsula-mauritius",
-    "name": "La Peninsula Mauritius",
-    "category": "food",
-    "address": "HP38+XW5, Coastal Rd, Blue Bay",
-    "phone": "",
-    "website": "https://www.hotelscheck-in.com/lapeninsulamauritius/en/",
-    "googleMapsUrl": "https://maps.google.com/?cid=16089855110617734159&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.4451136,
-    "lng": 57.7173644,
-    "themes": [],
-    "zone": "sud"
-  },
-  {
-    "id": "la-cambuse-beach",
-    "name": "La Cambuse Beach",
-    "category": "food",
-    "address": "GMVX+XRM, Plaine Magnien",
-    "phone": "",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=13287811304313231758&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.455025,
-    "lng": 57.6995352,
-    "themes": [],
-    "zone": "sud"
   },
   {
     "id": "ile-des-deux-cocos",
@@ -9823,33 +9391,6 @@
     ],
     "zone": "sud",
     "description": "Île privée accessible en 5 minutes de bateau depuis la jetée de Blue Bay, au sein du parc marin. Buffet généreux préparé en plein air (grillades, salades du jardin) dans un cadre insulaire exceptionnel, ancienne propriété d'un gouverneur britannique des années 1920."
-  },
-  {
-    "id": "hotel-les-aigrettes",
-    "name": "Hotel Les Aigrettes",
-    "category": "food",
-    "address": "HPQ6+F32, Rue du Chaland, Mahébourg",
-    "phone": "+230 631 9094",
-    "website": "https://lesaigrettes.hotelf1.top/",
-    "googleMapsUrl": "https://maps.google.com/?cid=15714163199669840059&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.4113653,
-    "lng": 57.7101562,
-    "themes": [],
-    "zone": "sud"
-  },
-  {
-    "id": "preskil-island-resort",
-    "name": "Preskil Island Resort",
-    "category": "food",
-    "address": "Pointe Jerome, HPHC+6QX, Mahebourg",
-    "phone": "+230 604 1000",
-    "website": "https://preskilislandresort.mu/",
-    "googleMapsUrl": "https://maps.google.com/?cid=1328625729415948709&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.4218143,
-    "lng": 57.7219741,
-    "themes": [],
-    "zone": "sud",
-    "description": "Le Preskil Island Resort propose trois restaurants avec vue sur l'océan (dont le 1810, accès plage direct). Buffet varié et frais (pizzas, pâtes, salades, rougail, poisson grillé), salami de cerf apprécié. Avis globalement positifs sur la qualité et le service, quelques réserves sur le prix du restaurant de plage et une offre mauricienne jugée en retrait."
   },
   {
     "id": "the-spot-mauritius",
@@ -9870,19 +9411,6 @@
     "description": "Café-brunch en bord de plage à Pointe d'Esny, ambiance rustique, cuisine créole et fruits de mer (pizza, calamars), bons cocktails."
   },
   {
-    "id": "aqua-soleil-mauritius",
-    "name": "Aqua Soleil Mauritius",
-    "category": "food",
-    "address": "Blue Bay",
-    "phone": "",
-    "website": "https://tantulika1.wixsite.com/tour/mauritius",
-    "googleMapsUrl": "https://maps.google.com/?cid=9567869243168682125&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.4453788,
-    "lng": 57.702048,
-    "themes": [],
-    "zone": "sud"
-  },
-  {
     "id": "coco-de-zil-mauritius",
     "name": "Coco De Zil Mauritius",
     "category": "activites",
@@ -9897,19 +9425,6 @@
     ],
     "zone": "sud",
     "description": "Excursions en bateau/catamaran au départ de la jetée de Pointe Jérôme (Mahébourg) vers l'Île aux Cerfs, avec déjeuner simple servi sur l'île. Guides décrits comme sympathiques et attentifs, tarif jugé correct par rapport à la concurrence."
-  },
-  {
-    "id": "le-bouchon-public-beach",
-    "name": "Le Bouchon Public Beach",
-    "category": "food",
-    "address": "Le Bouchon Public Beach",
-    "phone": "+230 5716 3411",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=14306707779467193518&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.469506,
-    "lng": 57.6810926,
-    "themes": [],
-    "zone": "est"
   },
   {
     "id": "golf-specialist-mauritius-ltd",
@@ -10234,19 +9749,6 @@
     ],
     "zone": "centre",
     "description": "Une des adresses indiennes les plus courues de l'île, appréciée par toutes les communautés. Décor immersif et portions généreuses ; réservation conseillée le week-end."
-  },
-  {
-    "id": "domaine-les-pailles-2",
-    "name": "Domaine Les Pailles",
-    "category": "food",
-    "address": "Les Pailles Avenue Emerald, Port Louis",
-    "phone": "+230 5770 1064",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=17467035142178210687&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.1928576,
-    "lng": 57.4912762,
-    "themes": [],
-    "zone": "centre"
   },
   {
     "id": "restaurant-le-courtyard",
@@ -10578,19 +10080,6 @@
     "description": "Restaurant cantonais de Quatre Bornes réputé pour son dim sum servi dès 11h (vapeur, frit, cuit au four), canard laqué et porc à l'aigre-douce."
   },
   {
-    "id": "bagatelle-mall-of-mauritius",
-    "name": "Bagatelle - Mall of Mauritius",
-    "category": "food",
-    "address": "Bagatelle, Bagatelle Mall, Moka",
-    "phone": "+230 460 0707",
-    "website": "https://www.ascenciamalls.com/bagatelle-mall",
-    "googleMapsUrl": "https://maps.google.com/?cid=7280923910619814227&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.2254142,
-    "lng": 57.4967967,
-    "themes": [],
-    "zone": "centre"
-  },
-  {
     "id": "beyond-burgers",
     "name": "Beyond Burgers",
     "category": "food",
@@ -10813,19 +10302,6 @@
     "description": "Restaurant chinois halal de Port Louis, spécialisé nouilles tirées à la main façon Lanzhou et raviolis. Portions généreuses, espace prière disponible ; très bien noté (4,8/5)."
   },
   {
-    "id": "la-maison-du-gourmet",
-    "name": "La Maison du Gourmet",
-    "category": "food",
-    "address": "Business Centre, Montagne Ory Road, 80813, Moka",
-    "phone": "+230 433 5652",
-    "website": "https://www.lamaisondugourmet.shop/",
-    "googleMapsUrl": "https://maps.google.com/?cid=18080755012198366233&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.2250377,
-    "lng": 57.5060374,
-    "themes": [],
-    "zone": "centre"
-  },
-  {
     "id": "la-plaz-beach-grill",
     "name": "La Plaz Beach Grill",
     "category": "food",
@@ -10893,19 +10369,6 @@
     ],
     "zone": "centre",
     "description": "Enseigne internationale de fast-food à l'angle des rues Sir William Newton et Léoville L'Homme (Port Louis), salle pouvant accueillir jusqu'à 105 personnes, livraison le midi pour les bureaux voisins."
-  },
-  {
-    "id": "helvetia-shopping-centre",
-    "name": "Helvetia Shopping Centre",
-    "category": "food",
-    "address": "QGGG+468, St Pierre",
-    "phone": "+230 432 6401",
-    "website": "https://ascenciamalls.com/les-allees",
-    "googleMapsUrl": "https://maps.google.com/?cid=15241955452140046880&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.2247043,
-    "lng": 57.5255758,
-    "themes": [],
-    "zone": "centre"
   },
   {
     "id": "nando-s-bagatelle",
@@ -13241,19 +12704,6 @@
     "description": "Snack familial de la plage de Trou aux Biches fondé en 1979, cuisine locale abordable (repas complet dès 3€), rotis/farathas au poulet. Très bien noté (4,9/5)."
   },
   {
-    "id": "mont-choisy-swimming-seaside",
-    "name": "Mont Choisy swimming seaside",
-    "category": "food",
-    "address": "XHJ4+R99, Grand Baie",
-    "phone": "",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=6201029223008778051&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0179576,
-    "lng": 57.555993,
-    "themes": [],
-    "zone": "nord"
-  },
-  {
     "id": "mam-gouz",
     "name": "Mam Gouz",
     "category": "food",
@@ -13525,10 +12975,12 @@
     "lat": -20.0123895,
     "lng": 57.5929855,
     "themes": [
-      "boucheries"
+      "boucheries",
+      "produits-francais"
     ],
     "zone": "nord",
-    "description": "Halles à la française de Grand Baie réunissant boucherie, charcuterie, fromagerie, poissonnerie et maraîcher sous un même toit, produits français et locaux."
+    "description": "Halles à la française de Grand Baie réunissant boucherie, charcuterie, fromagerie, poissonnerie et maraîcher sous un même toit, produits français et locaux.",
+    "hours": "Lun-Sam 9h30-19h, Dim et jours fériés 9h-12h30"
   },
   {
     "id": "meat-me-butchery-deli",
@@ -13911,6 +13363,7 @@
     "lat": -20.0130992,
     "lng": 57.5863101,
     "themes": [
+      "restaurants",
       "boulangeries",
       "europeenne",
       "cafes-terrasses",
@@ -16881,19 +16334,6 @@
     "description": "Restaurant thaï du Hilton Mauritius Resort & Spa (Wolmar, Flic en Flac), dirigé par la cheffe Karnsinee Thirapuncharoj, pavillon thaï romantique et cocktails d'inspiration locale. Options végétariennes et véganes, dîner uniquement, fermé le lundi."
   },
   {
-    "id": "sugar-beach",
-    "name": "Sugar Beach",
-    "category": "food",
-    "address": "MU, Wolmar, Coastal Rd, Flic en Flac 90503",
-    "phone": "+230 403 3300",
-    "website": "https://www.yoursunlife.com/sugarbeachmauritius/?utm_source=google&utm_medium=organic&utm_campaign=google_local_sugarbeach",
-    "googleMapsUrl": "https://maps.google.com/?cid=14010051229176848781&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.3036689,
-    "lng": 57.3656419,
-    "themes": [],
-    "zone": "ouest"
-  },
-  {
     "id": "private-chef-mauritius",
     "name": "Private Chef Mauritius",
     "category": "food",
@@ -18863,19 +18303,6 @@
     "entryPrice": "Gratuit"
   },
   {
-    "id": "la-vieille-cheminee",
-    "name": "La Vieille Cheminee",
-    "category": "food",
-    "address": "Main Road Chamarel MU, 90403",
-    "phone": "+230 483 4249",
-    "website": "https://www.lavieillecheminee.com/",
-    "googleMapsUrl": "https://maps.google.com/?cid=383126218730179435&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.4406171,
-    "lng": 57.3918137,
-    "themes": [],
-    "zone": "sud"
-  },
-  {
     "id": "chamarel-coffee-plantation-tour",
     "name": "Chamarel Coffee Plantation Tour",
     "category": "activites",
@@ -20047,19 +19474,6 @@
     "description": "Petite adresse de restauration rapide (burgers, frites) route Alamanda au Morne Brabant, appréciée pour son cadre naturel environnant."
   },
   {
-    "id": "plage-du-morne",
-    "name": "🏖) Plage Du MORNE",
-    "category": "food",
-    "address": "Brabant, G8X7+JHR, Le Morne",
-    "phone": "",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=18242673361527985531&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.4508755,
-    "lng": 57.3138767,
-    "themes": [],
-    "zone": "sud"
-  },
-  {
     "id": "carrefour",
     "name": "Carrefour",
     "category": "food",
@@ -20891,7 +20305,8 @@
     "lat": -20.2796512,
     "lng": 57.4020641,
     "themes": [
-      "boulangeries"
+      "boulangeries",
+      "produits-francais"
     ],
     "zone": "ouest",
     "description": "Boulangerie-pâtisserie française du Cascavelle Mall (Flic en Flac) : pains artisanaux, viennoiseries et pâtisseries sucrées/salées préparés frais chaque jour."
@@ -22335,19 +21750,6 @@
     "description": "Restaurant perché dans les arbres au sein de La Vanille Nature Park (Rivière des Anguilles), spécialité viande de crocodile (brochettes, cari, burger). Avis mitigés sur le rapport quantité/prix."
   },
   {
-    "id": "maconde-viewpoint",
-    "name": "Maconde Viewpoint",
-    "category": "food",
-    "address": "B9",
-    "phone": "+230 5797 7450",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=8880419420183328100&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.4911109,
-    "lng": 57.371133,
-    "themes": [],
-    "zone": "ouest"
-  },
-  {
     "id": "beach-rouge-lux-grand-gaube",
     "name": "Beach Rouge - LUX* Grand Gaube",
     "category": "food",
@@ -22362,32 +21764,6 @@
     ],
     "zone": "nord",
     "description": "Beach club et restaurant du LUX* Grand Gaube, cuisine méditerranéenne (bar à mozzarella) servie sur le sable, éclairage rouge caractéristique au coucher du soleil, DJ résident pour une ambiance festive."
-  },
-  {
-    "id": "bel-ombre-public-beach",
-    "name": "Bel Ombre Public Beach",
-    "category": "food",
-    "address": "F9WX+8WV, St Martin",
-    "phone": "",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=9691104728444070345&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.504593,
-    "lng": 57.399579,
-    "themes": [],
-    "zone": "ouest"
-  },
-  {
-    "id": "telfair-plage-publique",
-    "name": "Telfair Plage Publique",
-    "category": "food",
-    "address": "Telfair Plage Publique, Souillac",
-    "phone": "",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=3764984874816985918&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.5215282,
-    "lng": 57.522102,
-    "themes": [],
-    "zone": "sud"
   },
   {
     "id": "bus-snack",
@@ -24461,19 +23837,6 @@
       "malls"
     ],
     "zone": "centre"
-  },
-  {
-    "id": "poivre-d-or",
-    "name": "Poivre d'Or",
-    "category": "food",
-    "address": "RQM8+7GF, Poste de Flacq",
-    "phone": "+230 415 5918",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=17905969580795792854&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.1684156,
-    "lng": 57.7659135,
-    "themes": [],
-    "zone": "est"
   },
   {
     "id": "happy-world-house",
@@ -26778,7 +26141,7 @@
     "category": "food",
     "address": "Avenue Queen Mary, Floréal",
     "phone": "+230 686 3458",
-    "website": "",
+    "website": "https://epicerie.mu/",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=La%20Clef%20des%20Champs%20Flor%C3%A9al%20Mauritius",
     "lat": -20.3109637,
     "lng": 57.5044125,
@@ -26787,7 +26150,7 @@
       "epiceries-specialisees"
     ],
     "zone": "centre",
-    "description": "Produits fermiers locaux sélectionnés par Jacqueline Dalais (La Clef des Champs) : légumes péi (pipengaye, brèdes, chouchou), fruit à pain, manioc, patate douce."
+    "description": "Épicerie fine (même enseigne que Grand Baie/Tamarin/Vacoas-Phoenix), attenante au restaurant La Clef des Champs à Floréal : viandes, charcuterie, fromages affinés, truffe, vins et fine épicerie."
   },
   {
     "id": "eden-beach-grand-baie",
@@ -34774,5 +34137,22 @@
     "duration": "Demi-journée à 2 jours selon la formule",
     "entryPrice": "À partir de 80€/pers (canyoning) ; randonnée sur devis",
     "description": "Pionnier des sports outdoor à Maurice (fondé en 1999) : randonnée, canyoning aux 7 Cascades et à Eau Bleue, trekking de 2 jours et escalade, encadrés par des guides certifiés."
+  },
+  {
+    "id": "lartisan-boulanger-mahebourg",
+    "name": "L'artisan boulanger",
+    "category": "food",
+    "address": "Corner De La Place Street & Des Creole Street, Mahébourg",
+    "phone": "+230 5258 4009",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/place/L%27artisan+boulanger/@-20.4097469,57.7069008,17z/data=!3m1!4b1!4m6!3m5!1s0x217cf132704423bd:0xe60d95c414959c86!8m2!3d-20.4097469!4d57.7069008",
+    "lat": -20.4097469,
+    "lng": 57.7069008,
+    "themes": [
+      "boulangeries",
+      "produits-francais"
+    ],
+    "zone": "sud",
+    "description": "Boulangerie-pâtisserie-café de Mahébourg : pains et viennoiseries pétris quotidiennement, pizzas et market express."
   }
 ]
