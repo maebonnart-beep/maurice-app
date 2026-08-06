@@ -11816,7 +11816,7 @@
   {
     "id": "deals-mu",
     "name": "Deals.mu",
-    "category": "activites",
+    "category": "utiles",
     "address": "MU, The Octopus Building, Royal Road, Grand Baie 30510",
     "phone": "+230 269 1500",
     "website": "https://deals.mu/",
@@ -11824,7 +11824,7 @@
     "lat": -20.0085756,
     "lng": 57.5598746,
     "themes": [
-      "activites-enfants-famille"
+      "plateformes-multiservices"
     ],
     "zone": "nord",
     "description": "Plateforme locale de bons plans et réservations proposant des tarifs réduits pour résidents mauriciens sur hôtels, appartements et villas de l'île."
@@ -25965,7 +25965,8 @@
     "lat": -20.3277142,
     "lng": 57.5324951,
     "themes": [
-      "culture-patrimoine"
+      "culture-patrimoine",
+      "cours-de-cuisine"
     ],
     "hours": "Tous les jours 9h-17h",
     "zone": "centre",
