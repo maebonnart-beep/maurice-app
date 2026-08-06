@@ -12001,22 +12001,6 @@
     "zone": "nord"
   },
   {
-    "id": "basketball-playground-grand-baie",
-    "name": "Basketball playground Grand Baie",
-    "category": "activites",
-    "address": "XHVJ+Q9R, Grand Baie",
-    "phone": "",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=14565623040983549265&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0055185,
-    "lng": 57.5808789,
-    "themes": [
-      "complexes-sportifs"
-    ],
-    "sportsListed": "Terrain de basketball public en plein air",
-    "zone": "nord"
-  },
-  {
     "id": "energia-mauritius",
     "name": "Energia Mauritius",
     "category": "activites",
@@ -15727,21 +15711,6 @@
     "kidsActivities": true,
     "zone": "ouest",
     "description": "Plus grand complexe multisports de l'ouest de l'île à Cascavelle/Uniciti, avec piscine de 50 m à 10 couloirs, terrains de foot/rugby, terrains de foot à 5, courts de tennis, terrain de basket, terrains de pétanque et piste de jogging."
-  },
-  {
-    "id": "sport-center",
-    "name": "Sport Center",
-    "category": "activites",
-    "address": "Wolmar Coastal Rd, Flic en Flac",
-    "phone": "",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=1598022471090440872&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.3022877,
-    "lng": 57.3654989,
-    "themes": [
-      "complexes-sportifs"
-    ],
-    "zone": "ouest"
   },
   {
     "id": "sport-fishing-mauritius",
@@ -24162,21 +24131,6 @@
     "zone": "sud"
   },
   {
-    "id": "belle-mare-outdoor-centre",
-    "name": "Belle Mare Outdoor Centre",
-    "category": "activites",
-    "address": "RQ3G+JQW, Coastal Road, Quatre Cocos",
-    "phone": "",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=16416532189236065396&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.1958933,
-    "lng": 57.776964,
-    "themes": [
-      "complexes-sportifs"
-    ],
-    "zone": "est"
-  },
-  {
     "id": "ile-aux-cerfs-watersports",
     "name": "Ile Aux Cerfs Watersports",
     "category": "activites",
@@ -28324,20 +28278,6 @@
     "description": "Club de padel du domaine Mon Rocher à Beau Plan, courts aux normes de la Fédération internationale de padel, programme d'initiation encadré et location d'équipement."
   },
   {
-    "id": "cue-club-snooker-pool",
-    "name": "Cue Club (Snooker & Pool)",
-    "category": "activites",
-    "address": "MU, Arcade Dabee, Coastal Road, Grand Baie 30550",
-    "phone": "+230 5858 0082",
-    "googleMapsUrl": "https://maps.google.com/?cid=12185135718223987325&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0150542,
-    "lng": 57.5823732,
-    "themes": [
-      "complexes-sportifs"
-    ],
-    "zone": "nord"
-  },
-  {
     "id": "dharel-barbell-gym",
     "name": "Dharel Barbell Gym",
     "category": "activites",
@@ -28953,20 +28893,6 @@
     "zone": "est"
   },
   {
-    "id": "gino-x-max",
-    "name": "Gino x Max",
-    "category": "activites",
-    "address": "M96G+V2P Jacaranda des, Av. des Jacarandas, Tamarin",
-    "phone": "+230 5428 9501",
-    "googleMapsUrl": "https://maps.google.com/?cid=12455791884702898423&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.3377911,
-    "lng": 57.3750805,
-    "themes": [
-      "complexes-sportifs"
-    ],
-    "zone": "ouest"
-  },
-  {
     "id": "reaper-crew-gym",
     "name": "Reaper Crew Gym",
     "category": "activites",
@@ -29096,19 +29022,6 @@
     "zone": "centre"
   },
   {
-    "id": "vanilla-connect",
-    "name": "Vanilla Connect",
-    "category": "activites",
-    "address": "Grande Riviere Noire",
-    "googleMapsUrl": "https://maps.google.com/?cid=4727205224147236036&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.3691814,
-    "lng": 57.3799888,
-    "themes": [
-      "complexes-sportifs"
-    ],
-    "zone": "ouest"
-  },
-  {
     "id": "padel-port-chambly",
     "name": "Padel Port Chambly",
     "category": "activites",
@@ -29200,33 +29113,6 @@
     "zone": "centre",
     "sportsListed": "Tennis. Abonnement à partir de Rs 1200/mois.",
     "description": "Académie de tennis à Rose Hill proposant mini-tennis, cours collectifs et individuels, tennis social et entraînement pour joueurs de niveau élite."
-  },
-  {
-    "id": "football-field",
-    "name": "Football field",
-    "category": "activites",
-    "address": "1 Impass Dorades Morcellement Anna, Eglise St. Anna, Flic en Flac",
-    "googleMapsUrl": "https://maps.google.com/?cid=4018264653354040579&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.277645,
-    "lng": 57.368447,
-    "themes": [
-      "complexes-sportifs"
-    ],
-    "zone": "ouest"
-  },
-  {
-    "id": "born-to-kite",
-    "name": "Born To Kite",
-    "category": "activites",
-    "address": "Beachfront Kitelagoon, Le Morne",
-    "phone": "+230 5487 9629",
-    "googleMapsUrl": "https://maps.google.com/?cid=16583647237779172102&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.4638821,
-    "lng": 57.3181116,
-    "themes": [
-      "complexes-sportifs"
-    ],
-    "zone": "ouest"
   },
   {
     "id": "ion-club-dinarobin",
@@ -29582,20 +29468,6 @@
     "zone": "centre"
   },
   {
-    "id": "panthers-fc-sub-office",
-    "name": "Panthers FC Sub Office",
-    "category": "activites",
-    "address": "Community Center Road, Chemin Grenier",
-    "phone": "+230 5749 2100",
-    "googleMapsUrl": "https://maps.google.com/?cid=8377577169393560759&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.4855589,
-    "lng": 57.4726565,
-    "themes": [
-      "complexes-sportifs"
-    ],
-    "zone": "sud"
-  },
-  {
     "id": "personal-trainer",
     "name": "Personal trainer",
     "category": "activites",
@@ -29902,32 +29774,6 @@
     "description": "Complexe multisports géré par le Mauritius Sports Council, doté d'installations pour le volleyball, le handball, le basketball, le tennis et le football."
   },
   {
-    "id": "bel-mont-football-ground",
-    "name": "Bel Mont Football Ground",
-    "category": "activites",
-    "address": "WMX9+3H8, Goodlands",
-    "googleMapsUrl": "https://maps.google.com/?cid=10270684296632469536&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0523465,
-    "lng": 57.6689627,
-    "themes": [
-      "complexes-sportifs"
-    ],
-    "zone": "nord"
-  },
-  {
-    "id": "terrain-de-football",
-    "name": "Terrain de Football",
-    "category": "activites",
-    "address": "Q9JW+4MJ, Albion",
-    "googleMapsUrl": "https://maps.google.com/?cid=2793700480094276546&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.218233,
-    "lng": 57.3951963,
-    "themes": [
-      "complexes-sportifs"
-    ],
-    "zone": "centre"
-  },
-  {
     "id": "cote-d-or-national-sports-complex",
     "name": "Cote d'Or National Sports Complex",
     "category": "activites",
@@ -30029,19 +29875,6 @@
     "description": "Club de jiu-jitsu brésilien et arts martiaux mixtes basé à Bel Air, affilié à la fédération mauricienne de jiu-jitsu brésilien."
   },
   {
-    "id": "sports-centre",
-    "name": "Sports Centre",
-    "category": "activites",
-    "address": "RQG9+JHH, B59, Poste de Flacq",
-    "googleMapsUrl": "https://maps.google.com/?cid=6152491092786900373&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.1734325,
-    "lng": 57.7689788,
-    "themes": [
-      "complexes-sportifs"
-    ],
-    "zone": "est"
-  },
-  {
     "id": "iron-barbell-gym",
     "name": "IRON BARBELL GYM",
     "category": "activites",
@@ -30052,20 +29885,6 @@
     "lng": 57.7507233,
     "themes": [
       "gym-fitness"
-    ],
-    "zone": "est"
-  },
-  {
-    "id": "waves-club",
-    "name": "Waves Club",
-    "category": "activites",
-    "address": "RQG9+HPV, Poste de Flacq",
-    "phone": "+230 401 1919",
-    "googleMapsUrl": "https://maps.google.com/?cid=6025028292107415293&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.1735233,
-    "lng": 57.7693029,
-    "themes": [
-      "complexes-sportifs"
     ],
     "zone": "est"
   },
@@ -30082,19 +29901,6 @@
       "gym-fitness"
     ],
     "zone": "nord"
-  },
-  {
-    "id": "pont-lardier-community-center",
-    "name": "Pont Lardier community center",
-    "category": "activites",
-    "address": "PPJV+FXG, Bel Air",
-    "googleMapsUrl": "https://maps.google.com/?cid=16201429151323656515&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.2688093,
-    "lng": 57.7449627,
-    "themes": [
-      "complexes-sportifs"
-    ],
-    "zone": "est"
   },
   {
     "id": "baillache-barbell-gym",
@@ -30168,20 +29974,6 @@
       "gym-fitness"
     ],
     "zone": "est"
-  },
-  {
-    "id": "urban-pace-by-mag-fabulous-deals",
-    "name": "URBAN PACE by Mag Fabulous Deals",
-    "category": "activites",
-    "address": "28 Rue Desforges, Port Louis",
-    "phone": "+230 5791 8511",
-    "googleMapsUrl": "https://maps.google.com/?cid=4189306316087504247&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.1621254,
-    "lng": 57.506856,
-    "themes": [
-      "complexes-sportifs"
-    ],
-    "zone": "centre"
   },
   {
     "id": "tranquebar-boxing-club",
@@ -30301,19 +30093,6 @@
     "description": "Club de jiu-jitsu brésilien basé à Argy (Centre de Flacq), affilié à la Fédération mauricienne de BJJ, qui réunit une trentaine de pratiquants et organise chaque année un tournoi régional open."
   },
   {
-    "id": "muga-bel-air",
-    "name": "MUGA Bel Air",
-    "category": "activites",
-    "address": "PQV4+MFC, Bel Air",
-    "googleMapsUrl": "https://maps.google.com/?cid=7630521905235748174&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.2543998,
-    "lng": 57.7559745,
-    "themes": [
-      "complexes-sportifs"
-    ],
-    "zone": "est"
-  },
-  {
     "id": "modern-martial-arts-mma-gym",
     "name": "Modern Martial Arts - MMA Gym",
     "category": "activites",
@@ -30392,19 +30171,6 @@
     "description": "Complexe sportif de trois étages inauguré en septembre 2024 en plein cœur de Port Louis, avec terrain de futsal, salle de sport et auditorium équipé d'écrans géants pour la diffusion de matchs."
   },
   {
-    "id": "mare-tabac-football-ground",
-    "name": "Mare Tabac Football Ground",
-    "category": "activites",
-    "address": "HH5V+V3G, B82, Mare Tabac",
-    "googleMapsUrl": "https://maps.google.com/?cid=4217275976095664240&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.4403233,
-    "lng": 57.5927098,
-    "themes": [
-      "complexes-sportifs"
-    ],
-    "zone": "sud"
-  },
-  {
     "id": "mauritius-sports-council",
     "name": "Mauritius Sports Council",
     "category": "activites",
@@ -30465,19 +30231,6 @@
     "description": "Complexe multisports géré par la Mauritius Sports Council à Glen Park (Vacoas), inauguré en 2003, avec une salle couverte accueillant badminton, tennis de table, taekwondo, karaté, basketball, handball et pétanque."
   },
   {
-    "id": "bel-etang-football-pitch",
-    "name": "Bel Etang Football Pitch",
-    "category": "activites",
-    "address": "QM34+HR7, Bel Etang",
-    "googleMapsUrl": "https://maps.google.com/?cid=16825736943588572226&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.245374,
-    "lng": 57.6564709,
-    "themes": [
-      "complexes-sportifs"
-    ],
-    "zone": "est"
-  },
-  {
     "id": "stade-st-francois-xavier",
     "name": "Stade St. François Xavier",
     "category": "activites",
@@ -30507,20 +30260,6 @@
     ],
     "zone": "centre",
     "description": "Club sportif et social fondé en 1952 à Quatre Bornes, disposant d'un terrain de football et d'espaces de loisirs en plein air."
-  },
-  {
-    "id": "le-cerf-d-or",
-    "name": "Le Cerf d'Or",
-    "category": "activites",
-    "address": "Impasse de la Foret Chamouny MU, Chamouny 61301",
-    "phone": "+230 5422 1233",
-    "googleMapsUrl": "https://maps.google.com/?cid=13595295894791741133&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.4649195,
-    "lng": 57.4603969,
-    "themes": [
-      "complexes-sportifs"
-    ],
-    "zone": "sud"
   },
   {
     "id": "stade-anjalay",
