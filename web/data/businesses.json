@@ -1922,7 +1922,8 @@
       "shopping",
       "mode-adultes"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Boutique de mode féminine à Grand Baie proposant vêtements élégants, accessoires et souvenirs artisanaux mauriciens (marques White Mischief, Tafta Too)."
   },
   {
     "id": "cottons-grand-baie",
@@ -1939,7 +1940,8 @@
       "shopping",
       "mode-adultes"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Boutique de mode féminine à La Croisette Grand Baie proposant tuniques, robes, pantalons et kaftans en coton, soie et laine."
   },
   {
     "id": "le-concept-store-mademoiselle",
@@ -1956,7 +1958,8 @@
       "shopping",
       "mode-adultes"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Concept store de mode féminine à Grand Baie, avec un choix de vêtements et accessoires de marques locales (Petite Cabotine, Metis by M, Lupina) et importées."
   },
   {
     "id": "le-rendez-vous-grand-baie",
@@ -1973,7 +1976,8 @@
       "shopping",
       "mode-adultes"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Concept store à La Croisette Grand Baie proposant plus de 5000 produits 100% made in Mauritius : vêtements homme/femme/enfant, artisanat, bijoux, sacs et accessoires."
   },
   {
     "id": "anacbelle",
@@ -1989,7 +1993,8 @@
       "shopping",
       "mode-adultes"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Boutique de mode à Grand Baie."
   },
   {
     "id": "les-secrets-de-jade-ltee",
@@ -2006,7 +2011,8 @@
       "shopping",
       "mode-adultes"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Concept store à Grand Baie proposant fleurs séchées, vêtements et accessoires de style naïf, chapeaux, sacs et bijoux fantaisie made in Mauritius."
   },
   {
     "id": "goyco-lifestyle-boutique",
@@ -2022,7 +2028,9 @@
       "shopping",
       "mode-adultes"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Boutique lifestyle à Pereybère proposant vêtements de plage, tenues de soirée, essentiels homme et accessoires pour femme, homme et enfant.",
+    "hours": "Lun-Sam 9h-17h, Dim 10h-14h"
   },
   {
     "id": "highlights-boutique-clothing-shop",
@@ -2038,7 +2046,8 @@
       "shopping",
       "mode-adultes"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Boutique de mode sur la Route Royale à Grand Baie, mêlant tendances locales et contemporaines."
   },
   {
     "id": "monalysa-boutique",
@@ -2054,7 +2063,9 @@
       "shopping",
       "mode-adultes"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Boutique de souvenirs et artisanat mauricien au centre de Grand Baie : tuniques, chapeaux, bijoux, robes hibiscus et pashminas.",
+    "hours": "Lun-Sam 8h-18h, Dim 8h-13h"
   },
   {
     "id": "grand-baie-store",
@@ -2069,7 +2080,8 @@
     "themes": [
       "shopping"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Boutique proposant vêtements, maillots de bain, bijoux et articles duty-free sur la Route Côtière à Grand Baie."
   },
   {
     "id": "sloane-mauritius-creatrice-de-mode",
@@ -2085,7 +2097,8 @@
       "shopping",
       "mode-adultes"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Showroom de créatrice de mode à Grand Baie (Chemin Vingt Pieds), robes, blouses et pantalons sur mesure, sur rendez-vous."
   },
   {
     "id": "ns-boutique",
@@ -2102,7 +2115,8 @@
       "shopping",
       "mode-adultes"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Boutique de prêt-à-porter et accessoires à Grand Baie."
   },
   {
     "id": "cotons-des-iles",
@@ -2118,7 +2132,8 @@
       "shopping",
       "mode-adultes"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Boutique spécialisée dans le prêt-à-porter en coton blanc 100% made in Mauritius, en face du Super U à Grand Baie."
   },
   {
     "id": "luna-boutique-mauritius",
@@ -2135,7 +2150,8 @@
       "shopping",
       "mode-adultes"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Boutique de mode féminine à Richmond Hill, Grand Baie, alliant charme local et élégance contemporaine."
   },
   {
     "id": "la-croisette",
@@ -2168,7 +2184,8 @@
     "themes": [
       "shopping"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Bazar artisanal en plein air à Grand Baie, avec des dizaines d'échoppes vendant souvenirs, textiles brodés, épices, bijoux et articles en cuir."
   },
   {
     "id": "go-duty-free-mauritius",
@@ -2184,7 +2201,8 @@
     "themes": [
       "shopping"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Boutique hors taxes à Grand Bay Pride, spécialisée dans les spiritueux (dont le rhum Dodo), parfums et articles de luxe pour voyageurs."
   },
   {
     "id": "grand-bay-coeur-de-ville",
@@ -2217,7 +2235,8 @@
       "shopping",
       "mode-adultes"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Boutique de mode à Grand Baie proposant ponchos, châles et chapeaux en cachemire, laine mérinos et coton, fabriqués à l'île Maurice."
   },
   {
     "id": "solea-mauritius",
@@ -2233,7 +2252,8 @@
       "shopping",
       "mode-adultes"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Boutique de mode à Grand Baie."
   },
   {
     "id": "obann-boutique",
@@ -2249,7 +2269,8 @@
       "shopping",
       "mode-adultes"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Boutique de haute couture pour femme à Grand Baie, créée par la styliste mauricienne-russe Anastasia Ramlall depuis 2004."
   },
   {
     "id": "pieter-both-shop",
@@ -2265,7 +2286,8 @@
       "shopping",
       "souvenirs"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Boutique de souvenirs mauriciens à Grand Baie, proposant un large choix de produits typiques à prix compétitifs."
   },
   {
     "id": "fashion-house",
@@ -2282,7 +2304,8 @@
       "shopping",
       "mode-adultes"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Boutique de mode et prêt-à-porter au centre commercial La Croisette, à Grand Baie."
   },
   {
     "id": "cocosun-ltd",
@@ -2298,7 +2321,8 @@
       "shopping",
       "mode-adultes"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Boutique de vêtements fabriqués à Maurice, située sur Sunset Boulevard à Grand Baie, avec vente hors taxes."
   },
   {
     "id": "les-filles-a-la-plage",
@@ -2314,7 +2338,8 @@
       "shopping",
       "mode-adultes"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Boutique de maillots de bain et accessoires de plage sur mesure, à Dodo Square, Grand Baie."
   },
   {
     "id": "boutique-sandalykou",
@@ -2330,7 +2355,8 @@
       "shopping",
       "mode-adultes"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Boutique de mode et accessoires à Grand Baie."
   },
   {
     "id": "le-dodo-masque",
@@ -2346,7 +2372,8 @@
       "shopping",
       "souvenirs"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Petite boutique de prêt-à-porter sur la route côtière de Grand Baie, proposant des vêtements fabriqués à Maurice à petits prix."
   },
   {
     "id": "badaboom-souvenir-shop-stall-no-22",
@@ -2358,12 +2385,13 @@
     "googleMapsUrl": "https://maps.google.com/?cid=3440455858190697390",
     "lat": -20.0102196,
     "lng": 57.5864559,
-    "hours": "Tous les jours 9h-17h",
+    "hours": "Lun-Dim 9h-17h",
     "themes": [
       "shopping",
       "souvenirs"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Boutique de souvenirs (stand n°22) au Bazar de Grand Baie, proposant une large variété de souvenirs mauriciens."
   },
   {
     "id": "marco-pearl-shop",
@@ -2380,7 +2408,8 @@
       "shopping",
       "souvenirs"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Bijouterie familiale fondée en 1978, spécialisée dans les perles naturelles et de culture, sur Royal Road à Grand Baie."
   },
   {
     "id": "quiksilver-roxy-shop",
@@ -2397,7 +2426,8 @@
       "shopping",
       "materiel-sports"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Boutique de vêtements et accessoires de surf des marques Quiksilver et Roxy, dans le bâtiment Relais Des Iles à Grand Baie."
   },
   {
     "id": "u2-shop",
@@ -2409,11 +2439,12 @@
     "googleMapsUrl": "https://maps.google.com/?cid=10619964255607418087",
     "lat": -20.0133055,
     "lng": 57.5841293,
-    "hours": "Lun-Ven 9h-17h30, Sam 9h-12h, fermé dim",
+    "hours": "Lun-Ven 9h-17h30, Sam 9h-12h, fermé Dim",
     "themes": [
       "shopping"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Boutique de mode mauricienne existant depuis plus de 20 ans, proposant vêtements en lin, tenues de plage et pièces casual, sur Sunset Boulevard à Grand Baie."
   },
   {
     "id": "citadel-grand-baie-coeur-de-ville",
@@ -2429,7 +2460,9 @@
       "shopping",
       "mode-adultes"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Boutique de vêtements et mode au centre commercial Coeur de Ville à Grand Baie.",
+    "hours": "Tous les jours à partir de 9h30"
   },
   {
     "id": "liberty-connect-grand-baie-la-croisette",
@@ -2445,7 +2478,8 @@
     "themes": [
       "shopping"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Boutique d'électronique et multimédia (téléphones, jeux vidéo, GoPro, accessoires, réparation) à La Croisette, Grand Baie."
   },
   {
     "id": "gaspard-boutique",
@@ -2461,7 +2495,8 @@
       "shopping",
       "mode-adultes"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Boutique de vêtements et articles de plage située près de la plage publique de Grand Baie."
   },
   {
     "id": "inam-cashmere",
@@ -2478,7 +2513,8 @@
       "shopping",
       "mode-adultes"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Atelier-boutique de tricots et maroquinerie en cachemire fabriqués localement à Maurice."
   },
   {
     "id": "alicia-swim-grand-baie",
@@ -2494,7 +2530,8 @@
       "shopping",
       "mode-adultes"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Boutique de maillots de bain et vêtements de plage de la marque mauricienne Alicia Swim."
   },
   {
     "id": "concepts-grand-baie",
@@ -2509,7 +2546,8 @@
     "themes": [
       "shopping"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Concept store de mode et accessoires à Grand Baie."
   },
   {
     "id": "orchestra-grand-baie",
@@ -2526,7 +2564,8 @@
       "shopping",
       "mode-enfants"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Boutique de vêtements et accessoires pour futures mamans, bébés et enfants jusqu'à 14 ans."
   },
   {
     "id": "macumba-ltee",
@@ -2543,7 +2582,8 @@
       "shopping",
       "mode-adultes"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Boutique de décoration intérieure et de mode : vêtements, bijoux fantaisie, linge de maison et objets d'artisanat mauricien."
   },
   {
     "id": "perfect-beauty-mauritius",
@@ -2735,7 +2775,8 @@
       "shopping",
       "mode-adultes"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Petite boutique de mode à Grand Baie."
   },
   {
     "id": "nuance-hair-lounge",
@@ -2814,7 +2855,8 @@
       "shopping",
       "mode-adultes"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Boutique de mode et accessoires à Grand Baie."
   },
   {
     "id": "le-morne-brabant",
@@ -5957,7 +5999,8 @@
       "shopping",
       "mode-adultes"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Pro shop du Tamarina Golf Club proposant vêtements, chaussures et accessoires de golf."
   },
   {
     "id": "mauritius-gymkhana-club",
@@ -11695,7 +11738,8 @@
     "themes": [
       "shopping"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Galerie d'art sur le thème de l'océan à Grand Baie."
   },
   {
     "id": "la-destination-d-elegance",
@@ -11711,7 +11755,8 @@
       "shopping",
       "mode-adultes"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Boutique de mode à Grand Baie."
   },
   {
     "id": "richmond-hill-complex",
@@ -15438,7 +15483,8 @@
       "shopping",
       "mode-adultes"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Boutique de souvenirs et d'artisanat mauricien à Flic en Flac."
   },
   {
     "id": "roxy-cascavelle",
@@ -15454,7 +15500,9 @@
       "shopping",
       "materiel-sports"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Boutique de mode féminine et vêtements de plage de la marque Roxy, située dans le centre commercial Cascavelle.",
+    "hours": "Lun-Jeu 9h30-19h, Ven-Sam 9h30-20h, Dim et jours fériés 9h30-15h"
   },
   {
     "id": "my-pop-up-store-100-local-shop-cap-tamarin",
@@ -15470,7 +15518,9 @@
       "shopping",
       "souvenirs"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Boutique multimarques 100% mauricienne réunissant plus d'une centaine de créateurs et artisans locaux (vêtements, bijoux, déco, souvenirs).",
+    "hours": "Lun-Jeu 9h-17h30"
   },
   {
     "id": "anikait-boutique",
@@ -15486,7 +15536,8 @@
       "shopping",
       "mode-adultes"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Petite boutique de vêtements et accessoires à Flic en Flac."
   },
   {
     "id": "legends-park",
@@ -19159,12 +19210,14 @@
       "shopping",
       "souvenirs"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Centre commercial en plein air à La Preneuse regroupant boutiques de mode, artisanat, bijoux et souvenirs, avec plusieurs restaurants.",
+    "hours": "Lun-Sam 9h30-18h"
   },
   {
     "id": "wapalapam-shop",
     "name": "Wapalapam Shop",
-    "category": "activites",
+    "category": "food",
     "address": "Centre commercial de l'harmonie Le Morne Brabant MU, Le Morne 91902",
     "phone": "+230 5480 0245",
     "website": "",
@@ -19172,10 +19225,12 @@
     "lat": -20.4435085,
     "lng": 57.3221176,
     "themes": [
-      "shopping",
-      "mode-enfants"
+      "restaurants",
+      "fruits-de-mer"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "hours": "Tous les jours 8h-22h",
+    "description": "Restaurant de cuisine internationale et fruits de mer au Centre Commercial de l'Harmonie, Le Morne Brabant."
   },
   {
     "id": "riche-terre-mall",
@@ -19225,7 +19280,8 @@
       "shopping",
       "souvenirs"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Boutique d'artisanat et objets décoratifs locaux, dans le centre commercial de l'Harmonie au Morne."
   },
   {
     "id": "spa-le-chamarel-holistic-retreat-welllness",
@@ -19263,7 +19319,7 @@
   {
     "id": "palais-de-barbizon",
     "name": "Palais de Barbizon",
-    "category": "activites",
+    "category": "food",
     "address": "H9FR+R65, Chamarel",
     "phone": "+230 5495 1690",
     "website": "",
@@ -19271,10 +19327,13 @@
     "lat": -20.4254803,
     "lng": 57.3906179,
     "themes": [
-      "shopping"
+      "restaurants",
+      "mauricienne"
     ],
     "badge": "selection",
-    "zone": "sud"
+    "zone": "sud",
+    "hours": "Tous les jours 11h30-16h, soir sur réservation",
+    "description": "Petit restaurant familial servant une cuisine créole traditionnelle mauricienne, à Chamarel."
   },
   {
     "id": "woolworths-so-flo-mauritius",
@@ -19308,7 +19367,8 @@
       "shopping",
       "mode-adultes"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Boutique de vêtements de plage et maillots de bain de la marque mauricienne Le Gall, dans le centre commercial de l'Harmonie au Morne."
   },
   {
     "id": "vince",
@@ -19324,7 +19384,8 @@
       "shopping",
       "mode-adultes"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Petite boutique locale au Morne."
   },
   {
     "id": "plaza-boulevard",
@@ -19390,7 +19451,9 @@
       "shopping",
       "souvenirs"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Marché couvert traditionnel de Port-Louis proposant produits frais, épices, textiles et artisanat local.",
+    "hours": "Lun-Sam 5h-17h30, Dim 5h-11h30"
   },
   {
     "id": "chamarel-mountain-chalets",
@@ -21461,7 +21524,8 @@
     "themes": [
       "shopping"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Petit commerce local à Montagne Longue."
   },
   {
     "id": "les-allees-by-ascencia",
@@ -23732,7 +23796,9 @@
     "themes": [
       "shopping"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Magasin de vente directe Aldrex proposant produits de beauté (Yves Rocher, Stanhome, Flormar) et articles ménagers.",
+    "hours": "Lun-Mer et Sam 10h-19h/20h, Jeu 10h-19h, Ven fermé, Dim 10h-13h"
   },
   {
     "id": "vieux-moulin-shopping-centre",
@@ -23765,7 +23831,9 @@
       "shopping",
       "souvenirs"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Boutique de souvenirs et artisanat (bijoux, textiles, œuvres d'art locales) à Quatre Cocos/Belle Mare.",
+    "hours": "Lun-Sam 9h30-16h30, Dim 9h30-14h30"
   },
   {
     "id": "riverside-shopping-centre",
@@ -23812,7 +23880,8 @@
     "themes": [
       "shopping"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Petite boutique de souvenirs et articles divers à Quatre Cocos, sur la côte est de l'île."
   },
   {
     "id": "port-louis-waterfront-by-landscope-mauritius",
@@ -23844,7 +23913,8 @@
       "shopping",
       "jeux"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Centre commercial du centre-ville de Port-Louis regroupant plusieurs boutiques (mode, électronique, snacks, cosmétiques)."
   },
   {
     "id": "kaylash-pooja-shop",
@@ -23860,7 +23930,8 @@
       "shopping",
       "souvenirs"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Boutique de Quatre Cocos proposant des articles de puja (objets rituels hindous) ainsi que des vêtements et accessoires."
   },
   {
     "id": "flacq-city-plaza",
@@ -23908,7 +23979,8 @@
       "shopping",
       "mode-adultes"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Boutique de mode à Quatre Cocos/Belle Mare, proposant vêtements et accessoires de marque."
   },
   {
     "id": "belle-mare-supermarket",
@@ -23971,7 +24043,8 @@
       "shopping",
       "souvenirs"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Boutique de cadeaux et de décoration à Centre de Flacq, avec souvenirs et objets artisanaux locaux."
   },
   {
     "id": "rns-designer-palace",
@@ -23987,7 +24060,8 @@
       "shopping",
       "mode-adultes"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Boutique de mode et vêtements à Centre de Flacq."
   },
   {
     "id": "asb-store-ltd",
@@ -24002,7 +24076,8 @@
     "themes": [
       "shopping"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Supérette/supermarché de quartier à Bramsthan (Flacq), proposant produits alimentaires et articles du quotidien."
   },
   {
     "id": "lacase",
@@ -24017,7 +24092,8 @@
     "themes": [
       "shopping"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Enseigne mauricienne de décoration d'intérieur (magazine et boutique), basée à Baie du Tombeau."
   },
   {
     "id": "moto-passion",
@@ -24032,7 +24108,8 @@
     "themes": [
       "shopping"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Magasin spécialisé dans les motos, quads et équipements de moto, situé à l'Orchard Centre, Quatre Bornes."
   },
   {
     "id": "intermart-chebel",
@@ -31122,7 +31199,9 @@
       "shopping",
       "souvenirs"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Marché artisanal du Caudan Waterfront à Port-Louis, avec stands de souvenirs et objets artisanaux locaux.",
+    "hours": "Lun-Sam 9h30-18h, Dim 9h30-14h"
   },
   {
     "id": "winner-s-pereybere",
@@ -31290,7 +31369,8 @@
       "shopping",
       "mode-adultes"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Boutique de souvenirs et objets artisanaux mauriciens à Flic en Flac."
   },
   {
     "id": "barachois-shopping-centre",
@@ -33228,7 +33308,8 @@
       "livres"
     ],
     "zone": "centre",
-    "description": "Librairie mauricienne fondée en 1989 (groupe libraire, distributeur et éditeur), large choix de littérature, papeterie et cadeaux, avec possibilité de commander des livres depuis l'étranger."
+    "description": "Librairie mauricienne fondée en 1989 (groupe libraire, distributeur et éditeur), large choix de littérature, papeterie et cadeaux, avec possibilité de commander des livres depuis l'étranger.",
+    "hours": "Lun-Mer, Ven-Sam 8h30-17h30, Jeu 8h30-17h, Dim 8h30-12h"
   },
   {
     "id": "editions-le-printemps-vacoas",
@@ -33244,7 +33325,8 @@
       "livres"
     ],
     "zone": "centre",
-    "description": "Siège d'Éditions Le Printemps, groupe libraire mauricien fondé en 1989. Avis élogieux sur le grand choix de livres, l'emplacement pratique avec parking et le personnel serviable ; possibilité de commander des livres depuis l'étranger à des frais de port raisonnables."
+    "description": "Siège d'Éditions Le Printemps, groupe libraire mauricien fondé en 1989. Avis élogieux sur le grand choix de livres, l'emplacement pratique avec parking et le personnel serviable ; possibilité de commander des livres depuis l'étranger à des frais de port raisonnables.",
+    "hours": "Lun-Sam 8h30-17h30, Dim 9h30-12h"
   },
   {
     "id": "librairie-le-cygne-rose-hill",
@@ -33259,7 +33341,8 @@
       "livres"
     ],
     "zone": "centre",
-    "description": "Librairie familiale de Rose Hill fondée en 1981 : romans, pièces de théâtre, livres jeunesse, manuels scolaires et ouvrages de référence en français, anglais et créole, ainsi que papeterie et jouets."
+    "description": "Librairie familiale de Rose Hill fondée en 1981 : romans, pièces de théâtre, livres jeunesse, manuels scolaires et ouvrages de référence en français, anglais et créole, ainsi que papeterie et jouets.",
+    "hours": "Lun-Mer 9h-17h, Jeu 9h-13h, Ven-Sam 9h-17h, Dim fermé"
   },
   {
     "id": "bookcourt-la-croisette-grand-baie",
@@ -33440,7 +33523,8 @@
       "mode-enfants"
     ],
     "zone": "centre",
-    "description": "Enseigne turque de mode (numéro un du secteur en Turquie), ouverte en 2023 sur 1 300 m² au Tribeca Mall, habillant toute la famille dont les enfants, avec des lignes lingerie et maternité."
+    "description": "Enseigne turque de mode (numéro un du secteur en Turquie), ouverte en 2023 sur 1 300 m² au Tribeca Mall, habillant toute la famille dont les enfants, avec des lignes lingerie et maternité.",
+    "hours": "Tous les jours 9h30-22h (horaires du centre commercial)"
   },
   {
     "id": "happinest-tribeca-mall",
@@ -33456,7 +33540,8 @@
       "mode-enfants"
     ],
     "zone": "centre",
-    "description": "Petit corner dédié aux nouveau-nés au Tribeca Mall : doudous, mobiles, couvertures et autres essentiels pour bébé."
+    "description": "Petit corner dédié aux nouveau-nés au Tribeca Mall : doudous, mobiles, couvertures et autres essentiels pour bébé.",
+    "hours": "Tous les jours 9h30-22h (horaires du centre commercial)"
   },
   {
     "id": "baobab-pasadena-flic-en-flac",
@@ -33472,7 +33557,8 @@
       "mode-enfants"
     ],
     "zone": "ouest",
-    "description": "Factory shop de la marque mauricienne Baobab Company (fondée en 1995), vêtements en coton biologique certifié Ecocert au style casual et ethnique, pour hommes, femmes et enfants."
+    "description": "Factory shop de la marque mauricienne Baobab Company (fondée en 1995), vêtements en coton biologique certifié Ecocert au style casual et ethnique, pour hommes, femmes et enfants.",
+    "hours": "Lun-Sam 10h-18h, Dim 10h-13h30"
   },
   {
     "id": "oh-baby-city-trianon",
@@ -33523,7 +33609,8 @@
       "equipement-maison"
     ],
     "zone": "centre",
-    "description": "Concept store multimarques d'électroménager (distributeur officiel Sharp, AEG, Electrolux, Elica, Indesit, Toshiba entre autres), au sein d'un espace maison réunissant aussi carrelage, cuisines équipées, alarmes et menuiserie aluminium."
+    "description": "Concept store multimarques d'électroménager (distributeur officiel Sharp, AEG, Electrolux, Elica, Indesit, Toshiba entre autres), au sein d'un espace maison réunissant aussi carrelage, cuisines équipées, alarmes et menuiserie aluminium.",
+    "hours": "Lun-Ven 9h-17h15, Sam 9h-16h30, fermé Dim et jours fériés"
   },
   {
     "id": "redline-grand-baie",
@@ -33539,7 +33626,8 @@
       "equipement-maison"
     ],
     "zone": "nord",
-    "description": "Showroom Redline (distributeur officiel Sharp, AEG, Electrolux, Elica, Indesit, Toshiba entre autres) d'électroménager et de gros électroménager."
+    "description": "Showroom Redline (distributeur officiel Sharp, AEG, Electrolux, Elica, Indesit, Toshiba entre autres) d'électroménager et de gros électroménager.",
+    "hours": "Lun-Jeu 9h30-17h30, Ven-Sam 9h30-18h, fermé Dim"
   },
   {
     "id": "conforama-bagatelle",
@@ -33573,7 +33661,8 @@
       "equipement-maison"
     ],
     "zone": "centre",
-    "description": "Numéro un de l'ameublement, de l'électroménager et de l'informatique à Maurice (fondé en 1985, 23 showrooms sur l'île), avec service de livraison et d'installation (climatiseurs, chauffe-eau au gaz)."
+    "description": "Numéro un de l'ameublement, de l'électroménager et de l'informatique à Maurice (fondé en 1985, 23 showrooms sur l'île), avec service de livraison et d'installation (climatiseurs, chauffe-eau au gaz).",
+    "hours": "Lun-Ven 9h-17h30, Sam 9h30-12h30"
   },
   {
     "id": "homedeals-port-louis",
@@ -33622,7 +33711,8 @@
       "equipement-maison"
     ],
     "zone": "nord",
-    "description": "Enseigne d'électroménager historique à Maurice (depuis 1956) : lave-linge, réfrigérateurs, micro-ondes, cuisinières et lave-vaisselle, avec service après-vente."
+    "description": "Enseigne d'électroménager historique à Maurice (depuis 1956) : lave-linge, réfrigérateurs, micro-ondes, cuisinières et lave-vaisselle, avec service après-vente.",
+    "hours": "Lun-Mer et Ven-Sam 9h30-18h, Jeu 9h30-13h30"
   },
   {
     "id": "galaxy-beau-bassin",
@@ -33639,7 +33729,8 @@
       "equipement-maison"
     ],
     "zone": "centre",
-    "description": "Chaîne d'électronique grand public et d'électroménager lancée en 1991, comptant aujourd'hui 16 showrooms sur l'île."
+    "description": "Chaîne d'électronique grand public et d'électroménager lancée en 1991, comptant aujourd'hui 16 showrooms sur l'île.",
+    "hours": "Lun-Sam (sauf Jeu) 9h-17h30, Jeu 9h-13h, Dim et jours fériés 9h-13h"
   },
   {
     "id": "galaxy-grand-baie",
@@ -33656,7 +33747,8 @@
       "equipement-maison"
     ],
     "zone": "nord",
-    "description": "Chaîne d'électronique grand public et d'électroménager lancée en 1991, comptant aujourd'hui 16 showrooms sur l'île."
+    "description": "Chaîne d'électronique grand public et d'électroménager lancée en 1991, comptant aujourd'hui 16 showrooms sur l'île.",
+    "hours": "Lun-Sam 9h30-17h30, Dim 9h30-13h"
   },
   {
     "id": "361-cascavelle",
@@ -33672,7 +33764,8 @@
       "equipement-maison"
     ],
     "zone": "ouest",
-    "description": "Enseigne d'électroménager et d'électronique grand public (plus de 20 showrooms sur l'île), distribuant notamment les marques Samsung, Huawei, TCL, WestPoint et Moulinex."
+    "description": "Enseigne d'électroménager et d'électronique grand public (plus de 20 showrooms sur l'île), distribuant notamment les marques Samsung, Huawei, TCL, WestPoint et Moulinex.",
+    "hours": "Lun-Sam 9h30-20h, Dim et jours fériés 9h30-15h"
   },
   {
     "id": "361-tribeca-mall",
@@ -33751,7 +33844,8 @@
       "shopping",
       "equipement-maison"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Magasin d'ameublement et de décoration d'intérieur situé à Bagatelle Home & Leisure."
   },
   {
     "id": "casa-bella-interiors-bagatelle",
@@ -33766,7 +33860,8 @@
       "shopping",
       "equipement-maison"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Boutique de décoration et d'ameublement d'intérieur haut de gamme à Bagatelle Home & Leisure."
   },
   {
     "id": "urban-home-bagatelle",
@@ -33797,7 +33892,8 @@
       "shopping",
       "equipement-maison"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Boutique d'agencement intérieur et extérieur (menuiserie, aménagement sur-mesure) au sein de Bagatelle Home & Leisure."
   },
   {
     "id": "teak-world-bagatelle",
@@ -33879,7 +33975,8 @@
       "equipement-maison"
     ],
     "zone": "nord",
-    "description": "Pépinière fondée en 1998 par le groupe Rouillard, spécialisée dans la flore endémique mauricienne (plus de 80 espèces indigènes cultivées) et proposant au total plus de 450 variétés de plantes exotiques, palmiers, gazon et poteries."
+    "description": "Pépinière fondée en 1998 par le groupe Rouillard, spécialisée dans la flore endémique mauricienne (plus de 80 espèces indigènes cultivées) et proposant au total plus de 450 variétés de plantes exotiques, palmiers, gazon et poteries.",
+    "hours": "Lun-Ven 7h30-16h30, Sam 7h30-16h, fermé Dim"
   },
   {
     "id": "pepiniere-exotica",
@@ -33913,7 +34010,8 @@
       "equipement-maison"
     ],
     "zone": "centre",
-    "description": "Pépinière familiale (fondée en 1997) réunissant plus de 5 000 variétés de plantes réparties dans une grande serre et six petites, avec accessoires de jardin, contenants et service de rempotage gratuit ; abrite le restaurant Hideaway."
+    "description": "Pépinière familiale (fondée en 1997) réunissant plus de 5 000 variétés de plantes réparties dans une grande serre et six petites, avec accessoires de jardin, contenants et service de rempotage gratuit ; abrite le restaurant Hideaway.",
+    "hours": "Tous les jours (jours fériés inclus) 8h30-17h"
   },
   {
     "id": "serredepalma",
@@ -34086,7 +34184,8 @@
       "equipement-maison"
     ],
     "zone": "centre",
-    "description": "Enseigne française de déco et petits objets pour la maison à prix accessibles : linge de maison, arts de la table, jeux, petit électroménager, mobilier et articles d'extérieur, au Phoenix Mall."
+    "description": "Enseigne française de déco et petits objets pour la maison à prix accessibles : linge de maison, arts de la table, jeux, petit électroménager, mobilier et articles d'extérieur, au Phoenix Mall.",
+    "hours": "Lun-Jeu 10h-20h30, Ven-Sam 10h-22h, Dim et jours fériés 10h-18h"
   },
   {
     "id": "concepts-vacoas-phoenix",
@@ -34103,7 +34202,8 @@
       "equipement-maison"
     ],
     "zone": "centre",
-    "description": "Enseigne mauricienne multi-marques dédiée à la maison (créée en 2013) : décoration tendance, petit électroménager, linge de maison, arts de la table et idées cadeaux à prix accessibles, succursale de Vacoas-Phoenix."
+    "description": "Enseigne mauricienne multi-marques dédiée à la maison (créée en 2013) : décoration tendance, petit électroménager, linge de maison, arts de la table et idées cadeaux à prix accessibles, succursale de Vacoas-Phoenix.",
+    "hours": "Lun-Sam 10h-18h30, Dim et jours fériés 10h-15h"
   },
   {
     "id": "vertical-world-ltd",
