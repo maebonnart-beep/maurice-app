@@ -648,12 +648,13 @@
     "category": "activites",
     "address": "La Salette Road, Grand Baie",
     "phone": "+230 263 3308",
-    "website": "",
+    "website": "https://www.facebook.com/LeLuckyStrike",
     "googleMapsUrl": "https://maps.google.com/?cid=2045537383654708163",
     "lat": -20.0130719,
     "lng": 57.5867674,
     "themes": [
-      "activites-enfants-famille"
+      "activites-enfants-famille",
+      "bowling"
     ],
     "zone": "nord",
     "description": "Bowling de 8 pistes avec salle de billard et bar-lounge servant repas et cocktails, ouvert tous les jours jusqu'à 2h du matin ; premier bowling ouvert à l'Île Maurice."
@@ -10264,7 +10265,7 @@
   {
     "id": "strike-city-bagatelle",
     "name": "Strike City - Bagatelle",
-    "category": "food",
+    "category": "activites",
     "address": "Block D, home and leisure, bagatelle mall Moka MU, Moka 80832",
     "phone": "+230 5255 8200",
     "website": "http://www.strikecity.mu/",
@@ -10272,8 +10273,7 @@
     "lat": -20.2261417,
     "lng": 57.4990057,
     "themes": [
-      "restaurants",
-      "kids-friendly"
+      "bowling"
     ],
     "zone": "centre",
     "description": "Complexe loisirs (bowling 8 pistes, billard, karaoké) du Bagatelle Mall (Moka) avec restaurant de cuisine internationale, adapté aux familles."
@@ -11986,21 +11986,6 @@
     ],
     "zone": "nord",
     "description": "Crèche et maternelle pour enfants de 3 mois à 6 ans, installée dans un jardin clos et arboré de 1200 m² proche de la Croisette à Grand Baie. Nombreux jeux et activités adaptés à chaque âge, ouvert du lundi au vendredi."
-  },
-  {
-    "id": "bowling-le-lucky-strike-bar-lounge-billard",
-    "name": "Bowling - Le Lucky Strike - Bar - Lounge - Billard",
-    "category": "activites",
-    "address": "La Salette Rd, Grand Baie",
-    "phone": "+230 263 3308",
-    "website": "https://www.facebook.com/LeLuckyStrike",
-    "googleMapsUrl": "https://maps.google.com/?cid=2045537383654708163&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0130719,
-    "lng": 57.5867674,
-    "themes": [
-      "bowling"
-    ],
-    "zone": "nord"
   },
   {
     "id": "ti-vegas-casino",
@@ -34353,5 +34338,173 @@
     "zone": "centre",
     "description": "Premier cinéma drive-in et plein air de Maurice, opéré par le groupe MCine : séances en voiture, transats premium ou canapés VIP sous les étoiles, avec restauration sur place.",
     "hours": "Ouverture des portes 18h, film à 19h (variable selon coucher du soleil et calendrier saisonnier)"
+  },
+  {
+    "id": "wonderbowl-cascavelle",
+    "name": "Wonderbowl",
+    "category": "activites",
+    "address": "Cascavelle Shopping Village (1er étage), Coastal Road, Bambous",
+    "phone": "+230 452 3317",
+    "website": "https://themeetup.mu/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Wonderbowl%20Cascavelle%20Mauritius",
+    "themes": [
+      "bowling"
+    ],
+    "zone": "ouest",
+    "description": "Le plus grand bowling de la côte ouest de Maurice, avec 10 pistes, billards, karaoké et restauration sur place."
+  },
+  {
+    "id": "g-star-lanes-curepipe",
+    "name": "G Star Lanes (Bowling & Restaurant Lounge)",
+    "category": "activites",
+    "address": "Manhattan Building, 2e étage, Curepipe",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=G%20Star%20Lanes%20Bowling%20Curepipe%20Mauritius",
+    "themes": [
+      "bowling"
+    ],
+    "zone": "centre",
+    "description": "Bowling avec ambiance lumineuse, musique, bar et coin TV, situé au centre commercial Manhattan à Curepipe."
+  },
+  {
+    "id": "grand-casino-caudan",
+    "name": "Grand Casino Caudan",
+    "category": "activites",
+    "address": "Marina Quay, Caudan Waterfront, Port Louis",
+    "phone": "+230 210 1759",
+    "website": "https://caudan.com/entertainment/casino/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Grand%20Casino%20Caudan%20Port%20Louis%20Mauritius",
+    "lat": -20.161505,
+    "lng": 57.498448,
+    "themes": [
+      "casinos"
+    ],
+    "hours": "Tous les jours 10h-2h, tables en direct 20h-4h",
+    "zone": "centre",
+    "description": "Le plus grand casino de Maurice, ouvert depuis 1996 au Caudan Waterfront ; machines à sous, roulette, poker et blackjack."
+  },
+  {
+    "id": "grand-casino-domaine-les-pailles",
+    "name": "Grand Casino du Domaine Les Pailles",
+    "category": "activites",
+    "address": "Domaine Les Pailles, Avenue Emerald, Pailles",
+    "phone": "+230 286 0407",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Grand%20Casino%20Domaine%20Les%20Pailles%20Mauritius",
+    "themes": [
+      "casinos"
+    ],
+    "hours": "Tous les jours 18h-2h",
+    "entryPrice": "Âge minimum 21 ans",
+    "zone": "centre",
+    "description": "Casino situé dans le domaine historique de Les Pailles, avec plus de 26 jeux de table, machines à sous, roulette et poker Oasis."
+  },
+  {
+    "id": "casino-de-grand-baie",
+    "name": "Casino de Grand Baie",
+    "category": "activites",
+    "address": "Royal Road, B13, Grand Baie",
+    "phone": "+230 209 8989",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Casino%20de%20Grand%20Baie%20Mauritius",
+    "lat": -20.0072263,
+    "lng": 57.5810583,
+    "themes": [
+      "casinos"
+    ],
+    "hours": "Tous les jours 10h-4h",
+    "zone": "nord",
+    "description": "Casino de la Royal Road de Grand Baie, avec roulette, blackjack et machines à sous."
+  },
+  {
+    "id": "casino-de-maurice-curepipe",
+    "name": "Casino de Maurice",
+    "category": "activites",
+    "address": "Teste de Buch Street, Curepipe",
+    "phone": "+230 602 1300",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Casino%20de%20Maurice%20Curepipe",
+    "lat": -20.3188851,
+    "lng": 57.5273588,
+    "themes": [
+      "casinos"
+    ],
+    "entryPrice": "Âge minimum 21 ans",
+    "zone": "centre",
+    "description": "Le plus ancien casino de Maurice, fondé en 1970, à Curepipe : machines à sous, roulette américaine, blackjack."
+  },
+  {
+    "id": "senator-club-port-louis",
+    "name": "Senator Club Casino - Port Louis",
+    "category": "activites",
+    "address": "Edith Cavell Street, Port Louis",
+    "phone": "+230 208 8800",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Senator%20Club%20Casino%20Port%20Louis",
+    "themes": [
+      "casinos"
+    ],
+    "hours": "Lun-Sam 10h-4h, Dim 10h-0h",
+    "zone": "centre",
+    "description": "Casino du groupe Senator Club situé sur Edith Cavell Street à Port Louis."
+  },
+  {
+    "id": "senator-club-triolet",
+    "name": "Senator Club Casino - Triolet",
+    "category": "activites",
+    "address": "Tadbir Building, 1er étage, Royal Road, Triolet",
+    "phone": "+230 208 8800",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Senator%20Club%20Casino%20Triolet",
+    "themes": [
+      "casinos"
+    ],
+    "hours": "Tous les jours 10h-4h, tables en direct Lun-Sam 20h-4h, Dim 2h-4h",
+    "zone": "nord",
+    "description": "Casino du groupe Senator Club à Triolet, dans le Tadbir Building sur la Royal Road."
+  },
+  {
+    "id": "senator-club-grand-baie",
+    "name": "Senator Club Casino - Grand Baie",
+    "category": "activites",
+    "address": "Royal Road, Grand Baie",
+    "phone": "+230 208 8800",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Senator%20Club%20Casino%20Grand%20Baie",
+    "themes": [
+      "casinos"
+    ],
+    "hours": "Tous les jours 10h-4h, tables en direct Lun-Sam 20h-4h, Dim 2h-4h",
+    "zone": "nord",
+    "description": "Casino du groupe Senator Club sur la Royal Road de Grand Baie."
+  },
+  {
+    "id": "senator-club-flacq",
+    "name": "Senator Club Casino - Central Flacq",
+    "category": "activites",
+    "address": "Rue La Source, Arcade Sibartie, Centre de Flacq",
+    "phone": "+230 208 8800",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Senator%20Club%20Casino%20Central%20Flacq",
+    "themes": [
+      "casinos"
+    ],
+    "zone": "est",
+    "description": "Casino du groupe Senator Club à Centre de Flacq, ouvert depuis 2006."
+  },
+  {
+    "id": "senator-club-mahebourg",
+    "name": "Senator Club Casino - Mahébourg",
+    "category": "activites",
+    "address": "Maida Mount Building, Labourdonnais Street, Mahébourg",
+    "phone": "+230 208 8800",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Senator%20Club%20Casino%20Mahebourg",
+    "themes": [
+      "casinos"
+    ],
+    "zone": "sud",
+    "description": "Premier casino ouvert par le groupe Senator Club, situé à Mahébourg."
   }
 ]
