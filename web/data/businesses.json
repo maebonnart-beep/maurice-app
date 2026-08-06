@@ -216,21 +216,6 @@
     "description": "Agence de voyage à Grand Baie proposant hébergements, location de voiture ou scooter, excursions en mer (Île aux Cerfs, Flat Island, nage avec les dauphins) et visites guidées de l'île."
   },
   {
-    "id": "grand-baie-travel-tours",
-    "name": "Grand Baie Travel & Tours",
-    "category": "activites",
-    "address": "Route Royale, Grand Baie",
-    "phone": "+230 263 8771",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=6866569456133710834",
-    "lat": -20.0152265,
-    "lng": 57.582275,
-    "themes": [
-      "excursions"
-    ],
-    "zone": "nord"
-  },
-  {
     "id": "panorama-divers",
     "name": "Panorama Divers",
     "category": "activites",
@@ -10618,22 +10603,6 @@
     "description": "Croisière en catamaran au départ de Trou-aux-Biches, aujourd'hui intégrée à l'offre de Blue Safari, vers le nord du lagon avec baignade et déjeuner à bord."
   },
   {
-    "id": "king-cruise-catamaran-grand-baie",
-    "name": "King Cruise Catamaran Grand Baie",
-    "category": "activites",
-    "address": "Plage publique, Grand Baie",
-    "phone": "+230 5948 6910",
-    "website": "https://www.facebook.com/Yeshkiashphoto?mibextid=uzlsIk",
-    "googleMapsUrl": "https://maps.google.com/?cid=15553480143302859953&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0128751,
-    "lng": 57.5840435,
-    "themes": [
-      "excursions"
-    ],
-    "zone": "nord",
-    "description": "Excursion quotidienne en catamaran au départ de Grand Baie vers Ile Plate, Ilot Gabriel et Coin de Mire, avec déjeuner barbecue et animation à bord."
-  },
-  {
     "id": "nauti-buoy-mauritius",
     "name": "Nauti Buoy Mauritius",
     "category": "activites",
@@ -11243,22 +11212,6 @@
     "description": "Cascade d'environ 100 m de haut (la plus haute de l'île), alimentée par les rivières Saint Denis et Viande Salée avant de rejoindre la Baie du Cap. Visible depuis un point de vue sur le sentier menant aux Terres des 7 Couleurs, où les strates de roche volcanique sont bien visibles ; un sentier plus engagé descend jusqu'à la crique de la cascade pour la baignade."
   },
   {
-    "id": "mauritius-attractions",
-    "name": "Mauritius Attractions",
-    "category": "activites",
-    "address": "The Octopus Building, 30510 Royal Rd, Pointe aux Canonniers",
-    "phone": "+230 269 1000",
-    "website": "https://tantulika27.wixsite.com/tours/mauritius",
-    "googleMapsUrl": "https://maps.google.com/?cid=2245916703703746791&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0699488,
-    "lng": 57.5491497,
-    "themes": [
-      "excursions"
-    ],
-    "zone": "nord",
-    "description": "Plateforme de réservation d'activités touristiques basée à Pointe aux Canonniers, proposant croisières en catamaran, excursions dauphins et autres visites autour de l'île."
-  },
-  {
     "id": "skydive-mauritius",
     "name": "Skydive Mauritius",
     "category": "activites",
@@ -11538,37 +11491,6 @@
     ],
     "zone": "nord",
     "description": "Agence de Trou-aux-Biches organisant des circuits sur mesure avec chauffeur-guide, dont un tour du Sud-Ouest (Trou aux Cerfs, Gorges de la Rivière Noire, Chamarel) et un circuit vers le Nord (Port-Louis, jardin botanique, Grand Baie, Cap Malheureux)."
-  },
-  {
-    "id": "top-travel-tours",
-    "name": "Top Travel & Tours",
-    "category": "activites",
-    "address": "B13, Grand Baie",
-    "phone": "+230 263 4225",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=4058551696530941528&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -19.9937205,
-    "lng": 57.5920575,
-    "themes": [
-      "excursions"
-    ],
-    "zone": "nord"
-  },
-  {
-    "id": "kidan-tours",
-    "name": "Kidan tours",
-    "category": "activites",
-    "address": "XG7W+M77, Trou aux Biches",
-    "phone": "+230 5253 5855",
-    "website": "https://www.facebook.com/KIDAN-TOURS-641577322621371/",
-    "googleMapsUrl": "https://maps.google.com/?cid=322944315205175398&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0358808,
-    "lng": 57.5456335,
-    "themes": [
-      "excursions"
-    ],
-    "zone": "nord",
-    "description": "Opérateur de Trou-aux-Biches proposant des excursions à la journée avec baignade avec les dauphins, passage par l'îlot Bénitier et barbecue sur l'île."
   },
   {
     "id": "ratana-travel-agent",
@@ -14979,22 +14901,6 @@
     ],
     "zone": "ouest",
     "description": "Excursion de randonnée guidée d'environ 7 heures vers les Sept Cascades (Tamarind Falls), proposée par l'agence Mauritius Discoveries."
-  },
-  {
-    "id": "lmc-tours",
-    "name": "LMC Tours",
-    "category": "activites",
-    "address": "Coastal Rd, Flic en Flac",
-    "phone": "+230 5733 1912",
-    "website": "http://www.lemornevacations.com/",
-    "googleMapsUrl": "https://maps.google.com/?cid=2348863563979499798&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.2776155,
-    "lng": 57.3692449,
-    "themes": [
-      "excursions"
-    ],
-    "zone": "ouest",
-    "description": "Opérateur basé à Flic en Flac proposant transferts, location de voitures et sorties en mer (catamaran, speedboat), dont une excursion avec observation des dauphins, arrêt à Crystal Rock, snorkeling et déjeuner BBQ au Morne."
   },
   {
     "id": "blackriver-charters",
@@ -23474,22 +23380,6 @@
     "description": "Centre de plongée basé dans les hôtels de Belle Mare (Solana Beach, Lux Belle Mare, Salt Palmar), proposant baptêmes, cours PADI et sorties sur récifs et épaves pour tous niveaux."
   },
   {
-    "id": "vicky-boats",
-    "name": "Vicky Boats",
-    "category": "activites",
-    "address": "Trou d'Eau Douce",
-    "phone": "+230 5754 5597",
-    "website": "http://www.bateauxvicky.com/",
-    "googleMapsUrl": "https://maps.google.com/?cid=14702173455182376894&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.2386931,
-    "lng": 57.7924439,
-    "themes": [
-      "excursions"
-    ],
-    "zone": "est",
-    "description": "Compagnie historique de speedboats de Trou d'Eau Douce, fondée par Jean Claude « Missié Vicky » Dardenne et aujourd'hui dirigée par son fils, assurant la majorité des transferts vers les îles de l'est et la cascade de la Grande Rivière Sud-Est, avec déjeuner BBQ sur la plage."
-  },
-  {
     "id": "turquoise-voyages-samtours-mauritius",
     "name": "Turquoise Voyages / Samtours Mauritius",
     "category": "activites",
@@ -29916,21 +29806,6 @@
       "habits-adultes"
     ],
     "zone": "ouest"
-  },
-  {
-    "id": "barracuda-3-iles-du-nords",
-    "name": "BARRACUDA 3 îles Du Nords",
-    "category": "activites",
-    "address": "La Salette road MU, Royal road, Grand Baie 30501",
-    "phone": "+230 5834 0877",
-    "googleMapsUrl": "https://maps.google.com/?cid=11495502627750868950&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0138712,
-    "lng": 57.5872787,
-    "themes": [
-      "excursions"
-    ],
-    "zone": "nord",
-    "description": "Croisière en catamaran au départ de Grand Baie vers les îlots du Nord (Coin de Mire, Ilot Gabriel, Ile Plate), avec arrêt snorkeling et déjeuner barbecue servi sur Ile Plate."
   },
   {
     "id": "eco-holidays-mauritius-dmc",
