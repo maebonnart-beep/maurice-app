@@ -34294,5 +34294,179 @@
     ],
     "zone": "nord",
     "description": "Espace culturel et créatif de la smart city de Beau Plan, dédié à l'artisanat et à l'art local (ateliers, expositions, boutique de créations 100% mauriciennes), aménagé sous de grands arbres parmi des vestiges industriels en pierre."
+  },
+  {
+    "id": "mcine-port-louis-caudan",
+    "name": "MCine Port-Louis (Caudan Waterfront)",
+    "category": "activites",
+    "address": "Le Caudan Waterfront, Port Louis",
+    "phone": "+230 210 1900",
+    "website": "https://www.mcine.mu",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=MCine%20Port-Louis%20(Caudan%20Waterfront)%20Mauritius",
+    "themes": [
+      "cinemas"
+    ],
+    "zone": "centre",
+    "description": "Multiplexe de 3 salles au cœur du Caudan Waterfront, doté d'un son Dolby Digital 7.1 et d'une projection numérique de pointe ; deux salles proposent la 3D. Programmation Hollywood et Bollywood.",
+    "lat": -20.16122,
+    "lng": 57.49687
+  },
+  {
+    "id": "mcine-trianon",
+    "name": "MCine Trianon",
+    "category": "activites",
+    "address": "La City, Trianon Shopping Park, Quatre Bornes",
+    "phone": "+230 464 1900",
+    "website": "https://www.mcine.mu",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=MCine%20Trianon%20Mauritius",
+    "themes": [
+      "cinemas"
+    ],
+    "zone": "centre",
+    "description": "Cinéma multiplexe de 3 salles (245, 231 et 156 places) ouvert en 2014, équipé d'un projecteur numérique Barco DLP et d'un son Dolby Digital 7.1, avec projections 3D et prêt gratuit de lunettes 3D.",
+    "lat": -20.25742,
+    "lng": 57.48862
+  },
+  {
+    "id": "mcine-tribeca",
+    "name": "MCine Tribeca",
+    "category": "activites",
+    "address": "Tribeca Mall, Ebène / Trianon",
+    "phone": "+230 333 3333",
+    "website": "https://www.mcine.mu",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=MCine%20Tribeca%20Mauritius",
+    "themes": [
+      "cinemas"
+    ],
+    "zone": "centre",
+    "description": "Le plus grand complexe cinématographique de l'île (ouvert en mai 2026) avec 7 salles et 1000 places, doté de son Dolby Atmos, de projection laser et de sièges Standard, Premium et Premium Reclining.",
+    "lat": -20.24624,
+    "lng": 57.49706
+  },
+  {
+    "id": "mcine-curepipe",
+    "name": "MCine Curepipe",
+    "category": "activites",
+    "address": "Avenue Swami Sivananda, Curepipe",
+    "phone": "+230 676 1900",
+    "website": "https://www.mcine.mu",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=MCine%20Curepipe%20Mauritius",
+    "themes": [
+      "cinemas"
+    ],
+    "zone": "centre",
+    "description": "Ancien cinéma Novelty rénové et rejoint la marque MCine, avec nouveaux écrans, nouveaux sièges et nouvelle billetterie. Programmation Hollywood et Bollywood.",
+    "lat": -20.31451,
+    "lng": 57.52227,
+    "hours": "Séances typiques 10h, 13h, 16h30, 20h15 (variable selon le film)"
+  },
+  {
+    "id": "mcine-flacq",
+    "name": "MCine Flacq",
+    "category": "activites",
+    "address": "Complexe Super U, A7, Centre de Flacq",
+    "phone": "+230 413 1900",
+    "website": "https://www.mcine.mu",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=MCine%20Flacq%20Mauritius",
+    "themes": [
+      "cinemas"
+    ],
+    "zone": "est",
+    "description": "Cinéma de 3 salles (deux de 128 places, une de 224 places) ouvert en 2016 dans le complexe Super U de Flacq, seul cinéma de l'Est de l'île."
+  },
+  {
+    "id": "mcine-la-croisette",
+    "name": "MCine La Croisette",
+    "category": "activites",
+    "address": "Grand Baie La Croisette Shopping Mall, Grand Baie",
+    "phone": "",
+    "website": "https://www.mcine.mu",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=MCine%20La%20Croisette%20Mauritius",
+    "themes": [
+      "cinemas"
+    ],
+    "zone": "nord",
+    "description": "Cinéma de 5 salles équipé du son Dolby Atmos et d'écrans larges, ouvert par MCine en avril 2026 sur l'ancien emplacement de Star Cinema La Croisette.",
+    "lat": -20.0217975,
+    "lng": 57.5791115
+  },
+  {
+    "id": "cine-kings-goodlands",
+    "name": "Cine Kings",
+    "category": "activites",
+    "address": "Vel Plaza, Route Royale, Goodlands",
+    "phone": "+230 282 0808",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Cine%20Kings%20Mauritius",
+    "themes": [
+      "cinemas"
+    ],
+    "zone": "nord",
+    "description": "Cinéma indépendant du nord de l'île avec 2 salles de 400 places chacune, projection numérique et son Dolby Digital 7.1, orienté cinéma bollywoodien.",
+    "lat": -20.0369881,
+    "lng": 57.6496149,
+    "hours": "Séances typiques 10h, 13h, 20h30"
+  },
+  {
+    "id": "cinema-anand-triolet",
+    "name": "Cinema Anand",
+    "category": "activites",
+    "address": "Route Royale, 8th Mile, Triolet",
+    "phone": "+230 5913 8177",
+    "website": "https://cinema.mu",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Cinema%20Anand%20Mauritius",
+    "themes": [
+      "cinemas"
+    ],
+    "zone": "nord",
+    "description": "Salle de cinéma rénovée d'environ 300 places, à l'ambiance rétro, spécialisée dans les dernières sorties bollywoodiennes.",
+    "lat": -20.0603732,
+    "lng": 57.5516408,
+    "hours": "Séances typiques 13h, 16h15, 20h15 (programmation variable selon la saison)"
+  },
+  {
+    "id": "cinema-sirsa-castel",
+    "name": "Cinema Sirsa (Castel)",
+    "category": "activites",
+    "address": "Royal Road, Castel",
+    "phone": "",
+    "website": "https://cinema.mu",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Cinema%20Sirsa%20(Castel)%20Mauritius",
+    "themes": [
+      "cinemas"
+    ],
+    "zone": "centre",
+    "description": "Une des plus anciennes salles de cinéma de Plaine Wilhems, fermée en 1988 puis rénovée et rouverte en 2013, climatisée et équipée d'un système audiovisuel numérique. Programmation essentiellement bollywoodienne."
+  },
+  {
+    "id": "cine-metropolitan-rose-belle",
+    "name": "Cine Metropolitan (Rose-Belle)",
+    "category": "activites",
+    "address": "Vieux Moulin Shopping Complex, Rose-Belle",
+    "phone": "+230 627 9570",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Cine%20Metropolitan%20(Rose-Belle)%20Mauritius",
+    "themes": [
+      "cinemas"
+    ],
+    "zone": "sud",
+    "description": "Une des salles de cinéma les plus populaires du sud de l'île, au sein du complexe commercial Vieux Moulin à Rose-Belle.",
+    "lat": -20.3986348,
+    "lng": 57.5985607
+  },
+  {
+    "id": "cine-sous-les-etoiles",
+    "name": "Ciné Sous Les Étoiles",
+    "category": "activites",
+    "address": "Sites rotatifs : Domaine de Labourdonnais (Mapou, drive-in) et Ebène Recreational Park (Beau Bassin-Rose Hill, plein air)",
+    "phone": "+230 466 9999",
+    "website": "https://cinesouslesetoiles.cinema.mu",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Cin%C3%A9%20Sous%20Les%20%C3%89toiles%20Mauritius",
+    "themes": [
+      "cinemas"
+    ],
+    "zone": "centre",
+    "description": "Premier cinéma drive-in et plein air de Maurice, opéré par le groupe MCine : séances en voiture, transats premium ou canapés VIP sous les étoiles, avec restauration sur place.",
+    "hours": "Ouverture des portes 18h, film à 19h (variable selon coucher du soleil et calendrier saisonnier)"
   }
 ]
