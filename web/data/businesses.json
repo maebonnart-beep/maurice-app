@@ -18857,7 +18857,10 @@
     "themes": [
       "randonnee-trail"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Arboretum et sentier forestier de 10 hectares au cœur de l'île, avec musée d'outils forestiers d'époque et serre de fougères ; boucle Ébène de 3 km parmi essences endémiques, oiseaux et singes.",
+    "duration": "Boucle Ébène ~3 km",
+    "entryPrice": "Gratuit"
   },
   {
     "id": "la-vieille-cheminee",
@@ -18891,21 +18894,6 @@
     "hours": "Départs guidés à 9h, 11h, 13h et 15h tous les jours",
     "entryPrice": "Rs 750 non-résidents / Rs 500 résidents (enfants : Rs 375 / Rs 250)",
     "duration": "Environ 1h20"
-  },
-  {
-    "id": "aventures-mascareignes",
-    "name": "Aventures-Mascareignes",
-    "category": "activites",
-    "address": "Sebastopol",
-    "phone": "+33 7 83 59 08 42",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=2216346035158716349&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.3161875,
-    "lng": 57.6906875,
-    "themes": [
-      "randonnee-trail"
-    ],
-    "zone": "est"
   },
   {
     "id": "urban-sport",
@@ -19074,7 +19062,10 @@
       "randonnee-trail"
     ],
     "zone": "est",
-    "isAgency": true
+    "isAgency": true,
+    "description": "Agence locale basée à Plaine des Roches dirigée par un guide certifié (premiers secours, escalade) : randonnées sur mesure (Tamarind Falls, Le Morne, sommets), kayak dans la mangrove, exploration de tunnels de lave et circuits découverte de l'île.",
+    "duration": "Variable selon activité",
+    "entryPrice": "Tarifs sur devis"
   },
   {
     "id": "plateau-resmousse",
@@ -19111,7 +19102,10 @@
       "randonnee-trail"
     ],
     "zone": "ouest",
-    "isAgency": true
+    "isAgency": true,
+    "description": "Randonnées privées guidées par Zac, ultra-traileur détenteur du record du tour de l'île à pied : parcours adaptés à tous niveaux vers les 7 Cascades, Le Morne Brabant, le Parc National ou le Piton du Canot.",
+    "duration": "2h30 à 4h selon le parcours",
+    "entryPrice": "À partir de 100€/pers (Piton du Canot) jusqu'à 140€/pers (7 Cascades, Parc National)"
   },
   {
     "id": "local-spirit",
@@ -34761,5 +34755,24 @@
     ],
     "zone": "centre",
     "description": "Enseigne mauricienne multi-marques dédiée à la maison (créée en 2013) : décoration tendance, petit électroménager, linge de maison, arts de la table et idées cadeaux à prix accessibles, succursale de Vacoas-Phoenix."
+  },
+  {
+    "id": "vertical-world-ltd",
+    "name": "Vertical World Ltd",
+    "category": "activites",
+    "address": "Curepipe",
+    "phone": "+230 251 1107",
+    "website": "https://verticalworldltd.com/",
+    "googleMapsUrl": "https://www.google.com/maps/search/Vertical+World+Curepipe+Mauritius",
+    "lat": -20.3162,
+    "lng": 57.5254,
+    "themes": [
+      "randonnee-trail"
+    ],
+    "zone": "centre",
+    "isAgency": true,
+    "duration": "Demi-journée à 2 jours selon la formule",
+    "entryPrice": "À partir de 80€/pers (canyoning) ; randonnée sur devis",
+    "description": "Pionnier des sports outdoor à Maurice (fondé en 1999) : randonnée, canyoning aux 7 Cascades et à Eau Bleue, trekking de 2 jours et escalade, encadrés par des guides certifiés."
   }
 ]
