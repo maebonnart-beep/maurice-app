@@ -13124,7 +13124,8 @@
       "livraisons"
     ],
     "zone": "ouest",
-    "description": "Plateforme de livraison de repas multi-restaurants pour la zone Flic en Flac / Tamarin / Black River."
+    "description": "Plateforme de livraison de repas multi-restaurants pour la zone Flic en Flac / Tamarin / Black River.",
+    "hours": "Tous les jours 10h-22h"
   },
   {
     "id": "nando-s-grand-baie",
@@ -13207,7 +13208,8 @@
       "livraisons"
     ],
     "zone": "nord",
-    "description": "Pizza au four à bois à Grand Baie, pâte au levain préparée à la minute, plutôt à emporter."
+    "description": "Pizza au four à bois à Grand Baie, pâte au levain préparée à la minute, plutôt à emporter.",
+    "hours": "Mer-Dim 17h30-21h30 (fermé Lun-Mar)"
   },
   {
     "id": "la-cigale-pizzeria",
@@ -16626,7 +16628,8 @@
       "produits-francais"
     ],
     "zone": "ouest",
-    "description": "Boucherie style français de Rivière Noire, bien notée pour la propreté et la qualité de la viande."
+    "description": "Boucherie style français de Rivière Noire, bien notée pour la propreté et la qualité de la viande.",
+    "hours": "Lun-Ven 9h-17h, Sam 9h-18h, Dim 9h-12h"
   },
   {
     "id": "phil-s-meat-co-ltd",
@@ -16778,7 +16781,8 @@
       "livraisons"
     ],
     "zone": "ouest",
-    "description": "Pizzeria italienne de Tamarin, pâte artisanale, sur place et à emporter, ouvert tous les jours midi et soir."
+    "description": "Pizzeria italienne de Tamarin, pâte artisanale, sur place et à emporter, ouvert tous les jours midi et soir.",
+    "hours": "Dim-Jeu 10h30-21h, Ven-Sam 10h30-21h30"
   },
   {
     "id": "da-vinci-s",
@@ -16862,7 +16866,8 @@
       "livraisons"
     ],
     "zone": "nord",
-    "description": "Bistro de cuisine mauricienne à Long Mountain (nouilles, boulettes, mine bouillie, œuf rôti), livraison, à emporter et sur place."
+    "description": "Bistro de cuisine mauricienne à Long Mountain (nouilles, boulettes, mine bouillie, œuf rôti), livraison, à emporter et sur place.",
+    "hours": "Mar-Dim 17h-22h (fermé le lundi)"
   },
   {
     "id": "tariq",
@@ -20292,7 +20297,8 @@
       "produits-francais"
     ],
     "zone": "ouest",
-    "description": "Boulangerie-pâtisserie française du Cascavelle Mall (Flic en Flac) : pains artisanaux, viennoiseries et pâtisseries sucrées/salées préparés frais chaque jour."
+    "description": "Boulangerie-pâtisserie française du Cascavelle Mall (Flic en Flac) : pains artisanaux, viennoiseries et pâtisseries sucrées/salées préparés frais chaque jour.",
+    "hours": "Lun-Sam 7h30-18h30, Dim 7h30-15h"
   },
   {
     "id": "boulangerie-isle-de-france",
@@ -24954,7 +24960,8 @@
       "livraisons"
     ],
     "zone": "centre",
-    "description": "Spécialiste du briani/biryani (poulet, riz frit), secteur Terre Rouge/Pamplemousses."
+    "description": "Spécialiste du briani/biryani (poulet, riz frit), secteur Terre Rouge/Pamplemousses.",
+    "hours": "Lun-Mer 10h-15h, Jeu-Sam 10h-15h30, Dim fermé"
   },
   {
     "id": "nature-et-delices",
@@ -25241,7 +25248,8 @@
       "livraisons"
     ],
     "zone": "nord",
-    "description": "Grill et cuisine locale/internationale (viandes grillées, fruits de mer) sur la côte nord-ouest."
+    "description": "Grill et cuisine locale/internationale (viandes grillées, fruits de mer) sur la côte nord-ouest.",
+    "hours": "Mar 13h-21h30, Mer 17h30-21h30 (fermé Jeu-Lun)"
   },
   {
     "id": "travelling-teachers-grand-baie",
@@ -30177,7 +30185,8 @@
       "livraisons"
     ],
     "zone": "ouest",
-    "description": "Cuisine africaine/ouest-africaine à Flic en Flac (Coastal Road)."
+    "description": "Cuisine africaine/ouest-africaine à Flic en Flac (Coastal Road).",
+    "hours": "Lun-Ven 17h-0h, Sam 12h-0h, Dim 16h-0h"
   },
   {
     "id": "basilico-pizzeria-italian-specialty",
@@ -30208,7 +30217,8 @@
       "livraisons"
     ],
     "zone": "sud",
-    "description": "Fast-food/grill à Chemin Grenier (shawarma, poulet et agneau grillés), sur place ou à emporter."
+    "description": "Fast-food/grill à Chemin Grenier (shawarma, poulet et agneau grillés), sur place ou à emporter.",
+    "hours": "Dim-Jeu 10h-21h30, Ven-Sam 10h-22h30"
   },
   {
     "id": "investec-bank-mauritius-limited",
