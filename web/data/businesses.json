@@ -4732,7 +4732,8 @@
     "hours": "Lun-Sam 10h-16h (dernière entrée 15h15)",
     "priceRange": "prix-moyen",
     "zone": "nord",
-    "promoText": "Écomusée retraçant l'histoire du sucre à Maurice, parcours de 10 espaces thématiques avec dégustations de produits locaux. (1200 Rs/pers.)"
+    "promoText": "Écomusée retraçant l'histoire du sucre à Maurice, parcours de 10 espaces thématiques avec dégustations de produits locaux. (1200 Rs/pers.)",
+    "description": "Ancienne usine sucrière du domaine de Beau Plan transformée en musée interactif, où un parcours de dix espaces thématiques retrace trois siècles d'histoire de la canne à sucre à Maurice, avec dégustation de sucres et de rhums en fin de visite."
   },
   {
     "id": "aapravasi-ghat-port-louis",
@@ -4750,7 +4751,8 @@
     "hours": "Lun-Ven 9h-16h, Sam 9h-12h, fermé dim",
     "priceRange": "bon-marche",
     "zone": "centre",
-    "promoText": "Site classé UNESCO retraçant l'arrivée des travailleurs engagés indiens dès 1849, centre d'interprétation avec objets et témoignages. (entrée gratuite)"
+    "promoText": "Site classé UNESCO retraçant l'arrivée des travailleurs engagés indiens dès 1849, centre d'interprétation avec objets et témoignages. (entrée gratuite)",
+    "description": "Site classé au patrimoine mondial de l'UNESCO où, à partir de 1849, près d'un demi-million de travailleurs engagés venus d'Inde débarquèrent pour travailler dans les champs de canne à sucre, marquant le début de la diaspora indienne moderne."
   },
   {
     "id": "domaine-les-pailles",
@@ -4789,7 +4791,8 @@
     "hours": "Tous les jours 10h-17h",
     "priceRange": "bon-marche",
     "zone": "centre",
-    "promoText": "Musée d'art et d'histoire postale, célèbre pour ses timbres Blue Penny et Red Penny de 1847 visibles 10 min par heure. (225 Rs/pers.)"
+    "promoText": "Musée d'art et d'histoire postale, célèbre pour ses timbres Blue Penny et Red Penny de 1847 visibles 10 min par heure. (225 Rs/pers.)",
+    "description": "Musée du Caudan Waterfront qui abrite les célèbres timbres Blue Penny et Red Penny de 1847, ainsi que des salles retraçant l'histoire de Maurice à travers cartes, peintures et objets d'époque."
   },
   {
     "id": "rochester-falls-souillac",
@@ -11283,7 +11286,8 @@
     "themes": [
       "culture-patrimoine"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Petite église au toit rouge et aux murs blancs face au lagon turquoise et au Coin de Mire, construite en 1938 et devenue l'une des images les plus photographiées de l'île Maurice."
   },
   {
     "id": "rm-grand-baie",
@@ -11638,7 +11642,8 @@
       "culture-patrimoine"
     ],
     "zone": "sud",
-    "promoText": "Petit musée au fort hollandais du premier établissement colonial de Maurice, vue sur la baie. (entrée gratuite, fermé le mercredi)"
+    "promoText": "Petit musée au fort hollandais du premier établissement colonial de Maurice, vue sur la baie. (entrée gratuite, fermé le mercredi)",
+    "description": "Musée du site historique du Vieux Grand Port présentant les vestiges archéologiques et objets retrouvés depuis 1997, témoins des premiers établissements hollandais et français à Maurice."
   },
   {
     "id": "musee-de-la-poste-mauricienne",
@@ -11654,7 +11659,8 @@
       "culture-patrimoine"
     ],
     "zone": "centre",
-    "promoText": "Musée philatélique installé dans l'ancienne poste centrale de 1868, collection de timbres mauriciens. (entrée à petit prix, gratuit pour les -7 ans)"
+    "promoText": "Musée philatélique installé dans l'ancienne poste centrale de 1868, collection de timbres mauriciens. (entrée à petit prix, gratuit pour les -7 ans)",
+    "description": "Installé dans un bâtiment victorien du Port Louis Waterfront, ce musée retrace l'histoire des services postaux mauriciens depuis 1772, avec uniformes, machines à oblitérer et reproductions des célèbres timbres Blue et Red Penny."
   },
   {
     "id": "musee-intercontinental-de-l-esclavage",
@@ -11670,7 +11676,8 @@
       "culture-patrimoine"
     ],
     "zone": "centre",
-    "promoText": "Musée dédié à l'histoire de l'esclavage et de l'engagisme, installé dans l'ancien hôpital militaire de 1740, ouvert en 2023. (entrée gratuite)"
+    "promoText": "Musée dédié à l'histoire de l'esclavage et de l'engagisme, installé dans l'ancien hôpital militaire de 1740, ouvert en 2023. (entrée gratuite)",
+    "description": "Ouvert en 2023 dans l'ancien hôpital militaire de Port-Louis construit en 1740, ce musée est consacré à l'histoire de l'esclavage et de l'engagisme à Maurice, à travers objets d'époque et bustes ethnographiques du XIXe siècle."
   },
   {
     "id": "natural-history-museum",
@@ -11686,7 +11693,8 @@
       "culture-patrimoine"
     ],
     "zone": "centre",
-    "promoText": "Petit musée abritant le célèbre squelette de dodo et des collections de faune mauricienne. (entrée gratuite)"
+    "promoText": "Petit musée abritant le célèbre squelette de dodo et des collections de faune mauricienne. (entrée gratuite)",
+    "description": "Plus ancien musée de Maurice, installé dans le bâtiment de l'Institut mauricien à Port-Louis, célèbre pour abriter l'un des squelettes de dodo les plus complets au monde ainsi que des collections sur la faune et la flore de l'île."
   },
   {
     "id": "musee-du-coquillage",
@@ -11702,7 +11710,8 @@
       "culture-patrimoine"
     ],
     "zone": "sud",
-    "promoText": "Collection de plus de 8000 coquillages du monde entier, présentée dans une ancienne demeure coloniale du 19e siècle."
+    "promoText": "Collection de plus de 8000 coquillages du monde entier, présentée dans une ancienne demeure coloniale du 19e siècle.",
+    "description": "Plus grand musée de coquillages d'Afrique, situé à Bel Ombre, présentant plus de 8000 pièces et 1500 espèces issues de la collection d'Eric Le Court de Billot, à travers un parcours thématique alliant légendes, biologie et animations en 3D."
   },
   {
     "id": "galerie-francoise-vrot-chane-cane",
@@ -11718,7 +11727,8 @@
       "culture-patrimoine"
     ],
     "zone": "nord",
-    "promoText": "Galerie d'art dans un centre commercial de Grand Baie, toiles acryliques de Françoise Vrot sur les scènes de vie mauriciennes."
+    "promoText": "Galerie d'art dans un centre commercial de Grand Baie, toiles acryliques de Françoise Vrot sur les scènes de vie mauriciennes.",
+    "description": "Galerie de Grand Baie présentant les toiles de la peintre française Françoise Vrot, installée à Maurice depuis 1994, dont les œuvres colorées célèbrent les champs de canne, les lagons et les visages de l'île."
   },
   {
     "id": "mont-choisy-le-mall",
@@ -15148,7 +15158,8 @@
     "themes": [
       "culture-patrimoine"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Dernier marais salant encore en activité à Maurice, ces salines de Tamarin datant des années 1940 perpétuent une production artisanale de sel selon des méthodes traditionnelles héritées de l'époque française."
   },
   {
     "id": "bassin-vert",
@@ -15461,7 +15472,8 @@
       "culture-patrimoine"
     ],
     "zone": "ouest",
-    "promoText": "Ancienne tour de défense britannique du 19e siècle transformée en musée, visite guidée incluse dans le billet. (70 Rs/pers. en semaine, 50 Rs le week-end)"
+    "promoText": "Ancienne tour de défense britannique du 19e siècle transformée en musée, visite guidée incluse dans le billet. (70 Rs/pers. en semaine, 50 Rs le week-end)",
+    "description": "Tour de défense en pierre basaltique construite par les Britanniques entre 1832 et 1835 sur la plage de La Preneuse, transformée depuis 2000 en musée présentant armes d'époque et personnages en cire."
   },
   {
     "id": "pasadena",
@@ -21405,7 +21417,8 @@
       "culture-patrimoine"
     ],
     "zone": "sud",
-    "promoText": "Ancienne demeure du poète mauricien Robert Edward Hart, avec ses effets personnels, manuscrits et éditions originales. (entrée gratuite)"
+    "promoText": "Ancienne demeure du poète mauricien Robert Edward Hart, avec ses effets personnels, manuscrits et éditions originales. (entrée gratuite)",
+    "description": "Musée installé à Souillac dans « La Nef », bungalow en pierre de corail où vécut le poète mauricien Robert Edward Hart jusqu'à sa mort en 1954, conservant ses lettres, poèmes et objets personnels."
   },
   {
     "id": "sookdeo-bissoondoyal-memorial-museum",
@@ -21421,7 +21434,8 @@
       "culture-patrimoine"
     ],
     "zone": "sud",
-    "promoText": "Maison natale du professeur Sookdeo Bissoondoyal à Tyack, transformée en musée avec souvenirs, photos et documents. (entrée gratuite)"
+    "promoText": "Maison natale du professeur Sookdeo Bissoondoyal à Tyack, transformée en musée avec souvenirs, photos et documents. (entrée gratuite)",
+    "description": "Musée aménagé dans la maison natale de Sookdeo Bissoondoyal à Tyack, figure majeure de la lutte pour l'indépendance mauricienne, rassemblant photographies, documents et souvenirs de sa vie."
   },
   {
     "id": "musee-de-la-petite-collection",
@@ -21437,7 +21451,8 @@
       "culture-patrimoine"
     ],
     "zone": "sud",
-    "promoText": "Collection privée éclectique de plus de 27 000 objets anciens (téléphones, machines à coudre, monnaies, vélos) réunis sur trois générations."
+    "promoText": "Collection privée éclectique de plus de 27 000 objets anciens (téléphones, machines à coudre, monnaies, vélos) réunis sur trois générations.",
+    "description": "Maison-musée insolite de Rose-Belle où trois générations d'une même famille, descendante de travailleurs engagés arrivés en 1855, ont accumulé et exposent des milliers d'objets du quotidien mauricien d'autrefois."
   },
   {
     "id": "mahogany-shopping-promenade",
@@ -23747,7 +23762,8 @@
       "culture-patrimoine"
     ],
     "zone": "est",
-    "promoText": "Vestiges d'une ancienne sucrerie construite en 1822 et fermée en 1875, murs et cheminées classés au patrimoine national. (accès libre)"
+    "promoText": "Vestiges d'une ancienne sucrerie construite en 1822 et fermée en 1875, murs et cheminées classés au patrimoine national. (accès libre)",
+    "description": "Vestiges d'une ancienne usine sucrière du XIXe siècle près de Quatre Cocos, dont les ruines envahies de végétation témoignent du passé colonial et sucrier de la région de Belle Mare."
   },
   {
     "id": "monument-paul-et-virginie",
@@ -23763,7 +23779,8 @@
       "culture-patrimoine"
     ],
     "zone": "est",
-    "promoText": "Monument élevé en 1944 en mémoire du naufrage du Saint-Géran en 1744, qui inspira le roman Paul et Virginie. (accès libre)"
+    "promoText": "Monument élevé en 1944 en mémoire du naufrage du Saint-Géran en 1744, qui inspira le roman Paul et Virginie. (accès libre)",
+    "description": "Monument érigé à Poudre d'Or en mémoire du naufrage du navire Saint-Géran en 1744, tragédie qui inspira à Bernardin de Saint-Pierre son roman « Paul et Virginie » publié en 1788."
   },
   {
     "id": "coeur-de-ville-flacq",
@@ -25639,7 +25656,8 @@
     "priceRange": "prix-moyen",
     "badge": "coup-de-coeur",
     "promoText": "Très jolie exploitation, visite commentée de 25 min avec dégustation. (450 Rs/pers.)",
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Plantation fondée en 1992 à St Julien d'Hotman, où une visite guidée permet de découvrir la culture de la vanille ainsi que des plants de café, de cacao et diverses épices dans un cadre agricole préservé."
   },
   {
     "id": "segala-intercontinental-balaclava",
@@ -25970,7 +25988,8 @@
     ],
     "hours": "Tous les jours 9h-17h",
     "zone": "centre",
-    "promoText": "Demeure coloniale restaurée en musée du thé mauricien, visite guidée d'1h se terminant par une dégustation. (330 Rs/pers.)"
+    "promoText": "Demeure coloniale restaurée en musée du thé mauricien, visite guidée d'1h se terminant par une dégustation. (330 Rs/pers.)",
+    "description": "Demeure coloniale en bois construite en 1872 à Forest Side, première maison mauricienne équipée de l'électricité en 1889, aujourd'hui transformée en maison-musée et première étape de la Route du Thé."
   },
   {
     "id": "chef-alessio-cours-cuisine",
@@ -29823,7 +29842,8 @@
     "themes": [
       "culture-patrimoine"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Musée de Bel Ombre consacré aux coquillages, présentant plus de 8000 pièces du monde entier issues de la collection d'Eric Le Court de Billot, à travers un parcours mêlant science, légendes et animations interactives."
   },
   {
     "id": "mauritius-museums-council",
@@ -29972,7 +29992,8 @@
     "themes": [
       "culture-patrimoine"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Musée gratuit installé dans les locaux historiques de la Banque de Maurice, rue Sir William Newton à Port-Louis, ouvert en 2018, qui retrace à travers environ 500 objets l'histoire monétaire de l'île depuis la période arabe jusqu'à nos jours."
   },
   {
     "id": "tarisa-resort-and-spa-mauritius",
@@ -31172,7 +31193,8 @@
     "themes": [
       "culture-patrimoine"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Musée immersif de Pamplemousses, à deux pas du jardin botanique, qui utilise la réalité augmentée pour faire revivre le dodo et une dizaine d'autres espèces d'oiseaux disparus de Maurice."
   },
   {
     "id": "craft-market",
@@ -31306,7 +31328,8 @@
     "themes": [
       "culture-patrimoine"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Galerie d'art de Central Flacq présentant les œuvres contemporaines de l'artiste mauricien Mohammad Asraf Sowdayer ainsi que d'autres créateurs locaux et internationaux."
   },
   {
     "id": "bookmauritius-villas",
