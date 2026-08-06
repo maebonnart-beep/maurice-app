@@ -1832,7 +1832,8 @@
       "produits-francais"
     ],
     "zone": "nord",
-    "description": "Boulangerie-pâtisserie de tradition française, pain au levain naturel, viennoiseries au beurre de Normandie, millefeuilles, macarons, gâteaux sur commande. Chaîne comptant 7 points de vente à Maurice."
+    "description": "Boulangerie-pâtisserie de tradition française, pain au levain naturel, viennoiseries au beurre de Normandie, millefeuilles, macarons, gâteaux sur commande. Chaîne comptant 7 points de vente à Maurice.",
+    "hours": "Lun-Sam 6h-19h, Dim 6h-14h"
   },
   {
     "id": "nicolas-grand-baie",
@@ -1867,7 +1868,8 @@
     ],
     "priceRange": "se-faire-plaisir",
     "zone": "nord",
-    "description": "Cave à vins, champagnes et cigares : sélection de grands vins français (dont Bordeaux), champagne personnalisable pour occasions spéciales, livraison sur toute l'île."
+    "description": "Cave à vins, champagnes et cigares : sélection de grands vins français (dont Bordeaux), champagne personnalisable pour occasions spéciales, livraison sur toute l'île.",
+    "hours": "Lun-Jeu 9h-17h, Ven 9h-18h30, Sam 10h30-18h30, Dim fermé"
   },
   {
     "id": "20vin-grand-baie-la-croisette",
@@ -1884,7 +1886,8 @@
       "vins-spiritueux"
     ],
     "zone": "nord",
-    "description": "Cave à vins et spiritueux : plus de 900 références (vins du monde, grands crus), whisky, vodka, gin, tequila, rhum ; conseil sommelier sur place."
+    "description": "Cave à vins et spiritueux : plus de 900 références (vins du monde, grands crus), whisky, vodka, gin, tequila, rhum ; conseil sommelier sur place.",
+    "hours": "Lun-Sam 9h30-20h30, Dim et jours fériés 9h30-16h"
   },
   {
     "id": "mychef-mauritius",
@@ -12913,7 +12916,8 @@
     "themes": [
       "grandes-surfaces"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "hours": "Tous les jours 10h-22h"
   },
   {
     "id": "vana-supermarket",
@@ -12929,7 +12933,8 @@
       "grandes-surfaces"
     ],
     "zone": "nord",
-    "description": "Supermarché de quartier Vana, situé à Pointe aux Canonniers près de Grand Baie, réputé notamment pour ses pâtes fraîches faites maison."
+    "description": "Supermarché de quartier Vana, situé à Pointe aux Canonniers près de Grand Baie, réputé notamment pour ses pâtes fraîches faites maison.",
+    "hours": "Lun-Sam 5h45-19h, Dim 5h45-12h"
   },
   {
     "id": "artisan-boucher",
@@ -12945,7 +12950,8 @@
       "boucheries"
     ],
     "zone": "nord",
-    "description": "Boucherie de quartier de Grand Baie (Sottise Road), sélection de viandes et service personnalisé."
+    "description": "Boucherie de quartier de Grand Baie (Sottise Road), sélection de viandes et service personnalisé.",
+    "hours": "Mardi-Samedi : 9h00-14h00, 15h30-19h00 (fermé dimanche et lundi)"
   },
   {
     "id": "famous-butchers",
@@ -13212,7 +13218,8 @@
       "livraisons"
     ],
     "zone": "nord",
-    "description": "Chaîne de poulet peri-peri (fast-food) à La Croisette Mall, Grand Baie, ouvert tous les jours de 11h30 à 20h."
+    "description": "Chaîne de poulet peri-peri (fast-food) à La Croisette Mall, Grand Baie, ouvert tous les jours de 11h30 à 20h.",
+    "hours": "Lun-Jeu et Dim 11h30-21h, Ven-Sam 11h30-22h30"
   },
   {
     "id": "sushibay",
@@ -13378,7 +13385,8 @@
       "boulangeries"
     ],
     "zone": "nord",
-    "description": "Boulangerie-pâtisserie française au sein de l'hôtel LUX* Grand Baie, sélection de pâtisseries fines, high tea sucré-salé, café ; démarche éco-responsable."
+    "description": "Boulangerie-pâtisserie française au sein de l'hôtel LUX* Grand Baie, sélection de pâtisseries fines, high tea sucré-salé, café ; démarche éco-responsable.",
+    "hours": "Tous les jours 7h-23h"
   },
   {
     "id": "maison-des-crepes",
@@ -13465,7 +13473,8 @@
       "boulangeries"
     ],
     "zone": "nord",
-    "description": "Café-pâtisserie de Grand Baie (Mont Choisy Le Mall) tenu par des Sud-Africaines : cupcakes, milkshakes, pâtisseries, baked potatoes, petit-déjeuner all-day, plats surgelés à emporter. Très bien noté (5/5)."
+    "description": "Café-pâtisserie de Grand Baie (Mont Choisy Le Mall) tenu par des Sud-Africaines : cupcakes, milkshakes, pâtisseries, baked potatoes, petit-déjeuner all-day, plats surgelés à emporter. Très bien noté (5/5).",
+    "hours": "Lun-Ven 9h-16h40, Sam 9h-14h40, Dim fermé"
   },
   {
     "id": "clinique-de-grand-baie",
@@ -16509,7 +16518,8 @@
       "grandes-surfaces"
     ],
     "zone": "ouest",
-    "description": "Point de vente du concept de proximité Monop', enseigne du groupe Monoprix (Casino) relancée à Maurice fin 2025 avec Groupe Aldis ; plus de 8500 références entre produits alimentaires locaux et importés, rayon maison et caisses libre-service."
+    "description": "Point de vente du concept de proximité Monop', enseigne du groupe Monoprix (Casino) relancée à Maurice fin 2025 avec Groupe Aldis ; plus de 8500 références entre produits alimentaires locaux et importés, rayon maison et caisses libre-service.",
+    "hours": "Lun-Sam 8h-20h30, Dim et jours fériés 8h30-15h"
   },
   {
     "id": "chez-mi-bazaar",
@@ -16541,7 +16551,8 @@
     "themes": [
       "grandes-surfaces"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "hours": "Lun-Sam 8h30-19h30, Dim 8h30-16h"
   },
   {
     "id": "shoppie-supermarket",
@@ -16557,7 +16568,8 @@
       "grandes-surfaces"
     ],
     "zone": "ouest",
-    "description": "Supérette du complexe Les Cocotiers à Flic en Flac, proposant produits de première nécessité et faisant aussi office de point de vente loterie."
+    "description": "Supérette du complexe Les Cocotiers à Flic en Flac, proposant produits de première nécessité et faisant aussi office de point de vente loterie.",
+    "hours": "Lun-Sam 7h30-19h, Dim 7h30-12h"
   },
   {
     "id": "chantefrais",
@@ -16590,7 +16602,8 @@
       "epiceries-specialisees"
     ],
     "zone": "ouest",
-    "description": "Épicerie fine (même enseigne que Grand Baie/Floréal) : viandes, charcuterie, fromages affinés, vins, produits frais commandés à Rungis (huîtres, moules de bouchot)."
+    "description": "Épicerie fine (même enseigne que Grand Baie/Floréal) : viandes, charcuterie, fromages affinés, vins, produits frais commandés à Rungis (huîtres, moules de bouchot).",
+    "hours": "Lun-Sam 8h-18h, Dim et jours fériés 9h-12h30"
   },
   {
     "id": "lotus-alkatraz-shop",
@@ -16638,7 +16651,8 @@
       "epiceries-specialisees"
     ],
     "zone": "ouest",
-    "description": "Supermarché gourmet d'origine sud-africaine : saumon frais de Norvège, fruits/légumes importés, distributeur exclusif des marques Waitrose et Freshers, bar à sushis."
+    "description": "Supermarché gourmet d'origine sud-africaine : saumon frais de Norvège, fruits/légumes importés, distributeur exclusif des marques Waitrose et Freshers, bar à sushis.",
+    "hours": "Lun-Sam 6h-19h, Dim 6h-14h"
   },
   {
     "id": "krish-delights-local-streetfood-local-drinks",
@@ -16688,7 +16702,8 @@
       "epiceries-specialisees"
     ],
     "zone": "centre",
-    "description": "Boutique historique (1999) de l'enseigne L'Épicerie : viandes, charcuterie, fromages affinés, truffe, vins, pâtisserie et fine épicerie."
+    "description": "Boutique historique (1999) de l'enseigne L'Épicerie : viandes, charcuterie, fromages affinés, truffe, vins, pâtisserie et fine épicerie.",
+    "hours": "Lun-Ven 9h-18h, Sam 8h30-18h, Dim et jours fériés 8h-12h30"
   },
   {
     "id": "the-meat-house",
@@ -16737,7 +16752,8 @@
       "poissonneries"
     ],
     "zone": "ouest",
-    "description": "Point de vente de poisson frais sur la Coastal Road à Flic en Flac, ouvert du lundi au samedi, 11h-16h."
+    "description": "Point de vente de poisson frais sur la Coastal Road à Flic en Flac, ouvert du lundi au samedi, 11h-16h.",
+    "hours": "Lundi-Samedi : 11h00-16h00 (fermé le dimanche)"
   },
   {
     "id": "west-coast-seafood",
@@ -16805,7 +16821,8 @@
       "livraisons"
     ],
     "zone": "ouest",
-    "description": "Fast-food de poulet frit au Barachois, Tamarin, ouvert au moins du lundi au vendredi 10h-20h30."
+    "description": "Fast-food de poulet frit au Barachois, Tamarin, ouvert au moins du lundi au vendredi 10h-20h30.",
+    "hours": "Lun-Sam 10h-20h30, Dim 10h-20h"
   },
   {
     "id": "cafe-alexia",
@@ -16888,7 +16905,8 @@
       "livraisons"
     ],
     "zone": "ouest",
-    "description": "Sushis et cuisine japonaise à Tamarin, ouvert du mardi au samedi 11h30-14h30 et 17h30-21h30 (fermé le lundi)."
+    "description": "Sushis et cuisine japonaise à Tamarin, ouvert du mardi au samedi 11h30-14h30 et 17h30-21h30 (fermé le lundi).",
+    "hours": "Mar-Sam 11h30-14h30, 17h30-21h30 (fermé le lundi)"
   },
   {
     "id": "albatrosses-sushi",
@@ -16904,7 +16922,8 @@
       "livraisons"
     ],
     "zone": "ouest",
-    "description": "Sushis et cuisine japonaise à Flic en Flac, principalement à emporter, ouvert tous les jours de 12h à 22h."
+    "description": "Sushis et cuisine japonaise à Flic en Flac, principalement à emporter, ouvert tous les jours de 12h à 22h.",
+    "hours": "Lun-Jeu 11h30-13h30, 17h30-20h30, Ven-Dim 11h30-20h30"
   },
   {
     "id": "aly-fast-food-by-gloria",
@@ -19632,7 +19651,8 @@
     "themes": [
       "grandes-surfaces"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "hours": "Lun-Jeu 9h-20h, Ven-Sam 9h-21h, Dim et jours fériés 9h-17h"
   },
   {
     "id": "mauritius-duty-free-paradise-co-ltd",
@@ -20040,7 +20060,8 @@
       "epiceries-specialisees"
     ],
     "zone": "ouest",
-    "description": "Produits sud-africains : biltong, droëwors, viande fraîche, plats préparés, biscuits 'Ouma Rusks', épices et sauces."
+    "description": "Produits sud-africains : biltong, droëwors, viande fraîche, plats préparés, biscuits 'Ouma Rusks', épices et sauces.",
+    "hours": "Lun-Jeu 8h30-18h30, Ven-Sam 8h-19h, Dim et jours fériés 9h-14h"
   },
   {
     "id": "sunset-store",
@@ -20331,7 +20352,8 @@
       "boulangeries"
     ],
     "zone": "nord",
-    "description": "Boulangerie artisanale de Terre Rouge : pain frais, viennoiseries (croissants, burger buns), gâteaux, snacks locaux (kalakand). Ouvert lun-sam 5h-21h, dim 5h-13h ; livraison à l'île entière."
+    "description": "Boulangerie artisanale de Terre Rouge : pain frais, viennoiseries (croissants, burger buns), gâteaux, snacks locaux (kalakand). Ouvert lun-sam 5h-21h, dim 5h-13h ; livraison à l'île entière.",
+    "hours": "Tous les jours 5h30-19h"
   },
   {
     "id": "chaudlepain",
@@ -21901,7 +21923,8 @@
       "grandes-surfaces"
     ],
     "zone": "centre",
-    "description": "Centre commercial du cœur de Quatre Bornes abritant un supermarché, plusieurs boutiques et un espace restauration."
+    "description": "Centre commercial du cœur de Quatre Bornes abritant un supermarché, plusieurs boutiques et un espace restauration.",
+    "hours": "Lun-Sam 8h30-19h, Dim et jours fériés 8h30-16h"
   },
   {
     "id": "poissons-frais-ecaille-bleue-ex-noulamer-poissons",
@@ -22116,7 +22139,8 @@
       "boulangeries"
     ],
     "zone": "nord",
-    "description": "Boulangerie de Pamplemousses établie depuis plus de 30 ans : large gamme de pains frais, pizzas, friands/quiches, cookies et gâteaux (dont végétariens) ; fournit aussi hôtels, restaurants et supermarchés."
+    "description": "Boulangerie de Pamplemousses établie depuis plus de 30 ans : large gamme de pains frais, pizzas, friands/quiches, cookies et gâteaux (dont végétariens) ; fournit aussi hôtels, restaurants et supermarchés.",
+    "hours": "Lun 5h-17h, Mar-Ven 3h-18h, Sam 5h-13h, Dim fermé"
   },
   {
     "id": "modern-cake-shop",
@@ -25039,7 +25063,8 @@
       "livraisons"
     ],
     "zone": "est",
-    "description": "Cuisine fusion mauricienne à Central Flacq."
+    "description": "Cuisine fusion mauricienne à Central Flacq.",
+    "hours": "Mar, Jeu, Dim 10h30-15h, Mer 10h30-14h30, Ven 10h30-21h, Sam 10h30-22h (fermé le lundi)"
   },
   {
     "id": "reza-briani-snack",
@@ -25106,7 +25131,8 @@
       "livraisons"
     ],
     "zone": "est",
-    "description": "Sucreries et mithai indiennes au food court de Coeur de Ville, Flacq, ouvert tous les jours à partir de 10h30."
+    "description": "Sucreries et mithai indiennes au food court de Coeur de Ville, Flacq, ouvert tous les jours à partir de 10h30.",
+    "hours": "Tous les jours à partir de 10h30"
   },
   {
     "id": "china-palace",
@@ -25156,7 +25182,8 @@
       "boulangeries"
     ],
     "zone": "nord",
-    "description": "Café-pâtisserie de Triolet réputé pour ses créations artisanales (Sacher Blanc, Anémone) et ses petits-déjeuners (œufs brouillés, plateaux de fruits frais), décor rotin/jardin. Réservation conseillée le soir."
+    "description": "Café-pâtisserie de Triolet réputé pour ses créations artisanales (Sacher Blanc, Anémone) et ses petits-déjeuners (œufs brouillés, plateaux de fruits frais), décor rotin/jardin. Réservation conseillée le soir.",
+    "hours": "Tous les jours 7h-22h"
   },
   {
     "id": "la-boite-a-gateaux-ile-maurice",
@@ -25189,7 +25216,8 @@
       "boulangeries"
     ],
     "zone": "centre",
-    "description": "Pâtisserie familiale de Curepipe fondée en 2006, spécialités mauriciennes traditionnelles : puits d'amour, langue de belle-mère, gâteaux piments, éclairs."
+    "description": "Pâtisserie familiale de Curepipe fondée en 2006, spécialités mauriciennes traditionnelles : puits d'amour, langue de belle-mère, gâteaux piments, éclairs.",
+    "hours": "Dim, Jeu-Sam 9h30-18h (fermé Lun-Mer)"
   },
   {
     "id": "patisserie-puits-d-amour",
@@ -25205,7 +25233,8 @@
       "boulangeries"
     ],
     "zone": "nord",
-    "description": "Pâtisserie de Port Louis spécialisée dans le puits d'amour (classique et variante à la crème de coco), aussi utilisée pour les gâteaux d'anniversaire."
+    "description": "Pâtisserie de Port Louis spécialisée dans le puits d'amour (classique et variante à la crème de coco), aussi utilisée pour les gâteaux d'anniversaire.",
+    "hours": "Lun-Ven 9h-20h30, Sam 9h-15h30, Dim fermé"
   },
   {
     "id": "patisserie-al-safa",
@@ -26389,7 +26418,8 @@
       "vins-spiritueux"
     ],
     "zone": "nord",
-    "description": "Boutique premium de vins et spiritueux a La Croisette (Grand Baie) : plus de 200 vins (dont Gerard Bertrand) et plus de 100 spiritueux (dont plusieurs gins Malfy). Vente en ligne et livraison sur l ile."
+    "description": "Boutique premium de vins et spiritueux a La Croisette (Grand Baie) : plus de 200 vins (dont Gerard Bertrand) et plus de 100 spiritueux (dont plusieurs gins Malfy). Vente en ligne et livraison sur l ile.",
+    "hours": "Lun-Jeu 9h30-19h30, Ven-Sam 9h30-20h30, Dim et jours fériés 9h30-16h"
   },
   {
     "id": "maison-scott-ruisseau-creole",
@@ -26404,7 +26434,8 @@
       "vins-spiritueux"
     ],
     "zone": "ouest",
-    "description": "Boutique La Maison Scott du Ruisseau Creole Shopping Centre (Riviere Noire) : plus de 200 vins, plus de 100 spiritueux premium, degustations, conseils de barmen et sommeliers, programme fidelite."
+    "description": "Boutique La Maison Scott du Ruisseau Creole Shopping Centre (Riviere Noire) : plus de 200 vins, plus de 100 spiritueux premium, degustations, conseils de barmen et sommeliers, programme fidelite.",
+    "hours": "Lun-Sam 9h30-17h30, Dim fermé"
   },
   {
     "id": "maison-scott-riche-terre",
@@ -26419,7 +26450,8 @@
       "vins-spiritueux"
     ],
     "zone": "nord",
-    "description": "Boutique La Maison Scott de Riche Terre (ex-thewinestore by Scott) : une des selections de spiritueux les plus completes du marche et une cave a vins variee ; sert aussi de point de retrait pour les commandes."
+    "description": "Boutique La Maison Scott de Riche Terre (ex-thewinestore by Scott) : une des selections de spiritueux les plus completes du marche et une cave a vins variee ; sert aussi de point de retrait pour les commandes.",
+    "hours": "Lun-Ven 8h-17h, Sam-Dim fermé"
   },
   {
     "id": "20vin-bagatelle",
@@ -26466,7 +26498,8 @@
       "vins-spiritueux"
     ],
     "zone": "centre",
-    "description": "Experience Room d Audacity Wines a Curepipe : degustations de vins et spiritueux australiens (Barossa Valley, Margaret River, Geographe), degustations de gin avec mixologiste (groupes de 10 max)."
+    "description": "Experience Room d Audacity Wines a Curepipe : degustations de vins et spiritueux australiens (Barossa Valley, Margaret River, Geographe), degustations de gin avec mixologiste (groupes de 10 max).",
+    "hours": "Lun-Sam 9h30-18h, Dim fermé"
   },
   {
     "id": "audacity-wines-flacq",
@@ -30300,7 +30333,8 @@
       "livraisons"
     ],
     "zone": "ouest",
-    "description": "Pizzas napolitaines au four à bois et cuisine italienne à Flic en Flac (Coastal Road)."
+    "description": "Pizzas napolitaines au four à bois et cuisine italienne à Flic en Flac (Coastal Road).",
+    "hours": "Ven-Lun 7h-14h, tous les jours sauf jeudi 18h-22h"
   },
   {
     "id": "parasol-chemin-grenier",
