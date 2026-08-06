@@ -26215,23 +26215,6 @@
     "priceRange": "bon-marche"
   },
   {
-    "id": "lepicerie-clef-des-champs-floreal",
-    "name": "L'épicerie by La Clef des Champs",
-    "category": "food",
-    "address": "Avenue Queen Mary, Floréal",
-    "phone": "+230 686 3458",
-    "website": "https://epicerie.mu/",
-    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=La%20Clef%20des%20Champs%20Flor%C3%A9al%20Mauritius",
-    "lat": -20.3109637,
-    "lng": 57.5044125,
-    "themes": [
-      "produits-francais",
-      "epiceries-specialisees"
-    ],
-    "zone": "centre",
-    "description": "Épicerie fine (même enseigne que Grand Baie/Tamarin/Vacoas-Phoenix), attenante au restaurant La Clef des Champs à Floréal : viandes, charcuterie, fromages affinés, truffe, vins et fine épicerie."
-  },
-  {
     "id": "eden-beach-grand-baie",
     "name": "Eden Beach",
     "category": "business-ttv",
@@ -34223,5 +34206,75 @@
     ],
     "zone": "sud",
     "description": "Boulangerie-pâtisserie-café de Mahébourg : pains et viennoiseries pétris quotidiennement, pizzas et market express."
+  },
+  {
+    "id": "jardins-de-la-compagnie",
+    "name": "Les Jardins de la Compagnie",
+    "category": "activites",
+    "address": "Rue Sir William Newton, Port Louis",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Jardins%20de%20la%20Compagnie%20Port%20Louis%20Mauritius",
+    "lat": -20.163631,
+    "lng": 57.5019599,
+    "themes": [
+      "parcs-botaniques",
+      "culture-patrimoine"
+    ],
+    "hours": "Tous les jours, environ 6h-18h",
+    "entryPrice": "Gratuit",
+    "zone": "centre",
+    "description": "Jardin public historique créé au XVIIIe siècle par la Compagnie française des Indes orientales, au cœur de Port Louis. Ses banians centenaires, ses statues commémoratives (dont une œuvre de Prosper d'Épinay) et sa fontaine en font un lieu de détente prisé, à deux pas du Musée d'histoire naturelle."
+  },
+  {
+    "id": "jardin-vanille-epices-st-julien-hotman",
+    "name": "Le Jardin de la Vanille et des Épices",
+    "category": "activites",
+    "address": "Royal Road, Saint-Julien d’Hotman, District de Flacq",
+    "phone": "+230 5754 7863",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Jardin%20de%20la%20Vanille%20et%20des%20Epices%20Saint-Julien%20d%27Hotman%20Mauritius",
+    "lat": -20.229315,
+    "lng": 57.6433883,
+    "themes": [
+      "parcs-botaniques"
+    ],
+    "hours": "Lun-Ven 8h-17h30, Sam 8h-17h, fermé Dim",
+    "entryPrice": "Gratuit (boutique de produits en vente sur place)",
+    "zone": "est",
+    "description": "Petite exploitation biologique de vanille et d'épices proposant une visite guidée sur la culture de la vanille (pollinisation manuelle, séchage) et le commerce des épices à Maurice, avec une boutique de produits locaux."
+  },
+  {
+    "id": "lac-de-beau-plan",
+    "name": "Le lac de Beau Plan",
+    "category": "activites",
+    "address": "Beau Plan Business Park, près du Mahogany Shopping Promenade, Beau Plan, Pamplemousses",
+    "phone": "",
+    "website": "https://beauplan.mu/play/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Lac%20de%20Beau%20Plan%20Mahogany%20Shopping%20Promenade%20Mauritius",
+    "lat": -20.0999947,
+    "lng": 57.5770843,
+    "themes": [
+      "parcs-botaniques"
+    ],
+    "zone": "nord",
+    "description": "Ancien bassin industriel du domaine sucrier de Beau Plan, réaménagé en espace paysager public au sein de la smart city de Beau Plan : promenade, yoga au coucher du soleil et restaurants du Mahogany Shopping Promenade avec vue sur le lac."
+  },
+  {
+    "id": "creative-park-beau-plan",
+    "name": "Le Creative Park",
+    "category": "activites",
+    "address": "Beau Plan Smart City, Pamplemousses",
+    "phone": "+230 260 6200",
+    "website": "https://beauplan.mu/create/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Creative%20Park%20Beau%20Plan%20Pamplemousses%20Mauritius",
+    "lat": -20.0975549,
+    "lng": 57.5741118,
+    "themes": [
+      "parcs-botaniques",
+      "culture-patrimoine"
+    ],
+    "zone": "nord",
+    "description": "Espace culturel et créatif de la smart city de Beau Plan, dédié à l'artisanat et à l'art local (ateliers, expositions, boutique de créations 100% mauriciennes), aménagé sous de grands arbres parmi des vestiges industriels en pierre."
   }
 ]
