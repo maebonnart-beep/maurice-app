@@ -3164,26 +3164,6 @@
     "description": "Randonnée guidée de 2h à travers la forêt endémique de la réserve, avec une halte rafraîchissante à une cascade en cours de route."
   },
   {
-    "id": "grand-bassin-ganga-talao",
-    "name": "Grand Bassin (Ganga Talao)",
-    "category": "activites",
-    "address": "Savanne, Sud-Ouest",
-    "phone": "",
-    "website": "",
-    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Grand%20Bassin%20Ganga%20Talao%20Mauritius",
-    "lat": -20.4189,
-    "lng": 57.4886,
-    "themes": [],
-    "hours": "Temple 5h-12h & 13h-18h, site accessible en permanence",
-    "duration": "1h-2h (tour du lac + temples + 108 marches)",
-    "distance": "2,6 km",
-    "elevationGain": "52 m D+",
-    "difficultyLevel": "debutant",
-    "guideRecommended": false,
-    "zone": "sud",
-    "description": "Balade tranquille jusqu'au lac de cratère sacré, entouré de statues hindoues monumentales et de temples colorés, dans les hauteurs du Savanne."
-  },
-  {
     "id": "frederica-nature-reserve",
     "name": "Frederica Nature Reserve",
     "category": "activites",
@@ -15109,19 +15089,6 @@
     "description": "Dernier marais salant encore en activité à Maurice, ces salines de Tamarin datant des années 1940 perpétuent une production artisanale de sel selon des méthodes traditionnelles héritées de l'époque française."
   },
   {
-    "id": "bassin-vert",
-    "name": "Bassin Vert",
-    "category": "activites",
-    "address": "P9XM+V9, Flic en Flac",
-    "phone": "",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=11699566664869769216&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.2499364,
-    "lng": 57.3833363,
-    "themes": [],
-    "zone": "ouest"
-  },
-  {
     "id": "sparc",
     "name": "SPARC",
     "category": "activites",
@@ -18458,21 +18425,6 @@
     "description": "Agence locale organisant des sorties de randonnée guidées d'environ 3h30 à 4h à travers l'île."
   },
   {
-    "id": "sublime-point",
-    "name": "Sublime point",
-    "category": "activites",
-    "address": "H99F+QPM, Chamarel",
-    "phone": "",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=12658710268544312044&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.430543,
-    "lng": 57.3743012,
-    "themes": [],
-    "difficultyLevel": "debutant",
-    "guideRecommended": false,
-    "zone": "sud"
-  },
-  {
     "id": "radventure-experience-mauritius",
     "name": "Radventure Experience Mauritius",
     "category": "activites",
@@ -21264,19 +21216,6 @@
       "navigation-bateau",
       "ski-nautique"
     ],
-    "zone": "sud"
-  },
-  {
-    "id": "route-du-the",
-    "name": "Route du Thé",
-    "category": "activites",
-    "address": "Saint Aubin, Route Royale, Pres de Souillace, Rivière des Anguilles",
-    "phone": "+230 676 3089",
-    "website": "https://groupe-saintaubin.com/saint-aubin-loisirs/domaine-de-saint-aubin/la-route-du-the-du-rhum-et-de-la-vanille/",
-    "googleMapsUrl": "https://maps.google.com/?cid=10801883596028035330&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.5015491,
-    "lng": 57.5443909,
-    "themes": [],
     "zone": "sud"
   },
   {
