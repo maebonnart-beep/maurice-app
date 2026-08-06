@@ -34631,5 +34631,72 @@
     ],
     "zone": "centre",
     "description": "Nouvelle initiative culturelle à Port-Louis (fiche Google mise à jour très récemment, site en construction) — à suivre, 'Anou Rakonte' ('racontons-nous', en créole) semble annoncer une expérience autour de la narration et du patrimoine mauricien."
+  },
+  {
+    "id": "king-jouet-grand-baie",
+    "name": "King Jouet Maurice",
+    "category": "activites",
+    "address": "Shop D1, La Croisette, Grand Baie",
+    "phone": "+230 269 6648",
+    "website": "https://king-jouet.mu/",
+    "googleMapsUrl": "https://www.google.com/maps/place/King+Jouet+Maurice/@-20.0225093,57.5790335,17z",
+    "lat": -20.0225093,
+    "lng": 57.5790335,
+    "themes": [
+      "jeux"
+    ],
+    "hours": "Ouvert jusqu'à 20h30",
+    "zone": "nord",
+    "description": "Magasin de jouets et jeux à La Croisette, Grand Baie : figurines, jeux de société, jouets éducatifs et grandes marques."
+  },
+  {
+    "id": "mozouzou-phoenix",
+    "name": "Mozouzou - Phoenix Mall",
+    "category": "activites",
+    "address": "Phoenix Mall, Vacoas-Phoenix",
+    "phone": "",
+    "website": "https://mozouzou.com/",
+    "googleMapsUrl": "https://www.google.com/maps/place/Mozouzou/@-20.2800509,57.4963676,17z",
+    "lat": -20.2800509,
+    "lng": 57.4963676,
+    "themes": [
+      "jeux"
+    ],
+    "hours": "Ouvert jusqu'à 20h",
+    "zone": "centre",
+    "description": "Spécialiste des jouets et jeux à Maurice : jeux vidéo, poupées, figurines, jeux éducatifs et blocs de construction, boutique au Phoenix Mall."
+  },
+  {
+    "id": "mozouzou-bagatelle",
+    "name": "Mozouzou - Bagatelle Mall",
+    "category": "activites",
+    "address": "Bagatelle Mall of Mauritius, Moka",
+    "phone": "+230 5448 8095",
+    "website": "https://mozouzou.com/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Mozouzou%20Bagatelle%20Mall%20Mauritius",
+    "lat": -20.2211,
+    "lng": 57.4931,
+    "themes": [
+      "jeux"
+    ],
+    "hours": "Lun-Jeu 9h30-20h30, Ven-Sam 9h30-22h, Dim 9h30-15h",
+    "zone": "centre",
+    "description": "Spécialiste des jouets et jeux à Maurice, boutique au Bagatelle Mall : jeux vidéo, poupées, figurines, jeux éducatifs et blocs de construction."
+  },
+  {
+    "id": "lekidz-toys-port-louis",
+    "name": "LeKidz Toys",
+    "category": "activites",
+    "address": "26 Royal Street, Port Louis",
+    "phone": "+230 5948 3845",
+    "website": "https://lekidz.com/",
+    "googleMapsUrl": "https://www.google.com/maps/place/Lekidz+Toys/@-20.1608696,57.5044371,17z",
+    "lat": -20.1608696,
+    "lng": 57.5044371,
+    "themes": [
+      "jeux"
+    ],
+    "zone": "centre",
+    "description": "Boutique de jouets en bois éducatifs et de développement à Port-Louis, marques Hape, BigJigs, Melissa & Doug, PolyM."
   }
 ]
