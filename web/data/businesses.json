@@ -2151,7 +2151,8 @@
     "themes": [
       "malls"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Grand centre commercial de Grand Baie avec plus de 100 enseignes, ancré par l'hypermarché Intermart, et accueillant des marques comme Adidas, Mango, Burger King et KFC."
   },
   {
     "id": "bazar-de-grand-baie",
@@ -2199,7 +2200,8 @@
     "themes": [
       "malls"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Centre commercial de Grand Baie réparti sur deux niveaux, avec plus de 70 boutiques autour du supermarché Super U, un food court, une salle de bowling et un casino."
   },
   {
     "id": "riverwalk-boutique",
@@ -3637,7 +3639,8 @@
     "themes": [
       "malls"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Le plus grand centre commercial de l'île (env. 300 enseignes) à Moka, avec les supermarchés Food Lover's Market et Intermart, et des marques telles que Mango, Calvin Klein, Decathlon et Courts Mammouth."
   },
   {
     "id": "port-louis-central-market",
@@ -3689,7 +3692,8 @@
     "themes": [
       "malls"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Centre commercial de Vacoas-Phoenix avec le Metro Market comme ancre alimentaire, complété par des enseignes comme Celio, Woolworths, Samsung et une arcade de jeux Akiba Zone."
   },
   {
     "id": "la-city-trianon",
@@ -3705,7 +3709,8 @@
     "themes": [
       "malls"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Centre commercial de Quatre Bornes réunissant plus d'une centaine de boutiques (mode, électronique, parfumerie) autour d'un supermarché, avec cinéma et food court."
   },
   {
     "id": "caudan-waterfront",
@@ -3721,7 +3726,8 @@
     "themes": [
       "malls"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Complexe commercial et de loisirs emblématique du front de mer de Port-Louis, avec cinéma, casino, marché artisanal et le musée Blue Penny, entouré de boutiques de mode, bijouterie et duty-free."
   },
   {
     "id": "ah-youn-flic-en-flac",
@@ -9464,7 +9470,9 @@
     "themes": [
       "malls"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "hours": "Lun-Jeu 9h30-22h, Ven-Sam 9h30-22h, Dim 9h30-22h",
+    "description": "Ouvert en 2023 face à Ebène Cybercity, Tribeca Mall est le plus grand centre commercial de l'île avec plus de 150 boutiques, dont l'hypermarché Winner's, ainsi que des enseignes internationales comme Mango, Armani Exchange et Superdry."
   },
   {
     "id": "l-assiette-d-antan",
@@ -11535,7 +11543,9 @@
     "themes": [
       "malls"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "hours": "Lun-Sam 9h-18h/19h, Dim 9h-12h/13h",
+    "description": "Petit centre commercial en plein air au cœur de Grand Baie face à la plage, réputé pour ses bijouteries (Poncini, Diamond Design, Mikado) et ses boutiques de mode et d'accessoires balnéaires."
   },
   {
     "id": "le-performant-sport-fishing",
@@ -11668,7 +11678,9 @@
     "themes": [
       "malls"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "hours": "Lun-Ven 9h30-21h30, Sam 9h30-22h30, Dim 9h30-22h30",
+    "description": "Centre commercial compact situé près du rond-point principal de Grand Baie, organisé autour du supermarché London Way et complété par plusieurs restaurants (Saffron Grill, Luigi's) et une pharmacie."
   },
   {
     "id": "gallerie-espace-ocean",
@@ -11714,7 +11726,9 @@
     "themes": [
       "malls"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "hours": "Lun-Sam 10h-18h, Dim fermé",
+    "description": "Complexe commercial de Grand Baie prolongeant la zone du Super U, abritant notamment Adamas (la plus grande bijouterie de la région), une librairie Papyrus et un McDonald's."
   },
   {
     "id": "quad-activities-mauritius",
@@ -15390,7 +15404,8 @@
     "themes": [
       "malls"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Petit centre commercial du front de mer de Flic en Flac, organisé autour du supermarché Jumbo Express en sous-sol, avec quelques boutiques de souvenirs, de vêtements et une pharmacie à l'étage."
   },
   {
     "id": "cascavelle-mall",
@@ -15405,7 +15420,9 @@
     "themes": [
       "malls"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "hours": "Lun-Jeu 9h30-19h, Ven-Sam 9h30-20h, Dim et jours fériés 9h30-15h",
+    "description": "Vaste centre commercial à ciel ouvert de la région ouest, avec une soixantaine de boutiques dont l'hypermarché Winner's, deux food courts et de nombreuses enseignes de mode et de sport."
   },
   {
     "id": "maanshree-boutik",
@@ -19173,7 +19190,9 @@
     "themes": [
       "malls"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "hours": "Dim 9h30-15h, Lun-Jeu 9h30-20h30, Ven-Sam 9h30-22h",
+    "description": "Centre commercial du groupe Ascencia près de Port-Louis, comptant plus de 60 boutiques autour de l'hypermarché Carrefour, avec des enseignes comme Courts Mammoth, Giordano et Quiksilver."
   },
   {
     "id": "bo-valon-mall",
@@ -19188,7 +19207,9 @@
     "themes": [
       "malls"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "hours": "Lun-Jeu 9h30-20h30, Ven 9h30-22h, Sam 9h30-20h, Dim 9h30-14h",
+    "description": "Septième centre commercial du groupe Ascencia, situé dans le sud-est de l'île près de l'aéroport, construit autour de l'hypermarché King Savers et complété par une quarantaine de boutiques de mode, beauté et sport."
   },
   {
     "id": "craft-world-company",
@@ -19235,7 +19256,9 @@
     "themes": [
       "malls"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "hours": "Lun-Sam 10h-17h, fermé le dimanche",
+    "description": "Petit centre commercial de Floréal réputé pour ses boutiques de mode et d'artisanat, notamment les enseignes Floréal Boutiques et Harris Wilson, avec un café sur place."
   },
   {
     "id": "palais-de-barbizon",
@@ -19316,7 +19339,9 @@
     "themes": [
       "malls"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "hours": "Lun-Jeu 9h-20h, Ven-Sam 9h-21h, Dim 9h-17h",
+    "description": "Centre commercial de proximité au cœur de Rose-Hill, dont le supermarché Intermart est l'enseigne phare, entouré de boutiques et de services de quartier."
   },
   {
     "id": "intermart-so-flo",
@@ -21386,7 +21411,9 @@
     "themes": [
       "malls"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "hours": "Boutiques : Lun-Jeu 9h-19h, Ven-Sam 9h-20h, Dim et jours fériés 9h-15h",
+    "description": "Grand centre commercial de Pamplemousses regroupant une cinquantaine d'enseignes, dont le supermarché Intermart comme locomotive, ainsi qu'un food court et divers commerces et services."
   },
   {
     "id": "le-valentina-shopping-mall",
@@ -21401,7 +21428,9 @@
     "themes": [
       "malls"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "hours": "Dim 9h-22h, Lun-Jeu 9h-21h, Ven-Sam 9h-22h",
+    "description": "Centre commercial de Phoenix organisé autour de l'hypermarché LOLO Hyper, avec plusieurs restaurants (dont The Fisherman Lounge et Panarottis) et un cinéma."
   },
   {
     "id": "souillac-square",
@@ -21416,7 +21445,8 @@
     "themes": [
       "malls"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Centre commercial du sud de l'île à Souillac, animé notamment par le supermarché Dream Price, avec diverses boutiques et commerces de proximité."
   },
   {
     "id": "exohome-space",
@@ -21446,7 +21476,9 @@
     "themes": [
       "malls"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "hours": "Tous les jours 10h-18h30",
+    "description": "Centre commercial de proximité \"By Ascencia\" situé à Moka (The Hybrid, Telfair), avec le supermarché Carrefour City comme locomotive et des enseignes comme Famous Butcher et Esprit du Vin."
   },
   {
     "id": "travelhub-mauritius-tour-operator",
@@ -23684,7 +23716,8 @@
     "themes": [
       "malls"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Vaste centre commercial du centre de Flacq (environ 25 000 m², une centaine d'enseignes), construit autour de l'hypermarché Super U et doté d'installations écologiques (panneaux solaires, récupération d'eau)."
   },
   {
     "id": "mystore-rose-belle",
@@ -23714,7 +23747,9 @@
     "themes": [
       "malls"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "hours": "Lun-Sam 9h-20h, Dim 9h-12h",
+    "description": "Centre commercial de Rose-Belle dans le sud de l'île, avec un supermarché Intermart et des boutiques de vêtements, chaussures et électronique, ainsi qu'un food court et une salle de cinéma."
   },
   {
     "id": "sunrise-souvenir-shop",
@@ -23745,7 +23780,8 @@
     "themes": [
       "malls"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Centre commercial de Rivière du Rempart dont le supermarché Winner's est la locomotive, entouré d'une vingtaine de boutiques et de plusieurs commerces de restauration."
   },
   {
     "id": "vip-commercial-centre",
@@ -23760,7 +23796,8 @@
     "themes": [
       "malls"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Centre commercial de Centre de Flacq réunissant un supermarché, un food court et une quarantaine de boutiques diverses."
   },
   {
     "id": "duty-shop",
@@ -23790,7 +23827,8 @@
     "themes": [
       "malls"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Complexe commercial et touristique en bord de mer à Port-Louis (l'ancien Caudan Waterfront), avec boutiques et enseignes duty-free, un marché artisanal, un food court et un cinéma."
   },
   {
     "id": "happy-world-house",
@@ -23837,7 +23875,8 @@
     "themes": [
       "malls"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Petit centre commercial du centre de Flacq proposant des boutiques de vêtements, chaussures et divers commerces de proximité."
   },
   {
     "id": "les-galeries-evershine",
@@ -23852,7 +23891,8 @@
     "themes": [
       "malls"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Centre commercial de Rose Hill réunissant boutiques de mode, chaussures et maroquinerie, complété d'un espace restauration."
   },
   {
     "id": "galerie-lafayette",
@@ -30610,7 +30650,9 @@
     "themes": [
       "malls"
     ],
-    "zone": "est"
+    "zone": "est",
+    "hours": "Supermarché Winner's : Lun-Sam 8h-19h, Dim 8h-13h",
+    "description": "Centre commercial de Central Flacq (Boulet Rouge) dont le supermarché Winner's est la locomotive, entouré de plusieurs boutiques et enseignes de proximité."
   },
   {
     "id": "kids-park-by-valle-advenature-park",
@@ -31261,7 +31303,8 @@
     "themes": [
       "malls"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Centre commercial de Tamarin où l'on trouve un supermarché Shoprite ainsi que plusieurs boutiques indépendantes (maison, piscine, pressing) et des restaurants."
   },
   {
     "id": "oasis-boulevard-flic-en-flac",
@@ -31275,7 +31318,8 @@
     "themes": [
       "malls"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Centre commercial du front de mer de Flic-en-Flac réunissant boutiques, restaurants et cafés dans un cadre moderne en bord de côte."
   },
   {
     "id": "village-walk-shopping-centre",
@@ -31289,7 +31333,9 @@
     "themes": [
       "malls"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "hours": "Lun-Sam 8h-19h30, Dim 8h-12h30",
+    "description": "Petit centre commercial de bord de mer avec supermarché (large choix de produits mauriciens et internationaux, rayon bio), boulangerie, pharmacie et Tou Korek, la plus grande boutique de surf/kitesurf/paddle de l'île."
   },
   {
     "id": "winner-s-rose-belle",
