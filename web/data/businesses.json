@@ -1795,7 +1795,8 @@
     "badge": "coup-de-coeur",
     "promoText": "Viande très correcte, livraison à J+1 et échanges WhatsApp faciles.",
     "zone": "nord",
-    "description": "Boucherie familiale haut de gamme de Grand Baie (Lifestyle Boulevard), viandes fraîches locales et importées (bœuf, poulet, porc), biltong sud-africain, snacks et plats faits maison. Vente en boutique, appli et livraison à domicile."
+    "description": "Boucherie familiale haut de gamme de Grand Baie (Lifestyle Boulevard), viandes fraîches locales et importées (bœuf, poulet, porc), biltong sud-africain, snacks et plats faits maison. Vente en boutique, appli et livraison à domicile.",
+    "hours": "Lun-Ven 9h-19h, Sam 9h-17h, Dim 9h-13h"
   },
   {
     "id": "le-fournil-grand-baie",
@@ -12950,7 +12951,8 @@
       "boucheries"
     ],
     "zone": "nord",
-    "description": "Boucherie réputée de Grand Baie (Chemin Vingt Pieds), bœuf, veau, agneau, porc et volaille de qualité, appréciée des locaux et touristes."
+    "description": "Boucherie réputée de Grand Baie (Chemin Vingt Pieds), bœuf, veau, agneau, porc et volaille de qualité, appréciée des locaux et touristes.",
+    "hours": "Lun-Jeu 9h30-18h30, Ven-Sam 9h30-19h, Dim 9h30-12h30"
   },
   {
     "id": "the-butcher-block-mauritius",
@@ -12966,7 +12968,8 @@
       "boucheries"
     ],
     "zone": "nord",
-    "description": "Boucherie de Grand Baie (Pointe aux Canonniers) sourçant bœuf grain-fed classe A, agneau australien, porc et poulet locaux, plats d'accompagnement/salades faits maison et biltong signature. Livraison à domicile."
+    "description": "Boucherie de Grand Baie (Pointe aux Canonniers) sourçant bœuf grain-fed classe A, agneau australien, porc et poulet locaux, plats d'accompagnement/salades faits maison et biltong signature. Livraison à domicile.",
+    "hours": "Lun-Ven 9h-18h, Sam 9h-14h, Dim fermé"
   },
   {
     "id": "les-halles-francaises-grand-baie",
@@ -13048,7 +13051,8 @@
       "poissonneries"
     ],
     "zone": "nord",
-    "description": "Poissonnerie-boutique haut de gamme de Petit Raffray adossée à une usine de conditionnement (poisson, crabe, gambas géantes, langouste), produits nettoyés/filetés/emballés sous vide, agréée HACCP/UE. Restaurant attenant ouvert 7j/7, 11h-23h."
+    "description": "Poissonnerie-boutique haut de gamme de Petit Raffray adossée à une usine de conditionnement (poisson, crabe, gambas géantes, langouste), produits nettoyés/filetés/emballés sous vide, agréée HACCP/UE. Restaurant attenant ouvert 7j/7, 11h-23h.",
+    "hours": "Lun-Sam 9h-17h, Dim 9h-12h"
   },
   {
     "id": "bina-fish-ltd",
@@ -13131,7 +13135,8 @@
       "livraisons"
     ],
     "zone": "nord",
-    "description": "Pizzeria napolitaine de Pereybère/Grand Baie, livraison de pizzas fraîches chaque soir sur le secteur."
+    "description": "Pizzeria napolitaine de Pereybère/Grand Baie, livraison de pizzas fraîches chaque soir sur le secteur.",
+    "hours": "Livraison Mar-Jeu, Dim 19h-21h30, Ven-Sam 18h-22h (fermé le lundi)"
   },
   {
     "id": "the-food-factory",
@@ -13147,7 +13152,8 @@
       "livraisons"
     ],
     "zone": "nord",
-    "description": "Restauration rapide healthy à Grand Baie (burgers, sauces allégées), ouvert tous les jours de 11h à 22h."
+    "description": "Restauration rapide healthy à Grand Baie (burgers, sauces allégées), ouvert tous les jours de 11h à 22h.",
+    "hours": "Mar-Dim 11h-22h (fermé le lundi)"
   },
   {
     "id": "felicita-authentic-neapolitan-pizza",
@@ -13163,7 +13169,8 @@
       "livraisons"
     ],
     "zone": "nord",
-    "description": "Pizzeria napolitaine au four à bois de Grand Baie (ingrédients importés d'Italie), bar à burrata. Sur place, à emporter et en livraison."
+    "description": "Pizzeria napolitaine au four à bois de Grand Baie (ingrédients importés d'Italie), bar à burrata. Sur place, à emporter et en livraison.",
+    "hours": "Tous les jours 17h-21h30"
   },
   {
     "id": "grubmates-food-delivery-flic-en-flac",
@@ -13227,7 +13234,8 @@
       "livraisons"
     ],
     "zone": "nord",
-    "description": "Fast-food de Grand Baie : burgers, frites, poulet frit, wraps et paninis, ouvert tous les jours de 11h à 20h."
+    "description": "Fast-food de Grand Baie : burgers, frites, poulet frit, wraps et paninis, ouvert tous les jours de 11h à 20h.",
+    "hours": "Lun-Mar 11h-20h"
   },
   {
     "id": "zaika-restaurant",
@@ -13243,7 +13251,8 @@
       "livraisons"
     ],
     "zone": "centre",
-    "description": "Cuisine indienne (butter chicken, naan) au food court du Victoria Urban Terminal, Port Louis."
+    "description": "Cuisine indienne (butter chicken, naan) au food court du Victoria Urban Terminal, Port Louis.",
+    "hours": "Tous les jours 11h-15h, 17h-22h"
   },
   {
     "id": "italian-pizza-da-mario",
@@ -13275,7 +13284,8 @@
       "livraisons"
     ],
     "zone": "nord",
-    "description": "Cuisine italienne à Pointe aux Canonniers/Grand Baie : pizzas, pâtes fraîches, lasagnes, déjeuner et dîner, sur place ou à emporter."
+    "description": "Cuisine italienne à Pointe aux Canonniers/Grand Baie : pizzas, pâtes fraîches, lasagnes, déjeuner et dîner, sur place ou à emporter.",
+    "hours": "Tous les jours 10h30-22h30"
   },
   {
     "id": "burger-mania-rose-hill",
@@ -13291,7 +13301,8 @@
       "livraisons"
     ],
     "zone": "centre",
-    "description": "Burgers 100% halal à Rose Hill, service déjeuner et dîner."
+    "description": "Burgers 100% halal à Rose Hill, service déjeuner et dîner.",
+    "hours": "Lun-Ven 11h-21h, Sam 17h30-21h (fermé le dimanche)"
   },
   {
     "id": "tasty-panino",
@@ -13307,7 +13318,8 @@
       "livraisons"
     ],
     "zone": "nord",
-    "description": "Pizzas et paninis italiens artisanaux à Triolet. Horaires : mer-jeu 17h-22h, ven-sam 12h-22h, dim 17h30-22h, lun 12h-22h (fermé le mardi)."
+    "description": "Pizzas et paninis italiens artisanaux à Triolet. Horaires : mer-jeu 17h-22h, ven-sam 12h-22h, dim 17h30-22h, lun 12h-22h (fermé le mardi).",
+    "hours": "Lun, Ven-Sam 12h-22h, Mar-Jeu 17h-22h, Dim 17h30-22h"
   },
   {
     "id": "panarottis-express-la-croisette",
@@ -13323,7 +13335,8 @@
       "livraisons"
     ],
     "zone": "nord",
-    "description": "Cuisine italienne (pizzas, pâtes) au Food Pavilion de La Croisette, Grand Baie, ouvert jusqu'à 21h."
+    "description": "Cuisine italienne (pizzas, pâtes) au Food Pavilion de La Croisette, Grand Baie, ouvert jusqu'à 21h.",
+    "hours": "Lun-Jeu, Dim 10h30-21h, Ven-Sam 10h30-22h"
   },
   {
     "id": "oh-my-cake",
@@ -16646,7 +16659,8 @@
       "epiceries-specialisees"
     ],
     "zone": "ouest",
-    "description": "Magasin bio français : alimentation sans gluten, produits bio en vrac, thés/infusions, et gamme de produits locaux (miel, riz, achards) de Maurice et Rodrigues."
+    "description": "Magasin bio français : alimentation sans gluten, produits bio en vrac, thés/infusions, et gamme de produits locaux (miel, riz, achards) de Maurice et Rodrigues.",
+    "hours": "Lun-Sam 9h-18h"
   },
   {
     "id": "l-epicerie-floreal",
@@ -16743,7 +16757,8 @@
       "livraisons"
     ],
     "zone": "ouest",
-    "description": "Pizzeria napolitaine artisanale de Tamarin (pâte fermentée 48h, four à bois). Horaires : mer 11h30-14h/18h-21h, ven-sam 11h30-14h/18h-22h, dim 18h-21h (fermé le mardi)."
+    "description": "Pizzeria napolitaine artisanale de Tamarin (pâte fermentée 48h, four à bois). Horaires : mer 11h30-14h/18h-21h, ven-sam 11h30-14h/18h-22h, dim 18h-21h (fermé le mardi).",
+    "hours": "Lun, Mer-Ven 11h30-14h, 18h-21h (Ven-Sam jusqu'à 22h), Dim 18h-21h (fermé le mardi)"
   },
   {
     "id": "pizz-a-gogo",
@@ -16761,7 +16776,8 @@
       "restaurants"
     ],
     "zone": "ouest",
-    "description": "Pizzeria de quartier sur la route côtière de Flic-en-Flac, four à pizza et pâtes fraîches maison, à emporter, en livraison ou sur place en terrasse."
+    "description": "Pizzeria de quartier sur la route côtière de Flic-en-Flac, four à pizza et pâtes fraîches maison, à emporter, en livraison ou sur place en terrasse.",
+    "hours": "Mar-Sam 19h-21h (fermé Lun et Dim)"
   },
   {
     "id": "kfc-tamarin",
@@ -16793,7 +16809,8 @@
       "livraisons"
     ],
     "zone": "ouest",
-    "description": "Café/petit-déjeuner au Food Avenue de Coeur Cap Tamarin, ouvert tous les jours de 11h à 19h."
+    "description": "Café/petit-déjeuner au Food Avenue de Coeur Cap Tamarin, ouvert tous les jours de 11h à 19h.",
+    "hours": "Tous les jours 11h-19h"
   },
   {
     "id": "les-artisans-kebabier-el-pando",
@@ -16809,7 +16826,8 @@
       "livraisons"
     ],
     "zone": "ouest",
-    "description": "Kebabs artisanaux (pain maison, poulet/agneau mariné 48h) au Cascavelle Mall, avec service de livraison."
+    "description": "Kebabs artisanaux (pain maison, poulet/agneau mariné 48h) au Cascavelle Mall, avec service de livraison.",
+    "hours": "Tous les jours 12h-21h"
   },
   {
     "id": "portofino-s-pizza",
@@ -16841,7 +16859,8 @@
       "livraisons"
     ],
     "zone": "centre",
-    "description": "Pizzeria italienne authentique à Vacoas-Phoenix (Castel), ouverte du mardi au dimanche, 18h-21h30."
+    "description": "Pizzeria italienne authentique à Vacoas-Phoenix (Castel), ouverte du mardi au dimanche, 18h-21h30.",
+    "hours": "Mar-Dim 18h-21h30"
   },
   {
     "id": "jiro-sushi-tamarin",
@@ -16889,7 +16908,8 @@
       "livraisons"
     ],
     "zone": "centre",
-    "description": "Fast-food à Rose Hill (burgers, kebabs, plats chinois, wraps), ouvert mardi-samedi 11h-21h, dimanche/jours fériés 15h-21h (fermé le lundi)."
+    "description": "Fast-food à Rose Hill (burgers, kebabs, plats chinois, wraps), ouvert mardi-samedi 11h-21h, dimanche/jours fériés 15h-21h (fermé le lundi).",
+    "hours": "Mar-Sam 11h-21h, Dim et jours fériés 15h-21h (fermé le lundi)"
   },
   {
     "id": "ti-kabann",
@@ -16921,7 +16941,8 @@
       "livraisons"
     ],
     "zone": "nord",
-    "description": "Fast-food/snacks à Triolet (briani, riz frit, nouilles, boulettes, kebabs, grillades), ouvert tous les jours de 10h30 à 20h30."
+    "description": "Fast-food/snacks à Triolet (briani, riz frit, nouilles, boulettes, kebabs, grillades), ouvert tous les jours de 10h30 à 20h30.",
+    "hours": "Lun-Sam 11h-21h, Dim 16h-22h"
   },
   {
     "id": "vrndavana-s-pani-puri",
@@ -16937,7 +16958,8 @@
       "livraisons"
     ],
     "zone": "centre",
-    "description": "Cuisine indienne végétarienne à Vacoas-Phoenix (pani puri, dahi puri, sev puri, bhel puri, chaat)."
+    "description": "Cuisine indienne végétarienne à Vacoas-Phoenix (pani puri, dahi puri, sev puri, bhel puri, chaat).",
+    "hours": "Mar-Ven 9h30-17h, Sam-Dim 9h30-18h (fermé le lundi)"
   },
   {
     "id": "bois-noir-cafe",
@@ -16953,7 +16975,8 @@
       "livraisons"
     ],
     "zone": "ouest",
-    "description": "Cuisine chinoise/créole/mauricienne et fruits de mer à Flic en Flac, sur place et à emporter, ouvert lun-sam 11h30-22h, dim 11h30-14h et 18h-22h."
+    "description": "Cuisine chinoise/créole/mauricienne et fruits de mer à Flic en Flac, sur place et à emporter, ouvert lun-sam 11h30-22h, dim 11h30-14h et 18h-22h.",
+    "hours": "Lun-Sam 11h30-22h, Dim 11h30-14h, 18h-22h"
   },
   {
     "id": "ch-ti-delice-patisserie-boulangerie",
@@ -16969,7 +16992,8 @@
       "boulangeries"
     ],
     "zone": "ouest",
-    "description": "Boulangerie-pâtisserie franco-mauricienne de Flic en Flac depuis 2017, spécialités françaises, livraison de pain et pâtisseries."
+    "description": "Boulangerie-pâtisserie franco-mauricienne de Flic en Flac depuis 2017, spécialités françaises, livraison de pain et pâtisseries.",
+    "hours": "Lun-Sam 5h-20h, Dim 5h-13h"
   },
   {
     "id": "clinique-de-l-occident",
@@ -19844,7 +19868,8 @@
       "epiceries-specialisees"
     ],
     "zone": "centre",
-    "description": "Épicerie fine et boucherie haut de gamme : viandes premium (Wagyu), fruits de mer ultra-frais, fromages affinés, foie gras, panettone artisanal ; dégustations le week-end."
+    "description": "Épicerie fine et boucherie haut de gamme : viandes premium (Wagyu), fruits de mer ultra-frais, fromages affinés, foie gras, panettone artisanal ; dégustations le week-end.",
+    "hours": "Lun-Ven 9h30-18h, Sam 9h30-17h"
   },
   {
     "id": "maison-epifine",
@@ -19907,7 +19932,8 @@
       "epiceries-specialisees"
     ],
     "zone": "centre",
-    "description": "Épicerie fine (Tribeca Mall) dédiée à la fine cuisine européenne : produits gourmets sélectionnés, épicerie salée/sucrée haut de gamme."
+    "description": "Épicerie fine (Tribeca Mall) dédiée à la fine cuisine européenne : produits gourmets sélectionnés, épicerie salée/sucrée haut de gamme.",
+    "hours": "Lun-Jeu 9h30-21h, Ven-Sam 9h30-22h, Dim 9h30-17h"
   },
   {
     "id": "citizen-store",
@@ -20142,7 +20168,8 @@
       "produits-francais"
     ],
     "zone": "centre",
-    "description": "Charcutier-transformateur de Roche Bois (Port Louis), plus de 40 produits (jambons, saucisses), certifié HACCP, avec livraison à domicile sur toute l'île."
+    "description": "Charcutier-transformateur de Roche Bois (Port Louis), plus de 40 produits (jambons, saucisses), certifié HACCP, avec livraison à domicile sur toute l'île.",
+    "hours": "Lun-Ven 8h30-17h"
   },
   {
     "id": "khaleel-butcher-shop",
@@ -20174,7 +20201,8 @@
       "livraisons"
     ],
     "zone": "centre",
-    "description": "Plateforme/appli de livraison desservant restaurants et commerces dans un rayon de 5 km autour de Phoenix, ouverte lun-sam 10h30-21h, dim 16h-21h."
+    "description": "Plateforme/appli de livraison desservant restaurants et commerces dans un rayon de 5 km autour de Phoenix, ouverte lun-sam 10h30-21h, dim 16h-21h.",
+    "hours": "Lun-Sam 10h30-21h, Dim 16h-21h"
   },
   {
     "id": "alisson-pizza",
@@ -20190,7 +20218,8 @@
       "livraisons"
     ],
     "zone": "sud",
-    "description": "Pizzeria (pizzas maison) à Riambel, Surinam, ouverte du mardi au dimanche, 10h30-19h30 (fermée le lundi)."
+    "description": "Pizzeria (pizzas maison) à Riambel, Surinam, ouverte du mardi au dimanche, 10h30-19h30 (fermée le lundi).",
+    "hours": "Mar-Dim 10h30-19h30 (fermé le lundi)"
   },
   {
     "id": "cozy-burger",
@@ -20206,7 +20235,8 @@
       "livraisons"
     ],
     "zone": "centre",
-    "description": "Burgers à Rose Hill (style cajun, smash burger, tenders/wings), livraison gratuite vers plusieurs zones, ouvert du mardi au dimanche (fermé le lundi)."
+    "description": "Burgers à Rose Hill (style cajun, smash burger, tenders/wings), livraison gratuite vers plusieurs zones, ouvert du mardi au dimanche (fermé le lundi).",
+    "hours": "Mar-Dim 10h30-16h30, 17h30-23h (fermé le lundi)"
   },
   {
     "id": "indian-express-restaurant-curepipe",
@@ -20222,7 +20252,8 @@
       "livraisons"
     ],
     "zone": "centre",
-    "description": "Cuisine indienne à Curepipe, ouverte lun-mer et ven-dim 10h-21h (fermé le jeudi)."
+    "description": "Cuisine indienne à Curepipe, ouverte lun-mer et ven-dim 10h-21h (fermé le jeudi).",
+    "hours": "Lun-Mer, Ven-Dim 10h-21h (fermé le jeudi)"
   },
   {
     "id": "vatel-bleu-boulangerie-patisserie",
@@ -20238,7 +20269,8 @@
       "boulangeries"
     ],
     "zone": "centre",
-    "description": "Boulangerie-pâtisserie familiale de Curepipe depuis 1995, réputée pour son croissant fromage, ses biscuits fromage et pâtisseries salées. Ouvert tous les jours 4h30-20h."
+    "description": "Boulangerie-pâtisserie familiale de Curepipe depuis 1995, réputée pour son croissant fromage, ses biscuits fromage et pâtisseries salées. Ouvert tous les jours 4h30-20h.",
+    "hours": "Lun-Dim 4h30-20h"
   },
   {
     "id": "boulangerie-l-amiral",
@@ -20254,7 +20286,8 @@
       "boulangeries"
     ],
     "zone": "nord",
-    "description": "Boulangerie-pâtisserie de Triolet (7th Mile)."
+    "description": "Boulangerie-pâtisserie de Triolet (7th Mile).",
+    "hours": "Lun-Dim 5h-20h"
   },
   {
     "id": "patisserie-corps-de-garde",
@@ -21901,7 +21934,8 @@
       "poissonneries"
     ],
     "zone": "est",
-    "description": "Grossiste en fruits de mer de Poste de Flacq établi depuis 2002, présenté comme le plus grand fournisseur indépendant de fruits de mer de l'île ; importe/distribue fruits de mer et viandes surgelés, vend aussi du poisson local frais et congelé."
+    "description": "Grossiste en fruits de mer de Poste de Flacq établi depuis 2002, présenté comme le plus grand fournisseur indépendant de fruits de mer de l'île ; importe/distribue fruits de mer et viandes surgelés, vend aussi du poisson local frais et congelé.",
+    "hours": "Lun-Ven 7h-16h, Sam 7h-14h"
   },
   {
     "id": "ns-poisson-frais",
@@ -21967,7 +22001,8 @@
       "fruits-de-mer"
     ],
     "zone": "nord",
-    "description": "Grand jardin tropical avec vue sur l'îlot Coin de Mire. Produits frais et locaux (langouste, crabe, crevettes) pour un déjeuner ou dîner dans un cadre enchanteur."
+    "description": "Grand jardin tropical avec vue sur l'îlot Coin de Mire. Produits frais et locaux (langouste, crabe, crevettes) pour un déjeuner ou dîner dans un cadre enchanteur.",
+    "hours": "Mer-Lun 12h-14h et 18h30-21h, fermé le mardi"
   },
   {
     "id": "bel-air-market-fair",
@@ -22049,7 +22084,8 @@
       "boulangeries"
     ],
     "zone": "est",
-    "description": "Pâtisserie germano-mauricienne de Lalmatie fondée en 2007 par le couple pâtissier Blek et Romy Ramdass : gâteaux de mariage et pâtisseries haut de gamme sur commande. Ouvert lun-sam 9h-18h, dim 9h-12h."
+    "description": "Pâtisserie germano-mauricienne de Lalmatie fondée en 2007 par le couple pâtissier Blek et Romy Ramdass : gâteaux de mariage et pâtisseries haut de gamme sur commande. Ouvert lun-sam 9h-18h, dim 9h-12h.",
+    "hours": "Lun-Sam 9h-18h, Dim 9h-12h"
   },
   {
     "id": "boulangerie-de-pamplemousses-ltee",
@@ -22097,7 +22133,8 @@
       "boulangeries"
     ],
     "zone": "centre",
-    "description": "Pâtisserie fine de Bon-Air ouverte en mars 2024, alliant techniques françaises et saveurs mauriciennes, moins sucrée, options sans gluten et végan. Ouvert dim 8h30-13h30, lun-sam 8h30-18h."
+    "description": "Pâtisserie fine de Bon-Air ouverte en mars 2024, alliant techniques françaises et saveurs mauriciennes, moins sucrée, options sans gluten et végan. Ouvert dim 8h30-13h30, lun-sam 8h30-18h.",
+    "hours": "Lun-Sam 8h30-18h, Dim et jours fériés 8h30-13h30"
   },
   {
     "id": "brioche-d-or-patisserie",
@@ -22129,7 +22166,8 @@
       "boulangeries"
     ],
     "zone": "nord",
-    "description": "Pâtisserie artisanale de Cap Malheureux : gâteaux et cupcakes personnalisés pour fêtes et événements, propose aussi des ateliers de cuisine. Ouvert lun-sam 10h-17h, fermé le dimanche."
+    "description": "Pâtisserie artisanale de Cap Malheureux : gâteaux et cupcakes personnalisés pour fêtes et événements, propose aussi des ateliers de cuisine. Ouvert lun-sam 10h-17h, fermé le dimanche.",
+    "hours": "Lun-Sam 10h-17h, Dim fermé"
   },
   {
     "id": "patisserie-maingard",
@@ -24950,7 +24988,8 @@
       "livraisons"
     ],
     "zone": "est",
-    "description": "Pizzeria italienne à Bel Air, ouverte lundi et jeudi-dimanche 12h-20h (fermée mardi/mercredi), livraison à Rs 150."
+    "description": "Pizzeria italienne à Bel Air, ouverte lundi et jeudi-dimanche 12h-20h (fermée mardi/mercredi), livraison à Rs 150.",
+    "hours": "Tous les jours 11h-21h"
   },
   {
     "id": "selvi-s",
@@ -24966,7 +25005,8 @@
       "livraisons"
     ],
     "zone": "est",
-    "description": "Cuisine fusion (japonaise, mexicaine, hakka et mauricienne) à Centre de Flacq."
+    "description": "Cuisine fusion (japonaise, mexicaine, hakka et mauricienne) à Centre de Flacq.",
+    "hours": "Mar-Dim 11h-15h (fermé le jeudi)"
   },
   {
     "id": "tipik-fusion-food",
@@ -25014,7 +25054,8 @@
       "livraisons"
     ],
     "zone": "nord",
-    "description": "Restaurant français de cuisine de saison à Pointe aux Canonniers/Grand Baie."
+    "description": "Restaurant français de cuisine de saison à Pointe aux Canonniers/Grand Baie.",
+    "hours": "Lun 18h-22h, Mar-Sam 12h-15h, 18h-22h30, Dim 12h-15h"
   },
   {
     "id": "chez-flipper-2k22",
@@ -25031,7 +25072,8 @@
     ],
     "badge": "selection",
     "zone": "nord",
-    "description": "Cabane de plage à Trou-aux-Biches, cuisine créole et fruits de mer (poisson frais, crustacés, plat du jour)."
+    "description": "Cabane de plage à Trou-aux-Biches, cuisine créole et fruits de mer (poisson frais, crustacés, plat du jour).",
+    "hours": "Lun-Sam 11h-16h (fermé le dimanche)"
   },
   {
     "id": "maharaja-mithai",
@@ -25063,7 +25105,8 @@
       "livraisons"
     ],
     "zone": "nord",
-    "description": "Cuisine chinoise et mauricienne à Trou aux Biches (canard laqué, plats sizzling, fruits de mer), ouvert tous les jours de 10h à 22h30."
+    "description": "Cuisine chinoise et mauricienne à Trou aux Biches (canard laqué, plats sizzling, fruits de mer), ouvert tous les jours de 10h à 22h30.",
+    "hours": "Tous les jours 10h-22h30"
   },
   {
     "id": "panarottis-ebene",
@@ -25079,7 +25122,8 @@
       "livraisons"
     ],
     "zone": "centre",
-    "description": "Pizzas et pâtes italiennes à Quatre Bornes/Ébène."
+    "description": "Pizzas et pâtes italiennes à Quatre Bornes/Ébène.",
+    "hours": "Lun-Sam 10h30-21h"
   },
   {
     "id": "florensuc-patisserie",
@@ -25111,7 +25155,8 @@
       "boulangeries"
     ],
     "zone": "centre",
-    "description": "Pâtisserie artisanale de Vacoas-Phoenix : cannelés (mardi/vendredi), sandwichs/paninis et gâteaux tous les jours (chocolat, cheesecakes, éclairs), pain, desserts glacés, café."
+    "description": "Pâtisserie artisanale de Vacoas-Phoenix : cannelés (mardi/vendredi), sandwichs/paninis et gâteaux tous les jours (chocolat, cheesecakes, éclairs), pain, desserts glacés, café.",
+    "hours": "Mar-Sam 10h30-18h"
   },
   {
     "id": "patisserie-marimootoo",
@@ -25238,7 +25283,8 @@
       "livraisons"
     ],
     "zone": "nord",
-    "description": "Pizzeria italienne à La Croisette, Grand Baie (pizzas, pâtes, pizza d'un mètre)."
+    "description": "Pizzeria italienne à La Croisette, Grand Baie (pizzas, pâtes, pizza d'un mètre).",
+    "hours": "Lun-Sam 11h-21h30"
   },
   {
     "id": "tambourine",
@@ -29682,19 +29728,6 @@
     "description": "Centre de santé et bien-être installé au sein du Riverland Sports Club à Tamarin, réunissant une équipe pluridisciplinaire (ostéopathes, kinésithérapeutes, nutritionnistes, psychologues) pour l'accompagnement physique et mental des membres."
   },
   {
-    "id": "pamplemousses-garden",
-    "name": "Pamplemousses Garden",
-    "category": "activites",
-    "address": "VHVH+5V4, Pamplemousses",
-    "googleMapsUrl": "https://maps.google.com/?cid=6833054482258986553&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.1071182,
-    "lng": 57.5797049,
-    "themes": [
-      "parcs-botaniques"
-    ],
-    "zone": "nord"
-  },
-  {
     "id": "marco-pearl-shop-2",
     "name": "Marco Pearl Shop",
     "category": "seconde-main",
@@ -29736,19 +29769,6 @@
       "habits-adultes"
     ],
     "zone": "nord"
-  },
-  {
-    "id": "jardin-d-anna-2",
-    "name": "Jardin D Anna 2",
-    "category": "activites",
-    "address": "Jardins d'Anna 2, 307 Serengeti Street, Flic en Flac",
-    "googleMapsUrl": "https://maps.google.com/?cid=15405136127444119405&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.272508,
-    "lng": 57.3833215,
-    "themes": [
-      "parcs-botaniques"
-    ],
-    "zone": "ouest"
   },
   {
     "id": "la-p-tite-parisienne",
@@ -30760,7 +30780,8 @@
       "boulangeries"
     ],
     "zone": "est",
-    "description": "Pâtisserie de Mahébourg à bonne réputation locale, large gamme de produits. Ouvert 8h-20h."
+    "description": "Pâtisserie de Mahébourg à bonne réputation locale, large gamme de produits. Ouvert 8h-20h.",
+    "hours": "Lun-Dim 8h-20h"
   },
   {
     "id": "new-souillac-hospital",
@@ -31316,7 +31337,8 @@
       "boulangeries"
     ],
     "zone": "centre",
-    "description": "Pâtisserie de Port Louis (Rue Labourdonnais), gâteaux à prix abordables et grosses parts, genoise au chocolat appréciée."
+    "description": "Pâtisserie de Port Louis (Rue Labourdonnais), gâteaux à prix abordables et grosses parts, genoise au chocolat appréciée.",
+    "hours": "Lun-Dim 10h-21h"
   },
   {
     "id": "crealia-boutik",
@@ -31970,7 +31992,8 @@
       "parcs-nationaux-cascades",
       "excursions"
     ],
-    "description": "Agence d'excursion en ligne : plus de 15 excursions cascades référencées à Maurice, avis vérifiés, annulation gratuite jusqu'à 24h avant."
+    "description": "Agence d'excursion en ligne : plus de 15 excursions cascades référencées à Maurice, avis vérifiés, annulation gratuite jusqu'à 24h avant.",
+    "isAgency": true
   },
   {
     "id": "getyourguide-cascades",
@@ -31983,7 +32006,8 @@
       "parcs-nationaux-cascades",
       "excursions"
     ],
-    "description": "Agence d'excursion en ligne : excursions guidées Sept Cascades (Tamarin) à partir de 79 €."
+    "description": "Agence d'excursion en ligne : excursions guidées Sept Cascades (Tamarin) à partir de 79 €.",
+    "isAgency": true
   },
   {
     "id": "excursion-ile-maurice-cascades",
@@ -31996,7 +32020,8 @@
       "parcs-nationaux-cascades",
       "excursions"
     ],
-    "description": "Agence d'excursion locale spécialiste des cascades de Tamarin, avec transfert et déjeuner inclus."
+    "description": "Agence d'excursion locale spécialiste des cascades de Tamarin, avec transfert et déjeuner inclus.",
+    "isAgency": true
   },
   {
     "id": "visiter-ile-maurice-cascades",
@@ -32009,7 +32034,8 @@
       "parcs-nationaux-cascades",
       "excursions"
     ],
-    "description": "Agence d'excursion locale : randonnée guidée des 7 Cascades avec guide certifié."
+    "description": "Agence d'excursion locale : randonnée guidée des 7 Cascades avec guide certifié.",
+    "isAgency": true
   },
   {
     "id": "checkyeti-cascades",
@@ -32022,7 +32048,8 @@
       "parcs-nationaux-cascades",
       "excursions"
     ],
-    "description": "Comparateur d'agences d'excursion en ligne, avec filtres dédiés randonnée et cascade."
+    "description": "Comparateur d'agences d'excursion en ligne, avec filtres dédiés randonnée et cascade.",
+    "isAgency": true
   },
   {
     "id": "roches-noires-lava-tubes",

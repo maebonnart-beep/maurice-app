@@ -714,22 +714,23 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                             </p>
                           )}
                           <div className="flex flex-wrap gap-2 pt-0.5">
-                            {b.phone ? (
-                              <a
-                                href={tel(b.phone)}
-                                onClick={(e) => {
-                                  e.stopPropagation();
-                                  trackEvent(b.id, "call");
-                                }}
-                                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-[10px] text-[13px] font-semibold no-underline bg-primary border border-primary text-white"
-                              >
-                                📞 Appeler
-                              </a>
-                            ) : (
-                              <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-[10px] text-[13px] font-semibold bg-surface-2 border border-border text-ink opacity-45">
-                                📞 Sans tél.
-                              </span>
-                            )}
+                            {!b.themes?.includes("plages") &&
+                              (b.phone ? (
+                                <a
+                                  href={tel(b.phone)}
+                                  onClick={(e) => {
+                                    e.stopPropagation();
+                                    trackEvent(b.id, "call");
+                                  }}
+                                  className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-[10px] text-[13px] font-semibold no-underline bg-primary border border-primary text-white"
+                                >
+                                  📞 Appeler
+                                </a>
+                              ) : (
+                                <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-[10px] text-[13px] font-semibold bg-surface-2 border border-border text-ink opacity-45">
+                                  📞 Sans tél.
+                                </span>
+                              ))}
                             {b.email && (
                               <a
                                 href={`mailto:${b.email}`}
