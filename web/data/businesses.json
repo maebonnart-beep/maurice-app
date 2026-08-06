@@ -34351,21 +34351,9 @@
       "bowling"
     ],
     "zone": "ouest",
-    "description": "Le plus grand bowling de la côte ouest de Maurice, avec 10 pistes, billards, karaoké et restauration sur place."
-  },
-  {
-    "id": "g-star-lanes-curepipe",
-    "name": "G Star Lanes (Bowling & Restaurant Lounge)",
-    "category": "activites",
-    "address": "Manhattan Building, 2e étage, Curepipe",
-    "phone": "",
-    "website": "",
-    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=G%20Star%20Lanes%20Bowling%20Curepipe%20Mauritius",
-    "themes": [
-      "bowling"
-    ],
-    "zone": "centre",
-    "description": "Bowling avec ambiance lumineuse, musique, bar et coin TV, situé au centre commercial Manhattan à Curepipe."
+    "description": "Le plus grand bowling de la côte ouest de Maurice, avec 10 pistes, billards, karaoké et restauration sur place.",
+    "lat": -20.2796142,
+    "lng": 57.4029787
   },
   {
     "id": "grand-casino-caudan",
@@ -34398,7 +34386,9 @@
     "hours": "Tous les jours 18h-2h",
     "entryPrice": "Âge minimum 21 ans",
     "zone": "centre",
-    "description": "Casino situé dans le domaine historique de Les Pailles, avec plus de 26 jeux de table, machines à sous, roulette et poker Oasis."
+    "description": "Casino situé dans le domaine historique de Les Pailles, avec plus de 26 jeux de table, machines à sous, roulette et poker Oasis.",
+    "lat": -20.1948386,
+    "lng": 57.4887157
   },
   {
     "id": "casino-de-grand-baie",
@@ -34462,7 +34452,9 @@
     ],
     "hours": "Tous les jours 10h-4h, tables en direct Lun-Sam 20h-4h, Dim 2h-4h",
     "zone": "nord",
-    "description": "Casino du groupe Senator Club à Triolet, dans le Tadbir Building sur la Royal Road."
+    "description": "Casino du groupe Senator Club à Triolet, dans le Tadbir Building sur la Royal Road.",
+    "lat": -20.0562953,
+    "lng": 57.5530128
   },
   {
     "id": "senator-club-grand-baie",
@@ -34477,7 +34469,9 @@
     ],
     "hours": "Tous les jours 10h-4h, tables en direct Lun-Sam 20h-4h, Dim 2h-4h",
     "zone": "nord",
-    "description": "Casino du groupe Senator Club sur la Royal Road de Grand Baie."
+    "description": "Casino du groupe Senator Club sur la Royal Road de Grand Baie.",
+    "lat": -20.0109557,
+    "lng": 57.5845106
   },
   {
     "id": "senator-club-flacq",
@@ -34491,7 +34485,9 @@
       "casinos"
     ],
     "zone": "est",
-    "description": "Casino du groupe Senator Club à Centre de Flacq, ouvert depuis 2006."
+    "description": "Casino du groupe Senator Club à Centre de Flacq, ouvert depuis 2006.",
+    "lat": -20.1923351,
+    "lng": 57.7244425
   },
   {
     "id": "senator-club-mahebourg",
@@ -34505,6 +34501,25 @@
       "casinos"
     ],
     "zone": "sud",
-    "description": "Premier casino ouvert par le groupe Senator Club, situé à Mahébourg."
+    "description": "Premier casino ouvert par le groupe Senator Club, situé à Mahébourg.",
+    "lat": -20.4064076,
+    "lng": 57.7075531
+  },
+  {
+    "id": "strike-city-flacq",
+    "name": "Strike City - Flacq",
+    "category": "activites",
+    "address": "Flacq Retail Park, Centre de Flacq",
+    "phone": "+230 5255 8200",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/place/Strike+City+-+Flacq/@-20.2001125,57.7214828,17z",
+    "lat": -20.2001125,
+    "lng": 57.7214828,
+    "themes": [
+      "bowling"
+    ],
+    "hours": "Lun 11h30-23h30, Mar-Dim 11h30-23h45",
+    "zone": "est",
+    "description": "Bowling du Flacq Retail Park, avec billard et bar, dans le même esprit que Strike City Bagatelle."
   }
 ]
