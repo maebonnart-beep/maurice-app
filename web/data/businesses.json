@@ -1720,7 +1720,8 @@
       "grandes-surfaces"
     ],
     "zone": "nord",
-    "description": "Supermarché de la chaîne Winner's proposant produits du quotidien et un rayon épicerie fine, avec boulangerie et pain frais chaque matin."
+    "description": "Supermarché de la chaîne Winner's proposant produits du quotidien et un rayon épicerie fine, avec boulangerie et pain frais chaque matin.",
+    "hours": "Lun-Sam 8h-19h, Dim 8h-13h"
   },
   {
     "id": "intermart-grand-baie-la-croisette",
@@ -10265,7 +10266,8 @@
       "vins-spiritueux"
     ],
     "zone": "centre",
-    "description": "Enseigne francaise Nicolas, caviste ouvert en juillet 2016 au Bagatelle Mall : plus de 300 references de vins francais, large gamme de spiritueux et idees cadeaux, conseillers formes a l accord mets-vins. Ouvert lun-jeu 9h30-20h30, ven-sam 9h30-22h, dim 9h30-15h."
+    "description": "Enseigne francaise Nicolas, caviste ouvert en juillet 2016 au Bagatelle Mall : plus de 300 references de vins francais, large gamme de spiritueux et idees cadeaux, conseillers formes a l accord mets-vins. Ouvert lun-jeu 9h30-20h30, ven-sam 9h30-22h, dim 9h30-15h.",
+    "hours": "Lun-Jeu 9h30-20h30, Ven-Sam 9h30-22h, Dim 9h30-15h"
   },
   {
     "id": "strike-city-bagatelle",
@@ -12818,7 +12820,8 @@
     "themes": [
       "grandes-surfaces"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "hours": "Lun-Jeu 9h-20h, Ven-Sam 9h-22h, Dim et jours fériés 9h-17h"
   },
   {
     "id": "store-2000",
@@ -12834,7 +12837,8 @@
       "grandes-surfaces"
     ],
     "zone": "nord",
-    "description": "Enseigne mauricienne Store 2000, chaîne d'une trentaine de magasins à travers l'île, proposant alimentation, produits d'hygiène, articles pour la maison et petit électroménager."
+    "description": "Enseigne mauricienne Store 2000, chaîne d'une trentaine de magasins à travers l'île, proposant alimentation, produits d'hygiène, articles pour la maison et petit électroménager.",
+    "hours": "Lun-Sam 7h30-20h, Dim 7h30-13h"
   },
   {
     "id": "carrefour-phoenix",
@@ -13094,7 +13098,8 @@
     ],
     "zone": "nord",
     "promoText": "Marché artisanal (et non alimentaire) : textile, jupes de séga, paréos, souvenirs, dodos en bois artisanaux.",
-    "description": "Marche couvert de Grand Baie, ouvert lundi-samedi 6h-18h, dimanche/jours feries 6h-12h. Fruits et legumes frais, artisanat local et souvenirs (vetements, bibelots, objets en bois, bijoux). Bon rapport qualite-prix, ambiance fraiche et locale."
+    "description": "Marche couvert de Grand Baie, ouvert lundi-samedi 6h-18h, dimanche/jours feries 6h-12h. Fruits et legumes frais, artisanat local et souvenirs (vetements, bibelots, objets en bois, bijoux). Bon rapport qualite-prix, ambiance fraiche et locale.",
+    "hours": "Tous les jours 9h-17h, Dim 9h-12h"
   },
   {
     "id": "grubmates-food-delivery-grand-baie",
@@ -16411,7 +16416,8 @@
       "grandes-surfaces"
     ],
     "zone": "ouest",
-    "description": "Supermarché de proximité Carrefour City sur la Coastal Road à Flic en Flac, apprécié pour son pain frais et son rayon traiteur."
+    "description": "Supermarché de proximité Carrefour City sur la Coastal Road à Flic en Flac, apprécié pour son pain frais et son rayon traiteur.",
+    "hours": "Lun-Jeu 8h-20h, Ven-Sam 8h-21h, Dim et jours fériés 8h-20h"
   },
   {
     "id": "winner-s-cascavelle",
@@ -16669,7 +16675,8 @@
     "lat": -20.346665,
     "lng": 57.3645274,
     "themes": [
-      "boucheries"
+      "boucheries",
+      "produits-francais"
     ],
     "zone": "ouest",
     "description": "Boucherie style français de Rivière Noire, bien notée pour la propreté et la qualité de la viande."
@@ -19374,7 +19381,8 @@
       "grandes-surfaces"
     ],
     "zone": "centre",
-    "description": "Supermarché de l'enseigne Intermart, l'une des plus grandes chaînes de supermarchés de Maurice, situé dans le centre commercial So'flo."
+    "description": "Supermarché de l'enseigne Intermart, l'une des plus grandes chaînes de supermarchés de Maurice, situé dans le centre commercial So'flo.",
+    "hours": "Lun-Jeu 8h-20h, Ven 8h-21h, Dim 8h-16h"
   },
   {
     "id": "club-sixty-nine",
@@ -19604,7 +19612,8 @@
       "grandes-surfaces"
     ],
     "zone": "sud",
-    "description": "Boutiques duty-free officielles de l'aéroport international SSR, exploitées par Mauritius Duty Free Paradise en partenariat avec Gebr. Heinemann, avec des espaces en zones d'arrivée et de départ proposant parfums, alcools, tabac et produits de luxe."
+    "description": "Boutiques duty-free officielles de l'aéroport international SSR, exploitées par Mauritius Duty Free Paradise en partenariat avec Gebr. Heinemann, avec des espaces en zones d'arrivée et de départ proposant parfums, alcools, tabac et produits de luxe.",
+    "hours": "7j/7, 24h/24"
   },
   {
     "id": "intermart-partenaire-intermarche-curepipe",
@@ -20129,7 +20138,8 @@
     "lat": -20.1423736,
     "lng": 57.5111962,
     "themes": [
-      "boucheries"
+      "boucheries",
+      "produits-francais"
     ],
     "zone": "centre",
     "description": "Charcutier-transformateur de Roche Bois (Port Louis), plus de 40 produits (jambons, saucisses), certifié HACCP, avec livraison à domicile sur toute l'île."
@@ -21953,7 +21963,6 @@
     "lat": -20.0099296,
     "lng": 57.6175575,
     "themes": [
-      "poissonneries",
       "restaurants",
       "fruits-de-mer"
     ],
@@ -21974,7 +21983,8 @@
       "marches"
     ],
     "zone": "est",
-    "description": "Marche hebdomadaire de Bel Air (Riviere Seche, Flacq), le dimanche le long de la route principale. Fruits et legumes frais principalement, produits locaux, ambiance conviviale et authentique, loin des foules touristiques."
+    "description": "Marche hebdomadaire de Bel Air (Riviere Seche, Flacq), le dimanche le long de la route principale. Fruits et legumes frais principalement, produits locaux, ambiance conviviale et authentique, loin des foules touristiques.",
+    "hours": "Dimanche (jour de marché)"
   },
   {
     "id": "zoza-pastry-and-coffee-shop",
@@ -23960,7 +23970,8 @@
       "grandes-surfaces"
     ],
     "zone": "est",
-    "description": "Supermarché situé sur la route côtière reliant Quatre Cocos et Belle Mare, proposant les produits du quotidien pour résidents et vacanciers."
+    "description": "Supermarché situé sur la route côtière reliant Quatre Cocos et Belle Mare, proposant les produits du quotidien pour résidents et vacanciers.",
+    "hours": "Lun-Sam 8h30-18h, Dim 8h30-15h"
   },
   {
     "id": "gift-deco-flacq",
@@ -24709,7 +24720,8 @@
       "grandes-surfaces"
     ],
     "zone": "centre",
-    "description": "Centre commercial de la Cyber City regroupant plusieurs commerces, dont un supermarché Intermart, des restaurants et un food court."
+    "description": "Centre commercial de la Cyber City regroupant plusieurs commerces, dont un supermarché Intermart, des restaurants et un food court.",
+    "hours": "Lun-Sam 10h-20h, Dim 10h-15h"
   },
   {
     "id": "intermart-express-quatre-bornes",
@@ -25423,7 +25435,8 @@
     ],
     "zone": "sud",
     "promoText": "Des fleurs, de la street food mauricienne, du poisson frais, le meilleur de l'île, des légumes et des épices.",
-    "description": "Marche ouvert tous les jours mais double de taille le lundi (\"Monday Market\"). Fruits, legumes, fleurs, textiles, bric-a-brac et stands de street-food (gateaux piments, dholl puri, samoussas). Tres anime le lundi matin - arriver avant 9h30 pour eviter la foule."
+    "description": "Marche ouvert tous les jours mais double de taille le lundi (\"Monday Market\"). Fruits, legumes, fleurs, textiles, bric-a-brac et stands de street-food (gateaux piments, dholl puri, samoussas). Tres anime le lundi matin - arriver avant 9h30 pour eviter la foule.",
+    "hours": "Tous les jours 6h-14h (marché élargi le lundi)"
   },
   {
     "id": "second-hand-shop",
@@ -26372,7 +26385,8 @@
       "vins-spiritueux"
     ],
     "zone": "centre",
-    "description": "Boutique specialisee vins et spiritueux au Bagatelle Mall : plus de 900 references du monde entier (France, Italie, Afrique du Sud, Maurice), grande selection de champagnes, degustations regulieres. Dim 9h30-20h, lun-jeu 9h30-20h30, ven 9h30-22h, sam 9h30-23h."
+    "description": "Boutique specialisee vins et spiritueux au Bagatelle Mall : plus de 900 references du monde entier (France, Italie, Afrique du Sud, Maurice), grande selection de champagnes, degustations regulieres. Dim 9h30-20h, lun-jeu 9h30-20h30, ven 9h30-22h, sam 9h30-23h.",
+    "hours": "Lun-Jeu 9h30-20h30, Ven 9h30-22h, Sam 9h30-23h, Dim 9h30-20h"
   },
   {
     "id": "le-connoisseur-phoenix",
@@ -26387,7 +26401,8 @@
       "vins-spiritueux"
     ],
     "zone": "centre",
-    "description": "Vins et spiritueux internationaux haut de gamme a Phoenix, gamme etendue aux produits gourmets (foie gras, chocolats, olives). Ouvert lun-jeu 8h30-17h, ven 8h30-18h, sam 9h-12h, ferme dimanche et jours feries."
+    "description": "Vins et spiritueux internationaux haut de gamme a Phoenix, gamme etendue aux produits gourmets (foie gras, chocolats, olives). Ouvert lun-jeu 8h30-17h, ven 8h30-18h, sam 9h-12h, ferme dimanche et jours feries.",
+    "hours": "Lun-Jeu 8h30-17h, Ven 8h30-18h, Sam 9h-12h, Fermé Dim"
   },
   {
     "id": "audacity-wines-curepipe",
@@ -26417,7 +26432,8 @@
       "vins-spiritueux"
     ],
     "zone": "est",
-    "description": "Magasin Audacity Wines du Flacq Retail Park : vins, spiritueux, cidres, sake et boissons non-alcoolisees d Australie, livraison sur toute l ile."
+    "description": "Magasin Audacity Wines du Flacq Retail Park : vins, spiritueux, cidres, sake et boissons non-alcoolisees d Australie, livraison sur toute l ile.",
+    "hours": "Lun-Jeu 9h30-17h, Ven-Sam 9h30-18h, Dim 10h30-15h"
   },
   {
     "id": "kairali-spa-vacoas",
@@ -31372,7 +31388,8 @@
       "grandes-surfaces"
     ],
     "zone": "sud",
-    "description": "Supermarché Winner's situé au sein du centre commercial de Rose Belle (ex-Plaisance Shopping Village)."
+    "description": "Supermarché Winner's situé au sein du centre commercial de Rose Belle (ex-Plaisance Shopping Village).",
+    "hours": "Lun-Ven 9h-20h30, Sam 9h-22h, Dim 8h-16h"
   },
   {
     "id": "london-way-vacoas-phoenix",
@@ -31387,7 +31404,8 @@
       "grandes-surfaces"
     ],
     "zone": "centre",
-    "description": "Supermarché de l'enseigne London Way à Vacoas-Phoenix, proposant un large choix de produits frais, d'épicerie et d'articles ménagers."
+    "description": "Supermarché de l'enseigne London Way à Vacoas-Phoenix, proposant un large choix de produits frais, d'épicerie et d'articles ménagers.",
+    "hours": "Lun-Sam 8h30-19h, Dim 8h30-12h30"
   },
   {
     "id": "winner-s-vacoas",
