@@ -13625,7 +13625,8 @@
     "themes": [
       "depannages"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Dépannage et entretien multiservice (handyman) : plomberie, électricité, peinture, réparation de portes et fenêtres, nettoyage de piscines et de citernes. Basée à Grand Baie, active depuis 2016, intervient pour villas, restaurants et bureaux dans toute l'île."
   },
   {
     "id": "was-smart-contracting-ltd",
@@ -13640,7 +13641,8 @@
     "themes": [
       "depannages"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Entreprise de contracting : travaux du bâtiment et rénovation. Basée à Grand Baie."
   },
   {
     "id": "locksmith-mauritius",
@@ -13655,7 +13657,8 @@
     "themes": [
       "depannages"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Serrurerie : ouverture de portes, remplacement et réparation de serrures, reproduction de clés et sécurisation. Interventions à Grand Baie et dans le nord."
   },
   {
     "id": "grand-bay-taxi-service",
@@ -17152,7 +17155,8 @@
     "themes": [
       "depannages"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Plateforme en ligne (depanaze.com) de mise en relation avec des professionnels du dépannage à Maurice : annuaire de prestataires, et non un service de réparation en direct."
   },
   {
     "id": "mascareignes-energy",
@@ -17167,7 +17171,8 @@
     "themes": [
       "depannages"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Énergie solaire : installation et maintenance de systèmes photovoltaïques et solutions énergétiques. Basée à La Mivoie, Tamarin."
   },
   {
     "id": "vr-plumbing-services",
@@ -17182,7 +17187,8 @@
     "themes": [
       "depannages"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Plomberie : dépannage, installation et réparation sanitaire. Vacoas-Phœnix."
   },
   {
     "id": "akash-electrician-and-plumber",
@@ -17197,7 +17203,8 @@
     "themes": [
       "depannages"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Électricien et plombier : dépannage électrique et sanitaire à domicile. Secteur Albion / Rivière Noire."
   },
   {
     "id": "mr-taxi-suraj-flic-en-flac",
@@ -20565,7 +20572,8 @@
     "themes": [
       "depannages"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Services techniques et dépannage, Vacoas."
   },
   {
     "id": "rb-plumbing-contracting-ltd",
@@ -20580,7 +20588,8 @@
     "themes": [
       "depannages"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Plomberie et travaux de contracting : dépannage, installation et réparation sanitaire. Grand Bois."
   },
   {
     "id": "taxi-service-le-morne-and-la-gaulette",
@@ -22734,7 +22743,8 @@
     "themes": [
       "depannages"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Électricité : dépannage, installations et travaux électriques. Curepipe."
   },
   {
     "id": "asl-electrical-pro",
@@ -22749,7 +22759,8 @@
     "themes": [
       "depannages"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Électricité : dépannage et travaux électriques domestiques. Curepipe."
   },
   {
     "id": "cesar-enterprise-ltd",
@@ -22764,7 +22775,8 @@
     "themes": [
       "depannages"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Électricité, plomberie et climatisation pour particuliers, commerces et industries (installation, réparation, maintenance). Entreprise créée en 2006 à Goodlands, service d'urgence 24h/24 et 7j/7."
   },
   {
     "id": "sandeep-taxi-service",
@@ -30806,7 +30818,8 @@
     "themes": [
       "depannages"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Solutions électriques : installations et maintenance pour particuliers et entreprises. Beau Bassin-Rose Hill."
   },
   {
     "id": "pillay-car-gallery",
@@ -31149,7 +31162,8 @@
     "themes": [
       "depannages"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Serrurerie et reproduction de clés (keycutter) : ouverture et remplacement de serrures. Royal Road, Mahébourg."
   },
   {
     "id": "clinic-de-l-occident",
@@ -31177,7 +31191,8 @@
     "themes": [
       "depannages"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Étanchéité et imperméabilisation (toitures, terrasses, dalles) : traitement contre les infiltrations. Centre de Flacq."
   },
   {
     "id": "chartered-brokers-ltd",
@@ -33066,7 +33081,7 @@
     "themes": [
       "depannages"
     ],
-    "description": "Service de vidange de fosse septique.",
+    "description": "Vidange de fosses septiques et de puisards. Intervention dans toute l'île.",
     "address": "Maurice"
   },
   {
