@@ -8,6 +8,7 @@ export const CATEGORIES: Category[] = [
   { key: "soins-bien-etre", label: "Soins et Bien-être", emoji: "💆", color: "#c9457a" },
   { key: "seconde-main", label: "Seconde main", emoji: "♻️", color: "#2e8b57" },
   { key: "business-ttv", label: "Business & TTV", emoji: "💻", color: "#1f8a9b" },
+  { key: "immobilier", label: "Immobilier", emoji: "🏠", color: "#b07d48" },
   { key: "evenements", label: "Événements", emoji: "🎉", color: "#e0518a" },
 ];
 
@@ -244,6 +245,9 @@ export const SUBCATEGORIES: Partial<Record<CategoryKey, Subcategory[]>> = {
     { key: "eq-maison-particuliers", label: "Équipement maison", emoji: "🛋️" },
     { key: "vetements-particuliers", label: "Vêtements", emoji: "👕" },
     { key: "livres-particuliers", label: "Livres", emoji: "📚" },
+  ],
+  immobilier: [
+    { key: "agences", label: "Agences immobilières", emoji: "🏘️" },
   ],
   evenements: [
     { key: "sportifs", label: "Sportifs", emoji: "🏆" },

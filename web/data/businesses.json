@@ -38321,5 +38321,421 @@
     ],
     "zone": "centre",
     "description": "Clinique / cabinet vétérinaire à Quatre Bornes : consultations, vaccinations et soins pour animaux."
+  },
+  {
+    "id": "immo-concorda",
+    "name": "Concorda",
+    "category": "immobilier",
+    "address": "Vacoas-Phoenix",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.308989,57.524773",
+    "lat": -20.308989,
+    "lng": 57.524773,
+    "themes": [
+      "agences"
+    ],
+    "zone": "centre",
+    "description": "Agence immobilière à Vacoas-Phoenix : vente et location de biens (villas, appartements, terrains)."
+  },
+  {
+    "id": "immo-nirvan-agencies",
+    "name": "Nirvan Agencies",
+    "category": "immobilier",
+    "address": "Vacoas-Phoenix",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.308954,57.524781",
+    "lat": -20.308954,
+    "lng": 57.524781,
+    "themes": [
+      "agences"
+    ],
+    "zone": "centre",
+    "description": "Agence immobilière à Vacoas-Phoenix : vente et location de biens (villas, appartements, terrains)."
+  },
+  {
+    "id": "immo-soges",
+    "name": "Soges",
+    "category": "immobilier",
+    "address": "Vacoas-Phoenix",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.308922,57.524786",
+    "lat": -20.308922,
+    "lng": 57.524786,
+    "themes": [
+      "agences"
+    ],
+    "zone": "centre",
+    "description": "Agence immobilière à Vacoas-Phoenix : vente et location de biens (villas, appartements, terrains)."
+  },
+  {
+    "id": "immo-immo-square",
+    "name": "Immo Square",
+    "category": "immobilier",
+    "address": "Flic en Flac",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.279904,57.368494",
+    "lat": -20.279904,
+    "lng": 57.368494,
+    "themes": [
+      "agences"
+    ],
+    "zone": "ouest",
+    "description": "Agence immobilière à Flic en Flac : vente et location de biens (villas, appartements, terrains)."
+  },
+  {
+    "id": "immo-the-real-estate-lebries",
+    "name": "The Real Estate Lebries",
+    "category": "immobilier",
+    "address": "Moka",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.225741,57.507871",
+    "lat": -20.225741,
+    "lng": 57.507871,
+    "themes": [
+      "agences"
+    ],
+    "zone": "centre",
+    "description": "Agence immobilière à Moka : vente et location de biens (villas, appartements, terrains)."
+  },
+  {
+    "id": "immo-sunset-properties",
+    "name": "Sunset Properties",
+    "category": "immobilier",
+    "address": "Flic en Flac",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.276206,57.371946",
+    "lat": -20.276206,
+    "lng": 57.371946,
+    "themes": [
+      "agences"
+    ],
+    "zone": "ouest",
+    "description": "Agence immobilière à Flic en Flac : vente et location de biens (villas, appartements, terrains)."
+  },
+  {
+    "id": "immo-kalachand",
+    "name": "Kalachand",
+    "category": "immobilier",
+    "address": "Beau Bassin",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.227884,57.46765",
+    "lat": -20.227884,
+    "lng": 57.46765,
+    "themes": [
+      "agences"
+    ],
+    "zone": "centre",
+    "description": "Agence immobilière à Beau Bassin : vente et location de biens (villas, appartements, terrains)."
+  },
+  {
+    "id": "immo-aquarya",
+    "name": "Aquarya",
+    "category": "immobilier",
+    "address": "Flic en Flac",
+    "phone": "+230 4535626",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.283078,57.365226",
+    "lat": -20.283078,
+    "lng": 57.365226,
+    "themes": [
+      "agences"
+    ],
+    "zone": "ouest",
+    "description": "Agence immobilière à Flic en Flac : vente et location de biens (villas, appartements, terrains)."
+  },
+  {
+    "id": "immo-villa-vie-ltd",
+    "name": "Villa Vie LTD",
+    "category": "immobilier",
+    "address": "Grand Baie",
+    "phone": "",
+    "website": "https://www.villa-vie.com/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-19.991032,57.59362",
+    "lat": -19.991032,
+    "lng": 57.59362,
+    "themes": [
+      "agences"
+    ],
+    "zone": "nord",
+    "description": "Agence immobilière à Grand Baie : vente et location de biens (villas, appartements, terrains)."
+  },
+  {
+    "id": "immo-ocean-acquisition",
+    "name": "Ocean Acquisition",
+    "category": "immobilier",
+    "address": "Grand Baie",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-19.989719,57.595417",
+    "lat": -19.989719,
+    "lng": 57.595417,
+    "themes": [
+      "agences"
+    ],
+    "zone": "nord",
+    "description": "Agence immobilière à Grand Baie : vente et location de biens (villas, appartements, terrains)."
+  },
+  {
+    "id": "immo-sotheby-s",
+    "name": "Sotheby's",
+    "category": "immobilier",
+    "address": "Tamarin",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.3522,57.364803",
+    "lat": -20.3522,
+    "lng": 57.364803,
+    "themes": [
+      "agences"
+    ],
+    "zone": "ouest",
+    "description": "Agence immobilière de prestige à Tamarin : vente et location de villas et propriétés haut de gamme."
+  },
+  {
+    "id": "immo-luxago-properties-real-estate-mauritius",
+    "name": "LUXAGO PROPERTIES- Real Estate Mauritius",
+    "category": "immobilier",
+    "address": "Grande Rivière Noire",
+    "phone": "+230 57758227",
+    "website": "https://www.luxago.net/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.363546,57.372374",
+    "lat": -20.363546,
+    "lng": 57.372374,
+    "themes": [
+      "agences"
+    ],
+    "zone": "ouest",
+    "description": "Agence immobilière de prestige à Grande Rivière Noire : vente et location de villas et propriétés haut de gamme."
+  },
+  {
+    "id": "immo-nestenn-immobilier-tamarin",
+    "name": "Nestenn Immobilier - Tamarin",
+    "category": "immobilier",
+    "address": "Tamarin",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.329216,57.377679",
+    "lat": -20.329216,
+    "lng": 57.377679,
+    "themes": [
+      "agences"
+    ],
+    "zone": "ouest",
+    "description": "Agence immobilière à Tamarin : vente et location de biens (villas, appartements, terrains)."
+  },
+  {
+    "id": "immo-pam-golding-properties-riviere-noire",
+    "name": "Pam Golding Properties - Rivière Noire",
+    "category": "immobilier",
+    "address": "Rivière Noire",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.326479,57.415579",
+    "lat": -20.326479,
+    "lng": 57.415579,
+    "themes": [
+      "agences"
+    ],
+    "zone": "ouest",
+    "description": "Agence immobilière de prestige à Rivière Noire : vente et location de villas et propriétés haut de gamme."
+  },
+  {
+    "id": "immo-pam-golding-properties-grand-baie",
+    "name": "Pam Golding Properties - Grand Baie",
+    "category": "immobilier",
+    "address": "Grand Baie",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.01302,57.584627",
+    "lat": -20.01302,
+    "lng": 57.584627,
+    "themes": [
+      "agences"
+    ],
+    "zone": "nord",
+    "description": "Agence immobilière de prestige à Grand Baie : vente et location de villas et propriétés haut de gamme."
+  },
+  {
+    "id": "immo-michael-zingraf-real-estate",
+    "name": "Michaël Zingraf Real Estate",
+    "category": "immobilier",
+    "address": "Tamarin",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.329216,57.377679",
+    "lat": -20.329216,
+    "lng": 57.377679,
+    "themes": [
+      "agences"
+    ],
+    "zone": "ouest",
+    "description": "Agence immobilière de prestige à Tamarin : vente et location de villas et propriétés haut de gamme."
+  },
+  {
+    "id": "immo-pds-mauritius",
+    "name": "PDS Mauritius",
+    "category": "immobilier",
+    "address": "Grand Baie",
+    "phone": "+230 5252 5522",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.02384,57.579154",
+    "lat": -20.02384,
+    "lng": 57.579154,
+    "themes": [
+      "agences"
+    ],
+    "zone": "nord",
+    "description": "Agence immobilière à Grand Baie : vente et location de biens (villas, appartements, terrains)."
+  },
+  {
+    "id": "immo-l-adresse-immobilier",
+    "name": "L'Adresse Immobilier",
+    "category": "immobilier",
+    "address": "Grand Baie",
+    "phone": "+230 263 0360",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.013372,57.591359",
+    "lat": -20.013372,
+    "lng": 57.591359,
+    "themes": [
+      "agences"
+    ],
+    "zone": "nord",
+    "description": "Agence immobilière à Grand Baie : vente et location de biens (villas, appartements, terrains)."
+  },
+  {
+    "id": "immo-decordier-real-estate",
+    "name": "DECORDIER real estate",
+    "category": "immobilier",
+    "address": "Grand Baie",
+    "phone": "+230 268 2828",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.013372,57.591359",
+    "lat": -20.013372,
+    "lng": 57.591359,
+    "themes": [
+      "agences"
+    ],
+    "zone": "nord",
+    "description": "Agence immobilière à Grand Baie : vente et location de biens (villas, appartements, terrains)."
+  },
+  {
+    "id": "immo-gadait-international",
+    "name": "GADAIT International",
+    "category": "immobilier",
+    "address": "Tamarin",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.329216,57.377679",
+    "lat": -20.329216,
+    "lng": 57.377679,
+    "themes": [
+      "agences"
+    ],
+    "zone": "ouest",
+    "description": "Agence immobilière à Tamarin : vente et location de biens (villas, appartements, terrains)."
+  },
+  {
+    "id": "immo-openhouse-ouest",
+    "name": "OpenHouse Ouest",
+    "category": "immobilier",
+    "address": "Rivière Noire",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.326479,57.415579",
+    "lat": -20.326479,
+    "lng": 57.415579,
+    "themes": [
+      "agences"
+    ],
+    "zone": "ouest",
+    "description": "Agence immobilière à Rivière Noire : vente et location de biens (villas, appartements, terrains)."
+  },
+  {
+    "id": "immo-westimmo",
+    "name": "Westimmo",
+    "category": "immobilier",
+    "address": "Tamarin",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.329216,57.377679",
+    "lat": -20.329216,
+    "lng": 57.377679,
+    "themes": [
+      "agences"
+    ],
+    "zone": "ouest",
+    "description": "Agence immobilière à Tamarin : vente et location de biens (villas, appartements, terrains)."
+  },
+  {
+    "id": "immo-barnes-mauritius-moka",
+    "name": "BARNES Mauritius - Moka",
+    "category": "immobilier",
+    "address": "Moka",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.22593,57.522719",
+    "lat": -20.22593,
+    "lng": 57.522719,
+    "themes": [
+      "agences"
+    ],
+    "zone": "centre",
+    "description": "Agence immobilière de prestige à Moka : vente et location de villas et propriétés haut de gamme."
+  },
+  {
+    "id": "immo-barnes-belle-mare",
+    "name": "BARNES Belle Mare",
+    "category": "immobilier",
+    "address": "Belle Mare",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.171897,57.753849",
+    "lat": -20.171897,
+    "lng": 57.753849,
+    "themes": [
+      "agences"
+    ],
+    "zone": "est",
+    "description": "Agence immobilière de prestige à Belle Mare : vente et location de villas et propriétés haut de gamme."
+  },
+  {
+    "id": "immo-nestenn-immobilier-grand-baie",
+    "name": "Nestenn Immobilier - Grand Baie",
+    "category": "immobilier",
+    "address": "Grand Baie",
+    "phone": "+230 5477 0400",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.0132,57.5804",
+    "lat": -20.0132,
+    "lng": 57.5804,
+    "themes": [
+      "agences"
+    ],
+    "zone": "nord",
+    "description": "Agence immobilière à Grand Baie : vente et location de biens (villas, appartements, terrains)."
+  },
+  {
+    "id": "immo-ofim-immobilier-riviere-noire",
+    "name": "OFIM Immobilier - Rivière Noire",
+    "category": "immobilier",
+    "address": "Tamarin",
+    "phone": "+230 483 8097",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.3262,57.3752",
+    "lat": -20.3262,
+    "lng": 57.3752,
+    "themes": [
+      "agences"
+    ],
+    "zone": "ouest",
+    "description": "Agence immobilière à Tamarin : vente et location de biens (villas, appartements, terrains)."
   }
 ]
