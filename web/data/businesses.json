@@ -5359,38 +5359,8 @@
     "description": "Clinique privée à Curepipe avec urgences 24h/24, spécialisée notamment en soins palliatifs, et proposant aussi médecine générale/interne, cardiologie, ORL, chirurgie orthopédique et générale, gynécologie, gastro-entérologie, dermatologie, pédiatrie, psychiatrie, gériatrie, ainsi que physiothérapie et imagerie diagnostique."
   },
   {
-    "id": "police-grand-baie",
-    "name": "Poste de Police - Grand Baie",
-    "category": "utiles",
-    "address": "Royal Road, Grand Baie (Nord)",
-    "phone": "",
-    "website": "",
-    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Grand%20Baie%20Police%20Station%20Mauritius",
-    "lat": -20.0134,
-    "lng": 57.5827,
-    "themes": [
-      "postes-police"
-    ],
-    "zone": "nord"
-  },
-  {
-    "id": "police-flic-en-flac",
-    "name": "Poste de Police - Flic en Flac",
-    "category": "utiles",
-    "address": "Coastal Road, Flic en Flac (Ouest)",
-    "phone": "+230 453 9917",
-    "website": "",
-    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Flic%20en%20Flac%20Police%20Station%20Mauritius",
-    "lat": -20.279,
-    "lng": 57.3639,
-    "themes": [
-      "postes-police"
-    ],
-    "zone": "ouest"
-  },
-  {
     "id": "police-curepipe",
-    "name": "Poste de Police - Curepipe",
+    "name": "Poste de police – Curepipe",
     "category": "utiles",
     "address": "College Lane, Curepipe (Centre)",
     "phone": "",
@@ -5401,22 +5371,8 @@
     "themes": [
       "postes-police"
     ],
-    "zone": "centre"
-  },
-  {
-    "id": "police-headquarters-port-louis",
-    "name": "Quartier Général de la Police - Line Barracks",
-    "category": "utiles",
-    "address": "Line Barracks, Port-Louis",
-    "phone": "999 (urgences) / 468 0034",
-    "website": "https://police.govmu.org/",
-    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Line%20Barracks%20Police%20Headquarters%20Port%20Louis%20Mauritius",
-    "lat": -20.1619,
-    "lng": 57.4989,
-    "themes": [
-      "postes-police"
-    ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Poste de police de Curepipe. Ouvert 24h/24 et 7j/7. Urgences : 999 (police secours) ou 112."
   },
   {
     "id": "swan-grand-baie",
@@ -13447,7 +13403,7 @@
   },
   {
     "id": "grand-bay-police-station",
-    "name": "Grand Bay Police Station",
+    "name": "Poste de police – Grand Baie",
     "category": "utiles",
     "address": "Royal Road, XHPM+279, B13, Grand Baie",
     "phone": "+230 263 0062",
@@ -13458,7 +13414,8 @@
     "themes": [
       "postes-police"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Poste de police de Grand Baie. Ouvert 24h/24 et 7j/7. Urgences : 999 (police secours) ou 112."
   },
   {
     "id": "mua-agency-grand-bay",
@@ -17048,7 +17005,7 @@
   },
   {
     "id": "police-station-flic-en-flac",
-    "name": "Police Station Flic en Flac",
+    "name": "Poste de police – Flic en Flac",
     "category": "utiles",
     "address": "P9C9+F44, Coastal Rd, Flic en Flac",
     "phone": "+230 453 9916",
@@ -17059,7 +17016,8 @@
     "themes": [
       "postes-police"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Poste de police de Flic en Flac. Ouvert 24h/24 et 7j/7. Urgences : 999 (police secours) ou 112."
   },
   {
     "id": "mua-drive-thru-claims-riviere-noire",
@@ -20360,7 +20318,7 @@
   },
   {
     "id": "police-station-saint-pierre",
-    "name": "Police Station Saint Pierre",
+    "name": "Poste de police – Saint-Pierre",
     "category": "utiles",
     "address": "A7, St-Pierre Police Station, St Pierre",
     "phone": "+230 433 4211",
@@ -20371,11 +20329,12 @@
     "themes": [
       "postes-police"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Poste de police de Saint-Pierre. Ouvert 24h/24 et 7j/7. Urgences : 999 (police secours) ou 112."
   },
   {
     "id": "line-barracks-police-station",
-    "name": "Line Barracks Police station",
+    "name": "Quartier Général de la Police – Line Barracks",
     "category": "utiles",
     "address": "RFPX+743, Brabant St, Port Louis",
     "phone": "+230 208 1212",
@@ -20386,11 +20345,12 @@
     "themes": [
       "postes-police"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Quartier Général de la police mauricienne (Line Barracks), Port-Louis. Ouvert 24h/24 et 7j/7. Urgences : 999 (police secours) ou 112."
   },
   {
     "id": "bambous-police-station",
-    "name": "Bambous Police Station",
+    "name": "Poste de police – Bambous",
     "category": "utiles",
     "address": "Cascavelle",
     "phone": "+230 452 0870",
@@ -20401,7 +20361,8 @@
     "themes": [
       "postes-police"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Poste de police de Bambous. Ouvert 24h/24 et 7j/7. Urgences : 999 (police secours) ou 112."
   },
   {
     "id": "post-office-chamarel",
@@ -20421,7 +20382,7 @@
   },
   {
     "id": "police-station-rose-belle",
-    "name": "Police Station Rose Belle",
+    "name": "Poste de police – Rose Belle",
     "category": "utiles",
     "address": "POLICE STATION, Rose Belle",
     "phone": "+230 627 9341",
@@ -20432,11 +20393,12 @@
     "themes": [
       "postes-police"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Poste de police de Rose Belle. Ouvert 24h/24 et 7j/7. Urgences : 999 (police secours) ou 112."
   },
   {
     "id": "moka-police-station",
-    "name": "Moka Police Station",
+    "name": "Poste de police – Moka",
     "category": "utiles",
     "address": "QGG3+WJW, Mt. Ory Road, Moka",
     "phone": "+230 433 6512",
@@ -20447,11 +20409,12 @@
     "themes": [
       "postes-police"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Poste de police de Moka. Ouvert 24h/24 et 7j/7. Urgences : 999 (police secours) ou 112."
   },
   {
     "id": "chemin-grenier-police-station",
-    "name": "Chemin Grenier Police Station",
+    "name": "Poste de police – Chemin Grenier",
     "category": "utiles",
     "address": "GF59+955, B10 Royal road, Chemin Grenier",
     "phone": "+230 622 6536",
@@ -20462,11 +20425,12 @@
     "themes": [
       "postes-police"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Poste de police de Chemin Grenier. Ouvert 24h/24 et 7j/7. Urgences : 999 (police secours) ou 112."
   },
   {
     "id": "police-station-trou-d-eau-douce",
-    "name": "Police Station Trou D'eau Douce",
+    "name": "Poste de police – Trou d'Eau Douce",
     "category": "utiles",
     "address": "QQ6Q+988, Trou d'Eau Douce",
     "phone": "+230 480 2439",
@@ -20477,11 +20441,12 @@
     "themes": [
       "postes-police"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Poste de police de Trou d'Eau Douce. Ouvert 24h/24 et 7j/7. Urgences : 999 (police secours) ou 112."
   },
   {
     "id": "eau-coulee-police-station",
-    "name": "Eau Coulee Police Station",
+    "name": "Poste de police – Eau Coulée",
     "category": "utiles",
     "address": "MGVG+88X, Curepipe",
     "phone": "+230 676 3321",
@@ -20492,11 +20457,12 @@
     "themes": [
       "postes-police"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Poste de police de Eau Coulée. Ouvert 24h/24 et 7j/7. Urgences : 999 (police secours) ou 112."
   },
   {
     "id": "bel-air-police-station",
-    "name": "Bel Air Police Station",
+    "name": "Poste de police – Bel Air",
     "category": "utiles",
     "address": "PQV4+CQV, Bel Air",
     "phone": "+230 419 2421",
@@ -20507,7 +20473,8 @@
     "themes": [
       "postes-police"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Poste de police de Bel Air. Ouvert 24h/24 et 7j/7. Urgences : 999 (police secours) ou 112."
   },
   {
     "id": "asza-co-ltd",
@@ -22289,7 +22256,7 @@
   },
   {
     "id": "police-station-bel-ombre",
-    "name": "Police Station Bel Ombre",
+    "name": "Poste de police – Bel Ombre",
     "category": "utiles",
     "address": "F9XX+399, B9, Bel Ombre",
     "phone": "+230 622 5303",
@@ -22300,7 +22267,8 @@
     "themes": [
       "postes-police"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Poste de police de Bel Ombre. Ouvert 24h/24 et 7j/7. Urgences : 999 (police secours) ou 112."
   },
   {
     "id": "mua-head-office-general-insurance",
@@ -30527,7 +30495,7 @@
   },
   {
     "id": "montagne-blanche-police-station",
-    "name": "Montagne-Blanche Police Station",
+    "name": "Poste de police – Montagne Blanche",
     "category": "utiles",
     "address": "PM77+PJF, Montagne Blanche",
     "phone": "+230 437 5537",
@@ -30537,11 +30505,12 @@
     "themes": [
       "postes-police"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Poste de police de Montagne Blanche. Ouvert 24h/24 et 7j/7. Urgences : 999 (police secours) ou 112."
   },
   {
     "id": "coromandel-police-station",
-    "name": "Coromandel Police Station",
+    "name": "Poste de police – Coromandel",
     "category": "utiles",
     "address": "RF39+48C, Nenuphar Ave, Beau Bassin-Rose Hill",
     "phone": "+230 233 1841",
@@ -30551,11 +30520,12 @@
     "themes": [
       "postes-police"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Poste de police de Coromandel. Ouvert 24h/24 et 7j/7. Urgences : 999 (police secours) ou 112."
   },
   {
     "id": "pamplemousses-police-station",
-    "name": "Pamplemousses Police Station",
+    "name": "Poste de police – Pamplemousses",
     "category": "utiles",
     "address": "VHQG+MCC, Pamplemousses",
     "phone": "+230 243 3545",
@@ -30565,11 +30535,12 @@
     "themes": [
       "postes-police"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Poste de police de Pamplemousses. Ouvert 24h/24 et 7j/7. Urgences : 999 (police secours) ou 112."
   },
   {
     "id": "riviere-du-rempart-police-station",
-    "name": "Rivière Du Rempart Police Station",
+    "name": "Poste de police – Rivière du Rempart",
     "category": "utiles",
     "address": "Royal Road, VMWX+6CQ, A6, Rivière du Rempart",
     "phone": "+230 412 5569",
@@ -30580,7 +30551,8 @@
     "themes": [
       "postes-police"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Poste de police de Rivière du Rempart. Ouvert 24h/24 et 7j/7. Urgences : 999 (police secours) ou 112."
   },
   {
     "id": "axess-pre-owned",
@@ -31415,7 +31387,7 @@
   },
   {
     "id": "belle-mare-police-station",
-    "name": "Belle Mare Police Station",
+    "name": "Poste de police – Belle Mare",
     "category": "utiles",
     "address": "RQ3G+CFJ, B59, Quatre Cocos",
     "phone": "+230 415 2116",
@@ -31425,7 +31397,8 @@
     "themes": [
       "postes-police"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Poste de police de Belle Mare. Ouvert 24h/24 et 7j/7. Urgences : 999 (police secours) ou 112."
   },
   {
     "id": "mcb-belle-village",
