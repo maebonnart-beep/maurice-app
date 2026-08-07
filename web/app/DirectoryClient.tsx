@@ -335,7 +335,6 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
     fams?.filter((f) => f.position !== "end").forEach(pushFamily);
     ungrouped.forEach((t) => allEntries.push({ key: t.key, row: t }));
     fams?.filter((f) => f.position === "end").forEach(pushFamily);
-    allEntries.push({ key: UNCLASSIFIED, row: { key: UNCLASSIFIED, label: "Non classé", emoji: "❔" } });
 
     const expanded = expandedInSidebar.has(catKey);
     const visibleEntries = expanded ? allEntries : allEntries.slice(0, SIDEBAR_VISIBLE_RUBRIQUES);

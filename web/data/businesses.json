@@ -26051,7 +26051,8 @@
       "cafe-coworking"
     ],
     "promoText": "Vue magnifique, personnel attentionné et iced coffee délicieux. Musique parfois forte.",
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Restaurant lounge-bar les pieds dans le sable à Grand Baie (ambiance Côte d'Azur), ouvert en continu du petit-déjeuner au dîner : cuisine méditerranéenne et fruits de mer, terrasse face au lagon — spot agréable pour bruncher ou travailler avec vue."
   },
   {
     "id": "la-plage-beach-club-trou-aux-biches",
@@ -26067,7 +26068,8 @@
       "cafe-coworking"
     ],
     "promoText": "Vue splendide, les pieds dans le sable, du calme et un cheesecake à tomber !",
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Beach club (by Evaco) sur la plage de Trou aux Biches : restaurant ouvert au public midi et soir, piscine, transats et glacier — cadre balnéaire pour déjeuner ou télétravailler face à la mer."
   },
   {
     "id": "ava-beach-trou-aux-biches",
@@ -26083,7 +26085,8 @@
       "cafe-coworking"
     ],
     "promoText": "Hôtel où la nourriture est excellente (salade César, thali). Calme, face à la piscine — teste le iced matcha passion !",
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Hôtel de bord de mer à Trou aux Biches dont la restauration est ouverte aux non-résidents : cadre calme face à la piscine, idéal pour une pause déjeuner ou pour télétravailler."
   },
   {
     "id": "zilwa-attitude-calodyne",
@@ -26099,7 +26102,8 @@
       "cafe-coworking"
     ],
     "promoText": "Hôtel où tu peux te restaurer et travailler même sans être résident. Baignade : sable parfois vaseux.",
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Hôtel du groupe Attitude à Calodyne (Nord), en bord de lagon : restauration et espaces accessibles même sans être résident, pour se restaurer et travailler au calme."
   },
   {
     "id": "sweet-and-brunch-grand-baie",
@@ -26114,7 +26118,8 @@
     "themes": [
       "cafe-coworking"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Café-brunch tenu par une famille française à Grand Baie (Reservoir Road), ouvert dès 8h30 : pâtisseries maison, pancakes, œufs-bacon et jus frais, avec un jardin au calme — un bon spot pour télétravailler."
   },
   {
     "id": "chez-popo-tamarin",
@@ -26129,7 +26134,8 @@
     "themes": [
       "cafe-coworking"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Café-restaurant convivial à Tamarin : cadre décontracté, agréable pour une pause déjeuner ou pour télétravailler."
   },
   {
     "id": "cana-padel-club",
@@ -36824,5 +36830,29 @@
     ],
     "zone": "centre",
     "description": "Librairie de livres rares et d'occasion à Rose Hill (entreprise sociale de réemploi)."
+  },
+  {
+    "id": "aster-vender",
+    "name": "Aster Vender",
+    "category": "seconde-main",
+    "address": "Plateforme en ligne",
+    "phone": "",
+    "website": "https://www.astervender.mu/",
+    "themes": [
+      "jeux-livres"
+    ],
+    "description": "Marketplace en ligne de seconde main à Maurice : livres, jeux de société, puériculture et objets d'occasion entre particuliers."
+  },
+  {
+    "id": "jumia-vendito-mauritius",
+    "name": "Jumia (ex-Vendito)",
+    "category": "seconde-main",
+    "address": "Plateforme en ligne",
+    "phone": "",
+    "website": "https://www.jumia.mu/",
+    "themes": [
+      "jeux-livres"
+    ],
+    "description": "Site de petites annonces à Maurice (anciennement Vendito) : achat et vente d'occasion entre particuliers — jeux vidéo, consoles, livres et objets divers."
   }
 ]
