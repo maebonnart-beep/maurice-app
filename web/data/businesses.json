@@ -14406,7 +14406,8 @@
     "themes": [
       "equipement-maison"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Dépôt-vente de meubles et d'articles d'occasion, à Goodlands."
   },
   {
     "id": "ju-marinette",
@@ -14421,7 +14422,8 @@
     "themes": [
       "equipement-maison"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Dépôt-vente / consignment de vêtements et articles de seconde main (depuis 2019), à Grand Baie."
   },
   {
     "id": "double-life-saint-pierre",
@@ -14436,7 +14438,8 @@
     "themes": [
       "equipement-maison"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Boutique de seconde main Double Life : mode et articles d'occasion (achat et vente), à Saint-Pierre."
   },
   {
     "id": "lexpresscars",
@@ -14451,7 +14454,8 @@
     "themes": [
       "voitures-2-roues"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Vente de voitures d'occasion à Baie du Tombeau. Achat, vente et reprise de véhicules."
   },
   {
     "id": "ginza-motors",
@@ -14466,7 +14470,8 @@
     "themes": [
       "voitures-2-roues"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Vente de voitures d'occasion à Port-Louis. Achat, vente et reprise de véhicules."
   },
   {
     "id": "the-car-connexion-ltd",
@@ -14481,7 +14486,8 @@
     "themes": [
       "voitures-2-roues"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Vente de voitures d'occasion à Fond du Sac. Achat, vente et reprise de véhicules."
   },
   {
     "id": "dagenham-motors",
@@ -14496,7 +14502,8 @@
     "themes": [
       "voitures-2-roues"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Vente de voitures d'occasion à Curepipe. Achat, vente et reprise de véhicules."
   },
   {
     "id": "autograph",
@@ -14511,7 +14518,8 @@
     "themes": [
       "voitures-2-roues"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Vente de voitures d'occasion à Mapou. Achat, vente et reprise de véhicules."
   },
   {
     "id": "vintage-clothing",
@@ -14526,7 +14534,8 @@
     "themes": [
       "habits-adultes"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Friperie : vêtements vintage et de seconde main, à Pamplemousses."
   },
   {
     "id": "le-dressing-by-boubou",
@@ -14541,7 +14550,8 @@
     "themes": [
       "habits-adultes"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Dépôt-vente de vêtements et accessoires de marque et de luxe d'occasion (pre-loved), à Grand Baie (La Croisette)."
   },
   {
     "id": "the-good-shop-petite-riviere",
@@ -14556,7 +14566,8 @@
     "themes": [
       "habits-adultes"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Friperie solidaire The Good Shop : vêtements et articles de seconde main à petits prix, à Petite Rivière."
   },
   {
     "id": "the-good-shop",
@@ -14571,7 +14582,8 @@
     "themes": [
       "habits-adultes"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Friperie solidaire The Good Shop : vêtements et articles de seconde main à petits prix, à Curepipe."
   },
   {
     "id": "santana-dolphins-whales-charter-mauritius",
@@ -17561,7 +17573,8 @@
     "themes": [
       "equipement-maison"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Friperie solidaire (Charity Centre) : vêtements et objets de seconde main à petits prix, à Tamarin."
   },
   {
     "id": "by-the-way-ltd-cars-for-sale",
@@ -17576,7 +17589,8 @@
     "themes": [
       "voitures-2-roues"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Vente de voitures d'occasion à Flic en Flac. Achat, vente et reprise de véhicules."
   },
   {
     "id": "basement-bargains",
@@ -17591,7 +17605,8 @@
     "themes": [
       "habits-adultes"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Boutique de seconde main à Tamarin : articles pre-loved (mobilier, électroménager, puériculture, plein air…) à petits prix."
   },
   {
     "id": "baz-zero-gaspiyaz",
@@ -17606,7 +17621,8 @@
     "themes": [
       "habits-adultes"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Thrift shop anti-gaspillage (Victoria Urban Terminal, Port-Louis) : vêtements, livres, accessoires et objets de seconde main à petits prix."
   },
   {
     "id": "the-luxury-closet-mauritius",
@@ -17621,7 +17637,8 @@
     "themes": [
       "habits-adultes"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Vêtements et accessoires de luxe d'occasion (pre-loved), à Curepipe."
   },
   {
     "id": "double-life-pointe-aux-canonniers",
@@ -17636,7 +17653,8 @@
     "themes": [
       "habits-adultes"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Dépôt-vente de mode féminine de seconde main (consignment), à Pointe aux Canonniers."
   },
   {
     "id": "lydia-boat-mauritius-whales-and-dolphins-encounter-swim-with",
@@ -20853,7 +20871,8 @@
     "themes": [
       "voitures-2-roues"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Vente de voitures d'occasion à Le Morne. Achat, vente et reprise de véhicules."
   },
   {
     "id": "salim-auto-co-ltd",
@@ -20868,7 +20887,8 @@
     "themes": [
       "voitures-2-roues"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Vente de voitures d'occasion à Moka. Achat, vente et reprise de véhicules."
   },
   {
     "id": "carclub-ltd",
@@ -20883,7 +20903,8 @@
     "themes": [
       "voitures-2-roues"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Vente de voitures d'occasion à Saint-Pierre. Achat, vente et reprise de véhicules."
   },
   {
     "id": "lumiere-auto-ltd",
@@ -20898,7 +20919,8 @@
     "themes": [
       "voitures-2-roues"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Vente de voitures d'occasion à Vacoas. Achat, vente et reprise de véhicules."
   },
   {
     "id": "autogarant-co-ltd",
@@ -20913,7 +20935,8 @@
     "themes": [
       "voitures-2-roues"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Vente de voitures d'occasion à Vacoas. Achat, vente et reprise de véhicules."
   },
   {
     "id": "express-auto",
@@ -20928,7 +20951,8 @@
     "themes": [
       "voitures-2-roues"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Vente de voitures d'occasion à Vacoas. Achat, vente et reprise de véhicules."
   },
   {
     "id": "rolo-boat-trips-bel-ombre",
@@ -22905,7 +22929,8 @@
     "themes": [
       "voitures-2-roues"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Vente de voitures d'occasion à Souillac. Achat, vente et reprise de véhicules."
   },
   {
     "id": "bs-motors-ltd",
@@ -22920,7 +22945,8 @@
     "themes": [
       "voitures-2-roues"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Vente de voitures d'occasion à Ecroignard. Achat, vente et reprise de véhicules."
   },
   {
     "id": "autocloud-mu",
@@ -22935,7 +22961,8 @@
     "themes": [
       "voitures-2-roues"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Vente de voitures d'occasion à Tamarin. Achat, vente et reprise de véhicules."
   },
   {
     "id": "belle-mare-tours",
@@ -25304,7 +25331,8 @@
     "themes": [
       "equipement-maison"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Magasin de seconde main à Bon Accueil : meubles, électroménager et objets d'occasion."
   },
   {
     "id": "boodhoo-saleem-auction-room",
@@ -25319,7 +25347,8 @@
     "themes": [
       "equipement-maison"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Salle des ventes / brocante à Port-Louis : meubles et objets d'occasion (enchères)."
   },
   {
     "id": "bigorno-diving-centre-mauritius",
@@ -29567,7 +29596,8 @@
     "themes": [
       "habits-adultes"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Boutique de vêtements et accessoires à Grand Baie."
   },
   {
     "id": "luna-boutique-mauritius-2",
@@ -29581,7 +29611,8 @@
     "themes": [
       "habits-adultes"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Boutique de vêtements et accessoires à Grand Baie."
   },
   {
     "id": "perhaps",
@@ -29596,7 +29627,8 @@
     "themes": [
       "habits-adultes"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Boutique de vêtements et accessoires à Grand Baie."
   },
   {
     "id": "la-p-tite-parisienne",
@@ -29609,7 +29641,8 @@
     "themes": [
       "habits-adultes"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Boutique de vêtements à Tamarin."
   },
   {
     "id": "marhaba-boutique",
@@ -29623,7 +29656,8 @@
     "themes": [
       "habits-adultes"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Boutique de mode (abayas et vêtements) à Port-Louis."
   },
   {
     "id": "meem",
@@ -29637,7 +29671,8 @@
     "themes": [
       "habits-enfants"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Boutique de puériculture et de vêtements bébés/enfants, à Cascavelle (Flic en Flac)."
   },
   {
     "id": "musee-coquillage",
@@ -29679,7 +29714,8 @@
     "themes": [
       "habits-adultes"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Concept store de décoration d'intérieur à Grand Baie : déco bohème et balinaise, tapis en jute et jonc de mer."
   },
   {
     "id": "poonith-store",
@@ -29693,7 +29729,8 @@
     "themes": [
       "habits-adultes"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Boutique de vêtements à Esperance Trébuchet."
   },
   {
     "id": "adamas",
@@ -29708,7 +29745,8 @@
     "themes": [
       "habits-adultes"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Bijouterie et horlogerie à Grand Baie (bijoux et montres, revendeur Oris)."
   },
   {
     "id": "fabulous-island-concept-store",
@@ -29723,7 +29761,8 @@
     "themes": [
       "habits-adultes"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Marque de vêtements éco-responsables fabriqués à Maurice, collections personnalisables (femme/homme/enfant) — concept store à Rivière Noire."
   },
   {
     "id": "eco-holidays-mauritius-dmc",
@@ -29905,7 +29944,8 @@
     "themes": [
       "habits-adultes"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Boutique d'uniformes scolaires et vêtements à petits prix, à Grand Baie."
   },
   {
     "id": "royal-dolphin-co-ltd",
@@ -30204,7 +30244,8 @@
     "themes": [
       "voitures-2-roues"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Vente de voitures d'occasion à Saint-Pierre. Achat, vente et reprise de véhicules."
   },
   {
     "id": "by-the-way-car-for-sale",
@@ -30219,7 +30260,8 @@
     "themes": [
       "voitures-2-roues"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Vente de voitures d'occasion à Moka. Achat, vente et reprise de véhicules."
   },
   {
     "id": "unique-motors-co-ltd",
@@ -30234,7 +30276,8 @@
     "themes": [
       "voitures-2-roues"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Vente de voitures d'occasion à Port-Louis. Achat, vente et reprise de véhicules."
   },
   {
     "id": "bronze-peacock-ltd",
@@ -30249,7 +30292,8 @@
     "themes": [
       "voitures-2-roues"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Vente de voitures d'occasion à Port-Louis. Achat, vente et reprise de véhicules."
   },
   {
     "id": "justice-boat-tours",
@@ -30483,7 +30527,8 @@
     "themes": [
       "voitures-2-roues"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Vente de voitures d'occasion à Bagatelle. Achat, vente et reprise de véhicules."
   },
   {
     "id": "lifestyle-boating-mauritius",
@@ -30736,7 +30781,8 @@
     "themes": [
       "voitures-2-roues"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Vente de voitures d'occasion à Lalmatie. Achat, vente et reprise de véhicules."
   },
   {
     "id": "delior-automobile",
@@ -30751,7 +30797,8 @@
     "themes": [
       "voitures-2-roues"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Vente de voitures d'occasion à Quatre Bornes. Achat, vente et reprise de véhicules."
   },
   {
     "id": "dan-motors-ltd",
@@ -30765,7 +30812,8 @@
     "themes": [
       "voitures-2-roues"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Vente de voitures d'occasion à Port-Louis. Achat, vente et reprise de véhicules."
   },
   {
     "id": "mycar-mu",
@@ -30780,7 +30828,8 @@
     "themes": [
       "voitures-2-roues"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Vente de voitures d'occasion à Moka. Achat, vente et reprise de véhicules."
   },
   {
     "id": "phoenix-car-gallery",
@@ -30794,7 +30843,8 @@
     "themes": [
       "voitures-2-roues"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Vente de voitures d'occasion à Vacoas. Achat, vente et reprise de véhicules."
   },
   {
     "id": "restaurant-la-pagode",
@@ -30970,7 +31020,8 @@
     "themes": [
       "voitures-2-roues"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Vente de voitures d'occasion à Vacoas. Achat, vente et reprise de véhicules."
   },
   {
     "id": "dodo-museum-adventure",
@@ -36723,5 +36774,69 @@
     ],
     "zone": "nord",
     "description": "Salon de coiffure à Grand Baie : coupe, coiffage et coloration."
+  },
+  {
+    "id": "lulu-la-gaulette",
+    "name": "LuLu",
+    "category": "seconde-main",
+    "address": "La Gaulette",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.427502,57.359947",
+    "lat": -20.427502,
+    "lng": 57.359947,
+    "themes": [
+      "habits-adultes"
+    ],
+    "zone": "ouest",
+    "description": "Boutique de seconde main / friperie à La Gaulette : vêtements et articles d'occasion."
+  },
+  {
+    "id": "the-2nd-chance-curepipe",
+    "name": "The 2nd Chance",
+    "category": "seconde-main",
+    "address": "Curepipe",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.310948,57.513098",
+    "lat": -20.310948,
+    "lng": 57.513098,
+    "themes": [
+      "habits-adultes"
+    ],
+    "zone": "centre",
+    "description": "Boutique de seconde main The 2nd Chance : vêtements et articles d'occasion, à Curepipe."
+  },
+  {
+    "id": "the-good-shop-restore-moka",
+    "name": "The Good Shop - Le ReStore",
+    "category": "seconde-main",
+    "address": "Vivéa Business Park, Moka",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.226081,57.53405",
+    "lat": -20.226081,
+    "lng": 57.53405,
+    "themes": [
+      "equipement-maison"
+    ],
+    "zone": "centre",
+    "description": "Le ReStore (The Good Shop) : meubles et articles de maison de seconde main, à Vivéa Business Park (Moka)."
+  },
+  {
+    "id": "the-good-shop-calebasses",
+    "name": "The Good Shop - Calebasses",
+    "category": "seconde-main",
+    "address": "Calebasses, Pamplemousses",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.113795,57.561625",
+    "lat": -20.113795,
+    "lng": 57.561625,
+    "themes": [
+      "habits-adultes"
+    ],
+    "zone": "nord",
+    "description": "Friperie solidaire The Good Shop : vêtements et articles de seconde main, à Calebasses (Pamplemousses)."
   }
 ]
