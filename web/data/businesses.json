@@ -13637,7 +13637,8 @@
     "themes": [
       "taxis-transferts"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés), basé à Grand Baie."
   },
   {
     "id": "mauritius-local-taxi",
@@ -13652,7 +13653,8 @@
     "themes": [
       "taxis-transferts"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés), basé à Grand Baie."
   },
   {
     "id": "nanda-taxi",
@@ -13667,7 +13669,8 @@
     "themes": [
       "taxis-transferts"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés), basé à Grand Baie."
   },
   {
     "id": "taxi-grand-baie-24-7-service",
@@ -13682,7 +13685,8 @@
     "themes": [
       "taxis-transferts"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés), basé à Grand Baie. Disponible 24h/24."
   },
   {
     "id": "taxi-service-dinan",
@@ -13697,7 +13701,8 @@
     "themes": [
       "taxis-transferts"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés), basé à Grand Baie."
   },
   {
     "id": "vikash-taxi-service-guide",
@@ -13712,7 +13717,8 @@
     "themes": [
       "taxis-transferts"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés) avec chauffeur-guide, basé à Cap Malheureux."
   },
   {
     "id": "yash-taxi-service",
@@ -13727,7 +13733,8 @@
     "themes": [
       "taxis-transferts"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés)."
   },
   {
     "id": "taxi-service-mauritius",
@@ -13759,7 +13766,8 @@
     "themes": [
       "taxis-transferts"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés), basé à Rose Hill."
   },
   {
     "id": "kovi-taxi-guide-kovilen-gangadoo",
@@ -13774,7 +13782,8 @@
     "themes": [
       "taxis-transferts"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés) avec chauffeur-guide, basé à Cap Malheureux."
   },
   {
     "id": "nou-taxi-mauritius",
@@ -13789,7 +13798,8 @@
     "themes": [
       "taxis-transferts"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés), basé à Blue Bay."
   },
   {
     "id": "sun-ile-maurice-taxi",
@@ -13804,7 +13814,8 @@
     "themes": [
       "taxis-transferts"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés), basé à Trois Boutiques."
   },
   {
     "id": "taxis-mauritius",
@@ -13819,7 +13830,8 @@
     "themes": [
       "taxis-transferts"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés), basé à Amaury."
   },
   {
     "id": "taxi-guide-mauritius",
@@ -13851,7 +13863,8 @@
     "themes": [
       "taxis-transferts"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Location de voiture et transferts, basé à Grand Baie."
   },
   {
     "id": "moride-mauritius-taxi-service",
@@ -13866,7 +13879,8 @@
     "themes": [
       "taxis-transferts"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés), basé à Ecroignard."
   },
   {
     "id": "aratours-ltd",
@@ -13881,7 +13895,8 @@
     "themes": [
       "taxis-transferts"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés) avec chauffeur-guide, basé à Grand Baie."
   },
   {
     "id": "sam-taxi-mauritius-flic-en-flac-tamarin",
@@ -13896,7 +13911,8 @@
     "themes": [
       "taxis-transferts"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés), basé à Tamarin."
   },
   {
     "id": "aeroport-sir-seewoosagur-ramgoolam",
@@ -13911,7 +13927,8 @@
     "themes": [
       "taxis-transferts"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Aéroport international Sir Seewoosagur Ramgoolam (Plaine Magnien) : principal aéroport de Maurice — point d'arrivée et de départ des transferts, taxis et navettes."
   },
   {
     "id": "coastal-tours-mauritius",
@@ -13926,7 +13943,8 @@
     "themes": [
       "taxis-transferts"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés) avec chauffeur-guide, basé à Grand Baie."
   },
   {
     "id": "sayad-taxi-tour-guide-mauritius",
@@ -13941,7 +13959,8 @@
     "themes": [
       "taxis-transferts"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés) avec chauffeur-guide, basé à Quatre Cocos."
   },
   {
     "id": "samtours-turquoise-voyages",
@@ -13956,7 +13975,8 @@
     "themes": [
       "taxis-transferts"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés) avec chauffeur-guide, basé à Flic en Flac."
   },
   {
     "id": "asas-car-rental-mauritius",
@@ -13971,7 +13991,8 @@
     "themes": [
       "taxis-transferts"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Location de voiture et transferts, basé à Triolet."
   },
   {
     "id": "roshan-taxi-flic-en-flac",
@@ -13986,7 +14007,8 @@
     "themes": [
       "taxis-transferts"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés), basé à Flic en Flac."
   },
   {
     "id": "dodo-ride-2",
@@ -14001,7 +14023,8 @@
     "themes": [
       "taxis-transferts"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés), basé à Grand Baie."
   },
   {
     "id": "chucky-taxi-mauritius",
@@ -14016,7 +14039,8 @@
     "themes": [
       "taxis-transferts"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés), basé à Quatre Bornes."
   },
   {
     "id": "new-beginnings-coaching-limited",
@@ -17165,7 +17189,8 @@
     "themes": [
       "taxis-transferts"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés), basé à Flic en Flac."
   },
   {
     "id": "mauritius-taxi-hub",
@@ -17180,7 +17205,8 @@
     "themes": [
       "taxis-transferts"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés), basé à Flic en Flac."
   },
   {
     "id": "top-taxi-service-mauritius",
@@ -17195,7 +17221,8 @@
     "themes": [
       "taxis-transferts"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés), basé à Tamarin."
   },
   {
     "id": "k2907-taxi-mauritius",
@@ -17210,7 +17237,8 @@
     "themes": [
       "taxis-transferts"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés), basé à Flic en Flac."
   },
   {
     "id": "paco-taxi-mauritius",
@@ -17225,7 +17253,8 @@
     "themes": [
       "taxis-transferts"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés), basé à Cascavelle."
   },
   {
     "id": "ramess-taxi-services",
@@ -17240,7 +17269,8 @@
     "themes": [
       "taxis-transferts"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés), basé à Flic en Flac."
   },
   {
     "id": "vixvipservices-taxi-and-tours-service",
@@ -17255,7 +17285,8 @@
     "themes": [
       "taxis-transferts"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés) avec chauffeur-guide, basé à Flic en Flac."
   },
   {
     "id": "taxi-service-tamarin-24-7",
@@ -17270,7 +17301,8 @@
     "themes": [
       "taxis-transferts"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés), basé à Tamarin. Disponible 24h/24."
   },
   {
     "id": "mauritius-island-local-taxi",
@@ -17285,7 +17317,8 @@
     "themes": [
       "taxis-transferts"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés), basé à Flic en Flac."
   },
   {
     "id": "mauvoyage-taxi-services-mautitius",
@@ -17300,7 +17333,8 @@
     "themes": [
       "taxis-transferts"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés), basé à Tamarin."
   },
   {
     "id": "taxi-service-sugar-beach-rughoo",
@@ -17315,7 +17349,8 @@
     "themes": [
       "taxis-transferts"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés), basé à Flic en Flac."
   },
   {
     "id": "jeeten-taxi-service-mauritius-6seats",
@@ -17330,7 +17365,8 @@
     "themes": [
       "taxis-transferts"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés), basé à Tamarin."
   },
   {
     "id": "airport-transfer-24-7-mauritius-ile-maurice-taxi-services",
@@ -17345,7 +17381,8 @@
     "themes": [
       "taxis-transferts"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés), basé à Flic en Flac. Disponible 24h/24."
   },
   {
     "id": "top-taxi-tamarin-24-7-legal",
@@ -17360,7 +17397,8 @@
     "themes": [
       "taxis-transferts"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés), basé à Tamarin. Disponible 24h/24."
   },
   {
     "id": "oz-er-etre",
@@ -20556,7 +20594,8 @@
     "themes": [
       "taxis-transferts"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés), basé à Le Morne."
   },
   {
     "id": "top-jay-taxi-service",
@@ -20571,7 +20610,8 @@
     "themes": [
       "taxis-transferts"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés), basé à Le Morne."
   },
   {
     "id": "taxi-in-le-morne",
@@ -20586,7 +20626,8 @@
     "themes": [
       "taxis-transferts"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés), basé à Port-Louis."
   },
   {
     "id": "sunil-taxi-service-mauritius",
@@ -20601,7 +20642,8 @@
     "themes": [
       "taxis-transferts"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés), basé à La Gaulette."
   },
   {
     "id": "desire-taxi-service-mauritius",
@@ -20616,7 +20658,8 @@
     "themes": [
       "taxis-transferts"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés), basé à La Gaulette."
   },
   {
     "id": "mauritius-taxi",
@@ -20631,7 +20674,8 @@
     "themes": [
       "taxis-transferts"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés), basé à Plaine Magnien."
   },
   {
     "id": "taxi-services-mauritius-paradise",
@@ -20646,7 +20690,8 @@
     "themes": [
       "taxis-transferts"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés), basé à Plaine Magnien."
   },
   {
     "id": "taxi-la-gaulette-jean-maurice",
@@ -20661,7 +20706,8 @@
     "themes": [
       "taxis-transferts"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés), basé à La Gaulette."
   },
   {
     "id": "taxi-transfer-mauritius-paradise",
@@ -20676,7 +20722,8 @@
     "themes": [
       "taxis-transferts"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés), basé à Plaine Magnien."
   },
   {
     "id": "la-gaulette-taxi-service",
@@ -20691,7 +20738,8 @@
     "themes": [
       "taxis-transferts"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés), basé à La Gaulette."
   },
   {
     "id": "holidays-taxi-service-mauritius",
@@ -20706,7 +20754,8 @@
     "themes": [
       "taxis-transferts"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés), basé à Mare d'Albert."
   },
   {
     "id": "rouben-taxi-service-mauritius-and-rental-car",
@@ -20721,7 +20770,8 @@
     "themes": [
       "taxis-transferts"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Service de taxi, transferts et location de voiture, basé à Ecroignard."
   },
   {
     "id": "shiva-tours-taxi-service",
@@ -20736,7 +20786,8 @@
     "themes": [
       "taxis-transferts"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés) avec chauffeur-guide, basé à Trou aux Biches."
   },
   {
     "id": "island-ride-taxi-services-tours-mauritius",
@@ -20751,7 +20802,8 @@
     "themes": [
       "taxis-transferts"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés) avec chauffeur-guide, basé à Plaine Magnien."
   },
   {
     "id": "tropical-taxi-mauritius-lady-driver-available",
@@ -20766,7 +20818,8 @@
     "themes": [
       "taxis-transferts"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés), basé à Quatre Bornes."
   },
   {
     "id": "zip-line-adventure",
@@ -20781,7 +20834,8 @@
     "themes": [
       "taxis-transferts"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Activité de tyrolienne (zip-line) à La Gaulette — parcours dans les gorges de la Rivière Noire. (Fiche mal classée dans Taxis & transferts.)"
   },
   {
     "id": "mauritius-taxi-service",
@@ -20796,7 +20850,8 @@
     "themes": [
       "taxis-transferts"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés), basé à Flacq."
   },
   {
     "id": "sabriyyah-tours-taxi-in-mauritius",
@@ -20811,7 +20866,8 @@
     "themes": [
       "taxis-transferts"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés) avec chauffeur-guide, basé à Terre Rouge."
   },
   {
     "id": "mauritius-destination-taxi-tours",
@@ -20826,7 +20882,8 @@
     "themes": [
       "taxis-transferts"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés) avec chauffeur-guide, basé à Curepipe."
   },
   {
     "id": "barefoot-transfers-mauritius",
@@ -20841,7 +20898,8 @@
     "themes": [
       "taxis-transferts"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés), basé à Plaine Magnien."
   },
   {
     "id": "mountain-view",
@@ -20856,7 +20914,8 @@
     "themes": [
       "taxis-transferts"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Prestataire à La Gaulette (transferts / taxi). Détails d'activité à confirmer."
   },
   {
     "id": "le-morne-dodo-contract-cars-ltd",
@@ -22704,7 +22763,8 @@
     "themes": [
       "taxis-transferts"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés), basé à Pointe aux Piments."
   },
   {
     "id": "taxi",
@@ -22719,7 +22779,8 @@
     "themes": [
       "taxis-transferts"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés), basé à Rivière du Rempart."
   },
   {
     "id": "souillac-taxi-stand",
@@ -22734,7 +22795,8 @@
     "themes": [
       "taxis-transferts"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés), basé à Souillac."
   },
   {
     "id": "paco-taxi",
@@ -22749,7 +22811,8 @@
     "themes": [
       "taxis-transferts"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés), basé à Rivière Noire."
   },
   {
     "id": "taksi-mauritius",
@@ -22764,7 +22827,8 @@
     "themes": [
       "taxis-transferts"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés), basé à Quatre Bornes."
   },
   {
     "id": "elite-fitness-studio",
