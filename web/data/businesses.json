@@ -14074,7 +14074,8 @@
     "themes": [
       "sports-bien-etre"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Coaching et développement personnel à Grand Baie."
   },
   {
     "id": "es-1-1-coaching",
@@ -14089,7 +14090,8 @@
     "themes": [
       "sports-bien-etre"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Coach sportif / personal training à Grand Baie."
   },
   {
     "id": "fitness-grand-baie",
@@ -14104,7 +14106,8 @@
     "themes": [
       "sports-bien-etre"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Salle de sport et de fitness à Grand Baie : musculation, cardio et cours collectifs."
   },
   {
     "id": "shift-coaching-et-formation",
@@ -14119,7 +14122,8 @@
     "themes": [
       "sports-bien-etre"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Coaching et formation (développement personnel et professionnel) à Grand Baie."
   },
   {
     "id": "fitmate",
@@ -14134,7 +14138,8 @@
     "themes": [
       "sports-bien-etre"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Coaching sportif et bien-être à Trou aux Biches."
   },
   {
     "id": "misschawky-studio",
@@ -14149,7 +14154,8 @@
     "themes": [
       "sports-bien-etre"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Coaching sportif et bien-être à Grand Baie."
   },
   {
     "id": "black-box-fitness",
@@ -14164,7 +14170,8 @@
     "themes": [
       "sports-bien-etre"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Salle de sport et de fitness à Grand Baie : musculation, cardio et cours collectifs."
   },
   {
     "id": "lindsay-kassem-executive-health-life-mindset-coach-dna",
@@ -14179,7 +14186,8 @@
     "themes": [
       "sports-bien-etre"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Coach en bien-être et développement personnel à Grand Baie."
   },
   {
     "id": "lift-fitness-studio",
@@ -14194,7 +14202,8 @@
     "themes": [
       "sports-bien-etre"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Salle de sport et de fitness à Grand Baie : musculation, cardio et cours collectifs."
   },
   {
     "id": "training-turtles",
@@ -14209,7 +14218,8 @@
     "themes": [
       "sports-bien-etre"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Coach sportif / personal training à Grand Baie."
   },
   {
     "id": "purelates",
@@ -14224,7 +14234,8 @@
     "themes": [
       "sports-bien-etre"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Studio de Pilates à Grand Baie : cours et coaching postural."
   },
   {
     "id": "tropical-mindset",
@@ -14239,7 +14250,8 @@
     "themes": [
       "sports-bien-etre"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Coach en bien-être et développement personnel à Grand Baie."
   },
   {
     "id": "traininggains",
@@ -14254,7 +14266,8 @@
     "themes": [
       "sports-bien-etre"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Coach sportif / personal training à Grand Baie."
   },
   {
     "id": "harmony-fitness-center",
@@ -14269,7 +14282,8 @@
     "themes": [
       "sports-bien-etre"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Salle de sport et de fitness à Grand Baie : musculation, cardio et cours collectifs."
   },
   {
     "id": "dodo-baba-wellness-well-being-coach",
@@ -14284,7 +14298,8 @@
     "themes": [
       "sports-bien-etre"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Coach en bien-être et développement personnel à Grand Baie."
   },
   {
     "id": "zensense",
@@ -14299,7 +14314,8 @@
     "themes": [
       "business"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Coaching en développement personnel et professionnel."
   },
   {
     "id": "drr-consulting-mauritius",
@@ -14314,7 +14330,8 @@
     "themes": [
       "business"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Coaching et conseil aux entreprises et entrepreneurs à Grand Baie."
   },
   {
     "id": "competitive-dynamics-international-connect",
@@ -14329,7 +14346,8 @@
     "themes": [
       "business"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Coaching et conseil aux entreprises et entrepreneurs à Grand Baie."
   },
   {
     "id": "expressive-coaching",
@@ -14344,7 +14362,8 @@
     "themes": [
       "business"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Coaching en développement personnel et professionnel à Pamplemousses."
   },
   {
     "id": "life-career-coach-michael-kaiser",
@@ -14359,7 +14378,8 @@
     "themes": [
       "business"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Coach de vie, de carrière et executive à Grand Baie."
   },
   {
     "id": "moon-flower",
@@ -14374,7 +14394,8 @@
     "themes": [
       "business"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Coaching en développement personnel et professionnel à Grand Baie."
   },
   {
     "id": "dr-krishna-athal-life-executive-coach",
@@ -14389,7 +14410,8 @@
     "themes": [
       "business"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Coach de vie, de carrière et executive à Port-Louis."
   },
   {
     "id": "tbi-business-advisors",
@@ -14404,7 +14426,8 @@
     "themes": [
       "business"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Coaching et conseil aux entreprises et entrepreneurs à Grand Baie."
   },
   {
     "id": "jennyfer-c-coaching",
@@ -14419,7 +14442,8 @@
     "themes": [
       "business"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Coaching en développement personnel et professionnel à Tamarin."
   },
   {
     "id": "mauritius-therapist-vanessa-laget",
@@ -14434,7 +14458,8 @@
     "themes": [
       "famille"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Thérapeute / accompagnement psychologique à Grand Baie."
   },
   {
     "id": "africaimg-depot-vente",
@@ -17439,7 +17464,8 @@
     "themes": [
       "sports-bien-etre"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Coach en bien-être et développement personnel à Tamarin."
   },
   {
     "id": "rm-tamarin",
@@ -17454,7 +17480,8 @@
     "themes": [
       "sports-bien-etre"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Club sportif et de remise en forme (RM Club) à CapTamarin."
   },
   {
     "id": "crossfit-tamarin",
@@ -17469,7 +17496,8 @@
     "themes": [
       "sports-bien-etre"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Box CrossFit à Rivière Noire : entraînements fonctionnels encadrés en petits groupes."
   },
   {
     "id": "ayur-wellness-ayurveda-spa-yoga-centre",
@@ -17484,7 +17512,8 @@
     "themes": [
       "sports-bien-etre"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Centre d'ayurvéda, spa et yoga à Flic en Flac : soins, massages et cours de yoga."
   },
   {
     "id": "fitlife-gym-black-river",
@@ -17499,7 +17528,8 @@
     "themes": [
       "sports-bien-etre"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Salle de sport et de fitness à Rivière Noire : musculation, cardio et cours collectifs."
   },
   {
     "id": "riverland-mauritius",
@@ -17515,7 +17545,8 @@
       "sports-bien-etre",
       "tennis-padel"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Parc de loisirs et d'aventure en plein air à Tamarin (activités nature et sportives). (Plutôt un parc de loisirs.)"
   },
   {
     "id": "clubhouse-padel",
@@ -17532,7 +17563,8 @@
       "tennis-padel"
     ],
     "zone": "ouest",
-    "sportsListed": "Padel : 2 courts. Infrastructures : club-house, espace événements. Réservation possible."
+    "sportsListed": "Padel : 2 courts. Infrastructures : club-house, espace événements. Réservation possible.",
+    "description": "Club de padel à Rivière Noire (Vanilla Connect) : courts, cours et réservations."
   },
   {
     "id": "institut-patrice-avrillon",
@@ -17547,7 +17579,8 @@
     "themes": [
       "sports-bien-etre"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Institut de bien-être et de sophrologie à Tamarin."
   },
   {
     "id": "tennis-passion",
@@ -17562,7 +17595,8 @@
     "themes": [
       "sports-bien-etre"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Cours et coaching de tennis à Tamarin."
   },
   {
     "id": "hq-boxing-headquarter",
@@ -17577,7 +17611,8 @@
     "themes": [
       "sports-bien-etre"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Club de boxe et sports de combat à Quatre Bornes."
   },
   {
     "id": "crossfit-bambous",
@@ -17592,7 +17627,8 @@
     "themes": [
       "sports-bien-etre"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Box CrossFit à Bambous : entraînements fonctionnels encadrés en petits groupes."
   },
   {
     "id": "nicolas-tible-coaching-hypnose-integrative",
@@ -17607,7 +17643,8 @@
     "themes": [
       "business"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Coaching, hypnose et sophrologie à Rivière Noire : accompagnement du changement et du bien-être."
   },
   {
     "id": "orient-u-orientation-scolaire-et-professionnelle-ile-maurice",
@@ -17622,7 +17659,8 @@
     "themes": [
       "business"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Cabinet d'orientation scolaire et professionnelle à Rivière Noire : bilans et accompagnement des élèves et étudiants."
   },
   {
     "id": "charity-center",
@@ -22884,7 +22922,8 @@
     "themes": [
       "sports-bien-etre"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Salle de sport et de fitness : musculation, cardio et cours collectifs."
   },
   {
     "id": "fitness-formula",
@@ -22899,7 +22938,8 @@
     "themes": [
       "sports-bien-etre"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Salle de sport et de fitness à Quatre Bornes : musculation, cardio et cours collectifs."
   },
   {
     "id": "mprb",
@@ -22914,7 +22954,8 @@
     "themes": [
       "famille"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Structure d'accompagnement psychologique et de rééducation à Port-Louis."
   },
   {
     "id": "centre-libellule",
@@ -22929,7 +22970,8 @@
     "themes": [
       "famille"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Accompagnement, bien-être et soutien familial à Quatre Bornes."
   },
   {
     "id": "yuva-mauritius",
@@ -22944,7 +22986,8 @@
     "themes": [
       "famille"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "ONG de jeunesse (YUVA Mauritius) : programmes d'engagement, de formation et d'accompagnement des jeunes."
   },
   {
     "id": "a-p-e-i-m",
@@ -22959,7 +23002,8 @@
     "themes": [
       "famille"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Association (A.P.E.I.M.) d'accompagnement des enfants et personnes en situation de handicap intellectuel."
   },
   {
     "id": "adolescent-non-formal-education-network-anfen",
@@ -22974,7 +23018,8 @@
     "themes": [
       "famille"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Réseau d'éducation non formelle pour adolescents (ANFEN) : soutien scolaire et accompagnement des jeunes en difficulté."
   },
   {
     "id": "atelier-de-formation-joie-de-vivre",
@@ -22989,7 +23034,8 @@
     "themes": [
       "famille"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Ateliers, formation et accompagnement à Chemin Grenier."
   },
   {
     "id": "cesar-tierz",
@@ -23004,7 +23050,8 @@
     "themes": [
       "famille"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Thérapeute EMDR à Tamarin : accompagnement psychologique et gestion des traumatismes."
   },
   {
     "id": "societe-des-professionnels-en-psychologie",
@@ -23019,7 +23066,8 @@
     "themes": [
       "famille"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Société des Professionnels en Psychologie : annuaire et réseau de psychologues à Maurice (consultations privées)."
   },
   {
     "id": "auto-dream-ltd",
@@ -25279,7 +25327,8 @@
     "themes": [
       "famille"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Soutien scolaire et cours à domicile (Travelling Teachers) pour enfants et adolescents."
   },
   {
     "id": "pepiniere-exotica-tamarin",
@@ -29986,7 +30035,8 @@
     "themes": [
       "business"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Coaching et conseil aux entreprises et entrepreneurs à Moka."
   },
   {
     "id": "global-rainbow-foundation",
@@ -30000,7 +30050,8 @@
     "themes": [
       "famille"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Fondation (Global Rainbow) : inclusion, formation et accompagnement des personnes vulnérables et en situation de handicap."
   },
   {
     "id": "low-price-uniform",
@@ -30269,7 +30320,8 @@
     "themes": [
       "business"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Coaching et conseil aux entreprises et entrepreneurs à Flic en Flac."
   },
   {
     "id": "kareniscoaching",
@@ -30284,7 +30336,8 @@
     "themes": [
       "famille"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Coaching familial et développement personnel à Calodyne."
   },
   {
     "id": "un-petit-navire",
@@ -30299,7 +30352,8 @@
     "themes": [
       "famille"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Ateliers, formation et accompagnement à Flic en Flac."
   },
   {
     "id": "mahacar-company-ltd",
@@ -31019,7 +31073,8 @@
     "themes": [
       "famille"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Centre de bien-être et de yoga (Maison Vyasa) à La Laura-Malenga."
   },
   {
     "id": "azeemah-beeharry-psychological-wellbeing-practitioner",
@@ -31033,7 +31088,8 @@
     "themes": [
       "famille"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Psychologue à Port-Louis : consultations et accompagnement."
   },
   {
     "id": "lekshailee-elliah-psychologue",
@@ -31047,7 +31103,8 @@
     "themes": [
       "famille"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Psychologue à Unicity : consultations et accompagnement."
   },
   {
     "id": "fatimah-ghanty-psychologist",
@@ -31061,7 +31118,8 @@
     "themes": [
       "famille"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Psychologue à Quatre Bornes : consultations et accompagnement."
   },
   {
     "id": "dr-kurt-barnes",
@@ -31076,7 +31134,8 @@
     "themes": [
       "famille"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Psychologue à Quatre Bornes : consultations et accompagnement."
   },
   {
     "id": "parbo-auto",
