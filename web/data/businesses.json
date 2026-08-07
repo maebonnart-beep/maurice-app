@@ -26318,7 +26318,8 @@
     "themes": [
       "photographes"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Studio photo à Vacoas : photos d'identité et passeport, portraits, tirage et impression."
   },
   {
     "id": "quick-lab-grand-baie",
@@ -26332,7 +26333,8 @@
     "themes": [
       "photographes"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Labo photo à Grand Baie : photos d'identité et passeport, développement et tirage express."
   },
   {
     "id": "easyprint-croisette",
@@ -26346,7 +26348,8 @@
     "themes": [
       "photographes"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Impression & photo à La Croisette (Grand Baie) : photos d'identité/passeport, tirage, photocopies et impression."
   },
   {
     "id": "siva-studio-photo-lab",
@@ -26360,7 +26363,8 @@
     "themes": [
       "photographes"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Studio et labo photo à Port-Louis : photos d'identité et passeport, portraits, développement et tirage."
   },
   {
     "id": "atm-mcb-super-u-grand-baie",
@@ -26514,7 +26518,8 @@
     "themes": [
       "pharmacies"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Pharmacie à Grand Baie. Médicaments sur ordonnance, parapharmacie et conseils santé."
   },
   {
     "id": "pharmacie-flic-en-flac",
@@ -26528,7 +26533,8 @@
     "themes": [
       "pharmacies"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Pharmacie à Flic en Flac. Médicaments sur ordonnance, parapharmacie et conseils santé."
   },
   {
     "id": "pharmacie-du-port-port-louis",
@@ -26542,7 +26548,8 @@
     "themes": [
       "pharmacies"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Pharmacie à Port-Louis (Caudan/Harbour Front). Médicaments sur ordonnance, parapharmacie et conseils santé."
   },
   {
     "id": "newton-pharmacy-port-louis",
@@ -26556,7 +26563,8 @@
     "themes": [
       "pharmacies"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Pharmacie à Port-Louis (Sir William Newton St). Médicaments sur ordonnance, parapharmacie et conseils santé. Ouverte tous les jours."
   },
   {
     "id": "pharmacie-espace-sante-curepipe",
@@ -26570,7 +26578,8 @@
     "themes": [
       "pharmacies"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Pharmacie à Curepipe. Médicaments sur ordonnance, parapharmacie et conseils santé. Horaires : lun–jeu 8h30–19h30, ven–sam 8h30–20h, dim 8h30–13h."
   },
   {
     "id": "care4u-pharmacy-curepipe",
@@ -26584,7 +26593,8 @@
     "themes": [
       "pharmacies"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Pharmacie à Forest Side, Curepipe. Médicaments sur ordonnance, parapharmacie et conseils santé."
   },
   {
     "id": "tamarin-pharmacy",
@@ -26598,7 +26608,8 @@
     "themes": [
       "pharmacies"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Pharmacie à Tamarin. Médicaments sur ordonnance, parapharmacie et conseils santé."
   },
   {
     "id": "pharmacie-trou-eau-douce",
@@ -26612,7 +26623,8 @@
     "themes": [
       "pharmacies"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Pharmacie à Trou d'Eau Douce. Médicaments sur ordonnance, parapharmacie et conseils santé."
   },
   {
     "id": "pharmacie-quatre-bornes",
@@ -26626,7 +26638,8 @@
     "themes": [
       "pharmacies"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Pharmacie à Quatre Bornes. Médicaments sur ordonnance, parapharmacie et conseils santé."
   },
   {
     "id": "headcase-benedicte",
@@ -36069,5 +36082,469 @@
     ],
     "zone": "centre",
     "description": "Bureau de poste de Vallee Des Pretres (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+  },
+  {
+    "id": "pharmacie-the-medicine-shop",
+    "name": "The Medicine Shop",
+    "category": "utiles",
+    "address": "Pereybère",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-19.992381,57.592872",
+    "lat": -19.992381,
+    "lng": 57.592872,
+    "themes": [
+      "pharmacies"
+    ],
+    "zone": "nord",
+    "description": "Pharmacie à Pereybère. Médicaments sur ordonnance, parapharmacie et conseils santé."
+  },
+  {
+    "id": "pharmacie-grand-bay-pharma",
+    "name": "Grand Bay Pharma",
+    "category": "utiles",
+    "address": "Grand Baie",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.013608,57.585619",
+    "lat": -20.013608,
+    "lng": 57.585619,
+    "themes": [
+      "pharmacies"
+    ],
+    "zone": "nord",
+    "description": "Pharmacie à Grand Baie. Médicaments sur ordonnance, parapharmacie et conseils santé."
+  },
+  {
+    "id": "pharmacie-central-pharmacy",
+    "name": "Central Pharmacy",
+    "category": "utiles",
+    "address": "Trou aux Biches",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.037295,57.547173",
+    "lat": -20.037295,
+    "lng": 57.547173,
+    "themes": [
+      "pharmacies"
+    ],
+    "zone": "nord",
+    "description": "Pharmacie à Trou aux Biches. Médicaments sur ordonnance, parapharmacie et conseils santé. Horaires : lun–sam 8h–20h, dim & jours fériés 8h–14h."
+  },
+  {
+    "id": "pharmacie-pharmacie-cap-malheureux",
+    "name": "Pharmacie Cap Malheureux",
+    "category": "utiles",
+    "address": "Cap Malheureux",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-19.98796,57.6168",
+    "lat": -19.98796,
+    "lng": 57.6168,
+    "themes": [
+      "pharmacies"
+    ],
+    "zone": "nord",
+    "description": "Pharmacie à Cap Malheureux. Médicaments sur ordonnance, parapharmacie et conseils santé."
+  },
+  {
+    "id": "pharmacie-pharma-goodlands",
+    "name": "Pharma Goodlands",
+    "category": "utiles",
+    "address": "Goodlands",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.034888,57.646229",
+    "lat": -20.034888,
+    "lng": 57.646229,
+    "themes": [
+      "pharmacies"
+    ],
+    "zone": "nord",
+    "description": "Pharmacie à Goodlands. Médicaments sur ordonnance, parapharmacie et conseils santé."
+  },
+  {
+    "id": "pharmacie-pharmacy-cadress",
+    "name": "Pharmacy Cadress",
+    "category": "utiles",
+    "address": "Goodlands",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.038608,57.651386",
+    "lat": -20.038608,
+    "lng": 57.651386,
+    "themes": [
+      "pharmacies"
+    ],
+    "zone": "nord",
+    "description": "Pharmacie à Goodlands. Médicaments sur ordonnance, parapharmacie et conseils santé."
+  },
+  {
+    "id": "pharmacie-pharmacie-de-l-occident",
+    "name": "Pharmacie de L'Occident",
+    "category": "utiles",
+    "address": "Flic en Flac",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.276516,57.36992",
+    "lat": -20.276516,
+    "lng": 57.36992,
+    "themes": [
+      "pharmacies"
+    ],
+    "zone": "ouest",
+    "description": "Pharmacie à Flic en Flac. Médicaments sur ordonnance, parapharmacie et conseils santé. Ouvert 24h/24, 7j/7."
+  },
+  {
+    "id": "pharmacie-albion-pharmacy",
+    "name": "Albion Pharmacy",
+    "category": "utiles",
+    "address": "Albion",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.214008,57.408065",
+    "lat": -20.214008,
+    "lng": 57.408065,
+    "themes": [
+      "pharmacies"
+    ],
+    "zone": "ouest",
+    "description": "Pharmacie à Albion. Médicaments sur ordonnance, parapharmacie et conseils santé."
+  },
+  {
+    "id": "pharmacie-pharmacie-ideale",
+    "name": "Pharmacie Ideale",
+    "category": "utiles",
+    "address": "Quatre Bornes",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.264132,57.48033",
+    "lat": -20.264132,
+    "lng": 57.48033,
+    "themes": [
+      "pharmacies"
+    ],
+    "zone": "centre",
+    "description": "Pharmacie à Quatre Bornes. Médicaments sur ordonnance, parapharmacie et conseils santé."
+  },
+  {
+    "id": "pharmacie-st-jean-pharmacy",
+    "name": "St. Jean Pharmacy",
+    "category": "utiles",
+    "address": "Quatre Bornes",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.263856,57.48053",
+    "lat": -20.263856,
+    "lng": 57.48053,
+    "themes": [
+      "pharmacies"
+    ],
+    "zone": "centre",
+    "description": "Pharmacie à Quatre Bornes. Médicaments sur ordonnance, parapharmacie et conseils santé."
+  },
+  {
+    "id": "pharmacie-pharmacie-moraby",
+    "name": "Pharmacie Moraby",
+    "category": "utiles",
+    "address": "Vacoas",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.295921,57.493096",
+    "lat": -20.295921,
+    "lng": 57.493096,
+    "themes": [
+      "pharmacies"
+    ],
+    "zone": "centre",
+    "description": "Pharmacie à Vacoas. Médicaments sur ordonnance, parapharmacie et conseils santé."
+  },
+  {
+    "id": "pharmacie-fla-pharmacie-new-stanley",
+    "name": "Fla Pharmacie New Stanley",
+    "category": "utiles",
+    "address": "Rose Hill",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.244325,57.466828",
+    "lat": -20.244325,
+    "lng": 57.466828,
+    "themes": [
+      "pharmacies"
+    ],
+    "zone": "centre",
+    "description": "Pharmacie à Rose Hill. Médicaments sur ordonnance, parapharmacie et conseils santé."
+  },
+  {
+    "id": "pharmacie-buckingham-pharmacy",
+    "name": "Buckingham Pharmacy",
+    "category": "utiles",
+    "address": "Rose Hill",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.243921,57.466315",
+    "lat": -20.243921,
+    "lng": 57.466315,
+    "themes": [
+      "pharmacies"
+    ],
+    "zone": "centre",
+    "description": "Pharmacie à Rose Hill. Médicaments sur ordonnance, parapharmacie et conseils santé."
+  },
+  {
+    "id": "pharmacie-pharmacie-imperiale",
+    "name": "Pharmacie Impériale",
+    "category": "utiles",
+    "address": "Beau Bassin",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.227783,57.467891",
+    "lat": -20.227783,
+    "lng": 57.467891,
+    "themes": [
+      "pharmacies"
+    ],
+    "zone": "centre",
+    "description": "Pharmacie à Beau Bassin. Médicaments sur ordonnance, parapharmacie et conseils santé."
+  },
+  {
+    "id": "pharmacie-ebene-pharmacy",
+    "name": "Ebene Pharmacy",
+    "category": "utiles",
+    "address": "Ebène",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.243465,57.487901",
+    "lat": -20.243465,
+    "lng": 57.487901,
+    "themes": [
+      "pharmacies"
+    ],
+    "zone": "centre",
+    "description": "Pharmacie à Ebène. Médicaments sur ordonnance, parapharmacie et conseils santé."
+  },
+  {
+    "id": "pharmacie-pharmacie-de-moka",
+    "name": "Pharmacie de Moka",
+    "category": "utiles",
+    "address": "Moka",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.221771,57.502458",
+    "lat": -20.221771,
+    "lng": 57.502458,
+    "themes": [
+      "pharmacies"
+    ],
+    "zone": "centre",
+    "description": "Pharmacie à Moka. Médicaments sur ordonnance, parapharmacie et conseils santé."
+  },
+  {
+    "id": "pharmacie-pharmacy-biladams",
+    "name": "Pharmacy Biladams",
+    "category": "utiles",
+    "address": "Phoenix",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.311394,57.51373",
+    "lat": -20.311394,
+    "lng": 57.51373,
+    "themes": [
+      "pharmacies"
+    ],
+    "zone": "centre",
+    "description": "Pharmacie à Phoenix. Médicaments sur ordonnance, parapharmacie et conseils santé."
+  },
+  {
+    "id": "pharmacie-pharmacie-farquhar",
+    "name": "Pharmacie Farquhar",
+    "category": "utiles",
+    "address": "Port Louis",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.16031,57.50281",
+    "lat": -20.16031,
+    "lng": 57.50281,
+    "themes": [
+      "pharmacies"
+    ],
+    "zone": "centre",
+    "description": "Pharmacie à Port Louis. Médicaments sur ordonnance, parapharmacie et conseils santé. Horaires : lun–ven 8h–17h30, sam 8h–17h, dim 8h–12h."
+  },
+  {
+    "id": "pharmacie-eiman-pharmacy",
+    "name": "Eiman Pharmacy",
+    "category": "utiles",
+    "address": "Port Louis",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.15995,57.502965",
+    "lat": -20.15995,
+    "lng": 57.502965,
+    "themes": [
+      "pharmacies"
+    ],
+    "zone": "centre",
+    "description": "Pharmacie à Port Louis. Médicaments sur ordonnance, parapharmacie et conseils santé."
+  },
+  {
+    "id": "pharmacie-pharmacy-rose",
+    "name": "Pharmacy Rose",
+    "category": "utiles",
+    "address": "Central Flacq",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.183933,57.722978",
+    "lat": -20.183933,
+    "lng": 57.722978,
+    "themes": [
+      "pharmacies"
+    ],
+    "zone": "est",
+    "description": "Pharmacie à Central Flacq. Médicaments sur ordonnance, parapharmacie et conseils santé."
+  },
+  {
+    "id": "pharmacie-pharmacie-de-mahebourg",
+    "name": "Pharmacie de Mahebourg",
+    "category": "utiles",
+    "address": "Mahébourg",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.407654,57.705743",
+    "lat": -20.407654,
+    "lng": 57.705743,
+    "themes": [
+      "pharmacies"
+    ],
+    "zone": "sud",
+    "description": "Pharmacie à Mahébourg. Médicaments sur ordonnance, parapharmacie et conseils santé."
+  },
+  {
+    "id": "pharmacie-pharmacity-mahebourg",
+    "name": "Pharmacity Mahebourg",
+    "category": "utiles",
+    "address": "Mahébourg",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.408783,57.706044",
+    "lat": -20.408783,
+    "lng": 57.706044,
+    "themes": [
+      "pharmacies"
+    ],
+    "zone": "sud",
+    "description": "Pharmacie à Mahébourg. Médicaments sur ordonnance, parapharmacie et conseils santé."
+  },
+  {
+    "id": "pharmacie-cabinet-medical-pharmacy",
+    "name": "Cabinet Medical Pharmacy",
+    "category": "utiles",
+    "address": "Bambous",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.256922,57.417912",
+    "lat": -20.256922,
+    "lng": 57.417912,
+    "themes": [
+      "pharmacies"
+    ],
+    "zone": "ouest",
+    "description": "Pharmacie à Bambous. Médicaments sur ordonnance, parapharmacie et conseils santé."
+  },
+  {
+    "id": "pharmacie-grand-bois-pharma",
+    "name": "Grand Bois Pharma",
+    "category": "utiles",
+    "address": "Grand Bois",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.419198,57.552563",
+    "lat": -20.419198,
+    "lng": 57.552563,
+    "themes": [
+      "pharmacies"
+    ],
+    "zone": "sud",
+    "description": "Pharmacie à Grand Bois. Médicaments sur ordonnance, parapharmacie et conseils santé."
+  },
+  {
+    "id": "pharmacie-nouvelle-france-pharmacy",
+    "name": "Nouvelle France Pharmacy",
+    "category": "utiles",
+    "address": "Nouvelle France",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.377924,57.571188",
+    "lat": -20.377924,
+    "lng": 57.571188,
+    "themes": [
+      "pharmacies"
+    ],
+    "zone": "sud",
+    "description": "Pharmacie à Nouvelle France. Médicaments sur ordonnance, parapharmacie et conseils santé."
+  },
+  {
+    "id": "photo-kodak-express",
+    "name": "Kodak Express",
+    "category": "utiles",
+    "address": "Port-Louis",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.16134,57.5039",
+    "lat": -20.16134,
+    "lng": 57.5039,
+    "themes": [
+      "photographes"
+    ],
+    "zone": "centre",
+    "description": "Photo & tirage (Kodak Express) à Port-Louis : photos d'identité et passeport, développement et impression."
+  },
+  {
+    "id": "photo-complete-camera-solution",
+    "name": "Complete Camera Solution",
+    "category": "utiles",
+    "address": "Rose Hill",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.24969,57.46972",
+    "lat": -20.24969,
+    "lng": 57.46972,
+    "themes": [
+      "photographes"
+    ],
+    "zone": "centre",
+    "description": "Boutique photo à Rose Hill : photos d'identité et passeport, matériel photo et tirage."
+  },
+  {
+    "id": "photo-tibeto-photography-studio",
+    "name": "Tibeto Photography Studio",
+    "category": "utiles",
+    "address": "Quatre Bornes",
+    "phone": "+230 5925 6694",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.27175,57.47344",
+    "lat": -20.27175,
+    "lng": 57.47344,
+    "themes": [
+      "photographes"
+    ],
+    "zone": "centre",
+    "description": "Studio de photographie à Quatre Bornes : photos d'identité et passeport, portraits et tirage."
+  },
+  {
+    "id": "photo-sin-fat-studio",
+    "name": "Sin Fat Studio",
+    "category": "utiles",
+    "address": "Rose Hill",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.24132,57.47325",
+    "lat": -20.24132,
+    "lng": 57.47325,
+    "themes": [
+      "photographes"
+    ],
+    "zone": "centre",
+    "description": "Studio photo à Rose Hill : photos d'identité et passeport, portraits et tirage."
   }
 ]
