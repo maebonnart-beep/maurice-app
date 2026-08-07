@@ -219,7 +219,9 @@ export const SUBCATEGORIES: Partial<Record<CategoryKey, Subcategory[]>> = {
     { key: "photographes", label: "Photographes (passeport & ID)", emoji: "📷" },
     { key: "depannages", label: "Dépannages", emoji: "🔧" },
     { key: "taxis-transferts", label: "Taxis & transferts", emoji: "🚕" },
+    { key: "location-voiture", label: "Location de voiture", emoji: "🚙" },
     { key: "vtc-apps", label: "Applications VTC & réservation", emoji: "📱" },
+    { key: "telecom", label: "Télécom & internet", emoji: "📶" },
     { key: "plateformes-multiservices", label: "Plateformes multiservices & touristiques", emoji: "🧳" },
   ],
   coaching: [

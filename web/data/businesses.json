@@ -13889,10 +13889,10 @@
     "lat": -20.0146024,
     "lng": 57.5725748,
     "themes": [
-      "taxis-transferts"
+      "location-voiture"
     ],
     "zone": "nord",
-    "description": "Location de voiture et transferts, basé à Grand Baie."
+    "description": "Location de voiture à Grand Baie : véhicules de tourisme, tarifs journée/semaine, livraison possible."
   },
   {
     "id": "moride-mauritius-taxi-service",
@@ -13921,10 +13921,10 @@
     "lat": -19.993034,
     "lng": 57.5921835,
     "themes": [
-      "taxis-transferts"
+      "location-voiture"
     ],
     "zone": "nord",
-    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés) avec chauffeur-guide, basé à Grand Baie."
+    "description": "Location de voiture à Grand Baie : véhicules de tourisme, tarifs journée/semaine, livraison possible."
   },
   {
     "id": "sam-taxi-mauritius-flic-en-flac-tamarin",
@@ -14017,10 +14017,10 @@
     "lat": -20.0477013,
     "lng": 57.5545734,
     "themes": [
-      "taxis-transferts"
+      "location-voiture"
     ],
     "zone": "nord",
-    "description": "Location de voiture et transferts, basé à Triolet."
+    "description": "Location de voiture à Triolet : véhicules de tourisme, tarifs journée/semaine, livraison possible."
   },
   {
     "id": "roshan-taxi-flic-en-flac",
@@ -38737,5 +38737,757 @@
     ],
     "zone": "ouest",
     "description": "Agence immobilière à Tamarin : vente et location de biens (villas, appartements, terrains)."
+  },
+  {
+    "id": "loc-europcar",
+    "name": "Europcar",
+    "category": "utiles",
+    "address": "Grand Baie",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.009541,57.582051",
+    "lat": -20.009541,
+    "lng": 57.582051,
+    "themes": [
+      "location-voiture"
+    ],
+    "zone": "nord",
+    "description": "Location de voiture à Grand Baie : véhicules de tourisme, tarifs journée/semaine, livraison possible."
+  },
+  {
+    "id": "loc-maki-car-rental",
+    "name": "Maki Car Rental",
+    "category": "utiles",
+    "address": "Grand Baie, West",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.008131,57.559215",
+    "lat": -20.008131,
+    "lng": 57.559215,
+    "themes": [
+      "location-voiture"
+    ],
+    "zone": "nord",
+    "description": "Location de voiture à Grand Baie, West : véhicules de tourisme, tarifs journée/semaine, livraison possible."
+  },
+  {
+    "id": "loc-hosram-car-rental",
+    "name": "Hosram Car Rental",
+    "category": "utiles",
+    "address": "Grand Baie",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.021889,57.581995",
+    "lat": -20.021889,
+    "lng": 57.581995,
+    "themes": [
+      "location-voiture"
+    ],
+    "zone": "nord",
+    "description": "Location de voiture à Grand Baie : véhicules de tourisme, tarifs journée/semaine, livraison possible."
+  },
+  {
+    "id": "loc-colony-scooter-rental",
+    "name": "Colony Scooter Rental",
+    "category": "utiles",
+    "address": "Mahébourg",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.412568,57.710015",
+    "lat": -20.412568,
+    "lng": 57.710015,
+    "themes": [
+      "location-voiture"
+    ],
+    "zone": "sud",
+    "description": "Location de scooters et deux-roues à Mahébourg."
+  },
+  {
+    "id": "loc-diplomat-car-hire",
+    "name": "Diplomat Car Hire",
+    "category": "utiles",
+    "address": "Flic en Flac",
+    "phone": "+230 424 1192",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.276227,57.37209",
+    "lat": -20.276227,
+    "lng": 57.37209,
+    "themes": [
+      "location-voiture"
+    ],
+    "zone": "ouest",
+    "description": "Location de voiture à Flic en Flac : véhicules de tourisme, tarifs journée/semaine, livraison possible."
+  },
+  {
+    "id": "loc-genius",
+    "name": "Genius",
+    "category": "utiles",
+    "address": "Flic en Flac",
+    "phone": "+230 5761 8555",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.27759,57.369255",
+    "lat": -20.27759,
+    "lng": 57.369255,
+    "themes": [
+      "location-voiture"
+    ],
+    "zone": "ouest",
+    "description": "Location de voiture à Flic en Flac : véhicules de tourisme, tarifs journée/semaine, livraison possible."
+  },
+  {
+    "id": "loc-adi-car-rental",
+    "name": "ADI Car Rental",
+    "category": "utiles",
+    "address": "Vacoas-Phoenix",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.297423,57.483889",
+    "lat": -20.297423,
+    "lng": 57.483889,
+    "themes": [
+      "location-voiture"
+    ],
+    "zone": "centre",
+    "description": "Location de voiture à Vacoas-Phoenix : véhicules de tourisme, tarifs journée/semaine, livraison possible."
+  },
+  {
+    "id": "loc-pingouin-car-rental",
+    "name": "Pingouin Car Rental",
+    "category": "utiles",
+    "address": "Plaine Magnien",
+    "phone": "+230 637 8080",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.434079,57.678081",
+    "lat": -20.434079,
+    "lng": 57.678081,
+    "themes": [
+      "location-voiture"
+    ],
+    "zone": "sud",
+    "description": "Location de voiture à Plaine Magnien : véhicules de tourisme, tarifs journée/semaine, livraison possible."
+  },
+  {
+    "id": "loc-tropicar-location-de-voitures",
+    "name": "TROPICAR - Location de voitures",
+    "category": "utiles",
+    "address": "Saint-Jean",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.253554,57.487744",
+    "lat": -20.253554,
+    "lng": 57.487744,
+    "themes": [
+      "location-voiture"
+    ],
+    "zone": "centre",
+    "description": "Location de voiture à Saint-Jean : véhicules de tourisme, tarifs journée/semaine, livraison possible."
+  },
+  {
+    "id": "loc-first-car-rental",
+    "name": "First Car Rental",
+    "category": "utiles",
+    "address": "Port-Louis, North",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.173328,57.473061",
+    "lat": -20.173328,
+    "lng": 57.473061,
+    "themes": [
+      "location-voiture"
+    ],
+    "zone": "centre",
+    "description": "Location de voiture à Port-Louis, North : véhicules de tourisme, tarifs journée/semaine, livraison possible."
+  },
+  {
+    "id": "loc-alpha-car-rental",
+    "name": "Alpha Car Rental",
+    "category": "utiles",
+    "address": "Chebel",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.216014,57.46938",
+    "lat": -20.216014,
+    "lng": 57.46938,
+    "themes": [
+      "location-voiture"
+    ],
+    "zone": "centre",
+    "description": "Location de voiture à Chebel : véhicules de tourisme, tarifs journée/semaine, livraison possible."
+  },
+  {
+    "id": "loc-ons-car-rent",
+    "name": "ONS Car Rent",
+    "category": "utiles",
+    "address": "Mahébourg",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.408506,57.706009",
+    "lat": -20.408506,
+    "lng": 57.706009,
+    "themes": [
+      "location-voiture"
+    ],
+    "zone": "sud",
+    "description": "Location de voiture à Mahébourg : véhicules de tourisme, tarifs journée/semaine, livraison possible."
+  },
+  {
+    "id": "loc-as-car-hire-ltd",
+    "name": "AS Car Hire Ltd",
+    "category": "utiles",
+    "address": "Vacoas-Phoenix",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.286294,57.511792",
+    "lat": -20.286294,
+    "lng": 57.511792,
+    "themes": [
+      "location-voiture"
+    ],
+    "zone": "centre",
+    "description": "Location de voiture à Vacoas-Phoenix : véhicules de tourisme, tarifs journée/semaine, livraison possible."
+  },
+  {
+    "id": "loc-mauritius-gts-car-rental",
+    "name": "Mauritius GTS Car Rental",
+    "category": "utiles",
+    "address": "Mahébourg",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.413324,57.709084",
+    "lat": -20.413324,
+    "lng": 57.709084,
+    "themes": [
+      "location-voiture"
+    ],
+    "zone": "sud",
+    "description": "Location de voiture à Mahébourg : véhicules de tourisme, tarifs journée/semaine, livraison possible."
+  },
+  {
+    "id": "loc-pulsar-tours",
+    "name": "Pulsar Tours",
+    "category": "utiles",
+    "address": "Trou aux Biches",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.047047,57.529595",
+    "lat": -20.047047,
+    "lng": 57.529595,
+    "themes": [
+      "location-voiture"
+    ],
+    "zone": "nord",
+    "description": "Location de voiture à Trou aux Biches : véhicules de tourisme, tarifs journée/semaine, livraison possible."
+  },
+  {
+    "id": "loc-mauriconnect",
+    "name": "Mauriconnect",
+    "category": "utiles",
+    "address": "Plaine Magnien",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.436323,57.657792",
+    "lat": -20.436323,
+    "lng": 57.657792,
+    "themes": [
+      "location-voiture"
+    ],
+    "zone": "sud",
+    "description": "Location de voiture à Plaine Magnien : véhicules de tourisme, tarifs journée/semaine, livraison possible."
+  },
+  {
+    "id": "tel-emtel-moka",
+    "name": "Emtel – Moka",
+    "category": "utiles",
+    "address": "Moka",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.22492,57.497075",
+    "lat": -20.22492,
+    "lng": 57.497075,
+    "themes": [
+      "telecom"
+    ],
+    "zone": "centre",
+    "description": "Opérateur mobile & internet à Moka : cartes SIM, forfaits et box internet."
+  },
+  {
+    "id": "tel-emtel-riviere-du-rempart",
+    "name": "Emtel – Rivière du Rempart",
+    "category": "utiles",
+    "address": "Rivière du Rempart",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.109953,57.689183",
+    "lat": -20.109953,
+    "lng": 57.689183,
+    "themes": [
+      "telecom"
+    ],
+    "zone": "est",
+    "description": "Opérateur mobile & internet à Rivière du Rempart : cartes SIM, forfaits et box internet."
+  },
+  {
+    "id": "tel-orange-riviere-du-rempart",
+    "name": "Orange – Rivière du Rempart",
+    "category": "utiles",
+    "address": "Rivière du Rempart",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.109888,57.689061",
+    "lat": -20.109888,
+    "lng": 57.689061,
+    "themes": [
+      "telecom"
+    ],
+    "zone": "est",
+    "description": "Opérateur mobile & internet à Rivière du Rempart : cartes SIM, forfaits et box internet."
+  },
+  {
+    "id": "tel-niphone-cellular-shop",
+    "name": "Niphone Cellular Shop",
+    "category": "utiles",
+    "address": "Rivière du Rempart",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.109063,57.690791",
+    "lat": -20.109063,
+    "lng": 57.690791,
+    "themes": [
+      "telecom"
+    ],
+    "zone": "est",
+    "description": "Boutique de téléphonie et d’accessoires à Rivière du Rempart."
+  },
+  {
+    "id": "tel-orange-moka",
+    "name": "Orange – Moka",
+    "category": "utiles",
+    "address": "Moka",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.225573,57.497499",
+    "lat": -20.225573,
+    "lng": 57.497499,
+    "themes": [
+      "telecom"
+    ],
+    "zone": "centre",
+    "description": "Opérateur mobile & internet à Moka : cartes SIM, forfaits et box internet."
+  },
+  {
+    "id": "tel-sy-loulou-telephone-shop",
+    "name": "SY Loulou Telephone Shop",
+    "category": "utiles",
+    "address": "Port-Louis",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.164655,57.499857",
+    "lat": -20.164655,
+    "lng": 57.499857,
+    "themes": [
+      "telecom"
+    ],
+    "zone": "centre",
+    "description": "Boutique de téléphonie et d’accessoires à Port-Louis."
+  },
+  {
+    "id": "tel-emtel-port-louis",
+    "name": "Emtel – Port-Louis",
+    "category": "utiles",
+    "address": "Port-Louis",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.162919,57.50008",
+    "lat": -20.162919,
+    "lng": 57.50008,
+    "themes": [
+      "telecom"
+    ],
+    "zone": "centre",
+    "description": "Opérateur mobile & internet à Port-Louis : cartes SIM, forfaits et box internet."
+  },
+  {
+    "id": "tel-mbk-phone",
+    "name": "MBK Phone",
+    "category": "utiles",
+    "address": "Mer Rouge",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.15988,57.503022",
+    "lat": -20.15988,
+    "lng": 57.503022,
+    "themes": [
+      "telecom"
+    ],
+    "zone": "centre",
+    "description": "Boutique de téléphonie et d’accessoires à Mer Rouge."
+  },
+  {
+    "id": "tel-grand-zone",
+    "name": "Grand Zone",
+    "category": "utiles",
+    "address": "Port-Louis",
+    "phone": "+230 2083333",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.161691,57.504066",
+    "lat": -20.161691,
+    "lng": 57.504066,
+    "themes": [
+      "telecom"
+    ],
+    "zone": "centre",
+    "description": "Boutique de téléphonie et d’accessoires à Port-Louis."
+  },
+  {
+    "id": "tel-telecom-shop",
+    "name": "Telecom Shop",
+    "category": "utiles",
+    "address": "Mahébourg",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.406738,57.707597",
+    "lat": -20.406738,
+    "lng": 57.707597,
+    "themes": [
+      "telecom"
+    ],
+    "zone": "sud",
+    "description": "Boutique de téléphonie et d’accessoires à Mahébourg."
+  },
+  {
+    "id": "tel-galaxy",
+    "name": "Galaxy",
+    "category": "utiles",
+    "address": "Mahébourg",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.408251,57.706017",
+    "lat": -20.408251,
+    "lng": 57.706017,
+    "themes": [
+      "telecom"
+    ],
+    "zone": "sud",
+    "description": "Boutique de téléphonie et d’accessoires à Mahébourg."
+  },
+  {
+    "id": "tel-shenicom",
+    "name": "Shenicom",
+    "category": "utiles",
+    "address": "Vacoas-Phoenix",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.318187,57.527958",
+    "lat": -20.318187,
+    "lng": 57.527958,
+    "themes": [
+      "telecom"
+    ],
+    "zone": "centre",
+    "description": "Boutique de téléphonie et d’accessoires à Vacoas-Phoenix."
+  },
+  {
+    "id": "tel-mobile-zone",
+    "name": "Mobile Zone",
+    "category": "utiles",
+    "address": "Vacoas-Phoenix",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.330272,57.524763",
+    "lat": -20.330272,
+    "lng": 57.524763,
+    "themes": [
+      "telecom"
+    ],
+    "zone": "centre",
+    "description": "Boutique de téléphonie et d’accessoires à Vacoas-Phoenix."
+  },
+  {
+    "id": "tel-huawei",
+    "name": "Huawei",
+    "category": "utiles",
+    "address": "Vacoas-Phoenix",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.307993,57.490799",
+    "lat": -20.307993,
+    "lng": 57.490799,
+    "themes": [
+      "telecom"
+    ],
+    "zone": "centre",
+    "description": "Boutique de téléphonie et d’accessoires à Vacoas-Phoenix."
+  },
+  {
+    "id": "tel-t-smart-phone",
+    "name": "T Smart Phone",
+    "category": "utiles",
+    "address": "Port-Louis",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.162459,57.5047",
+    "lat": -20.162459,
+    "lng": 57.5047,
+    "themes": [
+      "telecom"
+    ],
+    "zone": "centre",
+    "description": "Boutique de téléphonie et d’accessoires à Port-Louis."
+  },
+  {
+    "id": "tel-phone-universe",
+    "name": "Phone Universe",
+    "category": "utiles",
+    "address": "Mer Rouge",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.15529,57.517695",
+    "lat": -20.15529,
+    "lng": 57.517695,
+    "themes": [
+      "telecom"
+    ],
+    "zone": "nord",
+    "description": "Boutique de téléphonie et d’accessoires à Mer Rouge."
+  },
+  {
+    "id": "tel-mauritius-telecom-le-hochet",
+    "name": "Mauritius Telecom – Le Hochet",
+    "category": "utiles",
+    "address": "Le Hochet",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.131392,57.529084",
+    "lat": -20.131392,
+    "lng": 57.529084,
+    "themes": [
+      "telecom"
+    ],
+    "zone": "nord",
+    "description": "Opérateur mobile & internet à Le Hochet : cartes SIM, forfaits et box internet."
+  },
+  {
+    "id": "tel-ash-mobile-accesories",
+    "name": "Ash Mobile Accesories",
+    "category": "utiles",
+    "address": "Petite Rivière",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.194455,57.448321",
+    "lat": -20.194455,
+    "lng": 57.448321,
+    "themes": [
+      "telecom"
+    ],
+    "zone": "ouest",
+    "description": "Boutique de téléphonie et d’accessoires à Petite Rivière."
+  },
+  {
+    "id": "tel-sm-mobile",
+    "name": "SM Mobile",
+    "category": "utiles",
+    "address": "Mer Rouge",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.15874,57.504639",
+    "lat": -20.15874,
+    "lng": 57.504639,
+    "themes": [
+      "telecom"
+    ],
+    "zone": "centre",
+    "description": "Boutique de téléphonie et d’accessoires à Mer Rouge."
+  },
+  {
+    "id": "tel-mobile-city",
+    "name": "Mobile City",
+    "category": "utiles",
+    "address": "Mer Rouge",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.158866,57.504449",
+    "lat": -20.158866,
+    "lng": 57.504449,
+    "themes": [
+      "telecom"
+    ],
+    "zone": "centre",
+    "description": "Boutique de téléphonie et d’accessoires à Mer Rouge."
+  },
+  {
+    "id": "tel-sm-bhyroo-mobile-shop",
+    "name": "SM Bhyroo Mobile Shop",
+    "category": "utiles",
+    "address": "Plaine Verte",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.159302,57.512277",
+    "lat": -20.159302,
+    "lng": 57.512277,
+    "themes": [
+      "telecom"
+    ],
+    "zone": "centre",
+    "description": "Boutique de téléphonie et d’accessoires à Plaine Verte."
+  },
+  {
+    "id": "tel-mauritius-telecom-mer-rouge",
+    "name": "Mauritius Telecom – Mer Rouge",
+    "category": "utiles",
+    "address": "Mer Rouge",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.156132,57.508415",
+    "lat": -20.156132,
+    "lng": 57.508415,
+    "themes": [
+      "telecom"
+    ],
+    "zone": "centre",
+    "description": "Opérateur mobile & internet à Mer Rouge : cartes SIM, forfaits et box internet."
+  },
+  {
+    "id": "tel-jhumka-phone-world",
+    "name": "Jhumka Phone World",
+    "category": "utiles",
+    "address": "Beau Bassin",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.219256,57.468987",
+    "lat": -20.219256,
+    "lng": 57.468987,
+    "themes": [
+      "telecom"
+    ],
+    "zone": "centre",
+    "description": "Boutique de téléphonie et d’accessoires à Beau Bassin."
+  },
+  {
+    "id": "tel-emtel-bambous",
+    "name": "Emtel – Bambous",
+    "category": "utiles",
+    "address": "Bambous",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.279243,57.402568",
+    "lat": -20.279243,
+    "lng": 57.402568,
+    "themes": [
+      "telecom"
+    ],
+    "zone": "ouest",
+    "description": "Opérateur mobile & internet à Bambous : cartes SIM, forfaits et box internet."
+  },
+  {
+    "id": "tel-emtel",
+    "name": "EMTEL",
+    "category": "utiles",
+    "address": "Centre de Flacq",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.19107,57.725261",
+    "lat": -20.19107,
+    "lng": 57.725261,
+    "themes": [
+      "telecom"
+    ],
+    "zone": "est",
+    "description": "Opérateur mobile & internet à Centre de Flacq : cartes SIM, forfaits et box internet."
+  },
+  {
+    "id": "tel-emtel-grand-baie",
+    "name": "Emtel – Grand Baie",
+    "category": "utiles",
+    "address": "Grand Baie",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.021932,57.579525",
+    "lat": -20.021932,
+    "lng": 57.579525,
+    "themes": [
+      "telecom"
+    ],
+    "zone": "nord",
+    "description": "Opérateur mobile & internet à Grand Baie : cartes SIM, forfaits et box internet."
+  },
+  {
+    "id": "tel-parabole-maurice",
+    "name": "Parabole Maurice",
+    "category": "utiles",
+    "address": "Mahébourg",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.408955,57.705873",
+    "lat": -20.408955,
+    "lng": 57.705873,
+    "themes": [
+      "telecom"
+    ],
+    "zone": "sud",
+    "description": "Télévision par satellite et abonnements TV à Mahébourg."
+  },
+  {
+    "id": "tel-mtml-chili",
+    "name": "MTML (Chili)",
+    "category": "utiles",
+    "address": "Port-Louis",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.163288,57.500302",
+    "lat": -20.163288,
+    "lng": 57.500302,
+    "themes": [
+      "telecom"
+    ],
+    "zone": "centre",
+    "description": "Opérateur mobile & internet à Port-Louis : cartes SIM, forfaits et box internet."
+  },
+  {
+    "id": "tel-telecom-shop-rose-hill",
+    "name": "Telecom Shop - Rose-Hill",
+    "category": "utiles",
+    "address": "Rose Hill",
+    "phone": "2037000",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.244662,57.477649",
+    "lat": -20.244662,
+    "lng": 57.477649,
+    "themes": [
+      "telecom"
+    ],
+    "zone": "centre",
+    "description": "Boutique de téléphonie et d’accessoires à Rose Hill."
+  },
+  {
+    "id": "tel-emtel-rose-hill",
+    "name": "Emtel – Rose Hill",
+    "category": "utiles",
+    "address": "Rose Hill",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.243729,57.476104",
+    "lat": -20.243729,
+    "lng": 57.476104,
+    "themes": [
+      "telecom"
+    ],
+    "zone": "centre",
+    "description": "Opérateur mobile & internet à Rose Hill : cartes SIM, forfaits et box internet."
+  },
+  {
+    "id": "tel-telefonshop",
+    "name": "Telefonshop",
+    "category": "utiles",
+    "address": "Petite Rivière",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.194955,57.447765",
+    "lat": -20.194955,
+    "lng": 57.447765,
+    "themes": [
+      "telecom"
+    ],
+    "zone": "ouest",
+    "description": "Boutique de téléphonie et d’accessoires à Petite Rivière."
   }
 ]
