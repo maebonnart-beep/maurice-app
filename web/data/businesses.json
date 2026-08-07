@@ -229,7 +229,8 @@
       "sports-nautiques",
       "plongee-sous-marine"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Centre de plongée sous-marine à Grand Baie — plongée sous-marine."
   },
   {
     "id": "emperator-diving-center-lux-grand-baie",
@@ -246,7 +247,8 @@
       "sports-nautiques",
       "plongee-sous-marine"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Centre de plongée sous-marine à Grand Baie — plongée sous-marine."
   },
   {
     "id": "merman-diving-mauritius",
@@ -262,7 +264,8 @@
       "sports-nautiques",
       "plongee-sous-marine"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Centre de plongée sous-marine à Grand Baie — plongée sous-marine."
   },
   {
     "id": "just-diving-in-mauritius",
@@ -278,7 +281,8 @@
       "sports-nautiques",
       "plongee-sous-marine"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Centre de plongée sous-marine à Pereybère — plongée sous-marine."
   },
   {
     "id": "pro-dive-mauritius",
@@ -295,7 +299,8 @@
       "sports-nautiques",
       "plongee-sous-marine"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Centre de plongée sous-marine à Trou aux Biches — plongée sous-marine."
   },
   {
     "id": "diving-world",
@@ -311,7 +316,8 @@
       "sports-nautiques",
       "plongee-sous-marine"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Centre de plongée sous-marine à Grand Baie — plongée sous-marine."
   },
   {
     "id": "ocean-spirit-scuba-diving",
@@ -327,7 +333,8 @@
       "sports-nautiques",
       "plongee-sous-marine"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Centre de plongée sous-marine à Pereybère — plongée sous-marine."
   },
   {
     "id": "centre-sport-nautique",
@@ -343,7 +350,8 @@
     "themes": [
       "sports-nautiques"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Sports nautiques et activités en mer à Grand Baie."
   },
   {
     "id": "espace-marin-grand-bay",
@@ -359,7 +367,8 @@
       "sports-nautiques",
       "stand-up-paddle"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Activité de paddle (SUP) à Grand Baie."
   },
   {
     "id": "efoil-mauritius-skysurf",
@@ -374,7 +383,8 @@
     "themes": [
       "sports-nautiques"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Engins nautiques électriques (eFoil) à Grand Baie."
   },
   {
     "id": "seabob-mauritius",
@@ -390,7 +400,8 @@
     "themes": [
       "sports-nautiques"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Engins nautiques électriques (eFoil, seabob…) à Grand Baie."
   },
   {
     "id": "efoil-mauritius",
@@ -405,7 +416,8 @@
     "themes": [
       "sports-nautiques"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Engins nautiques électriques (eFoil, seabob…) à Grand Baie."
   },
   {
     "id": "dreamteam-kitesurfing-anse-la-raie",
@@ -422,7 +434,8 @@
       "sports-nautiques",
       "kitesurf"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "École de kitesurf à Cap Malheureux — kitesurf."
   },
   {
     "id": "kite-at-north",
@@ -439,7 +452,8 @@
       "sports-nautiques",
       "kitesurf"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "École de kitesurf à Grand Gaube — kitesurf."
   },
   {
     "id": "horizon-big-game-fishing",
@@ -4972,7 +4986,8 @@
       "sports-nautiques",
       "plongee-sous-marine"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Activité de plongée sous-marine à Flic en Flac."
   },
   {
     "id": "scuba-world-diving-mahebourg",
@@ -4989,7 +5004,8 @@
       "sports-nautiques",
       "plongee-sous-marine"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Centre de plongée sous-marine à Mahébourg — plongée sous-marine."
   },
   {
     "id": "dive-passion-belle-mare",
@@ -5005,7 +5021,8 @@
       "sports-nautiques",
       "plongee-sous-marine"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Centre de plongée sous-marine à Belle Mare — plongée sous-marine."
   },
   {
     "id": "mauritius-dolphins-black-river",
@@ -11441,7 +11458,8 @@
     "themes": [
       "plongee-sous-marine"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Centre de plongée sous-marine à Grand Baie — plongée sous-marine."
   },
   {
     "id": "mauritius-guided-tours",
@@ -11503,7 +11521,8 @@
     "themes": [
       "plongee-sous-marine"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Centre de plongée sous-marine à Trou aux Biches — plongée sous-marine."
   },
   {
     "id": "sunset-boulevard",
@@ -15001,7 +15020,8 @@
       "sports-nautiques",
       "kayak"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Sorties et location de kayak à Tamarin — kayak."
   },
   {
     "id": "black-river-peak-north-trail",
@@ -15071,7 +15091,8 @@
     "themes": [
       "sports-nautiques"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Pêche au gros et sorties de pêche à Rivière Noire."
   },
   {
     "id": "ushuaia-boat-flic-en-flac",
@@ -15087,7 +15108,8 @@
       "sports-nautiques",
       "navigation-bateau"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Sorties en bateau et sports nautiques à Flic en Flac — sorties en bateau."
   },
   {
     "id": "speed-boat",
@@ -15103,7 +15125,8 @@
       "sports-nautiques",
       "navigation-bateau"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Sorties en bateau et sports nautiques à Tamarin — sorties en bateau."
   },
   {
     "id": "abyss-centre-de-plongee",
@@ -15119,7 +15142,8 @@
       "sports-nautiques",
       "plongee-sous-marine"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Centre de plongée sous-marine à Flic en Flac — plongée sous-marine."
   },
   {
     "id": "espace-marin-ltd-pailles-showroom",
@@ -15135,7 +15159,8 @@
       "sports-nautiques",
       "stand-up-paddle"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Activité de paddle (SUP) à Port-Louis."
   },
   {
     "id": "tou-korek-surf-shop",
@@ -15152,7 +15177,8 @@
       "surf",
       "stand-up-paddle"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "École de surf à La Gaulette — surf, paddle (SUP)."
   },
   {
     "id": "sentier-reliant-les-plages-de-tamarin-et-flic-en-flac",
@@ -18275,7 +18301,8 @@
       "surf",
       "stand-up-paddle"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Centre de sports nautiques à Le Morne : kitesurf, surf, planche à voile et paddle (SUP)."
   },
   {
     "id": "lemornexperience-watersports-adventures",
@@ -18291,7 +18318,8 @@
       "sports-nautiques",
       "surf"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Centre de sports nautiques et d'aventures à Le Morne (surf et activités du lagon)."
   },
   {
     "id": "watersports-office-paradis-beachcomber",
@@ -18309,7 +18337,8 @@
       "plongee-sous-marine",
       "kayak"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Centre de sports nautiques à Le Morne : plongée sous-marine, kayak et ski nautique."
   },
   {
     "id": "kitebelles-mauritius",
@@ -18324,7 +18353,8 @@
     "themes": [
       "sports-nautiques"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "École de kitesurf à Le Morne."
   },
   {
     "id": "kite-lagoon-vibes-mauritius",
@@ -18340,7 +18370,8 @@
       "sports-nautiques",
       "kitesurf"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "École de kitesurf à Le Morne — kitesurf."
   },
   {
     "id": "pryde-club-mauritius",
@@ -18357,7 +18388,8 @@
       "kitesurf",
       "planche-a-voile"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Sports nautiques à La Gaulette : kitesurf, planche à voile."
   },
   {
     "id": "wes-aventure-randonnees",
@@ -18450,7 +18482,8 @@
       "sports-nautiques",
       "kitesurf"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Activité de kitesurf à Le Morne."
   },
   {
     "id": "case-noyale-embarqation-point",
@@ -18548,7 +18581,8 @@
       "sports-nautiques",
       "kayak"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Pêche en kayak à Rivière Noire (départ de La Preneuse)."
   },
   {
     "id": "the-wan-fishing-shop-black-river",
@@ -21109,7 +21143,8 @@
       "kitesurf",
       "planche-a-voile"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "École de kitesurf à Bel Ombre — kitesurf, planche à voile."
   },
   {
     "id": "sunset-diving-mauritius",
@@ -21125,7 +21160,8 @@
       "sports-nautiques",
       "plongee-sous-marine"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Centre de plongée sous-marine à Grand Baie — plongée sous-marine."
   },
   {
     "id": "centre-equestre-de-riambel",
@@ -21162,7 +21198,8 @@
       "stand-up-paddle",
       "navigation-bateau"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Centre de sports nautiques à Bel Ombre : plongée sous-marine, kitesurf, paddle (SUP), kayak, ski nautique et sorties en bateau."
   },
   {
     "id": "outrigger-mauritius-beach-resort",
@@ -21178,7 +21215,8 @@
       "sports-nautiques",
       "stand-up-paddle"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Resort de bord de mer OUTRIGGER (Bel Ombre) proposant paddle et sports nautiques dans son lagon. (Plutôt un hôtel.)"
   },
   {
     "id": "lagoonflight",
@@ -21193,7 +21231,8 @@
     "themes": [
       "sports-nautiques"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Engins nautiques électriques (eFoil, seabob…) à Le Morne."
   },
   {
     "id": "heritage-le-telfair-golf-wellness-resort",
@@ -21210,7 +21249,8 @@
       "navigation-bateau",
       "ski-nautique"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Resort Heritage Le Telfair (Bel Ombre) : hôtel golf & wellness en bord de lagon proposant sports nautiques et sorties en mer. (Plutôt un hôtel.)"
   },
   {
     "id": "heritage-the-villas",
@@ -21225,7 +21265,8 @@
     "themes": [
       "sports-nautiques"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Villas de standing à Bel Ombre (Heritage) avec accès à la plage et aux sports nautiques du domaine. (Hébergement — fiche à reclasser.)"
   },
   {
     "id": "gris-gris-beach-2",
@@ -23393,7 +23434,8 @@
       "sports-nautiques",
       "parachute-ascensionnel"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Activité de parachute ascensionnel à Quatre Cocos."
   },
   {
     "id": "aquasea-watersports-belle-mare",
@@ -23410,7 +23452,8 @@
       "navigation-bateau",
       "parachute-ascensionnel"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Sports nautiques à Quatre Cocos : parachute ascensionnel, sorties en bateau."
   },
   {
     "id": "blue-bay-marine-park-2",
@@ -23427,7 +23470,8 @@
       "navigation-bateau",
       "snorkeling"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Parc marin de Blue Bay (réserve protégée) : snorkeling, sorties en bateau à fond de verre et découverte des coraux et poissons du lagon."
   },
   {
     "id": "ile-aux-cerfs-watersports",
@@ -23447,7 +23491,8 @@
       "kayak",
       "snorkeling"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Centre de sports nautiques à Trou d'Eau Douce : kayak, ski nautique, parachute ascensionnel, snorkeling et sorties en bateau."
   },
   {
     "id": "bras-d-eau-visitor-s-center",
@@ -24022,7 +24067,8 @@
     "themes": [
       "plongee-sous-marine"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Centre de plongée sous-marine à Pointe Jérome — plongée sous-marine."
   },
   {
     "id": "friday-attitude-hotel-2",
@@ -25130,7 +25176,8 @@
     "themes": [
       "plongee-sous-marine"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Centre de plongée sous-marine à Grand Baie — plongée sous-marine."
   },
   {
     "id": "chez-nad",
@@ -25428,7 +25475,8 @@
       "sports-nautiques",
       "plongee-sous-marine"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Centre de plongée sous-marine à Trou aux Biches — plongée sous-marine."
   },
   {
     "id": "le-palmiste-resort-spa",
@@ -27432,7 +27480,8 @@
       "kayak",
       "parcs-aventures"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Activité de kayak à Calodyne."
   },
   {
     "id": "sea-urchin-diving-center",
@@ -27447,7 +27496,8 @@
       "sports-nautiques",
       "plongee-sous-marine"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Centre de plongée sous-marine à Flic en Flac — plongée sous-marine."
   },
   {
     "id": "kiteaholic-bastard",
@@ -27462,7 +27512,8 @@
       "sports-nautiques",
       "kitesurf"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "École de kitesurf à Cap Malheureux — kitesurf."
   },
   {
     "id": "jc-wind-and-waves",
@@ -27477,7 +27528,8 @@
       "kitesurf",
       "surf"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Sports nautiques à Le Morne : kitesurf, surf."
   },
   {
     "id": "lokal-surf",
@@ -27492,7 +27544,8 @@
       "sports-nautiques",
       "surf"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "École de surf à Tamarin — surf."
   },
   {
     "id": "hang-loose-tours",
@@ -27508,7 +27561,8 @@
       "surf",
       "stand-up-paddle"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Sports nautiques à Le Morne : surf, paddle (SUP)."
   },
   {
     "id": "sea-kayak-adventures",
@@ -30558,7 +30612,8 @@
     "themes": [
       "sports-nautiques"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Sorties en bateau et sports nautiques à Bel Ombre."
   },
   {
     "id": "bel-ombre-hiking-trail-2",
