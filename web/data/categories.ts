@@ -118,7 +118,7 @@ export const FAMILIES: Partial<Record<CategoryKey, Family[]>> = {
       label: "Magasins d'occasion",
       emoji: "🏪",
       children: [
-        "equipement-maison", "voitures-2-roues", "habits-adultes", "habits-enfants",
+        "equipement-maison", "voitures-2-roues", "habits-adultes",
         "jeux-livres",
       ],
     },
@@ -235,7 +235,6 @@ export const SUBCATEGORIES: Partial<Record<CategoryKey, Subcategory[]>> = {
     { key: "equipement-maison", label: "Équipement maison", emoji: "🛋️" },
     { key: "voitures-2-roues", label: "Voitures & 2 roues", emoji: "🚗" },
     { key: "habits-adultes", label: "Habits & chaussures adultes", emoji: "👕" },
-    { key: "habits-enfants", label: "Habits & chaussures enfants", emoji: "👶" },
     { key: "jeux-livres", label: "Jeux & livres", emoji: "🎲" },
     { key: "eq-maison-particuliers", label: "Équipement maison", emoji: "🛋️" },
     { key: "vetements-particuliers", label: "Vêtements", emoji: "👕" },

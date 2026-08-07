@@ -26859,7 +26859,8 @@
     "themes": [
       "coworking"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Espace de coworking à Port-Louis (32 St Georges St), dans deux bâtiments coloniaux du 18e siècle : bureaux privés (2 à 6 postes), postes individuels, salles de conférence et espaces extérieurs."
   },
   {
     "id": "coworkin-progress",
@@ -26874,7 +26875,8 @@
     "themes": [
       "coworking"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Espace de coworking à Tamarin (près des London Shops et de La Preneuse) : postes de travail dédiés, écrans externes, salles de réunion, cuisine équipée et café à volonté."
   },
   {
     "id": "workshop17-precinct",
@@ -26889,7 +26891,8 @@
     "themes": [
       "coworking"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Coworking premium Workshop17 (The Precinct, entrée de Grand Baie) : 2 700 m² sur 3 étages — postes flexibles ou dédiés, bureaux privés, salles de réunion et booths d'appel, terrasse, restaurant-bar, accès 24/7, parking et douches."
   },
   {
     "id": "the-yard-black-river-coworking",
@@ -26903,7 +26906,8 @@
     "themes": [
       "coworking"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Espace de coworking The Yard à Rivière Noire/Tamarin : hot-desks, postes dédiés, bureaux privés et salles de réunion, internet haut débit, impression et accès sécurisé."
   },
   {
     "id": "activ-solutions-coworking",
@@ -26917,7 +26921,8 @@
     "themes": [
       "coworking"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Espace de coworking à Port-Louis (Hennessy Court, Pope Hennessy Street) : bureaux et postes de travail partagés."
   },
   {
     "id": "workspace-by-the-docks",
@@ -26931,7 +26936,8 @@
     "themes": [
       "coworking"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Espace de coworking Le Workspace à Port-Louis (UDL Business Park, quartier des Docks) : bureaux et postes de travail partagés."
   },
   {
     "id": "the-hive-nouvelle-usine",
@@ -26945,7 +26951,8 @@
     "themes": [
       "coworking"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Espace de coworking THE HIVE à Vacoas (Nouvelle Usine) : espaces partagés, bureaux privés et salles de réunion, avec WiFi, électricité, parking et coin détente inclus."
   },
   {
     "id": "regus-grand-baie",
@@ -26959,7 +26966,8 @@
     "themes": [
       "coworking"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Espace de coworking et bureaux équipés Regus à Grand Baie (Cœur de Ville) : hot-desks, bureaux privés et salles de réunion à l'heure ou à la journée, WiFi haut débit et terrasse — réservation via l'app Regus."
   },
   {
     "id": "uber-maurice",
