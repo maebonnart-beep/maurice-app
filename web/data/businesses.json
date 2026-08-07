@@ -24347,7 +24347,8 @@
     "themes": [
       "centres-equestres"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Centre équestre du Maritim Resort à Balaclava : cours d'équitation et balades à cheval (plage et nature)."
   },
   {
     "id": "the-source-natural-massage-centre-ltd",
@@ -26028,7 +26029,8 @@
     "themes": [
       "cours-de-cuisine"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Cours de cuisine privés à domicile avec le Chef Alessio (Grand Baie), sur réservation."
   },
   {
     "id": "moris-otreman-cours-cuisine",
@@ -26045,7 +26047,8 @@
       "cours-de-cuisine"
     ],
     "promoText": "Atelier de cuisine mauricienne traditionnelle sur la plage, au feu de bois. Sur réservation par email.",
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Ateliers de cuisine mauricienne (Moris Otreman) à Port-Louis : préparation de plats locaux, sur réservation."
   },
   {
     "id": "rosemonde-cours-cuisine",
@@ -26062,7 +26065,8 @@
       "cours-de-cuisine"
     ],
     "promoText": "Cuisine créole chez l'habitant + visite guidée du marché local. Mercredi & samedi. Réservation via Vacances Maurice.",
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Cours de cuisine créole chez Rosemonde (Goodlands) : visite du marché local et préparation de plats mauriciens."
   },
   {
     "id": "sejour-maurice-cours-cuisine",
@@ -26079,7 +26083,8 @@
       "cours-de-cuisine"
     ],
     "promoText": "Cours de cuisine et repas partagé chez l'habitant. Sur réservation.",
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Cours de cuisine et repas chez l'habitant à Tamarin (Séjour Maurice) : découverte de la cuisine mauricienne, sur réservation."
   },
   {
     "id": "muse-villas-cours-cuisine",
@@ -26096,7 +26101,8 @@
       "cours-de-cuisine"
     ],
     "promoText": "Atelier de cuisine privé en villa (concept « farm to table »). Sur réservation.",
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Cours de cuisine en villa (Muse Villas) à Rivière Noire / La Preneuse : ateliers culinaires sur la côte ouest, sur réservation."
   },
   {
     "id": "biscuiterie-h-rault",
@@ -27499,7 +27505,8 @@
     "themes": [
       "centres-equestres"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Balades et randonnées à cheval à Flic en Flac (Sea Horse Adventure), sur la plage et dans le lagon."
   },
   {
     "id": "mamma-mia-che-gelato-grand-baie",
