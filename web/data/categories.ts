@@ -167,6 +167,7 @@ export const SUBCATEGORIES: Partial<Record<CategoryKey, Subcategory[]>> = {
     { key: "casinos", label: "Casinos", emoji: "🎰" },
     { key: "bowling", label: "Bowling", emoji: "🎳" },
     { key: "cinemas", label: "Cinémas", emoji: "🎬" },
+    { key: "bibliotheque-mediatheque", label: "Bibliothèque & médiathèque", emoji: "📚" },
   ],
   food: [
     { key: "restaurants", label: "Restaurants", emoji: "🍽️" },
@@ -214,7 +215,6 @@ export const SUBCATEGORIES: Partial<Record<CategoryKey, Subcategory[]>> = {
     { key: "taxis-transferts", label: "Taxis & transferts", emoji: "🚕" },
     { key: "vtc-apps", label: "Applications VTC & réservation", emoji: "📱" },
     { key: "plateformes-multiservices", label: "Plateformes multiservices & touristiques", emoji: "🧳" },
-    { key: "bibliotheque-mediatheque", label: "Bibliothèque & médiathèque", emoji: "📚" },
   ],
   coaching: [
     { key: "sports-bien-etre", label: "Sports & bien-être", emoji: "🏋️" },

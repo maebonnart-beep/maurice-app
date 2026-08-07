@@ -5418,7 +5418,8 @@
       "banques"
     ],
     "hours": "Lun-Jeu 9h-15h30, Ven 9h-16h",
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Agence MCB (Mauritius Commercial Bank). Horaires : lun–jeu 9h00–15h30, ven 9h00–16h00 (fermé le week-end)."
   },
   {
     "id": "sbm-grand-baie",
@@ -5434,7 +5435,8 @@
       "banques"
     ],
     "hours": "Lun-Jeu 9h-15h15, Ven 9h-16h",
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Agence SBM (SBM Bank Mauritius). Horaires : lun–jeu 9h00–15h15, ven 9h00–16h00 (fermé le week-end)."
   },
   {
     "id": "mont-choisy-golf-club-entrance",
@@ -13418,21 +13420,6 @@
     "description": "Poste de police de Grand Baie. Ouvert 24h/24 et 7j/7. Urgences : 999 (police secours) ou 112."
   },
   {
-    "id": "mua-agency-grand-bay",
-    "name": "MUA AGENCY Grand-Bay",
-    "category": "utiles",
-    "address": "Chem. Vingt Pieds, Grand Baie",
-    "phone": "+230 5258 8565",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=16722497370426489151&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0171372,
-    "lng": 57.5874851,
-    "themes": [
-      "assurances"
-    ],
-    "zone": "nord"
-  },
-  {
     "id": "international-assurance-limited-pcc",
     "name": "International Assurance Limited PCC",
     "category": "utiles",
@@ -13442,21 +13429,6 @@
     "googleMapsUrl": "https://maps.google.com/?cid=2933933932252967902&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.0221267,
     "lng": 57.5797382,
-    "themes": [
-      "assurances"
-    ],
-    "zone": "nord"
-  },
-  {
-    "id": "mua-grand-baie-insurance-sales-agent",
-    "name": "MUA Grand Baie - Insurance Sales Agent",
-    "category": "utiles",
-    "address": "COASTAL ROAD, Grand Baie",
-    "phone": "+230 5259 6738",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=2042174297450365032&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0165222,
-    "lng": 57.577993,
     "themes": [
       "assurances"
     ],
@@ -13523,21 +13495,6 @@
     "zone": "nord"
   },
   {
-    "id": "swan-grand-baie-2",
-    "name": "SWAN Grand Baie",
-    "category": "utiles",
-    "address": "La Croisette, Grand Baie",
-    "phone": "+230 207 9075",
-    "website": "https://www.swanforlife.com/",
-    "googleMapsUrl": "https://maps.google.com/?cid=16394439549844748775&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0217205,
-    "lng": 57.5791702,
-    "themes": [
-      "assurances"
-    ],
-    "zone": "nord"
-  },
-  {
     "id": "p-rambhojoo-accredited-agent-for-new-india-assurance",
     "name": "P RAMBHOJOO ACCREDITED AGENT FOR NEW INDIA ASSURANCE",
     "category": "utiles",
@@ -13580,7 +13537,8 @@
     "themes": [
       "banques"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Agence SBM (SBM Bank Mauritius). Horaires : lun–jeu 9h00–15h15, ven 9h00–16h00 (fermé le week-end)."
   },
   {
     "id": "shibani-finance-co-ltd-grand-bay-branch",
@@ -17038,21 +16996,6 @@
     "zone": "ouest"
   },
   {
-    "id": "mua-branch",
-    "name": "MUA branch",
-    "category": "utiles",
-    "address": "Royal Road, Tamarin",
-    "phone": "+230 483 4900",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=12257648871572052779&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.3522931,
-    "lng": 57.3648564,
-    "themes": [
-      "assurances"
-    ],
-    "zone": "ouest"
-  },
-  {
     "id": "island-life-assurance-co-ltd",
     "name": "Island Life Assurance Co. Ltd",
     "category": "utiles",
@@ -17095,7 +17038,8 @@
     "themes": [
       "banques"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Agence MCB (Mauritius Commercial Bank). Horaires : lun–jeu 9h00–15h30, ven 9h00–16h00 (fermé le week-end)."
   },
   {
     "id": "absa-bank-premier-lounge-black-river",
@@ -17141,22 +17085,6 @@
       "distributeurs"
     ],
     "zone": "ouest"
-  },
-  {
-    "id": "depanaze-mauritius-list-your-business-get-visibility",
-    "name": "Depanaze Mauritius - List your Business & Get Visibility",
-    "category": "utiles",
-    "address": "Port Louis",
-    "phone": "+230 5748 9945",
-    "website": "https://depanaze.com/",
-    "googleMapsUrl": "https://maps.google.com/?cid=2619416739539915652&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.1733376,
-    "lng": 57.4500791,
-    "themes": [
-      "depannages"
-    ],
-    "zone": "centre",
-    "description": "Plateforme en ligne (depanaze.com) de mise en relation avec des professionnels du dépannage à Maurice : annuaire de prestataires, et non un service de réparation en direct."
   },
   {
     "id": "mascareignes-energy",
@@ -22671,36 +22599,6 @@
     "zone": "sud"
   },
   {
-    "id": "heritage-villas-valriche-sales-office",
-    "name": "Heritage Villas Valriche Sales Office",
-    "category": "utiles",
-    "address": "MU, Château Gardens, Coastal Road, Bel Ombre 61002",
-    "phone": "+230 623 5620",
-    "website": "http://www.villasvalriche.com/",
-    "googleMapsUrl": "https://maps.google.com/?cid=2363308673727397078&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.5026662,
-    "lng": 57.4134127,
-    "themes": [
-      "banques"
-    ],
-    "zone": "sud"
-  },
-  {
-    "id": "barnes-mauritius-moka",
-    "name": "BARNES Mauritius - Moka",
-    "category": "utiles",
-    "address": "MU, QGGG+46F Les Allées, d'Helvétia, Moka 80840",
-    "phone": "+230 460 8213",
-    "website": "https://www.barnes-mauritius.com/en/contact-us/barnes-ile-maurice-moka.html",
-    "googleMapsUrl": "https://maps.google.com/?cid=5967303379227416063&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.224685,
-    "lng": 57.5255596,
-    "themes": [
-      "banques"
-    ],
-    "zone": "centre"
-  },
-  {
     "id": "warwyck-private-bank-ltd",
     "name": "Warwyck Private Bank LTD",
     "category": "utiles",
@@ -22714,21 +22612,6 @@
       "banques"
     ],
     "zone": "centre"
-  },
-  {
-    "id": "barnes-belle-mare",
-    "name": "BARNES Belle Mare",
-    "category": "utiles",
-    "address": "MU, Plage, Coastal Road, Poste de Flacq 41602",
-    "phone": "+230 415 8574",
-    "website": "https://www.barnes-mauritius.com/",
-    "googleMapsUrl": "https://maps.google.com/?cid=8635528763033593545&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.1686488,
-    "lng": 57.766047,
-    "themes": [
-      "banques"
-    ],
-    "zone": "est"
   },
   {
     "id": "blitz-electrical-works",
@@ -25348,7 +25231,9 @@
     "themes": [
       "expatriation-visas"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Accompagnement à l'expatriation à Maurice : visas et permis de résidence, démarches administratives, acquisition immobilière, création d'entreprise et intégration — pour freelances, retraités et familles. Basée à Pereybère (Grand Baie).",
+    "badge": "coup-de-coeur"
   },
   {
     "id": "citadelle",
@@ -27110,7 +26995,8 @@
       "expatriation-visas"
     ],
     "zone": "nord",
-    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=My%20Dodo%20Life%20Sottise%20Road%20Grand%20Baie%20Mauritius"
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=My%20Dodo%20Life%20Sottise%20Road%20Grand%20Baie%20Mauritius",
+    "description": "Accompagnement des expatriés à Maurice : obtention des permis et visas de résidence, puis installation clé en main (scolarisation, ouverture de compte bancaire, logement, location de voiture, démarches administratives). Grand Baie."
   },
   {
     "id": "boxbuddy",
@@ -29934,20 +29820,6 @@
     "description": "Centre médical à Grand Baie, dirigé par un cardiologue, proposant consultations générales et spécialisées, rééducation/kinésithérapie, médecine esthétique, thérapies régénératives et greffe de cheveux."
   },
   {
-    "id": "mua-insurance",
-    "name": "mua insurance",
-    "category": "utiles",
-    "address": "XHMP+4XX MUA AGENCY, Twenty-Foot Rd, Grand Baie",
-    "phone": "+230 5258 8565",
-    "googleMapsUrl": "https://maps.google.com/?cid=12736024788220570882&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0171372,
-    "lng": 57.5874851,
-    "themes": [
-      "assurances"
-    ],
-    "zone": "nord"
-  },
-  {
     "id": "mcb-branch",
     "name": "MCB branch",
     "category": "utiles",
@@ -29959,7 +29831,8 @@
     "themes": [
       "banques"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Agence MCB (Mauritius Commercial Bank). Horaires : lun–jeu 9h00–15h30, ven 9h00–16h00 (fermé le week-end)."
   },
   {
     "id": "yan-business-coach",
@@ -31429,7 +31302,8 @@
     "themes": [
       "banques"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Agence MCB (Mauritius Commercial Bank). Horaires : lun–jeu 9h00–15h30, ven 9h00–16h00 (fermé le week-end)."
   },
   {
     "id": "shibani-money-changer",
@@ -31675,7 +31549,8 @@
     "themes": [
       "banques"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Agence SBM (SBM Bank Mauritius). Horaires : lun–jeu 9h00–15h15, ven 9h00–16h00 (fermé le week-end)."
   },
   {
     "id": "absa-bank-moka-atm",
@@ -31818,7 +31693,8 @@
     "website": "",
     "themes": [
       "expatriation-visas"
-    ]
+    ],
+    "description": "Cabinet de conseil en expatriation à Maurice : visas et permis de résidence, installation, investissement et création d'entreprise."
   },
   {
     "id": "boucle-courte-7-cascades",
@@ -33977,7 +33853,7 @@
   {
     "id": "mediatheque-institut-francais-maurice",
     "name": "Médiathèque de l'Institut Français de Maurice",
-    "category": "utiles",
+    "category": "activites",
     "address": "30 Avenue Julius Nyerere, Beau-Bassin Rose Hill",
     "phone": "+230 465 5222",
     "website": "https://www.institutfrancais.mu/",
@@ -33992,7 +33868,7 @@
   {
     "id": "bibliotheque-carnegie-curepipe",
     "name": "Bibliothèque Carnegie",
-    "category": "utiles",
+    "category": "activites",
     "address": "Centre-ville, Curepipe",
     "phone": "",
     "website": "",
@@ -34006,7 +33882,7 @@
   {
     "id": "national-library-mauritius",
     "name": "National Library of Mauritius",
-    "category": "utiles",
+    "category": "activites",
     "address": "1st & 2nd Floors, Fon Sing Building, 12 Edith Cavell Street, Port-Louis",
     "phone": "+230 211 9891",
     "website": "https://www.national-library.mu/",
