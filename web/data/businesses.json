@@ -29660,21 +29660,6 @@
     "description": "Boutique de mode (abayas et vêtements) à Port-Louis."
   },
   {
-    "id": "meem",
-    "name": "Meem",
-    "category": "seconde-main",
-    "address": "PCC2+7X7, Flic en Flac",
-    "phone": "+230 452 9090",
-    "googleMapsUrl": "https://maps.google.com/?cid=2178311735096716490&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.2793285,
-    "lng": 57.402429,
-    "themes": [
-      "habits-enfants"
-    ],
-    "zone": "ouest",
-    "description": "Boutique de puériculture et de vêtements bébés/enfants, à Cascavelle (Flic en Flac)."
-  },
-  {
     "id": "musee-coquillage",
     "name": "Musee Coquillage",
     "category": "activites",
@@ -29703,21 +29688,6 @@
     "zone": "centre"
   },
   {
-    "id": "cosy-comfy-concept-store",
-    "name": "Cosy&Comfy Concept Store",
-    "category": "seconde-main",
-    "address": "Sottise Rd, Grand Baie",
-    "phone": "+230 5780 0485",
-    "googleMapsUrl": "https://maps.google.com/?cid=16878743021426283476&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0188084,
-    "lng": 57.5794628,
-    "themes": [
-      "habits-adultes"
-    ],
-    "zone": "nord",
-    "description": "Concept store de décoration d'intérieur à Grand Baie : déco bohème et balinaise, tapis en jute et jonc de mer."
-  },
-  {
     "id": "poonith-store",
     "name": "Poonith Store",
     "category": "seconde-main",
@@ -29731,38 +29701,6 @@
     ],
     "zone": "nord",
     "description": "Boutique de vêtements à Esperance Trébuchet."
-  },
-  {
-    "id": "adamas",
-    "name": "Adamas",
-    "category": "seconde-main",
-    "address": "Grand Baie",
-    "phone": "+230 269 1609",
-    "website": "http://www.adamasltd.com/",
-    "googleMapsUrl": "https://maps.google.com/?cid=17952922269885196932&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0142015,
-    "lng": 57.5880252,
-    "themes": [
-      "habits-adultes"
-    ],
-    "zone": "nord",
-    "description": "Bijouterie et horlogerie à Grand Baie (bijoux et montres, revendeur Oris)."
-  },
-  {
-    "id": "fabulous-island-concept-store",
-    "name": "Fabulous Island ( Concept Store )",
-    "category": "seconde-main",
-    "address": "Rivière Noire",
-    "phone": "+230 5253 8088",
-    "website": "https://www.fabulous-island.com/",
-    "googleMapsUrl": "https://maps.google.com/?cid=2932358033783539189&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.3517294,
-    "lng": 57.3648211,
-    "themes": [
-      "habits-adultes"
-    ],
-    "zone": "ouest",
-    "description": "Marque de vêtements éco-responsables fabriqués à Maurice, collections personnalisables (femme/homme/enfant) — concept store à Rivière Noire."
   },
   {
     "id": "eco-holidays-mauritius-dmc",
