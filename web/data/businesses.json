@@ -11356,7 +11356,8 @@
       "gym-fitness"
     ],
     "sportsListed": "CrossFit (WOD quotidien)",
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Box CrossFit à Grand Baie : entraînements fonctionnels encadrés."
   },
   {
     "id": "grand-baie-gym-hydro-spa",
@@ -11374,7 +11375,8 @@
     "sportsListed": "Musculation/cardio, cours collectifs, piscine 25m, spa/hammam/sauna, TRX, Pilates, Yoga",
     "hasRestauration": true,
     "kidsActivities": true,
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Salle de sport avec espace bien-être/spa à Grand Baie : musculation, cardio et détente."
   },
   {
     "id": "gymac-ltd",
@@ -11391,7 +11393,8 @@
     ],
     "sportsListed": "Gymnastique, tumbling/trampoline, parkour, acrobatie aérienne, pole dance, breakdance, judo",
     "kidsActivities": true,
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Salle de sport et de fitness à Grand Baie : musculation, cardio et cours collectifs."
   },
   {
     "id": "city-sport-grand-baie",
@@ -11424,7 +11427,8 @@
       "gym-fitness"
     ],
     "sportsListed": "Pilates (reformer)",
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Studio de Pilates à Grand Baie : cours et renforcement postural."
   },
   {
     "id": "energia-mauritius",
@@ -27743,7 +27747,8 @@
     "themes": [
       "gym-fitness"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Salle de musculation et de force à Grand Baie : haltères, machines et coaching."
   },
   {
     "id": "studio-bodytech-grand-bay",
@@ -27757,7 +27762,8 @@
     "themes": [
       "gym-fitness"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Salle de sport et de fitness à Grand Baie : musculation, cardio et cours collectifs."
   },
   {
     "id": "xfit-gym",
@@ -27771,7 +27777,8 @@
     "themes": [
       "gym-fitness"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Salle de sport et de fitness : musculation, cardio et cours collectifs."
   },
   {
     "id": "elysian-fitness",
@@ -27786,7 +27793,8 @@
     "themes": [
       "gym-fitness"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Salle de sport et de fitness : musculation, cardio et cours collectifs."
   },
   {
     "id": "padelshop-mu",
@@ -27895,7 +27903,8 @@
     "themes": [
       "gym-fitness"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Salle de sport et de fitness à Tamarin : musculation, cardio et cours collectifs."
   },
   {
     "id": "retroflex-gym",
@@ -27910,7 +27919,8 @@
     "themes": [
       "gym-fitness"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Salle de sport et de fitness à Tamarin : musculation, cardio et cours collectifs."
   },
   {
     "id": "planet-gym",
@@ -27925,7 +27935,8 @@
     "themes": [
       "gym-fitness"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Salle de sport et de fitness à Bambous : musculation, cardio et cours collectifs."
   },
   {
     "id": "ifd-ajl-maurice",
@@ -27955,7 +27966,8 @@
     "themes": [
       "gym-fitness"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Club de gymnastique à Tamarin."
   },
   {
     "id": "goflex-gym",
@@ -27970,7 +27982,8 @@
     "themes": [
       "gym-fitness"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Salle de sport et de fitness à Rose Hill : musculation, cardio et cours collectifs."
   },
   {
     "id": "fighting-fit-fitness-training-and-nutrition",
@@ -27985,7 +27998,8 @@
     "themes": [
       "gym-fitness"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Arts martiaux, sports de combat et fitness à Rivière Noire."
   },
   {
     "id": "ragnarok-gym-fitness-centre",
@@ -27999,7 +28013,8 @@
     "themes": [
       "gym-fitness"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Salle de sport et de fitness à Saint-Pierre : musculation, cardio et cours collectifs."
   },
   {
     "id": "flex-fitness-gym",
@@ -28013,7 +28028,8 @@
     "themes": [
       "gym-fitness"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Salle de sport et de fitness à Terre Rouge : musculation, cardio et cours collectifs."
   },
   {
     "id": "fitbox-international",
@@ -28028,7 +28044,8 @@
     "themes": [
       "gym-fitness"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Salle de sport et de fitness à Flic en Flac : musculation, cardio et cours collectifs."
   },
   {
     "id": "gymlife",
@@ -28042,7 +28059,8 @@
     "themes": [
       "gym-fitness"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Salle de sport et de fitness à Ebène : musculation, cardio et cours collectifs."
   },
   {
     "id": "bodyfit-gym",
@@ -28056,7 +28074,8 @@
     "themes": [
       "gym-fitness"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Salle de sport et de fitness à Quatre Bornes : musculation, cardio et cours collectifs."
   },
   {
     "id": "bravo-fitness-club",
@@ -28070,7 +28089,8 @@
     "themes": [
       "gym-fitness"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Salle de sport et de fitness à Goodlands : musculation, cardio et cours collectifs."
   },
   {
     "id": "kwick-fitness-gym",
@@ -28084,7 +28104,8 @@
     "themes": [
       "gym-fitness"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Salle de sport et de fitness à Montagne Blanche : musculation, cardio et cours collectifs."
   },
   {
     "id": "warriors-fitness-gym",
@@ -28099,7 +28120,8 @@
     "themes": [
       "gym-fitness"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Salle de sport et de fitness à Vacoas : musculation, cardio et cours collectifs."
   },
   {
     "id": "dan-jay-fitness-center",
@@ -28113,7 +28135,8 @@
     "themes": [
       "gym-fitness"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Salle de sport et de fitness à Fond du Sac : musculation, cardio et cours collectifs."
   },
   {
     "id": "ennoia-fitness-club",
@@ -28128,7 +28151,8 @@
     "themes": [
       "gym-fitness"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Salle de sport et de fitness à Ebène : musculation, cardio et cours collectifs."
   },
   {
     "id": "dynamic-gymnastics-mauritius",
@@ -28142,7 +28166,8 @@
     "themes": [
       "gym-fitness"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Club de gymnastique à Bambous."
   },
   {
     "id": "synergy-sport-and-wellness-institute",
@@ -28190,7 +28215,8 @@
     "themes": [
       "gym-fitness"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Salle de sport et de fitness à Port-Louis : musculation, cardio et cours collectifs, accessible 24h/24."
   },
   {
     "id": "lo-bosco-pole-studio",
@@ -28221,7 +28247,8 @@
     "themes": [
       "gym-fitness"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Salle de sport et de fitness à Beau Bassin-Rose Hill : musculation, cardio et cours collectifs."
   },
   {
     "id": "life-fitness",
@@ -28236,7 +28263,8 @@
     "themes": [
       "gym-fitness"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Salle de sport et de fitness à Centre de Flacq : musculation, cardio et cours collectifs."
   },
   {
     "id": "gym-25",
@@ -28250,7 +28278,8 @@
     "themes": [
       "gym-fitness"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Salle de sport et de fitness à New Grove : musculation, cardio et cours collectifs."
   },
   {
     "id": "venom-gym",
@@ -28264,7 +28293,8 @@
     "themes": [
       "gym-fitness"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Salle de sport et de fitness à Moka : musculation, cardio et cours collectifs."
   },
   {
     "id": "marshalls-fitness-club",
@@ -28278,7 +28308,8 @@
     "themes": [
       "gym-fitness"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Salle de sport et de fitness à Vacoas : musculation, cardio et cours collectifs."
   },
   {
     "id": "perfect-shape-fitness-club",
@@ -28292,7 +28323,8 @@
     "themes": [
       "gym-fitness"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Salle de sport et de fitness à Vacoas : musculation, cardio et cours collectifs."
   },
   {
     "id": "flexellence-thezengen",
@@ -28306,7 +28338,8 @@
     "themes": [
       "gym-fitness"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Salle de sport et de fitness à Saint-Pierre : musculation, cardio et cours collectifs."
   },
   {
     "id": "best-physique-gym",
@@ -28320,7 +28353,8 @@
     "themes": [
       "gym-fitness"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Salle de musculation et de force à Vacoas : haltères, machines et coaching."
   },
   {
     "id": "neezfitness-ladies-gym-neezfit-female-club",
@@ -28334,7 +28368,8 @@
     "themes": [
       "gym-fitness"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Salle de sport réservée aux femmes à Port-Louis : musculation, cardio et cours."
   },
   {
     "id": "eastern-fitness-centre",
@@ -28347,7 +28382,8 @@
     "themes": [
       "gym-fitness"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Salle de sport et de fitness à Grand Retraite : musculation, cardio et cours collectifs."
   },
   {
     "id": "reaper-crew-gym",
@@ -28361,7 +28397,8 @@
     "themes": [
       "gym-fitness"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Salle de sport et de fitness à Curepipe : musculation, cardio et cours collectifs."
   },
   {
     "id": "fagiani-cross-centre",
@@ -28392,7 +28429,8 @@
     "themes": [
       "gym-fitness"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Salle de musculation et de force à Rivière des Anguilles : haltères, machines et coaching."
   },
   {
     "id": "mind-to-body-pilates-studio",
@@ -28406,7 +28444,8 @@
     "themes": [
       "gym-fitness"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Studio de Pilates : cours et renforcement postural."
   },
   {
     "id": "hybrid-workout-fitness-studio",
@@ -28420,7 +28459,8 @@
     "themes": [
       "gym-fitness"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Salle de sport et de fitness à Port-Louis : musculation, cardio et cours collectifs."
   },
   {
     "id": "arena-gym",
@@ -28434,7 +28474,8 @@
     "themes": [
       "gym-fitness"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Salle de sport et de fitness à Port-Louis : musculation, cardio et cours collectifs."
   },
   {
     "id": "la-laura-village-hall-and-gym",
@@ -28447,7 +28488,8 @@
     "themes": [
       "gym-fitness"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Salle communale et salle de sport à La Laura."
   },
   {
     "id": "salt-yoga-bounce",
@@ -28476,7 +28518,8 @@
     "themes": [
       "gym-fitness"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Salle de cross-training et entraînement fonctionnel à Saint-Pierre."
   },
   {
     "id": "padel-port-chambly",
@@ -28631,7 +28674,8 @@
     "themes": [
       "gym-fitness"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Salle de sport et de fitness à La Gaulette : musculation, cardio et cours collectifs."
   },
   {
     "id": "gym-shanti-maurice",
@@ -28644,7 +28688,8 @@
     "themes": [
       "gym-fitness"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Salle de sport et de fitness à Chemin Grenier : musculation, cardio et cours collectifs."
   },
   {
     "id": "seerouven-muscle-fitness-gym",
@@ -28658,7 +28703,8 @@
     "themes": [
       "gym-fitness"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Salle de musculation et de force à Vacoas : haltères, machines et coaching."
   },
   {
     "id": "peak-performance-gym",
@@ -28671,7 +28717,8 @@
     "themes": [
       "gym-fitness"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Salle de sport et de fitness à Chemin Grenier : musculation, cardio et cours collectifs."
   },
   {
     "id": "muscles-and-curves-fitness-hub",
@@ -28685,7 +28732,8 @@
     "themes": [
       "gym-fitness"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Salle de musculation et de force à Morcellement St : haltères, machines et coaching."
   },
   {
     "id": "team-bad-muay-thai-fitness-gym",
@@ -28699,7 +28747,8 @@
     "themes": [
       "gym-fitness"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Arts martiaux, sports de combat et fitness à Petite Rivière."
   },
   {
     "id": "mogym-fitness-ltd",
@@ -28713,7 +28762,8 @@
     "themes": [
       "gym-fitness"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Salle de sport et de fitness : musculation, cardio et cours collectifs."
   },
   {
     "id": "harder-barbell-gym",
@@ -28728,7 +28778,8 @@
     "themes": [
       "gym-fitness"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Salle de musculation et de force à Curepipe : haltères, machines et coaching."
   },
   {
     "id": "my-universe-gym-fitness",
@@ -28743,7 +28794,8 @@
     "themes": [
       "gym-fitness"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Salle de sport et de fitness à Quatre Bornes : musculation, cardio et cours collectifs."
   },
   {
     "id": "the-gym-hub",
@@ -28758,7 +28810,8 @@
     "themes": [
       "gym-fitness"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Salle de sport et de fitness à Curepipe : musculation, cardio et cours collectifs."
   },
   {
     "id": "athletic-fitness-club",
@@ -28772,7 +28825,8 @@
     "themes": [
       "gym-fitness"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Salle de sport et de fitness à Vacoas : musculation, cardio et cours collectifs."
   },
   {
     "id": "infinity-fitness-gym",
@@ -28786,7 +28840,8 @@
     "themes": [
       "gym-fitness"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Salle de sport et de fitness à Rose Hill : musculation, cardio et cours collectifs."
   },
   {
     "id": "kestrel-gym",
@@ -28801,7 +28856,8 @@
     "themes": [
       "gym-fitness"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Salle de sport et de fitness à Rose Hill : musculation, cardio et cours collectifs."
   },
   {
     "id": "gymbox-2018",
@@ -28815,7 +28871,8 @@
     "themes": [
       "gym-fitness"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Salle de sport et de fitness à Chemin Grenier : musculation, cardio et cours collectifs."
   },
   {
     "id": "beyond-fitness",
@@ -28828,7 +28885,8 @@
     "themes": [
       "gym-fitness"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Salle de sport et de fitness à Centre de Flacq : musculation, cardio et cours collectifs."
   },
   {
     "id": "outdoor-workout-albion",
@@ -28892,7 +28950,8 @@
     "themes": [
       "gym-fitness"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Salle de sport et de fitness à Chemin Grenier : musculation, cardio et cours collectifs."
   },
   {
     "id": "myfit-360-riche-terre",
@@ -28907,7 +28966,8 @@
     "themes": [
       "gym-fitness"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Salle de sport et de fitness à Riche Terre : musculation, cardio et cours collectifs."
   },
   {
     "id": "myfit-360-caudan",
@@ -28922,7 +28982,8 @@
     "themes": [
       "gym-fitness"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Salle de sport et de fitness à Port-Louis : musculation, cardio et cours collectifs."
   },
   {
     "id": "personal-trainer",
@@ -28936,7 +28997,8 @@
     "themes": [
       "gym-fitness"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Coach sportif et personal training à Vacoas."
   },
   {
     "id": "studio-by-rm-azuri",
@@ -28983,7 +29045,8 @@
     "themes": [
       "gym-fitness"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Salle de sport et de fitness à Triolet : musculation, cardio et cours collectifs."
   },
   {
     "id": "fitness-forever",
@@ -28997,7 +29060,8 @@
     "themes": [
       "gym-fitness"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Salle de sport et de fitness à Triolet : musculation, cardio et cours collectifs."
   },
   {
     "id": "belle-rose-fitness-centre",
@@ -29012,7 +29076,8 @@
     "themes": [
       "gym-fitness"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Salle de sport et de fitness à Quatre Bornes : musculation, cardio et cours collectifs."
   },
   {
     "id": "legacy-fitness-gym",
@@ -29026,7 +29091,8 @@
     "themes": [
       "gym-fitness"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Salle de sport et de fitness à Rivière du Rempart : musculation, cardio et cours collectifs."
   },
   {
     "id": "space-fitness-albion",
@@ -29041,7 +29107,8 @@
     "themes": [
       "gym-fitness"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Salle de sport et de fitness à Albion : musculation, cardio et cours collectifs."
   },
   {
     "id": "health-and-fitness-gym",
@@ -29055,7 +29122,8 @@
     "themes": [
       "gym-fitness"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Salle de sport et de fitness à Goodlands : musculation, cardio et cours collectifs."
   },
   {
     "id": "bodyshaper-gym",
@@ -29068,7 +29136,8 @@
     "themes": [
       "gym-fitness"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Salle de sport et de fitness à Rivière des Anguilles : musculation, cardio et cours collectifs."
   },
   {
     "id": "oxygen-gym",
@@ -29082,7 +29151,8 @@
     "themes": [
       "gym-fitness"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Salle de sport et de fitness à Goodlands : musculation, cardio et cours collectifs."
   },
   {
     "id": "aldo-fortress-fitness-gym",
@@ -29097,7 +29167,8 @@
     "themes": [
       "gym-fitness"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Salle de sport et de fitness à Curepipe : musculation, cardio et cours collectifs."
   },
   {
     "id": "reviva-gym",
@@ -29111,7 +29182,8 @@
     "themes": [
       "gym-fitness"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Salle de sport et de fitness à Rose Belle : musculation, cardio et cours collectifs."
   },
   {
     "id": "just-lift-gym-ltd",
@@ -29125,7 +29197,8 @@
     "themes": [
       "gym-fitness"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Salle de musculation et de force à Quatre Bornes : haltères, machines et coaching."
   },
   {
     "id": "fitness-flo",
@@ -29139,7 +29212,8 @@
     "themes": [
       "gym-fitness"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Salle de sport et de fitness à Vacoas : musculation, cardio et cours collectifs."
   },
   {
     "id": "myfit-360-trianon",
@@ -29154,7 +29228,8 @@
     "themes": [
       "gym-fitness"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Salle de sport et de fitness : musculation, cardio et cours collectifs."
   },
   {
     "id": "ultimate-muscle-gym",
@@ -29168,7 +29243,8 @@
     "themes": [
       "gym-fitness"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Salle de musculation et de force à Mahébourg : haltères, machines et coaching."
   },
   {
     "id": "shape-mahebourg",
@@ -29182,7 +29258,8 @@
     "themes": [
       "gym-fitness"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Salle de sport et de fitness : musculation, cardio et cours collectifs."
   },
   {
     "id": "top-spin-tennis-club",
@@ -29258,7 +29335,8 @@
     "themes": [
       "gym-fitness"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Centre de fitness et de santé à Centre de Flacq : musculation, remise en forme et services médicaux/paramédicaux."
   },
   {
     "id": "amazing-fitness-24-7",
@@ -29272,7 +29350,8 @@
     "themes": [
       "gym-fitness"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Salle de sport et de fitness à Flacq : musculation, cardio et cours collectifs, accessible 24h/24."
   },
   {
     "id": "happy-gym",
@@ -29286,7 +29365,8 @@
     "themes": [
       "gym-fitness"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Salle de sport et de fitness à Bel Air : musculation, cardio et cours collectifs."
   },
   {
     "id": "the-power-house",
@@ -29301,7 +29381,8 @@
     "themes": [
       "gym-fitness"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Salle de musculation et de force à Flacq : haltères, machines et coaching."
   },
   {
     "id": "anytime-fitness",
@@ -29315,7 +29396,8 @@
     "themes": [
       "gym-fitness"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Salle de sport et de fitness à Bel Air : musculation, cardio et cours collectifs, accessible 24h/24."
   },
   {
     "id": "bel-air-jujitsu-mma-sports-club",
@@ -29343,7 +29425,8 @@
     "themes": [
       "gym-fitness"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Salle de musculation et de force à Bel Air : haltères, machines et coaching."
   },
   {
     "id": "nextgen-fitness-healthy-living-company-ltd",
@@ -29357,7 +29440,8 @@
     "themes": [
       "gym-fitness"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Salle de sport et de fitness à Pamplemousses : musculation, cardio et cours collectifs."
   },
   {
     "id": "baillache-barbell-gym",
@@ -29371,7 +29455,8 @@
     "themes": [
       "gym-fitness"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Salle de musculation et de force à Long Mountain : haltères, machines et coaching."
   },
   {
     "id": "win-champion-engineer",
@@ -29400,7 +29485,8 @@
     "themes": [
       "gym-fitness"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Salle de sport et de fitness à Quatre Bornes : musculation, cardio et cours collectifs."
   },
   {
     "id": "queen-s-sport-leisure-centre",
@@ -29430,7 +29516,8 @@
     "themes": [
       "gym-fitness"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Salle de sport et de fitness à Centre de Flacq : musculation, cardio et cours collectifs."
   },
   {
     "id": "tranquebar-boxing-club",
@@ -29459,7 +29546,8 @@
     "themes": [
       "gym-fitness"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Salle de sport et de fitness à Port-Louis : musculation, cardio et cours collectifs."
   },
   {
     "id": "sport-power-club",
@@ -29488,7 +29576,8 @@
     "themes": [
       "gym-fitness"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Espace de fitness en plein air à Port-Louis."
   },
   {
     "id": "superfit-gym",
@@ -29502,7 +29591,8 @@
     "themes": [
       "gym-fitness"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Salle de sport et de fitness à Long Mountain : musculation, cardio et cours collectifs."
   },
   {
     "id": "fitcity",
@@ -29517,7 +29607,8 @@
     "themes": [
       "gym-fitness"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Salle de sport et de fitness à Port-Louis : musculation, cardio et cours collectifs."
   },
   {
     "id": "university-of-mauritius-gymnasium-complex",
@@ -29532,7 +29623,8 @@
     "themes": [
       "gym-fitness"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Complexe sportif et gymnase universitaire à Moka."
   },
   {
     "id": "argy-brazilian-jiu-jitsu-club",
@@ -29562,7 +29654,8 @@
     "themes": [
       "gym-fitness"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Arts martiaux, sports de combat et fitness."
   },
   {
     "id": "swoldier-nation-gym",
@@ -29576,7 +29669,8 @@
     "themes": [
       "gym-fitness"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Salle de musculation et de force à Pamplemousses : haltères, machines et coaching."
   },
   {
     "id": "club-protennis",
