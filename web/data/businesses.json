@@ -2680,7 +2680,8 @@
     "themes": [
       "coiffeurs"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Salon de coiffure à Grand Baie : coupe, coiffage et coloration."
   },
   {
     "id": "relax-lounge",
@@ -2696,7 +2697,8 @@
     "themes": [
       "coiffeurs"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Salon de coiffure à Grand Baie : coupe, coiffage et soins."
   },
   {
     "id": "signature-hair-studio-by-anousha",
@@ -2711,7 +2713,8 @@
     "themes": [
       "coiffeurs"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Salon Signature Hair Studio (Anousha) à Grand Baie : coupe, coiffage et coloration."
   },
   {
     "id": "nadeem-coiffeur-grand-bay",
@@ -2726,7 +2729,8 @@
     "themes": [
       "coiffeurs"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Salon de coiffure à Grand Baie : coupe et coiffage."
   },
   {
     "id": "koko-milan",
@@ -2792,7 +2796,8 @@
     "themes": [
       "coiffeurs"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Salon Nuance Hair Lounge à Grand Baie (Super U) : coupe, coiffage, coloration et soins."
   },
   {
     "id": "beauty-and-nail-centre",
@@ -2839,7 +2844,8 @@
     "themes": [
       "coiffeurs"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Salon de coiffure à Grand Baie (Promenade des Palmiers) : coupe, coiffage et coloration."
   },
   {
     "id": "glochic",
@@ -26653,7 +26659,8 @@
     "themes": [
       "coiffeurs"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Salon Headcase par Bénédicte Summers à Petit Raffray : coupe, coiffage, coloration et soins sur-mesure, manucure et pédicure."
   },
   {
     "id": "maison-sasha-grand-baie",
@@ -26667,7 +26674,8 @@
     "themes": [
       "coiffeurs"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Salon Maison Sasha à Grand Baie (Pointe aux Canonniers) : coupe, coiffage, coloration et soins, coiffure mariée, barbier homme et ongles. Horaires : lun–jeu & sam 8h30–17h30, ven 8h30–20h."
   },
   {
     "id": "sj-coiffure-flic-en-flac",
@@ -26681,7 +26689,8 @@
     "themes": [
       "coiffeurs"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Salon de coiffure (L'Oréal) à Flic en Flac : coupe, coiffage et coloration."
   },
   {
     "id": "mike-coiffure-port-louis",
@@ -26695,7 +26704,8 @@
     "themes": [
       "coiffeurs"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Salon de coiffure à Port-Louis (Citadelle Mall) : coupe, coiffage et coloration."
   },
   {
     "id": "allure-coiffure-port-louis",
@@ -26709,7 +26719,8 @@
     "themes": [
       "coiffeurs"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Salon Allure Coiffure à Port-Louis (Dorval Center), spécialiste de la coloration (L'Oréal, Kérastase, Olaplex) : coupe, coiffage et soins."
   },
   {
     "id": "maison-sasha-curepipe",
@@ -26723,7 +26734,8 @@
     "themes": [
       "coiffeurs"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Salon Maison Sasha à Curepipe : coupe, coiffage, coloration et soins, coiffure mariée, barbier homme et ongles. Horaires : lun/mer/sam 7h30–17h30, mar/jeu/ven 7h30–19h."
   },
   {
     "id": "natural-hair-culture-curepipe",
@@ -26737,7 +26749,8 @@
     "themes": [
       "coiffeurs"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Salon Natural Hair Culture à Curepipe, spécialisé dans les cheveux naturels et texturés : coupe, soins, tresses et conseils. Horaires : lun–ven 9h30–17h30, sam 9h–18h (fermé dim)."
   },
   {
     "id": "le-studio-tamarin",
@@ -26751,7 +26764,8 @@
     "themes": [
       "coiffeurs"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Le Studio à Tamarin (Cœur de Ville) : coiffure, barbier et bar à ongles."
   },
   {
     "id": "salon-art-de-coiffure-qb",
@@ -26765,7 +26779,8 @@
     "themes": [
       "coiffeurs"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Salon de coiffure à Quatre Bornes (La Louise) : coupe, coiffage et coloration."
   },
   {
     "id": "x-hair-beauty-quatre-bornes",
@@ -26779,7 +26794,8 @@
     "themes": [
       "coiffeurs"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "X Hair & Beauty Salon à Quatre Bornes : coupe, coiffage, coloration, kératine et botox capillaire (femmes), coupe et taille de barbe (hommes), coupe enfants et ongles."
   },
   {
     "id": "espace-coiffure-guy-perrin",
@@ -26793,7 +26809,8 @@
     "themes": [
       "coiffeurs"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Salon Espace Coiffure Guy Perrin à Moka : coupe, coiffage et coloration."
   },
   {
     "id": "coworking-port-louis",
@@ -36546,5 +36563,165 @@
     ],
     "zone": "centre",
     "description": "Studio photo à Rose Hill : photos d'identité et passeport, portraits et tirage."
+  },
+  {
+    "id": "coiffeur-sooren-coiffure",
+    "name": "Sooren Coiffure",
+    "category": "soins-bien-etre",
+    "address": "Rivière du Rempart",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.109985,57.689869",
+    "lat": -20.109985,
+    "lng": 57.689869,
+    "themes": [
+      "coiffeurs"
+    ],
+    "zone": "est",
+    "description": "Salon de coiffure à Rivière du Rempart : coupe, coiffage et coloration."
+  },
+  {
+    "id": "coiffeur-aarti-hairdresser",
+    "name": "Aarti Hairdresser",
+    "category": "soins-bien-etre",
+    "address": "Rivière du Rempart",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.10845,57.692926",
+    "lat": -20.10845,
+    "lng": 57.692926,
+    "themes": [
+      "coiffeurs"
+    ],
+    "zone": "est",
+    "description": "Salon de coiffure à Rivière du Rempart : coupe, coiffage et coloration."
+  },
+  {
+    "id": "coiffeur-acktar-hair-design",
+    "name": "Acktar Hair Design",
+    "category": "soins-bien-etre",
+    "address": "Plaine Magnien",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.431391,57.664373",
+    "lat": -20.431391,
+    "lng": 57.664373,
+    "themes": [
+      "coiffeurs"
+    ],
+    "zone": "sud",
+    "description": "Salon de coiffure à Plaine Magnien : coupe, coiffage et coloration."
+  },
+  {
+    "id": "coiffeur-cadet-s-hair-club",
+    "name": "Cadet's Hair Club",
+    "category": "soins-bien-etre",
+    "address": "Mahébourg",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.406496,57.706853",
+    "lat": -20.406496,
+    "lng": 57.706853,
+    "themes": [
+      "coiffeurs"
+    ],
+    "zone": "sud",
+    "description": "Salon de coiffure à Mahébourg : coupe, coiffage et coloration."
+  },
+  {
+    "id": "coiffeur-jenny-coiffure",
+    "name": "Jenny Coiffure",
+    "category": "soins-bien-etre",
+    "address": "Grande Rivière Noire",
+    "phone": "+230 4835962",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.360712,57.371641",
+    "lat": -20.360712,
+    "lng": 57.371641,
+    "themes": [
+      "coiffeurs"
+    ],
+    "zone": "ouest",
+    "description": "Salon de coiffure à Grande Rivière Noire : coupe, coiffage et coloration."
+  },
+  {
+    "id": "coiffeur-gentlemen-s-cut-shave",
+    "name": "Gentlemen's Cut & Shave",
+    "category": "soins-bien-etre",
+    "address": "Grande Rivière Noire",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.355133,57.365829",
+    "lat": -20.355133,
+    "lng": 57.365829,
+    "themes": [
+      "coiffeurs"
+    ],
+    "zone": "ouest",
+    "description": "Barbier (Gentlemen's Cut & Shave) à Grande Rivière Noire : coupe homme et taille/rasage de barbe."
+  },
+  {
+    "id": "coiffeur-gorah-coiffure",
+    "name": "Gorah Coiffure",
+    "category": "soins-bien-etre",
+    "address": "Rose Hill",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.242236,57.470822",
+    "lat": -20.242236,
+    "lng": 57.470822,
+    "themes": [
+      "coiffeurs"
+    ],
+    "zone": "centre",
+    "description": "Salon de coiffure à Rose Hill : coupe, coiffage et coloration."
+  },
+  {
+    "id": "coiffeur-stephanie-coiffure",
+    "name": "Stephanie Coiffure",
+    "category": "soins-bien-etre",
+    "address": "Beau Bassin",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.229568,57.467601",
+    "lat": -20.229568,
+    "lng": 57.467601,
+    "themes": [
+      "coiffeurs"
+    ],
+    "zone": "centre",
+    "description": "Salon de coiffure à Beau Bassin : coupe, coiffage et coloration."
+  },
+  {
+    "id": "coiffeur-vina-coiffure-esthetic",
+    "name": "Vina Coiffure & Esthetic",
+    "category": "soins-bien-etre",
+    "address": "Quatre Bornes",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.245732,57.478785",
+    "lat": -20.245732,
+    "lng": 57.478785,
+    "themes": [
+      "coiffeurs"
+    ],
+    "zone": "centre",
+    "description": "Salon de coiffure à Quatre Bornes : coupe, coiffage et coloration."
+  },
+  {
+    "id": "coiffeur-fair-hair",
+    "name": "Fair Hair",
+    "category": "soins-bien-etre",
+    "address": "Grand Baie",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.013866,57.587125",
+    "lat": -20.013866,
+    "lng": 57.587125,
+    "themes": [
+      "coiffeurs"
+    ],
+    "zone": "nord",
+    "description": "Salon de coiffure à Grand Baie : coupe, coiffage et coloration."
   }
 ]
