@@ -36776,5 +36776,53 @@
     ],
     "zone": "nord",
     "description": "Friperie solidaire The Good Shop : vêtements et articles de seconde main, à Calebasses (Pamplemousses)."
+  },
+  {
+    "id": "librairie-bourbon",
+    "name": "Librairie Bourbon",
+    "category": "seconde-main",
+    "address": "Port-Louis",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.161166,57.504246",
+    "lat": -20.161166,
+    "lng": 57.504246,
+    "themes": [
+      "jeux-livres"
+    ],
+    "zone": "centre",
+    "description": "Librairie Bourbon (Port-Louis, depuis les années 1960) : livres, dont livres scolaires (primaire et secondaire) d'occasion."
+  },
+  {
+    "id": "au-bonheur-des-livres",
+    "name": "Au Bonheur des Livres",
+    "category": "seconde-main",
+    "address": "London Way, Vacoas",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.301408,57.487077",
+    "lat": -20.301408,
+    "lng": 57.487077,
+    "themes": [
+      "jeux-livres"
+    ],
+    "zone": "centre",
+    "description": "Librairie solidaire (association Friends in Hope) à Vacoas, face au supermarché London : livres d'occasion à petits prix (romans, jeunesse, biographies…), dès Rs 5."
+  },
+  {
+    "id": "unique-bookshop-rose-hill",
+    "name": "Unique Bookshop",
+    "category": "seconde-main",
+    "address": "Rose Hill",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.246566,57.470712",
+    "lat": -20.246566,
+    "lng": 57.470712,
+    "themes": [
+      "jeux-livres"
+    ],
+    "zone": "centre",
+    "description": "Librairie de livres rares et d'occasion à Rose Hill (entreprise sociale de réemploi)."
   }
 ]
