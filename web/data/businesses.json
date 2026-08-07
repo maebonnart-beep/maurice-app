@@ -15307,7 +15307,8 @@
     "themes": [
       "peche"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Magasin d’articles et de matériel de pêche à Rivière Noire."
   },
   {
     "id": "le-trio-fishing",
@@ -18540,7 +18541,8 @@
     "themes": [
       "peche"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Point d'embarquement de Case Noyale : départ des sorties en mer et de pêche."
   },
   {
     "id": "the-st-regis-pier",
@@ -18555,7 +18557,8 @@
     "themes": [
       "peche"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Ponton du St Regis (Le Morne) : point d'embarquement pour sorties en mer et pêche."
   },
   {
     "id": "billfish",
@@ -18639,7 +18642,8 @@
     "themes": [
       "peche"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Magasin d’articles et de matériel de pêche à Grande Rivière Noire."
   },
   {
     "id": "domaine-de-saint-denis",
@@ -18654,7 +18658,8 @@
     "themes": [
       "peche"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Domaine nature dans la région de Plaine Champagne / Rivière Noire (activités de plein air). (Fiche à vérifier — lien avec la pêche incertain.)"
   },
   {
     "id": "catch-me-shop-ltd",
@@ -18669,7 +18674,8 @@
     "themes": [
       "peche"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Magasin d’articles et de matériel de pêche à Tamarin."
   },
   {
     "id": "zone-peche",
@@ -18684,7 +18690,8 @@
     "themes": [
       "peche"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Magasin d’articles et de matériel de pêche à Albion."
   },
   {
     "id": "zh-fishing-equipment",
@@ -18699,7 +18706,8 @@
     "themes": [
       "peche"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Magasin d’articles et de matériel de pêche à Port-Louis."
   },
   {
     "id": "albatross",
@@ -18714,7 +18722,8 @@
     "themes": [
       "peche"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Pêche et sorties en mer."
   },
   {
     "id": "papacasalo-ltd-fishing-and-boat-charters",
@@ -18746,7 +18755,8 @@
     "themes": [
       "peche"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Magasin d’articles et de matériel de pêche."
   },
   {
     "id": "fishing-camp",
@@ -18761,7 +18771,8 @@
     "themes": [
       "peche"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Magasin d’articles et de matériel de pêche à Port-Louis."
   },
   {
     "id": "jph-charters-point-of-embarkation",
@@ -18794,7 +18805,8 @@
     "themes": [
       "peche"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Sorties en mer et pêche au départ du Morne."
   },
   {
     "id": "fishing-trip-mauritius",
@@ -18809,7 +18821,8 @@
     "themes": [
       "peche"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Sorties de pêche (au gros / hauturière) et charter à Balaclava."
   },
   {
     "id": "solo-fishing-mauritius",
@@ -18824,7 +18837,8 @@
     "themes": [
       "peche"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Sorties de pêche (au gros / hauturière) et charter à St Joseph."
   },
   {
     "id": "tropic-lure-company",
@@ -18839,7 +18853,8 @@
     "themes": [
       "peche"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Magasin d’articles et de matériel de pêche à Rivière Noire."
   },
   {
     "id": "lionel-passion-guide-ltd",
@@ -18886,7 +18901,8 @@
     "themes": [
       "peche"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Sorties en mer à Tamarin : observation des dauphins et des baleines, snorkeling et pêche."
   },
   {
     "id": "dream-catcher",
@@ -18901,7 +18917,8 @@
     "themes": [
       "peche"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Pêche et sorties en mer à Bon Accueil."
   },
   {
     "id": "ti-baz-lapeche",
@@ -18916,7 +18933,8 @@
     "themes": [
       "peche"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Articles, appâts et matériel de pêche à Beau Bassin-Rose Hill."
   },
   {
     "id": "techspot-tackle-world-co-ltd",
@@ -18931,7 +18949,8 @@
     "themes": [
       "peche"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Magasin d’articles et de matériel de pêche à Beau Bassin-Rose Hill."
   },
   {
     "id": "anglers-spot-ltd",
@@ -18946,7 +18965,8 @@
     "themes": [
       "peche"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Magasin d’articles et de matériel de pêche à Brisée Verdière."
   },
   {
     "id": "izumi-fishing-and-outdoor-equipment",
@@ -18961,7 +18981,8 @@
     "themes": [
       "peche"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Magasin d’articles et de matériel de pêche à Port-Louis."
   },
   {
     "id": "nazareth-offshore-fishing-co-operatives-society-limited",
@@ -18976,7 +18997,8 @@
     "themes": [
       "peche"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Coopérative de pêcheurs hauturiers (Nazareth Offshore Fishing) basée à Port-Louis."
   },
   {
     "id": "king-fishing",
@@ -19010,7 +19032,8 @@
     "themes": [
       "peche"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Magasin d’articles et de matériel de pêche à Port-Louis."
   },
   {
     "id": "baie-du-tombeau-fisheries-post",
@@ -19025,7 +19048,8 @@
     "themes": [
       "peche"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Poste de pêche (Fisheries Post) à Baie du Tombeau : point d’appui pour les pêcheurs artisanaux (débarquement, enregistrement)."
   },
   {
     "id": "la-citronelle-2",
@@ -19040,7 +19064,8 @@
     "themes": [
       "peche"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Fiche pêche dans la région de Chamarel (activité à préciser)."
   },
   {
     "id": "ferme-marine-de-mahebourg-ltd",
@@ -19055,7 +19080,8 @@
     "themes": [
       "peche"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Ferme marine / aquaculture (Ferme Marine de Mahébourg) : élevage et production de poissons."
   },
   {
     "id": "ms-fishing-equipment",
@@ -19070,7 +19096,8 @@
     "themes": [
       "peche"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Magasin d’articles et de matériel de pêche à Beau Bassin-Rose Hill."
   },
   {
     "id": "la-butte-chaumon",
@@ -19085,7 +19112,8 @@
     "themes": [
       "peche"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Fiche pêche à confirmer (localisation et activité à préciser)."
   },
   {
     "id": "jc-fishing-mauritius",
@@ -19100,7 +19128,8 @@
     "themes": [
       "peche"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Pêche et sorties en mer."
   },
   {
     "id": "societe-d-exportation-materials-de-peche-ltee",
@@ -19115,7 +19144,8 @@
     "themes": [
       "peche"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Magasin d’articles et de matériel de pêche à Beau Bassin-Rose Hill."
   },
   {
     "id": "pointe-aux-sables-fisheries-post",
@@ -19130,7 +19160,8 @@
     "themes": [
       "peche"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Poste de pêche (Fisheries Post) à Pointe aux Sables : point d’appui pour les pêcheurs artisanaux (débarquement, enregistrement)."
   },
   {
     "id": "jardin-de-la-compagnie",
@@ -23630,7 +23661,8 @@
     "themes": [
       "peche"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Base nautique / point d'embarquement à Trou d'Eau Douce (La Pelouse) pour sorties en mer."
   },
   {
     "id": "seagull-big-game-fishing",
@@ -23662,7 +23694,8 @@
     "themes": [
       "peche"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Magasin d’articles et de matériel de pêche à Trou aux Biches."
   },
   {
     "id": "trou-aux-biches-fishing-charters",
@@ -23677,7 +23710,8 @@
     "themes": [
       "peche"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Sorties de pêche (au gros / hauturière) et charter à Trou aux Biches."
   },
   {
     "id": "coeur-de-lion-fishing-charters",
@@ -30022,7 +30056,8 @@
     "themes": [
       "peche"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Sorties de pêche (au gros / hauturière) et charter à Grand Baie."
   },
   {
     "id": "the-bank-of-mauritius-museum",
