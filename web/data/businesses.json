@@ -5272,7 +5272,8 @@
     "sandType": "Sable doré",
     "beachActivities": "Baignade, plongée, snorkeling, kitesurf, pêche en haute mer, golf",
     "beachLength": "Plus de 2 km",
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Plage de Bel Ombre, sur la côte sud : lagon calme et cadre préservé, agréable pour la baignade."
   },
   {
     "id": "roti-baboolall-triolet",
@@ -9430,7 +9431,8 @@
     "themes": [
       "golf"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Spécialiste du golf à Maurice (Mauritius Golf Tours) : organisation de séjours et de parcours de golf, réservations et équipement."
   },
   {
     "id": "moka-rangers-sports-club",
@@ -11968,7 +11970,8 @@
     "themes": [
       "networking"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Organisateur d'activités de team-building et d'événements d'entreprise à Maurice."
   },
   {
     "id": "team-building-events-mauritius",
@@ -11983,7 +11986,8 @@
     "themes": [
       "networking"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Organisateur d'activités de team-building et d'événements d'entreprise (bureau de Port-Louis)."
   },
   {
     "id": "le-jardin-anime",
@@ -12014,7 +12018,8 @@
     "themes": [
       "casinos"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Casino Ti Vegas à Grand Baie (groupe Funworld) : machines à sous et jeux."
   },
   {
     "id": "foraha-spa",
@@ -28622,7 +28627,8 @@
     "themes": [
       "tennis-padel"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Club de tennis à Port-Louis (Champ de Mars) : courts et cours."
   },
   {
     "id": "national-tennis-centre",
@@ -30001,7 +30007,8 @@
     "themes": [
       "culture-patrimoine"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "Conseil des musées de Maurice (organisme public) : gestion et supervision des musées nationaux."
   },
   {
     "id": "poonith-store",
@@ -32644,7 +32651,8 @@
       "parcs-animaliers"
     ],
     "entryPrice": "Rs 1000",
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Petit parc animalier au sein du Maritim Resort à Balaclava : tortues et animaux dans le jardin de l'hôtel."
   },
   {
     "id": "la-goelette-royal-palm-grand-baie",
@@ -33281,7 +33289,8 @@
     "themes": [
       "centres-loisirs-animations-enfants"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Centre d'activités et d'animations pour enfants à Pereybère."
   },
   {
     "id": "travelling-teachers-pereybere",
