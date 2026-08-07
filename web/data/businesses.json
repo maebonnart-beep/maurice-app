@@ -37185,5 +37185,1141 @@
       "jeux-livres"
     ],
     "description": "Site de petites annonces à Maurice (anciennement Vendito) : achat et vente d'occasion entre particuliers — jeux vidéo, consoles, livres et objets divers."
+  },
+  {
+    "id": "shafiq-hassen-optometrist",
+    "name": "Shafiq Hassen Optometrist",
+    "category": "utiles",
+    "address": "Moka",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.224203,57.495677",
+    "lat": -20.224203,
+    "lng": 57.495677,
+    "themes": [
+      "opticiens"
+    ],
+    "zone": "centre",
+    "description": "Opticien à Moka : lunettes, lentilles et examens de vue."
+  },
+  {
+    "id": "dentcare",
+    "name": "DentCare",
+    "category": "utiles",
+    "address": "Mapou",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.070603,57.61751",
+    "lat": -20.070603,
+    "lng": 57.61751,
+    "themes": [
+      "dentistes"
+    ],
+    "zone": "nord",
+    "description": "Cabinet dentaire à Mapou : soins dentaires, prévention et esthétique."
+  },
+  {
+    "id": "dr-bhunjun",
+    "name": "Dr Bhunjun",
+    "category": "utiles",
+    "address": "Vacoas-Phoenix",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.292647,57.493417",
+    "lat": -20.292647,
+    "lng": 57.493417,
+    "themes": [
+      "dentistes"
+    ],
+    "zone": "centre",
+    "description": "Cabinet dentaire à Vacoas-Phoenix : soins dentaires, prévention et esthétique."
+  },
+  {
+    "id": "cosmodent",
+    "name": "Cosmodent",
+    "category": "utiles",
+    "address": "Grande Rivière Noire",
+    "phone": "+234831065",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.353612,57.363118",
+    "lat": -20.353612,
+    "lng": 57.363118,
+    "themes": [
+      "dentistes"
+    ],
+    "zone": "ouest",
+    "description": "Cabinet dentaire à Grande Rivière Noire : soins dentaires, prévention et esthétique. Horaires : lun-ven 09h-17h."
+  },
+  {
+    "id": "mathieu-town-of-port-louis-ward-3",
+    "name": "Mathieu – Town of Port-Louis, Ward 3",
+    "category": "utiles",
+    "address": "Port-Louis",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.163733,57.503886",
+    "lat": -20.163733,
+    "lng": 57.503886,
+    "themes": [
+      "opticiens"
+    ],
+    "zone": "centre",
+    "description": "Opticien à Port-Louis : lunettes, lentilles et examens de vue."
+  },
+  {
+    "id": "optissimo",
+    "name": "Optissimo",
+    "category": "utiles",
+    "address": "Port-Louis",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.164381,57.500601",
+    "lat": -20.164381,
+    "lng": 57.500601,
+    "themes": [
+      "opticiens"
+    ],
+    "zone": "centre",
+    "description": "Opticien à Port-Louis : lunettes, lentilles et examens de vue."
+  },
+  {
+    "id": "mohamed-home-optician",
+    "name": "Mohamed Home (Optician)",
+    "category": "utiles",
+    "address": "Port-Louis",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.162459,57.503785",
+    "lat": -20.162459,
+    "lng": 57.503785,
+    "themes": [
+      "opticiens"
+    ],
+    "zone": "centre",
+    "description": "Opticien à Port-Louis : lunettes, lentilles et examens de vue."
+  },
+  {
+    "id": "fayyad-joomun",
+    "name": "Fayyad Joomun",
+    "category": "utiles",
+    "address": "Grand Baie",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.01906,57.579608",
+    "lat": -20.01906,
+    "lng": 57.579608,
+    "themes": [
+      "dentistes"
+    ],
+    "zone": "nord",
+    "description": "Cabinet dentaire à Grand Baie : soins dentaires, prévention et esthétique."
+  },
+  {
+    "id": "seiko-optical",
+    "name": "Seiko Optical",
+    "category": "utiles",
+    "address": "Mer Rouge",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.162088,57.505777",
+    "lat": -20.162088,
+    "lng": 57.505777,
+    "themes": [
+      "opticiens"
+    ],
+    "zone": "centre",
+    "description": "Opticien à Mer Rouge : lunettes, lentilles et examens de vue."
+  },
+  {
+    "id": "eye-care-centre",
+    "name": "Eye Care Centre",
+    "category": "utiles",
+    "address": "Mer Rouge",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.161738,57.506205",
+    "lat": -20.161738,
+    "lng": 57.506205,
+    "themes": [
+      "opticiens"
+    ],
+    "zone": "centre",
+    "description": "Opticien à Mer Rouge : lunettes, lentilles et examens de vue."
+  },
+  {
+    "id": "j-patel",
+    "name": "J. Patel",
+    "category": "utiles",
+    "address": "Port-Louis",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.162856,57.504381",
+    "lat": -20.162856,
+    "lng": 57.504381,
+    "themes": [
+      "opticiens"
+    ],
+    "zone": "centre",
+    "description": "Opticien à Port-Louis : lunettes, lentilles et examens de vue."
+  },
+  {
+    "id": "abdullah-hossen",
+    "name": "Abdullah Hossen",
+    "category": "utiles",
+    "address": "Port-Louis",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.16302,57.504562",
+    "lat": -20.16302,
+    "lng": 57.504562,
+    "themes": [
+      "opticiens"
+    ],
+    "zone": "centre",
+    "description": "Opticien à Port-Louis : lunettes, lentilles et examens de vue."
+  },
+  {
+    "id": "care-optics",
+    "name": "Care Optics",
+    "category": "utiles",
+    "address": "Plaine Verte",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.156131,57.517043",
+    "lat": -20.156131,
+    "lng": 57.517043,
+    "themes": [
+      "opticiens"
+    ],
+    "zone": "nord",
+    "description": "Opticien à Plaine Verte : lunettes, lentilles et examens de vue."
+  },
+  {
+    "id": "j-smile-dental-clinic",
+    "name": "J. Smile Dental Clinic",
+    "category": "utiles",
+    "address": "Le Hochet",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.131112,57.52922",
+    "lat": -20.131112,
+    "lng": 57.52922,
+    "themes": [
+      "dentistes"
+    ],
+    "zone": "nord",
+    "description": "Cabinet dentaire à Le Hochet : soins dentaires, prévention et esthétique."
+  },
+  {
+    "id": "suhotoo-optics",
+    "name": "Suhotoo optics",
+    "category": "utiles",
+    "address": "Mer Rouge",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.158768,57.510178",
+    "lat": -20.158768,
+    "lng": 57.510178,
+    "themes": [
+      "opticiens"
+    ],
+    "zone": "centre",
+    "description": "Opticien à Mer Rouge : lunettes, lentilles et examens de vue."
+  },
+  {
+    "id": "green-cross-bambous",
+    "name": "Green Cross – Bambous",
+    "category": "utiles",
+    "address": "Bambous",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.256201,57.418885",
+    "lat": -20.256201,
+    "lng": 57.418885,
+    "themes": [
+      "laboratoires"
+    ],
+    "zone": "ouest",
+    "description": "Laboratoire d’analyses médicales à Bambous : prélèvements et examens biologiques."
+  },
+  {
+    "id": "domun-ahmed-khan-optician",
+    "name": "Domun Ahmed Khan Optician",
+    "category": "utiles",
+    "address": "Port-Louis",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.163103,57.505563",
+    "lat": -20.163103,
+    "lng": 57.505563,
+    "themes": [
+      "opticiens"
+    ],
+    "zone": "centre",
+    "description": "Opticien à Port-Louis : lunettes, lentilles et examens de vue."
+  },
+  {
+    "id": "green-cross-richelieu",
+    "name": "Green Cross – Richelieu",
+    "category": "utiles",
+    "address": "Richelieu",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.189971,57.455039",
+    "lat": -20.189971,
+    "lng": 57.455039,
+    "themes": [
+      "laboratoires"
+    ],
+    "zone": "ouest",
+    "description": "Laboratoire d’analyses médicales à Richelieu : prélèvements et examens biologiques."
+  },
+  {
+    "id": "jawaheer",
+    "name": "Jawaheer",
+    "category": "utiles",
+    "address": "Port-Louis",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.163721,57.504877",
+    "lat": -20.163721,
+    "lng": 57.504877,
+    "themes": [
+      "opticiens"
+    ],
+    "zone": "centre",
+    "description": "Opticien à Port-Louis : lunettes, lentilles et examens de vue."
+  },
+  {
+    "id": "pro-medica",
+    "name": "Pro-Medica",
+    "category": "utiles",
+    "address": "Port-Louis",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.169404,57.504407",
+    "lat": -20.169404,
+    "lng": 57.504407,
+    "themes": [
+      "laboratoires"
+    ],
+    "zone": "centre",
+    "description": "Laboratoire d’analyses médicales à Port-Louis : prélèvements et examens biologiques."
+  },
+  {
+    "id": "best-optical-shop",
+    "name": "Best Optical Shop",
+    "category": "utiles",
+    "address": "Port-Louis",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.169729,57.501683",
+    "lat": -20.169729,
+    "lng": 57.501683,
+    "themes": [
+      "opticiens"
+    ],
+    "zone": "centre",
+    "description": "Opticien à Port-Louis : lunettes, lentilles et examens de vue."
+  },
+  {
+    "id": "gaya-opticians",
+    "name": "Gaya Opticians",
+    "category": "utiles",
+    "address": "Port-Louis",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.162319,57.506583",
+    "lat": -20.162319,
+    "lng": 57.506583,
+    "themes": [
+      "opticiens"
+    ],
+    "zone": "centre",
+    "description": "Opticien à Port-Louis : lunettes, lentilles et examens de vue."
+  },
+  {
+    "id": "farouk-hossen",
+    "name": "Farouk Hossen",
+    "category": "utiles",
+    "address": "Port-Louis",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.168297,57.503083",
+    "lat": -20.168297,
+    "lng": 57.503083,
+    "themes": [
+      "opticiens"
+    ],
+    "zone": "centre",
+    "description": "Opticien à Port-Louis : lunettes, lentilles et examens de vue."
+  },
+  {
+    "id": "pet-corner",
+    "name": "Pet Corner",
+    "category": "utiles",
+    "address": "Vacoas-Phoenix",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.277059,57.462458",
+    "lat": -20.277059,
+    "lng": 57.462458,
+    "themes": [
+      "veterinaires"
+    ],
+    "zone": "centre",
+    "description": "Clinique / cabinet vétérinaire à Vacoas-Phoenix : consultations, vaccinations et soins pour animaux."
+  },
+  {
+    "id": "suhotoo-optics-town-of-quatre-bornes-ward-3",
+    "name": "Suhotoo Optics",
+    "category": "utiles",
+    "address": "Quatre-Bornes",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.269112,57.476283",
+    "lat": -20.269112,
+    "lng": 57.476283,
+    "themes": [
+      "opticiens"
+    ],
+    "zone": "centre",
+    "description": "Opticien à Quatre-Bornes : lunettes, lentilles et examens de vue."
+  },
+  {
+    "id": "bright-smile",
+    "name": "Bright Smile",
+    "category": "utiles",
+    "address": "Quatre-Bornes",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.267847,57.477296",
+    "lat": -20.267847,
+    "lng": 57.477296,
+    "themes": [
+      "dentistes"
+    ],
+    "zone": "centre",
+    "description": "Cabinet dentaire à Quatre-Bornes : soins dentaires, prévention et esthétique."
+  },
+  {
+    "id": "jhowry-dassyne-optician",
+    "name": "Jhowry Dassyne Optician",
+    "category": "utiles",
+    "address": "Saint-Jean",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.266772,57.478374",
+    "lat": -20.266772,
+    "lng": 57.478374,
+    "themes": [
+      "opticiens"
+    ],
+    "zone": "centre",
+    "description": "Opticien à Saint-Jean : lunettes, lentilles et examens de vue."
+  },
+  {
+    "id": "r-s-nazir-opticians",
+    "name": "R&S Nazir Opticians",
+    "category": "utiles",
+    "address": "Beau Bassin",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.233904,57.470028",
+    "lat": -20.233904,
+    "lng": 57.470028,
+    "themes": [
+      "opticiens"
+    ],
+    "zone": "centre",
+    "description": "Opticien à Beau Bassin : lunettes, lentilles et examens de vue."
+  },
+  {
+    "id": "optique-patel",
+    "name": "Optique Patel",
+    "category": "utiles",
+    "address": "Beau Bassin",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.228148,57.467651",
+    "lat": -20.228148,
+    "lng": 57.467651,
+    "themes": [
+      "opticiens"
+    ],
+    "zone": "centre",
+    "description": "Opticien à Beau Bassin : lunettes, lentilles et examens de vue."
+  },
+  {
+    "id": "centre-medical-clinique-dentaire",
+    "name": "Centre Medical Clinique Dentaire",
+    "category": "utiles",
+    "address": "Rose Hill",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.236909,57.471728",
+    "lat": -20.236909,
+    "lng": 57.471728,
+    "themes": [
+      "dentistes"
+    ],
+    "zone": "sud",
+    "description": "Cabinet dentaire à Rose Hill : soins dentaires, prévention et esthétique."
+  },
+  {
+    "id": "gaya-opticans",
+    "name": "Gaya Opticans",
+    "category": "utiles",
+    "address": "Bambous",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.278783,57.402678",
+    "lat": -20.278783,
+    "lng": 57.402678,
+    "themes": [
+      "opticiens"
+    ],
+    "zone": "ouest",
+    "description": "Opticien à Bambous : lunettes, lentilles et examens de vue."
+  },
+  {
+    "id": "flacq-echography-and-x-ray-centre",
+    "name": "Flacq Echography and X-Ray Centre",
+    "category": "utiles",
+    "address": "Centre de Flacq",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.193179,57.724076",
+    "lat": -20.193179,
+    "lng": 57.724076,
+    "themes": [
+      "medecins"
+    ],
+    "zone": "est",
+    "description": "Cabinet médical à Centre de Flacq : consultations de médecine générale et suivi."
+  },
+  {
+    "id": "orthodondiste-dr-yan-luk-patrice",
+    "name": "Orthodondiste Dr Yan Luk Patrice",
+    "category": "utiles",
+    "address": "Rose Hill",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.243179,57.472658",
+    "lat": -20.243179,
+    "lng": 57.472658,
+    "themes": [
+      "dentistes"
+    ],
+    "zone": "centre",
+    "description": "Cabinet dentaire à Rose Hill : soins dentaires, prévention et esthétique."
+  },
+  {
+    "id": "jeff-patel",
+    "name": "Jeff Patel",
+    "category": "utiles",
+    "address": "Grand Baie",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.021512,57.578551",
+    "lat": -20.021512,
+    "lng": 57.578551,
+    "themes": [
+      "opticiens"
+    ],
+    "zone": "nord",
+    "description": "Opticien à Grand Baie : lunettes, lentilles et examens de vue."
+  },
+  {
+    "id": "eye-by-ridwaan-hossen",
+    "name": "Eye By Ridwaan Hossen",
+    "category": "utiles",
+    "address": "Grand Baie",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.02124,57.578949",
+    "lat": -20.02124,
+    "lng": 57.578949,
+    "themes": [
+      "opticiens"
+    ],
+    "zone": "nord",
+    "description": "Opticien à Grand Baie : lunettes, lentilles et examens de vue."
+  },
+  {
+    "id": "orthodentist-toofany",
+    "name": "Orthodentist Toofany",
+    "category": "utiles",
+    "address": "Saint-Jean",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.2672,57.485146",
+    "lat": -20.2672,
+    "lng": 57.485146,
+    "themes": [
+      "dentistes"
+    ],
+    "zone": "centre",
+    "description": "Cabinet dentaire à Saint-Jean : soins dentaires, prévention et esthétique."
+  },
+  {
+    "id": "green-cross-medical-laboratory",
+    "name": "Green Cross Medical Laboratory",
+    "category": "utiles",
+    "address": "Quatre-Bornes",
+    "phone": "+2304274999",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.267305,57.467032",
+    "lat": -20.267305,
+    "lng": 57.467032,
+    "themes": [
+      "laboratoires"
+    ],
+    "zone": "centre",
+    "description": "Laboratoire d’analyses médicales à Quatre-Bornes : prélèvements et examens biologiques."
+  },
+  {
+    "id": "green-cross",
+    "name": "Green cross",
+    "category": "utiles",
+    "address": "Beau Bassin",
+    "phone": "+2304654999",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.217409,57.469284",
+    "lat": -20.217409,
+    "lng": 57.469284,
+    "themes": [
+      "laboratoires"
+    ],
+    "zone": "centre",
+    "description": "Laboratoire d’analyses médicales à Beau Bassin : prélèvements et examens biologiques."
+  },
+  {
+    "id": "vincent-perdreau",
+    "name": "Vincent Perdreau",
+    "category": "utiles",
+    "address": "Chebel",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.213997,57.471741",
+    "lat": -20.213997,
+    "lng": 57.471741,
+    "themes": [
+      "medecins"
+    ],
+    "zone": "centre",
+    "description": "Cabinet médical à Chebel : consultations de médecine générale et suivi."
+  },
+  {
+    "id": "a-n-emritte",
+    "name": "A. N. Emritte",
+    "category": "utiles",
+    "address": "Beau Bassin",
+    "phone": "+2304676712",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.218615,57.472983",
+    "lat": -20.218615,
+    "lng": 57.472983,
+    "themes": [
+      "medecins"
+    ],
+    "zone": "centre",
+    "description": "Cabinet médical à Beau Bassin : consultations de médecine générale et suivi."
+  },
+  {
+    "id": "docteur-reshad-sumodhee",
+    "name": "Docteur Reshad Sumodhee",
+    "category": "utiles",
+    "address": "Beau Bassin",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.232662,57.471778",
+    "lat": -20.232662,
+    "lng": 57.471778,
+    "themes": [
+      "medecins"
+    ],
+    "zone": "centre",
+    "description": "Cabinet médical à Beau Bassin : consultations de médecine générale et suivi."
+  },
+  {
+    "id": "dr-parmessur",
+    "name": "Dr Parmessur",
+    "category": "utiles",
+    "address": "Beau Bassin",
+    "phone": "+23057753187",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.224701,57.470433",
+    "lat": -20.224701,
+    "lng": 57.470433,
+    "themes": [
+      "medecins"
+    ],
+    "zone": "centre",
+    "description": "Cabinet médical à Beau Bassin : consultations de médecine générale et suivi."
+  },
+  {
+    "id": "dove-dental",
+    "name": "Dove Dental",
+    "category": "utiles",
+    "address": "Mahébourg",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.407624,57.704607",
+    "lat": -20.407624,
+    "lng": 57.704607,
+    "themes": [
+      "dentistes"
+    ],
+    "zone": "sud",
+    "description": "Cabinet dentaire à Mahébourg : soins dentaires, prévention et esthétique. Horaires : lun-samm 09h-16h."
+  },
+  {
+    "id": "dr-peerbux",
+    "name": "Dr. Peerbux",
+    "category": "utiles",
+    "address": "Mahébourg",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.407738,57.705784",
+    "lat": -20.407738,
+    "lng": 57.705784,
+    "themes": [
+      "dentistes"
+    ],
+    "zone": "sud",
+    "description": "Cabinet dentaire à Mahébourg : soins dentaires, prévention et esthétique."
+  },
+  {
+    "id": "dr-dhooboreea",
+    "name": "Dr. Dhooboreea",
+    "category": "utiles",
+    "address": "Mahébourg",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.406464,57.706902",
+    "lat": -20.406464,
+    "lng": 57.706902,
+    "themes": [
+      "dentistes"
+    ],
+    "zone": "sud",
+    "description": "Cabinet dentaire à Mahébourg : soins dentaires, prévention et esthétique."
+  },
+  {
+    "id": "mathieu-mahebourg",
+    "name": "Mathieu – Mahébourg",
+    "category": "utiles",
+    "address": "Mahébourg",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.406546,57.707986",
+    "lat": -20.406546,
+    "lng": 57.707986,
+    "themes": [
+      "opticiens"
+    ],
+    "zone": "sud",
+    "description": "Opticien à Mahébourg : lunettes, lentilles et examens de vue."
+  },
+  {
+    "id": "neurobalance-and-ent-clinic",
+    "name": "Neurobalance and ENT clinic",
+    "category": "utiles",
+    "address": "Beau Bassin",
+    "phone": "+2304667778",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.228803,57.466825",
+    "lat": -20.228803,
+    "lng": 57.466825,
+    "themes": [
+      "medecins"
+    ],
+    "zone": "centre",
+    "description": "Cabinet médical à Beau Bassin : consultations de médecine générale et suivi."
+  },
+  {
+    "id": "myvet",
+    "name": "MYVET",
+    "category": "utiles",
+    "address": "Centre de Flacq",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.188919,57.72313",
+    "lat": -20.188919,
+    "lng": 57.72313,
+    "themes": [
+      "veterinaires"
+    ],
+    "zone": "est",
+    "description": "Clinique / cabinet vétérinaire à Centre de Flacq : consultations, vaccinations et soins pour animaux."
+  },
+  {
+    "id": "dr-s-sibartie",
+    "name": "Dr S. Sibartie",
+    "category": "utiles",
+    "address": "Saint-Jean",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.263643,57.488333",
+    "lat": -20.263643,
+    "lng": 57.488333,
+    "themes": [
+      "medecins"
+    ],
+    "zone": "centre",
+    "description": "Cabinet médical à Saint-Jean : consultations de médecine générale et suivi."
+  },
+  {
+    "id": "dr-s-mudoo",
+    "name": "Dr S. Mudoo",
+    "category": "utiles",
+    "address": "Saint-Jean",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.269227,57.484556",
+    "lat": -20.269227,
+    "lng": 57.484556,
+    "themes": [
+      "medecins"
+    ],
+    "zone": "centre",
+    "description": "Cabinet médical à Saint-Jean : consultations de médecine générale et suivi."
+  },
+  {
+    "id": "dr-m-dauhoo",
+    "name": "Dr. M. Dauhoo",
+    "category": "utiles",
+    "address": "Saint-Jean",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.269297,57.485219",
+    "lat": -20.269297,
+    "lng": 57.485219,
+    "themes": [
+      "medecins"
+    ],
+    "zone": "centre",
+    "description": "Cabinet médical à Saint-Jean : consultations de médecine générale et suivi."
+  },
+  {
+    "id": "patel-optics",
+    "name": "Patel optics",
+    "category": "utiles",
+    "address": "Moka",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.224418,57.52573",
+    "lat": -20.224418,
+    "lng": 57.52573,
+    "themes": [
+      "opticiens"
+    ],
+    "zone": "centre",
+    "description": "Opticien à Moka : lunettes, lentilles et examens de vue."
+  },
+  {
+    "id": "novalab",
+    "name": "Novalab",
+    "category": "utiles",
+    "address": "Vacoas-Phoenix",
+    "phone": "+230 660 1900",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.279195,57.486452",
+    "lat": -20.279195,
+    "lng": 57.486452,
+    "themes": [
+      "laboratoires"
+    ],
+    "zone": "centre",
+    "description": "Laboratoire d’analyses médicales à Vacoas-Phoenix : prélèvements et examens biologiques. Horaires : lun-ven 07h-17h; sam 07h-14h."
+  },
+  {
+    "id": "helios-eyewear-shop",
+    "name": "Helios - Eyewear Shop",
+    "category": "utiles",
+    "address": "Mapou",
+    "phone": "+2302671064",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.070353,57.615534",
+    "lat": -20.070353,
+    "lng": 57.615534,
+    "themes": [
+      "opticiens"
+    ],
+    "zone": "nord",
+    "description": "Opticien à Mapou : lunettes, lentilles et examens de vue. Horaires : lun-samm 09h-17h."
+  },
+  {
+    "id": "twinmed-ltd",
+    "name": "Twinmed Ltd",
+    "category": "utiles",
+    "address": "Vacoas-Phoenix",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.297838,57.49237",
+    "lat": -20.297838,
+    "lng": 57.49237,
+    "themes": [
+      "laboratoires"
+    ],
+    "zone": "centre",
+    "description": "Laboratoire d’analyses médicales à Vacoas-Phoenix : prélèvements et examens biologiques."
+  },
+  {
+    "id": "vinay-singh-veterinaire",
+    "name": "Vinay Singh Veterinaire",
+    "category": "utiles",
+    "address": "Verdun",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.233246,57.556136",
+    "lat": -20.233246,
+    "lng": 57.556136,
+    "themes": [
+      "veterinaires"
+    ],
+    "zone": "centre",
+    "description": "Clinique / cabinet vétérinaire à Verdun : consultations, vaccinations et soins pour animaux."
+  },
+  {
+    "id": "ezio-opticians",
+    "name": "Ezio opticians",
+    "category": "utiles",
+    "address": "Vacoas-Phoenix",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.302644,57.485128",
+    "lat": -20.302644,
+    "lng": 57.485128,
+    "themes": [
+      "opticiens"
+    ],
+    "zone": "centre",
+    "description": "Opticien à Vacoas-Phoenix : lunettes, lentilles et examens de vue."
+  },
+  {
+    "id": "biosante",
+    "name": "BIOSANTE",
+    "category": "utiles",
+    "address": "Vacoas-Phoenix",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.298567,57.493177",
+    "lat": -20.298567,
+    "lng": 57.493177,
+    "themes": [
+      "laboratoires"
+    ],
+    "zone": "centre",
+    "description": "Laboratoire d’analyses médicales à Vacoas-Phoenix : prélèvements et examens biologiques."
+  },
+  {
+    "id": "dr-mohamed-din-moraby",
+    "name": "Dr. Mohamed Din Moraby",
+    "category": "utiles",
+    "address": "Vacoas-Phoenix",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.299225,57.491375",
+    "lat": -20.299225,
+    "lng": 57.491375,
+    "themes": [
+      "laboratoires"
+    ],
+    "zone": "centre",
+    "description": "Laboratoire d’analyses médicales à Vacoas-Phoenix : prélèvements et examens biologiques."
+  },
+  {
+    "id": "dentalign-clinics-ltd-mauritius",
+    "name": "Dentalign Clinics Ltd(Mauritius)",
+    "category": "utiles",
+    "address": "Vacoas-Phoenix",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.29956,57.491973",
+    "lat": -20.29956,
+    "lng": 57.491973,
+    "themes": [
+      "dentistes"
+    ],
+    "zone": "centre",
+    "description": "Cabinet dentaire à Vacoas-Phoenix : soins dentaires, prévention et esthétique."
+  },
+  {
+    "id": "mrs-h-b-peerally",
+    "name": "Mrs  H.B. Peerally",
+    "category": "utiles",
+    "address": "Vacoas-Phoenix",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.302652,57.485144",
+    "lat": -20.302652,
+    "lng": 57.485144,
+    "themes": [
+      "medecins"
+    ],
+    "zone": "centre",
+    "description": "Cabinet médical à Vacoas-Phoenix : consultations de médecine générale et suivi."
+  },
+  {
+    "id": "dr-v-siraz",
+    "name": "Dr V. Siraz",
+    "category": "utiles",
+    "address": "Saint Pierre",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.223433,57.536103",
+    "lat": -20.223433,
+    "lng": 57.536103,
+    "themes": [
+      "medecins"
+    ],
+    "zone": "centre",
+    "description": "Cabinet médical à Saint Pierre : consultations de médecine générale et suivi. Horaires : 13.30 - 18.30."
+  },
+  {
+    "id": "pro-lab",
+    "name": "Pro Lab",
+    "category": "utiles",
+    "address": "Beau Bassin",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.22191,57.476192",
+    "lat": -20.22191,
+    "lng": 57.476192,
+    "themes": [
+      "laboratoires"
+    ],
+    "zone": "centre",
+    "description": "Laboratoire d’analyses médicales à Beau Bassin : prélèvements et examens biologiques."
+  },
+  {
+    "id": "laserostop",
+    "name": "Laserostop",
+    "category": "utiles",
+    "address": "Le Bout du Monde",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.23986,57.485456",
+    "lat": -20.23986,
+    "lng": 57.485456,
+    "themes": [
+      "medecins"
+    ],
+    "zone": "centre",
+    "description": "Cabinet médical à Le Bout du Monde : consultations de médecine générale et suivi."
+  },
+  {
+    "id": "dr-b-ramtohul",
+    "name": "Dr B. RAMTOHUL",
+    "category": "utiles",
+    "address": "Plaisance",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.239655,57.466237",
+    "lat": -20.239655,
+    "lng": 57.466237,
+    "themes": [
+      "medecins"
+    ],
+    "zone": "centre",
+    "description": "Cabinet médical à Plaisance : consultations de médecine générale et suivi."
+  },
+  {
+    "id": "vetmania-clinique-veterinaire-24-7-grand-baie",
+    "name": "Vetmania - Clinique Vétérinaire 24/7 (Grand Baie)",
+    "category": "utiles",
+    "address": "Grand Baie",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.013372,57.591359",
+    "lat": -20.013372,
+    "lng": 57.591359,
+    "themes": [
+      "veterinaires"
+    ],
+    "zone": "nord",
+    "description": "Clinique / cabinet vétérinaire à Grand Baie : consultations, vaccinations et soins pour animaux. Service d’urgence 24h/24."
+  },
+  {
+    "id": "vetmania-24-7-moka",
+    "name": "Vetmania 24/7 - Moka",
+    "category": "utiles",
+    "address": "Moka",
+    "phone": "+230 5941 6904",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.252139,57.587224",
+    "lat": -20.2186,
+    "lng": 57.4961,
+    "themes": [
+      "veterinaires"
+    ],
+    "zone": "centre",
+    "description": "Clinique / cabinet vétérinaire à Moka : consultations, vaccinations et soins pour animaux. Service d’urgence 24h/24."
+  },
+  {
+    "id": "vetocare-clinic",
+    "name": "Vetocare Clinic",
+    "category": "utiles",
+    "address": "Vacoas-Phoenix",
+    "phone": "+230 5947 2244",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.315052,57.52115",
+    "lat": -20.315052,
+    "lng": 57.52115,
+    "themes": [
+      "veterinaires"
+    ],
+    "zone": "centre",
+    "description": "Clinique / cabinet vétérinaire à Vacoas-Phoenix : consultations, vaccinations et soins pour animaux."
+  },
+  {
+    "id": "dr-b-d-mungur-veterinary-services",
+    "name": "Dr B. D. Mungur Veterinary Services",
+    "category": "utiles",
+    "address": "Port-Louis",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.162452,57.502804",
+    "lat": -20.162452,
+    "lng": 57.502804,
+    "themes": [
+      "veterinaires"
+    ],
+    "zone": "centre",
+    "description": "Clinique / cabinet vétérinaire à Port-Louis : consultations, vaccinations et soins pour animaux."
+  },
+  {
+    "id": "clinique-veterinaire-de-carlos-dr-eric-bestel",
+    "name": "Clinique Vétérinaire De Carlos (Dr Eric Bestel)",
+    "category": "utiles",
+    "address": "Tamarin",
+    "phone": "+230 483 6858",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.329216,57.377679",
+    "lat": -20.329216,
+    "lng": 57.377679,
+    "themes": [
+      "veterinaires"
+    ],
+    "zone": "ouest",
+    "description": "Clinique / cabinet vétérinaire à Tamarin : consultations, vaccinations et soins pour animaux."
+  },
+  {
+    "id": "island-vet-clinic-dr-sam-n",
+    "name": "Island Vet Clinic (Dr Sam N)",
+    "category": "utiles",
+    "address": "Quatre Bornes",
+    "phone": "+230 5924 9457",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.276463,57.477135",
+    "lat": -20.276463,
+    "lng": 57.477135,
+    "themes": [
+      "veterinaires"
+    ],
+    "zone": "centre",
+    "description": "Clinique / cabinet vétérinaire à Quatre Bornes : consultations, vaccinations et soins pour animaux."
   }
 ]

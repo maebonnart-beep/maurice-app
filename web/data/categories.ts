@@ -203,6 +203,11 @@ export const SUBCATEGORIES: Partial<Record<CategoryKey, Subcategory[]>> = {
   utiles: [
     { key: "cliniques-privees", label: "Cliniques privées", emoji: "🏥" },
     { key: "centres-sante-publics", label: "Centres de santé publics", emoji: "⚕️" },
+    { key: "medecins", label: "Médecins & généralistes", emoji: "🩺" },
+    { key: "dentistes", label: "Dentistes", emoji: "🦷" },
+    { key: "opticiens", label: "Opticiens", emoji: "👓" },
+    { key: "laboratoires", label: "Laboratoires d'analyses", emoji: "🔬" },
+    { key: "veterinaires", label: "Vétérinaires", emoji: "🐾" },
     { key: "postes-police", label: "Postes de police", emoji: "🚓" },
     { key: "poste", label: "Poste", emoji: "📮" },
     { key: "assurances", label: "Assurances", emoji: "🛡️" },
