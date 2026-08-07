@@ -13608,7 +13608,7 @@
     "lat": -20.0218451,
     "lng": 57.5786797,
     "themes": [
-      "banques"
+      "distributeurs"
     ],
     "zone": "nord"
   },
@@ -17135,7 +17135,7 @@
     "lat": -20.279238,
     "lng": 57.4024376,
     "themes": [
-      "banques"
+      "distributeurs"
     ],
     "zone": "ouest"
   },
@@ -20549,7 +20549,8 @@
     "themes": [
       "assurances"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "description": "State Insurance Company of Mauritius (SICOM) — siège, Port-Louis. Assurances vie, générales et santé, pensions et placements. Horaires : lun–ven 8h30–16h30 (fermé le samedi)."
   },
   {
     "id": "update-system-tech-ltd",
@@ -31451,7 +31452,7 @@
     "lat": -20.2475179,
     "lng": 57.481262,
     "themes": [
-      "banques"
+      "distributeurs"
     ],
     "zone": "centre"
   },
@@ -31465,7 +31466,7 @@
     "lat": -20.171875,
     "lng": 57.5019134,
     "themes": [
-      "banques"
+      "distributeurs"
     ],
     "zone": "centre"
   },
@@ -31478,7 +31479,7 @@
     "lat": -20.2256364,
     "lng": 57.4971163,
     "themes": [
-      "banques"
+      "distributeurs"
     ],
     "zone": "centre"
   },
@@ -31493,7 +31494,7 @@
     "lat": -20.168145,
     "lng": 57.486215,
     "themes": [
-      "banques"
+      "distributeurs"
     ],
     "zone": "centre"
   },
@@ -31507,7 +31508,7 @@
     "lat": -20.1585091,
     "lng": 57.506653,
     "themes": [
-      "banques"
+      "distributeurs"
     ],
     "zone": "centre"
   },
@@ -31522,7 +31523,7 @@
     "lat": -20.2260431,
     "lng": 57.538153,
     "themes": [
-      "banques"
+      "distributeurs"
     ],
     "zone": "centre"
   },
@@ -31536,7 +31537,7 @@
     "lat": -20.129513,
     "lng": 57.521884,
     "themes": [
-      "banques"
+      "distributeurs"
     ],
     "zone": "centre"
   },
@@ -31549,7 +31550,7 @@
     "lat": -20.1687924,
     "lng": 57.7660984,
     "themes": [
-      "banques"
+      "distributeurs"
     ],
     "zone": "est"
   },
@@ -31562,7 +31563,7 @@
     "lat": -20.1513894,
     "lng": 57.5718004,
     "themes": [
-      "banques"
+      "distributeurs"
     ],
     "zone": "centre"
   },
@@ -31575,7 +31576,7 @@
     "lat": -20.2250002,
     "lng": 57.4965086,
     "themes": [
-      "banques"
+      "distributeurs"
     ],
     "zone": "centre"
   },
@@ -31589,7 +31590,7 @@
     "lat": -20.1643008,
     "lng": 57.5049724,
     "themes": [
-      "banques"
+      "distributeurs"
     ],
     "zone": "centre"
   },
@@ -31603,7 +31604,7 @@
     "lat": -20.1599011,
     "lng": 57.5092602,
     "themes": [
-      "banques"
+      "distributeurs"
     ],
     "zone": "centre"
   },
@@ -31630,7 +31631,7 @@
     "lat": -20.1590772,
     "lng": 57.5119183,
     "themes": [
-      "banques"
+      "distributeurs"
     ],
     "zone": "centre"
   },
@@ -31644,7 +31645,7 @@
     "lat": -20.1651707,
     "lng": 57.5056269,
     "themes": [
-      "banques"
+      "distributeurs"
     ],
     "zone": "centre"
   },
@@ -31672,7 +31673,7 @@
     "lat": -20.2195586,
     "lng": 57.5023321,
     "themes": [
-      "banques"
+      "distributeurs"
     ],
     "zone": "centre"
   },
@@ -31687,7 +31688,7 @@
     "lat": -20.2471896,
     "lng": 57.4808,
     "themes": [
-      "banques"
+      "distributeurs"
     ],
     "zone": "centre"
   },
@@ -31702,7 +31703,7 @@
     "lat": -20.2338774,
     "lng": 57.4703485,
     "themes": [
-      "banques"
+      "distributeurs"
     ],
     "zone": "centre"
   },
@@ -31717,7 +31718,7 @@
     "lat": -20.2440894,
     "lng": 57.4939367,
     "themes": [
-      "banques"
+      "distributeurs"
     ],
     "zone": "centre"
   },
