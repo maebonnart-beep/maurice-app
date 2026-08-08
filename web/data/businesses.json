@@ -13420,7 +13420,7 @@
       "cliniques-privees"
     ],
     "zone": "nord",
-    "description": "Clinique privée du réseau C-Care à Mont Choisy (Grand Baie), avec urgences 24h/24, bloc opératoire, service de radiologie (radio, échographie, scanner) et consultations pluridisciplinaires couvrant une trentaine de spécialités dont cardiologie, chirurgie générale, gynécologie-obstétrique, pédiatrie, dermatologie et orthopédie."
+    "description": "Clinique privée du réseau C-Care à Mont Choisy, avec urgences 24h/24, bloc opératoire, service de radiologie (radio, échographie, scanner) et consultations pluridisciplinaires couvrant une trentaine de spécialités dont cardiologie, chirurgie générale, gynécologie-obstétrique, pédiatrie, dermatologie et orthopédie."
   },
   {
     "id": "centre-medical-du-nord",
@@ -13635,7 +13635,7 @@
       "depannages"
     ],
     "zone": "nord",
-    "description": "Entreprise de contracting : travaux du bâtiment et rénovation. Basée à Grand Baie."
+    "description": "Entreprise de contracting : travaux du bâtiment et rénovation."
   },
   {
     "id": "locksmith-mauritius",
@@ -13651,7 +13651,7 @@
       "depannages"
     ],
     "zone": "nord",
-    "description": "Serrurerie : ouverture de portes, remplacement et réparation de serrures, reproduction de clés et sécurisation. Interventions à Grand Baie et dans le nord."
+    "description": "Serrurerie : ouverture de portes, remplacement et réparation de serrures, reproduction de clés et sécurisation. Interventions et dans le nord."
   },
   {
     "id": "grand-bay-taxi-service",
@@ -13747,7 +13747,7 @@
       "taxis-transferts"
     ],
     "zone": "nord",
-    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés) avec chauffeur-guide, basé à Cap Malheureux."
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés) avec chauffeur-guide."
   },
   {
     "id": "yash-taxi-service",
@@ -13860,7 +13860,7 @@
       "taxis-transferts"
     ],
     "zone": "est",
-    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés), basé à Amaury."
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés)."
   },
   {
     "id": "taxi-guide-mauritius",
@@ -13893,7 +13893,7 @@
       "location-voiture"
     ],
     "zone": "nord",
-    "description": "Location de voiture à Grand Baie : véhicules de tourisme, tarifs journée/semaine, livraison possible."
+    "description": "Location de voiture : véhicules de tourisme, tarifs journée/semaine, livraison possible."
   },
   {
     "id": "moride-mauritius-taxi-service",
@@ -13925,7 +13925,7 @@
       "location-voiture"
     ],
     "zone": "nord",
-    "description": "Location de voiture à Grand Baie : véhicules de tourisme, tarifs journée/semaine, livraison possible."
+    "description": "Location de voiture : véhicules de tourisme, tarifs journée/semaine, livraison possible."
   },
   {
     "id": "sam-taxi-mauritius-flic-en-flac-tamarin",
@@ -13941,7 +13941,7 @@
       "taxis-transferts"
     ],
     "zone": "ouest",
-    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés), basé à Tamarin."
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés)."
   },
   {
     "id": "aeroport-sir-seewoosagur-ramgoolam",
@@ -13957,7 +13957,7 @@
       "taxis-transferts"
     ],
     "zone": "sud",
-    "description": "Aéroport international Sir Seewoosagur Ramgoolam (Plaine Magnien) : principal aéroport de Maurice — point d'arrivée et de départ des transferts, taxis et navettes."
+    "description": "Aéroport international Sir Seewoosagur Ramgoolam : principal aéroport de Maurice — point d'arrivée et de départ des transferts, taxis et navettes."
   },
   {
     "id": "coastal-tours-mauritius",
@@ -13989,7 +13989,7 @@
       "taxis-transferts"
     ],
     "zone": "est",
-    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés) avec chauffeur-guide, basé à Quatre Cocos."
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés) avec chauffeur-guide."
   },
   {
     "id": "samtours-turquoise-voyages",
@@ -14021,7 +14021,7 @@
       "location-voiture"
     ],
     "zone": "nord",
-    "description": "Location de voiture à Triolet : véhicules de tourisme, tarifs journée/semaine, livraison possible."
+    "description": "Location de voiture : véhicules de tourisme, tarifs journée/semaine, livraison possible."
   },
   {
     "id": "roshan-taxi-flic-en-flac",
@@ -14053,7 +14053,7 @@
       "taxis-transferts"
     ],
     "zone": "nord",
-    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés), basé à Grand Baie."
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés)."
   },
   {
     "id": "chucky-taxi-mauritius",
@@ -14069,7 +14069,7 @@
       "taxis-transferts"
     ],
     "zone": "centre",
-    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés), basé à Quatre Bornes."
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés)."
   },
   {
     "id": "new-beginnings-coaching-limited",
@@ -17050,7 +17050,7 @@
       "cliniques-privees"
     ],
     "zone": "ouest",
-    "description": "Clinique médicale générale à Flic en Flac (The West Doctors)."
+    "description": "Clinique médicale générale (The West Doctors)."
   },
   {
     "id": "polyclinique-de-l-quest",
@@ -17204,7 +17204,7 @@
       "depannages"
     ],
     "zone": "ouest",
-    "description": "Énergie solaire : installation et maintenance de systèmes photovoltaïques et solutions énergétiques. Basée à La Mivoie, Tamarin."
+    "description": "Énergie solaire : installation et maintenance de systèmes photovoltaïques et solutions énergétiques. Basée à La Mivoie."
   },
   {
     "id": "vr-plumbing-services",
@@ -17252,7 +17252,7 @@
       "taxis-transferts"
     ],
     "zone": "ouest",
-    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés), basé à Flic en Flac."
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés)."
   },
   {
     "id": "mauritius-taxi-hub",
@@ -17268,7 +17268,7 @@
       "taxis-transferts"
     ],
     "zone": "ouest",
-    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés), basé à Flic en Flac."
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés)."
   },
   {
     "id": "top-taxi-service-mauritius",
@@ -17300,7 +17300,7 @@
       "taxis-transferts"
     ],
     "zone": "ouest",
-    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés), basé à Flic en Flac."
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés)."
   },
   {
     "id": "paco-taxi-mauritius",
@@ -17332,7 +17332,7 @@
       "taxis-transferts"
     ],
     "zone": "ouest",
-    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés), basé à Flic en Flac."
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés)."
   },
   {
     "id": "vixvipservices-taxi-and-tours-service",
@@ -20756,7 +20756,7 @@
       "taxis-transferts"
     ],
     "zone": "ouest",
-    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés), basé à La Gaulette."
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés)."
   },
   {
     "id": "desire-taxi-service-mauritius",
@@ -20788,7 +20788,7 @@
       "taxis-transferts"
     ],
     "zone": "sud",
-    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés), basé à Plaine Magnien."
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés)."
   },
   {
     "id": "taxi-services-mauritius-paradise",
@@ -20900,7 +20900,7 @@
       "taxis-transferts"
     ],
     "zone": "nord",
-    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés) avec chauffeur-guide, basé à Trou aux Biches."
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés) avec chauffeur-guide."
   },
   {
     "id": "island-ride-taxi-services-tours-mauritius",
@@ -20916,7 +20916,7 @@
       "taxis-transferts"
     ],
     "zone": "sud",
-    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés) avec chauffeur-guide, basé à Plaine Magnien."
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés) avec chauffeur-guide."
   },
   {
     "id": "tropical-taxi-mauritius-lady-driver-available",
@@ -20932,7 +20932,7 @@
       "taxis-transferts"
     ],
     "zone": "centre",
-    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés), basé à Quatre Bornes."
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés)."
   },
   {
     "id": "zip-line-adventure",
@@ -21012,7 +21012,7 @@
       "taxis-transferts"
     ],
     "zone": "sud",
-    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés), basé à Plaine Magnien."
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés)."
   },
   {
     "id": "mountain-view",
@@ -22351,7 +22351,7 @@
       "cliniques-privees"
     ],
     "zone": "centre",
-    "description": "Hôpital privé historique à Curepipe (112 lits, réseau C-Care) offrant plus de 25 spécialités : cardiologie, gynécologie-obstétrique, oncologie, neurochirurgie, pédiatrie, orthopédie, chirurgie générale et vasculaire, radiologie, et urgences 24h/24, 7j/7."
+    "description": "Hôpital privé historique (112 lits, réseau C-Care) offrant plus de 25 spécialités : cardiologie, gynécologie-obstétrique, oncologie, neurochirurgie, pédiatrie, orthopédie, chirurgie générale et vasculaire, radiologie, et urgences 24h/24, 7j/7."
   },
   {
     "id": "clinique-muller-ex-lorette",
@@ -22884,7 +22884,7 @@
       "taxis-transferts"
     ],
     "zone": "nord",
-    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés), basé à Pointe aux Piments."
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés)."
   },
   {
     "id": "taxi",
@@ -25470,7 +25470,7 @@
       "expatriation-visas"
     ],
     "zone": "nord",
-    "description": "Accompagnement à l'expatriation à Maurice : visas et permis de résidence, démarches administratives, acquisition immobilière, création d'entreprise et intégration — pour freelances, retraités et familles. Basée à Pereybère (Grand Baie).",
+    "description": "Accompagnement à l'expatriation à Maurice : visas et permis de résidence, démarches administratives, acquisition immobilière, création d'entreprise et intégration — pour freelances, retraités et familles. Basée à Pereybère.",
     "badge": "coup-de-coeur"
   },
   {
@@ -26816,7 +26816,8 @@
       "pharmacies"
     ],
     "zone": "centre",
-    "description": "Pharmacie à Port-Louis (Sir William Newton St). Médicaments sur ordonnance, parapharmacie et conseils santé. Ouverte tous les jours."
+    "description": "Pharmacie à l'angle de la rue Sir William Newton et de la Queen Street, en plein centre de Port-Louis. Médicaments sur ordonnance, parapharmacie, médecine naturelle, compléments alimentaires, produits orthopédiques, hygiène et produits vétérinaires ; achat en boutique, retrait et livraison.",
+    "hours": "Lun-ven 8h-17h, sam 8h-14h ; fermé dim. et jours fériés"
   },
   {
     "id": "pharmacie-espace-sante-curepipe",
@@ -30149,7 +30150,7 @@
       "cliniques-privees"
     ],
     "zone": "nord",
-    "description": "Centre médical à Grand Baie, dirigé par un cardiologue, proposant consultations générales et spécialisées, rééducation/kinésithérapie, médecine esthétique, thérapies régénératives et greffe de cheveux."
+    "description": "Centre médical, dirigé par un cardiologue, proposant consultations générales et spécialisées, rééducation/kinésithérapie, médecine esthétique, thérapies régénératives et greffe de cheveux."
   },
   {
     "id": "mcb-branch",
@@ -37441,7 +37442,7 @@
       "laboratoires"
     ],
     "zone": "ouest",
-    "description": "Laboratoire d’analyses médicales : prélèvements et examens biologiques."
+    "description": "Antenne du réseau Green Cross Medical Laboratory (fondé en 1990), premier réseau de laboratoires d'analyses médicales de Maurice, présent sur plus de 40 sites de l'île. Analyses biologiques complètes (sang, urine, bilans, etc.) et service de prélèvement à domicile, particulièrement utile pour les personnes âgées, à mobilité réduite ou convalescentes."
   },
   {
     "id": "domun-ahmed-khan-optician",
@@ -37473,7 +37474,7 @@
       "laboratoires"
     ],
     "zone": "ouest",
-    "description": "Laboratoire d’analyses médicales : prélèvements et examens biologiques."
+    "description": "Antenne du réseau Green Cross Medical Laboratory (fondé en 1990), premier réseau de laboratoires d'analyses médicales de Maurice, présent sur plus de 40 sites de l'île. Analyses biologiques complètes (sang, urine, bilans, etc.) et service de prélèvement à domicile, particulièrement utile pour les personnes âgées, à mobilité réduite ou convalescentes."
   },
   {
     "id": "jawaheer",
@@ -37777,7 +37778,7 @@
       "laboratoires"
     ],
     "zone": "centre",
-    "description": "Laboratoire d’analyses médicales : prélèvements et examens biologiques."
+    "description": "Antenne du réseau Green Cross Medical Laboratory (fondé en 1990), premier réseau de laboratoires d'analyses médicales de Maurice, présent sur plus de 40 sites de l'île. Analyses biologiques complètes (sang, urine, bilans, etc.) et service de prélèvement à domicile, particulièrement utile pour les personnes âgées, à mobilité réduite ou convalescentes."
   },
   {
     "id": "green-cross",
@@ -37793,7 +37794,7 @@
       "laboratoires"
     ],
     "zone": "centre",
-    "description": "Laboratoire d’analyses médicales : prélèvements et examens biologiques."
+    "description": "Antenne du réseau Green Cross Medical Laboratory (fondé en 1990), premier réseau de laboratoires d'analyses médicales de Maurice, présent sur plus de 40 sites de l'île. Analyses biologiques complètes (sang, urine, bilans, etc.) et service de prélèvement à domicile, particulièrement utile pour les personnes âgées, à mobilité réduite ou convalescentes."
   },
   {
     "id": "vincent-perdreau",
@@ -38241,7 +38242,8 @@
       "veterinaires"
     ],
     "zone": "nord",
-    "description": "Clinique / cabinet vétérinaire : consultations, vaccinations et soins pour animaux. Service d’urgence 24h/24."
+    "description": "Clinique vétérinaire ouverte 24h/24 et 7j/7, équipée pour les urgences (animaux blessés, intoxiqués, césariennes). Soins pour chiens, chats et petits animaux : consultations, programmes de vaccination (rage, maladie de Carré, parvovirose, leptospirose ; FVRCP pour les chats), identification par puce électronique, stérilisation, détartrage sous anesthésie et traitements antiparasitaires.",
+    "hours": "24h/24, 7j/7"
   },
   {
     "id": "vetmania-24-7-moka",
@@ -38257,7 +38259,8 @@
       "veterinaires"
     ],
     "zone": "centre",
-    "description": "Clinique / cabinet vétérinaire : consultations, vaccinations et soins pour animaux. Service d’urgence 24h/24."
+    "description": "Clinique vétérinaire ouverte 24h/24 et 7j/7, équipée pour les urgences (animaux blessés, intoxiqués, césariennes). Soins pour chiens, chats et petits animaux : consultations, programmes de vaccination (rage, maladie de Carré, parvovirose, leptospirose ; FVRCP pour les chats), identification par puce électronique, stérilisation, détartrage sous anesthésie et traitements antiparasitaires.",
+    "hours": "24h/24, 7j/7"
   },
   {
     "id": "vetocare-clinic",
