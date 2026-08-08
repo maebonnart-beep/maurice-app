@@ -4725,13 +4725,14 @@
     "themes": [
       "culture-patrimoine",
       "parcs-botaniques",
-      "parcs-animaliers"
+      "parcs-animaliers",
+      "rhumeries"
     ],
     "hours": "Tous les jours 9h-17h (dernière admission 16h)",
     "priceRange": "prix-moyen",
     "zone": "nord",
     "promoText": "Château colonial du 19e siècle entouré d'un verger, visite guidée de 45 min avec dégustation de jus et rhum. (à partir de 700 Rs/pers.)",
-    "description": "Manoir colonial de 1856 entouré d'un verger de 45 hectares réunissant plus de 30 familles botaniques, dont des manguiers centenaires et arbres à épices.",
+    "description": "Manoir colonial de 1856 entouré d'un verger de 45 hectares réunissant plus de 30 familles botaniques, dont des manguiers centenaires et arbres à épices. La Rhumerie des Mascareignes, sur le domaine, produit un rhum agricole ; le billet inclut une dégustation de rhums et de pâtes de fruits.",
     "entryPrice": "Rs 150 (parc animalier)",
     "animalsVisible": "Volière et enclos avec paons, tortues et autres animaux du domaine"
   },
@@ -39489,5 +39490,42 @@
     ],
     "zone": "ouest",
     "description": "Boutique de téléphonie et d’accessoires à Petite Rivière."
+  },
+  {
+    "id": "rhumerie-de-chamarel-visite",
+    "name": "Rhumerie de Chamarel (visite & dégustation)",
+    "category": "activites",
+    "address": "Route de la Case Noyale, Chamarel, Rivière Noire",
+    "phone": "+230 483 4980",
+    "website": "https://www.rhumeriedechamarel.com/",
+    "googleMapsUrl": "https://maps.google.com/?cid=11416505544506789548&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.4279284,
+    "lng": 57.3963316,
+    "themes": [
+      "rhumeries"
+    ],
+    "hours": "Lun-sam 9h30-16h30, fermé le dimanche",
+    "zone": "sud",
+    "description": "Distillerie de rhum agricole au cœur de la plaine de Chamarel (300 m d'altitude). Visite guidée d'environ 30 à 40 min (français ou anglais, sans réservation) retraçant la fabrication du rhum pur jus de canne, suivie d'une dégustation des rhums maison (classic, double distilled, premium gold, coco, vanille, café). Boutique et restaurant L'Alchimiste sur place.",
+    "entryPrice": "Rs 550 (visite + dégustation)",
+    "duration": "Environ 30 à 40 min"
+  },
+  {
+    "id": "domaine-de-saint-aubin-visite",
+    "name": "Domaine de Saint Aubin - Rhumerie & Maison du Rhum",
+    "category": "activites",
+    "address": "Savanne Road, Rivière des Anguilles, Souillac",
+    "phone": "+230 626 1513",
+    "website": "https://groupe-saintaubin.com/saint-aubin-loisirs/domaine-de-saint-aubin/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Domaine%20de%20Saint%20Aubin%20Riviere%20des%20Anguilles%20Mauritius",
+    "lat": -20.5178,
+    "lng": 57.5203,
+    "themes": [
+      "rhumeries"
+    ],
+    "hours": "Domaine tous les jours 9h-17h ; distillerie (Maison du Rhum) lun-sam le matin, fermée dim. et jours fériés",
+    "zone": "sud",
+    "description": "Ancienne propriété sucrière fondée en 1778 autour d'une demeure coloniale classée. La Maison du Rhum présente la fabrication du rhum agricole (pur jus de canne) distillé sur place ; le domaine comprend aussi une Maison de la Vanille, une mini-ferme et des jardins exotiques. Réservation conseillée ; restaurant et auberge sur le domaine.",
+    "duration": "Environ 2 h (domaine complet)"
   }
 ]
