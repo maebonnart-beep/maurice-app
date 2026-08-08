@@ -2843,7 +2843,7 @@
       "pharmacies"
     ],
     "zone": "nord",
-    "description": "Pharmacie (Rose Beauty & Health Pharmacy) installée dans le bâtiment Super U de Grand Baie, avec un large choix de produits de santé et de beauté en libre accès."
+    "description": "Pharmacie (Rose Beauty & Health Pharmacy) installée dans le bâtiment Super U, avec un large choix de produits de santé et de beauté en libre accès."
   },
   {
     "id": "darwin-hair-lounge",
@@ -5381,7 +5381,7 @@
       "cliniques-privees"
     ],
     "zone": "centre",
-    "description": "Clinique privée à Curepipe avec urgences 24h/24, spécialisée notamment en soins palliatifs, et proposant aussi médecine générale/interne, cardiologie, ORL, chirurgie orthopédique et générale, gynécologie, gastro-entérologie, dermatologie, pédiatrie, psychiatrie, gériatrie, ainsi que physiothérapie et imagerie diagnostique."
+    "description": "Clinique privée avec urgences 24h/24, spécialisée notamment en soins palliatifs, et proposant aussi médecine générale/interne, cardiologie, ORL, chirurgie orthopédique et générale, gynécologie, gastro-entérologie, dermatologie, pédiatrie, psychiatrie, gériatrie, ainsi que physiothérapie et imagerie diagnostique."
   },
   {
     "id": "police-curepipe",
@@ -5397,7 +5397,7 @@
       "postes-police"
     ],
     "zone": "centre",
-    "description": "Poste de police de Curepipe. Ouvert 24h/24 et 7j/7. Urgences : 999 (police secours) ou 112."
+    "description": "Poste de police. Ouvert 24h/24 et 7j/7. Urgences : 999 (police secours) ou 112."
   },
   {
     "id": "swan-grand-baie",
@@ -13404,7 +13404,7 @@
       "cliniques-privees"
     ],
     "zone": "nord",
-    "description": "Centre médical et diagnostique pluridisciplinaire à Grand Baie, avec service d'urgences, bloc opératoire, imagerie (radio, échographie, scanner) et consultations en cardiologie, chirurgie générale, médecine générale, gynécologie-obstétrique, pédiatrie, dentisterie, dermatologie, orthopédie, rhumatologie et urologie."
+    "description": "Centre médical et diagnostique pluridisciplinaire, avec service d'urgences, bloc opératoire, imagerie (radio, échographie, scanner) et consultations en cardiologie, chirurgie générale, médecine générale, gynécologie-obstétrique, pédiatrie, dentisterie, dermatologie, orthopédie, rhumatologie et urologie."
   },
   {
     "id": "c-care-grand-baie",
@@ -13436,7 +13436,7 @@
       "cliniques-privees"
     ],
     "zone": "nord",
-    "description": "Centre médical du groupe Clinique du Nord à Grand Baie, ouvert 24h/24 avec ambulance médicalisée, laboratoire et service d'urgence, proposant notamment radiologie numérique, cardiologie, dermatologie et échographie."
+    "description": "Centre médical du groupe Clinique du Nord, ouvert 24h/24 avec ambulance médicalisée, laboratoire et service d'urgence, proposant notamment radiologie numérique, cardiologie, dermatologie et échographie."
   },
   {
     "id": "grand-bay-police-station",
@@ -13452,7 +13452,7 @@
       "postes-police"
     ],
     "zone": "nord",
-    "description": "Poste de police de Grand Baie. Ouvert 24h/24 et 7j/7. Urgences : 999 (police secours) ou 112."
+    "description": "Poste de police. Ouvert 24h/24 et 7j/7. Urgences : 999 (police secours) ou 112."
   },
   {
     "id": "international-assurance-limited-pcc",
@@ -13619,7 +13619,7 @@
       "depannages"
     ],
     "zone": "nord",
-    "description": "Dépannage et entretien multiservice (handyman) : plomberie, électricité, peinture, réparation de portes et fenêtres, nettoyage de piscines et de citernes. Basée à Grand Baie, active depuis 2016, intervient pour villas, restaurants et bureaux dans toute l'île."
+    "description": "Dépannage et entretien multiservice (handyman) : plomberie, électricité, peinture, réparation de portes et fenêtres, nettoyage de piscines et de citernes. Active depuis 2016, intervient pour villas, restaurants et bureaux dans toute l'île."
   },
   {
     "id": "was-smart-contracting-ltd",
@@ -13667,7 +13667,7 @@
       "taxis-transferts"
     ],
     "zone": "nord",
-    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés), basé à Grand Baie."
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés)."
   },
   {
     "id": "mauritius-local-taxi",
@@ -13683,7 +13683,7 @@
       "taxis-transferts"
     ],
     "zone": "nord",
-    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés), basé à Grand Baie."
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés)."
   },
   {
     "id": "nanda-taxi",
@@ -13699,7 +13699,7 @@
       "taxis-transferts"
     ],
     "zone": "nord",
-    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés), basé à Grand Baie."
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés)."
   },
   {
     "id": "taxi-grand-baie-24-7-service",
@@ -13715,7 +13715,7 @@
       "taxis-transferts"
     ],
     "zone": "nord",
-    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés), basé à Grand Baie. Disponible 24h/24."
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés). Disponible 24h/24."
   },
   {
     "id": "taxi-service-dinan",
@@ -13731,7 +13731,7 @@
       "taxis-transferts"
     ],
     "zone": "nord",
-    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés), basé à Grand Baie."
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés)."
   },
   {
     "id": "vikash-taxi-service-guide",
@@ -13812,7 +13812,7 @@
       "taxis-transferts"
     ],
     "zone": "nord",
-    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés) avec chauffeur-guide, basé à Cap Malheureux."
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés) avec chauffeur-guide."
   },
   {
     "id": "nou-taxi-mauritius",
@@ -13828,7 +13828,7 @@
       "taxis-transferts"
     ],
     "zone": "sud",
-    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés), basé à Blue Bay."
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés)."
   },
   {
     "id": "sun-ile-maurice-taxi",
@@ -13844,7 +13844,7 @@
       "taxis-transferts"
     ],
     "zone": "sud",
-    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés), basé à Trois Boutiques."
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés)."
   },
   {
     "id": "taxis-mauritius",
@@ -13973,7 +13973,7 @@
       "taxis-transferts"
     ],
     "zone": "nord",
-    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés) avec chauffeur-guide, basé à Grand Baie."
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés) avec chauffeur-guide."
   },
   {
     "id": "sayad-taxi-tour-guide-mauritius",
@@ -14005,7 +14005,7 @@
       "taxis-transferts"
     ],
     "zone": "ouest",
-    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés) avec chauffeur-guide, basé à Flic en Flac."
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés) avec chauffeur-guide."
   },
   {
     "id": "asas-car-rental-mauritius",
@@ -14037,7 +14037,7 @@
       "taxis-transferts"
     ],
     "zone": "ouest",
-    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés), basé à Flic en Flac."
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés)."
   },
   {
     "id": "dodo-ride-2",
@@ -16954,7 +16954,7 @@
       "cliniques-privees"
     ],
     "zone": "ouest",
-    "description": "Clinique privée à Flic en Flac (groupe Clinique du Nord), avec ambulance médicalisée 24h/24, consultations de généralistes et spécialistes (gynécologie, dentisterie, physiothérapie), laboratoire d'analyses, radiologie, ECG, unité de dialyse 24h/24 et scanner 3D 64 barrettes."
+    "description": "Clinique privée (groupe Clinique du Nord), avec ambulance médicalisée 24h/24, consultations de généralistes et spécialistes (gynécologie, dentisterie, physiothérapie), laboratoire d'analyses, radiologie, ECG, unité de dialyse 24h/24 et scanner 3D 64 barrettes."
   },
   {
     "id": "life-medical-clinic-tamarin",
@@ -17002,7 +17002,7 @@
       "centres-sante-publics"
     ],
     "zone": "ouest",
-    "description": "Centre de santé communautaire public à Flic en Flac, proposant médecine générale, dentisterie, santé mentale, soins préventifs et services de kinésithérapie/ergothérapie."
+    "description": "Centre de santé communautaire public, proposant médecine générale, dentisterie, santé mentale, soins préventifs et services de kinésithérapie/ergothérapie."
   },
   {
     "id": "felix-mace-physiotherapist",
@@ -17066,7 +17066,7 @@
       "cliniques-privees"
     ],
     "zone": "ouest",
-    "description": "Polyclinique privée à Flic en Flac axée sur les urgences médicales et la traumatologie, destinée à réduire les délais d'intervention dans l'ouest de l'île."
+    "description": "Polyclinique privée axée sur les urgences médicales et la traumatologie, destinée à réduire les délais d'intervention dans l'ouest de l'île."
   },
   {
     "id": "police-station-flic-en-flac",
@@ -17082,7 +17082,7 @@
       "postes-police"
     ],
     "zone": "ouest",
-    "description": "Poste de police de Flic en Flac. Ouvert 24h/24 et 7j/7. Urgences : 999 (police secours) ou 112."
+    "description": "Poste de police. Ouvert 24h/24 et 7j/7. Urgences : 999 (police secours) ou 112."
   },
   {
     "id": "mua-drive-thru-claims-riviere-noire",
@@ -17284,7 +17284,7 @@
       "taxis-transferts"
     ],
     "zone": "ouest",
-    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés), basé à Tamarin."
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés)."
   },
   {
     "id": "k2907-taxi-mauritius",
@@ -17348,7 +17348,7 @@
       "taxis-transferts"
     ],
     "zone": "ouest",
-    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés) avec chauffeur-guide, basé à Flic en Flac."
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés) avec chauffeur-guide."
   },
   {
     "id": "taxi-service-tamarin-24-7",
@@ -17364,7 +17364,7 @@
       "taxis-transferts"
     ],
     "zone": "ouest",
-    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés), basé à Tamarin. Disponible 24h/24."
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés). Disponible 24h/24."
   },
   {
     "id": "mauritius-island-local-taxi",
@@ -17380,7 +17380,7 @@
       "taxis-transferts"
     ],
     "zone": "ouest",
-    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés), basé à Flic en Flac."
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés)."
   },
   {
     "id": "mauvoyage-taxi-services-mautitius",
@@ -17396,7 +17396,7 @@
       "taxis-transferts"
     ],
     "zone": "ouest",
-    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés), basé à Tamarin."
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés)."
   },
   {
     "id": "taxi-service-sugar-beach-rughoo",
@@ -17428,7 +17428,7 @@
       "taxis-transferts"
     ],
     "zone": "ouest",
-    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés), basé à Tamarin."
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés)."
   },
   {
     "id": "airport-transfer-24-7-mauritius-ile-maurice-taxi-services",
@@ -17444,7 +17444,7 @@
       "taxis-transferts"
     ],
     "zone": "ouest",
-    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés), basé à Flic en Flac. Disponible 24h/24."
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés). Disponible 24h/24."
   },
   {
     "id": "top-taxi-tamarin-24-7-legal",
@@ -17460,7 +17460,7 @@
       "taxis-transferts"
     ],
     "zone": "ouest",
-    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés), basé à Tamarin. Disponible 24h/24."
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés). Disponible 24h/24."
   },
   {
     "id": "oz-er-etre",
@@ -20424,7 +20424,7 @@
       "centres-sante-publics"
     ],
     "zone": "sud",
-    "description": "Centre de santé communautaire public (CHC) à Chamarel, offrant consultations médicales générales, santé familiale et programmes de prévention/vaccination."
+    "description": "Centre de santé communautaire public (CHC), offrant consultations médicales générales, santé familiale et programmes de prévention/vaccination."
   },
   {
     "id": "police-station-saint-pierre",
@@ -20488,7 +20488,7 @@
       "poste"
     ],
     "zone": "sud",
-    "description": "Bureau de poste de Chamarel (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
   },
   {
     "id": "police-station-rose-belle",
@@ -20504,7 +20504,7 @@
       "postes-police"
     ],
     "zone": "sud",
-    "description": "Poste de police de Rose Belle. Ouvert 24h/24 et 7j/7. Urgences : 999 (police secours) ou 112."
+    "description": "Poste de police. Ouvert 24h/24 et 7j/7. Urgences : 999 (police secours) ou 112."
   },
   {
     "id": "moka-police-station",
@@ -20520,7 +20520,7 @@
       "postes-police"
     ],
     "zone": "centre",
-    "description": "Poste de police de Moka. Ouvert 24h/24 et 7j/7. Urgences : 999 (police secours) ou 112."
+    "description": "Poste de police. Ouvert 24h/24 et 7j/7. Urgences : 999 (police secours) ou 112."
   },
   {
     "id": "chemin-grenier-police-station",
@@ -20536,7 +20536,7 @@
       "postes-police"
     ],
     "zone": "sud",
-    "description": "Poste de police de Chemin Grenier. Ouvert 24h/24 et 7j/7. Urgences : 999 (police secours) ou 112."
+    "description": "Poste de police. Ouvert 24h/24 et 7j/7. Urgences : 999 (police secours) ou 112."
   },
   {
     "id": "police-station-trou-d-eau-douce",
@@ -20552,7 +20552,7 @@
       "postes-police"
     ],
     "zone": "est",
-    "description": "Poste de police de Trou d'Eau Douce. Ouvert 24h/24 et 7j/7. Urgences : 999 (police secours) ou 112."
+    "description": "Poste de police. Ouvert 24h/24 et 7j/7. Urgences : 999 (police secours) ou 112."
   },
   {
     "id": "eau-coulee-police-station",
@@ -20584,7 +20584,7 @@
       "postes-police"
     ],
     "zone": "est",
-    "description": "Poste de police de Bel Air. Ouvert 24h/24 et 7j/7. Urgences : 999 (police secours) ou 112."
+    "description": "Poste de police. Ouvert 24h/24 et 7j/7. Urgences : 999 (police secours) ou 112."
   },
   {
     "id": "asza-co-ltd",
@@ -20708,7 +20708,7 @@
       "taxis-transferts"
     ],
     "zone": "sud",
-    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés), basé à Le Morne."
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés)."
   },
   {
     "id": "top-jay-taxi-service",
@@ -20772,7 +20772,7 @@
       "taxis-transferts"
     ],
     "zone": "ouest",
-    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés), basé à La Gaulette."
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés)."
   },
   {
     "id": "mauritius-taxi",
@@ -20804,7 +20804,7 @@
       "taxis-transferts"
     ],
     "zone": "sud",
-    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés), basé à Plaine Magnien."
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés)."
   },
   {
     "id": "taxi-la-gaulette-jean-maurice",
@@ -20820,7 +20820,7 @@
       "taxis-transferts"
     ],
     "zone": "ouest",
-    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés), basé à La Gaulette."
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés)."
   },
   {
     "id": "taxi-transfer-mauritius-paradise",
@@ -20836,7 +20836,7 @@
       "taxis-transferts"
     ],
     "zone": "sud",
-    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés), basé à Plaine Magnien."
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés)."
   },
   {
     "id": "la-gaulette-taxi-service",
@@ -20852,7 +20852,7 @@
       "taxis-transferts"
     ],
     "zone": "ouest",
-    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés), basé à La Gaulette."
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés)."
   },
   {
     "id": "holidays-taxi-service-mauritius",
@@ -20884,7 +20884,7 @@
       "taxis-transferts"
     ],
     "zone": "est",
-    "description": "Service de taxi, transferts et location de voiture, basé à Ecroignard."
+    "description": "Service de taxi, transferts et location de voiture."
   },
   {
     "id": "shiva-tours-taxi-service",
@@ -20948,7 +20948,7 @@
       "taxis-transferts"
     ],
     "zone": "ouest",
-    "description": "Activité de tyrolienne (zip-line) à La Gaulette — parcours dans les gorges de la Rivière Noire. (Fiche mal classée dans Taxis & transferts.)"
+    "description": "Activité de tyrolienne (zip-line) — parcours dans les gorges de la Rivière Noire. (Fiche mal classée dans Taxis & transferts.)"
   },
   {
     "id": "mauritius-taxi-service",
@@ -20996,7 +20996,7 @@
       "taxis-transferts"
     ],
     "zone": "centre",
-    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés) avec chauffeur-guide, basé à Curepipe."
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés) avec chauffeur-guide."
   },
   {
     "id": "barefoot-transfers-mauritius",
@@ -21028,7 +21028,7 @@
       "taxis-transferts"
     ],
     "zone": "ouest",
-    "description": "Prestataire à La Gaulette (transferts / taxi). Détails d'activité à confirmer."
+    "description": "Prestataire (transferts / taxi). Détails d'activité à confirmer."
   },
   {
     "id": "le-morne-dodo-contract-cars-ltd",
@@ -22255,7 +22255,7 @@
       "centres-sante-publics"
     ],
     "zone": "est",
-    "description": "Mediclinic publique à Bel Air Rivière Sèche proposant médecine générale, pédiatrie, psychiatrie, radiologie et dépistage des IST, en collaboration avec les centres de santé de la région."
+    "description": "Mediclinic publique Rivière Sèche proposant médecine générale, pédiatrie, psychiatrie, radiologie et dépistage des IST, en collaboration avec les centres de santé de la région."
   },
   {
     "id": "lady-sushil-ramgoolam-belvedere-medi-clinic",
@@ -22303,7 +22303,7 @@
       "cliniques-privees"
     ],
     "zone": "nord",
-    "description": "Centre médical spécialisé en orthopédie à Triolet, avec chirurgie orthopédique, centre de chirurgie ambulatoire, kinésithérapie, imagerie, arthroscopie et soins d'urgence (walk-in)."
+    "description": "Centre médical spécialisé en orthopédie, avec chirurgie orthopédique, centre de chirurgie ambulatoire, kinésithérapie, imagerie, arthroscopie et soins d'urgence (walk-in)."
   },
   {
     "id": "aegle-clinic",
@@ -22319,7 +22319,7 @@
       "cliniques-privees"
     ],
     "zone": "est",
-    "description": "Clinique multi-spécialités à Central Flacq (plus de 30 spécialités) : chirurgie générale, neurochirurgie, orthopédie, cardiologie, neurologie, pédiatrie, gynécologie-obstétrique, dermatologie, radiologie/imagerie (scanner, échographie 4D), urgences 24h/24 et unité de soins intensifs."
+    "description": "Clinique multi-spécialités (plus de 30 spécialités) : chirurgie générale, neurochirurgie, orthopédie, cardiologie, neurologie, pédiatrie, gynécologie-obstétrique, dermatologie, radiologie/imagerie (scanner, échographie 4D), urgences 24h/24 et unité de soins intensifs."
   },
   {
     "id": "aegle-cancer-hospital",
@@ -22335,7 +22335,7 @@
       "cliniques-privees"
     ],
     "zone": "sud",
-    "description": "Premier hôpital dédié entièrement à la cancérologie à Maurice (Rose Belle) : chimiothérapie, radiothérapie de précision, chirurgie oncologique, immunothérapie ciblée, imagerie diagnostique (PET/CT, IRM, scanner) et programmes de dépistage."
+    "description": "Premier hôpital dédié entièrement à la cancérologie à Maurice : chimiothérapie, radiothérapie de précision, chirurgie oncologique, immunothérapie ciblée, imagerie diagnostique (PET/CT, IRM, scanner) et programmes de dépistage."
   },
   {
     "id": "fortis-clinique-darne",
@@ -22367,7 +22367,7 @@
       "cliniques-privees"
     ],
     "zone": "centre",
-    "description": "Clinique privée à Curepipe offrant urgences 24h/24, laboratoire, imagerie (scanner, IRM, échographie, radiographie), maternité, bloc opératoire, soins intensifs et dialyse."
+    "description": "Clinique privée offrant urgences 24h/24, laboratoire, imagerie (scanner, IRM, échographie, radiographie), maternité, bloc opératoire, soins intensifs et dialyse."
   },
   {
     "id": "city-clinic",
@@ -22399,7 +22399,7 @@
       "cliniques-privees"
     ],
     "zone": "centre",
-    "description": "Polyclinique privée à Moka (Réduit) offrant médecine générale, ophtalmologie, cardiologie, orthopédie, gastro-entérologie, gynécologie-obstétrique, pédiatrie, chirurgie, dentisterie, imagerie, laboratoire et urgences 24h/24."
+    "description": "Polyclinique privée (Réduit) offrant médecine générale, ophtalmologie, cardiologie, orthopédie, gastro-entérologie, gynécologie-obstétrique, pédiatrie, chirurgie, dentisterie, imagerie, laboratoire et urgences 24h/24."
   },
   {
     "id": "police-station-bel-ombre",
@@ -22415,7 +22415,7 @@
       "postes-police"
     ],
     "zone": "sud",
-    "description": "Poste de police de Bel Ombre. Ouvert 24h/24 et 7j/7. Urgences : 999 (police secours) ou 112."
+    "description": "Poste de police. Ouvert 24h/24 et 7j/7. Urgences : 999 (police secours) ou 112."
   },
   {
     "id": "mua-head-office-general-insurance",
@@ -22868,7 +22868,7 @@
       "depannages"
     ],
     "zone": "nord",
-    "description": "Électricité, plomberie et climatisation pour particuliers, commerces et industries (installation, réparation, maintenance). Entreprise créée en 2006 à Goodlands, service d'urgence 24h/24 et 7j/7."
+    "description": "Électricité, plomberie et climatisation pour particuliers, commerces et industries (installation, réparation, maintenance). Entreprise créée en 2006, service d'urgence 24h/24 et 7j/7."
   },
   {
     "id": "sandeep-taxi-service",
@@ -22900,7 +22900,7 @@
       "taxis-transferts"
     ],
     "zone": "est",
-    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés), basé à Rivière du Rempart."
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés)."
   },
   {
     "id": "souillac-taxi-stand",
@@ -22916,7 +22916,7 @@
       "taxis-transferts"
     ],
     "zone": "sud",
-    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés), basé à Souillac."
+    "description": "Service de taxi et de transferts (aéroport, excursions et trajets privés)."
   },
   {
     "id": "paco-taxi",
@@ -25618,7 +25618,7 @@
       "cliniques-privees"
     ],
     "zone": "centre",
-    "description": "Clinique de médecine générale à Quatre Bornes proposant consultations, bilans de santé et dépistage (diabète), et analyses sanguines."
+    "description": "Clinique de médecine générale proposant consultations, bilans de santé et dépistage (diabète), et analyses sanguines."
   },
   {
     "id": "chisti-shifa-clinic",
@@ -25650,7 +25650,7 @@
       "cliniques-privees"
     ],
     "zone": "nord",
-    "description": "Centre de chirurgie et médecine esthétique à Trou aux Biches, spécialisé en greffe de cheveux, dentisterie, chirurgie esthétique (corporelle, faciale, mammaire) et médecine esthétique non chirurgicale."
+    "description": "Centre de chirurgie et médecine esthétique, spécialisé en greffe de cheveux, dentisterie, chirurgie esthétique (corporelle, faciale, mammaire) et médecine esthétique non chirurgicale."
   },
   {
     "id": "bambous-medicare",
@@ -25666,7 +25666,7 @@
       "cliniques-privees"
     ],
     "zone": "ouest",
-    "description": "Clinique médicale de proximité à Bambous proposant consultations générales, électrocardiogramme, électrostimulation et suivi de perte de poids, ouverte 7 jours sur 7."
+    "description": "Clinique médicale de proximité proposant consultations générales, électrocardiogramme, électrostimulation et suivi de perte de poids, ouverte 7 jours sur 7."
   },
   {
     "id": "plantation-vanille-st-julien-hotman",
@@ -26586,7 +26586,7 @@
       "photographes"
     ],
     "zone": "nord",
-    "description": "Labo photo à Grand Baie : photos d'identité et passeport, développement et tirage express."
+    "description": "Labo photo : photos d'identité et passeport, développement et tirage express."
   },
   {
     "id": "easyprint-croisette",
@@ -26601,7 +26601,7 @@
       "photographes"
     ],
     "zone": "nord",
-    "description": "Impression & photo à La Croisette (Grand Baie) : photos d'identité/passeport, tirage, photocopies et impression."
+    "description": "Impression & photo à La Croisette : photos d'identité/passeport, tirage, photocopies et impression."
   },
   {
     "id": "siva-studio-photo-lab",
@@ -26771,7 +26771,7 @@
       "pharmacies"
     ],
     "zone": "nord",
-    "description": "Pharmacie à Grand Baie. Médicaments sur ordonnance, parapharmacie et conseils santé."
+    "description": "Pharmacie. Médicaments sur ordonnance, parapharmacie et conseils santé."
   },
   {
     "id": "pharmacie-flic-en-flac",
@@ -26786,7 +26786,7 @@
       "pharmacies"
     ],
     "zone": "ouest",
-    "description": "Pharmacie à Flic en Flac. Médicaments sur ordonnance, parapharmacie et conseils santé."
+    "description": "Pharmacie. Médicaments sur ordonnance, parapharmacie et conseils santé."
   },
   {
     "id": "pharmacie-du-port-port-louis",
@@ -26831,7 +26831,7 @@
       "pharmacies"
     ],
     "zone": "centre",
-    "description": "Pharmacie à Curepipe. Médicaments sur ordonnance, parapharmacie et conseils santé. Horaires : lun–jeu 8h30–19h30, ven–sam 8h30–20h, dim 8h30–13h."
+    "description": "Pharmacie. Médicaments sur ordonnance, parapharmacie et conseils santé. Horaires : lun–jeu 8h30–19h30, ven–sam 8h30–20h, dim 8h30–13h."
   },
   {
     "id": "care4u-pharmacy-curepipe",
@@ -26846,7 +26846,7 @@
       "pharmacies"
     ],
     "zone": "centre",
-    "description": "Pharmacie à Forest Side, Curepipe. Médicaments sur ordonnance, parapharmacie et conseils santé."
+    "description": "Pharmacie à Forest Side. Médicaments sur ordonnance, parapharmacie et conseils santé."
   },
   {
     "id": "tamarin-pharmacy",
@@ -26861,7 +26861,7 @@
       "pharmacies"
     ],
     "zone": "ouest",
-    "description": "Pharmacie à Tamarin. Médicaments sur ordonnance, parapharmacie et conseils santé."
+    "description": "Pharmacie. Médicaments sur ordonnance, parapharmacie et conseils santé."
   },
   {
     "id": "pharmacie-trou-eau-douce",
@@ -26876,7 +26876,7 @@
       "pharmacies"
     ],
     "zone": "est",
-    "description": "Pharmacie à Trou d'Eau Douce. Médicaments sur ordonnance, parapharmacie et conseils santé."
+    "description": "Pharmacie. Médicaments sur ordonnance, parapharmacie et conseils santé."
   },
   {
     "id": "pharmacie-quatre-bornes",
@@ -26891,7 +26891,7 @@
       "pharmacies"
     ],
     "zone": "centre",
-    "description": "Pharmacie à Quatre Bornes. Médicaments sur ordonnance, parapharmacie et conseils santé."
+    "description": "Pharmacie. Médicaments sur ordonnance, parapharmacie et conseils santé."
   },
   {
     "id": "headcase-benedicte",
@@ -30734,7 +30734,7 @@
       "postes-police"
     ],
     "zone": "est",
-    "description": "Poste de police de Montagne Blanche. Ouvert 24h/24 et 7j/7. Urgences : 999 (police secours) ou 112."
+    "description": "Poste de police. Ouvert 24h/24 et 7j/7. Urgences : 999 (police secours) ou 112."
   },
   {
     "id": "coromandel-police-station",
@@ -30764,7 +30764,7 @@
       "postes-police"
     ],
     "zone": "nord",
-    "description": "Poste de police de Pamplemousses. Ouvert 24h/24 et 7j/7. Urgences : 999 (police secours) ou 112."
+    "description": "Poste de police. Ouvert 24h/24 et 7j/7. Urgences : 999 (police secours) ou 112."
   },
   {
     "id": "riviere-du-rempart-police-station",
@@ -30780,7 +30780,7 @@
       "postes-police"
     ],
     "zone": "est",
-    "description": "Poste de police de Rivière du Rempart. Ouvert 24h/24 et 7j/7. Urgences : 999 (police secours) ou 112."
+    "description": "Poste de police. Ouvert 24h/24 et 7j/7. Urgences : 999 (police secours) ou 112."
   },
   {
     "id": "axess-pre-owned",
@@ -30922,7 +30922,7 @@
       "centres-sante-publics"
     ],
     "zone": "sud",
-    "description": "Hôpital public régional de 150 lits à Souillac, avec service d'urgences, hospitalisation, consultations spécialisées, imagerie, laboratoire, chirurgie et un centre dédié au diabète et à la santé vasculaire."
+    "description": "Hôpital public régional de 150 lits, avec service d'urgences, hospitalisation, consultations spécialisées, imagerie, laboratoire, chirurgie et un centre dédié au diabète et à la santé vasculaire."
   },
   {
     "id": "lamco-international-insurance-ltd",
@@ -31391,7 +31391,7 @@
       "depannages"
     ],
     "zone": "est",
-    "description": "Serrurerie et reproduction de clés (keycutter) : ouverture et remplacement de serrures. Royal Road, Mahébourg."
+    "description": "Serrurerie et reproduction de clés (keycutter) : ouverture et remplacement de serrures. Royal Road."
   },
   {
     "id": "clinic-de-l-occident",
@@ -31627,7 +31627,7 @@
       "centres-sante-publics"
     ],
     "zone": "centre",
-    "description": "Centre de santé communautaire public à Moka offrant consultations, planning familial, vaccinations et éducation à la santé (services de base gratuits)."
+    "description": "Centre de santé communautaire public offrant consultations, planning familial, vaccinations et éducation à la santé (services de base gratuits)."
   },
   {
     "id": "belle-mare-police-station",
@@ -34953,7 +34953,7 @@
       "poste"
     ],
     "zone": "sud",
-    "description": "Bureau de poste de Baie Du Cap (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
   },
   {
     "id": "poste-bambous",
@@ -34985,7 +34985,7 @@
       "poste"
     ],
     "zone": "centre",
-    "description": "Bureau de poste de Beau Bassin (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
   },
   {
     "id": "poste-bel-air",
@@ -35001,7 +35001,7 @@
       "poste"
     ],
     "zone": "est",
-    "description": "Bureau de poste de Bel Air (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
   },
   {
     "id": "poste-belle-vue",
@@ -35033,7 +35033,7 @@
       "poste"
     ],
     "zone": "ouest",
-    "description": "Bureau de poste de Black River (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
   },
   {
     "id": "poste-bois-cheri",
@@ -35049,7 +35049,7 @@
       "poste"
     ],
     "zone": "centre",
-    "description": "Bureau de poste de Bois Cheri (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
   },
   {
     "id": "poste-bon-accueil",
@@ -35065,7 +35065,7 @@
       "poste"
     ],
     "zone": "est",
-    "description": "Bureau de poste de Bon Accueil (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
   },
   {
     "id": "poste-boulevard-pitot",
@@ -35081,7 +35081,7 @@
       "poste"
     ],
     "zone": "centre",
-    "description": "Bureau de poste de Boulevard Pitot (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
   },
   {
     "id": "poste-brisee-verdiere",
@@ -35097,7 +35097,7 @@
       "poste"
     ],
     "zone": "sud",
-    "description": "Bureau de poste de Brisee Verdiere (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
   },
   {
     "id": "poste-camp-de-masque",
@@ -35129,7 +35129,7 @@
       "poste"
     ],
     "zone": "sud",
-    "description": "Bureau de poste de Camp De Masque Pave (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
   },
   {
     "id": "poste-camp-diable",
@@ -35145,7 +35145,7 @@
       "poste"
     ],
     "zone": "sud",
-    "description": "Bureau de poste de Camp Diable (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
   },
   {
     "id": "poste-cap-malheureux",
@@ -35161,7 +35161,7 @@
       "poste"
     ],
     "zone": "nord",
-    "description": "Bureau de poste de Cap Malheureux (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
   },
   {
     "id": "poste-case-noyale",
@@ -35177,7 +35177,7 @@
       "poste"
     ],
     "zone": "ouest",
-    "description": "Bureau de poste de Case Noyale (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
   },
   {
     "id": "poste-central-flacq",
@@ -35193,7 +35193,7 @@
       "poste"
     ],
     "zone": "est",
-    "description": "Bureau de poste de Central Flacq (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
   },
   {
     "id": "poste-chemin-grenier",
@@ -35209,7 +35209,7 @@
       "poste"
     ],
     "zone": "sud",
-    "description": "Bureau de poste de Chemin Grenier (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
   },
   {
     "id": "poste-coromandel",
@@ -35225,7 +35225,7 @@
       "poste"
     ],
     "zone": "centre",
-    "description": "Bureau de poste de Coromandel (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
   },
   {
     "id": "poste-curepipe",
@@ -35241,7 +35241,7 @@
       "poste"
     ],
     "zone": "centre",
-    "description": "Bureau de poste de Curepipe (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
   },
   {
     "id": "poste-cyber-tower-1",
@@ -35273,7 +35273,7 @@
       "poste"
     ],
     "zone": "nord",
-    "description": "Bureau de poste de D'Epinay (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
   },
   {
     "id": "poste-dagotiere",
@@ -35289,7 +35289,7 @@
       "poste"
     ],
     "zone": "centre",
-    "description": "Bureau de poste de Dagotiere (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
   },
   {
     "id": "poste-eau-coulee",
@@ -35337,7 +35337,7 @@
       "poste"
     ],
     "zone": "centre",
-    "description": "Bureau de poste de Floreal (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
   },
   {
     "id": "poste-fond-du-sac",
@@ -35353,7 +35353,7 @@
       "poste"
     ],
     "zone": "nord",
-    "description": "Bureau de poste de Fond Du Sac (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
   },
   {
     "id": "poste-forest-side",
@@ -35369,7 +35369,7 @@
       "poste"
     ],
     "zone": "centre",
-    "description": "Bureau de poste de Forest Side (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
   },
   {
     "id": "poste-g-r-s-e",
@@ -35401,7 +35401,7 @@
       "poste"
     ],
     "zone": "centre",
-    "description": "Bureau de poste de Glen Park (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
   },
   {
     "id": "poste-goodlands",
@@ -35417,7 +35417,7 @@
       "poste"
     ],
     "zone": "nord",
-    "description": "Bureau de poste de Goodlands (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
   },
   {
     "id": "poste-grand-bay",
@@ -35449,7 +35449,7 @@
       "poste"
     ],
     "zone": "sud",
-    "description": "Bureau de poste de Grand Bois (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
   },
   {
     "id": "poste-grand-gaube",
@@ -35465,7 +35465,7 @@
       "poste"
     ],
     "zone": "nord",
-    "description": "Bureau de poste de Grand Gaube (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
   },
   {
     "id": "poste-l-escalier",
@@ -35481,7 +35481,7 @@
       "poste"
     ],
     "zone": "sud",
-    "description": "Bureau de poste de L'Escalier (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
   },
   {
     "id": "poste-la-flora",
@@ -35497,7 +35497,7 @@
       "poste"
     ],
     "zone": "sud",
-    "description": "Bureau de poste de La Flora (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
   },
   {
     "id": "poste-lallmatie",
@@ -35513,7 +35513,7 @@
       "poste"
     ],
     "zone": "est",
-    "description": "Bureau de poste de Lallmatie (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
   },
   {
     "id": "poste-laventure",
@@ -35529,7 +35529,7 @@
       "poste"
     ],
     "zone": "est",
-    "description": "Bureau de poste de Laventure (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
   },
   {
     "id": "poste-mapou",
@@ -35545,7 +35545,7 @@
       "poste"
     ],
     "zone": "nord",
-    "description": "Bureau de poste de Mapou (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
   },
   {
     "id": "poste-mare-d-albert",
@@ -35561,7 +35561,7 @@
       "poste"
     ],
     "zone": "sud",
-    "description": "Bureau de poste de Mare D'Albert (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
   },
   {
     "id": "poste-mesnil",
@@ -35577,7 +35577,7 @@
       "poste"
     ],
     "zone": "centre",
-    "description": "Bureau de poste de Mesnil (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
   },
   {
     "id": "poste-midlands",
@@ -35593,7 +35593,7 @@
       "poste"
     ],
     "zone": "sud",
-    "description": "Bureau de poste de Midlands (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
   },
   {
     "id": "poste-moka",
@@ -35609,7 +35609,7 @@
       "poste"
     ],
     "zone": "centre",
-    "description": "Bureau de poste de Moka (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
   },
   {
     "id": "poste-monneron-hill",
@@ -35641,7 +35641,7 @@
       "poste"
     ],
     "zone": "est",
-    "description": "Bureau de poste de Montagne Blanche (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
   },
   {
     "id": "poste-montagne-longue",
@@ -35657,7 +35657,7 @@
       "poste"
     ],
     "zone": "centre",
-    "description": "Bureau de poste de Montagne Longue (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
   },
   {
     "id": "poste-new-grove",
@@ -35673,7 +35673,7 @@
       "poste"
     ],
     "zone": "sud",
-    "description": "Bureau de poste de New Grove (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
   },
   {
     "id": "poste-nouvelle-france",
@@ -35689,7 +35689,7 @@
       "poste"
     ],
     "zone": "sud",
-    "description": "Bureau de poste de Nouvelle France (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
   },
   {
     "id": "poste-old-grand-port",
@@ -35705,7 +35705,7 @@
       "poste"
     ],
     "zone": "sud",
-    "description": "Bureau de poste de Old Grand Port (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
   },
   {
     "id": "poste-pailles",
@@ -35721,7 +35721,7 @@
       "poste"
     ],
     "zone": "centre",
-    "description": "Bureau de poste de Pailles (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
   },
   {
     "id": "poste-pamplemousses",
@@ -35737,7 +35737,7 @@
       "poste"
     ],
     "zone": "nord",
-    "description": "Bureau de poste de Pamplemousses (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
   },
   {
     "id": "poste-petit-raffray",
@@ -35753,7 +35753,7 @@
       "poste"
     ],
     "zone": "nord",
-    "description": "Bureau de poste de Petit Raffray (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
   },
   {
     "id": "poste-petite-riviere",
@@ -35769,7 +35769,7 @@
       "poste"
     ],
     "zone": "centre",
-    "description": "Bureau de poste de Petite Riviere (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
   },
   {
     "id": "poste-phoenix",
@@ -35785,7 +35785,7 @@
       "poste"
     ],
     "zone": "centre",
-    "description": "Bureau de poste de Phoenix (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
   },
   {
     "id": "poste-piton",
@@ -35801,7 +35801,7 @@
       "poste"
     ],
     "zone": "est",
-    "description": "Bureau de poste de Piton (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
   },
   {
     "id": "poste-plaine-des-papayes",
@@ -35817,7 +35817,7 @@
       "poste"
     ],
     "zone": "nord",
-    "description": "Bureau de poste de Plaine Des Papayes (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
   },
   {
     "id": "poste-plaine-magnien",
@@ -35833,7 +35833,7 @@
       "poste"
     ],
     "zone": "sud",
-    "description": "Bureau de poste de Plaine Magnien (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
   },
   {
     "id": "poste-pointe-aux-sables",
@@ -35849,7 +35849,7 @@
       "poste"
     ],
     "zone": "centre",
-    "description": "Bureau de poste de Pointe Aux Sables (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
   },
   {
     "id": "poste-port-louis-centre",
@@ -35865,7 +35865,7 @@
       "poste"
     ],
     "zone": "centre",
-    "description": "Bureau de poste de Port Louis Centre (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste Centre (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
   },
   {
     "id": "poste-port-louis-eastern",
@@ -35881,7 +35881,7 @@
       "poste"
     ],
     "zone": "centre",
-    "description": "Bureau de poste de Port Louis Eastern (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste Eastern (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
   },
   {
     "id": "poste-port-louis-gpo-counter",
@@ -35897,7 +35897,7 @@
       "poste"
     ],
     "zone": "centre",
-    "description": "Bureau de poste de Port Louis GPO Counter (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste GPO Counter (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
   },
   {
     "id": "poste-port-louis-western",
@@ -35913,7 +35913,7 @@
       "poste"
     ],
     "zone": "centre",
-    "description": "Bureau de poste de Port Louis Western (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste Western (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
   },
   {
     "id": "poste-poste-de-flacq",
@@ -35961,7 +35961,7 @@
       "poste"
     ],
     "zone": "sud",
-    "description": "Bureau de poste de Quartier Militaire (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
   },
   {
     "id": "poste-quatre-bornes",
@@ -35977,7 +35977,7 @@
       "poste"
     ],
     "zone": "centre",
-    "description": "Bureau de poste de Quatre Bornes (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
   },
   {
     "id": "poste-quatre-cocos",
@@ -35993,7 +35993,7 @@
       "poste"
     ],
     "zone": "est",
-    "description": "Bureau de poste de Quatre Cocos (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
   },
   {
     "id": "poste-reduit",
@@ -36009,7 +36009,7 @@
       "poste"
     ],
     "zone": "centre",
-    "description": "Bureau de poste de Reduit (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
   },
   {
     "id": "poste-riviere-des-anguilles",
@@ -36057,7 +36057,7 @@
       "poste"
     ],
     "zone": "est",
-    "description": "Bureau de poste de Riviere Du Rempart (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
   },
   {
     "id": "poste-roches-noires",
@@ -36073,7 +36073,7 @@
       "poste"
     ],
     "zone": "est",
-    "description": "Bureau de poste de Roches Noires (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
   },
   {
     "id": "poste-rose-hill",
@@ -36089,7 +36089,7 @@
       "poste"
     ],
     "zone": "centre",
-    "description": "Bureau de poste de Rose Hill (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
   },
   {
     "id": "poste-mahebourg",
@@ -36105,7 +36105,7 @@
       "poste"
     ],
     "zone": "sud",
-    "description": "Bureau de poste de Mahebourg (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
   },
   {
     "id": "poste-rose-belle",
@@ -36121,7 +36121,7 @@
       "poste"
     ],
     "zone": "sud",
-    "description": "Bureau de poste de Rose Belle (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
   },
   {
     "id": "poste-saint-pierre",
@@ -36153,7 +36153,7 @@
       "poste"
     ],
     "zone": "est",
-    "description": "Bureau de poste de Sebastopol (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
   },
   {
     "id": "poste-solferino",
@@ -36185,7 +36185,7 @@
       "poste"
     ],
     "zone": "sud",
-    "description": "Bureau de poste de Souillac (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
   },
   {
     "id": "poste-ssr-international-airport",
@@ -36249,7 +36249,7 @@
       "poste"
     ],
     "zone": "centre",
-    "description": "Bureau de poste de Ste Croix (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
   },
   {
     "id": "poste-surinam",
@@ -36265,7 +36265,7 @@
       "poste"
     ],
     "zone": "sud",
-    "description": "Bureau de poste de Surinam (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
   },
   {
     "id": "poste-tamarin",
@@ -36281,7 +36281,7 @@
       "poste"
     ],
     "zone": "ouest",
-    "description": "Bureau de poste de Tamarin (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
   },
   {
     "id": "poste-terre-rouge",
@@ -36297,7 +36297,7 @@
       "poste"
     ],
     "zone": "nord",
-    "description": "Bureau de poste de Terre Rouge (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
   },
   {
     "id": "poste-tombeau-bay",
@@ -36313,7 +36313,7 @@
       "poste"
     ],
     "zone": "centre",
-    "description": "Bureau de poste de Tombeau Bay (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
   },
   {
     "id": "poste-tribeca-mall",
@@ -36345,7 +36345,7 @@
       "poste"
     ],
     "zone": "nord",
-    "description": "Bureau de poste de Triolet (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
   },
   {
     "id": "poste-trois-boutiques",
@@ -36361,7 +36361,7 @@
       "poste"
     ],
     "zone": "sud",
-    "description": "Bureau de poste de Trois Boutiques (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
   },
   {
     "id": "poste-trou-aux-biches",
@@ -36377,7 +36377,7 @@
       "poste"
     ],
     "zone": "nord",
-    "description": "Bureau de poste de Trou Aux Biches (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
   },
   {
     "id": "poste-trou-d-eau-douce",
@@ -36393,7 +36393,7 @@
       "poste"
     ],
     "zone": "est",
-    "description": "Bureau de poste de Trou D'Eau Douce (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
   },
   {
     "id": "poste-vacoas",
@@ -36409,7 +36409,7 @@
       "poste"
     ],
     "zone": "centre",
-    "description": "Bureau de poste de Vacoas (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
   },
   {
     "id": "poste-vallee-des-pretres",
@@ -36425,7 +36425,7 @@
       "poste"
     ],
     "zone": "centre",
-    "description": "Bureau de poste de Vallee Des Pretres (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
   },
   {
     "id": "pharmacie-the-medicine-shop",
@@ -36441,7 +36441,7 @@
       "pharmacies"
     ],
     "zone": "nord",
-    "description": "Pharmacie à Pereybère. Médicaments sur ordonnance, parapharmacie et conseils santé."
+    "description": "Pharmacie. Médicaments sur ordonnance, parapharmacie et conseils santé."
   },
   {
     "id": "pharmacie-grand-bay-pharma",
@@ -36457,7 +36457,7 @@
       "pharmacies"
     ],
     "zone": "nord",
-    "description": "Pharmacie à Grand Baie. Médicaments sur ordonnance, parapharmacie et conseils santé."
+    "description": "Pharmacie. Médicaments sur ordonnance, parapharmacie et conseils santé."
   },
   {
     "id": "pharmacie-central-pharmacy",
@@ -36473,7 +36473,7 @@
       "pharmacies"
     ],
     "zone": "nord",
-    "description": "Pharmacie à Trou aux Biches. Médicaments sur ordonnance, parapharmacie et conseils santé. Horaires : lun–sam 8h–20h, dim & jours fériés 8h–14h."
+    "description": "Pharmacie. Médicaments sur ordonnance, parapharmacie et conseils santé. Horaires : lun–sam 8h–20h, dim & jours fériés 8h–14h."
   },
   {
     "id": "pharmacie-pharmacie-cap-malheureux",
@@ -36489,7 +36489,7 @@
       "pharmacies"
     ],
     "zone": "nord",
-    "description": "Pharmacie à Cap Malheureux. Médicaments sur ordonnance, parapharmacie et conseils santé."
+    "description": "Pharmacie. Médicaments sur ordonnance, parapharmacie et conseils santé."
   },
   {
     "id": "pharmacie-pharma-goodlands",
@@ -36505,7 +36505,7 @@
       "pharmacies"
     ],
     "zone": "nord",
-    "description": "Pharmacie à Goodlands. Médicaments sur ordonnance, parapharmacie et conseils santé."
+    "description": "Pharmacie. Médicaments sur ordonnance, parapharmacie et conseils santé."
   },
   {
     "id": "pharmacie-pharmacy-cadress",
@@ -36521,7 +36521,7 @@
       "pharmacies"
     ],
     "zone": "nord",
-    "description": "Pharmacie à Goodlands. Médicaments sur ordonnance, parapharmacie et conseils santé."
+    "description": "Pharmacie. Médicaments sur ordonnance, parapharmacie et conseils santé."
   },
   {
     "id": "pharmacie-pharmacie-de-l-occident",
@@ -36537,7 +36537,7 @@
       "pharmacies"
     ],
     "zone": "ouest",
-    "description": "Pharmacie à Flic en Flac. Médicaments sur ordonnance, parapharmacie et conseils santé. Ouvert 24h/24, 7j/7."
+    "description": "Pharmacie. Médicaments sur ordonnance, parapharmacie et conseils santé. Ouvert 24h/24, 7j/7."
   },
   {
     "id": "pharmacie-albion-pharmacy",
@@ -36553,7 +36553,7 @@
       "pharmacies"
     ],
     "zone": "ouest",
-    "description": "Pharmacie à Albion. Médicaments sur ordonnance, parapharmacie et conseils santé."
+    "description": "Pharmacie. Médicaments sur ordonnance, parapharmacie et conseils santé."
   },
   {
     "id": "pharmacie-pharmacie-ideale",
@@ -36569,7 +36569,7 @@
       "pharmacies"
     ],
     "zone": "centre",
-    "description": "Pharmacie à Quatre Bornes. Médicaments sur ordonnance, parapharmacie et conseils santé."
+    "description": "Pharmacie. Médicaments sur ordonnance, parapharmacie et conseils santé."
   },
   {
     "id": "pharmacie-st-jean-pharmacy",
@@ -36585,7 +36585,7 @@
       "pharmacies"
     ],
     "zone": "centre",
-    "description": "Pharmacie à Quatre Bornes. Médicaments sur ordonnance, parapharmacie et conseils santé."
+    "description": "Pharmacie. Médicaments sur ordonnance, parapharmacie et conseils santé."
   },
   {
     "id": "pharmacie-pharmacie-moraby",
@@ -36601,7 +36601,7 @@
       "pharmacies"
     ],
     "zone": "centre",
-    "description": "Pharmacie à Vacoas. Médicaments sur ordonnance, parapharmacie et conseils santé."
+    "description": "Pharmacie. Médicaments sur ordonnance, parapharmacie et conseils santé."
   },
   {
     "id": "pharmacie-fla-pharmacie-new-stanley",
@@ -36617,7 +36617,7 @@
       "pharmacies"
     ],
     "zone": "centre",
-    "description": "Pharmacie à Rose Hill. Médicaments sur ordonnance, parapharmacie et conseils santé."
+    "description": "Pharmacie. Médicaments sur ordonnance, parapharmacie et conseils santé."
   },
   {
     "id": "pharmacie-buckingham-pharmacy",
@@ -36633,7 +36633,7 @@
       "pharmacies"
     ],
     "zone": "centre",
-    "description": "Pharmacie à Rose Hill. Médicaments sur ordonnance, parapharmacie et conseils santé."
+    "description": "Pharmacie. Médicaments sur ordonnance, parapharmacie et conseils santé."
   },
   {
     "id": "pharmacie-pharmacie-imperiale",
@@ -36649,7 +36649,7 @@
       "pharmacies"
     ],
     "zone": "centre",
-    "description": "Pharmacie à Beau Bassin. Médicaments sur ordonnance, parapharmacie et conseils santé."
+    "description": "Pharmacie. Médicaments sur ordonnance, parapharmacie et conseils santé."
   },
   {
     "id": "pharmacie-ebene-pharmacy",
@@ -36665,7 +36665,7 @@
       "pharmacies"
     ],
     "zone": "centre",
-    "description": "Pharmacie à Ebène. Médicaments sur ordonnance, parapharmacie et conseils santé."
+    "description": "Pharmacie. Médicaments sur ordonnance, parapharmacie et conseils santé."
   },
   {
     "id": "pharmacie-pharmacie-de-moka",
@@ -36681,7 +36681,7 @@
       "pharmacies"
     ],
     "zone": "centre",
-    "description": "Pharmacie à Moka. Médicaments sur ordonnance, parapharmacie et conseils santé."
+    "description": "Pharmacie. Médicaments sur ordonnance, parapharmacie et conseils santé."
   },
   {
     "id": "pharmacie-pharmacy-biladams",
@@ -36697,7 +36697,7 @@
       "pharmacies"
     ],
     "zone": "centre",
-    "description": "Pharmacie à Phoenix. Médicaments sur ordonnance, parapharmacie et conseils santé."
+    "description": "Pharmacie. Médicaments sur ordonnance, parapharmacie et conseils santé."
   },
   {
     "id": "pharmacie-pharmacie-farquhar",
@@ -36713,7 +36713,7 @@
       "pharmacies"
     ],
     "zone": "centre",
-    "description": "Pharmacie à Port Louis. Médicaments sur ordonnance, parapharmacie et conseils santé. Horaires : lun–ven 8h–17h30, sam 8h–17h, dim 8h–12h."
+    "description": "Pharmacie. Médicaments sur ordonnance, parapharmacie et conseils santé. Horaires : lun–ven 8h–17h30, sam 8h–17h, dim 8h–12h."
   },
   {
     "id": "pharmacie-eiman-pharmacy",
@@ -36729,7 +36729,7 @@
       "pharmacies"
     ],
     "zone": "centre",
-    "description": "Pharmacie à Port Louis. Médicaments sur ordonnance, parapharmacie et conseils santé."
+    "description": "Pharmacie. Médicaments sur ordonnance, parapharmacie et conseils santé."
   },
   {
     "id": "pharmacie-pharmacy-rose",
@@ -36745,7 +36745,7 @@
       "pharmacies"
     ],
     "zone": "est",
-    "description": "Pharmacie à Central Flacq. Médicaments sur ordonnance, parapharmacie et conseils santé."
+    "description": "Pharmacie. Médicaments sur ordonnance, parapharmacie et conseils santé."
   },
   {
     "id": "pharmacie-pharmacie-de-mahebourg",
@@ -36761,7 +36761,7 @@
       "pharmacies"
     ],
     "zone": "sud",
-    "description": "Pharmacie à Mahébourg. Médicaments sur ordonnance, parapharmacie et conseils santé."
+    "description": "Pharmacie. Médicaments sur ordonnance, parapharmacie et conseils santé."
   },
   {
     "id": "pharmacie-pharmacity-mahebourg",
@@ -36777,7 +36777,7 @@
       "pharmacies"
     ],
     "zone": "sud",
-    "description": "Pharmacie à Mahébourg. Médicaments sur ordonnance, parapharmacie et conseils santé."
+    "description": "Pharmacie. Médicaments sur ordonnance, parapharmacie et conseils santé."
   },
   {
     "id": "pharmacie-cabinet-medical-pharmacy",
@@ -36793,7 +36793,7 @@
       "pharmacies"
     ],
     "zone": "ouest",
-    "description": "Pharmacie à Bambous. Médicaments sur ordonnance, parapharmacie et conseils santé."
+    "description": "Pharmacie. Médicaments sur ordonnance, parapharmacie et conseils santé."
   },
   {
     "id": "pharmacie-grand-bois-pharma",
@@ -36809,7 +36809,7 @@
       "pharmacies"
     ],
     "zone": "sud",
-    "description": "Pharmacie à Grand Bois. Médicaments sur ordonnance, parapharmacie et conseils santé."
+    "description": "Pharmacie. Médicaments sur ordonnance, parapharmacie et conseils santé."
   },
   {
     "id": "pharmacie-nouvelle-france-pharmacy",
@@ -36825,7 +36825,7 @@
       "pharmacies"
     ],
     "zone": "sud",
-    "description": "Pharmacie à Nouvelle France. Médicaments sur ordonnance, parapharmacie et conseils santé."
+    "description": "Pharmacie. Médicaments sur ordonnance, parapharmacie et conseils santé."
   },
   {
     "id": "photo-kodak-express",
@@ -36841,7 +36841,7 @@
       "photographes"
     ],
     "zone": "centre",
-    "description": "Photo & tirage (Kodak Express) à Port-Louis : photos d'identité et passeport, développement et impression."
+    "description": "Photo & tirage (Kodak Express) : photos d'identité et passeport, développement et impression."
   },
   {
     "id": "photo-complete-camera-solution",
@@ -36857,7 +36857,7 @@
       "photographes"
     ],
     "zone": "centre",
-    "description": "Boutique photo à Rose Hill : photos d'identité et passeport, matériel photo et tirage."
+    "description": "Boutique photo : photos d'identité et passeport, matériel photo et tirage."
   },
   {
     "id": "photo-tibeto-photography-studio",
@@ -36873,7 +36873,7 @@
       "photographes"
     ],
     "zone": "centre",
-    "description": "Studio de photographie à Quatre Bornes : photos d'identité et passeport, portraits et tirage."
+    "description": "Studio de photographie : photos d'identité et passeport, portraits et tirage."
   },
   {
     "id": "photo-sin-fat-studio",
@@ -36889,7 +36889,7 @@
       "photographes"
     ],
     "zone": "centre",
-    "description": "Studio photo à Rose Hill : photos d'identité et passeport, portraits et tirage."
+    "description": "Studio photo : photos d'identité et passeport, portraits et tirage."
   },
   {
     "id": "coiffeur-sooren-coiffure",
@@ -37201,7 +37201,7 @@
       "opticiens"
     ],
     "zone": "centre",
-    "description": "Opticien à Moka : lunettes, lentilles et examens de vue."
+    "description": "Opticien : lunettes, lentilles et examens de vue."
   },
   {
     "id": "dentcare",
@@ -37217,7 +37217,7 @@
       "dentistes"
     ],
     "zone": "nord",
-    "description": "Cabinet dentaire à Mapou : soins dentaires, prévention et esthétique."
+    "description": "Cabinet dentaire : soins dentaires, prévention et esthétique."
   },
   {
     "id": "dr-bhunjun",
@@ -37233,7 +37233,7 @@
       "dentistes"
     ],
     "zone": "centre",
-    "description": "Cabinet dentaire à Vacoas-Phoenix : soins dentaires, prévention et esthétique."
+    "description": "Cabinet dentaire : soins dentaires, prévention et esthétique."
   },
   {
     "id": "cosmodent",
@@ -37249,7 +37249,7 @@
       "dentistes"
     ],
     "zone": "ouest",
-    "description": "Cabinet dentaire à Grande Rivière Noire : soins dentaires, prévention et esthétique. Horaires : lun-ven 09h-17h."
+    "description": "Cabinet dentaire : soins dentaires, prévention et esthétique. Horaires : lun-ven 09h-17h."
   },
   {
     "id": "mathieu-town-of-port-louis-ward-3",
@@ -37265,7 +37265,7 @@
       "opticiens"
     ],
     "zone": "centre",
-    "description": "Opticien à Port-Louis : lunettes, lentilles et examens de vue."
+    "description": "Opticien : lunettes, lentilles et examens de vue."
   },
   {
     "id": "optissimo",
@@ -37281,7 +37281,7 @@
       "opticiens"
     ],
     "zone": "centre",
-    "description": "Opticien à Port-Louis : lunettes, lentilles et examens de vue."
+    "description": "Opticien : lunettes, lentilles et examens de vue."
   },
   {
     "id": "mohamed-home-optician",
@@ -37297,7 +37297,7 @@
       "opticiens"
     ],
     "zone": "centre",
-    "description": "Opticien à Port-Louis : lunettes, lentilles et examens de vue."
+    "description": "Opticien : lunettes, lentilles et examens de vue."
   },
   {
     "id": "fayyad-joomun",
@@ -37313,7 +37313,7 @@
       "dentistes"
     ],
     "zone": "nord",
-    "description": "Cabinet dentaire à Grand Baie : soins dentaires, prévention et esthétique."
+    "description": "Cabinet dentaire : soins dentaires, prévention et esthétique."
   },
   {
     "id": "seiko-optical",
@@ -37329,7 +37329,7 @@
       "opticiens"
     ],
     "zone": "centre",
-    "description": "Opticien à Mer Rouge : lunettes, lentilles et examens de vue."
+    "description": "Opticien : lunettes, lentilles et examens de vue."
   },
   {
     "id": "eye-care-centre",
@@ -37345,7 +37345,7 @@
       "opticiens"
     ],
     "zone": "centre",
-    "description": "Opticien à Mer Rouge : lunettes, lentilles et examens de vue."
+    "description": "Opticien : lunettes, lentilles et examens de vue."
   },
   {
     "id": "j-patel",
@@ -37361,7 +37361,7 @@
       "opticiens"
     ],
     "zone": "centre",
-    "description": "Opticien à Port-Louis : lunettes, lentilles et examens de vue."
+    "description": "Opticien : lunettes, lentilles et examens de vue."
   },
   {
     "id": "abdullah-hossen",
@@ -37377,7 +37377,7 @@
       "opticiens"
     ],
     "zone": "centre",
-    "description": "Opticien à Port-Louis : lunettes, lentilles et examens de vue."
+    "description": "Opticien : lunettes, lentilles et examens de vue."
   },
   {
     "id": "care-optics",
@@ -37393,7 +37393,7 @@
       "opticiens"
     ],
     "zone": "nord",
-    "description": "Opticien à Plaine Verte : lunettes, lentilles et examens de vue."
+    "description": "Opticien : lunettes, lentilles et examens de vue."
   },
   {
     "id": "j-smile-dental-clinic",
@@ -37409,7 +37409,7 @@
       "dentistes"
     ],
     "zone": "nord",
-    "description": "Cabinet dentaire à Le Hochet : soins dentaires, prévention et esthétique."
+    "description": "Cabinet dentaire : soins dentaires, prévention et esthétique."
   },
   {
     "id": "suhotoo-optics",
@@ -37425,7 +37425,7 @@
       "opticiens"
     ],
     "zone": "centre",
-    "description": "Opticien à Mer Rouge : lunettes, lentilles et examens de vue."
+    "description": "Opticien : lunettes, lentilles et examens de vue."
   },
   {
     "id": "green-cross-bambous",
@@ -37441,7 +37441,7 @@
       "laboratoires"
     ],
     "zone": "ouest",
-    "description": "Laboratoire d’analyses médicales à Bambous : prélèvements et examens biologiques."
+    "description": "Laboratoire d’analyses médicales : prélèvements et examens biologiques."
   },
   {
     "id": "domun-ahmed-khan-optician",
@@ -37457,7 +37457,7 @@
       "opticiens"
     ],
     "zone": "centre",
-    "description": "Opticien à Port-Louis : lunettes, lentilles et examens de vue."
+    "description": "Opticien : lunettes, lentilles et examens de vue."
   },
   {
     "id": "green-cross-richelieu",
@@ -37473,7 +37473,7 @@
       "laboratoires"
     ],
     "zone": "ouest",
-    "description": "Laboratoire d’analyses médicales à Richelieu : prélèvements et examens biologiques."
+    "description": "Laboratoire d’analyses médicales : prélèvements et examens biologiques."
   },
   {
     "id": "jawaheer",
@@ -37489,7 +37489,7 @@
       "opticiens"
     ],
     "zone": "centre",
-    "description": "Opticien à Port-Louis : lunettes, lentilles et examens de vue."
+    "description": "Opticien : lunettes, lentilles et examens de vue."
   },
   {
     "id": "pro-medica",
@@ -37505,7 +37505,7 @@
       "laboratoires"
     ],
     "zone": "centre",
-    "description": "Laboratoire d’analyses médicales à Port-Louis : prélèvements et examens biologiques."
+    "description": "Laboratoire d’analyses médicales : prélèvements et examens biologiques."
   },
   {
     "id": "best-optical-shop",
@@ -37521,7 +37521,7 @@
       "opticiens"
     ],
     "zone": "centre",
-    "description": "Opticien à Port-Louis : lunettes, lentilles et examens de vue."
+    "description": "Opticien : lunettes, lentilles et examens de vue."
   },
   {
     "id": "gaya-opticians",
@@ -37537,7 +37537,7 @@
       "opticiens"
     ],
     "zone": "centre",
-    "description": "Opticien à Port-Louis : lunettes, lentilles et examens de vue."
+    "description": "Opticien : lunettes, lentilles et examens de vue."
   },
   {
     "id": "farouk-hossen",
@@ -37553,7 +37553,7 @@
       "opticiens"
     ],
     "zone": "centre",
-    "description": "Opticien à Port-Louis : lunettes, lentilles et examens de vue."
+    "description": "Opticien : lunettes, lentilles et examens de vue."
   },
   {
     "id": "pet-corner",
@@ -37569,7 +37569,7 @@
       "veterinaires"
     ],
     "zone": "centre",
-    "description": "Clinique / cabinet vétérinaire à Vacoas-Phoenix : consultations, vaccinations et soins pour animaux."
+    "description": "Clinique / cabinet vétérinaire : consultations, vaccinations et soins pour animaux."
   },
   {
     "id": "suhotoo-optics-town-of-quatre-bornes-ward-3",
@@ -37585,7 +37585,7 @@
       "opticiens"
     ],
     "zone": "centre",
-    "description": "Opticien à Quatre-Bornes : lunettes, lentilles et examens de vue."
+    "description": "Opticien : lunettes, lentilles et examens de vue."
   },
   {
     "id": "bright-smile",
@@ -37601,7 +37601,7 @@
       "dentistes"
     ],
     "zone": "centre",
-    "description": "Cabinet dentaire à Quatre-Bornes : soins dentaires, prévention et esthétique."
+    "description": "Cabinet dentaire : soins dentaires, prévention et esthétique."
   },
   {
     "id": "jhowry-dassyne-optician",
@@ -37617,7 +37617,7 @@
       "opticiens"
     ],
     "zone": "centre",
-    "description": "Opticien à Saint-Jean : lunettes, lentilles et examens de vue."
+    "description": "Opticien : lunettes, lentilles et examens de vue."
   },
   {
     "id": "r-s-nazir-opticians",
@@ -37633,7 +37633,7 @@
       "opticiens"
     ],
     "zone": "centre",
-    "description": "Opticien à Beau Bassin : lunettes, lentilles et examens de vue."
+    "description": "Opticien : lunettes, lentilles et examens de vue."
   },
   {
     "id": "optique-patel",
@@ -37649,7 +37649,7 @@
       "opticiens"
     ],
     "zone": "centre",
-    "description": "Opticien à Beau Bassin : lunettes, lentilles et examens de vue."
+    "description": "Opticien : lunettes, lentilles et examens de vue."
   },
   {
     "id": "centre-medical-clinique-dentaire",
@@ -37665,7 +37665,7 @@
       "dentistes"
     ],
     "zone": "sud",
-    "description": "Cabinet dentaire à Rose Hill : soins dentaires, prévention et esthétique."
+    "description": "Cabinet dentaire : soins dentaires, prévention et esthétique."
   },
   {
     "id": "gaya-opticans",
@@ -37681,7 +37681,7 @@
       "opticiens"
     ],
     "zone": "ouest",
-    "description": "Opticien à Bambous : lunettes, lentilles et examens de vue."
+    "description": "Opticien : lunettes, lentilles et examens de vue."
   },
   {
     "id": "flacq-echography-and-x-ray-centre",
@@ -37697,7 +37697,7 @@
       "medecins"
     ],
     "zone": "est",
-    "description": "Cabinet médical à Centre de Flacq : consultations de médecine générale et suivi."
+    "description": "Cabinet médical : consultations de médecine générale et suivi."
   },
   {
     "id": "orthodondiste-dr-yan-luk-patrice",
@@ -37713,7 +37713,7 @@
       "dentistes"
     ],
     "zone": "centre",
-    "description": "Cabinet dentaire à Rose Hill : soins dentaires, prévention et esthétique."
+    "description": "Cabinet dentaire : soins dentaires, prévention et esthétique."
   },
   {
     "id": "jeff-patel",
@@ -37729,7 +37729,7 @@
       "opticiens"
     ],
     "zone": "nord",
-    "description": "Opticien à Grand Baie : lunettes, lentilles et examens de vue."
+    "description": "Opticien : lunettes, lentilles et examens de vue."
   },
   {
     "id": "eye-by-ridwaan-hossen",
@@ -37745,7 +37745,7 @@
       "opticiens"
     ],
     "zone": "nord",
-    "description": "Opticien à Grand Baie : lunettes, lentilles et examens de vue."
+    "description": "Opticien : lunettes, lentilles et examens de vue."
   },
   {
     "id": "orthodentist-toofany",
@@ -37761,7 +37761,7 @@
       "dentistes"
     ],
     "zone": "centre",
-    "description": "Cabinet dentaire à Saint-Jean : soins dentaires, prévention et esthétique."
+    "description": "Cabinet dentaire : soins dentaires, prévention et esthétique."
   },
   {
     "id": "green-cross-medical-laboratory",
@@ -37777,7 +37777,7 @@
       "laboratoires"
     ],
     "zone": "centre",
-    "description": "Laboratoire d’analyses médicales à Quatre-Bornes : prélèvements et examens biologiques."
+    "description": "Laboratoire d’analyses médicales : prélèvements et examens biologiques."
   },
   {
     "id": "green-cross",
@@ -37793,7 +37793,7 @@
       "laboratoires"
     ],
     "zone": "centre",
-    "description": "Laboratoire d’analyses médicales à Beau Bassin : prélèvements et examens biologiques."
+    "description": "Laboratoire d’analyses médicales : prélèvements et examens biologiques."
   },
   {
     "id": "vincent-perdreau",
@@ -37809,7 +37809,7 @@
       "medecins"
     ],
     "zone": "centre",
-    "description": "Cabinet médical à Chebel : consultations de médecine générale et suivi."
+    "description": "Cabinet médical : consultations de médecine générale et suivi."
   },
   {
     "id": "a-n-emritte",
@@ -37825,7 +37825,7 @@
       "medecins"
     ],
     "zone": "centre",
-    "description": "Cabinet médical à Beau Bassin : consultations de médecine générale et suivi."
+    "description": "Cabinet médical : consultations de médecine générale et suivi."
   },
   {
     "id": "docteur-reshad-sumodhee",
@@ -37841,7 +37841,7 @@
       "medecins"
     ],
     "zone": "centre",
-    "description": "Cabinet médical à Beau Bassin : consultations de médecine générale et suivi."
+    "description": "Cabinet médical : consultations de médecine générale et suivi."
   },
   {
     "id": "dr-parmessur",
@@ -37857,7 +37857,7 @@
       "medecins"
     ],
     "zone": "centre",
-    "description": "Cabinet médical à Beau Bassin : consultations de médecine générale et suivi."
+    "description": "Cabinet médical : consultations de médecine générale et suivi."
   },
   {
     "id": "dove-dental",
@@ -37873,7 +37873,7 @@
       "dentistes"
     ],
     "zone": "sud",
-    "description": "Cabinet dentaire à Mahébourg : soins dentaires, prévention et esthétique. Horaires : lun-samm 09h-16h."
+    "description": "Cabinet dentaire : soins dentaires, prévention et esthétique. Horaires : lun-samm 09h-16h."
   },
   {
     "id": "dr-peerbux",
@@ -37889,7 +37889,7 @@
       "dentistes"
     ],
     "zone": "sud",
-    "description": "Cabinet dentaire à Mahébourg : soins dentaires, prévention et esthétique."
+    "description": "Cabinet dentaire : soins dentaires, prévention et esthétique."
   },
   {
     "id": "dr-dhooboreea",
@@ -37905,7 +37905,7 @@
       "dentistes"
     ],
     "zone": "sud",
-    "description": "Cabinet dentaire à Mahébourg : soins dentaires, prévention et esthétique."
+    "description": "Cabinet dentaire : soins dentaires, prévention et esthétique."
   },
   {
     "id": "mathieu-mahebourg",
@@ -37921,7 +37921,7 @@
       "opticiens"
     ],
     "zone": "sud",
-    "description": "Opticien à Mahébourg : lunettes, lentilles et examens de vue."
+    "description": "Opticien : lunettes, lentilles et examens de vue."
   },
   {
     "id": "neurobalance-and-ent-clinic",
@@ -37937,7 +37937,7 @@
       "medecins"
     ],
     "zone": "centre",
-    "description": "Cabinet médical à Beau Bassin : consultations de médecine générale et suivi."
+    "description": "Cabinet médical : consultations de médecine générale et suivi."
   },
   {
     "id": "myvet",
@@ -37953,7 +37953,7 @@
       "veterinaires"
     ],
     "zone": "est",
-    "description": "Clinique / cabinet vétérinaire à Centre de Flacq : consultations, vaccinations et soins pour animaux."
+    "description": "Clinique / cabinet vétérinaire : consultations, vaccinations et soins pour animaux."
   },
   {
     "id": "dr-s-sibartie",
@@ -37969,7 +37969,7 @@
       "medecins"
     ],
     "zone": "centre",
-    "description": "Cabinet médical à Saint-Jean : consultations de médecine générale et suivi."
+    "description": "Cabinet médical : consultations de médecine générale et suivi."
   },
   {
     "id": "dr-s-mudoo",
@@ -37985,7 +37985,7 @@
       "medecins"
     ],
     "zone": "centre",
-    "description": "Cabinet médical à Saint-Jean : consultations de médecine générale et suivi."
+    "description": "Cabinet médical : consultations de médecine générale et suivi."
   },
   {
     "id": "dr-m-dauhoo",
@@ -38001,7 +38001,7 @@
       "medecins"
     ],
     "zone": "centre",
-    "description": "Cabinet médical à Saint-Jean : consultations de médecine générale et suivi."
+    "description": "Cabinet médical : consultations de médecine générale et suivi."
   },
   {
     "id": "patel-optics",
@@ -38017,7 +38017,7 @@
       "opticiens"
     ],
     "zone": "centre",
-    "description": "Opticien à Moka : lunettes, lentilles et examens de vue."
+    "description": "Opticien : lunettes, lentilles et examens de vue."
   },
   {
     "id": "novalab",
@@ -38033,7 +38033,7 @@
       "laboratoires"
     ],
     "zone": "centre",
-    "description": "Laboratoire d’analyses médicales à Vacoas-Phoenix : prélèvements et examens biologiques. Horaires : lun-ven 07h-17h; sam 07h-14h."
+    "description": "Laboratoire d’analyses médicales : prélèvements et examens biologiques. Horaires : lun-ven 07h-17h; sam 07h-14h."
   },
   {
     "id": "helios-eyewear-shop",
@@ -38049,7 +38049,7 @@
       "opticiens"
     ],
     "zone": "nord",
-    "description": "Opticien à Mapou : lunettes, lentilles et examens de vue. Horaires : lun-samm 09h-17h."
+    "description": "Opticien : lunettes, lentilles et examens de vue. Horaires : lun-samm 09h-17h."
   },
   {
     "id": "twinmed-ltd",
@@ -38065,7 +38065,7 @@
       "laboratoires"
     ],
     "zone": "centre",
-    "description": "Laboratoire d’analyses médicales à Vacoas-Phoenix : prélèvements et examens biologiques."
+    "description": "Laboratoire d’analyses médicales : prélèvements et examens biologiques."
   },
   {
     "id": "vinay-singh-veterinaire",
@@ -38081,7 +38081,7 @@
       "veterinaires"
     ],
     "zone": "centre",
-    "description": "Clinique / cabinet vétérinaire à Verdun : consultations, vaccinations et soins pour animaux."
+    "description": "Clinique / cabinet vétérinaire : consultations, vaccinations et soins pour animaux."
   },
   {
     "id": "ezio-opticians",
@@ -38097,7 +38097,7 @@
       "opticiens"
     ],
     "zone": "centre",
-    "description": "Opticien à Vacoas-Phoenix : lunettes, lentilles et examens de vue."
+    "description": "Opticien : lunettes, lentilles et examens de vue."
   },
   {
     "id": "biosante",
@@ -38113,7 +38113,7 @@
       "laboratoires"
     ],
     "zone": "centre",
-    "description": "Laboratoire d’analyses médicales à Vacoas-Phoenix : prélèvements et examens biologiques."
+    "description": "Laboratoire d’analyses médicales : prélèvements et examens biologiques."
   },
   {
     "id": "dr-mohamed-din-moraby",
@@ -38129,7 +38129,7 @@
       "laboratoires"
     ],
     "zone": "centre",
-    "description": "Laboratoire d’analyses médicales à Vacoas-Phoenix : prélèvements et examens biologiques."
+    "description": "Laboratoire d’analyses médicales : prélèvements et examens biologiques."
   },
   {
     "id": "dentalign-clinics-ltd-mauritius",
@@ -38145,7 +38145,7 @@
       "dentistes"
     ],
     "zone": "centre",
-    "description": "Cabinet dentaire à Vacoas-Phoenix : soins dentaires, prévention et esthétique."
+    "description": "Cabinet dentaire : soins dentaires, prévention et esthétique."
   },
   {
     "id": "mrs-h-b-peerally",
@@ -38161,7 +38161,7 @@
       "medecins"
     ],
     "zone": "centre",
-    "description": "Cabinet médical à Vacoas-Phoenix : consultations de médecine générale et suivi."
+    "description": "Cabinet médical : consultations de médecine générale et suivi."
   },
   {
     "id": "dr-v-siraz",
@@ -38177,7 +38177,7 @@
       "medecins"
     ],
     "zone": "centre",
-    "description": "Cabinet médical à Saint Pierre : consultations de médecine générale et suivi. Horaires : 13.30 - 18.30."
+    "description": "Cabinet médical : consultations de médecine générale et suivi. Horaires : 13.30 - 18.30."
   },
   {
     "id": "pro-lab",
@@ -38193,7 +38193,7 @@
       "laboratoires"
     ],
     "zone": "centre",
-    "description": "Laboratoire d’analyses médicales à Beau Bassin : prélèvements et examens biologiques."
+    "description": "Laboratoire d’analyses médicales : prélèvements et examens biologiques."
   },
   {
     "id": "laserostop",
@@ -38209,7 +38209,7 @@
       "medecins"
     ],
     "zone": "centre",
-    "description": "Cabinet médical à Le Bout du Monde : consultations de médecine générale et suivi."
+    "description": "Cabinet médical : consultations de médecine générale et suivi."
   },
   {
     "id": "dr-b-ramtohul",
@@ -38225,7 +38225,7 @@
       "medecins"
     ],
     "zone": "centre",
-    "description": "Cabinet médical à Plaisance : consultations de médecine générale et suivi."
+    "description": "Cabinet médical : consultations de médecine générale et suivi."
   },
   {
     "id": "vetmania-clinique-veterinaire-24-7-grand-baie",
@@ -38241,7 +38241,7 @@
       "veterinaires"
     ],
     "zone": "nord",
-    "description": "Clinique / cabinet vétérinaire à Grand Baie : consultations, vaccinations et soins pour animaux. Service d’urgence 24h/24."
+    "description": "Clinique / cabinet vétérinaire : consultations, vaccinations et soins pour animaux. Service d’urgence 24h/24."
   },
   {
     "id": "vetmania-24-7-moka",
@@ -38257,7 +38257,7 @@
       "veterinaires"
     ],
     "zone": "centre",
-    "description": "Clinique / cabinet vétérinaire à Moka : consultations, vaccinations et soins pour animaux. Service d’urgence 24h/24."
+    "description": "Clinique / cabinet vétérinaire : consultations, vaccinations et soins pour animaux. Service d’urgence 24h/24."
   },
   {
     "id": "vetocare-clinic",
@@ -38273,7 +38273,7 @@
       "veterinaires"
     ],
     "zone": "centre",
-    "description": "Clinique / cabinet vétérinaire à Vacoas-Phoenix : consultations, vaccinations et soins pour animaux."
+    "description": "Clinique / cabinet vétérinaire : consultations, vaccinations et soins pour animaux."
   },
   {
     "id": "dr-b-d-mungur-veterinary-services",
@@ -38289,7 +38289,7 @@
       "veterinaires"
     ],
     "zone": "centre",
-    "description": "Clinique / cabinet vétérinaire à Port-Louis : consultations, vaccinations et soins pour animaux."
+    "description": "Clinique / cabinet vétérinaire : consultations, vaccinations et soins pour animaux."
   },
   {
     "id": "clinique-veterinaire-de-carlos-dr-eric-bestel",
@@ -38305,7 +38305,7 @@
       "veterinaires"
     ],
     "zone": "ouest",
-    "description": "Clinique / cabinet vétérinaire à Tamarin : consultations, vaccinations et soins pour animaux."
+    "description": "Clinique / cabinet vétérinaire : consultations, vaccinations et soins pour animaux."
   },
   {
     "id": "island-vet-clinic-dr-sam-n",
@@ -38321,7 +38321,7 @@
       "veterinaires"
     ],
     "zone": "centre",
-    "description": "Clinique / cabinet vétérinaire à Quatre Bornes : consultations, vaccinations et soins pour animaux."
+    "description": "Clinique / cabinet vétérinaire : consultations, vaccinations et soins pour animaux."
   },
   {
     "id": "immo-concorda",
@@ -38753,7 +38753,7 @@
       "location-voiture"
     ],
     "zone": "nord",
-    "description": "Location de voiture à Grand Baie : véhicules de tourisme, tarifs journée/semaine, livraison possible."
+    "description": "Location de voiture : véhicules de tourisme, tarifs journée/semaine, livraison possible."
   },
   {
     "id": "loc-maki-car-rental",
@@ -38785,7 +38785,7 @@
       "location-voiture"
     ],
     "zone": "nord",
-    "description": "Location de voiture à Grand Baie : véhicules de tourisme, tarifs journée/semaine, livraison possible."
+    "description": "Location de voiture : véhicules de tourisme, tarifs journée/semaine, livraison possible."
   },
   {
     "id": "loc-colony-scooter-rental",
@@ -38801,7 +38801,7 @@
       "location-voiture"
     ],
     "zone": "sud",
-    "description": "Location de scooters et deux-roues à Mahébourg."
+    "description": "Location de scooters et deux-roues."
   },
   {
     "id": "loc-diplomat-car-hire",
@@ -38817,7 +38817,7 @@
       "location-voiture"
     ],
     "zone": "ouest",
-    "description": "Location de voiture à Flic en Flac : véhicules de tourisme, tarifs journée/semaine, livraison possible."
+    "description": "Location de voiture : véhicules de tourisme, tarifs journée/semaine, livraison possible."
   },
   {
     "id": "loc-genius",
@@ -38833,7 +38833,7 @@
       "location-voiture"
     ],
     "zone": "ouest",
-    "description": "Location de voiture à Flic en Flac : véhicules de tourisme, tarifs journée/semaine, livraison possible."
+    "description": "Location de voiture : véhicules de tourisme, tarifs journée/semaine, livraison possible."
   },
   {
     "id": "loc-adi-car-rental",
@@ -38849,7 +38849,7 @@
       "location-voiture"
     ],
     "zone": "centre",
-    "description": "Location de voiture à Vacoas-Phoenix : véhicules de tourisme, tarifs journée/semaine, livraison possible."
+    "description": "Location de voiture : véhicules de tourisme, tarifs journée/semaine, livraison possible."
   },
   {
     "id": "loc-pingouin-car-rental",
@@ -38865,7 +38865,7 @@
       "location-voiture"
     ],
     "zone": "sud",
-    "description": "Location de voiture à Plaine Magnien : véhicules de tourisme, tarifs journée/semaine, livraison possible."
+    "description": "Location de voiture : véhicules de tourisme, tarifs journée/semaine, livraison possible."
   },
   {
     "id": "loc-tropicar-location-de-voitures",
@@ -38881,7 +38881,7 @@
       "location-voiture"
     ],
     "zone": "centre",
-    "description": "Location de voiture à Saint-Jean : véhicules de tourisme, tarifs journée/semaine, livraison possible."
+    "description": "Location de voiture : véhicules de tourisme, tarifs journée/semaine, livraison possible."
   },
   {
     "id": "loc-first-car-rental",
@@ -38913,7 +38913,7 @@
       "location-voiture"
     ],
     "zone": "centre",
-    "description": "Location de voiture à Chebel : véhicules de tourisme, tarifs journée/semaine, livraison possible."
+    "description": "Location de voiture : véhicules de tourisme, tarifs journée/semaine, livraison possible."
   },
   {
     "id": "loc-ons-car-rent",
@@ -38929,7 +38929,7 @@
       "location-voiture"
     ],
     "zone": "sud",
-    "description": "Location de voiture à Mahébourg : véhicules de tourisme, tarifs journée/semaine, livraison possible."
+    "description": "Location de voiture : véhicules de tourisme, tarifs journée/semaine, livraison possible."
   },
   {
     "id": "loc-as-car-hire-ltd",
@@ -38945,7 +38945,7 @@
       "location-voiture"
     ],
     "zone": "centre",
-    "description": "Location de voiture à Vacoas-Phoenix : véhicules de tourisme, tarifs journée/semaine, livraison possible."
+    "description": "Location de voiture : véhicules de tourisme, tarifs journée/semaine, livraison possible."
   },
   {
     "id": "loc-mauritius-gts-car-rental",
@@ -38961,7 +38961,7 @@
       "location-voiture"
     ],
     "zone": "sud",
-    "description": "Location de voiture à Mahébourg : véhicules de tourisme, tarifs journée/semaine, livraison possible."
+    "description": "Location de voiture : véhicules de tourisme, tarifs journée/semaine, livraison possible."
   },
   {
     "id": "loc-pulsar-tours",
@@ -38977,7 +38977,7 @@
       "location-voiture"
     ],
     "zone": "nord",
-    "description": "Location de voiture à Trou aux Biches : véhicules de tourisme, tarifs journée/semaine, livraison possible."
+    "description": "Location de voiture : véhicules de tourisme, tarifs journée/semaine, livraison possible."
   },
   {
     "id": "loc-mauriconnect",
@@ -38993,7 +38993,7 @@
       "location-voiture"
     ],
     "zone": "sud",
-    "description": "Location de voiture à Plaine Magnien : véhicules de tourisme, tarifs journée/semaine, livraison possible."
+    "description": "Location de voiture : véhicules de tourisme, tarifs journée/semaine, livraison possible."
   },
   {
     "id": "tel-emtel-moka",
@@ -39009,7 +39009,7 @@
       "telecom"
     ],
     "zone": "centre",
-    "description": "Opérateur mobile & internet à Moka : cartes SIM, forfaits et box internet."
+    "description": "Opérateur mobile & internet : cartes SIM, forfaits et box internet."
   },
   {
     "id": "tel-emtel-riviere-du-rempart",
@@ -39025,7 +39025,7 @@
       "telecom"
     ],
     "zone": "est",
-    "description": "Opérateur mobile & internet à Rivière du Rempart : cartes SIM, forfaits et box internet."
+    "description": "Opérateur mobile & internet : cartes SIM, forfaits et box internet."
   },
   {
     "id": "tel-orange-riviere-du-rempart",
@@ -39041,7 +39041,7 @@
       "telecom"
     ],
     "zone": "est",
-    "description": "Opérateur mobile & internet à Rivière du Rempart : cartes SIM, forfaits et box internet."
+    "description": "Opérateur mobile & internet : cartes SIM, forfaits et box internet."
   },
   {
     "id": "tel-niphone-cellular-shop",
@@ -39057,7 +39057,7 @@
       "telecom"
     ],
     "zone": "est",
-    "description": "Boutique de téléphonie et d’accessoires à Rivière du Rempart."
+    "description": "Boutique de téléphonie et d’accessoires."
   },
   {
     "id": "tel-orange-moka",
@@ -39073,7 +39073,7 @@
       "telecom"
     ],
     "zone": "centre",
-    "description": "Opérateur mobile & internet à Moka : cartes SIM, forfaits et box internet."
+    "description": "Opérateur mobile & internet : cartes SIM, forfaits et box internet."
   },
   {
     "id": "tel-sy-loulou-telephone-shop",
@@ -39089,7 +39089,7 @@
       "telecom"
     ],
     "zone": "centre",
-    "description": "Boutique de téléphonie et d’accessoires à Port-Louis."
+    "description": "Boutique de téléphonie et d’accessoires."
   },
   {
     "id": "tel-emtel-port-louis",
@@ -39105,7 +39105,7 @@
       "telecom"
     ],
     "zone": "centre",
-    "description": "Opérateur mobile & internet à Port-Louis : cartes SIM, forfaits et box internet."
+    "description": "Opérateur mobile & internet : cartes SIM, forfaits et box internet."
   },
   {
     "id": "tel-mbk-phone",
@@ -39121,7 +39121,7 @@
       "telecom"
     ],
     "zone": "centre",
-    "description": "Boutique de téléphonie et d’accessoires à Mer Rouge."
+    "description": "Boutique de téléphonie et d’accessoires."
   },
   {
     "id": "tel-grand-zone",
@@ -39137,7 +39137,7 @@
       "telecom"
     ],
     "zone": "centre",
-    "description": "Boutique de téléphonie et d’accessoires à Port-Louis."
+    "description": "Boutique de téléphonie et d’accessoires."
   },
   {
     "id": "tel-telecom-shop",
@@ -39153,7 +39153,7 @@
       "telecom"
     ],
     "zone": "sud",
-    "description": "Boutique de téléphonie et d’accessoires à Mahébourg."
+    "description": "Boutique de téléphonie et d’accessoires."
   },
   {
     "id": "tel-galaxy",
@@ -39169,7 +39169,7 @@
       "telecom"
     ],
     "zone": "sud",
-    "description": "Boutique de téléphonie et d’accessoires à Mahébourg."
+    "description": "Boutique de téléphonie et d’accessoires."
   },
   {
     "id": "tel-shenicom",
@@ -39185,7 +39185,7 @@
       "telecom"
     ],
     "zone": "centre",
-    "description": "Boutique de téléphonie et d’accessoires à Vacoas-Phoenix."
+    "description": "Boutique de téléphonie et d’accessoires."
   },
   {
     "id": "tel-mobile-zone",
@@ -39201,7 +39201,7 @@
       "telecom"
     ],
     "zone": "centre",
-    "description": "Boutique de téléphonie et d’accessoires à Vacoas-Phoenix."
+    "description": "Boutique de téléphonie et d’accessoires."
   },
   {
     "id": "tel-huawei",
@@ -39217,7 +39217,7 @@
       "telecom"
     ],
     "zone": "centre",
-    "description": "Boutique de téléphonie et d’accessoires à Vacoas-Phoenix."
+    "description": "Boutique de téléphonie et d’accessoires."
   },
   {
     "id": "tel-t-smart-phone",
@@ -39233,7 +39233,7 @@
       "telecom"
     ],
     "zone": "centre",
-    "description": "Boutique de téléphonie et d’accessoires à Port-Louis."
+    "description": "Boutique de téléphonie et d’accessoires."
   },
   {
     "id": "tel-phone-universe",
@@ -39249,7 +39249,7 @@
       "telecom"
     ],
     "zone": "nord",
-    "description": "Boutique de téléphonie et d’accessoires à Mer Rouge."
+    "description": "Boutique de téléphonie et d’accessoires."
   },
   {
     "id": "tel-mauritius-telecom-le-hochet",
@@ -39265,7 +39265,7 @@
       "telecom"
     ],
     "zone": "nord",
-    "description": "Opérateur mobile & internet à Le Hochet : cartes SIM, forfaits et box internet."
+    "description": "Opérateur mobile & internet : cartes SIM, forfaits et box internet."
   },
   {
     "id": "tel-ash-mobile-accesories",
@@ -39281,7 +39281,7 @@
       "telecom"
     ],
     "zone": "ouest",
-    "description": "Boutique de téléphonie et d’accessoires à Petite Rivière."
+    "description": "Boutique de téléphonie et d’accessoires."
   },
   {
     "id": "tel-sm-mobile",
@@ -39297,7 +39297,7 @@
       "telecom"
     ],
     "zone": "centre",
-    "description": "Boutique de téléphonie et d’accessoires à Mer Rouge."
+    "description": "Boutique de téléphonie et d’accessoires."
   },
   {
     "id": "tel-mobile-city",
@@ -39313,7 +39313,7 @@
       "telecom"
     ],
     "zone": "centre",
-    "description": "Boutique de téléphonie et d’accessoires à Mer Rouge."
+    "description": "Boutique de téléphonie et d’accessoires."
   },
   {
     "id": "tel-sm-bhyroo-mobile-shop",
@@ -39329,7 +39329,7 @@
       "telecom"
     ],
     "zone": "centre",
-    "description": "Boutique de téléphonie et d’accessoires à Plaine Verte."
+    "description": "Boutique de téléphonie et d’accessoires."
   },
   {
     "id": "tel-mauritius-telecom-mer-rouge",
@@ -39345,7 +39345,7 @@
       "telecom"
     ],
     "zone": "centre",
-    "description": "Opérateur mobile & internet à Mer Rouge : cartes SIM, forfaits et box internet."
+    "description": "Opérateur mobile & internet : cartes SIM, forfaits et box internet."
   },
   {
     "id": "tel-jhumka-phone-world",
@@ -39361,7 +39361,7 @@
       "telecom"
     ],
     "zone": "centre",
-    "description": "Boutique de téléphonie et d’accessoires à Beau Bassin."
+    "description": "Boutique de téléphonie et d’accessoires."
   },
   {
     "id": "tel-emtel-bambous",
@@ -39377,7 +39377,7 @@
       "telecom"
     ],
     "zone": "ouest",
-    "description": "Opérateur mobile & internet à Bambous : cartes SIM, forfaits et box internet."
+    "description": "Opérateur mobile & internet : cartes SIM, forfaits et box internet."
   },
   {
     "id": "tel-emtel",
@@ -39393,7 +39393,7 @@
       "telecom"
     ],
     "zone": "est",
-    "description": "Opérateur mobile & internet à Centre de Flacq : cartes SIM, forfaits et box internet."
+    "description": "Opérateur mobile & internet : cartes SIM, forfaits et box internet."
   },
   {
     "id": "tel-emtel-grand-baie",
@@ -39409,7 +39409,7 @@
       "telecom"
     ],
     "zone": "nord",
-    "description": "Opérateur mobile & internet à Grand Baie : cartes SIM, forfaits et box internet."
+    "description": "Opérateur mobile & internet : cartes SIM, forfaits et box internet."
   },
   {
     "id": "tel-parabole-maurice",
@@ -39425,7 +39425,7 @@
       "telecom"
     ],
     "zone": "sud",
-    "description": "Télévision par satellite et abonnements TV à Mahébourg."
+    "description": "Télévision par satellite et abonnements TV."
   },
   {
     "id": "tel-mtml-chili",
@@ -39441,7 +39441,7 @@
       "telecom"
     ],
     "zone": "centre",
-    "description": "Opérateur mobile & internet à Port-Louis : cartes SIM, forfaits et box internet."
+    "description": "Opérateur mobile & internet : cartes SIM, forfaits et box internet."
   },
   {
     "id": "tel-telecom-shop-rose-hill",
@@ -39457,7 +39457,7 @@
       "telecom"
     ],
     "zone": "centre",
-    "description": "Boutique de téléphonie et d’accessoires à Rose Hill."
+    "description": "Boutique de téléphonie et d’accessoires."
   },
   {
     "id": "tel-emtel-rose-hill",
@@ -39473,7 +39473,7 @@
       "telecom"
     ],
     "zone": "centre",
-    "description": "Opérateur mobile & internet à Rose Hill : cartes SIM, forfaits et box internet."
+    "description": "Opérateur mobile & internet : cartes SIM, forfaits et box internet."
   },
   {
     "id": "tel-telefonshop",
@@ -39489,7 +39489,7 @@
       "telecom"
     ],
     "zone": "ouest",
-    "description": "Boutique de téléphonie et d’accessoires à Petite Rivière."
+    "description": "Boutique de téléphonie et d’accessoires."
   },
   {
     "id": "rhumerie-de-chamarel-visite",
