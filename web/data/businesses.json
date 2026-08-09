@@ -12911,6 +12911,7 @@
     "lat": -20.0123895,
     "lng": 57.5929855,
     "themes": [
+      "fruits-et-legumes",
       "boucheries",
       "produits-francais"
     ],
@@ -42504,5 +42505,245 @@
     "lng": 57.503,
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Maiden%20Cup%20%E2%80%93%20Champ%20de%20Mars%20Mauritius",
     "zone": "centre"
+  },
+  {
+    "id": "bazar-canonniers",
+    "name": "Bazar Canonniers",
+    "category": "food",
+    "address": "Casse Ghoon, Royal Road, Pointe aux Canonniers",
+    "phone": "+230 5814 1835",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Bazar%20Canonniers%20Pointe%20aux%20Canonniers%20Mauritius",
+    "lat": -20.006,
+    "lng": 57.544,
+    "themes": [
+      "fruits-et-legumes"
+    ],
+    "hours": "Lun–Sam 10h–19h, Dim 9h–13h",
+    "zone": "nord",
+    "description": "Petit marché local rustique et coloré : fruits et légumes de saison en permaculture, plus charcuterie, fromages, pâtisseries et cosmétiques naturels. Pas de livraison."
+  },
+  {
+    "id": "les-halles-francaises-riviere-noire",
+    "name": "Les Halles Françaises – Rivière Noire",
+    "category": "food",
+    "address": "Ruisseau Créole, Rivière Noire",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Les%20Halles%20Fran%C3%A7aises%20Ruisseau%20Creole%20Riviere%20Noire%20Mauritius",
+    "lat": -20.356,
+    "lng": 57.362,
+    "themes": [
+      "fruits-et-legumes",
+      "produits-francais"
+    ],
+    "hours": "",
+    "zone": "ouest",
+    "description": "Deuxième adresse des Halles Françaises, à Ruisseau Créole : rayon maraîcher (fruits & légumes), boucherie-charcuterie, fromagerie et produits français. Horaires à confirmer."
+  },
+  {
+    "id": "food-lovers-market-bagatelle",
+    "name": "Food Lover's Market – Bagatelle",
+    "category": "food",
+    "address": "Bagatelle Mall of Mauritius, Moka",
+    "phone": "+230 414 0003",
+    "website": "https://foodloversmarket.mu/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Food%20Lover's%20Market%20Bagatelle%20Mall%20Mauritius",
+    "lat": -20.2411,
+    "lng": 57.4863,
+    "themes": [
+      "fruits-et-legumes"
+    ],
+    "hours": "Lun–Jeu 9h30–20h30 (horaires étendus le week-end)",
+    "zone": "centre",
+    "description": "Marché de produits frais : large choix de fruits et légumes (dont une gamme zéro pesticide), pains, pâtisseries, produits laitiers et épicerie. Également une adresse à Rivière Noire. Livraison non précisée."
+  },
+  {
+    "id": "farmbasket",
+    "name": "Farmbasket",
+    "category": "food",
+    "address": "Higginson Road, St Julien d'Hotman",
+    "phone": "+230 5257 2453",
+    "website": "https://farmbasket.co/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Farmbasket%20St%20Julien%20d%20Hotman%20Mauritius",
+    "lat": -20.2833,
+    "lng": 57.6667,
+    "themes": [
+      "fruits-et-legumes",
+      "livraisons"
+    ],
+    "hours": "Commande en ligne (newsletter chaque vendredi), livraison à domicile ou en points de retrait",
+    "zone": "est",
+    "description": "Ferme bio à St Julien d'Hotman : fruits, légumes de saison, produits laitiers et épicerie, cultivés avec un réseau de petits producteurs locaux. Commande en ligne avec livraison à domicile ou retrait — la livraison est possible."
+  },
+  {
+    "id": "lakaz-lespwar-solitude",
+    "name": "Lakaz Lespwar (Caritas Solitude)",
+    "category": "food",
+    "address": "Solitude",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Caritas%20Solitude%20Lakaz%20Lespwar%20Mauritius",
+    "lat": -20.065,
+    "lng": 57.556,
+    "themes": [
+      "fruits-et-legumes"
+    ],
+    "hours": "",
+    "zone": "nord",
+    "description": "Jardin maraîcher bio (label Lakaz bio / certifié Ecocert) porté par Caritas Solitude : brèdes, tomates, giraumons, calebasses cultivés sans pesticides. Production vendue sur les marchés locaux et à des hôtels — pas de boutique ouverte au public."
+  },
+  {
+    "id": "market-riviere-du-rempart-primeur",
+    "name": "Market Riviere Du Rempart",
+    "category": "food",
+    "address": "Rivière du Rempart",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Market%20Riviere%20Du%20Rempart%20Rivi%C3%A8re%20du%20Rempart%20Mauritius",
+    "lat": -20.1080992,
+    "lng": 57.6926404,
+    "themes": [
+      "fruits-et-legumes"
+    ],
+    "hours": "",
+    "zone": "nord",
+    "description": "Primeur de quartier — fruits et légumes frais. Horaires et éventuel label bio non confirmés."
+  },
+  {
+    "id": "sandrasagren-co-ltd-primeur",
+    "name": "Sandrasagren & Co Ltd",
+    "category": "food",
+    "address": "Port-Louis",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Sandrasagren%20%26%20Co%20Ltd%20Port-Louis%20Mauritius",
+    "lat": -20.1598396,
+    "lng": 57.5030604,
+    "themes": [
+      "fruits-et-legumes"
+    ],
+    "hours": "",
+    "zone": "nord",
+    "description": "Primeur de quartier — fruits et légumes frais. Horaires et éventuel label bio non confirmés."
+  },
+  {
+    "id": "skc-surat-primeur",
+    "name": "SKC Surat",
+    "category": "food",
+    "address": "Port-Louis",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=SKC%20Surat%20Port-Louis%20Mauritius",
+    "lat": -20.1597807,
+    "lng": 57.503325,
+    "themes": [
+      "fruits-et-legumes"
+    ],
+    "hours": "",
+    "zone": "nord",
+    "description": "Primeur de quartier — fruits et légumes frais. Horaires et éventuel label bio non confirmés."
+  },
+  {
+    "id": "steward-s-lazzat-primeur",
+    "name": "Steward's Lazzat",
+    "category": "food",
+    "address": "Louis Pasteur Street, Port-Louis",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Steward's%20Lazzat%20Louis%20Pasteur%20Street%2C%20Port-Louis%20Mauritius",
+    "lat": -20.1600568,
+    "lng": 57.5042323,
+    "themes": [
+      "fruits-et-legumes"
+    ],
+    "hours": "",
+    "zone": "nord",
+    "description": "Primeur de quartier — fruits et légumes frais. Horaires et éventuel label bio non confirmés."
+  },
+  {
+    "id": "fareed-confit-primeur",
+    "name": "Fareed Confit",
+    "category": "food",
+    "address": "Pamplemousses Road",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Fareed%20Confit%20Pamplemousses%20Road%20Mauritius",
+    "lat": -20.1299453,
+    "lng": 57.5299049,
+    "themes": [
+      "fruits-et-legumes"
+    ],
+    "hours": "",
+    "zone": "nord",
+    "description": "Primeur de quartier — fruits et légumes frais. Horaires et éventuel label bio non confirmés."
+  },
+  {
+    "id": "fress-veggie-farmers-market-primeur",
+    "name": "Fress Veggie Farmers Market",
+    "category": "food",
+    "address": "Floreal Main Road",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Fress%20Veggie%20Farmers%20Market%20Floreal%20Main%20Road%20Mauritius",
+    "lat": -20.310642,
+    "lng": 57.5131112,
+    "themes": [
+      "fruits-et-legumes"
+    ],
+    "hours": "",
+    "zone": "centre",
+    "description": "Primeur de quartier — fruits et légumes frais. Horaires et éventuel label bio non confirmés."
+  },
+  {
+    "id": "kaudeer-bros-primeur",
+    "name": "Kaudeer & Bros",
+    "category": "food",
+    "address": "Royal Road, Mahébourg",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Kaudeer%20%26%20Bros%20Royal%20Road%2C%20Mah%C3%A9bourg%20Mauritius",
+    "lat": -20.411535,
+    "lng": 57.705781,
+    "themes": [
+      "fruits-et-legumes"
+    ],
+    "hours": "",
+    "zone": "sud",
+    "description": "Primeur de quartier — fruits et légumes frais. Horaires et éventuel label bio non confirmés."
+  },
+  {
+    "id": "la-lumiere-primeur",
+    "name": "La Lumiere",
+    "category": "food",
+    "address": "Royal Road, Mahébourg",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=La%20Lumiere%20Royal%20Road%2C%20Mah%C3%A9bourg%20Mauritius",
+    "lat": -20.415035,
+    "lng": 57.7051344,
+    "themes": [
+      "fruits-et-legumes"
+    ],
+    "hours": "",
+    "zone": "sud",
+    "description": "Primeur de quartier — fruits et légumes frais. Horaires et éventuel label bio non confirmés."
+  },
+  {
+    "id": "la-varaugue-bleue-primeur",
+    "name": "La Varaugue Bleue",
+    "category": "food",
+    "address": "Rue des Flamands, Mahébourg",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=La%20Varaugue%20Bleue%20Rue%20des%20Flamands%2C%20Mah%C3%A9bourg%20Mauritius",
+    "lat": -20.4073562,
+    "lng": 57.7075478,
+    "themes": [
+      "fruits-et-legumes"
+    ],
+    "hours": "",
+    "zone": "sud",
+    "description": "Primeur de quartier — fruits et légumes frais. Horaires et éventuel label bio non confirmés."
   }
 ]

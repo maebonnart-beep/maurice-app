@@ -61,7 +61,8 @@ export const FAMILIES: Partial<Record<CategoryKey, Family[]>> = {
       label: "Commerces",
       emoji: "🛒",
       children: [
-        "grandes-surfaces", "epiceries-specialisees", "boucheries", "poissonneries", "marches",
+        "grandes-surfaces", "epiceries-specialisees", "boucheries", "poissonneries",
+        "fruits-et-legumes", "marches",
         "livraisons", "boulangeries", "produits-francais", "vins-spiritueux",
       ],
     },
@@ -185,6 +186,7 @@ export const SUBCATEGORIES: Partial<Record<CategoryKey, Subcategory[]>> = {
     { key: "epiceries-specialisees", label: "Épiceries spécialisées", emoji: "🧺" },
     { key: "boucheries", label: "Boucheries", emoji: "🥩" },
     { key: "poissonneries", label: "Poissonneries", emoji: "🐟" },
+    { key: "fruits-et-legumes", label: "Fruits & légumes", emoji: "🥬" },
     { key: "marches", label: "Marchés", emoji: "🥭" },
     { key: "livraisons", label: "Livraisons", emoji: "🚚" },
     { key: "boulangeries", label: "Boulangerie, pâtisseries & petit snacking", emoji: "🥐" },
