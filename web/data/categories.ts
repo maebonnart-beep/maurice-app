@@ -224,6 +224,13 @@ export const SUBCATEGORIES: Partial<Record<CategoryKey, Subcategory[]>> = {
     { key: "vtc-apps", label: "Applications VTC & réservation", emoji: "📱" },
     { key: "telecom", label: "Télécom & internet", emoji: "📶" },
     { key: "plateformes-multiservices", label: "Plateformes multiservices & touristiques", emoji: "🧳" },
+    { key: "garages-mecaniciens", label: "Garages & mécaniciens", emoji: "🔧" },
+    { key: "controle-technique", label: "Contrôle technique (fitness)", emoji: "🛠️" },
+    { key: "notaires", label: "Notaires", emoji: "📜" },
+    { key: "avocats", label: "Avocats & juristes", emoji: "⚖️" },
+    { key: "comptables", label: "Comptables & experts-comptables", emoji: "🧮" },
+    { key: "pressing-blanchisserie", label: "Pressing & blanchisserie", emoji: "🧺" },
+    { key: "ambassades-consulats", label: "Ambassades & consulats", emoji: "🏛️" },
   ],
   coaching: [
     { key: "sports-bien-etre", label: "Sports & bien-être", emoji: "🏋️" },

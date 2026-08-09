@@ -31973,13 +31973,16 @@
     "id": "ambassade-de-france",
     "name": "Ambassade de France",
     "category": "utiles",
-    "address": "",
+    "address": "14 rue Saint-Georges, Port-Louis",
     "phone": "",
-    "website": "",
-    "description": "Services consulaires officiels : visas, état civil, démarches administratives françaises. Accompagnement institutionnel et formel, pas de suivi personnalisé.",
+    "website": "https://mu.ambafrance.org/",
+    "description": "Ambassade de France à Maurice. Section consulaire au 5, rue Auguste Rouget : passeports, visas, état civil et démarches pour les ressortissants français.",
     "themes": [
-      "expatriation-visas"
-    ]
+      "expatriation-visas",
+      "ambassades-consulats"
+    ],
+    "hours": "Lun-ven 8h-12h et 13h-16h (section consulaire)",
+    "zone": "centre"
   },
   {
     "id": "maurice-accueil",
@@ -39951,5 +39954,701 @@
       "medecine-douce"
     ],
     "description": "Cabinet d'ostéopathie tenu par Romain Lauri et Amandine Leca (diplômés de l'Institut Supérieur d'Ostéopathie d'Aix-en-Provence). Sur rendez-vous."
+  },
+  {
+    "id": "bosch-service-uti",
+    "name": "Bosch Service",
+    "category": "utiles",
+    "address": "Fond du Sac",
+    "phone": "",
+    "website": "",
+    "themes": [
+      "garages-mecaniciens"
+    ],
+    "description": "Garage automobile : entretien courant, réparation mécanique et diagnostic.",
+    "lat": -20.0576,
+    "lng": 57.6143,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Bosch%20Service%20Mauritius",
+    "zone": "nord"
+  },
+  {
+    "id": "sobee-car-service-uti",
+    "name": "Sobee Car Service",
+    "category": "utiles",
+    "address": "Plaine Des Papayes",
+    "phone": "",
+    "website": "",
+    "themes": [
+      "garages-mecaniciens"
+    ],
+    "description": "Garage automobile : entretien courant, réparation mécanique et diagnostic.",
+    "lat": -20.0616,
+    "lng": 57.5818,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Sobee%20Car%20Service%20Mauritius",
+    "zone": "nord"
+  },
+  {
+    "id": "garage-toto-uti",
+    "name": "Garage Toto",
+    "category": "utiles",
+    "address": "Port Louis",
+    "phone": "",
+    "website": "",
+    "themes": [
+      "garages-mecaniciens"
+    ],
+    "description": "Garage automobile : entretien courant, réparation mécanique et diagnostic.",
+    "lat": -20.1478,
+    "lng": 57.5133,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Garage%20Toto%20Mauritius",
+    "zone": "centre"
+  },
+  {
+    "id": "garage-rajoo-uti",
+    "name": "Garage Rajoo",
+    "category": "utiles",
+    "address": "Brisee Verdiere",
+    "phone": "",
+    "website": "",
+    "themes": [
+      "garages-mecaniciens"
+    ],
+    "description": "Garage automobile : entretien courant, réparation mécanique et diagnostic.",
+    "lat": -20.1658,
+    "lng": 57.6531,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Garage%20Rajoo%20Mauritius",
+    "zone": "sud"
+  },
+  {
+    "id": "amortech-uti",
+    "name": "Amortech",
+    "category": "utiles",
+    "address": "Poste de Flacq",
+    "phone": "",
+    "website": "",
+    "themes": [
+      "garages-mecaniciens"
+    ],
+    "description": "Garage automobile : entretien courant, réparation mécanique et diagnostic.",
+    "lat": -20.1711,
+    "lng": 57.7301,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Amortech%20Mauritius",
+    "zone": "est"
+  },
+  {
+    "id": "garage-nanda-uti",
+    "name": "Garage Nanda",
+    "category": "utiles",
+    "address": "Vacoas-Phoenix",
+    "phone": "",
+    "website": "",
+    "themes": [
+      "garages-mecaniciens"
+    ],
+    "description": "Garage automobile : entretien courant, réparation mécanique et diagnostic.",
+    "lat": -20.3077,
+    "lng": 57.4908,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Garage%20Nanda%20Mauritius",
+    "zone": "centre"
+  },
+  {
+    "id": "garage-daylight-uti",
+    "name": "Garage Daylight",
+    "category": "utiles",
+    "address": "Curepipe",
+    "phone": "",
+    "website": "",
+    "themes": [
+      "garages-mecaniciens"
+    ],
+    "description": "Garage automobile : entretien courant, réparation mécanique et diagnostic.",
+    "lat": -20.3296,
+    "lng": 57.5315,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Garage%20Daylight%20Mauritius",
+    "zone": "centre"
+  },
+  {
+    "id": "auto-mart-co-uti",
+    "name": "Auto Mart Co",
+    "category": "utiles",
+    "address": "Port Louis",
+    "phone": "",
+    "website": "",
+    "themes": [
+      "garages-mecaniciens"
+    ],
+    "description": "Garage automobile : entretien courant, réparation mécanique et diagnostic.",
+    "lat": -20.1815,
+    "lng": 57.481,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Auto%20Mart%20Co%20Mauritius",
+    "zone": "centre"
+  },
+  {
+    "id": "atelier-st-therese-uti",
+    "name": "Atelier St. Thérèse",
+    "category": "utiles",
+    "address": "Port Louis",
+    "phone": "",
+    "website": "",
+    "themes": [
+      "garages-mecaniciens"
+    ],
+    "description": "Garage automobile : entretien courant, réparation mécanique et diagnostic.",
+    "lat": -20.1469,
+    "lng": 57.5224,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Atelier%20St.%20Th%C3%A9r%C3%A8se%20Mauritius",
+    "zone": "centre"
+  },
+  {
+    "id": "clinic-des-auto-moto-uti",
+    "name": "Clinic des Auto-Moto",
+    "category": "utiles",
+    "address": "Port Louis",
+    "phone": "",
+    "website": "",
+    "themes": [
+      "garages-mecaniciens"
+    ],
+    "description": "Garage automobile : entretien courant, réparation mécanique et diagnostic.",
+    "lat": -20.1354,
+    "lng": 57.5273,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Clinic%20des%20Auto-Moto%20Mauritius",
+    "zone": "centre"
+  },
+  {
+    "id": "garage-nazim-uti",
+    "name": "Garage Nazim",
+    "category": "utiles",
+    "address": "Vacoas-Phoenix",
+    "phone": "",
+    "website": "",
+    "themes": [
+      "garages-mecaniciens"
+    ],
+    "description": "Garage automobile : entretien courant, réparation mécanique et diagnostic.",
+    "lat": -20.3063,
+    "lng": 57.4814,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Garage%20Nazim%20Mauritius",
+    "zone": "centre"
+  },
+  {
+    "id": "jerome-automotive-paint-uti",
+    "name": "Jerome Automotive Paint",
+    "category": "utiles",
+    "address": "Vacoas-Phoenix",
+    "phone": "",
+    "website": "",
+    "themes": [
+      "garages-mecaniciens"
+    ],
+    "description": "Garage automobile : entretien courant, réparation mécanique et diagnostic.",
+    "lat": -20.3008,
+    "lng": 57.4834,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Jerome%20Automotive%20Paint%20Mauritius",
+    "zone": "centre"
+  },
+  {
+    "id": "wash-net-uti",
+    "name": "Wash Net",
+    "category": "utiles",
+    "address": "Vacoas-Phoenix",
+    "phone": "",
+    "website": "",
+    "themes": [
+      "pressing-blanchisserie"
+    ],
+    "description": "Pressing & blanchisserie : nettoyage à sec, lavage et repassage.",
+    "lat": -20.309,
+    "lng": 57.49,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Wash%20Net%20Mauritius",
+    "zone": "centre"
+  },
+  {
+    "id": "blanchisserie-jo-chris-laundry-uti",
+    "name": "Blanchisserie Jo & Chris Laundry",
+    "category": "utiles",
+    "address": "Flic en Flac",
+    "phone": "",
+    "website": "",
+    "themes": [
+      "pressing-blanchisserie"
+    ],
+    "description": "Pressing & blanchisserie : nettoyage à sec, lavage et repassage.",
+    "lat": -20.2852,
+    "lng": 57.3645,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Blanchisserie%20Jo%20%26%20Chris%20Laundry%20Mauritius",
+    "zone": "ouest"
+  },
+  {
+    "id": "penguin-laundry-uti",
+    "name": "Penguin Laundry",
+    "category": "utiles",
+    "address": "Grand Baie",
+    "phone": "",
+    "website": "",
+    "themes": [
+      "pressing-blanchisserie"
+    ],
+    "description": "Pressing & blanchisserie : nettoyage à sec, lavage et repassage.",
+    "lat": -20.0134,
+    "lng": 57.5849,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Penguin%20Laundry%20Mauritius",
+    "zone": "nord"
+  },
+  {
+    "id": "the-fresh-spin-uti",
+    "name": "The Fresh Spin",
+    "category": "utiles",
+    "address": "Trou aux Biches",
+    "phone": "",
+    "website": "",
+    "themes": [
+      "pressing-blanchisserie"
+    ],
+    "description": "Pressing & blanchisserie : nettoyage à sec, lavage et repassage.",
+    "lat": -20.043,
+    "lng": 57.5455,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=The%20Fresh%20Spin%20Mauritius",
+    "zone": "nord"
+  },
+  {
+    "id": "ambassade-des-etats-unis-uti",
+    "name": "Ambassade des États-Unis",
+    "category": "utiles",
+    "address": "Port Louis",
+    "phone": "",
+    "website": "",
+    "themes": [
+      "ambassades-consulats"
+    ],
+    "description": "Représentation diplomatique à Maurice (démarches consulaires selon le poste).",
+    "lat": -20.162,
+    "lng": 57.5005,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Ambassade%20des%20%C3%89tats-Unis%20Mauritius",
+    "zone": "centre"
+  },
+  {
+    "id": "haut-commissariat-de-l-inde-uti",
+    "name": "Haut-Commissariat de l'Inde",
+    "category": "utiles",
+    "address": "Port-Louis",
+    "phone": "",
+    "website": "",
+    "themes": [
+      "ambassades-consulats"
+    ],
+    "description": "Représentation diplomatique à Maurice (démarches consulaires selon le poste).",
+    "lat": -20.163,
+    "lng": 57.4997,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Haut-Commissariat%20de%20l'Inde%20Mauritius",
+    "zone": "centre"
+  },
+  {
+    "id": "haut-commissariat-d-australie-uti",
+    "name": "Haut-Commissariat d'Australie",
+    "category": "utiles",
+    "address": "Port Louis",
+    "phone": "",
+    "website": "",
+    "themes": [
+      "ambassades-consulats"
+    ],
+    "description": "Représentation diplomatique à Maurice (démarches consulaires selon le poste).",
+    "lat": -20.1621,
+    "lng": 57.5006,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Haut-Commissariat%20d'Australie%20Mauritius",
+    "zone": "centre"
+  },
+  {
+    "id": "haut-commissariat-d-afrique-du-sud-uti",
+    "name": "Haut-Commissariat d'Afrique du Sud",
+    "category": "utiles",
+    "address": "Port Louis",
+    "phone": "",
+    "website": "",
+    "themes": [
+      "ambassades-consulats"
+    ],
+    "description": "Représentation diplomatique à Maurice (démarches consulaires selon le poste).",
+    "lat": -20.1655,
+    "lng": 57.5062,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Haut-Commissariat%20d'Afrique%20du%20Sud%20Mauritius",
+    "zone": "centre"
+  },
+  {
+    "id": "haut-commissariat-britannique-uti",
+    "name": "Haut-Commissariat britannique",
+    "category": "utiles",
+    "address": "Floréal",
+    "phone": "",
+    "website": "",
+    "themes": [
+      "ambassades-consulats"
+    ],
+    "description": "Représentation diplomatique à Maurice (démarches consulaires selon le poste).",
+    "lat": -20.3111,
+    "lng": 57.5039,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Haut-Commissariat%20britannique%20Mauritius",
+    "zone": "centre"
+  },
+  {
+    "id": "delegation-de-l-union-europeenne-uti",
+    "name": "Délégation de l'Union européenne",
+    "category": "utiles",
+    "address": "Port Louis",
+    "phone": "",
+    "website": "",
+    "themes": [
+      "ambassades-consulats"
+    ],
+    "description": "Représentation diplomatique à Maurice (démarches consulaires selon le poste).",
+    "lat": -20.1675,
+    "lng": 57.5047,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=D%C3%A9l%C3%A9gation%20de%20l'Union%20europ%C3%A9enne%20Mauritius",
+    "zone": "centre"
+  },
+  {
+    "id": "ambassade-de-chine-uti",
+    "name": "Ambassade de Chine",
+    "category": "utiles",
+    "address": "Quatre Bornes",
+    "phone": "",
+    "website": "",
+    "themes": [
+      "ambassades-consulats"
+    ],
+    "description": "Représentation diplomatique à Maurice (démarches consulaires selon le poste).",
+    "lat": -20.2515,
+    "lng": 57.4848,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Ambassade%20de%20Chine%20Mauritius",
+    "zone": "centre"
+  },
+  {
+    "id": "haut-commissariat-du-pakistan-uti",
+    "name": "Haut-Commissariat du Pakistan",
+    "category": "utiles",
+    "address": "Vacoas-Phoenix",
+    "phone": "",
+    "website": "",
+    "themes": [
+      "ambassades-consulats"
+    ],
+    "description": "Représentation diplomatique à Maurice (démarches consulaires selon le poste).",
+    "lat": -20.3106,
+    "lng": 57.5111,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Haut-Commissariat%20du%20Pakistan%20Mauritius",
+    "zone": "centre"
+  },
+  {
+    "id": "ambassade-de-libye-uti",
+    "name": "Ambassade de Libye",
+    "category": "utiles",
+    "address": "Vacoas-Phoenix",
+    "phone": "",
+    "website": "",
+    "themes": [
+      "ambassades-consulats"
+    ],
+    "description": "Représentation diplomatique à Maurice (démarches consulaires selon le poste).",
+    "lat": -20.3086,
+    "lng": 57.5114,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Ambassade%20de%20Libye%20Mauritius",
+    "zone": "centre"
+  },
+  {
+    "id": "consulat-d-italie-uti",
+    "name": "Consulat d'Italie",
+    "category": "utiles",
+    "address": "Vacoas-Phoenix",
+    "phone": "",
+    "website": "",
+    "themes": [
+      "ambassades-consulats"
+    ],
+    "description": "Représentation diplomatique à Maurice (démarches consulaires selon le poste).",
+    "lat": -20.3016,
+    "lng": 57.4932,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Consulat%20d'Italie%20Mauritius",
+    "zone": "centre"
+  },
+  {
+    "id": "consulat-honoraire-d-allemagne-goodlands-uti",
+    "name": "Consulat honoraire d'Allemagne (Goodlands)",
+    "category": "utiles",
+    "address": "Goodlands",
+    "phone": "",
+    "website": "",
+    "themes": [
+      "ambassades-consulats"
+    ],
+    "description": "Représentation diplomatique à Maurice (démarches consulaires selon le poste).",
+    "lat": -20.0415,
+    "lng": 57.6581,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Consulat%20honoraire%20d'Allemagne%20(Goodlands)%20Mauritius",
+    "zone": "nord"
+  },
+  {
+    "id": "consulat-du-mexique-uti",
+    "name": "Consulat du Mexique",
+    "category": "utiles",
+    "address": "Grand Baie",
+    "phone": "",
+    "website": "",
+    "themes": [
+      "ambassades-consulats"
+    ],
+    "description": "Représentation diplomatique à Maurice (démarches consulaires selon le poste).",
+    "lat": -20.0142,
+    "lng": 57.5875,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Consulat%20du%20Mexique%20Mauritius",
+    "zone": "nord"
+  },
+  {
+    "id": "sgs-vehicle-examination-centre-uti",
+    "name": "SGS Vehicle Examination Centre",
+    "category": "utiles",
+    "address": "Curepipe",
+    "phone": "",
+    "website": "",
+    "themes": [
+      "controle-technique"
+    ],
+    "description": "Centre privé d'examen technique des véhicules (certificat de fitness), agréé.",
+    "lat": -20.325,
+    "lng": 57.5364,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=SGS%20Vehicle%20Examination%20Centre%20Mauritius",
+    "zone": "centre"
+  },
+  {
+    "id": "nta-vehicle-examination-centre-forest-side-uti",
+    "name": "NTA Vehicle Examination Centre - Forest Side",
+    "category": "utiles",
+    "address": "Forest Side, Curepipe",
+    "phone": "",
+    "website": "",
+    "themes": [
+      "controle-technique"
+    ],
+    "description": "Centre officiel d'examen des véhicules (NTA) : test de fitness obligatoire dès 7 ans du véhicule."
+  },
+  {
+    "id": "vehicle-inspection-centre-plaine-lauzun-uti",
+    "name": "Vehicle Inspection Centre - Plaine Lauzun",
+    "category": "utiles",
+    "address": "Plaine Lauzun, Port-Louis",
+    "phone": "",
+    "website": "",
+    "themes": [
+      "controle-technique"
+    ],
+    "description": "Centre officiel d'inspection des véhicules : test de fitness obligatoire dès 7 ans du véhicule."
+  },
+  {
+    "id": "etude-me-avrillon-uti",
+    "name": "Étude Me Avrillon",
+    "category": "utiles",
+    "address": "Labama House, 35 rue Sir William Newton, Port-Louis",
+    "phone": "",
+    "website": "",
+    "themes": [
+      "notaires"
+    ],
+    "description": "Étude notariale : actes authentiques, transactions immobilières et successions.",
+    "lat": -20.1614065,
+    "lng": 57.502651,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=%C3%89tude%20Me%20Avrillon%20Mauritius",
+    "zone": "centre"
+  },
+  {
+    "id": "etude-me-gopee-ahmad-ibrahim-uti",
+    "name": "Étude Me Gopee Ahmad Ibrahim",
+    "category": "utiles",
+    "address": "Vawda Building, Sir Virgil Naz Street, Port-Louis",
+    "phone": "",
+    "website": "",
+    "themes": [
+      "notaires"
+    ],
+    "description": "Étude notariale : actes authentiques, transactions immobilières et successions."
+  },
+  {
+    "id": "etude-me-dominique-lamusse-uti",
+    "name": "Étude Me Dominique Lamusse",
+    "category": "utiles",
+    "address": "PCL Building, Sir Virgil Naz Street, Port-Louis",
+    "phone": "",
+    "website": "",
+    "themes": [
+      "notaires"
+    ],
+    "description": "Étude notariale : actes authentiques, transactions immobilières et successions."
+  },
+  {
+    "id": "etude-didier-maigrot-uti",
+    "name": "Étude Didier Maigrot",
+    "category": "utiles",
+    "address": "Port-Louis",
+    "phone": "",
+    "website": "",
+    "themes": [
+      "notaires"
+    ],
+    "description": "Étude notariale : actes authentiques, transactions immobilières et successions.",
+    "lat": -20.1624522,
+    "lng": 57.5028044,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=%C3%89tude%20Didier%20Maigrot%20Mauritius",
+    "zone": "centre"
+  },
+  {
+    "id": "etude-mariette-belcourt-uti",
+    "name": "Étude Mariette Belcourt",
+    "category": "utiles",
+    "address": "Port-Louis",
+    "phone": "",
+    "website": "",
+    "themes": [
+      "notaires"
+    ],
+    "description": "Étude notariale : actes authentiques, transactions immobilières et successions.",
+    "lat": -20.1624522,
+    "lng": 57.5028044,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=%C3%89tude%20Mariette%20Belcourt%20Mauritius",
+    "zone": "centre"
+  },
+  {
+    "id": "me-sahebally-barrister-at-law-uti",
+    "name": "Me Sahebally (Barrister at law)",
+    "category": "utiles",
+    "address": "Beau Bassin-Rose Hill",
+    "phone": "",
+    "website": "",
+    "themes": [
+      "avocats"
+    ],
+    "description": "Cabinet d'avocats / barrister : conseil juridique et représentation.",
+    "lat": -20.2402,
+    "lng": 57.4683,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Me%20Sahebally%20(Barrister%20at%20law)%20Mauritius",
+    "zone": "centre"
+  },
+  {
+    "id": "ivishrao-bhikoo-avocat-uti",
+    "name": "Ivishrao Bhikoo (Avocat)",
+    "category": "utiles",
+    "address": "Bambous",
+    "phone": "",
+    "website": "",
+    "themes": [
+      "avocats"
+    ],
+    "description": "Cabinet d'avocats / barrister : conseil juridique et représentation.",
+    "lat": -20.257,
+    "lng": 57.4167,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Ivishrao%20Bhikoo%20(Avocat)%20Mauritius",
+    "zone": "ouest"
+  },
+  {
+    "id": "blc-robert-associates-uti",
+    "name": "BLC Robert & Associates",
+    "category": "utiles",
+    "address": "2nd Floor, The Axis, Ebène",
+    "phone": "",
+    "website": "https://blc.mu/",
+    "themes": [
+      "avocats"
+    ],
+    "description": "Cabinet d'avocats d'affaires (droit des sociétés, financier, immobilier, contentieux)."
+  },
+  {
+    "id": "juristconsult-chambers-uti",
+    "name": "Juristconsult Chambers",
+    "category": "utiles",
+    "address": "Ebène",
+    "phone": "",
+    "website": "https://juristconsult.com/",
+    "themes": [
+      "avocats"
+    ],
+    "description": "Cabinet d'avocats d'affaires (corporate, financier, fiscal, contentieux)."
+  },
+  {
+    "id": "bdo-mauritius-uti",
+    "name": "BDO Mauritius",
+    "category": "utiles",
+    "address": "Ebène Cybercity",
+    "phone": "",
+    "website": "https://www.bdo.mu/",
+    "themes": [
+      "comptables"
+    ],
+    "description": "Cabinet d'expertise comptable et d'audit : comptabilité, fiscalité et conseil aux entreprises."
+  },
+  {
+    "id": "ernst-young-ey-mauritius-uti",
+    "name": "Ernst & Young (EY) Mauritius",
+    "category": "utiles",
+    "address": "Ebène",
+    "phone": "",
+    "website": "https://www.ey.com/en_mu",
+    "themes": [
+      "comptables"
+    ],
+    "description": "Cabinet d'expertise comptable et d'audit : comptabilité, fiscalité et conseil aux entreprises."
+  },
+  {
+    "id": "kpmg-mauritius-uti",
+    "name": "KPMG Mauritius",
+    "category": "utiles",
+    "address": "Ebène",
+    "phone": "",
+    "website": "https://kpmg.com/mu/",
+    "themes": [
+      "comptables"
+    ],
+    "description": "Cabinet d'expertise comptable et d'audit : comptabilité, fiscalité et conseil aux entreprises.",
+    "lat": -20.2429418,
+    "lng": 57.4944473,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=KPMG%20Mauritius%20Mauritius",
+    "zone": "centre"
+  },
+  {
+    "id": "pwc-mauritius-uti",
+    "name": "PwC Mauritius",
+    "category": "utiles",
+    "address": "Ebène",
+    "phone": "",
+    "website": "https://www.pwc.com/mu/",
+    "themes": [
+      "comptables"
+    ],
+    "description": "Cabinet d'expertise comptable et d'audit : comptabilité, fiscalité et conseil aux entreprises."
+  },
+  {
+    "id": "deloitte-mauritius-uti",
+    "name": "Deloitte Mauritius",
+    "category": "utiles",
+    "address": "Ebène",
+    "phone": "",
+    "website": "https://www2.deloitte.com/mu/",
+    "themes": [
+      "comptables"
+    ],
+    "description": "Cabinet d'expertise comptable et d'audit : comptabilité, fiscalité et conseil aux entreprises.",
+    "lat": -20.2424939,
+    "lng": 57.4955771,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Deloitte%20Mauritius%20Mauritius",
+    "zone": "centre"
+  },
+  {
+    "id": "grant-thornton-mauritius-uti",
+    "name": "Grant Thornton Mauritius",
+    "category": "utiles",
+    "address": "Ebène",
+    "phone": "",
+    "website": "https://www.grantthornton.mu/",
+    "themes": [
+      "comptables"
+    ],
+    "description": "Cabinet d'expertise comptable et d'audit : comptabilité, fiscalité et conseil aux entreprises."
   }
 ]
