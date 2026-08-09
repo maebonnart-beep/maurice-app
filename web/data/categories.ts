@@ -168,6 +168,8 @@ export const SUBCATEGORIES: Partial<Record<CategoryKey, Subcategory[]>> = {
     { key: "rhumeries", label: "Rhumeries & distilleries", emoji: "🥃" },
     { key: "casinos", label: "Casinos", emoji: "🎰" },
     { key: "bowling", label: "Bowling", emoji: "🎳" },
+    { key: "karting", label: "Karting", emoji: "🏎️" },
+    { key: "escape-game", label: "Escape games", emoji: "🧩" },
     { key: "cinemas", label: "Cinémas", emoji: "🎬" },
     { key: "bibliotheque-mediatheque", label: "Bibliothèque & médiathèque", emoji: "📚" },
   ],

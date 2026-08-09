@@ -715,9 +715,10 @@
     "hours": "Lun-Mar-Mer-Dim 10h-23h, Jeu-Ven-Sam 10h-00h",
     "priceRange": "prix-moyen",
     "themes": [
-      "activites-enfants-famille"
+      "activites-enfants-famille",
+      "karting"
     ],
-    "description": "Vaste espace de loisirs indoor au Tribeca Mall : karting électrique, bowling, mur d'escalade, trampolines, mini-golf, réalité virtuelle, jeux d'arcade et karaoké ; très prisé pour les anniversaires d'enfants, réservation conseillée pour le karting aux heures de pointe.",
+    "description": "Complexe multi-loisirs au Tribeca Mall (Trianon) : piste de karting électrique indoor de 800 m (dès 8 ans et adultes), jeux d'arcade et attractions.",
     "zone": "centre"
   },
   {
@@ -41530,5 +41531,49 @@
     ],
     "zone": "nord",
     "description": "Vente de véhicules : concessionnaire / revendeur automobile."
+  },
+  {
+    "id": "dodo-quest-act",
+    "name": "Dodo Quest",
+    "category": "activites",
+    "address": "Telfair, Moka",
+    "phone": "",
+    "website": "https://www.dodoquest.mu/",
+    "themes": [
+      "escape-game"
+    ],
+    "description": "Unique escape game de l'île (Telfair, Moka) : 7 salles à énigmes (Prison Break, Save the Last Dodo, Mystery of Pierre Poivre, Mental Hospital, Buried…). 59 minutes pour s'échapper, en équipe de 2 à 5 joueurs.",
+    "lat": -20.226,
+    "lng": 57.5064,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Dodo%20Quest%20Mauritius",
+    "zone": "centre"
+  },
+  {
+    "id": "speedomax-karting-cascavelle-act",
+    "name": "Speedomax Karting (Cascavelle)",
+    "category": "activites",
+    "address": "Cascavelle Shopping Village, Flic en Flac",
+    "phone": "",
+    "website": "",
+    "themes": [
+      "karting"
+    ],
+    "description": "Piste de karting électrique et écologique (20 karts) près du Cascavelle Shopping Village. Ouvert 7j/7, avec sports bar.",
+    "lat": -20.2784177,
+    "lng": 57.4016671,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Speedomax%20Karting%20(Cascavelle)%20Mauritius",
+    "zone": "ouest"
+  },
+  {
+    "id": "gang-zone-laser-game-act",
+    "name": "Gang Zone (laser game)",
+    "category": "activites",
+    "address": "Région de Grand Baie",
+    "phone": "",
+    "website": "",
+    "themes": [
+      "activites-enfants-famille"
+    ],
+    "description": "Laser game outdoor près de Grand Baie avec vue sur les îles du Nord. Accessible dès 7-8 ans, tous les jours sauf le lundi ; tournois mensuels (Gang Zone Cup)."
   }
 ]
