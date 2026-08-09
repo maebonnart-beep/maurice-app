@@ -26305,7 +26305,8 @@
     "zone": "nord",
     "description": "Hôtel de bord de mer à Trou aux Biches dont la restauration est ouverte aux non-résidents : cadre calme face à la piscine, idéal pour une pause déjeuner ou pour télétravailler.",
     "badge": "coup-de-coeur",
-    "ttvFriendly": true
+    "ttvFriendly": true,
+    "photoUrl": "/photos/ava-beach.jpg"
   },
   {
     "id": "zilwa-attitude-calodyne",
@@ -42749,5 +42750,24 @@
     "hours": "",
     "zone": "sud",
     "description": "Primeur de quartier — fruits et légumes frais. Horaires et éventuel label bio non confirmés."
+  },
+  {
+    "id": "la-charette-d-or-trou-aux-biches",
+    "name": "La Charette d'Or",
+    "category": "food",
+    "address": "B38, Pointe aux Biches, Trou aux Biches",
+    "phone": "+230 5251 0143",
+    "website": "https://www.facebook.com/charettedor/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=La%20Charette%20d'Or%20Trou%20aux%20Biches%20Mauritius",
+    "lat": -20.0325,
+    "lng": 57.5478,
+    "themes": [
+      "restaurants",
+      "mauricienne",
+      "fruits-de-mer"
+    ],
+    "hours": "",
+    "zone": "nord",
+    "description": "Restaurant créole et de fruits de mer à Trou aux Biches, au décor chic et soigné, à deux pas de la plage. Spécialités : poisson frit à la créole aux épices, curry créole, homard grillé et plateaux de fruits de mer, ainsi que des pizzas au feu de bois. Service attentionné et accueillant salué par les avis."
   }
 ]
