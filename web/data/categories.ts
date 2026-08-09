@@ -233,6 +233,11 @@ export const SUBCATEGORIES: Partial<Record<CategoryKey, Subcategory[]>> = {
   "soins-bien-etre": [
     { key: "spa-instituts", label: "Spa et instituts", emoji: "🧖‍♀️" },
     { key: "coiffeurs", label: "Coiffeurs", emoji: "💇" },
+    { key: "onglerie-manucure", label: "Onglerie & manucure", emoji: "💅" },
+    { key: "barbiers", label: "Barbiers", emoji: "💈" },
+    { key: "tatouage-piercing", label: "Tatouage & piercing", emoji: "🖋️" },
+    { key: "yoga-pilates", label: "Yoga & pilates", emoji: "🧘" },
+    { key: "medecine-douce", label: "Médecine douce", emoji: "🌿" },
   ],
   "business-ttv": [
     { key: "coworking", label: "Espaces de coworking", emoji: "🧑‍💻" },

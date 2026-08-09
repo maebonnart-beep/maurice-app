@@ -39643,5 +39643,313 @@
     "priceRange": "se-faire-plaisir",
     "zone": "nord",
     "description": "Restaurant tendance en bord de plage proposant une cuisine fusion et bistronomique : tapas à partager et plats aux saveurs mauriciennes revisitées, accompagnés de cocktails travaillés. Concerts et DJ live du vendredi au dimanche. Livraison possible."
+  },
+  {
+    "id": "tattoo-style-soins",
+    "name": "Tattoo Style",
+    "category": "soins-bien-etre",
+    "address": "Port-Louis",
+    "phone": "",
+    "website": "",
+    "themes": [
+      "tatouage-piercing"
+    ],
+    "description": "Studio de tatouage : créations personnalisées, sur rendez-vous.",
+    "lat": -20.1597395,
+    "lng": 57.5026134,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Tattoo%20Style%20Mauritius",
+    "zone": "centre"
+  },
+  {
+    "id": "cliff-tattoo-soins",
+    "name": "Cliff Tattoo",
+    "category": "soins-bien-etre",
+    "address": "Flic en Flac",
+    "phone": "",
+    "website": "",
+    "themes": [
+      "tatouage-piercing"
+    ],
+    "description": "Studio de tatouage : créations personnalisées, sur rendez-vous.",
+    "lat": -20.2830605,
+    "lng": 57.3651771,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Cliff%20Tattoo%20Mauritius",
+    "zone": "ouest"
+  },
+  {
+    "id": "tchap-tatoo-soins",
+    "name": "Tchap Tatoo",
+    "category": "soins-bien-etre",
+    "address": "Grand Baie",
+    "phone": "",
+    "website": "",
+    "themes": [
+      "tatouage-piercing"
+    ],
+    "description": "Studio de tatouage : créations personnalisées, sur rendez-vous.",
+    "lat": -20.0132941,
+    "lng": 57.5861353,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Tchap%20Tatoo%20Mauritius",
+    "zone": "nord"
+  },
+  {
+    "id": "tattoo-vivian-soins",
+    "name": "Tattoo Vivian",
+    "category": "soins-bien-etre",
+    "address": "Triolet",
+    "phone": "",
+    "website": "",
+    "themes": [
+      "tatouage-piercing"
+    ],
+    "description": "Studio de tatouage : créations personnalisées, sur rendez-vous.",
+    "lat": -20.0584193,
+    "lng": 57.552086,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Tattoo%20Vivian%20Mauritius",
+    "zone": "nord"
+  },
+  {
+    "id": "ride-my-tattoo-soins",
+    "name": "Ride My Tattoo",
+    "category": "soins-bien-etre",
+    "address": "Port-Louis",
+    "phone": "",
+    "website": "",
+    "themes": [
+      "tatouage-piercing"
+    ],
+    "description": "Studio de tatouage : créations personnalisées, sur rendez-vous.",
+    "lat": -20.1763115,
+    "lng": 57.5120261,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Ride%20My%20Tattoo%20Mauritius",
+    "zone": "centre"
+  },
+  {
+    "id": "the-nail-lounge-soins",
+    "name": "The Nail Lounge",
+    "category": "soins-bien-etre",
+    "address": "Bagatelle",
+    "phone": "",
+    "website": "",
+    "themes": [
+      "onglerie-manucure"
+    ],
+    "description": "Onglerie : manucure, pédicure, pose de gel/résine et nail art.",
+    "lat": -20.2239225,
+    "lng": 57.4956533,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=The%20Nail%20Lounge%20Mauritius",
+    "zone": "centre"
+  },
+  {
+    "id": "queens-of-nails-soins",
+    "name": "Queens of Nails",
+    "category": "soins-bien-etre",
+    "address": "Beau Bassin",
+    "phone": "",
+    "website": "",
+    "themes": [
+      "onglerie-manucure"
+    ],
+    "description": "Onglerie : manucure, pédicure, pose de gel/résine et nail art.",
+    "lat": -20.2284501,
+    "lng": 57.4678584,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Queens%20of%20Nails%20Mauritius",
+    "zone": "centre"
+  },
+  {
+    "id": "diamond-art-of-nail-soins",
+    "name": "Diamond Art of Nail",
+    "category": "soins-bien-etre",
+    "address": "Chemin Vingt Pieds, Grand Baie",
+    "phone": "",
+    "website": "",
+    "themes": [
+      "onglerie-manucure"
+    ],
+    "description": "Onglerie : manucure, pédicure, extensions gel et nail art."
+  },
+  {
+    "id": "nails-bar-grand-baie-soins",
+    "name": "Nails Bar Grand Baie",
+    "category": "soins-bien-etre",
+    "address": "Ventura Complex, Royal Road, Grand Baie",
+    "phone": "",
+    "website": "",
+    "themes": [
+      "onglerie-manucure"
+    ],
+    "description": "Onglerie : manucure, pédicure et pose d'ongles."
+  },
+  {
+    "id": "arshad-barbershop-soins",
+    "name": "Arshad Barbershop",
+    "category": "soins-bien-etre",
+    "address": "Port-Louis",
+    "phone": "",
+    "website": "",
+    "themes": [
+      "barbiers"
+    ],
+    "description": "Barbier : coupe homme, dégradé, taille de barbe et rasage.",
+    "lat": -20.1661116,
+    "lng": 57.5096991,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Arshad%20Barbershop%20Mauritius",
+    "zone": "centre"
+  },
+  {
+    "id": "the-master-s-barbershop-soins",
+    "name": "The Master's Barbershop",
+    "category": "soins-bien-etre",
+    "address": "Grand Baie",
+    "phone": "",
+    "website": "https://www.facebook.com/RomMastersBarbershop/",
+    "themes": [
+      "barbiers"
+    ],
+    "description": "Barbier pour hommes : coupe, dégradé, taille de barbe et rasage traditionnel."
+  },
+  {
+    "id": "secret-hair-beauty-soins",
+    "name": "Secret Hair & Beauty",
+    "category": "soins-bien-etre",
+    "address": "Twenty-Foot Road, Grand Baie",
+    "phone": "",
+    "website": "",
+    "themes": [
+      "barbiers"
+    ],
+    "description": "Salon de coiffure et barbier : coupe homme, taille de barbe et soins beauté."
+  },
+  {
+    "id": "yoga-plus-centre-soins",
+    "name": "Yoga Plus Centre",
+    "category": "soins-bien-etre",
+    "address": "Port-Louis",
+    "phone": "",
+    "website": "",
+    "themes": [
+      "yoga-pilates"
+    ],
+    "description": "Centre de yoga : cours collectifs pour tous niveaux.",
+    "lat": -20.1653259,
+    "lng": 57.4962506,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Yoga%20Plus%20Centre%20Mauritius",
+    "zone": "centre"
+  },
+  {
+    "id": "brahma-kumaris-raja-yoga-centre-soins",
+    "name": "Brahma Kumaris Raja Yoga Centre",
+    "category": "soins-bien-etre",
+    "address": "Candos",
+    "phone": "",
+    "website": "",
+    "themes": [
+      "yoga-pilates"
+    ],
+    "description": "Centre de Raja Yoga et de méditation.",
+    "lat": -20.2752613,
+    "lng": 57.4766217,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Brahma%20Kumaris%20Raja%20Yoga%20Centre%20Mauritius",
+    "zone": "centre"
+  },
+  {
+    "id": "the-pilates-and-yoga-studio-soins",
+    "name": "The Pilates and Yoga Studio",
+    "category": "soins-bien-etre",
+    "address": "Tamarin",
+    "phone": "",
+    "website": "https://www.pilates-tamarin.mu/",
+    "themes": [
+      "yoga-pilates"
+    ],
+    "description": "Studio de Pilates classique (méthode Romana's Pilates) et de yoga (ashtanga, hatha), dirigé par Ingrid Rey. Cours collectifs et individuels sur rendez-vous."
+  },
+  {
+    "id": "misschawky-studio-soins",
+    "name": "Misschawky Studio",
+    "category": "soins-bien-etre",
+    "address": "Chemin Vingt Pieds, Grand Baie",
+    "phone": "",
+    "website": "",
+    "themes": [
+      "yoga-pilates"
+    ],
+    "description": "Studio de yoga (plusieurs styles) et de danse classique (méthode Cecchetti), fondé par Laura Lecluse.",
+    "lat": -20.0146718,
+    "lng": 57.5901157,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Misschawky%20Studio%20Mauritius",
+    "zone": "nord"
+  },
+  {
+    "id": "room-studio-tamarin-arts-centre-soins",
+    "name": "Roôm Studio (Tamarin Arts Centre)",
+    "category": "soins-bien-etre",
+    "address": "Tamarin Arts Centre, Tamarin",
+    "phone": "",
+    "website": "",
+    "themes": [
+      "yoga-pilates"
+    ],
+    "description": "Studio de yoga au Tamarin Arts Centre : séances presque tous les jours.",
+    "lat": -20.3287264,
+    "lng": 57.3751966,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Ro%C3%B4m%20Studio%20(Tamarin%20Arts%20Centre)%20Mauritius",
+    "zone": "ouest"
+  },
+  {
+    "id": "ajuryoga-soins",
+    "name": "Ajuryoga",
+    "category": "soins-bien-etre",
+    "address": "Grand Baie",
+    "phone": "",
+    "website": "",
+    "themes": [
+      "medecine-douce"
+    ],
+    "description": "Centre d'ayurvéda et de yoga : soins et massages ayurvédiques, cours de yoga.",
+    "lat": -20.0177323,
+    "lng": 57.5873207,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Ajuryoga%20Mauritius",
+    "zone": "nord"
+  },
+  {
+    "id": "ajuryoga-international-soins",
+    "name": "Ajuryoga International",
+    "category": "soins-bien-etre",
+    "address": "Réduit",
+    "phone": "",
+    "website": "",
+    "themes": [
+      "medecine-douce"
+    ],
+    "description": "Centre d'ayurvéda et de yoga : soins et massages ayurvédiques, cours de yoga.",
+    "lat": -20.2254967,
+    "lng": 57.5066436,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Ajuryoga%20International%20Mauritius",
+    "zone": "centre"
+  },
+  {
+    "id": "cabinet-d-osteopathie-gossart-motte-soins",
+    "name": "Cabinet d’Ostéopathie Gossart & Motte",
+    "category": "soins-bien-etre",
+    "address": "Westcare, Route de la Mivoie, Tamarin",
+    "phone": "",
+    "website": "",
+    "themes": [
+      "medecine-douce"
+    ],
+    "description": "Cabinet d'ostéopathie de Matthieu Gossart et Capucine Motte (ostéopathes D.O.) : douleurs musculo-squelettiques, du lundi au vendredi sur rendez-vous."
+  },
+  {
+    "id": "l-l-osteopathie-soins",
+    "name": "L&L Ostéopathie",
+    "category": "soins-bien-etre",
+    "address": "Grand Baie",
+    "phone": "",
+    "website": "https://llosteo.com/",
+    "themes": [
+      "medecine-douce"
+    ],
+    "description": "Cabinet d'ostéopathie tenu par Romain Lauri et Amandine Leca (diplômés de l'Institut Supérieur d'Ostéopathie d'Aix-en-Provence). Sur rendez-vous."
   }
 ]
