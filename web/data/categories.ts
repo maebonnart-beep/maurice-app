@@ -211,7 +211,7 @@ export const SUBCATEGORIES: Partial<Record<CategoryKey, Subcategory[]>> = {
     { key: "laboratoires", label: "Laboratoires d'analyses", emoji: "🔬" },
     { key: "veterinaires", label: "Vétérinaires", emoji: "🐾" },
     { key: "postes-police", label: "Postes de police", emoji: "🚓" },
-    { key: "poste", label: "Poste", emoji: "📮" },
+    { key: "poste", label: "Bureaux de poste", emoji: "📮" },
     { key: "assurances", label: "Assurances", emoji: "🛡️" },
     { key: "banques", label: "Banques", emoji: "🏦" },
     { key: "distributeurs", label: "Distributeurs (ATM)", emoji: "🏧" },

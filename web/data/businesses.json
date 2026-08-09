@@ -20488,7 +20488,8 @@
       "poste"
     ],
     "zone": "sud",
-    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives.",
+    "hours": "Lun–ven 8h15–16h00, sam 8h15–11h45 (variable selon le bureau)"
   },
   {
     "id": "police-station-rose-belle",
@@ -34954,7 +34955,8 @@
       "poste"
     ],
     "zone": "sud",
-    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives.",
+    "hours": "Lun–ven 8h15–16h00, sam 8h15–11h45 (variable selon le bureau)"
   },
   {
     "id": "poste-bambous",
@@ -34970,7 +34972,8 @@
       "poste"
     ],
     "zone": "ouest",
-    "description": "Bureau de poste de Bambous (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives.",
+    "hours": "Lun–ven 8h15–16h00, sam 8h15–11h45 (variable selon le bureau)"
   },
   {
     "id": "poste-beau-bassin",
@@ -34986,7 +34989,8 @@
       "poste"
     ],
     "zone": "centre",
-    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives.",
+    "hours": "Lun–ven 8h15–16h00, sam 8h15–11h45 (variable selon le bureau)"
   },
   {
     "id": "poste-bel-air",
@@ -35002,7 +35006,8 @@
       "poste"
     ],
     "zone": "est",
-    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives.",
+    "hours": "Lun–ven 8h15–16h00, sam 8h15–11h45 (variable selon le bureau)"
   },
   {
     "id": "poste-belle-vue",
@@ -35018,7 +35023,8 @@
       "poste"
     ],
     "zone": "nord",
-    "description": "Bureau de poste de Belle Vue (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives.",
+    "hours": "Lun–ven 8h15–16h00, sam 8h15–11h45 (variable selon le bureau)"
   },
   {
     "id": "poste-black-river",
@@ -35034,7 +35040,8 @@
       "poste"
     ],
     "zone": "ouest",
-    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives.",
+    "hours": "Lun–ven 8h15–16h00, sam 8h15–11h45 (variable selon le bureau)"
   },
   {
     "id": "poste-bois-cheri",
@@ -35050,7 +35057,8 @@
       "poste"
     ],
     "zone": "centre",
-    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives.",
+    "hours": "Lun–ven 8h15–16h00, sam 8h15–11h45 (variable selon le bureau)"
   },
   {
     "id": "poste-bon-accueil",
@@ -35066,7 +35074,8 @@
       "poste"
     ],
     "zone": "est",
-    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives.",
+    "hours": "Lun–ven 8h15–16h00, sam 8h15–11h45 (variable selon le bureau)"
   },
   {
     "id": "poste-boulevard-pitot",
@@ -35082,7 +35091,8 @@
       "poste"
     ],
     "zone": "centre",
-    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives.",
+    "hours": "Lun–ven 8h15–16h00, sam 8h15–11h45 (variable selon le bureau)"
   },
   {
     "id": "poste-brisee-verdiere",
@@ -35098,7 +35108,8 @@
       "poste"
     ],
     "zone": "sud",
-    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives.",
+    "hours": "Lun–ven 8h15–16h00, sam 8h15–11h45 (variable selon le bureau)"
   },
   {
     "id": "poste-camp-de-masque",
@@ -35114,7 +35125,8 @@
       "poste"
     ],
     "zone": "sud",
-    "description": "Bureau de poste de Camp De Masque (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives.",
+    "hours": "Lun–ven 8h15–16h00, sam 8h15–11h45 (variable selon le bureau)"
   },
   {
     "id": "poste-camp-de-masque-pave",
@@ -35130,7 +35142,8 @@
       "poste"
     ],
     "zone": "sud",
-    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives.",
+    "hours": "Lun–ven 8h15–16h00, sam 8h15–11h45 (variable selon le bureau)"
   },
   {
     "id": "poste-camp-diable",
@@ -35146,7 +35159,8 @@
       "poste"
     ],
     "zone": "sud",
-    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives.",
+    "hours": "Lun–ven 8h15–16h00, sam 8h15–11h45 (variable selon le bureau)"
   },
   {
     "id": "poste-cap-malheureux",
@@ -35162,7 +35176,8 @@
       "poste"
     ],
     "zone": "nord",
-    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives.",
+    "hours": "Lun–ven 8h15–16h00, sam 8h15–11h45 (variable selon le bureau)"
   },
   {
     "id": "poste-case-noyale",
@@ -35178,7 +35193,8 @@
       "poste"
     ],
     "zone": "ouest",
-    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives.",
+    "hours": "Lun–ven 8h15–16h00, sam 8h15–11h45 (variable selon le bureau)"
   },
   {
     "id": "poste-central-flacq",
@@ -35194,7 +35210,8 @@
       "poste"
     ],
     "zone": "est",
-    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives.",
+    "hours": "Lun–ven 8h15–16h00, sam 8h15–11h45 (variable selon le bureau)"
   },
   {
     "id": "poste-chemin-grenier",
@@ -35210,7 +35227,8 @@
       "poste"
     ],
     "zone": "sud",
-    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives.",
+    "hours": "Lun–ven 8h15–16h00, sam 8h15–11h45 (variable selon le bureau)"
   },
   {
     "id": "poste-coromandel",
@@ -35226,7 +35244,8 @@
       "poste"
     ],
     "zone": "centre",
-    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives.",
+    "hours": "Lun–ven 8h15–16h00, sam 8h15–11h45 (variable selon le bureau)"
   },
   {
     "id": "poste-curepipe",
@@ -35242,7 +35261,8 @@
       "poste"
     ],
     "zone": "centre",
-    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives.",
+    "hours": "Lun–ven 8h15–16h00, sam 8h15–11h45 (variable selon le bureau)"
   },
   {
     "id": "poste-cyber-tower-1",
@@ -35258,7 +35278,8 @@
       "poste"
     ],
     "zone": "centre",
-    "description": "Bureau de poste de Cyber Tower 1 (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives.",
+    "hours": "Lun–ven 8h15–16h00, sam 8h15–11h45 (variable selon le bureau)"
   },
   {
     "id": "poste-d-epinay",
@@ -35274,7 +35295,8 @@
       "poste"
     ],
     "zone": "nord",
-    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives.",
+    "hours": "Lun–ven 8h15–16h00, sam 8h15–11h45 (variable selon le bureau)"
   },
   {
     "id": "poste-dagotiere",
@@ -35290,7 +35312,8 @@
       "poste"
     ],
     "zone": "centre",
-    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives.",
+    "hours": "Lun–ven 8h15–16h00, sam 8h15–11h45 (variable selon le bureau)"
   },
   {
     "id": "poste-eau-coulee",
@@ -35306,7 +35329,8 @@
       "poste"
     ],
     "zone": "centre",
-    "description": "Bureau de poste de Eau Coulee (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives.",
+    "hours": "Lun–ven 8h15–16h00, sam 8h15–11h45 (variable selon le bureau)"
   },
   {
     "id": "poste-flic-en-flac",
@@ -35322,7 +35346,8 @@
       "poste"
     ],
     "zone": "ouest",
-    "description": "Bureau de poste de Flic-En-Flac (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives.",
+    "hours": "Lun–ven 8h15–16h00, sam 8h15–11h45 (variable selon le bureau)"
   },
   {
     "id": "poste-floreal",
@@ -35338,7 +35363,8 @@
       "poste"
     ],
     "zone": "centre",
-    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives.",
+    "hours": "Lun–ven 8h15–16h00, sam 8h15–11h45 (variable selon le bureau)"
   },
   {
     "id": "poste-fond-du-sac",
@@ -35354,7 +35380,8 @@
       "poste"
     ],
     "zone": "nord",
-    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives.",
+    "hours": "Lun–ven 8h15–16h00, sam 8h15–11h45 (variable selon le bureau)"
   },
   {
     "id": "poste-forest-side",
@@ -35370,7 +35397,8 @@
       "poste"
     ],
     "zone": "centre",
-    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives.",
+    "hours": "Lun–ven 8h15–16h00, sam 8h15–11h45 (variable selon le bureau)"
   },
   {
     "id": "poste-g-r-s-e",
@@ -35386,7 +35414,8 @@
       "poste"
     ],
     "zone": "est",
-    "description": "Bureau de poste de G.R.S.E (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives.",
+    "hours": "Lun–ven 8h15–16h00, sam 8h15–11h45 (variable selon le bureau)"
   },
   {
     "id": "poste-glen-park",
@@ -35402,7 +35431,8 @@
       "poste"
     ],
     "zone": "centre",
-    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives.",
+    "hours": "Lun–ven 8h15–16h00, sam 8h15–11h45 (variable selon le bureau)"
   },
   {
     "id": "poste-goodlands",
@@ -35418,7 +35448,8 @@
       "poste"
     ],
     "zone": "nord",
-    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives.",
+    "hours": "Lun–ven 8h15–16h00, sam 8h15–11h45 (variable selon le bureau)"
   },
   {
     "id": "poste-grand-bay",
@@ -35434,7 +35465,8 @@
       "poste"
     ],
     "zone": "nord",
-    "description": "Bureau de poste de Grand Bay (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives.",
+    "hours": "Lun–ven 8h15–16h00, sam 8h15–11h45 (variable selon le bureau)"
   },
   {
     "id": "poste-grand-bois",
@@ -35450,7 +35482,8 @@
       "poste"
     ],
     "zone": "sud",
-    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives.",
+    "hours": "Lun–ven 8h15–16h00, sam 8h15–11h45 (variable selon le bureau)"
   },
   {
     "id": "poste-grand-gaube",
@@ -35466,7 +35499,8 @@
       "poste"
     ],
     "zone": "nord",
-    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives.",
+    "hours": "Lun–ven 8h15–16h00, sam 8h15–11h45 (variable selon le bureau)"
   },
   {
     "id": "poste-l-escalier",
@@ -35482,7 +35516,8 @@
       "poste"
     ],
     "zone": "sud",
-    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives.",
+    "hours": "Lun–ven 8h15–16h00, sam 8h15–11h45 (variable selon le bureau)"
   },
   {
     "id": "poste-la-flora",
@@ -35498,7 +35533,8 @@
       "poste"
     ],
     "zone": "sud",
-    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives.",
+    "hours": "Lun–ven 8h15–16h00, sam 8h15–11h45 (variable selon le bureau)"
   },
   {
     "id": "poste-lallmatie",
@@ -35514,7 +35550,8 @@
       "poste"
     ],
     "zone": "est",
-    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives.",
+    "hours": "Lun–ven 8h15–16h00, sam 8h15–11h45 (variable selon le bureau)"
   },
   {
     "id": "poste-laventure",
@@ -35530,7 +35567,8 @@
       "poste"
     ],
     "zone": "est",
-    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives.",
+    "hours": "Lun–ven 8h15–16h00, sam 8h15–11h45 (variable selon le bureau)"
   },
   {
     "id": "poste-mapou",
@@ -35546,7 +35584,8 @@
       "poste"
     ],
     "zone": "nord",
-    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives.",
+    "hours": "Lun–ven 8h15–16h00, sam 8h15–11h45 (variable selon le bureau)"
   },
   {
     "id": "poste-mare-d-albert",
@@ -35562,7 +35601,8 @@
       "poste"
     ],
     "zone": "sud",
-    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives.",
+    "hours": "Lun–ven 8h15–16h00, sam 8h15–11h45 (variable selon le bureau)"
   },
   {
     "id": "poste-mesnil",
@@ -35578,7 +35618,8 @@
       "poste"
     ],
     "zone": "centre",
-    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives.",
+    "hours": "Lun–ven 8h15–16h00, sam 8h15–11h45 (variable selon le bureau)"
   },
   {
     "id": "poste-midlands",
@@ -35594,7 +35635,8 @@
       "poste"
     ],
     "zone": "sud",
-    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives.",
+    "hours": "Lun–ven 8h15–16h00, sam 8h15–11h45 (variable selon le bureau)"
   },
   {
     "id": "poste-moka",
@@ -35610,7 +35652,8 @@
       "poste"
     ],
     "zone": "centre",
-    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives.",
+    "hours": "Lun–ven 8h15–16h00, sam 8h15–11h45 (variable selon le bureau)"
   },
   {
     "id": "poste-monneron-hill",
@@ -35626,7 +35669,8 @@
       "poste"
     ],
     "zone": "centre",
-    "description": "Bureau de poste de Monneron Hill (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives.",
+    "hours": "Lun–ven 8h15–16h00, sam 8h15–11h45 (variable selon le bureau)"
   },
   {
     "id": "poste-montagne-blanche",
@@ -35642,7 +35686,8 @@
       "poste"
     ],
     "zone": "est",
-    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives.",
+    "hours": "Lun–ven 8h15–16h00, sam 8h15–11h45 (variable selon le bureau)"
   },
   {
     "id": "poste-montagne-longue",
@@ -35658,7 +35703,8 @@
       "poste"
     ],
     "zone": "centre",
-    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives.",
+    "hours": "Lun–ven 8h15–16h00, sam 8h15–11h45 (variable selon le bureau)"
   },
   {
     "id": "poste-new-grove",
@@ -35674,7 +35720,8 @@
       "poste"
     ],
     "zone": "sud",
-    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives.",
+    "hours": "Lun–ven 8h15–16h00, sam 8h15–11h45 (variable selon le bureau)"
   },
   {
     "id": "poste-nouvelle-france",
@@ -35690,7 +35737,8 @@
       "poste"
     ],
     "zone": "sud",
-    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives.",
+    "hours": "Lun–ven 8h15–16h00, sam 8h15–11h45 (variable selon le bureau)"
   },
   {
     "id": "poste-old-grand-port",
@@ -35706,7 +35754,8 @@
       "poste"
     ],
     "zone": "sud",
-    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives.",
+    "hours": "Lun–ven 8h15–16h00, sam 8h15–11h45 (variable selon le bureau)"
   },
   {
     "id": "poste-pailles",
@@ -35722,7 +35771,8 @@
       "poste"
     ],
     "zone": "centre",
-    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives.",
+    "hours": "Lun–ven 8h15–16h00, sam 8h15–11h45 (variable selon le bureau)"
   },
   {
     "id": "poste-pamplemousses",
@@ -35738,7 +35788,8 @@
       "poste"
     ],
     "zone": "nord",
-    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives.",
+    "hours": "Lun–ven 8h15–16h00, sam 8h15–11h45 (variable selon le bureau)"
   },
   {
     "id": "poste-petit-raffray",
@@ -35754,7 +35805,8 @@
       "poste"
     ],
     "zone": "nord",
-    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives.",
+    "hours": "Lun–ven 8h15–16h00, sam 8h15–11h45 (variable selon le bureau)"
   },
   {
     "id": "poste-petite-riviere",
@@ -35770,7 +35822,8 @@
       "poste"
     ],
     "zone": "centre",
-    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives.",
+    "hours": "Lun–ven 8h15–16h00, sam 8h15–11h45 (variable selon le bureau)"
   },
   {
     "id": "poste-phoenix",
@@ -35786,7 +35839,8 @@
       "poste"
     ],
     "zone": "centre",
-    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives.",
+    "hours": "Lun–ven 8h15–16h00, sam 8h15–11h45 (variable selon le bureau)"
   },
   {
     "id": "poste-piton",
@@ -35802,7 +35856,8 @@
       "poste"
     ],
     "zone": "est",
-    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives.",
+    "hours": "Lun–ven 8h15–16h00, sam 8h15–11h45 (variable selon le bureau)"
   },
   {
     "id": "poste-plaine-des-papayes",
@@ -35818,7 +35873,8 @@
       "poste"
     ],
     "zone": "nord",
-    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives.",
+    "hours": "Lun–ven 8h15–16h00, sam 8h15–11h45 (variable selon le bureau)"
   },
   {
     "id": "poste-plaine-magnien",
@@ -35834,7 +35890,8 @@
       "poste"
     ],
     "zone": "sud",
-    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives.",
+    "hours": "Lun–ven 8h15–16h00, sam 8h15–11h45 (variable selon le bureau)"
   },
   {
     "id": "poste-pointe-aux-sables",
@@ -35850,7 +35907,8 @@
       "poste"
     ],
     "zone": "centre",
-    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives.",
+    "hours": "Lun–ven 8h15–16h00, sam 8h15–11h45 (variable selon le bureau)"
   },
   {
     "id": "poste-port-louis-centre",
@@ -35866,7 +35924,8 @@
       "poste"
     ],
     "zone": "centre",
-    "description": "Bureau de poste Centre (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste Centre (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives.",
+    "hours": "Lun–ven 8h15–16h00, sam 8h15–11h45 (variable selon le bureau)"
   },
   {
     "id": "poste-port-louis-eastern",
@@ -35882,7 +35941,8 @@
       "poste"
     ],
     "zone": "centre",
-    "description": "Bureau de poste Eastern (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste Eastern (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives.",
+    "hours": "Lun–ven 8h15–16h00, sam 8h15–11h45 (variable selon le bureau)"
   },
   {
     "id": "poste-port-louis-gpo-counter",
@@ -35898,7 +35958,8 @@
       "poste"
     ],
     "zone": "centre",
-    "description": "Bureau de poste GPO Counter (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste GPO Counter (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives.",
+    "hours": "Lun–ven 8h15–16h00, sam 8h15–11h45 (variable selon le bureau)"
   },
   {
     "id": "poste-port-louis-western",
@@ -35914,7 +35975,8 @@
       "poste"
     ],
     "zone": "centre",
-    "description": "Bureau de poste Western (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste Western (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives.",
+    "hours": "Lun–ven 8h15–16h00, sam 8h15–11h45 (variable selon le bureau)"
   },
   {
     "id": "poste-poste-de-flacq",
@@ -35930,7 +35992,8 @@
       "poste"
     ],
     "zone": "est",
-    "description": "Bureau de poste de Poste De Flacq (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives.",
+    "hours": "Lun–ven 8h15–16h00, sam 8h15–11h45 (variable selon le bureau)"
   },
   {
     "id": "poste-poudre-d-or",
@@ -35946,7 +36009,8 @@
       "poste"
     ],
     "zone": "est",
-    "description": "Bureau de poste de Poudre D'Or (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives.",
+    "hours": "Lun–ven 8h15–16h00, sam 8h15–11h45 (variable selon le bureau)"
   },
   {
     "id": "poste-quartier-militaire",
@@ -35962,7 +36026,8 @@
       "poste"
     ],
     "zone": "sud",
-    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives.",
+    "hours": "Lun–ven 8h15–16h00, sam 8h15–11h45 (variable selon le bureau)"
   },
   {
     "id": "poste-quatre-bornes",
@@ -35978,7 +36043,8 @@
       "poste"
     ],
     "zone": "centre",
-    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives.",
+    "hours": "Lun–ven 8h15–16h00, sam 8h15–11h45 (variable selon le bureau)"
   },
   {
     "id": "poste-quatre-cocos",
@@ -35994,7 +36060,8 @@
       "poste"
     ],
     "zone": "est",
-    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives.",
+    "hours": "Lun–ven 8h15–16h00, sam 8h15–11h45 (variable selon le bureau)"
   },
   {
     "id": "poste-reduit",
@@ -36010,7 +36077,8 @@
       "poste"
     ],
     "zone": "centre",
-    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives.",
+    "hours": "Lun–ven 8h15–16h00, sam 8h15–11h45 (variable selon le bureau)"
   },
   {
     "id": "poste-riviere-des-anguilles",
@@ -36026,7 +36094,8 @@
       "poste"
     ],
     "zone": "sud",
-    "description": "Bureau de poste de Riviere Des Anguilles (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives.",
+    "hours": "Lun–ven 8h15–16h00, sam 8h15–11h45 (variable selon le bureau)"
   },
   {
     "id": "poste-riviere-du-poste",
@@ -36042,7 +36111,8 @@
       "poste"
     ],
     "zone": "centre",
-    "description": "Bureau de poste de Riviere Du Poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives.",
+    "hours": "Lun–ven 8h15–16h00, sam 8h15–11h45 (variable selon le bureau)"
   },
   {
     "id": "poste-riviere-du-rempart",
@@ -36058,7 +36128,8 @@
       "poste"
     ],
     "zone": "est",
-    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives.",
+    "hours": "Lun–ven 8h15–16h00, sam 8h15–11h45 (variable selon le bureau)"
   },
   {
     "id": "poste-roches-noires",
@@ -36074,7 +36145,8 @@
       "poste"
     ],
     "zone": "est",
-    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives.",
+    "hours": "Lun–ven 8h15–16h00, sam 8h15–11h45 (variable selon le bureau)"
   },
   {
     "id": "poste-rose-hill",
@@ -36090,7 +36162,8 @@
       "poste"
     ],
     "zone": "centre",
-    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives.",
+    "hours": "Lun–ven 8h15–16h00, sam 8h15–11h45 (variable selon le bureau)"
   },
   {
     "id": "poste-mahebourg",
@@ -36106,7 +36179,8 @@
       "poste"
     ],
     "zone": "sud",
-    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives.",
+    "hours": "Lun–ven 8h15–16h00, sam 8h15–11h45 (variable selon le bureau)"
   },
   {
     "id": "poste-rose-belle",
@@ -36122,7 +36196,8 @@
       "poste"
     ],
     "zone": "sud",
-    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives.",
+    "hours": "Lun–ven 8h15–16h00, sam 8h15–11h45 (variable selon le bureau)"
   },
   {
     "id": "poste-saint-pierre",
@@ -36138,7 +36213,8 @@
       "poste"
     ],
     "zone": "centre",
-    "description": "Bureau de poste de Saint Pierre (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives.",
+    "hours": "Lun–ven 8h15–16h00, sam 8h15–11h45 (variable selon le bureau)"
   },
   {
     "id": "poste-sebastopol",
@@ -36154,7 +36230,8 @@
       "poste"
     ],
     "zone": "est",
-    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives.",
+    "hours": "Lun–ven 8h15–16h00, sam 8h15–11h45 (variable selon le bureau)"
   },
   {
     "id": "poste-solferino",
@@ -36170,7 +36247,8 @@
       "poste"
     ],
     "zone": "centre",
-    "description": "Bureau de poste de Solferino (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives.",
+    "hours": "Lun–ven 8h15–16h00, sam 8h15–11h45 (variable selon le bureau)"
   },
   {
     "id": "poste-souillac",
@@ -36186,7 +36264,8 @@
       "poste"
     ],
     "zone": "sud",
-    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives.",
+    "hours": "Lun–ven 8h15–16h00, sam 8h15–11h45 (variable selon le bureau)"
   },
   {
     "id": "poste-ssr-international-airport",
@@ -36202,7 +36281,8 @@
       "poste"
     ],
     "zone": "sud",
-    "description": "Bureau de poste de SSR International Airport (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives.",
+    "hours": "Lun–ven 8h15–16h00, sam 8h15–11h45 (variable selon le bureau)"
   },
   {
     "id": "poste-st-julien-d-hotman",
@@ -36218,7 +36298,8 @@
       "poste"
     ],
     "zone": "est",
-    "description": "Bureau de poste de St Julien D'Hotman (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives.",
+    "hours": "Lun–ven 8h15–16h00, sam 8h15–11h45 (variable selon le bureau)"
   },
   {
     "id": "poste-stanley",
@@ -36234,7 +36315,8 @@
       "poste"
     ],
     "zone": "centre",
-    "description": "Bureau de poste de Stanley (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives.",
+    "hours": "Lun–ven 8h15–16h00, sam 8h15–11h45 (variable selon le bureau)"
   },
   {
     "id": "poste-ste-croix",
@@ -36250,7 +36332,8 @@
       "poste"
     ],
     "zone": "centre",
-    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives.",
+    "hours": "Lun–ven 8h15–16h00, sam 8h15–11h45 (variable selon le bureau)"
   },
   {
     "id": "poste-surinam",
@@ -36266,7 +36349,8 @@
       "poste"
     ],
     "zone": "sud",
-    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives.",
+    "hours": "Lun–ven 8h15–16h00, sam 8h15–11h45 (variable selon le bureau)"
   },
   {
     "id": "poste-tamarin",
@@ -36282,7 +36366,8 @@
       "poste"
     ],
     "zone": "ouest",
-    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives.",
+    "hours": "Lun–ven 8h15–16h00, sam 8h15–11h45 (variable selon le bureau)"
   },
   {
     "id": "poste-terre-rouge",
@@ -36298,7 +36383,8 @@
       "poste"
     ],
     "zone": "nord",
-    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives.",
+    "hours": "Lun–ven 8h15–16h00, sam 8h15–11h45 (variable selon le bureau)"
   },
   {
     "id": "poste-tombeau-bay",
@@ -36314,7 +36400,8 @@
       "poste"
     ],
     "zone": "centre",
-    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives.",
+    "hours": "Lun–ven 8h15–16h00, sam 8h15–11h45 (variable selon le bureau)"
   },
   {
     "id": "poste-tribeca-mall",
@@ -36330,7 +36417,8 @@
       "poste"
     ],
     "zone": "centre",
-    "description": "Bureau de poste de Tribeca Mall (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives.",
+    "hours": "Lun–ven 8h15–16h00, sam 8h15–11h45 (variable selon le bureau)"
   },
   {
     "id": "poste-triolet",
@@ -36346,7 +36434,8 @@
       "poste"
     ],
     "zone": "nord",
-    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives.",
+    "hours": "Lun–ven 8h15–16h00, sam 8h15–11h45 (variable selon le bureau)"
   },
   {
     "id": "poste-trois-boutiques",
@@ -36362,7 +36451,8 @@
       "poste"
     ],
     "zone": "sud",
-    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives.",
+    "hours": "Lun–ven 8h15–16h00, sam 8h15–11h45 (variable selon le bureau)"
   },
   {
     "id": "poste-trou-aux-biches",
@@ -36378,7 +36468,8 @@
       "poste"
     ],
     "zone": "nord",
-    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives.",
+    "hours": "Lun–ven 8h15–16h00, sam 8h15–11h45 (variable selon le bureau)"
   },
   {
     "id": "poste-trou-d-eau-douce",
@@ -36394,7 +36485,8 @@
       "poste"
     ],
     "zone": "est",
-    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives.",
+    "hours": "Lun–ven 8h15–16h00, sam 8h15–11h45 (variable selon le bureau)"
   },
   {
     "id": "poste-vacoas",
@@ -36410,7 +36502,8 @@
       "poste"
     ],
     "zone": "centre",
-    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives.",
+    "hours": "Lun–ven 8h15–16h00, sam 8h15–11h45 (variable selon le bureau)"
   },
   {
     "id": "poste-vallee-des-pretres",
@@ -36426,7 +36519,8 @@
       "poste"
     ],
     "zone": "centre",
-    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives. Horaires habituels du réseau : lun–ven 8h15–16h00, sam 8h15–11h45 (peuvent varier légèrement selon le bureau)."
+    "description": "Bureau de poste (Mauritius Post). Démarches courantes : envoi et retrait de courrier et de colis, lettres recommandées, service express (EMS), vente de timbres, mandats et services financiers postaux, paiement de pensions et certaines démarches administratives.",
+    "hours": "Lun–ven 8h15–16h00, sam 8h15–11h45 (variable selon le bureau)"
   },
   {
     "id": "pharmacie-the-medicine-shop",
@@ -39530,5 +39624,24 @@
     "zone": "sud",
     "description": "Ancienne propriété sucrière fondée en 1778 autour d'une demeure coloniale classée. La Maison du Rhum présente la fabrication du rhum agricole (pur jus de canne) distillé sur place ; le domaine comprend aussi une Maison de la Vanille, une mini-ferme et des jardins exotiques. Réservation conseillée ; restaurant et auberge sur le domaine.",
     "duration": "Environ 2 h (domaine complet)"
+  },
+  {
+    "id": "n-joy-grand-baie",
+    "name": "N'Joy",
+    "category": "food",
+    "address": "La Cuvette Beach, Grand Baie",
+    "phone": "+230 5500 8601",
+    "website": "https://njoy.mu/",
+    "googleMapsUrl": "https://maps.app.goo.gl/kqkspKJZsttGeUR68",
+    "lat": -20.0077772,
+    "lng": 57.5786448,
+    "themes": [
+      "restaurants",
+      "europeenne"
+    ],
+    "hours": "Mer-dim 12h-minuit",
+    "priceRange": "se-faire-plaisir",
+    "zone": "nord",
+    "description": "Restaurant tendance en bord de plage proposant une cuisine fusion et bistronomique : tapas à partager et plats aux saveurs mauriciennes revisitées, accompagnés de cocktails travaillés. Concerts et DJ live du vendredi au dimanche. Livraison possible."
   }
 ]
