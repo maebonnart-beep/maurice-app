@@ -41576,5 +41576,773 @@
       "activites-enfants-famille"
     ],
     "description": "Laser game outdoor près de Grand Baie avec vue sur les îles du Nord. Accessible dès 7-8 ans, tous les jours sauf le lundi ; tournois mensuels (Gang Zone Cup)."
+  },
+  {
+    "id": "le-bocage-international-school-edu",
+    "name": "Le Bocage International School",
+    "category": "education",
+    "address": "Moka",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Le%20Bocage%20International%20School%20Mauritius",
+    "lat": -20.2148,
+    "lng": 57.505,
+    "themes": [
+      "ecoles-privees-internationales"
+    ],
+    "zone": "centre",
+    "description": "École internationale privée à Moka : programme du Baccalauréat International (IB), enseignement en anglais."
+  },
+  {
+    "id": "clavis-international-primary-school-edu",
+    "name": "Clavis International Primary School",
+    "category": "education",
+    "address": "Moka",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Clavis%20International%20Primary%20School%20Mauritius",
+    "lat": -20.2152,
+    "lng": 57.499,
+    "themes": [
+      "ecoles-privees-internationales"
+    ],
+    "zone": "centre",
+    "description": "École primaire internationale à Moka : programme du Baccalauréat International (IB - PYP), enseignement en anglais."
+  },
+  {
+    "id": "lycee-labourdonnais-edu",
+    "name": "Lycée Labourdonnais",
+    "category": "education",
+    "address": "Curepipe",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Lyc%C3%A9e%20Labourdonnais%20Mauritius",
+    "lat": -20.3253,
+    "lng": 57.5293,
+    "themes": [
+      "ecoles-privees-internationales"
+    ],
+    "zone": "centre",
+    "description": "École du réseau français à Maurice, homologuée par l'Éducation nationale française (réseau AEFE) : programme français dans un environnement bilingue. Le plus ancien lycée français de l'île (Curepipe), de la maternelle à la terminale."
+  },
+  {
+    "id": "northfields-international-school-edu",
+    "name": "Northfields International School",
+    "category": "education",
+    "address": "Mapou",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Northfields%20International%20School%20Mauritius",
+    "lat": -20.0713,
+    "lng": 57.614,
+    "themes": [
+      "ecoles-privees-internationales"
+    ],
+    "zone": "nord",
+    "description": "École internationale privée (Labourdonnais/Mapou) : cursus britannique (IGCSE / A-levels), enseignement en anglais."
+  },
+  {
+    "id": "international-preparatory-school-ips-edu",
+    "name": "International Preparatory School (IPS)",
+    "category": "education",
+    "address": "Mapou",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=International%20Preparatory%20School%20(IPS)%20Mauritius",
+    "lat": -20.0733,
+    "lng": 57.6139,
+    "themes": [
+      "ecoles-privees-internationales"
+    ],
+    "zone": "nord",
+    "description": "École préparatoire internationale (Labourdonnais) : cursus britannique pour le primaire, enseignement en anglais."
+  },
+  {
+    "id": "ecole-du-nord-edu",
+    "name": "École du Nord",
+    "category": "education",
+    "address": "Mapou",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=%C3%89cole%20du%20Nord%20Mauritius",
+    "lat": -20.0727,
+    "lng": 57.6129,
+    "themes": [
+      "ecoles-privees-internationales"
+    ],
+    "zone": "nord",
+    "description": "École du réseau français à Maurice, homologuée par l'Éducation nationale française (réseau AEFE) : programme français dans un environnement bilingue. Située à Mapou (nord)."
+  },
+  {
+    "id": "ecole-du-centre-college-pierre-poivre-edu",
+    "name": "École du Centre - Collège Pierre Poivre",
+    "category": "education",
+    "address": "Moka",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=%C3%89cole%20du%20Centre%20-%20Coll%C3%A8ge%20Pierre%20Poivre%20Mauritius",
+    "lat": -20.2269,
+    "lng": 57.5223,
+    "themes": [
+      "ecoles-privees-internationales"
+    ],
+    "zone": "centre",
+    "description": "École du réseau français à Maurice, homologuée par l'Éducation nationale française (réseau AEFE) : programme français dans un environnement bilingue. Située dans la région de Rose Hill / Moka."
+  },
+  {
+    "id": "lycee-des-mascareignes-edu",
+    "name": "Lycée des Mascareignes",
+    "category": "education",
+    "address": "Moka",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Lyc%C3%A9e%20des%20Mascareignes%20Mauritius",
+    "lat": -20.2268,
+    "lng": 57.5244,
+    "themes": [
+      "ecoles-privees-internationales"
+    ],
+    "zone": "centre",
+    "description": "École du réseau français à Maurice, homologuée par l'Éducation nationale française (réseau AEFE) : programme français dans un environnement bilingue."
+  },
+  {
+    "id": "telfair-international-primary-school-edu",
+    "name": "Telfair International Primary School",
+    "category": "education",
+    "address": "Tamarin",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Telfair%20International%20Primary%20School%20Mauritius",
+    "lat": -20.3361,
+    "lng": 57.3714,
+    "themes": [
+      "ecoles-privees-internationales"
+    ],
+    "zone": "ouest",
+    "description": "École primaire internationale : cursus international, enseignement en anglais."
+  },
+  {
+    "id": "hampton-primary-private-school-edu",
+    "name": "Hampton Primary Private School",
+    "category": "education",
+    "address": "Curepipe",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Hampton%20Primary%20Private%20School%20Mauritius",
+    "lat": -20.3054,
+    "lng": 57.534,
+    "themes": [
+      "ecoles-privees-internationales"
+    ],
+    "zone": "centre",
+    "description": "École primaire privée à Curepipe."
+  },
+  {
+    "id": "ecole-paul-et-virginie-edu",
+    "name": "École Paul et Virginie",
+    "category": "education",
+    "address": "Tamarin",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=%C3%89cole%20Paul%20et%20Virginie%20Mauritius",
+    "lat": -20.3324179,
+    "lng": 57.3797986,
+    "themes": [
+      "ecoles-privees-internationales"
+    ],
+    "zone": "ouest",
+    "description": "École du réseau français à Maurice, homologuée par l'Éducation nationale française (réseau AEFE) : programme français dans un environnement bilingue. Située à Tamarin (côte ouest)."
+  },
+  {
+    "id": "les-papillons-edu",
+    "name": "Les Papillons",
+    "category": "education",
+    "address": "Île Maurice",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Les%20Papillons%20Mauritius",
+    "lat": -20.0680592,
+    "lng": 57.5679215,
+    "themes": [
+      "creches-garderies"
+    ],
+    "zone": "nord",
+    "description": "Crèche & école maternelle (pré-primaire)."
+  },
+  {
+    "id": "mahebourg-infant-school-edu",
+    "name": "Mahebourg Infant School",
+    "category": "education",
+    "address": "Mahébourg",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Mahebourg%20Infant%20School%20Mauritius",
+    "lat": -20.4148296,
+    "lng": 57.7051518,
+    "themes": [
+      "creches-garderies"
+    ],
+    "zone": "est",
+    "description": "Crèche / garderie (accueil de la petite enfance)."
+  },
+  {
+    "id": "st-joseph-leole-maternelle-edu",
+    "name": "St. Joseph Leole Maternelle",
+    "category": "education",
+    "address": "Curepipe",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=St.%20Joseph%20Leole%20Maternelle%20Mauritius",
+    "lat": -20.2996195,
+    "lng": 57.5179771,
+    "themes": [
+      "creches-garderies"
+    ],
+    "zone": "centre",
+    "description": "Crèche / garderie (accueil de la petite enfance)."
+  },
+  {
+    "id": "little-kids-edu",
+    "name": "Little Kids",
+    "category": "education",
+    "address": "Mer Rouge",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Little%20Kids%20Mauritius",
+    "lat": -20.1544611,
+    "lng": 57.5160996,
+    "themes": [
+      "creches-garderies"
+    ],
+    "zone": "nord",
+    "description": "Crèche / garderie (accueil de la petite enfance)."
+  },
+  {
+    "id": "le-nid-nursery-pre-primary-and-primary-school-edu",
+    "name": "Le Nid Nursery, Pre-Primary and Primary School",
+    "category": "education",
+    "address": "Vacoas-Phoenix",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Le%20Nid%20Nursery%2C%20Pre-Primary%20and%20Primary%20School%20Mauritius",
+    "lat": -20.3000792,
+    "lng": 57.4900351,
+    "themes": [
+      "creches-garderies"
+    ],
+    "zone": "centre",
+    "description": "Crèche / garderie (accueil de la petite enfance)."
+  },
+  {
+    "id": "island-kidz-edu",
+    "name": "Island Kidz",
+    "category": "education",
+    "address": "Quatre Bornes",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Island%20Kidz%20Mauritius",
+    "lat": -20.2676103,
+    "lng": 57.4774802,
+    "themes": [
+      "creches-garderies"
+    ],
+    "zone": "centre",
+    "description": "Crèche / garderie (accueil de la petite enfance)."
+  },
+  {
+    "id": "les-mirabelles-edu",
+    "name": "Les Mirabelles",
+    "category": "education",
+    "address": "Grand Baie",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Les%20Mirabelles%20Mauritius",
+    "lat": -20.0136207,
+    "lng": 57.5847279,
+    "themes": [
+      "creches-garderies"
+    ],
+    "zone": "nord",
+    "description": "Crèche / garderie (accueil de la petite enfance)."
+  },
+  {
+    "id": "quest-cubs-edu",
+    "name": "Quest cubs",
+    "category": "education",
+    "address": "Quatre Bornes",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Quest%20cubs%20Mauritius",
+    "lat": -20.2516286,
+    "lng": 57.4846241,
+    "themes": [
+      "creches-garderies"
+    ],
+    "zone": "centre",
+    "description": "Crèche & école maternelle (pré-primaire)."
+  },
+  {
+    "id": "happy-kids-edu",
+    "name": "Happy kids",
+    "category": "education",
+    "address": "Rose Hill",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Happy%20kids%20Mauritius",
+    "lat": -20.2535723,
+    "lng": 57.4715188,
+    "themes": [
+      "creches-garderies"
+    ],
+    "zone": "centre",
+    "description": "Crèche / garderie (accueil de la petite enfance)."
+  },
+  {
+    "id": "bises-bees-kindergarten-edu",
+    "name": "Bises bees kindergarten",
+    "category": "education",
+    "address": "Rose-Hill",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Bises%20bees%20kindergarten%20Mauritius",
+    "lat": -20.2498835,
+    "lng": 57.4799671,
+    "themes": [
+      "creches-garderies"
+    ],
+    "zone": "centre",
+    "description": "Crèche / garderie (accueil de la petite enfance)."
+  },
+  {
+    "id": "le-puits-d-amour-edu",
+    "name": "Le puits d'amour",
+    "category": "education",
+    "address": "Beau Bassin-Rose Hill",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Le%20puits%20d'amour%20Mauritius",
+    "lat": -20.2297789,
+    "lng": 57.4755475,
+    "themes": [
+      "creches-garderies"
+    ],
+    "zone": "centre",
+    "description": "Crèche / garderie (accueil de la petite enfance)."
+  },
+  {
+    "id": "mon-p-tit-coeur-edu",
+    "name": "Mon p'tit coeur",
+    "category": "education",
+    "address": "Chebel",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Mon%20p'tit%20coeur%20Mauritius",
+    "lat": -20.2149113,
+    "lng": 57.4750265,
+    "themes": [
+      "creches-garderies"
+    ],
+    "zone": "centre",
+    "description": "Crèche / garderie (accueil de la petite enfance)."
+  },
+  {
+    "id": "bumble-bee-edu",
+    "name": "Bumble bee",
+    "category": "education",
+    "address": "Chebel",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Bumble%20bee%20Mauritius",
+    "lat": -20.2138903,
+    "lng": 57.4712987,
+    "themes": [
+      "creches-garderies"
+    ],
+    "zone": "centre",
+    "description": "Crèche & école maternelle (pré-primaire)."
+  },
+  {
+    "id": "super-garden-edu",
+    "name": "SUPER GARDEN",
+    "category": "education",
+    "address": "Beau Bassin",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=SUPER%20GARDEN%20Mauritius",
+    "lat": -20.226932,
+    "lng": 57.4713784,
+    "themes": [
+      "creches-garderies"
+    ],
+    "zone": "centre",
+    "description": "Crèche / garderie (accueil de la petite enfance)."
+  },
+  {
+    "id": "dora-edu",
+    "name": "Dora",
+    "category": "education",
+    "address": "Rose Hill",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Dora%20Mauritius",
+    "lat": -20.2436173,
+    "lng": 57.4733903,
+    "themes": [
+      "creches-garderies"
+    ],
+    "zone": "centre",
+    "description": "Crèche / garderie (accueil de la petite enfance)."
+  },
+  {
+    "id": "la-bande-joyeuse-edu",
+    "name": "La bande joyeuse",
+    "category": "education",
+    "address": "Beau Bassin",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=La%20bande%20joyeuse%20Mauritius",
+    "lat": -20.2290263,
+    "lng": 57.4647803,
+    "themes": [
+      "creches-garderies"
+    ],
+    "zone": "centre",
+    "description": "Crèche & école maternelle (pré-primaire)."
+  },
+  {
+    "id": "northfields-international-nursery-and-junior-school-edu",
+    "name": "Northfields International Nursery and Junior School",
+    "category": "education",
+    "address": "Mapou",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Northfields%20International%20Nursery%20and%20Junior%20School%20Mauritius",
+    "lat": -20.0689128,
+    "lng": 57.617152,
+    "themes": [
+      "creches-garderies"
+    ],
+    "zone": "nord",
+    "description": "Crèche / garderie (accueil de la petite enfance)."
+  },
+  {
+    "id": "le-petit-poucet-edu",
+    "name": "Le Petit Poucet",
+    "category": "education",
+    "address": "Mapou",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Le%20Petit%20Poucet%20Mauritius",
+    "lat": -20.0687495,
+    "lng": 57.617006,
+    "themes": [
+      "creches-garderies"
+    ],
+    "zone": "nord",
+    "description": "Crèche / garderie (accueil de la petite enfance)."
+  },
+  {
+    "id": "la-courte-echelle-du-nord-edu",
+    "name": "La Courte Echelle du Nord",
+    "category": "education",
+    "address": "Mapou",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=La%20Courte%20Echelle%20du%20Nord%20Mauritius",
+    "lat": -20.0686492,
+    "lng": 57.6167569,
+    "themes": [
+      "creches-garderies"
+    ],
+    "zone": "nord",
+    "description": "Crèche / garderie (accueil de la petite enfance)."
+  },
+  {
+    "id": "cuddles-edu",
+    "name": "CUDDLES",
+    "category": "education",
+    "address": "Vacoas-Phoenix",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=CUDDLES%20Mauritius",
+    "lat": -20.2976487,
+    "lng": 57.4902718,
+    "themes": [
+      "creches-garderies"
+    ],
+    "zone": "centre",
+    "description": "Crèche & école maternelle (pré-primaire)."
+  },
+  {
+    "id": "dukesbrige-vacoas-edu",
+    "name": "Dukesbrige Vacoas",
+    "category": "education",
+    "address": "Vacoas-Phoenix",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Dukesbrige%20Vacoas%20Mauritius",
+    "lat": -20.299613,
+    "lng": 57.4906973,
+    "themes": [
+      "creches-garderies"
+    ],
+    "zone": "centre",
+    "description": "Crèche & école maternelle (pré-primaire)."
+  },
+  {
+    "id": "the-cubbies-edu",
+    "name": "The cubbies",
+    "category": "education",
+    "address": "Beau Bassin-Rose Hill",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=The%20cubbies%20Mauritius",
+    "lat": -20.2381547,
+    "lng": 57.4731184,
+    "themes": [
+      "creches-garderies"
+    ],
+    "zone": "centre",
+    "description": "Crèche & école maternelle (pré-primaire)."
+  },
+  {
+    "id": "little-angels-edu",
+    "name": "Little Angels",
+    "category": "education",
+    "address": "Vacoas-Phoenix",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Little%20Angels%20Mauritius",
+    "lat": -20.3045034,
+    "lng": 57.516616,
+    "themes": [
+      "creches-garderies"
+    ],
+    "zone": "centre",
+    "description": "Crèche / garderie (accueil de la petite enfance)."
+  },
+  {
+    "id": "baby-care-edu",
+    "name": "Baby Care",
+    "category": "education",
+    "address": "Vacoas-Phoenix",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Baby%20Care%20Mauritius",
+    "lat": -20.3090774,
+    "lng": 57.4900499,
+    "themes": [
+      "creches-garderies"
+    ],
+    "zone": "centre",
+    "description": "Crèche / garderie (accueil de la petite enfance)."
+  },
+  {
+    "id": "st-antoine-day-care-edu",
+    "name": "St. Antoine Day Care",
+    "category": "education",
+    "address": "Port Louis",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=St.%20Antoine%20Day%20Care%20Mauritius",
+    "lat": -20.1463121,
+    "lng": 57.5168503,
+    "themes": [
+      "creches-garderies"
+    ],
+    "zone": "centre",
+    "description": "Crèche / garderie (accueil de la petite enfance)."
+  },
+  {
+    "id": "little-darling-edu",
+    "name": "Little Darling",
+    "category": "education",
+    "address": "Vacoas-Phoenix",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Little%20Darling%20Mauritius",
+    "lat": -20.3061454,
+    "lng": 57.483469,
+    "themes": [
+      "creches-garderies"
+    ],
+    "zone": "centre",
+    "description": "Crèche / garderie (accueil de la petite enfance)."
+  },
+  {
+    "id": "planet-kids-edu",
+    "name": "Planet Kids",
+    "category": "education",
+    "address": "Port Louis",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Planet%20Kids%20Mauritius",
+    "lat": -20.169205,
+    "lng": 57.5060373,
+    "themes": [
+      "creches-garderies"
+    ],
+    "zone": "centre",
+    "description": "Crèche / garderie (accueil de la petite enfance)."
+  },
+  {
+    "id": "win-kids-edu",
+    "name": "Win Kids",
+    "category": "education",
+    "address": "Quatre Bornes",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Win%20Kids%20Mauritius",
+    "lat": -20.2808724,
+    "lng": 57.4669471,
+    "themes": [
+      "creches-garderies"
+    ],
+    "zone": "centre",
+    "description": "Crèche / garderie (accueil de la petite enfance)."
+  },
+  {
+    "id": "red-bees-kindergarten-edu",
+    "name": "Red Bees Kindergarten",
+    "category": "education",
+    "address": "Vacoas-Phoenix",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Red%20Bees%20Kindergarten%20Mauritius",
+    "lat": -20.2968589,
+    "lng": 57.4881297,
+    "themes": [
+      "creches-garderies"
+    ],
+    "zone": "centre",
+    "description": "Crèche & école maternelle (pré-primaire)."
+  },
+  {
+    "id": "sarada-pre-primary-edu",
+    "name": "Sarada Pre-Primary",
+    "category": "education",
+    "address": "Vacoas-Phoenix",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Sarada%20Pre-Primary%20Mauritius",
+    "lat": -20.2892346,
+    "lng": 57.5184865,
+    "themes": [
+      "creches-garderies"
+    ],
+    "zone": "centre",
+    "description": "Crèche / garderie (accueil de la petite enfance)."
+  },
+  {
+    "id": "kids-club-edu",
+    "name": "Kids Club",
+    "category": "education",
+    "address": "Calodyne",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Kids%20Club%20Mauritius",
+    "lat": -20.0030377,
+    "lng": 57.6460821,
+    "themes": [
+      "creches-garderies"
+    ],
+    "zone": "nord",
+    "description": "Crèche / garderie (accueil de la petite enfance)."
+  },
+  {
+    "id": "castor-junior-edu",
+    "name": "Castor Junior",
+    "category": "education",
+    "address": "Beau Bassin",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Castor%20Junior%20Mauritius",
+    "lat": -20.2238526,
+    "lng": 57.4731855,
+    "themes": [
+      "creches-garderies"
+    ],
+    "zone": "centre",
+    "description": "Crèche & école maternelle (pré-primaire)."
+  },
+  {
+    "id": "tiboulaba-edu",
+    "name": "Tiboulaba",
+    "category": "education",
+    "address": "Tamarin",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Tiboulaba%20Mauritius",
+    "lat": -20.3369999,
+    "lng": 57.3720539,
+    "themes": [
+      "creches-garderies"
+    ],
+    "zone": "ouest",
+    "description": "Crèche & école maternelle (pré-primaire)."
+  },
+  {
+    "id": "les-petits-futes-edu",
+    "name": "Les Petits Futés",
+    "category": "education",
+    "address": "Moka",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Les%20Petits%20Fut%C3%A9s%20Mauritius",
+    "lat": -20.227482,
+    "lng": 57.522773,
+    "themes": [
+      "creches-garderies"
+    ],
+    "zone": "centre",
+    "description": "Crèche & école maternelle (pré-primaire)."
+  },
+  {
+    "id": "summerside-tots-nursery-and-pre-primary-edu",
+    "name": "Summerside Tots Nursery and Pre Primary",
+    "category": "education",
+    "address": "Quatre Bornes",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Summerside%20Tots%20Nursery%20and%20Pre%20Primary%20Mauritius",
+    "lat": -20.2722931,
+    "lng": 57.4786579,
+    "themes": [
+      "creches-garderies"
+    ],
+    "zone": "centre",
+    "description": "Crèche / garderie (accueil de la petite enfance)."
+  },
+  {
+    "id": "fairyland-pre-primary-school-edu",
+    "name": "Fairyland Pre-Primary School",
+    "category": "education",
+    "address": "Pointe Aux Sables",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Fairyland%20Pre-Primary%20School%20Mauritius",
+    "lat": -20.1739249,
+    "lng": 57.444679,
+    "themes": [
+      "creches-garderies"
+    ],
+    "zone": "centre",
+    "description": "Crèche & école maternelle (pré-primaire)."
+  },
+  {
+    "id": "etoille-sur-terre-edu",
+    "name": "etoille sur terre",
+    "category": "education",
+    "address": "Beau Bassin",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=etoille%20sur%20terre%20Mauritius",
+    "lat": -20.2269026,
+    "lng": 57.4706808,
+    "themes": [
+      "creches-garderies"
+    ],
+    "zone": "centre",
+    "description": "Crèche & école maternelle (pré-primaire)."
   }
 ]

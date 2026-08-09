@@ -7,6 +7,7 @@ export type CategoryKey =
   | "seconde-main"
   | "business-ttv"
   | "immobilier"
+  | "education"
   | "evenements";
 
 export type Category = {
