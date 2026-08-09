@@ -225,6 +225,7 @@ export const SUBCATEGORIES: Partial<Record<CategoryKey, Subcategory[]>> = {
     { key: "telecom", label: "Télécom & internet", emoji: "📶" },
     { key: "plateformes-multiservices", label: "Plateformes multiservices & touristiques", emoji: "🧳" },
     { key: "garages-mecaniciens", label: "Garages & mécaniciens", emoji: "🔧" },
+    { key: "concessionnaires", label: "Concessionnaires auto", emoji: "🚗" },
     { key: "controle-technique", label: "Contrôle technique (fitness)", emoji: "🛠️" },
     { key: "notaires", label: "Notaires", emoji: "📜" },
     { key: "avocats", label: "Avocats & juristes", emoji: "⚖️" },

@@ -40650,5 +40650,885 @@
       "comptables"
     ],
     "description": "Cabinet d'expertise comptable et d'audit : comptabilité, fiscalité et conseil aux entreprises."
+  },
+  {
+    "id": "cfao-conc",
+    "name": "CFAO",
+    "category": "utiles",
+    "address": "Vacoas-Phoenix",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=CFAO%20Mauritius",
+    "lat": -20.273501,
+    "lng": 57.4961848,
+    "themes": [
+      "concessionnaires"
+    ],
+    "zone": "centre",
+    "description": "Concessionnaire automobile (Mercedes-Benz) : vente de véhicules et service après-vente."
+  },
+  {
+    "id": "ecogreen-motors-conc",
+    "name": "EcoGreen Motors",
+    "category": "utiles",
+    "address": "North",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=EcoGreen%20Motors%20Mauritius",
+    "lat": -20.1734528,
+    "lng": 57.4754145,
+    "themes": [
+      "concessionnaires"
+    ],
+    "zone": "centre",
+    "description": "Concessionnaire automobile (Skoda) : vente de véhicules et service après-vente."
+  },
+  {
+    "id": "direct-auto-conc",
+    "name": "Direct Auto",
+    "category": "utiles",
+    "address": "North",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Direct%20Auto%20Mauritius",
+    "lat": -20.1792914,
+    "lng": 57.4700414,
+    "themes": [
+      "concessionnaires"
+    ],
+    "zone": "centre",
+    "description": "Vente de véhicules : concessionnaire / revendeur automobile."
+  },
+  {
+    "id": "b-b-motors-conc",
+    "name": "B.B. Motors",
+    "category": "utiles",
+    "address": "Mer Rouge",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=B.B.%20Motors%20Mauritius",
+    "lat": -20.1553169,
+    "lng": 57.5101656,
+    "themes": [
+      "concessionnaires"
+    ],
+    "zone": "centre",
+    "description": "Vente de véhicules : concessionnaire / revendeur automobile."
+  },
+  {
+    "id": "mercedes-bmw-conc",
+    "name": "Mercedes BMW",
+    "category": "utiles",
+    "address": "Beau Bassin-Rose Hill",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Mercedes%20BMW%20Mauritius",
+    "lat": -20.23786,
+    "lng": 57.4738308,
+    "themes": [
+      "concessionnaires"
+    ],
+    "zone": "centre",
+    "description": "Concessionnaire automobile (Mercedes-Benz) : vente de véhicules et service après-vente."
+  },
+  {
+    "id": "jmc-conc",
+    "name": "JMC",
+    "category": "utiles",
+    "address": "Port Louis",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=JMC%20Mauritius",
+    "lat": -20.1527254,
+    "lng": 57.508752,
+    "themes": [
+      "concessionnaires"
+    ],
+    "zone": "centre",
+    "description": "Vente de véhicules : concessionnaire / revendeur automobile."
+  },
+  {
+    "id": "ginza-motors-conc",
+    "name": "Ginza Motors",
+    "category": "utiles",
+    "address": "Port Louis",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Ginza%20Motors%20Mauritius",
+    "lat": -20.1528132,
+    "lng": 57.5083023,
+    "themes": [
+      "concessionnaires"
+    ],
+    "zone": "centre",
+    "description": "Vente de véhicules : concessionnaire / revendeur automobile."
+  },
+  {
+    "id": "bha-motors-ltd-conc",
+    "name": "BHA Motors LTD",
+    "category": "utiles",
+    "address": "Vacoas-Phoenix",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=BHA%20Motors%20LTD%20Mauritius",
+    "lat": -20.2975013,
+    "lng": 57.4839352,
+    "themes": [
+      "concessionnaires"
+    ],
+    "zone": "centre",
+    "description": "Vente de véhicules : concessionnaire / revendeur automobile."
+  },
+  {
+    "id": "espace-auto-conc",
+    "name": "Espace Auto",
+    "category": "utiles",
+    "address": "Vacoas-Phoenix",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Espace%20Auto%20Mauritius",
+    "lat": -20.2801871,
+    "lng": 57.4971538,
+    "themes": [
+      "concessionnaires"
+    ],
+    "zone": "centre",
+    "description": "Vente de véhicules : concessionnaire / revendeur automobile."
+  },
+  {
+    "id": "axess-ltd-conc",
+    "name": "Axess Ltd",
+    "category": "utiles",
+    "address": "Pailles",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Axess%20Ltd%20Mauritius",
+    "lat": -20.1943873,
+    "lng": 57.4840259,
+    "themes": [
+      "concessionnaires"
+    ],
+    "zone": "centre",
+    "description": "Vente de véhicules : concessionnaire / revendeur automobile."
+  },
+  {
+    "id": "hamedo-car-plaza-ltd-conc",
+    "name": "Hamedo Car Plaza Ltd",
+    "category": "utiles",
+    "address": "Phoenix",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Hamedo%20Car%20Plaza%20Ltd%20Mauritius",
+    "lat": -20.2793982,
+    "lng": 57.5015087,
+    "themes": [
+      "concessionnaires"
+    ],
+    "zone": "centre",
+    "description": "Vente de véhicules : concessionnaire / revendeur automobile."
+  },
+  {
+    "id": "tssl-conc",
+    "name": "Tssl",
+    "category": "utiles",
+    "address": "Vacoas-Phoenix",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Tssl%20Mauritius",
+    "lat": -20.2831054,
+    "lng": 57.4822332,
+    "themes": [
+      "concessionnaires"
+    ],
+    "zone": "centre",
+    "description": "Vente de véhicules : concessionnaire / revendeur automobile."
+  },
+  {
+    "id": "top-dealer-conc",
+    "name": "Top Dealer",
+    "category": "utiles",
+    "address": "Vacoas-Phoenix",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Top%20Dealer%20Mauritius",
+    "lat": -20.2987682,
+    "lng": 57.4885744,
+    "themes": [
+      "concessionnaires"
+    ],
+    "zone": "centre",
+    "description": "Vente de véhicules : concessionnaire / revendeur automobile."
+  },
+  {
+    "id": "auto-world-conc",
+    "name": "Auto World",
+    "category": "utiles",
+    "address": "Port Louis",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Auto%20World%20Mauritius",
+    "lat": -20.1679056,
+    "lng": 57.4846561,
+    "themes": [
+      "concessionnaires"
+    ],
+    "zone": "centre",
+    "description": "Vente de véhicules : concessionnaire / revendeur automobile."
+  },
+  {
+    "id": "e-a-l-man-hin-sons-conc",
+    "name": "E A L Man Hin & Sons",
+    "category": "utiles",
+    "address": "Port Louis",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=E%20A%20L%20Man%20Hin%20%26%20Sons%20Mauritius",
+    "lat": -20.1659194,
+    "lng": 57.4897421,
+    "themes": [
+      "concessionnaires"
+    ],
+    "zone": "centre",
+    "description": "Concessionnaire automobile (Honda) : vente de véhicules et service après-vente."
+  },
+  {
+    "id": "salim-motors-conc",
+    "name": "Salim Motors",
+    "category": "utiles",
+    "address": "Brisee Verdiere",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Salim%20Motors%20Mauritius",
+    "lat": -20.1705416,
+    "lng": 57.6560844,
+    "themes": [
+      "concessionnaires"
+    ],
+    "zone": "sud",
+    "description": "Vente de véhicules : concessionnaire / revendeur automobile."
+  },
+  {
+    "id": "kia-conc",
+    "name": "KIA",
+    "category": "utiles",
+    "address": "Port Louis",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=KIA%20Mauritius",
+    "lat": -20.1976622,
+    "lng": 57.4830382,
+    "themes": [
+      "concessionnaires"
+    ],
+    "zone": "centre",
+    "description": "Concessionnaire automobile (Kia) : vente de véhicules et service après-vente."
+  },
+  {
+    "id": "mitsubishi-conc",
+    "name": "Mitsubishi",
+    "category": "utiles",
+    "address": "Port Louis",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Mitsubishi%20Mauritius",
+    "lat": -20.1985976,
+    "lng": 57.4821273,
+    "themes": [
+      "concessionnaires"
+    ],
+    "zone": "centre",
+    "description": "Concessionnaire automobile (Mitsubishi) : vente de véhicules et service après-vente."
+  },
+  {
+    "id": "leal-co-conc",
+    "name": "Leal & Co",
+    "category": "utiles",
+    "address": "Port Louis",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Leal%20%26%20Co%20Mauritius",
+    "lat": -20.1967435,
+    "lng": 57.4828198,
+    "themes": [
+      "concessionnaires"
+    ],
+    "zone": "centre",
+    "description": "Concessionnaire automobile (BMW, Mini) : vente de véhicules et service après-vente."
+  },
+  {
+    "id": "perodua-conc",
+    "name": "Perodua",
+    "category": "utiles",
+    "address": "Port Louis",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Perodua%20Mauritius",
+    "lat": -20.1836503,
+    "lng": 57.481888,
+    "themes": [
+      "concessionnaires"
+    ],
+    "zone": "centre",
+    "description": "Vente de véhicules : concessionnaire / revendeur automobile."
+  },
+  {
+    "id": "proton-conc",
+    "name": "Proton",
+    "category": "utiles",
+    "address": "Port Louis",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Proton%20Mauritius",
+    "lat": -20.1829435,
+    "lng": 57.4818341,
+    "themes": [
+      "concessionnaires"
+    ],
+    "zone": "centre",
+    "description": "Concessionnaire automobile (Proton) : vente de véhicules et service après-vente."
+  },
+  {
+    "id": "gar-co-conc",
+    "name": "GAR Co",
+    "category": "utiles",
+    "address": "Port Louis",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=GAR%20Co%20Mauritius",
+    "lat": -20.1639846,
+    "lng": 57.4914625,
+    "themes": [
+      "concessionnaires"
+    ],
+    "zone": "centre",
+    "description": "Vente de véhicules : concessionnaire / revendeur automobile."
+  },
+  {
+    "id": "azeer-auto-conc",
+    "name": "Azeer Auto",
+    "category": "utiles",
+    "address": "Bois Cheri Rd",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Azeer%20Auto%20Mauritius",
+    "lat": -20.2169558,
+    "lng": 57.5292288,
+    "themes": [
+      "concessionnaires"
+    ],
+    "zone": "centre",
+    "description": "Vente de véhicules : concessionnaire / revendeur automobile."
+  },
+  {
+    "id": "nand-motors-ltd-conc",
+    "name": "Nand Motors LTD",
+    "category": "utiles",
+    "address": "Port Louis",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Nand%20Motors%20LTD%20Mauritius",
+    "lat": -20.1376315,
+    "lng": 57.5262785,
+    "themes": [
+      "concessionnaires"
+    ],
+    "zone": "centre",
+    "description": "Vente de véhicules : concessionnaire / revendeur automobile."
+  },
+  {
+    "id": "car-plus-showroom-conc",
+    "name": "Car Plus Showroom",
+    "category": "utiles",
+    "address": "Port Louis",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Car%20Plus%20Showroom%20Mauritius",
+    "lat": -20.1341076,
+    "lng": 57.5277988,
+    "themes": [
+      "concessionnaires"
+    ],
+    "zone": "centre",
+    "description": "Vente de véhicules : concessionnaire / revendeur automobile."
+  },
+  {
+    "id": "mekasia-tvs-conc",
+    "name": "Mekasia TVS",
+    "category": "utiles",
+    "address": "Port Louis",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Mekasia%20TVS%20Mauritius",
+    "lat": -20.1339466,
+    "lng": 57.5278936,
+    "themes": [
+      "concessionnaires"
+    ],
+    "zone": "centre",
+    "description": "Vente de véhicules : concessionnaire / revendeur automobile."
+  },
+  {
+    "id": "abc-motors-conc",
+    "name": "ABC Motors",
+    "category": "utiles",
+    "address": "Port Louis",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=ABC%20Motors%20Mauritius",
+    "lat": -20.1525505,
+    "lng": 57.5076542,
+    "themes": [
+      "concessionnaires"
+    ],
+    "zone": "centre",
+    "description": "Concessionnaire automobile (Nissan) : vente de véhicules et service après-vente."
+  },
+  {
+    "id": "star-motors-conc",
+    "name": "Star Motors",
+    "category": "utiles",
+    "address": "Chebel",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Star%20Motors%20Mauritius",
+    "lat": -20.216119,
+    "lng": 57.4692037,
+    "themes": [
+      "concessionnaires"
+    ],
+    "zone": "centre",
+    "description": "Vente de véhicules : concessionnaire / revendeur automobile."
+  },
+  {
+    "id": "per-car-gallery-conc",
+    "name": "Per Car Gallery",
+    "category": "utiles",
+    "address": "Beau Bassin-Rose Hill",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Per%20Car%20Gallery%20Mauritius",
+    "lat": -20.2113078,
+    "lng": 57.4701778,
+    "themes": [
+      "concessionnaires"
+    ],
+    "zone": "centre",
+    "description": "Vente de véhicules : concessionnaire / revendeur automobile."
+  },
+  {
+    "id": "auto-master-conc",
+    "name": "Auto Master",
+    "category": "utiles",
+    "address": "Saint-Jean",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Auto%20Master%20Mauritius",
+    "lat": -20.2532757,
+    "lng": 57.4858892,
+    "themes": [
+      "concessionnaires"
+    ],
+    "zone": "centre",
+    "description": "Vente de véhicules : concessionnaire / revendeur automobile."
+  },
+  {
+    "id": "volvo-conc",
+    "name": "Volvo",
+    "category": "utiles",
+    "address": "Port Louis",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Volvo%20Mauritius",
+    "lat": -20.197252,
+    "lng": 57.4830982,
+    "themes": [
+      "concessionnaires"
+    ],
+    "zone": "centre",
+    "description": "Concessionnaire automobile (Volvo) : vente de véhicules et service après-vente."
+  },
+  {
+    "id": "skoda-conc",
+    "name": "Skoda",
+    "category": "utiles",
+    "address": "Port Louis",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Skoda%20Mauritius",
+    "lat": -20.1524412,
+    "lng": 57.5069821,
+    "themes": [
+      "concessionnaires"
+    ],
+    "zone": "centre",
+    "description": "Concessionnaire automobile (Škoda) : vente de véhicules et service après-vente."
+  },
+  {
+    "id": "lumiere-auto-conc",
+    "name": "Lumiere Auto",
+    "category": "utiles",
+    "address": "Vacoas-Phœnix",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Lumiere%20Auto%20Mauritius",
+    "lat": -20.2863207,
+    "lng": 57.5254223,
+    "themes": [
+      "concessionnaires"
+    ],
+    "zone": "centre",
+    "description": "Vente de véhicules : concessionnaire / revendeur automobile."
+  },
+  {
+    "id": "auto-city-conc",
+    "name": "Auto City",
+    "category": "utiles",
+    "address": "Vacoas-Phoenix",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Auto%20City%20Mauritius",
+    "lat": -20.2792545,
+    "lng": 57.4899448,
+    "themes": [
+      "concessionnaires"
+    ],
+    "zone": "centre",
+    "description": "Vente de véhicules : concessionnaire / revendeur automobile."
+  },
+  {
+    "id": "gacmotor-conc",
+    "name": "gacmotor",
+    "category": "utiles",
+    "address": "Mapou",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=gacmotor%20Mauritius",
+    "lat": -20.0789337,
+    "lng": 57.6046305,
+    "themes": [
+      "concessionnaires"
+    ],
+    "zone": "nord",
+    "description": "Concessionnaire automobile (gac) : vente de véhicules et service après-vente."
+  },
+  {
+    "id": "zpc-conc",
+    "name": "ZPC",
+    "category": "utiles",
+    "address": "Beau Bassin",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=ZPC%20Mauritius",
+    "lat": -20.2297806,
+    "lng": 57.4674353,
+    "themes": [
+      "concessionnaires"
+    ],
+    "zone": "centre",
+    "description": "Vente de véhicules : concessionnaire / revendeur automobile."
+  },
+  {
+    "id": "mazda-conc",
+    "name": "Mazda",
+    "category": "utiles",
+    "address": "Port Louis",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Mazda%20Mauritius",
+    "lat": -20.1952574,
+    "lng": 57.4843149,
+    "themes": [
+      "concessionnaires"
+    ],
+    "zone": "centre",
+    "description": "Concessionnaire automobile (Mazda) : vente de véhicules et service après-vente."
+  },
+  {
+    "id": "delior-automobile-conc",
+    "name": "Delior Automobile",
+    "category": "utiles",
+    "address": "Quatre Bornes",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Delior%20Automobile%20Mauritius",
+    "lat": -20.2463209,
+    "lng": 57.4794093,
+    "themes": [
+      "concessionnaires"
+    ],
+    "zone": "centre",
+    "description": "Vente de véhicules : concessionnaire / revendeur automobile."
+  },
+  {
+    "id": "j-badal-co-ltd-conc",
+    "name": "J.Badal & Co Ltd",
+    "category": "utiles",
+    "address": "Circonstance",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=J.Badal%20%26%20Co%20Ltd%20Mauritius",
+    "lat": -20.2229011,
+    "lng": 57.5402104,
+    "themes": [
+      "concessionnaires"
+    ],
+    "zone": "centre",
+    "description": "Vente de véhicules : concessionnaire / revendeur automobile."
+  },
+  {
+    "id": "fayyaz-autos-co-ltd-conc",
+    "name": "Fayyaz Autos Co Ltd",
+    "category": "utiles",
+    "address": "Riviere des Anguilles",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Fayyaz%20Autos%20Co%20Ltd%20Mauritius",
+    "lat": -20.4469569,
+    "lng": 57.5667952,
+    "themes": [
+      "concessionnaires"
+    ],
+    "zone": "sud",
+    "description": "Vente de véhicules : concessionnaire / revendeur automobile."
+  },
+  {
+    "id": "toyota-conc",
+    "name": "Toyota",
+    "category": "utiles",
+    "address": "Vacoas",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Toyota%20Mauritius",
+    "lat": -20.2908327,
+    "lng": 57.4823743,
+    "themes": [
+      "concessionnaires"
+    ],
+    "zone": "centre",
+    "description": "Concessionnaire automobile (Toyota) : vente de véhicules et service après-vente."
+  },
+  {
+    "id": "renault-alpine-conc",
+    "name": "Renault / Alpine",
+    "category": "utiles",
+    "address": "Port Louis",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Renault%20%2F%20Alpine%20Mauritius",
+    "lat": -20.198256,
+    "lng": 57.4821224,
+    "themes": [
+      "concessionnaires"
+    ],
+    "zone": "centre",
+    "description": "Concessionnaire automobile (Renault) : vente de véhicules et service après-vente."
+  },
+  {
+    "id": "dream-motors-conc",
+    "name": "Dream Motors",
+    "category": "utiles",
+    "address": "Port Louis",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Dream%20Motors%20Mauritius",
+    "lat": -20.1660866,
+    "lng": 57.489413,
+    "themes": [
+      "concessionnaires"
+    ],
+    "zone": "centre",
+    "description": "Vente de véhicules : concessionnaire / revendeur automobile."
+  },
+  {
+    "id": "the-car-shop-conc",
+    "name": "The Car Shop",
+    "category": "utiles",
+    "address": "Vacoas-Phoenix",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=The%20Car%20Shop%20Mauritius",
+    "lat": -20.2994332,
+    "lng": 57.4912049,
+    "themes": [
+      "concessionnaires"
+    ],
+    "zone": "centre",
+    "description": "Vente de véhicules : concessionnaire / revendeur automobile."
+  },
+  {
+    "id": "parbo-conc",
+    "name": "Parbo",
+    "category": "utiles",
+    "address": "Vacoas-Phoenix",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Parbo%20Mauritius",
+    "lat": -20.3045847,
+    "lng": 57.5074695,
+    "themes": [
+      "concessionnaires"
+    ],
+    "zone": "centre",
+    "description": "Vente de véhicules : concessionnaire / revendeur automobile."
+  },
+  {
+    "id": "byd-conc",
+    "name": "BYD",
+    "category": "utiles",
+    "address": "Port Louis",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=BYD%20Mauritius",
+    "lat": -20.1983293,
+    "lng": 57.4830686,
+    "themes": [
+      "concessionnaires"
+    ],
+    "zone": "centre",
+    "description": "Concessionnaire automobile (BYD) : vente de véhicules et service après-vente."
+  },
+  {
+    "id": "gwm-haval-ora-conc",
+    "name": "GWM / Haval / Ora",
+    "category": "utiles",
+    "address": "Port Louis",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=GWM%20%2F%20Haval%20%2F%20Ora%20Mauritius",
+    "lat": -20.1979201,
+    "lng": 57.4820568,
+    "themes": [
+      "concessionnaires"
+    ],
+    "zone": "centre",
+    "description": "Concessionnaire automobile (GWM) : vente de véhicules et service après-vente."
+  },
+  {
+    "id": "best-deal-motors-conc",
+    "name": "best deal motors",
+    "category": "utiles",
+    "address": "Port Louis",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=best%20deal%20motors%20Mauritius",
+    "lat": -20.1266803,
+    "lng": 57.5400516,
+    "themes": [
+      "concessionnaires"
+    ],
+    "zone": "centre",
+    "description": "Vente de véhicules : concessionnaire / revendeur automobile."
+  },
+  {
+    "id": "psk-motors-conc",
+    "name": "Psk motors",
+    "category": "utiles",
+    "address": "Port Louis",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Psk%20motors%20Mauritius",
+    "lat": -20.1237648,
+    "lng": 57.5490853,
+    "themes": [
+      "concessionnaires"
+    ],
+    "zone": "centre",
+    "description": "Vente de véhicules : concessionnaire / revendeur automobile."
+  },
+  {
+    "id": "sahi-auto-conc",
+    "name": "sahi auto",
+    "category": "utiles",
+    "address": "Port Louis",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=sahi%20auto%20Mauritius",
+    "lat": -20.1236685,
+    "lng": 57.5493608,
+    "themes": [
+      "concessionnaires"
+    ],
+    "zone": "centre",
+    "description": "Vente de véhicules : concessionnaire / revendeur automobile."
+  },
+  {
+    "id": "phoenix-car-gallery-conc",
+    "name": "Phoenix Car Gallery",
+    "category": "utiles",
+    "address": "Vacoas-Phœnix",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Phoenix%20Car%20Gallery%20Mauritius",
+    "lat": -20.2771222,
+    "lng": 57.4971729,
+    "themes": [
+      "concessionnaires"
+    ],
+    "zone": "centre",
+    "description": "Vente de véhicules : concessionnaire / revendeur automobile."
+  },
+  {
+    "id": "express-auto-conc",
+    "name": "Express auto",
+    "category": "utiles",
+    "address": "Vacoas-Phoenix",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Express%20auto%20Mauritius",
+    "lat": -20.2674929,
+    "lng": 57.5166554,
+    "themes": [
+      "concessionnaires"
+    ],
+    "zone": "centre",
+    "description": "Vente de véhicules : concessionnaire / revendeur automobile."
+  },
+  {
+    "id": "dbb-conc",
+    "name": "DBB",
+    "category": "utiles",
+    "address": "Belle Vue Maurel",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=DBB%20Mauritius",
+    "lat": -20.1117936,
+    "lng": 57.6709982,
+    "themes": [
+      "concessionnaires"
+    ],
+    "zone": "est",
+    "description": "Vente de véhicules : concessionnaire / revendeur automobile."
+  },
+  {
+    "id": "automark-conc",
+    "name": "AutoMark",
+    "category": "utiles",
+    "address": "Baie du Tombeau",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=AutoMark%20Mauritius",
+    "lat": -20.1354354,
+    "lng": 57.5152273,
+    "themes": [
+      "concessionnaires"
+    ],
+    "zone": "nord",
+    "description": "Vente de véhicules : concessionnaire / revendeur automobile."
+  },
+  {
+    "id": "capital-automobile-conc",
+    "name": "Capital Automobile",
+    "category": "utiles",
+    "address": "Île Maurice",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Capital%20Automobile%20Mauritius",
+    "lat": -20.0692341,
+    "lng": 57.5691264,
+    "themes": [
+      "concessionnaires"
+    ],
+    "zone": "nord",
+    "description": "Vente de véhicules : concessionnaire / revendeur automobile."
   }
 ]
