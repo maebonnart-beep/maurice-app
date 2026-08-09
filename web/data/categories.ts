@@ -273,9 +273,8 @@ export const SUBCATEGORIES: Partial<Record<CategoryKey, Subcategory[]>> = {
     { key: "creches-garderies", label: "Crèches & garderies", emoji: "👶" },
   ],
   evenements: [
-    { key: "sportifs", label: "Sportifs", emoji: "🏆" },
-    { key: "culturels", label: "Culturels", emoji: "🎭" },
-    { key: "business", label: "Business", emoji: "💼" },
+    { key: "culturels", label: "Fêtes & festivals culturels", emoji: "🎭" },
+    { key: "sportifs", label: "Événements sportifs", emoji: "🏆" },
   ],
 };
 

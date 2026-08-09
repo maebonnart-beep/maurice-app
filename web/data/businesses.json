@@ -42344,5 +42344,165 @@
     ],
     "zone": "centre",
     "description": "Crèche & école maternelle (pré-primaire)."
+  },
+  {
+    "id": "festival-kreol-kreol-international-festival-evt",
+    "name": "Festival Kreol (Kréol International Festival)",
+    "category": "evenements",
+    "address": "Toute l'île (littoral & Rodrigues)",
+    "phone": "",
+    "website": "",
+    "themes": [
+      "culturels"
+    ],
+    "description": "Chaque année fin novembre–début décembre. Célébration de la culture créole mauricienne : séga, concerts, cuisine et animations à travers l'île, avec un temps fort sur le littoral et à Rodrigues."
+  },
+  {
+    "id": "porlwi-by-light-evt",
+    "name": "Porlwi by Light",
+    "category": "evenements",
+    "address": "Centre historique, Port-Louis",
+    "phone": "",
+    "website": "",
+    "themes": [
+      "culturels"
+    ],
+    "description": "Festival d'art et de lumière dans le centre historique de Port-Louis : installations lumineuses, projections et concerts, généralement en fin d'année.",
+    "lat": -20.16,
+    "lng": 57.5012,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Porlwi%20by%20Light%20Mauritius",
+    "zone": "centre"
+  },
+  {
+    "id": "maha-shivaratri-grand-bassin-evt",
+    "name": "Maha Shivaratri – Grand Bassin",
+    "category": "evenements",
+    "address": "Grand Bassin (Ganga Talao), Savanne",
+    "phone": "",
+    "website": "",
+    "themes": [
+      "culturels"
+    ],
+    "description": "Grand pèlerinage hindou vers le lac sacré de Grand Bassin (Ganga Talao), chaque année en février/mars. Des centaines de milliers de fidèles marchent pieds nus, portant des kanwars, jusqu'au site le plus sacré de l'hindouisme mauricien.",
+    "lat": -20.4149,
+    "lng": 57.492,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Maha%20Shivaratri%20%E2%80%93%20Grand%20Bassin%20Mauritius",
+    "zone": "ouest"
+  },
+  {
+    "id": "thaipoosam-cavadee-evt",
+    "name": "Thaipoosam Cavadee",
+    "category": "evenements",
+    "address": "Kovils, toute l'île",
+    "phone": "",
+    "website": "",
+    "themes": [
+      "culturels"
+    ],
+    "description": "Fête tamoule (janvier–février) : dix jours de jeûne suivis de processions vers les kovils, les fidèles portant le cavadee. Dates variables selon le calendrier tamoul."
+  },
+  {
+    "id": "divali-fete-de-la-lumiere-evt",
+    "name": "Divali (Fête de la lumière)",
+    "category": "evenements",
+    "address": "Toute l'île",
+    "phone": "",
+    "website": "",
+    "themes": [
+      "culturels"
+    ],
+    "description": "Fête hindoue des lumières (octobre–novembre) : maisons, cours et rues illuminées de lampes (diyas) et partage de gâteaux, célébrée dans toute l'île."
+  },
+  {
+    "id": "nouvel-an-chinois-fete-du-printemps-evt",
+    "name": "Nouvel An chinois (Fête du Printemps)",
+    "category": "evenements",
+    "address": "Chinatown, Port-Louis",
+    "phone": "",
+    "website": "",
+    "themes": [
+      "culturels"
+    ],
+    "description": "Nouvel An chinois (janvier–février) : défilés, pétards et danses du lion, principalement à Chinatown, Port-Louis. Dates variables selon le calendrier lunaire.",
+    "lat": -20.1618,
+    "lng": 57.506,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Nouvel%20An%20chinois%20(F%C3%AAte%20du%20Printemps)%20Mauritius",
+    "zone": "centre"
+  },
+  {
+    "id": "pelerinage-du-pere-laval-evt",
+    "name": "Pèlerinage du Père Laval",
+    "category": "evenements",
+    "address": "Sanctuaire du Père Laval, Sainte-Croix, Port-Louis",
+    "phone": "",
+    "website": "",
+    "themes": [
+      "culturels"
+    ],
+    "description": "Pèlerinage annuel au sanctuaire du Père Laval (Sainte-Croix), chaque 9 septembre, rassemblant des fidèles de toutes confessions autour du « saint de l'île Maurice ».",
+    "lat": -20.1447,
+    "lng": 57.5049,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=P%C3%A8lerinage%20du%20P%C3%A8re%20Laval%20Mauritius",
+    "zone": "centre"
+  },
+  {
+    "id": "dodo-trail-evt",
+    "name": "Dodo Trail",
+    "category": "evenements",
+    "address": "Région de Tamarin / Rivière Noire",
+    "phone": "",
+    "website": "",
+    "themes": [
+      "sportifs"
+    ],
+    "description": "Trail de montagne (UTMB World Series), chaque année en juillet dans le sud-ouest (Tamarin, Rivière Noire, Le Morne). Plusieurs formats (5, 10, 25 et 50 km) et près de 3 000 coureurs de Maurice, La Réunion et d'ailleurs.",
+    "lat": -20.326,
+    "lng": 57.371,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Dodo%20Trail%20Mauritius",
+    "zone": "ouest"
+  },
+  {
+    "id": "mauritius-marathon-evt",
+    "name": "Mauritius Marathon",
+    "category": "evenements",
+    "address": "St Félix Public Beach, Bel Ombre",
+    "phone": "",
+    "website": "",
+    "themes": [
+      "sportifs"
+    ],
+    "description": "Marathon international à la mi-juillet, au départ de la plage publique de St Félix (Bel Ombre, sud). Formats marathon, semi-marathon et 10 km.",
+    "lat": -20.503,
+    "lng": 57.403,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Mauritius%20Marathon%20Mauritius",
+    "zone": "sud"
+  },
+  {
+    "id": "tour-de-maurice-cyclisme-evt",
+    "name": "Tour de Maurice (cyclisme)",
+    "category": "evenements",
+    "address": "Toute l'île",
+    "phone": "",
+    "website": "",
+    "themes": [
+      "sportifs"
+    ],
+    "description": "Course cycliste internationale par étapes, généralement fin août, à travers l'île."
+  },
+  {
+    "id": "maiden-cup-champ-de-mars-evt",
+    "name": "Maiden Cup – Champ de Mars",
+    "category": "evenements",
+    "address": "Hippodrome du Champ de Mars, Port-Louis",
+    "phone": "",
+    "website": "",
+    "themes": [
+      "sportifs"
+    ],
+    "description": "Course hippique la plus prestigieuse de l'île, début septembre à l'hippodrome du Champ de Mars (Port-Louis). Fait partie de la saison des courses du Mauritius Turf Club, de mai à novembre.",
+    "lat": -20.1637,
+    "lng": 57.503,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Maiden%20Cup%20%E2%80%93%20Champ%20de%20Mars%20Mauritius",
+    "zone": "centre"
   }
 ]
