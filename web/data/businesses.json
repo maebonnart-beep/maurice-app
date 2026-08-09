@@ -26289,7 +26289,7 @@
   {
     "id": "ava-beach-trou-aux-biches",
     "name": "Ava Beach",
-    "category": "business-ttv",
+    "category": "food",
     "address": "Trou aux Biches (Nord)",
     "phone": "",
     "website": "",
@@ -26297,11 +26297,15 @@
     "lat": -20.0360865,
     "lng": 57.546075,
     "themes": [
-      "cafe-coworking"
+      "restaurants",
+      "europeenne",
+      "fruits-de-mer"
     ],
-    "promoText": "Hôtel où la nourriture est excellente (salade César, thali). Calme, face à la piscine — teste le iced matcha passion !",
+    "promoText": "Cuisine plutôt méditerranéenne à base de produits frais (poisson selon la pêche du jour). Desserts délicieux à la présentation raffinée et soignée. Cadre très agréable au bord de la piscine.",
     "zone": "nord",
-    "description": "Hôtel de bord de mer à Trou aux Biches dont la restauration est ouverte aux non-résidents : cadre calme face à la piscine, idéal pour une pause déjeuner ou pour télétravailler."
+    "description": "Hôtel de bord de mer à Trou aux Biches dont la restauration est ouverte aux non-résidents : cadre calme face à la piscine, idéal pour une pause déjeuner ou pour télétravailler.",
+    "badge": "coup-de-coeur",
+    "ttvFriendly": true
   },
   {
     "id": "zilwa-attitude-calodyne",
