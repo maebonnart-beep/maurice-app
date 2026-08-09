@@ -23648,7 +23648,8 @@
     "lat": -20.3481107,
     "lng": 57.6186578,
     "themes": [
-      "randonnee-trail"
+      "randonnee-trail",
+      "parcs-botaniques"
     ],
     "duration": "2h-3h",
     "difficultyLevel": "debutant",
