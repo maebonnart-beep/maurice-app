@@ -5,6 +5,7 @@ import dynamic from "next/dynamic";
 import type { Business, CategoryKey } from "@/lib/types";
 import type { MapBounds } from "./Map";
 import { CATEGORIES, CATEGORY_MAP, SUBCATEGORIES, FAMILIES } from "@/data/categories";
+import type { Family, Subgroup } from "@/data/categories";
 import { Logo } from "@/components/ui/Logo";
 import { SearchInput } from "@/components/ui/SearchInput";
 import { CategoryTile } from "@/components/ui/CategoryTile";
@@ -92,6 +93,31 @@ function resolveRubriques(u: Umbrella): string[] {
   return [...set];
 }
 
+// Familles par clé + sous-groupes par rubrique parente (pour la navigation à niveaux).
+const FAMILY_BY_KEY: Record<string, { category: CategoryKey; family: Family }> = {};
+(Object.keys(FAMILIES) as CategoryKey[]).forEach((cat) => {
+  FAMILIES[cat]?.forEach((f) => {
+    FAMILY_BY_KEY[f.key] = { category: cat, family: f };
+  });
+});
+const SUBGROUP_BY_PARENT: Record<string, Subgroup> = {};
+Object.values(FAMILIES).forEach((fams) =>
+  fams?.forEach((f) => f.subgroups?.forEach((sg) => (SUBGROUP_BY_PARENT[sg.parent] = sg)))
+);
+
+// Un univers « pur » (une seule catégorie, sans rubriques explicites) ayant des familles
+// se déroule d'abord par familles (ex. Manger → Restauration / Commerces).
+function umbrellaFamilies(u: Umbrella): Family[] | null {
+  if (u.categories?.length === 1 && !u.rubriques) {
+    const fams = FAMILIES[u.categories[0]];
+    if (fams && fams.length) return fams;
+  }
+  return null;
+}
+
+// Un niveau de navigation en tuiles.
+type NavNode = { kind: "umbrella" | "family" | "subgroup"; key: string; label: string; emoji: string };
+
 const ZONES: { key: string; label: string; emoji: string }[] = [
   { key: "nord", label: "Nord", emoji: "⬆️" },
   { key: "est", label: "Est", emoji: "➡️" },
@@ -123,9 +149,9 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
   const [mapBounds, setMapBounds] = useState<MapBounds | null>(null);
   // Mobile : forcer la liste à plat malgré l'écran d'accueil par catégories.
   const [browseAll, setBrowseAll] = useState(false);
-  // Mobile : navigation en tuiles. activeUmbrella = univers lifestyle ouvert
-  // (on montre alors ses rubriques en tuiles).
-  const [activeUmbrella, setActiveUmbrella] = useState<string | null>(null);
+  // Navigation en tuiles à niveaux : pile de nœuds (univers → familles → rubriques →
+  // sous-groupes). Vide = grille des univers (accueil).
+  const [navStack, setNavStack] = useState<NavNode[]>([]);
   const cardRefs = useRef<Record<string, HTMLElement | null>>({});
 
   const onBoundsChange = useCallback((b: MapBounds) => setMapBounds(b), []);
@@ -151,14 +177,14 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
     setActiveZone(null);
     setQuery("");
     setBrowseAll(false);
-    setActiveUmbrella(null);
+    setNavStack([]);
     setSidebarOpen(false);
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
-  // Mobile : ouvrir un univers lifestyle depuis une tuile d'accueil.
-  function openUmbrella(key: string) {
-    setActiveUmbrella(key);
+  // Descendre d'un niveau dans la navigation en tuiles.
+  function pushNav(node: NavNode) {
+    setNavStack((prev) => [...prev, node]);
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
@@ -166,7 +192,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
     setActive(key);
     setActiveThemes(new Set());
     setBrowseAll(false);
-    setActiveUmbrella(null);
+    setNavStack([]);
     // Mobile : garder le tiroir ouvert quand la catégorie a une arborescence
     // de rubriques à dérouler (l'utilisateur peut alors choisir une
     // sous-rubrique). On ne referme que pour les catégories sans arborescence.
@@ -181,7 +207,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
   function toggleTheme(key: string) {
     setActiveThemes((prev) => (prev.has(key) ? new Set() : new Set([key])));
     setSidebarOpen(false);
-    setActiveUmbrella(null);
+    setNavStack([]);
   }
 
   function toggleSidebarExpand(catKey: string) {
@@ -313,12 +339,87 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
     return counts;
   }, [businesses, activeZone]);
 
-  // Écran d'accueil mobile : univers lifestyle plutôt que 2574 résultats en vrac.
+  // Écran d'accueil : univers lifestyle plutôt que 2574 résultats en vrac.
   const showHome =
     active === "all" && activeThemes.size === 0 && query.trim() === "" && !browseAll;
 
-  // Mobile : on montre des tuiles (accueil / rubriques d'un univers) plutôt que la liste.
+  // On montre des tuiles (univers / niveaux) plutôt que la liste.
   const mobileTiles = showHome;
+
+  // Compte distinct de fiches ayant l'une des rubriques données (tenant compte de la zone).
+  const countThemes = (keys: string[]) => {
+    const set = new Set(keys);
+    let n = 0;
+    businesses.forEach((b) => {
+      if (activeZone && b.zone !== activeZone) return;
+      if ((b.themes ?? []).some((t) => set.has(t))) n++;
+    });
+    return n;
+  };
+
+  type TileDesc = { key: string; label: string; emoji: string; count: number; drillTo?: NavNode; themeKey?: string };
+
+  // Une rubrique → tuile qui descend dans son sous-groupe (ex. cuisines) si elle en a un,
+  // sinon tuile terminale qui filtre la liste.
+  function rubriqueTile(rk: string): TileDesc | null {
+    const r = RUBRIQUE_MAP[rk];
+    if (!r) return null;
+    const count = themeCountsAll[r.key] || 0;
+    if (count === 0) return null;
+    const sg = SUBGROUP_BY_PARENT[r.key];
+    return sg
+      ? { key: r.key, label: r.label, emoji: r.emoji, count, drillTo: { kind: "subgroup", key: r.key, label: r.label, emoji: r.emoji } }
+      : { key: r.key, label: r.label, emoji: r.emoji, count, themeKey: r.key };
+  }
+
+  // Tuiles du niveau courant de la pile de navigation.
+  function levelTiles(stack: NavNode[]): TileDesc[] {
+    const top = stack[stack.length - 1];
+    if (!top) return [];
+    if (top.kind === "umbrella") {
+      const u = LIFESTYLE.find((x) => x.key === top.key);
+      if (!u) return [];
+      const fams = umbrellaFamilies(u);
+      if (fams) {
+        return fams
+          .map((f): TileDesc | null => {
+            const count = countThemes(f.children);
+            return count > 0
+              ? { key: f.key, label: f.label, emoji: f.emoji, count, drillTo: { kind: "family", key: f.key, label: f.label, emoji: f.emoji } }
+              : null;
+          })
+          .filter((t): t is TileDesc => t !== null);
+      }
+      return resolveRubriques(u)
+        .map(rubriqueTile)
+        .filter((t): t is TileDesc => t !== null)
+        .sort((a, b) => b.count - a.count);
+    }
+    if (top.kind === "family") {
+      const entry = FAMILY_BY_KEY[top.key];
+      if (!entry) return [];
+      return entry.family.children
+        .map(rubriqueTile)
+        .filter((t): t is TileDesc => t !== null)
+        .sort((a, b) => b.count - a.count);
+    }
+    // sous-groupe : « Tout {rubrique} » + les spécialités
+    const sg = SUBGROUP_BY_PARENT[top.key];
+    if (!sg) return [];
+    const tiles: TileDesc[] = [
+      { key: "__all__" + top.key, label: `Tout ${top.label.toLowerCase()}`, emoji: "📋", count: themeCountsAll[top.key] || 0, themeKey: top.key },
+    ];
+    sg.children.forEach((ck) => {
+      const t = rubriqueTile(ck);
+      if (t) tiles.push(t);
+    });
+    return tiles;
+  }
+
+  function onTileClick(t: TileDesc) {
+    if (t.drillTo) pushNav(t.drillTo);
+    else if (t.themeKey) toggleTheme(t.themeKey);
+  }
 
   const breadcrumb =
     activeThemeLabel ??
@@ -598,8 +699,8 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
         )}
 
         <div className="flex-1 min-w-0 px-4 lg:px-5 py-3">
-          {/* Accueil mobile : univers lifestyle */}
-          {showHome && activeUmbrella === null && (
+          {/* Accueil : grille des univers lifestyle */}
+          {showHome && navStack.length === 0 && (
             <div className="pb-16">
               <p className="text-[13px] font-semibold text-muted mb-2.5">Que cherchez-vous ?</p>
               <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2.5">
@@ -609,7 +710,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                     emoji={u.emoji}
                     label={u.label}
                     count={umbrellaCounts[u.key] || 0}
-                    onClick={() => openUmbrella(u.key)}
+                    onClick={() => pushNav({ kind: "umbrella", key: u.key, label: u.label, emoji: u.emoji })}
                   />
                 ))}
               </div>
@@ -622,35 +723,29 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
             </div>
           )}
 
-          {/* Rubriques d'un univers en tuiles */}
+          {/* Niveau de navigation en tuiles (familles / rubriques / spécialités) */}
           {showHome &&
-            activeUmbrella !== null &&
+            navStack.length > 0 &&
             (() => {
-              const u = LIFESTYLE.find((x) => x.key === activeUmbrella);
-              if (!u) return null;
-              const rubs = resolveRubriques(u)
-                .map((k) => RUBRIQUE_MAP[k])
-                .filter((r) => r && (themeCountsAll[r.key] || 0) > 0)
-                .sort((a, b) => (themeCountsAll[b.key] || 0) - (themeCountsAll[a.key] || 0));
+              const tiles = levelTiles(navStack);
+              const path = navStack.map((n) => n.label).join(" › ");
               return (
                 <div className="pb-16">
                   <button
-                    onClick={() => setActiveUmbrella(null)}
+                    onClick={() => setNavStack((prev) => prev.slice(0, -1))}
                     className="inline-flex items-center gap-1.5 text-[13px] font-semibold text-primary-deep mb-2.5 active:scale-[.98]"
                   >
-                    ← Accueil
+                    ← Retour
                   </button>
-                  <p className="text-[15px] font-semibold mb-2.5">
-                    {u.emoji} {u.label}
-                  </p>
+                  <p className="text-[15px] font-semibold mb-2.5 truncate">{path}</p>
                   <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2.5">
-                    {rubs.map((r) => (
+                    {tiles.map((t) => (
                       <CategoryTile
-                        key={r.key}
-                        emoji={r.emoji}
-                        label={r.label}
-                        count={themeCountsAll[r.key] || 0}
-                        onClick={() => toggleTheme(r.key)}
+                        key={t.key}
+                        emoji={t.emoji}
+                        label={t.label}
+                        count={t.count}
+                        onClick={() => onTileClick(t)}
                       />
                     ))}
                   </div>
