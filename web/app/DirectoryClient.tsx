@@ -644,8 +644,8 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
 
   return (
     <div className="app min-h-screen flex flex-col">
-      {/* Bandeau d'en-tête teal : logo + recherche */}
-      <header className="sticky top-0 z-30 bg-band text-on-band shadow-sm">
+      {/* En-tête clair : logo poulpe + recherche */}
+      <header className="sticky top-0 z-30 bg-bg/95 backdrop-blur border-b border-border">
         <div className="max-w-[1400px] mx-auto px-5 pt-3 pb-3.5 flex flex-col gap-3">
           <button
             onClick={goHome}
