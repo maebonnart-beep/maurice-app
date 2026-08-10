@@ -1,17 +1,22 @@
 @import "tailwindcss";
 
 :root {
-  /* Direction « Récif » — fond sable profond, cartes blanches qui ressortent. */
-  --bg: #e9e6dc;
+  /* Direction « KOTÉ MORIS » — teal marin, accent jaune soleil, neutres crème. */
+  --bg: #ede6d5;
   --surface: #ffffff;
-  --surface-2: #f2efe7;
-  --ink: #16302e;
-  --muted: #62736e;
-  --border: #ddd8ca;
-  --primary: #0d7a72;
-  --primary-deep: #0a5f58;
-  --primary-tint: #dcebe7;
-  --accent: #db6a48;
+  --surface-2: #f7f1e3;
+  --ink: #123a3f;
+  --muted: #5f7377;
+  --border: #e2dbc9;
+  --primary: #087e8b;
+  --primary-deep: #066470;
+  --primary-tint: #d7ede9;
+  --accent: #f4c95d;
+  --on-accent: #133c40;
+
+  /* Bandeau d'en-tête (logo + recherche) : teal, texte clair. */
+  --band: #087e8b;
+  --on-band: #ffffff;
 
   /* Rayon historique (conservé pour compat). */
   --radius: 12px;
@@ -25,16 +30,21 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #071b1a;
-    --surface: #0f2a28;
-    --surface-2: #0b211f;
+    --bg: #071c1e;
+    --surface: #0f2b2c;
+    --surface-2: #0b2324;
     --ink: #eaf3f1;
     --muted: #90a9a6;
-    --border: #1d3f3c;
-    --primary: #2bb3aa;
-    --primary-deep: #56c9c0;
-    --primary-tint: #123330;
-    --accent: #ef7d5b;
+    --border: #1e3d3e;
+    --primary: #45c4c0;
+    --primary-deep: #7ad6d2;
+    --primary-tint: #10302f;
+    --accent: #f4c95d;
+    --on-accent: #133c40;
+
+    /* Bandeau plus profond en mode sombre, distinct du fond. */
+    --band: #0a2a2b;
+    --on-band: #eaf3f1;
 
     /* Ombres plus profondes sur fond sombre pour rester perceptibles. */
     --elev-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
@@ -54,6 +64,9 @@
   --color-primary-deep: var(--primary-deep);
   --color-primary-tint: var(--primary-tint);
   --color-accent: var(--accent);
+  --color-on-accent: var(--on-accent);
+  --color-band: var(--band);
+  --color-on-band: var(--on-band);
 
   /* Police : branchée sur la variable exposée par next/font (voir layout.tsx),
      avec repli système si la police n'est pas encore chargée. */

@@ -118,7 +118,7 @@ export default function AdminPage() {
 
   return (
     <div className="min-h-screen bg-bg text-ink p-6 max-w-3xl mx-auto">
-      <h1 className="text-xl font-semibold mb-1">Admin — Fiches Maurice+</h1>
+      <h1 className="text-xl font-semibold mb-1">Admin — Fiches Koté Moris</h1>
       <p className="text-sm text-muted mb-4">
         Outil local uniquement (npm run dev). Les modifications sont écrites directement dans{" "}
         <code>data/businesses.json</code>. Le site en production n&apos;est pas affecté tant que

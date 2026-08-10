@@ -2,14 +2,14 @@ import type { MetadataRoute } from "next";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "Maurice+ · Annuaire de l'île Maurice",
-    short_name: "Maurice+",
+    name: "KOTÉ MORIS · Annuaire de l'île Maurice",
+    short_name: "KOTÉ MORIS",
     description:
-      "Maurice+, tout trouver facilement : activités, restaurants et adresses utiles à Île Maurice.",
+      "KOTÉ MORIS, tout trouver facilement : activités, restaurants et adresses utiles à Île Maurice.",
     start_url: "/",
     display: "standalone",
-    background_color: "#eef4f3",
-    theme_color: "#0e8b84",
+    background_color: "#e9e6dc",
+    theme_color: "#0d7a72",
     lang: "fr",
     icons: [
       {

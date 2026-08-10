@@ -25,7 +25,7 @@ export type SpecialBadgeVariant = "partenaire" | "coup-de-coeur" | "selection" |
 export function SpecialBadge({ variant }: { variant: SpecialBadgeVariant }) {
   if (variant === "partenaire") {
     return (
-      <span className="self-start inline-flex items-center gap-1 px-2.5 py-1 rounded-pill text-white text-xs font-bold bg-accent">
+      <span className="self-start inline-flex items-center gap-1 px-2.5 py-1 rounded-pill text-on-accent text-xs font-bold bg-accent">
         ⭐ Partenaire
       </span>
     );
@@ -46,7 +46,7 @@ export function SpecialBadge({ variant }: { variant: SpecialBadgeVariant }) {
         className="self-start inline-flex items-center gap-1 px-3 py-1.5 rounded-pill text-white text-sm font-extrabold tracking-tight shadow-[0_2px_10px_-2px_rgba(124,58,237,.65)]"
         style={{ background: SELECTION_COLOR }}
       >
-        🏅 Sélection Maurice<sup>+</sup>
+        🏅 Sélection Koté Moris
       </span>
     );
   }

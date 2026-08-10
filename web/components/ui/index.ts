@@ -1,3 +1,4 @@
+export { Logo } from "./Logo";
 export { Tag } from "./Tag";
 export {
   CategoryBadge,

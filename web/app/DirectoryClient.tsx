@@ -2,16 +2,95 @@
 
 import { useCallback, useMemo, useRef, useState } from "react";
 import dynamic from "next/dynamic";
-import type { Business } from "@/lib/types";
+import type { Business, CategoryKey } from "@/lib/types";
 import type { MapBounds } from "./Map";
 import { CATEGORIES, CATEGORY_MAP, SUBCATEGORIES, FAMILIES } from "@/data/categories";
+import { Logo } from "@/components/ui/Logo";
 import { SearchInput } from "@/components/ui/SearchInput";
-import { FilterChip } from "@/components/ui/FilterChip";
 import { CategoryTile } from "@/components/ui/CategoryTile";
 import { BusinessCard } from "@/components/ui/BusinessCard";
 
 const UNCLASSIFIED = "__unclassified__";
 const SIDEBAR_VISIBLE_RUBRIQUES = 5;
+
+// Univers « lifestyle » de l'accueil (couche de présentation au-dessus des rubriques).
+// Chaque univers = un regroupement de catégories entières et/ou de rubriques précises.
+type Umbrella = {
+  key: string;
+  label: string;
+  emoji: string;
+  color: string;
+  categories?: CategoryKey[];
+  rubriques?: string[];
+};
+
+const LIFESTYLE: Umbrella[] = [
+  { key: "manger", label: "Manger", emoji: "🍽️", color: "#e2725b", categories: ["food"] },
+  {
+    key: "sortir",
+    label: "Sortir",
+    emoji: "🍹",
+    color: "#c9457a",
+    rubriques: [
+      "bars", "cafes-terrasses", "rhumeries", "casinos", "cinemas", "bowling",
+      "karting", "escape-game", "culture-patrimoine", "glaciers", "snacks-plage",
+    ],
+    categories: ["evenements"],
+  },
+  {
+    key: "bouger",
+    label: "Bouger",
+    emoji: "🏃",
+    color: "#087e8b",
+    rubriques: [
+      "complexes-sportifs", "gym-fitness", "sports-nautiques", "golf", "tennis-padel",
+      "randonnee-trail", "centres-equestres", "peche", "plages",
+      "parcs-nationaux-cascades", "excursions", "parcs-aventures", "parcs-animaliers",
+      "parcs-botaniques",
+    ],
+  },
+  {
+    key: "shopping",
+    label: "Shopping",
+    emoji: "🛍️",
+    color: "#7c5cf0",
+    rubriques: [
+      "malls", "shopping", "mode-adultes", "mode-enfants", "materiel-sports",
+      "livres", "jeux", "souvenirs", "equipement-maison",
+    ],
+    categories: ["seconde-main"],
+  },
+  {
+    key: "famille",
+    label: "Famille",
+    emoji: "👨‍👩‍👧",
+    color: "#3f7cac",
+    rubriques: ["activites-enfants-famille", "centres-loisirs-animations-enfants", "kids-friendly"],
+    categories: ["education"],
+  },
+  {
+    key: "pratique",
+    label: "Pratique",
+    emoji: "🧰",
+    color: "#4a6572",
+    categories: ["utiles", "immobilier", "business-ttv", "soins-bien-etre", "coaching"],
+  },
+];
+
+// Métadonnées de rubrique (emoji/libellé) par clé, tous univers confondus.
+const RUBRIQUE_MAP: Record<string, { key: string; label: string; emoji: string }> = Object.fromEntries(
+  Object.values(SUBCATEGORIES)
+    .flat()
+    .map((s) => [s.key, s])
+);
+
+// Clés de rubriques couvertes par un univers (catégories entières + rubriques explicites).
+function resolveRubriques(u: Umbrella): string[] {
+  const set = new Set<string>();
+  u.categories?.forEach((cat) => (SUBCATEGORIES[cat] ?? []).forEach((s) => set.add(s.key)));
+  u.rubriques?.forEach((r) => set.add(r));
+  return [...set];
+}
 
 const ZONES: { key: string; label: string; emoji: string }[] = [
   { key: "nord", label: "Nord", emoji: "⬆️" },
@@ -44,6 +123,9 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
   const [mapBounds, setMapBounds] = useState<MapBounds | null>(null);
   // Mobile : forcer la liste à plat malgré l'écran d'accueil par catégories.
   const [browseAll, setBrowseAll] = useState(false);
+  // Mobile : navigation en tuiles. activeUmbrella = univers lifestyle ouvert
+  // (on montre alors ses rubriques en tuiles).
+  const [activeUmbrella, setActiveUmbrella] = useState<string | null>(null);
   const cardRefs = useRef<Record<string, HTMLElement | null>>({});
 
   const onBoundsChange = useCallback((b: MapBounds) => setMapBounds(b), []);
@@ -69,7 +151,14 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
     setActiveZone(null);
     setQuery("");
     setBrowseAll(false);
+    setActiveUmbrella(null);
     setSidebarOpen(false);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
+  // Mobile : ouvrir un univers lifestyle depuis une tuile d'accueil.
+  function openUmbrella(key: string) {
+    setActiveUmbrella(key);
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
@@ -77,6 +166,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
     setActive(key);
     setActiveThemes(new Set());
     setBrowseAll(false);
+    setActiveUmbrella(null);
     // Mobile : garder le tiroir ouvert quand la catégorie a une arborescence
     // de rubriques à dérouler (l'utilisateur peut alors choisir une
     // sous-rubrique). On ne referme que pour les catégories sans arborescence.
@@ -91,6 +181,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
   function toggleTheme(key: string) {
     setActiveThemes((prev) => (prev.has(key) ? new Set() : new Set([key])));
     setSidebarOpen(false);
+    setActiveUmbrella(null);
   }
 
   function toggleSidebarExpand(catKey: string) {
@@ -125,16 +216,6 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
     });
     return c;
   }, [businesses, active, subcategories]);
-
-  // Comptes par catégorie pour l'écran d'accueil mobile (tiennent compte de la zone).
-  const homeCategoryCounts = useMemo(() => {
-    const c: Record<string, number> = {};
-    businesses.forEach((b) => {
-      if (activeZone && b.zone !== activeZone) return;
-      c[b.category] = (c[b.category] || 0) + 1;
-    });
-    return c;
-  }, [businesses, activeZone]);
 
   const zoneCounts = useMemo(() => {
     const c: Record<string, number> = {};
@@ -201,14 +282,43 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
     if (activeThemes.size === 0) return null;
     const key = [...activeThemes][0];
     if (key === UNCLASSIFIED) return { key, emoji: "❔", label: "Non classé" };
-    const theme = subcategories?.find((s) => s.key === key);
+    // Rubrique de la catégorie active, sinon repli global (filtres inter-catégories).
+    const theme = subcategories?.find((s) => s.key === key) ?? RUBRIQUE_MAP[key];
     return theme ? { key: theme.key, emoji: theme.emoji, label: theme.label } : null;
   }, [activeThemes, subcategories]);
 
-  // Écran d'accueil mobile : on présente les catégories plutôt que 2574 résultats
-  // en vrac, tant qu'aucune catégorie/thème/recherche n'est actif.
+  // Comptes globaux par rubrique (toutes catégories, tenant compte de la zone).
+  const themeCountsAll = useMemo(() => {
+    const c: Record<string, number> = {};
+    businesses.forEach((b) => {
+      if (activeZone && b.zone !== activeZone) return;
+      (b.themes ?? []).forEach((t) => {
+        c[t] = (c[t] || 0) + 1;
+      });
+    });
+    return c;
+  }, [businesses, activeZone]);
+
+  // Nombre de fiches (distinctes) par univers lifestyle, tenant compte de la zone.
+  const umbrellaCounts = useMemo(() => {
+    const sets = LIFESTYLE.map((u) => ({ key: u.key, keys: new Set(resolveRubriques(u)) }));
+    const counts: Record<string, number> = {};
+    businesses.forEach((b) => {
+      if (activeZone && b.zone !== activeZone) return;
+      const themes = b.themes ?? [];
+      sets.forEach(({ key, keys }) => {
+        if (themes.some((t) => keys.has(t))) counts[key] = (counts[key] || 0) + 1;
+      });
+    });
+    return counts;
+  }, [businesses, activeZone]);
+
+  // Écran d'accueil mobile : univers lifestyle plutôt que 2574 résultats en vrac.
   const showHome =
     active === "all" && activeThemes.size === 0 && query.trim() === "" && !browseAll;
+
+  // Mobile : on montre des tuiles (accueil / rubriques d'un univers) plutôt que la liste.
+  const mobileTiles = showHome;
 
   const breadcrumb =
     activeThemeLabel ??
@@ -330,6 +440,38 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
 
   const sidebarContent = (
     <>
+      {/* Zone : colonne verticale (activable dans la sidebar / le tiroir) */}
+      <div className="px-3 pt-3 pb-2.5 border-b border-border">
+        <div className="text-[11px] font-bold uppercase tracking-wide text-muted/80 mb-1.5 px-1">
+          📍 Zone
+        </div>
+        <div className="flex flex-col gap-0.5">
+          <button
+            onClick={() => setActiveZone(null)}
+            aria-pressed={activeZone === null}
+            className={`w-full flex items-center justify-between gap-2 px-3 py-1.5 rounded-lg text-[13px] font-medium text-left transition-colors ${
+              activeZone === null ? "bg-primary text-white" : "text-ink hover:bg-surface-2"
+            }`}
+          >
+            <span>📍 Toute l&apos;île</span>
+          </button>
+          {ZONES.map((z) => (
+            <button
+              key={z.key}
+              onClick={() => toggleZone(z.key)}
+              aria-pressed={activeZone === z.key}
+              className={`w-full flex items-center justify-between gap-2 px-3 py-1.5 rounded-lg text-[13px] font-medium text-left transition-colors ${
+                activeZone === z.key ? "bg-primary text-white" : "text-ink hover:bg-surface-2"
+              }`}
+            >
+              <span>
+                {z.emoji} {z.label}
+              </span>
+              <span className="text-[11px] font-bold opacity-70">{zoneCounts[z.key] || 0}</span>
+            </button>
+          ))}
+        </div>
+      </div>
       {activeThemeLabel && (
         <div className="sticky top-0 z-10 bg-surface border-b border-border px-3 py-2.5 mb-1.5">
           <div className="flex items-center justify-between gap-2 bg-primary-tint text-primary-deep rounded-lg px-2.5 py-1.5">
@@ -401,21 +543,16 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
 
   return (
     <div className="app min-h-screen flex flex-col">
-      <header className="sticky top-0 z-30 border-b border-border bg-bg/90 backdrop-blur">
-        <div className="max-w-[1400px] mx-auto px-5 h-[56px] flex items-center">
+      {/* Bandeau d'en-tête teal : logo + recherche */}
+      <header className="sticky top-0 z-30 bg-band text-on-band shadow-sm">
+        <div className="max-w-[1400px] mx-auto px-5 pt-3 pb-3.5 flex flex-col gap-3">
           <button
             onClick={goHome}
             aria-label="Retour à l'accueil"
-            className="flex items-center gap-2 font-serif font-semibold text-xl tracking-tight rounded-lg -ml-1 px-1 py-1 hover:opacity-80 active:scale-[.98] transition"
+            className="self-start rounded-lg -ml-1 px-1 py-1 hover:opacity-90 active:scale-[.98] transition"
           >
-            <span className="w-3 h-3 rounded-full bg-accent shadow-[0_0_0_4px_color-mix(in_srgb,var(--accent)_22%,transparent)]" />
-            Maurice<sup className="text-accent">+</sup>
+            <Logo />
           </button>
-        </div>
-      </header>
-
-      <div className="border-b border-border bg-bg/90 backdrop-blur">
-        <div className="max-w-[1400px] mx-auto px-5 py-3.5 flex flex-col gap-3">
           <div className="max-w-[640px]">
             <SearchInput
               value={query}
@@ -423,24 +560,8 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
               placeholder="Rechercher une activité, un lieu, un nom…"
             />
           </div>
-          <div className="flex flex-wrap items-center gap-2">
-            <span className="text-body font-semibold text-muted shrink-0">📍 Zone :</span>
-            <FilterChip active={activeZone === null} onClick={() => setActiveZone(null)}>
-              📍 Toute l&apos;île
-            </FilterChip>
-            {ZONES.map((z) => (
-              <FilterChip
-                key={z.key}
-                active={activeZone === z.key}
-                onClick={() => toggleZone(z.key)}
-              >
-                {z.emoji} {z.label}
-                <span className="text-meta font-bold opacity-70">{zoneCounts[z.key] || 0}</span>
-              </FilterChip>
-            ))}
-          </div>
         </div>
-      </div>
+      </header>
 
       <div className="flex-1 max-w-[1400px] w-full mx-auto lg:flex min-h-0">
         {/* Sidebar desktop */}
@@ -477,33 +598,68 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
         )}
 
         <div className="flex-1 min-w-0 px-4 lg:px-5 py-3">
-          {/* Écran d'accueil mobile : catégories en tuiles */}
-          {showHome && (
-            <div className="lg:hidden">
-              <p className="text-[13px] font-semibold text-muted mb-2.5">
-                Explorez par catégorie
-              </p>
+          {/* Accueil mobile : univers lifestyle */}
+          {showHome && activeUmbrella === null && (
+            <div className="lg:hidden pb-16">
+              <p className="text-[13px] font-semibold text-muted mb-2.5">Que cherchez-vous ?</p>
               <div className="grid grid-cols-2 gap-2.5">
-                {CATEGORIES.filter((c) => (homeCategoryCounts[c.key] || 0) > 0).map((c) => (
+                {LIFESTYLE.filter((u) => (umbrellaCounts[u.key] || 0) > 0).map((u) => (
                   <CategoryTile
-                    key={c.key}
-                    category={c.key}
-                    count={homeCategoryCounts[c.key] || 0}
-                    onClick={() => selectCategory(c.key)}
+                    key={u.key}
+                    emoji={u.emoji}
+                    label={u.label}
+                    count={umbrellaCounts[u.key] || 0}
+                    onClick={() => openUmbrella(u.key)}
                   />
                 ))}
               </div>
               <button
                 onClick={() => setBrowseAll(true)}
-                className="w-full mt-3 mb-16 py-2.5 rounded-xl border border-border bg-surface text-[13.5px] font-semibold text-primary-deep active:scale-[.99] transition-transform"
+                className="w-full mt-3 py-2.5 rounded-xl border border-border bg-surface text-[13.5px] font-semibold text-primary-deep active:scale-[.99] transition-transform"
               >
                 Voir toutes les adresses ({rows.length})
               </button>
             </div>
           )}
 
+          {/* Rubriques d'un univers en tuiles */}
+          {showHome &&
+            activeUmbrella !== null &&
+            (() => {
+              const u = LIFESTYLE.find((x) => x.key === activeUmbrella);
+              if (!u) return null;
+              const rubs = resolveRubriques(u)
+                .map((k) => RUBRIQUE_MAP[k])
+                .filter((r) => r && (themeCountsAll[r.key] || 0) > 0)
+                .sort((a, b) => (themeCountsAll[b.key] || 0) - (themeCountsAll[a.key] || 0));
+              return (
+                <div className="lg:hidden pb-16">
+                  <button
+                    onClick={() => setActiveUmbrella(null)}
+                    className="inline-flex items-center gap-1.5 text-[13px] font-semibold text-primary-deep mb-2.5 active:scale-[.98]"
+                  >
+                    ← Accueil
+                  </button>
+                  <p className="text-[15px] font-semibold mb-2.5">
+                    {u.emoji} {u.label}
+                  </p>
+                  <div className="grid grid-cols-2 gap-2.5">
+                    {rubs.map((r) => (
+                      <CategoryTile
+                        key={r.key}
+                        emoji={r.emoji}
+                        label={r.label}
+                        count={themeCountsAll[r.key] || 0}
+                        onClick={() => toggleTheme(r.key)}
+                      />
+                    ))}
+                  </div>
+                </div>
+              );
+            })()}
+
           {/* Barre de résultats */}
-          <div className={`items-center justify-between gap-3 flex-wrap py-2 border-b border-border mb-3 ${showHome ? "hidden lg:flex" : "flex"}`}>
+          <div className={`items-center justify-between gap-3 flex-wrap py-2 border-b border-border mb-3 ${mobileTiles ? "hidden lg:flex" : "flex"}`}>
             <div className="flex items-center gap-2 min-w-0">
               <button
                 onClick={() => setSidebarOpen(true)}
@@ -538,7 +694,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
             </div>
           </div>
 
-          <div className={`lg:flex lg:gap-4 lg:h-[calc(100vh-190px)] ${showHome ? "hidden lg:flex" : ""}`}>
+          <div className={`lg:flex lg:gap-4 lg:h-[calc(100vh-190px)] ${mobileTiles ? "hidden lg:flex" : ""}`}>
             {/* Liste */}
             <div
               className={`lg:w-[56%] lg:overflow-y-auto lg:pr-1 ${

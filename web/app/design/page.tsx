@@ -4,6 +4,7 @@ import { useState, type ReactNode } from "react";
 import type { Business } from "@/lib/types";
 import { CATEGORIES } from "@/data/categories";
 import {
+  Logo,
   Tag,
   CategoryBadge,
   SpecialBadge,
@@ -16,16 +17,16 @@ import {
 
 // Jetons de couleur documentés (valeurs = mode clair ; le mode sombre bascule via CSS).
 const COLOR_TOKENS: { name: string; var: string; hex: string; onDark?: boolean }[] = [
-  { name: "bg", var: "--bg", hex: "#e9e6dc" },
+  { name: "bg", var: "--bg", hex: "#ede6d5" },
   { name: "surface", var: "--surface", hex: "#ffffff" },
-  { name: "surface-2", var: "--surface-2", hex: "#f2efe7" },
-  { name: "ink", var: "--ink", hex: "#16302e", onDark: true },
-  { name: "muted", var: "--muted", hex: "#62736e", onDark: true },
-  { name: "border", var: "--border", hex: "#ddd8ca" },
-  { name: "primary", var: "--primary", hex: "#0d7a72", onDark: true },
-  { name: "primary-deep", var: "--primary-deep", hex: "#0a5f58", onDark: true },
-  { name: "primary-tint", var: "--primary-tint", hex: "#dcebe7" },
-  { name: "accent", var: "--accent", hex: "#db6a48", onDark: true },
+  { name: "surface-2", var: "--surface-2", hex: "#f7f1e3" },
+  { name: "ink", var: "--ink", hex: "#123a3f", onDark: true },
+  { name: "muted", var: "--muted", hex: "#5f7377", onDark: true },
+  { name: "border", var: "--border", hex: "#e2dbc9" },
+  { name: "primary", var: "--primary", hex: "#087e8b", onDark: true },
+  { name: "primary-deep", var: "--primary-deep", hex: "#066470", onDark: true },
+  { name: "primary-tint", var: "--primary-tint", hex: "#d7ede9" },
+  { name: "accent", var: "--accent", hex: "#f4c95d" },
 ];
 
 // Fiches d'exemple couvrant les variantes de BusinessCard.
@@ -107,9 +108,8 @@ export default function DesignSystemPage() {
   return (
     <div className="max-w-[900px] mx-auto px-5 py-10">
       <header className="mb-10">
-        <div className="flex items-center gap-2 font-bold text-lg tracking-tight mb-1">
-          <span className="w-3 h-3 rounded-full bg-accent shadow-[0_0_0_4px_color-mix(in_srgb,var(--accent)_22%,transparent)]" />
-          Maurice<sup className="text-accent">+</sup>
+        <div className="mb-1 text-ink">
+          <Logo />
         </div>
         <h1 className="text-3xl font-extrabold tracking-tight">Design System</h1>
         <p className="text-muted mt-1">

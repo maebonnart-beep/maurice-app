@@ -19,17 +19,17 @@ const fraunces = Fraunces({
 });
 
 export const metadata: Metadata = {
-  title: "Maurice+ · Activités",
-  description: "Maurice+, tout trouver facilement : activités, restaurants et adresses utiles à Île Maurice.",
+  title: "KOTÉ MORIS · Activités",
+  description: "KOTÉ MORIS, tout trouver facilement : activités, restaurants et adresses utiles à Île Maurice.",
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
-    title: "Maurice+",
+    title: "KOTÉ MORIS",
   },
 };
 
 export const viewport: Viewport = {
-  themeColor: "#0e8b84",
+  themeColor: "#0d7a72",
   width: "device-width",
   initialScale: 1,
 };
