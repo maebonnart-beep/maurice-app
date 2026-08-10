@@ -64,6 +64,7 @@ const SAMPLES: Business[] = [
     isAgency: true,
     badge: "partenaire",
     duration: "3h",
+    eventPeriod: "15–17 août 2026",
   },
   {
     id: "demo-3",

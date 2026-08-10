@@ -105,6 +105,11 @@ export function BusinessCard({
         </div>
       )}
       <div className="flex-1 min-w-0 flex flex-col gap-2">
+        {b.eventPeriod && (
+          <span className="self-start inline-flex items-center gap-1.5 px-3 py-1 rounded-pill bg-accent text-on-accent text-[12.5px] font-extrabold tracking-tight">
+            📅 {b.eventPeriod}
+          </span>
+        )}
         <div className="flex flex-wrap items-center gap-1.5">
           <CategoryBadge category={b.category} />
           {b.badge === "partenaire" && <SpecialBadge variant="partenaire" />}

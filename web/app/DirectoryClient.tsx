@@ -600,9 +600,9 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
         <div className="flex-1 min-w-0 px-4 lg:px-5 py-3">
           {/* Accueil mobile : univers lifestyle */}
           {showHome && activeUmbrella === null && (
-            <div className="lg:hidden pb-16">
+            <div className="pb-16">
               <p className="text-[13px] font-semibold text-muted mb-2.5">Que cherchez-vous ?</p>
-              <div className="grid grid-cols-2 gap-2.5">
+              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2.5">
                 {LIFESTYLE.filter((u) => (umbrellaCounts[u.key] || 0) > 0).map((u) => (
                   <CategoryTile
                     key={u.key}
@@ -633,7 +633,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                 .filter((r) => r && (themeCountsAll[r.key] || 0) > 0)
                 .sort((a, b) => (themeCountsAll[b.key] || 0) - (themeCountsAll[a.key] || 0));
               return (
-                <div className="lg:hidden pb-16">
+                <div className="pb-16">
                   <button
                     onClick={() => setActiveUmbrella(null)}
                     className="inline-flex items-center gap-1.5 text-[13px] font-semibold text-primary-deep mb-2.5 active:scale-[.98]"
@@ -643,7 +643,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                   <p className="text-[15px] font-semibold mb-2.5">
                     {u.emoji} {u.label}
                   </p>
-                  <div className="grid grid-cols-2 gap-2.5">
+                  <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2.5">
                     {rubs.map((r) => (
                       <CategoryTile
                         key={r.key}
@@ -659,7 +659,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
             })()}
 
           {/* Barre de résultats */}
-          <div className={`items-center justify-between gap-3 flex-wrap py-2 border-b border-border mb-3 ${mobileTiles ? "hidden lg:flex" : "flex"}`}>
+          <div className={`items-center justify-between gap-3 flex-wrap py-2 border-b border-border mb-3 ${mobileTiles ? "hidden" : "flex"}`}>
             <div className="flex items-center gap-2 min-w-0">
               <button
                 onClick={() => setSidebarOpen(true)}
@@ -694,7 +694,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
             </div>
           </div>
 
-          <div className={`lg:flex lg:gap-4 lg:h-[calc(100vh-190px)] ${mobileTiles ? "hidden lg:flex" : ""}`}>
+          <div className={`lg:gap-4 lg:h-[calc(100vh-190px)] ${mobileTiles ? "hidden" : "lg:flex"}`}>
             {/* Liste */}
             <div
               className={`lg:w-[56%] lg:overflow-y-auto lg:pr-1 ${

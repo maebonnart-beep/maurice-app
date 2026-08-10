@@ -49,6 +49,8 @@ export type Business = {
   whatsapp?: string;
   /** Premium perk: short highlighted promo line. */
   promoText?: string;
+  /** Période/date d'un événement, texte libre ex: "15-17 août 2026" ou "Tous les samedis". Rubrique Événements — mise en avant en bandeau sur la fiche. */
+  eventPeriod?: string;
   /** Descriptif rapide (1-2 phrases). Surtout utilisé pour parcs-aventures. */
   description?: string;
   /** Prix d'entrée en texte libre, ex: "Rs 450 adulte / Rs 250 enfant". Parcs-aventures, parcs-animaliers. */
