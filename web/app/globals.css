@@ -1,19 +1,20 @@
 @import "tailwindcss";
 
 :root {
-  --bg: #eef4f3;
+  /* Direction « Récif » — fond sable profond, cartes blanches qui ressortent. */
+  --bg: #e9e6dc;
   --surface: #ffffff;
-  --surface-2: #f4f8f7;
-  --ink: #0d2b2a;
-  --muted: #5c726f;
-  --border: #d9e6e3;
-  --primary: #0e8b84;
-  --primary-deep: #0a6d67;
-  --primary-tint: #e2f1ef;
-  --accent: #ef6a4c;
+  --surface-2: #f2efe7;
+  --ink: #16302e;
+  --muted: #62736e;
+  --border: #ddd8ca;
+  --primary: #0d7a72;
+  --primary-deep: #0a5f58;
+  --primary-tint: #dcebe7;
+  --accent: #db6a48;
 
   /* Rayon historique (conservé pour compat). */
-  --radius: 16px;
+  --radius: 12px;
 
   /* Sources d'élévation — bascule en mode sombre (cf. media query).
      Nom distinct des jetons --shadow-* du thème pour éviter l'auto-référence. */
@@ -33,7 +34,7 @@
     --primary: #2bb3aa;
     --primary-deep: #56c9c0;
     --primary-tint: #123330;
-    --accent: #ff7d5e;
+    --accent: #ef7d5b;
 
     /* Ombres plus profondes sur fond sombre pour rester perceptibles. */
     --elev-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
@@ -59,11 +60,14 @@
   --font-sans: var(--font-plus-jakarta, "Segoe UI"), system-ui, -apple-system,
     "Helvetica Neue", Arial, sans-serif;
 
+  /* Serif éditorial (Récif) → utilitaire font-serif, réservé aux noms de lieux / titres. */
+  --font-serif: var(--font-fraunces, Georgia), "Times New Roman", serif;
+
   /* Rayons (invariants) → utilitaires rounded-pill / rounded-btn / rounded-card / rounded-tile */
   --radius-pill: 999px;
-  --radius-btn: 10px;
-  --radius-card: 16px;
-  --radius-tile: 16px;
+  --radius-btn: 11px;
+  --radius-card: 12px;
+  --radius-tile: 12px;
 
   /* Échelle typographique sémantique → text-meta / text-caption / text-body / text-title */
   --text-meta: 0.6875rem; /* 11px — badges, compteurs */

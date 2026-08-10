@@ -1,13 +1,20 @@
 import type { Metadata, Viewport } from "next";
-import { Plus_Jakarta_Sans } from "next/font/google";
+import { Plus_Jakarta_Sans, Fraunces } from "next/font/google";
 import "./globals.css";
 import RegisterServiceWorker from "./RegisterServiceWorker";
 
-// Police du design system, auto-hébergée par next/font. Exposée en variable CSS
-// (--font-plus-jakarta) consommée par --font-sans dans globals.css.
+// Polices du design system, auto-hébergées par next/font. Exposées en variables CSS
+// consommées par --font-sans / --font-serif dans globals.css.
+// Plus Jakarta Sans : interface & texte courant. Fraunces (serif) : noms de lieux & titres.
 const plusJakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
   variable: "--font-plus-jakarta",
+  display: "swap",
+});
+
+const fraunces = Fraunces({
+  subsets: ["latin"],
+  variable: "--font-fraunces",
   display: "swap",
 });
 
@@ -33,7 +40,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fr" className={`h-full antialiased ${plusJakarta.variable}`}>
+    <html lang="fr" className={`h-full antialiased ${plusJakarta.variable} ${fraunces.variable}`}>
       <body className="min-h-full flex flex-col">
         {children}
         <RegisterServiceWorker />

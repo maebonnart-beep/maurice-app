@@ -124,7 +124,9 @@ export function BusinessCard({
           )}
           {b.takeaway && <Tag icon="🥡">À emporter</Tag>}
         </div>
-        <h3 className="m-0 text-title leading-[1.25] tracking-tight">{displayName(b.name)}</h3>
+        <h3 className="m-0 font-serif text-[17px] font-semibold leading-[1.2] tracking-[-.005em]">
+          {displayName(b.name)}
+        </h3>
         <p className="m-0 text-muted text-body leading-[1.5]">📍 {displayCity(b.address)}</p>
         {b.description && (
           <p className="m-0 text-ink text-body leading-[1.5] -mt-1">{b.description}</p>

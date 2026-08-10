@@ -406,7 +406,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
           <button
             onClick={goHome}
             aria-label="Retour à l'accueil"
-            className="flex items-center gap-2 font-bold text-lg tracking-tight rounded-lg -ml-1 px-1 py-1 hover:opacity-80 active:scale-[.98] transition"
+            className="flex items-center gap-2 font-serif font-semibold text-xl tracking-tight rounded-lg -ml-1 px-1 py-1 hover:opacity-80 active:scale-[.98] transition"
           >
             <span className="w-3 h-3 rounded-full bg-accent shadow-[0_0_0_4px_color-mix(in_srgb,var(--accent)_22%,transparent)]" />
             Maurice<sup className="text-accent">+</sup>
@@ -423,7 +423,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
               placeholder="Rechercher une activité, un lieu, un nom…"
             />
           </div>
-          <div className="flex flex-nowrap lg:flex-wrap items-center gap-2 overflow-x-auto lg:overflow-visible -mx-5 px-5 lg:mx-0 lg:px-0 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+          <div className="flex flex-wrap items-center gap-2">
             <span className="text-body font-semibold text-muted shrink-0">📍 Zone :</span>
             <FilterChip active={activeZone === null} onClick={() => setActiveZone(null)}>
               📍 Toute l&apos;île

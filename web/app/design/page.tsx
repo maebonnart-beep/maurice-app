@@ -16,16 +16,16 @@ import {
 
 // Jetons de couleur documentés (valeurs = mode clair ; le mode sombre bascule via CSS).
 const COLOR_TOKENS: { name: string; var: string; hex: string; onDark?: boolean }[] = [
-  { name: "bg", var: "--bg", hex: "#eef4f3" },
+  { name: "bg", var: "--bg", hex: "#e9e6dc" },
   { name: "surface", var: "--surface", hex: "#ffffff" },
-  { name: "surface-2", var: "--surface-2", hex: "#f4f8f7" },
-  { name: "ink", var: "--ink", hex: "#0d2b2a", onDark: true },
-  { name: "muted", var: "--muted", hex: "#5c726f", onDark: true },
-  { name: "border", var: "--border", hex: "#d9e6e3" },
-  { name: "primary", var: "--primary", hex: "#0e8b84", onDark: true },
-  { name: "primary-deep", var: "--primary-deep", hex: "#0a6d67", onDark: true },
-  { name: "primary-tint", var: "--primary-tint", hex: "#e2f1ef" },
-  { name: "accent", var: "--accent", hex: "#ef6a4c", onDark: true },
+  { name: "surface-2", var: "--surface-2", hex: "#f2efe7" },
+  { name: "ink", var: "--ink", hex: "#16302e", onDark: true },
+  { name: "muted", var: "--muted", hex: "#62736e", onDark: true },
+  { name: "border", var: "--border", hex: "#ddd8ca" },
+  { name: "primary", var: "--primary", hex: "#0d7a72", onDark: true },
+  { name: "primary-deep", var: "--primary-deep", hex: "#0a5f58", onDark: true },
+  { name: "primary-tint", var: "--primary-tint", hex: "#dcebe7" },
+  { name: "accent", var: "--accent", hex: "#db6a48", onDark: true },
 ];
 
 // Fiches d'exemple couvrant les variantes de BusinessCard.
@@ -132,9 +132,10 @@ export default function DesignSystemPage() {
         </div>
       </Section>
 
-      <Section title="Typographie" hint="Police Plus Jakarta Sans (next/font). Échelle sémantique.">
+      <Section title="Typographie" hint="Fraunces (serif) pour les noms de lieux ; Plus Jakarta Sans pour l'UI. Échelle sémantique.">
         <div className="rounded-card border border-border bg-surface p-5 flex flex-col gap-2">
-          <p className="text-3xl font-extrabold tracking-tight">Titre — Plus Jakarta Sans</p>
+          <p className="font-serif text-3xl font-semibold tracking-tight">Blue Safari Catamaran — Fraunces</p>
+          <p className="text-lg font-bold tracking-tight">Interface & texte — Plus Jakarta Sans</p>
           <p className="text-title font-bold">text-title · 16px · titres de fiche</p>
           <p className="text-body">text-body · 13px · texte courant &amp; boutons</p>
           <p className="text-caption text-muted">text-caption · 12.5px · horaires, mentions</p>
