@@ -1,54 +1,15 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useId, useRef, useState } from "react";
 import { MapContainer, TileLayer, Marker, Popup, useMap, useMapEvents } from "react-leaflet";
 import L from "leaflet";
 import type { Marker as LeafletMarker } from "leaflet";
 import type { Business } from "@/lib/types";
 import { CATEGORY_MAP, SUBCATEGORIES } from "@/data/categories";
+import { tel, webLabel, whatsappLink, displayName, displayCity, whatsappNumber } from "@/lib/format";
 import "leaflet/dist/leaflet.css";
 
 const GRAND_BAIE: [number, number] = [-20.0064, 57.5802];
-
-function tel(phone: string) {
-  return "tel:" + phone.replace(/[^\d+]/g, "");
-}
-
-function webLabel(url: string) {
-  return url.replace(/^https?:\/\//, "").replace(/^www\./, "").replace(/\/.*$/, "");
-}
-
-function whatsappLink(phone: string) {
-  return "https://wa.me/" + phone.replace(/[^\d]/g, "");
-}
-
-function displayName(name: string): string {
-  return name.replace(/\p{L}+/gu, (word) => {
-    if (word.length > 1 && word === word.toUpperCase() && word !== word.toLowerCase()) {
-      return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
-    }
-    return word;
-  });
-}
-
-function displayCity(address: string): string {
-  const parts = address
-    .split(",")
-    .map((s) => s.trim())
-    .filter((s) => s && !/^-?\d{1,3}\.\d+$/.test(s));
-  const last = parts[parts.length - 1] || address;
-  return last.replace(/\s+\d{4,6}$/, "").trim();
-}
-
-// Les numéros mobiles mauriciens (+230 5xxx xxxx) sont presque toujours
-// joignables sur WhatsApp, contrairement aux lignes fixes.
-const MU_MOBILE_RE = /\+230\s?5\d{3}\s?\d{4}/;
-
-function whatsappNumber(b: Business): string | undefined {
-  if (b.whatsapp) return b.whatsapp;
-  if (b.phone && MU_MOBILE_RE.test(b.phone)) return b.phone;
-  return undefined;
-}
 
 // Picto propre à la rubrique (thème) plutôt qu'un simple point de couleur.
 function markerEmoji(b: Business): string {
@@ -159,8 +120,22 @@ export default function Map({
   const markersRef = useRef<Record<string, LeafletMarker>>({});
   const mappable = businesses.filter((b) => b.lat !== undefined && b.lng !== undefined);
 
+  // Montage différé au 1er effet client : évite l'erreur Leaflet « Map container
+  // is being reused » causée par le double-montage de React StrictMode en dev
+  // (react-leaflet crée la carte dans un ref callback pendant le rendu).
+  const [ready, setReady] = useState(false);
+  useEffect(() => setReady(true), []);
+  // Clé stable propre à cette instance : garantit un conteneur DOM neuf si la
+  // carte est un jour réellement démontée/remontée.
+  const mapKey = useId();
+
+  if (!ready) {
+    return <div style={{ height: "100%", width: "100%" }} className="bg-surface-2" />;
+  }
+
   return (
     <MapContainer
+      key={mapKey}
       center={GRAND_BAIE}
       zoom={13}
       scrollWheelZoom

@@ -1,6 +1,15 @@
 import type { Metadata, Viewport } from "next";
+import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import RegisterServiceWorker from "./RegisterServiceWorker";
+
+// Police du design system, auto-hébergée par next/font. Exposée en variable CSS
+// (--font-plus-jakarta) consommée par --font-sans dans globals.css.
+const plusJakarta = Plus_Jakarta_Sans({
+  subsets: ["latin"],
+  variable: "--font-plus-jakarta",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Maurice+ · Activités",
@@ -24,7 +33,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fr" className="h-full antialiased">
+    <html lang="fr" className={`h-full antialiased ${plusJakarta.variable}`}>
       <body className="min-h-full flex flex-col">
         {children}
         <RegisterServiceWorker />
