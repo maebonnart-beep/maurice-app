@@ -13,12 +13,12 @@ export function CategoryTile({
   category,
   emoji,
   label,
-  count,
   onClick,
 }: {
   category?: CategoryKey;
   emoji?: string;
   label?: string;
+  /** Conservé pour compat des appels ; le nombre n'est plus affiché sur la tuile. */
   count?: number;
   onClick: () => void;
 }) {
@@ -32,20 +32,15 @@ export function CategoryTile({
   return (
     <button
       onClick={onClick}
-      className="flex flex-col gap-2 p-3.5 rounded-tile border border-border bg-surface text-left shadow-sm active:scale-[.98] transition-transform"
+      className="flex flex-col items-center gap-2.5 p-4 rounded-tile border border-border bg-surface text-center shadow-sm active:scale-[.98] transition-transform"
     >
       <span
-        className="w-11 h-11 rounded-xl flex items-center justify-center text-[22px]"
+        className="w-16 h-16 rounded-2xl flex items-center justify-center text-[34px]"
         style={{ background: iconBg }}
       >
         {displayEmoji}
       </span>
       <span className="text-[14px] font-semibold leading-tight text-ink">{displayLabel}</span>
-      {count !== undefined && (
-        <span className="text-caption text-muted font-medium">
-          {count} adresse{count > 1 ? "s" : ""}
-        </span>
-      )}
     </button>
   );
 }

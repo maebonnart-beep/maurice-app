@@ -5,12 +5,14 @@
 export function Logo({ size = 52, light = false }: { size?: number; light?: boolean }) {
   return (
     <span className="inline-flex items-center gap-2.5">
+      {/* Icône de l'appli (poulpe dans le carré beige) : ressort sur le bandeau teal,
+          contrairement au poulpe détouré de même couleur que le fond. */}
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
-        src="/octopus-emblem.png"
+        src="/icon-192.png"
         alt="Koté Moris"
-        className="shrink-0 object-contain"
-        style={{ height: size, width: "auto" }}
+        className="shrink-0 object-cover rounded-xl shadow-sm"
+        style={{ height: size, width: size }}
       />
       <span className="flex flex-col leading-none">
         <span className={`font-serif font-semibold text-xl tracking-tight ${light ? "text-on-band" : "text-ink"}`}>
