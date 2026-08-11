@@ -4,14 +4,22 @@ import { useCallback, useMemo, useRef, useState } from "react";
 import dynamic from "next/dynamic";
 import type { Business, CategoryKey } from "@/lib/types";
 import type { MapBounds } from "./Map";
-import { CATEGORIES, CATEGORY_MAP, SUBCATEGORIES, FAMILIES } from "@/data/categories";
+import { CATEGORIES, CATEGORY_MAP, SUBCATEGORIES, FAMILIES, PRICE_RANGES } from "@/data/categories";
 import type { Family, Subgroup } from "@/data/categories";
 import { Logo } from "@/components/ui/Logo";
 import { SearchInput } from "@/components/ui/SearchInput";
 import { CategoryTile } from "@/components/ui/CategoryTile";
 import { BusinessCard } from "@/components/ui/BusinessCard";
 import { BusinessDetail } from "@/components/ui/BusinessDetail";
+import { FilterChip } from "@/components/ui/FilterChip";
 import { iconForKey, MapPin } from "@/lib/icons";
+
+// Facettes de filtrage propres aux restaurants (rubrique "restaurants").
+const RESTO_CUISINES = [
+  "mauricienne", "fruits-de-mer", "indienne", "asiatique", "sushis",
+  "europeenne", "italien", "grillades", "vegetarien",
+];
+const RESTO_ATTRS = ["tables-exception", "plus-belles-vues", "frequente-locaux", "kids-friendly"];
 
 const UNCLASSIFIED = "__unclassified__";
 const SIDEBAR_VISIBLE_RUBRIQUES = 5;
@@ -142,6 +150,10 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
   const [active, setActive] = useState<string>("all");
   const [activeThemes, setActiveThemes] = useState<Set<string>>(new Set());
   const [activeZone, setActiveZone] = useState<string | null>(null);
+  // Facettes restaurants (cuisine / prix / ambiance) — multi-sélection.
+  const [restoCuisines, setRestoCuisines] = useState<Set<string>>(new Set());
+  const [restoPrices, setRestoPrices] = useState<Set<string>>(new Set());
+  const [restoAttrs, setRestoAttrs] = useState<Set<string>>(new Set());
   const [expandedInSidebar, setExpandedInSidebar] = useState<Set<string>>(new Set());
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [resultsView, setResultsView] = useState<"liste" | "carte">("liste");
@@ -173,6 +185,22 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
   );
   const ungroupedSubcategories = subcategories?.filter((s) => !familyChildKeys.has(s.key)) ?? [];
 
+  function resetRestoFacets() {
+    setRestoCuisines(new Set());
+    setRestoPrices(new Set());
+    setRestoAttrs(new Set());
+  }
+
+  // Bascule une valeur dans un Set d'état (multi-sélection).
+  function toggleInSet(setter: React.Dispatch<React.SetStateAction<Set<string>>>, key: string) {
+    setter((prev) => {
+      const next = new Set(prev);
+      if (next.has(key)) next.delete(key);
+      else next.add(key);
+      return next;
+    });
+  }
+
   // Retour à l'écran d'accueil : réinitialise tous les filtres.
   function goHome() {
     setActive("all");
@@ -182,6 +210,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
     setBrowseAll(false);
     setNavStack([]);
     setSidebarOpen(false);
+    resetRestoFacets();
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
@@ -210,6 +239,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
   function toggleTheme(key: string) {
     setActiveThemes((prev) => (prev.has(key) ? new Set() : new Set([key])));
     setSidebarOpen(false);
+    resetRestoFacets(); // les facettes ne valent que pour la vue restaurants courante
     // On conserve la pile de navigation en tuiles : le bouton « Retour » de la
     // page de résultats ramène ainsi à la grille de tuiles du bon niveau.
   }
@@ -275,6 +305,9 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
     return c;
   }, [businesses, active]);
 
+  // Vue restaurants → on propose les facettes cuisine / prix / ambiance.
+  const isRestoView = activeThemes.has("restaurants");
+
   const rows = useMemo(() => {
     const q = query.trim().toLowerCase();
     return businesses
@@ -288,13 +321,44 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
             themes.some((t) => activeThemes.has(t));
           if (!matches) return false;
         }
+        // Facettes restaurants : cuisine (OU), prix (OU), ambiance (ET).
+        if (isRestoView) {
+          const themes = b.themes || [];
+          if (restoCuisines.size > 0 && !themes.some((t) => restoCuisines.has(t))) return false;
+          if (restoPrices.size > 0 && !(b.priceRange && restoPrices.has(b.priceRange))) return false;
+          if (restoAttrs.size > 0 && ![...restoAttrs].every((a) => themes.includes(a))) return false;
+        }
         if (!q) return true;
         return (b.name + " " + b.address + " " + CATEGORY_MAP[b.category].label)
           .toLowerCase()
           .includes(q);
       })
       .sort((a, b) => (b.tier === "premium" ? 1 : 0) - (a.tier === "premium" ? 1 : 0));
-  }, [businesses, query, active, activeThemes, activeZone]);
+  }, [businesses, query, active, activeThemes, activeZone, isRestoView, restoCuisines, restoPrices, restoAttrs]);
+
+  // Base restaurants (rubrique + zone + recherche, hors facettes) pour les compteurs de chips.
+  const restoFacetCounts = useMemo(() => {
+    const cuisine: Record<string, number> = {};
+    const price: Record<string, number> = {};
+    const attr: Record<string, number> = {};
+    if (!isRestoView) return { cuisine, price, attr, total: 0 };
+    const q = query.trim().toLowerCase();
+    let total = 0;
+    businesses.forEach((b) => {
+      if (!(b.themes || []).includes("restaurants")) return;
+      if (activeZone && b.zone !== activeZone) return;
+      if (q && !(b.name + " " + b.address).toLowerCase().includes(q)) return;
+      total++;
+      (b.themes || []).forEach((t) => {
+        if (RESTO_CUISINES.includes(t)) cuisine[t] = (cuisine[t] || 0) + 1;
+        if (RESTO_ATTRS.includes(t)) attr[t] = (attr[t] || 0) + 1;
+      });
+      if (b.priceRange) price[b.priceRange] = (price[b.priceRange] || 0) + 1;
+    });
+    return { cuisine, price, attr, total };
+  }, [businesses, isRestoView, activeZone, query]);
+
+  const restoFacetActive = restoCuisines.size + restoPrices.size + restoAttrs.size > 0;
 
   // Cartes affichées : limitées à la zone visible de la carte si le filtre est actif.
   const visibleRows = useMemo(() => {
@@ -667,8 +731,6 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
     </>
   );
 
-  // Sélecteur de zone horizontal (chips) : proposé APRÈS le choix de l'action,
-  // avec « Toute l'île » par défaut. Réutilisé en navigation tuiles et résultats.
   // Sélecteur de région compact, placé dans le bandeau à droite du logo.
   const headerZoneSelect = (
     <div className="flex items-center gap-1.5 shrink-0">
@@ -689,6 +751,59 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
       </select>
     </div>
   );
+
+  // Barre de filtres restaurants (cuisine / prix / ambiance), multi-sélection.
+  const chipCount = (n: number) => (
+    <span className="text-[11px] font-bold opacity-60">{n}</span>
+  );
+  const restoFilterBar = isRestoView ? (
+    <div className="mb-3 border-b border-border pb-3 flex flex-col gap-2.5">
+      <div className="flex flex-wrap items-center gap-1.5">
+        <span className="text-[12px] font-bold uppercase tracking-wide text-muted/80 mr-1">Cuisine</span>
+        {RESTO_CUISINES.filter((k) => (restoFacetCounts.cuisine[k] || 0) > 0).map((k) => {
+          const meta = RUBRIQUE_MAP[k];
+          const I = iconForKey(k);
+          return (
+            <FilterChip key={k} active={restoCuisines.has(k)} onClick={() => toggleInSet(setRestoCuisines, k)}>
+              {I && <I size={13} weight="bold" aria-hidden />}
+              {meta?.label ?? k} {chipCount(restoFacetCounts.cuisine[k])}
+            </FilterChip>
+          );
+        })}
+      </div>
+      <div className="flex flex-wrap items-center gap-1.5">
+        <span className="text-[12px] font-bold uppercase tracking-wide text-muted/80 mr-1">Prix</span>
+        {PRICE_RANGES.filter((p) => (restoFacetCounts.price[p.key] || 0) > 0).map((p) => (
+          <FilterChip key={p.key} active={restoPrices.has(p.key)} onClick={() => toggleInSet(setRestoPrices, p.key)}>
+            <span className="font-bold">{p.symbol}</span> {p.label} {chipCount(restoFacetCounts.price[p.key])}
+          </FilterChip>
+        ))}
+      </div>
+      {RESTO_ATTRS.some((k) => (restoFacetCounts.attr[k] || 0) > 0) && (
+        <div className="flex flex-wrap items-center gap-1.5">
+          <span className="text-[12px] font-bold uppercase tracking-wide text-muted/80 mr-1">Ambiance</span>
+          {RESTO_ATTRS.filter((k) => (restoFacetCounts.attr[k] || 0) > 0).map((k) => {
+            const meta = RUBRIQUE_MAP[k];
+            const I = iconForKey(k);
+            return (
+              <FilterChip key={k} active={restoAttrs.has(k)} onClick={() => toggleInSet(setRestoAttrs, k)}>
+                {I && <I size={13} weight="bold" aria-hidden />}
+                {meta?.label ?? k} {chipCount(restoFacetCounts.attr[k])}
+              </FilterChip>
+            );
+          })}
+        </div>
+      )}
+      {restoFacetActive && (
+        <button
+          onClick={resetRestoFacets}
+          className="self-start text-[12.5px] font-semibold text-primary-deep hover:underline"
+        >
+          Réinitialiser les filtres
+        </button>
+      )}
+    </div>
+  ) : null;
 
   return (
     <div className="app min-h-screen flex flex-col">
@@ -847,6 +962,8 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
               </button>
             </div>
           </div>
+
+          {!mobileTiles && restoFilterBar}
 
           <div className={`lg:gap-4 lg:h-[calc(100vh-190px)] ${mobileTiles ? "hidden" : "lg:flex"}`}>
             {/* Liste */}
