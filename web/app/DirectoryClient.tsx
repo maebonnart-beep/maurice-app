@@ -11,6 +11,7 @@ import { SearchInput } from "@/components/ui/SearchInput";
 import { CategoryTile } from "@/components/ui/CategoryTile";
 import { BusinessCard } from "@/components/ui/BusinessCard";
 import { BusinessDetail } from "@/components/ui/BusinessDetail";
+import { iconForKey } from "@/lib/icons";
 
 const UNCLASSIFIED = "__unclassified__";
 const SIDEBAR_VISIBLE_RUBRIQUES = 5;
@@ -673,6 +674,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
   const zoneCell = (key: string) => {
     const z = ZONES.find((x) => x.key === key)!;
     const on = activeZone === key;
+    const ZIcon = iconForKey(key);
     return (
       <button
         onClick={() => toggleZone(key)}
@@ -681,23 +683,24 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
           on ? "bg-primary text-white border-primary" : "bg-surface text-ink border-border hover:border-primary"
         }`}
       >
-        <span className="text-[15px]">{z.emoji}</span>
+        {ZIcon ? <ZIcon size={18} weight="bold" aria-hidden /> : <span className="text-[15px]">{z.emoji}</span>}
         <span>{z.label}</span>
         <span className={`text-[10.5px] font-bold ${on ? "opacity-80" : "opacity-55"}`}>{zoneCounts[z.key] || 0}</span>
       </button>
     );
   };
 
+  const AllIslandIcon = iconForKey("toute-lile");
   const zoneChips = (
     <div className="mb-3 max-w-[280px]">
       <button
         onClick={() => setActiveZone(null)}
         aria-pressed={activeZone === null}
-        className={`w-full mb-1.5 py-1.5 rounded-pill text-[13px] font-semibold border transition-colors ${
+        className={`w-full mb-1.5 py-1.5 rounded-pill text-[13px] font-semibold border transition-colors inline-flex items-center justify-center gap-1.5 ${
           activeZone === null ? "bg-primary text-white border-primary" : "bg-surface text-ink border-border hover:border-primary"
         }`}
       >
-        📍 Toute l&apos;île
+        {AllIslandIcon ? <AllIslandIcon size={16} weight="bold" aria-hidden /> : "📍"} Toute l&apos;île
       </button>
       <div className="grid grid-cols-3 grid-rows-3 gap-1.5">
         <span />
@@ -778,6 +781,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                 {LIFESTYLE.filter((u) => (umbrellaCounts[u.key] || 0) > 0).map((u) => (
                   <CategoryTile
                     key={u.key}
+                    iconKey={u.key}
                     emoji={u.emoji}
                     label={u.label}
                     count={umbrellaCounts[u.key] || 0}
@@ -816,6 +820,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                     {tiles.map((t) => (
                       <CategoryTile
                         key={t.key}
+                        iconKey={t.key.startsWith("__all__") ? t.key.slice(7) : t.key}
                         emoji={t.emoji}
                         label={t.label}
                         count={t.count}
