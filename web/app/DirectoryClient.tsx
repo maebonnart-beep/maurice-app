@@ -455,7 +455,9 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
     if (!r) return null;
     const count = themeCountsAll[r.key] || 0;
     if (count === 0) return null;
-    const sg = SUBGROUP_BY_PARENT[r.key];
+    // « Restaurants » ouvre directement la liste filtrable (les cuisines sont
+    // proposées comme facettes) au lieu de descendre dans un sous-groupe de tuiles.
+    const sg = r.key === "restaurants" ? undefined : SUBGROUP_BY_PARENT[r.key];
     return sg
       ? { key: r.key, label: r.label, emoji: r.emoji, count, drillTo: { kind: "subgroup", key: r.key, label: r.label, emoji: r.emoji } }
       : { key: r.key, label: r.label, emoji: r.emoji, count, themeKey: r.key };
