@@ -154,6 +154,11 @@ export const THEMATIC_ICONS: Record<string, string> = {
   education: "/icon-enfants.png",
   // Médecins / santé
   medecins: "/icon-medecins.png",
+  // Sortir
+  sortir: "/icon-sortir.png",
+  // Univers Premium
+  evenements: "/icon-evenements.png",
+  "seconde-main": "/icon-secondemain.png",
 };
 
 /** Chemin d'une icône thématique illustrée pour une clé, ou null. */
