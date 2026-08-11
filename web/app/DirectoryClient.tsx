@@ -13,7 +13,7 @@ import { BusinessCard } from "@/components/ui/BusinessCard";
 import { BusinessDetail } from "@/components/ui/BusinessDetail";
 import { FilterDropdown, type DropdownOption } from "@/components/ui/FilterDropdown";
 import { iconForKey, MapPin } from "@/lib/icons";
-import { SquaresFour, MagnifyingGlass, Heart, Star } from "@phosphor-icons/react";
+import { MagnifyingGlass, Heart, Star } from "@phosphor-icons/react";
 import type { Icon as PhosphorIcon } from "@phosphor-icons/react";
 
 // Attributs d'ambiance propres aux restaurants (facette « Ambiance »).
@@ -136,14 +136,16 @@ const LIFESTYLE: Umbrella[] = [
 // Clés d'univers réservés aux membres Premium (aperçu flouté + cadenas).
 const PREMIUM_KEYS = new Set(LIFESTYLE.filter((u) => u.premium).map((u) => u.key));
 
-// Tuile d'entrée du menu d'accueil (Option A) : icône + titre + sous-titre.
+// Tuile d'entrée du menu d'accueil (Option A) : icône (Phosphor ou image) + titre + sous-titre.
 function HomeEntry({
   Icon,
+  img,
   title,
   subtitle,
   onClick,
 }: {
-  Icon: PhosphorIcon;
+  Icon?: PhosphorIcon;
+  img?: string;
   title: string;
   subtitle: string;
   onClick: () => void;
@@ -151,13 +153,18 @@ function HomeEntry({
   return (
     <button
       onClick={onClick}
-      className="flex flex-col items-center gap-2.5 p-5 rounded-tile border border-border bg-surface text-center shadow-sm active:scale-[.98] transition-transform"
+      className="flex flex-col items-center justify-center gap-3 p-6 min-h-[172px] rounded-tile border border-border bg-surface text-center shadow-sm active:scale-[.98] transition-transform"
     >
-      <span className="w-14 h-14 rounded-2xl bg-primary-tint text-primary-deep flex items-center justify-center">
-        <Icon size={30} weight="duotone" aria-hidden />
-      </span>
-      <span className="text-[14px] font-semibold leading-tight text-ink">{title}</span>
-      <span className="text-[12px] text-muted leading-tight">{subtitle}</span>
+      {img ? (
+        // eslint-disable-next-line @next/next/no-img-element
+        <img src={img} alt="" aria-hidden className="w-[84px] h-[84px] object-contain" />
+      ) : (
+        <span className="w-[74px] h-[74px] rounded-2xl bg-primary-tint text-primary-deep flex items-center justify-center">
+          {Icon && <Icon size={40} weight="duotone" aria-hidden />}
+        </span>
+      )}
+      <span className="text-[16px] font-semibold leading-tight text-ink">{title}</span>
+      <span className="text-[12.5px] text-muted leading-tight">{subtitle}</span>
     </button>
   );
 }
@@ -1052,10 +1059,10 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
         <div className="flex-1 min-w-0 px-4 lg:px-5 py-3">
           {/* Accueil « Option A » : menu d'entrée à 4 modes. */}
           {showHome && navStack.length === 0 && homeMode === "menu" && (
-            <div className="pb-16">
-              <p className="text-[13px] font-semibold text-muted mb-2.5">Que cherchez-vous ?</p>
-              <div className="grid grid-cols-2 gap-3 max-w-[520px]">
-                <HomeEntry Icon={SquaresFour} title="Par catégorie" subtitle="6 univers" onClick={() => setHomeMode("categories")} />
+            <div className="pb-10 min-h-[calc(100dvh-172px)] flex flex-col justify-center">
+              <p className="text-[14px] font-semibold text-muted mb-4 text-center">Que cherchez-vous ?</p>
+              <div className="grid grid-cols-2 gap-4 w-full max-w-[560px] mx-auto">
+                <HomeEntry img="/icon-categories.png" title="Par catégorie" subtitle="6 univers" onClick={() => setHomeMode("categories")} />
                 <HomeEntry Icon={MagnifyingGlass} title="Recherche" subtitle="lieu, nom, activité" onClick={() => { setHomeMode("recherche"); setTimeout(focusSearch, 60); }} />
                 <HomeEntry Icon={Heart} title="Mes favoris" subtitle="et mes listes" onClick={() => setHomeMode("favoris")} />
                 <HomeEntry Icon={Star} title="Listes de Koté Moris" subtitle="nos sélections" onClick={() => setHomeMode("listes")} />
