@@ -11,7 +11,7 @@ import { SearchInput } from "@/components/ui/SearchInput";
 import { CategoryTile } from "@/components/ui/CategoryTile";
 import { BusinessCard } from "@/components/ui/BusinessCard";
 import { BusinessDetail } from "@/components/ui/BusinessDetail";
-import { FilterChip } from "@/components/ui/FilterChip";
+import { FilterDropdown, type DropdownOption } from "@/components/ui/FilterDropdown";
 import { iconForKey, MapPin } from "@/lib/icons";
 
 // Facettes de filtrage propres aux restaurants (rubrique "restaurants").
@@ -754,54 +754,68 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
     </div>
   );
 
-  // Barre de filtres restaurants (cuisine / prix / ambiance), multi-sélection.
-  const chipCount = (n: number) => (
-    <span className="text-[11px] font-bold opacity-60">{n}</span>
-  );
+  // Barre de filtres restaurants (menus déroulants Cuisine / Prix / Ambiance).
+  const cuisineOptions: DropdownOption[] = RESTO_CUISINES.filter(
+    (k) => (restoFacetCounts.cuisine[k] || 0) > 0
+  ).map((k) => {
+    const I = iconForKey(k);
+    return {
+      key: k,
+      label: RUBRIQUE_MAP[k]?.label ?? k,
+      count: restoFacetCounts.cuisine[k],
+      icon: I ? <I size={14} weight="bold" aria-hidden /> : undefined,
+    };
+  });
+  const priceOptions: DropdownOption[] = PRICE_RANGES.filter(
+    (p) => (restoFacetCounts.price[p.key] || 0) > 0
+  ).map((p) => ({ key: p.key, label: `${p.symbol} ${p.label}`, count: restoFacetCounts.price[p.key] }));
+  const attrOptions: DropdownOption[] = RESTO_ATTRS.filter(
+    (k) => (restoFacetCounts.attr[k] || 0) > 0
+  ).map((k) => {
+    const I = iconForKey(k);
+    return {
+      key: k,
+      label: RUBRIQUE_MAP[k]?.label ?? k,
+      count: restoFacetCounts.attr[k],
+      icon: I ? <I size={14} weight="bold" aria-hidden /> : undefined,
+    };
+  });
+
   const restoFilterBar = isRestoView ? (
-    <div className="mb-3 border-b border-border pb-3 flex flex-col gap-2.5">
-      <div className="flex flex-wrap items-center gap-1.5">
-        <span className="text-[12px] font-bold uppercase tracking-wide text-muted/80 mr-1">Cuisine</span>
-        {RESTO_CUISINES.filter((k) => (restoFacetCounts.cuisine[k] || 0) > 0).map((k) => {
-          const meta = RUBRIQUE_MAP[k];
-          const I = iconForKey(k);
-          return (
-            <FilterChip key={k} active={restoCuisines.has(k)} onClick={() => toggleInSet(setRestoCuisines, k)}>
-              {I && <I size={13} weight="bold" aria-hidden />}
-              {meta?.label ?? k} {chipCount(restoFacetCounts.cuisine[k])}
-            </FilterChip>
-          );
-        })}
-      </div>
-      <div className="flex flex-wrap items-center gap-1.5">
-        <span className="text-[12px] font-bold uppercase tracking-wide text-muted/80 mr-1">Prix</span>
-        {PRICE_RANGES.filter((p) => (restoFacetCounts.price[p.key] || 0) > 0).map((p) => (
-          <FilterChip key={p.key} active={restoPrices.has(p.key)} onClick={() => toggleInSet(setRestoPrices, p.key)}>
-            <span className="font-bold">{p.symbol}</span> {p.label} {chipCount(restoFacetCounts.price[p.key])}
-          </FilterChip>
-        ))}
-      </div>
-      {RESTO_ATTRS.some((k) => (restoFacetCounts.attr[k] || 0) > 0) && (
-        <div className="flex flex-wrap items-center gap-1.5">
-          <span className="text-[12px] font-bold uppercase tracking-wide text-muted/80 mr-1">Ambiance</span>
-          {RESTO_ATTRS.filter((k) => (restoFacetCounts.attr[k] || 0) > 0).map((k) => {
-            const meta = RUBRIQUE_MAP[k];
-            const I = iconForKey(k);
-            return (
-              <FilterChip key={k} active={restoAttrs.has(k)} onClick={() => toggleInSet(setRestoAttrs, k)}>
-                {I && <I size={13} weight="bold" aria-hidden />}
-                {meta?.label ?? k} {chipCount(restoFacetCounts.attr[k])}
-              </FilterChip>
-            );
-          })}
-        </div>
+    <div className="mb-3 border-b border-border pb-3 flex flex-wrap items-center gap-2">
+      {cuisineOptions.length > 0 && (
+        <FilterDropdown
+          label="Cuisine"
+          options={cuisineOptions}
+          selected={restoCuisines}
+          onToggle={(k) => toggleInSet(setRestoCuisines, k)}
+          onClear={() => setRestoCuisines(new Set())}
+        />
+      )}
+      {priceOptions.length > 0 && (
+        <FilterDropdown
+          label="Prix"
+          options={priceOptions}
+          selected={restoPrices}
+          onToggle={(k) => toggleInSet(setRestoPrices, k)}
+          onClear={() => setRestoPrices(new Set())}
+        />
+      )}
+      {attrOptions.length > 0 && (
+        <FilterDropdown
+          label="Ambiance"
+          options={attrOptions}
+          selected={restoAttrs}
+          onToggle={(k) => toggleInSet(setRestoAttrs, k)}
+          onClear={() => setRestoAttrs(new Set())}
+        />
       )}
       {restoFacetActive && (
         <button
           onClick={resetRestoFacets}
-          className="self-start text-[12.5px] font-semibold text-primary-deep hover:underline"
+          className="text-[12.5px] font-semibold text-primary-deep hover:underline"
         >
-          Réinitialiser les filtres
+          Réinitialiser
         </button>
       )}
     </div>
