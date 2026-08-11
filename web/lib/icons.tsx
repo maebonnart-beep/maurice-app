@@ -129,6 +129,37 @@ export function iconForKey(key: string): Icon | null {
   return ICON_MAP[key] ?? null;
 }
 
+/**
+ * Icônes thématiques illustrées (images rondes dans public/) pour certaines clés
+ * d'univers / catégories. Prioritaires sur les icônes Phosphor dans les tuiles.
+ * Les clés sans image (ex. « sortir ») retombent sur l'icône Phosphor.
+ */
+export const THEMATIC_ICONS: Record<string, string> = {
+  // Manger / Food
+  manger: "/icon-food.png", food: "/icon-food.png", restauration: "/icon-food.png",
+  // Bouger / Sports
+  bouger: "/icon-sports.png", sports: "/icon-sports.png", "bouger-sports": "/icon-sports.png",
+  // Se relaxer / Loisirs / Nature
+  "se-relaxer": "/icon-loisirs.png", activites: "/icon-loisirs.png", "bouger-nature": "/icon-loisirs.png",
+  // Shopping
+  shopping: "/icon-shopping.png", "malls-shopping": "/icon-shopping.png", "types-shopping": "/icon-shopping.png",
+  // Famille
+  famille: "/icon-famille.png",
+  // Pratique / Utiles
+  pratique: "/icon-pratique.png", utiles: "/icon-pratique.png",
+  // Enfants
+  "activites-enfants-famille": "/icon-enfants.png",
+  "centres-loisirs-animations-enfants": "/icon-enfants.png",
+  education: "/icon-enfants.png", "kids-friendly": "/icon-enfants.png",
+  // Médecins / santé
+  medecins: "/icon-medecins.png",
+};
+
+/** Chemin d'une icône thématique illustrée pour une clé, ou null. */
+export function thematicIconFor(key: string): string | null {
+  return THEMATIC_ICONS[key] ?? null;
+}
+
 /** Rend l'icône d'une clé si mappée (sinon rien) — pratique dans un Tag/badge. */
 export function KeyIcon({
   keyName,
