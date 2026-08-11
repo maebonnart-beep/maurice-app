@@ -170,7 +170,6 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
   const [facetAttrs, setFacetAttrs] = useState<Set<string>>(new Set());
   const [facetBadges, setFacetBadges] = useState<Set<string>>(new Set());
   const [expandedInSidebar, setExpandedInSidebar] = useState<Set<string>>(new Set());
-  const [sidebarOpen, setSidebarOpen] = useState(false);
   const [resultsView, setResultsView] = useState<"liste" | "carte">("liste");
   // « Autour de moi » : tri par distance depuis la position de l'utilisateur.
   const [nearMe, setNearMe] = useState(false);
@@ -229,7 +228,6 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
     setQuery("");
     setBrowseAll(false);
     setNavStack([]);
-    setSidebarOpen(false);
     resetRestoFacets();
     setNearMe(false);
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -246,11 +244,6 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
     setActiveThemes(new Set());
     setBrowseAll(false);
     setNavStack([]);
-    // Mobile : garder le tiroir ouvert quand la catégorie a une arborescence
-    // de rubriques à dérouler (l'utilisateur peut alors choisir une
-    // sous-rubrique). On ne referme que pour les catégories sans arborescence.
-    const hasTree = !!SUBCATEGORIES[key as keyof typeof SUBCATEGORIES];
-    if (!hasTree) setSidebarOpen(false);
   }
 
   function toggleZone(key: string) {
@@ -259,7 +252,6 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
 
   function toggleTheme(key: string) {
     setActiveThemes((prev) => (prev.has(key) ? new Set() : new Set([key])));
-    setSidebarOpen(false);
     resetRestoFacets(); // les facettes ne valent que pour la vue restaurants courante
     // On conserve la pile de navigation en tuiles : le bouton « Retour » de la
     // page de résultats ramène ainsi à la grille de tuiles du bon niveau.
@@ -947,34 +939,6 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
           {sidebarContent}
         </aside>
 
-        {/* Sidebar mobile drawer */}
-        {sidebarOpen && (
-          <div className="lg:hidden fixed inset-0 z-40 flex">
-            <div className="absolute inset-0 bg-black/40" onClick={() => setSidebarOpen(false)} />
-            <div className="relative w-[85%] max-w-[320px] h-full bg-surface overflow-y-auto shadow-pop">
-              <div className="sticky top-0 z-20 bg-surface flex items-center justify-between px-4 py-3 border-b border-border">
-                <span className="font-bold">Catégories</span>
-                <button
-                  onClick={() => setSidebarOpen(false)}
-                  aria-label="Fermer"
-                  className="w-8 h-8 rounded-full flex items-center justify-center hover:bg-surface-2 font-bold"
-                >
-                  ×
-                </button>
-              </div>
-              {sidebarContent}
-              <div className="sticky bottom-0 bg-surface border-t border-border p-3">
-                <button
-                  onClick={() => setSidebarOpen(false)}
-                  className="w-full py-2.5 rounded-xl bg-primary text-white font-semibold text-[14px]"
-                >
-                  Voir {visibleRows.length} résultat{visibleRows.length > 1 ? "s" : ""}
-                </button>
-              </div>
-            </div>
-          </div>
-        )}
-
         <div className="flex-1 min-w-0 px-4 lg:px-5 py-3">
           {/* Accueil : grille des univers lifestyle */}
           {showHome && navStack.length === 0 && (
@@ -1040,12 +1004,6 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                 className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-border bg-surface text-[13px] font-semibold shrink-0 text-primary-deep active:scale-[.98]"
               >
                 ← Retour
-              </button>
-              <button
-                onClick={() => setSidebarOpen(true)}
-                className="lg:hidden inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-border bg-surface text-[13px] font-semibold shrink-0"
-              >
-                🗂️ Filtres
               </button>
               <span className="text-[15px] font-semibold truncate">
                 {breadcrumb.emoji} {breadcrumb.label}
