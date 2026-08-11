@@ -1,26 +1,33 @@
 /**
- * Logo KOTÉ MORIS — emblème poulpe (image détourée fournie par la cliente) + wordmark
- * « Koté / MORIS » en serif. Le poulpe étant teal, le logo s'affiche sur fond clair.
+ * Logo KOTÉ MORIS — emblème poulpe détouré (image fournie par la cliente) + wordmark
+ * « Koté / MORIS » en serif, empilé et centré sous le poulpe. Le poulpe reprend les
+ * couleurs de la marque ; sur le bandeau teal, le wordmark passe en clair + accent.
  */
-export function Logo({ size = 52, light = false }: { size?: number; light?: boolean }) {
+export function Logo({ size = 96, light = false }: { size?: number; light?: boolean }) {
   return (
-    <span className="inline-flex items-center gap-2.5">
-      {/* Icône de l'appli (poulpe dans le carré beige) : ressort sur le bandeau teal,
-          contrairement au poulpe détouré de même couleur que le fond. */}
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
-        src="/icon-192.png"
-        alt="Koté Moris"
-        className="shrink-0 object-cover rounded-xl shadow-sm"
-        style={{ height: size, width: size }}
-      />
-      <span className="flex flex-col leading-none">
-        <span className={`font-serif font-semibold text-xl tracking-tight ${light ? "text-on-band" : "text-ink"}`}>
-          Koté
+    <span className="inline-flex flex-col items-center gap-1 text-center">
+      {/* Rangée : poulpe détouré (gauche) + wordmark « Koté / MORIS » (droite). */}
+      <span className="inline-flex items-center gap-2.5">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/logo-octopus.png"
+          alt="Koté Moris"
+          className="shrink-0 object-contain drop-shadow-sm"
+          style={{ height: size, width: size }}
+        />
+        <span className="flex flex-col items-start leading-none">
+          <span className={`font-serif font-semibold text-2xl tracking-tight ${light ? "text-on-band" : "text-ink"}`}>
+            Koté
+          </span>
+          {/* « MORIS » en turquoise (couleur des accents du poulpe) plutôt qu'en jaune. */}
+          <span className="text-xs font-semibold tracking-[0.34em] mt-0.5" style={{ color: "#45c4c0" }}>
+            MORIS
+          </span>
         </span>
-        <span className={`text-[10px] font-semibold tracking-[0.34em] -mt-0.5 ${light ? "text-accent" : "text-primary"}`}>
-          MORIS
-        </span>
+      </span>
+      {/* Baseline manuscrite/italique, centrée sous le poulpe + wordmark. */}
+      <span className={`font-serif italic text-[12px] leading-none ${light ? "text-on-band/80" : "text-ink/70"}`}>
+        les adresses de Maurice
       </span>
     </span>
   );

@@ -34,21 +34,19 @@ export function SpecialBadge({ variant }: { variant: SpecialBadgeVariant }) {
   }
   if (variant === "coup-de-coeur") {
     return (
-      <span
-        className="self-start inline-flex items-center gap-1 px-3 py-1.5 rounded-pill text-white text-sm font-extrabold tracking-tight shadow-[0_2px_10px_-2px_rgba(255,45,106,.65)]"
-        style={{ background: COUP_DE_COEUR_COLOR }}
-      >
-        💛 Coup de cœur
+      <span className="self-start inline-flex items-center gap-1.5 pl-1 pr-3 py-1 rounded-pill bg-surface border border-black/5 shadow-sm text-sm font-extrabold tracking-tight text-primary">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src="/badge-coup-de-coeur.png" alt="" aria-hidden className="h-7 w-7 shrink-0" />
+        Coup de cœur
       </span>
     );
   }
   if (variant === "selection") {
     return (
-      <span
-        className="self-start inline-flex items-center gap-1 px-3 py-1.5 rounded-pill text-white text-sm font-extrabold tracking-tight shadow-[0_2px_10px_-2px_rgba(124,58,237,.65)]"
-        style={{ background: SELECTION_COLOR }}
-      >
-        🏅 Sélection Koté Moris
+      <span className="self-start inline-flex items-center gap-1.5 pl-1 pr-3 py-1 rounded-pill bg-surface border border-black/5 shadow-sm text-sm font-extrabold tracking-tight text-primary">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src="/badge-selection.png" alt="" aria-hidden className="h-7 w-7 shrink-0" />
+        Sélection Koté Moris
       </span>
     );
   }

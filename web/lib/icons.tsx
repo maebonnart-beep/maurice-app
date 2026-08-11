@@ -8,7 +8,7 @@
  */
 import type { Icon } from "@phosphor-icons/react";
 import {
-  ForkKnife, Martini, PersonSimpleRun, ShoppingBag, UsersThree, Briefcase,
+  ForkKnife, Martini, PersonSimpleRun, Sneaker, ShoppingBag, UsersThree, Briefcase,
   Storefront, CookingPot, Barbell, Waves, Wrench, Sparkle, Recycle, Laptop,
   House, GraduationCap, CalendarBlank, Confetti, PawPrint, TreePalm, Wind,
   PersonSimpleSwim, Boat, Sailboat, Parachute, FishSimple, Golf, Horse,
@@ -29,7 +29,7 @@ import {
 
 export const ICON_MAP: Record<string, Icon> = {
   // Univers lifestyle
-  manger: ForkKnife, sortir: Martini, bouger: PersonSimpleRun,
+  manger: ForkKnife, sortir: Martini, bouger: Sneaker,
   shopping: ShoppingBag, famille: UsersThree, pratique: Briefcase,
   "se-relaxer": FlowerLotus,
 
