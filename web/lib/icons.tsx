@@ -32,6 +32,9 @@ export const ICON_MAP: Record<string, Icon> = {
   manger: ForkKnife, sortir: Martini, bouger: PersonSimpleRun,
   shopping: ShoppingBag, famille: UsersThree, pratique: Briefcase,
 
+  // Sous-rubriques d'univers (Bouger)
+  "bouger-nature": Leaf, "bouger-sports": Barbell,
+
   // Catégories
   activites: Confetti, food: ForkKnife, utiles: Wrench,
   coaching: Medal, "soins-bien-etre": Sparkle, "seconde-main": Recycle,

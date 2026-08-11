@@ -29,6 +29,7 @@ const SIDEBAR_VISIBLE_RUBRIQUES = 5;
 
 // Univers « lifestyle » de l'accueil (couche de présentation au-dessus des rubriques).
 // Chaque univers = un regroupement de catégories entières et/ou de rubriques précises.
+type UmbrellaGroup = { key: string; label: string; emoji: string; rubriques: string[] };
 type Umbrella = {
   key: string;
   label: string;
@@ -36,6 +37,8 @@ type Umbrella = {
   color: string;
   categories?: CategoryKey[];
   rubriques?: string[];
+  // Sous-rubriques optionnelles : l'univers se déroule d'abord par groupes.
+  groups?: UmbrellaGroup[];
 };
 
 const LIFESTYLE: Umbrella[] = [
@@ -61,6 +64,26 @@ const LIFESTYLE: Umbrella[] = [
       "randonnee-trail", "centres-equestres", "peche", "plages",
       "parcs-nationaux-cascades", "excursions", "parcs-aventures", "parcs-animaliers",
       "parcs-botaniques",
+    ],
+    groups: [
+      {
+        key: "bouger-nature",
+        label: "Nature",
+        emoji: "🌿",
+        rubriques: [
+          "plages", "parcs-nationaux-cascades", "randonnee-trail", "parcs-botaniques",
+          "parcs-animaliers", "parcs-aventures", "excursions", "peche",
+        ],
+      },
+      {
+        key: "bouger-sports",
+        label: "Sports",
+        emoji: "🏃",
+        rubriques: [
+          "complexes-sportifs", "gym-fitness", "sports-nautiques", "golf", "tennis-padel",
+          "centres-equestres",
+        ],
+      },
     ],
   },
   {
@@ -118,6 +141,10 @@ Object.values(FAMILIES).forEach((fams) =>
   fams?.forEach((f) => f.subgroups?.forEach((sg) => (SUBGROUP_BY_PARENT[sg.parent] = sg)))
 );
 
+// Sous-rubriques d'univers (ex. Bouger → Nature / Sports) par clé de groupe.
+const GROUP_BY_KEY: Record<string, UmbrellaGroup> = {};
+LIFESTYLE.forEach((u) => u.groups?.forEach((g) => (GROUP_BY_KEY[g.key] = g)));
+
 // Un univers « pur » (une seule catégorie, sans rubriques explicites) ayant des familles
 // se déroule d'abord par familles (ex. Manger → Restauration / Commerces).
 function umbrellaFamilies(u: Umbrella): Family[] | null {
@@ -129,7 +156,7 @@ function umbrellaFamilies(u: Umbrella): Family[] | null {
 }
 
 // Un niveau de navigation en tuiles.
-type NavNode = { kind: "umbrella" | "family" | "subgroup"; key: string; label: string; emoji: string };
+type NavNode = { kind: "umbrella" | "group" | "family" | "subgroup"; key: string; label: string; emoji: string };
 
 const ZONES: { key: string; label: string; emoji: string }[] = [
   { key: "nord", label: "Nord", emoji: "⬆️" },
@@ -537,6 +564,17 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
     if (top.kind === "umbrella") {
       const u = LIFESTYLE.find((x) => x.key === top.key);
       if (!u) return [];
+      // Sous-rubriques d'univers (ex. Bouger → Nature / Sports).
+      if (u.groups) {
+        return u.groups
+          .map((g): TileDesc | null => {
+            const count = countThemes(g.rubriques);
+            return count > 0
+              ? { key: g.key, label: g.label, emoji: g.emoji, count, drillTo: { kind: "group", key: g.key, label: g.label, emoji: g.emoji } }
+              : null;
+          })
+          .filter((t): t is TileDesc => t !== null);
+      }
       const fams = umbrellaFamilies(u);
       if (fams) {
         return fams
@@ -549,6 +587,14 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
           .filter((t): t is TileDesc => t !== null);
       }
       return resolveRubriques(u)
+        .map(rubriqueTile)
+        .filter((t): t is TileDesc => t !== null)
+        .sort((a, b) => b.count - a.count);
+    }
+    if (top.kind === "group") {
+      const g = GROUP_BY_KEY[top.key];
+      if (!g) return [];
+      return g.rubriques
         .map(rubriqueTile)
         .filter((t): t is TileDesc => t !== null)
         .sort((a, b) => b.count - a.count);
