@@ -25,14 +25,14 @@ export function Logo({ size = 96, light = false }: { size?: number; light?: bool
           </span>
         </span>
       </span>
-      {/* Baseline « les adresses de Maurice » : version stylée du wordmark (traits +
-          ornement), recolorée en crème pour ressortir sur le bandeau teal. */}
+      {/* Baseline « les adresses de Maurice » : version manuscrite/cursive,
+          détourée en crème pour ressortir sur le bandeau teal. */}
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
-        src="/tagline-adresses.png"
+        src="/tagline-cursive.png"
         alt="les adresses de Maurice"
-        className="mt-1 w-auto object-contain"
-        style={{ height: 32 }}
+        className="mt-0.5 w-auto object-contain"
+        style={{ height: 54 }}
       />
     </span>
   );

@@ -159,6 +159,16 @@ export const THEMATIC_ICONS: Record<string, string> = {
   // Univers Premium
   evenements: "/icon-evenements.png",
   "seconde-main": "/icon-secondemain.png",
+  // Sous-rubriques Sortir
+  "snacks-plage": "/icon-snacks-plage.png",
+  bars: "/icon-bars.png",
+  "culture-patrimoine": "/icon-culture-patrimoine.png",
+  "cafes-terrasses": "/icon-cafes-terrasses.png",
+  cinemas: "/icon-cinemas.png",
+  bowling: "/icon-bowling.png",
+  // Sous-rubriques Événements
+  sportifs: "/icon-sportifs.png",
+  culturels: "/icon-culturels.png",
 };
 
 /** Chemin d'une icône thématique illustrée pour une clé, ou null. */

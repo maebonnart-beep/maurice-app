@@ -1063,9 +1063,9 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
               <p className="text-[14px] font-semibold text-muted mb-4 text-center">Que cherchez-vous ?</p>
               <div className="grid grid-cols-2 gap-4 w-full max-w-[560px] mx-auto">
                 <HomeEntry img="/icon-categories.png" title="Par catégorie" subtitle="6 univers" onClick={() => setHomeMode("categories")} />
-                <HomeEntry Icon={MagnifyingGlass} title="Recherche" subtitle="lieu, nom, activité" onClick={() => { setHomeMode("recherche"); setTimeout(focusSearch, 60); }} />
-                <HomeEntry Icon={Heart} title="Mes favoris" subtitle="et mes listes" onClick={() => setHomeMode("favoris")} />
-                <HomeEntry Icon={Star} title="Listes de Koté Moris" subtitle="nos sélections" onClick={() => setHomeMode("listes")} />
+                <HomeEntry img="/icon-recherche.png" title="Recherche" subtitle="lieu, nom, activité" onClick={() => { setHomeMode("recherche"); setTimeout(focusSearch, 60); }} />
+                <HomeEntry img="/icon-favoris.png" title="Mes favoris" subtitle="et mes listes" onClick={() => setHomeMode("favoris")} />
+                <HomeEntry img="/icon-listes.png" title="Listes de Koté Moris" subtitle="nos sélections" onClick={() => setHomeMode("listes")} />
               </div>
             </div>
           )}
