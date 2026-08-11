@@ -8,7 +8,7 @@
  */
 import type { Icon } from "@phosphor-icons/react";
 import {
-  ForkKnife, Martini, PersonSimpleRun, Sneaker, ShoppingBag, UsersThree, Briefcase,
+  ForkKnife, Martini, Sneaker, ShoppingBag, UsersThree, Briefcase,
   Storefront, CookingPot, Barbell, Waves, Wrench, Sparkle, Recycle, Laptop,
   House, GraduationCap, CalendarBlank, Confetti, PawPrint, TreePalm, Wind,
   PersonSimpleSwim, Boat, Sailboat, Parachute, FishSimple, Golf, Horse,
