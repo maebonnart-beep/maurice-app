@@ -16,12 +16,15 @@ export function CategoryTile({
   emoji,
   label,
   iconKey,
+  locked,
   onClick,
 }: {
   category?: CategoryKey;
   emoji?: string;
   label?: string;
   iconKey?: string;
+  /** Univers Premium : anneau doré + badge cadenas. */
+  locked?: boolean;
   /** Conservé pour compat des appels ; le nombre n'est plus affiché sur la tuile. */
   count?: number;
   onClick: () => void;
@@ -40,8 +43,21 @@ export function CategoryTile({
   return (
     <button
       onClick={onClick}
-      className="flex flex-col items-center gap-2.5 p-4 rounded-tile border border-border bg-surface text-center shadow-sm active:scale-[.98] transition-transform"
+      className="relative flex flex-col items-center gap-2.5 p-4 rounded-tile border text-center shadow-sm active:scale-[.98] transition-transform"
+      style={
+        locked
+          ? { borderColor: "var(--accent)", borderWidth: 2, background: "color-mix(in srgb, var(--accent) 10%, var(--surface))" }
+          : { borderColor: "var(--border)", background: "var(--surface)" }
+      }
     >
+      {locked && (
+        <span
+          className="absolute top-1.5 right-1.5 inline-flex items-center gap-0.5 px-1.5 py-0.5 rounded-full text-[9px] font-extrabold text-on-accent"
+          style={{ background: "var(--accent)" }}
+        >
+          🔒 Premium
+        </span>
+      )}
       {thematic ? (
         // Icône thématique illustrée : occupe toute la pastille (disque crème intégré).
         // eslint-disable-next-line @next/next/no-img-element

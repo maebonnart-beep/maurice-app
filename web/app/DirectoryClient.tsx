@@ -39,6 +39,8 @@ type Umbrella = {
   rubriques?: string[];
   // Sous-rubriques optionnelles : l'univers se déroule d'abord par groupes.
   groups?: UmbrellaGroup[];
+  // Univers réservé aux membres Premium (affiché à part, aperçu flouté + cadenas).
+  premium?: boolean;
 };
 
 const LIFESTYLE: Umbrella[] = [
@@ -52,7 +54,6 @@ const LIFESTYLE: Umbrella[] = [
       "bars", "cafes-terrasses", "rhumeries", "casinos", "cinemas", "bowling",
       "karting", "escape-game", "culture-patrimoine", "glaciers", "snacks-plage",
     ],
-    categories: ["evenements"],
   },
   {
     key: "bouger",
@@ -95,7 +96,6 @@ const LIFESTYLE: Umbrella[] = [
       "malls", "shopping", "mode-adultes", "mode-enfants", "materiel-sports",
       "livres", "jeux", "souvenirs", "equipement-maison",
     ],
-    categories: ["seconde-main"],
   },
   {
     key: "famille",
@@ -112,7 +112,27 @@ const LIFESTYLE: Umbrella[] = [
     color: "#4a6572",
     categories: ["utiles", "immobilier", "business-ttv", "soins-bien-etre", "coaching"],
   },
+  // ── Univers réservés aux membres Premium ──────────────────────────────
+  {
+    key: "evenements",
+    label: "Événements",
+    emoji: "🎉",
+    color: "#e0518a",
+    categories: ["evenements"],
+    premium: true,
+  },
+  {
+    key: "seconde-main",
+    label: "Seconde main",
+    emoji: "♻️",
+    color: "#2e8b57",
+    categories: ["seconde-main"],
+    premium: true,
+  },
 ];
+
+// Clés d'univers réservés aux membres Premium (aperçu flouté + cadenas).
+const PREMIUM_KEYS = new Set(LIFESTYLE.filter((u) => u.premium).map((u) => u.key));
 
 // Métadonnées de rubrique (emoji/libellé) par clé, tous univers confondus.
 const RUBRIQUE_MAP: Record<string, { key: string; label: string; emoji: string }> = Object.fromEntries(
@@ -991,7 +1011,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
             <div className="pb-16">
               <p className="text-[13px] font-semibold text-muted mb-2.5">Que cherchez-vous ?</p>
               <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2.5">
-                {LIFESTYLE.filter((u) => (umbrellaCounts[u.key] || 0) > 0).map((u) => (
+                {LIFESTYLE.filter((u) => !u.premium && (umbrellaCounts[u.key] || 0) > 0).map((u) => (
                   <CategoryTile
                     key={u.key}
                     iconKey={u.key}
@@ -1008,6 +1028,28 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
               >
                 Voir toutes les adresses ({rows.length})
               </button>
+              {/* Section Premium : univers réservés aux membres (aperçu flouté au clic). */}
+              {LIFESTYLE.some((u) => u.premium && (umbrellaCounts[u.key] || 0) > 0) && (
+                <div className="mt-5">
+                  <p className="text-[13px] font-semibold text-muted mb-2.5 flex items-center gap-1.5">
+                    <span style={{ color: "var(--accent)" }}>✨</span> Premium
+                    <span className="text-[11px] font-normal text-muted/80">— réservé aux membres</span>
+                  </p>
+                  <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2.5">
+                    {LIFESTYLE.filter((u) => u.premium && (umbrellaCounts[u.key] || 0) > 0).map((u) => (
+                      <CategoryTile
+                        key={u.key}
+                        iconKey={u.key}
+                        emoji={u.emoji}
+                        label={u.label}
+                        locked
+                        count={umbrellaCounts[u.key] || 0}
+                        onClick={() => pushNav({ kind: "umbrella", key: u.key, label: u.label, emoji: u.emoji })}
+                      />
+                    ))}
+                  </div>
+                </div>
+              )}
             </div>
           )}
 
@@ -1017,6 +1059,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
             (() => {
               const tiles = levelTiles(navStack);
               const path = navStack.map((n) => n.label).join(" › ");
+              const locked = PREMIUM_KEYS.has(navStack[0].key);
               return (
                 <div className="pb-16">
                   <button
@@ -1026,17 +1069,48 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                     ← Retour
                   </button>
                   <p className="text-[15px] font-semibold mb-2.5 truncate">{path}</p>
-                  <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2.5">
-                    {tiles.map((t) => (
-                      <CategoryTile
-                        key={t.key}
-                        iconKey={t.key.startsWith("__all__") ? t.key.slice(7) : t.key}
-                        emoji={t.emoji}
-                        label={t.label}
-                        count={t.count}
-                        onClick={() => onTileClick(t)}
-                      />
-                    ))}
+                  <div className="relative min-h-[220px]">
+                    <div
+                      className={`grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2.5 ${
+                        locked ? "blur-[3px] pointer-events-none select-none" : ""
+                      }`}
+                      aria-hidden={locked || undefined}
+                    >
+                      {tiles.map((t) => (
+                        <CategoryTile
+                          key={t.key}
+                          iconKey={t.key.startsWith("__all__") ? t.key.slice(7) : t.key}
+                          emoji={t.emoji}
+                          label={t.label}
+                          count={t.count}
+                          onClick={() => onTileClick(t)}
+                        />
+                      ))}
+                    </div>
+                    {locked && (
+                      <div className="absolute inset-0 flex items-center justify-center p-4">
+                        <div
+                          className="max-w-[300px] w-full text-center bg-surface/95 backdrop-blur-sm rounded-2xl shadow-lg p-5 flex flex-col items-center gap-2"
+                          style={{ border: "2px solid var(--accent)" }}
+                        >
+                          <span className="text-3xl" aria-hidden>🔒</span>
+                          <p className="font-serif text-lg font-semibold leading-tight">
+                            Réservé aux membres Premium
+                          </p>
+                          <p className="text-[13px] text-muted leading-snug">
+                            Débloquez « {navStack[0].label} » et tout le contenu Premium de Koté Moris.
+                          </p>
+                          <button
+                            disabled
+                            className="mt-1 px-4 py-2 rounded-full font-bold text-on-accent cursor-not-allowed opacity-90"
+                            style={{ background: "var(--accent)" }}
+                          >
+                            ✨ Devenir Premium
+                          </button>
+                          <span className="text-[11px] text-muted/80">Bientôt disponible</span>
+                        </div>
+                      </div>
+                    )}
                   </div>
                 </div>
               );
