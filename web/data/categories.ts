@@ -224,6 +224,7 @@ export const SUBCATEGORIES: Partial<Record<CategoryKey, Subcategory[]>> = {
     { key: "expatriation-visas", label: "Expatriation & visas", emoji: "🛂" },
     { key: "photographes", label: "Photographes (passeport & ID)", emoji: "📷" },
     { key: "depannages", label: "Dépannages", emoji: "🔧" },
+    { key: "informatique-reparation", label: "Informatique (dépannage & pièces)", emoji: "💻" },
     { key: "taxis-transferts", label: "Taxis & transferts", emoji: "🚕" },
     { key: "location-voiture", label: "Location de voiture", emoji: "🚙" },
     { key: "vtc-apps", label: "Applications VTC & réservation", emoji: "📱" },

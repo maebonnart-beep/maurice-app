@@ -37,6 +37,13 @@ function buildIcon(emoji: string, color: string, selected: boolean, hovered: boo
 
 export type MapBounds = { north: number; south: number; east: number; west: number };
 
+// Vrai seulement si la carte est réellement affichée et dimensionnée. Sinon
+// fitBounds/flyTo projettent sur une taille nulle → LatLng NaN → crash Leaflet.
+function hasSize(map: L.Map): boolean {
+  const s = map.getSize();
+  return s.x > 0 && s.y > 0;
+}
+
 function BoundsReporter({
   onBoundsChange,
 }: {
@@ -80,10 +87,16 @@ function MapController({
   // chaque changement de filtre/recherche — sinon un zoom manuel de
   // l'utilisateur est annulé dès qu'il coche une sous-rubrique.
   useEffect(() => {
-    const mappable = businesses.filter((b) => b.lat !== undefined && b.lng !== undefined);
-    if (mappable.length === 0) return;
+    const mappable = businesses.filter(
+      (b) => Number.isFinite(b.lat) && Number.isFinite(b.lng)
+    );
+    if (mappable.length === 0 || !hasSize(map)) return;
     const bounds = mappable.map((b) => [b.lat as number, b.lng as number] as [number, number]);
-    map.fitBounds(bounds, { padding: [40, 40], maxZoom: 15 });
+    try {
+      map.fitBounds(bounds, { padding: [40, 40], maxZoom: 15 });
+    } catch {
+      /* recadrage impossible (carte non affichée) — on ignore */
+    }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [fitKey]);
 
@@ -91,9 +104,17 @@ function MapController({
     if (!selectedId) return;
     const business = businesses.find((b) => b.id === selectedId);
     const marker = markersRef.current[selectedId];
-    if (!business || !marker || business.lat === undefined || business.lng === undefined) return;
-    map.flyTo([business.lat, business.lng], 16, { duration: 0.6 });
-    marker.openPopup();
+    if (!business || !marker || !Number.isFinite(business.lat) || !Number.isFinite(business.lng))
+      return;
+    // Carte masquée (vue liste mobile, onglet inactif…) : sa taille est nulle et
+    // flyTo/unproject renverrait un LatLng NaN qui ferait planter la page.
+    if (!hasSize(map)) return;
+    try {
+      map.flyTo([business.lat as number, business.lng as number], 16, { duration: 0.6 });
+      marker.openPopup();
+    } catch {
+      /* animation impossible — on ignore plutôt que de casser l'app */
+    }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [selectedId]);
 

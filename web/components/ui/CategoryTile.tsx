@@ -27,7 +27,7 @@ export function CategoryTile({
   const displayLabel = label ?? cat?.label ?? "";
   const iconBg = cat
     ? `color-mix(in srgb, ${cat.color} 15%, var(--surface))`
-    : "var(--surface-2)";
+    : "var(--primary-tint)";
 
   return (
     <button

@@ -10,6 +10,7 @@ import { Logo } from "@/components/ui/Logo";
 import { SearchInput } from "@/components/ui/SearchInput";
 import { CategoryTile } from "@/components/ui/CategoryTile";
 import { BusinessCard } from "@/components/ui/BusinessCard";
+import { BusinessDetail } from "@/components/ui/BusinessDetail";
 
 const UNCLASSIFIED = "__unclassified__";
 const SIDEBAR_VISIBLE_RUBRIQUES = 5;
@@ -144,6 +145,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [resultsView, setResultsView] = useState<"liste" | "carte">("liste");
   const [selectedId, setSelectedId] = useState<string | null>(null);
+  const [openId, setOpenId] = useState<string | null>(null);
   const [hoveredId, setHoveredId] = useState<string | null>(null);
   const [filterByMap, setFilterByMap] = useState(false);
   const [mapBounds, setMapBounds] = useState<MapBounds | null>(null);
@@ -207,7 +209,27 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
   function toggleTheme(key: string) {
     setActiveThemes((prev) => (prev.has(key) ? new Set() : new Set([key])));
     setSidebarOpen(false);
-    setNavStack([]);
+    // On conserve la pile de navigation en tuiles : le bouton « Retour » de la
+    // page de résultats ramène ainsi à la grille de tuiles du bon niveau.
+  }
+
+  // Bouton « Retour » de la page de résultats : revient d'un cran (rubrique →
+  // tuiles → accueil) au lieu de tout réinitialiser.
+  function goBackFromResults() {
+    if (activeThemes.size > 0) {
+      setActiveThemes(new Set()); // retour aux tuiles du niveau courant
+      return;
+    }
+    if (browseAll) {
+      setBrowseAll(false);
+      return;
+    }
+    if (active !== "all") {
+      setActive("all");
+      setNavStack([]);
+      return;
+    }
+    goHome();
   }
 
   function toggleSidebarExpand(catKey: string) {
@@ -293,8 +315,10 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
   }
 
   function selectFromCard(id: string) {
-    setSelectedId(id);
+    setOpenId(id); // ouvre la vue détail plein écran (sans déplacer la carte)
   }
+
+  const openBusiness = openId ? businesses.find((b) => b.id === openId) ?? null : null;
 
   function clearThemeFilter(key: string) {
     setActiveThemes((prev) => {
@@ -642,17 +666,46 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
     </>
   );
 
+  // Sélecteur de zone horizontal (chips) : proposé APRÈS le choix de l'action,
+  // avec « Toute l'île » par défaut. Réutilisé en navigation tuiles et résultats.
+  const zoneChips = (
+    <div className="flex items-center gap-1.5 overflow-x-auto -mx-1 px-1 pb-1 mb-3">
+      <button
+        onClick={() => setActiveZone(null)}
+        aria-pressed={activeZone === null}
+        className={`shrink-0 px-3 py-1.5 rounded-pill text-[13px] font-semibold border transition-colors ${
+          activeZone === null ? "bg-primary text-white border-primary" : "bg-surface text-ink border-border"
+        }`}
+      >
+        📍 Toute l&apos;île
+      </button>
+      {ZONES.map((z) => (
+        <button
+          key={z.key}
+          onClick={() => toggleZone(z.key)}
+          aria-pressed={activeZone === z.key}
+          className={`shrink-0 px-3 py-1.5 rounded-pill text-[13px] font-semibold border transition-colors ${
+            activeZone === z.key ? "bg-primary text-white border-primary" : "bg-surface text-ink border-border"
+          }`}
+        >
+          {z.emoji} {z.label}
+          <span className="ml-1 text-[11px] font-bold opacity-70">{zoneCounts[z.key] || 0}</span>
+        </button>
+      ))}
+    </div>
+  );
+
   return (
     <div className="app min-h-screen flex flex-col">
-      {/* En-tête clair : logo poulpe + recherche */}
-      <header className="sticky top-0 z-30 bg-bg/95 backdrop-blur border-b border-border">
+      {/* En-tête « Lagon » : bandeau teal poulpe, logo clair + recherche */}
+      <header className="sticky top-0 z-30 bg-band border-b border-band-deep shadow-sm">
         <div className="max-w-[1400px] mx-auto px-5 pt-3 pb-3.5 flex flex-col gap-3">
           <button
             onClick={goHome}
             aria-label="Retour à l'accueil"
             className="self-start rounded-lg -ml-1 px-1 py-1 hover:opacity-90 active:scale-[.98] transition"
           >
-            <Logo />
+            <Logo light />
           </button>
           <div className="max-w-[640px]">
             <SearchInput
@@ -738,6 +791,9 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                     ← Retour
                   </button>
                   <p className="text-[15px] font-semibold mb-2.5 truncate">{path}</p>
+                  {/* Étape zone : d'abord l'action (univers), ensuite où sur l'île. */}
+                  <p className="text-[12px] font-semibold text-muted mb-1.5">Dans quelle région ?</p>
+                  {zoneChips}
                   <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2.5">
                     {tiles.map((t) => (
                       <CategoryTile
@@ -756,6 +812,12 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
           {/* Barre de résultats */}
           <div className={`items-center justify-between gap-3 flex-wrap py-2 border-b border-border mb-3 ${mobileTiles ? "hidden" : "flex"}`}>
             <div className="flex items-center gap-2 min-w-0">
+              <button
+                onClick={goBackFromResults}
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-border bg-surface text-[13px] font-semibold shrink-0 text-primary-deep active:scale-[.98]"
+              >
+                ← Retour
+              </button>
               <button
                 onClick={() => setSidebarOpen(true)}
                 className="lg:hidden inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-border bg-surface text-[13px] font-semibold shrink-0"
@@ -788,6 +850,9 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
               </button>
             </div>
           </div>
+
+          {/* Zone ajustable en résultats (mobile) — desktop a déjà la sidebar. */}
+          {!mobileTiles && <div className="lg:hidden">{zoneChips}</div>}
 
           <div className={`lg:gap-4 lg:h-[calc(100vh-190px)] ${mobileTiles ? "hidden" : "lg:flex"}`}>
             {/* Liste */}
@@ -856,6 +921,11 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
           </div>
         </div>
       </div>
+
+      {/* Vue détail plein écran d'une fiche (clic sur une carte). */}
+      {openBusiness && (
+        <BusinessDetail business={openBusiness} onClose={() => setOpenId(null)} />
+      )}
 
       <footer className="border-t border-border py-5 pb-10 text-muted text-[13px] leading-[1.6]">
         <div className="max-w-[1400px] mx-auto px-5">

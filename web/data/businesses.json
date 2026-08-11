@@ -42769,5 +42769,161 @@
     "hours": "",
     "zone": "nord",
     "description": "Restaurant créole et de fruits de mer à Trou aux Biches, au décor chic et soigné, à deux pas de la plage. Spécialités : poisson frit à la créole aux épices, curry créole, homard grillé et plateaux de fruits de mer, ainsi que des pizzas au feu de bois. Service attentionné et accueillant salué par les avis."
+  },
+  {
+    "id": "fast-click",
+    "name": "Fast Click — Port-Louis",
+    "category": "utiles",
+    "address": "Port-Louis",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.172516,57.4692475",
+    "lat": -20.172516,
+    "lng": 57.4692475,
+    "themes": [
+      "informatique-reparation"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "compute-lovers",
+    "name": "Compute Lovers — Beau Bassin / Rose Hill",
+    "category": "utiles",
+    "address": "Beau Bassin / Rose Hill",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.1942442,57.4697515",
+    "lat": -20.1942442,
+    "lng": 57.4697515,
+    "themes": [
+      "informatique-reparation"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "transcom",
+    "name": "Transcom — Beau Bassin / Rose Hill",
+    "category": "utiles",
+    "address": "Beau Bassin / Rose Hill",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.2412426,57.47565",
+    "lat": -20.2412426,
+    "lng": 57.47565,
+    "themes": [
+      "informatique-reparation"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "celebrity",
+    "name": "Celebrity — Port-Louis",
+    "category": "utiles",
+    "address": "Port-Louis",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.1596718,57.5034506",
+    "lat": -20.1596718,
+    "lng": 57.5034506,
+    "themes": [
+      "informatique-reparation"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "vj-computer",
+    "name": "VJ Computer — Beau Bassin / Rose Hill",
+    "category": "utiles",
+    "address": "Beau Bassin / Rose Hill",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.2376194,57.4719264",
+    "lat": -20.2376194,
+    "lng": 57.4719264,
+    "themes": [
+      "informatique-reparation"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "pro-touch",
+    "name": "Pro Touch — Vacoas-Phoenix",
+    "category": "utiles",
+    "address": "Vacoas-Phoenix",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.2725779,57.4713539",
+    "lat": -20.2725779,
+    "lng": 57.4713539,
+    "themes": [
+      "informatique-reparation"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "techstation",
+    "name": "Techstation — Quatre Bornes",
+    "category": "utiles",
+    "address": "Quatre Bornes",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.2634008,57.4825898",
+    "lat": -20.2634008,
+    "lng": 57.4825898,
+    "themes": [
+      "informatique-reparation"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "jacey-computers",
+    "name": "Jacey Computers — Port-Louis",
+    "category": "utiles",
+    "address": "Port-Louis",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.1672952,57.4989444",
+    "lat": -20.1672952,
+    "lng": 57.4989444,
+    "themes": [
+      "informatique-reparation"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "compu-speed",
+    "name": "Compu Speed — Port-Louis",
+    "category": "utiles",
+    "address": "Port-Louis",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.1731158,57.5005206",
+    "lat": -20.1731158,
+    "lng": 57.5005206,
+    "themes": [
+      "informatique-reparation"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "fjariltech-computer-store",
+    "name": "Fjariltech Computer Store — Port-Louis",
+    "category": "utiles",
+    "address": "Port-Louis",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.16591,57.4999019",
+    "lat": -20.16591,
+    "lng": 57.4999019,
+    "themes": [
+      "informatique-reparation"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "g-xpress-computer-system-ltd",
+    "name": "G-Xpress Computer System Ltd — Saint-Pierre",
+    "category": "utiles",
+    "address": "Saint-Pierre",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.2239722,57.5374403",
+    "lat": -20.2239722,
+    "lng": 57.5374403,
+    "themes": [
+      "informatique-reparation"
+    ],
+    "zone": "centre"
+  },
+  {
+    "id": "code-loft",
+    "name": "CODE LOFT — Plaine Magnien VCA",
+    "category": "utiles",
+    "address": "Plaine Magnien VCA",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.4318834,57.6607969",
+    "lat": -20.4318834,
+    "lng": 57.6607969,
+    "themes": [
+      "informatique-reparation"
+    ],
+    "zone": "sud"
   }
 ]
