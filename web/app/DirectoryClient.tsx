@@ -136,6 +136,17 @@ const ZONES: { key: string; label: string; emoji: string }[] = [
   { key: "centre", label: "Centre", emoji: "🎯" },
 ];
 
+// Distance à vol d'oiseau (km) entre deux points GPS — pour « Autour de moi ».
+function haversineKm(aLat: number, aLng: number, bLat: number, bLng: number): number {
+  const R = 6371;
+  const dLat = ((bLat - aLat) * Math.PI) / 180;
+  const dLng = ((bLng - aLng) * Math.PI) / 180;
+  const s =
+    Math.sin(dLat / 2) ** 2 +
+    Math.cos((aLat * Math.PI) / 180) * Math.cos((bLat * Math.PI) / 180) * Math.sin(dLng / 2) ** 2;
+  return 2 * R * Math.asin(Math.sqrt(s));
+}
+
 const Map = dynamic(() => import("./Map"), {
   ssr: false,
   loading: () => (
@@ -157,6 +168,10 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
   const [expandedInSidebar, setExpandedInSidebar] = useState<Set<string>>(new Set());
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [resultsView, setResultsView] = useState<"liste" | "carte">("liste");
+  // « Autour de moi » : tri par distance depuis la position de l'utilisateur.
+  const [nearMe, setNearMe] = useState(false);
+  const [userPos, setUserPos] = useState<{ lat: number; lng: number } | null>(null);
+  const [geoStatus, setGeoStatus] = useState<"idle" | "loading" | "denied" | "unavailable" | "ok">("idle");
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [openId, setOpenId] = useState<string | null>(null);
   const [hoveredId, setHoveredId] = useState<string | null>(null);
@@ -211,6 +226,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
     setNavStack([]);
     setSidebarOpen(false);
     resetRestoFacets();
+    setNearMe(false);
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
@@ -361,7 +377,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
   const restoFacetActive = restoCuisines.size + restoPrices.size + restoAttrs.size > 0;
 
   // Cartes affichées : limitées à la zone visible de la carte si le filtre est actif.
-  const visibleRows = useMemo(() => {
+  const boundedRows = useMemo(() => {
     if (!filterByMap || !mapBounds) return rows;
     return rows.filter(
       (b) =>
@@ -373,6 +389,55 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
           b.lng >= mapBounds.west)
     );
   }, [rows, filterByMap, mapBounds]);
+
+  // « Autour de moi » : distance par fiche + tri du plus proche au plus loin.
+  const distanceById = useMemo(() => {
+    const m: Record<string, number> = {};
+    if (!nearMe || !userPos) return m;
+    boundedRows.forEach((b) => {
+      if (Number.isFinite(b.lat) && Number.isFinite(b.lng)) {
+        m[b.id] = haversineKm(userPos.lat, userPos.lng, b.lat as number, b.lng as number);
+      }
+    });
+    return m;
+  }, [boundedRows, nearMe, userPos]);
+
+  const visibleRows = useMemo(() => {
+    if (!nearMe || !userPos) return boundedRows;
+    return [...boundedRows].sort((a, b) => {
+      const da = distanceById[a.id] ?? Infinity;
+      const db = distanceById[b.id] ?? Infinity;
+      return da - db;
+    });
+  }, [boundedRows, nearMe, userPos, distanceById]);
+
+  // Active « Autour de moi » : demande la position (une fois), puis trie par distance.
+  function toggleNearMe() {
+    if (nearMe) {
+      setNearMe(false);
+      return;
+    }
+    if (userPos) {
+      setNearMe(true);
+      setResultsView("liste");
+      return;
+    }
+    if (typeof navigator === "undefined" || !navigator.geolocation) {
+      setGeoStatus("unavailable");
+      return;
+    }
+    setGeoStatus("loading");
+    navigator.geolocation.getCurrentPosition(
+      (pos) => {
+        setUserPos({ lat: pos.coords.latitude, lng: pos.coords.longitude });
+        setGeoStatus("ok");
+        setNearMe(true);
+        setResultsView("liste");
+      },
+      () => setGeoStatus("denied"),
+      { enableHighAccuracy: true, timeout: 10000, maximumAge: 60000 }
+    );
+  }
 
   function selectFromMap(id: string) {
     setSelectedId(id);
@@ -959,25 +1024,56 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                 — {visibleRows.length} résultat{visibleRows.length > 1 ? "s" : ""}
               </span>
             </div>
-            <div className="lg:hidden inline-flex rounded-full border border-border overflow-hidden shrink-0">
+            <div className="flex items-center gap-2 shrink-0">
+              {/* Mobile : Liste / Carte / Autour de moi */}
+              <div className="lg:hidden inline-flex rounded-full border border-border overflow-hidden">
+                <button
+                  onClick={() => { setNearMe(false); setResultsView("liste"); }}
+                  className={`px-3 py-1.5 text-[13px] font-semibold ${
+                    !nearMe && resultsView === "liste" ? "bg-primary text-white" : "bg-surface text-ink"
+                  }`}
+                >
+                  Liste
+                </button>
+                <button
+                  onClick={() => { setNearMe(false); setResultsView("carte"); }}
+                  className={`px-3 py-1.5 text-[13px] font-semibold ${
+                    !nearMe && resultsView === "carte" ? "bg-primary text-white" : "bg-surface text-ink"
+                  }`}
+                >
+                  Carte
+                </button>
+                <button
+                  onClick={toggleNearMe}
+                  className={`inline-flex items-center gap-1 px-3 py-1.5 text-[13px] font-semibold ${
+                    nearMe ? "bg-primary text-white" : "bg-surface text-ink"
+                  }`}
+                >
+                  <MapPin size={14} weight="fill" aria-hidden /> Autour
+                </button>
+              </div>
+              {/* Desktop : bouton Autour de moi (la liste + carte sont déjà côte à côte) */}
               <button
-                onClick={() => setResultsView("liste")}
-                className={`px-3 py-1.5 text-[13px] font-semibold ${
-                  resultsView === "liste" ? "bg-primary text-white" : "bg-surface text-ink"
+                onClick={toggleNearMe}
+                aria-pressed={nearMe}
+                className={`hidden lg:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full border text-[13px] font-semibold ${
+                  nearMe ? "bg-primary text-white border-primary" : "bg-surface text-ink border-border hover:border-primary"
                 }`}
               >
-                Liste
-              </button>
-              <button
-                onClick={() => setResultsView("carte")}
-                className={`px-3 py-1.5 text-[13px] font-semibold ${
-                  resultsView === "carte" ? "bg-primary text-white" : "bg-surface text-ink"
-                }`}
-              >
-                Carte
+                <MapPin size={15} weight="fill" aria-hidden />
+                {geoStatus === "loading" ? "Localisation…" : "Autour de moi"}
               </button>
             </div>
           </div>
+
+          {geoStatus === "denied" && nearMe === false && (
+            <p className="mb-3 text-[12.5px] text-muted">
+              📍 Position refusée. Autorisez la localisation dans votre navigateur pour trier par distance.
+            </p>
+          )}
+          {geoStatus === "unavailable" && (
+            <p className="mb-3 text-[12.5px] text-muted">📍 Géolocalisation indisponible sur cet appareil.</p>
+          )}
 
           {!mobileTiles && restoFilterBar}
 
@@ -1004,6 +1100,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                       active={b.id === selectedId || b.id === hoveredId}
                       onSelect={selectFromCard}
                       onHover={setHoveredId}
+                      nearbyKm={nearMe ? distanceById[b.id] : undefined}
                       cardRef={(el) => {
                         cardRefs.current[b.id] = el;
                       }}

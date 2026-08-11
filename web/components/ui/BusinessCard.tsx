@@ -58,12 +58,14 @@ export function BusinessCard({
   active,
   onSelect,
   onHover,
+  nearbyKm,
   cardRef,
 }: {
   business: Business;
   active: boolean;
   onSelect: (id: string) => void;
   onHover: (id: string | null) => void;
+  nearbyKm?: number;
   cardRef?: (el: HTMLElement | null) => void;
 }) {
   const accentColor = accentColorFor(b.badge, b.isAgency);
@@ -139,6 +141,11 @@ export function BusinessCard({
         <p className="m-0 text-muted text-body leading-[1.5] flex items-center gap-1">
           <CONTACT_ICONS.MapPin size={14} weight="fill" className="shrink-0 opacity-70" aria-hidden />
           {displayCity(b.address)}
+          {nearbyKm !== undefined && Number.isFinite(nearbyKm) && (
+            <span className="ml-1 inline-flex items-center px-1.5 py-0.5 rounded-pill bg-primary-tint text-primary-deep text-[11px] font-bold">
+              à {nearbyKm < 10 ? nearbyKm.toFixed(1).replace(".", ",") : Math.round(nearbyKm)} km
+            </span>
+          )}
         </p>
         {b.description && (
           <p className="m-0 text-ink text-body leading-[1.5] -mt-1">{b.description}</p>
