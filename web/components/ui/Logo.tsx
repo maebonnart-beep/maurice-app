@@ -25,10 +25,15 @@ export function Logo({ size = 96, light = false }: { size?: number; light?: bool
           </span>
         </span>
       </span>
-      {/* Baseline manuscrite/italique, centrée sous le poulpe + wordmark. */}
-      <span className={`font-serif italic text-[12px] leading-none ${light ? "text-on-band/80" : "text-ink/70"}`}>
-        les adresses de Maurice
-      </span>
+      {/* Baseline « les adresses de Maurice » : version stylée du wordmark (traits +
+          ornement), recolorée en crème pour ressortir sur le bandeau teal. */}
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        src="/tagline-adresses.png"
+        alt="les adresses de Maurice"
+        className="mt-0.5 w-auto object-contain"
+        style={{ height: 20 }}
+      />
     </span>
   );
 }
