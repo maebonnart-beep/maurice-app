@@ -87,6 +87,15 @@ const LIFESTYLE: Umbrella[] = [
     ],
   },
   {
+    key: "se-relaxer",
+    label: "Se relaxer",
+    emoji: "🧘",
+    color: "#5a9e86",
+    rubriques: [
+      "spa-instituts", "medecine-douce", "yoga-pilates", "plages", "parcs-botaniques",
+    ],
+  },
+  {
     key: "shopping",
     label: "Shopping",
     emoji: "🛍️",

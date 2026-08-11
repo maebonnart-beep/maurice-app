@@ -31,6 +31,7 @@ export const ICON_MAP: Record<string, Icon> = {
   // Univers lifestyle
   manger: ForkKnife, sortir: Martini, bouger: PersonSimpleRun,
   shopping: ShoppingBag, famille: UsersThree, pratique: Briefcase,
+  "se-relaxer": FlowerLotus,
 
   // Sous-rubriques d'univers (Bouger)
   "bouger-nature": Leaf, "bouger-sports": Barbell,
