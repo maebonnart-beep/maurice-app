@@ -258,7 +258,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
   // Mobile : forcer la liste à plat malgré l'écran d'accueil par catégories.
   const [browseAll, setBrowseAll] = useState(false);
   // Accueil « Option A » : menu d'entrée → puis mode choisi.
-  const [homeMode, setHomeMode] = useState<"menu" | "categories" | "favoris" | "listes">("menu");
+  const [homeMode, setHomeMode] = useState<"menu" | "categories" | "recherche" | "favoris" | "listes">("menu");
   // Navigation en tuiles à niveaux : pile de nœuds (univers → familles → rubriques →
   // sous-groupes). Vide = grille des univers (accueil).
   const [navStack, setNavStack] = useState<NavNode[]>([]);
@@ -587,6 +587,11 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
 
   // On montre des tuiles (univers / niveaux) plutôt que la liste.
   const mobileTiles = showHome;
+
+  // La recherche n'est plus dans le bandeau sur l'accueil : accessible uniquement
+  // via l'entrée « Recherche » du menu. Elle réapparaît dès qu'on est en résultats
+  // (query active / catégorie) ou en mode recherche explicite.
+  const showHeaderSearch = !showHome || homeMode === "recherche";
 
   // Compte distinct de fiches ayant l'une des rubriques données (tenant compte de la zone).
   const countThemes = (keys: string[]) => {
@@ -1026,13 +1031,15 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
             </button>
             {headerZoneSelect}
           </div>
-          <div className="max-w-[640px]">
-            <SearchInput
-              value={query}
-              onChange={setQuery}
-              placeholder="Rechercher une activité, un lieu, un nom…"
-            />
-          </div>
+          {showHeaderSearch && (
+            <div className="max-w-[640px]">
+              <SearchInput
+                value={query}
+                onChange={setQuery}
+                placeholder="Rechercher une activité, un lieu, un nom…"
+              />
+            </div>
+          )}
         </div>
       </header>
 
@@ -1049,7 +1056,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
               <p className="text-[13px] font-semibold text-muted mb-2.5">Que cherchez-vous ?</p>
               <div className="grid grid-cols-2 gap-3 max-w-[520px]">
                 <HomeEntry Icon={SquaresFour} title="Par catégorie" subtitle="6 univers" onClick={() => setHomeMode("categories")} />
-                <HomeEntry Icon={MagnifyingGlass} title="Recherche" subtitle="lieu, nom, activité" onClick={focusSearch} />
+                <HomeEntry Icon={MagnifyingGlass} title="Recherche" subtitle="lieu, nom, activité" onClick={() => { setHomeMode("recherche"); setTimeout(focusSearch, 60); }} />
                 <HomeEntry Icon={Heart} title="Mes favoris" subtitle="et mes listes" onClick={() => setHomeMode("favoris")} />
                 <HomeEntry Icon={Star} title="Listes de Koté Moris" subtitle="nos sélections" onClick={() => setHomeMode("listes")} />
               </div>
@@ -1106,6 +1113,24 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                   </div>
                 </div>
               )}
+            </div>
+          )}
+
+          {/* Accueil → Recherche : le champ apparaît dans le bandeau ; corps = invite. */}
+          {showHome && navStack.length === 0 && homeMode === "recherche" && (
+            <div className="pb-16">
+              <button
+                onClick={() => setHomeMode("menu")}
+                className="inline-flex items-center gap-1.5 text-[13px] font-semibold text-primary-deep mb-2.5 active:scale-[.98]"
+              >
+                ← Menu
+              </button>
+              <div className="mt-8 max-w-[380px] mx-auto text-center text-muted flex flex-col items-center gap-2.5">
+                <MagnifyingGlass size={34} weight="duotone" aria-hidden />
+                <p className="text-[14px] leading-snug">
+                  Recherchez une activité, un lieu ou un nom dans la barre ci-dessus.
+                </p>
+              </div>
             </div>
           )}
 
