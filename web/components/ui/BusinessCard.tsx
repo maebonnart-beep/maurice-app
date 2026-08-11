@@ -14,6 +14,8 @@ import {
 import { CategoryBadge, SpecialBadge, accentColorFor } from "./Badge";
 import { Tag } from "./Tag";
 import { ActionButton } from "./ActionButton";
+import { iconForKey, FACT_ICONS, CONTACT_ICONS } from "@/lib/icons";
+import type { Icon } from "@phosphor-icons/react";
 
 const DIFFICULTY_LABELS: Record<string, string> = {
   debutant: "Débutant",
@@ -22,31 +24,31 @@ const DIFFICULTY_LABELS: Record<string, string> = {
 };
 
 /** Faits chiffrés d'une fiche (distance, durée, prix d'entrée…) selon sa rubrique. */
-export function metaFacts(b: Business): { icon: string; label: string }[] {
-  const facts: { icon: string; label: string }[] = [];
-  if (b.distance) facts.push({ icon: "📏", label: b.distance });
-  if (b.elevationGain) facts.push({ icon: "⛰️", label: b.elevationGain });
-  if (b.duration) facts.push({ icon: "⏱️", label: b.duration });
-  if (b.entryPrice) facts.push({ icon: "🎟️", label: b.entryPrice });
-  if (b.difficultyLevel) facts.push({ icon: "🥾", label: DIFFICULTY_LABELS[b.difficultyLevel] });
+export function metaFacts(b: Business): { Icon: Icon; label: string }[] {
+  const facts: { Icon: Icon; label: string }[] = [];
+  if (b.distance) facts.push({ Icon: FACT_ICONS.distance, label: b.distance });
+  if (b.elevationGain) facts.push({ Icon: FACT_ICONS.elevationGain, label: b.elevationGain });
+  if (b.duration) facts.push({ Icon: FACT_ICONS.duration, label: b.duration });
+  if (b.entryPrice) facts.push({ Icon: FACT_ICONS.entryPrice, label: b.entryPrice });
+  if (b.difficultyLevel) facts.push({ Icon: FACT_ICONS.difficultyLevel, label: DIFFICULTY_LABELS[b.difficultyLevel] });
   if (b.guideRecommended !== undefined && !b.isAgency)
-    facts.push({ icon: "🧭", label: b.guideRecommended ? "Guide conseillé" : "Sans guide" });
-  if (b.sportsListed) facts.push({ icon: "🏃", label: b.sportsListed });
+    facts.push({ Icon: FACT_ICONS.guide, label: b.guideRecommended ? "Guide conseillé" : "Sans guide" });
+  if (b.sportsListed) facts.push({ Icon: FACT_ICONS.sports, label: b.sportsListed });
   if (b.hasRestauration !== undefined)
-    facts.push({ icon: "🍽️", label: b.hasRestauration ? "Restauration sur place" : "Pas de restauration" });
-  if (b.ttvFriendly) facts.push({ icon: "💻", label: "Adapté télétravail" });
-  if (b.kidsActivities) facts.push({ icon: "🧒", label: "Activités enfants" });
-  if (b.sandType) facts.push({ icon: "🏖️", label: b.sandType });
-  if (b.beachActivities) facts.push({ icon: "🎯", label: b.beachActivities });
-  if (b.beachLength) facts.push({ icon: "📏", label: b.beachLength });
-  if (b.animalsVisible) facts.push({ icon: "🦁", label: b.animalsVisible });
+    facts.push({ Icon: FACT_ICONS.restauration, label: b.hasRestauration ? "Restauration sur place" : "Pas de restauration" });
+  if (b.ttvFriendly) facts.push({ Icon: FACT_ICONS.ttv, label: "Adapté télétravail" });
+  if (b.kidsActivities) facts.push({ Icon: FACT_ICONS.kids, label: "Activités enfants" });
+  if (b.sandType) facts.push({ Icon: FACT_ICONS.sand, label: b.sandType });
+  if (b.beachActivities) facts.push({ Icon: FACT_ICONS.beach, label: b.beachActivities });
+  if (b.beachLength) facts.push({ Icon: FACT_ICONS.distance, label: b.beachLength });
+  if (b.animalsVisible) facts.push({ Icon: FACT_ICONS.animals, label: b.animalsVisible });
   if (b.golfHoles)
     facts.push({
-      icon: "⛳",
+      Icon: FACT_ICONS.golf,
       label: `${b.golfHoles} trous${b.golfPar ? ` par ${b.golfPar}` : ""}${b.golfLength ? `, ${b.golfLength}` : ""}`,
     });
-  if (b.golfDesigner) facts.push({ icon: "✏️", label: b.golfDesigner });
-  if (b.golfPricing) facts.push({ icon: "💰", label: b.golfPricing });
+  if (b.golfDesigner) facts.push({ Icon: FACT_ICONS.golfDesigner, label: b.golfDesigner });
+  if (b.golfPricing) facts.push({ Icon: FACT_ICONS.golfPricing, label: b.golfPricing });
   return facts;
 }
 
@@ -118,11 +120,13 @@ export function BusinessCard({
           {b.isAgency && <SpecialBadge variant="agence" />}
           {b.themes?.map((tKey) => {
             const theme = SUBCATEGORIES[b.category]?.find((t) => t.key === tKey);
-            return theme ? (
-              <Tag key={tKey} icon={theme.emoji}>
+            if (!theme) return null;
+            const TIcon = iconForKey(tKey);
+            return (
+              <Tag key={tKey} icon={TIcon ? <TIcon size={13} weight="bold" aria-hidden /> : theme.emoji}>
                 {theme.label}
               </Tag>
-            ) : null;
+            );
           })}
           {price && (
             <Tag icon={price.symbol}>{price.label}</Tag>
@@ -132,17 +136,23 @@ export function BusinessCard({
         <h3 className="m-0 font-serif text-[17px] font-semibold leading-[1.2] tracking-[-.005em]">
           {displayName(b.name)}
         </h3>
-        <p className="m-0 text-muted text-body leading-[1.5]">📍 {displayCity(b.address)}</p>
+        <p className="m-0 text-muted text-body leading-[1.5] flex items-center gap-1">
+          <CONTACT_ICONS.MapPin size={14} weight="fill" className="shrink-0 opacity-70" aria-hidden />
+          {displayCity(b.address)}
+        </p>
         {b.description && (
           <p className="m-0 text-ink text-body leading-[1.5] -mt-1">{b.description}</p>
         )}
         {b.hours && (
-          <p className="m-0 text-muted text-caption leading-[1.4] -mt-1">🕒 {b.hours}</p>
+          <p className="m-0 text-muted text-caption leading-[1.4] -mt-1 flex items-center gap-1">
+            <CONTACT_ICONS.Clock size={13} weight="bold" className="shrink-0 opacity-70" aria-hidden />
+            {b.hours}
+          </p>
         )}
         {facts.length > 0 && (
           <div className="flex flex-wrap gap-1.5 -mt-1">
             {facts.map((f, i) => (
-              <Tag key={i} icon={f.icon}>
+              <Tag key={i} icon={<f.Icon size={13} weight="bold" aria-hidden />}>
                 {f.label}
               </Tag>
             ))}
@@ -159,7 +169,7 @@ export function BusinessCard({
               <ActionButton
                 href={tel(b.phone)}
                 variant="primary"
-                icon="📞"
+                icon={<CONTACT_ICONS.Phone size={15} weight="fill" aria-hidden />}
                 onClick={(e) => {
                   e.stopPropagation();
                   trackEvent(b.id, "call");
@@ -168,12 +178,16 @@ export function BusinessCard({
                 Appeler
               </ActionButton>
             ) : (
-              <ActionButton disabled icon="📞">
+              <ActionButton disabled icon={<CONTACT_ICONS.Phone size={15} weight="fill" aria-hidden />}>
                 Sans tél.
               </ActionButton>
             ))}
           {b.email && (
-            <ActionButton href={`mailto:${b.email}`} icon="✉️" onClick={(e) => e.stopPropagation()}>
+            <ActionButton
+              href={`mailto:${b.email}`}
+              icon={<CONTACT_ICONS.EnvelopeSimple size={15} weight="bold" aria-hidden />}
+              onClick={(e) => e.stopPropagation()}
+            >
               Email
             </ActionButton>
           )}
@@ -181,7 +195,7 @@ export function BusinessCard({
             <ActionButton
               href={whatsappLink(waNumber)}
               external
-              icon="💬"
+              icon={<CONTACT_ICONS.WhatsappLogo size={15} weight="fill" aria-hidden />}
               onClick={(e) => {
                 e.stopPropagation();
                 trackEvent(b.id, "whatsapp");
@@ -194,7 +208,7 @@ export function BusinessCard({
             <ActionButton
               href={b.website}
               external
-              icon="🌐"
+              icon={<CONTACT_ICONS.Globe size={15} weight="bold" aria-hidden />}
               onClick={(e) => {
                 e.stopPropagation();
                 trackEvent(b.id, "website");
@@ -207,7 +221,7 @@ export function BusinessCard({
             <ActionButton
               href={b.googleMapsUrl}
               external
-              icon="📍"
+              icon={<CONTACT_ICONS.NavigationArrow size={15} weight="fill" aria-hidden />}
               onClick={(e) => {
                 e.stopPropagation();
                 trackEvent(b.id, "directions");

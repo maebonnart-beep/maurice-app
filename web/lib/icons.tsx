@@ -23,6 +23,8 @@ import {
   Scissors, Needle, PersonSimpleTaiChi, Plant, Handshake, Motorcycle, Medal,
   MaskHappy, Coins, Diamond, MapPin, ArrowUp, ArrowDown, ArrowLeft, ArrowRight,
   Target, GlobeHemisphereWest,
+  Clock, Phone, EnvelopeSimple, WhatsappLogo, Globe, NavigationArrow, Ruler,
+  TrendUp, Ticket, PencilSimple, Compass,
 } from "@phosphor-icons/react";
 
 export const ICON_MAP: Record<string, Icon> = {
@@ -118,9 +120,34 @@ export const ICON_MAP: Record<string, Icon> = {
   centre: Target, "toute-lile": GlobeHemisphereWest,
 };
 
-/** Icône Phosphor pour une clé, ou fallback MapPin si non mappée. */
+/** Icône Phosphor pour une clé, ou null si non mappée. */
 export function iconForKey(key: string): Icon | null {
   return ICON_MAP[key] ?? null;
 }
 
-export { MapPin };
+/** Rend l'icône d'une clé si mappée (sinon rien) — pratique dans un Tag/badge. */
+export function KeyIcon({
+  keyName,
+  size = 14,
+  weight = "bold",
+  className,
+}: {
+  keyName: string;
+  size?: number;
+  weight?: "thin" | "light" | "regular" | "bold" | "fill" | "duotone";
+  className?: string;
+}) {
+  const I = iconForKey(keyName);
+  return I ? <I size={size} weight={weight} className={className} aria-hidden /> : null;
+}
+
+// Icônes de contact et de faits chiffrés (fiches).
+export const CONTACT_ICONS = { Phone, EnvelopeSimple, WhatsappLogo, Globe, NavigationArrow, MapPin, Clock } as const;
+export const FACT_ICONS = {
+  distance: Ruler, elevationGain: TrendUp, duration: Clock, entryPrice: Ticket,
+  difficultyLevel: PersonSimpleHike, guide: Compass, sports: Barbell,
+  restauration: ForkKnife, ttv: Laptop, kids: Baby, sand: Waves, beach: Target,
+  animals: PawPrint, golf: Golf, golfDesigner: PencilSimple, golfPricing: Coins,
+} as const;
+
+export { MapPin, Clock, Phone, EnvelopeSimple, WhatsappLogo, Globe, NavigationArrow };

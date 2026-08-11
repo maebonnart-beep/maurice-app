@@ -11,7 +11,7 @@ import { SearchInput } from "@/components/ui/SearchInput";
 import { CategoryTile } from "@/components/ui/CategoryTile";
 import { BusinessCard } from "@/components/ui/BusinessCard";
 import { BusinessDetail } from "@/components/ui/BusinessDetail";
-import { iconForKey } from "@/lib/icons";
+import { iconForKey, MapPin } from "@/lib/icons";
 
 const UNCLASSIFIED = "__unclassified__";
 const SIDEBAR_VISIBLE_RUBRIQUES = 5;
@@ -669,50 +669,24 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
 
   // Sélecteur de zone horizontal (chips) : proposé APRÈS le choix de l'action,
   // avec « Toute l'île » par défaut. Réutilisé en navigation tuiles et résultats.
-  // Sélecteur de zone en « boussole » : Nord en haut, Sud en bas, Ouest/Est sur
-  // les côtés, Centre au milieu — entièrement visible sans défilement.
-  const zoneCell = (key: string) => {
-    const z = ZONES.find((x) => x.key === key)!;
-    const on = activeZone === key;
-    const ZIcon = iconForKey(key);
-    return (
-      <button
-        onClick={() => toggleZone(key)}
-        aria-pressed={on}
-        className={`flex flex-col items-center justify-center gap-0.5 py-2 rounded-xl border text-[12.5px] font-semibold leading-tight transition-colors ${
-          on ? "bg-primary text-white border-primary" : "bg-surface text-ink border-border hover:border-primary"
-        }`}
+  // Sélecteur de région compact, placé dans le bandeau à droite du logo.
+  const headerZoneSelect = (
+    <div className="flex items-center gap-1.5 shrink-0">
+      <MapPin size={16} weight="fill" className="text-on-band/80" aria-hidden />
+      <select
+        value={activeZone ?? ""}
+        onChange={(e) => setActiveZone(e.target.value || null)}
+        aria-label="Région"
+        style={{ colorScheme: "dark" }}
+        className="bg-white/15 text-on-band text-[13px] font-semibold rounded-pill pl-3 pr-2 py-1.5 border border-white/25 focus:outline-none focus:border-white/60 cursor-pointer"
       >
-        {ZIcon ? <ZIcon size={18} weight="bold" aria-hidden /> : <span className="text-[15px]">{z.emoji}</span>}
-        <span>{z.label}</span>
-        <span className={`text-[10.5px] font-bold ${on ? "opacity-80" : "opacity-55"}`}>{zoneCounts[z.key] || 0}</span>
-      </button>
-    );
-  };
-
-  const AllIslandIcon = iconForKey("toute-lile");
-  const zoneChips = (
-    <div className="mb-3 max-w-[280px]">
-      <button
-        onClick={() => setActiveZone(null)}
-        aria-pressed={activeZone === null}
-        className={`w-full mb-1.5 py-1.5 rounded-pill text-[13px] font-semibold border transition-colors inline-flex items-center justify-center gap-1.5 ${
-          activeZone === null ? "bg-primary text-white border-primary" : "bg-surface text-ink border-border hover:border-primary"
-        }`}
-      >
-        {AllIslandIcon ? <AllIslandIcon size={16} weight="bold" aria-hidden /> : "📍"} Toute l&apos;île
-      </button>
-      <div className="grid grid-cols-3 grid-rows-3 gap-1.5">
-        <span />
-        {zoneCell("nord")}
-        <span />
-        {zoneCell("ouest")}
-        {zoneCell("centre")}
-        {zoneCell("est")}
-        <span />
-        {zoneCell("sud")}
-        <span />
-      </div>
+        <option value="">Toute l&apos;île</option>
+        {ZONES.map((z) => (
+          <option key={z.key} value={z.key}>
+            {z.label} ({zoneCounts[z.key] || 0})
+          </option>
+        ))}
+      </select>
     </div>
   );
 
@@ -721,13 +695,16 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
       {/* En-tête « Lagon » : bandeau teal poulpe, logo clair + recherche */}
       <header className="sticky top-0 z-30 bg-band border-b border-band-deep shadow-sm">
         <div className="max-w-[1400px] mx-auto px-5 pt-3 pb-3.5 flex flex-col gap-3">
-          <button
-            onClick={goHome}
-            aria-label="Retour à l'accueil"
-            className="self-start rounded-lg -ml-1 px-1 py-1 hover:opacity-90 active:scale-[.98] transition"
-          >
-            <Logo light />
-          </button>
+          <div className="flex items-center justify-between gap-3">
+            <button
+              onClick={goHome}
+              aria-label="Retour à l'accueil"
+              className="rounded-lg -ml-1 px-1 py-1 hover:opacity-90 active:scale-[.98] transition"
+            >
+              <Logo light />
+            </button>
+            {headerZoneSelect}
+          </div>
           <div className="max-w-[640px]">
             <SearchInput
               value={query}
@@ -813,9 +790,6 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                     ← Retour
                   </button>
                   <p className="text-[15px] font-semibold mb-2.5 truncate">{path}</p>
-                  {/* Étape zone : d'abord l'action (univers), ensuite où sur l'île. */}
-                  <p className="text-[12px] font-semibold text-muted mb-1.5">Dans quelle région ?</p>
-                  {zoneChips}
                   <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2.5">
                     {tiles.map((t) => (
                       <CategoryTile
@@ -873,9 +847,6 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
               </button>
             </div>
           </div>
-
-          {/* Zone ajustable en résultats (mobile) — desktop a déjà la sidebar. */}
-          {!mobileTiles && <div className="lg:hidden">{zoneChips}</div>}
 
           <div className={`lg:gap-4 lg:h-[calc(100vh-190px)] ${mobileTiles ? "hidden" : "lg:flex"}`}>
             {/* Liste */}

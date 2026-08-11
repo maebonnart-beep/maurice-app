@@ -1,33 +1,40 @@
 "use client";
 
 import { useEffect, useId, useRef, useState } from "react";
+import { renderToStaticMarkup } from "react-dom/server";
 import { MapContainer, TileLayer, Marker, Popup, useMap, useMapEvents } from "react-leaflet";
 import L from "leaflet";
 import type { Marker as LeafletMarker } from "leaflet";
 import type { Business } from "@/lib/types";
-import { CATEGORY_MAP, SUBCATEGORIES } from "@/data/categories";
+import { CATEGORY_MAP } from "@/data/categories";
 import { tel, webLabel, whatsappLink, displayName, displayCity, whatsappNumber } from "@/lib/format";
+import { iconForKey, CONTACT_ICONS } from "@/lib/icons";
 import "leaflet/dist/leaflet.css";
 
 const GRAND_BAIE: [number, number] = [-20.0064, 57.5802];
 
-// Picto propre à la rubrique (thème) plutôt qu'un simple point de couleur.
-function markerEmoji(b: Business): string {
-  const subcats = SUBCATEGORIES[b.category as keyof typeof SUBCATEGORIES];
-  if (subcats && b.themes && b.themes.length > 0) {
-    const match = subcats.find((s) => s.key === b.themes![0]);
-    if (match) return match.emoji;
-  }
-  return CATEGORY_MAP[b.category].emoji;
+// Glyphe du marqueur : icône Phosphor (trait) propre à la rubrique (thème) sinon
+// à la catégorie. Rendu en SVG (chaîne) pour le divIcon Leaflet, mémoïsé par clé.
+const glyphCache: Record<string, string> = {};
+function markerGlyph(b: Business): string {
+  const themeKey = b.themes?.[0] && iconForKey(b.themes[0]) ? b.themes[0] : b.category;
+  const cached = glyphCache[themeKey];
+  if (cached) return cached;
+  const Icon = iconForKey(themeKey);
+  const html = Icon
+    ? renderToStaticMarkup(<Icon size={17} color="#fff" weight="bold" />)
+    : `<span>${CATEGORY_MAP[b.category].emoji}</span>`;
+  glyphCache[themeKey] = html;
+  return html;
 }
 
-function buildIcon(emoji: string, color: string, selected: boolean, hovered: boolean) {
+function buildIcon(inner: string, color: string, selected: boolean, hovered: boolean) {
   const size = selected ? 34 : hovered ? 31 : 27;
   const ring = hovered && !selected ? "0 0 0 3px #fff, 0 0 0 5px " + color : "0 1px 4px rgba(0,0,0,.35)";
   return L.divIcon({
     html: `<div style="width:${size}px;height:${size}px;border-radius:50%;background:${color};display:flex;align-items:center;justify-content:center;font-size:${Math.round(
       size * 0.55
-    )}px;line-height:1;border:2px solid #fff;box-shadow:${ring};">${emoji}</div>`,
+    )}px;line-height:1;border:2px solid #fff;box-shadow:${ring};">${inner}</div>`,
     className: "",
     iconSize: [size, size],
     iconAnchor: [size / 2, size / 2],
@@ -177,7 +184,7 @@ export default function Map({
               if (el) markersRef.current[b.id] = el;
             }}
             position={[b.lat as number, b.lng as number]}
-            icon={buildIcon(markerEmoji(b), cat.color, b.id === selectedId, b.id === hoveredId)}
+            icon={buildIcon(markerGlyph(b), cat.color, b.id === selectedId, b.id === hoveredId)}
             eventHandlers={{
               click: () => onSelect(b.id),
               mouseover: () => onHover?.(b.id),
@@ -187,17 +194,24 @@ export default function Map({
             <Popup minWidth={210}>
               <div>
                 <b className="block text-sm mb-0.5">{displayName(b.name)}</b>
-                <span className="block text-xs text-gray-600 mb-1.5">
-                  {cat.emoji} {cat.label}
+                <span className="flex items-center gap-1 text-xs text-gray-600 mb-1.5">
+                  {(() => {
+                    const CIcon = iconForKey(b.category);
+                    return CIcon ? <CIcon size={13} weight="bold" aria-hidden /> : cat.emoji;
+                  })()}
+                  {cat.label}
                 </span>
-                <div className="text-[12.5px] text-gray-700 mb-2">📍 {displayCity(b.address)}</div>
+                <div className="flex items-center gap-1 text-[12.5px] text-gray-700 mb-2">
+                  <CONTACT_ICONS.MapPin size={13} weight="fill" className="shrink-0 opacity-70" aria-hidden />
+                  {displayCity(b.address)}
+                </div>
                 <div className="flex flex-wrap gap-1.5">
                   {b.phone && (
                     <a
                       href={tel(b.phone)}
-                      className="inline-flex items-center px-2 py-1.5 rounded-lg text-xs font-semibold no-underline bg-[#0e8b84] text-white"
+                      className="inline-flex items-center gap-1 px-2 py-1.5 rounded-lg text-xs font-semibold no-underline bg-[#0e8b84] text-white"
                     >
-                      📞 Appeler
+                      <CONTACT_ICONS.Phone size={13} weight="fill" aria-hidden /> Appeler
                     </a>
                   )}
                   {b.website && (
@@ -205,9 +219,9 @@ export default function Map({
                       href={b.website}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center px-2 py-1.5 rounded-lg text-xs font-semibold no-underline bg-[#eef4f3] text-[#0a6d67]"
+                      className="inline-flex items-center gap-1 px-2 py-1.5 rounded-lg text-xs font-semibold no-underline bg-[#eef4f3] text-[#0a6d67]"
                     >
-                      🌐 {webLabel(b.website)}
+                      <CONTACT_ICONS.Globe size={13} weight="bold" aria-hidden /> {webLabel(b.website)}
                     </a>
                   )}
                   {whatsappNumber(b) && (
@@ -215,9 +229,9 @@ export default function Map({
                       href={whatsappLink(whatsappNumber(b) as string)}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center px-2 py-1.5 rounded-lg text-xs font-semibold no-underline bg-[#eef4f3] text-[#0a6d67]"
+                      className="inline-flex items-center gap-1 px-2 py-1.5 rounded-lg text-xs font-semibold no-underline bg-[#eef4f3] text-[#0a6d67]"
                     >
-                      💬 WhatsApp
+                      <CONTACT_ICONS.WhatsappLogo size={13} weight="fill" aria-hidden /> WhatsApp
                     </a>
                   )}
                   {b.googleMapsUrl && (
@@ -225,9 +239,9 @@ export default function Map({
                       href={b.googleMapsUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center px-2 py-1.5 rounded-lg text-xs font-semibold no-underline bg-[#eef4f3] text-[#0a6d67]"
+                      className="inline-flex items-center gap-1 px-2 py-1.5 rounded-lg text-xs font-semibold no-underline bg-[#eef4f3] text-[#0a6d67]"
                     >
-                      📍 Itinéraire
+                      <CONTACT_ICONS.NavigationArrow size={13} weight="fill" aria-hidden /> Itinéraire
                     </a>
                   )}
                 </div>

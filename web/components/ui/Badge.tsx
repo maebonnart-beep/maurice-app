@@ -1,5 +1,6 @@
 import type { CategoryKey } from "@/lib/types";
 import { CATEGORY_MAP } from "@/data/categories";
+import { iconForKey } from "@/lib/icons";
 
 // Couleurs d'accent des badges spéciaux — partagées avec l'accent latéral des fiches.
 export const COUP_DE_COEUR_COLOR = "#ff2d6a";
@@ -9,12 +10,13 @@ export const AGENCY_COLOR = "#6366f1";
 /** Badge de catégorie : pastille pleine colorée à la couleur de la catégorie. */
 export function CategoryBadge({ category }: { category: CategoryKey }) {
   const cat = CATEGORY_MAP[category];
+  const Icon = iconForKey(category);
   return (
     <span
       className="self-start inline-flex items-center gap-1.5 px-2.5 py-1 rounded-pill text-white text-xs font-bold"
       style={{ background: cat.color }}
     >
-      {cat.emoji} {cat.label}
+      {Icon ? <Icon size={13} weight="bold" aria-hidden /> : cat.emoji} {cat.label}
     </span>
   );
 }

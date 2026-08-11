@@ -16,6 +16,7 @@ import { CategoryBadge, SpecialBadge, accentColorFor } from "./Badge";
 import { Tag } from "./Tag";
 import { ActionButton } from "./ActionButton";
 import { metaFacts } from "./BusinessCard";
+import { iconForKey, CONTACT_ICONS } from "@/lib/icons";
 
 /**
  * Vue détail « plein écran » d'une fiche : ouverte au clic depuis la liste/carte.
@@ -100,11 +101,13 @@ export function BusinessDetail({
               {b.isAgency && <SpecialBadge variant="agence" />}
               {b.themes?.map((tKey) => {
                 const theme = SUBCATEGORIES[b.category]?.find((t) => t.key === tKey);
-                return theme ? (
-                  <Tag key={tKey} icon={theme.emoji}>
+                if (!theme) return null;
+                const TIcon = iconForKey(tKey);
+                return (
+                  <Tag key={tKey} icon={TIcon ? <TIcon size={13} weight="bold" aria-hidden /> : theme.emoji}>
                     {theme.label}
                   </Tag>
-                ) : null;
+                );
               })}
               {price && <Tag icon={price.symbol}>{price.label}</Tag>}
               {b.takeaway && <Tag icon="🥡">À emporter</Tag>}
@@ -113,19 +116,25 @@ export function BusinessDetail({
             <h2 className="m-0 font-serif text-[24px] font-semibold leading-[1.15] tracking-[-.01em]">
               {displayName(b.name)}
             </h2>
-            <p className="m-0 text-muted text-[14px] leading-[1.5]">📍 {displayCity(b.address)}</p>
+            <p className="m-0 text-muted text-[14px] leading-[1.5] flex items-center gap-1.5">
+              <CONTACT_ICONS.MapPin size={15} weight="fill" className="shrink-0 opacity-70" aria-hidden />
+              {displayCity(b.address)}
+            </p>
 
             {b.description && (
               <p className="m-0 text-ink text-[14.5px] leading-[1.6]">{b.description}</p>
             )}
             {b.hours && (
-              <p className="m-0 text-muted text-[13px] leading-[1.45]">🕒 {b.hours}</p>
+              <p className="m-0 text-muted text-[13px] leading-[1.45] flex items-center gap-1.5">
+                <CONTACT_ICONS.Clock size={14} weight="bold" className="shrink-0 opacity-70" aria-hidden />
+                {b.hours}
+              </p>
             )}
 
             {facts.length > 0 && (
               <div className="flex flex-wrap gap-1.5">
                 {facts.map((f, i) => (
-                  <Tag key={i} icon={f.icon}>
+                  <Tag key={i} icon={<f.Icon size={13} weight="bold" aria-hidden />}>
                     {f.label}
                   </Tag>
                 ))}
@@ -143,18 +152,21 @@ export function BusinessDetail({
                 <ActionButton
                   href={tel(b.phone)}
                   variant="primary"
-                  icon="📞"
+                  icon={<CONTACT_ICONS.Phone size={16} weight="fill" aria-hidden />}
                   onClick={() => trackEvent(b.id, "call")}
                 >
                   Appeler
                 </ActionButton>
               ) : (
-                <ActionButton disabled icon="📞">
+                <ActionButton disabled icon={<CONTACT_ICONS.Phone size={16} weight="fill" aria-hidden />}>
                   Sans tél.
                 </ActionButton>
               )}
               {b.email && (
-                <ActionButton href={`mailto:${b.email}`} icon="✉️">
+                <ActionButton
+                  href={`mailto:${b.email}`}
+                  icon={<CONTACT_ICONS.EnvelopeSimple size={16} weight="bold" aria-hidden />}
+                >
                   Email
                 </ActionButton>
               )}
@@ -162,7 +174,7 @@ export function BusinessDetail({
                 <ActionButton
                   href={whatsappLink(waNumber)}
                   external
-                  icon="💬"
+                  icon={<CONTACT_ICONS.WhatsappLogo size={16} weight="fill" aria-hidden />}
                   onClick={() => trackEvent(b.id, "whatsapp")}
                 >
                   WhatsApp
@@ -172,7 +184,7 @@ export function BusinessDetail({
                 <ActionButton
                   href={b.website}
                   external
-                  icon="🌐"
+                  icon={<CONTACT_ICONS.Globe size={16} weight="bold" aria-hidden />}
                   onClick={() => trackEvent(b.id, "website")}
                 >
                   {webLabel(b.website)}
@@ -182,7 +194,7 @@ export function BusinessDetail({
                 <ActionButton
                   href={b.googleMapsUrl}
                   external
-                  icon="📍"
+                  icon={<CONTACT_ICONS.NavigationArrow size={16} weight="fill" aria-hidden />}
                   onClick={() => trackEvent(b.id, "directions")}
                 >
                   Itinéraire
