@@ -14,12 +14,15 @@ import { BusinessDetail } from "@/components/ui/BusinessDetail";
 import { FilterDropdown, type DropdownOption } from "@/components/ui/FilterDropdown";
 import { iconForKey, MapPin } from "@/lib/icons";
 
-// Facettes de filtrage propres aux restaurants (rubrique "restaurants").
-const RESTO_CUISINES = [
-  "mauricienne", "fruits-de-mer", "indienne", "asiatique", "sushis",
-  "europeenne", "italien", "grillades", "vegetarien",
-];
+// Attributs d'ambiance propres aux restaurants (facette « Ambiance »).
 const RESTO_ATTRS = ["tables-exception", "plus-belles-vues", "frequente-locaux", "kids-friendly"];
+
+// Badges → facette « Sélection » (coups de cœur & recommandations), toutes rubriques.
+const BADGE_META: { key: string; label: string; emoji: string }[] = [
+  { key: "coup-de-coeur", label: "Coup de cœur", emoji: "💛" },
+  { key: "selection", label: "Sélection Koté Moris", emoji: "🏅" },
+  { key: "partenaire", label: "Partenaire", emoji: "⭐" },
+];
 
 const UNCLASSIFIED = "__unclassified__";
 const SIDEBAR_VISIBLE_RUBRIQUES = 5;
@@ -161,10 +164,11 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
   const [active, setActive] = useState<string>("all");
   const [activeThemes, setActiveThemes] = useState<Set<string>>(new Set());
   const [activeZone, setActiveZone] = useState<string | null>(null);
-  // Facettes restaurants (cuisine / prix / ambiance) — multi-sélection.
-  const [restoCuisines, setRestoCuisines] = useState<Set<string>>(new Set());
-  const [restoPrices, setRestoPrices] = useState<Set<string>>(new Set());
-  const [restoAttrs, setRestoAttrs] = useState<Set<string>>(new Set());
+  // Facettes de rubrique (type / prix / ambiance) — multi-sélection.
+  const [facetTypes, setFacetTypes] = useState<Set<string>>(new Set());
+  const [facetPrices, setFacetPrices] = useState<Set<string>>(new Set());
+  const [facetAttrs, setFacetAttrs] = useState<Set<string>>(new Set());
+  const [facetBadges, setFacetBadges] = useState<Set<string>>(new Set());
   const [expandedInSidebar, setExpandedInSidebar] = useState<Set<string>>(new Set());
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [resultsView, setResultsView] = useState<"liste" | "carte">("liste");
@@ -201,9 +205,10 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
   const ungroupedSubcategories = subcategories?.filter((s) => !familyChildKeys.has(s.key)) ?? [];
 
   function resetRestoFacets() {
-    setRestoCuisines(new Set());
-    setRestoPrices(new Set());
-    setRestoAttrs(new Set());
+    setFacetTypes(new Set());
+    setFacetPrices(new Set());
+    setFacetAttrs(new Set());
+    setFacetBadges(new Set());
   }
 
   // Bascule une valeur dans un Set d'état (multi-sélection).
@@ -321,8 +326,11 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
     return c;
   }, [businesses, active]);
 
-  // Vue restaurants → on propose les facettes cuisine / prix / ambiance.
-  const isRestoView = activeThemes.has("restaurants");
+  // Rubrique active (une seule) → facettes : Type (sous-groupe), Prix, Ambiance (restos).
+  const activeRubrique =
+    activeThemes.size === 1 && !activeThemes.has(UNCLASSIFIED) ? [...activeThemes][0] : null;
+  const activeSubgroup = activeRubrique ? SUBGROUP_BY_PARENT[activeRubrique] : undefined;
+  const isRestoView = activeRubrique === "restaurants";
 
   const rows = useMemo(() => {
     const q = query.trim().toLowerCase();
@@ -337,12 +345,13 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
             themes.some((t) => activeThemes.has(t));
           if (!matches) return false;
         }
-        // Facettes restaurants : cuisine (OU), prix (OU), ambiance (ET).
-        if (isRestoView) {
+        // Facettes de rubrique : type (OU), prix (OU), sélection (OU), ambiance (ET, restos).
+        if (activeRubrique) {
           const themes = b.themes || [];
-          if (restoCuisines.size > 0 && !themes.some((t) => restoCuisines.has(t))) return false;
-          if (restoPrices.size > 0 && !(b.priceRange && restoPrices.has(b.priceRange))) return false;
-          if (restoAttrs.size > 0 && ![...restoAttrs].every((a) => themes.includes(a))) return false;
+          if (facetTypes.size > 0 && !themes.some((t) => facetTypes.has(t))) return false;
+          if (facetPrices.size > 0 && !(b.priceRange && facetPrices.has(b.priceRange))) return false;
+          if (facetBadges.size > 0 && !(b.badge && facetBadges.has(b.badge))) return false;
+          if (isRestoView && facetAttrs.size > 0 && ![...facetAttrs].every((a) => themes.includes(a))) return false;
         }
         if (!q) return true;
         return (b.name + " " + b.address + " " + CATEGORY_MAP[b.category].label)
@@ -350,31 +359,34 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
           .includes(q);
       })
       .sort((a, b) => (b.tier === "premium" ? 1 : 0) - (a.tier === "premium" ? 1 : 0));
-  }, [businesses, query, active, activeThemes, activeZone, isRestoView, restoCuisines, restoPrices, restoAttrs]);
+  }, [businesses, query, active, activeThemes, activeZone, activeRubrique, isRestoView, facetTypes, facetPrices, facetBadges, facetAttrs]);
 
-  // Base restaurants (rubrique + zone + recherche, hors facettes) pour les compteurs de chips.
-  const restoFacetCounts = useMemo(() => {
-    const cuisine: Record<string, number> = {};
+  // Base rubrique (rubrique + zone + recherche, hors facettes) pour les compteurs.
+  const facetCounts = useMemo(() => {
+    const type: Record<string, number> = {};
     const price: Record<string, number> = {};
     const attr: Record<string, number> = {};
-    if (!isRestoView) return { cuisine, price, attr, total: 0 };
+    const badge: Record<string, number> = {};
+    if (!activeRubrique) return { type, price, attr, badge, total: 0 };
+    const typeChildren = new Set(activeSubgroup?.children ?? []);
     const q = query.trim().toLowerCase();
     let total = 0;
     businesses.forEach((b) => {
-      if (!(b.themes || []).includes("restaurants")) return;
+      if (!(b.themes || []).includes(activeRubrique)) return;
       if (activeZone && b.zone !== activeZone) return;
       if (q && !(b.name + " " + b.address).toLowerCase().includes(q)) return;
       total++;
       (b.themes || []).forEach((t) => {
-        if (RESTO_CUISINES.includes(t)) cuisine[t] = (cuisine[t] || 0) + 1;
-        if (RESTO_ATTRS.includes(t)) attr[t] = (attr[t] || 0) + 1;
+        if (typeChildren.has(t)) type[t] = (type[t] || 0) + 1;
+        if (isRestoView && RESTO_ATTRS.includes(t)) attr[t] = (attr[t] || 0) + 1;
       });
       if (b.priceRange) price[b.priceRange] = (price[b.priceRange] || 0) + 1;
+      if (b.badge) badge[b.badge] = (badge[b.badge] || 0) + 1;
     });
-    return { cuisine, price, attr, total };
-  }, [businesses, isRestoView, activeZone, query]);
+    return { type, price, attr, badge, total };
+  }, [businesses, activeRubrique, activeSubgroup, isRestoView, activeZone, query]);
 
-  const restoFacetActive = restoCuisines.size + restoPrices.size + restoAttrs.size > 0;
+  const facetActive = facetTypes.size + facetPrices.size + facetBadges.size + facetAttrs.size > 0;
 
   // Cartes affichées : limitées à la zone visible de la carte si le filtre est actif.
   const boundedRows = useMemo(() => {
@@ -520,12 +532,10 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
     if (!r) return null;
     const count = themeCountsAll[r.key] || 0;
     if (count === 0) return null;
-    // « Restaurants » ouvre directement la liste filtrable (les cuisines sont
-    // proposées comme facettes) au lieu de descendre dans un sous-groupe de tuiles.
-    const sg = r.key === "restaurants" ? undefined : SUBGROUP_BY_PARENT[r.key];
-    return sg
-      ? { key: r.key, label: r.label, emoji: r.emoji, count, drillTo: { kind: "subgroup", key: r.key, label: r.label, emoji: r.emoji } }
-      : { key: r.key, label: r.label, emoji: r.emoji, count, themeKey: r.key };
+    // Toute rubrique ouvre directement la liste filtrable : ses sous-types
+    // (cuisines, disciplines, types de shopping…) sont proposés en facettes
+    // plutôt qu'en tuiles à dérouler.
+    return { key: r.key, label: r.label, emoji: r.emoji, count, themeKey: r.key };
   }
 
   // Tuiles du niveau courant de la pile de navigation.
@@ -819,63 +829,83 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
     </div>
   );
 
-  // Barre de filtres restaurants (menus déroulants Cuisine / Prix / Ambiance).
-  const cuisineOptions: DropdownOption[] = RESTO_CUISINES.filter(
-    (k) => (restoFacetCounts.cuisine[k] || 0) > 0
-  ).map((k) => {
-    const I = iconForKey(k);
-    return {
-      key: k,
-      label: RUBRIQUE_MAP[k]?.label ?? k,
-      count: restoFacetCounts.cuisine[k],
-      icon: I ? <I size={14} weight="bold" aria-hidden /> : undefined,
-    };
-  });
+  // Barre de filtres générique (menus déroulants Type / Prix / Ambiance).
+  const typeOptions: DropdownOption[] = (activeSubgroup?.children ?? [])
+    .filter((k) => (facetCounts.type[k] || 0) > 0)
+    .map((k) => {
+      const I = iconForKey(k);
+      return {
+        key: k,
+        label: RUBRIQUE_MAP[k]?.label ?? k,
+        count: facetCounts.type[k],
+        icon: I ? <I size={14} weight="bold" aria-hidden /> : undefined,
+      };
+    });
   const priceOptions: DropdownOption[] = PRICE_RANGES.filter(
-    (p) => (restoFacetCounts.price[p.key] || 0) > 0
-  ).map((p) => ({ key: p.key, label: `${p.symbol} ${p.label}`, count: restoFacetCounts.price[p.key] }));
-  const attrOptions: DropdownOption[] = RESTO_ATTRS.filter(
-    (k) => (restoFacetCounts.attr[k] || 0) > 0
-  ).map((k) => {
-    const I = iconForKey(k);
-    return {
-      key: k,
-      label: RUBRIQUE_MAP[k]?.label ?? k,
-      count: restoFacetCounts.attr[k],
-      icon: I ? <I size={14} weight="bold" aria-hidden /> : undefined,
-    };
-  });
+    (p) => (facetCounts.price[p.key] || 0) > 0
+  ).map((p) => ({ key: p.key, label: `${p.symbol} ${p.label}`, count: facetCounts.price[p.key] }));
+  const attrOptions: DropdownOption[] = isRestoView
+    ? RESTO_ATTRS.filter((k) => (facetCounts.attr[k] || 0) > 0).map((k) => {
+        const I = iconForKey(k);
+        return {
+          key: k,
+          label: RUBRIQUE_MAP[k]?.label ?? k,
+          count: facetCounts.attr[k],
+          icon: I ? <I size={14} weight="bold" aria-hidden /> : undefined,
+        };
+      })
+    : [];
 
-  const restoFilterBar = isRestoView ? (
+  const badgeOptions: DropdownOption[] = BADGE_META.filter(
+    (m) => (facetCounts.badge[m.key] || 0) > 0
+  ).map((m) => ({
+    key: m.key,
+    label: m.label,
+    count: facetCounts.badge[m.key],
+    icon: <span aria-hidden>{m.emoji}</span>,
+  }));
+
+  const hasFacets =
+    typeOptions.length > 0 || priceOptions.length > 0 || badgeOptions.length > 0 || attrOptions.length > 0;
+  const restoFilterBar = activeRubrique && hasFacets ? (
     <div className="mb-3 border-b border-border pb-3 flex flex-wrap items-center gap-2">
-      {cuisineOptions.length > 0 && (
+      {badgeOptions.length > 0 && (
         <FilterDropdown
-          label="Cuisine"
-          options={cuisineOptions}
-          selected={restoCuisines}
-          onToggle={(k) => toggleInSet(setRestoCuisines, k)}
-          onClear={() => setRestoCuisines(new Set())}
+          label="Sélection"
+          options={badgeOptions}
+          selected={facetBadges}
+          onToggle={(k) => toggleInSet(setFacetBadges, k)}
+          onClear={() => setFacetBadges(new Set())}
+        />
+      )}
+      {typeOptions.length > 0 && (
+        <FilterDropdown
+          label={activeSubgroup?.label ?? "Type"}
+          options={typeOptions}
+          selected={facetTypes}
+          onToggle={(k) => toggleInSet(setFacetTypes, k)}
+          onClear={() => setFacetTypes(new Set())}
         />
       )}
       {priceOptions.length > 0 && (
         <FilterDropdown
           label="Prix"
           options={priceOptions}
-          selected={restoPrices}
-          onToggle={(k) => toggleInSet(setRestoPrices, k)}
-          onClear={() => setRestoPrices(new Set())}
+          selected={facetPrices}
+          onToggle={(k) => toggleInSet(setFacetPrices, k)}
+          onClear={() => setFacetPrices(new Set())}
         />
       )}
       {attrOptions.length > 0 && (
         <FilterDropdown
           label="Ambiance"
           options={attrOptions}
-          selected={restoAttrs}
-          onToggle={(k) => toggleInSet(setRestoAttrs, k)}
-          onClear={() => setRestoAttrs(new Set())}
+          selected={facetAttrs}
+          onToggle={(k) => toggleInSet(setFacetAttrs, k)}
+          onClear={() => setFacetAttrs(new Set())}
         />
       )}
-      {restoFacetActive && (
+      {facetActive && (
         <button
           onClick={resetRestoFacets}
           className="text-[12.5px] font-semibold text-primary-deep hover:underline"
