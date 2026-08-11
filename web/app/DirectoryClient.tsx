@@ -87,15 +87,6 @@ const LIFESTYLE: Umbrella[] = [
     ],
   },
   {
-    key: "se-relaxer",
-    label: "Se relaxer",
-    emoji: "🧘",
-    color: "#5a9e86",
-    rubriques: [
-      "spa-instituts", "medecine-douce", "yoga-pilates", "plages", "parcs-botaniques",
-    ],
-  },
-  {
     key: "shopping",
     label: "Shopping",
     emoji: "🛍️",
@@ -116,7 +107,7 @@ const LIFESTYLE: Umbrella[] = [
   },
   {
     key: "pratique",
-    label: "Pratique",
+    label: "Pratique & bien-être",
     emoji: "🧰",
     color: "#4a6572",
     categories: ["utiles", "immobilier", "business-ttv", "soins-bien-etre", "coaching"],

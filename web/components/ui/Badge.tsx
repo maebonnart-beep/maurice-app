@@ -21,7 +21,7 @@ export function CategoryBadge({ category }: { category: CategoryKey }) {
   );
 }
 
-export type SpecialBadgeVariant = "partenaire" | "coup-de-coeur" | "selection" | "agence";
+export type SpecialBadgeVariant = "partenaire" | "coup-de-coeur" | "selection" | "kids-friendly" | "agence";
 
 /** Badges de mise en avant (Partenaire, Coup de cœur, Sélection, Agence organisatrice). */
 export function SpecialBadge({ variant }: { variant: SpecialBadgeVariant }) {
@@ -43,6 +43,12 @@ export function SpecialBadge({ variant }: { variant: SpecialBadgeVariant }) {
     return (
       // eslint-disable-next-line @next/next/no-img-element
       <img src="/badge-selection.png" alt="Sélection Koté Moris" title="Sélection Koté Moris" className="self-start h-12 w-12 shrink-0" />
+    );
+  }
+  if (variant === "kids-friendly") {
+    return (
+      // eslint-disable-next-line @next/next/no-img-element
+      <img src="/badge-kids.png" alt="Kids Friendly" title="Kids Friendly" className="self-start h-12 w-12 shrink-0" />
     );
   }
   // agence

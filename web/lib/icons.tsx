@@ -147,10 +147,11 @@ export const THEMATIC_ICONS: Record<string, string> = {
   famille: "/icon-famille.png",
   // Pratique / Utiles
   pratique: "/icon-pratique.png", utiles: "/icon-pratique.png",
-  // Enfants
+  // Enfants (rubriques enfants uniquement ; « kids-friendly » n'est PAS une rubrique
+  // ici : c'est un attribut de fiche → géré via le badge Kids Friendly sur la fiche).
   "activites-enfants-famille": "/icon-enfants.png",
   "centres-loisirs-animations-enfants": "/icon-enfants.png",
-  education: "/icon-enfants.png", "kids-friendly": "/icon-enfants.png",
+  education: "/icon-enfants.png",
   // Médecins / santé
   medecins: "/icon-medecins.png",
 };

@@ -119,8 +119,11 @@ export function BusinessCard({
           {b.badge === "partenaire" && <SpecialBadge variant="partenaire" />}
           {b.badge === "coup-de-coeur" && <SpecialBadge variant="coup-de-coeur" />}
           {b.badge === "selection" && <SpecialBadge variant="selection" />}
+          {b.themes?.includes("kids-friendly") && <SpecialBadge variant="kids-friendly" />}
           {b.isAgency && <SpecialBadge variant="agence" />}
           {b.themes?.map((tKey) => {
+            // « kids-friendly » est affiché en badge illustré ci-dessus, pas en tag.
+            if (tKey === "kids-friendly") return null;
             const theme = SUBCATEGORIES[b.category]?.find((t) => t.key === tKey);
             if (!theme) return null;
             const TIcon = iconForKey(tKey);
