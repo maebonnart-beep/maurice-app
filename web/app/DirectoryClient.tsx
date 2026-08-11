@@ -13,6 +13,8 @@ import { BusinessCard } from "@/components/ui/BusinessCard";
 import { BusinessDetail } from "@/components/ui/BusinessDetail";
 import { FilterDropdown, type DropdownOption } from "@/components/ui/FilterDropdown";
 import { iconForKey, MapPin } from "@/lib/icons";
+import { SquaresFour, MagnifyingGlass, Heart, Star } from "@phosphor-icons/react";
+import type { Icon as PhosphorIcon } from "@phosphor-icons/react";
 
 // Attributs d'ambiance propres aux restaurants (facette « Ambiance »).
 const RESTO_ATTRS = ["tables-exception", "plus-belles-vues", "frequente-locaux", "kids-friendly"];
@@ -134,6 +136,32 @@ const LIFESTYLE: Umbrella[] = [
 // Clés d'univers réservés aux membres Premium (aperçu flouté + cadenas).
 const PREMIUM_KEYS = new Set(LIFESTYLE.filter((u) => u.premium).map((u) => u.key));
 
+// Tuile d'entrée du menu d'accueil (Option A) : icône + titre + sous-titre.
+function HomeEntry({
+  Icon,
+  title,
+  subtitle,
+  onClick,
+}: {
+  Icon: PhosphorIcon;
+  title: string;
+  subtitle: string;
+  onClick: () => void;
+}) {
+  return (
+    <button
+      onClick={onClick}
+      className="flex flex-col items-center gap-2.5 p-5 rounded-tile border border-border bg-surface text-center shadow-sm active:scale-[.98] transition-transform"
+    >
+      <span className="w-14 h-14 rounded-2xl bg-primary-tint text-primary-deep flex items-center justify-center">
+        <Icon size={30} weight="duotone" aria-hidden />
+      </span>
+      <span className="text-[14px] font-semibold leading-tight text-ink">{title}</span>
+      <span className="text-[12px] text-muted leading-tight">{subtitle}</span>
+    </button>
+  );
+}
+
 // Métadonnées de rubrique (emoji/libellé) par clé, tous univers confondus.
 const RUBRIQUE_MAP: Record<string, { key: string; label: string; emoji: string }> = Object.fromEntries(
   Object.values(SUBCATEGORIES)
@@ -229,6 +257,8 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
   const [mapBounds, setMapBounds] = useState<MapBounds | null>(null);
   // Mobile : forcer la liste à plat malgré l'écran d'accueil par catégories.
   const [browseAll, setBrowseAll] = useState(false);
+  // Accueil « Option A » : menu d'entrée → puis mode choisi.
+  const [homeMode, setHomeMode] = useState<"menu" | "categories" | "favoris" | "listes">("menu");
   // Navigation en tuiles à niveaux : pile de nœuds (univers → familles → rubriques →
   // sous-groupes). Vide = grille des univers (accueil).
   const [navStack, setNavStack] = useState<NavNode[]>([]);
@@ -275,9 +305,16 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
     setQuery("");
     setBrowseAll(false);
     setNavStack([]);
+    setHomeMode("menu");
     resetRestoFacets();
     setNearMe(false);
     window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
+  // Entrée « Recherche » du menu d'accueil : focalise le champ de recherche du bandeau.
+  function focusSearch() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    (document.querySelector('header input[type="search"]') as HTMLInputElement | null)?.focus();
   }
 
   // Descendre d'un niveau dans la navigation en tuiles.
@@ -1006,9 +1043,28 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
         </aside>
 
         <div className="flex-1 min-w-0 px-4 lg:px-5 py-3">
-          {/* Accueil : grille des univers lifestyle */}
-          {showHome && navStack.length === 0 && (
+          {/* Accueil « Option A » : menu d'entrée à 4 modes. */}
+          {showHome && navStack.length === 0 && homeMode === "menu" && (
             <div className="pb-16">
+              <p className="text-[13px] font-semibold text-muted mb-2.5">Que cherchez-vous ?</p>
+              <div className="grid grid-cols-2 gap-3 max-w-[520px]">
+                <HomeEntry Icon={SquaresFour} title="Par catégorie" subtitle="6 univers" onClick={() => setHomeMode("categories")} />
+                <HomeEntry Icon={MagnifyingGlass} title="Recherche" subtitle="lieu, nom, activité" onClick={focusSearch} />
+                <HomeEntry Icon={Heart} title="Mes favoris" subtitle="et mes listes" onClick={() => setHomeMode("favoris")} />
+                <HomeEntry Icon={Star} title="Listes de Koté Moris" subtitle="nos sélections" onClick={() => setHomeMode("listes")} />
+              </div>
+            </div>
+          )}
+
+          {/* Accueil → Par catégorie : grille des univers lifestyle + Premium. */}
+          {showHome && navStack.length === 0 && homeMode === "categories" && (
+            <div className="pb-16">
+              <button
+                onClick={() => setHomeMode("menu")}
+                className="inline-flex items-center gap-1.5 text-[13px] font-semibold text-primary-deep mb-2.5 active:scale-[.98]"
+              >
+                ← Menu
+              </button>
               <p className="text-[13px] font-semibold text-muted mb-2.5">Que cherchez-vous ?</p>
               <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2.5">
                 {LIFESTYLE.filter((u) => !u.premium && (umbrellaCounts[u.key] || 0) > 0).map((u) => (
@@ -1050,6 +1106,37 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                   </div>
                 </div>
               )}
+            </div>
+          )}
+
+          {/* Accueil → Mes favoris / Listes Koté Moris : écran placeholder « bientôt ». */}
+          {showHome && navStack.length === 0 && (homeMode === "favoris" || homeMode === "listes") && (
+            <div className="pb-16">
+              <button
+                onClick={() => setHomeMode("menu")}
+                className="inline-flex items-center gap-1.5 text-[13px] font-semibold text-primary-deep mb-2.5 active:scale-[.98]"
+              >
+                ← Menu
+              </button>
+              <div className="mt-6 max-w-[420px] mx-auto text-center bg-surface border border-border rounded-2xl shadow-sm p-7 flex flex-col items-center gap-3">
+                <span className="w-14 h-14 rounded-2xl bg-primary-tint text-primary-deep flex items-center justify-center">
+                  {homeMode === "favoris" ? <Heart size={28} weight="duotone" aria-hidden /> : <Star size={28} weight="duotone" aria-hidden />}
+                </span>
+                <p className="font-serif text-lg font-semibold leading-tight">
+                  {homeMode === "favoris" ? "Mes favoris & mes listes" : "Les listes de Koté Moris"}
+                </p>
+                <p className="text-[13px] text-muted leading-snug">
+                  {homeMode === "favoris"
+                    ? "Enregistrez vos adresses préférées et créez vos propres listes."
+                    : "Nos sélections d'adresses par thématique, à découvrir très bientôt."}
+                </p>
+                <span
+                  className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[12px] font-bold text-on-accent"
+                  style={{ background: "var(--accent)" }}
+                >
+                  ✨ Bientôt disponible
+                </span>
+              </div>
             </div>
           )}
 
