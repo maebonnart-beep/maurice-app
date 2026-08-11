@@ -2,7 +2,7 @@
  * Logo KOTÉ MORIS — emblème poulpe (image détourée fournie par la cliente) + wordmark
  * « Koté / MORIS » en serif. Le poulpe étant teal, le logo s'affiche sur fond clair.
  */
-export function Logo({ size = 40, light = false }: { size?: number; light?: boolean }) {
+export function Logo({ size = 52, light = false }: { size?: number; light?: boolean }) {
   return (
     <span className="inline-flex items-center gap-2.5">
       {/* eslint-disable-next-line @next/next/no-img-element */}

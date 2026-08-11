@@ -668,30 +668,48 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
 
   // Sélecteur de zone horizontal (chips) : proposé APRÈS le choix de l'action,
   // avec « Toute l'île » par défaut. Réutilisé en navigation tuiles et résultats.
+  // Sélecteur de zone en « boussole » : Nord en haut, Sud en bas, Ouest/Est sur
+  // les côtés, Centre au milieu — entièrement visible sans défilement.
+  const zoneCell = (key: string) => {
+    const z = ZONES.find((x) => x.key === key)!;
+    const on = activeZone === key;
+    return (
+      <button
+        onClick={() => toggleZone(key)}
+        aria-pressed={on}
+        className={`flex flex-col items-center justify-center gap-0.5 py-2 rounded-xl border text-[12.5px] font-semibold leading-tight transition-colors ${
+          on ? "bg-primary text-white border-primary" : "bg-surface text-ink border-border hover:border-primary"
+        }`}
+      >
+        <span className="text-[15px]">{z.emoji}</span>
+        <span>{z.label}</span>
+        <span className={`text-[10.5px] font-bold ${on ? "opacity-80" : "opacity-55"}`}>{zoneCounts[z.key] || 0}</span>
+      </button>
+    );
+  };
+
   const zoneChips = (
-    <div className="flex items-center gap-1.5 overflow-x-auto -mx-1 px-1 pb-1 mb-3">
+    <div className="mb-3 max-w-[280px]">
       <button
         onClick={() => setActiveZone(null)}
         aria-pressed={activeZone === null}
-        className={`shrink-0 px-3 py-1.5 rounded-pill text-[13px] font-semibold border transition-colors ${
-          activeZone === null ? "bg-primary text-white border-primary" : "bg-surface text-ink border-border"
+        className={`w-full mb-1.5 py-1.5 rounded-pill text-[13px] font-semibold border transition-colors ${
+          activeZone === null ? "bg-primary text-white border-primary" : "bg-surface text-ink border-border hover:border-primary"
         }`}
       >
         📍 Toute l&apos;île
       </button>
-      {ZONES.map((z) => (
-        <button
-          key={z.key}
-          onClick={() => toggleZone(z.key)}
-          aria-pressed={activeZone === z.key}
-          className={`shrink-0 px-3 py-1.5 rounded-pill text-[13px] font-semibold border transition-colors ${
-            activeZone === z.key ? "bg-primary text-white border-primary" : "bg-surface text-ink border-border"
-          }`}
-        >
-          {z.emoji} {z.label}
-          <span className="ml-1 text-[11px] font-bold opacity-70">{zoneCounts[z.key] || 0}</span>
-        </button>
-      ))}
+      <div className="grid grid-cols-3 grid-rows-3 gap-1.5">
+        <span />
+        {zoneCell("nord")}
+        <span />
+        {zoneCell("ouest")}
+        {zoneCell("centre")}
+        {zoneCell("est")}
+        <span />
+        {zoneCell("sud")}
+        <span />
+      </div>
     </div>
   );
 
@@ -927,13 +945,6 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
         <BusinessDetail business={openBusiness} onClose={() => setOpenId(null)} />
       )}
 
-      <footer className="border-t border-border py-5 pb-10 text-muted text-[13px] leading-[1.6]">
-        <div className="max-w-[1400px] mx-auto px-5">
-          <b className="text-ink">Aperçu MVP</b> — sélection de {businesses.length} fiches issues
-          de l&apos;import Google Places, couvrant toute l&apos;île. Les données seront enrichies
-          et vérifiées avant mise en ligne. Statut, horaires et photos viendront ensuite.
-        </div>
-      </footer>
     </div>
   );
 }
