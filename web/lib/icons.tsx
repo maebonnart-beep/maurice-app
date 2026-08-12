@@ -169,6 +169,17 @@ export const THEMATIC_ICONS: Record<string, string> = {
   // Sous-rubriques Événements
   sportifs: "/icon-sportifs.png",
   culturels: "/icon-culturels.png",
+  // Sous-rubriques Commerces alimentaires (Food)
+  "fruits-et-legumes": "/icon-fruits-et-legumes.png",
+  boucheries: "/icon-boucheries.png",
+  "vins-spiritueux": "/icon-vins-spiritueux.png",
+  poissonneries: "/icon-poissonneries.png",
+  marches: "/icon-marches.png",
+  "produits-francais": "/icon-produits-francais.png",
+  boulangeries: "/icon-boulangeries.png",
+  "epiceries-specialisees": "/icon-epiceries-specialisees.png",
+  livraisons: "/icon-livraisons.png",
+  "grandes-surfaces": "/icon-grandes-surfaces.png",
 };
 
 /** Chemin d'une icône thématique illustrée pour une clé, ou null. */
