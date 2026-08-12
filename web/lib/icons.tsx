@@ -255,6 +255,9 @@ export const THEMATIC_ICONS: Record<string, string> = {
   networking: "/icon-networking.png",
   avocats: "/icon-avocats.png",
   notaires: "/icon-notaires.png",
+  // Ajouts : catégorie parente Commerces (Manger) + Ambassades (Utiles)
+  commerces: "/icon-commerces.png",
+  "ambassades-consulats": "/icon-ambassades-consulats.png",
 };
 
 /** Chemin d'une icône thématique illustrée pour une clé, ou null. */
