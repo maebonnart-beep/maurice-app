@@ -185,6 +185,27 @@ export const THEMATIC_ICONS: Record<string, string> = {
   "tables-hotes": "/icon-tables-hotes.png",
   "chefs-domicile": "/icon-chefs-domicile.png",
   glaciers: "/icon-glaciers.png",
+  // Sous-rubriques Sports (Bouger)
+  "gym-fitness": "/icon-gym-fitness.png",
+  "sports-nautiques": "/icon-sports-nautiques.png",
+  "complexes-sportifs": "/icon-complexes-sportifs.png",
+  "tennis-padel": "/icon-tennis-padel.png",
+  golf: "/icon-golf.png",
+  "centres-equestres": "/icon-centres-equestres.png",
+  // Sous-rubriques Nature (Bouger)
+  excursions: "/icon-excursions.png",
+  peche: "/icon-peche.png",
+  "randonnee-trail": "/icon-randonnee-trail.png",
+  "parcs-nationaux-cascades": "/icon-parcs-nationaux-cascades.png",
+  plages: "/icon-plages.png",
+  "parcs-botaniques": "/icon-parcs-botaniques.png",
+  "parcs-animaliers": "/icon-parcs-animaliers.png",
+  "parcs-aventures": "/icon-parcs-aventures.png",
+  // Sous-rubriques Sortir (nouvelles ; culture-patrimoine/cinemas/bowling déjà mappées)
+  casinos: "/icon-casinos.png",
+  rhumeries: "/icon-rhumeries.png",
+  karting: "/icon-karting.png",
+  "escape-game": "/icon-escape-game.png",
 };
 
 /** Chemin d'une icône thématique illustrée pour une clé, ou null. */
