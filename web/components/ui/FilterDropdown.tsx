@@ -42,22 +42,22 @@ export function FilterDropdown({
   }, [open]);
 
   return (
-    <div ref={ref} className="relative shrink-0">
+    <div ref={ref} className="relative flex-1 min-w-0">
       <button
         onClick={() => setOpen((o) => !o)}
         aria-expanded={open}
-        className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-pill border text-body font-semibold whitespace-nowrap transition-colors ${
+        className={`w-full inline-flex items-center gap-1.5 px-3 py-1.5 rounded-pill border text-body font-semibold transition-colors ${
           count > 0 ? "bg-primary-tint border-primary text-primary-deep" : "bg-surface border-border text-ink hover:border-primary"
         }`}
       >
         {icon}
-        {label}
+        <span className="truncate">{label}</span>
         {count > 0 && (
-          <span className="ml-0.5 min-w-[18px] h-[18px] px-1 inline-flex items-center justify-center rounded-full bg-primary text-white text-[11px] font-bold">
+          <span className="ml-0.5 min-w-[18px] h-[18px] px-1 inline-flex items-center justify-center rounded-full bg-primary text-white text-[11px] font-bold shrink-0">
             {count}
           </span>
         )}
-        <span className={`text-[10px] transition-transform ${open ? "rotate-180" : ""}`}>▾</span>
+        <span className={`ml-auto text-[10px] transition-transform shrink-0 ${open ? "rotate-180" : ""}`}>▾</span>
       </button>
 
       {open && (

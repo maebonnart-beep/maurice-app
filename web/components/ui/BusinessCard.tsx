@@ -60,6 +60,8 @@ export function BusinessCard({
   onHover,
   nearbyKm,
   cardRef,
+  hideCategory = false,
+  hiddenKeys,
 }: {
   business: Business;
   active: boolean;
@@ -67,6 +69,10 @@ export function BusinessCard({
   onHover: (id: string | null) => void;
   nearbyKm?: number;
   cardRef?: (el: HTMLElement | null) => void;
+  /** Masque le badge de catégorie (on est déjà dans cette catégorie). */
+  hideCategory?: boolean;
+  /** Clés de tags/facettes déjà impliquées par le filtre actif → masquées. */
+  hiddenKeys?: Set<string>;
 }) {
   const accentColor = accentColorFor(b.badge, b.isAgency);
   const waNumber = whatsappNumber(b);
@@ -115,7 +121,7 @@ export function BusinessCard({
           </span>
         )}
         <div className="flex flex-wrap items-center gap-1.5">
-          <CategoryBadge category={b.category} />
+          {!hideCategory && <CategoryBadge category={b.category} />}
           {b.badge === "partenaire" && <SpecialBadge variant="partenaire" />}
           {b.badge === "coup-de-coeur" && <SpecialBadge variant="coup-de-coeur" />}
           {b.badge === "selection" && <SpecialBadge variant="selection" />}
@@ -124,6 +130,8 @@ export function BusinessCard({
           {b.themes?.map((tKey) => {
             // « kids-friendly » est affiché en badge illustré ci-dessus, pas en tag.
             if (tKey === "kids-friendly") return null;
+            // Masque les tags déjà impliqués par le filtre actif (rubrique/facette).
+            if (hiddenKeys?.has(tKey)) return null;
             const theme = SUBCATEGORIES[b.category]?.find((t) => t.key === tKey);
             if (!theme) return null;
             const TIcon = iconForKey(tKey);
@@ -133,7 +141,7 @@ export function BusinessCard({
               </Tag>
             );
           })}
-          {price && (
+          {price && !(b.priceRange && hiddenKeys?.has(b.priceRange)) && (
             <Tag icon={price.symbol}>{price.label}</Tag>
           )}
           {b.takeaway && <Tag icon="🥡">À emporter</Tag>}

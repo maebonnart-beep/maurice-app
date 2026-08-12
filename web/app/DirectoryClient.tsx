@@ -415,6 +415,19 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
   const activeSubgroup = activeRubrique ? SUBGROUP_BY_PARENT[activeRubrique] : undefined;
   const isRestoView = activeRubrique === "restaurants";
 
+  // « Ménage » des fiches : on masque ce qui est déjà impliqué par le contexte de
+  // navigation/filtre actif (catégorie descendue, rubriques + facettes sélectionnées),
+  // pour ne pas répéter sur chaque fiche ce que l'utilisateur vient de choisir.
+  const ficheHideCategory = active !== "all";
+  const ficheHiddenKeys = useMemo(() => {
+    const s = new Set<string>();
+    activeThemes.forEach((k) => { if (k !== UNCLASSIFIED) s.add(k); });
+    facetTypes.forEach((k) => s.add(k));
+    facetAttrs.forEach((k) => s.add(k));
+    facetPrices.forEach((k) => s.add(k));
+    return s;
+  }, [activeThemes, facetTypes, facetAttrs, facetPrices]);
+
   const rows = useMemo(() => {
     const q = query.trim().toLowerCase();
     return businesses
@@ -975,7 +988,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
   const hasFacets =
     typeOptions.length > 0 || priceOptions.length > 0 || badgeOptions.length > 0 || attrOptions.length > 0;
   const restoFilterBar = activeRubrique && hasFacets ? (
-    <div className="mb-3 border-b border-border pb-3 flex flex-wrap items-center gap-2">
+    <div className="mb-3 border-b border-border pb-3 flex items-center gap-2">
       {badgeOptions.length > 0 && (
         <FilterDropdown
           label="Sélection"
@@ -1015,7 +1028,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
       {facetActive && (
         <button
           onClick={resetRestoFacets}
-          className="text-[12.5px] font-semibold text-primary-deep hover:underline"
+          className="shrink-0 text-[12.5px] font-semibold text-primary-deep hover:underline"
         >
           Réinitialiser
         </button>
@@ -1328,6 +1341,8 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                       onSelect={selectFromCard}
                       onHover={setHoveredId}
                       nearbyKm={nearMe ? distanceById[b.id] : undefined}
+                      hideCategory={ficheHideCategory}
+                      hiddenKeys={ficheHiddenKeys}
                       cardRef={(el) => {
                         cardRefs.current[b.id] = el;
                       }}
@@ -1375,7 +1390,12 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
 
       {/* Vue détail plein écran d'une fiche (clic sur une carte). */}
       {openBusiness && (
-        <BusinessDetail business={openBusiness} onClose={() => setOpenId(null)} />
+        <BusinessDetail
+          business={openBusiness}
+          onClose={() => setOpenId(null)}
+          hideCategory={ficheHideCategory}
+          hiddenKeys={ficheHiddenKeys}
+        />
       )}
 
     </div>
