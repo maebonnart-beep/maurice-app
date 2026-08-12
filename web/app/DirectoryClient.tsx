@@ -46,45 +46,94 @@ type Umbrella = {
 };
 
 const LIFESTYLE: Umbrella[] = [
-  { key: "manger", label: "Manger", emoji: "🍽️", color: "#e2725b", categories: ["food"] },
+  {
+    key: "manger",
+    label: "Manger",
+    emoji: "🍽️",
+    color: "#e2725b",
+    rubriques: [
+      "restaurants", "tables-hotes", "chefs-domicile", "cours-de-cuisine",
+      "grandes-surfaces", "epiceries-specialisees", "boucheries", "poissonneries",
+      "fruits-et-legumes", "marches", "boulangeries", "produits-francais",
+      "vins-spiritueux", "livraisons",
+    ],
+    groups: [
+      {
+        key: "manger-restauration",
+        label: "Restauration",
+        emoji: "🍽️",
+        rubriques: ["restaurants", "tables-hotes", "chefs-domicile", "cours-de-cuisine"],
+      },
+      {
+        key: "manger-commerces",
+        label: "Commerces alimentaires",
+        emoji: "🛒",
+        rubriques: [
+          "grandes-surfaces", "epiceries-specialisees", "boucheries", "poissonneries",
+          "fruits-et-legumes", "marches", "boulangeries", "produits-francais",
+          "vins-spiritueux", "livraisons",
+        ],
+      },
+    ],
+  },
   {
     key: "sortir",
-    label: "Sortir",
+    label: "Sortir & Culture",
     emoji: "🍹",
     color: "#c9457a",
     rubriques: [
-      "bars", "cafes-terrasses", "rhumeries", "casinos", "cinemas", "bowling",
-      "karting", "escape-game", "culture-patrimoine", "glaciers", "snacks-plage",
+      "bars", "cafes-terrasses", "snacks-plage", "glaciers", "rhumeries",
+      "cinemas", "bowling", "karting", "escape-game", "casinos",
+      "culture-patrimoine", "bibliotheque-mediatheque",
+    ],
+    groups: [
+      {
+        key: "sortir-ambiance",
+        label: "Bars & cafés",
+        emoji: "🍹",
+        rubriques: ["bars", "cafes-terrasses", "snacks-plage", "glaciers", "rhumeries"],
+      },
+      {
+        key: "sortir-loisirs",
+        label: "Loisirs",
+        emoji: "🎳",
+        rubriques: ["cinemas", "bowling", "karting", "escape-game", "casinos"],
+      },
+      {
+        key: "sortir-culture",
+        label: "Culture",
+        emoji: "🏛️",
+        rubriques: ["culture-patrimoine", "bibliotheque-mediatheque"],
+      },
     ],
   },
   {
     key: "bouger",
-    label: "Bouger",
-    emoji: "🏃",
+    label: "Bouger & Nature",
+    emoji: "🏝️",
     color: "#087e8b",
     rubriques: [
       "complexes-sportifs", "gym-fitness", "sports-nautiques", "golf", "tennis-padel",
-      "randonnee-trail", "centres-equestres", "peche", "plages",
-      "parcs-nationaux-cascades", "excursions", "parcs-aventures", "parcs-animaliers",
-      "parcs-botaniques",
+      "centres-equestres", "randonnee-trail", "plages", "parcs-nationaux-cascades",
+      "parcs-botaniques", "parcs-animaliers", "parcs-aventures", "excursions", "peche",
     ],
     groups: [
-      {
-        key: "bouger-nature",
-        label: "Nature",
-        emoji: "🌿",
-        rubriques: [
-          "plages", "parcs-nationaux-cascades", "randonnee-trail", "parcs-botaniques",
-          "parcs-animaliers", "parcs-aventures", "excursions", "peche",
-        ],
-      },
       {
         key: "bouger-sports",
         label: "Sports",
         emoji: "🏃",
         rubriques: [
           "complexes-sportifs", "gym-fitness", "sports-nautiques", "golf", "tennis-padel",
-          "centres-equestres",
+          "centres-equestres", "randonnee-trail",
+        ],
+      },
+      {
+        key: "bouger-nature",
+        label: "Nature",
+        emoji: "🌿",
+        rubriques: [
+          "plages", "parcs-nationaux-cascades", "parcs-botaniques",
+          "parcs-animaliers", "parcs-aventures", "excursions", "peche",
         ],
       },
     ],
@@ -100,19 +149,89 @@ const LIFESTYLE: Umbrella[] = [
     ],
   },
   {
-    key: "famille",
-    label: "Famille",
-    emoji: "👨‍👩‍👧",
-    color: "#3f7cac",
-    rubriques: ["activites-enfants-famille", "centres-loisirs-animations-enfants", "kids-friendly"],
-    categories: ["education"],
+    key: "sante-bien-etre",
+    label: "Santé & Bien-être",
+    emoji: "💆",
+    color: "#3f9e8c",
+    rubriques: [
+      "cliniques-privees", "centres-sante-publics", "medecins", "dentistes", "opticiens",
+      "laboratoires", "pharmacies", "veterinaires", "spa-instituts", "coiffeurs",
+      "onglerie-manucure", "barbiers", "tatouage-piercing", "yoga-pilates",
+      "medecine-douce", "sports-bien-etre",
+    ],
+    groups: [
+      {
+        key: "sbe-sante",
+        label: "Santé",
+        emoji: "🩺",
+        rubriques: [
+          "cliniques-privees", "centres-sante-publics", "medecins", "dentistes",
+          "opticiens", "laboratoires", "pharmacies", "veterinaires",
+        ],
+      },
+      {
+        key: "sbe-soins",
+        label: "Soins & bien-être",
+        emoji: "💆",
+        rubriques: [
+          "spa-instituts", "coiffeurs", "onglerie-manucure", "barbiers",
+          "tatouage-piercing", "yoga-pilates", "medecine-douce", "sports-bien-etre",
+        ],
+      },
+    ],
   },
   {
     key: "pratique",
-    label: "Pratique & bien-être",
+    label: "Vie pratique",
     emoji: "🧰",
     color: "#4a6572",
-    categories: ["utiles", "immobilier", "business-ttv", "soins-bien-etre", "coaching"],
+    rubriques: [
+      "poste", "postes-police", "banques", "distributeurs", "assurances", "notaires",
+      "avocats", "comptables", "ambassades-consulats", "expatriation-visas", "photographes",
+      "telecom", "plateformes-multiservices", "garages-mecaniciens", "concessionnaires",
+      "controle-technique", "location-voiture", "taxis-transferts", "vtc-apps", "depannages",
+      "informatique-reparation", "pressing-blanchisserie", "agences", "coworking",
+      "cafe-coworking", "garde-enfants", "networking", "business",
+      "activites-enfants-famille", "centres-loisirs-animations-enfants",
+      "ecoles-privees-internationales", "creches-garderies", "famille",
+    ],
+    groups: [
+      {
+        key: "pratique-demarches",
+        label: "Démarches & admin",
+        emoji: "🏛️",
+        rubriques: [
+          "poste", "postes-police", "banques", "distributeurs", "assurances", "notaires",
+          "avocats", "comptables", "ambassades-consulats", "expatriation-visas",
+          "photographes", "telecom", "plateformes-multiservices",
+        ],
+      },
+      {
+        key: "pratique-auto-maison",
+        label: "Auto & maison",
+        emoji: "🔧",
+        rubriques: [
+          "garages-mecaniciens", "concessionnaires", "controle-technique",
+          "location-voiture", "taxis-transferts", "vtc-apps", "depannages",
+          "informatique-reparation", "pressing-blanchisserie",
+        ],
+      },
+      {
+        key: "pratique-immo-pro",
+        label: "Immobilier & pro",
+        emoji: "🏢",
+        rubriques: ["agences", "coworking", "cafe-coworking", "networking", "garde-enfants", "business"],
+      },
+      {
+        key: "pratique-famille",
+        label: "Famille & Éducation",
+        emoji: "👨‍👩‍👧",
+        rubriques: [
+          "activites-enfants-famille", "centres-loisirs-animations-enfants",
+          "ecoles-privees-internationales", "creches-garderies", "famille",
+        ],
+      },
+    ],
   },
   // ── Univers réservés aux membres Premium ──────────────────────────────
   {

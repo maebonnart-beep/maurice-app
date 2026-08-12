@@ -147,6 +147,8 @@ export const THEMATIC_ICONS: Record<string, string> = {
   famille: "/icon-famille.png",
   // Pratique / Utiles
   pratique: "/icon-pratique.png", utiles: "/icon-pratique.png",
+  // Univers Santé & Bien-être (placeholder en attendant l'harmonisation des icônes)
+  "sante-bien-etre": "/icon-spa-instituts.png",
   // Univers Famille (rubriques + sous-rubriques education). « kids-friendly » est
   // aussi affiché comme rubrique dans l'univers Famille (cf. DirectoryClient).
   "activites-enfants-famille": "/icon-activites-enfants-famille.png",
