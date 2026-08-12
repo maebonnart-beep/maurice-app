@@ -11,7 +11,7 @@ import {
   whatsappLink,
   whatsappNumber,
 } from "@/lib/format";
-import { CategoryBadge, SpecialBadge, accentColorFor } from "./Badge";
+import { SpecialBadge, accentColorFor } from "./Badge";
 import { Tag } from "./Tag";
 import { ActionButton } from "./ActionButton";
 import { iconForKey, FACT_ICONS, CONTACT_ICONS } from "@/lib/icons";
@@ -60,7 +60,6 @@ export function BusinessCard({
   onHover,
   nearbyKm,
   cardRef,
-  hideCategory = false,
   hiddenKeys,
 }: {
   business: Business;
@@ -69,8 +68,6 @@ export function BusinessCard({
   onHover: (id: string | null) => void;
   nearbyKm?: number;
   cardRef?: (el: HTMLElement | null) => void;
-  /** Masque le badge de catégorie (on est déjà dans cette catégorie). */
-  hideCategory?: boolean;
   /** Clés de tags/facettes déjà impliquées par le filtre actif → masquées. */
   hiddenKeys?: Set<string>;
 }) {
@@ -121,7 +118,6 @@ export function BusinessCard({
           </span>
         )}
         <div className="flex flex-wrap items-center gap-1.5">
-          {!hideCategory && <CategoryBadge category={b.category} />}
           {b.badge === "partenaire" && <SpecialBadge variant="partenaire" />}
           {b.badge === "coup-de-coeur" && <SpecialBadge variant="coup-de-coeur" />}
           {b.badge === "selection" && <SpecialBadge variant="selection" />}

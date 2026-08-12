@@ -12,7 +12,7 @@ import {
   whatsappLink,
   whatsappNumber,
 } from "@/lib/format";
-import { CategoryBadge, SpecialBadge, accentColorFor } from "./Badge";
+import { SpecialBadge, accentColorFor } from "./Badge";
 import { Tag } from "./Tag";
 import { ActionButton } from "./ActionButton";
 import { metaFacts } from "./BusinessCard";
@@ -25,13 +25,10 @@ import { iconForKey, CONTACT_ICONS } from "@/lib/icons";
 export function BusinessDetail({
   business: b,
   onClose,
-  hideCategory = false,
   hiddenKeys,
 }: {
   business: Business;
   onClose: () => void;
-  /** Masque le badge de catégorie (on est déjà dans cette catégorie). */
-  hideCategory?: boolean;
   /** Clés de tags/facettes déjà impliquées par le filtre actif → masquées. */
   hiddenKeys?: Set<string>;
 }) {
@@ -100,7 +97,6 @@ export function BusinessDetail({
               </span>
             )}
             <div className="flex flex-wrap items-center gap-1.5">
-              {!hideCategory && <CategoryBadge category={b.category} />}
               {b.badge === "partenaire" && <SpecialBadge variant="partenaire" />}
               {b.badge === "coup-de-coeur" && <SpecialBadge variant="coup-de-coeur" />}
               {b.badge === "selection" && <SpecialBadge variant="selection" />}

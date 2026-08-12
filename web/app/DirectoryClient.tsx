@@ -534,10 +534,9 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
   const activeSubgroup = activeRubrique ? SUBGROUP_BY_PARENT[activeRubrique] : undefined;
   const isRestoView = activeRubrique === "restaurants";
 
-  // « Ménage » des fiches : on masque ce qui est déjà impliqué par le contexte de
-  // navigation/filtre actif (catégorie descendue, rubriques + facettes sélectionnées),
-  // pour ne pas répéter sur chaque fiche ce que l'utilisateur vient de choisir.
-  const ficheHideCategory = active !== "all";
+  // « Ménage » des fiches : on masque les tags déjà impliqués par le contexte de
+  // navigation/filtre actif (rubriques + facettes sélectionnées). Le badge de
+  // catégorie a été retiré des fiches (redondant avec la navigation par univers).
   const ficheHiddenKeys = useMemo(() => {
     const s = new Set<string>();
     activeThemes.forEach((k) => { if (k !== UNCLASSIFIED) s.add(k); });
@@ -1460,7 +1459,6 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                       onSelect={selectFromCard}
                       onHover={setHoveredId}
                       nearbyKm={nearMe ? distanceById[b.id] : undefined}
-                      hideCategory={ficheHideCategory}
                       hiddenKeys={ficheHiddenKeys}
                       cardRef={(el) => {
                         cardRefs.current[b.id] = el;
@@ -1512,7 +1510,6 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
         <BusinessDetail
           business={openBusiness}
           onClose={() => setOpenId(null)}
-          hideCategory={ficheHideCategory}
           hiddenKeys={ficheHiddenKeys}
         />
       )}
