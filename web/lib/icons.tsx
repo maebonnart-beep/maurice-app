@@ -136,19 +136,19 @@ export function iconForKey(key: string): Icon | null {
  */
 export const THEMATIC_ICONS: Record<string, string> = {
   // Manger / Food
-  manger: "/icon-food.png", food: "/icon-food.png", restauration: "/icon-food.png",
+  manger: "/icon-home-manger.png", food: "/icon-food.png", restauration: "/icon-food.png",
   // Bouger / Sports
-  bouger: "/icon-sports.png", sports: "/icon-sports.png", "bouger-sports": "/icon-sports.png",
+  bouger: "/icon-home-bouger.png", sports: "/icon-sports.png", "bouger-sports": "/icon-sports.png",
   // Se relaxer / Loisirs / Nature
   "se-relaxer": "/icon-loisirs.png", activites: "/icon-loisirs.png", "bouger-nature": "/icon-loisirs.png",
   // Shopping
-  shopping: "/icon-shopping.png", "malls-shopping": "/icon-shopping.png", "types-shopping": "/icon-shopping.png",
+  shopping: "/icon-home-shopping.png", "malls-shopping": "/icon-shopping.png", "types-shopping": "/icon-shopping.png",
   // Famille
   famille: "/icon-famille.png",
   // Pratique / Utiles
-  pratique: "/icon-pratique.png", utiles: "/icon-pratique.png",
+  pratique: "/icon-home-pratique.png", utiles: "/icon-pratique.png",
   // Univers Santé & Bien-être (placeholder en attendant l'harmonisation des icônes)
-  "sante-bien-etre": "/icon-spa-instituts.png",
+  "sante-bien-etre": "/icon-home-sante.png",
   // Univers Famille (rubriques + sous-rubriques education). « kids-friendly » est
   // aussi affiché comme rubrique dans l'univers Famille (cf. DirectoryClient).
   "activites-enfants-famille": "/icon-activites-enfants-famille.png",
@@ -160,7 +160,7 @@ export const THEMATIC_ICONS: Record<string, string> = {
   // Médecins / santé
   medecins: "/icon-medecins.png",
   // Sortir
-  sortir: "/icon-sortir.png",
+  sortir: "/icon-home-sortir.png",
   // Univers Premium
   evenements: "/icon-evenements.png",
   "seconde-main": "/icon-secondemain.png",
@@ -272,6 +272,9 @@ export const THEMATIC_ICONS: Record<string, string> = {
   // Tuiles de groupe sous Manger (niveau intermédiaire)
   "manger-restauration": "/icon-restauration.png",
   "manger-commerces": "/icon-commerces-alimentaires.png",
+  // Tuiles de groupe sous Santé & Bien-être
+  "sbe-sante": "/icon-sbe-sante.png",
+  "sbe-soins": "/icon-sbe-soins.png",
 };
 
 /** Chemin d'une icône thématique illustrée pour une clé, ou null. */
