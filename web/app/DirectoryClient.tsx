@@ -78,7 +78,7 @@ const LIFESTYLE: Umbrella[] = [
   },
   {
     key: "sortir",
-    label: "Sortir & Culture",
+    label: "Se divertir",
     emoji: "🍹",
     color: "#c9457a",
     rubriques: [
