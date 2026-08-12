@@ -50,7 +50,7 @@ const LIFESTYLE: Umbrella[] = [
     key: "manger",
     label: "Manger",
     emoji: "🍽️",
-    color: "#e2725b",
+    color: "#e8703c",
     rubriques: [
       "restaurants", "tables-hotes", "chefs-domicile", "cours-de-cuisine",
       "grandes-surfaces", "epiceries-specialisees", "boucheries", "poissonneries",
@@ -111,7 +111,7 @@ const LIFESTYLE: Umbrella[] = [
     key: "bouger",
     label: "Bouger & Nature",
     emoji: "🏝️",
-    color: "#087e8b",
+    color: "#2e9e5b",
     rubriques: [
       "complexes-sportifs", "gym-fitness", "sports-nautiques", "golf", "tennis-padel",
       "centres-equestres", "randonnee-trail", "plages", "parcs-nationaux-cascades",
@@ -152,7 +152,7 @@ const LIFESTYLE: Umbrella[] = [
     key: "sante-bien-etre",
     label: "Santé & Bien-être",
     emoji: "💆",
-    color: "#3f9e8c",
+    color: "#0ea5a0",
     rubriques: [
       "cliniques-privees", "centres-sante-publics", "medecins", "dentistes", "opticiens",
       "laboratoires", "pharmacies", "veterinaires", "spa-instituts", "coiffeurs",
