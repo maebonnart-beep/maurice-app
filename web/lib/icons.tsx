@@ -260,6 +260,18 @@ export const THEMATIC_ICONS: Record<string, string> = {
   // Ajouts : catégorie parente Commerces (Manger) + Ambassades (Utiles)
   commerces: "/icon-commerces.png",
   "ambassades-consulats": "/icon-ambassades-consulats.png",
+  // Sous-rubriques Shopping
+  malls: "/icon-malls.png",
+  "mode-adultes": "/icon-mode-adultes.png",
+  "mode-enfants": "/icon-mode-enfants.png",
+  "materiel-sports": "/icon-materiel-sports.png",
+  livres: "/icon-livres.png",
+  jeux: "/icon-jeux.png",
+  souvenirs: "/icon-souvenirs.png",
+  "equipement-maison": "/icon-equipement-maison.png",
+  // Tuiles de groupe sous Manger (niveau intermédiaire)
+  "manger-restauration": "/icon-restauration.png",
+  "manger-commerces": "/icon-commerces-alimentaires.png",
 };
 
 /** Chemin d'une icône thématique illustrée pour une clé, ou null. */

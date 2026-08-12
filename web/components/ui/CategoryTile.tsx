@@ -17,7 +17,6 @@ export function CategoryTile({
   label,
   iconKey,
   locked,
-  accent,
   onClick,
 }: {
   category?: CategoryKey;
@@ -26,8 +25,6 @@ export function CategoryTile({
   iconKey?: string;
   /** Univers Premium : anneau doré + badge cadenas. */
   locked?: boolean;
-  /** Couleur de l'univers → anneau autour de l'icône + bord de tuile teinté. */
-  accent?: string;
   /** Conservé pour compat des appels ; le nombre n'est plus affiché sur la tuile. */
   count?: number;
   onClick: () => void;
@@ -35,11 +32,10 @@ export function CategoryTile({
   const cat = category ? CATEGORY_MAP[category] : null;
   const displayEmoji = emoji ?? cat?.emoji ?? "";
   const displayLabel = label ?? cat?.label ?? "";
-  const tone = accent ?? cat?.color ?? null;
-  const iconBg = tone
-    ? `color-mix(in srgb, ${tone} 15%, var(--surface))`
+  const iconBg = cat
+    ? `color-mix(in srgb, ${cat.color} 15%, var(--surface))`
     : "var(--primary-tint)";
-  const iconColor = tone ?? "var(--primary-deep)";
+  const iconColor = cat ? cat.color : "var(--primary-deep)";
   const resolvedKey = iconKey ?? category ?? "";
   const thematic = thematicIconFor(resolvedKey);
   const Icon = iconForKey(resolvedKey);
@@ -51,9 +47,7 @@ export function CategoryTile({
       style={
         locked
           ? { borderColor: "var(--accent)", borderWidth: 2, background: "color-mix(in srgb, var(--accent) 10%, var(--surface))" }
-          : tone
-            ? { borderColor: `color-mix(in srgb, ${tone} 35%, var(--border))`, background: "var(--surface)" }
-            : { borderColor: "var(--border)", background: "var(--surface)" }
+          : { borderColor: "var(--border)", background: "var(--surface)" }
       }
     >
       {locked && (
@@ -66,15 +60,8 @@ export function CategoryTile({
       )}
       {thematic ? (
         // Icône thématique illustrée : occupe toute la pastille (disque crème intégré).
-        // Anneau à la couleur de l'univers pour l'harmonisation « par couleur ».
         // eslint-disable-next-line @next/next/no-img-element
-        <img
-          src={thematic}
-          alt=""
-          aria-hidden
-          className="w-16 h-16 rounded-full object-cover"
-          style={tone ? { boxShadow: `0 0 0 3px color-mix(in srgb, ${tone} 65%, var(--surface))` } : undefined}
-        />
+        <img src={thematic} alt="" aria-hidden className="w-16 h-16 rounded-full object-cover" />
       ) : (
         <span
           className="w-16 h-16 rounded-2xl flex items-center justify-center"

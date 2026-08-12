@@ -1218,7 +1218,6 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                     iconKey={u.key}
                     emoji={u.emoji}
                     label={u.label}
-                    accent={u.color}
                     count={umbrellaCounts[u.key] || 0}
                     onClick={() => pushNav({ kind: "umbrella", key: u.key, label: u.label, emoji: u.emoji })}
                   />
@@ -1311,8 +1310,6 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
               const tiles = levelTiles(navStack);
               const path = navStack.map((n) => n.label).join(" › ");
               const locked = PREMIUM_KEYS.has(navStack[0].key);
-              // Couleur de l'univers courant → propagée aux tuiles des sous-niveaux.
-              const umbrellaColor = LIFESTYLE.find((u) => u.key === navStack[0].key)?.color;
               return (
                 <div className="pb-16">
                   <button
@@ -1336,7 +1333,6 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                           emoji={t.emoji}
                           label={t.label}
                           count={t.count}
-                          accent={umbrellaColor}
                           onClick={() => onTileClick(t)}
                         />
                       ))}
