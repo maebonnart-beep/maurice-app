@@ -32,7 +32,7 @@ export function Logo({ size = 96, light = false }: { size?: number; light?: bool
         src="/tagline-cursive.png"
         alt="les adresses de Maurice"
         className="mt-0.5 w-auto object-contain"
-        style={{ height: 54 }}
+        style={{ height: 40 }}
       />
     </span>
   );
