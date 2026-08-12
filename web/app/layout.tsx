@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Plus_Jakarta_Sans, Fraunces } from "next/font/google";
+import { Plus_Jakarta_Sans, Fraunces, Dancing_Script } from "next/font/google";
 import "./globals.css";
 import RegisterServiceWorker from "./RegisterServiceWorker";
 
@@ -15,6 +15,13 @@ const plusJakarta = Plus_Jakarta_Sans({
 const fraunces = Fraunces({
   subsets: ["latin"],
   variable: "--font-fraunces",
+  display: "swap",
+});
+
+// Police cursive (manuscrite) réservée à la baseline « les adresses de Maurice ».
+const dancingScript = Dancing_Script({
+  subsets: ["latin"],
+  variable: "--font-script",
   display: "swap",
 });
 
@@ -40,7 +47,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fr" className={`h-full antialiased ${plusJakarta.variable} ${fraunces.variable}`}>
+    <html lang="fr" className={`h-full antialiased ${plusJakarta.variable} ${fraunces.variable} ${dancingScript.variable}`}>
       <body className="min-h-full flex flex-col">
         {children}
         <RegisterServiceWorker />

@@ -180,6 +180,11 @@ export const THEMATIC_ICONS: Record<string, string> = {
   "epiceries-specialisees": "/icon-epiceries-specialisees.png",
   livraisons: "/icon-livraisons.png",
   "grandes-surfaces": "/icon-grandes-surfaces.png",
+  // Sous-rubriques Restauration (Food)
+  restaurants: "/icon-restaurants.png",
+  "tables-hotes": "/icon-tables-hotes.png",
+  "chefs-domicile": "/icon-chefs-domicile.png",
+  glaciers: "/icon-glaciers.png",
 };
 
 /** Chemin d'une icône thématique illustrée pour une clé, ou null. */

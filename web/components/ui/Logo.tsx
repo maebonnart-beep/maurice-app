@@ -25,15 +25,14 @@ export function Logo({ size = 96, light = false }: { size?: number; light?: bool
           </span>
         </span>
       </span>
-      {/* Baseline « les adresses de Maurice » : version manuscrite/cursive,
-          détourée en crème pour ressortir sur le bandeau teal. */}
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
-        src="/tagline-cursive.png"
-        alt="les adresses de Maurice"
-        className="mt-0.5 w-auto object-contain"
-        style={{ height: 30 }}
-      />
+      {/* Baseline « les adresses de Maurice » : cursive (Dancing Script) en vrai
+          texte, sur une seule ligne. Crème sur le bandeau teal, encre sinon. */}
+      <span
+        className={`mt-0.5 whitespace-nowrap leading-none ${light ? "text-on-band" : "text-ink"}`}
+        style={{ fontFamily: "var(--font-script), cursive", fontSize: 22 }}
+      >
+        les adresses de Maurice
+      </span>
     </span>
   );
 }
