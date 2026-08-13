@@ -12909,6 +12909,24 @@
     "hours": "Lun-Sam 9h30-19h, Dim et jours fériés 9h-12h30"
   },
   {
+    "id": "naturespan-grand-baie",
+    "name": "Naturespan",
+    "category": "food",
+    "address": "Twenty-Foot Road, Grand Baie 30513",
+    "phone": "",
+    "website": "https://shop.naturespan.mu/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Naturespan%20Twenty-Foot%20Road%20Grand%20Baie%20Mauritius",
+    "lat": -20.0146,
+    "lng": 57.5847,
+    "themes": [
+      "epiceries-specialisees",
+      "livraisons"
+    ],
+    "zone": "nord",
+    "description": "Épicerie bio et naturelle (groupe Accord Bio × Chemtech) : plus de 3 300 références certifiées bio — épicerie sucrée/salée, boissons, cafés & thés, beauté-hygiène, bébé-maternité, aromathérapie, entretien. Boutique en ligne avec livraison J+1 sur toute l'île (commande min. Rs 2 000). Magasin flagship de Grand Baie. Ouverture prévue le 1er septembre 2026.",
+    "hours": ""
+  },
+  {
     "id": "meat-me-butchery-deli",
     "name": "Meat Me Butchery & Deli",
     "category": "food",
