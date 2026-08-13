@@ -144,8 +144,8 @@ const LIFESTYLE: Umbrella[] = [
     emoji: "🛍️",
     color: "#7c5cf0",
     rubriques: [
-      "malls", "shopping", "mode-adultes", "mode-enfants", "materiel-sports",
-      "livres", "jeux", "souvenirs", "equipement-maison",
+      "malls", "mode-adultes", "mode-enfants", "materiel-sports",
+      "livres", "jeux", "souvenirs", "equipement-maison", "beaute", "electromenager",
     ],
   },
   {

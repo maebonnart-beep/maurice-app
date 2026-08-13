@@ -61,7 +61,8 @@ export const ICON_MAP: Record<string, Icon> = {
   "culture-patrimoine": Bank, malls: Buildings,
   "mode-adultes": TShirt, "mode-enfants": Baby, "materiel-sports": TennisBall,
   livres: Books, jeux: GameController, souvenirs: Gift,
-  "equipement-maison": Armchair, "activites-enfants-famille": Baby,
+  "equipement-maison": Armchair, beaute: Sparkle, electromenager: WashingMachine,
+  "activites-enfants-famille": Baby,
   "centres-loisirs-animations-enfants": Confetti, excursions: MapTrifold,
   "cours-de-cuisine": ChefHat, rhumeries: Wine, casinos: PokerChip,
   bowling: BowlingBall, karting: CarProfile, "escape-game": LockKey,
@@ -269,6 +270,8 @@ export const THEMATIC_ICONS: Record<string, string> = {
   jeux: "/icon-jeux.png",
   souvenirs: "/icon-souvenirs.png",
   "equipement-maison": "/icon-equipement-maison.png",
+  beaute: "/icon-shopping-beaute.png",
+  electromenager: "/icon-shopping-electromenager.png",
   // Tuiles de groupe sous Manger (niveau intermédiaire)
   "manger-restauration": "/icon-restauration.png",
   "manger-commerces": "/icon-commerces-alimentaires.png",

@@ -575,7 +575,7 @@
     "lng": 57.5787599,
     "hours": "Tous les jours 9h30-22h",
     "themes": [
-      "shopping"
+      "beaute"
     ],
     "zone": "nord",
     "description": "Boutique de la marque srilankaise Spa Ceylon Luxury Ayurveda, à La Croisette Mall. Vente de produits ayurvédiques : huiles de massage et de soin, baumes, gommages et exfoliants corps, laits et lotions pour le corps, brumes et huiles essentielles, savons et soins des pieds. Vente de produits uniquement, pas de soins/massages sur place.",
@@ -1935,7 +1935,6 @@
     "lng": 57.5740808,
     "hours": "Lun-Sam 9h30-18h",
     "themes": [
-      "shopping",
       "mode-adultes"
     ],
     "zone": "nord",
@@ -1953,7 +1952,6 @@
     "lng": 57.5792747,
     "hours": "Lun-Jeu 9h30-19h30, Ven-Sam 9h30-20h30, Dim 9h30-16h",
     "themes": [
-      "shopping",
       "mode-adultes"
     ],
     "zone": "nord",
@@ -1971,7 +1969,6 @@
     "lng": 57.5827539,
     "hours": "Lun-Sam 10h-18h",
     "themes": [
-      "shopping",
       "mode-adultes"
     ],
     "zone": "nord",
@@ -1989,7 +1986,6 @@
     "lng": 57.5792454,
     "hours": "Lun-Jeu 9h30-19h30, Ven-Sam 9h30-20h, Dim 9h30-16h",
     "themes": [
-      "shopping",
       "mode-adultes"
     ],
     "zone": "nord",
@@ -2006,7 +2002,6 @@
     "lat": -19.9954308,
     "lng": 57.5896977,
     "themes": [
-      "shopping",
       "mode-adultes"
     ],
     "zone": "nord",
@@ -2024,7 +2019,6 @@
     "lng": 57.5760064,
     "hours": "Lun-Sam 10h-19h, fermé dim",
     "themes": [
-      "shopping",
       "mode-adultes"
     ],
     "zone": "nord",
@@ -2041,7 +2035,6 @@
     "lat": -19.9967757,
     "lng": 57.5872503,
     "themes": [
-      "shopping",
       "mode-adultes"
     ],
     "zone": "nord",
@@ -2059,7 +2052,6 @@
     "lat": -20.0111077,
     "lng": 57.5846033,
     "themes": [
-      "shopping",
       "mode-adultes"
     ],
     "zone": "nord",
@@ -2076,7 +2068,6 @@
     "lat": -20.0131028,
     "lng": 57.5858131,
     "themes": [
-      "shopping",
       "mode-adultes"
     ],
     "zone": "nord",
@@ -2094,7 +2085,7 @@
     "lat": -20.012934,
     "lng": 57.5845503,
     "themes": [
-      "shopping"
+      "mode-adultes"
     ],
     "zone": "nord",
     "description": "Boutique proposant vêtements, maillots de bain, bijoux et articles duty-free sur la Route Côtière à Grand Baie."
@@ -2110,7 +2101,6 @@
     "lat": -20.0072082,
     "lng": 57.5985163,
     "themes": [
-      "shopping",
       "mode-adultes"
     ],
     "zone": "nord",
@@ -2128,7 +2118,6 @@
     "lng": 57.5783922,
     "hours": "Dim 9h30-12h30, Lun-Ven 9h30-17h30",
     "themes": [
-      "shopping",
       "mode-adultes"
     ],
     "zone": "nord",
@@ -2145,7 +2134,6 @@
     "lat": -20.0133523,
     "lng": 57.5862545,
     "themes": [
-      "shopping",
       "mode-adultes"
     ],
     "zone": "nord",
@@ -2163,7 +2151,6 @@
     "lng": 57.5884049,
     "hours": "Lun-Sam 9h30-18h",
     "themes": [
-      "shopping",
       "mode-adultes"
     ],
     "zone": "nord",
@@ -2198,7 +2185,7 @@
     "lng": 57.5864579,
     "hours": "Lun-Sam 9h-17h, fermé dim",
     "themes": [
-      "shopping"
+      "souvenirs"
     ],
     "zone": "nord",
     "description": "Bazar artisanal en plein air à Grand Baie, avec des dizaines d'échoppes vendant souvenirs, textiles brodés, épices, bijoux et articles en cuir."
@@ -2215,7 +2202,7 @@
     "lng": 57.5847001,
     "hours": "Lun-Sam 9h30-18h, Dim 9h30-12h30",
     "themes": [
-      "shopping"
+      "souvenirs"
     ],
     "zone": "nord",
     "description": "Boutique hors taxes à Grand Bay Pride, spécialisée dans les spiritueux (dont le rhum Dodo), parfums et articles de luxe pour voyageurs."
@@ -2248,7 +2235,6 @@
     "lat": -20.0090694,
     "lng": 57.5819514,
     "themes": [
-      "shopping",
       "mode-adultes"
     ],
     "zone": "nord",
@@ -2265,7 +2251,6 @@
     "lat": -20.0124054,
     "lng": 57.585443,
     "themes": [
-      "shopping",
       "mode-adultes"
     ],
     "zone": "nord",
@@ -2282,7 +2267,6 @@
     "lat": -20.0134862,
     "lng": 57.5840719,
     "themes": [
-      "shopping",
       "mode-adultes"
     ],
     "zone": "nord",
@@ -2299,7 +2283,6 @@
     "lat": -20.0108285,
     "lng": 57.5850684,
     "themes": [
-      "shopping",
       "souvenirs"
     ],
     "zone": "nord",
@@ -2317,7 +2300,6 @@
     "lng": 57.5784708,
     "hours": "Lun-Sam 9h30-19h, Dim et jours fériés 9h30-16h",
     "themes": [
-      "shopping",
       "mode-adultes"
     ],
     "zone": "nord",
@@ -2334,7 +2316,6 @@
     "lat": -20.0130929,
     "lng": 57.5838284,
     "themes": [
-      "shopping",
       "mode-adultes"
     ],
     "zone": "nord",
@@ -2351,7 +2332,6 @@
     "lat": -20.0103155,
     "lng": 57.5826432,
     "themes": [
-      "shopping",
       "mode-adultes"
     ],
     "zone": "nord",
@@ -2368,7 +2348,6 @@
     "lat": -20.0133739,
     "lng": 57.5840595,
     "themes": [
-      "shopping",
       "mode-adultes"
     ],
     "zone": "nord",
@@ -2385,7 +2364,6 @@
     "lat": -20.0150127,
     "lng": 57.5826154,
     "themes": [
-      "shopping",
       "souvenirs"
     ],
     "zone": "nord",
@@ -2403,7 +2381,6 @@
     "lng": 57.5864559,
     "hours": "Lun-Dim 9h-17h",
     "themes": [
-      "shopping",
       "souvenirs"
     ],
     "zone": "nord",
@@ -2421,7 +2398,6 @@
     "lng": 57.5846077,
     "hours": "Lun-Sam 10h30-20h, Dim 10h30-18h",
     "themes": [
-      "shopping",
       "souvenirs"
     ],
     "zone": "nord",
@@ -2439,7 +2415,6 @@
     "lng": 57.5871486,
     "hours": "Lun-Sam 9h30-17h30, Dim 10h-13h",
     "themes": [
-      "shopping",
       "materiel-sports"
     ],
     "zone": "nord",
@@ -2457,7 +2432,7 @@
     "lng": 57.5841293,
     "hours": "Lun-Ven 9h-17h30, Sam 9h-12h, fermé Dim",
     "themes": [
-      "shopping"
+      "mode-adultes"
     ],
     "zone": "nord",
     "description": "Boutique de mode mauricienne existant depuis plus de 20 ans, proposant vêtements en lin, tenues de plage et pièces casual, sur Sunset Boulevard à Grand Baie."
@@ -2473,7 +2448,6 @@
     "lat": -20.0124913,
     "lng": 57.5873094,
     "themes": [
-      "shopping",
       "mode-adultes"
     ],
     "zone": "nord",
@@ -2492,7 +2466,7 @@
     "lng": 57.5790235,
     "hours": "Tous les jours 10h-18h, fermé dim",
     "themes": [
-      "shopping"
+      "electromenager"
     ],
     "zone": "nord",
     "description": "Boutique d'électronique et multimédia (téléphones, jeux vidéo, GoPro, accessoires, réparation) à La Croisette, Grand Baie."
@@ -2508,7 +2482,6 @@
     "lat": -20.0116029,
     "lng": 57.5843381,
     "themes": [
-      "shopping",
       "mode-adultes"
     ],
     "zone": "nord",
@@ -2526,7 +2499,6 @@
     "lng": 57.5841981,
     "hours": "Tous les jours 9h30-18h",
     "themes": [
-      "shopping",
       "mode-adultes"
     ],
     "zone": "nord",
@@ -2543,7 +2515,6 @@
     "lat": -20.0131357,
     "lng": 57.5840965,
     "themes": [
-      "shopping",
       "mode-adultes"
     ],
     "zone": "nord",
@@ -2560,7 +2531,7 @@
     "lat": -20.0141521,
     "lng": 57.5884085,
     "themes": [
-      "shopping"
+      "mode-adultes"
     ],
     "zone": "nord",
     "description": "Concept store de mode et accessoires à Grand Baie."
@@ -2577,7 +2548,6 @@
     "lng": 57.5791544,
     "hours": "Tous les jours 9h30-22h",
     "themes": [
-      "shopping",
       "mode-enfants"
     ],
     "zone": "nord",
@@ -2595,7 +2565,6 @@
     "lng": 57.5844803,
     "hours": "Lun-Sam 9h-18h, fermé dim et jours fériés",
     "themes": [
-      "shopping",
       "mode-adultes"
     ],
     "zone": "nord",
@@ -2792,7 +2761,6 @@
     "lat": -20.0177581,
     "lng": 57.5770822,
     "themes": [
-      "shopping",
       "mode-adultes"
     ],
     "zone": "nord",
@@ -2874,7 +2842,6 @@
     "lat": -20.0126211,
     "lng": 57.5856349,
     "themes": [
-      "shopping",
       "mode-adultes"
     ],
     "zone": "nord",
@@ -5937,7 +5904,6 @@
     "lat": -20.3586054,
     "lng": 57.3693046,
     "themes": [
-      "shopping",
       "mode-adultes"
     ],
     "zone": "ouest",
@@ -11440,7 +11406,6 @@
     "lat": -20.0122315,
     "lng": 57.5872783,
     "themes": [
-      "shopping",
       "materiel-sports"
     ],
     "zone": "nord",
@@ -11742,7 +11707,7 @@
     "lat": -20.0114132,
     "lng": 57.5847933,
     "themes": [
-      "shopping"
+      "souvenirs"
     ],
     "zone": "nord",
     "description": "Galerie d'art sur le thème de l'océan à Grand Baie."
@@ -11758,7 +11723,6 @@
     "lat": -20.0180986,
     "lng": 57.5786951,
     "themes": [
-      "shopping",
       "mode-adultes"
     ],
     "zone": "nord",
@@ -15513,7 +15477,6 @@
     "lat": -20.2785565,
     "lng": 57.4027186,
     "themes": [
-      "shopping",
       "mode-adultes"
     ],
     "zone": "ouest",
@@ -15530,7 +15493,6 @@
     "lat": -20.2790954,
     "lng": 57.4025312,
     "themes": [
-      "shopping",
       "materiel-sports"
     ],
     "zone": "ouest",
@@ -15548,7 +15510,6 @@
     "lat": -20.3278058,
     "lng": 57.3831525,
     "themes": [
-      "shopping",
       "souvenirs"
     ],
     "zone": "ouest",
@@ -15566,7 +15527,6 @@
     "lat": -20.2775479,
     "lng": 57.368749,
     "themes": [
-      "shopping",
       "mode-adultes"
     ],
     "zone": "ouest",
@@ -15865,7 +15825,7 @@
     "lat": -20.2794513,
     "lng": 57.4020699,
     "themes": [
-      "shopping"
+      "beaute"
     ],
     "zone": "ouest",
     "description": "Point de vente de la marque de cosmétiques américaine Younique (maquillage : mascara, eyeliner, rouge à lèvres, ombres à paupières ; soins du visage : nettoyants, masques, crèmes hydratantes). Vente de produits uniquement, pas de soins/massages sur place."
@@ -19321,7 +19281,6 @@
     "lat": -20.3580105,
     "lng": 57.3685809,
     "themes": [
-      "shopping",
       "souvenirs"
     ],
     "zone": "ouest",
@@ -19391,7 +19350,6 @@
     "lat": -20.443618,
     "lng": 57.3223106,
     "themes": [
-      "shopping",
       "souvenirs"
     ],
     "zone": "sud",
@@ -19460,7 +19418,6 @@
     "lat": -20.3098148,
     "lng": 57.5132708,
     "themes": [
-      "shopping",
       "mode-adultes",
       "equipement-maison"
     ],
@@ -19478,7 +19435,6 @@
     "lat": -20.4433376,
     "lng": 57.3223256,
     "themes": [
-      "shopping",
       "mode-adultes"
     ],
     "zone": "sud",
@@ -19495,7 +19451,6 @@
     "lat": -20.4435123,
     "lng": 57.3223218,
     "themes": [
-      "shopping",
       "mode-adultes"
     ],
     "zone": "sud",
@@ -19562,7 +19517,6 @@
     "lat": -20.1606919,
     "lng": 57.5029509,
     "themes": [
-      "shopping",
       "souvenirs"
     ],
     "zone": "centre",
@@ -21672,7 +21626,7 @@
     "lat": -20.1520175,
     "lng": 57.5718296,
     "themes": [
-      "shopping"
+      "equipement-maison"
     ],
     "zone": "nord",
     "description": "Petit commerce local à Montagne Longue."
@@ -23939,7 +23893,7 @@
     "lat": -20.400247,
     "lng": 57.5985047,
     "themes": [
-      "shopping"
+      "beaute"
     ],
     "zone": "sud",
     "description": "Magasin de vente directe Aldrex proposant produits de beauté (Yves Rocher, Stanhome, Flormar) et articles ménagers.",
@@ -23973,7 +23927,6 @@
     "lat": -20.1962565,
     "lng": 57.7759082,
     "themes": [
-      "shopping",
       "souvenirs"
     ],
     "zone": "est",
@@ -24023,7 +23976,7 @@
     "lat": -20.1979125,
     "lng": 57.7750695,
     "themes": [
-      "shopping"
+      "souvenirs"
     ],
     "zone": "est",
     "description": "Petite boutique de souvenirs et articles divers à Quatre Cocos, sur la côte est de l'île."
@@ -24055,7 +24008,6 @@
     "lat": -20.1633767,
     "lng": 57.5049794,
     "themes": [
-      "shopping",
       "jeux"
     ],
     "zone": "centre",
@@ -24072,7 +24024,6 @@
     "lat": -20.197683,
     "lng": 57.7736966,
     "themes": [
-      "shopping",
       "souvenirs"
     ],
     "zone": "est",
@@ -24121,7 +24072,6 @@
     "lat": -20.1961976,
     "lng": 57.7766805,
     "themes": [
-      "shopping",
       "mode-adultes"
     ],
     "zone": "est",
@@ -24185,7 +24135,6 @@
     "lat": -20.192684,
     "lng": 57.7257821,
     "themes": [
-      "shopping",
       "souvenirs"
     ],
     "zone": "est",
@@ -24202,7 +24151,6 @@
     "lat": -20.1910398,
     "lng": 57.7217371,
     "themes": [
-      "shopping",
       "mode-adultes"
     ],
     "zone": "est",
@@ -24219,7 +24167,7 @@
     "lat": -20.213623,
     "lng": 57.7371998,
     "themes": [
-      "shopping"
+      "grandes-surfaces"
     ],
     "zone": "est",
     "description": "Supérette/supermarché de quartier à Bramsthan (Flacq), proposant produits alimentaires et articles du quotidien."
@@ -24235,7 +24183,7 @@
     "lat": -20.1340991,
     "lng": 57.5126656,
     "themes": [
-      "shopping"
+      "equipement-maison"
     ],
     "zone": "nord",
     "description": "Enseigne mauricienne de décoration d'intérieur (magazine et boutique), basée à Baie du Tombeau."
@@ -24251,7 +24199,7 @@
     "lat": -20.2671364,
     "lng": 57.4782867,
     "themes": [
-      "shopping"
+      "concessionnaires"
     ],
     "zone": "centre",
     "description": "Magasin spécialisé dans les motos, quads et équipements de moto, situé à l'Orchard Centre, Quatre Bornes."
@@ -31458,7 +31406,6 @@
     "lat": -20.1614607,
     "lng": 57.4981841,
     "themes": [
-      "shopping",
       "souvenirs"
     ],
     "zone": "centre",
@@ -31631,7 +31578,6 @@
     "lat": -20.2779966,
     "lng": 57.3690628,
     "themes": [
-      "shopping",
       "mode-adultes"
     ],
     "zone": "ouest",
@@ -33366,7 +33312,6 @@
     "lat": -20.161,
     "lng": 57.4985,
     "themes": [
-      "shopping",
       "souvenirs"
     ],
     "badge": "coup-de-coeur",
@@ -33579,7 +33524,6 @@
     "lat": -20.3153,
     "lng": 57.5222,
     "themes": [
-      "shopping",
       "livres"
     ],
     "zone": "centre",
@@ -33596,7 +33540,6 @@
     "lat": -20.2994,
     "lng": 57.5006,
     "themes": [
-      "shopping",
       "livres"
     ],
     "zone": "centre",
@@ -33612,7 +33555,6 @@
     "lat": -20.244828,
     "lng": 57.4691744,
     "themes": [
-      "shopping",
       "livres"
     ],
     "zone": "centre",
@@ -33629,7 +33571,6 @@
     "lat": -20.0219739,
     "lng": 57.5787883,
     "themes": [
-      "shopping",
       "livres"
     ],
     "zone": "nord",
@@ -33645,7 +33586,6 @@
     "lat": -20.244828,
     "lng": 57.4691744,
     "themes": [
-      "shopping",
       "livres"
     ],
     "zone": "centre",
@@ -33681,7 +33621,6 @@
     "lng": 57.4969998,
     "hours": "Lun-Jeu 09:30-20:30, Ven-Sam 09:30-22:00, Dim/Férié 09:30-17:00",
     "themes": [
-      "shopping",
       "mode-enfants"
     ],
     "zone": "centre",
@@ -33698,7 +33637,6 @@
     "lng": 57.4980787,
     "hours": "Lun-Jeu 09:30-21:00, Ven-Sam 09:30-22:00, Dim/Férié 09:30-17:00",
     "themes": [
-      "shopping",
       "mode-enfants"
     ],
     "zone": "centre",
@@ -33715,7 +33653,6 @@
     "lng": 57.4969998,
     "hours": "Lun-Jeu 09:30-20:30, Ven-Sam 09:30-22:00, Dim/Férié 09:30-17:00",
     "themes": [
-      "shopping",
       "mode-enfants"
     ],
     "zone": "centre",
@@ -33731,7 +33668,6 @@
     "lng": 57.4969998,
     "hours": "Lun-Jeu 09:30-20:30, Ven-Sam 09:30-22:00, Dim/Férié 09:30-17:00",
     "themes": [
-      "shopping",
       "mode-enfants"
     ],
     "zone": "centre",
@@ -33747,7 +33683,6 @@
     "lng": 57.4969998,
     "hours": "Lun-Jeu 09:30-20:30, Ven-Sam 09:30-22:00, Dim/Férié 09:30-17:00",
     "themes": [
-      "shopping",
       "mode-enfants"
     ],
     "zone": "centre",
@@ -33763,7 +33698,6 @@
     "lng": 57.4969998,
     "hours": "Lun-Jeu 09:30-20:30, Ven-Sam 09:30-22:00, Dim/Férié 09:30-17:00",
     "themes": [
-      "shopping",
       "mode-enfants"
     ],
     "zone": "centre",
@@ -33780,7 +33714,6 @@
     "lng": 57.5787883,
     "hours": "Lun-Jeu 09:30-19:30, Ven-Sam 09:30-20:30, Dim 09:30-16:00",
     "themes": [
-      "shopping",
       "mode-enfants"
     ],
     "zone": "nord",
@@ -33794,7 +33727,6 @@
     "lat": -20.2446376,
     "lng": 57.4980787,
     "themes": [
-      "shopping",
       "mode-enfants"
     ],
     "zone": "centre",
@@ -33811,7 +33743,6 @@
     "lat": -20.2446376,
     "lng": 57.4980787,
     "themes": [
-      "shopping",
       "mode-enfants"
     ],
     "zone": "centre",
@@ -33828,7 +33759,6 @@
     "lat": -20.2790562,
     "lng": 57.3682813,
     "themes": [
-      "shopping",
       "mode-enfants"
     ],
     "zone": "ouest",
@@ -33846,7 +33776,6 @@
     "lng": 57.4794,
     "hours": "Lun-Jeu 10h-20h, Ven-Sam 10h-21h, Dim 10h-15h",
     "themes": [
-      "shopping",
       "mode-enfants"
     ],
     "zone": "centre",
@@ -33863,7 +33792,6 @@
     "lng": 57.4776,
     "hours": "Lun-Sam 09h-17h30, Dim 09h-14h",
     "themes": [
-      "shopping",
       "mode-enfants"
     ],
     "zone": "centre",
@@ -33880,7 +33808,6 @@
     "lat": -20.2274927,
     "lng": 57.491472,
     "themes": [
-      "shopping",
       "equipement-maison"
     ],
     "zone": "centre",
@@ -33897,7 +33824,6 @@
     "lat": -20.0178066,
     "lng": 57.5866391,
     "themes": [
-      "shopping",
       "equipement-maison"
     ],
     "zone": "nord",
@@ -33915,7 +33841,6 @@
     "lng": 57.4990057,
     "hours": "Lun-Jeu 09h30-20h30, Ven-Sam 09h30-22h00, Dim/Férié 09h30-15h00",
     "themes": [
-      "shopping",
       "equipement-maison"
     ],
     "zone": "centre",
@@ -33932,7 +33857,6 @@
     "lat": -20.1669788,
     "lng": 57.4879145,
     "themes": [
-      "shopping",
       "equipement-maison"
     ],
     "zone": "centre",
@@ -33949,7 +33873,6 @@
     "lat": -20.1669788,
     "lng": 57.4879145,
     "themes": [
-      "shopping",
       "equipement-maison"
     ],
     "zone": "centre",
@@ -33966,7 +33889,6 @@
     "lat": -20.1636052,
     "lng": 57.4992003,
     "themes": [
-      "shopping",
       "equipement-maison"
     ],
     "zone": "centre",
@@ -33982,7 +33904,6 @@
     "lat": -20.0178066,
     "lng": 57.5866391,
     "themes": [
-      "shopping",
       "equipement-maison"
     ],
     "zone": "nord",
@@ -34000,7 +33921,6 @@
     "lat": -20.2245312,
     "lng": 57.4663997,
     "themes": [
-      "shopping",
       "equipement-maison"
     ],
     "zone": "centre",
@@ -34018,7 +33938,6 @@
     "lat": -20.0135806,
     "lng": 57.5886332,
     "themes": [
-      "shopping",
       "equipement-maison"
     ],
     "zone": "nord",
@@ -34035,7 +33954,6 @@
     "lat": -20.2788296,
     "lng": 57.402796,
     "themes": [
-      "shopping",
       "equipement-maison"
     ],
     "zone": "ouest",
@@ -34052,7 +33970,6 @@
     "lat": -20.2446376,
     "lng": 57.4980787,
     "themes": [
-      "shopping",
       "equipement-maison"
     ],
     "zone": "centre",
@@ -34068,7 +33985,6 @@
     "lng": 57.4990057,
     "hours": "Lun-Jeu 09h30-20h30, Ven-Sam 09h30-22h00, Dim/Férié 09h30-15h00",
     "themes": [
-      "shopping",
       "equipement-maison"
     ],
     "zone": "centre",
@@ -34084,7 +34000,6 @@
     "lat": -20.2427628,
     "lng": 57.4833748,
     "themes": [
-      "shopping",
       "equipement-maison"
     ],
     "zone": "centre",
@@ -34100,7 +34015,6 @@
     "lat": -20.2780268,
     "lng": 57.4018217,
     "themes": [
-      "shopping",
       "equipement-maison"
     ],
     "zone": "ouest",
@@ -34116,7 +34030,6 @@
     "lng": 57.4990057,
     "hours": "Lun-Jeu 09h30-20h30, Ven-Sam 09h30-22h00, Dim/Férié 09h30-15h00",
     "themes": [
-      "shopping",
       "equipement-maison"
     ],
     "zone": "centre",
@@ -34132,7 +34045,6 @@
     "lng": 57.4990057,
     "hours": "Lun-Jeu 09h30-20h30, Ven-Sam 09h30-22h00, Dim/Férié 09h30-15h00",
     "themes": [
-      "shopping",
       "equipement-maison"
     ],
     "zone": "centre",
@@ -34148,7 +34060,6 @@
     "lng": 57.4990057,
     "hours": "Lun-Jeu 09h30-20h30, Ven-Sam 09h30-22h00, Dim/Férié 09h30-15h00",
     "themes": [
-      "shopping",
       "equipement-maison"
     ],
     "zone": "centre",
@@ -34164,7 +34075,6 @@
     "lng": 57.4990057,
     "hours": "Lun-Jeu 09h30-20h30, Ven-Sam 09h30-22h00, Dim/Férié 09h30-15h00",
     "themes": [
-      "shopping",
       "equipement-maison"
     ],
     "zone": "centre",
@@ -34180,7 +34090,6 @@
     "lng": 57.4990057,
     "hours": "Lun-Jeu 09h30-20h30, Ven-Sam 09h30-22h00, Dim/Férié 09h30-15h00",
     "themes": [
-      "shopping",
       "equipement-maison"
     ],
     "zone": "centre",
@@ -34196,7 +34105,6 @@
     "lat": -20.2789702,
     "lng": 57.36914,
     "themes": [
-      "shopping",
       "equipement-maison"
     ],
     "zone": "ouest",
@@ -34211,7 +34119,6 @@
     "lat": -20.1624522,
     "lng": 57.5028044,
     "themes": [
-      "shopping",
       "equipement-maison"
     ],
     "zone": "centre",
@@ -34229,7 +34136,6 @@
     "lng": 57.4794,
     "hours": "Lun-Ven 08h-20h, Sam 08h-19h, Dim 09h-15h",
     "themes": [
-      "shopping",
       "equipement-maison"
     ],
     "zone": "centre",
@@ -34246,7 +34152,6 @@
     "lat": -20.0194661,
     "lng": 57.6261351,
     "themes": [
-      "shopping",
       "equipement-maison"
     ],
     "zone": "nord",
@@ -34265,7 +34170,6 @@
     "lng": 57.6261351,
     "hours": "Lun-Sam 08h00-17h00, Dim fermé",
     "themes": [
-      "shopping",
       "equipement-maison"
     ],
     "zone": "nord",
@@ -34281,7 +34185,6 @@
     "lat": -20.2552974,
     "lng": 57.4911386,
     "themes": [
-      "shopping",
       "equipement-maison"
     ],
     "zone": "centre",
@@ -34299,7 +34202,6 @@
     "lng": 57.4452697,
     "hours": "Lun-Sam 09h00-17h30, Dim 09h00-13h00",
     "themes": [
-      "shopping",
       "equipement-maison"
     ],
     "zone": "centre",
@@ -34420,7 +34322,6 @@
     "lat": -20.1242947,
     "lng": 57.5165785,
     "themes": [
-      "shopping",
       "equipement-maison"
     ],
     "zone": "nord",
@@ -34438,7 +34339,6 @@
     "lat": -20.0212692,
     "lng": 57.5785712,
     "themes": [
-      "shopping",
       "equipement-maison"
     ],
     "zone": "nord",
@@ -34456,7 +34356,6 @@
     "lat": -20.2792616,
     "lng": 57.4955633,
     "themes": [
-      "shopping",
       "equipement-maison"
     ],
     "zone": "centre",
@@ -34474,7 +34373,6 @@
     "lat": -20.2933761,
     "lng": 57.4978036,
     "themes": [
-      "shopping",
       "equipement-maison"
     ],
     "zone": "centre",
@@ -43047,7 +42945,6 @@
     "googleMapsUrl": "https://www.google.com/maps/search/Patrick+Mavros+Atelier+Beau+Plan+Pamplemousses",
     "hours": "Lun-Ven 9h-17h, Sam 9h-12h30, Dim fermé",
     "themes": [
-      "shopping",
       "souvenirs"
     ],
     "zone": "nord",
@@ -43286,7 +43183,6 @@
     "lat": -20.0158939,
     "lng": 57.5698674,
     "themes": [
-      "shopping",
       "souvenirs"
     ],
     "hours": "Lun-Sam 10h-17h, fermé le dimanche",
@@ -43304,7 +43200,6 @@
     "lat": -20.0735467,
     "lng": 57.6176141,
     "themes": [
-      "shopping",
       "souvenirs"
     ],
     "hours": "Tous les jours 9h-17h",
@@ -43322,8 +43217,7 @@
     "lat": -20.0706412,
     "lng": 57.6155391,
     "themes": [
-      "malls",
-      "shopping"
+      "malls"
     ],
     "hours": "Lun-Ven 8h-18h, Sam 8h-17h, fermé le dimanche",
     "zone": "nord",
@@ -43480,7 +43374,6 @@
     "lat": -20.4189935,
     "lng": 57.7112691,
     "themes": [
-      "shopping",
       "souvenirs"
     ],
     "zone": "sud",
@@ -43497,7 +43390,6 @@
     "lat": -20.3186,
     "lng": 57.5265,
     "themes": [
-      "shopping",
       "souvenirs"
     ],
     "zone": "centre",
@@ -43514,7 +43406,6 @@
     "lat": -20.3186,
     "lng": 57.5265,
     "themes": [
-      "shopping",
       "souvenirs"
     ],
     "zone": "centre",
