@@ -17993,6 +17993,23 @@
     "entryPrice": "Sortie dauphins 2 000 Rs (40 €) · Journée complète 3 000 Rs (60 €) · Observation baleines & cachalots 4 500 Rs (90 €)"
   },
   {
+    "id": "blue-reef-ecotours-la-gaulette",
+    "name": "Blue Reef Ecotours",
+    "category": "activites",
+    "address": "Le Morne / La Gaulette",
+    "phone": "+230 5771 2928",
+    "website": "https://bluereefecotours.com/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Blue%20Reef%20Ecotours%20La%20Gaulette%20Mauritius",
+    "lat": -20.4267,
+    "lng": 57.3593,
+    "themes": [
+      "excursions",
+      "snorkeling"
+    ],
+    "zone": "ouest",
+    "description": "Opérateur d'écotourisme actif depuis 2006, sorties en bateau vers l'Île aux Bénitiers au départ de La Gaulette : nage avec les dauphins, observation des baleines et des tortues, snorkeling à Crystal Rock et barbecue de poisson grillé sur l'île, en petits groupes."
+  },
+  {
     "id": "mauritius-boat-tours-la-gaulette-labonne-gille",
     "name": "Mauritius Boat Tours - La gaulette ( Labonne Gille)",
     "category": "activites",
