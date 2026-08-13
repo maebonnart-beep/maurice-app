@@ -275,8 +275,13 @@ function HomeEntry({
       className="flex flex-col items-center justify-center gap-3 p-6 min-h-[172px] rounded-tile border border-border bg-surface text-center shadow-sm active:scale-[.98] transition-transform"
     >
       {img ? (
-        // eslint-disable-next-line @next/next/no-img-element
-        <img src={img} alt="" aria-hidden className="w-[84px] h-[84px] object-contain" />
+        <span
+          className="w-[108px] h-[108px] rounded-2xl flex items-center justify-center"
+          style={{ background: "var(--surface-2, #ececef)" }}
+        >
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src={img} alt="" aria-hidden className="w-[94px] h-[94px] object-contain" />
+        </span>
       ) : (
         <span className="w-[74px] h-[74px] rounded-2xl bg-primary-tint text-primary-deep flex items-center justify-center">
           {Icon && <Icon size={40} weight="duotone" aria-hidden />}
