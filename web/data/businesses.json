@@ -3101,6 +3101,8 @@
     "lat": -20.4133,
     "lng": 57.7228,
     "themes": [
+      "parcs-animaliers",
+      "activites-enfants-famille",
       "randonnee-trail"
     ],
     "hours": "Lun-Sam départs 9h30-14h30 (toutes les 30 min), Dim matin seulement 9h30-12h",
@@ -3108,7 +3110,8 @@
     "difficultyLevel": "debutant",
     "guideRecommended": true,
     "zone": "sud",
-    "description": "Îlot-sanctuaire accessible en visite guidée par bateau (10 min de traversée depuis Pointe Jérôme), où évoluent en liberté tortues géantes d'Aldabra, geckos ornés et pigeons roses."
+    "description": "Îlot-sanctuaire accessible en visite guidée par bateau (10 min de traversée depuis Pointe Jérôme), où évoluent en liberté tortues géantes d'Aldabra, geckos ornés et pigeons roses.",
+    "entryPrice": "≈ 1100 Rs/pers (traversée comprise)"
   },
   {
     "id": "mahebourg-museum",
@@ -9089,24 +9092,6 @@
     ],
     "zone": "sud",
     "description": "Restaurant familial de Mahébourg à la terrasse ouverte sur l'animation de la rue, apprécié pour sa cuisine créole authentique et ses croquettes de fruits de mer en entrée."
-  },
-  {
-    "id": "chez-marilyn-resto",
-    "name": "Chez marilyn resto",
-    "category": "food",
-    "address": "Rue de Labourdonnais, Mahébourg",
-    "phone": "+230 631 1335",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=1323997630985206107&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.4107756,
-    "lng": 57.710556,
-    "themes": [
-      "restaurants",
-      "mauricienne",
-      "frequente-locaux"
-    ],
-    "zone": "sud",
-    "description": "Adresse typique de la rue de Labourdonnais à Mahébourg, cuisine créole authentique. Vindaye de poisson et daube de calamars particulièrement recommandés, accueil chaleureux, réservation conseillée."
   },
   {
     "id": "restaurant-take-baz-take",
@@ -25882,19 +25867,20 @@
     "id": "chez-marilyn",
     "name": "Chez Marilyn",
     "category": "food",
-    "address": "Mahébourg (Sud-Est)",
-    "phone": "",
+    "address": "Rue de Labourdonnais, Mahébourg",
+    "phone": "+230 631 1335",
     "website": "",
-    "googleMapsUrl": "https://maps.app.goo.gl/GzM5A4nE8vRTYhZ27",
+    "googleMapsUrl": "https://maps.google.com/?cid=1323997630985206107&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.4107756,
     "lng": 57.710556,
     "themes": [
       "restaurants",
-      "mauricienne"
+      "mauricienne",
+      "frequente-locaux"
     ],
     "badge": "selection",
     "zone": "sud",
-    "description": "Restaurant créole de la rue de Labourdonnais à Mahébourg, apprécié pour son vindaye de poisson, sa soupe de fruits de mer et ses currys."
+    "description": "Restaurant créole authentique de la rue de Labourdonnais à Mahébourg, apprécié pour son vindaye de poisson, sa daube de calamars, sa soupe de fruits de mer et ses currys. Accueil chaleureux, réservation conseillée."
   },
   {
     "id": "naked-foods",
@@ -43360,5 +43346,92 @@
     ],
     "zone": "sud",
     "description": "Atelier-boutique de maquettes de bateaux à Mahébourg, spécialisé dans les modèles faits main : des pirogues de pêche traditionnelles aux voiliers et yachts, finement détaillés, reflet de la culture maritime de l'île. Idéal pour un souvenir artisanal."
+  },
+  {
+    "id": "esco-burger-blue-bay",
+    "name": "Esco Burger — Blue Bay",
+    "category": "food",
+    "address": "Coastal Road, Blue Bay",
+    "phone": "+230 5803 5676",
+    "website": "https://esco-burger.restaurant.mu/",
+    "googleMapsUrl": "https://www.google.com/maps/search/Esco+Burger+Blue+Bay",
+    "lat": -20.4431425,
+    "lng": 57.7175261,
+    "themes": [
+      "restaurants",
+      "grillades"
+    ],
+    "zone": "sud",
+    "description": "Adresse populaire de Blue Bay, sur la route côtière, réputée pour ses burgers de qualité (bœuf, poulet frit ou grillé, options végétariennes) ainsi que quelques plats de fruits de mer."
+  },
+  {
+    "id": "le-bougainville-blue-bay",
+    "name": "Le Bougainville — Blue Bay",
+    "category": "food",
+    "address": "Pointe d'Esny, Blue Bay",
+    "phone": "+230 631 8299",
+    "website": "https://le-bougainville.restaurant.mu/",
+    "googleMapsUrl": "https://www.google.com/maps/search/Restaurant+Le+Bougainville+Blue+Bay",
+    "lat": -20.4446519,
+    "lng": 57.7179472,
+    "themes": [
+      "restaurants",
+      "fruits-de-mer",
+      "italien"
+    ],
+    "hours": "Tous les jours 10h-22h",
+    "zone": "sud",
+    "description": "Restaurant de Blue Bay (Pointe d'Esny), à deux pas de la plage, proposant une cuisine locale et internationale : fruits de mer frais, pizzas et options végétariennes. Ouvert tous les jours de 10h à 22h."
+  },
+  {
+    "id": "totof-tours-blue-bay",
+    "name": "Totof Tours — Blue Bay",
+    "category": "activites",
+    "address": "Plage publique de Blue Bay",
+    "phone": "",
+    "website": "https://www.totof-mauritius.com/",
+    "googleMapsUrl": "https://www.google.com/maps/search/Totof+Tours+Blue+Bay",
+    "lat": -20.4438075,
+    "lng": 57.7172253,
+    "themes": [
+      "excursions",
+      "sports-nautiques",
+      "snorkeling"
+    ],
+    "zone": "sud",
+    "description": "Opérateur d'excursions en bateau à fond de verre et de snorkeling dans le parc marin de Blue Bay, basé sur la plage publique (plus de 25 ans d'expérience). Sorties d'1h ou 2h à la découverte des 72 espèces de poissons, 38 types de coraux et des tortues du parc marin."
+  },
+  {
+    "id": "bato-dodo-excursion-blue-bay",
+    "name": "Bato Dodo Excursion — Blue Bay",
+    "category": "activites",
+    "address": "Blue Bay",
+    "phone": "",
+    "website": "https://www.facebook.com/p/Bato-DODO-Excursion-100077116879371/",
+    "googleMapsUrl": "https://www.google.com/maps/search/Bato+Dodo+Excursion+Blue+Bay",
+    "lat": -20.4437172,
+    "lng": 57.7168823,
+    "themes": [
+      "excursions",
+      "navigation-bateau",
+      "snorkeling"
+    ],
+    "zone": "sud",
+    "description": "Sorties en bateau au départ de Blue Bay dans le parc marin du sud-est : snorkeling et passage par Pointe d'Esny et les îlots environnants."
+  },
+  {
+    "id": "jean-claude-farla-blue-bay",
+    "name": "Jean-Claude Farla — Excursions en mer (Blue Bay)",
+    "category": "activites",
+    "address": "Blue Bay",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/Jean+Claude+Farla+Blue+Bay",
+    "themes": [
+      "excursions",
+      "navigation-bateau"
+    ],
+    "zone": "sud",
+    "description": "Skipper proposant des sorties en mer et excursions au départ de Blue Bay, dans le parc marin et vers les îlots du sud-est."
   }
 ]
