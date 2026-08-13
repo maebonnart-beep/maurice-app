@@ -1374,7 +1374,8 @@
       "restaurants",
       "mauricienne",
       "fruits-de-mer",
-      "europeenne"
+      "europeenne",
+      "bars"
     ],
     "hours": "Lun-Jeu et Dim 12h-22h, Ven-Sam 12h-22h30",
     "priceRange": "se-faire-plaisir",
@@ -3121,9 +3122,12 @@
       "culture-patrimoine"
     ],
     "priceRange": "gratuit",
-    "description": "Petit musée historique retraçant l'histoire de l'île depuis la colonisation jusqu'à l'indépendance, avec objets d'époque et récits liés à la bataille navale de Grand Port ; entrée gratuite, photographie interdite à l'intérieur.",
+    "description": "Petit musée historique retraçant l'histoire de l'île depuis la colonisation jusqu'à l'indépendance, avec objets d'époque et récits liés à la bataille navale de Grand Port ; entrée gratuite, photographie interdite à l'intérieur. Conseil : prévoir une lotion anti-moustique pour la visite du jardin.",
     "entryPrice": "Gratuit",
-    "zone": "sud"
+    "zone": "sud",
+    "lat": -20.4163245,
+    "lng": 57.7033301,
+    "hours": "Lun-Sam 9h-16h (mercredi 11h-16h), Dim 9h-12h"
   },
   {
     "id": "domaine-de-letoile",
@@ -43110,5 +43114,251 @@
     "priceRange": "prix-moyen",
     "description": "Restaurant mauricien atypique à The Vale, un peu à l'écart de Grand Baie, apprécié pour son cadre et sa décoration soignés. Cuisine mauricienne et chinoise, produits de la mer, riz cantonais et nouilles sautées.",
     "hours": "Tous les jours midi et soir, sauf le lundi"
+  },
+  {
+    "id": "banana-beach-club-grand-baie",
+    "name": "Banana Beach Club — Grand Baie",
+    "category": "food",
+    "address": "Coastal Road, Grand Baie",
+    "phone": "+230 263 0326",
+    "website": "https://bananabeachclub.com/",
+    "googleMapsUrl": "https://www.google.com/maps/search/Banana+Beach+Club+Grand+Baie",
+    "lat": -20.0099581,
+    "lng": 57.5831259,
+    "themes": [
+      "bars",
+      "restaurants"
+    ],
+    "zone": "nord",
+    "description": "Institution festive de Grand Baie réunissant le célèbre Banana Bar avec musique live, un restaurant grill à l'ambiance tropicale et le Blue Note Jazz'n'Blues Club. Réservations au +230 252 0897."
+  },
+  {
+    "id": "njoy-grand-baie",
+    "name": "N'Joy — Grand Baie",
+    "category": "food",
+    "address": "Plage de La Cuvette, Grand Baie",
+    "phone": "+230 5500 8601",
+    "website": "https://njoy.mu/",
+    "googleMapsUrl": "https://www.google.com/maps/search/N%27Joy+Grand+Baie",
+    "lat": -20.0077772,
+    "lng": 57.5786448,
+    "themes": [
+      "bars",
+      "restaurants"
+    ],
+    "hours": "Mer-Dim 12h-minuit",
+    "zone": "nord",
+    "description": "Bar-restaurant tendance sur la plage de La Cuvette à Grand Baie : cocktails, musique live et cuisine gourmande avec tapas à partager, dans un cadre convivial mêlant art et saveurs. Ouvert du mercredi au dimanche, de midi à minuit."
+  },
+  {
+    "id": "boutique-michel-abad-grand-baie",
+    "name": "Le Comptoir de Michel Abad — Grand Baie",
+    "category": "activites",
+    "address": "Route côtière, Grand Baie",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/Boutique+Michel+Abad+Grand+Baie",
+    "lat": -20.0158939,
+    "lng": 57.5698674,
+    "themes": [
+      "shopping",
+      "souvenirs"
+    ],
+    "hours": "Lun-Sam 10h-17h, fermé le dimanche",
+    "zone": "nord",
+    "description": "Boutique du créateur français Michel Abad, installée dans une maison mauricienne sur la route côtière de Grand Baie. Robes et tuniques faites main en voile de coton, lin et soie, avec Le Comptoir du Cachemire (ponchos, étoles, écharpes, plaids, chapeaux). Sur mesure possible."
+  },
+  {
+    "id": "boutique-chateau-labourdonnais-mapou",
+    "name": "Boutique du Château de Labourdonnais — Mapou",
+    "category": "activites",
+    "address": "Domaine de Labourdonnais, Mapou",
+    "phone": "",
+    "website": "https://domainedelabourdonnais.com/",
+    "googleMapsUrl": "https://www.google.com/maps/search/Chateau+de+Labourdonnais+Mapou",
+    "lat": -20.0735467,
+    "lng": 57.6176141,
+    "themes": [
+      "shopping",
+      "souvenirs"
+    ],
+    "hours": "Tous les jours 9h-17h",
+    "zone": "nord",
+    "description": "Boutique du Domaine de Labourdonnais : produits de la distillerie et des vergers du domaine (rhums, confitures, gelées et jus de fruits maison), épices, objets de décoration d'inspiration coloniale et artisanat local, en souvenir de la visite du château."
+  },
+  {
+    "id": "quartier-des-serres-mapou",
+    "name": "Le Quartier des Serres — Mapou",
+    "category": "activites",
+    "address": "Domaine de Labourdonnais, Mapou 31803",
+    "phone": "",
+    "website": "https://domainedelabourdonnais.com/",
+    "googleMapsUrl": "https://www.google.com/maps/search/Le+Quartier+des+Serres+Mapou",
+    "lat": -20.0706412,
+    "lng": 57.6155391,
+    "themes": [
+      "malls",
+      "shopping"
+    ],
+    "hours": "Lun-Ven 8h-18h, Sam 8h-17h, fermé le dimanche",
+    "zone": "nord",
+    "description": "Centre commercial atypique aménagé dans d'anciennes serres à anthuriums au cœur du Domaine de Labourdonnais (15 000 m²) : boutiques de créateurs, épicerie fine (La Corbeille), pépinière de fruitiers, restaurant-terrasse, kiosques et espace bien-être, dans un écrin de jardins tropicaux."
+  },
+  {
+    "id": "historic-marine-the-vale",
+    "name": "Les Ateliers d'Historic Marine — The Vale",
+    "category": "activites",
+    "address": "Adamas, Mangalkhan, Floreal, Curepipe 74208",
+    "phone": "+230 5259 9337",
+    "website": "https://historic-marine.com/",
+    "googleMapsUrl": "https://www.google.com/maps/search/Historic+Marine+The+Vale+Mauritius",
+    "themes": [
+      "culture-patrimoine",
+      "activites-enfants-famille"
+    ],
+    "hours": "Lun-Ven 9h-17h, Sam-Dim et jours fériés 9h-12h",
+    "zone": "centre",
+    "description": "Plus grande et plus ancienne manufacture de maquettes de bateaux des Mascareignes, avec plus de 150 modèles faits main de toutes gammes de prix. Visite gratuite de l'atelier, où les artisans perpétuent la tradition : assemblage des coques, découpe des voiles, sculpture des pièces, gréement et vernissage.",
+    "lat": -20.3057924,
+    "lng": 57.5048541
+  },
+  {
+    "id": "the-good-life-cap-malheureux",
+    "name": "The Good Life — Cap Malheureux",
+    "category": "food",
+    "address": "Entre l'église de Cap Malheureux et la plage d'Anse la Raie, Cap Malheureux",
+    "phone": "",
+    "website": "https://www.thegoodlifemauritius.com/",
+    "googleMapsUrl": "https://www.google.com/maps/search/The+Good+Life+Mauritius+Cap+Malheureux",
+    "lat": -19.9869647,
+    "lng": 57.6263627,
+    "themes": [
+      "restaurants",
+      "cafes-terrasses",
+      "vegetarien"
+    ],
+    "hours": "8h-15h",
+    "zone": "nord",
+    "description": "Restaurant-café de l'écolodge The Good Life à Cap Malheureux, avec vue sur le jardin. Cuisine saine et équilibrée à base de produits frais et locaux, nombreuses options végétariennes et vegan : petits-déjeuners fruités, smoothies naturels, jus détox, kéfir, avocado toasts et buddha bowls, faits maison."
+  },
+  {
+    "id": "brian-and-big-john-grand-gaube",
+    "name": "Brian and Big John — Grand Gaube",
+    "category": "activites",
+    "address": "Grand Gaube",
+    "phone": "",
+    "website": "https://www.facebook.com/CaptainBrian1611/",
+    "googleMapsUrl": "https://www.google.com/maps/search/Brian+and+Big+John+Grand+Gaube",
+    "themes": [
+      "excursions",
+      "navigation-bateau"
+    ],
+    "zone": "nord",
+    "description": "Sorties en mer en hors-bord au départ de Grand Gaube avec des guides passionnés (Brian & Big John) : excursions privées vers l'Île aux Ambres et l'îlot Bernache, ainsi que des tours en minivan pour découvrir l'île."
+  },
+  {
+    "id": "le-grand-bleu-excursion-poudre-dor",
+    "name": "Le Grand Bleu Excursion — Poudre d'Or",
+    "category": "activites",
+    "address": "Débarcadère Street, Poudre d'Or Village",
+    "phone": "",
+    "website": "https://www.grandbleuexcursionilemaurice.com/",
+    "googleMapsUrl": "https://www.google.com/maps/search/Grand+Bleu+Excursion+Poudre+d%27Or",
+    "lat": -20.0636135,
+    "lng": 57.6875631,
+    "themes": [
+      "excursions",
+      "navigation-bateau",
+      "snorkeling"
+    ],
+    "zone": "nord",
+    "description": "Petite entreprise familiale (Patrick Karia, guide certifié) proposant des sorties en bateau au départ de Poudre d'Or : navigation dans le lagon, snorkeling près de la barrière de corail (masque et tuba fournis), déjeuner barbecue sur la plage de l'îlot Bernache, baignade, puis balade nature sur l'Île d'Ambre."
+  },
+  {
+    "id": "spiritual-park-pointe-des-lascars",
+    "name": "Spiritual Park — Pointe des Lascars",
+    "category": "activites",
+    "address": "Pointe des Lascars, Rivière du Rempart",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/Pointe+des+Lascars+Hindu+Spiritual+Park",
+    "lat": -20.0905984,
+    "lng": 57.7057256,
+    "themes": [
+      "culture-patrimoine"
+    ],
+    "zone": "est",
+    "description": "Parc spirituel hindou au bord de mer à Pointe des Lascars, dédié principalement à Ganesh. Inauguré en 2002, c'est un lieu calme et naturel où des murtis (divinités) sculptés dans la pierre sont abrités dans des pavillons en bois. Haut lieu de célébration de Ganesh Chaturthi, Maha Shivaratri et Divali, qui attire des milliers de fidèles."
+  },
+  {
+    "id": "saveurs-de-shin-mahebourg",
+    "name": "Saveurs de Shin — Mahébourg",
+    "category": "food",
+    "address": "Rue Suffren, Mahébourg",
+    "phone": "+230 631 3668",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/Saveurs+de+Shin+Mahebourg",
+    "lat": -20.4088947,
+    "lng": 57.7092871,
+    "themes": [
+      "restaurants",
+      "asiatique"
+    ],
+    "zone": "sud",
+    "description": "Restaurant chinois réputé de Mahébourg, dont la cuisine est préparée par un chef shanghaïen et servie dans une salle simple. Spécialités chinoises et asiatiques. Ouvert seulement certains jours : mieux vaut appeler avant de venir."
+  },
+  {
+    "id": "karay-mario-mahebourg",
+    "name": "Karay Mario — Mahébourg",
+    "category": "food",
+    "address": "Route Royale, Beau Vallon, Mahébourg",
+    "phone": "+230 630 1682",
+    "website": "https://karay-mario.restaurant.mu/",
+    "googleMapsUrl": "https://www.google.com/maps/search/Karay+Mario+Mahebourg",
+    "lat": -20.4221666,
+    "lng": 57.7011877,
+    "themes": [
+      "restaurants",
+      "mauricienne",
+      "frequente-locaux"
+    ],
+    "hours": "11h30-15h (soir sur réservation), fermé le mercredi",
+    "zone": "sud",
+    "description": "Ancienne pharmacie de campagne transformée en restaurant par Mario, pour une table authentique de cuisine mauricienne d'antan. Pas de carte fixe : le menu du jour est élaboré selon les produits des fermiers, pêcheurs et producteurs locaux."
+  },
+  {
+    "id": "la-vielle-rouge-mahebourg",
+    "name": "La Vielle Rouge — Mahébourg",
+    "category": "food",
+    "address": "Coin des rues Hangar et des Mares, Mahébourg",
+    "phone": "+230 631 3980",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/La+Vielle+Rouge+Mahebourg",
+    "lat": -20.4091847,
+    "lng": 57.7110733,
+    "themes": [
+      "restaurants",
+      "fruits-de-mer",
+      "mauricienne"
+    ],
+    "zone": "sud",
+    "description": "Restaurant convivial de Mahébourg nommé d'après la « vieille rouge », un poisson de l'océan Indien. Cuisine locale et internationale mettant à l'honneur le poisson frais du jour, les currys mauriciens et les grillades, avec des options végétariennes. Service en salle ou en terrasse."
+  },
+  {
+    "id": "bato-constance-maquettes-mahebourg",
+    "name": "Bato Constance — Maquettes de bateaux (Mahébourg)",
+    "category": "activites",
+    "address": "Mahébourg",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/Constance+Maquettes+de+Bateaux+Mahebourg",
+    "lat": -20.4189935,
+    "lng": 57.7112691,
+    "themes": [
+      "shopping",
+      "souvenirs"
+    ],
+    "zone": "sud",
+    "description": "Atelier-boutique de maquettes de bateaux à Mahébourg, spécialisé dans les modèles faits main : des pirogues de pêche traditionnelles aux voiliers et yachts, finement détaillés, reflet de la culture maritime de l'île. Idéal pour un souvenir artisanal."
   }
 ]
