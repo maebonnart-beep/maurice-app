@@ -6387,6 +6387,41 @@
     "hours": "Mar-Dim 10h-15h & 18h-22h"
   },
   {
+    "id": "tabagie-nationale",
+    "name": "Tabagie Nationale",
+    "category": "food",
+    "address": "Tamarin (côte ouest)",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Tabagie%20Nationale%20Tamarin%20Mauritius",
+    "lat": -20.3252,
+    "lng": 57.3736,
+    "themes": [
+      "snacks-plage",
+      "mauricienne",
+      "frequente-locaux"
+    ],
+    "zone": "ouest",
+    "description": "Tabagie-snack aux abords de Tamarin, très fréquentée par les locaux : faratas, rotis, pâtés, samossas et autres en-cas mauriciens. Portions copieuses."
+  },
+  {
+    "id": "petit-stand-tamarin",
+    "name": "Petit Stand",
+    "category": "food",
+    "address": "Tamarin (côte ouest)",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Petit%20Stand%20Tamarin%20Mauritius",
+    "lat": -20.3252,
+    "lng": 57.3736,
+    "themes": [
+      "snacks-plage",
+      "mauricienne"
+    ],
+    "zone": "ouest",
+    "description": "Petit stand de street-food proposant des spécialités mauriciennes à emporter."
+  },
+  {
     "id": "maravann-burgers",
     "name": "Maravann' Burgers",
     "category": "food",
@@ -6415,11 +6450,31 @@
     "lng": 57.3641009,
     "themes": [
       "restaurants",
-      "italien"
+      "italien",
+      "cafes-terrasses"
     ],
     "badge": "selection",
     "zone": "ouest",
-    "description": "Restaurant italien du chef Rocco à Tamarin, recettes sardes et siciliennes faites maison, glaces artisanales, jardin extérieur avec musique live le week-end."
+    "description": "Restaurant italien du chef Rocco à La Mivoie (route royale, Rivière Noire/Tamarin), recettes sardes et siciliennes faites maison et glaces artisanales. Agréable terrasse couverte et jardin extérieur avec musique live le week-end ; jouxte une épicerie italienne."
+  },
+  {
+    "id": "roots-spirits",
+    "name": "Roots Spirits Restaurant & Bar",
+    "category": "food",
+    "address": "Des Rosiers Avenue, La Preneuse, Rivière Noire",
+    "phone": "+230 5722 4373",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Roots%20Spirits%20Riviere%20Noire%20Mauritius",
+    "lat": -20.3535,
+    "lng": 57.362,
+    "themes": [
+      "restaurants",
+      "bars",
+      "cafes-terrasses"
+    ],
+    "hours": "Mar-sam 16h-00h ; fermé dim. et lun.",
+    "zone": "ouest",
+    "description": "Bar-restaurant en plein air à La Preneuse (Rivière Noire), en contrebas de la route royale : grande pelouse arborée, tables sous un vaste gazebo en paille ou à la belle étoile. Cuisine fusion et tapas (poulet au miel, tartare de saumon, brochettes), belle carte de cocktails, vins et spiritueux locaux. Concerts live le samedi, ambiance conviviale. Ouvert du mardi au samedi, 16h-minuit."
   },
   {
     "id": "coquillages-restaurant-bar",
@@ -7794,7 +7849,7 @@
     ],
     "badge": "selection",
     "zone": "sud",
-    "description": "Restaurant tout en verre du Domaine de Bois Chéri, perché en bordure du lac de cratère des Cygnes depuis 2008, avec une vue panoramique confirmée sur la plantation de thé et la côte sud. Cuisine mauricienne mettant le thé à l'honneur."
+    "description": "Restaurant tout en verre du Domaine de Bois Chéri, perché en bordure du lac de cratère des Cygnes depuis 2008. Vue superbe sur le lagon, le lac et les champs de thé. Cuisine mauricienne traditionnelle soignée, avec de nombreuses préparations à base des thés du domaine (poulet au thé vert, chutney de thé, etc.). Plats environ 500 à 1 600 Rs."
   },
   {
     "id": "saveurs-otentik-restaurant",
@@ -15080,8 +15135,9 @@
     "themes": [
       "culture-patrimoine"
     ],
+    "hours": "Lun-ven 8h-16h ; sam 8h-11h30 ; fermé dim.",
     "zone": "ouest",
-    "description": "Dernier marais salant encore en activité à Maurice, ces salines de Tamarin datant des années 1940 perpétuent une production artisanale de sel selon des méthodes traditionnelles héritées de l'époque française."
+    "description": "Dernier marais salant encore en activité à Maurice, ces salines de Tamarin datant des années 1940 perpétuent une production artisanale de sel selon des méthodes traditionnelles héritées de l'époque française. Visite guidée (≈150 Rs l'entrée) débutant par l'histoire des salines, le procédé de production et les outils, suivie d'un parcours extérieur au fil des bassins. Ouvert du lundi au vendredi 8h-16h et le samedi 8h-11h30 (fermé le dimanche)."
   },
   {
     "id": "sparc",
@@ -39683,6 +39739,25 @@
     "zone": "sud",
     "description": "Ancienne propriété sucrière fondée en 1778 autour d'une demeure coloniale classée. La visite guidée comprend le jardin botanique, la Maison de la Vanille, le jardin des épices, la mini-ferme et la Maison du Rhum (fabrication de rhum agricole pur jus de canne, avec dégustation). Ouvert tous les jours 9h-17h. Visite seule ≈ 650 Rs/adulte, 325 Rs/enfant ; billets combinés avec repas au restaurant du domaine ≈ 1 850 Rs. Réservation conseillée ; restaurant et auberge sur le domaine.",
     "duration": "Environ 2 h (domaine complet)"
+  },
+  {
+    "id": "domaine-de-bois-cheri",
+    "name": "Domaine de Bois Chéri - Plantation & Musée du Thé",
+    "category": "activites",
+    "address": "Bois Chéri, route de Grand Bassin (sud)",
+    "phone": "+230 5252 1892",
+    "website": "https://groupe-saintaubin.com/saint-aubin-loisirs/domaine-de-bois-cheri/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Domaine%20de%20Bois%20Cheri%20Mauritius",
+    "lat": -20.4358,
+    "lng": 57.5289,
+    "themes": [
+      "culture-patrimoine",
+      "plus-belles-vues"
+    ],
+    "hours": "Tous les jours 9h-17h ; usine (Tea Factory) en activité le matin, fermée sam. et dim.",
+    "zone": "sud",
+    "description": "Première plantation de thé de l'île Maurice, fondée en 1892, sur les hauts plateaux du sud (≈500 m d'altitude), près de Grand Bassin. La visite suit tout le parcours du thé, de la cueillette dans les champs à l'usine encore en activité, en passant par un musée dédié, et se termine par une dégustation. Le restaurant panoramique du domaine, en bordure du lac de cratère, met le thé à l'honneur en salé comme en sucré. Prévoir au moins 2 h ; pour voir l'usine en fonctionnement, visiter en matinée (fermée le week-end).",
+    "duration": "Environ 2 h"
   },
   {
     "id": "n-joy-grand-baie",
