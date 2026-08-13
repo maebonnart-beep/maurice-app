@@ -39638,11 +39638,14 @@
     "lat": -20.5178,
     "lng": 57.5203,
     "themes": [
-      "rhumeries"
+      "rhumeries",
+      "culture-patrimoine",
+      "parcs-botaniques",
+      "kids-friendly"
     ],
-    "hours": "Domaine tous les jours 9h-17h ; distillerie (Maison du Rhum) lun-sam le matin, fermée dim. et jours fériés",
+    "hours": "Tous les jours 9h-17h ; distillerie (Maison du Rhum) lun-sam le matin, fermée dim. et jours fériés",
     "zone": "sud",
-    "description": "Ancienne propriété sucrière fondée en 1778 autour d'une demeure coloniale classée. La Maison du Rhum présente la fabrication du rhum agricole (pur jus de canne) distillé sur place ; le domaine comprend aussi une Maison de la Vanille, une mini-ferme et des jardins exotiques. Réservation conseillée ; restaurant et auberge sur le domaine.",
+    "description": "Ancienne propriété sucrière fondée en 1778 autour d'une demeure coloniale classée. La visite guidée comprend le jardin botanique, la Maison de la Vanille, le jardin des épices, la mini-ferme et la Maison du Rhum (fabrication de rhum agricole pur jus de canne, avec dégustation). Ouvert tous les jours 9h-17h. Visite seule ≈ 650 Rs/adulte, 325 Rs/enfant ; billets combinés avec repas au restaurant du domaine ≈ 1 850 Rs. Réservation conseillée ; restaurant et auberge sur le domaine.",
     "duration": "Environ 2 h (domaine complet)"
   },
   {
