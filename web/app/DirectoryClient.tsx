@@ -146,6 +146,7 @@ const LIFESTYLE: Umbrella[] = [
     rubriques: [
       "malls", "mode-adultes", "mode-enfants", "materiel-sports",
       "livres", "jeux", "souvenirs", "equipement-maison", "beaute", "electromenager",
+      "high-tech",
     ],
   },
   {

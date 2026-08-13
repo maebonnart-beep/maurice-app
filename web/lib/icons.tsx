@@ -62,7 +62,7 @@ export const ICON_MAP: Record<string, Icon> = {
   "mode-adultes": TShirt, "mode-enfants": Baby, "materiel-sports": TennisBall,
   livres: Books, jeux: GameController, souvenirs: Gift,
   "equipement-maison": Armchair, beaute: Sparkle, electromenager: WashingMachine,
-  "activites-enfants-famille": Baby,
+  "high-tech": DeviceMobile, "activites-enfants-famille": Baby,
   "centres-loisirs-animations-enfants": Confetti, excursions: MapTrifold,
   "cours-de-cuisine": ChefHat, rhumeries: Wine, casinos: PokerChip,
   bowling: BowlingBall, karting: CarProfile, "escape-game": LockKey,
