@@ -272,16 +272,12 @@ function HomeEntry({
   return (
     <button
       onClick={onClick}
-      className="flex flex-col items-center justify-center gap-3 p-6 min-h-[172px] rounded-tile border border-border bg-surface text-center shadow-sm active:scale-[.98] transition-transform"
+      className="flex flex-col items-center justify-center gap-3 p-6 min-h-[172px] rounded-tile border border-border text-center shadow-sm active:scale-[.98] transition-transform"
+      style={{ background: "var(--surface-2, #ececef)" }}
     >
       {img ? (
-        <span
-          className="w-[108px] h-[108px] rounded-2xl flex items-center justify-center"
-          style={{ background: "var(--surface-2, #ececef)" }}
-        >
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={img} alt="" aria-hidden className="w-[94px] h-[94px] object-contain" />
-        </span>
+        // eslint-disable-next-line @next/next/no-img-element
+        <img src={img} alt="" aria-hidden className="h-[120px] w-auto max-w-full object-contain" />
       ) : (
         <span className="w-[74px] h-[74px] rounded-2xl bg-primary-tint text-primary-deep flex items-center justify-center">
           {Icon && <Icon size={40} weight="duotone" aria-hidden />}
