@@ -140,7 +140,7 @@ export const THEMATIC_ICONS: Record<string, string> = {
   // Bouger / Sports
   bouger: "/icon-home-bouger.png", sports: "/icon-sports.png", "bouger-sports": "/icon-sports.png",
   // Se relaxer / Loisirs / Nature
-  "se-relaxer": "/icon-loisirs.png", activites: "/icon-loisirs.png", "bouger-nature": "/icon-loisirs.png",
+  "se-relaxer": "/icon-loisirs.png", activites: "/icon-loisirs.png", "bouger-nature": "/icon-nature.png",
   // Shopping
   shopping: "/icon-home-shopping.png", "malls-shopping": "/icon-shopping.png", "types-shopping": "/icon-shopping.png",
   // Famille
@@ -275,6 +275,15 @@ export const THEMATIC_ICONS: Record<string, string> = {
   // Tuiles de groupe sous Santé & Bien-être
   "sbe-sante": "/icon-sbe-sante.png",
   "sbe-soins": "/icon-sbe-soins.png",
+  // Tuiles de groupe sous Se divertir
+  "sortir-ambiance": "/icon-sortir-ambiance.png",
+  "sortir-loisirs": "/icon-sortir-loisirs.png",
+  "sortir-culture": "/icon-sortir-culture.png",
+  // Tuiles de groupe sous Vie pratique
+  "pratique-demarches": "/icon-pratique-demarches.png",
+  "pratique-auto-maison": "/icon-pratique-auto-maison.png",
+  "pratique-immo-pro": "/icon-pratique-immo-pro.png",
+  "pratique-famille": "/icon-pratique-famille.png",
 };
 
 /** Chemin d'une icône thématique illustrée pour une clé, ou null. */

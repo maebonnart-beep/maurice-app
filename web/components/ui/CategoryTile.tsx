@@ -61,16 +61,16 @@ export function CategoryTile({
       {thematic ? (
         // Icône thématique illustrée : occupe toute la pastille (disque crème intégré).
         // eslint-disable-next-line @next/next/no-img-element
-        <img src={thematic} alt="" aria-hidden className="w-16 h-16 rounded-full object-cover" />
+        <img src={thematic} alt="" aria-hidden className="w-24 h-24 rounded-full object-cover" />
       ) : (
         <span
-          className="w-16 h-16 rounded-2xl flex items-center justify-center"
+          className="w-24 h-24 rounded-2xl flex items-center justify-center"
           style={{ background: iconBg, color: iconColor }}
         >
           {Icon ? (
-            <Icon size={32} weight="duotone" aria-hidden />
+            <Icon size={48} weight="duotone" aria-hidden />
           ) : (
-            <span className="text-[34px] leading-none">{displayEmoji}</span>
+            <span className="text-[46px] leading-none">{displayEmoji}</span>
           )}
         </span>
       )}
