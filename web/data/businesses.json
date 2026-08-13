@@ -25798,23 +25798,24 @@
   },
   {
     "id": "la-charrette-dor",
-    "name": "La Charrette d'Or",
+    "name": "La Charette d'Or",
     "category": "food",
-    "address": "Pointe aux Piments",
-    "phone": "",
-    "website": "",
+    "address": "B38, Pointe aux Piments",
+    "phone": "+230 5251 0143",
+    "website": "https://www.facebook.com/charettedor/",
     "googleMapsUrl": "https://maps.app.goo.gl/iwgMsQjWNhXHc9tP8",
     "lat": -20.045698,
     "lng": 57.533453,
     "themes": [
       "restaurants",
-      "italien",
-      "mauricienne"
+      "mauricienne",
+      "fruits-de-mer",
+      "italien"
     ],
     "badge": "selection",
     "promoText": "Cuisine mixte, italienne et créole.",
     "zone": "nord",
-    "description": "Restaurant de fruits de mer au décor chaleureux en bois, ouvert en 2018 dans le nord de l'île (secteur Pointe aux Piments/Pointe aux Biches), réputé pour son homard grillé et ses plateaux de fruits de mer.",
+    "description": "Restaurant créole et de fruits de mer à Pointe aux Piments, au décor chic et soigné, à deux pas de la plage. Spécialités : poisson frit à la créole aux épices, curry créole, homard grillé et plateaux de fruits de mer, ainsi que des pizzas au feu de bois. Service attentionné et accueillant salué par les avis.",
     "hours": "Mar-Dim 10h-22h, fermé lundi"
   },
   {
@@ -42752,25 +42753,6 @@
     "description": "Primeur de quartier — fruits et légumes frais. Horaires et éventuel label bio non confirmés."
   },
   {
-    "id": "la-charette-d-or-trou-aux-biches",
-    "name": "La Charette d'Or",
-    "category": "food",
-    "address": "B38, Pointe aux Biches, Trou aux Biches",
-    "phone": "+230 5251 0143",
-    "website": "https://www.facebook.com/charettedor/",
-    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=La%20Charette%20d'Or%20Trou%20aux%20Biches%20Mauritius",
-    "lat": -20.0325,
-    "lng": 57.5478,
-    "themes": [
-      "restaurants",
-      "mauricienne",
-      "fruits-de-mer"
-    ],
-    "hours": "",
-    "zone": "nord",
-    "description": "Restaurant créole et de fruits de mer à Trou aux Biches, au décor chic et soigné, à deux pas de la plage. Spécialités : poisson frit à la créole aux épices, curry créole, homard grillé et plateaux de fruits de mer, ainsi que des pizzas au feu de bois. Service attentionné et accueillant salué par les avis."
-  },
-  {
     "id": "fast-click",
     "name": "Fast Click — Port-Louis",
     "category": "utiles",
@@ -42925,5 +42907,208 @@
       "informatique-reparation"
     ],
     "zone": "sud"
+  },
+  {
+    "id": "patrick-mavros-beau-plan",
+    "name": "Patrick Mavros — Beau Plan",
+    "category": "activites",
+    "address": "Beau Plan Roundabout, Pamplemousses (à côté de L'Aventure du Sucre)",
+    "phone": "+230 260 4333",
+    "website": "https://www.patrickmavros.com/",
+    "googleMapsUrl": "https://www.google.com/maps/search/Patrick+Mavros+Atelier+Beau+Plan+Pamplemousses",
+    "hours": "Lun-Ven 9h-17h, Sam 9h-12h30, Dim fermé",
+    "themes": [
+      "shopping",
+      "souvenirs"
+    ],
+    "zone": "nord",
+    "description": "Atelier-boutique du joaillier-orfèvre Patrick Mavros, installé à Beau Plan à côté de L'Aventure du Sucre. Bijoux et objets en argent inspirés de la faune et de la nature africaines et mauriciennes, fabriqués à la main.",
+    "lat": -20.0975959,
+    "lng": 57.5747535
+  },
+  {
+    "id": "souvenir-snack-trou-aux-biches",
+    "name": "Souvenir Snack — Trou aux Biches",
+    "category": "food",
+    "address": "Coastal Road, entrée de la plage de Trou aux Biches (près du bureau de poste)",
+    "phone": "",
+    "website": "https://www.facebook.com/souvenirspecial/",
+    "googleMapsUrl": "https://www.google.com/maps/search/Souvenir+Restaurant+Trou+aux+Biches",
+    "themes": [
+      "restaurants",
+      "mauricienne"
+    ],
+    "zone": "nord",
+    "description": "Snack-restaurant décontracté à l'entrée de la plage de Trou aux Biches, sur la route côtière. Cuisine mauricienne, plats internationaux et fruits de mer, fréquenté par les locaux comme par les touristes.",
+    "lat": -20.0358431,
+    "lng": 57.5457175
+  },
+  {
+    "id": "assiette-du-nord-trou-aux-biches",
+    "name": "L'Assiette du Nord — Trou aux Biches",
+    "category": "food",
+    "address": "Trou aux Biches Road, Barns Complex, Trou aux Biches",
+    "phone": "+230 265 7040",
+    "website": "https://www.facebook.com/LAssietteDuNord/",
+    "googleMapsUrl": "https://www.google.com/maps/search/L%27Assiette+du+Nord+Trou+aux+Biches",
+    "hours": "12h-14h30 et 18h-22h",
+    "themes": [
+      "restaurants",
+      "mauricienne",
+      "asiatique",
+      "fruits-de-mer"
+    ],
+    "zone": "nord",
+    "description": "L'un des plus anciens restaurants de Trou aux Biches, réputé pour sa cuisine mauricienne et chinoise. Les fruits de mer y sont mis à l'honneur, préparés à la chinoise, à l'indienne ou à la créole.",
+    "lat": -20.0155684,
+    "lng": 57.574179
+  },
+  {
+    "id": "36-beach-resto-bar-mystik-mont-choisy",
+    "name": "#36 Beach Resto Bar — Mystik Lifestyle (Mont Choisy)",
+    "category": "food",
+    "address": "Mystik Lifestyle Boutique Hotel, plage de Mont Choisy",
+    "phone": "",
+    "website": "https://newmarkhotels.com/accommodation/mystik-lifestyle-boutique-hotel/dining",
+    "googleMapsUrl": "https://www.google.com/maps/search/Mystik+Lifestyle+Boutique+Hotel+Mont+Choisy",
+    "themes": [
+      "restaurants",
+      "bars",
+      "plus-belles-vues"
+    ],
+    "zone": "nord",
+    "description": "Restaurant-bar « #36 » de l'hôtel-boutique Mystik Lifestyle, sur la plage de Mont Choisy. Carte à la carte midi et soir, terrasse en bois au bord de la piscine à débordement avec vue panoramique sur le lagon — cadre prisé au coucher du soleil.",
+    "lat": -20.020962,
+    "lng": 57.5538971
+  },
+  {
+    "id": "la-plage-beach-club-food",
+    "name": "La Plage Beach Club",
+    "category": "food",
+    "address": "Trou aux Biches (Nord)",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://maps.app.goo.gl/48C6s3rwfYkwoPmy9",
+    "lat": -20.0368221,
+    "lng": 57.5440528,
+    "themes": [
+      "restaurants",
+      "mauricienne",
+      "europeenne",
+      "bars"
+    ],
+    "promoText": "Vue splendide, les pieds dans le sable, du calme et un cheesecake à tomber !",
+    "zone": "nord",
+    "description": "Beach club (by Evaco) sur la plage de Trou aux Biches, ouvert au public midi et soir : cuisine variée mauricienne et européenne, cocktails et carte de bar, les pieds dans le sable face au lagon. Piscine, transats et glacier sur place."
+  },
+  {
+    "id": "blue-water-diving-centre-trou-aux-biches",
+    "name": "Blue Water Diving Centre",
+    "category": "activites",
+    "address": "Coastal Road, entre Trou aux Biches et Mont Choisy",
+    "phone": "+230 265 6700",
+    "whatsapp": "+230 5858 2226",
+    "website": "https://bluewaterdivingcentre.com/",
+    "googleMapsUrl": "https://www.google.com/maps/search/Blue+Water+Diving+Centre+Trou+aux+Biches",
+    "hours": "Tous les jours 8h-17h",
+    "themes": [
+      "sports-nautiques",
+      "plongee-sous-marine"
+    ],
+    "zone": "nord",
+    "description": "L'un des premiers centres de plongée de Maurice, fondé en 1987 par Hugues Vitry, sur la route côtière entre Trou aux Biches et Mont Choisy. Baptêmes et plongées d'exploration, snorkeling, avec navette gratuite depuis certains hôtels.",
+    "lat": -20.0256275,
+    "lng": 57.551271
+  },
+  {
+    "id": "la-sorellina-voilier-trou-aux-biches",
+    "name": "La Sorellina — Croisières en voilier",
+    "category": "activites",
+    "address": "Trou aux Biches",
+    "phone": "+230 265 6247",
+    "whatsapp": "+230 5758 2322",
+    "website": "https://lasorellina.net/",
+    "googleMapsUrl": "https://www.google.com/maps/search/La+Sorellina+Trou+aux+Biches",
+    "hours": "Départ 9h, retour vers 16h",
+    "themes": [
+      "sports-nautiques",
+      "navigation-bateau"
+    ],
+    "zone": "nord",
+    "description": "Croisières à la journée à bord d'un voilier de 13,50 m au départ de Trou aux Biches, limitées à 6-7 personnes pour le confort. Au programme : navigation, snorkeling, apéritif et déjeuner de poisson et grillades au barbecue avec salades et dessert."
+  },
+  {
+    "id": "blue-safari-submarine-trou-aux-biches",
+    "name": "Blue Safari — Sous-marin & Subscooter",
+    "category": "activites",
+    "address": "Coastal Road (près du Pescatore), B36, Trou aux Biches",
+    "phone": "",
+    "website": "https://www.blue-safari.com/",
+    "googleMapsUrl": "https://www.google.com/maps/search/Blue+Safari+Submarine+Trou+aux+Biches",
+    "hours": "Tous les jours 8h30-15h30",
+    "themes": [
+      "sports-nautiques",
+      "plongee-sous-marine"
+    ],
+    "zone": "nord",
+    "description": "Exploration des fonds marins à bord d'un véritable sous-marin, sans savoir nager, jusqu'à 35 m de profondeur : poissons colorés, coraux, tortues et l'épave du Star Hope. Également des subscooters (petits engins sous-marins individuels) au départ de Trou aux Biches.",
+    "lat": -20.0254045,
+    "lng": 57.5506847
+  },
+  {
+    "id": "lovelife-pharmacy-grand-baie",
+    "name": "Love Life Pharmacy — Grand Baie",
+    "category": "utiles",
+    "address": "Mont Choisy Le Mall, Grand Baie",
+    "phone": "+230 269 6050",
+    "website": "https://lovelife.mu/",
+    "googleMapsUrl": "https://www.google.com/maps/search/Love+Life+Pharmacy+Mont+Choisy+Mall+Grand+Baie",
+    "hours": "Tous les jours jusqu'à 22h (365 j/an)",
+    "themes": [
+      "pharmacies"
+    ],
+    "zone": "nord",
+    "description": "Pharmacie du groupe Love Life située au Mont Choisy Le Mall, à Grand Baie. Pharmacie en libre-service avec produits de santé et de beauté, ouverte tous les jours de l'année jusqu'à 22h.",
+    "lat": -20.0246224,
+    "lng": 57.576571
+  },
+  {
+    "id": "max-mamma-mia-grand-baie",
+    "name": "Mamma Mia of Max — Grand Baie",
+    "category": "food",
+    "address": "Royal Road, Grand Baie 30540",
+    "phone": "+230 296 0327",
+    "website": "https://maxmammamia.net/",
+    "googleMapsUrl": "https://www.google.com/maps/search/Mamma+Mia+of+Max+Grand+Baie",
+    "hours": "18h-22h30, fermé le mardi",
+    "themes": [
+      "restaurants",
+      "italien"
+    ],
+    "zone": "nord",
+    "description": "L'une des plus anciennes pizzerias-restaurants italiens authentiques de Grand Baie, tenue par une famille italienne. Pizzas au feu de bois et cuisine italienne traditionnelle, à emporter ou sur place.",
+    "lat": -20.0154755,
+    "lng": 57.5703797
+  },
+  {
+    "id": "restaurant-le-domaine-the-vale",
+    "name": "Restaurant Le Domaine — The Vale",
+    "category": "food",
+    "address": "Narainen Street, The Vale",
+    "phone": "+230 263 5286",
+    "website": "",
+    "googleMapsUrl": "https://maps.app.goo.gl/yoVSWUxXdfZfBe1R8",
+    "lat": -20.0305153,
+    "lng": 57.6006987,
+    "themes": [
+      "restaurants",
+      "mauricienne",
+      "fruits-de-mer",
+      "asiatique"
+    ],
+    "zone": "nord",
+    "priceRange": "prix-moyen",
+    "description": "Restaurant mauricien atypique à The Vale, un peu à l'écart de Grand Baie, apprécié pour son cadre et sa décoration soignés. Cuisine mauricienne et chinoise, produits de la mer, riz cantonais et nouilles sautées.",
+    "hours": "Tous les jours midi et soir, sauf le lundi"
   }
 ]
