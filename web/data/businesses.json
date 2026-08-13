@@ -4117,25 +4117,6 @@
     "hours": "Déjeuner 12h-14h30, dîner 19h-22h, bar 10h-23h (tous les jours)"
   },
   {
-    "id": "le-palais-de-barbizon-chamarel",
-    "name": "Le Palais de Barbizon",
-    "category": "food",
-    "address": "Route Sainte-Anne, Chamarel",
-    "phone": "",
-    "website": "",
-    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Le%20Palais%20de%20Barbizon%20Chamarel%20Mauritius",
-    "lat": -20.4372,
-    "lng": 57.3819,
-    "themes": [
-      "restaurants",
-      "mauricienne"
-    ],
-    "badge": "selection",
-    "zone": "sud",
-    "description": "Petit restaurant familial tenu par Marie-Ange et Rico, où la cuisine créole traditionnelle est préparée avec des produits du potager et du marché local, sous forme de buffet dont le menu change chaque jour.",
-    "hours": "Tous les jours 11h30-16h (soir sur réservation uniquement)"
-  },
-  {
     "id": "le-flamboyant-so-sofitel-bel-ombre",
     "name": "Le Flamboyant - SO Sofitel",
     "category": "food",
@@ -19370,9 +19351,9 @@
   },
   {
     "id": "palais-de-barbizon",
-    "name": "Palais de Barbizon",
+    "name": "Le Palais de Barbizon",
     "category": "food",
-    "address": "H9FR+R65, Chamarel",
+    "address": "Route Sainte-Anne, Chamarel",
     "phone": "+230 5495 1690",
     "website": "",
     "googleMapsUrl": "https://maps.google.com/?cid=2179277447342717553&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
@@ -19384,8 +19365,8 @@
     ],
     "badge": "selection",
     "zone": "sud",
-    "hours": "Tous les jours 11h30-16h, soir sur réservation",
-    "description": "Petit restaurant familial servant une cuisine créole traditionnelle mauricienne, à Chamarel."
+    "hours": "Tous les jours 11h30-16h (soir sur réservation uniquement)",
+    "description": "Petit restaurant familial tenu par Marie-Ange et Rico à Chamarel, où la cuisine créole traditionnelle est préparée avec des produits du potager et du marché local, sous forme de buffet dont le menu change chaque jour."
   },
   {
     "id": "woolworths-so-flo-mauritius",
