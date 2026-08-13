@@ -17942,6 +17942,25 @@
     "zone": "sud"
   },
   {
+    "id": "benitier-boat-la-gaulette",
+    "name": "Benitier Boat",
+    "category": "activites",
+    "address": "La Gaulette (départ vers l'Île aux Bénitiers)",
+    "phone": "+230 5724 2871",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=La%20Gaulette%20embarcadere%20Ile%20aux%20Benitiers%20Mauritius",
+    "lat": -20.4268,
+    "lng": 57.3593,
+    "themes": [
+      "excursions",
+      "snorkeling"
+    ],
+    "zone": "ouest",
+    "description": "Sortie en bateau avec snorkeling vers l'Île aux Bénitiers, au départ de La Gaulette. Balade d'environ 3 h, 5 500 Rs pour 2 personnes. Réservation auprès de Jerry.",
+    "duration": "Environ 3 h",
+    "entryPrice": "5 500 Rs la balade (2 pers.)"
+  },
+  {
     "id": "michael-sortie-en-bateau-a-l-ile-aux-benitiers",
     "name": "Michael, sortie en bateau à l'ile aux Bénitiers",
     "category": "activites",
