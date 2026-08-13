@@ -18434,6 +18434,23 @@
     "description": "École de kitesurf à Le Morne."
   },
   {
+    "id": "lmks-le-morne-kite-school",
+    "name": "LMKS - Le Morne Kite School",
+    "category": "activites",
+    "address": "Kite Lagoon, Pointe du Morne, Le Morne",
+    "phone": "+230 5989 6886",
+    "website": "https://www.lemorne-kiteschool.com/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Le%20Morne%20Kite%20School%20Le%20Morne%20Mauritius",
+    "lat": -20.4646,
+    "lng": 57.3178,
+    "themes": [
+      "sports-nautiques",
+      "kitesurf"
+    ],
+    "zone": "sud",
+    "description": "École de kitesurf à Le Morne (Pointe du Morne / kite lagoon), cours tous niveaux avec moniteurs qualifiés et location de matériel. Réservation via WhatsApp."
+  },
+  {
     "id": "kite-lagoon-vibes-mauritius",
     "name": "Kite Lagoon Vibes Mauritius",
     "category": "activites",
