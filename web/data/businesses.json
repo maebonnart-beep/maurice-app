@@ -4774,7 +4774,8 @@
     "lat": -20.1594,
     "lng": 57.5011,
     "themes": [
-      "culture-patrimoine"
+      "culture-patrimoine",
+      "kids-friendly"
     ],
     "hours": "Lun-Ven 9h-16h, Sam 9h-12h, fermé dim",
     "priceRange": "bon-marche",
@@ -11655,11 +11656,29 @@
     "lat": -20.1632341,
     "lng": 57.5023736,
     "themes": [
-      "culture-patrimoine"
+      "culture-patrimoine",
+      "kids-friendly"
     ],
     "zone": "centre",
     "promoText": "Petit musée abritant le célèbre squelette de dodo et des collections de faune mauricienne. (entrée gratuite)",
     "description": "Plus ancien musée de Maurice, installé dans le bâtiment de l'Institut mauricien à Port-Louis, célèbre pour abriter l'un des squelettes de dodo les plus complets au monde ainsi que des collections sur la faune et la flore de l'île."
+  },
+  {
+    "id": "musee-de-la-photographie-port-louis",
+    "name": "Musée de la Photographie",
+    "category": "activites",
+    "address": "Rue du Vieux Conseil, Port Louis",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Mus%C3%A9e%20de%20la%20Photographie%20Port%20Louis%20Mauritius",
+    "lat": -20.1607,
+    "lng": 57.5045,
+    "themes": [
+      "culture-patrimoine"
+    ],
+    "hours": "Lun-ven 9h-15h",
+    "zone": "centre",
+    "description": "Musée privé fondé en 1966 par le collectionneur Tristan Bréville et son épouse, installé depuis 1993 dans un bâtiment historique de la Rue du Vieux Conseil (près du Musée d'histoire naturelle). Riche collection retraçant l'histoire de la photographie et de l'île : anciens appareils et matériel du XXe siècle, près d'un million de documents, cartes postales anciennes, photographies historiques et locales. Petit musée intimiste, à découvrir avec un passionné."
   },
   {
     "id": "musee-du-coquillage",
@@ -19276,17 +19295,20 @@
     "id": "jardin-de-la-compagnie",
     "name": "Jardin de la Compagnie",
     "category": "activites",
-    "address": "RGP2+GRJ, La Chaussée, Port Louis",
+    "address": "Rue Sir William Newton, La Chaussée, Port Louis",
     "phone": "",
     "website": "",
     "googleMapsUrl": "https://maps.google.com/?cid=6176384933994150798&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.1636664,
     "lng": 57.5020118,
     "themes": [
-      "parcs-botaniques"
+      "parcs-botaniques",
+      "culture-patrimoine"
     ],
+    "hours": "Tous les jours, environ 6h-18h",
+    "entryPrice": "Gratuit",
     "zone": "centre",
-    "description": "Jardin public historique au cœur de Port-Louis, aménagé dès 1770 sous l'administration Decaen, planté de vieux banians et haut lieu de rassemblements populaires."
+    "description": "Jardin public historique au cœur de Port-Louis, aménagé dès 1770 par la Compagnie française des Indes orientales (sous l'administration Decaen). Ses banians centenaires, ses statues commémoratives (dont une œuvre de Prosper d'Épinay) et sa fontaine en font un lieu de détente prisé et un haut lieu de rassemblements populaires, à deux pas du Musée d'histoire naturelle."
   },
   {
     "id": "ruisseau-creole",
@@ -34494,25 +34516,6 @@
     ],
     "zone": "sud",
     "description": "Boulangerie-pâtisserie-café de Mahébourg : pains et viennoiseries pétris quotidiennement, pizzas et market express."
-  },
-  {
-    "id": "jardins-de-la-compagnie",
-    "name": "Les Jardins de la Compagnie",
-    "category": "activites",
-    "address": "Rue Sir William Newton, Port Louis",
-    "phone": "",
-    "website": "",
-    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Jardins%20de%20la%20Compagnie%20Port%20Louis%20Mauritius",
-    "lat": -20.163631,
-    "lng": 57.5019599,
-    "themes": [
-      "parcs-botaniques",
-      "culture-patrimoine"
-    ],
-    "hours": "Tous les jours, environ 6h-18h",
-    "entryPrice": "Gratuit",
-    "zone": "centre",
-    "description": "Jardin public historique créé au XVIIIe siècle par la Compagnie française des Indes orientales, au cœur de Port Louis. Ses banians centenaires, ses statues commémoratives (dont une œuvre de Prosper d'Épinay) et sa fontaine en font un lieu de détente prisé, à deux pas du Musée d'histoire naturelle."
   },
   {
     "id": "jardin-vanille-epices-st-julien-hotman",
