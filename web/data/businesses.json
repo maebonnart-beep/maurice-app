@@ -3840,8 +3840,9 @@
     ],
     "priceRange": "bon-marche",
     "badge": "selection",
+    "hours": "Tlj sauf jeudi 11h30-14h30 & 17h30-21h",
     "zone": "ouest",
-    "description": "Cuisine fusion indienne et européenne en bord de plage, portions généreuses et salle de prière sur place. Très bon rapport qualité-prix ; l'établissement ne sert pas d'alcool."
+    "description": "Cuisine fusion indienne et européenne en bord de plage, avec des spécialités mauriciennes ; deux terrasses avec vue sur le lagon. Portions généreuses et salle de prière sur place. Très bon rapport qualité-prix ; l'établissement ne sert pas d'alcool."
   },
   {
     "id": "salt-lemon-flic-en-flac",
@@ -6567,7 +6568,7 @@
   },
   {
     "id": "canne-a-sucre",
-    "name": "Canne ã Sucre",
+    "name": "La Canne à Sucre",
     "category": "food",
     "address": "P9FC+M6V, Coastal Rd, Flic en Flac",
     "phone": "+230 453 9448",
@@ -6581,7 +6582,7 @@
     ],
     "badge": "selection",
     "zone": "ouest",
-    "description": "Petit restaurant familial de Flic en Flac (aussi connu sous \"Chez May\"), au menu unique : festin créole multi-plats (riz, poulet, poulpe, saucisses créoles, légumes, dessert, rhum) pour environ Rs 1000/pers. Réservation obligatoire, peu de tables."
+    "description": "Petit restaurant familial de Flic en Flac (aussi connu sous \"Chez May\"), spécialités créoles à base de légumes BIO. Menu unique : festin créole multi-plats (riz, poulet, poulpe, saucisses créoles, légumes, dessert, rhum) pour environ Rs 1000/pers. Réservation obligatoire, peu de tables."
   },
   {
     "id": "cilantro",
@@ -10218,8 +10219,10 @@
       "restaurants",
       "asiatique"
     ],
+    "priceRange": "bon-marche",
+    "hours": "Tlj sauf dim. (midi et soir)",
     "zone": "centre",
-    "description": "Institution de Curepipe depuis 1980, réputée pour son canard laqué et l'influence singapourienne du chef, notamment sa pâte de piment vert. Petite salle, sur place et à emporter."
+    "description": "Institution de Curepipe depuis 1980, réputée pour son canard laqué et l'influence singapourienne du chef, notamment sa pâte de piment vert. Exemples de plats : poisson vapeur, calamars croustillants, canard aux fruits secs, etc. Petite salle, sur place et à emporter."
   },
   {
     "id": "thirsty-bistro",
@@ -26121,8 +26124,8 @@
     ],
     "hours": "Tous les jours 9h-17h",
     "zone": "centre",
-    "promoText": "Demeure coloniale restaurée en musée du thé mauricien, visite guidée d'1h se terminant par une dégustation. (330 Rs/pers.)",
-    "description": "Demeure coloniale en bois construite en 1872 à Forest Side, première maison mauricienne équipée de l'électricité en 1889, aujourd'hui transformée en maison-musée et première étape de la Route du Thé."
+    "promoText": "Demeure coloniale restaurée en musée du thé mauricien, visite guidée d'1h se terminant par une dégustation de thé et de rhum. (≈330 Rs/pers.)",
+    "description": "Demeure coloniale en bois construite en 1872 à Forest Side, première maison mauricienne équipée de l'électricité en 1889, aujourd'hui maison-musée et première étape de la Route du Thé. Visite guidée (français/anglais) à travers les pièces d'époque : bois récupéré d'anciens navires corsaires, mobilier en acajou, carreaux de ciment et souvenirs de la famille Guimbeau, au milieu de jardins centenaires (camphriers, araucarias). La visite se termine par une dégustation de thés de Bois Chéri et de rhum dans le salon de thé ; petite boutique de souvenirs sur place. Ouvert tous les jours 9h-17h."
   },
   {
     "id": "chef-alessio-cours-cuisine",
@@ -40305,6 +40308,7 @@
       "pressing-blanchisserie"
     ],
     "description": "Pressing & blanchisserie : nettoyage à sec, lavage et repassage.",
+    "hours": "Lun-ven 9h30-17h",
     "lat": -20.2852,
     "lng": 57.3645,
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Blanchisserie%20Jo%20%26%20Chris%20Laundry%20Mauritius",
@@ -43478,6 +43482,58 @@
     ],
     "zone": "sud",
     "description": "Atelier-boutique de maquettes de bateaux à Mahébourg, spécialisé dans les modèles faits main : des pirogues de pêche traditionnelles aux voiliers et yachts, finement détaillés, reflet de la culture maritime de l'île. Idéal pour un souvenir artisanal."
+  },
+  {
+    "id": "la-pirogue-maquettes-curepipe",
+    "name": "La Pirogue — Maquettes de bateaux",
+    "category": "activites",
+    "address": "Curepipe",
+    "phone": "",
+    "website": "https://maquettesdebateaux.wixsite.com/la-pirogue-maquettes",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=La%20Pirogue%20Maquettes%20de%20Bateaux%20Curepipe%20Mauritius",
+    "lat": -20.3186,
+    "lng": 57.5265,
+    "themes": [
+      "shopping",
+      "souvenirs"
+    ],
+    "zone": "centre",
+    "description": "Atelier-boutique familial de maquettes de bateaux à Curepipe (plus de 45 ans d'existence). Modèles faits main en bois de teck, métal, cordage et toile patinée au thé, reproduisant fidèlement de grands navires (Saint-Géran, Paul et Virginie, Victory, Black Pearl...). Souvenir artisanal typique de l'île."
+  },
+  {
+    "id": "les-voiliers-de-la-france-curepipe",
+    "name": "Les Voiliers de la France — Maquettes de bateaux",
+    "category": "activites",
+    "address": "Curepipe",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Les%20Voiliers%20de%20la%20France%20Maquettes%20de%20Bateaux%20Curepipe%20Mauritius",
+    "lat": -20.3186,
+    "lng": 57.5265,
+    "themes": [
+      "shopping",
+      "souvenirs"
+    ],
+    "zone": "centre",
+    "description": "Atelier-boutique de maquettes de bateaux à Curepipe, capitale mauricienne de la maquette navale : voiliers et grands navires historiques faits main, finement détaillés. Souvenir artisanal typique de l'île."
+  },
+  {
+    "id": "jardin-botanique-de-curepipe",
+    "name": "Jardin botanique de Curepipe",
+    "category": "activites",
+    "address": "Rue Botanical Garden, Curepipe",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Jardin%20botanique%20de%20Curepipe%20Mauritius",
+    "lat": -20.3157,
+    "lng": 57.5237,
+    "themes": [
+      "parcs-botaniques",
+      "culture-patrimoine"
+    ],
+    "hours": "Tous les jours 9h-18h",
+    "zone": "centre",
+    "description": "Jardin botanique fondé en 1870 sur le plateau central, à l'origine jardin d'acclimatation de plantes exotiques et refuge des espèces endémiques des Mascareignes. Plus de 200 espèces adaptées au climat frais de Curepipe, dont l'Hyophorbe amaricaulis, le palmier le plus rare du monde (unique spécimen au monde, dans l'enceinte du jardin). Entrée gratuite, cadre paisible pour une promenade."
   },
   {
     "id": "esco-burger-blue-bay",
