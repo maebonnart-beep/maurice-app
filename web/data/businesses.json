@@ -43433,5 +43433,23 @@
     ],
     "zone": "sud",
     "description": "Skipper proposant des sorties en mer et excursions au départ de Blue Bay, dans le parc marin et vers les îlots du sud-est."
+  },
+  {
+    "id": "pont-naturel-le-bouchon",
+    "name": "Le Pont Naturel — Le Bouchon",
+    "category": "activites",
+    "address": "Côte sud, direction Le Bouchon (au sud de Mahébourg)",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/Pont+Naturel+Le+Bouchon+Mauritius",
+    "lat": -20.480442,
+    "lng": 57.6693878,
+    "themes": [
+      "randonnee-trail"
+    ],
+    "zone": "sud",
+    "distance": "2 km (piste)",
+    "difficultyLevel": "debutant",
+    "description": "Arche de basalte sculptée par la mer sur la côte sud sauvage, au sud de Mahébourg en direction du Bouchon. Accès par une piste de 2 km à travers les champs de canne (suivre les panneaux) ; petit parking au bout, puis courte marche jusqu'à la falaise où les vagues s'engouffrent sous le pont. Site naturel spectaculaire, prudence au bord de la falaise."
   }
 ]
