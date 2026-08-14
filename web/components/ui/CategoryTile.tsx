@@ -76,7 +76,15 @@ export function CategoryTile({
           )}
         </span>
       )}
-      <span className="px-2 py-2.5 text-[14px] font-semibold leading-tight text-ink">{displayLabel}</span>
+      {/* Libellé façon liste : teal gras (majuscules) + chevron › accent à droite. */}
+      <span className="flex items-center justify-between gap-1.5 px-2.5 py-2">
+        <span className="text-[12.5px] font-bold uppercase tracking-wide leading-tight text-left text-primary-deep">
+          {displayLabel}
+        </span>
+        <span className="shrink-0 text-[17px] font-bold leading-none" style={{ color: "var(--accent)" }} aria-hidden>
+          ›
+        </span>
+      </span>
     </button>
   );
 }
