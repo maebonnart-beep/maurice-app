@@ -190,6 +190,7 @@ export const THEMATIC_ICONS: Record<string, string> = {
   restaurants: "/icon-restaurants.png",
   "tables-hotes": "/icon-tables-hotes.png",
   "chefs-domicile": "/icon-chefs-domicile.png",
+  "cours-de-cuisine": "/icon-cours-de-cuisine.png",
   glaciers: "/icon-glaciers.png",
   // Sous-rubriques Sports (Bouger)
   "gym-fitness": "/icon-gym-fitness.png",
