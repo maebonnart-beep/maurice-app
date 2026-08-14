@@ -273,19 +273,19 @@ function HomeEntry({
   return (
     <button
       onClick={onClick}
-      className="flex flex-col items-center justify-center gap-3 p-6 min-h-[172px] rounded-tile border border-border text-center shadow-sm active:scale-[.98] transition-transform"
+      className="flex flex-col items-center justify-center gap-3 p-6 min-h-[210px] rounded-tile border border-border text-center shadow-sm active:scale-[.98] transition-transform"
       style={{ background: "var(--surface-2, #ececef)" }}
     >
       {img ? (
         // eslint-disable-next-line @next/next/no-img-element
-        <img src={img} alt="" aria-hidden className="h-[120px] w-auto max-w-full object-contain" />
+        <img src={img} alt="" aria-hidden className="h-[150px] w-auto max-w-full object-contain" />
       ) : (
-        <span className="w-[74px] h-[74px] rounded-2xl bg-primary-tint text-primary-deep flex items-center justify-center">
-          {Icon && <Icon size={40} weight="duotone" aria-hidden />}
+        <span className="w-[92px] h-[92px] rounded-2xl bg-primary-tint text-primary-deep flex items-center justify-center">
+          {Icon && <Icon size={48} weight="duotone" aria-hidden />}
         </span>
       )}
-      <span className="text-[16px] font-semibold leading-tight text-ink">{title}</span>
-      <span className="text-[12.5px] text-muted leading-tight">{subtitle}</span>
+      <span className="text-[18px] font-semibold leading-tight text-ink">{title}</span>
+      <span className="text-[13px] text-muted leading-tight">{subtitle}</span>
     </button>
   );
 }
@@ -1160,14 +1160,14 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
     <div className="app min-h-screen flex flex-col">
       {/* En-tête « Lagon » : bandeau teal poulpe, logo clair + recherche */}
       <header className="sticky top-0 z-30 bg-band border-b border-band-deep shadow-sm">
-        <div className="max-w-[1400px] mx-auto px-5 pt-3 pb-3.5 flex flex-col gap-3">
+        <div className="max-w-[1400px] mx-auto px-5 pt-2 pb-2.5 flex flex-col gap-2.5">
           <div className="flex items-center justify-between gap-3">
             <button
               onClick={goHome}
               aria-label="Retour à l'accueil"
               className="rounded-lg -ml-1 px-1 py-1 hover:opacity-90 active:scale-[.98] transition"
             >
-              <Logo light />
+              <Logo light size={56} />
             </button>
             {headerZoneSelect}
           </div>
@@ -1185,16 +1185,15 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
 
       <div className="flex-1 max-w-[1400px] w-full mx-auto lg:flex min-h-0">
         {/* Sidebar desktop */}
-        <aside className="hidden lg:block w-[270px] shrink-0 border-r border-border overflow-y-auto sticky top-[121px] max-h-[calc(100vh-121px)]">
+        <aside className="hidden lg:block w-[270px] shrink-0 border-r border-border overflow-y-auto sticky top-[94px] max-h-[calc(100vh-94px)]">
           {sidebarContent}
         </aside>
 
         <div className="flex-1 min-w-0 px-4 lg:px-5 py-3">
           {/* Accueil « Option A » : menu d'entrée à 4 modes. */}
           {showHome && navStack.length === 0 && homeMode === "menu" && (
-            <div className="pb-10 min-h-[calc(100dvh-172px)] flex flex-col justify-center">
-              <p className="text-[14px] font-semibold text-muted mb-4 text-center">Que cherchez-vous ?</p>
-              <div className="grid grid-cols-2 gap-4 w-full max-w-[560px] mx-auto">
+            <div className="pb-10 min-h-[calc(100dvh-150px)] flex flex-col justify-center">
+              <div className="grid grid-cols-2 gap-4 sm:gap-5 w-full max-w-[660px] mx-auto">
                 <HomeEntry img="/icon-categories.png" title="Par catégorie" subtitle="6 univers" onClick={() => setHomeMode("categories")} />
                 <HomeEntry img="/icon-recherche.png" title="Recherche" subtitle="lieu, nom, activité" onClick={() => { setHomeMode("recherche"); setTimeout(focusSearch, 60); }} />
                 <HomeEntry img="/icon-favoris.png" title="Mes favoris" subtitle="et mes listes" onClick={() => setHomeMode("favoris")} />
@@ -1314,13 +1313,17 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
               const locked = PREMIUM_KEYS.has(navStack[0].key);
               return (
                 <div className="pb-16">
-                  <button
-                    onClick={() => setNavStack((prev) => prev.slice(0, -1))}
-                    className="inline-flex items-center gap-1.5 text-[13px] font-semibold text-primary-deep mb-2.5 active:scale-[.98]"
-                  >
-                    ← Retour
-                  </button>
-                  <p className="text-[15px] font-semibold mb-2.5 truncate">{path}</p>
+                  {/* Barre retour figée sous le bandeau : reste visible au scroll. */}
+                  <div className="sticky top-[94px] z-20 -mx-4 lg:-mx-5 px-4 lg:px-5 py-2 flex items-center gap-2.5 border-b border-border" style={{ background: "var(--bg)" }}>
+                    <button
+                      onClick={() => setNavStack((prev) => prev.slice(0, -1))}
+                      className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-border bg-surface text-[13px] font-semibold shrink-0 text-primary-deep active:scale-[.98]"
+                    >
+                      ← Retour
+                    </button>
+                    <p className="text-[15px] font-semibold truncate">{path}</p>
+                  </div>
+                  <div className="h-2.5" />
                   <div className="relative min-h-[220px]">
                     <div
                       className={`grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2.5 ${
@@ -1369,7 +1372,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
             })()}
 
           {/* Barre de résultats */}
-          <div className={`items-center justify-between gap-3 flex-wrap py-2 border-b border-border mb-3 ${mobileTiles ? "hidden" : "flex"}`}>
+          <div className={`sticky top-[94px] z-20 -mx-4 lg:-mx-5 px-4 lg:px-5 items-center justify-between gap-3 flex-wrap py-2 border-b border-border mb-3 ${mobileTiles ? "hidden" : "flex"}`} style={{ background: "var(--bg)" }}>
             <div className="flex items-center gap-2 min-w-0">
               <button
                 onClick={goBackFromResults}
