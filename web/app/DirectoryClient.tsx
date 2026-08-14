@@ -264,14 +264,14 @@ const UMBRELLA_BY_KEY: Record<string, (typeof LIFESTYLE)[number]> = Object.fromE
 // Zones cliquables du menu illustré (/menu-univers.png) : centre + rayon en % de
 // l'image, calés sur chaque badge tenu par le poulpe.
 const UNIVERS_HOTSPOTS: { key: string; cx: number; cy: number; r: number }[] = [
-  { key: "manger", cx: 28, cy: 13, r: 11 },
-  { key: "sortir", cx: 71, cy: 14, r: 11 },
-  { key: "bouger", cx: 16, cy: 39, r: 11 },
-  { key: "shopping", cx: 84, cy: 40, r: 11 },
-  { key: "sante-bien-etre", cx: 23, cy: 64, r: 11 },
-  { key: "pratique", cx: 77, cy: 65, r: 11 },
-  { key: "evenements", cx: 35, cy: 83, r: 11 },
-  { key: "seconde-main", cx: 65, cy: 84, r: 11 },
+  { key: "manger", cx: 27, cy: 12, r: 12 },
+  { key: "sortir", cx: 73, cy: 13, r: 12 },
+  { key: "bouger", cx: 14, cy: 38, r: 12 },
+  { key: "shopping", cx: 87, cy: 39, r: 12 },
+  { key: "sante-bien-etre", cx: 22, cy: 64, r: 12 },
+  { key: "pratique", cx: 79, cy: 65, r: 12 },
+  { key: "evenements", cx: 35, cy: 83, r: 12 },
+  { key: "seconde-main", cx: 66, cy: 84, r: 12 },
 ];
 
 // Tuile d'entrée du menu d'accueil (Option A) : icône (Phosphor ou image) + titre + sous-titre.
@@ -1244,8 +1244,9 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
               >
                 ← Menu
               </button>
-              {/* Menu illustré : le poulpe tient un badge par univers, chacun cliquable. */}
-              <div className="relative w-full max-w-[540px] mx-auto">
+              {/* Menu illustré : le poulpe tient un badge par univers, chacun cliquable.
+                  Bord à bord sur mobile (bulles plus grandes), centré sur desktop. */}
+              <div className="relative -mx-4 w-[calc(100%+2rem)] sm:mx-auto sm:w-full sm:max-w-[560px]">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src="/menu-univers.png" alt="Choisir un univers" className="w-full select-none" draggable={false} />
                 {UNIVERS_HOTSPOTS.map((hs) => {
