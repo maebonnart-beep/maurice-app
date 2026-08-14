@@ -273,6 +273,7 @@ export const THEMATIC_ICONS: Record<string, string> = {
   "equipement-maison": "/icon-equipement-maison.png",
   beaute: "/icon-shopping-beaute.png",
   electromenager: "/icon-shopping-electromenager.png",
+  "high-tech": "/icon-high-tech.png",
   // Tuiles de groupe sous Manger (niveau intermédiaire)
   "manger-restauration": "/icon-restauration.png",
   "manger-commerces": "/icon-commerces-alimentaires.png",
