@@ -43,7 +43,7 @@ export function CategoryTile({
   return (
     <button
       onClick={onClick}
-      className="relative flex flex-col items-center gap-2.5 p-4 rounded-tile border text-center shadow-sm active:scale-[.98] transition-transform"
+      className="relative flex flex-col rounded-tile border overflow-hidden text-center shadow-sm active:scale-[.98] transition-transform"
       style={
         locked
           ? { borderColor: "var(--accent)", borderWidth: 2, background: "color-mix(in srgb, var(--accent) 10%, var(--surface))" }
@@ -52,19 +52,21 @@ export function CategoryTile({
     >
       {locked && (
         <span
-          className="absolute top-1.5 right-1.5 inline-flex items-center gap-0.5 px-1.5 py-0.5 rounded-full text-[9px] font-extrabold text-on-accent"
+          className="absolute top-1.5 right-1.5 z-10 inline-flex items-center gap-0.5 px-1.5 py-0.5 rounded-full text-[9px] font-extrabold text-on-accent"
           style={{ background: "var(--accent)" }}
         >
           🔒 Premium
         </span>
       )}
       {thematic ? (
-        // Icône thématique illustrée : occupe toute la pastille (disque crème intégré).
+        // Illustration thématique : plein cadre, remplit la tuile bord à bord
+        // (pas de cadre blanc autour). Image déjà mise au carré → object-cover
+        // ne rogne pas le sujet.
         // eslint-disable-next-line @next/next/no-img-element
-        <img src={thematic} alt="" aria-hidden className="w-24 h-24 rounded-full object-cover" />
+        <img src={thematic} alt="" aria-hidden className="w-full aspect-square object-cover" />
       ) : (
         <span
-          className="w-24 h-24 rounded-2xl flex items-center justify-center"
+          className="w-full aspect-square flex items-center justify-center"
           style={{ background: iconBg, color: iconColor }}
         >
           {Icon ? (
@@ -74,7 +76,7 @@ export function CategoryTile({
           )}
         </span>
       )}
-      <span className="text-[14px] font-semibold leading-tight text-ink">{displayLabel}</span>
+      <span className="px-2 py-2.5 text-[14px] font-semibold leading-tight text-ink">{displayLabel}</span>
     </button>
   );
 }
