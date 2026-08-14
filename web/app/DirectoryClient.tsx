@@ -256,6 +256,24 @@ const LIFESTYLE: Umbrella[] = [
 // Clés d'univers réservés aux membres Premium (aperçu flouté + cadenas).
 const PREMIUM_KEYS = new Set(LIFESTYLE.filter((u) => u.premium).map((u) => u.key));
 
+// Accès rapide à un univers par sa clé (menu illustré « Par catégorie »).
+const UMBRELLA_BY_KEY: Record<string, (typeof LIFESTYLE)[number]> = Object.fromEntries(
+  LIFESTYLE.map((u) => [u.key, u]),
+);
+
+// Zones cliquables du menu illustré (/menu-univers.png) : centre + rayon en % de
+// l'image, calés sur chaque badge tenu par le poulpe.
+const UNIVERS_HOTSPOTS: { key: string; cx: number; cy: number; r: number }[] = [
+  { key: "manger", cx: 28, cy: 13, r: 11 },
+  { key: "sortir", cx: 71, cy: 14, r: 11 },
+  { key: "bouger", cx: 16, cy: 39, r: 11 },
+  { key: "shopping", cx: 84, cy: 40, r: 11 },
+  { key: "sante-bien-etre", cx: 23, cy: 64, r: 11 },
+  { key: "pratique", cx: 77, cy: 65, r: 11 },
+  { key: "evenements", cx: 35, cy: 83, r: 11 },
+  { key: "seconde-main", cx: 65, cy: 84, r: 11 },
+];
+
 // Tuile d'entrée du menu d'accueil (Option A) : icône (Phosphor ou image) + titre + sous-titre.
 function HomeEntry({
   Icon,
@@ -1048,25 +1066,41 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
     </>
   );
 
-  // Sélecteur de région compact, placé dans le bandeau à droite du logo.
-  const headerZoneSelect = (
-    <div className="flex items-center gap-1.5 shrink-0">
-      <MapPin size={16} weight="fill" className="text-on-band/80" aria-hidden />
-      <select
-        value={activeZone ?? ""}
-        onChange={(e) => setActiveZone(e.target.value || null)}
-        aria-label="Région"
-        style={{ colorScheme: "dark" }}
-        className="bg-white/15 text-on-band text-[13px] font-semibold rounded-pill pl-3 pr-2 py-1.5 border border-white/25 focus:outline-none focus:border-white/60 cursor-pointer"
-      >
-        <option value="">Toute l&apos;île</option>
-        {ZONES.map((z) => (
-          <option key={z.key} value={z.key}>
-            {z.label} ({zoneCounts[z.key] || 0})
-          </option>
-        ))}
-      </select>
-    </div>
+  // Barre boussole (régions) fixée en bas d'écran : « Toute l'île » + points
+  // cardinaux. Sortie du bandeau (qui débordait avec le logo élargi).
+  const zoneItems = [
+    { key: "", label: "Toute", icon: "toute-lile" },
+    ...ZONES.map((z) => ({ key: z.key, label: z.label, icon: z.key })),
+  ];
+  const zoneBar = (
+    <nav
+      aria-label="Région"
+      className="fixed bottom-0 inset-x-0 z-40 bg-band border-t border-band-deep shadow-[0_-2px_10px_rgba(0,0,0,0.12)]"
+      style={{ paddingBottom: "env(safe-area-inset-bottom)" }}
+    >
+      <div className="max-w-[560px] mx-auto flex items-stretch justify-around gap-1 px-1.5 py-1.5">
+        {zoneItems.map((z) => {
+          const active = (activeZone ?? "") === z.key;
+          const I = iconForKey(z.icon);
+          const n = z.key ? zoneCounts[z.key] || 0 : rows.length;
+          return (
+            <button
+              key={z.key || "all"}
+              onClick={() => setActiveZone(z.key || null)}
+              aria-pressed={active}
+              title={`${z.label === "Toute" ? "Toute l'île" : z.label} (${n})`}
+              className={`flex flex-1 min-w-0 flex-col items-center gap-0.5 rounded-xl px-1 py-1 transition-colors ${
+                active ? "text-on-band" : "text-on-band/70"
+              }`}
+              style={active ? { background: "rgba(255,255,255,0.18)" } : undefined}
+            >
+              {I ? <I size={21} weight={active ? "fill" : "regular"} aria-hidden /> : null}
+              <span className="text-[10.5px] font-semibold leading-none">{z.label}</span>
+            </button>
+          );
+        })}
+      </div>
+    </nav>
   );
 
   // Barre de filtres générique (menus déroulants Type / Prix / Ambiance).
@@ -1161,7 +1195,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
       {/* En-tête « Lagon » : bandeau teal poulpe, logo clair + recherche */}
       <header className="sticky top-0 z-30 bg-band border-b border-band-deep shadow-sm">
         <div className="max-w-[1400px] mx-auto px-5 pt-2 pb-2.5 flex flex-col gap-2.5">
-          <div className="flex items-center justify-between gap-3">
+          <div className="flex items-center gap-3">
             <button
               onClick={goHome}
               aria-label="Retour à l'accueil"
@@ -1169,7 +1203,6 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
             >
               <Logo light size={56} />
             </button>
-            {headerZoneSelect}
           </div>
           {showHeaderSearch && (
             <div className="max-w-[640px]">
@@ -1189,7 +1222,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
           {sidebarContent}
         </aside>
 
-        <div className="flex-1 min-w-0 px-4 lg:px-5 py-3">
+        <div className="flex-1 min-w-0 px-4 lg:px-5 py-3 pb-24">
           {/* Accueil « Option A » : menu d'entrée à 4 modes. */}
           {showHome && navStack.length === 0 && homeMode === "menu" && (
             <div className="pb-10 min-h-[calc(100dvh-150px)] flex flex-col justify-center">
@@ -1211,47 +1244,30 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
               >
                 ← Menu
               </button>
-              <p className="text-[13px] font-semibold text-muted mb-2.5">Que cherchez-vous ?</p>
-              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2.5">
-                {LIFESTYLE.filter((u) => !u.premium && (umbrellaCounts[u.key] || 0) > 0).map((u) => (
-                  <CategoryTile
-                    key={u.key}
-                    iconKey={u.key}
-                    emoji={u.emoji}
-                    label={u.label}
-                    count={umbrellaCounts[u.key] || 0}
-                    onClick={() => pushNav({ kind: "umbrella", key: u.key, label: u.label, emoji: u.emoji })}
-                  />
-                ))}
+              {/* Menu illustré : le poulpe tient un badge par univers, chacun cliquable. */}
+              <div className="relative w-full max-w-[540px] mx-auto">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="/menu-univers.png" alt="Choisir un univers" className="w-full select-none" draggable={false} />
+                {UNIVERS_HOTSPOTS.map((hs) => {
+                  const u = UMBRELLA_BY_KEY[hs.key];
+                  if (!u || (umbrellaCounts[u.key] || 0) === 0) return null;
+                  return (
+                    <button
+                      key={hs.key}
+                      onClick={() => pushNav({ kind: "umbrella", key: u.key, label: u.label, emoji: u.emoji })}
+                      aria-label={u.label}
+                      className="absolute rounded-full active:scale-95 transition-transform focus:outline-none focus-visible:ring-4 focus-visible:ring-primary-deep/40"
+                      style={{ left: `${hs.cx - hs.r}%`, top: `${hs.cy - hs.r}%`, width: `${hs.r * 2}%`, height: `${hs.r * 2}%` }}
+                    />
+                  );
+                })}
               </div>
               <button
                 onClick={() => setBrowseAll(true)}
-                className="w-full mt-3 py-2.5 rounded-xl border border-border bg-surface text-[13.5px] font-semibold text-primary-deep active:scale-[.99] transition-transform"
+                className="block w-full max-w-[540px] mx-auto mt-3 py-2.5 rounded-xl border border-border bg-surface text-[13.5px] font-semibold text-primary-deep active:scale-[.99] transition-transform"
               >
                 Voir toutes les adresses ({rows.length})
               </button>
-              {/* Section Premium : univers réservés aux membres (aperçu flouté au clic). */}
-              {LIFESTYLE.some((u) => u.premium && (umbrellaCounts[u.key] || 0) > 0) && (
-                <div className="mt-5">
-                  <p className="text-[13px] font-semibold text-muted mb-2.5 flex items-center gap-1.5">
-                    <span style={{ color: "var(--accent)" }}>✨</span> Premium
-                    <span className="text-[11px] font-normal text-muted/80">— réservé aux membres</span>
-                  </p>
-                  <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2.5">
-                    {LIFESTYLE.filter((u) => u.premium && (umbrellaCounts[u.key] || 0) > 0).map((u) => (
-                      <CategoryTile
-                        key={u.key}
-                        iconKey={u.key}
-                        emoji={u.emoji}
-                        label={u.label}
-                        locked
-                        count={umbrellaCounts[u.key] || 0}
-                        onClick={() => pushNav({ kind: "umbrella", key: u.key, label: u.label, emoji: u.emoji })}
-                      />
-                    ))}
-                  </div>
-                </div>
-              )}
             </div>
           )}
 
@@ -1519,6 +1535,8 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
         />
       )}
 
+      {/* Barre boussole (régions) fixée en bas d'écran. */}
+      {zoneBar}
     </div>
   );
 }
