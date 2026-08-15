@@ -256,21 +256,46 @@ const LIFESTYLE: Umbrella[] = [
 // Clés d'univers réservés aux membres Premium (aperçu flouté + cadenas).
 const PREMIUM_KEYS = new Set(LIFESTYLE.filter((u) => u.premium).map((u) => u.key));
 
-// Sous-titres des cartes univers (accueil), façon rendu de référence.
-const UNIVERS_SUBTITLES: Record<string, string> = {
-  manger: "Restaurants et commerces",
-  sortir: "Activités, loisirs & sorties",
-  bouger: "Sports, randonnées, plages & parcs",
-  shopping: "Mode adulte-enfants, équipement maison, malls…",
-  "sante-bien-etre": "Médecins, hôpitaux, pharmacies, bien-être & sport santé",
-  pratique: "Services, transports, administrations & démarches",
-  evenements: "Festivals, concerts, événements & compétitions sportives",
-  "seconde-main": "Bonnes affaires, occasions & revente locale",
-};
-
 // Accès rapide à un univers par sa clé (menu illustré « Par catégorie »).
 const UMBRELLA_BY_KEY: Record<string, (typeof LIFESTYLE)[number]> = Object.fromEntries(
   LIFESTYLE.map((u) => [u.key, u]),
+);
+
+// Regroupement des 8 univers en 4 grandes cartes d'accueil (2 par ligne) :
+// chaque carte mène à un choix parmi ses univers d'origine, qui reprennent
+// ensuite la navigation habituelle (groupes → rubriques → résultats).
+const MERGED_GROUPS: { key: string; label: string; photoKey: string; subtitle: string; children: string[] }[] = [
+  {
+    key: "manger-sortir",
+    label: "Manger & Sortir",
+    photoKey: "manger",
+    subtitle: "Restaurants, commerces, sorties & événements",
+    children: ["manger", "sortir", "evenements"],
+  },
+  {
+    key: "bouger-explorer",
+    label: "Bouger & Explorer",
+    photoKey: "bouger",
+    subtitle: "Sports, randonnées, plages & parcs",
+    children: ["bouger"],
+  },
+  {
+    key: "shopping-secondemain",
+    label: "Shopping & Seconde main",
+    photoKey: "shopping",
+    subtitle: "Mode, équipement, bonnes affaires & occasions",
+    children: ["shopping", "seconde-main"],
+  },
+  {
+    key: "sante-pratique",
+    label: "Santé & Vie pratique",
+    photoKey: "sante-bien-etre",
+    subtitle: "Médecins, bien-être, services & démarches",
+    children: ["sante-bien-etre", "pratique"],
+  },
+];
+const MERGED_GROUP_BY_KEY: Record<string, (typeof MERGED_GROUPS)[number]> = Object.fromEntries(
+  MERGED_GROUPS.map((g) => [g.key, g]),
 );
 
 // Zones cliquables du menu illustré (/menu-univers.png) : centre + rayon en % de
@@ -354,7 +379,7 @@ function umbrellaFamilies(u: Umbrella): Family[] | null {
 }
 
 // Un niveau de navigation en tuiles.
-type NavNode = { kind: "umbrella" | "group" | "family" | "subgroup"; key: string; label: string; emoji: string };
+type NavNode = { kind: "merged" | "umbrella" | "group" | "family" | "subgroup"; key: string; label: string; emoji: string };
 
 const ZONES: { key: string; label: string; emoji: string }[] = [
   { key: "nord", label: "Nord", emoji: "⬆️" },
@@ -826,6 +851,20 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
   function levelTiles(stack: NavNode[]): TileDesc[] {
     const top = stack[stack.length - 1];
     if (!top) return [];
+    if (top.kind === "merged") {
+      const g = MERGED_GROUP_BY_KEY[top.key];
+      if (!g) return [];
+      return g.children
+        .map((ck): TileDesc | null => {
+          const u = UMBRELLA_BY_KEY[ck];
+          if (!u) return null;
+          const count = umbrellaCounts[ck] || 0;
+          return count > 0
+            ? { key: u.key, label: u.label, emoji: u.emoji, count, drillTo: { kind: "umbrella", key: u.key, label: u.label, emoji: u.emoji } }
+            : null;
+        })
+        .filter((t): t is TileDesc => t !== null);
+    }
     if (top.kind === "umbrella") {
       const u = LIFESTYLE.find((x) => x.key === top.key);
       if (!u) return [];
@@ -1349,17 +1388,24 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                   Voir tout ({rows.length}) ›
                 </button>
               </div>
-              <div className="grid grid-cols-4 gap-2 sm:gap-3.5 sm:max-w-[640px]">
-                {LIFESTYLE.map((u) => {
-                  if ((umbrellaCounts[u.key] || 0) === 0) return null;
+              <div className="grid grid-cols-2 gap-3 sm:gap-3.5 sm:max-w-[560px]">
+                {MERGED_GROUPS.map((g) => {
+                  const count = g.children.reduce((n, ck) => n + (umbrellaCounts[ck] || 0), 0);
+                  if (count === 0) return null;
                   return (
                     <UniversCard
-                      key={u.key}
-                      photoKey={u.key}
-                      label={u.label}
-                      subtitle={UNIVERS_SUBTITLES[u.key] ?? ""}
-                      locked={PREMIUM_KEYS.has(u.key)}
-                      onClick={() => pushNav({ kind: "umbrella", key: u.key, label: u.label, emoji: u.emoji })}
+                      key={g.key}
+                      photoKey={g.photoKey}
+                      label={g.label}
+                      subtitle={g.subtitle}
+                      onClick={() => {
+                        if (g.children.length === 1) {
+                          const u = UMBRELLA_BY_KEY[g.children[0]];
+                          pushNav({ kind: "umbrella", key: u.key, label: u.label, emoji: u.emoji });
+                        } else {
+                          pushNav({ kind: "merged", key: g.key, label: g.label, emoji: "" });
+                        }
+                      }}
                     />
                   );
                 })}
@@ -1431,7 +1477,8 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
             (() => {
               const tiles = levelTiles(navStack);
               const path = navStack.map((n) => n.label).join(" › ");
-              const locked = PREMIUM_KEYS.has(navStack[0].key);
+              const lockedNode = navStack.find((n) => PREMIUM_KEYS.has(n.key));
+              const locked = !!lockedNode;
               return (
                 <div className="pb-16">
                   {/* Repère de niveau figé sous le bandeau : icône + fil d'ariane (la
@@ -1480,7 +1527,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                             Réservé aux membres Premium
                           </p>
                           <p className="text-[13px] text-muted leading-snug">
-                            Débloquez « {navStack[0].label} » et tout le contenu Premium de Koté Moris.
+                            Débloquez « {lockedNode?.label} » et tout le contenu Premium de Koté Moris.
                           </p>
                           <button
                             disabled
