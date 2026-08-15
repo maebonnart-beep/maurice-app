@@ -695,6 +695,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
     if (userPos) {
       setNearMe(true);
       setResultsView("liste");
+      if (showHome) setBrowseAll(true);
       return;
     }
     if (typeof navigator === "undefined" || !navigator.geolocation) {
@@ -708,6 +709,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
         setGeoStatus("ok");
         setNearMe(true);
         setResultsView("liste");
+        if (showHome) setBrowseAll(true);
       },
       () => setGeoStatus("denied"),
       { enableHighAccuracy: true, timeout: 10000, maximumAge: 60000 }
@@ -1123,7 +1125,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
       className="fixed bottom-0 inset-x-0 z-40 bg-band border-t border-band-deep shadow-[0_-2px_10px_rgba(0,0,0,0.12)]"
       style={{ paddingBottom: "env(safe-area-inset-bottom)" }}
     >
-      <div className="max-w-[640px] mx-auto flex items-stretch gap-1 px-1.5 py-1.5 overflow-x-auto">
+      <div className="max-w-[640px] mx-auto flex items-stretch gap-1 px-1.5 py-1.5">
         <button
           onClick={goBackFromResults}
           disabled={!canGoBack}
@@ -1181,6 +1183,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                       setNearMe(false);
                       setActiveZone(z.key || null);
                       setZonePickerOpen(false);
+                      if (showHome) setBrowseAll(true);
                     }}
                     aria-pressed={active}
                     className={`w-full flex items-center gap-2 px-2 py-1.5 rounded-lg text-[13px] text-left transition-colors ${
@@ -1351,7 +1354,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                   Voir tout ({rows.length}) ›
                 </button>
               </div>
-              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3.5 sm:max-w-[640px]">
+              <div className="grid grid-cols-4 gap-2 sm:gap-3.5 sm:max-w-[640px]">
                 {LIFESTYLE.map((u) => {
                   if ((umbrellaCounts[u.key] || 0) === 0) return null;
                   return (
