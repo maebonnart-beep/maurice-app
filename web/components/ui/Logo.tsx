@@ -5,16 +5,27 @@
  */
 export function Logo({ size = 96, light = false }: { size?: number; light?: boolean }) {
   if (light) {
-    // Sur le bandeau teal : lockup unique fourni par la cliente (poulpe +
-    // wordmark + fleur), détouré en blanc/turquoise sur fond transparent.
+    // Sur le bandeau teal : lockup fourni par la cliente, en deux morceaux
+    // détourés (poulpe + bloc texte/fleur) pour pouvoir réduire le poulpe
+    // sans rapetisser le wordmark. Bloc centré dans le bandeau.
     return (
-      // eslint-disable-next-line @next/next/no-img-element
-      <img
-        src="/logo-kotemoris-lockup.png"
-        alt="Koté Moris — les adresses de Maurice"
-        className="shrink-0 object-contain drop-shadow-sm"
-        style={{ height: size * 1.15 }}
-      />
+      <span className="inline-flex items-center justify-center gap-2.5">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/logo-kotemoris-octopus.png"
+          alt=""
+          aria-hidden
+          className="shrink-0 object-contain"
+          style={{ height: size * 0.72 }}
+        />
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/logo-kotemoris-text.png"
+          alt="Koté Moris — les adresses de Maurice"
+          className="shrink-0 object-contain"
+          style={{ height: size * 1.05 }}
+        />
+      </span>
     );
   }
   return (

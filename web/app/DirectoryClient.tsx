@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import dynamic from "next/dynamic";
 import type { Business, CategoryKey } from "@/lib/types";
 import type { MapBounds } from "./Map";
@@ -385,6 +385,8 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
   const [active, setActive] = useState<string>("all");
   const [activeThemes, setActiveThemes] = useState<Set<string>>(new Set());
   const [activeZone, setActiveZone] = useState<string | null>(null);
+  const [zonePickerOpen, setZonePickerOpen] = useState(false);
+  const zonePickerRef = useRef<HTMLDivElement>(null);
   // Facettes de rubrique (type / prix / ambiance) — multi-sélection.
   const [facetTypes, setFacetTypes] = useState<Set<string>>(new Set());
   const [facetPrices, setFacetPrices] = useState<Set<string>>(new Set());
@@ -479,6 +481,21 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
   function toggleZone(key: string) {
     setActiveZone((prev) => (prev === key ? null : key));
   }
+
+  // Ferme le picker de zone (bandeau du bas) au clic extérieur / Échap.
+  useEffect(() => {
+    if (!zonePickerOpen) return;
+    const onDoc = (e: MouseEvent) => {
+      if (zonePickerRef.current && !zonePickerRef.current.contains(e.target as Node)) setZonePickerOpen(false);
+    };
+    const onKey = (e: KeyboardEvent) => e.key === "Escape" && setZonePickerOpen(false);
+    document.addEventListener("mousedown", onDoc);
+    document.addEventListener("keydown", onKey);
+    return () => {
+      document.removeEventListener("mousedown", onDoc);
+      document.removeEventListener("keydown", onKey);
+    };
+  }, [zonePickerOpen]);
 
   function toggleTheme(key: string) {
     setActiveThemes((prev) => (prev.has(key) ? new Set() : new Set([key])));
@@ -1117,29 +1134,51 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
           </span>
         </button>
         <span className="w-px my-1 bg-on-band/20 shrink-0" aria-hidden />
-        {zoneItems.map((z) => {
-          const active = !nearMe && (activeZone ?? "") === z.key;
-          const I = iconForKey(z.icon);
-          const n = z.key ? zoneCounts[z.key] || 0 : rows.length;
-          return (
-            <button
-              key={z.key || "all"}
-              onClick={() => {
-                setNearMe(false);
-                setActiveZone(z.key || null);
-              }}
-              aria-pressed={active}
-              title={`${z.label === "Toute" ? "Toute l'île" : z.label} (${n})`}
-              className={`flex flex-1 min-w-0 flex-col items-center gap-0.5 rounded-xl px-1 py-1 transition-colors ${
-                active ? "text-on-band" : "text-on-band/70"
-              }`}
-              style={active ? { background: "rgba(255,255,255,0.18)" } : undefined}
-            >
-              {I ? <I size={21} weight={active ? "fill" : "regular"} aria-hidden /> : null}
-              <span className="text-[10.5px] font-semibold leading-none">{z.label}</span>
-            </button>
-          );
-        })}
+        <div ref={zonePickerRef} className="relative flex-[2] min-w-0">
+          <button
+            onClick={() => setZonePickerOpen((o) => !o)}
+            aria-expanded={zonePickerOpen}
+            className={`flex w-full h-full min-w-0 flex-col items-center justify-center gap-0.5 rounded-xl px-1 py-1 transition-colors ${
+              !nearMe && activeZone ? "text-on-band" : "text-on-band/70"
+            }`}
+            style={!nearMe && activeZone ? { background: "rgba(255,255,255,0.18)" } : undefined}
+          >
+            {(() => {
+              const I = iconForKey(!nearMe && activeZone ? activeZone : "toute-lile");
+              return I ? <I size={21} weight={!nearMe && activeZone ? "fill" : "regular"} aria-hidden /> : null;
+            })()}
+            <span className="text-[10.5px] font-semibold leading-none truncate max-w-full">
+              {!nearMe && activeZone ? ZONES.find((z) => z.key === activeZone)?.label : "Sélectionnez une zone"}
+            </span>
+          </button>
+          {zonePickerOpen && (
+            <div className="absolute z-30 bottom-full mb-2 left-1/2 -translate-x-1/2 w-[220px] max-h-[320px] overflow-y-auto rounded-card border border-border bg-surface shadow-pop p-1.5">
+              {zoneItems.map((z) => {
+                const active = !nearMe && (activeZone ?? "") === z.key;
+                const I = iconForKey(z.icon);
+                const n = z.key ? zoneCounts[z.key] || 0 : rows.length;
+                return (
+                  <button
+                    key={z.key || "all"}
+                    onClick={() => {
+                      setNearMe(false);
+                      setActiveZone(z.key || null);
+                      setZonePickerOpen(false);
+                    }}
+                    aria-pressed={active}
+                    className={`w-full flex items-center gap-2 px-2 py-1.5 rounded-lg text-[13px] text-left transition-colors ${
+                      active ? "bg-primary-tint text-primary-deep font-semibold" : "text-ink hover:bg-surface-2"
+                    }`}
+                  >
+                    {I ? <I size={16} weight={active ? "fill" : "regular"} aria-hidden /> : null}
+                    <span className="flex-1 truncate">{z.label === "Toute" ? "Toute l'île" : z.label}</span>
+                    <span className="text-[11px] font-bold opacity-55 shrink-0">{n}</span>
+                  </button>
+                );
+              })}
+            </div>
+          )}
+        </div>
       </div>
     </nav>
   );
@@ -1236,11 +1275,11 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
       {/* En-tête « Lagon » : bandeau teal poulpe, logo clair + recherche */}
       <header className="sticky top-0 z-30 bg-band border-b border-band-deep shadow-sm">
         <div className="max-w-[1400px] mx-auto px-5 pt-2 pb-2.5 flex flex-col gap-2.5">
-          <div className="flex items-center gap-3">
+          <div className="flex items-center justify-center gap-3">
             <button
               onClick={goHome}
               aria-label="Retour à l'accueil"
-              className="rounded-lg -ml-1 px-1 py-1 hover:opacity-90 active:scale-[.98] transition"
+              className="rounded-lg px-1 py-1 hover:opacity-90 active:scale-[.98] transition"
             >
               <Logo light size={56} />
             </button>
@@ -1285,21 +1324,19 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
               >
                 ← Menu
               </button>
-              {/* Menu illustré : le poulpe tient un badge par univers, chacun cliquable.
-                  Bord à bord sur mobile (bulles plus grandes), centré sur desktop. */}
-              <div className="relative -mx-4 w-[calc(100%+2rem)] sm:mx-auto sm:w-full sm:max-w-[560px]">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/menu-univers.png" alt="Choisir un univers" className="w-full select-none" draggable={false} />
-                {UNIVERS_HOTSPOTS.map((hs) => {
-                  const u = UMBRELLA_BY_KEY[hs.key];
-                  if (!u || (umbrellaCounts[u.key] || 0) === 0) return null;
+              {/* Grille « Explorer par catégorie » : tuile icône + libellé par
+                  univers, façon mockup validé (au lieu du poulpe illustré). */}
+              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2.5 sm:max-w-[560px] sm:mx-auto">
+                {LIFESTYLE.map((u) => {
+                  if ((umbrellaCounts[u.key] || 0) === 0) return null;
                   return (
-                    <button
-                      key={hs.key}
+                    <CategoryTile
+                      key={u.key}
+                      iconKey={u.key}
+                      emoji={u.emoji}
+                      label={u.label}
+                      locked={PREMIUM_KEYS.has(u.key)}
                       onClick={() => pushNav({ kind: "umbrella", key: u.key, label: u.label, emoji: u.emoji })}
-                      aria-label={u.label}
-                      className="absolute rounded-full active:scale-95 transition-transform focus:outline-none focus-visible:ring-4 focus-visible:ring-primary-deep/40"
-                      style={{ left: `${hs.cx - hs.r}%`, top: `${hs.cy - hs.r}%`, width: `${hs.r * 2}%`, height: `${hs.r * 2}%` }}
                     />
                   );
                 })}
