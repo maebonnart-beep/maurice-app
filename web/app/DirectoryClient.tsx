@@ -1349,7 +1349,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                   Voir tout ({rows.length}) ›
                 </button>
               </div>
-              <div className="grid grid-cols-2 gap-3 sm:gap-3.5 sm:max-w-[640px]">
+              <div className="grid grid-cols-4 gap-2 sm:gap-3.5 sm:max-w-[640px]">
                 {LIFESTYLE.map((u) => {
                   if ((umbrellaCounts[u.key] || 0) === 0) return null;
                   return (
