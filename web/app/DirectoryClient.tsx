@@ -777,9 +777,10 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
   // On montre des tuiles (univers / niveaux) plutôt que la liste.
   const mobileTiles = showHome;
 
-  // Recherche masquée uniquement sur l'écran menu (4 choix) : la recherche y
-  // est déjà accessible via sa propre tuile, inutile de doubler l'espace.
-  const showHeaderSearch = !(showHome && homeMode === "menu");
+  // Recherche masquée sur tout l'accueil (menu, catégories, navigation en
+  // tuiles) pour gagner de la place ; elle réapparaît une fois sur des
+  // résultats concrets (liste/carte), où affiner par mot-clé est utile.
+  const showHeaderSearch = !showHome;
 
   // Rubriques les plus fournies toutes catégories confondues, pour la section
   // « Sous-catégories populaires » de l'accueil.
@@ -1328,7 +1329,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
             <div className="pb-10 min-h-[calc(100dvh-150px)] flex flex-col justify-center">
               <div className="grid grid-cols-2 gap-4 sm:gap-5 w-full max-w-[660px] mx-auto">
                 <HomeEntry img="/icon-categories.png" title="Par catégorie" subtitle="8 univers" onClick={() => setHomeMode("categories")} />
-                <HomeEntry img="/icon-recherche.png" title="Recherche" subtitle="lieu, nom, activité" onClick={() => { setHomeMode("categories"); setTimeout(focusSearch, 60); }} />
+                <HomeEntry img="/icon-recherche.png" title="Recherche" subtitle="lieu, nom, activité" onClick={() => { setBrowseAll(true); setTimeout(focusSearch, 60); }} />
                 <HomeEntry img="/icon-favoris.png" title="Mes favoris" subtitle="et mes listes" onClick={() => setHomeMode("favoris")} />
                 <HomeEntry img="/icon-listes.png" title="Listes de Koté Moris" subtitle="nos sélections" onClick={() => setHomeMode("listes")} />
               </div>
@@ -1348,7 +1349,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                   Voir tout ({rows.length}) ›
                 </button>
               </div>
-              <div className="grid grid-cols-4 gap-2 sm:gap-3.5 sm:max-w-[640px]">
+              <div className="grid grid-cols-2 gap-3 sm:gap-3.5 sm:max-w-[640px]">
                 {LIFESTYLE.map((u) => {
                   if ((umbrellaCounts[u.key] || 0) === 0) return null;
                   return (
