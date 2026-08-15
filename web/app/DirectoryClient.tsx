@@ -8,8 +8,8 @@ import { CATEGORIES, CATEGORY_MAP, SUBCATEGORIES, FAMILIES, PRICE_RANGES } from 
 import type { Family, Subgroup } from "@/data/categories";
 import { Logo } from "@/components/ui/Logo";
 import { SearchInput } from "@/components/ui/SearchInput";
-import { CategoryTile } from "@/components/ui/CategoryTile";
 import { CategoryRow } from "@/components/ui/CategoryRow";
+import { UniversCard } from "@/components/ui/UniversCard";
 import { BusinessCard } from "@/components/ui/BusinessCard";
 import { BusinessDetail } from "@/components/ui/BusinessDetail";
 import { FilterDropdown, type DropdownOption } from "@/components/ui/FilterDropdown";
@@ -256,6 +256,18 @@ const LIFESTYLE: Umbrella[] = [
 // Clés d'univers réservés aux membres Premium (aperçu flouté + cadenas).
 const PREMIUM_KEYS = new Set(LIFESTYLE.filter((u) => u.premium).map((u) => u.key));
 
+// Sous-titres des cartes univers (accueil), façon rendu de référence.
+const UNIVERS_SUBTITLES: Record<string, string> = {
+  manger: "Restaurants et commerces",
+  sortir: "Activités, loisirs & sorties",
+  bouger: "Sports, randonnées, plages & parcs",
+  shopping: "Mode adulte-enfants, équipement maison, malls…",
+  "sante-bien-etre": "Médecins, hôpitaux, pharmacies, bien-être & sport santé",
+  pratique: "Services, transports, administrations & démarches",
+  evenements: "Festivals, concerts, événements & compétitions sportives",
+  "seconde-main": "Bonnes affaires, occasions & revente locale",
+};
+
 // Accès rapide à un univers par sa clé (menu illustré « Par catégorie »).
 const UMBRELLA_BY_KEY: Record<string, (typeof LIFESTYLE)[number]> = Object.fromEntries(
   LIFESTYLE.map((u) => [u.key, u]),
@@ -273,6 +285,32 @@ const UNIVERS_HOTSPOTS: { key: string; cx: number; cy: number; r: number }[] = [
   { key: "evenements", cx: 35, cy: 83, r: 12 },
   { key: "seconde-main", cx: 66, cy: 84, r: 12 },
 ];
+
+// Tuile d'entrée du menu d'accueil : image + titre + sous-titre.
+function HomeEntry({
+  img,
+  title,
+  subtitle,
+  onClick,
+}: {
+  img: string;
+  title: string;
+  subtitle: string;
+  onClick: () => void;
+}) {
+  return (
+    <button
+      onClick={onClick}
+      className="flex flex-col items-center justify-center gap-3 p-6 min-h-[210px] rounded-tile border border-border text-center shadow-sm active:scale-[.98] transition-transform"
+      style={{ background: "var(--surface-2, #ececef)" }}
+    >
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img src={img} alt="" aria-hidden className="h-[150px] w-auto max-w-full object-contain" />
+      <span className="text-[18px] font-semibold leading-tight text-ink">{title}</span>
+      <span className="text-[13px] text-muted leading-tight">{subtitle}</span>
+    </button>
+  );
+}
 
 // Métadonnées de rubrique (emoji/libellé) par clé, tous univers confondus.
 const RUBRIQUE_MAP: Record<string, { key: string; label: string; emoji: string }> = Object.fromEntries(
@@ -372,7 +410,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
   // Mobile : forcer la liste à plat malgré l'écran d'accueil par catégories.
   const [browseAll, setBrowseAll] = useState(false);
   // Accueil « Option A » : menu d'entrée → puis mode choisi.
-  const [homeMode, setHomeMode] = useState<"menu" | "favoris" | "listes">("menu");
+  const [homeMode, setHomeMode] = useState<"menu" | "categories" | "favoris" | "listes">("menu");
   // Navigation en tuiles à niveaux : pile de nœuds (univers → familles → rubriques →
   // sous-groupes). Vide = grille des univers (accueil).
   const [navStack, setNavStack] = useState<NavNode[]>([]);
@@ -423,6 +461,12 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
     resetRestoFacets();
     setNearMe(false);
     window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
+  // Entrée « Recherche » du menu d'accueil : focalise le champ de recherche du bandeau.
+  function focusSearch() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    (document.querySelector('header input[type="search"]') as HTMLInputElement | null)?.focus();
   }
 
   // Descendre d'un niveau dans la navigation en tuiles.
@@ -1276,10 +1320,28 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
         </aside>
 
         <div className="flex-1 min-w-0 px-4 lg:px-5 py-3 pb-24">
-          {/* Accueil : tout sur une seule page (catégories + sous-catégories
-              populaires), façon rendu de référence — plus d'écran de menu séparé. */}
+          {/* Accueil « Option A » : menu d'entrée à 4 modes. */}
           {showHome && navStack.length === 0 && homeMode === "menu" && (
+            <div className="pb-10 min-h-[calc(100dvh-150px)] flex flex-col justify-center">
+              <div className="grid grid-cols-2 gap-4 sm:gap-5 w-full max-w-[660px] mx-auto">
+                <HomeEntry img="/icon-categories.png" title="Par catégorie" subtitle="8 univers" onClick={() => setHomeMode("categories")} />
+                <HomeEntry img="/icon-recherche.png" title="Recherche" subtitle="lieu, nom, activité" onClick={() => { setHomeMode("categories"); setTimeout(focusSearch, 60); }} />
+                <HomeEntry img="/icon-favoris.png" title="Mes favoris" subtitle="et mes listes" onClick={() => setHomeMode("favoris")} />
+                <HomeEntry img="/icon-listes.png" title="Listes de Koté Moris" subtitle="nos sélections" onClick={() => setHomeMode("listes")} />
+              </div>
+            </div>
+          )}
+
+          {/* Accueil → Par catégorie : catégories + sous-catégories populaires,
+              façon rendu de référence. */}
+          {showHome && navStack.length === 0 && homeMode === "categories" && (
             <div className="pb-16">
+              <button
+                onClick={() => setHomeMode("menu")}
+                className="inline-flex items-center gap-1.5 text-[13px] font-semibold text-primary-deep mb-2.5 active:scale-[.98]"
+              >
+                ← Menu
+              </button>
               <div className="flex items-center justify-between mb-2.5">
                 <h2 className="text-[16px] font-bold text-ink">Explorer par catégorie</h2>
                 <button
@@ -1289,15 +1351,15 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                   Voir tout ({rows.length}) ›
                 </button>
               </div>
-              <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-6 gap-2.5 sm:max-w-[640px]">
+              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3.5 sm:max-w-[640px]">
                 {LIFESTYLE.map((u) => {
                   if ((umbrellaCounts[u.key] || 0) === 0) return null;
                   return (
-                    <CategoryTile
+                    <UniversCard
                       key={u.key}
-                      iconKey={u.key}
-                      emoji={u.emoji}
+                      photoKey={u.key}
                       label={u.label}
+                      subtitle={UNIVERS_SUBTITLES[u.key] ?? ""}
                       locked={PREMIUM_KEYS.has(u.key)}
                       onClick={() => pushNav({ kind: "umbrella", key: u.key, label: u.label, emoji: u.emoji })}
                     />
