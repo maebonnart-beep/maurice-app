@@ -9,6 +9,7 @@ import type { Family, Subgroup } from "@/data/categories";
 import { Logo } from "@/components/ui/Logo";
 import { SearchInput } from "@/components/ui/SearchInput";
 import { CategoryTile } from "@/components/ui/CategoryTile";
+import { CategoryRow } from "@/components/ui/CategoryRow";
 import { BusinessCard } from "@/components/ui/BusinessCard";
 import { BusinessDetail } from "@/components/ui/BusinessDetail";
 import { FilterDropdown, type DropdownOption } from "@/components/ui/FilterDropdown";
@@ -1421,13 +1422,13 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                   <div className="h-2.5" />
                   <div className="relative min-h-[220px]">
                     <div
-                      className={`grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2.5 ${
+                      className={`flex flex-col gap-2 sm:max-w-[560px] sm:mx-auto ${
                         locked ? "blur-[3px] pointer-events-none select-none" : ""
                       }`}
                       aria-hidden={locked || undefined}
                     >
                       {tiles.map((t) => (
-                        <CategoryTile
+                        <CategoryRow
                           key={t.key}
                           iconKey={t.key.startsWith("__all__") ? t.key.slice(7) : t.key}
                           emoji={t.emoji}

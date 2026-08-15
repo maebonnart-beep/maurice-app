@@ -2,14 +2,14 @@
 
 import type { CategoryKey } from "@/lib/types";
 import { CATEGORY_MAP } from "@/data/categories";
-import { iconForKey, thematicIconFor } from "@/lib/icons";
+import { iconForKey } from "@/lib/icons";
 
 /**
- * Tuile de navigation (icône + libellé).
+ * Tuile de navigation « basique » : pastille ronde/carrée avec icône Phosphor
+ * (trait moderne, pas d'illustration), libellé centré en dessous. Volontairement
+ * simple — pas de photo ni d'illustration 3D, pour rester cohérent partout.
  * - `category` fourni → pastille colorée à la couleur de la catégorie.
  * - `emoji`/`label` explicites (sans `category`) → variante neutre (pastille teal claire).
- * L'icône est une icône Phosphor (trait moderne) résolue depuis `iconKey`
- * (sinon la catégorie), avec repli sur l'emoji si aucune icône n'est mappée.
  */
 export function CategoryTile({
   category,
@@ -23,7 +23,7 @@ export function CategoryTile({
   emoji?: string;
   label?: string;
   iconKey?: string;
-  /** Univers Premium : anneau doré + badge cadenas. */
+  /** Univers Premium : badge cadenas sur la pastille. */
   locked?: boolean;
   /** Conservé pour compat des appels ; le nombre n'est plus affiché sur la tuile. */
   count?: number;
@@ -37,53 +37,34 @@ export function CategoryTile({
     : "var(--primary-tint)";
   const iconColor = cat ? cat.color : "var(--primary-deep)";
   const resolvedKey = iconKey ?? category ?? "";
-  const thematic = thematicIconFor(resolvedKey);
   const Icon = iconForKey(resolvedKey);
 
   return (
     <button
       onClick={onClick}
-      className="relative flex flex-col rounded-tile border overflow-hidden text-center shadow-sm active:scale-[.98] transition-transform"
-      style={
-        locked
-          ? { borderColor: "var(--accent)", borderWidth: 2, background: "color-mix(in srgb, var(--accent) 10%, var(--surface))" }
-          : { borderColor: "var(--border)", background: "var(--surface)" }
-      }
+      className="flex flex-col items-center gap-1.5 py-1 active:scale-[.97] transition-transform"
     >
-      {locked && (
-        <span
-          className="absolute top-1.5 right-1.5 z-10 inline-flex items-center gap-0.5 px-1.5 py-0.5 rounded-full text-[9px] font-extrabold text-on-accent"
-          style={{ background: "var(--accent)" }}
-        >
-          🔒 Premium
-        </span>
-      )}
-      {thematic ? (
-        // Illustration thématique : plein cadre, remplit la tuile bord à bord
-        // (pas de cadre blanc autour). Image déjà mise au carré → object-cover
-        // ne rogne pas le sujet.
-        // eslint-disable-next-line @next/next/no-img-element
-        <img src={thematic} alt="" aria-hidden className="w-full aspect-square object-cover" />
-      ) : (
-        <span
-          className="w-full aspect-square flex items-center justify-center"
-          style={{ background: iconBg, color: iconColor }}
-        >
-          {Icon ? (
-            <Icon size={48} weight="duotone" aria-hidden />
-          ) : (
-            <span className="text-[46px] leading-none">{displayEmoji}</span>
-          )}
-        </span>
-      )}
-      {/* Libellé façon liste : teal gras (majuscules) + chevron › accent à droite. */}
-      <span className="flex items-center justify-between gap-1.5 px-2.5 py-2">
-        <span className="text-[12.5px] font-bold uppercase tracking-wide leading-tight text-left text-primary-deep">
-          {displayLabel}
-        </span>
-        <span className="shrink-0 text-[17px] font-bold leading-none" style={{ color: "var(--accent)" }} aria-hidden>
-          ›
-        </span>
+      <span
+        className="relative w-full max-w-[72px] aspect-square rounded-2xl flex items-center justify-center"
+        style={{ background: iconBg, color: iconColor }}
+      >
+        {Icon ? (
+          <Icon size={28} weight="duotone" aria-hidden />
+        ) : (
+          <span className="text-[26px] leading-none">{displayEmoji}</span>
+        )}
+        {locked && (
+          <span
+            className="absolute -top-1 -right-1 w-5 h-5 rounded-full flex items-center justify-center text-[10px] text-on-accent"
+            style={{ background: "var(--accent)" }}
+            aria-label="Premium"
+          >
+            🔒
+          </span>
+        )}
+      </span>
+      <span className="text-[12px] font-bold leading-tight text-center text-primary-deep">
+        {displayLabel}
       </span>
     </button>
   );
