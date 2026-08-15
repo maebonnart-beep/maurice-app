@@ -14,7 +14,7 @@ import { BusinessCard } from "@/components/ui/BusinessCard";
 import { BusinessDetail } from "@/components/ui/BusinessDetail";
 import { FilterDropdown, type DropdownOption } from "@/components/ui/FilterDropdown";
 import { iconForKey, MapPin } from "@/lib/icons";
-import { Heart, Star, ArrowLeft } from "@phosphor-icons/react";
+import { Heart, Star, ArrowLeft, House, Compass, UserCircle, Plus } from "@phosphor-icons/react";
 
 // Attributs d'ambiance propres aux restaurants (facette « Ambiance »).
 const RESTO_ATTRS = ["tables-exception", "plus-belles-vues", "frequente-locaux", "kids-friendly"];
@@ -435,7 +435,9 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
   // Mobile : forcer la liste à plat malgré l'écran d'accueil par catégories.
   const [browseAll, setBrowseAll] = useState(false);
   // Accueil « Option A » : menu d'entrée → puis mode choisi.
-  const [homeMode, setHomeMode] = useState<"menu" | "categories" | "favoris" | "listes">("menu");
+  const [homeMode, setHomeMode] = useState<
+    "menu" | "categories" | "favoris" | "listes" | "profil" | "ajouter"
+  >("menu");
   // Navigation en tuiles à niveaux : pile de nœuds (univers → familles → rubriques →
   // sous-groupes). Vide = grille des univers (accueil).
   const [navStack, setNavStack] = useState<NavNode[]>([]);
@@ -1162,8 +1164,8 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
   const zoneBar = (
     <nav
       aria-label="Retour, autour de moi et région"
-      className="fixed bottom-0 inset-x-0 z-40 bg-band border-t border-band-deep shadow-[0_-2px_10px_rgba(0,0,0,0.12)]"
-      style={{ paddingBottom: "env(safe-area-inset-bottom)" }}
+      className="fixed inset-x-0 z-40 bg-band border-t border-band-deep shadow-[0_-2px_10px_rgba(0,0,0,0.12)]"
+      style={{ bottom: "calc(60px + env(safe-area-inset-bottom))" }}
     >
       <div className="max-w-[640px] mx-auto flex items-stretch gap-1 px-1.5 py-1.5">
         <button
@@ -1239,6 +1241,102 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
             </div>
           )}
         </div>
+      </div>
+    </nav>
+  );
+
+  // Barre de navigation principale (5 onglets) fixée tout en bas de l'écran :
+  // Accueil / Favoris / Ajouter (bouton central relevé) / Explorer / Profil.
+  const activeTab: "accueil" | "favoris" | "explorer" | "profil" | "autre" = homeMode === "favoris"
+    ? "favoris"
+    : homeMode === "profil"
+      ? "profil"
+      : showHome && navStack.length === 0 && homeMode === "menu"
+        ? "accueil"
+        : browseAll || navStack.length > 0 || homeMode === "categories"
+          ? "explorer"
+          : "autre";
+  const tabBar = (
+    <nav
+      aria-label="Navigation principale"
+      className="fixed bottom-0 inset-x-0 z-40 bg-band border-t border-band-deep"
+      style={{ paddingBottom: "env(safe-area-inset-bottom)" }}
+    >
+      <div className="max-w-[640px] mx-auto grid grid-cols-5 items-end px-2 pt-1.5 pb-1.5">
+        <button
+          onClick={goHome}
+          aria-label="Accueil"
+          aria-pressed={activeTab === "accueil"}
+          className={`flex flex-col items-center gap-0.5 py-1 rounded-xl transition-colors active:scale-[.97] ${
+            activeTab === "accueil" ? "text-on-band" : "text-on-band/60"
+          }`}
+        >
+          <House size={22} weight={activeTab === "accueil" ? "fill" : "regular"} aria-hidden />
+          <span className="text-[10.5px] font-semibold leading-none">Accueil</span>
+        </button>
+        <button
+          onClick={() => {
+            setBrowseAll(false);
+            setNavStack([]);
+            setHomeMode("favoris");
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          }}
+          aria-label="Favoris"
+          aria-pressed={activeTab === "favoris"}
+          className={`flex flex-col items-center gap-0.5 py-1 rounded-xl transition-colors active:scale-[.97] ${
+            activeTab === "favoris" ? "text-on-band" : "text-on-band/60"
+          }`}
+        >
+          <Heart size={22} weight={activeTab === "favoris" ? "fill" : "regular"} aria-hidden />
+          <span className="text-[10.5px] font-semibold leading-none">Favoris</span>
+        </button>
+        <div className="flex flex-col items-center">
+          <button
+            onClick={() => {
+              setBrowseAll(false);
+              setNavStack([]);
+              setHomeMode("ajouter");
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
+            aria-label="Ajouter une adresse"
+            className="w-11 h-11 -mt-5 rounded-full flex items-center justify-center text-on-band shadow-[0_2px_8px_rgba(0,0,0,0.25)] border-[3px] border-band active:scale-[.97] transition-transform"
+            style={{ background: "var(--band-deep)" }}
+          >
+            <Plus size={22} weight="bold" aria-hidden />
+          </button>
+        </div>
+        <button
+          onClick={() => {
+            setHomeMode("menu");
+            setNavStack([]);
+            setBrowseAll(true);
+            setTimeout(focusSearch, 60);
+          }}
+          aria-label="Explorer"
+          aria-pressed={activeTab === "explorer"}
+          className={`flex flex-col items-center gap-0.5 py-1 rounded-xl transition-colors active:scale-[.97] ${
+            activeTab === "explorer" ? "text-on-band" : "text-on-band/60"
+          }`}
+        >
+          <Compass size={22} weight={activeTab === "explorer" ? "fill" : "regular"} aria-hidden />
+          <span className="text-[10.5px] font-semibold leading-none">Explorer</span>
+        </button>
+        <button
+          onClick={() => {
+            setBrowseAll(false);
+            setNavStack([]);
+            setHomeMode("profil");
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          }}
+          aria-label="Profil"
+          aria-pressed={activeTab === "profil"}
+          className={`flex flex-col items-center gap-0.5 py-1 rounded-xl transition-colors active:scale-[.97] ${
+            activeTab === "profil" ? "text-on-band" : "text-on-band/60"
+          }`}
+        >
+          <UserCircle size={22} weight={activeTab === "profil" ? "fill" : "regular"} aria-hidden />
+          <span className="text-[10.5px] font-semibold leading-none">Profil</span>
+        </button>
       </div>
     </nav>
   );
@@ -1362,7 +1460,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
           {sidebarContent}
         </aside>
 
-        <div className="flex-1 min-w-0 px-4 lg:px-5 py-3 pb-24">
+        <div className="flex-1 min-w-0 px-4 lg:px-5 py-3 pb-40">
           {/* Accueil « Option A » : menu d'entrée à 4 modes. */}
           {showHome && navStack.length === 0 && homeMode === "menu" && (
             <div className="pb-10 min-h-[calc(100dvh-150px)] flex flex-col justify-center">
@@ -1446,30 +1544,39 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
             </div>
           )}
 
-          {/* Accueil → Mes favoris / Listes Koté Moris : écran placeholder « bientôt ». */}
-          {showHome && navStack.length === 0 && (homeMode === "favoris" || homeMode === "listes") && (
-            <div className="pb-16">
-              <div className="mt-6 max-w-[420px] mx-auto text-center bg-surface border border-border rounded-2xl shadow-sm p-7 flex flex-col items-center gap-3">
-                <span className="w-14 h-14 rounded-2xl bg-primary-tint text-primary-deep flex items-center justify-center">
-                  {homeMode === "favoris" ? <Heart size={28} weight="duotone" aria-hidden /> : <Star size={28} weight="duotone" aria-hidden />}
-                </span>
-                <p className="font-serif text-lg font-semibold leading-tight">
-                  {homeMode === "favoris" ? "Mes favoris & mes listes" : "Les listes de Koté Moris"}
-                </p>
-                <p className="text-[13px] text-muted leading-snug">
-                  {homeMode === "favoris"
-                    ? "Enregistrez vos adresses préférées et créez vos propres listes."
-                    : "Nos sélections d'adresses par thématique, à découvrir très bientôt."}
-                </p>
-                <span
-                  className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[12px] font-bold text-on-accent"
-                  style={{ background: "var(--accent)" }}
-                >
-                  ✨ Bientôt disponible
-                </span>
+          {/* Accueil → Mes favoris / Listes Koté Moris / Profil / Ajouter : écrans placeholder « bientôt ». */}
+          {showHome &&
+            navStack.length === 0 &&
+            (homeMode === "favoris" || homeMode === "listes" || homeMode === "profil" || homeMode === "ajouter") && (
+              <div className="pb-16">
+                <div className="mt-6 max-w-[420px] mx-auto text-center bg-surface border border-border rounded-2xl shadow-sm p-7 flex flex-col items-center gap-3">
+                  <span className="w-14 h-14 rounded-2xl bg-primary-tint text-primary-deep flex items-center justify-center">
+                    {homeMode === "favoris" && <Heart size={28} weight="duotone" aria-hidden />}
+                    {homeMode === "listes" && <Star size={28} weight="duotone" aria-hidden />}
+                    {homeMode === "profil" && <UserCircle size={28} weight="duotone" aria-hidden />}
+                    {homeMode === "ajouter" && <Plus size={28} weight="bold" aria-hidden />}
+                  </span>
+                  <p className="font-serif text-lg font-semibold leading-tight">
+                    {homeMode === "favoris" && "Mes favoris & mes listes"}
+                    {homeMode === "listes" && "Les listes de Koté Moris"}
+                    {homeMode === "profil" && "Mon profil"}
+                    {homeMode === "ajouter" && "Ajouter une adresse"}
+                  </p>
+                  <p className="text-[13px] text-muted leading-snug">
+                    {homeMode === "favoris" && "Enregistrez vos adresses préférées et créez vos propres listes."}
+                    {homeMode === "listes" && "Nos sélections d'adresses par thématique, à découvrir très bientôt."}
+                    {homeMode === "profil" && "Votre compte, vos préférences et votre historique, bientôt ici."}
+                    {homeMode === "ajouter" && "Suggérez une adresse à ajouter à l'annuaire Koté Moris."}
+                  </p>
+                  <span
+                    className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[12px] font-bold text-on-accent"
+                    style={{ background: "var(--accent)" }}
+                  >
+                    ✨ Bientôt disponible
+                  </span>
+                </div>
               </div>
-            </div>
-          )}
+            )}
 
           {/* Niveau de navigation en tuiles (familles / rubriques / spécialités) */}
           {showHome &&
@@ -1675,8 +1782,10 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
         />
       )}
 
-      {/* Barre boussole (régions) fixée en bas d'écran. */}
+      {/* Barre boussole (régions) fixée en bas d'écran, au-dessus de la barre d'onglets. */}
       {zoneBar}
+      {/* Barre de navigation principale (5 onglets), tout en bas de l'écran. */}
+      {tabBar}
     </div>
   );
 }
