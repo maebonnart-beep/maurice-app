@@ -4,6 +4,19 @@
  * couleurs de la marque ; sur le bandeau teal, le wordmark passe en clair + accent.
  */
 export function Logo({ size = 96, light = false }: { size?: number; light?: boolean }) {
+  if (light) {
+    // Sur le bandeau teal : lockup unique fourni par la cliente (poulpe +
+    // wordmark + fleur), détouré en blanc/turquoise sur fond transparent.
+    return (
+      // eslint-disable-next-line @next/next/no-img-element
+      <img
+        src="/logo-kotemoris-lockup.png"
+        alt="Koté Moris — les adresses de Maurice"
+        className="shrink-0 object-contain drop-shadow-sm"
+        style={{ height: size * 1.15 }}
+      />
+    );
+  }
   return (
     // Lockup horizontal : poulpe (petit) à gauche + bloc texte à droite. Compact
     // en hauteur pour un bandeau fin, tout en gardant un wordmark généreux.

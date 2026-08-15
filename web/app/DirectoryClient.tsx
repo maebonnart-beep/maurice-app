@@ -13,7 +13,7 @@ import { BusinessCard } from "@/components/ui/BusinessCard";
 import { BusinessDetail } from "@/components/ui/BusinessDetail";
 import { FilterDropdown, type DropdownOption } from "@/components/ui/FilterDropdown";
 import { iconForKey, MapPin } from "@/lib/icons";
-import { MagnifyingGlass, Heart, Star } from "@phosphor-icons/react";
+import { MagnifyingGlass, Heart, Star, ArrowLeft } from "@phosphor-icons/react";
 import type { Icon as PhosphorIcon } from "@phosphor-icons/react";
 
 // Attributs d'ambiance propres aux restaurants (facette « Ambiance »).
@@ -487,11 +487,16 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
     // page de résultats ramène ainsi à la grille de tuiles du bon niveau.
   }
 
-  // Bouton « Retour » de la page de résultats : revient d'un cran (rubrique →
-  // tuiles → accueil) au lieu de tout réinitialiser.
+  // Bouton « Retour » unifié : revient d'un cran (résultats → tuiles →
+  // sous-menu d'accueil → menu) au lieu de tout réinitialiser. Utilisé par la
+  // barre de résultats, la navigation en tuiles et la barre boussole du bas.
   function goBackFromResults() {
     if (activeThemes.size > 0) {
       setActiveThemes(new Set()); // retour aux tuiles du niveau courant
+      return;
+    }
+    if (navStack.length > 0) {
+      setNavStack((prev) => prev.slice(0, -1)); // remonte d'un cran dans les tuiles
       return;
     }
     if (browseAll) {
@@ -500,7 +505,10 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
     }
     if (active !== "all") {
       setActive("all");
-      setNavStack([]);
+      return;
+    }
+    if (homeMode !== "menu") {
+      setHomeMode("menu");
       return;
     }
     goHome();
@@ -1066,27 +1074,60 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
     </>
   );
 
-  // Barre boussole (régions) fixée en bas d'écran : « Toute l'île » + points
-  // cardinaux. Sortie du bandeau (qui débordait avec le logo élargi).
+  // Barre boussole (régions) fixée en bas d'écran : retour + « Autour de moi »
+  // + « Toute l'île » + points cardinaux. Le retour et la géoloc rejoignent
+  // ainsi la navigation par zone dans un seul bandeau accessible au pouce.
+  const canGoBack =
+    navStack.length > 0 || activeThemes.size > 0 || browseAll || active !== "all" || homeMode !== "menu";
   const zoneItems = [
     { key: "", label: "Toute", icon: "toute-lile" },
     ...ZONES.map((z) => ({ key: z.key, label: z.label, icon: z.key })),
   ];
   const zoneBar = (
     <nav
-      aria-label="Région"
+      aria-label="Retour, autour de moi et région"
       className="fixed bottom-0 inset-x-0 z-40 bg-band border-t border-band-deep shadow-[0_-2px_10px_rgba(0,0,0,0.12)]"
       style={{ paddingBottom: "env(safe-area-inset-bottom)" }}
     >
-      <div className="max-w-[560px] mx-auto flex items-stretch justify-around gap-1 px-1.5 py-1.5">
+      <div className="max-w-[640px] mx-auto flex items-stretch gap-1 px-1.5 py-1.5 overflow-x-auto">
+        <button
+          onClick={goBackFromResults}
+          disabled={!canGoBack}
+          aria-label="Retour"
+          title="Retour"
+          className={`flex flex-1 min-w-0 flex-col items-center gap-0.5 rounded-xl px-1 py-1 transition-colors ${
+            canGoBack ? "text-on-band/70 active:scale-[.97]" : "text-on-band/30"
+          }`}
+        >
+          <ArrowLeft size={21} weight="bold" aria-hidden />
+          <span className="text-[10.5px] font-semibold leading-none">Retour</span>
+        </button>
+        <button
+          onClick={toggleNearMe}
+          aria-pressed={nearMe}
+          title="Autour de moi"
+          className={`flex flex-1 min-w-0 flex-col items-center gap-0.5 rounded-xl px-1 py-1 transition-colors ${
+            nearMe ? "text-on-band" : "text-on-band/70"
+          }`}
+          style={nearMe ? { background: "rgba(255,255,255,0.18)" } : undefined}
+        >
+          <MapPin size={21} weight={nearMe ? "fill" : "regular"} aria-hidden />
+          <span className="text-[10.5px] font-semibold leading-none">
+            {geoStatus === "loading" ? "Localisation…" : "Autour"}
+          </span>
+        </button>
+        <span className="w-px my-1 bg-on-band/20 shrink-0" aria-hidden />
         {zoneItems.map((z) => {
-          const active = (activeZone ?? "") === z.key;
+          const active = !nearMe && (activeZone ?? "") === z.key;
           const I = iconForKey(z.icon);
           const n = z.key ? zoneCounts[z.key] || 0 : rows.length;
           return (
             <button
               key={z.key || "all"}
-              onClick={() => setActiveZone(z.key || null)}
+              onClick={() => {
+                setNearMe(false);
+                setActiveZone(z.key || null);
+              }}
               aria-pressed={active}
               title={`${z.label === "Toute" ? "Toute l'île" : z.label} (${n})`}
               className={`flex flex-1 min-w-0 flex-col items-center gap-0.5 rounded-xl px-1 py-1 transition-colors ${
