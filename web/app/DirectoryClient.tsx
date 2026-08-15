@@ -326,11 +326,11 @@ function HomeEntry({
   return (
     <button
       onClick={onClick}
-      className="flex flex-col items-center justify-center gap-3 p-6 min-h-[210px] rounded-tile border border-border text-center shadow-sm active:scale-[.98] transition-transform"
+      className="flex flex-col items-center justify-center gap-3 p-4 h-full rounded-tile border border-border text-center shadow-sm active:scale-[.98] transition-transform"
       style={{ background: "var(--surface-2, #ececef)" }}
     >
       {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img src={img} alt="" aria-hidden className="h-[150px] w-auto max-w-full object-contain" />
+      <img src={img} alt="" aria-hidden className="h-[24vh] max-h-[210px] min-h-[100px] w-auto max-w-full object-contain" />
       <span className="text-[18px] font-semibold leading-tight text-ink">{title}</span>
       <span className="text-[13px] text-muted leading-tight">{subtitle}</span>
     </button>
@@ -536,8 +536,10 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
   }
 
   // Bouton « Retour » unifié : revient d'un cran (résultats → tuiles →
-  // sous-menu d'accueil → menu) au lieu de tout réinitialiser. Utilisé par la
-  // barre de résultats, la navigation en tuiles et la barre boussole du bas.
+  // sous-menu d'accueil → menu) au lieu de tout réinitialiser. Utilisé par
+  // les bandeaux sticky de la navigation en tuiles et de la liste de résultats.
+  const canGoBack =
+    navStack.length > 0 || activeThemes.size > 0 || browseAll || active !== "all" || homeMode !== "menu";
   function goBackFromResults() {
     if (activeThemes.size > 0) {
       setActiveThemes(new Set()); // retour aux tuiles du niveau courant
@@ -1152,97 +1154,73 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
     </>
   );
 
-  // Barre boussole (régions) fixée en bas d'écran : retour + « Autour de moi »
-  // + « Toute l'île » + points cardinaux. Le retour et la géoloc rejoignent
-  // ainsi la navigation par zone dans un seul bandeau accessible au pouce.
-  const canGoBack =
-    navStack.length > 0 || activeThemes.size > 0 || browseAll || active !== "all" || homeMode !== "menu";
+  // « Autour de moi » + sélecteur de zone : intégrés dans la barre de
+  // résultats de l'écran Explorer (plus de bandeau flottant dédié — le retour
+  // se fait via l'onglet Accueil / le logo, et la navigation en tuiles garde
+  // ses propres tuiles cliquables).
   const zoneItems = [
     { key: "", label: "Toute", icon: "toute-lile" },
     ...ZONES.map((z) => ({ key: z.key, label: z.label, icon: z.key })),
   ];
-  const zoneBar = (
-    <nav
-      aria-label="Retour, autour de moi et région"
-      className="fixed inset-x-0 z-40 bg-band border-t border-band-deep shadow-[0_-2px_10px_rgba(0,0,0,0.12)]"
-      style={{ bottom: "calc(60px + env(safe-area-inset-bottom))" }}
-    >
-      <div className="max-w-[640px] mx-auto flex items-stretch gap-1 px-1.5 py-1.5">
+  const zoneControls = (
+    <div className="flex items-stretch gap-1.5">
+      <button
+        onClick={toggleNearMe}
+        aria-pressed={nearMe}
+        title="Autour de moi"
+        className={`flex items-center gap-1 rounded-full px-2.5 py-1 text-[12.5px] font-semibold shrink-0 transition-colors ${
+          nearMe ? "bg-primary text-white" : "bg-surface-2 text-ink"
+        }`}
+      >
+        <MapPin size={14} weight={nearMe ? "fill" : "regular"} aria-hidden />
+        {geoStatus === "loading" ? "Localisation…" : "Autour de moi"}
+      </button>
+      <div ref={zonePickerRef} className="relative min-w-0">
         <button
-          onClick={goBackFromResults}
-          disabled={!canGoBack}
-          aria-label="Retour"
-          title="Retour"
-          className={`flex flex-1 min-w-0 flex-col items-center gap-0.5 rounded-xl px-1 py-1 transition-colors ${
-            canGoBack ? "text-on-band/70 active:scale-[.97]" : "text-on-band/30"
+          onClick={() => setZonePickerOpen((o) => !o)}
+          aria-expanded={zonePickerOpen}
+          className={`flex items-center gap-1 rounded-full px-2.5 py-1 text-[12.5px] font-semibold min-w-0 transition-colors ${
+            !nearMe && activeZone ? "bg-primary text-white" : "bg-surface-2 text-ink"
           }`}
         >
-          <ArrowLeft size={21} weight="bold" aria-hidden />
-          <span className="text-[10.5px] font-semibold leading-none">Retour</span>
-        </button>
-        <button
-          onClick={toggleNearMe}
-          aria-pressed={nearMe}
-          title="Autour de moi"
-          className={`flex flex-1 min-w-0 flex-col items-center gap-0.5 rounded-xl px-1 py-1 transition-colors ${
-            nearMe ? "text-on-band" : "text-on-band/70"
-          }`}
-          style={nearMe ? { background: "rgba(255,255,255,0.18)" } : undefined}
-        >
-          <MapPin size={21} weight={nearMe ? "fill" : "regular"} aria-hidden />
-          <span className="text-[10.5px] font-semibold leading-none">
-            {geoStatus === "loading" ? "Localisation…" : "Autour"}
+          {(() => {
+            const I = iconForKey(!nearMe && activeZone ? activeZone : "toute-lile");
+            return I ? <I size={14} weight={!nearMe && activeZone ? "fill" : "regular"} aria-hidden /> : null;
+          })()}
+          <span className="truncate max-w-[130px]">
+            {!nearMe && activeZone ? ZONES.find((z) => z.key === activeZone)?.label : "Toute l'île"}
           </span>
         </button>
-        <span className="w-px my-1 bg-on-band/20 shrink-0" aria-hidden />
-        <div ref={zonePickerRef} className="relative flex-[2] min-w-0">
-          <button
-            onClick={() => setZonePickerOpen((o) => !o)}
-            aria-expanded={zonePickerOpen}
-            className={`flex w-full h-full min-w-0 flex-col items-center justify-center gap-0.5 rounded-xl px-1 py-1 transition-colors ${
-              !nearMe && activeZone ? "text-on-band" : "text-on-band/70"
-            }`}
-            style={!nearMe && activeZone ? { background: "rgba(255,255,255,0.18)" } : undefined}
-          >
-            {(() => {
-              const I = iconForKey(!nearMe && activeZone ? activeZone : "toute-lile");
-              return I ? <I size={21} weight={!nearMe && activeZone ? "fill" : "regular"} aria-hidden /> : null;
-            })()}
-            <span className="text-[10.5px] font-semibold leading-none truncate max-w-full">
-              {!nearMe && activeZone ? ZONES.find((z) => z.key === activeZone)?.label : "Sélectionnez une zone"}
-            </span>
-          </button>
-          {zonePickerOpen && (
-            <div className="absolute z-30 bottom-full mb-2 left-1/2 -translate-x-1/2 w-[220px] max-h-[320px] overflow-y-auto rounded-card border border-border bg-surface shadow-pop p-1.5">
-              {zoneItems.map((z) => {
-                const active = !nearMe && (activeZone ?? "") === z.key;
-                const I = iconForKey(z.icon);
-                const n = z.key ? zoneCounts[z.key] || 0 : rows.length;
-                return (
-                  <button
-                    key={z.key || "all"}
-                    onClick={() => {
-                      setNearMe(false);
-                      setActiveZone(z.key || null);
-                      setZonePickerOpen(false);
-                      if (showHome) setBrowseAll(true);
-                    }}
-                    aria-pressed={active}
-                    className={`w-full flex items-center gap-2 px-2 py-1.5 rounded-lg text-[13px] text-left transition-colors ${
-                      active ? "bg-primary-tint text-primary-deep font-semibold" : "text-ink hover:bg-surface-2"
-                    }`}
-                  >
-                    {I ? <I size={16} weight={active ? "fill" : "regular"} aria-hidden /> : null}
-                    <span className="flex-1 truncate">{z.label === "Toute" ? "Toute l'île" : z.label}</span>
-                    <span className="text-[11px] font-bold opacity-55 shrink-0">{n}</span>
-                  </button>
-                );
-              })}
-            </div>
-          )}
-        </div>
+        {zonePickerOpen && (
+          <div className="absolute z-30 top-full mt-2 left-0 w-[220px] max-h-[320px] overflow-y-auto rounded-card border border-border bg-surface shadow-pop p-1.5">
+            {zoneItems.map((z) => {
+              const active = !nearMe && (activeZone ?? "") === z.key;
+              const I = iconForKey(z.icon);
+              const n = z.key ? zoneCounts[z.key] || 0 : rows.length;
+              return (
+                <button
+                  key={z.key || "all"}
+                  onClick={() => {
+                    setNearMe(false);
+                    setActiveZone(z.key || null);
+                    setZonePickerOpen(false);
+                    if (showHome) setBrowseAll(true);
+                  }}
+                  aria-pressed={active}
+                  className={`w-full flex items-center gap-2 px-2 py-1.5 rounded-lg text-[13px] text-left transition-colors ${
+                    active ? "bg-primary-tint text-primary-deep font-semibold" : "text-ink hover:bg-surface-2"
+                  }`}
+                >
+                  {I ? <I size={16} weight={active ? "fill" : "regular"} aria-hidden /> : null}
+                  <span className="flex-1 truncate">{z.label === "Toute" ? "Toute l'île" : z.label}</span>
+                  <span className="text-[11px] font-bold opacity-55 shrink-0">{n}</span>
+                </button>
+              );
+            })}
+          </div>
+        )}
       </div>
-    </nav>
+    </div>
   );
 
   // Barre de navigation principale (5 onglets) fixée tout en bas de l'écran :
@@ -1460,11 +1438,19 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
           {sidebarContent}
         </aside>
 
-        <div className="flex-1 min-w-0 px-4 lg:px-5 py-3 pb-40">
-          {/* Accueil « Option A » : menu d'entrée à 4 modes. */}
+        <div
+          className={`flex-1 min-w-0 px-4 lg:px-5 ${
+            showHome && navStack.length === 0 && homeMode === "menu"
+              ? "py-3 overflow-hidden"
+              : "py-3 pb-24"
+          }`}
+        >
+          {/* Accueil « Option A » : menu d'entrée à 4 modes, figé sans scroll —
+              les 4 tuiles remplissent tout l'espace disponible sous le bandeau
+              et au-dessus de la barre d'onglets. */}
           {showHome && navStack.length === 0 && homeMode === "menu" && (
-            <div className="pb-10 min-h-[calc(100dvh-150px)] flex flex-col justify-center">
-              <div className="grid grid-cols-2 gap-4 sm:gap-5 w-full max-w-[660px] mx-auto">
+            <div className="h-[calc(100dvh-150px)] flex flex-col justify-center overflow-hidden">
+              <div className="grid grid-cols-2 grid-rows-2 gap-4 sm:gap-5 w-full h-full max-w-[660px] max-h-[560px] mx-auto">
                 <HomeEntry img="/icon-categories.png" title="Par catégorie" subtitle="8 univers" onClick={() => setHomeMode("categories")} />
                 <HomeEntry img="/icon-recherche.png" title="Recherche" subtitle="lieu, nom, activité" onClick={() => { setBrowseAll(true); setTimeout(focusSearch, 60); }} />
                 <HomeEntry img="/icon-favoris.png" title="Mes favoris" subtitle="et mes listes" onClick={() => setHomeMode("favoris")} />
@@ -1588,9 +1574,15 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
               const locked = !!lockedNode;
               return (
                 <div className="pb-16">
-                  {/* Repère de niveau figé sous le bandeau : icône + fil d'ariane (la
-                      navigation « retour » se fait depuis le bandeau du bas). */}
+                  {/* Repère de niveau figé sous le bandeau : retour + icône + fil d'ariane. */}
                   <div className="sticky top-[94px] z-20 -mx-4 lg:-mx-5 px-4 lg:px-5 py-2 flex items-center gap-2 border-b border-border" style={{ background: "var(--bg)" }}>
+                    <button
+                      onClick={goBackFromResults}
+                      aria-label="Retour"
+                      className="shrink-0 w-7 h-7 -ml-1 rounded-full flex items-center justify-center text-ink active:scale-[.95] transition-transform"
+                    >
+                      <ArrowLeft size={17} weight="bold" aria-hidden />
+                    </button>
                     {(() => {
                       const last = navStack[navStack.length - 1];
                       const I = iconForKey(last.key);
@@ -1652,44 +1644,54 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
               );
             })()}
 
-          {/* Barre de résultats : repère (icône + catégorie + total) — la
-              navigation (retour, liste/carte, autour de moi) vit dans le
-              bandeau du bas pour éviter les doublons. */}
-          <div className={`sticky top-[94px] z-20 -mx-4 lg:-mx-5 px-4 lg:px-5 items-center gap-2 py-2 border-b border-border mb-3 ${mobileTiles ? "hidden" : "flex"}`} style={{ background: "var(--bg)" }}>
-            {(() => {
-              const I = iconForKey(breadcrumb.key);
-              return I ? (
-                <span className="shrink-0 w-7 h-7 rounded-full bg-primary-tint text-primary-deep flex items-center justify-center">
-                  <I size={15} weight="bold" aria-hidden />
-                </span>
-              ) : (
-                <span className="shrink-0 text-[17px]">{breadcrumb.emoji}</span>
-              );
-            })()}
-            <span className="text-[15px] font-semibold truncate">{breadcrumb.label}</span>
-            <span className="text-[13px] text-muted shrink-0">
-              — {visibleRows.length} résultat{visibleRows.length > 1 ? "s" : ""}
-            </span>
-            {/* Liste / Carte : bascule d'affichage (pas dans le bandeau du bas,
-                qui est dédié à la navigation retour / zone / autour de moi). */}
-            <div className="ml-auto inline-flex rounded-full border border-border overflow-hidden shrink-0">
+          {/* Barre de résultats : retour + repère (icône + catégorie + total)
+              + liste/carte, puis « Autour de moi » / zone sur une 2e ligne. */}
+          <div className={`sticky top-[94px] z-20 -mx-4 lg:-mx-5 px-4 lg:px-5 flex-col gap-2 py-2 border-b border-border mb-3 ${mobileTiles ? "hidden" : "flex"}`} style={{ background: "var(--bg)" }}>
+            <div className="flex items-center gap-2">
               <button
-                onClick={() => { setNearMe(false); setResultsView("liste"); }}
-                className={`px-3 py-1.5 text-[13px] font-semibold ${
-                  !nearMe && resultsView === "liste" ? "bg-primary text-white" : "bg-surface text-ink"
+                onClick={goBackFromResults}
+                disabled={!canGoBack}
+                aria-label="Retour"
+                className={`shrink-0 w-7 h-7 -ml-1 rounded-full flex items-center justify-center active:scale-[.95] transition-transform ${
+                  canGoBack ? "text-ink" : "text-muted/40"
                 }`}
               >
-                Liste
+                <ArrowLeft size={17} weight="bold" aria-hidden />
               </button>
-              <button
-                onClick={() => { setNearMe(false); setResultsView("carte"); }}
-                className={`px-3 py-1.5 text-[13px] font-semibold ${
-                  !nearMe && resultsView === "carte" ? "bg-primary text-white" : "bg-surface text-ink"
-                }`}
-              >
-                Carte
-              </button>
+              {(() => {
+                const I = iconForKey(breadcrumb.key);
+                return I ? (
+                  <span className="shrink-0 w-7 h-7 rounded-full bg-primary-tint text-primary-deep flex items-center justify-center">
+                    <I size={15} weight="bold" aria-hidden />
+                  </span>
+                ) : (
+                  <span className="shrink-0 text-[17px]">{breadcrumb.emoji}</span>
+                );
+              })()}
+              <span className="text-[15px] font-semibold truncate">{breadcrumb.label}</span>
+              <span className="text-[13px] text-muted shrink-0">
+                — {visibleRows.length} résultat{visibleRows.length > 1 ? "s" : ""}
+              </span>
+              <div className="ml-auto inline-flex rounded-full border border-border overflow-hidden shrink-0">
+                <button
+                  onClick={() => { setNearMe(false); setResultsView("liste"); }}
+                  className={`px-3 py-1.5 text-[13px] font-semibold ${
+                    !nearMe && resultsView === "liste" ? "bg-primary text-white" : "bg-surface text-ink"
+                  }`}
+                >
+                  Liste
+                </button>
+                <button
+                  onClick={() => { setNearMe(false); setResultsView("carte"); }}
+                  className={`px-3 py-1.5 text-[13px] font-semibold ${
+                    !nearMe && resultsView === "carte" ? "bg-primary text-white" : "bg-surface text-ink"
+                  }`}
+                >
+                  Carte
+                </button>
+              </div>
             </div>
+            {zoneControls}
           </div>
 
           {geoStatus === "denied" && nearMe === false && (
@@ -1782,8 +1784,6 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
         />
       )}
 
-      {/* Barre boussole (régions) fixée en bas d'écran, au-dessus de la barre d'onglets. */}
-      {zoneBar}
       {/* Barre de navigation principale (5 onglets), tout en bas de l'écran. */}
       {tabBar}
     </div>
