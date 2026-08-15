@@ -777,9 +777,9 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
   // On montre des tuiles (univers / niveaux) plutôt que la liste.
   const mobileTiles = showHome;
 
-  // Recherche toujours visible dans le bandeau (accueil compris), comme sur le
-  // rendu de référence.
-  const showHeaderSearch = true;
+  // Recherche masquée uniquement sur l'écran menu (4 choix) : la recherche y
+  // est déjà accessible via sa propre tuile, inutile de doubler l'espace.
+  const showHeaderSearch = !(showHome && homeMode === "menu");
 
   // Rubriques les plus fournies toutes catégories confondues, pour la section
   // « Sous-catégories populaires » de l'accueil.
@@ -1339,12 +1339,6 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
               façon rendu de référence. */}
           {showHome && navStack.length === 0 && homeMode === "categories" && (
             <div className="pb-16">
-              <button
-                onClick={() => setHomeMode("menu")}
-                className="inline-flex items-center gap-1.5 text-[13px] font-semibold text-primary-deep mb-2.5 active:scale-[.98]"
-              >
-                ← Menu
-              </button>
               <div className="flex items-center justify-between mb-2.5">
                 <h2 className="text-[16px] font-bold text-ink">Explorer par catégorie</h2>
                 <button
@@ -1408,12 +1402,6 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
           {/* Accueil → Mes favoris / Listes Koté Moris : écran placeholder « bientôt ». */}
           {showHome && navStack.length === 0 && (homeMode === "favoris" || homeMode === "listes") && (
             <div className="pb-16">
-              <button
-                onClick={() => setHomeMode("menu")}
-                className="inline-flex items-center gap-1.5 text-[13px] font-semibold text-primary-deep mb-2.5 active:scale-[.98]"
-              >
-                ← Menu
-              </button>
               <div className="mt-6 max-w-[420px] mx-auto text-center bg-surface border border-border rounded-2xl shadow-sm p-7 flex flex-col items-center gap-3">
                 <span className="w-14 h-14 rounded-2xl bg-primary-tint text-primary-deep flex items-center justify-center">
                   {homeMode === "favoris" ? <Heart size={28} weight="duotone" aria-hidden /> : <Star size={28} weight="duotone" aria-hidden />}
@@ -1445,14 +1433,20 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
               const locked = PREMIUM_KEYS.has(navStack[0].key);
               return (
                 <div className="pb-16">
-                  {/* Barre retour figée sous le bandeau : reste visible au scroll. */}
-                  <div className="sticky top-[94px] z-20 -mx-4 lg:-mx-5 px-4 lg:px-5 py-2 flex items-center gap-2.5 border-b border-border" style={{ background: "var(--bg)" }}>
-                    <button
-                      onClick={() => setNavStack((prev) => prev.slice(0, -1))}
-                      className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-border bg-surface text-[13px] font-semibold shrink-0 text-primary-deep active:scale-[.98]"
-                    >
-                      ← Retour
-                    </button>
+                  {/* Repère de niveau figé sous le bandeau : icône + fil d'ariane (la
+                      navigation « retour » se fait depuis le bandeau du bas). */}
+                  <div className="sticky top-[94px] z-20 -mx-4 lg:-mx-5 px-4 lg:px-5 py-2 flex items-center gap-2 border-b border-border" style={{ background: "var(--bg)" }}>
+                    {(() => {
+                      const last = navStack[navStack.length - 1];
+                      const I = iconForKey(last.key);
+                      return I ? (
+                        <span className="shrink-0 w-6 h-6 rounded-full bg-primary-tint text-primary-deep flex items-center justify-center">
+                          <I size={13} weight="bold" aria-hidden />
+                        </span>
+                      ) : (
+                        <span className="shrink-0">{last.emoji}</span>
+                      );
+                    })()}
                     <p className="text-[15px] font-semibold truncate">{path}</p>
                   </div>
                   <div className="h-2.5" />
@@ -1503,60 +1497,42 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
               );
             })()}
 
-          {/* Barre de résultats */}
-          <div className={`sticky top-[94px] z-20 -mx-4 lg:-mx-5 px-4 lg:px-5 items-center justify-between gap-3 flex-wrap py-2 border-b border-border mb-3 ${mobileTiles ? "hidden" : "flex"}`} style={{ background: "var(--bg)" }}>
-            <div className="flex items-center gap-2 min-w-0">
+          {/* Barre de résultats : repère (icône + catégorie + total) — la
+              navigation (retour, liste/carte, autour de moi) vit dans le
+              bandeau du bas pour éviter les doublons. */}
+          <div className={`sticky top-[94px] z-20 -mx-4 lg:-mx-5 px-4 lg:px-5 items-center gap-2 py-2 border-b border-border mb-3 ${mobileTiles ? "hidden" : "flex"}`} style={{ background: "var(--bg)" }}>
+            {(() => {
+              const I = iconForKey(breadcrumb.key);
+              return I ? (
+                <span className="shrink-0 w-7 h-7 rounded-full bg-primary-tint text-primary-deep flex items-center justify-center">
+                  <I size={15} weight="bold" aria-hidden />
+                </span>
+              ) : (
+                <span className="shrink-0 text-[17px]">{breadcrumb.emoji}</span>
+              );
+            })()}
+            <span className="text-[15px] font-semibold truncate">{breadcrumb.label}</span>
+            <span className="text-[13px] text-muted shrink-0">
+              — {visibleRows.length} résultat{visibleRows.length > 1 ? "s" : ""}
+            </span>
+            {/* Liste / Carte : bascule d'affichage (pas dans le bandeau du bas,
+                qui est dédié à la navigation retour / zone / autour de moi). */}
+            <div className="ml-auto inline-flex rounded-full border border-border overflow-hidden shrink-0">
               <button
-                onClick={goBackFromResults}
-                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-border bg-surface text-[13px] font-semibold shrink-0 text-primary-deep active:scale-[.98]"
-              >
-                ← Retour
-              </button>
-              <span className="text-[15px] font-semibold truncate">
-                {breadcrumb.emoji} {breadcrumb.label}
-              </span>
-              <span className="text-[13px] text-muted shrink-0">
-                — {visibleRows.length} résultat{visibleRows.length > 1 ? "s" : ""}
-              </span>
-            </div>
-            <div className="flex items-center gap-2 shrink-0">
-              {/* Mobile : Liste / Carte / Autour de moi */}
-              <div className="lg:hidden inline-flex rounded-full border border-border overflow-hidden">
-                <button
-                  onClick={() => { setNearMe(false); setResultsView("liste"); }}
-                  className={`px-3 py-1.5 text-[13px] font-semibold ${
-                    !nearMe && resultsView === "liste" ? "bg-primary text-white" : "bg-surface text-ink"
-                  }`}
-                >
-                  Liste
-                </button>
-                <button
-                  onClick={() => { setNearMe(false); setResultsView("carte"); }}
-                  className={`px-3 py-1.5 text-[13px] font-semibold ${
-                    !nearMe && resultsView === "carte" ? "bg-primary text-white" : "bg-surface text-ink"
-                  }`}
-                >
-                  Carte
-                </button>
-                <button
-                  onClick={toggleNearMe}
-                  className={`inline-flex items-center gap-1 px-3 py-1.5 text-[13px] font-semibold ${
-                    nearMe ? "bg-primary text-white" : "bg-surface text-ink"
-                  }`}
-                >
-                  <MapPin size={14} weight="fill" aria-hidden /> Autour
-                </button>
-              </div>
-              {/* Desktop : bouton Autour de moi (la liste + carte sont déjà côte à côte) */}
-              <button
-                onClick={toggleNearMe}
-                aria-pressed={nearMe}
-                className={`hidden lg:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full border text-[13px] font-semibold ${
-                  nearMe ? "bg-primary text-white border-primary" : "bg-surface text-ink border-border hover:border-primary"
+                onClick={() => { setNearMe(false); setResultsView("liste"); }}
+                className={`px-3 py-1.5 text-[13px] font-semibold ${
+                  !nearMe && resultsView === "liste" ? "bg-primary text-white" : "bg-surface text-ink"
                 }`}
               >
-                <MapPin size={15} weight="fill" aria-hidden />
-                {geoStatus === "loading" ? "Localisation…" : "Autour de moi"}
+                Liste
+              </button>
+              <button
+                onClick={() => { setNearMe(false); setResultsView("carte"); }}
+                className={`px-3 py-1.5 text-[13px] font-semibold ${
+                  !nearMe && resultsView === "carte" ? "bg-primary text-white" : "bg-surface text-ink"
+                }`}
+              >
+                Carte
               </button>
             </div>
           </div>
