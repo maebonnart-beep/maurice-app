@@ -16,7 +16,7 @@ export function Logo({ size = 96, light = false }: { size?: number; light?: bool
           alt=""
           aria-hidden
           className="shrink-0 object-contain"
-          style={{ height: size * 0.72 }}
+          style={{ height: size * 0.92 }}
         />
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
