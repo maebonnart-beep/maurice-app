@@ -296,6 +296,38 @@ export function thematicIconFor(key: string): string | null {
   return THEMATIC_ICONS[key] ?? null;
 }
 
+/**
+ * Clés de rubriques couvertes par les icônes illustrées découpées depuis la
+ * planche fournie par la cliente (public/subicons/{key}.png). Limité aux
+ * univers Manger, Se divertir, Bouger & Nature, Shopping et Santé &
+ * Bien-être pour l'instant (Vie pratique / Événements / Seconde main à
+ * venir dans un second temps).
+ */
+const SUBICON_KEYS = new Set([
+  "restaurants", "tables-hotes", "chefs-domicile", "cours-de-cuisine",
+  "grandes-surfaces", "epiceries-specialisees", "boucheries", "poissonneries",
+  "fruits-et-legumes", "marches", "boulangeries", "produits-francais",
+  "vins-spiritueux", "livraisons",
+  "bars", "cafes-terrasses", "snacks-plage", "glaciers", "rhumeries",
+  "cinemas", "bowling", "karting", "escape-game", "casinos",
+  "culture-patrimoine", "bibliotheque-mediatheque",
+  "complexes-sportifs", "gym-fitness", "sports-nautiques", "golf", "tennis-padel",
+  "centres-equestres", "randonnee-trail",
+  "plages", "parcs-nationaux-cascades", "parcs-botaniques", "parcs-animaliers",
+  "parcs-aventures", "excursions", "peche",
+  "malls", "mode-adultes", "mode-enfants", "materiel-sports", "livres", "jeux",
+  "souvenirs", "equipement-maison", "beaute", "electromenager", "high-tech",
+  "cliniques-privees", "centres-sante-publics", "medecins", "dentistes",
+  "opticiens", "laboratoires", "pharmacies", "veterinaires",
+  "spa-instituts", "coiffeurs", "onglerie-manucure", "barbiers",
+  "tatouage-piercing", "yoga-pilates", "medecine-douce", "sports-bien-etre",
+]);
+
+/** Chemin de l'icône découpée pour une rubrique, ou null si pas encore couverte. */
+export function subIconFor(key: string): string | null {
+  return SUBICON_KEYS.has(key) ? `/subicons/${key}.png` : null;
+}
+
 /** Rend l'icône d'une clé si mappée (sinon rien) — pratique dans un Tag/badge. */
 export function KeyIcon({
   keyName,

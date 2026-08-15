@@ -2,12 +2,12 @@
 
 import type { CategoryKey } from "@/lib/types";
 import { CATEGORY_MAP } from "@/data/categories";
-import { iconForKey } from "@/lib/icons";
+import { iconForKey, subIconFor } from "@/lib/icons";
 
 /**
- * Ligne de navigation (icône Phosphor dans un rond + libellé + compteur +
- * chevron). Variante « liste » de CategoryTile, en icônes simples (pas
- * d'illustration), pour rester cohérent avec la grille du niveau 1.
+ * Ligne de navigation (icône dans un rond + libellé + compteur + chevron).
+ * Utilise l'icône illustrée découpée (planche fournie par la cliente) quand
+ * disponible pour la clé, sinon repli sur l'icône Phosphor simple.
  */
 export function CategoryRow({
   category,
@@ -32,6 +32,7 @@ export function CategoryRow({
     : "var(--primary-tint)";
   const iconColor = cat ? cat.color : "var(--primary-deep)";
   const resolvedKey = iconKey ?? category ?? "";
+  const subIcon = subIconFor(resolvedKey);
   const Icon = iconForKey(resolvedKey);
 
   return (
@@ -43,7 +44,10 @@ export function CategoryRow({
         className="shrink-0 w-11 h-11 rounded-full overflow-hidden flex items-center justify-center"
         style={{ background: iconBg, color: iconColor }}
       >
-        {Icon ? (
+        {subIcon ? (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img src={subIcon} alt="" aria-hidden className="w-full h-full object-cover" />
+        ) : Icon ? (
           <Icon size={22} weight="duotone" aria-hidden />
         ) : (
           <span className="text-[20px] leading-none">{displayEmoji}</span>
