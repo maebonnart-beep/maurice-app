@@ -33907,7 +33907,7 @@
       "equipement-maison"
     ],
     "zone": "nord",
-    "description": "Enseigne d'électroménager historique à Maurice (depuis 1956) : lave-linge, réfrigérateurs, micro-ondes, cuisinières et lave-vaisselle, avec service après-vente.",
+    "description": "Enseigne d'électroménager historique à Maurice (depuis 1956) : lave-linge, réfrigérateurs, micro-ondes, cuisinières et lave-vaisselle, avec service après-vente. Propose aussi un rayon instruments de musique (claviers Yamaha notamment).",
     "hours": "Lun-Mer et Ven-Sam 9h30-18h, Jeu 9h30-13h30"
   },
   {
@@ -44302,5 +44302,350 @@
     "zone": "nord",
     "priceRange": "prix-moyen",
     "description": "Magasin bio de Richmond Hill (Super U Grand Baie), fruits et légumes et produits d'hygiène bio, arrivage le jeudi matin. Autre adresse : Tamarin."
+  },
+  {
+    "id": "le-square-beaute-grand-baie",
+    "name": "Le Square Beauté",
+    "category": "soins-bien-etre",
+    "address": "Route Royale, Grand Baie",
+    "phone": "+230 5509 1668",
+    "themes": [
+      "coiffeurs"
+    ],
+    "zone": "nord",
+    "hours": "Lu/ma/je 9h-17h30, me jusqu'à 19h, sa jusqu'à 17h",
+    "description": "Institution de Grand Baie nichée dans le jardin d'Around the World, salon combinant coiffure et soins esthétiques."
+  },
+  {
+    "id": "maison-sacha-pointe-aux-canonniers",
+    "name": "Maison Sacha — Pointe aux Canonniers",
+    "category": "soins-bien-etre",
+    "address": "Pointe aux Canonniers",
+    "phone": "+230 268 3838",
+    "themes": [
+      "coiffeurs"
+    ],
+    "zone": "nord",
+    "hours": "Lu-sa 8h30-17h",
+    "description": "Antenne nord du salon Maison Sacha, coiffure et soins sur rendez-vous."
+  },
+  {
+    "id": "cathleen-coiffure-trou-aux-biches",
+    "name": "Cathleen",
+    "category": "soins-bien-etre",
+    "address": "Trou aux Biches (près de Popo)",
+    "phone": "+230 5428 0048",
+    "themes": [
+      "coiffeurs"
+    ],
+    "zone": "nord",
+    "description": "Ex-coiffeuse de stars au Royal Palm, aujourd'hui installée à Trou aux Biches."
+  },
+  {
+    "id": "lilies-glam-salon-roches-noires",
+    "name": "Lilie's Glam Salon",
+    "category": "soins-bien-etre",
+    "address": "Roches Noires",
+    "phone": "+230 5919 4633",
+    "themes": [
+      "coiffeurs"
+    ],
+    "zone": "est",
+    "description": "Salon de coiffure apprécié des habitants de l'est de l'île."
+  },
+  {
+    "id": "sohaib-barbier-grand-baie",
+    "name": "Sohaib Barbier",
+    "category": "soins-bien-etre",
+    "address": "Route Royale, Grand Baie",
+    "phone": "+230 5519 8652",
+    "themes": [
+      "barbiers"
+    ],
+    "zone": "nord",
+    "hours": "Lu-sa 9h-17h30, dim 8h30-12h",
+    "description": "Barbier réputé de la route Royale à Grand Baie."
+  },
+  {
+    "id": "barbier-moullan-grand-gaube",
+    "name": "Barbier Moullan",
+    "category": "soins-bien-etre",
+    "address": "Spa de l'hôtel LUX* Grand Gaube",
+    "phone": "+230 5981 1161",
+    "themes": [
+      "barbiers"
+    ],
+    "zone": "nord",
+    "hours": "Lu-sa 9h-17h30, dim 8h30-12h",
+    "description": "Barbier du spa de l'hôtel LUX* Grand Gaube."
+  },
+  {
+    "id": "brenda-coiffure-grand-baie",
+    "name": "Brenda Coiffure",
+    "category": "soins-bien-etre",
+    "address": "Grand Baie",
+    "phone": "+230 263 7394",
+    "themes": [
+      "coiffeurs"
+    ],
+    "zone": "nord",
+    "description": "Salon de coiffure établi depuis 20 ans à Grand Baie."
+  },
+  {
+    "id": "spa-comfort-zone-fond-du-sac",
+    "name": "Spa Comfort Zone",
+    "category": "soins-bien-etre",
+    "address": "Bois Rouge, Fond du Sac",
+    "phone": "+230 266 9595",
+    "themes": [
+      "spa-instituts"
+    ],
+    "zone": "nord",
+    "hours": "Lu-sa 9h-19h",
+    "description": "Spa niché dans les champs de cannes : soins du corps, massages, coiffure, épilation, manucure."
+  },
+  {
+    "id": "palm-spa-beauty-care-trou-aux-biches",
+    "name": "Palm Spa and Beauty Care",
+    "category": "soins-bien-etre",
+    "address": "Branch Road, Trou aux Biches",
+    "phone": "+230 5801 1374",
+    "themes": [
+      "spa-instituts"
+    ],
+    "zone": "nord",
+    "description": "Salon tenu par Anju, massages mêlant différentes techniques dont des points d'acupression sur-mesure."
+  },
+  {
+    "id": "energy-wellness-center-endemika",
+    "name": "Energy Wellness Center",
+    "category": "soins-bien-etre",
+    "address": "Endemika Business Park",
+    "phone": "+230 5836 5259",
+    "themes": [
+      "spa-instituts",
+      "medecine-douce"
+    ],
+    "zone": "nord",
+    "hours": "Lu-ve 9h30-18h",
+    "description": "Réflexologie, drainage lymphatique, madérothérapie."
+  },
+  {
+    "id": "pretty-by-me-mylene",
+    "name": "Pretty by Me",
+    "category": "soins-bien-etre",
+    "address": "À domicile (nord de l'île)",
+    "phone": "+230 5754 5741",
+    "themes": [
+      "onglerie-manucure"
+    ],
+    "zone": "nord",
+    "description": "Mylène se déplace à domicile pour épilation, onglerie, rehaussement de cils et massage."
+  },
+  {
+    "id": "mado-parfums-grand-baie",
+    "name": "Mado Parfums",
+    "category": "soins-bien-etre",
+    "address": "Grand Baie La Croisette",
+    "phone": "+230 269 6850",
+    "themes": [
+      "beaute"
+    ],
+    "zone": "nord",
+    "hours": "Lu-je 9h30-19h30, ven-sam 20h30, dim 16h",
+    "description": "Parfumerie proposant Chanel, Dior, Guerlain, Lancôme, Yves Saint Laurent, et produits de maquillage."
+  },
+  {
+    "id": "adopt-parfums-grand-baie",
+    "name": "Adopt' Parfums",
+    "category": "soins-bien-etre",
+    "address": "Grand Baie La Croisette",
+    "phone": "+230 269 6613",
+    "themes": [
+      "beaute"
+    ],
+    "zone": "nord",
+    "hours": "Lu-sa 9h-18h, dim 9h30-15h",
+    "description": "Plus de 150 parfums créés et fabriqués en France."
+  },
+  {
+    "id": "audere-beaute-grand-baie",
+    "name": "Audere Beauté",
+    "category": "soins-bien-etre",
+    "address": "Grand Baie La Croisette",
+    "phone": "+230 5827 6125",
+    "themes": [
+      "beaute"
+    ],
+    "zone": "nord",
+    "hours": "Lu-sa 9h30-19h30, dim 16h",
+    "description": "Marques internationales de soins de la peau (COSRX, Pixi, Huxley, Patchology) avec conseils personnalisés."
+  },
+  {
+    "id": "phydra-grand-baie",
+    "name": "Phydra",
+    "category": "soins-bien-etre",
+    "address": "Grand Baie La Croisette",
+    "phone": "+230 651 5953",
+    "themes": [
+      "beaute"
+    ],
+    "zone": "nord",
+    "hours": "Lu-je 9h30-19h30, ven-sam 20h, dim 16h",
+    "description": "Marque mauricienne de cosmétiques pour visage et corps à prix abordables."
+  },
+  {
+    "id": "patrick-tattoo-shop-grand-baie",
+    "name": "Patrick Tattoo Shop",
+    "category": "soins-bien-etre",
+    "address": "Racket Road, Grand Baie",
+    "phone": "+230 5726 1513",
+    "themes": [
+      "tatouage-piercing"
+    ],
+    "zone": "nord",
+    "description": "Référence tatouage dans le nord de l'île."
+  },
+  {
+    "id": "hobby-world-hassamal-beau-plan",
+    "name": "Hobby World by Hassamal",
+    "category": "activites",
+    "address": "Mahogany Shopping Promenade, Beau Plan",
+    "phone": "+230 208 0107",
+    "themes": [
+      "jeux"
+    ],
+    "zone": "nord",
+    "hours": "Lu-ve 9h-19h, sa 20h, dim 15h",
+    "description": "Jeux de cartes et de société, modélisme, peinture, confection."
+  },
+  {
+    "id": "meem-grand-baie",
+    "name": "Meem",
+    "category": "activites",
+    "address": "Grand Baie La Croisette",
+    "phone": "+230 269 6767",
+    "themes": [
+      "jeux"
+    ],
+    "zone": "nord",
+    "hours": "Lu-je 9h30-19h, ven 19h30, sa 20h, dim 10h-14h",
+    "description": "Grande gamme de jouets de marques européennes, notamment pour les tout-petits."
+  },
+  {
+    "id": "le-sortilege-du-shaman-grand-baie",
+    "name": "Le Sortilège du Shaman",
+    "category": "activites",
+    "address": "Chemin 20 Pieds, Grand Baie",
+    "phone": "+230 268 0435",
+    "themes": [
+      "jeux"
+    ],
+    "zone": "nord",
+    "hours": "Ma-sa 10h-18h",
+    "description": "Large choix de jeux de cartes et de société, équipe qui explique volontiers les règles."
+  },
+  {
+    "id": "damoo-sounds-music-port-louis",
+    "name": "Damoo Sounds & Music",
+    "category": "activites",
+    "address": "Rue de la Chaussée, Port-Louis",
+    "phone": "+230 212 0583",
+    "themes": [
+      "jeux"
+    ],
+    "zone": "centre",
+    "hours": "Lu-ve 9h-17h, sa 14h",
+    "description": "Instruments de musique et accessoires pour artistes en herbe et mélomanes."
+  },
+  {
+    "id": "hassamal-musicals-curepipe",
+    "name": "Hassamal Musicals",
+    "category": "activites",
+    "address": "228 route Royale, Curepipe",
+    "phone": "+230 676 5219",
+    "themes": [
+      "jeux"
+    ],
+    "zone": "centre",
+    "hours": "Lu-sa 9h-17h",
+    "description": "Instruments de musique, pièces détachées et réparations."
+  },
+  {
+    "id": "whimzical-books-grand-baie",
+    "name": "Whimzical Books",
+    "category": "activites",
+    "address": "Route Royale, Grand Baie",
+    "themes": [
+      "livres"
+    ],
+    "zone": "nord",
+    "hours": "Lu-sa 9h30-19h",
+    "description": "Librairie récente avec large choix de livres en anglais et en français."
+  },
+  {
+    "id": "librairie-le-printemps-port-louis",
+    "name": "Librairie Le Printemps",
+    "category": "activites",
+    "address": "26 SSR rue Desforges, Port-Louis",
+    "phone": "+230 213 7624",
+    "themes": [
+      "livres"
+    ],
+    "zone": "centre",
+    "hours": "Lu-ve 8h30-17h, sa 14h",
+    "priceRange": "bon-marche",
+    "description": "L'une des librairies les moins chères de Port-Louis."
+  },
+  {
+    "id": "bibliotheque-grand-baie",
+    "name": "La Bibliothèque de Grand Baie",
+    "category": "activites",
+    "address": "Route côtière (à côté de la police), Grand Baie",
+    "phone": "+230 263 6116",
+    "themes": [
+      "bibliotheque-mediatheque"
+    ],
+    "zone": "nord",
+    "hours": "Lu-ve 9h-17h, sa 12h",
+    "description": "Bibliothèque publique, adhésion annuelle modique. Livres en français, anglais et créole, emprunt possible."
+  },
+  {
+    "id": "bureau-vallee-papeterie-grand-baie",
+    "name": "Bureau Vallée Papeterie",
+    "category": "activites",
+    "address": "Grand Baie La Croisette",
+    "phone": "+230 268 1601",
+    "themes": [
+      "livres"
+    ],
+    "zone": "nord",
+    "description": "Fournitures de bureau et photocopies."
+  },
+  {
+    "id": "le-point-stationery-port-louis",
+    "name": "Le Point Stationery",
+    "category": "activites",
+    "address": "7 rue Sir C. Antelme, Port-Louis",
+    "phone": "+230 210 9090",
+    "themes": [
+      "livres"
+    ],
+    "zone": "centre",
+    "description": "Papeterie de Port-Louis, notamment pour les cartouches d'imprimantes HP introuvables dans le nord."
+  },
+  {
+    "id": "sunset-boulevard-mapou",
+    "name": "Sunset Boulevard — Domaine de Labourdonnais",
+    "category": "activites",
+    "address": "Quartier des Serres, Mapou (Domaine de Labourdonnais)",
+    "phone": "+230 263 4172",
+    "website": "https://sunsetboulevard.mu",
+    "themes": [
+      "mode-adultes",
+      "malls"
+    ],
+    "zone": "nord",
+    "description": "Village-boutiques chic au sein du Domaine de Labourdonnais : mode, maroquinerie et accessoires."
   }
 ]
