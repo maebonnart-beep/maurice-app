@@ -43533,5 +43533,98 @@
     "distance": "2 km (piste)",
     "difficultyLevel": "debutant",
     "description": "Arche de basalte sculptée par la mer sur la côte sud sauvage, au sud de Mahébourg en direction du Bouchon. Accès par une piste de 2 km à travers les champs de canne (suivre les panneaux) ; petit parking au bout, puis courte marche jusqu'à la falaise où les vagues s'engouffrent sous le pont. Site naturel spectaculaire, prudence au bord de la falaise."
+  },
+  {
+    "id": "foret-de-daruty",
+    "name": "Forêt de Daruty",
+    "category": "activites",
+    "address": "Petit Raffray, Rivière du Rempart",
+    "themes": [
+      "randonnee-trail"
+    ],
+    "zone": "nord",
+    "description": "Espace boisé de plus de 108 hectares abritant le seul sentier nature officiellement balisé du nord de l'île, avec les vestiges de l'ancienne sucrerie Belle Vue Robillard. Sentiers ombragés, espaces pique-nique, prisé des joggeurs."
+  },
+  {
+    "id": "butte-a-l-herbe-calodyne",
+    "name": "La Butte à l'herbe",
+    "category": "activites",
+    "address": "Calodyne, Rivière du Rempart",
+    "lat": -19.9996,
+    "lng": 57.6532,
+    "themes": [
+      "plages"
+    ],
+    "zone": "nord",
+    "description": "Espace verdoyant en bord de mer près de Calodyne, protégé du soleil par les arbres, avec une jolie vue et un bel espace pour pique-niquer, à l'écart de l'agitation touristique."
+  },
+  {
+    "id": "electro-bike-discovery-pamplemousses",
+    "name": "Electro-Bike Discovery",
+    "category": "activites",
+    "address": "Départ depuis L'Aventure du Sucre, Beau Plan, Pamplemousses",
+    "lat": -20.1128,
+    "lng": 57.5636,
+    "phone": "+230 5828 8685",
+    "website": "https://explorenouzil.com/en/pamplemousses-electric-bike-ride/",
+    "themes": [
+      "excursions"
+    ],
+    "zone": "nord",
+    "description": "Balade à vélo à assistance électrique à travers les champs de canne du domaine de Pamplemousses, avec traversée du vieux parc colonial et vues sur Grand Baie, le Coin de Mire et Anse la Raie. Guide féru d'histoire."
+  },
+  {
+    "id": "just-natural-bois-rouge",
+    "name": "Just Natural",
+    "category": "activites",
+    "address": "Bois Rouge, Pamplemousses",
+    "website": "https://justnaturalveg.com/",
+    "themes": [
+      "cours-de-cuisine"
+    ],
+    "zone": "nord",
+    "description": "Ferme régénérative fondée par Nathalie et Jérôme, cultivant sans pesticides fruits, légumes et plantes aromatiques et médicinales. Cueillette sur place et cours de cuisine."
+  },
+  {
+    "id": "food-tours-mauritius",
+    "name": "Food Tours Mauritius",
+    "category": "activites",
+    "address": "Mahébourg (circuits également à Port-Louis et Pamplemousses)",
+    "phone": "+230 5976 1001",
+    "website": "https://www.foodtourmauritius.com/",
+    "themes": [
+      "excursions"
+    ],
+    "zone": "sud",
+    "description": "Circuits de street food et de découverte culturelle à Port-Louis ou Mahébourg, animés par un guide passionné d'histoire et d'architecture, entre gastronomie et savoir-faire mauricien."
+  },
+  {
+    "id": "hippodrome-champ-de-mars",
+    "name": "Hippodrome du Champ de Mars",
+    "category": "activites",
+    "address": "Champ de Mars, Port-Louis",
+    "lat": -20.1692,
+    "lng": 57.5101,
+    "phone": "+230 212 2212",
+    "themes": [
+      "culture-patrimoine"
+    ],
+    "zone": "centre",
+    "description": "Plus vieil hippodrome de l'hémisphère Sud, siège du Mauritius Turf Club, animé par des courses hippiques le samedi d'avril à décembre."
+  },
+  {
+    "id": "laferm-coco-bambous-virieux",
+    "name": "Laferm Coco",
+    "category": "food",
+    "address": "Bambous Virieux, Grand Port",
+    "lat": -20.33352,
+    "lng": 57.74809,
+    "phone": "+230 5253 0900",
+    "website": "http://www.lafermcoco.mu/",
+    "themes": [
+      "tables-hotes"
+    ],
+    "zone": "sud",
+    "description": "Ferme en activité proposant une balade instructive à travers légumes et fruits cultivés sans pesticides, dégustation, table d'hôte et chambres d'hôte à Bambous Virieux."
   }
 ]
