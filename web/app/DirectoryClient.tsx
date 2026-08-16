@@ -260,6 +260,10 @@ const PREMIUM_KEYS = new Set([
   ...LIFESTYLE.flatMap((u) => u.groups ?? []).filter((g) => g.premium).map((g) => g.key),
 ]);
 
+// Catégories brutes réservées aux membres Premium — même verrou que PREMIUM_KEYS,
+// mais côté raccourci sidebar (filtre direct par catégorie, hors navigation en tuiles).
+const PREMIUM_CATEGORY_KEYS = new Set<CategoryKey>(["evenements", "seconde-main"]);
+
 // Accès rapide à un univers par sa clé (menu illustré « Par catégorie »).
 const UMBRELLA_BY_KEY: Record<string, (typeof LIFESTYLE)[number]> = Object.fromEntries(
   LIFESTYLE.map((u) => [u.key, u]),
@@ -980,6 +984,10 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
       ? { key: active, emoji: CATEGORY_MAP[active as keyof typeof CATEGORY_MAP].emoji, label: CATEGORY_MAP[active as keyof typeof CATEGORY_MAP].label }
       : { key: "all", emoji: "✨", label: "Tout" });
 
+  // Raccourci sidebar sur une catégorie Premium (Événements, Seconde main) : même
+  // verrou que la navigation en tuiles, pour ne pas contourner le mur Premium.
+  const activeCategoryLocked = PREMIUM_CATEGORY_KEYS.has(breadcrumb.key as CategoryKey);
+
   function renderSidebarTree(catKey: string) {
     const catsOrUndefined = SUBCATEGORIES[catKey as keyof typeof SUBCATEGORIES];
     const fams = FAMILIES[catKey as keyof typeof FAMILIES];
@@ -1176,6 +1184,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                     style={{ background: isOpen ? "#fff" : c.color }}
                   />
                   <span className="truncate">{c.label}</span>
+                  {PREMIUM_CATEGORY_KEYS.has(c.key) && <span aria-hidden>🔒</span>}
                 </span>
                 <span className="flex items-center gap-1.5 shrink-0">
                   <span className="text-[12px] font-bold opacity-75">{counts[c.key] || 0}</span>
@@ -1965,15 +1974,33 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
             <p className="mb-3 text-[12.5px] text-muted">📍 Géolocalisation indisponible sur cet appareil.</p>
           )}
 
-          {!mobileTiles && restoFilterBar}
+          {activeCategoryLocked ? (
+            <div className="max-w-[300px] w-full mx-auto mt-8 text-center bg-surface/95 backdrop-blur-sm rounded-2xl shadow-lg p-5 flex flex-col items-center gap-2" style={{ border: "2px solid var(--accent)" }}>
+              <span className="text-3xl" aria-hidden>🔒</span>
+              <p className="font-serif text-lg font-semibold leading-tight">Réservé aux membres Premium</p>
+              <p className="text-[13px] text-muted leading-snug">
+                Débloquez « {breadcrumb.label} » et tout le contenu Premium de Koté Moris.
+              </p>
+              <button
+                disabled
+                className="mt-1 px-4 py-2 rounded-full font-bold text-on-accent cursor-not-allowed opacity-90"
+                style={{ background: "var(--accent)" }}
+              >
+                ✨ Devenir Premium
+              </button>
+              <span className="text-[11px] text-muted/80">Bientôt disponible</span>
+            </div>
+          ) : (
+            <>
+              {!mobileTiles && restoFilterBar}
 
-          <div className={`lg:gap-4 lg:h-[calc(100vh-190px)] ${mobileTiles ? "hidden" : "lg:flex"}`}>
-            {/* Liste */}
-            <div
-              className={`lg:w-[56%] lg:overflow-y-auto lg:pr-1 ${
-                resultsView === "carte" ? "hidden lg:block" : ""
-              }`}
-            >
+              <div className={`lg:gap-4 lg:h-[calc(100vh-190px)] ${mobileTiles ? "hidden" : "lg:flex"}`}>
+                {/* Liste */}
+                <div
+                  className={`lg:w-[56%] lg:overflow-y-auto lg:pr-1 ${
+                    resultsView === "carte" ? "hidden lg:block" : ""
+                  }`}
+                >
               {visibleRows.length === 0 ? (
                 <div className="text-center py-[70px] px-5 text-muted">
                   <div className="text-4xl mb-2.5">🔍</div>
@@ -2034,6 +2061,8 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
               </div>
             </div>
           </div>
+            </>
+          )}
         </div>
       </div>
 
