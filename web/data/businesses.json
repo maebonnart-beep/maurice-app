@@ -43626,5 +43626,20 @@
     ],
     "zone": "sud",
     "description": "Ferme en activité proposant une balade instructive à travers légumes et fruits cultivés sans pesticides, dégustation, table d'hôte et chambres d'hôte à Bambous Virieux."
+  },
+  {
+    "id": "laferm-coco-bambous-virieux-activites",
+    "name": "Laferm Coco",
+    "category": "activites",
+    "address": "Bambous Virieux, Grand Port",
+    "lat": -20.33352,
+    "lng": 57.74809,
+    "phone": "+230 5253 0900",
+    "website": "http://www.lafermcoco.mu/",
+    "themes": [
+      "activites-enfants-famille"
+    ],
+    "zone": "sud",
+    "description": "Balade instructive dans une ferme en activité à Bambous Virieux, à la découverte des fruits et légumes cultivés sans pesticides, avec possibilité de dormir sur place en chambre d'hôte."
   }
 ]
