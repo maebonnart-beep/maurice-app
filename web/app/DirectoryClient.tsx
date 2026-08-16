@@ -15,7 +15,7 @@ import { BusinessDetail } from "@/components/ui/BusinessDetail";
 import { useFavorites } from "@/lib/favorites";
 import { FilterDropdown, type DropdownOption } from "@/components/ui/FilterDropdown";
 import { iconForKey, MapPin } from "@/lib/icons";
-import { Heart, Star, ArrowLeft, House, Compass, UserCircle, Plus } from "@phosphor-icons/react";
+import { Heart, Star, ArrowLeft, House, Compass, UserCircle, Plus, CaretDown } from "@phosphor-icons/react";
 
 // Attributs d'ambiance propres aux restaurants (facette « Ambiance »).
 const RESTO_ATTRS = ["tables-exception", "plus-belles-vues", "frequente-locaux", "kids-friendly"];
@@ -451,6 +451,8 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
   // Navigation en tuiles à niveaux : pile de nœuds (univers → familles → rubriques →
   // sous-groupes). Vide = grille des univers (accueil).
   const [navStack, setNavStack] = useState<NavNode[]>([]);
+  // Sections repliées dans une page « carte fusionnée » (par défaut toutes dépliées).
+  const [closedSections, setClosedSections] = useState<Set<string>>(new Set());
   const cardRefs = useRef<Record<string, HTMLElement | null>>({});
 
   const onBoundsChange = useCallback((b: MapBounds) => setMapBounds(b), []);
@@ -861,24 +863,47 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
     return { key: r.key, label: r.label, emoji: r.emoji, count, themeKey: r.key };
   }
 
+  // Sections d'une carte fusionnée (« Manger & Sortir », « Bouger & Explorer »…) :
+  // tous les groupes (ou familles/rubriques à plat) de chaque univers enfant,
+  // aplatis sur une seule page — un seul clic depuis l'accueil pour tout voir,
+  // au lieu de choisir l'univers puis le groupe avant d'atteindre les rubriques.
+  type MergedSection = { key: string; label: string; emoji: string; tiles: TileDesc[]; locked: boolean };
+  function mergedSections(mergedKey: string): MergedSection[] {
+    const g = MERGED_GROUP_BY_KEY[mergedKey];
+    if (!g) return [];
+    const sections: MergedSection[] = [];
+    g.children.forEach((ck) => {
+      const u = UMBRELLA_BY_KEY[ck];
+      if (!u) return;
+      const locked = PREMIUM_KEYS.has(u.key);
+      if (u.groups) {
+        u.groups.forEach((grp) => {
+          const tiles = grp.rubriques.map(rubriqueTile).filter((t): t is TileDesc => t !== null);
+          if (tiles.length > 0) sections.push({ key: grp.key, label: grp.label, emoji: grp.emoji, tiles, locked });
+        });
+        return;
+      }
+      const fams = umbrellaFamilies(u);
+      if (fams) {
+        fams.forEach((f) => {
+          const tiles = f.children.map(rubriqueTile).filter((t): t is TileDesc => t !== null);
+          if (tiles.length > 0) sections.push({ key: f.key, label: f.label, emoji: f.emoji, tiles, locked });
+        });
+        return;
+      }
+      const tiles = resolveRubriques(u)
+        .map(rubriqueTile)
+        .filter((t): t is TileDesc => t !== null)
+        .sort((a, b) => b.count - a.count);
+      if (tiles.length > 0) sections.push({ key: u.key, label: u.label, emoji: u.emoji, tiles, locked });
+    });
+    return sections;
+  }
+
   // Tuiles du niveau courant de la pile de navigation.
   function levelTiles(stack: NavNode[]): TileDesc[] {
     const top = stack[stack.length - 1];
     if (!top) return [];
-    if (top.kind === "merged") {
-      const g = MERGED_GROUP_BY_KEY[top.key];
-      if (!g) return [];
-      return g.children
-        .map((ck): TileDesc | null => {
-          const u = UMBRELLA_BY_KEY[ck];
-          if (!u) return null;
-          const count = umbrellaCounts[ck] || 0;
-          return count > 0
-            ? { key: u.key, label: u.label, emoji: u.emoji, count, drillTo: { kind: "umbrella", key: u.key, label: u.label, emoji: u.emoji } }
-            : null;
-        })
-        .filter((t): t is TileDesc => t !== null);
-    }
     if (top.kind === "umbrella") {
       const u = LIFESTYLE.find((x) => x.key === top.key);
       if (!u) return [];
@@ -1496,14 +1521,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                       photoKey={g.photoKey}
                       label={g.label}
                       subtitle={g.subtitle}
-                      onClick={() => {
-                        if (g.children.length === 1) {
-                          const u = UMBRELLA_BY_KEY[g.children[0]];
-                          pushNav({ kind: "umbrella", key: u.key, label: u.label, emoji: u.emoji });
-                        } else {
-                          pushNav({ kind: "merged", key: g.key, label: g.label, emoji: "" });
-                        }
-                      }}
+                      onClick={() => pushNav({ kind: "merged", key: g.key, label: g.label, emoji: "" })}
                     />
                   );
                 })}
@@ -1627,9 +1645,107 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
               </div>
             )}
 
+          {/* Page « carte fusionnée » : toutes les sections (groupes) des univers
+              enfants, dépliées d'un coup — un seul clic depuis l'accueil suffit. */}
+          {showHome &&
+            navStack.length === 1 &&
+            navStack[0].kind === "merged" &&
+            (() => {
+              const top = navStack[0];
+              const sections = mergedSections(top.key);
+              return (
+                <div className="pb-16">
+                  <div className="sticky top-[94px] z-20 -mx-4 lg:-mx-5 px-4 lg:px-5 py-2 flex items-center gap-2 border-b border-border" style={{ background: "var(--bg)" }}>
+                    <button
+                      onClick={goBackFromResults}
+                      aria-label="Retour"
+                      className="shrink-0 w-7 h-7 -ml-1 rounded-full flex items-center justify-center text-ink active:scale-[.95] transition-transform"
+                    >
+                      <ArrowLeft size={17} weight="bold" aria-hidden />
+                    </button>
+                    <p className="text-[15px] font-semibold truncate">{top.label}</p>
+                  </div>
+                  <div className="h-2.5" />
+                  <div className="flex flex-col gap-4 sm:max-w-[560px] sm:mx-auto">
+                    {sections.map((s) => {
+                      const isOpen = !closedSections.has(s.key);
+                      const SecIcon = iconForKey(s.key);
+                      return (
+                        <div key={s.key} className="flex flex-col gap-2">
+                          <button
+                            onClick={() =>
+                              setClosedSections((prev) => {
+                                const next = new Set(prev);
+                                if (next.has(s.key)) next.delete(s.key);
+                                else next.add(s.key);
+                                return next;
+                              })
+                            }
+                            className="flex items-center gap-2 w-full text-left active:scale-[.99] transition-transform"
+                          >
+                            <span className="shrink-0 w-7 h-7 rounded-full bg-primary-tint text-primary-deep flex items-center justify-center">
+                              {SecIcon ? <SecIcon size={14} weight="bold" aria-hidden /> : <span className="text-[13px]">{s.emoji}</span>}
+                            </span>
+                            <span className="flex-1 min-w-0 text-[14px] font-bold text-ink truncate">{s.label}</span>
+                            <span className="text-[12px] text-muted shrink-0">{s.tiles.length}</span>
+                            <CaretDown
+                              size={14}
+                              weight="bold"
+                              className={`shrink-0 text-muted transition-transform ${isOpen ? "rotate-180" : ""}`}
+                              aria-hidden
+                            />
+                          </button>
+                          {isOpen && (
+                            <div className="relative">
+                              <div
+                                className={`flex flex-col gap-2 pl-3 ${s.locked ? "blur-[3px] pointer-events-none select-none" : ""}`}
+                                aria-hidden={s.locked || undefined}
+                              >
+                                {s.tiles.map((t) => (
+                                  <CategoryRow
+                                    key={t.key}
+                                    iconKey={t.key}
+                                    emoji={t.emoji}
+                                    label={t.label}
+                                    count={t.count}
+                                    onClick={() => onTileClick(t)}
+                                  />
+                                ))}
+                              </div>
+                              {s.locked && (
+                                <div className="absolute inset-0 flex items-center justify-center p-2">
+                                  <div
+                                    className="max-w-[260px] w-full text-center bg-surface/95 backdrop-blur-sm rounded-2xl shadow-lg p-4 flex flex-col items-center gap-1.5"
+                                    style={{ border: "2px solid var(--accent)" }}
+                                  >
+                                    <span className="text-2xl" aria-hidden>🔒</span>
+                                    <p className="font-serif text-[15px] font-semibold leading-tight">
+                                      Réservé aux membres Premium
+                                    </p>
+                                    <button
+                                      disabled
+                                      className="mt-1 px-3 py-1.5 rounded-full text-[13px] font-bold text-on-accent cursor-not-allowed opacity-90"
+                                      style={{ background: "var(--accent)" }}
+                                    >
+                                      ✨ Devenir Premium
+                                    </button>
+                                  </div>
+                                </div>
+                              )}
+                            </div>
+                          )}
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
+              );
+            })()}
+
           {/* Niveau de navigation en tuiles (familles / rubriques / spécialités) */}
           {showHome &&
             navStack.length > 0 &&
+            !(navStack.length === 1 && navStack[0].kind === "merged") &&
             (() => {
               const tiles = levelTiles(navStack);
               const path = navStack.map((n) => n.label).join(" › ");
