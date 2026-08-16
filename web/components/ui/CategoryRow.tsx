@@ -15,6 +15,7 @@ export function CategoryRow({
   label,
   iconKey,
   count,
+  locked,
   onClick,
 }: {
   category?: CategoryKey;
@@ -22,6 +23,8 @@ export function CategoryRow({
   label?: string;
   iconKey?: string;
   count?: number;
+  /** Rubrique réservée aux membres Premium : badge cadenas à côté du libellé. */
+  locked?: boolean;
   onClick: () => void;
 }) {
   const cat = category ? CATEGORY_MAP[category] : null;
@@ -54,7 +57,17 @@ export function CategoryRow({
         )}
       </span>
       <span className="flex-1 min-w-0">
-        <span className="block text-[14.5px] font-bold text-ink truncate">{displayLabel}</span>
+        <span className="flex items-center gap-1.5">
+          <span className="text-[14.5px] font-bold text-ink truncate">{displayLabel}</span>
+          {locked && (
+            <span
+              className="shrink-0 inline-flex items-center gap-0.5 px-1.5 py-0.5 rounded-pill text-[9.5px] font-bold text-on-accent"
+              style={{ background: "var(--accent)" }}
+            >
+              🔒 Premium
+            </span>
+          )}
+        </span>
         {count !== undefined && (
           <span className="block text-[12px] text-muted">
             {count} adresse{count > 1 ? "s" : ""}

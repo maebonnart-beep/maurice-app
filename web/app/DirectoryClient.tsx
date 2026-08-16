@@ -411,10 +411,14 @@ const Map = dynamic(() => import("./Map"), {
 });
 
 export default function DirectoryClient({ businesses }: { businesses: Business[] }) {
-  const { favoriteIds } = useFavorites();
+  const { statuses: favoriteStatuses } = useFavorites();
   const favoriteBusinesses = useMemo(
-    () => businesses.filter((b) => favoriteIds.has(b.id)),
-    [businesses, favoriteIds]
+    () => businesses.filter((b) => favoriteStatuses.get(b.id) === "favori"),
+    [businesses, favoriteStatuses]
+  );
+  const aTesterBusinesses = useMemo(
+    () => businesses.filter((b) => favoriteStatuses.get(b.id) === "a-tester"),
+    [businesses, favoriteStatuses]
   );
   const [query, setQuery] = useState("");
   const [active, setActive] = useState<string>("all");
@@ -1540,34 +1544,53 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
             </div>
           )}
 
-          {/* Accueil → Mes favoris : liste des fiches enregistrées via le cœur (stockage local). */}
+          {/* Accueil → Mes favoris : fiches enregistrées via le cœur (favori + à tester), stockage local. */}
           {showHome && navStack.length === 0 && homeMode === "favoris" && (
             <div className="pb-16">
-              {favoriteBusinesses.length === 0 ? (
+              {favoriteBusinesses.length === 0 && aTesterBusinesses.length === 0 ? (
                 <div className="mt-6 max-w-[420px] mx-auto text-center bg-surface border border-border rounded-2xl shadow-sm p-7 flex flex-col items-center gap-3">
                   <span className="w-14 h-14 rounded-2xl bg-primary-tint text-primary-deep flex items-center justify-center">
                     <Heart size={28} weight="duotone" aria-hidden />
                   </span>
                   <p className="font-serif text-lg font-semibold leading-tight">Pas encore de favoris</p>
                   <p className="text-[13px] text-muted leading-snug">
-                    Touchez le cœur sur une fiche pour l&apos;enregistrer ici.
+                    Touchez le cœur sur une fiche pour l&apos;enregistrer ici (deux touches : à tester).
                   </p>
                 </div>
               ) : (
-                <div className="max-w-[560px] mx-auto flex flex-col gap-3 pt-1">
-                  <p className="m-0 text-[13px] text-muted">
-                    {favoriteBusinesses.length} adresse{favoriteBusinesses.length > 1 ? "s" : ""} enregistrée
-                    {favoriteBusinesses.length > 1 ? "s" : ""}
-                  </p>
-                  {favoriteBusinesses.map((b) => (
-                    <BusinessCard
-                      key={b.id}
-                      business={b}
-                      active={b.id === selectedId}
-                      onSelect={selectFromCard}
-                      onHover={() => {}}
-                    />
-                  ))}
+                <div className="max-w-[560px] mx-auto flex flex-col gap-5 pt-1">
+                  {favoriteBusinesses.length > 0 && (
+                    <div className="flex flex-col gap-3">
+                      <p className="m-0 text-[13px] text-muted">
+                        {favoriteBusinesses.length} coup{favoriteBusinesses.length > 1 ? "s" : ""} de cœur
+                      </p>
+                      {favoriteBusinesses.map((b) => (
+                        <BusinessCard
+                          key={b.id}
+                          business={b}
+                          active={b.id === selectedId}
+                          onSelect={selectFromCard}
+                          onHover={() => {}}
+                        />
+                      ))}
+                    </div>
+                  )}
+                  {aTesterBusinesses.length > 0 && (
+                    <div className="flex flex-col gap-3">
+                      <p className="m-0 text-[13px] font-bold" style={{ color: "#f5a623" }}>
+                        À tester ({aTesterBusinesses.length})
+                      </p>
+                      {aTesterBusinesses.map((b) => (
+                        <BusinessCard
+                          key={b.id}
+                          business={b}
+                          active={b.id === selectedId}
+                          onSelect={selectFromCard}
+                          onHover={() => {}}
+                        />
+                      ))}
+                    </div>
+                  )}
                 </div>
               )}
             </div>
@@ -1651,6 +1674,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                           emoji={t.emoji}
                           label={t.label}
                           count={t.count}
+                          locked={PREMIUM_KEYS.has(t.key)}
                           onClick={() => onTileClick(t)}
                         />
                       ))}
