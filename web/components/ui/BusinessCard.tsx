@@ -138,6 +138,9 @@ export function BusinessCard({
             ))}
           </p>
         )}
+        {b.description && (
+          <p className="m-0 mt-1 text-ink/70 text-[12px] leading-[1.4] line-clamp-2">{b.description}</p>
+        )}
       </div>
       <div className="shrink-0 flex flex-col items-end gap-1.5">
         <FavoriteButton id={b.id} size={17} className="text-muted" />

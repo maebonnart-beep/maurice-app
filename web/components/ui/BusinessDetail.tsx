@@ -126,7 +126,8 @@ export function BusinessDetail({
               <FavoriteButton
                 id={b.id}
                 size={18}
-                className="absolute top-3 right-3 w-9 h-9 rounded-full bg-black/45 text-white backdrop-blur-sm"
+                className="absolute top-3 right-3 gap-2"
+                chipClassName="inline-flex items-center justify-center w-9 h-9 rounded-full bg-black/45 text-white backdrop-blur-sm"
               />
               {b.photoCredit && (
                 <span className="absolute bottom-1 right-1 px-1.5 py-0.5 rounded text-[9px] leading-none text-white/90 bg-black/40">
@@ -149,7 +150,8 @@ export function BusinessDetail({
               <FavoriteButton
                 id={b.id}
                 size={18}
-                className="absolute top-3 right-3 w-9 h-9 rounded-full bg-black/20 text-on-band backdrop-blur-sm"
+                className="absolute top-3 right-3 gap-2"
+                chipClassName="inline-flex items-center justify-center w-9 h-9 rounded-full bg-black/20 text-on-band backdrop-blur-sm"
               />
               <span className="w-16 h-16 rounded-full bg-surface shadow-sm flex items-center justify-center text-primary-deep overflow-hidden">
                 {bannerIcon ? (

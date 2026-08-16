@@ -13,9 +13,10 @@ import { UniversCard } from "@/components/ui/UniversCard";
 import { BusinessCard } from "@/components/ui/BusinessCard";
 import { BusinessDetail } from "@/components/ui/BusinessDetail";
 import { useFavorites } from "@/lib/favorites";
+import { COUP_DE_COEUR_COLOR } from "@/components/ui/Badge";
 import { FilterDropdown, type DropdownOption } from "@/components/ui/FilterDropdown";
 import { iconForKey, MapPin } from "@/lib/icons";
-import { Heart, Star, ArrowLeft, House, Compass, UserCircle, Plus, CaretDown } from "@phosphor-icons/react";
+import { Heart, Flag, Star, ArrowLeft, House, Compass, UserCircle, Plus, CaretDown } from "@phosphor-icons/react";
 
 // Attributs d'ambiance propres aux restaurants (facette « Ambiance »).
 const RESTO_ATTRS = ["tables-exception", "plus-belles-vues", "frequente-locaux", "kids-friendly"];
@@ -454,6 +455,8 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
   // Sections repliées dans une page « carte fusionnée » (par défaut toutes dépliées).
   const [closedSections, setClosedSections] = useState<Set<string>>(new Set());
   const cardRefs = useRef<Record<string, HTMLElement | null>>({});
+  const favorisSectionRef = useRef<HTMLDivElement>(null);
+  const aTesterSectionRef = useRef<HTMLDivElement>(null);
 
   const onBoundsChange = useCallback((b: MapBounds) => setMapBounds(b), []);
 
@@ -1572,13 +1575,32 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                   </span>
                   <p className="font-serif text-lg font-semibold leading-tight">Pas encore de favoris</p>
                   <p className="text-[13px] text-muted leading-snug">
-                    Touchez le cœur sur une fiche pour l&apos;enregistrer ici (deux touches : à tester).
+                    Touchez le cœur (coup de cœur) ou le drapeau (à tester) sur une fiche pour l&apos;enregistrer ici.
                   </p>
                 </div>
               ) : (
                 <div className="max-w-[560px] mx-auto flex flex-col gap-5 pt-1">
+                  {/* Accès direct : passe d'une liste à l'autre sans avoir à scroller. */}
+                  <div className="flex items-center gap-2 sticky top-[94px] z-10 -mx-4 lg:-mx-5 px-4 lg:px-5 py-2 bg-bg">
+                    <button
+                      onClick={() => favorisSectionRef.current?.scrollIntoView({ behavior: "smooth", block: "start" })}
+                      disabled={favoriteBusinesses.length === 0}
+                      className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-pill text-[12.5px] font-bold disabled:opacity-40 active:scale-[.97] transition-transform"
+                      style={{ background: `color-mix(in srgb, ${COUP_DE_COEUR_COLOR} 12%, var(--surface))`, color: COUP_DE_COEUR_COLOR }}
+                    >
+                      <Heart size={14} weight="fill" aria-hidden /> Favoris ({favoriteBusinesses.length})
+                    </button>
+                    <button
+                      onClick={() => aTesterSectionRef.current?.scrollIntoView({ behavior: "smooth", block: "start" })}
+                      disabled={aTesterBusinesses.length === 0}
+                      className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-pill text-[12.5px] font-bold disabled:opacity-40 active:scale-[.97] transition-transform"
+                      style={{ background: "color-mix(in srgb, #f5a623 12%, var(--surface))", color: "#f5a623" }}
+                    >
+                      <Flag size={14} weight="fill" aria-hidden /> À tester ({aTesterBusinesses.length})
+                    </button>
+                  </div>
                   {favoriteBusinesses.length > 0 && (
-                    <div className="flex flex-col gap-3">
+                    <div ref={favorisSectionRef} className="flex flex-col gap-3 scroll-mt-[150px]">
                       <p className="m-0 text-[13px] text-muted">
                         {favoriteBusinesses.length} coup{favoriteBusinesses.length > 1 ? "s" : ""} de cœur
                       </p>
@@ -1594,7 +1616,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                     </div>
                   )}
                   {aTesterBusinesses.length > 0 && (
-                    <div className="flex flex-col gap-3">
+                    <div ref={aTesterSectionRef} className="flex flex-col gap-3 scroll-mt-[150px]">
                       <p className="m-0 text-[13px] font-bold" style={{ color: "#f5a623" }}>
                         À tester ({aTesterBusinesses.length})
                       </p>

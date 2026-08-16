@@ -62,13 +62,11 @@ export function useFavorites() {
     writeFavorites(next);
   }, []);
 
-  /** Fait tourner l'état sur un clic : vide → favori → à tester → vide. */
-  const cycleStatus = useCallback((id: string) => {
+  /** Fixe explicitement le statut (bouton dédié « favori » ou « à tester ») ; reclique sur le même statut pour le retirer. */
+  const setStatus = useCallback((id: string, status: FavoriteStatus) => {
     const next = readFavorites();
-    const current = next.get(id);
-    if (!current) next.set(id, "favori");
-    else if (current === "favori") next.set(id, "a-tester");
-    else next.delete(id);
+    if (next.get(id) === status) next.delete(id);
+    else next.set(id, status);
     writeFavorites(next);
   }, []);
 
@@ -78,6 +76,6 @@ export function useFavorites() {
     isFavorite,
     getStatus,
     toggleFavorite,
-    cycleStatus,
+    setStatus,
   };
 }
