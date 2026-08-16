@@ -43868,5 +43868,439 @@
     ],
     "zone": "centre",
     "description": "Traiteur (Géraldine Henry) : buffets salés/sucrés, amuse-bouches, se déplace aussi dans le nord."
+  },
+  {
+    "id": "le-calliptus-family-restaurant",
+    "name": "Le Calliptus Family Restaurant",
+    "category": "food",
+    "address": "Nehru Lane, Petit Raffray",
+    "phone": "+230 5799 0013",
+    "themes": [
+      "restaurants",
+      "mauricienne"
+    ],
+    "zone": "nord",
+    "priceRange": "bon-marche",
+    "description": "Restaurant familial de Petit Raffray, cuisine mauricienne conviviale, ouvert 7j/7 de midi à 1h du matin."
+  },
+  {
+    "id": "yes-food-moris",
+    "name": "Yes Food Moris",
+    "category": "food",
+    "address": "Sottise Road, face au collège, Grand Baie",
+    "phone": "+230 5792 5305",
+    "themes": [
+      "restaurants",
+      "mauricienne"
+    ],
+    "zone": "nord",
+    "priceRange": "bon-marche",
+    "description": "Petite cantine mauricienne au fond du couloir à Grand Baie, réputée pour sa file d'attente."
+  },
+  {
+    "id": "snack-deluxe-trou-aux-biches",
+    "name": "Snack Deluxe",
+    "category": "food",
+    "address": "Route de Triolet, Trou aux Biches",
+    "phone": "+230 5756 3587",
+    "themes": [
+      "snacks-plage",
+      "mauricienne"
+    ],
+    "zone": "nord",
+    "priceRange": "bon-marche",
+    "description": "Snack de cuisine mauricienne, à emporter, sur la route de Triolet à Trou aux Biches."
+  },
+  {
+    "id": "chun-po-grand-baie",
+    "name": "Chun Po",
+    "category": "food",
+    "address": "Route Royale (pharmacie Ducasse), Grand Baie",
+    "phone": "+230 263 0082",
+    "themes": [
+      "restaurants",
+      "asiatique"
+    ],
+    "zone": "nord",
+    "priceRange": "bon-marche",
+    "description": "Cuisine chinoise, bouillon meefon aux crevettes et canard laqué à prix canon, plats à emporter."
+  },
+  {
+    "id": "dalon-grand-baie",
+    "name": "Dalon",
+    "category": "food",
+    "address": "Chemin Bazar, Grand Baie",
+    "phone": "+230 5755 6659",
+    "themes": [
+      "restaurants",
+      "mauricienne"
+    ],
+    "zone": "nord",
+    "priceRange": "bon-marche",
+    "description": "Cuisine mauricienne revisitée, plats originaux et succulents, fermé le lundi (dîner uniquement le dimanche)."
+  },
+  {
+    "id": "1974-da-antonio-e-giulia",
+    "name": "1974 (da Antonio e Giulia)",
+    "category": "food",
+    "address": "Ex-Aquarium, Route côtière, Trou aux Biches",
+    "phone": "+230 265 7400",
+    "themes": [
+      "restaurants",
+      "italien"
+    ],
+    "zone": "nord",
+    "priceRange": "prix-moyen",
+    "description": "Cuisine napolitano-toscane par Antonio et Giulia, sur le site de l'ancien Aquarium à Trou aux Biches."
+  },
+  {
+    "id": "nature-et-delices-pointe-aux-canonniers",
+    "name": "Nature et Délices",
+    "category": "food",
+    "address": "Route royale, Pointe aux Canonniers",
+    "phone": "+230 5934 5320",
+    "themes": [
+      "restaurants",
+      "mauricienne"
+    ],
+    "zone": "nord",
+    "priceRange": "prix-moyen",
+    "description": "Cuisine du chef Christophe, dégustation et surprises, ouvert du mardi au samedi et pour le déjeuner le dimanche."
+  },
+  {
+    "id": "blacksheep-ebene",
+    "name": "Blacksheep",
+    "category": "food",
+    "address": "Ébène",
+    "phone": "+230 468 7132",
+    "themes": [
+      "restaurants",
+      "grillades"
+    ],
+    "zone": "centre",
+    "priceRange": "se-faire-plaisir",
+    "description": "Restaurant spécialisé viandes à Ébène."
+  },
+  {
+    "id": "cyclone-cafe-ebene",
+    "name": "Cyclone Café",
+    "category": "food",
+    "address": "Ébène",
+    "phone": "+230 5776 5900",
+    "themes": [
+      "cafes-terrasses",
+      "europeenne"
+    ],
+    "zone": "centre",
+    "priceRange": "prix-moyen",
+    "description": "Café-bistrot d'Ébène apprécié pour sa carte bistrot."
+  },
+  {
+    "id": "la-rose-de-damas-bagatelle",
+    "name": "La Rose de Damas",
+    "category": "food",
+    "address": "Mall de Bagatelle",
+    "phone": "+230 5444 5444",
+    "themes": [
+      "restaurants"
+    ],
+    "zone": "centre",
+    "priceRange": "prix-moyen",
+    "description": "Restaurant marocain du Mall de Bagatelle."
+  },
+  {
+    "id": "wat-cha-ri",
+    "name": "Wat Cha Ri",
+    "category": "food",
+    "address": "GBBQ, Grand Baie",
+    "phone": "+230 5461 5959",
+    "themes": [
+      "restaurants",
+      "asiatique"
+    ],
+    "zone": "nord",
+    "priceRange": "prix-moyen",
+    "description": "Restaurant de fusion asiatique à Grand Baie."
+  },
+  {
+    "id": "momo-grand-baie",
+    "name": "MoMo",
+    "category": "food",
+    "address": "Grand Baie",
+    "phone": "+230 5757 9733",
+    "themes": [
+      "restaurants",
+      "asiatique"
+    ],
+    "zone": "nord",
+    "priceRange": "bon-marche",
+    "description": "Restaurant népalais de Grand Baie, une véritable découverte gastronomique avec bons conseils du chef."
+  },
+  {
+    "id": "mr-berti-grand-baie",
+    "name": "Mr Berti",
+    "category": "food",
+    "address": "Grand Baie",
+    "phone": "+230 5438 7794",
+    "themes": [
+      "restaurants",
+      "italien"
+    ],
+    "zone": "nord",
+    "priceRange": "bon-marche",
+    "description": "Pizzeria de Grand Baie."
+  },
+  {
+    "id": "la-golosona-triolet",
+    "name": "La Golosona",
+    "category": "food",
+    "address": "Triolet",
+    "phone": "+230 270 0130",
+    "themes": [
+      "restaurants",
+      "italien"
+    ],
+    "zone": "nord",
+    "priceRange": "bon-marche",
+    "description": "Pizzeria de Triolet."
+  },
+  {
+    "id": "red-grand-baie",
+    "name": "RED",
+    "category": "food",
+    "address": "Esplanade de Grand Baie La Croisette",
+    "phone": "+230 269 7478",
+    "themes": [
+      "restaurants",
+      "bars"
+    ],
+    "zone": "nord",
+    "priceRange": "prix-moyen",
+    "description": "Bistro sympa et raffiné sur l'esplanade de La Croisette à Grand Baie, carte de vins et viandes réputée, ouvert tous les jours."
+  },
+  {
+    "id": "restaurant-souvenir-trou-aux-biches",
+    "name": "Restaurant Souvenir",
+    "category": "food",
+    "address": "En face du poste de police, Trou aux Biches",
+    "phone": "+230 5291 1440",
+    "themes": [
+      "restaurants",
+      "mauricienne"
+    ],
+    "zone": "nord",
+    "priceRange": "bon-marche",
+    "description": "Cuisine mauricienne classique, spécialité de bol renversé, fermé le jeudi."
+  },
+  {
+    "id": "deja-vu-grand-baie",
+    "name": "Déjà Vu",
+    "category": "food",
+    "address": "Entre Insomnia et OMG, Grand Baie",
+    "phone": "+230 5929 2772",
+    "themes": [
+      "bars"
+    ],
+    "zone": "nord",
+    "priceRange": "prix-moyen",
+    "description": "Discothèque de Grand Baie avec deux pistes de danse (rétro et actuelle)."
+  },
+  {
+    "id": "le-barevoo-grand-baie",
+    "name": "Le Barevoo",
+    "category": "food",
+    "address": "Station Total, Grand Baie",
+    "phone": "+230 263 5758",
+    "themes": [
+      "bars"
+    ],
+    "zone": "nord",
+    "priceRange": "prix-moyen",
+    "description": "Boîte de nuit de Grand Baie, plutôt fréquentée par les jeunes, ouvre à 22h."
+  },
+  {
+    "id": "blue-note-jazz-blues-club",
+    "name": "Blue Note Jazz' Blues Club",
+    "category": "food",
+    "address": "Station Engen, Grand Baie",
+    "phone": "+230 5719 5055",
+    "themes": [
+      "bars"
+    ],
+    "zone": "nord",
+    "priceRange": "prix-moyen",
+    "description": "L'une des adresses les plus anciennes de la baie pour les amateurs de jazz et de blues."
+  },
+  {
+    "id": "happy-rajah-grand-baie-cdv",
+    "name": "Happy Rajah — Grand Baie Cœur de Ville",
+    "category": "food",
+    "address": "Grand Baie Cœur de Ville",
+    "phone": "+230 263 2241",
+    "themes": [
+      "restaurants",
+      "indienne"
+    ],
+    "zone": "nord",
+    "priceRange": "prix-moyen",
+    "description": "Cuisine du nord et du sud de l'Inde, formule déjeuner thali avec riz et naans, 2 légumes, 2 viandes et un dessert. Ouvert tous les jours."
+  },
+  {
+    "id": "herboristerie-feuilles-et-fleurs",
+    "name": "Herboristerie Feuilles & Fleurs",
+    "category": "food",
+    "address": "Route de Schoenfeld, Rivière du Rempart",
+    "phone": "+230 5422 1640",
+    "themes": [
+      "epiceries-specialisees"
+    ],
+    "zone": "nord",
+    "priceRange": "prix-moyen",
+    "description": "Herboristerie avec visite du jardin, baumes et confitures maison, atelier enfants. Vente en ligne sur feuilles-et-fleurs.com."
+  },
+  {
+    "id": "rocher-coco-port-louis",
+    "name": "Rocher Coco",
+    "category": "food",
+    "address": "Caudan Waterfront, Port-Louis",
+    "phone": "+230 211 9500",
+    "themes": [
+      "boulangeries",
+      "cafes-terrasses"
+    ],
+    "zone": "centre",
+    "priceRange": "prix-moyen",
+    "description": "Salon de thé et pâtisseries du Caudan Waterfront, spécialité de rocher coco."
+  },
+  {
+    "id": "kakao-ti-gerard",
+    "name": "Kakao Ti Gérard",
+    "category": "food",
+    "address": "Sébastopol",
+    "phone": "+230 5496 3014",
+    "themes": [
+      "epiceries-specialisees"
+    ],
+    "zone": "ouest",
+    "priceRange": "prix-moyen",
+    "description": "Plantation-chocolaterie de Sébastopol, visite possible, chocolat traditionnel."
+  },
+  {
+    "id": "le-pavillon-bleu-grand-baie",
+    "name": "Le Pavillon bleu",
+    "category": "food",
+    "address": "En face du Super U, Grand Baie",
+    "phone": "+230 676 2421",
+    "themes": [
+      "epiceries-specialisees"
+    ],
+    "zone": "nord",
+    "priceRange": "se-faire-plaisir",
+    "description": "Magasin d'arts de la table et importateur, spécialité de cousins de pâte d'amande recouverts de chocolat au curaçao pour Noël et Pâques."
+  },
+  {
+    "id": "1952-eastern-trading",
+    "name": "1952 Eastern Trading",
+    "category": "food",
+    "address": "Around The World, Péreybère",
+    "phone": "+230 263 1815",
+    "themes": [
+      "vins-spiritueux"
+    ],
+    "zone": "nord",
+    "priceRange": "prix-moyen",
+    "description": "Caviste de Péreybère, belle sélection de rosés et nouveautés."
+  },
+  {
+    "id": "lartigiano-mont-choisy",
+    "name": "L'Artigiano",
+    "category": "food",
+    "address": "Mont Choisy Mall",
+    "phone": "+230 5908 2765",
+    "themes": [
+      "epiceries-specialisees"
+    ],
+    "zone": "nord",
+    "priceRange": "prix-moyen",
+    "description": "Épicerie fine 100% italienne au Mont Choisy Mall : charcuterie, burrata, mozzarella, parmesan, gorgonzola."
+  },
+  {
+    "id": "lepicerie-route-royale",
+    "name": "L'Épicerie",
+    "category": "food",
+    "address": "Route Royale",
+    "phone": "+230 5919 1708",
+    "themes": [
+      "epiceries-specialisees"
+    ],
+    "zone": "nord",
+    "priceRange": "prix-moyen",
+    "description": "Épicerie fine et charcuterie, produits de la mer sur commande, plateaux d'antipasti."
+  },
+  {
+    "id": "common-dream-goodlands",
+    "name": "Common Dream",
+    "category": "food",
+    "address": "ZI de Saint Antoine, Goodlands",
+    "phone": "+230 283 3434",
+    "themes": [
+      "epiceries-specialisees"
+    ],
+    "zone": "nord",
+    "priceRange": "prix-moyen",
+    "description": "Grossiste de charcuterie et fromages à Goodlands, vend aussi aux particuliers."
+  },
+  {
+    "id": "la-bovida-curepipe",
+    "name": "La Bovida",
+    "category": "food",
+    "address": "Rue Saint Clément, Curepipe",
+    "phone": "+230 5816 0492",
+    "themes": [
+      "boucheries"
+    ],
+    "zone": "centre",
+    "priceRange": "prix-moyen",
+    "description": "Boucherie de Curepipe : bœuf, merguez, brochettes marinées, livraison hebdomadaire dans le nord."
+  },
+  {
+    "id": "mahogany-cave-beau-plan",
+    "name": "Mahogany (cave à vin)",
+    "category": "food",
+    "address": "Beau Plan",
+    "phone": "+230 245 8304",
+    "themes": [
+      "vins-spiritueux"
+    ],
+    "zone": "nord",
+    "priceRange": "se-faire-plaisir",
+    "description": "Caviste de Beau Plan spécialisé dans la gamme sud-africaine Idun, carte de fidélité."
+  },
+  {
+    "id": "le-connoisseur-mont-choisy",
+    "name": "Le Connoisseur — Mont Choisy Mall",
+    "category": "food",
+    "address": "Mont Choisy Mall",
+    "phone": "+230 269 7362",
+    "themes": [
+      "vins-spiritueux",
+      "cafes-terrasses"
+    ],
+    "zone": "nord",
+    "priceRange": "prix-moyen",
+    "description": "Caviste et café du Mont Choisy Mall, vins à prix abordable, thé Damann, machine à café italien."
+  },
+  {
+    "id": "la-vie-claire-grand-baie",
+    "name": "La Vie Claire — Richmond Hill",
+    "category": "food",
+    "address": "Richmond Hill, Super U, Grand Baie",
+    "phone": "+230 263 9842",
+    "themes": [
+      "epiceries-specialisees"
+    ],
+    "zone": "nord",
+    "priceRange": "prix-moyen",
+    "description": "Magasin bio de Richmond Hill (Super U Grand Baie), fruits et légumes et produits d'hygiène bio, arrivage le jeudi matin."
   }
 ]
