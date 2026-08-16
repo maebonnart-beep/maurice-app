@@ -3908,7 +3908,7 @@
     "priceRange": "prix-moyen",
     "badge": "selection",
     "zone": "ouest",
-    "description": "Enseigne locale emblématique au décor chiné au Rajasthan (meubles anciens). Cuisine indienne traditionnelle et chaleureuse, même si le service peut sembler pressé aux heures d'affluence."
+    "description": "Enseigne locale emblématique au décor chiné au Rajasthan (meubles anciens). Cuisine indienne traditionnelle et chaleureuse, même si le service peut sembler pressé aux heures d'affluence. Autre adresse : Grand Baie Cœur de Ville."
   },
   {
     "id": "ousaporn-thai-black-river",
@@ -16624,7 +16624,7 @@
       "epiceries-specialisees"
     ],
     "zone": "ouest",
-    "description": "Magasin bio français : alimentation sans gluten, produits bio en vrac, thés/infusions, et gamme de produits locaux (miel, riz, achards) de Maurice et Rodrigues.",
+    "description": "Magasin bio français : alimentation sans gluten, produits bio en vrac, thés/infusions, et gamme de produits locaux (miel, riz, achards) de Maurice et Rodrigues. Autre adresse : Richmond Hill (Super U), Grand Baie.",
     "hours": "Lun-Sam 9h-18h"
   },
   {
@@ -26575,7 +26575,7 @@
       "vins-spiritueux"
     ],
     "zone": "centre",
-    "description": "Vins et spiritueux internationaux haut de gamme a Phoenix, gamme etendue aux produits gourmets (foie gras, chocolats, olives). Ouvert lun-jeu 8h30-17h, ven 8h30-18h, sam 9h-12h, ferme dimanche et jours feries.",
+    "description": "Vins et spiritueux internationaux haut de gamme a Phoenix, gamme etendue aux produits gourmets (foie gras, chocolats, olives). Ouvert lun-jeu 8h30-17h, ven 8h30-18h, sam 9h-12h, ferme dimanche et jours feries. Autre adresse : Mont Choisy Mall.",
     "hours": "Lun-Jeu 8h30-17h, Ven 8h30-18h, Sam 9h-12h, Fermé Dim"
   },
   {
@@ -44143,7 +44143,7 @@
     ],
     "zone": "nord",
     "priceRange": "prix-moyen",
-    "description": "Cuisine du nord et du sud de l'Inde, formule déjeuner thali avec riz et naans, 2 légumes, 2 viandes et un dessert. Ouvert tous les jours."
+    "description": "Cuisine du nord et du sud de l'Inde, formule déjeuner thali avec riz et naans, 2 légumes, 2 viandes et un dessert. Ouvert tous les jours. Autre adresse : Av. des Jacarandas, Tamarin."
   },
   {
     "id": "herboristerie-feuilles-et-fleurs",
@@ -44288,7 +44288,7 @@
     ],
     "zone": "nord",
     "priceRange": "prix-moyen",
-    "description": "Caviste et café du Mont Choisy Mall, vins à prix abordable, thé Damann, machine à café italien."
+    "description": "Caviste et café du Mont Choisy Mall, vins à prix abordable, thé Damann, machine à café italien. Autre adresse : St Jean Motorway, Phoenix."
   },
   {
     "id": "la-vie-claire-grand-baie",
@@ -44301,6 +44301,6 @@
     ],
     "zone": "nord",
     "priceRange": "prix-moyen",
-    "description": "Magasin bio de Richmond Hill (Super U Grand Baie), fruits et légumes et produits d'hygiène bio, arrivage le jeudi matin."
+    "description": "Magasin bio de Richmond Hill (Super U Grand Baie), fruits et légumes et produits d'hygiène bio, arrivage le jeudi matin. Autre adresse : Tamarin."
   }
 ]
