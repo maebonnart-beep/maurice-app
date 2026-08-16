@@ -13,6 +13,7 @@ import {
   whatsappNumber,
 } from "@/lib/format";
 import { SpecialBadge, accentColorFor } from "./Badge";
+import { FavoriteButton } from "./FavoriteButton";
 import { Tag } from "./Tag";
 import { metaFacts } from "./BusinessCard";
 import { iconForKey, subIconFor, CONTACT_ICONS } from "@/lib/icons";
@@ -122,6 +123,11 @@ export function BusinessDetail({
               >
                 <ArrowLeft size={18} weight="bold" aria-hidden />
               </button>
+              <FavoriteButton
+                id={b.id}
+                size={18}
+                className="absolute top-3 right-3 w-9 h-9 rounded-full bg-black/45 text-white backdrop-blur-sm"
+              />
               {b.photoCredit && (
                 <span className="absolute bottom-1 right-1 px-1.5 py-0.5 rounded text-[9px] leading-none text-white/90 bg-black/40">
                   {b.photoCredit}
@@ -140,6 +146,11 @@ export function BusinessDetail({
               >
                 <ArrowLeft size={18} weight="bold" aria-hidden />
               </button>
+              <FavoriteButton
+                id={b.id}
+                size={18}
+                className="absolute top-3 right-3 w-9 h-9 rounded-full bg-black/20 text-on-band backdrop-blur-sm"
+              />
               <span className="w-16 h-16 rounded-full bg-surface shadow-sm flex items-center justify-center text-primary-deep overflow-hidden">
                 {bannerIcon ? (
                   // eslint-disable-next-line @next/next/no-img-element
@@ -162,7 +173,6 @@ export function BusinessDetail({
             )}
             <div className="flex flex-wrap items-center gap-1.5">
               {b.badge === "partenaire" && <SpecialBadge variant="partenaire" />}
-              {b.badge === "coup-de-coeur" && <SpecialBadge variant="coup-de-coeur" />}
               {b.badge === "selection" && <SpecialBadge variant="selection" />}
               {b.themes?.includes("kids-friendly") && <SpecialBadge variant="kids-friendly" />}
               {b.isAgency && <SpecialBadge variant="agence" />}

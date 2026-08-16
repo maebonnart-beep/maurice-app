@@ -4,6 +4,7 @@ import type { Business } from "@/lib/types";
 import { SUBCATEGORIES, PRICE_RANGES, CATEGORY_MAP } from "@/data/categories";
 import { displayName, displayCity } from "@/lib/format";
 import { accentColorFor } from "./Badge";
+import { FavoriteButton } from "./FavoriteButton";
 import { iconForKey, subIconFor, FACT_ICONS, CONTACT_ICONS } from "@/lib/icons";
 import type { Icon } from "@phosphor-icons/react";
 
@@ -108,7 +109,6 @@ export function BusinessCard({
       </div>
       <div className="flex-1 min-w-0">
         <div className="flex items-center gap-1.5 flex-wrap">
-          {b.badge === "coup-de-coeur" && <span aria-hidden>💛</span>}
           {b.badge === "selection" && <span aria-hidden>🏅</span>}
           {b.badge === "partenaire" && <span aria-hidden>⭐</span>}
           <h3 className="m-0 font-serif text-[15.5px] font-semibold leading-[1.2] tracking-[-.005em] truncate">
@@ -127,12 +127,15 @@ export function BusinessCard({
           )}
         </p>
       </div>
-      <span
-        className="shrink-0 text-[10px] font-bold px-2 py-1 rounded-pill whitespace-nowrap max-w-[92px] truncate"
-        style={{ background: `color-mix(in srgb, ${CATEGORY_MAP[b.category].color} 15%, var(--surface))`, color: CATEGORY_MAP[b.category].color }}
-      >
-        {CATEGORY_MAP[b.category].label}
-      </span>
+      <div className="shrink-0 flex flex-col items-end gap-1.5">
+        <FavoriteButton id={b.id} size={17} className="text-muted" />
+        <span
+          className="text-[10px] font-bold px-2 py-1 rounded-pill whitespace-nowrap max-w-[92px] truncate"
+          style={{ background: `color-mix(in srgb, ${CATEGORY_MAP[b.category].color} 15%, var(--surface))`, color: CATEGORY_MAP[b.category].color }}
+        >
+          {CATEGORY_MAP[b.category].label}
+        </span>
+      </div>
     </article>
   );
 }

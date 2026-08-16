@@ -12,6 +12,7 @@ import { CategoryRow } from "@/components/ui/CategoryRow";
 import { UniversCard } from "@/components/ui/UniversCard";
 import { BusinessCard } from "@/components/ui/BusinessCard";
 import { BusinessDetail } from "@/components/ui/BusinessDetail";
+import { useFavorites } from "@/lib/favorites";
 import { FilterDropdown, type DropdownOption } from "@/components/ui/FilterDropdown";
 import { iconForKey, MapPin } from "@/lib/icons";
 import { Heart, Star, ArrowLeft, House, Compass, UserCircle, Plus } from "@phosphor-icons/react";
@@ -410,6 +411,11 @@ const Map = dynamic(() => import("./Map"), {
 });
 
 export default function DirectoryClient({ businesses }: { businesses: Business[] }) {
+  const { favoriteIds } = useFavorites();
+  const favoriteBusinesses = useMemo(
+    () => businesses.filter((b) => favoriteIds.has(b.id)),
+    [businesses, favoriteIds]
+  );
   const [query, setQuery] = useState("");
   const [active, setActive] = useState<string>("all");
   const [activeThemes, setActiveThemes] = useState<Set<string>>(new Set());
@@ -1254,6 +1260,10 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
         </button>
         <button
           onClick={() => {
+            setActive("all");
+            setActiveThemes(new Set());
+            setActiveZone(null);
+            setQuery("");
             setBrowseAll(false);
             setNavStack([]);
             setHomeMode("favoris");
@@ -1530,26 +1540,56 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
             </div>
           )}
 
-          {/* Accueil → Mes favoris / Listes Koté Moris / Profil / Ajouter : écrans placeholder « bientôt ». */}
+          {/* Accueil → Mes favoris : liste des fiches enregistrées via le cœur (stockage local). */}
+          {showHome && navStack.length === 0 && homeMode === "favoris" && (
+            <div className="pb-16">
+              {favoriteBusinesses.length === 0 ? (
+                <div className="mt-6 max-w-[420px] mx-auto text-center bg-surface border border-border rounded-2xl shadow-sm p-7 flex flex-col items-center gap-3">
+                  <span className="w-14 h-14 rounded-2xl bg-primary-tint text-primary-deep flex items-center justify-center">
+                    <Heart size={28} weight="duotone" aria-hidden />
+                  </span>
+                  <p className="font-serif text-lg font-semibold leading-tight">Pas encore de favoris</p>
+                  <p className="text-[13px] text-muted leading-snug">
+                    Touchez le cœur sur une fiche pour l&apos;enregistrer ici.
+                  </p>
+                </div>
+              ) : (
+                <div className="max-w-[560px] mx-auto flex flex-col gap-3 pt-1">
+                  <p className="m-0 text-[13px] text-muted">
+                    {favoriteBusinesses.length} adresse{favoriteBusinesses.length > 1 ? "s" : ""} enregistrée
+                    {favoriteBusinesses.length > 1 ? "s" : ""}
+                  </p>
+                  {favoriteBusinesses.map((b) => (
+                    <BusinessCard
+                      key={b.id}
+                      business={b}
+                      active={b.id === selectedId}
+                      onSelect={selectFromCard}
+                      onHover={() => {}}
+                    />
+                  ))}
+                </div>
+              )}
+            </div>
+          )}
+
+          {/* Accueil → Listes Koté Moris / Profil / Ajouter : écrans placeholder « bientôt ». */}
           {showHome &&
             navStack.length === 0 &&
-            (homeMode === "favoris" || homeMode === "listes" || homeMode === "profil" || homeMode === "ajouter") && (
+            (homeMode === "listes" || homeMode === "profil" || homeMode === "ajouter") && (
               <div className="pb-16">
                 <div className="mt-6 max-w-[420px] mx-auto text-center bg-surface border border-border rounded-2xl shadow-sm p-7 flex flex-col items-center gap-3">
                   <span className="w-14 h-14 rounded-2xl bg-primary-tint text-primary-deep flex items-center justify-center">
-                    {homeMode === "favoris" && <Heart size={28} weight="duotone" aria-hidden />}
                     {homeMode === "listes" && <Star size={28} weight="duotone" aria-hidden />}
                     {homeMode === "profil" && <UserCircle size={28} weight="duotone" aria-hidden />}
                     {homeMode === "ajouter" && <Plus size={28} weight="bold" aria-hidden />}
                   </span>
                   <p className="font-serif text-lg font-semibold leading-tight">
-                    {homeMode === "favoris" && "Mes favoris & mes listes"}
                     {homeMode === "listes" && "Les listes de Koté Moris"}
                     {homeMode === "profil" && "Mon profil"}
                     {homeMode === "ajouter" && "Ajouter une adresse"}
                   </p>
                   <p className="text-[13px] text-muted leading-snug">
-                    {homeMode === "favoris" && "Enregistrez vos adresses préférées et créez vos propres listes."}
                     {homeMode === "listes" && "Nos sélections d'adresses par thématique, à découvrir très bientôt."}
                     {homeMode === "profil" && "Votre compte, vos préférences et votre historique, bientôt ici."}
                     {homeMode === "ajouter" && "Suggérez une adresse à ajouter à l'annuaire Koté Moris."}
