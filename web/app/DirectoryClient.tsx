@@ -33,7 +33,7 @@ const SIDEBAR_VISIBLE_RUBRIQUES = 5;
 
 // Univers « lifestyle » de l'accueil (couche de présentation au-dessus des rubriques).
 // Chaque univers = un regroupement de catégories entières et/ou de rubriques précises.
-type UmbrellaGroup = { key: string; label: string; emoji: string; rubriques: string[] };
+type UmbrellaGroup = { key: string; label: string; emoji: string; rubriques: string[]; premium?: boolean };
 type Umbrella = {
   key: string;
   label: string;
@@ -106,6 +106,13 @@ const LIFESTYLE: Umbrella[] = [
         label: "Culture",
         emoji: "🏛️",
         rubriques: ["culture-patrimoine", "bibliotheque-mediatheque"],
+      },
+      {
+        key: "sortir-evenements",
+        label: "Événements",
+        emoji: "🎉",
+        rubriques: ["culturels", "sportifs"],
+        premium: true,
       },
     ],
   },
@@ -238,14 +245,6 @@ const LIFESTYLE: Umbrella[] = [
   },
   // ── Univers réservés aux membres Premium ──────────────────────────────
   {
-    key: "evenements",
-    label: "Événements",
-    emoji: "🎉",
-    color: "#e0518a",
-    categories: ["evenements"],
-    premium: true,
-  },
-  {
     key: "seconde-main",
     label: "Seconde main",
     emoji: "♻️",
@@ -255,8 +254,11 @@ const LIFESTYLE: Umbrella[] = [
   },
 ];
 
-// Clés d'univers réservés aux membres Premium (aperçu flouté + cadenas).
-const PREMIUM_KEYS = new Set(LIFESTYLE.filter((u) => u.premium).map((u) => u.key));
+// Clés (univers ou groupes) réservées aux membres Premium (aperçu flouté + cadenas).
+const PREMIUM_KEYS = new Set([
+  ...LIFESTYLE.filter((u) => u.premium).map((u) => u.key),
+  ...LIFESTYLE.flatMap((u) => u.groups ?? []).filter((g) => g.premium).map((g) => g.key),
+]);
 
 // Accès rapide à un univers par sa clé (menu illustré « Par catégorie »).
 const UMBRELLA_BY_KEY: Record<string, (typeof LIFESTYLE)[number]> = Object.fromEntries(
@@ -272,7 +274,7 @@ const MERGED_GROUPS: { key: string; label: string; photoKey: string; subtitle: s
     label: "Manger & Sortir",
     photoKey: "manger",
     subtitle: "Restaurants, commerces, sorties & événements",
-    children: ["manger", "sortir", "evenements"],
+    children: ["manger", "sortir"],
   },
   {
     key: "bouger-explorer",
@@ -882,7 +884,8 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
       if (u.groups) {
         u.groups.forEach((grp) => {
           const tiles = grp.rubriques.map(rubriqueTile).filter((t): t is TileDesc => t !== null);
-          if (tiles.length > 0) sections.push({ key: grp.key, label: grp.label, emoji: grp.emoji, tiles, locked });
+          if (tiles.length > 0)
+            sections.push({ key: grp.key, label: grp.label, emoji: grp.emoji, tiles, locked: locked || PREMIUM_KEYS.has(grp.key) });
         });
         return;
       }
@@ -1672,6 +1675,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
           {showHome &&
             navStack.length === 1 &&
             navStack[0].kind === "merged" &&
+            navStack[0].key !== "manger-sortir" &&
             (() => {
               const top = navStack[0];
               const sections = mergedSections(top.key);
@@ -1757,6 +1761,62 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                             </div>
                           )}
                         </div>
+                      );
+                    })}
+                  </div>
+                </div>
+              );
+            })()}
+
+          {/* Écran « Manger & Sortir » : choix visuel en 2 grands panneaux illustrés
+              qui séparent l'écran en deux — la liste des sous-catégories n'apparaît
+              qu'une fois Manger ou Sortir choisi. */}
+          {showHome &&
+            navStack.length === 1 &&
+            navStack[0].kind === "merged" &&
+            navStack[0].key === "manger-sortir" &&
+            (() => {
+              const top = navStack[0];
+              const g = MERGED_GROUP_BY_KEY[top.key];
+              if (!g) return null;
+              return (
+                <div className="pb-16">
+                  <div className="sticky top-[94px] z-20 -mx-4 lg:-mx-5 px-4 lg:px-5 py-2 flex items-center gap-2 border-b border-border" style={{ background: "var(--bg)" }}>
+                    <button
+                      onClick={goBackFromResults}
+                      aria-label="Retour"
+                      className="shrink-0 w-7 h-7 -ml-1 rounded-full flex items-center justify-center text-ink active:scale-[.95] transition-transform"
+                    >
+                      <ArrowLeft size={17} weight="bold" aria-hidden />
+                    </button>
+                    <p className="text-[15px] font-semibold truncate">{top.label}</p>
+                  </div>
+                  <div className="h-2.5" />
+                  <div className="flex flex-col gap-3 sm:max-w-[560px] sm:mx-auto">
+                    {g.children.map((ck) => {
+                      const u = UMBRELLA_BY_KEY[ck];
+                      if (!u) return null;
+                      return (
+                        <button
+                          key={ck}
+                          onClick={() => pushNav({ kind: "umbrella", key: u.key, label: u.label, emoji: u.emoji })}
+                          className="relative w-full h-[170px] rounded-card overflow-hidden active:scale-[.98] transition-transform shadow-card"
+                        >
+                          {/* eslint-disable-next-line @next/next/no-img-element */}
+                          <img
+                            src={`/photo-univers-${ck}.png`}
+                            alt=""
+                            aria-hidden
+                            className="absolute inset-0 w-full h-full object-cover"
+                          />
+                          <div
+                            className="absolute inset-0"
+                            style={{ background: "linear-gradient(180deg, transparent 40%, rgba(0,0,0,.6) 100%)" }}
+                          />
+                          <span className="absolute left-4 bottom-3 text-white font-serif text-xl font-bold drop-shadow">
+                            {u.label}
+                          </span>
+                        </button>
                       );
                     })}
                   </div>
