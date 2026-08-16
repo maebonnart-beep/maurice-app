@@ -15,7 +15,7 @@ import {
 import { SpecialBadge, accentColorFor } from "./Badge";
 import { Tag } from "./Tag";
 import { metaFacts } from "./BusinessCard";
-import { iconForKey, CONTACT_ICONS } from "@/lib/icons";
+import { iconForKey, subIconFor, CONTACT_ICONS } from "@/lib/icons";
 import { ArrowLeft } from "@phosphor-icons/react";
 
 /** Action circulaire (Appeler, Itinéraire, Site web…) : icône ronde + libellé dessous. */
@@ -90,6 +90,7 @@ export function BusinessDetail({
   const firstTheme = b.themes?.find((t) => !hiddenKeys?.has(t) && t !== "kids-friendly");
   const subtitle = firstTheme ? SUBCATEGORIES[b.category]?.find((t) => t.key === firstTheme)?.label : undefined;
   const CategoryIcon = iconForKey(b.category);
+  const bannerIcon = (firstTheme && subIconFor(firstTheme)) ?? subIconFor(b.category);
 
   // Échap ferme, et on verrouille le scroll de l'arrière-plan.
   useEffect(() => {
@@ -108,29 +109,47 @@ export function BusinessDetail({
       <div className="absolute inset-0" onClick={onClose} aria-hidden="true" />
       <div className="relative mt-auto lg:m-auto w-full lg:max-w-[720px] max-h-[92vh] lg:max-h-[88vh] bg-surface rounded-t-[20px] lg:rounded-card shadow-pop flex flex-col overflow-hidden">
         <div className="overflow-y-auto">
-          {/* Photo plein cadre, bouton retour flottant (pas de barre séparée). */}
-          <div className="relative w-full h-[220px] lg:h-[300px] bg-surface-2 shrink-0">
-            {b.photoUrl ? (
-              // eslint-disable-next-line @next/next/no-img-element
+          {/* Photo plein cadre si disponible (rare, ~1% des fiches) ; sinon bandeau
+              compact avec icône illustrée, pour laisser plus de place au texte en dessous. */}
+          {b.photoUrl ? (
+            <div className="relative w-full h-[220px] lg:h-[300px] bg-surface-2 shrink-0">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
               <img src={b.photoUrl} alt={displayName(b.name)} className="w-full h-full object-cover" />
-            ) : (
-              <span className="w-full h-full flex items-center justify-center text-primary-deep bg-primary-tint">
-                {CategoryIcon && <CategoryIcon size={40} weight="duotone" aria-hidden />}
-              </span>
-            )}
-            <button
-              onClick={onClose}
-              aria-label="Retour"
-              className="absolute top-3 left-3 w-9 h-9 rounded-full bg-black/45 text-white flex items-center justify-center backdrop-blur-sm active:scale-[.95]"
+              <button
+                onClick={onClose}
+                aria-label="Retour"
+                className="absolute top-3 left-3 w-9 h-9 rounded-full bg-black/45 text-white flex items-center justify-center backdrop-blur-sm active:scale-[.95]"
+              >
+                <ArrowLeft size={18} weight="bold" aria-hidden />
+              </button>
+              {b.photoCredit && (
+                <span className="absolute bottom-1 right-1 px-1.5 py-0.5 rounded text-[9px] leading-none text-white/90 bg-black/40">
+                  {b.photoCredit}
+                </span>
+              )}
+            </div>
+          ) : (
+            <div
+              className="relative w-full h-[110px] shrink-0 flex items-center justify-center"
+              style={{ background: "linear-gradient(135deg, var(--band), var(--band-deep))" }}
             >
-              <ArrowLeft size={18} weight="bold" aria-hidden />
-            </button>
-            {b.photoCredit && (
-              <span className="absolute bottom-1 right-1 px-1.5 py-0.5 rounded text-[9px] leading-none text-white/90 bg-black/40">
-                {b.photoCredit}
+              <button
+                onClick={onClose}
+                aria-label="Retour"
+                className="absolute top-3 left-3 w-9 h-9 rounded-full bg-black/20 text-on-band flex items-center justify-center backdrop-blur-sm active:scale-[.95]"
+              >
+                <ArrowLeft size={18} weight="bold" aria-hidden />
+              </button>
+              <span className="w-16 h-16 rounded-full bg-surface shadow-sm flex items-center justify-center text-primary-deep overflow-hidden">
+                {bannerIcon ? (
+                  // eslint-disable-next-line @next/next/no-img-element
+                  <img src={bannerIcon} alt="" aria-hidden className="w-full h-full object-cover" />
+                ) : (
+                  CategoryIcon && <CategoryIcon size={30} weight="duotone" aria-hidden />
+                )}
               </span>
-            )}
-          </div>
+            </div>
+          )}
 
           <div
             className="p-5 flex flex-col gap-3"
@@ -154,20 +173,38 @@ export function BusinessDetail({
             </h2>
             {subtitle && <p className="m-0 text-muted text-[14px] leading-[1.4]">{subtitle}</p>}
 
-            {/* Repère condensé : prix · ville · horaires, façon rendu de référence. */}
-            <p className="m-0 text-muted text-[13.5px] leading-[1.5] flex flex-wrap items-center gap-x-1.5 gap-y-1">
-              {price && <span className="font-semibold text-ink">{price.symbol}</span>}
-              {price && <span aria-hidden>·</span>}
-              <CONTACT_ICONS.MapPin size={14} weight="fill" className="shrink-0 opacity-70" aria-hidden />
-              {displayCity(b.address)}
+            {/* Liste d'infos scannable : une ligne par info, lisible d'un coup d'œil
+                (plutôt qu'un paragraphe condensé) — utile faute de photo sur la fiche. */}
+            <div className="flex flex-col gap-1.5 text-[13.5px] leading-[1.4]">
               {b.hours && (
-                <>
-                  <span aria-hidden>·</span>
-                  <CONTACT_ICONS.Clock size={13} weight="bold" className="shrink-0 opacity-70" aria-hidden />
-                  {b.hours}
-                </>
+                <p className="m-0 flex items-center gap-2">
+                  <CONTACT_ICONS.Clock size={15} weight="bold" className="shrink-0 text-muted" aria-hidden />
+                  <span>{b.hours}</span>
+                </p>
               )}
-            </p>
+              {price && (
+                <p className="m-0 flex items-center gap-2">
+                  <span className="shrink-0 w-[15px] text-center font-bold text-muted">{price.symbol}</span>
+                  <span>{price.label}</span>
+                </p>
+              )}
+              <p className="m-0 flex items-center gap-2">
+                <CONTACT_ICONS.MapPin size={15} weight="fill" className="shrink-0 text-muted" aria-hidden />
+                <span>{b.address || displayCity(b.address)}</span>
+              </p>
+              {b.phone && (
+                <p className="m-0 flex items-center gap-2">
+                  <CONTACT_ICONS.Phone size={15} weight="fill" className="shrink-0 text-muted" aria-hidden />
+                  <span>{b.phone}</span>
+                </p>
+              )}
+              {b.website && (
+                <p className="m-0 flex items-center gap-2">
+                  <CONTACT_ICONS.Globe size={15} weight="bold" className="shrink-0 text-muted" aria-hidden />
+                  <span className="truncate">{webLabel(b.website)}</span>
+                </p>
+              )}
+            </div>
 
             {/* Actions rondes : Appeler / Itinéraire / Site web / WhatsApp / Email. */}
             <div className="flex flex-wrap gap-2 py-1">

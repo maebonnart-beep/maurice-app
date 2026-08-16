@@ -1,10 +1,10 @@
 "use client";
 
 import type { Business } from "@/lib/types";
-import { SUBCATEGORIES, PRICE_RANGES } from "@/data/categories";
+import { SUBCATEGORIES, PRICE_RANGES, CATEGORY_MAP } from "@/data/categories";
 import { displayName, displayCity } from "@/lib/format";
 import { accentColorFor } from "./Badge";
-import { iconForKey, FACT_ICONS, CONTACT_ICONS } from "@/lib/icons";
+import { iconForKey, subIconFor, FACT_ICONS, CONTACT_ICONS } from "@/lib/icons";
 import type { Icon } from "@phosphor-icons/react";
 
 const DIFFICULTY_LABELS: Record<string, string> = {
@@ -66,6 +66,7 @@ export function BusinessCard({
   // Sous-titre façon « Cuisine locale » : première rubrique/thème de la fiche.
   const firstTheme = b.themes?.find((t) => !hiddenKeys?.has(t) && t !== "kids-friendly");
   const subtitle = firstTheme ? SUBCATEGORIES[b.category]?.find((t) => t.key === firstTheme)?.label : undefined;
+  const rowIcon = (firstTheme && subIconFor(firstTheme)) ?? subIconFor(b.category);
 
   return (
     <article
@@ -86,7 +87,7 @@ export function BusinessCard({
           : undefined
       }
     >
-      <div className="shrink-0 w-16 h-16 rounded-xl overflow-hidden bg-surface-2 relative">
+      <div className="shrink-0 w-14 h-14 rounded-full overflow-hidden bg-primary-tint relative flex items-center justify-center text-primary-deep">
         {b.photoUrl ? (
           // eslint-disable-next-line @next/next/no-img-element
           <img
@@ -95,13 +96,14 @@ export function BusinessCard({
             loading="lazy"
             className="w-full h-full object-cover"
           />
+        ) : rowIcon ? (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img src={rowIcon} alt="" aria-hidden loading="lazy" className="w-full h-full object-cover" />
         ) : (
-          <span className="w-full h-full flex items-center justify-center text-primary-deep bg-primary-tint">
-            {(() => {
-              const CIcon = iconForKey(b.category);
-              return CIcon ? <CIcon size={24} weight="duotone" aria-hidden /> : null;
-            })()}
-          </span>
+          (() => {
+            const CIcon = iconForKey(b.category);
+            return CIcon ? <CIcon size={24} weight="duotone" aria-hidden /> : null;
+          })()
         )}
       </div>
       <div className="flex-1 min-w-0">
@@ -125,6 +127,12 @@ export function BusinessCard({
           )}
         </p>
       </div>
+      <span
+        className="shrink-0 text-[10px] font-bold px-2 py-1 rounded-pill whitespace-nowrap max-w-[92px] truncate"
+        style={{ background: `color-mix(in srgb, ${CATEGORY_MAP[b.category].color} 15%, var(--surface))`, color: CATEGORY_MAP[b.category].color }}
+      >
+        {CATEGORY_MAP[b.category].label}
+      </span>
     </article>
   );
 }
