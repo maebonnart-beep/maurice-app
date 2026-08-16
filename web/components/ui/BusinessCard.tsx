@@ -5,8 +5,14 @@ import { SUBCATEGORIES, PRICE_RANGES, CATEGORY_MAP } from "@/data/categories";
 import { displayName, displayCity } from "@/lib/format";
 import { accentColorFor } from "./Badge";
 import { FavoriteButton } from "./FavoriteButton";
-import { iconForKey, subIconFor, FACT_ICONS, CONTACT_ICONS } from "@/lib/icons";
+import { FACT_ICONS, CONTACT_ICONS } from "@/lib/icons";
 import type { Icon } from "@phosphor-icons/react";
+
+/** Icône compacte des badges de mise en avant, affichée dès la fiche liste. */
+const ROW_BADGE_SRC: Record<"selection" | "coup-de-coeur", string> = {
+  selection: "/badge-selection.png",
+  "coup-de-coeur": "/badge-coup-de-coeur.png",
+};
 
 const DIFFICULTY_LABELS: Record<string, string> = {
   debutant: "Débutant",
@@ -67,7 +73,8 @@ export function BusinessCard({
   // Sous-titre façon « Cuisine locale » : première rubrique/thème de la fiche.
   const firstTheme = b.themes?.find((t) => !hiddenKeys?.has(t) && t !== "kids-friendly");
   const subtitle = firstTheme ? SUBCATEGORIES[b.category]?.find((t) => t.key === firstTheme)?.label : undefined;
-  const rowIcon = (firstTheme && subIconFor(firstTheme)) ?? subIconFor(b.category);
+  // 1-2 infos concrètes pour ne pas se limiter au nom/adresse au 1er coup d'œil.
+  const facts = metaFacts(b).slice(0, 2);
 
   return (
     <article
@@ -88,28 +95,23 @@ export function BusinessCard({
           : undefined
       }
     >
-      <div className="shrink-0 w-14 h-14 rounded-full overflow-hidden bg-primary-tint relative flex items-center justify-center text-primary-deep">
-        {b.photoUrl ? (
-          // eslint-disable-next-line @next/next/no-img-element
+      {b.photoUrl && (
+        <div className="shrink-0 w-14 h-14 rounded-full overflow-hidden bg-primary-tint">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src={b.photoUrl}
             alt={displayName(b.name)}
             loading="lazy"
             className="w-full h-full object-cover"
           />
-        ) : rowIcon ? (
-          // eslint-disable-next-line @next/next/no-img-element
-          <img src={rowIcon} alt="" aria-hidden loading="lazy" className="w-full h-full object-cover" />
-        ) : (
-          (() => {
-            const CIcon = iconForKey(b.category);
-            return CIcon ? <CIcon size={24} weight="duotone" aria-hidden /> : null;
-          })()
-        )}
-      </div>
+        </div>
+      )}
       <div className="flex-1 min-w-0">
         <div className="flex items-center gap-1.5 flex-wrap">
-          {b.badge === "selection" && <span aria-hidden>🏅</span>}
+          {(b.badge === "selection" || b.badge === "coup-de-coeur") && (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img src={ROW_BADGE_SRC[b.badge]} alt="" aria-hidden className="w-5 h-5 shrink-0" />
+          )}
           {b.badge === "partenaire" && <span aria-hidden>⭐</span>}
           <h3 className="m-0 font-serif text-[15.5px] font-semibold leading-[1.2] tracking-[-.005em] truncate">
             {displayName(b.name)}
@@ -126,6 +128,16 @@ export function BusinessCard({
             </span>
           )}
         </p>
+        {facts.length > 0 && (
+          <p className="m-0 mt-1 flex items-center gap-2.5 flex-wrap">
+            {facts.map(({ Icon: FIcon, label }, i) => (
+              <span key={i} className="inline-flex items-center gap-1 text-[11.5px] text-primary-deep font-semibold">
+                <FIcon size={12} weight="bold" className="shrink-0 opacity-80" aria-hidden />
+                <span className="truncate max-w-[140px]">{label}</span>
+              </span>
+            ))}
+          </p>
+        )}
       </div>
       <div className="shrink-0 flex flex-col items-end gap-1.5">
         <FavoriteButton id={b.id} size={17} className="text-muted" />
