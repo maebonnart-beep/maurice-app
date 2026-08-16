@@ -298,10 +298,11 @@ export function thematicIconFor(key: string): string | null {
 
 /**
  * Clés de rubriques couvertes par les icônes illustrées découpées depuis la
- * planche fournie par la cliente (public/subicons/{key}.png). Limité aux
- * univers Manger, Se divertir, Bouger & Nature, Shopping et Santé &
- * Bien-être pour l'instant (Vie pratique / Événements / Seconde main à
- * venir dans un second temps).
+ * planche fournie par la cliente (public/subicons/{key}.png). Manger, Se
+ * divertir, Bouger & Nature, Shopping et Santé & Bien-être en style
+ * illustration « objet-seul » ; Vie pratique / Famille / Événements /
+ * Seconde main en style trait (planche taxonomie V4, solution temporaire
+ * en attendant l'illustré — cf. mémoire projet_maurice_plus_icon_pipeline).
  */
 const SUBICON_KEYS = new Set([
   "restaurants", "tables-hotes", "chefs-domicile", "cours-de-cuisine",
@@ -321,6 +322,24 @@ const SUBICON_KEYS = new Set([
   "opticiens", "laboratoires", "pharmacies", "veterinaires",
   "spa-instituts", "coiffeurs", "onglerie-manucure", "barbiers",
   "tatouage-piercing", "yoga-pilates", "medecine-douce", "sports-bien-etre",
+  // Vie pratique — Démarches & admin
+  "poste", "postes-police", "banques", "assurances", "notaires", "avocats",
+  "comptables", "expatriation-visas", "telecom", "plateformes-multiservices",
+  // Vie pratique — Auto & maison
+  "garages-mecaniciens", "concessionnaires", "controle-technique",
+  "location-voiture", "taxis-transferts", "vtc-apps", "depannages",
+  "informatique-reparation", "pressing-blanchisserie",
+  // Vie pratique — Immobilier & pro
+  "agences", "coworking", "cafe-coworking", "garde-enfants", "networking",
+  "business",
+  // Famille & Éducation
+  "activites-enfants-famille", "centres-loisirs-animations-enfants",
+  "ecoles-privees-internationales", "creches-garderies",
+  // Événements
+  "sportifs", "culturels",
+  // Seconde main
+  "voitures-2-roues", "habits-adultes", "vetements-particuliers",
+  "eq-maison-particuliers", "jeux-livres", "livres-particuliers",
 ]);
 
 /** Chemin de l'icône découpée pour une rubrique, ou null si pas encore couverte. */
