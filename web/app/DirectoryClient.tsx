@@ -574,10 +574,10 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
   // On montre des tuiles (catégories / rubriques) plutôt que la liste.
   const mobileTiles = showHome;
 
-  // Recherche masquée sur tout l'accueil (menu, catégories, rubriques) pour
-  // gagner de la place ; elle réapparaît une fois sur des résultats concrets
-  // (liste/carte), où affiner par mot-clé est utile.
-  const showHeaderSearch = !showHome;
+  // Recherche affichée seulement dans le flux dédié (tuile « Recherche »,
+  // onglet « Explorer », ou « Voir tout ») — pas pendant la navigation par
+  // rubrique, où elle n'apporte rien et prend de la place.
+  const showHeaderSearch = browseAll;
 
   // Rubriques les plus fournies toutes catégories confondues, pour la section
   // « Sous-catégories populaires » de l'accueil (grille des 8 catégories).
@@ -1403,20 +1403,6 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
               >
                 <ArrowLeft size={17} weight="bold" aria-hidden />
               </button>
-              {(() => {
-                const I = iconForKey(breadcrumb.key);
-                return I ? (
-                  <span className="shrink-0 w-7 h-7 rounded-full bg-primary-tint text-primary-deep flex items-center justify-center">
-                    <I size={15} weight="bold" aria-hidden />
-                  </span>
-                ) : (
-                  <span className="shrink-0 text-[17px]">{breadcrumb.emoji}</span>
-                );
-              })()}
-              <span className="text-[15px] font-semibold truncate">{breadcrumb.label}</span>
-              <span className="text-[13px] text-muted shrink-0">
-                — {visibleRows.length} résultat{visibleRows.length > 1 ? "s" : ""}
-              </span>
               <div className="ml-auto inline-flex rounded-full border border-border overflow-hidden shrink-0">
                 <button
                   onClick={() => { setNearMe(false); setResultsView("liste"); }}

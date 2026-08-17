@@ -1,12 +1,17 @@
 "use client";
 
 import type { Business } from "@/lib/types";
-import { SUBCATEGORIES, PRICE_RANGES, CATEGORY_MAP } from "@/data/categories";
+import { SUBCATEGORIES, PRICE_RANGES, CATEGORY_MAP, FILTER_GROUPS } from "@/data/categories";
 import { displayName, displayCity } from "@/lib/format";
 import { accentColorFor } from "./Badge";
 import { FavoriteButton } from "./FavoriteButton";
 import { FACT_ICONS, CONTACT_ICONS } from "@/lib/icons";
 import type { Icon } from "@phosphor-icons/react";
+
+/** Toutes les options de filtre (cuisine, ambiance, discipline, spécialité…), à plat par clé. */
+const FILTER_OPTION_MAP = Object.fromEntries(
+  FILTER_GROUPS.flatMap((g) => g.options.map((o) => [o.key, o]))
+);
 
 /** Icône compacte des badges de mise en avant, affichée dès la fiche liste. */
 const ROW_BADGE_SRC: Record<"selection" | "coup-de-coeur", string> = {
@@ -75,6 +80,12 @@ export function BusinessCard({
   const subtitle = firstTheme ? SUBCATEGORIES[b.category]?.find((t) => t.key === firstTheme)?.label : undefined;
   // 1-2 infos concrètes pour ne pas se limiter au nom/adresse au 1er coup d'œil.
   const facts = metaFacts(b).slice(0, 2);
+  // Tags de filtre (cuisine, ambiance, spécialité…) portés par la fiche —
+  // quelques mots-clés visibles sans ouvrir la fiche.
+  const filterTags = (b.themes ?? [])
+    .filter((t) => !hiddenKeys?.has(t) && FILTER_OPTION_MAP[t])
+    .slice(0, 3)
+    .map((t) => FILTER_OPTION_MAP[t]);
 
   return (
     <article
@@ -128,6 +139,25 @@ export function BusinessCard({
             </span>
           )}
         </p>
+        {b.hours && (
+          <p className="m-0 text-muted text-[12px] leading-[1.4] flex items-center gap-1 mt-0.5">
+            <CONTACT_ICONS.Clock size={12} weight="bold" className="shrink-0 opacity-70" aria-hidden />
+            <span className="truncate">{b.hours}</span>
+          </p>
+        )}
+        {filterTags.length > 0 && (
+          <p className="m-0 mt-1 flex items-center gap-1.5 flex-wrap">
+            {filterTags.map((tag) => (
+              <span
+                key={tag.key}
+                className="inline-flex items-center gap-1 text-[11px] font-semibold px-1.5 py-0.5 rounded-pill bg-primary-tint text-primary-deep"
+              >
+                <span aria-hidden>{tag.emoji}</span>
+                {tag.label}
+              </span>
+            ))}
+          </p>
+        )}
         {facts.length > 0 && (
           <p className="m-0 mt-1 flex items-center gap-2.5 flex-wrap">
             {facts.map(({ Icon: FIcon, label }, i) => (
