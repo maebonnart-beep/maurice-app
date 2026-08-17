@@ -7,7 +7,29 @@ import type { MapBounds } from "./Map";
 import { CATEGORIES, CATEGORY_MAP, SUBCATEGORIES, FILTER_GROUPS, PRICE_RANGES } from "@/data/categories";
 import type { FilterGroup } from "@/data/categories";
 import { SELECTIONS, SELECTION_GROUP_META } from "@/data/selections";
-import type { SelectionGroup } from "@/data/selections";
+import type { SelectionGroup, SelectionIconKey } from "@/data/selections";
+
+const SELECTION_ICONS: Record<SelectionIconKey, Icon> = {
+  CloudRain,
+  Users,
+  PiggyBank,
+  Heart,
+  Martini,
+  MoonStars,
+  SunHorizon,
+  Lightning,
+  ForkKnife,
+  Basket,
+  Camera,
+  Waves,
+  Leaf,
+  Binoculars,
+  Compass,
+  Mountains,
+  Wind,
+  TreePalm,
+  Sparkle,
+};
 import { Logo } from "@/components/ui/Logo";
 import { SearchInput } from "@/components/ui/SearchInput";
 import { CategoryRow } from "@/components/ui/CategoryRow";
@@ -17,7 +39,34 @@ import { useFavorites } from "@/lib/favorites";
 import { COUP_DE_COEUR_COLOR } from "@/components/ui/Badge";
 import { FilterDropdown, type DropdownOption } from "@/components/ui/FilterDropdown";
 import { iconForKey, MapPin } from "@/lib/icons";
-import { Heart, Flag, Star, ArrowLeft, House, Compass, UserCircle, Plus } from "@phosphor-icons/react";
+import {
+  Heart,
+  Flag,
+  Star,
+  ArrowLeft,
+  House,
+  Compass,
+  UserCircle,
+  Plus,
+  CloudRain,
+  Users,
+  PiggyBank,
+  Martini,
+  MoonStars,
+  SunHorizon,
+  Lightning,
+  ForkKnife,
+  Basket,
+  Camera,
+  Waves,
+  Leaf,
+  Binoculars,
+  Mountains,
+  Wind,
+  TreePalm,
+  Sparkle,
+} from "@phosphor-icons/react";
+import type { Icon } from "@phosphor-icons/react";
 
 // Badges → facette « Sélection » (coups de cœur & recommandations), toutes rubriques.
 const BADGE_META: { key: string; label: string; emoji: string }[] = [
@@ -129,6 +178,8 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
   const [openId, setOpenId] = useState<string | null>(null);
   // Accueil → Listes de Koté Moris : sélection éditoriale ouverte (null = grille des sélections).
   const [selectedListId, setSelectedListId] = useState<string | null>(null);
+  // Filtre de la grille "Explorer toutes nos sélections" (Tous / Besoins / Envies / Escapades).
+  const [selectionExploreFilter, setSelectionExploreFilter] = useState<SelectionGroup | "tous">("tous");
   const [hoveredId, setHoveredId] = useState<string | null>(null);
   const [filterByMap, setFilterByMap] = useState(false);
   const [mapBounds, setMapBounds] = useState<MapBounds | null>(null);
@@ -163,12 +214,15 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
     () => (selectedList ? selectedList.businessIds.map((id) => businessById[id]).filter((b): b is Business => !!b) : []),
     [selectedList, businessById]
   );
-  const featuredSelections = useMemo(() => SELECTIONS.filter((s) => s.featured), []);
-  const selectionsByGroup = useMemo(() => {
-    const map: Record<SelectionGroup, typeof SELECTIONS> = { besoins: [], envies: [], escapades: [] };
-    SELECTIONS.forEach((s) => map[s.group].push(s));
-    return map;
-  }, []);
+  // Mises en avant : les sélections "featured" + toutes les escapades (weekends/journées), en grandes cartes photo.
+  const highlightSelections = useMemo(
+    () => SELECTIONS.filter((s) => s.featured || s.group === "escapades"),
+    []
+  );
+  const exploreSelections = useMemo(
+    () => (selectionExploreFilter === "tous" ? SELECTIONS : SELECTIONS.filter((s) => s.group === selectionExploreFilter)),
+    [selectionExploreFilter]
+  );
 
   const subcategories = SUBCATEGORIES[active as keyof typeof SUBCATEGORIES];
 
@@ -1172,64 +1226,105 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
 
           {/* Accueil → Listes de Koté Moris : sélections éditoriales par thématique. */}
           {showHome && homeMode === "listes" && selectedListId === null && (
-            <div className="pb-16 max-w-[640px] mx-auto">
-              <div className="mb-5">
+            <div className="pb-16 max-w-[900px] mx-auto">
+              <div className="mb-5 text-center">
                 <h2 className="font-serif text-xl font-semibold leading-tight">Nos sélections</h2>
                 <p className="m-0 mt-1 text-[13px] text-muted leading-snug">
-                  Nos coups de cœur pour profiter de Maurice autrement.
+                  Nos coups de cœur pour vivre Maurice autrement.
                 </p>
               </div>
 
-              {featuredSelections.length > 0 && (
-                <div className="mb-7">
-                  <h3 className="text-[13px] font-bold text-muted uppercase tracking-wide mb-2.5">
-                    Les sélections du moment
-                  </h3>
-                  <div className="grid grid-cols-2 gap-2.5">
-                    {featuredSelections.map((s) => (
+              {highlightSelections.length > 0 && (
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 mb-8">
+                  {highlightSelections.map((s) => {
+                    const SIcon = SELECTION_ICONS[s.icon];
+                    return (
                       <button
                         key={s.id}
                         onClick={() => setSelectedListId(s.id)}
-                        className="text-left bg-surface border border-border rounded-2xl shadow-sm p-3.5 flex flex-col gap-1 active:scale-[.98] transition-transform"
+                        className="relative text-left rounded-2xl overflow-hidden aspect-[4/5] shadow-card active:scale-[.98] transition-transform"
                       >
-                        <span className="text-2xl" aria-hidden>{s.emoji}</span>
-                        <span className="font-serif text-[14.5px] font-semibold leading-tight">{s.title}</span>
-                        <span className="text-[12px] text-muted leading-snug">{s.tagline}</span>
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <img
+                          src={s.photoUrl}
+                          alt=""
+                          aria-hidden
+                          loading="lazy"
+                          className="absolute inset-0 w-full h-full object-cover"
+                        />
+                        <div
+                          className="absolute inset-0"
+                          style={{ background: "linear-gradient(180deg, rgba(0,0,0,0) 45%, rgba(0,0,0,.72) 100%)" }}
+                        />
+                        <span
+                          className="absolute top-2.5 left-2.5 w-8 h-8 rounded-full flex items-center justify-center text-white"
+                          style={{ background: "var(--primary, #087e8b)" }}
+                        >
+                          <SIcon size={17} weight="fill" aria-hidden />
+                        </span>
+                        <span className="absolute inset-x-0 bottom-0 p-3">
+                          <span className="block font-serif text-[13.5px] font-semibold leading-tight text-white">
+                            {s.title}
+                          </span>
+                          <span className="block text-[11px] text-white/80 mt-0.5">
+                            {s.businessIds.length} adresses
+                          </span>
+                        </span>
                       </button>
-                    ))}
-                  </div>
+                    );
+                  })}
                 </div>
               )}
 
-              <h3 className="text-[15px] font-bold text-ink mb-2">Explorer les sélections</h3>
-              {(Object.keys(SELECTION_GROUP_META) as SelectionGroup[]).map((group) => (
-                <div key={group} className="mb-6">
-                  <h4 className="text-[13px] font-bold text-primary-deep mb-0.5">
+              <h3 className="text-[15px] font-bold text-ink mb-2.5">Explorer toutes nos sélections</h3>
+              <div className="flex items-center gap-2 mb-3.5 overflow-x-auto no-scrollbar">
+                <button
+                  onClick={() => setSelectionExploreFilter("tous")}
+                  className={`shrink-0 px-3.5 py-1.5 rounded-pill text-[12.5px] font-bold transition-colors ${
+                    selectionExploreFilter === "tous" ? "text-on-accent" : "text-ink"
+                  }`}
+                  style={{ background: selectionExploreFilter === "tous" ? "var(--primary, #087e8b)" : "var(--surface-2, #ececef)" }}
+                >
+                  Tous
+                </button>
+                {(Object.keys(SELECTION_GROUP_META) as SelectionGroup[]).map((group) => (
+                  <button
+                    key={group}
+                    onClick={() => setSelectionExploreFilter(group)}
+                    className={`shrink-0 px-3.5 py-1.5 rounded-pill text-[12.5px] font-bold transition-colors ${
+                      selectionExploreFilter === group ? "text-on-accent" : "text-ink"
+                    }`}
+                    style={{ background: selectionExploreFilter === group ? "var(--primary, #087e8b)" : "var(--surface-2, #ececef)" }}
+                  >
                     {SELECTION_GROUP_META[group].label}
-                  </h4>
-                  <p className="m-0 mb-2.5 text-[12px] text-muted">{SELECTION_GROUP_META[group].subtitle}</p>
-                  <div className="flex flex-col gap-2">
-                    {selectionsByGroup[group].map((s) => (
-                      <button
-                        key={s.id}
-                        onClick={() => setSelectedListId(s.id)}
-                        className="text-left bg-surface border border-border rounded-card shadow-card p-3 flex items-center gap-3 active:scale-[.98] transition-transform"
-                      >
-                        <span className="text-2xl shrink-0" aria-hidden>{s.emoji}</span>
-                        <span className="flex-1 min-w-0">
-                          <span className="block font-serif text-[14.5px] font-semibold leading-tight truncate">
-                            {s.title}
-                          </span>
-                          <span className="block text-[12px] text-muted leading-snug truncate">{s.tagline}</span>
-                        </span>
-                        <span className="shrink-0 text-[11px] font-semibold text-muted">
-                          {s.businessIds.length} adr.
-                        </span>
-                      </button>
-                    ))}
-                  </div>
-                </div>
-              ))}
+                  </button>
+                ))}
+              </div>
+
+              <div className="grid grid-cols-2 sm:grid-cols-5 gap-2.5">
+                {exploreSelections.map((s) => (
+                  <button
+                    key={s.id}
+                    onClick={() => setSelectedListId(s.id)}
+                    className="text-left bg-surface border border-border rounded-2xl overflow-hidden shadow-sm active:scale-[.98] transition-transform"
+                  >
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src={s.photoUrl}
+                      alt=""
+                      aria-hidden
+                      loading="lazy"
+                      className="w-full h-24 object-cover"
+                    />
+                    <span className="block p-2.5">
+                      <span className="block font-serif text-[12.5px] font-semibold leading-tight line-clamp-2">
+                        {s.title}
+                      </span>
+                      <span className="block text-[11px] text-muted mt-1">{s.businessIds.length} adresses</span>
+                    </span>
+                  </button>
+                ))}
+              </div>
             </div>
           )}
 

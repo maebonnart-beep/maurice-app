@@ -1,12 +1,38 @@
 export type SelectionGroup = "besoins" | "envies" | "escapades";
 
+/** Nom d'une icône Phosphor (@phosphor-icons/react), résolue dans DirectoryClient via SELECTION_ICONS. */
+export type SelectionIconKey =
+  | "CloudRain"
+  | "Users"
+  | "PiggyBank"
+  | "Heart"
+  | "Martini"
+  | "MoonStars"
+  | "SunHorizon"
+  | "Lightning"
+  | "ForkKnife"
+  | "Basket"
+  | "Camera"
+  | "Waves"
+  | "Leaf"
+  | "Binoculars"
+  | "Compass"
+  | "Mountains"
+  | "Wind"
+  | "TreePalm"
+  | "Sparkle";
+
 export type Selection = {
   id: string;
   emoji: string;
+  icon: SelectionIconKey;
   title: string;
   tagline: string;
   group: SelectionGroup;
   featured?: boolean;
+  /** Photo libre de droits illustrant la sélection (thème, pas une fiche précise). */
+  photoUrl: string;
+  photoCredit: string;
   businessIds: string[];
 };
 
@@ -29,6 +55,9 @@ export const SELECTIONS: Selection[] = [
     title: "Que faire quand il pleut ?",
     tagline: "Les meilleurs plans pour sauver une journée pluvieuse",
     group: "besoins",
+    icon: "CloudRain",
+    photoUrl: "https://images.pexels.com/photos/33115262/pexels-photo-33115262.jpeg?auto=compress&cs=tinysrgb&w=800",
+    photoCredit: "Павел Хлыстунов / Pexels",
     businessIds: [
       "aventure-du-sucre",
       "odysseo-oceanarium-mauritius-ltd",
@@ -46,6 +75,9 @@ export const SELECTIONS: Selection[] = [
     title: "Avec les enfants",
     tagline: "Des endroits où les enfants vont vraiment s'éclater",
     group: "besoins",
+    icon: "Users",
+    photoUrl: "https://images.pexels.com/photos/28927726/pexels-photo-28927726.jpeg?auto=compress&cs=tinysrgb&w=800",
+    photoCredit: "Nastia Ligrain / Pexels",
     featured: true,
     businessIds: [
       "casela-nature-parks",
@@ -64,6 +96,9 @@ export const SELECTIONS: Selection[] = [
     title: "Maurice sans exploser le budget",
     tagline: "Passer un bon moment sans se ruiner",
     group: "besoins",
+    icon: "PiggyBank",
+    photoUrl: "https://images.pexels.com/photos/9660/business-money-pink-coins.jpg?auto=compress&cs=tinysrgb&w=800",
+    photoCredit: "ClickerHappy / Pexels",
     businessIds: [
       "coin-casse-croute",
       "chez-marilyn",
@@ -81,6 +116,9 @@ export const SELECTIONS: Selection[] = [
     title: "Pour un date",
     tagline: "Restaurants et endroits romantiques",
     group: "besoins",
+    icon: "Heart",
+    photoUrl: "https://images.pexels.com/photos/7263555/pexels-photo-7263555.jpeg?auto=compress&cs=tinysrgb&w=800",
+    photoCredit: "Rachel Claire / Pexels",
     businessIds: [
       "lakaz-chamarel-view-bar",
       "chateau-mon-desir",
@@ -98,6 +136,9 @@ export const SELECTIONS: Selection[] = [
     title: "Où boire un verre ?",
     tagline: "Bars, rooftops, beach bars…",
     group: "besoins",
+    icon: "Martini",
+    photoUrl: "https://images.pexels.com/photos/29346150/pexels-photo-29346150.jpeg?auto=compress&cs=tinysrgb&w=800",
+    photoCredit: "Asad Photo Maldives / Pexels",
     businessIds: [
       "bisou-rooftop-bar-restaurant-lux-grand-baie",
       "rooftop-adults-only-restaurant-bar-lounge",
@@ -115,6 +156,9 @@ export const SELECTIONS: Selection[] = [
     title: "Que faire ce soir ?",
     tagline: "Cinéma, casino, bowling ou rooftop pour finir la journée",
     group: "besoins",
+    icon: "MoonStars",
+    photoUrl: "https://images.pexels.com/photos/11808313/pexels-photo-11808313.jpeg?auto=compress&cs=tinysrgb&w=800",
+    photoCredit: "Chris F / Pexels",
     businessIds: [
       "mcine-trianon",
       "grand-casino-caudan",
@@ -134,6 +178,9 @@ export const SELECTIONS: Selection[] = [
     title: "Les plus beaux couchers de soleil",
     tagline: "Nos spots préférés pour finir la journée en beauté",
     group: "envies",
+    icon: "SunHorizon",
+    photoUrl: "https://images.pexels.com/photos/7263551/pexels-photo-7263551.jpeg?auto=compress&cs=tinysrgb&w=800",
+    photoCredit: "Rachel Claire / Pexels",
     featured: true,
     businessIds: [
       "plage-le-morne",
@@ -152,6 +199,9 @@ export const SELECTIONS: Selection[] = [
     title: "Les activités les plus décoiffantes",
     tagline: "Pour ceux qui veulent de l'adrénaline",
     group: "envies",
+    icon: "Lightning",
+    photoUrl: "https://images.pexels.com/photos/35412975/pexels-photo-35412975.jpeg?auto=compress&cs=tinysrgb&w=800",
+    photoCredit: "Margo Evardson / Pexels",
     businessIds: [
       "skydive-mauritius",
       "zip-line-adventure",
@@ -169,6 +219,9 @@ export const SELECTIONS: Selection[] = [
     title: "Les adresses les plus typiques",
     tagline: "Pour goûter au vrai Maurice",
     group: "envies",
+    icon: "ForkKnife",
+    photoUrl: "https://images.pexels.com/photos/674574/pexels-photo-674574.jpeg?auto=compress&cs=tinysrgb&w=800",
+    photoCredit: "Cats Coming / Pexels",
     featured: true,
     businessIds: [
       "chez-vassen-restaurant",
@@ -187,6 +240,9 @@ export const SELECTIONS: Selection[] = [
     title: "Pour découvrir le vrai Maurice",
     tagline: "Marché, boutique, culture… des adresses très locales",
     group: "envies",
+    icon: "Basket",
+    photoUrl: "https://images.pexels.com/photos/1187299/pexels-photo-1187299.jpeg?auto=compress&cs=tinysrgb&w=800",
+    photoCredit: "Madison Inouye / Pexels",
     businessIds: [
       "port-louis-central-market",
       "marche-de-quatre-bornes",
@@ -204,6 +260,9 @@ export const SELECTIONS: Selection[] = [
     title: "Les endroits les plus Instagrammables",
     tagline: "Les spots qui valent le détour",
     group: "envies",
+    icon: "Camera",
+    photoUrl: "https://images.pexels.com/photos/29471844/pexels-photo-29471844.jpeg?auto=compress&cs=tinysrgb&w=800",
+    photoCredit: "Nursevim / Pexels",
     businessIds: [
       "chateau-de-labourdonnais",
       "plage-ile-aux-cerfs",
@@ -221,6 +280,9 @@ export const SELECTIONS: Selection[] = [
     title: "Les plus belles adresses les pieds dans le sable",
     tagline: "Manger ou boire face au lagon",
     group: "envies",
+    icon: "Waves",
+    photoUrl: "https://images.pexels.com/photos/315085/pexels-photo-315085.jpeg?auto=compress&cs=tinysrgb&w=800",
+    photoCredit: "Pexels",
     businessIds: [
       "les-canisses-resto-plage",
       "c-beach-club-bel-ombre",
@@ -238,6 +300,9 @@ export const SELECTIONS: Selection[] = [
     title: "Détente & nature",
     tagline: "Pour couper complètement",
     group: "envies",
+    icon: "Leaf",
+    photoUrl: "https://images.pexels.com/photos/17005430/pexels-photo-17005430.jpeg?auto=compress&cs=tinysrgb&w=800",
+    photoCredit: "Alex Does Pictures / Pexels",
     businessIds: [
       "vanilla-village-2",
       "the-bay-club-at-anahita",
@@ -255,6 +320,9 @@ export const SELECTIONS: Selection[] = [
     title: "Les pépites encore secrètes",
     tagline: "Les endroits moins connus des touristes",
     group: "envies",
+    icon: "Binoculars",
+    photoUrl: "https://images.pexels.com/photos/15256345/pexels-photo-15256345.jpeg?auto=compress&cs=tinysrgb&w=800",
+    photoCredit: "Kyle Karbowski / Pexels",
     businessIds: [
       "musee-de-la-petite-collection",
       "robert-edward-hart-memorial-museum",
@@ -274,6 +342,9 @@ export const SELECTIONS: Selection[] = [
     title: "Un weekend dans le Nord",
     tagline: "Notre sélection pour 2 jours",
     group: "escapades",
+    icon: "Compass",
+    photoUrl: "https://images.pexels.com/photos/33315208/pexels-photo-33315208.jpeg?auto=compress&cs=tinysrgb&w=800",
+    photoCredit: "William ZALI / Pexels",
     businessIds: [
       "plage-mont-choisy",
       "chateau-de-labourdonnais",
@@ -291,6 +362,9 @@ export const SELECTIONS: Selection[] = [
     title: "Un weekend dans le Sud",
     tagline: "Nature, paysages et découvertes",
     group: "escapades",
+    icon: "Mountains",
+    photoUrl: "https://images.pexels.com/photos/34671909/pexels-photo-34671909.jpeg?auto=compress&cs=tinysrgb&w=800",
+    photoCredit: "Adrien Olichon / Pexels",
     businessIds: [
       "plage-le-morne",
       "la-vanille-nature-park",
@@ -308,6 +382,9 @@ export const SELECTIONS: Selection[] = [
     title: "Un weekend dans l'Est",
     tagline: "Lagons, douceur et déconnexion",
     group: "escapades",
+    icon: "Wind",
+    photoUrl: "https://images.pexels.com/photos/30422272/pexels-photo-30422272.jpeg?auto=compress&cs=tinysrgb&w=800",
+    photoCredit: "François Balédent / Pexels",
     businessIds: [
       "plage-ile-aux-cerfs",
       "plage-belle-mare",
@@ -325,6 +402,9 @@ export const SELECTIONS: Selection[] = [
     title: "Un weekend dans l'Ouest",
     tagline: "Soleil, mer et ambiance sunset",
     group: "escapades",
+    icon: "SunHorizon",
+    photoUrl: "https://images.pexels.com/photos/32041595/pexels-photo-32041595.jpeg?auto=compress&cs=tinysrgb&w=800",
+    photoCredit: "Alix Lee / Pexels",
     businessIds: [
       "plage-flic-en-flac",
       "casela-nature-parks",
@@ -342,6 +422,9 @@ export const SELECTIONS: Selection[] = [
     title: "Une journée au paradis",
     tagline: "Les plus belles plages, un déjeuner et un coucher de soleil",
     group: "escapades",
+    icon: "TreePalm",
+    photoUrl: "https://images.pexels.com/photos/37120933/pexels-photo-37120933.jpeg?auto=compress&cs=tinysrgb&w=800",
+    photoCredit: "Pornsiri Thetchutithamgull / Pexels",
     featured: true,
     businessIds: [
       "plage-ile-aux-cerfs",
@@ -360,6 +443,9 @@ export const SELECTIONS: Selection[] = [
     title: "Inviter quelqu'un qui découvre Maurice",
     tagline: "Des lieux particulièrement représentatifs ou impressionnants",
     group: "escapades",
+    icon: "Sparkle",
+    photoUrl: "https://images.pexels.com/photos/3761182/pexels-photo-3761182.jpeg?auto=compress&cs=tinysrgb&w=800",
+    photoCredit: "Castorly Stock / Pexels",
     businessIds: [
       "chateau-de-labourdonnais",
       "le-pescatore",
