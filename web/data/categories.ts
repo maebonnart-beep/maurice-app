@@ -1,16 +1,14 @@
 import type { Category, CategoryKey, PriceRange } from "@/lib/types";
 
 export const CATEGORIES: Category[] = [
-  { key: "activites", label: "Activités & loisirs", emoji: "🎡", color: "#ef6a4c" },
-  { key: "food", label: "Food", emoji: "🍽️", color: "#d4483f" },
-  { key: "utiles", label: "Utiles", emoji: "🧰", color: "#4a6572" },
-  { key: "coaching", label: "Coaching", emoji: "🎯", color: "#7c5cf0" },
-  { key: "soins-bien-etre", label: "Soins et Bien-être", emoji: "💆", color: "#c9457a" },
-  { key: "seconde-main", label: "Seconde main", emoji: "♻️", color: "#2e8b57" },
-  { key: "business-ttv", label: "Business & TTV", emoji: "💻", color: "#1f8a9b" },
-  { key: "immobilier", label: "Immobilier", emoji: "🏠", color: "#b07d48" },
-  { key: "education", label: "Éducation & enfants", emoji: "🎓", color: "#3f7cac" },
-  { key: "evenements", label: "Événements", emoji: "🎉", color: "#e0518a" },
+  { key: "manger-boire", label: "Manger & boire", emoji: "🍽️", color: "#d4483f" },
+  { key: "sortir-decouvrir", label: "Sortir & découvrir", emoji: "🎡", color: "#ef6a4c" },
+  { key: "faire-du-sport", label: "Faire du sport", emoji: "🏃", color: "#2e8b57" },
+  { key: "sante-bien-etre", label: "Santé & bien-être", emoji: "💆", color: "#c9457a" },
+  { key: "acheter-equiper", label: "Acheter & s'équiper", emoji: "🛍️", color: "#b07d48" },
+  { key: "vie-pratique", label: "Vie pratique", emoji: "🧰", color: "#4a6572" },
+  { key: "famille-travail", label: "Famille & Travail", emoji: "🧑‍💼", color: "#7c5cf0" },
+  { key: "agenda", label: "Agenda", emoji: "🎉", color: "#e0518a" },
 ];
 
 export const CATEGORY_MAP = Object.fromEntries(
@@ -19,270 +17,135 @@ export const CATEGORY_MAP = Object.fromEntries(
 
 export type Subcategory = { key: string; label: string; emoji: string };
 
-export type Subgroup = { key: string; label: string; emoji: string; parent: string; children: string[] };
-
-export type Family = {
-  key: string;
-  label: string;
-  emoji: string;
-  children: string[];
-  /** Sous-groupes nichés sous un thème précis de `children` (ex: cuisines sous "restaurants"). */
-  subgroups?: Subgroup[];
-  /** "end" affiche ce groupe après toutes les rubriques non groupées, au lieu de l'ordre de déclaration. */
-  position?: "end";
-};
-
-export const FAMILIES: Partial<Record<CategoryKey, Family[]>> = {
-  food: [
-    {
-      key: "restauration",
-      label: "Restauration",
-      emoji: "🍽️",
-      children: [
-        "restaurants", "bars", "cafes-terrasses", "snacks-plage", "tables-hotes", "chefs-domicile",
-        "glaciers",
-      ],
-      subgroups: [
-        {
-          key: "cuisines",
-          label: "Cuisines",
-          emoji: "🌍",
-          parent: "restaurants",
-          children: [
-            "mauricienne", "fruits-de-mer", "indienne", "asiatique", "sushis", "europeenne",
-            "italien", "grillades", "vegetarien", "kids-friendly", "tables-exception",
-            "plus-belles-vues", "frequente-locaux",
-          ],
-        },
-      ],
-    },
-    {
-      key: "commerces",
-      label: "Commerces",
-      emoji: "🛒",
-      children: [
-        "grandes-surfaces", "epiceries-specialisees", "boucheries", "poissonneries",
-        "fruits-et-legumes", "marches",
-        "livraisons", "boulangeries", "produits-francais", "vins-spiritueux",
-      ],
-    },
-  ],
-  activites: [
-    {
-      key: "sports",
-      label: "Sports",
-      emoji: "🏃",
-      children: [
-        "complexes-sportifs", "golf", "randonnee-trail", "sports-nautiques",
-        "centres-equestres", "tennis-padel", "gym-fitness",
-      ],
-      subgroups: [
-        {
-          key: "disciplines-nautiques",
-          label: "Disciplines",
-          emoji: "🌊",
-          parent: "sports-nautiques",
-          children: [
-            "kitesurf", "stand-up-paddle", "navigation-bateau", "ski-nautique", "surf", "kayak",
-            "parachute-ascensionnel", "plongee-sous-marine", "planche-a-voile", "snorkeling",
-          ],
-        },
-      ],
-    },
-    {
-      key: "malls-shopping",
-      label: "Malls & shopping",
-      emoji: "🛍️",
-      position: "end",
-      children: ["malls", "shopping"],
-      subgroups: [
-        {
-          key: "types-shopping",
-          label: "Types de shopping",
-          emoji: "🛒",
-          parent: "shopping",
-          children: [
-            "mode-adultes", "mode-enfants", "materiel-sports", "livres", "jeux", "souvenirs",
-            "equipement-maison", "beaute", "electromenager", "high-tech",
-          ],
-        },
-      ],
-    },
-  ],
-  "seconde-main": [
-    {
-      key: "particuliers",
-      label: "Particuliers",
-      emoji: "🙋",
-      children: ["eq-maison-particuliers", "vetements-particuliers", "livres-particuliers"],
-    },
-    {
-      key: "magasins-occasion",
-      label: "Magasins d'occasion",
-      emoji: "🏪",
-      children: [
-        "equipement-maison", "voitures-2-roues", "habits-adultes",
-        "jeux-livres",
-      ],
-    },
-  ],
-};
+export type FilterOption = { key: string; label: string; emoji: string };
+export type FilterGroup = { key: string; label: string; appliesTo: string[]; options: FilterOption[] };
 
 export const SUBCATEGORIES: Partial<Record<CategoryKey, Subcategory[]>> = {
-  activites: [
-    { key: "parcs-animaliers", label: "Parcs animaliers", emoji: "🦁" },
-    { key: "parcs-aventures", label: "Parcs aventures", emoji: "🎢" },
-    { key: "complexes-sportifs", label: "Complexes sportifs", emoji: "🏟️" },
-    { key: "gym-fitness", label: "Gym & fitness", emoji: "💪" },
-    { key: "sports-nautiques", label: "Sports nautiques", emoji: "🏄" },
-    { key: "kitesurf", label: "Kitesurf", emoji: "🪁" },
-    { key: "stand-up-paddle", label: "Stand Up Paddle", emoji: "🏄‍♀️" },
-    { key: "navigation-bateau", label: "Navigation bateau", emoji: "⛵" },
-    { key: "ski-nautique", label: "Ski nautique", emoji: "🚤" },
-    { key: "surf", label: "Surf", emoji: "🏄‍♂️" },
-    { key: "kayak", label: "Kayak", emoji: "🛶" },
-    { key: "parachute-ascensionnel", label: "Parachute ascensionnel", emoji: "🪂" },
-    { key: "plongee-sous-marine", label: "Plongée sous-marine", emoji: "🤿" },
-    { key: "planche-a-voile", label: "Planche à voile", emoji: "🌬️" },
-    { key: "snorkeling", label: "Snorkeling", emoji: "🐠" },
-    { key: "golf", label: "Golf", emoji: "⛳" },
-    { key: "centres-equestres", label: "Centres équestres", emoji: "🐴" },
-    { key: "tennis-padel", label: "Tennis & padel", emoji: "🎾" },
-    { key: "randonnee-trail", label: "Randonnée & trail", emoji: "🥾" },
-    { key: "parcs-nationaux-cascades", label: "Parcs nationaux & cascades", emoji: "🏞️" },
-    { key: "peche", label: "Pêche", emoji: "🎣" },
-    { key: "plages", label: "Plages", emoji: "🏖️" },
-    { key: "parcs-botaniques", label: "Parcs botaniques", emoji: "🌺" },
-    { key: "culture-patrimoine", label: "Culture & patrimoine", emoji: "🏛️" },
-    { key: "malls", label: "Malls", emoji: "🏬" },
-    { key: "shopping", label: "Shopping", emoji: "🛍️" },
-    { key: "mode-adultes", label: "Mode adultes", emoji: "👗" },
-    { key: "mode-enfants", label: "Mode enfants", emoji: "🧒" },
-    { key: "materiel-sports", label: "Matériel de sports", emoji: "🏸" },
-    { key: "livres", label: "Librairies", emoji: "📚" },
-    { key: "jeux", label: "Jeux", emoji: "🎲" },
-    { key: "souvenirs", label: "Souvenirs", emoji: "🎁" },
-    { key: "equipement-maison", label: "Équipement maison", emoji: "🛋️" },
-    { key: "beaute", label: "Beauté & parfums", emoji: "💄" },
-    { key: "electromenager", label: "Électroménager", emoji: "🔌" },
-    { key: "high-tech", label: "High-tech & électronique", emoji: "📱" },
-    { key: "activites-enfants-famille", label: "Activités enfants & famille", emoji: "🎠" },
-    { key: "centres-loisirs-animations-enfants", label: "Centres de loisirs & animations enfants", emoji: "🤹" },
-    { key: "excursions", label: "Excursions", emoji: "🚐" },
-    { key: "cours-de-cuisine", label: "Cours de cuisine", emoji: "👨‍🍳" },
-    { key: "rhumeries", label: "Rhumeries & distilleries", emoji: "🥃" },
-    { key: "casinos", label: "Casinos", emoji: "🎰" },
-    { key: "bowling", label: "Bowling", emoji: "🎳" },
-    { key: "karting", label: "Karting", emoji: "🏎️" },
-    { key: "escape-game", label: "Escape games", emoji: "🧩" },
-    { key: "cinemas", label: "Cinémas", emoji: "🎬" },
-    { key: "bibliotheque-mediatheque", label: "Bibliothèque & médiathèque", emoji: "📚" },
-  ],
-  food: [
+  "manger-boire": [
     { key: "restaurants", label: "Restaurants", emoji: "🍽️" },
-    { key: "bars", label: "Bars", emoji: "🍹" },
-    { key: "cafes-terrasses", label: "Cafés & terrasses", emoji: "☕" },
-    { key: "snacks-plage", label: "Snacks de plage", emoji: "🥙" },
-    { key: "tables-hotes", label: "Tables d'hôtes", emoji: "🍲" },
-    { key: "chefs-domicile", label: "Chefs à domicile", emoji: "👨‍🍳" },
-    { key: "grandes-surfaces", label: "Grandes surfaces alimentaires", emoji: "🏬" },
-    { key: "epiceries-specialisees", label: "Épiceries spécialisées", emoji: "🧺" },
-    { key: "boucheries", label: "Boucheries", emoji: "🥩" },
-    { key: "poissonneries", label: "Poissonneries", emoji: "🐟" },
-    { key: "fruits-et-legumes", label: "Fruits & légumes", emoji: "🥬" },
-    { key: "marches", label: "Marchés", emoji: "🥭" },
+    { key: "cafes-bars-glaciers", label: "Cafés, bars & glaciers", emoji: "☕" },
+    { key: "tables-hotes-chefs-domicile", label: "Tables d'hôtes & chefs à domicile", emoji: "🍲" },
+    { key: "commerces-alimentaires", label: "Commerces alimentaires", emoji: "🛒" },
+    { key: "marches-produits-locaux", label: "Marchés & produits locaux", emoji: "🥭" },
     { key: "livraisons", label: "Livraisons", emoji: "🚚" },
-    { key: "boulangeries", label: "Boulangerie, pâtisseries & petit snacking", emoji: "🥐" },
-    { key: "glaciers", label: "Glaciers", emoji: "🍦" },
-    { key: "produits-francais", label: "Produits français", emoji: "🇫🇷" },
-    { key: "vins-spiritueux", label: "Vins & spiritueux", emoji: "🍷" },
-    { key: "mauricienne", label: "Mauricienne & créole", emoji: "🌶️" },
-    { key: "fruits-de-mer", label: "Fruits de mer", emoji: "🦐" },
-    { key: "indienne", label: "Indienne", emoji: "🍛" },
-    { key: "asiatique", label: "Chinoise & asiatique", emoji: "🥢" },
-    { key: "sushis", label: "Sushis", emoji: "🍣" },
-    { key: "europeenne", label: "Européenne & française", emoji: "🥖" },
-    { key: "italien", label: "Italien & pizza", emoji: "🍕" },
-    { key: "grillades", label: "Viandes & grillades", emoji: "🥩" },
-    { key: "vegetarien", label: "Végétarien", emoji: "🥗" },
-    { key: "kids-friendly", label: "Kid's friendly", emoji: "🧒" },
-    { key: "tables-exception", label: "Tables d'exception", emoji: "🏆" },
-    { key: "plus-belles-vues", label: "Plus belles vues", emoji: "🌅" },
-    { key: "frequente-locaux", label: "Fréquenté par les locaux", emoji: "👥" },
   ],
-  utiles: [
-    { key: "cliniques-privees", label: "Cliniques privées", emoji: "🏥" },
-    { key: "centres-sante-publics", label: "Centres de santé publics", emoji: "⚕️" },
-    { key: "medecins", label: "Médecins & généralistes", emoji: "🩺" },
-    { key: "dentistes", label: "Dentistes", emoji: "🦷" },
-    { key: "opticiens", label: "Opticiens", emoji: "👓" },
-    { key: "laboratoires", label: "Laboratoires d'analyses", emoji: "🔬" },
+  "sortir-decouvrir": [
+    { key: "excursions-sorties", label: "Excursions & sorties", emoji: "🚐" },
+    { key: "culture-patrimoine", label: "Culture & patrimoine", emoji: "🏛️" },
+    { key: "plages-nature", label: "Plages & nature", emoji: "🏖️" },
+    { key: "parcs-activites-famille", label: "Parcs & activités famille", emoji: "🎢" },
+    { key: "activites-enfants-famille", label: "Activités enfants & famille", emoji: "🎠" },
+    { key: "casinos-loisirs", label: "Casinos & loisirs", emoji: "🎰" },
+    { key: "cinemas", label: "Cinémas", emoji: "🎬" },
+  ],
+  "faire-du-sport": [
+    { key: "salles-sport-fitness", label: "Salles de sport & fitness", emoji: "💪" },
+    { key: "tennis-padel", label: "Tennis & padel", emoji: "🎾" },
+    { key: "golf", label: "Golf", emoji: "⛳" },
+    { key: "randonnee-trail", label: "Randonnée & trail", emoji: "🥾" },
+    { key: "sports-nautiques", label: "Sports nautiques", emoji: "🏄" },
+    { key: "equitation-autres-sports", label: "Équitation & autres sports", emoji: "🐴" },
+  ],
+  "sante-bien-etre": [
+    { key: "medecins-soins", label: "Médecins & soins", emoji: "🩺" },
+    { key: "pharmacies-laboratoires", label: "Pharmacies & laboratoires", emoji: "💊" },
+    { key: "cliniques-hopitaux", label: "Cliniques & hôpitaux", emoji: "🏥" },
+    { key: "spa-instituts-massages", label: "Spa, instituts & massages", emoji: "🧖‍♀️" },
+    { key: "coiffeurs-barbiers-beaute", label: "Coiffeurs, barbiers & beauté", emoji: "💇" },
+    { key: "yoga-bien-etre", label: "Yoga & pratiques bien-être", emoji: "🧘" },
     { key: "veterinaires", label: "Vétérinaires", emoji: "🐾" },
-    { key: "postes-police", label: "Postes de police", emoji: "🚓" },
-    { key: "poste", label: "Bureaux de poste", emoji: "📮" },
-    { key: "assurances", label: "Assurances", emoji: "🛡️" },
-    { key: "banques", label: "Banques", emoji: "🏦" },
-    { key: "distributeurs", label: "Distributeurs (ATM)", emoji: "🏧" },
-    { key: "pharmacies", label: "Pharmacies", emoji: "💊" },
-    { key: "expatriation-visas", label: "Expatriation & visas", emoji: "🛂" },
-    { key: "photographes", label: "Photographes (passeport & ID)", emoji: "📷" },
-    { key: "depannages", label: "Dépannages", emoji: "🔧" },
-    { key: "informatique-reparation", label: "Informatique (dépannage & pièces)", emoji: "💻" },
-    { key: "taxis-transferts", label: "Taxis & transferts", emoji: "🚕" },
-    { key: "location-voiture", label: "Location de voiture", emoji: "🚙" },
-    { key: "vtc-apps", label: "Applications VTC & réservation", emoji: "📱" },
-    { key: "telecom", label: "Télécom & internet", emoji: "📶" },
-    { key: "plateformes-multiservices", label: "Plateformes multiservices & touristiques", emoji: "🧳" },
-    { key: "garages-mecaniciens", label: "Garages & mécaniciens", emoji: "🔧" },
-    { key: "concessionnaires", label: "Concessionnaires auto", emoji: "🚗" },
-    { key: "controle-technique", label: "Contrôle technique (fitness)", emoji: "🛠️" },
-    { key: "notaires", label: "Notaires", emoji: "📜" },
-    { key: "avocats", label: "Avocats & juristes", emoji: "⚖️" },
-    { key: "comptables", label: "Comptables & experts-comptables", emoji: "🧮" },
-    { key: "pressing-blanchisserie", label: "Pressing & blanchisserie", emoji: "🧺" },
-    { key: "ambassades-consulats", label: "Ambassades & consulats", emoji: "🏛️" },
   ],
-  coaching: [
-    { key: "sports-bien-etre", label: "Sports & bien-être", emoji: "🏋️" },
-    { key: "business", label: "Business", emoji: "💼" },
-    { key: "famille", label: "Famille", emoji: "👨‍👩‍👧" },
+  "acheter-equiper": [
+    { key: "malls-shopping", label: "Malls & shopping", emoji: "🏬" },
+    { key: "mode-accessoires", label: "Mode & accessoires", emoji: "👗" },
+    { key: "maison-equipement", label: "Maison & équipement", emoji: "🛋️" },
+    { key: "high-tech-electromenager", label: "High-tech & électroménager", emoji: "📱" },
+    { key: "librairies-jeux-loisirs", label: "Librairies, jeux & loisirs", emoji: "📚" },
+    { key: "souvenirs-cadeaux", label: "Souvenirs & cadeaux", emoji: "🎁" },
+    { key: "seconde-main-boutiques", label: "Seconde main (boutiques)", emoji: "🏪" },
+    { key: "seconde-main-particuliers", label: "Seconde main (particuliers)", emoji: "🙋" },
   ],
-  "soins-bien-etre": [
-    { key: "spa-instituts", label: "Spa et instituts", emoji: "🧖‍♀️" },
-    { key: "coiffeurs", label: "Coiffeurs", emoji: "💇" },
-    { key: "onglerie-manucure", label: "Onglerie & manucure", emoji: "💅" },
-    { key: "barbiers", label: "Barbiers", emoji: "💈" },
-    { key: "tatouage-piercing", label: "Tatouage & piercing", emoji: "🖋️" },
-    { key: "yoga-pilates", label: "Yoga & pilates", emoji: "🧘" },
-    { key: "medecine-douce", label: "Médecine douce", emoji: "🌿" },
+  "vie-pratique": [
+    { key: "banques-assurances-argent", label: "Banques, assurances & argent", emoji: "🏦" },
+    { key: "poste-demarches", label: "Poste & démarches", emoji: "📮" },
+    { key: "police-ambassades-consulats", label: "Police, ambassades & consulats", emoji: "🚓" },
+    { key: "avocats-notaires-comptables", label: "Avocats, notaires & comptables", emoji: "⚖️" },
+    { key: "telecom-internet", label: "Télécom & internet", emoji: "📶" },
+    { key: "auto-garages-concessionnaires", label: "Auto (garages, concessionnaires & contrôle)", emoji: "🔧" },
+    { key: "taxis-vtc-location", label: "Taxis, VTC & location", emoji: "🚕" },
+    { key: "depannages-services", label: "Dépannages & services", emoji: "🔧" },
+    { key: "immobilier", label: "Immobilier", emoji: "🏘️" },
   ],
-  "business-ttv": [
-    { key: "coworking", label: "Espaces de coworking", emoji: "🧑‍💻" },
-    { key: "cafe-coworking", label: "Cafés & spots télétravail", emoji: "☕" },
-    { key: "garde-enfants", label: "Coworking + garde enfants", emoji: "👶" },
-    { key: "networking", label: "Networking", emoji: "🤝" },
-  ],
-  "seconde-main": [
-    { key: "equipement-maison", label: "Équipement maison", emoji: "🛋️" },
-    { key: "voitures-2-roues", label: "Voitures & 2 roues", emoji: "🚗" },
-    { key: "habits-adultes", label: "Habits & chaussures adultes", emoji: "👕" },
-    { key: "jeux-livres", label: "Jeux & livres", emoji: "🎲" },
-    { key: "eq-maison-particuliers", label: "Équipement maison", emoji: "🛋️" },
-    { key: "vetements-particuliers", label: "Vêtements", emoji: "👕" },
-    { key: "livres-particuliers", label: "Livres", emoji: "📚" },
-  ],
-  immobilier: [
-    { key: "agences", label: "Agences immobilières", emoji: "🏘️" },
-  ],
-  education: [
-    { key: "ecoles-privees-internationales", label: "Écoles privées & internationales", emoji: "🎒" },
+  "famille-travail": [
     { key: "creches-garderies", label: "Crèches & garderies", emoji: "👶" },
+    { key: "ecoles", label: "Écoles", emoji: "🎒" },
+    { key: "centres-loisirs-animations", label: "Centres de loisirs & animations", emoji: "🤹" },
+    { key: "coworking-teletravail", label: "Coworking & télétravail", emoji: "🧑‍💻" },
+    { key: "business-networking", label: "Business & networking", emoji: "🤝" },
   ],
-  evenements: [
-    { key: "culturels", label: "Fêtes & festivals culturels", emoji: "🎭" },
-    { key: "sportifs", label: "Événements sportifs", emoji: "🏆" },
+  "agenda": [
+    { key: "evenements-culturels", label: "Événements culturels", emoji: "🎭" },
+    { key: "evenements-sportifs", label: "Événements sportifs", emoji: "🏆" },
   ],
 };
+
+/** Groupes de filtres transversaux, appliqués à l'intérieur d'une rubrique (ex. cuisine sous "restaurants"). */
+export const FILTER_GROUPS: FilterGroup[] = [
+  {
+    key: "cuisine",
+    label: "Cuisine",
+    appliesTo: ["restaurants"],
+    options: [
+      { key: "mauricienne", label: "Mauricienne & créole", emoji: "🌶️" },
+      { key: "fruits-de-mer", label: "Fruits de mer", emoji: "🦐" },
+      { key: "indienne", label: "Indienne", emoji: "🍛" },
+      { key: "asiatique", label: "Chinoise & asiatique", emoji: "🥢" },
+      { key: "sushis", label: "Sushis", emoji: "🍣" },
+      { key: "europeenne", label: "Européenne & française", emoji: "🥖" },
+      { key: "italien", label: "Italien & pizza", emoji: "🍕" },
+      { key: "grillades", label: "Viandes & grillades", emoji: "🥩" },
+      { key: "vegetarien", label: "Végétarien", emoji: "🥗" },
+    ],
+  },
+  {
+    key: "ambiance-public",
+    label: "Ambiance / public",
+    appliesTo: ["restaurants"],
+    options: [
+      { key: "kids-friendly", label: "Kid's friendly", emoji: "🧒" },
+      { key: "tables-exception", label: "Tables d'exception", emoji: "🏆" },
+      { key: "plus-belles-vues", label: "Plus belles vues", emoji: "🌅" },
+      { key: "frequente-locaux", label: "Fréquenté par les locaux", emoji: "👥" },
+    ],
+  },
+  {
+    key: "discipline-nautique",
+    label: "Discipline",
+    appliesTo: ["sports-nautiques"],
+    options: [
+      { key: "kitesurf", label: "Kitesurf", emoji: "🪁" },
+      { key: "stand-up-paddle", label: "Stand Up Paddle", emoji: "🏄‍♀️" },
+      { key: "navigation-bateau", label: "Navigation bateau", emoji: "⛵" },
+      { key: "ski-nautique", label: "Ski nautique", emoji: "🚤" },
+      { key: "surf", label: "Surf", emoji: "🏄‍♂️" },
+      { key: "kayak", label: "Kayak", emoji: "🛶" },
+      { key: "parachute-ascensionnel", label: "Parachute ascensionnel", emoji: "🪂" },
+      { key: "plongee-sous-marine", label: "Plongée sous-marine", emoji: "🤿" },
+      { key: "planche-a-voile", label: "Planche à voile", emoji: "🌬️" },
+      { key: "snorkeling", label: "Snorkeling", emoji: "🐠" },
+    ],
+  },
+  {
+    key: "specialite-origine",
+    label: "Spécialité",
+    appliesTo: ["commerces-alimentaires"],
+    options: [
+      { key: "produits-francais", label: "Produits français", emoji: "🇫🇷" },
+    ],
+  },
+];
+
+export const FILTER_GROUP_MAP = Object.fromEntries(FILTER_GROUPS.map((g) => [g.key, g]));
 
 export const PRICE_RANGES: { key: PriceRange; label: string; symbol: string }[] = [
   { key: "bon-marche", label: "Bon marché", symbol: "€" },

@@ -4,22 +4,18 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import dynamic from "next/dynamic";
 import type { Business, CategoryKey } from "@/lib/types";
 import type { MapBounds } from "./Map";
-import { CATEGORIES, CATEGORY_MAP, SUBCATEGORIES, FAMILIES, PRICE_RANGES } from "@/data/categories";
-import type { Family, Subgroup } from "@/data/categories";
+import { CATEGORIES, CATEGORY_MAP, SUBCATEGORIES, FILTER_GROUPS, PRICE_RANGES } from "@/data/categories";
+import type { FilterGroup } from "@/data/categories";
 import { Logo } from "@/components/ui/Logo";
 import { SearchInput } from "@/components/ui/SearchInput";
 import { CategoryRow } from "@/components/ui/CategoryRow";
-import { UniversCard } from "@/components/ui/UniversCard";
 import { BusinessCard } from "@/components/ui/BusinessCard";
 import { BusinessDetail } from "@/components/ui/BusinessDetail";
 import { useFavorites } from "@/lib/favorites";
 import { COUP_DE_COEUR_COLOR } from "@/components/ui/Badge";
 import { FilterDropdown, type DropdownOption } from "@/components/ui/FilterDropdown";
 import { iconForKey, MapPin } from "@/lib/icons";
-import { Heart, Flag, Star, ArrowLeft, House, Compass, UserCircle, Plus, CaretDown } from "@phosphor-icons/react";
-
-// Attributs d'ambiance propres aux restaurants (facette « Ambiance »).
-const RESTO_ATTRS = ["tables-exception", "plus-belles-vues", "frequente-locaux", "kids-friendly"];
+import { Heart, Flag, Star, ArrowLeft, House, Compass, UserCircle, Plus } from "@phosphor-icons/react";
 
 // Badges → facette « Sélection » (coups de cœur & recommandations), toutes rubriques.
 const BADGE_META: { key: string; label: string; emoji: string }[] = [
@@ -31,293 +27,12 @@ const BADGE_META: { key: string; label: string; emoji: string }[] = [
 const UNCLASSIFIED = "__unclassified__";
 const SIDEBAR_VISIBLE_RUBRIQUES = 5;
 
-// Univers « lifestyle » de l'accueil (couche de présentation au-dessus des rubriques).
-// Chaque univers = un regroupement de catégories entières et/ou de rubriques précises.
-type UmbrellaGroup = { key: string; label: string; emoji: string; rubriques: string[]; premium?: boolean };
-type Umbrella = {
-  key: string;
-  label: string;
-  emoji: string;
-  color: string;
-  categories?: CategoryKey[];
-  rubriques?: string[];
-  // Sous-rubriques optionnelles : l'univers se déroule d'abord par groupes.
-  groups?: UmbrellaGroup[];
-  // Univers réservé aux membres Premium (affiché à part, aperçu flouté + cadenas).
-  premium?: boolean;
-};
-
-const LIFESTYLE: Umbrella[] = [
-  {
-    key: "manger",
-    label: "Manger",
-    emoji: "🍽️",
-    color: "#e8703c",
-    rubriques: [
-      "restaurants", "tables-hotes", "chefs-domicile", "cours-de-cuisine",
-      "grandes-surfaces", "epiceries-specialisees", "boucheries", "poissonneries",
-      "fruits-et-legumes", "marches", "boulangeries", "produits-francais",
-      "vins-spiritueux", "livraisons",
-    ],
-    groups: [
-      {
-        key: "manger-restauration",
-        label: "Restauration",
-        emoji: "🍽️",
-        rubriques: ["restaurants", "tables-hotes", "chefs-domicile", "cours-de-cuisine"],
-      },
-      {
-        key: "manger-commerces",
-        label: "Commerces alimentaires",
-        emoji: "🛒",
-        rubriques: [
-          "grandes-surfaces", "epiceries-specialisees", "boucheries", "poissonneries",
-          "fruits-et-legumes", "marches", "boulangeries", "produits-francais",
-          "vins-spiritueux", "livraisons",
-        ],
-      },
-    ],
-  },
-  {
-    key: "sortir",
-    label: "Se divertir",
-    emoji: "🍹",
-    color: "#c9457a",
-    rubriques: [
-      "bars", "cafes-terrasses", "snacks-plage", "glaciers", "rhumeries",
-      "cinemas", "bowling", "karting", "escape-game", "casinos",
-      "culture-patrimoine", "bibliotheque-mediatheque",
-    ],
-    groups: [
-      {
-        key: "sortir-ambiance",
-        label: "Bars & cafés",
-        emoji: "🍹",
-        rubriques: ["bars", "cafes-terrasses", "snacks-plage", "glaciers", "rhumeries"],
-      },
-      {
-        key: "sortir-loisirs",
-        label: "Loisirs",
-        emoji: "🎳",
-        rubriques: ["cinemas", "bowling", "karting", "escape-game", "casinos"],
-      },
-      {
-        key: "sortir-culture",
-        label: "Culture",
-        emoji: "🏛️",
-        rubriques: ["culture-patrimoine", "bibliotheque-mediatheque"],
-      },
-      {
-        key: "sortir-evenements",
-        label: "Événements",
-        emoji: "🎉",
-        rubriques: ["culturels", "sportifs"],
-        premium: true,
-      },
-    ],
-  },
-  {
-    key: "bouger",
-    label: "Bouger & Nature",
-    emoji: "🏝️",
-    color: "#2e9e5b",
-    rubriques: [
-      "complexes-sportifs", "gym-fitness", "sports-nautiques", "golf", "tennis-padel",
-      "centres-equestres", "randonnee-trail", "plages", "parcs-nationaux-cascades",
-      "parcs-botaniques", "parcs-animaliers", "parcs-aventures", "excursions", "peche",
-    ],
-    groups: [
-      {
-        key: "bouger-sports",
-        label: "Sports",
-        emoji: "🏃",
-        rubriques: [
-          "complexes-sportifs", "gym-fitness", "sports-nautiques", "golf", "tennis-padel",
-          "centres-equestres", "randonnee-trail",
-        ],
-      },
-      {
-        key: "bouger-nature",
-        label: "Nature",
-        emoji: "🌿",
-        rubriques: [
-          "plages", "parcs-nationaux-cascades", "parcs-botaniques",
-          "parcs-animaliers", "parcs-aventures", "excursions", "peche",
-        ],
-      },
-    ],
-  },
-  {
-    key: "shopping",
-    label: "Shopping",
-    emoji: "🛍️",
-    color: "#7c5cf0",
-    rubriques: [
-      "malls", "mode-adultes", "mode-enfants", "materiel-sports",
-      "livres", "jeux", "souvenirs", "equipement-maison", "beaute", "electromenager",
-      "high-tech",
-    ],
-  },
-  {
-    key: "sante-bien-etre",
-    label: "Santé & Bien-être",
-    emoji: "💆",
-    color: "#0ea5a0",
-    rubriques: [
-      "cliniques-privees", "centres-sante-publics", "medecins", "dentistes", "opticiens",
-      "laboratoires", "pharmacies", "veterinaires", "spa-instituts", "coiffeurs",
-      "onglerie-manucure", "barbiers", "tatouage-piercing", "yoga-pilates",
-      "medecine-douce", "sports-bien-etre",
-    ],
-    groups: [
-      {
-        key: "sbe-sante",
-        label: "Santé",
-        emoji: "🩺",
-        rubriques: [
-          "cliniques-privees", "centres-sante-publics", "medecins", "dentistes",
-          "opticiens", "laboratoires", "pharmacies", "veterinaires",
-        ],
-      },
-      {
-        key: "sbe-soins",
-        label: "Soins & bien-être",
-        emoji: "💆",
-        rubriques: [
-          "spa-instituts", "coiffeurs", "onglerie-manucure", "barbiers",
-          "tatouage-piercing", "yoga-pilates", "medecine-douce", "sports-bien-etre",
-        ],
-      },
-    ],
-  },
-  {
-    key: "pratique",
-    label: "Vie pratique",
-    emoji: "🧰",
-    color: "#4a6572",
-    rubriques: [
-      "poste", "postes-police", "banques", "distributeurs", "assurances", "notaires",
-      "avocats", "comptables", "ambassades-consulats", "expatriation-visas", "photographes",
-      "telecom", "plateformes-multiservices", "garages-mecaniciens", "concessionnaires",
-      "controle-technique", "location-voiture", "taxis-transferts", "vtc-apps", "depannages",
-      "informatique-reparation", "pressing-blanchisserie", "agences", "coworking",
-      "cafe-coworking", "garde-enfants", "networking", "business",
-      "activites-enfants-famille", "centres-loisirs-animations-enfants",
-      "ecoles-privees-internationales", "creches-garderies", "famille",
-    ],
-    groups: [
-      {
-        key: "pratique-demarches",
-        label: "Démarches & admin",
-        emoji: "🏛️",
-        rubriques: [
-          "poste", "postes-police", "banques", "distributeurs", "assurances", "notaires",
-          "avocats", "comptables", "ambassades-consulats", "expatriation-visas",
-          "photographes", "telecom", "plateformes-multiservices",
-        ],
-      },
-      {
-        key: "pratique-auto-maison",
-        label: "Auto & maison",
-        emoji: "🔧",
-        rubriques: [
-          "garages-mecaniciens", "concessionnaires", "controle-technique",
-          "location-voiture", "taxis-transferts", "vtc-apps", "depannages",
-          "informatique-reparation", "pressing-blanchisserie",
-        ],
-      },
-      {
-        key: "pratique-immo-pro",
-        label: "Immobilier & pro",
-        emoji: "🏢",
-        rubriques: ["agences", "coworking", "cafe-coworking", "networking", "garde-enfants", "business"],
-      },
-      {
-        key: "pratique-famille",
-        label: "Famille & Éducation",
-        emoji: "👨‍👩‍👧",
-        rubriques: [
-          "activites-enfants-famille", "centres-loisirs-animations-enfants",
-          "ecoles-privees-internationales", "creches-garderies", "famille",
-        ],
-      },
-    ],
-  },
-  // ── Univers réservés aux membres Premium ──────────────────────────────
-  {
-    key: "seconde-main",
-    label: "Seconde main",
-    emoji: "♻️",
-    color: "#2e8b57",
-    categories: ["seconde-main"],
-    premium: true,
-  },
-];
-
-// Clés (univers ou groupes) réservées aux membres Premium (aperçu flouté + cadenas).
-const PREMIUM_KEYS = new Set([
-  ...LIFESTYLE.filter((u) => u.premium).map((u) => u.key),
-  ...LIFESTYLE.flatMap((u) => u.groups ?? []).filter((g) => g.premium).map((g) => g.key),
-]);
-
-// Catégories brutes réservées aux membres Premium — même verrou que PREMIUM_KEYS,
-// mais côté raccourci sidebar (filtre direct par catégorie, hors navigation en tuiles).
-const PREMIUM_CATEGORY_KEYS = new Set<CategoryKey>(["evenements", "seconde-main"]);
-
-// Accès rapide à un univers par sa clé (menu illustré « Par catégorie »).
-const UMBRELLA_BY_KEY: Record<string, (typeof LIFESTYLE)[number]> = Object.fromEntries(
-  LIFESTYLE.map((u) => [u.key, u]),
-);
-
-// Regroupement des 8 univers en 4 grandes cartes d'accueil (2 par ligne) :
-// chaque carte mène à un choix parmi ses univers d'origine, qui reprennent
-// ensuite la navigation habituelle (groupes → rubriques → résultats).
-const MERGED_GROUPS: { key: string; label: string; photoKey: string; subtitle: string; children: string[] }[] = [
-  {
-    key: "manger-sortir",
-    label: "Manger & Sortir",
-    photoKey: "manger",
-    subtitle: "Restaurants, commerces, sorties & événements",
-    children: ["manger", "sortir"],
-  },
-  {
-    key: "bouger-explorer",
-    label: "Bouger & Explorer",
-    photoKey: "bouger",
-    subtitle: "Sports, randonnées, plages & parcs",
-    children: ["bouger"],
-  },
-  {
-    key: "shopping-secondemain",
-    label: "Shopping & Seconde main",
-    photoKey: "shopping",
-    subtitle: "Mode, équipement, bonnes affaires & occasions",
-    children: ["shopping", "seconde-main"],
-  },
-  {
-    key: "sante-pratique",
-    label: "Santé & Vie pratique",
-    photoKey: "sante-bien-etre",
-    subtitle: "Médecins, bien-être, services & démarches",
-    children: ["sante-bien-etre", "pratique"],
-  },
-];
-const MERGED_GROUP_BY_KEY: Record<string, (typeof MERGED_GROUPS)[number]> = Object.fromEntries(
-  MERGED_GROUPS.map((g) => [g.key, g]),
-);
-
-// Zones cliquables du menu illustré (/menu-univers.png) : centre + rayon en % de
-// l'image, calés sur chaque badge tenu par le poulpe.
-const UNIVERS_HOTSPOTS: { key: string; cx: number; cy: number; r: number }[] = [
-  { key: "manger", cx: 27, cy: 12, r: 12 },
-  { key: "sortir", cx: 73, cy: 13, r: 12 },
-  { key: "bouger", cx: 14, cy: 38, r: 12 },
-  { key: "shopping", cx: 87, cy: 39, r: 12 },
-  { key: "sante-bien-etre", cx: 22, cy: 64, r: 12 },
-  { key: "pratique", cx: 79, cy: 65, r: 12 },
-  { key: "evenements", cx: 35, cy: 83, r: 12 },
-  { key: "seconde-main", cx: 66, cy: 84, r: 12 },
-];
+// Catégories/rubriques réservées aux membres Premium (aperçu verrouillé).
+// « evenements » → « agenda » (verrou de catégorie entière, inchangé).
+// « seconde-main » n'est plus une catégorie mais 2 rubriques dans « acheter-equiper »
+// (seconde-main-boutiques / seconde-main-particuliers) → verrou au niveau rubrique.
+const PREMIUM_CATEGORY_KEYS = new Set<CategoryKey>(["agenda"]);
+const PREMIUM_RUBRIQUE_KEYS = new Set<string>(["seconde-main-boutiques", "seconde-main-particuliers"]);
 
 // Tuile d'entrée du menu d'accueil : image + titre + sous-titre.
 function HomeEntry({
@@ -351,43 +66,6 @@ const RUBRIQUE_MAP: Record<string, { key: string; label: string; emoji: string }
     .flat()
     .map((s) => [s.key, s])
 );
-
-// Clés de rubriques couvertes par un univers (catégories entières + rubriques explicites).
-function resolveRubriques(u: Umbrella): string[] {
-  const set = new Set<string>();
-  u.categories?.forEach((cat) => (SUBCATEGORIES[cat] ?? []).forEach((s) => set.add(s.key)));
-  u.rubriques?.forEach((r) => set.add(r));
-  return [...set];
-}
-
-// Familles par clé + sous-groupes par rubrique parente (pour la navigation à niveaux).
-const FAMILY_BY_KEY: Record<string, { category: CategoryKey; family: Family }> = {};
-(Object.keys(FAMILIES) as CategoryKey[]).forEach((cat) => {
-  FAMILIES[cat]?.forEach((f) => {
-    FAMILY_BY_KEY[f.key] = { category: cat, family: f };
-  });
-});
-const SUBGROUP_BY_PARENT: Record<string, Subgroup> = {};
-Object.values(FAMILIES).forEach((fams) =>
-  fams?.forEach((f) => f.subgroups?.forEach((sg) => (SUBGROUP_BY_PARENT[sg.parent] = sg)))
-);
-
-// Sous-rubriques d'univers (ex. Bouger → Nature / Sports) par clé de groupe.
-const GROUP_BY_KEY: Record<string, UmbrellaGroup> = {};
-LIFESTYLE.forEach((u) => u.groups?.forEach((g) => (GROUP_BY_KEY[g.key] = g)));
-
-// Un univers « pur » (une seule catégorie, sans rubriques explicites) ayant des familles
-// se déroule d'abord par familles (ex. Manger → Restauration / Commerces).
-function umbrellaFamilies(u: Umbrella): Family[] | null {
-  if (u.categories?.length === 1 && !u.rubriques) {
-    const fams = FAMILIES[u.categories[0]];
-    if (fams && fams.length) return fams;
-  }
-  return null;
-}
-
-// Un niveau de navigation en tuiles.
-type NavNode = { kind: "merged" | "umbrella" | "group" | "family" | "subgroup"; key: string; label: string; emoji: string };
 
 const ZONES: { key: string; label: string; emoji: string }[] = [
   { key: "nord", label: "Nord", emoji: "⬆️" },
@@ -433,10 +111,11 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
   const [activeZone, setActiveZone] = useState<string | null>(null);
   const [zonePickerOpen, setZonePickerOpen] = useState(false);
   const zonePickerRef = useRef<HTMLDivElement>(null);
-  // Facettes de rubrique (type / prix / ambiance) — multi-sélection.
-  const [facetTypes, setFacetTypes] = useState<Set<string>>(new Set());
+  // Facettes de rubrique — multi-sélection. Une entrée par groupe de filtre
+  // transversal (cf. FILTER_GROUPS), plus prix et badges qui ne dépendent pas
+  // de la taxonomie.
+  const [facetGroups, setFacetGroups] = useState<Record<string, Set<string>>>({});
   const [facetPrices, setFacetPrices] = useState<Set<string>>(new Set());
-  const [facetAttrs, setFacetAttrs] = useState<Set<string>>(new Set());
   const [facetBadges, setFacetBadges] = useState<Set<string>>(new Set());
   const [expandedInSidebar, setExpandedInSidebar] = useState<Set<string>>(new Set());
   const [resultsView, setResultsView] = useState<"liste" | "carte">("liste");
@@ -455,11 +134,9 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
   const [homeMode, setHomeMode] = useState<
     "menu" | "categories" | "favoris" | "listes" | "profil" | "ajouter"
   >("menu");
-  // Navigation en tuiles à niveaux : pile de nœuds (univers → familles → rubriques →
-  // sous-groupes). Vide = grille des univers (accueil).
-  const [navStack, setNavStack] = useState<NavNode[]>([]);
-  // Sections repliées dans une page « carte fusionnée » (par défaut toutes dépliées).
-  const [closedSections, setClosedSections] = useState<Set<string>>(new Set());
+  // Accueil « Par catégorie » : catégorie choisie, dont on affiche les rubriques
+  // (un seul niveau de profondeur). null = grille des 8 catégories.
+  const [homeCategory, setHomeCategory] = useState<CategoryKey | null>(null);
   const cardRefs = useRef<Record<string, HTMLElement | null>>({});
   const favorisSectionRef = useRef<HTMLDivElement>(null);
   const aTesterSectionRef = useRef<HTMLDivElement>(null);
@@ -467,24 +144,25 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
   const onBoundsChange = useCallback((b: MapBounds) => setMapBounds(b), []);
 
   const subcategories = SUBCATEGORIES[active as keyof typeof SUBCATEGORIES];
-  const families = FAMILIES[active as keyof typeof FAMILIES];
-  const familyChildKeys = useMemo(
-    () =>
-      new Set(
-        families?.flatMap((f) => [
-          ...f.children,
-          ...(f.subgroups?.flatMap((sg) => sg.children) ?? []),
-        ]) ?? []
-      ),
-    [families]
-  );
-  const ungroupedSubcategories = subcategories?.filter((s) => !familyChildKeys.has(s.key)) ?? [];
 
-  function resetRestoFacets() {
-    setFacetTypes(new Set());
+  function resetFacets() {
+    setFacetGroups({});
     setFacetPrices(new Set());
-    setFacetAttrs(new Set());
     setFacetBadges(new Set());
+  }
+
+  // Bascule une valeur dans le Set d'un groupe de filtre donné.
+  function toggleFacetGroup(groupKey: string, key: string) {
+    setFacetGroups((prev) => {
+      const cur = new Set(prev[groupKey] ?? []);
+      if (cur.has(key)) cur.delete(key);
+      else cur.add(key);
+      return { ...prev, [groupKey]: cur };
+    });
+  }
+
+  function clearFacetGroup(groupKey: string) {
+    setFacetGroups((prev) => ({ ...prev, [groupKey]: new Set() }));
   }
 
   // Bascule une valeur dans un Set d'état (multi-sélection).
@@ -504,9 +182,9 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
     setActiveZone(null);
     setQuery("");
     setBrowseAll(false);
-    setNavStack([]);
+    setHomeCategory(null);
     setHomeMode("menu");
-    resetRestoFacets();
+    resetFacets();
     setNearMe(false);
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
@@ -517,17 +195,11 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
     (document.querySelector('header input[type="search"]') as HTMLInputElement | null)?.focus();
   }
 
-  // Descendre d'un niveau dans la navigation en tuiles.
-  function pushNav(node: NavNode) {
-    setNavStack((prev) => [...prev, node]);
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  }
-
   function selectCategory(key: string) {
     setActive(key);
     setActiveThemes(new Set());
     setBrowseAll(false);
-    setNavStack([]);
+    setHomeCategory(null);
   }
 
   function toggleZone(key: string) {
@@ -551,23 +223,23 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
 
   function toggleTheme(key: string) {
     setActiveThemes((prev) => (prev.has(key) ? new Set() : new Set([key])));
-    resetRestoFacets(); // les facettes ne valent que pour la vue restaurants courante
-    // On conserve la pile de navigation en tuiles : le bouton « Retour » de la
-    // page de résultats ramène ainsi à la grille de tuiles du bon niveau.
+    resetFacets(); // les facettes ne valent que pour la rubrique courante
+    // On conserve homeCategory : le bouton « Retour » de la page de résultats
+    // ramène ainsi à la liste de rubriques de la bonne catégorie.
   }
 
-  // Bouton « Retour » unifié : revient d'un cran (résultats → tuiles →
-  // sous-menu d'accueil → menu) au lieu de tout réinitialiser. Utilisé par
-  // les bandeaux sticky de la navigation en tuiles et de la liste de résultats.
+  // Bouton « Retour » unifié : revient d'un cran (résultats → liste de
+  // rubriques → sous-menu d'accueil → menu) au lieu de tout réinitialiser.
+  // Utilisé par les bandeaux sticky de l'accueil et de la liste de résultats.
   const canGoBack =
-    navStack.length > 0 || activeThemes.size > 0 || browseAll || active !== "all" || homeMode !== "menu";
+    homeCategory !== null || activeThemes.size > 0 || browseAll || active !== "all" || homeMode !== "menu";
   function goBackFromResults() {
     if (activeThemes.size > 0) {
-      setActiveThemes(new Set()); // retour aux tuiles du niveau courant
+      setActiveThemes(new Set()); // retour à la liste de rubriques (ou à la grille catégories)
       return;
     }
-    if (navStack.length > 0) {
-      setNavStack((prev) => prev.slice(0, -1)); // remonte d'un cran dans les tuiles
+    if (homeCategory !== null) {
+      setHomeCategory(null); // remonte à la grille des catégories
       return;
     }
     if (browseAll) {
@@ -627,11 +299,13 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
     return c;
   }, [businesses, active]);
 
-  // Rubrique active (une seule) → facettes : Type (sous-groupe), Prix, Ambiance (restos).
+  // Rubrique active (une seule) → détermine les groupes de filtre applicables.
   const activeRubrique =
     activeThemes.size === 1 && !activeThemes.has(UNCLASSIFIED) ? [...activeThemes][0] : null;
-  const activeSubgroup = activeRubrique ? SUBGROUP_BY_PARENT[activeRubrique] : undefined;
-  const isRestoView = activeRubrique === "restaurants";
+  // Groupes de filtre transversaux applicables à la rubrique active (0, 1 ou plusieurs).
+  const applicableFilterGroups: FilterGroup[] = activeRubrique
+    ? FILTER_GROUPS.filter((g) => g.appliesTo.includes(activeRubrique))
+    : [];
 
   // « Ménage » des fiches : on masque les tags déjà impliqués par le contexte de
   // navigation/filtre actif (rubriques + facettes sélectionnées). Le badge de
@@ -639,11 +313,10 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
   const ficheHiddenKeys = useMemo(() => {
     const s = new Set<string>();
     activeThemes.forEach((k) => { if (k !== UNCLASSIFIED) s.add(k); });
-    facetTypes.forEach((k) => s.add(k));
-    facetAttrs.forEach((k) => s.add(k));
+    Object.values(facetGroups).forEach((set) => set.forEach((k) => s.add(k)));
     facetPrices.forEach((k) => s.add(k));
     return s;
-  }, [activeThemes, facetTypes, facetAttrs, facetPrices]);
+  }, [activeThemes, facetGroups, facetPrices]);
 
   const rows = useMemo(() => {
     const q = query.trim().toLowerCase();
@@ -658,13 +331,16 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
             themes.some((t) => activeThemes.has(t));
           if (!matches) return false;
         }
-        // Facettes de rubrique : type (OU), prix (OU), sélection (OU), ambiance (ET, restos).
+        // Facettes de rubrique : chaque groupe de filtre applicable (OU en son
+        // sein), prix (OU) et sélection/badge (OU) — testés sur b.filters.
         if (activeRubrique) {
-          const themes = b.themes || [];
-          if (facetTypes.size > 0 && !themes.some((t) => facetTypes.has(t))) return false;
+          const filters = b.filters || [];
+          for (const g of applicableFilterGroups) {
+            const sel = facetGroups[g.key];
+            if (sel && sel.size > 0 && !filters.some((f) => sel.has(f))) return false;
+          }
           if (facetPrices.size > 0 && !(b.priceRange && facetPrices.has(b.priceRange))) return false;
           if (facetBadges.size > 0 && !(b.badge && facetBadges.has(b.badge))) return false;
-          if (isRestoView && facetAttrs.size > 0 && ![...facetAttrs].every((a) => themes.includes(a))) return false;
         }
         if (!q) return true;
         return (b.name + " " + b.address + " " + CATEGORY_MAP[b.category].label)
@@ -672,16 +348,16 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
           .includes(q);
       })
       .sort((a, b) => (b.tier === "premium" ? 1 : 0) - (a.tier === "premium" ? 1 : 0));
-  }, [businesses, query, active, activeThemes, activeZone, activeRubrique, isRestoView, facetTypes, facetPrices, facetBadges, facetAttrs]);
+  }, [businesses, query, active, activeThemes, activeZone, activeRubrique, applicableFilterGroups, facetGroups, facetPrices, facetBadges]);
 
   // Base rubrique (rubrique + zone + recherche, hors facettes) pour les compteurs.
   const facetCounts = useMemo(() => {
-    const type: Record<string, number> = {};
+    const perGroup: Record<string, Record<string, number>> = {};
     const price: Record<string, number> = {};
-    const attr: Record<string, number> = {};
     const badge: Record<string, number> = {};
-    if (!activeRubrique) return { type, price, attr, badge, total: 0 };
-    const typeChildren = new Set(activeSubgroup?.children ?? []);
+    if (!activeRubrique) return { perGroup, price, badge, total: 0 };
+    const groups = FILTER_GROUPS.filter((g) => g.appliesTo.includes(activeRubrique));
+    groups.forEach((g) => (perGroup[g.key] = {}));
     const q = query.trim().toLowerCase();
     let total = 0;
     businesses.forEach((b) => {
@@ -689,17 +365,21 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
       if (activeZone && b.zone !== activeZone) return;
       if (q && !(b.name + " " + b.address).toLowerCase().includes(q)) return;
       total++;
-      (b.themes || []).forEach((t) => {
-        if (typeChildren.has(t)) type[t] = (type[t] || 0) + 1;
-        if (isRestoView && RESTO_ATTRS.includes(t)) attr[t] = (attr[t] || 0) + 1;
+      const filters = b.filters || [];
+      groups.forEach((g) => {
+        const optionKeys = new Set(g.options.map((o) => o.key));
+        filters.forEach((f) => {
+          if (optionKeys.has(f)) perGroup[g.key][f] = (perGroup[g.key][f] || 0) + 1;
+        });
       });
       if (b.priceRange) price[b.priceRange] = (price[b.priceRange] || 0) + 1;
       if (b.badge) badge[b.badge] = (badge[b.badge] || 0) + 1;
     });
-    return { type, price, attr, badge, total };
-  }, [businesses, activeRubrique, activeSubgroup, isRestoView, activeZone, query]);
+    return { perGroup, price, badge, total };
+  }, [businesses, activeRubrique, activeZone, query]);
 
-  const facetActive = facetTypes.size + facetPrices.size + facetBadges.size + facetAttrs.size > 0;
+  const facetActive =
+    Object.values(facetGroups).reduce((n, set) => n + set.size, 0) + facetPrices.size + facetBadges.size > 0;
 
   // Cartes affichées : limitées à la zone visible de la carte si le filtre est actif.
   const boundedRows = useMemo(() => {
@@ -806,34 +486,20 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
     return c;
   }, [businesses, activeZone]);
 
-  // Nombre de fiches (distinctes) par univers lifestyle, tenant compte de la zone.
-  const umbrellaCounts = useMemo(() => {
-    const sets = LIFESTYLE.map((u) => ({ key: u.key, keys: new Set(resolveRubriques(u)) }));
-    const counts: Record<string, number> = {};
-    businesses.forEach((b) => {
-      if (activeZone && b.zone !== activeZone) return;
-      const themes = b.themes ?? [];
-      sets.forEach(({ key, keys }) => {
-        if (themes.some((t) => keys.has(t))) counts[key] = (counts[key] || 0) + 1;
-      });
-    });
-    return counts;
-  }, [businesses, activeZone]);
-
-  // Écran d'accueil : univers lifestyle plutôt que 2574 résultats en vrac.
+  // Écran d'accueil : 8 catégories plutôt que 2574 résultats en vrac.
   const showHome =
     active === "all" && activeThemes.size === 0 && query.trim() === "" && !browseAll;
 
-  // On montre des tuiles (univers / niveaux) plutôt que la liste.
+  // On montre des tuiles (catégories / rubriques) plutôt que la liste.
   const mobileTiles = showHome;
 
-  // Recherche masquée sur tout l'accueil (menu, catégories, navigation en
-  // tuiles) pour gagner de la place ; elle réapparaît une fois sur des
-  // résultats concrets (liste/carte), où affiner par mot-clé est utile.
+  // Recherche masquée sur tout l'accueil (menu, catégories, rubriques) pour
+  // gagner de la place ; elle réapparaît une fois sur des résultats concrets
+  // (liste/carte), où affiner par mot-clé est utile.
   const showHeaderSearch = !showHome;
 
   // Rubriques les plus fournies toutes catégories confondues, pour la section
-  // « Sous-catégories populaires » de l'accueil.
+  // « Sous-catégories populaires » de l'accueil (grille des 8 catégories).
   const topRubriques = useMemo(() => {
     return Object.entries(themeCountsAll)
       .filter(([, count]) => count > 0)
@@ -846,160 +512,25 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
       .filter((t): t is { key: string; label: string; emoji: string; count: number } => t !== null);
   }, [themeCountsAll]);
 
-  // Compte distinct de fiches ayant l'une des rubriques données (tenant compte de la zone).
-  const countThemes = (keys: string[]) => {
-    const set = new Set(keys);
-    let n = 0;
-    businesses.forEach((b) => {
-      if (activeZone && b.zone !== activeZone) return;
-      if ((b.themes ?? []).some((t) => set.has(t))) n++;
-    });
-    return n;
-  };
-
-  type TileDesc = { key: string; label: string; emoji: string; count: number; drillTo?: NavNode; themeKey?: string };
-
-  // Une rubrique → tuile qui descend dans son sous-groupe (ex. cuisines) si elle en a un,
-  // sinon tuile terminale qui filtre la liste.
-  function rubriqueTile(rk: string): TileDesc | null {
-    const r = RUBRIQUE_MAP[rk];
-    if (!r) return null;
-    const count = themeCountsAll[r.key] || 0;
-    if (count === 0) return null;
-    // Toute rubrique ouvre directement la liste filtrable : ses sous-types
-    // (cuisines, disciplines, types de shopping…) sont proposés en facettes
-    // plutôt qu'en tuiles à dérouler.
-    return { key: r.key, label: r.label, emoji: r.emoji, count, themeKey: r.key };
-  }
-
-  // Sections d'une carte fusionnée (« Manger & Sortir », « Bouger & Explorer »…) :
-  // tous les groupes (ou familles/rubriques à plat) de chaque univers enfant,
-  // aplatis sur une seule page — un seul clic depuis l'accueil pour tout voir,
-  // au lieu de choisir l'univers puis le groupe avant d'atteindre les rubriques.
-  type MergedSection = { key: string; label: string; emoji: string; tiles: TileDesc[]; locked: boolean };
-  function mergedSections(mergedKey: string): MergedSection[] {
-    const g = MERGED_GROUP_BY_KEY[mergedKey];
-    if (!g) return [];
-    const sections: MergedSection[] = [];
-    g.children.forEach((ck) => {
-      const u = UMBRELLA_BY_KEY[ck];
-      if (!u) return;
-      const locked = PREMIUM_KEYS.has(u.key);
-      if (u.groups) {
-        u.groups.forEach((grp) => {
-          const tiles = grp.rubriques.map(rubriqueTile).filter((t): t is TileDesc => t !== null);
-          if (tiles.length > 0)
-            sections.push({ key: grp.key, label: grp.label, emoji: grp.emoji, tiles, locked: locked || PREMIUM_KEYS.has(grp.key) });
-        });
-        return;
-      }
-      const fams = umbrellaFamilies(u);
-      if (fams) {
-        fams.forEach((f) => {
-          const tiles = f.children.map(rubriqueTile).filter((t): t is TileDesc => t !== null);
-          if (tiles.length > 0) sections.push({ key: f.key, label: f.label, emoji: f.emoji, tiles, locked });
-        });
-        return;
-      }
-      const tiles = resolveRubriques(u)
-        .map(rubriqueTile)
-        .filter((t): t is TileDesc => t !== null)
-        .sort((a, b) => b.count - a.count);
-      if (tiles.length > 0) sections.push({ key: u.key, label: u.label, emoji: u.emoji, tiles, locked });
-    });
-    return sections;
-  }
-
-  // Tuiles du niveau courant de la pile de navigation.
-  function levelTiles(stack: NavNode[]): TileDesc[] {
-    const top = stack[stack.length - 1];
-    if (!top) return [];
-    if (top.kind === "umbrella") {
-      const u = LIFESTYLE.find((x) => x.key === top.key);
-      if (!u) return [];
-      // Sous-rubriques d'univers (ex. Bouger → Nature / Sports).
-      if (u.groups) {
-        return u.groups
-          .map((g): TileDesc | null => {
-            const count = countThemes(g.rubriques);
-            return count > 0
-              ? { key: g.key, label: g.label, emoji: g.emoji, count, drillTo: { kind: "group", key: g.key, label: g.label, emoji: g.emoji } }
-              : null;
-          })
-          .filter((t): t is TileDesc => t !== null);
-      }
-      const fams = umbrellaFamilies(u);
-      if (fams) {
-        return fams
-          .map((f): TileDesc | null => {
-            const count = countThemes(f.children);
-            return count > 0
-              ? { key: f.key, label: f.label, emoji: f.emoji, count, drillTo: { kind: "family", key: f.key, label: f.label, emoji: f.emoji } }
-              : null;
-          })
-          .filter((t): t is TileDesc => t !== null);
-      }
-      return resolveRubriques(u)
-        .map(rubriqueTile)
-        .filter((t): t is TileDesc => t !== null)
-        .sort((a, b) => b.count - a.count);
-    }
-    if (top.kind === "group") {
-      const g = GROUP_BY_KEY[top.key];
-      if (!g) return [];
-      return g.rubriques
-        .map(rubriqueTile)
-        .filter((t): t is TileDesc => t !== null)
-        .sort((a, b) => b.count - a.count);
-    }
-    if (top.kind === "family") {
-      const entry = FAMILY_BY_KEY[top.key];
-      if (!entry) return [];
-      return entry.family.children
-        .map(rubriqueTile)
-        .filter((t): t is TileDesc => t !== null)
-        .sort((a, b) => b.count - a.count);
-    }
-    // sous-groupe : « Tout {rubrique} » + les spécialités
-    const sg = SUBGROUP_BY_PARENT[top.key];
-    if (!sg) return [];
-    const tiles: TileDesc[] = [
-      { key: "__all__" + top.key, label: `Tout ${top.label.toLowerCase()}`, emoji: "📋", count: themeCountsAll[top.key] || 0, themeKey: top.key },
-    ];
-    sg.children.forEach((ck) => {
-      const t = rubriqueTile(ck);
-      if (t) tiles.push(t);
-    });
-    return tiles;
-  }
-
-  function onTileClick(t: TileDesc) {
-    if (t.drillTo) pushNav(t.drillTo);
-    else if (t.themeKey) toggleTheme(t.themeKey);
-  }
-
   const breadcrumb =
     activeThemeLabel ??
     (active !== "all"
       ? { key: active, emoji: CATEGORY_MAP[active as keyof typeof CATEGORY_MAP].emoji, label: CATEGORY_MAP[active as keyof typeof CATEGORY_MAP].label }
       : { key: "all", emoji: "✨", label: "Tout" });
 
-  // Raccourci sidebar sur une catégorie Premium (Événements, Seconde main) : même
-  // verrou que la navigation en tuiles, pour ne pas contourner le mur Premium.
-  const activeCategoryLocked = PREMIUM_CATEGORY_KEYS.has(breadcrumb.key as CategoryKey);
+  // Verrou Premium : catégorie entière (agenda) ou rubrique précise
+  // (seconde-main-boutiques / seconde-main-particuliers, dans acheter-equiper).
+  const activeCategoryLocked =
+    (active !== "all" && PREMIUM_CATEGORY_KEYS.has(active as CategoryKey)) ||
+    (activeRubrique !== null && PREMIUM_RUBRIQUE_KEYS.has(activeRubrique));
 
   function renderSidebarTree(catKey: string) {
-    const catsOrUndefined = SUBCATEGORIES[catKey as keyof typeof SUBCATEGORIES];
-    const fams = FAMILIES[catKey as keyof typeof FAMILIES];
-    if (!catsOrUndefined) return null;
-    const cats = catsOrUndefined;
-    const famChildKeys = new Set(
-      fams?.flatMap((f) => [...f.children, ...(f.subgroups?.flatMap((sg) => sg.children) ?? [])]) ?? []
-    );
-    const ungrouped = cats.filter((s) => !famChildKeys.has(s.key));
+    const cats = SUBCATEGORIES[catKey as keyof typeof SUBCATEGORIES];
+    if (!cats) return null;
 
     function rubriqueRow(t: { key: string; label: string; emoji: string }) {
       const isSelected = activeThemes.has(t.key);
+      const locked = PREMIUM_RUBRIQUE_KEYS.has(t.key);
       return (
         <div key={t.key}>
           <button
@@ -1010,76 +541,22 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
             }`}
           >
             <span className="truncate">
-              {t.emoji} {t.label}
+              {t.emoji} {t.label} {locked && <span aria-hidden>🔒</span>}
             </span>
             <span className="text-[11px] font-bold opacity-60 shrink-0">{themeCounts[t.key] || 0}</span>
           </button>
-          {isSelected &&
-            fams
-              ?.flatMap((f) => f.subgroups ?? [])
-              .filter((sg) => sg.parent === t.key)
-              .map((sg) => (
-                <div key={sg.key} className="pl-3 border-l border-dashed border-border ml-6 mt-0.5 mb-1">
-                  {sg.children.map((childKey) => {
-                    const child = cats.find((s) => s.key === childKey);
-                    if (!child) return null;
-                    const childSelected = activeThemes.has(child.key);
-                    return (
-                      <button
-                        key={child.key}
-                        onClick={() => toggleTheme(child.key)}
-                        aria-pressed={childSelected}
-                        className={`w-full flex items-center justify-between gap-2 pl-3 pr-2 py-1 rounded-lg text-[12.5px] text-left transition-colors ${
-                          childSelected ? "bg-primary-tint text-primary-deep font-semibold" : "text-muted hover:bg-surface-2 hover:text-ink"
-                        }`}
-                      >
-                        <span className="truncate">
-                          {child.emoji} {child.label}
-                        </span>
-                        <span className="text-[10.5px] font-bold opacity-60 shrink-0">
-                          {themeCounts[child.key] || 0}
-                        </span>
-                      </button>
-                    );
-                  })}
-                </div>
-              ))}
         </div>
       );
     }
-
-    const allEntries: { key: string; header?: string; row: { key: string; label: string; emoji: string } }[] = [];
-    function pushFamily(f: NonNullable<typeof fams>[number]) {
-      f.children.forEach((childKey) => {
-        const child = cats.find((s) => s.key === childKey);
-        if (child) allEntries.push({ key: child.key, header: f.label, row: child });
-      });
-    }
-    fams?.filter((f) => f.position !== "end").forEach(pushFamily);
-    ungrouped.forEach((t) => allEntries.push({ key: t.key, row: t }));
-    fams?.filter((f) => f.position === "end").forEach(pushFamily);
-
     const expanded = expandedInSidebar.has(catKey);
-    const visibleEntries = expanded ? allEntries : allEntries.slice(0, SIDEBAR_VISIBLE_RUBRIQUES);
-    const hiddenCount = allEntries.length - visibleEntries.length;
+    const visibleEntries = expanded ? cats : cats.slice(0, SIDEBAR_VISIBLE_RUBRIQUES);
+    const hiddenCount = cats.length - visibleEntries.length;
 
-    let lastHeader: string | undefined;
     return (
       <div className="pb-1.5">
-        {visibleEntries.map((entry) => {
-          const showHeader = entry.header && entry.header !== lastHeader;
-          lastHeader = entry.header;
-          return (
-            <div key={entry.key}>
-              {showHeader && (
-                <div className="pl-6 pt-2 pb-0.5 text-[11px] font-bold uppercase tracking-wide text-muted/80">
-                  {entry.header}
-                </div>
-              )}
-              {rubriqueRow(entry.row)}
-            </div>
-          );
-        })}
+        {visibleEntries.map((entry) => (
+          <div key={entry.key}>{rubriqueRow(entry)}</div>
+        ))}
         {hiddenCount > 0 && (
           <button
             onClick={() => toggleSidebarExpand(catKey)}
@@ -1088,7 +565,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
             + {hiddenCount} autres rubriques
           </button>
         )}
-        {expanded && allEntries.length > SIDEBAR_VISIBLE_RUBRIQUES && (
+        {expanded && cats.length > SIDEBAR_VISIBLE_RUBRIQUES && (
           <button
             onClick={() => toggleSidebarExpand(catKey)}
             className="w-full text-left pl-6 pr-2 py-1 text-[12px] text-muted hover:underline"
@@ -1279,9 +756,9 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
     ? "favoris"
     : homeMode === "profil"
       ? "profil"
-      : showHome && navStack.length === 0 && homeMode === "menu"
+      : showHome && homeMode === "menu"
         ? "accueil"
-        : browseAll || navStack.length > 0 || homeMode === "categories"
+        : browseAll || homeMode === "categories"
           ? "explorer"
           : "autre";
   const tabBar = (
@@ -1309,7 +786,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
             setActiveZone(null);
             setQuery("");
             setBrowseAll(false);
-            setNavStack([]);
+            setHomeCategory(null);
             setHomeMode("favoris");
             window.scrollTo({ top: 0, behavior: "smooth" });
           }}
@@ -1326,7 +803,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
           <button
             onClick={() => {
               setBrowseAll(false);
-              setNavStack([]);
+              setHomeCategory(null);
               setHomeMode("ajouter");
               window.scrollTo({ top: 0, behavior: "smooth" });
             }}
@@ -1340,7 +817,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
         <button
           onClick={() => {
             setHomeMode("menu");
-            setNavStack([]);
+            setHomeCategory(null);
             setBrowseAll(true);
             setTimeout(focusSearch, 60);
           }}
@@ -1356,7 +833,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
         <button
           onClick={() => {
             setBrowseAll(false);
-            setNavStack([]);
+            setHomeCategory(null);
             setHomeMode("profil");
             window.scrollTo({ top: 0, behavior: "smooth" });
           }}
@@ -1373,32 +850,28 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
     </nav>
   );
 
-  // Barre de filtres générique (menus déroulants Type / Prix / Ambiance).
-  const typeOptions: DropdownOption[] = (activeSubgroup?.children ?? [])
-    .filter((k) => (facetCounts.type[k] || 0) > 0)
-    .map((k) => {
-      const I = iconForKey(k);
-      return {
-        key: k,
-        label: RUBRIQUE_MAP[k]?.label ?? k,
-        count: facetCounts.type[k],
-        icon: I ? <I size={14} weight="bold" aria-hidden /> : undefined,
-      };
-    });
+  // Barre de filtres générique : un menu déroulant par groupe de filtre
+  // applicable à la rubrique active (cf. FILTER_GROUPS), plus Prix et Sélection.
+  const groupOptionsList: { group: FilterGroup; options: DropdownOption[] }[] = applicableFilterGroups
+    .map((g) => {
+      const options: DropdownOption[] = g.options
+        .filter((o) => (facetCounts.perGroup[g.key]?.[o.key] || 0) > 0)
+        .map((o) => {
+          const I = iconForKey(o.key);
+          return {
+            key: o.key,
+            label: o.label,
+            count: facetCounts.perGroup[g.key][o.key],
+            icon: I ? <I size={14} weight="bold" aria-hidden /> : <span aria-hidden>{o.emoji}</span>,
+          };
+        });
+      return { group: g, options };
+    })
+    .filter((g) => g.options.length > 0);
+
   const priceOptions: DropdownOption[] = PRICE_RANGES.filter(
     (p) => (facetCounts.price[p.key] || 0) > 0
   ).map((p) => ({ key: p.key, label: `${p.symbol} ${p.label}`, count: facetCounts.price[p.key] }));
-  const attrOptions: DropdownOption[] = isRestoView
-    ? RESTO_ATTRS.filter((k) => (facetCounts.attr[k] || 0) > 0).map((k) => {
-        const I = iconForKey(k);
-        return {
-          key: k,
-          label: RUBRIQUE_MAP[k]?.label ?? k,
-          count: facetCounts.attr[k],
-          icon: I ? <I size={14} weight="bold" aria-hidden /> : undefined,
-        };
-      })
-    : [];
 
   const badgeOptions: DropdownOption[] = BADGE_META.filter(
     (m) => (facetCounts.badge[m.key] || 0) > 0
@@ -1409,8 +882,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
     icon: <span aria-hidden>{m.emoji}</span>,
   }));
 
-  const hasFacets =
-    typeOptions.length > 0 || priceOptions.length > 0 || badgeOptions.length > 0 || attrOptions.length > 0;
+  const hasFacets = groupOptionsList.length > 0 || priceOptions.length > 0 || badgeOptions.length > 0;
   const restoFilterBar = activeRubrique && hasFacets ? (
     <div className="mb-3 border-b border-border pb-3 flex items-center gap-2">
       {badgeOptions.length > 0 && (
@@ -1422,15 +894,16 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
           onClear={() => setFacetBadges(new Set())}
         />
       )}
-      {typeOptions.length > 0 && (
+      {groupOptionsList.map(({ group, options }) => (
         <FilterDropdown
-          label={activeSubgroup?.label ?? "Type"}
-          options={typeOptions}
-          selected={facetTypes}
-          onToggle={(k) => toggleInSet(setFacetTypes, k)}
-          onClear={() => setFacetTypes(new Set())}
+          key={group.key}
+          label={group.label}
+          options={options}
+          selected={facetGroups[group.key] ?? new Set()}
+          onToggle={(k) => toggleFacetGroup(group.key, k)}
+          onClear={() => clearFacetGroup(group.key)}
         />
-      )}
+      ))}
       {priceOptions.length > 0 && (
         <FilterDropdown
           label="Prix"
@@ -1440,18 +913,9 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
           onClear={() => setFacetPrices(new Set())}
         />
       )}
-      {attrOptions.length > 0 && (
-        <FilterDropdown
-          label="Ambiance"
-          options={attrOptions}
-          selected={facetAttrs}
-          onToggle={(k) => toggleInSet(setFacetAttrs, k)}
-          onClear={() => setFacetAttrs(new Set())}
-        />
-      )}
       {facetActive && (
         <button
-          onClick={resetRestoFacets}
+          onClick={resetFacets}
           className="shrink-0 text-[12.5px] font-semibold text-primary-deep hover:underline"
         >
           Réinitialiser
@@ -1494,7 +958,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
 
         <div
           className={`flex-1 min-w-0 px-4 lg:px-5 ${
-            showHome && navStack.length === 0 && homeMode === "menu"
+            showHome && homeMode === "menu"
               ? "py-3 overflow-hidden"
               : "py-3 pb-24"
           }`}
@@ -1502,10 +966,10 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
           {/* Accueil « Option A » : menu d'entrée à 4 modes, figé sans scroll —
               les 4 tuiles remplissent tout l'espace disponible sous le bandeau
               et au-dessus de la barre d'onglets. */}
-          {showHome && navStack.length === 0 && homeMode === "menu" && (
+          {showHome && homeMode === "menu" && (
             <div className="h-[calc(100dvh-150px)] flex flex-col justify-center overflow-hidden">
               <div className="grid grid-cols-2 grid-rows-2 gap-4 sm:gap-5 w-full h-full max-w-[660px] max-h-[560px] mx-auto">
-                <HomeEntry img="/icon-categories.png" title="Par catégorie" subtitle="8 univers" onClick={() => setHomeMode("categories")} />
+                <HomeEntry img="/icon-categories.png" title="Par catégorie" subtitle="8 catégories" onClick={() => setHomeMode("categories")} />
                 <HomeEntry img="/icon-recherche.png" title="Recherche" subtitle="lieu, nom, activité" onClick={() => { setBrowseAll(true); setTimeout(focusSearch, 60); }} />
                 <HomeEntry img="/icon-favoris.png" title="Mes favoris" subtitle="et mes listes" onClick={() => setHomeMode("favoris")} />
                 <HomeEntry img="/icon-listes.png" title="Listes de Koté Moris" subtitle="nos sélections" onClick={() => setHomeMode("listes")} />
@@ -1513,9 +977,10 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
             </div>
           )}
 
-          {/* Accueil → Par catégorie : catégories + sous-catégories populaires,
-              façon rendu de référence. */}
-          {showHome && navStack.length === 0 && homeMode === "categories" && (
+          {/* Accueil → Par catégorie : grille des 8 catégories (un seul niveau
+              de profondeur) — clic sur une catégorie → liste plate de ses
+              rubriques ; clic sur une rubrique → résultats. */}
+          {showHome && homeMode === "categories" && homeCategory === null && (
             <div className="pb-16">
               <div className="flex items-center justify-between mb-2.5">
                 <h2 className="text-[16px] font-bold text-ink">Explorer par catégorie</h2>
@@ -1526,20 +991,16 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                   Voir tout ({rows.length}) ›
                 </button>
               </div>
-              <div className="grid grid-cols-2 gap-3 sm:gap-3.5 sm:max-w-[560px]">
-                {MERGED_GROUPS.map((g) => {
-                  const count = g.children.reduce((n, ck) => n + (umbrellaCounts[ck] || 0), 0);
-                  if (count === 0) return null;
-                  return (
-                    <UniversCard
-                      key={g.key}
-                      photoKey={g.photoKey}
-                      label={g.label}
-                      subtitle={g.subtitle}
-                      onClick={() => pushNav({ kind: "merged", key: g.key, label: g.label, emoji: "" })}
-                    />
-                  );
-                })}
+              <div className="flex flex-col gap-2 sm:max-w-[560px]">
+                {CATEGORIES.filter((c) => (counts[c.key] || 0) > 0).map((c) => (
+                  <CategoryRow
+                    key={c.key}
+                    category={c.key}
+                    count={counts[c.key] || 0}
+                    locked={PREMIUM_CATEGORY_KEYS.has(c.key)}
+                    onClick={() => setHomeCategory(c.key)}
+                  />
+                ))}
               </div>
 
               {topRubriques.length > 0 && (
@@ -1553,6 +1014,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                         emoji={t.emoji}
                         label={t.label}
                         count={t.count}
+                        locked={PREMIUM_RUBRIQUE_KEYS.has(t.key)}
                         onClick={() => toggleTheme(t.key)}
                       />
                     ))}
@@ -1577,8 +1039,41 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
             </div>
           )}
 
+          {/* Accueil → Par catégorie → une catégorie choisie : liste plate de
+              ses rubriques (SUBCATEGORIES[cat]), un seul clic vers les résultats. */}
+          {showHome && homeMode === "categories" && homeCategory !== null && (
+            <div className="pb-16">
+              <div className="sticky top-[94px] z-20 -mx-4 lg:-mx-5 px-4 lg:px-5 py-2 flex items-center gap-2 border-b border-border" style={{ background: "var(--bg)" }}>
+                <button
+                  onClick={() => setHomeCategory(null)}
+                  aria-label="Retour"
+                  className="shrink-0 w-7 h-7 -ml-1 rounded-full flex items-center justify-center text-ink active:scale-[.95] transition-transform"
+                >
+                  <ArrowLeft size={17} weight="bold" aria-hidden />
+                </button>
+                <p className="text-[15px] font-semibold truncate">{CATEGORY_MAP[homeCategory].label}</p>
+              </div>
+              <div className="h-2.5" />
+              <div className="flex flex-col gap-2 sm:max-w-[560px] sm:mx-auto">
+                {(SUBCATEGORIES[homeCategory] ?? [])
+                  .filter((s) => (themeCountsAll[s.key] || 0) > 0)
+                  .map((s) => (
+                    <CategoryRow
+                      key={s.key}
+                      iconKey={s.key}
+                      emoji={s.emoji}
+                      label={s.label}
+                      count={themeCountsAll[s.key] || 0}
+                      locked={PREMIUM_RUBRIQUE_KEYS.has(s.key)}
+                      onClick={() => toggleTheme(s.key)}
+                    />
+                  ))}
+              </div>
+            </div>
+          )}
+
           {/* Accueil → Mes favoris : fiches enregistrées via le cœur (favori + à tester), stockage local. */}
-          {showHome && navStack.length === 0 && homeMode === "favoris" && (
+          {showHome && homeMode === "favoris" && (
             <div className="pb-16">
               {favoriteBusinesses.length === 0 && aTesterBusinesses.length === 0 ? (
                 <div className="mt-6 max-w-[420px] mx-auto text-center bg-surface border border-border rounded-2xl shadow-sm p-7 flex flex-col items-center gap-3">
@@ -1650,7 +1145,6 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
 
           {/* Accueil → Listes Koté Moris / Profil / Ajouter : écrans placeholder « bientôt ». */}
           {showHome &&
-            navStack.length === 0 &&
             (homeMode === "listes" || homeMode === "profil" || homeMode === "ajouter") && (
               <div className="pb-16">
                 <div className="mt-6 max-w-[420px] mx-auto text-center bg-surface border border-border rounded-2xl shadow-sm p-7 flex flex-col items-center gap-3">
@@ -1678,242 +1172,6 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                 </div>
               </div>
             )}
-
-          {/* Page « carte fusionnée » : toutes les sections (groupes) des univers
-              enfants, dépliées d'un coup — un seul clic depuis l'accueil suffit. */}
-          {showHome &&
-            navStack.length === 1 &&
-            navStack[0].kind === "merged" &&
-            navStack[0].key !== "manger-sortir" &&
-            (() => {
-              const top = navStack[0];
-              const sections = mergedSections(top.key);
-              return (
-                <div className="pb-16">
-                  <div className="sticky top-[94px] z-20 -mx-4 lg:-mx-5 px-4 lg:px-5 py-2 flex items-center gap-2 border-b border-border" style={{ background: "var(--bg)" }}>
-                    <button
-                      onClick={goBackFromResults}
-                      aria-label="Retour"
-                      className="shrink-0 w-7 h-7 -ml-1 rounded-full flex items-center justify-center text-ink active:scale-[.95] transition-transform"
-                    >
-                      <ArrowLeft size={17} weight="bold" aria-hidden />
-                    </button>
-                    <p className="text-[15px] font-semibold truncate">{top.label}</p>
-                  </div>
-                  <div className="h-2.5" />
-                  <div className="flex flex-col gap-4 sm:max-w-[560px] sm:mx-auto">
-                    {sections.map((s) => {
-                      const isOpen = !closedSections.has(s.key);
-                      const SecIcon = iconForKey(s.key);
-                      return (
-                        <div key={s.key} className="flex flex-col gap-2">
-                          <button
-                            onClick={() =>
-                              setClosedSections((prev) => {
-                                const next = new Set(prev);
-                                if (next.has(s.key)) next.delete(s.key);
-                                else next.add(s.key);
-                                return next;
-                              })
-                            }
-                            className="flex items-center gap-2 w-full text-left active:scale-[.99] transition-transform"
-                          >
-                            <span className="shrink-0 w-7 h-7 rounded-full bg-primary-tint text-primary-deep flex items-center justify-center">
-                              {SecIcon ? <SecIcon size={14} weight="bold" aria-hidden /> : <span className="text-[13px]">{s.emoji}</span>}
-                            </span>
-                            <span className="flex-1 min-w-0 text-[14px] font-bold text-ink truncate">{s.label}</span>
-                            <span className="text-[12px] text-muted shrink-0">{s.tiles.length}</span>
-                            <CaretDown
-                              size={14}
-                              weight="bold"
-                              className={`shrink-0 text-muted transition-transform ${isOpen ? "rotate-180" : ""}`}
-                              aria-hidden
-                            />
-                          </button>
-                          {isOpen && (
-                            <div className="relative">
-                              <div
-                                className={`flex flex-col gap-2 pl-3 ${s.locked ? "blur-[3px] pointer-events-none select-none" : ""}`}
-                                aria-hidden={s.locked || undefined}
-                              >
-                                {s.tiles.map((t) => (
-                                  <CategoryRow
-                                    key={t.key}
-                                    iconKey={t.key}
-                                    emoji={t.emoji}
-                                    label={t.label}
-                                    count={t.count}
-                                    onClick={() => onTileClick(t)}
-                                  />
-                                ))}
-                              </div>
-                              {s.locked && (
-                                <div className="absolute inset-0 flex items-center justify-center p-2">
-                                  <div
-                                    className="max-w-[260px] w-full text-center bg-surface/95 backdrop-blur-sm rounded-2xl shadow-lg p-4 flex flex-col items-center gap-1.5"
-                                    style={{ border: "2px solid var(--accent)" }}
-                                  >
-                                    <span className="text-2xl" aria-hidden>🔒</span>
-                                    <p className="font-serif text-[15px] font-semibold leading-tight">
-                                      Réservé aux membres Premium
-                                    </p>
-                                    <button
-                                      disabled
-                                      className="mt-1 px-3 py-1.5 rounded-full text-[13px] font-bold text-on-accent cursor-not-allowed opacity-90"
-                                      style={{ background: "var(--accent)" }}
-                                    >
-                                      ✨ Devenir Premium
-                                    </button>
-                                  </div>
-                                </div>
-                              )}
-                            </div>
-                          )}
-                        </div>
-                      );
-                    })}
-                  </div>
-                </div>
-              );
-            })()}
-
-          {/* Écran « Manger & Sortir » : choix visuel en 2 grands panneaux illustrés
-              qui séparent l'écran en deux — la liste des sous-catégories n'apparaît
-              qu'une fois Manger ou Sortir choisi. */}
-          {showHome &&
-            navStack.length === 1 &&
-            navStack[0].kind === "merged" &&
-            navStack[0].key === "manger-sortir" &&
-            (() => {
-              const top = navStack[0];
-              const g = MERGED_GROUP_BY_KEY[top.key];
-              if (!g) return null;
-              return (
-                <div className="pb-16">
-                  <div className="sticky top-[94px] z-20 -mx-4 lg:-mx-5 px-4 lg:px-5 py-2 flex items-center gap-2 border-b border-border" style={{ background: "var(--bg)" }}>
-                    <button
-                      onClick={goBackFromResults}
-                      aria-label="Retour"
-                      className="shrink-0 w-7 h-7 -ml-1 rounded-full flex items-center justify-center text-ink active:scale-[.95] transition-transform"
-                    >
-                      <ArrowLeft size={17} weight="bold" aria-hidden />
-                    </button>
-                    <p className="text-[15px] font-semibold truncate">{top.label}</p>
-                  </div>
-                  <div className="h-2.5" />
-                  <div className="flex flex-col gap-3 sm:max-w-[560px] sm:mx-auto">
-                    {g.children.map((ck) => {
-                      const u = UMBRELLA_BY_KEY[ck];
-                      if (!u) return null;
-                      return (
-                        <button
-                          key={ck}
-                          onClick={() => pushNav({ kind: "umbrella", key: u.key, label: u.label, emoji: u.emoji })}
-                          className="relative w-full h-[170px] rounded-card overflow-hidden active:scale-[.98] transition-transform shadow-card"
-                        >
-                          {/* eslint-disable-next-line @next/next/no-img-element */}
-                          <img
-                            src={`/photo-univers-${ck}.png`}
-                            alt=""
-                            aria-hidden
-                            className="absolute inset-0 w-full h-full object-cover"
-                          />
-                          <div
-                            className="absolute inset-0"
-                            style={{ background: "linear-gradient(180deg, transparent 40%, rgba(0,0,0,.6) 100%)" }}
-                          />
-                          <span className="absolute left-4 bottom-3 text-white font-serif text-xl font-bold drop-shadow">
-                            {u.label}
-                          </span>
-                        </button>
-                      );
-                    })}
-                  </div>
-                </div>
-              );
-            })()}
-
-          {/* Niveau de navigation en tuiles (familles / rubriques / spécialités) */}
-          {showHome &&
-            navStack.length > 0 &&
-            !(navStack.length === 1 && navStack[0].kind === "merged") &&
-            (() => {
-              const tiles = levelTiles(navStack);
-              const path = navStack.map((n) => n.label).join(" › ");
-              const lockedNode = navStack.find((n) => PREMIUM_KEYS.has(n.key));
-              const locked = !!lockedNode;
-              return (
-                <div className="pb-16">
-                  {/* Repère de niveau figé sous le bandeau : retour + icône + fil d'ariane. */}
-                  <div className="sticky top-[94px] z-20 -mx-4 lg:-mx-5 px-4 lg:px-5 py-2 flex items-center gap-2 border-b border-border" style={{ background: "var(--bg)" }}>
-                    <button
-                      onClick={goBackFromResults}
-                      aria-label="Retour"
-                      className="shrink-0 w-7 h-7 -ml-1 rounded-full flex items-center justify-center text-ink active:scale-[.95] transition-transform"
-                    >
-                      <ArrowLeft size={17} weight="bold" aria-hidden />
-                    </button>
-                    {(() => {
-                      const last = navStack[navStack.length - 1];
-                      const I = iconForKey(last.key);
-                      return I ? (
-                        <span className="shrink-0 w-6 h-6 rounded-full bg-primary-tint text-primary-deep flex items-center justify-center">
-                          <I size={13} weight="bold" aria-hidden />
-                        </span>
-                      ) : (
-                        <span className="shrink-0">{last.emoji}</span>
-                      );
-                    })()}
-                    <p className="text-[15px] font-semibold truncate">{path}</p>
-                  </div>
-                  <div className="h-2.5" />
-                  <div className="relative min-h-[220px]">
-                    <div
-                      className={`flex flex-col gap-2 sm:max-w-[560px] sm:mx-auto ${
-                        locked ? "blur-[3px] pointer-events-none select-none" : ""
-                      }`}
-                      aria-hidden={locked || undefined}
-                    >
-                      {tiles.map((t) => (
-                        <CategoryRow
-                          key={t.key}
-                          iconKey={t.key.startsWith("__all__") ? t.key.slice(7) : t.key}
-                          emoji={t.emoji}
-                          label={t.label}
-                          count={t.count}
-                          locked={PREMIUM_KEYS.has(t.key)}
-                          onClick={() => onTileClick(t)}
-                        />
-                      ))}
-                    </div>
-                    {locked && (
-                      <div className="absolute inset-0 flex items-center justify-center p-4">
-                        <div
-                          className="max-w-[300px] w-full text-center bg-surface/95 backdrop-blur-sm rounded-2xl shadow-lg p-5 flex flex-col items-center gap-2"
-                          style={{ border: "2px solid var(--accent)" }}
-                        >
-                          <span className="text-3xl" aria-hidden>🔒</span>
-                          <p className="font-serif text-lg font-semibold leading-tight">
-                            Réservé aux membres Premium
-                          </p>
-                          <p className="text-[13px] text-muted leading-snug">
-                            Débloquez « {lockedNode?.label} » et tout le contenu Premium de Koté Moris.
-                          </p>
-                          <button
-                            disabled
-                            className="mt-1 px-4 py-2 rounded-full font-bold text-on-accent cursor-not-allowed opacity-90"
-                            style={{ background: "var(--accent)" }}
-                          >
-                            ✨ Devenir Premium
-                          </button>
-                          <span className="text-[11px] text-muted/80">Bientôt disponible</span>
-                        </div>
-                      </div>
-                    )}
-                  </div>
-                </div>
-              );
-            })()}
 
           {/* Barre de résultats : retour + repère (icône + catégorie + total)
               + liste/carte, puis « Autour de moi » / zone sur une 2e ligne. */}

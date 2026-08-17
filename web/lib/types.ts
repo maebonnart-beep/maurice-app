@@ -1,14 +1,12 @@
 export type CategoryKey =
-  | "activites"
-  | "food"
-  | "utiles"
-  | "coaching"
-  | "soins-bien-etre"
-  | "seconde-main"
-  | "business-ttv"
-  | "immobilier"
-  | "education"
-  | "evenements";
+  | "manger-boire"
+  | "sortir-decouvrir"
+  | "faire-du-sport"
+  | "sante-bien-etre"
+  | "acheter-equiper"
+  | "vie-pratique"
+  | "famille-travail"
+  | "agenda";
 
 export type Category = {
   key: CategoryKey;
@@ -34,7 +32,10 @@ export type Business = {
   /** lat/lng absents = fiche affichée dans la liste mais sans marqueur sur la carte (ex: applis/plateformes). */
   lat?: number;
   lng?: number;
+  /** Rubrique(s) — type de lieu/service, clés de `SUBCATEGORIES`. En général une seule ; deux quand une fiche relève de deux catégories distinctes (ex. ferme + table d'hôte), auquel cas elle est dupliquée en deux fiches (une par catégorie) plutôt que d'avoir un tableau à deux entrées ici. */
   themes?: string[];
+  /** Critères d'affinage transversaux à l'intérieur d'une rubrique (cuisine, ambiance, discipline...), clés de `FILTER_GROUPS`. */
+  filters?: string[];
   /** Texte libre combinant jours + heures, ex: "Lun-Ven 11h30-22h, Sam-Dim 11h-23h". */
   hours?: string;
   priceRange?: PriceRange;

@@ -34,7 +34,7 @@ const SAMPLES: Business[] = [
   {
     id: "demo-1",
     name: "La Table du Chef",
-    category: "food",
+    category: "manger-boire",
     address: "Royal Road, Grand Baie",
     phone: "+230 263 0000",
     website: "https://example.com",
@@ -56,7 +56,7 @@ const SAMPLES: Business[] = [
   {
     id: "demo-2",
     name: "Blue Horizon Excursions",
-    category: "activites",
+    category: "faire-du-sport",
     address: "Rivière Noire",
     phone: "+230 5700 0000",
     website: "https://example.com",
@@ -69,7 +69,7 @@ const SAMPLES: Business[] = [
   {
     id: "demo-3",
     name: "Sentier du Morne",
-    category: "activites",
+    category: "faire-du-sport",
     address: "Le Morne, Sud",
     phone: "",
     website: "",

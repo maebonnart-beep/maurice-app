@@ -28,94 +28,66 @@ import {
 } from "@phosphor-icons/react";
 
 export const ICON_MAP: Record<string, Icon> = {
-  // Univers lifestyle
-  manger: ForkKnife, sortir: Martini, bouger: Sneaker,
-  shopping: ShoppingBag, famille: UsersThree, pratique: Briefcase,
-  "se-relaxer": FlowerLotus, "sante-bien-etre": Sparkle,
+  // Catégories (8)
+  "manger-boire": ForkKnife, "sortir-decouvrir": Confetti, "faire-du-sport": Barbell,
+  "sante-bien-etre": Sparkle, "acheter-equiper": ShoppingBag, "vie-pratique": Wrench,
+  "famille-travail": Briefcase, agenda: CalendarBlank,
 
-  // Sous-rubriques d'univers (Bouger)
-  "bouger-nature": Leaf, "bouger-sports": Barbell,
+  // Rubriques — Manger & boire
+  restaurants: ForkKnife, "cafes-bars-glaciers": Coffee,
+  "tables-hotes-chefs-domicile": CookingPot, "commerces-alimentaires": Basket,
+  "marches-produits-locaux": Basket, livraisons: Truck,
 
-  // Catégories
-  activites: Confetti, food: ForkKnife, utiles: Wrench,
-  coaching: Medal, "soins-bien-etre": Sparkle, "seconde-main": Recycle,
-  "business-ttv": Laptop, immobilier: House, education: GraduationCap,
-  evenements: CalendarBlank,
+  // Rubriques — Sortir & découvrir
+  "excursions-sorties": MapTrifold, "culture-patrimoine": Bank,
+  "plages-nature": Umbrella, "parcs-activites-famille": TreePalm,
+  "activites-enfants-famille": Baby, "casinos-loisirs": PokerChip, cinemas: FilmSlate,
 
-  // Familles / sous-groupes
-  restauration: ForkKnife, commerces: Storefront, cuisines: CookingPot,
-  sports: Barbell, "disciplines-nautiques": Waves, "malls-shopping": ShoppingBag,
-  "types-shopping": ShoppingBag, particuliers: UsersThree,
-  "magasins-occasion": Storefront,
-
-  // Activités & loisirs
-  "parcs-animaliers": PawPrint, "parcs-aventures": TreePalm,
-  "complexes-sportifs": Barbell, "gym-fitness": Barbell,
-  "sports-nautiques": Waves, kitesurf: Wind, "stand-up-paddle": PersonSimpleSwim,
-  "navigation-bateau": Boat, "ski-nautique": Boat, surf: Waves, kayak: Sailboat,
+  // Rubriques — Faire du sport
+  "salles-sport-fitness": Barbell, "tennis-padel": TennisBall, golf: Golf,
+  "randonnee-trail": PersonSimpleHike, "sports-nautiques": Waves,
+  "equitation-autres-sports": Horse,
+  // Filtres — discipline nautique
+  kitesurf: Wind, "stand-up-paddle": PersonSimpleSwim, "navigation-bateau": Boat,
+  "ski-nautique": Boat, surf: Waves, kayak: Sailboat,
   "parachute-ascensionnel": Parachute, "plongee-sous-marine": FishSimple,
-  "planche-a-voile": Sailboat, snorkeling: FishSimple, golf: Golf,
-  "centres-equestres": Horse, "tennis-padel": TennisBall,
-  "randonnee-trail": PersonSimpleHike, "parcs-nationaux-cascades": Mountains,
-  peche: Fish, plages: Umbrella, "parcs-botaniques": Flower,
-  "culture-patrimoine": Bank, malls: Buildings,
-  "mode-adultes": TShirt, "mode-enfants": Baby, "materiel-sports": TennisBall,
-  livres: Books, jeux: GameController, souvenirs: Gift,
-  "equipement-maison": Armchair, beaute: Sparkle, electromenager: WashingMachine,
-  "high-tech": DeviceMobile, "activites-enfants-famille": Baby,
-  "centres-loisirs-animations-enfants": Confetti, excursions: MapTrifold,
-  "cours-de-cuisine": ChefHat, rhumeries: Wine, casinos: PokerChip,
-  bowling: BowlingBall, karting: CarProfile, "escape-game": LockKey,
-  cinemas: FilmSlate, "bibliotheque-mediatheque": Books,
+  "planche-a-voile": Sailboat, snorkeling: FishSimple,
 
-  // Food
-  restaurants: ForkKnife, bars: BeerBottle, "cafes-terrasses": Coffee,
-  "snacks-plage": Hamburger, "tables-hotes": CookingPot, "chefs-domicile": ChefHat,
-  "grandes-surfaces": Basket, "epiceries-specialisees": Basket,
-  boucheries: Cow, poissonneries: Fish, "fruits-et-legumes": Carrot,
-  marches: Basket, livraisons: Truck, boulangeries: Bread, glaciers: IceCream,
-  "produits-francais": Bread, "vins-spiritueux": Wine,
-  // Cuisines
+  // Rubriques — Santé & bien-être
+  "medecins-soins": Stethoscope, "pharmacies-laboratoires": Pill,
+  "cliniques-hopitaux": Hospital, "spa-instituts-massages": FlowerLotus,
+  "coiffeurs-barbiers-beaute": Scissors, "yoga-bien-etre": PersonSimpleTaiChi,
+  veterinaires: PawPrint,
+
+  // Rubriques — Acheter & s'équiper
+  "malls-shopping": Buildings, "mode-accessoires": TShirt,
+  "maison-equipement": Armchair, "high-tech-electromenager": DeviceMobile,
+  "librairies-jeux-loisirs": Books, "souvenirs-cadeaux": Gift,
+  "seconde-main-boutiques": Storefront, "seconde-main-particuliers": Recycle,
+
+  // Rubriques — Vie pratique
+  "banques-assurances-argent": Bank, "poste-demarches": Mailbox,
+  "police-ambassades-consulats": PoliceCar, "avocats-notaires-comptables": Gavel,
+  "telecom-internet": WifiHigh, "auto-garages-concessionnaires": Wrench,
+  "taxis-vtc-location": Taxi, "depannages-services": Wrench, immobilier: House,
+
+  // Rubriques — Famille & Travail
+  "creches-garderies": Baby, ecoles: GraduationCap,
+  "centres-loisirs-animations": Confetti, "coworking-teletravail": Laptop,
+  "business-networking": Handshake,
+
+  // Rubriques — Agenda
+  "evenements-culturels": MaskHappy, "evenements-sportifs": Medal,
+
+  // Filtres — Cuisine
   mauricienne: CookingPot, "fruits-de-mer": Fish, indienne: CookingPot,
   asiatique: CookingPot, sushis: Fish, europeenne: ForkKnife, italien: Pizza,
-  grillades: Fire, vegetarien: Leaf, "kids-friendly": Baby,
-  "tables-exception": Star, "plus-belles-vues": Binoculars,
+  grillades: Fire, vegetarien: Leaf,
+  // Filtres — Ambiance / public
+  "kids-friendly": Baby, "tables-exception": Star, "plus-belles-vues": Binoculars,
   "frequente-locaux": UsersThree,
-
-  // Utiles
-  "cliniques-privees": FirstAid, "centres-sante-publics": Hospital,
-  medecins: Stethoscope, dentistes: Tooth, opticiens: Eyeglasses,
-  laboratoires: TestTube, veterinaires: PawPrint, "postes-police": PoliceCar,
-  poste: Mailbox, assurances: ShieldCheck, banques: Bank, distributeurs: Money,
-  pharmacies: Pill, "expatriation-visas": IdentificationCard,
-  photographes: Camera, depannages: Wrench, "informatique-reparation": Laptop,
-  "taxis-transferts": Taxi, "location-voiture": Car, "vtc-apps": DeviceMobile,
-  telecom: WifiHigh, "plateformes-multiservices": Suitcase,
-  "garages-mecaniciens": Wrench, concessionnaires: CarProfile,
-  "controle-technique": Gauge, notaires: Scroll, avocats: Gavel,
-  comptables: Calculator, "pressing-blanchisserie": WashingMachine,
-  "ambassades-consulats": Flag,
-
-  // Coaching
-  "sports-bien-etre": Barbell, business: Briefcase,
-
-  // Soins & bien-être
-  "spa-instituts": FlowerLotus, coiffeurs: Scissors, "onglerie-manucure": Sparkle,
-  barbiers: Scissors, "tatouage-piercing": Needle, "yoga-pilates": PersonSimpleTaiChi,
-  "medecine-douce": Plant,
-
-  // Business & TTV
-  coworking: Laptop, "cafe-coworking": Coffee, "garde-enfants": Baby,
-  networking: Handshake,
-
-  // Seconde main
-  "voitures-2-roues": Motorcycle, "habits-adultes": TShirt, "jeux-livres": GameController,
-  "eq-maison-particuliers": Armchair, "vetements-particuliers": TShirt,
-  "livres-particuliers": Books,
-
-  // Immobilier / éducation / événements
-  agences: Buildings, "ecoles-privees-internationales": GraduationCap,
-  "creches-garderies": Baby, culturels: MaskHappy, sportifs: Medal,
+  // Filtres — Spécialité
+  "produits-francais": Bread,
 
   // Gammes de prix
   "bon-marche": Coins, "prix-moyen": Money, "se-faire-plaisir": Diamond,
@@ -297,49 +269,37 @@ export function thematicIconFor(key: string): string | null {
 }
 
 /**
- * Clés de rubriques couvertes par les icônes illustrées découpées depuis la
- * planche fournie par la cliente (public/subicons/{key}.png). Manger, Se
- * divertir, Bouger & Nature, Shopping et Santé & Bien-être en style
- * illustration « objet-seul » ; Vie pratique / Famille / Événements /
- * Seconde main en style trait (planche taxonomie V4, solution temporaire
- * en attendant l'illustré — cf. mémoire projet_maurice_plus_icon_pipeline).
+ * Clés de rubriques (SUBCATEGORIES) couvertes par une icône illustrée
+ * (public/subicons/{key}.png), style pictogramme plat simple (planche V4).
+ * Une entrée par rubrique de la nouvelle taxonomie à 8 catégories — cf.
+ * web/data/categories.ts.
  */
 const SUBICON_KEYS = new Set([
-  "restaurants", "tables-hotes", "chefs-domicile", "cours-de-cuisine",
-  "grandes-surfaces", "epiceries-specialisees", "boucheries", "poissonneries",
-  "fruits-et-legumes", "marches", "boulangeries", "produits-francais",
-  "vins-spiritueux", "livraisons",
-  "bars", "cafes-terrasses", "snacks-plage", "glaciers", "rhumeries",
-  "cinemas", "bowling", "karting", "escape-game", "casinos",
-  "culture-patrimoine", "bibliotheque-mediatheque",
-  "complexes-sportifs", "gym-fitness", "sports-nautiques", "golf", "tennis-padel",
-  "centres-equestres", "randonnee-trail",
-  "plages", "parcs-nationaux-cascades", "parcs-botaniques", "parcs-animaliers",
-  "parcs-aventures", "excursions", "peche",
-  "malls", "mode-adultes", "mode-enfants", "materiel-sports", "livres", "jeux",
-  "souvenirs", "equipement-maison", "beaute", "electromenager", "high-tech",
-  "cliniques-privees", "centres-sante-publics", "medecins", "dentistes",
-  "opticiens", "laboratoires", "pharmacies", "veterinaires",
-  "spa-instituts", "coiffeurs", "onglerie-manucure", "barbiers",
-  "tatouage-piercing", "yoga-pilates", "medecine-douce", "sports-bien-etre",
-  // Vie pratique — Démarches & admin
-  "poste", "postes-police", "banques", "assurances", "notaires", "avocats",
-  "comptables", "expatriation-visas", "telecom", "plateformes-multiservices",
-  // Vie pratique — Auto & maison
-  "garages-mecaniciens", "concessionnaires", "controle-technique",
-  "location-voiture", "taxis-transferts", "vtc-apps", "depannages",
-  "informatique-reparation", "pressing-blanchisserie",
-  // Vie pratique — Immobilier & pro
-  "agences", "coworking", "cafe-coworking", "garde-enfants", "networking",
-  "business",
-  // Famille & Éducation
-  "activites-enfants-famille", "centres-loisirs-animations-enfants",
-  "ecoles-privees-internationales", "creches-garderies",
-  // Événements
-  "sportifs", "culturels",
-  // Seconde main
-  "voitures-2-roues", "habits-adultes", "vetements-particuliers",
-  "eq-maison-particuliers", "jeux-livres", "livres-particuliers",
+  // Manger & boire
+  "restaurants", "cafes-bars-glaciers", "tables-hotes-chefs-domicile",
+  "commerces-alimentaires", "marches-produits-locaux", "livraisons",
+  // Sortir & découvrir
+  "excursions-sorties", "culture-patrimoine", "plages-nature",
+  "parcs-activites-famille", "activites-enfants-famille", "casinos-loisirs", "cinemas",
+  // Faire du sport
+  "salles-sport-fitness", "tennis-padel", "golf", "randonnee-trail",
+  "sports-nautiques", "equitation-autres-sports",
+  // Santé & bien-être
+  "medecins-soins", "pharmacies-laboratoires", "cliniques-hopitaux",
+  "spa-instituts-massages", "coiffeurs-barbiers-beaute", "yoga-bien-etre", "veterinaires",
+  // Acheter & s'équiper
+  "malls-shopping", "mode-accessoires", "maison-equipement",
+  "high-tech-electromenager", "librairies-jeux-loisirs", "souvenirs-cadeaux",
+  "seconde-main-boutiques", "seconde-main-particuliers",
+  // Vie pratique
+  "banques-assurances-argent", "poste-demarches", "police-ambassades-consulats",
+  "avocats-notaires-comptables", "telecom-internet", "auto-garages-concessionnaires",
+  "taxis-vtc-location", "depannages-services", "immobilier",
+  // Famille & Travail
+  "creches-garderies", "ecoles", "centres-loisirs-animations",
+  "coworking-teletravail", "business-networking",
+  // Agenda
+  "evenements-culturels", "evenements-sportifs",
 ]);
 
 /** Chemin de l'icône découpée pour une rubrique, ou null si pas encore couverte. */
