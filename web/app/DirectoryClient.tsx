@@ -6,6 +6,8 @@ import type { Business, CategoryKey } from "@/lib/types";
 import type { MapBounds } from "./Map";
 import { CATEGORIES, CATEGORY_MAP, SUBCATEGORIES, FILTER_GROUPS, PRICE_RANGES } from "@/data/categories";
 import type { FilterGroup } from "@/data/categories";
+import { SELECTIONS, SELECTION_GROUP_META } from "@/data/selections";
+import type { SelectionGroup } from "@/data/selections";
 import { Logo } from "@/components/ui/Logo";
 import { SearchInput } from "@/components/ui/SearchInput";
 import { CategoryRow } from "@/components/ui/CategoryRow";
@@ -125,6 +127,8 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
   const [geoStatus, setGeoStatus] = useState<"idle" | "loading" | "denied" | "unavailable" | "ok">("idle");
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [openId, setOpenId] = useState<string | null>(null);
+  // Accueil → Listes de Koté Moris : sélection éditoriale ouverte (null = grille des sélections).
+  const [selectedListId, setSelectedListId] = useState<string | null>(null);
   const [hoveredId, setHoveredId] = useState<string | null>(null);
   const [filterByMap, setFilterByMap] = useState(false);
   const [mapBounds, setMapBounds] = useState<MapBounds | null>(null);
@@ -142,6 +146,29 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
   const aTesterSectionRef = useRef<HTMLDivElement>(null);
 
   const onBoundsChange = useCallback((b: MapBounds) => setMapBounds(b), []);
+
+  // Quitte l'écran d'accueil "Listes de Koté Moris" → referme la sélection ouverte.
+  useEffect(() => {
+    if (homeMode !== "listes") setSelectedListId(null);
+  }, [homeMode]);
+
+  const businessById = useMemo(() => {
+    const record: Record<string, Business> = {};
+    businesses.forEach((b) => { record[b.id] = b; });
+    return record;
+  }, [businesses]);
+
+  const selectedList = selectedListId ? SELECTIONS.find((s) => s.id === selectedListId) ?? null : null;
+  const selectedListBusinesses = useMemo(
+    () => (selectedList ? selectedList.businessIds.map((id) => businessById[id]).filter((b): b is Business => !!b) : []),
+    [selectedList, businessById]
+  );
+  const featuredSelections = useMemo(() => SELECTIONS.filter((s) => s.featured), []);
+  const selectionsByGroup = useMemo(() => {
+    const map: Record<SelectionGroup, typeof SELECTIONS> = { besoins: [], envies: [], escapades: [] };
+    SELECTIONS.forEach((s) => map[s.group].push(s));
+    return map;
+  }, []);
 
   const subcategories = SUBCATEGORIES[active as keyof typeof SUBCATEGORIES];
 
@@ -1143,23 +1170,117 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
             </div>
           )}
 
-          {/* Accueil → Listes Koté Moris / Profil / Ajouter : écrans placeholder « bientôt ». */}
+          {/* Accueil → Listes de Koté Moris : sélections éditoriales par thématique. */}
+          {showHome && homeMode === "listes" && selectedListId === null && (
+            <div className="pb-16 max-w-[640px] mx-auto">
+              <div className="mb-5">
+                <h2 className="font-serif text-xl font-semibold leading-tight">Nos sélections</h2>
+                <p className="m-0 mt-1 text-[13px] text-muted leading-snug">
+                  Nos coups de cœur pour profiter de Maurice autrement.
+                </p>
+              </div>
+
+              {featuredSelections.length > 0 && (
+                <div className="mb-7">
+                  <h3 className="text-[13px] font-bold text-muted uppercase tracking-wide mb-2.5">
+                    Les sélections du moment
+                  </h3>
+                  <div className="grid grid-cols-2 gap-2.5">
+                    {featuredSelections.map((s) => (
+                      <button
+                        key={s.id}
+                        onClick={() => setSelectedListId(s.id)}
+                        className="text-left bg-surface border border-border rounded-2xl shadow-sm p-3.5 flex flex-col gap-1 active:scale-[.98] transition-transform"
+                      >
+                        <span className="text-2xl" aria-hidden>{s.emoji}</span>
+                        <span className="font-serif text-[14.5px] font-semibold leading-tight">{s.title}</span>
+                        <span className="text-[12px] text-muted leading-snug">{s.tagline}</span>
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              <h3 className="text-[15px] font-bold text-ink mb-2">Explorer les sélections</h3>
+              {(Object.keys(SELECTION_GROUP_META) as SelectionGroup[]).map((group) => (
+                <div key={group} className="mb-6">
+                  <h4 className="text-[13px] font-bold text-primary-deep mb-0.5">
+                    {SELECTION_GROUP_META[group].label}
+                  </h4>
+                  <p className="m-0 mb-2.5 text-[12px] text-muted">{SELECTION_GROUP_META[group].subtitle}</p>
+                  <div className="flex flex-col gap-2">
+                    {selectionsByGroup[group].map((s) => (
+                      <button
+                        key={s.id}
+                        onClick={() => setSelectedListId(s.id)}
+                        className="text-left bg-surface border border-border rounded-card shadow-card p-3 flex items-center gap-3 active:scale-[.98] transition-transform"
+                      >
+                        <span className="text-2xl shrink-0" aria-hidden>{s.emoji}</span>
+                        <span className="flex-1 min-w-0">
+                          <span className="block font-serif text-[14.5px] font-semibold leading-tight truncate">
+                            {s.title}
+                          </span>
+                          <span className="block text-[12px] text-muted leading-snug truncate">{s.tagline}</span>
+                        </span>
+                        <span className="shrink-0 text-[11px] font-semibold text-muted">
+                          {s.businessIds.length} adr.
+                        </span>
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+          )}
+
+          {/* Accueil → Listes de Koté Moris → une sélection ouverte : ses fiches. */}
+          {showHome && homeMode === "listes" && selectedList && (
+            <div className="pb-16">
+              <div className="sticky top-[94px] z-20 -mx-4 lg:-mx-5 px-4 lg:px-5 py-2 flex items-center gap-2 border-b border-border" style={{ background: "var(--bg)" }}>
+                <button
+                  onClick={() => setSelectedListId(null)}
+                  aria-label="Retour aux sélections"
+                  className="shrink-0 w-7 h-7 -ml-1 rounded-full flex items-center justify-center text-ink active:scale-[.95] transition-transform"
+                >
+                  <ArrowLeft size={17} weight="bold" aria-hidden />
+                </button>
+                <p className="text-[15px] font-semibold truncate">
+                  <span aria-hidden>{selectedList.emoji}</span> {selectedList.title}
+                </p>
+              </div>
+              <div className="max-w-[560px] mx-auto pt-3">
+                <p className="m-0 mb-3 text-[13px] text-muted leading-snug">
+                  Notre sélection Koté Moris · {selectedListBusinesses.length} adresses — {selectedList.tagline}
+                </p>
+                <div className="flex flex-col gap-3">
+                  {selectedListBusinesses.map((b) => (
+                    <BusinessCard
+                      key={b.id}
+                      business={b}
+                      active={b.id === selectedId}
+                      onSelect={selectFromCard}
+                      onHover={() => {}}
+                    />
+                  ))}
+                </div>
+              </div>
+            </div>
+          )}
+
+          {/* Accueil → Profil / Ajouter : écrans placeholder « bientôt ». */}
           {showHome &&
-            (homeMode === "listes" || homeMode === "profil" || homeMode === "ajouter") && (
+            (homeMode === "profil" || homeMode === "ajouter") && (
               <div className="pb-16">
                 <div className="mt-6 max-w-[420px] mx-auto text-center bg-surface border border-border rounded-2xl shadow-sm p-7 flex flex-col items-center gap-3">
                   <span className="w-14 h-14 rounded-2xl bg-primary-tint text-primary-deep flex items-center justify-center">
-                    {homeMode === "listes" && <Star size={28} weight="duotone" aria-hidden />}
                     {homeMode === "profil" && <UserCircle size={28} weight="duotone" aria-hidden />}
                     {homeMode === "ajouter" && <Plus size={28} weight="bold" aria-hidden />}
                   </span>
                   <p className="font-serif text-lg font-semibold leading-tight">
-                    {homeMode === "listes" && "Les listes de Koté Moris"}
                     {homeMode === "profil" && "Mon profil"}
                     {homeMode === "ajouter" && "Ajouter une adresse"}
                   </p>
                   <p className="text-[13px] text-muted leading-snug">
-                    {homeMode === "listes" && "Nos sélections d'adresses par thématique, à découvrir très bientôt."}
                     {homeMode === "profil" && "Votre compte, vos préférences et votre historique, bientôt ici."}
                     {homeMode === "ajouter" && "Suggérez une adresse à ajouter à l'annuaire Koté Moris."}
                   </p>
