@@ -97,6 +97,13 @@ export function CategoryRow({
     const angle = GRADIENT_ANGLE[resolvedKey] ?? 120;
     const subtext = CATEGORY_SUBTEXT[resolvedKey];
 
+    // Le bouton flèche reste toujours à droite (jamais à gauche, même quand la
+    // mascotte y est) — la mascotte se décale alors vers la gauche pour lui
+    // laisser sa place.
+    const ARROW_ZONE = 44;
+    const BANNER_W = 152;
+    const bannerRightInset = pos === "right" ? ARROW_ZONE : 0;
+
     const banner = (
       // eslint-disable-next-line @next/next/no-img-element
       <img
@@ -104,14 +111,19 @@ export function CategoryRow({
         alt=""
         aria-hidden
         className={`pointer-events-none absolute inset-y-0 h-full w-[152px] object-contain ${
-          pos === "right" ? "right-0 object-right scale-x-[-1]" : "left-0 object-left"
+          pos === "right" ? "object-right scale-x-[-1]" : "left-0 object-left"
         }`}
+        style={pos === "right" ? { right: bannerRightInset } : undefined}
       />
     );
     const text = (
       <span
         className="relative z-10 flex-1 min-w-0 flex flex-col justify-center gap-1"
-        style={pos === "left" ? { marginLeft: 148 } : { marginRight: 148 }}
+        style={
+          pos === "left"
+            ? { marginLeft: 148, marginRight: ARROW_ZONE }
+            : { marginRight: bannerRightInset + BANNER_W + 12 }
+        }
       >
         <span className="flex items-center gap-1.5">
           {Icon && (
@@ -145,7 +157,7 @@ export function CategoryRow({
     );
     const arrowBtn = (
       <span
-        className="relative z-10 shrink-0 inline-flex items-center justify-center w-8 h-8 rounded-full text-on-accent"
+        className="absolute z-10 right-2.5 top-1/2 -translate-y-1/2 shrink-0 inline-flex items-center justify-center w-8 h-8 rounded-full text-on-accent"
         style={{ background: cat.color }}
         aria-hidden
       >
@@ -159,23 +171,14 @@ export function CategoryRow({
     return (
       <button
         onClick={onClick}
-        className={`relative w-full min-h-[104px] flex items-center gap-2.5 rounded-2xl py-2.5 text-left overflow-hidden active:scale-[.99] transition-transform ${
-          pos === "left" ? "pl-2 pr-3" : "pl-3 pr-2"
+        className={`relative w-full min-h-[104px] flex items-center rounded-2xl py-2.5 text-left overflow-hidden active:scale-[.99] transition-transform ${
+          pos === "left" ? "pl-2" : "pl-3"
         }`}
         style={{ background: rowBg, border: rowBorder }}
       >
         {banner}
-        {pos === "left" ? (
-          <>
-            {text}
-            {arrowBtn}
-          </>
-        ) : (
-          <>
-            {arrowBtn}
-            {text}
-          </>
-        )}
+        {text}
+        {arrowBtn}
       </button>
     );
   }
