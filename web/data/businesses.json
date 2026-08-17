@@ -35102,7 +35102,7 @@
       "maison-equipement"
     ],
     "zone": "centre",
-    "description": "Numéro un de l'ameublement, de l'électroménager et de l'informatique à Maurice (fondé en 1985, 23 showrooms sur l'île), avec service de livraison et d'installation (climatiseurs, chauffe-eau au gaz).",
+    "description": "Numéro un de l'ameublement, de l'électroménager et de l'informatique à Maurice (fondé en 1985, 23 showrooms sur l'île), avec service de livraison et d'installation (climatiseurs, chauffe-eau au gaz). Autre adresse : Super U de Grand Baie (1er étage).",
     "hours": "Lun-Ven 9h-17h30, Sam 9h30-12h30"
   },
   {
@@ -35149,7 +35149,7 @@
       "maison-equipement"
     ],
     "zone": "nord",
-    "description": "Enseigne d'électroménager historique à Maurice (depuis 1956) : lave-linge, réfrigérateurs, micro-ondes, cuisinières et lave-vaisselle, avec service après-vente. Propose aussi un rayon instruments de musique (claviers Yamaha notamment).",
+    "description": "Enseigne d'électroménager historique à Maurice (depuis 1956) : lave-linge, réfrigérateurs, micro-ondes, cuisinières et lave-vaisselle, avec service après-vente. Propose aussi un rayon instruments de musique (claviers Yamaha notamment). Rayon mobilier moyenne gamme également (réassort possible).",
     "hours": "Lun-Mer et Ven-Sam 9h30-18h, Jeu 9h30-13h30"
   },
   {
@@ -35335,7 +35335,7 @@
       "maison-equipement"
     ],
     "zone": "centre",
-    "description": "Enseigne de mobilier d'intérieur et d'extérieur (depuis 2007), historiquement spécialisée en teck et aujourd'hui élargie aux canapés, salons, chambres, matelas et mobilier de jardin, importés d'Indonésie, de Turquie, de Chine et d'Europe, avec option de personnalisation."
+    "description": "Enseigne de mobilier d'intérieur et d'extérieur (depuis 2007), historiquement spécialisée en teck et aujourd'hui élargie aux canapés, salons, chambres, matelas et mobilier de jardin, importés d'Indonésie, de Turquie, de Chine et d'Europe, avec option de personnalisation. Autre adresse : The Vale."
   },
   {
     "id": "ikhaya-craft-flic-en-flac",
@@ -46259,5 +46259,112 @@
     ],
     "zone": "centre",
     "description": "Distributeur de pneus Hankook à Port-Louis."
+  },
+  {
+    "id": "timeless-living-forbach",
+    "name": "Timeless Living",
+    "category": "acheter-equiper",
+    "address": "Route M2, entre les ronds-points The Vale et Forbach",
+    "phone": "+230 268 3939",
+    "themes": [
+      "maison-equipement"
+    ],
+    "zone": "nord",
+    "description": "Très beau mobilier qui mise sur la distinction."
+  },
+  {
+    "id": "courts-mammouth-grand-baie",
+    "name": "Courts Mammouth — Grand Baie",
+    "category": "acheter-equiper",
+    "address": "Super U de Grand Baie, 1er étage",
+    "phone": "+230 207 1100",
+    "themes": [
+      "maison-equipement"
+    ],
+    "zone": "nord",
+    "description": "Mobilier et électroménager d'entrée de gamme. Autre adresse : Bell Village, Port-Louis."
+  },
+  {
+    "id": "meubles-meunier-terre-rouge",
+    "name": "Meubles Meunier",
+    "category": "acheter-equiper",
+    "address": "Rue St. Joseph, Rond-point de Terre Rouge",
+    "phone": "+230 248 0111",
+    "themes": [
+      "maison-equipement"
+    ],
+    "zone": "nord",
+    "description": "Spécialiste du mobilier en rotin, travaux de rénovation excellents."
+  },
+  {
+    "id": "ssb-le-savoir-fer-pailles",
+    "name": "SSB — Le Savoir Fer",
+    "category": "acheter-equiper",
+    "address": "Route Nicolay, ancienne route de Pailles, Pailles",
+    "themes": [
+      "maison-equipement"
+    ],
+    "zone": "centre",
+    "description": "Spécialiste du mobilier en fer forgé."
+  },
+  {
+    "id": "meubles-domingue-terre-rouge",
+    "name": "Meubles Domingue",
+    "category": "acheter-equiper",
+    "address": "Route Royale, Le Hochet, Terre Rouge",
+    "phone": "+230 248 8615",
+    "themes": [
+      "maison-equipement"
+    ],
+    "zone": "nord",
+    "description": "Mobilier spécialisé en bois massif, propose du sur-mesure."
+  },
+  {
+    "id": "sensoria-home-grand-baie",
+    "name": "Sensoria Home",
+    "category": "acheter-equiper",
+    "address": "Chemin 20 Pieds, Grand Baie",
+    "phone": "+230 5252 3890",
+    "themes": [
+      "maison-equipement"
+    ],
+    "zone": "nord",
+    "description": "Très grand showroom sur 3 niveaux, belle gamme de mobilier d'intérieur et d'extérieur et objets de décoration."
+  },
+  {
+    "id": "yuni-pinpoint-business-park",
+    "name": "Yuni",
+    "category": "acheter-equiper",
+    "address": "PinPoint Business Park, M2/M3",
+    "phone": "+230 245 8100",
+    "themes": [
+      "maison-equipement"
+    ],
+    "zone": "nord",
+    "description": "Meubles d'intérieur et d'extérieur, style balinais ou moderne, bon rapport qualité/prix, très bon service après-vente."
+  },
+  {
+    "id": "teak-world-the-vale",
+    "name": "Teak World — The Vale",
+    "category": "acheter-equiper",
+    "address": "The Vale",
+    "phone": "+230 460 5300",
+    "themes": [
+      "maison-equipement"
+    ],
+    "zone": "nord",
+    "description": "Mobilier en teck, grand choix, service après-vente attentionné. Autre adresse : Bagatelle Home & Leisure, Moka."
+  },
+  {
+    "id": "vivenci-grand-baie",
+    "name": "Vivenci",
+    "category": "acheter-equiper",
+    "address": "Chemin 20 Pieds, Grand Baie",
+    "phone": "+230 5946 6353",
+    "themes": [
+      "maison-equipement"
+    ],
+    "zone": "nord",
+    "description": "Mobilier fait sur-mesure."
   }
 ]
