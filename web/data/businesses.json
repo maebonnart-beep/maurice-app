@@ -15475,7 +15475,7 @@
       "seconde-main-boutiques"
     ],
     "zone": "nord",
-    "description": "Vente de voitures d'occasion à Mapou. Achat, vente et reprise de véhicules."
+    "description": "Vente de voitures d'occasion à Mapou. Achat, vente et reprise de véhicules. Propose aussi service et dépannage aux standards européens (Tél. 244 3888)."
   },
   {
     "id": "vintage-clothing",
@@ -41267,12 +41267,12 @@
     "name": "Sobee Car Service",
     "category": "vie-pratique",
     "address": "Plaine Des Papayes",
-    "phone": "",
+    "phone": "+230 266 8573",
     "website": "",
     "themes": [
       "auto-garages-concessionnaires"
     ],
-    "description": "Garage automobile : entretien courant, réparation mécanique et diagnostic.",
+    "description": "Garage agréé Swan Insurance à Plaine des Papayes : entretien courant, réparation mécanique et diagnostic. Se déplace sur demande dans le nord.",
     "lat": -20.0616,
     "lng": 57.5818,
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Sobee%20Car%20Service%20Mauritius",
@@ -46105,5 +46105,159 @@
     ],
     "zone": "sud",
     "description": "Location de motos et scooters, livraison gratuite possible à l'aéroport."
+  },
+  {
+    "id": "garage-ravin-terre-rouge",
+    "name": "Garage Ravin",
+    "category": "vie-pratique",
+    "address": "Terre Rouge",
+    "phone": "+230 248 5810",
+    "themes": [
+      "auto-garages-concessionnaires"
+    ],
+    "zone": "nord",
+    "description": "Garage automobile agréé Mauritius Union Insurance à Terre Rouge."
+  },
+  {
+    "id": "garage-du-nord-the-vale",
+    "name": "Garage du Nord",
+    "category": "vie-pratique",
+    "address": "Route Royale B12, The Vale",
+    "phone": "+230 263 2245",
+    "themes": [
+      "auto-garages-concessionnaires"
+    ],
+    "zone": "nord",
+    "description": "Garage automobile de The Vale."
+  },
+  {
+    "id": "garage-satish-piton",
+    "name": "Garage Satish",
+    "category": "vie-pratique",
+    "address": "Piton",
+    "phone": "+230 264 5065",
+    "themes": [
+      "auto-garages-concessionnaires"
+    ],
+    "zone": "est",
+    "description": "Garage spécialiste des marques japonaises à Piton, se déplace. Second numéro : +230 5259 7060."
+  },
+  {
+    "id": "garage-high-tech-pamplemousses",
+    "name": "Garage High Tech",
+    "category": "vie-pratique",
+    "address": "Pamplemousses (sur l'autoroute)",
+    "phone": "+230 243 7315",
+    "themes": [
+      "auto-garages-concessionnaires"
+    ],
+    "zone": "nord",
+    "description": "Réparations et entretien toutes marques (Virig Permalloo), sur rendez-vous. Second numéro : +230 5772 2099."
+  },
+  {
+    "id": "garage-auto-scan-triolet",
+    "name": "Garage Auto Scan",
+    "category": "vie-pratique",
+    "address": "Route Royale, 9th Mile, Triolet",
+    "phone": "+230 261 6072",
+    "themes": [
+      "auto-garages-concessionnaires"
+    ],
+    "zone": "nord",
+    "description": "Garage automobile de Triolet (Abhishek). Second numéro : +230 265 7188."
+  },
+  {
+    "id": "quick-lane-riche-terre",
+    "name": "Quick Lane",
+    "category": "vie-pratique",
+    "address": "Riche Terre (près de Jumbo)",
+    "phone": "+230 249 1414",
+    "themes": [
+      "auto-garages-concessionnaires"
+    ],
+    "zone": "nord",
+    "description": "Tous les services auto sans rendez-vous : freins, pneus, batterie, climatisation, révision."
+  },
+  {
+    "id": "pkl-triolet",
+    "name": "PKL",
+    "category": "vie-pratique",
+    "address": "9th Mile, Triolet",
+    "phone": "+230 261 5000",
+    "themes": [
+      "auto-garages-concessionnaires"
+    ],
+    "zone": "nord",
+    "description": "Vente de pièces détachées automobiles, présent aussi à Goodlands, Port-Louis et Flacq."
+  },
+  {
+    "id": "eshan-towing",
+    "name": "Eshan Towing",
+    "category": "vie-pratique",
+    "phone": "+230 5250 8980",
+    "themes": [
+      "auto-garages-concessionnaires"
+    ],
+    "description": "Service de remorquage automobile."
+  },
+  {
+    "id": "cottage-tyre-centre",
+    "name": "Cottage Tyre Centre",
+    "category": "vie-pratique",
+    "address": "Route de Cottage",
+    "phone": "+230 260 7600",
+    "themes": [
+      "auto-garages-concessionnaires"
+    ],
+    "zone": "nord",
+    "description": "Gros stock de pneus et de jantes, professionnels."
+  },
+  {
+    "id": "triolet-tyre-centre",
+    "name": "Triolet Tyre Centre",
+    "category": "vie-pratique",
+    "address": "Chemin 20 Pieds, entrée de Triolet",
+    "phone": "+230 5778 4316",
+    "themes": [
+      "auto-garages-concessionnaires"
+    ],
+    "zone": "nord",
+    "description": "Centre de pneus à l'entrée de Triolet."
+  },
+  {
+    "id": "tyre-world-riche-terre",
+    "name": "Tyre World",
+    "category": "vie-pratique",
+    "address": "Autoroute M3, contre-allée Riche Terre (avant Princes Tuna)",
+    "phone": "+230 249 1212",
+    "themes": [
+      "auto-garages-concessionnaires"
+    ],
+    "zone": "nord",
+    "description": "Pneus, notamment la marque Westlake, réputée durer presque aussi longtemps que les autres au quart du prix."
+  },
+  {
+    "id": "bridgestone-tyre-centre-port-louis",
+    "name": "Bridgestone Tyre Centre",
+    "category": "vie-pratique",
+    "address": "26 rue Edgar Aubert, Port-Louis",
+    "phone": "+230 208 1502",
+    "themes": [
+      "auto-garages-concessionnaires"
+    ],
+    "zone": "centre",
+    "description": "Centre de pneus Bridgestone à Port-Louis."
+  },
+  {
+    "id": "hankook-abc-marketing-port-louis",
+    "name": "Hankook — ABC Marketing",
+    "category": "vie-pratique",
+    "address": "Quay D (sur l'autoroute), Port-Louis",
+    "phone": "+230 216 2770",
+    "themes": [
+      "auto-garages-concessionnaires"
+    ],
+    "zone": "centre",
+    "description": "Distributeur de pneus Hankook à Port-Louis."
   }
 ]
