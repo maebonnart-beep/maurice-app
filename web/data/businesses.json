@@ -46340,7 +46340,8 @@
     "themes": [
       "auto-garages-concessionnaires"
     ],
-    "description": "Service de remorquage automobile."
+    "description": "Service de remorquage automobile.",
+    "address": "Service mobile — toute l'île"
   },
   {
     "id": "cottage-tyre-centre",
