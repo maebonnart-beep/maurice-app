@@ -87,7 +87,7 @@ export function BusinessCard({
   const facts = metaFacts(b).slice(0, 2);
   // Tags de filtre (cuisine, ambiance, spécialité…) portés par la fiche —
   // quelques mots-clés visibles sans ouvrir la fiche.
-  const filterTags = (b.themes ?? [])
+  const filterTags = (b.filters ?? [])
     .filter((t) => !hiddenKeys?.has(t) && FILTER_OPTION_MAP[t])
     .slice(0, 3)
     .map((t) => FILTER_OPTION_MAP[t]);
