@@ -86,11 +86,11 @@ export function CategoryRow({
         src={mascot}
         alt=""
         aria-hidden
-        className="pointer-events-none absolute inset-y-0 left-0 h-full w-[128px] object-contain object-left"
+        className="pointer-events-none absolute inset-y-0 left-0 h-full w-[152px] object-contain object-left"
       />
     );
     const text = (
-      <span className="relative z-10 flex-1 min-w-0 flex flex-col justify-center gap-1" style={{ marginLeft: 122 }}>
+      <span className="relative z-10 flex-1 min-w-0 flex flex-col justify-center gap-1" style={{ marginLeft: 148 }}>
         <span className="flex items-center gap-1.5">
           {Icon && (
             <span
@@ -137,7 +137,7 @@ export function CategoryRow({
     return (
       <button
         onClick={onClick}
-        className="relative w-full min-h-[92px] flex items-center gap-2.5 rounded-2xl py-2.5 pl-2 pr-3 text-left overflow-hidden active:scale-[.99] transition-transform"
+        className="relative w-full min-h-[104px] flex items-center gap-2.5 rounded-2xl py-2.5 pl-2 pr-3 text-left overflow-hidden active:scale-[.99] transition-transform"
         style={{ background: rowBg, border: rowBorder }}
       >
         {banner}
