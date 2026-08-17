@@ -5,7 +5,7 @@ import { SUBCATEGORIES, PRICE_RANGES, CATEGORY_MAP, FILTER_GROUPS } from "@/data
 import { displayName, displayCity } from "@/lib/format";
 import { accentColorFor } from "./Badge";
 import { FavoriteButton } from "./FavoriteButton";
-import { FACT_ICONS, CONTACT_ICONS } from "@/lib/icons";
+import { FACT_ICONS, CONTACT_ICONS, iconForKey } from "@/lib/icons";
 import type { Icon } from "@phosphor-icons/react";
 
 /** Toutes les options de filtre (cuisine, ambiance, discipline, spécialité…), à plat par clé. */
@@ -75,9 +75,14 @@ export function BusinessCard({
 }) {
   const accentColor = accentColorFor(b.badge, b.isAgency);
   const price = b.priceRange ? PRICE_RANGES.find((p) => p.key === b.priceRange) : undefined;
-  // Sous-titre façon « Cuisine locale » : première rubrique/thème de la fiche.
+  // Type de lieu (rubrique) : première rubrique/thème de la fiche, affiché en
+  // tag coloré (couleur de la catégorie) pour dire au premier coup d'œil si
+  // c'est un restaurant, une plage, une randonnée... — plus visible qu'un
+  // sous-titre gris.
   const firstTheme = b.themes?.find((t) => !hiddenKeys?.has(t) && t !== "kids-friendly");
-  const subtitle = firstTheme ? SUBCATEGORIES[b.category]?.find((t) => t.key === firstTheme)?.label : undefined;
+  const rubrique = firstTheme ? SUBCATEGORIES[b.category]?.find((t) => t.key === firstTheme) : undefined;
+  const RubriqueIcon = firstTheme ? iconForKey(firstTheme) : null;
+  const categoryColor = CATEGORY_MAP[b.category].color;
   // 1-2 infos concrètes pour ne pas se limiter au nom/adresse au 1er coup d'œil.
   const facts = metaFacts(b).slice(0, 2);
   // Tags de filtre (cuisine, ambiance, spécialité…) portés par la fiche —
@@ -128,7 +133,21 @@ export function BusinessCard({
             {displayName(b.name)}
           </h3>
         </div>
-        {subtitle && <p className="m-0 text-muted text-[12.5px] leading-[1.4] truncate">{subtitle}</p>}
+        {rubrique && (
+          <p className="m-0 mt-0.5">
+            <span
+              className="inline-flex items-center gap-1 text-[11px] font-bold px-1.5 py-0.5 rounded-pill"
+              style={{ background: `color-mix(in srgb, ${categoryColor} 15%, var(--surface))`, color: categoryColor }}
+            >
+              {RubriqueIcon ? (
+                <RubriqueIcon size={11} weight="bold" aria-hidden />
+              ) : (
+                <span aria-hidden>{rubrique.emoji}</span>
+              )}
+              {rubrique.label}
+            </span>
+          </p>
+        )}
         <p className="m-0 text-muted text-[12.5px] leading-[1.4] flex items-center gap-1 mt-0.5">
           <CONTACT_ICONS.MapPin size={12} weight="fill" className="shrink-0 opacity-70" aria-hidden />
           <span className="truncate">{displayCity(b.address)}</span>
@@ -174,12 +193,6 @@ export function BusinessCard({
       </div>
       <div className="shrink-0 flex flex-col items-end gap-1.5">
         <FavoriteButton id={b.id} size={17} className="text-muted" />
-        <span
-          className="text-[10px] font-bold px-2 py-1 rounded-pill whitespace-nowrap max-w-[92px] truncate"
-          style={{ background: `color-mix(in srgb, ${CATEGORY_MAP[b.category].color} 15%, var(--surface))`, color: CATEGORY_MAP[b.category].color }}
-        >
-          {CATEGORY_MAP[b.category].label}
-        </span>
       </div>
     </article>
   );
