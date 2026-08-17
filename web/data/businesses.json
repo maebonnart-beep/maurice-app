@@ -2058,7 +2058,7 @@
       "mode-accessoires"
     ],
     "zone": "nord",
-    "description": "Concept store de mode féminine à Grand Baie, avec un choix de vêtements et accessoires de marques locales (Petite Cabotine, Metis by M, Lupina) et importées."
+    "description": "Concept store de mode féminine à Grand Baie, avec un choix de vêtements et accessoires de marques locales (Petite Cabotine, Metis by M, Lupina) et importées. Autre adresse : Route Royale, Pointe aux Canonniers."
   },
   {
     "id": "le-rendez-vous-grand-baie",
@@ -2588,7 +2588,7 @@
       "mode-accessoires"
     ],
     "zone": "nord",
-    "description": "Atelier-boutique de tricots et maroquinerie en cachemire fabriqués localement à Maurice."
+    "description": "Atelier-boutique de tricots et maroquinerie en cachemire fabriqués localement à Maurice. Magasin d'usine également à Goodlands (ZI Vel Industrial Complex)."
   },
   {
     "id": "alicia-swim-grand-baie",
@@ -2604,7 +2604,7 @@
       "mode-accessoires"
     ],
     "zone": "nord",
-    "description": "Boutique de maillots de bain et vêtements de plage de la marque mauricienne Alicia Swim."
+    "description": "Boutique de maillots de bain et vêtements de plage de la marque mauricienne Alicia Swim. Autre adresse : Quartier des Serres, Mapou."
   },
   {
     "id": "concepts-grand-baie",
@@ -15504,7 +15504,7 @@
     "lat": -20.0216408,
     "lng": 57.5783462,
     "themes": [
-      "seconde-main-boutiques"
+      "mode-accessoires"
     ],
     "zone": "nord",
     "description": "Dépôt-vente de vêtements et accessoires de marque et de luxe d'occasion (pre-loved), à Grand Baie (La Croisette)."
@@ -35021,7 +35021,7 @@
       "mode-accessoires"
     ],
     "zone": "centre",
-    "description": "Boutique spécialisée en vêtements et accessoires pour bébés à La City Trianon, avec plus de 25 ans d'expérience ; puériculture, poussettes, lits et jouets."
+    "description": "Boutique spécialisée en vêtements et accessoires pour bébés à La City Trianon, avec plus de 25 ans d'expérience ; puériculture, poussettes, lits et jouets. Autre adresse : Galerie Super U, Goodlands."
   },
   {
     "id": "island-kidz-quatre-bornes",
@@ -46367,5 +46367,322 @@
     ],
     "zone": "nord",
     "description": "Mobilier fait sur-mesure."
+  },
+  {
+    "id": "oh-baby-goodlands",
+    "name": "Oh! baby",
+    "category": "acheter-equiper",
+    "address": "Galerie Super U, Goodlands",
+    "phone": "+230 282 9292",
+    "themes": [
+      "mode-accessoires"
+    ],
+    "zone": "nord",
+    "hours": "Lu-ve 9h30-19h, dim 10h-14h",
+    "description": "Marques européennes de vêtements et jouets pour bébé (Absorba, Avent, Maxi Cosy, jouets en bois Heimess). Autre adresse : La City Trianon, Quatre Bornes."
+  },
+  {
+    "id": "gecko-kids-mont-choisy",
+    "name": "Gecko Kids",
+    "category": "acheter-equiper",
+    "address": "Mont Choisy Mall",
+    "phone": "+230 5813 6918",
+    "themes": [
+      "mode-accessoires"
+    ],
+    "zone": "nord",
+    "description": "Collections de vêtements bébé colorées et pensées à Maurice, en 100% coton, à prix abordables."
+  },
+  {
+    "id": "dodo-zarbi-grand-baie",
+    "name": "Dodo Zarbi",
+    "category": "acheter-equiper",
+    "address": "Showroom privé, Grand Baie",
+    "phone": "+230 5937 0808",
+    "themes": [
+      "mode-accessoires"
+    ],
+    "zone": "nord",
+    "hours": "Sur rendez-vous",
+    "description": "Collection de vêtements confortables et colorés pour enfants de 2 à 10 ans, fabriquée à Maurice."
+  },
+  {
+    "id": "carre-blanc-grand-baie",
+    "name": "Carré Blanc",
+    "category": "acheter-equiper",
+    "address": "Grand Baie La Croisette",
+    "phone": "+230 269 7344",
+    "themes": [
+      "mode-accessoires"
+    ],
+    "zone": "nord",
+    "hours": "Ma-sa 9h-12h et 14h-19h",
+    "description": "Beau linge de maison, parures de lit pour une ambiance chaleureuse, chambres d'enfant. Prix élevés."
+  },
+  {
+    "id": "luna-boutique-grand-baie",
+    "name": "Luna Boutique",
+    "address": "Grand Baie (vers Pains et Moulins), Richmond Hill",
+    "category": "acheter-equiper",
+    "phone": "+230 269 1317",
+    "themes": [
+      "mode-accessoires"
+    ],
+    "zone": "nord",
+    "hours": "Lu-je 9h30-19h30, ven-sam 20h30-18h",
+    "description": "Vêtements légers, confortables et toujours féminins, made in Mauritius, mention spéciale pour les sacs au crochet."
+  },
+  {
+    "id": "out-of-africa-grand-baie",
+    "name": "Out of Africa",
+    "category": "acheter-equiper",
+    "address": "Grand Baie La Croisette (mall cinéma)",
+    "themes": [
+      "mode-accessoires"
+    ],
+    "zone": "nord",
+    "hours": "Lu-sa 10h30-21h",
+    "description": "T-Shirts inspirés de l'humour mauricien (marque The Kreol Republik), robes colorées, tenues de plage."
+  },
+  {
+    "id": "mens-week-end-grand-baie",
+    "name": "Men's Week-end",
+    "category": "acheter-equiper",
+    "address": "Grand Baie La Croisette, Mall Intermart",
+    "phone": "+230 268 6736",
+    "themes": [
+      "mode-accessoires"
+    ],
+    "zone": "nord",
+    "description": "Vêtements pour homme fabriqués à Maurice, en lin et coton."
+  },
+  {
+    "id": "fashion-avenue-paris-grand-baie",
+    "name": "Fashion Avenue Paris",
+    "category": "acheter-equiper",
+    "address": "Route de Sottise, Grand Baie",
+    "themes": [
+      "mode-accessoires"
+    ],
+    "zone": "nord",
+    "hours": "Lu-sa 10h-18h",
+    "description": "Grand choix de vêtements blancs, lin, coton et soie, en provenance d'Italie."
+  },
+  {
+    "id": "coco-sun-grand-baie",
+    "name": "Coco Sun",
+    "category": "acheter-equiper",
+    "address": "Sunset Boulevard, Grand Baie",
+    "phone": "+230 5726 9689",
+    "themes": [
+      "mode-accessoires"
+    ],
+    "zone": "nord",
+    "hours": "Lu-sa 10h-18h",
+    "description": "Créations uniques pour femme, fabriquées à l'île Maurice, grand souci du détail et de la qualité."
+  },
+  {
+    "id": "moli-boutique-grand-baie",
+    "name": "Moli Boutique",
+    "category": "acheter-equiper",
+    "address": "À côté du parking de GBBP, 1er étage, Grand Baie",
+    "phone": "+230 5809 0596",
+    "themes": [
+      "mode-accessoires"
+    ],
+    "zone": "nord",
+    "hours": "Lu-sa 9h30-17h30",
+    "description": "Vêtements, bijoux et accessoires tendance à de très bons prix."
+  },
+  {
+    "id": "le-sommet-curepipe",
+    "name": "Le Sommet",
+    "category": "acheter-equiper",
+    "address": "Rue Lionel Cox, Curepipe",
+    "phone": "+230 5839 5763",
+    "themes": [
+      "mode-accessoires"
+    ],
+    "zone": "centre",
+    "description": "Vêtements dégriffés de marques comme D&G, H&M, Tommy Hilfiger, Kenzo, à moindre coût selon arrivage."
+  },
+  {
+    "id": "la-bonne-fouille-curepipe",
+    "name": "La bonne fouille",
+    "category": "acheter-equiper",
+    "address": "Ramdenee Building, Route Royale, Curepipe",
+    "phone": "+230 674 9979",
+    "themes": [
+      "mode-accessoires"
+    ],
+    "zone": "centre",
+    "hours": "Lu-sa 9h30-17h30",
+    "description": "Prix dégriffés des marques Oilily, Gap pour enfants, Le Printemps, Monsoon et bien d'autres. Pour hommes, femmes et enfants."
+  },
+  {
+    "id": "lappret-midi-port-louis",
+    "name": "L'apprêt-Midi",
+    "category": "acheter-equiper",
+    "address": "Caudan Waterfront, Port-Louis",
+    "phone": "+230 5774 1063",
+    "themes": [
+      "mode-accessoires"
+    ],
+    "zone": "centre",
+    "hours": "Lu-sa 9h30-17h30",
+    "description": "Vêtements chics pour femme à petits prix : robes légères, jeans tendance, jupes imprimées, blouses et accessoires."
+  },
+  {
+    "id": "atelier-inam-goodlands",
+    "name": "Atelier Inam",
+    "category": "acheter-equiper",
+    "address": "ZI Vel Industrial Complex, Goodlands",
+    "phone": "+230 282 1700",
+    "themes": [
+      "mode-accessoires"
+    ],
+    "zone": "nord",
+    "hours": "Lu-ve 9h-17h, sa 13h",
+    "description": "Magasin d'usine cachemire, vêtements faits sur place (usine à l'arrière). Autre adresse : Sunset Boulevard, Grand Baie (Inam Cashmere)."
+  },
+  {
+    "id": "lentrepot-curepipe",
+    "name": "L'Entrepôt",
+    "category": "acheter-equiper",
+    "address": "10 rue Robert Edward Hart, Curepipe",
+    "phone": "+230 675 1863",
+    "themes": [
+      "mode-accessoires"
+    ],
+    "zone": "centre",
+    "hours": "Lu-ve 9h30-17h30, sa 12h30",
+    "description": "Magasin d'usine, collection des hôtels Beachcomber, style tropical/colonial."
+  },
+  {
+    "id": "aquarelle-quatre-bornes",
+    "name": "Aquarelle",
+    "category": "acheter-equiper",
+    "address": "Route Boundary, Quatre Bornes",
+    "phone": "+230 402 1123",
+    "themes": [
+      "mode-accessoires"
+    ],
+    "zone": "centre",
+    "hours": "Lu-ve 9h-17h",
+    "description": "Magasin d'usine, large gamme de chemises décontractées (coton, lin, jean, sans repassage) et formelles pour hommes et femmes."
+  },
+  {
+    "id": "serendipity-charity-shop-grand-baie",
+    "name": "Serendipity by All Life Matters",
+    "category": "acheter-equiper",
+    "address": "Route Royale, Grand Baie",
+    "phone": "+230 5765 5135",
+    "themes": [
+      "seconde-main-boutiques"
+    ],
+    "zone": "nord",
+    "hours": "Lu-sa 10h-14h",
+    "description": "Charity shop : articles à prix très bas, pépites à Rs 50-100, il faut revenir régulièrement."
+  },
+  {
+    "id": "magic-custom-grand-baie",
+    "name": "Magic Custom",
+    "category": "acheter-equiper",
+    "address": "Route Royale, Grand Baie (près de Malini Fleurs)",
+    "phone": "+230 5748 7440",
+    "themes": [
+      "mode-accessoires"
+    ],
+    "zone": "nord",
+    "hours": "Ma-sa 10h-18h",
+    "description": "Personnalisation de vêtements et accessoires, délais rapides, prix intéressants."
+  },
+  {
+    "id": "safry-printing-grand-baie",
+    "name": "Safry Printing",
+    "category": "acheter-equiper",
+    "address": "Route de Sottise, Grand Baie",
+    "phone": "+230 263 2847",
+    "themes": [
+      "mode-accessoires"
+    ],
+    "zone": "nord",
+    "hours": "Lu-ve 9h-12h30 et 13h15-17h, sa 13h",
+    "description": "Impression personnalisée de logos et images sur textile ou autres supports."
+  },
+  {
+    "id": "aqua-swimwear-grand-baie",
+    "name": "Aqua Swimwear",
+    "category": "acheter-equiper",
+    "address": "Rue Dilhossen, Grand Baie",
+    "phone": "+230 5937 2333",
+    "themes": [
+      "mode-accessoires"
+    ],
+    "zone": "nord",
+    "hours": "Ma/je 9h-12h30",
+    "description": "Le \"Vilebrequin local\" pour papa et fiston, maillots de bain à motifs."
+  },
+  {
+    "id": "69-slam-grand-baie",
+    "name": "69 Slam",
+    "category": "acheter-equiper",
+    "address": "Sunset Boulevard, Grand Baie",
+    "phone": "+230 263 1002",
+    "themes": [
+      "mode-accessoires"
+    ],
+    "zone": "nord",
+    "hours": "Lu-sa 9h30-18h",
+    "description": "Marque australienne de maillots de bain, bikinis, sous-vêtements masculins et féminins."
+  },
+  {
+    "id": "ripcurl-grand-baie",
+    "name": "RipCurl",
+    "category": "acheter-equiper",
+    "address": "Sunset Boulevard, Grand Baie",
+    "themes": [
+      "mode-accessoires"
+    ],
+    "zone": "nord",
+    "hours": "Lu-sa 9h30-18h, dim 10h-12h30",
+    "description": "Surf wear et maillots de bain pour teenagers branchés (filles et garçons)."
+  },
+  {
+    "id": "out-of-the-blue-grand-baie",
+    "name": "Out of the Blue",
+    "category": "acheter-equiper",
+    "address": "Grand Baie La Croisette",
+    "themes": [
+      "mode-accessoires"
+    ],
+    "zone": "nord",
+    "description": "Grandes tailles, marque italienne de maillots de bain."
+  },
+  {
+    "id": "alicia-swim-mapou",
+    "name": "Alicia Swim — Mapou",
+    "category": "acheter-equiper",
+    "address": "Quartier des Serres, Mapou",
+    "phone": "+230 5258 9611",
+    "themes": [
+      "mode-accessoires"
+    ],
+    "zone": "nord",
+    "hours": "Lu-sa 9h-17h",
+    "description": "Maillots de bain marque mauricienne Alicia Swim, gros budget mais ultra qualitatifs. Autre adresse : Sunset Boulevard, Grand Baie."
+  },
+  {
+    "id": "le-concept-store-mademoiselle-pointe-aux-canonniers",
+    "name": "Le Concept Store Mademoiselle — Pointe aux Canonniers",
+    "category": "acheter-equiper",
+    "address": "Route Royale, Pointe aux Canonniers",
+    "phone": "+230 5440 1560",
+    "themes": [
+      "mode-accessoires"
+    ],
+    "zone": "nord",
+    "hours": "Lu-sa 10h-18h",
+    "description": "Superbes marques locales telles que Banana Moon, Grace et Mila. Autre adresse : B13, Grand Baie."
   }
 ]
