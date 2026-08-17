@@ -74,28 +74,30 @@ export function CategoryRow({
     count !== undefined ? `${count} adresse${count > 1 ? "s" : ""}` : undefined;
 
   // Ligne « mascotte » (catégorie) : fond lavis dégradé dans la couleur de la
-  // catégorie (angle varié, cf. GRADIENT_ANGLE), mascotte en filigrane (grande,
-  // opacité réduite, en fond) pour ne jamais empiéter sur le texte — le
-  // libellé occupe toute la largeur disponible et ne passe qu'exceptionnellement
-  // sur 2 lignes.
+  // catégorie (angle varié, cf. GRADIENT_ANGLE) ; bandeau photo+mascotte (planche
+  // fournie par la cliente) collé au bord gauche ou droit (cf. MASCOT_POSITION),
+  // bord feathered en dégradé alpha pour se fondre dans le fond de la ligne.
   if (mascot && cat) {
     const pos = MASCOT_POSITION[resolvedKey] ?? "left";
     const angle = GRADIENT_ANGLE[resolvedKey] ?? 120;
     const labelColor = `color-mix(in srgb, ${cat.color} 55%, var(--ink))`;
 
-    const watermark = (
+    const banner = (
       // eslint-disable-next-line @next/next/no-img-element
       <img
         src={mascot}
         alt=""
         aria-hidden
-        className={`pointer-events-none absolute top-1/2 -translate-y-1/2 w-[150px] h-[150px] object-contain opacity-[0.14] ${
-          pos === "right" ? "-right-5" : "-left-5"
+        className={`pointer-events-none absolute inset-y-0 w-[190px] object-cover ${
+          pos === "right" ? "right-0 scale-x-[-1]" : "left-0"
         }`}
       />
     );
     const text = (
-      <span className="relative z-10 flex-1 min-w-0 flex flex-col justify-center gap-0.5">
+      <span
+        className="relative z-10 flex-1 min-w-0 flex flex-col justify-center gap-0.5"
+        style={pos === "left" ? { marginLeft: 140 } : { marginRight: 140 }}
+      >
         <span className="flex items-start gap-1.5">
           <span className="text-[17px] font-extrabold leading-tight" style={{ color: labelColor }}>
             {displayLabel}
@@ -128,12 +130,21 @@ export function CategoryRow({
     return (
       <button
         onClick={onClick}
-        className="relative w-full flex items-center gap-3.5 rounded-2xl py-3.5 px-3.5 text-left overflow-hidden active:scale-[.99] transition-transform"
+        className="relative w-full h-[84px] flex items-center gap-3 rounded-2xl px-3.5 text-left overflow-hidden active:scale-[.99] transition-transform"
         style={{ background: rowBg, border: rowBorder }}
       >
-        {watermark}
-        {text}
-        {chev}
+        {banner}
+        {pos === "left" ? (
+          <>
+            {text}
+            {chev}
+          </>
+        ) : (
+          <>
+            {chev}
+            {text}
+          </>
+        )}
       </button>
     );
   }
