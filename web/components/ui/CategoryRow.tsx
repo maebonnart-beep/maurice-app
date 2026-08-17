@@ -47,12 +47,16 @@ export function CategoryRow({
       className="w-full flex items-center gap-3 rounded-2xl border border-border bg-surface px-3 py-2.5 text-left shadow-sm active:scale-[.99] transition-transform"
     >
       <span
-        className="shrink-0 w-11 h-11 rounded-full overflow-hidden flex items-center justify-center"
+        className={
+          mascot
+            ? "shrink-0 w-16 h-16 -my-1 rounded-2xl overflow-hidden flex items-center justify-center"
+            : "shrink-0 w-11 h-11 rounded-full overflow-hidden flex items-center justify-center"
+        }
         style={{ background: iconBg, color: iconColor }}
       >
         {mascot ? (
           // eslint-disable-next-line @next/next/no-img-element
-          <img src={mascot} alt="" aria-hidden className="w-full h-full object-cover scale-125" />
+          <img src={mascot} alt="" aria-hidden className="w-full h-full object-contain" />
         ) : subIcon ? (
           // eslint-disable-next-line @next/next/no-img-element
           <img src={subIcon} alt="" aria-hidden className="w-full h-full object-cover" />
