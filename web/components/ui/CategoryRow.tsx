@@ -1,25 +1,9 @@
 "use client";
 
+import { ArrowRight } from "@phosphor-icons/react";
 import type { CategoryKey } from "@/lib/types";
 import { CATEGORY_MAP } from "@/data/categories";
 import { iconForKey, subIconFor, mascotFor } from "@/lib/icons";
-
-/**
- * Position de la mascotte dans la ligne de catégorie — gauche/droite en
- * alternance. Pas de position « centrée » : elle empilait le texte sous la
- * mascotte et augmentait la hauteur de la carte, cassant l'uniformité des 8
- * lignes (toutes doivent faire la même taille, avec les mêmes données).
- */
-const MASCOT_POSITION: Record<string, "left" | "right"> = {
-  "manger-boire": "left",
-  "sortir-decouvrir": "right",
-  "faire-du-sport": "left",
-  "sante-bien-etre": "right",
-  "acheter-equiper": "left",
-  "vie-pratique": "right",
-  "famille-travail": "left",
-  agenda: "right",
-};
 
 /** Angle du dégradé de fond, varié par catégorie pour éviter 8 lignes identiques. */
 const GRADIENT_ANGLE: Record<string, number> = {
@@ -31,6 +15,21 @@ const GRADIENT_ANGLE: Record<string, number> = {
   "vie-pratique": 135,
   "famille-travail": 75,
   agenda: 105,
+};
+
+/**
+ * Sous-texte (2 lignes) des 8 lignes catégorie — repris à l'identique de la
+ * maquette fournie par la cliente (planche « Explorer Koté Moris »).
+ */
+const CATEGORY_SUBTEXT: Record<string, [string, string]> = {
+  "manger-boire": ["Restaurants, cafés, bars", "Tables d'hôtes, spécialités locales"],
+  "sortir-decouvrir": ["Plages, visites, excursions", "Culture, nature, lieux insolites"],
+  "faire-du-sport": ["Activités sportives, clubs", "Aventures, sensations fortes"],
+  "sante-bien-etre": ["Soins, bien-être, détente", "Yoga, spas, praticiens"],
+  "acheter-equiper": ["Boutiques, créateurs, déco", "Équipements, accessoires"],
+  "vie-pratique": ["Services, dépannage, entretien", "Transports, bricolage, astuces"],
+  "famille-travail": ["Enfants, éducation, sorties en famille", "Télétravail, entrepreneuriat, services"],
+  agenda: ["Événements, sorties, ateliers", "Bons plans du moment"],
 };
 
 /**
@@ -73,14 +72,13 @@ export function CategoryRow({
   const countLabel =
     count !== undefined ? `${count} adresse${count > 1 ? "s" : ""}` : undefined;
 
-  // Ligne « mascotte » (catégorie) : fond lavis dégradé dans la couleur de la
-  // catégorie (angle varié, cf. GRADIENT_ANGLE) ; bandeau photo+mascotte (planche
-  // fournie par la cliente) collé au bord gauche ou droit (cf. MASCOT_POSITION),
-  // bord feathered en dégradé alpha pour se fondre dans le fond de la ligne.
+  // Ligne « mascotte » (catégorie) : reprend à l'identique la maquette
+  // « Explorer Koté Moris » de la cliente — bandeau photo+mascotte à gauche
+  // (object-contain, jamais rogné), icône ronde + titre capitales + sous-texte
+  // 2 lignes au centre, bouton flèche rond à droite.
   if (mascot && cat) {
-    const pos = MASCOT_POSITION[resolvedKey] ?? "left";
     const angle = GRADIENT_ANGLE[resolvedKey] ?? 120;
-    const labelColor = `color-mix(in srgb, ${cat.color} 55%, var(--ink))`;
+    const subtext = CATEGORY_SUBTEXT[resolvedKey];
 
     const banner = (
       // eslint-disable-next-line @next/next/no-img-element
@@ -88,18 +86,21 @@ export function CategoryRow({
         src={mascot}
         alt=""
         aria-hidden
-        className={`pointer-events-none absolute inset-y-0 w-[190px] object-cover ${
-          pos === "right" ? "right-0 scale-x-[-1]" : "left-0"
-        }`}
+        className="pointer-events-none absolute inset-y-0 left-0 h-full w-[128px] object-contain object-left"
       />
     );
     const text = (
-      <span
-        className="relative z-10 flex-1 min-w-0 flex flex-col justify-center gap-0.5"
-        style={pos === "left" ? { marginLeft: 140 } : { marginRight: 140 }}
-      >
-        <span className="flex items-start gap-1.5">
-          <span className="text-[17px] font-extrabold leading-tight" style={{ color: labelColor }}>
+      <span className="relative z-10 flex-1 min-w-0 flex flex-col justify-center gap-1" style={{ marginLeft: 122 }}>
+        <span className="flex items-center gap-1.5">
+          {Icon && (
+            <span
+              className="shrink-0 inline-flex items-center justify-center w-7 h-7 rounded-full text-on-accent"
+              style={{ background: cat.color }}
+            >
+              <Icon size={15} weight="bold" aria-hidden />
+            </span>
+          )}
+          <span className="text-[14px] font-extrabold uppercase tracking-tight leading-tight text-ink truncate">
             {displayLabel}
           </span>
           {locked && (
@@ -111,40 +112,37 @@ export function CategoryRow({
             </span>
           )}
         </span>
-        {countLabel && (
-          <span className="text-[12px] font-semibold" style={{ color: `color-mix(in srgb, ${cat.color} 70%, var(--muted))` }}>
-            {countLabel}
+        {subtext && (
+          <span className="text-[11.5px] leading-snug text-muted">
+            {subtext[0]}
+            <br />
+            {subtext[1]}
           </span>
         )}
       </span>
     );
-    const chev = (
-      <span className="relative z-10 shrink-0 text-[20px] font-bold leading-none" style={{ color: cat.color }} aria-hidden>
-        ›
+    const arrowBtn = (
+      <span
+        className="relative z-10 shrink-0 inline-flex items-center justify-center w-8 h-8 rounded-full text-on-accent"
+        style={{ background: cat.color }}
+        aria-hidden
+      >
+        <ArrowRight size={16} weight="bold" />
       </span>
     );
 
-    const rowBg = `linear-gradient(${angle}deg, color-mix(in srgb, ${cat.color} 30%, var(--surface)) 0%, color-mix(in srgb, ${cat.color} 8%, var(--surface)) 75%)`;
-    const rowBorder = `1px solid color-mix(in srgb, ${cat.color} 38%, var(--border))`;
+    const rowBg = `linear-gradient(${angle}deg, color-mix(in srgb, ${cat.color} 22%, var(--surface)) 0%, color-mix(in srgb, ${cat.color} 6%, var(--surface)) 75%)`;
+    const rowBorder = `1px solid color-mix(in srgb, ${cat.color} 30%, var(--border))`;
 
     return (
       <button
         onClick={onClick}
-        className="relative w-full h-[84px] flex items-center gap-3 rounded-2xl px-3.5 text-left overflow-hidden active:scale-[.99] transition-transform"
+        className="relative w-full min-h-[92px] flex items-center gap-2.5 rounded-2xl py-2.5 pl-2 pr-3 text-left overflow-hidden active:scale-[.99] transition-transform"
         style={{ background: rowBg, border: rowBorder }}
       >
         {banner}
-        {pos === "left" ? (
-          <>
-            {text}
-            {chev}
-          </>
-        ) : (
-          <>
-            {chev}
-            {text}
-          </>
-        )}
+        {text}
+        {arrowBtn}
       </button>
     );
   }
