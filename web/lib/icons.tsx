@@ -309,6 +309,20 @@ export function subIconFor(key: string): string | null {
   return SUBICON_KEYS.has(key) ? `/subicons/${key}.png` : null;
 }
 
+/**
+ * Clés des 8 catégories couvertes par une mascotte poulpe illustrée
+ * (public/mascots/{key}.png), détourée depuis les planches de la cliente.
+ */
+const MASCOT_KEYS = new Set([
+  "manger-boire", "sortir-decouvrir", "faire-du-sport", "sante-bien-etre",
+  "acheter-equiper", "vie-pratique", "famille-travail", "agenda",
+]);
+
+/** Chemin de la mascotte poulpe illustrée pour une catégorie (niveau 1), ou null. */
+export function mascotFor(key: string): string | null {
+  return MASCOT_KEYS.has(key) ? `/mascots/${key}.png` : null;
+}
+
 /** Rend l'icône d'une clé si mappée (sinon rien) — pratique dans un Tag/badge. */
 export function KeyIcon({
   keyName,

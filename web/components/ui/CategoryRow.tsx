@@ -2,7 +2,7 @@
 
 import type { CategoryKey } from "@/lib/types";
 import { CATEGORY_MAP } from "@/data/categories";
-import { iconForKey, subIconFor } from "@/lib/icons";
+import { iconForKey, subIconFor, mascotFor } from "@/lib/icons";
 
 /**
  * Ligne de navigation (icône dans un rond + libellé + compteur + chevron).
@@ -35,6 +35,9 @@ export function CategoryRow({
     : "var(--primary-tint)";
   const iconColor = cat ? cat.color : "var(--primary-deep)";
   const resolvedKey = iconKey ?? category ?? "";
+  // Mascotte poulpe uniquement sur les lignes de catégorie (niveau 1) —
+  // les rubriques (niveau 2) gardent leur picto plat (subIcon).
+  const mascot = category ? mascotFor(resolvedKey) : null;
   const subIcon = subIconFor(resolvedKey);
   const Icon = iconForKey(resolvedKey);
 
@@ -47,7 +50,10 @@ export function CategoryRow({
         className="shrink-0 w-11 h-11 rounded-full overflow-hidden flex items-center justify-center"
         style={{ background: iconBg, color: iconColor }}
       >
-        {subIcon ? (
+        {mascot ? (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img src={mascot} alt="" aria-hidden className="w-full h-full object-cover scale-125" />
+        ) : subIcon ? (
           // eslint-disable-next-line @next/next/no-img-element
           <img src={subIcon} alt="" aria-hidden className="w-full h-full object-cover" />
         ) : Icon ? (
