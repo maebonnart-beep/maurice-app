@@ -1,6 +1,5 @@
 "use client";
 
-import { ArrowRight } from "@phosphor-icons/react";
 import type { CategoryKey } from "@/lib/types";
 import { CATEGORY_MAP } from "@/data/categories";
 import { iconForKey, subIconFor, mascotFor } from "@/lib/icons";
@@ -97,12 +96,10 @@ export function CategoryRow({
     const angle = GRADIENT_ANGLE[resolvedKey] ?? 120;
     const subtext = CATEGORY_SUBTEXT[resolvedKey];
 
-    // Le bouton flèche reste toujours à droite (jamais à gauche, même quand la
-    // mascotte y est) — la mascotte se décale alors vers la gauche pour lui
-    // laisser sa place.
-    const ARROW_ZONE = 44;
-    const BANNER_W = 152;
-    const bannerRightInset = pos === "right" ? ARROW_ZONE : 0;
+    // Mascotte réduite (108px, contre 152 avant) pour laisser assez de place
+    // au titre sur mobile ; pas de bouton flèche (inutile, toute la ligne
+    // est déjà cliquable).
+    const BANNER_W = 108;
 
     const banner = (
       // eslint-disable-next-line @next/next/no-img-element
@@ -110,31 +107,27 @@ export function CategoryRow({
         src={mascot}
         alt=""
         aria-hidden
-        className={`pointer-events-none absolute inset-y-0 h-full w-[152px] object-contain ${
-          pos === "right" ? "object-right scale-x-[-1]" : "left-0 object-left"
+        className={`pointer-events-none absolute inset-y-0 h-full object-contain ${
+          pos === "right" ? "right-0 object-right scale-x-[-1]" : "left-0 object-left"
         }`}
-        style={pos === "right" ? { right: bannerRightInset } : undefined}
+        style={{ width: BANNER_W }}
       />
     );
     const text = (
       <span
         className="relative z-10 flex-1 min-w-0 flex flex-col justify-center gap-1"
-        style={
-          pos === "left"
-            ? { marginLeft: 148, marginRight: ARROW_ZONE }
-            : { marginRight: bannerRightInset + BANNER_W + 12 }
-        }
+        style={pos === "left" ? { marginLeft: BANNER_W - 4 } : { marginRight: BANNER_W - 4 }}
       >
-        <span className="flex items-center gap-1.5">
+        <span className="flex items-start gap-1.5">
           {Icon && (
             <span
-              className="shrink-0 inline-flex items-center justify-center w-7 h-7 rounded-full text-on-accent"
+              className="shrink-0 mt-0.5 inline-flex items-center justify-center w-6 h-6 rounded-full text-on-accent"
               style={{ background: cat.color }}
             >
-              <Icon size={15} weight="bold" aria-hidden />
+              <Icon size={13} weight="bold" aria-hidden />
             </span>
           )}
-          <span className="text-[14px] font-extrabold uppercase tracking-tight leading-tight text-ink truncate">
+          <span className="text-[13.5px] font-extrabold uppercase tracking-tight leading-tight text-ink">
             {displayLabel}
           </span>
           {locked && (
@@ -147,21 +140,12 @@ export function CategoryRow({
           )}
         </span>
         {subtext && (
-          <span className="text-[11.5px] leading-snug text-muted">
+          <span className="text-[11px] leading-snug text-muted">
             {subtext[0]}
             <br />
             {subtext[1]}
           </span>
         )}
-      </span>
-    );
-    const arrowBtn = (
-      <span
-        className="absolute z-10 right-2.5 top-1/2 -translate-y-1/2 shrink-0 inline-flex items-center justify-center w-8 h-8 rounded-full text-on-accent"
-        style={{ background: cat.color }}
-        aria-hidden
-      >
-        <ArrowRight size={16} weight="bold" />
       </span>
     );
 
@@ -171,14 +155,11 @@ export function CategoryRow({
     return (
       <button
         onClick={onClick}
-        className={`relative w-full min-h-[104px] flex items-center rounded-2xl py-2.5 text-left overflow-hidden active:scale-[.99] transition-transform ${
-          pos === "left" ? "pl-2" : "pl-3"
-        }`}
+        className="relative w-full min-h-[92px] flex items-center rounded-2xl py-2.5 px-3 text-left overflow-hidden active:scale-[.99] transition-transform"
         style={{ background: rowBg, border: rowBorder }}
       >
         {banner}
         {text}
-        {arrowBtn}
       </button>
     );
   }
