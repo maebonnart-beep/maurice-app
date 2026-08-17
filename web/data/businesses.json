@@ -14247,6 +14247,31 @@
     ]
   },
   {
+    "id": "la-table-du-chateau-labourdonnais",
+    "name": "La Table du Château — Domaine de Labourdonnais",
+    "category": "manger-boire",
+    "address": "Domaine de Labourdonnais, Mapou",
+    "phone": "+230 266 9533",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Chateau%20de%20Labourdonnais%20Mapou%20Mauritius",
+    "lat": -20.1103,
+    "lng": 57.5489,
+    "themes": [
+      "restaurants"
+    ],
+    "zone": "nord",
+    "hours": "Ouvert le midi uniquement",
+    "priceRange": "se-faire-plaisir",
+    "badge": "coup-de-coeur",
+    "photoUrl": "/photos/la-table-du-chateau.jpg",
+    "description": "Restaurant du Domaine de Labourdonnais, tout juste réouvert (12 août 2026) après rénovation. Cadre sublime, décoration épurée et modernisée, ouverte sur les jardins du château. Cuisine soignée, produits très frais (tartare de bœuf, thon mi-cuit) — un vrai coup de cœur. Ouvert le midi uniquement.",
+    "filters": [
+      "europeenne",
+      "tables-exception",
+      "plus-belles-vues"
+    ]
+  },
+  {
     "id": "brandon-l-artisant-patissier",
     "name": "brandon l'artisant patissier",
     "category": "manger-boire",
