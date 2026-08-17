@@ -8,6 +8,7 @@ import { CATEGORIES, CATEGORY_MAP, SUBCATEGORIES, FILTER_GROUPS, PRICE_RANGES } 
 import type { FilterGroup } from "@/data/categories";
 import { SELECTIONS, SELECTION_GROUP_META } from "@/data/selections";
 import type { SelectionGroup, SelectionIconKey } from "@/data/selections";
+import { fuzzyMatch } from "@/lib/fuzzyMatch";
 
 const SELECTION_ICONS: Record<SelectionIconKey, Icon> = {
   CloudRain,
@@ -425,9 +426,10 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
         }
         if (!q) return true;
         const rubriqueLabels = (b.themes || []).map((t) => RUBRIQUE_MAP[t]?.label || "").join(" ");
-        return (b.name + " " + b.address + " " + CATEGORY_MAP[b.category].label + " " + rubriqueLabels)
-          .toLowerCase()
-          .includes(q);
+        return fuzzyMatch(
+          b.name + " " + b.address + " " + CATEGORY_MAP[b.category].label + " " + rubriqueLabels,
+          q
+        );
       })
       .sort((a, b) => (b.tier === "premium" ? 1 : 0) - (a.tier === "premium" ? 1 : 0));
   }, [businesses, query, active, activeThemes, activeZone, activeRubrique, applicableFilterGroups, facetGroups, facetPrices, facetBadges]);
@@ -445,7 +447,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
     businesses.forEach((b) => {
       if (!(b.themes || []).includes(activeRubrique)) return;
       if (activeZone && b.zone !== activeZone) return;
-      if (q && !(b.name + " " + b.address).toLowerCase().includes(q)) return;
+      if (q && !fuzzyMatch(b.name + " " + b.address, q)) return;
       total++;
       const filters = b.filters || [];
       groups.forEach((g) => {
@@ -1390,40 +1392,39 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
               </div>
             )}
 
-          {/* Barre de résultats : retour + repère (icône + catégorie + total)
-              + liste/carte, puis « Autour de moi » / zone sur une 2e ligne. */}
-          <div className={`sticky top-[94px] z-20 -mx-4 lg:-mx-5 px-4 lg:px-5 flex-col gap-2 py-2 border-b border-border mb-3 ${mobileTiles ? "hidden" : "flex"}`} style={{ background: "var(--bg)" }}>
-            <div className="flex items-center gap-2">
+          {/* Barre de résultats : retour + « Autour de moi » / zone + liste/carte,
+              tenus sur une seule ligne (bande réduite) pour laisser plus de
+              place aux fiches en dessous. */}
+          <div className={`sticky top-[94px] z-20 -mx-4 lg:-mx-5 px-4 lg:px-5 items-center gap-2 py-1.5 border-b border-border mb-3 ${mobileTiles ? "hidden" : "flex"}`} style={{ background: "var(--bg)" }}>
+            <button
+              onClick={goBackFromResults}
+              disabled={!canGoBack}
+              aria-label="Retour"
+              className={`shrink-0 w-7 h-7 -ml-1 rounded-full flex items-center justify-center active:scale-[.95] transition-transform ${
+                canGoBack ? "text-ink" : "text-muted/40"
+              }`}
+            >
+              <ArrowLeft size={17} weight="bold" aria-hidden />
+            </button>
+            {zoneControls}
+            <div className="ml-auto inline-flex rounded-full border border-border overflow-hidden shrink-0">
               <button
-                onClick={goBackFromResults}
-                disabled={!canGoBack}
-                aria-label="Retour"
-                className={`shrink-0 w-7 h-7 -ml-1 rounded-full flex items-center justify-center active:scale-[.95] transition-transform ${
-                  canGoBack ? "text-ink" : "text-muted/40"
+                onClick={() => { setNearMe(false); setResultsView("liste"); }}
+                className={`px-3 py-1.5 text-[13px] font-semibold ${
+                  !nearMe && resultsView === "liste" ? "bg-primary text-white" : "bg-surface text-ink"
                 }`}
               >
-                <ArrowLeft size={17} weight="bold" aria-hidden />
+                Liste
               </button>
-              <div className="ml-auto inline-flex rounded-full border border-border overflow-hidden shrink-0">
-                <button
-                  onClick={() => { setNearMe(false); setResultsView("liste"); }}
-                  className={`px-3 py-1.5 text-[13px] font-semibold ${
-                    !nearMe && resultsView === "liste" ? "bg-primary text-white" : "bg-surface text-ink"
-                  }`}
-                >
-                  Liste
-                </button>
-                <button
-                  onClick={() => { setNearMe(false); setResultsView("carte"); }}
-                  className={`px-3 py-1.5 text-[13px] font-semibold ${
-                    !nearMe && resultsView === "carte" ? "bg-primary text-white" : "bg-surface text-ink"
-                  }`}
-                >
-                  Carte
-                </button>
-              </div>
+              <button
+                onClick={() => { setNearMe(false); setResultsView("carte"); }}
+                className={`px-3 py-1.5 text-[13px] font-semibold ${
+                  !nearMe && resultsView === "carte" ? "bg-primary text-white" : "bg-surface text-ink"
+                }`}
+              >
+                Carte
+              </button>
             </div>
-            {zoneControls}
           </div>
 
           {geoStatus === "denied" && nearMe === false && (
