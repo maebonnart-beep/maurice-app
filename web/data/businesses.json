@@ -46057,5 +46057,53 @@
     ],
     "zone": "nord",
     "description": "Motos d'occasion, principalement Harley Davidson, customisées ou non, à Arsenal."
+  },
+  {
+    "id": "holiscoot-grand-baie",
+    "name": "Holiscoot",
+    "category": "vie-pratique",
+    "address": "Route Royale, Grand Baie (Business Park)",
+    "phone": "+230 5252 9668",
+    "themes": [
+      "taxis-vtc-location"
+    ],
+    "zone": "nord",
+    "description": "Location de motos et scooters à Grand Baie, même propriétaire que le concessionnaire Royal Enfield."
+  },
+  {
+    "id": "a-vicomte-scooter-rental-trou-aux-biches",
+    "name": "A. Vicomte Scooter Rental",
+    "category": "vie-pratique",
+    "address": "Barnes Complex, Trou aux Biches",
+    "phone": "+230 5255 7734",
+    "themes": [
+      "taxis-vtc-location"
+    ],
+    "zone": "nord",
+    "description": "Location de scooters à Trou aux Biches."
+  },
+  {
+    "id": "klokan-rental-flic-en-flac",
+    "name": "Klokan Rental",
+    "category": "vie-pratique",
+    "address": "Flic en Flac",
+    "phone": "+230 5917 6082",
+    "themes": [
+      "taxis-vtc-location"
+    ],
+    "zone": "ouest",
+    "description": "Location de scooters à Flic en Flac."
+  },
+  {
+    "id": "akd-location-aeroport",
+    "name": "AKD Location",
+    "category": "vie-pratique",
+    "address": "Aéroport SSR",
+    "phone": "+230 5905 3700",
+    "themes": [
+      "taxis-vtc-location"
+    ],
+    "zone": "sud",
+    "description": "Location de motos et scooters, livraison gratuite possible à l'aéroport."
   }
 ]
