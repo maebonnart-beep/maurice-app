@@ -4959,8 +4959,9 @@
     "hours": "Tous les jours 9h-17h (dernière admission 16h)",
     "priceRange": "prix-moyen",
     "zone": "nord",
+    "badge": "coup-de-coeur",
     "promoText": "Château colonial du 19e siècle entouré d'un verger, visite guidée de 45 min avec dégustation de jus et rhum. (à partir de 700 Rs/pers.)",
-    "description": "Manoir colonial de 1856 entouré d'un verger de 45 hectares réunissant plus de 30 familles botaniques, dont des manguiers centenaires et arbres à épices. La Rhumerie des Mascareignes, sur le domaine, produit un rhum agricole ; le billet inclut une dégustation de rhums et de pâtes de fruits.",
+    "description": "Manoir colonial de 1856 entouré d'un verger de 45 hectares réunissant plus de 30 familles botaniques, dont des manguiers centenaires et arbres à épices. La Rhumerie des Mascareignes, sur le domaine, produit un rhum agricole ; le billet inclut une dégustation de rhums et de pâtes de fruits. Coup de cœur : visite du château et des jardins vraiment extra.",
     "entryPrice": "Rs 150 (parc animalier)",
     "animalsVisible": "Volière et enclos avec paons, tortues et autres animaux du domaine"
   },
@@ -44693,7 +44694,8 @@
     ],
     "hours": "Lun-Ven 8h-18h, Sam 8h-17h, fermé le dimanche",
     "zone": "nord",
-    "description": "Centre commercial atypique aménagé dans d'anciennes serres à anthuriums au cœur du Domaine de Labourdonnais (15 000 m²) : boutiques de créateurs, épicerie fine (La Corbeille), pépinière de fruitiers, restaurant-terrasse, kiosques et espace bien-être, dans un écrin de jardins tropicaux."
+    "badge": "coup-de-coeur",
+    "description": "Centre commercial atypique aménagé dans d'anciennes serres à anthuriums au cœur du Domaine de Labourdonnais (15 000 m²) : boutiques de créateurs, épicerie fine (La Corbeille), pépinière de fruitiers, restaurant-terrasse, kiosques et espace bien-être, dans un écrin de jardins tropicaux. Coup de cœur : magasins de créateurs magnifiques, cadre exceptionnel."
   },
   {
     "id": "historic-marine-the-vale",
