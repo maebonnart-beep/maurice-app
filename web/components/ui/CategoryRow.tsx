@@ -74,29 +74,28 @@ export function CategoryRow({
     count !== undefined ? `${count} adresse${count > 1 ? "s" : ""}` : undefined;
 
   // Ligne « mascotte » (catégorie) : fond lavis dégradé dans la couleur de la
-  // catégorie (angle varié, cf. GRADIENT_ANGLE), texte et badge agrandis,
-  // mascotte à gauche ou à droite (cf. MASCOT_POSITION) — même taille et
-  // mêmes données sur les 8 lignes, aucune n'est plus haute qu'une autre.
+  // catégorie (angle varié, cf. GRADIENT_ANGLE), mascotte en filigrane (grande,
+  // opacité réduite, en fond) pour ne jamais empiéter sur le texte — le
+  // libellé occupe toute la largeur disponible et ne passe qu'exceptionnellement
+  // sur 2 lignes.
   if (mascot && cat) {
     const pos = MASCOT_POSITION[resolvedKey] ?? "left";
     const angle = GRADIENT_ANGLE[resolvedKey] ?? 120;
     const labelColor = `color-mix(in srgb, ${cat.color} 55%, var(--ink))`;
 
-    // Mascotte posée directement sur le fond (pas de bulle circulaire) : le
-    // détourage transparent suffit à la faire ressortir. Volontairement plus
-    // grande que la ligne — elle déborde légèrement du cadre pour un effet
-    // plus dynamique.
-    const badge = (
+    const watermark = (
       // eslint-disable-next-line @next/next/no-img-element
       <img
         src={mascot}
         alt=""
         aria-hidden
-        className="shrink-0 w-[132px] h-[132px] -my-4 object-contain drop-shadow-[0_4px_8px_rgba(0,0,0,0.18)]"
+        className={`pointer-events-none absolute top-1/2 -translate-y-1/2 w-[150px] h-[150px] object-contain opacity-[0.14] ${
+          pos === "right" ? "-right-5" : "-left-5"
+        }`}
       />
     );
     const text = (
-      <span className="flex-1 min-w-0 flex flex-col justify-center gap-0.5">
+      <span className="relative z-10 flex-1 min-w-0 flex flex-col justify-center gap-0.5">
         <span className="flex items-start gap-1.5">
           <span className="text-[17px] font-extrabold leading-tight" style={{ color: labelColor }}>
             {displayLabel}
@@ -118,7 +117,7 @@ export function CategoryRow({
       </span>
     );
     const chev = (
-      <span className="shrink-0 text-[20px] font-bold leading-none" style={{ color: cat.color }} aria-hidden>
+      <span className="relative z-10 shrink-0 text-[20px] font-bold leading-none" style={{ color: cat.color }} aria-hidden>
         ›
       </span>
     );
@@ -129,24 +128,12 @@ export function CategoryRow({
     return (
       <button
         onClick={onClick}
-        className={`w-full flex items-center gap-3.5 rounded-2xl py-2.5 text-left active:scale-[.99] transition-transform ${
-          pos === "right" ? "pl-4 pr-2.5" : "px-3.5"
-        }`}
+        className="relative w-full flex items-center gap-3.5 rounded-2xl py-3.5 px-3.5 text-left overflow-hidden active:scale-[.99] transition-transform"
         style={{ background: rowBg, border: rowBorder }}
       >
-        {pos === "left" ? (
-          <>
-            {badge}
-            {text}
-            {chev}
-          </>
-        ) : (
-          <>
-            {text}
-            {badge}
-            {chev}
-          </>
-        )}
+        {watermark}
+        {text}
+        {chev}
       </button>
     );
   }
