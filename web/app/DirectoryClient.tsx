@@ -39,6 +39,7 @@ import { BusinessDetail } from "@/components/ui/BusinessDetail";
 import { useFavorites } from "@/lib/favorites";
 import { COUP_DE_COEUR_COLOR } from "@/components/ui/Badge";
 import { FilterDropdown, type DropdownOption } from "@/components/ui/FilterDropdown";
+import { AddAddressForm } from "@/components/ui/AddAddressForm";
 import { iconForKey, MapPin } from "@/lib/icons";
 import {
   Heart,
@@ -47,7 +48,6 @@ import {
   ArrowLeft,
   House,
   Compass,
-  UserCircle,
   Plus,
   CloudRain,
   Users,
@@ -188,7 +188,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
   const [browseAll, setBrowseAll] = useState(false);
   // Accueil « Option A » : menu d'entrée → puis mode choisi.
   const [homeMode, setHomeMode] = useState<
-    "menu" | "categories" | "favoris" | "listes" | "profil" | "ajouter"
+    "menu" | "categories" | "favoris" | "listes" | "ajouter"
   >("menu");
   // Accueil « Par catégorie » : catégorie choisie, dont on affiche les rubriques
   // (un seul niveau de profondeur). null = grille des 8 catégories.
@@ -835,13 +835,13 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
   );
 
   // Barre de navigation principale (5 onglets) fixée tout en bas de l'écran :
-  // Accueil / Favoris / Ajouter (bouton central relevé) / Explorer / Profil.
-  const activeTab: "accueil" | "favoris" | "explorer" | "profil" | "autre" = homeMode === "favoris"
+  // Accueil / Favoris / Ajouter (bouton central relevé) / Explorer / Carte.
+  const activeTab: "accueil" | "favoris" | "explorer" | "carte" | "autre" = homeMode === "favoris"
     ? "favoris"
-    : homeMode === "profil"
-      ? "profil"
-      : showHome && homeMode === "menu"
-        ? "accueil"
+    : showHome && homeMode === "menu"
+      ? "accueil"
+      : !mobileTiles && resultsView === "carte"
+        ? "carte"
         : browseAll || homeMode === "categories"
           ? "explorer"
           : "autre";
@@ -916,19 +916,24 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
         </button>
         <button
           onClick={() => {
-            setBrowseAll(false);
+            if (activeTab === "carte") {
+              setResultsView("liste");
+              return;
+            }
+            setNearMe(false);
+            setBrowseAll(true);
             setHomeCategory(null);
-            setHomeMode("profil");
+            setResultsView("carte");
             window.scrollTo({ top: 0, behavior: "smooth" });
           }}
-          aria-label="Profil"
-          aria-pressed={activeTab === "profil"}
+          aria-label="Carte"
+          aria-pressed={activeTab === "carte"}
           className={`flex flex-col items-center gap-0.5 py-1 rounded-xl transition-colors active:scale-[.97] ${
-            activeTab === "profil" ? "text-on-band" : "text-on-band/60"
+            activeTab === "carte" ? "text-on-band" : "text-on-band/60"
           }`}
         >
-          <UserCircle size={22} weight={activeTab === "profil" ? "fill" : "regular"} aria-hidden />
-          <span className="text-[10.5px] font-semibold leading-none">Profil</span>
+          <MapPin size={22} weight={activeTab === "carte" ? "fill" : "regular"} aria-hidden />
+          <span className="text-[10.5px] font-semibold leading-none">Carte</span>
         </button>
       </div>
     </nav>
@@ -1365,36 +1370,17 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
             </div>
           )}
 
-          {/* Accueil → Profil / Ajouter : écrans placeholder « bientôt ». */}
-          {showHome &&
-            (homeMode === "profil" || homeMode === "ajouter") && (
-              <div className="pb-16">
-                <div className="mt-6 max-w-[420px] mx-auto text-center bg-surface border border-border rounded-2xl shadow-sm p-7 flex flex-col items-center gap-3">
-                  <span className="w-14 h-14 rounded-2xl bg-primary-tint text-primary-deep flex items-center justify-center">
-                    {homeMode === "profil" && <UserCircle size={28} weight="duotone" aria-hidden />}
-                    {homeMode === "ajouter" && <Plus size={28} weight="bold" aria-hidden />}
-                  </span>
-                  <p className="font-serif text-lg font-semibold leading-tight">
-                    {homeMode === "profil" && "Mon profil"}
-                    {homeMode === "ajouter" && "Ajouter une adresse"}
-                  </p>
-                  <p className="text-[13px] text-muted leading-snug">
-                    {homeMode === "profil" && "Votre compte, vos préférences et votre historique, bientôt ici."}
-                    {homeMode === "ajouter" && "Suggérez une adresse à ajouter à l'annuaire Koté Moris."}
-                  </p>
-                  <span
-                    className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[12px] font-bold text-on-accent"
-                    style={{ background: "var(--accent)" }}
-                  >
-                    ✨ Bientôt disponible
-                  </span>
-                </div>
-              </div>
-            )}
+          {/* Accueil → Ajouter une adresse : formulaire de suggestion. */}
+          {showHome && homeMode === "ajouter" && (
+            <div className="pb-16">
+              <AddAddressForm />
+            </div>
+          )}
 
-          {/* Barre de résultats : retour + « Autour de moi » / zone + liste/carte,
-              tenus sur une seule ligne (bande réduite) pour laisser plus de
-              place aux fiches en dessous. */}
+          {/* Barre de résultats : retour + « Autour de moi » / zone,
+              tenue sur une seule ligne (bande réduite) pour laisser plus de
+              place aux fiches en dessous. La bascule liste/carte se fait
+              désormais via l'onglet « Carte » de la barre de navigation. */}
           <div className={`sticky top-[94px] z-20 -mx-4 lg:-mx-5 px-4 lg:px-5 items-center gap-2 py-1.5 border-b border-border mb-3 ${mobileTiles ? "hidden" : "flex"}`} style={{ background: "var(--bg)" }}>
             <button
               onClick={goBackFromResults}
@@ -1407,24 +1393,6 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
               <ArrowLeft size={17} weight="bold" aria-hidden />
             </button>
             {zoneControls}
-            <div className="ml-auto inline-flex rounded-full border border-border overflow-hidden shrink-0">
-              <button
-                onClick={() => { setNearMe(false); setResultsView("liste"); }}
-                className={`px-3 py-1.5 text-[13px] font-semibold ${
-                  !nearMe && resultsView === "liste" ? "bg-primary text-white" : "bg-surface text-ink"
-                }`}
-              >
-                Liste
-              </button>
-              <button
-                onClick={() => { setNearMe(false); setResultsView("carte"); }}
-                className={`px-3 py-1.5 text-[13px] font-semibold ${
-                  !nearMe && resultsView === "carte" ? "bg-primary text-white" : "bg-surface text-ink"
-                }`}
-              >
-                Carte
-              </button>
-            </div>
           </div>
 
           {geoStatus === "denied" && nearMe === false && (
