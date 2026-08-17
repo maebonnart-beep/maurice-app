@@ -96,9 +96,9 @@ export function CategoryRow({
       />
     );
     const text = (
-      <span className="flex-1 min-w-0 flex flex-col">
-        <span className="flex items-center gap-1.5">
-          <span className="text-[19px] font-extrabold truncate leading-tight" style={{ color: labelColor }}>
+      <span className="flex-1 min-w-0 flex flex-col justify-center gap-0.5">
+        <span className="flex items-start gap-1.5">
+          <span className="text-[17px] font-extrabold leading-tight" style={{ color: labelColor }}>
             {displayLabel}
           </span>
           {locked && (
@@ -111,7 +111,7 @@ export function CategoryRow({
           )}
         </span>
         {countLabel && (
-          <span className="text-[13.5px] font-semibold" style={{ color: `color-mix(in srgb, ${cat.color} 70%, var(--muted))` }}>
+          <span className="text-[12px] font-semibold" style={{ color: `color-mix(in srgb, ${cat.color} 70%, var(--muted))` }}>
             {countLabel}
           </span>
         )}
