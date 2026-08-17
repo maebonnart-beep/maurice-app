@@ -45997,5 +45997,65 @@
     ],
     "zone": "nord",
     "description": "Village-boutiques chic au sein du Domaine de Labourdonnais : mode, maroquinerie et accessoires."
+  },
+  {
+    "id": "royal-enfield-grand-baie",
+    "name": "Royal Enfield",
+    "category": "vie-pratique",
+    "address": "Chemin 20 Pieds, Grand Baie",
+    "phone": "+230 5252 9668",
+    "themes": [
+      "auto-garages-concessionnaires"
+    ],
+    "zone": "nord",
+    "description": "Concessionnaire moto Royal Enfield à Grand Baie : entretien, accessoires et organisation de sorties le week-end."
+  },
+  {
+    "id": "emcar-forbach",
+    "name": "Emcar",
+    "category": "vie-pratique",
+    "address": "Forbach",
+    "phone": "+230 405 1110",
+    "themes": [
+      "auto-garages-concessionnaires"
+    ],
+    "zone": "nord",
+    "description": "Concessionnaire de motos et scooters Suzuki et Kymco à Forbach."
+  },
+  {
+    "id": "honda-motos-port-louis",
+    "name": "Honda (motos)",
+    "category": "vie-pratique",
+    "address": "31 Brabant Street, Port-Louis",
+    "phone": "+230 203 6300",
+    "themes": [
+      "auto-garages-concessionnaires"
+    ],
+    "zone": "centre",
+    "description": "Concessionnaire moto Honda à Port-Louis."
+  },
+  {
+    "id": "ruben-racing-port-louis",
+    "name": "Ruben Racing",
+    "category": "vie-pratique",
+    "address": "Rue de la Cocoterie, Port-Louis",
+    "phone": "+230 264 3090",
+    "themes": [
+      "auto-garages-concessionnaires"
+    ],
+    "zone": "centre",
+    "description": "Concessionnaire moto Kawasaki, Beta et scooter Peugeot à Port-Louis."
+  },
+  {
+    "id": "revival-customs-classics-arsenal",
+    "name": "Revival Customs & Classics",
+    "category": "vie-pratique",
+    "address": "Route Royale, Arsenal",
+    "phone": "+230 249 6146",
+    "themes": [
+      "auto-garages-concessionnaires"
+    ],
+    "zone": "nord",
+    "description": "Motos d'occasion, principalement Harley Davidson, customisées ou non, à Arsenal."
   }
 ]
