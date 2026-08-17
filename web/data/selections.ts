@@ -424,8 +424,8 @@ export const SELECTIONS: Selection[] = [
     tagline: "Des lieux particulièrement représentatifs ou impressionnants",
     group: "escapades",
     icon: "Sparkle",
-    photoUrl: "https://images.pexels.com/photos/3761182/pexels-photo-3761182.jpeg?auto=compress&cs=tinysrgb&w=800",
-    photoCredit: "Castorly Stock / Pexels",
+    photoUrl: "/photos/inviter-decouverte.jpg",
+    photoCredit: "Koté Moris",
     businessIds: [
       "chateau-de-labourdonnais",
       "le-pescatore",
