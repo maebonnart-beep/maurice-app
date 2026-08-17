@@ -44175,6 +44175,40 @@
     "description": "Primeur de quartier — fruits et légumes frais. Horaires et éventuel label bio non confirmés."
   },
   {
+    "id": "gft-gardens-primeur",
+    "name": "GFT Gardens",
+    "category": "manger-boire",
+    "address": "Les Pailles",
+    "phone": "",
+    "website": "https://www.facebook.com/growforthem/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=GFT%20Gardens%20Les%20Pailles%20Mauritius",
+    "lat": -20.19271,
+    "lng": 57.48826,
+    "themes": [
+      "commerces-alimentaires"
+    ],
+    "hours": "",
+    "zone": "centre",
+    "description": "Ferme d'agriculture durable à Les Pailles, fruits et légumes frais et locaux. Adresse précise et horaires non confirmés."
+  },
+  {
+    "id": "agribio-primeur",
+    "name": "Agribio",
+    "category": "manger-boire",
+    "address": "Royal Road, Bambous",
+    "phone": "+230 286 89 77",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Agribio%20Royal%20Road%20Bambous%20Mauritius",
+    "lat": -20.26,
+    "lng": 57.414833,
+    "themes": [
+      "commerces-alimentaires"
+    ],
+    "hours": "",
+    "zone": "ouest",
+    "description": "Producteur certifié Ecocert de fruits et légumes bio, sélection hebdomadaire selon la saison, vente sur place et livraison. Horaires non confirmés."
+  },
+  {
     "id": "fast-click",
     "name": "Fast Click — Port-Louis",
     "category": "vie-pratique",
