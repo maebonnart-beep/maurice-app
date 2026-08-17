@@ -22,7 +22,7 @@ import {
   Gauge, Scroll, Gavel, Calculator, WashingMachine, Flag, FlowerLotus,
   Scissors, Needle, PersonSimpleTaiChi, Plant, Handshake, Motorcycle, Medal,
   MaskHappy, Coins, Diamond, MapPin, ArrowUp, ArrowDown, ArrowLeft, ArrowRight,
-  Target, GlobeHemisphereWest,
+  Target, GlobeHemisphereWest, Jar,
   Clock, Phone, EnvelopeSimple, WhatsappLogo, Globe, NavigationArrow, Ruler,
   TrendUp, Ticket, PencilSimple, Compass,
 } from "@phosphor-icons/react";
@@ -87,7 +87,9 @@ export const ICON_MAP: Record<string, Icon> = {
   "kids-friendly": Baby, "tables-exception": Star, "plus-belles-vues": Binoculars,
   "frequente-locaux": UsersThree,
   // Filtres — Spécialité
-  "produits-francais": Bread,
+  "produits-francais": Bread, "produits-locaux": Basket, "epiceries-fines": Jar,
+  "produits-bio": Plant, "boucheries-poissons": Cow, "boulangeries-patisseries": Bread,
+  "vins-spiritueux": Wine, "exotiques-epices": Fire,
 
   // Gammes de prix
   "bon-marche": Coins, "prix-moyen": Money, "se-faire-plaisir": Diamond,

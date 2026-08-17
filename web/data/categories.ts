@@ -141,6 +141,13 @@ export const FILTER_GROUPS: FilterGroup[] = [
     appliesTo: ["commerces-alimentaires"],
     options: [
       { key: "produits-francais", label: "Produits français", emoji: "🇫🇷" },
+      { key: "produits-locaux", label: "Produits locaux", emoji: "🥭" },
+      { key: "epiceries-fines", label: "Épiceries fines", emoji: "🫙" },
+      { key: "produits-bio", label: "Produits bio", emoji: "🌱" },
+      { key: "boucheries-poissons", label: "Boucheries & poissons", emoji: "🥩" },
+      { key: "boulangeries-patisseries", label: "Boulangeries & pâtisseries", emoji: "🥖" },
+      { key: "vins-spiritueux", label: "Vins & spiritueux", emoji: "🍷" },
+      { key: "exotiques-epices", label: "Exotiques & épices", emoji: "🌶️" },
     ],
   },
 ];
