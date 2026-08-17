@@ -424,7 +424,8 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
           if (facetBadges.size > 0 && !(b.badge && facetBadges.has(b.badge))) return false;
         }
         if (!q) return true;
-        return (b.name + " " + b.address + " " + CATEGORY_MAP[b.category].label)
+        const rubriqueLabels = (b.themes || []).map((t) => RUBRIQUE_MAP[t]?.label || "").join(" ");
+        return (b.name + " " + b.address + " " + CATEGORY_MAP[b.category].label + " " + rubriqueLabels)
           .toLowerCase()
           .includes(q);
       })
