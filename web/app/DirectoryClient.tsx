@@ -157,6 +157,11 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
     () => businesses.filter((b) => favoriteStatuses.get(b.id) === "a-tester"),
     [businesses, favoriteStatuses]
   );
+  // Favoris → carte : coups de cœur + à tester réunis (fiches sans GPS ignorées par <Map>).
+  const favorisMapBusinesses = useMemo(
+    () => [...favoriteBusinesses, ...aTesterBusinesses],
+    [favoriteBusinesses, aTesterBusinesses]
+  );
   const [query, setQuery] = useState("");
   const [active, setActive] = useState<string>("all");
   const [activeThemes, setActiveThemes] = useState<Set<string>>(new Set());
@@ -171,6 +176,8 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
   const [facetBadges, setFacetBadges] = useState<Set<string>>(new Set());
   const [expandedInSidebar, setExpandedInSidebar] = useState<Set<string>>(new Set());
   const [resultsView, setResultsView] = useState<"liste" | "carte">("liste");
+  // Favoris : bascule optionnelle liste ↔ carte (pas affichée par défaut).
+  const [favorisMapOpen, setFavorisMapOpen] = useState(false);
   // « Autour de moi » : tri par distance depuis la position de l'utilisateur.
   const [nearMe, setNearMe] = useState(false);
   const [userPos, setUserPos] = useState<{ lat: number; lng: number } | null>(null);
@@ -1177,10 +1184,10 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
               ) : (
                 <div className="max-w-[560px] mx-auto flex flex-col gap-5 pt-1">
                   {/* Accès direct : passe d'une liste à l'autre sans avoir à scroller. */}
-                  <div className="flex items-center gap-2 sticky top-[94px] z-10 -mx-4 lg:-mx-5 px-4 lg:px-5 py-2 bg-bg">
+                  <div className="flex items-center gap-2 flex-wrap sticky top-[94px] z-10 -mx-4 lg:-mx-5 px-4 lg:px-5 py-2 bg-bg">
                     <button
                       onClick={() => favorisSectionRef.current?.scrollIntoView({ behavior: "smooth", block: "start" })}
-                      disabled={favoriteBusinesses.length === 0}
+                      disabled={favoriteBusinesses.length === 0 || favorisMapOpen}
                       className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-pill text-[12.5px] font-bold disabled:opacity-40 active:scale-[.97] transition-transform"
                       style={{ background: `color-mix(in srgb, ${COUP_DE_COEUR_COLOR} 12%, var(--surface))`, color: COUP_DE_COEUR_COLOR }}
                     >
@@ -1188,13 +1195,39 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                     </button>
                     <button
                       onClick={() => aTesterSectionRef.current?.scrollIntoView({ behavior: "smooth", block: "start" })}
-                      disabled={aTesterBusinesses.length === 0}
+                      disabled={aTesterBusinesses.length === 0 || favorisMapOpen}
                       className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-pill text-[12.5px] font-bold disabled:opacity-40 active:scale-[.97] transition-transform"
                       style={{ background: "color-mix(in srgb, #f5a623 12%, var(--surface))", color: "#f5a623" }}
                     >
                       <Flag size={14} weight="fill" aria-hidden /> À tester ({aTesterBusinesses.length})
                     </button>
+                    <button
+                      onClick={() => setFavorisMapOpen((v) => !v)}
+                      className="ml-auto inline-flex items-center gap-1.5 px-3 py-1.5 rounded-pill text-[12.5px] font-bold active:scale-[.97] transition-transform border border-border"
+                      style={
+                        favorisMapOpen
+                          ? { background: "var(--primary)", color: "var(--on-primary, #fff)" }
+                          : { background: "var(--surface)", color: "var(--ink)" }
+                      }
+                    >
+                      <MapPin size={14} weight={favorisMapOpen ? "fill" : "regular"} aria-hidden />
+                      {favorisMapOpen ? "Voir la liste" : "Sur la carte"}
+                    </button>
                   </div>
+                  {favorisMapOpen ? (
+                    <div className="rounded-card border border-border bg-surface shadow-card overflow-hidden h-[65vh]">
+                      <Map
+                        businesses={favorisMapBusinesses}
+                        selectedId={selectedId}
+                        onSelect={selectFromCard}
+                        onBoundsChange={() => {}}
+                        fitKey={`favoris|${favorisMapBusinesses.map((b) => b.id).join(",")}`}
+                        hoveredId={hoveredId}
+                        onHover={setHoveredId}
+                      />
+                    </div>
+                  ) : (
+                  <>
                   {favoriteBusinesses.length > 0 && (
                     <div ref={favorisSectionRef} className="flex flex-col gap-3 scroll-mt-[150px]">
                       <p className="m-0 text-[13px] text-muted">
@@ -1226,6 +1259,8 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                         />
                       ))}
                     </div>
+                  )}
+                  </>
                   )}
                 </div>
               )}
