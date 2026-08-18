@@ -111,17 +111,6 @@ export function BusinessCard({
           : undefined
       }
     >
-      {b.photoUrl && (
-        <div className="shrink-0 w-14 h-14 rounded-full overflow-hidden bg-primary-tint">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src={b.photoUrl}
-            alt={displayName(b.name)}
-            loading="lazy"
-            className="w-full h-full object-cover"
-          />
-        </div>
-      )}
       <div className="flex-1 min-w-0">
         <div className="flex items-center gap-1.5 flex-wrap">
           {(b.badge === "selection" || b.badge === "coup-de-coeur") && (

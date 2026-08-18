@@ -19,6 +19,9 @@ import { metaFacts } from "./BusinessCard";
 import { iconForKey, subIconFor, CONTACT_ICONS } from "@/lib/icons";
 import { ArrowLeft } from "@phosphor-icons/react";
 
+/** Au-delà de ~6 lignes affichées, on replie la description (rare : ~90% des fiches tiennent en dessous). */
+const DESCRIPTION_CLAMP_THRESHOLD = 320;
+
 /** Action circulaire (Appeler, Itinéraire, Site web…) : icône ronde + libellé dessous. */
 function CircleAction({
   href,
@@ -44,7 +47,11 @@ function CircleAction({
       >
         {icon}
       </span>
-      <span className={`text-[11.5px] font-semibold leading-tight ${disabled ? "text-muted" : "text-ink"}`}>
+      <span
+        className={`w-full text-center text-[11.5px] font-semibold leading-tight truncate ${
+          disabled ? "text-muted" : "text-ink"
+        }`}
+      >
         {children}
       </span>
     </>
@@ -196,7 +203,7 @@ export function BusinessDetail({
               )}
               {price && (
                 <p className="m-0 flex items-center gap-2">
-                  <span className="shrink-0 w-[15px] text-center font-bold text-muted">{price.symbol}</span>
+                  <span className="shrink-0 min-w-[15px] text-center font-bold text-muted whitespace-nowrap">{price.symbol}</span>
                   <span>{price.label}</span>
                 </p>
               )}
@@ -219,7 +226,7 @@ export function BusinessDetail({
             </div>
 
             {/* Actions rondes : Appeler / Itinéraire / Site web / WhatsApp / Email. */}
-            <div className="flex flex-wrap gap-2 py-1">
+            <div className="flex flex-wrap gap-x-2 gap-y-3 py-1">
               {b.phone ? (
                 <CircleAction
                   href={tel(b.phone)}
@@ -276,10 +283,14 @@ export function BusinessDetail({
             {b.description && (
               <div className="flex flex-col gap-1.5 pt-1 border-t border-border">
                 <h3 className="m-0 mt-2 text-[13px] font-bold uppercase tracking-wide text-muted">À propos</h3>
-                <p className={`m-0 text-ink text-[14.5px] leading-[1.6] ${descExpanded ? "" : "line-clamp-3"}`}>
+                <p
+                  className={`m-0 text-ink text-[14.5px] leading-[1.6] ${
+                    descExpanded || b.description.length <= DESCRIPTION_CLAMP_THRESHOLD ? "" : "line-clamp-6"
+                  }`}
+                >
                   {b.description}
                 </p>
-                {!descExpanded && (
+                {!descExpanded && b.description.length > DESCRIPTION_CLAMP_THRESHOLD && (
                   <button
                     onClick={() => setDescExpanded(true)}
                     className="self-start text-[13px] font-semibold text-primary-deep active:scale-[.98]"
