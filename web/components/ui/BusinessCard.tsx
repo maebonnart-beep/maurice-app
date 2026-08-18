@@ -83,8 +83,8 @@ export function BusinessCard({
   const rubrique = firstTheme ? SUBCATEGORIES[b.category]?.find((t) => t.key === firstTheme) : undefined;
   const RubriqueIcon = firstTheme ? iconForKey(firstTheme) : null;
   const categoryColor = CATEGORY_MAP[b.category].color;
-  const CategoryIcon = iconForKey(b.category);
   const bannerIcon = (firstTheme && subIconFor(firstTheme)) ?? subIconFor(b.category);
+  const BannerFallbackIcon = RubriqueIcon ?? iconForKey(b.category);
   // 1-2 infos concrètes pour ne pas se limiter au nom/adresse au 1er coup d'œil.
   const facts = metaFacts(b).slice(0, 2);
   // Tags de filtre (cuisine, ambiance, spécialité…) portés par la fiche —
@@ -185,14 +185,14 @@ export function BusinessCard({
       <div className="shrink-0 flex flex-col items-end gap-1.5">
         <span
           className="w-8 h-8 rounded-full flex items-center justify-center overflow-hidden"
-          style={{ background: `color-mix(in srgb, ${categoryColor} 15%, var(--surface))` }}
+          style={{ background: "var(--primary-tint)", color: "var(--primary-deep)" }}
           aria-hidden
         >
           {bannerIcon ? (
             // eslint-disable-next-line @next/next/no-img-element
             <img src={bannerIcon} alt="" className="w-full h-full object-cover" />
           ) : (
-            CategoryIcon && <CategoryIcon size={17} weight="duotone" style={{ color: categoryColor }} />
+            BannerFallbackIcon && <BannerFallbackIcon size={17} weight="duotone" />
           )}
         </span>
         <FavoriteButton id={b.id} size={17} className="text-muted" />
