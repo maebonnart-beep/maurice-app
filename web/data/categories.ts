@@ -18,7 +18,14 @@ export const CATEGORY_MAP = Object.fromEntries(
 export type Subcategory = { key: string; label: string; emoji: string };
 
 export type FilterOption = { key: string; label: string; emoji: string };
-export type FilterGroup = { key: string; label: string; appliesTo: string[]; options: FilterOption[] };
+export type FilterGroup = {
+  key: string;
+  label: string;
+  appliesTo: string[];
+  options: FilterOption[];
+  /** Affiché comme une page de sous-rubriques cliquables (en plus des chips de filtre), pas juste un filtre transversal. */
+  browsable?: boolean;
+};
 
 export const SUBCATEGORIES: Partial<Record<CategoryKey, Subcategory[]>> = {
   "manger-boire": [
@@ -95,6 +102,7 @@ export const FILTER_GROUPS: FilterGroup[] = [
     key: "cuisine",
     label: "Cuisine",
     appliesTo: ["restaurants"],
+    browsable: true,
     options: [
       { key: "mauricienne", label: "Mauricienne & créole", emoji: "🌶️" },
       { key: "fruits-de-mer", label: "Fruits de mer", emoji: "🦐" },
@@ -122,6 +130,7 @@ export const FILTER_GROUPS: FilterGroup[] = [
     key: "discipline-nautique",
     label: "Discipline",
     appliesTo: ["sports-nautiques"],
+    browsable: true,
     options: [
       { key: "kitesurf", label: "Kitesurf", emoji: "🪁" },
       { key: "stand-up-paddle", label: "Stand Up Paddle", emoji: "🏄‍♀️" },
@@ -148,6 +157,273 @@ export const FILTER_GROUPS: FilterGroup[] = [
       { key: "boulangeries-patisseries", label: "Boulangeries & pâtisseries", emoji: "🥖" },
       { key: "vins-spiritueux", label: "Vins & spiritueux", emoji: "🍷" },
       { key: "exotiques-epices", label: "Exotiques & épices", emoji: "🌶️" },
+    ],
+  },
+
+  // --- Sous-rubriques restaurées (perdues lors de la refonte du 17/08/2026) ---
+  {
+    key: "commerces-alimentaires-types",
+    label: "Type de commerce",
+    appliesTo: ["commerces-alimentaires"],
+    browsable: true,
+    options: [
+      { key: "grandes-surfaces", label: "Grandes surfaces alimentaires", emoji: "🏬" },
+      { key: "boulangeries", label: "Boulangerie, pâtisseries & petit snacking", emoji: "🥐" },
+      { key: "epiceries-specialisees", label: "Épiceries spécialisées", emoji: "🧺" },
+      { key: "boucheries", label: "Boucheries", emoji: "🥩" },
+      { key: "fruits-et-legumes", label: "Fruits & légumes", emoji: "🥬" },
+      { key: "poissonneries", label: "Poissonneries", emoji: "🐟" },
+      { key: "marches", label: "Marchés", emoji: "🥭" },
+    ],
+  },
+  {
+    key: "cafes-bars-types",
+    label: "Type d'établissement",
+    appliesTo: ["cafes-bars-glaciers"],
+    browsable: true,
+    options: [
+      { key: "bars", label: "Bars", emoji: "🍹" },
+      { key: "cafes-terrasses", label: "Cafés & terrasses", emoji: "☕" },
+      { key: "snacks-plage", label: "Snacks de plage", emoji: "🥙" },
+      { key: "glaciers", label: "Glaciers", emoji: "🍦" },
+    ],
+  },
+  {
+    key: "tables-hotes-types",
+    label: "Type de prestation",
+    appliesTo: ["tables-hotes-chefs-domicile"],
+    browsable: true,
+    options: [
+      { key: "tables-hotes", label: "Tables d'hôtes", emoji: "🍲" },
+      { key: "chefs-domicile", label: "Chefs à domicile", emoji: "👨‍🍳" },
+      { key: "cours-de-cuisine", label: "Cours de cuisine", emoji: "👨‍🍳" },
+    ],
+  },
+  {
+    key: "plages-nature-types",
+    label: "Type de site",
+    appliesTo: ["plages-nature"],
+    browsable: true,
+    options: [
+      { key: "plages", label: "Plages", emoji: "🏖️" },
+      { key: "parcs-nationaux-cascades", label: "Parcs nationaux & cascades", emoji: "🏞️" },
+      { key: "parcs-botaniques", label: "Parcs botaniques", emoji: "🌺" },
+    ],
+  },
+  {
+    key: "parcs-activites-famille-types",
+    label: "Type de parc",
+    appliesTo: ["parcs-activites-famille"],
+    browsable: true,
+    options: [
+      { key: "parcs-animaliers", label: "Parcs animaliers", emoji: "🦁" },
+      { key: "parcs-aventures", label: "Parcs aventures", emoji: "🎢" },
+    ],
+  },
+  {
+    key: "casinos-loisirs-types",
+    label: "Type de loisir",
+    appliesTo: ["casinos-loisirs"],
+    browsable: true,
+    options: [
+      { key: "casinos", label: "Casinos", emoji: "🎰" },
+      { key: "bowling", label: "Bowling", emoji: "🎳" },
+      { key: "karting", label: "Karting", emoji: "🏎️" },
+      { key: "escape-game", label: "Escape games", emoji: "🧩" },
+    ],
+  },
+  {
+    key: "salles-sport-types",
+    label: "Type de structure",
+    appliesTo: ["salles-sport-fitness"],
+    browsable: true,
+    options: [
+      { key: "gym-fitness", label: "Gym & fitness", emoji: "💪" },
+      { key: "complexes-sportifs", label: "Complexes sportifs", emoji: "🏟️" },
+    ],
+  },
+  {
+    key: "equitation-autres-types",
+    label: "Type d'activité",
+    appliesTo: ["equitation-autres-sports"],
+    browsable: true,
+    options: [
+      { key: "peche", label: "Pêche", emoji: "🎣" },
+      { key: "centres-equestres", label: "Centres équestres", emoji: "🐴" },
+    ],
+  },
+  {
+    key: "medecins-soins-types",
+    label: "Spécialité",
+    appliesTo: ["medecins-soins"],
+    browsable: true,
+    options: [
+      { key: "medecins", label: "Médecins & généralistes", emoji: "🩺" },
+      { key: "dentistes", label: "Dentistes", emoji: "🦷" },
+      { key: "opticiens", label: "Opticiens", emoji: "👓" },
+    ],
+  },
+  {
+    key: "pharmacies-labs-types",
+    label: "Type",
+    appliesTo: ["pharmacies-laboratoires"],
+    browsable: true,
+    options: [
+      { key: "pharmacies", label: "Pharmacies", emoji: "💊" },
+      { key: "laboratoires", label: "Laboratoires d'analyses", emoji: "🔬" },
+    ],
+  },
+  {
+    key: "cliniques-types",
+    label: "Type",
+    appliesTo: ["cliniques-hopitaux"],
+    browsable: true,
+    options: [
+      { key: "cliniques-privees", label: "Cliniques privées", emoji: "🏥" },
+      { key: "centres-sante-publics", label: "Centres de santé publics", emoji: "⚕️" },
+    ],
+  },
+  {
+    key: "coiffeurs-types",
+    label: "Type de prestation",
+    appliesTo: ["coiffeurs-barbiers-beaute"],
+    browsable: true,
+    options: [
+      { key: "coiffeurs", label: "Coiffeurs", emoji: "💇" },
+      { key: "barbiers", label: "Barbiers", emoji: "💈" },
+      { key: "onglerie-manucure", label: "Onglerie & manucure", emoji: "💅" },
+      { key: "tatouage-piercing", label: "Tatouage & piercing", emoji: "🖋️" },
+    ],
+  },
+  {
+    key: "mode-accessoires-types",
+    label: "Type de boutique",
+    appliesTo: ["mode-accessoires"],
+    browsable: true,
+    options: [
+      { key: "mode-adultes", label: "Mode adultes", emoji: "👗" },
+      { key: "mode-enfants", label: "Mode enfants", emoji: "🧒" },
+      { key: "beaute", label: "Beauté & parfums", emoji: "💄" },
+      { key: "materiel-sports", label: "Matériel de sports", emoji: "🏸" },
+    ],
+  },
+  {
+    key: "librairies-jeux-types",
+    label: "Type de boutique",
+    appliesTo: ["librairies-jeux-loisirs"],
+    browsable: true,
+    options: [
+      { key: "livres", label: "Librairies", emoji: "📚" },
+      { key: "jeux", label: "Jeux", emoji: "🎲" },
+      { key: "bibliotheque-mediatheque", label: "Bibliothèque & médiathèque", emoji: "📚" },
+    ],
+  },
+  {
+    key: "seconde-main-boutiques-types",
+    label: "Type de boutique",
+    appliesTo: ["seconde-main-boutiques"],
+    browsable: true,
+    options: [
+      { key: "voitures-2-roues", label: "Voitures & 2 roues", emoji: "🚗" },
+      { key: "habits-adultes", label: "Habits & chaussures adultes", emoji: "👕" },
+      { key: "equipement-maison", label: "Équipement maison", emoji: "🛋️" },
+      { key: "jeux-livres", label: "Jeux & livres", emoji: "🎲" },
+    ],
+  },
+  {
+    key: "banques-types",
+    label: "Type de service",
+    appliesTo: ["banques-assurances-argent"],
+    browsable: true,
+    options: [
+      { key: "banques", label: "Banques", emoji: "🏦" },
+      { key: "assurances", label: "Assurances", emoji: "🛡️" },
+      { key: "distributeurs", label: "Distributeurs (ATM)", emoji: "🏧" },
+    ],
+  },
+  {
+    key: "poste-demarches-types",
+    label: "Type de service",
+    appliesTo: ["poste-demarches"],
+    browsable: true,
+    options: [
+      { key: "poste", label: "Bureaux de poste", emoji: "📮" },
+      { key: "expatriation-visas", label: "Expatriation & visas", emoji: "🛂" },
+      { key: "photographes", label: "Photographes (passeport & ID)", emoji: "📷" },
+    ],
+  },
+  {
+    key: "police-ambassades-types",
+    label: "Type",
+    appliesTo: ["police-ambassades-consulats"],
+    browsable: true,
+    options: [
+      { key: "postes-police", label: "Postes de police", emoji: "🚓" },
+      { key: "ambassades-consulats", label: "Ambassades & consulats", emoji: "🏛️" },
+    ],
+  },
+  {
+    key: "avocats-types",
+    label: "Profession",
+    appliesTo: ["avocats-notaires-comptables"],
+    browsable: true,
+    options: [
+      { key: "avocats", label: "Avocats & juristes", emoji: "⚖️" },
+      { key: "notaires", label: "Notaires", emoji: "📜" },
+      { key: "comptables", label: "Comptables & experts-comptables", emoji: "🧮" },
+    ],
+  },
+  {
+    key: "auto-types",
+    label: "Type de service",
+    appliesTo: ["auto-garages-concessionnaires"],
+    browsable: true,
+    options: [
+      { key: "concessionnaires", label: "Concessionnaires auto", emoji: "🚗" },
+      { key: "garages-mecaniciens", label: "Garages & mécaniciens", emoji: "🔧" },
+      { key: "controle-technique", label: "Contrôle technique (fitness)", emoji: "🛠️" },
+    ],
+  },
+  {
+    key: "taxis-types",
+    label: "Type de service",
+    appliesTo: ["taxis-vtc-location"],
+    browsable: true,
+    options: [
+      { key: "taxis-transferts", label: "Taxis & transferts", emoji: "🚕" },
+      { key: "location-voiture", label: "Location de voiture", emoji: "🚙" },
+      { key: "vtc-apps", label: "Applications VTC & réservation", emoji: "📱" },
+    ],
+  },
+  {
+    key: "depannages-types",
+    label: "Type de service",
+    appliesTo: ["depannages-services"],
+    browsable: true,
+    options: [
+      { key: "depannages", label: "Dépannages", emoji: "🔧" },
+      { key: "informatique-reparation", label: "Informatique (dépannage & pièces)", emoji: "💻" },
+      { key: "pressing-blanchisserie", label: "Pressing & blanchisserie", emoji: "🧺" },
+    ],
+  },
+  {
+    key: "coworking-types",
+    label: "Type d'espace",
+    appliesTo: ["coworking-teletravail"],
+    browsable: true,
+    options: [
+      { key: "coworking", label: "Espaces de coworking", emoji: "🧑‍💻" },
+      { key: "cafe-coworking", label: "Cafés & spots télétravail", emoji: "☕" },
+    ],
+  },
+  {
+    key: "business-networking-types",
+    label: "Type",
+    appliesTo: ["business-networking"],
+    browsable: true,
+    options: [
+      { key: "business", label: "Business", emoji: "💼" },
+      { key: "networking", label: "Networking", emoji: "🤝" },
     ],
   },
 ];

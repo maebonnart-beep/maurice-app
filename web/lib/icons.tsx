@@ -91,6 +91,33 @@ export const ICON_MAP: Record<string, Icon> = {
   "produits-bio": Plant, "boucheries-poissons": Cow, "boulangeries-patisseries": Bread,
   "vins-spiritueux": Wine, "exotiques-epices": Fire,
 
+  // Sous-rubriques restaurées (perdues lors de la refonte du 17/08/2026)
+  "grandes-surfaces": Storefront, boulangeries: Bread, "epiceries-specialisees": Basket,
+  boucheries: Cow, "fruits-et-legumes": Carrot, poissonneries: Fish, marches: Basket,
+  bars: Martini, "cafes-terrasses": Coffee, "snacks-plage": Hamburger, glaciers: IceCream,
+  "tables-hotes": CookingPot, "chefs-domicile": ChefHat, "cours-de-cuisine": ChefHat,
+  plages: Umbrella, "parcs-nationaux-cascades": Mountains, "parcs-botaniques": Flower,
+  "parcs-animaliers": PawPrint, "parcs-aventures": TreePalm,
+  casinos: PokerChip, bowling: BowlingBall, karting: Gauge, "escape-game": LockKey,
+  "gym-fitness": Barbell, "complexes-sportifs": Buildings,
+  peche: FishSimple, "centres-equestres": Horse,
+  medecins: Stethoscope, dentistes: Tooth, opticiens: Eyeglasses,
+  pharmacies: Pill, laboratoires: TestTube,
+  "cliniques-privees": Hospital, "centres-sante-publics": FirstAid,
+  coiffeurs: Scissors, barbiers: Scissors, "onglerie-manucure": Sparkle, "tatouage-piercing": Needle,
+  "mode-adultes": TShirt, "mode-enfants": Baby, beaute: Sparkle, "materiel-sports": Sneaker,
+  livres: Books, jeux: GameController, "bibliotheque-mediatheque": Books,
+  "voitures-2-roues": Motorcycle, "habits-adultes": TShirt, "equipement-maison": Armchair, "jeux-livres": GameController,
+  banques: Bank, assurances: ShieldCheck, distributeurs: Money,
+  poste: Mailbox, "expatriation-visas": IdentificationCard, photographes: Camera,
+  "postes-police": PoliceCar, "ambassades-consulats": Flag,
+  avocats: Gavel, notaires: Scroll, comptables: Calculator,
+  concessionnaires: Car, "garages-mecaniciens": Wrench, "controle-technique": Ruler,
+  "taxis-transferts": Taxi, "location-voiture": Car, "vtc-apps": DeviceMobile,
+  depannages: Wrench, "informatique-reparation": Laptop, "pressing-blanchisserie": WashingMachine,
+  coworking: Laptop, "cafe-coworking": Coffee,
+  business: Briefcase, networking: Handshake,
+
   // Gammes de prix
   "bon-marche": Coins, "prix-moyen": Money, "se-faire-plaisir": Diamond,
 

@@ -200,6 +200,9 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
   // Accueil « Par catégorie » : catégorie choisie, dont on affiche les rubriques
   // (un seul niveau de profondeur). null = grille des 8 catégories.
   const [homeCategory, setHomeCategory] = useState<CategoryKey | null>(null);
+  // Accueil « Par catégorie » → rubrique choisie qui a des sous-rubriques
+  // (cf. FILTER_GROUPS[].browsable) : page intermédiaire avant les résultats.
+  const [homeSubRubrique, setHomeSubRubrique] = useState<string | null>(null);
   const cardRefs = useRef<Record<string, HTMLElement | null>>({});
   const favorisSectionRef = useRef<HTMLDivElement>(null);
   const aTesterSectionRef = useRef<HTMLDivElement>(null);
@@ -310,6 +313,30 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
     };
   }, [zonePickerOpen]);
 
+  // Groupe de filtre « browsable » (page de sous-rubriques) applicable à une
+  // rubrique donnée, s'il existe.
+  function browsableGroupFor(rubriqueKey: string): FilterGroup | undefined {
+    return FILTER_GROUPS.find((g) => g.browsable && g.appliesTo.includes(rubriqueKey));
+  }
+
+  // Depuis la liste de rubriques : ouvre la page de sous-rubriques si la
+  // rubrique en a, sinon va directement aux résultats (comportement d'avant).
+  function openRubrique(key: string) {
+    if (browsableGroupFor(key)) {
+      setHomeSubRubrique(key);
+    } else {
+      toggleTheme(key);
+    }
+  }
+
+  // Depuis la page de sous-rubriques : sélectionne la rubrique + la facette
+  // choisie, puis va aux résultats déjà filtrés.
+  function selectSubRubrique(rubriqueKey: string, group: FilterGroup, optionKey: string) {
+    toggleTheme(rubriqueKey);
+    toggleFacetGroup(group.key, optionKey);
+    setHomeSubRubrique(null);
+  }
+
   function toggleTheme(key: string) {
     setActiveThemes((prev) => (prev.has(key) ? new Set() : new Set([key])));
     resetFacets(); // les facettes ne valent que pour la rubrique courante
@@ -321,8 +348,12 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
   // rubriques → sous-menu d'accueil → menu) au lieu de tout réinitialiser.
   // Utilisé par les bandeaux sticky de l'accueil et de la liste de résultats.
   const canGoBack =
-    homeCategory !== null || activeThemes.size > 0 || browseAll || active !== "all" || homeMode !== "menu";
+    homeSubRubrique !== null || homeCategory !== null || activeThemes.size > 0 || browseAll || active !== "all" || homeMode !== "menu";
   function goBackFromResults() {
+    if (homeSubRubrique !== null) {
+      setHomeSubRubrique(null); // retour à la liste de rubriques
+      return;
+    }
     if (activeThemes.size > 0) {
       setActiveThemes(new Set()); // retour à la liste de rubriques (ou à la grille catégories)
       return;
@@ -468,6 +499,20 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
     });
     return { perGroup, price, badge, total };
   }, [businesses, activeRubrique, activeZone, query]);
+
+  // Compteurs par option pour la page de sous-rubriques (avant sélection de
+  // rubrique/facette — donc indépendant de activeRubrique/facetGroups).
+  const subRubriqueCounts = useMemo(() => {
+    const c: Record<string, number> = {};
+    if (!homeSubRubrique) return c;
+    businesses.forEach((b) => {
+      if (!(b.themes || []).includes(homeSubRubrique)) return;
+      (b.filters || []).forEach((f) => {
+        c[f] = (c[f] || 0) + 1;
+      });
+    });
+    return c;
+  }, [businesses, homeSubRubrique]);
 
   const facetActive =
     Object.values(facetGroups).reduce((n, set) => n + set.size, 0) + facetPrices.size + facetBadges.size > 0;
@@ -1137,7 +1182,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
 
           {/* Accueil → Par catégorie → une catégorie choisie : liste plate de
               ses rubriques (SUBCATEGORIES[cat]), un seul clic vers les résultats. */}
-          {showHome && homeMode === "categories" && homeCategory !== null && (
+          {showHome && homeMode === "categories" && homeCategory !== null && homeSubRubrique === null && (
             <div className="pb-16">
               <div className="sticky top-[94px] z-20 -mx-4 lg:-mx-5 px-4 lg:px-5 py-2 flex items-center gap-2 border-b border-border" style={{ background: "var(--bg)" }}>
                 <button
@@ -1161,12 +1206,50 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                       label={s.label}
                       count={themeCountsAll[s.key] || 0}
                       locked={PREMIUM_RUBRIQUE_KEYS.has(s.key)}
-                      onClick={() => toggleTheme(s.key)}
+                      onClick={() => openRubrique(s.key)}
                     />
                   ))}
               </div>
             </div>
           )}
+
+          {/* Accueil → Par catégorie → rubrique → sous-rubriques (cf.
+              FILTER_GROUPS[].browsable) : dernier niveau avant les résultats,
+              restauré après avoir été perdu dans la refonte du 17/08/2026. */}
+          {showHome && homeMode === "categories" && homeSubRubrique !== null && (() => {
+            const group = browsableGroupFor(homeSubRubrique);
+            if (!group) return null;
+            const rubriqueLabel = RUBRIQUE_MAP[homeSubRubrique]?.label ?? homeSubRubrique;
+            return (
+              <div className="pb-16">
+                <div className="sticky top-[94px] z-20 -mx-4 lg:-mx-5 px-4 lg:px-5 py-2 flex items-center gap-2 border-b border-border" style={{ background: "var(--bg)" }}>
+                  <button
+                    onClick={() => setHomeSubRubrique(null)}
+                    aria-label="Retour"
+                    className="shrink-0 w-7 h-7 -ml-1 rounded-full flex items-center justify-center text-ink active:scale-[.95] transition-transform"
+                  >
+                    <ArrowLeft size={17} weight="bold" aria-hidden />
+                  </button>
+                  <p className="text-[15px] font-semibold truncate">{rubriqueLabel}</p>
+                </div>
+                <div className="h-2.5" />
+                <div className="flex flex-col gap-2 sm:max-w-[560px] sm:mx-auto">
+                  {group.options
+                    .filter((o) => (subRubriqueCounts[o.key] || 0) > 0)
+                    .map((o) => (
+                      <CategoryRow
+                        key={o.key}
+                        iconKey={o.key}
+                        emoji={o.emoji}
+                        label={o.label}
+                        count={subRubriqueCounts[o.key] || 0}
+                        onClick={() => selectSubRubrique(homeSubRubrique, group, o.key)}
+                      />
+                    ))}
+                </div>
+              </div>
+            );
+          })()}
 
           {/* Accueil → Mes favoris : fiches enregistrées via le cœur (favori + à tester), stockage local. */}
           {showHome && homeMode === "favoris" && (
