@@ -301,6 +301,17 @@ export function BusinessDetail({
               </div>
             )}
 
+            {b.koteMorisComment && (
+              <div className="flex flex-col gap-1.5 pt-1 border-t border-border">
+                <h3 className="m-0 mt-2 text-[13px] font-bold uppercase tracking-wide text-primary-deep">
+                  💬 Commentaire Koté Moris
+                </h3>
+                <p className="m-0 text-ink text-[14.5px] leading-[1.6] italic bg-primary-tint/40 rounded-card p-3">
+                  {b.koteMorisComment}
+                </p>
+              </div>
+            )}
+
             {(facts.length > 0 ||
               b.takeaway ||
               b.themes?.some((t) => t !== "kids-friendly" && !hiddenKeys?.has(t))) && (

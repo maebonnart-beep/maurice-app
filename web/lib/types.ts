@@ -100,4 +100,6 @@ export type Business = {
   photoUrl?: string;
   /** Crédit/source de la photo, ex: "Photo: Jane Doe / Unsplash". */
   photoCredit?: string;
+  /** Avis perso rédigé après une visite (vécue), affiché distinctement de la description factuelle. */
+  koteMorisComment?: string;
 };
