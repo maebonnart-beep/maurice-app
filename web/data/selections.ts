@@ -86,6 +86,7 @@ export const SELECTIONS: Selection[] = [
       "ile-aux-aigrettes",
       "curious-mauritius",
       "chateau-de-labourdonnais",
+      "jardin-du-chateau-de-labourdonnais",
       "vallee-de-ferney-sortir-decouvrir",
       "le-lucky-strike-bowling-lounge",
     ],

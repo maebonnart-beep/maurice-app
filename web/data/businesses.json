@@ -51220,5 +51220,28 @@
     ],
     "zone": "nord",
     "description": "Cabinet d'Antoine Menguy, acupuncteur et masseur-kinésithérapeute diplômé d'État, praticien en médecine traditionnelle chinoise : acupuncture, ventouses, moxibustion et thérapie manuelle pour troubles digestifs, stress, insomnie, migraines, douleurs chroniques et autres déséquilibres énergétiques. Sur rendez-vous, lun-ven 8h-12h / 13h30-17h30."
+  },
+  {
+    "id": "jardin-du-chateau-de-labourdonnais",
+    "name": "Le Jardin du Château de Labourdonnais",
+    "category": "sortir-decouvrir",
+    "address": "Domaine de Labourdonnais, Mapou",
+    "phone": "+230 266 9533",
+    "website": "https://domainedelabourdonnais.com/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Chateau%20de%20Labourdonnais%20Mapou%20Mauritius",
+    "lat": -20.0706412,
+    "lng": 57.6155391,
+    "themes": [
+      "plages-nature",
+      "parcs-activites-famille"
+    ],
+    "hours": "Tous les jours 9h-17h",
+    "priceRange": "bon-marche",
+    "zone": "nord",
+    "description": "Accès indépendant aux jardins du Château de Labourdonnais, sans passer par la visite guidée du château : vergers historiques, allées d'arbres centenaires et Tiny Forest à parcourir en famille au cœur du domaine. Le jardin jouxte le Quartier des Serres ainsi que les écoles EDN et Northfields et le Labourdonnais Sports Club. Idéal pour une balade nature avec les enfants sans le tarif ni le temps de la visite du château.",
+    "entryPrice": "Rs 150 (accès jardin seul)",
+    "filters": [
+      "parcs-botaniques"
+    ]
   }
 ]
