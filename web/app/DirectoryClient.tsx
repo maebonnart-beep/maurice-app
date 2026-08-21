@@ -84,7 +84,7 @@ const SIDEBAR_VISIBLE_RUBRIQUES = 5;
 // « seconde-main » n'est plus une catégorie mais 2 rubriques dans « acheter-equiper »
 // (seconde-main-boutiques / seconde-main-particuliers) → verrou au niveau rubrique.
 const PREMIUM_CATEGORY_KEYS = new Set<CategoryKey>(["agenda"]);
-const PREMIUM_RUBRIQUE_KEYS = new Set<string>(["seconde-main-boutiques", "seconde-main-particuliers"]);
+const PREMIUM_RUBRIQUE_KEYS = new Set<string>(["seconde-main-particuliers"]);
 
 // Tuile d'entrée du menu d'accueil : image + titre + sous-titre.
 function HomeEntry({
@@ -655,7 +655,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
       : { key: "all", emoji: "✨", label: "Tout" });
 
   // Verrou Premium : catégorie entière (agenda) ou rubrique précise
-  // (seconde-main-boutiques / seconde-main-particuliers, dans acheter-equiper).
+  // (seconde-main-particuliers, dans acheter-equiper — seconde-main-boutiques reste libre).
   const activeCategoryLocked =
     (active !== "all" && PREMIUM_CATEGORY_KEYS.has(active as CategoryKey)) ||
     (activeRubrique !== null && PREMIUM_RUBRIQUE_KEYS.has(activeRubrique));
