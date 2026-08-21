@@ -4758,7 +4758,8 @@
     "zone": "est",
     "description": "Restaurant confidentiel installé dans l'ancienne sucrerie Victoria 1840, à la fois table gastronomique française et galerie d'art (œuvres de Maniglier, dernier élève mauricien de Matisse). Produits locaux mis à l'honneur (langouste entière, filets de loup, poisson en croûte de sel). Avis partagés, certains jugent le rapport qualité-prix décevant.",
     "filters": [
-      "europeenne"
+      "europeenne",
+      "produits-locaux"
     ]
   },
   {
@@ -4886,7 +4887,8 @@
     "description": "Restaurant en front de mer sur la rue Suffren, offrant une vue sur toute la baie de Mahébourg, avec une cuisine créole à base de produits locaux (gibier, ourite, cœur de palmiste) et une ambiance piano-bar en soirée.",
     "filters": [
       "mauricienne",
-      "tables-exception"
+      "tables-exception",
+      "produits-locaux"
     ]
   },
   {
@@ -6887,7 +6889,9 @@
     "zone": "ouest",
     "description": "Bistrot-restaurant et cave à vin bio de Tamarin, plus de 150 vins français majoritairement bio. Cuisine française façon brasserie parisienne, terrasse avec vue sur les montagnes. Fermé dimanche et lundi.",
     "filters": [
-      "europeenne"
+      "europeenne",
+      "produits-bio",
+      "vins-spiritueux"
     ]
   },
   {
@@ -7326,7 +7330,8 @@
     "zone": "ouest",
     "description": "Petit restaurant familial de Flic en Flac (aussi connu sous \"Chez May\"), spécialités créoles à base de légumes BIO. Menu unique : festin créole multi-plats (riz, poulet, poulpe, saucisses créoles, légumes, dessert, rhum) pour environ Rs 1000/pers. Réservation obligatoire, peu de tables.",
     "filters": [
-      "mauricienne"
+      "mauricienne",
+      "produits-bio"
     ]
   },
   {
@@ -7407,7 +7412,8 @@
     "zone": "ouest",
     "description": "Éco-lodge et concept familial de Black River combinant guesthouse, café, boutique et restaurant végétarien/végan. Cuisine farm-to-table : wraps, salades, burgers végétaux, produits locaux.",
     "filters": [
-      "vegetarien"
+      "vegetarien",
+      "produits-locaux"
     ]
   },
   {
@@ -7527,7 +7533,8 @@
     "description": "Restaurant de Plaine Champagne mêlant technique française et produits locaux mauriciens, avec une carte de vins et cocktails.",
     "filters": [
       "europeenne",
-      "mauricienne"
+      "mauricienne",
+      "produits-locaux"
     ]
   },
   {
@@ -7878,7 +7885,8 @@
     "zone": "sud",
     "description": "Table d'hôtes familiale de Chamarel, cuisine mauricienne authentique avec fruits et légumes de leur propre potager bio ; bien notée (4,2/5).",
     "filters": [
-      "mauricienne"
+      "mauricienne",
+      "produits-bio"
     ]
   },
   {
@@ -8115,7 +8123,8 @@
     "description": "Café-restaurant familial de La Gaulette, tenu par un couple local, servant une cuisine mauricienne à base de produits locaux pour le petit-déjeuner, le déjeuner et le dîner. Réputé pour ses superbes vues dans une ambiance familiale et décontractée.",
     "filters": [
       "mauricienne",
-      "plus-belles-vues"
+      "plus-belles-vues",
+      "produits-locaux"
     ]
   },
   {
@@ -8349,7 +8358,8 @@
     "zone": "sud",
     "description": "Restaurant de l'hôtel Dinarobin au Morne, concept bistronomique mêlant héritage colonial français et influences indiennes, cuisine mettant en avant les produits locaux.",
     "filters": [
-      "europeenne"
+      "europeenne",
+      "produits-locaux"
     ]
   },
   {
@@ -8542,7 +8552,8 @@
     "zone": "sud",
     "description": "Restaurant principal du Heritage Le Telfair Golf & Wellness Resort (Bel Ombre), déco élégante d'inspiration coloniale. Cuisine mauricienne et internationale en cuisine ouverte, belle carte des vins français et sud-africains. Bien noté (4,4/5).",
     "filters": [
-      "tables-exception"
+      "tables-exception",
+      "vins-spiritueux"
     ]
   },
   {
@@ -9185,7 +9196,8 @@
     "description": "Restaurant gastronomique du domaine de Constance Belle Mare Plage, réputé pour sa cave à vins de 15 000 bouteilles issues de plus de 1300 domaines et l'accueil régulier de chefs étoilés invités.",
     "filters": [
       "tables-exception",
-      "europeenne"
+      "europeenne",
+      "vins-spiritueux"
     ]
   },
   {
@@ -9263,7 +9275,8 @@
     "zone": "est",
     "description": "Trattoria de l'Ambre Resort & Spa (Palmar), antipasti maison, pâtes et pizzas au feu de bois, carte des vins étoffée.",
     "filters": [
-      "italien"
+      "italien",
+      "vins-spiritueux"
     ]
   },
   {
@@ -10034,7 +10047,8 @@
     "zone": "sud",
     "description": "Ancienne maison coloniale en bois du 19e siècle, toit de tôle, jardin arboré et cottages. Cuisine créole aux produits locaux : bouillon de crabe, currys, filet de cerf en saison, poisson du jour tout juste sorti du lagon. Cadre unique et plats généreux saluent par les avis, même si le service peut être lent aux heures de forte affluence.",
     "filters": [
-      "mauricienne"
+      "mauricienne",
+      "produits-locaux"
     ]
   },
   {
@@ -13674,7 +13688,8 @@
     "description": "Restaurant familial dans un jardin tropical à Grand Baie, cuisine française avec produits locaux, curries, fruits de mer et grillades. Très bien noté (4,8/5), cocktails appréciés.",
     "filters": [
       "fruits-de-mer",
-      "europeenne"
+      "europeenne",
+      "produits-locaux"
     ]
   },
   {
@@ -37121,7 +37136,8 @@
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=La%20Go%C3%A9lette%20Royal%20Palm%20Beachcomber%20Luxury%2C%20Coastal%20Road%2C%20Grand%20Baie%20Mauritius",
     "filters": [
       "europeenne",
-      "mauricienne"
+      "mauricienne",
+      "vins-spiritueux"
     ]
   },
   {
@@ -38756,7 +38772,8 @@
     "lng": 57.4833,
     "filters": [
       "europeenne",
-      "tables-exception"
+      "tables-exception",
+      "produits-locaux"
     ]
   },
   {
@@ -49101,7 +49118,8 @@
     "description": "Ancienne pharmacie de campagne transformée en restaurant par Mario, pour une table authentique de cuisine mauricienne d'antan. Pas de carte fixe : le menu du jour est élaboré selon les produits des fermiers, pêcheurs et producteurs locaux.",
     "filters": [
       "mauricienne",
-      "frequente-locaux"
+      "frequente-locaux",
+      "produits-locaux"
     ]
   },
   {

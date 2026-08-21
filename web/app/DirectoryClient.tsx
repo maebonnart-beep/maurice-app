@@ -1010,9 +1010,11 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
     })
     .filter((g) => g.options.length > 0);
 
-  const priceOptions: DropdownOption[] = PRICE_RANGES.filter(
-    (p) => (facetCounts.price[p.key] || 0) > 0
-  ).map((p) => ({ key: p.key, label: `${p.symbol} ${p.label}`, count: facetCounts.price[p.key] }));
+  const priceOptions: DropdownOption[] = activeRubrique === "restaurants"
+    ? PRICE_RANGES.filter(
+        (p) => (facetCounts.price[p.key] || 0) > 0
+      ).map((p) => ({ key: p.key, label: `${p.symbol} ${p.label}`, count: facetCounts.price[p.key] }))
+    : [];
 
   const badgeOptions: DropdownOption[] = BADGE_META.filter(
     (m) => (facetCounts.badge[m.key] || 0) > 0

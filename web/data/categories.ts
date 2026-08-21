@@ -175,6 +175,21 @@ export const FILTER_GROUPS: FilterGroup[] = [
       { key: "exotiques-epices", label: "Exotiques & épices", emoji: "🌶️" },
     ],
   },
+  {
+    key: "specialite-repas",
+    label: "Spécialité",
+    appliesTo: ["restaurants", "livraisons"],
+    options: [
+      { key: "produits-francais", label: "Produits français", emoji: "🇫🇷" },
+      { key: "produits-locaux", label: "Produits locaux", emoji: "🥭" },
+      { key: "epiceries-fines", label: "Épiceries fines", emoji: "🫙" },
+      { key: "produits-bio", label: "Produits bio", emoji: "🌱" },
+      { key: "boucheries-poissons", label: "Boucheries & poissons", emoji: "🥩" },
+      { key: "boulangeries-patisseries", label: "Boulangeries & pâtisseries", emoji: "🥖" },
+      { key: "vins-spiritueux", label: "Vins & spiritueux", emoji: "🍷" },
+      { key: "exotiques-epices", label: "Exotiques & épices", emoji: "🌶️" },
+    ],
+  },
 
   // --- Sous-rubriques restaurées (perdues lors de la refonte du 17/08/2026) ---
   {
