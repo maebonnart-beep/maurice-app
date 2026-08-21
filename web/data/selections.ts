@@ -170,6 +170,7 @@ export const SELECTIONS: Selection[] = [
       "l-ardoise-brasserie",
       "le-whatever-tamarin",
       "la-kaz-a-pain-riviere-noire",
+      "mam-gouz",
     ],
   },
   {
