@@ -51407,5 +51407,25 @@
     "filters": [
       "parcs-botaniques"
     ]
+  },
+  {
+    "id": "votre-pote-age-mont-choisy",
+    "name": "Votre Pote Agé",
+    "category": "manger-boire",
+    "address": "Mont Choisy Le Mall, Grand Baie",
+    "phone": "+230 686 9046",
+    "website": "",
+    "googleMapsUrl": "https://share.google/vlxAgLNB2Ule7he8L",
+    "lat": -20.0246224,
+    "lng": 57.576571,
+    "themes": [
+      "commerces-alimentaires"
+    ],
+    "zone": "nord",
+    "hours": "Ven-Jeu 9h30-17h, fermé dim",
+    "filters": [
+      "grandes-surfaces"
+    ],
+    "promoText": "Sélection de produits sans pesticide ni hormones. Livraison possible."
   }
 ]
