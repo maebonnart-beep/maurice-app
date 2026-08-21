@@ -14579,7 +14579,10 @@
     ],
     "zone": "nord",
     "description": "Pizzeria napolitaine de Pereybère/Grand Baie, livraison de pizzas fraîches chaque soir sur le secteur.",
-    "hours": "Livraison Mar-Jeu, Dim 19h-21h30, Ven-Sam 18h-22h (fermé le lundi)"
+    "hours": "Livraison Mar-Jeu, Dim 19h-21h30, Ven-Sam 18h-22h (fermé le lundi)",
+    "filters": [
+      "italien"
+    ]
   },
   {
     "id": "the-food-factory",
@@ -14596,7 +14599,10 @@
     ],
     "zone": "nord",
     "description": "Restauration rapide healthy à Grand Baie (burgers, sauces allégées), ouvert tous les jours de 11h à 22h.",
-    "hours": "Mar-Dim 11h-22h (fermé le lundi)"
+    "hours": "Mar-Dim 11h-22h (fermé le lundi)",
+    "filters": [
+      "grillades"
+    ]
   },
   {
     "id": "felicita-authentic-neapolitan-pizza",
@@ -14613,7 +14619,10 @@
     ],
     "zone": "nord",
     "description": "Pizzeria napolitaine au four à bois de Grand Baie (ingrédients importés d'Italie), bar à burrata. Sur place, à emporter et en livraison.",
-    "hours": "Tous les jours 17h-21h30"
+    "hours": "Tous les jours 17h-21h30",
+    "filters": [
+      "italien"
+    ]
   },
   {
     "id": "grubmates-food-delivery-flic-en-flac",
@@ -14647,7 +14656,10 @@
     ],
     "zone": "nord",
     "description": "Chaîne de poulet peri-peri (fast-food) à La Croisette Mall, Grand Baie, ouvert tous les jours de 11h30 à 20h.",
-    "hours": "Lun-Jeu et Dim 11h30-21h, Ven-Sam 11h30-22h30"
+    "hours": "Lun-Jeu et Dim 11h30-21h, Ven-Sam 11h30-22h30",
+    "filters": [
+      "grillades"
+    ]
   },
   {
     "id": "sushibay",
@@ -14663,7 +14675,10 @@
       "livraisons"
     ],
     "zone": "nord",
-    "description": "Livraison de sushis à Grand Baie."
+    "description": "Livraison de sushis à Grand Baie.",
+    "filters": [
+      "sushis"
+    ]
   },
   {
     "id": "gloria-fast-food",
@@ -14680,7 +14695,10 @@
     ],
     "zone": "nord",
     "description": "Fast-food de Grand Baie : burgers, frites, poulet frit, wraps et paninis, ouvert tous les jours de 11h à 20h.",
-    "hours": "Lun-Mar 11h-20h"
+    "hours": "Lun-Mar 11h-20h",
+    "filters": [
+      "grillades"
+    ]
   },
   {
     "id": "zaika-restaurant",
@@ -14697,7 +14715,10 @@
     ],
     "zone": "centre",
     "description": "Cuisine indienne (butter chicken, naan) au food court du Victoria Urban Terminal, Port Louis.",
-    "hours": "Tous les jours 11h-15h, 17h-22h"
+    "hours": "Tous les jours 11h-15h, 17h-22h",
+    "filters": [
+      "indienne"
+    ]
   },
   {
     "id": "italian-pizza-da-mario",
@@ -14714,7 +14735,10 @@
     ],
     "zone": "nord",
     "description": "Pizza au four à bois à Grand Baie, pâte au levain préparée à la minute, plutôt à emporter.",
-    "hours": "Mer-Dim 17h30-21h30 (fermé Lun-Mar)"
+    "hours": "Mer-Dim 17h30-21h30 (fermé Lun-Mar)",
+    "filters": [
+      "italien"
+    ]
   },
   {
     "id": "la-cigale-pizzeria",
@@ -14731,7 +14755,10 @@
     ],
     "zone": "nord",
     "description": "Cuisine italienne à Pointe aux Canonniers/Grand Baie : pizzas, pâtes fraîches, lasagnes, déjeuner et dîner, sur place ou à emporter.",
-    "hours": "Tous les jours 10h30-22h30"
+    "hours": "Tous les jours 10h30-22h30",
+    "filters": [
+      "italien"
+    ]
   },
   {
     "id": "burger-mania-rose-hill",
@@ -14748,7 +14775,10 @@
     ],
     "zone": "centre",
     "description": "Burgers 100% halal à Rose Hill, service déjeuner et dîner.",
-    "hours": "Lun-Ven 11h-21h, Sam 17h30-21h (fermé le dimanche)"
+    "hours": "Lun-Ven 11h-21h, Sam 17h30-21h (fermé le dimanche)",
+    "filters": [
+      "grillades"
+    ]
   },
   {
     "id": "tasty-panino",
@@ -14765,7 +14795,10 @@
     ],
     "zone": "nord",
     "description": "Pizzas et paninis italiens artisanaux à Triolet. Horaires : mer-jeu 17h-22h, ven-sam 12h-22h, dim 17h30-22h, lun 12h-22h (fermé le mardi).",
-    "hours": "Lun, Ven-Sam 12h-22h, Mar-Jeu 17h-22h, Dim 17h30-22h"
+    "hours": "Lun, Ven-Sam 12h-22h, Mar-Jeu 17h-22h, Dim 17h30-22h",
+    "filters": [
+      "italien"
+    ]
   },
   {
     "id": "panarottis-express-la-croisette",
@@ -14782,7 +14815,10 @@
     ],
     "zone": "nord",
     "description": "Cuisine italienne (pizzas, pâtes) au Food Pavilion de La Croisette, Grand Baie, ouvert jusqu'à 21h.",
-    "hours": "Lun-Jeu, Dim 10h30-21h, Ven-Sam 10h30-22h"
+    "hours": "Lun-Jeu, Dim 10h30-21h, Ven-Sam 10h30-22h",
+    "filters": [
+      "italien"
+    ]
   },
   {
     "id": "oh-my-cake",
@@ -18698,7 +18734,10 @@
     ],
     "zone": "ouest",
     "description": "Pizzeria napolitaine artisanale de Tamarin (pâte fermentée 48h, four à bois). Horaires : mer 11h30-14h/18h-21h, ven-sam 11h30-14h/18h-22h, dim 18h-21h (fermé le mardi).",
-    "hours": "Lun, Mer-Ven 11h30-14h, 18h-21h (Ven-Sam jusqu'à 22h), Dim 18h-21h (fermé le mardi)"
+    "hours": "Lun, Mer-Ven 11h30-14h, 18h-21h (Ven-Sam jusqu'à 22h), Dim 18h-21h (fermé le mardi)",
+    "filters": [
+      "italien"
+    ]
   },
   {
     "id": "pizz-a-gogo",
@@ -18736,7 +18775,10 @@
     ],
     "zone": "ouest",
     "description": "Fast-food de poulet frit au Barachois, Tamarin, ouvert au moins du lundi au vendredi 10h-20h30.",
-    "hours": "Lun-Sam 10h-20h30, Dim 10h-20h"
+    "hours": "Lun-Sam 10h-20h30, Dim 10h-20h",
+    "filters": [
+      "grillades"
+    ]
   },
   {
     "id": "cafe-alexia",
@@ -18770,7 +18812,10 @@
     ],
     "zone": "ouest",
     "description": "Kebabs artisanaux (pain maison, poulet/agneau mariné 48h) au Cascavelle Mall, avec service de livraison.",
-    "hours": "Tous les jours 12h-21h"
+    "hours": "Tous les jours 12h-21h",
+    "filters": [
+      "grillades"
+    ]
   },
   {
     "id": "portofino-s-pizza",
@@ -18787,7 +18832,10 @@
     ],
     "zone": "ouest",
     "description": "Pizzeria italienne de Tamarin, pâte artisanale, sur place et à emporter, ouvert tous les jours midi et soir.",
-    "hours": "Dim-Jeu 10h30-21h, Ven-Sam 10h30-21h30"
+    "hours": "Dim-Jeu 10h30-21h, Ven-Sam 10h30-21h30",
+    "filters": [
+      "italien"
+    ]
   },
   {
     "id": "da-vinci-s",
@@ -18804,7 +18852,10 @@
     ],
     "zone": "centre",
     "description": "Pizzeria italienne authentique à Vacoas-Phoenix (Castel), ouverte du mardi au dimanche, 18h-21h30.",
-    "hours": "Mar-Dim 18h-21h30"
+    "hours": "Mar-Dim 18h-21h30",
+    "filters": [
+      "italien"
+    ]
   },
   {
     "id": "jiro-sushi-tamarin",
@@ -18821,7 +18872,10 @@
     ],
     "zone": "ouest",
     "description": "Sushis et cuisine japonaise à Tamarin, ouvert du mardi au samedi 11h30-14h30 et 17h30-21h30 (fermé le lundi).",
-    "hours": "Mar-Sam 11h30-14h30, 17h30-21h30 (fermé le lundi)"
+    "hours": "Mar-Sam 11h30-14h30, 17h30-21h30 (fermé le lundi)",
+    "filters": [
+      "sushis"
+    ]
   },
   {
     "id": "albatrosses-sushi",
@@ -18838,7 +18892,10 @@
     ],
     "zone": "ouest",
     "description": "Sushis et cuisine japonaise à Flic en Flac, principalement à emporter, ouvert tous les jours de 12h à 22h.",
-    "hours": "Lun-Jeu 11h30-13h30, 17h30-20h30, Ven-Dim 11h30-20h30"
+    "hours": "Lun-Jeu 11h30-13h30, 17h30-20h30, Ven-Dim 11h30-20h30",
+    "filters": [
+      "sushis"
+    ]
   },
   {
     "id": "aly-fast-food-by-gloria",
@@ -18855,7 +18912,11 @@
     ],
     "zone": "centre",
     "description": "Fast-food à Rose Hill (burgers, kebabs, plats chinois, wraps), ouvert mardi-samedi 11h-21h, dimanche/jours fériés 15h-21h (fermé le lundi).",
-    "hours": "Mar-Sam 11h-21h, Dim et jours fériés 15h-21h (fermé le lundi)"
+    "hours": "Mar-Sam 11h-21h, Dim et jours fériés 15h-21h (fermé le lundi)",
+    "filters": [
+      "grillades",
+      "asiatique"
+    ]
   },
   {
     "id": "ti-kabann",
@@ -18872,7 +18933,10 @@
     ],
     "zone": "nord",
     "description": "Bistro de cuisine mauricienne à Long Mountain (nouilles, boulettes, mine bouillie, œuf rôti), livraison, à emporter et sur place.",
-    "hours": "Mar-Dim 17h-22h (fermé le lundi)"
+    "hours": "Mar-Dim 17h-22h (fermé le lundi)",
+    "filters": [
+      "mauricienne"
+    ]
   },
   {
     "id": "tariq",
@@ -18889,7 +18953,10 @@
     ],
     "zone": "nord",
     "description": "Fast-food/snacks à Triolet (briani, riz frit, nouilles, boulettes, kebabs, grillades), ouvert tous les jours de 10h30 à 20h30.",
-    "hours": "Lun-Sam 11h-21h, Dim 16h-22h"
+    "hours": "Lun-Sam 11h-21h, Dim 16h-22h",
+    "filters": [
+      "grillades"
+    ]
   },
   {
     "id": "vrndavana-s-pani-puri",
@@ -18906,7 +18973,11 @@
     ],
     "zone": "centre",
     "description": "Cuisine indienne végétarienne à Vacoas-Phoenix (pani puri, dahi puri, sev puri, bhel puri, chaat).",
-    "hours": "Mar-Ven 9h30-17h, Sam-Dim 9h30-18h (fermé le lundi)"
+    "hours": "Mar-Ven 9h30-17h, Sam-Dim 9h30-18h (fermé le lundi)",
+    "filters": [
+      "indienne",
+      "vegetarien"
+    ]
   },
   {
     "id": "bois-noir-cafe",
@@ -18923,7 +18994,11 @@
     ],
     "zone": "ouest",
     "description": "Cuisine chinoise/créole/mauricienne et fruits de mer à Flic en Flac, sur place et à emporter, ouvert lun-sam 11h30-22h, dim 11h30-14h et 18h-22h.",
-    "hours": "Lun-Sam 11h30-22h, Dim 11h30-14h, 18h-22h"
+    "hours": "Lun-Sam 11h30-22h, Dim 11h30-14h, 18h-22h",
+    "filters": [
+      "mauricienne",
+      "fruits-de-mer"
+    ]
   },
   {
     "id": "ch-ti-delice-patisserie-boulangerie",
@@ -22761,7 +22836,10 @@
     ],
     "zone": "sud",
     "description": "Pizzeria (pizzas maison) à Riambel, Surinam, ouverte du mardi au dimanche, 10h30-19h30 (fermée le lundi).",
-    "hours": "Mar-Dim 10h30-19h30 (fermé le lundi)"
+    "hours": "Mar-Dim 10h30-19h30 (fermé le lundi)",
+    "filters": [
+      "italien"
+    ]
   },
   {
     "id": "cozy-burger",
@@ -22778,7 +22856,10 @@
     ],
     "zone": "centre",
     "description": "Burgers à Rose Hill (style cajun, smash burger, tenders/wings), livraison gratuite vers plusieurs zones, ouvert du mardi au dimanche (fermé le lundi).",
-    "hours": "Mar-Dim 10h30-16h30, 17h30-23h (fermé le lundi)"
+    "hours": "Mar-Dim 10h30-16h30, 17h30-23h (fermé le lundi)",
+    "filters": [
+      "grillades"
+    ]
   },
   {
     "id": "indian-express-restaurant-curepipe",
@@ -22795,7 +22876,10 @@
     ],
     "zone": "centre",
     "description": "Cuisine indienne à Curepipe, ouverte lun-mer et ven-dim 10h-21h (fermé le jeudi).",
-    "hours": "Lun-Mer, Ven-Dim 10h-21h (fermé le jeudi)"
+    "hours": "Lun-Mer, Ven-Dim 10h-21h (fermé le jeudi)",
+    "filters": [
+      "indienne"
+    ]
   },
   {
     "id": "vatel-bleu-boulangerie-patisserie",
@@ -28140,7 +28224,10 @@
     ],
     "zone": "est",
     "description": "Pizzeria italienne à Bel Air, ouverte lundi et jeudi-dimanche 12h-20h (fermée mardi/mercredi), livraison à Rs 150.",
-    "hours": "Tous les jours 11h-21h"
+    "hours": "Tous les jours 11h-21h",
+    "filters": [
+      "italien"
+    ]
   },
   {
     "id": "selvi-s",
@@ -28157,7 +28244,11 @@
     ],
     "zone": "est",
     "description": "Cuisine fusion (japonaise, mexicaine, hakka et mauricienne) à Centre de Flacq.",
-    "hours": "Mar-Dim 11h-15h (fermé le jeudi)"
+    "hours": "Mar-Dim 11h-15h (fermé le jeudi)",
+    "filters": [
+      "asiatique",
+      "mauricienne"
+    ]
   },
   {
     "id": "tipik-fusion-food",
@@ -28174,7 +28265,10 @@
     ],
     "zone": "est",
     "description": "Cuisine fusion mauricienne à Central Flacq.",
-    "hours": "Mar, Jeu, Dim 10h30-15h, Mer 10h30-14h30, Ven 10h30-21h, Sam 10h30-22h (fermé le lundi)"
+    "hours": "Mar, Jeu, Dim 10h30-15h, Mer 10h30-14h30, Ven 10h30-21h, Sam 10h30-22h (fermé le lundi)",
+    "filters": [
+      "mauricienne"
+    ]
   },
   {
     "id": "reza-briani-snack",
@@ -28191,7 +28285,10 @@
     ],
     "zone": "centre",
     "description": "Spécialiste du briani/biryani (poulet, riz frit), secteur Terre Rouge/Pamplemousses.",
-    "hours": "Lun-Mer 10h-15h, Jeu-Sam 10h-15h30, Dim fermé"
+    "hours": "Lun-Mer 10h-15h, Jeu-Sam 10h-15h30, Dim fermé",
+    "filters": [
+      "indienne"
+    ]
   },
   {
     "id": "nature-et-delices",
@@ -28208,7 +28305,10 @@
     ],
     "zone": "nord",
     "description": "Restaurant français de cuisine de saison à Pointe aux Canonniers/Grand Baie.",
-    "hours": "Lun 18h-22h, Mar-Sam 12h-15h, 18h-22h30, Dim 12h-15h"
+    "hours": "Lun 18h-22h, Mar-Sam 12h-15h, 18h-22h30, Dim 12h-15h",
+    "filters": [
+      "europeenne"
+    ]
   },
   {
     "id": "chez-flipper-2k22",
@@ -28226,7 +28326,11 @@
     "badge": "selection",
     "zone": "nord",
     "description": "Cabane de plage à Trou-aux-Biches, cuisine créole et fruits de mer (poisson frais, crustacés, plat du jour).",
-    "hours": "Lun-Sam 11h-16h (fermé le dimanche)"
+    "hours": "Lun-Sam 11h-16h (fermé le dimanche)",
+    "filters": [
+      "mauricienne",
+      "fruits-de-mer"
+    ]
   },
   {
     "id": "maharaja-mithai",
@@ -28243,7 +28347,10 @@
     ],
     "zone": "est",
     "description": "Sucreries et mithai indiennes au food court de Coeur de Ville, Flacq, ouvert tous les jours à partir de 10h30.",
-    "hours": "Tous les jours à partir de 10h30"
+    "hours": "Tous les jours à partir de 10h30",
+    "filters": [
+      "indienne"
+    ]
   },
   {
     "id": "china-palace",
@@ -28260,7 +28367,11 @@
     ],
     "zone": "nord",
     "description": "Cuisine chinoise et mauricienne à Trou aux Biches (canard laqué, plats sizzling, fruits de mer), ouvert tous les jours de 10h à 22h30.",
-    "hours": "Tous les jours 10h-22h30"
+    "hours": "Tous les jours 10h-22h30",
+    "filters": [
+      "asiatique",
+      "mauricienne"
+    ]
   },
   {
     "id": "panarottis-ebene",
@@ -28277,7 +28388,10 @@
     ],
     "zone": "centre",
     "description": "Pizzas et pâtes italiennes à Quatre Bornes/Ébène.",
-    "hours": "Lun-Sam 10h30-21h"
+    "hours": "Lun-Sam 10h30-21h",
+    "filters": [
+      "italien"
+    ]
   },
   {
     "id": "florensuc-patisserie",
@@ -28471,7 +28585,10 @@
     ],
     "zone": "nord",
     "description": "Pizzeria italienne à La Croisette, Grand Baie (pizzas, pâtes, pizza d'un mètre).",
-    "hours": "Lun-Sam 11h-21h30"
+    "hours": "Lun-Sam 11h-21h30",
+    "filters": [
+      "italien"
+    ]
   },
   {
     "id": "tambourine",
@@ -28511,7 +28628,11 @@
     ],
     "zone": "nord",
     "description": "Grill et cuisine locale/internationale (viandes grillées, fruits de mer) sur la côte nord-ouest.",
-    "hours": "Mar 13h-21h30, Mer 17h30-21h30 (fermé Jeu-Lun)"
+    "hours": "Mar 13h-21h30, Mer 17h30-21h30 (fermé Jeu-Lun)",
+    "filters": [
+      "grillades",
+      "fruits-de-mer"
+    ]
   },
   {
     "id": "travelling-teachers-grand-baie",
@@ -34381,7 +34502,10 @@
     ],
     "zone": "ouest",
     "description": "Pizzas napolitaines au four à bois et cuisine italienne à Flic en Flac (Coastal Road).",
-    "hours": "Ven-Lun 7h-14h, tous les jours sauf jeudi 18h-22h"
+    "hours": "Ven-Lun 7h-14h, tous les jours sauf jeudi 18h-22h",
+    "filters": [
+      "italien"
+    ]
   },
   {
     "id": "parasol-chemin-grenier",
@@ -34397,7 +34521,10 @@
     ],
     "zone": "sud",
     "description": "Fast-food/grill à Chemin Grenier (shawarma, poulet et agneau grillés), sur place ou à emporter.",
-    "hours": "Dim-Jeu 10h-21h30, Ven-Sam 10h-22h30"
+    "hours": "Dim-Jeu 10h-21h30, Ven-Sam 10h-22h30",
+    "filters": [
+      "grillades"
+    ]
   },
   {
     "id": "investec-bank-mauritius-limited",

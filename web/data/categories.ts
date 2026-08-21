@@ -116,6 +116,22 @@ export const FILTER_GROUPS: FilterGroup[] = [
     ],
   },
   {
+    key: "cuisine-livraison",
+    label: "Type de cuisine",
+    appliesTo: ["livraisons"],
+    options: [
+      { key: "mauricienne", label: "Mauricienne & créole", emoji: "🌶️" },
+      { key: "fruits-de-mer", label: "Fruits de mer", emoji: "🦐" },
+      { key: "indienne", label: "Indienne", emoji: "🍛" },
+      { key: "asiatique", label: "Chinoise & asiatique", emoji: "🥢" },
+      { key: "sushis", label: "Sushis", emoji: "🍣" },
+      { key: "europeenne", label: "Européenne & française", emoji: "🥖" },
+      { key: "italien", label: "Italien & pizza", emoji: "🍕" },
+      { key: "grillades", label: "Viandes & grillades", emoji: "🥩" },
+      { key: "vegetarien", label: "Végétarien", emoji: "🥗" },
+    ],
+  },
+  {
     key: "ambiance-public",
     label: "Ambiance / public",
     appliesTo: ["restaurants"],
