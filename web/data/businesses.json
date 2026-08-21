@@ -29115,6 +29115,8 @@
     "badge": "selection",
     "zone": "sud",
     "description": "Cafe convivial de Pointe d Esny/Blue Bay (Main Coastal Road), reputee pour son pain au levain maison. Petit-dejeuner (crepes, mango bowl, plats faits maison), laits vegetaux disponibles.",
+    "photoUrl": "/photos/naked-foods.jpg",
+    "koteMorisComment": "Petit coin de verdure, niché dans un jardin en bord de route (calme) au cœur du cadre luxuriant de la Pointe d'Esny. Service un peu approximatif, mais des produits ultra frais et très bien travaillés, sur la base du pain au levain maison. Bruschettas du jour ou à composer soi-même avec des fruits et légumes frais et goûteux, très belle présentation. À découvrir aussi : les jus à base d'épices et de légumes du jardin, et les crêpes sucrées (cannelle, sucre complet, miel...).",
     "filters": [
       "cafes-terrasses"
     ]
@@ -49406,10 +49408,11 @@
     ],
     "zone": "nord",
     "hours": "7j/7 de 7h30 à 17h",
-    "description": "Café-restaurant ouvert 7j/7, cuisine saine et fraîche : bols veggie, smoothie bowls, œufs Bénédicte, brunch du dimanche.",
+    "description": "Café-restaurant ouvert 7j/7, cuisine saine et fraîche : bols veggie, smoothie bowls, œufs Bénédicte, brunch du dimanche. Kid's friendly : grand jardin où les enfants peuvent jouer (balançoires, tir à l'arc, fléchettes) pendant que les parents profitent du repas.",
     "filters": [
       "vegetarien",
-      "cafes-terrasses"
+      "cafes-terrasses",
+      "kids-friendly"
     ]
   },
   {
