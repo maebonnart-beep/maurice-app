@@ -153,6 +153,26 @@ export const SELECTIONS: Selection[] = [
 
   // --- Envies ---
   {
+    id: "la-france-me-manque",
+    emoji: "🥐",
+    title: "La France me manque",
+    tagline: "Épiceries, boulangeries et bonnes tables pour retrouver un goût de chez nous",
+    group: "envies",
+    icon: "Basket",
+    photoUrl: "/photos/la-france-me-manque.jpg",
+    photoCredit: "Pexels",
+    businessIds: [
+      "lepicerie-grand-baie",
+      "les-halles-francaises-grand-baie",
+      "le-fournil-grand-baie",
+      "maison-escoffier",
+      "charcuterie-isle-de-france",
+      "l-ardoise-brasserie",
+      "le-whatever-tamarin",
+      "la-kaz-a-pain-riviere-noire",
+    ],
+  },
+  {
     id: "couchers-de-soleil",
     emoji: "🌅",
     title: "Les plus beaux couchers de soleil",

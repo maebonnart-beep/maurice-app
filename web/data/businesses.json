@@ -5854,7 +5854,7 @@
     "lat": -20.0333,
     "lng": 57.5497,
     "themes": [
-      "cafes-bars-glaciers"
+      "restaurants"
     ],
     "priceRange": "bon-marche",
     "badge": "coup-de-coeur",
@@ -5863,8 +5863,7 @@
     "zone": "nord",
     "description": "Institution locale de Solitude (Triolet) spécialisée dans le roti et la farata, très fréquentée et bien notée par les habitués du coin.",
     "filters": [
-      "mauricienne",
-      "snacks-plage"
+      "mauricienne"
     ]
   },
   {
@@ -11546,12 +11545,13 @@
     "lat": -20.2666171,
     "lng": 57.4937829,
     "themes": [
-      "restaurants"
+      "commerces-alimentaires",
+      "vins-spiritueux"
     ],
     "zone": "centre",
-    "description": "Micro-brasserie artisanale de Quatre Bornes (groupe Oxenham, depuis 2019), fondée par les cousins Fabien et Cedric Oxenham. Gamme de bières brassées en petites cuves (lager, weiss, pale ale, IPA).",
+    "description": "Brasserie artisanale de Quatre Bornes (groupe Oxenham, depuis 2019) où l'on vient surtout acheter ses bières à la bouteille. Propose aussi des masterclass de dégustation et d'initiation au brassage, ainsi que des dîners thématiques autour de ses bières (lager, weiss, pale ale, IPA).",
     "filters": [
-      "frequente-locaux"
+      "epiceries-specialisees"
     ]
   },
   {
@@ -51207,5 +51207,18 @@
     "filters": [
       "italien"
     ]
+  },
+  {
+    "id": "cabinet-antoine-menguy-petit-raffray",
+    "name": "Antoine Menguy - Médecine Traditionnelle Chinoise",
+    "category": "sante-bien-etre",
+    "address": "Petit Raffray (à 10 min de Grand Baie)",
+    "phone": "+230 5943 7383",
+    "website": "https://www.antoinemenguy.com/",
+    "themes": [
+      "yoga-bien-etre"
+    ],
+    "zone": "nord",
+    "description": "Cabinet d'Antoine Menguy, acupuncteur et masseur-kinésithérapeute diplômé d'État, praticien en médecine traditionnelle chinoise : acupuncture, ventouses, moxibustion et thérapie manuelle pour troubles digestifs, stress, insomnie, migraines, douleurs chroniques et autres déséquilibres énergétiques. Sur rendez-vous, lun-ven 8h-12h / 13h30-17h30."
   }
 ]
