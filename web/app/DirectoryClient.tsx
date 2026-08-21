@@ -1156,7 +1156,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                         label={t.label}
                         count={t.count}
                         locked={PREMIUM_RUBRIQUE_KEYS.has(t.key)}
-                        onClick={() => toggleTheme(t.key)}
+                        onClick={() => openRubrique(t.key)}
                       />
                     ))}
                   </div>
