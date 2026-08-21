@@ -104,6 +104,15 @@
   box-shadow: var(--elev-pop);
 }
 
+/* Carrousel photo de la fiche détail : scroll horizontal sans barre visible. */
+@utility no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
 body {
   background: var(--bg);
   color: var(--ink);

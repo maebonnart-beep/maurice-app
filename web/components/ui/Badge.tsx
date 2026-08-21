@@ -21,22 +21,15 @@ export function CategoryBadge({ category }: { category: CategoryKey }) {
   );
 }
 
-export type SpecialBadgeVariant = "partenaire" | "coup-de-coeur" | "selection" | "kids-friendly" | "agence";
+export type SpecialBadgeVariant = "partenaire" | "selection" | "kids-friendly" | "agence";
 
-/** Badges de mise en avant (Partenaire, Coup de cœur, Sélection, Agence organisatrice). */
+/** Badges de mise en avant (Partenaire, Sélection, Agence organisatrice). */
 export function SpecialBadge({ variant }: { variant: SpecialBadgeVariant }) {
   if (variant === "partenaire") {
     return (
       <span className="self-start inline-flex items-center gap-1 px-2.5 py-1 rounded-pill text-on-accent text-xs font-bold bg-accent">
         ⭐ Partenaire
       </span>
-    );
-  }
-  if (variant === "coup-de-coeur") {
-    return (
-      // La vignette illustrée porte déjà son texte : on l'affiche seule, sans libellé.
-      // eslint-disable-next-line @next/next/no-img-element
-      <img src="/badge-coup-de-coeur.png" alt="Coup de cœur" title="Coup de cœur" className="self-start h-12 w-12 shrink-0" />
     );
   }
   if (variant === "selection") {
@@ -64,10 +57,9 @@ export function SpecialBadge({ variant }: { variant: SpecialBadgeVariant }) {
 
 /** Couleur d'accent latéral d'une fiche selon son badge / statut d'agence. */
 export function accentColorFor(
-  badge?: "partenaire" | "coup-de-coeur" | "selection",
+  badge?: "partenaire" | "selection",
   isAgency?: boolean
 ): string | undefined {
-  if (badge === "coup-de-coeur") return COUP_DE_COEUR_COLOR;
   if (badge === "selection") return SELECTION_COLOR;
   if (badge === "partenaire") return "var(--accent)";
   if (isAgency) return AGENCY_COLOR;

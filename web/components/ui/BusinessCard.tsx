@@ -14,9 +14,8 @@ const FILTER_OPTION_MAP = Object.fromEntries(
 );
 
 /** Icône compacte des badges de mise en avant, affichée dès la fiche liste. */
-const ROW_BADGE_SRC: Record<"selection" | "coup-de-coeur", string> = {
+const ROW_BADGE_SRC: Record<"selection", string> = {
   selection: "/badge-selection.png",
-  "coup-de-coeur": "/badge-coup-de-coeur.png",
 };
 
 const DIFFICULTY_LABELS: Record<string, string> = {
@@ -115,7 +114,7 @@ export function BusinessCard({
     >
       <div className="flex-1 min-w-0">
         <div className="flex items-center gap-1.5 flex-wrap">
-          {(b.badge === "selection" || b.badge === "coup-de-coeur") && (
+          {b.badge === "selection" && (
             // eslint-disable-next-line @next/next/no-img-element
             <img src={ROW_BADGE_SRC[b.badge]} alt="" aria-hidden className="w-5 h-5 shrink-0" />
           )}

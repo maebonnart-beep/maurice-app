@@ -18,7 +18,6 @@ const COMMON_FIELDS: { key: keyof Business; label: string }[] = [
 
 const BADGE_OPTIONS = [
   { value: "", label: "Aucun" },
-  { value: "coup-de-coeur", label: "Coup de cœur" },
   { value: "selection", label: "Sélection" },
   { value: "partenaire", label: "Partenaire" },
 ];

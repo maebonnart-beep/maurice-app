@@ -43,7 +43,7 @@ const SAMPLES: Business[] = [
     themes: ["restaurants"],
     priceRange: "se-faire-plaisir",
     hours: "Lun-Sam 11h30-22h",
-    badge: "coup-de-coeur",
+    badge: "selection",
     photoUrl:
       "data:image/svg+xml;utf8," +
       encodeURIComponent(
@@ -182,7 +182,6 @@ export default function DesignSystemPage() {
         </Row>
         <Row label="Mise en avant">
           <SpecialBadge variant="partenaire" />
-          <SpecialBadge variant="coup-de-coeur" />
           <SpecialBadge variant="selection" />
           <SpecialBadge variant="agence" />
         </Row>

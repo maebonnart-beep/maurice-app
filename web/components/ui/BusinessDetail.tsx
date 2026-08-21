@@ -95,6 +95,8 @@ export function BusinessDetail({
   const facts = metaFacts(b);
   const price = b.priceRange ? PRICE_RANGES.find((p) => p.key === b.priceRange) : undefined;
   const [descExpanded, setDescExpanded] = useState(false);
+  const photos = b.photoUrls?.length ? b.photoUrls : b.photoUrl ? [b.photoUrl] : [];
+  const [photoIndex, setPhotoIndex] = useState(0);
   const firstTheme = b.themes?.find((t) => !hiddenKeys?.has(t) && t !== "kids-friendly");
   const subtitle = firstTheme ? SUBCATEGORIES[b.category]?.find((t) => t.key === firstTheme)?.label : undefined;
   const CategoryIcon = iconForKey(b.category);
@@ -117,12 +119,26 @@ export function BusinessDetail({
       <div className="absolute inset-0" onClick={onClose} aria-hidden="true" />
       <div className="relative mt-auto lg:m-auto w-full lg:max-w-[720px] max-h-[92vh] lg:max-h-[88vh] bg-surface rounded-t-[20px] lg:rounded-card shadow-pop flex flex-col overflow-hidden">
         <div className="overflow-y-auto">
-          {/* Photo plein cadre si disponible (rare, ~1% des fiches) ; sinon bandeau
-              compact avec icône illustrée, pour laisser plus de place au texte en dessous. */}
-          {b.photoUrl ? (
-            <div className="relative w-full h-[220px] lg:h-[300px] bg-surface-2 shrink-0">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={b.photoUrl} alt={displayName(b.name)} className="w-full h-full object-cover" />
+          {/* Photo(s) plein cadre si disponibles (rare, ~1% des fiches) ; sinon bandeau
+              compact avec icône illustrée, pour laisser plus de place au texte en dessous.
+              object-contain (plutôt que cover) pour ne pas rogner les photos prises sur le
+              terrain ; plusieurs photos → carrousel scroll-snap avec pastilles. */}
+          {photos.length > 0 ? (
+            <div className="relative w-full h-[260px] lg:h-[340px] bg-surface-2 shrink-0">
+              <div
+                className="flex h-full overflow-x-auto snap-x snap-mandatory no-scrollbar"
+                onScroll={(e) => {
+                  const el = e.currentTarget;
+                  if (el.clientWidth > 0) setPhotoIndex(Math.round(el.scrollLeft / el.clientWidth));
+                }}
+              >
+                {photos.map((src, i) => (
+                  <div key={i} className="w-full h-full shrink-0 snap-center">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img src={src} alt={displayName(b.name)} className="w-full h-full object-contain" />
+                  </div>
+                ))}
+              </div>
               <button
                 onClick={onClose}
                 aria-label="Retour"
@@ -136,6 +152,18 @@ export function BusinessDetail({
                 className="absolute top-3 right-3 gap-2"
                 chipClassName="inline-flex items-center justify-center w-9 h-9 rounded-full bg-black/45 text-white backdrop-blur-sm"
               />
+              {photos.length > 1 && (
+                <div className="absolute bottom-2.5 left-1/2 -translate-x-1/2 flex items-center gap-1.5" aria-hidden>
+                  {photos.map((_, i) => (
+                    <span
+                      key={i}
+                      className={`w-1.5 h-1.5 rounded-full transition-colors ${
+                        i === photoIndex ? "bg-white" : "bg-white/40"
+                      }`}
+                    />
+                  ))}
+                </div>
+              )}
               {b.photoCredit && (
                 <span className="absolute bottom-1 right-1 px-1.5 py-0.5 rounded text-[9px] leading-none text-white/90 bg-black/40">
                   {b.photoCredit}

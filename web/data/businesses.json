@@ -996,7 +996,7 @@
       "restaurants"
     ],
     "hours": "Mar-Sam 12h-15h, Mer-Sam 19h-22h, fermé dim et lun",
-    "badge": "coup-de-coeur",
+    "badge": "selection",
     "promoText": "Cadre très plaisant sous les arbres, cuisine ouverte au feu de bois. Très bons plats.",
     "zone": "nord",
     "description": "Antenne \"Le Jardin\" de la chaîne Le Poivrier à Grand Baie, installée dans un jardin extérieur au décor exotique, cuisine créole du quotidien.",
@@ -1978,7 +1978,7 @@
       "boucheries-poissons",
       "exotiques-epices"
     ],
-    "badge": "coup-de-coeur",
+    "badge": "selection",
     "promoText": "Viande très correcte, livraison à J+1 et échanges WhatsApp faciles.",
     "zone": "nord",
     "description": "Boucherie familiale haut de gamme de Grand Baie (Lifestyle Boulevard), viandes fraîches locales et importées (bœuf, poulet, porc), biltong sud-africain, snacks et plats faits maison. Vente en boutique, appli et livraison à domicile.",
@@ -3456,6 +3456,7 @@
     "zone": "sud",
     "badge": "selection",
     "photoUrl": "/photos/ile-aux-aigrettes.jpg",
+    "photoUrls": ["/photos/ile-aux-aigrettes.jpg","/photos/ile-aux-aigrettes-2.jpg","/photos/ile-aux-aigrettes-3.jpg"],
     "description": "Îlot-sanctuaire accessible en visite guidée par bateau (10 min de traversée depuis Pointe Jérôme), où évoluent en liberté tortues géantes d'Aldabra, geckos ornés et pigeons roses.",
     "entryPrice": "≈ 1100 Rs/pers (traversée comprise), tarif résident ≈ 800 Rs/adulte et 400 Rs/enfant",
     "koteMorisComment": "Excursion tout simplement passionnante avec l'ONG Wildlife Mauritius : 1h30 d'explications limpides sur la faune et la flore de l'île, les conséquences des extinctions passées et les actions en cours pour restaurer l'écosystème. Visite en petits groupes pour ne pas perturber les animaux en liberté, avec une guide exceptionnelle. Très accessible aux enfants — c'est même parfait pour eux. À prévoir : anti-moustique (assez humide et chaud, avec environ 3°C de plus que sur l'île principale).",
@@ -3483,6 +3484,7 @@
     "zone": "sud",
     "badge": "selection",
     "photoUrl": "/photos/ile-aux-aigrettes.jpg",
+    "photoUrls": ["/photos/ile-aux-aigrettes.jpg","/photos/ile-aux-aigrettes-2.jpg","/photos/ile-aux-aigrettes-3.jpg"],
     "description": "Îlot-sanctuaire accessible en visite guidée par bateau (10 min de traversée depuis Pointe Jérôme), où évoluent en liberté tortues géantes d'Aldabra, geckos ornés et pigeons roses.",
     "entryPrice": "≈ 1100 Rs/pers (traversée comprise), tarif résident ≈ 800 Rs/adulte et 400 Rs/enfant",
     "koteMorisComment": "Excursion tout simplement passionnante avec l'ONG Wildlife Mauritius : 1h30 d'explications limpides sur la faune et la flore de l'île, les conséquences des extinctions passées et les actions en cours pour restaurer l'écosystème. Visite en petits groupes pour ne pas perturber les animaux en liberté, avec une guide exceptionnelle. Très accessible aux enfants — c'est même parfait pour eux. À prévoir : anti-moustique (assez humide et chaud, avec environ 3°C de plus que sur l'île principale)."
@@ -3797,7 +3799,7 @@
     ],
     "hours": "Fermé lun, Mar-Dim 9h-22h",
     "priceRange": "prix-moyen",
-    "badge": "coup-de-coeur",
+    "badge": "selection",
     "promoText": "Produits frais, assiettes copieuses, service impeccable — superbe cadre en bord de lagon.",
     "zone": "est",
     "description": "Petite adresse reconnaissable à sa façade vert vif sur la route côtière de Trou d'Eau Douce, proposant une cuisine mauricienne et asiatique à base de produits de la mer (soupe de crabe, salade d'ourite, curry de poulet aux crevettes), avec options végétariennes et halal.",
@@ -3839,18 +3841,19 @@
     "lat": -20.4081,
     "lng": 57.7,
     "themes": [
-      "cafes-bars-glaciers"
+      "restaurants"
     ],
     "hours": "Tous les jours 10h-23h",
     "priceRange": "prix-moyen",
     "badge": "selection",
     "zone": "sud",
     "photoUrl": "/photos/le-bazilic-mahebourg.jpg",
+    "photoUrls": ["/photos/le-bazilic-mahebourg.jpg","/photos/le-bazilic-mahebourg-2.jpg"],
     "description": "Situé rue Maurice à Mahébourg, ce restaurant au décor industriel marie saveurs mauriciennes et touches thaïlandaises, entre produits de la mer frais et plats traditionnels revisités.",
     "koteMorisComment": "Accueil et service aux petits soins, dans un cadre intérieur plutôt cosy. Assiettes généreuses et goûteuses.",
     "filters": [
       "mauricienne",
-      "bars"
+      "asiatique"
     ]
   },
   {
@@ -5217,6 +5220,7 @@
     "address": "Mapou (Nord)",
     "phone": "+230 266 9533",
     "website": "",
+    "photoUrl": "/photos/chateau-de-labourdonnais.jpg",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Chateau%20de%20Labourdonnais%20Mapou%20Mauritius",
     "lat": -20.1103,
     "lng": 57.5489,
@@ -5229,9 +5233,10 @@
     "hours": "Tous les jours 9h-17h (dernière admission 16h)",
     "priceRange": "prix-moyen",
     "zone": "nord",
-    "badge": "coup-de-coeur",
+    "badge": "selection",
     "promoText": "Château colonial du 19e siècle entouré d'un verger, visite guidée de 45 min avec dégustation de jus et rhum. (à partir de 700 Rs/pers.)",
-    "description": "Manoir colonial de 1856 entouré d'un verger de 45 hectares réunissant plus de 30 familles botaniques, dont des manguiers centenaires et arbres à épices. La Rhumerie des Mascareignes, sur le domaine, produit un rhum agricole ; le billet inclut une dégustation de rhums et de pâtes de fruits. Coup de cœur : visite du château et des jardins vraiment extra.",
+    "description": "Manoir colonial de 1856 entouré d'un verger de 45 hectares réunissant plus de 30 familles botaniques, dont des manguiers centenaires et arbres à épices. La Rhumerie des Mascareignes, sur le domaine, produit un rhum agricole ; le billet inclut une dégustation de rhums et de pâtes de fruits. Plusieurs formules de billets existent (château, jardins, parc animalier...), avec des tarifs résidents à vérifier directement sur le site du domaine.",
+    "koteMorisComment": "Un lieu majestueux, extrêmement bien préservé. Le parcours de la visite guidée est fluide : on découvre les pièces du château, le sous-sol, puis le parc, avec des explications passionnantes sur la famille Labourdonnais, les débuts du domaine et l'histoire de la canne à sucre. Un site globalement remarquable.",
     "entryPrice": "Rs 150 (parc animalier)",
     "animalsVisible": "Volière et enclos avec paons, tortues et autres animaux du domaine",
     "filters": [
@@ -5865,7 +5870,7 @@
       "restaurants"
     ],
     "priceRange": "bon-marche",
-    "badge": "coup-de-coeur",
+    "badge": "selection",
     "promoText": "Très bons roti à prix mini (25 Rs) — un peu d’attente aux heures de pointe.",
     "hours": "Lun-Sam 9h30-14h30, fermé dim",
     "zone": "nord",
@@ -7982,7 +7987,7 @@
       "cafes-bars-glaciers"
     ],
     "zone": "sud",
-    "badge": "coup-de-coeur",
+    "badge": "selection",
     "description": "Bar perché sur les hauteurs du domaine de Lakaz Chamarel, à Piton Canot, avec une vue panoramique sur les terres colorées de Chamarel jusqu'à la mer. Réputé pour ses couchers de soleil \"magiques\", ses cocktails travaillés (dont le Chamarel Passion Mojito) et son ambiance intimiste ; DJ live le samedi soir. Ouvert tous les jours de 16h30 à 19h30, accessible aux résidents comme aux visiteurs sur réservation.",
     "filters": [
       "plus-belles-vues",
@@ -8901,7 +8906,7 @@
     "themes": [
       "restaurants"
     ],
-    "badge": "coup-de-coeur",
+    "badge": "selection",
     "promoText": "Testé par nous : terrasse très agréable au cœur du parc de l'Aventure du Sucre, produits frais et bien cuisinés, jolie présentation, superbes boissons fraîches aux herbes du jardin.",
     "zone": "nord",
     "description": "Installé dans les jardins de l'ancienne usine sucrière de Beau Plan, à côté du site de l'Aventure du Sucre. La carte met en avant les racines créoles de l'île dans un décor industriel et patrimonial.",
@@ -10303,6 +10308,7 @@
     "badge": "selection",
     "zone": "sud",
     "photoUrl": "/photos/ferney-falaise-rouge-restaurant.jpg",
+    "photoUrls": ["/photos/ferney-falaise-rouge-restaurant.jpg","/photos/ferney-falaise-rouge-restaurant-2.jpg"],
     "description": "Restaurant perché en léger surplomb de la côte à Vieux Grand Port, avec vue remarquable sur la baie du Grand Port et la Montagne du Lion, entre mer et forêt native. Cuisine locale et de saison à base de produits de fermes voisines, sur un site chargé d'histoire.",
     "koteMorisComment": "Cadre splendide entre mer et montagne, et facile d'accès. Petite déception côté cuisine, un peu plus classique que ne le laisse espérer le cadre : les produits sont frais et locaux (on le sent bien), mais l'ensemble aurait mérité un peu plus de travail sur la présentation et les épices. Les desserts, en revanche, sont une vraie réussite (glace au tamarin, bavaroise à l'hibiscus).",
     "filters": [
@@ -12087,7 +12093,7 @@
     "themes": [
       "parcs-activites-famille"
     ],
-    "badge": "coup-de-coeur",
+    "badge": "selection",
     "description": "Jolie parenthèse faune-flore au nord de l'île, modeste en taille mais charmante.",
     "animalsVisible": "Chevaux, dromadaire, oiseaux, cochons d'inde, sangliers",
     "entryPrice": "Gratuit",
@@ -12284,7 +12290,7 @@
     "themes": [
       "parcs-activites-famille"
     ],
-    "badge": "coup-de-coeur",
+    "badge": "selection",
     "promoText": "Superbe parc, organisation bien rodée. Idéal en famille.",
     "description": "Superbe site naturel où l'on se balade sur un parcours fléché jalonné de belles cascades et bassins (accessible avec des enfants), ponctué de points de vue sur la vallée et le lagon. Le sentier longe aussi les couleurs de la terre mauricienne (23 variations) et un enclos animalier (tortues, paons, basse-cour en semi-liberté). De nombreuses activités en supplément : tyroliennes (dont une de plus de 1,5 km), pêche, balades à cheval, quad, luge d'été, buggies…",
     "duration": "~5h de visite",
@@ -14072,7 +14078,7 @@
     "themes": [
       "restaurants"
     ],
-    "badge": "coup-de-coeur",
+    "badge": "selection",
     "promoText": "Excellentes crêpes, produits locaux et régionaux. Super accueil, service aux petits soins.",
     "zone": "nord",
     "description": "Crêperie bretonne authentique installée dans le complexe Dodo La Lodge à Grand Baie, tenue par un couple français attaché aux recettes traditionnelles de galettes de sarrasin et crêpes sucrées. Avis très positifs, produits de qualité, service chaleureux, face à la plage.",
@@ -14894,7 +14900,7 @@
     ],
     "zone": "nord",
     "hours": "Lun-Jeu 7h45-17h30, Ven-Sam 7h45-19h30, Dim 8h-13h",
-    "badge": "coup-de-coeur",
+    "badge": "selection",
     "photoUrl": "/photos/maison-des-crepes.jpg",
     "description": "Petite enseigne artisanale prisée à l'angle du Grand Bazaar, notée 5/5 par ses visiteurs. Crêpes et gaufres maison, sucrées et salées, avec options sans gluten et vegan, ainsi qu'un large choix de boissons maison (smoothies, infusions glacées, milkshakes). Le tout préparé avec grand soin ; avis unanimes sur la gentillesse du personnel, la personnalisation des commandes et un service aux petits soins.",
     "filters": [
@@ -14920,7 +14926,7 @@
     "zone": "nord",
     "hours": "Ouvert le midi uniquement",
     "priceRange": "se-faire-plaisir",
-    "badge": "coup-de-coeur",
+    "badge": "selection",
     "photoUrl": "/photos/la-table-du-chateau.jpg",
     "description": "Restaurant du Domaine de Labourdonnais, tout juste réouvert (12 août 2026) après rénovation. Cadre sublime, décoration épurée et modernisée, ouverte sur les jardins du château. Cuisine soignée, produits très frais (tartare de bœuf, thon mi-cuit) — un vrai coup de cœur. Ouvert le midi uniquement.",
     "filters": [
@@ -15587,7 +15593,7 @@
       "taxis-vtc-location"
     ],
     "zone": "centre",
-    "badge": "coup-de-coeur",
+    "badge": "selection",
     "description": "Contacts Anshika et Shawan : accompagnement sur mesure selon vos besoins, avec une équipe chaleureuse et à l'écoute.",
     "filters": [
       "taxis-transferts"
@@ -28621,7 +28627,7 @@
     "zone": "nord",
     "hours": "Lun-Sam 11h-22h, Dim soir buffet à volonté",
     "priceRange": "se-faire-plaisir",
-    "badge": "coup-de-coeur",
+    "badge": "selection",
     "description": "Sushi Cabaret dans une ambiance feutrée aux murs rouges et bois poli, bossa nova en fond sonore. Cuisine japonaise créative et généreuse (sushis, truffe, foie gras, tempuras), buffet à volonté le dimanche soir. Note de 4,6/5 sur 127 avis Google (4,8/5 sur Tripadvisor) — clients unanimes sur la fraîcheur des produits et l'ambiance, quelques bémols ponctuels sur le service en soirée très fréquentée.",
     "filters": [
       "sushis",
@@ -28773,7 +28779,7 @@
     ],
     "zone": "nord",
     "description": "Accompagnement à l'expatriation à Maurice : visas et permis de résidence, démarches administratives, acquisition immobilière, création d'entreprise et intégration — pour freelances, retraités et familles. Basée à Pereybère.",
-    "badge": "coup-de-coeur",
+    "badge": "selection",
     "filters": [
       "expatriation-visas"
     ]
@@ -29015,7 +29021,7 @@
     ],
     "hours": "Lun-Ven 8h30-17h30, Sam 8h-17h, fermé dim",
     "priceRange": "prix-moyen",
-    "badge": "coup-de-coeur",
+    "badge": "selection",
     "promoText": "Très jolie exploitation, visite commentée de 25 min avec dégustation. (450 Rs/pers.)",
     "zone": "sud",
     "description": "Plantation fondée en 1992 à St Julien d'Hotman, où une visite guidée permet de découvrir la culture de la vanille ainsi que des plants de café, de cacao et diverses épices dans un cadre agricole préservé."
@@ -29035,7 +29041,7 @@
     ],
     "hours": "Mar-Dim 12h-15h & 18h-22h30, fermé lun",
     "priceRange": "se-faire-plaisir",
-    "badge": "coup-de-coeur",
+    "badge": "selection",
     "promoText": "Belles présentations, portions correctes, excellents desserts — haut de gamme mais raisonnable.",
     "zone": "nord",
     "description": "Table de l'hôtel InterContinental Balaclava Fort, Ségala propose une cuisine créole modernisée d'inspiration méditerranéenne (soupes, salades fraîches, grillades de viandes et de poissons), servie en salle ou en terrasse face à l'océan. Cadre élégant, service attentif ; fermé le lundi, dress code smart casual.",
@@ -29058,7 +29064,7 @@
       "cafes-bars-glaciers"
     ],
     "priceRange": "prix-moyen",
-    "badge": "coup-de-coeur",
+    "badge": "selection",
     "promoText": "Cadre et ambiance exceptionnels façon vieux gréement ; cocktails à prix très raisonnable.",
     "zone": "nord",
     "description": "Bar du Maritim Resort & Spa (Turtle Bay, Balaclava), boissons locales/internationales et snacks (dont thé de l'après-midi), inclus en formule all-inclusive. Bonne ambiance en soirée avec piano live selon les avis.",
@@ -29082,7 +29088,7 @@
     "hours": "Lun-Mar & Jeu-Sam 11h-16h, fermé mer et dim",
     "priceRange": "bon-marche",
     "takeaway": true,
-    "badge": "coup-de-coeur",
+    "badge": "selection",
     "promoText": "Mine frit sino-mauricien à moins de 3€ ; service très bien organisé malgré l’affluence du midi.",
     "zone": "centre",
     "description": "Aussi connu sous le nom de Chez Jacques, ce petit établissement de L'Agrément Road à Saint-Pierre sert des nouilles maison (mine bouilli, mine gros pois) depuis les années 1970.",
@@ -29532,6 +29538,7 @@
     "zone": "sud",
     "badge": "selection",
     "photoUrl": "/photos/biscuiterie-rault.jpg",
+    "photoUrls": ["/photos/biscuiterie-rault.jpg","/photos/biscuiterie-rault-2.jpg","/photos/biscuiterie-rault-3.jpg"],
     "promoText": "Biscuiterie artisanale fondée en 1870, visite de la fabrication traditionnelle des biscuits manioc suivie d'une dégustation. (du lundi au vendredi, 9h-15h)",
     "description": "Biscuiterie artisanale près de Mahébourg fondée en 1870, qui fabrique selon une recette traditionnelle inchangée des biscuits de manioc sans gluten en sept parfums, avec visite guidée et dégustation.",
     "koteMorisComment": "Petite visite d'une vingtaine de minutes, avec dégustation, très sympathique et efficace, de cette usine « familiale » et traditionnelle. On traverse les différentes étapes de la production et on goûte des biscuits tout juste sortis de la planche. Dégustation de l'ensemble des biscuits en fin de visite, avec un thé."
@@ -29643,7 +29650,7 @@
     "zone": "nord",
     "description": "Glace artisanale maison à base d'ingrédients locaux, cônes faits maison, options sans sucre et végan. Boule Rs 85, pot 500ml Rs 250.",
     "priceRange": "bon-marche",
-    "badge": "coup-de-coeur",
+    "badge": "selection",
     "filters": [
       "glaciers"
     ]
@@ -29724,7 +29731,7 @@
     "promoText": "Cuisine plutôt méditerranéenne à base de produits frais (poisson selon la pêche du jour). Desserts délicieux à la présentation raffinée et soignée. Cadre très agréable au bord de la piscine.",
     "zone": "nord",
     "description": "Hôtel de bord de mer à Trou aux Biches dont la restauration est ouverte aux non-résidents : cadre calme face à la piscine, idéal pour une pause déjeuner ou pour télétravailler.",
-    "badge": "coup-de-coeur",
+    "badge": "selection",
     "ttvFriendly": true,
     "photoUrl": "/photos/ava-beach.jpg",
     "filters": [
@@ -29821,7 +29828,7 @@
       "tennis-padel",
       "salles-sport-fitness"
     ],
-    "badge": "coup-de-coeur",
+    "badge": "selection",
     "zone": "nord",
     "sportsListed": "Tennis : 2 courts (dur). Infrastructures : piscine, terrain de football, salle de fitness. Réservation possible.",
     "description": "Complexe sportif du Domaine de Labourdonnais (tennis, padel, piscine, terrain de football, salle de fitness). La restauration du Club House est très bonne, dans un cadre magnifique donnant sur les terrains de sport.",
@@ -31092,7 +31099,7 @@
     ],
     "description": "Un site sublime de 3 ha, planté d'arbres de plus de 200 ans, avec un accès direct à la plage. Les 40 chevaux pensionnaires y sont choyés par une équipe très soucieuse de leur bien-être : soins attentifs, entretien rigoureux, et certains évoluent même en semi-liberté dans le grand parc pour leur confort. Activités proposées : élevage de chevaux (le seul de l'île Maurice), pension, et promenades sur la plage (au lever du soleil ou en journée), toujours dans le respect du bien-être animal.",
     "zone": "est",
-    "badge": "coup-de-coeur",
+    "badge": "selection",
     "promoText": "Gros coup de cœur pour ce lieu magique et l'attention portée aux chevaux.",
     "photoUrl": "/photos/legasea-stables.jpg",
     "filters": [
@@ -31332,7 +31339,7 @@
       "sports-nautiques"
     ],
     "zone": "nord",
-    "badge": "coup-de-coeur",
+    "badge": "selection",
     "description": "Sortie guidée en petit groupe (6-8 pers.) avec un guide passionné qui partage sa culture de l'île. Balade en kayak dans les mangroves jusqu'à l'Île d'Ambre, exploration à pied de l'île, goûter de samoussas maison inclus. Paysages sauvages loin des circuits touristiques, super rapport qualité-prix.",
     "entryPrice": "~30€/pers la demi-journée",
     "photoUrl": "/photos/sea-kayak-adventures-1.jpg",
@@ -31398,7 +31405,7 @@
     "themes": [
       "cafes-bars-glaciers"
     ],
-    "badge": "coup-de-coeur",
+    "badge": "selection",
     "description": "Glacier artisanal 100% vegan à l'intérieur du mall Mahogany : une vingtaine de parfums (pitaya-passion, vanille-mangue, amande, avocat-gingembre...), boules très généreuses, possibilité d'acheter au poids.",
     "entryPrice": "Rs 190 la boule (très généreuse)",
     "zone": "nord",
@@ -37599,7 +37606,7 @@
     ],
     "hours": "Mar-Dim",
     "priceRange": "prix-moyen",
-    "badge": "coup-de-coeur",
+    "badge": "selection",
     "description": "Ristorante-pizzeria tenu par Andrea et Maila, une authentique adresse italienne à Trou aux Biches : pizzas au feu de bois, pâtes fraîches et tiramisu maison. Très bien noté par les clients pour son accueil chaleureux et son service rapide.",
     "zone": "nord",
     "filters": [
@@ -37682,7 +37689,7 @@
       "restaurants"
     ],
     "priceRange": "se-faire-plaisir",
-    "badge": "coup-de-coeur",
+    "badge": "selection",
     "description": "Recommandation Maurice+ : cuisine fusion péruvienne, argentine et asiatique autour d'une cuisine ouverte au feu de bois et d'un bar à pisco. Présentation soignée, ceviches et grillades remarqués, ambiance animée avec musique live. Élu meilleur restaurant du nord de l'île par de nombreux avis. Sur réservation, prix élevé mais expérience jugée à la hauteur.",
     "zone": "nord",
     "filters": [
@@ -37704,7 +37711,7 @@
     "themes": [
       "sports-nautiques"
     ],
-    "badge": "coup-de-coeur",
+    "badge": "selection",
     "zone": "nord",
     "description": "Centre de plongée familial dirigé par Vellin Bhurtun, Master Instructor PADI avec plus de 30 ans d'expérience, à l'écart des grandes structures touristiques. Sorties limitées (jamais plus de 6 plongeurs), baptêmes accessibles aux enfants dès 7 ans, prise en charge parfaite et personnalisée dans une ambiance chaleureuse.",
     "filters": [
@@ -37726,7 +37733,7 @@
       "culture-patrimoine",
       "activites-enfants-famille"
     ],
-    "badge": "coup-de-coeur",
+    "badge": "selection",
     "zone": "sud",
     "hours": "Lun-Sam 9h30-10h30 / 11h-12h",
     "entryPrice": "Rs 1500 par visiteur / Rs 400 par enfant (6-12 ans) / gratuit pour les 0-5 ans",
@@ -37743,7 +37750,7 @@
       "activites-enfants-famille",
       "culture-patrimoine"
     ],
-    "badge": "coup-de-coeur",
+    "badge": "selection",
     "zone": "centre",
     "entryPrice": "Environ 40-50€ / pers.",
     "description": "Balade guidée à travers Port Louis pour découvrir la ville culinairement et culturellement : marché central, ruelles animées et dégustations de street food mauricienne (dholl puri, samoussas, alouda...). Idéal en famille."
@@ -37758,7 +37765,7 @@
     "themes": [
       "souvenirs-cadeaux"
     ],
-    "badge": "coup-de-coeur",
+    "badge": "selection",
     "zone": "centre",
     "description": "Sculpteur sur bois installé au Caudan Waterfront, connu pour ses œuvres façonnées à partir de bois flotté. Atelier découverte possible pour les enfants."
   },
@@ -37774,7 +37781,7 @@
     "themes": [
       "culture-patrimoine"
     ],
-    "badge": "coup-de-coeur",
+    "badge": "selection",
     "zone": "sud",
     "description": "Maison coloniale en bois centenaire entièrement restaurée en 2022, aujourd'hui transformée en pavillon d'accueil de la Vallée de Ferney. Point de départ des sentiers de randonnée de la réserve, où passé colonial et nature se mêlent le temps d'une visite."
   },
@@ -37788,7 +37795,7 @@
     "themes": [
       "excursions-sorties"
     ],
-    "badge": "coup-de-coeur",
+    "badge": "selection",
     "zone": "sud",
     "description": "Excursion en bateau à taille humaine dans le sud-est : baignade à la cascade de la Grande Rivière Sud-Est (accessible uniquement par bateau), snorkeling, observation de dauphins et repas créole convivial. Les avis saluent un accueil chaleureux, un capitaine attentif et une sortie loin de la foule."
   },
@@ -38091,7 +38098,7 @@
     "themes": [
       "restaurants"
     ],
-    "badge": "coup-de-coeur",
+    "badge": "selection",
     "zone": "nord",
     "description": "Restaurant du Club House du Labourdonnais Sports Club : cuisine snacking et européenne servie dans une ambiance bar-restaurant conviviale, avec un cadre magnifique donnant sur les terrains de sport (tennis, padel, football). Très bonne restauration, idéal après le sport ou pour un moment détente entre amis.",
     "filters": [
@@ -38748,7 +38755,7 @@
     "priceRange": "prix-moyen",
     "zone": "nord",
     "description": "Bistrot caché au coeur de la pépinière Endemika, ouvert uniquement le midi. Cuisine maison et plats du jour au tableau, terrasse ombragée parmi les palmiers, accueil chaleureux. Note de 4,6/5 sur 118 avis Google — une adresse familiale très appréciée dans le Nord pour son authenticité et son ambiance décontractée.",
-    "badge": "coup-de-coeur",
+    "badge": "selection",
     "filters": [
       "mauricienne"
     ]
@@ -48985,7 +48992,7 @@
     ],
     "hours": "Lun-Ven 8h-18h, Sam 8h-17h, fermé le dimanche",
     "zone": "nord",
-    "badge": "coup-de-coeur",
+    "badge": "selection",
     "description": "Centre commercial atypique aménagé dans d'anciennes serres à anthuriums au cœur du Domaine de Labourdonnais (15 000 m²) : boutiques de créateurs, épicerie fine (La Corbeille), pépinière de fruitiers, restaurant-terrasse, kiosques et espace bien-être, dans un écrin de jardins tropicaux. Coup de cœur : magasins de créateurs magnifiques, cadre exceptionnel."
   },
   {

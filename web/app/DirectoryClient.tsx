@@ -71,7 +71,6 @@ import type { Icon } from "@phosphor-icons/react";
 
 // Badges → facette « Sélection » (coups de cœur & recommandations), toutes rubriques.
 const BADGE_META: { key: string; label: string; emoji: string }[] = [
-  { key: "coup-de-coeur", label: "Coup de cœur", emoji: "💛" },
   { key: "selection", label: "Sélection Koté Moris", emoji: "🏅" },
   { key: "partenaire", label: "Partenaire", emoji: "⭐" },
 ];

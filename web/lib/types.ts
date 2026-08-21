@@ -45,7 +45,7 @@ export type Business = {
   tier?: BusinessTier;
   /** True once a business owner has claimed/verified this fiche. */
   claimed?: boolean;
-  badge?: "partenaire" | "coup-de-coeur" | "selection";
+  badge?: "partenaire" | "selection";
   /** Premium perk: direct WhatsApp CTA. Digits/+ only, e.g. "+230..." */
   whatsapp?: string;
   /** Premium perk: short highlighted promo line. */
@@ -96,10 +96,12 @@ export type Business = {
   golfDesigner?: string;
   /** Zone géographique de l'île. Absent pour les fiches sans localisation physique (apps/plateformes). */
   zone?: "nord" | "sud" | "est" | "ouest" | "centre";
-  /** URL d'une photo libre de droits (Unsplash/Pexels...) illustrant la fiche. */
+  /** URL d'une photo libre de droits (Unsplash/Pexels...) illustrant la fiche. Sert de couverture (carte liste) même quand photoUrls est renseigné. */
   photoUrl?: string;
   /** Crédit/source de la photo, ex: "Photo: Jane Doe / Unsplash". */
   photoCredit?: string;
+  /** Galerie complète (visite terrain) affichée en carrousel sur la fiche détail. Si absent, la fiche détail retombe sur photoUrl seule. */
+  photoUrls?: string[];
   /** Avis perso rédigé après une visite (vécue), affiché distinctement de la description factuelle. */
   koteMorisComment?: string;
 };
