@@ -50182,18 +50182,23 @@
     "id": "la-bovida-curepipe",
     "name": "La Bovida",
     "category": "manger-boire",
-    "address": "Rue Saint Clément, Curepipe",
-    "phone": "+230 5816 0492",
+    "address": "St Clement Street, Curepipe 742CU001",
+    "phone": "+230 674 2010",
     "themes": [
       "commerces-alimentaires",
-      "boucheries-poissons"
+      "boucheries-poissons",
+      "livraisons"
     ],
     "zone": "centre",
     "priceRange": "prix-moyen",
     "description": "Boucherie de Curepipe : bœuf, merguez, brochettes marinées, livraison hebdomadaire dans le nord.",
     "filters": [
       "boucheries"
-    ]
+    ],
+    "hours": "Lun-Jeu 8h-17h30, Ven 8h-12h30 / 14h-17h30, Sam 8h-16h30, fermé dim",
+    "googleMapsUrl": "https://maps.app.goo.gl/bewyUmFH7qSD4a6G9",
+    "lat": -20.321853,
+    "lng": 57.5200352
   },
   {
     "id": "mahogany-cave-beau-plan",
