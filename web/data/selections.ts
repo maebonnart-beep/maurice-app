@@ -109,6 +109,7 @@ export const SELECTIONS: Selection[] = [
       "plage-flic-en-flac",
       "port-louis-central-market",
       "marche-de-quatre-bornes",
+      "just-natural-bois-rouge",
     ],
   },
   {
