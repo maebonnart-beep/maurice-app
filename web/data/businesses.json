@@ -7501,6 +7501,7 @@
       "restaurants"
     ],
     "zone": "ouest",
+    "hours": "Lun-Ven 8h-17h, Sam-Dim 8h-15h30",
     "description": "Café en plein air sous les arbres au sein du \"Vanilla Village\" à Grande Rivière Noire, cartes fraîches et de saison, burgers réputés, cadre familial avec jeux pour enfants.",
     "filters": [
       "vegetarien",
@@ -7875,6 +7876,7 @@
     ],
     "badge": "selection",
     "zone": "sud",
+    "hours": "Tous les jours 9h-16h30",
     "description": "Perché à 260 mètres d'altitude à Chamarel, avec une vue dégagée sur la côte ouest et la presqu'île du Morne. L'ambiance reste familiale, dans un décor aux accents créoles, pour une carte mêlant plats locaux et influences européennes.",
     "filters": [
       "mauricienne"
@@ -7895,6 +7897,7 @@
     ],
     "badge": "selection",
     "zone": "sud",
+    "hours": "Tous les jours 9h-16h",
     "description": "Table d'hôtes familiale de Chamarel, cuisine mauricienne authentique avec fruits et légumes de leur propre potager bio ; bien notée (4,2/5).",
     "filters": [
       "mauricienne",
@@ -7915,6 +7918,7 @@
       "restaurants"
     ],
     "zone": "sud",
+    "hours": "Tous les jours 12h-16h30",
     "description": "Restaurant sur la Route Royale menant à la Terre des 7 Couleurs, à Chamarel. Cuisine locale, curries et grillades ; bien noté (4,4/5).",
     "filters": [
       "mauricienne"
@@ -7954,6 +7958,7 @@
       "restaurants"
     ],
     "zone": "sud",
+    "hours": "Lun-Sam 11h30-15h30, fermé Dim",
     "description": "Domaine élégant de Chamarel associant visite de distillerie, dégustation de rhum et restaurant à influence française, dans un jardin tropical soigné.",
     "filters": [
       "mauricienne"
@@ -8016,6 +8021,7 @@
       "restaurants"
     ],
     "zone": "sud",
+    "hours": "Tous les jours 9h-16h",
     "description": "Restaurant rustique et convivial du Domaine St Denis à Chamarel, présenté comme l'un des restaurants les plus hauts de l'île, avec vue sur les montagnes et, au loin, sur la Montagne du Morne. Cuisine locale généreuse (buffets, burgers, langoustes grillées) ; accueille aussi mariages et événements.",
     "filters": [
       "mauricienne",
@@ -8154,6 +8160,7 @@
       "restaurants"
     ],
     "zone": "ouest",
+    "hours": "Déjeuner 12h-16h, dîner 19h-22h",
     "description": "Restaurant-bar des Chalets Chamarel, à La Gaulette, offrant une vue panoramique sur les forêts de Chamarel, Bel Ombre et l'océan. Cuisine locale et internationale dans un cadre montagnard préservé.",
     "filters": [
       "fruits-de-mer",
