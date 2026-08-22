@@ -24990,6 +24990,7 @@
       "boulangeries-patisseries"
     ],
     "zone": "sud",
+    "hours": "Tous les jours 8h-19h30",
     "description": "Pâtisserie-café de Lady Barkly Street à Souillac : pâtisseries sucrées et salées, tourtes, douceurs indiennes et vrai café. Sur place, à emporter ou en livraison, prix raisonnables pensés pour la clientèle locale. Considérée par beaucoup comme la meilleure pâtisserie du sud de l'île (4,5/5).",
     "filters": [
       "glaciers",
@@ -29620,6 +29621,7 @@
       "cafes-bars-glaciers"
     ],
     "zone": "centre",
+    "hours": "Dim 10h30-17h, Lun-Jeu 10h30-21h, Ven-Sam 10h30-22h",
     "description": "Glace à l'ancienne (1 à 4 parfums), garnitures au choix (confiture, noix de coco râpée). Institution ouverte depuis près d'un siècle, service tardif jusqu'à 23h. Environ Rs 50-75 la glace.",
     "priceRange": "bon-marche",
     "filters": [
@@ -29640,6 +29642,7 @@
       "cafes-bars-glaciers"
     ],
     "zone": "centre",
+    "hours": "Lun-Mar, Jeu, Dim 20h-23h, Ven-Sam 20h-00h, fermé Mer",
     "description": "Gelato artisanal, plus de 20 parfums saisonniers sans colorants ni conservateurs, dont des saveurs locales (jamalak, avocat, goyave chinoise) et une sauce tamarin-piment. Environ Rs 65-75 la boule.",
     "priceRange": "bon-marche",
     "filters": [
@@ -29660,6 +29663,7 @@
       "cafes-bars-glaciers"
     ],
     "zone": "nord",
+    "hours": "Tous les jours 9h-17h",
     "description": "Glace artisanale maison à base d'ingrédients locaux, cônes faits maison, options sans sucre et végan. Boule Rs 85, pot 500ml Rs 250.",
     "priceRange": "bon-marche",
     "badge": "selection",
@@ -34382,6 +34386,7 @@
       "cafes-bars-glaciers"
     ],
     "zone": "ouest",
+    "hours": "Lun-Ven 9h-15h, Sam 18h-23h, fermé Dim",
     "description": "Bistrot français du centre commercial Nautica (Black River), plats de saison (terrines, viandes, poissons, salades), décor rustique-moderne, terrasse extérieure. Très bien noté (4,7/5), fermé le dimanche.",
     "filters": [
       "bars"
