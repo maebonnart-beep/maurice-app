@@ -115,7 +115,7 @@ export const SELECTIONS: Selection[] = [
   {
     id: "pour-un-date",
     emoji: "💕",
-    title: "Pour un date",
+    title: "Pour un moment à deux",
     tagline: "Restaurants et endroits romantiques",
     group: "besoins",
     icon: "Heart",
@@ -443,7 +443,7 @@ export const SELECTIONS: Selection[] = [
   {
     id: "inviter-decouverte",
     emoji: "🍽️",
-    title: "Inviter quelqu'un qui découvre Maurice",
+    title: "Faire découvrir l'île Maurice",
     tagline: "Des lieux particulièrement représentatifs ou impressionnants",
     group: "escapades",
     icon: "Sparkle",
