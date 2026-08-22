@@ -29438,6 +29438,7 @@
     "priceRange": "se-faire-plaisir",
     "badge": "selection",
     "zone": "centre",
+    "hours": "Mer-Sam midi et soir (min. 10 pers., réservation), fermé Lun-Mar et Dim",
     "description": "Souvent mentionné, aux côtés d'Escale Créole et Chez Tino, comme une des adresses de référence pour la cuisine créole traditionnelle à Floréal.",
     "filters": [
       "mauricienne",
@@ -34843,6 +34844,7 @@
       "restaurants"
     ],
     "zone": "ouest",
+    "hours": "Dîner sur réservation 19h et 21h, déjeuner Sam midi",
     "description": "Bar à sushi omakase de 8 places au LUX* Le Morne, jusqu'à 12 services confectionnés devant le client par un chef formé chez Nobu. Tenue correcte exigée.",
     "filters": [
       "sushis",
@@ -36856,6 +36858,7 @@
       "restaurants"
     ],
     "priceRange": "prix-moyen",
+    "hours": "Lun-Jeu 11h30-15h et 17h45-21h30, Ven-Dim 11h30-15h et 17h45-22h",
     "description": "Cuisine fusion sud-indienne dans un cadre moderne, avec biryani et naans en vedette et une carte de cocktails travaillée. La mieux notée de cette sélection.",
     "zone": "centre",
     "filters": [
@@ -36876,6 +36879,7 @@
       "restaurants"
     ],
     "priceRange": "bon-marche",
+    "hours": "Tous les jours 10h-21h30",
     "description": "Adresse entièrement végétarienne réputée pour ses thalis copieux et ses saveurs authentiques du nord de l'Inde, à prix très doux.",
     "zone": "nord",
     "filters": [
@@ -37036,6 +37040,7 @@
       "restaurants"
     ],
     "priceRange": "prix-moyen",
+    "hours": "Mar-Sam 12h-15h et 18h-23h, fermé Dim-Lun",
     "description": "Antenne \"La Rivière\" de la chaîne Le Poivrier à Tamarin, avec des tables surtout en extérieur, une adresse fréquentée par les habitants du coin.",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Le%20Poivrier%20-%20La%20Rivi%C3%A8re%20Tamarin%20Mauritius",
     "filters": [
@@ -37151,6 +37156,7 @@
       "restaurants"
     ],
     "priceRange": "se-faire-plaisir",
+    "hours": "Lun-Ven 12h-22h30, Sam 18h30-22h30, fermé Dim",
     "description": "Table pan-asiatique haut de gamme du Labourdonnais Waterfront Hotel, mêlant influences thaïe, vietnamienne, chinoise et japonaise autour d'un menu dégustation.",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Yuzu%20Labourdonnais%20Waterfront%20Hotel%2C%20Caudan%20Waterfront%2C%20Port-Louis%20Mauritius",
     "filters": [
@@ -37432,6 +37438,7 @@
       "restaurants"
     ],
     "priceRange": "se-faire-plaisir",
+    "hours": "Dîner 19h-22h (jours variables, sur réservation)",
     "description": "Restaurant style brasserie intégré dans les vestiges restaurés de la poudrerie historique de 1743 (Ruines de Balaclava), au sein du domaine du Maritim Resort & Spa, cuisine rustique et grande carte de rhums.",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Anno%201743%20Maritim%20Resort%20%26%20Spa%2C%20Balaclava%20Mauritius",
     "filters": [
@@ -37471,6 +37478,7 @@
       "restaurants"
     ],
     "priceRange": "prix-moyen",
+    "hours": "Tous les jours 11h-22h",
     "description": "Restaurant italien du centre commercial Cascavelle Shopping Village, ouvert depuis 2019, pizzas et pâtes, exploité par le groupe local qui gère aussi Okiya dans le même centre.",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Linguini%20Cascavelle%20Shopping%20Village%2C%20Bambous%20Mauritius",
     "filters": [
@@ -37511,6 +37519,7 @@
       "restaurants"
     ],
     "priceRange": "prix-moyen",
+    "hours": "Mar-Dim 10h-21h, fermé Lun",
     "description": "Restaurant 100% végétarien fusion indo-chinoise à Sodnac, ouvert par la même famille que Namo India, thalis quotidiens, momos, pizzas et pâtes végétariennes.",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Ninety%20Nine%20Bistro%20(99%20Bistrot)%2033%20Avenue%20Hillcrest%2C%20Sodnac%2C%20Quatre%20Bornes%20Mauritius",
     "filters": [
