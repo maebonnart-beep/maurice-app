@@ -9785,6 +9785,7 @@
       "restaurants"
     ],
     "zone": "est",
+    "hours": "Tous les jours 10h-00h",
     "description": "Bar au bord de la piscine du LUX* Belle Mare, avec vue dégagée sur le lagon et le bassin. Cocktails inventifs, mocktails, vins et bières artisanales, idéal pour une pause en fin d'après-midi.",
     "filters": [
       "plus-belles-vues"
@@ -9883,6 +9884,7 @@
       "restaurants"
     ],
     "zone": "est",
+    "hours": "Petit-déj 7h30-10h30, déjeuner 12h30-15h, goûter 15h-17h, dîner 18h30-22h",
     "description": "Restaurant principal de l'Ambre Resort & Spa (Palmar), à côté de la piscine, buffet international vivant (cuisines mauricienne, indienne, chinoise) avec stations \"live cooking\". Un des buffets les mieux notés du resort selon TripAdvisor.",
     "filters": [
       "plus-belles-vues"
@@ -10006,6 +10008,7 @@
       "restaurants"
     ],
     "zone": "est",
+    "hours": "Tous les jours 10h-20h30",
     "description": "Restaurant au point culminant de l'Ile aux Cerfs Golf Club, vue sur le practice et le 18e trou. Cuisine mauricienne et internationale, poissons, viandes grillées, salades ; ambiance décontractée-chic.",
     "filters": [
       "grillades"
@@ -10186,6 +10189,7 @@
       "restaurants"
     ],
     "zone": "sud",
+    "hours": "Tous les jours 12h-15h et 19h-22h",
     "description": "Le 1810, restaurant du Preskil Island Resort avec accès direct à la plage. Tartare de thon rouge, crevettes, cuisine locale et internationale dans un cadre soigné avec vue sur l'océan. Bien noté par les clients de l'hôtel, quelques avis mentionnent des tarifs élevés pour les non-résidents.",
     "filters": [
       "fruits-de-mer"
@@ -10345,6 +10349,7 @@
     "zone": "sud",
     "photoUrl": "/photos/ferney-falaise-rouge-restaurant.jpg",
     "photoUrls": ["/photos/ferney-falaise-rouge-restaurant.jpg","/photos/ferney-falaise-rouge-restaurant-2.jpg"],
+    "hours": "Dim-Jeu 9h30-16h, Ven-Sam 9h30-22h",
     "description": "Restaurant perché en léger surplomb de la côte à Vieux Grand Port, avec vue remarquable sur la baie du Grand Port et la Montagne du Lion, entre mer et forêt native. Cuisine locale et de saison à base de produits de fermes voisines, sur un site chargé d'histoire.",
     "koteMorisComment": "Cadre splendide entre mer et montagne, et facile d'accès. Petite déception côté cuisine, un peu plus classique que ne le laisse espérer le cadre : les produits sont frais et locaux (on le sent bien), mais l'ensemble aurait mérité un peu plus de travail sur la présentation et les épices. Les desserts, en revanche, sont une vraie réussite (glace au tamarin, bavaroise à l'hibiscus).",
     "filters": [
@@ -10541,6 +10546,7 @@
       "restaurants"
     ],
     "zone": "sud",
+    "hours": "9h-15h30 (excursion à la journée)",
     "description": "Île privée accessible en 5 minutes de bateau depuis la jetée de Blue Bay, au sein du parc marin. Buffet généreux préparé en plein air (grillades, salades du jardin) dans un cadre insulaire exceptionnel, ancienne propriété d'un gouverneur britannique des années 1920.",
     "filters": [
       "plus-belles-vues"
@@ -10648,6 +10654,7 @@
       "restaurants"
     ],
     "zone": "centre",
+    "hours": "Déjeuner 11h30-15h, dîner 18h-22h",
     "description": "Restaurant de Moka ouvert fin 2022 dans une bâtisse coloniale de 187 ans. Cuisine ancestrale mauricienne (farata, dal pita, fruits de mer), options végé/vegan/halal.",
     "filters": [
       "mauricienne"
@@ -10667,6 +10674,7 @@
       "restaurants"
     ],
     "zone": "centre",
+    "hours": "Lun-Ven 11h30-14h30 et 18h-22h",
     "description": "Brasserie française aux Allées d'Helvetia (Moka), décor mêlant moderne et rustique. Cuisine française revisitée (coq au vin, fruits de mer) et pizzas à emporter. Bien notée (4,6/5).",
     "filters": [
       "europeenne"
