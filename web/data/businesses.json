@@ -1109,6 +1109,7 @@
     ],
     "priceRange": "bon-marche",
     "zone": "nord",
+    "hours": "Lun-Sam 8h-00h",
     "description": "Restaurant-pizzeria-brasserie de la Route de la Salette à Grand Baie, spécialisé dans les pizzas au feu de bois, avec aussi burgers, pâtes et grillades sur une terrasse conviviale.",
     "filters": [
       "italien",
@@ -3916,6 +3917,7 @@
     ],
     "priceRange": "prix-moyen",
     "zone": "centre",
+    "hours": "Lun-Jeu 9h30-16h, Ven-Sam 9h30-16h et 18h-22h30",
     "description": "Bistrot chic situé à l'angle des rues Emile Sauzier et Sir Virgile Naz à Curepipe, proposant une cuisine française revisitée avec une touche mauricienne, complété par une galerie d'art à l'étage.",
     "filters": [
       "europeenne",
@@ -4563,6 +4565,7 @@
       "restaurants"
     ],
     "zone": "est",
+    "hours": "Lun-Ven 8h-21h, Sam-Dim 9h-17h30",
     "description": "Restaurant buffet à ciel ouvert de l'hôtel SO Sofitel Bel Ombre, sous un toit de chaume de 17 mètres entouré d'eau, vue sur le lagon turquoise. Cuisine internationale aux accents locaux, vaisselle signée Kenzo Takada. Bon accueil, options végétariennes.",
     "filters": [
       "europeenne"
@@ -4583,6 +4586,7 @@
     ],
     "priceRange": "bon-marche",
     "zone": "sud",
+    "hours": "Mar 9h-16h, Lun/Mer/Ven 9h-16h et 18h-22h, Jeu/Dim 9h-16h et 18h-21h",
     "description": "Installé dans un ancien bâtiment colonial près du pont, ce restaurant tenu par Madame Appadu sert des plats créoles, indiens et chinois sur une terrasse ombragée dominant un ravin.",
     "filters": [
       "asiatique",
@@ -4845,6 +4849,7 @@
     ],
     "priceRange": "prix-moyen",
     "zone": "sud",
+    "hours": "Dim 11h-15h, autres jours midi et soir",
     "description": "Restaurant indien situé dans le centre commercial Bo'Valon Mall à Beau Vallon (Mahébourg), réputé pour sa cuisine authentique et savoureuse à prix abordables : curry, poulet tandoori, korma, et la Maharaja Thali à partager (sur réservation).",
     "filters": [
       "indienne"
@@ -4888,6 +4893,7 @@
     ],
     "priceRange": "bon-marche",
     "zone": "centre",
+    "hours": "Lun-Sam 10h-19h, fermé Dim",
     "description": "Restaurant indien des Arcades Currimjee à Curepipe, ouvert depuis 2012, avec buffet du midi et large carte à l'assiette dans un cadre moderne. Classé n°1 des restaurants de Curepipe sur TripAdvisor (4,3/5), réputé pour ses grillades au tandoor.",
     "filters": [
       "indienne",
