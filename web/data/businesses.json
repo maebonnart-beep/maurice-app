@@ -29081,6 +29081,7 @@
     "badge": "selection",
     "promoText": "Cadre et ambiance exceptionnels façon vieux gréement ; cocktails à prix très raisonnable.",
     "zone": "nord",
+    "hours": "Tous les jours 9h-1h",
     "description": "Bar du Maritim Resort & Spa (Turtle Bay, Balaclava), boissons locales/internationales et snacks (dont thé de l'après-midi), inclus en formule all-inclusive. Bonne ambiance en soirée avec piano live selon les avis.",
     "filters": [
       "bars"
@@ -35099,6 +35100,7 @@
       "cafes-bars-glaciers"
     ],
     "zone": "ouest",
+    "hours": "Tous les jours 19h-23h",
     "description": "Restaurant-bar de plage du Paradis Beachcomber Golf Resort & Spa (Case Noyale), cuisine créole mauricienne authentique, élu meilleur restaurant mauricien de la région du Morne Brabant en 2023. Accès en pirogue traditionnelle, tables sous kiosques de chaume sur le sable.",
     "filters": [
       "bars"
