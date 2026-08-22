@@ -6887,6 +6887,7 @@
       "restaurants"
     ],
     "zone": "ouest",
+    "hours": "Mar-Sam 12h-14h30 et 19h-21h30, fermé Dim-Lun",
     "description": "Bistrot-restaurant et cave à vin bio de Tamarin, plus de 150 vins français majoritairement bio. Cuisine française façon brasserie parisienne, terrasse avec vue sur les montagnes. Fermé dimanche et lundi.",
     "filters": [
       "europeenne",
@@ -6948,6 +6949,7 @@
       "restaurants"
     ],
     "zone": "ouest",
+    "hours": "Déjeuner 12h30-15h, dîner 18h30-22h",
     "description": "Restaurant de plage rénové de l'hôtel Sugar Beach (Flic en Flac), cuisine italo-méditerranéenne : pizzas au feu de bois, antipasti, tapas espagnoles. Options végé/vegan/sans gluten. Bien noté (4,3/5).",
     "filters": [
       "italien"
@@ -6987,6 +6989,7 @@
       "restaurants"
     ],
     "zone": "ouest",
+    "hours": "Mar-Sam 12h-15h et 17h30-22h, fermé Dim-Lun",
     "description": "Adresse de quartier réputée pour sa soupe de crabe et sa salade de fruits de mer à la mangue, dans une ambiance décontractée.",
     "filters": [
       "fruits-de-mer"
@@ -7045,6 +7048,7 @@
       "restaurants"
     ],
     "zone": "ouest",
+    "hours": "Lun-Mar, Jeu, Dim 10h-00h, Ven-Sam 10h-2h, fermé Mer",
     "description": "Enseigne d'origine sud-africaine en bord de plage à Flic en Flac : pizzas, grillades, burgers et bière, ambiance décontractée. Concerts live le week-end.",
     "filters": [
       "grillades"
@@ -7064,6 +7068,7 @@
       "restaurants"
     ],
     "zone": "ouest",
+    "hours": "Lun-Jeu 11h30-14h et 18h-22h, Ven-Sam 11h30-14h et 18h-23h, Dim 18h-22h",
     "description": "Café-surf décontracté au cœur de Tamarin, apprécié des surfeurs et habitués du coin. Café de spécialité, jus frais, poke bowls, pâtisseries maison.",
     "filters": [
       "frequente-locaux"
@@ -7369,6 +7374,7 @@
       "restaurants"
     ],
     "zone": "ouest",
+    "hours": "Lun 18h30-21h30, Mar-Ven 12h-14h et 18h30-21h30, Sam 18h30-21h30, fermé Dim",
     "description": "Steakhouse haut de gamme de Rivière Noire, référence de la côte ouest pour ses viandes premium et sa sélection de vins.",
     "filters": [
       "tables-exception",
@@ -7411,6 +7417,7 @@
     ],
     "badge": "selection",
     "zone": "ouest",
+    "hours": "Tous les jours 8h-15h30 (brunch Dim 11h30-15h30)",
     "description": "Éco-lodge et concept familial de Black River combinant guesthouse, café, boutique et restaurant végétarien/végan. Cuisine farm-to-table : wraps, salades, burgers végétaux, produits locaux.",
     "filters": [
       "vegetarien",
