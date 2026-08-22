@@ -1074,8 +1074,17 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
 
   return (
     <div className="app min-h-screen flex flex-col">
-      {/* En-tête « Lagon » : bandeau clair poulpe, logo clair + recherche */}
-      <header className="sticky top-0 z-30 bg-surface border-b border-border shadow-sm">
+      {/* En-tête « Lagon » : bandeau clair poulpe, logo clair + recherche.
+          Sur l'accueil (menu des 4 tuiles), le fond se confond avec celui des
+          tuiles pour une lecture moins cloisonnée ; ailleurs il reste blanc
+          pour bien séparer le header du contenu qui défile en dessous. */}
+      <header
+        className={`sticky top-0 z-30 shadow-sm ${
+          showHome && homeMode === "menu"
+            ? "bg-bg border-b border-transparent"
+            : "bg-surface border-b border-border"
+        }`}
+      >
         <button
           onClick={goHome}
           aria-label="Retour à l'accueil"
