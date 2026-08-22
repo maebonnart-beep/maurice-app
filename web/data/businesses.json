@@ -1019,7 +1019,8 @@
     "lat": -20.0113925,
     "lng": 57.5845549,
     "themes": [
-      "cafes-bars-glaciers"
+      "cafes-bars-glaciers",
+      "restaurants"
     ],
     "hours": "Tous les jours 10h-23h",
     "priceRange": "bon-marche",
@@ -18949,13 +18950,18 @@
     "lat": -20.0447446,
     "lng": 57.5557238,
     "themes": [
-      "livraisons"
+      "livraisons",
+      "restaurants"
     ],
     "zone": "nord",
     "description": "Fast-food/snacks à Triolet (briani, riz frit, nouilles, boulettes, kebabs, grillades), ouvert tous les jours de 10h30 à 20h30.",
     "hours": "Lun-Sam 11h-21h, Dim 16h-22h",
     "filters": [
-      "grillades"
+      "grillades",
+      "mauricienne",
+      "indienne",
+      "asiatique",
+      "frequente-locaux"
     ]
   },
   {
