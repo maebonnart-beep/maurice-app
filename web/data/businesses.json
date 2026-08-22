@@ -6105,6 +6105,7 @@
     "zone": "nord",
     "hours": "Lun-Sam 8h30-17h, fermé dim",
     "description": "Petit-déjeuner/brunch et salon de thé au cadre chaleureux façon oasis tropicale à Pointe aux Canonniers. Avis très positifs sur les pâtisseries françaises et macarons, les sandwichs, et un service attentionné ; plats du jour faits maison avec des produits frais.",
+    "koteMorisComment": "Un cadre très agréable, avec un beau snacking et une partie pâtisserie qui reproduit joliment quelques classiques de la pâtisserie française. Une adresse un peu plus \"fine\" que les pâtisseries locales, mais aussi plus chère (compter 6-8€ la part de quiche) : on apprécie la qualité, sans forcément la mettre en recommandation vu le tarif.",
     "filters": [
       "cafes-terrasses",
       "boulangeries"
@@ -28412,10 +28413,17 @@
     "themes": [
       "commerces-alimentaires",
       "boulangeries-patisseries",
-      "cafes-terrasses"
+      "cafes-terrasses",
+      "restaurants"
     ],
     "zone": "nord",
-    "description": "Café-pâtisserie de Triolet réputé pour ses créations artisanales (Sacher Blanc, Anémone) et ses petits-déjeuners (œufs brouillés, plateaux de fruits frais), décor rotin/jardin. Réservation conseillée le soir.",
+    "badge": "selection",
+    "photoUrl": "/photo-florensuc-1.jpg",
+    "photoUrls": [
+      "/photo-florensuc-1.jpg",
+      "/photo-florensuc-2.jpg"
+    ],
+    "description": "Café-pâtisserie et restaurant de Triolet réputé pour ses créations artisanales (Sacher Blanc, Anémone) et ses petits-déjeuners (œufs brouillés, plateaux de fruits frais), décor rotin/jardin sous varangue avec fleurs tropicales. Côté restaurant (service 11h30-15h) : entrées et salades (tartare, carpaccio, wakamé, quinoa) Rs 360-750, linguine et plats truffe/marlin/agneau Rs 550-925, nouilles au wok et pad thaï Rs 325-550, menu enfant Rs 275-360. Réservation conseillée le soir.",
     "hours": "Tous les jours 7h-22h",
     "filters": [
       "boulangeries"
@@ -37531,7 +37539,7 @@
     "hours": "Lun-Ven 9h-17h, Sam-Dim 9h-15h",
     "priceRange": "prix-moyen",
     "photoUrl": "/logo-cafe-moris-grand-baie.png",
-    "description": "Petit café cosy et chaleureux de Grand Baie, tenu par une femme, salué pour son café, ses pâtisseries maison (dont pain au levain) et son ice tea mangue ; accueil très apprécié (5/5, 18 avis).",
+    "description": "Petit café cosy et chaleureux de Grand Baie, tenu par une femme, salué pour son café, ses pâtisseries maison (dont pain au levain) et son ice tea mangue ; accueil très apprécié (5/5, 18 avis). Petits-déjeuners sucrés et salés (granola, porridge, œufs brouillés, shakshuka, bols vegan) Rs 240-450, snacks/salades/wraps Rs 320-450, pâtisseries et gâteaux maison Rs 80-380, cafés Rs 80-220 et boissons glacées/chocolat chaud Rs 90-220.",
     "zone": "nord",
     "filters": [
       "vegetarien",
