@@ -6356,6 +6356,7 @@
     ],
     "badge": "selection",
     "zone": "nord",
+    "hours": "Mar-Sam 18h-21h30, Dim 12h-14h30 et 18h-21h30, fermé Lun",
     "description": "Restaurant thaï réputé et abordable de Pereybère/Grand Baie, décor bouddhas et soieries. Tom yum, curry vert, poisson au tamarin, pad thaï, options véganes. Très bien noté (4,2/5).",
     "filters": [
       "asiatique"
@@ -6375,6 +6376,7 @@
       "restaurants"
     ],
     "zone": "nord",
+    "hours": "Mar-Dim 10h30-14h30 et 18h-22h30, fermé Lun",
     "description": "Churrascaria façon rodizio à Grand Baie où les brochettes de viande grillée sont servies directement à table. Steakhouse/méditerranéen, bien noté (4,3/5), fermé le lundi.",
     "filters": [
       "grillades"
@@ -6394,6 +6396,7 @@
       "restaurants"
     ],
     "zone": "nord",
+    "hours": "Mar-Dim 11h30-14h30 et 18h-22h, fermé Lun",
     "description": "Restaurant coréen BBQ de Grand Baie, décor chic d'inspiration asiatique, cuisson à table (bibimbap, samgyeopsal, sundubu-jjigae). Salle enfants dédiée avec jeux.",
     "filters": [
       "asiatique",
@@ -6414,6 +6417,7 @@
       "restaurants"
     ],
     "zone": "nord",
+    "hours": "Mar-Ven 8h-17h, Sam-Dim 10h-17h, fermé Lun",
     "description": "Crêperie-restaurant du Sunset Boulevard à Grand Baie, avec vue sur le lagon. Grillades, options sans gluten, wagyu bœuf et poulet, crêpes sucrées. Très bien noté (5/5).",
     "filters": [
       "europeenne"
@@ -6433,6 +6437,7 @@
       "restaurants"
     ],
     "zone": "nord",
+    "hours": "Tous les jours 9h-22h30",
     "description": "Restaurant italien de La Croisette à Grand Baie, pâtes et pizzas au feu de bois, poisson de pêcheurs locaux et viandes importées d'Australie/Nouvelle-Zélande. Musique live vendredi-samedi soir.",
     "filters": [
       "italien"
@@ -6452,6 +6457,7 @@
       "restaurants"
     ],
     "zone": "nord",
+    "hours": "Tous les jours 8h-14h30",
     "description": "Restaurant healthy niché dans un jardin secret de Pereybère, options vegan/végétariennes/sans gluten : avocado toast, poke bowl, Buddha bowl, jus frais. Ouvert 8h-14h30.",
     "filters": [
       "vegetarien"
