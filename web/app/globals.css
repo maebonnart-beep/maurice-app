@@ -1,23 +1,23 @@
 @import "tailwindcss";
 
 :root {
-  /* Direction « KOTÉ MORIS » — teal marin, accent jaune soleil, neutres crème. */
-  --bg: #ede6d5;
+  /* Direction « KOTÉ MORIS » — teal marin, accent jaune soleil, neutres turquoise pâle. */
+  --bg: #e6f3f1;
   --surface: #ffffff;
-  --surface-2: #f7f1e3;
+  --surface-2: #f1f9f8;
   --ink: #123a3f;
   --muted: #5f7377;
-  --border: #e2dbc9;
+  --border: #d6e9e6;
   --primary: #087e8b;
   --primary-deep: #066470;
   --primary-tint: #d7ede9;
   --accent: #f4c95d;
   --on-accent: #133c40;
 
-  /* Bandeau du bas (nav) : turquoise assorti au nouveau logo poulpe, texte clair. */
-  --band: #137986;
-  --band-deep: #0e5862;
-  --on-band: #ffffff;
+  /* Bandeau du bas (nav) : turquoise clair assorti au nouveau logo poulpe, texte foncé. */
+  --band: #2bacb8;
+  --band-deep: #1f8f99;
+  --on-band: #0b3a3e;
 
   /* Rayon historique (conservé pour compat). */
   --radius: 12px;

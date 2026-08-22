@@ -1075,16 +1075,16 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
   return (
     <div className="app min-h-screen flex flex-col">
       {/* En-tête « Lagon » : bandeau clair poulpe, logo clair + recherche */}
-      <header className="sticky top-0 z-30 bg-surface border-b border-border shadow-sm">
+      <header className="bg-surface border-b border-border shadow-sm">
         <button
           onClick={goHome}
           aria-label="Retour à l'accueil"
-          className="block w-full sm:max-w-[420px] mx-auto aspect-[1686/722] hover:opacity-90 active:scale-[.98] transition"
+          className="block w-full sm:max-w-[420px] mx-auto aspect-[1686/648] hover:opacity-90 active:scale-[.98] transition"
         >
           <Logo light />
         </button>
-        <div className="max-w-[1400px] mx-auto px-5 pb-2.5 flex flex-col gap-2.5">
-          {showHeaderSearch && (
+        {showHeaderSearch && (
+          <div className="max-w-[1400px] mx-auto px-5 pb-2.5">
             <div className="max-w-[640px]">
               <SearchInput
                 value={query}
@@ -1092,8 +1092,8 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                 placeholder="Rechercher une activité, un lieu, un nom…"
               />
             </div>
-          )}
-        </div>
+          </div>
+        )}
       </header>
 
       <div className="flex-1 max-w-[1400px] w-full mx-auto lg:flex min-h-0">
