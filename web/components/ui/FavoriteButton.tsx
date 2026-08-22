@@ -1,16 +1,19 @@
 "use client";
 
-import { Heart, Flag } from "@phosphor-icons/react";
+import { Heart, Flag, CheckCircle } from "@phosphor-icons/react";
 import { useFavorites } from "@/lib/favorites";
 import { COUP_DE_COEUR_COLOR } from "./Badge";
 
 // Couleur du drapeau en état « à tester » (distincte du rouge coup de cœur).
 const A_TESTER_COLOR = "#f5a623";
+// Couleur du check en état « testé » (distincte des deux autres).
+export const TESTE_COLOR = "#2e9e5b";
 
 /**
- * Deux boutons distincts et indépendants : cœur (coup de cœur) et drapeau
- * (à tester) — formes différentes pour rester lisibles même sans la couleur.
- * Un re-clic sur le bouton actif retire la fiche des favoris.
+ * Trois boutons distincts et indépendants : cœur (coup de cœur), drapeau
+ * (à tester) et check (testé) — formes différentes pour rester lisibles
+ * même sans la couleur. Un re-clic sur le bouton actif retire la fiche
+ * des favoris.
  */
 export function FavoriteButton({
   id,
@@ -58,6 +61,22 @@ export function FavoriteButton({
           size={size}
           weight={status === "a-tester" ? "fill" : "regular"}
           style={{ color: status === "a-tester" ? A_TESTER_COLOR : undefined }}
+          aria-hidden
+        />
+      </button>
+      <button
+        onClick={(e) => {
+          e.stopPropagation();
+          setStatus(id, "teste");
+        }}
+        aria-label={status === "teste" ? "Retirer de testé" : "Marquer comme testé"}
+        aria-pressed={status === "teste"}
+        className={`${chipClassName} active:scale-[.9] transition-transform`}
+      >
+        <CheckCircle
+          size={size}
+          weight={status === "teste" ? "fill" : "regular"}
+          style={{ color: status === "teste" ? TESTE_COLOR : undefined }}
           aria-hidden
         />
       </button>

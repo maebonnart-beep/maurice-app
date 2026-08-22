@@ -5,27 +5,16 @@
  */
 export function Logo({ size = 96, light = false }: { size?: number; light?: boolean }) {
   if (light) {
-    // Sur le bandeau teal : lockup fourni par la cliente, en deux morceaux
-    // détourés (poulpe + bloc texte/fleur) pour pouvoir réduire le poulpe
-    // sans rapetisser le wordmark. Bloc centré dans le bandeau.
+    // Bandeau clair fourni par la cliente (poulpe + wordmark + baseline),
+    // image unique — calée en largeur pour occuper l'espace blanc du
+    // header plutôt qu'écrasée en hauteur (cf. conteneur dans DirectoryClient.tsx).
     return (
-      <span className="inline-flex items-center justify-center gap-2.5">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src="/logo-kotemoris-octopus.png"
-          alt=""
-          aria-hidden
-          className="shrink-0 object-contain"
-          style={{ height: size * 0.92 }}
-        />
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src="/logo-kotemoris-text.png"
-          alt="Koté Moris — les adresses de Maurice"
-          className="shrink-0 object-contain"
-          style={{ height: size * 1.05 }}
-        />
-      </span>
+      // eslint-disable-next-line @next/next/no-img-element
+      <img
+        src="/bandeau-kotemoris-clair.webp"
+        alt="Koté Moris — les adresses de Maurice"
+        className="block w-full h-full object-contain"
+      />
     );
   }
   return (

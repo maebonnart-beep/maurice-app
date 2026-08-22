@@ -44,6 +44,7 @@ import { iconForKey, MapPin } from "@/lib/icons";
 import {
   Heart,
   Flag,
+  CheckCircle,
   Star,
   ArrowLeft,
   House,
@@ -156,10 +157,14 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
     () => businesses.filter((b) => favoriteStatuses.get(b.id) === "a-tester"),
     [businesses, favoriteStatuses]
   );
-  // Favoris → carte : coups de cœur + à tester réunis (fiches sans GPS ignorées par <Map>).
+  const testeBusinesses = useMemo(
+    () => businesses.filter((b) => favoriteStatuses.get(b.id) === "teste"),
+    [businesses, favoriteStatuses]
+  );
+  // Favoris → carte : coups de cœur + à tester + testé réunis (fiches sans GPS ignorées par <Map>).
   const favorisMapBusinesses = useMemo(
-    () => [...favoriteBusinesses, ...aTesterBusinesses],
-    [favoriteBusinesses, aTesterBusinesses]
+    () => [...favoriteBusinesses, ...aTesterBusinesses, ...testeBusinesses],
+    [favoriteBusinesses, aTesterBusinesses, testeBusinesses]
   );
   const [query, setQuery] = useState("");
   const [active, setActive] = useState<string>("all");
@@ -205,6 +210,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
   const cardRefs = useRef<Record<string, HTMLElement | null>>({});
   const favorisSectionRef = useRef<HTMLDivElement>(null);
   const aTesterSectionRef = useRef<HTMLDivElement>(null);
+  const testeSectionRef = useRef<HTMLDivElement>(null);
 
   const onBoundsChange = useCallback((b: MapBounds) => setMapBounds(b), []);
 
@@ -1068,18 +1074,16 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
 
   return (
     <div className="app min-h-screen flex flex-col">
-      {/* En-tête « Lagon » : bandeau teal poulpe, logo clair + recherche */}
-      <header className="sticky top-0 z-30 bg-band border-b border-band-deep shadow-sm">
-        <div className="max-w-[1400px] mx-auto px-5 pt-2 pb-2.5 flex flex-col gap-2.5">
-          <div className="flex items-center justify-center gap-3">
-            <button
-              onClick={goHome}
-              aria-label="Retour à l'accueil"
-              className="rounded-lg px-1 py-1 hover:opacity-90 active:scale-[.98] transition"
-            >
-              <Logo light size={56} />
-            </button>
-          </div>
+      {/* En-tête « Lagon » : bandeau clair poulpe, logo clair + recherche */}
+      <header className="sticky top-0 z-30 bg-surface border-b border-border shadow-sm">
+        <button
+          onClick={goHome}
+          aria-label="Retour à l'accueil"
+          className="block w-full sm:max-w-[420px] mx-auto aspect-[1686/722] hover:opacity-90 active:scale-[.98] transition"
+        >
+          <Logo light />
+        </button>
+        <div className="max-w-[1400px] mx-auto px-5 pb-2.5 flex flex-col gap-2.5">
           {showHeaderSearch && (
             <div className="max-w-[640px]">
               <SearchInput
@@ -1255,14 +1259,14 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
           {/* Accueil → Mes favoris : fiches enregistrées via le cœur (favori + à tester), stockage local. */}
           {showHome && homeMode === "favoris" && (
             <div className="pb-16">
-              {favoriteBusinesses.length === 0 && aTesterBusinesses.length === 0 ? (
+              {favoriteBusinesses.length === 0 && aTesterBusinesses.length === 0 && testeBusinesses.length === 0 ? (
                 <div className="mt-6 max-w-[420px] mx-auto text-center bg-surface border border-border rounded-2xl shadow-sm p-7 flex flex-col items-center gap-3">
                   <span className="w-14 h-14 rounded-2xl bg-primary-tint text-primary-deep flex items-center justify-center">
                     <Heart size={28} weight="duotone" aria-hidden />
                   </span>
                   <p className="font-serif text-lg font-semibold leading-tight">Pas encore de favoris</p>
                   <p className="text-[13px] text-muted leading-snug">
-                    Touchez le cœur (coup de cœur) ou le drapeau (à tester) sur une fiche pour l&apos;enregistrer ici.
+                    Touchez le cœur (coup de cœur), le drapeau (à tester) ou le check (testé) sur une fiche pour l&apos;enregistrer ici.
                   </p>
                 </div>
               ) : (
@@ -1284,6 +1288,14 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                       style={{ background: "color-mix(in srgb, #f5a623 12%, var(--surface))", color: "#f5a623" }}
                     >
                       <Flag size={14} weight="fill" aria-hidden /> À tester ({aTesterBusinesses.length})
+                    </button>
+                    <button
+                      onClick={() => testeSectionRef.current?.scrollIntoView({ behavior: "smooth", block: "start" })}
+                      disabled={testeBusinesses.length === 0 || favorisMapOpen}
+                      className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-pill text-[12.5px] font-bold disabled:opacity-40 active:scale-[.97] transition-transform"
+                      style={{ background: "color-mix(in srgb, #2e9e5b 12%, var(--surface))", color: "#2e9e5b" }}
+                    >
+                      <CheckCircle size={14} weight="fill" aria-hidden /> Testé ({testeBusinesses.length})
                     </button>
                     <button
                       onClick={() => setFavorisMapOpen((v) => !v)}
@@ -1334,6 +1346,22 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                         À tester ({aTesterBusinesses.length})
                       </p>
                       {aTesterBusinesses.map((b) => (
+                        <BusinessCard
+                          key={b.id}
+                          business={b}
+                          active={b.id === selectedId}
+                          onSelect={selectFromCard}
+                          onHover={() => {}}
+                        />
+                      ))}
+                    </div>
+                  )}
+                  {testeBusinesses.length > 0 && (
+                    <div ref={testeSectionRef} className="flex flex-col gap-3 scroll-mt-[150px]">
+                      <p className="m-0 text-[13px] font-bold" style={{ color: "#2e9e5b" }}>
+                        Testé ({testeBusinesses.length})
+                      </p>
+                      {testeBusinesses.map((b) => (
                         <BusinessCard
                           key={b.id}
                           business={b}

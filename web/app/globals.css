@@ -14,9 +14,9 @@
   --accent: #f4c95d;
   --on-accent: #133c40;
 
-  /* Bandeau d'en-tête (logo + recherche) : teal poulpe « Lagon », texte clair. */
-  --band: #0d6e78;
-  --band-deep: #0a565f;
+  /* Bandeau du bas (nav) : turquoise assorti au nouveau logo poulpe, texte clair. */
+  --band: #137986;
+  --band-deep: #0e5862;
   --on-band: #ffffff;
 
   /* Rayon historique (conservé pour compat). */

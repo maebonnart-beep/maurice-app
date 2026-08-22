@@ -5,7 +5,7 @@ import { useCallback, useEffect, useState } from "react";
 const STORAGE_KEY = "kote-moris-favoris";
 const CHANGE_EVENT = "kote-moris-favoris-change";
 
-export type FavoriteStatus = "favori" | "a-tester";
+export type FavoriteStatus = "favori" | "a-tester" | "teste";
 
 function readFavorites(): Map<string, FavoriteStatus> {
   if (typeof window === "undefined") return new Map();
@@ -31,8 +31,8 @@ function writeFavorites(statuses: Map<string, FavoriteStatus>) {
 /**
  * Favoris de l'utilisateur (cœur activable sur une fiche), stockés en local —
  * pas de compte/backend pour l'instant, cf. lib/track.ts pour le même choix.
- * Chaque fiche a un statut : "favori" (coup de cœur) ou "a-tester" (à essayer),
- * les deux se retrouvent dans « Mes favoris ».
+ * Chaque fiche a un statut : "favori" (coup de cœur), "a-tester" (à essayer)
+ * ou "teste" (déjà testé) — les trois se retrouvent dans « Mes favoris ».
  */
 export function useFavorites() {
   // Toujours vide au premier rendu (identique au serveur, qui n'a pas de
