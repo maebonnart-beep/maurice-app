@@ -47991,7 +47991,8 @@
     "themes": [
       "evenements-culturels"
     ],
-    "description": "Chaque année fin novembre–début décembre. Célébration de la culture créole mauricienne : séga, concerts, cuisine et animations à travers l'île, avec un temps fort sur le littoral et à Rodrigues."
+    "description": "Célébration de la culture créole mauricienne : séga, concerts, cuisine et animations à travers l'île, avec un temps fort sur le littoral et à Rodrigues.",
+    "period": "Fin novembre – début décembre"
   },
   {
     "id": "porlwi-by-light-evt",
@@ -48003,7 +48004,8 @@
     "themes": [
       "evenements-culturels"
     ],
-    "description": "Festival d'art et de lumière dans le centre historique de Port-Louis : installations lumineuses, projections et concerts, généralement en fin d'année.",
+    "description": "Festival d'art et de lumière dans le centre historique de Port-Louis : installations lumineuses, projections et concerts.",
+    "period": "Généralement en fin d'année",
     "lat": -20.16,
     "lng": 57.5012,
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Porlwi%20by%20Light%20Mauritius",
@@ -48019,7 +48021,8 @@
     "themes": [
       "evenements-culturels"
     ],
-    "description": "Grand pèlerinage hindou vers le lac sacré de Grand Bassin (Ganga Talao), chaque année en février/mars. Des centaines de milliers de fidèles marchent pieds nus, portant des kanwars, jusqu'au site le plus sacré de l'hindouisme mauricien.",
+    "description": "Grand pèlerinage hindou vers le lac sacré de Grand Bassin (Ganga Talao). Des centaines de milliers de fidèles marchent pieds nus, portant des kanwars, jusqu'au site le plus sacré de l'hindouisme mauricien.",
+    "period": "Février/mars",
     "lat": -20.4149,
     "lng": 57.492,
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Maha%20Shivaratri%20%E2%80%93%20Grand%20Bassin%20Mauritius",
@@ -48035,7 +48038,8 @@
     "themes": [
       "evenements-culturels"
     ],
-    "description": "Fête tamoule (janvier–février) : dix jours de jeûne suivis de processions vers les kovils, les fidèles portant le cavadee. Dates variables selon le calendrier tamoul."
+    "description": "Fête tamoule : dix jours de jeûne suivis de processions vers les kovils, les fidèles portant le cavadee. Dates variables selon le calendrier tamoul.",
+    "period": "Janvier–février"
   },
   {
     "id": "divali-fete-de-la-lumiere-evt",
@@ -48047,7 +48051,8 @@
     "themes": [
       "evenements-culturels"
     ],
-    "description": "Fête hindoue des lumières (octobre–novembre) : maisons, cours et rues illuminées de lampes (diyas) et partage de gâteaux, célébrée dans toute l'île."
+    "description": "Fête hindoue des lumières : maisons, cours et rues illuminées de lampes (diyas) et partage de gâteaux, célébrée dans toute l'île.",
+    "period": "Octobre–novembre"
   },
   {
     "id": "nouvel-an-chinois-fete-du-printemps-evt",
@@ -48059,7 +48064,8 @@
     "themes": [
       "evenements-culturels"
     ],
-    "description": "Nouvel An chinois (janvier–février) : défilés, pétards et danses du lion, principalement à Chinatown, Port-Louis. Dates variables selon le calendrier lunaire.",
+    "description": "Défilés, pétards et danses du lion, principalement à Chinatown, Port-Louis. Dates variables selon le calendrier lunaire.",
+    "period": "Janvier–février",
     "lat": -20.1618,
     "lng": 57.506,
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Nouvel%20An%20chinois%20(F%C3%AAte%20du%20Printemps)%20Mauritius",
@@ -48075,7 +48081,8 @@
     "themes": [
       "evenements-culturels"
     ],
-    "description": "Pèlerinage annuel au sanctuaire du Père Laval (Sainte-Croix), chaque 9 septembre, rassemblant des fidèles de toutes confessions autour du « saint de l'île Maurice ».",
+    "description": "Pèlerinage annuel au sanctuaire du Père Laval (Sainte-Croix), rassemblant des fidèles de toutes confessions autour du « saint de l'île Maurice ».",
+    "period": "9 septembre",
     "lat": -20.1447,
     "lng": 57.5049,
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=P%C3%A8lerinage%20du%20P%C3%A8re%20Laval%20Mauritius",
@@ -48091,7 +48098,8 @@
     "themes": [
       "evenements-sportifs"
     ],
-    "description": "Trail de montagne (UTMB World Series), chaque année en juillet dans le sud-ouest (Tamarin, Rivière Noire, Le Morne). Plusieurs formats (5, 10, 25 et 50 km) et près de 3 000 coureurs de Maurice, La Réunion et d'ailleurs.",
+    "description": "Trail de montagne (UTMB World Series) dans le sud-ouest (Tamarin, Rivière Noire, Le Morne). Plusieurs formats (5, 10, 25 et 50 km) et près de 3 000 coureurs de Maurice, La Réunion et d'ailleurs.",
+    "period": "Juillet",
     "lat": -20.326,
     "lng": 57.371,
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Dodo%20Trail%20Mauritius",
@@ -48107,7 +48115,8 @@
     "themes": [
       "evenements-sportifs"
     ],
-    "description": "Marathon international à la mi-juillet, au départ de la plage publique de St Félix (Bel Ombre, sud). Formats marathon, semi-marathon et 10 km.",
+    "description": "Marathon international au départ de la plage publique de St Félix (Bel Ombre, sud). Formats marathon, semi-marathon et 10 km.",
+    "period": "Mi-juillet",
     "lat": -20.503,
     "lng": 57.403,
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Mauritius%20Marathon%20Mauritius",
@@ -48123,7 +48132,8 @@
     "themes": [
       "evenements-sportifs"
     ],
-    "description": "Course cycliste internationale par étapes, généralement fin août, à travers l'île."
+    "description": "Course cycliste internationale par étapes, à travers l'île.",
+    "period": "Généralement fin août"
   },
   {
     "id": "maiden-cup-champ-de-mars-evt",
@@ -48135,7 +48145,8 @@
     "themes": [
       "evenements-sportifs"
     ],
-    "description": "Course hippique la plus prestigieuse de l'île, début septembre à l'hippodrome du Champ de Mars (Port-Louis). Fait partie de la saison des courses du Mauritius Turf Club, de mai à novembre.",
+    "description": "Course hippique la plus prestigieuse de l'île, à l'hippodrome du Champ de Mars (Port-Louis). Fait partie de la saison des courses du Mauritius Turf Club, de mai à novembre.",
+    "period": "Début septembre",
     "lat": -20.1637,
     "lng": 57.503,
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Maiden%20Cup%20%E2%80%93%20Champ%20de%20Mars%20Mauritius",

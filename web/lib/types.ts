@@ -54,6 +54,8 @@ export type Business = {
   eventPeriod?: string;
   /** Descriptif rapide (1-2 phrases). Surtout utilisé pour parcs-aventures. */
   description?: string;
+  /** Période/date de l'événement, ex: "Fin novembre - début décembre", "9 septembre". Agenda. */
+  period?: string;
   /** Prix d'entrée en texte libre, ex: "Rs 450 adulte / Rs 250 enfant". Parcs-aventures, parcs-animaliers. */
   entryPrice?: string;
   /** Durée moyenne/approximative de l'activité, ex: "2h30". Parcs-aventures, randonnée-trail. */

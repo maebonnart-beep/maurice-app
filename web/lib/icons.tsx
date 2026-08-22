@@ -373,6 +373,7 @@ export const FACT_ICONS = {
   difficultyLevel: PersonSimpleHike, guide: Compass, sports: Barbell,
   restauration: ForkKnife, ttv: Laptop, kids: Baby, sand: Waves, beach: Target,
   animals: PawPrint, golf: Golf, golfDesigner: PencilSimple, golfPricing: Coins,
+  period: CalendarBlank,
 } as const;
 
 export { MapPin, Clock, Phone, EnvelopeSimple, WhatsappLogo, Globe, NavigationArrow };

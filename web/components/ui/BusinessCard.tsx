@@ -27,6 +27,7 @@ const DIFFICULTY_LABELS: Record<string, string> = {
 /** Faits chiffrés d'une fiche (distance, durée, prix d'entrée…) selon sa rubrique. */
 export function metaFacts(b: Business): { Icon: Icon; label: string }[] {
   const facts: { Icon: Icon; label: string }[] = [];
+  if (b.period) facts.push({ Icon: FACT_ICONS.period, label: b.period });
   if (b.distance) facts.push({ Icon: FACT_ICONS.distance, label: b.distance });
   if (b.elevationGain) facts.push({ Icon: FACT_ICONS.elevationGain, label: b.elevationGain });
   if (b.duration) facts.push({ Icon: FACT_ICONS.duration, label: b.duration });
