@@ -24,7 +24,7 @@ export function CategoryBadge({ category }: { category: CategoryKey }) {
 export type SpecialBadgeVariant = "partenaire" | "selection" | "kids-friendly" | "agence";
 
 /** Badges de mise en avant (Partenaire, Sélection, Agence organisatrice). */
-export function SpecialBadge({ variant }: { variant: SpecialBadgeVariant }) {
+export function SpecialBadge({ variant, className }: { variant: SpecialBadgeVariant; className?: string }) {
   if (variant === "partenaire") {
     return (
       <span className="self-start inline-flex items-center gap-1 px-2.5 py-1 rounded-pill text-on-accent text-xs font-bold bg-accent">
@@ -35,13 +35,13 @@ export function SpecialBadge({ variant }: { variant: SpecialBadgeVariant }) {
   if (variant === "selection") {
     return (
       // eslint-disable-next-line @next/next/no-img-element
-      <img src="/badge-selection.png" alt="Sélection Koté Moris" title="Sélection Koté Moris" className="self-start h-12 w-12 shrink-0" />
+      <img src="/badge-selection.png" alt="Sélection Koté Moris" title="Sélection Koté Moris" className={className ?? "self-start h-12 w-12 shrink-0"} />
     );
   }
   if (variant === "kids-friendly") {
     return (
       // eslint-disable-next-line @next/next/no-img-element
-      <img src="/badge-kids.png" alt="Kids Friendly" title="Kids Friendly" className="self-start h-12 w-12 shrink-0" />
+      <img src="/badge-kids.png" alt="Kids Friendly" title="Kids Friendly" className={className ?? "self-start h-12 w-12 shrink-0"} />
     );
   }
   // agence

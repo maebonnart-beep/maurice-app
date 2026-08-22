@@ -152,6 +152,16 @@ export function BusinessDetail({
                 className="absolute top-3 right-3 gap-2"
                 chipClassName="inline-flex items-center justify-center w-9 h-9 rounded-full bg-black/45 text-white backdrop-blur-sm"
               />
+              {(b.badge === "selection" || b.themes?.includes("kids-friendly")) && (
+                <div className="absolute top-14 right-3 flex flex-col items-end gap-2">
+                  {b.badge === "selection" && (
+                    <SpecialBadge variant="selection" className="h-16 w-16 shrink-0 drop-shadow-md" />
+                  )}
+                  {b.themes?.includes("kids-friendly") && (
+                    <SpecialBadge variant="kids-friendly" className="h-16 w-16 shrink-0 drop-shadow-md" />
+                  )}
+                </div>
+              )}
               {photos.length > 1 && (
                 <div className="absolute bottom-2.5 left-1/2 -translate-x-1/2 flex items-center gap-1.5" aria-hidden>
                   {photos.map((_, i) => (
@@ -188,6 +198,16 @@ export function BusinessDetail({
                 className="absolute top-3 right-3 gap-2"
                 chipClassName="inline-flex items-center justify-center w-9 h-9 rounded-full bg-black/20 text-on-band backdrop-blur-sm"
               />
+              {(b.badge === "selection" || b.themes?.includes("kids-friendly")) && (
+                <div className="absolute top-14 right-3 flex flex-col items-end gap-2">
+                  {b.badge === "selection" && (
+                    <SpecialBadge variant="selection" className="h-16 w-16 shrink-0 drop-shadow-md" />
+                  )}
+                  {b.themes?.includes("kids-friendly") && (
+                    <SpecialBadge variant="kids-friendly" className="h-16 w-16 shrink-0 drop-shadow-md" />
+                  )}
+                </div>
+              )}
               <span className="w-16 h-16 rounded-full bg-surface shadow-sm flex items-center justify-center text-primary-deep overflow-hidden">
                 {bannerIcon ? (
                   // eslint-disable-next-line @next/next/no-img-element
@@ -210,8 +230,6 @@ export function BusinessDetail({
             )}
             <div className="flex flex-wrap items-center gap-1.5">
               {b.badge === "partenaire" && <SpecialBadge variant="partenaire" />}
-              {b.badge === "selection" && <SpecialBadge variant="selection" />}
-              {b.themes?.includes("kids-friendly") && <SpecialBadge variant="kids-friendly" />}
               {b.isAgency && <SpecialBadge variant="agence" />}
             </div>
 
