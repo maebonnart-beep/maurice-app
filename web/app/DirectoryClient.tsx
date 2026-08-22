@@ -32,6 +32,7 @@ const SELECTION_ICONS: Record<SelectionIconKey, Icon> = {
   Sparkle,
 };
 import { Logo } from "@/components/ui/Logo";
+import { HomeBandeauScene } from "@/components/ui/HomeBandeauScene";
 import { SearchInput } from "@/components/ui/SearchInput";
 import { CategoryRow } from "@/components/ui/CategoryRow";
 import { BusinessCard } from "@/components/ui/BusinessCard";
@@ -40,7 +41,9 @@ import { useFavorites } from "@/lib/favorites";
 import { COUP_DE_COEUR_COLOR } from "@/components/ui/Badge";
 import { FilterDropdown, type DropdownOption } from "@/components/ui/FilterDropdown";
 import { AddAddressForm } from "@/components/ui/AddAddressForm";
-import { iconForKey, MapPin } from "@/lib/icons";
+import { iconForKey, mascotFor, MapPin } from "@/lib/icons";
+import { displayName, displayCity } from "@/lib/format";
+import { FavoriteButton } from "@/components/ui/FavoriteButton";
 import {
   Heart,
   Flag,
@@ -50,6 +53,7 @@ import {
   House,
   Compass,
   Plus,
+  UserCircle,
   CloudRain,
   Users,
   PiggyBank,
@@ -85,32 +89,6 @@ const SIDEBAR_VISIBLE_RUBRIQUES = 5;
 // (seconde-main-boutiques / seconde-main-particuliers) → verrou au niveau rubrique.
 const PREMIUM_CATEGORY_KEYS = new Set<CategoryKey>(["agenda"]);
 const PREMIUM_RUBRIQUE_KEYS = new Set<string>(["seconde-main-particuliers"]);
-
-// Tuile d'entrée du menu d'accueil : image + titre + sous-titre.
-function HomeEntry({
-  img,
-  title,
-  subtitle,
-  onClick,
-}: {
-  img: string;
-  title: string;
-  subtitle: string;
-  onClick: () => void;
-}) {
-  return (
-    <button
-      onClick={onClick}
-      className="flex flex-col items-center justify-center gap-3 p-4 h-full rounded-tile border border-border text-center shadow-sm active:scale-[.98] transition-transform"
-      style={{ background: "var(--surface-2, #ececef)" }}
-    >
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img src={img} alt="" aria-hidden className="h-[24vh] max-h-[210px] min-h-[100px] w-auto max-w-full object-contain" />
-      <span className="text-[18px] font-semibold leading-tight text-ink">{title}</span>
-      <span className="text-[13px] text-muted leading-tight">{subtitle}</span>
-    </button>
-  );
-}
 
 // Métadonnées de rubrique (emoji/libellé) par clé, tous univers confondus.
 const RUBRIQUE_MAP: Record<string, { key: string; label: string; emoji: string }> = Object.fromEntries(
@@ -199,7 +177,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
   const [browseAll, setBrowseAll] = useState(false);
   // Accueil « Option A » : menu d'entrée → puis mode choisi.
   const [homeMode, setHomeMode] = useState<
-    "menu" | "categories" | "favoris" | "listes" | "ajouter"
+    "menu" | "categories" | "favoris" | "listes" | "ajouter" | "profil"
   >("menu");
   // Accueil « Par catégorie » : catégorie choisie, dont on affiche les rubriques
   // (un seul niveau de profondeur). null = grille des 8 catégories.
@@ -297,6 +275,13 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
     setActiveThemes(new Set());
     setBrowseAll(false);
     setHomeCategory(null);
+  }
+
+  // Chip de catégorie mobile dans les résultats/carte (cf. sidebar desktop,
+  // masquée sur mobile) : filtre sans quitter la vue courante (liste/carte).
+  function selectCategoryChip(key: string) {
+    setActive((prev) => (prev === key ? "all" : key));
+    setActiveThemes(new Set());
   }
 
   function toggleZone(key: string) {
@@ -398,6 +383,13 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
     });
     return c;
   }, [businesses]);
+
+  // Accueil → « Nos coups de cœur » : fiches mises en avant par la rédaction,
+  // limitées à celles qui ont une photo (essentiel pour ce format en carte photo).
+  const coupsDeCoeur = useMemo(
+    () => businesses.filter((b) => b.badge === "selection" && b.photoUrl),
+    [businesses]
+  );
 
   const themeCounts = useMemo(() => {
     const c: Record<string, number> = {};
@@ -565,7 +557,6 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
     }
     if (userPos) {
       setNearMe(true);
-      setResultsView("liste");
       if (showHome) setBrowseAll(true);
       return;
     }
@@ -579,11 +570,22 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
         setUserPos({ lat: pos.coords.latitude, lng: pos.coords.longitude });
         setGeoStatus("ok");
         setNearMe(true);
-        setResultsView("liste");
         if (showHome) setBrowseAll(true);
       },
       () => setGeoStatus("denied"),
       { enableHighAccuracy: true, timeout: 10000, maximumAge: 60000 }
+    );
+  }
+
+  // Localise silencieusement (sans activer le tri « Autour de moi ») pour
+  // afficher le point « vous êtes ici » dès l'ouverture de la carte.
+  function requestUserPosSilently() {
+    if (userPos || geoStatus !== "idle") return;
+    if (typeof navigator === "undefined" || !navigator.geolocation) return;
+    navigator.geolocation.getCurrentPosition(
+      (pos) => setUserPos({ lat: pos.coords.latitude, lng: pos.coords.longitude }),
+      () => {},
+      { enableHighAccuracy: false, timeout: 10000, maximumAge: 60000 }
     );
   }
 
@@ -892,15 +894,18 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
   );
 
   // Barre de navigation principale (5 onglets) fixée tout en bas de l'écran :
-  // Accueil / Favoris / Ajouter (bouton central relevé) / Explorer / Carte.
-  const activeTab: "accueil" | "favoris" | "explorer" | "carte" | "autre" = homeMode === "favoris"
+  // Accueil / Sélections / Ajouter (bouton central relevé) / Listes / Profil.
+  // « Explorer » et « Carte » ont été retirés : la recherche et les catégories
+  // sont déjà en permanence sur l'accueil, et la carte reste accessible via le
+  // bandeau « Voir la carte » et le bouton liste/carte des résultats.
+  const activeTab: "accueil" | "favoris" | "listes" | "profil" | "autre" = homeMode === "favoris"
     ? "favoris"
-    : showHome && homeMode === "menu"
-      ? "accueil"
-      : !mobileTiles && resultsView === "carte"
-        ? "carte"
-        : browseAll || homeMode === "categories"
-          ? "explorer"
+    : homeMode === "listes"
+      ? "listes"
+      : homeMode === "profil"
+        ? "profil"
+        : showHome && homeMode === "menu"
+          ? "accueil"
           : "autre";
   const tabBar = (
     <nav
@@ -931,14 +936,14 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
             setHomeMode("favoris");
             window.scrollTo({ top: 0, behavior: "smooth" });
           }}
-          aria-label="Favoris"
+          aria-label="Mes sélections"
           aria-pressed={activeTab === "favoris"}
           className={`flex flex-col items-center gap-0.5 py-1 rounded-xl transition-colors active:scale-[.97] ${
             activeTab === "favoris" ? "text-on-band" : "text-on-band/60"
           }`}
         >
           <Heart size={22} weight={activeTab === "favoris" ? "fill" : "regular"} aria-hidden />
-          <span className="text-[10.5px] font-semibold leading-none">Favoris</span>
+          <span className="text-[10.5px] font-semibold leading-none">Sélections</span>
         </button>
         <div className="flex flex-col items-center">
           <button
@@ -957,40 +962,37 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
         </div>
         <button
           onClick={() => {
-            setHomeMode("menu");
+            setActive("all");
+            setActiveThemes(new Set());
+            setBrowseAll(false);
             setHomeCategory(null);
-            setBrowseAll(true);
-            setTimeout(focusSearch, 60);
+            setHomeMode("listes");
+            window.scrollTo({ top: 0, behavior: "smooth" });
           }}
-          aria-label="Explorer"
-          aria-pressed={activeTab === "explorer"}
+          aria-label="Listes de Koté Moris"
+          aria-pressed={activeTab === "listes"}
           className={`flex flex-col items-center gap-0.5 py-1 rounded-xl transition-colors active:scale-[.97] ${
-            activeTab === "explorer" ? "text-on-band" : "text-on-band/60"
+            activeTab === "listes" ? "text-on-band" : "text-on-band/60"
           }`}
         >
-          <Compass size={22} weight={activeTab === "explorer" ? "fill" : "regular"} aria-hidden />
-          <span className="text-[10.5px] font-semibold leading-none">Explorer</span>
+          <Star size={22} weight={activeTab === "listes" ? "fill" : "regular"} aria-hidden />
+          <span className="text-[10.5px] font-semibold leading-none">Listes</span>
         </button>
         <button
           onClick={() => {
-            if (activeTab === "carte") {
-              setResultsView("liste");
-              return;
-            }
-            setNearMe(false);
-            setBrowseAll(true);
+            setBrowseAll(false);
             setHomeCategory(null);
-            setResultsView("carte");
+            setHomeMode("profil");
             window.scrollTo({ top: 0, behavior: "smooth" });
           }}
-          aria-label="Carte"
-          aria-pressed={activeTab === "carte"}
+          aria-label="Profil"
+          aria-pressed={activeTab === "profil"}
           className={`flex flex-col items-center gap-0.5 py-1 rounded-xl transition-colors active:scale-[.97] ${
-            activeTab === "carte" ? "text-on-band" : "text-on-band/60"
+            activeTab === "profil" ? "text-on-band" : "text-on-band/60"
           }`}
         >
-          <MapPin size={22} weight={activeTab === "carte" ? "fill" : "regular"} aria-hidden />
-          <span className="text-[10.5px] font-semibold leading-none">Carte</span>
+          <UserCircle size={22} weight={activeTab === "profil" ? "fill" : "regular"} aria-hidden />
+          <span className="text-[10.5px] font-semibold leading-none">Profil</span>
         </button>
       </div>
     </nav>
@@ -1075,25 +1077,39 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
   return (
     <div className="app min-h-screen flex flex-col">
       {/* En-tête « Lagon » : bandeau clair poulpe, logo clair + recherche.
-          Sur l'accueil (menu des 4 tuiles), le fond se confond avec celui des
-          tuiles pour une lecture moins cloisonnée ; ailleurs il reste blanc
-          pour bien séparer le header du contenu qui défile en dessous. */}
+          Sur l'accueil (menu des 4 tuiles), un décor de nature mauricienne
+          (palmiers, montagne, lagon) occupe tout le bandeau en arrière-plan et
+          le poulpe est affiché en grand par-dessus ; ailleurs le header reste
+          blanc et compact pour bien séparer le contenu qui défile en dessous. */}
       <header
-        className={`sticky top-0 z-30 shadow-sm ${
+        className={`relative z-30 shadow-sm overflow-hidden ${
           showHome && homeMode === "menu"
             ? "bg-bg border-b border-transparent"
             : "bg-surface border-b border-border"
         }`}
       >
-        <button
-          onClick={goHome}
-          aria-label="Retour à l'accueil"
-          className="block w-[86%] sm:max-w-[360px] mx-auto aspect-[1686/648] hover:opacity-90 active:scale-[.98] transition"
-        >
-          <Logo light />
-        </button>
+        {showHome && homeMode === "menu" && <HomeBandeauScene />}
+        {showHome && homeMode === "menu" ? (
+          <div className="relative pt-5 pb-3">
+            <button
+              onClick={goHome}
+              aria-label="Retour à l'accueil"
+              className="block w-[66%] max-w-[300px] mx-auto aspect-[900/345] hover:opacity-90 active:scale-[.98] transition"
+            >
+              <Logo light />
+            </button>
+          </div>
+        ) : (
+          <button
+            onClick={goHome}
+            aria-label="Retour à l'accueil"
+            className="block relative w-[86%] sm:max-w-[360px] mx-auto aspect-[900/345] hover:opacity-90 active:scale-[.98] transition"
+          >
+            <Logo light />
+          </button>
+        )}
         {showHeaderSearch && (
-          <div className="max-w-[1400px] mx-auto px-5 pb-2.5">
+          <div className="relative max-w-[1400px] mx-auto px-5 pb-2.5">
             <div className="max-w-[640px]">
               <SearchInput
                 value={query}
@@ -1107,27 +1123,149 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
 
       <div className="flex-1 max-w-[1400px] w-full mx-auto lg:flex min-h-0">
         {/* Sidebar desktop */}
-        <aside className="hidden lg:block w-[270px] shrink-0 border-r border-border overflow-y-auto sticky top-[94px] max-h-[calc(100vh-94px)]">
+        <aside className="hidden lg:block w-[270px] shrink-0 border-r border-border overflow-y-auto sticky top-0 max-h-[calc(100vh)]">
           {sidebarContent}
         </aside>
 
-        <div
-          className={`flex-1 min-w-0 px-4 lg:px-5 ${
-            showHome && homeMode === "menu"
-              ? "py-3 overflow-hidden"
-              : "py-3 pb-24"
-          }`}
-        >
-          {/* Accueil « Option A » : menu d'entrée à 4 modes, figé sans scroll —
-              les 4 tuiles remplissent tout l'espace disponible sous le bandeau
-              et au-dessus de la barre d'onglets. */}
+        <div className="flex-1 min-w-0 px-4 lg:px-5 py-3 pb-24">
+          {/* Accueil : barre de recherche (point d'entrée vers le mode
+              recherche/résultats), rangée de catégories, coups de cœur de la
+              rédaction et bandeau carte — inspiré du rendu fourni par la
+              cliente. Remplace l'ancien menu à 4 tuiles (la tuile « Recherche »
+              a été retirée : la recherche vit désormais ici en permanence). */}
           {showHome && homeMode === "menu" && (
-            <div className="h-[calc(100dvh-150px)] flex flex-col justify-center overflow-hidden">
-              <div className="grid grid-cols-2 grid-rows-2 gap-4 sm:gap-5 w-full h-full max-w-[660px] max-h-[560px] mx-auto">
-                <HomeEntry img="/icon-categories.png" title="Par catégorie" subtitle="8 catégories" onClick={() => setHomeMode("categories")} />
-                <HomeEntry img="/icon-recherche.png" title="Recherche" subtitle="lieu, nom, activité" onClick={() => { setBrowseAll(true); setTimeout(focusSearch, 60); }} />
-                <HomeEntry img="/icon-favoris.png" title="Mes favoris" subtitle="et mes listes" onClick={() => setHomeMode("favoris")} />
-                <HomeEntry img="/icon-listes.png" title="Listes de Koté Moris" subtitle="nos sélections" onClick={() => setHomeMode("listes")} />
+            <div className="max-w-[720px] mx-auto pb-6">
+              <button
+                onClick={() => { setBrowseAll(true); setTimeout(focusSearch, 60); }}
+                className="relative w-full h-[46px] mb-6 rounded-pill border border-border bg-surface shadow-sm text-left pl-11 pr-4 text-[15px] text-muted active:scale-[.99] transition-transform"
+              >
+                <span className="absolute left-4 top-1/2 -translate-y-1/2 pointer-events-none">🔍</span>
+                Rechercher une adresse, une activité…
+              </button>
+
+              <div className="flex items-center justify-between mb-2.5">
+                <h2 className="text-[16px] font-bold text-ink">Explorer par catégorie</h2>
+                <button
+                  onClick={() => setHomeMode("categories")}
+                  className="text-[13px] font-semibold text-primary-deep active:scale-[.98]"
+                >
+                  Voir tout ›
+                </button>
+              </div>
+              <div className="flex gap-4 overflow-x-auto pb-1 -mx-4 px-4 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+                {CATEGORIES.filter((c) => (counts[c.key] || 0) > 0).map((c) => {
+                  const mascot = mascotFor(c.key);
+                  return (
+                    <button
+                      key={c.key}
+                      onClick={() => { setHomeMode("categories"); setHomeCategory(c.key); }}
+                      className="flex flex-col items-center gap-1.5 shrink-0 w-[76px] active:scale-[.96] transition-transform"
+                    >
+                      <span className="w-16 h-16 rounded-full overflow-hidden bg-primary-tint shadow-sm flex items-center justify-center text-2xl">
+                        {mascot ? (
+                          // eslint-disable-next-line @next/next/no-img-element
+                          <img src={mascot} alt="" className="w-[85%] h-[85%] object-contain" />
+                        ) : (
+                          c.emoji
+                        )}
+                      </span>
+                      <span className="text-[11.5px] font-semibold text-ink text-center leading-tight">
+                        {c.label}
+                      </span>
+                    </button>
+                  );
+                })}
+              </div>
+
+              {coupsDeCoeur.length > 0 && (
+                <>
+                  <div className="flex items-center justify-between mt-7 mb-2.5">
+                    <h2 className="text-[16px] font-bold text-ink">Nos coups de cœur</h2>
+                    <button
+                      onClick={() => { setBrowseAll(true); setFacetBadges(new Set(["selection"])); }}
+                      className="text-[13px] font-semibold text-primary-deep active:scale-[.98]"
+                    >
+                      Voir tout ›
+                    </button>
+                  </div>
+                  <div className="flex gap-3 overflow-x-auto pb-1 -mx-4 px-4 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+                    {coupsDeCoeur.slice(0, 12).map((b) => (
+                      <div
+                        key={b.id}
+                        role="button"
+                        tabIndex={0}
+                        onClick={() => selectFromCard(b.id)}
+                        onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") selectFromCard(b.id); }}
+                        className="relative shrink-0 w-[160px] rounded-card overflow-hidden bg-surface border border-border shadow-card text-left cursor-pointer active:scale-[.98] transition-transform"
+                      >
+                        <div className="relative h-[110px] bg-primary-tint flex items-center justify-center">
+                          {b.photoUrl ? (
+                            // eslint-disable-next-line @next/next/no-img-element
+                            <img src={b.photoUrl} alt="" className="absolute inset-0 w-full h-full object-cover" />
+                          ) : (
+                            (() => {
+                              const FallbackIcon = iconForKey(b.category);
+                              return FallbackIcon ? (
+                                <FallbackIcon size={30} weight="duotone" className="text-primary-deep opacity-50" aria-hidden />
+                              ) : null;
+                            })()
+                          )}
+                          <span
+                            className="absolute top-1.5 right-1.5 inline-flex items-center gap-1 px-1.5 py-1 rounded-full bg-surface/90 shadow-sm"
+                            onClick={(e) => e.stopPropagation()}
+                          >
+                            <FavoriteButton id={b.id} size={12.5} />
+                          </span>
+                        </div>
+                        <div className="p-2.5">
+                          <p className="text-[13px] font-bold text-ink truncate">{displayName(b.name)}</p>
+                          <p className="text-[11.5px] text-muted truncate">
+                            {CATEGORY_MAP[b.category].label} • {displayCity(b.address)}
+                          </p>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </>
+              )}
+
+              <button
+                onClick={() => {
+                  setNearMe(false);
+                  setBrowseAll(true);
+                  setHomeCategory(null);
+                  setFacetBadges(new Set(["selection"]));
+                  setResultsView("carte");
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
+                className="w-full mt-7 rounded-2xl p-4 flex items-center gap-3 text-left active:scale-[.99] transition-transform"
+                style={{ background: "var(--primary-tint)" }}
+              >
+                <span className="text-2xl shrink-0" aria-hidden>🗺️</span>
+                <span className="flex-1 text-[13px] text-ink leading-snug">
+                  Découvrez les meilleures adresses sélectionnées pour vous, partout à Maurice !
+                </span>
+                <span
+                  className="shrink-0 px-3.5 py-2 rounded-pill text-[12.5px] font-bold text-white"
+                  style={{ background: "var(--primary)" }}
+                >
+                  Voir la carte
+                </span>
+              </button>
+
+              <div className="flex items-center gap-4 mt-6 pt-3 border-t border-border">
+                <button
+                  onClick={() => setHomeMode("favoris")}
+                  className="inline-flex items-center gap-1.5 text-[13px] font-semibold text-primary-deep active:scale-[.98]"
+                >
+                  <Heart size={16} weight="duotone" aria-hidden /> Mes sélections
+                </button>
+                <button
+                  onClick={() => setHomeMode("listes")}
+                  className="inline-flex items-center gap-1.5 text-[13px] font-semibold text-primary-deep active:scale-[.98]"
+                >
+                  <Star size={16} weight="duotone" aria-hidden /> Listes de Koté Moris
+                </button>
               </div>
             </div>
           )}
@@ -1182,7 +1320,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                   onClick={() => setHomeMode("favoris")}
                   className="inline-flex items-center gap-1.5 text-[13px] font-semibold text-primary-deep active:scale-[.98]"
                 >
-                  <Heart size={16} weight="duotone" aria-hidden /> Mes favoris
+                  <Heart size={16} weight="duotone" aria-hidden /> Mes sélections
                 </button>
                 <button
                   onClick={() => setHomeMode("listes")}
@@ -1198,7 +1336,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
               ses rubriques (SUBCATEGORIES[cat]), un seul clic vers les résultats. */}
           {showHome && homeMode === "categories" && homeCategory !== null && homeSubRubrique === null && (
             <div className="pb-16">
-              <div className="sticky top-[94px] z-20 -mx-4 lg:-mx-5 px-4 lg:px-5 py-2 flex items-center gap-2 border-b border-border" style={{ background: "var(--bg)" }}>
+              <div className="sticky top-0 z-20 -mx-4 lg:-mx-5 px-4 lg:px-5 py-2 flex items-center gap-2 border-b border-border" style={{ background: "var(--bg)" }}>
                 <button
                   onClick={() => setHomeCategory(null)}
                   aria-label="Retour"
@@ -1236,7 +1374,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
             const rubriqueLabel = RUBRIQUE_MAP[homeSubRubrique]?.label ?? homeSubRubrique;
             return (
               <div className="pb-16">
-                <div className="sticky top-[94px] z-20 -mx-4 lg:-mx-5 px-4 lg:px-5 py-2 flex items-center gap-2 border-b border-border" style={{ background: "var(--bg)" }}>
+                <div className="sticky top-0 z-20 -mx-4 lg:-mx-5 px-4 lg:px-5 py-2 flex items-center gap-2 border-b border-border" style={{ background: "var(--bg)" }}>
                   <button
                     onClick={() => setHomeSubRubrique(null)}
                     aria-label="Retour"
@@ -1281,7 +1419,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
               ) : (
                 <div className="max-w-[560px] mx-auto flex flex-col gap-5 pt-1">
                   {/* Accès direct : passe d'une liste à l'autre sans avoir à scroller. */}
-                  <div className="flex items-center gap-2 flex-wrap sticky top-[94px] z-10 -mx-4 lg:-mx-5 px-4 lg:px-5 py-2 bg-bg">
+                  <div className="flex items-center gap-2 flex-wrap sticky top-0 z-10 -mx-4 lg:-mx-5 px-4 lg:px-5 py-2 bg-bg">
                     <button
                       onClick={() => favorisSectionRef.current?.scrollIntoView({ behavior: "smooth", block: "start" })}
                       disabled={favoriteBusinesses.length === 0 || favorisMapOpen}
@@ -1329,6 +1467,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                         fitKey={`favoris|${favorisMapBusinesses.map((b) => b.id).join(",")}`}
                         hoveredId={hoveredId}
                         onHover={setHoveredId}
+                        userPos={userPos}
                       />
                     </div>
                   ) : (
@@ -1495,7 +1634,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
           {/* Accueil → Listes de Koté Moris → une sélection ouverte : ses fiches. */}
           {showHome && homeMode === "listes" && selectedList && (
             <div className="pb-16">
-              <div className="sticky top-[94px] z-20 -mx-4 lg:-mx-5 px-4 lg:px-5 py-2 flex items-center gap-2 border-b border-border" style={{ background: "var(--bg)" }}>
+              <div className="sticky top-0 z-20 -mx-4 lg:-mx-5 px-4 lg:px-5 py-2 flex items-center gap-2 border-b border-border" style={{ background: "var(--bg)" }}>
                 <button
                   onClick={() => setSelectedListId(null)}
                   aria-label="Retour aux sélections"
@@ -1533,11 +1672,25 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
             </div>
           )}
 
-          {/* Barre de résultats : retour + « Autour de moi » / zone,
-              tenue sur une seule ligne (bande réduite) pour laisser plus de
-              place aux fiches en dessous. La bascule liste/carte se fait
-              désormais via l'onglet « Carte » de la barre de navigation. */}
-          <div className={`sticky top-[94px] z-20 -mx-4 lg:-mx-5 px-4 lg:px-5 items-center gap-2 py-1.5 border-b border-border mb-3 ${mobileTiles ? "hidden" : "flex"}`} style={{ background: "var(--bg)" }}>
+          {/* Accueil → Profil : pas de compte utilisateur pour l'instant
+              (favoris/sélections stockés en local) — écran d'attente. */}
+          {showHome && homeMode === "profil" && (
+            <div className="pb-16 pt-6 max-w-[420px] mx-auto text-center bg-surface border border-border rounded-2xl shadow-sm p-7 flex flex-col items-center gap-3">
+              <span className="w-14 h-14 rounded-2xl bg-primary-tint text-primary-deep flex items-center justify-center">
+                <UserCircle size={30} weight="duotone" aria-hidden />
+              </span>
+              <p className="font-serif text-lg font-semibold leading-tight">Bientôt disponible</p>
+              <p className="text-[13px] text-muted leading-snug">
+                Le compte Koté Moris arrive prochainement. En attendant, vos favoris et vos
+                adresses testées sont enregistrés sur cet appareil, dans « Sélections ».
+              </p>
+            </div>
+          )}
+
+          {/* Barre de résultats : retour + « Autour de moi » / zone + bascule
+              liste/carte, tenue sur une seule ligne (bande réduite) pour
+              laisser plus de place aux fiches en dessous. */}
+          <div className={`sticky top-0 z-20 -mx-4 lg:-mx-5 px-4 lg:px-5 items-center gap-2 py-1.5 border-b border-border mb-3 ${mobileTiles ? "hidden" : "flex"}`} style={{ background: "var(--bg)" }}>
             <button
               onClick={goBackFromResults}
               disabled={!canGoBack}
@@ -1548,8 +1701,58 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
             >
               <ArrowLeft size={17} weight="bold" aria-hidden />
             </button>
+            <button
+              onClick={() => {
+                if (resultsView === "carte") {
+                  setResultsView("liste");
+                } else {
+                  setResultsView("carte");
+                  requestUserPosSilently();
+                }
+              }}
+              aria-pressed={resultsView === "carte"}
+              title={resultsView === "carte" ? "Voir la liste" : "Voir la carte"}
+              className={`lg:hidden shrink-0 ml-auto order-last inline-flex items-center gap-1 rounded-full px-2.5 py-1 text-[12.5px] font-semibold transition-colors ${
+                resultsView === "carte" ? "bg-primary text-white" : "bg-surface-2 text-ink"
+              }`}
+            >
+              <MapPin size={14} weight={resultsView === "carte" ? "fill" : "regular"} aria-hidden />
+              {resultsView === "carte" ? "Carte" : "Liste"}
+            </button>
             {zoneControls}
           </div>
+
+          {/* Catégories — accessibles en mobile dans les résultats/la carte
+              (la sidebar catégories est desktop uniquement). */}
+          {!mobileTiles && (
+            <div className="lg:hidden flex gap-1.5 overflow-x-auto pb-1 mb-3 -mt-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+              <button
+                onClick={() => selectCategoryChip("all")}
+                className={`shrink-0 px-3 py-1.5 rounded-pill text-[12.5px] font-semibold transition-colors ${
+                  active === "all" ? "bg-primary text-white" : "bg-surface-2 text-ink"
+                }`}
+              >
+                Toutes
+              </button>
+              {CATEGORIES.filter((c) => (counts[c.key] || 0) > 0).map((c) => {
+                const CIcon = iconForKey(c.key);
+                const isActive = active === c.key;
+                return (
+                  <button
+                    key={c.key}
+                    onClick={() => selectCategoryChip(c.key)}
+                    className={`shrink-0 inline-flex items-center gap-1.5 px-3 py-1.5 rounded-pill text-[12.5px] font-semibold transition-colors ${
+                      isActive ? "text-white" : "bg-surface-2 text-ink"
+                    }`}
+                    style={isActive ? { background: c.color } : undefined}
+                  >
+                    {CIcon ? <CIcon size={13} weight={isActive ? "fill" : "regular"} aria-hidden /> : <span aria-hidden>{c.emoji}</span>}
+                    {c.label}
+                  </button>
+                );
+              })}
+            </div>
+          )}
 
           {geoStatus === "denied" && nearMe === false && (
             <p className="mb-3 text-[12.5px] text-muted">
@@ -1642,6 +1845,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                     fitKey={`${active}|${[...activeThemes].join(",")}|${activeZone ?? ""}`}
                     hoveredId={hoveredId}
                     onHover={setHoveredId}
+                    userPos={userPos}
                   />
                 </div>
               </div>

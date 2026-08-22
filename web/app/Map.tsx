@@ -128,6 +128,15 @@ function MapController({
   return null;
 }
 
+// Icône « ma position » : pastille bleue distincte des marqueurs de fiches
+// (couleur hors palette catégories) avec halo, façon Google Maps / mobile OS.
+const userPosIcon = L.divIcon({
+  html: `<div style="width:16px;height:16px;border-radius:50%;background:#1a73e8;border:3px solid #fff;box-shadow:0 0 0 2px rgba(26,115,232,.35),0 1px 4px rgba(0,0,0,.35);"></div>`,
+  className: "",
+  iconSize: [16, 16],
+  iconAnchor: [8, 8],
+});
+
 export default function Map({
   businesses,
   selectedId,
@@ -136,6 +145,7 @@ export default function Map({
   fitKey = "all",
   hoveredId = null,
   onHover,
+  userPos,
 }: {
   businesses: Business[];
   selectedId: string | null;
@@ -144,6 +154,8 @@ export default function Map({
   fitKey?: string;
   hoveredId?: string | null;
   onHover?: (id: string | null) => void;
+  /** Position de l'utilisateur (« Autour de moi ») : affichée comme pastille bleue. */
+  userPos?: { lat: number; lng: number } | null;
 }) {
   const markersRef = useRef<Record<string, LeafletMarker>>({});
   const mappable = businesses.filter((b) => b.lat !== undefined && b.lng !== undefined);
@@ -175,6 +187,11 @@ export default function Map({
       />
       <MapController businesses={mappable} selectedId={selectedId} markersRef={markersRef} fitKey={fitKey} />
       <BoundsReporter onBoundsChange={onBoundsChange} />
+      {userPos && (
+        <Marker position={[userPos.lat, userPos.lng]} icon={userPosIcon}>
+          <Popup minWidth={100}>Vous êtes ici</Popup>
+        </Marker>
+      )}
       {mappable.map((b) => {
         const cat = CATEGORY_MAP[b.category];
         return (
