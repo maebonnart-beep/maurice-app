@@ -8678,6 +8678,7 @@
       "restaurants"
     ],
     "zone": "sud",
+    "hours": "Dîner jusqu'à 22h (adultes uniquement)",
     "description": "Restaurant indien de l'hôtel Heritage Awali (Bel Ombre), décor inspiré des palais indiens. Tandoori, paneer, currys parfumés, nombreuses options végétariennes. Très bien noté (5/5).",
     "filters": [
       "indienne"
@@ -8716,6 +8717,7 @@
       "restaurants"
     ],
     "zone": "sud",
+    "hours": "Mar 11h-17h, autres jours 11h-20h (soir sur réservation)",
     "description": "Petite table de Bel Ombre face à la mer, tenue par une habitante accueillante, sans carte fixe (poisson ou calamar du jour). Avis partagés, jugée chère par certains.",
     "filters": [
       "mauricienne"
@@ -9150,6 +9152,7 @@
       "restaurants"
     ],
     "zone": "est",
+    "hours": "Tous les jours 12h-15h",
     "description": "Restaurant du golf de Belle Mare (Links) à Poste de Flacq, spécialités grillées : bœuf, poisson et travers de porc. Ouvert le midi ; très bien noté (5/5).",
     "filters": [
       "grillades"
@@ -9185,6 +9188,7 @@
       "restaurants"
     ],
     "zone": "est",
+    "hours": "Tous les jours 11h-21h",
     "description": "Restaurant chinois/asiatique réputé de la région de Belle Mare, cuisine mauricienne et orientale mêlée d'influences européennes (curry thaï, poisson grillé au wok, homard grillé). Bien noté (4,5/5).",
     "filters": [
       "asiatique"
@@ -9368,6 +9372,7 @@
       "restaurants"
     ],
     "zone": "est",
+    "hours": "Déjeuner 12h30-15h, goûter 16h-17h30, dîner 18h30-22h",
     "description": "Restaurant à la carte de l'hôtel Long Beach Mauritius (Poste de Flacq), poisson frais et cuisine mauricienne/internationale, cadre bord de plage.",
     "filters": [
       "mauricienne",
