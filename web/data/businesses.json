@@ -8657,6 +8657,7 @@
       "restaurants"
     ],
     "zone": "sud",
+    "hours": "Tous les jours 7h-22h",
     "description": "Restaurant gastronomique de l'Outrigger (Bel Ombre), cuisine mauricienne revisitée (tartare, crabe girafe, langouste), cadre romantique en surplomb des champs de canne. Très bien noté (4,7/5).",
     "filters": [
       "tables-exception",
@@ -8793,6 +8794,7 @@
     ],
     "badge": "selection",
     "zone": "sud",
+    "hours": "Lun-Sam 9h-17h, fermé Dim",
     "description": "Restaurant tout en verre du Domaine de Bois Chéri, perché en bordure du lac de cratère des Cygnes depuis 2008. Vue superbe sur le lagon, le lac et les champs de thé. Cuisine mauricienne traditionnelle soignée, avec de nombreuses préparations à base des thés du domaine (poulet au thé vert, chutney de thé, etc.). Plats environ 500 à 1 600 Rs.",
     "filters": [
       "mauricienne",
@@ -8833,6 +8835,7 @@
       "restaurants"
     ],
     "zone": "sud",
+    "hours": "Dîner 18h30-22h (jours variables, sur réservation)",
     "description": "Restaurant chic-décontracté de l'hôtel Shanti Maurice (Saint Félix), plus de 250 rhums du monde, grillades et comfort food. Dîner sur réservation.",
     "filters": [
       "grillades"
@@ -9201,6 +9204,7 @@
       "restaurants"
     ],
     "zone": "est",
+    "hours": "Déjeuner 12h-15h30, goûter 15h30-18h, dîner 19h-22h",
     "description": "Beach club et restaurant du LUX* Belle Mare, sur la plage, cuisine méditerranéenne avec options végé/vegan/sans gluten. Déjeuners avec vue sur mer confirmée par les avis, ambiance qui vire au \"rouge électrique\" au coucher du soleil.",
     "filters": [
       "europeenne",
@@ -9221,6 +9225,7 @@
       "restaurants"
     ],
     "zone": "est",
+    "hours": "Dîner 19h-22h30",
     "description": "Restaurant gastronomique du domaine de Constance Belle Mare Plage, réputé pour sa cave à vins de 15 000 bouteilles issues de plus de 1300 domaines et l'accueil régulier de chefs étoilés invités.",
     "filters": [
       "tables-exception",
@@ -9242,6 +9247,7 @@
       "restaurants"
     ],
     "zone": "est",
+    "hours": "Dîner à partir de 18h30 (couples uniquement à partir de 20h30)",
     "description": "Restaurant gastronomique chinois du LUX* Belle Mare, ambiance feutrée et décor asiatique soigné. Classiques sichuanais, shanghaïens et cantonais : canard laqué, dim sum artisanaux, station de nouilles fraîches.",
     "filters": [
       "asiatique"
@@ -9301,6 +9307,7 @@
       "restaurants"
     ],
     "zone": "est",
+    "hours": "Dîner 19h30-22h30 (déjeuner en saison 12h30-15h)",
     "description": "Trattoria de l'Ambre Resort & Spa (Palmar), antipasti maison, pâtes et pizzas au feu de bois, carte des vins étoffée.",
     "filters": [
       "italien",
@@ -9381,6 +9388,7 @@
       "restaurants"
     ],
     "zone": "est",
+    "hours": "Lun-Sam 8h-18h, fermé Dim",
     "description": "Café-boulangerie-épicerie dans une ancienne maison créole en pierre du domaine de Constance Estate (Central Flacq). Cuisine locale et française, pâtisserie appréciée. Fermé le dimanche.",
     "filters": [
       "europeenne"
