@@ -1244,6 +1244,7 @@
       "cafes-bars-glaciers"
     ],
     "zone": "nord",
+    "hours": "Petit-déj 7h-10h30, brunch/déjeuner 11h-15h, dîner 18h30-22h",
     "description": "Beach club et restaurant de l'hôtel LUX* Grand Baie, ambiance conviviale et vue sur le lagon. Cuisine d'inspiration méditerranéenne avec Italian Kitchen et bar à mozzarella, boulangerie, grillades de fruits de mer. Service salué, attentif aux régimes spécifiques ; carte qui évolue du petit-déjeuner au dîner.",
     "filters": [
       "europeenne",
@@ -1418,6 +1419,7 @@
     ],
     "priceRange": "se-faire-plaisir",
     "zone": "nord",
+    "hours": "Bar 7h-23h, déjeuner 12h-15h30, dîner 19h-22h30",
     "description": "Rooftop adultes uniquement du LUX* Grand Baie (1190 m²) surplombant le lagon et les îlots du nord, piscine à débordement de 30 m, cabanas, cocktails créatifs et sessions DJ live. Idéal coucher de soleil, tapas, ambiance lounge du jour à la nuit.",
     "filters": [
       "bars"
@@ -7166,6 +7168,7 @@
     ],
     "badge": "selection",
     "zone": "ouest",
+    "hours": "Lun-Sam 18h30-22h30",
     "description": "Restaurant italien du chef Rocco à La Mivoie (route royale, Rivière Noire/Tamarin), recettes sardes et siciliennes faites maison et glaces artisanales. Agréable terrasse couverte et jardin extérieur avec musique live le week-end ; jouxte une épicerie italienne.",
     "filters": [
       "italien",
@@ -7610,6 +7613,7 @@
       "cafes-bars-glaciers"
     ],
     "zone": "ouest",
+    "hours": "Mar-Dim 8h-3h",
     "description": "Beach club/night-club de Flic en Flac mêlant lounge de plage décontracté et ambiance clubbing (DJ, karaoké, foot en salle, billard, fléchettes), vue sur l'océan. Ouvert 8h-3h du mardi au dimanche.",
     "filters": [
       "bars"
@@ -7964,6 +7968,7 @@
     ],
     "zone": "sud",
     "badge": "selection",
+    "hours": "Tous les jours 16h30-19h30",
     "description": "Bar perché sur les hauteurs du domaine de Lakaz Chamarel, à Piton Canot, avec une vue panoramique sur les terres colorées de Chamarel jusqu'à la mer. Réputé pour ses couchers de soleil \"magiques\", ses cocktails travaillés (dont le Chamarel Passion Mojito) et son ambiance intimiste ; DJ live le samedi soir. Ouvert tous les jours de 16h30 à 19h30, accessible aux résidents comme aux visiteurs sur réservation.",
     "filters": [
       "plus-belles-vues",
@@ -8985,6 +8990,7 @@
     ],
     "badge": "selection",
     "zone": "sud",
+    "hours": "Dim-Mer 12h-21h30, Jeu 7h-15h30, Ven-Sam 12h-23h",
     "description": "Adresse animée en bord de route côtière à Pointe d'Esny, cuisine cajun/créole, pizzas réputées et calamars. Ambiance plage rustique, musique live, terrasse ombragée.",
     "filters": [
       "grillades",
@@ -13731,6 +13737,7 @@
       "cafes-bars-glaciers"
     ],
     "zone": "nord",
+    "hours": "Ven-Sam 23h-6h",
     "description": "Discothèque phare du nord de l'île à Grand Baie, deux pistes de danse (intérieure trance/house, extérieure années 80), son de qualité et lounge cocktails. Ouvert vendredi-samedi, 23h-6h.",
     "filters": [
       "bars"
@@ -13868,6 +13875,7 @@
       "cafes-bars-glaciers"
     ],
     "zone": "nord",
+    "hours": "Mar-Ven et Dim 12h-15h, Sam 12h-15h et 18h-20h, fermé Lun",
     "description": "Food-truck de Grand Baie tenu par un couple, spécialisé dans les tacos birria (bœuf braisé, fromage) façon mexicaine, portions généreuses et accueil chaleureux.",
     "filters": [
       "snacks-plage"
@@ -13907,6 +13915,7 @@
       "cafes-bars-glaciers"
     ],
     "zone": "nord",
+    "hours": "Tous les jours 11h30-00h",
     "description": "Snack de rue de Grand Baie au bon rapport qualité-prix : paninis/wraps au poulet ou agneau, sauce piment vert mauricien, crêpes au lait concentré. Bien noté (5/5).",
     "filters": [
       "snacks-plage"
@@ -14002,6 +14011,7 @@
       "cafes-bars-glaciers"
     ],
     "zone": "nord",
+    "hours": "Tous les jours 11h-20h30",
     "description": "Restaurant en bord de mer de Pointe aux Piments réputé pour ses vues sur le coucher de soleil, cuisine mauricienne (fruits de mer, caris) ; avis mitigés selon certains retours.",
     "filters": [
       "snacks-plage"
@@ -17995,6 +18005,7 @@
       "cafes-bars-glaciers"
     ],
     "zone": "ouest",
+    "hours": "Petit-déj 7h30-9h30, déjeuner 11h30-13h30, dîner 19h-22h",
     "description": "Restaurant familial au cadre tropical à Flic en Flac, tenu par Ruben (qui possède aussi une adresse à Chamarel). Cuisine mauricienne servie en intérieur comme en extérieur ; avis partagés, certains visiteurs regrettant un entretien inégal des lieux.",
     "filters": [
       "cafes-terrasses"
@@ -18014,6 +18025,7 @@
       "cafes-bars-glaciers"
     ],
     "zone": "ouest",
+    "hours": "Tous les jours 8h-20h, fermé Mer",
     "description": "Wellness café ouvert en 2024 par Sabrina Patten : petits-déjeuners, déjeuners et dîners sains aux influences variées, massages ayurvédiques, et événements (projections, art-thérapie, soirées karaoké). Très bien noté (5/5), avis élogieux sur la fraîcheur des plats et l'ambiance calme.",
     "filters": [
       "cafes-terrasses"
@@ -18053,6 +18065,7 @@
       "cafes-bars-glaciers"
     ],
     "zone": "ouest",
+    "hours": "Lun-Jeu et Dim 9h30-22h, Ven-Sam 9h30-23h (drive-thru 24h/24 Ven-Sam)",
     "description": "Enseigne internationale bien connue, située au Cascavelle Shopping Mall.",
     "filters": [
       "cafes-terrasses"
@@ -18091,6 +18104,7 @@
       "cafes-bars-glaciers"
     ],
     "zone": "ouest",
+    "hours": "Lun et Ven 11h-17h, autres jours 11h-19h30",
     "description": "Food-truck populaire de Flic en Flac (4,3/5), cuisine locale et occidentale : pizzas, kebabs, sandwichs, nouilles sautées, pain kebab, poulet croustillant.",
     "filters": [
       "snacks-plage"
@@ -18151,6 +18165,7 @@
     ],
     "badge": "selection",
     "zone": "ouest",
+    "hours": "Tous les jours 10h-18h",
     "description": "Kiosque de rue emblématique de Flic en Flac, considéré comme le vendeur de farata (roti) le plus célèbre du coin, garni au choix de poisson, bœuf, poulet ou légumes. Prix très bas, forte affluence. Ouvert tous les jours 10h-18h.",
     "filters": [
       "snacks-plage"
@@ -18189,6 +18204,7 @@
       "cafes-bars-glaciers"
     ],
     "zone": "ouest",
+    "hours": "Dim 8h-17h, Lun-Sam 8h-22h",
     "description": "Petit établissement d'une trentaine de couverts à Cascavelle Shopping Village (Bambous, Flic en Flac), cuisine méditerranéenne inspirée de la côte européenne. Ambiance cosy adaptée aux dîners en couple.",
     "filters": [
       "snacks-plage"
@@ -18208,6 +18224,7 @@
       "cafes-bars-glaciers"
     ],
     "zone": "ouest",
+    "hours": "Lun-Jeu 11h-21h30, Ven-Sam 11h-22h, Dim et jours fériés 11h-22h",
     "description": "Enseigne de fast-food sud-africaine du Cascavelle Shopping Mall (Flic en Flac), spécialisée burgers de bœuf, poulet et végétariens, et frites. Note moyenne 3,4/5.",
     "filters": [
       "snacks-plage"
@@ -18227,6 +18244,7 @@
       "cafes-bars-glaciers"
     ],
     "zone": "ouest",
+    "hours": "Mar-Dim, dîner 18h30-22h, fermé Lun",
     "description": "Restaurant thaï du Hilton Mauritius Resort & Spa (Wolmar, Flic en Flac), dirigé par la cheffe Karnsinee Thirapuncharoj, pavillon thaï romantique et cocktails d'inspiration locale. Options végétariennes et véganes, dîner uniquement, fermé le lundi.",
     "filters": [
       "snacks-plage"
@@ -24696,6 +24714,7 @@
       "cafes-bars-glaciers"
     ],
     "zone": "nord",
+    "hours": "Lun, Mer-Sam 10h-22h30, Mar 10h-15h30, Dim 10h-22h30",
     "description": "Beach club et restaurant du LUX* Grand Gaube, cuisine méditerranéenne (bar à mozzarella) servie sur le sable, éclairage rouge caractéristique au coucher du soleil, DJ résident pour une ambiance festive.",
     "filters": [
       "bars"
