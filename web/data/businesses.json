@@ -10851,6 +10851,7 @@
       "restaurants"
     ],
     "zone": "centre",
+    "hours": "Mar-Sam 12h-15h et 18h-21h, Dim 12h-15h, fermé Lun",
     "description": "Restaurant thaï authentique de Curepipe fondé en 2022 par le Chef Jonathan, à l'étage avec vue sur la ville. Pad thaï, curry vert, tom yum, salade de papaye ; portions généreuses.",
     "filters": [
       "asiatique"
@@ -10870,6 +10871,7 @@
       "restaurants"
     ],
     "zone": "centre",
+    "hours": "Tous les jours 9h-17h",
     "description": "Restaurant installé dans une demeure coloniale de 1872 en bois de teck à Forest-Side (Curepipe), aujourd'hui musée du thé mauricien, cadre patrimonial associé à un jardin de camphriers.",
     "filters": [
       "tables-exception"
@@ -10947,6 +10949,7 @@
       "restaurants"
     ],
     "zone": "centre",
+    "hours": "Tous les jours 11h-22h",
     "description": "Une des adresses indiennes les plus courues de l'île, appréciée par toutes les communautés. Décor immersif et portions généreuses ; réservation conseillée le week-end.",
     "filters": [
       "indienne"
@@ -11352,6 +11355,7 @@
       "restaurants"
     ],
     "zone": "centre",
+    "hours": "Lun-Jeu et Dim 11h30-21h, Ven-Sam 11h30-22h",
     "description": "Chaîne sud-africaine spécialisée dans les fruits de mer à partager, ambiance décontractée et familiale, plusieurs adresses sur l'île.",
     "filters": [
       "fruits-de-mer"
@@ -11409,6 +11413,7 @@
       "restaurants"
     ],
     "zone": "centre",
+    "hours": "Lun-Sam 12h-14h et 19h-22h30, fermé Dim",
     "description": "Adresse indienne du Domaine Les Pailles, équipe de chefs venus du sous-continent proposant une grande variété de spécialités régionales.",
     "filters": [
       "tables-exception",
@@ -11640,6 +11645,7 @@
       "restaurants"
     ],
     "zone": "centre",
+    "hours": "Tous les jours 11h-22h",
     "description": "Enseigne internationale de fast-food à l'angle des rues Sir William Newton et Léoville L'Homme (Port Louis), salle pouvant accueillir jusqu'à 105 personnes, livraison le midi pour les bureaux voisins.",
     "filters": [
       "grillades",
