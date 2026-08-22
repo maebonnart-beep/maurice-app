@@ -7233,6 +7233,7 @@
       "restaurants"
     ],
     "zone": "ouest",
+    "hours": "Bar 8h-23h, déjeuner 12h-15h, dîner Lun-Sam 18h30-22h",
     "description": "Restaurant de fruits de mer de l'Hilton Mauritius Resort & Spa (Wolmar), en bord de plage. Déjeuner décontracté (salades, burgers, poisson du jour) et dîner plus gastronomique.",
     "filters": [
       "fruits-de-mer"
@@ -7252,6 +7253,7 @@
       "restaurants"
     ],
     "zone": "ouest",
+    "hours": "Déjeuner 12h30-15h30, dîner 19h-22h, fermé Dim",
     "description": "Table d'un hôtel 5 étoiles installée entre piscine et lagon. Fruits de mer haut de gamme (langouste, plateau de fruits de mer) et wagyu, service très soigné ; réservation indispensable.",
     "filters": [
       "fruits-de-mer"
@@ -7354,6 +7356,7 @@
       "restaurants"
     ],
     "zone": "ouest",
+    "hours": "Tous les jours, dîner 19h-22h30",
     "description": "Table gastronomique indienne du Maradiva Villas Resort & Spa (Flic en Flac), cuisine indienne et pan-asiatique raffinée, dîner uniquement, tenue smart casual exigée.",
     "filters": [
       "indienne",
