@@ -49546,6 +49546,7 @@
       "cafes-bars-glaciers"
     ],
     "zone": "nord",
+    "hours": "Mar-Sam 8h-17h, fermé Dim-Lun",
     "description": "Café-restaurant de style allemand niché dans un jardin coloré, réputé pour ses gâteaux, crêpes, cafés et son ambiance conviviale.",
     "filters": [
       "cafes-terrasses"
@@ -49594,6 +49595,7 @@
       "cafes-bars-glaciers"
     ],
     "zone": "nord",
+    "hours": "Dim 11h-21h, Lun 10h30-19h30, Mar-Jeu 10h30-22h, Ven-Sam 10h30-23h",
     "description": "Beach club face au lagon de Péreybère avec terrasse pieds dans le sable et roof terrace, petit-déjeuner face à la mer et brunch du dimanche réputé.",
     "filters": [
       "bars"
@@ -50009,6 +50011,7 @@
     ],
     "zone": "nord",
     "priceRange": "prix-moyen",
+    "hours": "Tous les jours 11h-21h30",
     "description": "Bistro sympa et raffiné sur l'esplanade de La Croisette à Grand Baie, carte de vins et viandes réputée, ouvert tous les jours.",
     "filters": [
       "bars"
@@ -51413,6 +51416,7 @@
       "boulangeries-patisseries"
     ],
     "zone": "est",
+    "hours": "Tous les jours 8h-20h",
     "description": "Café italien du Radisson Blu Azuri Village, réputé pour ses viennoiseries et pâtisseries maison exceptionnelles, ses pizzas au feu de bois, pâtes fraîches et cafés soignés.",
     "filters": [
       "italien"
