@@ -3,7 +3,7 @@
 import type { Business } from "@/lib/types";
 import { SUBCATEGORIES, PRICE_RANGES, CATEGORY_MAP, FILTER_GROUPS } from "@/data/categories";
 import { displayName, displayCity } from "@/lib/format";
-import { accentColorFor } from "./Badge";
+import { accentColorFor, SpecialBadge } from "./Badge";
 import { FavoriteButton } from "./FavoriteButton";
 import { FACT_ICONS, CONTACT_ICONS, iconForKey, subIconFor } from "@/lib/icons";
 import type { Icon } from "@phosphor-icons/react";
@@ -12,11 +12,6 @@ import type { Icon } from "@phosphor-icons/react";
 const FILTER_OPTION_MAP = Object.fromEntries(
   FILTER_GROUPS.flatMap((g) => g.options.map((o) => [o.key, o]))
 );
-
-/** Icône compacte des badges de mise en avant, affichée dès la fiche liste. */
-const ROW_BADGE_SRC: Record<"selection", string> = {
-  selection: "/badge-selection.png",
-};
 
 const DIFFICULTY_LABELS: Record<string, string> = {
   debutant: "Débutant",
@@ -108,7 +103,7 @@ export function BusinessCard({
       onClick={() => onSelect(b.id)}
       onMouseEnter={() => onHover(b.id)}
       onMouseLeave={() => onHover(null)}
-      className={`bg-surface border rounded-card p-2.5 shadow-card flex items-center gap-3 cursor-pointer transition-colors ${
+      className={`relative bg-surface border rounded-card p-2.5 shadow-card flex items-center gap-3 cursor-pointer transition-colors ${
         active ? "border-accent" : "border-border"
       }`}
       style={
@@ -121,12 +116,18 @@ export function BusinessCard({
           : undefined
       }
     >
+      {(b.badge === "selection" || b.themes?.includes("kids-friendly")) && (
+        <div className="absolute top-1.5 right-1.5 flex items-center gap-1 z-10">
+          {b.badge === "selection" && (
+            <SpecialBadge variant="selection" className="h-9 w-9 shrink-0 drop-shadow-md" />
+          )}
+          {b.themes?.includes("kids-friendly") && (
+            <SpecialBadge variant="kids-friendly" className="h-9 w-9 shrink-0 drop-shadow-md" />
+          )}
+        </div>
+      )}
       <div className="flex-1 min-w-0">
         <div className="flex items-center gap-1.5 flex-wrap">
-          {b.badge === "selection" && (
-            // eslint-disable-next-line @next/next/no-img-element
-            <img src={ROW_BADGE_SRC[b.badge]} alt="" aria-hidden className="w-5 h-5 shrink-0" />
-          )}
           {b.badge === "partenaire" && <span aria-hidden>⭐</span>}
           <h3 className="m-0 font-serif text-[15.5px] font-semibold leading-[1.2] tracking-[-.005em] truncate">
             {displayName(b.name)}
