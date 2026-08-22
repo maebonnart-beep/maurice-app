@@ -7482,6 +7482,7 @@
       "restaurants"
     ],
     "zone": "ouest",
+    "hours": "Mar-Jeu 11h-14h et 19h-22h, Ven 11h-14h et 19h-2h, Sam 19h-2h, fermé Dim-Lun",
     "description": "Grand établissement de Cascavelle combinant restaurant créole (buffet en journée), bar et espace concerts live, ambiance conviviale sur la côte ouest.",
     "filters": [
       "mauricienne"
@@ -7542,6 +7543,7 @@
       "restaurants"
     ],
     "zone": "ouest",
+    "hours": "Lun-Jeu 9h30-21h, Ven 9h30-22h, Sam 9h30-21h30, fermé Dim",
     "description": "Restaurant de Plaine Champagne mêlant technique française et produits locaux mauriciens, avec une carte de vins et cocktails.",
     "filters": [
       "europeenne",
@@ -7563,6 +7565,7 @@
       "restaurants"
     ],
     "zone": "ouest",
+    "hours": "Lun, Mer-Dim 12h-14h30 et 18h-21h30, fermé Mar",
     "description": "Petit restaurant chinois familial de La Mivoie, Rivière Noire, tenu par un chef originaire de Chine, réputé pour son authenticité à prix modéré.",
     "filters": [
       "asiatique"
@@ -7978,6 +7981,7 @@
       "restaurants"
     ],
     "zone": "sud",
+    "hours": "Lun-Sam 11h-16h, fermé Dim",
     "description": "Restaurant créole-cajun de Chamarel, proche des Terres des Sept Couleurs, cuisine fruits de mer avec options végétariennes. Bien noté (4,3/5), avis mitigés sur les prix.",
     "filters": [
       "fruits-de-mer",
@@ -8061,6 +8065,7 @@
       "restaurants"
     ],
     "zone": "sud",
+    "hours": "Tous les jours 11h-17h30",
     "description": "Restaurant de la Route Royale à Chamarel, cuisine indienne/mauricienne/italienne et poissons. Avis très partagés, certains dénonçant des prix jugés touristiques.",
     "filters": [
       "mauricienne"
@@ -8080,6 +8085,7 @@
       "restaurants"
     ],
     "zone": "sud",
+    "hours": "Tous les jours 11h30-16h",
     "description": "Restaurant de Chamarel, cuisine mauricienne (gambas, foie de volaille épicé, calamars, langouste) à prix raisonnables et service attentif. Cartes bancaires non acceptées.",
     "filters": [
       "mauricienne",
@@ -8139,6 +8145,7 @@
       "restaurants"
     ],
     "zone": "ouest",
+    "hours": "Lun-Ven 8h-10h, 12h-15h et 18h-22h",
     "description": "Café-restaurant familial de La Gaulette, tenu par un couple local, servant une cuisine mauricienne à base de produits locaux pour le petit-déjeuner, le déjeuner et le dîner. Réputé pour ses superbes vues dans une ambiance familiale et décontractée.",
     "filters": [
       "mauricienne",
