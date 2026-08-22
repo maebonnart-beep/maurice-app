@@ -37903,6 +37903,7 @@
       "cafes-bars-glaciers"
     ],
     "zone": "centre",
+    "hours": "Lun-Sam 8h30-18h, fermé Dim",
     "description": "Salon de thé cosy connu pour ses cupcakes, cheesecakes, red velvet, muffins et donuts faits maison, accompagnés de thés Twinings ou milkshakes. Décor chaleureux très apprécié, mais quelques avis récents signalent un service parfois lent aux heures de pointe.",
     "filters": [
       "cafes-terrasses"
@@ -37938,6 +37939,7 @@
       "cafes-bars-glaciers"
     ],
     "zone": "sud",
+    "hours": "Tous les jours 10h-21h",
     "description": "Chaîne sud-africaine installée au Bo'Valon Mall, réputée pour ses giant muffins (chocolat, myrtille), ses cafés et sa carte réconfortante (steaks, pâtes, gâteaux maison). Avis partagés, certains visiteurs signalant des repas inégaux.",
     "filters": [
       "cafes-terrasses"
@@ -38009,6 +38011,7 @@
       "cafes-bars-glaciers"
     ],
     "zone": "centre",
+    "hours": "Lun-Ven 7h30-19h, Sam-Dim 8h-17h",
     "description": "5e coffee shop de l'enseigne Café LUX*, au design façon Brooklyn, avec vue sur le port. Large choix de cafés et thés, pâtisseries fraîches, sandwichs, salades et soupes (bar à salades à composer). Avis positifs sur le bon café et le service rapide et attentionné.",
     "filters": [
       "cafes-terrasses"
@@ -48781,6 +48784,7 @@
       "cafes-bars-glaciers"
     ],
     "zone": "nord",
+    "hours": "Lun-Ven 17h-23h, Sam-Dim 12h-23h",
     "description": "Restaurant-bar « #36 » de l'hôtel-boutique Mystik Lifestyle, sur la plage de Mont Choisy. Carte à la carte midi et soir, terrasse en bois au bord de la piscine à débordement avec vue panoramique sur le lagon — cadre prisé au coucher du soleil.",
     "lat": -20.020962,
     "lng": 57.5538971,
@@ -48805,6 +48809,7 @@
     ],
     "promoText": "Vue splendide, les pieds dans le sable, du calme et un cheesecake à tomber !",
     "zone": "nord",
+    "hours": "Tous les jours 9h-21h30",
     "description": "Beach club (by Evaco) sur la plage de Trou aux Biches, ouvert au public midi et soir : cuisine variée mauricienne et européenne, cocktails et carte de bar, les pieds dans le sable face au lagon. Piscine, transats et glacier sur place.",
     "filters": [
       "mauricienne",
@@ -48950,6 +48955,7 @@
       "restaurants"
     ],
     "zone": "nord",
+    "hours": "Lun 17h30-00h, Mar-Sam 17h30-1h, fermé Dim",
     "description": "Institution festive de Grand Baie réunissant le célèbre Banana Bar avec musique live, un restaurant grill à l'ambiance tropicale et le Blue Note Jazz'n'Blues Club. Réservations au +230 252 0897.",
     "filters": [
       "bars"
