@@ -4915,6 +4915,7 @@
     ],
     "priceRange": "bon-marche",
     "zone": "centre",
+    "hours": "Lun 11h30-14h30 et 17h30-20h30, Mar-Sam 17h30-20h30, fermé Dim",
     "description": "Petit restaurant thaïlandais familial de Curepipe (une vingtaine de couverts), tenu par un couple dont la cheffe, originaire de Thaïlande, a participé au concours télévisé thaïlandais \"Top Chef\". Plats préparés à la commande avec des produits frais, dans l'esprit de la cuisine de rue thaïlandaise ; considéré comme l'une des meilleures adresses thaïes de l'île.",
     "filters": [
       "asiatique"
@@ -6153,6 +6154,7 @@
       "restaurants"
     ],
     "zone": "nord",
+    "hours": "Lun-Sam 18h-22h, fermé Dim",
     "description": "Petit restaurant de Grand Baie tenu par Iven, ancien plongeur : poissons frits, samoussas, gâteaux piment, curry d'ourite, carte courte et prix raisonnables.",
     "filters": [
       "mauricienne",
@@ -6215,6 +6217,7 @@
       "restaurants"
     ],
     "zone": "nord",
+    "hours": "Lun-Sam 8h-15h, fermé Dim",
     "description": "Restaurant italo-mauricien de Pointe aux Canonniers (Grand Baie) dans un cadre de jardin, plats phares : risotto aux champignons, cannelloni ricotta-épinards, lasagne maison. Fermé le dimanche.",
     "filters": [
       "italien"
@@ -6293,6 +6296,7 @@
     ],
     "badge": "selection",
     "zone": "nord",
+    "hours": "Lun, Mer-Dim 17h30-22h30, fermé Mar (brunch Sam-Dim 10h-15h)",
     "description": "Restaurant de bord de mer à Grand Baie ouvert en 2009, cuisine romaine traditionnelle, pâtes et pizzas maison (pâte reposée 24h). Happy hour dès 15h, brunch le week-end.",
     "filters": [
       "italien"
