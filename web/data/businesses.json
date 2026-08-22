@@ -37518,14 +37518,19 @@
     "lat": -20.0163977,
     "lng": 57.5768411,
     "themes": [
-      "cafes-bars-glaciers"
+      "cafes-bars-glaciers",
+      "restaurants",
+      "boulangeries-patisseries"
     ],
+    "hours": "Lun-Ven 9h-17h, Sam-Dim 9h-15h",
     "priceRange": "prix-moyen",
+    "photoUrl": "/logo-cafe-moris-grand-baie.png",
     "description": "Petit café cosy et chaleureux de Grand Baie, tenu par une femme, salué pour son café, ses pâtisseries maison (dont pain au levain) et son ice tea mangue ; accueil très apprécié (5/5, 18 avis).",
     "zone": "nord",
     "filters": [
       "vegetarien",
-      "cafes-terrasses"
+      "cafes-terrasses",
+      "boulangeries-patisseries"
     ]
   },
   {
