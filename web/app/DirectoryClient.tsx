@@ -1075,11 +1075,11 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
   return (
     <div className="app min-h-screen flex flex-col">
       {/* En-tête « Lagon » : bandeau clair poulpe, logo clair + recherche */}
-      <header className="bg-surface border-b border-border shadow-sm">
+      <header className="sticky top-0 z-30 bg-surface border-b border-border shadow-sm">
         <button
           onClick={goHome}
           aria-label="Retour à l'accueil"
-          className="block w-full sm:max-w-[420px] mx-auto aspect-[1686/648] hover:opacity-90 active:scale-[.98] transition"
+          className="block w-[86%] sm:max-w-[360px] mx-auto aspect-[1686/648] hover:opacity-90 active:scale-[.98] transition"
         >
           <Logo light />
         </button>
