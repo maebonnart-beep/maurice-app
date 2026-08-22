@@ -13856,6 +13856,7 @@
     ],
     "badge": "selection",
     "zone": "nord",
+    "hours": "Lun-Sam 11h-21h, fermé Dim",
     "description": "Snack de la Route Royale à Grand Baie (aussi connu sous \"Chez Nanda\"), cuisine mauricienne et chinoise (soupe halim, riz frit) midi et soir. Très bien noté (5/5).",
     "filters": [
       "snacks-plage"
@@ -18085,6 +18086,7 @@
       "cafes-bars-glaciers"
     ],
     "zone": "ouest",
+    "hours": "Tous les jours 18h30-22h30",
     "description": "Concept original de Flic en Flac où les clients choisissent leur poisson, coquillages ou crevettes dans une vitrine réfrigérée avant cuisson à la sauce maison. Calamar grillé et poisson entier plébiscités, options végétariennes.",
     "filters": [
       "snacks-plage"
@@ -18185,6 +18187,7 @@
       "cafes-bars-glaciers"
     ],
     "zone": "ouest",
+    "hours": "Déjeuner à partir de 11h30, dîner à partir de 19h",
     "description": "Restaurant de plage haut de gamme du Maradiva Villas Resort & Spa (Wolmar, Flic en Flac), terrasse en bois à même le sable sous un arbre indigène. Poissons et fruits de mer cuits au feu de bois, couchers de soleil sur la côte ouest.",
     "filters": [
       "snacks-plage"
@@ -28581,6 +28584,7 @@
       "cafes-bars-glaciers"
     ],
     "zone": "nord",
+    "hours": "Lun-Sam 12h-15h et 18h-22h, fermé Dim",
     "description": "Restaurant familial mauricien/chinois/fruits de mer de Grand Baie, réputé pour son cari de fruits de mer et sa liqueur maison offerte en fin de repas.",
     "filters": [
       "snacks-plage"
