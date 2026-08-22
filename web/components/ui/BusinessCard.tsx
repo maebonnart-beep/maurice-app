@@ -33,7 +33,15 @@ export function metaFacts(b: Business): { Icon: Icon; label: string }[] {
   if (b.entryPrice) facts.push({ Icon: FACT_ICONS.entryPrice, label: b.entryPrice });
   if (b.difficultyLevel) facts.push({ Icon: FACT_ICONS.difficultyLevel, label: DIFFICULTY_LABELS[b.difficultyLevel] });
   if (b.guideRecommended !== undefined && !b.isAgency)
-    facts.push({ Icon: FACT_ICONS.guide, label: b.guideRecommended ? "Guide conseillé" : "Sans guide" });
+    facts.push({
+      Icon: FACT_ICONS.guide,
+      label:
+        b.guideRecommended === "required"
+          ? "Guide obligatoire"
+          : b.guideRecommended
+            ? "Guide conseillé"
+            : "Sans guide",
+    });
   if (b.sportsListed) facts.push({ Icon: FACT_ICONS.sports, label: b.sportsListed });
   if (b.hasRestauration !== undefined)
     facts.push({ Icon: FACT_ICONS.restauration, label: b.hasRestauration ? "Restauration sur place" : "Pas de restauration" });

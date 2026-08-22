@@ -3440,7 +3440,7 @@
     "name": "Île aux Aigrettes",
     "category": "sortir-decouvrir",
     "address": "Départ Pointe Jérôme, Mahébourg",
-    "phone": "",
+    "phone": "+230 5258 8139",
     "website": "https://www.mauritian-wildlife.org/",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Ile%20aux%20Aigrettes%20Mahebourg%20Mauritius",
     "lat": -20.4133,
@@ -3452,7 +3452,7 @@
     "hours": "Lun-Sam départs 9h30-14h30 (toutes les 30 min), Dim matin seulement 9h30-12h",
     "duration": "1h30-2h (visite guidée)",
     "difficultyLevel": "debutant",
-    "guideRecommended": true,
+    "guideRecommended": "required",
     "zone": "sud",
     "badge": "selection",
     "photoUrl": "/photos/ile-aux-aigrettes.jpg",
@@ -3463,31 +3463,6 @@
     "filters": [
       "parcs-animaliers"
     ]
-  },
-  {
-    "id": "ile-aux-aigrettes-faire-du-sport",
-    "name": "Île aux Aigrettes",
-    "category": "faire-du-sport",
-    "address": "Départ Pointe Jérôme, Mahébourg",
-    "phone": "",
-    "website": "https://www.mauritian-wildlife.org/",
-    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Ile%20aux%20Aigrettes%20Mahebourg%20Mauritius",
-    "lat": -20.4133,
-    "lng": 57.7228,
-    "themes": [
-      "randonnee-trail"
-    ],
-    "hours": "Lun-Sam départs 9h30-14h30 (toutes les 30 min), Dim matin seulement 9h30-12h",
-    "duration": "1h30-2h (visite guidée)",
-    "difficultyLevel": "debutant",
-    "guideRecommended": true,
-    "zone": "sud",
-    "badge": "selection",
-    "photoUrl": "/photos/ile-aux-aigrettes.jpg",
-    "photoUrls": ["/photos/ile-aux-aigrettes.jpg","/photos/ile-aux-aigrettes-2.jpg","/photos/ile-aux-aigrettes-3.jpg"],
-    "description": "Îlot-sanctuaire accessible en visite guidée par bateau (10 min de traversée depuis Pointe Jérôme), où évoluent en liberté tortues géantes d'Aldabra, geckos ornés et pigeons roses.",
-    "entryPrice": "≈ 1100 Rs/pers (traversée comprise), tarif résident ≈ 800 Rs/adulte et 400 Rs/enfant",
-    "koteMorisComment": "Excursion tout simplement passionnante avec l'ONG Wildlife Mauritius : 1h30 d'explications limpides sur la faune et la flore de l'île, les conséquences des extinctions passées et les actions en cours pour restaurer l'écosystème. Visite en petits groupes pour ne pas perturber les animaux en liberté, avec une guide exceptionnelle. Très accessible aux enfants — c'est même parfait pour eux. À prévoir : anti-moustique (assez humide et chaud, avec environ 3°C de plus que sur l'île principale)."
   },
   {
     "id": "mahebourg-museum",
@@ -12179,6 +12154,9 @@
     "description": "Grand aquarium du front de mer de Port Louis : parcours à travers 45 bassins thématiques pour observer requins, raies et près de 3500 spécimens marins de l'Océan Indien.",
     "entryPrice": "Rs 650 résident / Rs 1280 non-résident (adulte)",
     "zone": "centre",
+    "photoUrl": "/photos/odysseo-oceanarium-mauritius-ltd.jpg",
+    "photoUrls": ["/photos/odysseo-oceanarium-mauritius-ltd.jpg","/photos/odysseo-oceanarium-mauritius-ltd-2.jpg"],
+    "koteMorisComment": "Une bonne alternative pour ceux qui ne plongent pas ou ne font pas de snorkeling : l'oceanarium met l'accent sur la pédagogie et la protection du monde marin, avec des cartels didactiques à chaque bassin. Au programme : poissons de lagon et de la barrière de corail (hippocampes, poissons-lions, poissons-clowns, murènes), herbiers marins, poissons d'eau douce endémiques et invasifs. Le clou de la visite est l'immense bassin central, que l'on observe par-dessus puis par-dessous via un tunnel, où évoluent requins, raies, murènes et carangues, ainsi que des invertébrés et des méduses mises en valeur sous lumière noire. Deux bassins extérieurs complètent le parcours avec raies pastenagues et mourines javanaises. Seul bémol : un tarif jugé élevé pour la visite.",
     "filters": [
       "parcs-animaliers"
     ]

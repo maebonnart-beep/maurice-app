@@ -64,8 +64,8 @@ export type Business = {
   elevationGain?: string;
   /** Niveau de pratique. Randonnée-trail. */
   difficultyLevel?: "debutant" | "habitue" | "confirme";
-  /** Présence d'un guide conseillée. Randonnée-trail. */
-  guideRecommended?: boolean;
+  /** Présence d'un guide conseillée, ou obligatoire. Randonnée-trail. */
+  guideRecommended?: boolean | "required";
   /** True pour les agences/prestataires qui organisent des randonnées (par opposition aux sites/sentiers eux-mêmes). Randonnée-trail. */
   isAgency?: boolean;
   /** Sports/activités disponibles sur place, texte libre. Complexes-sportifs. */
