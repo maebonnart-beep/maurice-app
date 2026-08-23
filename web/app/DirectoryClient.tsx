@@ -449,16 +449,17 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
           if (!matches) return false;
         }
         // Facettes de rubrique : chaque groupe de filtre applicable (OU en son
-        // sein), prix (OU) et sélection/badge (OU) — testés sur b.filters.
+        // sein) — testé sur b.filters, uniquement quand une rubrique est active.
         if (activeRubrique) {
           const filters = b.filters || [];
           for (const g of applicableFilterGroups) {
             const sel = facetGroups[g.key];
             if (sel && sel.size > 0 && !filters.some((f) => sel.has(f))) return false;
           }
-          if (facetPrices.size > 0 && !(b.priceRange && facetPrices.has(b.priceRange))) return false;
-          if (facetBadges.size > 0 && !(b.badge && facetBadges.has(b.badge))) return false;
         }
+        // Prix et sélection/badge : facettes transversales, indépendantes de la rubrique.
+        if (facetPrices.size > 0 && !(b.priceRange && facetPrices.has(b.priceRange))) return false;
+        if (facetBadges.size > 0 && !(b.badge && facetBadges.has(b.badge))) return false;
         if (!q) return true;
         const rubriqueLabels = (b.themes || []).map((t) => RUBRIQUE_MAP[t]?.label || "").join(" ");
         return fuzzyMatch(
@@ -1180,7 +1181,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
               {coupsDeCoeur.length > 0 && (
                 <>
                   <div className="flex items-center justify-between mt-7 mb-2.5">
-                    <h2 className="text-[16px] font-bold text-ink">Nos coups de cœur</h2>
+                    <h2 className="text-[16px] font-bold text-ink">Les coups de cœur de Koté Moris</h2>
                     <button
                       onClick={() => { setBrowseAll(true); setFacetBadges(new Set(["selection"])); }}
                       className="text-[13px] font-semibold text-primary-deep active:scale-[.98]"
@@ -1241,7 +1242,8 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                 className="w-full mt-7 rounded-2xl p-4 flex items-center gap-3 text-left active:scale-[.99] transition-transform"
                 style={{ background: "var(--primary-tint)" }}
               >
-                <span className="text-2xl shrink-0" aria-hidden>🗺️</span>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="/badge-selection.png" alt="" aria-hidden className="h-9 w-9 shrink-0" />
                 <span className="flex-1 text-[13px] text-ink leading-snug">
                   Découvrez les meilleures adresses sélectionnées pour vous, partout à Maurice !
                 </span>
@@ -1252,21 +1254,6 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                   Voir la carte
                 </span>
               </button>
-
-              <div className="flex items-center gap-4 mt-6 pt-3 border-t border-border">
-                <button
-                  onClick={() => setHomeMode("favoris")}
-                  className="inline-flex items-center gap-1.5 text-[13px] font-semibold text-primary-deep active:scale-[.98]"
-                >
-                  <Heart size={16} weight="duotone" aria-hidden /> Mes sélections
-                </button>
-                <button
-                  onClick={() => setHomeMode("listes")}
-                  className="inline-flex items-center gap-1.5 text-[13px] font-semibold text-primary-deep active:scale-[.98]"
-                >
-                  <Star size={16} weight="duotone" aria-hidden /> Listes de Koté Moris
-                </button>
-              </div>
             </div>
           )}
 
@@ -1722,9 +1709,11 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
             {zoneControls}
           </div>
 
-          {/* Catégories — accessibles en mobile dans les résultats/la carte
-              (la sidebar catégories est desktop uniquement). */}
-          {!mobileTiles && (
+          {/* Catégories — accessibles en mobile dans les résultats/la carte,
+              uniquement en recherche/« voir tout » (browseAll) : quand on
+              arrive par Explorer par catégorie, on est déjà dans une seule
+              catégorie donc la rangée n'a plus de sens (sidebar desktop only). */}
+          {!mobileTiles && browseAll && (
             <div className="lg:hidden flex gap-1.5 overflow-x-auto pb-1 mb-3 -mt-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
               <button
                 onClick={() => selectCategoryChip("all")}
