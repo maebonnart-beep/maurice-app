@@ -1234,7 +1234,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                   setBrowseAll(true);
                   setHomeCategory(null);
                   setFacetBadges(new Set(["selection"]));
-                  setResultsView("carte");
+                  setResultsView("liste");
                   window.scrollTo({ top: 0, behavior: "smooth" });
                 }}
                 className="w-full mt-7 rounded-2xl p-4 flex items-center gap-3 text-left active:scale-[.99] transition-transform"
@@ -1249,7 +1249,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                   className="shrink-0 px-3.5 py-2 rounded-pill text-[12.5px] font-bold text-white"
                   style={{ background: "var(--primary)" }}
                 >
-                  Voir la carte
+                  Voir les adresses
                 </span>
               </button>
 
@@ -1259,7 +1259,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                   setBrowseAll(true);
                   setHomeCategory(null);
                   setActiveThemes(new Set(["kids-friendly"]));
-                  setResultsView("carte");
+                  setResultsView("liste");
                   window.scrollTo({ top: 0, behavior: "smooth" });
                 }}
                 className="w-full mt-3 rounded-2xl p-4 flex items-center gap-3 text-left active:scale-[.99] transition-transform"
@@ -1274,7 +1274,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                   className="shrink-0 px-3.5 py-2 rounded-pill text-[12.5px] font-bold text-white"
                   style={{ background: "var(--primary)" }}
                 >
-                  Voir la carte
+                  Voir les adresses
                 </span>
               </button>
             </div>
