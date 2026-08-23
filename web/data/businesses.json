@@ -28300,7 +28300,8 @@
     "description": "Restaurant de plage à Trou-aux-Biches : poisson grillé, calmars, fruits de mer.",
     "filters": [
       "fruits-de-mer"
-    ]
+    ],
+    "hours": "Sam-Jeu 9h-18h30, fermé ven"
   },
   {
     "id": "souvenir",
@@ -29324,7 +29325,8 @@
     "description": "Depuis près de quarante ans, Amigo est l'une des adresses de référence pour la langouste à l'Île Maurice, servie entière et grillée à la flamme, accompagnée de poissons frais et de plateaux de fruits de mer. Cadre convivial en bord de mer, personnel aux petits soins ; 4,5/5 sur TripAdvisor, quelques avis mentionnent un rapport qualité-prix élevé.",
     "filters": [
       "fruits-de-mer"
-    ]
+    ],
+    "hours": "Lun-Sam 11h30-14h30 & 18h30-22h30, fermé dim"
   },
   {
     "id": "chez-marilyn",
@@ -37810,7 +37812,8 @@
     "zone": "nord",
     "filters": [
       "tables-exception"
-    ]
+    ],
+    "hours": "Dîner 19h-22h30, fermé dim"
   },
   {
     "id": "atlantis-diving-center-vellin-bhurtun",
