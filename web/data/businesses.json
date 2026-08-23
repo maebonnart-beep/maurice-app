@@ -6684,7 +6684,8 @@
     "description": "Restaurant du club-house de Tamarina Golf Club, en bord de terrain de golf, cuisine mauricienne et française revisitée à base de produits frais.",
     "filters": [
       "europeenne"
-    ]
+    ],
+    "hours": "Tous les jours 7h-18h30"
   },
   {
     "id": "creole-shack",
@@ -6782,7 +6783,8 @@
     "description": "Restaurant familial de Flic en Flac face à la plage, cuisine mauricienne authentique (bol renversé, cari poulpe). Bien noté (4,3/5) et bon rapport qualité-prix.",
     "filters": [
       "mauricienne"
-    ]
+    ],
+    "hours": "Mer-Lun 12h-15h & 18h-21h30, fermé mar"
   },
   {
     "id": "melanzana",
@@ -6841,7 +6843,8 @@
     "filters": [
       "grillades",
       "fruits-de-mer"
-    ]
+    ],
+    "hours": "Tous les jours 12h-21h30"
   },
   {
     "id": "la-flamme-kreol",
@@ -6879,7 +6882,8 @@
     "description": "Restaurant-bar et lieu de sortie nocturne de Barachois (Tamarin), spécialisé grillades, tapas et ambiance sports bar en bord de mer. Terrasse extérieure et salle climatisée, DJ et concerts en soirée.",
     "filters": [
       "grillades"
-    ]
+    ],
+    "hours": "Mer-Jeu 18h-22h, Ven-Sam 18h-23h, fermé dim-lun-mar"
   },
   {
     "id": "le-whatever-tamarin",
