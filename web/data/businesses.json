@@ -6545,7 +6545,8 @@
     "filters": [
       "mauricienne",
       "fruits-de-mer"
-    ]
+    ],
+    "hours": "Lun-Sam 9h-20h, fermé dim"
   },
   {
     "id": "restaurant-vieille-rouge",
@@ -9463,7 +9464,8 @@
     "filters": [
       "fruits-de-mer",
       "plus-belles-vues"
-    ]
+    ],
+    "hours": "Tous les jours : petit-déj 7h30-10h, déjeuner 12h-14h30, cocktails 17h-19h30, dîner 19h30-22h"
   },
   {
     "id": "chopsticks",
@@ -9521,7 +9523,8 @@
     "description": "Restaurant principal à l'ambiance coloniale de l'hôtel Maritim (Balaclava/Turtle Bay), dominant la piscine et la mer. Buffet varié avec stations \"live cooking\" et comptoir à sushis en soirée.",
     "filters": [
       "plus-belles-vues"
-    ]
+    ],
+    "hours": "Tous les jours : petit-déj 7h30-10h30, déjeuner 12h30-14h30, goûter 15h30-17h30, dîner 18h30-22h"
   },
   {
     "id": "langouste-griller-dine-in-restaurant",
@@ -13777,7 +13780,8 @@
     "description": "Burger joint de Grand Baie spécialisé dans le smash burger de bœuf maturé, tout fait maison (pain, frites, sauces). Ambiance décontractée rock'n'roll, menu volontairement restreint.",
     "filters": [
       "grillades"
-    ]
+    ],
+    "hours": "Mar-Jeu 11h30-14h30 & 18h-20h30, Ven-Sam 11h30-14h30 & 18h-21h, fermé dim et lun"
   },
   {
     "id": "l-espadon-restaurant",
