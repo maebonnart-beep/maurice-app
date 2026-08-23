@@ -910,8 +910,11 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
   const tabBar = (
     <nav
       aria-label="Navigation principale"
-      className="fixed bottom-0 inset-x-0 z-40 bg-band border-t border-band-deep"
-      style={{ paddingBottom: "env(safe-area-inset-bottom)" }}
+      className="fixed bottom-0 inset-x-0 z-40 border-t border-band-deep"
+      style={{
+        paddingBottom: "env(safe-area-inset-bottom)",
+        background: "linear-gradient(180deg, var(--band) 0%, var(--band-deep) 100%)",
+      }}
     >
       <div className="max-w-[640px] mx-auto grid grid-cols-5 items-end px-2 pt-1.5 pb-1.5">
         <button
