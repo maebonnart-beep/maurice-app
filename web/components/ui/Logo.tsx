@@ -14,6 +14,10 @@ export function Logo({ size = 96, light = false }: { size?: number; light?: bool
         src="/bandeau-kotemoris-clair-v2.webp"
         alt="Koté Moris — les adresses de Maurice"
         className="block w-full h-full object-contain"
+        style={{
+          WebkitMaskImage: "linear-gradient(to bottom, black 92%, transparent 100%)",
+          maskImage: "linear-gradient(to bottom, black 92%, transparent 100%)",
+        }}
       />
     );
   }
