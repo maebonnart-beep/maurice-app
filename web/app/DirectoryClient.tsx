@@ -32,7 +32,6 @@ const SELECTION_ICONS: Record<SelectionIconKey, Icon> = {
   Sparkle,
 };
 import { Logo } from "@/components/ui/Logo";
-import { HomeBandeauScene } from "@/components/ui/HomeBandeauScene";
 import { SearchInput } from "@/components/ui/SearchInput";
 import { CategoryRow } from "@/components/ui/CategoryRow";
 import { BusinessCard } from "@/components/ui/BusinessCard";
@@ -1078,10 +1077,10 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
   return (
     <div className="app min-h-screen flex flex-col">
       {/* En-tête « Lagon » : bandeau clair poulpe, logo clair + recherche.
-          Sur l'accueil (menu des 4 tuiles), un décor de nature mauricienne
-          (palmiers, montagne, lagon) occupe tout le bandeau en arrière-plan et
-          le poulpe est affiché en grand par-dessus ; ailleurs le header reste
-          blanc et compact pour bien séparer le contenu qui défile en dessous. */}
+          Le décor de nature mauricienne (montagne, lagon) est déjà intégré
+          à l'image du bandeau clair (cf. Logo light) ; ailleurs le header
+          reste blanc et compact pour bien séparer le contenu qui défile
+          en dessous. */}
       <header
         className={`relative z-30 shadow-sm overflow-hidden ${
           showHome && homeMode === "menu"
@@ -1089,7 +1088,6 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
             : "bg-surface border-b border-border"
         }`}
       >
-        {showHome && homeMode === "menu" && <HomeBandeauScene />}
         {showHome && homeMode === "menu" ? (
           <div className="relative pt-5 pb-3">
             <button
@@ -1243,9 +1241,34 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                 style={{ background: "var(--primary-tint)" }}
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/badge-selection.png" alt="" aria-hidden className="h-11 w-11 shrink-0" />
+                <img src="/badge-selection.png" alt="" aria-hidden className="h-16 w-16 shrink-0" />
                 <span className="flex-1 text-[13px] text-ink leading-snug">
                   Découvrez les meilleures adresses sélectionnées pour vous, partout à Maurice !
+                </span>
+                <span
+                  className="shrink-0 px-3.5 py-2 rounded-pill text-[12.5px] font-bold text-white"
+                  style={{ background: "var(--primary)" }}
+                >
+                  Voir la carte
+                </span>
+              </button>
+
+              <button
+                onClick={() => {
+                  setNearMe(false);
+                  setBrowseAll(true);
+                  setHomeCategory(null);
+                  setActiveThemes(new Set(["kids-friendly"]));
+                  setResultsView("carte");
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
+                className="w-full mt-3 rounded-2xl p-4 flex items-center gap-3 text-left active:scale-[.99] transition-transform"
+                style={{ background: "var(--primary-tint)" }}
+              >
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="/badge-kids.png" alt="" aria-hidden className="h-16 w-16 shrink-0" />
+                <span className="flex-1 text-[13px] text-ink leading-snug">
+                  Des adresses testées et approuvées pour sortir en famille, partout à Maurice !
                 </span>
                 <span
                   className="shrink-0 px-3.5 py-2 rounded-pill text-[12.5px] font-bold text-white"
