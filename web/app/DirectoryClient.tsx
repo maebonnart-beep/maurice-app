@@ -1082,18 +1082,18 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
           reste blanc et compact pour bien séparer le contenu qui défile
           en dessous. */}
       <header
-        className={`relative z-30 shadow-sm overflow-hidden ${
+        className={`relative z-30 overflow-hidden ${
           showHome && homeMode === "menu"
             ? "bg-bg border-b border-transparent"
-            : "bg-surface border-b border-border"
+            : "bg-surface border-b border-border shadow-sm"
         }`}
       >
         {showHome && homeMode === "menu" ? (
-          <div className="relative pt-5 pb-3">
+          <div className="relative pb-3">
             <button
               onClick={goHome}
               aria-label="Retour à l'accueil"
-              className="block w-[94%] max-w-[680px] mx-auto aspect-[864/281] hover:opacity-90 active:scale-[.98] transition"
+              className="block w-full aspect-[864/281] hover:opacity-90 active:scale-[.98] transition"
             >
               <Logo light />
             </button>
@@ -1280,6 +1280,43 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                   Voir les adresses
                 </span>
               </button>
+
+              <div className="flex items-center justify-between mt-7 mb-2.5">
+                <h2 className="text-[16px] font-bold text-ink">Les listes de Koté Moris</h2>
+                <button
+                  onClick={() => setHomeMode("listes")}
+                  className="text-[13px] font-semibold text-primary-deep active:scale-[.98]"
+                >
+                  Voir tout ›
+                </button>
+              </div>
+              <div className="flex gap-3 overflow-x-auto pb-1 -mx-4 px-4 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+                {SELECTIONS.map((s) => (
+                  <button
+                    key={s.id}
+                    onClick={() => { setHomeMode("listes"); setSelectedListId(s.id); }}
+                    className="relative text-left shrink-0 w-[130px] aspect-[4/5] rounded-2xl overflow-hidden shadow-card active:scale-[.98] transition-transform"
+                  >
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src={s.photoUrl}
+                      alt=""
+                      aria-hidden
+                      loading="lazy"
+                      className="absolute inset-0 w-full h-full object-cover"
+                    />
+                    <div
+                      className="absolute inset-0"
+                      style={{ background: "linear-gradient(180deg, rgba(0,0,0,0) 45%, rgba(0,0,0,.72) 100%)" }}
+                    />
+                    <span className="absolute inset-x-0 bottom-0 p-2.5">
+                      <span className="block font-serif text-[12px] font-semibold leading-tight text-white line-clamp-2">
+                        {s.title}
+                      </span>
+                    </span>
+                  </button>
+                ))}
+              </div>
             </div>
           )}
 
