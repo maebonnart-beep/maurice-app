@@ -17956,7 +17956,8 @@
     "description": "Pizzeria italienne familiale de Flic en Flac, très appréciée (4,8/5), pizzas artisanales, options végétariennes et halal. Ouvert le soir uniquement.",
     "filters": [
       "italien"
-    ]
+    ],
+    "hours": "Mar-Dim 18h-21h30, fermé lun"
   },
   {
     "id": "les-salines-cafeteria",
@@ -18015,7 +18016,8 @@
     "filters": [
       "italien",
       "grillades"
-    ]
+    ],
+    "hours": "Mar-Dim 17h30-21h, fermé lun"
   },
   {
     "id": "casa-pizza",
@@ -28530,7 +28532,7 @@
       "/photo-florensuc-1.jpg",
       "/photo-florensuc-2.jpg"
     ],
-    "description": "Café-pâtisserie et restaurant de Triolet réputé pour ses créations artisanales (Sacher Blanc, Anémone) et ses petits-déjeuners (œufs brouillés, plateaux de fruits frais), décor rotin/jardin sous varangue avec fleurs tropicales. Côté restaurant (service 11h30-15h) : entrées et salades (tartare, carpaccio, wakamé, quinoa) Rs 360-750, linguine et plats truffe/marlin/agneau Rs 550-925, nouilles au wok et pad thaï Rs 325-550, menu enfant Rs 275-360. Réservation conseillée le soir.",
+    "description": "Café-pâtisserie et restaurant de Triolet réputé pour ses créations artisanales (Sacher Blanc, Anémone) et ses petits-déjeuners (œufs brouillés, plateaux de fruits frais), décor rotin/jardin sous varangue avec fleurs tropicales. Côté restaurant : entrées et salades (tartare, carpaccio, wakamé, quinoa) Rs 360-750, linguine et plats truffe/marlin/agneau Rs 550-925, nouilles au wok et pad thaï Rs 325-550, menu enfant Rs 275-360. Réservation conseillée le soir. De très bonnes pâtisseries européennes : déclinaisons de cheesecakes, millefeuille, tarte aux noix de pécan caramélisées, Opéra, bien dosées en sucre, avec des options vegan. Pâtisseries Rs 200-225, smoothies et ice tea Rs 200, boissons chaudes appétissantes et peu chères Rs 90-150.",
     "hours": "Tous les jours 7h-22h",
     "filters": [
       "boulangeries"
