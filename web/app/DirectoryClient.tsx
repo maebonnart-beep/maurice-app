@@ -143,6 +143,36 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
     () => [...favoriteBusinesses, ...aTesterBusinesses, ...testeBusinesses],
     [favoriteBusinesses, aTesterBusinesses, testeBusinesses]
   );
+  // Profil : catégories les plus représentées parmi coups de cœur/à tester/testé, pour un mini aperçu de « ses goûts ».
+  const profilTopCategories = useMemo(() => {
+    const counts = new globalThis.Map<CategoryKey, number>();
+    for (const b of favorisMapBusinesses) {
+      counts.set(b.category, (counts.get(b.category) || 0) + 1);
+    }
+    return [...counts.entries()]
+      .sort((a, b) => b[1] - a[1])
+      .slice(0, 3)
+      .map(([key, count]: [CategoryKey, number]) => ({ category: CATEGORY_MAP[key], count }));
+  }, [favorisMapBusinesses]);
+  const [shareFeedback, setShareFeedback] = useState<string | null>(null);
+  const shareFavoris = useCallback(async () => {
+    const lines = favorisMapBusinesses.map((b) => `• ${b.name}`).join("\n");
+    const text = favorisMapBusinesses.length > 0
+      ? `Mes adresses Koté Moris 🇲🇺\n\n${lines}`
+      : "Je n'ai pas encore d'adresses enregistrées sur Koté Moris.";
+    try {
+      if (navigator.share) {
+        await navigator.share({ title: "Mes adresses Koté Moris", text });
+        return;
+      }
+      await navigator.clipboard.writeText(text);
+      setShareFeedback("Copié dans le presse-papiers !");
+    } catch {
+      setShareFeedback(null);
+      return;
+    }
+    setTimeout(() => setShareFeedback(null), 2500);
+  }, [favorisMapBusinesses]);
   const [query, setQuery] = useState("");
   const [active, setActive] = useState<string>("all");
   const [activeThemes, setActiveThemes] = useState<Set<string>>(new Set());
@@ -1235,7 +1265,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
               )}
 
               <div className="mt-7 rounded-2xl p-4" style={{ background: "var(--primary-tint)" }}>
-                <p className="text-[13px] font-semibold text-ink text-center mb-3.5">
+                <p className="text-[16px] font-bold text-ink text-left mb-3.5">
                   Découvrez nos meilleures adresses
                 </p>
                 <div className="flex items-center justify-center gap-8">
@@ -1248,13 +1278,10 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                       setResultsView("liste");
                       window.scrollTo({ top: 0, behavior: "smooth" });
                     }}
-                    className="flex flex-col items-center gap-1.5 active:scale-[.96] transition-transform"
+                    className="flex items-center justify-center active:scale-[.96] transition-transform"
                   >
                     {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src="/badge-selection.png" alt="" aria-hidden className="h-16 w-16" />
-                    <span className="text-[12px] font-semibold text-ink text-center leading-tight">
-                      Sélection Koté Moris
-                    </span>
+                    <img src="/badge-selection.png" alt="Sélection Koté Moris" className="h-32 w-32" />
                   </button>
                   <button
                     onClick={() => {
@@ -1265,17 +1292,19 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                       setResultsView("liste");
                       window.scrollTo({ top: 0, behavior: "smooth" });
                     }}
-                    className="flex flex-col items-center gap-1.5 active:scale-[.96] transition-transform"
+                    className="flex items-center justify-center active:scale-[.96] transition-transform"
                   >
                     {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src="/badge-kids.png" alt="" aria-hidden className="h-16 w-16" />
-                    <span className="text-[12px] font-semibold text-ink text-center leading-tight">
-                      Kids friendly
-                    </span>
+                    <img src="/badge-kids.png" alt="Kids friendly" className="h-32 w-32" />
                   </button>
                 </div>
-                <p className="text-center text-[12.5px] font-bold text-primary-deep mt-3.5">
-                  Voir les adresses ›
+                <p className="text-center mt-3.5">
+                  <span
+                    className="inline-block px-4 py-2 rounded-pill text-[12.5px] font-bold text-white"
+                    style={{ background: "var(--primary)" }}
+                  >
+                    Voir les adresses ›
+                  </span>
                 </p>
               </div>
 
@@ -1720,18 +1749,102 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
             </div>
           )}
 
-          {/* Accueil → Profil : pas de compte utilisateur pour l'instant
-              (favoris/sélections stockés en local) — écran d'attente. */}
+          {/* Accueil → Profil : pas de compte utilisateur pour l'instant, mais un
+              tableau de bord de ce qui est stocké en local (favoris/sélections). */}
           {showHome && homeMode === "profil" && (
-            <div className="pb-16 pt-6 max-w-[420px] mx-auto text-center bg-surface border border-border rounded-2xl shadow-sm p-7 flex flex-col items-center gap-3">
-              <span className="w-14 h-14 rounded-2xl bg-primary-tint text-primary-deep flex items-center justify-center">
-                <UserCircle size={30} weight="duotone" aria-hidden />
-              </span>
-              <p className="font-serif text-lg font-semibold leading-tight">Bientôt disponible</p>
-              <p className="text-[13px] text-muted leading-snug">
-                Le compte Koté Moris arrive prochainement. En attendant, vos favoris et vos
-                adresses testées sont enregistrés sur cet appareil, dans « Sélections ».
-              </p>
+            <div className="pb-16 pt-4 max-w-[560px] mx-auto flex flex-col gap-4">
+              <div className="text-center bg-surface border border-border rounded-2xl shadow-sm p-6 flex flex-col items-center gap-2">
+                <span className="w-14 h-14 rounded-2xl bg-primary-tint text-primary-deep flex items-center justify-center">
+                  <UserCircle size={30} weight="duotone" aria-hidden />
+                </span>
+                <p className="font-serif text-lg font-semibold leading-tight">Votre profil Koté Moris</p>
+                <p className="text-[13px] text-muted leading-snug">
+                  Le compte arrive prochainement. En attendant, tout ce qui suit est enregistré
+                  sur cet appareil uniquement.
+                </p>
+              </div>
+
+              {/* Stats : accès direct à chaque statut, comme les chips en haut de « Sélections ». */}
+              <div className="grid grid-cols-3 gap-2.5">
+                <button
+                  onClick={() => { setHomeMode("favoris"); window.scrollTo({ top: 0, behavior: "smooth" }); }}
+                  className="flex flex-col items-center gap-1 rounded-2xl border border-border p-3 active:scale-[.97] transition-transform"
+                  style={{ background: `color-mix(in srgb, ${COUP_DE_COEUR_COLOR} 10%, var(--surface))` }}
+                >
+                  <Heart size={20} weight="fill" aria-hidden style={{ color: COUP_DE_COEUR_COLOR }} />
+                  <span className="text-[17px] font-bold leading-none" style={{ color: COUP_DE_COEUR_COLOR }}>
+                    {favoriteBusinesses.length}
+                  </span>
+                  <span className="text-[11px] text-muted leading-none">Favoris</span>
+                </button>
+                <button
+                  onClick={() => { setHomeMode("favoris"); window.scrollTo({ top: 0, behavior: "smooth" }); }}
+                  className="flex flex-col items-center gap-1 rounded-2xl border border-border p-3 active:scale-[.97] transition-transform"
+                  style={{ background: "color-mix(in srgb, #f5a623 10%, var(--surface))" }}
+                >
+                  <Flag size={20} weight="fill" aria-hidden style={{ color: "#f5a623" }} />
+                  <span className="text-[17px] font-bold leading-none" style={{ color: "#f5a623" }}>
+                    {aTesterBusinesses.length}
+                  </span>
+                  <span className="text-[11px] text-muted leading-none">À tester</span>
+                </button>
+                <button
+                  onClick={() => { setHomeMode("favoris"); window.scrollTo({ top: 0, behavior: "smooth" }); }}
+                  className="flex flex-col items-center gap-1 rounded-2xl border border-border p-3 active:scale-[.97] transition-transform"
+                  style={{ background: "color-mix(in srgb, #2e9e5b 10%, var(--surface))" }}
+                >
+                  <CheckCircle size={20} weight="fill" aria-hidden style={{ color: "#2e9e5b" }} />
+                  <span className="text-[17px] font-bold leading-none" style={{ color: "#2e9e5b" }}>
+                    {testeBusinesses.length}
+                  </span>
+                  <span className="text-[11px] text-muted leading-none">Testé</span>
+                </button>
+              </div>
+
+              {/* Vos catégories préférées : top 3 parmi tout ce qui a un statut. */}
+              {profilTopCategories.length > 0 && (
+                <div className="bg-surface border border-border rounded-2xl shadow-sm p-4">
+                  <p className="m-0 mb-3 text-[13px] font-bold text-ink">Vos catégories préférées</p>
+                  <div className="flex flex-col gap-2.5">
+                    {profilTopCategories.map(({ category, count }) => (
+                      <div key={category.key} className="flex items-center gap-2.5">
+                        <span className="w-7 h-7 shrink-0 rounded-full flex items-center justify-center text-[14px]" style={{ background: `color-mix(in srgb, ${category.color} 15%, var(--surface))` }}>
+                          {category.emoji}
+                        </span>
+                        <span className="flex-1 text-[13px] text-ink truncate">{category.label}</span>
+                        <span className="text-[12.5px] font-bold text-muted">{count}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {/* Actions rapides. */}
+              <div className="bg-surface border border-border rounded-2xl shadow-sm overflow-hidden">
+                <button
+                  onClick={() => { setBrowseAll(false); setHomeCategory(null); setHomeMode("listes"); window.scrollTo({ top: 0, behavior: "smooth" }); }}
+                  className="w-full flex items-center gap-3 px-4 py-3.5 text-left active:bg-surface-2 transition-colors border-b border-border"
+                >
+                  <Star size={18} weight="regular" className="text-muted" aria-hidden />
+                  <span className="flex-1 text-[13.5px] text-ink">Voir les listes de Koté Moris</span>
+                </button>
+                <button
+                  onClick={() => { setBrowseAll(false); setHomeCategory(null); setHomeMode("ajouter"); window.scrollTo({ top: 0, behavior: "smooth" }); }}
+                  className="w-full flex items-center gap-3 px-4 py-3.5 text-left active:bg-surface-2 transition-colors border-b border-border"
+                >
+                  <Plus size={18} weight="regular" className="text-muted" aria-hidden />
+                  <span className="flex-1 text-[13.5px] text-ink">Suggérer une adresse</span>
+                </button>
+                <button
+                  onClick={shareFavoris}
+                  disabled={favorisMapBusinesses.length === 0}
+                  className="w-full flex items-center gap-3 px-4 py-3.5 text-left active:bg-surface-2 transition-colors disabled:opacity-40"
+                >
+                  <Heart size={18} weight="regular" className="text-muted" aria-hidden />
+                  <span className="flex-1 text-[13.5px] text-ink">Partager mes adresses</span>
+                  {shareFeedback && <span className="text-[11.5px] font-semibold text-primary-deep">{shareFeedback}</span>}
+                </button>
+              </div>
             </div>
           )}
 
