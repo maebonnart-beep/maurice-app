@@ -1102,7 +1102,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
           <button
             onClick={goHome}
             aria-label="Retour à l'accueil"
-            className="block relative w-[86%] sm:max-w-[480px] mx-auto aspect-[864/281] hover:opacity-90 active:scale-[.98] transition"
+            className="block relative w-full aspect-[864/281] hover:opacity-90 active:scale-[.98] transition"
           >
             <Logo light />
           </button>
@@ -1231,55 +1231,50 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                 </>
               )}
 
-              <button
-                onClick={() => {
-                  setNearMe(false);
-                  setBrowseAll(true);
-                  setHomeCategory(null);
-                  setFacetBadges(new Set(["selection"]));
-                  setResultsView("liste");
-                  window.scrollTo({ top: 0, behavior: "smooth" });
-                }}
-                className="w-full mt-7 rounded-2xl p-4 flex items-center gap-3 text-left active:scale-[.99] transition-transform"
-                style={{ background: "var(--primary-tint)" }}
-              >
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/badge-selection.png" alt="" aria-hidden className="h-16 w-16 shrink-0" />
-                <span className="flex-1 text-[13px] text-ink leading-snug">
-                  Découvrez les meilleures adresses sélectionnées pour vous, partout à Maurice !
-                </span>
-                <span
-                  className="shrink-0 px-3.5 py-2 rounded-pill text-[12.5px] font-bold text-white"
-                  style={{ background: "var(--primary)" }}
-                >
-                  Voir les adresses
-                </span>
-              </button>
-
-              <button
-                onClick={() => {
-                  setNearMe(false);
-                  setBrowseAll(true);
-                  setHomeCategory(null);
-                  setActiveThemes(new Set(["kids-friendly"]));
-                  setResultsView("liste");
-                  window.scrollTo({ top: 0, behavior: "smooth" });
-                }}
-                className="w-full mt-3 rounded-2xl p-4 flex items-center gap-3 text-left active:scale-[.99] transition-transform"
-                style={{ background: "var(--primary-tint)" }}
-              >
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/badge-kids.png" alt="" aria-hidden className="h-16 w-16 shrink-0" />
-                <span className="flex-1 text-[13px] text-ink leading-snug">
-                  Des adresses testées et approuvées pour sortir en famille, partout à Maurice !
-                </span>
-                <span
-                  className="shrink-0 px-3.5 py-2 rounded-pill text-[12.5px] font-bold text-white"
-                  style={{ background: "var(--primary)" }}
-                >
-                  Voir les adresses
-                </span>
-              </button>
+              <div className="mt-7 rounded-2xl p-4" style={{ background: "var(--primary-tint)" }}>
+                <p className="text-[13px] font-semibold text-ink text-center mb-3.5">
+                  Découvrez nos meilleures adresses
+                </p>
+                <div className="flex items-center justify-center gap-8">
+                  <button
+                    onClick={() => {
+                      setNearMe(false);
+                      setBrowseAll(true);
+                      setHomeCategory(null);
+                      setFacetBadges(new Set(["selection"]));
+                      setResultsView("liste");
+                      window.scrollTo({ top: 0, behavior: "smooth" });
+                    }}
+                    className="flex flex-col items-center gap-1.5 active:scale-[.96] transition-transform"
+                  >
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img src="/badge-selection.png" alt="" aria-hidden className="h-16 w-16" />
+                    <span className="text-[12px] font-semibold text-ink text-center leading-tight">
+                      Sélection Koté Moris
+                    </span>
+                  </button>
+                  <button
+                    onClick={() => {
+                      setNearMe(false);
+                      setBrowseAll(true);
+                      setHomeCategory(null);
+                      setActiveThemes(new Set(["kids-friendly"]));
+                      setResultsView("liste");
+                      window.scrollTo({ top: 0, behavior: "smooth" });
+                    }}
+                    className="flex flex-col items-center gap-1.5 active:scale-[.96] transition-transform"
+                  >
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img src="/badge-kids.png" alt="" aria-hidden className="h-16 w-16" />
+                    <span className="text-[12px] font-semibold text-ink text-center leading-tight">
+                      Kids friendly
+                    </span>
+                  </button>
+                </div>
+                <p className="text-center text-[12.5px] font-bold text-primary-deep mt-3.5">
+                  Voir les adresses ›
+                </p>
+              </div>
 
               <div className="flex items-center justify-between mt-7 mb-2.5">
                 <h2 className="text-[16px] font-bold text-ink">Les listes de Koté Moris</h2>
