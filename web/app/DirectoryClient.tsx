@@ -40,7 +40,7 @@ import { useFavorites } from "@/lib/favorites";
 import { COUP_DE_COEUR_COLOR } from "@/components/ui/Badge";
 import { FilterDropdown, type DropdownOption } from "@/components/ui/FilterDropdown";
 import { AddAddressForm } from "@/components/ui/AddAddressForm";
-import { iconForKey, mascotFor, MapPin } from "@/lib/icons";
+import { iconForKey, mascotFor, categoryTint, MapPin } from "@/lib/icons";
 import { displayName, displayCity } from "@/lib/format";
 import { FavoriteButton } from "@/components/ui/FavoriteButton";
 import {
@@ -1093,7 +1093,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
             <button
               onClick={goHome}
               aria-label="Retour à l'accueil"
-              className="block w-[86%] max-w-[400px] mx-auto aspect-[1764/660] hover:opacity-90 active:scale-[.98] transition"
+              className="block w-[94%] max-w-[680px] mx-auto aspect-[864/281] hover:opacity-90 active:scale-[.98] transition"
             >
               <Logo light />
             </button>
@@ -1102,7 +1102,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
           <button
             onClick={goHome}
             aria-label="Retour à l'accueil"
-            className="block relative w-[86%] sm:max-w-[360px] mx-auto aspect-[1764/660] hover:opacity-90 active:scale-[.98] transition"
+            className="block relative w-[86%] sm:max-w-[480px] mx-auto aspect-[864/281] hover:opacity-90 active:scale-[.98] transition"
           >
             <Logo light />
           </button>
@@ -1160,7 +1160,10 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                       onClick={() => { setHomeMode("categories"); setHomeCategory(c.key); }}
                       className="flex flex-col items-center gap-1.5 shrink-0 w-[84px] active:scale-[.96] transition-transform"
                     >
-                      <span className="w-[72px] h-[72px] rounded-full overflow-hidden bg-primary-tint shadow-sm flex items-center justify-center text-2xl">
+                      <span
+                        className="w-[76px] h-[76px] rounded-full overflow-hidden shadow-sm flex items-center justify-center text-2xl"
+                        style={{ background: categoryTint(c.key) }}
+                      >
                         {mascot ? (
                           // eslint-disable-next-line @next/next/no-img-element
                           <img src={mascot} alt="" className="w-full h-full object-contain" />

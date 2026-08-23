@@ -11,7 +11,7 @@ export function Logo({ size = 96, light = false }: { size?: number; light?: bool
     return (
       // eslint-disable-next-line @next/next/no-img-element
       <img
-        src="/bandeau-kotemoris-clair.webp"
+        src="/bandeau-kotemoris-clair-v2.webp"
         alt="Koté Moris — les adresses de Maurice"
         className="block w-full h-full object-contain"
       />

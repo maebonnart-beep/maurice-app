@@ -350,6 +350,27 @@ export function mascotFor(key: string): string | null {
   return MASCOT_KEYS.has(key) ? `/mascots/${key}.png` : null;
 }
 
+/**
+ * Fond pastel par catégorie (niveau 1) pour les badges ronds de mascotte sur
+ * l'accueil — un ton distinct par catégorie plutôt que le teal uniforme,
+ * repris du rendu fourni par la cliente (23/08).
+ */
+const CATEGORY_TINTS: Record<string, string> = {
+  "manger-boire": "#fbe6bf",
+  "sortir-decouvrir": "#d6e8d1",
+  "faire-du-sport": "#cfe3f5",
+  "sante-bien-etre": "#e4dbf3",
+  "acheter-equiper": "#f2ddc4",
+  "vie-pratique": "#dbe2e6",
+  "famille-travail": "#f8d9dd",
+  agenda: "#f6d9e7",
+};
+
+/** Couleur pastel de fond pour le badge mascotte d'une catégorie (niveau 1). */
+export function categoryTint(key: string): string {
+  return CATEGORY_TINTS[key] ?? "var(--primary-tint)";
+}
+
 /** Rend l'icône d'une clé si mappée (sinon rien) — pratique dans un Tag/badge. */
 export function KeyIcon({
   keyName,
