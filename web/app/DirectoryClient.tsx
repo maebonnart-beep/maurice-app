@@ -1095,7 +1095,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
             <button
               onClick={goHome}
               aria-label="Retour à l'accueil"
-              className="block w-[66%] max-w-[300px] mx-auto aspect-[900/345] hover:opacity-90 active:scale-[.98] transition"
+              className="block w-[86%] max-w-[400px] mx-auto aspect-[1764/660] hover:opacity-90 active:scale-[.98] transition"
             >
               <Logo light />
             </button>
@@ -1104,7 +1104,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
           <button
             onClick={goHome}
             aria-label="Retour à l'accueil"
-            className="block relative w-[86%] sm:max-w-[360px] mx-auto aspect-[900/345] hover:opacity-90 active:scale-[.98] transition"
+            className="block relative w-[86%] sm:max-w-[360px] mx-auto aspect-[1764/660] hover:opacity-90 active:scale-[.98] transition"
           >
             <Logo light />
           </button>
@@ -1160,12 +1160,12 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                     <button
                       key={c.key}
                       onClick={() => { setHomeMode("categories"); setHomeCategory(c.key); }}
-                      className="flex flex-col items-center gap-1.5 shrink-0 w-[76px] active:scale-[.96] transition-transform"
+                      className="flex flex-col items-center gap-1.5 shrink-0 w-[84px] active:scale-[.96] transition-transform"
                     >
-                      <span className="w-16 h-16 rounded-full overflow-hidden bg-primary-tint shadow-sm flex items-center justify-center text-2xl">
+                      <span className="w-[72px] h-[72px] rounded-full overflow-hidden bg-primary-tint shadow-sm flex items-center justify-center text-2xl">
                         {mascot ? (
                           // eslint-disable-next-line @next/next/no-img-element
-                          <img src={mascot} alt="" className="w-[85%] h-[85%] object-contain" />
+                          <img src={mascot} alt="" className="w-full h-full object-contain" />
                         ) : (
                           c.emoji
                         )}
@@ -1243,7 +1243,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                 style={{ background: "var(--primary-tint)" }}
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/badge-selection.png" alt="" aria-hidden className="h-9 w-9 shrink-0" />
+                <img src="/badge-selection.png" alt="" aria-hidden className="h-11 w-11 shrink-0" />
                 <span className="flex-1 text-[13px] text-ink leading-snug">
                   Découvrez les meilleures adresses sélectionnées pour vous, partout à Maurice !
                 </span>
