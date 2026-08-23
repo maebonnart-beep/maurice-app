@@ -6321,8 +6321,9 @@
       "restaurants"
     ],
     "zone": "nord",
-    "description": "The Beach Kitchen, situé en bord de mer à Grand Baie, propose une cuisine variée à la carte : fruits de mer, sushis, cuisine asiatique et plats internationaux. Formules selon les jours : buffet du dimanche \"Seafood, Dim Sum & Sushi\", buffets thématiques en soirée, soirées Yakiniku, musique live/DJ et offres wellness. Tarifs : buffet dimanche Rs 2 200/adulte · Rs 1 100/enfant (3-12 ans) — buffets thématiques soir Rs 1 550-1 650.",
-    "koteMorisComment": "Notre avis : un cadre vraiment exceptionnel, avec des tables installées au bord du lagon, presque les pieds dans l'eau. Le service est attentionné et efficace, même lorsque le restaurant est complet. Le buffet du dimanche est assez marqué par les influences asiatiques, avec une cuisine de qualité, notamment d'excellents sushis. Les desserts sont en revanche un peu plus classiques (tiramisu, gâteau aux framboises, glace au chocolat…). L'ambiance est très animée, avec beaucoup de monde et une musique live assez présente : ce n'est donc pas forcément l'endroit idéal pour un déjeuner au calme. On y va surtout pour le cadre et l'expérience, en gardant à l'esprit que l'animation fait partie du concept.",
+    "description": "The Beach Kitchen, situé en bord de mer à Grand Baie, propose une cuisine variée à la carte : fruits de mer, sushis, cuisine asiatique et plats internationaux. Formules selon les jours : buffet du dimanche \"Seafood, Dim Sum & Sushi\", buffets thématiques en soirée, soirées Yakiniku, musique live/DJ et offres wellness.",
+    "entryPrice": "Buffet dimanche Rs 2 200/adulte · Rs 1 100/enfant (3-12 ans) — buffets thématiques soir Rs 1 550-1 650",
+    "koteMorisComment": "Notre avis : un cadre vraiment exceptionnel, avec des tables installées au bord du lagon, presque les pieds dans l'eau. Le service est attentionné et efficace, même lorsque le restaurant est complet. Le buffet du dimanche est assez marqué par les influences asiatiques, avec notamment d'excellents sushis et un cochon à la broche excellent. Les desserts sont en revanche un peu plus classiques (tiramisu, gâteau aux framboises, glace au chocolat…). L'ambiance est animée, avec une musique live assez présente : ce n'est donc pas forcément l'endroit idéal pour un déjeuner au calme. On y va surtout pour le cadre et l'expérience, en gardant à l'esprit que l'animation fait partie du concept.",
     "photoUrls": [
       "/photos/the-beach-kitchen-restaurant.jpg",
       "/photos/the-beach-kitchen-restaurant-2.jpg"
@@ -28537,7 +28538,8 @@
       "/photo-florensuc-1.jpg",
       "/photo-florensuc-2.jpg"
     ],
-    "description": "Café-pâtisserie et restaurant de Triolet réputé pour ses créations artisanales (Sacher Blanc, Anémone) et ses petits-déjeuners (œufs brouillés, plateaux de fruits frais), décor rotin/jardin sous varangue avec fleurs tropicales. Côté restaurant : entrées et salades (tartare, carpaccio, wakamé, quinoa) Rs 360-750, linguine et plats truffe/marlin/agneau Rs 550-925, nouilles au wok et pad thaï Rs 325-550, menu enfant Rs 275-360. Réservation conseillée le soir. De très bonnes pâtisseries européennes : déclinaisons de cheesecakes, millefeuille, tarte aux noix de pécan caramélisées, Opéra, bien dosées en sucre, avec des options vegan. Pâtisseries Rs 200-225, smoothies et ice tea Rs 200, boissons chaudes appétissantes et peu chères Rs 90-150.",
+    "description": "Café-pâtisserie et restaurant de Triolet réputé pour ses créations artisanales (Sacher Blanc, Anémone) et ses petits-déjeuners (œufs brouillés, plateaux de fruits frais), décor rotin/jardin sous varangue avec fleurs tropicales. Côté restaurant : entrées et salades (tartare, carpaccio, wakamé, quinoa), linguine et plats truffe/marlin/agneau, nouilles au wok et pad thaï, menu enfant. Réservation conseillée le soir. De très bonnes pâtisseries européennes : déclinaisons de cheesecakes, millefeuille, tarte aux noix de pécan caramélisées, Opéra, bien dosées en sucre, avec des options vegan.",
+    "entryPrice": "Prix août 2026 : entrées/salades Rs 360-750, plats Rs 550-925, wok/pad thaï Rs 325-550, menu enfant Rs 275-360 — pâtisseries Rs 200-225, smoothies/ice tea Rs 200, boissons chaudes Rs 90-150",
     "hours": "Tous les jours 7h-22h",
     "filters": [
       "boulangeries"
