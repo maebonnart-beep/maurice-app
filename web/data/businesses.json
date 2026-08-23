@@ -1294,7 +1294,8 @@
     "filters": [
       "mauricienne",
       "grillades"
-    ]
+    ],
+    "hours": "Mar-Sam 15h-23h, fermé dim et lun"
   },
   {
     "id": "park25-restaurant",
@@ -1337,7 +1338,8 @@
     "description": "Restaurant de Pereybère/Grand Baie tenu par Ashley et Shiran, très bien noté (4,8/5). Fruits de mer et viandes frais, rhum vanille maison ; paiement en espèces uniquement, stationnement limité.",
     "filters": [
       "mauricienne"
-    ]
+    ],
+    "hours": "Mar-Dim 18h-22h, fermé lun"
   },
   {
     "id": "blue-lagoon-cafe",
@@ -1700,7 +1702,8 @@
     "filters": [
       "europeenne",
       "mauricienne"
-    ]
+    ],
+    "hours": "Tous les jours 17h-01h"
   },
   {
     "id": "le-cabanon-bar-a-coquillettes-grand-baie",
@@ -6094,7 +6097,8 @@
     "description": "Petit restaurant de School Lane à Grand Baie, carte courte qui change chaque jour (rougaille saucisse, vindaye poisson), déco bois-bambou, séga live.",
     "filters": [
       "mauricienne"
-    ]
+    ],
+    "hours": "Mar-Sam 11h-15h, fermé dim et lun"
   },
   {
     "id": "theo-fourneaux-restaurant-petit-dejeuner-brunch-salon-de-the",
@@ -6201,7 +6205,8 @@
     "description": "Restaurant italien familial de Grand Baie tenu par un jeune couple originaire des Cinque Terre, spécialisé pinsa (pâte romaine croustillante), pâtes et pizzas maison. Bien noté (4,3/5).",
     "filters": [
       "italien"
-    ]
+    ],
+    "hours": "Mer-Ven 18h-21h30, Sam-Dim 12h-14h30, fermé lun et mar"
   },
   {
     "id": "roots",
@@ -6320,7 +6325,8 @@
     "filters": [
       "fruits-de-mer",
       "asiatique"
-    ]
+    ],
+    "hours": "Mar-Dim, fermé lun"
   },
   {
     "id": "chez-meung",
@@ -6480,7 +6486,8 @@
     "description": "Institution italienne du nord de l'île à Grand Baie, tenue par une famille italienne. Pizzas au four à bois, pâtes maison, viandes et fruits de mer à prix raisonnables.",
     "filters": [
       "italien"
-    ]
+    ],
+    "hours": "Tous les jours 12h-14h30, Lun-Jeu et Dim 18h-22h30, Ven-Sam 18h-23h"
   },
   {
     "id": "grill-chill",
