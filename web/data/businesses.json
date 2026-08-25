@@ -14210,6 +14210,26 @@
     ]
   },
   {
+    "id": "kot-mame-ramalingum-sons",
+    "name": "Kot Mamé Ramalingum & Sons",
+    "category": "manger-boire",
+    "address": "Rue Saint Joseph, Terre Rouge",
+    "phone": "+230 5795 9679",
+    "website": "https://kotmame.com/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Kot%20Mam%C3%A9%20Ramalingum%20%26%20Sons%20Terre%20Rouge%20Mauritius",
+    "lat": -20.1261,
+    "lng": 57.5244,
+    "themes": [
+      "restaurants"
+    ],
+    "zone": "nord",
+    "description": "Restaurant familial de Terre Rouge spécialisé dans la cuisine sud-indienne : curry, briani, crabe, langouste, thali maison servi sur feuille de bananier. Fermé le lundi.",
+    "filters": [
+      "indienne",
+      "fruits-de-mer"
+    ]
+  },
+  {
     "id": "la-table-d-argent-traiteur-a-l-ile-maurice-pour-clients-exig",
     "name": "La table d'argent - Traiteur à l'ile Maurice pour clients exigeants",
     "category": "manger-boire",
