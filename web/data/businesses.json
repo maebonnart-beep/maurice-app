@@ -7781,7 +7781,8 @@
     "description": "Petite adresse type taverne de Camp Fouquereaux (Vacoas-Phœnix), menu court (poisson, calamars, salades), cocktails créatifs signés par un mixologue local.",
     "filters": [
       "mauricienne"
-    ]
+    ],
+    "hours": "Fermé mar, autres jours 17h-23h"
   },
   {
     "id": "domaine-de-wolmar",
@@ -10793,7 +10794,8 @@
     "description": "Brasserie chic surplombant la marina du Caudan à Port Louis, cuisine classique revisitée avec bar à curry (six curries), plus de 60 plats à la carte. Ouvert tous les jours de 6h30 à 22h30.",
     "filters": [
       "europeenne"
-    ]
+    ],
+    "hours": "Tous les jours 6h30-22h30"
   },
   {
     "id": "wapalapam-la-place",
@@ -10812,7 +10814,8 @@
     "description": "Cour cachée au cœur de Port Louis, ambiance bohème-chic. Cuisine inspirée des îles de l'océan Indien, brochettes de la mer et poisson grillé.",
     "filters": [
       "fruits-de-mer"
-    ]
+    ],
+    "hours": "Lun-Sam 11h-22h & Dim 11h-17h"
   },
   {
     "id": "pomme-de-mat-restaurant",
@@ -10832,7 +10835,8 @@
     "filters": [
       "fruits-de-mer",
       "sushis"
-    ]
+    ],
+    "hours": "Tous les jours 6h30-22h30"
   },
   {
     "id": "la-potiniere",
@@ -10853,7 +10857,8 @@
     "filters": [
       "tables-exception",
       "europeenne"
-    ]
+    ],
+    "hours": "Lun 12h-15h, Mar-Sam 12h-15h & 19h-22h, fermé dim"
   },
   {
     "id": "volcan-restaurant",
@@ -10873,7 +10878,8 @@
     "filters": [
       "grillades",
       "kids-friendly"
-    ]
+    ],
+    "hours": "Fermé jeu, autres jours 13h-20h45"
   },
   {
     "id": "makalapo-restaurant",
@@ -10893,7 +10899,8 @@
     "filters": [
       "fruits-de-mer",
       "kids-friendly"
-    ]
+    ],
+    "hours": "Tous les jours 11h30-14h30 & 18h30-21h"
   },
   {
     "id": "the-sea-folks",
@@ -10912,7 +10919,8 @@
     "description": "Restaurant fusion indo-méditerranéenne du Bagatelle Mall (Moka), spécialisé fruits de mer : poisson grillé, curry de fruits de mer, cuisine tandoor et italienne. Décor à thème maritime.",
     "filters": [
       "fruits-de-mer"
-    ]
+    ],
+    "hours": "Tous les jours 11h30-22h"
   },
   {
     "id": "yo-l-artisan",
@@ -10931,7 +10939,8 @@
     "description": "Une des meilleures pizzerias de l'île, à Moka, mêlant tradition mauricienne et cuisine italienne. Pizzas à la mauricienne réputées, ingrédients frais et locaux.",
     "filters": [
       "italien"
-    ]
+    ],
+    "hours": "Mar-Sam 11h30-14h & 18h30-21h, fermé dim + lun"
   },
   {
     "id": "taste-of-siam",
@@ -10990,7 +10999,8 @@
     "description": "Adresse devenue très populaire sur les réseaux sociaux grâce à ses sushis à la truffe. Présentation travaillée, avec des formules bento et un grill en complément de la carte sushi.",
     "filters": [
       "sushis"
-    ]
+    ],
+    "hours": "Lun-Jeu 11h-21h, Ven-Dim 11h-21h30"
   },
   {
     "id": "wapalapam-les-arcades",
@@ -11010,7 +11020,8 @@
     "filters": [
       "fruits-de-mer",
       "mauricienne"
-    ]
+    ],
+    "hours": "Lun-Sam 11h-22h & Dim 11h-17h"
   },
   {
     "id": "the-indian-symphony",
@@ -11029,7 +11040,8 @@
     "description": "Restaurant indien de Moka réputé pour ses épices bien dosées : butter chicken, paneer tikka korma. Service chaleureux, bien noté (4,6/5), options véganes.",
     "filters": [
       "indienne"
-    ]
+    ],
+    "hours": "Dim-Jeu 11h-21h, Ven-Sam 11h-22h"
   },
   {
     "id": "sitar-indian-restaurant",
@@ -11068,7 +11080,8 @@
     "description": "Restaurant chic en plein air au cœur de Port Louis, cuisine mêlant influences françaises et mauriciennes, service soigné, plutôt haut de gamme.",
     "filters": [
       "mauricienne"
-    ]
+    ],
+    "hours": "Lun-Jeu 9h-15h30 & Ven 9h-20h30, fermé sam-dim"
   },
   {
     "id": "l-artista",
@@ -11087,7 +11100,8 @@
     "description": "Restaurant italien au 1er étage du Caudan Waterfront (Port Louis), terrasse ombragée avec vue sur le port. Pizzas, pâtes maison, fruits de mer et desserts.",
     "filters": [
       "italien"
-    ]
+    ],
+    "hours": "Dim-Mar 11h-16h & Mer-Sam 11h-22h"
   },
   {
     "id": "le-sapin-d-or",
@@ -11107,7 +11121,8 @@
     "filters": [
       "asiatique",
       "mauricienne"
-    ]
+    ],
+    "hours": "Tlj 11h-22h"
   },
   {
     "id": "eureka-la-maison-creole",
@@ -11127,7 +11142,8 @@
     "filters": [
       "mauricienne",
       "tables-exception"
-    ]
+    ],
+    "hours": "Lun-Sam 9h-16h30, fermé dim"
   },
   {
     "id": "mystic-masala",
@@ -11165,7 +11181,8 @@
     "description": "Doyen des restaurants chinois de Maurice, fondé en 1946 par Edmond Lai Min, à Chinatown (Port Louis). Grill chinois à table, plats signature (canard farci, poulet vapeur), dîner-dansant le samedi.",
     "filters": [
       "asiatique"
-    ]
+    ],
+    "hours": "Mar-Dim 11h-14h30 & 18h30-21h, fermé lun"
   },
   {
     "id": "la-case-75",
@@ -11185,7 +11202,8 @@
     "filters": [
       "fruits-de-mer",
       "europeenne"
-    ]
+    ],
+    "hours": "Mar-Dim 11h-21h, fermé lun"
   },
   {
     "id": "red-phoenix-restaurant",
@@ -11204,7 +11222,8 @@
     "description": "Restaurant de cuisine chinoise et mauricienne à Port Louis, décor soigné, plats signature : bœuf au poivre, calamars au safran, paella. Bien noté (4,2/5).",
     "filters": [
       "asiatique"
-    ]
+    ],
+    "hours": "Lun-Sam 11h-15h & 18h-22h, fermé dim"
   },
   {
     "id": "food-sensei",
@@ -11341,7 +11360,8 @@
     "description": "Restaurant halal de grillades et burgers de Curepipe, deux niveaux, parking facile. Wraps et burgers d'agneau, frites réputées ; très bien noté (5/5).",
     "filters": [
       "grillades"
-    ]
+    ],
+    "hours": "Lun-Jeu + Dim 12h-21h, Ven-Sam 12h-22h"
   },
   {
     "id": "cote-jasmin-jardin-bar",
@@ -11360,7 +11380,8 @@
     "description": "Bar-restaurant caché au cœur de Port Louis, tenu par un couple belgo-italien, jardin lounge, cocktails créatifs et plat différent chaque jour (thaï, tartare de thon, pâtes). Bien noté (4,4/5).",
     "filters": [
       "europeenne"
-    ]
+    ],
+    "hours": "Lun-Ven 9h-22h, Sam 11h-22h, fermé dim"
   },
   {
     "id": "la-case-du-pecheur",
@@ -11398,7 +11419,8 @@
     "description": "Restaurant halal de cuisine orientale fusion à l'étage rue Desforges (Port Louis). Grosses portions, spécialité de briani (commande la veille). Noté 3,8/5.",
     "filters": [
       "asiatique"
-    ]
+    ],
+    "hours": "Lun-Sam 11h-14h30 & 18h-22h, Dim 18h-22h"
   },
   {
     "id": "house-of-canton",
@@ -11475,7 +11497,8 @@
     "description": "Restaurant chinois du Bagatelle Mall (Moka), décor élégant avec mezzanine privatisable. Carte à la carte ou buffet à volonté vendredi/samedi et dimanche soir.",
     "filters": [
       "asiatique"
-    ]
+    ],
+    "hours": "Tlj 11h-22h"
   },
   {
     "id": "elizabeth-burger-and-grill",
@@ -11494,7 +11517,8 @@
     "description": "Adresse populaire du centre de Port Louis réputée pour ses kebabs, poulet croustillant et burgers copieux. Idéal pour une pause déjeuner rapide.",
     "filters": [
       "grillades"
-    ]
+    ],
+    "hours": "Mar-Jeu 12h-22h30, Ven 17h-22h30, Sam 12h-23h, Dim 17h-22h30, fermé lun"
   },
   {
     "id": "indra-domaines-les-pailles",
@@ -11534,7 +11558,8 @@
     "description": "Restaurant cantonais du Bagatelle Mall (Moka) spécialisé dim sum faits main servis en paniers bambou, ainsi que rôtis cantonais, riz et nouilles sautés. Sans porc ni bœuf, sans MSG.",
     "filters": [
       "asiatique"
-    ]
+    ],
+    "hours": "Tlj 11h-22h"
   },
   {
     "id": "chinese-wok-restaurant",
@@ -11594,7 +11619,8 @@
     "filters": [
       "mauricienne",
       "frequente-locaux"
-    ]
+    ],
+    "hours": "Lun-Sam 10h-19h, fermé dim"
   },
   {
     "id": "hola-cafe",
@@ -11613,7 +11639,8 @@
     "description": "Petit café-restaurant tendance du centre-ville de Port Louis, cuisine fusion japonaise (ramen, gyoza) et italienne, iced teas maison. Réservation recommandée.",
     "filters": [
       "asiatique"
-    ]
+    ],
+    "hours": "Lun-Ven 8h-16h30 & Sam 9h-16h30, fermé dim"
   },
   {
     "id": "nicolas-ile-maurice",
@@ -11668,7 +11695,8 @@
     "description": "Restaurant chinois halal de Port Louis, spécialisé nouilles tirées à la main façon Lanzhou et raviolis. Portions généreuses, espace prière disponible ; très bien noté (4,8/5).",
     "filters": [
       "asiatique"
-    ]
+    ],
+    "hours": "Lun-Jeu 11h30-21h30, Ven-Sam 11h30-22h30, Dim 17h30-22h30"
   },
   {
     "id": "la-plaz-beach-grill",
@@ -11706,7 +11734,8 @@
     "description": "Enseigne de cuisine rapide asiatique-mauricienne au Bagatelle Mall (Moka), cuisine ouverte avec woks flambants. Curry, nouilles et riz sautés, thali, briani, boulettes chinoises.",
     "filters": [
       "asiatique"
-    ]
+    ],
+    "hours": "Lun-Jeu 9h30-20h30, Ven-Sam 9h30-22h, Dim & jours fériés 9h30-15h"
   },
   {
     "id": "the-thirsty-fox-brewery",
@@ -11766,7 +11795,8 @@
     "description": "Chaîne d'origine sud-africaine à Port Louis, spécialisée dans le poulet grillé au feu de bois façon péri-péri, options végétariennes. Halal.",
     "filters": [
       "grillades"
-    ]
+    ],
+    "hours": "Lun-Jeu 11h-22h, Ven 11h-23h, Sam-Dim 11h-21h"
   },
   {
     "id": "excursion-de-reve",
@@ -50231,7 +50261,8 @@
     "description": "Restaurant spécialisé viandes à Ébène.",
     "filters": [
       "grillades"
-    ]
+    ],
+    "hours": "Lun-Sam 10h-14h & 17h-21h, fermé dim"
   },
   {
     "id": "cyclone-cafe-ebene",
@@ -50261,7 +50292,8 @@
     ],
     "zone": "centre",
     "priceRange": "prix-moyen",
-    "description": "Restaurant marocain du Mall de Bagatelle."
+    "description": "Restaurant marocain du Mall de Bagatelle.",
+    "hours": "Lun-Jeu 9h30-20h30, Ven-Sam 9h30-22h, Dim & jours fériés 9h30-15h"
   },
   {
     "id": "wat-cha-ri",
