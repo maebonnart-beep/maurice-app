@@ -9353,7 +9353,8 @@
     "filters": [
       "indienne",
       "asiatique"
-    ]
+    ],
+    "hours": "Mar-Dim 17h30-22h30, fermé lun (déjeuner sur réservation)"
   },
   {
     "id": "la-spiaggia-restaurant-bar",
@@ -9373,7 +9374,8 @@
     "filters": [
       "europeenne",
       "plus-belles-vues"
-    ]
+    ],
+    "hours": "Tous les jours 19h-22h30"
   },
   {
     "id": "dolce-vita-restaurant",
@@ -9496,7 +9498,8 @@
     "filters": [
       "fruits-de-mer",
       "plus-belles-vues"
-    ]
+    ],
+    "hours": "Tous les jours 11h-coucher du soleil"
   },
   {
     "id": "mamie-sophie-table-d-hote",
@@ -9515,7 +9518,8 @@
     "description": "Table d'hôte familiale de Camp Ithier, sur réservation uniquement. Cuisine créole (cari poisson, salade ourite, gâteau piment) dans un jardin intimiste ; très bien notée.",
     "filters": [
       "mauricienne"
-    ]
+    ],
+    "hours": "Dim 10h-15h30 & Mar-Sam 16h-22h, fermé lun"
   },
   {
     "id": "le-skipper",
@@ -9555,7 +9559,8 @@
     "description": "Restaurant chinois moderne du Long Beach Golf & Spa Resort (Poste de Flacq), cuisines sichuanaise, cantonaise et hunanaise, nouilles lamian tirées à la main en cuisine ouverte, dim sum et canard laqué.",
     "filters": [
       "asiatique"
-    ]
+    ],
+    "hours": "Tous les jours 18h30-22h"
   },
   {
     "id": "la-flibuste",
@@ -9653,7 +9658,8 @@
     "description": "Restaurant italien de l'hôtel Long Beach (Belle Mare/Poste de Flacq), antipasti, pâtes, pizzas et fruits de mer. Bien noté (4,3/5).",
     "filters": [
       "italien"
-    ]
+    ],
+    "hours": "Tous les jours 12h30-15h & 18h30-22h"
   },
   {
     "id": "le-marche",
@@ -9672,7 +9678,8 @@
     "description": "Restaurant-buffet de l'hôtel Long Beach Mauritius, cuisine live et buffets internationaux copieux dans un cadre haut de gamme.",
     "filters": [
       "mauricienne"
-    ]
+    ],
+    "hours": "Tlj 7h-10h & 18h30-22h"
   },
   {
     "id": "escape-restaurant-bar",
@@ -9732,7 +9739,8 @@
     "description": "Petite adresse de grillades à Quatre Cocos, techniques de cuisson traditionnelles, ouverte tous les jours de 8h à 18h. Bien noté par les visiteurs de la région de Belle Mare.",
     "filters": [
       "grillades"
-    ]
+    ],
+    "hours": "Tlj 8h-18h"
   },
   {
     "id": "the-deer-hunter",
@@ -9831,7 +9839,8 @@
     "description": "Restaurant chinois traditionnel de Quatre Cocos (dumplings, sautés, nouilles), réputé pour son canard laqué à commander à l'avance. Fermé le lundi.",
     "filters": [
       "asiatique"
-    ]
+    ],
+    "hours": "Mar-Jeu + Dim 11h-15h & 18h-21h, Ven-Sam 11h-15h & 18h-21h30, fermé lun"
   },
   {
     "id": "blu-sushi-lounge",
@@ -10035,7 +10044,8 @@
     "description": "Restaurant signature d'un hôtel 5 étoiles avec vue sur la baie. Relecture moderne de classiques indiens (saumon tandoori, agneau en croûte de curry), mais des tarifs jugés élevés.",
     "filters": [
       "indienne"
-    ]
+    ],
+    "hours": "Tous les jours 18h30-22h30"
   },
   {
     "id": "pelouse-snack",
@@ -10074,7 +10084,8 @@
     "filters": [
       "fruits-de-mer",
       "mauricienne"
-    ]
+    ],
+    "hours": "Tous les jours 7h-10h30, 12h30-15h & 19h-22h30"
   },
   {
     "id": "langer-s-bar-grill",
@@ -10134,7 +10145,8 @@
     "filters": [
       "mauricienne",
       "asiatique"
-    ]
+    ],
+    "hours": "Lun-Ven 11h30-14h30, fermé sam-dim"
   },
   {
     "id": "coin-bistro-by-casse-croute",
