@@ -6162,7 +6162,8 @@
     "description": "Restaurant-jardin convivial de Pereybère mettant en avant une cuisine légère à base de produits frais, avec animations musicales certains soirs.",
     "filters": [
       "europeenne"
-    ]
+    ],
+    "hours": "Dim 11h-14h & 17h30-22h, Mar-Ven 17h30-22h, Sam 11h30-15h & 17h30-22h, fermé lun"
   },
   {
     "id": "chez-vassen-restaurant",
@@ -6371,7 +6372,8 @@
     "description": "Adresse de street-food mauricienne dans un jardin cosy à Grand Baie, réputée pour son mine bouillie (nouilles) décliné en curries variés et son satini pomme d'amour.",
     "filters": [
       "asiatique"
-    ]
+    ],
+    "hours": "Dim-Mer + Ven-Sam 11h30-15h30, fermé jeu"
   },
   {
     "id": "wang-thai",
@@ -6592,7 +6594,8 @@
     "description": "Restaurant de Grand Baie à l'ambiance décontractée, musique live le vendredi, cuisine créole/poissons et fruits de mer ; avis mitigés sur le service.",
     "filters": [
       "mauricienne"
-    ]
+    ],
+    "hours": "Tlj 9h-00h"
   },
   {
     "id": "esprit-libre-hotel-grand-baie",
@@ -6612,7 +6615,8 @@
     "filters": [
       "mauricienne",
       "europeenne"
-    ]
+    ],
+    "hours": "Tlj 8h-15h & 19h-23h"
   },
   {
     "id": "tamarina-golf-spa-boutique-hotel",
@@ -9409,7 +9413,8 @@
     "filters": [
       "fruits-de-mer",
       "mauricienne"
-    ]
+    ],
+    "hours": "Dim 11h30-22h en continu, Lun-Mar + Jeu-Sam 11h30-14h30 & 17h-22h, Mer 12h-14h30 & 17h-22h"
   },
   {
     "id": "vicky-s-restaurant",
@@ -10009,7 +10014,8 @@
     "description": "Table familiale de Cap Malheureux ouverte depuis 2019, face à la chapelle rouge, les pieds dans le sable sous un banian. Poisson grillé du jour ; avis partagés sur la transparence des prix (pas de carte affichée).",
     "filters": [
       "mauricienne"
-    ]
+    ],
+    "hours": "Lun-Sam 11h30-15h, fermé dim"
   },
   {
     "id": "safran",
@@ -11217,7 +11223,8 @@
     "description": "Restaurant de cuisine asiatique fusion à Riche Terre (Port Louis), connu pour son Magic Noodles Bowl et son Wutang Chicken, options végétariennes.",
     "filters": [
       "asiatique"
-    ]
+    ],
+    "hours": "Lun-Sam 10h-14h30 & 18h-21h, fermé dim"
   },
   {
     "id": "grand-canton-restaurant",
@@ -13852,7 +13859,8 @@
     "filters": [
       "fruits-de-mer",
       "plus-belles-vues"
-    ]
+    ],
+    "hours": "Tous les jours 10h-1h"
   },
   {
     "id": "dodo-loco",
@@ -13873,7 +13881,8 @@
       "fruits-de-mer",
       "europeenne",
       "produits-locaux"
-    ]
+    ],
+    "hours": "Lun-Mar 10h-14h30, Mer-Sam 10h-14h30 & 18h30-22h30, fermé dim"
   },
   {
     "id": "seb-s-kitchen-grand-baie",
@@ -13912,7 +13921,8 @@
     "description": "Institution familiale en bord de route royale à Pointe aux Canonniers (Grand Baie), spécialisée en poissons et fruits de mer frais (thon, langouste réputés).",
     "filters": [
       "fruits-de-mer"
-    ]
+    ],
+    "hours": "Lun-Jeu + Sam-Dim 10h45-15h & 17h30-22h30, fermé ven"
   },
   {
     "id": "insomnia-night-club",
@@ -14267,7 +14277,8 @@
     "description": "Crêperie bretonne authentique installée dans le complexe Dodo La Lodge à Grand Baie, tenue par un couple français attaché aux recettes traditionnelles de galettes de sarrasin et crêpes sucrées. Avis très positifs, produits de qualité, service chaleureux, face à la plage.",
     "filters": [
       "europeenne"
-    ]
+    ],
+    "hours": "Mer-Sam 11h30-21h, fermé dim + lun + mar"
   },
   {
     "id": "la-demeure-saint-antoine",
@@ -14753,7 +14764,8 @@
     "description": "Restaurant de Grand Baie : curry de poisson, poulpe sauté, fruits de mer grillés.",
     "filters": [
       "fruits-de-mer"
-    ]
+    ],
+    "hours": "Lun-Ven 10h-23h, Sam-Dim 10h-23h30"
   },
   {
     "id": "ti-bazaar-de-grand-baie",
@@ -28486,7 +28498,8 @@
       "restaurants"
     ],
     "zone": "nord",
-    "description": "Restaurant de Trou-aux-Biches : pizza, pâtes, poisson frais local, cuisine mauricienne et asiatique."
+    "description": "Restaurant de Trou-aux-Biches : pizza, pâtes, poisson frais local, cuisine mauricienne et asiatique.",
+    "hours": "Tous les jours 9h-23h"
   },
   {
     "id": "family-pizza",
@@ -29477,7 +29490,8 @@
     "filters": [
       "fruits-de-mer",
       "frequente-locaux"
-    ]
+    ],
+    "hours": "Tous les jours 12h-15h & 18h-22h"
   },
   {
     "id": "amigo-restaurant-cap-malheureux",
@@ -30023,7 +30037,8 @@
     "filters": [
       "europeenne",
       "fruits-de-mer"
-    ]
+    ],
+    "hours": "Tous les jours 7h-23h"
   },
   {
     "id": "zilwa-attitude-calodyne",
@@ -36964,7 +36979,8 @@
     "filters": [
       "sushis",
       "asiatique"
-    ]
+    ],
+    "hours": "Lun-Mer 10h30-20h, Jeu 10h30-18h, Sam 10h30-20h30, Dim 12h-20h, fermé ven"
   },
   {
     "id": "the-altimate-sushi-bar-grill-grand-baie",
@@ -37132,7 +37148,8 @@
     "description": "Restaurant indien situé au cœur de Péreybère, apprécié pour sa cuisine fine (biryani, paneer, plats classiques et plus exotiques du sous-continent) servie dans un cadre élégant mais décontracté. Noté 4,5/5 sur TripAdvisor pour son service attentionné.",
     "filters": [
       "indienne"
-    ]
+    ],
+    "hours": "Tous les jours 8h-10h, 12h-14h30 & 18h30-22h"
   },
   {
     "id": "sunshine-fusion-poste-lafayette",
@@ -37408,7 +37425,8 @@
     "filters": [
       "asiatique",
       "sushis"
-    ]
+    ],
+    "hours": "Fermé mer, Lun-Mar + Jeu-Dim 11h-23h"
   },
   {
     "id": "parc-animalier-maritim-resort-balaclava",
@@ -37633,7 +37651,8 @@
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=La%20Voglia%20Matta%20(by%20Aaron%20%2F%20Chez%20Marco)%20Royal%20Road%2C%20Trou%20aux%20Biches%20Mauritius",
     "filters": [
       "italien"
-    ]
+    ],
+    "hours": "Mar-Dim 12h-14h30 & 18h30-22h, fermé lun"
   },
   {
     "id": "anno-1743-maritim-balaclava",
@@ -38426,7 +38445,8 @@
     "description": "Restaurant du Club House du Labourdonnais Sports Club : cuisine snacking et européenne servie dans une ambiance bar-restaurant conviviale, avec un cadre magnifique donnant sur les terrains de sport (tennis, padel, football). Très bonne restauration, idéal après le sport ou pour un moment détente entre amis.",
     "filters": [
       "europeenne"
-    ]
+    ],
+    "hours": "Lun-Sam 7h30-21h, fermé dim"
   },
   {
     "id": "orchestra-bagatelle-mall",
@@ -49047,7 +49067,8 @@
     "lng": 57.5457175,
     "filters": [
       "mauricienne"
-    ]
+    ],
+    "hours": "Tous les jours 9h-23h"
   },
   {
     "id": "assiette-du-nord-trou-aux-biches",
@@ -50095,7 +50116,8 @@
     "description": "Restaurant familial de Petit Raffray, cuisine mauricienne conviviale, ouvert 7j/7 de midi à 1h du matin.",
     "filters": [
       "mauricienne"
-    ]
+    ],
+    "hours": "Tous les jours 12h-14h30 & 18h30-1h"
   },
   {
     "id": "yes-food-moris",
@@ -50192,7 +50214,8 @@
     "description": "Cuisine du chef Christophe, dégustation et surprises, ouvert du mardi au samedi et pour le déjeuner le dimanche.",
     "filters": [
       "mauricienne"
-    ]
+    ],
+    "hours": "Lun 18h-22h, Mar-Sam 12h-15h & 18h-22h30, Dim 12h-15h"
   },
   {
     "id": "blacksheep-ebene",
@@ -50302,7 +50325,8 @@
     "description": "Pizzeria de Triolet.",
     "filters": [
       "italien"
-    ]
+    ],
+    "hours": "Mar-Dim 11h30-14h & 17h30-21h30, fermé lun"
   },
   {
     "id": "red-grand-baie",
@@ -50336,7 +50360,8 @@
     "description": "Cuisine mauricienne classique, spécialité de bol renversé, fermé le jeudi.",
     "filters": [
       "mauricienne"
-    ]
+    ],
+    "hours": "Ven-Mer 9h-23h, fermé jeu"
   },
   {
     "id": "deja-vu-grand-baie",
@@ -50400,7 +50425,8 @@
     "description": "Cuisine du nord et du sud de l'Inde, formule déjeuner thali avec riz et naans, 2 légumes, 2 viandes et un dessert. Ouvert tous les jours. Autre adresse : Av. des Jacarandas, Tamarin.",
     "filters": [
       "indienne"
-    ]
+    ],
+    "hours": "Tlj 11h30-14h & 18h-21h30"
   },
   {
     "id": "herboristerie-feuilles-et-fleurs",
