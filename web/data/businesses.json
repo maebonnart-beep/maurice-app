@@ -8283,7 +8283,8 @@
     "filters": [
       "mauricienne",
       "fruits-de-mer"
-    ]
+    ],
+    "hours": "Tlj 12h30-15h & 19h-22h"
   },
   {
     "id": "le-morne-snack",
@@ -8342,7 +8343,8 @@
     "description": "Restaurant du St. Regis Le Morne inspiré des marchés flottants thaïlandais : cuisine thaïe, malaise, vietnamienne, indonésienne et singapourienne, dans un cadre entouré d'eau. Très bien noté (4,6/5).",
     "filters": [
       "asiatique"
-    ]
+    ],
+    "hours": "Tlj 18h30-22h"
   },
   {
     "id": "gregory-s-secret-restaurant",
@@ -8382,7 +8384,8 @@
     "filters": [
       "italien",
       "plus-belles-vues"
-    ]
+    ],
+    "hours": "Tlj 12h-15h & 19h-22h"
   },
   {
     "id": "chalets-chamarel",
@@ -8442,7 +8445,8 @@
     "filters": [
       "europeenne",
       "produits-locaux"
-    ]
+    ],
+    "hours": "Tlj 19h-22h"
   },
   {
     "id": "chez-bhim",
@@ -8482,7 +8486,8 @@
     "filters": [
       "kids-friendly",
       "plus-belles-vues"
-    ]
+    ],
+    "hours": "Tlj 12h30-16h30"
   },
   {
     "id": "umami",
@@ -8560,7 +8565,8 @@
     "description": "Petite table fusion-créole du Morne (une quinzaine de places), menu du jour selon arrivage, sans alcool. Excellents avis, réservation indispensable.",
     "filters": [
       "mauricienne"
-    ]
+    ],
+    "hours": "Tlj 12h30-17h, sur réservation"
   },
   {
     "id": "rangoli",
@@ -8617,7 +8623,8 @@
     "description": "Bar principal de l'hôtel Paradis Beachcomber (Le Morne), surplombant la piscine et le lagon. Cocktails tropicaux, terrasse ouverte avec vue sur piscine et plage, animations musicales en soirée.",
     "filters": [
       "plus-belles-vues"
-    ]
+    ],
+    "hours": "Tlj 10h-1h"
   },
   {
     "id": "annabella-s",
@@ -8637,7 +8644,8 @@
     "filters": [
       "tables-exception",
       "vins-spiritueux"
-    ]
+    ],
+    "hours": "Tlj 6h30-10h30 & 18h30-22h"
   },
   {
     "id": "la-plage",
@@ -8678,7 +8686,8 @@
     "description": "Snack de bord de route à Saint Martin où la cuisine mauricienne est préparée avec soin et générosité : assiettes copieuses et colorées, accueil chaleureux, prix très doux.",
     "filters": [
       "mauricienne"
-    ]
+    ],
+    "hours": "Tlj 11h30-20h30"
   },
   {
     "id": "le-tropical",
@@ -8757,7 +8766,8 @@
     "description": "Restaurant de Souillac face à la plage publique de Gris-Gris, cuisine fruits de mer/mauricienne/chinoise/européenne/indienne. Avis contrastés : belle vue et soupe de crabe appréciées par certains, prix jugés élevés par d'autres.",
     "filters": [
       "plus-belles-vues"
-    ]
+    ],
+    "hours": "Tlj 9h30-22h"
   },
   {
     "id": "la-roche-cari",
@@ -8797,7 +8807,8 @@
     "filters": [
       "mauricienne",
       "kids-friendly"
-    ]
+    ],
+    "hours": "Tlj 7h-10h30 & 19h-22h"
   },
   {
     "id": "playa-restaurant-tamassa-resort",
@@ -8816,7 +8827,8 @@
     "description": "Restaurant de plage du Tamassa (Bel Ombre), cuisine méditerranéenne à touche mauricienne, dîner les pieds dans le sable, carte de vins internationaux et rhums locaux.",
     "filters": [
       "europeenne"
-    ]
+    ],
+    "hours": "Tlj 12h-15h & 19h-22h"
   },
   {
     "id": "restaurant-bistro-anvers-bel-ombre-mauritius",
@@ -8877,7 +8889,8 @@
     "filters": [
       "fruits-de-mer",
       "mauricienne"
-    ]
+    ],
+    "hours": "Lun-Mer 11h-16h30, Jeu-Sam 11h-21h30, fermé dim"
   },
   {
     "id": "rum-shed-bar-grill-restaurant-at-shanti-maurice-resort-spa",
@@ -8936,7 +8949,8 @@
     "filters": [
       "fruits-de-mer",
       "mauricienne"
-    ]
+    ],
+    "hours": "Tlj 10h-17h"
   },
   {
     "id": "pearl-fisher",
@@ -8974,7 +8988,8 @@
     "description": "Pizzeria-restaurant italien de Souillac tenu par un couple napolitain, réputé pour ses pizzas, lasagnes et pâtes maison. Ouvert mardi-dimanche.",
     "filters": [
       "italien"
-    ]
+    ],
+    "hours": "Mar-Sam + Dim 9h-20h30, fermé lun"
   },
   {
     "id": "le-fangourin",
@@ -9036,7 +9051,8 @@
     "filters": [
       "mauricienne",
       "fruits-de-mer"
-    ]
+    ],
+    "hours": "Mar-Dim 11h-22h, fermé lun"
   },
   {
     "id": "auberge-de-saint-aubin",
@@ -9137,7 +9153,8 @@
     "description": "Petite adresse tenue par deux personnes accueillantes, sur rue Souffleur à Mahébourg. Cuisine simple, copieuse et très bon marché : panini au marlin fumé, poisson frit, riz frit, samoussas. Ambiance décontractée avec parfois un groupe local en live (reggae bar) — une adresse authentique où les touristes se font rares.",
     "filters": [
       "mauricienne"
-    ]
+    ],
+    "hours": "Mar-Sam 18h-00h, fermé lun + dim"
   },
   {
     "id": "legend-golf-course",
@@ -10130,7 +10147,8 @@
     "filters": [
       "mauricienne",
       "frequente-locaux"
-    ]
+    ],
+    "hours": "Lun + Mer-Sam 9h-17h, Dim 9h-14h, fermé mar"
   },
   {
     "id": "le-jardin-de-beau-vallon",
@@ -10151,7 +10169,8 @@
     "filters": [
       "mauricienne",
       "produits-locaux"
-    ]
+    ],
+    "hours": "Tous les jours 11h30-14h30 & 18h30-21h"
   },
   {
     "id": "le-bistrot-d-edwige",
@@ -10171,7 +10190,8 @@
     "description": "Bistrot ouvert tous les jours de 10h à 23h à Mahébourg, servant des plats typiquement mauriciens préparés avec soin dans une ambiance conviviale. Bonne réputation locale (plus de 800 abonnés sur sa page Facebook).",
     "filters": [
       "europeenne"
-    ]
+    ],
+    "hours": "Tlj 10h-23h"
   },
   {
     "id": "taste-of-freedom",
@@ -10191,7 +10211,8 @@
     "description": "Food truck posé face à la baie de Mahébourg, quelques tables et tonneaux sous toile tendue, esprit rootsy et vue imprenable. Poissons ultra-frais et fruits de mer bien assaisonnés (poulpe et calamars grillés, poisson entier), soirée langouste le lundi. Service parfois lent car le chef cuisine pour toutes les tables, mais l'attente est unanimement jugée méritée. Cash only.",
     "filters": [
       "fruits-de-mer"
-    ]
+    ],
+    "hours": "Ven-Sam 12h30-15h30 & 18h30-22h30, Lun + Jeu 18h30-22h30, Dim 12h30-16h, fermé mar + mer"
   },
   {
     "id": "la-vielle-rouge",
@@ -10210,7 +10231,8 @@
     "description": "Table de fruits de mer et cuisine fusion au coin des rues Hangard et des Mares à Mahébourg, classée #4 sur 33 restaurants de la ville. Accueil très chaleureux, plats copieux et savoureux : poisson épicé aux raisins et cacahuètes cuit en feuille de bananier, crevettes créoles, curry de poisson. Excellent rapport qualité-prix, transfert hôtel gratuit proposé.",
     "filters": [
       "fruits-de-mer"
-    ]
+    ],
+    "hours": "Tous les jours 11h-15h"
   },
   {
     "id": "coin-casse-croute",
@@ -10231,7 +10253,8 @@
     "filters": [
       "mauricienne",
       "frequente-locaux"
-    ]
+    ],
+    "hours": "Lun + Mer-Sam 10h30-18h, Dim 10h30-15h, fermé mar"
   },
   {
     "id": "1810-hotel-restaurant",
@@ -10348,7 +10371,8 @@
     "description": "Restaurant de Mahébourg à l'ambiance kitsch et conviviale, spécialités de venaison et fruits de mer, cuisine créole authentique.",
     "filters": [
       "mauricienne"
-    ]
+    ],
+    "hours": "Tous les jours 11h-21h30"
   },
   {
     "id": "salut-les-copains-kaushik",
@@ -10388,7 +10412,8 @@
     "filters": [
       "mauricienne",
       "grillades"
-    ]
+    ],
+    "hours": "Tous les jours 9h-22h"
   },
   {
     "id": "ferney-falaise-rouge-restaurant",
@@ -10457,7 +10482,8 @@
     "filters": [
       "mauricienne",
       "fruits-de-mer"
-    ]
+    ],
+    "hours": "Ven-Sam 10h-21h, Lun-Mer + Dim 10h-14h, fermé jeu"
   },
   {
     "id": "blue-bay-snack-blue-bay-tuck-shop",
@@ -10476,7 +10502,8 @@
     "description": "Snack local et abordable à deux pas de la plage de Blue Bay, prisé pour ses samoussas, poulets croustillants et beignets. Ambiance familiale et décontractée.",
     "filters": [
       "frequente-locaux"
-    ]
+    ],
+    "hours": "Lun-Jeu 10h30-20h, Ven-Sam 10h30-22h, Dim 11h-15h"
   },
   {
     "id": "pyramid-briani-baguettes",
@@ -10497,7 +10524,8 @@
     "filters": [
       "indienne",
       "frequente-locaux"
-    ]
+    ],
+    "hours": "Lun 9h-16h30, Mar-Ven 9h-15h, Sam 8h30-16h30, fermé dim"
   },
   {
     "id": "saveur-kreol",
@@ -10631,7 +10659,8 @@
     "filters": [
       "mauricienne",
       "fruits-de-mer"
-    ]
+    ],
+    "hours": "Dim-Mer 12h-21h30, Jeu 7h-15h30, Ven-Sam 12h-23h"
   },
   {
     "id": "coco-de-zil-mauritius",
@@ -12544,7 +12573,8 @@
     "filters": [
       "mauricienne",
       "grillades"
-    ]
+    ],
+    "hours": "Tlj 11h30-16h30"
   },
   {
     "id": "la-terre-des-7-couleurs",
@@ -24885,7 +24915,8 @@
     "description": "Restaurant à thème hollywoodien sur la Coastal Road à St Martin (Savanne), cuisine mauricienne (nouilles, caris, riz), réputé pour son cari langouste.",
     "filters": [
       "mauricienne"
-    ]
+    ],
+    "hours": "Lun 11h-16h30, Mar-Dim 10h30-20h"
   },
   {
     "id": "le-crocodile-affame",
@@ -24906,7 +24937,8 @@
     "filters": [
       "mauricienne",
       "europeenne"
-    ]
+    ],
+    "hours": "Tlj 11h-16h (dernières commandes), fermeture 17h"
   },
   {
     "id": "beach-rouge-lux-grand-gaube",
@@ -29488,7 +29520,8 @@
     "filters": [
       "mauricienne",
       "frequente-locaux"
-    ]
+    ],
+    "hours": "Lun 12h-17h, Mar + Jeu-Dim 18h-22h, fermé mer"
   },
   {
     "id": "naked-foods",
@@ -29531,7 +29564,8 @@
     "filters": [
       "mauricienne",
       "plus-belles-vues"
-    ]
+    ],
+    "hours": "Lun 12h-15h, Mar-Dim 12h-15h & 18h-21h"
   },
   {
     "id": "kot-marie-michelle",
@@ -49411,7 +49445,8 @@
     "description": "Restaurant chinois réputé de Mahébourg, dont la cuisine est préparée par un chef shanghaïen et servie dans une salle simple. Spécialités chinoises et asiatiques. Ouvert seulement certains jours : mieux vaut appeler avant de venir.",
     "filters": [
       "asiatique"
-    ]
+    ],
+    "hours": "Fermé mar, Lun 11h-14h30, Mer-Dim 11h-14h30 & 18h-21h30"
   },
   {
     "id": "karay-mario-mahebourg",
@@ -49453,7 +49488,8 @@
     "filters": [
       "fruits-de-mer",
       "mauricienne"
-    ]
+    ],
+    "hours": "Tlj 11h-15h"
   },
   {
     "id": "bato-constance-maquettes-mahebourg",
@@ -49541,7 +49577,8 @@
     "description": "Adresse populaire de Blue Bay, sur la route côtière, réputée pour ses burgers de qualité (bœuf, poulet frit ou grillé, options végétariennes) ainsi que quelques plats de fruits de mer.",
     "filters": [
       "grillades"
-    ]
+    ],
+    "hours": "Tlj 12h-20h30"
   },
   {
     "id": "le-bougainville-blue-bay",
