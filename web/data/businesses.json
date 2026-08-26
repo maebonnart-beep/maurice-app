@@ -700,7 +700,8 @@
     "lng": 57.5867674,
     "themes": [
       "activites-enfants-famille",
-      "casinos-loisirs"
+      "casinos-loisirs",
+      "kids-friendly"
     ],
     "zone": "nord",
     "description": "Bowling de 8 pistes avec salle de billard et bar-lounge servant repas et cocktails, ouvert tous les jours jusqu'à 2h du matin ; premier bowling ouvert à l'Île Maurice.",
@@ -720,7 +721,8 @@
     "lng": 57.5870105,
     "hours": "Tous les jours 10h-4h",
     "themes": [
-      "activites-enfants-famille"
+      "activites-enfants-famille",
+      "kids-friendly"
     ],
     "description": "Centre de loisirs avec jeux d'arcade, billard et bowling, situé à l'intérieur du centre commercial Super U de Grand Baie.",
     "zone": "nord"
@@ -735,7 +737,8 @@
     "hours": "Tous les jours 10h-22h (à confirmer)",
     "priceRange": "prix-moyen",
     "themes": [
-      "activites-enfants-famille"
+      "activites-enfants-famille",
+      "kids-friendly"
     ],
     "description": "Complexe de loisirs avec bowling, laser game, aires de jeux pour enfants, billards, jeux d'arcade et snack-bar ; formule prisée pour les anniversaires et sorties en famille.",
     "zone": "centre"
@@ -751,7 +754,8 @@
     "priceRange": "prix-moyen",
     "themes": [
       "activites-enfants-famille",
-      "casinos-loisirs"
+      "casinos-loisirs",
+      "kids-friendly"
     ],
     "description": "Complexe multi-loisirs au Tribeca Mall (Trianon) : piste de karting électrique indoor de 800 m (dès 8 ans et adultes), jeux d'arcade et attractions.",
     "zone": "centre",
@@ -772,7 +776,8 @@
     "hours": "Lun-Sam 9h-17h, fermé dim",
     "priceRange": "bon-marche",
     "themes": [
-      "activites-enfants-famille"
+      "activites-enfants-famille",
+      "kids-friendly"
     ],
     "zone": "nord",
     "description": "Balade sous-marine avec casque de plongée alimenté à l'énergie solaire, accessible sans savoir nager dès 7 ans, au milieu des coraux et poissons tropicaux de Grand Gaube."
@@ -790,7 +795,8 @@
     "hours": "Lun-Dim 9h-12h, Lun-Sam 13h30-18h",
     "priceRange": "bon-marche",
     "themes": [
-      "activites-enfants-famille"
+      "activites-enfants-famille",
+      "kids-friendly"
     ],
     "zone": "nord",
     "description": "Vente et location de vélos à assistance électrique, VTT et trottinettes électriques, avec possibilité de balades guidées ; boutique tenue par Véronique et Didier, bien notée par les clients."
@@ -3433,7 +3439,8 @@
     "lat": -20.3625775,
     "lng": 57.7064693,
     "themes": [
-      "parcs-activites-famille"
+      "parcs-activites-famille",
+      "kids-friendly"
     ],
     "hours": "Tous les jours 9h-17h",
     "duration": "1h30 à 4h selon circuit (5 à 13km)",
@@ -3455,7 +3462,8 @@
     "lng": 57.7228,
     "themes": [
       "parcs-activites-famille",
-      "activites-enfants-famille"
+      "activites-enfants-famille",
+      "kids-friendly"
     ],
     "hours": "Lun-Sam départs 9h30-14h30 (toutes les 30 min), Dim matin seulement 9h30-12h",
     "duration": "1h30-2h (visite guidée)",
@@ -3464,7 +3472,11 @@
     "zone": "sud",
     "badge": "selection",
     "photoUrl": "/photos/ile-aux-aigrettes.jpg",
-    "photoUrls": ["/photos/ile-aux-aigrettes.jpg","/photos/ile-aux-aigrettes-2.jpg","/photos/ile-aux-aigrettes-3.jpg"],
+    "photoUrls": [
+      "/photos/ile-aux-aigrettes.jpg",
+      "/photos/ile-aux-aigrettes-2.jpg",
+      "/photos/ile-aux-aigrettes-3.jpg"
+    ],
     "description": "Îlot-sanctuaire accessible en visite guidée par bateau (10 min de traversée depuis Pointe Jérôme), où évoluent en liberté tortues géantes d'Aldabra, geckos ornés et pigeons roses.",
     "entryPrice": "≈ 1100 Rs/pers (traversée comprise), tarif résident ≈ 800 Rs/adulte et 400 Rs/enfant",
     "koteMorisComment": "Excursion tout simplement passionnante avec l'ONG Wildlife Mauritius : 1h30 d'explications limpides sur la faune et la flore de l'île, les conséquences des extinctions passées et les actions en cours pour restaurer l'écosystème. Visite en petits groupes pour ne pas perturber les animaux en liberté, avec une guide exceptionnelle. Très accessible aux enfants — c'est même parfait pour eux. À prévoir : anti-moustique (assez humide et chaud, avec environ 3°C de plus que sur l'île principale).",
@@ -3481,7 +3493,8 @@
     "website": "",
     "themes": [
       "activites-enfants-famille",
-      "culture-patrimoine"
+      "culture-patrimoine",
+      "kids-friendly"
     ],
     "priceRange": "gratuit",
     "description": "Petit musée historique retraçant l'histoire de l'île depuis la colonisation jusqu'à l'indépendance, avec objets d'époque et récits liés à la bataille navale de Grand Port ; entrée gratuite, photographie interdite à l'intérieur. Conseil : prévoir une lotion anti-moustique pour la visite du jardin.",
@@ -3831,7 +3844,10 @@
     "badge": "selection",
     "zone": "sud",
     "photoUrl": "/photos/le-bazilic-mahebourg.jpg",
-    "photoUrls": ["/photos/le-bazilic-mahebourg.jpg","/photos/le-bazilic-mahebourg-2.jpg"],
+    "photoUrls": [
+      "/photos/le-bazilic-mahebourg.jpg",
+      "/photos/le-bazilic-mahebourg-2.jpg"
+    ],
     "description": "Situé rue Maurice à Mahébourg, ce restaurant au décor industriel marie saveurs mauriciennes et touches thaïlandaises, entre produits de la mer frais et plats traditionnels revisités.",
     "koteMorisComment": "Accueil et service aux petits soins, dans un cadre intérieur plutôt cosy. Assiettes généreuses et goûteuses.",
     "filters": [
@@ -5165,7 +5181,8 @@
     "lat": -20.2739,
     "lng": 57.3897,
     "themes": [
-      "parcs-activites-famille"
+      "parcs-activites-famille",
+      "kids-friendly"
     ],
     "hours": "Tous les jours 9h-18h (été), 9h-17h (hiver)",
     "priceRange": "se-faire-plaisir",
@@ -5190,7 +5207,8 @@
     "lat": -20.4964,
     "lng": 57.4972,
     "themes": [
-      "parcs-activites-famille"
+      "parcs-activites-famille",
+      "kids-friendly"
     ],
     "hours": "Tous les jours 9h30-17h",
     "priceRange": "prix-moyen",
@@ -5217,7 +5235,8 @@
       "culture-patrimoine",
       "plages-nature",
       "parcs-activites-famille",
-      "excursions-sorties"
+      "excursions-sorties",
+      "kids-friendly"
     ],
     "hours": "Tous les jours 9h-17h (dernière admission 16h)",
     "priceRange": "prix-moyen",
@@ -5306,7 +5325,8 @@
     "lng": 57.5119,
     "themes": [
       "parcs-activites-famille",
-      "culture-patrimoine"
+      "culture-patrimoine",
+      "kids-friendly"
     ],
     "hours": "Tous les jours, visites guidées 9h30-16h30",
     "priceRange": "bon-marche",
@@ -6731,7 +6751,8 @@
     "filters": [
       "italien",
       "europeenne"
-    ]
+    ],
+    "hours": "Mar-Dim 12h-15h & 19h-23h, fermé lun"
   },
   {
     "id": "the-old-brothers-ltd",
@@ -6750,7 +6771,8 @@
     "description": "Seul restaurant américain BBQ de la zone Black River/Tamarin, cuisson low & slow façon Texas smoker : pulled pork, brisket, mac & cheese, wings, tacos. Très bien noté (4,9/5).",
     "filters": [
       "grillades"
-    ]
+    ],
+    "hours": "Mar-Sam 11h-14h30 & 17h-20h30, fermé dim + lun"
   },
   {
     "id": "pakbo-restaurant",
@@ -6770,7 +6792,8 @@
     "description": "Restaurant au décor tout en blanc évoquant un paquebot (« pakbo » en créole), cuisine fusion mêlant influences créole, indienne, chinoise et française.",
     "filters": [
       "europeenne"
-    ]
+    ],
+    "hours": "Lun-Mer + Ven-Dim 10h-21h30, fermé jeu"
   },
   {
     "id": "la-marmite-mauricienne-flic-en-flac-restaurant",
@@ -6809,7 +6832,8 @@
     "description": "Restaurant italien moderne en bord de plage à Flic en Flac, pâtes fraîches et pizzas au feu de bois. Fruits de mer, steaks, options vegan.",
     "filters": [
       "italien"
-    ]
+    ],
+    "hours": "Tous les jours 11h-22h"
   },
   {
     "id": "buddha-bar-beach",
@@ -6829,7 +6853,8 @@
     "filters": [
       "sushis",
       "asiatique"
-    ]
+    ],
+    "hours": "Tous les jours 12h30-15h & 19h-22h"
   },
   {
     "id": "blacksalt-mauritius",
@@ -6951,7 +6976,8 @@
     "filters": [
       "mauricienne",
       "fruits-de-mer"
-    ]
+    ],
+    "hours": "Lun + Mer-Dim 11h30-15h & 18h-22h, fermé mar"
   },
   {
     "id": "mare-mare-beach-restaurant",
@@ -6991,7 +7017,8 @@
     "filters": [
       "mauricienne",
       "asiatique"
-    ]
+    ],
+    "hours": "Lun-Mer + Ven-Dim 11h30-16h & 18h-22h, fermé jeu"
   },
   {
     "id": "rib-reef",
@@ -7190,7 +7217,8 @@
     "description": "Burger house récente de Flic en Flac spécialisée dans des burgers mauriciens exotiques (poulet-mangue, bœuf), options végé/vegan. Ouvert à partir de 18h ; très bien notée (4,7/5).",
     "filters": [
       "grillades"
-    ]
+    ],
+    "hours": "Dim-Jeu 18h-22h30, Ven 18h-23h, Sam 12h30-23h"
   },
   {
     "id": "s-arrastu-ristorante-gelateria-bar",
@@ -7296,7 +7324,8 @@
     "filters": [
       "mauricienne",
       "grillades"
-    ]
+    ],
+    "hours": "Fermé lun, Mar-Jeu 18h-22h, Ven 18h-22h30, Sam 18h30-23h, Dim 16h-22h"
   },
   {
     "id": "twin-s-garden-ii",
@@ -7316,7 +7345,8 @@
     "description": "Restaurant familial de Flic en Flac dans un jardin tropical, cuisine mauricienne/internationale, soirées animées de séga et musique live le vendredi.",
     "filters": [
       "mauricienne"
-    ]
+    ],
+    "hours": "Mar-Dim 9h30-14h30 & 17h-00h, fermé lun"
   },
   {
     "id": "mama-helene-so-lakwizine-table-d-hotes-cuisine-locale-creole-chez-l-habitant",
@@ -7462,7 +7492,8 @@
     "description": "Bistro cosy de La Gaulette, cuisine locale et internationale changeant selon les arrivages (poke bowls, nouilles aux fruits de mer, spring rolls), bons cocktails. Très bien noté (5/5).",
     "filters": [
       "mauricienne"
-    ]
+    ],
+    "hours": "Tous les jours 11h-22h"
   },
   {
     "id": "teppanyaki",
@@ -7545,7 +7576,8 @@
     "description": "Petit restaurant de Flic en Flac tenu par un patron mauricien qui cuisine lui-même, produits frais et portions généreuses (agneau, poulpe, langouste sur commande) ; bien noté (4,2/5).",
     "filters": [
       "mauricienne"
-    ]
+    ],
+    "hours": "Lun-Sam 12h-15h, fermé dim"
   },
   {
     "id": "frenchie-cafe",
@@ -7626,7 +7658,8 @@
     "description": "Bar-restaurant au décor africain de Flic en Flac, jardin et lanternes. Spécialités burgers et poulet croustillant ; concerts live vendredi et dimanche.",
     "filters": [
       "grillades"
-    ]
+    ],
+    "hours": "Fermé dim-lun, Mar 18h-22h30, Mer 18h-23h, Jeu 18h-22h30, Ven 18h-23h30, Sam 18h-23h"
   },
   {
     "id": "oasis-beach-bar",
@@ -7685,7 +7718,8 @@
     "description": "Resto-pub de Coeur de Ville Tamarin, cuisine européenne simple (pâtes bolognaise, steak grillé). Ouvert 7j/7, ambiance décontractée de quartier.",
     "filters": [
       "europeenne"
-    ]
+    ],
+    "hours": "Lun-Jeu 11h-21h30, Ven-Sam 11h-00h30, Dim 11h-16h30"
   },
   {
     "id": "chez-christelle",
@@ -7963,7 +7997,8 @@
     "filters": [
       "indienne",
       "fruits-de-mer"
-    ]
+    ],
+    "hours": "Fermé lun, Mar-Dim 10h-16h"
   },
   {
     "id": "rhumerie-de-chamarel-restaurant-rum-distillery",
@@ -8326,7 +8361,8 @@
     "description": "Adresse confidentielle nichée dans un jardin tropical de La Gaulette, tenue par Gregory qui accueille personnellement ses convives (menus sur mesure, contact WhatsApp conseillé). Cuisine créole, chinoise, indienne et fruits de mer frais.",
     "filters": [
       "fruits-de-mer"
-    ]
+    ],
+    "hours": "Tlj 15h-23h"
   },
   {
     "id": "the-beach-lux-le-morne",
@@ -8385,7 +8421,8 @@
     "filters": [
       "fruits-de-mer",
       "plus-belles-vues"
-    ]
+    ],
+    "hours": "Fermé mer, Lun-Mar + Jeu-Sam 7h30-21h, Dim 12h-21h"
   },
   {
     "id": "dina-s",
@@ -8484,7 +8521,8 @@
     "filters": [
       "mauricienne",
       "italien"
-    ]
+    ],
+    "hours": "Tous les jours 17h-21h"
   },
   {
     "id": "indya",
@@ -10368,7 +10406,10 @@
     "badge": "selection",
     "zone": "sud",
     "photoUrl": "/photos/ferney-falaise-rouge-restaurant.jpg",
-    "photoUrls": ["/photos/ferney-falaise-rouge-restaurant.jpg","/photos/ferney-falaise-rouge-restaurant-2.jpg"],
+    "photoUrls": [
+      "/photos/ferney-falaise-rouge-restaurant.jpg",
+      "/photos/ferney-falaise-rouge-restaurant-2.jpg"
+    ],
     "hours": "Dim-Jeu 9h30-16h, Ven-Sam 9h30-22h",
     "description": "Restaurant perché en léger surplomb de la côte à Vieux Grand Port, avec vue remarquable sur la baie du Grand Port et la Montagne du Lion, entre mer et forêt native. Cuisine locale et de saison à base de produits de fermes voisines, sur un site chargé d'histoire.",
     "koteMorisComment": "Cadre splendide entre mer et montagne, et facile d'accès. Petite déception côté cuisine, un peu plus classique que ne le laisse espérer le cadre : les produits sont frais et locaux (on le sent bien), mais l'ensemble aurait mérité un peu plus de travail sur la présentation et les épices. Les desserts, en revanche, sont une vraie réussite (glace au tamarin, bavaroise à l'hibiscus).",
@@ -12161,7 +12202,8 @@
     "lat": -19.9873661,
     "lng": 57.6198216,
     "themes": [
-      "parcs-activites-famille"
+      "parcs-activites-famille",
+      "kids-friendly"
     ],
     "badge": "selection",
     "description": "Jolie parenthèse faune-flore au nord de l'île, modeste en taille mais charmante.",
@@ -12184,7 +12226,8 @@
     "lng": 57.4406611,
     "themes": [
       "plages-nature",
-      "parcs-activites-famille"
+      "parcs-activites-famille",
+      "kids-friendly"
     ],
     "zone": "sud",
     "description": "Réserve nichée dans le Domaine de Bel Ombre, avec deux cascades se jetant vers l'océan et un point de vue dégagé sur le littoral. Accessible via les activités du domaine Heritage (safari 4x4, tour en bus) ; randonnée guidée incluse pour les résidents des hôtels Heritage Le Telfair et Awali. Guide obligatoire.",
@@ -12205,7 +12248,8 @@
     "lat": -20.290437,
     "lng": 57.40318,
     "themes": [
-      "parcs-activites-famille"
+      "parcs-activites-famille",
+      "kids-friendly"
     ],
     "animalsVisible": "Lions, tigres, guépards, caracals, servals (activité séparée, billet distinct de l'entrée Casela)",
     "description": "Approche encadrée par des soigneurs de grands félins (lions, tigres, guépards) au sein de la réserve, en activité complémentaire à l'entrée du parc Casela.",
@@ -12244,14 +12288,18 @@
     "lat": -20.1593375,
     "lng": 57.4951185,
     "themes": [
-      "parcs-activites-famille"
+      "parcs-activites-famille",
+      "kids-friendly"
     ],
     "animalsVisible": "~200 espèces marines de l'Océan Indien (aquarium, 3500 spécimens, 45 bassins thématiques)",
     "description": "Grand aquarium du front de mer de Port Louis : parcours à travers 45 bassins thématiques pour observer requins, raies et près de 3500 spécimens marins de l'Océan Indien.",
     "entryPrice": "Rs 650 résident / Rs 1280 non-résident (adulte)",
     "zone": "centre",
     "photoUrl": "/photos/odysseo-oceanarium-mauritius-ltd.jpg",
-    "photoUrls": ["/photos/odysseo-oceanarium-mauritius-ltd.jpg","/photos/odysseo-oceanarium-mauritius-ltd-2.jpg"],
+    "photoUrls": [
+      "/photos/odysseo-oceanarium-mauritius-ltd.jpg",
+      "/photos/odysseo-oceanarium-mauritius-ltd-2.jpg"
+    ],
     "koteMorisComment": "Une bonne alternative pour ceux qui ne plongent pas ou ne font pas de snorkeling : l'oceanarium met l'accent sur la pédagogie et la protection du monde marin, avec des cartels didactiques à chaque bassin. Au programme : poissons de lagon et de la barrière de corail (hippocampes, poissons-lions, poissons-clowns, murènes), herbiers marins, poissons d'eau douce endémiques et invasifs. Le clou de la visite est l'immense bassin central, que l'on observe par-dessus puis par-dessous via un tunnel, où évoluent requins, raies, murènes et carangues, ainsi que des invertébrés et des méduses mises en valeur sous lumière noire. Deux bassins extérieurs complètent le parcours avec raies pastenagues et mourines javanaises. Seul bémol : un tarif jugé élevé pour la visite.",
     "filters": [
       "parcs-animaliers"
@@ -12268,7 +12316,8 @@
     "lat": -20.1413875,
     "lng": 57.5030394,
     "themes": [
-      "parcs-activites-famille"
+      "parcs-activites-famille",
+      "kids-friendly"
     ],
     "animalsVisible": "Oiseaux migrateurs et locaux : bécasseaux, chevaliers, pluviers, courlis, hérons, sternes ; observations notables crécerelle de Maurice, pigeon rose, gobemouche de paradis de Maurice",
     "description": "Réserve ornithologique gratuite le long de l'estuaire, idéale pour l'observation d'oiseaux migrateurs et d'espèces endémiques comme le pigeon rose ou la crécerelle de Maurice.",
@@ -12289,7 +12338,8 @@
     "lat": -20.5081742,
     "lng": 57.5446242,
     "themes": [
-      "activites-enfants-famille"
+      "activites-enfants-famille",
+      "kids-friendly"
     ],
     "zone": "sud",
     "description": "Excursions en quad dans le sud sauvage de l'île, avec étapes aux chutes de Rochester, aux falaises de Gris-Gris ou à la Roche qui Pleure et baignades dans les cascades."
@@ -12340,7 +12390,8 @@
     "lat": -20.0825075,
     "lng": 57.6935956,
     "themes": [
-      "parcs-activites-famille"
+      "parcs-activites-famille",
+      "kids-friendly"
     ],
     "animalsVisible": "Chiens et chats (refuge)",
     "description": "Refuge pour chiens et chats abandonnés, ouvert à la visite pour caresser les pensionnaires, se renseigner sur l'adoption ou faire un don.",
@@ -12361,7 +12412,8 @@
     "lat": -20.457614,
     "lng": 57.485178,
     "themes": [
-      "parcs-activites-famille"
+      "parcs-activites-famille",
+      "kids-friendly"
     ],
     "badge": "selection",
     "promoText": "Superbe parc, organisation bien rodée. Idéal en famille.",
@@ -12385,7 +12437,8 @@
     "lat": -20.4500471,
     "lng": 57.3729977,
     "themes": [
-      "parcs-activites-famille"
+      "parcs-activites-famille",
+      "kids-friendly"
     ],
     "description": "Parcours ziplines/tyroliennes + via ferrata sur les hauteurs de Chamarel, vue sur la vallée et Baie du Cap",
     "entryPrice": "Entrée + forêt Rs 250 ; Via Ferrata Rs 1300 ; 3 ziplines + pont Rs 1800",
@@ -12405,7 +12458,8 @@
     "lat": -20.0569058,
     "lng": 57.6409689,
     "themes": [
-      "parcs-activites-famille"
+      "parcs-activites-famille",
+      "kids-friendly"
     ],
     "description": "Parc familial de loisirs en plein air (trampoline, aire de jeux, jeux d'eau)",
     "zone": "nord",
@@ -12424,7 +12478,8 @@
     "lat": -20.326921,
     "lng": 57.3777289,
     "themes": [
-      "activites-enfants-famille"
+      "activites-enfants-famille",
+      "kids-friendly"
     ],
     "description": "Agence d'activités outdoor à Tamarin : kayak dauphins, randonnée/canyoning 7 Cascades, pirogue lagon Mahébourg, ascension Le Morne",
     "entryPrice": "Variable selon activité : à partir de Rs 2000/pers (kayak dauphins) jusqu'à Rs 5500/pers (pirogue Mahébourg)",
@@ -12502,7 +12557,8 @@
     "lat": -20.4400767,
     "lng": 57.3731676,
     "themes": [
-      "parcs-activites-famille"
+      "parcs-activites-famille",
+      "kids-friendly"
     ],
     "description": "Site géologique des terres colorées de Chamarel + cascade, sentiers d'observation",
     "duration": "~2h",
@@ -12566,7 +12622,8 @@
     "lat": -20.2868785,
     "lng": 57.7779502,
     "themes": [
-      "activites-enfants-famille"
+      "activites-enfants-famille",
+      "kids-friendly"
     ],
     "description": "Éco-lodge/camping sur la Grande Rivière Sud-Est : kayak, SUP, randonnée, navette gratuite vers l'Île aux Cerfs",
     "entryPrice": "Nuitée dès Rs 8000/tente (jusqu'à 4 pers., basse saison)",
@@ -12602,7 +12659,8 @@
     "lat": -20.1241283,
     "lng": 57.6841354,
     "themes": [
-      "activites-enfants-famille"
+      "activites-enfants-famille",
+      "kids-friendly"
     ],
     "description": "Saut en parachute en tandem depuis un Cessna à 10 000 pieds, au-dessus du lagon",
     "duration": "Chute libre ~30 sec + voile 5-7 min ; expérience totale ~3-4h",
@@ -13182,7 +13240,8 @@
     "lat": -20.1828855,
     "lng": 57.7110379,
     "themes": [
-      "activites-enfants-famille"
+      "activites-enfants-famille",
+      "kids-friendly"
     ],
     "zone": "est",
     "description": "Balades en quad de 2h à travers champs de canne à sucre, plantations d'ananas et petite rivière du domaine de Constance la Gaieté, avec guide commentant l'histoire du pays."
@@ -13198,7 +13257,8 @@
     "lat": -20.0238137,
     "lng": 57.5751156,
     "themes": [
-      "activites-enfants-famille"
+      "activites-enfants-famille",
+      "kids-friendly"
     ],
     "zone": "nord",
     "description": "Résidence hôtelière du nord de l'île proposant studios et appartements, deux piscines, spa et espace bien-être intérieur avec sauna et hammam."
@@ -13230,7 +13290,8 @@
     "lat": -20.4386944,
     "lng": 57.390268,
     "themes": [
-      "activites-enfants-famille"
+      "activites-enfants-famille",
+      "kids-friendly"
     ],
     "badge": "selection",
     "zone": "sud",
@@ -13249,7 +13310,8 @@
     "lat": -20.0134331,
     "lng": 57.5844538,
     "themes": [
-      "activites-enfants-famille"
+      "activites-enfants-famille",
+      "kids-friendly"
     ],
     "zone": "nord",
     "description": "Crêperie-restaurant du Sunset Boulevard à Grand Baie, avec vue sur le lagon, proposant crêpes sucrées et options sans gluten."
@@ -13265,7 +13327,8 @@
     "lat": -20.44518,
     "lng": 57.7187576,
     "themes": [
-      "activites-enfants-famille"
+      "activites-enfants-famille",
+      "kids-friendly"
     ],
     "zone": "sud",
     "description": "Organisateur d'excursions en bateau et de tours privés dans le sud-est, lié à la Chantauvent Guest House et engagé dans la préservation du lagon de Blue Bay/Pointe d'Esny ; comprend aussi un café en bord de mer."
@@ -13281,7 +13344,8 @@
     "lat": -20.0142383,
     "lng": 57.5674578,
     "themes": [
-      "activites-enfants-famille"
+      "activites-enfants-famille",
+      "kids-friendly"
     ],
     "zone": "nord",
     "description": "Villa privée de 4 chambres avec piscine privée, terrasse et accès direct au lagon, au sein d'une résidence sécurisée de 9 villas sur la côte ouest de Grand Baie."
@@ -13297,7 +13361,8 @@
     "lat": -20.3421875,
     "lng": 57.4703125,
     "themes": [
-      "activites-enfants-famille"
+      "activites-enfants-famille",
+      "kids-friendly"
     ],
     "zone": "centre",
     "description": "Entreprise familiale de trekking basée à Henrietta, spécialisée dans la randonnée guidée des Sept Cascades, avec accueil convivial après l'excursion chez le guide."
@@ -13313,7 +13378,8 @@
     "lat": -20.0095971,
     "lng": 57.6004536,
     "themes": [
-      "activites-enfants-famille"
+      "activites-enfants-famille",
+      "kids-friendly"
     ],
     "zone": "nord",
     "description": "Résidence hôtelière 5 étoiles près de Pereybère avec appartements 1 à 3 chambres, restaurant sur l'eau, lounge bar et spa."
@@ -13329,7 +13395,8 @@
     "lat": -20.0053951,
     "lng": 57.5537981,
     "themes": [
-      "activites-enfants-famille"
+      "activites-enfants-famille",
+      "kids-friendly"
     ],
     "zone": "nord",
     "description": "Resort tout compris situé sur une péninsule du nord de l'île avec deux plages abritées, plusieurs piscines et une offre variée de sports nautiques. Les avis soulignent une restauration abondante et de qualité, une bonne ambiance familiale (clubs enfants), mais des chambres jugées un peu datées par certains visiteurs."
@@ -13345,7 +13412,8 @@
     "lat": -20.0425168,
     "lng": 57.5523726,
     "themes": [
-      "activites-enfants-famille"
+      "activites-enfants-famille",
+      "kids-friendly"
     ],
     "zone": "nord",
     "description": "Également appelé Maheswarnath Mandir ou « Grand Shivala », c'est le plus grand et l'un des plus anciens temples hindous de l'île, situé à Triolet et fondé en 1888. Il est dédié à Shiva et reste un lieu de pèlerinage important, notamment lié au pèlerinage vers Ganga Talao."
@@ -13361,7 +13429,8 @@
     "lat": -20.0095339,
     "lng": 57.5820612,
     "themes": [
-      "activites-enfants-famille"
+      "activites-enfants-famille",
+      "kids-friendly"
     ],
     "zone": "nord",
     "description": "Restaurant italien de Grand Baie ouvert en soirée (18h-23h), réputé pour ses pâtes, pizzas et sa truffe fraîche, ainsi que son tiramisu très apprécié des clients. Les avis mettent en avant une ambiance chaleureuse et élégante et un service attentionné."
@@ -13377,7 +13446,8 @@
     "lat": -20.0084159,
     "lng": 57.5788026,
     "themes": [
-      "activites-enfants-famille"
+      "activites-enfants-famille",
+      "kids-friendly"
     ],
     "zone": "nord",
     "description": "Hôtel 4 étoiles au cœur de Grand Baie, rénové en 2023 dans un style case créole, donnant sur le lagon avec jardins tropicaux. Les avis saluent l'accueil et le cadre, tandis que certains jugent le buffet du restaurant principal moyen comparé au restaurant de plage."
@@ -13393,7 +13463,8 @@
     "lat": -19.9861562,
     "lng": 57.6067746,
     "themes": [
-      "activites-enfants-famille"
+      "activites-enfants-famille",
+      "kids-friendly"
     ],
     "zone": "nord",
     "description": "Hôtel de milieu de gamme situé à Bain Bœuf, face à la plage avec vue sur l'îlot Coin de Mire, à environ 10 minutes de Grand Baie. Les visiteurs apprécient les activités nautiques gratuites (kayak, pédalo, bateau à fond de verre) et le personnel attentionné, dans un cadre calme."
@@ -13447,7 +13518,8 @@
     "lat": -20.0172876,
     "lng": 57.5722421,
     "themes": [
-      "centres-loisirs-animations"
+      "centres-loisirs-animations",
+      "kids-friendly"
     ],
     "zone": "nord",
     "description": "Crèche et maternelle pour enfants de 3 mois à 6 ans, installée dans un jardin clos et arboré de 1200 m² proche de la Croisette à Grand Baie. Nombreux jeux et activités adaptés à chaque âge, ouvert du lundi au vendredi."
@@ -16932,7 +17004,8 @@
     "lat": -20.2961137,
     "lng": 57.4078956,
     "themes": [
-      "parcs-activites-famille"
+      "parcs-activites-famille",
+      "kids-friendly"
     ],
     "animalsVisible": "Lions (activité 'Walking with Lions', billet séparé de l'entrée Casela)",
     "description": "Marche encadrée par des rangers professionnels aux côtés de lions du Predator Kingdom, avec commentaires sur le comportement et l'histoire des animaux ; en activité complémentaire billetée à part de l'entrée du parc Casela.",
@@ -17505,7 +17578,8 @@
     "lat": -20.278495,
     "lng": 57.4015,
     "themes": [
-      "activites-enfants-famille"
+      "activites-enfants-famille",
+      "kids-friendly"
     ],
     "zone": "ouest",
     "description": "Aire de jeux indoor de plus de 2000 m² située dans l'extension du centre commercial Cascavelle, avec trampolines, toboggans, jeux d'arcade et réalité virtuelle pour enfants et adultes. C'est aussi un lieu prisé pour organiser des fêtes d'anniversaire."
@@ -17521,7 +17595,8 @@
     "lat": -20.3583323,
     "lng": 57.3688149,
     "themes": [
-      "activites-enfants-famille"
+      "activites-enfants-famille",
+      "kids-friendly"
     ],
     "zone": "ouest",
     "description": "Espace de jeux indoor et halte-garderie pour enfants de 3 à 10 ans, encadré par du personnel qualifié, proposant jeux libres, ateliers guidés et activités de motricité. Fonctionne avec des formules flexibles, du passage à l'heure à l'abonnement périscolaire."
@@ -17537,7 +17612,8 @@
     "lat": -20.2395877,
     "lng": 57.4799472,
     "themes": [
-      "activites-enfants-famille"
+      "activites-enfants-famille",
+      "kids-friendly"
     ],
     "zone": "centre",
     "description": "Parc public de 12 600 m² entre Rose-Hill et Ebène, avec parcours de santé, amphithéâtre en plein air (350 places), aire de jeux pour enfants, terrains de pétanque et jardin expérimental planté d'environ 62 000 arbres. Populaire pour la marche, le jogging et les sorties en famille."
@@ -17553,7 +17629,8 @@
     "lat": -20.2787674,
     "lng": 57.49495,
     "themes": [
-      "activites-enfants-famille"
+      "activites-enfants-famille",
+      "kids-friendly"
     ],
     "zone": "centre",
     "description": "Aire de jeux indoor pour enfants installée au centre commercial Phoenix Mall, avec trampolines, mini-cuisine pour jeux de rôle et parcours d'équilibre sur pont de cordes. Les avis apprécient que les parents puissent accompagner leurs enfants sur les structures."
@@ -17612,7 +17689,8 @@
     "lat": -20.4723608,
     "lng": 57.561663,
     "themes": [
-      "centres-loisirs-animations"
+      "centres-loisirs-animations",
+      "kids-friendly"
     ],
     "zone": "sud",
     "description": "Location de châteaux gonflables, toboggans aquatiques, machines à popcorn/barbe à papa et animations (maquillage, mascottes Disney) pour anniversaires et événements. 94% d'avis positifs, clients satisfaits depuis 2020."
@@ -18004,7 +18082,8 @@
     "filters": [
       "mauricienne",
       "asiatique"
-    ]
+    ],
+    "hours": "Fermé mar, Lun + Mer-Dim 11h30-14h30 & 17h45-22h"
   },
   {
     "id": "mei-yan-restaurant",
@@ -18023,7 +18102,8 @@
     "description": "Restaurant chinois de l'hôtel Aanari (Flic en Flac), réputé pour son canard laqué pékinois et ses fruits de mer, chefs venus de Chine continentale.",
     "filters": [
       "asiatique"
-    ]
+    ],
+    "hours": "Tlj 12h-22h"
   },
   {
     "id": "cheesy-latte",
@@ -18063,7 +18143,8 @@
     "description": "Pizzeria italienne du complexe Cap Dale à Tamarin, four à bois traditionnel, pizzas artisanales aux ingrédients frais. Cadre convivial et calme, bien notée (4,6/5 sur TripAdvisor).",
     "filters": [
       "italien"
-    ]
+    ],
+    "hours": "Fermé mar + dim, Lun + Mer-Sam 12h-14h & 18h-21h"
   },
   {
     "id": "terrace",
@@ -20742,7 +20823,8 @@
     "lng": 57.3893461,
     "themes": [
       "culture-patrimoine",
-      "activites-enfants-famille"
+      "activites-enfants-famille",
+      "kids-friendly"
     ],
     "zone": "sud",
     "description": "Visite guidée de la plantation de café de Chamarel (7 Coloured Earth Road), avec balade au cœur des caféiers puis séance de dégustation (cupping) en fin de parcours. Durée d'environ 80 minutes, réservation à l'avance recommandée.",
@@ -22061,7 +22143,8 @@
     "lat": -20.4331654,
     "lng": 57.3881475,
     "themes": [
-      "activites-enfants-famille"
+      "activites-enfants-famille",
+      "kids-friendly"
     ],
     "zone": "sud",
     "description": "Chalets perchés sur les hauteurs de Chamarel offrant une vue panoramique quasi à 360° sur la vallée boisée et la côte ouest, avec piscine à débordement. Les avis louent le petit-déjeuner et l'accueil du personnel, mais notent l'isolement du site, les restaurants les plus proches se trouvant à 15-20 minutes à La Gaulette."
@@ -24120,7 +24203,8 @@
     "lng": 57.5372602,
     "themes": [
       "plages-nature",
-      "activites-enfants-famille"
+      "activites-enfants-famille",
+      "kids-friendly"
     ],
     "zone": "sud",
     "description": "Cascade discrète dans le sud sauvage de l'île, près de Souillac, surtout connue des habitants ; guide recommandé pour trouver le sentier. À proximité de la plage de Gris Gris et du site de la Roche Qui Pleure. Accessible avec des enfants, mais peut devenir boueux par temps de pluie. Environ 4 km, 1h à 2h aller-retour selon le parking de départ.",
@@ -24541,7 +24625,8 @@
     "lat": -20.2697988,
     "lng": 57.4726632,
     "themes": [
-      "activites-enfants-famille"
+      "activites-enfants-famille",
+      "kids-friendly"
     ],
     "zone": "centre",
     "description": "Tour-opérateur et loueur de véhicules avec chauffeur basé à Maurice, actif depuis plus de 30 ans, proposant transferts aéroport, excursions et location de voiture. Bénéficie d'une note proche de 5/5 sur TripAdvisor et Google, les avis saluant le professionnalisme des chauffeurs et une politique sans arrêt boutique."
@@ -24558,7 +24643,8 @@
     "lng": 57.353759,
     "themes": [
       "activites-enfants-famille",
-      "plages-nature"
+      "plages-nature",
+      "kids-friendly"
     ],
     "zone": "sud",
     "description": "Entre Le Morne et Bel Ombre, plage ombragée avec vue sur les montagnes, lagon peu profond, idéale pour les familles.",
@@ -24577,7 +24663,8 @@
     "lat": -20.5087846,
     "lng": 57.4160253,
     "themes": [
-      "activites-enfants-famille"
+      "activites-enfants-famille",
+      "kids-friendly"
     ],
     "zone": "sud",
     "description": "Hôtel 4 étoiles tout compris situé sur la côte sud-ouest à Bel Ombre, avec plusieurs piscines et accès direct à une plage calme. Les avis soulignent un personnel attentionné, une bonne restauration et une ambiance familiale conviviale."
@@ -24593,7 +24680,8 @@
     "lat": -20.4441928,
     "lng": 57.7164692,
     "themes": [
-      "activites-enfants-famille"
+      "activites-enfants-famille",
+      "kids-friendly"
     ],
     "zone": "sud",
     "description": "Plage du sud-est de l'île protégée par une barrière de corail, avec eaux peu profondes adaptées aux familles et classée parc marin national depuis 1997. Appréciée pour le snorkeling et les sorties en bateau à fond de verre permettant d'observer coraux et poissons, elle est plus fréquentée le week-end par les habitants de Mahébourg."
@@ -24609,7 +24697,8 @@
     "lat": -20.4487075,
     "lng": 57.7109832,
     "themes": [
-      "activites-enfants-famille"
+      "activites-enfants-famille",
+      "kids-friendly"
     ],
     "zone": "sud",
     "description": "Excursion à la journée en bateau (5-10 minutes de traversée depuis la région de Mahébourg) sur un îlot privé face à la réserve marine de Blue Bay, avec visite d'une villa construite au début du XXe siècle par le gouverneur britannique Sir Hesketh Bell, sortie en bateau à fond de verre et snorkeling."
@@ -24625,7 +24714,8 @@
     "lat": -20.5035252,
     "lng": 57.4126711,
     "themes": [
-      "activites-enfants-famille"
+      "activites-enfants-famille",
+      "kids-friendly"
     ],
     "zone": "sud",
     "description": "Chambres d'hôtes installées à Bel Ombre dans d'anciennes maisons de camp sucrier réhabilitées, avec restaurant de cuisine locale Lakaz Mama et accès aux golf et plage du domaine voisin ; les avis soulignent l'accueil chaleureux et l'ambiance paisible."
@@ -24641,7 +24731,8 @@
     "lat": -20.5043408,
     "lng": 57.4029839,
     "themes": [
-      "activites-enfants-famille"
+      "activites-enfants-famille",
+      "kids-friendly"
     ],
     "zone": "sud",
     "description": "Boutique de vente de viande à Bel Ombre adossée à un élevage de cerfs rusa, où le personnel explique la découpe et le conditionnement de la venaison et conseille les clients sur les morceaux selon les recettes."
@@ -24657,7 +24748,8 @@
     "lat": -20.3390135,
     "lng": 57.3706033,
     "themes": [
-      "activites-enfants-famille"
+      "activites-enfants-famille",
+      "kids-friendly"
     ],
     "zone": "ouest",
     "description": "Frolic est un guide numérique consacré aux sorties, événements et au style de vie à Maurice (restaurants, plages, activités), et non un lieu physique ouvert au public."
@@ -24673,7 +24765,8 @@
     "lat": -20.2128493,
     "lng": 57.433716,
     "themes": [
-      "centres-loisirs-animations"
+      "centres-loisirs-animations",
+      "kids-friendly"
     ],
     "zone": "ouest",
     "description": "Parc de loisirs familial dans l'Ouest, sur un vaste domaine traversé par une rivière et un lac : ziplining, quad, kayak, pêche à la tilapia pour les enfants, ferme pédagogique et vélo. Avis positifs sur les tarifs abordables, l'équipe dynamique et le restaurant Tekoma sur place."
@@ -27447,7 +27540,8 @@
     "lat": -20.2325092,
     "lng": 57.803885,
     "themes": [
-      "activites-enfants-famille"
+      "activites-enfants-famille",
+      "kids-friendly"
     ],
     "zone": "est",
     "description": "Hôtel 3 étoiles de 50 chambres (dont 15 familiales) en bord de plage à Trou d'Eau Douce, à l'architecture créole et à l'ambiance décontractée, avec centre de plongée et restaurants (buffet, tapas mauriciens, food-truck)."
@@ -27463,7 +27557,8 @@
     "lat": -20.0355628,
     "lng": 57.68536,
     "themes": [
-      "activites-enfants-famille"
+      "activites-enfants-famille",
+      "kids-friendly"
     ],
     "zone": "nord",
     "description": "Zone côtière près de Goodlands, face aux îlots Bernache et Ambre, connue pour son activité de pêche traditionnelle et appréciée pour le kayak de mer, avec vue sur les éoliennes de Bras d'Eau."
@@ -27479,7 +27574,8 @@
     "lat": -20.264069,
     "lng": 57.803956,
     "themes": [
-      "activites-enfants-famille"
+      "activites-enfants-famille",
+      "kids-friendly"
     ],
     "zone": "est",
     "description": "Restaurant de plage pieds dans le sable sur l'îlot Ile aux Cerfs, servant poissons et fruits de mer grillés, plats mauriciens simples et pizzas au four à bois, avec vue sur le lagon turquoise."
@@ -27495,7 +27591,8 @@
     "lat": -20.3272756,
     "lng": 57.377816,
     "themes": [
-      "activites-enfants-famille"
+      "activites-enfants-famille",
+      "kids-friendly"
     ],
     "zone": "ouest",
     "description": "École de surf à Tamarin, seule école internationalement certifiée de l'île, proposant cours particuliers ou collectifs et location de planches, ainsi que des sorties d'observation des dauphins et baleines ; avis très positifs sur l'accueil et les moniteurs."
@@ -27530,7 +27627,8 @@
     "lat": -20.2372341,
     "lng": 57.8005028,
     "themes": [
-      "activites-enfants-famille"
+      "activites-enfants-famille",
+      "kids-friendly"
     ],
     "zone": "est",
     "description": "Hôtel boutique 3 étoiles supérieur réservé aux adultes, en bord de lagon à Trou d'Eau Douce près du village de pêcheurs et d'Ile aux Cerfs, 58 chambres et 11 villas, navettes vers Ile aux Cerfs et centre de plongée PADI."
@@ -27546,7 +27644,8 @@
     "lat": -20.1106595,
     "lng": 57.7176992,
     "themes": [
-      "activites-enfants-famille"
+      "activites-enfants-famille",
+      "kids-friendly"
     ],
     "zone": "est",
     "description": "Agence de location de villas de luxe à Maurice (portefeuille d'environ 150 propriétés, souvent avec piscine ou accès plage privés), fondée en 2002, proposant un service de conciergerie comparable à celui d'un hôtel 5 étoiles."
@@ -27562,7 +27661,8 @@
     "lat": -20.1900689,
     "lng": 57.7734237,
     "themes": [
-      "activites-enfants-famille"
+      "activites-enfants-famille",
+      "kids-friendly"
     ],
     "zone": "est",
     "description": "Hôtel 4 étoiles réservé aux adultes à Belle Mare, en face de la plage, avec chambres et villas sans télévision, spa aux produits naturels locaux, et démarche éco-responsable (mini-bar remplacé par une bulk shop en bocaux)."
@@ -27578,7 +27678,8 @@
     "lat": -20.2738079,
     "lng": 57.8069707,
     "themes": [
-      "activites-enfants-famille"
+      "activites-enfants-famille",
+      "kids-friendly"
     ],
     "zone": "est",
     "description": "Hébergement insolite sur l'îlot golfique d'Ile aux Cerfs, sous forme de bulles transparentes avec salon, chambre et douche à ciel ouvert, accessible par navette bateau privée de 10 minutes, avec accès à une plage privée et au golf 18 trous."
@@ -27594,7 +27695,8 @@
     "lat": -20.2116716,
     "lng": 57.791779,
     "themes": [
-      "activites-enfants-famille"
+      "activites-enfants-famille",
+      "kids-friendly"
     ],
     "zone": "est",
     "description": "Complexe hôtelier tout compris à Palmar, sur la côte est, à la décoration colorée et à l'ambiance décontractée, avec plusieurs piscines (dont une avec balançoires face à la mer), sports nautiques inclus (kayak, paddle) et accès à deux golfs 18 trous."
@@ -27610,7 +27712,8 @@
     "lat": -20.2079548,
     "lng": 57.7905459,
     "themes": [
-      "activites-enfants-famille"
+      "activites-enfants-famille",
+      "kids-friendly"
     ],
     "zone": "est",
     "description": "Centre de plongée PADI situé au Crystals Beach Resort and Spa à Quatre Cocos, sur la côte est, proposant baptêmes et sorties de plongée sur les récifs et sites de la région."
@@ -27626,7 +27729,8 @@
     "lat": -20.2515407,
     "lng": 57.7972314,
     "themes": [
-      "activites-enfants-famille"
+      "activites-enfants-famille",
+      "kids-friendly"
     ],
     "zone": "est",
     "description": "Complexe hôtelier 5 étoiles à Trou d'Eau Douce réparti sur six plages de sable blanc et un îlot privé, avec cinq restaurants (dont cuisine japonaise et fusion indo-mauricienne) et spa."
@@ -28660,7 +28764,8 @@
     "lat": -20.003001,
     "lng": 57.6370702,
     "themes": [
-      "activites-enfants-famille"
+      "activites-enfants-famille",
+      "kids-friendly"
     ],
     "zone": "nord",
     "description": "Excursion guidée à vélo électrique (32 km) sur la côte nord-est au départ de Calodyne, traversant villages de pêcheurs, mangroves et plages isolées, avec halte dans une ferme ostréicole."
@@ -28854,7 +28959,8 @@
     "lat": -20.3413625,
     "lng": 57.370207,
     "themes": [
-      "centres-loisirs-animations"
+      "centres-loisirs-animations",
+      "kids-friendly"
     ],
     "zone": "ouest",
     "description": "Ateliers de théâtre ludiques et créatifs pour enfants (dès 6 ans), ados et adultes à Tamarin, par groupes d'âge, avec spectacle de fin d'année au Théâtre du Caudan. Développe la confiance en soi, la concentration et la créativité."
@@ -28927,7 +29033,8 @@
     "lat": -20.1637146,
     "lng": 57.5102772,
     "themes": [
-      "activites-enfants-famille"
+      "activites-enfants-famille",
+      "kids-friendly"
     ],
     "zone": "centre",
     "description": "Fort construit entre 1834 et 1840 par les Britanniques sur une colline dominant Port-Louis, offrant une vue panoramique sur la ville, le Champ de Mars et les montagnes environnantes ; entrée gratuite."
@@ -29668,12 +29775,17 @@
     "lng": 57.6979217,
     "themes": [
       "activites-enfants-famille",
-      "culture-patrimoine"
+      "culture-patrimoine",
+      "kids-friendly"
     ],
     "zone": "sud",
     "badge": "selection",
     "photoUrl": "/photos/biscuiterie-rault.jpg",
-    "photoUrls": ["/photos/biscuiterie-rault.jpg","/photos/biscuiterie-rault-2.jpg","/photos/biscuiterie-rault-3.jpg"],
+    "photoUrls": [
+      "/photos/biscuiterie-rault.jpg",
+      "/photos/biscuiterie-rault-2.jpg",
+      "/photos/biscuiterie-rault-3.jpg"
+    ],
     "description": "Biscuiterie artisanale près de Mahébourg fondée en 1870, qui fabrique selon une recette traditionnelle inchangée des biscuits de manioc sans gluten en sept parfums, avec visite guidée et dégustation.",
     "koteMorisComment": "Petite visite d'une vingtaine de minutes, avec dégustation, très sympathique et efficace, de cette usine « familiale » et traditionnelle. On traverse les différentes étapes de la production et on goûte des biscuits tout juste sortis de la planche. Dégustation de l'ensemble des biscuits en fin de visite, avec un thé."
   },
@@ -29689,7 +29801,8 @@
     "lng": 57.7482305,
     "themes": [
       "activites-enfants-famille",
-      "culture-patrimoine"
+      "culture-patrimoine",
+      "kids-friendly"
     ],
     "zone": "sud",
     "promoText": "Petite distillerie artisanale d'huiles essentielles (ylang-ylang, citronnelle, poivre rose), visite guidée des étapes de fabrication.",
@@ -29706,7 +29819,8 @@
     "lat": -20.185167,
     "lng": 57.7686483,
     "themes": [
-      "activites-enfants-famille"
+      "activites-enfants-famille",
+      "kids-friendly"
     ],
     "zone": "est",
     "description": "Parc aquatique en bord de route côtière à Quatre Cocos, avec toboggans, rivière paresseuse, piscine à vagues et espace enfants ; ouvert tous les jours de 9h30 à 17h."
@@ -29722,7 +29836,8 @@
     "lat": -20.2128493,
     "lng": 57.433716,
     "themes": [
-      "activites-enfants-famille"
+      "activites-enfants-famille",
+      "kids-friendly"
     ],
     "promoText": "Visite uniquement accompagnée d'une soignante.",
     "zone": "ouest",
@@ -31367,7 +31482,8 @@
     "lat": -20.0067831,
     "lng": 57.6477936,
     "themes": [
-      "parcs-activites-famille"
+      "parcs-activites-famille",
+      "kids-friendly"
     ],
     "zone": "nord",
     "description": "Activité de kayak à Calodyne."
@@ -34316,7 +34432,8 @@
     "lat": -20.0204875,
     "lng": 57.555746,
     "themes": [
-      "activites-enfants-famille"
+      "activites-enfants-famille",
+      "kids-friendly"
     ],
     "zone": "nord",
     "description": "Hôtel 3 étoiles à Mont Choisy dans le nord de l'île, à proximité de la plage, avec deux piscines extérieures, court de tennis et restaurant proposant un buffet et une cuisine tandoori."
@@ -34332,7 +34449,8 @@
     "lat": -20.215784,
     "lng": 57.4018984,
     "themes": [
-      "activites-enfants-famille"
+      "activites-enfants-famille",
+      "kids-friendly"
     ],
     "zone": "centre",
     "description": "Prestataire d'excursions en mer sur mesure basé à Albion, proposant baignade avec dauphins ou tortues, sorties pêche, plongée et observation des baleines."
@@ -34470,7 +34588,8 @@
     "lat": -20.2938632,
     "lng": 57.4100418,
     "themes": [
-      "centres-loisirs-animations"
+      "centres-loisirs-animations",
+      "kids-friendly"
     ],
     "zone": "ouest",
     "description": "École d'équitation entre mer et montagnes à Cascavelle : cours d'équitation, dressage, saut d'obstacles, Pony Club pour les plus jeunes et voltige. Instructeurs sélectionnés avec rigueur ; 98% d'avis positifs sur un accueil chaleureux et un encadrement sécurisant."
@@ -34492,7 +34611,8 @@
     "description": "Restaurant du guesthouse The Bay, à La Preneuse (Black River), en bord de plage : menu créole (poissons frais, plats en cari) et spécialités européennes, cadre décontracté face à l'océan.",
     "filters": [
       "mauricienne"
-    ]
+    ],
+    "hours": "Tous les jours 7h30-22h"
   },
   {
     "id": "le-bistrot-de-la-poste",
@@ -34872,7 +34992,8 @@
     "lat": -20.3150564,
     "lng": 57.5286852,
     "themes": [
-      "activites-enfants-famille"
+      "activites-enfants-famille",
+      "kids-friendly"
     ],
     "zone": "centre",
     "description": "Opérateur d'écotourisme basé à Curepipe proposant des descentes en rappel, du canyoning et des randonnées aux Tamarind Falls et aux Sept Cascades, encadrées par des guides certifiés."
@@ -35184,7 +35305,8 @@
     "lat": -20.4570775,
     "lng": 57.4864823,
     "themes": [
-      "activites-enfants-famille"
+      "activites-enfants-famille",
+      "kids-friendly"
     ],
     "zone": "sud",
     "description": "Espace de jeux pour enfants au sein du Vallé Advenature Park à Chamouny, avec toboggans colorés et structures d'escalade adaptés aux moins de 10 ans, dans un parc qui propose par ailleurs quad, tyroliennes et pont népalais."
@@ -35776,7 +35898,8 @@
     "lat": -20.2365636,
     "lng": 57.7927071,
     "themes": [
-      "activites-enfants-famille"
+      "activites-enfants-famille",
+      "kids-friendly"
     ],
     "zone": "est",
     "description": "Opérateur d'excursions basé à Trou d'Eau Douce (transferts aéroport, activités terre/air/mer), proposant notamment des sorties en vedette rapide vers l'Île aux Cerfs avec halte à une cascade et repas barbecue."
@@ -35879,7 +36002,8 @@
     "lat": -20.1651816,
     "lng": 57.7595617,
     "themes": [
-      "activites-enfants-famille"
+      "activites-enfants-famille",
+      "kids-friendly"
     ],
     "zone": "est",
     "description": "Agence de location de villas de standing et service de conciergerie, avec des biens principalement en bord de mer sur la côte est ; propose transferts aéroport, location de voiture et services de personnel de maison (chef, majordome, femme de ménage)."
@@ -36617,7 +36741,8 @@
     "lat": -20.0758,
     "lng": 57.6014,
     "themes": [
-      "centres-loisirs-animations"
+      "centres-loisirs-animations",
+      "kids-friendly"
     ],
     "description": "Club de vacances, centre aéré et activités périscolaires de l'École du Nord (Mapou).",
     "zone": "nord"
@@ -36653,7 +36778,8 @@
     "lng": 57.4978549,
     "themes": [
       "plages-nature",
-      "activites-enfants-famille"
+      "activites-enfants-famille",
+      "kids-friendly"
     ],
     "zone": "centre",
     "description": "Petites cascades faciles d'accès dans les jardins du domaine de la Maison Eureka, demeure créole de 1830 à Moka. Visite combinée maison + jardins, adaptée à toute la famille ; accès payant inclus dans le billet de la Maison Eureka.",
@@ -37260,7 +37386,8 @@
     "lat": -20.0517,
     "lng": 57.5197,
     "themes": [
-      "parcs-activites-famille"
+      "parcs-activites-famille",
+      "kids-friendly"
     ],
     "entryPrice": "Rs 1000",
     "zone": "nord",
@@ -37329,7 +37456,8 @@
     "filters": [
       "europeenne",
       "vegetarien"
-    ]
+    ],
+    "hours": "Fermé mer, autres jours 8h-20h"
   },
   {
     "id": "fynbos-meeting-place-grand-baie",
@@ -37884,7 +38012,8 @@
     "lng": 57.48,
     "themes": [
       "culture-patrimoine",
-      "activites-enfants-famille"
+      "activites-enfants-famille",
+      "kids-friendly"
     ],
     "badge": "selection",
     "zone": "sud",
@@ -37901,7 +38030,8 @@
     "whatsapp": "+230 5787 4725",
     "themes": [
       "activites-enfants-famille",
-      "culture-patrimoine"
+      "culture-patrimoine",
+      "kids-friendly"
     ],
     "badge": "selection",
     "zone": "centre",
@@ -37960,7 +38090,8 @@
     "lat": -20.0254785,
     "lng": 57.551332,
     "themes": [
-      "centres-loisirs-animations"
+      "centres-loisirs-animations",
+      "kids-friendly"
     ],
     "zone": "nord",
     "description": "Centre de loisirs et garderie pour enfants de 3 à 12 ans, du lundi au vendredi de 9h à 17h. Chaque jour est dédié à un atelier ou thème différent (cuisine, cirque, bowling...), avec sorties régulières sur l'île (Île aux Aigrettes, sites culturels). Contact : Kesia."
@@ -37975,7 +38106,8 @@
     "phone": "+230 5421 8086",
     "whatsapp": "+230 5421 8086",
     "themes": [
-      "centres-loisirs-animations"
+      "centres-loisirs-animations",
+      "kids-friendly"
     ],
     "zone": "nord",
     "description": "Centre d'activités et d'animations pour enfants à Pereybère."
@@ -37989,7 +38121,8 @@
     "lng": 57.5916746,
     "website": "https://www.travellingteachers.org/",
     "themes": [
-      "centres-loisirs-animations"
+      "centres-loisirs-animations",
+      "kids-friendly"
     ],
     "zone": "nord",
     "description": "Antenne de Pereybère du centre de soutien scolaire Travelling Teachers, avec journées thématiques pour les enfants."
@@ -39004,7 +39137,8 @@
     "lng": 57.4117423,
     "themes": [
       "activites-enfants-famille",
-      "culture-patrimoine"
+      "culture-patrimoine",
+      "kids-friendly"
     ],
     "zone": "sud",
     "description": "Le plus grand musée de coquillages d'Afrique, installé sur le site de l'ancienne sucrerie de Bel Ombre. Plus de 8 000 spécimens représentant environ 1 500 espèces et 150 familles venus du monde entier, présentés à travers un parcours pédagogique et interactif, avec boutique sur place.",
@@ -47386,7 +47520,8 @@
     "phone": "",
     "website": "",
     "themes": [
-      "activites-enfants-famille"
+      "activites-enfants-famille",
+      "kids-friendly"
     ],
     "description": "Laser game outdoor près de Grand Baie avec vue sur les îles du Nord. Accessible dès 7-8 ans, tous les jours sauf le lundi ; tournois mensuels (Gang Zone Cup)."
   },
@@ -49175,7 +49310,8 @@
     "googleMapsUrl": "https://www.google.com/maps/search/Historic+Marine+The+Vale+Mauritius",
     "themes": [
       "culture-patrimoine",
-      "activites-enfants-famille"
+      "activites-enfants-famille",
+      "kids-friendly"
     ],
     "hours": "Lun-Ven 9h-17h, Sam-Dim et jours fériés 9h-12h",
     "zone": "centre",
@@ -49630,7 +49766,8 @@
     "phone": "+230 5253 0900",
     "website": "http://www.lafermcoco.mu/",
     "themes": [
-      "activites-enfants-famille"
+      "activites-enfants-famille",
+      "kids-friendly"
     ],
     "zone": "sud",
     "description": "Balade instructive dans une ferme en activité à Bambous Virieux, à la découverte des fruits et légumes cultivés sans pesticides, avec possibilité de dormir sur place en chambre d'hôte."
@@ -51578,7 +51715,8 @@
     "lng": 57.6155391,
     "themes": [
       "plages-nature",
-      "parcs-activites-famille"
+      "parcs-activites-famille",
+      "kids-friendly"
     ],
     "hours": "Tous les jours 9h-17h",
     "priceRange": "bon-marche",
