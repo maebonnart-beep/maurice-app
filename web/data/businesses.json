@@ -30631,7 +30631,8 @@
     "description": "Pharmacie. Médicaments sur ordonnance, parapharmacie et conseils santé.",
     "filters": [
       "pharmacies"
-    ]
+    ],
+    "hours": "Lun-Sam 7h30-20h, Dim 9h-12h"
   },
   {
     "id": "pharmacie-flic-en-flac",
@@ -30649,7 +30650,8 @@
     "description": "Pharmacie. Médicaments sur ordonnance, parapharmacie et conseils santé.",
     "filters": [
       "pharmacies"
-    ]
+    ],
+    "hours": "Tous les jours 8h30-18h30"
   },
   {
     "id": "pharmacie-du-port-port-louis",
@@ -30704,7 +30706,8 @@
     "description": "Pharmacie. Médicaments sur ordonnance, parapharmacie et conseils santé. Horaires : lun–jeu 8h30–19h30, ven–sam 8h30–20h, dim 8h30–13h.",
     "filters": [
       "pharmacies"
-    ]
+    ],
+    "hours": "Lun-Jeu 8h30-19h30, Ven-Sam 8h30-20h, Dim 8h30-13h"
   },
   {
     "id": "care4u-pharmacy-curepipe",
@@ -30722,7 +30725,8 @@
     "description": "Pharmacie à Forest Side. Médicaments sur ordonnance, parapharmacie et conseils santé.",
     "filters": [
       "pharmacies"
-    ]
+    ],
+    "hours": "Lun-Sam 8h-21h, Dim 9h-18h"
   },
   {
     "id": "tamarin-pharmacy",
@@ -30740,7 +30744,8 @@
     "description": "Pharmacie. Médicaments sur ordonnance, parapharmacie et conseils santé.",
     "filters": [
       "pharmacies"
-    ]
+    ],
+    "hours": "Lun-Ven 8h-19h30, Sam 9h-19h30, Dim 9h-12h"
   },
   {
     "id": "pharmacie-trou-eau-douce",
@@ -41972,7 +41977,8 @@
     "description": "Pharmacie. Médicaments sur ordonnance, parapharmacie et conseils santé. Ouvert 24h/24, 7j/7.",
     "filters": [
       "pharmacies"
-    ]
+    ],
+    "hours": "Tous les jours 8h-19h"
   },
   {
     "id": "pharmacie-albion-pharmacy",
@@ -41991,7 +41997,8 @@
     "description": "Pharmacie. Médicaments sur ordonnance, parapharmacie et conseils santé.",
     "filters": [
       "pharmacies"
-    ]
+    ],
+    "hours": "Lun-Sam 9h30-19h30, Dim 9h30-15h30"
   },
   {
     "id": "pharmacie-pharmacie-ideale",
@@ -42029,7 +42036,8 @@
     "description": "Pharmacie. Médicaments sur ordonnance, parapharmacie et conseils santé.",
     "filters": [
       "pharmacies"
-    ]
+    ],
+    "hours": "Lun-Ven 7h30-21h30, Sam 7h30-20h, Dim 7h30-14h"
   },
   {
     "id": "pharmacie-pharmacie-moraby",
@@ -42181,7 +42189,8 @@
     "description": "Pharmacie. Médicaments sur ordonnance, parapharmacie et conseils santé. Horaires : lun–ven 8h–17h30, sam 8h–17h, dim 8h–12h.",
     "filters": [
       "pharmacies"
-    ]
+    ],
+    "hours": "Lun-Ven 8h-17h30, Sam 8h-17h, Dim 8h-12h"
   },
   {
     "id": "pharmacie-eiman-pharmacy",
@@ -43047,7 +43056,8 @@
     "description": "Antenne du réseau Green Cross Medical Laboratory (fondé en 1990), premier réseau de laboratoires d'analyses médicales de Maurice, présent sur plus de 40 sites de l'île. Analyses biologiques complètes (sang, urine, bilans, etc.) et service de prélèvement à domicile, particulièrement utile pour les personnes âgées, à mobilité réduite ou convalescentes.",
     "filters": [
       "laboratoires"
-    ]
+    ],
+    "hours": "Lun-Sam 6h30-15h, Dim 7h-11h"
   },
   {
     "id": "domun-ahmed-khan-optician",
@@ -43123,7 +43133,8 @@
     "description": "Laboratoire d’analyses médicales : prélèvements et examens biologiques.",
     "filters": [
       "laboratoires"
-    ]
+    ],
+    "hours": "Lun-Ven 7h-17h, Sam 7h-13h, fermé dim"
   },
   {
     "id": "best-optical-shop",
@@ -43443,7 +43454,8 @@
     "description": "Antenne du réseau Green Cross Medical Laboratory (fondé en 1990), premier réseau de laboratoires d'analyses médicales de Maurice, présent sur plus de 40 sites de l'île. Analyses biologiques complètes (sang, urine, bilans, etc.) et service de prélèvement à domicile, particulièrement utile pour les personnes âgées, à mobilité réduite ou convalescentes.",
     "filters": [
       "laboratoires"
-    ]
+    ],
+    "hours": "Lun-Ven 6h30-18h, Sam 6h30-15h, Dim 7h-11h"
   },
   {
     "id": "green-cross",
@@ -43462,7 +43474,8 @@
     "description": "Antenne du réseau Green Cross Medical Laboratory (fondé en 1990), premier réseau de laboratoires d'analyses médicales de Maurice, présent sur plus de 40 sites de l'île. Analyses biologiques complètes (sang, urine, bilans, etc.) et service de prélèvement à domicile, particulièrement utile pour les personnes âgées, à mobilité réduite ou convalescentes.",
     "filters": [
       "laboratoires"
-    ]
+    ],
+    "hours": "Lun-Sam 6h30-15h, Dim 7h-11h"
   },
   {
     "id": "vincent-perdreau",
@@ -43931,7 +43944,8 @@
     "description": "Laboratoire d’analyses médicales : prélèvements et examens biologiques.",
     "filters": [
       "laboratoires"
-    ]
+    ],
+    "hours": "Lun-Ven 6h30-17h, Sam 6h30-14h, Dim 6h30-12h"
   },
   {
     "id": "laserostop",
