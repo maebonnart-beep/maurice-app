@@ -16254,7 +16254,8 @@
       "yoga-bien-etre"
     ],
     "zone": "nord",
-    "description": "Salle de sport et de fitness à Grand Baie : musculation, cardio et cours collectifs."
+    "description": "Salle de sport et de fitness à Grand Baie : musculation, cardio et cours collectifs.",
+    "hours": "Lun-Ven 6h-19h, Sam 8h-12h, fermé dim"
   },
   {
     "id": "training-turtles",
@@ -20021,7 +20022,8 @@
       "yoga-bien-etre"
     ],
     "zone": "ouest",
-    "description": "Club sportif et de remise en forme (RM Club) à CapTamarin."
+    "description": "Club sportif et de remise en forme (RM Club) à CapTamarin.",
+    "hours": "Lun-Ven 6h-21h, Sam-Dim 7h-19h"
   },
   {
     "id": "crossfit-tamarin",
@@ -26450,7 +26452,8 @@
       "yoga-bien-etre"
     ],
     "zone": "centre",
-    "description": "ONG de jeunesse (YUVA Mauritius) : programmes d'engagement, de formation et d'accompagnement des jeunes."
+    "description": "ONG de jeunesse (YUVA Mauritius) : programmes d'engagement, de formation et d'accompagnement des jeunes.",
+    "hours": "Lun-Sam 9h-17h"
   },
   {
     "id": "a-p-e-i-m",
@@ -45701,7 +45704,8 @@
     "lat": -20.2752613,
     "lng": 57.4766217,
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Brahma%20Kumaris%20Raja%20Yoga%20Centre%20Mauritius",
-    "zone": "centre"
+    "zone": "centre",
+    "hours": "Tous les jours 6h-20h"
   },
   {
     "id": "the-pilates-and-yoga-studio-soins",
@@ -45801,7 +45805,8 @@
     "themes": [
       "yoga-bien-etre"
     ],
-    "description": "Cabinet d'ostéopathie tenu par Romain Lauri et Amandine Leca (diplômés de l'Institut Supérieur d'Ostéopathie d'Aix-en-Provence). Sur rendez-vous."
+    "description": "Cabinet d'ostéopathie tenu par Romain Lauri et Amandine Leca (diplômés de l'Institut Supérieur d'Ostéopathie d'Aix-en-Provence). Sur rendez-vous.",
+    "hours": "Lun-Ven 8h-17h, Sam 8h-12h, fermé dim"
   },
   {
     "id": "bosch-service-uti",
@@ -51933,7 +51938,8 @@
       "yoga-bien-etre"
     ],
     "zone": "nord",
-    "description": "Cabinet d'Antoine Menguy, acupuncteur et masseur-kinésithérapeute diplômé d'État, praticien en médecine traditionnelle chinoise : acupuncture, ventouses, moxibustion et thérapie manuelle pour troubles digestifs, stress, insomnie, migraines, douleurs chroniques et autres déséquilibres énergétiques. Sur rendez-vous, lun-ven 8h-12h / 13h30-17h30."
+    "description": "Cabinet d'Antoine Menguy, acupuncteur et masseur-kinésithérapeute diplômé d'État, praticien en médecine traditionnelle chinoise : acupuncture, ventouses, moxibustion et thérapie manuelle pour troubles digestifs, stress, insomnie, migraines, douleurs chroniques et autres déséquilibres énergétiques. Sur rendez-vous, lun-ven 8h-12h / 13h30-17h30.",
+    "hours": "Lun-Ven 8h-12h, 13h30-17h30, fermé sam-dim"
   },
   {
     "id": "jardin-du-chateau-de-labourdonnais",
