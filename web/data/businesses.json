@@ -24671,9 +24671,13 @@
     "themes": [
       "malls-shopping"
     ],
+    "badge": "selection",
     "zone": "nord",
     "hours": "Boutiques : Lun-Jeu 9h-19h, Ven-Sam 9h-20h, Dim et jours fériés 9h-15h",
-    "description": "Grand centre commercial de Pamplemousses regroupant une cinquantaine d'enseignes, dont le supermarché Intermart comme locomotive, ainsi qu'un food court et divers commerces et services."
+    "photoUrls": [
+      "/photos/mahogany-shopping-promenade.jpg"
+    ],
+    "description": "Superbe centre commercial à ciel ouvert, autour d'un joli plan d'eau. Facile d'accès, avec une sélection d'enseignes variées : mode, beauté, maison, services, supermarché, restaurants et food court. Un centre à taille humaine, agréable aussi bien pour faire quelques emplettes que pour se promener."
   },
   {
     "id": "le-valentina-shopping-mall",
@@ -30235,7 +30239,14 @@
     "badge": "selection",
     "zone": "nord",
     "sportsListed": "Tennis : 2 courts (dur). Infrastructures : piscine, terrain de football, salle de fitness. Réservation possible.",
-    "description": "Complexe sportif du Domaine de Labourdonnais (tennis, padel, piscine, terrain de football, salle de fitness). La restauration du Club House est très bonne, dans un cadre magnifique donnant sur les terrains de sport.",
+    "photoUrls": [
+      "/photos/labourdonnais-sports-club.jpg",
+      "/photos/labourdonnais-sports-club-2.jpg",
+      "/photos/labourdonnais-sports-club-3.jpg",
+      "/photos/labourdonnais-sports-club-4.jpg"
+    ],
+    "description": "Magnifique club dans un cadre très verdoyant, avec de nombreuses infrastructures : musculation, cours collectifs, piscine, sports de raquette et coaching personnalisé. De nombreuses formules et tarifs accessibles, avec également des offres familles, étudiants et enfants. Côté kids : stages vacances et activités après l'école (Mini WOD, Mini Box, Little Athletics…). Le club propose aussi régulièrement des événements sportifs dans une ambiance conviviale. Tarifs indicatifs : Full Membership ~2 500 Rs/mois ; Gym & Classes 2 100 Rs/mois ; Piscine 1 500 Rs/mois ; Kids 1 500 Rs/mois ; raquettes ~2 300 Rs/mois ; stages vacances ~3 500 Rs/semaine.",
+    "koteMorisComment": "Un vrai coup de cœur ! ❤️ Un magnifique club dans un cadre verdoyant, où tout est pensé autour du sport. Beaucoup d'activités pour les adultes comme pour les enfants, des formules variées et des tarifs qui restent très raisonnables. Ambiance détendue, conviviale et familiale, avec de nombreux événements organisés tout au long de l'année. Et gros plus pour le Club House, vraiment superbe, avec une cuisine de qualité à des prix très accessibles. Un club très complet et agréable, que je recommande sans hésiter !",
     "filters": [
       "complexes-sportifs"
     ]
@@ -48490,7 +48501,8 @@
       "evenements-culturels"
     ],
     "description": "Célébration de la culture créole mauricienne : séga, concerts, cuisine et animations à travers l'île, avec un temps fort sur le littoral et à Rodrigues.",
-    "period": "Fin novembre – début décembre"
+    "period": "Fin novembre – début décembre",
+    "eventRecurrence": "annuel-variable"
   },
   {
     "id": "porlwi-by-light-evt",
@@ -48507,7 +48519,8 @@
     "lat": -20.16,
     "lng": 57.5012,
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Porlwi%20by%20Light%20Mauritius",
-    "zone": "centre"
+    "zone": "centre",
+    "eventRecurrence": "annuel-variable"
   },
   {
     "id": "maha-shivaratri-grand-bassin-evt",
@@ -48524,7 +48537,8 @@
     "lat": -20.4149,
     "lng": 57.492,
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Maha%20Shivaratri%20%E2%80%93%20Grand%20Bassin%20Mauritius",
-    "zone": "ouest"
+    "zone": "ouest",
+    "eventRecurrence": "annuel-variable"
   },
   {
     "id": "thaipoosam-cavadee-evt",
@@ -48537,7 +48551,8 @@
       "evenements-culturels"
     ],
     "description": "Fête tamoule : dix jours de jeûne suivis de processions vers les kovils, les fidèles portant le cavadee. Dates variables selon le calendrier tamoul.",
-    "period": "Janvier–février"
+    "period": "Janvier–février",
+    "eventRecurrence": "annuel-variable"
   },
   {
     "id": "divali-fete-de-la-lumiere-evt",
@@ -48550,7 +48565,8 @@
       "evenements-culturels"
     ],
     "description": "Fête hindoue des lumières : maisons, cours et rues illuminées de lampes (diyas) et partage de gâteaux, célébrée dans toute l'île.",
-    "period": "Octobre–novembre"
+    "period": "Octobre–novembre",
+    "eventRecurrence": "annuel-variable"
   },
   {
     "id": "nouvel-an-chinois-fete-du-printemps-evt",
@@ -48567,7 +48583,8 @@
     "lat": -20.1618,
     "lng": 57.506,
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Nouvel%20An%20chinois%20(F%C3%AAte%20du%20Printemps)%20Mauritius",
-    "zone": "centre"
+    "zone": "centre",
+    "eventRecurrence": "annuel-variable"
   },
   {
     "id": "pelerinage-du-pere-laval-evt",
@@ -48584,7 +48601,8 @@
     "lat": -20.1447,
     "lng": 57.5049,
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=P%C3%A8lerinage%20du%20P%C3%A8re%20Laval%20Mauritius",
-    "zone": "centre"
+    "zone": "centre",
+    "eventRecurrence": "annuel-variable"
   },
   {
     "id": "dodo-trail-evt",
@@ -48601,7 +48619,8 @@
     "lat": -20.326,
     "lng": 57.371,
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Dodo%20Trail%20Mauritius",
-    "zone": "ouest"
+    "zone": "ouest",
+    "eventRecurrence": "annuel-variable"
   },
   {
     "id": "mauritius-marathon-evt",
@@ -48618,7 +48637,8 @@
     "lat": -20.503,
     "lng": 57.403,
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Mauritius%20Marathon%20Mauritius",
-    "zone": "sud"
+    "zone": "sud",
+    "eventRecurrence": "annuel-variable"
   },
   {
     "id": "tour-de-maurice-cyclisme-evt",
@@ -48631,7 +48651,8 @@
       "evenements-sportifs"
     ],
     "description": "Course cycliste internationale par étapes, à travers l'île.",
-    "period": "Généralement fin août"
+    "period": "Généralement fin août",
+    "eventRecurrence": "annuel-variable"
   },
   {
     "id": "maiden-cup-champ-de-mars-evt",
@@ -48648,7 +48669,8 @@
     "lat": -20.1637,
     "lng": 57.503,
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Maiden%20Cup%20%E2%80%93%20Champ%20de%20Mars%20Mauritius",
-    "zone": "centre"
+    "zone": "centre",
+    "eventRecurrence": "annuel-variable"
   },
   {
     "id": "bazar-canonniers",

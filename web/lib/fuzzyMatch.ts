@@ -40,7 +40,7 @@ export function fuzzyMatch(haystack: string, query: string): boolean {
   const hayTokens = hay.split(/[^a-z0-9]+/).filter(Boolean);
   return queryTokens.every((qt) => {
     if (hay.includes(qt)) return true;
-    const maxDist = qt.length <= 4 ? 1 : qt.length <= 8 ? 2 : 3;
+    const maxDist = qt.length <= 4 ? 1 : qt.length <= 8 ? 1 : 2;
     return hayTokens.some((ht) => levenshtein(qt, ht) <= maxDist);
   });
 }

@@ -14,6 +14,7 @@ import {
 } from "@/lib/format";
 import { SpecialBadge, accentColorFor } from "./Badge";
 import { FavoriteButton } from "./FavoriteButton";
+import { SuggestPhotoButton } from "./SuggestPhotoButton";
 import { Tag } from "./Tag";
 import { metaFacts } from "./BusinessCard";
 import { iconForKey, subIconFor, CONTACT_ICONS } from "@/lib/icons";
@@ -388,6 +389,8 @@ export function BusinessDetail({
                 💬 <span className="italic">{b.promoText}</span>
               </p>
             )}
+
+            <SuggestPhotoButton businessId={b.id} businessName={displayName(b.name)} />
           </div>
         </div>
       </div>

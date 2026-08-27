@@ -52,6 +52,12 @@ export type Business = {
   promoText?: string;
   /** Période/date d'un événement, texte libre ex: "15-17 août 2026" ou "Tous les samedis". Rubrique Événements — mise en avant en bandeau sur la fiche. */
   eventPeriod?: string;
+  /** Type de récurrence de l'événement. Rubrique Agenda uniquement — pilote le tri chronologique et l'archivage automatique via lib/events.ts. */
+  eventRecurrence?: "ponctuel" | "annuel-variable" | "periodique";
+  /** Date de début structurée (ISO YYYY-MM-DD). Absente = date inconnue/non confirmée (l'affichage utilise toujours period/eventPeriod). */
+  eventStartDate?: string;
+  /** Date de fin structurée (ISO YYYY-MM-DD). Multi-jours, ou sert avec eventStartDate à déterminer l'archivage d'un événement ponctuel. */
+  eventEndDate?: string;
   /** Descriptif rapide (1-2 phrases). Surtout utilisé pour parcs-aventures. */
   description?: string;
   /** Période/date de l'événement, ex: "Fin novembre - début décembre", "9 septembre". Agenda. */

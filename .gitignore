@@ -6,3 +6,6 @@ node_modules/
 settings.local.json
 ~$*
 ~WRL*.tmp
+
+.vercel
+.env*

@@ -9,6 +9,7 @@ import type { FilterGroup } from "@/data/categories";
 import { SELECTIONS, SELECTION_GROUP_META } from "@/data/selections";
 import type { SelectionGroup, SelectionIconKey } from "@/data/selections";
 import { fuzzyMatch } from "@/lib/fuzzyMatch";
+import { isPastEvent, compareByEventDate } from "@/lib/events";
 
 const SELECTION_ICONS: Record<SelectionIconKey, Icon> = {
   CloudRain,
@@ -36,7 +37,7 @@ import { SearchInput } from "@/components/ui/SearchInput";
 import { CategoryRow } from "@/components/ui/CategoryRow";
 import { BusinessCard } from "@/components/ui/BusinessCard";
 import { BusinessDetail } from "@/components/ui/BusinessDetail";
-import { useFavorites } from "@/lib/favorites";
+import { useFavorites, type FavoriteStatus } from "@/lib/favorites";
 import { COUP_DE_COEUR_COLOR } from "@/components/ui/Badge";
 import { FilterDropdown, type DropdownOption } from "@/components/ui/FilterDropdown";
 import { AddAddressForm } from "@/components/ui/AddAddressForm";
@@ -70,6 +71,8 @@ import {
   Wind,
   TreePalm,
   Sparkle,
+  DownloadSimple,
+  UploadSimple,
 } from "@phosphor-icons/react";
 import type { Icon } from "@phosphor-icons/react";
 
@@ -125,7 +128,7 @@ const Map = dynamic(() => import("./Map"), {
 });
 
 export default function DirectoryClient({ businesses }: { businesses: Business[] }) {
-  const { statuses: favoriteStatuses } = useFavorites();
+  const { statuses: favoriteStatuses, getStatus, mergeStatuses } = useFavorites();
   const favoriteBusinesses = useMemo(
     () => businesses.filter((b) => favoriteStatuses.get(b.id) === "favori"),
     [businesses, favoriteStatuses]
@@ -173,6 +176,57 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
     }
     setTimeout(() => setShareFeedback(null), 2500);
   }, [favorisMapBusinesses]);
+
+  // Profil → sauvegarde des favoris : export/import d'un fichier JSON, seul
+  // moyen de ne pas perdre ses favoris (localStorage uniquement, pas de compte).
+  const [backupFeedback, setBackupFeedback] = useState<string | null>(null);
+  const importFileRef = useRef<HTMLInputElement>(null);
+  const exportFavoris = useCallback(async () => {
+    const payload = {
+      version: 1,
+      exportedAt: new Date().toISOString(),
+      favorites: favorisMapBusinesses.map((b) => ({
+        id: b.id,
+        name: b.name,
+        status: getStatus(b.id) ?? "favori",
+      })),
+    };
+    const json = JSON.stringify(payload, null, 2);
+    const filename = `kote-moris-favoris-${new Date().toISOString().slice(0, 10)}.json`;
+    const file = new File([json], filename, { type: "application/json" });
+    try {
+      if (navigator.canShare?.({ files: [file] })) {
+        await navigator.share({ files: [file], title: "Mes favoris Koté Moris" });
+        return;
+      }
+    } catch {
+      // L'utilisateur a annulé le partage, ou l'API a échoué : on retombe sur le téléchargement.
+    }
+    const url = URL.createObjectURL(file);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = filename;
+    a.click();
+    URL.revokeObjectURL(url);
+    setBackupFeedback("Fichier téléchargé !");
+    setTimeout(() => setBackupFeedback(null), 2500);
+  }, [favorisMapBusinesses, getStatus]);
+
+  const importFavoris = useCallback(async (file: File) => {
+    try {
+      const parsed = JSON.parse(await file.text());
+      const entries: Record<string, FavoriteStatus> = {};
+      for (const item of parsed?.favorites ?? []) {
+        if (item?.id && item?.status) entries[item.id] = item.status;
+      }
+      const count = mergeStatuses(entries);
+      setBackupFeedback(count > 0 ? `${count} favori${count > 1 ? "s" : ""} restauré${count > 1 ? "s" : ""} !` : "Fichier vide ou invalide.");
+    } catch {
+      setBackupFeedback("Fichier illisible : ce n'est pas une sauvegarde Koté Moris valide.");
+    }
+    setTimeout(() => setBackupFeedback(null), 3500);
+  }, [mergeStatuses]);
+
   const [query, setQuery] = useState("");
   const [active, setActive] = useState<string>("all");
   const [activeThemes, setActiveThemes] = useState<Set<string>>(new Set());
@@ -489,6 +543,8 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
         // Prix et sélection/badge : facettes transversales, indépendantes de la rubrique.
         if (facetPrices.size > 0 && !(b.priceRange && facetPrices.has(b.priceRange))) return false;
         if (facetBadges.size > 0 && !(b.badge && facetBadges.has(b.badge))) return false;
+        // Agenda : masque les événements ponctuels dont la date est passée.
+        if (b.category === "agenda" && isPastEvent(b)) return false;
         if (!q) return true;
         const rubriqueLabels = (b.themes || []).map((t) => RUBRIQUE_MAP[t]?.label || "").join(" ");
         return fuzzyMatch(
@@ -496,7 +552,12 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
           q
         );
       })
-      .sort((a, b) => (b.tier === "premium" ? 1 : 0) - (a.tier === "premium" ? 1 : 0));
+      .sort((a, b) => {
+        const tierDiff = (b.tier === "premium" ? 1 : 0) - (a.tier === "premium" ? 1 : 0);
+        if (tierDiff !== 0) return tierDiff;
+        if (a.category === "agenda" && b.category === "agenda") return compareByEventDate(a, b);
+        return 0;
+      });
   }, [businesses, query, active, activeThemes, activeZone, activeRubrique, applicableFilterGroups, facetGroups, facetPrices, facetBadges]);
 
   // Base rubrique (rubrique + zone + recherche, hors facettes) pour les compteurs.
@@ -1754,9 +1815,12 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
           {showHome && homeMode === "profil" && (
             <div className="pb-16 pt-4 max-w-[560px] mx-auto flex flex-col gap-4">
               <div className="text-center bg-surface border border-border rounded-2xl shadow-sm p-6 flex flex-col items-center gap-2">
-                <span className="w-14 h-14 rounded-2xl bg-primary-tint text-primary-deep flex items-center justify-center">
-                  <UserCircle size={30} weight="duotone" aria-hidden />
-                </span>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/avatar-admin.png"
+                  alt="Photo de profil, badge Admin"
+                  className="w-20 h-20 rounded-full object-cover"
+                />
                 <p className="font-serif text-lg font-semibold leading-tight">Votre profil Koté Moris</p>
                 <p className="text-[13px] text-muted leading-snug">
                   Le compte arrive prochainement. En attendant, tout ce qui suit est enregistré
@@ -1838,13 +1902,42 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                 <button
                   onClick={shareFavoris}
                   disabled={favorisMapBusinesses.length === 0}
-                  className="w-full flex items-center gap-3 px-4 py-3.5 text-left active:bg-surface-2 transition-colors disabled:opacity-40"
+                  className="w-full flex items-center gap-3 px-4 py-3.5 text-left active:bg-surface-2 transition-colors disabled:opacity-40 border-b border-border"
                 >
                   <Heart size={18} weight="regular" className="text-muted" aria-hidden />
                   <span className="flex-1 text-[13.5px] text-ink">Partager mes adresses</span>
                   {shareFeedback && <span className="text-[11.5px] font-semibold text-primary-deep">{shareFeedback}</span>}
                 </button>
+                <button
+                  onClick={exportFavoris}
+                  disabled={favorisMapBusinesses.length === 0}
+                  className="w-full flex items-center gap-3 px-4 py-3.5 text-left active:bg-surface-2 transition-colors disabled:opacity-40 border-b border-border"
+                >
+                  <DownloadSimple size={18} weight="regular" className="text-muted" aria-hidden />
+                  <span className="flex-1 text-[13.5px] text-ink">Sauvegarder mes favoris</span>
+                </button>
+                <button
+                  onClick={() => importFileRef.current?.click()}
+                  className="w-full flex items-center gap-3 px-4 py-3.5 text-left active:bg-surface-2 transition-colors"
+                >
+                  <UploadSimple size={18} weight="regular" className="text-muted" aria-hidden />
+                  <span className="flex-1 text-[13.5px] text-ink">Restaurer une sauvegarde</span>
+                  <input
+                    ref={importFileRef}
+                    type="file"
+                    accept="application/json"
+                    className="hidden"
+                    onChange={(e) => {
+                      const file = e.target.files?.[0];
+                      if (file) importFavoris(file);
+                      e.target.value = "";
+                    }}
+                  />
+                </button>
               </div>
+              {backupFeedback && (
+                <p className="text-center text-[12.5px] font-semibold text-primary-deep -mt-1.5">{backupFeedback}</p>
+              )}
             </div>
           )}
 

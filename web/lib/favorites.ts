@@ -70,6 +70,19 @@ export function useFavorites() {
     writeFavorites(next);
   }, []);
 
+  /** Fusionne une sauvegarde importée : chaque id importé écrase son statut existant, le reste est conservé. Renvoie le nombre d'entrées fusionnées. */
+  const mergeStatuses = useCallback((imported: Record<string, FavoriteStatus>) => {
+    const next = readFavorites();
+    let count = 0;
+    for (const [id, status] of Object.entries(imported)) {
+      if (status !== "favori" && status !== "a-tester" && status !== "teste") continue;
+      next.set(id, status);
+      count++;
+    }
+    writeFavorites(next);
+    return count;
+  }, []);
+
   return {
     favoriteIds: new Set(statuses.keys()),
     statuses,
@@ -77,5 +90,6 @@ export function useFavorites() {
     getStatus,
     toggleFavorite,
     setStatus,
+    mergeStatuses,
   };
 }

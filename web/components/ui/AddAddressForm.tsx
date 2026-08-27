@@ -1,7 +1,7 @@
 "use client";
 
-import { useState, type FormEvent } from "react";
-import { MapPin, PaperPlaneTilt, CheckCircle } from "@phosphor-icons/react";
+import { useEffect, useMemo, useRef, useState, type FormEvent } from "react";
+import { MapPin, PaperPlaneTilt, CheckCircle, Camera, X } from "@phosphor-icons/react";
 import { CATEGORIES, SUBCATEGORIES } from "@/data/categories";
 import type { CategoryKey } from "@/lib/types";
 
@@ -28,6 +28,16 @@ export function AddAddressForm() {
   const [geoStatus, setGeoStatus] = useState<GeoStatus>("idle");
   const [coords, setCoords] = useState<{ lat: number; lng: number } | null>(null);
   const [sent, setSent] = useState(false);
+  const [photoShared, setPhotoShared] = useState(false);
+
+  const [photo, setPhoto] = useState<File | null>(null);
+  const fileInputRef = useRef<HTMLInputElement>(null);
+  const photoUrl = useMemo(() => (photo ? URL.createObjectURL(photo) : null), [photo]);
+  useEffect(() => {
+    return () => {
+      if (photoUrl) URL.revokeObjectURL(photoUrl);
+    };
+  }, [photoUrl]);
 
   const subcats = categorie ? SUBCATEGORIES[categorie] ?? [] : [];
 
@@ -47,7 +57,7 @@ export function AddAddressForm() {
     );
   }
 
-  function handleSubmit(e: FormEvent) {
+  async function handleSubmit(e: FormEvent) {
     e.preventDefault();
     if (!nom.trim() || !categorie) return;
 
@@ -68,9 +78,28 @@ export function AddAddressForm() {
 
     const subject = `Nouvelle adresse à ajouter — ${nom}`;
     const body = lignes.join("\n");
-    const mailto = `mailto:mae.bonnart@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
+    // Un lien mailto ne peut pas transporter de pièce jointe : si une photo est
+    // choisie, on passe par le partage natif (Mail/WhatsApp/Messages...), qui
+    // sait attacher le fichier ; sinon on retombe sur le mailto classique.
+    if (photo && typeof navigator !== "undefined" && navigator.share && navigator.canShare?.({ files: [photo] })) {
+      try {
+        await navigator.share({
+          title: subject,
+          text: `${body}\n\nÀ : mae.bonnart@gmail.com`,
+          files: [photo],
+        });
+        setPhotoShared(true);
+        setSent(true);
+        return;
+      } catch {
+        // Partage annulé ou indisponible : on continue sur le mailto ci-dessous.
+      }
+    }
+
+    const mailto = `mailto:mae.bonnart@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     window.location.href = mailto;
+    setPhotoShared(false);
     setSent(true);
   }
 
@@ -82,13 +111,18 @@ export function AddAddressForm() {
         </span>
         <p className="font-serif text-lg font-semibold leading-tight">Merci !</p>
         <p className="text-[13px] text-muted leading-snug">
-          Votre appli mail va s'ouvrir avec les infos pré-remplies : il ne reste qu'à envoyer.
-          L'adresse sera vérifiée puis ajoutée à l'annuaire.
+          {photoShared
+            ? "Votre message avec la photo est prêt à être envoyé — il ne reste qu'à valider dans l'appli qui vient de s'ouvrir."
+            : photo
+              ? "Votre appli mail va s'ouvrir avec les infos pré-remplies : il ne reste qu'à joindre votre photo manuellement et envoyer."
+              : "Votre appli mail va s'ouvrir avec les infos pré-remplies : il ne reste qu'à envoyer."}
+          {" "}L'adresse sera vérifiée puis ajoutée à l'annuaire.
         </p>
         <button
           type="button"
           onClick={() => {
             setSent(false);
+            setPhoto(null);
           }}
           className="text-[13px] font-semibold text-primary underline underline-offset-2"
         >
@@ -246,6 +280,44 @@ export function AddAddressForm() {
             className={inputClass}
           />
         </div>
+      </div>
+
+      <div>
+        <span className={labelClass}>Photo du lieu</span>
+        <input
+          ref={fileInputRef}
+          type="file"
+          accept="image/*"
+          capture="environment"
+          onChange={(e) => setPhoto(e.target.files?.[0] ?? null)}
+          className="hidden"
+        />
+        {photoUrl ? (
+          <div className="relative w-full h-36 rounded-xl overflow-hidden border border-border">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src={photoUrl} alt="Photo choisie" className="w-full h-full object-cover" />
+            <button
+              type="button"
+              onClick={() => {
+                setPhoto(null);
+                if (fileInputRef.current) fileInputRef.current.value = "";
+              }}
+              aria-label="Retirer la photo"
+              className="absolute top-2 right-2 w-7 h-7 rounded-full bg-black/60 text-white flex items-center justify-center"
+            >
+              <X size={15} weight="bold" aria-hidden />
+            </button>
+          </div>
+        ) : (
+          <button
+            type="button"
+            onClick={() => fileInputRef.current?.click()}
+            className="w-full h-[46px] px-4 rounded-xl border border-border bg-surface text-ink text-[14px] font-semibold shadow-sm flex items-center justify-center gap-2 active:scale-[.98] transition-transform"
+          >
+            <Camera size={18} weight="bold" aria-hidden />
+            Prendre ou choisir une photo
+          </button>
+        )}
       </div>
 
       <div>

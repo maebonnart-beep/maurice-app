@@ -128,4 +128,11 @@ body {
     outline-offset: 2px;
     border-radius: 4px;
   }
+
+  /* Un double-tap rapide sur un bouton est sinon interprété par Safari/Chrome
+     mobile comme un geste de zoom sur la page. `manipulation` désactive ce
+     double-tap-to-zoom tout en laissant le pinch-to-zoom actif. */
+  :where(a, button, [role="button"]) {
+    touch-action: manipulation;
+  }
 }
