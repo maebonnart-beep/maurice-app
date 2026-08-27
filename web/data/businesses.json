@@ -30860,7 +30860,8 @@
     "description": "Salon Maison Sasha à Grand Baie (Pointe aux Canonniers) : coupe, coiffage, coloration et soins, coiffure mariée, barbier homme et ongles. Horaires : lun–jeu & sam 8h30–17h30, ven 8h30–20h.",
     "filters": [
       "coiffeurs"
-    ]
+    ],
+    "hours": "Lun-Jeu et Sam 8h30-17h30, Ven 8h30-20h, fermé dim"
   },
   {
     "id": "sj-coiffure-flic-en-flac",
@@ -30914,7 +30915,8 @@
     "description": "Salon Allure Coiffure à Port-Louis (Dorval Center), spécialiste de la coloration (L'Oréal, Kérastase, Olaplex) : coupe, coiffage et soins.",
     "filters": [
       "coiffeurs"
-    ]
+    ],
+    "hours": "Lun-Ven 8h-17h, Sam 8h-16h, fermé dim"
   },
   {
     "id": "maison-sasha-curepipe",
@@ -30932,7 +30934,8 @@
     "description": "Salon Maison Sasha à Curepipe : coupe, coiffage, coloration et soins, coiffure mariée, barbier homme et ongles. Horaires : lun/mer/sam 7h30–17h30, mar/jeu/ven 7h30–19h.",
     "filters": [
       "coiffeurs"
-    ]
+    ],
+    "hours": "Lun-Mer-Sam 7h30-17h30, Mar-Jeu-Ven 7h30-19h, fermé dim"
   },
   {
     "id": "natural-hair-culture-curepipe",
@@ -30950,7 +30953,8 @@
     "description": "Salon Natural Hair Culture à Curepipe, spécialisé dans les cheveux naturels et texturés : coupe, soins, tresses et conseils. Horaires : lun–ven 9h30–17h30, sam 9h–18h (fermé dim).",
     "filters": [
       "coiffeurs"
-    ]
+    ],
+    "hours": "Lun-Ven 9h30-17h30, Sam 9h-18h, fermé dim"
   },
   {
     "id": "le-studio-tamarin",
@@ -31022,7 +31026,8 @@
     "description": "Salon Espace Coiffure Guy Perrin à Moka : coupe, coiffage et coloration.",
     "filters": [
       "coiffeurs"
-    ]
+    ],
+    "hours": "Lun-Sam 9h30-19h, Dim 9h30-13h"
   },
   {
     "id": "coworking-port-louis",
@@ -42519,7 +42524,8 @@
     "description": "Salon de coiffure à Mahébourg : coupe, coiffage et coloration.",
     "filters": [
       "coiffeurs"
-    ]
+    ],
+    "hours": "Mar-Sam 9h-18h, Dim 9h-13h, fermé lun"
   },
   {
     "id": "coiffeur-jenny-coiffure",
@@ -45574,7 +45580,8 @@
     "description": "Onglerie : manucure, pédicure, extensions gel et nail art.",
     "filters": [
       "onglerie-manucure"
-    ]
+    ],
+    "hours": "Lun-Sam 9h-17h, fermé dim"
   },
   {
     "id": "nails-bar-grand-baie-soins",
@@ -45608,7 +45615,8 @@
     "zone": "centre",
     "filters": [
       "barbiers"
-    ]
+    ],
+    "hours": "Tous les jours 10h-21h"
   },
   {
     "id": "the-master-s-barbershop-soins",
