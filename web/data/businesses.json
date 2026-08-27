@@ -42832,7 +42832,8 @@
     "description": "Opticien : lunettes, lentilles et examens de vue.",
     "filters": [
       "opticiens"
-    ]
+    ],
+    "hours": "Lun-Jeu 9h30-20h30, Ven-Sam 9h30-22h, Dim 9h30-15h"
   },
   {
     "id": "dentcare",
@@ -42851,7 +42852,8 @@
     "description": "Cabinet dentaire : soins dentaires, prévention et esthétique.",
     "filters": [
       "dentistes"
-    ]
+    ],
+    "hours": "Lun-Ven 8h-18h30, Sam 8h-12h, fermé dim"
   },
   {
     "id": "dr-bhunjun",
@@ -42927,7 +42929,8 @@
     "description": "Opticien : lunettes, lentilles et examens de vue.",
     "filters": [
       "opticiens"
-    ]
+    ],
+    "hours": "Lun-Ven 8h30-17h, Sam 9h-14h, fermé dim"
   },
   {
     "id": "mohamed-home-optician",
@@ -43022,7 +43025,8 @@
     "description": "Opticien : lunettes, lentilles et examens de vue.",
     "filters": [
       "opticiens"
-    ]
+    ],
+    "hours": "Lun-Ven 9h-16h30, Sam 9h-13h"
   },
   {
     "id": "abdullah-hossen",
@@ -43214,7 +43218,8 @@
     "description": "Opticien : lunettes, lentilles et examens de vue.",
     "filters": [
       "opticiens"
-    ]
+    ],
+    "hours": "Lun-Ven 9h-16h30, Sam 9h-15h, fermé dim"
   },
   {
     "id": "gaya-opticians",
@@ -43233,7 +43238,8 @@
     "description": "Opticien : lunettes, lentilles et examens de vue.",
     "filters": [
       "opticiens"
-    ]
+    ],
+    "hours": "Lun-Ven 9h-16h30, Sam 9h-13h, fermé dim"
   },
   {
     "id": "farouk-hossen",
@@ -43252,7 +43258,8 @@
     "description": "Opticien : lunettes, lentilles et examens de vue.",
     "filters": [
       "opticiens"
-    ]
+    ],
+    "hours": "Lun-Ven 9h-16h30, Sam 9h-13h, fermé dim"
   },
   {
     "id": "pet-corner",
@@ -43325,7 +43332,8 @@
     "description": "Opticien : lunettes, lentilles et examens de vue.",
     "filters": [
       "opticiens"
-    ]
+    ],
+    "hours": "Lun-Mer et Ven 9h-18h, Jeu 9h-14h, Sam 9h-16h, fermé dim"
   },
   {
     "id": "r-s-nazir-opticians",
@@ -43363,7 +43371,8 @@
     "description": "Opticien : lunettes, lentilles et examens de vue.",
     "filters": [
       "opticiens"
-    ]
+    ],
+    "hours": "Lun-Mer, Ven-Sam 9h30-17h30, Jeu 9h30-13h, fermé dim"
   },
   {
     "id": "centre-medical-clinique-dentaire",
@@ -43477,7 +43486,8 @@
     "description": "Opticien : lunettes, lentilles et examens de vue.",
     "filters": [
       "opticiens"
-    ]
+    ],
+    "hours": "Lun-Sam 9h-20h30, Dim 9h-15h"
   },
   {
     "id": "orthodentist-toofany",
@@ -43631,7 +43641,8 @@
     "description": "Cabinet dentaire : soins dentaires, prévention et esthétique. Horaires : lun-samm 09h-16h.",
     "filters": [
       "dentistes"
-    ]
+    ],
+    "hours": "Lun-Sam 9h-16h, fermé dim"
   },
   {
     "id": "dr-peerbux",
@@ -43837,7 +43848,8 @@
     "description": "Opticien : lunettes, lentilles et examens de vue. Horaires : lun-samm 09h-17h.",
     "filters": [
       "opticiens"
-    ]
+    ],
+    "hours": "Lun-Sam 9h-17h, fermé dim"
   },
   {
     "id": "twinmed-ltd",
