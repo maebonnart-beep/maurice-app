@@ -10737,7 +10737,8 @@
     "description": "Club multisports ouvert récemment au cœur de Moka sur plus de 130 000 m², proposant une dizaine de disciplines (football, natation, escrime, tennis, padel, golf...) avec entraîneurs qualifiés, piscine chauffée et restaurant.",
     "filters": [
       "complexes-sportifs"
-    ]
+    ],
+    "hours": "Lun-Sam 6h-22h, Dim 7h-14h"
   },
   {
     "id": "tribeca-mall",
@@ -13012,7 +13013,8 @@
     "description": "Salle de sport et club de padel ouvert mi-2024 à Pointe aux Cannoniers, avec deux courts de padel extérieurs éclairés en soirée et un restaurant international sur place.",
     "filters": [
       "complexes-sportifs"
-    ]
+    ],
+    "hours": "Lun-Ven 6h-22h, Sam 7h-20h, Dim 8h-13h"
   },
   {
     "id": "islandive",
@@ -31948,7 +31950,8 @@
     "description": "Salle de sport et de fitness : musculation, cardio et cours collectifs.",
     "filters": [
       "gym-fitness"
-    ]
+    ],
+    "hours": "Lun-Ven 6h-21h30, Sam 6h-18h, Dim 8h30-12h"
   },
   {
     "id": "elysian-fitness",
@@ -31967,7 +31970,8 @@
     "description": "Salle de sport et de fitness : musculation, cardio et cours collectifs.",
     "filters": [
       "gym-fitness"
-    ]
+    ],
+    "hours": "Lun-Ven 5h-22h, Sam-Dim 6h-20h"
   },
   {
     "id": "padelshop-mu",
@@ -32124,7 +32128,8 @@
     "description": "Salle de sport et de fitness à Bambous : musculation, cardio et cours collectifs.",
     "filters": [
       "gym-fitness"
-    ]
+    ],
+    "hours": "Lun-Ven 6h-11h, 16h-21h, Sam-Dim 8h-12h"
   },
   {
     "id": "ifd-ajl-maurice",
@@ -32345,7 +32350,8 @@
     "description": "Salle de sport et de fitness à Vacoas : musculation, cardio et cours collectifs.",
     "filters": [
       "gym-fitness"
-    ]
+    ],
+    "hours": "Lun-Ven 6h-12h, 13h-21h, Sam 6h-18h, Dim 6h-12h"
   },
   {
     "id": "dan-jay-fitness-center",
@@ -32458,7 +32464,8 @@
     "description": "Salle de sport et de fitness à Port-Louis : musculation, cardio et cours collectifs, accessible 24h/24.",
     "filters": [
       "gym-fitness"
-    ]
+    ],
+    "hours": "Tous les jours 24h/24"
   },
   {
     "id": "lo-bosco-pole-studio",
@@ -32496,7 +32503,8 @@
     "description": "Salle de sport et de fitness à Beau Bassin-Rose Hill : musculation, cardio et cours collectifs.",
     "filters": [
       "gym-fitness"
-    ]
+    ],
+    "hours": "Lun-Ven 6h-22h, Sam 6h-17h, Dim 7h-12h"
   },
   {
     "id": "life-fitness",
@@ -32623,7 +32631,8 @@
     "description": "Salle de musculation et de force à Vacoas : haltères, machines et coaching.",
     "filters": [
       "gym-fitness"
-    ]
+    ],
+    "hours": "Lun-Ven 6h-12h, 15h-22h, Sam 6h-12h, 15h-18h, Dim 8h-12h"
   },
   {
     "id": "neezfitness-ladies-gym-neezfit-female-club",
@@ -32934,7 +32943,8 @@
     "description": "Antenne du réseau ION CLUB basée à l'hôtel Dinarobin, offrant cours et location de matériel de kitesurf, windsurf, wingfoil et SUP, avec accès en bateau au lagon de kitesurf du Morne.",
     "filters": [
       "complexes-sportifs"
-    ]
+    ],
+    "hours": "Tous les jours 9h-17h"
   },
   {
     "id": "ion-club-shop",
@@ -32953,7 +32963,8 @@
     "description": "Boutique du réseau ION CLUB à La Gaulette, en bordure du lagon de kitesurf du Morne, vendant du matériel de sports nautiques d'occasion, des accessoires et des souvenirs de la marque.",
     "filters": [
       "complexes-sportifs"
-    ]
+    ],
+    "hours": "Tous les jours 9h-17h"
   },
   {
     "id": "terry-s-kiteboarding-school",
@@ -33025,7 +33036,8 @@
     "description": "Salle de musculation et de force à Vacoas : haltères, machines et coaching.",
     "filters": [
       "gym-fitness"
-    ]
+    ],
+    "hours": "Lun-Ven 5h-21h30, Sam 5h-16h30, Dim 5h-11h30"
   },
   {
     "id": "peak-performance-gym",
@@ -33096,7 +33108,8 @@
     "description": "Salle de sport et de fitness : musculation, cardio et cours collectifs.",
     "filters": [
       "gym-fitness"
-    ]
+    ],
+    "hours": "Tous les jours 24h/24"
   },
   {
     "id": "harder-barbell-gym",
@@ -33115,7 +33128,8 @@
     "description": "Salle de musculation et de force à Curepipe : haltères, machines et coaching.",
     "filters": [
       "gym-fitness"
-    ]
+    ],
+    "hours": "Lun-Ven 8h-20h, fermé sam-dim"
   },
   {
     "id": "my-universe-gym-fitness",
@@ -33134,7 +33148,8 @@
     "description": "Salle de sport et de fitness à Quatre Bornes : musculation, cardio et cours collectifs.",
     "filters": [
       "gym-fitness"
-    ]
+    ],
+    "hours": "Tous les jours 6h-22h"
   },
   {
     "id": "the-gym-hub",
@@ -33153,7 +33168,8 @@
     "description": "Salle de sport et de fitness à Curepipe : musculation, cardio et cours collectifs.",
     "filters": [
       "gym-fitness"
-    ]
+    ],
+    "hours": "Tous les jours 24h/24"
   },
   {
     "id": "athletic-fitness-club",
@@ -33208,7 +33224,8 @@
     "description": "Salle de sport et de fitness à Rose Hill : musculation, cardio et cours collectifs.",
     "filters": [
       "gym-fitness"
-    ]
+    ],
+    "hours": "Lun-Ven 8h-21h, Sam 8h-15h, Dim 8h-12h30"
   },
   {
     "id": "gymbox-2018",
@@ -33339,7 +33356,8 @@
     "description": "Salle de sport et de fitness à Riche Terre : musculation, cardio et cours collectifs.",
     "filters": [
       "gym-fitness"
-    ]
+    ],
+    "hours": "Tous les jours 5h-22h"
   },
   {
     "id": "myfit-360-caudan",
@@ -33358,7 +33376,8 @@
     "description": "Salle de sport et de fitness à Port-Louis : musculation, cardio et cours collectifs.",
     "filters": [
       "gym-fitness"
-    ]
+    ],
+    "hours": "Tous les jours 5h-22h"
   },
   {
     "id": "personal-trainer",
@@ -33433,7 +33452,8 @@
     "description": "Salle de sport et de fitness à Triolet : musculation, cardio et cours collectifs.",
     "filters": [
       "gym-fitness"
-    ]
+    ],
+    "hours": "Lun-Ven 7h30-10h, 16h-20h30, Sam 7h30-9h, fermé dim"
   },
   {
     "id": "fitness-forever",
@@ -33488,7 +33508,8 @@
     "description": "Salle de sport et de fitness à Rivière du Rempart : musculation, cardio et cours collectifs.",
     "filters": [
       "gym-fitness"
-    ]
+    ],
+    "hours": "Lun-Ven 5h-21h30, Sam 5h30-20h, Dim 5h30-12h"
   },
   {
     "id": "space-fitness-albion",
@@ -33507,7 +33528,8 @@
     "description": "Salle de sport et de fitness à Albion : musculation, cardio et cours collectifs.",
     "filters": [
       "gym-fitness"
-    ]
+    ],
+    "hours": "Lun-Ven 6h-21h, Sam-Dim 7h-13h"
   },
   {
     "id": "health-and-fitness-gym",
@@ -33652,7 +33674,8 @@
     "description": "Salle de sport et de fitness : musculation, cardio et cours collectifs.",
     "filters": [
       "gym-fitness"
-    ]
+    ],
+    "hours": "Tous les jours 5h-22h"
   },
   {
     "id": "ultimate-muscle-gym",
@@ -33759,7 +33782,8 @@
     "description": "Complexe sportif national regroupant une salle principale aux normes olympiques (basketball, volleyball, judo, karaté), un centre aquatique avec piscine et un stade doté de terrains de football et de pistes d'athlétisme.",
     "filters": [
       "complexes-sportifs"
-    ]
+    ],
+    "hours": "Lun-Ven 5h30-21h, Sam 6h-13h, Dim 7h-13h"
   },
   {
     "id": "espace-sante-fitness-and-medical-center",
