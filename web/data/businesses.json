@@ -15324,7 +15324,8 @@
     "description": "Clinique privée du réseau C-Care à Mont Choisy, avec urgences 24h/24, bloc opératoire, service de radiologie (radio, échographie, scanner) et consultations pluridisciplinaires couvrant une trentaine de spécialités dont cardiologie, chirurgie générale, gynécologie-obstétrique, pédiatrie, dermatologie et orthopédie.",
     "filters": [
       "cliniques-privees"
-    ]
+    ],
+    "hours": "Lun-Ven 9h-18h, Sam 9h-14h, fermé dim"
   },
   {
     "id": "centre-medical-du-nord",
@@ -15343,7 +15344,8 @@
     "description": "Centre médical du groupe Clinique du Nord, ouvert 24h/24 avec ambulance médicalisée, laboratoire et service d'urgence, proposant notamment radiologie numérique, cardiologie, dermatologie et échographie.",
     "filters": [
       "cliniques-privees"
-    ]
+    ],
+    "hours": "Ouvert 24h/24, 7j/7"
   },
   {
     "id": "grand-bay-police-station",
@@ -19379,7 +19381,8 @@
     "description": "Clinique privée pluridisciplinaire du réseau Life Together à Cap Tamarin, offrant diagnostic (laboratoire, imagerie), médecine et chirurgie (orthopédie, chirurgie générale/digestive, urologie, gastro-entérologie, gynécologie, ORL, chirurgie esthétique), ainsi que rééducation (kinésithérapie, ostéopathie, orthophonie) et chirurgie ambulatoire.",
     "filters": [
       "cliniques-privees"
-    ]
+    ],
+    "hours": "Tous les jours 8h-20h"
   },
   {
     "id": "c-care-tamarin",
@@ -19398,7 +19401,8 @@
     "description": "Clinique privée du réseau C-Care à Cap Tamarin réunissant plus de 30 professionnels médicaux et paramédicaux, avec ambulance d'urgence et spécialités incluant cardiologie, dermatologie, diabétologie-endocrinologie, ORL, chirurgie générale/laparoscopique, neurologie, gynécologie-obstétrique, oncologie, orthopédie, pédiatrie/néonatologie, psychiatrie et radiologie.",
     "filters": [
       "cliniques-privees"
-    ]
+    ],
+    "hours": "Lun-Ven 7h-16h, Sam 7h-12h, fermé dim"
   },
   {
     "id": "flic-en-flac-community-health-centre",
@@ -25546,7 +25550,8 @@
     "description": "Établissement médical multi-spécialités de 70 lits à Phoenix, avec neurologie, gastro-entérologie, ORL, chirurgie générale, radiologie, laboratoire et urgences 24h/24.",
     "filters": [
       "cliniques-privees"
-    ]
+    ],
+    "hours": "Lun-Ven 7h-17h, Sam 7h-13h, fermé dim"
   },
   {
     "id": "stella-maris-clinic",
@@ -35503,7 +35508,8 @@
     "description": "Hôpital public régional de 150 lits, avec service d'urgences, hospitalisation, consultations spécialisées, imagerie, laboratoire, chirurgie et un centre dédié au diabète et à la santé vasculaire.",
     "filters": [
       "centres-sante-publics"
-    ]
+    ],
+    "hours": "Ouvert 24h/24, 7j/7"
   },
   {
     "id": "lamco-international-insurance-ltd",
