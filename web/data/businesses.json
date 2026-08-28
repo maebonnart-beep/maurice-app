@@ -39251,10 +39251,10 @@
     "themes": [
       "restaurants"
     ],
-    "hours": "Lun-Sam 09h-14h30 (boissons dès 9h, repas 12h-14h30), fermé dim",
-    "priceRange": "prix-moyen",
+    "hours": "Lun-Sam ouverture en journée pour les boissons, repas 12h-14h30, fermé dim",
+    "priceRange": "bon-marche",
     "zone": "nord",
-    "description": "Bistrot caché au coeur de la pépinière Endemika, ouvert uniquement le midi et fermé le dimanche — possible de venir prendre un verre dès 9h. Cuisine maison et plats du jour au tableau, terrasse ombragée parmi les palmiers, accueil chaleureux. Note de 4,6/5 sur 118 avis Google — une adresse familiale très appréciée dans le Nord pour son authenticité et son ambiance décontractée.",
+    "description": "Bistrot caché au coeur de la pépinière Endemika, ouvert uniquement le midi et fermé le dimanche — possible de venir prendre un verre en journée. Cuisine maison et plats du jour au tableau, terrasse ombragée parmi les palmiers, accueil chaleureux. Note de 4,6/5 sur 118 avis Google — une adresse familiale très appréciée dans le Nord pour son authenticité et son ambiance décontractée.",
     "badge": "selection",
     "photoUrl": "/photos/la-mandrinette.jpg",
     "photoUrls": [
@@ -39264,7 +39264,8 @@
     ],
     "koteMorisComment": "Gros coup de cœur ! 🌿 Un superbe cadre verdoyant et paisible au cœur d'Endemika, parfait en famille avec une aire de jeux en bois pour les enfants. Carte courte, produits extra frais et belle diversité : salades, burgers, plats mauriciens et plats du jour. J'ai adoré la salade thaï au porc effiloché, pleine de saveurs, d'herbes fraîches et de fleurs comestibles. Desserts maison délicieux et excellent rapport qualité-prix (≈450 Rs salades/burgers, 750 Rs plats du jour). Service attentionné et timing parfait. Une adresse à découvrir !",
     "filters": [
-      "mauricienne"
+      "mauricienne",
+      "europeenne"
     ]
   },
   {
