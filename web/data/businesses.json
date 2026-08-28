@@ -36871,6 +36871,21 @@
     ]
   },
   {
+    "id": "cart-in",
+    "name": "Cart'In",
+    "category": "vie-pratique",
+    "address": "",
+    "phone": "+230 5461 2299",
+    "website": "https://www.cart-in.mu/",
+    "description": "Application (et extension Chrome/Safari) de revendeur officiel Amazon à Maurice, opérée par Manoova Ltd. Permet de commander parmi les 500 millions de produits Amazon (dont Amazon.fr) depuis Maurice : Cart'In réceptionne le colis dans son entrepôt en France, gère l'expédition internationale, le dédouanement puis la livraison finale via Mauritius Post. Prix tout inclus (produit + transport + douane + TVA + livraison) affiché avant validation, paiement en roupies par carte, délai de 7 à 15 jours en Express. Pratique pour se faire livrer des commandes Amazon sans passer par un intermédiaire ou attendre un voyage.",
+    "themes": [
+      "poste-demarches"
+    ],
+    "filters": [
+      "poste"
+    ]
+  },
+  {
     "id": "crown-relocations",
     "name": "Crown Relocations",
     "category": "vie-pratique",
