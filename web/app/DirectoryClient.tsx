@@ -41,6 +41,7 @@ import { CategoryRow } from "@/components/ui/CategoryRow";
 import { BusinessCard } from "@/components/ui/BusinessCard";
 import { BusinessDetail } from "@/components/ui/BusinessDetail";
 import { useFavorites, type FavoriteStatus } from "@/lib/favorites";
+import { useSuggestions, findIntegratedMatch } from "@/lib/suggestions";
 import { COUP_DE_COEUR_COLOR } from "@/components/ui/Badge";
 import { FilterDropdown, type DropdownOption } from "@/components/ui/FilterDropdown";
 import { AddAddressForm } from "@/components/ui/AddAddressForm";
@@ -135,6 +136,13 @@ const Map = dynamic(() => import("./Map"), {
 
 export default function DirectoryClient({ businesses }: { businesses: Business[] }) {
   const { statuses: favoriteStatuses, getStatus, mergeStatuses } = useFavorites();
+  const { suggestions } = useSuggestions();
+  // Profil → Mes suggestions : pour chaque adresse proposée, détection best-effort
+  // (nom + catégorie) d'une fiche correspondante déjà intégrée à l'annuaire.
+  const suggestionsWithStatus = useMemo(
+    () => suggestions.map((s) => ({ ...s, integratedBusiness: findIntegratedMatch(s, businesses) })),
+    [suggestions, businesses]
+  );
   const favoriteBusinesses = useMemo(
     () => businesses.filter((b) => favoriteStatuses.get(b.id) === "favori"),
     [businesses, favoriteStatuses]
@@ -164,9 +172,27 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
       .map(([key, count]: [CategoryKey, number]) => ({ category: CATEGORY_MAP[key], count }));
   }, [favorisMapBusinesses]);
   const [shareFeedback, setShareFeedback] = useState<string | null>(null);
+  // Partage : panneau de choix des statuts à inclure (favoris / à tester / testé),
+  // ouvert au clic sur "Partager mes adresses" plutôt qu'un partage immédiat de tout.
+  const [sharePanelOpen, setSharePanelOpen] = useState(false);
+  const [shareStatuses, setShareStatuses] = useState<Set<FavoriteStatus>>(
+    () => new Set(["favori", "a-tester", "teste"])
+  );
+  const toggleShareStatus = useCallback((status: FavoriteStatus) => {
+    setShareStatuses((prev) => {
+      const next = new Set(prev);
+      if (next.has(status)) next.delete(status);
+      else next.add(status);
+      return next;
+    });
+  }, []);
+  const shareSelectionBusinesses = useMemo(
+    () => favorisMapBusinesses.filter((b) => shareStatuses.has(getStatus(b.id) as FavoriteStatus)),
+    [favorisMapBusinesses, shareStatuses, getStatus]
+  );
   const shareFavoris = useCallback(async () => {
-    const lines = favorisMapBusinesses.map((b) => `• ${b.name}`).join("\n");
-    const text = favorisMapBusinesses.length > 0
+    const lines = shareSelectionBusinesses.map((b) => `• ${b.name}`).join("\n");
+    const text = shareSelectionBusinesses.length > 0
       ? `Mes adresses Koté Moris 🇲🇺\n\n${lines}`
       : "Je n'ai pas encore d'adresses enregistrées sur Koté Moris.";
     try {
@@ -181,7 +207,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
       return;
     }
     setTimeout(() => setShareFeedback(null), 2500);
-  }, [favorisMapBusinesses]);
+  }, [shareSelectionBusinesses]);
 
   // Profil → sauvegarde des favoris : export/import d'un fichier JSON, seul
   // moyen de ne pas perdre ses favoris (localStorage uniquement, pas de compte).
@@ -1889,6 +1915,41 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                 </div>
               )}
 
+              {/* Mes suggestions : historique local des adresses proposées, avec
+                  détection best-effort (nom + catégorie) de leur intégration. */}
+              {suggestionsWithStatus.length > 0 && (
+                <div className="bg-surface border border-border rounded-2xl shadow-sm p-4">
+                  <p className="m-0 mb-3 text-[13px] font-bold text-ink">Mes suggestions</p>
+                  <div className="flex flex-col gap-3">
+                    {suggestionsWithStatus.map((s) => (
+                      <div key={s.id} className="flex items-center gap-2.5">
+                        <span className="flex-1 min-w-0">
+                          <span className="block text-[13px] text-ink truncate">{s.nom}</span>
+                          <span className="block text-[11px] text-muted">
+                            {new Date(s.submittedAt).toLocaleDateString("fr-FR", { day: "numeric", month: "short", year: "numeric" })}
+                          </span>
+                        </span>
+                        {s.integratedBusiness ? (
+                          <span
+                            className="shrink-0 inline-flex items-center gap-1 text-[11px] font-semibold rounded-full px-2.5 py-1"
+                            style={{ background: "color-mix(in srgb, #2e9e5b 12%, var(--surface))", color: "#2e9e5b" }}
+                          >
+                            <CheckCircle size={13} weight="fill" aria-hidden /> Intégrée
+                          </span>
+                        ) : (
+                          <span className="shrink-0 text-[11px] font-semibold text-muted rounded-full px-2.5 py-1" style={{ background: "var(--surface-2)" }}>
+                            En attente
+                          </span>
+                        )}
+                      </div>
+                    ))}
+                  </div>
+                  <p className="mt-3 mb-0 text-[11px] text-muted leading-snug">
+                    Détection automatique et approximative, basée sur le nom — en cas de doute, vérifiez dans l'annuaire.
+                  </p>
+                </div>
+              )}
+
               {/* Actions rapides. */}
               <div className="bg-surface border border-border rounded-2xl shadow-sm overflow-hidden">
                 <button
@@ -1906,14 +1967,56 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                   <span className="flex-1 text-[13.5px] text-ink">Suggérer une adresse</span>
                 </button>
                 <button
-                  onClick={shareFavoris}
+                  onClick={() => setSharePanelOpen((v) => !v)}
                   disabled={favorisMapBusinesses.length === 0}
+                  aria-expanded={sharePanelOpen}
                   className="w-full flex items-center gap-3 px-4 py-3.5 text-left active:bg-surface-2 transition-colors disabled:opacity-40 border-b border-border"
                 >
                   <Heart size={18} weight="regular" className="text-muted" aria-hidden />
                   <span className="flex-1 text-[13.5px] text-ink">Partager mes adresses</span>
                   {shareFeedback && <span className="text-[11.5px] font-semibold text-primary-deep">{shareFeedback}</span>}
                 </button>
+                {sharePanelOpen && (
+                  <div className="px-4 py-3.5 border-b border-border flex flex-col gap-3" style={{ background: "var(--surface-2)" }}>
+                    <p className="m-0 text-[12px] font-semibold text-muted">Quelles adresses partager ?</p>
+                    <div className="flex items-center gap-2 flex-wrap">
+                      {(
+                        [
+                          { status: "favori" as const, label: "Coups de cœur", color: COUP_DE_COEUR_COLOR, count: favoriteBusinesses.length },
+                          { status: "a-tester" as const, label: "À tester", color: "#f5a623", count: aTesterBusinesses.length },
+                          { status: "teste" as const, label: "Testé", color: "#2e9e5b", count: testeBusinesses.length },
+                        ]
+                      ).map(({ status, label, color, count }) => {
+                        const active = shareStatuses.has(status);
+                        return (
+                          <button
+                            key={status}
+                            type="button"
+                            onClick={() => toggleShareStatus(status)}
+                            disabled={count === 0}
+                            aria-pressed={active}
+                            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-pill text-[12.5px] font-bold active:scale-[.97] transition-transform disabled:opacity-40"
+                            style={
+                              active
+                                ? { background: `color-mix(in srgb, ${color} 15%, var(--surface))`, color, boxShadow: `inset 0 0 0 1.5px ${color}` }
+                                : { background: "var(--surface)", color: "var(--muted)" }
+                            }
+                          >
+                            {label} ({count})
+                          </button>
+                        );
+                      })}
+                    </div>
+                    <button
+                      onClick={shareFavoris}
+                      disabled={shareSelectionBusinesses.length === 0}
+                      className="w-full flex items-center justify-center gap-2 px-4 py-2.5 rounded-full text-[13px] font-bold text-white disabled:opacity-40 active:scale-[.98] transition-transform"
+                      style={{ background: "var(--primary)" }}
+                    >
+                      Partager ({shareSelectionBusinesses.length})
+                    </button>
+                  </div>
+                )}
                 <button
                   onClick={exportFavoris}
                   disabled={favorisMapBusinesses.length === 0}
