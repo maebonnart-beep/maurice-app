@@ -52106,5 +52106,24 @@
       "epiceries-fines"
     ],
     "hours": "Lun-Jeu 9h-19h, Ven-Sam 9h-20h, Dim et jours fériés 9h-15h"
+  },
+  {
+    "id": "printline-helvetia",
+    "name": "Printline",
+    "category": "acheter-equiper",
+    "address": "Les Promenades d'Helvetia, Moka",
+    "phone": "+230 5755 0163",
+    "website": "https://printline.mu",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Les%20Promenades%20d%27Helvetia%20Moka%20Mauritius",
+    "lat": -20.2244415,
+    "lng": 57.5254962,
+    "themes": [
+      "librairies-jeux-loisirs"
+    ],
+    "zone": "centre",
+    "description": "Solutions d'impression numérique personnalisée : étiquettes nominatives (lavables et non lavables) pour le scolaire, tampons pour tissus, autocollants réutilisables, articles cadeaux et fête.",
+    "filters": [
+      "livres"
+    ]
   }
 ]

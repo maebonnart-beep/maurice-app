@@ -20,7 +20,10 @@ export type SelectionIconKey =
   | "Mountains"
   | "Wind"
   | "TreePalm"
-  | "Sparkle";
+  | "Sparkle"
+  | "BookOpen"
+  | "Car"
+  | "Backpack";
 
 export type Selection = {
   id: string;
@@ -438,6 +441,65 @@ export const SELECTIONS: Selection[] = [
       "blue-marlin-paradis-le-morne",
       "ile-aux-aigrettes",
       "plage-blue-bay",
+    ],
+  },
+  {
+    id: "coin-des-lecteurs",
+    emoji: "📚",
+    title: "Le coin des lecteurs",
+    tagline: "Les meilleures adresses de librairies et bibliothèques",
+    group: "envies",
+    icon: "BookOpen",
+    photoUrl: "https://images.pexels.com/photos/256374/pexels-photo-256374.jpeg?auto=compress&cs=tinysrgb&w=800",
+    photoCredit: "Pixabay / Pexels",
+    businessIds: [
+      "bookcourt-la-croisette-grand-baie",
+      "whimzical-books-grand-baie",
+      "librairie-le-cygne-rose-hill",
+      "librairie-des-mascareignes-rose-hill",
+      "editions-le-printemps-vacoas",
+      "national-library-mauritius",
+      "bibliotheque-carnegie-curepipe",
+      "mediatheque-institut-francais-maurice",
+    ],
+  },
+  {
+    id: "je-cherche-un-taxi",
+    emoji: "🚕",
+    title: "Je cherche un taxi",
+    tagline: "Applis et taxis reconnus pour se déplacer sereinement",
+    group: "besoins",
+    icon: "Car",
+    photoUrl: "https://images.pexels.com/photos/19931918/pexels-photo-19931918.jpeg?auto=compress&cs=tinysrgb&w=800",
+    photoCredit: "João Saplak / Pexels",
+    businessIds: [
+      "uber-maurice",
+      "mokabb",
+      "yugo",
+      "dodogo",
+      "motaxi",
+      "ala-lila",
+      "taxi-guide-mauritius",
+    ],
+  },
+  {
+    id: "cest-la-rentree",
+    emoji: "🎒",
+    title: "C'est la rentrée",
+    tagline: "Cartables, uniformes, fournitures et livres scolaires",
+    group: "besoins",
+    icon: "Backpack",
+    photoUrl: "https://images.pexels.com/photos/28503359/pexels-photo-28503359.jpeg?auto=compress&cs=tinysrgb&w=800",
+    photoCredit: "The Design Lady / Pexels",
+    businessIds: [
+      "printline-helvetia",
+      "low-price-uniform",
+      "bureau-vallee-papeterie-grand-baie",
+      "le-point-stationery-port-louis",
+      "editions-le-printemps-curepipe",
+      "editions-le-printemps-vacoas",
+      "librairie-le-cygne-rose-hill",
+      "librairie-le-printemps-port-louis",
     ],
   },
   {

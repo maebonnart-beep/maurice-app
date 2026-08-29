@@ -31,6 +31,9 @@ const SELECTION_ICONS: Record<SelectionIconKey, Icon> = {
   Wind,
   TreePalm,
   Sparkle,
+  BookOpen,
+  Car,
+  Backpack,
 };
 import { Logo } from "@/components/ui/Logo";
 import { SearchInput } from "@/components/ui/SearchInput";
@@ -73,6 +76,9 @@ import {
   Sparkle,
   DownloadSimple,
   UploadSimple,
+  BookOpen,
+  Car,
+  Backpack,
 } from "@phosphor-icons/react";
 import type { Icon } from "@phosphor-icons/react";
 
