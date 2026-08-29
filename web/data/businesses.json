@@ -52125,5 +52125,37 @@
     "filters": [
       "livres"
     ]
+  },
+  {
+    "id": "fabevents-fabrice-tchibault",
+    "name": "Fabevents - Fabrice Tchibault",
+    "category": "manger-boire",
+    "address": "Service à domicile, Île Maurice",
+    "phone": "+230 5813 7502",
+    "website": "",
+    "googleMapsUrl": "",
+    "themes": [
+      "tables-hotes-chefs-domicile"
+    ],
+    "description": "Chef à domicile.",
+    "filters": [
+      "chefs-domicile"
+    ]
+  },
+  {
+    "id": "gregory-riso-traiteur",
+    "name": "Gregory Riso Traiteur",
+    "category": "manger-boire",
+    "address": "Service à domicile, Île Maurice",
+    "phone": "+33 7 86 62 62 70",
+    "website": "",
+    "googleMapsUrl": "",
+    "themes": [
+      "tables-hotes-chefs-domicile"
+    ],
+    "description": "Chef à domicile / traiteur.",
+    "filters": [
+      "chefs-domicile"
+    ]
   }
 ]
