@@ -52032,5 +52032,34 @@
       "grandes-surfaces"
     ],
     "promoText": "Sélection de produits sans pesticide ni hormones. Livraison possible."
+  },
+  {
+    "id": "deux-mamelles-la-laura",
+    "name": "Deux Mamelles (La Laura)",
+    "category": "faire-du-sport",
+    "address": "Départ La Laura-Malenga, Moka",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Deux%20Mamelles%20La%20Laura%20hiking%20Mauritius",
+    "lat": -20.1719,
+    "lng": 57.5461,
+    "themes": [
+      "randonnee-trail"
+    ],
+    "duration": "2h30 (voie classique, aller-retour) ; ~1h aller-retour pour le second sommet",
+    "distance": "3,7 km",
+    "elevationGain": "260 m D+",
+    "difficultyLevel": "confirme",
+    "guideRecommended": true,
+    "zone": "centre",
+    "description": "Deux pics rocheux dominant les champs de canne, de difficultés très différentes : le sommet de droite via un sentier peu entretenu mais accessible à beaucoup, celui de gauche réservé aux randonneurs habitués des traces peu marquées. Aucune liaison entre les deux sommets, montée finale très pentue à travers les goyaviers, panorama sur le massif du Pieter Both et la campagne environnante. Sentier balisé.",
+    "koteMorisComment": "Testée avec une enfant de 7 ans : une balade très accessible, avec quelques portions en sentier single et de beaux points de vue sur le Pieter Both et la plaine. L'ascension d'une ou des deux mamelles reste possible pour les plus motivés, mais à faire sur son propre jugement. Sentier balisé. Glissant par temps de pluie, mais reste praticable grâce à de nombreuses portions à l'abri des arbres.",
+    "photoUrl": "/photos/deux-mamelles-la-laura.jpg",
+    "photoUrls": [
+      "/photos/deux-mamelles-la-laura.jpg",
+      "/photos/deux-mamelles-la-laura-2.jpg",
+      "/photos/deux-mamelles-la-laura-3.jpg",
+      "/photos/deux-mamelles-la-laura-4.jpg"
+    ]
   }
 ]
