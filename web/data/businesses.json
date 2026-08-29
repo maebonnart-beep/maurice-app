@@ -52061,5 +52061,49 @@
       "/photos/deux-mamelles-la-laura-3.jpg",
       "/photos/deux-mamelles-la-laura-4.jpg"
     ]
+  },
+  {
+    "id": "pains-et-moulins-mahogany",
+    "name": "Pains et Moulins - Mahogany",
+    "category": "manger-boire",
+    "address": "Mahogany Shopping Promenade, Beau Plan, Pamplemousses",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Pains%20et%20Moulins%20Mahogany%20Shopping%20Promenade%20Mauritius",
+    "lat": -20.099693,
+    "lng": 57.5767875,
+    "themes": [
+      "commerces-alimentaires",
+      "boulangeries-patisseries",
+      "produits-francais"
+    ],
+    "zone": "nord",
+    "description": "Boulangerie-pâtisserie de tradition française, pain au levain naturel, viennoiseries au beurre de Normandie, millefeuilles, macarons, gâteaux sur commande. Point de vente de la chaîne Pains et Moulins au Mahogany Shopping Promenade.",
+    "filters": [
+      "produits-francais",
+      "boulangeries"
+    ],
+    "koteMorisComment": "Coup de cœur pour le pain complet et les parts de flan."
+  },
+  {
+    "id": "votre-pote-age-mahogany",
+    "name": "Votre Pôte Agé - Mahogany",
+    "category": "manger-boire",
+    "address": "Mahogany Shopping Promenade, Beau Plan, Pamplemousses",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Votre%20Pote%20Age%20Mahogany%20Shopping%20Promenade%20Mauritius",
+    "lat": -20.099693,
+    "lng": 57.5767875,
+    "themes": [
+      "commerces-alimentaires",
+      "epiceries-fines",
+      "livraisons"
+    ],
+    "zone": "nord",
+    "description": "Chaîne mauricienne de primeurs haut de gamme fondée en 2013, membre du groupe A. Chinatamby, spécialisée dans les fruits et légumes frais (locaux et importés), la viande de qualité et l'épicerie du quotidien.",
+    "filters": [
+      "epiceries-fines"
+    ]
   }
 ]
