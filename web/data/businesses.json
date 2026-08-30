@@ -3328,6 +3328,14 @@
     "difficultyLevel": "habitue",
     "guideRecommended": true,
     "zone": "centre",
+    "photoUrl": "/photos/le-pouce-mountain.jpg",
+    "photoUrls": [
+      "/photos/le-pouce-mountain.jpg",
+      "/photos/le-pouce-mountain-2.jpg",
+      "/photos/le-pouce-mountain-3.jpg",
+      "/photos/le-pouce-mountain-4.jpg",
+      "/photos/le-pouce-mountain-5.jpg"
+    ],
     "description": "Ascension gratifiante vers le sommet du Pouce (812 m), 3ᵉ plus haut sommet de l'île, surnommé « The Thumb » pour son pinacle rocheux caractéristique. Depuis Petit Verger, le sentier balisé traverse cannes à sucre et forêt avant de déboucher sur des pentes herbeuses ; l'approche finale, raide et physique sur roche volcanique, nécessite de bonnes chaussures et l'usage des mains. Vue à 360° sur Port-Louis, la chaîne de Moka et les îles du nord comme Coin de Mire ; attention à la boue glissante après la pluie, fréquente sur l'île.",
     "koteMorisComment": "Superbe balade, une rando bien balisée avec un aller-retour par le même chemin (100% montée puis 100% descente). Le final est un peu délicat, sur terrain glissant (surtout en hiver), mais la vue est splendide sur Port-Louis et ses environs, avec l'océan à 360°. Possible avec des enfants à partir de 8-10 ans, sportifs. Pas besoin de guide, mais la montée est assez soutenue : mieux vaut avoir une bonne condition physique, même si le sentier reste largement accessible."
   },
@@ -3371,6 +3379,47 @@
     "difficultyLevel": "habitue",
     "zone": "centre",
     "description": "Montée soutenue vers le rocher perché emblématique de Beau Bassin-Rose Hill, panorama à 360° sur la côte ouest, les plaines centrales et Pieter Both."
+  },
+  {
+    "id": "foret-de-macchabee",
+    "name": "Forêt de Macchabée",
+    "category": "faire-du-sport",
+    "address": "Départ Pétrin, Parc national des Gorges de Rivière Noire",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Macchabee%20Forest%20trail%20Black%20River%20Gorges%20Mauritius",
+    "lat": -20.4067,
+    "lng": 57.4589,
+    "themes": [
+      "randonnee-trail"
+    ],
+    "duration": "2h-3h",
+    "difficultyLevel": "habitue",
+    "guideRecommended": false,
+    "zone": "ouest",
+    "description": "Sentier à travers l'un des derniers vestiges de forêt tropicale indigène de l'île, au cœur du parc national des Gorges de Rivière Noire. Terrain accessible et dénivelé modéré, loin des ascensions techniques du massif du Pieter Both. Espèces endémiques rares (paille-en-queue, perroquet mauricien/écho) ; le nom rappelle l'histoire des esclaves fugitifs réfugiés dans ces hauteurs."
+  },
+  {
+    "id": "cap-malheureux-grand-gaube",
+    "name": "Balade côtière Cap Malheureux - Grand Gaube",
+    "category": "faire-du-sport",
+    "address": "Départ église Cap Malheureux",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Cap%20Malheureux%20to%20Grand%20Gaube%20coastal%20walk%20Mauritius",
+    "lat": -19.9856,
+    "lng": 57.6136,
+    "themes": [
+      "randonnee-trail",
+      "kids-friendly"
+    ],
+    "duration": "3h30",
+    "distance": "12 km",
+    "elevationGain": "10 m D+",
+    "difficultyLevel": "debutant",
+    "guideRecommended": false,
+    "zone": "nord",
+    "description": "Chemin côtier sans dénivelé notable, en longeant la plage entre Cap Malheureux et Grand Gaube, entre petits villages de pêcheurs, cocotiers et plages peu fréquentées, plus sauvage que les stations balnéaires voisines. Départ depuis l'église rouge de Cap Malheureux, avec vue par temps clair sur les îlots environnants (île aux Bernaches, île Plate) ; un petit temple hindou en bord de mer et de belles petites anses pour la baignade jalonnent le parcours. Balade accessible en famille, à faire à son rythme."
   },
   {
     "id": "tamarin-sept-cascades",
@@ -5270,7 +5319,8 @@
     "lat": -20.1071182,
     "lng": 57.5797049,
     "themes": [
-      "plages-nature"
+      "plages-nature",
+      "kids-friendly"
     ],
     "hours": "Tous les jours 8h30-17h30",
     "priceRange": "bon-marche",
@@ -24357,7 +24407,8 @@
     "lat": -20.5241419,
     "lng": 57.5367402,
     "themes": [
-      "excursions-sorties"
+      "excursions-sorties",
+      "kids-friendly"
     ],
     "zone": "sud"
   },
@@ -52373,5 +52424,20 @@
     "zone": "centre",
     "eventRecurrence": "ponctuel",
     "eventStartDate": "2027-02-21"
+  },
+  {
+    "id": "mauritius-ocean-week-evt",
+    "name": "Mauritius Ocean Week",
+    "category": "agenda",
+    "address": "Les Docks, Port-Louis (+ sites annexes)",
+    "phone": "",
+    "website": "",
+    "themes": [
+      "evenements-associatifs"
+    ],
+    "description": "Semaine de sensibilisation à l'économie bleue et à la santé des océans, organisée par le Ministère de l'Agro-Industrie, de la Sécurité alimentaire, de l'Économie bleue et des Pêches : Assises de l'Océan et journées portes ouvertes accessibles au public (visites à bord du MV Mauritius Trochetia, Albion Fisheries Research Centre, Mauritius Oceanography Institute).",
+    "period": "Début mai",
+    "zone": "centre",
+    "eventRecurrence": "annuel-variable"
   }
 ]
