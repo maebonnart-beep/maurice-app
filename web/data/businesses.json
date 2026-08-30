@@ -52187,5 +52187,78 @@
     "period": "Mi-septembre",
     "zone": "ouest",
     "eventRecurrence": "annuel-variable"
+  },
+  {
+    "id": "afrasia-bank-mauritius-open-evt",
+    "name": "AfrAsia Bank Mauritius Open",
+    "category": "agenda",
+    "address": "Heritage La Réserve Golf Links, Bel Ombre",
+    "phone": "",
+    "website": "",
+    "themes": [
+      "evenements-sportifs"
+    ],
+    "description": "Tournoi de golf professionnel du DP World Tour, dernière étape de la saison, réunissant des joueurs internationaux à Bel Ombre.",
+    "period": "Décembre",
+    "zone": "sud",
+    "eventRecurrence": "annuel-variable"
+  },
+  {
+    "id": "chinatown-food-cultural-festival-evt",
+    "name": "Chinatown Food & Cultural Festival",
+    "category": "agenda",
+    "address": "Chinatown, Port-Louis",
+    "phone": "",
+    "website": "",
+    "themes": [
+      "evenements-culturels"
+    ],
+    "description": "Festival dédié à la cuisine et à la culture chinoises : spécialités culinaires, spectacles et animations dans le quartier chinois de Port-Louis.",
+    "period": "Fin octobre",
+    "zone": "centre",
+    "eventRecurrence": "annuel-variable"
+  },
+  {
+    "id": "holi-fete-des-couleurs-evt",
+    "name": "Holi (Fête des couleurs)",
+    "category": "agenda",
+    "address": "Toute l'île",
+    "phone": "",
+    "website": "",
+    "themes": [
+      "evenements-culturels"
+    ],
+    "description": "Fête hindoue du printemps et de la victoire du bien sur le mal : poudres colorées, musique, danse et partage, célébrée surtout à Port-Louis, Quatre Bornes et Phoenix.",
+    "period": "Février/mars",
+    "eventRecurrence": "annuel-variable"
+  },
+  {
+    "id": "dragon-boat-festival-evt",
+    "name": "Dragon Boat Festival",
+    "category": "agenda",
+    "address": "Caudan Waterfront, Port-Louis",
+    "phone": "",
+    "website": "",
+    "themes": [
+      "evenements-sportifs"
+    ],
+    "description": "Compétition de bateaux-dragons célébrant la culture chinoise, avec animations et stands gourmands au Caudan Waterfront.",
+    "period": "Fin mai",
+    "zone": "centre",
+    "eventRecurrence": "annuel-variable"
+  },
+  {
+    "id": "eid-ul-fitr-evt",
+    "name": "Eid-Ul-Fitr",
+    "category": "agenda",
+    "address": "Toute l'île",
+    "phone": "",
+    "website": "",
+    "themes": [
+      "evenements-culturels"
+    ],
+    "description": "Fête musulmane marquant la fin du Ramadan : prières, festins et dons, célébrée dans toute l'île.",
+    "period": "Date variable (fin du Ramadan, calendrier musulman)",
+    "eventRecurrence": "annuel-variable"
   }
 ]
