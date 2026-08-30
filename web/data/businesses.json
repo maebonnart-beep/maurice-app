@@ -3258,7 +3258,8 @@
     "lat": -20.4372,
     "lng": 57.3819,
     "themes": [
-      "randonnee-trail"
+      "randonnee-trail",
+      "kids-friendly"
     ],
     "hours": "Tous les jours 8h30-17h30 (17h en hiver)",
     "duration": "~3h (cascade) ; ~1h (terres des 7 couleurs)",
@@ -3391,7 +3392,8 @@
     "lat": -20.4067,
     "lng": 57.4589,
     "themes": [
-      "randonnee-trail"
+      "randonnee-trail",
+      "kids-friendly"
     ],
     "duration": "2h-3h",
     "difficultyLevel": "habitue",
@@ -3571,7 +3573,8 @@
     "lat": -20.2144,
     "lng": 57.6425,
     "themes": [
-      "randonnee-trail"
+      "randonnee-trail",
+      "kids-friendly"
     ],
     "duration": "1h-3h selon circuit (jusqu'à 8km)",
     "difficultyLevel": "debutant",
@@ -12647,7 +12650,8 @@
     "description": "Société de randonnée/trekking à Rivière Noire : Gorges de Rivière Noire, 7 Cascades, trail running, kayak dauphins",
     "duration": "Randonnée ~3-4h ; kayak ~2h30",
     "entryPrice": "~50€/pers (rando) ; ~45€/pers (kayak dauphins)",
-    "zone": "ouest"
+    "zone": "ouest",
+    "isAgency": true
   },
   {
     "id": "cascade-500-pieds",
@@ -12727,7 +12731,8 @@
     "lat": -20.433764,
     "lng": 57.4577934,
     "themes": [
-      "plages-nature"
+      "plages-nature",
+      "kids-friendly"
     ],
     "zone": "centre",
     "duration": "1h30",
@@ -12750,7 +12755,8 @@
     "lat": -20.433764,
     "lng": 57.4577934,
     "themes": [
-      "randonnee-trail"
+      "randonnee-trail",
+      "kids-friendly"
     ],
     "zone": "centre",
     "duration": "1h30",
@@ -20987,7 +20993,8 @@
     "lat": -20.3772308,
     "lng": 57.4851069,
     "themes": [
-      "randonnee-trail"
+      "randonnee-trail",
+      "kids-friendly"
     ],
     "zone": "centre",
     "description": "Arboretum et sentier forestier de 10 hectares au cœur de l'île, avec musée d'outils forestiers d'époque et serre de fougères ; boucle Ébène de 3 km parmi essences endémiques, oiseaux et singes.",
@@ -36994,7 +37001,8 @@
     "lat": -20.3403,
     "lng": 57.4858,
     "themes": [
-      "randonnee-trail"
+      "randonnee-trail",
+      "kids-friendly"
     ],
     "duration": "~2h",
     "distance": "2,3 km",
@@ -49977,7 +49985,8 @@
     "lat": -20.480442,
     "lng": 57.6693878,
     "themes": [
-      "randonnee-trail"
+      "randonnee-trail",
+      "kids-friendly"
     ],
     "zone": "sud",
     "distance": "2 km (piste)",
@@ -49990,7 +49999,8 @@
     "category": "faire-du-sport",
     "address": "Petit Raffray, Rivière du Rempart",
     "themes": [
-      "randonnee-trail"
+      "randonnee-trail",
+      "kids-friendly"
     ],
     "zone": "nord",
     "description": "Espace boisé de plus de 108 hectares abritant le seul sentier nature officiellement balisé du nord de l'île, avec les vestiges de l'ancienne sucrerie Belle Vue Robillard. Sentiers ombragés, espaces pique-nique, prisé des joggeurs."
@@ -52102,8 +52112,6 @@
     "duration": "2h30 (voie classique, aller-retour) ; ~1h aller-retour pour le second sommet",
     "distance": "3,7 km",
     "elevationGain": "260 m D+",
-    "difficultyLevel": "confirme",
-    "guideRecommended": true,
     "zone": "centre",
     "description": "Deux pics rocheux dominant les champs de canne, de difficultés très différentes : le sommet de droite via un sentier peu entretenu mais accessible à beaucoup, celui de gauche réservé aux randonneurs habitués des traces peu marquées. Aucune liaison entre les deux sommets, montée finale très pentue à travers les goyaviers, panorama sur le massif du Pieter Both et la campagne environnante. Sentier balisé.",
     "koteMorisComment": "Testée avec une enfant de 7 ans : une balade très accessible, avec quelques portions en sentier single et de beaux points de vue sur le Pieter Both et la plaine. L'ascension d'une ou des deux mamelles reste possible pour les plus motivés, mais à faire sur son propre jugement. Sentier balisé. Glissant par temps de pluie, mais reste praticable grâce à de nombreuses portions à l'abri des arbres.",

@@ -3,7 +3,7 @@
 import type { Business } from "@/lib/types";
 import { SUBCATEGORIES, PRICE_RANGES, CATEGORY_MAP, FILTER_GROUPS } from "@/data/categories";
 import { displayName, displayCity } from "@/lib/format";
-import { accentColorFor, SpecialBadge } from "./Badge";
+import { accentColorFor, SpecialBadge, AGENCY_COLOR } from "./Badge";
 import { FavoriteButton } from "./FavoriteButton";
 import { FACT_ICONS, CONTACT_ICONS, iconForKey, subIconFor } from "@/lib/icons";
 import type { Icon } from "@phosphor-icons/react";
@@ -133,19 +133,29 @@ export function BusinessCard({
             {displayName(b.name)}
           </h3>
         </div>
-        {rubrique && (
-          <p className="m-0 mt-0.5">
-            <span
-              className="inline-flex items-center gap-1 text-[11px] font-bold px-1.5 py-0.5 rounded-pill"
-              style={{ background: `color-mix(in srgb, ${categoryColor} 15%, var(--surface))`, color: categoryColor }}
-            >
-              {RubriqueIcon ? (
-                <RubriqueIcon size={11} weight="bold" aria-hidden />
-              ) : (
-                <span aria-hidden>{rubrique.emoji}</span>
-              )}
-              {rubrique.label}
-            </span>
+        {(rubrique || b.isAgency) && (
+          <p className="m-0 mt-0.5 flex items-center gap-1.5 flex-wrap">
+            {rubrique && (
+              <span
+                className="inline-flex items-center gap-1 text-[11px] font-bold px-1.5 py-0.5 rounded-pill"
+                style={{ background: `color-mix(in srgb, ${categoryColor} 15%, var(--surface))`, color: categoryColor }}
+              >
+                {RubriqueIcon ? (
+                  <RubriqueIcon size={11} weight="bold" aria-hidden />
+                ) : (
+                  <span aria-hidden>{rubrique.emoji}</span>
+                )}
+                {rubrique.label}
+              </span>
+            )}
+            {b.isAgency && (
+              <span
+                className="inline-flex items-center gap-1 text-[11px] font-bold px-1.5 py-0.5 rounded-pill text-white"
+                style={{ background: AGENCY_COLOR }}
+              >
+                🏢 Agence
+              </span>
+            )}
           </p>
         )}
         <p className="m-0 text-muted text-[12.5px] leading-[1.4] flex items-center gap-1 mt-0.5">
