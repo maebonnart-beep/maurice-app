@@ -50169,12 +50169,12 @@
   {
     "id": "william-watt-magicien",
     "name": "William Watt",
-    "category": "agenda",
+    "category": "famille-travail",
     "address": "Île Maurice (prestations à domicile/hôtels)",
     "phone": "+230 5944 8201",
     "website": "https://www.willwatt.com/",
     "themes": [
-      "evenements-culturels"
+      "centres-loisirs-animations"
     ],
     "zone": "nord",
     "description": "Magicien mentaliste professionnel, résident dans des hôtels 5 étoiles, pour animer soirées et événements privés."
@@ -50182,11 +50182,11 @@
   {
     "id": "krishan-dosieah-magicien",
     "name": "Krishan Dosieah",
-    "category": "agenda",
+    "category": "famille-travail",
     "address": "Île Maurice (prestations mobiles)",
     "phone": "+230 5781 9288",
     "themes": [
-      "evenements-culturels"
+      "centres-loisirs-animations"
     ],
     "zone": "nord",
     "description": "Magicien et illusionniste (\"Krish le magicien\") pour animer soirées et événements privés."

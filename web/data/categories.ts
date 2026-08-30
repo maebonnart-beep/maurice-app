@@ -92,6 +92,7 @@ export const SUBCATEGORIES: Partial<Record<CategoryKey, Subcategory[]>> = {
   ],
   "agenda": [
     { key: "evenements-culturels", label: "Événements culturels", emoji: "🎭" },
+    { key: "evenements-associatifs", label: "Événements associatifs", emoji: "🤝" },
     { key: "evenements-sportifs", label: "Événements sportifs", emoji: "🏆" },
   ],
 };
