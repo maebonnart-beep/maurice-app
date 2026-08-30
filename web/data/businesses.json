@@ -3328,7 +3328,8 @@
     "difficultyLevel": "habitue",
     "guideRecommended": true,
     "zone": "centre",
-    "description": "Départ de Petit Verger, sentier balisé à travers cannes à sucre et forêt avant une montée rocailleuse vers le sommet du Pouce, 3ᵉ plus haut sommet de l'île. Vue à 360° sur Port-Louis et la chaîne de Moka."
+    "description": "Ascension gratifiante vers le sommet du Pouce (812 m), 3ᵉ plus haut sommet de l'île, surnommé « The Thumb » pour son pinacle rocheux caractéristique. Depuis Petit Verger, le sentier balisé traverse cannes à sucre et forêt avant de déboucher sur des pentes herbeuses ; l'approche finale, raide et physique sur roche volcanique, nécessite de bonnes chaussures et l'usage des mains. Vue à 360° sur Port-Louis, la chaîne de Moka et les îles du nord comme Coin de Mire ; attention à la boue glissante après la pluie, fréquente sur l'île.",
+    "koteMorisComment": "Superbe balade, une rando bien balisée avec un aller-retour par le même chemin (100% montée puis 100% descente). Le final est un peu délicat, sur terrain glissant (surtout en hiver), mais la vue est splendide sur Port-Louis et ses environs, avec l'océan à 360°. Possible avec des enfants à partir de 8-10 ans, sportifs. Pas besoin de guide, mais la montée est assez soutenue : mieux vaut avoir une bonne condition physique, même si le sentier reste largement accessible."
   },
   {
     "id": "trois-mamelles",
@@ -27047,7 +27048,7 @@
     "zone": "est",
     "distance": "5,3 km",
     "elevationGain": "76 m D+",
-    "description": "Boucle ombragée dans une forêt de mahogany et de vergers, passant par les ruines d'une ancienne usine sucrière (Puits Français) et le lac Mare Sarcelle ; oiseaux tropicaux et singes macaques fréquents."
+    "description": "Boucle ombragée dans une forêt de mahogany et de vergers (sentier du Coq de Bois), passant par les ruines d'une ancienne usine sucrière (Puits Français) et le lac Mare Sarcelle ; oiseaux tropicaux et singes macaques fréquents. Sentier bien balisé et peu accidenté, mais en grande partie sur roches volcaniques instables : de bonnes chaussures sont recommandées. Quelques chiens errants signalés dans les bois."
   },
   {
     "id": "calypso-excursion-mauritius",
