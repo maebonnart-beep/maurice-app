@@ -508,6 +508,18 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
     [businesses]
   );
 
+  // Accueil → « Événements à venir » : uniquement les fiches agenda avec une
+  // date de début confirmée et future (les événements récurrents sans date
+  // exacte, ex. Divali, n'ont pas leur place dans un teaser chronologique).
+  const upcomingEvents = useMemo(() => {
+    const now = Date.now();
+    return businesses
+      .filter((b) => b.category === "agenda" && b.eventStartDate)
+      .filter((b) => new Date(b.eventStartDate + "T23:59:59").getTime() >= now)
+      .sort(compareByEventDate)
+      .slice(0, 5);
+  }, [businesses]);
+
   const themeCounts = useMemo(() => {
     const c: Record<string, number> = {};
     if (!subcategories) return c;
@@ -1306,6 +1318,44 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                   );
                 })}
               </div>
+
+              {upcomingEvents.length > 0 && (
+                <>
+                  <div className="flex items-center justify-between mt-7 mb-2.5">
+                    <h2 className="text-[16px] font-bold text-ink">Événements à venir</h2>
+                    <button
+                      onClick={() => { selectCategory("agenda"); window.scrollTo({ top: 0, behavior: "smooth" }); }}
+                      className="text-[13px] font-semibold text-primary-deep active:scale-[.98]"
+                    >
+                      Voir tout ›
+                    </button>
+                  </div>
+                  <div className="flex gap-3 overflow-x-auto pb-1 -mx-4 px-4 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+                    {upcomingEvents.map((b) => {
+                      const rubrique = (b.themes || [])[0];
+                      const emoji = rubrique ? RUBRIQUE_MAP[rubrique]?.emoji ?? "🎉" : "🎉";
+                      return (
+                        <button
+                          key={b.id}
+                          onClick={() => { selectCategory("agenda"); window.scrollTo({ top: 0, behavior: "smooth" }); }}
+                          className="relative text-left shrink-0 w-[150px] rounded-2xl overflow-hidden p-3 shadow-card active:scale-[.98] transition-transform"
+                          style={{ background: "linear-gradient(135deg, color-mix(in srgb, var(--accent) 20%, var(--surface)) 0%, var(--surface) 75%)", border: "1px solid var(--border)" }}
+                        >
+                          <span className="text-[26px] leading-none">{emoji}</span>
+                          <p className="mt-2 text-[13px] font-bold text-ink leading-tight line-clamp-2">{b.name}</p>
+                          <p className="mt-1 text-[11.5px] text-muted truncate">{b.period}</p>
+                          <span
+                            className="mt-2 inline-flex items-center gap-0.5 px-1.5 py-0.5 rounded-pill text-[9.5px] font-bold text-on-accent"
+                            style={{ background: "var(--accent)" }}
+                          >
+                            🔒 Premium
+                          </span>
+                        </button>
+                      );
+                    })}
+                  </div>
+                </>
+              )}
 
               {coupsDeCoeur.length > 0 && (
                 <>
