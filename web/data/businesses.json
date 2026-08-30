@@ -52447,5 +52447,50 @@
     "period": "Début mai",
     "zone": "centre",
     "eventRecurrence": "annuel-variable"
+  },
+  {
+    "id": "c-kite-festival-evt",
+    "name": "C Kite Festival",
+    "category": "agenda",
+    "address": "C Mauritius Palmar, côte est",
+    "phone": "",
+    "website": "",
+    "themes": [
+      "evenements-sportifs"
+    ],
+    "description": "Festival international de kitesurf réunissant des champions du monde (Big Air, freestyle) pour plusieurs jours de compétitions et démonstrations à C Mauritius Palmar.",
+    "period": "Fin juin",
+    "zone": "est",
+    "eventRecurrence": "annuel-variable"
+  },
+  {
+    "id": "colin-mayer-tour-evt",
+    "name": "Colin Mayer Tour",
+    "category": "agenda",
+    "address": "Ferney, Grand Port",
+    "phone": "",
+    "website": "",
+    "themes": [
+      "evenements-sportifs"
+    ],
+    "description": "Course de VTT familiale sur 3 jours et 3 étapes à travers des parcours pittoresques, avec catégories équipes, solo (vélo électrique) et épreuves jeunesse.",
+    "period": "Mi-octobre",
+    "zone": "sud",
+    "eventRecurrence": "annuel-variable"
+  },
+  {
+    "id": "nandos-open-water-swim-evt",
+    "name": "Nando's Open Water Swim",
+    "category": "agenda",
+    "address": "Pereybère → Grand Baie",
+    "phone": "",
+    "website": "",
+    "themes": [
+      "evenements-sportifs"
+    ],
+    "description": "Plus grand festival de nage en eau libre de Maurice, au départ de Pereybère jusqu'à la plage publique de Grand Baie. Les profits sont reversés à la Royal Life Saving Society.",
+    "period": "Fin avril",
+    "zone": "nord",
+    "eventRecurrence": "annuel-variable"
   }
 ]
