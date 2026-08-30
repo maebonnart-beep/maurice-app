@@ -42,6 +42,7 @@ import { CategoryRow } from "@/components/ui/CategoryRow";
 import { BusinessCard } from "@/components/ui/BusinessCard";
 import { BusinessDetail } from "@/components/ui/BusinessDetail";
 import { useFavorites, type FavoriteStatus } from "@/lib/favorites";
+import { useFavoriteSelections } from "@/lib/favoriteSelections";
 import { useSuggestions, findIntegratedMatch } from "@/lib/suggestions";
 import { COUP_DE_COEUR_COLOR } from "@/components/ui/Badge";
 import { FilterDropdown, type DropdownOption } from "@/components/ui/FilterDropdown";
@@ -138,6 +139,7 @@ const Map = dynamic(() => import("./Map"), {
 
 export default function DirectoryClient({ businesses }: { businesses: Business[] }) {
   const { statuses: favoriteStatuses, getStatus, mergeStatuses } = useFavorites();
+  const { favoriteSelectionIds, isFavoriteSelection, toggleFavoriteSelection } = useFavoriteSelections();
   const { suggestions } = useSuggestions();
   // Profil → Mes suggestions : pour chaque adresse proposée, détection best-effort
   // (nom + catégorie) d'une fiche correspondante déjà intégrée à l'annuaire.
@@ -173,6 +175,10 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
       .slice(0, 3)
       .map(([key, count]: [CategoryKey, number]) => ({ category: CATEGORY_MAP[key], count }));
   }, [favorisMapBusinesses]);
+  const profilFavoriteSelections = useMemo(
+    () => SELECTIONS.filter((s) => favoriteSelectionIds.has(s.id)),
+    [favoriteSelectionIds]
+  );
   const [shareFeedback, setShareFeedback] = useState<string | null>(null);
   // Partage : panneau de choix des statuts à inclure (favoris / à tester / testé),
   // ouvert au clic sur "Partager mes adresses" plutôt qu'un partage immédiat de tout.
@@ -1763,39 +1769,50 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                 <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 mb-8">
                   {highlightSelections.map((s) => {
                     const SIcon = SELECTION_ICONS[s.icon];
+                    const isFav = isFavoriteSelection(s.id);
                     return (
-                      <button
-                        key={s.id}
-                        onClick={() => setSelectedListId(s.id)}
-                        className="relative text-left rounded-2xl overflow-hidden aspect-[4/5] shadow-card active:scale-[.98] transition-transform"
-                      >
-                        {/* eslint-disable-next-line @next/next/no-img-element */}
-                        <img
-                          src={s.photoUrl}
-                          alt=""
-                          aria-hidden
-                          loading="lazy"
-                          className="absolute inset-0 w-full h-full object-cover"
-                        />
-                        <div
-                          className="absolute inset-0"
-                          style={{ background: "linear-gradient(180deg, rgba(0,0,0,0) 45%, rgba(0,0,0,.72) 100%)" }}
-                        />
-                        <span
-                          className="absolute top-2.5 left-2.5 w-8 h-8 rounded-full flex items-center justify-center text-white"
-                          style={{ background: "var(--primary, #087e8b)" }}
+                      <div key={s.id} className="relative rounded-2xl overflow-hidden aspect-[4/5] shadow-card">
+                        <button
+                          onClick={() => setSelectedListId(s.id)}
+                          className="absolute inset-0 text-left active:scale-[.98] transition-transform"
                         >
-                          <SIcon size={17} weight="fill" aria-hidden />
-                        </span>
-                        <span className="absolute inset-x-0 bottom-0 p-3">
-                          <span className="block font-serif text-[13.5px] font-semibold leading-tight text-white">
-                            {s.title}
+                          {/* eslint-disable-next-line @next/next/no-img-element */}
+                          <img
+                            src={s.photoUrl}
+                            alt=""
+                            aria-hidden
+                            loading="lazy"
+                            className="absolute inset-0 w-full h-full object-cover"
+                          />
+                          <div
+                            className="absolute inset-0"
+                            style={{ background: "linear-gradient(180deg, rgba(0,0,0,0) 45%, rgba(0,0,0,.72) 100%)" }}
+                          />
+                          <span
+                            className="absolute top-2.5 left-2.5 w-8 h-8 rounded-full flex items-center justify-center text-white"
+                            style={{ background: "var(--primary, #087e8b)" }}
+                          >
+                            <SIcon size={17} weight="fill" aria-hidden />
                           </span>
-                          <span className="block text-[11px] text-white/80 mt-0.5">
-                            {s.businessIds.length} adresses
+                          <span className="absolute inset-x-0 bottom-0 p-3">
+                            <span className="block font-serif text-[13.5px] font-semibold leading-tight text-white">
+                              {s.title}
+                            </span>
+                            <span className="block text-[11px] text-white/80 mt-0.5">
+                              {s.businessIds.length} adresses
+                            </span>
                           </span>
-                        </span>
-                      </button>
+                        </button>
+                        <button
+                          onClick={() => toggleFavoriteSelection(s.id)}
+                          aria-label={isFav ? "Retirer cette liste de mes favoris" : "Ajouter cette liste à mes favoris"}
+                          aria-pressed={isFav}
+                          className="absolute top-2.5 right-2.5 w-8 h-8 rounded-full flex items-center justify-center text-white active:scale-[.9] transition-transform"
+                          style={{ background: "rgba(0,0,0,.35)" }}
+                        >
+                          <Heart size={17} weight={isFav ? "fill" : "regular"} style={{ color: isFav ? COUP_DE_COEUR_COLOR : undefined }} aria-hidden />
+                        </button>
+                      </div>
                     );
                   })}
                 </div>
@@ -1827,28 +1844,41 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
               </div>
 
               <div className="grid grid-cols-2 sm:grid-cols-5 gap-2.5">
-                {exploreSelections.map((s) => (
-                  <button
-                    key={s.id}
-                    onClick={() => setSelectedListId(s.id)}
-                    className="text-left bg-surface border border-border rounded-2xl overflow-hidden shadow-sm active:scale-[.98] transition-transform"
-                  >
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img
-                      src={s.photoUrl}
-                      alt=""
-                      aria-hidden
-                      loading="lazy"
-                      className="w-full h-24 object-cover"
-                    />
-                    <span className="block p-2.5">
-                      <span className="block font-serif text-[12.5px] font-semibold leading-tight line-clamp-2">
-                        {s.title}
-                      </span>
-                      <span className="block text-[11px] text-muted mt-1">{s.businessIds.length} adresses</span>
-                    </span>
-                  </button>
-                ))}
+                {exploreSelections.map((s) => {
+                  const isFav = isFavoriteSelection(s.id);
+                  return (
+                    <div key={s.id} className="relative bg-surface border border-border rounded-2xl overflow-hidden shadow-sm">
+                      <button
+                        onClick={() => setSelectedListId(s.id)}
+                        className="block w-full text-left active:scale-[.98] transition-transform"
+                      >
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <img
+                          src={s.photoUrl}
+                          alt=""
+                          aria-hidden
+                          loading="lazy"
+                          className="w-full h-24 object-cover"
+                        />
+                        <span className="block p-2.5">
+                          <span className="block font-serif text-[12.5px] font-semibold leading-tight line-clamp-2">
+                            {s.title}
+                          </span>
+                          <span className="block text-[11px] text-muted mt-1">{s.businessIds.length} adresses</span>
+                        </span>
+                      </button>
+                      <button
+                        onClick={() => toggleFavoriteSelection(s.id)}
+                        aria-label={isFav ? "Retirer cette liste de mes favoris" : "Ajouter cette liste à mes favoris"}
+                        aria-pressed={isFav}
+                        className="absolute top-1.5 right-1.5 w-7 h-7 rounded-full flex items-center justify-center text-white active:scale-[.9] transition-transform"
+                        style={{ background: "rgba(0,0,0,.35)" }}
+                      >
+                        <Heart size={15} weight={isFav ? "fill" : "regular"} style={{ color: isFav ? COUP_DE_COEUR_COLOR : undefined }} aria-hidden />
+                      </button>
+                    </div>
+                  );
+                })}
               </div>
             </div>
           )}
@@ -1864,9 +1894,22 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                 >
                   <ArrowLeft size={17} weight="bold" aria-hidden />
                 </button>
-                <p className="text-[15px] font-semibold truncate">
+                <p className="text-[15px] font-semibold truncate flex-1">
                   <span aria-hidden>{selectedList.emoji}</span> {selectedList.title}
                 </p>
+                <button
+                  onClick={() => toggleFavoriteSelection(selectedList.id)}
+                  aria-label={isFavoriteSelection(selectedList.id) ? "Retirer cette liste de mes favoris" : "Ajouter cette liste à mes favoris"}
+                  aria-pressed={isFavoriteSelection(selectedList.id)}
+                  className="shrink-0 w-8 h-8 rounded-full flex items-center justify-center active:scale-[.9] transition-transform"
+                >
+                  <Heart
+                    size={19}
+                    weight={isFavoriteSelection(selectedList.id) ? "fill" : "regular"}
+                    style={{ color: isFavoriteSelection(selectedList.id) ? COUP_DE_COEUR_COLOR : undefined }}
+                    aria-hidden
+                  />
+                </button>
               </div>
               <div className="max-w-[560px] mx-auto pt-3">
                 <p className="m-0 mb-3 text-[13px] text-muted leading-snug">
@@ -1963,6 +2006,37 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                         <span className="text-[12.5px] font-bold text-muted">{count}</span>
                       </div>
                     ))}
+                  </div>
+                </div>
+              )}
+
+              {/* Mes listes favorites : sélections éditoriales mises en favori. */}
+              {profilFavoriteSelections.length > 0 && (
+                <div className="bg-surface border border-border rounded-2xl shadow-sm p-4">
+                  <p className="m-0 mb-3 text-[13px] font-bold text-ink">Mes listes favorites</p>
+                  <div className="flex flex-col gap-2">
+                    {profilFavoriteSelections.map((s) => {
+                      const SIcon = SELECTION_ICONS[s.icon];
+                      return (
+                        <button
+                          key={s.id}
+                          onClick={() => { setBrowseAll(false); setHomeCategory(null); setHomeMode("listes"); setSelectedListId(s.id); window.scrollTo({ top: 0, behavior: "smooth" }); }}
+                          className="w-full flex items-center gap-2.5 rounded-xl border border-border p-2.5 text-left active:scale-[.98] transition-transform"
+                        >
+                          <span
+                            className="w-8 h-8 shrink-0 rounded-full flex items-center justify-center text-white"
+                            style={{ background: "var(--primary, #087e8b)" }}
+                          >
+                            <SIcon size={16} weight="fill" aria-hidden />
+                          </span>
+                          <span className="flex-1 min-w-0">
+                            <span className="block text-[13px] font-semibold text-ink truncate">{s.title}</span>
+                            <span className="block text-[11px] text-muted">{s.businessIds.length} adresses</span>
+                          </span>
+                          <Heart size={16} weight="fill" aria-hidden style={{ color: COUP_DE_COEUR_COLOR }} />
+                        </button>
+                      );
+                    })}
                   </div>
                 </div>
               )}
