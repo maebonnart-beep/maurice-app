@@ -52260,5 +52260,117 @@
     "description": "Fête musulmane marquant la fin du Ramadan : prières, festins et dons, célébrée dans toute l'île.",
     "period": "Date variable (fin du Ramadan, calendrier musulman)",
     "eventRecurrence": "annuel-variable"
+  },
+  {
+    "id": "lilo-stitch-comedie-musicale-evt",
+    "name": "Lilo & Stitch – La Comédie Musicale",
+    "category": "agenda",
+    "address": "Trianon Convention Centre, Trianon",
+    "phone": "",
+    "website": "",
+    "themes": [
+      "evenements-culturels"
+    ],
+    "description": "Comédie musicale familiale inspirée du film Disney Lilo & Stitch, au Trianon Convention Centre.",
+    "period": "10 octobre 2026",
+    "zone": "centre",
+    "eventRecurrence": "ponctuel",
+    "eventStartDate": "2026-10-10"
+  },
+  {
+    "id": "reine-des-neiges-comedie-musicale-evt",
+    "name": "La Reine des Neiges – La Comédie Musicale",
+    "category": "agenda",
+    "address": "Trianon Convention Centre, Trianon",
+    "phone": "",
+    "website": "",
+    "themes": [
+      "evenements-culturels"
+    ],
+    "description": "Comédie musicale familiale inspirée du film Disney La Reine des Neiges, au Trianon Convention Centre.",
+    "period": "10 octobre 2026",
+    "zone": "centre",
+    "eventRecurrence": "ponctuel",
+    "eventStartDate": "2026-10-10"
+  },
+  {
+    "id": "roi-lion-comedie-musicale-evt",
+    "name": "Le Roi Lion – La Comédie Musicale",
+    "category": "agenda",
+    "address": "Trianon Convention Centre, Trianon",
+    "phone": "",
+    "website": "",
+    "themes": [
+      "evenements-culturels"
+    ],
+    "description": "Comédie musicale familiale inspirée du film Disney Le Roi Lion, au Trianon Convention Centre.",
+    "period": "10 octobre 2026",
+    "zone": "centre",
+    "eventRecurrence": "ponctuel",
+    "eventStartDate": "2026-10-10"
+  },
+  {
+    "id": "jarry-bonhomme-evt",
+    "name": "Jarry – Bonhomme",
+    "category": "agenda",
+    "address": "Trianon Convention Centre, Trianon",
+    "phone": "",
+    "website": "",
+    "themes": [
+      "evenements-culturels"
+    ],
+    "description": "Spectacle d'humour de Jarry, humoriste français, au Trianon Convention Centre.",
+    "period": "17 octobre 2026",
+    "zone": "centre",
+    "eventRecurrence": "ponctuel",
+    "eventStartDate": "2026-10-17"
+  },
+  {
+    "id": "elodie-poux-papillon-evt",
+    "name": "Élodie Poux – Le Papillon s'envole",
+    "category": "agenda",
+    "address": "Trianon Convention Centre, Trianon",
+    "phone": "",
+    "website": "",
+    "themes": [
+      "evenements-culturels"
+    ],
+    "description": "Spectacle d'humour d'Élodie Poux, humoriste française, au Trianon Convention Centre.",
+    "period": "15 novembre 2026",
+    "zone": "centre",
+    "eventRecurrence": "ponctuel",
+    "eventStartDate": "2026-11-15"
+  },
+  {
+    "id": "grand-diwali-night-2026-evt",
+    "name": "The Grand Diwali Night 2026",
+    "category": "agenda",
+    "address": "Valentina Hall, Phoenix",
+    "phone": "",
+    "website": "",
+    "themes": [
+      "evenements-culturels"
+    ],
+    "description": "Concert événement organisé pour Divali, à la Valentina Hall de Phoenix.",
+    "period": "14 novembre 2026",
+    "zone": "centre",
+    "eventRecurrence": "ponctuel",
+    "eventStartDate": "2026-11-14"
+  },
+  {
+    "id": "christophe-mae-concert-evt",
+    "name": "Christophe Maé",
+    "category": "agenda",
+    "address": "Trianon Convention Centre, Trianon",
+    "phone": "",
+    "website": "",
+    "themes": [
+      "evenements-culturels"
+    ],
+    "description": "Concert du chanteur français Christophe Maé, au Trianon Convention Centre.",
+    "period": "21 février 2027",
+    "zone": "centre",
+    "eventRecurrence": "ponctuel",
+    "eventStartDate": "2027-02-21"
   }
 ]
