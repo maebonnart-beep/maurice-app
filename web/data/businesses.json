@@ -52158,5 +52158,34 @@
     "filters": [
       "chefs-domicile"
     ]
+  },
+  {
+    "id": "ganesh-chaturthi-evt",
+    "name": "Ganesh Chaturthi",
+    "category": "agenda",
+    "address": "Toute l'île",
+    "phone": "",
+    "website": "",
+    "themes": [
+      "evenements-culturels"
+    ],
+    "description": "Fête hindoue marathi en l'honneur du dieu Ganesh : immersions de statues dans la mer et les rivières, prières et processions dans toute l'île.",
+    "period": "Mi-septembre",
+    "eventRecurrence": "annuel-variable"
+  },
+  {
+    "id": "hilton-charity-trail-evt",
+    "name": "Hilton Charity Trail",
+    "category": "agenda",
+    "address": "Hilton Mauritius Resort & Spa, Rivière Noire",
+    "phone": "",
+    "website": "",
+    "themes": [
+      "evenements-associatifs"
+    ],
+    "description": "Trail solidaire annuel (5 à 21 km) organisé par le Hilton Mauritius : tous les profits sont reversés à des ONG locales.",
+    "period": "Mi-septembre",
+    "zone": "ouest",
+    "eventRecurrence": "annuel-variable"
   }
 ]
