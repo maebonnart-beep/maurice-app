@@ -48560,13 +48560,13 @@
     "id": "festival-kreol-kreol-international-festival-evt",
     "name": "Festival Kreol (Kréol International Festival)",
     "category": "agenda",
-    "address": "Toute l'île (littoral & Rodrigues)",
+    "address": "Mont Choisy, Mahébourg & Trou d'Eau Douce (+ Rodrigues)",
     "phone": "",
-    "website": "",
+    "website": "https://festivalkiltir.mu/",
     "themes": [
       "evenements-culturels"
     ],
-    "description": "Célébration de la culture créole mauricienne : séga, concerts, cuisine et animations à travers l'île, avec un temps fort sur le littoral et à Rodrigues.",
+    "description": "Célébration de la culture créole mauricienne organisée par la MTPA : ouverture officielle et concerts à Mont Choisy, soirée séga traditionnel à Trou d'Eau Douce, régates et exposition culinaire à Mahébourg. Décliné aussi à Rodrigues (Festival Kréol Rodrig).",
     "period": "Fin novembre – début décembre",
     "eventRecurrence": "annuel-variable"
   },
