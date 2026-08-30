@@ -23,7 +23,8 @@ export type SelectionIconKey =
   | "Sparkle"
   | "BookOpen"
   | "Car"
-  | "Backpack";
+  | "Backpack"
+  | "PersonSimpleWalk";
 
 export type Selection = {
   id: string;
@@ -318,6 +319,26 @@ export const SELECTIONS: Selection[] = [
       "ssr-botanical-garden-of-curepipe",
       "rivulet-terre-rouge-estuary-bird-sanctuary",
       "parc-national-de-bras-d-eau",
+    ],
+  },
+  {
+    id: "balades-en-famille",
+    emoji: "🥾",
+    title: "Les balades à faire en famille",
+    tagline: "Des sentiers faciles, sans dénivelé, pour petites et grandes jambes",
+    group: "envies",
+    icon: "PersonSimpleWalk",
+    photoUrl: "https://images.pexels.com/photos/1450082/pexels-photo-1450082.jpeg?auto=compress&cs=tinysrgb&w=800",
+    photoCredit: "Min An / Pexels",
+    businessIds: [
+      "cap-malheureux-grand-gaube",
+      "sentier-reliant-les-plages-de-tamarin-et-flic-en-flac",
+      "bras-d-eau-visitor-s-center",
+      "ssr-botanical-garden-pamplemousses",
+      "jardin-de-la-compagnie",
+      "ile-aux-aigrettes",
+      "vallee-de-ferney-sortir-decouvrir",
+      "vallee-d-osterlog-endemic-garden-sortir-decouvrir",
     ],
   },
   {
