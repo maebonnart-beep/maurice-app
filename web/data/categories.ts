@@ -253,6 +253,25 @@ export const FILTER_GROUPS: FilterGroup[] = [
     ],
   },
   {
+    key: "excursions-iles-destination",
+    label: "Île de destination",
+    appliesTo: ["excursions-sorties"],
+    browsable: true,
+    options: [
+      { key: "ile-aux-cerfs", label: "Île aux Cerfs", emoji: "🦌" },
+      { key: "ile-aux-benitiers", label: "Île aux Bénitiers", emoji: "🏝️" },
+      { key: "gabriel-island", label: "Gabriel Island", emoji: "🏝️" },
+      { key: "coin-de-mire", label: "Coin de Mire", emoji: "🗿" },
+      { key: "flat-island", label: "Flat Island (Île Plate)", emoji: "🏝️" },
+      { key: "ilot-mangenie", label: "Ilot Mangénie", emoji: "🏝️" },
+      { key: "ile-aux-aigrettes", label: "Île aux Aigrettes", emoji: "🐦" },
+      { key: "ile-aux-deux-cocos", label: "Île aux Deux Cocos", emoji: "🥥" },
+      { key: "ile-de-la-passe", label: "Île de la Passe", emoji: "🏝️" },
+      { key: "ile-aux-phares", label: "Île aux Phares", emoji: "🗼" },
+      { key: "ile-d-ambre", label: "Île d'Ambre & Îlot Bernache", emoji: "🏝️" },
+    ],
+  },
+  {
     key: "casinos-loisirs-types",
     label: "Type de loisir",
     appliesTo: ["casinos-loisirs"],
@@ -456,6 +475,22 @@ export const FILTER_GROUPS: FilterGroup[] = [
     options: [
       { key: "business", label: "Business", emoji: "💼" },
       { key: "networking", label: "Networking", emoji: "🤝" },
+    ],
+  },
+  {
+    key: "type-evenement",
+    label: "Type d'événement",
+    appliesTo: ["evenements-culturels", "evenements-sportifs", "evenements-associatifs"],
+    browsable: true,
+    options: [
+      { key: "concert", label: "Concerts", emoji: "🎤" },
+      { key: "festival", label: "Festivals", emoji: "🎪" },
+      { key: "spectacle-comedie", label: "Spectacles & comédies musicales", emoji: "🎭" },
+      { key: "clubbing-soiree", label: "Clubbing & soirées", emoji: "🪩" },
+      { key: "culturel-traditionnel", label: "Fêtes traditionnelles & religieuses", emoji: "🛕" },
+      { key: "sportif", label: "Sportifs", emoji: "🏆" },
+      { key: "associatif-caritatif", label: "Associatifs & caritatifs", emoji: "🤝" },
+      { key: "culinaire", label: "Gourmands", emoji: "🍴" },
     ],
   },
 ];

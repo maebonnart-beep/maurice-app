@@ -47892,7 +47892,11 @@
     ],
     "description": "Célébration de la culture créole mauricienne organisée par la MTPA : ouverture officielle et concerts à Mont Choisy, soirée séga traditionnel à Trou d'Eau Douce, régates et exposition culinaire à Mahébourg. Décliné aussi à Rodrigues (Festival Kréol Rodrig).",
     "period": "Fin novembre – début décembre",
-    "eventRecurrence": "annuel-variable"
+    "eventRecurrence": "annuel-variable",
+    "filters": [
+      "festival",
+      "culturel-traditionnel"
+    ]
   },
   {
     "id": "porlwi-by-light-evt",
@@ -47910,7 +47914,10 @@
     "lng": 57.5012,
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Porlwi%20by%20Light%20Mauritius",
     "zone": "centre",
-    "eventRecurrence": "annuel-variable"
+    "eventRecurrence": "annuel-variable",
+    "filters": [
+      "festival"
+    ]
   },
   {
     "id": "maha-shivaratri-grand-bassin-evt",
@@ -47928,7 +47935,10 @@
     "lng": 57.492,
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Maha%20Shivaratri%20%E2%80%93%20Grand%20Bassin%20Mauritius",
     "zone": "ouest",
-    "eventRecurrence": "annuel-variable"
+    "eventRecurrence": "annuel-variable",
+    "filters": [
+      "culturel-traditionnel"
+    ]
   },
   {
     "id": "thaipoosam-cavadee-evt",
@@ -47942,7 +47952,10 @@
     ],
     "description": "Fête tamoule : dix jours de jeûne suivis de processions vers les kovils, les fidèles portant le cavadee. Dates variables selon le calendrier tamoul.",
     "period": "Janvier–février",
-    "eventRecurrence": "annuel-variable"
+    "eventRecurrence": "annuel-variable",
+    "filters": [
+      "culturel-traditionnel"
+    ]
   },
   {
     "id": "divali-fete-de-la-lumiere-evt",
@@ -47956,7 +47969,10 @@
     ],
     "description": "Fête hindoue des lumières : maisons, cours et rues illuminées de lampes (diyas) et partage de gâteaux, célébrée dans toute l'île.",
     "period": "Octobre–novembre",
-    "eventRecurrence": "annuel-variable"
+    "eventRecurrence": "annuel-variable",
+    "filters": [
+      "culturel-traditionnel"
+    ]
   },
   {
     "id": "nouvel-an-chinois-fete-du-printemps-evt",
@@ -47974,7 +47990,10 @@
     "lng": 57.506,
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Nouvel%20An%20chinois%20(F%C3%AAte%20du%20Printemps)%20Mauritius",
     "zone": "centre",
-    "eventRecurrence": "annuel-variable"
+    "eventRecurrence": "annuel-variable",
+    "filters": [
+      "culturel-traditionnel"
+    ]
   },
   {
     "id": "pelerinage-du-pere-laval-evt",
@@ -47992,7 +48011,10 @@
     "lng": 57.5049,
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=P%C3%A8lerinage%20du%20P%C3%A8re%20Laval%20Mauritius",
     "zone": "centre",
-    "eventRecurrence": "annuel-variable"
+    "eventRecurrence": "annuel-variable",
+    "filters": [
+      "culturel-traditionnel"
+    ]
   },
   {
     "id": "dodo-trail-evt",
@@ -48010,7 +48032,10 @@
     "lng": 57.371,
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Dodo%20Trail%20Mauritius",
     "zone": "ouest",
-    "eventRecurrence": "annuel-variable"
+    "eventRecurrence": "annuel-variable",
+    "filters": [
+      "sportif"
+    ]
   },
   {
     "id": "mauritius-marathon-evt",
@@ -48028,7 +48053,10 @@
     "lng": 57.403,
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Mauritius%20Marathon%20Mauritius",
     "zone": "sud",
-    "eventRecurrence": "annuel-variable"
+    "eventRecurrence": "annuel-variable",
+    "filters": [
+      "sportif"
+    ]
   },
   {
     "id": "tour-de-maurice-cyclisme-evt",
@@ -48042,7 +48070,10 @@
     ],
     "description": "Course cycliste internationale par étapes, à travers l'île.",
     "period": "Généralement fin août",
-    "eventRecurrence": "annuel-variable"
+    "eventRecurrence": "annuel-variable",
+    "filters": [
+      "sportif"
+    ]
   },
   {
     "id": "maiden-cup-champ-de-mars-evt",
@@ -48060,7 +48091,10 @@
     "lng": 57.503,
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Maiden%20Cup%20%E2%80%93%20Champ%20de%20Mars%20Mauritius",
     "zone": "centre",
-    "eventRecurrence": "annuel-variable"
+    "eventRecurrence": "annuel-variable",
+    "filters": [
+      "sportif"
+    ]
   },
   {
     "id": "bazar-canonniers",
@@ -51468,7 +51502,10 @@
     ],
     "description": "Fête hindoue marathi en l'honneur du dieu Ganesh : immersions de statues dans la mer et les rivières, prières et processions dans toute l'île.",
     "period": "Mi-septembre",
-    "eventRecurrence": "annuel-variable"
+    "eventRecurrence": "annuel-variable",
+    "filters": [
+      "culturel-traditionnel"
+    ]
   },
   {
     "id": "hilton-charity-trail-evt",
@@ -51483,7 +51520,11 @@
     "description": "Trail solidaire annuel (5 à 21 km) organisé par le Hilton Mauritius : tous les profits sont reversés à des ONG locales.",
     "period": "Mi-septembre",
     "zone": "ouest",
-    "eventRecurrence": "annuel-variable"
+    "eventRecurrence": "annuel-variable",
+    "filters": [
+      "associatif-caritatif",
+      "sportif"
+    ]
   },
   {
     "id": "afrasia-bank-mauritius-open-evt",
@@ -51498,7 +51539,10 @@
     "description": "Tournoi de golf professionnel du DP World Tour, dernière étape de la saison, réunissant des joueurs internationaux à Bel Ombre.",
     "period": "Décembre",
     "zone": "sud",
-    "eventRecurrence": "annuel-variable"
+    "eventRecurrence": "annuel-variable",
+    "filters": [
+      "sportif"
+    ]
   },
   {
     "id": "chinatown-food-cultural-festival-evt",
@@ -51513,7 +51557,11 @@
     "description": "Festival dédié à la cuisine et à la culture chinoises : spécialités culinaires, spectacles et animations dans le quartier chinois de Port-Louis.",
     "period": "Fin octobre",
     "zone": "centre",
-    "eventRecurrence": "annuel-variable"
+    "eventRecurrence": "annuel-variable",
+    "filters": [
+      "festival",
+      "culinaire"
+    ]
   },
   {
     "id": "holi-fete-des-couleurs-evt",
@@ -51527,7 +51575,10 @@
     ],
     "description": "Fête hindoue du printemps et de la victoire du bien sur le mal : poudres colorées, musique, danse et partage, célébrée surtout à Port-Louis, Quatre Bornes et Phoenix.",
     "period": "Février/mars",
-    "eventRecurrence": "annuel-variable"
+    "eventRecurrence": "annuel-variable",
+    "filters": [
+      "culturel-traditionnel"
+    ]
   },
   {
     "id": "dragon-boat-festival-evt",
@@ -51542,7 +51593,11 @@
     "description": "Compétition de bateaux-dragons célébrant la culture chinoise, avec animations et stands gourmands au Caudan Waterfront.",
     "period": "Fin mai",
     "zone": "centre",
-    "eventRecurrence": "annuel-variable"
+    "eventRecurrence": "annuel-variable",
+    "filters": [
+      "sportif",
+      "festival"
+    ]
   },
   {
     "id": "eid-ul-fitr-evt",
@@ -51556,7 +51611,10 @@
     ],
     "description": "Fête musulmane marquant la fin du Ramadan : prières, festins et dons, célébrée dans toute l'île.",
     "period": "Date variable (fin du Ramadan, calendrier musulman)",
-    "eventRecurrence": "annuel-variable"
+    "eventRecurrence": "annuel-variable",
+    "filters": [
+      "culturel-traditionnel"
+    ]
   },
   {
     "id": "lilo-stitch-comedie-musicale-evt",
@@ -51573,7 +51631,10 @@
     "zone": "centre",
     "eventRecurrence": "ponctuel",
     "eventStartDate": "2026-10-10",
-    "entryPrice": "À partir de Rs 400"
+    "entryPrice": "À partir de Rs 400",
+    "filters": [
+      "spectacle-comedie"
+    ]
   },
   {
     "id": "reine-des-neiges-comedie-musicale-evt",
@@ -51590,7 +51651,10 @@
     "zone": "centre",
     "eventRecurrence": "ponctuel",
     "eventStartDate": "2026-10-10",
-    "entryPrice": "À partir de Rs 400"
+    "entryPrice": "À partir de Rs 400",
+    "filters": [
+      "spectacle-comedie"
+    ]
   },
   {
     "id": "roi-lion-comedie-musicale-evt",
@@ -51607,7 +51671,10 @@
     "zone": "centre",
     "eventRecurrence": "ponctuel",
     "eventStartDate": "2026-10-10",
-    "entryPrice": "À partir de Rs 400"
+    "entryPrice": "À partir de Rs 400",
+    "filters": [
+      "spectacle-comedie"
+    ]
   },
   {
     "id": "jarry-bonhomme-evt",
@@ -51624,7 +51691,10 @@
     "zone": "centre",
     "eventRecurrence": "ponctuel",
     "eventStartDate": "2026-10-17",
-    "entryPrice": "À partir de Rs 900"
+    "entryPrice": "À partir de Rs 900",
+    "filters": [
+      "spectacle-comedie"
+    ]
   },
   {
     "id": "elodie-poux-papillon-evt",
@@ -51641,7 +51711,10 @@
     "zone": "centre",
     "eventRecurrence": "ponctuel",
     "eventStartDate": "2026-11-15",
-    "entryPrice": "À partir de Rs 900"
+    "entryPrice": "À partir de Rs 900",
+    "filters": [
+      "spectacle-comedie"
+    ]
   },
   {
     "id": "grand-diwali-night-2026-evt",
@@ -51658,7 +51731,11 @@
     "zone": "centre",
     "eventRecurrence": "ponctuel",
     "eventStartDate": "2026-11-14",
-    "entryPrice": "À partir de Rs 1 200 (Early Bird)"
+    "entryPrice": "À partir de Rs 1 200 (Early Bird)",
+    "filters": [
+      "festival",
+      "culturel-traditionnel"
+    ]
   },
   {
     "id": "christophe-mae-concert-evt",
@@ -51675,7 +51752,10 @@
     "zone": "centre",
     "eventRecurrence": "ponctuel",
     "eventStartDate": "2027-02-21",
-    "entryPrice": "À partir de Rs 2 500"
+    "entryPrice": "À partir de Rs 2 500",
+    "filters": [
+      "concert"
+    ]
   },
   {
     "id": "mauritius-ocean-week-evt",
@@ -51690,7 +51770,10 @@
     "description": "Semaine de sensibilisation à l'économie bleue et à la santé des océans, organisée par le Ministère de l'Agro-Industrie, de la Sécurité alimentaire, de l'Économie bleue et des Pêches : Assises de l'Océan et journées portes ouvertes accessibles au public (visites à bord du MV Mauritius Trochetia, Albion Fisheries Research Centre, Mauritius Oceanography Institute).",
     "period": "Début mai",
     "zone": "centre",
-    "eventRecurrence": "annuel-variable"
+    "eventRecurrence": "annuel-variable",
+    "filters": [
+      "associatif-caritatif"
+    ]
   },
   {
     "id": "c-kite-festival-evt",
@@ -51705,7 +51788,11 @@
     "description": "Festival international de kitesurf réunissant des champions du monde (Big Air, freestyle) pour plusieurs jours de compétitions et démonstrations à C Mauritius Palmar.",
     "period": "Fin juin",
     "zone": "est",
-    "eventRecurrence": "annuel-variable"
+    "eventRecurrence": "annuel-variable",
+    "filters": [
+      "sportif",
+      "festival"
+    ]
   },
   {
     "id": "colin-mayer-tour-evt",
@@ -51720,7 +51807,10 @@
     "description": "Course de VTT familiale sur 3 jours et 3 étapes à travers des parcours pittoresques, avec catégories équipes, solo (vélo électrique) et épreuves jeunesse.",
     "period": "Mi-octobre",
     "zone": "sud",
-    "eventRecurrence": "annuel-variable"
+    "eventRecurrence": "annuel-variable",
+    "filters": [
+      "sportif"
+    ]
   },
   {
     "id": "nandos-open-water-swim-evt",
@@ -51735,7 +51825,10 @@
     "description": "Plus grand festival de nage en eau libre de Maurice, au départ de Pereybère jusqu'à la plage publique de Grand Baie. Les profits sont reversés à la Royal Life Saving Society.",
     "period": "Fin avril",
     "zone": "nord",
-    "eventRecurrence": "annuel-variable"
+    "eventRecurrence": "annuel-variable",
+    "filters": [
+      "sportif"
+    ]
   },
   {
     "id": "wildwind-sailing-centre",
@@ -51772,7 +51865,11 @@
     "entryPrice": "À partir de Rs 1 400",
     "zone": "sud",
     "eventRecurrence": "ponctuel",
-    "eventStartDate": "2026-09-05"
+    "eventStartDate": "2026-09-05",
+    "filters": [
+      "concert",
+      "festival"
+    ]
   },
   {
     "id": "zulu-ek-so-tribu-live-evt",
@@ -51789,7 +51886,10 @@
     "entryPrice": "À partir de Rs 450",
     "zone": "ouest",
     "eventRecurrence": "ponctuel",
-    "eventStartDate": "2026-09-05"
+    "eventStartDate": "2026-09-05",
+    "filters": [
+      "concert"
+    ]
   },
   {
     "id": "one-night-in-brazil-evt",
@@ -51806,7 +51906,10 @@
     "entryPrice": "À partir de Rs 700",
     "zone": "ouest",
     "eventRecurrence": "ponctuel",
-    "eventStartDate": "2026-09-05"
+    "eventStartDate": "2026-09-05",
+    "filters": [
+      "clubbing-soiree"
+    ]
   },
   {
     "id": "bilygane-lancement-album-attentat-evt",
@@ -51823,7 +51926,10 @@
     "entryPrice": "À partir de Rs 700",
     "zone": "centre",
     "eventRecurrence": "ponctuel",
-    "eventStartDate": "2026-09-12"
+    "eventStartDate": "2026-09-12",
+    "filters": [
+      "concert"
+    ]
   },
   {
     "id": "ghetto-lovers-2k26-evt",
@@ -51840,7 +51946,10 @@
     "entryPrice": "À partir de Rs 800 (Early Bird)",
     "zone": "nord",
     "eventRecurrence": "ponctuel",
-    "eventStartDate": "2026-09-12"
+    "eventStartDate": "2026-09-12",
+    "filters": [
+      "concert"
+    ]
   },
   {
     "id": "heritage-goldman-2-evt",
@@ -51857,7 +51966,10 @@
     "entryPrice": "À partir de Rs 900",
     "zone": "centre",
     "eventRecurrence": "ponctuel",
-    "eventStartDate": "2026-09-19"
+    "eventStartDate": "2026-09-19",
+    "filters": [
+      "concert"
+    ]
   },
   {
     "id": "aventure-live-goodluck-evt",
@@ -51874,7 +51986,11 @@
     "entryPrice": "À partir de Rs 350",
     "zone": "nord",
     "eventRecurrence": "ponctuel",
-    "eventStartDate": "2026-09-26"
+    "eventStartDate": "2026-09-26",
+    "filters": [
+      "concert",
+      "festival"
+    ]
   },
   {
     "id": "night-of-praise-worship-word-evt",
@@ -51891,7 +52007,10 @@
     "entryPrice": "À partir de Rs 200",
     "zone": "centre",
     "eventRecurrence": "ponctuel",
-    "eventStartDate": "2026-09-26"
+    "eventStartDate": "2026-09-26",
+    "filters": [
+      "concert"
+    ]
   },
   {
     "id": "golden-era-100-edm-evt",
@@ -51908,7 +52027,10 @@
     "entryPrice": "À partir de Rs 600 (Early Bird)",
     "zone": "ouest",
     "eventRecurrence": "ponctuel",
-    "eventStartDate": "2026-09-26"
+    "eventStartDate": "2026-09-26",
+    "filters": [
+      "clubbing-soiree"
+    ]
   },
   {
     "id": "bollywood-magical-90s-evt",
@@ -51925,7 +52047,10 @@
     "entryPrice": "À partir de Rs 600",
     "zone": "centre",
     "eventRecurrence": "ponctuel",
-    "eventStartDate": "2026-10-03"
+    "eventStartDate": "2026-10-03",
+    "filters": [
+      "concert"
+    ]
   },
   {
     "id": "vibe-live-concert-evt",
@@ -51942,7 +52067,10 @@
     "entryPrice": "À partir de Rs 450",
     "zone": "centre",
     "eventRecurrence": "ponctuel",
-    "eventStartDate": "2026-10-03"
+    "eventStartDate": "2026-10-03",
+    "filters": [
+      "concert"
+    ]
   },
   {
     "id": "la-isla-2068-festival-evt",
@@ -51959,7 +52087,10 @@
     "entryPrice": "À partir de Rs 800 (Super Early Bird)",
     "zone": "centre",
     "eventRecurrence": "ponctuel",
-    "eventStartDate": "2026-10-09"
+    "eventStartDate": "2026-10-09",
+    "filters": [
+      "festival"
+    ]
   },
   {
     "id": "sam-garrett-live-concert-evt",
@@ -51976,7 +52107,10 @@
     "entryPrice": "À partir de Rs 1 500",
     "zone": "sud",
     "eventRecurrence": "ponctuel",
-    "eventStartDate": "2026-10-10"
+    "eventStartDate": "2026-10-10",
+    "filters": [
+      "concert"
+    ]
   },
   {
     "id": "christafari-reggae-revival-10oct-evt",
@@ -51993,7 +52127,10 @@
     "entryPrice": "À partir de Rs 450",
     "zone": "centre",
     "eventRecurrence": "ponctuel",
-    "eventStartDate": "2026-10-10"
+    "eventStartDate": "2026-10-10",
+    "filters": [
+      "concert"
+    ]
   },
   {
     "id": "christafari-reggae-revival-11oct-evt",
@@ -52010,7 +52147,10 @@
     "entryPrice": "À partir de Rs 450",
     "zone": "centre",
     "eventRecurrence": "ponctuel",
-    "eventStartDate": "2026-10-11"
+    "eventStartDate": "2026-10-11",
+    "filters": [
+      "concert"
+    ]
   },
   {
     "id": "tous-pour-jesus-evt",
@@ -52027,7 +52167,10 @@
     "entryPrice": "À partir de Rs 700",
     "zone": "ouest",
     "eventRecurrence": "ponctuel",
-    "eventStartDate": "2026-11-01"
+    "eventStartDate": "2026-11-01",
+    "filters": [
+      "concert"
+    ]
   },
   {
     "id": "rock-meets-classical-28nov-evt",
@@ -52044,7 +52187,10 @@
     "entryPrice": "À partir de Rs 800",
     "zone": "centre",
     "eventRecurrence": "ponctuel",
-    "eventStartDate": "2026-11-28"
+    "eventStartDate": "2026-11-28",
+    "filters": [
+      "concert"
+    ]
   },
   {
     "id": "rock-meets-classical-29nov-evt",
@@ -52061,6 +52207,9 @@
     "entryPrice": "À partir de Rs 800",
     "zone": "centre",
     "eventRecurrence": "ponctuel",
-    "eventStartDate": "2026-11-29"
+    "eventStartDate": "2026-11-29",
+    "filters": [
+      "concert"
+    ]
   }
 ]
