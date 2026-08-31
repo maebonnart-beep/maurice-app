@@ -779,7 +779,7 @@
     "hours": "Lun-Sam 9h-17h, fermé dim",
     "priceRange": "bon-marche",
     "themes": [
-      "activites-enfants-famille",
+      "excursions-sorties",
       "kids-friendly"
     ],
     "zone": "nord",
@@ -798,7 +798,7 @@
     "hours": "Lun-Dim 9h-12h, Lun-Sam 13h30-18h",
     "priceRange": "bon-marche",
     "themes": [
-      "activites-enfants-famille",
+      "excursions-sorties",
       "kids-friendly"
     ],
     "zone": "nord",
@@ -3521,7 +3521,6 @@
     "lng": 57.7228,
     "themes": [
       "parcs-activites-famille",
-      "activites-enfants-famille",
       "kids-friendly"
     ],
     "hours": "Lun-Sam départs 9h30-14h30 (toutes les 30 min), Dim matin seulement 9h30-12h",
@@ -3551,7 +3550,6 @@
     "phone": "+230 631 9329",
     "website": "",
     "themes": [
-      "activites-enfants-famille",
       "culture-patrimoine",
       "kids-friendly"
     ],
@@ -12484,7 +12482,7 @@
     "lat": -20.5081742,
     "lng": 57.5446242,
     "themes": [
-      "activites-enfants-famille",
+      "excursions-sorties",
       "kids-friendly"
     ],
     "zone": "sud",
@@ -12629,7 +12627,7 @@
     "lat": -20.326921,
     "lng": 57.3777289,
     "themes": [
-      "activites-enfants-famille",
+      "excursions-sorties",
       "kids-friendly"
     ],
     "description": "Agence d'activités outdoor à Tamarin : kayak dauphins, randonnée/canyoning 7 Cascades, pirogue lagon Mahébourg, ascension Le Morne",
@@ -12778,7 +12776,7 @@
     "lat": -20.2868785,
     "lng": 57.7779502,
     "themes": [
-      "activites-enfants-famille",
+      "excursions-sorties",
       "kids-friendly"
     ],
     "description": "Éco-lodge/camping sur la Grande Rivière Sud-Est : kayak, SUP, randonnée, navette gratuite vers l'Île aux Cerfs",
@@ -12815,7 +12813,7 @@
     "lat": -20.1241283,
     "lng": 57.6841354,
     "themes": [
-      "activites-enfants-famille",
+      "excursions-sorties",
       "kids-friendly"
     ],
     "description": "Saut en parachute en tandem depuis un Cessna à 10 000 pieds, au-dessus du lagon",
@@ -13398,28 +13396,11 @@
     "lat": -20.1828855,
     "lng": 57.7110379,
     "themes": [
-      "activites-enfants-famille",
+      "excursions-sorties",
       "kids-friendly"
     ],
     "zone": "est",
     "description": "Balades en quad de 2h à travers champs de canne à sucre, plantations d'ananas et petite rivière du domaine de Constance la Gaieté, avec guide commentant l'histoire du pays."
-  },
-  {
-    "id": "le-domaine-de-grand-baie-2",
-    "name": "Le Domaine de Grand Baie",
-    "category": "sortir-decouvrir",
-    "address": "MU, Grand Baie 30513",
-    "phone": "+230 260 4400",
-    "website": "https://domainegrandbaie.com/",
-    "googleMapsUrl": "https://maps.google.com/?cid=3473085186795614100&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0238137,
-    "lng": 57.5751156,
-    "themes": [
-      "activites-enfants-famille",
-      "kids-friendly"
-    ],
-    "zone": "nord",
-    "description": "Résidence hôtelière du nord de l'île proposant studios et appartements, deux piscines, spa et espace bien-être intérieur avec sauna et hammam."
   },
   {
     "id": "deals-mu",
@@ -13460,7 +13441,7 @@
   {
     "id": "eclats-d-eden-2",
     "name": "Éclats d’Eden",
-    "category": "sortir-decouvrir",
+    "category": "manger-boire",
     "address": "Unit 22, Sunset boulevard, Grand Baie",
     "phone": "+230 5744 1889",
     "website": "",
@@ -13468,11 +13449,14 @@
     "lat": -20.0134331,
     "lng": 57.5844538,
     "themes": [
-      "activites-enfants-famille",
+      "cafes-bars-glaciers",
       "kids-friendly"
     ],
     "zone": "nord",
-    "description": "Crêperie-restaurant du Sunset Boulevard à Grand Baie, avec vue sur le lagon, proposant crêpes sucrées et options sans gluten."
+    "description": "Crêperie-restaurant du Sunset Boulevard à Grand Baie, avec vue sur le lagon, proposant crêpes sucrées et options sans gluten.",
+    "filters": [
+      "cafes-terrasses"
+    ]
   },
   {
     "id": "the-spot-mauritius-2",
@@ -13485,28 +13469,11 @@
     "lat": -20.44518,
     "lng": 57.7187576,
     "themes": [
-      "activites-enfants-famille",
+      "excursions-sorties",
       "kids-friendly"
     ],
     "zone": "sud",
     "description": "Organisateur d'excursions en bateau et de tours privés dans le sud-est, lié à la Chantauvent Guest House et engagé dans la préservation du lagon de Blue Bay/Pointe d'Esny ; comprend aussi un café en bord de mer."
-  },
-  {
-    "id": "the-bay-villa-n1",
-    "name": "THE BAY Villa n1",
-    "category": "sortir-decouvrir",
-    "address": "Grand Baie",
-    "phone": "",
-    "website": "https://www.villagrandbay.com/",
-    "googleMapsUrl": "https://maps.google.com/?cid=1730180626342359044&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0142383,
-    "lng": 57.5674578,
-    "themes": [
-      "activites-enfants-famille",
-      "kids-friendly"
-    ],
-    "zone": "nord",
-    "description": "Villa privée de 4 chambres avec piscine privée, terrasse et accès direct au lagon, au sein d'une résidence sécurisée de 9 villas sur la côte ouest de Grand Baie."
   },
   {
     "id": "raj-adventures",
@@ -13519,45 +13486,11 @@
     "lat": -20.3421875,
     "lng": 57.4703125,
     "themes": [
-      "activites-enfants-famille",
+      "excursions-sorties",
       "kids-friendly"
     ],
     "zone": "centre",
     "description": "Entreprise familiale de trekking basée à Henrietta, spécialisée dans la randonnée guidée des Sept Cascades, avec accueil convivial après l'excursion chez le guide."
-  },
-  {
-    "id": "domaine-des-alizees-club-spa",
-    "name": "Domaine des Alizees Club & Spa",
-    "category": "sortir-decouvrir",
-    "address": "Chemin 20 Pieds, Grand Baie",
-    "phone": "+230 263 2216",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=4253101329256404899&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0095971,
-    "lng": 57.6004536,
-    "themes": [
-      "activites-enfants-famille",
-      "kids-friendly"
-    ],
-    "zone": "nord",
-    "description": "Résidence hôtelière 5 étoiles près de Pereybère avec appartements 1 à 3 chambres, restaurant sur l'eau, lounge bar et spa."
-  },
-  {
-    "id": "club-med-pointe-aux-canonniers-mauritius",
-    "name": "Club Med Pointe aux Canonniers - Mauritius",
-    "category": "sortir-decouvrir",
-    "address": "La Pointe aux Canonniers, Grand Baie, Pointe aux Canonniers 742CU001",
-    "phone": "+230 209 1000",
-    "website": "http://www.clubmed.com/mauc",
-    "googleMapsUrl": "https://maps.google.com/?cid=3855822114062294594&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0053951,
-    "lng": 57.5537981,
-    "themes": [
-      "activites-enfants-famille",
-      "kids-friendly"
-    ],
-    "zone": "nord",
-    "description": "Resort tout compris situé sur une péninsule du nord de l'île avec deux plages abritées, plusieurs piscines et une offre variée de sports nautiques. Les avis soulignent une restauration abondante et de qualité, une bonne ambiance familiale (clubs enfants), mais des chambres jugées un peu datées par certains visiteurs."
   },
   {
     "id": "maheswarnath-institute",
@@ -13570,8 +13503,7 @@
     "lat": -20.0425168,
     "lng": 57.5523726,
     "themes": [
-      "activites-enfants-famille",
-      "kids-friendly"
+      "culture-patrimoine"
     ],
     "zone": "nord",
     "description": "Également appelé Maheswarnath Mandir ou « Grand Shivala », c'est le plus grand et l'un des plus anciens temples hindous de l'île, situé à Triolet et fondé en 1888. Il est dédié à Shiva et reste un lieu de pèlerinage important, notamment lié au pèlerinage vers Ganga Talao."
@@ -13579,7 +13511,7 @@
   {
     "id": "botteghita-ristorante-bar-2",
     "name": "Botteghita Ristorante & Bar",
-    "category": "sortir-decouvrir",
+    "category": "manger-boire",
     "address": "B13, Grand Baie",
     "phone": "+230 263 1635",
     "website": "https://botteghita.com/",
@@ -13587,45 +13519,14 @@
     "lat": -20.0095339,
     "lng": 57.5820612,
     "themes": [
-      "activites-enfants-famille",
+      "restaurants",
       "kids-friendly"
     ],
     "zone": "nord",
-    "description": "Restaurant italien de Grand Baie ouvert en soirée (18h-23h), réputé pour ses pâtes, pizzas et sa truffe fraîche, ainsi que son tiramisu très apprécié des clients. Les avis mettent en avant une ambiance chaleureuse et élégante et un service attentionné."
-  },
-  {
-    "id": "veranda-grand-baie-hotel-spa",
-    "name": "Veranda Grand Baie Hotel & Spa",
-    "category": "sortir-decouvrir",
-    "address": "MU, Route Royale, Grand Baie 30510",
-    "phone": "+230 209 8000",
-    "website": "https://veranda-resorts.com/en/mauritius-hotel-veranda-grand-baie",
-    "googleMapsUrl": "https://maps.google.com/?cid=5387474052800908622&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0084159,
-    "lng": 57.5788026,
-    "themes": [
-      "activites-enfants-famille",
-      "kids-friendly"
-    ],
-    "zone": "nord",
-    "description": "Hôtel 4 étoiles au cœur de Grand Baie, rénové en 2023 dans un style case créole, donnant sur le lagon avec jardins tropicaux. Les avis saluent l'accueil et le cadre, tandis que certains jugent le buffet du restaurant principal moyen comparé au restaurant de plage."
-  },
-  {
-    "id": "coin-de-mire-attitude-hotel",
-    "name": "Coin de Mire Attitude Hotel",
-    "category": "sortir-decouvrir",
-    "address": "Coastal Road, Cap Malheureux",
-    "phone": "+230 204 9900",
-    "website": "https://hotels-attitude.com/en/coin-de-mire-attitude",
-    "googleMapsUrl": "https://maps.google.com/?cid=18201708826649749325&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -19.9861562,
-    "lng": 57.6067746,
-    "themes": [
-      "activites-enfants-famille",
-      "kids-friendly"
-    ],
-    "zone": "nord",
-    "description": "Hôtel de milieu de gamme situé à Bain Bœuf, face à la plage avec vue sur l'îlot Coin de Mire, à environ 10 minutes de Grand Baie. Les visiteurs apprécient les activités nautiques gratuites (kayak, pédalo, bateau à fond de verre) et le personnel attentionné, dans un cadre calme."
+    "description": "Restaurant italien de Grand Baie ouvert en soirée (18h-23h), réputé pour ses pâtes, pizzas et sa truffe fraîche, ainsi que son tiramisu très apprécié des clients. Les avis mettent en avant une ambiance chaleureuse et élégante et un service attentionné.",
+    "filters": [
+      "italien"
+    ]
   },
   {
     "id": "team-building-mauritius",
@@ -21015,7 +20916,6 @@
     "lng": 57.3893461,
     "themes": [
       "culture-patrimoine",
-      "activites-enfants-famille",
       "kids-friendly"
     ],
     "zone": "sud",
@@ -22323,23 +22223,6 @@
     "zone": "centre",
     "description": "Marché couvert traditionnel de Port-Louis proposant produits frais, épices, textiles et artisanat local.",
     "hours": "Lun-Sam 5h-17h30, Dim 5h-11h30"
-  },
-  {
-    "id": "chamarel-mountain-chalets",
-    "name": "Chamarel Mountain Chalets",
-    "category": "sortir-decouvrir",
-    "address": "H98Q+P7J Piton Canot, Chamarel",
-    "phone": "+230 5252 2003",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=3019176159924128008&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.4331654,
-    "lng": 57.3881475,
-    "themes": [
-      "activites-enfants-famille",
-      "kids-friendly"
-    ],
-    "zone": "sud",
-    "description": "Chalets perchés sur les hauteurs de Chamarel offrant une vue panoramique quasi à 360° sur la vallée boisée et la côte ouest, avec piscine à débordement. Les avis louent le petit-déjeuner et l'accueil du personnel, mais notent l'isolement du site, les restaurants les plus proches se trouvant à 15-20 minutes à La Gaulette."
   },
   {
     "id": "renova-spa",
@@ -24395,7 +24278,6 @@
     "lng": 57.5372602,
     "themes": [
       "plages-nature",
-      "activites-enfants-famille",
       "kids-friendly"
     ],
     "zone": "sud",
@@ -24822,7 +24704,7 @@
     "lat": -20.2697988,
     "lng": 57.4726632,
     "themes": [
-      "activites-enfants-famille",
+      "excursions-sorties",
       "kids-friendly"
     ],
     "zone": "centre",
@@ -24839,7 +24721,6 @@
     "lat": -20.4832233,
     "lng": 57.353759,
     "themes": [
-      "activites-enfants-famille",
       "plages-nature",
       "kids-friendly"
     ],
@@ -24848,23 +24729,6 @@
     "filters": [
       "plages"
     ]
-  },
-  {
-    "id": "tamassa",
-    "name": "Tamassa",
-    "category": "sortir-decouvrir",
-    "address": "Coastal Road, Bel Ombre",
-    "phone": "+230 603 7300",
-    "website": "https://www.tamassaresorts.com/",
-    "googleMapsUrl": "https://maps.google.com/?cid=6244188607519248627&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.5087846,
-    "lng": 57.4160253,
-    "themes": [
-      "activites-enfants-famille",
-      "kids-friendly"
-    ],
-    "zone": "sud",
-    "description": "Hôtel 4 étoiles tout compris situé sur la côte sud-ouest à Bel Ombre, avec plusieurs piscines et accès direct à une plage calme. Les avis soulignent un personnel attentionné, une bonne restauration et une ambiance familiale conviviale."
   },
   {
     "id": "blue-bay-beach-2",
@@ -24877,7 +24741,7 @@
     "lat": -20.4441928,
     "lng": 57.7164692,
     "themes": [
-      "activites-enfants-famille",
+      "plages-nature",
       "kids-friendly"
     ],
     "zone": "sud",
@@ -24894,33 +24758,16 @@
     "lat": -20.4487075,
     "lng": 57.7109832,
     "themes": [
-      "activites-enfants-famille",
+      "plages-nature",
       "kids-friendly"
     ],
     "zone": "sud",
     "description": "Excursion à la journée en bateau (5-10 minutes de traversée depuis la région de Mahébourg) sur un îlot privé face à la réserve marine de Blue Bay, avec visite d'une villa construite au début du XXe siècle par le gouverneur britannique Sir Hesketh Bell, sortie en bateau à fond de verre et snorkeling."
   },
   {
-    "id": "kaz-alala-hosted-b-b",
-    "name": "Kaz'alala Hosted B&B",
-    "category": "sortir-decouvrir",
-    "address": "MU, Heritage MU, Bel Ombre 61002",
-    "phone": "+230 623 7918",
-    "website": "https://www.kazalala.com/",
-    "googleMapsUrl": "https://maps.google.com/?cid=9183979055670573818&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.5035252,
-    "lng": 57.4126711,
-    "themes": [
-      "activites-enfants-famille",
-      "kids-friendly"
-    ],
-    "zone": "sud",
-    "description": "Chambres d'hôtes installées à Bel Ombre dans d'anciennes maisons de camp sucrier réhabilitées, avec restaurant de cuisine locale Lakaz Mama et accès aux golf et plage du domaine voisin ; les avis soulignent l'accueil chaleureux et l'ambiance paisible."
-  },
-  {
     "id": "agria-meat-shop",
     "name": "Agrïa Meat Shop",
-    "category": "sortir-decouvrir",
+    "category": "manger-boire",
     "address": "Bel Ombre",
     "phone": "+230 5479 1672",
     "website": "http://www.agria.mu/",
@@ -24928,28 +24775,13 @@
     "lat": -20.5043408,
     "lng": 57.4029839,
     "themes": [
-      "activites-enfants-famille",
-      "kids-friendly"
+      "commerces-alimentaires"
     ],
     "zone": "sud",
-    "description": "Boutique de vente de viande à Bel Ombre adossée à un élevage de cerfs rusa, où le personnel explique la découpe et le conditionnement de la venaison et conseille les clients sur les morceaux selon les recettes."
-  },
-  {
-    "id": "frolic",
-    "name": "Frolic",
-    "category": "sortir-decouvrir",
-    "address": "MU, Ave des Lauriers roses, Tamarin 90901",
-    "phone": "",
-    "website": "https://frolic.mu/",
-    "googleMapsUrl": "https://maps.google.com/?cid=2826162410588625983&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.3390135,
-    "lng": 57.3706033,
-    "themes": [
-      "activites-enfants-famille",
-      "kids-friendly"
-    ],
-    "zone": "ouest",
-    "description": "Frolic est un guide numérique consacré aux sorties, événements et au style de vie à Maurice (restaurants, plages, activités), et non un lieu physique ouvert au public."
+    "description": "Boutique de vente de viande à Bel Ombre adossée à un élevage de cerfs rusa, où le personnel explique la découpe et le conditionnement de la venaison et conseille les clients sur les morceaux selon les recettes.",
+    "filters": [
+      "boucheries-poissons"
+    ]
   },
   {
     "id": "parc-loisir-gros-cailloux",
@@ -27734,23 +27566,6 @@
     ]
   },
   {
-    "id": "friday-attitude-hotel-2",
-    "name": "Friday Attitude Hotel",
-    "category": "sortir-decouvrir",
-    "address": "B59, Royal Road Belle Mare MU, Trou d'Eau Douce 742CU001",
-    "phone": "+230 402 7070",
-    "website": "https://hotels-attitude.com/en/friday-attitude",
-    "googleMapsUrl": "https://maps.google.com/?cid=2335362142634286642&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.2325092,
-    "lng": 57.803885,
-    "themes": [
-      "activites-enfants-famille",
-      "kids-friendly"
-    ],
-    "zone": "est",
-    "description": "Hôtel 3 étoiles de 50 chambres (dont 15 familiales) en bord de plage à Trou d'Eau Douce, à l'architecture créole et à l'ambiance décontractée, avec centre de plongée et restaurants (buffet, tapas mauriciens, food-truck)."
-  },
-  {
     "id": "bain-de-rosnay",
     "name": "Bain de Rosnay",
     "category": "sortir-decouvrir",
@@ -27761,7 +27576,7 @@
     "lat": -20.0355628,
     "lng": 57.68536,
     "themes": [
-      "activites-enfants-famille",
+      "plages-nature",
       "kids-friendly"
     ],
     "zone": "nord",
@@ -27770,7 +27585,7 @@
   {
     "id": "sands-grill-2",
     "name": "Sands Grill",
-    "category": "sortir-decouvrir",
+    "category": "manger-boire",
     "address": "Ile aux Cerfs Leisure Island, Trou d'Eau Douce",
     "phone": "+230 402 7720",
     "website": "https://www.ileauxcerfsgolfclub.com/paul-virginie-ile-aux-cerfs-golf-club/?utm_source=google&utm_medium=organic&utm_campaign=google_local_sands_grill",
@@ -27778,16 +27593,20 @@
     "lat": -20.264069,
     "lng": 57.803956,
     "themes": [
-      "activites-enfants-famille",
+      "restaurants",
       "kids-friendly"
     ],
     "zone": "est",
-    "description": "Restaurant de plage pieds dans le sable sur l'îlot Ile aux Cerfs, servant poissons et fruits de mer grillés, plats mauriciens simples et pizzas au four à bois, avec vue sur le lagon turquoise."
+    "description": "Restaurant de plage pieds dans le sable sur l'îlot Ile aux Cerfs, servant poissons et fruits de mer grillés, plats mauriciens simples et pizzas au four à bois, avec vue sur le lagon turquoise.",
+    "filters": [
+      "fruits-de-mer",
+      "plus-belles-vues"
+    ]
   },
   {
     "id": "tamarin-bay-surf-school",
     "name": "Tamarin Bay Surf School",
-    "category": "sortir-decouvrir",
+    "category": "faire-du-sport",
     "address": "Veranda Tamarin, Tamarin",
     "phone": "+230 5745 6759",
     "website": "https://surf-maurice.com/",
@@ -27795,12 +27614,15 @@
     "lat": -20.3272756,
     "lng": 57.377816,
     "themes": [
-      "activites-enfants-famille",
+      "sports-nautiques",
       "kids-friendly"
     ],
     "zone": "ouest",
     "description": "École de surf à Tamarin, seule école internationalement certifiée de l'île, proposant cours particuliers ou collectifs et location de planches, ainsi que des sorties d'observation des dauphins et baleines ; avis très positifs sur l'accueil et les moniteurs.",
-    "hours": "Tlj 9h-17h"
+    "hours": "Tlj 9h-17h",
+    "filters": [
+      "surf"
+    ]
   },
   {
     "id": "tamarin-bay-surf-school-faire-du-sport",
@@ -27822,94 +27644,9 @@
     ]
   },
   {
-    "id": "tropical-attitude-hotel",
-    "name": "Tropical Attitude Hotel",
-    "category": "sortir-decouvrir",
-    "address": "Royal Road, La Pelouse, B59, Trou d'Eau Douce 54703",
-    "phone": "+230 480 1300",
-    "website": "https://hotels-attitude.com/en/tropical-attitude",
-    "googleMapsUrl": "https://maps.google.com/?cid=13099944783736683281&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.2372341,
-    "lng": 57.8005028,
-    "themes": [
-      "activites-enfants-famille",
-      "kids-friendly"
-    ],
-    "zone": "est",
-    "description": "Hôtel boutique 3 étoiles supérieur réservé aux adultes, en bord de lagon à Trou d'Eau Douce près du village de pêcheurs et d'Ile aux Cerfs, 58 chambres et 11 villas, navettes vers Ile aux Cerfs et centre de plongée PADI."
-  },
-  {
-    "id": "oazure-villa-maurice",
-    "name": "OAZURE VILLA MAURICE",
-    "category": "sortir-decouvrir",
-    "address": "Royal Road, Roches Noires 31200",
-    "phone": "+230 411 5381",
-    "website": "https://www.oazure.com/fr",
-    "googleMapsUrl": "https://maps.google.com/?cid=7154682730605181842&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.1106595,
-    "lng": 57.7176992,
-    "themes": [
-      "activites-enfants-famille",
-      "kids-friendly"
-    ],
-    "zone": "est",
-    "description": "Agence de location de villas de luxe à Maurice (portefeuille d'environ 150 propriétés, souvent avec piscine ou accès plage privés), fondée en 2002, proposant un service de conciergerie comparable à celui d'un hôtel 5 étoiles."
-  },
-  {
-    "id": "sunrise-attitude-hotel",
-    "name": "Sunrise Attitude Hotel",
-    "category": "sortir-decouvrir",
-    "address": "Quatre Cocos",
-    "phone": "+230 401 1400",
-    "website": "https://hotels-attitude.com/en/sunrise-attitude",
-    "googleMapsUrl": "https://maps.google.com/?cid=1437075996701415791&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.1900689,
-    "lng": 57.7734237,
-    "themes": [
-      "activites-enfants-famille",
-      "kids-friendly"
-    ],
-    "zone": "est",
-    "description": "Hôtel 4 étoiles réservé aux adultes à Belle Mare, en face de la plage, avec chambres et villas sans télévision, spa aux produits naturels locaux, et démarche éco-responsable (mini-bar remplacé par une bulk shop en bocaux)."
-  },
-  {
-    "id": "bubble-lodge-ile-aux-cerfs",
-    "name": "Bubble Lodge Ile aux Cerfs",
-    "category": "sortir-decouvrir",
-    "address": "Ile aux Cerfs, Trou d'Eau Douce",
-    "phone": "+230 5255 1494",
-    "website": "http://www.bubble-lodge.com/fr/ile-aux-cerfs/",
-    "googleMapsUrl": "https://maps.google.com/?cid=9353015829430956980&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.2738079,
-    "lng": 57.8069707,
-    "themes": [
-      "activites-enfants-famille",
-      "kids-friendly"
-    ],
-    "zone": "est",
-    "description": "Hébergement insolite sur l'îlot golfique d'Ile aux Cerfs, sous forme de bulles transparentes avec salon, chambre et douche à ciel ouvert, accessible par navette bateau privée de 10 minutes, avec accès à une plage privée et au golf 18 trous."
-  },
-  {
-    "id": "c-mauritius",
-    "name": "C Mauritius",
-    "category": "sortir-decouvrir",
-    "address": "Coastal Road, Palmar, Mauritius",
-    "phone": "+230 460 1000",
-    "website": "https://www.c-resorts.com/cmauritius/",
-    "googleMapsUrl": "https://maps.google.com/?cid=10489011742365398502&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.2116716,
-    "lng": 57.791779,
-    "themes": [
-      "activites-enfants-famille",
-      "kids-friendly"
-    ],
-    "zone": "est",
-    "description": "Complexe hôtelier tout compris à Palmar, sur la côte est, à la décoration colorée et à l'ambiance décontractée, avec plusieurs piscines (dont une avec balançoires face à la mer), sports nautiques inclus (kayak, paddle) et accès à deux golfs 18 trous."
-  },
-  {
     "id": "crystal-diving-centre",
     "name": "Crystal Diving Centre",
-    "category": "sortir-decouvrir",
+    "category": "faire-du-sport",
     "address": "Diving Centre, C/o Crystals Beach Resort and Spa, Quatre Cocos",
     "phone": "+230 5967 9846",
     "website": "http://www.crystaldiving.mu/",
@@ -27917,28 +27654,14 @@
     "lat": -20.2079548,
     "lng": 57.7905459,
     "themes": [
-      "activites-enfants-famille",
+      "sports-nautiques",
       "kids-friendly"
     ],
     "zone": "est",
-    "description": "Centre de plongée PADI situé au Crystals Beach Resort and Spa à Quatre Cocos, sur la côte est, proposant baptêmes et sorties de plongée sur les récifs et sites de la région."
-  },
-  {
-    "id": "shangri-la-s-le-touessrok-resort-spa",
-    "name": "Shangri-La's Le Touessrok Resort & Spa",
-    "category": "sortir-decouvrir",
-    "address": "Coastal Road, Trou d'Eau Douce",
-    "phone": "+230 402 7400",
-    "website": "http://www.shangri-la.com/mauritius",
-    "googleMapsUrl": "https://maps.google.com/?cid=9690032271780972193&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.2515407,
-    "lng": 57.7972314,
-    "themes": [
-      "activites-enfants-famille",
-      "kids-friendly"
-    ],
-    "zone": "est",
-    "description": "Complexe hôtelier 5 étoiles à Trou d'Eau Douce réparti sur six plages de sable blanc et un îlot privé, avec cinq restaurants (dont cuisine japonaise et fusion indo-mauricienne) et spa."
+    "description": "Centre de plongée PADI situé au Crystals Beach Resort and Spa à Quatre Cocos, sur la côte est, proposant baptêmes et sorties de plongée sur les récifs et sites de la région.",
+    "filters": [
+      "plongee-sous-marine"
+    ]
   },
   {
     "id": "maritim-equestrian-centre",
@@ -28981,7 +28704,7 @@
     "lat": -20.003001,
     "lng": 57.6370702,
     "themes": [
-      "activites-enfants-famille",
+      "excursions-sorties",
       "kids-friendly"
     ],
     "zone": "nord",
@@ -29250,7 +28973,7 @@
     "lat": -20.1637146,
     "lng": 57.5102772,
     "themes": [
-      "activites-enfants-famille",
+      "culture-patrimoine",
       "kids-friendly"
     ],
     "zone": "centre",
@@ -29995,7 +29718,6 @@
     "lat": -20.4040066,
     "lng": 57.6979217,
     "themes": [
-      "activites-enfants-famille",
       "culture-patrimoine",
       "kids-friendly"
     ],
@@ -30022,7 +29744,6 @@
     "lat": -20.3511533,
     "lng": 57.7482305,
     "themes": [
-      "activites-enfants-famille",
       "culture-patrimoine",
       "kids-friendly"
     ],
@@ -30059,7 +29780,7 @@
     "lat": -20.2128493,
     "lng": 57.433716,
     "themes": [
-      "activites-enfants-famille",
+      "parcs-activites-famille",
       "kids-friendly"
     ],
     "promoText": "Visite uniquement accompagnée d'une soignante.",
@@ -34688,23 +34409,6 @@
     "description": "Musée gratuit installé dans les locaux historiques de la Banque de Maurice, rue Sir William Newton à Port-Louis, ouvert en 2018, qui retrace à travers environ 500 objets l'histoire monétaire de l'île depuis la période arabe jusqu'à nos jours."
   },
   {
-    "id": "tarisa-resort-and-spa-mauritius",
-    "name": "Tarisa Resort and Spa Mauritius",
-    "category": "sortir-decouvrir",
-    "address": "XHH4+R75, B36, Grand Baie",
-    "phone": "+230 265 6600",
-    "website": "http://www.tarisa-resort.com",
-    "googleMapsUrl": "https://maps.google.com/?cid=12591153145110975866&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0204875,
-    "lng": 57.555746,
-    "themes": [
-      "activites-enfants-famille",
-      "kids-friendly"
-    ],
-    "zone": "nord",
-    "description": "Hôtel 3 étoiles à Mont Choisy dans le nord de l'île, à proximité de la plage, avec deux piscines extérieures, court de tennis et restaurant proposant un buffet et une cuisine tandoori."
-  },
-  {
     "id": "dadou-excursion-all-about-sea-activity",
     "name": "DaDou excursion all about sea activity",
     "category": "sortir-decouvrir",
@@ -34715,7 +34419,7 @@
     "lat": -20.215784,
     "lng": 57.4018984,
     "themes": [
-      "activites-enfants-famille",
+      "excursions-sorties",
       "kids-friendly"
     ],
     "zone": "centre",
@@ -35259,7 +34963,7 @@
     "lat": -20.3150564,
     "lng": 57.5286852,
     "themes": [
-      "activites-enfants-famille",
+      "excursions-sorties",
       "kids-friendly"
     ],
     "zone": "centre",
@@ -36167,7 +35871,7 @@
     "lat": -20.2365636,
     "lng": 57.7927071,
     "themes": [
-      "activites-enfants-famille",
+      "excursions-sorties",
       "kids-friendly"
     ],
     "zone": "est",
@@ -36259,23 +35963,6 @@
     ],
     "zone": "est",
     "description": "Galerie d'art de Central Flacq présentant les œuvres contemporaines de l'artiste mauricien Mohammad Asraf Sowdayer ainsi que d'autres créateurs locaux et internationaux."
-  },
-  {
-    "id": "bookmauritius-villas",
-    "name": "Bookmauritius Villas",
-    "category": "sortir-decouvrir",
-    "address": "10, Villas du Golf MU, Poste de Flacq 41513",
-    "phone": "+230 415 6122",
-    "website": "https://bookmauritius-villas.com/",
-    "googleMapsUrl": "https://maps.google.com/?cid=15756701811460676337&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.1651816,
-    "lng": 57.7595617,
-    "themes": [
-      "activites-enfants-famille",
-      "kids-friendly"
-    ],
-    "zone": "est",
-    "description": "Agence de location de villas de standing et service de conciergerie, avec des biens principalement en bord de mer sur la côte est ; propose transferts aéroport, location de voiture et services de personnel de maison (chef, majordome, femme de ménage)."
   },
   {
     "id": "la-friandise",
@@ -37064,7 +36751,6 @@
     "lng": 57.4978549,
     "themes": [
       "plages-nature",
-      "activites-enfants-famille",
       "kids-friendly"
     ],
     "zone": "centre",
@@ -38302,7 +37988,6 @@
     "lng": 57.48,
     "themes": [
       "culture-patrimoine",
-      "activites-enfants-famille",
       "kids-friendly"
     ],
     "badge": "selection",
@@ -38319,7 +38004,6 @@
     "phone": "+230 5787 4725",
     "whatsapp": "+230 5787 4725",
     "themes": [
-      "activites-enfants-famille",
       "culture-patrimoine",
       "kids-friendly"
     ],
@@ -39435,7 +39119,6 @@
     "lat": -20.5047007,
     "lng": 57.4117423,
     "themes": [
-      "activites-enfants-famille",
       "culture-patrimoine",
       "kids-friendly"
     ],
@@ -49649,7 +49332,6 @@
     "googleMapsUrl": "https://www.google.com/maps/search/Historic+Marine+The+Vale+Mauritius",
     "themes": [
       "culture-patrimoine",
-      "activites-enfants-famille",
       "kids-friendly"
     ],
     "hours": "Lun-Ven 9h-17h, Sam-Dim et jours fériés 9h-12h",
@@ -50110,7 +49792,7 @@
     "phone": "+230 5253 0900",
     "website": "http://www.lafermcoco.mu/",
     "themes": [
-      "activites-enfants-famille",
+      "culture-patrimoine",
       "kids-friendly"
     ],
     "zone": "sud",
