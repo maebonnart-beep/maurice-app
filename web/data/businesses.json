@@ -3222,7 +3222,7 @@
     "difficultyLevel": "confirme",
     "guideRecommended": true,
     "zone": "ouest",
-    "description": "Piste large en forêt sèche jusqu'au panneau d'avertissement, puis escalade technique (mains libres, passages exposés) vers la croix sommitale. Vue sur les récifs du sud-ouest et la \"cascade sous-marine\". Site classé UNESCO ; guide recommandé pour la partie finale."
+    "description": "Piste large en forêt sèche jusqu'au panneau d'avertissement, puis escalade technique (mains libres, passages exposés, cordes fixes) vers la croix sommitale du monolithe basaltique (556 m). Vue sur les récifs du sud-ouest et la « cascade sous-marine », illusion d'optique due aux sédiments sous-marins. Refuge des esclaves marrons dès le 18ᵉ siècle, site classé UNESCO depuis 2008 ; guide recommandé pour la partie finale."
   },
   {
     "id": "black-river-gorges-national-park",
@@ -3267,7 +3267,7 @@
     "guideRecommended": true,
     "zone": "ouest",
     "distance": "6 km",
-    "description": "Boucle de 6 km menant à la cascade de 100 m et aux dunes de sable multicolores, avec parfois des tortues géantes en chemin."
+    "description": "Boucle de 6 km reliant la cascade de Chamarel, chute d'environ 100 m (l'une des plus hautes d'un seul jet de l'île), à la curiosité géologique des Terres des Sept Couleurs, dunes d'argile volcanique aux tons ocre, violet et vert nées d'une érosion différentielle. Plateforme d'observation aménagée face à la cascade ; tortues géantes d'Aldabra visibles sur le site attenant."
   },
   {
     "id": "lion-mountain",
@@ -3289,7 +3289,7 @@
     "difficultyLevel": "confirme",
     "guideRecommended": true,
     "zone": "sud",
-    "description": "Traversée de champs de canne à sucre puis ascension technique de l'arête rocheuse jusqu'à la \"Tête de Lion\", passage exposé. Panorama à 360° sur le lagon et la ceinture sucrière. À éviter par temps humide ; pensez au répulsif anti-moustiques."
+    "description": "Traversée de champs de canne à sucre depuis le poste de police de Vieux Grand Port, puis ascension technique de l'arête rocheuse jusqu'à la « Tête de Lion » (environ 480 m), via un passage étroit équipé d'un filet métallique. Sentier non balisé, à éviter par temps humide (roche glissante) ; panorama à 360° sur le lagon et la ceinture sucrière. Pensez au répulsif anti-moustiques."
   },
   {
     "id": "pieter-both-mountain",
@@ -3308,7 +3308,7 @@
     "difficultyLevel": "confirme",
     "guideRecommended": true,
     "zone": "centre",
-    "description": "Ascension technique vers le deuxième plus haut sommet de l'île (820 m), au départ du village de La Laura ; pentes raides et usage de cordes pour l'approche finale du rocher sommital."
+    "description": "Ascension technique vers le deuxième plus haut sommet de l'île (820 m), au départ du village de La Laura, à travers une forêt indigène abritant des oiseaux endémiques. Le parcours se scinde en deux étapes : « l'épaule », accessible à un randonneur entraîné, puis le bloc rocheux sommital réservé aux plus aguerris, où des cordes fixes (mais vieillissantes) sont indispensables. Comptez une journée complète ; guide obligatoire pour la partie sommitale."
   },
   {
     "id": "le-pouce-mountain",
@@ -3337,7 +3337,7 @@
       "/photos/le-pouce-mountain-4.jpg",
       "/photos/le-pouce-mountain-5.jpg"
     ],
-    "description": "Ascension gratifiante vers le sommet du Pouce (812 m), 3ᵉ plus haut sommet de l'île, surnommé « The Thumb » pour son pinacle rocheux caractéristique. Depuis Petit Verger, le sentier balisé traverse cannes à sucre et forêt avant de déboucher sur des pentes herbeuses ; l'approche finale, raide et physique sur roche volcanique, nécessite de bonnes chaussures et l'usage des mains. Vue à 360° sur Port-Louis, la chaîne de Moka et les îles du nord comme Coin de Mire ; attention à la boue glissante après la pluie, fréquente sur l'île.",
+    "description": "Ascension gratifiante vers le sommet du Pouce (812 m), 3ᵉ plus haut sommet de l'île, surnommé « The Thumb » pour son pinacle rocheux caractéristique, entre la Montagne des Signaux et le Pieter Both (820 m) sur la même chaîne. Depuis Petit Verger, le sentier balisé traverse cannes à sucre et forêt avant de déboucher sur des pentes herbeuses ; l'approche finale, raide et physique sur roche volcanique, nécessite de bonnes chaussures et l'usage des mains. Vue à 360° sur Port-Louis, la chaîne de Moka et les îles du nord comme Coin de Mire ; attention à la boue glissante après la pluie, fréquente sur l'île.",
     "koteMorisComment": "Superbe balade, une rando bien balisée avec un aller-retour par le même chemin (100% montée puis 100% descente). Le final est un peu délicat, sur terrain glissant (surtout en hiver), mais la vue est splendide sur Port-Louis et ses environs, avec l'océan à 360°. Possible avec des enfants à partir de 8-10 ans, sportifs. Pas besoin de guide, mais la montée est assez soutenue : mieux vaut avoir une bonne condition physique, même si le sentier reste largement accessible."
   },
   {
@@ -3359,7 +3359,7 @@
     "difficultyLevel": "confirme",
     "guideRecommended": true,
     "zone": "centre",
-    "description": "Traversée d'un champ agricole puis crête rocheuse étroite jusqu'à la selle des Trois Mamelles, final vertigineux entre corniches et à-pics, avec vue globale sur l'île."
+    "description": "Ascension technique vers le pic central des Trois Mamelles (670 m), encadré par les pics est et ouest (571 m et 560 m). Traversée de champs de canne puis crête rocheuse étroite et exposée, à négocier mains libres par endroits, avec vue panoramique sur le sud-ouest de l'île. Sentier glissant et dangereux par temps de pluie : à éviter dans ces conditions."
   },
   {
     "id": "corps-de-garde",
@@ -3379,7 +3379,7 @@
     "elevationGain": "593 m D+",
     "difficultyLevel": "habitue",
     "zone": "centre",
-    "description": "Montée soutenue vers le rocher perché emblématique de Beau Bassin-Rose Hill, panorama à 360° sur la côte ouest, les plaines centrales et Pieter Both."
+    "description": "Montée soutenue vers le rocher perché emblématique de Beau Bassin-Rose Hill (720 m), sentier bien tracé jusqu'à un gros bloc en forme de visage que l'on franchit à la force des bras. Panorama à 360° sur Rose Hill, Quatre Bornes, Flic en Flac et les sommets voisins (Trois Mamelles, Le Morne, Pieter Both), avec vue sur la cascade de La Ferme se jetant dans le réservoir du même nom. Peu d'ombre sur le parcours : départ matinal conseillé."
   },
   {
     "id": "foret-de-macchabee",
@@ -3399,7 +3399,7 @@
     "difficultyLevel": "habitue",
     "guideRecommended": false,
     "zone": "ouest",
-    "description": "Sentier à travers l'un des derniers vestiges de forêt tropicale indigène de l'île, au cœur du parc national des Gorges de Rivière Noire. Terrain accessible et dénivelé modéré, loin des ascensions techniques du massif du Pieter Both. Espèces endémiques rares (paille-en-queue, perroquet mauricien/écho) ; le nom rappelle l'histoire des esclaves fugitifs réfugiés dans ces hauteurs."
+    "description": "Sentier à travers l'un des derniers vestiges de forêt tropicale indigène de l'île, au cœur du parc national des Gorges de Rivière Noire, sur une portion du réseau de pistes reliant Pétrin aux points de vue d'Alexandra Falls et du Piton de la Petite Rivière Noire. Terrain accessible et dénivelé modéré, loin des ascensions techniques du massif du Pieter Both. Espèces endémiques rares (paille-en-queue, perroquet mauricien/écho) ; le nom rappelle l'histoire des esclaves fugitifs réfugiés dans ces hauteurs."
   },
   {
     "id": "cap-malheureux-grand-gaube",
@@ -3421,7 +3421,7 @@
     "difficultyLevel": "debutant",
     "guideRecommended": false,
     "zone": "nord",
-    "description": "Chemin côtier sans dénivelé notable, en longeant la plage entre Cap Malheureux et Grand Gaube, entre petits villages de pêcheurs, cocotiers et plages peu fréquentées, plus sauvage que les stations balnéaires voisines. Départ depuis l'église rouge de Cap Malheureux, avec vue par temps clair sur les îlots environnants (île aux Bernaches, île Plate) ; un petit temple hindou en bord de mer et de belles petites anses pour la baignade jalonnent le parcours. Balade accessible en famille, à faire à son rythme."
+    "description": "Chemin côtier à parcourir de préférence à marée basse, en longeant la plage entre Cap Malheureux et Grand Gaube, entre petits villages de pêcheurs, cocotiers et plages peu fréquentées, plus sauvage que les stations balnéaires voisines. Départ depuis l'église rouge de Cap Malheureux, avec vue par temps clair sur les îlots environnants (île aux Bernaches, île Plate) ; à 10 minutes de marche, le temple hindou Sri Draubadi Ammen, bâti au début du 19ᵉ siècle par des travailleurs engagés d'Inde du Sud, puis de belles petites anses pour la baignade. Bonnes chaussures conseillées pour les passages sur roche volcanique (oursins) ; arrivée à Grand Gaube, village créole de pêcheurs réputé pour ses pirogues en bois de jacquier. Balade accessible en famille, à faire à son rythme."
   },
   {
     "id": "tamarin-sept-cascades",
@@ -3442,7 +3442,7 @@
     "difficultyLevel": "habitue",
     "guideRecommended": true,
     "zone": "ouest",
-    "description": "Descente technique dans les gorges de la rivière Tamarin le long des 7 Cascades (chute principale d'environ 300 m), parois de basalte glissantes, passages à la corde ; possibilité de canyoning (rappels, glissades, sauts) avec un prestataire spécialisé. Baignades possibles dans les vasques ; guide local fortement recommandé."
+    "description": "Descente technique dans les gorges de la rivière Tamarin le long des 7 Cascades, dont la hauteur cumulée avoisine 300 m sur l'ensemble du système, parois de basalte glissantes, passages à la corde ; possibilité de canyoning (rappels de 10 à 55 m, tyrolienne naturelle, sauts) avec un prestataire spécialisé. Baignades possibles dans les vasques ; guide local fortement recommandé."
   },
   {
     "id": "tamarin-sept-cascades-sortir-decouvrir",
@@ -3483,7 +3483,7 @@
     "difficultyLevel": "habitue",
     "guideRecommended": true,
     "zone": "sud",
-    "description": "Trois parcours balisés (bleu 5 km/75 m D+, jaune 13 km/530 m D+, rouge 18-20 km/970 m D+) en forêt endémique protégée, avec vue sur la baie de Mahébourg et observation possible de la crécerelle de Maurice.",
+    "description": "Trois parcours balisés en forêt endémique protégée (bleu 5 km/75 m D+, jaune 13 km/530 m D+, rouge 18-20 km/970 m D+), avec des points de vue sur la baie de Mahébourg et les îlots du sud-est. La réserve a joué un rôle clé dans le sauvetage de la crécerelle de Maurice, passée de 4 individus recensés en 1974 à près de 600 aujourd'hui, régulièrement observable sur les sentiers aux côtés de pigeons roses et de cateaux verts.",
     "entryPrice": "200 Rs"
   },
   {
@@ -3581,7 +3581,7 @@
     "guideRecommended": true,
     "zone": "centre",
     "entryPrice": "Rs 250 adulte / Rs 175 enfant (boucle libre) ; ~Rs 2500/pers. (guidée)",
-    "description": "Réserve privée avec boucle en accès libre de 7 km (~2h) ou sortie guidée de 3h, peuplée de cerfs, sangliers et oiseaux endémiques comme la crécerelle de Maurice."
+    "description": "Réserve privée de 1200 hectares dans l'est de l'île, site historique du 18ᵉ siècle quadrillé par 60 km de pistes. Boucle en accès libre de 7 km (~2h) ou sortie guidée de 3h à la rencontre de cerfs de Java et de sangliers en semi-liberté, avec possibilité d'observer des oiseaux endémiques comme la crécerelle de Maurice."
   },
   {
     "id": "yemen-nature-reserve",
@@ -3601,7 +3601,7 @@
     "difficultyLevel": "habitue",
     "guideRecommended": true,
     "zone": "ouest",
-    "description": "Domaine privé de savane africaine (acacias, cerfs) à parcourir à pied ou en vélo électrique sur le Medine Trail, avec vue sur mer ; accès restreint en période de chasse (juin-septembre)."
+    "description": "Domaine privé de savane à l'africaine (hautes herbes sèches, acacias) entre Cascavelle et Rivière Noire, encadré par les massifs du Rempart, des Trois Mamelles et de la Tourelle du Tamarin. Parcours à pied ou en vélo électrique sur les traces du Medine Trail annuel (5 à 28 km), avec vue sur mer et faune variée (cerfs, tangues, singes, pintades) ; accès restreint en période de chasse (juin-septembre)."
   },
   {
     "id": "bel-ombre-hiking-trail",
@@ -3620,7 +3620,7 @@
     "difficultyLevel": "habitue",
     "guideRecommended": true,
     "zone": "sud",
-    "description": "Randonnée guidée de 2h à travers la forêt endémique de la réserve, avec une halte rafraîchissante à une cascade en cours de route."
+    "description": "Randonnée guidée de type « Two Waterfalls Trail » (5h, ~7,6 km) à travers la réserve de 1300 hectares de Bel Ombre, encadrée par des rangers formés par la Mauritian Wildlife Foundation. Parcours de difficulté modérée menant à deux cascades, Frédérica et l'Exemple, où la baignade est possible ; forêt abritant des espèces menacées (bois chandelle, bois de natte, orchidées sauvages) et des oiseaux endémiques comme l'écho parakeet."
   },
   {
     "id": "frederica-nature-reserve",
@@ -3640,7 +3640,7 @@
     "difficultyLevel": "habitue",
     "guideRecommended": true,
     "zone": "sud",
-    "description": "Réserve de 1300 hectares intégrée au domaine de Bel Ombre, sentiers de 1h à une journée selon le circuit, dont le Two Waterfalls Trail menant à la cascade L'Exemple."
+    "description": "Réserve de près de 1300 hectares intégrée au domaine de Bel Ombre, sentiers de 1h à une journée selon le circuit. Le Two Waterfalls Trail (Grade 3, modéré), guidé par des rangers formés par la Mauritian Wildlife Foundation, relie les cascades Frédérica et l'Exemple où la baignade est possible, à travers une forêt peuplée de singes, pigeons roses, sangliers et cerfs de Java."
   },
   {
     "id": "domaine-anna-flic-en-flac",
@@ -5228,7 +5228,7 @@
     "difficultyLevel": "confirme",
     "guideRecommended": true,
     "zone": "ouest",
-    "description": "Montée régulière depuis le Black River Viewpoint ou Plaine Champagne jusqu'au sommet du Piton, point culminant de l'île, avec panorama sur le parc national et la côte ouest."
+    "description": "Montée depuis le Black River Viewpoint ou Plaine Champagne jusqu'au sommet du Piton, point culminant de l'île (828 m) où trône le banc « Bench 828 ». Environ 4 km sous canopée forestière puis 200 derniers mètres à découvert, pentus, équipés de cordes pour faciliter l'ascension. Panorama sur le parc national, Le Morne Brabant, la Tourelle du Tamarin et l'île aux Bénitiers ; terrain boueux fréquent, bonnes chaussures indispensables."
   },
   {
     "id": "casela-nature-parks",
@@ -7938,7 +7938,7 @@
     "elevationGain": "259 m D+",
     "duration": "1,5-2h, aller-retour",
     "difficultyLevel": "habitue",
-    "description": "Traversée de la forêt d'ébène restaurée, riche en espèces endémiques, avant une montée finale vers le belvédère du Piton Canot dominant tout l'ouest de l'île. Comptez 1h30 à 4h selon les sentiers choisis.",
+    "description": "Traversée de la forêt d'ébène restaurée depuis 2007 (plus de 150 000 plants endémiques replantés), abritant six espèces d'oiseaux rares dont le pigeon rose et le cateau vert. Montée finale vers le belvédère du Piton Canot (542 m, ~45 min aller-retour) dominant tout l'ouest de l'île, ou halte au point de vue Sublime Point sur Le Morne Brabant. Comptez 1h30 à 4h selon les sentiers choisis.",
     "hours": "Tous les jours 9h-17h"
   },
   {
@@ -12647,7 +12647,7 @@
     "themes": [
       "randonnee-trail"
     ],
-    "description": "Société de randonnée/trekking à Rivière Noire : Gorges de Rivière Noire, 7 Cascades, trail running, kayak dauphins",
+    "description": "Agence de randonnée et trekking basée à Rivière Noire, sous la marque Trekking Mauritius : sorties guidées dans les Gorges de Rivière Noire (dont la vallée des chauves-souris géantes), aux 7 Cascades de Tamarin, trail running, et kayak à la rencontre des dauphins dans la baie de Tamarin.",
     "duration": "Randonnée ~3-4h ; kayak ~2h30",
     "entryPrice": "~50€/pers (rando) ; ~45€/pers (kayak dauphins)",
     "zone": "ouest",
@@ -12763,7 +12763,7 @@
     "distance": "2,7 km",
     "elevationGain": "157 m D+",
     "difficultyLevel": "habitue",
-    "description": "Balade courte près de St. Martin jusqu'à un point de vue sur la cascade et sa végétation environnante, appréciée pour l'observation des oiseaux. Accessible sans guide depuis le centre d'information du parc, contrairement à la Cascade 500 Pieds voisine — la plus adaptée aux familles. Chiens acceptés."
+    "description": "Sentier de 2,7 km (157 m D+, environ 1h30) menant à un point de vue sur la cascade Alexandra et la forêt nuageuse du Mont Cocotte, avec vue dégagée sur toute la côte sud depuis le plateau du parc national des Gorges de Rivière Noire. Accessible sans guide depuis le centre d'information du parc, contrairement à la Cascade 500 Pieds voisine ; réputé pour l'observation des oiseaux, avec un débit plus impressionnant de novembre à avril. Chiens acceptés."
   },
   {
     "id": "otentic-eco-tent-experience",
@@ -17207,7 +17207,7 @@
     "elevationGain": "432 m D+",
     "duration": "2h05, boucle",
     "difficultyLevel": "confirme",
-    "description": "Boucle pentue et technique jusqu'au sommet de la Tourelle du Tamarin, point de vue à 360°, avec des cordes fixes sur les passages les plus raides."
+    "description": "Boucle pentue et technique jusqu'au sommet de la Tourelle du Tamarin (432 m D+), au départ du réservoir de Black Rock. Ascension en crête avec plusieurs passages rocheux mains libres, équipés de cordes fixes sur les sections les plus raides, jusqu'à un point de vue à 360° sur Le Morne Brabant, l'île aux Bénitiers et la plage de La Preneuse. Terrain privé (accès toléré) ; chaleur et broussailles épineuses à prévoir, avec suffisamment d'eau."
   },
   {
     "id": "gorges-viewpoint",
@@ -17264,7 +17264,7 @@
     "distance": "4,6 km (aller simple)",
     "elevationGain": "721 m D+",
     "difficultyLevel": "confirme",
-    "description": "Sentier Machabée exigeant menant au point culminant de l'île (828 m) par le versant nord du Piton de la Petite Rivière Noire."
+    "description": "Sentier Machabée exigeant menant au point culminant de l'île (828 m) par le versant nord du Piton de la Petite Rivière Noire, sur une ancienne piste forestière suivant une crête boisée. Plus long et plus engagé (721 m D+ sur 4,6 km aller simple) que la voie classique depuis Plaine Champagne, il offre des vues similaires sur le parc national et la côte ouest."
   },
   {
     "id": "salines-de-yemen-tamarin",
@@ -17436,7 +17436,7 @@
     "guideRecommended": false,
     "zone": "ouest",
     "distance": "9,2 km",
-    "description": "Balade côtière reliant les plages de Tamarin et de Flic en Flac le long du littoral rocheux, avec vue continue sur le lagon et les collines de l'ouest."
+    "description": "Balade côtière reliant les plages de Tamarin et de Flic en Flac : on longe d'abord le sable de la plage de Flic en Flac, l'une des plus longues de l'île, avant de rejoindre un sentier littoral plus sauvage sur le pourtour rocheux, au pied de la Tourelle du Tamarin. Vue continue sur le lagon et les collines de l'ouest, tronçon étonnamment calme malgré la proximité des complexes hôteliers."
   },
   {
     "id": "golden-wave-charters-big-game-fishing-igfa-captain-victor-pe",
@@ -17851,7 +17851,7 @@
     "elevationGain": "240 m D+",
     "duration": "2h42, boucle",
     "difficultyLevel": "habitue",
-    "description": "Longue boucle en forêt indigène du plateau, ponctuée par la cascade cachée de la Mare aux Joncs, entre sous-bois dense et clairières ouvertes. Point de départ à proximité d'un parking."
+    "description": "Longue boucle en forêt indigène du plateau depuis le centre des visiteurs de Rivière Noire, ponctuée par la cascade cachée de la Mare aux Joncs et ses vasques, entre sous-bois dense et clairières ouvertes. Plusieurs traversées de rivière à gué, glissantes par endroits, et des passages boueux après la pluie : bonnes chaussures et répulsif anti-moustiques recommandés."
   },
   {
     "id": "casa-events-renting-jumping-castle-chateau-gonflable-mauriti",
@@ -20580,7 +20580,7 @@
     "elevationGain": "208 m D+",
     "duration": "Aller-retour",
     "difficultyLevel": "habitue",
-    "description": "Montée régulière mais escarpée par endroits, alternant sections boueuses et vue dégagée, jusqu'au sommet du Piton du Canot au cœur du parc national des Gorges de Rivière Noire."
+    "description": "Montée depuis le parking du restaurant Le Chamarel, sentier bien tracé dont le dernier tiers, plus raide, se fait plus envahi par la végétation. Alternance de sections boueuses et de vue dégagée jusqu'au sommet du Piton du Canot (542 m), au cœur du parc national des Gorges de Rivière Noire, avec panorama à 360° sur la Tourelle du Tamarin, l'île aux Bénitiers, Le Morne Brabant et le lagon du sud-ouest."
   },
   {
     "id": "mauritius-dolphin-swimming-snorkling-ile-aux-benitiers-live-",
@@ -20997,7 +20997,7 @@
       "kids-friendly"
     ],
     "zone": "centre",
-    "description": "Arboretum et sentier forestier de 10 hectares au cœur de l'île, avec musée d'outils forestiers d'époque et serre de fougères ; boucle Ébène de 3 km parmi essences endémiques, oiseaux et singes.",
+    "description": "Arboretum et sentier forestier de 10 hectares dans la région de Mare-aux-Vacoas, au cœur de l'île, abritant l'unique musée forestier de Maurice (anciens outils d'exploitation du bois) et une serre de fougères. Boucle Ébène ombragée d'environ 3 km parmi essences endémiques, fougères, oiseaux et parfois des singes ; entrée gratuite, aires de pique-nique, balade facile appréciée en famille.",
     "duration": "Boucle Ébène ~3 km",
     "entryPrice": "Gratuit"
   },
@@ -21196,7 +21196,7 @@
     "zone": "centre",
     "isAgency": true,
     "duration": "~3h30-4h de marche",
-    "description": "Agence locale organisant des sorties de randonnée guidées d'environ 3h30 à 4h à travers l'île."
+    "description": "Agence locale basée à Vacoas-Phoenix, fondée en 2019 par Wesley Couronne, passionné de nature. Sorties guidées de 3h30 à 4h vers les grands classiques de la randonnée mauricienne : 7 Cascades d'Henrietta, Le Morne Brabant, la Tourelle du Tamarin, le Piton de la Petite Rivière Noire, les Trois Mamelles, Lion Mountain ou Le Pouce, avec des parcours adaptés aussi bien aux familles qu'aux randonneurs expérimentés."
   },
   {
     "id": "radventure-experience-mauritius",
@@ -21213,7 +21213,7 @@
     ],
     "zone": "est",
     "isAgency": true,
-    "description": "Agence locale basée à Plaine des Roches dirigée par un guide certifié (premiers secours, escalade) : randonnées sur mesure (Tamarind Falls, Le Morne, sommets), kayak dans la mangrove, exploration de tunnels de lave et circuits découverte de l'île.",
+    "description": "Agence locale basée à Plaine des Roches, dans le nord-est, dirigée par Raza, guide certifié (premiers secours) fort de plus de cinq ans d'expérience. Randonnées sur mesure vers Tamarind Falls, Le Morne ou les sommets du centre, kayak entre lagon et mangrove entre Pointe des Lascar et Roches Noires (oiseaux, poissons, crabes), exploration de tunnels de lave et circuits découverte de l'île, avec transferts possibles depuis l'hôtel.",
     "duration": "Variable selon activité",
     "entryPrice": "Tarifs sur devis"
   },
@@ -21236,7 +21236,7 @@
     "zone": "sud",
     "distance": "5,6 km",
     "elevationGain": "217 m D+",
-    "description": "Traversée forestière tranquille jusqu'à un plateau isolé du parc national des Gorges de Rivière Noire, apprécié pour son calme, loin des sentiers les plus fréquentés."
+    "description": "Depuis le centre des visiteurs de Rivière Noire, sentier forestier tranquille jusqu'à l'embranchement du Macchabée, puis montée d'une combe d'une centaine de mètres avant d'atteindre le plateau isolé de Resmousse. Deux traversées de rivière à gué en chemin (prévoir de quoi sécher les pieds et un répulsif anti-moustiques) ; vue dégagée sur Tamarin depuis le point de vue, loin des sentiers les plus fréquentés du parc."
   },
   {
     "id": "hiking-in-mauritius-zilwaventure",
@@ -21253,7 +21253,7 @@
     ],
     "zone": "ouest",
     "isAgency": true,
-    "description": "Randonnées privées guidées par Zac, ultra-traileur détenteur du record du tour de l'île à pied : parcours adaptés à tous niveaux vers les 7 Cascades, Le Morne Brabant, le Parc National ou le Piton du Canot.",
+    "description": "Randonnées privées guidées par Zac, ultra-traileur détenteur du record du tour de l'île à pied, basé à Tamarin. Parcours adaptés à tous niveaux vers les 7 Cascades d'Henrietta (départ du plateau central, sentier technique en forêt dense), Le Morne Brabant, le Parc National des Gorges de Rivière Noire ou le Piton du Canot.",
     "duration": "2h30 à 4h selon le parcours",
     "entryPrice": "À partir de 100€/pers (Piton du Canot) jusqu'à 140€/pers (7 Cascades, Parc National)"
   },
@@ -24650,7 +24650,7 @@
     "zone": "centre",
     "distance": "3 km",
     "elevationGain": "280 m D+",
-    "description": "Montée courte et accessible sur route asphaltée depuis Port-Louis, avec vue panoramique sur la capitale, le port et la côte ouest ; sentier prisé au coucher de soleil."
+    "description": "Montée courte et accessible sur route asphaltée (praticable à pied comme en véhicule), surplombant Port-Louis de 323 m, autrefois utilisée pour signaler l'arrivée des navires et refuge pour des esclaves marrons en fuite. Vue à 360° sur la capitale, le port, les montagnes de Moka et l'océan Indien ; bancs aménagés au sommet, sentier particulièrement prisé à l'heure du coucher de soleil."
   },
   {
     "id": "royal-big-game-fishing-original",
@@ -27106,7 +27106,7 @@
     "zone": "est",
     "distance": "5,3 km",
     "elevationGain": "76 m D+",
-    "description": "Boucle ombragée dans une forêt de mahogany et de vergers (sentier du Coq de Bois), passant par les ruines d'une ancienne usine sucrière (Puits Français) et le lac Mare Sarcelle ; oiseaux tropicaux et singes macaques fréquents. Sentier bien balisé et peu accidenté, mais en grande partie sur roches volcaniques instables : de bonnes chaussures sont recommandées. Quelques chiens errants signalés dans les bois."
+    "description": "Boucle ombragée (Coq de Bois Loop) dans une forêt de mahogany et un verger d'environ 2000 manguiers et 200 litchis, passant par les ruines d'une ancienne usine sucrière fermée en 1867 (Puits Français) et le lac Mare Sarcelle. Le gobemouche de paradis de Maurice, localement surnommé « coq de bois », y est parfois observé, aux côtés de singes macaques. Sentier bien balisé et peu accidenté, mais en grande partie sur roches volcaniques instables : de bonnes chaussures sont recommandées. Quelques chiens errants signalés dans les bois."
   },
   {
     "id": "calypso-excursion-mauritius",
@@ -27156,7 +27156,7 @@
     "difficultyLevel": "debutant",
     "guideRecommended": false,
     "zone": "sud",
-    "description": "Réserve de 275 hectares avec deux sentiers : la boucle facile de la Cascade Tortue et le sentier plus technique du Mirador (Tambalacoque), avec vues sur les monts Lagrave et Laselle."
+    "description": "Réserve de 275 hectares abritant 67 des 680 espèces végétales endémiques de Maurice, dont certains spécimens vieux de plus de 200 ans (tambalacoque, bois clou, bois perroquet). Deux sentiers : la boucle facile vers la Cascade Tortue, nommée d'après un rocher en forme de carapace, avec vasques naturelles pour se rafraîchir, et le sentier plus technique du Mirador (Tambalacoque), avec vues sur les monts Lagrave et Laselle. Un enclos de tortues complète la visite."
   },
   {
     "id": "vallee-d-osterlog-endemic-garden-sortir-decouvrir",
@@ -35528,7 +35528,7 @@
   },
   {
     "id": "bel-ombre-hiking-trail-2",
-    "name": "Bel Ombre Hiking Trail",
+    "name": "Plaine Champagne - Sentier de randonnée",
     "category": "faire-du-sport",
     "address": "B103 - Plaine Champagne Road",
     "googleMapsUrl": "https://maps.google.com/?cid=2171541151705949188&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
@@ -35539,7 +35539,7 @@
     ],
     "zone": "sud",
     "duration": "2h-5h selon circuit",
-    "description": "Parcours guidés dans la réserve de biosphère de Bel Ombre, entre forêt dense, cascades secrètes et points de vue sur la côte sud, avec possibilité de baignade."
+    "description": "Sentier de randonnée sur la route de Plaine Champagne, dans les hauteurs du parc national des Gorges de Rivière Noire, entre forêt dense et points de vue sur la côte sud selon les circuits empruntés. Comptez de 2h à 5h selon le parcours choisi."
   },
   {
     "id": "flacq-retail-park",
@@ -37010,7 +37010,7 @@
     "elevationGain": "116 m D+",
     "difficultyLevel": "debutant",
     "guideRecommended": false,
-    "description": "Version courte et accessible le long de la rivière Tamarin jusqu'aux premières vasques des 7 Cascades, avec possibilité de baignade selon la saison. Sentier glissant après la pluie.",
+    "description": "Version courte et accessible du sentier des 7 Cascades, le long de la rivière Tamarin jusqu'aux premières vasques, sans les portions techniques à la corde de la descente complète. Baignade possible selon la saison ; sentier glissant après la pluie, à parcourir avec de bonnes chaussures.",
     "zone": "ouest"
   },
   {
@@ -39529,7 +39529,7 @@
     "isAgency": true,
     "duration": "Demi-journée à 2 jours selon la formule",
     "entryPrice": "À partir de 80€/pers (canyoning) ; randonnée sur devis",
-    "description": "Pionnier des sports outdoor à Maurice (fondé en 1999) : randonnée, canyoning aux 7 Cascades et à Eau Bleue, trekking de 2 jours et escalade, encadrés par des guides certifiés."
+    "description": "Pionnier des sports outdoor à Maurice (fondé en 1999) : canyoning aux 7 Cascades (rappels de 15 à 50 m, groupes de 10 personnes maximum encadrés par 2 à 3 guides) et à Eau Bleue sur le plateau central, trekking de 2 jours, escalade et randonnées guidées vers les principaux sommets de l'île comme le Pouce ou la Montagne du Lion."
   },
   {
     "id": "lartisan-boulanger-mahebourg",
@@ -49992,7 +49992,7 @@
     "zone": "sud",
     "distance": "2 km (piste)",
     "difficultyLevel": "debutant",
-    "description": "Arche de basalte sculptée par la mer sur la côte sud sauvage, au sud de Mahébourg en direction du Bouchon. Accès par une piste de 2 km à travers les champs de canne (suivre les panneaux) ; petit parking au bout, puis courte marche jusqu'à la falaise où les vagues s'engouffrent sous le pont. Site naturel spectaculaire, prudence au bord de la falaise."
+    "description": "Arche de basalte sculptée par la mer sur la côte sud sauvage, entre Le Souffleur et Le Bouchon, dans le prolongement des falaises de Gris-Gris. Accès par une piste de 2 km à travers les champs de canne (suivre les panneaux) ou à pied depuis la plage du Bouchon (environ 30 min) ; petit parking au bout, puis courte marche jusqu'à la falaise où les vagues s'engouffrent sous le pont. Mer démontée et dangereuse : baignade à proscrire, prudence au bord de la falaise."
   },
   {
     "id": "foret-de-daruty",
@@ -50004,7 +50004,7 @@
       "kids-friendly"
     ],
     "zone": "nord",
-    "description": "Espace boisé de plus de 108 hectares abritant le seul sentier nature officiellement balisé du nord de l'île, avec les vestiges de l'ancienne sucrerie Belle Vue Robillard. Sentiers ombragés, espaces pique-nique, prisé des joggeurs."
+    "description": "Espace boisé de plus de 108 hectares, aussi appelé Forêt de Belle-Vue, abritant le seul sentier nature officiellement balisé du nord de l'île (désigné en 2022) et les vestiges de l'ancienne sucrerie Belle Vue Robillard. Deux parcours au choix : une boucle de 1,5 km adaptée aux enfants et un circuit plus long de 3 à 7 km à travers la forêt. Sentiers ombragés, espaces pique-nique, très prisés des joggeurs grâce à la proximité de Grand-Baie."
   },
   {
     "id": "butte-a-l-herbe-calodyne",
@@ -52114,7 +52114,7 @@
     "distance": "3,7 km",
     "elevationGain": "260 m D+",
     "zone": "centre",
-    "description": "Deux pics rocheux dominant les champs de canne, de difficultés très différentes : le sommet de droite via un sentier peu entretenu mais accessible à beaucoup, celui de gauche réservé aux randonneurs habitués des traces peu marquées. Aucune liaison entre les deux sommets, montée finale très pentue à travers les goyaviers, panorama sur le massif du Pieter Both et la campagne environnante. Sentier balisé.",
+    "description": "Deux pics rocheux dominant les champs de canne au départ du village de La Laura, sur la même route d'accès que le Pieter Both, de difficultés très différentes : le sommet de droite (pic est, le plus facile de l'île) via un sentier peu entretenu mais accessible à beaucoup, celui de gauche réservé aux randonneurs habitués des traces peu marquées. Aucune liaison entre les deux sommets, montée finale très pentue à travers les goyaviers, panorama sur le massif du Pieter Both et la campagne environnante. Sentier balisé.",
     "koteMorisComment": "Testée avec une enfant de 7 ans : une balade très accessible, avec quelques portions en sentier single et de beaux points de vue sur le Pieter Both et la plaine. L'ascension d'une ou des deux mamelles reste possible pour les plus motivés, mais à faire sur son propre jugement. Sentier balisé. Glissant par temps de pluie, mais reste praticable grâce à de nombreuses portions à l'abri des arbres.",
     "photoUrl": "/photos/deux-mamelles-la-laura.jpg",
     "photoUrls": [
