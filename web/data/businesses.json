@@ -13,7 +13,11 @@
       "excursions-sorties"
     ],
     "zone": "nord",
-    "description": "Croisières en catamaran au départ de plusieurs régions de l'île (Grand Baie, Grand Gaube, Mahébourg, Rivière Noire), avec BBQ, snorkeling et découverte d'îlots comme Coin de Mire ou l'Île aux Bénitiers."
+    "description": "Croisières en catamaran au départ de plusieurs régions de l'île (Grand Baie, Grand Gaube, Mahébourg, Rivière Noire), avec BBQ, snorkeling et découverte d'îlots comme Coin de Mire ou l'Île aux Bénitiers.",
+    "filters": [
+      "ile-aux-benitiers",
+      "coin-de-mire"
+    ]
   },
   {
     "id": "zile-cruise",
@@ -30,7 +34,12 @@
       "excursions-sorties"
     ],
     "zone": "nord",
-    "description": "Croisières privées en catamaran (le Sunset Copper, 43 pieds, 4 cabines) au départ de Grand Baie, avec itinéraires sur mesure vers les îles du Nord et choix de menus à bord."
+    "description": "Croisières privées en catamaran (le Sunset Copper, 43 pieds, 4 cabines) au départ de Grand Baie, avec itinéraires sur mesure vers les îles du Nord et choix de menus à bord.",
+    "filters": [
+      "gabriel-island",
+      "flat-island",
+      "coin-de-mire"
+    ]
   },
   {
     "id": "topcat-cruises",
@@ -48,7 +57,12 @@
       "excursions-sorties"
     ],
     "zone": "nord",
-    "description": "Croisière en catamaran au départ de Grand Baie vers Flat Island, l'Île Gabriel et Coin de Mire, avec petit-déjeuner, déjeuner barbecue et boissons à volonté."
+    "description": "Croisière en catamaran au départ de Grand Baie vers Flat Island, l'Île Gabriel et Coin de Mire, avec petit-déjeuner, déjeuner barbecue et boissons à volonté.",
+    "filters": [
+      "gabriel-island",
+      "coin-de-mire",
+      "flat-island"
+    ]
   },
   {
     "id": "passion-oceane-wind-dancer",
@@ -64,7 +78,12 @@
       "excursions-sorties"
     ],
     "zone": "nord",
-    "description": "Croisières à voile en catamaran (le Wind Dancer) au départ de Grand Baie vers les îles du Nord, avec arrêts snorkeling et croisière au coucher du soleil."
+    "description": "Croisières à voile en catamaran (le Wind Dancer) au départ de Grand Baie vers les îles du Nord, avec arrêts snorkeling et croisière au coucher du soleil.",
+    "filters": [
+      "gabriel-island",
+      "flat-island",
+      "coin-de-mire"
+    ]
   },
   {
     "id": "predator-cruiser",
@@ -81,7 +100,12 @@
       "excursions-sorties"
     ],
     "zone": "nord",
-    "description": "Location de bateau privé rapide au départ de Grand Baie, pour excursions vers les îles du Nord, Tamarin/Rivière Noire ou le Morne, repas et boissons inclus."
+    "description": "Location de bateau privé rapide au départ de Grand Baie, pour excursions vers les îles du Nord, Tamarin/Rivière Noire ou le Morne, repas et boissons inclus.",
+    "filters": [
+      "gabriel-island",
+      "flat-island",
+      "coin-de-mire"
+    ]
   },
   {
     "id": "groove-boat",
@@ -98,7 +122,12 @@
       "excursions-sorties"
     ],
     "zone": "nord",
-    "description": "Grand catamaran de luxe conçu par une équipe mauricienne, proposant croisières vers les îles du Nord, sorties coucher de soleil et soirées musicales au départ de Grand Baie."
+    "description": "Grand catamaran de luxe conçu par une équipe mauricienne, proposant croisières vers les îles du Nord, sorties coucher de soleil et soirées musicales au départ de Grand Baie.",
+    "filters": [
+      "gabriel-island",
+      "flat-island",
+      "coin-de-mire"
+    ]
   },
   {
     "id": "perle-docean-catamaran",
@@ -115,7 +144,11 @@
       "excursions-sorties"
     ],
     "zone": "nord",
-    "description": "Excursion en catamaran au départ de la plage de Grand Baie vers l'Île Plate et l'Île Gabriel, avec petit-déjeuner, déjeuner barbecue et boissons inclus (capacité limitée à 25 personnes)."
+    "description": "Excursion en catamaran au départ de la plage de Grand Baie vers l'Île Plate et l'Île Gabriel, avec petit-déjeuner, déjeuner barbecue et boissons inclus (capacité limitée à 25 personnes).",
+    "filters": [
+      "gabriel-island",
+      "flat-island"
+    ]
   },
   {
     "id": "captain-tamtam-glass-bottom-boat",
@@ -147,7 +180,12 @@
       "excursions-sorties"
     ],
     "zone": "nord",
-    "description": "Agence organisant excursions en catamaran vers Crystal Rock, Gabriel et Flat Island, sorties dauphins, pêche au gros ainsi que visites de l'île (Casela, Île aux Cerfs), transferts et location de voitures."
+    "description": "Agence organisant excursions en catamaran vers Crystal Rock, Gabriel et Flat Island, sorties dauphins, pêche au gros ainsi que visites de l'île (Casela, Île aux Cerfs), transferts et location de voitures.",
+    "filters": [
+      "ile-aux-cerfs",
+      "gabriel-island",
+      "flat-island"
+    ]
   },
   {
     "id": "mauritius-dream-excursion-tours",
@@ -163,7 +201,10 @@
       "excursions-sorties"
     ],
     "zone": "nord",
-    "description": "Agence d'excursions basée à Grand Baie proposant sorties en bateau à fond de verre, pêche au gros, visite de l'Île aux Deux Cocos et circuits sur mesure de l'île."
+    "description": "Agence d'excursions basée à Grand Baie proposant sorties en bateau à fond de verre, pêche au gros, visite de l'Île aux Deux Cocos et circuits sur mesure de l'île.",
+    "filters": [
+      "ile-aux-deux-cocos"
+    ]
   },
   {
     "id": "northview-tours",
@@ -179,7 +220,10 @@
       "excursions-sorties"
     ],
     "zone": "nord",
-    "description": "Agence proposant des sorties dauphins avec snorkeling près de l'Île aux Bénitiers, des croisières en catamaran vers les îles du Nord et des activités nautiques comme le seabob ou la marche sous-marine."
+    "description": "Agence proposant des sorties dauphins avec snorkeling près de l'Île aux Bénitiers, des croisières en catamaran vers les îles du Nord et des activités nautiques comme le seabob ou la marche sous-marine.",
+    "filters": [
+      "ile-aux-benitiers"
+    ]
   },
   {
     "id": "ebrahim-tours",
@@ -213,7 +257,11 @@
       "excursions-sorties"
     ],
     "zone": "nord",
-    "description": "Agence de voyage à Grand Baie proposant hébergements, location de voiture ou scooter, excursions en mer (Île aux Cerfs, Flat Island, nage avec les dauphins) et visites guidées de l'île."
+    "description": "Agence de voyage à Grand Baie proposant hébergements, location de voiture ou scooter, excursions en mer (Île aux Cerfs, Flat Island, nage avec les dauphins) et visites guidées de l'île.",
+    "filters": [
+      "ile-aux-cerfs",
+      "flat-island"
+    ]
   },
   {
     "id": "panorama-divers",
@@ -2414,26 +2462,6 @@
     ]
   },
   {
-    "id": "luna-boutique-mauritius",
-    "name": "Lüna Boutique Mauritius",
-    "category": "acheter-equiper",
-    "address": "Richmond Hill, Rue la Salette, Grand Baie",
-    "phone": "+230 269 1317",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=16526113218828132361",
-    "lat": -20.0133158,
-    "lng": 57.5884049,
-    "hours": "Lun-Sam 9h30-18h",
-    "themes": [
-      "mode-accessoires"
-    ],
-    "zone": "nord",
-    "description": "Boutique de mode féminine à Richmond Hill, Grand Baie, alliant charme local et élégance contemporaine.",
-    "filters": [
-      "mode-adultes"
-    ]
-  },
-  {
     "id": "la-croisette",
     "name": "La Croisette",
     "category": "acheter-equiper",
@@ -3445,49 +3473,6 @@
     "description": "Descente technique dans les gorges de la rivière Tamarin le long des 7 Cascades, dont la hauteur cumulée avoisine 300 m sur l'ensemble du système, parois de basalte glissantes, passages à la corde ; possibilité de canyoning (rappels de 10 à 55 m, tyrolienne naturelle, sauts) avec un prestataire spécialisé. Baignades possibles dans les vasques ; guide local fortement recommandé."
   },
   {
-    "id": "tamarin-sept-cascades-sortir-decouvrir",
-    "name": "Tamarin - Sept Cascades (Tamarind Falls)",
-    "category": "sortir-decouvrir",
-    "address": "Départ près de Henrietta, Réservoir de Tamarin",
-    "phone": "+230 5483 5420",
-    "website": "",
-    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Tamarind%20Falls%20Seven%20Cascades%20hiking%20Mauritius",
-    "lat": -20.3403,
-    "lng": 57.4858,
-    "themes": [
-      "plages-nature"
-    ],
-    "duration": "~3h (jusqu'à 4h)",
-    "distance": "5,8 km",
-    "elevationGain": "327 m D+",
-    "difficultyLevel": "habitue",
-    "guideRecommended": true,
-    "zone": "ouest",
-    "description": "Descente technique dans les gorges de la rivière Tamarin le long des 7 Cascades (chute principale d'environ 300 m), parois de basalte glissantes, passages à la corde ; possibilité de canyoning (rappels, glissades, sauts) avec un prestataire spécialisé. Baignades possibles dans les vasques ; guide local fortement recommandé."
-  },
-  {
-    "id": "vallee-de-ferney",
-    "name": "Vallée de Ferney",
-    "category": "faire-du-sport",
-    "address": "B28, Vieux Grand Port, Mahébourg",
-    "phone": "+230 660 1937",
-    "website": "https://ferney.mu/",
-    "googleMapsUrl": "https://www.google.com/maps/place/La+Vall%C3%A9e+de+Ferney/@-20.3625775,57.7064693,17z",
-    "lat": -20.3625775,
-    "lng": 57.7064693,
-    "themes": [
-      "randonnee-trail",
-      "kids-friendly"
-    ],
-    "hours": "Tous les jours 9h-17h",
-    "duration": "1h30 à 4h selon circuit (5 à 13km)",
-    "difficultyLevel": "habitue",
-    "guideRecommended": true,
-    "zone": "sud",
-    "description": "Trois parcours balisés en forêt endémique protégée (bleu 5 km/75 m D+, jaune 13 km/530 m D+, rouge 18-20 km/970 m D+), avec des points de vue sur la baie de Mahébourg et les îlots du sud-est. La réserve a joué un rôle clé dans le sauvetage de la crécerelle de Maurice, passée de 4 individus recensés en 1974 à près de 600 aujourd'hui, régulièrement observable sur les sentiers aux côtés de pigeons roses et de cateaux verts.",
-    "entryPrice": "200 Rs"
-  },
-  {
     "id": "vallee-de-ferney-sortir-decouvrir",
     "name": "Vallée de Ferney",
     "category": "sortir-decouvrir",
@@ -3506,7 +3491,7 @@
     "difficultyLevel": "habitue",
     "guideRecommended": true,
     "zone": "sud",
-    "description": "Trois parcours balisés (bleu 5 km/75 m D+, jaune 13 km/530 m D+, rouge 18-20 km/970 m D+) en forêt endémique protégée, avec vue sur la baie de Mahébourg et observation possible de la crécerelle de Maurice.",
+    "description": "Trois parcours balisés en forêt endémique protégée (bleu 5 km/75 m D+, jaune 13 km/530 m D+, rouge 18-20 km/970 m D+), avec des points de vue sur la baie de Mahébourg et les îlots du sud-est. La réserve a joué un rôle clé dans le sauvetage de la crécerelle de Maurice, passée de 4 individus recensés en 1974 à près de 600 aujourd'hui, régulièrement observable sur les sentiers aux côtés de pigeons roses et de cateaux verts.",
     "entryPrice": "200 Rs"
   },
   {
@@ -5659,7 +5644,10 @@
       "excursions-sorties"
     ],
     "zone": "ouest",
-    "description": "Croisières en speedboat au départ de la région de Tamarin/La Preneuse pour nager avec les dauphins, avec halte snorkeling à Crystal Rock et déjeuner barbecue sur l'Île aux Bénitiers."
+    "description": "Croisières en speedboat au départ de la région de Tamarin/La Preneuse pour nager avec les dauphins, avec halte snorkeling à Crystal Rock et déjeuner barbecue sur l'Île aux Bénitiers.",
+    "filters": [
+      "ile-aux-benitiers"
+    ]
   },
   {
     "id": "mauritius-ile-aux-cerfs-catamaran-tdd",
@@ -5676,7 +5664,10 @@
       "excursions-sorties"
     ],
     "zone": "est",
-    "description": "Excursion en speedboat puis catamaran au départ de Trou d'Eau Douce, avec passage devant la cascade de la Grande Rivière Sud-Est, arrêts snorkeling et déjeuner barbecue jusqu'à l'Île aux Cerfs."
+    "description": "Excursion en speedboat puis catamaran au départ de Trou d'Eau Douce, avec passage devant la cascade de la Grande Rivière Sud-Est, arrêts snorkeling et déjeuner barbecue jusqu'à l'Île aux Cerfs.",
+    "filters": [
+      "ile-aux-cerfs"
+    ]
   },
   {
     "id": "croisieres-turquoise-mahebourg",
@@ -5692,7 +5683,10 @@
       "excursions-sorties"
     ],
     "zone": "sud",
-    "description": "Croisières en catamaran depuis Pointe Jérôme, près de Mahébourg, vers l'Île aux Cerfs, avec snorkeling, passage par la cascade de la Grande Rivière Sud-Est et repas grillades à bord ; l'entreprise opère depuis 1987."
+    "description": "Croisières en catamaran depuis Pointe Jérôme, près de Mahébourg, vers l'Île aux Cerfs, avec snorkeling, passage par la cascade de la Grande Rivière Sud-Est et repas grillades à bord ; l'entreprise opère depuis 1987.",
+    "filters": [
+      "ile-aux-cerfs"
+    ]
   },
   {
     "id": "plage-le-morne",
@@ -6496,26 +6490,6 @@
     "filters": [
       "asiatique",
       "kids-friendly"
-    ]
-  },
-  {
-    "id": "eclats-d-eden",
-    "name": "Éclats d’Eden",
-    "category": "manger-boire",
-    "address": "Unit 22, Sunset boulevard, Grand Baie",
-    "phone": "+230 5744 1889",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=10002424576171221785&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0134331,
-    "lng": 57.5844538,
-    "themes": [
-      "restaurants"
-    ],
-    "zone": "nord",
-    "hours": "Mar-Ven 8h-17h, Sam-Dim 10h-17h, fermé Lun",
-    "description": "Crêperie-restaurant du Sunset Boulevard à Grand Baie, avec vue sur le lagon. Grillades, options sans gluten, wagyu bœuf et poulet, crêpes sucrées. Très bien noté (5/5).",
-    "filters": [
-      "europeenne"
     ]
   },
   {
@@ -7897,30 +7871,6 @@
     "description": "Hôtel 5 étoiles voisin du Paradis sur la péninsule du Morne ; ne possède pas de parcours propre mais donne à ses clients un accès privilégié aux golfs de Paradis et de Mont Choisy via navette."
   },
   {
-    "id": "ebony-forest-chamarel",
-    "name": "Ebony Forest Chamarel",
-    "category": "sortir-decouvrir",
-    "address": "Chamarel MU, 90409",
-    "phone": "+230 460 3030",
-    "website": "http://www.ebonyforest.com/",
-    "googleMapsUrl": "https://maps.google.com/?cid=1652038674893556352&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.4376375,
-    "lng": 57.3738771,
-    "themes": [
-      "plages-nature"
-    ],
-    "zone": "sud",
-    "distance": "4,8 km",
-    "elevationGain": "259 m D+",
-    "duration": "1,5-2h, aller-retour",
-    "difficultyLevel": "habitue",
-    "description": "Traversée de la forêt d'ébène restaurée, riche en espèces endémiques, avant une montée finale vers le belvédère du Piton Canot dominant tout l'ouest de l'île. Comptez 1h30 à 4h selon les sentiers choisis.",
-    "hours": "Tous les jours 9h-17h",
-    "filters": [
-      "parcs-nationaux-cascades"
-    ]
-  },
-  {
     "id": "ebony-forest-chamarel-faire-du-sport",
     "name": "Ebony Forest Chamarel",
     "category": "faire-du-sport",
@@ -9259,7 +9209,11 @@
       "excursions-sorties"
     ],
     "zone": "est",
-    "description": "Point d'embarquement à la jetée de Pointe Maurice pour les navettes en bateau vers l'Île aux Cerfs, son golf et l'îlot Mangénie, avec départs réguliers toutes les 20 minutes."
+    "description": "Point d'embarquement à la jetée de Pointe Maurice pour les navettes en bateau vers l'Île aux Cerfs, son golf et l'îlot Mangénie, avec départs réguliers toutes les 20 minutes.",
+    "filters": [
+      "ile-aux-cerfs",
+      "ilot-mangenie"
+    ]
   },
   {
     "id": "ile-aux-cerfs-leisure-island",
@@ -9275,7 +9229,10 @@
       "excursions-sorties"
     ],
     "zone": "est",
-    "description": "Accès en navette maritime depuis la jetée de Pointe Maurice vers l'Île aux Cerfs, île de loisirs avec plages, lagon et parcours de golf 18 trous dessiné par Bernhard Langer."
+    "description": "Accès en navette maritime depuis la jetée de Pointe Maurice vers l'Île aux Cerfs, île de loisirs avec plages, lagon et parcours de golf 18 trous dessiné par Bernhard Langer.",
+    "filters": [
+      "ile-aux-cerfs"
+    ]
   },
   {
     "id": "le-swing",
@@ -9843,25 +9800,6 @@
     "description": "Bistro de Poste de Flacq sur la Royal Road, cuisine fast-food/healthy : burgers, pâtes. Ouvert brunch/déjeuner/dîner.",
     "filters": [
       "europeenne"
-    ]
-  },
-  {
-    "id": "sands-grill",
-    "name": "Sands Grill",
-    "category": "manger-boire",
-    "address": "Ile aux Cerfs Leisure Island, Trou d'Eau Douce",
-    "phone": "+230 402 7720",
-    "website": "https://www.ileauxcerfsgolfclub.com/paul-virginie-ile-aux-cerfs-golf-club/?utm_source=google&utm_medium=organic&utm_campaign=google_local_sands_grill",
-    "googleMapsUrl": "https://maps.google.com/?cid=15623146017508688796&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.264069,
-    "lng": 57.803956,
-    "themes": [
-      "restaurants"
-    ],
-    "zone": "est",
-    "description": "Grand restaurant de plage en paillote sur l'Ile aux Cerfs Leisure Island, poissons et fruits de mer grillés, pizzas au feu de bois, cocktails au rhum mauricien.",
-    "filters": [
-      "grillades"
     ]
   },
   {
@@ -10722,27 +10660,6 @@
     ]
   },
   {
-    "id": "the-spot-mauritius",
-    "name": "The Spot Mauritius",
-    "category": "manger-boire",
-    "address": "MU, Coastal Rd, Pointe d'Esny 50818",
-    "phone": "+230 5459 9605",
-    "website": "https://www.thespotmauritius.com/",
-    "googleMapsUrl": "https://maps.google.com/?cid=12422417692088866825&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.44518,
-    "lng": 57.7187576,
-    "themes": [
-      "restaurants"
-    ],
-    "zone": "sud",
-    "description": "Café-brunch en bord de plage à Pointe d'Esny, ambiance rustique, cuisine créole et fruits de mer (pizza, calamars), bons cocktails.",
-    "filters": [
-      "mauricienne",
-      "fruits-de-mer"
-    ],
-    "hours": "Dim-Mer 12h-21h30, Jeu 7h-15h30, Ven-Sam 12h-23h"
-  },
-  {
     "id": "coco-de-zil-mauritius",
     "name": "Coco De Zil Mauritius",
     "category": "sortir-decouvrir",
@@ -10756,7 +10673,10 @@
       "excursions-sorties"
     ],
     "zone": "sud",
-    "description": "Excursions en bateau/catamaran au départ de la jetée de Pointe Jérôme (Mahébourg) vers l'Île aux Cerfs, avec déjeuner simple servi sur l'île. Guides décrits comme sympathiques et attentifs, tarif jugé correct par rapport à la concurrence."
+    "description": "Excursions en bateau/catamaran au départ de la jetée de Pointe Jérôme (Mahébourg) vers l'Île aux Cerfs, avec déjeuner simple servi sur l'île. Guides décrits comme sympathiques et attentifs, tarif jugé correct par rapport à la concurrence.",
+    "filters": [
+      "ile-aux-cerfs"
+    ]
   },
   {
     "id": "golf-specialist-mauritius-ltd",
@@ -11950,7 +11870,12 @@
       "excursions-sorties"
     ],
     "zone": "nord",
-    "description": "Excursions privées en bateau au départ du nord de l'île vers les îles du Nord (Gabriel, Île Plate, Coin de Mire), avec snorkeling, observation de dauphins et baleines, barbecue et croisières au coucher du soleil."
+    "description": "Excursions privées en bateau au départ du nord de l'île vers les îles du Nord (Gabriel, Île Plate, Coin de Mire), avec snorkeling, observation de dauphins et baleines, barbecue et croisières au coucher du soleil.",
+    "filters": [
+      "gabriel-island",
+      "coin-de-mire",
+      "flat-island"
+    ]
   },
   {
     "id": "blue-vibes",
@@ -11966,7 +11891,12 @@
       "excursions-sorties"
     ],
     "zone": "nord",
-    "description": "Excursions familiales en bateau au départ de Cap Malheureux vers les îles du Nord, avec repas faits maison et sorties en bateau traditionnel mauricien vers des îlots peu fréquentés."
+    "description": "Excursions familiales en bateau au départ de Cap Malheureux vers les îles du Nord, avec repas faits maison et sorties en bateau traditionnel mauricien vers des îlots peu fréquentés.",
+    "filters": [
+      "gabriel-island",
+      "flat-island",
+      "coin-de-mire"
+    ]
   },
   {
     "id": "sunrise-paradise-excursions-mauritius",
@@ -11982,7 +11912,12 @@
       "excursions-sorties"
     ],
     "zone": "nord",
-    "description": "Excursions en speedboat depuis la plage publique de Trou aux Biches, agréées par la Tourism Authority, incluant baignade avec dauphins, observation de baleines, tours des îles du Nord et croisières au coucher du soleil."
+    "description": "Excursions en speedboat depuis la plage publique de Trou aux Biches, agréées par la Tourism Authority, incluant baignade avec dauphins, observation de baleines, tours des îles du Nord et croisières au coucher du soleil.",
+    "filters": [
+      "gabriel-island",
+      "flat-island",
+      "coin-de-mire"
+    ]
   },
   {
     "id": "blue-yonko-ltd",
@@ -11998,7 +11933,10 @@
       "excursions-sorties"
     ],
     "zone": "nord",
-    "description": "Excursions en speedboat depuis Grand Baie vers Coin de Mire (Gunner's Quoin), avec pause snorkeling, barbecue et cocktails préparés par l'équipage sur un îlot du Nord."
+    "description": "Excursions en speedboat depuis Grand Baie vers Coin de Mire (Gunner's Quoin), avec pause snorkeling, barbecue et cocktails préparés par l'équipage sur un îlot du Nord.",
+    "filters": [
+      "coin-de-mire"
+    ]
   },
   {
     "id": "sexyboy-watersports",
@@ -12014,7 +11952,10 @@
       "excursions-sorties"
     ],
     "zone": "nord",
-    "description": "Sorties en bateau depuis la plage de Bain Bœuf pour rejoindre Coin de Mire, avec snorkeling, repas et boissons offerts par l'équipage."
+    "description": "Sorties en bateau depuis la plage de Bain Bœuf pour rejoindre Coin de Mire, avec snorkeling, repas et boissons offerts par l'équipage.",
+    "filters": [
+      "coin-de-mire"
+    ]
   },
   {
     "id": "whitsundays-excursion-maurice-speedboat",
@@ -12030,7 +11971,12 @@
       "excursions-sorties"
     ],
     "zone": "nord",
-    "description": "Excursions en speedboat au départ de Bain Bœuf vers Coin de Mire, Île Plate et l'Îlot Gabriel, avec snorkeling, déjeuner, collations mauriciennes et sorties coucher de soleil."
+    "description": "Excursions en speedboat au départ de Bain Bœuf vers Coin de Mire, Île Plate et l'Îlot Gabriel, avec snorkeling, déjeuner, collations mauriciennes et sorties coucher de soleil.",
+    "filters": [
+      "gabriel-island",
+      "coin-de-mire",
+      "flat-island"
+    ]
   },
   {
     "id": "sea-serenity-mauritius",
@@ -12046,7 +11992,12 @@
       "excursions-sorties"
     ],
     "zone": "nord",
-    "description": "Excursions privées en speedboat depuis Bain Bœuf, Cap Malheureux, vers Îlot Gabriel, Île Plate et Coin de Mire, avec formules snorkeling, repas et croisières au lever ou coucher du soleil."
+    "description": "Excursions privées en speedboat depuis Bain Bœuf, Cap Malheureux, vers Îlot Gabriel, Île Plate et Coin de Mire, avec formules snorkeling, repas et croisières au lever ou coucher du soleil.",
+    "filters": [
+      "gabriel-island",
+      "coin-de-mire",
+      "flat-island"
+    ]
   },
   {
     "id": "purefive-tours-mauritius",
@@ -12076,7 +12027,12 @@
     "themes": [
       "excursions-sorties"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "filters": [
+      "gabriel-island",
+      "flat-island",
+      "coin-de-mire"
+    ]
   },
   {
     "id": "croisieres-australes",
@@ -12108,7 +12064,12 @@
       "excursions-sorties"
     ],
     "zone": "nord",
-    "description": "Sorties en petit groupe (14 personnes maximum) en hors-bord au départ de l'église de Cap Malheureux vers Ile Plate, Coin de Mire et Ilot Gabriel, avec snorkeling et barbecue."
+    "description": "Sorties en petit groupe (14 personnes maximum) en hors-bord au départ de l'église de Cap Malheureux vers Ile Plate, Coin de Mire et Ilot Gabriel, avec snorkeling et barbecue.",
+    "filters": [
+      "gabriel-island",
+      "coin-de-mire",
+      "flat-island"
+    ]
   },
   {
     "id": "l-indien-private-speedboat-trips",
@@ -12186,7 +12147,10 @@
       "excursions-sorties"
     ],
     "zone": "nord",
-    "description": "Sorties en catamaran au départ de Grand Baie, à une quinzaine de kilomètres jusqu'à l'Ilot Gabriel, entre journées complètes vers le nord et croisières au coucher du soleil."
+    "description": "Sorties en catamaran au départ de Grand Baie, à une quinzaine de kilomètres jusqu'à l'Ilot Gabriel, entre journées complètes vers le nord et croisières au coucher du soleil.",
+    "filters": [
+      "gabriel-island"
+    ]
   },
   {
     "id": "vava-voom-cruise",
@@ -12202,7 +12166,12 @@
       "excursions-sorties"
     ],
     "zone": "nord",
-    "description": "Compagnie de croisières en catamaran active depuis 2003 à Pointe aux Piments, avec journées vers Ilot Gabriel et Coin de Mire (barbecue) et sorties en hors-bord vers l'Ile aux Bénitiers avec baignade parmi les dauphins."
+    "description": "Compagnie de croisières en catamaran active depuis 2003 à Pointe aux Piments, avec journées vers Ilot Gabriel et Coin de Mire (barbecue) et sorties en hors-bord vers l'Ile aux Bénitiers avec baignade parmi les dauphins.",
+    "filters": [
+      "ile-aux-benitiers",
+      "gabriel-island",
+      "coin-de-mire"
+    ]
   },
   {
     "id": "ocean-whisper-mauritius",
@@ -12234,7 +12203,12 @@
       "excursions-sorties"
     ],
     "zone": "nord",
-    "description": "Agence basée à Triolet proposant transferts aéroport, location de véhicules et excursions en mer vers les îles du nord, avec snorkeling et observation des dauphins."
+    "description": "Agence basée à Triolet proposant transferts aéroport, location de véhicules et excursions en mer vers les îles du nord, avec snorkeling et observation des dauphins.",
+    "filters": [
+      "gabriel-island",
+      "flat-island",
+      "coin-de-mire"
+    ]
   },
   {
     "id": "lune-d-or-souben-cunee",
@@ -12250,7 +12224,10 @@
       "excursions-sorties"
     ],
     "zone": "nord",
-    "description": "Bateau privé au départ de Grand Baie, piloté par Souben Cunée, pour des excursions vers Ile Plate avec repas à bord."
+    "description": "Bateau privé au départ de Grand Baie, piloté par Souben Cunée, pour des excursions vers Ile Plate avec repas à bord.",
+    "filters": [
+      "flat-island"
+    ]
   },
   {
     "id": "isa-mauritius-kalodyne-mauritius",
@@ -12314,7 +12291,12 @@
       "excursions-sorties"
     ],
     "zone": "nord",
-    "description": "Excursions en hors-bord au départ de Cap Malheureux vers les trois îles du nord (Ilot Gabriel, Ile Plate, Coin de Mire), avec snorkeling et déjeuner barbecue sur la plage."
+    "description": "Excursions en hors-bord au départ de Cap Malheureux vers les trois îles du nord (Ilot Gabriel, Ile Plate, Coin de Mire), avec snorkeling et déjeuner barbecue sur la plage.",
+    "filters": [
+      "gabriel-island",
+      "coin-de-mire",
+      "flat-island"
+    ]
   },
   {
     "id": "catamaran-gabriel-island-cruise-mauritius",
@@ -12330,7 +12312,10 @@
       "excursions-sorties"
     ],
     "zone": "nord",
-    "description": "Croisière en catamaran au départ de Grand Baie vers l'îlot Gabriel, avec arrêts snorkeling, déjeuner barbecue et boissons incluses sur une journée complète."
+    "description": "Croisière en catamaran au départ de Grand Baie vers l'îlot Gabriel, avec arrêts snorkeling, déjeuner barbecue et boissons incluses sur une journée complète.",
+    "filters": [
+      "gabriel-island"
+    ]
   },
   {
     "id": "jardin-endemique-et-animalier-de-cap",
@@ -12720,30 +12705,6 @@
     "hours": "Tlj 8h30-17h (17h30 en été)"
   },
   {
-    "id": "alexandra-falls",
-    "name": "Alexandra Falls",
-    "category": "sortir-decouvrir",
-    "address": "30 Old Moka Rd",
-    "phone": "+230 464 4053",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=17159156839569989002&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.433764,
-    "lng": 57.4577934,
-    "themes": [
-      "plages-nature",
-      "kids-friendly"
-    ],
-    "zone": "centre",
-    "duration": "1h30",
-    "distance": "2,7 km",
-    "elevationGain": "157 m D+",
-    "difficultyLevel": "habitue",
-    "description": "Balade courte près de St. Martin jusqu'à un point de vue sur la cascade et sa végétation environnante, appréciée pour l'observation des oiseaux. Accessible sans guide depuis le centre d'information du parc, contrairement à la Cascade 500 Pieds voisine — la plus adaptée aux familles. Chiens acceptés.",
-    "filters": [
-      "parcs-nationaux-cascades"
-    ]
-  },
-  {
     "id": "alexandra-falls-faire-du-sport",
     "name": "Alexandra Falls",
     "category": "faire-du-sport",
@@ -12780,7 +12741,10 @@
     ],
     "description": "Éco-lodge/camping sur la Grande Rivière Sud-Est : kayak, SUP, randonnée, navette gratuite vers l'Île aux Cerfs",
     "entryPrice": "Nuitée dès Rs 8000/tente (jusqu'à 4 pers., basse saison)",
-    "zone": "est"
+    "zone": "est",
+    "filters": [
+      "ile-aux-cerfs"
+    ]
   },
   {
     "id": "cascade-de-chamarel",
@@ -16168,22 +16132,6 @@
     "description": "Coaching sportif et bien-être à Trou aux Biches."
   },
   {
-    "id": "misschawky-studio",
-    "name": "Misschawky Studio",
-    "category": "sante-bien-etre",
-    "address": "MU, Chem. Vingt Pieds, Grand Baie 30513",
-    "phone": "+230 5777 6255",
-    "website": "http://www.misschawky.com/",
-    "googleMapsUrl": "https://maps.google.com/?cid=8240971876839866707&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0182877,
-    "lng": 57.5855387,
-    "themes": [
-      "yoga-bien-etre"
-    ],
-    "zone": "nord",
-    "description": "Coaching sportif et bien-être à Grand Baie."
-  },
-  {
     "id": "black-box-fitness",
     "name": "Black Box Fitness",
     "category": "sante-bien-etre",
@@ -16592,25 +16540,6 @@
     ]
   },
   {
-    "id": "ginza-motors",
-    "name": "Ginza Motors",
-    "category": "acheter-equiper",
-    "address": "ABC Centre, 1 Military Rd, Port Louis",
-    "phone": "+230 206 9945",
-    "website": "http://www.ginzamotors.mu/",
-    "googleMapsUrl": "https://maps.google.com/?cid=10673018375912160381&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.1529218,
-    "lng": 57.5080419,
-    "themes": [
-      "seconde-main-boutiques"
-    ],
-    "zone": "centre",
-    "description": "Vente de voitures d'occasion à Port-Louis. Achat, vente et reprise de véhicules.",
-    "filters": [
-      "voitures-2-roues"
-    ]
-  },
-  {
     "id": "the-car-connexion-ltd",
     "name": "The Car Connexion Ltd",
     "category": "acheter-equiper",
@@ -16834,7 +16763,10 @@
       "excursions-sorties"
     ],
     "zone": "ouest",
-    "description": "Pionnier de la croisière en catamaran à l'île Maurice avec plus de 35 ans d'expérience ; sorties côte ouest au départ de la Rivière Noire vers la baie de Tamarin, l'îlot Bénitier et Crystal Rock, ainsi que des croisières coucher de soleil."
+    "description": "Pionnier de la croisière en catamaran à l'île Maurice avec plus de 35 ans d'expérience ; sorties côte ouest au départ de la Rivière Noire vers la baie de Tamarin, l'îlot Bénitier et Crystal Rock, ainsi que des croisières coucher de soleil.",
+    "filters": [
+      "ile-aux-benitiers"
+    ]
   },
   {
     "id": "clubbing-tours",
@@ -16850,7 +16782,11 @@
       "excursions-sorties"
     ],
     "zone": "ouest",
-    "description": "Agence de Flic en Flac organisant des sorties en bateau et catamaran vers l'Île aux Cerfs, l'îlot Gabriel et les Cinq Îles, ainsi que d'autres services touristiques et transferts."
+    "description": "Agence de Flic en Flac organisant des sorties en bateau et catamaran vers l'Île aux Cerfs, l'îlot Gabriel et les Cinq Îles, ainsi que d'autres services touristiques et transferts.",
+    "filters": [
+      "ile-aux-cerfs",
+      "gabriel-island"
+    ]
   },
   {
     "id": "big-game-deep-sea-fishing-mauritius-dolphin-whale-watching",
@@ -16882,7 +16818,10 @@
       "excursions-sorties"
     ],
     "zone": "ouest",
-    "description": "Croisières en catamaran au départ de l'embarcadère de l'Estuaire à Rivière Noire vers la baie de Tamarin et ses dauphins, l'îlot Bénitier et Crystal Rock, avec arrêt snorkeling."
+    "description": "Croisières en catamaran au départ de l'embarcadère de l'Estuaire à Rivière Noire vers la baie de Tamarin et ses dauphins, l'îlot Bénitier et Crystal Rock, avec arrêt snorkeling.",
+    "filters": [
+      "ile-aux-benitiers"
+    ]
   },
   {
     "id": "cedric-s-tamarin-dolphin-whale-adventures",
@@ -16977,7 +16916,10 @@
       "excursions-sorties"
     ],
     "zone": "sud",
-    "description": "Entreprise familiale du Morne active depuis 1988, organisant des sorties en bateau vers l'Île aux Bénitiers avec observation des dauphins, snorkeling et BBQ animé de musique locale."
+    "description": "Entreprise familiale du Morne active depuis 1988, organisant des sorties en bateau vers l'Île aux Bénitiers avec observation des dauphins, snorkeling et BBQ animé de musique locale.",
+    "filters": [
+      "ile-aux-benitiers"
+    ]
   },
   {
     "id": "7-waterfalls",
@@ -17009,7 +16951,10 @@
       "excursions-sorties"
     ],
     "zone": "ouest",
-    "description": "Charter familial de Rivière Noire actif depuis 1992, spécialisé dans la pêche au gros (thon, dorade, marlin bleu, double vainqueur du Marlin World Cup), les croisières en catamaran au coucher du soleil et les sorties en speedboat vers Crystal Rock et l'Île aux Bénitiers, avec rencontres de dauphins."
+    "description": "Charter familial de Rivière Noire actif depuis 1992, spécialisé dans la pêche au gros (thon, dorade, marlin bleu, double vainqueur du Marlin World Cup), les croisières en catamaran au coucher du soleil et les sorties en speedboat vers Crystal Rock et l'Île aux Bénitiers, avec rencontres de dauphins.",
+    "filters": [
+      "ile-aux-benitiers"
+    ]
   },
   {
     "id": "oceane-cruises-mauritius",
@@ -17026,26 +16971,10 @@
     ],
     "zone": "est",
     "email": "reservation@oceane.mu",
-    "description": "Croisières en catamaran + sorties kayak dans les mangroves (Ilot Mangénie, Île aux Bénitiers). Réservation conseillée 48h à l'avance."
-  },
-  {
-    "id": "oceane-cruises-mauritius-faire-du-sport",
-    "name": "Oceane Cruises Mauritius",
-    "category": "faire-du-sport",
-    "address": "Royal Road, Trou d'Eau Douce",
-    "phone": "+230 480 2767",
-    "website": "https://oceane.mu/",
-    "googleMapsUrl": "https://maps.google.com/?cid=7412718760914001038&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.2576093,
-    "lng": 57.793663,
-    "themes": [
-      "sports-nautiques"
-    ],
-    "zone": "est",
-    "email": "reservation@oceane.mu",
     "description": "Croisières en catamaran + sorties kayak dans les mangroves (Ilot Mangénie, Île aux Bénitiers). Réservation conseillée 48h à l'avance.",
     "filters": [
-      "kayak"
+      "ile-aux-benitiers",
+      "ilot-mangenie"
     ]
   },
   {
@@ -17731,29 +17660,6 @@
     "zone": "centre",
     "description": "Aire de jeux indoor pour enfants installée au centre commercial Phoenix Mall, avec trampolines, mini-cuisine pour jeux de rôle et parcours d'équilibre sur pont de cordes. Les avis apprécient que les parents puissent accompagner leurs enfants sur les structures.",
     "hours": "Lun-Ven 10h-20h, Sam 10h-22h, Dim 10h-20h"
-  },
-  {
-    "id": "mare-aux-joncs-black-river-gorges-mauritius-waterfall",
-    "name": "Mare Aux Joncs, Black River Gorges, Mauritius Waterfall",
-    "category": "sortir-decouvrir",
-    "address": "JC5W+7QC, Vacoas-Phœnix",
-    "phone": "+230 5471 1128",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=3352859083884715011&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.3918097,
-    "lng": 57.4468828,
-    "themes": [
-      "plages-nature"
-    ],
-    "zone": "centre",
-    "distance": "9,20 km",
-    "elevationGain": "240 m D+",
-    "duration": "2h42, boucle",
-    "difficultyLevel": "habitue",
-    "description": "Longue boucle en forêt indigène du plateau, ponctuée par la cascade cachée de la Mare aux Joncs, entre sous-bois dense et clairières ouvertes. Point de départ à proximité d'un parking.",
-    "filters": [
-      "parcs-nationaux-cascades"
-    ]
   },
   {
     "id": "mare-aux-joncs-black-river-gorges-mauritius-waterfall-faire-du-sport",
@@ -18587,7 +18493,10 @@
       "excursions-sorties"
     ],
     "zone": "ouest",
-    "description": "Excursions en mer au départ de Flic en Flac : croisières coucher de soleil, nage avec dauphins/baleines, sorties à l'Île aux Bénitiers, avec repas/BBQ préparés à bord par l'équipage."
+    "description": "Excursions en mer au départ de Flic en Flac : croisières coucher de soleil, nage avec dauphins/baleines, sorties à l'Île aux Bénitiers, avec repas/BBQ préparés à bord par l'équipage.",
+    "filters": [
+      "ile-aux-benitiers"
+    ]
   },
   {
     "id": "le-cap-taisne",
@@ -20058,7 +19967,7 @@
   {
     "id": "riverland-mauritius",
     "name": "Riverland Mauritius",
-    "category": "sante-bien-etre",
+    "category": "sortir-decouvrir",
     "address": "Les Barachois Estate A3 Tamarin MU, Les Barachoir Estate A3, Tamarin 90901",
     "phone": "+230 483 4956",
     "website": "https://www.riverland-mauritius.mu/",
@@ -20066,43 +19975,11 @@
     "lat": -20.3299711,
     "lng": 57.3804099,
     "themes": [
-      "yoga-bien-etre"
+      "parcs-activites-famille",
+      "kids-friendly"
     ],
     "zone": "ouest",
     "description": "Parc de loisirs et d'aventure en plein air à Tamarin (activités nature et sportives). (Plutôt un parc de loisirs.)"
-  },
-  {
-    "id": "riverland-mauritius-faire-du-sport",
-    "name": "Riverland Mauritius",
-    "category": "faire-du-sport",
-    "address": "Les Barachois Estate A3 Tamarin MU, Les Barachoir Estate A3, Tamarin 90901",
-    "phone": "+230 483 4956",
-    "website": "https://www.riverland-mauritius.mu/",
-    "googleMapsUrl": "https://maps.google.com/?cid=6684526108168016227&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.3299711,
-    "lng": 57.3804099,
-    "themes": [
-      "tennis-padel"
-    ],
-    "zone": "ouest",
-    "description": "Parc de loisirs et d'aventure en plein air à Tamarin (activités nature et sportives). (Plutôt un parc de loisirs.)"
-  },
-  {
-    "id": "clubhouse-padel",
-    "name": "Clubhouse - Padel",
-    "category": "sante-bien-etre",
-    "address": "Vanilla Connect, Black River",
-    "phone": "+230 5494 1771",
-    "website": "https://clubhouse.mu/",
-    "googleMapsUrl": "https://maps.google.com/?cid=17724039288815708736&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.369102,
-    "lng": 57.3794156,
-    "themes": [
-      "yoga-bien-etre"
-    ],
-    "zone": "ouest",
-    "sportsListed": "Padel : 2 courts. Infrastructures : club-house, espace événements. Réservation possible.",
-    "description": "Club de padel à Rivière Noire (Vanilla Connect) : courts, cours et réservations."
   },
   {
     "id": "clubhouse-padel-faire-du-sport",
@@ -20351,7 +20228,10 @@
       "excursions-sorties"
     ],
     "zone": "sud",
-    "description": "Sortie en bateau privée au départ du Morne, dès le lever du soleil, pour observer et nager avec des dauphins souffleurs et à long bec, suivie de snorkeling près de Crystal Rock et d'un barbecue de fruits de mer sur l'Île aux Bénitiers."
+    "description": "Sortie en bateau privée au départ du Morne, dès le lever du soleil, pour observer et nager avec des dauphins souffleurs et à long bec, suivie de snorkeling près de Crystal Rock et d'un barbecue de fruits de mer sur l'Île aux Bénitiers.",
+    "filters": [
+      "ile-aux-benitiers"
+    ]
   },
   {
     "id": "karlos-excursions-boat-departure-point-1",
@@ -20367,7 +20247,10 @@
       "excursions-sorties"
     ],
     "zone": "sud",
-    "description": "Entreprise familiale du Morne active depuis 1988, organisant des sorties en bateau vers l'Île aux Bénitiers avec observation des dauphins, snorkeling et BBQ animé de musique locale."
+    "description": "Entreprise familiale du Morne active depuis 1988, organisant des sorties en bateau vers l'Île aux Bénitiers avec observation des dauphins, snorkeling et BBQ animé de musique locale.",
+    "filters": [
+      "ile-aux-benitiers"
+    ]
   },
   {
     "id": "aqua-morne",
@@ -20398,7 +20281,10 @@
       "excursions-sorties"
     ],
     "zone": "sud",
-    "description": "Sorties en bateau privées au départ du Morne, avec baignade auprès de dauphins sauvages, snorkeling à Crystal Rock, escale à l'Île aux Bénitiers et déjeuner BBQ face au Morne Brabant."
+    "description": "Sorties en bateau privées au départ du Morne, avec baignade auprès de dauphins sauvages, snorkeling à Crystal Rock, escale à l'Île aux Bénitiers et déjeuner BBQ face au Morne Brabant.",
+    "filters": [
+      "ile-aux-benitiers"
+    ]
   },
   {
     "id": "dolphin-whale-watching-the-blue-mystery-tours",
@@ -20446,7 +20332,10 @@
       "excursions-sorties"
     ],
     "zone": "sud",
-    "description": "Opérateur familial installé au Morne depuis 1988, parmi les premiers bateaux licenciés de l'île, proposant sorties dauphins, snorkeling à Coral Rock et BBQ animé de musique locale sur l'île aux Bénitiers."
+    "description": "Opérateur familial installé au Morne depuis 1988, parmi les premiers bateaux licenciés de l'île, proposant sorties dauphins, snorkeling à Coral Rock et BBQ animé de musique locale sur l'île aux Bénitiers.",
+    "filters": [
+      "ile-aux-benitiers"
+    ]
   },
   {
     "id": "piton-du-canot-faire-du-sport",
@@ -20481,7 +20370,10 @@
     "themes": [
       "excursions-sorties"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "filters": [
+      "ile-aux-benitiers"
+    ]
   },
   {
     "id": "benitier-boat-la-gaulette",
@@ -20501,7 +20393,8 @@
     "duration": "Environ 3 h",
     "entryPrice": "5 500 Rs la balade (2 pers.)",
     "filters": [
-      "snorkeling"
+      "snorkeling",
+      "ile-aux-benitiers"
     ]
   },
   {
@@ -20517,7 +20410,10 @@
     "themes": [
       "excursions-sorties"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "filters": [
+      "ile-aux-benitiers"
+    ]
   },
   {
     "id": "kissen-sealife-dolphins-and-whales-excursion",
@@ -20552,7 +20448,8 @@
     "zone": "ouest",
     "description": "Opérateur d'écotourisme actif depuis 2006, sorties en bateau vers l'Île aux Bénitiers au départ de La Gaulette : nage avec les dauphins, observation des baleines et des tortues, snorkeling à Crystal Rock et barbecue de poisson grillé sur l'île, en petits groupes.",
     "filters": [
-      "snorkeling"
+      "snorkeling",
+      "ile-aux-benitiers"
     ]
   },
   {
@@ -20600,7 +20497,10 @@
       "excursions-sorties"
     ],
     "zone": "sud",
-    "description": "Survols en hélicoptère au départ de Chamarel, offrant une vue sur la cascade sous-marine du Morne, les gorges de Rivière Noire, l'île aux Bénitiers et Crystal Rock, avec une flotte d'hélicoptères Airbus."
+    "description": "Survols en hélicoptère au départ de Chamarel, offrant une vue sur la cascade sous-marine du Morne, les gorges de Rivière Noire, l'île aux Bénitiers et Crystal Rock, avec une flotte d'hélicoptères Airbus.",
+    "filters": [
+      "ile-aux-benitiers"
+    ]
   },
   {
     "id": "daryeau-adventure",
@@ -20663,7 +20563,10 @@
       "excursions-sorties"
     ],
     "zone": "sud",
-    "description": "Sorties en bateau (Legend 19 de 2018) au départ du Morne pour nager avec les dauphins, observer les baleines et rejoindre l'île aux Bénitiers pour un déjeuner, rendez-vous au supermarché GRS de La Gaulette ou à la plage publique du Morne."
+    "description": "Sorties en bateau (Legend 19 de 2018) au départ du Morne pour nager avec les dauphins, observer les baleines et rejoindre l'île aux Bénitiers pour un déjeuner, rendez-vous au supermarché GRS de La Gaulette ou à la plage publique du Morne.",
+    "filters": [
+      "ile-aux-benitiers"
+    ]
   },
   {
     "id": "skipper-dan",
@@ -20725,7 +20628,10 @@
     "themes": [
       "excursions-sorties"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "filters": [
+      "ile-aux-cerfs"
+    ]
   },
   {
     "id": "simpl-sea-t",
@@ -20788,7 +20694,10 @@
       "excursions-sorties"
     ],
     "zone": "sud",
-    "description": "Excursions privées en bateau au départ de Bel Ombre pour nager avec les dauphins sauvages, observer tortues et raies, avec arrêt snorkeling et barbecue sur l'Îlot Bénitier."
+    "description": "Excursions privées en bateau au départ de Bel Ombre pour nager avec les dauphins sauvages, observer tortues et raies, avec arrêt snorkeling et barbecue sur l'Îlot Bénitier.",
+    "filters": [
+      "ile-aux-benitiers"
+    ]
   },
   {
     "id": "glasbottom-boat",
@@ -24184,25 +24093,6 @@
     ]
   },
   {
-    "id": "express-auto",
-    "name": "Express Auto",
-    "category": "acheter-equiper",
-    "address": "Valentina Motorway, Lot 35, Highlands Rose Avenue, MU, Vacoas-Phoenix 73553",
-    "phone": "+230 606 1800",
-    "website": "http://www.expressauto.mu/",
-    "googleMapsUrl": "https://maps.google.com/?cid=9321349421818756788&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.2671085,
-    "lng": 57.5171331,
-    "themes": [
-      "seconde-main-boutiques"
-    ],
-    "zone": "centre",
-    "description": "Vente de voitures d'occasion à Vacoas. Achat, vente et reprise de véhicules.",
-    "filters": [
-      "voitures-2-roues"
-    ]
-  },
-  {
     "id": "rolo-boat-trips-bel-ombre",
     "name": "Rolo Boat Trips - Bel Ombre",
     "category": "sortir-decouvrir",
@@ -24216,7 +24106,10 @@
       "excursions-sorties"
     ],
     "zone": "sud",
-    "description": "Sorties en bateau depuis Bel Ombre pour nager avec les dauphins, observer les baleines et profiter d'un barbecue sur l'Île aux Bénitiers."
+    "description": "Sorties en bateau depuis Bel Ombre pour nager avec les dauphins, observer les baleines et profiter d'un barbecue sur l'Île aux Bénitiers.",
+    "filters": [
+      "ile-aux-benitiers"
+    ]
   },
   {
     "id": "sud-tropical",
@@ -24248,7 +24141,10 @@
       "excursions-sorties"
     ],
     "zone": "est",
-    "description": "Excursions en bateau depuis Trou d'Eau Douce, avec un circuit des 5 îles incluant l'observation de dauphins, et une sortie plus courte vers l'Île aux Cerfs avec passage par une chute d'eau et un site où nourrir les singes."
+    "description": "Excursions en bateau depuis Trou d'Eau Douce, avec un circuit des 5 îles incluant l'observation de dauphins, et une sortie plus courte vers l'Île aux Cerfs avec passage par une chute d'eau et un site où nourrir les singes.",
+    "filters": [
+      "ile-aux-cerfs"
+    ]
   },
   {
     "id": "cascade-mamzelle",
@@ -26488,7 +26384,10 @@
       "excursions-sorties"
     ],
     "zone": "est",
-    "description": "Agence locale organisant excursions et transferts depuis la région de Belle Mare, dont circuits Sud et Nord de l'île, sorties en hors-bord, en catamaran vers l'Île aux Cerfs, et transferts aéroport."
+    "description": "Agence locale organisant excursions et transferts depuis la région de Belle Mare, dont circuits Sud et Nord de l'île, sorties en hors-bord, en catamaran vers l'Île aux Cerfs, et transferts aéroport.",
+    "filters": [
+      "ile-aux-cerfs"
+    ]
   },
   {
     "id": "blue-alize-catamaran-ile-aux-cerfs",
@@ -26504,7 +26403,10 @@
       "excursions-sorties"
     ],
     "zone": "est",
-    "description": "Croisières en catamaran (flotte d'Admiral 38) au départ de Trou d'Eau Douce vers l'Île aux Cerfs, avec passage devant la Grande Rivière Sud-Est et repas à bord."
+    "description": "Croisières en catamaran (flotte d'Admiral 38) au départ de Trou d'Eau Douce vers l'Île aux Cerfs, avec passage devant la Grande Rivière Sud-Est et repas à bord.",
+    "filters": [
+      "ile-aux-cerfs"
+    ]
   },
   {
     "id": "tino-boats-5-island-tour-catamaran-ile-aux-cerfs",
@@ -26520,7 +26422,13 @@
       "excursions-sorties"
     ],
     "zone": "est",
-    "description": "Opérateur familial actif depuis plus de 25 ans, proposant un circuit des 5 îles en journée (Île aux Cerfs, Grande Rivière Sud-Est, Île aux Phares, Île de la Passe, Île aux Aigrettes) avec toboggan, snorkeling, barbecue et boissons incluses."
+    "description": "Opérateur familial actif depuis plus de 25 ans, proposant un circuit des 5 îles en journée (Île aux Cerfs, Grande Rivière Sud-Est, Île aux Phares, Île de la Passe, Île aux Aigrettes) avec toboggan, snorkeling, barbecue et boissons incluses.",
+    "filters": [
+      "ile-aux-cerfs",
+      "ile-aux-aigrettes",
+      "ile-de-la-passe",
+      "ile-aux-phares"
+    ]
   },
   {
     "id": "excursion-ile-aux-cerfs-catamaran-tour-five-islands-speed-bo",
@@ -26536,7 +26444,10 @@
       "excursions-sorties"
     ],
     "zone": "est",
-    "description": "Propose plusieurs formules de sorties en mer depuis Trou d'Eau Douce : circuit des 5 îles en catamaran, excursion vers l'Île aux Cerfs et tour en hors-bord rapide, avec une option haut de gamme."
+    "description": "Propose plusieurs formules de sorties en mer depuis Trou d'Eau Douce : circuit des 5 îles en catamaran, excursion vers l'Île aux Cerfs et tour en hors-bord rapide, avec une option haut de gamme.",
+    "filters": [
+      "ile-aux-cerfs"
+    ]
   },
   {
     "id": "sea-sensation-sea-activities-boat-tours",
@@ -26583,7 +26494,11 @@
       "excursions-sorties"
     ],
     "zone": "est",
-    "description": "Circuit des 5 îles en catamaran ou speedboat depuis la jetée de Trou d'Eau Douce, avec snorkeling au parc marin, passage devant l'épave du Dalbair, l'îlot aux Aigrettes et le phare, cascade de la GRSE et déjeuner inclus."
+    "description": "Circuit des 5 îles en catamaran ou speedboat depuis la jetée de Trou d'Eau Douce, avec snorkeling au parc marin, passage devant l'épave du Dalbair, l'îlot aux Aigrettes et le phare, cascade de la GRSE et déjeuner inclus.",
+    "filters": [
+      "ile-aux-cerfs",
+      "ile-aux-aigrettes"
+    ]
   },
   {
     "id": "blueberry-boat-trips-southeast-cruise",
@@ -26631,7 +26546,10 @@
       "excursions-sorties"
     ],
     "zone": "est",
-    "description": "Traversées en speedboat depuis Trou d'Eau Douce vers Île aux Cerfs, la cascade de la Grande Rivière Sud-Est et le parc marin de Blue Bay, avec activités nautiques sur ponton (bouée tractée, parachute ascensionnel, marche sous-marine)."
+    "description": "Traversées en speedboat depuis Trou d'Eau Douce vers Île aux Cerfs, la cascade de la Grande Rivière Sud-Est et le parc marin de Blue Bay, avec activités nautiques sur ponton (bouée tractée, parachute ascensionnel, marche sous-marine).",
+    "filters": [
+      "ile-aux-cerfs"
+    ]
   },
   {
     "id": "la-criee-excursion-en-bateau",
@@ -26647,7 +26565,10 @@
       "excursions-sorties"
     ],
     "zone": "sud",
-    "description": "Excursions en speedboat au départ de Blue Bay vers les îlots du sud-est et Île aux Cerfs, avec arrêt snorkeling dans le parc marin."
+    "description": "Excursions en speedboat au départ de Blue Bay vers les îlots du sud-est et Île aux Cerfs, avec arrêt snorkeling dans le parc marin.",
+    "filters": [
+      "ile-aux-cerfs"
+    ]
   },
   {
     "id": "falconboats",
@@ -26695,7 +26616,11 @@
       "excursions-sorties"
     ],
     "zone": "sud",
-    "description": "Journée privée en speedboat au départ de Blue Bay vers les îlots du sud-est (Île aux Flamants, Île aux Phares, Île aux Cerfs), avec snorkeling, observation de dauphins, halte à la cascade de la GRSE et déjeuner BBQ."
+    "description": "Journée privée en speedboat au départ de Blue Bay vers les îlots du sud-est (Île aux Flamants, Île aux Phares, Île aux Cerfs), avec snorkeling, observation de dauphins, halte à la cascade de la GRSE et déjeuner BBQ.",
+    "filters": [
+      "ile-aux-cerfs",
+      "ile-aux-phares"
+    ]
   },
   {
     "id": "seafan-diving-adventures-belle-mare",
@@ -26730,7 +26655,10 @@
       "excursions-sorties"
     ],
     "zone": "est",
-    "description": "Transfert partagé en speedboat depuis Trou d'Eau Douce vers Île aux Cerfs, avec passage par la cascade de la Grande Rivière Sud-Est et déjeuner BBQ sur la plage."
+    "description": "Transfert partagé en speedboat depuis Trou d'Eau Douce vers Île aux Cerfs, avec passage par la cascade de la Grande Rivière Sud-Est et déjeuner BBQ sur la plage.",
+    "filters": [
+      "ile-aux-cerfs"
+    ]
   },
   {
     "id": "neptune-cruises",
@@ -26746,7 +26674,10 @@
       "excursions-sorties"
     ],
     "zone": "est",
-    "description": "Croisière en bateau au départ de Trou d'Eau Douce vers la cascade de la Grande Rivière Sud-Est puis Île aux Cerfs, avec déjeuner BBQ, boissons et animation musicale à bord."
+    "description": "Croisière en bateau au départ de Trou d'Eau Douce vers la cascade de la Grande Rivière Sud-Est puis Île aux Cerfs, avec déjeuner BBQ, boissons et animation musicale à bord.",
+    "filters": [
+      "ile-aux-cerfs"
+    ]
   },
   {
     "id": "excursion-5-iles-traversee-turquoise-ile-aux-cerfs-belle-mar",
@@ -26762,7 +26693,10 @@
       "excursions-sorties"
     ],
     "zone": "est",
-    "description": "Circuit des 5 îles proposé par Belle Mare Tours, avec snorkeling dans le lagon turquoise, arrêt à Île aux Cerfs, visite de la cascade de la GRSE et déjeuner BBQ poulet-poisson inclus."
+    "description": "Circuit des 5 îles proposé par Belle Mare Tours, avec snorkeling dans le lagon turquoise, arrêt à Île aux Cerfs, visite de la cascade de la GRSE et déjeuner BBQ poulet-poisson inclus.",
+    "filters": [
+      "ile-aux-cerfs"
+    ]
   },
   {
     "id": "private-boat-trip-5-island-tour-mauritius-ile-aux-cerfs-excu",
@@ -26778,7 +26712,10 @@
       "excursions-sorties"
     ],
     "zone": "est",
-    "description": "Formule privée du circuit des 5 îles vers Île aux Cerfs, en speedboat exclusif avec déjeuner à bord, proposée par le même opérateur que le tour classique de Trou d'Eau Douce."
+    "description": "Formule privée du circuit des 5 îles vers Île aux Cerfs, en speedboat exclusif avec déjeuner à bord, proposée par le même opérateur que le tour classique de Trou d'Eau Douce.",
+    "filters": [
+      "ile-aux-cerfs"
+    ]
   },
   {
     "id": "prestige-scuba-adventures-belle-mare",
@@ -26829,7 +26766,10 @@
       "excursions-sorties"
     ],
     "zone": "est",
-    "description": "Plateforme de réservation en ligne pour excursions en mer à l'île Maurice, avec notamment une croisière en catamaran vers l'Ile aux Cerfs au départ de Pointe Jérôme et une sortie dauphins sur la côte sud-ouest, déjeuner BBQ inclus."
+    "description": "Plateforme de réservation en ligne pour excursions en mer à l'île Maurice, avec notamment une croisière en catamaran vers l'Ile aux Cerfs au départ de Pointe Jérôme et une sortie dauphins sur la côte sud-ouest, déjeuner BBQ inclus.",
+    "filters": [
+      "ile-aux-cerfs"
+    ]
   },
   {
     "id": "aquacity-belle-mare-watersports",
@@ -26963,30 +26903,13 @@
     "themes": [
       "excursions-sorties"
     ],
-    "zone": "est"
+    "zone": "est",
+    "filters": [
+      "ile-aux-cerfs"
+    ]
   },
   {
     "id": "vallee-d-osterlog-endemic-garden",
-    "name": "Vallée d'Osterlog Endemic Garden",
-    "category": "faire-du-sport",
-    "address": "MJ29+QF3, Cluny",
-    "phone": "+230 670 4088",
-    "website": "https://osterlog.govmu.org/osterlog/",
-    "googleMapsUrl": "https://maps.google.com/?cid=15291903005455246471&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.3481107,
-    "lng": 57.6186578,
-    "themes": [
-      "randonnee-trail",
-      "kids-friendly"
-    ],
-    "duration": "2h-3h",
-    "difficultyLevel": "debutant",
-    "guideRecommended": false,
-    "zone": "sud",
-    "description": "Réserve de 275 hectares abritant 67 des 680 espèces végétales endémiques de Maurice, dont certains spécimens vieux de plus de 200 ans (tambalacoque, bois clou, bois perroquet). Deux sentiers : la boucle facile vers la Cascade Tortue, nommée d'après un rocher en forme de carapace, avec vasques naturelles pour se rafraîchir, et le sentier plus technique du Mirador (Tambalacoque), avec vues sur les monts Lagrave et Laselle. Un enclos de tortues complète la visite."
-  },
-  {
-    "id": "vallee-d-osterlog-endemic-garden-sortir-decouvrir",
     "name": "Vallée d'Osterlog Endemic Garden",
     "category": "sortir-decouvrir",
     "address": "MJ29+QF3, Cluny",
@@ -26996,13 +26919,14 @@
     "lat": -20.3481107,
     "lng": 57.6186578,
     "themes": [
-      "plages-nature"
+      "parcs-activites-famille",
+      "kids-friendly"
     ],
     "duration": "2h-3h",
     "difficultyLevel": "debutant",
     "guideRecommended": false,
     "zone": "sud",
-    "description": "Réserve de 275 hectares avec deux sentiers : la boucle facile de la Cascade Tortue et le sentier plus technique du Mirador (Tambalacoque), avec vues sur les monts Lagrave et Laselle."
+    "description": "Réserve de 275 hectares abritant 67 des 680 espèces végétales endémiques de Maurice, dont certains spécimens vieux de plus de 200 ans (tambalacoque, bois clou, bois perroquet). Deux sentiers : la boucle facile vers la Cascade Tortue, nommée d'après un rocher en forme de carapace, avec vasques naturelles pour se rafraîchir, et le sentier plus technique du Mirador (Tambalacoque), avec vues sur les monts Lagrave et Laselle. Un enclos de tortues complète la visite."
   },
   {
     "id": "escale-marine",
@@ -27612,25 +27536,6 @@
     "zone": "ouest",
     "description": "École de surf à Tamarin, seule école internationalement certifiée de l'île, proposant cours particuliers ou collectifs et location de planches, ainsi que des sorties d'observation des dauphins et baleines ; avis très positifs sur l'accueil et les moniteurs.",
     "hours": "Tlj 9h-17h",
-    "filters": [
-      "surf"
-    ]
-  },
-  {
-    "id": "tamarin-bay-surf-school-faire-du-sport",
-    "name": "Tamarin Bay Surf School",
-    "category": "faire-du-sport",
-    "address": "Veranda Tamarin, Tamarin",
-    "phone": "+230 5745 6759",
-    "website": "https://surf-maurice.com/",
-    "googleMapsUrl": "https://maps.google.com/?cid=2005973076959964612&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.3272756,
-    "lng": 57.377816,
-    "themes": [
-      "sports-nautiques"
-    ],
-    "zone": "ouest",
-    "description": "École de surf à Tamarin, seule école internationalement certifiée de l'île, proposant cours particuliers ou collectifs et location de planches, ainsi que des sorties d'observation des dauphins et baleines ; avis très positifs sur l'accueil et les moniteurs.",
     "filters": [
       "surf"
     ]
@@ -29579,24 +29484,6 @@
     "description": "Demeure coloniale en bois construite en 1872 à Forest Side, première maison mauricienne équipée de l'électricité en 1889, aujourd'hui maison-musée et première étape de la Route du Thé. Visite guidée (français/anglais) à travers les pièces d'époque : bois récupéré d'anciens navires corsaires, mobilier en acajou, carreaux de ciment et souvenirs de la famille Guimbeau, au milieu de jardins centenaires (camphriers, araucarias). La visite se termine par une dégustation de thés de Bois Chéri et de rhum dans le salon de thé ; petite boutique de souvenirs sur place. Ouvert tous les jours 9h-17h."
   },
   {
-    "id": "domaine-des-aubineaux-manger-boire",
-    "name": "Domaine des Aubineaux",
-    "category": "manger-boire",
-    "address": "Route du Thé, Forest Side, Curepipe",
-    "phone": "",
-    "website": "https://groupe-saintaubin.com/",
-    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Domaine%20des%20Aubineaux%20Curepipe%20Mauritius",
-    "lat": -20.3277142,
-    "lng": 57.5324951,
-    "themes": [
-      "tables-hotes-chefs-domicile"
-    ],
-    "hours": "Tous les jours 9h-17h",
-    "zone": "centre",
-    "promoText": "Demeure coloniale restaurée en musée du thé mauricien, visite guidée d'1h se terminant par une dégustation de thé et de rhum. (≈330 Rs/pers.)",
-    "description": "Demeure coloniale en bois construite en 1872 à Forest Side, première maison mauricienne équipée de l'électricité en 1889, aujourd'hui maison-musée et première étape de la Route du Thé. Visite guidée (français/anglais) à travers les pièces d'époque : bois récupéré d'anciens navires corsaires, mobilier en acajou, carreaux de ciment et souvenirs de la famille Guimbeau, au milieu de jardins centenaires (camphriers, araucarias). La visite se termine par une dégustation de thés de Bois Chéri et de rhum dans le salon de thé ; petite boutique de souvenirs sur place. Ouvert tous les jours 9h-17h."
-  },
-  {
     "id": "chef-alessio-cours-cuisine",
     "name": "Chef Alessio — Cours de cuisine",
     "category": "manger-boire",
@@ -29882,26 +29769,6 @@
     "promoText": "Vue magnifique, personnel attentionné et iced coffee délicieux. Musique parfois forte.",
     "zone": "nord",
     "description": "Restaurant lounge-bar les pieds dans le sable à Grand Baie (ambiance Côte d'Azur), ouvert en continu du petit-déjeuner au dîner : cuisine méditerranéenne et fruits de mer, terrasse face au lagon — spot agréable pour bruncher ou travailler avec vue.",
-    "filters": [
-      "cafe-coworking"
-    ]
-  },
-  {
-    "id": "la-plage-beach-club-trou-aux-biches",
-    "name": "La Plage Beach Club",
-    "category": "famille-travail",
-    "address": "Trou aux Biches (Nord)",
-    "phone": "",
-    "website": "",
-    "googleMapsUrl": "https://maps.app.goo.gl/48C6s3rwfYkwoPmy9",
-    "lat": -20.0368221,
-    "lng": 57.5440528,
-    "themes": [
-      "coworking-teletravail"
-    ],
-    "promoText": "Vue splendide, les pieds dans le sable, du calme et un cheesecake à tomber !",
-    "zone": "nord",
-    "description": "Beach club (by Evaco) sur la plage de Trou aux Biches : restaurant ouvert au public midi et soir, piscine, transats et glacier — cadre balnéaire pour déjeuner ou télétravailler face à la mer.",
     "filters": [
       "cafe-coworking"
     ]
@@ -31423,29 +31290,14 @@
     "lat": -20.0067831,
     "lng": 57.6477936,
     "themes": [
-      "sports-nautiques"
+      "sports-nautiques",
+      "kids-friendly"
     ],
     "zone": "nord",
     "description": "Activité de kayak à Calodyne.",
     "filters": [
       "kayak"
     ]
-  },
-  {
-    "id": "yemaya-adventures-sortir-decouvrir",
-    "name": "Yemaya Adventures",
-    "category": "sortir-decouvrir",
-    "address": "Butte à l'Herbe, Calodyne",
-    "phone": "+230 5254 3205",
-    "website": "https://www.yemayaadventures.com/",
-    "lat": -20.0067831,
-    "lng": 57.6477936,
-    "themes": [
-      "parcs-activites-famille",
-      "kids-friendly"
-    ],
-    "zone": "nord",
-    "description": "Activité de kayak à Calodyne."
   },
   {
     "id": "sea-urchin-diving-center",
@@ -34199,42 +34051,6 @@
     ]
   },
   {
-    "id": "marco-pearl-shop-2",
-    "name": "Marco Pearl Shop",
-    "category": "acheter-equiper",
-    "address": "Royal Road, Grand Baie",
-    "phone": "+230 5256 6765",
-    "googleMapsUrl": "https://maps.google.com/?cid=11015843410349809462&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0115431,
-    "lng": 57.5846077,
-    "themes": [
-      "seconde-main-boutiques"
-    ],
-    "zone": "nord",
-    "description": "Boutique de vêtements et accessoires à Grand Baie.",
-    "filters": [
-      "habits-adultes"
-    ]
-  },
-  {
-    "id": "luna-boutique-mauritius-2",
-    "name": "Lüna Boutique Mauritius",
-    "category": "acheter-equiper",
-    "address": "Richmond Hill, Rue la Salette, Grand Baie",
-    "phone": "+230 269 1317",
-    "googleMapsUrl": "https://maps.google.com/?cid=16526113218828132361&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0133158,
-    "lng": 57.5884049,
-    "themes": [
-      "seconde-main-boutiques"
-    ],
-    "zone": "nord",
-    "description": "Boutique de vêtements et accessoires à Grand Baie.",
-    "filters": [
-      "habits-adultes"
-    ]
-  },
-  {
     "id": "perhaps",
     "name": "Perhaps",
     "category": "acheter-equiper",
@@ -34336,7 +34152,10 @@
       "excursions-sorties"
     ],
     "zone": "nord",
-    "description": "Excursions en catamaran au départ de Cap Malheureux vers l'Ile Plate, avec traversée d'environ une heure et arrêt snorkeling sur un récif préservé; possibilité de privatiser le bateau en petit groupe."
+    "description": "Excursions en catamaran au départ de Cap Malheureux vers l'Ile Plate, avec traversée d'environ une heure et arrêt snorkeling sur un récif préservé; possibilité de privatiser le bateau en petit groupe.",
+    "filters": [
+      "flat-island"
+    ]
   },
   {
     "id": "gone-fishing",
@@ -35481,25 +35300,6 @@
     ]
   },
   {
-    "id": "delior-automobile",
-    "name": "Delior Automobile",
-    "category": "acheter-equiper",
-    "address": "Avenue De Coriolis, Royal Road, Quatre Bornes",
-    "phone": "+230 463 3560",
-    "website": "https://www.facebook.com/share/12GkDHqATpn/",
-    "googleMapsUrl": "https://maps.google.com/?cid=10349125011136529601&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.2463188,
-    "lng": 57.4793739,
-    "themes": [
-      "seconde-main-boutiques"
-    ],
-    "zone": "centre",
-    "description": "Vente de voitures d'occasion à Quatre Bornes. Achat, vente et reprise de véhicules.",
-    "filters": [
-      "voitures-2-roues"
-    ]
-  },
-  {
     "id": "dan-motors-ltd",
     "name": "Dan Motors Ltd",
     "category": "acheter-equiper",
@@ -35532,24 +35332,6 @@
     ],
     "zone": "centre",
     "description": "Vente de voitures d'occasion à Moka. Achat, vente et reprise de véhicules.",
-    "filters": [
-      "voitures-2-roues"
-    ]
-  },
-  {
-    "id": "phoenix-car-gallery",
-    "name": "Phoenix Car Gallery",
-    "category": "acheter-equiper",
-    "address": "Nalletamby Rd, Vacoas-Phœnix 00230",
-    "phone": "+230 5422 2846",
-    "googleMapsUrl": "https://maps.google.com/?cid=11335614367230636735&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.2769959,
-    "lng": 57.4970036,
-    "themes": [
-      "seconde-main-boutiques"
-    ],
-    "zone": "centre",
-    "description": "Vente de voitures d'occasion à Vacoas. Achat, vente et reprise de véhicules.",
     "filters": [
       "voitures-2-roues"
     ]
@@ -35841,7 +35623,10 @@
       "kids-friendly"
     ],
     "zone": "est",
-    "description": "Opérateur d'excursions basé à Trou d'Eau Douce (transferts aéroport, activités terre/air/mer), proposant notamment des sorties en vedette rapide vers l'Île aux Cerfs avec halte à une cascade et repas barbecue."
+    "description": "Opérateur d'excursions basé à Trou d'Eau Douce (transferts aéroport, activités terre/air/mer), proposant notamment des sorties en vedette rapide vers l'Île aux Cerfs avec halte à une cascade et repas barbecue.",
+    "filters": [
+      "ile-aux-cerfs"
+    ]
   },
   {
     "id": "trishen-david-son-enterprise-ltd-locksmith-keycutter",
@@ -37460,46 +37245,6 @@
     "filters": [
       "europeenne",
       "bars"
-    ]
-  },
-  {
-    "id": "lartista-caudan-port-louis",
-    "name": "L'Artista",
-    "category": "manger-boire",
-    "address": "1er étage foodcourt, Le Caudan Waterfront, Port-Louis",
-    "phone": "+230 260 0591",
-    "zone": "centre",
-    "lat": -20.1611,
-    "lng": 57.5,
-    "themes": [
-      "restaurants"
-    ],
-    "priceRange": "prix-moyen",
-    "hours": "Lun-Mar 11h-16h, Mer-Sam 11h-22h, Dim 11h-16h",
-    "description": "Restaurant italien au 1er étage du foodcourt du Caudan Waterfront, seule table du complexe avec vue sur le port de Port-Louis, pizzas, pâtes maison et fruits de mer, bar extérieur attenant.",
-    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=L'Artista%201er%20%C3%A9tage%20foodcourt%2C%20Le%20Caudan%20Waterfront%2C%20Port-Louis%20Mauritius",
-    "filters": [
-      "italien"
-    ]
-  },
-  {
-    "id": "botteghita-ristorante-bar-grand-baie",
-    "name": "Botteghita Ristorante & Bar",
-    "category": "manger-boire",
-    "address": "Royal Road, Grand Baie",
-    "phone": "+230 263 1635",
-    "zone": "nord",
-    "lat": -20.0167,
-    "lng": 57.5833,
-    "themes": [
-      "restaurants"
-    ],
-    "priceRange": "se-faire-plaisir",
-    "hours": "Déjeuner 11h30-14h30, dîner 18h-22h30",
-    "description": "Restaurant italien traditionnel de Grand Baie à l'ambiance élégante, service soigné en salle, qui se transforme en bar de nuit après 22h.",
-    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Botteghita%20Ristorante%20%26%20Bar%20Royal%20Road%2C%20Grand%20Baie%20Mauritius",
-    "filters": [
-      "italien"
     ]
   },
   {
@@ -46533,7 +46278,7 @@
       "auto-garages-concessionnaires"
     ],
     "zone": "centre",
-    "description": "Vente de véhicules : concessionnaire / revendeur automobile.",
+    "description": "Vente de voitures d'occasion à Port-Louis. Achat, vente et reprise de véhicules.",
     "filters": [
       "concessionnaires"
     ]
@@ -47122,7 +46867,7 @@
       "auto-garages-concessionnaires"
     ],
     "zone": "centre",
-    "description": "Vente de véhicules : concessionnaire / revendeur automobile.",
+    "description": "Vente de voitures d'occasion à Quatre Bornes. Achat, vente et reprise de véhicules.",
     "filters": [
       "concessionnaires"
     ]
@@ -47369,7 +47114,7 @@
       "auto-garages-concessionnaires"
     ],
     "zone": "centre",
-    "description": "Vente de véhicules : concessionnaire / revendeur automobile.",
+    "description": "Vente de voitures d'occasion à Vacoas. Achat, vente et reprise de véhicules.",
     "filters": [
       "concessionnaires"
     ]
@@ -47388,7 +47133,7 @@
       "auto-garages-concessionnaires"
     ],
     "zone": "centre",
-    "description": "Vente de véhicules : concessionnaire / revendeur automobile.",
+    "description": "Vente de voitures d'occasion à Vacoas. Achat, vente et reprise de véhicules.",
     "filters": [
       "concessionnaires"
     ]
@@ -49342,7 +49087,8 @@
     "zone": "nord",
     "description": "Sorties en mer en hors-bord au départ de Grand Gaube avec des guides passionnés (Brian & Big John) : excursions privées vers l'Île aux Ambres et l'îlot Bernache, ainsi que des tours en minivan pour découvrir l'île.",
     "filters": [
-      "navigation-bateau"
+      "navigation-bateau",
+      "ile-d-ambre"
     ]
   },
   {
@@ -49362,7 +49108,8 @@
     "description": "Petite entreprise familiale (Patrick Karia, guide certifié) proposant des sorties en bateau au départ de Poudre d'Or : navigation dans le lagon, snorkeling près de la barrière de corail (masque et tuba fournis), déjeuner barbecue sur la plage de l'îlot Bernache, baignade, puis balade nature sur l'Île d'Ambre.",
     "filters": [
       "navigation-bateau",
-      "snorkeling"
+      "snorkeling",
+      "ile-d-ambre"
     ]
   },
   {
@@ -49572,25 +49319,6 @@
     "description": "Opérateur d'excursions en bateau à fond de verre et de snorkeling dans le parc marin de Blue Bay, basé sur la plage publique (plus de 25 ans d'expérience). Sorties d'1h ou 2h à la découverte des 72 espèces de poissons, 38 types de coraux et des tortues du parc marin."
   },
   {
-    "id": "totof-tours-blue-bay-faire-du-sport",
-    "name": "Totof Tours — Blue Bay",
-    "category": "faire-du-sport",
-    "address": "Plage publique de Blue Bay",
-    "phone": "",
-    "website": "https://www.totof-mauritius.com/",
-    "googleMapsUrl": "https://www.google.com/maps/search/Totof+Tours+Blue+Bay",
-    "lat": -20.4438075,
-    "lng": 57.7172253,
-    "themes": [
-      "sports-nautiques"
-    ],
-    "zone": "sud",
-    "description": "Opérateur d'excursions en bateau à fond de verre et de snorkeling dans le parc marin de Blue Bay, basé sur la plage publique (plus de 25 ans d'expérience). Sorties d'1h ou 2h à la découverte des 72 espèces de poissons, 38 types de coraux et des tortues du parc marin.",
-    "filters": [
-      "snorkeling"
-    ]
-  },
-  {
     "id": "bato-dodo-excursion-blue-bay",
     "name": "Bato Dodo Excursion — Blue Bay",
     "category": "sortir-decouvrir",
@@ -49687,7 +49415,10 @@
       "excursions-sorties"
     ],
     "zone": "nord",
-    "description": "Balade à vélo à assistance électrique à travers les champs de canne du domaine de Pamplemousses, avec traversée du vieux parc colonial et vues sur Grand Baie, le Coin de Mire et Anse la Raie. Guide féru d'histoire."
+    "description": "Balade à vélo à assistance électrique à travers les champs de canne du domaine de Pamplemousses, avec traversée du vieux parc colonial et vues sur Grand Baie, le Coin de Mire et Anse la Raie. Guide féru d'histoire.",
+    "filters": [
+      "coin-de-mire"
+    ]
   },
   {
     "id": "just-natural-bois-rouge",
@@ -50563,22 +50294,6 @@
     "description": "Magasin bio de Richmond Hill (Super U Grand Baie), fruits et légumes et produits d'hygiène bio, arrivage le jeudi matin. Autre adresse : Tamarin.",
     "filters": [
       "epiceries-specialisees"
-    ]
-  },
-  {
-    "id": "le-square-beaute-grand-baie",
-    "name": "Le Square Beauté",
-    "category": "sante-bien-etre",
-    "address": "Route Royale, Grand Baie",
-    "phone": "+230 5509 1668",
-    "themes": [
-      "coiffeurs-barbiers-beaute"
-    ],
-    "zone": "nord",
-    "hours": "Lu/ma/je 9h-17h30, me jusqu'à 19h, sa jusqu'à 17h",
-    "description": "Institution de Grand Baie nichée dans le jardin d'Around the World, salon combinant coiffure et soins esthétiques.",
-    "filters": [
-      "coiffeurs"
     ]
   },
   {
