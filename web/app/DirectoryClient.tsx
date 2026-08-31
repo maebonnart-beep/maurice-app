@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useDeferredValue, useEffect, useMemo, useRef, useState } from "react";
 import dynamic from "next/dynamic";
 import type { Business, CategoryKey } from "@/lib/types";
 import type { MapBounds } from "./Map";
@@ -8,7 +8,7 @@ import { CATEGORIES, CATEGORY_MAP, SUBCATEGORIES, FILTER_GROUPS, PRICE_RANGES } 
 import type { FilterGroup } from "@/data/categories";
 import { SELECTIONS, SELECTION_GROUP_META } from "@/data/selections";
 import type { SelectionGroup, SelectionIconKey } from "@/data/selections";
-import { fuzzyMatch } from "@/lib/fuzzyMatch";
+import { fuzzyMatchTokens, tokenize } from "@/lib/fuzzyMatch";
 import { isPastEvent, compareByEventDate } from "@/lib/events";
 
 const SELECTION_ICONS: Record<SelectionIconKey, Icon> = {
@@ -298,6 +298,14 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
   const [mapBounds, setMapBounds] = useState<MapBounds | null>(null);
   // Mobile : forcer la liste à plat malgré l'écran d'accueil par catégories.
   const [browseAll, setBrowseAll] = useState(false);
+  // Bandeau de recherche ouvert (tap sur le pseudo-champ d'accueil) —
+  // indépendant de `browseAll` : affiche juste le champ, sans forcer tout de
+  // suite le montage de la liste complète tant qu'aucun mot n'est tapé.
+  const [searchOpen, setSearchOpen] = useState(false);
+  // Focalise le champ de recherche du bandeau dès son montage, dans le même
+  // geste que le clic qui le fait apparaître (évite le clavier qui met du
+  // temps à s'ouvrir ou qui demande un second tap sur mobile).
+  const [focusSearchOnMount, setFocusSearchOnMount] = useState(false);
   // Accueil « Option A » : menu d'entrée → puis mode choisi.
   const [homeMode, setHomeMode] = useState<
     "menu" | "categories" | "favoris" | "listes" | "ajouter" | "profil"
@@ -314,6 +322,14 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
   const testeSectionRef = useRef<HTMLDivElement>(null);
 
   const onBoundsChange = useCallback((b: MapBounds) => setMapBounds(b), []);
+
+  // Consomme le drapeau d'autofocus juste après le montage du champ : React
+  // n'applique `autoFocus` qu'à l'insertion du nœud DOM, donc le repasser à
+  // false ensuite n'enlève rien, mais évite qu'un futur setBrowseAll(true)
+  // (chip catégorie, autour de moi…) ne réutilise ce drapeau par erreur.
+  useEffect(() => {
+    if (focusSearchOnMount) setFocusSearchOnMount(false);
+  }, [focusSearchOnMount]);
 
   // Quitte l'écran d'accueil "Listes de Koté Moris" → referme la sélection ouverte.
   useEffect(() => {
@@ -380,6 +396,8 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
     setActiveZone(null);
     setQuery("");
     setBrowseAll(false);
+    setSearchOpen(false);
+    setFocusSearchOnMount(false);
     setHomeCategory(null);
     setHomeMode("menu");
     resetFacets();
@@ -387,10 +405,15 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
-  // Entrée « Recherche » du menu d'accueil : focalise le champ de recherche du bandeau.
+  // Entrée « Recherche » du menu d'accueil : ouvre le bandeau de recherche et
+  // le focalise dès son montage (autoFocus, pas de setTimeout qui casserait
+  // le geste utilisateur et retarderait le clavier mobile). N'active PAS
+  // `browseAll` : tant qu'aucun mot n'est tapé, la liste complète (~2000
+  // fiches) n'est pas montée — seule la recherche déclenche son affichage.
   function focusSearch() {
     window.scrollTo({ top: 0, behavior: "smooth" });
-    (document.querySelector('header input[type="search"]') as HTMLInputElement | null)?.focus();
+    setSearchOpen(true);
+    setFocusSearchOnMount(true);
   }
 
   function selectCategory(key: string) {
@@ -461,7 +484,14 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
   // rubriques → sous-menu d'accueil → menu) au lieu de tout réinitialiser.
   // Utilisé par les bandeaux sticky de l'accueil et de la liste de résultats.
   const canGoBack =
-    homeSubRubrique !== null || homeCategory !== null || activeThemes.size > 0 || browseAll || active !== "all" || homeMode !== "menu";
+    homeSubRubrique !== null ||
+    homeCategory !== null ||
+    activeThemes.size > 0 ||
+    browseAll ||
+    searchOpen ||
+    query.trim() !== "" ||
+    active !== "all" ||
+    homeMode !== "menu";
   function goBackFromResults() {
     if (homeSubRubrique !== null) {
       setHomeSubRubrique(null); // retour à la liste de rubriques
@@ -477,6 +507,11 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
     }
     if (browseAll) {
       setBrowseAll(false);
+      return;
+    }
+    if (searchOpen || query.trim() !== "") {
+      setQuery("");
+      setSearchOpen(false);
       return;
     }
     if (active !== "all") {
@@ -570,8 +605,28 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
     return s;
   }, [activeThemes, facetGroups, facetPrices]);
 
+  // Le filtrage flou (Levenshtein) sur ~2000 fiches est coûteux : on le
+  // déporte sur `deferredQuery` pour que la frappe reste fluide (React
+  // priorise le rendu de l'input, puis recalcule la liste dès qu'il est
+  // libre, sans bloquer chaque caractère tapé).
+  const deferredQuery = useDeferredValue(query);
+
+  // Tokens de recherche précalculés une fois par fiche (recalculés
+  // seulement quand `businesses` change, pas à chaque frappe) : évite de
+  // renormaliser/redécouper nom + adresse + catégorie + rubriques de
+  // chaque fiche à chaque caractère tapé, qui était la vraie source de
+  // lenteur pendant la saisie.
+  const searchTokensById = useMemo(() => {
+    const m: Record<string, string[]> = {};
+    businesses.forEach((b) => {
+      const rubriqueLabels = (b.themes || []).map((t) => RUBRIQUE_MAP[t]?.label || "").join(" ");
+      m[b.id] = tokenize(b.name + " " + b.address + " " + CATEGORY_MAP[b.category].label + " " + rubriqueLabels);
+    });
+    return m;
+  }, [businesses]);
+
   const rows = useMemo(() => {
-    const q = query.trim().toLowerCase();
+    const q = deferredQuery.trim();
     return businesses
       .filter((b) => {
         if (activeZone && b.zone !== activeZone) return false;
@@ -598,11 +653,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
         // Agenda : masque les événements ponctuels dont la date est passée.
         if (b.category === "agenda" && isPastEvent(b)) return false;
         if (!q) return true;
-        const rubriqueLabels = (b.themes || []).map((t) => RUBRIQUE_MAP[t]?.label || "").join(" ");
-        return fuzzyMatch(
-          b.name + " " + b.address + " " + CATEGORY_MAP[b.category].label + " " + rubriqueLabels,
-          q
-        );
+        return fuzzyMatchTokens(searchTokensById[b.id] ?? [], q);
       })
       .sort((a, b) => {
         const tierDiff = (b.tier === "premium" ? 1 : 0) - (a.tier === "premium" ? 1 : 0);
@@ -610,7 +661,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
         if (a.category === "agenda" && b.category === "agenda") return compareByEventDate(a, b);
         return 0;
       });
-  }, [businesses, query, active, activeThemes, activeZone, activeRubrique, applicableFilterGroups, facetGroups, facetPrices, facetBadges]);
+  }, [businesses, deferredQuery, searchTokensById, active, activeThemes, activeZone, activeRubrique, applicableFilterGroups, facetGroups, facetPrices, facetBadges]);
 
   // Base rubrique (rubrique + zone + recherche, hors facettes) pour les compteurs.
   const facetCounts = useMemo(() => {
@@ -620,12 +671,12 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
     if (!activeRubrique) return { perGroup, price, badge, total: 0 };
     const groups = FILTER_GROUPS.filter((g) => g.appliesTo.includes(activeRubrique));
     groups.forEach((g) => (perGroup[g.key] = {}));
-    const q = query.trim().toLowerCase();
+    const q = deferredQuery.trim();
     let total = 0;
     businesses.forEach((b) => {
       if (!(b.themes || []).includes(activeRubrique)) return;
       if (activeZone && b.zone !== activeZone) return;
-      if (q && !fuzzyMatch(b.name + " " + b.address, q)) return;
+      if (q && !fuzzyMatchTokens(tokenize(b.name + " " + b.address), q)) return;
       total++;
       const filters = b.filters || [];
       groups.forEach((g) => {
@@ -638,7 +689,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
       if (b.badge) badge[b.badge] = (badge[b.badge] || 0) + 1;
     });
     return { perGroup, price, badge, total };
-  }, [businesses, activeRubrique, activeZone, query]);
+  }, [businesses, activeRubrique, activeZone, deferredQuery]);
 
   // Compteurs par option pour la page de sous-rubriques (avant sélection de
   // rubrique/facette — donc indépendant de activeRubrique/facetGroups).
@@ -773,16 +824,23 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
   }, [businesses, activeZone]);
 
   // Écran d'accueil : 8 catégories plutôt que 2574 résultats en vrac.
+  // Masqué dès que la recherche est ouverte (même sans mot tapé) : le
+  // bandeau de recherche prend alors le dessus dans l'en-tête.
   const showHome =
+    active === "all" && activeThemes.size === 0 && query.trim() === "" && !browseAll && !searchOpen;
+
+  // Liste/carte des résultats (jusqu'à ~2000 fiches) : ne se monte QUE s'il y
+  // a vraiment quelque chose à filtrer/afficher — un mot tapé, un filtre, ou
+  // « Voir tout » explicite. Ouvrir le champ de recherche seul (searchOpen)
+  // ne suffit pas : ça évite de générer toute la liste non filtrée dès le
+  // premier tap, avant même que l'utilisateur ait tapé quoi que ce soit.
+  const mobileTiles =
     active === "all" && activeThemes.size === 0 && query.trim() === "" && !browseAll;
 
-  // On montre des tuiles (catégories / rubriques) plutôt que la liste.
-  const mobileTiles = showHome;
-
-  // Recherche affichée seulement dans le flux dédié (tuile « Recherche »,
-  // onglet « Explorer », ou « Voir tout ») — pas pendant la navigation par
+  // Recherche affichée dans le flux dédié (tuile « Recherche », onglet
+  // « Explorer », ou « Voir tout ») — pas pendant la navigation par
   // rubrique, où elle n'apporte rien et prend de la place.
-  const showHeaderSearch = browseAll;
+  const showHeaderSearch = browseAll || searchOpen;
 
   // Rubriques les plus fournies toutes catégories confondues, pour la section
   // « Sous-catégories populaires » de l'accueil (grille des 8 catégories).
@@ -1260,6 +1318,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                 value={query}
                 onChange={setQuery}
                 placeholder="Rechercher une activité, un lieu, un nom…"
+                autoFocus={focusSearchOnMount}
               />
             </div>
           </div>
@@ -1281,7 +1340,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
           {showHome && homeMode === "menu" && (
             <div className="max-w-[720px] mx-auto pb-6">
               <button
-                onClick={() => { setBrowseAll(true); setTimeout(focusSearch, 60); }}
+                onClick={focusSearch}
                 className="relative w-full h-[46px] mb-6 rounded-pill border border-border bg-surface shadow-sm text-left pl-11 pr-4 text-[15px] text-muted active:scale-[.99] transition-transform"
               >
                 <span className="absolute left-4 top-1/2 -translate-y-1/2 pointer-events-none">🔍</span>
@@ -2176,10 +2235,28 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
             </div>
           )}
 
+          {/* Recherche ouverte mais rien de tapé : on n'affiche pas encore
+              la liste (voir `mobileTiles`), juste une invite légère. */}
+          {searchOpen && !showHome && mobileTiles && (
+            <div className="text-center py-[70px] px-5 text-muted">
+              <div className="text-4xl mb-2.5">🔍</div>
+              Tapez pour rechercher une activité, un lieu, un nom…
+            </div>
+          )}
+
+          {/* Barre de résultats, liste et carte : ne se montent que lorsque
+              `mobileTiles` est faux, c'est-à-dire qu'il y a vraiment quelque
+              chose à afficher (recherche tapée, filtre, ou « Voir tout »).
+              Avant, ce bloc restait monté en permanence (juste masqué en
+              CSS), ce qui générait d'un coup les ~2000 fiches (+ carte) dès
+              qu'on quittait l'accueil — d'où le ralentissement au premier tap
+              sur la recherche. */}
+          {!mobileTiles && (
+            <>
           {/* Barre de résultats : retour + « Autour de moi » / zone + bascule
               liste/carte, tenue sur une seule ligne (bande réduite) pour
               laisser plus de place aux fiches en dessous. */}
-          <div className={`sticky top-0 z-20 -mx-4 lg:-mx-5 px-4 lg:px-5 items-center gap-2 py-1.5 border-b border-border mb-3 ${mobileTiles ? "hidden" : "flex"}`} style={{ background: "var(--bg)" }}>
+          <div className="sticky top-0 z-20 -mx-4 lg:-mx-5 px-4 lg:px-5 flex items-center gap-2 py-1.5 border-b border-border mb-3" style={{ background: "var(--bg)" }}>
             <button
               onClick={goBackFromResults}
               disabled={!canGoBack}
@@ -2215,7 +2292,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
               uniquement en recherche/« voir tout » (browseAll) : quand on
               arrive par Explorer par catégorie, on est déjà dans une seule
               catégorie donc la rangée n'a plus de sens (sidebar desktop only). */}
-          {!mobileTiles && browseAll && (
+          {browseAll && (
             <div className="lg:hidden flex gap-1.5 overflow-x-auto pb-1 mb-3 -mt-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
               <button
                 onClick={() => selectCategoryChip("all")}
@@ -2272,9 +2349,9 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
             </div>
           ) : (
             <>
-              {!mobileTiles && restoFilterBar}
+              {restoFilterBar}
 
-              <div className={`lg:gap-4 lg:h-[calc(100vh-190px)] ${mobileTiles ? "hidden" : "lg:flex"}`}>
+              <div className="lg:gap-4 lg:h-[calc(100vh-190px)] lg:flex">
                 {/* Liste */}
                 <div
                   className={`lg:w-[56%] lg:overflow-y-auto lg:pr-1 ${
@@ -2342,6 +2419,8 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
               </div>
             </div>
           </div>
+            </>
+          )}
             </>
           )}
         </div>

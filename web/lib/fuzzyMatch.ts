@@ -6,6 +6,13 @@ export function normalizeText(s: string): string {
     .toLowerCase();
 }
 
+/** Découpe un texte en mots normalisés — à précalculer une fois par fiche
+ *  (côté appelant) plutôt qu'à chaque recherche : c'est la partie coûteuse
+ *  (normalize + regex) qui n'a pas besoin d'être refaite à chaque frappe. */
+export function tokenize(s: string): string[] {
+  return normalizeText(s).split(/[^a-z0-9]+/).filter(Boolean);
+}
+
 /** Distance d'édition (Levenshtein) entre deux chaînes. */
 function levenshtein(a: string, b: string): number {
   const m = a.length;
@@ -27,20 +34,32 @@ function levenshtein(a: string, b: string): number {
 }
 
 /**
- * Cherche `query` dans `haystack` en tolérant les fautes de frappe : chaque
- * mot de la recherche doit soit apparaître tel quel (sous-chaîne, pour les
- * recherches partielles du type "rest"), soit être proche (distance de
- * Levenshtein) d'un des mots du texte cible.
+ * Cherche `query` parmi les mots déjà normalisés/découpés `hayTokens`, en
+ * tolérant les fautes de frappe : chaque mot de la recherche doit préfixer
+ * un des mots cible (recherche partielle du type "rest" → "restaurant"), ou
+ * en être proche (distance de Levenshtein, réservée aux mots assez longs
+ * pour que ça reste pertinent — en dessous, la marge d'erreur ferait
+ * remonter des mots sans rapport).
+ *
+ * Variante de `fuzzyMatch` qui prend directement les tokens précalculés
+ * (voir `tokenize`) au lieu de re-découper le texte cible à chaque appel —
+ * à utiliser quand la même fiche est recherchée à chaque frappe.
  */
-export function fuzzyMatch(haystack: string, query: string): boolean {
-  const hay = normalizeText(haystack);
+export function fuzzyMatchTokens(hayTokens: string[], query: string): boolean {
   const q = normalizeText(query).trim();
   if (!q) return true;
   const queryTokens = q.split(/\s+/).filter(Boolean);
-  const hayTokens = hay.split(/[^a-z0-9]+/).filter(Boolean);
   return queryTokens.every((qt) => {
-    if (hay.includes(qt)) return true;
-    const maxDist = qt.length <= 4 ? 1 : qt.length <= 8 ? 1 : 2;
+    if (hayTokens.some((ht) => ht.startsWith(qt))) return true;
+    if (qt.length <= 3) return false;
+    const maxDist = qt.length <= 6 ? 1 : 2;
     return hayTokens.some((ht) => levenshtein(qt, ht) <= maxDist);
   });
+}
+
+/** Cherche `query` dans `haystack` brut (re-découpe à chaque appel — voir
+ *  `fuzzyMatchTokens` pour la variante précalculée, plus adaptée à une
+ *  recherche répétée sur le même texte). */
+export function fuzzyMatch(haystack: string, query: string): boolean {
+  return fuzzyMatchTokens(tokenize(haystack), query);
 }
