@@ -1196,30 +1196,6 @@
     ]
   },
   {
-    "id": "n-joy",
-    "name": "N 'JOY",
-    "category": "manger-boire",
-    "address": "la cuvette beach, Grand Baie",
-    "phone": "+230 5500 8601",
-    "website": "http://njoy.mu/",
-    "googleMapsUrl": "https://maps.google.com/?cid=9436126356883283085",
-    "lat": -20.0077772,
-    "lng": 57.5786448,
-    "themes": [
-      "cafes-bars-glaciers"
-    ],
-    "hours": "Lun, Mer-Jeu 11h-00h, Ven-Dim 11h-1h, fermé mar",
-    "priceRange": "prix-moyen",
-    "badge": "selection",
-    "zone": "nord",
-    "description": "Restaurant-lounge en bord de plage à La Cuvette, Grand Baie, mêlant cuisine fusion mauricienne et internationale à une ambiance festive animée par DJs et concerts live.",
-    "filters": [
-      "mauricienne",
-      "europeenne",
-      "bars"
-    ]
-  },
-  {
     "id": "ai-kisu-lux-grand-baie",
     "name": "Ai KISU - LUX* Grand Baie",
     "category": "manger-boire",
@@ -4738,7 +4714,7 @@
     ],
     "priceRange": "prix-moyen",
     "zone": "est",
-    "description": "Table d'hôte familiale fonctionnant uniquement sur réservation, proposant une cuisine créole maison à base de produits frais, avec des plats comme le curry de poisson ou la salade d'ourite.",
+    "description": "Table d'hôte familiale de Camp Ithier, sur réservation uniquement. Cuisine créole (cari poisson, salade ourite, gâteau piment) dans un jardin intimiste ; très bien notée.",
     "hours": "Dim 10h-15h30, Mar-Sam 16h-22h, fermé lundi",
     "filters": [
       "mauricienne",
@@ -9396,27 +9372,6 @@
     "hours": "Tous les jours 19h-22h30"
   },
   {
-    "id": "dolce-vita-restaurant",
-    "name": "Dolce Vita Restaurant",
-    "category": "manger-boire",
-    "address": "Ambre Resort & Spa, Coastal Road, Palmar, Flacq 41604",
-    "phone": "+230 401 8188",
-    "website": "https://www.yoursunlife.com/ambremauritius/dining/?utm_source=google&utm_medium=organic&utm_campaign=google_local_dolce_vita_restaurant",
-    "googleMapsUrl": "https://maps.google.com/?cid=10837899380064810531&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.2054736,
-    "lng": 57.7866169,
-    "themes": [
-      "restaurants"
-    ],
-    "zone": "est",
-    "hours": "Dîner 19h30-22h30 (déjeuner en saison 12h30-15h)",
-    "description": "Trattoria de l'Ambre Resort & Spa (Palmar), antipasti maison, pâtes et pizzas au feu de bois, carte des vins étoffée.",
-    "filters": [
-      "italien",
-      "vins-spiritueux"
-    ]
-  },
-  {
     "id": "beach-hut",
     "name": "Beach hut",
     "category": "manger-boire",
@@ -9518,26 +9473,6 @@
       "plus-belles-vues"
     ],
     "hours": "Tous les jours 11h-coucher du soleil"
-  },
-  {
-    "id": "mamie-sophie-table-d-hote",
-    "name": "Mamie Sophie Table D'Hôte",
-    "category": "manger-boire",
-    "address": "Camp Ithier",
-    "phone": "+230 5787 2999",
-    "website": "https://www.facebook.com/profile.php?id=100063622626232",
-    "googleMapsUrl": "https://maps.google.com/?cid=14560125569143051443&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.2184739,
-    "lng": 57.7596995,
-    "themes": [
-      "restaurants"
-    ],
-    "zone": "est",
-    "description": "Table d'hôte familiale de Camp Ithier, sur réservation uniquement. Cuisine créole (cari poisson, salade ourite, gâteau piment) dans un jardin intimiste ; très bien notée.",
-    "filters": [
-      "mauricienne"
-    ],
-    "hours": "Dim 10h-15h30 & Mar-Sam 16h-22h, fermé lun"
   },
   {
     "id": "le-skipper",
@@ -10638,26 +10573,6 @@
     ],
     "zone": "sud",
     "description": "Sorties en bateau privées à Blue Bay, navigation dans le lagon avec BBQ sur la plage ou option éco-responsable. Structure locale mauricienne mettant en avant son expertise régionale."
-  },
-  {
-    "id": "ile-des-deux-cocos",
-    "name": "Ile Des Deux Cocos",
-    "category": "manger-boire",
-    "address": "Ile Des Deux Cocos, Blue Bay 00230",
-    "phone": "+230 698 2727",
-    "website": "https://www.iledesdeuxcocos.com/",
-    "googleMapsUrl": "https://maps.google.com/?cid=8775098224810893164&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.4487075,
-    "lng": 57.7109832,
-    "themes": [
-      "restaurants"
-    ],
-    "zone": "sud",
-    "hours": "9h-15h30 (excursion à la journée)",
-    "description": "Île privée accessible en 5 minutes de bateau depuis la jetée de Blue Bay, au sein du parc marin. Buffet généreux préparé en plein air (grillades, salades du jardin) dans un cadre insulaire exceptionnel, ancienne propriété d'un gouverneur britannique des années 1920.",
-    "filters": [
-      "plus-belles-vues"
-    ]
   },
   {
     "id": "coco-de-zil-mauritius",
@@ -21690,25 +21605,6 @@
     ]
   },
   {
-    "id": "la-citronelle-2",
-    "name": "La Citronelle",
-    "category": "faire-du-sport",
-    "address": "H9CQ+CWP, Route Royale, Chamarel",
-    "phone": "+230 5765 2663",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=17349119052513386521&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.4289169,
-    "lng": 57.3898353,
-    "themes": [
-      "equitation-autres-sports"
-    ],
-    "zone": "sud",
-    "description": "Fiche pêche dans la région de Chamarel (activité à préciser).",
-    "filters": [
-      "peche"
-    ]
-  },
-  {
     "id": "ferme-marine-de-mahebourg-ltd",
     "name": "Ferme Marine De Mahebourg Ltd",
     "category": "faire-du-sport",
@@ -24644,7 +24540,7 @@
       "kids-friendly"
     ],
     "zone": "sud",
-    "description": "Excursion à la journée en bateau (5-10 minutes de traversée depuis la région de Mahébourg) sur un îlot privé face à la réserve marine de Blue Bay, avec visite d'une villa construite au début du XXe siècle par le gouverneur britannique Sir Hesketh Bell, sortie en bateau à fond de verre et snorkeling."
+    "description": "Excursion à la journée en bateau (5-10 minutes de traversée depuis la région de Mahébourg) sur un îlot privé face à la réserve marine de Blue Bay, avec visite d'une villa construite au début du XXe siècle par le gouverneur britannique Sir Hesketh Bell, sortie en bateau à fond de verre et snorkeling. Buffet généreux préparé en plein air (grillades, salades du jardin) inclus dans la visite."
   },
   {
     "id": "agria-meat-shop",
@@ -28372,26 +28268,6 @@
     "hours": "Lun-Mer 10h-15h, Jeu-Sam 10h-15h30, Dim fermé",
     "filters": [
       "indienne"
-    ]
-  },
-  {
-    "id": "nature-et-delices",
-    "name": "Nature et Délices",
-    "category": "manger-boire",
-    "address": "MU, Royal Road, B13 30516",
-    "phone": "+230 5934 5320",
-    "website": "https://www.nature-et-delices.mu/",
-    "googleMapsUrl": "https://maps.google.com/?cid=11215577256561464611&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0100425,
-    "lng": 57.5626547,
-    "themes": [
-      "livraisons"
-    ],
-    "zone": "nord",
-    "description": "Restaurant français de cuisine de saison à Pointe aux Canonniers/Grand Baie.",
-    "hours": "Lun 18h-22h, Mar-Sam 12h-15h, 18h-22h30, Dim 12h-15h",
-    "filters": [
-      "europeenne"
     ]
   },
   {
@@ -44947,27 +44823,6 @@
     ]
   },
   {
-    "id": "n-joy-grand-baie",
-    "name": "N'Joy",
-    "category": "manger-boire",
-    "address": "La Cuvette Beach, Grand Baie",
-    "phone": "+230 5500 8601",
-    "website": "https://njoy.mu/",
-    "googleMapsUrl": "https://maps.app.goo.gl/kqkspKJZsttGeUR68",
-    "lat": -20.0077772,
-    "lng": 57.5786448,
-    "themes": [
-      "restaurants"
-    ],
-    "hours": "Mer-dim 12h-minuit",
-    "priceRange": "se-faire-plaisir",
-    "zone": "nord",
-    "description": "Restaurant tendance en bord de plage proposant une cuisine fusion et bistronomique : tapas à partager et plats aux saveurs mauriciennes revisitées, accompagnés de cocktails travaillés. Concerts et DJ live du vendredi au dimanche. Livraison possible.",
-    "filters": [
-      "europeenne"
-    ]
-  },
-  {
     "id": "tattoo-style-soins",
     "name": "Tattoo Style",
     "category": "sante-bien-etre",
@@ -49874,7 +49729,8 @@
     "address": "Route royale, Pointe aux Canonniers",
     "phone": "+230 5934 5320",
     "themes": [
-      "restaurants"
+      "restaurants",
+      "livraisons"
     ],
     "zone": "nord",
     "priceRange": "prix-moyen",
