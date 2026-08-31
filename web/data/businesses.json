@@ -14336,6 +14336,21 @@
     ]
   },
   {
+    "id": "clido-catering",
+    "name": "Clido Catering",
+    "category": "manger-boire",
+    "address": "",
+    "phone": "+230 5812 1839",
+    "website": "https://www.instagram.com/clidocatering/",
+    "themes": [
+      "tables-hotes-chefs-domicile"
+    ],
+    "description": "Service traiteur pour entreprises et tous types d'événements, proposant aussi des forfaits mensuels de repas équilibrés livrés à domicile (Menu mixte, Menu équilibré, Menu du jour, de 6 à 21 repas selon la formule, Rs 3 385 à Rs 7 005). Commandes par téléphone/WhatsApp au 5812 1839 ou 5940 3100.",
+    "filters": [
+      "chefs-domicile"
+    ]
+  },
+  {
     "id": "kot-mame-ramalingum-sons",
     "name": "Kot Mamé Ramalingum & Sons",
     "category": "manger-boire",
@@ -14813,6 +14828,20 @@
     ],
     "zone": "nord",
     "description": "Plateforme de livraison de repas (commande via WhatsApp) pour la zone de Grand Baie : livre des plats de restaurants partenaires ainsi que de l'épicerie/pharmacie, 7j/7."
+  },
+  {
+    "id": "lunchbox-by-sarah",
+    "name": "LunchBox by Sarah",
+    "category": "manger-boire",
+    "address": "Grand Baie",
+    "phone": "+230 5855 1087",
+    "email": "contact@lunchboxbysarah.mu",
+    "website": "https://lunchboxbysarah.mu",
+    "themes": [
+      "livraisons"
+    ],
+    "zone": "nord",
+    "description": "Traiteur et livraison de repas frais à domicile, disponible uniquement dans le nord de l'île (Grand Baie) : menu de la semaine (entrée/plat/dessert), sandwichs et extras à la carte, plats végétariens, salades et poke bowls. Très bien noté (100% recommandé, 9 avis)."
   },
   {
     "id": "paradisio-pizza-maurice",
