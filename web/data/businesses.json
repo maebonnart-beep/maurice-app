@@ -839,7 +839,7 @@
   {
     "id": "taxi-mauritius-tours",
     "name": "Taxi Mauritius Tours",
-    "category": "sortir-decouvrir",
+    "category": "vie-pratique",
     "address": "Royal Road, Grand Baie",
     "phone": "+230 5777 0256",
     "website": "http://www.taximauritiustours.com/",
@@ -847,7 +847,7 @@
     "lat": -20.0093901,
     "lng": 57.5827318,
     "themes": [
-      "excursions-sorties"
+      "taxis-vtc-location"
     ],
     "zone": "nord",
     "description": "Service de taxi et minibus basé à Grand Baie pour les transferts aéroport, ainsi que circuits touristiques (Port-Louis, jardins botaniques, Terres des 7 Couleurs) et sorties dauphins avec snorkeling."
@@ -5295,7 +5295,6 @@
       "culture-patrimoine",
       "plages-nature",
       "parcs-activites-famille",
-      "excursions-sorties",
       "kids-friendly"
     ],
     "hours": "Tous les jours 9h-17h (dernière admission 16h)",
@@ -5344,7 +5343,8 @@
     "lat": -20.1128,
     "lng": 57.5636,
     "themes": [
-      "culture-patrimoine"
+      "culture-patrimoine",
+      "kids-friendly"
     ],
     "hours": "Lun-Sam 10h-16h (dernière entrée 15h15)",
     "priceRange": "prix-moyen",
@@ -12482,7 +12482,6 @@
     "lat": -20.5081742,
     "lng": 57.5446242,
     "themes": [
-      "excursions-sorties",
       "kids-friendly"
     ],
     "zone": "sud",
@@ -12813,7 +12812,6 @@
     "lat": -20.1241283,
     "lng": 57.6841354,
     "themes": [
-      "excursions-sorties",
       "kids-friendly"
     ],
     "description": "Saut en parachute en tandem depuis un Cessna à 10 000 pieds, au-dessus du lagon",
@@ -13256,14 +13254,17 @@
     "lat": -20.1632341,
     "lng": 57.5023736,
     "themes": [
-      "culture-patrimoine"
+      "culture-patrimoine",
+      "kids-friendly"
     ],
     "zone": "centre",
     "promoText": "Petit musée abritant le célèbre squelette de dodo et des collections de faune mauricienne. (entrée gratuite)",
     "description": "Plus ancien musée de Maurice, installé dans le bâtiment de l'Institut mauricien à Port-Louis, célèbre pour abriter l'un des squelettes de dodo les plus complets au monde ainsi que des collections sur la faune et la flore de l'île.",
     "filters": [
       "kids-friendly"
-    ]
+    ],
+    "hours": "Lun, mar, jeu, ven 9h-16h ; mer 11h-16h ; sam 9h-12h ; fermé dim et jours fériés",
+    "entryPrice": "Gratuit"
   },
   {
     "id": "musee-de-la-photographie-port-louis",
@@ -13281,23 +13282,6 @@
     "hours": "Lun-ven 9h-15h",
     "zone": "centre",
     "description": "Musée privé fondé en 1966 par le collectionneur Tristan Bréville et son épouse, installé depuis 1993 dans un bâtiment historique de la Rue du Vieux Conseil (près du Musée d'histoire naturelle). Riche collection retraçant l'histoire de la photographie et de l'île : anciens appareils et matériel du XXe siècle, près d'un million de documents, cartes postales anciennes, photographies historiques et locales. Petit musée intimiste, à découvrir avec un passionné."
-  },
-  {
-    "id": "musee-du-coquillage",
-    "name": "Musée du coquillage",
-    "category": "sortir-decouvrir",
-    "address": "Coastal Road Place du Moulin Bel Ombre MU, Bel Ombre 61002",
-    "phone": "+230 623 7984",
-    "website": "http://www.worldofseashells.mu/",
-    "googleMapsUrl": "https://maps.google.com/?cid=16860368417142138141&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.5055819,
-    "lng": 57.4121544,
-    "themes": [
-      "culture-patrimoine"
-    ],
-    "zone": "sud",
-    "promoText": "Collection de plus de 8000 coquillages du monde entier, présentée dans une ancienne demeure coloniale du 19e siècle.",
-    "description": "Plus grand musée de coquillages d'Afrique, situé à Bel Ombre, présentant plus de 8000 pièces et 1500 espèces issues de la collection d'Eric Le Court de Billot, à travers un parcours thématique alliant légendes, biologie et animations en 3D."
   },
   {
     "id": "galerie-francoise-vrot-chane-cane",
@@ -13396,7 +13380,6 @@
     "lat": -20.1828855,
     "lng": 57.7110379,
     "themes": [
-      "excursions-sorties",
       "kids-friendly"
     ],
     "zone": "est",
@@ -17039,7 +17022,7 @@
   {
     "id": "sundivers-diving-in-mauritius",
     "name": "Sundivers / Diving in Mauritius",
-    "category": "sortir-decouvrir",
+    "category": "faire-du-sport",
     "address": "La Pirogue hotel, Flic en Flac, Flic en Flac 90504",
     "phone": "+230 5972 1504",
     "website": "https://www.sundiversmauritius.com/",
@@ -17047,15 +17030,18 @@
     "lat": -20.2996114,
     "lng": 57.3640837,
     "themes": [
-      "excursions-sorties"
+      "sports-nautiques"
     ],
     "zone": "ouest",
-    "description": "Centre de plongée basé à l'hôtel La Pirogue à Flic en Flac, proposant cours PADI et SSI ainsi que plongées encadrées sur la côte ouest, avec un photographe sous-marin dont les clichés ont été repris par CNN et National Geographic."
+    "description": "Centre de plongée basé à l'hôtel La Pirogue à Flic en Flac, proposant cours PADI et SSI ainsi que plongées encadrées sur la côte ouest, avec un photographe sous-marin dont les clichés ont été repris par CNN et National Geographic.",
+    "filters": [
+      "plongee-sous-marine"
+    ]
   },
   {
     "id": "taxi-a-maurice",
     "name": "Taxi a Maurice",
-    "category": "sortir-decouvrir",
+    "category": "vie-pratique",
     "address": "P9CC+CRW morc bismic, rond point mangue, Flic en Flac",
     "phone": "+230 5759 8806",
     "website": "http://www.taxiamaurice.com/",
@@ -17063,7 +17049,7 @@
     "lat": -20.2788838,
     "lng": 57.3720661,
     "themes": [
-      "excursions-sorties"
+      "taxis-vtc-location"
     ],
     "zone": "ouest",
     "description": "Service de taxi et d'excursions guidées à travers l'île (Port-Louis, jardins de Pamplemousses, Trou aux Cerfs, Grand Bassin), proposant aussi des sorties en catamaran vers l'Île aux Cerfs et la nage avec les dauphins à l'Île aux Bénitiers."
@@ -17180,7 +17166,8 @@
     "lat": -20.3304389,
     "lng": 57.377896,
     "themes": [
-      "culture-patrimoine"
+      "culture-patrimoine",
+      "kids-friendly"
     ],
     "hours": "Lun-ven 8h-16h ; sam 8h-11h30 ; fermé dim.",
     "zone": "ouest",
@@ -17528,11 +17515,14 @@
     "lat": -20.3546004,
     "lng": 57.3618209,
     "themes": [
-      "culture-patrimoine"
+      "culture-patrimoine",
+      "kids-friendly"
     ],
     "zone": "ouest",
     "promoText": "Ancienne tour de défense britannique du 19e siècle transformée en musée, visite guidée incluse dans le billet. (70 Rs/pers. en semaine, 50 Rs le week-end)",
-    "description": "Tour de défense en pierre basaltique construite par les Britanniques entre 1832 et 1835 sur la plage de La Preneuse, transformée depuis 2000 en musée présentant armes d'époque et personnages en cire."
+    "description": "Tour de défense en pierre basaltique construite par les Britanniques entre 1832 et 1835 sur la plage de La Preneuse, transformée depuis 2000 en musée présentant armes d'époque et personnages en cire.",
+    "hours": "Mar-Ven 9h30-17h, Sam 9h30-13h, fermé lundi et dimanche",
+    "entryPrice": "150 Rs/adulte, 75 Rs/enfant"
   },
   {
     "id": "pasadena",
@@ -20414,22 +20404,6 @@
     "description": "Guide indépendant, Matteo, proposant depuis Le Morne, Tamarin et Rivière Noire des sorties de nage avec les dauphins et d'observation des cachalots, en petits groupes privés ou partagés."
   },
   {
-    "id": "chamarel-waterfall-viewpoint-2",
-    "name": "Chamarel Waterfall Viewpoint",
-    "category": "sortir-decouvrir",
-    "address": "H94M+QH, Chamarel",
-    "phone": "",
-    "website": "https://www.chamarel7colouredearth.com/",
-    "googleMapsUrl": "https://maps.google.com/?cid=14808461227091775137&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.4430932,
-    "lng": 57.3839598,
-    "themes": [
-      "excursions-sorties"
-    ],
-    "zone": "sud",
-    "description": "Point de vue sur la cascade de Chamarel, la plus haute de l'île avec près de 100 mètres de chute, au cœur du Parc national des Gorges de Rivière Noire. Deux belvédères permettent d'admirer la chute entourée de forêt tropicale."
-  },
-  {
     "id": "karlos-excursions-boat-tours-departure-3",
     "name": "Karlos Excursions - Boat Tours departure 3",
     "category": "sortir-decouvrir",
@@ -20444,26 +20418,6 @@
     ],
     "zone": "sud",
     "description": "Opérateur familial installé au Morne depuis 1988, parmi les premiers bateaux licenciés de l'île, proposant sorties dauphins, snorkeling à Coral Rock et BBQ animé de musique locale sur l'île aux Bénitiers."
-  },
-  {
-    "id": "piton-du-canot",
-    "name": "Piton du Canot",
-    "category": "sortir-decouvrir",
-    "address": "H99H+WG, Chamarel",
-    "phone": "",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=5265014450050104327&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.4304733,
-    "lng": 57.3789051,
-    "themes": [
-      "excursions-sorties"
-    ],
-    "zone": "sud",
-    "distance": "2,7 km",
-    "elevationGain": "208 m D+",
-    "duration": "Aller-retour",
-    "difficultyLevel": "habitue",
-    "description": "Montée régulière mais escarpée par endroits, alternant sections boueuses et vue dégagée, jusqu'au sommet du Piton du Canot au cœur du parc national des Gorges de Rivière Noire."
   },
   {
     "id": "piton-du-canot-faire-du-sport",
@@ -20716,7 +20670,7 @@
   {
     "id": "manish-hikes-7-cascades-tamarind-falls-hiking-guide",
     "name": "Manish Hikes - 7 Cascades Tamarind Falls Hiking Guide",
-    "category": "sortir-decouvrir",
+    "category": "faire-du-sport",
     "address": "MU, Henrietta Branch Rd, Vacoas-Phoenix 73106",
     "phone": "+230 5503 8014",
     "website": "https://wa.me/23059035026",
@@ -20724,7 +20678,7 @@
     "lat": -20.338575,
     "lng": 57.4732491,
     "themes": [
-      "excursions-sorties"
+      "randonnee-trail"
     ],
     "zone": "centre",
     "description": "Guide de randonnée menant la boucle des 7 Cascades (Tamarind Falls), avec pauses baignade et saut depuis les rochers en chemin."
@@ -21942,9 +21896,10 @@
     "lng": 57.5020118,
     "themes": [
       "plages-nature",
-      "culture-patrimoine"
+      "culture-patrimoine",
+      "kids-friendly"
     ],
-    "hours": "Tous les jours, environ 6h-18h",
+    "hours": "Tous les jours 6h-17h",
     "entryPrice": "Gratuit",
     "zone": "centre",
     "description": "Jardin public historique au cœur de Port-Louis, aménagé dès 1770 par la Compagnie française des Indes orientales (sous l'administration Decaen). Ses banians centenaires, ses statues commémoratives (dont une œuvre de Prosper d'Épinay) et sa fontaine en font un lieu de détente prisé et un haut lieu de rassemblements populaires, à deux pas du Musée d'histoire naturelle.",
@@ -24298,10 +24253,12 @@
     "lat": -20.5241419,
     "lng": 57.5367402,
     "themes": [
-      "excursions-sorties",
-      "kids-friendly"
+      "plages-nature"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "filters": [
+      "parcs-nationaux-cascades"
+    ]
   },
   {
     "id": "kiteglobing",
@@ -26714,7 +26671,7 @@
   {
     "id": "seafan-diving-adventures-belle-mare",
     "name": "SEAFAN DIVING ADVENTURES - BELLE MARE",
-    "category": "sortir-decouvrir",
+    "category": "faire-du-sport",
     "address": "MU, c/o Lux, Coastal Road, Belle Mare 21506",
     "phone": "+230 5258 1356",
     "website": "http://www.mauritiusdiveadventures.com/",
@@ -26722,10 +26679,13 @@
     "lat": -20.1992893,
     "lng": 57.7830038,
     "themes": [
-      "excursions-sorties"
+      "sports-nautiques"
     ],
     "zone": "est",
-    "description": "Centre de plongée sous-marine basé à Belle Mare, encadrant des sorties sur les sites récifaux de la côte est (dont Seafan Valley) pour plongeurs débutants et confirmés."
+    "description": "Centre de plongée sous-marine basé à Belle Mare, encadrant des sorties sur les sites récifaux de la côte est (dont Seafan Valley) pour plongeurs débutants et confirmés.",
+    "filters": [
+      "plongee-sous-marine"
+    ]
   },
   {
     "id": "robin-de-mer",
@@ -26794,7 +26754,7 @@
   {
     "id": "prestige-scuba-adventures-belle-mare",
     "name": "PRESTIGE SCUBA ADVENTURES -BELLE MARE",
-    "category": "sortir-decouvrir",
+    "category": "faire-du-sport",
     "address": "MU, Coastal Road, Poste de Flacq 52010",
     "phone": "+230 5253 2338",
     "website": "https://tantulika1.wixsite.com/tour/mauritius",
@@ -26802,10 +26762,13 @@
     "lat": -20.1757359,
     "lng": 57.7713634,
     "themes": [
-      "excursions-sorties"
+      "sports-nautiques"
     ],
     "zone": "est",
-    "description": "Centre de plongée basé dans les hôtels de Belle Mare (Solana Beach, Lux Belle Mare, Salt Palmar), proposant baptêmes, cours PADI et sorties sur récifs et épaves pour tous niveaux."
+    "description": "Centre de plongée basé dans les hôtels de Belle Mare (Solana Beach, Lux Belle Mare, Salt Palmar), proposant baptêmes, cours PADI et sorties sur récifs et épaves pour tous niveaux.",
+    "filters": [
+      "plongee-sous-marine"
+    ]
   },
   {
     "id": "turquoise-voyages-samtours-mauritius",
@@ -29197,7 +29160,8 @@
     "lat": -20.2290556,
     "lng": 57.6461392,
     "themes": [
-      "culture-patrimoine"
+      "culture-patrimoine",
+      "kids-friendly"
     ],
     "hours": "Lun-Ven 8h30-17h30, Sam 8h-17h, fermé dim",
     "priceRange": "prix-moyen",
@@ -29577,7 +29541,8 @@
     "lat": -20.3277142,
     "lng": 57.5324951,
     "themes": [
-      "culture-patrimoine"
+      "culture-patrimoine",
+      "kids-friendly"
     ],
     "hours": "Tous les jours 9h-17h",
     "zone": "centre",
@@ -34295,35 +34260,6 @@
     ]
   },
   {
-    "id": "musee-coquillage",
-    "name": "Musee Coquillage",
-    "category": "sortir-decouvrir",
-    "address": "FCX7+64P, Bel Ombre",
-    "googleMapsUrl": "https://maps.google.com/?cid=8804812069452286160&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.5019079,
-    "lng": 57.4128295,
-    "themes": [
-      "culture-patrimoine"
-    ],
-    "zone": "sud",
-    "description": "Musée de Bel Ombre consacré aux coquillages, présentant plus de 8000 pièces du monde entier issues de la collection d'Eric Le Court de Billot, à travers un parcours mêlant science, légendes et animations interactives."
-  },
-  {
-    "id": "mauritius-museums-council",
-    "name": "Mauritius Museums Council",
-    "category": "sortir-decouvrir",
-    "address": "Immediate to Mauritius Council, Port Louis",
-    "phone": "+230 212 6912",
-    "googleMapsUrl": "https://maps.google.com/?cid=11312410069229544716&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.1631083,
-    "lng": 57.5025277,
-    "themes": [
-      "culture-patrimoine"
-    ],
-    "zone": "centre",
-    "description": "Conseil des musées de Maurice (organisme public) : gestion et supervision des musées nationaux."
-  },
-  {
     "id": "poonith-store",
     "name": "Poonith Store",
     "category": "acheter-equiper",
@@ -34955,7 +34891,7 @@
   {
     "id": "motrek-adventures-canyoning-mauritius",
     "name": "Motrek Adventures-Canyoning Mauritius",
-    "category": "sortir-decouvrir",
+    "category": "faire-du-sport",
     "address": "8 Malherbes Street, Curepipe",
     "phone": "+230 5913 5512",
     "website": "https://motrekadventures.wixsite.com/trekking?fbclid=PAAaYtniNAbYdaGPtibdf0HMSfB2nm8wMx34QM48Wk2SNxK2VuxwCznWg0loM",
@@ -34963,8 +34899,7 @@
     "lat": -20.3150564,
     "lng": 57.5286852,
     "themes": [
-      "excursions-sorties",
-      "kids-friendly"
+      "randonnee-trail"
     ],
     "zone": "centre",
     "description": "Opérateur d'écotourisme basé à Curepipe proposant des descentes en rappel, du canyoning et des randonnées aux Tamarind Falls et aux Sept Cascades, encadrées par des guides certifiés."
@@ -35801,10 +35736,12 @@
     "lat": -20.1059375,
     "lng": 57.5778125,
     "themes": [
-      "culture-patrimoine"
+      "culture-patrimoine",
+      "kids-friendly"
     ],
     "zone": "nord",
-    "description": "Musée immersif de Pamplemousses, à deux pas du jardin botanique, qui utilise la réalité augmentée pour faire revivre le dodo et une dizaine d'autres espèces d'oiseaux disparus de Maurice."
+    "description": "Musée immersif de Pamplemousses, à deux pas du jardin botanique, qui utilise la réalité augmentée pour faire revivre le dodo et une dizaine d'autres espèces d'oiseaux disparus de Maurice.",
+    "hours": "Lun-Ven 9h-17h, Sam-Dim 9h-14h"
   },
   {
     "id": "craft-market",
@@ -45201,7 +45138,6 @@
     "lat": -20.5178,
     "lng": 57.5203,
     "themes": [
-      "excursions-sorties",
       "culture-patrimoine",
       "plages-nature"
     ],
@@ -45225,7 +45161,8 @@
     "lat": -20.4358,
     "lng": 57.5289,
     "themes": [
-      "culture-patrimoine"
+      "culture-patrimoine",
+      "kids-friendly"
     ],
     "hours": "Tous les jours 9h-17h ; usine (Tea Factory) en activité le matin, fermée sam. et dim.",
     "zone": "sud",
@@ -49538,7 +49475,8 @@
     "lng": 57.5237,
     "themes": [
       "plages-nature",
-      "culture-patrimoine"
+      "culture-patrimoine",
+      "kids-friendly"
     ],
     "hours": "Tous les jours 9h-18h",
     "zone": "centre",
