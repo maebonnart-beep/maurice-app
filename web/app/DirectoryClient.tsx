@@ -336,6 +336,29 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
     if (homeMode !== "listes") setSelectedListId(null);
   }, [homeMode]);
 
+  // Précharge le chunk JS de la carte (Leaflet) pendant que l'utilisateur
+  // est encore sur l'accueil, au lieu d'attendre le premier mot tapé : sans
+  // ça, le tout premier caractère qui affiche les résultats paie d'un coup
+  // le téléchargement + l'init de la carte, d'où le à-coup ressenti
+  // seulement à la première lettre.
+  useEffect(() => {
+    import("./Map");
+  }, []);
+
+  // Sur desktop, liste et carte s'affichent côte à côte (toujours besoin de
+  // la carte) ; sur mobile, seule la liste est visible par défaut. On évite
+  // d'initialiser Leaflet (coûteux : tuiles, marqueurs...) tant que la carte
+  // n'est pas vraiment affichée sur mobile — avant, elle restait montée
+  // (juste masquée en CSS), payée en plus du reste au premier caractère tapé.
+  const [isDesktop, setIsDesktop] = useState(false);
+  useEffect(() => {
+    const mq = window.matchMedia("(min-width: 1024px)");
+    setIsDesktop(mq.matches);
+    const onChange = () => setIsDesktop(mq.matches);
+    mq.addEventListener("change", onChange);
+    return () => mq.removeEventListener("change", onChange);
+  }, []);
+
   const businessById = useMemo(() => {
     const record: Record<string, Business> = {};
     businesses.forEach((b) => { record[b.id] = b; });
@@ -2405,16 +2428,18 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                   </label>
                 </div>
                 <div className="flex-1 min-h-0 bg-surface-2">
-                  <Map
-                    businesses={rows}
-                    selectedId={selectedId}
-                    onSelect={selectFromMap}
-                    onBoundsChange={onBoundsChange}
-                    fitKey={`${active}|${[...activeThemes].join(",")}|${activeZone ?? ""}`}
-                    hoveredId={hoveredId}
-                    onHover={setHoveredId}
-                    userPos={userPos}
-                  />
+                  {(isDesktop || resultsView === "carte") && (
+                    <Map
+                      businesses={rows}
+                      selectedId={selectedId}
+                      onSelect={selectFromMap}
+                      onBoundsChange={onBoundsChange}
+                      fitKey={`${active}|${[...activeThemes].join(",")}|${activeZone ?? ""}`}
+                      hoveredId={hoveredId}
+                      onHover={setHoveredId}
+                      userPos={userPos}
+                    />
+                  )}
                 </div>
               </div>
             </div>
