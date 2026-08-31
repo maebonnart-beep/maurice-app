@@ -51695,7 +51695,7 @@
     "category": "agenda",
     "address": "Trianon Convention Centre, Trianon",
     "phone": "",
-    "website": "",
+    "website": "https://otayo.com/event/lilo-stitch-la-comedie-musicale/",
     "themes": [
       "evenements-culturels"
     ],
@@ -51703,7 +51703,8 @@
     "period": "10 octobre 2026",
     "zone": "centre",
     "eventRecurrence": "ponctuel",
-    "eventStartDate": "2026-10-10"
+    "eventStartDate": "2026-10-10",
+    "entryPrice": "À partir de Rs 400"
   },
   {
     "id": "reine-des-neiges-comedie-musicale-evt",
@@ -51711,7 +51712,7 @@
     "category": "agenda",
     "address": "Trianon Convention Centre, Trianon",
     "phone": "",
-    "website": "",
+    "website": "https://otayo.com/event/la-reine-des-neiges-la-comedie-musicale/",
     "themes": [
       "evenements-culturels"
     ],
@@ -51719,7 +51720,8 @@
     "period": "10 octobre 2026",
     "zone": "centre",
     "eventRecurrence": "ponctuel",
-    "eventStartDate": "2026-10-10"
+    "eventStartDate": "2026-10-10",
+    "entryPrice": "À partir de Rs 400"
   },
   {
     "id": "roi-lion-comedie-musicale-evt",
@@ -51727,7 +51729,7 @@
     "category": "agenda",
     "address": "Trianon Convention Centre, Trianon",
     "phone": "",
-    "website": "",
+    "website": "https://otayo.com/event/le-roi-lion-la-comedie-musicale/",
     "themes": [
       "evenements-culturels"
     ],
@@ -51735,7 +51737,8 @@
     "period": "10 octobre 2026",
     "zone": "centre",
     "eventRecurrence": "ponctuel",
-    "eventStartDate": "2026-10-10"
+    "eventStartDate": "2026-10-10",
+    "entryPrice": "À partir de Rs 400"
   },
   {
     "id": "jarry-bonhomme-evt",
@@ -51743,7 +51746,7 @@
     "category": "agenda",
     "address": "Trianon Convention Centre, Trianon",
     "phone": "",
-    "website": "",
+    "website": "https://otayo.com/event/jarry-bonhomme/",
     "themes": [
       "evenements-culturels"
     ],
@@ -51751,7 +51754,8 @@
     "period": "17 octobre 2026",
     "zone": "centre",
     "eventRecurrence": "ponctuel",
-    "eventStartDate": "2026-10-17"
+    "eventStartDate": "2026-10-17",
+    "entryPrice": "À partir de Rs 900"
   },
   {
     "id": "elodie-poux-papillon-evt",
@@ -51759,7 +51763,7 @@
     "category": "agenda",
     "address": "Trianon Convention Centre, Trianon",
     "phone": "",
-    "website": "",
+    "website": "https://otayo.com/event/elodie-poux-le-papillon-senvole/",
     "themes": [
       "evenements-culturels"
     ],
@@ -51767,7 +51771,8 @@
     "period": "15 novembre 2026",
     "zone": "centre",
     "eventRecurrence": "ponctuel",
-    "eventStartDate": "2026-11-15"
+    "eventStartDate": "2026-11-15",
+    "entryPrice": "À partir de Rs 900"
   },
   {
     "id": "grand-diwali-night-2026-evt",
@@ -51775,7 +51780,7 @@
     "category": "agenda",
     "address": "Valentina Hall, Phoenix",
     "phone": "",
-    "website": "",
+    "website": "https://otayo.com/event/the-grand-diwali-night-2026/",
     "themes": [
       "evenements-culturels"
     ],
@@ -51783,7 +51788,8 @@
     "period": "14 novembre 2026",
     "zone": "centre",
     "eventRecurrence": "ponctuel",
-    "eventStartDate": "2026-11-14"
+    "eventStartDate": "2026-11-14",
+    "entryPrice": "À partir de Rs 1 200 (Early Bird)"
   },
   {
     "id": "christophe-mae-concert-evt",
@@ -51791,7 +51797,7 @@
     "category": "agenda",
     "address": "Trianon Convention Centre, Trianon",
     "phone": "",
-    "website": "",
+    "website": "https://otayo.com/event/christophe-mae/",
     "themes": [
       "evenements-culturels"
     ],
@@ -51799,7 +51805,8 @@
     "period": "21 février 2027",
     "zone": "centre",
     "eventRecurrence": "ponctuel",
-    "eventStartDate": "2027-02-21"
+    "eventStartDate": "2027-02-21",
+    "entryPrice": "À partir de Rs 2 500"
   },
   {
     "id": "mauritius-ocean-week-evt",
@@ -51880,5 +51887,311 @@
       "navigation-bateau"
     ],
     "hours": "Tous les jours, généralement 10h-17h (à confirmer)"
+  },
+  {
+    "id": "gade-cheri-allwaves-fest-2-evt",
+    "name": "Gadé Cheri by AllWaves Fest – 2ème édition",
+    "category": "agenda",
+    "address": "The Green Village, South",
+    "phone": "",
+    "website": "https://otayo.com/event/gade-cheri-by-allwaves-fest-2nd-edition/",
+    "themes": [
+      "evenements-culturels"
+    ],
+    "description": "Deuxième édition du festival AllWaves Fest, concert en plein air à The Green Village.",
+    "period": "Samedi 5 septembre 2026, 16h-2h",
+    "entryPrice": "À partir de Rs 1 400",
+    "zone": "sud",
+    "eventRecurrence": "ponctuel",
+    "eventStartDate": "2026-09-05"
+  },
+  {
+    "id": "zulu-ek-so-tribu-live-evt",
+    "name": "Zulu Ek So Tribu Live & Lancement Album Jimmy Gassel",
+    "category": "agenda",
+    "address": "Big Willy's, West",
+    "phone": "",
+    "website": "https://otayo.com/event/zulu-ek-so-tribu/",
+    "themes": [
+      "evenements-culturels"
+    ],
+    "description": "Concert live de Zulu Ek So Tribu avec lancement de l'album de Jimmy Gassel.",
+    "period": "Samedi 5 septembre 2026, 21h-5h",
+    "entryPrice": "À partir de Rs 450",
+    "zone": "ouest",
+    "eventRecurrence": "ponctuel",
+    "eventStartDate": "2026-09-05"
+  },
+  {
+    "id": "one-night-in-brazil-evt",
+    "name": "One Night in Brazil",
+    "category": "agenda",
+    "address": "Lakaz Cascavelle, West",
+    "phone": "",
+    "website": "https://otayo.com/event/one-night-in-brazil/",
+    "themes": [
+      "evenements-culturels"
+    ],
+    "description": "Soirée clubbing sur le thème du Brésil à Lakaz Cascavelle.",
+    "period": "Samedi 5 septembre 2026, 22h",
+    "entryPrice": "À partir de Rs 700",
+    "zone": "ouest",
+    "eventRecurrence": "ponctuel",
+    "eventStartDate": "2026-09-05"
+  },
+  {
+    "id": "bilygane-lancement-album-attentat-evt",
+    "name": "Bilygane – Lancement Album Attentat",
+    "category": "agenda",
+    "address": "J&J Auditorium, Phoenix, Central",
+    "phone": "",
+    "website": "https://otayo.com/event/bilygane-lancement-album-attentat/",
+    "themes": [
+      "evenements-culturels"
+    ],
+    "description": "Concert de lancement de l'album \"Attentat\" de Bilygane.",
+    "period": "Samedi 12 septembre 2026, 20h",
+    "entryPrice": "À partir de Rs 700",
+    "zone": "centre",
+    "eventRecurrence": "ponctuel",
+    "eventStartDate": "2026-09-12"
+  },
+  {
+    "id": "ghetto-lovers-2k26-evt",
+    "name": "Ghetto Lovers 2k26",
+    "category": "agenda",
+    "address": "Jardin de Mée, Gros Cailloux, North",
+    "phone": "",
+    "website": "https://otayo.com/event/ghetto-lovers-2k26/",
+    "themes": [
+      "evenements-culturels"
+    ],
+    "description": "Concert Ghetto Lovers au Jardin de Mée, Gros Cailloux.",
+    "period": "Samedi 12 septembre 2026, 20h",
+    "entryPrice": "À partir de Rs 800 (Early Bird)",
+    "zone": "nord",
+    "eventRecurrence": "ponctuel",
+    "eventStartDate": "2026-09-12"
+  },
+  {
+    "id": "heritage-goldman-2-evt",
+    "name": "L'Héritage Goldman 2",
+    "category": "agenda",
+    "address": "Trianon Convention Centre, Trianon",
+    "phone": "",
+    "website": "https://otayo.com/event/heritage-goldman-2-tcc/",
+    "themes": [
+      "evenements-culturels"
+    ],
+    "description": "Concert hommage à Jean-Jacques Goldman, deuxième édition.",
+    "period": "Samedi 19 septembre 2026, 19h",
+    "entryPrice": "À partir de Rs 900",
+    "zone": "centre",
+    "eventRecurrence": "ponctuel",
+    "eventStartDate": "2026-09-19"
+  },
+  {
+    "id": "aventure-live-goodluck-evt",
+    "name": "L'Aventure Live featuring Goodluck",
+    "category": "agenda",
+    "address": "L'Aventure du Sucre, North",
+    "phone": "",
+    "website": "https://otayo.com/event/laventure-live-featuring-goodluck/",
+    "themes": [
+      "evenements-culturels"
+    ],
+    "description": "Festival musical avec Goodluck à L'Aventure du Sucre.",
+    "period": "Samedi 26 septembre 2026, 13h-22h",
+    "entryPrice": "À partir de Rs 350",
+    "zone": "nord",
+    "eventRecurrence": "ponctuel",
+    "eventStartDate": "2026-09-26"
+  },
+  {
+    "id": "night-of-praise-worship-word-evt",
+    "name": "Night of Praise | Worship | Word",
+    "category": "agenda",
+    "address": "J&J Auditorium, Phoenix, Central",
+    "phone": "",
+    "website": "https://otayo.com/event/night-of-praise-worship-word/",
+    "themes": [
+      "evenements-culturels"
+    ],
+    "description": "Soirée de louange et de worship chrétien.",
+    "period": "Samedi 26 septembre 2026, 19h",
+    "entryPrice": "À partir de Rs 200",
+    "zone": "centre",
+    "eventRecurrence": "ponctuel",
+    "eventStartDate": "2026-09-26"
+  },
+  {
+    "id": "golden-era-100-edm-evt",
+    "name": "Golden Era: 100% EDM",
+    "category": "agenda",
+    "address": "Big Willy's, West",
+    "phone": "",
+    "website": "https://otayo.com/event/golden-era-100-edm/",
+    "themes": [
+      "evenements-culturels"
+    ],
+    "description": "Soirée clubbing 100% musique électronique.",
+    "period": "Samedi 26 septembre 2026, 22h-5h",
+    "entryPrice": "À partir de Rs 600 (Early Bird)",
+    "zone": "ouest",
+    "eventRecurrence": "ponctuel",
+    "eventStartDate": "2026-09-26"
+  },
+  {
+    "id": "bollywood-magical-90s-evt",
+    "name": "The Bollywood Magical 90's",
+    "category": "agenda",
+    "address": "MGI Moka, Central",
+    "phone": "",
+    "website": "https://otayo.com/event/the-bollywood-magical-90s/",
+    "themes": [
+      "evenements-culturels"
+    ],
+    "description": "Soirée musicale sur le thème du Bollywood des années 90, au MGI Moka.",
+    "period": "Samedi 3 octobre 2026, 19h30",
+    "entryPrice": "À partir de Rs 600",
+    "zone": "centre",
+    "eventRecurrence": "ponctuel",
+    "eventStartDate": "2026-10-03"
+  },
+  {
+    "id": "vibe-live-concert-evt",
+    "name": "Vibe Live Concert",
+    "category": "agenda",
+    "address": "Backstage, Hennessy Park Hotel, Central",
+    "phone": "",
+    "website": "https://otayo.com/event/vibe-live-concert/",
+    "themes": [
+      "evenements-culturels"
+    ],
+    "description": "Concert live au Backstage de l'Hennessy Park Hotel.",
+    "period": "Samedi 3 octobre 2026, 19h30-1h",
+    "entryPrice": "À partir de Rs 450",
+    "zone": "centre",
+    "eventRecurrence": "ponctuel",
+    "eventStartDate": "2026-10-03"
+  },
+  {
+    "id": "la-isla-2068-festival-evt",
+    "name": "La Isla 2068 Festival",
+    "category": "agenda",
+    "address": "Vivéa Business Park, Moka, Central",
+    "phone": "",
+    "website": "https://otayo.com/event/la-isla-2068/",
+    "themes": [
+      "evenements-culturels"
+    ],
+    "description": "Festival musical à Vivéa Business Park, Moka.",
+    "period": "Vendredi 9 octobre 2026, 17h-0h",
+    "entryPrice": "À partir de Rs 800 (Super Early Bird)",
+    "zone": "centre",
+    "eventRecurrence": "ponctuel",
+    "eventStartDate": "2026-10-09"
+  },
+  {
+    "id": "sam-garrett-live-concert-evt",
+    "name": "Sam Garrett Live in Concert",
+    "category": "agenda",
+    "address": "The Green Village, South",
+    "phone": "",
+    "website": "https://otayo.com/event/sam-garrett-live-in-concert/",
+    "themes": [
+      "evenements-culturels"
+    ],
+    "description": "Concert live de Sam Garrett à The Green Village.",
+    "period": "Samedi 10 octobre 2026, 18h-0h",
+    "entryPrice": "À partir de Rs 1 500",
+    "zone": "sud",
+    "eventRecurrence": "ponctuel",
+    "eventStartDate": "2026-10-10"
+  },
+  {
+    "id": "christafari-reggae-revival-10oct-evt",
+    "name": "Christafari – Reggae Revival Mauritius (10 oct)",
+    "category": "agenda",
+    "address": "J&J Auditorium, Phoenix, Central",
+    "phone": "",
+    "website": "https://otayo.com/event/christafari-reggae-revival-mauritius-10-oct/",
+    "themes": [
+      "evenements-culturels"
+    ],
+    "description": "Concert reggae chrétien du groupe Christafari.",
+    "period": "Samedi 10 octobre 2026, 19h30",
+    "entryPrice": "À partir de Rs 450",
+    "zone": "centre",
+    "eventRecurrence": "ponctuel",
+    "eventStartDate": "2026-10-10"
+  },
+  {
+    "id": "christafari-reggae-revival-11oct-evt",
+    "name": "Christafari – Reggae Revival Mauritius (11 oct)",
+    "category": "agenda",
+    "address": "J&J Auditorium, Phoenix, Central",
+    "phone": "",
+    "website": "https://otayo.com/event/christafari-reggae-revival-mauritius-11-oct/",
+    "themes": [
+      "evenements-culturels"
+    ],
+    "description": "Concert reggae chrétien du groupe Christafari, deuxième date.",
+    "period": "Dimanche 11 octobre 2026, 16h30",
+    "entryPrice": "À partir de Rs 450",
+    "zone": "centre",
+    "eventRecurrence": "ponctuel",
+    "eventStartDate": "2026-10-11"
+  },
+  {
+    "id": "tous-pour-jesus-evt",
+    "name": "Tous pour Jésus",
+    "category": "agenda",
+    "address": "Stade Germain Comarmond, Bambous, West",
+    "phone": "",
+    "website": "https://otayo.com/event/tous-pour-jesus/",
+    "themes": [
+      "evenements-culturels"
+    ],
+    "description": "Rassemblement musical chrétien au Stade Germain Comarmond, Bambous.",
+    "period": "Dimanche 1er novembre 2026, 16h-21h",
+    "entryPrice": "À partir de Rs 700",
+    "zone": "ouest",
+    "eventRecurrence": "ponctuel",
+    "eventStartDate": "2026-11-01"
+  },
+  {
+    "id": "rock-meets-classical-28nov-evt",
+    "name": "Rock Meets Classical (28 nov)",
+    "category": "agenda",
+    "address": "Theatre Serge Constantin, Vacoas, Central",
+    "phone": "",
+    "website": "https://otayo.com/event/rock-meets-classical-28th-nov/",
+    "themes": [
+      "evenements-culturels"
+    ],
+    "description": "Concert croisant rock et musique classique.",
+    "period": "Samedi 28 novembre 2026, 19h-21h",
+    "entryPrice": "À partir de Rs 800",
+    "zone": "centre",
+    "eventRecurrence": "ponctuel",
+    "eventStartDate": "2026-11-28"
+  },
+  {
+    "id": "rock-meets-classical-29nov-evt",
+    "name": "Rock Meets Classical (29 nov)",
+    "category": "agenda",
+    "address": "Theatre Serge Constantin, Vacoas, Central",
+    "phone": "",
+    "website": "https://otayo.com/event/rock-meets-classical-29th-nov/",
+    "themes": [
+      "evenements-culturels"
+    ],
+    "description": "Concert croisant rock et musique classique, deuxième date.",
+    "period": "Dimanche 29 novembre 2026, 17h-19h",
+    "entryPrice": "À partir de Rs 800",
+    "zone": "centre",
+    "eventRecurrence": "ponctuel",
+    "eventStartDate": "2026-11-29"
   }
 ]
