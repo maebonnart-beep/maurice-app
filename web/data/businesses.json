@@ -3476,7 +3476,8 @@
     "lat": -20.3625775,
     "lng": 57.7064693,
     "themes": [
-      "randonnee-trail"
+      "randonnee-trail",
+      "kids-friendly"
     ],
     "hours": "Tous les jours 9h-17h",
     "duration": "1h30 à 4h selon circuit (5 à 13km)",
@@ -3594,7 +3595,8 @@
     "lat": -20.3844,
     "lng": 57.4356,
     "themes": [
-      "randonnee-trail"
+      "randonnee-trail",
+      "kids-friendly"
     ],
     "hours": "Lun, Mer, Sam - départ 14h (hiver) ou 15h (été)",
     "duration": "Variable selon parcours (5 à 13km)",
@@ -27150,7 +27152,8 @@
     "lat": -20.3481107,
     "lng": 57.6186578,
     "themes": [
-      "randonnee-trail"
+      "randonnee-trail",
+      "kids-friendly"
     ],
     "duration": "2h-3h",
     "difficultyLevel": "debutant",
@@ -52493,5 +52496,25 @@
     "period": "Fin avril",
     "zone": "nord",
     "eventRecurrence": "annuel-variable"
+  },
+  {
+    "id": "wildwind-sailing-centre",
+    "name": "Wildwind Sailing Centre",
+    "category": "faire-du-sport",
+    "address": "Coral Azur Beach Resort, Royal Road, Mont Choisy, Trou-aux-Biches",
+    "phone": "+230 5476 4104",
+    "website": "https://www.maurice-voile.mu",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Wildwind%20Sailing%20Centre%20Mont%20Choisy%20Mauritius",
+    "lat": -20.03205,
+    "lng": 57.55045,
+    "themes": [
+      "sports-nautiques"
+    ],
+    "zone": "nord",
+    "description": "Seule école de voile de l'océan Indien agréée RYA et VDWS, basée à Mont Choisy devant le Coral Azur Beach Resort. Cours de voile pour tous niveaux sur dériveurs et catamarans (Hobie Cat) dans le lagon protégé, initiation et perfectionnement encadrés par des instructeurs RYA. Propose aussi des stages de voile pour enfants pendant les vacances scolaires, ainsi que planche à voile et stand-up paddle. Location libre ou avec moniteur, et formules semaines complètes avec hébergement à l'hôtel partenaire.",
+    "filters": [
+      "navigation-bateau"
+    ],
+    "hours": "Tous les jours, généralement 10h-17h (à confirmer)"
   }
 ]
