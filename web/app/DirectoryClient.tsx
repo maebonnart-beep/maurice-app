@@ -852,13 +852,21 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
   const showHome =
     active === "all" && activeThemes.size === 0 && query.trim() === "" && !browseAll && !searchOpen;
 
+  // 1 seule lettre tapée matche quasi tout (n'importe quel mot commençant
+  // par cette lettre, sur ~2000 fiches) : monter la liste dès la 1ère lettre
+  // revenait à remonter un gros paquet de cartes d'un coup, exactly le
+  // ralenti observé. On attend 2 caractères avant de considérer qu'il y a
+  // une vraie recherche — sur `deferredQuery` pour ne pas bloquer la frappe
+  // le temps que React tranche.
+  const hasQuery = deferredQuery.trim().length >= 2;
+
   // Liste/carte des résultats (jusqu'à ~2000 fiches) : ne se monte QUE s'il y
   // a vraiment quelque chose à filtrer/afficher — un mot tapé, un filtre, ou
   // « Voir tout » explicite. Ouvrir le champ de recherche seul (searchOpen)
   // ne suffit pas : ça évite de générer toute la liste non filtrée dès le
   // premier tap, avant même que l'utilisateur ait tapé quoi que ce soit.
   const mobileTiles =
-    active === "all" && activeThemes.size === 0 && query.trim() === "" && !browseAll;
+    active === "all" && activeThemes.size === 0 && !hasQuery && !browseAll;
 
   // Recherche affichée dans le flux dédié (tuile « Recherche », onglet
   // « Explorer », ou « Voir tout ») — pas pendant la navigation par
