@@ -3528,7 +3528,7 @@
     "category": "faire-du-sport",
     "address": "Est de l'île, à ~25km de Port-Louis",
     "phone": "",
-    "website": "",
+    "website": "https://www.facebook.com/domainedeletoile/",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Domaine%20de%20l'Etoile%20Mauritius",
     "lat": -20.2144,
     "lng": 57.6425,
@@ -4068,8 +4068,8 @@
     "name": "Avalon Golf Estate",
     "category": "faire-du-sport",
     "address": "Bois Chéri, Savanne (Sud)",
-    "phone": "",
-    "website": "",
+    "phone": "+230 430 5800",
+    "website": "https://avalon.mu/",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Avalon%20Golf%20Estate%20Bois%20Cheri%20Mauritius",
     "lat": -20.3961,
     "lng": 57.5203,
@@ -5107,7 +5107,7 @@
     "name": "Dodo Club",
     "category": "faire-du-sport",
     "address": "Botanical Street, Curepipe",
-    "phone": "",
+    "phone": "+230 670 4803",
     "website": "",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Dodo%20Club%20golf%20Curepipe%20Mauritius",
     "lat": -20.3153,
@@ -5129,8 +5129,8 @@
     "name": "Maritim Golf Course",
     "category": "faire-du-sport",
     "address": "Maritim Resort & Spa, Balaclava (Nord-Ouest)",
-    "phone": "",
-    "website": "",
+    "phone": "+230 204 1000",
+    "website": "https://www.maritimresortandspa.mu/en/activities-leisure/golf/overview",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Maritim%20Golf%20Course%20Balaclava%20Mauritius",
     "lat": -20.0517,
     "lng": 57.5197,
@@ -5152,8 +5152,8 @@
     "name": "Shandrani Golf Course",
     "category": "faire-du-sport",
     "address": "Shandrani Beachcomber, Blue Bay (Sud-Est, près de l'aéroport)",
-    "phone": "",
-    "website": "",
+    "phone": "+230 603 4343",
+    "website": "https://www.beachcomber-hotels.com/en/hotel/shandrani-beachcomber",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Shandrani%20Golf%20Course%20Blue%20Bay%20Mauritius",
     "lat": -20.4442,
     "lng": 57.7092,
@@ -5591,8 +5591,8 @@
     "name": "Dive Passion Mauritius",
     "category": "faire-du-sport",
     "address": "The Residence Hotel, Belle Mare (Est)",
-    "phone": "",
-    "website": "",
+    "phone": "+230 5856 5527",
+    "website": "https://divepassionmauritius.com",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Dive%20Passion%20Mauritius%20Belle%20Mare",
     "lat": -20.2189,
     "lng": 57.7867,
@@ -20784,8 +20784,8 @@
     "name": "Watersports Office Paradis Beachcomber",
     "category": "faire-du-sport",
     "address": "Le Morne Peninsula, H88F+W2X, Le Morne",
-    "phone": "",
-    "website": "",
+    "phone": "+230 401 5050",
+    "website": "https://www.beachcomber-hotels.com/en/hotel/paradis-beachcomber",
     "googleMapsUrl": "https://maps.google.com/?cid=18347294777134241124&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.4330779,
     "lng": 57.3227116,
@@ -20994,8 +20994,8 @@
     "name": "The St Regis Pier",
     "category": "faire-du-sport",
     "address": "G8R5+5Q9, Le Morne",
-    "phone": "",
-    "website": "",
+    "phone": "+230 403 9000",
+    "website": "https://www.marriott.com/en-us/hotels/mruxm-the-st-regis-le-morne-resort-mauritius/overview/",
     "googleMapsUrl": "https://maps.google.com/?cid=17470393747457762753&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.4595871,
     "lng": 57.3094862,
@@ -21594,8 +21594,8 @@
     "name": "Ferme Marine De Mahebourg Ltd",
     "category": "faire-du-sport",
     "address": "PFHH+844, Quatre Bornes",
-    "phone": "",
-    "website": "",
+    "phone": "+230 460 4188",
+    "website": "https://www.fmm.mu/",
     "googleMapsUrl": "https://maps.google.com/?cid=4921611625505498006&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "lat": -20.2717384,
     "lng": 57.4778223,
@@ -31379,7 +31379,9 @@
     "description": "Centre de loisirs et de bien-être du domaine Mont Choisy Golf & Beach Estate : salle de fitness, courts de tennis et de padel, sauna, hammam, espaces yoga/pilates et piscine chauffée, réservé aux résidents du domaine.",
     "filters": [
       "complexes-sportifs"
-    ]
+    ],
+    "phone": "+230 265 0398",
+    "website": "https://www.visitmontchoisy.com/mont-choisy-leisure-wellness-centre/"
   },
   {
     "id": "pointe-aux-canonniers-muaythai-sport-club",
@@ -31589,7 +31591,9 @@
     "description": "Stade municipal Sir R. Ghurburrun de Triolet, terrain de football éclairé en soirée, également utilisé au quotidien par les habitants pour la marche et le jogging.",
     "filters": [
       "complexes-sportifs"
-    ]
+    ],
+    "phone": "+230 243 3266",
+    "website": "https://mauritiussportscouncil.govmu.org/mauritiussportscouncil/?page_id=286"
   },
   {
     "id": "switch-fitness",
@@ -32347,7 +32351,8 @@
     "description": "Salle de cross-training et entraînement fonctionnel à Saint-Pierre.",
     "filters": [
       "gym-fitness"
-    ]
+    ],
+    "website": "https://www.hilo-functionaltraining.com/"
   },
   {
     "id": "padel-port-chambly",
@@ -32410,7 +32415,8 @@
       "tennis-padel"
     ],
     "zone": "centre",
-    "description": "Club de tennis à Port-Louis (Champ de Mars) : courts et cours."
+    "description": "Club de tennis à Port-Louis (Champ de Mars) : courts et cours.",
+    "website": "https://www.facebook.com/portlouistennisclub/"
   },
   {
     "id": "national-tennis-centre",
@@ -32535,7 +32541,9 @@
     "description": "Salle de sport et de fitness à Chemin Grenier : musculation, cardio et cours collectifs.",
     "filters": [
       "gym-fitness"
-    ]
+    ],
+    "phone": "+230 603 7200",
+    "website": "https://shantimaurice.com/"
   },
   {
     "id": "seerouven-muscle-fitness-gym",
@@ -32571,7 +32579,8 @@
     "description": "Salle de sport et de fitness à Chemin Grenier : musculation, cardio et cours collectifs.",
     "filters": [
       "gym-fitness"
-    ]
+    ],
+    "website": "https://www.facebook.com/people/Peak-Performance-Gym/61562581302329/"
   },
   {
     "id": "muscles-and-curves-fitness-hub",
@@ -32777,7 +32786,8 @@
     "description": "Salle de sport et de fitness à Centre de Flacq : musculation, cardio et cours collectifs.",
     "filters": [
       "gym-fitness"
-    ]
+    ],
+    "website": "https://www.facebook.com/BeyondFitnessAndSpa/"
   },
   {
     "id": "outdoor-workout-albion",
@@ -33243,7 +33253,8 @@
     ],
     "zone": "centre",
     "sportsListed": "Tennis : 2 courts (dur). Services : coaching. Réservation possible.",
-    "description": "Club de tennis à Rose Hill proposant cours collectifs et individuels, séances de tennis-cardio, tournois et programmes adaptés aux enfants dès 3 ans."
+    "description": "Club de tennis à Rose Hill proposant cours collectifs et individuels, séances de tennis-cardio, tournois et programmes adaptés aux enfants dès 3 ans.",
+    "website": "https://www.facebook.com/TopSpinTennisClub/"
   },
   {
     "id": "rose-hill-club",
@@ -33408,7 +33419,8 @@
     "description": "Club de jiu-jitsu brésilien et arts martiaux mixtes basé à Bel Air, affilié à la fédération mauricienne de jiu-jitsu brésilien.",
     "filters": [
       "complexes-sportifs"
-    ]
+    ],
+    "website": "https://www.facebook.com/groups/185442524776/"
   },
   {
     "id": "iron-barbell-gym",
@@ -33823,7 +33835,9 @@
     "description": "Stade doté d'une piste d'athlétisme à six couloirs et d'environ 3000 places, situé au Réduit à Moka, domicile du club Olympique de Moka; il porte le nom de la marathonienne mauricienne Maryse Justin-Pyndiah.",
     "filters": [
       "complexes-sportifs"
-    ]
+    ],
+    "phone": "+230 465 4322",
+    "website": "https://mauritiusathletics.org/"
   },
   {
     "id": "glen-park-multisports-complex",
