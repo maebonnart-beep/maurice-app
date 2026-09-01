@@ -110,6 +110,12 @@ const RUBRIQUE_MAP: Record<string, { key: string; label: string; emoji: string }
     .map((s) => [s.key, s])
 );
 
+// Emoji par option de filtre (ex. "concert" → 🎤, "festival" → 🎪), plus précis
+// que l'emoji de rubrique pour distinguer les types d'événements sur l'accueil.
+const FILTER_OPTION_EMOJI: Record<string, string> = Object.fromEntries(
+  FILTER_GROUPS.flatMap((g) => g.options.map((o) => [o.key, o.emoji]))
+);
+
 const ZONES: { key: string; label: string; emoji: string }[] = [
   { key: "nord", label: "Nord", emoji: "⬆️" },
   { key: "est", label: "Est", emoji: "➡️" },
@@ -1449,7 +1455,8 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                   <div className="flex gap-3 overflow-x-auto pb-1 -mx-4 px-4 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
                     {upcomingEvents.map((b) => {
                       const rubrique = (b.themes || [])[0];
-                      const emoji = rubrique ? RUBRIQUE_MAP[rubrique]?.emoji ?? "🎉" : "🎉";
+                      const filterEmoji = (b.filters || []).map((f) => FILTER_OPTION_EMOJI[f]).find(Boolean);
+                      const emoji = filterEmoji ?? (rubrique ? RUBRIQUE_MAP[rubrique]?.emoji ?? "🎉" : "🎉");
                       return (
                         <button
                           key={b.id}
@@ -1457,8 +1464,14 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                           className="relative text-left shrink-0 w-[150px] rounded-2xl overflow-hidden p-3 shadow-card active:scale-[.98] transition-transform"
                           style={{ background: "linear-gradient(135deg, color-mix(in srgb, var(--accent) 20%, var(--surface)) 0%, var(--surface) 75%)", border: "1px solid var(--border)" }}
                         >
-                          <span className="text-[26px] leading-none">{emoji}</span>
-                          <p className="mt-2 text-[13px] font-bold text-ink leading-tight line-clamp-2">{b.name}</p>
+                          <span
+                            className="absolute top-2 right-2 flex items-center justify-center w-7 h-7 rounded-full text-[14px] shadow-sm"
+                            style={{ background: "var(--surface)", border: "1px solid var(--border)" }}
+                            aria-hidden
+                          >
+                            {emoji}
+                          </span>
+                          <p className="pr-7 text-[13px] font-bold text-ink leading-tight line-clamp-2">{b.name}</p>
                           <p className="mt-1 text-[11.5px] text-muted truncate">{b.period}</p>
                           {b.description && (
                             <p className="mt-1 text-[11px] text-muted leading-snug line-clamp-3">{b.description}</p>
