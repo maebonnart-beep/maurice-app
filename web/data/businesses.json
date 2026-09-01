@@ -48185,6 +48185,149 @@
     ]
   },
   {
+    "id": "ciel-ferney-trail-evt",
+    "name": "CIEL Ferney Trail",
+    "category": "agenda",
+    "address": "La Vallée de Ferney, Vieux Grand Port",
+    "phone": "",
+    "website": "https://roag.org/",
+    "themes": [
+      "evenements-sportifs"
+    ],
+    "description": "L'un des plus anciens et populaires trails de l'île, au cœur de la Vallée de Ferney, sanctuaire de biodiversité mauricienne : plus de 4000 coureurs. 4 formats : 5 km (fun run), 10 km, 18 km (600 m D+, vue sur le lagon du sud-est) et 35 km (1500 m D+, terrain accidenté). Inscriptions sur roag.org, généralement ouvertes 2 à 3 mois avant la course.",
+    "period": "Septembre",
+    "lat": -20.3625775,
+    "lng": 57.7064693,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Vallee%20de%20Ferney%20Mauritius",
+    "zone": "sud",
+    "eventRecurrence": "annuel-variable",
+    "filters": [
+      "sportif"
+    ]
+  },
+  {
+    "id": "trail-de-rodrigues-evt",
+    "name": "Trail de Rodrigues",
+    "category": "agenda",
+    "address": "Petit Gabriel, Rodrigues",
+    "phone": "",
+    "website": "https://www.trailderodrigues.com/",
+    "themes": [
+      "evenements-sportifs"
+    ],
+    "description": "Trail phare de l'île Rodrigues, à travers sentiers herbeux, pistes naturelles, zones rocheuses et littoral. 5 formats : Tortue (7 km), Gecko (16 km), Solitaire (26 km), Perroquet (52 km) et Hibou (75 km). Inscriptions généralement ouvertes jusqu'à fin septembre sur trailderodrigues.com, tarifs revus à la hausse à partir du 1er juillet.",
+    "period": "Novembre",
+    "eventRecurrence": "annuel-variable",
+    "filters": [
+      "sportif"
+    ]
+  },
+  {
+    "id": "ring-trail-evt",
+    "name": "Ring Trail",
+    "category": "agenda",
+    "address": "Parc National des Gorges de Rivière Noire, Rivière Noire",
+    "phone": "",
+    "website": "https://www.randotrail.mu/",
+    "themes": [
+      "evenements-sportifs"
+    ],
+    "description": "Trail dans le Parc National des Gorges de Rivière Noire, dernière forêt tropicale de l'île. 2 formats : 11 km et 25 km, environ 800 m de dénivelé. Retrait des dossards au parking du parc national. Inscriptions sur randotrail.mu.",
+    "period": "Décembre",
+    "lat": -20.4165,
+    "lng": 57.4886,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Black%20River%20Gorges%20National%20Park%20Petrin%20entrance%20Mauritius",
+    "zone": "ouest",
+    "eventRecurrence": "annuel-variable",
+    "filters": [
+      "sportif"
+    ]
+  },
+  {
+    "id": "ultra-trail-raidlight-beachcomber-evt",
+    "name": "Ultra-Trail Raidlight Beachcomber (UTRB)",
+    "category": "agenda",
+    "address": "Blue Bay (Sud-Est)",
+    "phone": "",
+    "website": "https://roag.org/events/event-info/1916/ultra-trail-raidlight-beachcomber-utrb",
+    "themes": [
+      "evenements-sportifs"
+    ],
+    "description": "Ultra-trail organisé par le groupe Beachcomber dans le sud-est de l'île, réputé pour son organisation 5 étoiles et ses ravitaillements soignés. 5 formats, du 10 au 100 km : Trail du Souffleur (10 km), Trail du Nautile (25 km), Trail de la Perruche (47 km) et Trail des 7 Couleurs (100 km, dont une version relais).",
+    "period": "Juillet",
+    "lat": -20.4442,
+    "lng": 57.7092,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Blue%20Bay%20public%20beach%20Mauritius",
+    "zone": "sud",
+    "eventRecurrence": "annuel-variable",
+    "filters": [
+      "sportif"
+    ]
+  },
+  {
+    "id": "trail-de-la-liberte-evt",
+    "name": "Trail de la Liberté",
+    "category": "agenda",
+    "address": "Le Morne (Sud-Ouest)",
+    "phone": "",
+    "website": "https://www.randotrail.mu/",
+    "themes": [
+      "evenements-sportifs"
+    ],
+    "description": "Trail caritatif au pied de la montagne du Morne, en hommage aux marrons qui s'y réfugièrent. 2 formats : Ti Marronnage (10 km) et Grand Marronnage (20 km). Une partie de l'inscription est reversée au projet Vision Le Morne porté par l'association ADM. Inscriptions sur randotrail.mu.",
+    "period": "Août",
+    "lat": -20.4547,
+    "lng": 57.3106,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Le%20Morne%20Mauritius",
+    "zone": "sud",
+    "eventRecurrence": "annuel-variable",
+    "filters": [
+      "sportif"
+    ]
+  },
+  {
+    "id": "moka-trail-evt",
+    "name": "Moka Trail",
+    "category": "agenda",
+    "address": "Beau Bois, Moka",
+    "phone": "",
+    "website": "https://www.mokatrail.mu/",
+    "themes": [
+      "evenements-sportifs"
+    ],
+    "description": "Trail incontournable de Moka depuis 2012, plus de 2500 participants chaque année. 5 formats : Fun Jog (5 km), Deux Mamelles (7 km), Bar le Duc (10 km), Petit Both (15 km) et Grand Pouce (30 km). Inscriptions en ligne sur mokatrail.mu généralement jusqu'à mi-septembre (environ Rs 1250 à partir de 14 ans), retrait des dossards chez Decathlon Bagatelle.",
+    "period": "Octobre",
+    "lat": -20.2072322,
+    "lng": 57.5661485,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Beau%20Bois%20Moka%20Mauritius",
+    "zone": "centre",
+    "eventRecurrence": "annuel-variable",
+    "filters": [
+      "sportif"
+    ]
+  },
+  {
+    "id": "avalon-trail-evt",
+    "name": "Avalon Trail",
+    "category": "agenda",
+    "address": "Avalon Golf Estate, Bois Chéri",
+    "phone": "",
+    "website": "https://avalon.mu/",
+    "themes": [
+      "evenements-sportifs"
+    ],
+    "description": "Trail 100 % en pleine nature (parc national et terrain de chasse privé) autour de l'Avalon Golf Estate, à travers forêts et plaines peuplées de cerfs, sangliers et oiseaux endémiques. 2 formats : 11 km et 19 km. Départ et arrivée au golf, grand parking et espace détente après la course.",
+    "period": "Octobre",
+    "lat": -20.4440891,
+    "lng": 57.5198045,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Avalon%20Golf%20Estate%20Bois%20Cheri%20Mauritius",
+    "zone": "sud",
+    "eventRecurrence": "annuel-variable",
+    "filters": [
+      "sportif"
+    ]
+  },
+  {
     "id": "bazar-canonniers",
     "name": "Bazar Canonniers",
     "category": "manger-boire",
