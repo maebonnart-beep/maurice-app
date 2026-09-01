@@ -2,6 +2,7 @@
 
 import { useCallback, useDeferredValue, useEffect, useMemo, useRef, useState } from "react";
 import dynamic from "next/dynamic";
+import Link from "next/link";
 import type { Business, CategoryKey } from "@/lib/types";
 import type { MapBounds } from "./Map";
 import { CATEGORIES, CATEGORY_MAP, SUBCATEGORIES, FILTER_GROUPS, PRICE_RANGES } from "@/data/categories";
@@ -1415,6 +1416,18 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                 })}
               </div>
 
+              <Link
+                href="/seconde-main"
+                className="mt-6 flex items-center justify-between gap-3 rounded-2xl px-4 py-3.5 no-underline text-ink shadow-card"
+                style={{ background: "linear-gradient(135deg, color-mix(in srgb, var(--primary) 16%, var(--surface)) 0%, var(--surface) 75%)", border: "1px solid var(--border)" }}
+              >
+                <span>
+                  <span className="block text-[14.5px] font-bold">🛋️ Seconde main entre particuliers</span>
+                  <span className="block text-[12px] text-muted mt-0.5">Annonces déposées par des particuliers, contact WhatsApp</span>
+                </span>
+                <span className="shrink-0 text-primary-deep text-[13px] font-semibold">Voir ›</span>
+              </Link>
+
               {upcomingEvents.length > 0 && (
                 <>
                   <div className="flex items-center justify-between mt-7 mb-2.5">
@@ -1440,6 +1453,9 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                           <span className="text-[26px] leading-none">{emoji}</span>
                           <p className="mt-2 text-[13px] font-bold text-ink leading-tight line-clamp-2">{b.name}</p>
                           <p className="mt-1 text-[11.5px] text-muted truncate">{b.period}</p>
+                          {b.description && (
+                            <p className="mt-1 text-[11px] text-muted leading-snug line-clamp-3">{b.description}</p>
+                          )}
                           <span
                             className="mt-2 inline-flex items-center gap-0.5 px-1.5 py-0.5 rounded-pill text-[9.5px] font-bold text-on-accent"
                             style={{ background: "var(--accent)" }}
