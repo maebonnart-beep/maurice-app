@@ -18744,6 +18744,26 @@
     ]
   },
   {
+    "id": "nourish-by-tejo",
+    "name": "Nourish by Tejo",
+    "category": "manger-boire",
+    "address": "Cap Tamarin, Tamarin 90902",
+    "phone": "+230 5849 7779",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Nourish%20by%20Tejo%20Cap%20Tamarin%20Mauritius",
+    "lat": -20.327741,
+    "lng": 57.38387,
+    "themes": [
+      "commerces-alimentaires",
+      "produits-bio"
+    ],
+    "zone": "ouest",
+    "description": "Épicerie bio et zéro-déchet à Cap Tamarin, produits locaux et sans pesticides, en vente sur place ou en livraison (smoothies et snacks healthy).",
+    "filters": [
+      "epiceries-specialisees"
+    ]
+  },
+  {
     "id": "l-epicerie-floreal",
     "name": "L'Épicerie Floréal",
     "category": "manger-boire",
@@ -22519,9 +22539,29 @@
       "restaurants"
     ],
     "zone": "centre",
-    "description": "Restaurant francais de Moka.",
+    "description": "Épicerie fine et restaurant à Telfair City Centre (Moka) : sélection de produits frais et d'épicerie avec un bon choix d'options halal, vegan et sans gluten.",
     "filters": [
       "europeenne"
+    ]
+  },
+  {
+    "id": "natures-basket-moka",
+    "name": "Nature's Basket — Les Allées",
+    "category": "manger-boire",
+    "address": "Les Allées, Helvétia, Moka",
+    "phone": "+230 434 0217",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Nature%27s%20Basket%20Les%20All%C3%A9es%20Helvetia%20Moka%20Mauritius",
+    "lat": -20.2246742,
+    "lng": 57.5255987,
+    "themes": [
+      "commerces-alimentaires",
+      "produits-bio"
+    ],
+    "zone": "centre",
+    "description": "Premier supermarché bio ouvert à la galerie marchande Les Allées (Helvétia, Moka) : plus de 1000 marques de produits bio, options vegan et sans gluten, fruits et légumes frais.",
+    "filters": [
+      "epiceries-specialisees"
     ]
   },
   {
