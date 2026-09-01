@@ -1447,6 +1447,44 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                 })}
               </div>
 
+              {(() => {
+                const topKeys = new Set(homeTopCategories.map(({ category: c }) => c.key));
+                const rest = CATEGORIES.filter((c) => (counts[c.key] || 0) > 0 && !topKeys.has(c.key));
+                if (rest.length === 0) return null;
+                return (
+                  <div className="flex justify-center gap-4 flex-wrap pb-1">
+                    {rest.map((c) => {
+                      const mascot = mascotFor(c.key);
+                      return (
+                        <button
+                          key={c.key}
+                          onClick={() => { setHomeMode("categories"); setHomeCategory(c.key); }}
+                          className="flex flex-col items-center gap-1 w-[62px] active:scale-[.96] transition-transform"
+                        >
+                          <span
+                            className="w-[56px] h-[56px] rounded-full overflow-hidden shadow-sm flex items-center justify-center text-xl"
+                            style={{
+                              background: categoryTint(c.key),
+                              border: `2px solid color-mix(in srgb, ${c.color} 55%, transparent)`,
+                            }}
+                          >
+                            {mascot ? (
+                              // eslint-disable-next-line @next/next/no-img-element
+                              <img src={mascot} alt="" className="w-full h-full object-contain" />
+                            ) : (
+                              c.emoji
+                            )}
+                          </span>
+                          <span className="text-[10.5px] font-semibold text-ink text-center leading-tight">
+                            {c.label}
+                          </span>
+                        </button>
+                      );
+                    })}
+                  </div>
+                );
+              })()}
+
               <button
                 onClick={() => setHomeMode("categories")}
                 className="mt-4 w-full h-[42px] rounded-pill border border-border bg-surface text-[13.5px] font-semibold text-primary-deep shadow-sm active:scale-[.98] transition-transform"
