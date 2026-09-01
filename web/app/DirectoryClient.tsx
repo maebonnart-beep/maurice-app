@@ -1395,9 +1395,13 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                 Rechercher une adresse, une activité…
               </button>
 
-              <h2 className="text-[16px] font-bold text-ink mb-2.5">
+              <div className="rounded-[28px] border border-border bg-surface px-4 pt-5 pb-4 shadow-sm text-center">
+              <h2 className="text-[16px] font-bold text-ink">
                 {profilTopCategories.length > 0 ? "Vos catégories" : "Catégories populaires"}
               </h2>
+              <p className="text-[12.5px] text-muted mt-1 mb-1">
+                Tout ce dont tu as besoin, au même endroit !
+              </p>
               <div className="flex justify-center gap-7 pt-3 pb-3">
                 {homeTopCategories.map(({ category: c }) => {
                   const mascot = mascotFor(c.key);
@@ -1452,12 +1456,17 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                 const rest = CATEGORIES.filter((c) => (counts[c.key] || 0) > 0 && !topKeys.has(c.key));
                 if (rest.length === 0) return null;
                 return (
-                  <div className="flex justify-center gap-4 flex-wrap pb-1">
-                    {rest.map((c) => {
-                      const mascot = mascotFor(c.key);
-                      return (
+                  <div className="flex justify-center items-start gap-2.5 flex-wrap pb-1">
+                    {rest.map((c, i) => (
+                      <div key={c.key} className="flex items-start">
+                        {i > 0 && (
+                          <span
+                            className="hidden sm:block w-px h-[56px] mr-2.5 shrink-0"
+                            style={{ borderLeft: "1px dashed var(--border)" }}
+                            aria-hidden
+                          />
+                        )}
                         <button
-                          key={c.key}
                           onClick={() => { setHomeMode("categories"); setHomeCategory(c.key); }}
                           className="flex flex-col items-center gap-1 w-[62px] active:scale-[.96] transition-transform"
                         >
@@ -1468,9 +1477,9 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                               border: `2px solid color-mix(in srgb, ${c.color} 55%, transparent)`,
                             }}
                           >
-                            {mascot ? (
+                            {mascotFor(c.key) ? (
                               // eslint-disable-next-line @next/next/no-img-element
-                              <img src={mascot} alt="" className="w-full h-full object-contain" />
+                              <img src={mascotFor(c.key)!} alt="" className="w-full h-full object-contain" />
                             ) : (
                               c.emoji
                             )}
@@ -1479,8 +1488,8 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                             {c.label}
                           </span>
                         </button>
-                      );
-                    })}
+                      </div>
+                    ))}
                   </div>
                 );
               })()}
@@ -1491,6 +1500,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
               >
                 Voir toutes les catégories ›
               </button>
+              </div>
 
               <Link
                 href="/seconde-main"
