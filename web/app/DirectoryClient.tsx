@@ -572,6 +572,18 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
     return c;
   }, [businesses]);
 
+  // Accueil : catégories mises en avant en grand — basées sur l'usage réel
+  // (coups de cœur/à tester/testé, cf. profilTopCategories), avec repli sur
+  // les catégories les mieux fournies pour un nouvel utilisateur sans favoris.
+  const homeTopCategories = useMemo(() => {
+    if (profilTopCategories.length > 0) return profilTopCategories;
+    return [...CATEGORIES]
+      .filter((c) => (counts[c.key] || 0) > 0)
+      .sort((a, b) => (counts[b.key] || 0) - (counts[a.key] || 0))
+      .slice(0, 3)
+      .map((c) => ({ category: c, count: counts[c.key] || 0 }));
+  }, [profilTopCategories, counts]);
+
   // Accueil → « Nos coups de cœur » : fiches mises en avant par la rédaction,
   // limitées à celles qui ont une photo (essentiel pour ce format en carte photo).
   const coupsDeCoeur = useMemo(
@@ -1383,58 +1395,46 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                 Rechercher une adresse, une activité…
               </button>
 
-              <div className="flex items-center justify-between mb-2.5">
-                <h2 className="text-[16px] font-bold text-ink">Explorer par catégorie</h2>
-                <button
-                  onClick={() => setHomeMode("categories")}
-                  className="text-[13px] font-semibold text-primary-deep active:scale-[.98]"
-                >
-                  Voir tout ›
-                </button>
-              </div>
-              <div className="flex gap-4 overflow-x-auto pt-2 pb-1 -mx-4 px-4 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-                {(() => {
-                  const visible = CATEGORIES.filter((c) => (counts[c.key] || 0) > 0);
-                  const columns: (typeof visible)[] = [];
-                  for (let i = 0; i < visible.length; i += 2) columns.push(visible.slice(i, i + 2));
-                  return columns.map((column, colIndex) => (
-                    <div
-                      key={column[0].key}
-                      className="flex flex-col gap-4 shrink-0"
-                      style={{ transform: `translateY(${colIndex % 2 === 0 ? -8 : 8}px)` }}
+              <h2 className="text-[16px] font-bold text-ink mb-2.5">
+                {profilTopCategories.length > 0 ? "Vos catégories" : "Catégories populaires"}
+              </h2>
+              <div className="flex justify-center gap-6 pt-1 pb-1">
+                {homeTopCategories.map(({ category: c }) => {
+                  const mascot = mascotFor(c.key);
+                  return (
+                    <button
+                      key={c.key}
+                      onClick={() => { setHomeMode("categories"); setHomeCategory(c.key); }}
+                      className="flex flex-col items-center gap-2 w-[104px] active:scale-[.96] transition-transform"
                     >
-                      {column.map((c) => {
-                        const mascot = mascotFor(c.key);
-                        return (
-                          <button
-                            key={c.key}
-                            onClick={() => { setHomeMode("categories"); setHomeCategory(c.key); }}
-                            className="flex flex-col items-center gap-1.5 w-[84px] active:scale-[.96] transition-transform"
-                          >
-                            <span
-                              className="w-[76px] h-[76px] rounded-full overflow-hidden shadow-sm flex items-center justify-center text-2xl"
-                              style={{
-                                background: categoryTint(c.key),
-                                border: `2.5px solid color-mix(in srgb, ${c.color} 55%, transparent)`,
-                              }}
-                            >
-                              {mascot ? (
-                                // eslint-disable-next-line @next/next/no-img-element
-                                <img src={mascot} alt="" className="w-full h-full object-contain" />
-                              ) : (
-                                c.emoji
-                              )}
-                            </span>
-                            <span className="text-[11.5px] font-semibold text-ink text-center leading-tight">
-                              {c.label}
-                            </span>
-                          </button>
-                        );
-                      })}
-                    </div>
-                  ));
-                })()}
+                      <span
+                        className="w-[96px] h-[96px] rounded-full overflow-hidden shadow-sm flex items-center justify-center text-3xl"
+                        style={{
+                          background: categoryTint(c.key),
+                          border: `3px solid color-mix(in srgb, ${c.color} 55%, transparent)`,
+                        }}
+                      >
+                        {mascot ? (
+                          // eslint-disable-next-line @next/next/no-img-element
+                          <img src={mascot} alt="" className="w-full h-full object-contain" />
+                        ) : (
+                          c.emoji
+                        )}
+                      </span>
+                      <span className="text-[13px] font-bold text-ink text-center leading-tight">
+                        {c.label}
+                      </span>
+                    </button>
+                  );
+                })}
               </div>
+
+              <button
+                onClick={() => setHomeMode("categories")}
+                className="mt-4 w-full h-[42px] rounded-pill border border-border bg-surface text-[13.5px] font-semibold text-primary-deep shadow-sm active:scale-[.98] transition-transform"
+              >
+                Voir toutes les catégories ›
+              </button>
 
               <Link
                 href="/seconde-main"
