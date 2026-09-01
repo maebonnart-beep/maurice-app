@@ -1405,7 +1405,10 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                   backgroundSize: "70px 100%, 70px 100%, 100% 100%",
                 }}
               >
-              <div className="rounded-[24px] border border-border bg-surface px-4 pt-5 pb-4 shadow-sm text-center">
+              <div
+                className="rounded-[24px] border border-border px-4 pt-5 pb-4 shadow-sm text-center"
+                style={{ background: "linear-gradient(180deg, color-mix(in srgb, var(--primary) 12%, var(--surface)) 0%, color-mix(in srgb, var(--primary) 4%, var(--surface)) 100%)" }}
+              >
               <h2 className="text-[16px] font-bold text-ink">
                 {profilTopCategories.length > 0 ? "Vos catégories" : "Catégories populaires"}
               </h2>
