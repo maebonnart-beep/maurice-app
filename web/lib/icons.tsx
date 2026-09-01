@@ -356,14 +356,14 @@ export function mascotFor(key: string): string | null {
  * repris du rendu fourni par la cliente (23/08).
  */
 const CATEGORY_TINTS: Record<string, string> = {
-  "manger-boire": "#fbe6bf",
-  "sortir-decouvrir": "#d6e8d1",
-  "faire-du-sport": "#cfe3f5",
-  "sante-bien-etre": "#e4dbf3",
-  "acheter-equiper": "#f2ddc4",
-  "vie-pratique": "#dbe2e6",
-  "famille-travail": "#f8d9dd",
-  agenda: "#f6d9e7",
+  "manger-boire": "#f6d38f",
+  "sortir-decouvrir": "#b9dcae",
+  "faire-du-sport": "#a8cdec",
+  "sante-bien-etre": "#cebbe9",
+  "acheter-equiper": "#e8c298",
+  "vie-pratique": "#bdc9cf",
+  "famille-travail": "#f0b9c4",
+  agenda: "#efb8d8",
 };
 
 /** Couleur pastel de fond pour le badge mascotte d'une catégorie (niveau 1). */

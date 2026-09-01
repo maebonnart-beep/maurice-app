@@ -1397,7 +1397,10 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                     >
                       <span
                         className="w-[76px] h-[76px] rounded-full overflow-hidden shadow-sm flex items-center justify-center text-2xl"
-                        style={{ background: categoryTint(c.key) }}
+                        style={{
+                          background: categoryTint(c.key),
+                          border: `2.5px solid color-mix(in srgb, ${c.color} 55%, transparent)`,
+                        }}
                       >
                         {mascot ? (
                           // eslint-disable-next-line @next/next/no-img-element
@@ -1408,6 +1411,12 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                       </span>
                       <span className="text-[11.5px] font-semibold text-ink text-center leading-tight">
                         {c.label}
+                      </span>
+                      <span
+                        className="text-[10px] font-bold text-center leading-none"
+                        style={{ color: c.color }}
+                      >
+                        {counts[c.key]}
                       </span>
                     </button>
                   );
