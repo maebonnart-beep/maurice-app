@@ -1398,18 +1398,20 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
               <h2 className="text-[16px] font-bold text-ink mb-2.5">
                 {profilTopCategories.length > 0 ? "Vos catégories" : "Catégories populaires"}
               </h2>
-              <div className="flex justify-center gap-6 pt-3 pb-1">
+              <div className="flex justify-center gap-7 pt-3 pb-3">
                 {homeTopCategories.map(({ category: c }) => {
                   const mascot = mascotFor(c.key);
+                  const CIcon = iconForKey(c.key);
                   return (
                     <button
                       key={c.key}
                       onClick={() => { setHomeMode("categories"); setHomeCategory(c.key); }}
-                      className="flex flex-col items-center gap-2 w-[104px] pt-3 active:scale-[.96] transition-transform"
+                      className="flex flex-col items-center gap-2.5 w-[116px] pt-3 active:scale-[.96] transition-transform"
                     >
                       <span
-                        className="relative w-[96px] h-[96px] rounded-full shadow-sm flex items-center justify-center text-3xl overflow-visible"
+                        className="relative w-[112px] h-[136px] shadow-sm flex items-center justify-center text-3xl overflow-visible"
                         style={{
+                          borderRadius: "50%",
                           background: `linear-gradient(160deg, color-mix(in srgb, ${c.color} 45%, white) 0%, ${categoryTint(c.key)} 100%)`,
                           border: `3px solid color-mix(in srgb, ${c.color} 55%, transparent)`,
                         }}
@@ -1419,13 +1421,25 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                           <img
                             src={mascot}
                             alt=""
-                            className="pointer-events-none absolute -top-3 left-1/2 -translate-x-1/2 w-[118%] h-[118%] object-contain drop-shadow-sm"
+                            className="pointer-events-none absolute -top-4 left-1/2 -translate-x-1/2 w-[120%] h-[120%] object-contain drop-shadow-sm"
                           />
                         ) : (
                           c.emoji
                         )}
+                        {CIcon && (
+                          <span
+                            className="absolute -bottom-2.5 left-1/2 -translate-x-1/2 w-9 h-9 rounded-full flex items-center justify-center shadow-sm"
+                            style={{
+                              background: "var(--surface)",
+                              border: `2px solid color-mix(in srgb, ${c.color} 55%, transparent)`,
+                              color: c.color,
+                            }}
+                          >
+                            <CIcon size={17} weight="bold" aria-hidden />
+                          </span>
+                        )}
                       </span>
-                      <span className="text-[13px] font-bold text-ink text-center leading-tight">
+                      <span className="text-[13px] font-bold text-ink text-center leading-tight mt-1">
                         {c.label}
                       </span>
                     </button>
