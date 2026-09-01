@@ -894,11 +894,9 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
       ? { key: active, emoji: CATEGORY_MAP[active as keyof typeof CATEGORY_MAP].emoji, label: CATEGORY_MAP[active as keyof typeof CATEGORY_MAP].label }
       : { key: "all", emoji: "✨", label: "Tout" });
 
-  // Verrou Premium : catégorie entière (agenda) ou rubrique précise
-  // (seconde-main-particuliers, dans acheter-equiper — seconde-main-boutiques reste libre).
-  const activeCategoryLocked =
-    (active !== "all" && PREMIUM_CATEGORY_KEYS.has(active as CategoryKey)) ||
-    (activeRubrique !== null && PREMIUM_RUBRIQUE_KEYS.has(activeRubrique));
+  // Verrou Premium désactivé (accès libéré pour tous) : les fiches restent
+  // marquées 🔒 Premium (badges) mais le paywall qui masquait le contenu est retiré.
+  const activeCategoryLocked = false;
 
   function renderSidebarTree(catKey: string) {
     const cats = SUBCATEGORIES[catKey as keyof typeof SUBCATEGORIES];
