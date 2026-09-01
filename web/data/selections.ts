@@ -559,8 +559,8 @@ export const SELECTIONS: Selection[] = [
       "nourish-by-tejo",
       "maison-epifine",
       "island-babe-mauritius-pereybere",
-      "beach-rouge-lux-belle-mare",
-      "mare-mare-beach-restaurant",
+      "le-glacier-gourmand-mahogany",
+      "cafe-moris-grand-baie",
     ],
   },
   {
