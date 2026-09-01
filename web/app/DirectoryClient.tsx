@@ -1395,7 +1395,17 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                 Rechercher une adresse, une activité…
               </button>
 
-              <div className="rounded-[28px] border border-border bg-surface px-4 pt-5 pb-4 shadow-sm text-center">
+              <div
+                className="rounded-[32px] p-3 shadow-sm"
+                style={{
+                  backgroundImage:
+                    "url(/bandeau-palmiers-gauche.jpg), url(/bandeau-palmiers-droite.jpg), linear-gradient(180deg, #d3ecf6 0%, #e9f7f1 100%)",
+                  backgroundPosition: "left center, right center, center",
+                  backgroundRepeat: "no-repeat, no-repeat, no-repeat",
+                  backgroundSize: "70px 100%, 70px 100%, 100% 100%",
+                }}
+              >
+              <div className="rounded-[24px] border border-border bg-surface px-4 pt-5 pb-4 shadow-sm text-center">
               <h2 className="text-[16px] font-bold text-ink">
                 {profilTopCategories.length > 0 ? "Vos catégories" : "Catégories populaires"}
               </h2>
@@ -1500,6 +1510,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
               >
                 Voir toutes les catégories ›
               </button>
+              </div>
               </div>
 
               <Link
