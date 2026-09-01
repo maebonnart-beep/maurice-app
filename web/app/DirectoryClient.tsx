@@ -1392,41 +1392,48 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                   Voir tout ›
                 </button>
               </div>
-              <div className="flex gap-4 overflow-x-auto pb-1 -mx-4 px-4 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-                {CATEGORIES.filter((c) => (counts[c.key] || 0) > 0).map((c) => {
-                  const mascot = mascotFor(c.key);
-                  return (
-                    <button
-                      key={c.key}
-                      onClick={() => { setHomeMode("categories"); setHomeCategory(c.key); }}
-                      className="flex flex-col items-center gap-1.5 shrink-0 w-[84px] active:scale-[.96] transition-transform"
+              <div className="flex gap-4 overflow-x-auto pt-2 pb-1 -mx-4 px-4 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+                {(() => {
+                  const visible = CATEGORIES.filter((c) => (counts[c.key] || 0) > 0);
+                  const columns: (typeof visible)[] = [];
+                  for (let i = 0; i < visible.length; i += 2) columns.push(visible.slice(i, i + 2));
+                  return columns.map((column, colIndex) => (
+                    <div
+                      key={column[0].key}
+                      className="flex flex-col gap-4 shrink-0"
+                      style={{ transform: `translateY(${colIndex % 2 === 0 ? -8 : 8}px)` }}
                     >
-                      <span
-                        className="w-[76px] h-[76px] rounded-full overflow-hidden shadow-sm flex items-center justify-center text-2xl"
-                        style={{
-                          background: categoryTint(c.key),
-                          border: `2.5px solid color-mix(in srgb, ${c.color} 55%, transparent)`,
-                        }}
-                      >
-                        {mascot ? (
-                          // eslint-disable-next-line @next/next/no-img-element
-                          <img src={mascot} alt="" className="w-full h-full object-contain" />
-                        ) : (
-                          c.emoji
-                        )}
-                      </span>
-                      <span className="text-[11.5px] font-semibold text-ink text-center leading-tight">
-                        {c.label}
-                      </span>
-                      <span
-                        className="text-[10px] font-bold text-center leading-none"
-                        style={{ color: c.color }}
-                      >
-                        {counts[c.key]}
-                      </span>
-                    </button>
-                  );
-                })}
+                      {column.map((c) => {
+                        const mascot = mascotFor(c.key);
+                        return (
+                          <button
+                            key={c.key}
+                            onClick={() => { setHomeMode("categories"); setHomeCategory(c.key); }}
+                            className="flex flex-col items-center gap-1.5 w-[84px] active:scale-[.96] transition-transform"
+                          >
+                            <span
+                              className="w-[76px] h-[76px] rounded-full overflow-hidden shadow-sm flex items-center justify-center text-2xl"
+                              style={{
+                                background: categoryTint(c.key),
+                                border: `2.5px solid color-mix(in srgb, ${c.color} 55%, transparent)`,
+                              }}
+                            >
+                              {mascot ? (
+                                // eslint-disable-next-line @next/next/no-img-element
+                                <img src={mascot} alt="" className="w-full h-full object-contain" />
+                              ) : (
+                                c.emoji
+                              )}
+                            </span>
+                            <span className="text-[11.5px] font-semibold text-ink text-center leading-tight">
+                              {c.label}
+                            </span>
+                          </button>
+                        );
+                      })}
+                    </div>
+                  ));
+                })()}
               </div>
 
               <Link
@@ -1452,18 +1459,38 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                       Voir tout ›
                     </button>
                   </div>
-                  <div className="flex gap-3 overflow-x-auto pb-1 -mx-4 px-4 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-                    {upcomingEvents.map((b) => {
-                      const rubrique = (b.themes || [])[0];
-                      const filterEmoji = (b.filters || []).map((f) => FILTER_OPTION_EMOJI[f]).find(Boolean);
-                      const emoji = filterEmoji ?? (rubrique ? RUBRIQUE_MAP[rubrique]?.emoji ?? "🎉" : "🎉");
-                      return (
-                        <button
-                          key={b.id}
-                          onClick={() => { selectCategory("agenda"); window.scrollTo({ top: 0, behavior: "smooth" }); }}
-                          className="relative text-left shrink-0 w-[150px] rounded-2xl overflow-hidden p-3 shadow-card active:scale-[.98] transition-transform"
-                          style={{ background: "linear-gradient(135deg, color-mix(in srgb, var(--accent) 20%, var(--surface)) 0%, var(--surface) 75%)", border: "1px solid var(--border)" }}
-                        >
+                  <div className="-mx-4 px-4">
+                    <div className="flex overflow-x-auto pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+                      {upcomingEvents.map((b) => {
+                        const rubrique = (b.themes || [])[0];
+                        const filterEmoji = (b.filters || []).map((f) => FILTER_OPTION_EMOJI[f]).find(Boolean);
+                        const emoji = filterEmoji ?? (rubrique ? RUBRIQUE_MAP[rubrique]?.emoji ?? "🎉" : "🎉");
+                        const shortDate = b.eventStartDate
+                          ? new Date(b.eventStartDate + "T00:00:00").toLocaleDateString("fr-FR", { day: "numeric", month: "short" })
+                          : null;
+                        return (
+                          <div key={b.id} className="relative shrink-0 w-[150px] mr-3 last:mr-0 flex flex-col items-center">
+                            <span
+                              className="relative z-10 mb-1.5 px-1.5 py-0.5 rounded-pill text-[10px] font-bold text-on-accent"
+                              style={{ background: "var(--accent)" }}
+                            >
+                              {shortDate ?? "—"}
+                            </span>
+                            <div
+                              className="absolute left-0 top-[27px] h-px"
+                              style={{ width: "calc(100% + 12px)", background: "var(--border)" }}
+                              aria-hidden
+                            />
+                            <span
+                              className="relative z-10 w-2.5 h-2.5 rounded-full mb-2"
+                              style={{ background: "var(--accent)", boxShadow: "0 0 0 3px var(--surface)" }}
+                              aria-hidden
+                            />
+                            <button
+                              onClick={() => { selectCategory("agenda"); window.scrollTo({ top: 0, behavior: "smooth" }); }}
+                              className="relative text-left w-full rounded-2xl overflow-hidden p-3 shadow-card active:scale-[.98] transition-transform"
+                              style={{ background: "linear-gradient(135deg, color-mix(in srgb, var(--accent) 20%, var(--surface)) 0%, var(--surface) 75%)", border: "1px solid var(--border)" }}
+                            >
                           <span
                             className="absolute top-2 right-2 flex items-center justify-center w-7 h-7 rounded-full text-[14px] shadow-sm"
                             style={{ background: "var(--surface)", border: "1px solid var(--border)" }}
@@ -1472,7 +1499,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                             {emoji}
                           </span>
                           <p className="pr-7 text-[13px] font-bold text-ink leading-tight line-clamp-2">{b.name}</p>
-                          <p className="mt-1 text-[11.5px] text-muted truncate">{b.period}</p>
+                          <p className="mt-1 text-[11.5px] font-bold truncate" style={{ color: "var(--accent)" }}>{b.period}</p>
                           {b.description && (
                             <p className="mt-1 text-[11px] text-muted leading-snug line-clamp-3">{b.description}</p>
                           )}
@@ -1482,9 +1509,11 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                           >
                             🔒 Premium
                           </span>
-                        </button>
-                      );
-                    })}
+                            </button>
+                          </div>
+                        );
+                      })}
+                    </div>
                   </div>
                 </>
               )}
