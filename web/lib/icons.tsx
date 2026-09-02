@@ -21,7 +21,7 @@ import {
   IdentificationCard, Camera, Taxi, Car, DeviceMobile, WifiHigh, Suitcase,
   Gauge, Scroll, Gavel, Calculator, WashingMachine, Flag, FlowerLotus,
   Scissors, Needle, PersonSimpleTaiChi, Plant, Handshake, Motorcycle, Medal,
-  MaskHappy, Coins, Diamond, MapPin, ArrowUp, ArrowDown, ArrowLeft, ArrowRight,
+  MaskHappy, HandHeart, Coins, Diamond, MapPin, ArrowUp, ArrowDown, ArrowLeft, ArrowRight,
   Target, GlobeHemisphereWest, Jar,
   Clock, Phone, EnvelopeSimple, WhatsappLogo, Globe, NavigationArrow, Ruler,
   TrendUp, Ticket, PencilSimple, Compass,
@@ -78,6 +78,7 @@ export const ICON_MAP: Record<string, Icon> = {
 
   // Rubriques — Agenda
   "evenements-culturels": MaskHappy, "evenements-sportifs": Medal,
+  "evenements-associatifs": HandHeart,
 
   // Filtres — Cuisine
   mauricienne: CookingPot, "fruits-de-mer": Fish, indienne: CookingPot,
@@ -327,8 +328,6 @@ const SUBICON_KEYS = new Set([
   // Famille & Travail
   "creches-garderies", "ecoles", "centres-loisirs-animations",
   "coworking-teletravail", "business-networking",
-  // Agenda
-  "evenements-culturels", "evenements-sportifs",
 ]);
 
 /** Chemin de l'icône découpée pour une rubrique, ou null si pas encore couverte. */

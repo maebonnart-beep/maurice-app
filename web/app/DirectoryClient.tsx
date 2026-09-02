@@ -138,6 +138,18 @@ const ZONES: { key: string; label: string; emoji: string }[] = [
   { key: "centre", label: "Centre", emoji: "🎯" },
 ];
 
+// Mélange (Fisher-Yates) une copie du tableau — pour varier « Coups de cœur »
+// et « Listes de Koté Moris » à chaque connexion plutôt que toujours les mêmes
+// premiers éléments du tableau source.
+function shuffled<T>(arr: T[]): T[] {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
 // Distance à vol d'oiseau (km) entre deux points GPS — pour « Autour de moi ».
 function haversineKm(aLat: number, aLng: number, bLat: number, bLng: number): number {
   const R = 6371;
@@ -159,6 +171,11 @@ const Map = dynamic(() => import("./Map"), {
 });
 
 export default function DirectoryClient({ businesses }: { businesses: Business[] }) {
+  // Ordre mélangé côté client uniquement (après hydratation) pour que « Coups de
+  // cœur » et « Listes de Koté Moris » varient à chaque connexion sans provoquer
+  // de désaccord d'hydratation SSR (le 1er rendu client doit matcher le serveur).
+  const [shuffleReady, setShuffleReady] = useState(false);
+  useEffect(() => setShuffleReady(true), []);
   const { statuses: favoriteStatuses, getStatus, mergeStatuses } = useFavorites();
   const { favoriteSelectionIds, isFavoriteSelection, toggleFavoriteSelection } = useFavoriteSelections();
   const { suggestions } = useSuggestions();
@@ -396,6 +413,12 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
     () => SELECTIONS.filter((s) => s.featured || s.group === "escapades"),
     []
   );
+  // Accueil → « Les listes de Koté Moris » : ordre mélangé après hydratation
+  // pour ne pas toujours mettre en avant les mêmes premières listes.
+  const homeSelections = useMemo(
+    () => (shuffleReady ? shuffled(SELECTIONS) : SELECTIONS),
+    [shuffleReady]
+  );
   const exploreSelections = useMemo(
     () => (selectionExploreFilter === "tous" ? SELECTIONS : SELECTIONS.filter((s) => s.group === selectionExploreFilter)),
     [selectionExploreFilter]
@@ -600,10 +623,11 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
 
   // Accueil → « Nos coups de cœur » : fiches mises en avant par la rédaction,
   // limitées à celles qui ont une photo (essentiel pour ce format en carte photo).
-  const coupsDeCoeur = useMemo(
-    () => businesses.filter((b) => b.badge === "selection" && b.photoUrl),
-    [businesses]
-  );
+  // Mélangées après hydratation pour ne pas montrer toujours les 12 mêmes.
+  const coupsDeCoeur = useMemo(() => {
+    const all = businesses.filter((b) => b.badge === "selection" && b.photoUrl);
+    return shuffleReady ? shuffled(all) : all;
+  }, [businesses, shuffleReady]);
 
   // Accueil → « Événements à venir » : uniquement les fiches agenda avec une
   // date de début confirmée et future (les événements récurrents sans date
@@ -1693,7 +1717,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                 </button>
               </div>
               <div className="flex gap-3 overflow-x-auto pb-1 -mx-4 px-4 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-                {SELECTIONS.map((s) => (
+                {homeSelections.map((s) => (
                   <button
                     key={s.id}
                     onClick={() => { setHomeMode("listes"); setSelectedListId(s.id); }}
