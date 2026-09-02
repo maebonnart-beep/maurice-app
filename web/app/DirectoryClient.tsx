@@ -116,6 +116,20 @@ const FILTER_OPTION_EMOJI: Record<string, string> = Object.fromEntries(
   FILTER_GROUPS.flatMap((g) => g.options.map((o) => [o.key, o.emoji]))
 );
 
+// Couleur par type d'événement (accueil → « Événements à venir »), pour
+// distinguer visuellement concerts / sport / associatif / etc.
+const EVENT_TYPE_COLOR: Record<string, string> = {
+  concert: "#a855f7",
+  festival: "#f97316",
+  "spectacle-comedie": "#ec4899",
+  "clubbing-soiree": "#6366f1",
+  "culturel-traditionnel": "#eab308",
+  sportif: "#22c55e",
+  "associatif-caritatif": "#0ea5e9",
+  culinaire: "#ef4444",
+};
+const DEFAULT_EVENT_COLOR = "#e0518a";
+
 const ZONES: { key: string; label: string; emoji: string }[] = [
   { key: "nord", label: "Nord", emoji: "⬆️" },
   { key: "est", label: "Est", emoji: "➡️" },
@@ -1520,6 +1534,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                         const rubrique = (b.themes || [])[0];
                         const filterEmoji = (b.filters || []).map((f) => FILTER_OPTION_EMOJI[f]).find(Boolean);
                         const emoji = filterEmoji ?? (rubrique ? RUBRIQUE_MAP[rubrique]?.emoji ?? "🎉" : "🎉");
+                        const eventColor = (b.filters || []).map((f) => EVENT_TYPE_COLOR[f]).find(Boolean) ?? DEFAULT_EVENT_COLOR;
                         const shortDate = b.eventStartDate
                           ? new Date(b.eventStartDate + "T00:00:00").toLocaleDateString("fr-FR", { day: "numeric", month: "short" })
                           : null;
@@ -1544,7 +1559,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                             <button
                               onClick={() => { selectCategory("agenda"); window.scrollTo({ top: 0, behavior: "smooth" }); }}
                               className="relative text-left w-full rounded-2xl overflow-hidden p-3 shadow-card active:scale-[.98] transition-transform"
-                              style={{ background: "linear-gradient(135deg, color-mix(in srgb, var(--accent) 20%, var(--surface)) 0%, var(--surface) 75%)", border: "1px solid var(--border)" }}
+                              style={{ background: `linear-gradient(135deg, color-mix(in srgb, ${eventColor} 20%, var(--surface)) 0%, var(--surface) 75%)`, border: "1px solid var(--border)" }}
                             >
                           <span
                             className="absolute top-2 right-2 flex items-center justify-center w-7 h-7 rounded-full text-[14px] shadow-sm"
@@ -1554,13 +1569,12 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                             {emoji}
                           </span>
                           <p className="pr-7 text-[13px] font-bold text-ink leading-tight line-clamp-2">{b.name}</p>
-                          <p className="mt-1 text-[11.5px] font-bold truncate" style={{ color: "var(--accent)" }}>{b.period}</p>
                           {b.description && (
                             <p className="mt-1 text-[11px] text-muted leading-snug line-clamp-3">{b.description}</p>
                           )}
                           <span
                             className="mt-2 inline-flex items-center gap-0.5 px-1.5 py-0.5 rounded-pill text-[9.5px] font-bold text-on-accent"
-                            style={{ background: "var(--accent)" }}
+                            style={{ background: eventColor }}
                           >
                             🔒 Premium
                           </span>
