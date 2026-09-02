@@ -1409,13 +1409,10 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                 className="rounded-[24px] border border-border px-4 pt-5 pb-4 shadow-sm text-center"
                 style={{ background: "linear-gradient(180deg, color-mix(in srgb, var(--primary) 12%, var(--surface)) 0%, color-mix(in srgb, var(--primary) 4%, var(--surface)) 100%)" }}
               >
-              <h2 className="text-[16px] font-bold text-ink">
+              <h2 className="text-[16px] font-bold text-ink mb-1">
                 {profilTopCategories.length > 0 ? "Vos catégories" : "Catégories populaires"}
               </h2>
-              <p className="text-[12.5px] text-muted mt-1 mb-1">
-                Tout ce dont tu as besoin, au même endroit !
-              </p>
-              <div className="flex justify-center gap-4 pt-2 pb-2">
+              <div className="flex items-end gap-4 overflow-x-auto pt-2 pb-2 -mx-4 px-4 text-left [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
                 {homeTopCategories.map(({ category: c }) => {
                   const mascot = mascotFor(c.key);
                   const CIcon = iconForKey(c.key);
@@ -1423,7 +1420,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                     <button
                       key={c.key}
                       onClick={() => { setHomeMode("categories"); setHomeCategory(c.key); }}
-                      className="flex flex-col items-center gap-1.5 w-[76px] pt-2 active:scale-[.96] transition-transform"
+                      className="flex flex-col items-center gap-1.5 w-[76px] shrink-0 pt-2 active:scale-[.96] transition-transform"
                     >
                       <span
                         className="relative w-[68px] h-[82px] shadow-sm flex items-center justify-center text-xl overflow-visible"
@@ -1462,26 +1459,23 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                     </button>
                   );
                 })}
-              </div>
 
-              {(() => {
-                const topKeys = new Set(homeTopCategories.map(({ category: c }) => c.key));
-                const rest = CATEGORIES.filter((c) => (counts[c.key] || 0) > 0 && !topKeys.has(c.key));
-                if (rest.length === 0) return null;
-                return (
-                  <div className="flex justify-center items-start gap-2.5 flex-wrap pb-1">
-                    {rest.map((c, i) => (
-                      <div key={c.key} className="flex items-start">
-                        {i > 0 && (
-                          <span
-                            className="hidden sm:block w-px h-[56px] mr-2.5 shrink-0"
-                            style={{ borderLeft: "1px dashed var(--border)" }}
-                            aria-hidden
-                          />
-                        )}
+                {(() => {
+                  const topKeys = new Set(homeTopCategories.map(({ category: c }) => c.key));
+                  const rest = CATEGORIES.filter((c) => (counts[c.key] || 0) > 0 && !topKeys.has(c.key));
+                  if (rest.length === 0) return null;
+                  return (
+                    <>
+                      <span
+                        className="w-px h-[56px] shrink-0"
+                        style={{ borderLeft: "1px dashed var(--border)" }}
+                        aria-hidden
+                      />
+                      {rest.map((c) => (
                         <button
+                          key={c.key}
                           onClick={() => { setHomeMode("categories"); setHomeCategory(c.key); }}
-                          className="flex flex-col items-center gap-1 w-[62px] active:scale-[.96] transition-transform"
+                          className="flex flex-col items-center gap-1 w-[62px] shrink-0 active:scale-[.96] transition-transform"
                         >
                           <span
                             className="w-[56px] h-[56px] rounded-full overflow-hidden shadow-sm flex items-center justify-center text-xl"
@@ -1501,11 +1495,11 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                             {c.label}
                           </span>
                         </button>
-                      </div>
-                    ))}
-                  </div>
-                );
-              })()}
+                      ))}
+                    </>
+                  );
+                })()}
+              </div>
 
               <button
                 onClick={() => setHomeMode("categories")}
