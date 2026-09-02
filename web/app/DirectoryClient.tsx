@@ -1395,6 +1395,9 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                 Rechercher une adresse, une activité…
               </button>
 
+              <h2 className="text-[16px] font-bold text-ink mb-2.5">
+                Par catégorie
+              </h2>
               <div
                 className="rounded-[32px] p-3 shadow-sm"
                 style={{
@@ -1406,12 +1409,9 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                 }}
               >
               <div
-                className="rounded-[24px] border border-border px-3 pt-4 pb-3 shadow-sm"
+                className="rounded-[24px] border border-border px-3 py-3 shadow-sm"
                 style={{ background: "linear-gradient(180deg, color-mix(in srgb, var(--primary) 12%, var(--surface)) 0%, color-mix(in srgb, var(--primary) 4%, var(--surface)) 100%)" }}
               >
-              <h2 className="text-[16px] font-bold text-ink mb-2.5">
-                Toutes vos catégories
-              </h2>
               <div className="flex items-start gap-3 overflow-x-auto pt-2 pb-2 -mx-3 px-3 text-left [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
                 {homeTopCategories.map(({ category: c }) => {
                   const mascot = mascotFor(c.key);
@@ -1462,47 +1462,31 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                   );
                 })}
 
-                {(() => {
-                  const topKeys = new Set(homeTopCategories.map(({ category: c }) => c.key));
-                  const rest = CATEGORIES.filter((c) => (counts[c.key] || 0) > 0 && !topKeys.has(c.key));
-                  if (rest.length === 0) return null;
-                  return (
-                    <>
-                      <span
-                        className="w-px h-[82px] shrink-0"
-                        style={{ borderLeft: "1px dashed var(--border)" }}
-                        aria-hidden
-                      />
-                      {rest.map((c) => (
-                        <button
-                          key={c.key}
-                          onClick={() => { setHomeMode("categories"); setHomeCategory(c.key); }}
-                          className="flex flex-col items-center gap-1 w-[62px] shrink-0 active:scale-[.96] transition-transform"
-                        >
-                          <div className="h-[82px] flex items-end justify-center">
-                            <span
-                              className="w-[56px] h-[56px] rounded-full overflow-hidden shadow-sm flex items-center justify-center text-xl"
-                              style={{
-                                background: categoryTint(c.key),
-                                border: `2px solid color-mix(in srgb, ${c.color} 55%, transparent)`,
-                              }}
-                            >
-                              {mascotFor(c.key) ? (
-                                // eslint-disable-next-line @next/next/no-img-element
-                                <img src={mascotFor(c.key)!} alt="" className="w-full h-full object-contain" />
-                              ) : (
-                                c.emoji
-                              )}
-                            </span>
-                          </div>
-                          <span className="text-[10.5px] font-semibold text-ink text-center leading-tight mt-0.5">
-                            {c.label}
-                          </span>
-                        </button>
-                      ))}
-                    </>
-                  );
-                })()}
+                <span
+                  className="w-px h-[82px] shrink-0"
+                  style={{ borderLeft: "1px dashed var(--border)" }}
+                  aria-hidden
+                />
+                <button
+                  onClick={() => setHomeMode("categories")}
+                  className="flex flex-col items-center gap-1 w-[62px] shrink-0 active:scale-[.96] transition-transform"
+                >
+                  <div className="h-[82px] flex items-end justify-center">
+                    <span
+                      className="w-[56px] h-[56px] rounded-full shadow-sm flex items-center justify-center text-xl font-bold"
+                      style={{
+                        background: "var(--primary-tint)",
+                        border: "2px dashed color-mix(in srgb, var(--primary) 55%, transparent)",
+                        color: "var(--primary-deep)",
+                      }}
+                    >
+                      ›
+                    </span>
+                  </div>
+                  <span className="text-[10.5px] font-semibold text-ink text-center leading-tight mt-0.5">
+                    Toutes les catégories
+                  </span>
+                </button>
               </div>
               </div>
               </div>
