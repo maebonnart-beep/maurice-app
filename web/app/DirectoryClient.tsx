@@ -1406,13 +1406,13 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                 }}
               >
               <div
-                className="rounded-[24px] border border-border px-4 pt-5 pb-4 shadow-sm text-center"
+                className="rounded-[24px] border border-border px-3 pt-4 pb-3 shadow-sm"
                 style={{ background: "linear-gradient(180deg, color-mix(in srgb, var(--primary) 12%, var(--surface)) 0%, color-mix(in srgb, var(--primary) 4%, var(--surface)) 100%)" }}
               >
-              <h2 className="text-[16px] font-bold text-ink mb-1">
-                {profilTopCategories.length > 0 ? "Vos catégories" : "Catégories populaires"}
+              <h2 className="text-[16px] font-bold text-ink mb-2.5">
+                Toutes vos catégories
               </h2>
-              <div className="flex items-start gap-4 overflow-x-auto pt-2 pb-2 -mx-4 px-4 text-left [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+              <div className="flex items-start gap-3 overflow-x-auto pt-2 pb-2 -mx-3 px-3 text-left [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
                 {homeTopCategories.map(({ category: c }) => {
                   const mascot = mascotFor(c.key);
                   const CIcon = iconForKey(c.key);
@@ -1504,13 +1504,6 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                   );
                 })()}
               </div>
-
-              <button
-                onClick={() => setHomeMode("categories")}
-                className="mt-4 w-full h-[42px] rounded-pill border border-border bg-surface text-[13.5px] font-semibold text-primary-deep shadow-sm active:scale-[.98] transition-transform"
-              >
-                Voir toutes les catégories ›
-              </button>
               </div>
               </div>
 
