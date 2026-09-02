@@ -28408,7 +28408,7 @@
     "id": "florensuc-patisserie",
     "name": "Florensuc Patisserie",
     "category": "manger-boire",
-    "address": "XG5X+QR5, Trou Aux Biches Rd, Triolet",
+    "address": "XG5X+QR5, Trou Aux Biches Rd, Trou aux Biches",
     "phone": "+230 265 5349",
     "website": "",
     "googleMapsUrl": "https://maps.google.com/?cid=13143514073661895893&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
@@ -28422,16 +28422,18 @@
     ],
     "zone": "nord",
     "badge": "selection",
+    "koteMorisComment": "Gros coup de cœur pour les pâtisseries : éclairs, cheesecakes, tarte passion meringuée, tarte aux noix de pécan caramélisées... on a envie de tout goûter ! Les plats peuvent aussi être pris à emporter, avec un excellent rapport qualité-prix.",
     "photoUrl": "/photo-florensuc-1.jpg",
     "photoUrls": [
       "/photo-florensuc-1.jpg",
       "/photo-florensuc-2.jpg"
     ],
-    "description": "Café-pâtisserie et restaurant de Triolet réputé pour ses créations artisanales (Sacher Blanc, Anémone) et ses petits-déjeuners (œufs brouillés, plateaux de fruits frais), décor rotin/jardin sous varangue avec fleurs tropicales. Côté restaurant : entrées et salades (tartare, carpaccio, wakamé, quinoa), linguine et plats truffe/marlin/agneau, nouilles au wok et pad thaï, menu enfant. Réservation conseillée le soir. De très bonnes pâtisseries européennes : déclinaisons de cheesecakes, millefeuille, tarte aux noix de pécan caramélisées, Opéra, bien dosées en sucre, avec des options vegan.",
+    "description": "Café-pâtisserie et restaurant de Trou aux Biches réputé pour ses créations artisanales (Sacher Blanc, Anémone) et ses petits-déjeuners (œufs brouillés, plateaux de fruits frais), décor rotin/jardin sous varangue avec fleurs tropicales. Côté restaurant : entrées et salades (tartare, carpaccio, wakamé, quinoa), linguine et plats truffe/marlin/agneau, nouilles au wok et pad thaï, menu enfant. Réservation conseillée le soir. De très bonnes pâtisseries européennes : déclinaisons de cheesecakes, millefeuille, tarte aux noix de pécan caramélisées, Opéra, bien dosées en sucre, avec des options vegan.",
     "entryPrice": "Prix août 2026 : entrées/salades Rs 360-750, plats Rs 550-925, wok/pad thaï Rs 325-550, menu enfant Rs 275-360 — pâtisseries Rs 200-225, smoothies/ice tea Rs 200, boissons chaudes Rs 90-150",
     "hours": "Tous les jours 7h-22h",
     "filters": [
-      "boulangeries"
+      "boulangeries",
+      "boulangeries-patisseries"
     ]
   },
   {
