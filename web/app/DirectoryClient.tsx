@@ -1412,7 +1412,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
               <h2 className="text-[16px] font-bold text-ink mb-1">
                 {profilTopCategories.length > 0 ? "Vos catégories" : "Catégories populaires"}
               </h2>
-              <div className="flex items-end gap-4 overflow-x-auto pt-2 pb-2 -mx-4 px-4 text-left [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+              <div className="flex items-start gap-4 overflow-x-auto pt-2 pb-2 -mx-4 px-4 text-left [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
                 {homeTopCategories.map(({ category: c }) => {
                   const mascot = mascotFor(c.key);
                   const CIcon = iconForKey(c.key);
@@ -1420,39 +1420,41 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                     <button
                       key={c.key}
                       onClick={() => { setHomeMode("categories"); setHomeCategory(c.key); }}
-                      className="flex flex-col items-center gap-1.5 w-[76px] shrink-0 pt-2 active:scale-[.96] transition-transform"
+                      className="flex flex-col items-center gap-1.5 w-[76px] shrink-0 active:scale-[.96] transition-transform"
                     >
-                      <span
-                        className="relative w-[68px] h-[82px] shadow-sm flex items-center justify-center text-xl overflow-visible"
-                        style={{
-                          borderRadius: "50%",
-                          background: `linear-gradient(160deg, color-mix(in srgb, ${c.color} 45%, white) 0%, ${categoryTint(c.key)} 100%)`,
-                          border: `2.5px solid color-mix(in srgb, ${c.color} 55%, transparent)`,
-                        }}
-                      >
-                        {mascot ? (
-                          // eslint-disable-next-line @next/next/no-img-element
-                          <img
-                            src={mascot}
-                            alt=""
-                            className="pointer-events-none absolute -top-2 left-1/2 -translate-x-1/2 w-[115%] h-[115%] object-contain drop-shadow-sm"
-                          />
-                        ) : (
-                          c.emoji
-                        )}
-                        {CIcon && (
-                          <span
-                            className="absolute -bottom-1.5 left-1/2 -translate-x-1/2 w-6 h-6 rounded-full flex items-center justify-center shadow-sm"
-                            style={{
-                              background: "var(--surface)",
-                              border: `1.5px solid color-mix(in srgb, ${c.color} 55%, transparent)`,
-                              color: c.color,
-                            }}
-                          >
-                            <CIcon size={12} weight="bold" aria-hidden />
-                          </span>
-                        )}
-                      </span>
+                      <div className="h-[82px] flex items-end justify-center">
+                        <span
+                          className="relative w-[68px] h-[82px] shadow-sm flex items-center justify-center text-xl overflow-visible"
+                          style={{
+                            borderRadius: "50%",
+                            background: `linear-gradient(160deg, color-mix(in srgb, ${c.color} 45%, white) 0%, ${categoryTint(c.key)} 100%)`,
+                            border: `2.5px solid color-mix(in srgb, ${c.color} 55%, transparent)`,
+                          }}
+                        >
+                          {mascot ? (
+                            // eslint-disable-next-line @next/next/no-img-element
+                            <img
+                              src={mascot}
+                              alt=""
+                              className="pointer-events-none absolute -top-2 left-1/2 -translate-x-1/2 w-[115%] h-[115%] object-contain drop-shadow-sm"
+                            />
+                          ) : (
+                            c.emoji
+                          )}
+                          {CIcon && (
+                            <span
+                              className="absolute -bottom-1.5 left-1/2 -translate-x-1/2 w-6 h-6 rounded-full flex items-center justify-center shadow-sm"
+                              style={{
+                                background: "var(--surface)",
+                                border: `1.5px solid color-mix(in srgb, ${c.color} 55%, transparent)`,
+                                color: c.color,
+                              }}
+                            >
+                              <CIcon size={12} weight="bold" aria-hidden />
+                            </span>
+                          )}
+                        </span>
+                      </div>
                       <span className="text-[11px] font-bold text-ink text-center leading-tight mt-0.5">
                         {c.label}
                       </span>
@@ -1467,7 +1469,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                   return (
                     <>
                       <span
-                        className="w-px h-[56px] shrink-0"
+                        className="w-px h-[82px] shrink-0"
                         style={{ borderLeft: "1px dashed var(--border)" }}
                         aria-hidden
                       />
@@ -1477,21 +1479,23 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                           onClick={() => { setHomeMode("categories"); setHomeCategory(c.key); }}
                           className="flex flex-col items-center gap-1 w-[62px] shrink-0 active:scale-[.96] transition-transform"
                         >
-                          <span
-                            className="w-[56px] h-[56px] rounded-full overflow-hidden shadow-sm flex items-center justify-center text-xl"
-                            style={{
-                              background: categoryTint(c.key),
-                              border: `2px solid color-mix(in srgb, ${c.color} 55%, transparent)`,
-                            }}
-                          >
-                            {mascotFor(c.key) ? (
-                              // eslint-disable-next-line @next/next/no-img-element
-                              <img src={mascotFor(c.key)!} alt="" className="w-full h-full object-contain" />
-                            ) : (
-                              c.emoji
-                            )}
-                          </span>
-                          <span className="text-[10.5px] font-semibold text-ink text-center leading-tight">
+                          <div className="h-[82px] flex items-end justify-center">
+                            <span
+                              className="w-[56px] h-[56px] rounded-full overflow-hidden shadow-sm flex items-center justify-center text-xl"
+                              style={{
+                                background: categoryTint(c.key),
+                                border: `2px solid color-mix(in srgb, ${c.color} 55%, transparent)`,
+                              }}
+                            >
+                              {mascotFor(c.key) ? (
+                                // eslint-disable-next-line @next/next/no-img-element
+                                <img src={mascotFor(c.key)!} alt="" className="w-full h-full object-contain" />
+                              ) : (
+                                c.emoji
+                              )}
+                            </span>
+                          </div>
+                          <span className="text-[10.5px] font-semibold text-ink text-center leading-tight mt-0.5">
                             {c.label}
                           </span>
                         </button>
