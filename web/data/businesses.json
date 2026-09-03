@@ -48933,7 +48933,7 @@
   },
   {
     "id": "la-plage-beach-club-food",
-    "name": "La Plage Beach Club",
+    "name": "La Plage",
     "category": "manger-boire",
     "address": "Trou aux Biches (Nord)",
     "phone": "+230 260 7507",
@@ -48945,10 +48945,18 @@
       "restaurants",
       "cafes-bars-glaciers"
     ],
+    "badge": "selection",
     "promoText": "Vue splendide, les pieds dans le sable, du calme et un cheesecake à tomber !",
     "zone": "nord",
     "hours": "Tous les jours 9h-21h30",
+    "photoUrl": "/photos/la-plage.jpg",
+    "photoUrls": [
+      "/photos/la-plage.jpg",
+      "/photos/la-plage-2.jpg",
+      "/photos/la-plage-3.jpg"
+    ],
     "description": "Beach club (by Evaco) sur la plage de Trou aux Biches, ouvert au public midi et soir : cuisine variée mauricienne et européenne, cocktails et carte de bar, les pieds dans le sable face au lagon. Piscine, transats et glacier sur place.",
+    "koteMorisComment": "Le cadre est vraiment magnifique : pieds dans le sable, tables installées sous les arbres, lumières guinguette le soir. Service impeccable, cocktails et vins bien choisis et de qualité — une adresse qu'on recommande sans hésiter pour un moment les pieds dans le sable.",
     "filters": [
       "mauricienne",
       "europeenne",

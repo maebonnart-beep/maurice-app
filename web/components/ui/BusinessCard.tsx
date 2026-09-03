@@ -85,7 +85,15 @@ export function BusinessCard({
   // tag coloré (couleur de la catégorie) pour dire au premier coup d'œil si
   // c'est un restaurant, une plage, une randonnée... — plus visible qu'un
   // sous-titre gris.
-  const firstTheme = b.themes?.find((t) => !hiddenKeys?.has(t) && t !== "kids-friendly");
+  // Si la fiche correspond déjà au contexte de navigation actif (rubrique
+  // ou facette sélectionnée), on masque le tag entièrement plutôt que d'en
+  // montrer un autre : sinon une fiche multi-rubriques (ex. bar ET
+  // restaurant) affiche « Restaurant » alors qu'on navigue dans « Bars »,
+  // ce qui laisse croire à une erreur de catégorisation.
+  const matchesActiveContext = b.themes?.some((t) => hiddenKeys?.has(t));
+  const firstTheme = matchesActiveContext
+    ? undefined
+    : b.themes?.find((t) => t !== "kids-friendly");
   const rubrique = firstTheme ? SUBCATEGORIES[b.category]?.find((t) => t.key === firstTheme) : undefined;
   const RubriqueIcon = firstTheme ? iconForKey(firstTheme) : null;
   const categoryColor = CATEGORY_MAP[b.category].color;
