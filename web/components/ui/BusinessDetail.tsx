@@ -29,6 +29,9 @@ function whatsappShareHref(text: string) {
   return `https://wa.me/?text=${encodeURIComponent(text)}`;
 }
 
+/** Pas de nom de domaine propre pour l'instant : alias Vercel stable entre déploiements. */
+const KOTE_MORIS_URL = "https://web-maeva26dodo.vercel.app";
+
 /** Action circulaire (Appeler, Itinéraire, Site web…) : icône ronde + libellé dessous. */
 function CircleAction({
   href,
@@ -104,7 +107,12 @@ export function BusinessDetail({
   const [descExpanded, setDescExpanded] = useState(false);
   const photos = b.photoUrls?.length ? b.photoUrls : b.photoUrl ? [b.photoUrl] : [];
   const [photoIndex, setPhotoIndex] = useState(0);
-  const firstTheme = b.themes?.find((t) => !hiddenKeys?.has(t) && t !== "kids-friendly");
+  // Cf. BusinessCard : si la fiche correspond déjà au contexte de navigation
+  // actif, on masque le sous-titre plutôt que d'en montrer un autre thème
+  // (une fiche bar ET restaurant ne doit pas afficher « Restaurant » comme
+  // sous-titre quand on l'ouvre depuis la rubrique « Bars »).
+  const matchesActiveContext = b.themes?.some((t) => hiddenKeys?.has(t));
+  const firstTheme = matchesActiveContext ? undefined : b.themes?.find((t) => t !== "kids-friendly");
   const subtitle = firstTheme ? SUBCATEGORIES[b.category]?.find((t) => t.key === firstTheme)?.label : undefined;
   const CategoryIcon = iconForKey(b.category);
   const bannerIcon = (firstTheme && subIconFor(firstTheme)) ?? subIconFor(b.category);
@@ -113,6 +121,7 @@ export function BusinessDetail({
     b.address,
     b.phone,
     b.googleMapsUrl || b.website,
+    `Trouvé sur Koté Moris — ${KOTE_MORIS_URL}`,
   ]
     .filter(Boolean)
     .join("\n");
