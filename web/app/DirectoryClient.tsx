@@ -10,7 +10,7 @@ import type { FilterGroup } from "@/data/categories";
 import { SELECTIONS, SELECTION_GROUP_META } from "@/data/selections";
 import type { SelectionGroup, SelectionIconKey } from "@/data/selections";
 import { fuzzyMatchTokens, tokenize } from "@/lib/fuzzyMatch";
-import { isPastEvent, compareByEventDate } from "@/lib/events";
+import { isPastEvent, compareByEventDate, eventColorFor, formatEventDate } from "@/lib/events";
 
 const SELECTION_ICONS: Record<SelectionIconKey, Icon> = {
   CloudRain,
@@ -116,19 +116,6 @@ const FILTER_OPTION_EMOJI: Record<string, string> = Object.fromEntries(
   FILTER_GROUPS.flatMap((g) => g.options.map((o) => [o.key, o.emoji]))
 );
 
-// Couleur par type d'événement (accueil → « Événements à venir »), pour
-// distinguer visuellement concerts / sport / associatif / etc.
-const EVENT_TYPE_COLOR: Record<string, string> = {
-  concert: "#a855f7",
-  festival: "#f97316",
-  "spectacle-comedie": "#ec4899",
-  "clubbing-soiree": "#6366f1",
-  "culturel-traditionnel": "#eab308",
-  sportif: "#22c55e",
-  "associatif-caritatif": "#0ea5e9",
-  culinaire: "#ef4444",
-};
-const DEFAULT_EVENT_COLOR = "#e0518a";
 
 const ZONES: { key: string; label: string; emoji: string }[] = [
   { key: "nord", label: "Nord", emoji: "⬆️" },
@@ -1546,7 +1533,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                   <div className="flex items-center justify-between mt-7 mb-2.5">
                     <h2 className="text-[16px] font-bold text-ink">Événements à venir</h2>
                     <button
-                      onClick={() => { selectCategory("agenda"); window.scrollTo({ top: 0, behavior: "smooth" }); }}
+                      onClick={() => { setHomeMode("categories"); setHomeCategory("agenda"); window.scrollTo({ top: 0, behavior: "smooth" }); }}
                       className="text-[13px] font-semibold text-primary-deep active:scale-[.98]"
                     >
                       Voir tout ›
@@ -1558,7 +1545,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                         const rubrique = (b.themes || [])[0];
                         const filterEmoji = (b.filters || []).map((f) => FILTER_OPTION_EMOJI[f]).find(Boolean);
                         const emoji = filterEmoji ?? (rubrique ? RUBRIQUE_MAP[rubrique]?.emoji ?? "🎉" : "🎉");
-                        const eventColor = (b.filters || []).map((f) => EVENT_TYPE_COLOR[f]).find(Boolean) ?? DEFAULT_EVENT_COLOR;
+                        const eventColor = eventColorFor(b);
                         const shortDate = b.eventStartDate
                           ? new Date(b.eventStartDate + "T00:00:00").toLocaleDateString("fr-FR", { day: "numeric", month: "short" })
                           : null;
@@ -1581,7 +1568,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                               aria-hidden
                             />
                             <button
-                              onClick={() => { selectCategory("agenda"); window.scrollTo({ top: 0, behavior: "smooth" }); }}
+                              onClick={() => { setHomeMode("categories"); setHomeCategory("agenda"); window.scrollTo({ top: 0, behavior: "smooth" }); }}
                               className="relative text-left w-full rounded-2xl overflow-hidden p-3 shadow-card active:scale-[.98] transition-transform"
                               style={{ background: `linear-gradient(135deg, color-mix(in srgb, ${eventColor} 20%, var(--surface)) 0%, var(--surface) 75%)`, border: "1px solid var(--border)" }}
                             >

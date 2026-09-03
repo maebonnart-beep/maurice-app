@@ -6,6 +6,7 @@ import { displayName, displayCity } from "@/lib/format";
 import { accentColorFor, SpecialBadge, AGENCY_COLOR } from "./Badge";
 import { FavoriteButton } from "./FavoriteButton";
 import { FACT_ICONS, CONTACT_ICONS, iconForKey, subIconFor } from "@/lib/icons";
+import { eventColorFor, formatEventDate } from "@/lib/events";
 import type { Icon } from "@phosphor-icons/react";
 
 /** Toutes les options de filtre (cuisine, ambiance, discipline, spécialité…), à plat par clé. */
@@ -23,6 +24,8 @@ const DIFFICULTY_LABELS: Record<string, string> = {
 export function metaFacts(b: Business): { Icon: Icon; label: string }[] {
   const facts: { Icon: Icon; label: string }[] = [];
   if (b.period) facts.push({ Icon: FACT_ICONS.period, label: b.period });
+  if (b.registrationDeadline)
+    facts.push({ Icon: FACT_ICONS.registrationDeadline, label: `Inscriptions jusqu'au ${b.registrationDeadline}` });
   if (b.distance) facts.push({ Icon: FACT_ICONS.distance, label: b.distance });
   if (b.elevationGain) facts.push({ Icon: FACT_ICONS.elevationGain, label: b.elevationGain });
   if (b.duration) facts.push({ Icon: FACT_ICONS.duration, label: b.duration });
@@ -96,6 +99,10 @@ export function BusinessCard({
     .filter((t) => !hiddenKeys?.has(t) && FILTER_OPTION_MAP[t])
     .slice(0, 3)
     .map((t) => FILTER_OPTION_MAP[t]);
+  // Agenda : la date prime sur tout le reste pour un événement — mise en
+  // avant en bandeau plein-largeur en haut de fiche plutôt que noyée dans le texte.
+  const eventDateLabel = b.category === "agenda" ? formatEventDate(b.eventStartDate) : null;
+  const eventBarColor = eventDateLabel ? eventColorFor(b) : undefined;
 
   return (
     <article
@@ -103,7 +110,7 @@ export function BusinessCard({
       onClick={() => onSelect(b.id)}
       onMouseEnter={() => onHover(b.id)}
       onMouseLeave={() => onHover(null)}
-      className={`relative bg-surface border rounded-card p-2.5 shadow-card flex items-center gap-3 cursor-pointer transition-colors ${
+      className={`relative bg-surface border rounded-card shadow-card cursor-pointer transition-colors overflow-hidden ${
         active ? "border-accent" : "border-border"
       }`}
       style={
@@ -116,6 +123,15 @@ export function BusinessCard({
           : undefined
       }
     >
+      {eventDateLabel && (
+        <p
+          className="m-0 px-2.5 py-1 text-[11px] font-bold text-white text-center tracking-wide"
+          style={{ background: eventBarColor }}
+        >
+          {eventDateLabel}
+        </p>
+      )}
+      <div className="relative flex items-center gap-3 p-2.5">
       {(b.badge === "selection" || b.themes?.includes("kids-friendly")) && (
         <div className="absolute top-1.5 right-1.5 flex items-center gap-1 z-10">
           {b.badge === "selection" && (
@@ -215,6 +231,7 @@ export function BusinessCard({
           )}
         </span>
         <FavoriteButton id={b.id} size={17} className="text-muted" />
+      </div>
       </div>
     </article>
   );
