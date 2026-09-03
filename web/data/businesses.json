@@ -52163,6 +52163,133 @@
     ]
   },
   {
+    "id": "sport-2000-grand-bay-night-run-evt",
+    "name": "Sport 2000 Grand Bay Night Run",
+    "category": "agenda",
+    "address": "La Croisette, Grand Baie",
+    "phone": "",
+    "website": "https://sportevents.mu/en/events/61/sport-2000-grand-baie-night-run-2026",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=La%20Croisette%20Grand%20Baie%20Mauritius",
+    "themes": [
+      "evenements-sportifs"
+    ],
+    "description": "Course nocturne urbaine dans les rues de Grand Baie, ambiance festive (musique, lumières), lampe frontale ou brassard lumineux obligatoire. 2 formats : 6 km (dès 12 ans, départ 18h30) et 10 km (dès 16 ans, départ 18h10).",
+    "period": "Septembre",
+    "eventStartDate": "2026-09-05",
+    "eventEndDate": "2026-09-05",
+    "distance": "6 ou 10 km",
+    "zone": "nord",
+    "eventRecurrence": "annuel-variable",
+    "filters": [
+      "sportif"
+    ]
+  },
+  {
+    "id": "creve-coeur-urban-trail-evt",
+    "name": "Crève Cœur Urban Trail",
+    "category": "agenda",
+    "address": "Crève Cœur Football Ground, Pamplemousses",
+    "phone": "",
+    "website": "https://roag.org/events/event-info/4266/creve-coeur-urban-trail-2026",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Creve%20Coeur%20Football%20Ground%20Pamplemousses%20Mauritius",
+    "themes": [
+      "evenements-sportifs"
+    ],
+    "description": "Trail urbain organisé par G-Trail, avec ravitaillement en eau au km 6. 2 formats : 5 km (dès 8 ans, départ 15h) et 10 km (dès 16 ans, départ 15h30).",
+    "period": "Octobre",
+    "eventStartDate": "2026-10-17",
+    "eventEndDate": "2026-10-17",
+    "registrationDeadline": "7 octobre 2026",
+    "distance": "5 ou 10 km",
+    "zone": "nord",
+    "eventRecurrence": "annuel-variable",
+    "filters": [
+      "sportif"
+    ]
+  },
+  {
+    "id": "colgate-trail-evt",
+    "name": "Colgate Trail",
+    "category": "agenda",
+    "address": "Île Maurice (lieu à confirmer)",
+    "phone": "",
+    "website": "https://roag.org/events/event-info/4289/colgate-trail",
+    "themes": [
+      "evenements-sportifs"
+    ],
+    "description": "Trail organisé par Colgate Mauritius, parcours pittoresque avec ravitaillement pour le 10 km, ambiance conviviale (repas et animations après course). 2 formats : 5 km (dès 8 ans, accompagné pour les moins de 12 ans, départ 8h30) et 10 km (dès 16 ans, départ 8h). Lieu de départ encore à confirmer par l'organisateur.",
+    "period": "Novembre",
+    "eventStartDate": "2026-11-15",
+    "eventEndDate": "2026-11-15",
+    "distance": "5 ou 10 km",
+    "eventRecurrence": "annuel-variable",
+    "filters": [
+      "sportif"
+    ]
+  },
+  {
+    "id": "bagatelle-urban-trail-evt",
+    "name": "Bagatelle Urban Trail",
+    "category": "agenda",
+    "address": "Bagatelle Mall, Moka",
+    "phone": "",
+    "website": "https://roag.org/events/event-info/4264/bagatelle-urban-trail-2026",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Bagatelle%20Mall%20of%20Mauritius",
+    "themes": [
+      "evenements-sportifs"
+    ],
+    "description": "Trail urbain organisé par G-Trail, 1ère étape de l'Urban Trail League, au profit de l'association CP Family (paralysie cérébrale). Départ et arrivée au centre commercial, ravitaillement en eau au km 6. 2 formats : 4 km (dès 6 ans) et 10 km (dès 16 ans).",
+    "period": "Avril",
+    "distance": "4 ou 10 km",
+    "zone": "centre",
+    "eventRecurrence": "annuel-variable",
+    "filters": [
+      "sportif",
+      "associatif-caritatif"
+    ]
+  },
+  {
+    "id": "port-louis-city-urban-night-trail-evt",
+    "name": "Port-Louis City Urban Night Trail",
+    "category": "agenda",
+    "address": "Conseil Municipal de Port-Louis",
+    "phone": "",
+    "website": "https://roag.org/events/event-info/4265/port-louis-city-urban-night-trail-2026",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Municipal%20Council%20of%20Port%20Louis%20Mauritius",
+    "themes": [
+      "evenements-sportifs"
+    ],
+    "description": "Trail urbain nocturne organisé par G-Trail à travers les rues et lieux emblématiques de Port-Louis, ambiance lumières et musique, lampe frontale obligatoire. 2 formats : 5 km (départ 20h) et 12 km (départ 19h30).",
+    "period": "Juillet",
+    "distance": "5 ou 12 km",
+    "zone": "centre",
+    "eventRecurrence": "annuel-variable",
+    "filters": [
+      "sportif"
+    ]
+  },
+  {
+    "id": "bras-deau-trail-evt",
+    "name": "Bras d'Eau Trail",
+    "category": "agenda",
+    "address": "Poste Lafayette Public Beach (navette vers Bras d'Eau)",
+    "phone": "",
+    "website": "https://sportevents.mu/en/events/64/bras-deau-trail-2026",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Poste%20Lafayette%20Public%20Beach%20Mauritius",
+    "themes": [
+      "evenements-sportifs"
+    ],
+    "description": "Trail organisé par le Rotaract Club de Rivière du Rempart dans le Parc National de Bras d'Eau, avec navettes depuis Poste Lafayette. 2 formats : Coq de Bois Trail (6 km, parcours classique en pleine verdure, accessible aux débutants) et Turbine Loop (13 km, technique, passant par la Wind Farm de Plaine-des-Roches et d'anciennes voies ferrées).",
+    "period": "Mai",
+    "distance": "6 ou 13 km",
+    "zone": "nord",
+    "eventRecurrence": "annuel-variable",
+    "filters": [
+      "sportif",
+      "associatif-caritatif"
+    ]
+  },
+  {
     "id": "afrasia-bank-mauritius-open-evt",
     "name": "AfrAsia Bank Mauritius Open",
     "category": "agenda",
