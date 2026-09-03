@@ -51886,6 +51886,302 @@
     ]
   },
   {
+    "id": "championnat-trail-maurice-evt",
+    "name": "Championnat de Trail de Maurice",
+    "category": "agenda",
+    "address": "Petrin Visitors Centre (Grand Bassin), Plaine Champagne",
+    "phone": "",
+    "website": "https://www.randotrail.mu/event/181",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Petrin%20Visitors%20Centre%20Mauritius",
+    "themes": [
+      "evenements-sportifs"
+    ],
+    "description": "Course phare du calendrier trail mauricien, certifiée ITRA, organisée par Rando-Trail & Nature dans le Parc National des Gorges de Rivière Noire. 2 formats : court (12 km, 400 m D+, sentiers ouverts avec deux descentes techniques courtes) et long (32 km, 1700 m D+, trois descentes techniques et trois montées raides, réservé aux coureurs expérimentés).",
+    "period": "Mars",
+    "distance": "12 ou 32 km",
+    "zone": "ouest",
+    "eventRecurrence": "annuel-variable",
+    "filters": [
+      "sportif"
+    ]
+  },
+  {
+    "id": "mauritius-by-utmb-evt",
+    "name": "Mauritius by UTMB",
+    "category": "agenda",
+    "address": "Château de Bel Ombre (Sud)",
+    "phone": "",
+    "website": "https://mauritius.utmb.world/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Bel%20Ombre%20Mauritius",
+    "themes": [
+      "evenements-sportifs"
+    ],
+    "description": "Étape du circuit mondial UTMB World Series à l'Île Maurice, entre littoral, forêt et terrain montagneux dans la réserve naturelle de Bel Ombre (1300 ha) et le Parc National des Gorges de Rivière Noire, arrivée au pied du Morne Brabant. 4 formats en boucle : Le Morne (22 km, 890 m D+), Bel Ombre (55 km, 2100 m D+), Chamarel (97 km, 4400 m D+) et Black River Peak (135 km, 5400 m D+).",
+    "period": "Juin",
+    "distance": "22 à 135 km",
+    "zone": "sud",
+    "eventRecurrence": "annuel-variable",
+    "filters": [
+      "sportif"
+    ]
+  },
+  {
+    "id": "terra-trail-evt",
+    "name": "Terra Trail",
+    "category": "agenda",
+    "address": "Château de la Villebague",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Chateau%20de%20la%20Villebague%20Mauritius",
+    "themes": [
+      "evenements-sportifs"
+    ],
+    "description": "Trail au départ du Château de la Villebague, dans le nord de l'île. 2 formats : 7 km (accessible à tous) et 12 km (niveau expérimenté).",
+    "period": "Mai",
+    "distance": "7 ou 12 km",
+    "zone": "nord",
+    "eventRecurrence": "annuel-variable",
+    "filters": [
+      "sportif"
+    ]
+  },
+  {
+    "id": "la-ferme-trail-evt",
+    "name": "La Ferme Trail",
+    "category": "agenda",
+    "address": "Village de Bambous",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Bambous%20Mauritius",
+    "themes": [
+      "evenements-sportifs"
+    ],
+    "description": "Trail technique autour du lac La Ferme et des montagnes Corps de Garde et St-Pierre, au départ du village de Bambous. 2 formats : Ti La Ferme (11 km, 200 m D+) et le parcours principal (22 km, 1200 m D+, technique).",
+    "period": "Mai",
+    "distance": "11 ou 22 km",
+    "zone": "ouest",
+    "eventRecurrence": "annuel-variable",
+    "filters": [
+      "sportif"
+    ]
+  },
+  {
+    "id": "racing-club-maurice-trail-evt",
+    "name": "Racing Club de Maurice Trail",
+    "category": "agenda",
+    "address": "Quatre Bornes",
+    "phone": "",
+    "website": "",
+    "themes": [
+      "evenements-sportifs"
+    ],
+    "description": "Trail organisé par le Racing Club de Maurice à Quatre Bornes. 2 formats : 5 km et 10 km.",
+    "period": "Août",
+    "distance": "5 ou 10 km",
+    "zone": "centre",
+    "eventRecurrence": "annuel-variable",
+    "filters": [
+      "sportif"
+    ]
+  },
+  {
+    "id": "sip-sugar-trail-run-evt",
+    "name": "Sip Sugar Trail Run",
+    "category": "agenda",
+    "address": "Alteo Schoenfeld Sugar Estate, Rivière du Rempart",
+    "phone": "",
+    "website": "https://roag.org/events/event-info/4256/sip-sugar-trail-run-2026",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Schoenfeld%20Sugar%20Estate%20Riviere%20du%20Rempart%20Mauritius",
+    "themes": [
+      "evenements-sportifs"
+    ],
+    "description": "Trail familial dans le domaine sucrier d'Alteo Schoenfeld, avec animations pour petits et grands (poneys, saut d'obstacles). 2 formats : 6 km et 12 km.",
+    "period": "Septembre",
+    "eventStartDate": "2026-09-05",
+    "eventEndDate": "2026-09-05",
+    "distance": "6 ou 12 km",
+    "zone": "nord",
+    "eventRecurrence": "annuel-variable",
+    "filters": [
+      "sportif"
+    ]
+  },
+  {
+    "id": "vacoas-urban-night-run-motrail-evt",
+    "name": "Vacoas Urban Night Run MoTrail",
+    "category": "agenda",
+    "address": "Vacoas-Phoenix",
+    "phone": "",
+    "website": "",
+    "themes": [
+      "evenements-sportifs"
+    ],
+    "description": "Course nocturne urbaine à Vacoas-Phoenix. 2 formats : 5 km et 10 km.",
+    "period": "Octobre",
+    "eventStartDate": "2026-10-10",
+    "eventEndDate": "2026-10-10",
+    "distance": "5 ou 10 km",
+    "zone": "centre",
+    "eventRecurrence": "annuel-variable",
+    "filters": [
+      "sportif"
+    ]
+  },
+  {
+    "id": "motrail-gros-cailloux-evt",
+    "name": "MoTrail Gros Cailloux",
+    "category": "agenda",
+    "address": "Domaine Gros Cailloux",
+    "phone": "",
+    "website": "",
+    "themes": [
+      "evenements-sportifs"
+    ],
+    "description": "Trail au départ du Domaine Gros Cailloux, avec classement par catégorie d'âge. 2 formats : 5 km et 10 km.",
+    "period": "Octobre",
+    "eventStartDate": "2026-10-10",
+    "eventEndDate": "2026-10-10",
+    "distance": "5 ou 10 km",
+    "eventRecurrence": "annuel-variable",
+    "filters": [
+      "sportif"
+    ]
+  },
+  {
+    "id": "moris-ride-run-evt",
+    "name": "Moris Ride/Run",
+    "category": "agenda",
+    "address": "Cascavelle / Wolmar, Flic-en-Flac",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Wolmar%20Flic%20en%20Flac%20Mauritius",
+    "themes": [
+      "evenements-sportifs"
+    ],
+    "description": "Nouvel événement (1ère édition en 2026) associant trail le samedi et cyclisme (avec montée de Plaine Champagne) le dimanche, sur des sentiers roulants entre champs, bois et bord de plage. Formats trail : 5, 12 et 20 km. Inscriptions sur Sportevents.mu, roag.org ou topchrono.run.",
+    "period": "Octobre",
+    "eventStartDate": "2026-10-10",
+    "eventEndDate": "2026-10-11",
+    "registrationDeadline": "30 septembre 2026",
+    "distance": "5, 12 ou 20 km",
+    "zone": "ouest",
+    "eventRecurrence": "annuel-variable",
+    "filters": [
+      "sportif"
+    ]
+  },
+  {
+    "id": "rotary-trail-district-9220-evt",
+    "name": "Rotary Trail District 9220",
+    "category": "agenda",
+    "address": "Rivière Noire",
+    "phone": "",
+    "website": "",
+    "themes": [
+      "evenements-sportifs"
+    ],
+    "description": "Trail caritatif organisé par le Rotary (District 9220) dans la région de Rivière Noire. 3 formats : 3, 7 et 12 km.",
+    "period": "Octobre",
+    "eventStartDate": "2026-10-24",
+    "eventEndDate": "2026-10-24",
+    "distance": "3, 7 ou 12 km",
+    "zone": "ouest",
+    "eventRecurrence": "annuel-variable",
+    "filters": [
+      "sportif",
+      "associatif-caritatif"
+    ]
+  },
+  {
+    "id": "parakeet-challenge-evt",
+    "name": "Parakeet Challenge",
+    "category": "agenda",
+    "address": "Black River National Park (parking Rivière Noire)",
+    "phone": "",
+    "website": "https://www.randotrail.mu/event/193",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Black%20River%20Gorges%20National%20Park%20Mauritius",
+    "themes": [
+      "evenements-sportifs"
+    ],
+    "description": "Épreuve de montée dans le Parc National des Gorges de Rivière Noire : échauffement de 2,6 km depuis le parking jusqu'au bas du sentier Parakeet, puis 3,1 km de montée vers la Plaine Champagne. 2 formats, même distance (6 km) mais dénivelés différents : court (700 m D+, dès 11 ans) et long (600 m D+, dès 18 ans).",
+    "period": "Novembre",
+    "eventStartDate": "2026-11-14",
+    "eventEndDate": "2026-11-14",
+    "distance": "6 km",
+    "elevationGain": "600 à 700 m D+",
+    "zone": "ouest",
+    "eventRecurrence": "annuel-variable",
+    "filters": [
+      "sportif"
+    ]
+  },
+  {
+    "id": "east-coast-trail-evt",
+    "name": "East Coast Trail",
+    "category": "agenda",
+    "address": "Palmar Beach, Trou d'Eau Douce",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Palmar%20Beach%20Trou%20d%27Eau%20Douce%20Mauritius",
+    "themes": [
+      "evenements-sportifs"
+    ],
+    "description": "Trail littoral sur la côte est, au départ de Palmar Beach (Trou d'Eau Douce), avec ravitaillements et assistance médicale. 2 formats : 6 km et 15 km.",
+    "period": "Novembre",
+    "eventStartDate": "2026-11-28",
+    "eventEndDate": "2026-11-28",
+    "distance": "6 ou 15 km",
+    "zone": "est",
+    "eventRecurrence": "annuel-variable",
+    "filters": [
+      "sportif"
+    ]
+  },
+  {
+    "id": "bois-cheri-saint-aubin-trail-evt",
+    "name": "Bois Chéri Saint Aubin Trail",
+    "category": "agenda",
+    "address": "Domaine de Bois Chéri, Floréal",
+    "phone": "",
+    "website": "https://sportevents.mu/en/events/41/bois-cheri-saint-aubin-trail-2026",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Domaine%20de%20Bois%20Cheri%20Mauritius",
+    "themes": [
+      "evenements-sportifs"
+    ],
+    "description": "Trail organisé par le Groupe Saint Aubin entre les domaines de Saint Aubin et Bois Chéri, au cœur des champs de thé du sud de l'île. 2 formats : 5 km (dès 6 ans, départ 8h30) et 16 km (dès 16 ans, départ 7h30). Distribution des dossards chez Decathlon Bagatelle, navettes gratuites depuis le parking.",
+    "period": "Décembre",
+    "eventStartDate": "2026-12-12",
+    "eventEndDate": "2026-12-12",
+    "registrationDeadline": "2 décembre 2026",
+    "distance": "5 ou 16 km",
+    "zone": "sud",
+    "eventRecurrence": "annuel-variable",
+    "filters": [
+      "sportif"
+    ]
+  },
+  {
+    "id": "urban-trail-domaine-lagrave-evt",
+    "name": "Urban Trail Domaine Lagrave",
+    "category": "agenda",
+    "address": "Bois Chéri",
+    "phone": "",
+    "website": "https://roag.org/events/event-info/4267/urban-trail-domaine-lagrave-2026",
+    "themes": [
+      "evenements-sportifs"
+    ],
+    "description": "Trail urbain à Bois Chéri, format unique 10 km.",
+    "period": "Décembre",
+    "eventStartDate": "2026-12-19",
+    "eventEndDate": "2026-12-19",
+    "distance": "10 km",
+    "zone": "sud",
+    "eventRecurrence": "annuel-variable",
+    "filters": [
+      "sportif"
+    ]
+  },
+  {
     "id": "afrasia-bank-mauritius-open-evt",
     "name": "AfrAsia Bank Mauritius Open",
     "category": "agenda",
