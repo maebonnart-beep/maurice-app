@@ -9,7 +9,7 @@ import { CATEGORIES, CATEGORY_MAP, SUBCATEGORIES, FILTER_GROUPS, PRICE_RANGES } 
 import type { FilterGroup } from "@/data/categories";
 import { SELECTIONS, SELECTION_GROUP_META } from "@/data/selections";
 import type { SelectionGroup, SelectionIconKey } from "@/data/selections";
-import { fuzzyMatchTokens, tokenize } from "@/lib/fuzzyMatch";
+import { fuzzyMatchTokens, tokenize, normalizeText } from "@/lib/fuzzyMatch";
 import { isPastEvent, compareByEventDate, eventColorFor } from "@/lib/events";
 
 const SELECTION_ICONS: Record<SelectionIconKey, Icon> = {
@@ -692,6 +692,24 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
     return m;
   }, [businesses]);
 
+  // Score de pertinence d'une fiche pour une recherche donnée, basé
+  // uniquement sur le nom : une correspondance de nom (même partielle) doit
+  // toujours passer devant une fiche qui ne matche que par son adresse ou sa
+  // rubrique — sinon un nom exact comme « La Plage » peut se retrouver noyé
+  // derrière des « Plage de/publique de... » qui ne matchent que par hasard.
+  function nameMatchScore(name: string, q: string): number {
+    const n = normalizeText(name);
+    const qn = normalizeText(q).trim();
+    if (!qn) return 0;
+    if (n === qn) return 4;
+    if (n.startsWith(qn)) return 3;
+    if (n.includes(qn)) return 2;
+    const nameTokens = tokenize(name);
+    const qTokens = qn.split(/\s+/).filter(Boolean);
+    if (qTokens.every((qt) => nameTokens.some((nt) => nt.startsWith(qt)))) return 1;
+    return 0;
+  }
+
   const rows = useMemo(() => {
     const q = deferredQuery.trim();
     return businesses
@@ -723,6 +741,10 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
         return fuzzyMatchTokens(searchTokensById[b.id] ?? [], q);
       })
       .sort((a, b) => {
+        if (q) {
+          const scoreDiff = nameMatchScore(b.name, q) - nameMatchScore(a.name, q);
+          if (scoreDiff !== 0) return scoreDiff;
+        }
         const tierDiff = (b.tier === "premium" ? 1 : 0) - (a.tier === "premium" ? 1 : 0);
         if (tierDiff !== 0) return tierDiff;
         if (a.category === "agenda" && b.category === "agenda") return compareByEventDate(a, b);
