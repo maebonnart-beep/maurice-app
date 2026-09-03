@@ -24357,9 +24357,11 @@
     "difficultyLevel": "debutant",
     "guideRecommended": false,
     "zone": "centre",
-    "distance": "3 km",
-    "elevationGain": "280 m D+",
-    "description": "Montée courte et accessible sur route asphaltée (praticable à pied comme en véhicule), surplombant Port-Louis de 323 m, autrefois utilisée pour signaler l'arrivée des navires et refuge pour des esclaves marrons en fuite. Vue à 360° sur la capitale, le port, les montagnes de Moka et l'océan Indien ; bancs aménagés au sommet, sentier particulièrement prisé à l'heure du coucher de soleil."
+    "distance": "3 km (aller), 6 km A/R",
+    "elevationGain": "225 m D+",
+    "photoUrl": "/photos/montagne-des-signaux.jpg",
+    "description": "Montée de 3 km sur route asphaltée en lacets, accessible uniquement à pied (fermée aux véhicules), jusqu'à l'ancien poste de guet de la Montagne des Signaux (323 m). Le site servait autrefois à signaler l'arrivée des navires dans le port de Port-Louis, puis de refuge à des esclaves marrons en fuite. C'est aussi un terrain d'entraînement apprécié des coureurs, qui enchaînent plusieurs fois la montée (225 m D+ sur 3 km) avant de redescendre par le même chemin (6 km au total pour un aller-retour). Au sommet, vue à 360° sur les hauteurs de Port-Louis, la chaîne de Moka et le début des plaines du sud de l'île ; bancs aménagés, fraîcheur appréciable en été. En fin d'après-midi, point de vue rare qui offre à la fois le coucher de soleil à l'ouest et le lever de la lune à l'est.",
+    "koteMorisComment": "Chouette montée courte et accessible à tous, mais attention : ce n'est pas un sentier dans la nature, c'est une route asphaltée en lacets, et on redescend par le même chemin qu'à la montée. Les coureurs en ont fait un terrain d'entraînement fétiche : 3 km et 225 m D+ à l'aller, qu'ils enchaînent plusieurs fois (6 km pour un simple aller-retour). Les marcheurs, eux, profitent surtout du sommet pour la vue sur Port-Louis et la chaîne de Moka, avec un petit plus rare en fin d'après-midi : coucher de soleil à l'ouest et lever de lune à l'est en même temps. Comptez environ 2h aller-retour, sans besoin de guide, et une belle fraîcheur bienvenue en été."
   },
   {
     "id": "royal-big-game-fishing-original",
