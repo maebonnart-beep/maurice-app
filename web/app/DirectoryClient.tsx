@@ -10,7 +10,7 @@ import type { FilterGroup } from "@/data/categories";
 import { SELECTIONS, SELECTION_GROUP_META } from "@/data/selections";
 import type { SelectionGroup, SelectionIconKey } from "@/data/selections";
 import { fuzzyMatchTokens, tokenize } from "@/lib/fuzzyMatch";
-import { isPastEvent, compareByEventDate, eventColorFor, formatEventDate } from "@/lib/events";
+import { isPastEvent, compareByEventDate, eventColorFor } from "@/lib/events";
 
 const SELECTION_ICONS: Record<SelectionIconKey, Icon> = {
   CloudRain,

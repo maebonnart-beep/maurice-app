@@ -6,7 +6,7 @@ import { displayName, displayCity } from "@/lib/format";
 import { accentColorFor, SpecialBadge, AGENCY_COLOR } from "./Badge";
 import { FavoriteButton } from "./FavoriteButton";
 import { FACT_ICONS, CONTACT_ICONS, iconForKey, subIconFor } from "@/lib/icons";
-import { eventColorFor, formatEventDate } from "@/lib/events";
+import { eventColorFor, eventBannerLabel } from "@/lib/events";
 import type { Icon } from "@phosphor-icons/react";
 
 /** Toutes les options de filtre (cuisine, ambiance, discipline, spécialité…), à plat par clé. */
@@ -101,7 +101,7 @@ export function BusinessCard({
     .map((t) => FILTER_OPTION_MAP[t]);
   // Agenda : la date prime sur tout le reste pour un événement — mise en
   // avant en bandeau plein-largeur en haut de fiche plutôt que noyée dans le texte.
-  const eventDateLabel = b.category === "agenda" ? formatEventDate(b.eventStartDate) : null;
+  const eventDateLabel = eventBannerLabel(b);
   const eventBarColor = eventDateLabel ? eventColorFor(b) : undefined;
 
   return (

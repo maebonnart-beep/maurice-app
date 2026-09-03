@@ -26,6 +26,34 @@ export function formatEventDate(dateStr: string | undefined): string | null {
   return label.charAt(0).toUpperCase() + label.slice(1);
 }
 
+const MONTH_NAMES = [
+  "janvier", "février", "mars", "avril", "mai", "juin",
+  "juillet", "août", "septembre", "octobre", "novembre", "décembre",
+];
+
+/** Mois (0-11) déduit du texte libre `period` (ex. "Janvier–février" → janvier, "Fin novembre" → novembre), ou null si aucun mois n'y est cité. */
+export function approxMonthFromPeriod(period: string | undefined): number | null {
+  if (!period) return null;
+  const lower = period.toLowerCase();
+  for (let i = 0; i < 12; i++) {
+    if (lower.includes(MONTH_NAMES[i])) return i;
+  }
+  if (lower.includes("fin d'année") || lower.includes("fin de l'année")) return 11;
+  if (lower.includes("début d'année") || lower.includes("début de l'année")) return 0;
+  return null;
+}
+
+/** Libellé de bandeau d'une fiche agenda : date précise si connue, sinon mois approximatif (déduit de `period`), sinon null. */
+export function eventBannerLabel(b: Business): string | null {
+  if (b.category !== "agenda") return null;
+  const exact = formatEventDate(b.eventStartDate);
+  if (exact) return exact;
+  const month = approxMonthFromPeriod(b.period);
+  if (month === null) return null;
+  const label = MONTH_NAMES[month];
+  return label.charAt(0).toUpperCase() + label.slice(1);
+}
+
 /** Vrai uniquement pour un événement ponctuel dont la date est confirmée passée. */
 export function isPastEvent(b: Business, today: Date = new Date()): boolean {
   if (b.eventRecurrence !== "ponctuel") return false;
@@ -35,11 +63,31 @@ export function isPastEvent(b: Business, today: Date = new Date()): boolean {
   return end.getTime() < today.getTime();
 }
 
-/** Comparateur de tri chronologique : fiches avec eventStartDate d'abord (ascendant), puis le reste (ordre stable). */
-export function compareByEventDate(a: Business, b: Business): number {
-  const da = a.eventStartDate;
-  const db = b.eventStartDate;
-  if (da && db) return da.localeCompare(db);
+function startOfDay(d: Date): Date {
+  return new Date(d.getFullYear(), d.getMonth(), d.getDate());
+}
+
+/**
+ * Date utilisée pour le tri chronologique d'une fiche agenda : la date exacte si connue,
+ * sinon le 15 du mois approximatif (déduit de `period`) — projeté sur l'année suivante si
+ * ce mois est déjà passé cette année, pour que les événements récurrents sans date exacte
+ * s'intercalent à la bonne place parmi ceux déjà datés plutôt que de finir en vrac derrière.
+ */
+export function sortDateFor(b: Business, today: Date = new Date()): Date | null {
+  if (b.eventStartDate) return new Date(b.eventStartDate + "T00:00:00");
+  const month = approxMonthFromPeriod(b.period);
+  if (month === null) return null;
+  const day0 = startOfDay(today);
+  let d = new Date(today.getFullYear(), month, 15);
+  if (d.getTime() < day0.getTime()) d = new Date(today.getFullYear() + 1, month, 15);
+  return d;
+}
+
+/** Comparateur de tri chronologique (cf. `sortDateFor`) : fiches datées (exactement ou approximativement) d'abord, ordre ascendant ; le reste ensuite. */
+export function compareByEventDate(a: Business, b: Business, today: Date = new Date()): number {
+  const da = sortDateFor(a, today);
+  const db = sortDateFor(b, today);
+  if (da && db) return da.getTime() - db.getTime();
   if (da) return -1;
   if (db) return 1;
   return 0;
