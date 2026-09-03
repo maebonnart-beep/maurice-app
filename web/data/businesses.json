@@ -52290,6 +52290,72 @@
     ]
   },
   {
+    "id": "grande-traversee-ouest-evt",
+    "name": "La Grande Traversée de L'Ouest",
+    "category": "agenda",
+    "address": "Paradis Beachcomber (boathouse), Le Morne",
+    "phone": "",
+    "website": "https://roag.org/events/event-info/4294/la-grande-traversee-de-louest",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Paradis%20Beachcomber%20Le%20Morne%20Mauritius",
+    "themes": [
+      "evenements-sportifs"
+    ],
+    "description": "Traversée en eau libre de 10 km dans le lagon ouest, organisée par Outdoor Moris Xperience : départ du boathouse de Paradis Beachcomber (Le Morne), passage près de l'Île aux Bénitiers et de la lagune de Rivière Noire, arrivée à La Preneuse, avec support de bateaux, kayaks et équipes de secours. 4 formats : 10 km solo à la nage, 10 km solo palmes et tuba, relais 2 nageurs (5 km chacun) et relais 4 nageurs (2,5 km chacun). Dès 18 ans.",
+    "period": "Novembre",
+    "eventStartDate": "2026-11-01",
+    "eventEndDate": "2026-11-01",
+    "registrationDeadline": "25 octobre 2026",
+    "distance": "10 km",
+    "zone": "sud",
+    "eventRecurrence": "annuel-variable",
+    "filters": [
+      "sportif"
+    ]
+  },
+  {
+    "id": "hybrid-fitness-race-evt",
+    "name": "Hybrid Fitness Race Mauritius",
+    "category": "agenda",
+    "address": "Cote d'Or National Sports Complex, Moka",
+    "phone": "",
+    "website": "https://roag.org/events/event-info/4295/hybrid-fitness-race-mauritius-2026-november-edition",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Cote%20d%27Or%20National%20Sports%20Complex%20Mauritius",
+    "themes": [
+      "evenements-sportifs"
+    ],
+    "description": "Course hybride combinant course d'endurance et ateliers de fitness fonctionnel : 1 km de course suivi d'un atelier, répété huit fois. Organisée par ROAG au Cote d'Or National Sports Complex. 3 catégories : solo, duo (femme/homme/mixte) et relais à 4 (femme/homme/mixte).",
+    "period": "Novembre",
+    "eventStartDate": "2026-11-07",
+    "eventEndDate": "2026-11-07",
+    "registrationDeadline": "7 octobre 2026",
+    "zone": "centre",
+    "eventRecurrence": "annuel-variable",
+    "filters": [
+      "sportif"
+    ]
+  },
+  {
+    "id": "mauritius-7s-evt",
+    "name": "Mauritius 7s (Africa Men's 7s)",
+    "category": "agenda",
+    "address": "SPARC, Cascavelle",
+    "phone": "",
+    "website": "https://roag.org/festival/details/3/mauritius-7s-2026",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=SPARC%20Cascavelle%20Mauritius",
+    "themes": [
+      "evenements-sportifs"
+    ],
+    "description": "Tournoi international de rugby à 7 comptant pour l'Africa Men's 7s, organisé au SPARC (Cascavelle) : 12 équipes réparties en 3 poules, avec également un volet féminin international. Événement à suivre en spectateur.",
+    "period": "Octobre",
+    "eventStartDate": "2026-10-03",
+    "eventEndDate": "2026-10-04",
+    "zone": "ouest",
+    "eventRecurrence": "annuel-variable",
+    "filters": [
+      "sportif"
+    ]
+  },
+  {
     "id": "afrasia-bank-mauritius-open-evt",
     "name": "AfrAsia Bank Mauritius Open",
     "category": "agenda",
