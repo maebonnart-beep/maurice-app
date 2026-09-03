@@ -18,10 +18,16 @@ import { SuggestPhotoButton } from "./SuggestPhotoButton";
 import { Tag } from "./Tag";
 import { metaFacts } from "./BusinessCard";
 import { iconForKey, subIconFor, CONTACT_ICONS } from "@/lib/icons";
-import { ArrowLeft } from "@phosphor-icons/react";
+import { ArrowLeft, ChatCircleText } from "@phosphor-icons/react";
 
 /** Au-delà de ~6 lignes affichées, on replie la description (rare : ~90% des fiches tiennent en dessous). */
 const DESCRIPTION_CLAMP_THRESHOLD = 320;
+
+/** Lien `sms:` pré-rempli : le séparateur avant `body=` diffère entre iOS et Android/desktop. */
+function smsHref(text: string) {
+  const isIOS = typeof navigator !== "undefined" && /iPad|iPhone|iPod/.test(navigator.userAgent);
+  return `sms:${isIOS ? "&" : "?"}body=${encodeURIComponent(text)}`;
+}
 
 /** Action circulaire (Appeler, Itinéraire, Site web…) : icône ronde + libellé dessous. */
 function CircleAction({
@@ -102,6 +108,14 @@ export function BusinessDetail({
   const subtitle = firstTheme ? SUBCATEGORIES[b.category]?.find((t) => t.key === firstTheme)?.label : undefined;
   const CategoryIcon = iconForKey(b.category);
   const bannerIcon = (firstTheme && subIconFor(firstTheme)) ?? subIconFor(b.category);
+  const shareText = [
+    displayName(b.name),
+    b.address,
+    b.phone,
+    b.googleMapsUrl || b.website,
+  ]
+    .filter(Boolean)
+    .join("\n");
 
   // Échap ferme, et on verrouille le scroll de l'arrière-plan.
   useEffect(() => {
@@ -325,6 +339,13 @@ export function BusinessDetail({
                   Email
                 </CircleAction>
               )}
+              <CircleAction
+                href={smsHref(shareText)}
+                icon={<ChatCircleText size={19} weight="fill" aria-hidden />}
+                onClick={() => trackEvent(b.id, "share")}
+              >
+                Partager
+              </CircleAction>
             </div>
 
             {b.description && (

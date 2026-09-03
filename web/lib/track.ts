@@ -1,4 +1,4 @@
-export type TrackEventType = "call" | "website" | "directions" | "whatsapp";
+export type TrackEventType = "call" | "website" | "directions" | "whatsapp" | "share";
 
 /**
  * Records a monetizable interaction on a business fiche (e.g. "180 clics WhatsApp ce mois-ci").
