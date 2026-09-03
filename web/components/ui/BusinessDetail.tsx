@@ -19,15 +19,14 @@ import { SuggestCommentButton } from "./SuggestCommentButton";
 import { Tag } from "./Tag";
 import { metaFacts } from "./BusinessCard";
 import { iconForKey, subIconFor, CONTACT_ICONS } from "@/lib/icons";
-import { ArrowLeft, ChatCircleText } from "@phosphor-icons/react";
+import { ArrowLeft } from "@phosphor-icons/react";
 
 /** Au-delà de ~6 lignes affichées, on replie la description (rare : ~90% des fiches tiennent en dessous). */
 const DESCRIPTION_CLAMP_THRESHOLD = 320;
 
-/** Lien `sms:` pré-rempli : le séparateur avant `body=` diffère entre iOS et Android/desktop. */
-function smsHref(text: string) {
-  const isIOS = typeof navigator !== "undefined" && /iPad|iPhone|iPod/.test(navigator.userAgent);
-  return `sms:${isIOS ? "&" : "?"}body=${encodeURIComponent(text)}`;
+/** Lien de partage WhatsApp pré-rempli, sans destinataire fixe (choisi dans l'appli). */
+function whatsappShareHref(text: string) {
+  return `https://wa.me/?text=${encodeURIComponent(text)}`;
 }
 
 /** Action circulaire (Appeler, Itinéraire, Site web…) : icône ronde + libellé dessous. */
@@ -341,8 +340,9 @@ export function BusinessDetail({
                 </CircleAction>
               )}
               <CircleAction
-                href={smsHref(shareText)}
-                icon={<ChatCircleText size={19} weight="fill" aria-hidden />}
+                href={whatsappShareHref(shareText)}
+                external
+                icon={<CONTACT_ICONS.WhatsappLogo size={19} weight="fill" aria-hidden />}
                 onClick={() => trackEvent(b.id, "share")}
               >
                 Partager
