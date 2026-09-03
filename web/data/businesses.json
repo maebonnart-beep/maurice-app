@@ -48194,11 +48194,11 @@
     "category": "agenda",
     "address": "La Vallée de Ferney, Vieux Grand Port",
     "phone": "",
-    "website": "https://roag.org/",
+    "website": "https://www.ferney.mu/ciel-ferney-trail/",
     "themes": [
       "evenements-sportifs"
     ],
-    "description": "L'un des plus anciens et populaires trails de l'île, au cœur de la Vallée de Ferney, sanctuaire de biodiversité mauricienne : plus de 4000 coureurs. 4 formats : 5 km (fun run), 10 km, 18 km (600 m D+, vue sur le lagon du sud-est) et 35 km (1500 m D+, terrain accidenté). Inscriptions sur roag.org, généralement ouvertes 2 à 3 mois avant la course.",
+    "description": "L'un des plus anciens et populaires trails de l'île (19e édition en 2026), au cœur de la Vallée de Ferney, sanctuaire de biodiversité mauricienne : plus de 3500 coureurs. 4 formats : 5 km (Fun Run, dès 6 ans), 10 km (400 m D+, vues panoramiques sur le lagon du sud-est), 18 km (600 m D+, sentiers boisés et vallées escarpées) et 35 km (1500 m D+, terrain accidenté et technique). Inscriptions sur roag.org.",
     "period": "Septembre",
     "lat": -20.3625775,
     "lng": 57.7064693,
@@ -48207,7 +48207,8 @@
     "eventRecurrence": "annuel-variable",
     "filters": [
       "sportif"
-    ]
+    ],
+    "registrationDeadline": "12 août 2026"
   },
   {
     "id": "trail-de-rodrigues-evt",
@@ -48232,11 +48233,11 @@
     "category": "agenda",
     "address": "Parc National des Gorges de Rivière Noire, Rivière Noire",
     "phone": "",
-    "website": "https://www.randotrail.mu/",
+    "website": "https://www.randotrail.mu/event/194",
     "themes": [
       "evenements-sportifs"
     ],
-    "description": "Trail dans le Parc National des Gorges de Rivière Noire, dernière forêt tropicale de l'île. 2 formats : 11 km et 25 km, environ 800 m de dénivelé. Retrait des dossards au parking du parc national. Inscriptions sur randotrail.mu.",
+    "description": "Trail dans le Parc National des Gorges de Rivière Noire, dernière forêt tropicale de l'île : 100 % nature, singletracks techniques et quelques sections plates en piste 4x4, avec points d'eau en rivière (km 3, 14, 16). 2 formats : Ti Ring Trail (11 km, 800 m D+, dès 11 ans) et Ring Trail (25 km, 1300 m D+, dès 18 ans). Retrait des dossards au parking du parc national. Inscriptions sur randotrail.mu.",
     "period": "Décembre",
     "lat": -20.4165,
     "lng": 57.4886,
@@ -48245,19 +48246,21 @@
     "eventRecurrence": "annuel-variable",
     "filters": [
       "sportif"
-    ]
+    ],
+    "eventStartDate": "2026-12-05",
+    "eventEndDate": "2026-12-05"
   },
   {
     "id": "ultra-trail-raidlight-beachcomber-evt",
-    "name": "Ultra-Trail Raidlight Beachcomber (UTRB)",
+    "name": "Beachcomber Trail (ex-UTRB)",
     "category": "agenda",
     "address": "Blue Bay (Sud-Est)",
     "phone": "",
-    "website": "https://roag.org/events/event-info/1916/ultra-trail-raidlight-beachcomber-utrb",
+    "website": "https://events.beachcomber-hotels.com",
     "themes": [
       "evenements-sportifs"
     ],
-    "description": "Ultra-trail organisé par le groupe Beachcomber dans le sud-est de l'île, réputé pour son organisation 5 étoiles et ses ravitaillements soignés. 5 formats, du 10 au 100 km : Trail du Souffleur (10 km), Trail du Nautile (25 km), Trail de la Perruche (47 km) et Trail des 7 Couleurs (100 km, dont une version relais).",
+    "description": "Ultra-trail organisé par le groupe Beachcomber dans le sud sauvage de l'île (10e édition en 2026, ex-\"Ultra-Trail Raidlight Beachcomber\"), entre montagnes, forêts, savane, falaises et plages. Parcours certifiés ITRA avec ravitaillements et encadrement médical. 3 formats : Trail du Souffleur (10 km, 50 m D+, découverte), Trail du Nautile (25 km, 300 m D+) et Trail du Sud Sauvage (65 km, 2200 m D+, solo ou relais). Arrivée au Shandrani Beachcomber Resort & Spa (Blue Bay). Inscriptions via roag.org.",
     "period": "Juillet",
     "lat": -20.4442,
     "lng": 57.7092,
@@ -48272,13 +48275,13 @@
     "id": "trail-de-la-liberte-evt",
     "name": "Trail de la Liberté",
     "category": "agenda",
-    "address": "Le Morne (Sud-Ouest)",
+    "address": "L'Embrasure, Petit Morne (Sud-Ouest)",
     "phone": "",
-    "website": "https://www.randotrail.mu/",
+    "website": "https://www.randotrail.mu/event/188",
     "themes": [
       "evenements-sportifs"
     ],
-    "description": "Trail caritatif au pied de la montagne du Morne, en hommage aux marrons qui s'y réfugièrent. 2 formats : Ti Marronnage (10 km) et Grand Marronnage (20 km). Une partie de l'inscription est reversée au projet Vision Le Morne porté par l'association ADM. Inscriptions sur randotrail.mu.",
+    "description": "Trail caritatif sur les sentiers du chassé du Petit Morne (savane, sentiers 4x4, quelques passages rocailleux), en hommage aux marrons qui s'y réfugièrent — 100 % des frais d'inscription reversés à l'association ADM (Action Development Le Morne). 3 formats : Fun Run (4 km, 150 m D+, dès 6 ans), Petit Marronnage (10 km, 500 m D+, dès 11 ans) et Grand Marronnage (20 km, 800 m D+, dès 18 ans). Inscriptions sur randotrail.mu.",
     "period": "Août",
     "lat": -20.4547,
     "lng": 57.3106,
@@ -48316,11 +48319,11 @@
     "category": "agenda",
     "address": "Avalon Golf Estate, Bois Chéri",
     "phone": "",
-    "website": "https://avalon.mu/",
+    "website": "https://www.randotrail.mu/event/191",
     "themes": [
       "evenements-sportifs"
     ],
-    "description": "Trail 100 % en pleine nature (parc national et terrain de chasse privé) autour de l'Avalon Golf Estate, à travers forêts et plaines peuplées de cerfs, sangliers et oiseaux endémiques. 2 formats : 11 km et 19 km. Départ et arrivée au golf, grand parking et espace détente après la course.",
+    "description": "Trail 100 % en pleine nature (parc national et terrain de chasse privé) autour de l'Avalon Golf Estate, à travers forêts et plaines peuplées de cerfs, sangliers et oiseaux endémiques. 2 formats : Trail de Lancelot (11 km, 300 m D+, sentiers parfois techniques) et Trail d'Arthur (19 km, 500 m D+, singletracks avec racines, boue et rochers, très technique). Date 2026 pressentie fin octobre, à confirmer sur le site officiel (inscriptions pas encore ouvertes). Départ et arrivée au golf, grand parking et espace détente après la course.",
     "period": "Octobre",
     "lat": -20.4440891,
     "lng": 57.5198045,
@@ -51758,6 +51761,126 @@
     "eventRecurrence": "annuel-variable",
     "filters": [
       "associatif-caritatif",
+      "sportif"
+    ]
+  },
+  {
+    "id": "moka-decathlon-night-run-evt",
+    "name": "Moka Decathlon Night Run",
+    "category": "agenda",
+    "address": "Telfair La Promenade, Moka",
+    "phone": "",
+    "website": "https://www.nightrun.mu",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Telfair%20La%20Promenade%20Moka%20Mauritius",
+    "themes": [
+      "evenements-sportifs"
+    ],
+    "description": "Course nocturne urbaine et festive à Moka (5e édition en 2026, environ 2700 coureurs), format unique 10 km : départ à Telfair La Promenade, montée vers Helvétia puis route A7 vers le Mahatma Gandhi Institute, ravitaillement au Decathlon (km 5,5), montée difficile à Bagatelle Les Showrooms, retour par un sentier longeant l'autoroute. Ambiance musique et lumières.",
+    "period": "Novembre",
+    "eventStartDate": "2026-11-21",
+    "eventEndDate": "2026-11-21",
+    "registrationDeadline": "19 octobre 2026",
+    "distance": "10 km",
+    "zone": "centre",
+    "eventRecurrence": "annuel-variable",
+    "filters": [
+      "sportif"
+    ]
+  },
+  {
+    "id": "loop-backyard-ultra-evt",
+    "name": "The Loop Backyard Ultra",
+    "category": "agenda",
+    "address": "Domaine de Labourdonnais, Mapou, Pamplemousses",
+    "phone": "",
+    "website": "https://the-loop.run/backyard-ultra/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Domaine%20de%20Labourdonnais%20Mapou%20Mauritius",
+    "themes": [
+      "evenements-sportifs"
+    ],
+    "description": "Format \"backyard ultra\" : une boucle de 6,7 km (environ 20 m D+) dans le Domaine de Labourdonnais (champs de canne à sucre, allées historiques du château et vergers), à courir toutes les heures pile jusqu'à ce qu'un seul coureur reste capable de la boucler dans le temps imparti. 2e édition en 2026, limitée à 90 coureurs, priorité aux profils expérimentés en ultra-distance.",
+    "period": "Août",
+    "distance": "Boucle de 6,7 km",
+    "elevationGain": "~20 m D+/boucle",
+    "zone": "nord",
+    "eventRecurrence": "annuel-variable",
+    "filters": [
+      "sportif"
+    ]
+  },
+  {
+    "id": "loop-sunset-to-sunrise-evt",
+    "name": "The Loop Sunset to Sunrise",
+    "category": "agenda",
+    "address": "Heritage Zone, Mont Choisy Golf Estate",
+    "phone": "",
+    "website": "https://the-loop.run",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Mont%20Choisy%20Golf%20Estate%20Mauritius",
+    "themes": [
+      "evenements-sportifs"
+    ],
+    "description": "Course nocturne inclusive (course ou marche) de 18h à 6h sur le golf de Mont Choisy : boucle unique de 8 km, plate, sur piste goudronnée de voiturettes de golf, avec balisage réfléchissant, boucles illimitées sans limite de temps imposée par tour. Édition inaugurale en 2026 : 85 participants, la gagnante a parcouru 92 km (12 boucles) en 11h26.",
+    "period": "Mai",
+    "distance": "Boucle de 8 km",
+    "zone": "nord",
+    "eventRecurrence": "annuel-variable",
+    "filters": [
+      "sportif"
+    ]
+  },
+  {
+    "id": "anbalao-challenge-evt",
+    "name": "Anbalao Challenge",
+    "category": "agenda",
+    "address": "Traversée Sud-Nord : Gris-Gris → Les Palétuviers (Anse-la-Raie)",
+    "phone": "",
+    "website": "https://www.randotrail.mu/",
+    "themes": [
+      "evenements-sportifs"
+    ],
+    "description": "Épreuve 100 % féminine organisée par Rando-Trail & Nature (avec la MCB) : 130 km au total en 4 étapes sur 2 jours, à allure libre, traversant l'île du sud au nord. Chaque étape porte le nom d'une femme marquante de l'histoire mauricienne : Myrtil (Gris-Gris → Pierrefonds, 40 km), Maryse (Pierrefonds → Pointe-aux-Sables, 25 km), Anjalay (Champ de Mars → Domaine de Labourdonnais, 46 km) et Augustine (Domaine de Labourdonnais → Les Palétuviers, 12 km).",
+    "period": "Août",
+    "distance": "130 km (4 étapes)",
+    "eventRecurrence": "annuel-variable",
+    "filters": [
+      "sportif"
+    ]
+  },
+  {
+    "id": "raid-west-trail-evt",
+    "name": "Raid West Trail",
+    "category": "agenda",
+    "address": "Pétrin, Parc National des Gorges de Rivière Noire",
+    "phone": "",
+    "website": "https://www.randotrail.mu/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Petrin%20Black%20River%20Gorges%20National%20Park%20Mauritius",
+    "themes": [
+      "evenements-sportifs"
+    ],
+    "description": "Trail annuel depuis 2017 dans le Parc National des Gorges de Rivière Noire : départ au Pétrin, arrivée à Chamarel (navette retour vers le parking de départ). 2 formats : Ti Raid West (10 km) et Raid West (16 km, très technique, réservé aux coureurs expérimentés).",
+    "period": "Février",
+    "zone": "ouest",
+    "eventRecurrence": "annuel-variable",
+    "filters": [
+      "sportif"
+    ]
+  },
+  {
+    "id": "trail-des-goyaves-evt",
+    "name": "Trail des Goyaves",
+    "category": "agenda",
+    "address": "Église de Chamarel",
+    "phone": "",
+    "website": "https://new.sportsnconnect.com/client/events/29800",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Eglise%20de%20Chamarel%20Mauritius",
+    "themes": [
+      "evenements-sportifs"
+    ],
+    "description": "Organisé par Rando-Trail & Nature : montée raide de 4 km vers le Piton de la Rivière Noire (point culminant de l'île), sentiers forestiers vallonnés sur la Plaine Champagne, descente technique dans les gorges de Rivière Noire, puis ascension finale de 3 km sur le célèbre sentier des Perruches (Parakeet Trail). 2 formats : 25 km (1300 m D+, départ 8h) et 10 km (environ 900 m D+, départ 6h30).",
+    "period": "Février",
+    "zone": "ouest",
+    "eventRecurrence": "annuel-variable",
+    "filters": [
       "sportif"
     ]
   },

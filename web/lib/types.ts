@@ -62,6 +62,8 @@ export type Business = {
   description?: string;
   /** Période/date de l'événement, ex: "Fin novembre - début décembre", "9 septembre". Agenda. */
   period?: string;
+  /** Date limite d'inscription, texte libre ex: "19 octobre 2026". Agenda (courses/trails notamment). */
+  registrationDeadline?: string;
   /** Prix d'entrée en texte libre, ex: "Rs 450 adulte / Rs 250 enfant". Parcs-aventures, parcs-animaliers. */
   entryPrice?: string;
   /** Durée moyenne/approximative de l'activité, ex: "2h30". Parcs-aventures, randonnée-trail. */

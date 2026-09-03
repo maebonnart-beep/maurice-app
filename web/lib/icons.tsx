@@ -24,7 +24,7 @@ import {
   MaskHappy, HandHeart, Coins, Diamond, MapPin, ArrowUp, ArrowDown, ArrowLeft, ArrowRight,
   Target, GlobeHemisphereWest, Jar,
   Clock, Phone, EnvelopeSimple, WhatsappLogo, Globe, NavigationArrow, Ruler,
-  TrendUp, Ticket, PencilSimple, Compass,
+  TrendUp, Ticket, PencilSimple, Compass, HourglassHigh,
 } from "@phosphor-icons/react";
 
 export const ICON_MAP: Record<string, Icon> = {
@@ -393,7 +393,7 @@ export const FACT_ICONS = {
   difficultyLevel: PersonSimpleHike, guide: Compass, sports: Barbell,
   restauration: ForkKnife, ttv: Laptop, kids: Baby, sand: Waves, beach: Target,
   animals: PawPrint, golf: Golf, golfDesigner: PencilSimple, golfPricing: Coins,
-  period: CalendarBlank,
+  period: CalendarBlank, registrationDeadline: HourglassHigh,
 } as const;
 
 export { MapPin, Clock, Phone, EnvelopeSimple, WhatsappLogo, Globe, NavigationArrow };
