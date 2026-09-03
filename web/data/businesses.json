@@ -52356,6 +52356,137 @@
     ]
   },
   {
+    "id": "cannondale-mtb-race-evt",
+    "name": "Cannondale MTB Race",
+    "category": "agenda",
+    "address": "La Place, Gros Bois, Grand Port",
+    "phone": "",
+    "website": "https://sportevents.mu/en/events/69/cannondale-mtb-race-by-emcar-sports",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Gros%20Bois%20Grand%20Port%20Mauritius",
+    "themes": [
+      "evenements-sportifs"
+    ],
+    "description": "Course de VTT organisée par Emcar Sports, avec deux points de ravitaillement (km 23 et km 38,5). 2 formats : 20 km (210 m D+) et 50 km (710 m D+). Catégories licenciés et non-licenciés, dès 13 ans (accompagné en dessous sur le 20 km).",
+    "period": "Septembre",
+    "eventStartDate": "2026-09-19",
+    "eventEndDate": "2026-09-19",
+    "distance": "20 ou 50 km",
+    "zone": "sud",
+    "eventRecurrence": "annuel-variable",
+    "filters": [
+      "sportif"
+    ]
+  },
+  {
+    "id": "trail-quest-challenge-evt",
+    "name": "Trail Quest Challenge",
+    "category": "agenda",
+    "address": "Île Maurice (lieu à confirmer)",
+    "phone": "",
+    "website": "https://sportevents.mu/en/events/51/trail-quest-challenge",
+    "themes": [
+      "evenements-sportifs"
+    ],
+    "description": "Événement sur 3 jours organisé par Sport Events Mauritius. Le lieu de départ et le format précis ne sont pas encore communiqués par l'organisateur — se référer au site officiel avant d'y participer.",
+    "period": "Septembre",
+    "eventStartDate": "2026-09-25",
+    "eventEndDate": "2026-09-27",
+    "eventRecurrence": "annuel-variable",
+    "filters": [
+      "sportif"
+    ]
+  },
+  {
+    "id": "sparc-fitness-race-evt",
+    "name": "Sparc Fitness Race",
+    "category": "agenda",
+    "address": "Sparc Sport Centre, Rivière Noire",
+    "phone": "",
+    "website": "https://sportevents.mu/en/events/74/sparc-fitness-race",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=SPARC%20Cascavelle%20Mauritius",
+    "themes": [
+      "evenements-sportifs"
+    ],
+    "description": "Course hybride de fitness organisée par Sparc & Sport Events Mauritius, au Sparc Sport Centre. Catégories solo et duo (femmes, hommes, mixte), dès 16 ans.",
+    "period": "Septembre",
+    "eventStartDate": "2026-09-26",
+    "eventEndDate": "2026-09-26",
+    "registrationDeadline": "17 septembre 2026",
+    "zone": "ouest",
+    "eventRecurrence": "annuel-variable",
+    "filters": [
+      "sportif"
+    ]
+  },
+  {
+    "id": "vcp-mtb-xco-evt",
+    "name": "VCP MTB XCO",
+    "category": "agenda",
+    "address": "Old Train Station, Notre Dame, Montagne Longue, Pamplemousses",
+    "phone": "",
+    "website": "https://sportevents.mu/en/events/68/vcp-mtb-xco-2026",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Montagne%20Longue%20Pamplemousses%20Mauritius",
+    "themes": [
+      "evenements-sportifs"
+    ],
+    "description": "Course de VTT cross-country organisée par le Vélo Club de Pamplemousses, en boucles d'environ 8 km (1 à 4 tours selon la catégorie d'âge, de Minime à Elite). Fun Race accessible dès 16 ans (2 boucles, 16 km) et course enfants gratuite (6-12 ans).",
+    "period": "Octobre",
+    "eventStartDate": "2026-10-04",
+    "eventEndDate": "2026-10-04",
+    "registrationDeadline": "30 septembre 2026",
+    "zone": "nord",
+    "eventRecurrence": "annuel-variable",
+    "filters": [
+      "sportif"
+    ]
+  },
+  {
+    "id": "kpmg-ebene-city-run-evt",
+    "name": "KPMG Ebene City Run",
+    "category": "agenda",
+    "address": "KPMG - Tribeca, Ebène Cybercity",
+    "phone": "",
+    "website": "https://sportevents.mu/en/events/70/kpmg-ebene-city-run-2026",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Ebene%20Cybercity%20Mauritius",
+    "themes": [
+      "evenements-sportifs"
+    ],
+    "description": "Course urbaine nocturne (lampe frontale recommandée) organisée par KPMG à Ébène Cybercity, ouverte au public et aux équipes corporatives. 2 formats : 5 km (départ 19h30) et 10 km (départ 19h00).",
+    "period": "Octobre",
+    "eventStartDate": "2026-10-23",
+    "eventEndDate": "2026-10-23",
+    "registrationDeadline": "24 septembre 2026",
+    "distance": "5 ou 10 km",
+    "zone": "centre",
+    "eventRecurrence": "annuel-variable",
+    "filters": [
+      "sportif"
+    ]
+  },
+  {
+    "id": "mauritius-100km-cycle-tour-evt",
+    "name": "Mauritius 100km Cycle Tour (Anou Pédaler)",
+    "category": "agenda",
+    "address": "Mont Choisy Public Beach",
+    "phone": "",
+    "website": "https://sportevents.mu/en/events/73/mauritius-100km-cycle-tour-anou-pedaler",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Mont%20Choisy%20Public%20Beach%20Mauritius",
+    "themes": [
+      "evenements-sportifs"
+    ],
+    "description": "32e édition de cet événement cycliste emblématique mauricien, organisé par CRA Events le long du littoral nord (ravitaillements à Belle Mare et Goodlands). 3 formats : 20 km (VIP Ride), 50 km et 100 km (épreuve principale). Dès 14 ans.",
+    "period": "Octobre",
+    "eventStartDate": "2026-10-25",
+    "eventEndDate": "2026-10-26",
+    "registrationDeadline": "9 octobre 2026",
+    "distance": "20, 50 ou 100 km",
+    "zone": "nord",
+    "eventRecurrence": "annuel-variable",
+    "filters": [
+      "sportif"
+    ]
+  },
+  {
     "id": "afrasia-bank-mauritius-open-evt",
     "name": "AfrAsia Bank Mauritius Open",
     "category": "agenda",
