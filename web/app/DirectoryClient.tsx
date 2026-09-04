@@ -45,6 +45,8 @@ import { BusinessDetail } from "@/components/ui/BusinessDetail";
 import { useFavorites, type FavoriteStatus } from "@/lib/favorites";
 import { useFavoriteSelections } from "@/lib/favoriteSelections";
 import { useSuggestions, findIntegratedMatch } from "@/lib/suggestions";
+import { useAccount } from "@/lib/marketplace/useAccount";
+import { PREMIUM_PRICE_LABEL, MAX_ACTIVE_LISTINGS } from "@/lib/marketplace/constants";
 import { COUP_DE_COEUR_COLOR } from "@/components/ui/Badge";
 import { FilterDropdown, type DropdownOption } from "@/components/ui/FilterDropdown";
 import { AddAddressForm } from "@/components/ui/AddAddressForm";
@@ -167,6 +169,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
   const { statuses: favoriteStatuses, getStatus, mergeStatuses } = useFavorites();
   const { favoriteSelectionIds, isFavoriteSelection, toggleFavoriteSelection } = useFavoriteSelections();
   const { suggestions } = useSuggestions();
+  const account = useAccount();
   // Profil → Mes suggestions : pour chaque adresse proposée, détection best-effort
   // (nom + catégorie) d'une fiche correspondante déjà intégrée à l'annuaire.
   const suggestionsWithStatus = useMemo(
@@ -1190,20 +1193,20 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
     </div>
   );
 
-  // Barre de navigation principale (5 onglets) fixée tout en bas de l'écran :
-  // Accueil / Sélections / Ajouter (bouton central relevé) / Listes / Profil.
-  // « Explorer » et « Carte » ont été retirés : la recherche et les catégories
-  // sont déjà en permanence sur l'accueil, et la carte reste accessible via le
+  // Barre de navigation principale (4 onglets) fixée tout en bas de l'écran :
+  // Accueil / Ajouter (bouton central relevé) / Listes / Mon compte.
+  // « Sélections » (favoris/à tester/testé) a été retiré de la barre : ce
+  // contenu vit désormais uniquement dans Mon compte. « Explorer » et
+  // « Carte » ont été retirés plus tôt : la recherche et les catégories sont
+  // déjà en permanence sur l'accueil, et la carte reste accessible via le
   // bandeau « Voir la carte » et le bouton liste/carte des résultats.
-  const activeTab: "accueil" | "favoris" | "listes" | "profil" | "autre" = homeMode === "favoris"
-    ? "favoris"
-    : homeMode === "listes"
-      ? "listes"
-      : homeMode === "profil"
-        ? "profil"
-        : showHome && homeMode === "menu"
-          ? "accueil"
-          : "autre";
+  const activeTab: "accueil" | "listes" | "profil" | "autre" = homeMode === "listes"
+    ? "listes"
+    : homeMode === "profil"
+      ? "profil"
+      : showHome && homeMode === "menu"
+        ? "accueil"
+        : "autre";
   const tabBar = (
     <nav
       aria-label="Navigation principale"
@@ -1213,7 +1216,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
         background: "linear-gradient(180deg, var(--band) 0%, var(--band-deep) 100%)",
       }}
     >
-      <div className="max-w-[640px] mx-auto grid grid-cols-5 items-end px-2 pt-1.5 pb-1.5">
+      <div className="max-w-[640px] mx-auto grid grid-cols-4 items-end px-2 pt-1.5 pb-1.5">
         <button
           onClick={goHome}
           aria-label="Accueil"
@@ -1224,26 +1227,6 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
         >
           <House size={22} weight={activeTab === "accueil" ? "fill" : "regular"} aria-hidden />
           <span className="text-[10.5px] font-semibold leading-none">Accueil</span>
-        </button>
-        <button
-          onClick={() => {
-            setActive("all");
-            setActiveThemes(new Set());
-            setActiveZone(null);
-            setQuery("");
-            setBrowseAll(false);
-            setHomeCategory(null);
-            setHomeMode("favoris");
-            window.scrollTo({ top: 0, behavior: "smooth" });
-          }}
-          aria-label="Mes sélections"
-          aria-pressed={activeTab === "favoris"}
-          className={`flex flex-col items-center gap-0.5 py-1 rounded-xl transition-colors active:scale-[.97] ${
-            activeTab === "favoris" ? "text-on-band" : "text-on-band/60"
-          }`}
-        >
-          <Heart size={22} weight={activeTab === "favoris" ? "fill" : "regular"} aria-hidden />
-          <span className="text-[10.5px] font-semibold leading-none">Sélections</span>
         </button>
         <div className="flex flex-col items-center">
           <button
@@ -1285,14 +1268,14 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
             setHomeMode("profil");
             window.scrollTo({ top: 0, behavior: "smooth" });
           }}
-          aria-label="Profil"
+          aria-label="Mon compte"
           aria-pressed={activeTab === "profil"}
           className={`flex flex-col items-center gap-0.5 py-1 rounded-xl transition-colors active:scale-[.97] ${
             activeTab === "profil" ? "text-on-band" : "text-on-band/60"
           }`}
         >
           <UserCircle size={22} weight={activeTab === "profil" ? "fill" : "regular"} aria-hidden />
-          <span className="text-[10.5px] font-semibold leading-none">Profil</span>
+          <span className="text-[10.5px] font-semibold leading-none">Mon compte</span>
         </button>
       </div>
     </nav>
@@ -2195,23 +2178,80 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
             </div>
           )}
 
-          {/* Accueil → Profil : pas de compte utilisateur pour l'instant, mais un
-              tableau de bord de ce qui est stocké en local (favoris/sélections). */}
+          {/* Accueil → Mon compte : statut Supabase (abonnement/rôle/annonces) en
+              haut, puis le tableau de bord local (favoris/sélections/suggestions). */}
           {showHome && homeMode === "profil" && (
             <div className="pb-16 pt-4 max-w-[560px] mx-auto flex flex-col gap-4">
-              <div className="text-center bg-surface border border-border rounded-2xl shadow-sm p-6 flex flex-col items-center gap-2">
+              <div className="text-center bg-surface border border-border rounded-2xl shadow-sm p-6 flex flex-col items-center gap-3">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src="/avatar-admin.png"
-                  alt="Photo de profil, badge Admin"
+                  alt="Photo de profil"
                   className="w-20 h-20 rounded-full object-cover"
                 />
-                <p className="font-serif text-lg font-semibold leading-tight">Votre profil Koté Moris</p>
-                <p className="text-[13px] text-muted leading-snug">
-                  Le compte arrive prochainement. En attendant, tout ce qui suit est enregistré
-                  sur cet appareil uniquement.
-                </p>
+                {account.loading ? (
+                  <p className="text-[13px] text-muted leading-snug">Chargement…</p>
+                ) : account.loggedIn ? (
+                  <>
+                    <p className="font-serif text-lg font-semibold leading-tight break-all">{account.email}</p>
+                    <div className="flex items-center gap-2 flex-wrap justify-center">
+                      {account.role !== "normal" && (
+                        <span className="text-[11px] font-bold px-2.5 py-1 rounded-pill bg-primary-tint text-primary-deep">
+                          {account.role === "admin" ? "Admin" : "Membre de la communauté"}
+                        </span>
+                      )}
+                      <span
+                        className={`text-[11px] font-bold px-2.5 py-1 rounded-pill ${
+                          account.isPremium ? "bg-primary-tint text-primary-deep" : "bg-surface-2 text-muted"
+                        }`}
+                      >
+                        {account.isPremium ? "Premium" : "Formule gratuite"}
+                      </span>
+                    </div>
+                  </>
+                ) : (
+                  <>
+                    <p className="font-serif text-lg font-semibold leading-tight">Mon compte Koté Moris</p>
+                    <p className="text-[13px] text-muted leading-snug">
+                      Connecte-toi pour t&apos;abonner et déposer des annonces seconde main.
+                    </p>
+                    <Link
+                      href="/mon-compte"
+                      className="h-[40px] px-5 rounded-xl bg-primary text-white text-[13.5px] font-semibold flex items-center justify-center active:scale-[.98] transition-transform"
+                    >
+                      Se connecter
+                    </Link>
+                  </>
+                )}
               </div>
+
+              {account.loggedIn && !account.isPremium && (
+                <Link
+                  href="/mon-compte/upgrade"
+                  className="flex items-center justify-between gap-3 bg-primary-tint border border-primary/20 rounded-xl p-3.5"
+                >
+                  <span className="text-[13px] text-primary-deep font-medium">
+                    Passe premium ({PREMIUM_PRICE_LABEL}) pour déposer des annonces.
+                  </span>
+                  <span className="shrink-0 text-[12.5px] font-semibold text-primary-deep underline">S&apos;abonner</span>
+                </Link>
+              )}
+
+              {account.loggedIn && (
+                <Link
+                  href="/mon-compte"
+                  className="flex items-center justify-between gap-3 bg-surface border border-border rounded-2xl shadow-sm p-3.5"
+                >
+                  <span className="flex items-center gap-2.5 min-w-0">
+                    <Storefront size={18} className="text-muted shrink-0" aria-hidden />
+                    <span className="text-[13px] text-ink truncate">
+                      {account.listings.filter((l) => l.status === "pending" || l.status === "approved").length}/
+                      {MAX_ACTIVE_LISTINGS} annonces actives
+                    </span>
+                  </span>
+                  <span className="shrink-0 text-[12.5px] font-semibold text-primary-deep underline">Gérer</span>
+                </Link>
+              )}
 
               {/* Stats : accès direct à chaque statut, comme les chips en haut de « Sélections ». */}
               <div className="grid grid-cols-3 gap-2.5">
@@ -2336,13 +2376,6 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
 
               {/* Actions rapides. */}
               <div className="bg-surface border border-border rounded-2xl shadow-sm overflow-hidden">
-                <Link
-                  href="/mon-compte"
-                  className="w-full flex items-center gap-3 px-4 py-3.5 text-left active:bg-surface-2 transition-colors border-b border-border"
-                >
-                  <Storefront size={18} weight="regular" className="text-muted" aria-hidden />
-                  <span className="flex-1 text-[13.5px] text-ink">Mon compte Seconde main</span>
-                </Link>
                 <button
                   onClick={() => { setBrowseAll(false); setHomeCategory(null); setHomeMode("listes"); window.scrollTo({ top: 0, behavior: "smooth" }); }}
                   className="w-full flex items-center gap-3 px-4 py-3.5 text-left active:bg-surface-2 transition-colors border-b border-border"

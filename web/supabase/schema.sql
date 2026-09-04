@@ -52,6 +52,7 @@ create table profiles (
   display_name text,
   phone text,
   is_admin boolean not null default false,
+  is_community_member boolean not null default false,
   stripe_customer_id text,
   stripe_subscription_id text,
   subscription_status text not null default 'none'
