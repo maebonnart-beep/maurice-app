@@ -87,6 +87,7 @@ import {
   Backpack,
   PersonSimpleWalk,
   Storefront,
+  MagnifyingGlass,
 } from "@phosphor-icons/react";
 import type { Icon } from "@phosphor-icons/react";
 
@@ -1193,20 +1194,25 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
     </div>
   );
 
-  // Barre de navigation principale (4 onglets) fixée tout en bas de l'écran :
-  // Accueil / Ajouter (bouton central relevé) / Listes / Mon compte.
-  // « Sélections » (favoris/à tester/testé) a été retiré de la barre : ce
+  // Barre de navigation principale (5 onglets) fixée tout en bas de l'écran :
+  // Accueil / Recherche / Autour de moi / Listes / Mon compte.
+  // Le bouton central « + » (Suggérer une adresse) a été retiré de la barre :
+  // cette action est réservée aux membres de la communauté et vit désormais
+  // dans Mon compte (Actions rapides), visible uniquement pour ce rôle.
+  // « Sélections » (favoris/à tester/testé) a été retiré plus tôt : ce
   // contenu vit désormais uniquement dans Mon compte. « Explorer » et
-  // « Carte » ont été retirés plus tôt : la recherche et les catégories sont
-  // déjà en permanence sur l'accueil, et la carte reste accessible via le
-  // bandeau « Voir la carte » et le bouton liste/carte des résultats.
-  const activeTab: "accueil" | "listes" | "profil" | "autre" = homeMode === "listes"
-    ? "listes"
-    : homeMode === "profil"
-      ? "profil"
-      : showHome && homeMode === "menu"
-        ? "accueil"
-        : "autre";
+  // « Carte » ont été retirés en amont : les catégories sont déjà en
+  // permanence sur l'accueil, et la carte reste accessible via le bandeau
+  // « Voir la carte » et le bouton liste/carte des résultats.
+  const activeTab: "accueil" | "recherche" | "listes" | "profil" | "autre" = searchOpen
+    ? "recherche"
+    : homeMode === "listes"
+      ? "listes"
+      : homeMode === "profil"
+        ? "profil"
+        : showHome && homeMode === "menu"
+          ? "accueil"
+          : "autre";
   const tabBar = (
     <nav
       aria-label="Navigation principale"
@@ -1216,7 +1222,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
         background: "linear-gradient(180deg, var(--band) 0%, var(--band-deep) 100%)",
       }}
     >
-      <div className="max-w-[640px] mx-auto grid grid-cols-4 items-end px-2 pt-1.5 pb-1.5">
+      <div className="max-w-[640px] mx-auto grid grid-cols-5 items-end px-2 pt-1.5 pb-1.5">
         <button
           onClick={goHome}
           aria-label="Accueil"
@@ -1228,21 +1234,31 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
           <House size={22} weight={activeTab === "accueil" ? "fill" : "regular"} aria-hidden />
           <span className="text-[10.5px] font-semibold leading-none">Accueil</span>
         </button>
-        <div className="flex flex-col items-center">
-          <button
-            onClick={() => {
-              setBrowseAll(false);
-              setHomeCategory(null);
-              setHomeMode("ajouter");
-              window.scrollTo({ top: 0, behavior: "smooth" });
-            }}
-            aria-label="Ajouter une adresse"
-            className="w-11 h-11 -mt-5 rounded-full flex items-center justify-center text-on-band shadow-[0_2px_8px_rgba(0,0,0,0.25)] border-[3px] border-band active:scale-[.97] transition-transform"
-            style={{ background: "var(--band-deep)" }}
-          >
-            <Plus size={22} weight="bold" aria-hidden />
-          </button>
-        </div>
+        <button
+          onClick={focusSearch}
+          aria-label="Recherche"
+          aria-pressed={activeTab === "recherche"}
+          className={`flex flex-col items-center gap-0.5 py-1 rounded-xl transition-colors active:scale-[.97] ${
+            activeTab === "recherche" ? "text-on-band" : "text-on-band/60"
+          }`}
+        >
+          <MagnifyingGlass size={22} weight={activeTab === "recherche" ? "fill" : "regular"} aria-hidden />
+          <span className="text-[10.5px] font-semibold leading-none">Recherche</span>
+        </button>
+        <button
+          onClick={() => {
+            toggleNearMe();
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          }}
+          aria-label="Autour de moi"
+          aria-pressed={nearMe}
+          className={`flex flex-col items-center gap-0.5 py-1 rounded-xl transition-colors active:scale-[.97] ${
+            nearMe ? "text-on-band" : "text-on-band/60"
+          }`}
+        >
+          <MapPin size={22} weight={nearMe ? "fill" : "regular"} aria-hidden />
+          <span className="text-[10.5px] font-semibold leading-none">Autour de moi</span>
+        </button>
         <button
           onClick={() => {
             setActive("all");
@@ -2171,8 +2187,9 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
             </div>
           )}
 
-          {/* Accueil → Ajouter une adresse : formulaire de suggestion. */}
-          {showHome && homeMode === "ajouter" && (
+          {/* Accueil → Ajouter une adresse : formulaire de suggestion, réservé
+              aux membres de la communauté/admin (accessible depuis Mon compte). */}
+          {showHome && homeMode === "ajouter" && (account.role === "community" || account.role === "admin") && (
             <div className="pb-16">
               <AddAddressForm />
             </div>
@@ -2383,13 +2400,15 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                   <Star size={18} weight="regular" className="text-muted" aria-hidden />
                   <span className="flex-1 text-[13.5px] text-ink">Voir les listes de Koté Moris</span>
                 </button>
-                <button
-                  onClick={() => { setBrowseAll(false); setHomeCategory(null); setHomeMode("ajouter"); window.scrollTo({ top: 0, behavior: "smooth" }); }}
-                  className="w-full flex items-center gap-3 px-4 py-3.5 text-left active:bg-surface-2 transition-colors border-b border-border"
-                >
-                  <Plus size={18} weight="regular" className="text-muted" aria-hidden />
-                  <span className="flex-1 text-[13.5px] text-ink">Suggérer une adresse</span>
-                </button>
+                {(account.role === "community" || account.role === "admin") && (
+                  <button
+                    onClick={() => { setBrowseAll(false); setHomeCategory(null); setHomeMode("ajouter"); window.scrollTo({ top: 0, behavior: "smooth" }); }}
+                    className="w-full flex items-center gap-3 px-4 py-3.5 text-left active:bg-surface-2 transition-colors border-b border-border"
+                  >
+                    <Plus size={18} weight="regular" className="text-muted" aria-hidden />
+                    <span className="flex-1 text-[13.5px] text-ink">Suggérer une adresse</span>
+                  </button>
+                )}
                 <button
                   onClick={() => setSharePanelOpen((v) => !v)}
                   disabled={favorisMapBusinesses.length === 0}
