@@ -361,6 +361,24 @@ export const SELECTIONS: Selection[] = [
       "salines-de-yemen-tamarin",
     ],
   },
+  {
+    id: "super-brunch",
+    emoji: "🥞",
+    title: "Où prendre un super brunch",
+    tagline: "Nos meilleures adresses pour un brunch réussi, du café artisanal aux pâtisseries maison",
+    group: "envies",
+    icon: "ForkKnife",
+    photoUrl: "/photos/super-brunch.jpg",
+    photoCredit: "Pexels",
+    businessIds: [
+      "moca-family-calodyne",
+      "naked-foods",
+      "cafe-moris-grand-baie",
+      "sweet-and-brunch-grand-baie",
+      "fynbos-meeting-place-grand-baie",
+      "theo-fourneaux-restaurant-petit-dejeuner-brunch-salon-de-the",
+    ],
+  },
 
   // --- Escapades ---
   {

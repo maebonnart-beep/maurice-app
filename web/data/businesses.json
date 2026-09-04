@@ -28418,10 +28418,8 @@
     "lat": -20.0406157,
     "lng": 57.549596,
     "themes": [
-      "commerces-alimentaires",
-      "boulangeries-patisseries",
-      "cafes-terrasses",
-      "restaurants"
+      "restaurants",
+      "cafes-bars-glaciers"
     ],
     "zone": "nord",
     "badge": "selection",
@@ -28435,8 +28433,8 @@
     "entryPrice": "Prix août 2026 : entrées/salades Rs 360-750, plats Rs 550-925, wok/pad thaï Rs 325-550, menu enfant Rs 275-360 — pâtisseries Rs 200-225, smoothies/ice tea Rs 200, boissons chaudes Rs 90-150",
     "hours": "Tous les jours 7h-22h",
     "filters": [
-      "boulangeries",
-      "boulangeries-patisseries"
+      "boulangeries-patisseries",
+      "cafes-terrasses"
     ]
   },
   {
