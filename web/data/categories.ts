@@ -455,6 +455,7 @@ export const FILTER_GROUPS: FilterGroup[] = [
     options: [
       { key: "depannages", label: "Dépannages", emoji: "🔧" },
       { key: "informatique-reparation", label: "Informatique (dépannage & pièces)", emoji: "💻" },
+      { key: "reparation-velo", label: "Réparation vélo", emoji: "🚲" },
       { key: "pressing-blanchisserie", label: "Pressing & blanchisserie", emoji: "🧺" },
     ],
   },

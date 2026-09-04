@@ -48675,6 +48675,26 @@
     ]
   },
   {
+    "id": "the-cycling-zebra-riviere-noire",
+    "name": "The Cycling Zebra",
+    "category": "vie-pratique",
+    "address": "Rivière Noire",
+    "phone": "+230 655 5226",
+    "website": "https://cyclemauritius.com",
+    "googleMapsUrl": "https://maps.google.com/?cid=5567770564561639098",
+    "lat": -20.3519778,
+    "lng": 57.3647998,
+    "themes": [
+      "depannages-services"
+    ],
+    "hours": "Mar-Ven 10h-17h, Sam 11h-14h, Dim-Lun fermé",
+    "zone": "ouest",
+    "description": "Atelier de réparation de vélos à Rivière Noire.",
+    "filters": [
+      "reparation-velo"
+    ]
+  },
+  {
     "id": "compute-lovers",
     "name": "Compute Lovers — Beau Bassin / Rose Hill",
     "category": "vie-pratique",
@@ -51704,6 +51724,23 @@
     "filters": [
       "livres"
     ]
+  },
+  {
+    "id": "101-multimedia-port-louis",
+    "name": "101 Multimedia",
+    "category": "acheter-equiper",
+    "address": "La Chaussée, Port Louis",
+    "phone": "+230 211 0955",
+    "website": "https://101-multimedia.com",
+    "googleMapsUrl": "https://maps.google.com/?cid=8406610616027945950",
+    "lat": -20.1636209,
+    "lng": 57.5014035,
+    "themes": [
+      "high-tech-electromenager"
+    ],
+    "hours": "Lun-Ven 10h-17h, Sam 10h-15h, Dim fermé",
+    "zone": "centre",
+    "description": "Boutique de matériel informatique à La Chaussée, Port Louis."
   },
   {
     "id": "fabevents-fabrice-tchibault",
