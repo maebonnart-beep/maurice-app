@@ -53231,5 +53231,41 @@
     "filters": [
       "concert"
     ]
+  },
+  {
+    "id": "desirata-le-boudoir-gourmand",
+    "name": "Désirata Le Boudoir Gourmand.mu by Gelatissimo",
+    "category": "manger-boire",
+    "address": "1 Avenue des Glaïeuls, Quatre Bornes 72238",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "",
+    "zone": "centre",
+    "themes": [
+      "commerces-alimentaires",
+      "boulangeries-patisseries"
+    ],
+    "description": "Pâtisserie-salon de thé du centre de Quatre Bornes (face à l'arrêt Saint Jean du Metro Express) : pâtisserie française fine, gelato artisanal, petit-déjeuner et déjeuner, étage restaurant et espace lounge privatisable, gâteaux sur commande (anniversaires, mariages) et service traiteur.",
+    "filters": [
+      "boulangeries"
+    ]
+  },
+  {
+    "id": "ifu-cafe-trou-aux-biches",
+    "name": "Ifu Café",
+    "category": "manger-boire",
+    "address": "Trou aux Biches",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "",
+    "zone": "nord",
+    "themes": [
+      "commerces-alimentaires",
+      "boulangeries-patisseries"
+    ],
+    "description": "Café-pâtisserie de Trou aux Biches (fiche à compléter : établissement récent, présent uniquement sur Instagram pour le moment).",
+    "filters": [
+      "boulangeries"
+    ]
   }
 ]
