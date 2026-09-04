@@ -7,7 +7,7 @@ import { createClient } from "@/lib/supabase/client";
 const inputClass =
   "w-full h-[46px] px-4 rounded-xl border border-border bg-surface text-ink text-[15px] shadow-sm focus:outline-none focus:border-primary";
 
-/** Connexion par code à 6 chiffres reçu par e-mail (aucun mot de passe, pas de
+/** Connexion par code reçu par e-mail (aucun mot de passe, pas de
  *  fournisseur SMS à opérer). Le code est saisi dans le même navigateur que
  *  celui qui l'a demandé — contrairement au lien magique, ça évite les échecs
  *  quand l'e-mail est ouvert dans une autre app/navigateur que l'utilisateur. */
@@ -52,7 +52,7 @@ export function LoginForm() {
         <div className="text-center mb-1">
           <p className="font-serif text-lg font-semibold leading-tight">Vérifiez vos e-mails</p>
           <p className="text-[13px] text-muted leading-snug">
-            Entrez le code à 6 chiffres envoyé à {email}.
+            Entrez le code de connexion envoyé à {email}.
           </p>
         </div>
         <input
@@ -62,12 +62,12 @@ export function LoginForm() {
           required
           value={code}
           onChange={(e) => setCode(e.target.value)}
-          placeholder="123456"
+          placeholder="Code reçu par e-mail"
           className={`${inputClass} text-center tracking-[0.3em]`}
         />
         <button
           type="submit"
-          disabled={status === "verifying" || code.trim().length < 6}
+          disabled={status === "verifying" || code.trim().length < 4}
           className="w-full h-[48px] rounded-xl font-semibold text-[15px] bg-primary text-white active:scale-[.98] transition-transform disabled:opacity-40"
         >
           {status === "verifying" ? "Vérification…" : "Se connecter"}
