@@ -39,6 +39,7 @@ export function NouvelleAnnonceForm() {
   const [error, setError] = useState<string | null>(null);
   const [needsUpgrade, setNeedsUpgrade] = useState(false);
   const [done, setDone] = useState(false);
+  const [photoUploadFailed, setPhotoUploadFailed] = useState(false);
 
   async function handleSubmit(e: FormEvent) {
     e.preventDefault();
@@ -71,7 +72,8 @@ export function NouvelleAnnonceForm() {
     if (photo) {
       const formData = new FormData();
       formData.append("file", photo);
-      await fetch(`/api/listings/${json.listing.id}/photos`, { method: "POST", body: formData });
+      const photoRes = await fetch(`/api/listings/${json.listing.id}/photos`, { method: "POST", body: formData });
+      setPhotoUploadFailed(!photoRes.ok);
     }
 
     setSubmitting(false);
@@ -88,6 +90,11 @@ export function NouvelleAnnonceForm() {
         <p className="text-[13px] text-muted leading-snug">
           Elle sera visible dès sa validation par l&apos;équipe.
         </p>
+        {photoUploadFailed && (
+          <p className="text-[12.5px] text-red-600 leading-snug">
+            L&apos;annonce est bien envoyée, mais la photo n&apos;a pas pu être ajoutée.
+          </p>
+        )}
         <button
           onClick={() => router.push("/mon-compte")}
           className="text-[13px] font-semibold text-primary underline underline-offset-2"

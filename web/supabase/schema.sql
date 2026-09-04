@@ -158,3 +158,18 @@ $$;
 create trigger on_auth_user_created
   after insert on auth.users
   for each row execute function public.handle_new_user();
+
+-- Bucket "listing-photos" (public en lecture) : la lecture publique bypass RLS
+-- (bucket public), mais l'écriture reste soumise à RLS sur storage.objects
+-- (activé par défaut sur tout projet Supabase). Sans ces policies, l'upload
+-- échoue silencieusement côté client (l'API renvoie 500, mais le formulaire
+-- ne bloquait pas la suite du dépôt d'annonce dessus).
+-- Chemin attendu : {user_id}/{listing_id}/{timestamp}.{ext} → seul le
+-- 1er segment (dossier) sert à vérifier la propriété.
+create policy "listing_photos storage: owner insert" on storage.objects for insert
+  to authenticated
+  with check (bucket_id = 'listing-photos' and (storage.foldername(name))[1] = auth.uid()::text);
+
+create policy "listing_photos storage: owner delete" on storage.objects for delete
+  to authenticated
+  using (bucket_id = 'listing-photos' and (storage.foldername(name))[1] = auth.uid()::text);
