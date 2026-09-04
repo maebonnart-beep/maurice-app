@@ -37194,19 +37194,19 @@
   },
   {
     "id": "the-cloud-rooftop-lounge-bar-pointe-aux-canonniers",
-    "name": "The Cloud Rooftop & Lounge Bar",
+    "name": "The Cloud - Rooftop & Lounge Bar",
     "category": "manger-boire",
-    "address": "Les Enfants Terribles, Royal Road, Pointe aux Canonniers",
+    "address": "Grand Baie",
     "zone": "nord",
-    "lat": -20.0167,
-    "lng": 57.5833,
+    "lat": -19.9945772,
+    "lng": 57.5888213,
     "themes": [
       "restaurants",
       "cafes-bars-glaciers"
     ],
     "priceRange": "prix-moyen",
-    "description": "Rooftop-bar sur le toit de l'établissement Les Enfants Terribles à Pointe aux Canonniers, vue sur Hibiscus Beach, tapas et burgers gourmets, soirées à thème.",
-    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=The%20Cloud%20Rooftop%20%26%20Lounge%20Bar%20Les%20Enfants%20Terribles%2C%20Royal%20Road%2C%20Pointe%20aux%20Canonniers%20Mauritius",
+    "description": "Rooftop-bar à Grand Baie, tapas et burgers gourmets, soirées à thème.",
+    "googleMapsUrl": "https://www.google.com/maps/place/The+Cloud+-+Rooftop+%26+Lounge+Bar/@-19.9945772,57.5888213,687m/data=!3m2!1e3!4b1!4m6!3m5!1s0x217dab0c0270a3f7:0x95b3c7c1f0885b7d!8m2!3d-19.9945772!4d57.5888213!16s%2Fg%2F11s0kgy34_",
     "filters": [
       "europeenne",
       "bars"
@@ -48127,7 +48127,7 @@
     "zone": "ouest",
     "eventRecurrence": "annuel-variable",
     "filters": [
-      "sportif"
+      "trail"
     ]
   },
   {
@@ -48148,7 +48148,7 @@
     "zone": "sud",
     "eventRecurrence": "annuel-variable",
     "filters": [
-      "sportif"
+      "course-a-pied"
     ]
   },
   {
@@ -48165,7 +48165,7 @@
     "period": "Généralement fin août",
     "eventRecurrence": "annuel-variable",
     "filters": [
-      "sportif"
+      "cyclisme"
     ]
   },
   {
@@ -48186,7 +48186,7 @@
     "zone": "centre",
     "eventRecurrence": "annuel-variable",
     "filters": [
-      "sportif"
+      "courses-hippiques"
     ]
   },
   {
@@ -48207,7 +48207,7 @@
     "zone": "sud",
     "eventRecurrence": "annuel-variable",
     "filters": [
-      "sportif"
+      "trail"
     ],
     "registrationDeadline": "12 août 2026"
   },
@@ -48225,7 +48225,7 @@
     "period": "Novembre",
     "eventRecurrence": "annuel-variable",
     "filters": [
-      "sportif"
+      "trail"
     ]
   },
   {
@@ -48246,7 +48246,7 @@
     "zone": "ouest",
     "eventRecurrence": "annuel-variable",
     "filters": [
-      "sportif"
+      "trail"
     ],
     "eventStartDate": "2026-12-05",
     "eventEndDate": "2026-12-05"
@@ -48269,7 +48269,7 @@
     "zone": "sud",
     "eventRecurrence": "annuel-variable",
     "filters": [
-      "sportif"
+      "trail"
     ]
   },
   {
@@ -48290,7 +48290,7 @@
     "zone": "sud",
     "eventRecurrence": "annuel-variable",
     "filters": [
-      "sportif"
+      "trail"
     ]
   },
   {
@@ -48311,7 +48311,7 @@
     "zone": "centre",
     "eventRecurrence": "annuel-variable",
     "filters": [
-      "sportif"
+      "trail"
     ]
   },
   {
@@ -48332,7 +48332,7 @@
     "zone": "sud",
     "eventRecurrence": "annuel-variable",
     "filters": [
-      "sportif"
+      "trail"
     ]
   },
   {
@@ -51793,7 +51793,7 @@
     "zone": "centre",
     "eventRecurrence": "annuel-variable",
     "filters": [
-      "sportif"
+      "course-a-pied"
     ]
   },
   {
@@ -51814,7 +51814,7 @@
     "zone": "nord",
     "eventRecurrence": "annuel-variable",
     "filters": [
-      "sportif"
+      "trail"
     ]
   },
   {
@@ -51834,7 +51834,7 @@
     "zone": "nord",
     "eventRecurrence": "annuel-variable",
     "filters": [
-      "sportif"
+      "trail"
     ]
   },
   {
@@ -51852,7 +51852,7 @@
     "distance": "130 km (4 étapes)",
     "eventRecurrence": "annuel-variable",
     "filters": [
-      "sportif"
+      "trail"
     ]
   },
   {
@@ -51871,7 +51871,7 @@
     "zone": "ouest",
     "eventRecurrence": "annuel-variable",
     "filters": [
-      "sportif"
+      "trail"
     ]
   },
   {
@@ -51890,7 +51890,7 @@
     "zone": "ouest",
     "eventRecurrence": "annuel-variable",
     "filters": [
-      "sportif"
+      "trail"
     ]
   },
   {
@@ -51910,7 +51910,7 @@
     "zone": "ouest",
     "eventRecurrence": "annuel-variable",
     "filters": [
-      "sportif"
+      "trail"
     ]
   },
   {
@@ -51930,7 +51930,7 @@
     "zone": "sud",
     "eventRecurrence": "annuel-variable",
     "filters": [
-      "sportif"
+      "trail"
     ]
   },
   {
@@ -51950,7 +51950,7 @@
     "zone": "ouest",
     "eventRecurrence": "annuel-variable",
     "filters": [
-      "sportif"
+      "trail"
     ]
   },
   {
@@ -51969,7 +51969,7 @@
     "zone": "centre",
     "eventRecurrence": "annuel-variable",
     "filters": [
-      "sportif"
+      "trail"
     ],
     "registrationDeadline": "6 août 2026"
   },
@@ -51992,7 +51992,7 @@
     "zone": "nord",
     "eventRecurrence": "annuel-variable",
     "filters": [
-      "sportif"
+      "trail"
     ]
   },
   {
@@ -52013,7 +52013,7 @@
     "zone": "centre",
     "eventRecurrence": "annuel-variable",
     "filters": [
-      "sportif"
+      "trail"
     ]
   },
   {
@@ -52031,7 +52031,7 @@
     "distance": "5 ou 10 km",
     "eventRecurrence": "annuel-variable",
     "filters": [
-      "sportif"
+      "trail"
     ]
   },
   {
@@ -52054,7 +52054,8 @@
     "zone": "ouest",
     "eventRecurrence": "annuel-variable",
     "filters": [
-      "sportif"
+      "trail",
+      "cyclisme"
     ]
   },
   {
@@ -52075,8 +52076,7 @@
     "zone": "ouest",
     "eventRecurrence": "annuel-variable",
     "filters": [
-      "sportif",
-      "associatif-caritatif"
+      "trail"
     ]
   },
   {
@@ -52099,7 +52099,7 @@
     "zone": "ouest",
     "eventRecurrence": "annuel-variable",
     "filters": [
-      "sportif"
+      "trail"
     ]
   },
   {
@@ -52121,8 +52121,7 @@
     "zone": "est",
     "eventRecurrence": "annuel-variable",
     "filters": [
-      "sportif",
-      "associatif-caritatif"
+      "trail"
     ],
     "registrationDeadline": "20 octobre 2026"
   },
@@ -52146,7 +52145,7 @@
     "zone": "sud",
     "eventRecurrence": "annuel-variable",
     "filters": [
-      "sportif"
+      "trail"
     ]
   },
   {
@@ -52167,7 +52166,7 @@
     "zone": "sud",
     "eventRecurrence": "annuel-variable",
     "filters": [
-      "sportif"
+      "trail"
     ]
   },
   {
@@ -52189,7 +52188,7 @@
     "zone": "nord",
     "eventRecurrence": "annuel-variable",
     "filters": [
-      "sportif"
+      "course-a-pied"
     ]
   },
   {
@@ -52212,7 +52211,7 @@
     "zone": "nord",
     "eventRecurrence": "annuel-variable",
     "filters": [
-      "sportif"
+      "trail"
     ]
   },
   {
@@ -52232,7 +52231,7 @@
     "distance": "5 ou 10 km",
     "eventRecurrence": "annuel-variable",
     "filters": [
-      "sportif"
+      "trail"
     ]
   },
   {
@@ -52252,8 +52251,7 @@
     "zone": "centre",
     "eventRecurrence": "annuel-variable",
     "filters": [
-      "sportif",
-      "associatif-caritatif"
+      "trail"
     ]
   },
   {
@@ -52273,7 +52271,7 @@
     "zone": "centre",
     "eventRecurrence": "annuel-variable",
     "filters": [
-      "sportif"
+      "trail"
     ]
   },
   {
@@ -52293,8 +52291,7 @@
     "zone": "nord",
     "eventRecurrence": "annuel-variable",
     "filters": [
-      "sportif",
-      "associatif-caritatif"
+      "trail"
     ]
   },
   {
@@ -52317,7 +52314,7 @@
     "zone": "sud",
     "eventRecurrence": "annuel-variable",
     "filters": [
-      "sportif"
+      "nage-eau-libre"
     ]
   },
   {
@@ -52339,7 +52336,7 @@
     "zone": "centre",
     "eventRecurrence": "annuel-variable",
     "filters": [
-      "sportif"
+      "fitness-cross-training"
     ]
   },
   {
@@ -52360,7 +52357,7 @@
     "zone": "ouest",
     "eventRecurrence": "annuel-variable",
     "filters": [
-      "sportif"
+      "rugby"
     ]
   },
   {
@@ -52382,7 +52379,7 @@
     "zone": "sud",
     "eventRecurrence": "annuel-variable",
     "filters": [
-      "sportif"
+      "cyclisme"
     ]
   },
   {
@@ -52401,7 +52398,7 @@
     "eventEndDate": "2026-09-27",
     "eventRecurrence": "annuel-variable",
     "filters": [
-      "sportif"
+      "trail"
     ]
   },
   {
@@ -52423,7 +52420,7 @@
     "zone": "ouest",
     "eventRecurrence": "annuel-variable",
     "filters": [
-      "sportif"
+      "fitness-cross-training"
     ]
   },
   {
@@ -52445,7 +52442,7 @@
     "zone": "nord",
     "eventRecurrence": "annuel-variable",
     "filters": [
-      "sportif"
+      "cyclisme"
     ]
   },
   {
@@ -52468,7 +52465,7 @@
     "zone": "centre",
     "eventRecurrence": "annuel-variable",
     "filters": [
-      "sportif"
+      "course-a-pied"
     ]
   },
   {
@@ -52491,7 +52488,7 @@
     "zone": "nord",
     "eventRecurrence": "annuel-variable",
     "filters": [
-      "sportif"
+      "cyclisme"
     ]
   },
   {
@@ -52509,7 +52506,7 @@
     "zone": "sud",
     "eventRecurrence": "annuel-variable",
     "filters": [
-      "sportif"
+      "golf"
     ]
   },
   {
@@ -52563,8 +52560,7 @@
     "zone": "centre",
     "eventRecurrence": "annuel-variable",
     "filters": [
-      "sportif",
-      "festival"
+      "sport-nautique"
     ]
   },
   {
@@ -52758,8 +52754,7 @@
     "zone": "est",
     "eventRecurrence": "annuel-variable",
     "filters": [
-      "sportif",
-      "festival"
+      "sport-nautique"
     ]
   },
   {
@@ -52777,7 +52772,7 @@
     "zone": "sud",
     "eventRecurrence": "annuel-variable",
     "filters": [
-      "sportif"
+      "cyclisme"
     ]
   },
   {
@@ -52795,7 +52790,7 @@
     "zone": "nord",
     "eventRecurrence": "annuel-variable",
     "filters": [
-      "sportif"
+      "nage-eau-libre"
     ]
   },
   {
