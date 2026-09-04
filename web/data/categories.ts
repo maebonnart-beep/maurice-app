@@ -216,6 +216,7 @@ export const FILTER_GROUPS: FilterGroup[] = [
     options: [
       { key: "bars", label: "Bars", emoji: "🍹" },
       { key: "cafes-terrasses", label: "Cafés & terrasses", emoji: "☕" },
+      { key: "petit-dej-lunch", label: "Petit-déj & lunch", emoji: "🥐" },
       { key: "snacks-plage", label: "Snacks de plage", emoji: "🥙" },
       { key: "glaciers", label: "Glaciers", emoji: "🍦" },
     ],
@@ -480,7 +481,7 @@ export const FILTER_GROUPS: FilterGroup[] = [
   {
     key: "type-evenement",
     label: "Type d'événement",
-    appliesTo: ["evenements-culturels", "evenements-sportifs", "evenements-associatifs"],
+    appliesTo: ["evenements-culturels", "evenements-associatifs"],
     browsable: true,
     options: [
       { key: "concert", label: "Concerts", emoji: "🎤" },
@@ -488,9 +489,25 @@ export const FILTER_GROUPS: FilterGroup[] = [
       { key: "spectacle-comedie", label: "Spectacles & comédies musicales", emoji: "🎭" },
       { key: "clubbing-soiree", label: "Clubbing & soirées", emoji: "🪩" },
       { key: "culturel-traditionnel", label: "Fêtes traditionnelles & religieuses", emoji: "🛕" },
-      { key: "sportif", label: "Sportifs", emoji: "🏆" },
       { key: "associatif-caritatif", label: "Associatifs & caritatifs", emoji: "🤝" },
       { key: "culinaire", label: "Gourmands", emoji: "🍴" },
+    ],
+  },
+  {
+    key: "nature-evenement-sportif",
+    label: "Nature de l'événement",
+    appliesTo: ["evenements-sportifs"],
+    browsable: true,
+    options: [
+      { key: "trail", label: "Trails", emoji: "🥾" },
+      { key: "course-a-pied", label: "Courses à pied", emoji: "🏃" },
+      { key: "cyclisme", label: "Cyclisme & VTT", emoji: "🚴" },
+      { key: "nage-eau-libre", label: "Nage en eau libre", emoji: "🏊" },
+      { key: "sport-nautique", label: "Sports nautiques", emoji: "🏄" },
+      { key: "courses-hippiques", label: "Courses hippiques", emoji: "🐎" },
+      { key: "golf", label: "Golf", emoji: "⛳" },
+      { key: "rugby", label: "Rugby", emoji: "🏉" },
+      { key: "fitness-cross-training", label: "Fitness & cross-training", emoji: "🏋️" },
     ],
   },
 ];

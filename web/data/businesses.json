@@ -51738,6 +51738,28 @@
     ]
   },
   {
+    "id": "moca-family-calodyne",
+    "name": "Moca Family",
+    "category": "manger-boire",
+    "address": "Coastal Road, Calodyne",
+    "phone": "+230 5735 4359",
+    "website": "",
+    "googleMapsUrl": "https://maps.app.goo.gl/gqqqcrz1bFJiYehy6",
+    "lat": -20.0072761,
+    "lng": 57.6442686,
+    "themes": [
+      "cafes-bars-glaciers"
+    ],
+    "hours": "Mar-Ven 8h-16h30, Sam 9h-16h, Dim-Lun fermé",
+    "priceRange": "bon-marche",
+    "zone": "nord",
+    "description": "Café de spécialité familial à Calodyne, ambiance conviviale avec espace enfants. Cafés artisanaux, pâtisseries maison (cookies macadamia/chocolat blanc-cranberries, noix/chocolat noir, energy balls pistache). Noté 4,8/5.",
+    "filters": [
+      "cafes-terrasses",
+      "petit-dej-lunch"
+    ]
+  },
+  {
     "id": "ganesh-chaturthi-evt",
     "name": "Ganesh Chaturthi",
     "category": "agenda",
