@@ -113,7 +113,6 @@ export function BusinessDetail({
   // sous-titre quand on l'ouvre depuis la rubrique « Bars »).
   const matchesActiveContext = b.themes?.some((t) => hiddenKeys?.has(t));
   const firstTheme = matchesActiveContext ? undefined : b.themes?.find((t) => t !== "kids-friendly");
-  const subtitle = firstTheme ? SUBCATEGORIES[b.category]?.find((t) => t.key === firstTheme)?.label : undefined;
   const CategoryIcon = iconForKey(b.category);
   const bannerIcon = (firstTheme && subIconFor(firstTheme)) ?? subIconFor(b.category);
   const shareText = [
@@ -260,7 +259,6 @@ export function BusinessDetail({
             <h2 className="m-0 font-serif text-[22px] font-semibold leading-[1.15] tracking-[-.01em]">
               {displayName(b.name)}
             </h2>
-            {subtitle && <p className="m-0 text-muted text-[14px] leading-[1.4]">{subtitle}</p>}
 
             {/* Liste d'infos scannable : une ligne par info, lisible d'un coup d'œil
                 (plutôt qu'un paragraphe condensé) — utile faute de photo sur la fiche. */}

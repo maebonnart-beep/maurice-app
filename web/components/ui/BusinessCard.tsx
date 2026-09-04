@@ -81,24 +81,21 @@ export function BusinessCard({
 }) {
   const accentColor = accentColorFor(b.badge, b.isAgency);
   const price = b.priceRange ? PRICE_RANGES.find((p) => p.key === b.priceRange) : undefined;
-  // Type de lieu (rubrique) : première rubrique/thème de la fiche, affiché en
-  // tag coloré (couleur de la catégorie) pour dire au premier coup d'œil si
-  // c'est un restaurant, une plage, une randonnée... — plus visible qu'un
-  // sous-titre gris.
-  // Si la fiche correspond déjà au contexte de navigation actif (rubrique
-  // ou facette sélectionnée), on masque le tag entièrement plutôt que d'en
-  // montrer un autre : sinon une fiche multi-rubriques (ex. bar ET
-  // restaurant) affiche « Restaurant » alors qu'on navigue dans « Bars »,
-  // ce qui laisse croire à une erreur de catégorisation.
-  const matchesActiveContext = b.themes?.some((t) => hiddenKeys?.has(t));
-  const firstTheme = matchesActiveContext
-    ? undefined
-    : b.themes?.find((t) => t !== "kids-friendly");
-  const rubrique = firstTheme ? SUBCATEGORIES[b.category]?.find((t) => t.key === firstTheme) : undefined;
-  const RubriqueIcon = firstTheme ? iconForKey(firstTheme) : null;
+  // Type(s) de lieu (rubriques) : chaque rubrique/thème de la fiche est
+  // affiché en tag coloré (couleur de la catégorie) pour dire au premier
+  // coup d'œil si c'est un restaurant, un bar, une plage... — toutes au même
+  // niveau visuel (une fiche bar ET restaurant affiche les deux tags,
+  // identiques en style, plutôt que de n'en montrer qu'un seul en avant).
+  // Une rubrique déjà impliquée par le contexte de navigation actif est
+  // masquée (redondante avec la rubrique/facette sélectionnée).
+  const firstTheme = b.themes?.find((t) => t !== "kids-friendly");
+  const rubriques = (b.themes ?? [])
+    .filter((t) => t !== "kids-friendly" && !hiddenKeys?.has(t))
+    .map((t) => ({ theme: SUBCATEGORIES[b.category]?.find((s) => s.key === t), key: t }))
+    .filter((r): r is { theme: NonNullable<(typeof r)["theme"]>; key: string } => Boolean(r.theme));
   const categoryColor = CATEGORY_MAP[b.category].color;
   const bannerIcon = (firstTheme && subIconFor(firstTheme)) ?? subIconFor(b.category);
-  const BannerFallbackIcon = RubriqueIcon ?? iconForKey(b.category);
+  const BannerFallbackIcon = (firstTheme && iconForKey(firstTheme)) ?? iconForKey(b.category);
   // 1-2 infos concrètes pour ne pas se limiter au nom/adresse au 1er coup d'œil.
   const facts = metaFacts(b).slice(0, 2);
   // Tags de filtre (cuisine, ambiance, spécialité…) portés par la fiche —
@@ -157,21 +154,25 @@ export function BusinessCard({
             {displayName(b.name)}
           </h3>
         </div>
-        {(rubrique || b.isAgency) && (
+        {(rubriques.length > 0 || b.isAgency) && (
           <p className="m-0 mt-0.5 flex items-center gap-1.5 flex-wrap">
-            {rubrique && (
-              <span
-                className="inline-flex items-center gap-1 text-[11px] font-bold px-1.5 py-0.5 rounded-pill"
-                style={{ background: `color-mix(in srgb, ${categoryColor} 15%, var(--surface))`, color: categoryColor }}
-              >
-                {RubriqueIcon ? (
-                  <RubriqueIcon size={11} weight="bold" aria-hidden />
-                ) : (
-                  <span aria-hidden>{rubrique.emoji}</span>
-                )}
-                {rubrique.label}
-              </span>
-            )}
+            {rubriques.map(({ theme, key }) => {
+              const RubriqueIcon = iconForKey(key);
+              return (
+                <span
+                  key={key}
+                  className="inline-flex items-center gap-1 text-[11px] font-bold px-1.5 py-0.5 rounded-pill"
+                  style={{ background: `color-mix(in srgb, ${categoryColor} 15%, var(--surface))`, color: categoryColor }}
+                >
+                  {RubriqueIcon ? (
+                    <RubriqueIcon size={11} weight="bold" aria-hidden />
+                  ) : (
+                    <span aria-hidden>{theme.emoji}</span>
+                  )}
+                  {theme.label}
+                </span>
+              );
+            })}
             {b.isAgency && (
               <span
                 className="inline-flex items-center gap-1 text-[11px] font-bold px-1.5 py-0.5 rounded-pill text-white"
