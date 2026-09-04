@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Link from "next/link";
 import type { Listing } from "@/lib/marketplace/types";
 import { LISTING_CATEGORIES } from "@/lib/marketplace/types";
 import { listingPhotoUrl } from "@/lib/marketplace/constants";
@@ -58,7 +59,12 @@ export function AdminSecondeMainClient() {
 
   return (
     <div className="max-w-[720px] mx-auto px-4 py-8">
-      <h1 className="text-xl font-semibold mb-4">Modération — Seconde main</h1>
+      <div className="flex items-center justify-between gap-3 mb-4">
+        <h1 className="text-xl font-semibold">Modération — Seconde main</h1>
+        <Link href="/admin/utilisateurs" className="text-sm text-primary underline underline-offset-2">
+          Utilisateurs
+        </Link>
+      </div>
 
       {error && <p className="text-red-600 text-sm mb-4">{error}</p>}
       {loading && <p className="text-sm text-gray-500">Chargement…</p>}
