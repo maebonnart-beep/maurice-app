@@ -84,6 +84,7 @@ import {
   Car,
   Backpack,
   PersonSimpleWalk,
+  Storefront,
 } from "@phosphor-icons/react";
 import type { Icon } from "@phosphor-icons/react";
 
@@ -2335,6 +2336,13 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
 
               {/* Actions rapides. */}
               <div className="bg-surface border border-border rounded-2xl shadow-sm overflow-hidden">
+                <Link
+                  href="/mon-compte"
+                  className="w-full flex items-center gap-3 px-4 py-3.5 text-left active:bg-surface-2 transition-colors border-b border-border"
+                >
+                  <Storefront size={18} weight="regular" className="text-muted" aria-hidden />
+                  <span className="flex-1 text-[13.5px] text-ink">Mon compte Seconde main</span>
+                </Link>
                 <button
                   onClick={() => { setBrowseAll(false); setHomeCategory(null); setHomeMode("listes"); window.scrollTo({ top: 0, behavior: "smooth" }); }}
                   className="w-full flex items-center gap-3 px-4 py-3.5 text-left active:bg-surface-2 transition-colors border-b border-border"
