@@ -99,7 +99,6 @@ export function SuggestPhotoButton({ businessId, businessName }: { businessId: s
         ref={fileInputRef}
         type="file"
         accept="image/*"
-        capture="environment"
         onChange={(e) => setPhoto(e.target.files?.[0] ?? null)}
         className="hidden"
       />
