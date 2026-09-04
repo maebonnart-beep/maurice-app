@@ -7,14 +7,16 @@ export const EVENT_TYPE_COLOR: Record<string, string> = {
   "spectacle-comedie": "#ec4899",
   "clubbing-soiree": "#6366f1",
   "culturel-traditionnel": "#eab308",
-  sportif: "#22c55e",
   "associatif-caritatif": "#0ea5e9",
   culinaire: "#ef4444",
 };
+export const SPORT_EVENT_COLOR = "#22c55e";
 export const DEFAULT_EVENT_COLOR = "#e0518a";
 
-/** Couleur d'un événement : celle de son premier filtre de type reconnu, sinon la couleur par défaut. */
+/** Couleur d'un événement : verte pour toute la rubrique "Événements sportifs" (quelle que soit sa nature),
+ * sinon celle de son premier filtre de type reconnu, sinon la couleur par défaut. */
 export function eventColorFor(b: Business): string {
+  if ((b.themes || []).includes("evenements-sportifs")) return SPORT_EVENT_COLOR;
   return (b.filters || []).map((f) => EVENT_TYPE_COLOR[f]).find(Boolean) ?? DEFAULT_EVENT_COLOR;
 }
 
