@@ -194,3 +194,21 @@ create policy "listing_photos storage: owner insert" on storage.objects for inse
 create policy "listing_photos storage: owner delete" on storage.objects for delete
   to authenticated
   using (bucket_id = 'listing-photos' and (storage.foldername(name))[1] = auth.uid()::text);
+
+-- Photo de profil éditable (« Mon compte ») : même principe que listing-photos
+-- ci-dessus. Le bucket "avatars" (public en lecture) doit être créé à la main
+-- dans le dashboard Supabase (Storage → New bucket → "avatars", public) : ce
+-- fichier ne crée que la colonne et les policies, pas le bucket lui-même.
+alter table profiles add column avatar_url text;
+
+create policy "avatars storage: owner insert" on storage.objects for insert
+  to authenticated
+  with check (bucket_id = 'avatars' and (storage.foldername(name))[1] = auth.uid()::text);
+
+create policy "avatars storage: owner update" on storage.objects for update
+  to authenticated
+  using (bucket_id = 'avatars' and (storage.foldername(name))[1] = auth.uid()::text);
+
+create policy "avatars storage: owner delete" on storage.objects for delete
+  to authenticated
+  using (bucket_id = 'avatars' and (storage.foldername(name))[1] = auth.uid()::text);

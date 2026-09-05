@@ -261,6 +261,23 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
     setTimeout(() => setShareFeedback(null), 2500);
   }, [shareSelectionBusinesses]);
 
+  // Profil → photo de profil : aperçu local mis à jour dès l'upload réussi,
+  // sans attendre le refetch async de useAccount().
+  const [avatarPreview, setAvatarPreview] = useState<string | null>(null);
+  const [avatarUploading, setAvatarUploading] = useState(false);
+  const avatarFileRef = useRef<HTMLInputElement>(null);
+  const uploadAvatar = useCallback(async (file: File) => {
+    setAvatarUploading(true);
+    const formData = new FormData();
+    formData.append("file", file);
+    const res = await fetch("/api/profile/avatar", { method: "POST", body: formData });
+    if (res.ok) {
+      const { avatarUrl } = (await res.json()) as { avatarUrl: string };
+      setAvatarPreview(avatarUrl);
+    }
+    setAvatarUploading(false);
+  }, []);
+
   // Profil → sauvegarde des favoris : export/import d'un fichier JSON, seul
   // moyen de ne pas perdre ses favoris (localStorage uniquement, pas de compte).
   const [backupFeedback, setBackupFeedback] = useState<string | null>(null);
@@ -1553,7 +1570,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
               </div>
 
               <Link
-                href="/seconde-main"
+                href={account.loggedIn ? "/seconde-main" : "/mon-compte"}
                 className="mt-6 flex items-center justify-between gap-3 rounded-2xl px-4 py-3.5 no-underline text-ink shadow-card"
                 style={{ background: "linear-gradient(135deg, color-mix(in srgb, var(--primary) 16%, var(--surface)) 0%, var(--surface) 75%)", border: "1px solid var(--border)" }}
               >
@@ -2217,29 +2234,52 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
           {showHome && homeMode === "profil" && (
             <div className="pb-16 pt-4 max-w-[560px] mx-auto flex flex-col gap-4">
               <div className="text-center bg-surface border border-border rounded-2xl shadow-sm p-6 flex flex-col items-center gap-3">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src="/avatar-admin.png"
-                  alt="Photo de profil"
-                  className="w-20 h-20 rounded-full object-cover"
-                />
+                <div className="relative w-20 h-20">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={avatarPreview ?? account.avatarUrl ?? "/avatar-admin.png"}
+                    alt="Photo de profil"
+                    className="w-20 h-20 rounded-full object-cover"
+                  />
+                  {account.loggedIn && (
+                    <>
+                      <input
+                        ref={avatarFileRef}
+                        type="file"
+                        accept="image/*"
+                        className="hidden"
+                        onChange={(e) => {
+                          const file = e.target.files?.[0];
+                          if (file) uploadAvatar(file);
+                          e.target.value = "";
+                        }}
+                      />
+                      <button
+                        type="button"
+                        onClick={() => avatarFileRef.current?.click()}
+                        disabled={avatarUploading}
+                        aria-label="Modifier la photo de profil"
+                        className="absolute bottom-0 right-0 w-7 h-7 rounded-full bg-primary text-white flex items-center justify-center shadow-sm active:scale-[.95] transition-transform disabled:opacity-60"
+                      >
+                        <Camera size={14} weight="bold" aria-hidden />
+                      </button>
+                    </>
+                  )}
+                </div>
                 {account.loading ? (
                   <p className="text-[13px] text-muted leading-snug">Chargement…</p>
                 ) : account.loggedIn ? (
                   <>
                     <p className="font-serif text-lg font-semibold leading-tight break-all">{account.email}</p>
-                    <div className="flex items-center gap-2 flex-wrap justify-center">
-                      <span className="text-[11px] font-bold px-2.5 py-1 rounded-pill bg-primary-tint text-primary-deep">
-                        {account.role === "admin" ? "Admin" : account.role === "community" ? "Contributeur KM" : "Découverte"}
-                      </span>
-                      <span
-                        className={`text-[11px] font-bold px-2.5 py-1 rounded-pill ${
-                          account.isPremium ? "bg-primary-tint text-primary-deep" : "bg-surface-2 text-muted"
-                        }`}
-                      >
-                        {account.isPremium ? "Premium" : "Formule gratuite"}
-                      </span>
-                    </div>
+                    <span className="text-[11px] font-bold px-2.5 py-1 rounded-pill bg-primary-tint text-primary-deep">
+                      {account.role === "admin"
+                        ? "Admin"
+                        : account.role === "community"
+                        ? "Contributeur KM"
+                        : account.isPremium
+                        ? "Premium"
+                        : "Découverte"}
+                    </span>
                   </>
                 ) : (
                   <>
@@ -2298,43 +2338,6 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                 </Link>
               )}
 
-              {/* Stats : accès direct à chaque statut, comme les chips en haut de « Sélections ». */}
-              <div className="grid grid-cols-3 gap-2.5">
-                <button
-                  onClick={() => { setHomeMode("favoris"); window.scrollTo({ top: 0, behavior: "smooth" }); }}
-                  className="flex flex-col items-center gap-1 rounded-2xl border border-border p-3 active:scale-[.97] transition-transform"
-                  style={{ background: `color-mix(in srgb, ${COUP_DE_COEUR_COLOR} 10%, var(--surface))` }}
-                >
-                  <Heart size={20} weight="fill" aria-hidden style={{ color: COUP_DE_COEUR_COLOR }} />
-                  <span className="text-[17px] font-bold leading-none" style={{ color: COUP_DE_COEUR_COLOR }}>
-                    {favoriteBusinesses.length}
-                  </span>
-                  <span className="text-[11px] text-muted leading-none">Favoris</span>
-                </button>
-                <button
-                  onClick={() => { setHomeMode("favoris"); window.scrollTo({ top: 0, behavior: "smooth" }); }}
-                  className="flex flex-col items-center gap-1 rounded-2xl border border-border p-3 active:scale-[.97] transition-transform"
-                  style={{ background: "color-mix(in srgb, #f5a623 10%, var(--surface))" }}
-                >
-                  <Flag size={20} weight="fill" aria-hidden style={{ color: "#f5a623" }} />
-                  <span className="text-[17px] font-bold leading-none" style={{ color: "#f5a623" }}>
-                    {aTesterBusinesses.length}
-                  </span>
-                  <span className="text-[11px] text-muted leading-none">À tester</span>
-                </button>
-                <button
-                  onClick={() => { setHomeMode("favoris"); window.scrollTo({ top: 0, behavior: "smooth" }); }}
-                  className="flex flex-col items-center gap-1 rounded-2xl border border-border p-3 active:scale-[.97] transition-transform"
-                  style={{ background: "color-mix(in srgb, #2e9e5b 10%, var(--surface))" }}
-                >
-                  <CheckCircle size={20} weight="fill" aria-hidden style={{ color: "#2e9e5b" }} />
-                  <span className="text-[17px] font-bold leading-none" style={{ color: "#2e9e5b" }}>
-                    {testeBusinesses.length}
-                  </span>
-                  <span className="text-[11px] text-muted leading-none">Testé</span>
-                </button>
-              </div>
-
               {/* Vos catégories préférées : top 3 parmi tout ce qui a un statut. */}
               {profilTopCategories.length > 0 && (
                 <div className="bg-surface border border-border rounded-2xl shadow-sm p-4">
@@ -2353,36 +2356,129 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                 </div>
               )}
 
-              {/* Mes listes favorites : sélections éditoriales mises en favori. */}
-              {profilFavoriteSelections.length > 0 && (
-                <div className="bg-surface border border-border rounded-2xl shadow-sm p-4">
-                  <p className="m-0 mb-3 text-[13px] font-bold text-ink">Mes listes favorites</p>
-                  <div className="flex flex-col gap-2">
-                    {profilFavoriteSelections.map((s) => {
-                      const SIcon = SELECTION_ICONS[s.icon];
-                      return (
-                        <button
-                          key={s.id}
-                          onClick={() => { setBrowseAll(false); setHomeCategory(null); setHomeMode("listes"); setSelectedListId(s.id); window.scrollTo({ top: 0, behavior: "smooth" }); }}
-                          className="w-full flex items-center gap-2.5 rounded-xl border border-border p-2.5 text-left active:scale-[.98] transition-transform"
-                        >
-                          <span
-                            className="w-8 h-8 shrink-0 rounded-full flex items-center justify-center text-white"
-                            style={{ background: "var(--primary, #087e8b)" }}
-                          >
-                            <SIcon size={16} weight="fill" aria-hidden />
-                          </span>
-                          <span className="flex-1 min-w-0">
-                            <span className="block text-[13px] font-semibold text-ink truncate">{s.title}</span>
-                            <span className="block text-[11px] text-muted">{s.businessIds.length} adresses</span>
-                          </span>
-                          <Heart size={16} weight="fill" aria-hidden style={{ color: COUP_DE_COEUR_COLOR }} />
-                        </button>
-                      );
-                    })}
-                  </div>
+              {/* Mes favoris : fiches (favoris/à tester/testé), listes KM favorites et
+                  partage regroupés dans une seule carte (demande utilisateur). */}
+              <div className="bg-surface border border-border rounded-2xl shadow-sm p-4 flex flex-col gap-4">
+                <div className="grid grid-cols-3 gap-2.5">
+                  <button
+                    onClick={() => { setHomeMode("favoris"); window.scrollTo({ top: 0, behavior: "smooth" }); }}
+                    className="flex flex-col items-center gap-1 rounded-2xl border border-border p-3 active:scale-[.97] transition-transform"
+                    style={{ background: `color-mix(in srgb, ${COUP_DE_COEUR_COLOR} 10%, var(--surface))` }}
+                  >
+                    <Heart size={20} weight="fill" aria-hidden style={{ color: COUP_DE_COEUR_COLOR }} />
+                    <span className="text-[17px] font-bold leading-none" style={{ color: COUP_DE_COEUR_COLOR }}>
+                      {favoriteBusinesses.length}
+                    </span>
+                    <span className="text-[11px] text-muted leading-none">Favoris</span>
+                  </button>
+                  <button
+                    onClick={() => { setHomeMode("favoris"); window.scrollTo({ top: 0, behavior: "smooth" }); }}
+                    className="flex flex-col items-center gap-1 rounded-2xl border border-border p-3 active:scale-[.97] transition-transform"
+                    style={{ background: "color-mix(in srgb, #f5a623 10%, var(--surface))" }}
+                  >
+                    <Flag size={20} weight="fill" aria-hidden style={{ color: "#f5a623" }} />
+                    <span className="text-[17px] font-bold leading-none" style={{ color: "#f5a623" }}>
+                      {aTesterBusinesses.length}
+                    </span>
+                    <span className="text-[11px] text-muted leading-none">À tester</span>
+                  </button>
+                  <button
+                    onClick={() => { setHomeMode("favoris"); window.scrollTo({ top: 0, behavior: "smooth" }); }}
+                    className="flex flex-col items-center gap-1 rounded-2xl border border-border p-3 active:scale-[.97] transition-transform"
+                    style={{ background: "color-mix(in srgb, #2e9e5b 10%, var(--surface))" }}
+                  >
+                    <CheckCircle size={20} weight="fill" aria-hidden style={{ color: "#2e9e5b" }} />
+                    <span className="text-[17px] font-bold leading-none" style={{ color: "#2e9e5b" }}>
+                      {testeBusinesses.length}
+                    </span>
+                    <span className="text-[11px] text-muted leading-none">Testé</span>
+                  </button>
                 </div>
-              )}
+
+                {profilFavoriteSelections.length > 0 && (
+                  <div className="border-t border-border pt-4">
+                    <p className="m-0 mb-3 text-[13px] font-bold text-ink">Mes listes favorites</p>
+                    <div className="flex flex-col gap-2">
+                      {profilFavoriteSelections.map((s) => {
+                        const SIcon = SELECTION_ICONS[s.icon];
+                        return (
+                          <button
+                            key={s.id}
+                            onClick={() => { setBrowseAll(false); setHomeCategory(null); setHomeMode("listes"); setSelectedListId(s.id); window.scrollTo({ top: 0, behavior: "smooth" }); }}
+                            className="w-full flex items-center gap-2.5 rounded-xl border border-border p-2.5 text-left active:scale-[.98] transition-transform"
+                          >
+                            <span
+                              className="w-8 h-8 shrink-0 rounded-full flex items-center justify-center text-white"
+                              style={{ background: "var(--primary, #087e8b)" }}
+                            >
+                              <SIcon size={16} weight="fill" aria-hidden />
+                            </span>
+                            <span className="flex-1 min-w-0">
+                              <span className="block text-[13px] font-semibold text-ink truncate">{s.title}</span>
+                              <span className="block text-[11px] text-muted">{s.businessIds.length} adresses</span>
+                            </span>
+                            <Heart size={16} weight="fill" aria-hidden style={{ color: COUP_DE_COEUR_COLOR }} />
+                          </button>
+                        );
+                      })}
+                    </div>
+                  </div>
+                )}
+
+                <div className="border-t border-border pt-1 -mx-4">
+                  <button
+                    onClick={() => setSharePanelOpen((v) => !v)}
+                    disabled={favorisMapBusinesses.length === 0}
+                    aria-expanded={sharePanelOpen}
+                    className="w-full flex items-center gap-3 px-4 py-3 text-left active:bg-surface-2 transition-colors disabled:opacity-40 rounded-xl"
+                  >
+                    <Heart size={18} weight="regular" className="text-muted" aria-hidden />
+                    <span className="flex-1 text-[13.5px] text-ink">Partager mes adresses</span>
+                    {shareFeedback && <span className="text-[11.5px] font-semibold text-primary-deep">{shareFeedback}</span>}
+                  </button>
+                  {sharePanelOpen && (
+                    <div className="px-4 py-3.5 flex flex-col gap-3" style={{ background: "var(--surface-2)" }}>
+                      <p className="m-0 text-[12px] font-semibold text-muted">Quelles adresses partager ?</p>
+                      <div className="flex items-center gap-2 flex-wrap">
+                        {(
+                          [
+                            { status: "favori" as const, label: "Coups de cœur", color: COUP_DE_COEUR_COLOR, count: favoriteBusinesses.length },
+                            { status: "a-tester" as const, label: "À tester", color: "#f5a623", count: aTesterBusinesses.length },
+                            { status: "teste" as const, label: "Testé", color: "#2e9e5b", count: testeBusinesses.length },
+                          ]
+                        ).map(({ status, label, color, count }) => {
+                          const active = shareStatuses.has(status);
+                          return (
+                            <button
+                              key={status}
+                              type="button"
+                              onClick={() => toggleShareStatus(status)}
+                              disabled={count === 0}
+                              aria-pressed={active}
+                              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-pill text-[12.5px] font-bold active:scale-[.97] transition-transform disabled:opacity-40"
+                              style={
+                                active
+                                  ? { background: `color-mix(in srgb, ${color} 15%, var(--surface))`, color, boxShadow: `inset 0 0 0 1.5px ${color}` }
+                                  : { background: "var(--surface)", color: "var(--muted)" }
+                              }
+                            >
+                              {label} ({count})
+                            </button>
+                          );
+                        })}
+                      </div>
+                      <button
+                        onClick={shareFavoris}
+                        disabled={shareSelectionBusinesses.length === 0}
+                        className="w-full flex items-center justify-center gap-2 px-4 py-2.5 rounded-full text-[13px] font-bold text-white disabled:opacity-40 active:scale-[.98] transition-transform"
+                        style={{ background: "var(--primary)" }}
+                      >
+                        Partager ({shareSelectionBusinesses.length})
+                      </button>
+                    </div>
+                  )}
+                </div>
+              </div>
 
               {/* Mes suggestions : historique local des adresses proposées, avec
                   détection best-effort (nom + catégorie) de leur intégration. */}
@@ -2429,57 +2525,6 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                     <Plus size={18} weight="regular" className="text-muted" aria-hidden />
                     <span className="flex-1 text-[13.5px] text-ink">Suggérer une adresse</span>
                   </button>
-                )}
-                <button
-                  onClick={() => setSharePanelOpen((v) => !v)}
-                  disabled={favorisMapBusinesses.length === 0}
-                  aria-expanded={sharePanelOpen}
-                  className="w-full flex items-center gap-3 px-4 py-3.5 text-left active:bg-surface-2 transition-colors disabled:opacity-40 border-b border-border"
-                >
-                  <Heart size={18} weight="regular" className="text-muted" aria-hidden />
-                  <span className="flex-1 text-[13.5px] text-ink">Partager mes adresses</span>
-                  {shareFeedback && <span className="text-[11.5px] font-semibold text-primary-deep">{shareFeedback}</span>}
-                </button>
-                {sharePanelOpen && (
-                  <div className="px-4 py-3.5 border-b border-border flex flex-col gap-3" style={{ background: "var(--surface-2)" }}>
-                    <p className="m-0 text-[12px] font-semibold text-muted">Quelles adresses partager ?</p>
-                    <div className="flex items-center gap-2 flex-wrap">
-                      {(
-                        [
-                          { status: "favori" as const, label: "Coups de cœur", color: COUP_DE_COEUR_COLOR, count: favoriteBusinesses.length },
-                          { status: "a-tester" as const, label: "À tester", color: "#f5a623", count: aTesterBusinesses.length },
-                          { status: "teste" as const, label: "Testé", color: "#2e9e5b", count: testeBusinesses.length },
-                        ]
-                      ).map(({ status, label, color, count }) => {
-                        const active = shareStatuses.has(status);
-                        return (
-                          <button
-                            key={status}
-                            type="button"
-                            onClick={() => toggleShareStatus(status)}
-                            disabled={count === 0}
-                            aria-pressed={active}
-                            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-pill text-[12.5px] font-bold active:scale-[.97] transition-transform disabled:opacity-40"
-                            style={
-                              active
-                                ? { background: `color-mix(in srgb, ${color} 15%, var(--surface))`, color, boxShadow: `inset 0 0 0 1.5px ${color}` }
-                                : { background: "var(--surface)", color: "var(--muted)" }
-                            }
-                          >
-                            {label} ({count})
-                          </button>
-                        );
-                      })}
-                    </div>
-                    <button
-                      onClick={shareFavoris}
-                      disabled={shareSelectionBusinesses.length === 0}
-                      className="w-full flex items-center justify-center gap-2 px-4 py-2.5 rounded-full text-[13px] font-bold text-white disabled:opacity-40 active:scale-[.98] transition-transform"
-                      style={{ background: "var(--primary)" }}
-                    >
-                      Partager ({shareSelectionBusinesses.length})
-                    </button>
-                  </div>
                 )}
                 <button
                   onClick={exportFavoris}

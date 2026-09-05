@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { createClient } from "@/lib/supabase/client";
 import type { Listing } from "./types";
 import { mapListingRow } from "./mapRow";
+import { avatarUrl as avatarPublicUrl } from "./constants";
 
 export type AccountRole = "normal" | "community" | "admin";
 
@@ -11,6 +12,7 @@ export type AccountState = {
   loading: boolean;
   loggedIn: boolean;
   email: string | null;
+  avatarUrl: string | null;
   isPremium: boolean;
   role: AccountRole;
   listings: Listing[];
@@ -20,6 +22,7 @@ const IDLE_STATE: AccountState = {
   loading: true,
   loggedIn: false,
   email: null,
+  avatarUrl: null,
   isPremium: false,
   role: "normal",
   listings: [],
@@ -48,7 +51,7 @@ export function useAccount(): AccountState {
       const [{ data: profile }, listingsRes] = await Promise.all([
         supabase
           .from("profiles")
-          .select("subscription_status, is_admin, is_community_member")
+          .select("subscription_status, is_admin, is_community_member, avatar_url")
           .eq("id", user.id)
           .single(),
         fetch("/api/listings"),
@@ -62,6 +65,7 @@ export function useAccount(): AccountState {
         loading: false,
         loggedIn: true,
         email: user.email ?? null,
+        avatarUrl: profile?.avatar_url ? avatarPublicUrl(profile.avatar_url) : null,
         isPremium: profile?.subscription_status === "active",
         role: profile?.is_admin ? "admin" : profile?.is_community_member ? "community" : "normal",
         listings: listingsRows.map(mapListingRow),

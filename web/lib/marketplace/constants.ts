@@ -12,3 +12,10 @@ export const LISTING_PHOTOS_BUCKET = "listing-photos";
 export function listingPhotoUrl(storagePath: string): string {
   return `${process.env.NEXT_PUBLIC_SUPABASE_URL}/storage/v1/object/public/${LISTING_PHOTOS_BUCKET}/${storagePath}`;
 }
+
+export const AVATAR_BUCKET = "avatars";
+
+/** URL publique d'une photo de profil à partir de son storage_path (bucket public en lecture). */
+export function avatarUrl(storagePath: string): string {
+  return `${process.env.NEXT_PUBLIC_SUPABASE_URL}/storage/v1/object/public/${AVATAR_BUCKET}/${storagePath}`;
+}
