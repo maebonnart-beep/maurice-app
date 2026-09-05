@@ -41449,7 +41449,8 @@
     "description": "Pharmacie. Médicaments sur ordonnance, parapharmacie et conseils santé. Horaires : lun–sam 8h–20h, dim & jours fériés 8h–14h.",
     "filters": [
       "pharmacies"
-    ]
+    ],
+    "hours": "Lun-Sam 8h-20h, Dim & jours fériés 8h-14h"
   },
   {
     "id": "pharmacie-pharmacie-cap-malheureux",
@@ -43317,7 +43318,8 @@
     "description": "Laboratoire d’analyses médicales : prélèvements et examens biologiques. Horaires : lun-ven 07h-17h; sam 07h-14h.",
     "filters": [
       "laboratoires"
-    ]
+    ],
+    "hours": "Lun-Ven 7h-17h, Sam 7h-14h"
   },
   {
     "id": "helios-eyewear-shop",
@@ -43333,12 +43335,11 @@
       "medecins-soins"
     ],
     "zone": "nord",
-    "hours": "Lun-Sam 9h-17h, fermé le dimanche",
+    "hours": "Lun-Sam 9h-17h, fermé dim",
     "description": "Opticien mauricien Helios Eyewear (lunettes de soleil et optiques \"Made in Moris\") : lunettes, lentilles et examens de vue.",
     "filters": [
       "opticiens"
-    ],
-    "hours": "Lun-Sam 9h-17h, fermé dim"
+    ]
   },
   {
     "id": "twinmed-ltd",
@@ -53568,5 +53569,22 @@
       "librairies-jeux-loisirs"
     ],
     "description": "Boutique d'import Japon spécialisée dans les goodies, figurines, peluches et cartes de collection, au Quartier des Serres du Domaine de Labourdonnais."
+  },
+  {
+    "id": "ocean-pearls-labourdonnais",
+    "name": "Ocean Pearls",
+    "category": "acheter-equiper",
+    "address": "Quartier des Serres, Domaine de Labourdonnais, Mapou",
+    "phone": "",
+    "website": "https://oceanopearls.mu/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Ocean+Pearls+Quartier+des+Serres+Mapou",
+    "lat": -20.0706412,
+    "lng": 57.6155391,
+    "zone": "nord",
+    "hours": "Lun-Ven 9h-18h, Sam 9h-17h, fermé le dimanche",
+    "themes": [
+      "mode-accessoires"
+    ],
+    "description": "Bijouterie de la marque mauricienne Oceano Pearls (bijoux de perles), au Quartier des Serres du Domaine de Labourdonnais."
   }
 ]
