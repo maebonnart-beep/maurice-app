@@ -83,8 +83,13 @@ export function CategoryRow({
   const subIcon = subIconFor(resolvedKey);
   const Icon = iconForKey(resolvedKey);
 
+  // Rubrique "Agenda" : ce sont des événements, pas des adresses.
   const countLabel =
-    count !== undefined ? `${count} adresse${count > 1 ? "s" : ""}` : undefined;
+    count !== undefined
+      ? category === "agenda"
+        ? `${count} événement${count > 1 ? "s" : ""}`
+        : `${count} adresse${count > 1 ? "s" : ""}`
+      : undefined;
 
   // Ligne « mascotte » (catégorie) : reprend à l'identique la maquette
   // « Explorer Koté Moris » de la cliente — bandeau mascotte détourée en

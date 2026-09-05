@@ -114,6 +114,14 @@ const RUBRIQUE_MAP: Record<string, { key: string; label: string; emoji: string }
     .map((s) => [s.key, s])
 );
 
+// Catégorie parente d'une rubrique (ex. "evenements-culturels" → "agenda") —
+// utilisé pour adapter le libellé du compteur ("événements" vs "adresses").
+const RUBRIQUE_CATEGORY_MAP: Record<string, CategoryKey> = Object.fromEntries(
+  Object.entries(SUBCATEGORIES).flatMap(([cat, subs]) =>
+    (subs ?? []).map((s) => [s.key, cat as CategoryKey])
+  )
+);
+
 // Emoji par option de filtre (ex. "concert" → 🎤, "festival" → 🎪), plus précis
 // que l'emoji de rubrique pour distinguer les types d'événements sur l'accueil.
 const FILTER_OPTION_EMOJI: Record<string, string> = Object.fromEntries(
@@ -1788,6 +1796,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                     {topRubriques.map((t) => (
                       <CategoryRow
                         key={t.key}
+                        category={RUBRIQUE_CATEGORY_MAP[t.key]}
                         iconKey={t.key}
                         emoji={t.emoji}
                         label={t.label}
@@ -1838,6 +1847,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                   .map((s) => (
                     <CategoryRow
                       key={s.key}
+                      category={homeCategory}
                       iconKey={s.key}
                       emoji={s.emoji}
                       label={s.label}
@@ -1876,6 +1886,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                     .map((o) => (
                       <CategoryRow
                         key={o.key}
+                        category={RUBRIQUE_CATEGORY_MAP[homeSubRubrique]}
                         iconKey={o.key}
                         emoji={o.emoji}
                         label={o.label}
