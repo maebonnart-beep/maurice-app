@@ -24,7 +24,8 @@ export type SelectionIconKey =
   | "BookOpen"
   | "Car"
   | "Backpack"
-  | "PersonSimpleWalk";
+  | "PersonSimpleWalk"
+  | "Package";
 
 export type Selection = {
   id: string;
@@ -618,6 +619,24 @@ export const SELECTIONS: Selection[] = [
       "centre-avek-twae-pereybere",
       "ateliers-theatre-oz",
       "cavalia-ecole-d-equitation",
+    ],
+  },
+  {
+    id: "livraison-repas-domicile",
+    emoji: "📦",
+    title: "Se faire livrer des repas à domicile",
+    tagline: "Box de repas cuisinés maison et traiteurs qui livrent chez vous",
+    group: "besoins",
+    icon: "Package",
+    photoUrl: "https://images.pexels.com/photos/4114122/pexels-photo-4114122.jpeg?auto=compress&cs=tinysrgb&w=800",
+    photoCredit: "Ella Olsson / Pexels",
+    businessIds: [
+      "cook-by-elo",
+      "lunchbox-by-sarah",
+      "la-french-cuisine",
+      "clido-catering",
+      "jl-cuisine-passion",
+      "cuisinier-ile-maurice",
     ],
   },
 ];

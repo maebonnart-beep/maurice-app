@@ -14706,6 +14706,19 @@
     "description": "Traiteur et livraison de repas frais à domicile, disponible uniquement dans le nord de l'île (Grand Baie) : menu de la semaine (entrée/plat/dessert), sandwichs et extras à la carte, plats végétariens, salades et poke bowls. Très bien noté (100% recommandé, 9 avis)."
   },
   {
+    "id": "cook-by-elo",
+    "name": "Cook by Elo",
+    "category": "manger-boire",
+    "address": "Nord de l'île (de Baie du Tombeau à Grand Gaube)",
+    "phone": "+230 5857 9322",
+    "website": "https://eloiseboyercoaching.com/",
+    "themes": [
+      "livraisons"
+    ],
+    "zone": "nord",
+    "description": "Box de repas cuisinés maison par Éloïse le matin même de la livraison (mardi ou vendredi), à composer parmi une carte de treize plats (portions ~400g, prêtes à réchauffer). Sans abonnement ni engagement, à partir de Rs 2 208 la semaine pour 6 portions, livraison offerte. Couvre le nord de l'île, de Baie du Tombeau à Grand Gaube (Grand Baie, Mont Choisy, Triolet, Piton, Goodlands)."
+  },
+  {
     "id": "paradisio-pizza-maurice",
     "name": "Paradisio Pizza Maurice",
     "category": "manger-boire",

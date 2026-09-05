@@ -36,6 +36,7 @@ const SELECTION_ICONS: Record<SelectionIconKey, Icon> = {
   Car,
   Backpack,
   PersonSimpleWalk,
+  Package,
 };
 import { Logo } from "@/components/ui/Logo";
 import { SearchInput } from "@/components/ui/SearchInput";
@@ -90,6 +91,7 @@ import {
   Storefront,
   MagnifyingGlass,
   ShieldCheck,
+  Package,
 } from "@phosphor-icons/react";
 import type { Icon } from "@phosphor-icons/react";
 
