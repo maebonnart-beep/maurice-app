@@ -53267,5 +53267,33 @@
     "filters": [
       "boulangeries"
     ]
+  },
+  {
+    "id": "outdoorsy-mauritius",
+    "name": "Outdoorsy Mauritius",
+    "category": "faire-du-sport",
+    "address": "6 Morcellement River Edge Gardens, Petit Camp, Vacoas-Phoenix",
+    "phone": "+230 5257 9058",
+    "website": "",
+    "googleMapsUrl": "",
+    "zone": "centre",
+    "themes": [
+      "kids-friendly"
+    ],
+    "description": "Activités sportives outdoor pour enfants et adultes encadrées par un coach (fitness, renforcement, jeux actifs en plein air), pensées pour rester engagé, actif et prendre du plaisir. Contact : outdoorsyltd@outlook.com, WhatsApp +230 5257 9058."
+  },
+  {
+    "id": "brunch-moris",
+    "name": "Brunch Moris",
+    "category": "manger-boire",
+    "address": "",
+    "phone": "+230 5735 5164",
+    "website": "https://brunchmoris.com/",
+    "googleMapsUrl": "",
+    "zone": "nord",
+    "themes": [
+      "livraisons"
+    ],
+    "description": "Brunch gastronomique mauricien à réserver en deux formules : Expérience Plage (table dressée sur les plages du nord, Rs 6 500 pour 2 personnes, 2h) ou Brunch Box livrée à domicile/location (Rs 2 700 pour 2 personnes, tarif enfant jusqu'à 8 ans Rs 500). Produits locaux (marlin fumé, vanille de Chamarel, citron de Rodrigues, confitures Labourdonnais). Livraison à Grand Baie, Trou aux Biches, Pereybère, Mont Choisy, Pointe aux Canonniers (autres zones sur demande). Réservation par WhatsApp +230 5735 5164."
   }
 ]

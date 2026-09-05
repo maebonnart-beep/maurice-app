@@ -601,4 +601,23 @@ export const SELECTIONS: Selection[] = [
       "chateau-mon-desir",
     ],
   },
+  {
+    id: "camps-vacances-enfants",
+    emoji: "🏕️",
+    title: "Camps de vacances pour les enfants",
+    tagline: "Des activités encadrées pour occuper les enfants pendant les vacances scolaires",
+    group: "besoins",
+    icon: "Sparkle",
+    photoUrl: "https://images.pexels.com/photos/8613089/pexels-photo-8613089.jpeg?auto=compress&cs=tinysrgb&w=800",
+    photoCredit: "Yan Krukau / Pexels",
+    businessIds: [
+      "ad-events-ecole-du-nord",
+      "zouzou-loisirs-trou-aux-biches",
+      "travelling-teachers-pereybere",
+      "outdoorsy-mauritius",
+      "centre-avek-twae-pereybere",
+      "ateliers-theatre-oz",
+      "cavalia-ecole-d-equitation",
+    ],
+  },
 ];
