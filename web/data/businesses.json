@@ -43323,8 +43323,8 @@
     "id": "helios-eyewear-shop",
     "name": "Helios - Eyewear Shop",
     "category": "sante-bien-etre",
-    "address": "Mapou",
-    "phone": "+2302671064",
+    "address": "Quartier des Serres, Rue de Labourdonnais, Mapou 31803",
+    "phone": "+230 267 1064",
     "website": "",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-20.070353,57.615534",
     "lat": -20.070353,
@@ -43333,7 +43333,8 @@
       "medecins-soins"
     ],
     "zone": "nord",
-    "description": "Opticien : lunettes, lentilles et examens de vue. Horaires : lun-samm 09h-17h.",
+    "hours": "Lun-Sam 9h-17h, fermé le dimanche",
+    "description": "Opticien mauricien Helios Eyewear (lunettes de soleil et optiques \"Made in Moris\") : lunettes, lentilles et examens de vue.",
     "filters": [
       "opticiens"
     ],
@@ -53295,5 +53296,277 @@
       "livraisons"
     ],
     "description": "Brunch gastronomique mauricien à réserver en deux formules : Expérience Plage (table dressée sur les plages du nord, Rs 6 500 pour 2 personnes, 2h) ou Brunch Box livrée à domicile/location (Rs 2 700 pour 2 personnes, tarif enfant jusqu'à 8 ans Rs 500). Produits locaux (marlin fumé, vanille de Chamarel, citron de Rodrigues, confitures Labourdonnais). Livraison à Grand Baie, Trou aux Biches, Pereybère, Mont Choisy, Pointe aux Canonniers (autres zones sur demande). Réservation par WhatsApp +230 5735 5164."
+  },
+  {
+    "id": "la-corbeille-labourdonnais",
+    "name": "La Corbeille",
+    "category": "manger-boire",
+    "address": "Quartier des Serres, Domaine de Labourdonnais, Mapou",
+    "phone": "",
+    "website": "https://domainedelabourdonnais.com/fr/shop/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=La+Corbeille+Quartier+des+Serres+Mapou",
+    "lat": -20.0706412,
+    "lng": 57.6155391,
+    "zone": "nord",
+    "themes": [
+      "commerces-alimentaires"
+    ],
+    "description": "Épicerie fine du Domaine de Labourdonnais, spécialisée dans les produits du domaine (jus artisanaux, spécialités locales). Un kiosque Famous Butchers (boucherie-charcuterie) est installé à l'intérieur de la boutique.",
+    "filters": [
+      "epiceries-specialisees"
+    ]
+  },
+  {
+    "id": "pepiniere-de-labourdonnais",
+    "name": "Pépinière de Labourdonnais",
+    "category": "acheter-equiper",
+    "address": "Quartier des Serres, Domaine de Labourdonnais, Mapou",
+    "phone": "",
+    "website": "https://domainedelabourdonnais.com/fr/shop/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Pepiniere+de+Labourdonnais+Quartier+des+Serres+Mapou",
+    "lat": -20.0706412,
+    "lng": 57.6155391,
+    "zone": "nord",
+    "themes": [
+      "maison-equipement"
+    ],
+    "description": "L'une des plus anciennes pépinières de Maurice, spécialisée dans les plantes et arbres fruitiers, au sein du Domaine de Labourdonnais."
+  },
+  {
+    "id": "aqui-labourdonnais",
+    "name": "Aqui",
+    "category": "manger-boire",
+    "address": "Quartier des Serres, Domaine de Labourdonnais, Mapou",
+    "phone": "",
+    "website": "https://www.aqui.mu/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Aqui+Quartier+des+Serres+Mapou",
+    "lat": -20.0706412,
+    "lng": 57.6155391,
+    "zone": "nord",
+    "themes": [
+      "commerces-alimentaires"
+    ],
+    "description": "Caviste niché au cœur du Domaine de Labourdonnais, proposant une sélection de vins et de champagnes.",
+    "filters": [
+      "epiceries-specialisees",
+      "vins-spiritueux"
+    ]
+  },
+  {
+    "id": "soho-concept-store-labourdonnais",
+    "name": "Soho Concept Store",
+    "category": "acheter-equiper",
+    "address": "Quartier des Serres, Domaine de Labourdonnais, Mapou",
+    "phone": "",
+    "website": "https://sohoconcept.mu/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Soho+Concept+Store+Quartier+des+Serres+Mapou",
+    "lat": -20.0706412,
+    "lng": 57.6155391,
+    "zone": "nord",
+    "themes": [
+      "maison-equipement"
+    ],
+    "description": "Concept store maison, déco et cadeaux (vaisselle, papeterie, articles pour enfants ; marques Legami, Rice, ElevenParis…), au Quartier des Serres du Domaine de Labourdonnais."
+  },
+  {
+    "id": "cups-and-co-labourdonnais",
+    "name": "Cups & Co",
+    "category": "acheter-equiper",
+    "address": "Quartier des Serres, Domaine de Labourdonnais, Mapou",
+    "phone": "+230 267 3700",
+    "website": "https://cupsnco.com/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Cups+%26+Co+Quartier+des+Serres+Mapou",
+    "lat": -20.0706412,
+    "lng": 57.6155391,
+    "zone": "nord",
+    "themes": [
+      "maison-equipement"
+    ],
+    "description": "Boutique d'arts de la table (\"art with tablewares\"), showroom au Quartier des Serres du Domaine de Labourdonnais. Contact : info@cupsnco.com."
+  },
+  {
+    "id": "by-agathe-besse-labourdonnais",
+    "name": "By Agathe Besse",
+    "category": "acheter-equiper",
+    "address": "Quartier des Serres, Domaine de Labourdonnais, Mapou",
+    "phone": "+230 269 6650",
+    "website": "https://byagathebesse.com/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=By+Agathe+Besse+Quartier+des+Serres+Mapou",
+    "lat": -20.0706412,
+    "lng": 57.6155391,
+    "zone": "nord",
+    "themes": [
+      "mode-accessoires"
+    ],
+    "description": "Bijoux artisanaux mauriciens faits main, marque \"By Agathe Besse\", présente au Quartier des Serres du Domaine de Labourdonnais."
+  },
+  {
+    "id": "ceibo-labourdonnais",
+    "name": "Ceibo",
+    "category": "acheter-equiper",
+    "address": "Quartier des Serres, Domaine de Labourdonnais, Mapou",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Ceibo+Quartier+des+Serres+Mapou",
+    "lat": -20.0706412,
+    "lng": 57.6155391,
+    "zone": "nord",
+    "themes": [
+      "mode-accessoires"
+    ],
+    "description": "Boutique de prêt-à-porter de la marque Mossi et Caroline Causse Clothing, installée au Quartier des Serres du Domaine de Labourdonnais."
+  },
+  {
+    "id": "home-by-the-sea-labourdonnais",
+    "name": "Home By The Sea",
+    "category": "acheter-equiper",
+    "address": "Quartier des Serres, Domaine de Labourdonnais, Mapou",
+    "phone": "+230 267 1225",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Home+By+The+Sea+Quartier+des+Serres+Mapou",
+    "lat": -20.0706412,
+    "lng": 57.6155391,
+    "zone": "nord",
+    "themes": [
+      "maison-equipement"
+    ],
+    "description": "Boutique de décoration \"Tropical Living\", au Quartier des Serres du Domaine de Labourdonnais."
+  },
+  {
+    "id": "must-mauritius-labourdonnais",
+    "name": "Must Mauritius",
+    "category": "acheter-equiper",
+    "address": "Quartier des Serres, Domaine de Labourdonnais, Mapou",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Must+Mauritius+Quartier+des+Serres+Mapou",
+    "lat": -20.0706412,
+    "lng": 57.6155391,
+    "zone": "nord",
+    "themes": [
+      "mode-accessoires"
+    ],
+    "description": "Concept store de mode et accessoires pour femmes, au Quartier des Serres du Domaine de Labourdonnais."
+  },
+  {
+    "id": "pharmacie-des-serres-mapou",
+    "name": "Pharmacie des Serres",
+    "category": "sante-bien-etre",
+    "address": "Domaine de Labourdonnais, 17b Quartier des Serres, Mapou",
+    "phone": "+230 267 0295",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Pharmacie+des+Serres+Quartier+des+Serres+Mapou",
+    "lat": -20.0706412,
+    "lng": 57.6155391,
+    "zone": "nord",
+    "hours": "Lun-Ven 8h-19h, Sam 8h-18h, fermé le dimanche",
+    "themes": [
+      "pharmacies-laboratoires"
+    ],
+    "description": "Pharmacie du Quartier des Serres, Domaine de Labourdonnais (exploitée par Joy Pharma Co Ltd). Contact : Joypharmaltd@outlook.com."
+  },
+  {
+    "id": "salon-de-parfums-quartier-des-serres",
+    "name": "Salon de Parfums",
+    "category": "acheter-equiper",
+    "address": "Domaine de Labourdonnais, Quartier des Serres, Mapou 31803",
+    "phone": "+230 5255 9680",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Salon+de+Parfums+Quartier+des+Serres+Mapou",
+    "lat": -20.0706412,
+    "lng": 57.6155391,
+    "zone": "nord",
+    "hours": "Lun-Ven 9h-18h, Sam 9h-17h, fermé le dimanche",
+    "themes": [
+      "mode-accessoires"
+    ],
+    "description": "Parfumerie haut de gamme (Haute Parfumerie), boutique au Quartier des Serres du Domaine de Labourdonnais."
+  },
+  {
+    "id": "yoga-spirit-labourdonnais",
+    "name": "Yoga Spirit",
+    "category": "sante-bien-etre",
+    "address": "Quartier des Serres, Domaine de Labourdonnais, Mapou",
+    "phone": "+230 5253 3251",
+    "website": "https://yogaspirit.mu/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Yoga+Spirit+Quartier+des+Serres+Mapou",
+    "lat": -20.0706412,
+    "lng": 57.6155391,
+    "zone": "nord",
+    "themes": [
+      "yoga-bien-etre"
+    ],
+    "description": "Concept store dédié au yoga (tenues, tapis, accessoires bien-être), au Quartier des Serres du Domaine de Labourdonnais. Contact : contact@yogaspirit.mu."
+  },
+  {
+    "id": "alicia-swim-quartier-des-serres",
+    "name": "Alicia Swim (Quartier des Serres)",
+    "category": "acheter-equiper",
+    "address": "Quartier des Serres, Mapou 31803",
+    "phone": "+230 5258 9611",
+    "website": "https://www.aliciaswim.com/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Alicia+Swim+Quartier+des+Serres+Mapou",
+    "lat": -20.0706412,
+    "lng": 57.6155391,
+    "zone": "nord",
+    "hours": "Lun-Ven 9h-18h, Sam 9h-17h, fermé le dimanche",
+    "themes": [
+      "mode-accessoires"
+    ],
+    "description": "Boutique de maillots de bain et vêtements de plage de la marque mauricienne Alicia Swim, au Quartier des Serres du Domaine de Labourdonnais (voir aussi la boutique de Grand Baie).",
+    "filters": [
+      "mode-adultes"
+    ]
+  },
+  {
+    "id": "rootz-africa-labourdonnais",
+    "name": "Rootz Africa",
+    "category": "sante-bien-etre",
+    "address": "Shop 30, Quartier des Serres, Domaine de Labourdonnais, Mapou",
+    "phone": "+230 5434 4100",
+    "website": "https://rootz.mu/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Rootz+Africa+Quartier+des+Serres+Mapou",
+    "lat": -20.0706412,
+    "lng": 57.6155391,
+    "zone": "nord",
+    "themes": [
+      "coiffeurs-barbiers-beaute"
+    ],
+    "description": "Salon de beauté : manucure, pédicure, soins du visage, au Quartier des Serres du Domaine de Labourdonnais."
+  },
+  {
+    "id": "cafe-coton-quartier-des-serres",
+    "name": "Café Coton (Quartier des Serres)",
+    "category": "acheter-equiper",
+    "address": "Quartier des Serres, Domaine de Labourdonnais, Mapou",
+    "phone": "+230 605 4580",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Cafe+Coton+Quartier+des+Serres+Mapou",
+    "lat": -20.0706412,
+    "lng": 57.6155391,
+    "zone": "nord",
+    "themes": [
+      "mode-accessoires"
+    ],
+    "description": "Boutique de la marque française Café Coton (prêt-à-porter homme et femme raffiné), l'une de ses 5 adresses à Maurice (Caudan Waterfront, Ruisseau Créole, Quartier des Serres, Phoenix Mall, Cascavelle). Contact : cafecoton@intnet.mu.",
+    "filters": [
+      "mode-adultes"
+    ]
+  },
+  {
+    "id": "denden-town-mauritius",
+    "name": "Denden Town Mauritius",
+    "category": "acheter-equiper",
+    "address": "Quartier des Serres, Domaine de Labourdonnais, Mapou",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Denden+Town+Mauritius+Quartier+des+Serres+Mapou",
+    "lat": -20.0706412,
+    "lng": 57.6155391,
+    "zone": "nord",
+    "themes": [
+      "librairies-jeux-loisirs"
+    ],
+    "description": "Boutique d'import Japon spécialisée dans les goodies, figurines, peluches et cartes de collection, au Quartier des Serres du Domaine de Labourdonnais."
   }
 ]
