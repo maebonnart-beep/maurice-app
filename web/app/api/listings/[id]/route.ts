@@ -31,8 +31,7 @@ export async function GET(
   return NextResponse.json(data);
 }
 
-/** Modification par le propriétaire : repasse l'annonce en attente de modération
- * (toute annonce approuvée/refusée modifiée redemande une validation admin). */
+/** Modification par le propriétaire : le statut (approved/pending/etc.) n'est pas touché. */
 export async function PATCH(
   request: Request,
   { params }: { params: Promise<{ id: string }> }
@@ -76,9 +75,6 @@ export async function PATCH(
       category: body.category,
       whatsapp: body.whatsapp,
       zone: body.zone ?? null,
-      status: "pending",
-      rejection_reason: null,
-      approved_at: null,
     })
     .eq("id", id)
     .eq("user_id", user.id)
