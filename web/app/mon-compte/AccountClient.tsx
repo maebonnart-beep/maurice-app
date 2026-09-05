@@ -127,7 +127,11 @@ export function AccountClient({ email, isPremium }: { email: string; isPremium: 
       ) : (
         <div className="flex flex-col gap-2.5">
           {listings.map((listing) => (
-            <div key={listing.id} className="bg-surface border border-border rounded-card p-3">
+            <Link
+              key={listing.id}
+              href={`/mon-compte/annonces/${listing.id}`}
+              className="block bg-surface border border-border rounded-card p-3 active:scale-[.99] transition-transform"
+            >
               <div className="flex items-center justify-between gap-2">
                 <h3 className="m-0 font-serif text-[15px] font-semibold truncate">{listing.title}</h3>
                 <span className={`shrink-0 text-[11px] font-bold px-2 py-0.5 rounded-pill ${STATUS_COLORS[listing.status]}`}>
@@ -141,7 +145,7 @@ export function AccountClient({ email, isPremium }: { email: string; isPremium: 
               {listing.status === "rejected" && listing.rejectionReason && (
                 <p className="m-0 mt-1 text-[12px] text-red-700">Motif : {listing.rejectionReason}</p>
               )}
-            </div>
+            </Link>
           ))}
         </div>
       )}
