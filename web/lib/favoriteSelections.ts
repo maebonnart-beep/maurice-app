@@ -3,9 +3,11 @@
 import { useCallback, useEffect, useState } from "react";
 
 const STORAGE_KEY = "kote-moris-listes-favorites";
-const CHANGE_EVENT = "kote-moris-listes-favorites-change";
+export const FAVORITE_SELECTIONS_CHANGE_EVENT = "kote-moris-listes-favorites-change";
+const CHANGE_EVENT = FAVORITE_SELECTIONS_CHANGE_EVENT;
 
-function readFavoriteSelections(): Set<string> {
+/** Lecture directe du localStorage, hors React — cf. readFavorites dans lib/favorites.ts. */
+export function readFavoriteSelections(): Set<string> {
   if (typeof window === "undefined") return new Set();
   try {
     const raw = window.localStorage.getItem(STORAGE_KEY);
@@ -50,9 +52,17 @@ export function useFavoriteSelections() {
     writeFavoriteSelections(next);
   }, []);
 
+  /** Fusionne une liste importée (sync distante ou sauvegarde) par union avec l'existant. */
+  const mergeFavoriteSelections = useCallback((imported: string[]) => {
+    const next = readFavoriteSelections();
+    for (const id of imported) next.add(id);
+    writeFavoriteSelections(next);
+  }, []);
+
   return {
     favoriteSelectionIds: ids,
     isFavoriteSelection,
     toggleFavoriteSelection,
+    mergeFavoriteSelections,
   };
 }

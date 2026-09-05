@@ -44,6 +44,7 @@ import { BusinessCard } from "@/components/ui/BusinessCard";
 import { BusinessDetail } from "@/components/ui/BusinessDetail";
 import { useFavorites, type FavoriteStatus } from "@/lib/favorites";
 import { useFavoriteSelections } from "@/lib/favoriteSelections";
+import { useFavoritesSync } from "@/lib/favoritesSync";
 import { useSuggestions, findIntegratedMatch } from "@/lib/suggestions";
 import { useAccount } from "@/lib/marketplace/useAccount";
 import { PREMIUM_PRICE_LABEL, MAX_ACTIVE_LISTINGS } from "@/lib/marketplace/constants";
@@ -88,6 +89,7 @@ import {
   PersonSimpleWalk,
   Storefront,
   MagnifyingGlass,
+  ShieldCheck,
 } from "@phosphor-icons/react";
 import type { Icon } from "@phosphor-icons/react";
 
@@ -176,9 +178,11 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
   const [shuffleReady, setShuffleReady] = useState(false);
   useEffect(() => setShuffleReady(true), []);
   const { statuses: favoriteStatuses, getStatus, mergeStatuses } = useFavorites();
-  const { favoriteSelectionIds, isFavoriteSelection, toggleFavoriteSelection } = useFavoriteSelections();
+  const { favoriteSelectionIds, isFavoriteSelection, toggleFavoriteSelection, mergeFavoriteSelections } =
+    useFavoriteSelections();
   const { suggestions } = useSuggestions();
   const account = useAccount();
+  useFavoritesSync(account.loggedIn, mergeStatuses, mergeFavoriteSelections);
   // Profil → Mes suggestions : pour chaque adresse proposée, détection best-effort
   // (nom + catégorie) d'une fiche correspondante déjà intégrée à l'annuaire.
   const suggestionsWithStatus = useMemo(
@@ -2223,11 +2227,9 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                   <>
                     <p className="font-serif text-lg font-semibold leading-tight break-all">{account.email}</p>
                     <div className="flex items-center gap-2 flex-wrap justify-center">
-                      {account.role !== "normal" && (
-                        <span className="text-[11px] font-bold px-2.5 py-1 rounded-pill bg-primary-tint text-primary-deep">
-                          {account.role === "admin" ? "Admin" : "Membre de la communauté"}
-                        </span>
-                      )}
+                      <span className="text-[11px] font-bold px-2.5 py-1 rounded-pill bg-primary-tint text-primary-deep">
+                        {account.role === "admin" ? "Admin" : account.role === "community" ? "Contributeur KM" : "Découverte"}
+                      </span>
                       <span
                         className={`text-[11px] font-bold px-2.5 py-1 rounded-pill ${
                           account.isPremium ? "bg-primary-tint text-primary-deep" : "bg-surface-2 text-muted"
@@ -2278,6 +2280,19 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                     </span>
                   </span>
                   <span className="shrink-0 text-[12.5px] font-semibold text-primary-deep underline">Gérer</span>
+                </Link>
+              )}
+
+              {account.loggedIn && account.role === "admin" && (
+                <Link
+                  href="/admin/seconde-main"
+                  className="flex items-center justify-between gap-3 bg-surface border border-border rounded-2xl shadow-sm p-3.5"
+                >
+                  <span className="flex items-center gap-2.5 min-w-0">
+                    <ShieldCheck size={18} className="text-muted shrink-0" aria-hidden />
+                    <span className="text-[13px] text-ink truncate">Modération des annonces</span>
+                  </span>
+                  <span className="shrink-0 text-[12.5px] font-semibold text-primary-deep underline">Ouvrir</span>
                 </Link>
               )}
 
@@ -2404,13 +2419,6 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
 
               {/* Actions rapides. */}
               <div className="bg-surface border border-border rounded-2xl shadow-sm overflow-hidden">
-                <button
-                  onClick={() => { setBrowseAll(false); setHomeCategory(null); setHomeMode("listes"); window.scrollTo({ top: 0, behavior: "smooth" }); }}
-                  className="w-full flex items-center gap-3 px-4 py-3.5 text-left active:bg-surface-2 transition-colors border-b border-border"
-                >
-                  <Star size={18} weight="regular" className="text-muted" aria-hidden />
-                  <span className="flex-1 text-[13.5px] text-ink">Voir les listes de Koté Moris</span>
-                </button>
                 {(account.role === "community" || account.role === "admin") && (
                   <button
                     onClick={() => { setBrowseAll(false); setHomeCategory(null); setHomeMode("ajouter"); window.scrollTo({ top: 0, behavior: "smooth" }); }}

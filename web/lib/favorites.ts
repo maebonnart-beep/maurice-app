@@ -3,11 +3,15 @@
 import { useCallback, useEffect, useState } from "react";
 
 const STORAGE_KEY = "kote-moris-favoris";
-const CHANGE_EVENT = "kote-moris-favoris-change";
+export const FAVORITES_CHANGE_EVENT = "kote-moris-favoris-change";
+const CHANGE_EVENT = FAVORITES_CHANGE_EVENT;
 
 export type FavoriteStatus = "favori" | "a-tester" | "teste";
 
-function readFavorites(): Map<string, FavoriteStatus> {
+/** Lecture directe du localStorage, hors React — utilisée par la sync distante
+ * (lib/favoritesSync.ts) qui a besoin de la valeur courante à chaque événement,
+ * sans dépendre d'un état de composant potentiellement périmé. */
+export function readFavorites(): Map<string, FavoriteStatus> {
   if (typeof window === "undefined") return new Map();
   try {
     const raw = window.localStorage.getItem(STORAGE_KEY);

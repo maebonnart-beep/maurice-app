@@ -142,6 +142,26 @@ grant select, insert on listing_events to anon, authenticated;
 grant all on businesses, business_claims, business_events to service_role;
 grant all on profiles, listings, listing_photos, listing_events to service_role;
 
+-- Sauvegarde automatique des favoris (cœur/à tester/testé + sélections KM mises
+-- en favori) pour tout utilisateur connecté, en complément du localStorage qui
+-- reste la seule source pour les visiteurs non connectés. Un blob JSON par
+-- utilisateur : même forme que le stockage local (pas de nouvelle normalisation),
+-- cf. lib/favorites.ts et lib/favoriteSelections.ts.
+create table user_favorites (
+  user_id uuid primary key references auth.users (id),
+  statuses jsonb not null default '{}'::jsonb,
+  selection_ids jsonb not null default '[]'::jsonb,
+  updated_at timestamptz not null default now()
+);
+
+alter table user_favorites enable row level security;
+create policy "user_favorites: self read" on user_favorites for select using (auth.uid() = user_id);
+create policy "user_favorites: self insert" on user_favorites for insert with check (auth.uid() = user_id);
+create policy "user_favorites: self update" on user_favorites for update using (auth.uid() = user_id);
+
+grant select, insert, update on user_favorites to authenticated;
+grant all on user_favorites to service_role;
+
 -- Crée automatiquement la ligne profiles correspondante à chaque nouvel
 -- utilisateur Supabase Auth (sinon rien ne le fait : la policy d'insert sur
 -- profiles n'autorise que l'utilisateur lui-même, jamais un premier login).
