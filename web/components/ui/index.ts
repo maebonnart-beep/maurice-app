@@ -14,3 +14,4 @@ export { FilterChip } from "./FilterChip";
 export { SearchInput } from "./SearchInput";
 export { CategoryTile } from "./CategoryTile";
 export { BusinessCard, metaFacts } from "./BusinessCard";
+export { ListingCard } from "./ListingCard";

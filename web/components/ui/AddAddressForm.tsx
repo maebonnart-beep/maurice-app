@@ -4,6 +4,7 @@ import { useEffect, useMemo, useRef, useState, type FormEvent } from "react";
 import { MapPin, PaperPlaneTilt, CheckCircle, Camera, X } from "@phosphor-icons/react";
 import { CATEGORIES, SUBCATEGORIES } from "@/data/categories";
 import type { CategoryKey } from "@/lib/types";
+import { useSuggestions } from "@/lib/suggestions";
 
 const inputClass =
   "w-full h-[46px] px-4 rounded-xl border border-border bg-surface text-ink text-[15px] shadow-sm focus:outline-none focus:border-primary";
@@ -30,6 +31,7 @@ export function AddAddressForm() {
   const [sent, setSent] = useState(false);
   const [photoShared, setPhotoShared] = useState(false);
 
+  const { addSuggestion } = useSuggestions();
   const [photo, setPhoto] = useState<File | null>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
   const photoUrl = useMemo(() => (photo ? URL.createObjectURL(photo) : null), [photo]);
@@ -78,6 +80,8 @@ export function AddAddressForm() {
 
     const subject = `Nouvelle adresse à ajouter — ${nom}`;
     const body = lignes.join("\n");
+
+    addSuggestion(nom.trim(), categorie);
 
     // Un lien mailto ne peut pas transporter de pièce jointe : si une photo est
     // choisie, on passe par le partage natif (Mail/WhatsApp/Messages...), qui
