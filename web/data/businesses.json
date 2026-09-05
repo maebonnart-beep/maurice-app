@@ -8013,6 +8013,26 @@
     ]
   },
   {
+    "id": "nadi-miel-chamarel",
+    "name": "Nadi'Miel",
+    "category": "manger-boire",
+    "address": "Chamarel",
+    "phone": "+230 5253 8760",
+    "email": "nadimielchamarel@gmail.com",
+    "website": "https://www.facebook.com/NadiMiel/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Nadi%27Miel+Chamarel+Mauritius",
+    "zone": "sud",
+    "themes": [
+      "commerces-alimentaires",
+      "boulangeries-patisseries"
+    ],
+    "description": "Charcuterie, traiteur et pâtisserie artisanale de Chamarel, tenue par Nadine Ramsamy-Appadoo : miel local, charcuterie de porc (cochon marron, boucané, carri de pied de porc au feu de bois) et pâtisseries maison. Pas de point de vente physique, commandes uniquement via Facebook et Instagram.",
+    "filters": [
+      "produits-locaux",
+      "boulangeries"
+    ]
+  },
+  {
     "id": "mich-resto",
     "name": "Mich Resto",
     "category": "manger-boire",
@@ -15092,7 +15112,7 @@
     "id": "lady-mary-patisserie",
     "name": "Lady Mary Pâtisserie",
     "category": "manger-boire",
-    "address": "MU, St François, Royal road, 31726",
+    "address": "Royal Road, St François, Calodyne",
     "phone": "+230 5888 9417",
     "website": "",
     "googleMapsUrl": "https://maps.google.com/?cid=2895778732574799106&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
@@ -15103,9 +15123,31 @@
       "boulangeries-patisseries"
     ],
     "zone": "nord",
-    "description": "Pâtisserie artisanale (avec gelato) de la région de Grand Baie, propose aussi un service traiteur.",
+    "description": "Pâtisserie artisanale (avec gelato) de Calodyne, très bien notée (4,9/5, 128 avis), spécialisée dans les gâteaux d'anniversaire sur commande. Propose aussi un service traiteur.",
     "filters": [
       "boulangeries"
+    ]
+  },
+  {
+    "id": "coco-beanies",
+    "name": "CoCo Beanies",
+    "category": "manger-boire",
+    "address": "Royal Road, Pépinière Exotica, Calodyne",
+    "phone": "+230 5717 4606",
+    "website": "https://coco-beanies.com/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=CoCo+Beanies+Calodyne+Mauritius",
+    "lat": -20.0075166,
+    "lng": 57.643686,
+    "themes": [
+      "boulangeries-patisseries",
+      "cafes-bars-glaciers",
+      "kids-friendly"
+    ],
+    "zone": "nord",
+    "description": "Café-pâtisserie installé au sein de la Pépinière Exotica à Calodyne, tenu par une boulangère sud-africaine : gâteaux faits maison sur commande, mais surtout orienté enfants avec ses ateliers de cuisine et ses fêtes d'anniversaire encadrées (kids' baking parties).",
+    "filters": [
+      "boulangeries-patisseries",
+      "cafes-terrasses"
     ]
   },
   {
@@ -53360,11 +53402,13 @@
     "themes": [
       "commerces-alimentaires"
     ],
-    "description": "Caviste niché au cœur du Domaine de Labourdonnais, proposant une sélection de vins et de champagnes.",
+    "badge": "selection",
+    "description": "Caviste niché au cœur du Domaine de Labourdonnais, avec une belle sélection de vins (majoritairement français, mais aussi italiens et sud-africains) et de champagnes, conseillée par des sommeliers passionnés. Sessions thématiques régulières les jeudis (accords mets et vins, découverte d'un vigneron...).",
     "filters": [
       "epiceries-specialisees",
       "vins-spiritueux"
-    ]
+    ],
+    "koteMorisComment": "Superbe adresse pour les amateurs de vin, avec une très belle sélection française (majoritaire), italienne et sud-africaine. Les conseils des sommeliers passionnés sur place sont particulièrement appréciés. Tip : les jeudis, on peut participer à des sessions thématiques (accords mets et vins, découverte d'un vigneron...)."
   },
   {
     "id": "soho-concept-store-labourdonnais",
@@ -53429,6 +53473,77 @@
       "mode-accessoires"
     ],
     "description": "Boutique de prêt-à-porter de la marque Mossi et Caroline Causse Clothing, installée au Quartier des Serres du Domaine de Labourdonnais."
+  },
+  {
+    "id": "la-terrasse-labourdonnais",
+    "name": "La Terrasse",
+    "category": "manger-boire",
+    "address": "Quartier des Serres, Domaine de Labourdonnais, Mapou",
+    "phone": "+230 266 8495",
+    "website": "https://domainedelabourdonnais.com/dine/la-terrasse/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=La+Terrasse+Quartier+des+Serres+Mapou",
+    "lat": -20.0706412,
+    "lng": 57.6155391,
+    "zone": "nord",
+    "themes": [
+      "restaurants"
+    ],
+    "hours": "Lun-Ven 7h30-18h, Sam 8h-17h, fermé dim et jours fériés",
+    "priceRange": "prix-moyen",
+    "badge": "selection",
+    "description": "Bistrot à ciel ouvert installé dans une ancienne serre à anthuriums du Domaine de Labourdonnais : salades, poke bowls, quiches, paninis et options végétariennes, bar à jus/smoothies et bar à desserts (gâteaux, glaces, gaufres, pancakes). Cadre verdoyant apprécié pour un petit-déjeuner ou déjeuner au calme.",
+    "filters": [
+      "europeenne",
+      "salades"
+    ],
+    "koteMorisComment": "Gros coup de cœur pour le cadre bucolique, installé sous les cocotiers au cœur du Quartier des Serres verdoyant, avec des espaces de jeux en bois pour les enfants. Côté boissons, les thés glacés maison (citron, colomandin, citronnelle, tamarin) et le café latté iced sont excellents. On n'a pas encore testé la cuisine, mais le décor à lui seul vaut la pause fraîcheur en famille.",
+    "photoUrl": "/photos/la-terrasse-labourdonnais.jpg",
+    "photoUrls": [
+      "/photos/la-terrasse-labourdonnais.jpg",
+      "/photos/la-terrasse-labourdonnais-2.jpg",
+      "/photos/la-terrasse-labourdonnais-3.jpg",
+      "/photos/la-terrasse-labourdonnais-4.jpg"
+    ]
+  },
+  {
+    "id": "ti-moris-labourdonnais",
+    "name": "Ti Moris",
+    "category": "manger-boire",
+    "address": "Quartier des Serres, Domaine de Labourdonnais, Mapou",
+    "phone": "+230 266 3008",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Ti+Moris+Quartier+des+Serres+Mapou",
+    "lat": -20.0706412,
+    "lng": 57.6155391,
+    "zone": "nord",
+    "themes": [
+      "restaurants"
+    ],
+    "hours": "Lun-Sam 8h30-17h, fermé dim",
+    "priceRange": "bon-marche",
+    "description": "Version street food du Quartier des Serres depuis février 2022 : cuisine mauricienne généreuse et sincère (dumplings, mines bouillies) à emporter ou sur place, dans une ambiance décontractée et fleurie.",
+    "filters": [
+      "mauricienne"
+    ]
+  },
+  {
+    "id": "enfin-fromagerie-labourdonnais",
+    "name": "Enfin Fromagerie",
+    "category": "manger-boire",
+    "address": "Quartier des Serres, Domaine de Labourdonnais, Mapou",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Enfin+Fromagerie+Quartier+des+Serres+Mapou",
+    "lat": -20.0706412,
+    "lng": 57.6155391,
+    "zone": "nord",
+    "themes": [
+      "commerces-alimentaires"
+    ],
+    "description": "Future fromagerie du Quartier des Serres, au Domaine de Labourdonnais (commerce pas encore ouvert, fiche à compléter à l'ouverture).",
+    "filters": [
+      "epiceries-specialisees"
+    ]
   },
   {
     "id": "home-by-the-sea-labourdonnais",

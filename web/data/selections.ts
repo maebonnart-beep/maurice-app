@@ -560,6 +560,7 @@ export const SELECTIONS: Selection[] = [
       "koala-happy-island",
       "brioche-d-or-patisserie",
       "desmarais-experience",
+      "coco-beanies",
     ],
   },
   {
