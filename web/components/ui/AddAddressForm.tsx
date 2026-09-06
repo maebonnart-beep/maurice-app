@@ -32,14 +32,14 @@ export function AddAddressForm() {
   const [photoShared, setPhotoShared] = useState(false);
 
   const { addSuggestion } = useSuggestions();
-  const [photo, setPhoto] = useState<File | null>(null);
+  const [photos, setPhotos] = useState<File[]>([]);
   const fileInputRef = useRef<HTMLInputElement>(null);
-  const photoUrl = useMemo(() => (photo ? URL.createObjectURL(photo) : null), [photo]);
+  const photoUrls = useMemo(() => photos.map((p) => URL.createObjectURL(p)), [photos]);
   useEffect(() => {
     return () => {
-      if (photoUrl) URL.revokeObjectURL(photoUrl);
+      photoUrls.forEach((url) => URL.revokeObjectURL(url));
     };
-  }, [photoUrl]);
+  }, [photoUrls]);
 
   const subcats = categorie ? SUBCATEGORIES[categorie] ?? [] : [];
 
@@ -83,15 +83,15 @@ export function AddAddressForm() {
 
     addSuggestion(nom.trim(), categorie);
 
-    // Un lien mailto ne peut pas transporter de pièce jointe : si une photo est
-    // choisie, on passe par le partage natif (Mail/WhatsApp/Messages...), qui
-    // sait attacher le fichier ; sinon on retombe sur le mailto classique.
-    if (photo && typeof navigator !== "undefined" && navigator.share && navigator.canShare?.({ files: [photo] })) {
+    // Un lien mailto ne peut pas transporter de pièce jointe : si des photos
+    // sont choisies, on passe par le partage natif (Mail/WhatsApp/Messages...),
+    // qui sait les attacher ; sinon on retombe sur le mailto classique.
+    if (photos.length > 0 && typeof navigator !== "undefined" && navigator.share && navigator.canShare?.({ files: photos })) {
       try {
         await navigator.share({
           title: subject,
           text: `${body}\n\nÀ : mae.bonnart@gmail.com`,
-          files: [photo],
+          files: photos,
         });
         setPhotoShared(true);
         setSent(true);
@@ -116,9 +116,9 @@ export function AddAddressForm() {
         <p className="font-serif text-lg font-semibold leading-tight">Merci !</p>
         <p className="text-[13px] text-muted leading-snug">
           {photoShared
-            ? "Votre message avec la photo est prêt à être envoyé — il ne reste qu'à valider dans l'appli qui vient de s'ouvrir."
-            : photo
-              ? "Votre appli mail va s'ouvrir avec les infos pré-remplies : il ne reste qu'à joindre votre photo manuellement et envoyer."
+            ? `Votre message avec ${photos.length > 1 ? "les photos" : "la photo"} est prêt à être envoyé — il ne reste qu'à valider dans l'appli qui vient de s'ouvrir.`
+            : photos.length > 0
+              ? `Votre appli mail va s'ouvrir avec les infos pré-remplies : il ne reste qu'à joindre ${photos.length > 1 ? "vos photos" : "votre photo"} manuellement et envoyer.`
               : "Votre appli mail va s'ouvrir avec les infos pré-remplies : il ne reste qu'à envoyer."}
           {" "}L'adresse sera vérifiée puis ajoutée à l'annuaire.
         </p>
@@ -126,7 +126,7 @@ export function AddAddressForm() {
           type="button"
           onClick={() => {
             setSent(false);
-            setPhoto(null);
+            setPhotos([]);
           }}
           className="text-[13px] font-semibold text-primary underline underline-offset-2"
         >
@@ -287,41 +287,45 @@ export function AddAddressForm() {
       </div>
 
       <div>
-        <span className={labelClass}>Photo du lieu</span>
+        <span className={labelClass}>Photos du lieu</span>
         <input
           ref={fileInputRef}
           type="file"
           accept="image/*"
-          capture="environment"
-          onChange={(e) => setPhoto(e.target.files?.[0] ?? null)}
+          multiple
+          onChange={(e) => {
+            const newFiles = Array.from(e.target.files ?? []);
+            if (newFiles.length > 0) setPhotos((prev) => [...prev, ...newFiles]);
+            e.target.value = "";
+          }}
           className="hidden"
         />
-        {photoUrl ? (
-          <div className="relative w-full h-36 rounded-xl overflow-hidden border border-border">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={photoUrl} alt="Photo choisie" className="w-full h-full object-cover" />
-            <button
-              type="button"
-              onClick={() => {
-                setPhoto(null);
-                if (fileInputRef.current) fileInputRef.current.value = "";
-              }}
-              aria-label="Retirer la photo"
-              className="absolute top-2 right-2 w-7 h-7 rounded-full bg-black/60 text-white flex items-center justify-center"
-            >
-              <X size={15} weight="bold" aria-hidden />
-            </button>
+        {photoUrls.length > 0 && (
+          <div className="grid grid-cols-3 gap-2 mb-2">
+            {photoUrls.map((url, i) => (
+              <div key={url} className="relative aspect-square rounded-xl overflow-hidden border border-border">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src={url} alt={`Photo ${i + 1}`} className="w-full h-full object-cover" />
+                <button
+                  type="button"
+                  onClick={() => setPhotos((prev) => prev.filter((_, j) => j !== i))}
+                  aria-label="Retirer la photo"
+                  className="absolute top-1 right-1 w-6 h-6 rounded-full bg-black/60 text-white flex items-center justify-center"
+                >
+                  <X size={13} weight="bold" aria-hidden />
+                </button>
+              </div>
+            ))}
           </div>
-        ) : (
-          <button
-            type="button"
-            onClick={() => fileInputRef.current?.click()}
-            className="w-full h-[46px] px-4 rounded-xl border border-border bg-surface text-ink text-[14px] font-semibold shadow-sm flex items-center justify-center gap-2 active:scale-[.98] transition-transform"
-          >
-            <Camera size={18} weight="bold" aria-hidden />
-            Prendre ou choisir une photo
-          </button>
         )}
+        <button
+          type="button"
+          onClick={() => fileInputRef.current?.click()}
+          className="w-full h-[46px] px-4 rounded-xl border border-border bg-surface text-ink text-[14px] font-semibold shadow-sm flex items-center justify-center gap-2 active:scale-[.98] transition-transform"
+        >
+          <Camera size={18} weight="bold" aria-hidden />
+          {photoUrls.length > 0 ? "Ajouter d'autres photos" : "Prendre ou choisir des photos"}
+        </button>
       </div>
 
       <div>
