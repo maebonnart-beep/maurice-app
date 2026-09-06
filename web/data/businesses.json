@@ -53530,19 +53530,19 @@
   },
   {
     "id": "enfin-fromagerie-labourdonnais",
-    "name": "Enfin Fromagerie",
+    "name": "Enfin! Le fromager",
     "category": "manger-boire",
     "address": "Quartier des Serres, Domaine de Labourdonnais, Mapou",
     "phone": "",
     "website": "",
-    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Enfin+Fromagerie+Quartier+des+Serres+Mapou",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Enfin+Le+Fromager+Quartier+des+Serres+Mapou",
     "lat": -20.0706412,
     "lng": 57.6155391,
     "zone": "nord",
     "themes": [
       "commerces-alimentaires"
     ],
-    "description": "Future fromagerie du Quartier des Serres, au Domaine de Labourdonnais (commerce pas encore ouvert, fiche à compléter à l'ouverture).",
+    "description": "Future fromagerie du Quartier des Serres, au Domaine de Labourdonnais. Ouverture prévue septembre-octobre 2026 (fiche à compléter à l'ouverture).",
     "filters": [
       "epiceries-specialisees"
     ]
