@@ -86,6 +86,7 @@ export const SUBCATEGORIES: Partial<Record<CategoryKey, Subcategory[]>> = {
   "famille-travail": [
     { key: "creches-garderies", label: "Crèches & garderies", emoji: "👶" },
     { key: "ecoles", label: "Écoles", emoji: "🎒" },
+    { key: "soutien-scolaire", label: "Soutien scolaire", emoji: "📖" },
     { key: "centres-loisirs-animations", label: "Centres de loisirs & animations", emoji: "🤹" },
     { key: "coworking-teletravail", label: "Coworking & télétravail", emoji: "🧑‍💻" },
     { key: "business-networking", label: "Business & networking", emoji: "🤝" },

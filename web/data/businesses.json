@@ -37828,18 +37828,20 @@
   },
   {
     "id": "travelling-teachers-pereybere",
-    "name": "Travelling Teachers - Pereybère",
+    "name": "Travelling Teachers",
     "category": "famille-travail",
-    "address": "Pereybère",
+    "address": "Chemin du Moulin cassé, Péreybère",
+    "phone": "+230 5987 3037",
+    "website": "https://www.travellingteachers.org/",
     "lat": -19.9943993,
     "lng": 57.5916746,
-    "website": "https://www.travellingteachers.org/",
     "themes": [
+      "soutien-scolaire",
       "centres-loisirs-animations",
       "kids-friendly"
     ],
     "zone": "nord",
-    "description": "Antenne de Pereybère du centre de soutien scolaire Travelling Teachers, avec journées thématiques pour les enfants."
+    "description": "Centre de soutien scolaire à Péreybère : school-in, stages de révisions, apprentissage de langues et journées thématiques pour les enfants. Vérifier que les salles de classe sont aux normes."
   },
   {
     "id": "vidange-fosse-septique-yogesh",
@@ -47435,6 +47437,44 @@
     ],
     "zone": "ouest",
     "description": "École du réseau français à Maurice, homologuée par l'Éducation nationale française (réseau AEFE) : programme français dans un environnement bilingue. Située à Tamarin (côte ouest)."
+  },
+  {
+    "id": "manuella-chevalier-soutien-scolaire",
+    "name": "Manuella Chevalier",
+    "category": "famille-travail",
+    "address": "Île Maurice (cours à domicile ou en ligne)",
+    "phone": "+230 5500 9484",
+    "website": "",
+    "themes": [
+      "soutien-scolaire"
+    ],
+    "description": "Professeure particulière : cours de français, d'anglais, d'histoire et d'EMC. Soutien scolaire en présentiel ou en ligne, préparation aux examens."
+  },
+  {
+    "id": "smartkids-grand-baie",
+    "name": "Smartkids",
+    "category": "famille-travail",
+    "address": "Mysa Bldg, Chemin 20 Pieds, Grand Baie",
+    "phone": "+230 5744 0883",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Smartkids+Mysa+Building+Chemin+20+Pieds+Grand+Baie",
+    "zone": "nord",
+    "themes": [
+      "soutien-scolaire"
+    ],
+    "description": "Centre de soutien scolaire à Grand Baie : aide aux devoirs, préparation aux examens et cours de langue, de la maternelle au lycée."
+  },
+  {
+    "id": "youandplay-app",
+    "name": "YouandPlay",
+    "category": "famille-travail",
+    "address": "",
+    "phone": "",
+    "website": "https://youandplay.studio",
+    "themes": [
+      "soutien-scolaire"
+    ],
+    "description": "Application qui transforme le jeu en compétences concrètes : jouer pour apprendre et progresser."
   },
   {
     "id": "les-papillons-edu",
