@@ -19,7 +19,7 @@ import { SuggestCommentButton } from "./SuggestCommentButton";
 import { Tag } from "./Tag";
 import { metaFacts } from "./BusinessCard";
 import { iconForKey, subIconFor, CONTACT_ICONS } from "@/lib/icons";
-import { ArrowLeft } from "@phosphor-icons/react";
+import { ArrowLeft, ShareNetwork } from "@phosphor-icons/react";
 
 /** Au-delà de ~6 lignes affichées, on replie la description (rare : ~90% des fiches tiennent en dessous). */
 const DESCRIPTION_CLAMP_THRESHOLD = 320;
@@ -40,6 +40,7 @@ function CircleAction({
   external = false,
   disabled = false,
   onClick,
+  variant = "default",
 }: {
   href?: string;
   icon: ReactNode;
@@ -47,12 +48,17 @@ function CircleAction({
   external?: boolean;
   disabled?: boolean;
   onClick?: () => void;
+  variant?: "default" | "accent";
 }) {
   const inner = (
     <>
       <span
         className={`w-12 h-12 rounded-full flex items-center justify-center transition-colors ${
-          disabled ? "bg-surface-2 text-muted" : "bg-primary-tint text-primary-deep"
+          disabled
+            ? "bg-surface-2 text-muted"
+            : variant === "accent"
+              ? "bg-accent text-ink"
+              : "bg-primary-tint text-primary-deep"
         }`}
       >
         {icon}
@@ -295,6 +301,15 @@ export function BusinessDetail({
 
             {/* Actions rondes : Appeler / Itinéraire / Site web / WhatsApp / Email. */}
             <div className="flex flex-wrap gap-x-2 gap-y-3 py-1">
+              <CircleAction
+                href={whatsappShareHref(shareText)}
+                external
+                variant="accent"
+                icon={<ShareNetwork size={19} weight="bold" aria-hidden />}
+                onClick={() => trackEvent(b.id, "share")}
+              >
+                Partager
+              </CircleAction>
               {b.phone ? (
                 <CircleAction
                   href={tel(b.phone)}
@@ -346,14 +361,6 @@ export function BusinessDetail({
                   Email
                 </CircleAction>
               )}
-              <CircleAction
-                href={whatsappShareHref(shareText)}
-                external
-                icon={<CONTACT_ICONS.WhatsappLogo size={19} weight="fill" aria-hidden />}
-                onClick={() => trackEvent(b.id, "share")}
-              >
-                Partager
-              </CircleAction>
             </div>
 
             {b.description && (
