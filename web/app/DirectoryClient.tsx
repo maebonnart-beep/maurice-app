@@ -2271,14 +2271,25 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                 ) : account.loggedIn ? (
                   <>
                     <p className="font-serif text-lg font-semibold leading-tight break-all">{account.email}</p>
-                    <span className="text-[11px] font-bold px-2.5 py-1 rounded-pill bg-primary-tint text-primary-deep">
+                    <span
+                      className="text-[13px] font-bold px-4 py-1.5 rounded-pill"
+                      style={
+                        account.role === "admin"
+                          ? { background: "#111", color: "#fff" }
+                          : account.role === "community"
+                          ? { background: "color-mix(in srgb, #2e9e5b 15%, var(--surface))", color: "#1f7a45" }
+                          : account.isPremium
+                          ? { background: "color-mix(in srgb, #f5a623 18%, var(--surface))", color: "#8a5a00" }
+                          : { background: "var(--surface-2)", color: "var(--muted)" }
+                      }
+                    >
                       {account.role === "admin"
-                        ? "Admin"
+                        ? "👑 Admin"
                         : account.role === "community"
-                        ? "Contributeur KM"
+                        ? "🤝 Contributeur KM"
                         : account.isPremium
-                        ? "Premium"
-                        : "Découverte"}
+                        ? "✨ Premium"
+                        : "🔎 Découverte"}
                     </span>
                   </>
                 ) : (
@@ -2300,12 +2311,16 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
               {account.loggedIn && !account.isPremium && (
                 <Link
                   href="/mon-compte/upgrade"
-                  className="flex items-center justify-between gap-3 bg-primary-tint border border-primary/20 rounded-xl p-3.5"
+                  className="flex flex-col items-center gap-2 text-center rounded-2xl p-5 shadow-sm active:scale-[.98] transition-transform"
+                  style={{ background: "linear-gradient(135deg, #f5a623, #e88a00)" }}
                 >
-                  <span className="text-[13px] text-primary-deep font-medium">
-                    Passe premium ({PREMIUM_PRICE_LABEL}) pour déposer des annonces.
+                  <span className="text-[15px] font-bold text-white">✨ Devenir Premium</span>
+                  <span className="text-[12.5px] text-white/90 leading-snug">
+                    Accède à la Seconde main entre particuliers et aux Événements — {PREMIUM_PRICE_LABEL}
                   </span>
-                  <span className="shrink-0 text-[12.5px] font-semibold text-primary-deep underline">S&apos;abonner</span>
+                  <span className="mt-1 h-[38px] px-6 rounded-full bg-white text-[13.5px] font-bold flex items-center justify-center" style={{ color: "#8a5a00" }}>
+                    S&apos;abonner
+                  </span>
                 </Link>
               )}
 
@@ -2526,32 +2541,40 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                     <span className="flex-1 text-[13.5px] text-ink">Suggérer une adresse</span>
                   </button>
                 )}
-                <button
-                  onClick={exportFavoris}
-                  disabled={favorisMapBusinesses.length === 0}
-                  className="w-full flex items-center gap-3 px-4 py-3.5 text-left active:bg-surface-2 transition-colors disabled:opacity-40 border-b border-border"
-                >
-                  <DownloadSimple size={18} weight="regular" className="text-muted" aria-hidden />
-                  <span className="flex-1 text-[13.5px] text-ink">Sauvegarder mes favoris</span>
-                </button>
-                <button
-                  onClick={() => importFileRef.current?.click()}
-                  className="w-full flex items-center gap-3 px-4 py-3.5 text-left active:bg-surface-2 transition-colors"
-                >
-                  <UploadSimple size={18} weight="regular" className="text-muted" aria-hidden />
-                  <span className="flex-1 text-[13.5px] text-ink">Restaurer une sauvegarde</span>
-                  <input
-                    ref={importFileRef}
-                    type="file"
-                    accept="application/json"
-                    className="hidden"
-                    onChange={(e) => {
-                      const file = e.target.files?.[0];
-                      if (file) importFavoris(file);
-                      e.target.value = "";
-                    }}
-                  />
-                </button>
+                {account.loggedIn ? (
+                  <p className="px-4 py-3.5 text-[12px] text-muted leading-snug">
+                    Vos favoris sont sauvegardés automatiquement sur votre compte.
+                  </p>
+                ) : (
+                  <>
+                    <button
+                      onClick={exportFavoris}
+                      disabled={favorisMapBusinesses.length === 0}
+                      className="w-full flex items-center gap-3 px-4 py-3.5 text-left active:bg-surface-2 transition-colors disabled:opacity-40 border-b border-border"
+                    >
+                      <DownloadSimple size={18} weight="regular" className="text-muted" aria-hidden />
+                      <span className="flex-1 text-[13.5px] text-ink">Sauvegarder mes favoris</span>
+                    </button>
+                    <button
+                      onClick={() => importFileRef.current?.click()}
+                      className="w-full flex items-center gap-3 px-4 py-3.5 text-left active:bg-surface-2 transition-colors"
+                    >
+                      <UploadSimple size={18} weight="regular" className="text-muted" aria-hidden />
+                      <span className="flex-1 text-[13.5px] text-ink">Restaurer une sauvegarde</span>
+                      <input
+                        ref={importFileRef}
+                        type="file"
+                        accept="application/json"
+                        className="hidden"
+                        onChange={(e) => {
+                          const file = e.target.files?.[0];
+                          if (file) importFavoris(file);
+                          e.target.value = "";
+                        }}
+                      />
+                    </button>
+                  </>
+                )}
               </div>
               {backupFeedback && (
                 <p className="text-center text-[12.5px] font-semibold text-primary-deep -mt-1.5">{backupFeedback}</p>
