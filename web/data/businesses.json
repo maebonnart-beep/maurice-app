@@ -53486,7 +53486,8 @@
     "lng": 57.6155391,
     "zone": "nord",
     "themes": [
-      "restaurants"
+      "restaurants",
+      "cafes-bars-glaciers"
     ],
     "hours": "Lun-Ven 7h30-18h, Sam 8h-17h, fermé dim et jours fériés",
     "priceRange": "prix-moyen",
@@ -53494,7 +53495,8 @@
     "description": "Bistrot à ciel ouvert installé dans une ancienne serre à anthuriums du Domaine de Labourdonnais : poke bowls, pizzas, salades, bruschettas, plats de pâtes, burgers, tartare de bœuf, pavé de thon. Côté boissons : thés glacés maison (citron, citronnelle, calamondin, tamarin), milkshakes (vanille, chocolat, fraise, coco), limonade maison et jus Les Vergers de Labourdonnais. Cadre verdoyant apprécié pour un déjeuner au calme.",
     "filters": [
       "europeenne",
-      "salades"
+      "salades",
+      "cafes-terrasses"
     ],
     "koteMorisComment": "Gros coup de cœur pour le cadre bucolique, installé sous les cocotiers au cœur du Quartier des Serres verdoyant, avec des espaces de jeux en bois pour les enfants. Côté boissons, les thés glacés maison (citron, citronnelle, calamondin, tamarin) et le café latté iced sont excellents. On n'a pas encore testé la cuisine, mais le décor à lui seul vaut la pause fraîcheur en famille.",
     "photoUrl": "/photos/la-terrasse-labourdonnais.jpg",
