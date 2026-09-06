@@ -49685,17 +49685,18 @@
   {
     "id": "just-natural-bois-rouge",
     "name": "Just Natural",
-    "category": "manger-boire",
+    "category": "sortir-decouvrir",
     "address": "Bois Rouge, Pamplemousses",
+    "phone": "+230 5721 3936",
+    "email": "hello@justnatural.com",
     "website": "https://justnaturalveg.com/",
     "themes": [
-      "tables-hotes-chefs-domicile"
+      "culture-patrimoine"
     ],
     "zone": "nord",
-    "description": "Ferme régénérative fondée par Nathalie et Jérôme, cultivant sans pesticides fruits, légumes et plantes aromatiques et médicinales. Cueillette sur place et cours de cuisine. Visite gratuite, don libre selon votre appréciation.",
-    "filters": [
-      "cours-de-cuisine"
-    ]
+    "description": "Ferme régénérative née pendant le confinement Covid, fondée par Jérôme et Nathalie sur une ancienne terre de canne à sucre à Bois Rouge. Fruits, légumes, herbes et œufs cultivés sans produits chimiques, à cueillir soi-même sur place. Visite guidée le 1er dimanche du mois (don libre selon votre appréciation).",
+    "badge": "selection",
+    "koteMorisComment": "Très belle découverte nichée au cœur de Bois Rouge, un coin de verdure luxuriant où cohabitent arbres fruitiers, aromates, plantes médicinales, potager et poules, le tout avec beaucoup de soin. On peut ramasser soi-même fruits, légumes et aromates, pesés puis payés en fin de récolte (prix très doux, encore plus pour ce qui est cultivé sans pesticides). Le jardin est entretenu par Nathalie et Jérôme, aidés de volontaires et d'un salarié permanent, qui organisent aussi une visite guidée de la ferme chaque 1er dimanche du mois : leur récit est passionnant et l'accueil très généreux, jusqu'à la visite de leur tiny house."
   },
   {
     "id": "food-tours-mauritius",
