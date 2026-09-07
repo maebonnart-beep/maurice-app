@@ -13335,7 +13335,8 @@
       "kids-friendly"
     ],
     "zone": "nord",
-    "description": "Crêperie-restaurant du Sunset Boulevard à Grand Baie, avec vue sur le lagon, proposant crêpes sucrées et options sans gluten.",
+    "hours": "Mar-Jeu 8h30-17h30, Ven 8h30-22h, Sam 10h-17h, fermé dim/lun",
+    "description": "Restaurant brunch du Sunset Boulevard à Grand Baie, proposant crêpes sucrées, galettes de sarrasin, burgers, salades, dorade, langoustes et plats du jour mauriciens, avec jus de fruits frais, café et matcha toute la journée. Ambiance conviviale avec vue sur la rue piétonne, idéal pour un breakfast, brunch ou lunch.",
     "filters": [
       "cafes-terrasses"
     ]
@@ -15124,6 +15125,25 @@
     ],
     "zone": "nord",
     "description": "Pâtisserie artisanale (avec gelato) de Calodyne, très bien notée (4,9/5, 128 avis), spécialisée dans les gâteaux d'anniversaire sur commande. Propose aussi un service traiteur.",
+    "filters": [
+      "boulangeries"
+    ]
+  },
+  {
+    "id": "branche-sucre-patisserie",
+    "name": "Branché Sucré Pâtisserie",
+    "category": "manger-boire",
+    "address": "Rose Hill (livraison, aussi dans le Nord)",
+    "phone": "+230 5810 9026",
+    "email": "branchesucre@gmail.com",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Rose%20Hill%20Mauritius",
+    "zone": "centre",
+    "themes": [
+      "commerces-alimentaires",
+      "boulangeries-patisseries"
+    ],
+    "description": "Pâtissière indépendante basée à Rose Hill (livraison possible aussi dans le Nord), tenue par Emilie Eleonore : entremets de qualité sur commande, pas de boutique. Créations en trompe-l'œil, notamment des canelés-brownies déclinés aux 3 chocolats et un entremet pina colada. Contact par téléphone ou email.",
     "filters": [
       "boulangeries"
     ]
