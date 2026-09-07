@@ -48,7 +48,8 @@ import { useFavoriteSelections } from "@/lib/favoriteSelections";
 import { useFavoritesSync } from "@/lib/favoritesSync";
 import { useSuggestions, findIntegratedMatch } from "@/lib/suggestions";
 import { useAccount } from "@/lib/marketplace/useAccount";
-import { PREMIUM_PRICE_LABEL, MAX_ACTIVE_LISTINGS } from "@/lib/marketplace/constants";
+import { PREMIUM_PRICE_LABEL, MAX_ACTIVE_LISTINGS, listingPhotoUrl } from "@/lib/marketplace/constants";
+import type { Listing } from "@/lib/marketplace/types";
 import { COUP_DE_COEUR_COLOR } from "@/components/ui/Badge";
 import { FilterDropdown, type DropdownOption } from "@/components/ui/FilterDropdown";
 import { AddAddressForm } from "@/components/ui/AddAddressForm";
@@ -92,6 +93,7 @@ import {
   MagnifyingGlass,
   ShieldCheck,
   Package,
+  Crown,
 } from "@phosphor-icons/react";
 import type { Icon } from "@phosphor-icons/react";
 
@@ -99,6 +101,15 @@ import type { Icon } from "@phosphor-icons/react";
 const BADGE_META: { key: string; label: string; emoji: string }[] = [
   { key: "selection", label: "Sélection Koté Moris", emoji: "🏅" },
   { key: "partenaire", label: "Partenaire", emoji: "⭐" },
+];
+
+// Accueil → bandeau « Seconde main » : visuels d'illustration (objets génériques, Pexels
+// libre de droits) utilisés tant qu'il n'y a pas assez de vraies annonces avec photo.
+const SECONDE_MAIN_ILLUSTRATIONS = [
+  "https://images.pexels.com/photos/18953479/pexels-photo-18953479.jpeg?auto=compress&cs=tinysrgb&w=200",
+  "https://images.pexels.com/photos/7480783/pexels-photo-7480783.jpeg?auto=compress&cs=tinysrgb&w=200",
+  "https://images.pexels.com/photos/32046500/pexels-photo-32046500.jpeg?auto=compress&cs=tinysrgb&w=200",
+  "https://images.pexels.com/photos/37585377/pexels-photo-37585377.jpeg?auto=compress&cs=tinysrgb&w=200",
 ];
 
 const UNCLASSIFIED = "__unclassified__";
@@ -173,7 +184,13 @@ const Map = dynamic(() => import("./Map"), {
   ),
 });
 
-export default function DirectoryClient({ businesses }: { businesses: Business[] }) {
+export default function DirectoryClient({
+  businesses,
+  previewListings = [],
+}: {
+  businesses: Business[];
+  previewListings?: Listing[];
+}) {
   // Ordre mélangé côté client uniquement (après hydratation) pour que « Coups de
   // cœur » et « Listes de Koté Moris » varient à chaque connexion sans provoquer
   // de désaccord d'hydratation SSR (le 1er rendu client doit matcher le serveur).
@@ -670,6 +687,19 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
     const all = businesses.filter((b) => b.badge === "selection" && b.photoUrl);
     return shuffleReady ? shuffled(all) : all;
   }, [businesses, shuffleReady]);
+
+  // Accueil → « Adresses kids friendly » : même logique que les coups de cœur,
+  // filtrée sur le thème kids-friendly.
+  const kidsFriendly = useMemo(() => {
+    const all = businesses.filter((b) => (b.themes || []).includes("kids-friendly") && b.photoUrl);
+    return shuffleReady ? shuffled(all) : all;
+  }, [businesses, shuffleReady]);
+
+  // Accueil → bandeau « Seconde main » : annonces réelles avec au moins une photo.
+  const previewListingPhotos = useMemo(
+    () => previewListings.filter((l) => l.photos && l.photos.length > 0),
+    [previewListings]
+  );
 
   // Accueil → « Événements à venir » : uniquement les fiches agenda avec une
   // date de début confirmée et future (les événements récurrents sans date
@@ -1592,29 +1622,144 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
 
               <Link
                 href={account.loggedIn ? "/seconde-main" : "/mon-compte"}
-                className="mt-6 flex items-center justify-between gap-3 rounded-2xl px-4 py-3.5 no-underline text-ink shadow-card"
-                style={{ background: "linear-gradient(135deg, color-mix(in srgb, var(--primary) 16%, var(--surface)) 0%, var(--surface) 75%)", border: "1px solid var(--border)" }}
+                className="mt-6 block rounded-2xl p-4 overflow-hidden no-underline text-ink shadow-card active:scale-[.99] transition-transform"
+                style={{ background: "linear-gradient(135deg, #ffe3b0 0%, #fff7ea 60%)" }}
               >
-                <span>
-                  <span className="block text-[14.5px] font-bold">🛋️ Seconde main entre particuliers</span>
-                  <span className="block text-[12px] text-muted mt-0.5">Annonces déposées par des particuliers, contact WhatsApp</span>
-                </span>
-                <span className="shrink-0 text-primary-deep text-[13px] font-semibold">Voir ›</span>
+                <div className="flex items-start justify-between gap-2">
+                  <div className="min-w-0">
+                    <span
+                      className="inline-flex items-center gap-1 px-2 py-1 rounded-pill text-[9.5px] font-bold text-white"
+                      style={{ background: "linear-gradient(135deg, #f5a623, #e88a00)" }}
+                    >
+                      <Crown size={11} weight="fill" aria-hidden /> PREMIUM
+                    </span>
+                    <p className="mt-2 text-[15px] font-bold leading-tight">Seconde main entre particuliers</p>
+                    <p className="text-[11.5px] text-muted leading-snug mt-0.5">Achetez, vendez, donnez à la communauté Koté Moris</p>
+                  </div>
+                  <span
+                    className="shrink-0 flex items-center justify-center w-8 h-8 rounded-full bg-white shadow-sm text-[14px] font-bold"
+                    style={{ color: "#e88a00" }}
+                    aria-hidden
+                  >
+                    ›
+                  </span>
+                </div>
+
+                {previewListingPhotos.length > 0 ? (
+                  <div className="mt-3.5 flex gap-2 overflow-x-auto pb-0.5 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+                    {previewListingPhotos.slice(0, 8).map((listing) => (
+                      <span
+                        key={listing.id}
+                        className="relative shrink-0 w-[72px] h-[72px] rounded-xl overflow-hidden"
+                        style={{ border: "1px solid rgba(255,255,255,.85)" }}
+                      >
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <img src={listingPhotoUrl(listing.photos![0].storagePath)} alt="" className="w-full h-full object-cover" />
+                      </span>
+                    ))}
+                  </div>
+                ) : (
+                  // Pas encore assez d'annonces avec photo : quelques visuels d'illustration
+                  // (objets génériques, non liés à de vraies annonces) pour donner le ton.
+                  <div className="mt-3.5 flex gap-2 overflow-x-auto pb-0.5 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+                    {SECONDE_MAIN_ILLUSTRATIONS.map((src) => (
+                      <span
+                        key={src}
+                        className="relative shrink-0 w-[72px] h-[72px] rounded-xl overflow-hidden"
+                        style={{ border: "1px solid rgba(255,255,255,.85)" }}
+                      >
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <img src={src} alt="" className="w-full h-full object-cover" />
+                      </span>
+                    ))}
+                  </div>
+                )}
               </Link>
 
-              {upcomingEvents.length > 0 && (
+              {coupsDeCoeur.length > 0 && (
                 <>
                   <div className="flex items-center justify-between mt-7 mb-2.5">
-                    <h2 className="text-[16px] font-bold text-ink">Événements à venir</h2>
+                    <div className="flex items-center gap-2">
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img src="/badge-selection.png" alt="" aria-hidden className="h-9 w-9 shrink-0" />
+                      <h2 className="text-[16px] font-bold text-ink">Les coups de cœur de Koté Moris</h2>
+                    </div>
                     <button
-                      onClick={() => { setHomeMode("categories"); setHomeCategory("agenda"); window.scrollTo({ top: 0, behavior: "smooth" }); }}
-                      className="text-[13px] font-semibold text-primary-deep active:scale-[.98]"
+                      onClick={() => { setBrowseAll(true); setFacetBadges(new Set(["selection"])); }}
+                      className="shrink-0 text-[13px] font-semibold text-primary-deep active:scale-[.98]"
                     >
                       Voir tout ›
                     </button>
                   </div>
-                  <div className="-mx-4 px-4">
-                    <div className="flex overflow-x-auto pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+                  <div className="flex gap-3 overflow-x-auto pb-1 -mx-4 px-4 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+                    {coupsDeCoeur.slice(0, 12).map((b) => (
+                      <div
+                        key={b.id}
+                        role="button"
+                        tabIndex={0}
+                        onClick={() => selectFromCard(b.id)}
+                        onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") selectFromCard(b.id); }}
+                        className="relative shrink-0 w-[160px] rounded-card overflow-hidden bg-surface border border-border shadow-card text-left cursor-pointer active:scale-[.98] transition-transform"
+                      >
+                        <div className="relative h-[110px] bg-primary-tint flex items-center justify-center">
+                          {b.photoUrl ? (
+                            // eslint-disable-next-line @next/next/no-img-element
+                            <img src={b.photoUrl} alt="" className="absolute inset-0 w-full h-full object-cover" />
+                          ) : (
+                            (() => {
+                              const FallbackIcon = iconForKey(b.category);
+                              return FallbackIcon ? (
+                                <FallbackIcon size={30} weight="duotone" className="text-primary-deep opacity-50" aria-hidden />
+                              ) : null;
+                            })()
+                          )}
+                          <span
+                            className="absolute top-1.5 right-1.5 inline-flex items-center gap-1 px-1.5 py-1 rounded-full bg-surface/90 shadow-sm"
+                            onClick={(e) => e.stopPropagation()}
+                          >
+                            <FavoriteButton id={b.id} size={12.5} />
+                          </span>
+                        </div>
+                        <div className="p-2.5">
+                          <p className="text-[13px] font-bold text-ink truncate">{displayName(b.name)}</p>
+                          <p className="text-[11.5px] text-muted truncate">
+                            {CATEGORY_MAP[b.category].label} • {displayCity(b.address)}
+                          </p>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </>
+              )}
+
+              <div
+                className="mt-4 rounded-2xl p-4 overflow-hidden shadow-card"
+                style={{ background: "linear-gradient(135deg, #ffd3df 0%, #fff2f5 60%)" }}
+              >
+                <div className="flex items-start justify-between gap-2">
+                  <div className="min-w-0">
+                    <span
+                      className="inline-flex items-center gap-1 px-2 py-1 rounded-pill text-[9.5px] font-bold text-white"
+                      style={{ background: "linear-gradient(135deg, #f5a623, #e88a00)" }}
+                    >
+                      <Crown size={11} weight="fill" aria-hidden /> PREMIUM
+                    </span>
+                    <p className="mt-2 text-[15px] font-bold leading-tight">Événements à Maurice</p>
+                    <p className="text-[11.5px] text-muted leading-snug mt-0.5">Tous les événements, sorties et festivals</p>
+                  </div>
+                  <button
+                    onClick={() => { setHomeMode("categories"); setHomeCategory("agenda"); window.scrollTo({ top: 0, behavior: "smooth" }); }}
+                    className="shrink-0 flex items-center justify-center w-8 h-8 rounded-full bg-white shadow-sm text-[14px] font-bold active:scale-[.96] transition-transform"
+                    style={{ color: "#e0567a" }}
+                    aria-label="Voir tous les événements"
+                  >
+                    ›
+                  </button>
+                </div>
+
+                {upcomingEvents.length > 0 ? (
+                  <div className="mt-3.5 -mx-1">
+                    <div className="flex overflow-x-auto px-1 pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
                       {upcomingEvents.map((b) => {
                         const rubrique = (b.themes || [])[0];
                         const filterEmoji = (b.filters || []).map((f) => FILTER_OPTION_EMOJI[f]).find(Boolean);
@@ -1669,22 +1814,37 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                       })}
                     </div>
                   </div>
-                </>
-              )}
+                ) : (
+                  <p className="mt-3.5 text-[11.5px] font-semibold" style={{ color: "#a8365f" }}>
+                    Bientôt de nouveaux événements…
+                  </p>
+                )}
+              </div>
 
-              {coupsDeCoeur.length > 0 && (
+              {kidsFriendly.length > 0 && (
                 <>
                   <div className="flex items-center justify-between mt-7 mb-2.5">
-                    <h2 className="text-[16px] font-bold text-ink">Les coups de cœur de Koté Moris</h2>
+                    <div className="flex items-center gap-2">
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img src="/badge-kids.png" alt="" aria-hidden className="h-9 w-9 shrink-0" />
+                      <h2 className="text-[16px] font-bold text-ink">Adresses kids friendly</h2>
+                    </div>
                     <button
-                      onClick={() => { setBrowseAll(true); setFacetBadges(new Set(["selection"])); }}
-                      className="text-[13px] font-semibold text-primary-deep active:scale-[.98]"
+                      onClick={() => {
+                        setNearMe(false);
+                        setBrowseAll(true);
+                        setHomeCategory(null);
+                        setActiveThemes(new Set(["kids-friendly"]));
+                        setResultsView("liste");
+                        window.scrollTo({ top: 0, behavior: "smooth" });
+                      }}
+                      className="shrink-0 text-[13px] font-semibold text-primary-deep active:scale-[.98]"
                     >
                       Voir tout ›
                     </button>
                   </div>
                   <div className="flex gap-3 overflow-x-auto pb-1 -mx-4 px-4 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-                    {coupsDeCoeur.slice(0, 12).map((b) => (
+                    {kidsFriendly.slice(0, 12).map((b) => (
                       <div
                         key={b.id}
                         role="button"
@@ -1723,50 +1883,6 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                   </div>
                 </>
               )}
-
-              <div className="mt-7 rounded-2xl p-4" style={{ background: "var(--primary-tint)" }}>
-                <p className="text-[16px] font-bold text-ink text-left mb-3.5">
-                  Découvrez nos meilleures adresses
-                </p>
-                <div className="flex items-center justify-center gap-8">
-                  <button
-                    onClick={() => {
-                      setNearMe(false);
-                      setBrowseAll(true);
-                      setHomeCategory(null);
-                      setFacetBadges(new Set(["selection"]));
-                      setResultsView("liste");
-                      window.scrollTo({ top: 0, behavior: "smooth" });
-                    }}
-                    className="flex items-center justify-center active:scale-[.96] transition-transform"
-                  >
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src="/badge-selection.png" alt="Sélection Koté Moris" className="h-32 w-32" />
-                  </button>
-                  <button
-                    onClick={() => {
-                      setNearMe(false);
-                      setBrowseAll(true);
-                      setHomeCategory(null);
-                      setActiveThemes(new Set(["kids-friendly"]));
-                      setResultsView("liste");
-                      window.scrollTo({ top: 0, behavior: "smooth" });
-                    }}
-                    className="flex items-center justify-center active:scale-[.96] transition-transform"
-                  >
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src="/badge-kids.png" alt="Kids friendly" className="h-32 w-32" />
-                  </button>
-                </div>
-                <p className="text-center mt-3.5">
-                  <span
-                    className="inline-block px-4 py-2 rounded-pill text-[12.5px] font-bold text-white"
-                    style={{ background: "var(--primary)" }}
-                  >
-                    Voir les adresses ›
-                  </span>
-                </p>
-              </div>
 
               <div className="flex items-center justify-between mt-7 mb-2.5">
                 <h2 className="text-[16px] font-bold text-ink">Les listes de Koté Moris</h2>
