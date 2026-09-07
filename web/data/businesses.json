@@ -30850,7 +30850,7 @@
     "category": "vie-pratique",
     "address": "Application mobile / réservation en ligne",
     "phone": "",
-    "website": "https://www.uber.com/",
+    "website": "https://play.google.com/store/apps/details?id=com.ubercab&hl=en_US",
     "description": "Fonctionne uniquement avec les taxis officiellement agréés (licence PSV), en partenariat avec le réseau local Alalila. Trajets Normal/Comfort/XL, tarifs affichés à l'avance.",
     "themes": [
       "taxis-vtc-location"
@@ -30880,7 +30880,7 @@
     "category": "vie-pratique",
     "address": "Application mobile / réservation en ligne",
     "phone": "",
-    "website": "https://www.yugo.mu/",
+    "website": "https://play.google.com/store/apps/details?id=com.yugo.app&hl=en_US",
     "description": "Une des applis locales les plus anciennes, chauffeurs de taxi enregistrés et agréés uniquement. Propose aussi la réservation à la journée et la livraison de colis.",
     "themes": [
       "taxis-vtc-location"
@@ -30895,7 +30895,7 @@
     "category": "vie-pratique",
     "address": "Application mobile / réservation en ligne",
     "phone": "",
-    "website": "https://www.dodogo.mu/",
+    "website": "https://play.google.com/store/apps/details?id=com.dodotaxi.rider&hl=en_US",
     "description": "Réservation 24h/24, estimation des tarifs par IA selon trafic/météo. Propose aussi des vans 6-14 places pour familles/groupes.",
     "themes": [
       "taxis-vtc-location"
@@ -30925,7 +30925,7 @@
     "category": "vie-pratique",
     "address": "Application mobile / réservation en ligne",
     "phone": "",
-    "website": "https://www.alalila.mu/",
+    "website": "https://play.google.com/store/apps/details?id=com.insofdev.androidpasseneger.alalila&hl=en_US",
     "description": "Plateforme locale pionnière de réservation en ligne (Logidis Ltd), tarifs transparents. Infrastructure utilisée pour l'intégration officielle d'Uber à Maurice.",
     "themes": [
       "taxis-vtc-location"
@@ -47542,7 +47542,7 @@
     "category": "famille-travail",
     "address": "",
     "phone": "",
-    "website": "https://youandplay.studio",
+    "website": "https://play.google.com/store/apps/details?id=com.bfb.youandplay",
     "themes": [
       "soutien-scolaire"
     ],
