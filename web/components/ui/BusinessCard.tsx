@@ -3,7 +3,7 @@
 import type { Business } from "@/lib/types";
 import { SUBCATEGORIES, PRICE_RANGES, CATEGORY_MAP, FILTER_GROUPS } from "@/data/categories";
 import { displayName, displayCity } from "@/lib/format";
-import { accentColorFor, SpecialBadge, AGENCY_COLOR } from "./Badge";
+import { accentColorFor, SpecialBadge, AGENCY_COLOR, PROVIDER_TYPE_INFO } from "./Badge";
 import { FavoriteButton } from "./FavoriteButton";
 import { FACT_ICONS, CONTACT_ICONS, iconForKey, subIconFor } from "@/lib/icons";
 import { eventColorFor, eventBannerLabel } from "@/lib/events";
@@ -154,7 +154,7 @@ export function BusinessCard({
             {displayName(b.name)}
           </h3>
         </div>
-        {(rubriques.length > 0 || b.isAgency) && (
+        {(rubriques.length > 0 || b.isAgency || b.providerType) && (
           <p className="m-0 mt-0.5 flex items-center gap-1.5 flex-wrap">
             {rubriques.map(({ theme, key }) => {
               const RubriqueIcon = iconForKey(key);
@@ -179,6 +179,14 @@ export function BusinessCard({
                 style={{ background: AGENCY_COLOR }}
               >
                 🏢 Agence
+              </span>
+            )}
+            {b.providerType && (
+              <span
+                className="inline-flex items-center gap-1 text-[11px] font-bold px-1.5 py-0.5 rounded-pill text-white"
+                style={{ background: PROVIDER_TYPE_INFO[b.providerType].color }}
+              >
+                {PROVIDER_TYPE_INFO[b.providerType].emoji} {PROVIDER_TYPE_INFO[b.providerType].label}
               </span>
             )}
           </p>

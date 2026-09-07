@@ -78,6 +78,8 @@ export type Business = {
   guideRecommended?: boolean | "required";
   /** True pour les agences/prestataires qui organisent des randonnées (par opposition aux sites/sentiers eux-mêmes). Randonnée-trail. */
   isAgency?: boolean;
+  /** Nature du prestataire : prof particulier, organisme/centre, ou application mobile. Soutien scolaire, cours de langues. */
+  providerType?: "particulier" | "organisme" | "application";
   /** Sports/activités disponibles sur place, texte libre. Complexes-sportifs. */
   sportsListed?: string;
   /** Restauration sur place. Complexes-sportifs. */

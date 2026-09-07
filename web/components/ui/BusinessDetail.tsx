@@ -12,7 +12,7 @@ import {
   whatsappLink,
   whatsappNumber,
 } from "@/lib/format";
-import { SpecialBadge, accentColorFor } from "./Badge";
+import { SpecialBadge, accentColorFor, ProviderTypeBadge } from "./Badge";
 import { FavoriteButton } from "./FavoriteButton";
 import { SuggestPhotoButton } from "./SuggestPhotoButton";
 import { SuggestCommentButton } from "./SuggestCommentButton";
@@ -260,6 +260,7 @@ export function BusinessDetail({
             <div className="flex flex-wrap items-center gap-1.5">
               {b.badge === "partenaire" && <SpecialBadge variant="partenaire" />}
               {b.isAgency && <SpecialBadge variant="agence" />}
+              {b.providerType && <ProviderTypeBadge type={b.providerType} />}
             </div>
 
             <h2 className="m-0 font-serif text-[22px] font-semibold leading-[1.15] tracking-[-.01em]">

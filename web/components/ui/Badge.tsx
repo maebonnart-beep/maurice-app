@@ -23,6 +23,38 @@ export function CategoryBadge({ category }: { category: CategoryKey }) {
 
 export type SpecialBadgeVariant = "partenaire" | "selection" | "kids-friendly" | "agence";
 
+/** Nature du prestataire (soutien scolaire, cours de langues) : prof particulier, organisme, ou application mobile. */
+export const PROVIDER_TYPE_INFO: Record<
+  "particulier" | "organisme" | "application",
+  { emoji: string; label: string; color: string }
+> = {
+  particulier: { emoji: "🧑‍🏫", label: "Prof particulier", color: "#0891b2" },
+  organisme: { emoji: "🏢", label: "Organisme", color: AGENCY_COLOR },
+  application: { emoji: "📱", label: "Application", color: "#059669" },
+};
+
+/** Pastille indiquant si une fiche est un prof particulier, un organisme, ou une application. */
+export function ProviderTypeBadge({
+  type,
+  className,
+}: {
+  type: "particulier" | "organisme" | "application";
+  className?: string;
+}) {
+  const info = PROVIDER_TYPE_INFO[type];
+  return (
+    <span
+      className={
+        className ??
+        "self-start inline-flex items-center gap-1 px-2.5 py-1 rounded-pill text-white text-xs font-bold"
+      }
+      style={{ background: info.color }}
+    >
+      {info.emoji} {info.label}
+    </span>
+  );
+}
+
 /** Badges de mise en avant (Partenaire, Sélection, Agence organisatrice). */
 export function SpecialBadge({ variant, className }: { variant: SpecialBadgeVariant; className?: string }) {
   if (variant === "partenaire") {

@@ -31439,13 +31439,46 @@
     "phone": "+230 212 29 49",
     "website": "https://www.afmaurice.org/",
     "themes": [
-      "business-networking"
+      "business-networking",
+      "cours-de-langues"
     ],
-    "description": "Au-delà de son rôle culturel, un lieu de rencontre pour la communauté francophone de Maurice.",
+    "providerType": "organisme",
+    "description": "Au-delà de son rôle culturel et de lieu de rencontre pour la communauté francophone de Maurice, propose des cours de français langue étrangère pour tous niveaux.",
     "zone": "centre",
     "filters": [
       "networking"
     ]
+  },
+  {
+    "id": "british-council-mauritius",
+    "name": "British Council Mauritius",
+    "category": "famille-travail",
+    "address": "2nd Floor Kathrada Building, Royal Road, Rose-Hill",
+    "phone": "+230 403 0200",
+    "website": "https://www.britishcouncil.mu/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=British%20Council%20Mauritius%20Rose%20Hill",
+    "lat": -20.2448,
+    "lng": 57.4692,
+    "themes": [
+      "cours-de-langues"
+    ],
+    "zone": "centre",
+    "providerType": "organisme",
+    "description": "Antenne mauricienne du British Council : cours d'anglais pour enfants et adultes, préparation IELTS et examens de Cambridge, formations en petits groupes ou individuelles."
+  },
+  {
+    "id": "apprentus-maurice",
+    "name": "Apprentus",
+    "category": "famille-travail",
+    "address": "",
+    "phone": "",
+    "website": "https://www.apprentus.com/fr/cours-particuliers/portlouis-maurice",
+    "themes": [
+      "soutien-scolaire",
+      "cours-de-langues"
+    ],
+    "providerType": "application",
+    "description": "Plateforme de mise en relation avec des professeurs particuliers à travers l'île (Port-Louis, Grand Baie, Vacoas, Quatre Bornes, Pamplemousses...) : langues (français, anglais, créole), soutien scolaire, informatique et autres matières, cours à domicile ou chez le professeur."
   },
   {
     "id": "club-entreprendre-france-maurice",
@@ -37857,10 +37890,12 @@
     "lng": 57.5916746,
     "themes": [
       "soutien-scolaire",
+      "cours-de-langues",
       "centres-loisirs-animations",
       "kids-friendly"
     ],
     "zone": "nord",
+    "providerType": "organisme",
     "description": "Centre de soutien scolaire à Péreybère : school-in, stages de révisions, apprentissage de langues et journées thématiques pour les enfants. Vérifier que les salles de classe sont aux normes."
   },
   {
@@ -47466,8 +47501,10 @@
     "phone": "+230 5500 9484",
     "website": "",
     "themes": [
-      "soutien-scolaire"
+      "soutien-scolaire",
+      "cours-de-langues"
     ],
+    "providerType": "particulier",
     "description": "Professeure particulière : cours de français, d'anglais, d'histoire et d'EMC. Soutien scolaire en présentiel ou en ligne, préparation aux examens."
   },
   {
@@ -47480,8 +47517,10 @@
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Smartkids+Mysa+Building+Chemin+20+Pieds+Grand+Baie",
     "zone": "nord",
     "themes": [
-      "soutien-scolaire"
+      "soutien-scolaire",
+      "cours-de-langues"
     ],
+    "providerType": "organisme",
     "description": "Centre de soutien scolaire à Grand Baie : aide aux devoirs, préparation aux examens et cours de langue, de la maternelle au lycée."
   },
   {
@@ -47494,6 +47533,7 @@
     "themes": [
       "soutien-scolaire"
     ],
+    "providerType": "application",
     "description": "Application qui transforme le jeu en compétences concrètes : jouer pour apprendre et progresser."
   },
   {
