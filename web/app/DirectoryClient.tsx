@@ -1518,15 +1518,105 @@ export default function DirectoryClient({
             <div className="max-w-[720px] mx-auto pb-6">
               <button
                 onClick={focusSearch}
-                className="relative w-full h-[46px] mb-6 rounded-pill border border-border bg-surface shadow-sm text-left pl-11 pr-4 text-[15px] text-muted active:scale-[.99] transition-transform"
+                className="relative w-full mb-6 rounded-2xl overflow-hidden text-left shadow-card active:scale-[.99] transition-transform"
+                style={{ background: "linear-gradient(135deg, #0d4a47 0%, #146b66 65%)" }}
               >
-                <span className="absolute left-4 top-1/2 -translate-y-1/2 pointer-events-none">🔍</span>
-                Rechercher une adresse, une activité…
+                <div className="relative z-10 p-4 pr-[104px]">
+                  <p className="text-white text-[15px] font-bold leading-tight">Trouve ta prochaine adresse</p>
+                  <p className="text-white/80 text-[12px] mt-1 leading-snug">
+                    Restaurants, activités, sorties, bons plans à Maurice…
+                  </p>
+                  <span
+                    className="mt-3 inline-flex items-center gap-2 h-[38px] px-4 rounded-pill bg-white text-[13.5px] font-semibold"
+                    style={{ color: "#0d4a47" }}
+                  >
+                    <MagnifyingGlass size={15} weight="bold" aria-hidden />
+                    Rechercher
+                  </span>
+                </div>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/logo-octopus.png"
+                  alt=""
+                  aria-hidden
+                  className="pointer-events-none absolute -right-5 -bottom-8 w-[130px] h-[130px] object-contain opacity-25"
+                />
+                <span
+                  className="absolute right-5 top-1/2 -translate-y-1/2 flex items-center justify-center w-11 h-11 rounded-full"
+                  style={{ background: "rgba(255,255,255,.15)" }}
+                  aria-hidden
+                >
+                  <MagnifyingGlass size={20} weight="bold" className="text-white" />
+                </span>
               </button>
 
-              <h2 className="text-[16px] font-bold text-ink mb-2.5">
-                Par catégorie
-              </h2>
+              {coupsDeCoeur.length > 0 && (
+                <>
+                  <div className="flex items-center justify-between mb-2.5">
+                    <div className="flex items-center gap-2">
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img src="/badge-selection.png" alt="" aria-hidden className="h-9 w-9 shrink-0" />
+                      <h2 className="text-[16px] font-bold text-ink">Les coups de cœur de Koté Moris</h2>
+                    </div>
+                    <button
+                      onClick={() => { setBrowseAll(true); setFacetBadges(new Set(["selection"])); }}
+                      className="shrink-0 text-[13px] font-semibold text-primary-deep active:scale-[.98]"
+                    >
+                      Voir tout ›
+                    </button>
+                  </div>
+                  <div className="flex gap-3 overflow-x-auto pb-1 -mx-4 px-4 mb-7 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+                    {coupsDeCoeur.slice(0, 12).map((b) => (
+                      <div
+                        key={b.id}
+                        role="button"
+                        tabIndex={0}
+                        onClick={() => selectFromCard(b.id)}
+                        onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") selectFromCard(b.id); }}
+                        className="relative shrink-0 w-[160px] rounded-card overflow-hidden bg-surface border border-border shadow-card text-left cursor-pointer active:scale-[.98] transition-transform"
+                      >
+                        <div className="relative h-[110px] bg-primary-tint flex items-center justify-center">
+                          {b.photoUrl ? (
+                            // eslint-disable-next-line @next/next/no-img-element
+                            <img src={b.photoUrl} alt="" className="absolute inset-0 w-full h-full object-cover" />
+                          ) : (
+                            (() => {
+                              const FallbackIcon = iconForKey(b.category);
+                              return FallbackIcon ? (
+                                <FallbackIcon size={30} weight="duotone" className="text-primary-deep opacity-50" aria-hidden />
+                              ) : null;
+                            })()
+                          )}
+                          <span
+                            className="absolute top-1.5 right-1.5 inline-flex items-center gap-1 px-1.5 py-1 rounded-full bg-surface/90 shadow-sm"
+                            onClick={(e) => e.stopPropagation()}
+                          >
+                            <FavoriteButton id={b.id} size={12.5} />
+                          </span>
+                        </div>
+                        <div className="p-2.5">
+                          <p className="text-[13px] font-bold text-ink truncate">{displayName(b.name)}</p>
+                          <p className="text-[11.5px] text-muted truncate">
+                            {CATEGORY_MAP[b.category].label} • {displayCity(b.address)}
+                          </p>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </>
+              )}
+
+              <div className="flex items-center justify-between mb-2.5">
+                <h2 className="text-[16px] font-bold text-ink">
+                  Par catégorie
+                </h2>
+                <button
+                  onClick={() => setHomeMode("categories")}
+                  className="text-[13px] font-semibold text-primary-deep active:scale-[.98]"
+                >
+                  Tout voir ›
+                </button>
+              </div>
               <div
                 className="rounded-[32px] p-3 shadow-sm"
                 style={{
@@ -1620,9 +1710,112 @@ export default function DirectoryClient({
               </div>
               </div>
 
+              <div className="flex items-center justify-between mt-7 mb-1">
+                <h2 className="text-[16px] font-bold text-ink">Les listes de Koté Moris</h2>
+                <button
+                  onClick={() => setHomeMode("listes")}
+                  className="text-[13px] font-semibold text-primary-deep active:scale-[.98]"
+                >
+                  Voir tout ›
+                </button>
+              </div>
+              <p className="text-[12.5px] text-muted mb-2.5">
+                Envie d&apos;inspiration ? On a déjà fait le tri pour toi.
+              </p>
+              <div className="flex gap-3 overflow-x-auto pb-1 -mx-4 px-4 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+                {homeSelections.map((s) => (
+                  <button
+                    key={s.id}
+                    onClick={() => { setHomeMode("listes"); setSelectedListId(s.id); }}
+                    className="relative text-left shrink-0 w-[130px] aspect-[4/5] rounded-2xl overflow-hidden shadow-card active:scale-[.98] transition-transform"
+                  >
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src={s.photoUrl}
+                      alt=""
+                      aria-hidden
+                      loading="lazy"
+                      className="absolute inset-0 w-full h-full object-cover"
+                    />
+                    <div
+                      className="absolute inset-0"
+                      style={{ background: "linear-gradient(180deg, rgba(0,0,0,0) 45%, rgba(0,0,0,.72) 100%)" }}
+                    />
+                    <span className="absolute inset-x-0 bottom-0 p-2.5">
+                      <span className="block font-serif text-[12px] font-semibold leading-tight text-white line-clamp-2">
+                        {s.title}
+                      </span>
+                    </span>
+                  </button>
+                ))}
+              </div>
+
+              {kidsFriendly.length > 0 && (
+                <>
+                  <div className="flex items-center justify-between mt-7 mb-2.5">
+                    <div className="flex items-center gap-2">
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img src="/badge-kids.png" alt="" aria-hidden className="h-9 w-9 shrink-0" />
+                      <h2 className="text-[16px] font-bold text-ink">Adresses kids friendly</h2>
+                    </div>
+                    <button
+                      onClick={() => {
+                        setNearMe(false);
+                        setBrowseAll(true);
+                        setHomeCategory(null);
+                        setActiveThemes(new Set(["kids-friendly"]));
+                        setResultsView("liste");
+                        window.scrollTo({ top: 0, behavior: "smooth" });
+                      }}
+                      className="shrink-0 text-[13px] font-semibold text-primary-deep active:scale-[.98]"
+                    >
+                      Voir tout ›
+                    </button>
+                  </div>
+                  <div className="flex gap-3 overflow-x-auto pb-1 -mx-4 px-4 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+                    {kidsFriendly.slice(0, 12).map((b) => (
+                      <div
+                        key={b.id}
+                        role="button"
+                        tabIndex={0}
+                        onClick={() => selectFromCard(b.id)}
+                        onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") selectFromCard(b.id); }}
+                        className="relative shrink-0 w-[160px] rounded-card overflow-hidden bg-surface border border-border shadow-card text-left cursor-pointer active:scale-[.98] transition-transform"
+                      >
+                        <div className="relative h-[110px] bg-primary-tint flex items-center justify-center">
+                          {b.photoUrl ? (
+                            // eslint-disable-next-line @next/next/no-img-element
+                            <img src={b.photoUrl} alt="" className="absolute inset-0 w-full h-full object-cover" />
+                          ) : (
+                            (() => {
+                              const FallbackIcon = iconForKey(b.category);
+                              return FallbackIcon ? (
+                                <FallbackIcon size={30} weight="duotone" className="text-primary-deep opacity-50" aria-hidden />
+                              ) : null;
+                            })()
+                          )}
+                          <span
+                            className="absolute top-1.5 right-1.5 inline-flex items-center gap-1 px-1.5 py-1 rounded-full bg-surface/90 shadow-sm"
+                            onClick={(e) => e.stopPropagation()}
+                          >
+                            <FavoriteButton id={b.id} size={12.5} />
+                          </span>
+                        </div>
+                        <div className="p-2.5">
+                          <p className="text-[13px] font-bold text-ink truncate">{displayName(b.name)}</p>
+                          <p className="text-[11.5px] text-muted truncate">
+                            {CATEGORY_MAP[b.category].label} • {displayCity(b.address)}
+                          </p>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </>
+              )}
+
               <Link
                 href={account.loggedIn ? "/seconde-main" : "/mon-compte"}
-                className="mt-6 block rounded-2xl p-4 overflow-hidden no-underline text-ink shadow-card active:scale-[.99] transition-transform"
+                className="mt-7 block rounded-2xl p-4 overflow-hidden no-underline text-ink shadow-card active:scale-[.99] transition-transform"
                 style={{ background: "linear-gradient(135deg, #ffe3b0 0%, #fff7ea 60%)" }}
               >
                 <div className="flex items-start justify-between gap-2">
@@ -1675,62 +1868,6 @@ export default function DirectoryClient({
                   </div>
                 )}
               </Link>
-
-              {coupsDeCoeur.length > 0 && (
-                <>
-                  <div className="flex items-center justify-between mt-7 mb-2.5">
-                    <div className="flex items-center gap-2">
-                      {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img src="/badge-selection.png" alt="" aria-hidden className="h-9 w-9 shrink-0" />
-                      <h2 className="text-[16px] font-bold text-ink">Les coups de cœur de Koté Moris</h2>
-                    </div>
-                    <button
-                      onClick={() => { setBrowseAll(true); setFacetBadges(new Set(["selection"])); }}
-                      className="shrink-0 text-[13px] font-semibold text-primary-deep active:scale-[.98]"
-                    >
-                      Voir tout ›
-                    </button>
-                  </div>
-                  <div className="flex gap-3 overflow-x-auto pb-1 -mx-4 px-4 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-                    {coupsDeCoeur.slice(0, 12).map((b) => (
-                      <div
-                        key={b.id}
-                        role="button"
-                        tabIndex={0}
-                        onClick={() => selectFromCard(b.id)}
-                        onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") selectFromCard(b.id); }}
-                        className="relative shrink-0 w-[160px] rounded-card overflow-hidden bg-surface border border-border shadow-card text-left cursor-pointer active:scale-[.98] transition-transform"
-                      >
-                        <div className="relative h-[110px] bg-primary-tint flex items-center justify-center">
-                          {b.photoUrl ? (
-                            // eslint-disable-next-line @next/next/no-img-element
-                            <img src={b.photoUrl} alt="" className="absolute inset-0 w-full h-full object-cover" />
-                          ) : (
-                            (() => {
-                              const FallbackIcon = iconForKey(b.category);
-                              return FallbackIcon ? (
-                                <FallbackIcon size={30} weight="duotone" className="text-primary-deep opacity-50" aria-hidden />
-                              ) : null;
-                            })()
-                          )}
-                          <span
-                            className="absolute top-1.5 right-1.5 inline-flex items-center gap-1 px-1.5 py-1 rounded-full bg-surface/90 shadow-sm"
-                            onClick={(e) => e.stopPropagation()}
-                          >
-                            <FavoriteButton id={b.id} size={12.5} />
-                          </span>
-                        </div>
-                        <div className="p-2.5">
-                          <p className="text-[13px] font-bold text-ink truncate">{displayName(b.name)}</p>
-                          <p className="text-[11.5px] text-muted truncate">
-                            {CATEGORY_MAP[b.category].label} • {displayCity(b.address)}
-                          </p>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </>
-              )}
 
               <div
                 className="mt-4 rounded-2xl p-4 overflow-hidden shadow-card"
@@ -1819,106 +1956,6 @@ export default function DirectoryClient({
                     Bientôt de nouveaux événements…
                   </p>
                 )}
-              </div>
-
-              {kidsFriendly.length > 0 && (
-                <>
-                  <div className="flex items-center justify-between mt-7 mb-2.5">
-                    <div className="flex items-center gap-2">
-                      {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img src="/badge-kids.png" alt="" aria-hidden className="h-9 w-9 shrink-0" />
-                      <h2 className="text-[16px] font-bold text-ink">Adresses kids friendly</h2>
-                    </div>
-                    <button
-                      onClick={() => {
-                        setNearMe(false);
-                        setBrowseAll(true);
-                        setHomeCategory(null);
-                        setActiveThemes(new Set(["kids-friendly"]));
-                        setResultsView("liste");
-                        window.scrollTo({ top: 0, behavior: "smooth" });
-                      }}
-                      className="shrink-0 text-[13px] font-semibold text-primary-deep active:scale-[.98]"
-                    >
-                      Voir tout ›
-                    </button>
-                  </div>
-                  <div className="flex gap-3 overflow-x-auto pb-1 -mx-4 px-4 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-                    {kidsFriendly.slice(0, 12).map((b) => (
-                      <div
-                        key={b.id}
-                        role="button"
-                        tabIndex={0}
-                        onClick={() => selectFromCard(b.id)}
-                        onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") selectFromCard(b.id); }}
-                        className="relative shrink-0 w-[160px] rounded-card overflow-hidden bg-surface border border-border shadow-card text-left cursor-pointer active:scale-[.98] transition-transform"
-                      >
-                        <div className="relative h-[110px] bg-primary-tint flex items-center justify-center">
-                          {b.photoUrl ? (
-                            // eslint-disable-next-line @next/next/no-img-element
-                            <img src={b.photoUrl} alt="" className="absolute inset-0 w-full h-full object-cover" />
-                          ) : (
-                            (() => {
-                              const FallbackIcon = iconForKey(b.category);
-                              return FallbackIcon ? (
-                                <FallbackIcon size={30} weight="duotone" className="text-primary-deep opacity-50" aria-hidden />
-                              ) : null;
-                            })()
-                          )}
-                          <span
-                            className="absolute top-1.5 right-1.5 inline-flex items-center gap-1 px-1.5 py-1 rounded-full bg-surface/90 shadow-sm"
-                            onClick={(e) => e.stopPropagation()}
-                          >
-                            <FavoriteButton id={b.id} size={12.5} />
-                          </span>
-                        </div>
-                        <div className="p-2.5">
-                          <p className="text-[13px] font-bold text-ink truncate">{displayName(b.name)}</p>
-                          <p className="text-[11.5px] text-muted truncate">
-                            {CATEGORY_MAP[b.category].label} • {displayCity(b.address)}
-                          </p>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </>
-              )}
-
-              <div className="flex items-center justify-between mt-7 mb-2.5">
-                <h2 className="text-[16px] font-bold text-ink">Les listes de Koté Moris</h2>
-                <button
-                  onClick={() => setHomeMode("listes")}
-                  className="text-[13px] font-semibold text-primary-deep active:scale-[.98]"
-                >
-                  Voir tout ›
-                </button>
-              </div>
-              <div className="flex gap-3 overflow-x-auto pb-1 -mx-4 px-4 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-                {homeSelections.map((s) => (
-                  <button
-                    key={s.id}
-                    onClick={() => { setHomeMode("listes"); setSelectedListId(s.id); }}
-                    className="relative text-left shrink-0 w-[130px] aspect-[4/5] rounded-2xl overflow-hidden shadow-card active:scale-[.98] transition-transform"
-                  >
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img
-                      src={s.photoUrl}
-                      alt=""
-                      aria-hidden
-                      loading="lazy"
-                      className="absolute inset-0 w-full h-full object-cover"
-                    />
-                    <div
-                      className="absolute inset-0"
-                      style={{ background: "linear-gradient(180deg, rgba(0,0,0,0) 45%, rgba(0,0,0,.72) 100%)" }}
-                    />
-                    <span className="absolute inset-x-0 bottom-0 p-2.5">
-                      <span className="block font-serif text-[12px] font-semibold leading-tight text-white line-clamp-2">
-                        {s.title}
-                      </span>
-                    </span>
-                  </button>
-                ))}
               </div>
             </div>
           )}
