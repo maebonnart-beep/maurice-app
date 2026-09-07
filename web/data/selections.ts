@@ -1,4 +1,12 @@
-export type SelectionGroup = "besoins" | "envies" | "escapades";
+export type SelectionGroup =
+  | "famille"
+  | "gastronomie"
+  | "nature"
+  | "plage"
+  | "culture"
+  | "escapades"
+  | "pratique"
+  | "sorties";
 
 /** Nom d'une icône Phosphor (@phosphor-icons/react), résolue dans DirectoryClient via SELECTION_ICONS. */
 export type SelectionIconKey =
@@ -42,9 +50,14 @@ export type Selection = {
 };
 
 export const SELECTION_GROUP_META: Record<SelectionGroup, { label: string; subtitle: string }> = {
-  besoins: { label: "Les besoins", subtitle: "Ce que vous cherchez maintenant" },
-  envies: { label: "Les envies", subtitle: "Ce dont vous avez envie" },
-  escapades: { label: "Les escapades", subtitle: "Pour organiser une sortie" },
+  famille: { label: "Famille & Enfants", subtitle: "Pour petits et grands" },
+  gastronomie: { label: "Gastronomie", subtitle: "À table, à Maurice" },
+  nature: { label: "Nature & Plein air", subtitle: "Sensations et grand air" },
+  plage: { label: "Plage & Mer", subtitle: "Face au lagon" },
+  culture: { label: "Culture & Découverte", subtitle: "L'île autrement" },
+  escapades: { label: "Escapades & Weekends", subtitle: "Pour sortir des sentiers battus" },
+  pratique: { label: "Pratique & Quotidien", subtitle: "Les bons plans du quotidien" },
+  sorties: { label: "Sorties & Romance", subtitle: "Pour une soirée réussie" },
 };
 
 /**
@@ -53,13 +66,13 @@ export const SELECTION_GROUP_META: Record<SelectionGroup, { label: string; subti
  * Une même fiche peut apparaître dans plusieurs sélections.
  */
 export const SELECTIONS: Selection[] = [
-  // --- Besoins ---
+  // --- Pratique & Quotidien ---
   {
     id: "quand-il-pleut",
     emoji: "🌧️",
     title: "Que faire quand il pleut ?",
     tagline: "Les meilleurs plans pour sauver une journée pluvieuse",
-    group: "besoins",
+    group: "pratique",
     icon: "CloudRain",
     photoUrl: "/photos/quand-il-pleut.jpg",
     photoCredit: "Koté Moris",
@@ -79,7 +92,7 @@ export const SELECTIONS: Selection[] = [
     emoji: "👧",
     title: "Avec les enfants",
     tagline: "Des endroits où les enfants vont vraiment s'éclater",
-    group: "besoins",
+    group: "famille",
     icon: "Users",
     photoUrl: "/photos/avec-les-enfants.jpg",
     photoCredit: "Koté Moris",
@@ -101,7 +114,7 @@ export const SELECTIONS: Selection[] = [
     emoji: "💸",
     title: "Maurice sans exploser le budget",
     tagline: "Passer un bon moment sans se ruiner",
-    group: "besoins",
+    group: "pratique",
     icon: "PiggyBank",
     photoUrl: "/photos/petit-budget.jpg",
     photoCredit: "Koté Moris",
@@ -122,7 +135,7 @@ export const SELECTIONS: Selection[] = [
     emoji: "💕",
     title: "Pour un moment à deux",
     tagline: "Restaurants et endroits romantiques",
-    group: "besoins",
+    group: "sorties",
     icon: "Heart",
     photoUrl: "/photos/pour-un-date.jpg",
     photoCredit: "Koté Moris",
@@ -142,7 +155,7 @@ export const SELECTIONS: Selection[] = [
     emoji: "🍹",
     title: "Où boire un verre ?",
     tagline: "Bars, rooftops, beach bars…",
-    group: "besoins",
+    group: "sorties",
     icon: "Martini",
     photoUrl: "/photos/boire-un-verre.jpg",
     photoCredit: "Koté Moris",
@@ -158,13 +171,13 @@ export const SELECTIONS: Selection[] = [
     ],
   },
 
-  // --- Envies ---
+  // --- Gastronomie ---
   {
     id: "la-france-me-manque",
     emoji: "🥐",
     title: "La France me manque",
     tagline: "Épiceries, boulangeries et bonnes tables pour retrouver un goût de chez nous",
-    group: "envies",
+    group: "gastronomie",
     icon: "Basket",
     photoUrl: "/photos/la-france-me-manque.jpg",
     photoCredit: "Pexels",
@@ -185,7 +198,7 @@ export const SELECTIONS: Selection[] = [
     emoji: "🌅",
     title: "Les plus beaux couchers de soleil",
     tagline: "Nos spots préférés pour finir la journée en beauté",
-    group: "envies",
+    group: "plage",
     icon: "SunHorizon",
     photoUrl: "/photos/couchers-de-soleil.jpg",
     photoCredit: "Koté Moris",
@@ -206,7 +219,7 @@ export const SELECTIONS: Selection[] = [
     emoji: "🤩",
     title: "Les activités les plus décoiffantes",
     tagline: "Pour ceux qui veulent de l'adrénaline",
-    group: "envies",
+    group: "nature",
     icon: "Lightning",
     photoUrl: "/photos/activites-decoiffantes.jpg",
     photoCredit: "Koté Moris",
@@ -226,7 +239,7 @@ export const SELECTIONS: Selection[] = [
     emoji: "🍛",
     title: "Les adresses les plus typiques",
     tagline: "Pour goûter au vrai Maurice",
-    group: "envies",
+    group: "gastronomie",
     icon: "ForkKnife",
     photoUrl: "/photos/adresses-typiques.jpg",
     photoCredit: "Koté Moris",
@@ -247,7 +260,7 @@ export const SELECTIONS: Selection[] = [
     emoji: "🇲🇺",
     title: "Pour découvrir le vrai Maurice",
     tagline: "Marché, boutique, culture… des adresses très locales",
-    group: "envies",
+    group: "culture",
     icon: "Basket",
     photoUrl: "https://images.pexels.com/photos/1187299/pexels-photo-1187299.jpeg?auto=compress&cs=tinysrgb&w=800",
     photoCredit: "Madison Inouye / Pexels",
@@ -267,7 +280,7 @@ export const SELECTIONS: Selection[] = [
     emoji: "📸",
     title: "Les endroits les plus Instagrammables",
     tagline: "Les spots qui valent le détour",
-    group: "envies",
+    group: "culture",
     icon: "Camera",
     photoUrl: "/photos/instagrammables.jpg",
     photoCredit: "Koté Moris",
@@ -287,7 +300,7 @@ export const SELECTIONS: Selection[] = [
     emoji: "🥥",
     title: "Les plus belles adresses les pieds dans le sable",
     tagline: "Manger ou boire face au lagon",
-    group: "envies",
+    group: "plage",
     icon: "Waves",
     photoUrl: "/photos/pieds-dans-le-sable.jpg",
     photoCredit: "Koté Moris",
@@ -307,7 +320,7 @@ export const SELECTIONS: Selection[] = [
     emoji: "🌿",
     title: "Détente & nature",
     tagline: "Pour couper complètement",
-    group: "envies",
+    group: "nature",
     icon: "Leaf",
     photoUrl: "/photos/detente-nature.jpg",
     photoCredit: "Koté Moris",
@@ -327,7 +340,7 @@ export const SELECTIONS: Selection[] = [
     emoji: "🥾",
     title: "Les balades à faire en famille",
     tagline: "Des sentiers faciles, sans dénivelé, pour petites et grandes jambes",
-    group: "envies",
+    group: "famille",
     icon: "PersonSimpleWalk",
     photoUrl: "https://images.pexels.com/photos/1450082/pexels-photo-1450082.jpeg?auto=compress&cs=tinysrgb&w=800",
     photoCredit: "Min An / Pexels",
@@ -347,19 +360,19 @@ export const SELECTIONS: Selection[] = [
     emoji: "💎",
     title: "Les pépites encore secrètes",
     tagline: "Les endroits moins connus des touristes",
-    group: "envies",
+    group: "nature",
     icon: "Binoculars",
     photoUrl: "/photos/pepites-secretes.jpg",
     photoCredit: "Koté Moris",
     businessIds: [
       "musee-de-la-petite-collection",
-      "robert-edward-hart-memorial-museum",
       "galerie-francoise-vrot-chane-cane",
       "tabagie-nationale",
-      "musee-du-coquillage",
-      "sookdeo-bissoondoyal-memorial-museum",
-      "frederick-hendrick-museum",
+      "world-of-seashells-bel-ombre",
       "salines-de-yemen-tamarin",
+      "atelier-inam-goodlands",
+      "butte-a-l-herbe-calodyne",
+      "roches-noires-lava-tubes",
     ],
   },
   {
@@ -367,7 +380,7 @@ export const SELECTIONS: Selection[] = [
     emoji: "🥞",
     title: "Où prendre un super brunch",
     tagline: "Nos meilleures adresses pour un brunch réussi, du café artisanal aux pâtisseries maison",
-    group: "envies",
+    group: "gastronomie",
     icon: "ForkKnife",
     photoUrl: "/photos/super-brunch.jpg",
     photoCredit: "Pexels",
@@ -381,7 +394,7 @@ export const SELECTIONS: Selection[] = [
     ],
   },
 
-  // --- Escapades ---
+  // --- Escapades & Weekends ---
   {
     id: "weekend-nord",
     emoji: "🧭",
@@ -488,7 +501,7 @@ export const SELECTIONS: Selection[] = [
     emoji: "📚",
     title: "Le coin des lecteurs",
     tagline: "Les meilleures adresses de librairies et bibliothèques",
-    group: "envies",
+    group: "culture",
     icon: "BookOpen",
     photoUrl: "https://images.pexels.com/photos/256374/pexels-photo-256374.jpeg?auto=compress&cs=tinysrgb&w=800",
     photoCredit: "Pixabay / Pexels",
@@ -508,7 +521,7 @@ export const SELECTIONS: Selection[] = [
     emoji: "🚕",
     title: "Je cherche un taxi",
     tagline: "Applis et taxis reconnus pour se déplacer sereinement",
-    group: "besoins",
+    group: "pratique",
     icon: "Car",
     photoUrl: "https://images.pexels.com/photos/19931918/pexels-photo-19931918.jpeg?auto=compress&cs=tinysrgb&w=800",
     photoCredit: "João Saplak / Pexels",
@@ -527,7 +540,7 @@ export const SELECTIONS: Selection[] = [
     emoji: "🎒",
     title: "C'est la rentrée",
     tagline: "Cartables, uniformes, fournitures et livres scolaires",
-    group: "besoins",
+    group: "famille",
     icon: "Backpack",
     photoUrl: "https://images.pexels.com/photos/28503359/pexels-photo-28503359.jpeg?auto=compress&cs=tinysrgb&w=800",
     photoCredit: "The Design Lady / Pexels",
@@ -547,7 +560,7 @@ export const SELECTIONS: Selection[] = [
     emoji: "🎂",
     title: "L'anniversaire de mon enfant",
     tagline: "Château gonflable, magicien, gâteau : de quoi organiser la fête",
-    group: "besoins",
+    group: "famille",
     icon: "Sparkle",
     photoUrl: "https://images.pexels.com/photos/1857157/pexels-photo-1857157.jpeg?auto=compress&cs=tinysrgb&w=800",
     photoCredit: "Any Lane / Pexels",
@@ -568,7 +581,7 @@ export const SELECTIONS: Selection[] = [
     emoji: "🌱",
     title: "Vegan, sans gluten, sans lactose",
     tagline: "Épiceries spécialisées et adresses qui pensent aux régimes particuliers",
-    group: "besoins",
+    group: "gastronomie",
     icon: "Leaf",
     photoUrl: "https://images.pexels.com/photos/1484523/pexels-photo-1484523.jpeg?auto=compress&cs=tinysrgb&w=800",
     photoCredit: "Valeria Boltneva / Pexels",
@@ -608,7 +621,7 @@ export const SELECTIONS: Selection[] = [
     emoji: "🏕️",
     title: "Camps de vacances pour les enfants",
     tagline: "Des activités encadrées pour occuper les enfants pendant les vacances scolaires",
-    group: "besoins",
+    group: "famille",
     icon: "Sparkle",
     photoUrl: "https://images.pexels.com/photos/8613089/pexels-photo-8613089.jpeg?auto=compress&cs=tinysrgb&w=800",
     photoCredit: "Yan Krukau / Pexels",
@@ -627,7 +640,7 @@ export const SELECTIONS: Selection[] = [
     emoji: "📦",
     title: "Se faire livrer des repas à domicile",
     tagline: "Box de repas cuisinés maison et traiteurs qui livrent chez vous",
-    group: "besoins",
+    group: "gastronomie",
     icon: "Package",
     photoUrl: "https://images.pexels.com/photos/4114122/pexels-photo-4114122.jpeg?auto=compress&cs=tinysrgb&w=800",
     photoCredit: "Ella Olsson / Pexels",
