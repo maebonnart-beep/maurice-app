@@ -431,6 +431,25 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
     () => (selectedList ? selectedList.businessIds.map((id) => businessById[id]).filter((b): b is Business => !!b) : []),
     [selectedList, businessById]
   );
+  // « Autour de moi » au sein d'une sélection Koté Moris : distance par fiche + tri du plus proche au plus loin.
+  const selectedListDistanceById = useMemo(() => {
+    const m: Record<string, number> = {};
+    if (!nearMe || !userPos) return m;
+    selectedListBusinesses.forEach((b) => {
+      if (Number.isFinite(b.lat) && Number.isFinite(b.lng)) {
+        m[b.id] = haversineKm(userPos.lat, userPos.lng, b.lat as number, b.lng as number);
+      }
+    });
+    return m;
+  }, [selectedListBusinesses, nearMe, userPos]);
+  const selectedListBusinessesSorted = useMemo(() => {
+    if (!nearMe || !userPos) return selectedListBusinesses;
+    return [...selectedListBusinesses].sort((a, b) => {
+      const da = selectedListDistanceById[a.id] ?? Infinity;
+      const db = selectedListDistanceById[b.id] ?? Infinity;
+      return da - db;
+    });
+  }, [selectedListBusinesses, nearMe, userPos, selectedListDistanceById]);
   // Mises en avant : les sélections "featured" + toutes les escapades (weekends/journées), en grandes cartes photo.
   const highlightSelections = useMemo(
     () => SELECTIONS.filter((s) => s.featured || s.group === "escapades"),
@@ -2203,17 +2222,37 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
                 </button>
               </div>
               <div className="max-w-[560px] mx-auto pt-3">
-                <p className="m-0 mb-3 text-[13px] text-muted leading-snug">
+                <p className="m-0 mb-2 text-[13px] text-muted leading-snug">
                   Notre sélection Koté Moris · {selectedListBusinesses.length} adresses — {selectedList.tagline}
                 </p>
+                <button
+                  onClick={toggleNearMe}
+                  aria-pressed={nearMe}
+                  title="Trier par distance depuis ma position"
+                  className={`mb-3 flex items-center gap-1 rounded-full px-2.5 py-1 text-[12.5px] font-semibold shrink-0 transition-colors ${
+                    nearMe ? "bg-primary text-white" : "bg-surface-2 text-ink"
+                  }`}
+                >
+                  <MapPin size={14} weight={nearMe ? "fill" : "regular"} aria-hidden />
+                  {geoStatus === "loading" ? "Localisation…" : "Par rapport à ma localisation"}
+                </button>
+                {geoStatus === "denied" && nearMe === false && (
+                  <p className="mb-3 text-[12.5px] text-muted">
+                    📍 Position refusée. Autorisez la localisation dans votre navigateur pour trier par distance.
+                  </p>
+                )}
+                {geoStatus === "unavailable" && (
+                  <p className="mb-3 text-[12.5px] text-muted">📍 Géolocalisation indisponible sur cet appareil.</p>
+                )}
                 <div className="flex flex-col gap-3">
-                  {selectedListBusinesses.map((b) => (
+                  {selectedListBusinessesSorted.map((b) => (
                     <BusinessCard
                       key={b.id}
                       business={b}
                       active={b.id === selectedId}
                       onSelect={selectFromCard}
                       onHover={() => {}}
+                      nearbyKm={nearMe ? selectedListDistanceById[b.id] : undefined}
                     />
                   ))}
                 </div>
