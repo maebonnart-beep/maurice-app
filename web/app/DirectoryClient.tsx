@@ -888,6 +888,8 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
   }, [boundedRows, nearMe, userPos, distanceById]);
 
   // Active « Autour de moi » : demande la position (une fois), puis trie par distance.
+  // Ne bascule pas en "Explorer" (browseAll) quand on est déjà dans une sélection
+  // Koté Moris ouverte : on veut trier ses adresses, pas quitter la liste.
   function toggleNearMe() {
     if (nearMe) {
       setNearMe(false);
@@ -895,7 +897,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
     }
     if (userPos) {
       setNearMe(true);
-      if (showHome) setBrowseAll(true);
+      if (showHome && !selectedListId) setBrowseAll(true);
       return;
     }
     if (typeof navigator === "undefined" || !navigator.geolocation) {
@@ -908,7 +910,7 @@ export default function DirectoryClient({ businesses }: { businesses: Business[]
         setUserPos({ lat: pos.coords.latitude, lng: pos.coords.longitude });
         setGeoStatus("ok");
         setNearMe(true);
-        if (showHome) setBrowseAll(true);
+        if (showHome && !selectedListId) setBrowseAll(true);
       },
       () => setGeoStatus("denied"),
       { enableHighAccuracy: true, timeout: 10000, maximumAge: 60000 }
