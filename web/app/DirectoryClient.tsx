@@ -1241,7 +1241,7 @@ export default function DirectoryClient({
             return I ? <I size={14} weight={!nearMe && activeZone ? "fill" : "regular"} aria-hidden /> : null;
           })()}
           <span className="truncate max-w-[130px]">
-            {!nearMe && activeZone ? ZONES.find((z) => z.key === activeZone)?.label : "Toute l'île"}
+            {!nearMe && activeZone ? ZONES.find((z) => z.key === activeZone)?.label : "Par zone"}
           </span>
         </button>
         {zonePickerOpen && (
@@ -2811,13 +2811,13 @@ export default function DirectoryClient({
                 }
               }}
               aria-pressed={resultsView === "carte"}
-              title={resultsView === "carte" ? "Voir la liste" : "Voir la carte"}
+              title={resultsView === "carte" ? "Voir en liste" : "Voir la carte"}
               className={`lg:hidden shrink-0 ml-auto order-last inline-flex items-center gap-1 rounded-full px-2.5 py-1 text-[12.5px] font-semibold transition-colors ${
                 resultsView === "carte" ? "bg-primary text-white" : "bg-surface-2 text-ink"
               }`}
             >
               <MapPin size={14} weight={resultsView === "carte" ? "fill" : "regular"} aria-hidden />
-              {resultsView === "carte" ? "Carte" : "Liste"}
+              {resultsView === "carte" ? "Voir en liste" : "Voir la carte"}
             </button>
             {zoneControls}
           </div>
@@ -2830,8 +2830,8 @@ export default function DirectoryClient({
             <div className="lg:hidden flex gap-1.5 overflow-x-auto pb-1 mb-3 -mt-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
               <button
                 onClick={() => selectCategoryChip("all")}
-                className={`shrink-0 px-3 py-1.5 rounded-pill text-[12.5px] font-semibold transition-colors ${
-                  active === "all" ? "bg-primary text-white" : "bg-surface-2 text-ink"
+                className={`shrink-0 px-3 py-1.5 rounded-pill text-[12.5px] font-semibold border transition-colors ${
+                  active === "all" ? "bg-primary text-white border-primary" : "bg-surface text-ink border-border"
                 }`}
               >
                 Toutes
@@ -2843,10 +2843,10 @@ export default function DirectoryClient({
                   <button
                     key={c.key}
                     onClick={() => selectCategoryChip(c.key)}
-                    className={`shrink-0 inline-flex items-center gap-1.5 px-3 py-1.5 rounded-pill text-[12.5px] font-semibold transition-colors ${
-                      isActive ? "text-white" : "bg-surface-2 text-ink"
+                    className={`shrink-0 inline-flex items-center gap-1.5 px-3 py-1.5 rounded-pill text-[12.5px] font-semibold border transition-colors ${
+                      isActive ? "text-white" : "bg-surface text-ink border-border"
                     }`}
-                    style={isActive ? { background: c.color } : undefined}
+                    style={isActive ? { background: c.color, borderColor: c.color } : undefined}
                   >
                     {CIcon ? <CIcon size={13} weight={isActive ? "fill" : "regular"} aria-hidden /> : <span aria-hidden>{c.emoji}</span>}
                     {c.label}
