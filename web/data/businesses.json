@@ -5905,7 +5905,7 @@
     "lat": -20.0333,
     "lng": 57.5497,
     "themes": [
-      "restaurants"
+      "cafes-bars-glaciers"
     ],
     "priceRange": "bon-marche",
     "badge": "selection",
@@ -5914,7 +5914,8 @@
     "zone": "nord",
     "description": "Institution locale de Solitude (Triolet) spécialisée dans le roti et la farata, très fréquentée et bien notée par les habitués du coin.",
     "filters": [
-      "mauricienne"
+      "mauricienne",
+      "snacks-plage"
     ]
   },
   {

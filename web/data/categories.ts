@@ -218,7 +218,7 @@ export const FILTER_GROUPS: FilterGroup[] = [
       { key: "bars", label: "Bars", emoji: "🍹" },
       { key: "cafes-terrasses", label: "Cafés & terrasses", emoji: "☕" },
       { key: "petit-dej-lunch", label: "Petit-déj & lunch", emoji: "🥐" },
-      { key: "snacks-plage", label: "Snacks de plage", emoji: "🥙" },
+      { key: "snacks-plage", label: "Snacks de plage et bords de route", emoji: "🥙" },
       { key: "glaciers", label: "Glaciers", emoji: "🍦" },
     ],
   },
