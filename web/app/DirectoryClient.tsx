@@ -2827,11 +2827,11 @@ export default function DirectoryClient({
               arrive par Explorer par catégorie, on est déjà dans une seule
               catégorie donc la rangée n'a plus de sens (sidebar desktop only). */}
           {browseAll && (
-            <div className="lg:hidden flex gap-1.5 overflow-x-auto pb-1 mb-3 -mt-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+            <div className="lg:hidden flex gap-1.5 overflow-x-auto pb-2 mb-3 -mt-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
               <button
                 onClick={() => selectCategoryChip("all")}
-                className={`shrink-0 px-3 py-1.5 rounded-pill text-[12.5px] font-semibold border transition-colors ${
-                  active === "all" ? "bg-primary text-white border-primary" : "bg-surface text-ink border-border"
+                className={`shrink-0 px-3 py-1.5 rounded-pill text-[12.5px] font-semibold whitespace-nowrap transition-colors ${
+                  active === "all" ? "bg-ink text-white" : "bg-[#EFE9DD] text-ink/70"
                 }`}
               >
                 Toutes
@@ -2843,10 +2843,12 @@ export default function DirectoryClient({
                   <button
                     key={c.key}
                     onClick={() => selectCategoryChip(c.key)}
-                    className={`shrink-0 inline-flex items-center gap-1.5 px-3 py-1.5 rounded-pill text-[12.5px] font-semibold border transition-colors ${
-                      isActive ? "text-white" : "bg-surface text-ink border-border"
-                    }`}
-                    style={isActive ? { background: c.color, borderColor: c.color } : undefined}
+                    className="shrink-0 inline-flex items-center gap-1.5 px-3 py-1.5 rounded-pill text-[12.5px] font-semibold whitespace-nowrap transition-colors"
+                    style={
+                      isActive
+                        ? { background: c.color, color: "#fff" }
+                        : { background: `${c.color}22`, color: c.color }
+                    }
                   >
                     {CIcon ? <CIcon size={13} weight={isActive ? "fill" : "regular"} aria-hidden /> : <span aria-hidden>{c.emoji}</span>}
                     {c.label}
