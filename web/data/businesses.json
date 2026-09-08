@@ -53890,5 +53890,613 @@
     "zone": "nord",
     "hours": "Chaque 1er samedi du mois, 08h-13h",
     "description": "Brocante mensuelle où des particuliers vendent directement depuis le coffre de leur voiture : vêtements, objets, jeux et petit mobilier de seconde main."
+  },
+  {
+    "id": "20-vin-mahogany",
+    "name": "20 Vin - Mahogany",
+    "category": "acheter-equiper",
+    "address": "Mahogany Shopping Promenade, Beau Plan, Pamplemousses",
+    "phone": "+230 245 8304",
+    "website": "https://grays.mu/20-vin-shops-mauritius",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=20%20Vin%20Mahogany%20Shopping%20Promenade%20Mauritius",
+    "lat": -20.099693,
+    "lng": 57.5767875,
+    "themes": [
+      "vins-spiritueux"
+    ],
+    "zone": "nord",
+    "description": "Caviste proposant une sélection de vins et spiritueux, au sein du Mahogany Shopping Promenade.",
+    "filters": [
+      "vins-spiritueux"
+    ]
+  },
+  {
+    "id": "361-mahogany",
+    "name": "361° - Mahogany",
+    "category": "acheter-equiper",
+    "address": "Mahogany Shopping Promenade, Beau Plan, Pamplemousses",
+    "phone": "+230 202 0413",
+    "website": "https://www.lewarehouse.mu",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=361%C2%B0%20Mahogany%20Shopping%20Promenade%20Mauritius",
+    "lat": -20.099693,
+    "lng": 57.5767875,
+    "themes": [
+      "mode-accessoires"
+    ],
+    "zone": "nord",
+    "description": "Enseigne de vêtements et chaussures de sport de la marque 361°, au Mahogany Shopping Promenade.",
+    "filters": [
+      "mode-accessoires"
+    ]
+  },
+  {
+    "id": "adopt-mahogany",
+    "name": "Adopt - Mahogany",
+    "category": "acheter-equiper",
+    "address": "Mahogany Shopping Promenade, Beau Plan, Pamplemousses",
+    "phone": "+230 233 0020",
+    "website": "https://www.adopt.mu",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Adopt%20Mahogany%20Shopping%20Promenade%20Mauritius",
+    "lat": -20.099693,
+    "lng": 57.5767875,
+    "themes": [
+      "mode-accessoires"
+    ],
+    "zone": "nord",
+    "description": "Boutique de la marque française de parfums et cosmétiques Adopt, au Mahogany Shopping Promenade.",
+    "filters": [
+      "mode-accessoires"
+    ]
+  },
+  {
+    "id": "ah-ling-wonderland-mahogany",
+    "name": "Ah-Ling Wonderland - Mahogany",
+    "category": "acheter-equiper",
+    "address": "Mahogany Shopping Promenade, Beau Plan, Pamplemousses",
+    "phone": "+230 245 8889",
+    "website": "https://ahling.com",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Ah-Ling%20Wonderland%20Mahogany%20Shopping%20Promenade%20Mauritius",
+    "lat": -20.099693,
+    "lng": 57.5767875,
+    "themes": [
+      "librairies-jeux-loisirs"
+    ],
+    "zone": "nord",
+    "description": "Boutique de jouets et cadeaux Ah-Ling Wonderland, au Mahogany Shopping Promenade.",
+    "filters": [
+      "librairies-jeux-loisirs"
+    ]
+  },
+  {
+    "id": "body-and-soul-mahogany",
+    "name": "Body & Soul - Mahogany",
+    "category": "acheter-equiper",
+    "address": "Mahogany Shopping Promenade, Beau Plan, Pamplemousses",
+    "phone": "",
+    "website": "https://bodyandsoul.mu",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Body%20%26%20Soul%20Mahogany%20Shopping%20Promenade%20Mauritius",
+    "lat": -20.099693,
+    "lng": 57.5767875,
+    "themes": [
+      "mode-accessoires"
+    ],
+    "zone": "nord",
+    "description": "Boutique de mode et lingerie Body & Soul, au Mahogany Shopping Promenade.",
+    "filters": [
+      "mode-accessoires"
+    ]
+  },
+  {
+    "id": "bottega-verde-mahogany",
+    "name": "Bottega Verde - Mahogany",
+    "category": "acheter-equiper",
+    "address": "Mahogany Shopping Promenade, Beau Plan, Pamplemousses",
+    "phone": "+230 263 7082",
+    "website": "https://www.bottegaverdemauritius.com",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Bottega%20Verde%20Mahogany%20Shopping%20Promenade%20Mauritius",
+    "lat": -20.099693,
+    "lng": 57.5767875,
+    "themes": [
+      "coiffeurs-barbiers-beaute"
+    ],
+    "zone": "nord",
+    "description": "Boutique de cosmétiques naturels de la marque italienne Bottega Verde, au Mahogany Shopping Promenade.",
+    "filters": [
+      "coiffeurs-barbiers-beaute"
+    ]
+  },
+  {
+    "id": "brasilia-mahogany",
+    "name": "Brasilia - Mahogany",
+    "category": "acheter-equiper",
+    "address": "Mahogany Shopping Promenade, Beau Plan, Pamplemousses",
+    "phone": "+230 5480 3588",
+    "website": "https://www.brasilia.mu",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Brasilia%20Mahogany%20Shopping%20Promenade%20Mauritius",
+    "lat": -20.099693,
+    "lng": 57.5767875,
+    "themes": [
+      "mode-accessoires"
+    ],
+    "zone": "nord",
+    "description": "Boutique de mode de la marque mauricienne Brasilia, au Mahogany Shopping Promenade.",
+    "filters": [
+      "mode-accessoires"
+    ]
+  },
+  {
+    "id": "brasilia-home-mahogany",
+    "name": "Brasilia Home - Mahogany",
+    "category": "acheter-equiper",
+    "address": "Mahogany Shopping Promenade, Beau Plan, Pamplemousses",
+    "phone": "+230 5480 3588",
+    "website": "https://www.brasilia.mu",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Brasilia%20Home%20Mahogany%20Shopping%20Promenade%20Mauritius",
+    "lat": -20.099693,
+    "lng": 57.5767875,
+    "themes": [
+      "maison-equipement"
+    ],
+    "zone": "nord",
+    "description": "Boutique de décoration et linge de maison de la marque Brasilia Home, au Mahogany Shopping Promenade.",
+    "filters": [
+      "maison-equipement"
+    ]
+  },
+  {
+    "id": "cocoon-atelier-des-sens-mahogany",
+    "name": "Cocoon - L'Atelier des Sens - Mahogany",
+    "category": "acheter-equiper",
+    "address": "Mahogany Shopping Promenade, Beau Plan, Pamplemousses",
+    "phone": "+230 245 8304",
+    "website": "https://grays.mu/cocoon",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Cocoon%20-%20L'Atelier%20des%20Sens%20Mahogany%20Shopping%20Promenade%20Mauritius",
+    "lat": -20.099693,
+    "lng": 57.5767875,
+    "themes": [
+      "maison-equipement"
+    ],
+    "zone": "nord",
+    "description": "Boutique de linge de maison et d'articles pour la chambre Cocoon - L'Atelier des Sens, au Mahogany Shopping Promenade.",
+    "filters": [
+      "maison-equipement"
+    ]
+  },
+  {
+    "id": "erborian-mahogany",
+    "name": "Erborian - Mahogany",
+    "category": "acheter-equiper",
+    "address": "Mahogany Shopping Promenade, Beau Plan, Pamplemousses",
+    "phone": "",
+    "website": "https://www.erborian.com",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Erborian%20Mahogany%20Shopping%20Promenade%20Mauritius",
+    "lat": -20.099693,
+    "lng": 57.5767875,
+    "themes": [
+      "coiffeurs-barbiers-beaute"
+    ],
+    "zone": "nord",
+    "description": "Boutique de la marque de soins coréens Erborian, au Mahogany Shopping Promenade.",
+    "filters": [
+      "coiffeurs-barbiers-beaute"
+    ]
+  },
+  {
+    "id": "exotica-floral-mahogany",
+    "name": "Exotica Floral by Kehina - Mahogany",
+    "category": "acheter-equiper",
+    "address": "Mahogany Shopping Promenade, Beau Plan, Pamplemousses",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Exotica%20Floral%20by%20Kehina%20Mahogany%20Shopping%20Promenade%20Mauritius",
+    "lat": -20.099693,
+    "lng": 57.5767875,
+    "themes": [
+      "maison-equipement"
+    ],
+    "zone": "nord",
+    "description": "Fleuriste Exotica Floral by Kehina, au Mahogany Shopping Promenade.",
+    "filters": [
+      "maison-equipement"
+    ]
+  },
+  {
+    "id": "hair-avenue-mahogany",
+    "name": "Hair Avenue - Mahogany",
+    "category": "sante-bien-etre",
+    "address": "Mahogany Shopping Promenade, Beau Plan, Pamplemousses",
+    "phone": "+230 5809 4880",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Hair%20Avenue%20Mahogany%20Shopping%20Promenade%20Mauritius",
+    "lat": -20.099693,
+    "lng": 57.5767875,
+    "themes": [
+      "coiffeurs-barbiers-beaute"
+    ],
+    "zone": "nord",
+    "description": "Salon de coiffure, ongles et beauté Hair Avenue, au Mahogany Shopping Promenade.",
+    "filters": [
+      "coiffeurs-barbiers-beaute"
+    ]
+  },
+  {
+    "id": "hobbyworld-mahogany",
+    "name": "HobbyWorld - Mahogany",
+    "category": "acheter-equiper",
+    "address": "Mahogany Shopping Promenade, Beau Plan, Pamplemousses",
+    "phone": "+230 464 6761",
+    "website": "https://www.hobby.world",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=HobbyWorld%20Mahogany%20Shopping%20Promenade%20Mauritius",
+    "lat": -20.099693,
+    "lng": 57.5767875,
+    "themes": [
+      "librairies-jeux-loisirs"
+    ],
+    "zone": "nord",
+    "description": "Boutique de loisirs créatifs, jeux et modélisme HobbyWorld, au Mahogany Shopping Promenade.",
+    "filters": [
+      "librairies-jeux-loisirs"
+    ]
+  },
+  {
+    "id": "island-haze-mahogany",
+    "name": "Island Haze - Mahogany",
+    "category": "acheter-equiper",
+    "address": "Mahogany Shopping Promenade, Beau Plan, Pamplemousses",
+    "phone": "+230 460 2426",
+    "website": "https://islandhaze.mu",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Island%20Haze%20Mahogany%20Shopping%20Promenade%20Mauritius",
+    "lat": -20.099693,
+    "lng": 57.5767875,
+    "themes": [
+      "mode-accessoires"
+    ],
+    "zone": "nord",
+    "description": "Boutique de mode de la marque mauricienne Island Haze, au Mahogany Shopping Promenade.",
+    "filters": [
+      "mode-accessoires"
+    ]
+  },
+  {
+    "id": "linstant-present-mahogany",
+    "name": "L'Instant Présent - Mahogany",
+    "category": "acheter-equiper",
+    "address": "Mahogany Shopping Promenade, Beau Plan, Pamplemousses",
+    "phone": "+230 5758 4044",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=L'Instant%20Pr%C3%A9sent%20Mahogany%20Shopping%20Promenade%20Mauritius",
+    "lat": -20.099693,
+    "lng": 57.5767875,
+    "themes": [
+      "maison-equipement"
+    ],
+    "zone": "nord",
+    "description": "Boutique de luminaires et décoration naturelle L'Instant Présent, au Mahogany Shopping Promenade.",
+    "filters": [
+      "maison-equipement"
+    ]
+  },
+  {
+    "id": "loccitane-mahogany",
+    "name": "L'Occitane en Provence - Mahogany",
+    "category": "acheter-equiper",
+    "address": "Mahogany Shopping Promenade, Beau Plan, Pamplemousses",
+    "phone": "+230 245 8304",
+    "website": "https://www.loccitane.com",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=L'Occitane%20en%20Provence%20Mahogany%20Shopping%20Promenade%20Mauritius",
+    "lat": -20.099693,
+    "lng": 57.5767875,
+    "themes": [
+      "coiffeurs-barbiers-beaute"
+    ],
+    "zone": "nord",
+    "description": "Boutique de cosmétiques et parfums L'Occitane en Provence, au Mahogany Shopping Promenade.",
+    "filters": [
+      "coiffeurs-barbiers-beaute"
+    ]
+  },
+  {
+    "id": "mac-cosmetics-mahogany",
+    "name": "MAC Cosmetics - Mahogany",
+    "category": "acheter-equiper",
+    "address": "Mahogany Shopping Promenade, Beau Plan, Pamplemousses",
+    "phone": "+230 471 0580",
+    "website": "https://www.maccosmetics.com",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=MAC%20Cosmetics%20Mahogany%20Shopping%20Promenade%20Mauritius",
+    "lat": -20.099693,
+    "lng": 57.5767875,
+    "themes": [
+      "coiffeurs-barbiers-beaute"
+    ],
+    "zone": "nord",
+    "description": "Boutique de maquillage MAC Cosmetics, au Mahogany Shopping Promenade.",
+    "filters": [
+      "coiffeurs-barbiers-beaute"
+    ]
+  },
+  {
+    "id": "manjoo-mahogany",
+    "name": "Manjoo - Mahogany",
+    "category": "acheter-equiper",
+    "address": "Mahogany Shopping Promenade, Beau Plan, Pamplemousses",
+    "phone": "+230 675 3300",
+    "website": "https://www.manjoo.mu",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Manjoo%20Mahogany%20Shopping%20Promenade%20Mauritius",
+    "lat": -20.099693,
+    "lng": 57.5767875,
+    "themes": [
+      "mode-accessoires"
+    ],
+    "zone": "nord",
+    "description": "Bijouterie mauricienne Manjoo, fondée en 1919, au Mahogany Shopping Promenade.",
+    "filters": [
+      "mode-accessoires"
+    ]
+  },
+  {
+    "id": "mantra-wellness-mahogany",
+    "name": "Mantra Wellness - Mahogany",
+    "category": "sante-bien-etre",
+    "address": "Mahogany Shopping Promenade, Beau Plan, Pamplemousses",
+    "phone": "+230 606 9230",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Mantra%20Wellness%20Mahogany%20Shopping%20Promenade%20Mauritius",
+    "lat": -20.099693,
+    "lng": 57.5767875,
+    "themes": [
+      "spa-instituts-massages"
+    ],
+    "zone": "nord",
+    "description": "Spa et institut de bien-être Mantra Wellness, au Mahogany Shopping Promenade.",
+    "filters": [
+      "spa-instituts-massages"
+    ]
+  },
+  {
+    "id": "quiksilver-mahogany",
+    "name": "Quiksilver - Mahogany",
+    "category": "acheter-equiper",
+    "address": "Mahogany Shopping Promenade, Beau Plan, Pamplemousses",
+    "phone": "+230 401 1475",
+    "website": "https://www.quiksilver.com",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Quiksilver%20Mahogany%20Shopping%20Promenade%20Mauritius",
+    "lat": -20.099693,
+    "lng": 57.5767875,
+    "themes": [
+      "mode-accessoires"
+    ],
+    "zone": "nord",
+    "description": "Boutique de mode et surfwear Quiksilver, au Mahogany Shopping Promenade.",
+    "filters": [
+      "mode-accessoires"
+    ]
+  },
+  {
+    "id": "roxy-mahogany",
+    "name": "Roxy - Mahogany",
+    "category": "acheter-equiper",
+    "address": "Mahogany Shopping Promenade, Beau Plan, Pamplemousses",
+    "phone": "",
+    "website": "https://www.roxy.com",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Roxy%20Mahogany%20Shopping%20Promenade%20Mauritius",
+    "lat": -20.099693,
+    "lng": 57.5767875,
+    "themes": [
+      "mode-accessoires"
+    ],
+    "zone": "nord",
+    "description": "Boutique de mode et surfwear féminin Roxy, au Mahogany Shopping Promenade.",
+    "filters": [
+      "mode-accessoires"
+    ]
+  },
+  {
+    "id": "tape-a-loeil-mahogany",
+    "name": "Tape à l'Œil - Mahogany",
+    "category": "acheter-equiper",
+    "address": "Mahogany Shopping Promenade, Beau Plan, Pamplemousses",
+    "phone": "",
+    "website": "https://www.taokids.com",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Tape%20%C3%A0%20l'%C5%92il%20Mahogany%20Shopping%20Promenade%20Mauritius",
+    "lat": -20.099693,
+    "lng": 57.5767875,
+    "themes": [
+      "mode-accessoires"
+    ],
+    "zone": "nord",
+    "description": "Boutique de vêtements pour enfants Tape à l'Œil, au Mahogany Shopping Promenade.",
+    "filters": [
+      "mode-accessoires"
+    ]
+  },
+  {
+    "id": "grand-bazaar-india-mahogany",
+    "name": "The Grand Bazaar of India - Mahogany",
+    "category": "acheter-equiper",
+    "address": "Mahogany Shopping Promenade, Beau Plan, Pamplemousses",
+    "phone": "",
+    "website": "https://www.tgbi.shop",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=The%20Grand%20Bazaar%20of%20India%20Mahogany%20Shopping%20Promenade%20Mauritius",
+    "lat": -20.099693,
+    "lng": 57.5767875,
+    "themes": [
+      "mode-accessoires"
+    ],
+    "zone": "nord",
+    "description": "Boutique de textiles, saris et articles d'Inde The Grand Bazaar of India, au Mahogany Shopping Promenade.",
+    "filters": [
+      "mode-accessoires"
+    ]
+  },
+  {
+    "id": "yasin-mobile-shop-mahogany",
+    "name": "Yasin Mobile Shop - Mahogany",
+    "category": "acheter-equiper",
+    "address": "Mahogany Shopping Promenade, Beau Plan, Pamplemousses",
+    "phone": "+230 5847 1000",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Yasin%20Mobile%20Shop%20Mahogany%20Shopping%20Promenade%20Mauritius",
+    "lat": -20.099693,
+    "lng": 57.5767875,
+    "themes": [
+      "high-tech-electromenager"
+    ],
+    "zone": "nord",
+    "description": "Boutique de téléphonie et accessoires mobiles Yasin Mobile Shop, au Mahogany Shopping Promenade.",
+    "filters": [
+      "high-tech-electromenager"
+    ]
+  },
+  {
+    "id": "zea-mahogany",
+    "name": "Zea - Mahogany",
+    "category": "acheter-equiper",
+    "address": "Mahogany Shopping Promenade, Beau Plan, Pamplemousses",
+    "phone": "+230 5805 0360",
+    "website": "https://zea-design.com",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Zea%20Mahogany%20Shopping%20Promenade%20Mauritius",
+    "lat": -20.099693,
+    "lng": 57.5767875,
+    "themes": [
+      "mode-accessoires"
+    ],
+    "zone": "nord",
+    "description": "Boutique de bijoux et accessoires Zea, au Mahogany Shopping Promenade.",
+    "filters": [
+      "mode-accessoires"
+    ]
+  },
+  {
+    "id": "emtel-mahogany",
+    "name": "Emtel - Mahogany",
+    "category": "vie-pratique",
+    "address": "Mahogany Shopping Promenade, Beau Plan, Pamplemousses",
+    "phone": "",
+    "website": "https://www.emtel.com",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Emtel%20Mahogany%20Shopping%20Promenade%20Mauritius",
+    "lat": -20.099693,
+    "lng": 57.5767875,
+    "themes": [
+      "telecom-internet"
+    ],
+    "zone": "nord",
+    "description": "Agence de l'opérateur télécom Emtel, au Mahogany Shopping Promenade.",
+    "filters": [
+      "telecom-internet"
+    ]
+  },
+  {
+    "id": "flow-car-wash-mahogany",
+    "name": "Flow Car Wash & Detailing - Mahogany",
+    "category": "vie-pratique",
+    "address": "Mahogany Shopping Promenade, Beau Plan, Pamplemousses",
+    "phone": "",
+    "website": "https://flowcarwash.mu",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Flow%20Car%20Wash%20%26%20Detailing%20Mahogany%20Shopping%20Promenade%20Mauritius",
+    "lat": -20.099693,
+    "lng": 57.5767875,
+    "themes": [
+      "auto-garages-concessionnaires"
+    ],
+    "zone": "nord",
+    "description": "Station de lavage et detailing automobile Flow Car Wash & Detailing, au Mahogany Shopping Promenade.",
+    "filters": [
+      "auto-garages-concessionnaires"
+    ]
+  },
+  {
+    "id": "maison-medicale-beau-plan",
+    "name": "Maison Médicale Beau Plan",
+    "category": "sante-bien-etre",
+    "address": "Mahogany Shopping Promenade, Beau Plan, Pamplemousses",
+    "phone": "+230 243 1249",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Maison%20M%C3%A9dicale%20Beau%20Plan%20Mahogany%20Shopping%20Promenade%20Mauritius",
+    "lat": -20.099693,
+    "lng": 57.5767875,
+    "themes": [
+      "cliniques-hopitaux"
+    ],
+    "zone": "nord",
+    "description": "Centre médical Maison Médicale, situé au Mahogany Shopping Promenade à Beau Plan.",
+    "filters": [
+      "cliniques-hopitaux"
+    ]
+  },
+  {
+    "id": "mathieu-opticien-mahogany",
+    "name": "Mathieu Opticien - Mahogany",
+    "category": "sante-bien-etre",
+    "address": "Mahogany Shopping Promenade, Beau Plan, Pamplemousses",
+    "phone": "+230 245 8391",
+    "website": "https://mathieu-opticians.mu",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Mathieu%20Opticien%20Mahogany%20Shopping%20Promenade%20Mauritius",
+    "lat": -20.099693,
+    "lng": 57.5767875,
+    "themes": [
+      "medecins-soins"
+    ],
+    "zone": "nord",
+    "description": "Opticien Mathieu Opticien, au Mahogany Shopping Promenade.",
+    "filters": [
+      "medecins-soins"
+    ]
+  },
+  {
+    "id": "mcb-mahogany",
+    "name": "MCB - Mahogany",
+    "category": "vie-pratique",
+    "address": "Mahogany Shopping Promenade, Beau Plan, Pamplemousses",
+    "phone": "",
+    "website": "https://www.mcbgroup.com",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=MCB%20Mahogany%20Shopping%20Promenade%20Mauritius",
+    "lat": -20.099693,
+    "lng": 57.5767875,
+    "themes": [
+      "banques-assurances-argent"
+    ],
+    "zone": "nord",
+    "description": "Agence bancaire de la Mauritius Commercial Bank (MCB), au Mahogany Shopping Promenade.",
+    "filters": [
+      "banques-assurances-argent"
+    ]
+  },
+  {
+    "id": "pharmacie-ducasse-mahogany",
+    "name": "Pharmacie Ducasse - Mahogany",
+    "category": "sante-bien-etre",
+    "address": "Mahogany Shopping Promenade, Beau Plan, Pamplemousses",
+    "phone": "+230 265 6538",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Pharmacie%20Ducasse%20Mahogany%20Shopping%20Promenade%20Mauritius",
+    "lat": -20.099693,
+    "lng": 57.5767875,
+    "themes": [
+      "pharmacies-laboratoires"
+    ],
+    "zone": "nord",
+    "description": "Pharmacie Ducasse, au Mahogany Shopping Promenade.",
+    "filters": [
+      "pharmacies-laboratoires"
+    ]
+  },
+  {
+    "id": "swan-mahogany",
+    "name": "Swan - Mahogany",
+    "category": "vie-pratique",
+    "address": "Mahogany Shopping Promenade, Beau Plan, Pamplemousses",
+    "phone": "+230 207 9040",
+    "website": "https://www.swanforlife.com",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Swan%20Mahogany%20Shopping%20Promenade%20Mauritius",
+    "lat": -20.099693,
+    "lng": 57.5767875,
+    "themes": [
+      "banques-assurances-argent"
+    ],
+    "zone": "nord",
+    "description": "Agence de l'assureur Swan, au Mahogany Shopping Promenade.",
+    "filters": [
+      "banques-assurances-argent"
+    ]
   }
 ]
