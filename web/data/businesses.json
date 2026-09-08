@@ -24524,11 +24524,11 @@
     ],
     "badge": "selection",
     "zone": "nord",
-    "hours": "Boutiques : Lun-Jeu 9h-19h, Ven-Sam 9h-20h, Dim et jours fériés 9h-15h",
+    "hours": "Boutiques : Lun-Jeu 9h-19h, Ven-Sam 9h-20h, Dim et jours fériés 9h-15h · Food court : Lun-Jeu 10h-21h, Ven-Sam 10h-22h, Dim et jours fériés 10h-21h · Intermart : Lun-Jeu 8h-20h, Ven-Sam 8h-21h, Dim et jours fériés 8h-19h",
     "photoUrls": [
       "/photos/mahogany-shopping-promenade.jpg"
     ],
-    "description": "Superbe centre commercial à ciel ouvert, autour d'un joli plan d'eau. Facile d'accès, avec une sélection d'enseignes variées : mode, beauté, maison, services, supermarché, restaurants et food court. Un centre à taille humaine, agréable aussi bien pour faire quelques emplettes que pour se promener."
+    "description": "Superbe centre commercial à ciel ouvert, autour d'un joli plan d'eau. Facile d'accès, avec une sélection d'enseignes variées : mode (Roxy, Quiksilver, Tape à l'Œil, MAC...), beauté (L'Occitane, Erborian, Adopt...), maison et décoration, coiffeur (Hair Avenue), pharmacie (Pharmacie Ducasse), opticien (Mathieu Opticien), supermarché Intermart, agences Emtel, MCB et Swan, restaurants et food court. Un centre à taille humaine, agréable aussi bien pour faire quelques emplettes que pour se promener. Des séances de Tai-Chi sont organisées dans le centre le lundi, mercredi et dimanche matin (contact : Yasin Owadally, +230 5721 4361)."
   },
   {
     "id": "le-valentina-shopping-mall",
@@ -53832,5 +53832,63 @@
       "mode-accessoires"
     ],
     "description": "Bijouterie de la marque mauricienne Oceano Pearls (bijoux de perles), au Quartier des Serres du Domaine de Labourdonnais."
+  },
+  {
+    "id": "mauritius-cleanup-day-evt",
+    "name": "Mauritius Cleanup Day",
+    "category": "agenda",
+    "address": "Sites de nettoyage dans toute l'île",
+    "phone": "",
+    "website": "https://www.mauritiuscleanupday.com/",
+    "themes": [
+      "evenements-associatifs"
+    ],
+    "description": "Première édition du World Cleanup Day à Maurice : nettoyage citoyen coordonné à l'échelle nationale (entreprises, écoles, familles, ONG), avec tri sur place du plastique, du verre, du métal et des déchets généraux. Participation libre, sans inscription, sur les sites publics annoncés.",
+    "period": "20 septembre",
+    "eventStartDate": "2026-09-20",
+    "eventEndDate": "2026-09-20",
+    "eventRecurrence": "annuel-variable",
+    "filters": [
+      "associatif-caritatif"
+    ]
+  },
+  {
+    "id": "mahogany-car-boot-sale-evt",
+    "name": "Mahogany Car Boot Sale",
+    "category": "agenda",
+    "address": "Mahogany Shopping Promenade, Beau Plan, Pamplemousses",
+    "phone": "",
+    "website": "https://www.carbootsales.mu/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Mahogany%20Shopping%20Promenade%20Beau%20Plan%20Mauritius",
+    "lat": -20.099693,
+    "lng": 57.5767875,
+    "themes": [
+      "evenements-associatifs"
+    ],
+    "zone": "nord",
+    "description": "Brocante / vide-grenier mensuel dans le parking du Mahogany Shopping Promenade : les vendeurs particuliers déballent leurs articles de seconde main directement depuis leur coffre. Économie circulaire, bonnes affaires et ambiance conviviale.",
+    "period": "Chaque 1er samedi du mois",
+    "hours": "08h-13h",
+    "eventRecurrence": "periodique",
+    "filters": [
+      "associatif-caritatif"
+    ]
+  },
+  {
+    "id": "mahogany-car-boot-sale-boutique",
+    "name": "Mahogany Car Boot Sale",
+    "category": "acheter-equiper",
+    "address": "Mahogany Shopping Promenade, Beau Plan, Pamplemousses",
+    "phone": "",
+    "website": "https://www.carbootsales.mu/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Mahogany%20Shopping%20Promenade%20Beau%20Plan%20Mauritius",
+    "lat": -20.099693,
+    "lng": 57.5767875,
+    "themes": [
+      "seconde-main-particuliers"
+    ],
+    "zone": "nord",
+    "hours": "Chaque 1er samedi du mois, 08h-13h",
+    "description": "Brocante mensuelle où des particuliers vendent directement depuis le coffre de leur voiture : vêtements, objets, jeux et petit mobilier de seconde main."
   }
 ]
