@@ -369,7 +369,7 @@ export default function DirectoryClient({
   const [openId, setOpenId] = useState<string | null>(null);
   // Accueil → Listes de Koté Moris : sélection éditoriale ouverte (null = grille des sélections).
   const [selectedListId, setSelectedListId] = useState<string | null>(null);
-  // Filtre de la grille "Explorer toutes nos sélections" (Tous / Besoins / Envies / Escapades).
+  // Filtre de la grille "Explorer toutes nos sélections" (Tous / grandes thématiques).
   const [selectionExploreFilter, setSelectionExploreFilter] = useState<SelectionGroup | "tous">("tous");
   const [hoveredId, setHoveredId] = useState<string | null>(null);
   const [filterByMap, setFilterByMap] = useState(false);
@@ -467,9 +467,9 @@ export default function DirectoryClient({
       return da - db;
     });
   }, [selectedListBusinesses, nearMe, userPos, selectedListDistanceById]);
-  // Mises en avant : les sélections "featured" + toutes les escapades (weekends/journées), en grandes cartes photo.
+  // Mises en avant : les sélections "featured" + les weekends régionaux et la découverte de l'île, en grandes cartes photo.
   const highlightSelections = useMemo(
-    () => SELECTIONS.filter((s) => s.featured || s.group === "escapades"),
+    () => SELECTIONS.filter((s) => s.featured || s.id.startsWith("weekend-") || s.id === "inviter-decouverte"),
     []
   );
   // Accueil → « Les listes de Koté Moris » : ordre mélangé après hydratation
@@ -1521,16 +1521,16 @@ export default function DirectoryClient({
                 className="relative w-full mb-6 rounded-2xl overflow-hidden text-left shadow-card active:scale-[.99] transition-transform"
                 style={{ background: "linear-gradient(135deg, #0d4a47 0%, #146b66 65%)" }}
               >
-                <div className="relative z-10 p-4 pr-[104px]">
-                  <p className="text-white text-[15px] font-bold leading-tight">Trouve ta prochaine adresse</p>
-                  <p className="text-white/80 text-[12px] mt-1 leading-snug">
+                <div className="relative z-10 p-3.5 pr-[92px]">
+                  <p className="text-white text-[14px] font-bold leading-tight">Trouve ta prochaine adresse</p>
+                  <p className="text-white/80 text-[11.5px] mt-0.5 leading-snug">
                     Restaurants, activités, sorties, bons plans à Maurice…
                   </p>
                   <span
-                    className="mt-3 inline-flex items-center gap-2 h-[38px] px-4 rounded-pill bg-white text-[13.5px] font-semibold"
+                    className="mt-2.5 inline-flex items-center gap-2 h-[34px] px-4 rounded-pill bg-white text-[13px] font-semibold"
                     style={{ color: "#0d4a47" }}
                   >
-                    <MagnifyingGlass size={15} weight="bold" aria-hidden />
+                    <MagnifyingGlass size={14} weight="bold" aria-hidden />
                     Rechercher
                   </span>
                 </div>
@@ -1539,15 +1539,8 @@ export default function DirectoryClient({
                   src="/logo-octopus.png"
                   alt=""
                   aria-hidden
-                  className="pointer-events-none absolute -right-5 -bottom-8 w-[130px] h-[130px] object-contain opacity-25"
+                  className="pointer-events-none absolute -right-5 -bottom-6 w-[110px] h-[110px] object-contain opacity-25"
                 />
-                <span
-                  className="absolute right-5 top-1/2 -translate-y-1/2 flex items-center justify-center w-11 h-11 rounded-full"
-                  style={{ background: "rgba(255,255,255,.15)" }}
-                  aria-hidden
-                >
-                  <MagnifyingGlass size={20} weight="bold" className="text-white" />
-                </span>
               </button>
 
               {coupsDeCoeur.length > 0 && (
