@@ -53912,7 +53912,7 @@
   },
   {
     "id": "361-mahogany",
-    "name": "361° - Mahogany",
+    "name": "361 - Mahogany",
     "category": "acheter-equiper",
     "address": "Mahogany Shopping Promenade, Beau Plan, Pamplemousses",
     "phone": "+230 202 0413",
@@ -53921,12 +53921,12 @@
     "lat": -20.099693,
     "lng": 57.5767875,
     "themes": [
-      "mode-accessoires"
+      "high-tech-electromenager"
     ],
     "zone": "nord",
-    "description": "Enseigne de vêtements et chaussures de sport de la marque 361°, au Mahogany Shopping Promenade.",
+    "description": "Magasin d'électroménager et high-tech de l'enseigne 361 (Le Warehouse Ltd), au Mahogany Shopping Promenade.",
     "filters": [
-      "mode-accessoires"
+      "high-tech-electromenager"
     ]
   },
   {
@@ -53953,7 +53953,7 @@
     "name": "Ah-Ling Wonderland - Mahogany",
     "category": "acheter-equiper",
     "address": "Mahogany Shopping Promenade, Beau Plan, Pamplemousses",
-    "phone": "+230 245 8889",
+    "phone": "+230 467 8647",
     "website": "https://ahling.com",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Ah-Ling%20Wonderland%20Mahogany%20Shopping%20Promenade%20Mauritius",
     "lat": -20.099693,
@@ -54048,7 +54048,7 @@
     "name": "Cocoon - L'Atelier des Sens - Mahogany",
     "category": "acheter-equiper",
     "address": "Mahogany Shopping Promenade, Beau Plan, Pamplemousses",
-    "phone": "+230 245 8304",
+    "phone": "",
     "website": "https://grays.mu/cocoon",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Cocoon%20-%20L'Atelier%20des%20Sens%20Mahogany%20Shopping%20Promenade%20Mauritius",
     "lat": -20.099693,
@@ -54181,7 +54181,7 @@
     "name": "L'Occitane en Provence - Mahogany",
     "category": "acheter-equiper",
     "address": "Mahogany Shopping Promenade, Beau Plan, Pamplemousses",
-    "phone": "+230 245 8304",
+    "phone": "",
     "website": "https://www.loccitane.com",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=L'Occitane%20en%20Provence%20Mahogany%20Shopping%20Promenade%20Mauritius",
     "lat": -20.099693,
@@ -54225,12 +54225,12 @@
     "lat": -20.099693,
     "lng": 57.5767875,
     "themes": [
-      "mode-accessoires"
+      "maison-equipement"
     ],
     "zone": "nord",
-    "description": "Bijouterie mauricienne Manjoo, fondée en 1919, au Mahogany Shopping Promenade.",
+    "description": "Enseigne mauricienne de linge de maison, déco et textile (rideaux, tapis, literie), fondée en 1919, au Mahogany Shopping Promenade.",
     "filters": [
-      "mode-accessoires"
+      "maison-equipement"
     ]
   },
   {
