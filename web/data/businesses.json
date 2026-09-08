@@ -1999,8 +1999,7 @@
     "promoText": "Les pêcheurs locaux se rassemblent sur la plage pour vendre du poisson frais de toutes les couleurs et de toutes les tailles. Le marchandage et l'ambiance locale sont à l'ordre du jour.",
     "description": "Marché improvisé sur le parking de la plage publique de Grand Baie, pêcheurs locaux vendant leur pêche du jour tous les après-midi (à partir d'environ 15h), prix à négocier.",
     "filters": [
-      "poissonneries",
-      "marches"
+      "poissonneries"
     ]
   },
   {

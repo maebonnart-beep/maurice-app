@@ -207,7 +207,6 @@ export const FILTER_GROUPS: FilterGroup[] = [
       { key: "boucheries", label: "Boucheries", emoji: "🥩" },
       { key: "fruits-et-legumes", label: "Fruits & légumes", emoji: "🥬" },
       { key: "poissonneries", label: "Poissonneries", emoji: "🐟" },
-      { key: "marches", label: "Marchés", emoji: "🥭" },
     ],
   },
   {
