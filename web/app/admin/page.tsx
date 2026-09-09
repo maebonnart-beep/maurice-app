@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
+import Link from "next/link";
 import type { Business } from "@/lib/types";
 import { CATEGORY_MAP } from "@/data/categories";
 
@@ -117,6 +118,14 @@ export default function AdminPage() {
 
   return (
     <div className="min-h-screen bg-bg text-ink p-6 max-w-3xl mx-auto">
+      <nav className="flex items-center gap-4 mb-4 text-sm">
+        <Link href="/admin/utilisateurs" className="text-primary underline underline-offset-2">
+          Utilisateurs
+        </Link>
+        <Link href="/admin/seconde-main" className="text-primary underline underline-offset-2">
+          Modération annonces
+        </Link>
+      </nav>
       <h1 className="text-xl font-semibold mb-1">Admin — Fiches Koté Moris</h1>
       <p className="text-sm text-muted mb-4">
         Outil local uniquement (npm run dev). Les modifications sont écrites directement dans{" "}
