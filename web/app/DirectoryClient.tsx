@@ -136,7 +136,6 @@ const AGENDA_GROUPS: { key: string; label: string; photo: string }[] = [
   { key: "evenements-sportifs", label: "Événements sportifs", photo: "/photos/agenda-evenements-sportifs.jpg" },
   { key: "evenements-associatifs", label: "Patrimoine et culture", photo: "/photos/agenda-patrimoine-culture.jpg" },
 ];
-const AGENDA_GROUP_LABEL: Record<string, string> = Object.fromEntries(AGENDA_GROUPS.map((g) => [g.key, g.label]));
 
 // Métadonnées de rubrique (emoji/libellé) par clé, tous univers confondus.
 const RUBRIQUE_MAP: Record<string, { key: string; label: string; emoji: string }> = Object.fromEntries(
@@ -639,6 +638,10 @@ export default function DirectoryClient({
     active !== "all" ||
     homeMode !== "menu";
   function goBackFromResults() {
+    if (agendaBrowseAll) {
+      setActive("all"); // retour aux 3 grandes vignettes Agenda (pas à la grille de catégories)
+      return;
+    }
     if (homeSubRubrique !== null) {
       setHomeSubRubrique(null); // retour à la liste de rubriques
       return;
@@ -761,9 +764,16 @@ export default function DirectoryClient({
   // Rubrique active (une seule) → détermine les groupes de filtre applicables.
   const activeRubrique =
     activeThemes.size === 1 && !activeThemes.has(UNCLASSIFIED) ? [...activeThemes][0] : null;
+  // Vue « Voir tout » de l'agenda (aucune rubrique unique choisie) : les 2
+  // groupes de filtre de l'agenda (type d'événement + nature de l'événement
+  // sportif) restent quand même proposés, pour filtrer par sous-catégorie
+  // sans être passé par une des 3 grandes vignettes.
+  const agendaBrowseAll = active === "agenda" && activeThemes.size === 0;
   // Groupes de filtre transversaux applicables à la rubrique active (0, 1 ou plusieurs).
   const applicableFilterGroups: FilterGroup[] = activeRubrique
     ? FILTER_GROUPS.filter((g) => g.appliesTo.includes(activeRubrique))
+    : agendaBrowseAll
+    ? FILTER_GROUPS.filter((g) => g.appliesTo.some((k) => RUBRIQUE_CATEGORY_MAP[k] === "agenda"))
     : [];
 
   // « Ménage » des fiches : on masque les tags déjà impliqués par le contexte de
@@ -829,8 +839,9 @@ export default function DirectoryClient({
           if (!matches) return false;
         }
         // Facettes de rubrique : chaque groupe de filtre applicable (OU en son
-        // sein) — testé sur b.filters, uniquement quand une rubrique est active.
-        if (activeRubrique) {
+        // sein) — testé sur b.filters, quand une rubrique est active ou en
+        // vue « Voir tout » de l'agenda (les 2 groupes agenda combinés).
+        if (activeRubrique || agendaBrowseAll) {
           const filters = b.filters || [];
           for (const g of applicableFilterGroups) {
             const sel = facetGroups[g.key];
@@ -859,20 +870,26 @@ export default function DirectoryClient({
         if (a.category === "agenda" && b.category === "agenda") return compareByEventDate(a, b);
         return 0;
       });
-  }, [businesses, deferredQuery, searchTokensById, active, activeThemes, activeZone, activeRubrique, applicableFilterGroups, facetGroups, facetPrices, facetBadges]);
+  }, [businesses, deferredQuery, searchTokensById, active, activeThemes, activeZone, activeRubrique, agendaBrowseAll, applicableFilterGroups, facetGroups, facetPrices, facetBadges]);
 
   // Base rubrique (rubrique + zone + recherche, hors facettes) pour les compteurs.
   const facetCounts = useMemo(() => {
     const perGroup: Record<string, Record<string, number>> = {};
     const price: Record<string, number> = {};
     const badge: Record<string, number> = {};
-    if (!activeRubrique) return { perGroup, price, badge, total: 0 };
-    const groups = FILTER_GROUPS.filter((g) => g.appliesTo.includes(activeRubrique));
+    if (!activeRubrique && !agendaBrowseAll) return { perGroup, price, badge, total: 0 };
+    const groups = activeRubrique
+      ? FILTER_GROUPS.filter((g) => g.appliesTo.includes(activeRubrique))
+      : FILTER_GROUPS.filter((g) => g.appliesTo.some((k) => RUBRIQUE_CATEGORY_MAP[k] === "agenda"));
     groups.forEach((g) => (perGroup[g.key] = {}));
     const q = deferredQuery.trim();
     let total = 0;
     businesses.forEach((b) => {
-      if (!(b.themes || []).includes(activeRubrique)) return;
+      if (activeRubrique) {
+        if (!(b.themes || []).includes(activeRubrique)) return;
+      } else if (b.category !== "agenda") {
+        return;
+      }
       if (activeZone && b.zone !== activeZone) return;
       if (q && !fuzzyMatchTokens(tokenize(b.name + " " + b.address), q)) return;
       total++;
@@ -890,7 +907,7 @@ export default function DirectoryClient({
       }
     });
     return { perGroup, price, badge, total };
-  }, [businesses, activeRubrique, activeZone, deferredQuery]);
+  }, [businesses, activeRubrique, agendaBrowseAll, activeZone, deferredQuery]);
 
   // Compteurs par option pour la page de sous-rubriques (avant sélection de
   // rubrique/facette — donc indépendant de activeRubrique/facetGroups).
@@ -1451,7 +1468,7 @@ export default function DirectoryClient({
   }));
 
   const hasFacets = groupOptionsList.length > 0 || priceOptions.length > 0 || badgeOptions.length > 0;
-  const restoFilterBar = activeRubrique && hasFacets ? (
+  const restoFilterBar = (activeRubrique || agendaBrowseAll) && hasFacets ? (
     <div className="mb-3 border-b border-border pb-3 flex items-center gap-2">
       {badgeOptions.length > 0 && (
         <FilterDropdown
@@ -2083,35 +2100,46 @@ export default function DirectoryClient({
               </div>
               <div className="h-2.5" />
               {homeCategory === "agenda" ? (
-                <div className="grid grid-cols-3 gap-2.5 sm:max-w-[720px] sm:mx-auto">
-                  {AGENDA_GROUPS.map((g) => (
-                    <button
-                      key={g.key}
-                      onClick={() => openRubrique(g.key)}
-                      className="relative text-left rounded-2xl overflow-hidden aspect-[4/5] shadow-card active:scale-[.98] transition-transform"
-                    >
-                      {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img
-                        src={g.photo}
-                        alt=""
-                        aria-hidden
-                        loading="lazy"
-                        className="absolute inset-0 w-full h-full object-cover"
-                      />
-                      <div
-                        className="absolute inset-0"
-                        style={{ background: "linear-gradient(180deg, rgba(0,0,0,0) 45%, rgba(0,0,0,.72) 100%)" }}
-                      />
-                      <span className="absolute inset-x-0 bottom-0 p-2.5">
-                        <span className="block font-serif text-[12.5px] font-semibold leading-tight text-white">
-                          {g.label}
+                <div className="sm:max-w-[720px] sm:mx-auto">
+                  <div className="grid grid-cols-3 gap-2.5">
+                    {AGENDA_GROUPS.map((g) => (
+                      <button
+                        key={g.key}
+                        onClick={() => toggleTheme(g.key)}
+                        className="relative text-left rounded-2xl overflow-hidden aspect-[4/5] shadow-card active:scale-[.98] transition-transform"
+                      >
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <img
+                          src={g.photo}
+                          alt=""
+                          aria-hidden
+                          loading="lazy"
+                          className="absolute inset-0 w-full h-full object-cover"
+                        />
+                        <div
+                          className="absolute inset-0"
+                          style={{ background: "linear-gradient(180deg, rgba(0,0,0,0) 45%, rgba(0,0,0,.72) 100%)" }}
+                        />
+                        <span className="absolute inset-x-0 bottom-0 p-2.5">
+                          <span className="block font-serif text-[12.5px] font-semibold leading-tight text-white">
+                            {g.label}
+                          </span>
+                          <span className="block text-[10.5px] text-white/80 mt-0.5">
+                            {themeCountsAll[g.key] || 0} événements
+                          </span>
                         </span>
-                        <span className="block text-[10.5px] text-white/80 mt-0.5">
-                          {themeCountsAll[g.key] || 0} événements
-                        </span>
-                      </span>
-                    </button>
-                  ))}
+                      </button>
+                    ))}
+                  </div>
+                  <button
+                    onClick={() => {
+                      setActive("agenda");
+                      window.scrollTo({ top: 0, behavior: "smooth" });
+                    }}
+                    className="mt-3 w-full h-[42px] rounded-xl border border-border text-[13.5px] font-semibold text-primary-deep active:scale-[.98] transition-transform"
+                  >
+                    Voir tout ({counts["agenda"] || 0} événements) ›
+                  </button>
                 </div>
               ) : (
                 <div className="flex flex-col gap-2 sm:max-w-[560px] sm:mx-auto">
@@ -2140,7 +2168,7 @@ export default function DirectoryClient({
           {showHome && homeMode === "categories" && homeSubRubrique !== null && (() => {
             const group = browsableGroupFor(homeSubRubrique);
             if (!group) return null;
-            const rubriqueLabel = AGENDA_GROUP_LABEL[homeSubRubrique] ?? RUBRIQUE_MAP[homeSubRubrique]?.label ?? homeSubRubrique;
+            const rubriqueLabel = RUBRIQUE_MAP[homeSubRubrique]?.label ?? homeSubRubrique;
             return (
               <div className="pb-16">
                 <div className="sticky top-0 z-20 -mx-4 lg:-mx-5 px-4 lg:px-5 py-2 flex items-center gap-2 border-b border-border" style={{ background: "var(--bg)" }}>
