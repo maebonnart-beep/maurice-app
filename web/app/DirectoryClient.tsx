@@ -1611,7 +1611,7 @@ export default function DirectoryClient({
                 </button>
               </div>
               <div
-                className="rounded-[32px] p-3 shadow-sm"
+                className="rounded-[32px] p-1.5 shadow-sm"
                 style={{
                   backgroundImage:
                     "url(/bandeau-palmiers-gauche.jpg), url(/bandeau-palmiers-droite.jpg), linear-gradient(180deg, #d3ecf6 0%, #e9f7f1 100%)",
