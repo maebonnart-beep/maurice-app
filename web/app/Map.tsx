@@ -7,7 +7,7 @@ import L from "leaflet";
 import type { Marker as LeafletMarker } from "leaflet";
 import type { Business } from "@/lib/types";
 import { CATEGORY_MAP } from "@/data/categories";
-import { tel, webLabel, whatsappLink, displayName, displayCity, whatsappNumber } from "@/lib/format";
+import { tel, webLabel, whatsappContactLink, displayName, displayCity, whatsappNumber } from "@/lib/format";
 import { iconForKey, CONTACT_ICONS } from "@/lib/icons";
 import "leaflet/dist/leaflet.css";
 
@@ -243,7 +243,7 @@ export default function Map({
                   )}
                   {whatsappNumber(b) && (
                     <a
-                      href={whatsappLink(whatsappNumber(b) as string)}
+                      href={whatsappContactLink(whatsappNumber(b) as string)}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-1 px-2 py-1.5 rounded-lg text-xs font-semibold no-underline bg-[#eef4f3] text-[#0a6d67]"

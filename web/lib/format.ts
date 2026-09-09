@@ -36,6 +36,24 @@ export function whatsappLink(phone: string): string {
   return "https://wa.me/" + phone.replace(/[^\d]/g, "");
 }
 
+// Pas de nom de domaine propre pour l'instant : alias Vercel stable entre déploiements.
+export const KOTE_MORIS_URL = "https://web-maeva26dodo.vercel.app";
+
+// Message pré-rempli global pour tout bouton "Contacter" (WhatsApp/email) :
+// signale à l'interlocuteur que la démarche vient de Koté Moris.
+function contactMessage(): string {
+  return `Bonjour, je vous contacte via Koté Moris — ${KOTE_MORIS_URL}`;
+}
+
+export function whatsappContactLink(phone: string): string {
+  return whatsappLink(phone) + "?text=" + encodeURIComponent(contactMessage());
+}
+
+export function emailContactHref(email: string): string {
+  const subject = "Contact via Koté Moris";
+  return `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(contactMessage())}`;
+}
+
 // Les numéros mobiles mauriciens (+230 5xxx xxxx) sont presque toujours
 // joignables sur WhatsApp, contrairement aux lignes fixes.
 export const MU_MOBILE_RE = /\+230\s?5\d{3}\s?\d{4}/;

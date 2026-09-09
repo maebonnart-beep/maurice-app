@@ -5,7 +5,7 @@ import { createClient, createServiceRoleClient } from "@/lib/supabase/server";
 import { mapListingRow } from "@/lib/marketplace/mapRow";
 import { LISTING_CATEGORIES } from "@/lib/marketplace/types";
 import { listingPhotoUrl } from "@/lib/marketplace/constants";
-import { whatsappLink } from "@/lib/format";
+import { whatsappContactLink } from "@/lib/format";
 import { ActionButton } from "@/components/ui/ActionButton";
 
 const ZONE_LABELS: Record<string, string> = {
@@ -91,7 +91,7 @@ export default async function ListingDetailPage({
       )}
 
       <div className="mt-6">
-        <ActionButton href={whatsappLink(listing.whatsapp)} variant="primary" external icon={<WhatsappLogo size={18} weight="fill" aria-hidden />}>
+        <ActionButton href={whatsappContactLink(listing.whatsapp)} variant="primary" external icon={<WhatsappLogo size={18} weight="fill" aria-hidden />}>
           Contacter par WhatsApp
         </ActionButton>
       </div>

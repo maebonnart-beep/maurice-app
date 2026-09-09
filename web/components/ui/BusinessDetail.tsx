@@ -9,8 +9,10 @@ import {
   displayName,
   displayCity,
   webLabel,
-  whatsappLink,
+  whatsappContactLink,
   whatsappNumber,
+  emailContactHref,
+  KOTE_MORIS_URL,
 } from "@/lib/format";
 import { SpecialBadge, accentColorFor, ProviderTypeBadge } from "./Badge";
 import { FavoriteButton } from "./FavoriteButton";
@@ -28,9 +30,6 @@ const DESCRIPTION_CLAMP_THRESHOLD = 320;
 function whatsappShareHref(text: string) {
   return `https://wa.me/?text=${encodeURIComponent(text)}`;
 }
-
-/** Pas de nom de domaine propre pour l'instant : alias Vercel stable entre déploiements. */
-const KOTE_MORIS_URL = "https://web-maeva26dodo.vercel.app";
 
 /** Action circulaire (Appeler, Itinéraire, Site web…) : icône ronde + libellé dessous. */
 function CircleAction({
@@ -129,7 +128,7 @@ export function BusinessDetail({
     b.address,
     b.phone,
     b.googleMapsUrl || b.website,
-    `Trouvé sur Koté Moris — ${KOTE_MORIS_URL}`,
+    `Partagé via Koté Moris — ${KOTE_MORIS_URL}`,
   ]
     .filter(Boolean)
     .join("\n");
@@ -349,7 +348,7 @@ export function BusinessDetail({
               )}
               {waNumber && (
                 <CircleAction
-                  href={whatsappLink(waNumber)}
+                  href={whatsappContactLink(waNumber)}
                   external
                   icon={<CONTACT_ICONS.WhatsappLogo size={19} weight="fill" aria-hidden />}
                   onClick={() => trackEvent(b.id, "whatsapp")}
@@ -359,7 +358,7 @@ export function BusinessDetail({
               )}
               {b.email && (
                 <CircleAction
-                  href={`mailto:${b.email}`}
+                  href={emailContactHref(b.email)}
                   icon={<CONTACT_ICONS.EnvelopeSimple size={19} weight="bold" aria-hidden />}
                 >
                   Email
