@@ -589,6 +589,10 @@ export default function DirectoryClient({
   // Depuis la liste de rubriques : ouvre la page de sous-rubriques si la
   // rubrique en a, sinon va directement aux résultats (comportement d'avant).
   function openRubrique(key: string) {
+    if (PREMIUM_RUBRIQUE_KEYS.has(key) && !canSeeEventDetail) {
+      window.location.href = "/mon-compte/upgrade";
+      return;
+    }
     if (browsableGroupFor(key)) {
       setHomeSubRubrique(key);
     } else {
@@ -1829,7 +1833,7 @@ export default function DirectoryClient({
               )}
 
               <Link
-                href={account.loggedIn ? "/seconde-main" : "/mon-compte"}
+                href={canSeeEventDetail ? "/seconde-main" : "/mon-compte/upgrade"}
                 className="mt-7 block rounded-2xl p-4 overflow-hidden no-underline text-ink shadow-card active:scale-[.99] transition-transform"
                 style={{ background: "linear-gradient(135deg, #ffe3b0 0%, #fff7ea 60%)" }}
               >
@@ -1900,7 +1904,15 @@ export default function DirectoryClient({
                     <p className="text-[11.5px] text-muted leading-snug mt-0.5">Tous les événements, sorties et festivals</p>
                   </div>
                   <button
-                    onClick={() => { setHomeMode("categories"); setHomeCategory("agenda"); window.scrollTo({ top: 0, behavior: "smooth" }); }}
+                    onClick={() => {
+                      if (canSeeEventDetail) {
+                        setHomeMode("categories");
+                        setHomeCategory("agenda");
+                        window.scrollTo({ top: 0, behavior: "smooth" });
+                      } else {
+                        window.location.href = "/mon-compte/upgrade";
+                      }
+                    }}
                     className="shrink-0 flex items-center justify-center w-8 h-8 rounded-full bg-white shadow-sm text-[14px] font-bold active:scale-[.96] transition-transform"
                     style={{ color: "#e0567a" }}
                     aria-label="Voir tous les événements"
@@ -1996,7 +2008,13 @@ export default function DirectoryClient({
                     category={c.key}
                     count={counts[c.key] || 0}
                     locked={PREMIUM_CATEGORY_KEYS.has(c.key)}
-                    onClick={() => setHomeCategory(c.key)}
+                    onClick={() => {
+                      if (PREMIUM_CATEGORY_KEYS.has(c.key) && !canSeeEventDetail) {
+                        window.location.href = "/mon-compte/upgrade";
+                      } else {
+                        setHomeCategory(c.key);
+                      }
+                    }}
                   />
                 ))}
               </div>
