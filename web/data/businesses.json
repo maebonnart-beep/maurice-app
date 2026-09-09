@@ -31427,7 +31427,8 @@
     "description": "Association de la communauté française à Maurice, organise régulièrement des événements networking (dîners-conférences, rencontres mensuelles).",
     "filters": [
       "networking"
-    ]
+    ],
+    "zone": "centre"
   },
   {
     "id": "alliance-francaise-maurice",
@@ -45188,7 +45189,8 @@
     "filters": [
       "onglerie-manucure"
     ],
-    "hours": "Lun-Sam 9h-17h, fermé dim"
+    "hours": "Lun-Sam 9h-17h, fermé dim",
+    "zone": "nord"
   },
   {
     "id": "nails-bar-grand-baie-soins",
@@ -45203,7 +45205,8 @@
     "description": "Onglerie : manucure, pédicure et pose d'ongles.",
     "filters": [
       "onglerie-manucure"
-    ]
+    ],
+    "zone": "nord"
   },
   {
     "id": "arshad-barbershop-soins",
@@ -45238,7 +45241,8 @@
     "description": "Barbier pour hommes : coupe, dégradé, taille de barbe et rasage traditionnel.",
     "filters": [
       "barbiers"
-    ]
+    ],
+    "zone": "nord"
   },
   {
     "id": "secret-hair-beauty-soins",
@@ -45253,7 +45257,8 @@
     "description": "Salon de coiffure et barbier : coupe homme, taille de barbe et soins beauté.",
     "filters": [
       "barbiers"
-    ]
+    ],
+    "zone": "nord"
   },
   {
     "id": "yoga-plus-centre-soins",
@@ -45298,7 +45303,8 @@
     "themes": [
       "yoga-bien-etre"
     ],
-    "description": "Studio de Pilates classique (méthode Romana's Pilates) et de yoga (ashtanga, hatha), dirigé par Ingrid Rey. Cours collectifs et individuels sur rendez-vous."
+    "description": "Studio de Pilates classique (méthode Romana's Pilates) et de yoga (ashtanga, hatha), dirigé par Ingrid Rey. Cours collectifs et individuels sur rendez-vous.",
+    "zone": "ouest"
   },
   {
     "id": "misschawky-studio-soins",
@@ -45374,7 +45380,8 @@
     "themes": [
       "yoga-bien-etre"
     ],
-    "description": "Cabinet d'ostéopathie de Matthieu Gossart et Capucine Motte (ostéopathes D.O.) : douleurs musculo-squelettiques, du lundi au vendredi sur rendez-vous."
+    "description": "Cabinet d'ostéopathie de Matthieu Gossart et Capucine Motte (ostéopathes D.O.) : douleurs musculo-squelettiques, du lundi au vendredi sur rendez-vous.",
+    "zone": "ouest"
   },
   {
     "id": "l-l-osteopathie-soins",
@@ -45387,7 +45394,8 @@
       "yoga-bien-etre"
     ],
     "description": "Cabinet d'ostéopathie tenu par Romain Lauri et Amandine Leca (diplômés de l'Institut Supérieur d'Ostéopathie d'Aix-en-Provence). Sur rendez-vous.",
-    "hours": "Lun-Ven 8h-17h, Sam 8h-12h, fermé dim"
+    "hours": "Lun-Ven 8h-17h, Sam 8h-12h, fermé dim",
+    "zone": "nord"
   },
   {
     "id": "bosch-service-uti",
@@ -45954,7 +45962,8 @@
     "description": "Centre officiel d'examen des véhicules (NTA) : test de fitness obligatoire dès 7 ans du véhicule.",
     "filters": [
       "controle-technique"
-    ]
+    ],
+    "zone": "centre"
   },
   {
     "id": "vehicle-inspection-centre-plaine-lauzun-uti",
@@ -45969,7 +45978,8 @@
     "description": "Centre officiel d'inspection des véhicules : test de fitness obligatoire dès 7 ans du véhicule.",
     "filters": [
       "controle-technique"
-    ]
+    ],
+    "zone": "centre"
   },
   {
     "id": "etude-me-avrillon-uti",
@@ -46003,7 +46013,8 @@
     "description": "Étude notariale : actes authentiques, transactions immobilières et successions.",
     "filters": [
       "notaires"
-    ]
+    ],
+    "zone": "centre"
   },
   {
     "id": "etude-me-dominique-lamusse-uti",
@@ -46018,7 +46029,8 @@
     "description": "Étude notariale : actes authentiques, transactions immobilières et successions.",
     "filters": [
       "notaires"
-    ]
+    ],
+    "zone": "centre"
   },
   {
     "id": "etude-didier-maigrot-uti",
@@ -46109,7 +46121,8 @@
     "description": "Cabinet d'avocats d'affaires (droit des sociétés, financier, immobilier, contentieux).",
     "filters": [
       "avocats"
-    ]
+    ],
+    "zone": "centre"
   },
   {
     "id": "juristconsult-chambers-uti",
@@ -46124,7 +46137,8 @@
     "description": "Cabinet d'avocats d'affaires (corporate, financier, fiscal, contentieux).",
     "filters": [
       "avocats"
-    ]
+    ],
+    "zone": "centre"
   },
   {
     "id": "bdo-mauritius-uti",
@@ -46139,7 +46153,8 @@
     "description": "Cabinet d'expertise comptable et d'audit : comptabilité, fiscalité et conseil aux entreprises.",
     "filters": [
       "comptables"
-    ]
+    ],
+    "zone": "centre"
   },
   {
     "id": "ernst-young-ey-mauritius-uti",
@@ -46154,7 +46169,8 @@
     "description": "Cabinet d'expertise comptable et d'audit : comptabilité, fiscalité et conseil aux entreprises.",
     "filters": [
       "comptables"
-    ]
+    ],
+    "zone": "centre"
   },
   {
     "id": "kpmg-mauritius-uti",
@@ -46188,7 +46204,8 @@
     "description": "Cabinet d'expertise comptable et d'audit : comptabilité, fiscalité et conseil aux entreprises.",
     "filters": [
       "comptables"
-    ]
+    ],
+    "zone": "centre"
   },
   {
     "id": "deloitte-mauritius-uti",
@@ -46222,7 +46239,8 @@
     "description": "Cabinet d'expertise comptable et d'audit : comptabilité, fiscalité et conseil aux entreprises.",
     "filters": [
       "comptables"
-    ]
+    ],
+    "zone": "centre"
   },
   {
     "id": "cfao-conc",
@@ -47318,7 +47336,8 @@
       "activites-enfants-famille",
       "kids-friendly"
     ],
-    "description": "Laser game outdoor près de Grand Baie avec vue sur les îles du Nord. Accessible dès 7-8 ans, tous les jours sauf le lundi ; tournois mensuels (Gang Zone Cup)."
+    "description": "Laser game outdoor près de Grand Baie avec vue sur les îles du Nord. Accessible dès 7-8 ans, tous les jours sauf le lundi ; tournois mensuels (Gang Zone Cup).",
+    "zone": "nord"
   },
   {
     "id": "le-bocage-international-school-edu",
@@ -52237,7 +52256,8 @@
     "eventRecurrence": "annuel-variable",
     "filters": [
       "trail"
-    ]
+    ],
+    "zone": "ouest"
   },
   {
     "id": "moris-ride-run-evt",
