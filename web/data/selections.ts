@@ -712,6 +712,8 @@ export const SELECTIONS: Selection[] = [
       "yuzu-caudan-port-louis",
       "sumo-sushi-bar-grill-grand-baie",
       "teppanyaki",
+      "the-beach-kitchen-restaurant",
+      "tambourine",
     ],
   },
   {
