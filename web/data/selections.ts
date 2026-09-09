@@ -45,6 +45,8 @@ export type Selection = {
   photoUrl: string;
   photoCredit: string;
   businessIds: string[];
+  /** Sous-ensemble de businessIds : plateformes/applis de livraison, affichées à part des restaurants dans la liste. */
+  platformIds?: string[];
 };
 
 export const SELECTION_GROUP_META: Record<SelectionGroup, { label: string; subtitle: string }> = {
@@ -633,9 +635,9 @@ export const SELECTIONS: Selection[] = [
   },
   {
     id: "livraison-repas-domicile",
-    emoji: "📦",
-    title: "Se faire livrer des repas à domicile",
-    tagline: "Box de repas cuisinés maison et traiteurs qui livrent chez vous",
+    emoji: "🍱",
+    title: "Pas le temps de cuisiner ? Livraison de lunch box à domicile",
+    tagline: "Traiteurs et cuisiniers qui préparent votre repas maison et vous le livrent",
     group: "manze",
     icon: "Package",
     photoUrl: "https://images.pexels.com/photos/4114122/pexels-photo-4114122.jpeg?auto=compress&cs=tinysrgb&w=800",
@@ -735,5 +737,6 @@ export const SELECTIONS: Selection[] = [
       "cozy-burger",
       "nando-s-grand-baie",
     ],
+    platformIds: ["grubmates-food-delivery-grand-baie", "grubmates-food-delivery-flic-en-flac", "delivoo"],
   },
 ];

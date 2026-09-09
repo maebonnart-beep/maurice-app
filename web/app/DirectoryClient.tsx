@@ -482,6 +482,21 @@ export default function DirectoryClient({
       return da - db;
     });
   }, [selectedListBusinesses, nearMe, userPos, selectedListDistanceById]);
+  // Au sein d'une sélection, sépare les plateformes/applis de livraison (grubmates, delivoo…) des adresses.
+  const selectedListPlatformBusinesses = useMemo(
+    () =>
+      selectedList?.platformIds
+        ? selectedListBusinessesSorted.filter((b) => selectedList.platformIds!.includes(b.id))
+        : [],
+    [selectedList, selectedListBusinessesSorted]
+  );
+  const selectedListRestBusinesses = useMemo(
+    () =>
+      selectedList?.platformIds
+        ? selectedListBusinessesSorted.filter((b) => !selectedList.platformIds!.includes(b.id))
+        : selectedListBusinessesSorted,
+    [selectedList, selectedListBusinessesSorted]
+  );
   // Mises en avant : les sélections "featured" + les weekends régionaux et la découverte de l'île, en grandes cartes photo.
   const highlightSelections = useMemo(
     () => SELECTIONS.filter((s) => s.featured || s.id.startsWith("weekend-") || s.id === "inviter-decouverte"),
@@ -2504,8 +2519,30 @@ export default function DirectoryClient({
                 {geoStatus === "unavailable" && (
                   <p className="mb-3 text-[12.5px] text-muted">📍 Géolocalisation indisponible sur cet appareil.</p>
                 )}
+                {selectedListPlatformBusinesses.length > 0 ? (
+                  <>
+                    <p className="m-0 mb-2 text-[12px] font-semibold text-muted uppercase tracking-wide">
+                      📱 Applis &amp; plateformes de livraison
+                    </p>
+                    <div className="flex flex-col gap-3 mb-5">
+                      {selectedListPlatformBusinesses.map((b) => (
+                        <BusinessCard
+                          key={b.id}
+                          business={b}
+                          active={b.id === selectedId}
+                          onSelect={selectFromCard}
+                          onHover={() => {}}
+                          nearbyKm={nearMe ? selectedListDistanceById[b.id] : undefined}
+                        />
+                      ))}
+                    </div>
+                    <p className="m-0 mb-2 text-[12px] font-semibold text-muted uppercase tracking-wide">
+                      🍽️ Restaurants &amp; adresses
+                    </p>
+                  </>
+                ) : null}
                 <div className="flex flex-col gap-3">
-                  {selectedListBusinessesSorted.map((b) => (
+                  {selectedListRestBusinesses.map((b) => (
                     <BusinessCard
                       key={b.id}
                       business={b}
