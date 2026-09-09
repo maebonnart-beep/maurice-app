@@ -36,9 +36,19 @@ export default async function ListingDetailPage({
   const categoryLabel = LISTING_CATEGORIES.find((c) => c.key === listing.category)?.label;
 
   // Comptage de vue, best-effort — n'échoue jamais le rendu de la page.
-  await createServiceRoleClient()
-    .from("listing_events")
-    .insert({ listing_id: listing.id, type: "view" });
+  // Exclu : les admins, pour ne pas polluer les stats avec leurs propres passages.
+  const {
+    data: { user: viewer },
+  } = await supabase.auth.getUser();
+  const isAdminViewer = viewer
+    ? (await supabase.from("profiles").select("is_admin").eq("id", viewer.id).single()).data?.is_admin ?? false
+    : false;
+
+  if (!isAdminViewer) {
+    await createServiceRoleClient()
+      .from("listing_events")
+      .insert({ listing_id: listing.id, type: "view" });
+  }
 
   return (
     <div className="max-w-[640px] mx-auto px-4 pb-24 pt-6">
