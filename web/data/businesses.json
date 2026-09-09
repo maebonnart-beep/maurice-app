@@ -1899,16 +1899,16 @@
     "lat": -20.0128721,
     "lng": 57.5869003,
     "themes": [
-      "commerces-alimentaires",
-      "vins-spiritueux",
-      "produits-bio",
-      "produits-francais"
+      "commerces-alimentaires"
     ],
     "hours": "Lun-Jeu 9h-20h30, Ven-Sam 9h-21h30, Dim 9h-15h30",
     "zone": "nord",
     "description": "Hypermarché de l'enseigne française Super U, situé dans le centre Coeur de Ville à Grand Baie, avec un large choix de produits alimentaires, vins et produits bio/français.",
     "filters": [
-      "grandes-surfaces"
+      "grandes-surfaces",
+      "vins-spiritueux",
+      "produits-bio",
+      "produits-francais"
     ]
   },
   {
@@ -1922,15 +1922,15 @@
     "lat": -19.9973,
     "lng": 57.5858,
     "themes": [
-      "commerces-alimentaires",
-      "boulangeries-patisseries",
-      "epiceries-fines"
+      "commerces-alimentaires"
     ],
     "zone": "nord",
     "description": "Supermarché de la chaîne Winner's proposant produits du quotidien et un rayon épicerie fine, avec boulangerie et pain frais chaque matin.",
     "hours": "Lun-Sam 8h-19h, Dim 8h-13h",
     "filters": [
-      "grandes-surfaces"
+      "grandes-surfaces",
+      "boulangeries-patisseries",
+      "epiceries-fines"
     ]
   },
   {
@@ -1964,18 +1964,18 @@
     "lat": -20.003863,
     "lng": 57.5812062,
     "themes": [
-      "commerces-alimentaires",
-      "boucheries-poissons",
-      "vins-spiritueux",
-      "produits-francais",
-      "epiceries-fines"
+      "commerces-alimentaires"
     ],
     "hours": "Lun-Jeu 9h-18h, Ven-Sam 9h-19h, Dim et jours fériés 8h-12h30",
     "priceRange": "se-faire-plaisir",
     "zone": "nord",
     "description": "Épicerie fine française, italienne, européenne et australienne : viandes australiennes, charcuterie, pâtes fraîches, fromages affinés, truffe, vins, plateaux de fruits de mer et sushis, glaces artisanales.",
     "filters": [
-      "epiceries-specialisees"
+      "epiceries-specialisees",
+      "boucheries-poissons",
+      "vins-spiritueux",
+      "produits-francais",
+      "epiceries-fines"
     ]
   },
   {
@@ -1990,8 +1990,7 @@
     "lng": 57.5835,
     "themes": [
       "marches-produits-locaux",
-      "commerces-alimentaires",
-      "produits-locaux"
+      "commerces-alimentaires"
     ],
     "hours": "Tous les jours à partir de 16h",
     "priceRange": "bon-marche",
@@ -1999,7 +1998,8 @@
     "promoText": "Les pêcheurs locaux se rassemblent sur la plage pour vendre du poisson frais de toutes les couleurs et de toutes les tailles. Le marchandage et l'ambiance locale sont à l'ordre du jour.",
     "description": "Marché improvisé sur le parking de la plage publique de Grand Baie, pêcheurs locaux vendant leur pêche du jour tous les après-midi (à partir d'environ 15h), prix à négocier.",
     "filters": [
-      "poissonneries"
+      "poissonneries",
+      "produits-locaux"
     ]
   },
   {
@@ -2014,9 +2014,7 @@
     "lng": 57.5783922,
     "themes": [
       "commerces-alimentaires",
-      "livraisons",
-      "boucheries-poissons",
-      "exotiques-epices"
+      "livraisons"
     ],
     "badge": "selection",
     "promoText": "Viande très correcte, livraison à J+1 et échanges WhatsApp faciles.",
@@ -2024,7 +2022,9 @@
     "description": "Boucherie familiale haut de gamme de Grand Baie (Lifestyle Boulevard), viandes fraîches locales et importées (bœuf, poulet, porc), biltong sud-africain, snacks et plats faits maison. Vente en boutique, appli et livraison à domicile.",
     "hours": "Lun-Ven 9h-19h, Sam 9h-17h, Dim 9h-13h",
     "filters": [
-      "boucheries"
+      "boucheries",
+      "boucheries-poissons",
+      "exotiques-epices"
     ]
   },
   {
@@ -2038,9 +2038,7 @@
     "lat": -20.0140044,
     "lng": 57.5841981,
     "themes": [
-      "commerces-alimentaires",
-      "boulangeries-patisseries",
-      "produits-francais"
+      "commerces-alimentaires"
     ],
     "hours": "Tous les jours à partir de 7h",
     "badge": "selection",
@@ -2048,7 +2046,9 @@
     "zone": "nord",
     "description": "Boulangerie-pâtisserie artisanale française (siège à Pointe aux Canonniers, succursale Grand Baie depuis 2017) : pain, viennoiseries, pâtisseries, gâteaux sur commande, café, terrasse.",
     "filters": [
-      "boulangeries"
+      "boulangeries",
+      "boulangeries-patisseries",
+      "produits-francais"
     ]
   },
   {
@@ -2062,16 +2062,15 @@
     "lat": -20.0219739,
     "lng": 57.5787883,
     "themes": [
-      "commerces-alimentaires",
-      "boulangeries-patisseries",
-      "produits-francais"
+      "commerces-alimentaires"
     ],
     "zone": "nord",
     "description": "Boulangerie-pâtisserie de tradition française, pain au levain naturel, viennoiseries au beurre de Normandie, millefeuilles, macarons, gâteaux sur commande. Chaîne comptant 7 points de vente à Maurice.",
     "hours": "Lun-Sam 6h-19h, Dim 6h-14h",
     "filters": [
       "produits-francais",
-      "boulangeries"
+      "boulangeries",
+      "boulangeries-patisseries"
     ]
   },
   {
@@ -2085,16 +2084,16 @@
     "lat": -20.0128721,
     "lng": 57.5869003,
     "themes": [
-      "commerces-alimentaires",
-      "vins-spiritueux",
-      "produits-francais",
-      "epiceries-fines"
+      "commerces-alimentaires"
     ],
     "hours": "Lun-Jeu 9h30-20h30, Ven-Sam 9h30-21h30, Dim 9h30-16h30",
     "zone": "nord",
     "description": "Caviste français (depuis 1822) : large gamme de vins rouges/blancs/rosés, whiskies, cognacs, champagnes et crémants, rayon épicerie fine, livraison gratuite.",
     "filters": [
-      "epiceries-specialisees"
+      "epiceries-specialisees",
+      "vins-spiritueux",
+      "produits-francais",
+      "epiceries-fines"
     ]
   },
   {
@@ -2109,16 +2108,16 @@
     "lng": 57.5812062,
     "themes": [
       "commerces-alimentaires",
-      "marches-produits-locaux",
-      "vins-spiritueux",
-      "produits-francais"
+      "marches-produits-locaux"
     ],
     "priceRange": "se-faire-plaisir",
     "zone": "nord",
     "description": "Cave à vins, champagnes et cigares : sélection de grands vins français (dont Bordeaux), champagne personnalisable pour occasions spéciales, livraison sur toute l'île.",
     "hours": "Lun-Jeu 9h-17h, Ven 9h-18h30, Sam 10h30-18h30, Dim fermé",
     "filters": [
-      "epiceries-specialisees"
+      "epiceries-specialisees",
+      "vins-spiritueux",
+      "produits-francais"
     ]
   },
   {
@@ -2133,14 +2132,14 @@
     "lng": 57.5787883,
     "themes": [
       "commerces-alimentaires",
-      "marches-produits-locaux",
-      "vins-spiritueux"
+      "marches-produits-locaux"
     ],
     "zone": "nord",
     "description": "Cave à vins et spiritueux : plus de 900 références (vins du monde, grands crus), whisky, vodka, gin, tequila, rhum ; conseil sommelier sur place.",
     "hours": "Lun-Sam 9h30-20h30, Dim et jours fériés 9h30-16h",
     "filters": [
-      "epiceries-specialisees"
+      "epiceries-specialisees",
+      "vins-spiritueux"
     ]
   },
   {
@@ -5471,14 +5470,14 @@
     "lat": -20.0316,
     "lng": 57.5636,
     "themes": [
-      "commerces-alimentaires",
-      "boulangeries-patisseries"
+      "commerces-alimentaires"
     ],
     "hours": "Lun-Ven 9h-17h",
     "zone": "nord",
     "description": "Supermarché de la chaîne mauricienne London Way (groupe familial Kan Wah, présent depuis plus de 50 ans), ouvert à Mont Choisy Le Mall fin 2022 avec un espace boulangerie.",
     "filters": [
-      "grandes-surfaces"
+      "grandes-surfaces",
+      "boulangeries-patisseries"
     ]
   },
   {
@@ -5532,9 +5531,7 @@
     "lat": -20.3592,
     "lng": 57.3714,
     "themes": [
-      "commerces-alimentaires",
-      "boulangeries-patisseries",
-      "produits-francais"
+      "commerces-alimentaires"
     ],
     "hours": "Dim 7h-13h, Lun 8h-18h, Mar-Sam 7h-18h",
     "badge": "selection",
@@ -5542,7 +5539,8 @@
     "description": "Boulangerie de Rivière Noire réputée pour ses croissants, ambiance conviviale mêlant influences locales et françaises.",
     "filters": [
       "produits-francais",
-      "boulangeries"
+      "boulangeries",
+      "boulangeries-patisseries"
     ]
   },
   {
@@ -6163,9 +6161,7 @@
     "lng": 57.5586266,
     "themes": [
       "cafes-bars-glaciers",
-      "commerces-alimentaires",
-      "boulangeries-patisseries",
-      "produits-francais"
+      "commerces-alimentaires"
     ],
     "zone": "nord",
     "hours": "Lun-Sam 8h30-17h, fermé dim",
@@ -6173,7 +6169,9 @@
     "koteMorisComment": "Un cadre très agréable, avec un beau snacking et une partie pâtisserie qui reproduit joliment quelques classiques de la pâtisserie française. Une adresse un peu plus \"fine\" que les pâtisseries locales, mais aussi plus chère (compter 6-8€ la part de quiche) : on apprécie la qualité, sans forcément la mettre en recommandation vu le tarif.",
     "filters": [
       "cafes-terrasses",
-      "boulangeries"
+      "boulangeries",
+      "boulangeries-patisseries",
+      "produits-francais"
     ]
   },
   {
@@ -8023,13 +8021,13 @@
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Nadi%27Miel+Chamarel+Mauritius",
     "zone": "sud",
     "themes": [
-      "commerces-alimentaires",
-      "boulangeries-patisseries"
+      "commerces-alimentaires"
     ],
     "description": "Charcuterie, traiteur et pâtisserie artisanale de Chamarel, tenue par Nadine Ramsamy-Appadoo : miel local, charcuterie de porc (cochon marron, boucané, carri de pied de porc au feu de bois) et pâtisseries maison. Pas de point de vente physique, commandes uniquement via Facebook et Instagram.",
     "filters": [
       "produits-locaux",
-      "boulangeries"
+      "boulangeries",
+      "boulangeries-patisseries"
     ]
   },
   {
@@ -11678,13 +11676,13 @@
     "lat": -20.2666171,
     "lng": 57.4937829,
     "themes": [
-      "commerces-alimentaires",
-      "vins-spiritueux"
+      "commerces-alimentaires"
     ],
     "zone": "centre",
     "description": "Brasserie artisanale de Quatre Bornes (groupe Oxenham, depuis 2019) où l'on vient surtout acheter ses bières à la bouteille. Propose aussi des masterclass de dégustation et d'initiation au brassage, ainsi que des dîners thématiques autour de ses bières (lager, weiss, pale ale, IPA).",
     "filters": [
-      "epiceries-specialisees"
+      "epiceries-specialisees",
+      "vins-spiritueux"
     ]
   },
   {
@@ -14460,14 +14458,14 @@
     "lat": -20.0216035,
     "lng": 57.5826179,
     "themes": [
-      "commerces-alimentaires",
-      "boucheries-poissons"
+      "commerces-alimentaires"
     ],
     "zone": "nord",
     "description": "Boucherie de quartier de Grand Baie (Sottise Road), sélection de viandes et service personnalisé.",
     "hours": "Mardi-Samedi : 9h00-14h00, 15h30-19h00 (fermé dimanche et lundi)",
     "filters": [
-      "boucheries"
+      "boucheries",
+      "boucheries-poissons"
     ]
   },
   {
@@ -14481,14 +14479,14 @@
     "lat": -20.0184441,
     "lng": 57.5855041,
     "themes": [
-      "commerces-alimentaires",
-      "boucheries-poissons"
+      "commerces-alimentaires"
     ],
     "zone": "nord",
     "description": "Boucherie réputée de Grand Baie (Chemin Vingt Pieds), bœuf, veau, agneau, porc et volaille de qualité, appréciée des locaux et touristes.",
     "hours": "Lun-Jeu 9h30-18h30, Ven-Sam 9h30-19h, Dim 9h30-12h30",
     "filters": [
-      "boucheries"
+      "boucheries",
+      "boucheries-poissons"
     ]
   },
   {
@@ -14502,15 +14500,15 @@
     "lat": -20.011122,
     "lng": 57.564361,
     "themes": [
-      "commerces-alimentaires",
-      "boucheries-poissons",
-      "exotiques-epices"
+      "commerces-alimentaires"
     ],
     "zone": "nord",
     "description": "Boucherie de Grand Baie (Pointe aux Canonniers) sourçant bœuf grain-fed classe A, agneau australien, porc et poulet locaux, plats d'accompagnement/salades faits maison et biltong signature. Livraison à domicile.",
     "hours": "Lun-Ven 9h-18h, Sam 9h-14h, Dim fermé",
     "filters": [
-      "boucheries"
+      "boucheries",
+      "boucheries-poissons",
+      "exotiques-epices"
     ]
   },
   {
@@ -14524,9 +14522,7 @@
     "lat": -20.0123895,
     "lng": 57.5929855,
     "themes": [
-      "commerces-alimentaires",
-      "boucheries-poissons",
-      "produits-francais"
+      "commerces-alimentaires"
     ],
     "zone": "nord",
     "description": "Halles à la française de Grand Baie réunissant boucherie, charcuterie, fromagerie, poissonnerie et maraîcher sous un même toit, produits français et locaux.",
@@ -14534,7 +14530,8 @@
     "filters": [
       "produits-francais",
       "boucheries",
-      "fruits-et-legumes"
+      "fruits-et-legumes",
+      "boucheries-poissons"
     ]
   },
   {
@@ -14549,14 +14546,14 @@
     "lng": 57.5847,
     "themes": [
       "commerces-alimentaires",
-      "livraisons",
-      "produits-bio"
+      "livraisons"
     ],
     "zone": "nord",
     "description": "Épicerie bio et naturelle (groupe Accord Bio × Chemtech) : plus de 3 300 références certifiées bio — épicerie sucrée/salée, boissons, cafés & thés, beauté-hygiène, bébé-maternité, aromathérapie, entretien. Boutique en ligne avec livraison J+1 sur toute l'île (commande min. Rs 2 000). Magasin flagship de Grand Baie. Ouverture prévue le 1er septembre 2026.",
     "hours": "",
     "filters": [
-      "epiceries-specialisees"
+      "epiceries-specialisees",
+      "produits-bio"
     ]
   },
   {
@@ -14570,15 +14567,15 @@
     "lat": -20.012124,
     "lng": 57.5876239,
     "themes": [
-      "commerces-alimentaires",
-      "boucheries-poissons",
-      "epiceries-fines",
-      "exotiques-epices"
+      "commerces-alimentaires"
     ],
     "zone": "nord",
     "description": "Chaîne mauricienne de boucherie-delicatessen (points de vente notamment à Super U Grand Baie, Haute Rive, Calodyne) : viande et volaille, biltong, chilli bites, saucisses, boulettes, burgers, brochettes marinées et plats faits maison.",
     "filters": [
-      "boucheries"
+      "boucheries",
+      "boucheries-poissons",
+      "epiceries-fines",
+      "exotiques-epices"
     ]
   },
   {
@@ -14592,13 +14589,13 @@
     "lat": -20.0122384,
     "lng": 57.5857466,
     "themes": [
-      "commerces-alimentaires",
-      "boucheries-poissons"
+      "commerces-alimentaires"
     ],
     "zone": "nord",
     "description": "Poissonnerie de quartier a Grand Baie, vente de poisson frais.",
     "filters": [
-      "poissonneries"
+      "poissonneries",
+      "boucheries-poissons"
     ]
   },
   {
@@ -14631,14 +14628,14 @@
     "lat": -20.0101213,
     "lng": 57.6169823,
     "themes": [
-      "commerces-alimentaires",
-      "boucheries-poissons"
+      "commerces-alimentaires"
     ],
     "zone": "nord",
     "description": "Poissonnerie-boutique haut de gamme de Petit Raffray adossée à une usine de conditionnement (poisson, crabe, gambas géantes, langouste), produits nettoyés/filetés/emballés sous vide, agréée HACCP/UE. Restaurant attenant ouvert 7j/7, 11h-23h.",
     "hours": "Lun-Sam 9h-17h, Dim 9h-12h",
     "filters": [
-      "poissonneries"
+      "poissonneries",
+      "boucheries-poissons"
     ]
   },
   {
@@ -14652,13 +14649,13 @@
     "lat": -20.0161137,
     "lng": 57.660473,
     "themes": [
-      "commerces-alimentaires",
-      "boucheries-poissons"
+      "commerces-alimentaires"
     ],
     "zone": "nord",
     "description": "Marche aux poissons et fruits de mer de Grand Gaube.",
     "filters": [
-      "poissonneries"
+      "poissonneries",
+      "boucheries-poissons"
     ]
   },
   {
@@ -15009,13 +15006,13 @@
     "lat": -19.995438,
     "lng": 57.590063,
     "themes": [
-      "commerces-alimentaires",
-      "boulangeries-patisseries"
+      "commerces-alimentaires"
     ],
     "zone": "nord",
     "description": "Café-pâtisserie de Péreybère/Grand Baie : gâteaux sur commande, viennoiseries, cookies, tartes, babkas, petit-déjeuner et déjeuner, service traiteur événementiel. Très bien noté (5/5).",
     "filters": [
-      "boulangeries"
+      "boulangeries",
+      "boulangeries-patisseries"
     ]
   },
   {
@@ -15029,15 +15026,15 @@
     "lat": -20.0002906,
     "lng": 57.5825364,
     "themes": [
-      "commerces-alimentaires",
-      "boulangeries-patisseries",
-      "produits-francais"
+      "commerces-alimentaires"
     ],
     "zone": "nord",
     "description": "Boulangerie-pâtisserie française au sein de l'hôtel LUX* Grand Baie, sélection de pâtisseries fines, high tea sucré-salé, café ; démarche éco-responsable.",
     "hours": "Tous les jours 7h-23h",
     "filters": [
-      "boulangeries"
+      "boulangeries",
+      "boulangeries-patisseries",
+      "produits-francais"
     ]
   },
   {
@@ -15103,13 +15100,13 @@
     "lat": -20.0156663,
     "lng": 57.5847839,
     "themes": [
-      "commerces-alimentaires",
-      "boulangeries-patisseries"
+      "commerces-alimentaires"
     ],
     "zone": "nord",
     "description": "Pâtisserie artisanale de Grand Baie (School Lane), bien notée (4,6/5).",
     "filters": [
-      "boulangeries"
+      "boulangeries",
+      "boulangeries-patisseries"
     ]
   },
   {
@@ -15123,13 +15120,13 @@
     "lat": -20.0056421,
     "lng": 57.6391583,
     "themes": [
-      "commerces-alimentaires",
-      "boulangeries-patisseries"
+      "commerces-alimentaires"
     ],
     "zone": "nord",
     "description": "Pâtisserie artisanale (avec gelato) de Calodyne, très bien notée (4,9/5, 128 avis), spécialisée dans les gâteaux d'anniversaire sur commande. Propose aussi un service traiteur.",
     "filters": [
-      "boulangeries"
+      "boulangeries",
+      "boulangeries-patisseries"
     ]
   },
   {
@@ -15143,12 +15140,12 @@
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Rose%20Hill%20Mauritius",
     "zone": "centre",
     "themes": [
-      "commerces-alimentaires",
-      "boulangeries-patisseries"
+      "commerces-alimentaires"
     ],
     "description": "Pâtissière indépendante basée à Rose Hill (livraison possible aussi dans le Nord), tenue par Emilie Eleonore : entremets de qualité sur commande, pas de boutique. Créations en trompe-l'œil, notamment des canelés-brownies déclinés aux 3 chocolats et un entremet pina colada. Contact par téléphone ou email.",
     "filters": [
-      "boulangeries"
+      "boulangeries",
+      "boulangeries-patisseries"
     ]
   },
   {
@@ -15162,7 +15159,6 @@
     "lat": -20.0075166,
     "lng": 57.643686,
     "themes": [
-      "boulangeries-patisseries",
       "cafes-bars-glaciers",
       "kids-friendly"
     ],
@@ -15184,14 +15180,14 @@
     "lat": -20.1621839,
     "lng": 57.5045479,
     "themes": [
-      "commerces-alimentaires",
-      "boulangeries-patisseries",
-      "produits-francais"
+      "commerces-alimentaires"
     ],
     "zone": "centre",
     "description": "Pâtisserie de Port Louis mêlant tradition française et mauricienne : Rasmalai Cake, Cake Barfi, doughnuts, tarte banane, puits d'amour, brownies, muffins.",
     "filters": [
-      "boulangeries"
+      "boulangeries",
+      "boulangeries-patisseries",
+      "produits-francais"
     ]
   },
   {
@@ -15205,14 +15201,14 @@
     "lat": -20.0109817,
     "lng": 57.5636988,
     "themes": [
-      "commerces-alimentaires",
-      "boulangeries-patisseries"
+      "commerces-alimentaires"
     ],
     "zone": "nord",
     "description": "Café-pâtisserie de Grand Baie (Mont Choisy Le Mall) tenu par des Sud-Africaines : cupcakes, milkshakes, pâtisseries, baked potatoes, petit-déjeuner all-day, plats surgelés à emporter. Très bien noté (5/5).",
     "hours": "Lun-Ven 9h-16h40, Sam 9h-14h40, Dim fermé",
     "filters": [
-      "boulangeries"
+      "boulangeries",
+      "boulangeries-patisseries"
     ]
   },
   {
@@ -18523,14 +18519,14 @@
     "lat": -20.2791083,
     "lng": 57.3684242,
     "themes": [
-      "commerces-alimentaires",
-      "boulangeries-patisseries"
+      "commerces-alimentaires"
     ],
     "zone": "ouest",
     "description": "Supermarché de proximité Carrefour City sur la Coastal Road à Flic en Flac, apprécié pour son pain frais et son rayon traiteur.",
     "hours": "Lun-Jeu 8h-20h, Ven-Sam 8h-21h, Dim et jours fériés 8h-20h",
     "filters": [
-      "grandes-surfaces"
+      "grandes-surfaces",
+      "boulangeries-patisseries"
     ]
   },
   {
@@ -18564,14 +18560,14 @@
     "lat": -20.2937302,
     "lng": 57.3640616,
     "themes": [
-      "commerces-alimentaires",
-      "boulangeries-patisseries"
+      "commerces-alimentaires"
     ],
     "zone": "ouest",
     "description": "Supermarché de quartier à Flic en Flac proposant boissons, produits de boulangerie et produits importés, avec un service de point de vente loterie.",
     "hours": "Lun-Ven 8h-19h30, Sam 8h-20h",
     "filters": [
-      "grandes-surfaces"
+      "grandes-surfaces",
+      "boulangeries-patisseries"
     ]
   },
   {
@@ -18625,14 +18621,14 @@
     "lat": -20.2789719,
     "lng": 57.3720579,
     "themes": [
-      "commerces-alimentaires",
-      "produits-locaux"
+      "commerces-alimentaires"
     ],
     "zone": "ouest",
     "description": "Petit marché de fruits et légumes frais au rond-point Dodo à Flic en Flac, tenu par une famille locale, avec produits de saison et conseils sur les produits mauriciens.",
     "hours": "Lun-Jeu 7h-13h et 15h-19h, Ven 15h-19h, Sam-Dim 7h-18h30",
     "filters": [
-      "grandes-surfaces"
+      "grandes-surfaces",
+      "produits-locaux"
     ]
   },
   {
@@ -18686,14 +18682,14 @@
     "lat": -20.2760047,
     "lng": 57.3723316,
     "themes": [
-      "commerces-alimentaires",
-      "boucheries-poissons"
+      "commerces-alimentaires"
     ],
     "zone": "ouest",
     "description": "Enseigne de boucherie-volaille de la chaîne mauricienne Chantefrais, spécialisée dans le poulet frais et les produits de boucherie, avec service de poulet grillé sur commande.",
     "hours": "Fermé le lundi, Mar-Sam 10h-18h, Dim 10h-13h",
     "filters": [
-      "grandes-surfaces"
+      "grandes-surfaces",
+      "boucheries-poissons"
     ]
   },
   {
@@ -18707,16 +18703,16 @@
     "lat": -20.3275195,
     "lng": 57.3838245,
     "themes": [
-      "commerces-alimentaires",
-      "boucheries-poissons",
-      "vins-spiritueux",
-      "epiceries-fines"
+      "commerces-alimentaires"
     ],
     "zone": "ouest",
     "description": "Épicerie fine (même enseigne que Grand Baie/Floréal) : viandes, charcuterie, fromages affinés, vins, produits frais commandés à Rungis (huîtres, moules de bouchot).",
     "hours": "Lun-Sam 8h-18h, Dim et jours fériés 9h-12h30",
     "filters": [
-      "epiceries-specialisees"
+      "epiceries-specialisees",
+      "boucheries-poissons",
+      "vins-spiritueux",
+      "epiceries-fines"
     ]
   },
   {
@@ -18809,16 +18805,16 @@
     "lat": -20.327684,
     "lng": 57.383309,
     "themes": [
-      "commerces-alimentaires",
-      "produits-bio",
-      "produits-francais",
-      "produits-locaux"
+      "commerces-alimentaires"
     ],
     "zone": "ouest",
     "description": "Magasin bio français : alimentation sans gluten, produits bio en vrac, thés/infusions, et gamme de produits locaux (miel, riz, achards) de Maurice et Rodrigues. Autre adresse : Richmond Hill (Super U), Grand Baie.",
     "hours": "Lun-Sam 9h-18h",
     "filters": [
-      "epiceries-specialisees"
+      "epiceries-specialisees",
+      "produits-bio",
+      "produits-francais",
+      "produits-locaux"
     ]
   },
   {
@@ -18832,13 +18828,13 @@
     "lat": -20.327741,
     "lng": 57.38387,
     "themes": [
-      "commerces-alimentaires",
-      "produits-bio"
+      "commerces-alimentaires"
     ],
     "zone": "ouest",
     "description": "Épicerie bio et zéro-déchet à Cap Tamarin, produits locaux et sans pesticides, en vente sur place ou en livraison (smoothies et snacks healthy).",
     "filters": [
-      "epiceries-specialisees"
+      "epiceries-specialisees",
+      "produits-bio"
     ]
   },
   {
@@ -18852,17 +18848,17 @@
     "lat": -20.3093854,
     "lng": 57.5123345,
     "themes": [
-      "commerces-alimentaires",
-      "boulangeries-patisseries",
-      "boucheries-poissons",
-      "vins-spiritueux",
-      "epiceries-fines"
+      "commerces-alimentaires"
     ],
     "zone": "centre",
     "description": "Boutique historique (1999) de l'enseigne L'Épicerie : viandes, charcuterie, fromages affinés, truffe, vins, pâtisserie et fine épicerie.",
     "hours": "Lun-Ven 9h-18h, Sam 8h30-18h, Dim et jours fériés 8h-12h30",
     "filters": [
-      "epiceries-specialisees"
+      "epiceries-specialisees",
+      "boulangeries-patisseries",
+      "boucheries-poissons",
+      "vins-spiritueux",
+      "epiceries-fines"
     ]
   },
   {
@@ -18876,16 +18872,15 @@
     "lat": -20.346665,
     "lng": 57.3645274,
     "themes": [
-      "commerces-alimentaires",
-      "boucheries-poissons",
-      "produits-francais"
+      "commerces-alimentaires"
     ],
     "zone": "ouest",
     "description": "Boucherie style français de Rivière Noire, bien notée pour la propreté et la qualité de la viande.",
     "hours": "Lun-Ven 9h-17h, Sam 9h-18h, Dim 9h-12h",
     "filters": [
       "produits-francais",
-      "boucheries"
+      "boucheries",
+      "boucheries-poissons"
     ]
   },
   {
@@ -18899,14 +18894,14 @@
     "lat": -20.344348,
     "lng": 57.3643734,
     "themes": [
-      "commerces-alimentaires",
-      "boucheries-poissons",
-      "epiceries-fines"
+      "commerces-alimentaires"
     ],
     "zone": "ouest",
     "description": "Boucherie-delicatessen de Tamarin (Palm Square), large sélection de viandes fraîches soigneusement choisies, commande en ligne disponible.",
     "filters": [
-      "boucheries"
+      "boucheries",
+      "boucheries-poissons",
+      "epiceries-fines"
     ]
   },
   {
@@ -18920,14 +18915,14 @@
     "lat": -20.2755332,
     "lng": 57.3706423,
     "themes": [
-      "commerces-alimentaires",
-      "boucheries-poissons"
+      "commerces-alimentaires"
     ],
     "zone": "ouest",
     "description": "Point de vente de poisson frais sur la Coastal Road à Flic en Flac, ouvert du lundi au samedi, 11h-16h.",
     "hours": "Lundi-Samedi : 11h00-16h00 (fermé le dimanche)",
     "filters": [
-      "poissonneries"
+      "poissonneries",
+      "boucheries-poissons"
     ]
   },
   {
@@ -18941,13 +18936,13 @@
     "lat": -20.346673,
     "lng": 57.3644881,
     "themes": [
-      "commerces-alimentaires",
-      "boucheries-poissons"
+      "commerces-alimentaires"
     ],
     "zone": "ouest",
     "description": "Poissonnerie de Rivière Noire proposant une large sélection de fruits de mer locaux, réputée pour sa fraîcheur ; conseillé de venir tôt le matin pour le meilleur choix.",
     "filters": [
-      "poissonneries"
+      "poissonneries",
+      "boucheries-poissons"
     ]
   },
   {
@@ -19247,15 +19242,15 @@
     "lat": -20.2762145,
     "lng": 57.3725327,
     "themes": [
-      "commerces-alimentaires",
-      "boulangeries-patisseries",
-      "produits-francais"
+      "commerces-alimentaires"
     ],
     "zone": "ouest",
     "description": "Boulangerie-pâtisserie franco-mauricienne de Flic en Flac depuis 2017, spécialités françaises, livraison de pain et pâtisseries.",
     "hours": "Lun-Sam 5h-20h, Dim 5h-13h",
     "filters": [
-      "boulangeries"
+      "boulangeries",
+      "boulangeries-patisseries",
+      "produits-francais"
     ]
   },
   {
@@ -22182,14 +22177,14 @@
     "lat": -20.4257042,
     "lng": 57.3623317,
     "themes": [
-      "commerces-alimentaires",
-      "boulangeries-patisseries"
+      "commerces-alimentaires"
     ],
     "zone": "ouest",
     "description": "Supermarché bien approvisionné à La Gaulette (Black River), avec un café extérieur proposant boissons et pâtisseries.",
     "hours": "Lun-Sam 8h30-19h, Dim 8h30-12h30",
     "filters": [
-      "grandes-surfaces"
+      "grandes-surfaces",
+      "boulangeries-patisseries"
     ]
   },
   {
@@ -22243,15 +22238,15 @@
     "lat": -20.0781622,
     "lng": 57.5644112,
     "themes": [
-      "commerces-alimentaires",
-      "boulangeries-patisseries",
-      "boucheries-poissons"
+      "commerces-alimentaires"
     ],
     "zone": "nord",
     "description": "Hypermarché de la chaîne mauricienne Lolo Hyper, née d'une petite épicerie ouverte en 1990 à Morcellement Saint-André et devenue un centre commercial avec poissonnerie, boucherie et boulangerie.",
     "hours": "Dim 8h30-14h, Lun-Jeu 9h-20h, Ven 9h-20h30",
     "filters": [
-      "grandes-surfaces"
+      "grandes-surfaces",
+      "boulangeries-patisseries",
+      "boucheries-poissons"
     ]
   },
   {
@@ -22592,15 +22587,15 @@
     "lat": -20.2413881,
     "lng": 57.4906571,
     "themes": [
-      "commerces-alimentaires",
-      "boucheries-poissons",
-      "epiceries-fines"
+      "commerces-alimentaires"
     ],
     "zone": "centre",
     "description": "Épicerie fine et boucherie haut de gamme : viandes premium (Wagyu), fruits de mer ultra-frais, fromages affinés, foie gras, panettone artisanal ; dégustations le week-end.",
     "hours": "Lun-Ven 9h30-18h, Sam 9h30-17h",
     "filters": [
-      "epiceries-specialisees"
+      "epiceries-specialisees",
+      "boucheries-poissons",
+      "epiceries-fines"
     ]
   },
   {
@@ -22633,13 +22628,13 @@
     "lat": -20.2246742,
     "lng": 57.5255987,
     "themes": [
-      "commerces-alimentaires",
-      "produits-bio"
+      "commerces-alimentaires"
     ],
     "zone": "centre",
     "description": "Premier supermarché bio ouvert à la galerie marchande Les Allées (Helvétia, Moka) : plus de 1000 marques de produits bio, options vegan et sans gluten, fruits et légumes frais.",
     "filters": [
-      "epiceries-specialisees"
+      "epiceries-specialisees",
+      "produits-bio"
     ]
   },
   {
@@ -22691,14 +22686,14 @@
     "lat": -20.246004,
     "lng": 57.4981239,
     "themes": [
-      "commerces-alimentaires",
-      "epiceries-fines"
+      "commerces-alimentaires"
     ],
     "zone": "centre",
     "description": "Épicerie fine (Tribeca Mall) dédiée à la fine cuisine européenne : produits gourmets sélectionnés, épicerie salée/sucrée haut de gamme.",
     "hours": "Lun-Jeu 9h30-21h, Ven-Sam 9h30-22h, Dim 9h30-17h",
     "filters": [
-      "epiceries-specialisees"
+      "epiceries-specialisees",
+      "epiceries-fines"
     ]
   },
   {
@@ -22809,15 +22804,15 @@
     "lat": -20.3516253,
     "lng": 57.3647608,
     "themes": [
-      "commerces-alimentaires",
-      "boucheries-poissons",
-      "exotiques-epices"
+      "commerces-alimentaires"
     ],
     "zone": "ouest",
     "description": "Produits sud-africains : biltong, droëwors, viande fraîche, plats préparés, biscuits 'Ouma Rusks', épices et sauces.",
     "hours": "Lun-Jeu 8h30-18h30, Ven-Sam 8h-19h, Dim et jours fériés 9h-14h",
     "filters": [
-      "epiceries-specialisees"
+      "epiceries-specialisees",
+      "boucheries-poissons",
+      "exotiques-epices"
     ]
   },
   {
@@ -22984,16 +22979,15 @@
     "lat": -20.1423736,
     "lng": 57.5111962,
     "themes": [
-      "commerces-alimentaires",
-      "boucheries-poissons",
-      "produits-francais"
+      "commerces-alimentaires"
     ],
     "zone": "centre",
     "description": "Charcutier-transformateur de Roche Bois (Port Louis), plus de 40 produits (jambons, saucisses), certifié HACCP, avec livraison à domicile sur toute l'île.",
     "hours": "Lun-Ven 8h30-17h",
     "filters": [
       "produits-francais",
-      "boucheries"
+      "boucheries",
+      "boucheries-poissons"
     ]
   },
   {
@@ -23007,13 +23001,13 @@
     "lat": -20.0536107,
     "lng": 57.5533357,
     "themes": [
-      "commerces-alimentaires",
-      "boucheries-poissons"
+      "commerces-alimentaires"
     ],
     "zone": "nord",
     "description": "Boucherie familiale de Triolet avec sa propre ferme d'élevage (Khaleel Cattle Farm), bœuf, agneau et mouton 100% frais (jamais surgelé), livraison disponible.",
     "filters": [
-      "boucheries"
+      "boucheries",
+      "boucheries-poissons"
     ]
   },
   {
@@ -23104,14 +23098,14 @@
     "lat": -20.3205824,
     "lng": 57.5148683,
     "themes": [
-      "commerces-alimentaires",
-      "boulangeries-patisseries"
+      "commerces-alimentaires"
     ],
     "zone": "centre",
     "description": "Boulangerie-pâtisserie familiale de Curepipe depuis 1995, réputée pour son croissant fromage, ses biscuits fromage et pâtisseries salées. Ouvert tous les jours 4h30-20h.",
     "hours": "Lun-Dim 4h30-20h",
     "filters": [
-      "boulangeries"
+      "boulangeries",
+      "boulangeries-patisseries"
     ]
   },
   {
@@ -23125,14 +23119,14 @@
     "lat": -20.074342,
     "lng": 57.5473956,
     "themes": [
-      "commerces-alimentaires",
-      "boulangeries-patisseries"
+      "commerces-alimentaires"
     ],
     "zone": "nord",
     "description": "Boulangerie-pâtisserie de Triolet (7th Mile).",
     "hours": "Lun-Dim 5h-20h",
     "filters": [
-      "boulangeries"
+      "boulangeries",
+      "boulangeries-patisseries"
     ]
   },
   {
@@ -23146,13 +23140,13 @@
     "lat": -20.2497441,
     "lng": 57.4563443,
     "themes": [
-      "commerces-alimentaires",
-      "boulangeries-patisseries"
+      "commerces-alimentaires"
     ],
     "zone": "centre",
     "description": "Pâtisserie-boulangerie de Beau Bassin-Rose Hill (Camp Levieux, angle Takoor Lane & Cretin Avenue).",
     "filters": [
-      "boulangeries"
+      "boulangeries",
+      "boulangeries-patisseries"
     ]
   },
   {
@@ -23166,14 +23160,14 @@
     "lat": -20.1299046,
     "lng": 57.5302412,
     "themes": [
-      "commerces-alimentaires",
-      "boulangeries-patisseries"
+      "commerces-alimentaires"
     ],
     "zone": "nord",
     "description": "Boulangerie artisanale de Terre Rouge : pain frais, viennoiseries (croissants, burger buns), gâteaux, snacks locaux (kalakand). Ouvert lun-sam 5h-21h, dim 5h-13h ; livraison à l'île entière.",
     "hours": "Tous les jours 5h30-19h",
     "filters": [
-      "boulangeries"
+      "boulangeries",
+      "boulangeries-patisseries"
     ]
   },
   {
@@ -23187,13 +23181,13 @@
     "lat": -20.2144997,
     "lng": 57.4679918,
     "themes": [
-      "commerces-alimentaires",
-      "boulangeries-patisseries"
+      "commerces-alimentaires"
     ],
     "zone": "centre",
     "description": "Boulangerie-pâtisserie de quartier à Chebel (Beau Bassin).",
     "filters": [
-      "boulangeries"
+      "boulangeries",
+      "boulangeries-patisseries"
     ]
   },
   {
@@ -23207,16 +23201,15 @@
     "lat": -20.2796512,
     "lng": 57.4020641,
     "themes": [
-      "commerces-alimentaires",
-      "boulangeries-patisseries",
-      "produits-francais"
+      "commerces-alimentaires"
     ],
     "zone": "ouest",
     "description": "Boulangerie-pâtisserie française du Cascavelle Mall (Flic en Flac) : pains artisanaux, viennoiseries et pâtisseries sucrées/salées préparés frais chaque jour.",
     "hours": "Lun-Sam 7h30-18h30, Dim 7h30-15h",
     "filters": [
       "produits-francais",
-      "boulangeries"
+      "boulangeries",
+      "boulangeries-patisseries"
     ]
   },
   {
@@ -23230,14 +23223,14 @@
     "lat": -20.2372875,
     "lng": 57.4718171,
     "themes": [
-      "commerces-alimentaires",
-      "boulangeries-patisseries",
-      "produits-francais"
+      "commerces-alimentaires"
     ],
     "zone": "sud",
     "description": "Institution familiale mauricienne (plusieurs décennies, aussi présente à Curepipe et Vacoas) : baguettes, pains maison, croissants, pâtés, vol-au-vents, muffins, napolitaines, massepain, pain au chocolat.",
     "filters": [
-      "boulangeries"
+      "boulangeries",
+      "boulangeries-patisseries",
+      "produits-francais"
     ]
   },
   {
@@ -23251,13 +23244,13 @@
     "lat": -20.1661727,
     "lng": 57.4945107,
     "themes": [
-      "commerces-alimentaires",
-      "boulangeries-patisseries"
+      "commerces-alimentaires"
     ],
     "zone": "centre",
     "description": "Boulangerie-pâtisserie de Port Louis.",
     "filters": [
-      "boulangeries"
+      "boulangeries",
+      "boulangeries-patisseries"
     ]
   },
   {
@@ -23271,13 +23264,13 @@
     "lat": -20.2687494,
     "lng": 57.4678334,
     "themes": [
-      "commerces-alimentaires",
-      "boulangeries-patisseries"
+      "commerces-alimentaires"
     ],
     "zone": "centre",
     "description": "Boulangerie-pâtisserie de quartier à Quatre Bornes.",
     "filters": [
-      "boulangeries"
+      "boulangeries",
+      "boulangeries-patisseries"
     ]
   },
   {
@@ -24975,13 +24968,13 @@
     "lat": -20.2449231,
     "lng": 57.4990104,
     "themes": [
-      "commerces-alimentaires",
-      "boucheries-poissons"
+      "commerces-alimentaires"
     ],
     "zone": "ouest",
     "description": "Chaîne mauricienne de poissonneries avec plusieurs points de vente (Tribeca, La City Trianon, Cascavelle, Rivière du Rempart, Victoria Beau Bassin-Rose Hill), anciennement connue sous le nom Noulamer Poissons.",
     "filters": [
-      "poissonneries"
+      "poissonneries",
+      "boucheries-poissons"
     ]
   },
   {
@@ -24995,13 +24988,13 @@
     "lat": -20.4086434,
     "lng": 57.709105,
     "themes": [
-      "commerces-alimentaires",
-      "boucheries-poissons"
+      "commerces-alimentaires"
     ],
     "zone": "sud",
     "description": "Poissonnerie de Mahébourg proposant du poisson frais (cateau bleu et rouge notamment), avec service de nettoyage du poisson et livraison.",
     "filters": [
-      "poissonneries"
+      "poissonneries",
+      "boucheries-poissons"
     ]
   },
   {
@@ -25015,14 +25008,14 @@
     "lat": -20.1703186,
     "lng": 57.7376438,
     "themes": [
-      "commerces-alimentaires",
-      "boucheries-poissons"
+      "commerces-alimentaires"
     ],
     "zone": "est",
     "description": "Grossiste en fruits de mer de Poste de Flacq établi depuis 2002, présenté comme le plus grand fournisseur indépendant de fruits de mer de l'île ; importe/distribue fruits de mer et viandes surgelés, vend aussi du poisson local frais et congelé.",
     "hours": "Lun-Ven 7h-16h, Sam 7h-14h",
     "filters": [
-      "poissonneries"
+      "poissonneries",
+      "boucheries-poissons"
     ]
   },
   {
@@ -25036,13 +25029,13 @@
     "lat": -20.3033596,
     "lng": 57.5224356,
     "themes": [
-      "commerces-alimentaires",
-      "boucheries-poissons"
+      "commerces-alimentaires"
     ],
     "zone": "centre",
     "description": "Poissonnerie de Curepipe proposant une variété de poissons et fruits de mer frais, appréciée pour sa qualité.",
     "filters": [
-      "poissonneries"
+      "poissonneries",
+      "boucheries-poissons"
     ]
   },
   {
@@ -25056,13 +25049,13 @@
     "lat": -20.3181875,
     "lng": 57.4846875,
     "themes": [
-      "commerces-alimentaires",
-      "boucheries-poissons"
+      "commerces-alimentaires"
     ],
     "zone": "centre",
     "description": "Poissonnerie de Vacoas-Phœnix (la Marie Road), \"de l'océan à votre porte\" - service de livraison suggéré par l'enseigne.",
     "filters": [
-      "poissonneries"
+      "poissonneries",
+      "boucheries-poissons"
     ]
   },
   {
@@ -25134,15 +25127,15 @@
     "lng": 57.5204652,
     "themes": [
       "commerces-alimentaires",
-      "cafes-bars-glaciers",
-      "boulangeries-patisseries"
+      "cafes-bars-glaciers"
     ],
     "zone": "sud",
     "hours": "Tous les jours 8h-19h30",
     "description": "Pâtisserie-café de Lady Barkly Street à Souillac : pâtisseries sucrées et salées, tourtes, douceurs indiennes et vrai café. Sur place, à emporter ou en livraison, prix raisonnables pensés pour la clientèle locale. Considérée par beaucoup comme la meilleure pâtisserie du sud de l'île (4,5/5).",
     "filters": [
       "glaciers",
-      "boulangeries"
+      "boulangeries",
+      "boulangeries-patisseries"
     ]
   },
   {
@@ -25156,13 +25149,13 @@
     "lat": -20.2214967,
     "lng": 57.5048813,
     "themes": [
-      "commerces-alimentaires",
-      "boulangeries-patisseries"
+      "commerces-alimentaires"
     ],
     "zone": "centre",
     "description": "Pâtisserie de Moka spécialisée dans les gâteaux au chocolat sur mesure avec ingrédients fins, réservation en ligne et retrait sur place, très bien notée.",
     "filters": [
-      "boulangeries"
+      "boulangeries",
+      "boulangeries-patisseries"
     ]
   },
   {
@@ -25176,13 +25169,13 @@
     "lat": -20.191183,
     "lng": 57.4922919,
     "themes": [
-      "commerces-alimentaires",
-      "boulangeries-patisseries"
+      "commerces-alimentaires"
     ],
     "zone": "centre",
     "description": "Boulangerie-pâtisserie de Port Louis.",
     "filters": [
-      "boulangeries"
+      "boulangeries",
+      "boulangeries-patisseries"
     ]
   },
   {
@@ -25196,14 +25189,14 @@
     "lat": -20.1922101,
     "lng": 57.6682898,
     "themes": [
-      "commerces-alimentaires",
-      "boulangeries-patisseries"
+      "commerces-alimentaires"
     ],
     "zone": "est",
     "description": "Pâtisserie germano-mauricienne de Lalmatie fondée en 2007 par le couple pâtissier Blek et Romy Ramdass : gâteaux de mariage et pâtisseries haut de gamme sur commande. Ouvert lun-sam 9h-18h, dim 9h-12h.",
     "hours": "Lun-Sam 9h-18h, Dim 9h-12h",
     "filters": [
-      "boulangeries"
+      "boulangeries",
+      "boulangeries-patisseries"
     ]
   },
   {
@@ -25217,14 +25210,14 @@
     "lat": -20.1107189,
     "lng": 57.5739834,
     "themes": [
-      "commerces-alimentaires",
-      "boulangeries-patisseries"
+      "commerces-alimentaires"
     ],
     "zone": "nord",
     "description": "Boulangerie de Pamplemousses établie depuis plus de 30 ans : large gamme de pains frais, pizzas, friands/quiches, cookies et gâteaux (dont végétariens) ; fournit aussi hôtels, restaurants et supermarchés.",
     "hours": "Lun 5h-17h, Mar-Ven 3h-18h, Sam 5h-13h, Dim fermé",
     "filters": [
-      "boulangeries"
+      "boulangeries",
+      "boulangeries-patisseries"
     ]
   },
   {
@@ -25257,15 +25250,15 @@
     "lat": -20.2218487,
     "lng": 57.5020219,
     "themes": [
-      "commerces-alimentaires",
-      "boulangeries-patisseries",
-      "produits-francais"
+      "commerces-alimentaires"
     ],
     "zone": "centre",
     "description": "Pâtisserie fine de Bon-Air ouverte en mars 2024, alliant techniques françaises et saveurs mauriciennes, moins sucrée, options sans gluten et végan. Ouvert dim 8h30-13h30, lun-sam 8h30-18h.",
     "hours": "Lun-Sam 8h30-18h, Dim et jours fériés 8h30-13h30",
     "filters": [
-      "boulangeries"
+      "boulangeries",
+      "boulangeries-patisseries",
+      "produits-francais"
     ]
   },
   {
@@ -25279,13 +25272,13 @@
     "lat": -20.1239525,
     "lng": 57.6635775,
     "themes": [
-      "commerces-alimentaires",
-      "boulangeries-patisseries"
+      "commerces-alimentaires"
     ],
     "zone": "est",
     "description": "Boulangerie-pâtisserie de Belle Vue Maurel, gâteaux d'anniversaire et de mariage sur commande ; autres points de vente à Goodlands et Flacq.",
     "filters": [
-      "boulangeries"
+      "boulangeries",
+      "boulangeries-patisseries"
     ]
   },
   {
@@ -25299,14 +25292,14 @@
     "lat": -19.9934716,
     "lng": 57.6139921,
     "themes": [
-      "commerces-alimentaires",
-      "boulangeries-patisseries"
+      "commerces-alimentaires"
     ],
     "zone": "nord",
     "description": "Pâtisserie artisanale de Cap Malheureux : gâteaux et cupcakes personnalisés pour fêtes et événements, propose aussi des ateliers de cuisine. Ouvert lun-sam 10h-17h, fermé le dimanche.",
     "hours": "Lun-Sam 10h-17h, Dim fermé",
     "filters": [
-      "boulangeries"
+      "boulangeries",
+      "boulangeries-patisseries"
     ]
   },
   {
@@ -25320,13 +25313,13 @@
     "lat": -20.2215065,
     "lng": 57.4684026,
     "themes": [
-      "commerces-alimentaires",
-      "boulangeries-patisseries"
+      "commerces-alimentaires"
     ],
     "zone": "centre",
     "description": "Pâtisserie de Beau Bassin-Rose Hill réputée pour ses feuilletés salés (samoussas, petits pâtés), considérés parmi les meilleurs de l'île selon les avis.",
     "filters": [
-      "boulangeries"
+      "boulangeries",
+      "boulangeries-patisseries"
     ]
   },
   {
@@ -28076,14 +28069,14 @@
     "lat": -20.2694113,
     "lng": 57.4759053,
     "themes": [
-      "commerces-alimentaires",
-      "produits-francais"
+      "commerces-alimentaires"
     ],
     "zone": "centre",
     "description": "Supermarché de proximité de l'enseigne Intermart, partenaire du groupe Intermarché, proposant produits frais, français et internationaux.",
     "hours": "Lun-Jeu 8h-19h30, Ven-Sam 8h-20h, Dim 8h-16h",
     "filters": [
-      "grandes-surfaces"
+      "grandes-surfaces",
+      "produits-francais"
     ]
   },
   {
@@ -28136,14 +28129,14 @@
     "lat": -20.23972,
     "lng": 57.78454,
     "themes": [
-      "commerces-alimentaires",
-      "boulangeries-patisseries"
+      "commerces-alimentaires"
     ],
     "zone": "est",
     "description": "Supérette de quartier à Trou d'Eau Douce proposant produits alimentaires de base, pain frais, boissons et cartes SIM prépayées.",
     "hours": "Lun-Ven 5h45-21h, Sam 5h45-22h",
     "filters": [
-      "grandes-surfaces"
+      "grandes-surfaces",
+      "boulangeries-patisseries"
     ]
   },
   {
@@ -28216,13 +28209,13 @@
     "lat": -20.2415653,
     "lng": 57.4577908,
     "themes": [
-      "commerces-alimentaires",
-      "boucheries-poissons"
+      "commerces-alimentaires"
     ],
     "zone": "centre",
     "description": "Boucherie de quartier de Beau Bassin-Rose Hill, gamme de viandes de qualité.",
     "filters": [
-      "boucheries"
+      "boucheries",
+      "boucheries-poissons"
     ]
   },
   {
@@ -28236,13 +28229,13 @@
     "lat": -20.1379835,
     "lng": 57.505401,
     "themes": [
-      "commerces-alimentaires",
-      "boucheries-poissons"
+      "commerces-alimentaires"
     ],
     "zone": "centre",
     "description": "Boucherie-charcuterie de Baie du Tombeau, fabrication de saucisses, hamburgers, boulettes, bacon et jambons ; second point de vente à Beau Bassin-Rose Hill.",
     "filters": [
-      "boucheries"
+      "boucheries",
+      "boucheries-poissons"
     ]
   },
   {
@@ -28256,13 +28249,13 @@
     "lat": -20.2140847,
     "lng": 57.469529,
     "themes": [
-      "commerces-alimentaires",
-      "boucheries-poissons"
+      "commerces-alimentaires"
     ],
     "zone": "centre",
     "description": "Boucherie halal certifiée de Beau Bassin-Rose Hill, spécialisée bœuf frais, propose aussi de la graisse de bœuf (tallow) en pot.",
     "filters": [
-      "boucheries"
+      "boucheries",
+      "boucheries-poissons"
     ]
   },
   {
@@ -28526,14 +28519,14 @@
     "lat": -20.2967516,
     "lng": 57.490436,
     "themes": [
-      "commerces-alimentaires",
-      "boulangeries-patisseries"
+      "commerces-alimentaires"
     ],
     "zone": "centre",
     "description": "Pâtisserie artisanale de Vacoas-Phoenix : cannelés (mardi/vendredi), sandwichs/paninis et gâteaux tous les jours (chocolat, cheesecakes, éclairs), pain, desserts glacés, café.",
     "hours": "Mar-Sam 10h30-18h",
     "filters": [
-      "boulangeries"
+      "boulangeries",
+      "boulangeries-patisseries"
     ]
   },
   {
@@ -28547,14 +28540,14 @@
     "lat": -20.3236235,
     "lng": 57.5178543,
     "themes": [
-      "commerces-alimentaires",
-      "boulangeries-patisseries"
+      "commerces-alimentaires"
     ],
     "zone": "centre",
     "description": "Pâtisserie familiale de Curepipe fondée en 2006, spécialités mauriciennes traditionnelles : puits d'amour, langue de belle-mère, gâteaux piments, éclairs.",
     "hours": "Dim, Jeu-Sam 9h30-18h (fermé Lun-Mer)",
     "filters": [
-      "boulangeries"
+      "boulangeries",
+      "boulangeries-patisseries"
     ]
   },
   {
@@ -28568,14 +28561,14 @@
     "lat": -20.1549772,
     "lng": 57.5181358,
     "themes": [
-      "commerces-alimentaires",
-      "boulangeries-patisseries"
+      "commerces-alimentaires"
     ],
     "zone": "nord",
     "description": "Pâtisserie de Port Louis spécialisée dans le puits d'amour (classique et variante à la crème de coco), aussi utilisée pour les gâteaux d'anniversaire.",
     "hours": "Lun-Ven 9h-20h30, Sam 9h-15h30, Dim fermé",
     "filters": [
-      "boulangeries"
+      "boulangeries",
+      "boulangeries-patisseries"
     ]
   },
   {
@@ -28589,13 +28582,13 @@
     "lat": -20.2481125,
     "lng": 57.4814936,
     "themes": [
-      "commerces-alimentaires",
-      "boulangeries-patisseries"
+      "commerces-alimentaires"
     ],
     "zone": "centre",
     "description": "Fabricant-grossiste en pâtisserie de la région de Quatre Bornes/Belle Rose, vente en gros sur commande et en boutique.",
     "filters": [
-      "boulangeries"
+      "boulangeries",
+      "boulangeries-patisseries"
     ]
   },
   {
@@ -29006,13 +28999,13 @@
     "lat": -20.1544417,
     "lng": 57.5250009,
     "themes": [
-      "commerces-alimentaires",
-      "boulangeries-patisseries"
+      "commerces-alimentaires"
     ],
     "zone": "centre",
     "description": "Boulangerie-pâtisserie de Port Louis (Vallée des Prêtres).",
     "filters": [
-      "boulangeries"
+      "boulangeries",
+      "boulangeries-patisseries"
     ]
   },
   {
@@ -34279,13 +34272,13 @@
     "lat": -19.9920526,
     "lng": 57.5925898,
     "themes": [
-      "commerces-alimentaires",
-      "boulangeries-patisseries"
+      "commerces-alimentaires"
     ],
     "zone": "nord",
     "description": "Boulangerie intégrée au supermarché Winner's de Pereybère : pain frais et fast-food abordable, croissants et pâtisseries du matin, baguettes traditionnelles, pain complet, céréales.",
     "filters": [
-      "boulangeries"
+      "boulangeries",
+      "boulangeries-patisseries"
     ]
   },
   {
@@ -34556,14 +34549,14 @@
     "lat": -20.2759253,
     "lng": 57.372144,
     "themes": [
-      "commerces-alimentaires",
-      "boucheries-poissons",
-      "exotiques-epices"
+      "commerces-alimentaires"
     ],
     "zone": "ouest",
     "description": "Entreprise familiale de Flic en Flac spécialisée dans le biltong et le boerewors façon sud-africaine (viande séchée), avec quelques déclinaisons gourmandes.",
     "filters": [
-      "boucheries"
+      "boucheries",
+      "boucheries-poissons",
+      "exotiques-epices"
     ]
   },
   {
@@ -34905,14 +34898,14 @@
     "lat": -20.2249141,
     "lng": 57.468202,
     "themes": [
-      "commerces-alimentaires",
-      "boucheries-poissons"
+      "commerces-alimentaires"
     ],
     "zone": "centre",
     "description": "L'un des plus anciens supermarchés de Beau Bassin-Rose Hill, de l'enseigne Way Supermarket, proposant produits frais, surgelés, poissonnerie et boissons.",
     "hours": "Lun-Sam 8h30-20h, Dim 8h-13h",
     "filters": [
-      "grandes-surfaces"
+      "grandes-surfaces",
+      "boucheries-poissons"
     ]
   },
   {
@@ -34925,14 +34918,14 @@
     "lat": -20.3133386,
     "lng": 57.5057781,
     "themes": [
-      "commerces-alimentaires",
-      "produits-francais",
-      "epiceries-fines"
+      "commerces-alimentaires"
     ],
     "zone": "centre",
     "description": "Épicerie fine haut de gamme (antenne du réseau L'Épicerie, fondé en 1999 à Floréal) à Vacoas-Phœnix, produits gourmets majoritairement français (charcuterie, fromages) avec service traiteur.",
     "filters": [
-      "epiceries-specialisees"
+      "epiceries-specialisees",
+      "produits-francais",
+      "epiceries-fines"
     ]
   },
   {
@@ -34961,14 +34954,14 @@
     "lat": -20.4711092,
     "lng": 57.3453082,
     "themes": [
-      "commerces-alimentaires",
-      "produits-locaux",
-      "exotiques-epices"
+      "commerces-alimentaires"
     ],
     "zone": "ouest",
     "description": "Épicerie générale du Morne Brabant, produits frais, épices locales et artisanat local, accueil chaleureux, à proximité des sites naturels.",
     "filters": [
-      "epiceries-specialisees"
+      "epiceries-specialisees",
+      "produits-locaux",
+      "exotiques-epices"
     ]
   },
   {
@@ -35176,14 +35169,14 @@
     "lat": -20.4078593,
     "lng": 57.7082287,
     "themes": [
-      "commerces-alimentaires",
-      "boulangeries-patisseries"
+      "commerces-alimentaires"
     ],
     "zone": "est",
     "description": "Pâtisserie de Mahébourg à bonne réputation locale, large gamme de produits. Ouvert 8h-20h.",
     "hours": "Lun-Dim 8h-20h",
     "filters": [
-      "boulangeries"
+      "boulangeries",
+      "boulangeries-patisseries"
     ]
   },
   {
@@ -35788,14 +35781,14 @@
     "lat": -20.1706979,
     "lng": 57.5031103,
     "themes": [
-      "commerces-alimentaires",
-      "boulangeries-patisseries"
+      "commerces-alimentaires"
     ],
     "zone": "centre",
     "description": "Pâtisserie de Port Louis (Rue Labourdonnais), gâteaux à prix abordables et grosses parts, genoise au chocolat appréciée.",
     "hours": "Lun-Dim 10h-21h",
     "filters": [
-      "boulangeries"
+      "boulangeries",
+      "boulangeries-patisseries"
     ]
   },
   {
@@ -35931,14 +35924,14 @@
     "lat": -20.2568384,
     "lng": 57.4125377,
     "themes": [
-      "commerces-alimentaires",
-      "boulangeries-patisseries"
+      "commerces-alimentaires"
     ],
     "zone": "ouest",
     "description": "Supermarché Winner's à Bambous, apprécié pour son rayon boulangerie et son grand parking.",
     "hours": "Lun-Sam 8h-19h, Dim 8h-13h",
     "filters": [
-      "grandes-surfaces"
+      "grandes-surfaces",
+      "boulangeries-patisseries"
     ]
   },
   {
@@ -37594,8 +37587,7 @@
     "lng": 57.5768411,
     "themes": [
       "cafes-bars-glaciers",
-      "restaurants",
-      "boulangeries-patisseries"
+      "restaurants"
     ],
     "hours": "Lun-Ven 9h-17h, Sam-Dim 9h-15h",
     "priceRange": "prix-moyen",
@@ -39040,14 +39032,14 @@
     "lat": -20.4097469,
     "lng": 57.7069008,
     "themes": [
-      "commerces-alimentaires",
-      "boulangeries-patisseries"
+      "commerces-alimentaires"
     ],
     "zone": "sud",
     "description": "Boulangerie-pâtisserie-café de Mahébourg : pains et viennoiseries pétris quotidiennement, pizzas et market express.",
     "filters": [
       "produits-francais",
-      "boulangeries"
+      "boulangeries",
+      "boulangeries-patisseries"
     ]
   },
   {
@@ -48522,14 +48514,14 @@
     "lat": -20.006,
     "lng": 57.544,
     "themes": [
-      "commerces-alimentaires",
-      "boulangeries-patisseries"
+      "commerces-alimentaires"
     ],
     "hours": "Lun–Sam 10h–19h, Dim 9h–13h",
     "zone": "nord",
     "description": "Petit marché local rustique et coloré : fruits et légumes de saison en permaculture, plus charcuterie, fromages, pâtisseries et cosmétiques naturels. Pas de livraison.",
     "filters": [
-      "fruits-et-legumes"
+      "fruits-et-legumes",
+      "boulangeries-patisseries"
     ]
   },
   {
@@ -48543,16 +48535,15 @@
     "lat": -20.356,
     "lng": 57.362,
     "themes": [
-      "commerces-alimentaires",
-      "boucheries-poissons",
-      "produits-francais"
+      "commerces-alimentaires"
     ],
     "hours": "",
     "zone": "ouest",
     "description": "Deuxième adresse des Halles Françaises, à Ruisseau Créole : rayon maraîcher (fruits & légumes), boucherie-charcuterie, fromagerie et produits français. Horaires à confirmer.",
     "filters": [
       "produits-francais",
-      "fruits-et-legumes"
+      "fruits-et-legumes",
+      "boucheries-poissons"
     ]
   },
   {
@@ -48566,14 +48557,14 @@
     "lat": -20.2411,
     "lng": 57.4863,
     "themes": [
-      "commerces-alimentaires",
-      "boulangeries-patisseries"
+      "commerces-alimentaires"
     ],
     "hours": "Lun–Jeu 9h30–20h30 (horaires étendus le week-end)",
     "zone": "centre",
     "description": "Marché de produits frais : large choix de fruits et légumes (dont une gamme zéro pesticide), pains, pâtisseries, produits laitiers et épicerie. Également une adresse à Rivière Noire. Livraison non précisée.",
     "filters": [
-      "fruits-et-legumes"
+      "fruits-et-legumes",
+      "boulangeries-patisseries"
     ]
   },
   {
@@ -48588,15 +48579,15 @@
     "lng": 57.6667,
     "themes": [
       "commerces-alimentaires",
-      "livraisons",
-      "produits-bio",
-      "produits-locaux"
+      "livraisons"
     ],
     "hours": "Commande en ligne (newsletter chaque vendredi), livraison à domicile ou en points de retrait",
     "zone": "est",
     "description": "Ferme bio à St Julien d'Hotman : fruits, légumes de saison, produits laitiers et épicerie, cultivés avec un réseau de petits producteurs locaux. Commande en ligne avec livraison à domicile ou retrait — la livraison est possible.",
     "filters": [
-      "fruits-et-legumes"
+      "fruits-et-legumes",
+      "produits-bio",
+      "produits-locaux"
     ]
   },
   {
@@ -48610,14 +48601,14 @@
     "lat": -20.065,
     "lng": 57.556,
     "themes": [
-      "commerces-alimentaires",
-      "produits-bio"
+      "commerces-alimentaires"
     ],
     "hours": "",
     "zone": "nord",
     "description": "Jardin maraîcher bio (label Lakaz bio / certifié Ecocert) porté par Caritas Solitude : brèdes, tomates, giraumons, calebasses cultivés sans pesticides. Production vendue sur les marchés locaux et à des hôtels — pas de boutique ouverte au public.",
     "filters": [
-      "fruits-et-legumes"
+      "fruits-et-legumes",
+      "produits-bio"
     ]
   },
   {
@@ -50446,15 +50437,15 @@
     "phone": "+230 211 9500",
     "themes": [
       "commerces-alimentaires",
-      "cafes-bars-glaciers",
-      "boulangeries-patisseries"
+      "cafes-bars-glaciers"
     ],
     "zone": "centre",
     "priceRange": "prix-moyen",
     "description": "Salon de thé et pâtisseries du Caudan Waterfront, spécialité de rocher coco.",
     "filters": [
       "cafes-terrasses",
-      "boulangeries"
+      "boulangeries",
+      "boulangeries-patisseries"
     ]
   },
   {
@@ -50509,14 +50500,14 @@
     "address": "Mont Choisy Mall",
     "phone": "+230 5908 2765",
     "themes": [
-      "commerces-alimentaires",
-      "epiceries-fines"
+      "commerces-alimentaires"
     ],
     "zone": "nord",
     "priceRange": "prix-moyen",
     "description": "Épicerie fine 100% italienne au Mont Choisy Mall : charcuterie, burrata, mozzarella, parmesan, gorgonzola.",
     "filters": [
-      "epiceries-specialisees"
+      "epiceries-specialisees",
+      "epiceries-fines"
     ]
   },
   {
@@ -50526,14 +50517,14 @@
     "address": "Route Royale",
     "phone": "+230 5919 1708",
     "themes": [
-      "commerces-alimentaires",
-      "epiceries-fines"
+      "commerces-alimentaires"
     ],
     "zone": "nord",
     "priceRange": "prix-moyen",
     "description": "Épicerie fine et charcuterie, produits de la mer sur commande, plateaux d'antipasti.",
     "filters": [
-      "epiceries-specialisees"
+      "epiceries-specialisees",
+      "epiceries-fines"
     ]
   },
   {
@@ -50560,14 +50551,14 @@
     "phone": "+230 674 2010",
     "themes": [
       "commerces-alimentaires",
-      "boucheries-poissons",
       "livraisons"
     ],
     "zone": "centre",
     "priceRange": "prix-moyen",
     "description": "Boucherie de Curepipe : bœuf, merguez, brochettes marinées, livraison hebdomadaire dans le nord.",
     "filters": [
-      "boucheries"
+      "boucheries",
+      "boucheries-poissons"
     ],
     "hours": "Lun-Jeu 8h-17h30, Ven 8h-12h30 / 14h-17h30, Sam 8h-16h30, fermé dim",
     "googleMapsUrl": "https://maps.app.goo.gl/bewyUmFH7qSD4a6G9",
@@ -50611,14 +50602,14 @@
     "address": "Richmond Hill, Super U, Grand Baie",
     "phone": "+230 263 9842",
     "themes": [
-      "commerces-alimentaires",
-      "produits-bio"
+      "commerces-alimentaires"
     ],
     "zone": "nord",
     "priceRange": "prix-moyen",
     "description": "Magasin bio de Richmond Hill (Super U Grand Baie), fruits et légumes et produits d'hygiène bio, arrivage le jeudi matin. Autre adresse : Tamarin.",
     "filters": [
-      "epiceries-specialisees"
+      "epiceries-specialisees",
+      "produits-bio"
     ]
   },
   {
@@ -51722,14 +51713,14 @@
     "lat": -20.0943305,
     "lng": 57.7082382,
     "themes": [
-      "cafes-bars-glaciers",
-      "boulangeries-patisseries"
+      "cafes-bars-glaciers"
     ],
     "zone": "est",
     "hours": "Tous les jours 8h-20h",
     "description": "Café italien du Radisson Blu Azuri Village, réputé pour ses viennoiseries et pâtisseries maison exceptionnelles, ses pizzas au feu de bois, pâtes fraîches et cafés soignés.",
     "filters": [
-      "italien"
+      "italien",
+      "boulangeries-patisseries"
     ]
   },
   {
@@ -51829,15 +51820,14 @@
     "lat": -20.099693,
     "lng": 57.5767875,
     "themes": [
-      "commerces-alimentaires",
-      "boulangeries-patisseries",
-      "produits-francais"
+      "commerces-alimentaires"
     ],
     "zone": "nord",
     "description": "Boulangerie-pâtisserie de tradition française, pain au levain naturel, viennoiseries au beurre de Normandie, millefeuilles, macarons, gâteaux sur commande. Point de vente de la chaîne Pains et Moulins au Mahogany Shopping Promenade.",
     "filters": [
       "produits-francais",
-      "boulangeries"
+      "boulangeries",
+      "boulangeries-patisseries"
     ],
     "koteMorisComment": "Coup de cœur pour le pain complet et les parts de flan."
   },
@@ -51853,7 +51843,6 @@
     "lng": 57.5767875,
     "themes": [
       "commerces-alimentaires",
-      "epiceries-fines",
       "livraisons"
     ],
     "zone": "nord",
@@ -53401,12 +53390,12 @@
     "googleMapsUrl": "",
     "zone": "centre",
     "themes": [
-      "commerces-alimentaires",
-      "boulangeries-patisseries"
+      "commerces-alimentaires"
     ],
     "description": "Pâtisserie-salon de thé du centre de Quatre Bornes (face à l'arrêt Saint Jean du Metro Express) : pâtisserie française fine, gelato artisanal, petit-déjeuner et déjeuner, étage restaurant et espace lounge privatisable, gâteaux sur commande (anniversaires, mariages) et service traiteur.",
     "filters": [
-      "boulangeries"
+      "boulangeries",
+      "boulangeries-patisseries"
     ]
   },
   {
@@ -53419,12 +53408,12 @@
     "googleMapsUrl": "",
     "zone": "nord",
     "themes": [
-      "commerces-alimentaires",
-      "boulangeries-patisseries"
+      "commerces-alimentaires"
     ],
     "description": "Café-pâtisserie de Trou aux Biches (fiche à compléter : établissement récent, présent uniquement sur Instagram pour le moment).",
     "filters": [
-      "boulangeries"
+      "boulangeries",
+      "boulangeries-patisseries"
     ]
   },
   {
