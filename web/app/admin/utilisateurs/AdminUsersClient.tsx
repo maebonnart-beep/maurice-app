@@ -56,12 +56,10 @@ export function AdminUsersClient({ currentUserId }: { currentUserId: string }) {
 
   return (
     <div className="max-w-[720px] mx-auto px-4 py-8">
-      <div className="flex items-center justify-between gap-3 mb-4">
-        <h1 className="text-xl font-semibold">Utilisateurs</h1>
-        <Link href="/admin/seconde-main" className="text-sm text-primary underline underline-offset-2">
-          Modération annonces
-        </Link>
-      </div>
+      <Link href="/admin" className="text-sm text-primary underline underline-offset-2 mb-4 inline-block">
+        ← Admin
+      </Link>
+      <h1 className="text-xl font-semibold mb-4">Utilisateurs</h1>
 
       {error && <p className="text-red-600 text-sm mb-4">{error}</p>}
       {loading && <p className="text-sm text-gray-500">Chargement…</p>}

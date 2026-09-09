@@ -119,12 +119,10 @@ export function AdminSecondeMainClient() {
 
   return (
     <div className="max-w-[720px] mx-auto px-4 py-8">
-      <div className="flex items-center justify-between gap-3 mb-4">
-        <h1 className="text-xl font-semibold">Modération — Seconde main</h1>
-        <Link href="/admin/utilisateurs" className="text-sm text-primary underline underline-offset-2">
-          Utilisateurs
-        </Link>
-      </div>
+      <Link href="/admin" className="text-sm text-primary underline underline-offset-2 mb-4 inline-block">
+        ← Admin
+      </Link>
+      <h1 className="text-xl font-semibold mb-4">Modération — Seconde main</h1>
 
       <div className="flex gap-2 mb-4">
         <button
