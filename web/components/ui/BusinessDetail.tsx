@@ -100,11 +100,14 @@ export function BusinessDetail({
   business: b,
   onClose,
   hiddenKeys,
+  canSuggest,
 }: {
   business: Business;
   onClose: () => void;
   /** Clés de tags/facettes déjà impliquées par le filtre actif → masquées. */
   hiddenKeys?: Set<string>;
+  /** Boutons « Suggérer une photo/un avis » réservés aux contributeurs (community/admin). */
+  canSuggest?: boolean;
 }) {
   const accentColor = accentColorFor(b.badge, b.isAgency);
   const waNumber = whatsappNumber(b);
@@ -427,8 +430,12 @@ export function BusinessDetail({
               </p>
             )}
 
-            <SuggestPhotoButton businessId={b.id} businessName={displayName(b.name)} />
-            <SuggestCommentButton businessId={b.id} businessName={displayName(b.name)} />
+            {canSuggest && (
+              <>
+                <SuggestPhotoButton businessId={b.id} businessName={displayName(b.name)} />
+                <SuggestCommentButton businessId={b.id} businessName={displayName(b.name)} />
+              </>
+            )}
           </div>
         </div>
       </div>

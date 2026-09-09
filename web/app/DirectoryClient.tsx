@@ -3126,6 +3126,7 @@ export default function DirectoryClient({
           business={openBusiness}
           onClose={() => setOpenId(null)}
           hiddenKeys={ficheHiddenKeys}
+          canSuggest={account.role === "community" || account.role === "admin"}
         />
       )}
 
