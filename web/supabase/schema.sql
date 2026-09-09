@@ -30,12 +30,14 @@ create table business_claims (
   created_at timestamptz not null default now()
 );
 
--- Append-only log fed by lib/track.ts's trackEvent(). Aggregate with
+-- Append-only log fed by lib/track.ts's trackEvent() via /api/track. Aggregate with
 -- `select type, count(*) from business_events where business_id = $1 group by type`
 -- to produce the stats pitch ("3200 vues, 180 clics WhatsApp, 42 itinéraires").
+-- Pas de FK vers businesses (id) : les fiches vivent dans data/businesses.json, pas
+-- dans cette table (toujours vide) tant que la bascule vers Supabase n'a pas eu lieu.
 create table business_events (
   id bigint generated always as identity primary key,
-  business_id text not null references businesses (id),
+  business_id text not null,
   type text not null check (type in ('call', 'website', 'directions', 'whatsapp')),
   created_at timestamptz not null default now()
 );
