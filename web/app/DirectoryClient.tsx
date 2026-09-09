@@ -94,13 +94,18 @@ import {
   ShieldCheck,
   Package,
   Crown,
+  EnvelopeSimple,
 } from "@phosphor-icons/react";
 import type { Icon } from "@phosphor-icons/react";
 
-// Badges → facette « Sélection » (coups de cœur & recommandations), toutes rubriques.
+// Badges → facette « Sélection » (coups de cœur, recommandations & kids friendly),
+// toutes rubriques. « kids-friendly » n'est pas un badge à proprement parler
+// (c'est un thème dans b.themes) mais partage la même facette multi-sélection
+// pour permettre reco / kids friendly / les deux en un clic.
 const BADGE_META: { key: string; label: string; emoji: string }[] = [
   { key: "selection", label: "Sélection Koté Moris", emoji: "🏅" },
   { key: "partenaire", label: "Partenaire", emoji: "⭐" },
+  { key: "kids-friendly", label: "Kids friendly", emoji: "🧒" },
 ];
 
 // Accueil → bandeau « Seconde main » : visuels d'illustration (objets génériques, Pexels
@@ -819,7 +824,11 @@ export default function DirectoryClient({
         }
         // Prix et sélection/badge : facettes transversales, indépendantes de la rubrique.
         if (facetPrices.size > 0 && !(b.priceRange && facetPrices.has(b.priceRange))) return false;
-        if (facetBadges.size > 0 && !(b.badge && facetBadges.has(b.badge))) return false;
+        if (facetBadges.size > 0) {
+          const matchesBadge = !!b.badge && facetBadges.has(b.badge);
+          const matchesKids = facetBadges.has("kids-friendly") && (b.themes || []).includes("kids-friendly");
+          if (!matchesBadge && !matchesKids) return false;
+        }
         // Agenda : masque les événements ponctuels dont la date est passée.
         if (b.category === "agenda" && isPastEvent(b)) return false;
         if (!q) return true;
@@ -861,6 +870,9 @@ export default function DirectoryClient({
       });
       if (b.priceRange) price[b.priceRange] = (price[b.priceRange] || 0) + 1;
       if (b.badge) badge[b.badge] = (badge[b.badge] || 0) + 1;
+      if ((b.themes || []).includes("kids-friendly")) {
+        badge["kids-friendly"] = (badge["kids-friendly"] || 0) + 1;
+      }
     });
     return { perGroup, price, badge, total };
   }, [businesses, activeRubrique, activeZone, deferredQuery]);
@@ -966,6 +978,16 @@ export default function DirectoryClient({
 
   function selectFromCard(id: string) {
     setOpenId(id); // ouvre la vue détail plein écran (sans déplacer la carte)
+  }
+
+  const canSeeEventDetail = account.isPremium || account.role === "community" || account.role === "admin";
+
+  function openEvent(id: string) {
+    if (canSeeEventDetail) {
+      setOpenId(id);
+    } else {
+      window.location.href = "/mon-compte/upgrade";
+    }
   }
 
   const openBusiness = openId ? businesses.find((b) => b.id === openId) ?? null : null;
@@ -1917,7 +1939,7 @@ export default function DirectoryClient({
                               aria-hidden
                             />
                             <button
-                              onClick={() => { setHomeMode("categories"); setHomeCategory("agenda"); window.scrollTo({ top: 0, behavior: "smooth" }); }}
+                              onClick={() => openEvent(b.id)}
                               className="relative text-left w-full rounded-2xl overflow-hidden p-3 shadow-card active:scale-[.98] transition-transform"
                               style={{ background: `linear-gradient(135deg, color-mix(in srgb, ${eventColor} 20%, var(--surface)) 0%, var(--surface) 75%)`, border: "1px solid var(--border)" }}
                             >
@@ -2729,7 +2751,7 @@ export default function DirectoryClient({
                   </button>
                 )}
                 {account.loggedIn ? (
-                  <p className="px-4 py-3.5 text-[12px] text-muted leading-snug">
+                  <p className="px-4 py-3.5 text-[12px] text-muted leading-snug border-b border-border">
                     Vos favoris sont sauvegardés automatiquement sur votre compte.
                   </p>
                 ) : (
@@ -2744,7 +2766,7 @@ export default function DirectoryClient({
                     </button>
                     <button
                       onClick={() => importFileRef.current?.click()}
-                      className="w-full flex items-center gap-3 px-4 py-3.5 text-left active:bg-surface-2 transition-colors"
+                      className="w-full flex items-center gap-3 px-4 py-3.5 text-left active:bg-surface-2 transition-colors border-b border-border"
                     >
                       <UploadSimple size={18} weight="regular" className="text-muted" aria-hidden />
                       <span className="flex-1 text-[13.5px] text-ink">Restaurer une sauvegarde</span>
@@ -2762,6 +2784,13 @@ export default function DirectoryClient({
                     </button>
                   </>
                 )}
+                <a
+                  href="mailto:contact@kotemoris.com"
+                  className="w-full flex items-center gap-3 px-4 py-3.5 text-left active:bg-surface-2 transition-colors"
+                >
+                  <EnvelopeSimple size={18} weight="regular" className="text-muted" aria-hidden />
+                  <span className="flex-1 text-[13.5px] text-ink">Nous contacter</span>
+                </a>
               </div>
               {backupFeedback && (
                 <p className="text-center text-[12.5px] font-semibold text-primary-deep -mt-1.5">{backupFeedback}</p>
