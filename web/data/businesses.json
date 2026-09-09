@@ -23904,7 +23904,7 @@
   {
     "id": "zip-line-adventure",
     "name": "Zip Line Adventure",
-    "category": "vie-pratique",
+    "category": "sortir-decouvrir",
     "address": "G9WF+W9P, La Gaulette",
     "phone": "",
     "website": "",
@@ -23912,12 +23912,12 @@
     "lat": -20.452658,
     "lng": 57.373467,
     "themes": [
-      "taxis-vtc-location"
+      "parcs-activites-famille"
     ],
     "zone": "ouest",
-    "description": "Activité de tyrolienne (zip-line) — parcours dans les gorges de la Rivière Noire. (Fiche mal classée dans Taxis & transferts.)",
+    "description": "Activité de tyrolienne (zip-line) — parcours dans les gorges de la Rivière Noire.",
     "filters": [
-      "taxis-transferts"
+      "parcs-aventures"
     ]
   },
   {
