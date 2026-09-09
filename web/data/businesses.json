@@ -792,7 +792,9 @@
       "kids-friendly"
     ],
     "description": "Complexe de loisirs avec bowling, laser game, aires de jeux pour enfants, billards, jeux d'arcade et snack-bar ; formule prisée pour les anniversaires et sorties en famille.",
-    "zone": "centre"
+    "zone": "centre",
+    "lat": -20.2261417,
+    "lng": 57.4990057
   },
   {
     "id": "gravity-max-tribeca-mall",
@@ -812,7 +814,9 @@
     "zone": "centre",
     "filters": [
       "karting"
-    ]
+    ],
+    "lat": -20.2446376,
+    "lng": 57.4980787
   },
   {
     "id": "solar-sea-walk",
@@ -8030,7 +8034,9 @@
       "produits-locaux",
       "boulangeries",
       "boulangeries-patisseries"
-    ]
+    ],
+    "lat": -20.4257913,
+    "lng": 57.3915033
   },
   {
     "id": "mich-resto",
@@ -14732,7 +14738,9 @@
       "livraisons"
     ],
     "zone": "nord",
-    "description": "Traiteur et livraison de repas frais à domicile, disponible uniquement dans le nord de l'île (Grand Baie) : menu de la semaine (entrée/plat/dessert), sandwichs et extras à la carte, plats végétariens, salades et poke bowls. Très bien noté (100% recommandé, 9 avis)."
+    "description": "Traiteur et livraison de repas frais à domicile, disponible uniquement dans le nord de l'île (Grand Baie) : menu de la semaine (entrée/plat/dessert), sandwichs et extras à la carte, plats végétariens, salades et poke bowls. Très bien noté (100% recommandé, 9 avis).",
+    "lat": -20.0335986,
+    "lng": 57.5998951
   },
   {
     "id": "cook-by-elo",
@@ -31525,7 +31533,9 @@
     "zone": "centre",
     "filters": [
       "networking"
-    ]
+    ],
+    "lat": -20.1713362,
+    "lng": 57.485278
   },
   {
     "id": "british-council-mauritius",
@@ -31572,7 +31582,9 @@
     "zone": "centre",
     "filters": [
       "networking"
-    ]
+    ],
+    "lat": -20.2450272,
+    "lng": 57.4889132
   },
   {
     "id": "le-glacier-gourmand-mahogany",
@@ -36495,7 +36507,9 @@
     "filters": [
       "expatriation-visas",
       "ambassades-consulats"
-    ]
+    ],
+    "lat": -20.230882,
+    "lng": 57.5091136
   },
   {
     "id": "maurice-accueil",
@@ -38991,7 +39005,9 @@
     "description": "Près de 30 000 documents (livres, CD, DVD) consultables sur place ou empruntables, au sein de l'Institut Français de Maurice. Large choix francophone, ouverte à tous.",
     "filters": [
       "bibliotheque-mediatheque"
-    ]
+    ],
+    "lat": -20.2426734,
+    "lng": 57.4783975
   },
   {
     "id": "bibliotheque-carnegie-curepipe",
@@ -39008,7 +39024,9 @@
     "description": "Bâtiment néoclassique construit en 1917 grâce à la fondation Carnegie, ouvert au public depuis 1920. Plus de 75 000 documents dont 15 000 ouvrages sur les îles de l'océan Indien, collections rares et manuscrits historiques (lettres de Mahé de Labourdonnais, Matthew Flinders). Gérée par la municipalité de Curepipe.",
     "filters": [
       "bibliotheque-mediatheque"
-    ]
+    ],
+    "lat": -20.3191152,
+    "lng": 57.5261284
   },
   {
     "id": "national-library-mauritius",
@@ -39026,7 +39044,9 @@
     "description": "Bibliothèque nationale ouverte au public depuis 2000, plus de 230 000 documents : livres, journaux, cartes et archives historiques du pays.",
     "filters": [
       "bibliotheque-mediatheque"
-    ]
+    ],
+    "lat": -20.1644564,
+    "lng": 57.5006387
   },
   {
     "id": "world-of-seashells-bel-ombre",
@@ -39295,7 +39315,9 @@
       "cinemas"
     ],
     "zone": "est",
-    "description": "Cinéma de 3 salles (deux de 128 places, une de 224 places) ouvert en 2016 dans le complexe Super U de Flacq, seul cinéma de l'Est de l'île."
+    "description": "Cinéma de 3 salles (deux de 128 places, une de 224 places) ouvert en 2016 dans le complexe Super U de Flacq, seul cinéma de l'Est de l'île.",
+    "lat": -20.1847862,
+    "lng": 57.7230666
   },
   {
     "id": "mcine-la-croisette",
@@ -39359,7 +39381,9 @@
       "cinemas"
     ],
     "zone": "centre",
-    "description": "Une des plus anciennes salles de cinéma de Plaine Wilhems, fermée en 1988 puis rénovée et rouverte en 2013, climatisée et équipée d'un système audiovisuel numérique. Programmation essentiellement bollywoodienne."
+    "description": "Une des plus anciennes salles de cinéma de Plaine Wilhems, fermée en 1988 puis rénovée et rouverte en 2013, climatisée et équipée d'un système audiovisuel numérique. Programmation essentiellement bollywoodienne.",
+    "lat": -20.2978555,
+    "lng": 57.5203344
   },
   {
     "id": "cine-metropolitan-rose-belle",
@@ -45305,7 +45329,9 @@
       "onglerie-manucure"
     ],
     "hours": "Lun-Sam 9h-17h, fermé dim",
-    "zone": "nord"
+    "zone": "nord",
+    "lat": -20.010574,
+    "lng": 57.5946851
   },
   {
     "id": "nails-bar-grand-baie-soins",
@@ -45321,7 +45347,9 @@
     "filters": [
       "onglerie-manucure"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "lat": -20.0167485,
+    "lng": 57.5836005
   },
   {
     "id": "arshad-barbershop-soins",
@@ -45496,7 +45524,9 @@
       "yoga-bien-etre"
     ],
     "description": "Cabinet d'ostéopathie de Matthieu Gossart et Capucine Motte (ostéopathes D.O.) : douleurs musculo-squelettiques, du lundi au vendredi sur rendez-vous.",
-    "zone": "ouest"
+    "zone": "ouest",
+    "lat": -20.3362351,
+    "lng": 57.3689767
   },
   {
     "id": "l-l-osteopathie-soins",
@@ -45510,7 +45540,9 @@
     ],
     "description": "Cabinet d'ostéopathie tenu par Romain Lauri et Amandine Leca (diplômés de l'Institut Supérieur d'Ostéopathie d'Aix-en-Provence). Sur rendez-vous.",
     "hours": "Lun-Ven 8h-17h, Sam 8h-12h, fermé dim",
-    "zone": "nord"
+    "zone": "nord",
+    "lat": -20.0346963,
+    "lng": 57.6256458
   },
   {
     "id": "bosch-service-uti",
@@ -46078,7 +46110,9 @@
     "filters": [
       "controle-technique"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "lat": -20.3248675,
+    "lng": 57.5366532
   },
   {
     "id": "vehicle-inspection-centre-plaine-lauzun-uti",
@@ -46129,7 +46163,9 @@
     "filters": [
       "notaires"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "lat": -20.1610144,
+    "lng": 57.5087231
   },
   {
     "id": "etude-me-dominique-lamusse-uti",
@@ -46145,7 +46181,9 @@
     "filters": [
       "notaires"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "lat": -20.1640333,
+    "lng": 57.5052899
   },
   {
     "id": "etude-didier-maigrot-uti",
@@ -46237,7 +46275,9 @@
     "filters": [
       "avocats"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "lat": -20.241678,
+    "lng": 57.4959212
   },
   {
     "id": "juristconsult-chambers-uti",
@@ -46253,7 +46293,9 @@
     "filters": [
       "avocats"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "lat": -20.242504,
+    "lng": 57.487811
   },
   {
     "id": "bdo-mauritius-uti",
@@ -46285,7 +46327,9 @@
     "filters": [
       "comptables"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "lat": -20.2413478,
+    "lng": 57.4903634
   },
   {
     "id": "kpmg-mauritius-uti",
@@ -46320,7 +46364,9 @@
     "filters": [
       "comptables"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "lat": -20.2300293,
+    "lng": 57.5082491
   },
   {
     "id": "deloitte-mauritius-uti",
@@ -46355,7 +46401,9 @@
     "filters": [
       "comptables"
     ],
-    "zone": "centre"
+    "zone": "centre",
+    "lat": -20.2453294,
+    "lng": 57.4900344
   },
   {
     "id": "cfao-conc",
@@ -47452,7 +47500,9 @@
       "kids-friendly"
     ],
     "description": "Laser game outdoor près de Grand Baie avec vue sur les îles du Nord. Accessible dès 7-8 ans, tous les jours sauf le lundi ; tournois mensuels (Gang Zone Cup).",
-    "zone": "nord"
+    "zone": "nord",
+    "lat": -20.0385173,
+    "lng": 57.6240769
   },
   {
     "id": "le-bocage-international-school-edu",
@@ -47666,7 +47716,9 @@
       "cours-de-langues"
     ],
     "providerType": "organisme",
-    "description": "Centre de soutien scolaire à Grand Baie : aide aux devoirs, préparation aux examens et cours de langue, de la maternelle au lycée."
+    "description": "Centre de soutien scolaire à Grand Baie : aide aux devoirs, préparation aux examens et cours de langue, de la maternelle au lycée.",
+    "lat": -20.0123864,
+    "lng": 57.5929397
   },
   {
     "id": "youandplay-app",
@@ -49844,7 +49896,9 @@
       "kids-friendly"
     ],
     "zone": "nord",
-    "description": "Espace boisé de plus de 108 hectares, aussi appelé Forêt de Belle-Vue, abritant le seul sentier nature officiellement balisé du nord de l'île (désigné en 2022) et les vestiges de l'ancienne sucrerie Belle Vue Robillard. Deux parcours au choix : une boucle de 1,5 km adaptée aux enfants et un circuit plus long de 3 à 7 km à travers la forêt. Sentiers ombragés, espaces pique-nique, très prisés des joggeurs grâce à la proximité de Grand-Baie."
+    "description": "Espace boisé de plus de 108 hectares, aussi appelé Forêt de Belle-Vue, abritant le seul sentier nature officiellement balisé du nord de l'île (désigné en 2022) et les vestiges de l'ancienne sucrerie Belle Vue Robillard. Deux parcours au choix : une boucle de 1,5 km adaptée aux enfants et un circuit plus long de 3 à 7 km à travers la forêt. Sentiers ombragés, espaces pique-nique, très prisés des joggeurs grâce à la proximité de Grand-Baie.",
+    "lat": -20.0359298,
+    "lng": 57.6176995
   },
   {
     "id": "butte-a-l-herbe-calodyne",
@@ -49894,7 +49948,9 @@
     "zone": "nord",
     "description": "Ferme régénérative née pendant le confinement Covid, fondée par Jérôme et Nathalie sur une ancienne terre de canne à sucre à Bois Rouge. Fruits, légumes, herbes et œufs cultivés sans produits chimiques, à cueillir soi-même sur place. Visite guidée le 1er dimanche du mois (don libre selon votre appréciation).",
     "badge": "selection",
-    "koteMorisComment": "Très belle découverte nichée au cœur de Bois Rouge, un coin de verdure luxuriant où cohabitent arbres fruitiers, aromates, plantes médicinales, potager et poules, le tout avec beaucoup de soin. On peut ramasser soi-même fruits, légumes et aromates, pesés puis payés en fin de récolte (prix très doux, encore plus pour ce qui est cultivé sans pesticides). Le jardin est entretenu par Nathalie et Jérôme, aidés de volontaires et d'un salarié permanent, qui organisent aussi une visite guidée de la ferme chaque 1er dimanche du mois : leur récit est passionnant et l'accueil très généreux, jusqu'à la visite de leur tiny house."
+    "koteMorisComment": "Très belle découverte nichée au cœur de Bois Rouge, un coin de verdure luxuriant où cohabitent arbres fruitiers, aromates, plantes médicinales, potager et poules, le tout avec beaucoup de soin. On peut ramasser soi-même fruits, légumes et aromates, pesés puis payés en fin de récolte (prix très doux, encore plus pour ce qui est cultivé sans pesticides). Le jardin est entretenu par Nathalie et Jérôme, aidés de volontaires et d'un salarié permanent, qui organisent aussi une visite guidée de la ferme chaque 1er dimanche du mois : leur récit est passionnant et l'accueil très généreux, jusqu'à la visite de leur tiny house.",
+    "lat": -20.0881843,
+    "lng": 57.5895173
   },
   {
     "id": "food-tours-mauritius",
@@ -49988,7 +50044,9 @@
     "description": "Confiserie et chocolaterie mauricienne depuis 1992, spécialiste des dragées pour baptêmes, mariages et naissances.",
     "filters": [
       "epiceries-specialisees"
-    ]
+    ],
+    "lat": -20.2581288,
+    "lng": 57.4909589
   },
   {
     "id": "cafe-muller-grand-baie",
@@ -50004,7 +50062,9 @@
     "description": "Café-restaurant de style allemand niché dans un jardin coloré, réputé pour ses gâteaux, crêpes, cafés et son ambiance conviviale.",
     "filters": [
       "cafes-terrasses"
-    ]
+    ],
+    "lat": -20.0160285,
+    "lng": 57.5757312
   },
   {
     "id": "jl-cuisine-passion",
@@ -50053,7 +50113,9 @@
     "description": "Beach club face au lagon de Péreybère avec terrasse pieds dans le sable et roof terrace, petit-déjeuner face à la mer et brunch du dimanche réputé.",
     "filters": [
       "bars"
-    ]
+    ],
+    "lat": -19.9926834,
+    "lng": 57.5922945
   },
   {
     "id": "bloom-pereybere",
@@ -50071,7 +50133,9 @@
       "vegetarien",
       "cafes-terrasses",
       "kids-friendly"
-    ]
+    ],
+    "lat": -19.9966835,
+    "lng": 57.5874228
   },
   {
     "id": "william-watt-magicien",
@@ -50111,7 +50175,9 @@
     "description": "Pochettes surprises pour enfants à Noël et petits gadgets, vente sur le trottoir. Second numéro : +230 240 4750.",
     "filters": [
       "epiceries-specialisees"
-    ]
+    ],
+    "lat": -20.1609486,
+    "lng": 57.5057979
   },
   {
     "id": "rashid-hobass-rose-hill",
@@ -50135,7 +50201,9 @@
       "telecom-internet"
     ],
     "zone": "centre",
-    "description": "Location de vaisselle pour événements."
+    "description": "Location de vaisselle pour événements.",
+    "lat": -20.3128037,
+    "lng": 57.5266269
   },
   {
     "id": "sanjeev-traiteur-grand-baie",
@@ -50245,7 +50313,9 @@
     "filters": [
       "mauricienne"
     ],
-    "hours": "Tous les jours 12h-14h30 & 18h30-1h"
+    "hours": "Tous les jours 12h-14h30 & 18h30-1h",
+    "lat": -20.0135938,
+    "lng": 57.6187327
   },
   {
     "id": "yes-food-moris",
@@ -50261,7 +50331,9 @@
     "description": "Petite cantine mauricienne au fond du couloir à Grand Baie, réputée pour sa file d'attente.",
     "filters": [
       "mauricienne"
-    ]
+    ],
+    "lat": -20.0199994,
+    "lng": 57.5808867
   },
   {
     "id": "snack-deluxe-trou-aux-biches",
@@ -50278,7 +50350,9 @@
     "filters": [
       "mauricienne",
       "snacks-plage"
-    ]
+    ],
+    "lat": -20.0442893,
+    "lng": 57.5521084
   },
   {
     "id": "chun-po-grand-baie",
@@ -50294,7 +50368,9 @@
     "description": "Cuisine chinoise, bouillon meefon aux crevettes et canard laqué à prix canon, plats à emporter.",
     "filters": [
       "asiatique"
-    ]
+    ],
+    "lat": -20.0151832,
+    "lng": 57.5810727
   },
   {
     "id": "dalon-grand-baie",
@@ -50310,7 +50386,9 @@
     "description": "Cuisine mauricienne revisitée, plats originaux et succulents, fermé le lundi (dîner uniquement le dimanche).",
     "filters": [
       "mauricienne"
-    ]
+    ],
+    "lat": -20.0137439,
+    "lng": 57.5882632
   },
   {
     "id": "1974-da-antonio-e-giulia",
@@ -50344,7 +50422,9 @@
     "filters": [
       "mauricienne"
     ],
-    "hours": "Lun 18h-22h, Mar-Sam 12h-15h & 18h-22h30, Dim 12h-15h"
+    "hours": "Lun 18h-22h, Mar-Sam 12h-15h & 18h-22h30, Dim 12h-15h",
+    "lat": -20.0100163,
+    "lng": 57.5626567
   },
   {
     "id": "blacksheep-ebene",
@@ -50361,7 +50441,9 @@
     "filters": [
       "grillades"
     ],
-    "hours": "Lun-Sam 10h-14h & 17h-21h, fermé dim"
+    "hours": "Lun-Sam 10h-14h & 17h-21h, fermé dim",
+    "lat": -20.2412811,
+    "lng": 57.4904478
   },
   {
     "id": "cyclone-cafe-ebene",
@@ -50378,7 +50460,9 @@
     "filters": [
       "europeenne",
       "cafes-terrasses"
-    ]
+    ],
+    "lat": -20.2424526,
+    "lng": 57.4879521
   },
   {
     "id": "la-rose-de-damas-bagatelle",
@@ -50392,7 +50476,9 @@
     "zone": "centre",
     "priceRange": "prix-moyen",
     "description": "Restaurant marocain du Mall de Bagatelle.",
-    "hours": "Lun-Jeu 9h30-20h30, Ven-Sam 9h30-22h, Dim & jours fériés 9h30-15h"
+    "hours": "Lun-Jeu 9h30-20h30, Ven-Sam 9h30-22h, Dim & jours fériés 9h30-15h",
+    "lat": -20.2245789,
+    "lng": 57.4963666
   },
   {
     "id": "wat-cha-ri",
@@ -50408,7 +50494,9 @@
     "description": "Restaurant de fusion asiatique à Grand Baie.",
     "filters": [
       "asiatique"
-    ]
+    ],
+    "lat": -20.0189305,
+    "lng": 57.5843016
   },
   {
     "id": "momo-grand-baie",
@@ -50424,7 +50512,9 @@
     "description": "Restaurant népalais de Grand Baie, une véritable découverte gastronomique avec bons conseils du chef.",
     "filters": [
       "asiatique"
-    ]
+    ],
+    "lat": -20.0262848,
+    "lng": 57.5929516
   },
   {
     "id": "mr-berti-grand-baie",
@@ -50440,7 +50530,9 @@
     "description": "Pizzeria de Grand Baie.",
     "filters": [
       "italien"
-    ]
+    ],
+    "lat": -20.0065425,
+    "lng": 57.5819886
   },
   {
     "id": "la-golosona-triolet",
@@ -50457,7 +50549,9 @@
     "filters": [
       "italien"
     ],
-    "hours": "Mar-Dim 11h30-14h & 17h30-21h30, fermé lun"
+    "hours": "Mar-Dim 11h30-14h & 17h30-21h30, fermé lun",
+    "lat": -20.0410428,
+    "lng": 57.558745
   },
   {
     "id": "red-grand-baie",
@@ -50475,7 +50569,9 @@
     "description": "Bistro sympa et raffiné sur l'esplanade de La Croisette à Grand Baie, carte de vins et viandes réputée, ouvert tous les jours.",
     "filters": [
       "bars"
-    ]
+    ],
+    "lat": -20.022258,
+    "lng": 57.578756
   },
   {
     "id": "restaurant-souvenir-trou-aux-biches",
@@ -50492,7 +50588,9 @@
     "filters": [
       "mauricienne"
     ],
-    "hours": "Ven-Mer 9h-23h, fermé jeu"
+    "hours": "Ven-Mer 9h-23h, fermé jeu",
+    "lat": -20.0358431,
+    "lng": 57.5457175
   },
   {
     "id": "deja-vu-grand-baie",
@@ -50508,7 +50606,9 @@
     "description": "Discothèque de Grand Baie avec deux pistes de danse (rétro et actuelle).",
     "filters": [
       "bars"
-    ]
+    ],
+    "lat": -20.0060831,
+    "lng": 57.5818197
   },
   {
     "id": "le-barevoo-grand-baie",
@@ -50524,7 +50624,9 @@
     "description": "Boîte de nuit de Grand Baie, plutôt fréquentée par les jeunes, ouvre à 22h.",
     "filters": [
       "bars"
-    ]
+    ],
+    "lat": -20.0067529,
+    "lng": 57.5821314
   },
   {
     "id": "blue-note-jazz-blues-club",
@@ -50540,7 +50642,9 @@
     "description": "L'une des adresses les plus anciennes de la baie pour les amateurs de jazz et de blues.",
     "filters": [
       "bars"
-    ]
+    ],
+    "lat": -20.0098028,
+    "lng": 57.5831298
   },
   {
     "id": "happy-rajah-grand-baie-cdv",
@@ -50557,7 +50661,9 @@
     "filters": [
       "indienne"
     ],
-    "hours": "Tlj 11h30-14h & 18h-21h30"
+    "hours": "Tlj 11h30-14h & 18h-21h30",
+    "lat": -20.013385,
+    "lng": 57.5866879
   },
   {
     "id": "herboristerie-feuilles-et-fleurs",
@@ -50573,7 +50679,9 @@
     "description": "Herboristerie avec visite du jardin, baumes et confitures maison, atelier enfants. Vente en ligne sur feuilles-et-fleurs.com.",
     "filters": [
       "epiceries-specialisees"
-    ]
+    ],
+    "lat": -20.0934439,
+    "lng": 57.6781274
   },
   {
     "id": "rocher-coco-port-louis",
@@ -50592,7 +50700,9 @@
       "cafes-terrasses",
       "boulangeries",
       "boulangeries-patisseries"
-    ]
+    ],
+    "lat": -20.1613993,
+    "lng": 57.4982635
   },
   {
     "id": "kakao-ti-gerard",
@@ -50608,7 +50718,9 @@
     "description": "Plantation-chocolaterie de Sébastopol, visite possible, chocolat traditionnel.",
     "filters": [
       "epiceries-specialisees"
-    ]
+    ],
+    "lat": -20.2897266,
+    "lng": 57.701137
   },
   {
     "id": "le-pavillon-bleu-grand-baie",
@@ -50624,7 +50736,9 @@
     "description": "Magasin d'arts de la table et importateur, spécialité de cousins de pâte d'amande recouverts de chocolat au curaçao pour Noël et Pâques.",
     "filters": [
       "epiceries-specialisees"
-    ]
+    ],
+    "lat": -20.014293,
+    "lng": 57.5876298
   },
   {
     "id": "1952-eastern-trading",
@@ -50637,7 +50751,9 @@
     ],
     "zone": "nord",
     "priceRange": "prix-moyen",
-    "description": "Caviste de Péreybère, belle sélection de rosés et nouveautés."
+    "description": "Caviste de Péreybère, belle sélection de rosés et nouveautés.",
+    "lat": -20.0014529,
+    "lng": 57.5826877
   },
   {
     "id": "lartigiano-mont-choisy",
@@ -50654,7 +50770,9 @@
     "filters": [
       "epiceries-specialisees",
       "epiceries-fines"
-    ]
+    ],
+    "lat": -20.0246205,
+    "lng": 57.5768549
   },
   {
     "id": "lepicerie-route-royale",
@@ -50671,7 +50789,9 @@
     "filters": [
       "epiceries-specialisees",
       "epiceries-fines"
-    ]
+    ],
+    "lat": -20.0070035,
+    "lng": 57.5820924
   },
   {
     "id": "common-dream-goodlands",
@@ -50687,7 +50807,9 @@
     "description": "Grossiste de charcuterie et fromages à Goodlands, vend aussi aux particuliers.",
     "filters": [
       "epiceries-specialisees"
-    ]
+    ],
+    "lat": -20.0391366,
+    "lng": 57.6557001
   },
   {
     "id": "la-bovida-curepipe",
@@ -50739,7 +50861,9 @@
     "description": "Caviste et café du Mont Choisy Mall, vins à prix abordable, thé Damann, machine à café italien. Autre adresse : St Jean Motorway, Phoenix.",
     "filters": [
       "cafes-terrasses"
-    ]
+    ],
+    "lat": -20.024812,
+    "lng": 57.5764597
   },
   {
     "id": "la-vie-claire-grand-baie",
@@ -50756,7 +50880,9 @@
     "filters": [
       "epiceries-specialisees",
       "produits-bio"
-    ]
+    ],
+    "lat": -20.0132937,
+    "lng": 57.5883584
   },
   {
     "id": "maison-sacha-pointe-aux-canonniers",
@@ -50772,7 +50898,9 @@
     "description": "Antenne nord du salon Maison Sacha, coiffure et soins sur rendez-vous.",
     "filters": [
       "coiffeurs"
-    ]
+    ],
+    "lat": -20.0081782,
+    "lng": 57.5597004
   },
   {
     "id": "cathleen-coiffure-trou-aux-biches",
@@ -50802,7 +50930,9 @@
     "description": "Salon de coiffure apprécié des habitants de l'est de l'île.",
     "filters": [
       "coiffeurs"
-    ]
+    ],
+    "lat": -20.113642,
+    "lng": 57.7195295
   },
   {
     "id": "sohaib-barbier-grand-baie",
@@ -50818,7 +50948,9 @@
     "description": "Barbier réputé de la route Royale à Grand Baie.",
     "filters": [
       "barbiers"
-    ]
+    ],
+    "lat": -20.0144086,
+    "lng": 57.5716329
   },
   {
     "id": "barbier-moullan-grand-gaube",
@@ -50834,7 +50966,9 @@
     "description": "Barbier du spa de l'hôtel LUX* Grand Gaube.",
     "filters": [
       "barbiers"
-    ]
+    ],
+    "lat": -20.0023431,
+    "lng": 57.6597865
   },
   {
     "id": "brenda-coiffure-grand-baie",
@@ -50874,7 +51008,9 @@
       "spa-instituts-massages"
     ],
     "zone": "nord",
-    "description": "Salon tenu par Anju, massages mêlant différentes techniques dont des points d'acupression sur-mesure."
+    "description": "Salon tenu par Anju, massages mêlant différentes techniques dont des points d'acupression sur-mesure.",
+    "lat": -20.0393775,
+    "lng": 57.5484651
   },
   {
     "id": "energy-wellness-center-endemika",
@@ -50888,7 +51024,9 @@
     ],
     "zone": "nord",
     "hours": "Lu-ve 9h30-18h",
-    "description": "Réflexologie, drainage lymphatique, madérothérapie."
+    "description": "Réflexologie, drainage lymphatique, madérothérapie.",
+    "lat": -20.0349275,
+    "lng": 57.626133
   },
   {
     "id": "pretty-by-me-mylene",
@@ -50936,7 +51074,9 @@
     "description": "Plus de 150 parfums créés et fabriqués en France.",
     "filters": [
       "beaute"
-    ]
+    ],
+    "lat": -20.0170906,
+    "lng": 57.5828231
   },
   {
     "id": "audere-beaute-grand-baie",
@@ -50952,7 +51092,9 @@
     "description": "Marques internationales de soins de la peau (COSRX, Pixi, Huxley, Patchology) avec conseils personnalisés.",
     "filters": [
       "beaute"
-    ]
+    ],
+    "lat": -20.0165855,
+    "lng": 57.5829514
   },
   {
     "id": "phydra-grand-baie",
@@ -50968,7 +51110,9 @@
     "description": "Marque mauricienne de cosmétiques pour visage et corps à prix abordables.",
     "filters": [
       "beaute"
-    ]
+    ],
+    "lat": -20.0215418,
+    "lng": 57.5789103
   },
   {
     "id": "patrick-tattoo-shop-grand-baie",
@@ -50983,7 +51127,9 @@
     "description": "Référence tatouage dans le nord de l'île.",
     "filters": [
       "tatouage-piercing"
-    ]
+    ],
+    "lat": -20.0106957,
+    "lng": 57.585062
   },
   {
     "id": "hobby-world-hassamal-beau-plan",
@@ -50999,7 +51145,9 @@
     "description": "Jeux de cartes et de société, modélisme, peinture, confection.",
     "filters": [
       "jeux"
-    ]
+    ],
+    "lat": -20.0992326,
+    "lng": 57.5768495
   },
   {
     "id": "meem-grand-baie",
@@ -51015,7 +51163,9 @@
     "description": "Grande gamme de jouets de marques européennes, notamment pour les tout-petits.",
     "filters": [
       "jeux"
-    ]
+    ],
+    "lat": -20.0228809,
+    "lng": 57.5791416
   },
   {
     "id": "le-sortilege-du-shaman-grand-baie",
@@ -51031,7 +51181,9 @@
     "description": "Large choix de jeux de cartes et de société, équipe qui explique volontiers les règles.",
     "filters": [
       "jeux"
-    ]
+    ],
+    "lat": -20.0181315,
+    "lng": 57.5857836
   },
   {
     "id": "damoo-sounds-music-port-louis",
@@ -51047,7 +51199,9 @@
     "description": "Instruments de musique et accessoires pour artistes en herbe et mélomanes.",
     "filters": [
       "jeux"
-    ]
+    ],
+    "lat": -20.163028,
+    "lng": 57.5016418
   },
   {
     "id": "hassamal-musicals-curepipe",
@@ -51063,7 +51217,9 @@
     "description": "Instruments de musique, pièces détachées et réparations.",
     "filters": [
       "jeux"
-    ]
+    ],
+    "lat": -20.3161071,
+    "lng": 57.5230686
   },
   {
     "id": "whimzical-books-grand-baie",
@@ -51078,7 +51234,9 @@
     "description": "Librairie récente avec large choix de livres en anglais et en français.",
     "filters": [
       "livres"
-    ]
+    ],
+    "lat": -20.0111554,
+    "lng": 57.5644082
   },
   {
     "id": "librairie-le-printemps-port-louis",
@@ -51095,7 +51253,9 @@
     "description": "L'une des librairies les moins chères de Port-Louis.",
     "filters": [
       "livres"
-    ]
+    ],
+    "lat": -20.1622448,
+    "lng": 57.5067188
   },
   {
     "id": "bibliotheque-grand-baie",
@@ -51111,7 +51271,9 @@
     "description": "Bibliothèque publique, adhésion annuelle modique. Livres en français, anglais et créole, emprunt possible.",
     "filters": [
       "bibliotheque-mediatheque"
-    ]
+    ],
+    "lat": -20.0147553,
+    "lng": 57.5834918
   },
   {
     "id": "bureau-vallee-papeterie-grand-baie",
@@ -51126,7 +51288,9 @@
     "description": "Fournitures de bureau et photocopies.",
     "filters": [
       "livres"
-    ]
+    ],
+    "lat": -20.0229906,
+    "lng": 57.57865
   },
   {
     "id": "le-point-stationery-port-louis",
@@ -51141,7 +51305,9 @@
     "description": "Papeterie de Port-Louis, notamment pour les cartouches d'imprimantes HP introuvables dans le nord.",
     "filters": [
       "livres"
-    ]
+    ],
+    "lat": -20.1639,
+    "lng": 57.5010605
   },
   {
     "id": "sunset-boulevard-mapou",
@@ -51170,7 +51336,9 @@
       "auto-garages-concessionnaires"
     ],
     "zone": "nord",
-    "description": "Concessionnaire moto Royal Enfield à Grand Baie : entretien, accessoires et organisation de sorties le week-end."
+    "description": "Concessionnaire moto Royal Enfield à Grand Baie : entretien, accessoires et organisation de sorties le week-end.",
+    "lat": -20.0122959,
+    "lng": 57.5931083
   },
   {
     "id": "emcar-forbach",
@@ -51182,7 +51350,9 @@
       "auto-garages-concessionnaires"
     ],
     "zone": "nord",
-    "description": "Concessionnaire de motos et scooters Suzuki et Kymco à Forbach."
+    "description": "Concessionnaire de motos et scooters Suzuki et Kymco à Forbach.",
+    "lat": -20.0578407,
+    "lng": 57.6139948
   },
   {
     "id": "honda-motos-port-louis",
@@ -51194,7 +51364,9 @@
       "auto-garages-concessionnaires"
     ],
     "zone": "centre",
-    "description": "Concessionnaire moto Honda à Port-Louis."
+    "description": "Concessionnaire moto Honda à Port-Louis.",
+    "lat": -20.1660711,
+    "lng": 57.4897287
   },
   {
     "id": "ruben-racing-port-louis",
@@ -51206,7 +51378,9 @@
       "auto-garages-concessionnaires"
     ],
     "zone": "centre",
-    "description": "Concessionnaire moto Kawasaki, Beta et scooter Peugeot à Port-Louis."
+    "description": "Concessionnaire moto Kawasaki, Beta et scooter Peugeot à Port-Louis.",
+    "lat": -20.1428758,
+    "lng": 57.5122197
   },
   {
     "id": "revival-customs-classics-arsenal",
@@ -51218,7 +51392,9 @@
       "auto-garages-concessionnaires"
     ],
     "zone": "nord",
-    "description": "Motos d'occasion, principalement Harley Davidson, customisées ou non, à Arsenal."
+    "description": "Motos d'occasion, principalement Harley Davidson, customisées ou non, à Arsenal.",
+    "lat": -20.1142208,
+    "lng": 57.5362097
   },
   {
     "id": "holiscoot-grand-baie",
@@ -51230,7 +51406,9 @@
       "taxis-vtc-location"
     ],
     "zone": "nord",
-    "description": "Location de motos et scooters à Grand Baie, même propriétaire que le concessionnaire Royal Enfield."
+    "description": "Location de motos et scooters à Grand Baie, même propriétaire que le concessionnaire Royal Enfield.",
+    "lat": -20.0157572,
+    "lng": 57.5697763
   },
   {
     "id": "a-vicomte-scooter-rental-trou-aux-biches",
@@ -51242,7 +51420,9 @@
       "taxis-vtc-location"
     ],
     "zone": "nord",
-    "description": "Location de scooters à Trou aux Biches."
+    "description": "Location de scooters à Trou aux Biches.",
+    "lat": -20.0368605,
+    "lng": 57.5465299
   },
   {
     "id": "klokan-rental-flic-en-flac",
@@ -51254,7 +51434,9 @@
       "taxis-vtc-location"
     ],
     "zone": "ouest",
-    "description": "Location de scooters à Flic en Flac."
+    "description": "Location de scooters à Flic en Flac.",
+    "lat": -20.2762774,
+    "lng": 57.3762637
   },
   {
     "id": "akd-location-aeroport",
@@ -51266,7 +51448,9 @@
       "taxis-vtc-location"
     ],
     "zone": "sud",
-    "description": "Location de motos et scooters, livraison gratuite possible à l'aéroport."
+    "description": "Location de motos et scooters, livraison gratuite possible à l'aéroport.",
+    "lat": -20.4340926,
+    "lng": 57.6780157
   },
   {
     "id": "garage-ravin-terre-rouge",
@@ -51278,7 +51462,9 @@
       "auto-garages-concessionnaires"
     ],
     "zone": "nord",
-    "description": "Garage automobile agréé Mauritius Union Insurance à Terre Rouge."
+    "description": "Garage automobile agréé Mauritius Union Insurance à Terre Rouge.",
+    "lat": -20.1267781,
+    "lng": 57.5452616
   },
   {
     "id": "garage-du-nord-the-vale",
@@ -51302,7 +51488,9 @@
       "auto-garages-concessionnaires"
     ],
     "zone": "est",
-    "description": "Garage spécialiste des marques japonaises à Piton, se déplace. Second numéro : +230 5259 7060."
+    "description": "Garage spécialiste des marques japonaises à Piton, se déplace. Second numéro : +230 5259 7060.",
+    "lat": -20.085485,
+    "lng": 57.6475385
   },
   {
     "id": "garage-high-tech-pamplemousses",
@@ -51326,7 +51514,9 @@
       "auto-garages-concessionnaires"
     ],
     "zone": "nord",
-    "description": "Garage automobile de Triolet (Abhishek). Second numéro : +230 265 7188."
+    "description": "Garage automobile de Triolet (Abhishek). Second numéro : +230 265 7188.",
+    "lat": -20.0415917,
+    "lng": 57.5491096
   },
   {
     "id": "quick-lane-riche-terre",
@@ -51350,7 +51540,9 @@
       "auto-garages-concessionnaires"
     ],
     "zone": "nord",
-    "description": "Vente de pièces détachées automobiles, présent aussi à Goodlands, Port-Louis et Flacq."
+    "description": "Vente de pièces détachées automobiles, présent aussi à Goodlands, Port-Louis et Flacq.",
+    "lat": -20.0483705,
+    "lng": 57.5545758
   },
   {
     "id": "eshan-towing",
@@ -51373,7 +51565,9 @@
       "auto-garages-concessionnaires"
     ],
     "zone": "nord",
-    "description": "Gros stock de pneus et de jantes, professionnels."
+    "description": "Gros stock de pneus et de jantes, professionnels.",
+    "lat": -20.0675837,
+    "lng": 57.635385
   },
   {
     "id": "triolet-tyre-centre",
@@ -51385,7 +51579,9 @@
       "auto-garages-concessionnaires"
     ],
     "zone": "nord",
-    "description": "Centre de pneus à l'entrée de Triolet."
+    "description": "Centre de pneus à l'entrée de Triolet.",
+    "lat": -20.0430492,
+    "lng": 57.5573191
   },
   {
     "id": "tyre-world-riche-terre",
@@ -51397,7 +51593,9 @@
       "auto-garages-concessionnaires"
     ],
     "zone": "nord",
-    "description": "Pneus, notamment la marque Westlake, réputée durer presque aussi longtemps que les autres au quart du prix."
+    "description": "Pneus, notamment la marque Westlake, réputée durer presque aussi longtemps que les autres au quart du prix.",
+    "lat": -20.1351337,
+    "lng": 57.5187416
   },
   {
     "id": "bridgestone-tyre-centre-port-louis",
@@ -51409,7 +51607,9 @@
       "auto-garages-concessionnaires"
     ],
     "zone": "centre",
-    "description": "Centre de pneus Bridgestone à Port-Louis."
+    "description": "Centre de pneus Bridgestone à Port-Louis.",
+    "lat": -20.1648733,
+    "lng": 57.4897557
   },
   {
     "id": "hankook-abc-marketing-port-louis",
@@ -51433,7 +51633,9 @@
       "maison-equipement"
     ],
     "zone": "nord",
-    "description": "Très beau mobilier qui mise sur la distinction."
+    "description": "Très beau mobilier qui mise sur la distinction.",
+    "lat": -20.0393506,
+    "lng": 57.5989086
   },
   {
     "id": "courts-mammouth-grand-baie",
@@ -51445,7 +51647,9 @@
       "maison-equipement"
     ],
     "zone": "nord",
-    "description": "Mobilier et électroménager d'entrée de gamme. Autre adresse : Bell Village, Port-Louis."
+    "description": "Mobilier et électroménager d'entrée de gamme. Autre adresse : Bell Village, Port-Louis.",
+    "lat": -20.0123313,
+    "lng": 57.5876354
   },
   {
     "id": "meubles-meunier-terre-rouge",
@@ -51457,7 +51661,9 @@
       "maison-equipement"
     ],
     "zone": "nord",
-    "description": "Spécialiste du mobilier en rotin, travaux de rénovation excellents."
+    "description": "Spécialiste du mobilier en rotin, travaux de rénovation excellents.",
+    "lat": -20.1235965,
+    "lng": 57.5313356
   },
   {
     "id": "ssb-le-savoir-fer-pailles",
@@ -51481,7 +51687,9 @@
       "maison-equipement"
     ],
     "zone": "nord",
-    "description": "Mobilier spécialisé en bois massif, propose du sur-mesure."
+    "description": "Mobilier spécialisé en bois massif, propose du sur-mesure.",
+    "lat": -20.1436116,
+    "lng": 57.5243296
   },
   {
     "id": "sensoria-home-grand-baie",
@@ -51493,7 +51701,9 @@
       "maison-equipement"
     ],
     "zone": "nord",
-    "description": "Très grand showroom sur 3 niveaux, belle gamme de mobilier d'intérieur et d'extérieur et objets de décoration."
+    "description": "Très grand showroom sur 3 niveaux, belle gamme de mobilier d'intérieur et d'extérieur et objets de décoration.",
+    "lat": -20.0124254,
+    "lng": 57.5925359
   },
   {
     "id": "yuni-pinpoint-business-park",
@@ -51505,7 +51715,9 @@
       "maison-equipement"
     ],
     "zone": "nord",
-    "description": "Meubles d'intérieur et d'extérieur, style balinais ou moderne, bon rapport qualité/prix, très bon service après-vente."
+    "description": "Meubles d'intérieur et d'extérieur, style balinais ou moderne, bon rapport qualité/prix, très bon service après-vente.",
+    "lat": -20.1159921,
+    "lng": 57.5453612
   },
   {
     "id": "teak-world-the-vale",
@@ -51517,7 +51729,9 @@
       "maison-equipement"
     ],
     "zone": "nord",
-    "description": "Mobilier en teck, grand choix, service après-vente attentionné. Autre adresse : Bagatelle Home & Leisure, Moka."
+    "description": "Mobilier en teck, grand choix, service après-vente attentionné. Autre adresse : Bagatelle Home & Leisure, Moka.",
+    "lat": -20.0335566,
+    "lng": 57.5916922
   },
   {
     "id": "vivenci-grand-baie",
@@ -51529,7 +51743,9 @@
       "maison-equipement"
     ],
     "zone": "nord",
-    "description": "Mobilier fait sur-mesure."
+    "description": "Mobilier fait sur-mesure.",
+    "lat": -20.0122377,
+    "lng": 57.5926391
   },
   {
     "id": "oh-baby-goodlands",
@@ -51542,7 +51758,9 @@
     ],
     "zone": "nord",
     "hours": "Lu-ve 9h30-19h, dim 10h-14h",
-    "description": "Marques européennes de vêtements et jouets pour bébé (Absorba, Avent, Maxi Cosy, jouets en bois Heimess). Autre adresse : La City Trianon, Quatre Bornes."
+    "description": "Marques européennes de vêtements et jouets pour bébé (Absorba, Avent, Maxi Cosy, jouets en bois Heimess). Autre adresse : La City Trianon, Quatre Bornes.",
+    "lat": -20.0429755,
+    "lng": 57.6551168
   },
   {
     "id": "gecko-kids-mont-choisy",
@@ -51567,7 +51785,9 @@
     ],
     "zone": "nord",
     "hours": "Sur rendez-vous",
-    "description": "Collection de vêtements confortables et colorés pour enfants de 2 à 10 ans, fabriquée à Maurice."
+    "description": "Collection de vêtements confortables et colorés pour enfants de 2 à 10 ans, fabriquée à Maurice.",
+    "lat": -20.0086668,
+    "lng": 57.5906532
   },
   {
     "id": "carre-blanc-grand-baie",
@@ -51580,7 +51800,9 @@
     ],
     "zone": "nord",
     "hours": "Ma-sa 9h-12h et 14h-19h",
-    "description": "Beau linge de maison, parures de lit pour une ambiance chaleureuse, chambres d'enfant. Prix élevés."
+    "description": "Beau linge de maison, parures de lit pour une ambiance chaleureuse, chambres d'enfant. Prix élevés.",
+    "lat": -20.021847,
+    "lng": 57.5782503
   },
   {
     "id": "luna-boutique-grand-baie",
@@ -51593,7 +51815,9 @@
     ],
     "zone": "nord",
     "hours": "Lu-je 9h30-19h30, ven-sam 20h30-18h",
-    "description": "Vêtements légers, confortables et toujours féminins, made in Mauritius, mention spéciale pour les sacs au crochet."
+    "description": "Vêtements légers, confortables et toujours féminins, made in Mauritius, mention spéciale pour les sacs au crochet.",
+    "lat": -20.0133158,
+    "lng": 57.5884049
   },
   {
     "id": "out-of-africa-grand-baie",
@@ -51605,7 +51829,9 @@
     ],
     "zone": "nord",
     "hours": "Lu-sa 10h30-21h",
-    "description": "T-Shirts inspirés de l'humour mauricien (marque The Kreol Republik), robes colorées, tenues de plage."
+    "description": "T-Shirts inspirés de l'humour mauricien (marque The Kreol Republik), robes colorées, tenues de plage.",
+    "lat": -20.0218525,
+    "lng": 57.5789038
   },
   {
     "id": "mens-week-end-grand-baie",
@@ -51629,7 +51855,9 @@
     ],
     "zone": "nord",
     "hours": "Lu-sa 10h-18h",
-    "description": "Grand choix de vêtements blancs, lin, coton et soie, en provenance d'Italie."
+    "description": "Grand choix de vêtements blancs, lin, coton et soie, en provenance d'Italie.",
+    "lat": -20.0150503,
+    "lng": 57.5862986
   },
   {
     "id": "coco-sun-grand-baie",
@@ -51642,7 +51870,9 @@
     ],
     "zone": "nord",
     "hours": "Lu-sa 10h-18h",
-    "description": "Créations uniques pour femme, fabriquées à l'île Maurice, grand souci du détail et de la qualité."
+    "description": "Créations uniques pour femme, fabriquées à l'île Maurice, grand souci du détail et de la qualité.",
+    "lat": -20.0130929,
+    "lng": 57.5838284
   },
   {
     "id": "moli-boutique-grand-baie",
@@ -51667,7 +51897,9 @@
       "mode-accessoires"
     ],
     "zone": "centre",
-    "description": "Vêtements dégriffés de marques comme D&G, H&M, Tommy Hilfiger, Kenzo, à moindre coût selon arrivage."
+    "description": "Vêtements dégriffés de marques comme D&G, H&M, Tommy Hilfiger, Kenzo, à moindre coût selon arrivage.",
+    "lat": -20.3112181,
+    "lng": 57.5177029
   },
   {
     "id": "la-bonne-fouille-curepipe",
@@ -51680,7 +51912,9 @@
     ],
     "zone": "centre",
     "hours": "Lu-sa 9h30-17h30",
-    "description": "Prix dégriffés des marques Oilily, Gap pour enfants, Le Printemps, Monsoon et bien d'autres. Pour hommes, femmes et enfants."
+    "description": "Prix dégriffés des marques Oilily, Gap pour enfants, Le Printemps, Monsoon et bien d'autres. Pour hommes, femmes et enfants.",
+    "lat": -20.3243198,
+    "lng": 57.5275799
   },
   {
     "id": "lappret-midi-port-louis",
@@ -51693,7 +51927,9 @@
     ],
     "zone": "centre",
     "hours": "Lu-sa 9h30-17h30",
-    "description": "Vêtements chics pour femme à petits prix : robes légères, jeans tendance, jupes imprimées, blouses et accessoires."
+    "description": "Vêtements chics pour femme à petits prix : robes légères, jeans tendance, jupes imprimées, blouses et accessoires.",
+    "lat": -20.1609907,
+    "lng": 57.4980109
   },
   {
     "id": "atelier-inam-goodlands",
@@ -51706,7 +51942,9 @@
     ],
     "zone": "nord",
     "hours": "Lu-ve 9h-17h, sa 13h",
-    "description": "Magasin d'usine cachemire, vêtements faits sur place (usine à l'arrière). Autre adresse : Sunset Boulevard, Grand Baie (Inam Cashmere)."
+    "description": "Magasin d'usine cachemire, vêtements faits sur place (usine à l'arrière). Autre adresse : Sunset Boulevard, Grand Baie (Inam Cashmere).",
+    "lat": -20.0295513,
+    "lng": 57.6455765
   },
   {
     "id": "lentrepot-curepipe",
@@ -51719,7 +51957,9 @@
     ],
     "zone": "centre",
     "hours": "Lu-ve 9h30-17h30, sa 12h30",
-    "description": "Magasin d'usine, collection des hôtels Beachcomber, style tropical/colonial."
+    "description": "Magasin d'usine, collection des hôtels Beachcomber, style tropical/colonial.",
+    "lat": -20.3245304,
+    "lng": 57.5205475
   },
   {
     "id": "aquarelle-quatre-bornes",
@@ -51732,7 +51972,9 @@
     ],
     "zone": "centre",
     "hours": "Lu-ve 9h-17h",
-    "description": "Magasin d'usine, large gamme de chemises décontractées (coton, lin, jean, sans repassage) et formelles pour hommes et femmes."
+    "description": "Magasin d'usine, large gamme de chemises décontractées (coton, lin, jean, sans repassage) et formelles pour hommes et femmes.",
+    "lat": -20.2613223,
+    "lng": 57.4630959
   },
   {
     "id": "serendipity-charity-shop-grand-baie",
@@ -51745,7 +51987,9 @@
     ],
     "zone": "nord",
     "hours": "Lu-sa 10h-14h",
-    "description": "Charity shop : articles à prix très bas, pépites à Rs 50-100, il faut revenir régulièrement."
+    "description": "Charity shop : articles à prix très bas, pépites à Rs 50-100, il faut revenir régulièrement.",
+    "lat": -20.0080563,
+    "lng": 57.5617693
   },
   {
     "id": "magic-custom-grand-baie",
@@ -51758,7 +52002,9 @@
     ],
     "zone": "nord",
     "hours": "Ma-sa 10h-18h",
-    "description": "Personnalisation de vêtements et accessoires, délais rapides, prix intéressants."
+    "description": "Personnalisation de vêtements et accessoires, délais rapides, prix intéressants.",
+    "lat": -20.0155713,
+    "lng": 57.5742083
   },
   {
     "id": "safry-printing-grand-baie",
@@ -51771,7 +52017,9 @@
     ],
     "zone": "nord",
     "hours": "Lu-ve 9h-12h30 et 13h15-17h, sa 13h",
-    "description": "Impression personnalisée de logos et images sur textile ou autres supports."
+    "description": "Impression personnalisée de logos et images sur textile ou autres supports.",
+    "lat": -20.0166844,
+    "lng": 57.578402
   },
   {
     "id": "aqua-swimwear-grand-baie",
@@ -51784,7 +52032,9 @@
     ],
     "zone": "nord",
     "hours": "Ma/je 9h-12h30",
-    "description": "Le \"Vilebrequin local\" pour papa et fiston, maillots de bain à motifs."
+    "description": "Le \"Vilebrequin local\" pour papa et fiston, maillots de bain à motifs.",
+    "lat": -20.0177722,
+    "lng": 57.5793271
   },
   {
     "id": "69-slam-grand-baie",
@@ -51797,7 +52047,9 @@
     ],
     "zone": "nord",
     "hours": "Lu-sa 9h30-18h",
-    "description": "Marque australienne de maillots de bain, bikinis, sous-vêtements masculins et féminins."
+    "description": "Marque australienne de maillots de bain, bikinis, sous-vêtements masculins et féminins.",
+    "lat": -20.0134448,
+    "lng": 57.5843353
   },
   {
     "id": "ripcurl-grand-baie",
@@ -51809,7 +52061,9 @@
     ],
     "zone": "nord",
     "hours": "Lu-sa 9h30-18h, dim 10h-12h30",
-    "description": "Surf wear et maillots de bain pour teenagers branchés (filles et garçons)."
+    "description": "Surf wear et maillots de bain pour teenagers branchés (filles et garçons).",
+    "lat": -20.0132748,
+    "lng": 57.5841991
   },
   {
     "id": "out-of-the-blue-grand-baie",
@@ -51820,7 +52074,9 @@
       "mode-accessoires"
     ],
     "zone": "nord",
-    "description": "Grandes tailles, marque italienne de maillots de bain."
+    "description": "Grandes tailles, marque italienne de maillots de bain.",
+    "lat": -20.0218515,
+    "lng": 57.5792619
   },
   {
     "id": "alicia-swim-mapou",
@@ -51833,7 +52089,9 @@
     ],
     "zone": "nord",
     "hours": "Lu-sa 9h-17h",
-    "description": "Maillots de bain marque mauricienne Alicia Swim, gros budget mais ultra qualitatifs. Autre adresse : Sunset Boulevard, Grand Baie."
+    "description": "Maillots de bain marque mauricienne Alicia Swim, gros budget mais ultra qualitatifs. Autre adresse : Sunset Boulevard, Grand Baie.",
+    "lat": -20.0713232,
+    "lng": 57.6157054
   },
   {
     "id": "le-concept-store-mademoiselle-pointe-aux-canonniers",
@@ -51846,7 +52104,9 @@
     ],
     "zone": "nord",
     "hours": "Lu-sa 10h-18h",
-    "description": "Superbes marques locales telles que Banana Moon, Grace et Mila. Autre adresse : B13, Grand Baie."
+    "description": "Superbes marques locales telles que Banana Moon, Grace et Mila. Autre adresse : B13, Grand Baie.",
+    "lat": -20.0150607,
+    "lng": 57.5827539
   },
   {
     "id": "cafe-gioia-azuri",
@@ -51881,7 +52141,9 @@
     ],
     "zone": "nord",
     "description": "Cabinet d'Antoine Menguy, acupuncteur et masseur-kinésithérapeute diplômé d'État, praticien en médecine traditionnelle chinoise : acupuncture, ventouses, moxibustion et thérapie manuelle pour troubles digestifs, stress, insomnie, migraines, douleurs chroniques et autres déséquilibres énergétiques. Sur rendez-vous, lun-ven 8h-12h / 13h30-17h30.",
-    "hours": "Lun-Ven 8h-12h, 13h30-17h30, fermé sam-dim"
+    "hours": "Lun-Ven 8h-12h, 13h30-17h30, fermé sam-dim",
+    "lat": -20.0363162,
+    "lng": 57.6246965
   },
   {
     "id": "jardin-du-chateau-de-labourdonnais",
@@ -53543,7 +53805,9 @@
     "filters": [
       "boulangeries",
       "boulangeries-patisseries"
-    ]
+    ],
+    "lat": -20.261697,
+    "lng": 57.4830085
   },
   {
     "id": "ifu-cafe-trou-aux-biches",
@@ -53561,7 +53825,9 @@
     "filters": [
       "boulangeries",
       "boulangeries-patisseries"
-    ]
+    ],
+    "lat": -20.0346326,
+    "lng": 57.5398372
   },
   {
     "id": "outdoorsy-mauritius",
