@@ -127,6 +127,17 @@ const SIDEBAR_VISIBLE_RUBRIQUES = 5;
 const PREMIUM_CATEGORY_KEYS = new Set<CategoryKey>(["agenda"]);
 const PREMIUM_RUBRIQUE_KEYS = new Set<string>(["seconde-main-particuliers"]);
 
+// Agenda : peu de fiches, donc pas de liste de rubriques comme les autres
+// catégories — 3 grandes vignettes photo (style « Listes de Koté Moris »)
+// qui mènent chacune vers le même sous-menu déroulant que sa rubrique
+// d'origine (evenements-culturels/-associatifs/-sportifs).
+const AGENDA_GROUPS: { key: string; label: string; photo: string }[] = [
+  { key: "evenements-culturels", label: "Sorties et concerts", photo: "/photos/agenda-sorties-concerts.jpg" },
+  { key: "evenements-sportifs", label: "Événements sportifs", photo: "/photos/agenda-evenements-sportifs.jpg" },
+  { key: "evenements-associatifs", label: "Patrimoine et culture", photo: "/photos/agenda-patrimoine-culture.jpg" },
+];
+const AGENDA_GROUP_LABEL: Record<string, string> = Object.fromEntries(AGENDA_GROUPS.map((g) => [g.key, g.label]));
+
 // Métadonnées de rubrique (emoji/libellé) par clé, tous univers confondus.
 const RUBRIQUE_MAP: Record<string, { key: string; label: string; emoji: string }> = Object.fromEntries(
   Object.values(SUBCATEGORIES)
@@ -2071,22 +2082,55 @@ export default function DirectoryClient({
                 <p className="text-[15px] font-semibold truncate">{CATEGORY_MAP[homeCategory].label}</p>
               </div>
               <div className="h-2.5" />
-              <div className="flex flex-col gap-2 sm:max-w-[560px] sm:mx-auto">
-                {(SUBCATEGORIES[homeCategory] ?? [])
-                  .filter((s) => (themeCountsAll[s.key] || 0) > 0)
-                  .map((s) => (
-                    <CategoryRow
-                      key={s.key}
-                      category={homeCategory}
-                      iconKey={s.key}
-                      emoji={s.emoji}
-                      label={s.label}
-                      count={themeCountsAll[s.key] || 0}
-                      locked={PREMIUM_RUBRIQUE_KEYS.has(s.key)}
-                      onClick={() => openRubrique(s.key)}
-                    />
+              {homeCategory === "agenda" ? (
+                <div className="grid grid-cols-3 gap-2.5 sm:max-w-[720px] sm:mx-auto">
+                  {AGENDA_GROUPS.map((g) => (
+                    <button
+                      key={g.key}
+                      onClick={() => openRubrique(g.key)}
+                      className="relative text-left rounded-2xl overflow-hidden aspect-[4/5] shadow-card active:scale-[.98] transition-transform"
+                    >
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img
+                        src={g.photo}
+                        alt=""
+                        aria-hidden
+                        loading="lazy"
+                        className="absolute inset-0 w-full h-full object-cover"
+                      />
+                      <div
+                        className="absolute inset-0"
+                        style={{ background: "linear-gradient(180deg, rgba(0,0,0,0) 45%, rgba(0,0,0,.72) 100%)" }}
+                      />
+                      <span className="absolute inset-x-0 bottom-0 p-2.5">
+                        <span className="block font-serif text-[12.5px] font-semibold leading-tight text-white">
+                          {g.label}
+                        </span>
+                        <span className="block text-[10.5px] text-white/80 mt-0.5">
+                          {themeCountsAll[g.key] || 0} événements
+                        </span>
+                      </span>
+                    </button>
                   ))}
-              </div>
+                </div>
+              ) : (
+                <div className="flex flex-col gap-2 sm:max-w-[560px] sm:mx-auto">
+                  {(SUBCATEGORIES[homeCategory] ?? [])
+                    .filter((s) => (themeCountsAll[s.key] || 0) > 0)
+                    .map((s) => (
+                      <CategoryRow
+                        key={s.key}
+                        category={homeCategory}
+                        iconKey={s.key}
+                        emoji={s.emoji}
+                        label={s.label}
+                        count={themeCountsAll[s.key] || 0}
+                        locked={PREMIUM_RUBRIQUE_KEYS.has(s.key)}
+                        onClick={() => openRubrique(s.key)}
+                      />
+                    ))}
+                </div>
+              )}
             </div>
           )}
 
@@ -2096,7 +2140,7 @@ export default function DirectoryClient({
           {showHome && homeMode === "categories" && homeSubRubrique !== null && (() => {
             const group = browsableGroupFor(homeSubRubrique);
             if (!group) return null;
-            const rubriqueLabel = RUBRIQUE_MAP[homeSubRubrique]?.label ?? homeSubRubrique;
+            const rubriqueLabel = AGENDA_GROUP_LABEL[homeSubRubrique] ?? RUBRIQUE_MAP[homeSubRubrique]?.label ?? homeSubRubrique;
             return (
               <div className="pb-16">
                 <div className="sticky top-0 z-20 -mx-4 lg:-mx-5 px-4 lg:px-5 py-2 flex items-center gap-2 border-b border-border" style={{ background: "var(--bg)" }}>
