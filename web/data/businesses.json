@@ -45385,7 +45385,9 @@
     "filters": [
       "barbiers"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "lat": -20.0147265,
+    "lng": 57.5801391
   },
   {
     "id": "secret-hair-beauty-soins",
@@ -50844,7 +50846,9 @@
     ],
     "zone": "nord",
     "priceRange": "se-faire-plaisir",
-    "description": "Caviste de Beau Plan spécialisé dans la gamme sud-africaine Idun, carte de fidélité."
+    "description": "Caviste de Beau Plan spécialisé dans la gamme sud-africaine Idun, carte de fidélité.",
+    "lat": -20.099952,
+    "lng": 57.5766941
   },
   {
     "id": "le-connoisseur-mont-choisy",
@@ -50983,7 +50987,9 @@
     "description": "Salon de coiffure établi depuis 20 ans à Grand Baie.",
     "filters": [
       "coiffeurs"
-    ]
+    ],
+    "lat": -20.0112594,
+    "lng": 57.5645071
   },
   {
     "id": "spa-comfort-zone-fond-du-sac",
@@ -51476,7 +51482,9 @@
       "auto-garages-concessionnaires"
     ],
     "zone": "nord",
-    "description": "Garage automobile de The Vale."
+    "description": "Garage automobile de The Vale.",
+    "lat": -20.0295976,
+    "lng": 57.6070333
   },
   {
     "id": "garage-satish-piton",
@@ -51502,7 +51510,9 @@
       "auto-garages-concessionnaires"
     ],
     "zone": "nord",
-    "description": "Réparations et entretien toutes marques (Virig Permalloo), sur rendez-vous. Second numéro : +230 5772 2099."
+    "description": "Réparations et entretien toutes marques (Virig Permalloo), sur rendez-vous. Second numéro : +230 5772 2099.",
+    "lat": -20.1031579,
+    "lng": 57.579677
   },
   {
     "id": "garage-auto-scan-triolet",
@@ -51528,7 +51538,9 @@
       "auto-garages-concessionnaires"
     ],
     "zone": "nord",
-    "description": "Tous les services auto sans rendez-vous : freins, pneus, batterie, climatisation, révision."
+    "description": "Tous les services auto sans rendez-vous : freins, pneus, batterie, climatisation, révision.",
+    "lat": -20.1410597,
+    "lng": 57.5161073
   },
   {
     "id": "pkl-triolet",
@@ -51843,7 +51855,9 @@
       "mode-accessoires"
     ],
     "zone": "nord",
-    "description": "Vêtements pour homme fabriqués à Maurice, en lin et coton."
+    "description": "Vêtements pour homme fabriqués à Maurice, en lin et coton.",
+    "lat": -20.0210939,
+    "lng": 57.5784931
   },
   {
     "id": "fashion-avenue-paris-grand-baie",
@@ -51885,7 +51899,9 @@
     ],
     "zone": "nord",
     "hours": "Lu-sa 9h30-17h30",
-    "description": "Vêtements, bijoux et accessoires tendance à de très bons prix."
+    "description": "Vêtements, bijoux et accessoires tendance à de très bons prix.",
+    "lat": -20.0168596,
+    "lng": 57.5779845
   },
   {
     "id": "le-sommet-curepipe",
