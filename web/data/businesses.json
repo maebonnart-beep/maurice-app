@@ -6057,7 +6057,7 @@
     "filters": [
       "assurances"
     ],
-    "description": "Agence d'assurance, Grand Baie."
+    "description": "Agence d'assurance de SWAN, à Grand Baie."
   },
   {
     "id": "mua-grand-baie",
@@ -6076,7 +6076,7 @@
     "filters": [
       "assurances"
     ],
-    "description": "Agence d'assurance, Grand Baie."
+    "description": "Agence d'assurance de MUA, à Grand Baie."
   },
   {
     "id": "mcb-grand-baie",
@@ -15322,7 +15322,7 @@
     "filters": [
       "assurances"
     ],
-    "description": "Agence d'assurance, Grand Baie."
+    "description": "Agence d'assurance d'International Assurance Limited PCC, à Grand Baie."
   },
   {
     "id": "gfa-insurance-grand-bay",
@@ -15341,7 +15341,7 @@
     "filters": [
       "assurances"
     ],
-    "description": "Agence d'assurance, Grand Baie."
+    "description": "Agence d'assurance de GFA Insurance, à Grand Baie."
   },
   {
     "id": "phoenix-insurance",
@@ -15360,7 +15360,7 @@
     "filters": [
       "assurances"
     ],
-    "description": "Agence d'assurance, Grand Baie."
+    "description": "Agence d'assurance de Phoenix Insurance, à Grand Baie."
   },
   {
     "id": "gfa-insurance-ltd",
@@ -15379,7 +15379,7 @@
     "filters": [
       "assurances"
     ],
-    "description": "Agence d'assurance, Port Louis."
+    "description": "Agence d'assurance de GFA Insurance, à Port Louis."
   },
   {
     "id": "royalshield-re-limited",
@@ -15398,7 +15398,7 @@
     "filters": [
       "assurances"
     ],
-    "description": "Agence d'assurance, Grand Baie."
+    "description": "Agence d'assurance de RoyalShield (Re) Limited, à Grand Baie."
   },
   {
     "id": "p-rambhojoo-accredited-agent-for-new-india-assurance",
@@ -15417,7 +15417,7 @@
     "filters": [
       "assurances"
     ],
-    "description": "Agence d'assurance, Pamplemousses."
+    "description": "Agent agréé de New India Assurance (P. Rambhojoo), à Pamplemousses."
   },
   {
     "id": "absa-bank-mauritius-limited-grand-baie-la-croisette-branch",
@@ -15436,7 +15436,7 @@
     "filters": [
       "banques"
     ],
-    "description": "Agence bancaire, Grand Baie."
+    "description": "Agence bancaire d'Absa Bank (Mauritius) Limited, à Grand Baie La Croisette."
   },
   {
     "id": "sbm-grand-baie-2",
@@ -15474,7 +15474,7 @@
     "filters": [
       "banques"
     ],
-    "description": "Agence bancaire, Grand Baie."
+    "description": "Agence bancaire de Shibani Finance Co Ltd, à Grand Baie."
   },
   {
     "id": "absa-bank-grand-baie-la-croisette-atm",
@@ -15493,7 +15493,7 @@
     "filters": [
       "distributeurs"
     ],
-    "description": "Distributeur automatique de billets (ATM), Grand Baie."
+    "description": "Distributeur automatique de billets (ATM) d'Absa Bank, à Grand Baie La Croisette."
   },
   {
     "id": "fix-men-mauritius",
@@ -19469,7 +19469,7 @@
     "filters": [
       "assurances"
     ],
-    "description": "Agence d'assurance, Tamarin."
+    "description": "Centre de déclaration de sinistres MUA (drive-thru), à Rivière Noire."
   },
   {
     "id": "island-life-assurance-co-ltd",
@@ -19488,7 +19488,7 @@
     "filters": [
       "assurances"
     ],
-    "description": "Agence d'assurance, Port Louis."
+    "description": "Agence d'assurance d'Island Life Assurance Co. Ltd, à Port Louis."
   },
   {
     "id": "swan-ebene",
@@ -19507,7 +19507,7 @@
     "filters": [
       "assurances"
     ],
-    "description": "Agence d'assurance, Quatre Bornes."
+    "description": "Agence d'assurance de SWAN, à Ebène."
   },
   {
     "id": "mcb-riviere-noire",
@@ -19545,7 +19545,7 @@
     "filters": [
       "banques"
     ],
-    "description": "Agence bancaire, Rivière Noire."
+    "description": "Agence bancaire (Premier Lounge) d'Absa Bank, à Rivière Noire."
   },
   {
     "id": "bcp-bank-mauritius",
@@ -19564,7 +19564,7 @@
     "filters": [
       "banques"
     ],
-    "description": "Agence bancaire, Moka."
+    "description": "Agence bancaire de BCP Bank (Mauritius), à Moka."
   },
   {
     "id": "mauritius-commercial-bank-atm",
@@ -19583,7 +19583,7 @@
     "filters": [
       "distributeurs"
     ],
-    "description": "Distributeur automatique de billets (ATM), Cascavelle."
+    "description": "Distributeur automatique de billets (ATM) de la Mauritius Commercial Bank (MCB), à Cascavelle."
   },
   {
     "id": "mascareignes-energy",
@@ -23542,7 +23542,7 @@
     "filters": [
       "assurances"
     ],
-    "description": "Agence d'assurance, Vacoas-Phœnix."
+    "description": "Agence d'assurance d'ASZA Co Ltd, à Vacoas-Phœnix."
   },
   {
     "id": "indian-ocean-general-assurance-ioga-ltd",
@@ -23561,7 +23561,7 @@
     "filters": [
       "assurances"
     ],
-    "description": "Agence d'assurance, Port Louis."
+    "description": "Agence d'assurance d'Indian Ocean General Assurance (IOGA) Ltd, à Port Louis."
   },
   {
     "id": "the-new-india-assurance-co-ltd",
@@ -23580,7 +23580,7 @@
     "filters": [
       "assurances"
     ],
-    "description": "Agence d'assurance, Port Louis."
+    "description": "Agence d'assurance de The New India Assurance Co. Ltd, à Port Louis."
   },
   {
     "id": "gos-ramsahye-agency-ltd",
@@ -23599,7 +23599,7 @@
     "filters": [
       "assurances"
     ],
-    "description": "Agence d'assurance, Curepipe."
+    "description": "Agence d'assurance de GOS Ramsahye Agency Ltd, à Curepipe."
   },
   {
     "id": "state-insurance-company-of-mauritius-ltd",
@@ -25596,7 +25596,7 @@
     "filters": [
       "assurances"
     ],
-    "description": "Agence d'assurance, Port Louis."
+    "description": "Siège social et assurance générale de MUA, à Port Louis."
   },
   {
     "id": "eagle-insurance-limited",
@@ -25615,7 +25615,7 @@
     "filters": [
       "assurances"
     ],
-    "description": "Agence d'assurance, Quatre Bornes."
+    "description": "Agence d'assurance d'Eagle Insurance Limited, à Quatre Bornes."
   },
   {
     "id": "phoenix-insurance-mauritius-limited",
@@ -25634,7 +25634,7 @@
     "filters": [
       "assurances"
     ],
-    "description": "Agence d'assurance, Port Louis."
+    "description": "Agence d'assurance de Phoenix Insurance (Mauritius) Limited, à Port Louis."
   },
   {
     "id": "phoenix-insurance-mauritius-ltd-coromandel-branch",
@@ -25653,7 +25653,7 @@
     "filters": [
       "assurances"
     ],
-    "description": "Agence d'assurance, Beau Bassin-Rose Hill."
+    "description": "Agence d'assurance de Phoenix Insurance (Mauritius) Ltd, à Beau Bassin-Rose Hill (Coromandel)."
   },
   {
     "id": "golden-one-agency-ltd-sicom-insurance",
@@ -25672,7 +25672,7 @@
     "filters": [
       "assurances"
     ],
-    "description": "Agence d'assurance, Triolet."
+    "description": "Agence d'assurance SICOM (Golden One Agency Ltd), à Triolet."
   },
   {
     "id": "a-brokers-ltd",
@@ -25691,7 +25691,7 @@
     "filters": [
       "assurances"
     ],
-    "description": "Agence d'assurance, Port Louis."
+    "description": "Courtier d'assurance A-Brokers Ltd, à Port Louis."
   },
   {
     "id": "coveraxis",
@@ -25710,7 +25710,7 @@
     "filters": [
       "assurances"
     ],
-    "description": "Agence d'assurance, Quatre Bornes."
+    "description": "Agence d'assurance Coveraxis, à Quatre Bornes."
   },
   {
     "id": "brokers-consultants-ltd",
@@ -25729,7 +25729,7 @@
     "filters": [
       "assurances"
     ],
-    "description": "Agence d'assurance, Port Louis."
+    "description": "Courtier d'assurance Brokers & Consultants Ltd, à Port Louis."
   },
   {
     "id": "mib-ltd",
@@ -25748,7 +25748,7 @@
     "filters": [
       "assurances"
     ],
-    "description": "Agence d'assurance, Port Louis."
+    "description": "Agence d'assurance MIB Ltd, à Port Louis."
   },
   {
     "id": "sanlamallianz-general-insurance-ltd-head-office",
@@ -25767,7 +25767,7 @@
     "filters": [
       "assurances"
     ],
-    "description": "Agence d'assurance, Port Louis."
+    "description": "Siège social de SanlamAllianz General Insurance Ltd, à Port Louis."
   },
   {
     "id": "phoenix-insurance-limited-flacq-branch",
@@ -25786,7 +25786,7 @@
     "filters": [
       "assurances"
     ],
-    "description": "Agence d'assurance, Central Flacq."
+    "description": "Agence d'assurance de Phoenix Insurance Limited, à Central Flacq."
   },
   {
     "id": "u-cover-ltd",
@@ -25805,7 +25805,7 @@
     "filters": [
       "assurances"
     ],
-    "description": "Agence d'assurance, Quatre Bornes."
+    "description": "Agence d'assurance U Cover Ltd, à Quatre Bornes."
   },
   {
     "id": "nic-mauritius",
@@ -25824,7 +25824,7 @@
     "filters": [
       "assurances"
     ],
-    "description": "Agence d'assurance, Curepipe."
+    "description": "Agence d'assurance NIC Mauritius, à Curepipe."
   },
   {
     "id": "sanlam-allianz-insurance-grand-bois",
@@ -25843,7 +25843,7 @@
     "filters": [
       "assurances"
     ],
-    "description": "Agence d'assurance, Grand Bois."
+    "description": "Agence d'assurance Sanlam Allianz, à Grand Bois."
   },
   {
     "id": "ioga",
@@ -25862,7 +25862,7 @@
     "filters": [
       "assurances"
     ],
-    "description": "Agence d'assurance, Curepipe."
+    "description": "Agence d'assurance IOGA, à Curepipe."
   },
   {
     "id": "four-sights-financial-planning-ltd",
@@ -25881,7 +25881,7 @@
     "filters": [
       "assurances"
     ],
-    "description": "Agence d'assurance, Pailles."
+    "description": "Cabinet de planification financière Four Sights Financial Planning Ltd, à Pailles."
   },
   {
     "id": "quantum-insurance",
@@ -25900,7 +25900,7 @@
     "filters": [
       "assurances"
     ],
-    "description": "Agence d'assurance, Quatre Bornes."
+    "description": "Agence d'assurance Quantum Insurance, à Quatre Bornes."
   },
   {
     "id": "afri-life-insurance",
@@ -25919,7 +25919,7 @@
     "filters": [
       "assurances"
     ],
-    "description": "Agence d'assurance, Quatre Bornes."
+    "description": "Agence d'assurance Afri Life Insurance, à Quatre Bornes."
   },
   {
     "id": "rpl-insurance-agency",
@@ -25938,7 +25938,7 @@
     "filters": [
       "assurances"
     ],
-    "description": "Agence d'assurance, Port Louis."
+    "description": "Agence d'assurance RPL Insurance Agency, à Port Louis."
   },
   {
     "id": "allianz-tower-allianz-services-mauritius",
@@ -25957,7 +25957,7 @@
     "filters": [
       "assurances"
     ],
-    "description": "Agence d'assurance, Quatre Bornes."
+    "description": "Bureaux d'Allianz Services Mauritius (Allianz Tower), à Quatre Bornes."
   },
   {
     "id": "advanta-global-services",
@@ -25976,7 +25976,7 @@
     "filters": [
       "assurances"
     ],
-    "description": "Agence d'assurance, Quatre Bornes."
+    "description": "Agence d'assurance Advanta Global Services, à Quatre Bornes."
   },
   {
     "id": "good-harvest-ltd",
@@ -25995,7 +25995,7 @@
     "filters": [
       "assurances"
     ],
-    "description": "Agence d'assurance, Port Louis."
+    "description": "Agence d'assurance Good Harvest Ltd, à Port Louis."
   },
   {
     "id": "mauritius-financial-investment-advisor",
@@ -26014,7 +26014,7 @@
     "filters": [
       "assurances"
     ],
-    "description": "Agence d'assurance, Calebasses."
+    "description": "Conseiller en investissement financier (Mauritius Financial Investment Advisor), à Calebasses."
   },
   {
     "id": "city-brokers-ltd",
@@ -26033,7 +26033,7 @@
     "filters": [
       "assurances"
     ],
-    "description": "Agence d'assurance, Port Louis."
+    "description": "Courtier d'assurance City Brokers Ltd, à Port Louis."
   },
   {
     "id": "neocov-ltd",
@@ -26052,7 +26052,7 @@
     "filters": [
       "assurances"
     ],
-    "description": "Agence d'assurance, Port Louis."
+    "description": "Agence d'assurance NEOCOV Ltd, à Port Louis."
   },
   {
     "id": "matco-insurance-agency",
@@ -26071,7 +26071,7 @@
     "filters": [
       "assurances"
     ],
-    "description": "Agence d'assurance, Vacoas-Phœnix."
+    "description": "Agence d'assurance Matco Insurance Agency, à Vacoas-Phœnix."
   },
   {
     "id": "warwyck-private-bank-ltd",
@@ -26090,7 +26090,7 @@
     "filters": [
       "banques"
     ],
-    "description": "Agence bancaire, Vacoas-Phoenix."
+    "description": "Banque privée Warwyck Private Bank Ltd, à Vacoas-Phoenix."
   },
   {
     "id": "blitz-electrical-works",
@@ -28896,7 +28896,7 @@
     "filters": [
       "banques"
     ],
-    "description": "Agence bancaire, Flic en Flac."
+    "description": "Bureau de change Shibani Foreign Exchange, à Flic en Flac."
   },
   {
     "id": "choupicolate-pastry",
@@ -30246,7 +30246,7 @@
     "filters": [
       "distributeurs"
     ],
-    "description": "Distributeur automatique de billets (ATM), Grand Baie."
+    "description": "Distributeur automatique de billets (ATM) de la MCB, au Super U de Grand Baie."
   },
   {
     "id": "atm-sbm-croisette-grand-baie",
@@ -30264,7 +30264,7 @@
     "filters": [
       "distributeurs"
     ],
-    "description": "Distributeur automatique de billets (ATM), Grand Baie."
+    "description": "Distributeur automatique de billets (ATM) de la SBM, à La Croisette, Grand Baie."
   },
   {
     "id": "atm-mcb-pasadena-flic-en-flac",
@@ -30282,7 +30282,7 @@
     "filters": [
       "distributeurs"
     ],
-    "description": "Distributeur automatique de billets (ATM), Flic en Flac."
+    "description": "Distributeur automatique de billets (ATM) de la MCB, à Pasadena Village, Flic en Flac."
   },
   {
     "id": "atm-sbm-pasadena-flic-en-flac",
@@ -30300,7 +30300,7 @@
     "filters": [
       "distributeurs"
     ],
-    "description": "Distributeur automatique de billets (ATM), Flic en Flac."
+    "description": "Distributeur automatique de billets (ATM) de la SBM, à Pasadena, Flic en Flac."
   },
   {
     "id": "atm-mcb-caudan-port-louis",
@@ -30318,7 +30318,7 @@
     "filters": [
       "distributeurs"
     ],
-    "description": "Distributeur automatique de billets (ATM), Port Louis."
+    "description": "Distributeur automatique de billets (ATM) de la MCB, au Caudan Waterfront, Port Louis."
   },
   {
     "id": "atm-sbm-place-armes-port-louis",
@@ -30336,7 +30336,7 @@
     "filters": [
       "distributeurs"
     ],
-    "description": "Distributeur automatique de billets (ATM), Port Louis."
+    "description": "Distributeur automatique de billets (ATM) de la SBM, à la SBM Tower, Place d'Armes, Port Louis."
   },
   {
     "id": "atm-bankone-port-louis",
@@ -30354,7 +30354,7 @@
     "filters": [
       "distributeurs"
     ],
-    "description": "Distributeur automatique de billets (ATM), Port Louis."
+    "description": "Distributeur automatique de billets (ATM) de Bank One, à Port Louis."
   },
   {
     "id": "atm-maubank-curepipe",
@@ -30372,7 +30372,7 @@
     "filters": [
       "distributeurs"
     ],
-    "description": "Distributeur automatique de billets (ATM), Curepipe."
+    "description": "Distributeur automatique de billets (ATM) de MauBank, à Curepipe."
   },
   {
     "id": "atm-sbm-tamarin",
@@ -30390,7 +30390,7 @@
     "filters": [
       "distributeurs"
     ],
-    "description": "Distributeur automatique de billets (ATM), Tamarin."
+    "description": "Distributeur automatique de billets (ATM) de la SBM, à Palm Square, Tamarin."
   },
   {
     "id": "atm-mcb-trou-eau-douce",
@@ -30408,7 +30408,7 @@
     "filters": [
       "distributeurs"
     ],
-    "description": "Distributeur automatique de billets (ATM), Trou d'Eau Douce."
+    "description": "Distributeur automatique de billets (ATM) de la MCB, à Trou d'Eau Douce."
   },
   {
     "id": "pharmacie-ducasse-grand-baie",
@@ -34723,7 +34723,7 @@
     "filters": [
       "banques"
     ],
-    "description": "Agence bancaire, Pamplemousses."
+    "description": "Agence bancaire d'Investec Bank (Mauritius) Limited, à Pamplemousses."
   },
   {
     "id": "bank-of-mauritius",
@@ -34742,7 +34742,7 @@
     "filters": [
       "banques"
     ],
-    "description": "Agence bancaire, Port Louis."
+    "description": "Banque centrale de Maurice (Bank of Mauritius), à Port Louis."
   },
   {
     "id": "kaizen-personal-brand-management",
@@ -35310,7 +35310,7 @@
     "filters": [
       "assurances"
     ],
-    "description": "Agence d'assurance, Port Louis."
+    "description": "Agence d'assurance Lamco International Insurance Ltd, à Port Louis."
   },
   {
     "id": "sanlam-private-wealth-mauritius",
@@ -35329,7 +35329,7 @@
     "filters": [
       "assurances"
     ],
-    "description": "Agence d'assurance, Mapou."
+    "description": "Gestion de patrimoine Sanlam Private Wealth Mauritius, à Mapou."
   },
   {
     "id": "c-rajcoomar-co-ltd",
@@ -35347,7 +35347,7 @@
     "filters": [
       "assurances"
     ],
-    "description": "Agence d'assurance, Port Louis."
+    "description": "Agence d'assurance C. Rajcoomar & Co. Ltd, à Port Louis."
   },
   {
     "id": "anglo-mauritius-house",
@@ -35365,7 +35365,7 @@
     "filters": [
       "assurances"
     ],
-    "description": "Agence d'assurance, Port Louis."
+    "description": "Agence d'assurance Anglo-Mauritius House, à Port Louis."
   },
   {
     "id": "a-k-mungur-co-ltd",
@@ -35383,7 +35383,7 @@
     "filters": [
       "assurances"
     ],
-    "description": "Agence d'assurance, Port Louis."
+    "description": "Agence d'assurance A.K. Mungur & Co. Ltd, à Port Louis."
   },
   {
     "id": "neeloosha-sundeep-agency",
@@ -35401,7 +35401,7 @@
     "filters": [
       "assurances"
     ],
-    "description": "Agence d'assurance, Vacoas-Phoenix."
+    "description": "Agence d'assurance Neeloosha & Sundeep Agency, à Vacoas-Phoenix."
   },
   {
     "id": "santam-structured-insurance-limited-pcc",
@@ -35418,7 +35418,7 @@
     "filters": [
       "assurances"
     ],
-    "description": "Agence d'assurance, Port Louis."
+    "description": "Agence d'assurance Santam Structured Insurance Limited PCC, à Port Louis."
   },
   {
     "id": "magnet-energise-ltd",
@@ -35545,7 +35545,7 @@
     "filters": [
       "assurances"
     ],
-    "description": "Agence d'assurance, Calebasses."
+    "description": "Courtier d'assurance AI Broker & Consultant Ltd, à Calebasses."
   },
   {
     "id": "inre-management-services-ltd",
@@ -35563,7 +35563,7 @@
     "filters": [
       "assurances"
     ],
-    "description": "Agence d'assurance, Port Louis."
+    "description": "Agence d'assurance Inre Management Services Ltd, à Port Louis."
   },
   {
     "id": "geric-brokers-ltd",
@@ -35581,7 +35581,7 @@
     "filters": [
       "assurances"
     ],
-    "description": "Agence d'assurance, Port Louis."
+    "description": "Courtier d'assurance Geric Brokers Ltd, à Port Louis."
   },
   {
     "id": "africa-continental-brokers-ltd",
@@ -35599,7 +35599,7 @@
     "filters": [
       "assurances"
     ],
-    "description": "Agence d'assurance, Ebene."
+    "description": "Courtier d'assurance Africa Continental Brokers Ltd, à Ebène."
   },
   {
     "id": "maison-vyasa-ltd",
@@ -35859,7 +35859,7 @@
     "filters": [
       "assurances"
     ],
-    "description": "Agence d'assurance, Quatre Bornes."
+    "description": "Courtier d'assurance Chartered Brokers Ltd, à Quatre Bornes."
   },
   {
     "id": "arts-28-art-gallery",
@@ -36111,7 +36111,7 @@
     "filters": [
       "banques"
     ],
-    "description": "Agence bancaire, Quatre Cocos."
+    "description": "Bureau de change Shibani Money Changer, à Quatre Cocos."
   },
   {
     "id": "bank-of-baroda",
@@ -36128,7 +36128,7 @@
     "filters": [
       "banques"
     ],
-    "description": "Agence bancaire, Port Louis."
+    "description": "Agence bancaire de Bank of Baroda, à Port Louis."
   },
   {
     "id": "sbm-super-u-atm",
@@ -36146,7 +36146,7 @@
     "filters": [
       "distributeurs"
     ],
-    "description": "Distributeur automatique de billets (ATM), Quatre Bornes."
+    "description": "Distributeur automatique de billets (ATM) de la SBM, au Super U de Quatre Bornes."
   },
   {
     "id": "sbm-labourdonnais-atm",
@@ -36164,7 +36164,7 @@
     "filters": [
       "distributeurs"
     ],
-    "description": "Distributeur automatique de billets (ATM), Port Louis."
+    "description": "Distributeur automatique de billets (ATM) de la SBM, au Labourdonnais, Port Louis."
   },
   {
     "id": "sbm-cash-point",
@@ -36181,7 +36181,7 @@
     "filters": [
       "distributeurs"
     ],
-    "description": "Distributeur automatique de billets (ATM), Moka."
+    "description": "Distributeur automatique de billets (ATM) de la SBM, à Moka."
   },
   {
     "id": "absa-bank-bell-village-atm",
@@ -36200,7 +36200,7 @@
     "filters": [
       "distributeurs"
     ],
-    "description": "Distributeur automatique de billets (ATM), Port Louis."
+    "description": "Distributeur automatique de billets (ATM) d'Absa Bank, à Bell Village, Port Louis."
   },
   {
     "id": "sbm-royal-road-atm",
@@ -36218,7 +36218,7 @@
     "filters": [
       "distributeurs"
     ],
-    "description": "Distributeur automatique de billets (ATM), Port Louis."
+    "description": "Distributeur automatique de billets (ATM) de la SBM, sur Royal Road, Port Louis."
   },
   {
     "id": "absa-bank-kendra-shopping-mall-saint-pierre-atm",
@@ -36237,7 +36237,7 @@
     "filters": [
       "distributeurs"
     ],
-    "description": "Distributeur automatique de billets (ATM), St Pierre."
+    "description": "Distributeur automatique de billets (ATM) d'Absa Bank, au Kendra Shopping Mall, Saint-Pierre."
   },
   {
     "id": "absa-bank-jumbo-richeterre-port-louis-atm",
@@ -36255,7 +36255,7 @@
     "filters": [
       "distributeurs"
     ],
-    "description": "Distributeur automatique de billets (ATM), Port Louis."
+    "description": "Distributeur automatique de billets (ATM) d'Absa Bank, au Jumbo de Riche Terre, Port Louis."
   },
   {
     "id": "atm-mcb",
@@ -36272,7 +36272,7 @@
     "filters": [
       "distributeurs"
     ],
-    "description": "Distributeur automatique de billets (ATM), Poste de Flacq."
+    "description": "Distributeur automatique de billets (ATM) de la MCB, à Poste de Flacq."
   },
   {
     "id": "sbm-long-mountain-atm",
@@ -36289,7 +36289,7 @@
     "filters": [
       "distributeurs"
     ],
-    "description": "Distributeur automatique de billets (ATM), Montagne Longue."
+    "description": "Distributeur automatique de billets (ATM) de la SBM, à Montagne Longue."
   },
   {
     "id": "banque-des-mascareignes-atm",
@@ -36306,7 +36306,7 @@
     "filters": [
       "distributeurs"
     ],
-    "description": "Distributeur automatique de billets (ATM), Moka."
+    "description": "Distributeur automatique de billets (ATM) de la Banque des Mascareignes, à Moka."
   },
   {
     "id": "sbm-emmanuel-anquetil-building-atm",
@@ -36324,7 +36324,7 @@
     "filters": [
       "distributeurs"
     ],
-    "description": "Distributeur automatique de billets (ATM), Port Louis."
+    "description": "Distributeur automatique de billets (ATM) de la SBM, à l'Emmanuel Anquetil Building, Port Louis."
   },
   {
     "id": "sbm-plaine-verte-atm",
@@ -36342,7 +36342,7 @@
     "filters": [
       "distributeurs"
     ],
-    "description": "Distributeur automatique de billets (ATM), Port Louis."
+    "description": "Distributeur automatique de billets (ATM) de la SBM, à Plaine Verte, Port Louis."
   },
   {
     "id": "sbi-mauritius-ltd",
@@ -36359,7 +36359,7 @@
     "filters": [
       "banques"
     ],
-    "description": "Agence bancaire, Port Louis."
+    "description": "Agence bancaire de SBI (Mauritius) Ltd, à Port Louis."
   },
   {
     "id": "mcb-plaine-verte-atm",
@@ -36377,7 +36377,7 @@
     "filters": [
       "distributeurs"
     ],
-    "description": "Distributeur automatique de billets (ATM), Port Louis."
+    "description": "Distributeur automatique de billets (ATM) de la MCB, à Plaine Verte, Port Louis."
   },
   {
     "id": "mcb-cathedral-square-atm",
@@ -36395,7 +36395,7 @@
     "filters": [
       "distributeurs"
     ],
-    "description": "Distributeur automatique de billets (ATM), Port Louis."
+    "description": "Distributeur automatique de billets (ATM) de la MCB, à Cathedral Square, Port Louis."
   },
   {
     "id": "sbm-ebene",
@@ -36431,7 +36431,7 @@
     "filters": [
       "distributeurs"
     ],
-    "description": "Distributeur automatique de billets (ATM), Moka."
+    "description": "Distributeur automatique de billets (ATM) d'Absa Bank, à Moka."
   },
   {
     "id": "mcb-super-u-atm",
@@ -36450,7 +36450,7 @@
     "filters": [
       "distributeurs"
     ],
-    "description": "Distributeur automatique de billets (ATM), Quatre Bornes."
+    "description": "Distributeur automatique de billets (ATM) de la MCB, au Super U de Quatre Bornes."
   },
   {
     "id": "absa-atm-beau-bassin",
@@ -36469,7 +36469,7 @@
     "filters": [
       "distributeurs"
     ],
-    "description": "Distributeur automatique de billets (ATM), Royal Road Windsor Commercial Centre Beau Bassin Mauritius Plaine Wilhems Beau Bassin-Rose Hill."
+    "description": "Distributeur automatique de billets (ATM) d'Absa Bank, au Windsor Commercial Centre, Beau Bassin."
   },
   {
     "id": "absa-bank-ebene-commercial-center-atm",
@@ -36488,7 +36488,7 @@
     "filters": [
       "distributeurs"
     ],
-    "description": "Distributeur automatique de billets (ATM), Ebene."
+    "description": "Distributeur automatique de billets (ATM) d'Absa Bank, à l'Ebène Commercial Centre."
   },
   {
     "id": "ambassade-de-france",
@@ -49028,7 +49028,7 @@
     "filters": [
       "informatique-reparation"
     ],
-    "description": "Réparation et dépannage informatique, Port-Louis."
+    "description": "Atelier de réparation et dépannage informatique Fast Click, à Port-Louis."
   },
   {
     "id": "the-cycling-zebra-riviere-noire",
@@ -49065,7 +49065,7 @@
     "filters": [
       "informatique-reparation"
     ],
-    "description": "Réparation et dépannage informatique, Beau Bassin / Rose Hill."
+    "description": "Atelier de réparation et dépannage informatique Compute Lovers, à Beau Bassin / Rose Hill."
   },
   {
     "id": "transcom",
@@ -49082,7 +49082,7 @@
     "filters": [
       "informatique-reparation"
     ],
-    "description": "Réparation et dépannage informatique, Beau Bassin / Rose Hill."
+    "description": "Atelier de réparation et dépannage informatique Transcom, à Beau Bassin / Rose Hill."
   },
   {
     "id": "celebrity",
@@ -49099,7 +49099,7 @@
     "filters": [
       "informatique-reparation"
     ],
-    "description": "Réparation et dépannage informatique, Port-Louis."
+    "description": "Atelier de réparation et dépannage informatique Celebrity, à Port-Louis."
   },
   {
     "id": "vj-computer",
@@ -49116,7 +49116,7 @@
     "filters": [
       "informatique-reparation"
     ],
-    "description": "Réparation et dépannage informatique, Beau Bassin / Rose Hill."
+    "description": "Atelier de réparation et dépannage informatique VJ Computer, à Beau Bassin / Rose Hill."
   },
   {
     "id": "pro-touch",
@@ -49133,7 +49133,7 @@
     "filters": [
       "informatique-reparation"
     ],
-    "description": "Réparation et dépannage informatique, Vacoas-Phoenix."
+    "description": "Atelier de réparation et dépannage informatique Pro Touch, à Vacoas-Phoenix."
   },
   {
     "id": "techstation",
@@ -49150,7 +49150,7 @@
     "filters": [
       "informatique-reparation"
     ],
-    "description": "Réparation et dépannage informatique, Quatre Bornes."
+    "description": "Atelier de réparation et dépannage informatique Techstation, à Quatre Bornes."
   },
   {
     "id": "jacey-computers",
@@ -49167,7 +49167,7 @@
     "filters": [
       "informatique-reparation"
     ],
-    "description": "Réparation et dépannage informatique, Port-Louis."
+    "description": "Atelier de réparation et dépannage informatique Jacey Computers, à Port-Louis."
   },
   {
     "id": "compu-speed",
@@ -49184,7 +49184,7 @@
     "filters": [
       "informatique-reparation"
     ],
-    "description": "Réparation et dépannage informatique, Port-Louis."
+    "description": "Atelier de réparation et dépannage informatique Compu Speed, à Port-Louis."
   },
   {
     "id": "fjariltech-computer-store",
@@ -49201,7 +49201,7 @@
     "filters": [
       "informatique-reparation"
     ],
-    "description": "Réparation et dépannage informatique, Port-Louis."
+    "description": "Atelier de réparation et dépannage informatique Fjariltech Computer Store, à Port-Louis."
   },
   {
     "id": "g-xpress-computer-system-ltd",
@@ -49218,7 +49218,7 @@
     "filters": [
       "informatique-reparation"
     ],
-    "description": "Réparation et dépannage informatique, Saint-Pierre."
+    "description": "Atelier de réparation et dépannage informatique G-Xpress Computer System Ltd, à Saint-Pierre."
   },
   {
     "id": "code-loft",
@@ -49235,7 +49235,7 @@
     "filters": [
       "informatique-reparation"
     ],
-    "description": "Réparation et dépannage informatique, Plaine Magnien VCA."
+    "description": "Atelier de réparation et dépannage informatique Code Loft, à Plaine Magnien."
   },
   {
     "id": "patrick-mavros-beau-plan",
