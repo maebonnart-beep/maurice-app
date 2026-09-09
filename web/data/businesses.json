@@ -6353,8 +6353,8 @@
     ],
     "badge": "selection",
     "zone": "nord",
-    "hours": "Lun, Mer-Dim 17h30-22h30, fermé Mar (brunch Sam-Dim 10h-15h)",
-    "description": "Restaurant de bord de mer à Grand Baie ouvert en 2009, cuisine romaine traditionnelle, pâtes et pizzas maison (pâte reposée 24h). Happy hour dès 15h, brunch le week-end.",
+    "hours": "Lun, Mer, Dim 18h-21h45",
+    "description": "Restaurant de bord de mer à Grand Baie ouvert en 2009. Large choix de spécialités italiennes (pizzas, pâtes, antipasti...) réalisées dans les règles de l'art \"à la romaine\", pâtes et pizzas maison (pâte reposée 24h). Possibilité de commander en ligne et de venir récupérer sur place.",
     "filters": [
       "italien"
     ]
@@ -49234,26 +49234,6 @@
     "lng": 57.576571,
     "filters": [
       "pharmacies"
-    ]
-  },
-  {
-    "id": "max-mamma-mia-grand-baie",
-    "name": "Mamma Mia of Max — Grand Baie",
-    "category": "manger-boire",
-    "address": "Royal Road, Grand Baie 30540",
-    "phone": "+230 296 0327",
-    "website": "https://maxmammamia.net/",
-    "googleMapsUrl": "https://www.google.com/maps/search/Mamma+Mia+of+Max+Grand+Baie",
-    "hours": "18h-22h30, fermé le mardi",
-    "themes": [
-      "restaurants"
-    ],
-    "zone": "nord",
-    "description": "L'une des plus anciennes pizzerias-restaurants italiens authentiques de Grand Baie, tenue par une famille italienne. Pizzas au feu de bois et cuisine italienne traditionnelle, à emporter ou sur place.",
-    "lat": -20.0154755,
-    "lng": 57.5703797,
-    "filters": [
-      "italien"
     ]
   },
   {
