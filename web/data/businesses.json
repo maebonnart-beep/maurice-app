@@ -12402,6 +12402,7 @@
     "lat": -20.5081742,
     "lng": 57.5446242,
     "themes": [
+      "excursions-sorties",
       "kids-friendly"
     ],
     "zone": "sud",
@@ -12711,6 +12712,7 @@
     "lat": -20.1241283,
     "lng": 57.6841354,
     "themes": [
+      "excursions-sorties",
       "kids-friendly"
     ],
     "description": "Saut en parachute en tandem depuis un Cessna à 10 000 pieds, au-dessus du lagon",
@@ -13279,6 +13281,7 @@
     "lat": -20.1828855,
     "lng": 57.7110379,
     "themes": [
+      "excursions-sorties",
       "kids-friendly"
     ],
     "zone": "est",
@@ -53434,6 +53437,7 @@
     "googleMapsUrl": "",
     "zone": "centre",
     "themes": [
+      "salles-sport-fitness",
       "kids-friendly"
     ],
     "description": "Activités sportives outdoor pour enfants et adultes encadrées par un coach (fitness, renforcement, jeux actifs en plein air), pensées pour rester engagé, actif et prendre du plaisir. Contact : outdoorsyltd@outlook.com, WhatsApp +230 5257 9058."
@@ -53877,7 +53881,7 @@
   {
     "id": "20-vin-mahogany",
     "name": "20 Vin - Mahogany",
-    "category": "acheter-equiper",
+    "category": "manger-boire",
     "address": "Mahogany Shopping Promenade, Beau Plan, Pamplemousses",
     "phone": "+230 245 8304",
     "website": "https://grays.mu/20-vin-shops-mauritius",
@@ -53885,12 +53889,13 @@
     "lat": -20.099693,
     "lng": 57.5767875,
     "themes": [
-      "vins-spiritueux"
+      "commerces-alimentaires"
     ],
     "zone": "nord",
     "description": "Caviste proposant une sélection de vins et spiritueux, au sein du Mahogany Shopping Promenade.",
     "filters": [
-      "vins-spiritueux"
+      "vins-spiritueux",
+      "epiceries-specialisees"
     ]
   },
   {
