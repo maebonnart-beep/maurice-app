@@ -23,7 +23,7 @@ export function SuggestCommentButton({ businessId, businessName }: { businessId:
   function handleSend() {
     const subject = `Suggestion de commentaire — ${businessName}`;
     const body = [`Fiche : ${businessName} (${businessId})`, `Commentaire : ${comment.trim()}`].join("\n");
-    window.location.href = `mailto:mae.bonnart@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = `mailto:contact@kotemoris.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     setSent(true);
   }
 

@@ -40,7 +40,7 @@ export function SuggestPhotoButton({ businessId, businessName }: { businessId: s
 
     if (photo && typeof navigator !== "undefined" && navigator.share && navigator.canShare?.({ files: [photo] })) {
       try {
-        await navigator.share({ title: subject, text: `${body}\n\nÀ : mae.bonnart@gmail.com`, files: [photo] });
+        await navigator.share({ title: subject, text: `${body}\n\nÀ : contact@kotemoris.com`, files: [photo] });
         setPhotoShared(true);
         setSent(true);
         return;
@@ -49,7 +49,7 @@ export function SuggestPhotoButton({ businessId, businessName }: { businessId: s
       }
     }
 
-    const mailto = `mailto:mae.bonnart@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    const mailto = `mailto:contact@kotemoris.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     window.location.href = mailto;
     setPhotoShared(false);
     setSent(true);

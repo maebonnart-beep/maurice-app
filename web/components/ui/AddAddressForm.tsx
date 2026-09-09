@@ -90,7 +90,7 @@ export function AddAddressForm() {
       try {
         await navigator.share({
           title: subject,
-          text: `${body}\n\nÀ : mae.bonnart@gmail.com`,
+          text: `${body}\n\nÀ : contact@kotemoris.com`,
           files: photos,
         });
         setPhotoShared(true);
@@ -101,7 +101,7 @@ export function AddAddressForm() {
       }
     }
 
-    const mailto = `mailto:mae.bonnart@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    const mailto = `mailto:contact@kotemoris.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     window.location.href = mailto;
     setPhotoShared(false);
     setSent(true);
