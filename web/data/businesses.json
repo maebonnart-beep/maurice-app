@@ -6052,7 +6052,8 @@
     "zone": "nord",
     "filters": [
       "assurances"
-    ]
+    ],
+    "description": "Agence d'assurance, Grand Baie."
   },
   {
     "id": "mua-grand-baie",
@@ -6070,7 +6071,8 @@
     "zone": "nord",
     "filters": [
       "assurances"
-    ]
+    ],
+    "description": "Agence d'assurance, Grand Baie."
   },
   {
     "id": "mcb-grand-baie",
@@ -11739,7 +11741,8 @@
     "themes": [
       "excursions-sorties"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Agence d'excursions et sorties en mer, Grand Baie."
   },
   {
     "id": "happiness-mauritius",
@@ -11945,7 +11948,8 @@
     "themes": [
       "excursions-sorties"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Agence de tours et excursions, Grand Baie."
   },
   {
     "id": "catamaran-and-speed-boat-2-northern-islands",
@@ -11965,7 +11969,8 @@
       "gabriel-island",
       "flat-island",
       "coin-de-mire"
-    ]
+    ],
+    "description": "Excursions en catamaran et speedboat vers les îles du Nord (Gabriel Island, Flat Island, Coin de Mire), au départ de Grand Baie."
   },
   {
     "id": "croisieres-australes",
@@ -12017,7 +12022,8 @@
     "themes": [
       "excursions-sorties"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Sorties privées en speedboat au départ de Grand Baie."
   },
   {
     "id": "zolil-tour-operator-di-autentica-avventura",
@@ -12064,7 +12070,8 @@
     "themes": [
       "excursions-sorties"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Activités nautiques sur la plage publique de Grand Baie."
   },
   {
     "id": "calypso",
@@ -13034,7 +13041,8 @@
     "themes": [
       "excursions-sorties"
     ],
-    "zone": "nord"
+    "zone": "nord",
+    "description": "Agence de voyages et excursions, Grand Baie."
   },
   {
     "id": "dive-spirit-mauritius",
@@ -15305,7 +15313,8 @@
     "zone": "nord",
     "filters": [
       "assurances"
-    ]
+    ],
+    "description": "Agence d'assurance, Grand Baie."
   },
   {
     "id": "gfa-insurance-grand-bay",
@@ -15323,7 +15332,8 @@
     "zone": "nord",
     "filters": [
       "assurances"
-    ]
+    ],
+    "description": "Agence d'assurance, Grand Baie."
   },
   {
     "id": "phoenix-insurance",
@@ -15341,7 +15351,8 @@
     "zone": "nord",
     "filters": [
       "assurances"
-    ]
+    ],
+    "description": "Agence d'assurance, Grand Baie."
   },
   {
     "id": "gfa-insurance-ltd",
@@ -15359,7 +15370,8 @@
     "zone": "centre",
     "filters": [
       "assurances"
-    ]
+    ],
+    "description": "Agence d'assurance, Port Louis."
   },
   {
     "id": "royalshield-re-limited",
@@ -15377,7 +15389,8 @@
     "zone": "nord",
     "filters": [
       "assurances"
-    ]
+    ],
+    "description": "Agence d'assurance, Grand Baie."
   },
   {
     "id": "p-rambhojoo-accredited-agent-for-new-india-assurance",
@@ -15395,7 +15408,8 @@
     "zone": "nord",
     "filters": [
       "assurances"
-    ]
+    ],
+    "description": "Agence d'assurance, Pamplemousses."
   },
   {
     "id": "absa-bank-mauritius-limited-grand-baie-la-croisette-branch",
@@ -15413,7 +15427,8 @@
     "zone": "nord",
     "filters": [
       "banques"
-    ]
+    ],
+    "description": "Agence bancaire, Grand Baie."
   },
   {
     "id": "sbm-grand-baie-2",
@@ -15450,7 +15465,8 @@
     "zone": "nord",
     "filters": [
       "banques"
-    ]
+    ],
+    "description": "Agence bancaire, Grand Baie."
   },
   {
     "id": "absa-bank-grand-baie-la-croisette-atm",
@@ -15468,7 +15484,8 @@
     "zone": "nord",
     "filters": [
       "distributeurs"
-    ]
+    ],
+    "description": "Distributeur automatique de billets (ATM), Grand Baie."
   },
   {
     "id": "fix-men-mauritius",
@@ -16856,7 +16873,8 @@
     "themes": [
       "excursions-sorties"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Sorties en mer pour l'observation des dauphins, au départ de Grande Rivière Noire."
   },
   {
     "id": "mauritius-tours-tur-agent-ltd",
@@ -19442,7 +19460,8 @@
     "zone": "ouest",
     "filters": [
       "assurances"
-    ]
+    ],
+    "description": "Agence d'assurance, Tamarin."
   },
   {
     "id": "island-life-assurance-co-ltd",
@@ -19460,7 +19479,8 @@
     "zone": "centre",
     "filters": [
       "assurances"
-    ]
+    ],
+    "description": "Agence d'assurance, Port Louis."
   },
   {
     "id": "swan-ebene",
@@ -19478,7 +19498,8 @@
     "zone": "centre",
     "filters": [
       "assurances"
-    ]
+    ],
+    "description": "Agence d'assurance, Quatre Bornes."
   },
   {
     "id": "mcb-riviere-noire",
@@ -19515,7 +19536,8 @@
     "zone": "ouest",
     "filters": [
       "banques"
-    ]
+    ],
+    "description": "Agence bancaire, Rivière Noire."
   },
   {
     "id": "bcp-bank-mauritius",
@@ -19533,7 +19555,8 @@
     "zone": "centre",
     "filters": [
       "banques"
-    ]
+    ],
+    "description": "Agence bancaire, Moka."
   },
   {
     "id": "mauritius-commercial-bank-atm",
@@ -19551,7 +19574,8 @@
     "zone": "ouest",
     "filters": [
       "distributeurs"
-    ]
+    ],
+    "description": "Distributeur automatique de billets (ATM), Cascavelle."
   },
   {
     "id": "mascareignes-energy",
@@ -20258,7 +20282,8 @@
     "themes": [
       "excursions-sorties"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Activités nautiques au Morne."
   },
   {
     "id": "island-vibration-mauritius",
@@ -20366,7 +20391,8 @@
     "zone": "sud",
     "filters": [
       "ile-aux-benitiers"
-    ]
+    ],
+    "description": "Sortie en mer : nage avec les dauphins, snorkeling et BBQ à l'Île aux Bénitiers, au départ du Morne Brabant."
   },
   {
     "id": "benitier-boat-la-gaulette",
@@ -20406,7 +20432,8 @@
     "zone": "ouest",
     "filters": [
       "ile-aux-benitiers"
-    ]
+    ],
+    "description": "Sortie en bateau vers l'Île aux Bénitiers, au départ de La Gaulette."
   },
   {
     "id": "kissen-sealife-dolphins-and-whales-excursion",
@@ -20458,7 +20485,8 @@
     "themes": [
       "excursions-sorties"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Excursions en bateau au départ de La Gaulette."
   },
   {
     "id": "soleil-dolphin-whale-watching-big-game-fishing-excursions",
@@ -20524,7 +20552,8 @@
     "themes": [
       "excursions-sorties"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Sorties en mer pour l'observation des dauphins, au départ de La Preneuse."
   },
   {
     "id": "mauritius-al-ameen-tours",
@@ -20590,7 +20619,8 @@
     "themes": [
       "excursions-sorties"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Sortie en mer pour l'observation des dauphins, au Morne."
   },
   {
     "id": "manish-hikes-7-cascades-tamarind-falls-hiking-guide",
@@ -20624,7 +20654,8 @@
     "zone": "sud",
     "filters": [
       "ile-aux-cerfs"
-    ]
+    ],
+    "description": "Excursions en bateau : illusion de la « cascade sous-marine » au large du Morne et tour des îles, dont l'Île aux Cerfs."
   },
   {
     "id": "simpl-sea-t",
@@ -20639,7 +20670,8 @@
     "themes": [
       "excursions-sorties"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Sorties et excursions en mer au départ de Flic en Flac."
   },
   {
     "id": "stillhere-sea-activities-mauritius",
@@ -20705,7 +20737,8 @@
     "themes": [
       "excursions-sorties"
     ],
-    "zone": "sud"
+    "zone": "sud",
+    "description": "Sortie en bateau à fond de verre, au Morne."
   },
   {
     "id": "namori-tours",
@@ -20768,7 +20801,8 @@
     "themes": [
       "excursions-sorties"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Sorties en bateau au départ de La Gaulette."
   },
   {
     "id": "sophie-nature-walk",
@@ -23499,7 +23533,8 @@
     "zone": "centre",
     "filters": [
       "assurances"
-    ]
+    ],
+    "description": "Agence d'assurance, Vacoas-Phœnix."
   },
   {
     "id": "indian-ocean-general-assurance-ioga-ltd",
@@ -23517,7 +23552,8 @@
     "zone": "centre",
     "filters": [
       "assurances"
-    ]
+    ],
+    "description": "Agence d'assurance, Port Louis."
   },
   {
     "id": "the-new-india-assurance-co-ltd",
@@ -23535,7 +23571,8 @@
     "zone": "centre",
     "filters": [
       "assurances"
-    ]
+    ],
+    "description": "Agence d'assurance, Port Louis."
   },
   {
     "id": "gos-ramsahye-agency-ltd",
@@ -23553,7 +23590,8 @@
     "zone": "centre",
     "filters": [
       "assurances"
-    ]
+    ],
+    "description": "Agence d'assurance, Curepipe."
   },
   {
     "id": "state-insurance-company-of-mauritius-ltd",
@@ -24197,7 +24235,8 @@
     "zone": "sud",
     "filters": [
       "parcs-nationaux-cascades"
-    ]
+    ],
+    "description": "Site naturel du sud de l'île, à Souillac."
   },
   {
     "id": "kiteglobing",
@@ -25548,7 +25587,8 @@
     "zone": "centre",
     "filters": [
       "assurances"
-    ]
+    ],
+    "description": "Agence d'assurance, Port Louis."
   },
   {
     "id": "eagle-insurance-limited",
@@ -25566,7 +25606,8 @@
     "zone": "centre",
     "filters": [
       "assurances"
-    ]
+    ],
+    "description": "Agence d'assurance, Quatre Bornes."
   },
   {
     "id": "phoenix-insurance-mauritius-limited",
@@ -25584,7 +25625,8 @@
     "zone": "centre",
     "filters": [
       "assurances"
-    ]
+    ],
+    "description": "Agence d'assurance, Port Louis."
   },
   {
     "id": "phoenix-insurance-mauritius-ltd-coromandel-branch",
@@ -25602,7 +25644,8 @@
     "zone": "centre",
     "filters": [
       "assurances"
-    ]
+    ],
+    "description": "Agence d'assurance, Beau Bassin-Rose Hill."
   },
   {
     "id": "golden-one-agency-ltd-sicom-insurance",
@@ -25620,7 +25663,8 @@
     "zone": "nord",
     "filters": [
       "assurances"
-    ]
+    ],
+    "description": "Agence d'assurance, Triolet."
   },
   {
     "id": "a-brokers-ltd",
@@ -25638,7 +25682,8 @@
     "zone": "centre",
     "filters": [
       "assurances"
-    ]
+    ],
+    "description": "Agence d'assurance, Port Louis."
   },
   {
     "id": "coveraxis",
@@ -25656,7 +25701,8 @@
     "zone": "centre",
     "filters": [
       "assurances"
-    ]
+    ],
+    "description": "Agence d'assurance, Quatre Bornes."
   },
   {
     "id": "brokers-consultants-ltd",
@@ -25674,7 +25720,8 @@
     "zone": "centre",
     "filters": [
       "assurances"
-    ]
+    ],
+    "description": "Agence d'assurance, Port Louis."
   },
   {
     "id": "mib-ltd",
@@ -25692,7 +25739,8 @@
     "zone": "centre",
     "filters": [
       "assurances"
-    ]
+    ],
+    "description": "Agence d'assurance, Port Louis."
   },
   {
     "id": "sanlamallianz-general-insurance-ltd-head-office",
@@ -25710,7 +25758,8 @@
     "zone": "centre",
     "filters": [
       "assurances"
-    ]
+    ],
+    "description": "Agence d'assurance, Port Louis."
   },
   {
     "id": "phoenix-insurance-limited-flacq-branch",
@@ -25728,7 +25777,8 @@
     "zone": "est",
     "filters": [
       "assurances"
-    ]
+    ],
+    "description": "Agence d'assurance, Central Flacq."
   },
   {
     "id": "u-cover-ltd",
@@ -25746,7 +25796,8 @@
     "zone": "centre",
     "filters": [
       "assurances"
-    ]
+    ],
+    "description": "Agence d'assurance, Quatre Bornes."
   },
   {
     "id": "nic-mauritius",
@@ -25764,7 +25815,8 @@
     "zone": "centre",
     "filters": [
       "assurances"
-    ]
+    ],
+    "description": "Agence d'assurance, Curepipe."
   },
   {
     "id": "sanlam-allianz-insurance-grand-bois",
@@ -25782,7 +25834,8 @@
     "zone": "sud",
     "filters": [
       "assurances"
-    ]
+    ],
+    "description": "Agence d'assurance, Grand Bois."
   },
   {
     "id": "ioga",
@@ -25800,7 +25853,8 @@
     "zone": "centre",
     "filters": [
       "assurances"
-    ]
+    ],
+    "description": "Agence d'assurance, Curepipe."
   },
   {
     "id": "four-sights-financial-planning-ltd",
@@ -25818,7 +25872,8 @@
     "zone": "centre",
     "filters": [
       "assurances"
-    ]
+    ],
+    "description": "Agence d'assurance, Pailles."
   },
   {
     "id": "quantum-insurance",
@@ -25836,7 +25891,8 @@
     "zone": "centre",
     "filters": [
       "assurances"
-    ]
+    ],
+    "description": "Agence d'assurance, Quatre Bornes."
   },
   {
     "id": "afri-life-insurance",
@@ -25854,7 +25910,8 @@
     "zone": "centre",
     "filters": [
       "assurances"
-    ]
+    ],
+    "description": "Agence d'assurance, Quatre Bornes."
   },
   {
     "id": "rpl-insurance-agency",
@@ -25872,7 +25929,8 @@
     "zone": "centre",
     "filters": [
       "assurances"
-    ]
+    ],
+    "description": "Agence d'assurance, Port Louis."
   },
   {
     "id": "allianz-tower-allianz-services-mauritius",
@@ -25890,7 +25948,8 @@
     "zone": "centre",
     "filters": [
       "assurances"
-    ]
+    ],
+    "description": "Agence d'assurance, Quatre Bornes."
   },
   {
     "id": "advanta-global-services",
@@ -25908,7 +25967,8 @@
     "zone": "centre",
     "filters": [
       "assurances"
-    ]
+    ],
+    "description": "Agence d'assurance, Quatre Bornes."
   },
   {
     "id": "good-harvest-ltd",
@@ -25926,7 +25986,8 @@
     "zone": "centre",
     "filters": [
       "assurances"
-    ]
+    ],
+    "description": "Agence d'assurance, Port Louis."
   },
   {
     "id": "mauritius-financial-investment-advisor",
@@ -25944,7 +26005,8 @@
     "zone": "centre",
     "filters": [
       "assurances"
-    ]
+    ],
+    "description": "Agence d'assurance, Calebasses."
   },
   {
     "id": "city-brokers-ltd",
@@ -25962,7 +26024,8 @@
     "zone": "centre",
     "filters": [
       "assurances"
-    ]
+    ],
+    "description": "Agence d'assurance, Port Louis."
   },
   {
     "id": "neocov-ltd",
@@ -25980,7 +26043,8 @@
     "zone": "centre",
     "filters": [
       "assurances"
-    ]
+    ],
+    "description": "Agence d'assurance, Port Louis."
   },
   {
     "id": "matco-insurance-agency",
@@ -25998,7 +26062,8 @@
     "zone": "sud",
     "filters": [
       "assurances"
-    ]
+    ],
+    "description": "Agence d'assurance, Vacoas-Phœnix."
   },
   {
     "id": "warwyck-private-bank-ltd",
@@ -26016,7 +26081,8 @@
     "zone": "centre",
     "filters": [
       "banques"
-    ]
+    ],
+    "description": "Agence bancaire, Vacoas-Phoenix."
   },
   {
     "id": "blitz-electrical-works",
@@ -26480,7 +26546,8 @@
     "themes": [
       "excursions-sorties"
     ],
-    "zone": "est"
+    "zone": "est",
+    "description": "Activités nautiques et sorties en bateau, au départ de Quatre Cocos."
   },
   {
     "id": "papa-s-dream-boat-trips",
@@ -26924,7 +26991,8 @@
     "zone": "est",
     "filters": [
       "ile-aux-cerfs"
-    ]
+    ],
+    "description": "Plage de l'Île aux Cerfs, accessible en bateau depuis Beau Champ."
   },
   {
     "id": "vallee-d-osterlog-endemic-garden",
@@ -28819,7 +28887,8 @@
     "zone": "ouest",
     "filters": [
       "banques"
-    ]
+    ],
+    "description": "Agence bancaire, Flic en Flac."
   },
   {
     "id": "choupicolate-pastry",
@@ -30168,7 +30237,8 @@
     "zone": "nord",
     "filters": [
       "distributeurs"
-    ]
+    ],
+    "description": "Distributeur automatique de billets (ATM), Grand Baie."
   },
   {
     "id": "atm-sbm-croisette-grand-baie",
@@ -30185,7 +30255,8 @@
     "zone": "nord",
     "filters": [
       "distributeurs"
-    ]
+    ],
+    "description": "Distributeur automatique de billets (ATM), Grand Baie."
   },
   {
     "id": "atm-mcb-pasadena-flic-en-flac",
@@ -30202,7 +30273,8 @@
     "zone": "ouest",
     "filters": [
       "distributeurs"
-    ]
+    ],
+    "description": "Distributeur automatique de billets (ATM), Flic en Flac."
   },
   {
     "id": "atm-sbm-pasadena-flic-en-flac",
@@ -30219,7 +30291,8 @@
     "zone": "ouest",
     "filters": [
       "distributeurs"
-    ]
+    ],
+    "description": "Distributeur automatique de billets (ATM), Flic en Flac."
   },
   {
     "id": "atm-mcb-caudan-port-louis",
@@ -30236,7 +30309,8 @@
     "zone": "centre",
     "filters": [
       "distributeurs"
-    ]
+    ],
+    "description": "Distributeur automatique de billets (ATM), Port Louis."
   },
   {
     "id": "atm-sbm-place-armes-port-louis",
@@ -30253,7 +30327,8 @@
     "zone": "centre",
     "filters": [
       "distributeurs"
-    ]
+    ],
+    "description": "Distributeur automatique de billets (ATM), Port Louis."
   },
   {
     "id": "atm-bankone-port-louis",
@@ -30270,7 +30345,8 @@
     "zone": "centre",
     "filters": [
       "distributeurs"
-    ]
+    ],
+    "description": "Distributeur automatique de billets (ATM), Port Louis."
   },
   {
     "id": "atm-maubank-curepipe",
@@ -30287,7 +30363,8 @@
     "zone": "centre",
     "filters": [
       "distributeurs"
-    ]
+    ],
+    "description": "Distributeur automatique de billets (ATM), Curepipe."
   },
   {
     "id": "atm-sbm-tamarin",
@@ -30304,7 +30381,8 @@
     "zone": "ouest",
     "filters": [
       "distributeurs"
-    ]
+    ],
+    "description": "Distributeur automatique de billets (ATM), Tamarin."
   },
   {
     "id": "atm-mcb-trou-eau-douce",
@@ -30321,7 +30399,8 @@
     "zone": "est",
     "filters": [
       "distributeurs"
-    ]
+    ],
+    "description": "Distributeur automatique de billets (ATM), Trou d'Eau Douce."
   },
   {
     "id": "pharmacie-ducasse-grand-baie",
@@ -34631,7 +34710,8 @@
     "zone": "nord",
     "filters": [
       "banques"
-    ]
+    ],
+    "description": "Agence bancaire, Pamplemousses."
   },
   {
     "id": "bank-of-mauritius",
@@ -34649,7 +34729,8 @@
     "zone": "centre",
     "filters": [
       "banques"
-    ]
+    ],
+    "description": "Agence bancaire, Port Louis."
   },
   {
     "id": "kaizen-personal-brand-management",
@@ -34790,7 +34871,8 @@
     "themes": [
       "excursions-sorties"
     ],
-    "zone": "ouest"
+    "zone": "ouest",
+    "description": "Sorties en bateau au départ du Morne."
   },
   {
     "id": "motrek-adventures-canyoning-mauritius",
@@ -35215,7 +35297,8 @@
     "zone": "centre",
     "filters": [
       "assurances"
-    ]
+    ],
+    "description": "Agence d'assurance, Port Louis."
   },
   {
     "id": "sanlam-private-wealth-mauritius",
@@ -35233,7 +35316,8 @@
     "zone": "nord",
     "filters": [
       "assurances"
-    ]
+    ],
+    "description": "Agence d'assurance, Mapou."
   },
   {
     "id": "c-rajcoomar-co-ltd",
@@ -35250,7 +35334,8 @@
     "zone": "centre",
     "filters": [
       "assurances"
-    ]
+    ],
+    "description": "Agence d'assurance, Port Louis."
   },
   {
     "id": "anglo-mauritius-house",
@@ -35267,7 +35352,8 @@
     "zone": "centre",
     "filters": [
       "assurances"
-    ]
+    ],
+    "description": "Agence d'assurance, Port Louis."
   },
   {
     "id": "a-k-mungur-co-ltd",
@@ -35284,7 +35370,8 @@
     "zone": "centre",
     "filters": [
       "assurances"
-    ]
+    ],
+    "description": "Agence d'assurance, Port Louis."
   },
   {
     "id": "neeloosha-sundeep-agency",
@@ -35301,7 +35388,8 @@
     "zone": "centre",
     "filters": [
       "assurances"
-    ]
+    ],
+    "description": "Agence d'assurance, Vacoas-Phoenix."
   },
   {
     "id": "santam-structured-insurance-limited-pcc",
@@ -35317,7 +35405,8 @@
     "zone": "centre",
     "filters": [
       "assurances"
-    ]
+    ],
+    "description": "Agence d'assurance, Port Louis."
   },
   {
     "id": "magnet-energise-ltd",
@@ -35443,7 +35532,8 @@
     "zone": "nord",
     "filters": [
       "assurances"
-    ]
+    ],
+    "description": "Agence d'assurance, Calebasses."
   },
   {
     "id": "inre-management-services-ltd",
@@ -35460,7 +35550,8 @@
     "zone": "centre",
     "filters": [
       "assurances"
-    ]
+    ],
+    "description": "Agence d'assurance, Port Louis."
   },
   {
     "id": "geric-brokers-ltd",
@@ -35477,7 +35568,8 @@
     "zone": "centre",
     "filters": [
       "assurances"
-    ]
+    ],
+    "description": "Agence d'assurance, Port Louis."
   },
   {
     "id": "africa-continental-brokers-ltd",
@@ -35494,7 +35586,8 @@
     "zone": "centre",
     "filters": [
       "assurances"
-    ]
+    ],
+    "description": "Agence d'assurance, Ebene."
   },
   {
     "id": "maison-vyasa-ltd",
@@ -35753,7 +35846,8 @@
     "zone": "centre",
     "filters": [
       "assurances"
-    ]
+    ],
+    "description": "Agence d'assurance, Quatre Bornes."
   },
   {
     "id": "arts-28-art-gallery",
@@ -36004,7 +36098,8 @@
     "zone": "est",
     "filters": [
       "banques"
-    ]
+    ],
+    "description": "Agence bancaire, Quatre Cocos."
   },
   {
     "id": "bank-of-baroda",
@@ -36020,7 +36115,8 @@
     "zone": "centre",
     "filters": [
       "banques"
-    ]
+    ],
+    "description": "Agence bancaire, Port Louis."
   },
   {
     "id": "sbm-super-u-atm",
@@ -36037,7 +36133,8 @@
     "zone": "centre",
     "filters": [
       "distributeurs"
-    ]
+    ],
+    "description": "Distributeur automatique de billets (ATM), Quatre Bornes."
   },
   {
     "id": "sbm-labourdonnais-atm",
@@ -36054,7 +36151,8 @@
     "zone": "centre",
     "filters": [
       "distributeurs"
-    ]
+    ],
+    "description": "Distributeur automatique de billets (ATM), Port Louis."
   },
   {
     "id": "sbm-cash-point",
@@ -36070,7 +36168,8 @@
     "zone": "centre",
     "filters": [
       "distributeurs"
-    ]
+    ],
+    "description": "Distributeur automatique de billets (ATM), Moka."
   },
   {
     "id": "absa-bank-bell-village-atm",
@@ -36088,7 +36187,8 @@
     "zone": "centre",
     "filters": [
       "distributeurs"
-    ]
+    ],
+    "description": "Distributeur automatique de billets (ATM), Port Louis."
   },
   {
     "id": "sbm-royal-road-atm",
@@ -36105,7 +36205,8 @@
     "zone": "centre",
     "filters": [
       "distributeurs"
-    ]
+    ],
+    "description": "Distributeur automatique de billets (ATM), Port Louis."
   },
   {
     "id": "absa-bank-kendra-shopping-mall-saint-pierre-atm",
@@ -36123,7 +36224,8 @@
     "zone": "centre",
     "filters": [
       "distributeurs"
-    ]
+    ],
+    "description": "Distributeur automatique de billets (ATM), St Pierre."
   },
   {
     "id": "absa-bank-jumbo-richeterre-port-louis-atm",
@@ -36140,7 +36242,8 @@
     "zone": "centre",
     "filters": [
       "distributeurs"
-    ]
+    ],
+    "description": "Distributeur automatique de billets (ATM), Port Louis."
   },
   {
     "id": "atm-mcb",
@@ -36156,7 +36259,8 @@
     "zone": "est",
     "filters": [
       "distributeurs"
-    ]
+    ],
+    "description": "Distributeur automatique de billets (ATM), Poste de Flacq."
   },
   {
     "id": "sbm-long-mountain-atm",
@@ -36172,7 +36276,8 @@
     "zone": "centre",
     "filters": [
       "distributeurs"
-    ]
+    ],
+    "description": "Distributeur automatique de billets (ATM), Montagne Longue."
   },
   {
     "id": "banque-des-mascareignes-atm",
@@ -36188,7 +36293,8 @@
     "zone": "centre",
     "filters": [
       "distributeurs"
-    ]
+    ],
+    "description": "Distributeur automatique de billets (ATM), Moka."
   },
   {
     "id": "sbm-emmanuel-anquetil-building-atm",
@@ -36205,7 +36311,8 @@
     "zone": "centre",
     "filters": [
       "distributeurs"
-    ]
+    ],
+    "description": "Distributeur automatique de billets (ATM), Port Louis."
   },
   {
     "id": "sbm-plaine-verte-atm",
@@ -36222,7 +36329,8 @@
     "zone": "centre",
     "filters": [
       "distributeurs"
-    ]
+    ],
+    "description": "Distributeur automatique de billets (ATM), Port Louis."
   },
   {
     "id": "sbi-mauritius-ltd",
@@ -36238,7 +36346,8 @@
     "zone": "centre",
     "filters": [
       "banques"
-    ]
+    ],
+    "description": "Agence bancaire, Port Louis."
   },
   {
     "id": "mcb-plaine-verte-atm",
@@ -36255,7 +36364,8 @@
     "zone": "centre",
     "filters": [
       "distributeurs"
-    ]
+    ],
+    "description": "Distributeur automatique de billets (ATM), Port Louis."
   },
   {
     "id": "mcb-cathedral-square-atm",
@@ -36272,7 +36382,8 @@
     "zone": "centre",
     "filters": [
       "distributeurs"
-    ]
+    ],
+    "description": "Distributeur automatique de billets (ATM), Port Louis."
   },
   {
     "id": "sbm-ebene",
@@ -36307,7 +36418,8 @@
     "zone": "centre",
     "filters": [
       "distributeurs"
-    ]
+    ],
+    "description": "Distributeur automatique de billets (ATM), Moka."
   },
   {
     "id": "mcb-super-u-atm",
@@ -36325,7 +36437,8 @@
     "zone": "centre",
     "filters": [
       "distributeurs"
-    ]
+    ],
+    "description": "Distributeur automatique de billets (ATM), Quatre Bornes."
   },
   {
     "id": "absa-atm-beau-bassin",
@@ -36343,7 +36456,8 @@
     "zone": "centre",
     "filters": [
       "distributeurs"
-    ]
+    ],
+    "description": "Distributeur automatique de billets (ATM), Royal Road Windsor Commercial Centre Beau Bassin Mauritius Plaine Wilhems Beau Bassin-Rose Hill."
   },
   {
     "id": "absa-bank-ebene-commercial-center-atm",
@@ -36361,7 +36475,8 @@
     "zone": "centre",
     "filters": [
       "distributeurs"
-    ]
+    ],
+    "description": "Distributeur automatique de billets (ATM), Ebene."
   },
   {
     "id": "ambassade-de-france",
@@ -48858,7 +48973,8 @@
     "zone": "centre",
     "filters": [
       "informatique-reparation"
-    ]
+    ],
+    "description": "Réparation et dépannage informatique, Port-Louis."
   },
   {
     "id": "the-cycling-zebra-riviere-noire",
@@ -48894,7 +49010,8 @@
     "zone": "centre",
     "filters": [
       "informatique-reparation"
-    ]
+    ],
+    "description": "Réparation et dépannage informatique, Beau Bassin / Rose Hill."
   },
   {
     "id": "transcom",
@@ -48910,7 +49027,8 @@
     "zone": "centre",
     "filters": [
       "informatique-reparation"
-    ]
+    ],
+    "description": "Réparation et dépannage informatique, Beau Bassin / Rose Hill."
   },
   {
     "id": "celebrity",
@@ -48926,7 +49044,8 @@
     "zone": "centre",
     "filters": [
       "informatique-reparation"
-    ]
+    ],
+    "description": "Réparation et dépannage informatique, Port-Louis."
   },
   {
     "id": "vj-computer",
@@ -48942,7 +49061,8 @@
     "zone": "centre",
     "filters": [
       "informatique-reparation"
-    ]
+    ],
+    "description": "Réparation et dépannage informatique, Beau Bassin / Rose Hill."
   },
   {
     "id": "pro-touch",
@@ -48958,7 +49078,8 @@
     "zone": "centre",
     "filters": [
       "informatique-reparation"
-    ]
+    ],
+    "description": "Réparation et dépannage informatique, Vacoas-Phoenix."
   },
   {
     "id": "techstation",
@@ -48974,7 +49095,8 @@
     "zone": "centre",
     "filters": [
       "informatique-reparation"
-    ]
+    ],
+    "description": "Réparation et dépannage informatique, Quatre Bornes."
   },
   {
     "id": "jacey-computers",
@@ -48990,7 +49112,8 @@
     "zone": "centre",
     "filters": [
       "informatique-reparation"
-    ]
+    ],
+    "description": "Réparation et dépannage informatique, Port-Louis."
   },
   {
     "id": "compu-speed",
@@ -49006,7 +49129,8 @@
     "zone": "centre",
     "filters": [
       "informatique-reparation"
-    ]
+    ],
+    "description": "Réparation et dépannage informatique, Port-Louis."
   },
   {
     "id": "fjariltech-computer-store",
@@ -49022,7 +49146,8 @@
     "zone": "centre",
     "filters": [
       "informatique-reparation"
-    ]
+    ],
+    "description": "Réparation et dépannage informatique, Port-Louis."
   },
   {
     "id": "g-xpress-computer-system-ltd",
@@ -49038,7 +49163,8 @@
     "zone": "centre",
     "filters": [
       "informatique-reparation"
-    ]
+    ],
+    "description": "Réparation et dépannage informatique, Saint-Pierre."
   },
   {
     "id": "code-loft",
@@ -49054,7 +49180,8 @@
     "zone": "sud",
     "filters": [
       "informatique-reparation"
-    ]
+    ],
+    "description": "Réparation et dépannage informatique, Plaine Magnien VCA."
   },
   {
     "id": "patrick-mavros-beau-plan",
