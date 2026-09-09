@@ -42,6 +42,9 @@ export function LoginForm() {
       setErrorMessage(error.message);
       setStatus("sent");
     } else {
+      // Après connexion, retour à l'accueil plutôt que de rester sur /mon-compte,
+      // qui affiche directement le tableau de bord "Mes annonces" (dépôt d'annonce).
+      router.push("/");
       router.refresh();
     }
   }
