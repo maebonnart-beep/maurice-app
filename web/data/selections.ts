@@ -669,6 +669,9 @@ export const SELECTIONS: Selection[] = [
       "kot-nini-la-meilleure-pizzeria",
       "s-arrastu-ristorante-gelateria-bar",
       "le-5-terre-restaurant-et-pinsa",
+      "da-andrea-e-maila",
+      "mamma-mia-che-gelato-grand-baie",
+      "lartigiano-mont-choisy",
     ],
   },
   {
