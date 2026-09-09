@@ -66,10 +66,10 @@ export default function AdminHomePage() {
           description="Modifs rapides (local uniquement)"
         />
         <AdminTile
+          href="/admin/dashboard"
           icon="📊"
           label="Dashboard"
           description="Flux & inscriptions"
-          disabled
         />
       </div>
     </div>
