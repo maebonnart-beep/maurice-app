@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import type { Listing, ListingStatus } from "@/lib/marketplace/types";
 import { LISTING_CATEGORIES } from "@/lib/marketplace/types";
@@ -36,6 +36,19 @@ export function AccountClient({ email, isPremium }: { email: string; isPremium: 
   const [expiringSoon, setExpiringSoon] = useState<Listing[]>([]);
   const [expired, setExpired] = useState<Listing[]>([]);
   const [renewing, setRenewing] = useState<number | null>(null);
+  const [alertsMenuOpen, setAlertsMenuOpen] = useState(false);
+  const alertsMenuRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!alertsMenuOpen) return;
+    function onClickOutside(e: MouseEvent) {
+      if (alertsMenuRef.current && !alertsMenuRef.current.contains(e.target as Node)) {
+        setAlertsMenuOpen(false);
+      }
+    }
+    document.addEventListener("mousedown", onClickOutside);
+    return () => document.removeEventListener("mousedown", onClickOutside);
+  }, [alertsMenuOpen]);
 
   function applyListings(data: Listing[]) {
     setListings(data);
@@ -76,12 +89,41 @@ export function AccountClient({ email, isPremium }: { email: string; isPremium: 
       <p className="text-[12.5px] text-muted mb-1">
         {email} · {activeCount}/{MAX_ACTIVE_LISTINGS} annonces actives
       </p>
-      <Link
-        href="/mon-compte/alertes"
-        className="inline-block text-[12.5px] font-semibold text-primary-deep underline mb-4"
-      >
-        Mes alertes
-      </Link>
+      <div className="flex items-center gap-3 mb-4">
+        <div className="relative" ref={alertsMenuRef}>
+          <button
+            type="button"
+            onClick={() => setAlertsMenuOpen((v) => !v)}
+            className="text-[12.5px] font-semibold text-primary-deep underline"
+          >
+            Gérer mes alertes
+          </button>
+          {alertsMenuOpen && (
+            <div className="absolute z-10 top-full left-0 mt-1.5 w-52 bg-surface border border-border rounded-xl shadow-lg overflow-hidden">
+              <Link
+                href="/mon-compte/alertes?type=listing"
+                className="block px-3.5 py-2.5 text-[13px] text-ink hover:bg-surface-2"
+                onClick={() => setAlertsMenuOpen(false)}
+              >
+                Annonces seconde main
+              </Link>
+              <Link
+                href="/mon-compte/alertes?type=event"
+                className="block px-3.5 py-2.5 text-[13px] text-ink hover:bg-surface-2 border-t border-border"
+                onClick={() => setAlertsMenuOpen(false)}
+              >
+                Événements
+              </Link>
+            </div>
+          )}
+        </div>
+        <Link
+          href="/mon-compte/listes"
+          className="inline-block text-[12.5px] font-semibold text-primary-deep underline"
+        >
+          Mes listes
+        </Link>
+      </div>
 
       {!isPremium && (
         <Link
