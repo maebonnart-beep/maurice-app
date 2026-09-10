@@ -95,6 +95,12 @@ export function NouvelleAnnonceForm() {
             L&apos;annonce est bien envoyée, mais la photo n&apos;a pas pu être ajoutée.
           </p>
         )}
+        <Link
+          href={`/mon-compte/alertes?type=listing${category ? `&category=${category}` : ""}`}
+          className="text-[12.5px] font-semibold text-primary-deep underline"
+        >
+          🔔 Créer une alerte pour être prévenu(e) des nouvelles annonces{category ? " de cette catégorie" : ""}
+        </Link>
         <button
           onClick={() => router.push("/mon-compte")}
           className="text-[13px] font-semibold text-primary underline underline-offset-2"
