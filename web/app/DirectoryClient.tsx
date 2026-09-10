@@ -217,14 +217,12 @@ export default function DirectoryClient({
   const { suggestions } = useSuggestions();
   const account = useAccount();
   // Avatar par défaut (tant que l'utilisateur n'a pas uploadé sa propre photo),
-  // différent selon son statut : admin > contributeur KM > premium > découverte.
+  // différent selon son statut : admin > contributeur KM > découverte.
   const defaultAvatar =
     account.role === "admin"
       ? "/avatar-admin.png"
       : account.role === "community"
       ? "/avatar-contributeur.png"
-      : account.isPremium
-      ? "/avatar-premium.png"
       : "/avatar-decouverte.png";
   useFavoritesSync(account.loggedIn, mergeStatuses, mergeFavoriteSelections);
   // Profil → Mes suggestions : pour chaque adresse proposée, détection best-effort
@@ -2693,6 +2691,45 @@ export default function DirectoryClient({
                     </Link>
                   </>
                 )}
+              </div>
+
+              {/* Légende des 3 statuts Koté Moris et de ce qu'ils débloquent. */}
+              <div className="bg-surface border border-border rounded-2xl shadow-sm p-4 flex flex-col gap-4">
+                <p className="m-0 font-serif text-[15px] font-semibold leading-tight">Les statuts Koté Moris</p>
+                {[
+                  {
+                    avatar: "/avatar-decouverte.png",
+                    label: "Découverte",
+                    features: ["Parcourir l'annuaire et les sélections", "Favoris, « à tester » et « testé »"],
+                  },
+                  {
+                    avatar: "/avatar-contributeur.png",
+                    label: "Contributeur KM",
+                    features: ["Suggérer de nouvelles adresses", "Accès libre aux événements"],
+                  },
+                  {
+                    avatar: "/avatar-admin.png",
+                    label: "Admin",
+                    features: ["Modération des annonces seconde main", "Gestion des utilisateurs"],
+                  },
+                ].map((tier) => (
+                  <div key={tier.label} className="flex items-center gap-3">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src={tier.avatar}
+                      alt={tier.label}
+                      className="w-12 h-12 rounded-full object-cover shrink-0"
+                    />
+                    <div className="min-w-0">
+                      <p className="m-0 text-[13px] font-bold text-ink">{tier.label}</p>
+                      <ul className="m-0 mt-0.5 pl-0 list-none flex flex-col gap-0.5">
+                        {tier.features.map((f) => (
+                          <li key={f} className="text-[12px] text-muted leading-snug">{f}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                ))}
               </div>
 
               {account.loggedIn && !account.isPremium && (
