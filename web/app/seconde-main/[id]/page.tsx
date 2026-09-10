@@ -109,6 +109,13 @@ export default async function ListingDetailPage({
           Contacter par WhatsApp
         </ActionButton>
       </div>
+
+      <Link
+        href={`/mon-compte/alertes?type=listing&category=${listing.category}`}
+        className="inline-block mt-4 text-[12.5px] font-semibold text-primary-deep underline"
+      >
+        🔔 Créer une alerte pour cette catégorie
+      </Link>
     </div>
   );
 }
