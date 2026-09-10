@@ -73,9 +73,15 @@ export function AccountClient({ email, isPremium }: { email: string; isPremium: 
           Déposer
         </Link>
       </div>
-      <p className="text-[12.5px] text-muted mb-4">
+      <p className="text-[12.5px] text-muted mb-1">
         {email} · {activeCount}/{MAX_ACTIVE_LISTINGS} annonces actives
       </p>
+      <Link
+        href="/mon-compte/alertes"
+        className="inline-block text-[12.5px] font-semibold text-primary-deep underline mb-4"
+      >
+        Mes alertes
+      </Link>
 
       {!isPremium && (
         <Link

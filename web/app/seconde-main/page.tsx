@@ -64,6 +64,13 @@ export default async function SecondeMainPage({
         ))}
       </div>
 
+      <Link
+        href={`/mon-compte/alertes?type=listing${categorie ? `&category=${categorie}` : ""}`}
+        className="inline-block mb-4 text-[12.5px] font-semibold text-primary-deep underline"
+      >
+        🔔 Créer une alerte pour cette recherche
+      </Link>
+
       {listings.length === 0 ? (
         <p className="text-center text-muted text-[13px] mt-10">Aucune annonce pour le moment.</p>
       ) : (

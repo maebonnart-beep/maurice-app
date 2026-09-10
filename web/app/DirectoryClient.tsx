@@ -1493,8 +1493,26 @@ export default function DirectoryClient({
   }));
 
   const hasFacets = groupOptionsList.length > 0 || priceOptions.length > 0 || badgeOptions.length > 0;
+  // URL de l'alerte "cette recherche" pour l'agenda : thèmes (rubriques agenda
+  // sélectionnées) + filtres transversaux actifs (type/nature d'événement).
+  const agendaAlertHref = useMemo(() => {
+    const themes = [...activeThemes].filter((k) => k !== UNCLASSIFIED);
+    const filters = Object.values(facetGroups).flatMap((set) => [...set]);
+    const params = new URLSearchParams({ type: "event" });
+    if (themes.length > 0) params.set("themes", themes.join(","));
+    if (filters.length > 0) params.set("filters", filters.join(","));
+    return `/mon-compte/alertes?${params.toString()}`;
+  }, [activeThemes, facetGroups]);
   const restoFilterBar = (activeRubrique || agendaBrowseAll) && hasFacets ? (
     <div className="mb-3 border-b border-border pb-3 flex items-center gap-2">
+      {active === "agenda" && (
+        <Link
+          href={agendaAlertHref}
+          className="shrink-0 text-[12.5px] font-semibold text-primary-deep hover:underline"
+        >
+          🔔 Créer une alerte
+        </Link>
+      )}
       {badgeOptions.length > 0 && (
         <FilterDropdown
           label="Sélection"

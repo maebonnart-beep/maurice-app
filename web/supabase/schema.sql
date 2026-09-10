@@ -101,9 +101,32 @@ create index listings_expires_at_idx on listings (expires_at) where status = 'ap
 create index listing_photos_listing_id_idx on listing_photos (listing_id);
 create index listing_events_listing_id_idx on listing_events (listing_id);
 
+-- Alertes email : l'utilisateur enregistre des critères (annonces seconde main
+-- ou événements de l'agenda), le cron quotidien api/cron/send-alerts compare
+-- aux nouveautés et envoie un email s'il y a une correspondance.
+-- criteria (jsonb) selon type :
+--   listing : { category?, zone?, maxPrice?, keyword? }
+--   event   : { themes?: string[], filters?: string[], keyword? }
+-- notified_ids : IDs déjà notifiés pour ce type "event" (les fiches agenda de
+-- data/businesses.json n'ont pas de created_at fiable, donc la détection de
+-- nouveauté se fait par diff d'IDs plutôt que par date).
+create table saved_searches (
+  id bigint generated always as identity primary key,
+  user_id uuid not null references auth.users (id) on delete cascade,
+  type text not null check (type in ('listing', 'event')),
+  label text not null,
+  criteria jsonb not null default '{}'::jsonb,
+  notified_ids jsonb not null default '[]'::jsonb,
+  last_notified_at timestamptz,
+  created_at timestamptz not null default now()
+);
+
+create index saved_searches_user_id_idx on saved_searches (user_id);
+
 alter table profiles enable row level security;
 alter table listings enable row level security;
 alter table listing_photos enable row level security;
+alter table saved_searches enable row level security;
 
 -- profiles : chacun lit/écrit sa propre ligne (colonnes sensibles comme
 -- is_admin/subscription_status ne sont modifiées que par des routes serveur
@@ -123,6 +146,12 @@ create policy "listing_photos: public read of approved listings" on listing_phot
 create policy "listing_photos: owner manage" on listing_photos for all
   using (exists (select 1 from listings l where l.id = listing_id and l.user_id = auth.uid()));
 
+-- saved_searches : chacun gère ses propres alertes (pas d'update : on supprime
+-- et recrée plutôt que de modifier des critères existants).
+create policy "saved_searches: owner read own" on saved_searches for select using (auth.uid() = user_id);
+create policy "saved_searches: owner insert" on saved_searches for insert with check (auth.uid() = user_id);
+create policy "saved_searches: owner delete own" on saved_searches for delete using (auth.uid() = user_id);
+
 -- "Automatically expose new tables" est désactivé sur ce projet (contrôle
 -- d'accès manuel, recommandé par Supabase) : les rôles de la Data API n'ont
 -- donc aucun droit par défaut sur les tables ci-dessus tant qu'on ne le leur
@@ -140,9 +169,11 @@ grant select on listings to anon;
 grant select, insert, update, delete on listing_photos to authenticated;
 grant select on listing_photos to anon;
 grant select, insert on listing_events to anon, authenticated;
+grant select, insert, delete on saved_searches to authenticated;
 
 grant all on businesses, business_claims, business_events to service_role;
 grant all on profiles, listings, listing_photos, listing_events to service_role;
+grant all on saved_searches to service_role;
 
 -- Sauvegarde automatique des favoris (cœur/à tester/testé + sélections KM mises
 -- en favori) pour tout utilisateur connecté, en complément du localStorage qui
