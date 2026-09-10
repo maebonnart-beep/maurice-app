@@ -926,6 +926,28 @@
     ]
   },
   {
+    "id": "au-feu-de-bois-grand-baie",
+    "name": "Au Feu de Bois",
+    "category": "manger-boire",
+    "address": "Chemin Vingt Pieds, Grand Baie",
+    "phone": "+230 5942 0708",
+    "website": "https://linktr.ee/aufeudebois.mu",
+    "googleMapsUrl": "",
+    "lat": -20.0184334,
+    "lng": 57.5856348,
+    "themes": [
+      "restaurants"
+    ],
+    "hours": "Tous les jours 10h-22h",
+    "priceRange": "se-faire-plaisir",
+    "zone": "nord",
+    "description": "Rooftop récemment ouvert à Grand Baie, spécialisé dans les grillades au feu de bois — tenderloin Black Angus, côtelettes d'agneau, accompagnements soignés comme la purée fumée. On y va pour l'ambiance chaleureuse en soirée et le service attentionné, mais mieux vaut réserver le week-end vu l'affluence.",
+    "filters": [
+      "grillades",
+      "viandes"
+    ]
+  },
+  {
     "id": "restaurant-coolen-chez-ram",
     "name": "Restaurant Coolen Chez Ram",
     "category": "manger-boire",
@@ -1741,6 +1763,28 @@
       "mauricienne"
     ],
     "hours": "Tous les jours 17h-01h"
+  },
+  {
+    "id": "la-scarpetta-grand-baie",
+    "name": "La Scarpetta",
+    "category": "manger-boire",
+    "address": "Royal Road, Grand Baie",
+    "phone": "+230 5475 6925",
+    "website": "https://lascarpetta.mu",
+    "googleMapsUrl": "",
+    "lat": -20.015382,
+    "lng": 57.5803,
+    "themes": [
+      "restaurants"
+    ],
+    "hours": "Lun-Sam 7h-22h, Dim 7h-18h",
+    "priceRange": "prix-moyen",
+    "zone": "nord",
+    "description": "Restaurant italien les pieds dans l'eau à Grand Baie, avec vue lagon du petit-déjeuner au dîner : pâtes fraîches, pizzas et tapas à l'apéro. On y va pour le cadre reposant en bord de mer et l'ambiance chaleureuse en soirée, mais mieux vaut réserver car les meilleures tables partent vite.",
+    "filters": [
+      "italien",
+      "plus-belles-vues"
+    ]
   },
   {
     "id": "le-cabanon-bar-a-coquillettes-grand-baie",
@@ -6278,10 +6322,12 @@
       "restaurants"
     ],
     "zone": "nord",
-    "hours": "Lun-Sam 8h-15h, fermé Dim",
-    "description": "Restaurant italo-mauricien de Pointe aux Canonniers (Grand Baie) dans un cadre de jardin, plats phares : risotto aux champignons, cannelloni ricotta-épinards, lasagne maison. Fermé le dimanche.",
+    "hours": "Lun-Mer et Sam 8h-15h, Ven 8h-15h & 18h30-21h, fermé Dim",
+    "priceRange": "prix-moyen",
+    "description": "Restaurant italo-mauricien de Pointe aux Canonniers (Grand Baie) dans un cadre de jardin, plats phares : risotto aux champignons, cannelloni ricotta-épinards, lasagne maison. Fermé le dimanche, dîner uniquement le vendredi soir.",
     "filters": [
-      "italien"
+      "italien",
+      "europeenne"
     ]
   },
   {
@@ -38137,7 +38183,7 @@
     "id": "the-lemon-tree-cafe-mapou",
     "name": "The Lemon Tree Café",
     "category": "manger-boire",
-    "address": "Circle Square Forbach, Mapou",
+    "address": "Espace Maison et Jardin, Forbach, Mapou",
     "phone": "+230 266 8685",
     "lat": -20.0547225,
     "lng": 57.6132525,
@@ -38145,7 +38191,7 @@
       "cafes-bars-glaciers"
     ],
     "zone": "nord",
-    "hours": "Lun-Jeu et Sam 8h-17h, Ven 8h-23h, Dim 8h-14h",
+    "hours": "Lun-Sam 8h-17h, fermé dim",
     "description": "Café au joli cadre de jardin, à l'inspiration portugaise : petits-déjeuners réputés, pasteis de nata et cupcakes qui feraient partie des meilleurs de l'île. Ambiance conviviale, aussi utilisé pour des fêtes privées. Second numéro : +230 266 8799.",
     "filters": [
       "cafes-terrasses"

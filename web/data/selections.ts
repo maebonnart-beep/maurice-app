@@ -674,6 +674,7 @@ export const SELECTIONS: Selection[] = [
       "da-andrea-e-maila",
       "mamma-mia-che-gelato-grand-baie",
       "lartigiano-mont-choisy",
+      "la-scarpetta-grand-baie",
     ],
   },
   {
