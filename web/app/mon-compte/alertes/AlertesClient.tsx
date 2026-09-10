@@ -39,6 +39,10 @@ export function AlertesClient({
     filters?: string[];
   };
 }) {
+  // Venue d'une fiche/rubrique (type imposé par le contexte) : pas de choix à
+  // afficher, juste le formulaire pour ce type-là. Venue de "Mon compte" (pas
+  // de type dans l'URL) : le choix Annonces/Événements est affiché.
+  const typeLocked = prefill.type !== undefined;
   const [alerts, setAlerts] = useState<SavedSearch[] | null>(null);
   const [type, setType] = useState<SavedSearchType>(prefill.type ?? "listing");
   const [category, setCategory] = useState<ListingCategoryKey | "">(
@@ -149,28 +153,34 @@ export function AlertesClient({
       ) : null}
 
       <form onSubmit={handleSubmit} className="flex flex-col gap-4 bg-surface border border-border rounded-2xl p-4">
-        <p className="font-serif text-[15px] font-semibold leading-tight">Créer une alerte</p>
+        <p className="font-serif text-[15px] font-semibold leading-tight">
+          {typeLocked
+            ? `Créer une alerte ${type === "listing" ? "annonces" : "événements"}`
+            : "Créer une alerte"}
+        </p>
 
-        <div className="flex gap-2">
-          <button
-            type="button"
-            onClick={() => setType("listing")}
-            className={`flex-1 h-[38px] rounded-xl text-[13px] font-semibold border ${
-              type === "listing" ? "bg-primary text-white border-primary" : "border-border text-ink"
-            }`}
-          >
-            Annonces
-          </button>
-          <button
-            type="button"
-            onClick={() => setType("event")}
-            className={`flex-1 h-[38px] rounded-xl text-[13px] font-semibold border ${
-              type === "event" ? "bg-primary text-white border-primary" : "border-border text-ink"
-            }`}
-          >
-            Événements
-          </button>
-        </div>
+        {!typeLocked && (
+          <div className="flex gap-2">
+            <button
+              type="button"
+              onClick={() => setType("listing")}
+              className={`flex-1 h-[38px] rounded-xl text-[13px] font-semibold border ${
+                type === "listing" ? "bg-primary text-white border-primary" : "border-border text-ink"
+              }`}
+            >
+              Annonces
+            </button>
+            <button
+              type="button"
+              onClick={() => setType("event")}
+              className={`flex-1 h-[38px] rounded-xl text-[13px] font-semibold border ${
+                type === "event" ? "bg-primary text-white border-primary" : "border-border text-ink"
+              }`}
+            >
+              Événements
+            </button>
+          </div>
+        )}
 
         {type === "listing" ? (
           <>
