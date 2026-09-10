@@ -287,3 +287,9 @@ create policy "favorite_lists: owner all" on favorite_lists for all
 
 grant select, insert, update, delete on favorite_lists to authenticated;
 grant all on favorite_lists to service_role;
+
+-- Rappel J-7 pour les alertes événements : en plus de l'email à la création
+-- de la fiche, un second email relance quand l'événement est à 7 jours ou
+-- moins (date exacte connue uniquement). reminded_ids suit les IDs déjà
+-- rappelés, séparément de notified_ids (création), pour ne jamais doubler.
+alter table saved_searches add column reminded_ids jsonb not null default '[]'::jsonb;
