@@ -52,13 +52,14 @@ export async function PATCH(request: Request) {
     return NextResponse.json({ error: admin.error }, { status: admin.status });
   }
 
-  const { id, isAdmin, isCommunityMember } = (await request.json()) as {
+  const { id, isAdmin, isCommunityMember, isPremium } = (await request.json()) as {
     id: string;
     isAdmin?: boolean;
     isCommunityMember?: boolean;
+    isPremium?: boolean;
   };
 
-  if (!id || (isAdmin === undefined && isCommunityMember === undefined)) {
+  if (!id || (isAdmin === undefined && isCommunityMember === undefined && isPremium === undefined)) {
     return NextResponse.json({ error: "id et au moins un champ à modifier sont requis." }, { status: 400 });
   }
 
@@ -66,9 +67,14 @@ export async function PATCH(request: Request) {
     return NextResponse.json({ error: "Impossible de te retirer tes propres droits admin." }, { status: 400 });
   }
 
-  const patch: { is_admin?: boolean; is_community_member?: boolean } = {};
+  // isPremium : bascule manuelle de subscription_status, indépendante de Stripe
+  // (comptes de test, comp d'un beta-testeur…). N'y touche pas
+  // stripe_subscription_id/stripe_customer_id : si l'utilisateur passe un
+  // vrai abonnement ensuite, le webhook Stripe reprend la main normalement.
+  const patch: { is_admin?: boolean; is_community_member?: boolean; subscription_status?: string } = {};
   if (isAdmin !== undefined) patch.is_admin = isAdmin;
   if (isCommunityMember !== undefined) patch.is_community_member = isCommunityMember;
+  if (isPremium !== undefined) patch.subscription_status = isPremium ? "active" : "none";
 
   const supabase = createServiceRoleClient();
   const { data, error } = await supabase.from("profiles").update(patch).eq("id", id).select().single();

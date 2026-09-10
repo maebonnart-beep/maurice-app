@@ -38,11 +38,15 @@ export function AdminUsersClient({ currentUserId }: { currentUserId: string }) {
     load();
   }, []);
 
-  async function toggle(id: string, field: "isAdmin" | "isCommunityMember", next: boolean) {
+  async function toggle(id: string, field: "isAdmin" | "isCommunityMember" | "isPremium", next: boolean) {
     if (field === "isAdmin" && !next && id === currentUserId) return;
     if (field === "isAdmin") {
       const verb = next ? "donner les droits admin à" : "retirer les droits admin de";
       if (!window.confirm(`Confirmer : ${verb} cet utilisateur ?`)) return;
+    }
+    if (field === "isPremium") {
+      const verb = next ? "passer cet utilisateur premium manuellement" : "retirer le premium manuel de cet utilisateur";
+      if (!window.confirm(`Confirmer : ${verb} (sans passer par Stripe) ?`)) return;
     }
     setBusyId(id);
     await fetch("/api/admin/users", {
@@ -95,6 +99,15 @@ export function AdminUsersClient({ currentUserId }: { currentUserId: string }) {
                 onChange={(e) => toggle(u.id, "isAdmin", e.target.checked)}
               />
               Admin
+            </label>
+            <label className="flex items-center gap-1.5 text-sm shrink-0">
+              <input
+                type="checkbox"
+                checked={u.subscriptionStatus === "active"}
+                disabled={busyId === u.id}
+                onChange={(e) => toggle(u.id, "isPremium", e.target.checked)}
+              />
+              Premium (manuel)
             </label>
           </div>
         ))}
