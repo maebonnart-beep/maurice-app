@@ -2682,7 +2682,8 @@ export default function DirectoryClient({
                   <>
                     <p className="font-serif text-lg font-semibold leading-tight">Mon compte Koté Moris</p>
                     <p className="text-[13px] text-muted leading-snug">
-                      Connecte-toi pour t&apos;abonner et déposer des annonces seconde main.
+                      Connecte-toi pour créer ton profil Koté Moris : favoris sauvegardés et
+                      synchronisés sur tous tes appareils, et alertes email (annonces & événements).
                     </p>
                     <Link
                       href="/mon-compte"
@@ -2701,12 +2702,23 @@ export default function DirectoryClient({
                   {
                     avatar: "/avatar-decouverte.png",
                     label: "Découverte",
-                    features: ["Parcourir l'annuaire et les sélections", "Favoris, « à tester » et « testé »"],
+                    href: null as string | null,
+                    features: [
+                      "Navigation illimitée dans l'annuaire",
+                      "Profil avec favoris (coups de cœur, à tester, testé)",
+                      "Alertes email (annonces & événements)",
+                      "Partage de ses adresses",
+                    ],
                   },
                   {
                     avatar: "/avatar-premium.png",
-                    label: "Premium",
-                    features: ["Annonces seconde main entre particuliers", "Accès aux événements"],
+                    label: `Passer en Premium · ${PREMIUM_PRICE_LABEL}`,
+                    href: "/mon-compte/upgrade",
+                    features: [
+                      "Jusqu'à 10 annonces seconde main actives, contact direct par WhatsApp",
+                      "Accès complet aux événements et alertes personnalisées par thématique",
+                      "Listes de favoris nommées et partageables par lien",
+                    ],
                   },
                 ].map((tier) => (
                   <div key={tier.label} className="flex items-center gap-3">
@@ -2717,7 +2729,13 @@ export default function DirectoryClient({
                       className="w-12 h-12 rounded-full object-cover shrink-0"
                     />
                     <div className="min-w-0">
-                      <p className="m-0 text-[13px] font-bold text-ink">{tier.label}</p>
+                      {tier.href ? (
+                        <Link href={tier.href} className="text-[13px] font-bold text-primary-deep underline">
+                          {tier.label}
+                        </Link>
+                      ) : (
+                        <p className="m-0 text-[13px] font-bold text-ink">{tier.label}</p>
+                      )}
                       <ul className="m-0 mt-0.5 pl-0 list-none flex flex-col gap-0.5">
                         {tier.features.map((f) => (
                           <li key={f} className="text-[12px] text-muted leading-snug">{f}</li>
