@@ -90,6 +90,7 @@ import {
   Backpack,
   PersonSimpleWalk,
   Storefront,
+  BellRinging,
   MagnifyingGlass,
   ShieldCheck,
   Package,
@@ -2759,6 +2760,19 @@ export default function DirectoryClient({
                       {account.listings.filter((l) => l.status === "pending" || l.status === "approved").length}/
                       {MAX_ACTIVE_LISTINGS} annonces actives
                     </span>
+                  </span>
+                  <span className="shrink-0 text-[12.5px] font-semibold text-primary-deep underline">Gérer</span>
+                </Link>
+              )}
+
+              {account.loggedIn && (
+                <Link
+                  href="/mon-compte/alertes"
+                  className="flex items-center justify-between gap-3 bg-surface border border-border rounded-2xl shadow-sm p-3.5"
+                >
+                  <span className="flex items-center gap-2.5 min-w-0">
+                    <BellRinging size={18} className="text-muted shrink-0" aria-hidden />
+                    <span className="text-[13px] text-ink truncate">Alertes email (annonces & événements)</span>
                   </span>
                   <span className="shrink-0 text-[12.5px] font-semibold text-primary-deep underline">Gérer</span>
                 </Link>
