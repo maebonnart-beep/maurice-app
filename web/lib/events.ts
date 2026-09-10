@@ -56,9 +56,15 @@ export function eventBannerLabel(b: Business): string | null {
   return label.charAt(0).toUpperCase() + label.slice(1);
 }
 
-/** Vrai uniquement pour un événement ponctuel dont la date est confirmée passée. */
+/**
+ * Vrai pour tout événement dont la date exacte connue (eventEndDate ou eventStartDate) est passée,
+ * qu'il soit ponctuel ou récurrent : la fiche se masque une fois l'édition passée. Pour un événement
+ * annuel/périodique sans date exacte (seulement un `period` approximatif), aucune date passée n'est
+ * détectable ici — `sortDateFor` projette alors automatiquement sur l'année suivante, donc la fiche
+ * reste visible en continu. Un événement annuel avec date exacte réapparaît en année N+1 dès que sa
+ * date est mise à jour vers la prochaine édition (future), ce qui la fait ressortir de ce filtre.
+ */
 export function isPastEvent(b: Business, today: Date = new Date()): boolean {
-  if (b.eventRecurrence !== "ponctuel") return false;
   const endStr = b.eventEndDate || b.eventStartDate;
   if (!endStr) return false;
   const end = new Date(endStr + "T23:59:59");

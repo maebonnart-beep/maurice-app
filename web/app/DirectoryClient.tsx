@@ -870,7 +870,7 @@ export default function DirectoryClient({
           const matchesKids = facetBadges.has("kids-friendly") && (b.themes || []).includes("kids-friendly");
           if (!matchesBadge && !matchesKids) return false;
         }
-        // Agenda : masque les événements ponctuels dont la date est passée.
+        // Agenda : masque les événements dont la date exacte connue est passée (ponctuels ou récurrents).
         if (b.category === "agenda" && isPastEvent(b)) return false;
         if (!q) return true;
         return fuzzyMatchTokens(searchTokensById[b.id] ?? [], q);
