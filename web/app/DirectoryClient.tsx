@@ -216,6 +216,16 @@ export default function DirectoryClient({
     useFavoriteSelections();
   const { suggestions } = useSuggestions();
   const account = useAccount();
+  // Avatar par défaut (tant que l'utilisateur n'a pas uploadé sa propre photo),
+  // différent selon son statut : admin > contributeur KM > premium > découverte.
+  const defaultAvatar =
+    account.role === "admin"
+      ? "/avatar-admin.png"
+      : account.role === "community"
+      ? "/avatar-contributeur.png"
+      : account.isPremium
+      ? "/avatar-premium.png"
+      : "/avatar-decouverte.png";
   useFavoritesSync(account.loggedIn, mergeStatuses, mergeFavoriteSelections);
   // Profil → Mes suggestions : pour chaque adresse proposée, détection best-effort
   // (nom + catégorie) d'une fiche correspondante déjà intégrée à l'annuaire.
@@ -2573,7 +2583,7 @@ export default function DirectoryClient({
                 <div className="relative w-20 h-20">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
-                    src={avatarPreview ?? account.avatarUrl ?? "/avatar-admin.png"}
+                    src={avatarPreview ?? account.avatarUrl ?? defaultAvatar}
                     alt="Photo de profil"
                     className="w-20 h-20 rounded-full object-cover"
                   />
