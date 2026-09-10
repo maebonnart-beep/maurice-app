@@ -245,3 +245,45 @@ create policy "avatars storage: owner update" on storage.objects for update
 create policy "avatars storage: owner delete" on storage.objects for delete
   to authenticated
   using (bucket_id = 'avatars' and (storage.foldername(name))[1] = auth.uid()::text);
+
+-- Sécurité : la policy RLS "listings: owner update own" ne restreint que les
+-- LIGNES (auth.uid() = user_id), pas les colonnes — un propriétaire pouvait
+-- donc en théorie appeler l'API Supabase directement pour passer sa propre
+-- annonce en status='approved' (auto-approbation, contournement de la
+-- modération et de la limite de 10 annonces actives), ou même l'insérer déjà
+-- approuvée dès le départ. On restreint donc au niveau colonne : un
+-- utilisateur authentifié ne peut insérer/modifier que le contenu de son
+-- annonce (titre, description, prix, catégorie, whatsapp, zone) — jamais
+-- status/approved_at/expires_at/rejection_reason, qui ne transitent que par
+-- les routes serveur (clé service-role : approbation admin, renouvellement).
+revoke insert, update on listings from authenticated;
+grant insert (user_id, title, description, price, category, whatsapp, zone) on listings to authenticated;
+grant update (title, description, price, category, whatsapp, zone) on listings to authenticated;
+
+-- Listes de favoris nommées (premium) : une fiche peut appartenir à plusieurs
+-- listes, en plus du statut favori/à tester/testé existant (lib/favorites.ts,
+-- inchangé). business_ids référence data/businesses.json (pas de FK possible :
+-- ces fiches ne vivent pas dans Supabase). share_token, quand non-null, rend
+-- la liste consultable via app/liste/[token] — mais uniquement via une route
+-- serveur utilisant la clé service-role (app/liste/[token]/page.tsx) : aucun
+-- grant anon n'est accordé ici, pour empêcher qu'on énumère toutes les listes
+-- partagées en interrogeant la table REST directement.
+create table favorite_lists (
+  id bigint generated always as identity primary key,
+  user_id uuid not null references auth.users (id) on delete cascade,
+  name text not null,
+  business_ids text[] not null default '{}',
+  share_token text,
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now()
+);
+
+create index favorite_lists_user_id_idx on favorite_lists (user_id);
+create unique index favorite_lists_share_token_idx on favorite_lists (share_token) where share_token is not null;
+
+alter table favorite_lists enable row level security;
+create policy "favorite_lists: owner all" on favorite_lists for all
+  using (auth.uid() = user_id) with check (auth.uid() = user_id);
+
+grant select, insert, update, delete on favorite_lists to authenticated;
+grant all on favorite_lists to service_role;

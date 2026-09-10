@@ -392,6 +392,13 @@ export default function DirectoryClient({
   const [geoStatus, setGeoStatus] = useState<"idle" | "loading" | "denied" | "unavailable" | "ok">("idle");
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [openId, setOpenId] = useState<string | null>(null);
+
+  // Ouvre directement une fiche si l'URL porte ?open=<id> — utilisé par les
+  // liens de retour depuis une liste de favoris partagée (app/liste/[token]).
+  useEffect(() => {
+    const id = new URLSearchParams(window.location.search).get("open");
+    if (id) setOpenId(id);
+  }, []);
   // Accueil → Listes de Koté Moris : sélection éditoriale ouverte (null = grille des sélections).
   const [selectedListId, setSelectedListId] = useState<string | null>(null);
   // Filtre de la grille "Explorer toutes nos sélections" (Tous / grandes thématiques).

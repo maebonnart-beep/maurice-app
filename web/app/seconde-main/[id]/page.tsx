@@ -7,6 +7,7 @@ import { LISTING_CATEGORIES } from "@/lib/marketplace/types";
 import { listingPhotoUrl } from "@/lib/marketplace/constants";
 import { whatsappContactLink } from "@/lib/format";
 import { ActionButton } from "@/components/ui/ActionButton";
+import { PremiumSellerBadge } from "@/components/ui/Badge";
 
 const ZONE_LABELS: Record<string, string> = {
   nord: "Nord",
@@ -78,11 +79,14 @@ export default async function ListingDetailPage({
         </div>
       )}
 
-      {categoryLabel && (
-        <span className="inline-flex items-center text-[11px] font-bold px-1.5 py-0.5 rounded-pill bg-primary-tint text-primary-deep">
-          {categoryLabel}
-        </span>
-      )}
+      <div className="flex items-center gap-1.5 flex-wrap">
+        {categoryLabel && (
+          <span className="inline-flex items-center text-[11px] font-bold px-1.5 py-0.5 rounded-pill bg-primary-tint text-primary-deep">
+            {categoryLabel}
+          </span>
+        )}
+        <PremiumSellerBadge className="inline-flex items-center gap-1 px-2 py-0.5 rounded-pill text-white text-[11px] font-bold bg-primary-deep" />
+      </div>
       <h1 className="m-0 mt-1.5 font-serif text-[22px] font-semibold leading-tight">{listing.title}</h1>
       <p className="m-0 mt-1 flex items-center gap-2 text-muted text-[13px]">
         {listing.zone && <span>{ZONE_LABELS[listing.zone] ?? listing.zone}</span>}

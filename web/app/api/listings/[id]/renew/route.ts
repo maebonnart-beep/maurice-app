@@ -1,7 +1,20 @@
 import { NextResponse } from "next/server";
-import { createClient } from "@/lib/supabase/server";
+import { createClient, createServiceRoleClient } from "@/lib/supabase/server";
+import { LISTING_TTL_DAYS } from "@/lib/marketplace/constants";
 
-/** Renouvellement d'une annonce expirée (ou sur le point de l'être) par son propriétaire : repasse en modération. */
+/**
+ * Renouvellement d'une annonce expirée (ou sur le point de l'être) par son propriétaire.
+ * Le contenu ne change pas — déjà validé lors de la première approbation — donc on
+ * ré-approuve directement plutôt que de repasser par la modération admin : un vrai
+ * renouvellement en un clic, sans trou de visibilité en attendant une validation.
+ *
+ * La mise à jour finale passe par la clé service-role : le grant UPDATE sur
+ * `listings` pour `authenticated` ne couvre que les colonnes de contenu
+ * (titre, description, prix, catégorie, whatsapp, zone) — le propriétaire ne
+ * peut plus modifier status/approved_at/expires_at lui-même, pour empêcher
+ * l'auto-approbation. Propriété et éligibilité restent vérifiées juste avant,
+ * avec le client session.
+ */
 export async function PATCH(
   _request: Request,
   { params }: { params: Promise<{ id: string }> }
@@ -33,9 +46,13 @@ export async function PATCH(
     );
   }
 
-  const { data, error } = await supabase
+  const { data, error } = await createServiceRoleClient()
     .from("listings")
-    .update({ status: "pending", expires_at: null, approved_at: null })
+    .update({
+      status: "approved",
+      approved_at: new Date().toISOString(),
+      expires_at: new Date(Date.now() + LISTING_TTL_DAYS * 24 * 60 * 60 * 1000).toISOString(),
+    })
     .eq("id", id)
     .select()
     .single();

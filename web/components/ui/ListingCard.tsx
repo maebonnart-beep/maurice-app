@@ -3,6 +3,7 @@ import { MapPin } from "@phosphor-icons/react/dist/ssr";
 import type { Listing } from "@/lib/marketplace/types";
 import { LISTING_CATEGORIES } from "@/lib/marketplace/types";
 import { listingPhotoUrl } from "@/lib/marketplace/constants";
+import { PremiumSellerBadge } from "@/components/ui/Badge";
 
 const ZONE_LABELS: Record<string, string> = {
   nord: "Nord",
@@ -31,7 +32,7 @@ export function ListingCard({ listing }: { listing: Listing }) {
       className="block bg-surface border border-border rounded-card p-2.5 shadow-card flex items-center gap-3 no-underline text-ink"
     >
       <span
-        className="w-16 h-16 rounded-xl overflow-hidden shrink-0 flex items-center justify-center"
+        className="w-16 h-16 rounded-xl overflow-hidden shrink-0 flex items-center justify-center relative"
         style={{ background: "var(--primary-tint)" }}
         aria-hidden
       >
@@ -41,6 +42,7 @@ export function ListingCard({ listing }: { listing: Listing }) {
         ) : (
           <span className="text-primary-deep text-xs font-semibold">Photo</span>
         )}
+        <PremiumSellerBadge compact className="absolute -top-1 -right-1 inline-flex items-center justify-center w-5 h-5 rounded-full text-white shrink-0 bg-primary-deep border-2 border-surface" />
       </span>
       <div className="flex-1 min-w-0">
         {categoryLabel && (

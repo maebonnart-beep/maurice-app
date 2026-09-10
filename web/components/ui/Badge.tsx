@@ -1,3 +1,4 @@
+import { Crown } from "@phosphor-icons/react/dist/ssr";
 import type { CategoryKey } from "@/lib/types";
 import { CATEGORY_MAP } from "@/data/categories";
 import { iconForKey } from "@/lib/icons";
@@ -83,6 +84,38 @@ export function SpecialBadge({ variant, className }: { variant: SpecialBadgeVari
       style={{ background: AGENCY_COLOR }}
     >
       🏢 Agence organisatrice
+    </span>
+  );
+}
+
+/**
+ * Vendeur premium (rubrique seconde main) : le dépôt d'annonce étant réservé
+ * aux comptes premium, ce badge s'affiche sur toute annonce approuvée —
+ * c'est un signal de confiance pour l'acheteur, pas une distinction rare.
+ */
+export function PremiumSellerBadge({ compact, className }: { compact?: boolean; className?: string }) {
+  if (compact) {
+    return (
+      <span
+        title="Vendeur premium"
+        aria-label="Vendeur premium"
+        className={
+          className ??
+          "self-start inline-flex items-center justify-center w-5 h-5 rounded-full text-white shrink-0 bg-primary-deep"
+        }
+      >
+        <Crown size={11} weight="fill" aria-hidden />
+      </span>
+    );
+  }
+  return (
+    <span
+      className={
+        className ??
+        "self-start inline-flex items-center gap-1 px-2.5 py-1 rounded-pill text-white text-xs font-bold bg-primary-deep"
+      }
+    >
+      <Crown size={13} weight="fill" aria-hidden /> Vendeur premium
     </span>
   );
 }
