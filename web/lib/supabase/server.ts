@@ -28,6 +28,16 @@ export async function createClient() {
   );
 }
 
+/** Client Supabase anonyme (clé anon, sans cookies) : pour les lectures publiques côté serveur qui ne
+ *  doivent pas rendre la route dynamique (cookies() force un rendu par requête). RLS reste appliqué. */
+export function createAnonClient() {
+  return createServerClient(
+    process.env.NEXT_PUBLIC_SUPABASE_URL!,
+    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+    { cookies: { getAll: () => [], setAll: () => {} } }
+  );
+}
+
 /** Client Supabase avec la clé service-role : bypass RLS, réservé aux routes serveur (admin, webhooks, cron). */
 export function createServiceRoleClient() {
   return createServerClient(

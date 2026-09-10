@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { revalidateTag } from "next/cache";
 import { createServiceRoleClient } from "@/lib/supabase/server";
 import { requireAdmin } from "@/lib/supabase/requireAdmin";
 import { LISTING_TTL_DAYS } from "@/lib/marketplace/constants";
@@ -77,6 +78,8 @@ export async function PATCH(request: Request) {
   if (error) {
     return NextResponse.json({ error: error.message }, { status: 500 });
   }
+
+  revalidateTag("preview-listings", "max");
 
   return NextResponse.json({ ok: true, listing: data });
 }
