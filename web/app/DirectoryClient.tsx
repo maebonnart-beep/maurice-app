@@ -2704,14 +2704,9 @@ export default function DirectoryClient({
                     features: ["Parcourir l'annuaire et les sélections", "Favoris, « à tester » et « testé »"],
                   },
                   {
-                    avatar: "/avatar-contributeur.png",
-                    label: "Contributeur KM",
-                    features: ["Suggérer de nouvelles adresses", "Accès libre aux événements"],
-                  },
-                  {
-                    avatar: "/avatar-admin.png",
-                    label: "Admin",
-                    features: ["Modération des annonces seconde main", "Gestion des utilisateurs"],
+                    avatar: "/avatar-premium.png",
+                    label: "Premium",
+                    features: ["Annonces seconde main entre particuliers", "Accès aux événements"],
                   },
                 ].map((tier) => (
                   <div key={tier.label} className="flex items-center gap-3">
