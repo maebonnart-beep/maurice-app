@@ -2259,6 +2259,22 @@ export default function DirectoryClient({
                 </div>
               ) : (
                 <div className="max-w-[560px] mx-auto flex flex-col gap-5 pt-1">
+                  {/* Incite (sans l'imposer) à se connecter pour ne pas perdre ses
+                      favoris en cas de changement de téléphone/navigateur : ils
+                      restent utilisables en local sans compte, cf. lib/favorites.ts. */}
+                  {!account.loggedIn && (
+                    <Link
+                      href="/mon-compte"
+                      className="flex items-center justify-between gap-3 bg-primary-tint border border-primary/20 rounded-xl p-3.5"
+                    >
+                      <span className="text-[13px] text-primary-deep font-medium">
+                        Connecte-toi pour sauvegarder tes favoris et les retrouver sur un autre appareil.
+                      </span>
+                      <span className="shrink-0 text-[12.5px] font-semibold text-primary-deep underline">
+                        Se connecter
+                      </span>
+                    </Link>
+                  )}
                   {/* Accès direct : passe d'une liste à l'autre sans avoir à scroller. */}
                   <div className="flex items-center gap-2 flex-wrap sticky top-0 z-10 -mx-4 lg:-mx-5 px-4 lg:px-5 py-2 bg-bg">
                     <button
