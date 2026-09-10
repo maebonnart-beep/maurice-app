@@ -17140,7 +17140,7 @@
   },
   {
     "id": "black-river-peak-north-trail",
-    "name": "Black River Peak North Trail",
+    "name": "Black River Peak Trail",
     "category": "faire-du-sport",
     "address": "HCW5+PHR, Chamarel",
     "phone": "",
@@ -54950,5 +54950,129 @@
     "filters": [
       "banques-assurances-argent"
     ]
+  },
+  {
+    "id": "machabee-forest-loop-trail",
+    "name": "Machabée Forest Loop Trail",
+    "category": "faire-du-sport",
+    "address": "Départ Pétrin, Parc national des Gorges de Rivière Noire",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Machabee%20Forest%20Loop%20Trail%20Black%20River%20Gorges%20Mauritius",
+    "lat": -20.4165,
+    "lng": 57.4886,
+    "themes": [
+      "randonnee-trail"
+    ],
+    "duration": "2h-3h",
+    "distance": "8,9 km",
+    "elevationGain": "389 m D+",
+    "difficultyLevel": "habitue",
+    "guideRecommended": false,
+    "zone": "centre",
+    "description": "Boucle au départ du centre des visiteurs de Pétrin, combinant le Machabée Ridge Trail et la Mare Longue Loop de part et d'autre : traversée en forêt dense avant de rejoindre la lèvre d'une cascade surplombant la Rivière Noire, avec de belles vues côtières vers l'ouest. Plusieurs traversées de rivière et une portion en forêt de goyaviers de Chine ; balisage présent mais restez attentif aux embranchements."
+  },
+  {
+    "id": "mare-longue-loop",
+    "name": "Mare Longue Loop",
+    "category": "faire-du-sport",
+    "address": "Départ Pétrin, Parc national des Gorges de Rivière Noire",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Mare%20Longue%20Loop%20Black%20River%20Gorges%20Mauritius",
+    "lat": -20.4165,
+    "lng": 57.4886,
+    "themes": [
+      "randonnee-trail"
+    ],
+    "duration": "3h-4h",
+    "distance": "12,4 km",
+    "elevationGain": "235 m D+",
+    "difficultyLevel": "habitue",
+    "guideRecommended": false,
+    "zone": "centre",
+    "description": "Longue boucle au départ de Pétrin le long des crêtes du parc avec vues sur les gorges, puis tour du réservoir de Mare Longue. Majoritairement une piste en terre ombragée, avec quelques kilomètres de sentier en sous-bois autour du réservoir ; dénivelé modeste malgré la distance. Traversées de rivière sur le côté est (pieds mouillés possibles) et belle section de forêt naine ; possibilité de faire le tour du réservoir dans les deux sens."
+  },
+  {
+    "id": "parakeet-trail",
+    "name": "Parakeet Trail",
+    "category": "faire-du-sport",
+    "address": "Entre l'entrée Rivière Noire et Plaine Champagne, Parc national des Gorges de Rivière Noire",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Parakeet%20Trail%20Black%20River%20Gorges%20Mauritius",
+    "lat": -20.4230272,
+    "lng": 57.4298676,
+    "themes": [
+      "randonnee-trail"
+    ],
+    "duration": "3h-4h",
+    "distance": "8 km (aller simple)",
+    "difficultyLevel": "confirme",
+    "guideRecommended": true,
+    "zone": "ouest",
+    "description": "Sentier reliant l'entrée Rivière Noire à Plaine Champagne, l'un des plus fréquentés du parc. Montée puis descente soutenues sur une crête, essentiellement sous canopée ; une traversée de rivière aux rochers glissants peut mouiller les pieds en cas de fort débit. Doit son nom à la Cateau vert (perruche endémique), parfois visible ou audible pour les marcheurs discrets."
+  },
+  {
+    "id": "paille-en-queue-trail",
+    "name": "Paille en Queue Trail",
+    "category": "faire-du-sport",
+    "address": "Plaine Champagne, Parc national des Gorges de Rivière Noire",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Paille%20en%20Queue%20Trail%20Black%20River%20Gorges%20Mauritius",
+    "lat": -20.4230272,
+    "lng": 57.4298676,
+    "themes": [
+      "randonnee-trail",
+      "kids-friendly"
+    ],
+    "duration": "45 min-1h",
+    "distance": "3,7 km",
+    "elevationGain": "87 m D+",
+    "difficultyLevel": "debutant",
+    "guideRecommended": false,
+    "zone": "ouest",
+    "description": "Balade facile et plate sur le plateau, à travers une forêt naine aux arbres torturés qui évoquent un décor de Dr Seuss. Bien tracé, avec quelques traversées de ruisseaux généralement franchissables à pied sec ; peu d'ombre. Doit son nom au paille-en-queue (phaéton), oiseau marin parfois observé dans le secteur. Terrain souvent boueux : bonnes chaussures recommandées."
+  },
+  {
+    "id": "savanne-trail",
+    "name": "Savanne Trail",
+    "category": "faire-du-sport",
+    "address": "Bout de la route Les Mares, Piton Savanne",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Savanne%20Trail%20Piton%20Savanne%20Les%20Mares%20Mauritius",
+    "lat": -20.4483,
+    "lng": 57.4908,
+    "themes": [
+      "randonnee-trail"
+    ],
+    "distance": "6 km aller-retour",
+    "difficultyLevel": "debutant",
+    "guideRecommended": false,
+    "zone": "sud",
+    "description": "Randonnée facile au bout de la route Les Mares jusqu'au Piton Savanne (715 m), avec vues panoramiques sur la côte sud de l'île. Itinéraire accessible, alternative plus courte et moins engagée que les sommets du massif de Rivière Noire."
+  },
+  {
+    "id": "cascade-des-gallets-trail",
+    "name": "Cascade des Gallets Trail",
+    "category": "faire-du-sport",
+    "address": "Départ parking Alexandra Falls, Parc national des Gorges de Rivière Noire",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Cascade%20des%20Gallets%20500%20Pieds%20Black%20River%20Gorges%20Mauritius",
+    "lat": -20.433764,
+    "lng": 57.4577934,
+    "themes": [
+      "randonnee-trail"
+    ],
+    "duration": "1h-2h",
+    "distance": "2,9 km aller-retour",
+    "elevationGain": "124 m D+",
+    "difficultyLevel": "confirme",
+    "guideRecommended": true,
+    "zone": "centre",
+    "description": "Aussi appelée Cascade 500 Pieds : descente courte mais raide depuis le parking d'Alexandra Falls jusqu'à la lèvre de la plus haute cascade de l'île (152 m), qui plonge vers la côte sud. Traversées de ruisseaux en début de parcours puis descente soutenue sur rochers glissants ; belles vues par temps clair, mais remontée de 30-45 min éprouvante au retour."
   }
 ]
