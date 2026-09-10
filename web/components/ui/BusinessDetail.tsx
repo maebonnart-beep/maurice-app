@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState, type ReactNode } from "react";
+import Link from "next/link";
 import type { Business } from "@/lib/types";
 import { SUBCATEGORIES, PRICE_RANGES } from "@/data/categories";
 import { trackEvent } from "@/lib/track";
@@ -123,6 +124,13 @@ export function BusinessDetail({
   const firstTheme = matchesActiveContext ? undefined : b.themes?.find((t) => t !== "kids-friendly");
   const CategoryIcon = iconForKey(b.category);
   const bannerIcon = (firstTheme && subIconFor(firstTheme)) ?? subIconFor(b.category);
+  // Lien "Créer une alerte", préremplie avec les thèmes/filtres de cet événement.
+  const eventAlertHref =
+    b.category === "agenda"
+      ? `/mon-compte/alertes?type=event${b.themes?.length ? `&themes=${b.themes.join(",")}` : ""}${
+          b.filters?.length ? `&filters=${b.filters.join(",")}` : ""
+        }`
+      : null;
   const shareText = [
     displayName(b.name),
     b.address,
@@ -365,6 +373,15 @@ export function BusinessDetail({
                 </CircleAction>
               )}
             </div>
+
+            {eventAlertHref && (
+              <Link
+                href={eventAlertHref}
+                className="self-start text-[12.5px] font-semibold text-primary-deep underline"
+              >
+                🔔 Créer une alerte pour ce type d&apos;événement
+              </Link>
+            )}
 
             {b.description && (
               <div className="flex flex-col gap-1.5 pt-1 border-t border-border">
