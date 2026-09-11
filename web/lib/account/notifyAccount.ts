@@ -32,13 +32,15 @@ export async function sendWelcomeEmail(toEmail: string) {
         subject: "Bienvenue sur Koté Moris 👋",
         html: `
           <p>Bienvenue sur Koté Moris, l'annuaire et le guide de l'île Maurice !</p>
-          <p>Avec ton compte, tu peux :</p>
+          <p>Avec ton compte, tu peux dès maintenant :</p>
           <ul>
+            <li>Explorer tout l'annuaire, par recherche libre ou par catégorie</li>
             <li>Enregistrer tes adresses préférées en favoris</li>
-            <li>Créer des alertes sur tes thématiques (nouvelles adresses, événements à venir)</li>
-            <li>Déposer des annonces sur « Seconde main entre particuliers »</li>
-            <li>Retrouver tous les événements et activités de l'île</li>
+            <li>Parcourir les Sélections Koté Moris</li>
+            <li>Consulter les annonces « Seconde main entre particuliers »</li>
+            <li>Partager tes bonnes adresses</li>
           </ul>
+          <p>Et en passant premium, tu débloques en plus l'agenda des événements, le dépôt de tes propres annonces seconde main, les alertes personnalisées et l'accès prioritaire aux nouvelles adresses.</p>
           <p>Tu as repéré une adresse manquante, une erreur sur une fiche, ou une idée pour améliorer le site ? Écris-nous à <a href="mailto:contact@kotemoris.com">contact@kotemoris.com</a>, on adore avoir des nouvelles de la communauté.</p>
           ${INSTALL_APP_HTML}
           ${SITE_LINK_HTML}
