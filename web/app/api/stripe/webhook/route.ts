@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import Stripe from "stripe";
 import { createServiceRoleClient } from "@/lib/supabase/server";
 import { getStripe } from "@/lib/stripe/server";
+import { sendUpgradeEmail } from "@/lib/account/notifyAccount";
 
 export const runtime = "nodejs";
 
@@ -40,6 +41,13 @@ export async function POST(request: Request) {
             subscription_status: "active",
           })
           .eq("id", userId);
+
+        const {
+          data: { user },
+        } = await supabase.auth.admin.getUserById(userId);
+        if (user?.email) {
+          await sendUpgradeEmail(user.email);
+        }
       }
       break;
     }

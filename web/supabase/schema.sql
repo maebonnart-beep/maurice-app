@@ -293,3 +293,18 @@ grant all on favorite_lists to service_role;
 -- moins (date exacte connue uniquement). reminded_ids suit les IDs déjà
 -- rappelés, séparément de notified_ids (création), pour ne jamais doubler.
 alter table saved_searches add column reminded_ids jsonb not null default '[]'::jsonb;
+
+-- Suivi global (pas par utilisateur) des fiches annuaire déjà notifiées par le
+-- cron notify-new-businesses, pour ne jamais renvoyer deux fois le même e-mail
+-- de "nouvelle adresse" aux comptes premium.
+create table notified_businesses (
+  business_id text primary key,
+  notified_at timestamptz not null default now()
+);
+
+alter table notified_businesses enable row level security;
+grant all on notified_businesses to service_role;
+
+-- Suivi de l'e-mail de bienvenue envoyé à la toute première connexion
+-- (app/auth/callback/route.ts) : évite de le renvoyer aux connexions suivantes.
+alter table profiles add column welcome_email_sent_at timestamptz;
