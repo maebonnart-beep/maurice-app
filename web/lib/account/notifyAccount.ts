@@ -13,7 +13,12 @@ const INSTALL_APP_HTML = `
   </ul>
 `;
 
-const SITE_LINK_HTML = `<p style="margin-top:24px"><a href="${SITE_URL}">${SITE_URL}</a></p>`;
+const SITE_LINK_HTML = `
+  <p style="margin-top:24px;text-align:center">
+    À très vite sur l'appli !<br/>
+    <a href="${SITE_URL}" style="display:inline-block;margin-top:8px;padding:10px 18px;border-radius:8px;background:#0f6e6a;color:#fff;text-decoration:none;font-weight:600;">Retrouve-nous sur Koté Moris</a>
+  </p>
+`;
 
 /** Encart premium mis en avant dans le mail de bienvenue, avec lien direct vers
  *  la page d'upgrade (mêmes arguments que UpgradeClient.tsx). */
