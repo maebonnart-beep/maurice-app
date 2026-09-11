@@ -1923,7 +1923,7 @@ export default function DirectoryClient({
                       <Crown size={11} weight="fill" aria-hidden /> PREMIUM
                     </span>
                     <p className="mt-2 text-[15px] font-bold leading-tight">Seconde main entre particuliers</p>
-                    <p className="text-[11.5px] text-muted leading-snug mt-0.5">Achetez, vendez, donnez à la communauté Koté Moris</p>
+                    <p className="text-[11.5px] text-muted leading-snug mt-0.5">Dénichez de bonnes affaires ou trouvez preneur pour vos objets, en toute confiance entre membres</p>
                   </div>
                   <span
                     className="shrink-0 flex items-center justify-center w-8 h-8 rounded-full bg-white shadow-sm text-[14px] font-bold"
@@ -2002,7 +2002,7 @@ export default function DirectoryClient({
                       <Crown size={11} weight="fill" aria-hidden /> PREMIUM
                     </span>
                     <p className="mt-2 text-[15px] font-bold leading-tight">Événements à Maurice</p>
-                    <p className="text-[11.5px] text-muted leading-snug mt-0.5">Tous les événements, sorties et festivals</p>
+                    <p className="text-[11.5px] text-muted leading-snug mt-0.5">Ne ratez plus rien : concerts, festivals, sorties culturelles et sportives près de chez vous</p>
                   </div>
                   <span
                     aria-hidden
@@ -2704,10 +2704,9 @@ export default function DirectoryClient({
                   </>
                 ) : (
                   <>
-                    <p className="font-serif text-lg font-semibold leading-tight">Mon compte Koté Moris</p>
+                    <p className="font-serif text-lg font-semibold leading-tight">👤 Connecte-toi pour profiter pleinement de Koté Moris !</p>
                     <p className="text-[13px] text-muted leading-snug">
-                      Connecte-toi pour créer ton profil Koté Moris : favoris sauvegardés et
-                      synchronisés sur tous tes appareils, et alertes email (annonces & événements).
+                      Ta connexion est nécessaire pour enregistrer et retrouver tes favoris. ❤️
                     </p>
                     <Link
                       href="/mon-compte"
@@ -2719,48 +2718,57 @@ export default function DirectoryClient({
                 )}
               </div>
 
-              {/* Légende des 3 statuts Koté Moris et de ce qu'ils débloquent. */}
+              {/* Légende des 2 statuts Koté Moris et de ce qu'ils débloquent. */}
               <div className="bg-surface border border-border rounded-2xl shadow-sm p-4 flex flex-col gap-4">
-                <p className="m-0 font-serif text-[15px] font-semibold leading-tight">Les statuts Koté Moris</p>
+                <p className="m-0 font-serif text-[15px] font-semibold leading-tight">🌴 Ton Koté Moris, ton expérience !</p>
                 {[
                   {
                     avatar: "/avatar-decouverte.png",
-                    label: "Découverte",
+                    title: "🔎 DÉCOUVERTE",
+                    price: "0 Rs — Gratuit",
                     href: null as string | null,
+                    intro: "Explore tout l'annuaire en illimité :",
                     features: [
-                      "Navigation illimitée dans l'annuaire",
-                      "Profil avec favoris (coups de cœur, à tester, testé)",
-                      "Alertes email (annonces & événements)",
-                      "Partage de ses adresses",
+                      "🔍 Recherche libre & par catégorie",
+                      "❤️ Favoris",
+                      "🌴 Sélections Koté Moris",
+                      "📤 Partage des bonnes adresses",
                     ],
                   },
                   {
                     avatar: "/avatar-premium.png",
-                    label: `Passer en Premium · ${PREMIUM_PRICE_LABEL}`,
+                    title: "⭐ PREMIUM",
+                    price: PREMIUM_PRICE_LABEL,
                     href: "/mon-compte/upgrade",
+                    intro: "Tout le mode Découverte +",
                     features: [
-                      "Jusqu'à 10 annonces seconde main actives, contact direct par WhatsApp",
-                      "Accès complet aux événements et alertes personnalisées par thématique",
-                      "Listes de favoris nommées et partageables par lien",
+                      "🎉 Événements",
+                      "♻️ Seconde main",
+                      "🔔 Alertes personnalisées",
+                      "⚡ Accès prioritaire aux nouvelles adresses",
                     ],
                   },
                 ].map((tier) => (
-                  <div key={tier.label} className="flex items-center gap-3">
+                  <div key={tier.title} className="flex items-center gap-3.5">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                       src={tier.avatar}
-                      alt={tier.label}
-                      className="w-12 h-12 rounded-full object-cover shrink-0"
+                      alt={tier.title}
+                      className="w-16 h-16 rounded-full object-cover shrink-0"
                     />
                     <div className="min-w-0">
-                      {tier.href ? (
-                        <Link href={tier.href} className="text-[13px] font-bold text-primary-deep underline">
-                          {tier.label}
-                        </Link>
-                      ) : (
-                        <p className="m-0 text-[13px] font-bold text-ink">{tier.label}</p>
-                      )}
-                      <ul className="m-0 mt-0.5 pl-0 list-none flex flex-col gap-0.5">
+                      <div className="flex items-baseline gap-2 flex-wrap">
+                        {tier.href ? (
+                          <Link href={tier.href} className="text-[13px] font-bold text-primary-deep underline">
+                            {tier.title}
+                          </Link>
+                        ) : (
+                          <p className="m-0 text-[13px] font-bold text-ink">{tier.title}</p>
+                        )}
+                        <span className="text-[12px] font-semibold text-muted">{tier.price}</span>
+                      </div>
+                      <p className="m-0 mt-0.5 text-[12px] text-muted leading-snug">{tier.intro}</p>
+                      <ul className="m-0 mt-1 pl-0 list-none flex flex-col gap-0.5">
                         {tier.features.map((f) => (
                           <li key={f} className="text-[12px] text-muted leading-snug">{f}</li>
                         ))}
