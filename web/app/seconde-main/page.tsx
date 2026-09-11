@@ -1,7 +1,9 @@
 import Link from "next/link";
+import { BellRinging } from "@phosphor-icons/react/dist/ssr";
 import { createClient } from "@/lib/supabase/server";
 import { ListingCard } from "@/components/ui/ListingCard";
-import { LISTING_CATEGORIES } from "@/lib/marketplace/types";
+import { QuickAlertButton } from "@/components/ui/QuickAlertButton";
+import { LISTING_CATEGORIES, type ListingCategoryKey } from "@/lib/marketplace/types";
 import { mapListingRow } from "@/lib/marketplace/mapRow";
 
 export const metadata = { title: "Seconde main — Maurice+" };
@@ -26,10 +28,13 @@ export default async function SecondeMainPage({
 
   const { data } = await query;
   const listings = (data ?? []).map(mapListingRow);
+  const validCategory = LISTING_CATEGORIES.some((c) => c.key === categorie)
+    ? (categorie as ListingCategoryKey)
+    : undefined;
 
   return (
     <div className="max-w-[640px] mx-auto px-4 pb-24 pt-6">
-      <div className="flex items-center justify-between gap-3 mb-4">
+      <div className="flex items-center justify-between gap-3 mb-1">
         <div>
           <p className="font-serif text-xl font-semibold leading-tight">Seconde main</p>
           <p className="text-[13px] text-muted">Entre particuliers, contact direct par WhatsApp</p>
@@ -41,6 +46,14 @@ export default async function SecondeMainPage({
           Déposer
         </Link>
       </div>
+
+      <Link
+        href="/mon-compte/alertes"
+        className="inline-flex items-center gap-1.5 mb-4 text-[12.5px] font-semibold text-primary-deep underline"
+      >
+        <BellRinging size={14} weight="fill" aria-hidden />
+        Créer une alerte
+      </Link>
 
       <div className="flex items-center gap-1.5 flex-wrap mb-4">
         <Link
@@ -64,12 +77,11 @@ export default async function SecondeMainPage({
         ))}
       </div>
 
-      <Link
-        href={`/mon-compte/alertes?type=listing${categorie ? `&category=${categorie}` : ""}`}
-        className="inline-block mb-4 text-[12.5px] font-semibold text-primary-deep underline"
-      >
-        🔔 Créer une alerte pour cette recherche
-      </Link>
+      {validCategory && (
+        <div className="mb-4">
+          <QuickAlertButton type="listing" criteria={{ category: validCategory }} />
+        </div>
+      )}
 
       {listings.length === 0 ? (
         <p className="text-center text-muted text-[13px] mt-10">Aucune annonce pour le moment.</p>
