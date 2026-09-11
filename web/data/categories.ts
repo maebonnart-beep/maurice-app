@@ -8,7 +8,7 @@ export const CATEGORIES: Category[] = [
   { key: "acheter-equiper", label: "Acheter & s'équiper", emoji: "🛍️", color: "#b07d48" },
   { key: "vie-pratique", label: "Vie pratique", emoji: "🧰", color: "#4a6572" },
   { key: "famille-travail", label: "Famille & Travail", emoji: "🧑‍💼", color: "#7c5cf0" },
-  { key: "agenda", label: "Agenda", emoji: "🎉", color: "#e0518a" },
+  { key: "agenda", label: "Événements", emoji: "🎉", color: "#e0518a" },
 ];
 
 export const CATEGORY_MAP = Object.fromEntries(
