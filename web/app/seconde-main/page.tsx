@@ -36,8 +36,8 @@ export default async function SecondeMainPage({
   return (
     <div className="max-w-[640px] mx-auto px-4 pb-24 pt-6">
       <div className="flex items-center justify-between gap-3 mb-1">
-        <div className="flex items-center gap-2">
-          <BackButton className="-ml-1" />
+        <div className="flex items-start gap-2">
+          <BackButton className="-ml-1 mt-0.5" />
           <div>
             <p className="font-serif text-xl font-semibold leading-tight">Seconde main</p>
             <p className="text-[13px] text-muted">Entre particuliers, contact direct par WhatsApp</p>

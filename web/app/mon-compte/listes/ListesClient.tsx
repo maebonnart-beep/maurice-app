@@ -143,8 +143,8 @@ export function ListesClient({ isPremium }: { isPremium: boolean }) {
 
   return (
     <div className="max-w-[480px] mx-auto px-4 pb-24 pt-6 flex flex-col gap-5">
-      <div className="flex items-center gap-2">
-        <BackButton className="-ml-1" />
+      <div className="flex items-start gap-2">
+        <BackButton className="-ml-1 mt-0.5" />
         <div>
           <p className="font-serif text-xl font-semibold leading-tight">Mes listes</p>
           <p className="text-[13px] text-muted">
