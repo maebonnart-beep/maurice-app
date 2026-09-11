@@ -116,7 +116,7 @@ export async function sendUpgradeEmail(toEmail: string) {
             <li>Des alertes personnalisées sur tes thématiques favorites</li>
             <li>Les nouvelles adresses de l'annuaire en avant-première</li>
           </ul>
-          <p><a href="${SITE_URL}/mon-compte">Gérer mon compte</a></p>
+          <p style="margin-top:20px"><a href="${SITE_URL}/mon-compte" style="display:inline-block;padding:10px 18px;border-radius:8px;background:#e8890c;color:#fff;text-decoration:none;font-weight:600;">Gérer mon compte</a></p>
           ${INSTALL_APP_HTML}
           ${SITE_LINK_HTML}
         `,
