@@ -16,8 +16,13 @@ export function MarketplaceHeader() {
           <ArrowLeft size={19} weight="bold" aria-hidden />
         </Link>
         <Link href="/" className="flex items-center gap-1.5 no-underline text-ink">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/logo-octopus.png" alt="" className="w-6 h-6 object-contain" />
+          <span
+            className="shrink-0 w-7 h-7 rounded-full flex items-center justify-center"
+            style={{ background: "linear-gradient(135deg, #0d4a47 0%, #146b66 65%)" }}
+          >
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/logo-octopus.png" alt="" className="w-[18px] h-[18px] object-contain" />
+          </span>
           <span className="font-serif font-semibold text-[15px] leading-none">Koté Moris</span>
         </Link>
       </div>

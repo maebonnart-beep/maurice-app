@@ -5,7 +5,12 @@ export type ListingZone = "nord" | "sud" | "est" | "ouest" | "centre";
 export type ListingCategoryKey =
   | "electronique"
   | "meubles"
-  | "vetements"
+  | "vetements-adultes"
+  | "vetements-enfants"
+  | "jeux-livres-enfants"
+  | "jeux-livres-adultes"
+  | "puericulture"
+  | "equipement-maison"
   | "sport-loisirs"
   | "bebe-enfant"
   | "maison-jardin"
@@ -20,7 +25,12 @@ export type ListingCategory = {
 export const LISTING_CATEGORIES: ListingCategory[] = [
   { key: "electronique", label: "Électronique" },
   { key: "meubles", label: "Meubles" },
-  { key: "vetements", label: "Vêtements" },
+  { key: "vetements-adultes", label: "Vêtements, chaussures et accessoires adultes" },
+  { key: "vetements-enfants", label: "Vêtements et chaussures enfants" },
+  { key: "jeux-livres-enfants", label: "Jeux & livres enfants" },
+  { key: "jeux-livres-adultes", label: "Jeux & livres adultes" },
+  { key: "puericulture", label: "Puériculture" },
+  { key: "equipement-maison", label: "Équipement maison" },
   { key: "sport-loisirs", label: "Sport & loisirs" },
   { key: "bebe-enfant", label: "Bébé & enfant" },
   { key: "maison-jardin", label: "Maison & jardin" },
