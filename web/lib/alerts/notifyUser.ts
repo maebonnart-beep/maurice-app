@@ -1,4 +1,4 @@
-const SITE_URL = "https://web-ten-khaki-70.vercel.app";
+const SITE_URL = "https://kotemoris.com";
 
 export type AlertMatch = { title: string; href?: string; subtitle?: string };
 
@@ -56,5 +56,35 @@ export async function notifyUserAlertMatches(params: {
     }
   } catch (err) {
     console.error("notifyUserAlertMatches: fetch failed", err);
+  }
+}
+
+/** Notifie un compte premium par e-mail (Resend) qu'une ou plusieurs nouvelles
+ *  fiches viennent d'être ajoutées à l'annuaire. Broadcast (pas lié à une alerte
+ *  utilisateur), déclenché par le cron notify-new-businesses.
+ *  Best-effort : une erreur d'envoi est loguée mais ne doit jamais faire échouer le cron. */
+export async function notifyNewBusinesses(toEmail: string, matches: AlertMatch[]) {
+  const apiKey = process.env.RESEND_API_KEY;
+  if (!apiKey || matches.length === 0) return;
+
+  try {
+    const res = await fetch("https://api.resend.com/emails", {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${apiKey}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        from: "Koté Moris <notifications@kotemoris.com>",
+        to: toEmail,
+        subject: `${matches.length} nouvelle${matches.length > 1 ? "s" : ""} adresse${matches.length > 1 ? "s" : ""} sur Koté Moris`,
+        html: `<p>En avant-première (avantage premium), les dernières adresses ajoutées à l'annuaire :</p><ul>${itemsListHtml(matches)}</ul><p><a href="${SITE_URL}">Découvrir sur Koté Moris</a></p>`,
+      }),
+    });
+    if (!res.ok) {
+      console.error("notifyNewBusinesses: Resend error", res.status, await res.text());
+    }
+  } catch (err) {
+    console.error("notifyNewBusinesses: fetch failed", err);
   }
 }

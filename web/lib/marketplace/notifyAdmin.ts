@@ -17,7 +17,7 @@ export async function notifyAdminNewListing(listing: { id: number; title: string
         from: "Koté Moris <notifications@kotemoris.com>",
         to: adminEmail,
         subject: `Nouvelle annonce à valider : ${listing.title}`,
-        html: `<p>Une nouvelle annonce « ${listing.title} » (WhatsApp ${listing.whatsapp}) attend une validation.</p><p><a href="https://web-ten-khaki-70.vercel.app/admin/seconde-main">Voir dans la modération</a></p>`,
+        html: `<p>Une nouvelle annonce « ${listing.title} » (WhatsApp ${listing.whatsapp}) attend une validation.</p><p><a href="https://kotemoris.com/admin/seconde-main">Voir dans la modération</a></p>`,
       }),
     });
     if (!res.ok) {

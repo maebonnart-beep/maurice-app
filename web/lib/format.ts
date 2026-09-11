@@ -36,8 +36,7 @@ export function whatsappLink(phone: string): string {
   return "https://wa.me/" + phone.replace(/[^\d]/g, "");
 }
 
-// Pas de nom de domaine propre pour l'instant : alias Vercel stable entre déploiements.
-export const KOTE_MORIS_URL = "https://web-maeva26dodo.vercel.app";
+export const KOTE_MORIS_URL = "https://kotemoris.com";
 
 // Message pré-rempli global pour tout bouton "Contacter" (WhatsApp/email) :
 // signale à l'interlocuteur que la démarche vient de Koté Moris.
