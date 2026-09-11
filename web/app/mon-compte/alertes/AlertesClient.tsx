@@ -2,6 +2,7 @@
 
 import { useEffect, useState, type FormEvent } from "react";
 import { Trash, BellRinging } from "@phosphor-icons/react";
+import { BackButton } from "@/components/ui/BackButton";
 import { LISTING_CATEGORIES, type ListingCategoryKey, type ListingZone } from "@/lib/marketplace/types";
 import { SUBCATEGORIES, FILTER_GROUPS } from "@/data/categories";
 import type { SavedSearch, SavedSearchType } from "@/lib/alerts/types";
@@ -113,11 +114,14 @@ export function AlertesClient({
 
   return (
     <div className="max-w-[480px] mx-auto px-4 pb-24 pt-6 flex flex-col gap-5">
-      <div>
-        <p className="font-serif text-xl font-semibold leading-tight">Mes alertes</p>
-        <p className="text-[13px] text-muted">
-          Reçois un email quand une nouvelle annonce ou un nouvel événement correspond à tes critères.
-        </p>
+      <div className="flex items-center gap-2">
+        <BackButton className="-ml-1" />
+        <div>
+          <p className="font-serif text-xl font-semibold leading-tight">Mes alertes</p>
+          <p className="text-[13px] text-muted">
+            Reçois un email quand une nouvelle annonce ou un nouvel événement correspond à tes critères.
+          </p>
+        </div>
       </div>
 
       {alerts === null ? (

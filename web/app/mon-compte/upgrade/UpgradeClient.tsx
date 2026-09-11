@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { useAccount } from "@/lib/marketplace/useAccount";
+import { BackButton } from "@/components/ui/BackButton";
 import {
   PREMIUM_PRICE_LABEL,
   PREMIUM_PRICE_LABEL_ANNUAL,
@@ -42,7 +43,10 @@ export function UpgradeClient() {
 
   return (
     <div className="max-w-[420px] mx-auto px-4 pt-10 text-center flex flex-col items-center gap-4">
-      <p className="font-serif text-xl font-semibold leading-tight">Passer premium</p>
+      <div className="w-full flex items-center gap-2 -mb-2">
+        <BackButton className="-ml-1" />
+        <p className="font-serif text-xl font-semibold leading-tight">Passer premium</p>
+      </div>
       <p className="text-[13px] text-muted leading-snug">
         Dépose jusqu&apos;à {MAX_ACTIVE_LISTINGS} annonces seconde main actives (contact direct par
         WhatsApp avec les acheteurs) et débloque l&apos;accès complet aux événements : notifications

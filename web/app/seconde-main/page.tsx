@@ -3,6 +3,7 @@ import { BellRinging } from "@phosphor-icons/react/dist/ssr";
 import { createClient } from "@/lib/supabase/server";
 import { ListingCard } from "@/components/ui/ListingCard";
 import { QuickAlertButton } from "@/components/ui/QuickAlertButton";
+import { BackButton } from "@/components/ui/BackButton";
 import { LISTING_CATEGORIES, type ListingCategoryKey } from "@/lib/marketplace/types";
 import { mapListingRow } from "@/lib/marketplace/mapRow";
 
@@ -35,9 +36,12 @@ export default async function SecondeMainPage({
   return (
     <div className="max-w-[640px] mx-auto px-4 pb-24 pt-6">
       <div className="flex items-center justify-between gap-3 mb-1">
-        <div>
-          <p className="font-serif text-xl font-semibold leading-tight">Seconde main</p>
-          <p className="text-[13px] text-muted">Entre particuliers, contact direct par WhatsApp</p>
+        <div className="flex items-center gap-2">
+          <BackButton className="-ml-1" />
+          <div>
+            <p className="font-serif text-xl font-semibold leading-tight">Seconde main</p>
+            <p className="text-[13px] text-muted">Entre particuliers, contact direct par WhatsApp</p>
+          </div>
         </div>
         <Link
           href="/mon-compte/nouvelle-annonce"

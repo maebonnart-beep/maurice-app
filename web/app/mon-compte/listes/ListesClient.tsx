@@ -9,6 +9,7 @@ import type { Business } from "@/lib/types";
 import { displayName } from "@/lib/format";
 import { mapFavoriteListRow, type FavoriteList } from "@/lib/favoriteLists";
 import { PREMIUM_PRICE_LABEL } from "@/lib/marketplace/constants";
+import { BackButton } from "@/components/ui/BackButton";
 
 const inputClass =
   "w-full h-[44px] px-4 rounded-xl border border-border bg-surface text-ink text-[14px] shadow-sm focus:outline-none focus:border-primary";
@@ -119,7 +120,10 @@ export function ListesClient({ isPremium }: { isPremium: boolean }) {
   if (!isPremium) {
     return (
       <div className="max-w-[480px] mx-auto px-4 pb-24 pt-6">
-        <p className="font-serif text-xl font-semibold leading-tight mb-1">Mes listes</p>
+        <div className="flex items-center gap-2 mb-1">
+          <BackButton className="-ml-1" />
+          <p className="font-serif text-xl font-semibold leading-tight">Mes listes</p>
+        </div>
         <p className="text-[13px] text-muted mb-4">
           Range tes favoris dans des listes nommées (« Restos à tester », « Sorties ce week-end »…) et
           partage-les par lien.
@@ -139,11 +143,14 @@ export function ListesClient({ isPremium }: { isPremium: boolean }) {
 
   return (
     <div className="max-w-[480px] mx-auto px-4 pb-24 pt-6 flex flex-col gap-5">
-      <div>
-        <p className="font-serif text-xl font-semibold leading-tight">Mes listes</p>
-        <p className="text-[13px] text-muted">
-          Range tes favoris dans des listes nommées et partage-les par lien.
-        </p>
+      <div className="flex items-center gap-2">
+        <BackButton className="-ml-1" />
+        <div>
+          <p className="font-serif text-xl font-semibold leading-tight">Mes listes</p>
+          <p className="text-[13px] text-muted">
+            Range tes favoris dans des listes nommées et partage-les par lien.
+          </p>
+        </div>
       </div>
 
       {lists === null ? (

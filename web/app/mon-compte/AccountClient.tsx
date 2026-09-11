@@ -8,6 +8,7 @@ import { Crown } from "@phosphor-icons/react/dist/ssr";
 import { MAX_ACTIVE_LISTINGS } from "@/lib/marketplace/constants";
 import { mapListingRow } from "@/lib/marketplace/mapRow";
 import { LogoutButton } from "./LogoutButton";
+import { BackButton } from "@/components/ui/BackButton";
 
 const STATUS_LABELS: Record<ListingStatus, string> = {
   pending: "En attente de validation",
@@ -79,7 +80,10 @@ export function AccountClient({ email, isPremium }: { email: string; isPremium: 
   return (
     <div className="max-w-[640px] mx-auto px-4 pb-24 pt-6">
       <div className="flex items-center justify-between gap-3 mb-1">
-        <p className="font-serif text-xl font-semibold leading-tight">Mes annonces</p>
+        <div className="flex items-center gap-2">
+          <BackButton className="-ml-1" />
+          <p className="font-serif text-xl font-semibold leading-tight">Mes annonces</p>
+        </div>
         <Link
           href="/mon-compte/nouvelle-annonce"
           className="shrink-0 h-[38px] px-4 rounded-xl bg-primary text-white text-[13.5px] font-semibold flex items-center justify-center active:scale-[.98] transition-transform"

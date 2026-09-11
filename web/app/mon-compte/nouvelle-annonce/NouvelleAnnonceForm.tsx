@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { Camera, X, CheckCircle } from "@phosphor-icons/react";
 import { LISTING_CATEGORIES, type ListingCategoryKey, type ListingZone } from "@/lib/marketplace/types";
+import { BackButton } from "@/components/ui/BackButton";
 
 const inputClass =
   "w-full h-[46px] px-4 rounded-xl border border-border bg-surface text-ink text-[15px] shadow-sm focus:outline-none focus:border-primary";
@@ -114,7 +115,10 @@ export function NouvelleAnnonceForm() {
   return (
     <form onSubmit={handleSubmit} className="max-w-[480px] mx-auto px-4 pb-24 pt-6 flex flex-col gap-4">
       <div className="text-center flex flex-col items-center gap-2 mb-1">
-        <p className="font-serif text-lg font-semibold leading-tight">Déposer une annonce</p>
+        <div className="w-full flex items-center gap-2 -mb-1">
+          <BackButton className="-ml-1" />
+          <p className="font-serif text-lg font-semibold leading-tight">Déposer une annonce</p>
+        </div>
         <p className="text-[13px] text-muted leading-snug">
           Elle sera validée par l&apos;équipe avant publication.
         </p>
