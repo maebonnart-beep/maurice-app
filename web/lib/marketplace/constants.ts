@@ -6,6 +6,8 @@ export const MAX_ACTIVE_LISTINGS = 10;
 
 export const PREMIUM_PRICE_LABEL = "Rs 199/mois";
 export const PREMIUM_PRICE_LABEL_ANNUAL = "Rs 1 499/an";
+export const PREMIUM_PRICE_LABEL_EUR = "3,99€/mois";
+export const PREMIUM_PRICE_LABEL_ANNUAL_EUR = "27,99€/an";
 
 export const LISTING_PHOTOS_BUCKET = "listing-photos";
 
