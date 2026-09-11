@@ -15,6 +15,21 @@ const INSTALL_APP_HTML = `
 
 const SITE_LINK_HTML = `<p style="margin-top:24px"><a href="${SITE_URL}">${SITE_URL}</a></p>`;
 
+/** Encart premium mis en avant dans le mail de bienvenue, avec lien direct vers
+ *  la page d'upgrade (mêmes arguments que UpgradeClient.tsx). */
+const PREMIUM_UPSELL_HTML = `
+  <div style="margin-top:20px;padding:16px 20px;border-radius:12px;background:#fff4e5;border:1px solid #f5c98a;">
+    <p style="margin:0 0 8px;font-weight:600;">⭐ Passe premium pour débloquer :</p>
+    <ul style="margin:0 0 12px;padding-left:20px;">
+      <li>L'agenda complet des événements de l'île</li>
+      <li>Le dépôt de tes propres annonces « Seconde main »</li>
+      <li>Des alertes personnalisées sur tes thématiques favorites</li>
+      <li>L'accès prioritaire aux nouvelles adresses de l'annuaire</li>
+    </ul>
+    <a href="${SITE_URL}/mon-compte/upgrade" style="display:inline-block;padding:10px 18px;border-radius:8px;background:#e8890c;color:#fff;text-decoration:none;font-weight:600;">Passer premium</a>
+  </div>
+`;
+
 /** Notifie un nouvel utilisateur par e-mail (Resend) lors de sa toute première connexion.
  *  Best-effort : une erreur d'envoi est loguée mais ne doit jamais faire échouer la connexion. */
 export async function sendWelcomeEmail(toEmail: string) {
@@ -42,8 +57,8 @@ export async function sendWelcomeEmail(toEmail: string) {
             <li>Consulter les annonces « Seconde main entre particuliers »</li>
             <li>Partager tes bonnes adresses</li>
           </ul>
-          <p>Et en passant premium, tu débloques en plus l'agenda des événements, le dépôt de tes propres annonces seconde main, les alertes personnalisées et l'accès prioritaire aux nouvelles adresses.</p>
-          <p>Tu as repéré une adresse manquante, une erreur sur une fiche, ou une idée pour améliorer le site ? Écris-nous à <a href="mailto:contact@kotemoris.com">contact@kotemoris.com</a>, on adore avoir des nouvelles de la communauté.</p>
+          ${PREMIUM_UPSELL_HTML}
+          <p style="margin-top:20px">Tu as repéré une adresse manquante, une erreur sur une fiche, ou une idée pour améliorer le site ? Écris-nous à <a href="mailto:contact@kotemoris.com">contact@kotemoris.com</a>, on adore avoir des nouvelles de la communauté.</p>
           ${INSTALL_APP_HTML}
           ${SITE_LINK_HTML}
         `,
