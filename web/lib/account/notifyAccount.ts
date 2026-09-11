@@ -1,3 +1,5 @@
+import type { SupabaseClient } from "@supabase/supabase-js";
+import type { User } from "@supabase/supabase-js";
 import { MAX_ACTIVE_LISTINGS } from "@/lib/marketplace/constants";
 
 const SITE_URL = "https://kotemoris.com";
@@ -53,6 +55,24 @@ export async function sendWelcomeEmail(toEmail: string) {
   } catch (err) {
     console.error("sendWelcomeEmail: fetch failed", err);
   }
+}
+
+/** Envoie le mail de bienvenue une seule fois (au tout premier login) : lit et pose
+ *  le flag `profiles.welcome_email_sent_at` avec le client passé en argument (donc
+ *  soumis à sa RLS — appeler avec un client lié à la session de l'utilisateur, ou
+ *  service-role). Best-effort, ne throw jamais. */
+export async function sendWelcomeEmailOnce(supabase: SupabaseClient, user: User) {
+  if (!user.email) return;
+
+  const { data: profile } = await supabase
+    .from("profiles")
+    .select("welcome_email_sent_at")
+    .eq("id", user.id)
+    .single();
+  if (!profile || profile.welcome_email_sent_at) return;
+
+  await sendWelcomeEmail(user.email);
+  await supabase.from("profiles").update({ welcome_email_sent_at: new Date().toISOString() }).eq("id", user.id);
 }
 
 /** Notifie un utilisateur par e-mail (Resend) que son abonnement premium est actif.

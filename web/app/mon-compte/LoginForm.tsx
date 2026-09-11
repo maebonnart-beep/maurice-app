@@ -42,6 +42,9 @@ export function LoginForm() {
       setErrorMessage(error.message);
       setStatus("sent");
     } else {
+      // Best-effort : n'envoie le mail de bienvenue qu'au tout premier login
+      // (voir sendWelcomeEmailOnce), ne doit jamais bloquer la connexion.
+      await fetch("/api/account/welcome", { method: "POST" }).catch(() => {});
       // Après connexion, retour à l'accueil plutôt que de rester sur /mon-compte,
       // qui affiche directement le tableau de bord "Mes annonces" (dépôt d'annonce).
       router.push("/");

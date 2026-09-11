@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 import { createServerClient } from "@supabase/ssr";
-import { sendWelcomeEmail } from "@/lib/account/notifyAccount";
+import { sendWelcomeEmailOnce } from "@/lib/account/notifyAccount";
 
 /** Échange le `code` PKCE du lien magique contre une session, puis redirige vers /mon-compte.
  *  Écrit les cookies directement sur la réponse de redirection (plutôt que via
@@ -46,17 +46,8 @@ export async function GET(request: NextRequest) {
     return response;
   }
 
-  const user = data.user;
-  if (user?.email) {
-    const { data: profile } = await supabase
-      .from("profiles")
-      .select("welcome_email_sent_at")
-      .eq("id", user.id)
-      .single();
-    if (profile && !profile.welcome_email_sent_at) {
-      await sendWelcomeEmail(user.email);
-      await supabase.from("profiles").update({ welcome_email_sent_at: new Date().toISOString() }).eq("id", user.id);
-    }
+  if (data.user) {
+    await sendWelcomeEmailOnce(supabase, data.user);
   }
 
   return response;
