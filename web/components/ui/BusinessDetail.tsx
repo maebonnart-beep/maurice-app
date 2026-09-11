@@ -13,7 +13,7 @@ import {
   whatsappContactLink,
   whatsappNumber,
   emailContactHref,
-  KOTE_MORIS_URL,
+  shareTagline,
 } from "@/lib/format";
 import { SpecialBadge, accentColorFor, ProviderTypeBadge } from "./Badge";
 import { FavoriteButton } from "./FavoriteButton";
@@ -131,15 +131,12 @@ export function BusinessDetail({
           b.filters?.length ? `&filters=${b.filters.join(",")}` : ""
         }`
       : null;
-  const shareText = [
-    displayName(b.name),
-    b.address,
-    b.phone,
-    b.googleMapsUrl || b.website,
-    `Partagé via Koté Moris — ${KOTE_MORIS_URL}`,
-  ]
-    .filter(Boolean)
-    .join("\n");
+  const shareText =
+    shareTagline() +
+    "\n\n" +
+    [displayName(b.name), b.address, b.phone, b.googleMapsUrl || b.website]
+      .filter(Boolean)
+      .join("\n");
 
   // Échap ferme, et on verrouille le scroll de l'arrière-plan.
   useEffect(() => {

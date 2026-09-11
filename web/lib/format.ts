@@ -45,6 +45,12 @@ function contactMessage(): string {
   return `Bonjour, je vous contacte via Koté Moris — ${KOTE_MORIS_URL}`;
 }
 
+// Accroche commune à tout partage (fiche ou liste d'adresses) : le lien est
+// accolé au nom "Koté Moris" pour servir de lien cliquable sur ce nom.
+export function shareTagline(): string {
+  return `📍 Partagé depuis Koté Moris 🇲🇺 (${KOTE_MORIS_URL})\nL'annuaire qui vous aide à trouver votre prochaine bonne adresse`;
+}
+
 export function whatsappContactLink(phone: string): string {
   return whatsappLink(phone) + "?text=" + encodeURIComponent(contactMessage());
 }

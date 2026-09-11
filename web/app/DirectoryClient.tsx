@@ -54,7 +54,7 @@ import { COUP_DE_COEUR_COLOR } from "@/components/ui/Badge";
 import { FilterDropdown, type DropdownOption } from "@/components/ui/FilterDropdown";
 import { AddAddressForm } from "@/components/ui/AddAddressForm";
 import { iconForKey, mascotFor, categoryTint, MapPin } from "@/lib/icons";
-import { displayName, displayCity } from "@/lib/format";
+import { displayName, displayCity, shareTagline } from "@/lib/format";
 import { FavoriteButton } from "@/components/ui/FavoriteButton";
 import {
   Heart,
@@ -286,8 +286,8 @@ export default function DirectoryClient({
   const shareFavoris = useCallback(async () => {
     const lines = shareSelectionBusinesses.map((b) => `• ${b.name}`).join("\n");
     const text = shareSelectionBusinesses.length > 0
-      ? `Mes adresses Koté Moris 🇲🇺\n\n${lines}`
-      : "Je n'ai pas encore d'adresses enregistrées sur Koté Moris.";
+      ? `${shareTagline()}\n\nMes adresses :\n${lines}`
+      : `${shareTagline()}\n\nJe n'ai pas encore d'adresses enregistrées sur Koté Moris.`;
     try {
       if (navigator.share) {
         await navigator.share({ title: "Mes adresses Koté Moris", text });
