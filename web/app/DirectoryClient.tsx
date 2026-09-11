@@ -48,6 +48,7 @@ import { useFavoriteSelections } from "@/lib/favoriteSelections";
 import { useFavoritesSync } from "@/lib/favoritesSync";
 import { useSuggestions, findIntegratedMatch } from "@/lib/suggestions";
 import { useAccount } from "@/lib/marketplace/useAccount";
+import { createClient as createSupabaseBrowserClient } from "@/lib/supabase/client";
 import { PREMIUM_PRICE_LABEL, MAX_ACTIVE_LISTINGS, listingPhotoUrl } from "@/lib/marketplace/constants";
 import type { Listing } from "@/lib/marketplace/types";
 import { COUP_DE_COEUR_COLOR } from "@/components/ui/Badge";
@@ -217,6 +218,12 @@ export default function DirectoryClient({
     useFavoriteSelections();
   const { suggestions } = useSuggestions();
   const account = useAccount();
+  const [loggingOut, setLoggingOut] = useState(false);
+  async function handleLogout() {
+    setLoggingOut(true);
+    await createSupabaseBrowserClient().auth.signOut();
+    window.location.reload();
+  }
   // Avatar par défaut (tant que l'utilisateur n'a pas uploadé sa propre photo),
   // différent selon son statut : admin > contributeur KM > découverte.
   const defaultAvatar =
@@ -2701,6 +2708,14 @@ export default function DirectoryClient({
                         ? "✨ Premium"
                         : "🔎 Découverte"}
                     </span>
+                    <button
+                      type="button"
+                      onClick={handleLogout}
+                      disabled={loggingOut}
+                      className="text-[12.5px] font-semibold text-muted underline underline-offset-2 disabled:opacity-50"
+                    >
+                      {loggingOut ? "Déconnexion…" : "Se déconnecter"}
+                    </button>
                   </>
                 ) : (
                   <>
