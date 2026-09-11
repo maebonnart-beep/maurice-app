@@ -2726,7 +2726,6 @@ export default function DirectoryClient({
                     avatar: "/avatar-decouverte.png",
                     title: "🔎 DÉCOUVERTE",
                     price: "0 Rs — Gratuit",
-                    href: null as string | null,
                     intro: "Explore tout l'annuaire en illimité :",
                     features: [
                       "🔍 Recherche libre & par catégorie",
@@ -2739,7 +2738,6 @@ export default function DirectoryClient({
                     avatar: "/avatar-premium.png",
                     title: "⭐ PREMIUM",
                     price: PREMIUM_PRICE_LABEL,
-                    href: "/mon-compte/upgrade",
                     intro: "Tout le mode Découverte +",
                     features: [
                       "🎉 Événements",
@@ -2748,51 +2746,45 @@ export default function DirectoryClient({
                       "⚡ Accès prioritaire aux nouvelles adresses",
                     ],
                   },
-                ].map((tier) => (
-                  <div key={tier.title} className="flex items-center gap-3.5">
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img
-                      src={tier.avatar}
-                      alt={tier.title}
-                      className="w-16 h-16 rounded-full object-cover shrink-0"
-                    />
-                    <div className="min-w-0">
-                      <div className="flex items-baseline gap-2 flex-wrap">
-                        {tier.href ? (
-                          <Link href={tier.href} className="text-[13px] font-bold text-primary-deep underline">
-                            {tier.title}
+                ].map((tier) => {
+                  const showCta = tier.title === "⭐ PREMIUM" && account.loggedIn && !account.isPremium;
+                  return (
+                    <div
+                      key={tier.title}
+                      className="flex items-center gap-3.5 rounded-2xl"
+                      style={showCta ? { background: "linear-gradient(135deg, #f5a623, #e88a00)", padding: "12px" } : undefined}
+                    >
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img
+                        src={tier.avatar}
+                        alt={tier.title}
+                        className="w-16 h-16 rounded-full object-cover shrink-0"
+                      />
+                      <div className="min-w-0 flex-1">
+                        <div className="flex items-baseline gap-2 flex-wrap">
+                          <p className={`m-0 text-[13px] font-bold ${showCta ? "text-white" : "text-ink"}`}>{tier.title}</p>
+                          <span className={`text-[12px] font-semibold ${showCta ? "text-white/90" : "text-muted"}`}>{tier.price}</span>
+                        </div>
+                        <p className={`m-0 mt-0.5 text-[12px] leading-snug ${showCta ? "text-white/90" : "text-muted"}`}>{tier.intro}</p>
+                        <ul className="m-0 mt-1 pl-0 list-none flex flex-col gap-0.5">
+                          {tier.features.map((f) => (
+                            <li key={f} className={`text-[12px] leading-snug ${showCta ? "text-white/90" : "text-muted"}`}>{f}</li>
+                          ))}
+                        </ul>
+                        {showCta && (
+                          <Link
+                            href="/mon-compte/upgrade"
+                            className="mt-2 inline-flex h-[34px] px-5 rounded-full bg-white text-[12.5px] font-bold items-center justify-center active:scale-[.98] transition-transform"
+                            style={{ color: "#8a5a00" }}
+                          >
+                            S&apos;abonner
                           </Link>
-                        ) : (
-                          <p className="m-0 text-[13px] font-bold text-ink">{tier.title}</p>
                         )}
-                        <span className="text-[12px] font-semibold text-muted">{tier.price}</span>
                       </div>
-                      <p className="m-0 mt-0.5 text-[12px] text-muted leading-snug">{tier.intro}</p>
-                      <ul className="m-0 mt-1 pl-0 list-none flex flex-col gap-0.5">
-                        {tier.features.map((f) => (
-                          <li key={f} className="text-[12px] text-muted leading-snug">{f}</li>
-                        ))}
-                      </ul>
                     </div>
-                  </div>
-                ))}
+                  );
+                })}
               </div>
-
-              {account.loggedIn && !account.isPremium && (
-                <Link
-                  href="/mon-compte/upgrade"
-                  className="flex flex-col items-center gap-2 text-center rounded-2xl p-5 shadow-sm active:scale-[.98] transition-transform"
-                  style={{ background: "linear-gradient(135deg, #f5a623, #e88a00)" }}
-                >
-                  <span className="text-[15px] font-bold text-white">✨ Devenir Premium</span>
-                  <span className="text-[12.5px] text-white/90 leading-snug">
-                    Accède à la Seconde main entre particuliers et aux Événements — {PREMIUM_PRICE_LABEL}
-                  </span>
-                  <span className="mt-1 h-[38px] px-6 rounded-full bg-white text-[13.5px] font-bold flex items-center justify-center" style={{ color: "#8a5a00" }}>
-                    S&apos;abonner
-                  </span>
-                </Link>
-              )}
 
               {account.loggedIn && (
                 <Link
