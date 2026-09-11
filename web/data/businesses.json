@@ -2260,10 +2260,11 @@
     "lng": 57.5792747,
     "hours": "Lun-Jeu 9h30-19h30, Ven-Sam 9h30-20h30, Dim 9h30-16h",
     "themes": [
-      "mode-accessoires"
+      "mode-accessoires",
+      "maison-equipement"
     ],
     "zone": "nord",
-    "description": "Boutique de mode féminine à La Croisette Grand Baie proposant tuniques, robes, pantalons et kaftans en coton, soie et laine.",
+    "description": "Boutique de mode féminine à La Croisette Grand Baie proposant tuniques, robes, pantalons et kaftans en coton, soie et laine, ainsi qu'une gamme de linge de maison (nappes, dessus-de-lit).",
     "filters": [
       "mode-adultes"
     ]
@@ -39185,6 +39186,199 @@
     "hours": "Lun-Sam 10h-18h30, Dim et jours fériés 10h-15h"
   },
   {
+    "id": "le-pavillon-bleu",
+    "name": "Le Pavillon Bleu",
+    "category": "acheter-equiper",
+    "address": "La Salette Road, Grand Baie (en face du Super U)",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Le+Pavillon+Bleu+La+Salette+Road+Grand+Baie+Mauritius",
+    "lat": -20.0130199,
+    "lng": 57.584627,
+    "themes": [
+      "maison-equipement"
+    ],
+    "zone": "nord",
+    "description": "Enseigne mauricienne fondée en 1927, spécialisée dans les arts de la table, ustensiles et accessoires de cuisine, verrerie et parfums d'intérieur, avec des marques importées d'Europe (Bodum, Brabantia, Leonardo, Schott-Zwiesel, ASA). À Grand Baie, en face du Super U."
+  },
+  {
+    "id": "maxbram-co-ltd",
+    "name": "Maxbram Co Ltd",
+    "category": "acheter-equiper",
+    "address": "Vel Industrial Complex, Mapou-Leclézio Road, Goodlands",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Maxbram+Co+Ltd+Vel+Industrial+Complex+Goodlands+Mauritius",
+    "lat": -20.0384464,
+    "lng": 57.6525315,
+    "themes": [
+      "maison-equipement"
+    ],
+    "zone": "nord",
+    "description": "Grossiste basé à Goodlands, spécialisé dans l'import et la distribution d'arts de la table, de petit équipement de cuisine et d'accessoires destinés notamment au secteur hôtelier.",
+    "priceRange": "bon-marche"
+  },
+  {
+    "id": "ku-de-kla",
+    "name": "Ku dé Kla",
+    "category": "acheter-equiper",
+    "address": "Cinema Mall, La Croisette, Grand Baie",
+    "phone": "",
+    "website": "https://kudekla.com/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Ku+de+Kla+La+Croisette+Grand+Baie+Mauritius",
+    "lat": -20.0209862,
+    "lng": 57.5797641,
+    "themes": [
+      "maison-equipement"
+    ],
+    "zone": "nord",
+    "description": "Boutique lifestyle et cuisine (« The Kitchen & Lifestyle Shop ») à La Croisette (Cinema Mall) : électroménager et accessoires de cuisine haut de gamme, marques Bosch, Siemens, Miele, Gaggenau, Joseph Joseph, Vista Alegre, Magimix, Liebherr. Autre point de vente à Tribeca Mall."
+  },
+  {
+    "id": "poncini",
+    "name": "Poncini",
+    "category": "acheter-equiper",
+    "address": "2 Jules Koenig Street, Port Louis",
+    "phone": "+230 212 0818",
+    "website": "https://poncini.com/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Poncini+2+Jules+Koenig+Street+Port+Louis+Mauritius",
+    "lat": -20.1636816,
+    "lng": 57.5039652,
+    "themes": [
+      "maison-equipement"
+    ],
+    "zone": "centre",
+    "description": "Bijouterie-horlogerie de luxe mauricienne (Rolex, Omega, TAG Heuer, Cartier, Longines...) qui propose aussi un rayon arts de la table et décoration : Christofle, Le Creuset, WMF, Alessi, Kosta Boda, Leonardo, Bodum. Autres points de vente à Caudan, Curepipe, Trou aux Biches et Paradis."
+  },
+  {
+    "id": "chong-and-sons-goodlands",
+    "name": "Chong & Sons",
+    "category": "acheter-equiper",
+    "address": "Royal Road, Goodlands Shopping Village, Goodlands",
+    "phone": "+230 282 1529",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Chong+%26+Sons+Goodlands+Shopping+Village+Mauritius",
+    "lat": -20.0494233,
+    "lng": 57.6630899,
+    "themes": [
+      "maison-equipement"
+    ],
+    "zone": "nord",
+    "description": "Magasin du Goodlands Shopping Village vendant un assortiment varié d'articles ménagers et cadeaux : vaisselle, mugs, verres et petite épicerie, avec des promotions saisonnières (Diwali...)."
+  },
+  {
+    "id": "la-maison-du-gourmet-moka",
+    "name": "La Maison du Gourmet",
+    "category": "acheter-equiper",
+    "address": "Moka",
+    "phone": "+230 433 5652",
+    "website": "https://www.lamaisondugourmet.shop/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=La+Maison+du+Gourmet+Moka+Mauritius",
+    "lat": -20.2521392,
+    "lng": 57.5872245,
+    "themes": [
+      "maison-equipement"
+    ],
+    "zone": "centre",
+    "description": "Boutique gourmande de 130 m² à Moka (ouverte en 2010) : épicerie fine, viandes, fromages, vins et épices, ainsi que du matériel et des ustensiles de cuisine. Service traiteur avec laboratoire agréé."
+  },
+  {
+    "id": "vfm-value-for-money",
+    "name": "VFM (Value For Money)",
+    "category": "acheter-equiper",
+    "address": "Maurice (adresse à confirmer)",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=VFM+Value+For+Money+Mauritius",
+    "themes": [
+      "maison-equipement"
+    ],
+    "zone": "centre",
+    "description": "Enseigne mauricienne d'électroménager et de petit équipement maison. Adresse et horaires non confirmés — à vérifier sur place."
+  },
+  {
+    "id": "mysa-maison",
+    "name": "Mysa Maison",
+    "category": "acheter-equiper",
+    "address": "So'flo, Floréal",
+    "phone": "",
+    "website": "https://www.mysamaison.com/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Mysa+Maison+So%27flo+Floreal+Mauritius",
+    "lat": -20.3110617,
+    "lng": 57.5134651,
+    "themes": [
+      "maison-equipement"
+    ],
+    "zone": "centre",
+    "description": "Enseigne de linge de maison et décoration haut de gamme (draps, housses, serviettes, coussins), originaire d'Hyderabad (Inde), avec plus de 44 ans d'expérience dans le textile. Boutique à So'flo (Floréal), autre point de vente à Rivière Noire."
+  },
+  {
+    "id": "associated-textiles-services",
+    "name": "Associated Textiles Services",
+    "category": "acheter-equiper",
+    "address": "Zone Industrielle, Saint-Pierre",
+    "phone": "+230 433 5050",
+    "website": "https://www.assotex.com/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Associated+Textiles+Services+Saint+Pierre+Mauritius",
+    "lat": -20.2249021,
+    "lng": 57.5383776,
+    "themes": [
+      "maison-equipement"
+    ],
+    "zone": "centre",
+    "description": "Fabricant et distributeur mauricien de linge de maison depuis 1989, fournisseur historique de l'hôtellerie dans l'océan Indien : linge de lit, linge de bain, serviettes et broderie personnalisée. Boutiques à Saint-Pierre, Forbach (Circle Square) et Tamarin (Cap Dal).",
+    "hours": "Saint-Pierre : magasin lun-sam 9h-16h30 ; Forbach et Tamarin : lun-sam 9h-16h30. Fermé dimanche et jours fériés."
+  },
+  {
+    "id": "pang-chin-ltd",
+    "name": "Pang Chin Ltd",
+    "category": "acheter-equiper",
+    "address": "Captain Ellis Street, Les Pailles",
+    "phone": "+230 212 5975",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Pang+Chin+Ltd+Captain+Ellis+Street+Les+Pailles+Mauritius",
+    "lat": -20.1938162,
+    "lng": 57.4882678,
+    "themes": [
+      "maison-equipement"
+    ],
+    "zone": "centre",
+    "description": "Magasin de linge de maison à Les Pailles : draps, couettes, matelas, oreillers et serviettes."
+  },
+  {
+    "id": "michel-abad",
+    "name": "Michel Abad",
+    "category": "acheter-equiper",
+    "address": "Royal Road, Grand Baie (en face de Harley Davidson)",
+    "phone": "+230 263 3017",
+    "website": "https://www.michelabad.com",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Michel+Abad+Royal+Road+Grand+Baie+Mauritius",
+    "lat": -20.0130199,
+    "lng": 57.584627,
+    "themes": [
+      "maison-equipement"
+    ],
+    "zone": "nord",
+    "description": "Concept store du styliste Michel Abad (installé à Maurice depuis près de 30 ans) : vêtements en matières naturelles (voile de coton, lin, soie), cachemire (fil italien Loro Piana) et linge de maison brodé à la main."
+  },
+  {
+    "id": "rajasthan-handloom-house",
+    "name": "Rajasthan Handloom House",
+    "category": "acheter-equiper",
+    "address": "Abbé de la Caille Street, Curepipe",
+    "phone": "+230 674 0581",
+    "website": "https://rajasthanhandloomhouse.com/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Rajasthan+Handloom+House+Abbe+de+la+Caille+Street+Curepipe+Mauritius",
+    "lat": -20.3150516,
+    "lng": 57.5211497,
+    "themes": [
+      "maison-equipement"
+    ],
+    "zone": "centre",
+    "description": "Magasin de Curepipe spécialisé dans le mobilier ancien indien en bois massif (sheesham, manguier, bois de rose, acacia) et l'artisanat/décoration d'origine indienne — l'un des plus anciens magasins de meubles anciens de l'île.",
+    "hours": "Lun-Sam 9h-17h30, fermé dimanche"
+  },
+  {
     "id": "vertical-world-ltd",
     "name": "Vertical World Ltd",
     "category": "faire-du-sport",
@@ -54302,6 +54496,44 @@
     "filters": [
       "associatif-caritatif"
     ]
+  },
+  {
+    "id": "mont-choisy-brocante-evt",
+    "name": "Brocante de Mont Choisy Le Mall",
+    "category": "agenda",
+    "address": "Parking de Mont Choisy Le Mall, Grand Baie",
+    "phone": "",
+    "website": "https://www.montchoisy.com/commercial/mall-of-mont-choisy/",
+    "googleMapsUrl": "https://maps.google.com/?cid=980421230316508597&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.0244185,
+    "lng": 57.576291,
+    "themes": [
+      "evenements-associatifs"
+    ],
+    "zone": "nord",
+    "description": "Brocante / vide-grenier mensuel sur le parking de Mont Choisy Le Mall : vendeurs particuliers proposant vêtements, objets et petit mobilier de seconde main.",
+    "period": "Chaque dernier dimanche du mois",
+    "eventRecurrence": "periodique",
+    "filters": [
+      "associatif-caritatif"
+    ]
+  },
+  {
+    "id": "mont-choisy-brocante-boutique",
+    "name": "Brocante de Mont Choisy Le Mall",
+    "category": "acheter-equiper",
+    "address": "Parking de Mont Choisy Le Mall, Grand Baie",
+    "phone": "",
+    "website": "https://www.montchoisy.com/commercial/mall-of-mont-choisy/",
+    "googleMapsUrl": "https://maps.google.com/?cid=980421230316508597&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "lat": -20.0244185,
+    "lng": 57.576291,
+    "themes": [
+      "seconde-main-particuliers"
+    ],
+    "zone": "nord",
+    "hours": "Chaque dernier dimanche du mois",
+    "description": "Brocante mensuelle sur le parking de Mont Choisy Le Mall où des particuliers vendent vêtements, objets et petit mobilier de seconde main."
   },
   {
     "id": "mahogany-car-boot-sale-evt",
