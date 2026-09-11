@@ -37,6 +37,18 @@ export function AccountClient({ email, isPremium }: { email: string; isPremium: 
   const [expiringSoon, setExpiringSoon] = useState<Listing[]>([]);
   const [expired, setExpired] = useState<Listing[]>([]);
   const [renewing, setRenewing] = useState<number | null>(null);
+  const [openingPortal, setOpeningPortal] = useState(false);
+
+  async function openBillingPortal() {
+    setOpeningPortal(true);
+    const res = await fetch("/api/stripe/portal", { method: "POST" });
+    const json = await res.json();
+    if (json.url) {
+      window.location.href = json.url;
+    } else {
+      setOpeningPortal(false);
+    }
+  }
 
   function applyListings(data: Listing[]) {
     setListings(data);
@@ -90,6 +102,15 @@ export function AccountClient({ email, isPremium }: { email: string; isPremium: 
         >
           Mes listes
         </Link>
+        {isPremium && (
+          <button
+            onClick={openBillingPortal}
+            disabled={openingPortal}
+            className="text-[12.5px] font-semibold text-primary-deep underline disabled:opacity-50"
+          >
+            {openingPortal ? "Ouverture…" : "Gérer mon abonnement"}
+          </button>
+        )}
       </div>
 
       {!isPremium && (
