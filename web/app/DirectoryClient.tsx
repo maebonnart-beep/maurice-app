@@ -1966,7 +1966,31 @@ export default function DirectoryClient({
               </Link>
 
               <div
-                className="mt-4 rounded-2xl p-4 overflow-hidden shadow-card"
+                role="button"
+                tabIndex={0}
+                onClick={() => {
+                  if (canSeeEventDetail) {
+                    setHomeMode("categories");
+                    setHomeCategory("agenda");
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  } else {
+                    window.location.href = "/mon-compte/upgrade";
+                  }
+                }}
+                onKeyDown={(e) => {
+                  if (e.key === "Enter" || e.key === " ") {
+                    e.preventDefault();
+                    if (canSeeEventDetail) {
+                      setHomeMode("categories");
+                      setHomeCategory("agenda");
+                      window.scrollTo({ top: 0, behavior: "smooth" });
+                    } else {
+                      window.location.href = "/mon-compte/upgrade";
+                    }
+                  }
+                }}
+                aria-label="Voir tous les événements"
+                className="mt-4 rounded-2xl p-4 overflow-hidden shadow-card cursor-pointer active:scale-[.99] transition-transform"
                 style={{ background: "linear-gradient(135deg, #ffd3df 0%, #fff2f5 60%)" }}
               >
                 <div className="flex items-start justify-between gap-2">
@@ -1980,22 +2004,13 @@ export default function DirectoryClient({
                     <p className="mt-2 text-[15px] font-bold leading-tight">Événements à Maurice</p>
                     <p className="text-[11.5px] text-muted leading-snug mt-0.5">Tous les événements, sorties et festivals</p>
                   </div>
-                  <button
-                    onClick={() => {
-                      if (canSeeEventDetail) {
-                        setHomeMode("categories");
-                        setHomeCategory("agenda");
-                        window.scrollTo({ top: 0, behavior: "smooth" });
-                      } else {
-                        window.location.href = "/mon-compte/upgrade";
-                      }
-                    }}
-                    className="shrink-0 flex items-center justify-center w-8 h-8 rounded-full bg-white shadow-sm text-[14px] font-bold active:scale-[.96] transition-transform"
+                  <span
+                    aria-hidden
+                    className="shrink-0 flex items-center justify-center w-8 h-8 rounded-full bg-white shadow-sm text-[14px] font-bold"
                     style={{ color: "#e0567a" }}
-                    aria-label="Voir tous les événements"
                   >
                     ›
-                  </button>
+                  </span>
                 </div>
 
                 {upcomingEvents.length > 0 ? (
@@ -2028,7 +2043,10 @@ export default function DirectoryClient({
                               aria-hidden
                             />
                             <button
-                              onClick={() => openEvent(b.id)}
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                openEvent(b.id);
+                              }}
                               className="relative text-left w-full rounded-2xl overflow-hidden p-3 shadow-card active:scale-[.98] transition-transform"
                               style={{ background: `linear-gradient(135deg, color-mix(in srgb, ${eventColor} 20%, var(--surface)) 0%, var(--surface) 75%)`, border: "1px solid var(--border)" }}
                             >
@@ -2189,6 +2207,12 @@ export default function DirectoryClient({
                   >
                     Voir tout ({counts["agenda"] || 0} événements) ›
                   </button>
+                  <Link
+                    href={agendaAlertHref}
+                    className="mt-2 flex items-center justify-center w-full h-[38px] text-[12.5px] font-semibold text-primary-deep hover:underline"
+                  >
+                    🔔 Créer une alerte
+                  </Link>
                 </div>
               ) : (
                 <div className="flex flex-col gap-2 sm:max-w-[560px] sm:mx-auto">
