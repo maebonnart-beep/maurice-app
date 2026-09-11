@@ -404,7 +404,7 @@ export const SELECTIONS: Selection[] = [
     tagline: "Nos meilleures adresses pour croiser des tortues géantes d'Aldabra",
     group: "famille",
     icon: "Binoculars",
-    photoUrl: "https://images.pexels.com/photos/7340657/pexels-photo-7340657.jpeg?auto=compress&cs=tinysrgb&w=800",
+    photoUrl: "https://images.pexels.com/photos/7340657/pexels-photo-7340657.png?auto=compress&cs=tinysrgb&w=800",
     photoCredit: "Itai Perelman Nasich / Pexels",
     businessIds: [
       "la-vanille-nature-park",
@@ -816,8 +816,8 @@ export const SELECTIONS: Selection[] = [
     tagline: "Nos adresses préférées pour un plateau de sushis réussi",
     group: "manze",
     icon: "ForkKnife",
-    photoUrl: "https://images.pexels.com/photos/1028429/pexels-photo-1028429.jpeg?auto=compress&cs=tinysrgb&w=800",
-    photoCredit: "Valeria Boltneva / Pexels",
+    photoUrl: "https://images.pexels.com/photos/11470545/pexels-photo-11470545.jpeg?auto=compress&cs=tinysrgb&w=800",
+    photoCredit: "Maria Luiza Melo / Pexels",
     businessIds: [
       "hasu-long-beach-belle-mare",
       "kawaii-lux-le-morne",
