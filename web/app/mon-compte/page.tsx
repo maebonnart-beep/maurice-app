@@ -1,7 +1,6 @@
 import { createClient } from "@/lib/supabase/server";
 import { LoginForm } from "./LoginForm";
 import { AccountClient } from "./AccountClient";
-import { LogoutButton } from "./LogoutButton";
 
 export const metadata = { title: "Mon compte — Maurice+" };
 
@@ -35,12 +34,5 @@ export default async function MonComptePage({
     .eq("id", user.id)
     .single();
 
-  return (
-    <>
-      <AccountClient email={user.email ?? ""} isPremium={profile?.subscription_status === "active"} />
-      <div className="max-w-[640px] mx-auto px-4">
-        <LogoutButton />
-      </div>
-    </>
-  );
+  return <AccountClient email={user.email ?? ""} isPremium={profile?.subscription_status === "active"} />;
 }

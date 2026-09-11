@@ -7,6 +7,7 @@ import { LISTING_CATEGORIES } from "@/lib/marketplace/types";
 import { Crown } from "@phosphor-icons/react/dist/ssr";
 import { MAX_ACTIVE_LISTINGS } from "@/lib/marketplace/constants";
 import { mapListingRow } from "@/lib/marketplace/mapRow";
+import { LogoutButton } from "./LogoutButton";
 
 const STATUS_LABELS: Record<ListingStatus, string> = {
   pending: "En attente de validation",
@@ -89,6 +90,9 @@ export function AccountClient({ email, isPremium }: { email: string; isPremium: 
       <p className="text-[12.5px] text-muted mb-1">
         {email} · {activeCount}/{MAX_ACTIVE_LISTINGS} annonces actives
       </p>
+      <div className="mb-3">
+        <LogoutButton />
+      </div>
       <div className="flex items-center gap-3 mb-4">
         <Link
           href="/mon-compte/alertes"
