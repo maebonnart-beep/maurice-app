@@ -58,7 +58,7 @@ export async function sendWelcomeEmail(toEmail: string) {
             <li>Partager tes bonnes adresses</li>
           </ul>
           ${PREMIUM_UPSELL_HTML}
-          <p style="margin-top:20px">Tu as repéré une adresse manquante, une erreur sur une fiche, ou une idée pour améliorer le site ? Écris-nous à <a href="mailto:contact@kotemoris.com">contact@kotemoris.com</a>, on adore avoir des nouvelles de la communauté.</p>
+          <p style="margin-top:20px">Tu as repéré une adresse manquante, une erreur sur une fiche, ou une idée pour améliorer le site ? Écris-nous à <a href="mailto:contact@kotemoris.com">contact@kotemoris.com</a> (ou via le lien « Nous contacter » dans Mon compte), on adore avoir des nouvelles de la communauté.</p>
           ${INSTALL_APP_HTML}
           ${SITE_LINK_HTML}
         `,
