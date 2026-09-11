@@ -3,15 +3,26 @@
 import { useState } from "react";
 import Link from "next/link";
 import { useAccount } from "@/lib/marketplace/useAccount";
-import { PREMIUM_PRICE_LABEL, MAX_ACTIVE_LISTINGS } from "@/lib/marketplace/constants";
+import {
+  PREMIUM_PRICE_LABEL,
+  PREMIUM_PRICE_LABEL_ANNUAL,
+  MAX_ACTIVE_LISTINGS,
+} from "@/lib/marketplace/constants";
+
+type Plan = "monthly" | "annual";
 
 export function UpgradeClient() {
   const account = useAccount();
   const [loading, setLoading] = useState(false);
+  const [plan, setPlan] = useState<Plan>("monthly");
 
   async function startCheckout() {
     setLoading(true);
-    const res = await fetch("/api/stripe/checkout", { method: "POST" });
+    const res = await fetch("/api/stripe/checkout", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ plan }),
+    });
     const json = await res.json();
     if (json.url) {
       window.location.href = json.url;
@@ -28,7 +39,26 @@ export function UpgradeClient() {
         WhatsApp avec les acheteurs) et débloque l&apos;accès complet aux événements : notifications
         sur tes thématiques favorites et alertes personnalisées.
       </p>
-      <p className="font-serif text-2xl font-semibold text-primary-deep">{PREMIUM_PRICE_LABEL}</p>
+      <div className="w-full flex gap-2 bg-surface-2 rounded-xl p-1">
+        <button
+          type="button"
+          onClick={() => setPlan("monthly")}
+          className={`flex-1 h-[40px] rounded-lg text-[13.5px] font-semibold transition-colors ${
+            plan === "monthly" ? "bg-surface shadow-sm text-primary-deep" : "text-muted"
+          }`}
+        >
+          Mensuel · {PREMIUM_PRICE_LABEL}
+        </button>
+        <button
+          type="button"
+          onClick={() => setPlan("annual")}
+          className={`flex-1 h-[40px] rounded-lg text-[13.5px] font-semibold transition-colors ${
+            plan === "annual" ? "bg-surface shadow-sm text-primary-deep" : "text-muted"
+          }`}
+        >
+          Annuel · {PREMIUM_PRICE_LABEL_ANNUAL}
+        </button>
+      </div>
       {account.loading ? (
         <p className="text-[13px] text-muted">Chargement…</p>
       ) : !account.loggedIn ? (

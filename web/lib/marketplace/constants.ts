@@ -5,6 +5,7 @@ export const LISTING_TTL_DAYS = 21;
 export const MAX_ACTIVE_LISTINGS = 10;
 
 export const PREMIUM_PRICE_LABEL = "Rs 199/mois";
+export const PREMIUM_PRICE_LABEL_ANNUAL = "Rs 1 499/an";
 
 export const LISTING_PHOTOS_BUCKET = "listing-photos";
 

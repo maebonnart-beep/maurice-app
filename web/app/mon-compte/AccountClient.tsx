@@ -4,7 +4,8 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import type { Listing, ListingStatus } from "@/lib/marketplace/types";
 import { LISTING_CATEGORIES } from "@/lib/marketplace/types";
-import { MAX_ACTIVE_LISTINGS, PREMIUM_PRICE_LABEL } from "@/lib/marketplace/constants";
+import { Crown } from "@phosphor-icons/react/dist/ssr";
+import { MAX_ACTIVE_LISTINGS } from "@/lib/marketplace/constants";
 import { mapListingRow } from "@/lib/marketplace/mapRow";
 
 const STATUS_LABELS: Record<ListingStatus, string> = {
@@ -94,12 +95,16 @@ export function AccountClient({ email, isPremium }: { email: string; isPremium: 
       {!isPremium && (
         <Link
           href="/mon-compte/upgrade"
-          className="mb-4 flex items-center justify-between gap-3 bg-primary-tint border border-primary/20 rounded-xl p-3.5"
+          className="mb-4 flex items-center gap-3 bg-primary-tint border border-primary/20 rounded-xl p-3.5 active:scale-[.99] transition-transform"
         >
-          <span className="text-[13px] text-primary-deep font-medium">
-            Passe premium ({PREMIUM_PRICE_LABEL}) pour déposer des annonces.
+          <span className="shrink-0 w-9 h-9 rounded-full bg-primary/15 flex items-center justify-center">
+            <Crown size={18} weight="fill" className="text-primary-deep" />
           </span>
-          <span className="shrink-0 text-[12.5px] font-semibold text-primary-deep underline">S&apos;abonner</span>
+          <span className="flex-1 min-w-0">
+            <span className="block text-[13.5px] text-primary-deep font-semibold">Passe premium</span>
+            <span className="block text-[12px] text-primary-deep/80">Dépose des annonces et débloque toutes les alertes.</span>
+          </span>
+          <span className="shrink-0 text-[12.5px] font-semibold text-primary-deep underline">Voir</span>
         </Link>
       )}
 
