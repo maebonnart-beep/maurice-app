@@ -208,6 +208,7 @@ export const SELECTIONS: Selection[] = [
       "boulangerie-isle-de-france",
       "le-comptoir-constance",
       "le-bistrot-d-edwige",
+      "nature-et-delices-pointe-aux-canonniers",
     ],
   },
   {
