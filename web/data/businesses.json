@@ -2092,7 +2092,7 @@
     ],
     "hours": "Lun-Jeu 9h-21h, Ven-Sam 9h-22h, Dim et jours fériés 9h-17h",
     "zone": "nord",
-    "description": "Supermarché de l'enseigne Intermart situé dans le centre commercial La Croisette à Grand Baie.",
+    "description": "Supermarché de l'enseigne Intermart situé dans le centre commercial La Croisette à Grand Baie, avec parking souterrain. Ouvert lun-jeu 9h-21h, ven-sam 9h-22h, dim/jours fériés 9h-17h.",
     "filters": [
       "grandes-surfaces"
     ],
@@ -15133,7 +15133,7 @@
       "commerces-alimentaires"
     ],
     "zone": "centre",
-    "description": "Hypermarché Carrefour Maurice au Phoenix Mall (ex-enseigne Jumbo, rebaptisée Carrefour en 2025).",
+    "description": "Hypermarché Carrefour Maurice au Phoenix Mall (ex-enseigne Jumbo, rebaptisée Carrefour en 2025), avec food court et distributeur automatique sur place. Ouvert dim 9h-20h, lun-jeu 9h-21h, ven-sam 9h-22h.",
     "hours": "Lun-Jeu 9h-21h, Ven-Sam 9h-22h, Dim et jours fériés 9h-20h",
     "filters": [
       "grandes-surfaces"
@@ -15174,7 +15174,7 @@
       "commerces-alimentaires"
     ],
     "zone": "centre",
-    "description": "Supermarché de proximité Carrefour City, situé au centre commercial Les Allées à Moka.",
+    "description": "Supermarché de proximité Carrefour City, situé au centre commercial Les Allées à Moka (groupe Jumbo) : rayons boulangerie, boucherie et traiteur sur place, programme de fidélité. Ouvert lun-sam 7h-20h, dim/jours fériés 7h-18h.",
     "hours": "Lun-Sam 7h-20h, Dim et jours fériés 7h-18h",
     "filters": [
       "grandes-surfaces"
@@ -23507,7 +23507,7 @@
     "filters": [
       "grandes-surfaces"
     ],
-    "description": "Supermarché de l’enseigne Intermart à Montebello, Port-Louis.",
+    "description": "Supermarché de l'enseigne Intermart au Montebello Mall (Pailles, Port Louis). Ouvert lun-jeu 8h-20h, ven-sam 8h-21h, dim/jours fériés 8h-19h.",
     "createdAt": "2026-07-12T16:37:31+02:00"
   },
   {
@@ -37923,7 +37923,7 @@
       "commerces-alimentaires"
     ],
     "zone": "centre",
-    "description": "Supermarché Winner's situé avenue Jules Koenig à Vacoas-Phoenix.",
+    "description": "Supermarché Winner's situé avenue Jules Koenig à Vacoas-Phoenix. Ouvert lun-sam 8h-20h, dim 8h-13h.",
     "hours": "Lun-Sam 8h-20h, Dim 8h-13h",
     "filters": [
       "grandes-surfaces"
@@ -37944,7 +37944,7 @@
       "commerces-alimentaires"
     ],
     "zone": "ouest",
-    "description": "Supermarché Winner's à Bambous, apprécié pour son rayon boulangerie et son grand parking.",
+    "description": "Supermarché Winner's à Bambous, apprécié pour son rayon boulangerie et son grand parking. Fait partie du groupe IBL (depuis 1994) ; premier magasin Winner's ouvert en zone rurale à Maurice. Ouvert lun-sam 8h-19h, dim 8h-13h.",
     "hours": "Lun-Sam 8h-19h, Dim 8h-13h",
     "filters": [
       "grandes-surfaces",
