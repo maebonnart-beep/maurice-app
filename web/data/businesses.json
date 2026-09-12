@@ -7652,7 +7652,7 @@
     ],
     "badge": "selection",
     "zone": "ouest",
-    "hours": "Lun-Sam 18h30-22h30",
+    "hours": "Dim fermé, Lun-Jeu 18h30-22h, Ven-Sam 18h30-22h30",
     "description": "Restaurant italien du chef Rocco à La Mivoie (route royale, Rivière Noire/Tamarin), recettes sardes et siciliennes faites maison et glaces artisanales. Agréable terrasse couverte et jardin extérieur avec musique live le week-end ; jouxte une épicerie italienne.",
     "filters": [
       "italien",
@@ -58198,5 +58198,23 @@
     "zone": "centre",
     "description": "Aussi appelée Cascade 500 Pieds : descente courte mais raide depuis le parking d'Alexandra Falls jusqu'à la lèvre de la plus haute cascade de l'île (152 m), qui plonge vers la côte sud. Traversées de ruisseaux en début de parcours puis descente soutenue sur rochers glissants ; belles vues par temps clair, mais remontée de 30-45 min éprouvante au retour.",
     "createdAt": "2026-09-10T12:06:50+02:00"
+  },
+  {
+    "id": "dolce-vanille-grand-baie",
+    "name": "Dolce Vanille",
+    "category": "manger-boire",
+    "address": "Chemin 20 Pieds, Route royale, Grand Baie",
+    "phone": "+230 5958 8611",
+    "themes": [
+      "cafes-bars-glaciers"
+    ],
+    "zone": "nord",
+    "priceRange": "prix-moyen",
+    "description": "Café à Grand Baie pour petit-déjeuner et déjeuner, cuisine européenne healthy dans un esprit cosy. Fermé le lundi.",
+    "filters": [
+      "petit-dej-lunch"
+    ],
+    "hours": "Dim 8h-16h, Lun fermé, Mar-Sam 8h-16h",
+    "createdAt": "2026-09-12T00:00:00+02:00"
   }
 ]
