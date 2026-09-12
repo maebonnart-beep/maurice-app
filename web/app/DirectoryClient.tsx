@@ -749,6 +749,17 @@ export default function DirectoryClient({
     return shuffleReady ? shuffled(all) : all;
   }, [businesses, shuffleReady]);
 
+  // Accueil → « Nouveautés » : fiches ajoutées à l'annuaire dans les 30 derniers
+  // jours (createdAt), en avant-première pour les comptes premium uniquement —
+  // c'est le perk "diffusion prioritaire", pas une section visible de tous.
+  const newBusinesses = useMemo(() => {
+    if (!account.isPremium) return [];
+    const cutoff = Date.now() - 30 * 24 * 60 * 60 * 1000;
+    return businesses
+      .filter((b) => b.category !== "agenda" && b.createdAt && new Date(b.createdAt).getTime() >= cutoff)
+      .sort((a, b) => (b.createdAt as string).localeCompare(a.createdAt as string));
+  }, [businesses, account.isPremium]);
+
   // Accueil → « Adresses kids friendly » : même logique que les coups de cœur,
   // filtrée sur le thème kids-friendly.
   const kidsFriendly = useMemo(() => {
@@ -1653,6 +1664,53 @@ export default function DirectoryClient({
                 />
               </button>
 
+              {newBusinesses.length > 0 && (
+                <>
+                  <div className="flex items-center gap-2 mb-2.5">
+                    <Sparkle size={20} weight="fill" className="text-primary-deep shrink-0" aria-hidden />
+                    <h2 className="text-[16px] font-bold text-ink">Nouveautés en avant-première</h2>
+                  </div>
+                  <div className="flex gap-3 overflow-x-auto pb-1 -mx-4 px-4 mb-7 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+                    {newBusinesses.slice(0, 12).map((b) => (
+                      <div
+                        key={b.id}
+                        role="button"
+                        tabIndex={0}
+                        onClick={() => selectFromCard(b.id)}
+                        onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") selectFromCard(b.id); }}
+                        className="relative shrink-0 w-[160px] rounded-card overflow-hidden bg-surface border border-border shadow-card text-left cursor-pointer active:scale-[.98] transition-transform"
+                      >
+                        <div className="relative h-[110px] bg-primary-tint flex items-center justify-center">
+                          {b.photoUrl ? (
+                            // eslint-disable-next-line @next/next/no-img-element
+                            <img src={b.photoUrl} alt="" className="absolute inset-0 w-full h-full object-cover" />
+                          ) : (
+                            (() => {
+                              const FallbackIcon = iconForKey(b.category);
+                              return FallbackIcon ? (
+                                <FallbackIcon size={30} weight="duotone" className="text-primary-deep opacity-50" aria-hidden />
+                              ) : null;
+                            })()
+                          )}
+                          <span
+                            className="absolute top-1.5 right-1.5 inline-flex items-center gap-1 px-1.5 py-1 rounded-full bg-surface/90 shadow-sm"
+                            onClick={(e) => e.stopPropagation()}
+                          >
+                            <FavoriteButton id={b.id} size={12.5} />
+                          </span>
+                        </div>
+                        <div className="p-2.5">
+                          <p className="text-[13px] font-bold text-ink truncate">{displayName(b.name)}</p>
+                          <p className="text-[11.5px] text-muted truncate">
+                            {CATEGORY_MAP[b.category].label} • {displayCity(b.address)}
+                          </p>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </>
+              )}
+
               {coupsDeCoeur.length > 0 && (
                 <>
                   <div className="flex items-center justify-between mb-2.5">
@@ -2352,7 +2410,7 @@ export default function DirectoryClient({
                     </button>
                   </div>
                   {favorisMapOpen ? (
-                    <div className="rounded-card border border-border bg-surface shadow-card overflow-hidden h-[65vh]">
+                    <div className="rounded-card border border-border bg-surface shadow-card overflow-hidden isolate h-[65vh]">
                       <Map
                         businesses={favorisMapBusinesses}
                         selectedId={selectedId}
@@ -3237,7 +3295,7 @@ export default function DirectoryClient({
                 resultsView === "liste" ? "hidden lg:block" : ""
               }`}
             >
-              <div className="rounded-card border border-border bg-surface shadow-card overflow-hidden h-[60vh] lg:h-full flex flex-col">
+              <div className="rounded-card border border-border bg-surface shadow-card overflow-hidden isolate h-[60vh] lg:h-full flex flex-col">
                 <div className="flex items-center justify-between gap-3 flex-wrap px-4 py-2.5 border-b border-border">
                   <span className="text-[12.5px] text-muted">Carte des activités — positions GPS</span>
                   <label className="inline-flex items-center gap-2 text-[12.5px] font-medium text-ink cursor-pointer select-none">
