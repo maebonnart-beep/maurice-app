@@ -308,3 +308,11 @@ grant all on notified_businesses to service_role;
 -- Suivi de l'e-mail de bienvenue envoyé à la toute première connexion
 -- (app/auth/callback/route.ts) : évite de le renvoyer aux connexions suivantes.
 alter table profiles add column welcome_email_sent_at timestamptz;
+
+-- Préférences de personnalisation de l'accueil (rubriques d'intérêt cochées +
+-- "j'ai des enfants"), réglables dans l'onglet Profil. { interests: string[],
+-- hasKids: boolean }. Même principe que user_favorites : localStorage reste la
+-- seule source pour les visiteurs non connectés, cette colonne ne fait que
+-- sauvegarder l'état pour les comptes connectés (grants/RLS déjà en place sur
+-- profiles, cf. policies "profiles: self read/update" plus haut).
+alter table profiles add column preferences jsonb not null default '{}'::jsonb;

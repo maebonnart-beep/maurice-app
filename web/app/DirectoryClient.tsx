@@ -45,6 +45,8 @@ import { BusinessCard } from "@/components/ui/BusinessCard";
 import { BusinessDetail } from "@/components/ui/BusinessDetail";
 import { useFavorites, type FavoriteStatus } from "@/lib/favorites";
 import { useFavoriteSelections } from "@/lib/favoriteSelections";
+import { usePreferences } from "@/lib/preferences";
+import { usePreferencesSync } from "@/lib/preferencesSync";
 import { useFavoritesSync } from "@/lib/favoritesSync";
 import { useSuggestions, findIntegratedMatch } from "@/lib/suggestions";
 import { useAccount } from "@/lib/marketplace/useAccount";
@@ -216,6 +218,7 @@ export default function DirectoryClient({
   const { statuses: favoriteStatuses, getStatus, mergeStatuses } = useFavorites();
   const { favoriteSelectionIds, isFavoriteSelection, toggleFavoriteSelection, mergeFavoriteSelections } =
     useFavoriteSelections();
+  const { preferences, toggleInterest, setHasKids, mergePreferences } = usePreferences();
   const { suggestions } = useSuggestions();
   const account = useAccount();
   const [loggingOut, setLoggingOut] = useState(false);
@@ -233,6 +236,7 @@ export default function DirectoryClient({
       ? "/avatar-contributeur.png"
       : "/avatar-decouverte.png";
   useFavoritesSync(account.loggedIn, mergeStatuses, mergeFavoriteSelections);
+  usePreferencesSync(account.loggedIn, mergePreferences);
   // Profil → Mes suggestions : pour chaque adresse proposée, détection best-effort
   // (nom + catégorie) d'une fiche correspondante déjà intégrée à l'annuaire.
   const suggestionsWithStatus = useMemo(
@@ -729,17 +733,30 @@ export default function DirectoryClient({
     return c;
   }, [businesses]);
 
-  // Accueil : catégories mises en avant en grand — basées sur l'usage réel
-  // (coups de cœur/à tester/testé, cf. profilTopCategories), avec repli sur
-  // les catégories les mieux fournies pour un nouvel utilisateur sans favoris.
+  // Accueil : catégories mises en avant en grand. Priorité aux préférences
+  // explicites (cochées dans Profil, "j'ai des enfants" boostant "famille-travail"),
+  // puis repli sur l'usage réel (coups de cœur/à tester/testé, cf.
+  // profilTopCategories), puis sur les catégories les mieux fournies pour un
+  // nouvel utilisateur sans préférences ni favoris.
+  const preferredTopCategories = useMemo(() => {
+    const keys = preferences.hasKids
+      ? [...new Set([...preferences.interests, "famille-travail" as CategoryKey])]
+      : preferences.interests;
+    return keys
+      .map((key) => CATEGORY_MAP[key])
+      .filter((c): c is (typeof CATEGORIES)[number] => !!c && (counts[c.key] || 0) > 0)
+      .map((category) => ({ category, count: counts[category.key] || 0 }));
+  }, [preferences, counts]);
+
   const homeTopCategories = useMemo(() => {
+    if (preferredTopCategories.length > 0) return preferredTopCategories;
     if (profilTopCategories.length > 0) return profilTopCategories;
     return [...CATEGORIES]
       .filter((c) => (counts[c.key] || 0) > 0)
       .sort((a, b) => (counts[b.key] || 0) - (counts[a.key] || 0))
       .slice(0, 3)
       .map((c) => ({ category: c, count: counts[c.key] || 0 }));
-  }, [profilTopCategories, counts]);
+  }, [preferredTopCategories, profilTopCategories, counts]);
 
   // Accueil → « Nos coups de cœur » : fiches mises en avant par la rédaction,
   // limitées à celles qui ont une photo (essentiel pour ce format en carte photo).
@@ -2901,8 +2918,48 @@ export default function DirectoryClient({
                 </Link>
               )}
 
+              {/* Mes préférences : rubriques cochées explicitement pour personnaliser
+                  l'ordre de l'accueil (homeTopCategories), + "j'ai des enfants" qui
+                  booste "famille-travail" sans avoir à la cocher soi-même. */}
+              <div className="bg-surface border border-border rounded-2xl shadow-sm p-4">
+                <p className="m-0 mb-1 text-[13px] font-bold text-ink">Mes préférences</p>
+                <p className="m-0 mb-3 text-[12px] text-muted leading-snug">
+                  Coche ce qui t&apos;intéresse pour personnaliser ton accueil.
+                </p>
+                <label className="flex items-center gap-2.5 mb-3 pb-3 border-b border-border">
+                  <input
+                    type="checkbox"
+                    checked={preferences.hasKids}
+                    onChange={(e) => setHasKids(e.target.checked)}
+                    className="w-4 h-4 accent-[var(--primary)] shrink-0"
+                  />
+                  <span className="text-[13px] text-ink">👨‍👩‍👧 J&apos;ai des enfants</span>
+                </label>
+                <div className="flex flex-wrap gap-2">
+                  {CATEGORIES.map((c) => {
+                    const checked = preferences.interests.includes(c.key);
+                    return (
+                      <button
+                        key={c.key}
+                        type="button"
+                        onClick={() => toggleInterest(c.key)}
+                        className="flex items-center gap-1.5 rounded-pill px-3 py-1.5 text-[12.5px] font-semibold border transition-colors"
+                        style={
+                          checked
+                            ? { background: `color-mix(in srgb, ${c.color} 18%, var(--surface))`, borderColor: c.color, color: c.color }
+                            : { borderColor: "var(--border)", color: "var(--muted)" }
+                        }
+                      >
+                        <span>{c.emoji}</span>
+                        <span>{c.label}</span>
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
+
               {/* Vos catégories préférées : top 3 parmi tout ce qui a un statut. */}
-              {profilTopCategories.length > 0 && (
+              {profilTopCategories.length > 0 && preferences.interests.length === 0 && (
                 <div className="bg-surface border border-border rounded-2xl shadow-sm p-4">
                   <p className="m-0 mb-3 text-[13px] font-bold text-ink">Vos catégories préférées</p>
                   <div className="flex flex-col gap-2.5">
