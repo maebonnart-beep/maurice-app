@@ -15913,7 +15913,7 @@
       "commerces-alimentaires"
     ],
     "zone": "nord",
-    "description": "Pâtisserie artisanale de Grand Baie (School Lane), bien notée (4,6/5).",
+    "description": "Pâtisserie artisanale de Grand Baie (School Lane), bien notée (4,6/5). Fonctionne sur commande, à passer au moins 3 jours à l'avance (hors week-ends et jours fériés).",
     "filters": [
       "boulangeries",
       "boulangeries-patisseries"
@@ -24537,7 +24537,7 @@
       "commerces-alimentaires"
     ],
     "zone": "centre",
-    "description": "Boulangerie-pâtisserie de quartier à Quatre Bornes.",
+    "description": "Petite pâtisserie de quartier à Quatre Bornes (TCMT Patisserie du Quartier) : gâteaux, muffins, cupcakes et snacks, disponibles sur commande pour tous types d'événements. Bien notée par ses clients.",
     "filters": [
       "boulangeries",
       "boulangeries-patisseries"
@@ -30438,7 +30438,7 @@
       "commerces-alimentaires"
     ],
     "zone": "sud",
-    "description": "Boutique de cupcakes de Quartier-Militaire (Valetta), très bien notée.",
+    "description": "Boutique de cupcakes et gâteaux personnalisés de Quartier-Militaire (Valetta), sur commande pour anniversaires et occasions spéciales. Boutique récente, très bien notée.",
     "filters": [
       "boulangeries"
     ],
@@ -37134,7 +37134,7 @@
       "commerces-alimentaires"
     ],
     "zone": "est",
-    "description": "Pâtisserie de Mahébourg à bonne réputation locale, large gamme de produits. Ouvert 8h-20h.",
+    "description": "Pâtisserie de Mahébourg à bonne réputation locale, large gamme de produits à prix compétitifs. Terrasse spacieuse pour un repas rapide (plats indo-mauriciens, pâtisseries, boissons sans alcool). Ouvert 8h-20h.",
     "hours": "Lun-Dim 8h-20h",
     "filters": [
       "boulangeries",
