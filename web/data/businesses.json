@@ -51667,27 +51667,6 @@
     "createdAt": "2026-08-09T15:29:47+02:00"
   },
   {
-    "id": "steward-s-lazzat-primeur",
-    "name": "Steward's Lazzat",
-    "category": "manger-boire",
-    "address": "Louis Pasteur Street, Port-Louis",
-    "phone": "",
-    "website": "https://www.facebook.com/lazzat.mu/",
-    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Steward's%20Lazzat%20Louis%20Pasteur%20Street%2C%20Port-Louis%20Mauritius",
-    "lat": -20.1600568,
-    "lng": 57.5042323,
-    "themes": [
-      "commerces-alimentaires"
-    ],
-    "hours": "",
-    "zone": "nord",
-    "description": "Primeur de quartier — fruits et légumes frais. Horaires et éventuel label bio non confirmés.",
-    "filters": [
-      "fruits-et-legumes"
-    ],
-    "createdAt": "2026-08-09T15:29:47+02:00"
-  },
-  {
     "id": "fareed-confit-primeur",
     "name": "Fareed Confit",
     "category": "manger-boire",
