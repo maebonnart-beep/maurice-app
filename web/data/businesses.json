@@ -6887,7 +6887,7 @@
       "restaurants"
     ],
     "zone": "nord",
-    "description": "Institution italienne du nord de l'île à Grand Baie, tenue par une famille italienne. Pizzas au four à bois, pâtes maison, viandes et fruits de mer à prix raisonnables.",
+    "description": "Institution italienne du nord de l'île à Grand Baie, tenue par une famille italienne. Pizzas au four à bois (ex : Mexicana Rs560, Gondola fruits de mer Rs590), pâtes maison, viandes et fruits de mer à prix raisonnables. Salle et terrasse pour manger sur place, également à emporter.",
     "filters": [
       "italien"
     ],
@@ -11118,7 +11118,7 @@
       "restaurants"
     ],
     "zone": "sud",
-    "description": "Petite pizzeria familiale de Mahébourg tenue par Nini, pizzas maison à pâte croustillante, livraison et emporter. Très bien notée (5/5).",
+    "description": "Petite pizzeria familiale de Mahébourg tenue par Nini, pizzas maison à pâte croustillante. Fonctionne surtout en emporter et livraison (une seule table sur place), très bien notée (5/5).",
     "filters": [
       "italien"
     ],
@@ -14846,7 +14846,7 @@
       "cafes-bars-glaciers"
     ],
     "zone": "nord",
-    "description": "Petite pizzeria familiale de Grand Baie (près de La Cuvette Beach) tenue par Franck et Audrey, très bien notée (4,9/5) pour ses pizzas généreuses et son ambiance chaleureuse.",
+    "description": "Petite pizzeria familiale de Grand Baie (près de La Cuvette Beach) tenue par Franck et Audrey, très bien notée (4,9/5). Carte variée (pizza truffe, carbonara, curry...), à déguster sur place, à emporter ou en livraison. Paiement en espèces uniquement.",
     "filters": [
       "snacks-plage"
     ],
@@ -15546,7 +15546,7 @@
       "livraisons"
     ],
     "zone": "nord",
-    "description": "Pizzeria napolitaine de Pereybère/Grand Baie, livraison de pizzas fraîches chaque soir sur le secteur.",
+    "description": "Pizzeria napolitaine de Pereybère/Grand Baie : Margherita Rs690, Quattro Formaggi ou Diavola Rs890, Burrata Royale Rs1090. Livraison chaque soir sur Grand Baie, Pereybère, Cap Malheureux, Trou-aux-Biches, Triolet, Calodyne et Mapou (gratuite dès 8 pizzas commandées) ; fonctionne en click & collect et livraison, pas de salle sur place.",
     "hours": "Livraison Mar-Jeu, Dim 19h-21h30, Ven-Sam 18h-22h (fermé le lundi)",
     "filters": [
       "italien"
@@ -15588,7 +15588,7 @@
       "livraisons"
     ],
     "zone": "nord",
-    "description": "Pizzeria napolitaine au four à bois de Grand Baie (ingrédients importés d'Italie), bar à burrata. Sur place, à emporter et en livraison.",
+    "description": "Pizzeria napolitaine au four à bois de Grand Baie (ingrédients importés d'Italie), bar à burrata : Margherita Rs690, Napoli Rs790, Bufalissima Rs890. Terrasse pour manger sur place, à emporter, ou en livraison (commande minimum Rs490, gratuite dès Rs1000, zones limitées).",
     "hours": "Tous les jours 17h-21h30",
     "filters": [
       "italien"
@@ -15710,7 +15710,7 @@
       "livraisons"
     ],
     "zone": "nord",
-    "description": "Pizza au four à bois à Grand Baie, pâte au levain préparée à la minute, plutôt à emporter.",
+    "description": "Pizza au four à bois à Grand Baie, pâte au levain préparée à la minute : Margherita Rs201, Regina jambon Rs310, Carbonara Rs335. Livraison (Rs100) sur Bain Bœuf, Cap Malheureux, Grand Baie, Mont Choisy, Pointe aux Biches/Canonniers/Piments, Trou aux Biches, Triolet et environs ; plutôt à emporter sur place.",
     "hours": "Mer-Dim 17h30-21h30 (fermé Lun-Mar)",
     "filters": [
       "italien"
@@ -15731,7 +15731,7 @@
       "livraisons"
     ],
     "zone": "nord",
-    "description": "Cuisine italienne à Pointe aux Canonniers/Grand Baie : pizzas, pâtes fraîches, lasagnes, déjeuner et dîner, sur place ou à emporter.",
+    "description": "Cuisine italienne à Pointe aux Canonniers/Grand Baie : pizzas, pâtes fraîches, lasagnes, déjeuner et dîner. Restaurant avec service à table, sur place ou à emporter.",
     "hours": "Tous les jours 10h30-22h30",
     "filters": [
       "italien"
@@ -19025,7 +19025,7 @@
       "restaurants"
     ],
     "zone": "ouest",
-    "description": "Pizzeria italienne familiale de Flic en Flac, très appréciée (4,8/5), pizzas artisanales, options végétariennes et halal. Ouvert le soir uniquement.",
+    "description": "Pizzeria italienne familiale de Flic en Flac, très appréciée (4,8/5), pizzas artisanales, options végétariennes et halal. Petite salle (6 tables) pour manger sur place, également à emporter ou en livraison sur le secteur de Flic en Flac. Ouvert le soir uniquement.",
     "filters": [
       "italien"
     ],
@@ -19111,7 +19111,7 @@
       "restaurants"
     ],
     "zone": "ouest",
-    "description": "Pizzeria italienne du complexe Cap Dale à Tamarin, four à bois traditionnel, pizzas artisanales aux ingrédients frais. Cadre convivial et calme, bien notée (4,6/5 sur TripAdvisor).",
+    "description": "Pizzeria italienne du complexe Cap Dale à Tamarin, four à bois traditionnel, pizzas artisanales aux ingrédients frais. Établie depuis 30 ans, cadre convivial et fleuri pour manger sur place ; également disponible en livraison sur le secteur Tamarin/Black River. Bien notée (4,6/5 sur TripAdvisor).",
     "filters": [
       "italien"
     ],
@@ -20007,7 +20007,7 @@
       "restaurants"
     ],
     "zone": "ouest",
-    "description": "Pizzeria de quartier sur la route côtière de Flic-en-Flac, four à pizza et pâtes fraîches maison, à emporter, en livraison ou sur place en terrasse.",
+    "description": "Pizzeria de quartier sur la route côtière de Flic-en-Flac, four à pizza et pâtes fraîches maison : Margarita Rs300/400 (26/33cm), pizza Flic en Flac (mozzarella, jambon, poulet, ananas) Rs330/430, calzone Nutella Rs330. À emporter, en livraison sur Flic en Flac ou sur place en terrasse.",
     "hours": "Mar-Sam 19h-21h (fermé Lun et Dim)",
     "filters": [
       "italien"
@@ -20088,7 +20088,7 @@
       "livraisons"
     ],
     "zone": "ouest",
-    "description": "Pizzeria italienne de Tamarin, pâte artisanale, sur place et à emporter, ouvert tous les jours midi et soir.",
+    "description": "Pizzeria italienne de Tamarin, pâte artisanale, pensée pour un dîner en famille ou un repas décontracté entre amis. Sur place et à emporter, ouvert tous les jours midi et soir.",
     "hours": "Dim-Jeu 10h30-21h, Ven-Sam 10h30-21h30",
     "filters": [
       "italien"
@@ -24300,7 +24300,7 @@
       "livraisons"
     ],
     "zone": "sud",
-    "description": "Pizzeria (pizzas maison) à Riambel, Surinam, ouverte du mardi au dimanche, 10h30-19h30 (fermée le lundi).",
+    "description": "Pizzeria (pizzas maison) à Riambel, Surinam : Margherita Rs250/290 (moyenne/grande), Hawaïenne Rs275/390, Pizza Océane Rs325/440. Commande par téléphone uniquement, à emporter ou en livraison. Ouverte du mardi au dimanche, 10h30-19h30 (fermée le lundi).",
     "hours": "Mar-Dim 10h30-19h30 (fermé le lundi)",
     "filters": [
       "italien"
@@ -29905,7 +29905,7 @@
       "livraisons"
     ],
     "zone": "est",
-    "description": "Pizzeria italienne à Bel Air, ouverte lundi et jeudi-dimanche 12h-20h (fermée mardi/mercredi), livraison à Rs 150.",
+    "description": "Pizzeria italienne à Bel Air, ouverte lundi et jeudi-dimanche 12h-20h (fermée mardi/mercredi). Carte variée (Chicken BBQ, Chicken Curry, Hawaiian, Margherita, Paradise Veggie...), terrasse extérieure sur place. Livraison à Rs150 sur Argy, Boulet Rouge, Bramsthan, Camp Ithier, Camp de Masque, Centre de Flacq, Ecroignard, Flacq, La Queen, Pont Blanc, Poste de Flacq, Quatre Cocos, Queen Victoria et environs.",
     "hours": "Tous les jours 11h-21h",
     "filters": [
       "italien"
@@ -30274,7 +30274,7 @@
       "livraisons"
     ],
     "zone": "nord",
-    "description": "Pizzeria italienne à La Croisette, Grand Baie (pizzas, pâtes, pizza d'un mètre).",
+    "description": "Pizzeria italienne à La Croisette, Grand Baie (pizzas — Tartufo, Quattro Formaggio, Grand Port, Hawaiian —, pâtes, pizza d'un mètre). Restaurant au décor chaleureux pour manger sur place, service midi et soir du lundi au samedi ; également disponible en livraison sur le secteur de Grand Baie.",
     "hours": "Lun-Sam 11h-21h30",
     "filters": [
       "italien"
@@ -36516,7 +36516,7 @@
       "livraisons"
     ],
     "zone": "ouest",
-    "description": "Pizzas napolitaines au four à bois et cuisine italienne à Flic en Flac (Coastal Road).",
+    "description": "Pizzas napolitaines au four à bois et cuisine italienne à Flic en Flac (Coastal Road) : Napoli (anchois) Rs450, Hawaïenne ou Pepperoni Rs550, Valtellina Rs600. Également réputé pour ses ciabattas et pannacotta à emporter ; livraison sur le secteur de Flic en Flac.",
     "hours": "Ven-Lun 7h-14h, tous les jours sauf jeudi 18h-22h",
     "filters": [
       "italien"
