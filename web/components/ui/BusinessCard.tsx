@@ -2,7 +2,7 @@
 
 import type { Business } from "@/lib/types";
 import { SUBCATEGORIES, PRICE_RANGES, CATEGORY_MAP, FILTER_GROUPS } from "@/data/categories";
-import { displayName, displayCity } from "@/lib/format";
+import { displayName, displayCity, fallbackDescription } from "@/lib/format";
 import { accentColorFor, SpecialBadge, AGENCY_COLOR, PROVIDER_TYPE_INFO } from "./Badge";
 import { FavoriteButton } from "./FavoriteButton";
 import { FACT_ICONS, CONTACT_ICONS, iconForKey, subIconFor } from "@/lib/icons";
@@ -108,6 +108,7 @@ export function BusinessCard({
   // avant en bandeau plein-largeur en haut de fiche plutôt que noyée dans le texte.
   const eventDateLabel = eventBannerLabel(b);
   const eventBarColor = eventDateLabel ? eventColorFor(b) : undefined;
+  const aboutText = b.description || fallbackDescription(b, rubriques[0]?.theme.label);
 
   return (
     <article
@@ -230,9 +231,7 @@ export function BusinessCard({
             ))}
           </p>
         )}
-        {b.description && (
-          <p className="m-0 mt-1 text-ink/70 text-[12px] leading-[1.4] line-clamp-2">{b.description}</p>
-        )}
+        <p className="m-0 mt-1 text-ink/70 text-[12px] leading-[1.4] line-clamp-2">{aboutText}</p>
       </div>
       <div className="shrink-0 flex flex-col items-end gap-1.5">
         <span

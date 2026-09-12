@@ -1,4 +1,5 @@
 import type { Business } from "@/lib/types";
+import { CATEGORIES } from "@/data/categories";
 
 // Utilitaires de formatage partagés entre la liste (DirectoryClient) et la carte (Map).
 
@@ -67,4 +68,27 @@ export function whatsappNumber(b: Business): string | undefined {
   if (b.whatsapp) return b.whatsapp;
   if (b.phone && MU_MOBILE_RE.test(b.phone)) return b.phone;
   return undefined;
+}
+
+const ZONE_PHRASES: Record<string, string> = {
+  nord: "dans le nord de l'île",
+  sud: "dans le sud de l'île",
+  est: "dans l'est de l'île",
+  ouest: "dans l'ouest de l'île",
+  centre: "dans le centre de l'île",
+};
+
+/**
+ * Phrase "À propos" de repli, construite à partir des champs structurés déjà
+ * présents (rubrique, ville, zone) — jamais de donnée inventée — pour que le
+ * bloc "À propos" garde toujours la même place dans le gabarit (liste et
+ * fiche détail), même sur les fiches sans descriptif rédigé (ex: tout juste
+ * suggérées via le formulaire, avant relecture/enrichissement éditorial).
+ */
+export function fallbackDescription(b: Business, rubriqueLabel: string | undefined): string {
+  const what = rubriqueLabel ?? CATEGORIES.find((c) => c.key === b.category)?.label ?? "Adresse";
+  const city = displayCity(b.address);
+  const zonePhrase = b.zone ? ZONE_PHRASES[b.zone] : undefined;
+  const where = [city, zonePhrase].filter(Boolean).join(", ");
+  return where ? `${what} à ${where}.` : `${what}.`;
 }

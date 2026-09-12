@@ -14,6 +14,7 @@ import {
   whatsappNumber,
   emailContactHref,
   shareTagline,
+  fallbackDescription,
 } from "@/lib/format";
 import { SpecialBadge, accentColorFor, ProviderTypeBadge } from "./Badge";
 import { FavoriteButton } from "./FavoriteButton";
@@ -122,6 +123,10 @@ export function BusinessDetail({
   // sous-titre quand on l'ouvre depuis la rubrique « Bars »).
   const matchesActiveContext = b.themes?.some((t) => hiddenKeys?.has(t));
   const firstTheme = matchesActiveContext ? undefined : b.themes?.find((t) => t !== "kids-friendly");
+  const firstThemeLabel = firstTheme
+    ? SUBCATEGORIES[b.category]?.find((t) => t.key === firstTheme)?.label
+    : undefined;
+  const aboutText = b.description || fallbackDescription(b, firstThemeLabel);
   const CategoryIcon = iconForKey(b.category);
   const bannerIcon = (firstTheme && subIconFor(firstTheme)) ?? subIconFor(b.category);
   // Lien "Créer une alerte", préremplie avec les thèmes/filtres de cet événement.
@@ -380,26 +385,24 @@ export function BusinessDetail({
               </Link>
             )}
 
-            {b.description && (
-              <div className="flex flex-col gap-1.5 pt-1 border-t border-border">
-                <h3 className="m-0 mt-2 text-[13px] font-bold uppercase tracking-wide text-muted">À propos</h3>
-                <p
-                  className={`m-0 text-ink text-[14.5px] leading-[1.6] ${
-                    descExpanded || b.description.length <= DESCRIPTION_CLAMP_THRESHOLD ? "" : "line-clamp-6"
-                  }`}
+            <div className="flex flex-col gap-1.5 pt-1 border-t border-border">
+              <h3 className="m-0 mt-2 text-[13px] font-bold uppercase tracking-wide text-muted">À propos</h3>
+              <p
+                className={`m-0 text-ink text-[14.5px] leading-[1.6] ${
+                  descExpanded || aboutText.length <= DESCRIPTION_CLAMP_THRESHOLD ? "" : "line-clamp-6"
+                }`}
+              >
+                {aboutText}
+              </p>
+              {!descExpanded && aboutText.length > DESCRIPTION_CLAMP_THRESHOLD && (
+                <button
+                  onClick={() => setDescExpanded(true)}
+                  className="self-start text-[13px] font-semibold text-primary-deep active:scale-[.98]"
                 >
-                  {b.description}
-                </p>
-                {!descExpanded && b.description.length > DESCRIPTION_CLAMP_THRESHOLD && (
-                  <button
-                    onClick={() => setDescExpanded(true)}
-                    className="self-start text-[13px] font-semibold text-primary-deep active:scale-[.98]"
-                  >
-                    Voir plus
-                  </button>
-                )}
-              </div>
-            )}
+                  Voir plus
+                </button>
+              )}
+            </div>
 
             {b.koteMorisComment && (
               <div className="flex flex-col gap-1.5 pt-1 border-t border-border">
