@@ -24,6 +24,7 @@ export function AddAddressForm() {
   const [ville, setVille] = useState("");
   const [telephone, setTelephone] = useState("");
   const [siteWeb, setSiteWeb] = useState("");
+  const [descriptif, setDescriptif] = useState("");
   const [notes, setNotes] = useState("");
 
   const [geoStatus, setGeoStatus] = useState<GeoStatus>("idle");
@@ -75,6 +76,7 @@ export function AddAddressForm() {
       coords && `Position GPS : ${coords.lat.toFixed(6)}, ${coords.lng.toFixed(6)}`,
       telephone && `Téléphone : ${telephone}`,
       siteWeb && `Site web : ${siteWeb}`,
+      descriptif && `Descriptif : ${descriptif}`,
       notes && `Notes : ${notes}`,
     ].filter(Boolean);
 
@@ -284,6 +286,20 @@ export function AddAddressForm() {
             className={inputClass}
           />
         </div>
+      </div>
+
+      <div>
+        <label className={labelClass} htmlFor="aa-descriptif">
+          Descriptif
+        </label>
+        <textarea
+          id="aa-descriptif"
+          value={descriptif}
+          onChange={(e) => setDescriptif(e.target.value)}
+          placeholder="En quelques phrases : ce que propose ce lieu, ses spécialités, son ambiance…"
+          rows={3}
+          className="w-full px-4 py-3 rounded-xl border border-border bg-surface text-ink text-[15px] shadow-sm focus:outline-none focus:border-primary resize-none"
+        />
       </div>
 
       <div>
