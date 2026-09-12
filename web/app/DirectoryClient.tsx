@@ -1055,6 +1055,26 @@ export default function DirectoryClient({
     });
   }, [boundedRows, nearMe, userPos, distanceById]);
 
+  // Marqueurs affichés sur la carte : plafonnés pour éviter les lags Leaflet
+  // quand la liste n'est pas filtrée par rubrique (ex. « Autour de moi » qui
+  // bascule sur « Explorer » ≈ 2000 fiches sans clustering). Priorité aux plus
+  // proches si la position est connue, sinon on tronque simplement.
+  const MAX_MAP_MARKERS = 400;
+  const mapMarkerRows = useMemo(() => {
+    if (rows.length <= MAX_MAP_MARKERS) return rows;
+    if (userPos) {
+      return [...rows]
+        .filter((b) => Number.isFinite(b.lat) && Number.isFinite(b.lng))
+        .sort(
+          (a, b) =>
+            haversineKm(userPos.lat, userPos.lng, a.lat as number, a.lng as number) -
+            haversineKm(userPos.lat, userPos.lng, b.lat as number, b.lng as number)
+        )
+        .slice(0, MAX_MAP_MARKERS);
+    }
+    return rows.slice(0, MAX_MAP_MARKERS);
+  }, [rows, userPos]);
+
   // Active « Autour de moi » : demande la position (une fois), puis trie par distance.
   // Ne bascule pas en "Explorer" (browseAll) quand on est déjà dans une sélection
   // Koté Moris ouverte : on veut trier ses adresses, pas quitter la liste.
@@ -3382,7 +3402,10 @@ export default function DirectoryClient({
             >
               <div className="rounded-card border border-border bg-surface shadow-card overflow-hidden isolate h-[60vh] lg:h-full flex flex-col">
                 <div className="flex items-center justify-between gap-3 flex-wrap px-4 py-2.5 border-b border-border">
-                  <span className="text-[12.5px] text-muted">Carte des activités — positions GPS</span>
+                  <span className="text-[12.5px] text-muted">
+                    Carte des activités — positions GPS
+                    {mapMarkerRows.length < rows.length && ` (${mapMarkerRows.length} les + proches sur ${rows.length})`}
+                  </span>
                   <label className="inline-flex items-center gap-2 text-[12.5px] font-medium text-ink cursor-pointer select-none">
                     <input
                       type="checkbox"
@@ -3396,7 +3419,7 @@ export default function DirectoryClient({
                 <div className="flex-1 min-h-0 bg-surface-2">
                   {(isDesktop || resultsView === "carte") && (
                     <Map
-                      businesses={rows}
+                      businesses={mapMarkerRows}
                       selectedId={selectedId}
                       onSelect={selectFromMap}
                       onBoundsChange={onBoundsChange}

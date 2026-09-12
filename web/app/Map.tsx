@@ -28,10 +28,17 @@ function markerGlyph(b: Business): string {
   return html;
 }
 
+// Icônes mémoïsées par clé (glyphe+couleur+état) : évite de recréer un L.divIcon
+// (et son HTML) pour chaque marqueur à chaque re-render (hover, sélection,
+// changement de rubrique…), ce qui laguait fortement avec de nombreux marqueurs.
+const iconCache: Record<string, L.DivIcon> = {};
 function buildIcon(inner: string, color: string, selected: boolean, hovered: boolean) {
+  const key = `${inner}|${color}|${selected ? 1 : 0}|${hovered ? 1 : 0}`;
+  const cached = iconCache[key];
+  if (cached) return cached;
   const size = selected ? 34 : hovered ? 31 : 27;
   const ring = hovered && !selected ? "0 0 0 3px #fff, 0 0 0 5px " + color : "0 1px 4px rgba(0,0,0,.35)";
-  return L.divIcon({
+  const icon = L.divIcon({
     html: `<div style="width:${size}px;height:${size}px;border-radius:50%;background:${color};display:flex;align-items:center;justify-content:center;font-size:${Math.round(
       size * 0.55
     )}px;line-height:1;border:2px solid #fff;box-shadow:${ring};">${inner}</div>`,
@@ -40,6 +47,8 @@ function buildIcon(inner: string, color: string, selected: boolean, hovered: boo
     iconAnchor: [size / 2, size / 2],
     popupAnchor: [0, -size / 2],
   });
+  iconCache[key] = icon;
+  return icon;
 }
 
 export type MapBounds = { north: number; south: number; east: number; west: number };
