@@ -780,11 +780,19 @@ export default function DirectoryClient({
 
   // Accueil → « Nos coups de cœur » : fiches mises en avant par la rédaction,
   // limitées à celles qui ont une photo (essentiel pour ce format en carte photo).
-  // Mélangées après hydratation pour ne pas montrer toujours les 12 mêmes.
+  // Mélangées après hydratation pour ne pas montrer toujours les 12 mêmes ; les
+  // fiches des rubriques préférées (Mes préférences, Profil) remontent devant,
+  // chaque paquet restant mélangé — pas de tri figé à l'intérieur d'une rubrique.
   const coupsDeCoeur = useMemo(() => {
     const all = businesses.filter((b) => b.badge === "selection" && b.photoUrl);
-    return shuffleReady ? shuffled(all) : all;
-  }, [businesses, shuffleReady]);
+    const pool = shuffleReady ? shuffled(all) : all;
+    const preferredKeys = new Set<CategoryKey>(preferences.interests);
+    if (preferences.hasKids) preferredKeys.add("famille-travail");
+    if (preferredKeys.size === 0) return pool;
+    const matched = pool.filter((b) => preferredKeys.has(b.category));
+    const rest = pool.filter((b) => !preferredKeys.has(b.category));
+    return [...matched, ...rest];
+  }, [businesses, shuffleReady, preferences]);
 
   // Accueil → « Nouveautés » : fiches ajoutées à l'annuaire dans les 30 derniers
   // jours (createdAt), en avant-première pour les comptes premium uniquement —
