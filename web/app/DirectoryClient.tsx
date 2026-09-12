@@ -174,6 +174,18 @@ const ZONES: { key: string; label: string; emoji: string }[] = [
 // Mélange (Fisher-Yates) une copie du tableau — pour varier « Coups de cœur »
 // et « Listes de Koté Moris » à chaque connexion plutôt que toujours les mêmes
 // premiers éléments du tableau source.
+// Correspondance approximative entre les 8 rubriques (CategoryKey, cochées dans
+// Mes préférences) et les groupes de sélections éditoriales KM (taxonomie
+// différente, cf. data/selections.ts) — sert à faire remonter les listes
+// pertinentes en tête de « Les listes de Koté Moris » sur l'accueil.
+const CATEGORY_TO_SELECTION_GROUPS: Partial<Record<CategoryKey, SelectionGroup[]>> = {
+  "manger-boire": ["manze"],
+  "sortir-decouvrir": ["sorti", "nature"],
+  "faire-du-sport": ["sport"],
+  "acheter-equiper": ["shopping"],
+  "famille-travail": ["famille"],
+};
+
 function shuffled<T>(arr: T[]): T[] {
   const a = [...arr];
   for (let i = a.length - 1; i > 0; i--) {
@@ -529,12 +541,20 @@ export default function DirectoryClient({
     () => SELECTIONS.filter((s) => s.featured || s.id.startsWith("weekend-") || s.id === "inviter-decouverte"),
     []
   );
-  // Accueil → « Les listes de Koté Moris » : ordre mélangé après hydratation
-  // pour ne pas toujours mettre en avant les mêmes premières listes.
-  const homeSelections = useMemo(
-    () => (shuffleReady ? shuffled(SELECTIONS) : SELECTIONS),
-    [shuffleReady]
-  );
+  // Accueil → « Les listes de Koté Moris » : les groupes correspondant aux
+  // préférences explicites (Mes préférences, Profil) passent devant, chaque
+  // paquet restant mélangé après hydratation pour varier d'une session à l'autre.
+  const homeSelections = useMemo(() => {
+    const pool = shuffleReady ? shuffled(SELECTIONS) : SELECTIONS;
+    const preferredGroups = new Set<SelectionGroup>(
+      preferences.interests.flatMap((key) => CATEGORY_TO_SELECTION_GROUPS[key] ?? [])
+    );
+    if (preferences.hasKids) preferredGroups.add("famille");
+    if (preferredGroups.size === 0) return pool;
+    const matched = pool.filter((s) => preferredGroups.has(s.group));
+    const rest = pool.filter((s) => !preferredGroups.has(s.group));
+    return [...matched, ...rest];
+  }, [shuffleReady, preferences]);
   const exploreSelections = useMemo(
     () => (selectionExploreFilter === "tous" ? SELECTIONS : SELECTIONS.filter((s) => s.group === selectionExploreFilter)),
     [selectionExploreFilter]
