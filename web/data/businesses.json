@@ -8424,7 +8424,7 @@
     ],
     "zone": "sud",
     "hours": "Lun-Sam 11h30-15h30, fermé Dim",
-    "description": "Domaine élégant de Chamarel associant visite de distillerie, dégustation de rhum et restaurant à influence française, dans un jardin tropical soigné.",
+    "description": "Domaine de la distillerie Rhumerie de Chamarel, visite guidée de la production (canne à sucre à distillation) puis déjeuner à la carte au restaurant L'Alchimiste, vue sur les plantations et les montagnes. Cuisine fine aux produits du domaine (cœur de palmiste, cerf, sanglier), ouvert lundi-samedi 9h30-17h30.",
     "filters": [
       "mauricienne"
     ],
@@ -8468,7 +8468,7 @@
     ],
     "zone": "sud",
     "hours": "Lun-Sam 11h-16h, fermé Dim",
-    "description": "Restaurant créole-cajun de Chamarel, proche des Terres des Sept Couleurs, cuisine fruits de mer avec options végétariennes. Bien noté (4,3/5), avis mitigés sur les prix.",
+    "description": "Restaurant créole-cajun sur la Route Royale de Chamarel, proche des Terres des Sept Couleurs, terrasse extérieure. Plateaux de fruits de mer et cuisine mauricienne avec options végétariennes, service chaleureux ; 4,3/5 sur 273 avis.",
     "filters": [
       "fruits-de-mer",
       "mauricienne"
@@ -8535,7 +8535,7 @@
       "restaurants"
     ],
     "zone": "sud",
-    "description": "Table d'hôte du Morne tenue par Elijah et son épouse, très bien notée (4,9/5). Plats expliqués par l'hôte, ambiance chaleureuse et prix abordables.",
+    "description": "Table d'hôte du Morne tenue par Elijah et son épouse, vue sur la mer, ambiance chaleureuse et prix abordables. Plats mauriciens faits maison (fruits de mer, curries) que l'hôte présente et explique lui-même ; 4,9/5.",
     "filters": [
       "mauricienne"
     ],
@@ -8684,7 +8684,7 @@
       "restaurants"
     ],
     "zone": "sud",
-    "description": "Restaurant routier de Chamarel, cuisine locale variée. Accueil apprécié mais jugé cher par plusieurs visiteurs, fréquenté par les groupes en excursion.",
+    "description": "Restaurant routier de la Royal Road à Chamarel, ouvert tous les jours 9h-17h, cuisine locale variée (curry, fruits de mer, options végétariennes). Accueil apprécié mais jugé cher par plusieurs visiteurs, fréquenté par les groupes en excursion ; réservation conseillée en haute saison.",
     "filters": [
       "mauricienne"
     ],
@@ -8746,7 +8746,7 @@
       "restaurants"
     ],
     "zone": "sud",
-    "description": "Petite affaire familiale du Morne Brabant, carte limitée mais excellent rapport qualité-prix : roti, samoussas, mines frites, appréciée des touristes comme des locaux.",
+    "description": "Petite affaire familiale de la Royal Road au Morne Brabant, carte limitée mais excellent rapport qualité-prix : roti végétarien ou au poisson, samoussas, nouilles frites au poulet et à l'œuf servies avec sauce ail et pâte de piment. Appréciée des touristes comme des locaux.",
     "filters": [
       "mauricienne",
       "frequente-locaux"
@@ -8959,7 +8959,7 @@
       "restaurants"
     ],
     "zone": "sud",
-    "description": "Restaurant japonais/asiatique de l'hôtel Beachcomber Dinarobin (Le Morne), en bordure de piscine sous les palmiers. Très bien noté (4,8/5), ouvert le soir uniquement.",
+    "description": "Restaurant japonais du Dinarobin Beachcomber (Le Morne), en bordure de la piscine principale sous les palmiers. Sushis créatifs, black cod et wagyu, menus omakase en 6 ou 10 services à partager façon tablée familiale ; #1 des restaurants de l'île sur TripAdvisor.",
     "filters": [
       "asiatique"
     ],
@@ -9001,7 +9001,7 @@
       "restaurants"
     ],
     "zone": "sud",
-    "description": "Restaurant de cuisine indienne progressive au St. Regis Le Morne, mêlant tradition et innovation : kebabs de poulet malai, butter chicken, paneer tikka au pesto de coriandre.",
+    "description": "Restaurant de cuisine indienne progressive au St. Regis Le Morne, ouvert le soir uniquement, mêlant tradition et innovation : paneer tikka au pesto de coriandre et nouilles thaï croustillantes, côtes de bœuf, plats pensés pour le partage, gulab jamun en cheesecake.",
     "filters": [
       "indienne"
     ],
@@ -9021,7 +9021,7 @@
       "restaurants"
     ],
     "zone": "sud",
-    "description": "Petite table fusion-créole du Morne (une quinzaine de places), menu du jour selon arrivage, sans alcool. Excellents avis, réservation indispensable.",
+    "description": "Petite table fusion-créole du Morne (une quinzaine de places), ingrédients locaux sélectionnés chaque matin, pas de carte fixe : le chef envoie sa sélection du jour. Réservation indispensable (WhatsApp), espèces uniquement.",
     "filters": [
       "mauricienne"
     ],
