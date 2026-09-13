@@ -8070,7 +8070,7 @@
     ],
     "badge": "selection",
     "zone": "ouest",
-    "description": "Bar-restaurant au décor africain de Flic en Flac, jardin et lanternes. Spécialités burgers et poulet croustillant ; concerts live vendredi et dimanche.",
+    "description": "Petit bar-restaurant de l'Avenue Nenuphar à Flic en Flac, cabane rustique prolongée d'un jardin aux couleurs africaines et lanternes. Carte courte de produits frais (burgers, fish & chips, pavé de bœuf angus), Ti Punch maison ; concerts live mercredi et vendredi.",
     "filters": [
       "grillades"
     ],
@@ -8091,7 +8091,7 @@
       "restaurants"
     ],
     "zone": "ouest",
-    "description": "Bar-restaurant en bord de plage à Flic en Flac, ambiance tropicale, cocktails et coucher de soleil, animations musicales le vendredi.",
+    "description": "Complexe du bord de mer à Flic en Flac avec piscine, dancefloor extérieur, bar à billard et baby-foot et plusieurs restaurants (cuisines asiatique, indienne, internationale). Cocktails au coucher de soleil, musique live le vendredi ; ouvert 11h-23h (3h ven-sam).",
     "filters": [
       "asiatique",
       "fruits-de-mer"
@@ -8618,7 +8618,7 @@
       "restaurants"
     ],
     "zone": "ouest",
-    "description": "Restaurant de Case Noyale, tables les pieds dans le sable avec vue mer. Cuisine mauricienne (fruits de mer, caris épicés) ; réservation conseillée le week-end.",
+    "description": "Restaurant du paisible village de Case Noyale, tables les pieds dans le sable avec vue sur les vagues. Cuisine mauricienne aux produits locaux (fruits de mer frais, caris épicés) ; ambiance cosy, service attentionné, réservation conseillée le week-end.",
     "filters": [
       "mauricienne",
       "fruits-de-mer"
@@ -8704,7 +8704,7 @@
       "restaurants"
     ],
     "zone": "ouest",
-    "description": "Restaurant de fruits de mer de La Gaulette (exploité sous \"Sugar by Sirokan\"), réputé pour son homard frais et ses plateaux de fruits de mer.",
+    "description": "Restaurant de fruits de mer de La Gaulette (ex-Sirokan, aujourd'hui \"Sugar\"), poisson curry ou grillé (dorado notamment) et rhums arrangés aux herbes fraîches. 3,7/5, prix raisonnables.",
     "filters": [
       "fruits-de-mer"
     ],
@@ -8979,7 +8979,7 @@
       "restaurants"
     ],
     "zone": "ouest",
-    "description": "Petite adresse les pieds dans le sable à La Gaulette, cuisine locale et pizzas maison, réputée pour son thon et ses samoussas. Bien notée (4,5/5), fermé le mardi.",
+    "description": "Restaurant sur deux niveaux à La Gaulette (ex-Ocean Vagabond, repris sous le nom Ocean Vibes), étage recommandé au coucher du soleil pour la vue sur Le Morne. Cuisine locale fusion et pizzas maison, thon signature ; ouvert 17h-21h.",
     "filters": [
       "mauricienne",
       "italien"
@@ -9509,7 +9509,7 @@
       "restaurants"
     ],
     "zone": "ouest",
-    "description": "Tapas-bar d'Albion avec dîner et soirées karaoké, cuisine mauricienne soignée. Très bien noté (4,7/5), ambiance chaleureuse.",
+    "description": "Tapas-bar de l'Avenue des Dauphins à Albion, produits frais et cuisine mauricienne soignée. Soirées karaoké le vendredi, ambiance festive et chaleureuse ; très bien noté (#2 des restaurants de la région).",
     "filters": [
       "mauricienne",
       "asiatique"
@@ -18943,7 +18943,7 @@
       "restaurants"
     ],
     "zone": "ouest",
-    "description": "Cantine conviviale et sans prétention de Tamarin, cuisine chinoise-mauricienne (bol renversé, mine bouilli) à prix accessibles ; bien notée (4,5/5).",
+    "description": "Cantine conviviale et sans prétention de la Royal Road à Tamarin, tenue par Paul : bol renversé et mines frites à prix doux, riz frit façon authentique chinoise, bières Phoenix locales (pas de vin). Bien notée (4,5/5).",
     "filters": [
       "mauricienne",
       "asiatique"
@@ -18965,7 +18965,7 @@
       "restaurants"
     ],
     "zone": "ouest",
-    "description": "Restaurant chinois de l'hôtel Aanari (Flic en Flac), réputé pour son canard laqué pékinois et ses fruits de mer, chefs venus de Chine continentale.",
+    "description": "Restaurant cantonais de l'hôtel Aanari, à 60 m de la plage de Flic en Flac, grande salle de 200 couverts et cuisine ouverte. Canard laqué pékinois préparé dans les règles, crabe au piment, langouste grillée, chefs venus de Chine.",
     "filters": [
       "asiatique"
     ],
