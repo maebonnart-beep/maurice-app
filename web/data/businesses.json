@@ -6846,7 +6846,7 @@
     ],
     "zone": "nord",
     "hours": "Tous les jours 8h-14h30",
-    "description": "Restaurant healthy niché dans un jardin secret de Pereybère, options vegan/végétariennes/sans gluten : avocado toast, poke bowl, Buddha bowl, jus frais. Ouvert 8h-14h30.",
+    "description": "Restaurant healthy niché dans un jardin secret de Pereybère (10 min à pied de la plage), hamacs et coin ombragé. Avocado toast, poke bowl, Buddha bowl, pancakes vegan, jus frais ; vegan/végétarien/sans gluten. Ouvert 8h-14h30.",
     "filters": [
       "vegetarien"
     ],
@@ -6887,7 +6887,7 @@
       "restaurants"
     ],
     "zone": "nord",
-    "description": "Adresse locale face à la plage publique de Pereybère : poissons entiers grillés sur place (vivaneau, capitaine, thazard), fruits de mer et viandes. Ambiance conviviale.",
+    "description": "Grill de rue face à la plage publique de Pereybère, cuisson en extérieur à l'entrée : poissons entiers (vivaneau, capitaine, thazard, mérou), langouste, crevettes tigrées, calamars et viandes. Style street-food décontracté, plus de 600 avis très positifs.",
     "filters": [
       "grillades"
     ],
@@ -6927,7 +6927,7 @@
       "restaurants"
     ],
     "zone": "nord",
-    "description": "Minuscule cuisine de Mont Choisy (aussi appelée \"Chez Hans\"), tenue par un frère et une sœur : samoussas au poisson, jus offert et rhum en fin de repas, les pieds dans le sable.",
+    "description": "Kiosque de 6,5 m² planté au milieu de la plage de Mont Choisy (aussi appelé \"Chez Hans\"), tables dressées à la demande face au lagon. Cuisine créole, indienne et chinoise, fruits de mer ; jus de bienvenue et rhum arrangé offerts. Plus de 1000 avis, l'une des adresses les mieux notées de l'île.",
     "filters": [
       "mauricienne",
       "fruits-de-mer"
@@ -6950,7 +6950,7 @@
     ],
     "badge": "selection",
     "zone": "nord",
-    "description": "Restaurant de Grand Baie à l'ambiance décontractée, musique live le vendredi, cuisine créole/poissons et fruits de mer ; avis mitigés sur le service.",
+    "description": "Restaurant du centre de Grand Baie (La Salette Road), spécialités créoles, poissons et fruits de mer (vivaneau du jour, plateaux de fruits de mer), musique live le vendredi. 4,2/5, service parfois jugé lent.",
     "filters": [
       "mauricienne"
     ],
@@ -10086,7 +10086,7 @@
       "restaurants"
     ],
     "zone": "nord",
-    "description": "Restaurant de bord de plage entre Trou-aux-Biches et Pointe aux Piments, réputé pour sa langouste grillée. Ambiance simple, déco de plage romantique.",
+    "description": "Restaurant de bord de plage entre Trou-aux-Biches et Pointe aux Piments, réputé pour sa langouste grillée (aussi camaron, calamar, thon grillé). Vue sur mer, ambiance simple et romantique ; 4,2/5, 82 avis.",
     "filters": [
       "fruits-de-mer",
       "grillades"
@@ -11743,7 +11743,7 @@
       "restaurants"
     ],
     "zone": "nord",
-    "description": "Restaurant de cuisine asiatique fusion à Riche Terre (Port Louis), connu pour son Magic Noodles Bowl et son Wutang Chicken, options végétariennes.",
+    "description": "Restaurant de cuisine chinoise et asiatique fusion à Riche Terre (Port Louis), connu pour son Magic Noodles Bowl et son Wutang Chicken, options végétariennes. Très bien noté (4,3/5, 443 avis).",
     "filters": [
       "asiatique"
     ],
@@ -14511,7 +14511,7 @@
       "restaurants"
     ],
     "zone": "nord",
-    "description": "Restaurant familial dans un jardin tropical à Grand Baie, cuisine française avec produits locaux, curries, fruits de mer et grillades. Très bien noté (4,8/5), cocktails appréciés.",
+    "description": "Restaurant niché dans un jardin tropical au cœur de Grand Baie, décor très photogénique. Cuisine française aux produits frais et locaux (carpaccio de canard, entrecôte, salade de poulpe), piña colada réputée. Très bien noté (4,8/5).",
     "filters": [
       "fruits-de-mer",
       "europeenne",
@@ -14555,7 +14555,7 @@
       "restaurants"
     ],
     "zone": "nord",
-    "description": "Institution familiale en bord de route royale à Pointe aux Canonniers (Grand Baie), spécialisée en poissons et fruits de mer frais (thon, langouste réputés).",
+    "description": "Institution familiale en bord de route royale à Pointe aux Canonniers (Grand Baie), spécialisée en poissons et fruits de mer frais (thon et langouste particulièrement réputés, gambas tigrées). Salle intérieure et terrasse extérieure, prix modérés.",
     "filters": [
       "fruits-de-mer"
     ],
@@ -58101,5 +58101,49 @@
       "cafes-terrasses"
     ],
     "createdAt": "2026-09-13T04:24:23.801Z"
+  },
+  {
+    "id": "makalapo-grand-baie",
+    "name": "Makalapo Grand Baie",
+    "category": "manger-boire",
+    "address": "Coastal Road, Grand Baie",
+    "phone": "+230 5456 6938",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/place/Makalapo+Grand+Baie/@-20.0153861,57.5734071,17z/data=!3m1!4b1!4m6!3m5!1s0x217dab92ed12708f:0x792a798d01c4c789!8m2!3d-20.0153861!4d57.5734071",
+    "lat": -20.0153861,
+    "lng": 57.5734071,
+    "themes": [
+      "restaurants"
+    ],
+    "hours": "Fermé mar, autres jours 11h30-15h & 18h-22h",
+    "priceRange": "prix-moyen",
+    "zone": "nord",
+    "description": "Restaurant de fruits de mer à concept convivial (tablier et gants pour déguster les plateaux à la main), ambiance animée avec bar pour prolonger la soirée.",
+    "filters": [
+      "fruits-de-mer"
+    ],
+    "createdAt": "2026-09-13T04:56:50.068Z"
+  },
+  {
+    "id": "red-restaurant-grand-baie",
+    "name": "Red Restaurant",
+    "category": "manger-boire",
+    "address": "La Croisette, Grand Baie",
+    "phone": "+230 269 7478",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/place/Red+Restaurant/@-20.022258,57.578756,17z/data=!3m1!4b1!4m6!3m5!1s0x217dab1301660143:0x9a507802a0eb8ce6!8m2!3d-20.022258!4d57.578756",
+    "lat": -20.022258,
+    "lng": 57.578756,
+    "themes": [
+      "restaurants"
+    ],
+    "hours": "Tlj 11h30-21h30 (ven-sam jusqu'à 22h30)",
+    "priceRange": "prix-moyen",
+    "zone": "nord",
+    "description": "Restaurant du centre commercial La Croisette spécialisé dans les grillades (bavette, faux-filet) et moules-frites, avec une carte street-food.",
+    "filters": [
+      "grillades"
+    ],
+    "createdAt": "2026-09-13T04:56:50.068Z"
   }
 ]
