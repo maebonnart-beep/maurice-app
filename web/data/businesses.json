@@ -6648,7 +6648,7 @@
       "restaurants"
     ],
     "zone": "nord",
-    "description": "Café-restaurant de cuisine créole/cajun sur la Royal Road à Grand Baie, bien noté mais avec peu d'avis en ligne à ce jour.",
+    "description": "Café-restaurant de cuisine cajun-créole sur la Royal Road à Grand Baie, ambiance conviviale. Très peu d'avis en ligne à ce jour, mais bien noté par les rares clients l'ayant testé.",
     "filters": [
       "mauricienne"
     ],
@@ -20216,7 +20216,7 @@
       "restaurants"
     ],
     "zone": "nord",
-    "description": "Fast-food/snacks à Triolet (briani, riz frit, nouilles, boulettes, kebabs, grillades), ouvert tous les jours de 10h30 à 20h30.",
+    "description": "Snack de Triolet ouvert en 2008 par Tariq Bundheea sur la Royal Road (Terminus) : grillades marinées, cuisine chinoise et indienne, et un biryani considéré parmi les meilleurs du nord de l'île. Ouvert tous les jours de 10h30 à 20h30, 4,2/5.",
     "hours": "Lun-Sam 11h-21h, Dim 16h-22h",
     "filters": [
       "grillades",
@@ -29887,7 +29887,7 @@
       "restaurants"
     ],
     "zone": "nord",
-    "description": "Restaurant de Trou-aux-Biches : pizza, pâtes, poisson frais local, cuisine mauricienne et asiatique.",
+    "description": "Adresse populaire à l'angle d'une rue passante de Trou-aux-Biches, en face d'un accès plage, ambiance simple façon relais routier mais portions généreuses. Immense carte (pizzas, pâtes, poisson, viandes, mine, plats chinois et créoles) ; ouvert 9h-23h sauf le jeudi, avis partagés sur la régularité du service.",
     "hours": "Tous les jours 9h-23h",
     "createdAt": "2026-07-12T16:37:31+02:00"
   },
@@ -38788,7 +38788,7 @@
       "restaurants"
     ],
     "priceRange": "bon-marche",
-    "description": "Petite adresse de quartier appréciée pour la fraîcheur du poisson et des portions généreuses à prix doux. Fonctionne surtout sur commande à l'avance.",
+    "description": "Adresse de sushis de la rue Sir Virgile Naz à Port Louis, spécialités nigiri saumon, maki tempura et rolls originaux (thon et fromage à l'avocat). Fonctionne surtout à emporter ; avis contrastés mais unanimes sur la fraîcheur du poisson.",
     "zone": "nord",
     "filters": [
       "sushis",
@@ -39141,7 +39141,7 @@
       "restaurants"
     ],
     "priceRange": "prix-moyen",
-    "description": "Quatrième antenne de la chaîne Le Poivrier, sur le même principe de cuisine créole conviviale que les trois autres adresses.",
+    "description": "\"Governor's House\", antenne du Poivrier sur l'Île Plate (Flat Island) : cuisine française raffinée servie au milieu des ruines de l'époque des pirates, ambiance tropicale façon Saint-Tropez avec musique live. Sur réservation, privatisable, tarifs communiqués sur demande.",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Le%20Poivrier%20-%20%C3%8Ele%20Plate%20%C3%8Ele%20Plate%20Mauritius",
     "filters": [
       "mauricienne"
@@ -39250,7 +39250,7 @@
     ],
     "priceRange": "bon-marche",
     "hours": "Tous les jours à partir de 9h30",
-    "description": "Comptoir de sushis dans le centre commercial Coeur de Ville à Grand Baie, formule rapide et à emporter.",
+    "description": "Antenne de la chaîne Bento Sushi au centre commercial Coeur de Ville à Grand Baie, sushis frais à prix justes, portions généreuses. Programme de fidélité (timbres dès Rs 300 d'achat, récompenses en boissons, makis, mochis ou poke bowls).",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Bento%20Sushi%20Grand%20Baie%20Coeur%20de%20Ville%2C%20Grand%20Baie%20Mauritius",
     "filters": [
       "asiatique",
@@ -53177,7 +53177,7 @@
     ],
     "zone": "nord",
     "priceRange": "bon-marche",
-    "description": "Restaurant familial de Petit Raffray, cuisine mauricienne conviviale, ouvert 7j/7 de midi à 1h du matin.",
+    "description": "Restaurant familial de Nehru Lane à Petit Raffray, cuisine mauricienne, créole et asiatique fusion dans une ambiance conviviale, portions généreuses. Ouvert tous les jours de 12h à 14h30 et de 18h30 à 1h du matin ; 3,8/5 sur TripAdvisor.",
     "filters": [
       "mauricienne"
     ],
@@ -53255,7 +53255,7 @@
     ],
     "zone": "nord",
     "priceRange": "bon-marche",
-    "description": "Cuisine mauricienne revisitée, plats originaux et succulents, fermé le lundi (dîner uniquement le dimanche).",
+    "description": "Sur la rue animée du Bazar à Grand Baie, Dalon (Gourmet Fast Food) revisite la cuisine cajun-créole en pizzas, burgers et bowls généreux, avec des options végétariennes et vegan. Très bien noté (4,5/5, 447 avis) ; fermé le lundi, dîner uniquement le dimanche.",
     "filters": [
       "mauricienne"
     ],
@@ -53274,7 +53274,7 @@
     ],
     "zone": "nord",
     "priceRange": "prix-moyen",
-    "description": "Cuisine napolitano-toscane par Antonio et Giulia, sur le site de l'ancien Aquarium à Trou aux Biches.",
+    "description": "Restaurant italien tenu par Antonio (cuisine) et Giulia (salle) dans le bâtiment de l'ex-Aquarium à Trou aux Biches, réputé pour ses produits italiens authentiques et ses poissons locaux.",
     "filters": [
       "italien"
     ],
@@ -53449,7 +53449,7 @@
     "zone": "nord",
     "priceRange": "prix-moyen",
     "hours": "Tous les jours 11h-21h30",
-    "description": "Bistro sympa et raffiné sur l'esplanade de La Croisette à Grand Baie, carte de vins et viandes réputée, ouvert tous les jours.",
+    "description": "Brasserie chic de Grand Baie La Croisette, sous la houlette du chef français Stéphane : tartare de bœuf, foie gras maison, confit de canard, moules-frites le vendredi et grillades sur pierre de lave. Très bien notée (4,5/5, 330 avis, #24 des restaurants de Grand Baie).",
     "filters": [
       "bars"
     ],
