@@ -18272,10 +18272,16 @@
       "plages-nature"
     ],
     "zone": "ouest",
-    "description": "Parc riverain de 4 hectares au sein du quartier éco-responsable de Cap Tamarin, avec vue sur la baie de Tamarin et le mont La Tourelle.",
+    "description": "Parc riverain de 4 hectares au sein du quartier éco-responsable de Cap Tamarin, avec vue sur la baie de Tamarin et le mont La Tourelle. Sentier calme qui longe des résidences cachées par une végétation luxuriante.",
     "filters": [
       "parcs-botaniques"
     ],
+    "photoUrl": "/photos/le-parc-captamarin.jpg",
+    "photoUrls": [
+      "/photos/le-parc-captamarin.jpg",
+      "/photos/le-parc-captamarin-2.jpg"
+    ],
+    "koteMorisComment": "Petite balade agréable hors des sentiers touristiques, avec quelques bonnes surprises au fil du chemin : des bancs sculptés, de magnifiques arbres et même un mini complexe de loisirs (location de pédalos et paddles, coin escalade et trampoline pour les enfants). Rien d'exceptionnel en soi (le parc est très petit), mais agréable pour une pause au calme. Niché au cœur d'un domaine de 4 ha, dont on ne fait ici qu'une petite partie.",
     "createdAt": "2026-07-12T16:37:31+02:00"
   },
   {
