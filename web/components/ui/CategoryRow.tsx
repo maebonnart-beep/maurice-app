@@ -3,6 +3,7 @@
 import type { CategoryKey } from "@/lib/types";
 import { CATEGORY_MAP } from "@/data/categories";
 import { iconForKey, subIconFor, mascotFor } from "@/lib/icons";
+import { Check } from "@phosphor-icons/react";
 
 /**
  * Position de la mascotte dans la ligne de catégorie — gauche/droite en
@@ -59,6 +60,8 @@ export function CategoryRow({
   count,
   locked,
   onClick,
+  selected,
+  onToggleSelect,
 }: {
   category?: CategoryKey;
   emoji?: string;
@@ -68,6 +71,10 @@ export function CategoryRow({
   /** Rubrique réservée aux membres Premium : badge cadenas à côté du libellé. */
   locked?: boolean;
   onClick: () => void;
+  /** Sélection multiple (case à cocher) : coché ou non. Absent = pas de case. */
+  selected?: boolean;
+  /** Callback de la case à cocher, indépendant du tap sur la ligne (qui va toujours directement aux résultats). */
+  onToggleSelect?: () => void;
 }) {
   const cat = category ? CATEGORY_MAP[category] : null;
   const displayEmoji = emoji ?? cat?.emoji ?? "";
@@ -170,40 +177,63 @@ export function CategoryRow({
   }
 
   return (
-    <button
-      onClick={onClick}
-      className="w-full flex items-center gap-3 rounded-2xl border border-border bg-surface px-3 py-2.5 text-left shadow-sm active:scale-[.99] transition-transform"
-    >
-      <span
-        className="shrink-0 w-11 h-11 rounded-full overflow-hidden flex items-center justify-center"
-        style={{ background: iconBg, color: iconColor }}
+    <div className="w-full flex items-center gap-2 rounded-2xl border border-border bg-surface pr-2 shadow-sm">
+      <button
+        onClick={onClick}
+        className="flex-1 min-w-0 flex items-center gap-3 px-3 py-2.5 text-left active:scale-[.99] transition-transform"
       >
-        {subIcon ? (
-          // eslint-disable-next-line @next/next/no-img-element
-          <img src={subIcon} alt="" aria-hidden className="w-full h-full object-cover" />
-        ) : Icon ? (
-          <Icon size={22} weight="duotone" aria-hidden />
-        ) : (
-          <span className="text-[20px] leading-none">{displayEmoji}</span>
-        )}
-      </span>
-      <span className="flex-1 min-w-0">
-        <span className="flex items-center gap-1.5">
-          <span className="text-[14.5px] font-bold text-ink truncate">{displayLabel}</span>
-          {locked && (
-            <span
-              className="shrink-0 inline-flex items-center gap-0.5 px-1.5 py-0.5 rounded-pill text-[9.5px] font-bold text-on-accent"
-              style={{ background: "var(--accent)" }}
-            >
-              🔒 Premium
-            </span>
+        <span
+          className="shrink-0 w-11 h-11 rounded-full overflow-hidden flex items-center justify-center"
+          style={{ background: iconBg, color: iconColor }}
+        >
+          {subIcon ? (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img src={subIcon} alt="" aria-hidden className="w-full h-full object-cover" />
+          ) : Icon ? (
+            <Icon size={22} weight="duotone" aria-hidden />
+          ) : (
+            <span className="text-[20px] leading-none">{displayEmoji}</span>
           )}
         </span>
-        {countLabel && <span className="block text-[12px] text-muted">{countLabel}</span>}
-      </span>
-      <span className="shrink-0 text-[18px] font-bold leading-none" style={{ color: "var(--accent)" }} aria-hidden>
-        ›
-      </span>
-    </button>
+        <span className="flex-1 min-w-0">
+          <span className="flex items-center gap-1.5">
+            <span className="text-[14.5px] font-bold text-ink truncate">{displayLabel}</span>
+            {locked && (
+              <span
+                className="shrink-0 inline-flex items-center gap-0.5 px-1.5 py-0.5 rounded-pill text-[9.5px] font-bold text-on-accent"
+                style={{ background: "var(--accent)" }}
+              >
+                🔒 Premium
+              </span>
+            )}
+          </span>
+          {countLabel && <span className="block text-[12px] text-muted">{countLabel}</span>}
+        </span>
+        {!onToggleSelect && (
+          <span className="shrink-0 text-[18px] font-bold leading-none" style={{ color: "var(--accent)" }} aria-hidden>
+            ›
+          </span>
+        )}
+      </button>
+      {onToggleSelect && (
+        <button
+          type="button"
+          onClick={(e) => {
+            e.stopPropagation();
+            onToggleSelect();
+          }}
+          aria-pressed={!!selected}
+          aria-label={selected ? `Retirer ${displayLabel} de la sélection` : `Ajouter ${displayLabel} à la sélection`}
+          className="shrink-0 w-7 h-7 rounded-full border-2 flex items-center justify-center transition-colors active:scale-[.95]"
+          style={
+            selected
+              ? { background: "var(--primary)", borderColor: "var(--primary)", color: "var(--on-accent)" }
+              : { borderColor: "var(--border)", color: "transparent" }
+          }
+        >
+          <Check size={14} weight="bold" aria-hidden />
+        </button>
+      )}
+    </div>
   );
 }

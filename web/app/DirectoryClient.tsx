@@ -454,6 +454,10 @@ export default function DirectoryClient({
   // Accueil « Par catégorie » → rubrique choisie qui a des sous-rubriques
   // (cf. FILTER_GROUPS[].browsable) : page intermédiaire avant les résultats.
   const [homeSubRubrique, setHomeSubRubrique] = useState<string | null>(null);
+  // Écran des rubriques d'une catégorie : sélection multiple via cases à
+  // cocher, en plus du tap direct (une seule rubrique → résultats immédiats).
+  // Vidée à chaque changement de catégorie.
+  const [selectedRubriques, setSelectedRubriques] = useState<Set<string>>(new Set());
   const cardRefs = useRef<Record<string, HTMLElement | null>>({});
   const favorisSectionRef = useRef<HTMLDivElement>(null);
   const aTesterSectionRef = useRef<HTMLDivElement>(null);
@@ -473,6 +477,12 @@ export default function DirectoryClient({
   useEffect(() => {
     if (homeMode !== "listes") setSelectedListId(null);
   }, [homeMode]);
+
+  // Change de catégorie (ou en sort) → vide les cases cochées de la liste
+  // de rubriques précédente.
+  useEffect(() => {
+    setSelectedRubriques(new Set());
+  }, [homeCategory]);
 
   // Précharge le chunk JS de la carte (Leaflet) pendant que l'utilisateur
   // est encore sur l'accueil, au lieu d'attendre le premier mot tapé : sans
@@ -598,8 +608,14 @@ export default function DirectoryClient({
     });
   }
 
-  // Retour à l'écran d'accueil : réinitialise tous les filtres.
-  function goHome() {
+  // Quitte la vue résultats (recherche, filtre par rubrique, « Autour de
+  // moi »…) pour rejoindre un écran d'accueil (menu, Listes, Mon compte…).
+  // Sans ce reset complet, `showHome` reste faux tant qu'un filtre est actif
+  // (active/activeThemes/query/searchOpen) : la barre d'onglets change bien
+  // d'état mais l'écran de destination ne s'affiche jamais — la liste
+  // filtrée (jusqu'à ~2000 fiches, tri « Autour de moi » compris) reste
+  // montée en dessous, d'où le ralenti ressenti au tap sur un onglet.
+  function leaveResults(nextMode: typeof homeMode) {
     setActive("all");
     setActiveThemes(new Set());
     setActiveZone(null);
@@ -608,11 +624,16 @@ export default function DirectoryClient({
     setSearchOpen(false);
     setFocusSearchOnMount(false);
     setHomeCategory(null);
-    setHomeMode("menu");
+    setHomeMode(nextMode);
     resetFacets();
     setNearMe(false);
     setOpenNow(false);
     window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
+  // Retour à l'écran d'accueil : réinitialise tous les filtres.
+  function goHome() {
+    leaveResults("menu");
   }
 
   // Entrée « Recherche » du menu d'accueil : ouvre le bandeau de recherche et
@@ -692,6 +713,28 @@ export default function DirectoryClient({
     resetFacets(); // les facettes ne valent que pour la rubrique courante
     // On conserve homeCategory : le bouton « Retour » de la page de résultats
     // ramène ainsi à la liste de rubriques de la bonne catégorie.
+  }
+
+  // Case à cocher d'une rubrique dans la liste (indépendant du tap direct
+  // sur la ligne, qui va toujours directement aux résultats pour 1 rubrique).
+  function toggleRubriqueSelection(key: string) {
+    setSelectedRubriques((prev) => {
+      const next = new Set(prev);
+      if (next.has(key)) next.delete(key);
+      else next.add(key);
+      return next;
+    });
+  }
+
+  // Bouton « Voir les résultats » de la sélection multiple : envoie
+  // directement aux résultats filtrés sur les rubriques cochées, sans passer
+  // par la page de sous-rubriques (cuisine, discipline…) même pour les
+  // rubriques qui en ont une.
+  function viewSelectedRubriques() {
+    if (selectedRubriques.size === 0) return;
+    setActiveThemes(new Set(selectedRubriques));
+    resetFacets();
+    setSelectedRubriques(new Set());
   }
 
   // Bouton « Retour » unifié : revient d'un cran (résultats → liste de
@@ -1156,6 +1199,14 @@ export default function DirectoryClient({
 
   const activeThemeLabel = useMemo(() => {
     if (activeThemes.size === 0) return null;
+    if (activeThemes.size > 1) {
+      // Sélection multiple de rubriques (ex. Restaurants + Cafés, bars & glaciers) :
+      // pas de clé unique à effacer, donc pas de bouton « x » simple par rubrique.
+      const labels = [...activeThemes]
+        .map((k) => (k === UNCLASSIFIED ? "Non classé" : (subcategories?.find((s) => s.key === k) ?? RUBRIQUE_MAP[k])?.label))
+        .filter((l): l is string => !!l);
+      return { key: null, emoji: "🏷️", label: labels.length > 0 ? labels.join(" + ") : `${activeThemes.size} rubriques` };
+    }
     const key = [...activeThemes][0];
     if (key === UNCLASSIFIED) return { key, emoji: "❔", label: "Non classé" };
     // Rubrique de la catégorie active, sinon repli global (filtres inter-catégories).
@@ -1320,7 +1371,7 @@ export default function DirectoryClient({
               {activeThemeLabel.emoji} {activeThemeLabel.label}
             </span>
             <button
-              onClick={() => clearThemeFilter(activeThemeLabel.key)}
+              onClick={() => (activeThemeLabel.key ? clearThemeFilter(activeThemeLabel.key) : setActiveThemes(new Set()))}
               aria-label="Retirer ce filtre"
               className="shrink-0 w-5 h-5 rounded-full flex items-center justify-center text-primary-deep hover:bg-white/60 font-bold"
             >
@@ -1392,7 +1443,7 @@ export default function DirectoryClient({
     ...ZONES.map((z) => ({ key: z.key, label: z.label, icon: z.key })),
   ];
   const zoneControls = (
-    <div className="flex items-stretch gap-1.5">
+    <div className="flex items-stretch gap-1.5 flex-1 min-w-0 overflow-x-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
       <button
         onClick={toggleNearMe}
         aria-pressed={nearMe}
@@ -1415,7 +1466,7 @@ export default function DirectoryClient({
         <Clock size={14} weight={openNow ? "fill" : "regular"} aria-hidden />
         Ouvert maintenant
       </button>
-      <div ref={zonePickerRef} className="relative min-w-0">
+      <div ref={zonePickerRef} className="relative min-w-0 shrink-0">
         <button
           onClick={() => setZonePickerOpen((o) => !o)}
           aria-expanded={zonePickerOpen}
@@ -1529,14 +1580,7 @@ export default function DirectoryClient({
           <span className="text-[10.5px] font-semibold leading-none">Autour de moi</span>
         </button>
         <button
-          onClick={() => {
-            setActive("all");
-            setActiveThemes(new Set());
-            setBrowseAll(false);
-            setHomeCategory(null);
-            setHomeMode("listes");
-            window.scrollTo({ top: 0, behavior: "smooth" });
-          }}
+          onClick={() => leaveResults("listes")}
           aria-label="Listes de Koté Moris"
           aria-pressed={activeTab === "listes"}
           className={`flex flex-col items-center gap-0.5 py-1 rounded-xl transition-colors active:scale-[.97] ${
@@ -1547,12 +1591,7 @@ export default function DirectoryClient({
           <span className="text-[10.5px] font-semibold leading-none">Listes</span>
         </button>
         <button
-          onClick={() => {
-            setBrowseAll(false);
-            setHomeCategory(null);
-            setHomeMode("profil");
-            window.scrollTo({ top: 0, behavior: "smooth" });
-          }}
+          onClick={() => leaveResults("profil")}
           aria-label="Mon compte"
           aria-pressed={activeTab === "profil"}
           className={`flex flex-col items-center gap-0.5 py-1 rounded-xl transition-colors active:scale-[.97] ${
@@ -1612,7 +1651,7 @@ export default function DirectoryClient({
     return `/mon-compte/alertes?${params.toString()}`;
   }, [activeThemes, facetGroups]);
   const restoFilterBar = (activeRubrique || agendaBrowseAll) && hasFacets ? (
-    <div className="mb-3 border-b border-border pb-3 flex items-center gap-2">
+    <div className="mb-3 border-b border-border pb-3 flex items-center gap-2 overflow-x-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
       {active === "agenda" && (
         <Link
           href={agendaAlertHref}
@@ -2364,22 +2403,43 @@ export default function DirectoryClient({
                   </Link>
                 </div>
               ) : (
-                <div className="flex flex-col gap-2 sm:max-w-[560px] sm:mx-auto">
-                  {(SUBCATEGORIES[homeCategory] ?? [])
-                    .filter((s) => (themeCountsAll[s.key] || 0) > 0)
-                    .map((s) => (
-                      <CategoryRow
-                        key={s.key}
-                        category={homeCategory}
-                        iconKey={s.key}
-                        emoji={s.emoji}
-                        label={s.label}
-                        count={themeCountsAll[s.key] || 0}
-                        locked={PREMIUM_RUBRIQUE_KEYS.has(s.key)}
-                        onClick={() => openRubrique(s.key)}
-                      />
-                    ))}
-                </div>
+                <>
+                  <p className="text-[12px] text-muted mb-2 sm:max-w-[560px] sm:mx-auto">
+                    Une case cochée à droite permet de combiner plusieurs rubriques (ex. Restaurants + Cafés, bars &amp; glaciers).
+                  </p>
+                  <div className="flex flex-col gap-2 pb-20 sm:max-w-[560px] sm:mx-auto">
+                    {(SUBCATEGORIES[homeCategory] ?? [])
+                      .filter((s) => (themeCountsAll[s.key] || 0) > 0)
+                      .map((s) => (
+                        <CategoryRow
+                          key={s.key}
+                          category={homeCategory}
+                          iconKey={s.key}
+                          emoji={s.emoji}
+                          label={s.label}
+                          count={themeCountsAll[s.key] || 0}
+                          locked={PREMIUM_RUBRIQUE_KEYS.has(s.key)}
+                          onClick={() => openRubrique(s.key)}
+                          selected={selectedRubriques.has(s.key)}
+                          onToggleSelect={() => toggleRubriqueSelection(s.key)}
+                        />
+                      ))}
+                  </div>
+                  {selectedRubriques.size > 0 && (
+                    <div
+                      className="fixed inset-x-0 z-40 flex justify-center px-4"
+                      style={{ bottom: "calc(64px + env(safe-area-inset-bottom) + 10px)" }}
+                    >
+                      <button
+                        onClick={viewSelectedRubriques}
+                        className="w-full sm:max-w-[560px] h-[46px] rounded-xl text-[14px] font-semibold text-white shadow-pop active:scale-[.98] transition-transform"
+                        style={{ background: "var(--primary)" }}
+                      >
+                        Voir les résultats ({selectedRubriques.size} rubrique{selectedRubriques.size > 1 ? "s" : ""}) ›
+                      </button>
+                    </div>
+                  )}
+                </>
               )}
             </div>
           )}

@@ -42,7 +42,7 @@ export function FilterDropdown({
   }, [open]);
 
   return (
-    <div ref={ref} className="relative flex-1 min-w-0">
+    <div ref={ref} className="relative shrink-0">
       <button
         onClick={() => setOpen((o) => !o)}
         aria-expanded={open}
