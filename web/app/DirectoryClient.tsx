@@ -11,6 +11,7 @@ import { SELECTIONS, SELECTION_GROUP_META } from "@/data/selections";
 import type { SelectionGroup, SelectionIconKey } from "@/data/selections";
 import { fuzzyMatchTokens, tokenize, normalizeText } from "@/lib/fuzzyMatch";
 import { isPastEvent, compareByEventDate, eventColorFor } from "@/lib/events";
+import { matchesOpenNow } from "@/lib/openHours";
 
 const SELECTION_ICONS: Record<SelectionIconKey, Icon> = {
   CloudRain,
@@ -99,6 +100,7 @@ import {
   Package,
   Crown,
   EnvelopeSimple,
+  Clock,
 } from "@phosphor-icons/react";
 import type { Icon } from "@phosphor-icons/react";
 
@@ -410,6 +412,10 @@ export default function DirectoryClient({
   const [favorisMapOpen, setFavorisMapOpen] = useState(false);
   // « Autour de moi » : tri par distance depuis la position de l'utilisateur.
   const [nearMe, setNearMe] = useState(false);
+  // Filtre transversal "ouvert maintenant" (cf. lib/openHours) : exclut les
+  // fiches dont on est sûr qu'elles sont fermées à l'instant présent ; les
+  // fiches sans horaires ou aux horaires illisibles restent affichées.
+  const [openNow, setOpenNow] = useState(false);
   const [userPos, setUserPos] = useState<{ lat: number; lng: number } | null>(null);
   const [geoStatus, setGeoStatus] = useState<"idle" | "loading" | "denied" | "unavailable" | "ok">("idle");
   const [selectedId, setSelectedId] = useState<string | null>(null);
@@ -605,6 +611,7 @@ export default function DirectoryClient({
     setHomeMode("menu");
     resetFacets();
     setNearMe(false);
+    setOpenNow(false);
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
@@ -951,6 +958,7 @@ export default function DirectoryClient({
         }
         // Agenda : masque les événements dont la date exacte connue est passée (ponctuels ou récurrents).
         if (b.category === "agenda" && isPastEvent(b)) return false;
+        if (openNow && !matchesOpenNow(b.hours)) return false;
         if (!q) return true;
         return fuzzyMatchTokens(searchTokensById[b.id] ?? [], q);
       })
@@ -964,7 +972,7 @@ export default function DirectoryClient({
         if (a.category === "agenda" && b.category === "agenda") return compareByEventDate(a, b);
         return 0;
       });
-  }, [businesses, deferredQuery, searchTokensById, active, activeThemes, activeZone, activeRubrique, agendaBrowseAll, applicableFilterGroups, facetGroups, facetPrices, facetBadges]);
+  }, [businesses, deferredQuery, searchTokensById, active, activeThemes, activeZone, activeRubrique, agendaBrowseAll, applicableFilterGroups, facetGroups, facetPrices, facetBadges, openNow]);
 
   // Base rubrique (rubrique + zone + recherche, hors facettes) pour les compteurs.
   const facetCounts = useMemo(() => {
@@ -1395,6 +1403,17 @@ export default function DirectoryClient({
       >
         <MapPin size={14} weight={nearMe ? "fill" : "regular"} aria-hidden />
         {geoStatus === "loading" ? "Localisation…" : "Autour de moi"}
+      </button>
+      <button
+        onClick={() => setOpenNow((v) => !v)}
+        aria-pressed={openNow}
+        title="Ouvert maintenant"
+        className={`flex items-center gap-1 rounded-full px-2.5 py-1 text-[12.5px] font-semibold shrink-0 transition-colors ${
+          openNow ? "bg-primary text-white" : "bg-surface-2 text-ink"
+        }`}
+      >
+        <Clock size={14} weight={openNow ? "fill" : "regular"} aria-hidden />
+        Ouvert maintenant
       </button>
       <div ref={zonePickerRef} className="relative min-w-0">
         <button
