@@ -7482,7 +7482,7 @@
     ],
     "zone": "ouest",
     "hours": "Lun-Mar, Jeu, Dim 10h-00h, Ven-Sam 10h-2h, fermé Mer",
-    "description": "Enseigne d'origine sud-africaine en bord de plage à Flic en Flac : pizzas, grillades, burgers et bière, ambiance décontractée. Concerts live le week-end.",
+    "description": "Enseigne sud-africaine sur le front de mer de Flic en Flac, vue sur l'océan : pizzas, grillades et burgers généreux, cocktails 2-pour-1 au coucher du soleil. Ambiance festive, concerts live le week-end ; avis contrastés sur la régularité du service.",
     "filters": [
       "grillades"
     ],
@@ -7503,7 +7503,7 @@
     ],
     "zone": "ouest",
     "hours": "Lun-Jeu 11h30-14h et 18h-22h, Ven-Sam 11h30-14h et 18h-23h, Dim 18h-22h",
-    "description": "Café-surf décontracté au cœur de Tamarin, apprécié des surfeurs et habitués du coin. Café de spécialité, jus frais, poke bowls, pâtisseries maison.",
+    "description": "Café-surf décontracté au cœur de Tamarin, apprécié des surfeurs et habitués du coin. Café de spécialité, matcha, jus frais, poke bowls au thon et pâtisseries maison (carrot cake, cinnamon rolls) ; places limitées, plutôt à emporter.",
     "filters": [
       "frequente-locaux"
     ],
@@ -7544,7 +7544,7 @@
     ],
     "badge": "selection",
     "zone": "ouest",
-    "description": "Restaurant italien reconnu pour ses pizzas au feu de bois et ses pâtes fraîches à Tamarin, musique live le vendredi.",
+    "description": "Pizzeria italienne à l'angle d'Anthurium Lane à Tamarin, pizzas fines au feu de bois et pâtes fraîches maison. #6 des restaurants de Tamarin, ambiance rustique animée ; service parfois ralenti aux heures d'affluence.",
     "hours": "Mar-Dim 10h-15h & 18h-22h",
     "filters": [
       "italien"
@@ -7608,7 +7608,7 @@
       "restaurants"
     ],
     "zone": "ouest",
-    "description": "Burger house récente de Flic en Flac spécialisée dans des burgers mauriciens exotiques (poulet-mangue, bœuf), options végé/vegan. Ouvert à partir de 18h ; très bien notée (4,7/5).",
+    "description": "Burger house de l'Avenue des Flamingos à Flic en Flac, burgers gourmets aux saveurs mauriciennes exotiques (Kraz Los Ross poulet-mangue, Ti Maloya bœuf-roquette), options végé et vegan. Ouvert 18h-22h (lun-jeu) ; très bien notée (4,7/5).",
     "filters": [
       "grillades"
     ],
@@ -7677,7 +7677,7 @@
     ],
     "zone": "ouest",
     "hours": "Bar 8h-23h, déjeuner 12h-15h, dîner Lun-Sam 18h30-22h",
-    "description": "Restaurant de fruits de mer de l'Hilton Mauritius Resort & Spa (Wolmar), en bord de plage. Déjeuner décontracté (salades, burgers, poisson du jour) et dîner plus gastronomique.",
+    "description": "Restaurant de plage de l'Hilton Mauritius Resort & Spa (Wolmar), pieds nus dans le sable recommandé, vue lagon au coucher du soleil. Cocktails fruités, grillades, sandwiches et pizzas le jour ; smart casual exigé au dîner. Bar ouvert 8h-23h.",
     "filters": [
       "fruits-de-mer"
     ],
@@ -7719,7 +7719,7 @@
     ],
     "badge": "selection",
     "zone": "ouest",
-    "description": "Affaire familiale de Flic en Flac réputée pour ses grillades (poulet, poisson, langouste) préparées devant le restaurant ; bien notée (4,4/5), files d'attente fréquentes.",
+    "description": "Grill familial à ciel ouvert sur la Coastal Road de Flic en Flac, poulet et poisson grillés devant le restaurant. Curry d'ourite et grillades mixtes (agneau-poulet) réputés, portions généreuses à petit prix ; ouvert 10h-15h et 18h-22h.",
     "filters": [
       "mauricienne",
       "grillades"
@@ -7808,7 +7808,7 @@
     ],
     "zone": "ouest",
     "hours": "Tous les jours, dîner 19h-22h30",
-    "description": "Table gastronomique indienne du Maradiva Villas Resort & Spa (Flic en Flac), cuisine indienne et pan-asiatique raffinée, dîner uniquement, tenue smart casual exigée.",
+    "description": "Table gastronomique indienne du Maradiva Villas Resort & Spa (Flic en Flac), décor romantique et comptoir teppanyaki animé par le chef. Cuisine indienne fusion et pan-asiatique raffinée, belle carte de vins, dîner uniquement à partir de 19h.",
     "filters": [
       "indienne",
       "tables-exception"
@@ -8029,7 +8029,7 @@
     ],
     "zone": "ouest",
     "hours": "Lun, Mer-Dim 12h-14h30 et 18h-21h30, fermé Mar",
-    "description": "Petit restaurant chinois familial de La Mivoie, Rivière Noire, tenu par un chef originaire de Chine, réputé pour son authenticité à prix modéré.",
+    "description": "Petit restaurant chinois familial de La Mivoie (Rivière Noire), plus de cinq ans d'existence, chef originaire de Chine. Soupe de poulet au maïs sucré et canard laqué pékinois réputés ; ouvert tous les jours midi et soir.",
     "filters": [
       "asiatique"
     ],
