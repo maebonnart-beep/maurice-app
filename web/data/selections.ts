@@ -396,6 +396,7 @@ export const SELECTIONS: Selection[] = [
       "domaine-de-letoile",
       "boucle-courte-7-cascades",
       "parc-national-de-bras-d-eau",
+      "plateau-resmousse",
     ],
   },
   {

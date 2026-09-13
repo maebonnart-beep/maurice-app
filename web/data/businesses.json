@@ -1323,7 +1323,7 @@
     "hours": "Tous les jours 10h-22h",
     "priceRange": "prix-moyen",
     "zone": "nord",
-    "description": "Restaurant de fruits de mer au cœur du quartier commerçant de Grand Baie : poisson grillé, crevettes, poulpe, plateaux sushi, curry de fruits de mer.",
+    "description": "Restaurant du centre commercial Coeur de Ville (Super U) à Grand Baie, cuisine japonaise, fruits de mer et méditerranéenne : sushis, gambas grillées, seafood boil cajun réputé. Ouvert tous les jours 11h-22h, 3,8/5.",
     "filters": [
       "fruits-de-mer"
     ],
@@ -6477,27 +6477,6 @@
     "createdAt": "2026-07-12T07:06:58+02:00"
   },
   {
-    "id": "karai-kreol",
-    "name": "Karaï Kreol",
-    "category": "manger-boire",
-    "address": "School Lane, Grand Baie",
-    "phone": "+230 5972 9101",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=15342246437627345041&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0134166,
-    "lng": 57.5861091,
-    "themes": [
-      "restaurants"
-    ],
-    "zone": "nord",
-    "description": "Petit restaurant de School Lane à Grand Baie, carte courte qui change chaque jour (rougaille saucisse, vindaye poisson), déco bois-bambou, séga live.",
-    "filters": [
-      "mauricienne"
-    ],
-    "hours": "Mar-Sam 11h-15h, fermé dim et lun",
-    "createdAt": "2026-07-12T07:06:58+02:00"
-  },
-  {
     "id": "theo-fourneaux-restaurant-petit-dejeuner-brunch-salon-de-the",
     "name": "Théo Fourneaux - Restaurant Petit déjeuner/Brunch Salon de Thé",
     "category": "manger-boire",
@@ -6537,7 +6516,7 @@
       "restaurants"
     ],
     "zone": "nord",
-    "description": "Restaurant-jardin convivial de Pereybère mettant en avant une cuisine légère à base de produits frais, avec animations musicales certains soirs.",
+    "description": "Restaurant bistronomique dans un grand jardin tropical à Pereybère, cuisine française raffinée et grillades, brunch-BBQ le dimanche. Musique live, privatisable pour mariages et événements ; fermé le lundi.",
     "filters": [
       "europeenne"
     ],
@@ -10533,7 +10512,7 @@
       "restaurants"
     ],
     "zone": "est",
-    "description": "Restaurant signature d'un hôtel 5 étoiles avec vue sur la baie. Relecture moderne de classiques indiens (saumon tandoori, agneau en croûte de curry), mais des tarifs jugés élevés.",
+    "description": "Restaurant indien du Shangri-La's Le Touessrok, avec vue sur la baie d'Hibiscus. Fusion indo-mauricienne signée du chef Ramesh Bundi (saumon tandoori, agneau en croûte de curry, cuisine ouverte), réservé aux résidents de l'hôtel.",
     "filters": [
       "indienne"
     ],
@@ -22023,7 +22002,8 @@
     "lat": -20.3972053,
     "lng": 57.4305907,
     "themes": [
-      "randonnee-trail"
+      "randonnee-trail",
+      "kids-friendly"
     ],
     "duration": "30-40 min (2.5km) ; jusqu'à 2h15-5h si combiné",
     "difficultyLevel": "debutant",
@@ -30944,7 +30924,7 @@
     ],
     "badge": "selection",
     "zone": "nord",
-    "description": "Considérée comme l'une des bonnes tables du nord de l'île, cette adresse au sein de l'hôtel du même nom associe cuisine créole et technique française.",
+    "description": "Restaurant de l'hôtel Flowers of Paradise, sous un toit de chaume face au lagon turquoise de Mont Choisy. Cuisine créole et française (poisson en feuille de bananier, grillades), bien noté sur plus de 160 avis TripAdvisor.",
     "priceRange": "se-faire-plaisir",
     "filters": [
       "mauricienne",
@@ -38833,17 +38813,17 @@
   },
   {
     "id": "karai-creole-grand-baie",
-    "name": "Karai Creole",
+    "name": "Karaï Kreol",
     "category": "manger-boire",
-    "address": "Grand Baie",
+    "address": "School Lane, Grand Baie",
     "zone": "nord",
-    "lat": -20.0167,
-    "lng": 57.5833,
+    "lat": -20.0134166,
+    "lng": 57.5861091,
     "themes": [
       "restaurants"
     ],
     "priceRange": "prix-moyen",
-    "description": "Concept qui met en scène la cuisine créole des générations précédentes : plats mijotés et servis dans une karaï en fonte, sur le modèle de la cuisine familiale d'autrefois.",
+    "description": "Petit restaurant du centre de Grand Baie mêlant saveurs créoles mauriciennes et réunionnaises : pas de carte fixe, plats du jour façon cuisine familiale (cari cochon, rougaille saucisse). Service au déjeuner uniquement, très bien noté (5/5).",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Karai%20Creole%20Grand%20Baie%20Mauritius",
     "hours": "Mar-Sam 11h-15h, fermé Dim et Lun",
     "filters": [
