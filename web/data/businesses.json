@@ -5152,7 +5152,7 @@
     "hours": "Tous les jours 10h30-17h & 18h30-22h30",
     "priceRange": "bon-marche",
     "zone": "sud",
-    "description": "Restaurant chinois installé à l'angle des rues des Flamands et de la Colonie, dans un décor ancien garni d'antiquités et de coquillages, ouvert midi et soir tous les jours.",
+    "description": "Restaurant chinois installé à l'angle des rues des Flamands et de la Colonie, près du marché de Mahébourg, décor façon échoppe ancienne garni d'antiquités et de coquillages. Canard laqué pékinois en spécialité, carte chinoise et mauricienne ; ouvert 7j/7 midi et soir.",
     "filters": [
       "asiatique",
       "mauricienne"
@@ -9360,7 +9360,7 @@
       "restaurants"
     ],
     "zone": "sud",
-    "description": "Petite adresse discrète de Rivière des Anguilles, fruits de mer frais (langouste, moules sauce safran), personnel avenant. Très bien notée (4,8/5).",
+    "description": "Petite adresse discrète de Senneville Road à Rivière des Anguilles, #1 des restaurants du secteur. Fruits de mer frais (langouste, moules sauce safran), cuisine cajun-créole mauricienne, personnel avenant ; très bien notée (4,8/5), fermé le dimanche.",
     "filters": [
       "fruits-de-mer",
       "mauricienne"
@@ -9465,7 +9465,7 @@
       "restaurants"
     ],
     "zone": "sud",
-    "description": "Pizzeria-restaurant italien de Souillac tenu par un couple napolitain, réputé pour ses pizzas, lasagnes et pâtes maison. Ouvert mardi-dimanche.",
+    "description": "Pizzeria-restaurant de la Royal Road à Souillac tenu par un couple originaire de Naples, considéré parmi les meilleures pizzas de l'île. Pâtes fraîches (tagliatelles aux fruits de mer, lasagnes d'agneau), tiramisu et jus pressés maison ; ouvert du mardi au dimanche.",
     "filters": [
       "italien"
     ],
@@ -9595,7 +9595,7 @@
     "badge": "selection",
     "zone": "sud",
     "hours": "Dim-Mer 12h-21h30, Jeu 7h-15h30, Ven-Sam 12h-23h",
-    "description": "Adresse animée en bord de route côtière à Pointe d'Esny, cuisine cajun/créole, pizzas réputées et calamars. Ambiance plage rustique, musique live, terrasse ombragée.",
+    "description": "Adresse animée en bord de route côtière à Pointe d'Esny, à deux pas de la plage publique de Blue Bay. Cuisine cajun-créole, pizzas fines et croustillantes réputées parmi les meilleures de l'île, calamars frits généreux. Ambiance plage rustique et éclairage tamisé le soir, musique live.",
     "filters": [
       "grillades",
       "cafes-terrasses"
@@ -9616,7 +9616,7 @@
       "restaurants"
     ],
     "zone": "sud",
-    "description": "Petite adresse populaire locale de Souillac, cuisine asiatique/fusion et fast-food (mine bouille, boulettes, nouilles frites). Prix très abordables, paiement cash uniquement.",
+    "description": "Petite adresse populaire de la Rue Dr Wiehe à Souillac, cuisine asiatique fusion : mine bouille (saumon, poulet, viande), boulettes maison, nouilles frites. Prix très abordables, cadre simple et cash uniquement.",
     "filters": [
       "asiatique",
       "frequente-locaux"
@@ -10639,7 +10639,7 @@
       "restaurants"
     ],
     "zone": "sud",
-    "description": "Snack populaire de Mahébourg, plats emblématiques comme le \"Mine Bouille Mangouak\" et le calamar croustillant, ambiance séga. Un corner \"Bistro\" complémentaire a ouvert récemment.",
+    "description": "Snack populaire de Mahébourg depuis des années, cuisine locale simple et savoureuse (mine bouillie, riz frit, beignets d'oignons, sauté de fruits de mer), plat signature \"Mine Bouille Mangouak\" et calamar croustillant. Terrasse extérieure, ambiance séga ; très bien noté (4,7/5). Corner \"Bistro\" complémentaire ouvert récemment pour une présentation plus soignée.",
     "filters": [
       "mauricienne",
       "frequente-locaux"
@@ -10793,7 +10793,7 @@
       "restaurants"
     ],
     "zone": "sud",
-    "description": "À Mahébourg, propose langouste grillée et rougaille saucisse dans un décor créole. Les retours sont partagés, certains trouvant le rapport qualité-prix un peu élevé.",
+    "description": "Restaurant en bord de rivière sur la route de Pointe d'Esny à Mahébourg, jardin au bord de l'eau avec cabanas pour un dîner plus intime. Vindaye de poisson en spécialité, langouste grillée et rougaille saucisse ; avis partagés sur le rapport qualité-prix, coucher de soleil recommandé.",
     "hours": "Tous les jours 10h-21h",
     "filters": [
       "mauricienne",
@@ -10815,7 +10815,7 @@
       "restaurants"
     ],
     "zone": "sud",
-    "description": "Restaurant familial de Mahébourg à la terrasse ouverte sur l'animation de la rue, apprécié pour sa cuisine créole authentique et ses croquettes de fruits de mer en entrée.",
+    "description": "Restaurant familial de la Rue du Souffleur à Mahébourg, terrasse ouverte sur l'animation de la rue et wifi disponible. Croquettes de fruits de mer en entrée très appréciées, cuisine créole authentique ; 4,8/5, un peu plus cher que la moyenne du quartier.",
     "filters": [
       "mauricienne"
     ],
