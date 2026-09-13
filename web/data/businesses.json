@@ -11721,7 +11721,7 @@
       "restaurants"
     ],
     "zone": "centre",
-    "description": "Restaurant familial de Curepipe près du Royal College, spécialisé fruits de mer et cuisine européenne.",
+    "description": "Restaurant familial installé dans une maison réaménagée de College Lane à Curepipe, près du Royal College, spécialisé fruits de mer (gratin de fruits de mer réputé) et cuisine européenne. 3,5/5 sur TripAdvisor.",
     "filters": [
       "fruits-de-mer",
       "europeenne"
@@ -11785,7 +11785,7 @@
       "restaurants"
     ],
     "zone": "centre",
-    "description": "Table cantonaise et fruits de mer de Queen Street à Port-Louis, ouverte depuis 2011, avec service continu midi et soir.",
+    "description": "Table cantonaise et dim sum de Queen Street à Port-Louis, ouverte depuis mai 2011 : carte à la carte étendue (plats mijotés, fruits de mer, options végétariennes), service midi et soir. 4/5 sur TripAdvisor, réservation conseillée aux heures de pointe.",
     "hours": "Tous les jours 11h-15h & 18h-21h30",
     "filters": [
       "asiatique"
@@ -12012,7 +12012,7 @@
     ],
     "zone": "centre",
     "hours": "Lun-Jeu et Dim 11h30-21h, Ven-Sam 11h30-22h",
-    "description": "Chaîne sud-africaine spécialisée dans les fruits de mer à partager, ambiance décontractée et familiale, plusieurs adresses sur l'île.",
+    "description": "Antenne au Bagatelle Mall de la chaîne sud-africaine Ocean Basket, \"maison méditerranéenne des fruits de mer\" : mezze, plateaux à partager (poisson, crevettes, poulpe, calamars) et sushis, ambiance décontractée et familiale.",
     "filters": [
       "fruits-de-mer"
     ],
@@ -12053,7 +12053,7 @@
       "restaurants"
     ],
     "zone": "centre",
-    "description": "Adresse populaire du centre de Port Louis réputée pour ses kebabs, poulet croustillant et burgers copieux. Idéal pour une pause déjeuner rapide.",
+    "description": "Fast-food populaire du centre de Port Louis (Elizabeth Burger & Grill), carte étendue de burgers, grillades, paninis, wraps et pittas copieux. Idéal pour une pause déjeuner rapide, sur place ou à emporter.",
     "filters": [
       "grillades"
     ],
@@ -12075,7 +12075,7 @@
     ],
     "zone": "centre",
     "hours": "Lun-Sam 12h-14h et 19h-22h30, fermé Dim",
-    "description": "Adresse indienne du Domaine Les Pailles, équipe de chefs venus du sous-continent proposant une grande variété de spécialités régionales.",
+    "description": "Adresse indienne du Domaine Les Pailles, décor doré et boisé, sitar en fond sonore. Équipe de chefs venus du sous-continent proposant une grande variété de spécialités régionales ; se prête aussi aux mariages et événements.",
     "filters": [
       "tables-exception",
       "indienne"
@@ -12159,7 +12159,7 @@
       "restaurants"
     ],
     "zone": "centre",
-    "description": "Bar-gargote populaire de Port Louis, cuisine mauricienne faite maison (viande masala, cari halim), prix très accessibles, ambiance conviviale.",
+    "description": "Bar-gargote populaire de Port Louis, ouvert de 10h à 19h, décor mêlant touches mauriciennes traditionnelles et contemporaines. Cuisine maison (viande masala, cari halim) à prix très accessibles, musique live certains soirs.",
     "filters": [
       "mauricienne",
       "frequente-locaux"
@@ -31068,7 +31068,7 @@
     "badge": "selection",
     "zone": "centre",
     "hours": "Mer-Sam midi et soir (min. 10 pers., réservation), fermé Lun-Mar et Dim",
-    "description": "Souvent mentionné, aux côtés d'Escale Créole et Chez Tino, comme une des adresses de référence pour la cuisine créole traditionnelle à Floréal.",
+    "description": "Table gastronomique de l'Avenue Queen Mary à Floréal, cuisine française revisitée aux influences asiatiques et indiennes (cappuccino d'oursins, carpaccio de Saint-Jacques, souris d'agneau). Accueil personnalisé, souvent citée comme l'une des meilleures tables de l'île (4,5/5, #1 à Floréal).",
     "filters": [
       "mauricienne",
       "tables-exception"
@@ -39207,7 +39207,7 @@
     ],
     "priceRange": "bon-marche",
     "hours": "Lun-Sam 10h-20h30, fermé dimanche",
-    "description": "Restaurant chinois traditionnel du centre-ville de Port-Louis, ambiance simple, cuisine cantonaise/hongkongaise à prix modeste.",
+    "description": "Petit établissement du quartier chinois de Port-Louis, considéré comme un \"hidden gem\" : cuisine cantonaise traditionnelle, portions généreuses à petits prix. Fiche non revendiquée sur TripAdvisor.",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Canton%2015%20Rue%20Emmanuel%20Anquetil%2C%20Port-Louis%20Mauritius",
     "filters": [
       "asiatique"
@@ -39406,7 +39406,7 @@
       "cafes-bars-glaciers"
     ],
     "priceRange": "prix-moyen",
-    "description": "Pâtisserie française et gelato artisanal à Quatre Bornes, salon de thé avec salle à l'étage et salon privé sur réservation.",
+    "description": "Pâtisserie française et gelato artisanal (pistache, rhum-raisin remarqués) à Quatre Bornes, salon de thé pour petit-déjeuner et déjeuner avec salle à l'étage et salon privé sur réservation, gâteaux sur mesure pour événements.",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=D%C3%A9sirata%20le%20Boudoir%20Gourmand.mu%20by%20Gelatissimo%205%20Avenue%20des%20Gla%C3%AFeuls%2C%20Quatre%20Bornes%20Mauritius",
     "filters": [
       "europeenne",
@@ -39605,7 +39605,7 @@
     ],
     "priceRange": "prix-moyen",
     "hours": "Tous les jours env. 8h-20h",
-    "description": "Restaurant indien 100% halal de Rose Hill avec cuisines séparées pour les plats végétariens et non-végétariens, chefs venus d'Inde.",
+    "description": "Restaurant indien 100% halal de la rue Dr Maurice Cure à Rose Hill, cuisines séparées pour les plats végétariens et non-végétariens, chefs venus d'Inde. Buffet le samedi soir ; biryani à commander à l'avance.",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Shamiana%20Restaurant%20Edward%20VII%20Street%2C%20Beau%20Bassin-Rose%20Hill%20Mauritius",
     "filters": [
       "vegetarien",
