@@ -8381,7 +8381,7 @@
     ],
     "zone": "sud",
     "hours": "Tous les jours 12h-16h30",
-    "description": "Restaurant sur la Route Royale menant à la Terre des 7 Couleurs, à Chamarel. Cuisine locale, curries et grillades ; bien noté (4,4/5).",
+    "description": "Petit restaurant familial sur la Route Royale menant à la Terre des 7 Couleurs, à Chamarel, terrasse extérieure. Spécialités créoles (rougailles, caris, vindayes, gratins), ouvert midi uniquement (12h-16h30), 7j/7 ; 4,3/5.",
     "filters": [
       "mauricienne"
     ],
@@ -9148,7 +9148,7 @@
     "priceRange": "bon-marche",
     "badge": "selection",
     "zone": "sud",
-    "description": "Snack de bord de route à Saint Martin où la cuisine mauricienne est préparée avec soin et générosité : assiettes copieuses et colorées, accueil chaleureux, prix très doux.",
+    "description": "Restaurant de la Savanne Coast Road à Saint Martin, cuisine créole authentique (poisson grillé sauce créole, dholl puri) préparée avec soin. Vue sur la côte, idéal juste avant le coucher du soleil ; ouvert 11h30-20h30.",
     "filters": [
       "mauricienne"
     ],
@@ -9169,7 +9169,7 @@
       "restaurants"
     ],
     "zone": "sud",
-    "description": "Petite adresse locale de Bel Ombre tenue par Doris, cuisine mauricienne simple et généreuse à prix raisonnable ; bien notée (4,5/5).",
+    "description": "Petite adresse à 3 min à pied de la plage de Bel Ombre, tenue par Doris et sa fille : poisson au four, pâtes aux fruits de mer, curry de poulet, limonade maison. Accueil chaleureux et prix raisonnables ; bien notée (4,5/5).",
     "filters": [
       "mauricienne"
     ],
@@ -9530,7 +9530,7 @@
       "restaurants"
     ],
     "zone": "sud",
-    "description": "Petit restaurant propre et convivial de Baie du Cap, spécialités créoles (crevettes, calamars), plats copieux. Paiement en espèces uniquement ; bien noté (4,2/5).",
+    "description": "Petit restaurant convivial de Baie du Cap avec vue sur une plage voisine, curry de poisson local particulièrement réputé, calamars frits au piment vert, crevettes au beurre. Réservation conseillée le soir (petite salle, très demandé) ; espèces uniquement.",
     "filters": [
       "mauricienne",
       "fruits-de-mer"
@@ -10855,7 +10855,7 @@
       "restaurants"
     ],
     "zone": "sud",
-    "description": "Petit restaurant indien récent de Mahébourg, propre et modeste, près du pont Cavendish. Large carte indienne sur place et à emporter ; bien noté (4,3/5).",
+    "description": "Petit restaurant indien récent dans une ruelle près du pont Cavendish (1911) à Mahébourg, cadre propre et modeste. Large carte indienne sur place et à emporter ; bien noté (4,3/5).",
     "filters": [
       "indienne"
     ],
@@ -11034,7 +11034,7 @@
     ],
     "badge": "selection",
     "zone": "sud",
-    "description": "Adresse locale très simple de Mahébourg tenue en famille, uniquement briani au poulet et kebabs, sans carte ni service à table, très prisée des habitants.",
+    "description": "Snack familial de la Rue de Labourdonnais à Mahébourg (près de la station-service), sans carte ni service à table : on choisit son plat en cuisine et on s'installe. Briani au poulet généreux et bien préparé, kebabs ; prix doux, ambiance locale conviviale.",
     "filters": [
       "indienne",
       "frequente-locaux"
@@ -11118,7 +11118,7 @@
     ],
     "badge": "selection",
     "zone": "sud",
-    "description": "Bar-restaurant animé de Blue Bay, pizzas au feu de bois et cuisine créole aux sauces maison, ambiance festive avec musique live.",
+    "description": "Institution du sud de l'île sur la route côtière de Blue Bay (aussi connue sous le nom Blue Bamboo), pizzas au feu de bois à la croûte croustillante préparées par des pizzaiolos aguerris, cuisine créole et cocktails. Ambiance festive, service très bien noté.",
     "filters": [
       "mauricienne"
     ],
@@ -13264,7 +13264,7 @@
       "restaurants"
     ],
     "zone": "sud",
-    "description": "Restaurant du Vallée Adventure Park à Chamouny, cadre rustique en terrasse au bord d'une cascade. Cuisine mauricienne/indienne (burgers, grillades), bien apprécié.",
+    "description": "Restaurant du Vallé Advenature Park à Chamouny (sud du parc national des gorges de Rivière Noire), terrasse rustique au bord de la cascade Chamouzé qu'enjambe l'une des tyroliennes du parc. Cuisine mauricienne et indienne, idéal après une journée d'activités.",
     "filters": [
       "mauricienne",
       "grillades"
