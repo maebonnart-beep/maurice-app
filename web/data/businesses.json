@@ -5107,7 +5107,7 @@
     "hours": "Tous les jours, déjeuner et dîner",
     "priceRange": "bon-marche",
     "zone": "sud",
-    "description": "Adresse locale du sud de l'île pour des spécialités mauriciennes (marlin fumé, mine frite aux fruits de mer), simple et généreuse.",
+    "description": "Ouvert en 1992 sur la Royal Road de Mahébourg, restaurant familial de cuisine mauricienne (crabe, crevettes, canard, ourite vindaye, mine frite) pouvant accueillir une centaine de convives. Sur place ou à emporter.",
     "filters": [
       "fruits-de-mer",
       "mauricienne"
@@ -8619,7 +8619,7 @@
       "restaurants"
     ],
     "zone": "sud",
-    "description": "Petite gargote conviviale de Chamarel, cuisine mauricienne simple et fraîche, très bon rapport qualité-prix et service chaleureux.",
+    "description": "Petite gargote conviviale de la Plaine Champagne Road à Chamarel, terrasse extérieure au milieu de la nature, cuisine mauricienne simple et fraîche à petit prix, personnel accueillant.",
     "filters": [
       "mauricienne"
     ],
@@ -9063,7 +9063,7 @@
       "restaurants"
     ],
     "zone": "sud",
-    "description": "Restaurant indien de l'hôtel Dinarobin Beachcomber (Le Morne), au sein d'un complexe balnéaire avec vue sur le Morne.",
+    "description": "Rangoli, nouvelle table indienne du Dinarobin Beachcomber (Le Morne) : cuisine contemporaine inspirée du sous-continent par le chef Rajiv Dhama, décor mêlant tradition et modernité inspiré du mandala. Ouvert 6 soirs/7, dîner uniquement, réservation requise.",
     "filters": [
       "indienne"
     ],
@@ -9466,7 +9466,7 @@
       "restaurants"
     ],
     "zone": "sud",
-    "description": "Restaurant de fruits de mer façon cajun & créole à Riviere Des Galets (Bel Ombre), mettant en avant le poisson frais du jour.",
+    "description": "Restaurant de fruits de mer façon cajun-créole à Rivière des Galets (Bel Ombre), soupe de crabe et calamars frits réputés, propriétaires passionnés et accueillants. Très bien noté (4,9/5).",
     "filters": [
       "fruits-de-mer"
     ],
@@ -10856,7 +10856,7 @@
       "restaurants"
     ],
     "zone": "sud",
-    "description": "Petite adresse locale de Mahébourg, ouverte tard (17h-3h), spécialités type minbwi, snacks et boissons.",
+    "description": "Petite adresse locale de Vieux Grand Port (Mahébourg), ouverte tard tous les jours de 17h à 3h du matin, spécialité de mine bwi, snacks et boissons.",
     "filters": [
       "mauricienne"
     ],
@@ -10896,7 +10896,7 @@
       "restaurants"
     ],
     "zone": "sud",
-    "description": "Restaurant de Mahébourg à l'ambiance kitsch et conviviale, spécialités de venaison et fruits de mer, cuisine créole authentique.",
+    "description": "Restaurant de la rue des Hollandais à Mahébourg, ambiance kitsch animée (lumières disco, karaoké), cuisine chinoise-européenne-mauricienne : venaison, fruits de mer et banane flambée en dessert plébiscitée. 3,8/5 sur TripAdvisor.",
     "filters": [
       "mauricienne"
     ],
@@ -11033,7 +11033,7 @@
       "restaurants"
     ],
     "zone": "sud",
-    "description": "Snack local et abordable à deux pas de la plage de Blue Bay, prisé pour ses samoussas, poulets croustillants et beignets. Ambiance familiale et décontractée.",
+    "description": "Snack local et abordable face à la plage de Blue Bay, prisé pour ses samoussas, poulets croustillants et beignets (repas souvent sous les 5€/pers.). Ambiance familiale et décontractée, ferme vers 19h-19h30.",
     "filters": [
       "frequente-locaux"
     ],
@@ -23048,7 +23048,7 @@
     ],
     "zone": "sud",
     "hours": "Tous les jours 8h-22h",
-    "description": "Restaurant de cuisine internationale et fruits de mer au Centre Commercial de l'Harmonie, Le Morne Brabant.",
+    "description": "Wapalapam Island Eatery, au pied du Morne Brabant classé à l'UNESCO : cuisine locale et internationale de comfort food, ingrédients frais et locaux. Ouvert tous les jours de 8h à 22h, pour petit-déjeuner, déjeuner ou dîner.",
     "filters": [
       "fruits-de-mer"
     ],
@@ -26170,7 +26170,7 @@
       "restaurants"
     ],
     "zone": "sud",
-    "description": "Restaurant à thème hollywoodien sur la Coastal Road à St Martin (Savanne), cuisine mauricienne (nouilles, caris, riz), réputé pour son cari langouste.",
+    "description": "Restaurant à thème hollywoodien sur la Coastal Road à St Martin (Savanne), avec un bus rouge reconverti en tables et chaises. Cuisine mauricienne (nouilles, caris, riz), réputé pour son cari langouste ; ouvert tous les jours.",
     "filters": [
       "mauricienne"
     ],
