@@ -8556,7 +8556,7 @@
     ],
     "zone": "sud",
     "hours": "Tous les jours 11h-17h30",
-    "description": "Restaurant de la Route Royale à Chamarel, cuisine indienne/mauricienne/italienne et poissons. Avis très partagés, certains dénonçant des prix jugés touristiques.",
+    "description": "Bar-restaurant de la Route Royale à Chamarel, salade de cœur de palmiste très appréciée, cuisine mauricienne traditionnelle. Avis très partagés (2,9/5) : certains dénoncent des prix touristiques et un manque de transparence sur l'addition, d'autres saluent un service très amical.",
     "filters": [
       "mauricienne"
     ],
@@ -8577,7 +8577,7 @@
     ],
     "zone": "sud",
     "hours": "Tous les jours 11h30-16h",
-    "description": "Restaurant de Chamarel, cuisine mauricienne (gambas, foie de volaille épicé, calamars, langouste) à prix raisonnables et service attentif. Cartes bancaires non acceptées.",
+    "description": "Petit restaurant de la Royal Road à Chamarel, gambas, foie de volaille épicé, calamars sauce aux câpres et langouste à prix raisonnables, portions généreuses. Service attentif, #8 des restaurants du secteur ; cartes bancaires non acceptées.",
     "filters": [
       "mauricienne",
       "asiatique"
@@ -9254,7 +9254,7 @@
     ],
     "zone": "sud",
     "hours": "Mar 11h-17h, autres jours 11h-20h (soir sur réservation)",
-    "description": "Petite table de Bel Ombre face à la mer, tenue par une habitante accueillante, sans carte fixe (poisson ou calamar du jour). Avis partagés, jugée chère par certains.",
+    "description": "Petite table de la Royal Road à Bel Ombre, face à la mer sous de grands arbres, tenue par une habitante surnommée localement \"Marilyn Monroe\". Sans carte fixe : poisson ou poulpe en sauce créole ou curry selon arrivage. Avis partagés, jugée chère par certains.",
     "filters": [
       "mauricienne"
     ],
@@ -9296,7 +9296,7 @@
       "restaurants"
     ],
     "zone": "sud",
-    "description": "Restaurant de plage du Tamassa (Bel Ombre), cuisine méditerranéenne à touche mauricienne, dîner les pieds dans le sable, carte de vins internationaux et rhums locaux.",
+    "description": "Restaurant signature du Tamassa (Bel Ombre), les pieds dans le sable au son des vagues. Cuisine méditerranéenne à touche mauricienne, plat du jour, carte de vins internationaux et rhums locaux ; soirées à thème certains soirs, dress code smart casual après 18h.",
     "filters": [
       "europeenne"
     ],
@@ -9317,7 +9317,7 @@
       "restaurants"
     ],
     "zone": "sud",
-    "description": "Bistro de Bel Ombre tenu par un Belge marié à une Mauricienne, connu pour ses bières belges (Leffe) et ses plats de fruits de mer locaux.",
+    "description": "Bistro de Bel Ombre tenu par un chef belge marié à une Mauricienne, seule adresse de l'île à proposer des bières belges (Leffe, Duvel, Kriek, Chimay). Curry d'aubergine et pomme de terre, poisson frais, curry de cerf et crevettes frites ; salles intérieure et extérieure, prix modérés.",
     "filters": [
       "europeenne"
     ],
@@ -9383,7 +9383,7 @@
     ],
     "zone": "sud",
     "hours": "Dîner 18h30-22h (jours variables, sur réservation)",
-    "description": "Restaurant chic-décontracté de l'hôtel Shanti Maurice (Saint Félix), plus de 250 rhums du monde, grillades et comfort food. Dîner sur réservation.",
+    "description": "Restaurant chic-décontracté du Shanti Maurice (Saint Félix), l'une des plus grandes collections de rhums de l'océan Indien (plus de 250 références de 36 pays). Cocktails à base de rhum, grillades et comfort food ; dîner 18h30-22h30, sur réservation.",
     "filters": [
       "grillades"
     ],
