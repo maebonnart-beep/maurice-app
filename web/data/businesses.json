@@ -53379,16 +53379,17 @@
   },
   {
     "id": "momo-grand-baie",
-    "name": "MoMo",
+    "name": "Mo:Mo Mauritius",
     "category": "manger-boire",
-    "address": "Grand Baie",
+    "address": "West Wing, Lifestyle Boulevard, Sottise Road, Grand Baie",
     "phone": "+230 5757 9733",
     "themes": [
       "restaurants"
     ],
     "zone": "nord",
     "priceRange": "bon-marche",
-    "description": "Restaurant népalais de Grand Baie, une véritable découverte gastronomique avec bons conseils du chef.",
+    "description": "Restaurant népalais et tibétain de Grand Baie spécialisé dans les momos (dumplings traditionnels), déclinés en cinq variétés avec des garnitures créatives, ingrédients importés du Népal.",
+    "hours": "Mar-Dim 11h30-21h (fermé le lundi)",
     "filters": [
       "asiatique"
     ],
@@ -58201,7 +58202,7 @@
   },
   {
     "id": "dolce-vanille-grand-baie",
-    "name": "Dolce Vanille",
+    "name": "Café Dolce Vanill'",
     "category": "manger-boire",
     "address": "Chemin 20 Pieds, Route royale, Grand Baie",
     "phone": "+230 5958 8611",
@@ -58210,11 +58211,32 @@
     ],
     "zone": "nord",
     "priceRange": "prix-moyen",
-    "description": "Café à Grand Baie pour petit-déjeuner et déjeuner, cuisine européenne healthy dans un esprit cosy. Fermé le lundi.",
+    "description": "Café-lunch de style italien à Grand Baie, ouvert depuis l'été 2026, pour petit-déjeuner et déjeuner dans un esprit cosy. Fermé le lundi.",
     "filters": [
-      "petit-dej-lunch"
+      "petit-dej-lunch",
+      "italien"
     ],
     "hours": "Dim 8h-16h, Lun fermé, Mar-Sam 8h-16h",
     "createdAt": "2026-09-12T00:00:00+02:00"
+  },
+  {
+    "id": "momo-mauritius-ebene",
+    "name": "Mo:Mo Mauritius",
+    "category": "manger-boire",
+    "address": "Ebene Square Food Court, Rue du Conseil Municipal, Ebène",
+    "phone": "+230 5705 4806",
+    "themes": [
+      "restaurants"
+    ],
+    "zone": "centre",
+    "priceRange": "bon-marche",
+    "description": "Stand du food court d'Ebène Square consacré aux momos népalais et tibétains, préparés frais sous les yeux des clients, cinq variétés de garnitures créatives.",
+    "hours": "Lun-Sam 11h-20h30 (fermé le dimanche)",
+    "filters": [
+      "asiatique"
+    ],
+    "lat": -20.2439,
+    "lng": 57.4797,
+    "createdAt": "2026-09-13T00:00:00+02:00"
   }
 ]
