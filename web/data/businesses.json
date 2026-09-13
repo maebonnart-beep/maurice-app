@@ -14970,7 +14970,7 @@
       "restaurants"
     ],
     "zone": "nord",
-    "description": "Restaurant familial de Terre Rouge spécialisé dans la cuisine sud-indienne : curry, briani, crabe, langouste, thali maison servi sur feuille de bananier. Fermé le lundi.",
+    "description": "Restaurant familial de Terre Rouge né de la tradition tamoule des Ramalingum (petite restauration à Pointe aux Sables) : sept cari végétarien sur feuille de bananier le vendredi, curry virundu, fruits de mer frais. Fermé le lundi.",
     "filters": [
       "indienne",
       "fruits-de-mer"
@@ -26298,7 +26298,7 @@
       "restaurants"
     ],
     "zone": "nord",
-    "description": "Grand jardin tropical avec vue sur l'îlot Coin de Mire. Produits frais et locaux (langouste, crabe, crevettes) pour un déjeuner ou dîner dans un cadre enchanteur.",
+    "description": "Restaurant du groupe Bella Amigo (40 ans dans les produits de la mer) à Petit Raffray, cadre atypique avec ruisseau, cascade, étang et piscine ouverte le midi. Fruits de mer très frais, vue sur l'îlot Coin de Mire ; fermé le mardi.",
     "hours": "Mer-Lun 12h-14h et 18h30-21h, fermé le mardi",
     "filters": [
       "fruits-de-mer"
@@ -30649,7 +30649,7 @@
     "takeaway": true,
     "promoText": "Salade tropicale, sandwichs et plats créoles.",
     "zone": "nord",
-    "description": "Petite adresse conviviale sur la plage de Mont Choisy, tenue en famille, connue pour ses plats locaux comme le marlin fumé, le curry de poisson et ses samoussas maison.",
+    "description": "Snack-restaurant de Stéphanie sur la plage de Mont Choisy, petit et cosy, service assuré par sa fille Lorry. Marlin fumé à l'ananas, curry de poisson, fruits flambés en dessert et rhum arrangé maison ; 4,1/5, sur place ou à emporter.",
     "hours": "Tous les jours 10h30-14h30 & 18h-22h",
     "filters": [
       "mauricienne"
@@ -38625,7 +38625,7 @@
       "restaurants"
     ],
     "priceRange": "bon-marche",
-    "description": "Comptoir décontracté proposant des sushis préparés minute, à consommer sur place ou à emporter. Un bon compromis fraîcheur/prix, plébiscité par les habitués.",
+    "description": "Petit comptoir à sushis du food court Super U de Grand Baie (devant les autos tamponneuses), une soixantaine de variétés préparées minute. Service rapide, bon rapport fraîcheur-prix, sur place ou à emporter.",
     "zone": "nord",
     "filters": [
       "sushis"
@@ -38647,7 +38647,7 @@
     ],
     "hours": "Lun-Sam 11h-15h et 19h-22h30",
     "priceRange": "se-faire-plaisir",
-    "description": "Restaurant japonais qui associe cuisine live au grill teppanyaki et carte de sushis/sashimis. Promotion sur les sushis le mardi, dans une ambiance conviviale.",
+    "description": "Restaurant japonais de The Address Boutique Hotel, deux tables teppanyaki et salons privés tenus par des chefs venus d'Asie : teppanyaki, ramen, sushis et poke bowls dans une ambiance épurée façon zen. Terrasse extérieure disponible ; fermé le dimanche.",
     "zone": "nord",
     "filters": [
       "sushis",
@@ -38737,7 +38737,7 @@
     ],
     "priceRange": "bon-marche",
     "hours": "Tous les jours 10h-21h30",
-    "description": "Adresse entièrement végétarienne réputée pour ses thalis copieux et ses saveurs authentiques du nord de l'Inde, à prix très doux.",
+    "description": "Adresse entièrement végétarienne de St Georges Street à Port Louis, carte complète nord et sud-indienne (dosas, idlis, uttapams, indo-chinois) et thalis copieux à prix très doux. Samosa dahi chat et chole bhatura particulièrement appréciés.",
     "zone": "nord",
     "filters": [
       "indienne",
@@ -38760,7 +38760,7 @@
     ],
     "hours": "Mar-Dim 10h30-22h30, fermé lun",
     "priceRange": "prix-moyen",
-    "description": "Décor raffiné (rideaux de soie, mobilier ancien) avec vue sur le port. Cuisine préparée minute, service attentionné et chaleureux.",
+    "description": "Table nord-indienne du Caudan Waterfront, décor raffiné (rideaux de soie, mobilier ancien) avec vue sur le port. Butter chicken, rogan josh d'agneau, naans à l'ail, cuisine préparée minute, service attentionné.",
     "zone": "nord",
     "filters": [
       "indienne"
@@ -39086,7 +39086,7 @@
       "restaurants"
     ],
     "priceRange": "prix-moyen",
-    "description": "Restaurant japonais sushi/grill avec lounge et bar à l'étage et terrasse extérieure, devenu populaire sur les réseaux sociaux pour son cadre photogénique.",
+    "description": "Restaurant japonais de La Salette Road à Grand Baie, sushis et grill avec lounge-bar spacieux à l'étage, très photogénique. Rolls thon et spicy réputés, options végétariennes ; 4,5/5, fermé le lundi.",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Sumo%20Sushi%20Bar%20%26%20Grill%20La%20Salette%20Road%2C%20Grand%20Baie%20Mauritius",
     "filters": [
       "asiatique",
