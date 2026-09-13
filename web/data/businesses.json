@@ -9936,7 +9936,7 @@
       "restaurants"
     ],
     "zone": "est",
-    "description": "Petit restaurant local de fruits de mer à Quatre Cocos, peu référencé en ligne — vraisemblablement une petite table peu connue hors des habitués.",
+    "description": "Petit restaurant local de fruits de mer à Quatre Cocos, peu référencé en ligne mais apprécié des rares avis pour ses plats savoureux et son bon rapport qualité-prix.",
     "filters": [
       "mauricienne",
       "fruits-de-mer"
@@ -9958,7 +9958,7 @@
     ],
     "zone": "est",
     "hours": "Déjeuner 12h30-15h, goûter 16h-17h30, dîner 18h30-22h",
-    "description": "Restaurant à la carte de l'hôtel Long Beach Mauritius (Poste de Flacq), poisson frais et cuisine mauricienne/internationale, cadre bord de plage.",
+    "description": "Restaurant à la carte du Long Beach Golf & Spa Resort à Belle Mare, sélection de poissons frais et cuisine mauricienne/internationale en bord de plage. Déjeuner 12h30-15h, dîner 18h30-22h, thé de l'après-midi avec pancakes maison 16h-17h30.",
     "filters": [
       "mauricienne",
       "fruits-de-mer"
@@ -10148,7 +10148,7 @@
       "restaurants"
     ],
     "zone": "est",
-    "description": "Restaurant italien de l'hôtel Long Beach (Belle Mare/Poste de Flacq), antipasti, pâtes, pizzas et fruits de mer. Bien noté (4,3/5).",
+    "description": "Restaurant italien du Long Beach Golf & Spa Resort à Belle Mare, carte (antipasti, pâtes, pizzas, risotto) pensée avec le chef étoilé Moreno Cedroni à partir de produits de petits producteurs. Terrasse extérieure, déjeuner 12h30-15h et dîner 18h30-22h.",
     "filters": [
       "italien"
     ],
@@ -10169,7 +10169,7 @@
       "restaurants"
     ],
     "zone": "est",
-    "description": "Restaurant-buffet de l'hôtel Long Beach Mauritius, cuisine live et buffets internationaux copieux dans un cadre haut de gamme.",
+    "description": "Restaurant-buffet du Long Beach Golf & Spa Resort à Belle Mare, cuisine live et buffets internationaux à thème selon les jours, du petit-déjeuner (7h-10h) au dîner (18h30-22h).",
     "filters": [
       "mauricienne"
     ],
@@ -10190,7 +10190,7 @@
       "restaurants"
     ],
     "zone": "est",
-    "description": "Bar-restaurant convivial de Poste de Flacq, prisé pour ses grillades et fruits de mer, cocktails et ambiance décontractée.",
+    "description": "Bar-restaurant de Providence (Poste de Flacq) mêlant cuisine locale et internationale, grillades et cocktails, dans une ambiance conviviale entre amis.",
     "filters": [
       "grillades"
     ],
@@ -10233,7 +10233,7 @@
       "restaurants"
     ],
     "zone": "est",
-    "description": "Petite adresse de grillades à Quatre Cocos, techniques de cuisson traditionnelles, ouverte tous les jours de 8h à 18h. Bien noté par les visiteurs de la région de Belle Mare.",
+    "description": "Petite adresse de grillades à Quatre Cocos, à deux pas des hôtels C Mauritius et LUX* Belle Mare, techniques de cuisson traditionnelles, ouverte tous les jours de 8h à 18h.",
     "filters": [
       "grillades"
     ],
@@ -10254,7 +10254,7 @@
       "restaurants"
     ],
     "zone": "est",
-    "description": "Dans le domaine de Constance Belle Mare Plage, propose un repas convivial et généreux façon banquet rustique, centré sur les grands classiques de la cuisine locale.",
+    "description": "Au clubhouse du golf Legends du Constance Belle Mare Plage, vue sur le parcours et son troupeau de cerfs visible en soirée. Cuisine de l'océan Indien, spécialités venaison et grillades au dîner ; petit-déjeuner, déjeuner et dîner, réservation conseillée.",
     "priceRange": "se-faire-plaisir",
     "hours": "Tous les jours 7h-10h, 12h-17h30, 19h-22h30",
     "filters": [
@@ -10278,7 +10278,7 @@
       "restaurants"
     ],
     "zone": "est",
-    "description": "Bistro de Poste de Flacq sur la Royal Road, cuisine fast-food/healthy : burgers, pâtes. Ouvert brunch/déjeuner/dîner.",
+    "description": "Bistro convivial de la Royal Road à Poste de Flacq : burgers généreux, pâtes crémeuses, ambiance cosy pour brunch, déjeuner ou dîner, sur place ou à emporter.",
     "filters": [
       "europeenne"
     ],
@@ -10421,7 +10421,7 @@
       "restaurants"
     ],
     "zone": "est",
-    "description": "Restaurant de Poste de Flacq, cuisine locale et internationale servie en terrasse extérieure. Informations en ligne limitées.",
+    "description": "Restaurant de Poste de Flacq, cuisine mauricienne aux produits locaux (fruits de mer frais, options végétariennes) servie en terrasse extérieure. Informations en ligne limitées.",
     "filters": [
       "mauricienne"
     ],
@@ -39120,7 +39120,7 @@
       "restaurants"
     ],
     "priceRange": "prix-moyen",
-    "description": "Antenne \"La Plage\" de la chaîne Le Poivrier à Roches Noires, en bord de mer, dans une ambiance décontractée de bord de plage.",
+    "description": "Antenne franco-italienne \"La Plage\" de la chaîne Le Poivrier, au sein d'Azuri Ocean & Golf Village à Roches Noires. Vue sur la plage protégée du vent, carte de vins soignée et musique live certains soirs ; ouvert du mardi au dimanche 18h-22h, fermé le lundi.",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Le%20Poivrier%20-%20La%20Plage%20Roches%20Noires%20Mauritius",
     "filters": [
       "mauricienne"
