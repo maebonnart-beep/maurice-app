@@ -1039,7 +1039,7 @@
     "priceRange": "prix-moyen",
     "badge": "selection",
     "zone": "nord",
-    "description": "Référence incontournable de Grand Baie, fondée par une famille locale. Fruits de mer marinés aux épices créoles, ambiance conviviale avec musiciens en soirée.",
+    "description": "Restaurant familial niché dans une ruelle discrète de Grand Baie, murs orange et mobilier en bois miel. Cuisine créole traditionnelle (cari crabe, vindaye de crevettes, salade d'ourite), musique créole live ; 4,4/5, réservation conseillée.",
     "filters": [
       "mauricienne",
       "fruits-de-mer"
@@ -1136,7 +1136,7 @@
     "badge": "selection",
     "promoText": "Cadre très plaisant sous les arbres, cuisine ouverte au feu de bois. Très bons plats.",
     "zone": "nord",
-    "description": "Antenne \"Le Jardin\" de la chaîne Le Poivrier à Grand Baie, installée dans un jardin extérieur au décor exotique, cuisine créole du quotidien.",
+    "description": "Antenne originelle du Poivrier, cachée derrière une entrée discrète dans un jardin tropical planté de fleurs et fréquenté de geckos verts. Cuisine méditerranéenne (poisson, sushis, tartares, pâtes fraîches) d'inspiration franco-italienne ; 4,5/5, fermé dimanche et lundi.",
     "filters": [
       "europeenne",
       "italien",
@@ -1298,7 +1298,7 @@
     "hours": "Mar-Dim 18h30-22h, fermé lun",
     "priceRange": "se-faire-plaisir",
     "zone": "nord",
-    "description": "Restaurant fusion asiatique au décor japonais épuré, avec cuisine ouverte et un sommelier saké dédié. Cadre élégant, même si l'ambiance peut sembler un peu formelle à certains.",
+    "description": "Restaurant pan-asiatique du LUX* Grand Baie, cuisine ouverte façon théâtre culinaire (cuisson au feu de paille) sous la houlette du chef Ram Rai (Katmandou). Canard laqué pékinois en signature, service original avec sommelier de sauce soja à table.",
     "filters": [
       "asiatique",
       "kids-friendly",
@@ -1415,7 +1415,7 @@
     ],
     "priceRange": "se-faire-plaisir",
     "zone": "nord",
-    "description": "Bar-grill de Coastal Road à Grand Baie, en face du poste de police, avec vue sur la baie et une cuisine aux influences portugaises (grillades, foies, poulet, gambas).",
+    "description": "Bar-grill (aussi listé \"Top Deck Bar & Grill\") de la Coastal Road à Grand Baie, en face du poste de police, vue sur la baie. Cuisine aux influences portugaises (foies, poulet, gambas, calamars au beurre à l'ail), pina colada et mojitos réputés ; très bien noté.",
     "filters": [
       "mauricienne",
       "grillades"
@@ -1529,7 +1529,7 @@
     "hours": "Mar-Sam 11h-17h & 18h-22h, Dim 11h-17h, fermé lun",
     "priceRange": "se-faire-plaisir",
     "zone": "nord",
-    "description": "Restaurant les pieds dans l'eau avec vue sur la baie de Grand Baie. Langouste et fruits de mer frais, musique live, coucher de soleil en toile de fond.",
+    "description": "Un des plus anciens restaurants de fruits de mer de Grand Baie (ouvert depuis 1989) sur la Royal Road, les pieds dans l'eau turquoise. Langouste fraîche, thermidor signature \"Isle de France\", carte de 40 plats mêlant cuisine mauricienne, française et créole.",
     "filters": [
       "fruits-de-mer",
       "mauricienne",
