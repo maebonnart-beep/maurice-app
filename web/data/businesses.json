@@ -53264,23 +53264,6 @@
     "createdAt": "2026-08-16T15:56:43+02:00"
   },
   {
-    "id": "1974-da-antonio-e-giulia",
-    "name": "1974 (da Antonio e Giulia)",
-    "category": "manger-boire",
-    "address": "Ex-Aquarium, Route côtière, Trou aux Biches",
-    "phone": "+230 265 7400",
-    "themes": [
-      "restaurants"
-    ],
-    "zone": "nord",
-    "priceRange": "prix-moyen",
-    "description": "Restaurant italien tenu par Antonio (cuisine) et Giulia (salle) dans le bâtiment de l'ex-Aquarium à Trou aux Biches, réputé pour ses produits italiens authentiques et ses poissons locaux.",
-    "filters": [
-      "italien"
-    ],
-    "createdAt": "2026-08-16T15:56:43+02:00"
-  },
-  {
     "id": "nature-et-delices-pointe-aux-canonniers",
     "name": "Nature et Délices",
     "category": "manger-boire",
