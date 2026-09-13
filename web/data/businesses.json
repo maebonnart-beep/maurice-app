@@ -1085,7 +1085,7 @@
     "priceRange": "bon-marche",
     "badge": "selection",
     "zone": "nord",
-    "description": "Table familiale de la Route Royale à Grand Baie proposant une cuisine locale aux influences européennes, indiennes et chinoises, avec vue sur la baie depuis son étage supérieur.",
+    "description": "Table familiale de la Route Royale à Grand Baie, cuisine locale aux influences européennes, indiennes et chinoises (soupe de crabe, vindaye de poisson, crevettes sauce provençale), vue sur la baie depuis le balcon à l'étage. 4,4/5, fermé le mardi.",
     "filters": [
       "mauricienne",
       "indienne",
@@ -1624,7 +1624,7 @@
     "priceRange": "se-faire-plaisir",
     "badge": "selection",
     "zone": "nord",
-    "description": "Bar-restaurant en bord de plage à Grand Baie, réputé pour ses fruits de mer frais et ses plats d'agneau et de bœuf, avec animations musicales live et vue sur le coucher de soleil.",
+    "description": "Bar-restaurant au bord de la baie de Grand Baie, déjeuner à l'ombre d'un grand badamier. Fruits de mer, agneau et bœuf de qualité, rhum offert en digestif, musique live (classiques) ; 4,1/5.",
     "filters": [
       "mauricienne",
       "fruits-de-mer",
@@ -1842,7 +1842,7 @@
       "restaurants"
     ],
     "zone": "nord",
-    "description": "Restaurant de School Road (Boucan) à Grand Baie mêlant cuisine européenne et mauricienne à base de produits frais, avec piscine chauffée et ambiance musicale.",
+    "description": "Restaurant-résidence de School Road (Boucan) à Grand Baie, tables au bord d'une piscine chauffée à 30°C, ambiance musicale et cocktails. Cuisine européenne et mauricienne ; très bien noté (4,8/5).",
     "filters": [
       "europeenne",
       "mauricienne"
@@ -6538,7 +6538,7 @@
     ],
     "zone": "nord",
     "hours": "Lun-Sam 18h-22h, fermé Dim",
-    "description": "Petit restaurant de Grand Baie tenu par Iven, ancien plongeur : poissons frits, samoussas, gâteaux piment, curry d'ourite, carte courte et prix raisonnables.",
+    "description": "Petit restaurant de Grand Baie tenu par Iven, moniteur de plongée le jour et cuisinier le soir (aidé de sa mère et sa cousine) : poissons frits, samoussas, gâteaux piment, curry d'ourite, bière Phoenix bien fraîche. Carte courte, prix raisonnables, ouvert en soirée uniquement.",
     "filters": [
       "mauricienne",
       "frequente-locaux"
@@ -6560,7 +6560,7 @@
     ],
     "badge": "selection",
     "zone": "nord",
-    "description": "À Grand Baie, petite cantine peu visible depuis la rue qui prépare à la commande des plats d'inspiration chinoise et créole, mine frite en tête.",
+    "description": "Petite cantine (\"petit corridor\") en retrait de la Royal Road à Grand Baie, réputée pour ses raviolis chinois (poulet, porc, poisson, calamar, agneau) et ses bols de nouilles frites. Places limitées, souvent à emporter ; ouvert 11h-19h sauf dimanche.",
     "priceRange": "bon-marche",
     "hours": "Lun-Sam 11h-19h, fermé dimanche",
     "filters": [
@@ -6738,7 +6738,7 @@
       "restaurants"
     ],
     "zone": "nord",
-    "description": "Adresse de street-food mauricienne dans un jardin cosy à Grand Baie, réputée pour son mine bouillie (nouilles) décliné en curries variés et son satini pomme d'amour.",
+    "description": "Adresse de street-food sur La Colline Road à Grand Baie, jardin cosy planté de bonsaïs. Mine bouille réputée, garnitures au choix (poulet, bœuf, fruits de mer, agneau, cerf) et satini pomme d'amour, service très apprécié.",
     "filters": [
       "asiatique"
     ],
@@ -6782,7 +6782,7 @@
     ],
     "zone": "nord",
     "hours": "Mar-Dim 10h30-14h30 et 18h-22h30, fermé Lun",
-    "description": "Churrascaria façon rodizio à Grand Baie où les brochettes de viande grillée sont servies directement à table. Steakhouse/méditerranéen, bien noté (4,3/5), fermé le lundi.",
+    "description": "Churrascaria d'origine portugaise à Grand Baie, viandes grillées façon rodizio découpées directement à table par des serveurs itinérants (picanha remarquée). Ambiance intime et jazzy dans un cadre végétal ; bien noté (4,3/5), fermé le lundi.",
     "filters": [
       "grillades"
     ],
@@ -6803,7 +6803,7 @@
     ],
     "zone": "nord",
     "hours": "Mar-Dim 11h30-14h30 et 18h-22h, fermé Lun",
-    "description": "Restaurant coréen BBQ de Grand Baie, décor chic d'inspiration asiatique, cuisson à table (bibimbap, samgyeopsal, sundubu-jjigae). Salle enfants dédiée avec jeux.",
+    "description": "Restaurant coréen BBQ du Northpoint Building à Grand Baie, viandes marinées (soja, ail, sésame) grillées à table, bibimbap sur pierre chaude, sundubu-jjigae, kimchi. Fermé le lundi ; 3,7/5, avis contrastés sur le service.",
     "filters": [
       "asiatique",
       "kids-friendly"
