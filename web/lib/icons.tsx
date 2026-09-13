@@ -349,6 +349,12 @@ export function mascotFor(key: string): string | null {
   return MASCOT_KEYS.has(key) ? `/mascots/${key}.png` : null;
 }
 
+/** Chemin de l'icône poulpe (variante simplifiée, un seul accessoire) pour les
+ *  puces « Mes préférences » du Profil (public/pref-icons/{key}.png), ou null. */
+export function prefIconFor(key: string): string | null {
+  return MASCOT_KEYS.has(key) ? `/pref-icons/${key}.png` : null;
+}
+
 /**
  * Fond pastel par catégorie (niveau 1) pour les badges ronds de mascotte sur
  * l'accueil — un ton distinct par catégorie plutôt que le teal uniforme,

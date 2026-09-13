@@ -57,7 +57,7 @@ import type { Listing } from "@/lib/marketplace/types";
 import { COUP_DE_COEUR_COLOR } from "@/components/ui/Badge";
 import { FilterDropdown, type DropdownOption } from "@/components/ui/FilterDropdown";
 import { AddAddressForm } from "@/components/ui/AddAddressForm";
-import { iconForKey, mascotFor, categoryTint, MapPin } from "@/lib/icons";
+import { iconForKey, mascotFor, prefIconFor, categoryTint, MapPin } from "@/lib/icons";
 import { displayName, displayCity, shareTagline } from "@/lib/format";
 import { FavoriteButton } from "@/components/ui/FavoriteButton";
 import {
@@ -2993,32 +2993,55 @@ export default function DirectoryClient({
                 <p className="m-0 mb-3 text-[12px] text-muted leading-snug">
                   Coche ce qui t&apos;intéresse pour personnaliser ton accueil.
                 </p>
-                <label className="flex items-center gap-2.5 mb-3 pb-3 border-b border-border">
+                <label className="flex items-center gap-2.5 mb-3 pb-3 border-b border-border cursor-pointer">
                   <input
                     type="checkbox"
                     checked={preferences.hasKids}
                     onChange={(e) => setHasKids(e.target.checked)}
                     className="w-4 h-4 accent-[var(--primary)] shrink-0"
                   />
-                  <span className="text-[13px] text-ink">👨‍👩‍👧 J&apos;ai des enfants</span>
+                  <span
+                    className="w-8 h-8 rounded-full overflow-hidden shrink-0 border-2"
+                    style={{ borderColor: preferences.hasKids ? "var(--primary)" : "transparent" }}
+                  >
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img src="/pref-icons/kids.png" alt="" className="w-full h-full object-cover" />
+                  </span>
+                  <span className="text-[13px] text-ink">J&apos;ai des enfants</span>
                 </label>
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-x-2 gap-y-3">
                   {CATEGORIES.map((c) => {
                     const checked = preferences.interests.includes(c.key);
+                    const icon = prefIconFor(c.key);
                     return (
                       <button
                         key={c.key}
                         type="button"
                         onClick={() => toggleInterest(c.key)}
-                        className="flex items-center gap-1.5 rounded-pill px-3 py-1.5 text-[12.5px] font-semibold border transition-colors"
-                        style={
-                          checked
-                            ? { background: `color-mix(in srgb, ${c.color} 18%, var(--surface))`, borderColor: c.color, color: c.color }
-                            : { borderColor: "var(--border)", color: "var(--muted)" }
-                        }
+                        className="flex flex-col items-center gap-1 w-[70px] shrink-0"
                       >
-                        <span>{c.emoji}</span>
-                        <span>{c.label}</span>
+                        <span
+                          className="w-14 h-14 rounded-full overflow-hidden flex items-center justify-center border-2 transition-colors"
+                          style={{
+                            borderColor: checked ? c.color : "var(--border)",
+                            background: checked
+                              ? `color-mix(in srgb, ${c.color} 18%, var(--surface))`
+                              : "var(--surface-2)",
+                          }}
+                        >
+                          {icon ? (
+                            // eslint-disable-next-line @next/next/no-img-element
+                            <img src={icon} alt="" className="w-full h-full object-cover" />
+                          ) : (
+                            <span className="text-2xl">{c.emoji}</span>
+                          )}
+                        </span>
+                        <span
+                          className="text-[11px] font-semibold text-center leading-tight"
+                          style={{ color: checked ? c.color : "var(--muted)" }}
+                        >
+                          {c.label}
+                        </span>
                       </button>
                     );
                   })}
