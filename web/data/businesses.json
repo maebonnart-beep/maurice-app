@@ -14688,26 +14688,6 @@
     "createdAt": "2026-07-12T16:37:31+02:00"
   },
   {
-    "id": "la-roulotte-fast-food",
-    "name": "La Roulotte Fast Food",
-    "category": "manger-boire",
-    "address": "Grand Baie",
-    "phone": "+230 5422 8542",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=4568503843732668376&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.013926,
-    "lng": 57.5572867,
-    "themes": [
-      "cafes-bars-glaciers"
-    ],
-    "zone": "nord",
-    "description": "Fast-food du secteur de Mont Choisy (Grand Baie).",
-    "filters": [
-      "snacks-plage"
-    ],
-    "createdAt": "2026-07-12T16:37:31+02:00"
-  },
-  {
     "id": "nanda-snack",
     "name": "Nanda Snack",
     "category": "manger-boire",
@@ -14888,26 +14868,6 @@
     "zone": "nord",
     "hours": "Tous les jours 11h-20h30",
     "description": "Restaurant en bord de mer de Pointe aux Piments réputé pour ses vues sur le coucher de soleil, cuisine mauricienne (fruits de mer, caris) ; avis mitigés selon certains retours.",
-    "filters": [
-      "snacks-plage"
-    ],
-    "createdAt": "2026-07-12T16:37:31+02:00"
-  },
-  {
-    "id": "mississippi-fried-chicken",
-    "name": "Mississippi Fried Chicken",
-    "category": "manger-boire",
-    "address": "2H3R+R58, Grand Baie",
-    "phone": "+230 263 9020",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=15373845289169514984&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -19.9954529,
-    "lng": 57.5904669,
-    "themes": [
-      "cafes-bars-glaciers"
-    ],
-    "zone": "nord",
-    "description": "Fast-food de poulet frit et burgers à Max Plaza (Péreybère/Grand Baie) ; avis mitigés sur la qualité et le service.",
     "filters": [
       "snacks-plage"
     ],
@@ -15614,27 +15574,6 @@
     "createdAt": "2026-07-12T16:37:31+02:00"
   },
   {
-    "id": "nando-s-grand-baie",
-    "name": "Nando's Grand Baie",
-    "category": "manger-boire",
-    "address": "Chemin Vingt Pieds Shop SG08, (F-105 MU, La Croisette Mall, Grand Baie 30517",
-    "phone": "+230 650 3630",
-    "website": "https://store.nandos.mu/details/grand-baie",
-    "googleMapsUrl": "https://maps.google.com/?cid=4923950960964747719&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0220116,
-    "lng": 57.5784657,
-    "themes": [
-      "livraisons"
-    ],
-    "zone": "nord",
-    "description": "Chaîne de poulet peri-peri (fast-food) à La Croisette Mall, Grand Baie, ouvert tous les jours de 11h30 à 20h.",
-    "hours": "Lun-Jeu et Dim 11h30-21h, Ven-Sam 11h30-22h30",
-    "filters": [
-      "grillades"
-    ],
-    "createdAt": "2026-07-12T16:37:31+02:00"
-  },
-  {
     "id": "sushibay",
     "name": "Sushibay",
     "category": "manger-boire",
@@ -15651,27 +15590,6 @@
     "description": "Livraison de sushis à Grand Baie.",
     "filters": [
       "sushis"
-    ],
-    "createdAt": "2026-07-12T16:37:31+02:00"
-  },
-  {
-    "id": "gloria-fast-food",
-    "name": "Gloria Fast Food",
-    "category": "manger-boire",
-    "address": "Lot 3, Royal road, Grand Baie 30548, Grand Baie",
-    "phone": "+230 268 3598",
-    "website": "https://grubmates.io/locations/grandbaie/gloriafastfood.php",
-    "googleMapsUrl": "https://maps.google.com/?cid=4729772552686613568&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.0123844,
-    "lng": 57.5846889,
-    "themes": [
-      "livraisons"
-    ],
-    "zone": "nord",
-    "description": "Fast-food de Grand Baie : burgers, frites, poulet frit, wraps et paninis, ouvert tous les jours de 11h à 20h.",
-    "hours": "Lun-Mar 11h-20h",
-    "filters": [
-      "grillades"
     ],
     "createdAt": "2026-07-12T16:37:31+02:00"
   },
@@ -19392,27 +19310,6 @@
     "createdAt": "2026-07-12T16:37:31+02:00"
   },
   {
-    "id": "steers",
-    "name": "Steers",
-    "category": "manger-boire",
-    "address": "Cascavelle Shopping Village Riviere Noire Road Uniciti MU, Flic en Flac 90203",
-    "phone": "+230 452 9162",
-    "website": "https://mauritius.steers.africa/",
-    "googleMapsUrl": "https://maps.google.com/?cid=9524910696618504122&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.2795034,
-    "lng": 57.4023772,
-    "themes": [
-      "cafes-bars-glaciers"
-    ],
-    "zone": "ouest",
-    "hours": "Lun-Jeu 11h-21h30, Ven-Sam 11h-22h, Dim et jours fériés 11h-22h",
-    "description": "Enseigne de fast-food sud-africaine du Cascavelle Shopping Mall (Flic en Flac), spécialisée burgers de bœuf, poulet et végétariens, et frites. Note moyenne 3,4/5.",
-    "filters": [
-      "snacks-plage"
-    ],
-    "createdAt": "2026-07-12T16:37:31+02:00"
-  },
-  {
     "id": "ginger-thai-restaurant",
     "name": "Ginger Thai Restaurant",
     "category": "manger-boire",
@@ -20015,27 +19912,6 @@
     "createdAt": "2026-07-12T16:37:31+02:00"
   },
   {
-    "id": "kfc-tamarin",
-    "name": "KFC Tamarin",
-    "category": "manger-boire",
-    "address": "Riviere Noire Rd MU, Le Barachois, Shopping Centre, Tamarin 90901",
-    "phone": "+230 432 1622",
-    "website": "https://www.kfc.mu/",
-    "googleMapsUrl": "https://maps.google.com/?cid=17090456886351799917&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.3282209,
-    "lng": 57.3847971,
-    "themes": [
-      "livraisons"
-    ],
-    "zone": "ouest",
-    "description": "Fast-food de poulet frit au Barachois, Tamarin, ouvert au moins du lundi au vendredi 10h-20h30.",
-    "hours": "Lun-Sam 10h-20h30, Dim 10h-20h",
-    "filters": [
-      "grillades"
-    ],
-    "createdAt": "2026-07-12T16:37:31+02:00"
-  },
-  {
     "id": "cafe-alexia",
     "name": "Café Alexia",
     "category": "manger-boire",
@@ -20155,28 +20031,6 @@
     "hours": "Lun-Jeu 11h30-13h30, 17h30-20h30, Ven-Dim 11h30-20h30",
     "filters": [
       "sushis"
-    ],
-    "createdAt": "2026-07-12T16:37:31+02:00"
-  },
-  {
-    "id": "aly-fast-food-by-gloria",
-    "name": "ALY FAST FOOD (BY GLORIA)",
-    "category": "manger-boire",
-    "address": "QF99+5H5, Beau Bassin-Rose Hill",
-    "phone": "+230 5786 0096",
-    "website": "",
-    "googleMapsUrl": "https://maps.google.com/?cid=1093607164495342399&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.2321012,
-    "lng": 57.4689748,
-    "themes": [
-      "livraisons"
-    ],
-    "zone": "centre",
-    "description": "Fast-food à Rose Hill (burgers, kebabs, plats chinois, wraps), ouvert mardi-samedi 11h-21h, dimanche/jours fériés 15h-21h (fermé le lundi).",
-    "hours": "Mar-Sam 11h-21h, Dim et jours fériés 15h-21h (fermé le lundi)",
-    "filters": [
-      "grillades",
-      "asiatique"
     ],
     "createdAt": "2026-07-12T16:37:31+02:00"
   },
@@ -36520,26 +36374,6 @@
     "hours": "Ven-Lun 7h-14h, tous les jours sauf jeudi 18h-22h",
     "filters": [
       "italien"
-    ],
-    "createdAt": "2026-07-20T09:32:16+02:00"
-  },
-  {
-    "id": "parasol-chemin-grenier",
-    "name": "Parasol Chemin Grenier",
-    "category": "manger-boire",
-    "address": "Royal Road, Chemin Grenier 00230",
-    "phone": "+230 5500 0801",
-    "googleMapsUrl": "https://maps.google.com/?cid=15826456901257215510&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -20.4922565,
-    "lng": 57.4717713,
-    "themes": [
-      "livraisons"
-    ],
-    "zone": "sud",
-    "description": "Fast-food/grill à Chemin Grenier (shawarma, poulet et agneau grillés), sur place ou à emporter.",
-    "hours": "Dim-Jeu 10h-21h30, Ven-Sam 10h-22h30",
-    "filters": [
-      "grillades"
     ],
     "createdAt": "2026-07-20T09:32:16+02:00"
   },
