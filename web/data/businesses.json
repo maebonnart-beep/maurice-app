@@ -3847,7 +3847,7 @@
     "priceRange": "prix-moyen",
     "badge": "selection",
     "zone": "ouest",
-    "description": "Formule complète entrée-plat-dessert autour de recettes mauriciennes classiques, à Flic-en-Flac, avec un rapport qualité-prix qui revient souvent dans les retours.",
+    "description": "Grand restaurant installé sur une ancienne plantation sucrière à Medine (Flic-en-Flac), organisé autour de barachois et de jardins avec tables au bord de l'eau. Cuisine chinoise et fruits de mer, fusion locale-internationale ; fermé le lundi.",
     "filters": [
       "mauricienne",
       "asiatique",
@@ -4699,7 +4699,7 @@
     "hours": "Tous les jours 11h-20h",
     "priceRange": "bon-marche",
     "zone": "ouest",
-    "description": "Restaurant américain de Tamarin spécialisé dans les smash burgers, tenu par le propriétaire Abdallah.",
+    "description": "Restaurant américain de Tamarin tenu par Abdallah, smash burgers au bœuf mauricien sélectionné et haché sur place (Signature Smash Burger, Missouri Goober au beurre de cacahuète). Ouvert tous les jours 11h-20h.",
     "filters": [
       "grillades"
     ],
@@ -7461,7 +7461,7 @@
       "restaurants"
     ],
     "zone": "ouest",
-    "description": "Restaurant de sushis japonais à La Preneuse (Rivière Noire), carte variée incluant makis végétariens et rolls aux crevettes.",
+    "description": "Restaurant de sushis et cuisine pan-asiatique à La Preneuse (Rivière Noire), sushis frais préparés à la commande, options végétariennes. Très bien noté (5/5).",
     "filters": [
       "asiatique",
       "sushis"
@@ -7851,7 +7851,7 @@
     ],
     "zone": "ouest",
     "hours": "Lun 18h30-21h30, Mar-Ven 12h-14h et 18h30-21h30, Sam 18h30-21h30, fermé Dim",
-    "description": "Steakhouse haut de gamme de Rivière Noire, référence de la côte ouest pour ses viandes premium et sa sélection de vins.",
+    "description": "Steakhouse de Ruisseau Créole (Grande Rivière Noire) ouvert en 2012 par le chef Gérard Samouilhan, fort de 20 ans d'expérience en Afrique du Sud. Steaks sud-africains et fruits de mer dans une ambiance familiale ; 4,2/5 sur 156 avis.",
     "filters": [
       "tables-exception",
       "europeenne",
@@ -7873,7 +7873,7 @@
       "restaurants"
     ],
     "zone": "ouest",
-    "description": "Ponton flottant installé en plein lagon, pensé davantage comme un lieu d'apéritif au coucher du soleil que comme un restaurant classique.",
+    "description": "Bar-lounge flottant amarré dans le lagon de Grande Rivière Noire, accessible en navette bateau depuis le Le Morne Anglers Club. Sessions déjeuner, coucher de soleil et dîner avec tapas puis carte préparée à bord, sur réservation.",
     "hours": "Mer-Sam 11h-23h, Mar et Dim 17h-19h",
     "filters": [
       "mauricienne"
@@ -8027,7 +8027,7 @@
     ],
     "zone": "ouest",
     "hours": "Lun-Jeu 9h30-21h, Ven 9h30-22h, Sam 9h30-21h30, fermé Dim",
-    "description": "Restaurant de Plaine Champagne mêlant technique française et produits locaux mauriciens, avec une carte de vins et cocktails.",
+    "description": "Restaurant de Grande Rivière Noire (Plaine Champagne Road) mêlant technique française et produits locaux mauriciens, steaks et burgers réputés. Très bien noté (4,1/5, 153 avis, #1 des restaurants du secteur) ; fermé le dimanche.",
     "filters": [
       "europeenne",
       "mauricienne",
@@ -8154,7 +8154,7 @@
       "restaurants"
     ],
     "zone": "ouest",
-    "description": "Resto-pub de Coeur de Ville Tamarin, cuisine européenne simple (pâtes bolognaise, steak grillé). Ouvert 7j/7, ambiance décontractée de quartier.",
+    "description": "Gastropub au fond du food court de Coeur Cap (Super U) à Tamarin, cuisine européenne (tagliatelles carbonara appréciées). Soirées karaoké le vendredi, ambiance pub avec DJ le samedi ; ouvert 8h30-20h (15h le dimanche).",
     "filters": [
       "europeenne"
     ],
@@ -39099,7 +39099,7 @@
     ],
     "priceRange": "prix-moyen",
     "hours": "Mar-Sam 12h-15h et 18h-23h, fermé Dim-Lun",
-    "description": "Antenne \"La Rivière\" de la chaîne Le Poivrier à Tamarin, avec des tables surtout en extérieur, une adresse fréquentée par les habitants du coin.",
+    "description": "Antenne \"La Rivière\" de la chaîne Le Poivrier à Tamarin (Barachois Estate), petit jardin secret surplombant la rivière, éclairage tamisé en soirée. Langoustes fraîches et risotto à la truffe parmi les plats appréciés ; 4,1/5, très demandé le week-end.",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Le%20Poivrier%20-%20La%20Rivi%C3%A8re%20Tamarin%20Mauritius",
     "filters": [
       "mauricienne"
@@ -39339,7 +39339,7 @@
       "restaurants"
     ],
     "priceRange": "bon-marche",
-    "description": "Restaurant de Flic-en-Flac à la carte éclectique (italien, français, chinois, indien, créole-cajun), réputé pour son bon rapport qualité-prix.",
+    "description": "Affaire familiale de la Coastal Road à Flic-en-Flac, carte éclectique (italien, français, chinois, indien, créole-cajun) dans un cadre cosy, cocktails et thés à la menthe maison appréciés. 4,2/5 sur TripAdvisor.",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Le%20Bistro%20Morisyen%20Coastal%20Road%2C%20Flic-en-Flac%20Mauritius",
     "filters": [
       "italien",
