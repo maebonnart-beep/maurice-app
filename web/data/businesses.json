@@ -10298,7 +10298,7 @@
       "restaurants"
     ],
     "zone": "est",
-    "description": "Restaurant chinois local de Poste de Flacq.",
+    "description": "Restaurant chinois familial de Poste de Flacq (Empereur Restaurant 东皇饭店), réputé pour ses raviolis au poulet et à la ciboulette ainsi que ses gâteaux de riz au sucre brun. Accueil chaleureux, cuisine locale appréciée du quartier.",
     "filters": [
       "asiatique"
     ],
@@ -11806,7 +11806,7 @@
       "restaurants"
     ],
     "zone": "centre",
-    "description": "Steakhouse/grill de Curepipe proposant des grillades dans une ambiance conviviale.",
+    "description": "Steakhouse-grill de Curepipe, apprécié pour ses grillades et en particulier son steak, dans un cadre chaleureux au décor soigné. Peu d'avis en ligne mais retours très positifs sur l'accueil et la qualité des plats.",
     "filters": [
       "grillades"
     ],
@@ -15458,7 +15458,7 @@
       "restaurants"
     ],
     "zone": "nord",
-    "description": "Restaurant de Grand Baie : curry de poisson, poulpe sauté, fruits de mer grillés.",
+    "description": "Petite adresse à l'entrée du marché de Grand Baie, tenue par trois sœurs formées par leur mère : curry de poisson, poulpe sauté, calamars croustillants et poisson grillé, accompagnés de mojitos et pickles maison. Ambiance rustique et conviviale (le perroquet Cliff fait partie du décor), 4,2/5 sur TripAdvisor.",
     "filters": [
       "fruits-de-mer"
     ],
@@ -29866,7 +29866,7 @@
       "restaurants"
     ],
     "zone": "nord",
-    "description": "Restaurant de plage à Trou-aux-Biches : poisson grillé, calmars, fruits de mer.",
+    "description": "Stand simple sur la plage publique de Trou-aux-Biches, à emporter ou sur quelques tables improvisées : crevettes sauce au beurre, calamars frits et cocktails de fruits pressés minute. Portions généreuses et prix accessibles, très bien noté (4,4/5, 259 avis) malgré un service parfois lent aux heures de pointe.",
     "filters": [
       "fruits-de-mer"
     ],
@@ -39428,7 +39428,7 @@
       "cafes-bars-glaciers"
     ],
     "priceRange": "prix-moyen",
-    "description": "Rooftop-bar à Grand Baie, tapas et burgers gourmets, soirées à thème.",
+    "description": "Rooftop-bar au-dessus de l'hôtel Hibiscus à Pereybère (Grand Baie), avec vue panoramique sur la plage et le coucher de soleil. Tapas, burgers gourmets et cocktails travaillés ; soirée latine le mercredi avec DJ, salsa et bachata.",
     "googleMapsUrl": "https://www.google.com/maps/place/The+Cloud+-+Rooftop+%26+Lounge+Bar/@-19.9945772,57.5888213,687m/data=!3m2!1e3!4b1!4m6!3m5!1s0x217dab0c0270a3f7:0x95b3c7c1f0885b7d!8m2!3d-19.9945772!4d57.5888213!16s%2Fg%2F11s0kgy34_",
     "filters": [
       "europeenne",
@@ -39671,7 +39671,7 @@
     ],
     "priceRange": "prix-moyen",
     "hours": "Lun-Jeu 10h-21h, Ven-Dim 10h-22h",
-    "description": "Antenne de l'enseigne Jain's Little India à Rose-Belle, sucreries et snacks végétariens indiens.",
+    "description": "Antenne à Rose-Belle (Plaisance Shopping Village) de l'enseigne 100% végétarienne Jain's Little India, née à Quatre Bornes en 2019 : sucreries et snacks indiens traditionnels faits maison, dans un esprit street-food pur veg.",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Jain's%20Little%20India%20(Rose-Belle)%20Plaisance%20Shopping%20Village%2C%20Rose-Belle%20Mauritius",
     "filters": [
       "vegetarien",
@@ -53197,7 +53197,7 @@
     ],
     "zone": "nord",
     "priceRange": "bon-marche",
-    "description": "Petite cantine mauricienne au fond du couloir à Grand Baie, réputée pour sa file d'attente.",
+    "description": "Cantine de rue nichée dans une ruelle discrète en face de l'ADP SSS à Grand Baie, réputée pour sa mine bouillie épicée aux fruits de mer (poulpe, palourde géante, salami d'agneau) et ses dumplings maison. Service rapide, prix doux, mais paiement en espèces uniquement et forte affluence le midi.",
     "filters": [
       "mauricienne"
     ],
@@ -53236,7 +53236,7 @@
     ],
     "zone": "nord",
     "priceRange": "bon-marche",
-    "description": "Cuisine chinoise, bouillon meefon aux crevettes et canard laqué à prix canon, plats à emporter.",
+    "description": "Chun Po (Bella Vista-Chun Po), sur la route B13 à Grand Baie, avec une terrasse en bord de mer vue sur la baie. Spécialités de fritures de calamar croustillantes et de canard laqué découpé en salle, portions généreuses et prix plus doux que la moyenne du quartier.",
     "filters": [
       "asiatique"
     ],
@@ -53312,7 +53312,7 @@
     ],
     "zone": "centre",
     "priceRange": "se-faire-plaisir",
-    "description": "Restaurant spécialisé viandes à Ébène.",
+    "description": "Antenne à Ébène de Blacksheeep (fondé en 2016, avec Beau-Bassin et Sodnac), restaurant familial reconnu pour ses burgers — le Hamlet beef burger en tête de gondole — dans une ambiance cosy.",
     "filters": [
       "grillades"
     ],
@@ -53352,7 +53352,7 @@
     ],
     "zone": "centre",
     "priceRange": "prix-moyen",
-    "description": "Restaurant marocain du Mall de Bagatelle.",
+    "description": "Table libano-marocaine du Mall de Bagatelle, fondée en 2017 par Hasnaa Currimjee, pionnière de cette cuisine à Maurice : houmous, tajines, couscous et pâtisseries orientales (baklawa, kunafa). Service et accueil très appréciés.",
     "hours": "Lun-Jeu 9h30-20h30, Ven-Sam 9h30-22h, Dim & jours fériés 9h30-15h",
     "lat": -20.2245789,
     "lng": 57.4963666,
@@ -53369,7 +53369,7 @@
     ],
     "zone": "nord",
     "priceRange": "prix-moyen",
-    "description": "Restaurant de fusion asiatique à Grand Baie.",
+    "description": "Cuisine fusion japonaise-thaïlandaise à Grand Baie, avec une expérience omakase inédite à Maurice où le chef compose librement le menu. BYOB (apportez votre alcool) ; établissement possiblement fermé temporairement, à vérifier avant de s'y rendre.",
     "filters": [
       "asiatique"
     ],
@@ -53408,7 +53408,7 @@
     ],
     "zone": "nord",
     "priceRange": "bon-marche",
-    "description": "Pizzeria de Grand Baie.",
+    "description": "Antenne de la roulotte italienne Mr Berti à Grand Baie (plusieurs adresses à Maurice), pizzas et lasagnes préparées avec des ingrédients italiens, pizza à la truffe particulièrement appréciée. Également disponible en livraison.",
     "filters": [
       "italien"
     ],
@@ -53427,7 +53427,7 @@
     ],
     "zone": "nord",
     "priceRange": "bon-marche",
-    "description": "Pizzeria de Triolet.",
+    "description": "Pizzeria italienne authentique du 63 Royal Road à Triolet, tenue par un couple originaire de Rome. Pizzas signature La Golosona et Tartufata (à la truffe), très bien notée (4,8/5 sur TripAdvisor).",
     "filters": [
       "italien"
     ],
@@ -53468,7 +53468,7 @@
     ],
     "zone": "nord",
     "priceRange": "bon-marche",
-    "description": "Cuisine mauricienne classique, spécialité de bol renversé, fermé le jeudi.",
+    "description": "Adresse locale de Trou aux Biches, en face du poste de police, spécialisée dans le bol renversé — riz, viande et légumes mijotés démoulés en couches, plat convivial typique de la cuisine mauricienne. Fermé le jeudi.",
     "filters": [
       "mauricienne"
     ],
