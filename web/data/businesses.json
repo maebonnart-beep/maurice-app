@@ -4721,7 +4721,7 @@
     "hours": "Tous les jours 12h30-15h & 19h-22h",
     "priceRange": "se-faire-plaisir",
     "zone": "sud",
-    "description": "Restaurant de fruits de mer haut de gamme du Paradis Golf Resort & Spa (Le Morne), décor marin thématique. Poissons du jour et cuisine raffinée face à l'océan.",
+    "description": "Restaurant signature du Paradis Golf Resort & Spa (Le Morne), fruits de mer et poissons du jour raffinés face à l'océan. Terrasse extérieure ou salle élégante, cadre romantique ; déjeuner 12h30-15h, dîner 19h-22h.",
     "filters": [
       "fruits-de-mer",
       "tables-exception"
@@ -4856,7 +4856,7 @@
       "restaurants"
     ],
     "zone": "sud",
-    "description": "Restaurant de plage de l'hôtel Heritage Awali à Bel Ombre, les pieds dans le sable face à l'océan, spécialisé dans la cuisine créole et les produits de la mer.",
+    "description": "Restaurant de plage de l'hôtel Heritage Awali à Bel Ombre, terrasse face au lagon façon safari-lodge, éclairage tamisé en soirée. Cuisine créole et produits de la mer, desserts locaux revisités ; #5 des restaurants de Bel Ombre.",
     "hours": "Déjeuner 12h-14h30, dîner 19h-22h, bar 10h-23h (tous les jours)",
     "filters": [
       "mauricienne"
@@ -5085,7 +5085,7 @@
     "hours": "Tous les jours 11h-21h30",
     "priceRange": "se-faire-plaisir",
     "zone": "sud",
-    "description": "Restaurant en bord de lagon à Pointe Jérôme, avec terrasse et kiosques individuels, réputé pour ses fruits de mer et poissons grillés.",
+    "description": "Restaurant en bord de lagon à Pointe Jérôme (Mahébourg), terrasse et kiosques individuels donnant sur l'eau. Fruits de mer, langouste grillée et curries mauriciens ; ouvert 11h-21h30, avis partagés sur le rapport qualité-prix.",
     "filters": [
       "mauricienne"
     ],
@@ -8724,7 +8724,7 @@
       "restaurants"
     ],
     "zone": "sud",
-    "description": "Restaurant de l'hôtel Paradis Golf Club au Morne, cuisine fusion locale et internationale, vue sur mer et montagne, cadre élégant et décontracté.",
+    "description": "Restaurant principal du Paradis Beachcomber Golf Resort & Spa (Le Morne), au bord de la piscine avec vue sur l'océan. Grand buffet international qui change chaque soir (soirée fruits de mer notamment) ; petit-déjeuner, déjeuner saisonnier et dîner.",
     "filters": [
       "mauricienne",
       "fruits-de-mer"
@@ -8894,7 +8894,7 @@
       "restaurants"
     ],
     "zone": "sud",
-    "description": "Restaurant de l'hôtel Dinarobin au Morne, concept bistronomique mêlant héritage colonial français et influences indiennes, cuisine mettant en avant les produits locaux.",
+    "description": "Bistro du Dinarobin Beachcomber au Morne, où se rencontrent héritage colonial français et traditions culinaires indiennes. Comfort food saine à base de produits locaux de qualité, sans colorants ni arômes artificiels ; 4,3/5, ambiance intime pour un dîner.",
     "filters": [
       "europeenne",
       "produits-locaux"
@@ -9274,7 +9274,7 @@
       "restaurants"
     ],
     "zone": "sud",
-    "description": "Restaurant principal de l'hôtel Heritage Awali (Bel Ombre), buffets à thème et cuisine mauricienne dans un décor inspiré de l'Afrique.",
+    "description": "Restaurant principal de l'hôtel Heritage Awali (Bel Ombre), quatre pavillons entourés de bassins, décor et couleurs inspirés de l'Afrique. Buffet international varié (épices mexicaines, saveurs pan-asiatiques), petit-déjeuner dès 5h et dîner buffet certains soirs.",
     "filters": [
       "mauricienne",
       "kids-friendly"
@@ -10968,7 +10968,7 @@
       "restaurants"
     ],
     "zone": "sud",
-    "description": "Restaurant de l'hôtel Anantara Iko (Plaine Magnien), spécialisé fruits de mer frais et viandes grillées, relevés de sels du monde entier. Salle moderne et bar en plein air.",
+    "description": "Restaurant de l'Anantara Iko à Blue Bay (Plaine Magnien), face au parc marin. Fruits de mer et viandes grillées relevés de sels du monde entier, salle moderne ou bar en plein air ; cadre chic-décontracté.",
     "filters": [
       "grillades",
       "fruits-de-mer"
@@ -38868,7 +38868,7 @@
       "restaurants"
     ],
     "priceRange": "se-faire-plaisir",
-    "description": "Dans le domaine historique de Bel Ombre, propose un menu dégustation autour d'une cuisine créole/coloniale élaborée, dans un cadre haut de gamme.",
+    "description": "Table gastronomique dans une demeure de 1899 au cœur du Domaine de Bel Ombre, menu dégustation en 4 temps avec accords mets-vins conseillés par le sommelier. Carte pensée par le chef étoilé David Toutain, produits issus du domaine (venaison, thon de l'océan Indien).",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Ch%C3%A2teau%20de%20Bel%20Ombre%20Bel%20Ombre%20Mauritius",
     "hours": "Tous les jours, déjeuner 11h30-16h, dîner 19h-21h30",
     "filters": [
