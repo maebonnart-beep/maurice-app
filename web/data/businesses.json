@@ -58221,5 +58221,71 @@
     "lat": -20.2439,
     "lng": 57.4797,
     "createdAt": "2026-09-13T00:00:00+02:00"
+  },
+  {
+    "id": "sketch-cafe-tamarin",
+    "name": "Sketch",
+    "category": "manger-boire",
+    "address": "Royal Road, La Mivoie, Tamarin",
+    "phone": "+230 5421 6728",
+    "website": "https://www.sketchmauritius.com",
+    "googleMapsUrl": "https://www.google.com/maps/place/Sketch/@-20.3452195,57.3643504,17z/data=!3m1!4b1!4m6!3m5!1s0x217c6b001ceb713d:0x8ac30ab140661b7d!8m2!3d-20.3452195!4d57.3643504",
+    "lat": -20.3452195,
+    "lng": 57.3643504,
+    "themes": [
+      "cafes-bars-glaciers"
+    ],
+    "hours": "Ouvert 7/7, 8h-16h (cuisine fermée à 15h)",
+    "priceRange": "prix-moyen",
+    "zone": "ouest",
+    "description": "Un café-restaurant cosy et vivant en plein cœur de Tamarin, ouvert toute la journée pour un café de spécialité, des lattes originaux (matcha, banane) et des petits-déjeuners sains comme l'avocado toast.",
+    "filters": [
+      "cafes-terrasses"
+    ],
+    "createdAt": "2026-09-13T04:24:23.801Z"
+  },
+  {
+    "id": "koko-cafe-tamarin",
+    "name": "Koko Café",
+    "category": "manger-boire",
+    "address": "Anthurium Ln, Tamarin",
+    "phone": "+230 5983 5797",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/place/KOKO+CAF%C3%89/@-20.3281261,57.3773862,17z/data=!3m1!4b1!4m6!3m5!1s0x217c43cdbf7daed5:0xe667822e0e192f17!8m2!3d-20.3281261!4d57.3773862",
+    "lat": -20.3281261,
+    "lng": 57.3773862,
+    "themes": [
+      "cafes-bars-glaciers"
+    ],
+    "hours": "Lun-mer 8h-16h, jeu-sam 8h-18h, dim 8h-18h",
+    "priceRange": "prix-moyen",
+    "zone": "ouest",
+    "description": "Situé à deux pas de la plage de Tamarin, ce café coloré et accueillant est idéal pour un brunch copieux ou une pause gourmande avec des pâtisseries maison dans une ambiance cosy.",
+    "filters": [
+      "cafes-terrasses"
+    ],
+    "createdAt": "2026-09-13T04:24:23.801Z"
+  },
+  {
+    "id": "coco-lolo-tamarin",
+    "name": "Coco Lolo",
+    "category": "manger-boire",
+    "address": "Cap Tamarin, Tamarin",
+    "phone": "+230 5907 2812",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/place/Coco+Lolo/@-20.3282911,57.3829619,17z/data=!3m1!4b1!3m6!1s0x217c43f59ec25f21:0x58057b7c22847ef!8m2!3d-20.3282911!4d57.3829619",
+    "lat": -20.3282911,
+    "lng": 57.3829619,
+    "themes": [
+      "cafes-bars-glaciers"
+    ],
+    "hours": "Mar-sam 8h30-15h, fermé dim et lun",
+    "priceRange": "bon-marche",
+    "zone": "ouest",
+    "description": "Petit café convivial à Cap Tamarin disposant d'un espace extérieur relaxant, parfait pour un cappuccino et une crêpe ou un en-cas léger.",
+    "filters": [
+      "cafes-terrasses"
+    ],
+    "createdAt": "2026-09-13T04:24:23.801Z"
   }
 ]
