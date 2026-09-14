@@ -33153,6 +33153,20 @@
     "createdAt": "2026-09-14T00:00:00+02:00"
   },
   {
+    "id": "delivery-dodo",
+    "name": "Delivery Dodo",
+    "category": "manger-boire",
+    "address": "",
+    "phone": "",
+    "website": "https://www.deliverydodo.mu/",
+    "themes": [
+      "livraisons"
+    ],
+    "providerType": "application",
+    "description": "Service de livraison de repas faisant l'intermédiaire entre clients et restaurants partenaires à travers l'île : commande et paiement via l'appli ou le site, un livreur récupère le plat au restaurant et le livre à l'adresse indiquée.",
+    "createdAt": "2026-09-14T00:00:00+02:00"
+  },
+  {
     "id": "mont-choisy-leisure-wellness-centre",
     "name": "Mont Choisy Leisure & Wellness Centre",
     "category": "faire-du-sport",
