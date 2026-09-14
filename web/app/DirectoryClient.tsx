@@ -96,7 +96,6 @@ import {
   Storefront,
   BellRinging,
   MagnifyingGlass,
-  SquaresFour,
   ShieldCheck,
   Package,
   Crown,
@@ -2321,14 +2320,10 @@ export default function DirectoryClient({
               <div className="flex flex-col gap-3">
                 <button
                   onClick={focusSearch}
-                  className="flex items-center gap-3.5 rounded-2xl border border-border bg-surface px-4 py-4 text-left shadow-card active:scale-[.98] transition-transform"
+                  className="flex items-center gap-3.5 rounded-2xl border border-border bg-surface px-4 py-3 text-left shadow-card active:scale-[.98] transition-transform"
                 >
-                  <span
-                    className="shrink-0 w-11 h-11 rounded-full flex items-center justify-center"
-                    style={{ background: "var(--primary-tint)", color: "var(--primary-deep)" }}
-                  >
-                    <MagnifyingGlass size={20} weight="bold" aria-hidden />
-                  </span>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src="/icon-recherche.png" alt="" aria-hidden className="shrink-0 w-16 h-16 object-contain" />
                   <span>
                     <span className="block text-[14.5px] font-bold text-ink">Par mot clé</span>
                     <span className="block text-[12.5px] text-muted mt-0.5">
@@ -2338,14 +2333,10 @@ export default function DirectoryClient({
                 </button>
                 <button
                   onClick={() => setHomeMode("categories")}
-                  className="flex items-center gap-3.5 rounded-2xl border border-border bg-surface px-4 py-4 text-left shadow-card active:scale-[.98] transition-transform"
+                  className="flex items-center gap-3.5 rounded-2xl border border-border bg-surface px-4 py-3 text-left shadow-card active:scale-[.98] transition-transform"
                 >
-                  <span
-                    className="shrink-0 w-11 h-11 rounded-full flex items-center justify-center"
-                    style={{ background: "var(--primary-tint)", color: "var(--primary-deep)" }}
-                  >
-                    <SquaresFour size={20} weight="bold" aria-hidden />
-                  </span>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src="/icon-categories.png" alt="" aria-hidden className="shrink-0 w-16 h-16 object-contain" />
                   <span>
                     <span className="block text-[14.5px] font-bold text-ink">Par catégorie</span>
                     <span className="block text-[12.5px] text-muted mt-0.5">
