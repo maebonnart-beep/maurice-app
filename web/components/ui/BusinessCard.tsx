@@ -96,14 +96,21 @@ export function BusinessCard({
   const categoryColor = CATEGORY_MAP[b.category].color;
   const bannerIcon = (firstTheme && subIconFor(firstTheme)) ?? subIconFor(b.category);
   const BannerFallbackIcon = (firstTheme && iconForKey(firstTheme)) ?? iconForKey(b.category);
-  // 1-2 infos concrètes pour ne pas se limiter au nom/adresse au 1er coup d'œil.
-  const facts = metaFacts(b).slice(0, 2);
+  // 1 info concrète pour ne pas se limiter au nom/adresse au 1er coup d'œil,
+  // sans faire gonfler la hauteur de la carte au-delà des fiches sans "facts".
+  const facts = metaFacts(b).slice(0, 1);
   // Tags de filtre (cuisine, ambiance, spécialité…) portés par la fiche —
-  // quelques mots-clés visibles sans ouvrir la fiche.
-  const filterTags = (b.filters ?? [])
+  // complètent les rubriques dans la même rangée, dans la limite du total
+  // ci-dessous, pour garder une hauteur de carte homogène.
+  const filterTagsAll = (b.filters ?? [])
     .filter((t) => !hiddenKeys?.has(t) && FILTER_OPTION_MAP[t])
-    .slice(0, 3)
     .map((t) => FILTER_OPTION_MAP[t]);
+  // Rubriques + tags de filtre partagent une seule rangée et un même quota
+  // total (au lieu de deux rangées qui grandissent chacune de leur côté) :
+  // ça évite les fiches à rallonge visuellement très différentes des fiches
+  // sobres, et l'impression de répétition quand rubrique et tag se recoupent.
+  const MAX_TAGS = 3;
+  const filterTags = filterTagsAll.slice(0, Math.max(0, MAX_TAGS - rubriques.length));
   // Agenda : la date prime sur tout le reste pour un événement — mise en
   // avant en bandeau plein-largeur en haut de fiche plutôt que noyée dans le texte.
   const eventDateLabel = eventBannerLabel(b);
@@ -155,7 +162,7 @@ export function BusinessCard({
             {displayName(b.name)}
           </h3>
         </div>
-        {(rubriques.length > 0 || b.isAgency || b.providerType) && (
+        {(rubriques.length > 0 || filterTags.length > 0 || b.isAgency || b.providerType) && (
           <p className="m-0 mt-0.5 flex items-center gap-1.5 flex-wrap">
             {rubriques.map(({ theme, key }) => {
               const RubriqueIcon = iconForKey(key);
@@ -174,6 +181,15 @@ export function BusinessCard({
                 </span>
               );
             })}
+            {filterTags.map((tag) => (
+              <span
+                key={tag.key}
+                className="inline-flex items-center gap-1 text-[11px] font-semibold px-1.5 py-0.5 rounded-pill bg-primary-tint text-primary-deep"
+              >
+                <span aria-hidden>{tag.emoji}</span>
+                {tag.label}
+              </span>
+            ))}
             {b.isAgency && (
               <span
                 className="inline-flex items-center gap-1 text-[11px] font-bold px-1.5 py-0.5 rounded-pill text-white"
@@ -206,19 +222,6 @@ export function BusinessCard({
           <p className="m-0 text-muted text-[12px] leading-[1.4] flex items-center gap-1 mt-0.5">
             <CONTACT_ICONS.Clock size={12} weight="bold" className="shrink-0 opacity-70" aria-hidden />
             <span className="truncate">{b.hours}</span>
-          </p>
-        )}
-        {filterTags.length > 0 && (
-          <p className="m-0 mt-1 flex items-center gap-1.5 flex-wrap">
-            {filterTags.map((tag) => (
-              <span
-                key={tag.key}
-                className="inline-flex items-center gap-1 text-[11px] font-semibold px-1.5 py-0.5 rounded-pill bg-primary-tint text-primary-deep"
-              >
-                <span aria-hidden>{tag.emoji}</span>
-                {tag.label}
-              </span>
-            ))}
           </p>
         )}
         {facts.length > 0 && (
