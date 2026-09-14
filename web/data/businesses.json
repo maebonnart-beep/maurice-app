@@ -33118,10 +33118,11 @@
   },
   {
     "id": "mahek-mahogany",
-    "name": "Mahek",
+    "name": "Mahek Fine Indian Cuisine",
     "category": "manger-boire",
     "address": "Food-court Ki pou Manze, Mahogany Shopping Promenade, Beau Plan, Pamplemousses",
-    "phone": "",
+    "phone": "+230 5451 9875",
+    "whatsapp": "+230 5451 9875",
     "website": "",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Mahogany%20Shopping%20Promenade%20Beau%20Plan%20Mauritius",
     "lat": -20.099693,
@@ -33129,8 +33130,9 @@
     "themes": [
       "restaurants"
     ],
+    "hours": "Lun-Jeu-Dim-jours fériés 10h-21h, Ven-Sam 10h-22h",
     "zone": "nord",
-    "description": "Échoppe de cuisine indienne au sein du food-court \"Ki pou Manze\" du Mahogany Shopping Promenade à Beau Plan.",
+    "description": "Échoppe de cuisine indienne au sein du food-court \"Ki pou Manze\" du Mahogany Shopping Promenade à Beau Plan. Commande à emporter ou pré-commande possible par WhatsApp.",
     "filters": [
       "indienne"
     ],
