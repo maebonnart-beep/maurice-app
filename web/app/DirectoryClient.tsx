@@ -1796,6 +1796,37 @@ export default function DirectoryClient({
                 />
               </button>
 
+              {/* Raccourci vers ses adresses enregistrées (favoris/à tester), en
+                  rappelant les icônes dédiées (cœur/drapeau) utilisées sur les fiches. */}
+              <div className="flex gap-2.5 mb-7">
+                <button
+                  onClick={() => { setHomeMode("favoris"); window.scrollTo({ top: 0, behavior: "smooth" }); }}
+                  className="flex-1 flex items-center gap-2.5 rounded-2xl border border-border p-3 active:scale-[.97] transition-transform"
+                  style={{ background: `color-mix(in srgb, ${COUP_DE_COEUR_COLOR} 10%, var(--surface))` }}
+                >
+                  <Heart size={20} weight="fill" aria-hidden style={{ color: COUP_DE_COEUR_COLOR }} />
+                  <span className="flex flex-col items-start leading-none">
+                    <span className="text-[15px] font-bold" style={{ color: COUP_DE_COEUR_COLOR }}>
+                      {favoriteBusinesses.length}
+                    </span>
+                    <span className="text-[11px] text-muted mt-0.5">Mes favoris</span>
+                  </span>
+                </button>
+                <button
+                  onClick={() => { setHomeMode("favoris"); window.scrollTo({ top: 0, behavior: "smooth" }); }}
+                  className="flex-1 flex items-center gap-2.5 rounded-2xl border border-border p-3 active:scale-[.97] transition-transform"
+                  style={{ background: "color-mix(in srgb, #f5a623 10%, var(--surface))" }}
+                >
+                  <Flag size={20} weight="fill" aria-hidden style={{ color: "#f5a623" }} />
+                  <span className="flex flex-col items-start leading-none">
+                    <span className="text-[15px] font-bold" style={{ color: "#f5a623" }}>
+                      {aTesterBusinesses.length}
+                    </span>
+                    <span className="text-[11px] text-muted mt-0.5">À tester</span>
+                  </span>
+                </button>
+              </div>
+
               {newBusinesses.length > 0 && (
                 <>
                   <div className="flex items-center gap-2 mb-2.5">
