@@ -2323,10 +2323,10 @@ export default function DirectoryClient({
                   className="flex items-center gap-3.5 rounded-2xl border border-border bg-surface px-4 py-3 text-left shadow-card active:scale-[.98] transition-transform"
                 >
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="/icon-recherche.png" alt="" aria-hidden className="shrink-0 w-16 h-16 object-contain" />
+                  <img src="/icon-recherche.png" alt="" aria-hidden className="shrink-0 w-[84px] h-[84px] object-contain" />
                   <span>
-                    <span className="block text-[14.5px] font-bold text-ink">Par mot clé</span>
-                    <span className="block text-[12.5px] text-muted mt-0.5">
+                    <span className="block text-[17px] font-bold text-ink">Par mot clé</span>
+                    <span className="block text-[14px] text-muted mt-0.5">
                       Un nom, une activité, un lieu…
                     </span>
                   </span>
@@ -2336,10 +2336,10 @@ export default function DirectoryClient({
                   className="flex items-center gap-3.5 rounded-2xl border border-border bg-surface px-4 py-3 text-left shadow-card active:scale-[.98] transition-transform"
                 >
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="/icon-categories.png" alt="" aria-hidden className="shrink-0 w-16 h-16 object-contain" />
+                  <img src="/icon-categories.png" alt="" aria-hidden className="shrink-0 w-[84px] h-[84px] object-contain" />
                   <span>
-                    <span className="block text-[14.5px] font-bold text-ink">Par catégorie</span>
-                    <span className="block text-[12.5px] text-muted mt-0.5">
+                    <span className="block text-[17px] font-bold text-ink">Par catégorie</span>
+                    <span className="block text-[14px] text-muted mt-0.5">
                       Restaurants, activités, sorties…
                     </span>
                   </span>
