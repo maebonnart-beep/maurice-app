@@ -33117,6 +33117,40 @@
     "createdAt": "2026-07-19T16:57:45+02:00"
   },
   {
+    "id": "mahek-mahogany",
+    "name": "Mahek",
+    "category": "manger-boire",
+    "address": "Food-court Ki pou Manze, Mahogany Shopping Promenade, Beau Plan, Pamplemousses",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Mahogany%20Shopping%20Promenade%20Beau%20Plan%20Mauritius",
+    "lat": -20.099693,
+    "lng": 57.5767875,
+    "themes": [
+      "restaurants"
+    ],
+    "zone": "nord",
+    "description": "Échoppe de cuisine indienne au sein du food-court \"Ki pou Manze\" du Mahogany Shopping Promenade à Beau Plan.",
+    "filters": [
+      "indienne"
+    ],
+    "createdAt": "2026-09-14T00:00:00+02:00"
+  },
+  {
+    "id": "hungry-dodo",
+    "name": "Hungry Dodo",
+    "category": "manger-boire",
+    "address": "",
+    "phone": "",
+    "website": "https://hungrydodo.com/",
+    "themes": [
+      "livraisons"
+    ],
+    "providerType": "application",
+    "description": "Application de livraison de repas à l'échelle de l'île : commande auprès de restaurants partenaires dans de nombreuses zones (Port-Louis, Grand Baie, Flic en Flac, Quatre Bornes, Curepipe, Moka, Rivière Noire...), suivi du livreur en direct.",
+    "createdAt": "2026-09-14T00:00:00+02:00"
+  },
+  {
     "id": "mont-choisy-leisure-wellness-centre",
     "name": "Mont Choisy Leisure & Wellness Centre",
     "category": "faire-du-sport",
