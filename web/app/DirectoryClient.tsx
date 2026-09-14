@@ -96,6 +96,7 @@ import {
   Storefront,
   BellRinging,
   MagnifyingGlass,
+  SquaresFour,
   ShieldCheck,
   Package,
   Crown,
@@ -446,7 +447,7 @@ export default function DirectoryClient({
   const [focusSearchOnMount, setFocusSearchOnMount] = useState(false);
   // Accueil « Option A » : menu d'entrée → puis mode choisi.
   const [homeMode, setHomeMode] = useState<
-    "menu" | "categories" | "favoris" | "listes" | "ajouter" | "profil"
+    "menu" | "recherche" | "categories" | "favoris" | "listes" | "ajouter" | "profil"
   >("menu");
   // Accueil « Par catégorie » : catégorie choisie, dont on affiche les rubriques
   // (un seul niveau de profondeur). null = grille des 8 catégories.
@@ -645,6 +646,14 @@ export default function DirectoryClient({
     window.scrollTo({ top: 0, behavior: "smooth" });
     setSearchOpen(true);
     setFocusSearchOnMount(true);
+  }
+
+  // Onglet « Recherche » (bandeau du bas) et bouton d'accueil « Trouve ta
+  // prochaine adresse » : au lieu d'ouvrir directement le champ de recherche,
+  // proposent d'abord le choix entre chercher par mot-clé (focusSearch) ou
+  // parcourir par catégorie (écran déjà existant, homeMode "categories").
+  function openSearchChoice() {
+    leaveResults("recherche");
   }
 
   function selectCategory(key: string) {
@@ -1524,7 +1533,7 @@ export default function DirectoryClient({
   // « Carte » ont été retirés en amont : les catégories sont déjà en
   // permanence sur l'accueil, et la carte reste accessible via le bandeau
   // « Voir la carte » et le bouton liste/carte des résultats.
-  const activeTab: "accueil" | "recherche" | "listes" | "profil" | "autre" = searchOpen
+  const activeTab: "accueil" | "recherche" | "listes" | "profil" | "autre" = searchOpen || homeMode === "recherche"
     ? "recherche"
     : homeMode === "listes"
       ? "listes"
@@ -1555,7 +1564,7 @@ export default function DirectoryClient({
           <span className="text-[10.5px] font-semibold leading-none">Accueil</span>
         </button>
         <button
-          onClick={focusSearch}
+          onClick={openSearchChoice}
           aria-label="Recherche"
           aria-pressed={activeTab === "recherche"}
           className={`flex flex-col items-center gap-0.5 py-1 rounded-xl transition-colors active:scale-[.97] ${
@@ -1761,7 +1770,7 @@ export default function DirectoryClient({
           {showHome && homeMode === "menu" && (
             <div className="max-w-[720px] mx-auto pb-6">
               <button
-                onClick={focusSearch}
+                onClick={openSearchChoice}
                 className="relative w-full mb-6 rounded-2xl overflow-hidden text-left shadow-card active:scale-[.99] transition-transform"
                 style={{ background: "linear-gradient(135deg, #0d4a47 0%, #146b66 65%)" }}
               >
@@ -2266,6 +2275,53 @@ export default function DirectoryClient({
                     Bientôt de nouveaux événements…
                   </p>
                 )}
+              </div>
+            </div>
+          )}
+
+          {/* Accueil → Recherche : choix entre chercher par mot-clé (champ de
+              recherche classique) ou parcourir par catégorie (écran existant,
+              homeMode "categories"). Point d'entrée commun à l'icône du
+              bandeau et à la tuile « Trouve ta prochaine adresse ». */}
+          {showHome && homeMode === "recherche" && (
+            <div className="max-w-[480px] mx-auto pb-16 pt-2">
+              <h2 className="text-[18px] font-bold text-ink mb-1">Rechercher</h2>
+              <p className="text-[13px] text-muted mb-5">Comment veux-tu chercher ton adresse ?</p>
+              <div className="flex flex-col gap-3">
+                <button
+                  onClick={focusSearch}
+                  className="flex items-center gap-3.5 rounded-2xl border border-border bg-surface px-4 py-4 text-left shadow-card active:scale-[.98] transition-transform"
+                >
+                  <span
+                    className="shrink-0 w-11 h-11 rounded-full flex items-center justify-center"
+                    style={{ background: "var(--primary-tint)", color: "var(--primary-deep)" }}
+                  >
+                    <MagnifyingGlass size={20} weight="bold" aria-hidden />
+                  </span>
+                  <span>
+                    <span className="block text-[14.5px] font-bold text-ink">Par mot clé</span>
+                    <span className="block text-[12.5px] text-muted mt-0.5">
+                      Un nom, une activité, un lieu…
+                    </span>
+                  </span>
+                </button>
+                <button
+                  onClick={() => setHomeMode("categories")}
+                  className="flex items-center gap-3.5 rounded-2xl border border-border bg-surface px-4 py-4 text-left shadow-card active:scale-[.98] transition-transform"
+                >
+                  <span
+                    className="shrink-0 w-11 h-11 rounded-full flex items-center justify-center"
+                    style={{ background: "var(--primary-tint)", color: "var(--primary-deep)" }}
+                  >
+                    <SquaresFour size={20} weight="bold" aria-hidden />
+                  </span>
+                  <span>
+                    <span className="block text-[14.5px] font-bold text-ink">Par catégorie</span>
+                    <span className="block text-[12.5px] text-muted mt-0.5">
+                      Restaurants, activités, sorties…
+                    </span>
+                  </span>
+                </button>
               </div>
             </div>
           )}
