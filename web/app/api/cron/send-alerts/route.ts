@@ -5,8 +5,21 @@ import { createServiceRoleClient } from "@/lib/supabase/server";
 import type { Business } from "@/lib/types";
 import type { EventSearchCriteria, ListingSearchCriteria, SavedSearchType } from "@/lib/alerts/types";
 import { notifyUserAlertMatches, type AlertMatch } from "@/lib/alerts/notifyUser";
+import { SUBCATEGORIES } from "@/data/categories";
+import { compareByEventDate } from "@/lib/events";
 
 const BUSINESSES_PATH = path.join(process.cwd(), "data", "businesses.json");
+
+/** Libellé de thématique agenda (ex. "evenements-sportifs" → "Événements sportifs"),
+ *  pour regrouper les événements par rubrique dans l'e-mail d'alerte. */
+const EVENT_THEME_LABEL: Record<string, string> = Object.fromEntries(
+  (SUBCATEGORIES["agenda"] ?? []).map((t) => [t.key, t.label])
+);
+
+function themeLabelFor(b: Business): string | undefined {
+  const key = (b.themes ?? [])[0];
+  return key ? EVENT_THEME_LABEL[key] : undefined;
+}
 
 type SavedSearchRow = {
   id: number;
@@ -91,12 +104,17 @@ async function matchEvents(
     return d >= 0 && d <= 7;
   });
 
-  const toAlertMatch = (b: Business): AlertMatch => ({ title: b.name, subtitle: b.period ?? b.eventPeriod });
+  const toAlertMatch = (b: Business): AlertMatch => ({
+    title: b.name,
+    href: `/?open=${b.id}`,
+    subtitle: b.period ?? b.eventPeriod,
+    theme: themeLabelFor(b),
+  });
 
   return {
-    alertMatches: newMatches.map(toAlertMatch),
+    alertMatches: [...newMatches].sort((a, b) => compareByEventDate(a, b, today)).map(toAlertMatch),
     newIds: [...newIds],
-    reminderMatches: reminderMatches.map(toAlertMatch),
+    reminderMatches: [...reminderMatches].sort((a, b) => compareByEventDate(a, b, today)).map(toAlertMatch),
     newRemindedIds: reminderMatches.map((b) => b.id),
   };
 }
