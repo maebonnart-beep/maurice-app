@@ -1872,7 +1872,7 @@ export default function DirectoryClient({
         }
       >
         {showHome && homeMode === "menu" ? (
-          <div className="relative max-w-[820px] lg:max-w-[960px] mx-auto">
+          <div className="relative max-w-[820px] lg:max-w-[1100px] mx-auto">
             {/* Bandeau d'accueil : logo + paysage zoomés (cf. Logo light tags),
                 rognés jusqu'au bas de la pastille de recherche bakée dans
                 l'image d'origine. La bulle de recherche est une simple
@@ -2012,7 +2012,7 @@ export default function DirectoryClient({
               cliente. Remplace l'ancien menu à 4 tuiles (la tuile « Recherche »
               a été retirée : la recherche vit désormais ici en permanence). */}
           {showHome && homeMode === "menu" && (
-            <div className="max-w-[720px] lg:max-w-[960px] mx-auto pb-6">
+            <div className="max-w-[720px] lg:max-w-[1100px] mx-auto pb-6">
               {/* La recherche vit désormais dans le bandeau d'accueil lui-même
                   (pastille peinte dans l'image + bouton calé dessus, cf.
                   header) : plus de carte séparée ici. */}
@@ -2043,7 +2043,7 @@ export default function DirectoryClient({
                 className="rounded-[24px] border border-border px-3 py-3 shadow-sm"
                 style={{ background: "linear-gradient(180deg, color-mix(in srgb, var(--primary) 12%, var(--surface)) 0%, color-mix(in srgb, var(--primary) 4%, var(--surface)) 100%)" }}
               >
-              <div className="flex items-start gap-3 overflow-x-auto pt-2 pb-2 -mx-3 px-3 text-left [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+              <div className="flex items-start gap-3 overflow-x-auto pt-2 pb-2 -mx-3 px-3 text-left [scrollbar-width:none] [&::-webkit-scrollbar]:hidden lg:flex-wrap lg:justify-center lg:overflow-visible lg:gap-x-8">
                 {homeTopCategories.map(({ category: c }) => {
                   const mascot = mascotFor(c.key);
                   const CIcon = iconForKey(c.key);
