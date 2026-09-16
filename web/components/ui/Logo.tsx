@@ -3,22 +3,46 @@
  * « Koté / MORIS » en serif, empilé et centré sous le poulpe. Le poulpe reprend les
  * couleurs de la marque ; sur le bandeau teal, le wordmark passe en clair + accent.
  */
-export function Logo({ size = 96, light = false }: { size?: number; light?: boolean }) {
+export function Logo({
+  size = 96,
+  light = false,
+  tags = false,
+}: {
+  size?: number;
+  light?: boolean;
+  /** Bandeau complet (illustration + panneau balise avec les usages clés de
+   *  l'appli) réservé à l'accueil. Ailleurs (Mon compte, Seconde main, écran
+   *  de résultats) : bandeau compact dédié, sans le panneau. */
+  tags?: boolean;
+}) {
   if (light) {
-    // Bandeau clair fourni par la cliente (poulpe + wordmark + baseline),
-    // image unique — calée en largeur pour occuper l'espace blanc du
-    // header plutôt qu'écrasée en hauteur (cf. conteneur dans DirectoryClient.tsx).
+    // Bandeau clair — 2 images distinctes fournies par la cliente (2026-09-16),
+    // un seul style illustré cohérent pour les deux : version complète pour
+    // l'accueil (poulpe + paysage + panneau balise listant favoris/vente entre
+    // particuliers/alertes/partage), version compacte pour les autres écrans
+    // (même paysage, rognée, sans panneau). Chacune déjà au bon cadrage —
+    // plus besoin de recadrage CSS forcé comme sur l'ancienne version.
+    if (!tags) {
+      return (
+        <div className="w-full">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/bandeau-kotemoris-clair-v7-notags.webp"
+            alt="Koté Moris — les adresses de l'île Maurice"
+            className="block w-full h-auto"
+          />
+        </div>
+      );
+    }
     return (
-      // eslint-disable-next-line @next/next/no-img-element
-      <img
-        src="/bandeau-kotemoris-clair-v2.webp"
-        alt="Koté Moris — les adresses de Maurice"
-        className="block w-full h-full object-contain"
-        style={{
-          WebkitMaskImage: "linear-gradient(to bottom, black 92%, transparent 100%)",
-          maskImage: "linear-gradient(to bottom, black 92%, transparent 100%)",
-        }}
-      />
+      <div className="w-full">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/bandeau-kotemoris-clair-v7.webp"
+          alt="Koté Moris — les adresses de l'île Maurice réunies sur une seule application"
+          className="block w-full h-auto"
+        />
+      </div>
     );
   }
   return (

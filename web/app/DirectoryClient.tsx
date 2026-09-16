@@ -55,6 +55,11 @@ import { createClient as createSupabaseBrowserClient } from "@/lib/supabase/clie
 import { PREMIUM_PRICE_LABEL, MAX_ACTIVE_LISTINGS, listingPhotoUrl } from "@/lib/marketplace/constants";
 import type { Listing } from "@/lib/marketplace/types";
 import { COUP_DE_COEUR_COLOR } from "@/components/ui/Badge";
+
+// Couleur dédiée au bandeau « Adresses kids friendly » (accueil), distincte du
+// rose des coups de cœur et de l'orange « à tester » pour que les deux rangées
+// éditoriales se distinguent davantage dans le flux de la page d'accueil.
+const KIDS_FRIENDLY_COLOR = "#2f9bd6";
 import { FilterDropdown, type DropdownOption } from "@/components/ui/FilterDropdown";
 import { AddAddressForm } from "@/components/ui/AddAddressForm";
 import { iconForKey, mascotFor, prefIconFor, categoryTint, MapPin } from "@/lib/icons";
@@ -113,6 +118,10 @@ const BADGE_META: { key: string; label: string; emoji: string }[] = [
   { key: "partenaire", label: "Partenaire", emoji: "⭐" },
   { key: "kids-friendly", label: "Kids friendly", emoji: "🧒" },
 ];
+// « selection » et « kids-friendly » ont un visuel de badge dédié (image ronde)
+// affiché en chip cliquable dans la barre de filtres plutôt que dans le menu
+// déroulant « Sélection » — cf. imageBadges dans le composant.
+const IMAGE_BADGE_KEYS = new Set(["selection", "kids-friendly"]);
 
 // Accueil → bandeau « Seconde main » : visuels d'illustration (objets génériques, Pexels
 // libre de droits) utilisés tant qu'il n'y a pas assez de vraies annonces avec photo.
@@ -721,6 +730,18 @@ export default function DirectoryClient({
     resetFacets(); // les facettes ne valent que pour la rubrique courante
     // On conserve homeCategory : le bouton « Retour » de la page de résultats
     // ramène ainsi à la liste de rubriques de la bonne catégorie.
+  }
+
+  // Chip de catégorie mobile (« Autour de moi »/« Voir tout ») : dropdown de
+  // sous-rubriques (ex. Restaurants, Cafés & bars… dans « Manger & boire »)
+  // pour affiner sans quitter la liste, en multi-sélection (OU entre elles).
+  function toggleActiveTheme(key: string) {
+    setActiveThemes((prev) => {
+      const next = new Set(prev);
+      if (next.has(key)) next.delete(key);
+      else next.add(key);
+      return next;
+    });
   }
 
   // Case à cocher d'une rubrique dans la liste (indépendant du tap direct
@@ -1463,17 +1484,6 @@ export default function DirectoryClient({
         <MapPin size={14} weight={nearMe ? "fill" : "regular"} aria-hidden />
         {geoStatus === "loading" ? "Localisation…" : "Autour de moi"}
       </button>
-      <button
-        onClick={() => setOpenNow((v) => !v)}
-        aria-pressed={openNow}
-        title="Ouvert maintenant"
-        className={`flex items-center gap-1 rounded-full px-2.5 py-1 text-[12.5px] font-semibold shrink-0 transition-colors ${
-          openNow ? "bg-primary text-white" : "bg-surface-2 text-ink"
-        }`}
-      >
-        <Clock size={14} weight={openNow ? "fill" : "regular"} aria-hidden />
-        Ouvert maintenant
-      </button>
       <div ref={zonePickerRef} className="relative min-w-0 shrink-0">
         <button
           onClick={() => setZonePickerOpen((o) => !o)}
@@ -1521,6 +1531,28 @@ export default function DirectoryClient({
       </div>
     </div>
   );
+  // « Ouvert maintenant » : sorti de la rangée défilante ci-dessus (il y était
+  // tronqué sur mobile, faute de place à côté d'« Autour de moi » + la zone).
+  // Traité en bandeau à part entière (fond teinté accent même au repos, coins
+  // moins arrondis qu'une pill, police en gras) pour bien le distinguer visuellement
+  // des chips teal « Autour de moi »/zone au-dessus, sur sa propre ligne pleine
+  // largeur pour rester entièrement lisible.
+  const openNowControl = (
+    <button
+      onClick={() => setOpenNow((v) => !v)}
+      aria-pressed={openNow}
+      title="Ouvert maintenant"
+      className="w-full flex items-center gap-2 rounded-xl px-3 py-2 text-[13px] font-bold border-2 transition-colors"
+      style={
+        openNow
+          ? { background: "var(--accent)", borderColor: "var(--accent)", color: "var(--on-accent)" }
+          : { background: "color-mix(in srgb, var(--accent) 14%, var(--surface))", borderColor: "color-mix(in srgb, var(--accent) 45%, transparent)", color: "var(--ink)" }
+      }
+    >
+      <Clock size={16} weight={openNow ? "fill" : "regular"} aria-hidden />
+      Ouvert maintenant
+    </button>
+  );
 
   // Barre de navigation principale (5 onglets) fixée tout en bas de l'écran :
   // Accueil / Recherche / Autour de moi / Listes / Mon compte.
@@ -1548,6 +1580,7 @@ export default function DirectoryClient({
       style={{
         paddingBottom: "env(safe-area-inset-bottom)",
         background: "linear-gradient(180deg, var(--band) 0%, var(--band-deep) 100%)",
+        boxShadow: "0 -2px 14px -8px rgba(13, 43, 42, 0.18)",
       }}
     >
       <div className="max-w-[640px] mx-auto grid grid-cols-5 items-end px-2 pt-1.5 pb-1.5">
@@ -1638,14 +1671,26 @@ export default function DirectoryClient({
       ).map((p) => ({ key: p.key, label: `${p.symbol} ${p.label}`, count: facetCounts.price[p.key] }))
     : [];
 
+  // « selection » (coup de cœur/reco Koté Moris) et « kids-friendly » ont leur
+  // propre chip image (voir imageBadges ci-dessous), plus visible et cliquable
+  // directement qu'enfoui dans le menu déroulant « Sélection » — donc exclus
+  // d'ici pour ne pas les dupliquer.
   const badgeOptions: DropdownOption[] = BADGE_META.filter(
-    (m) => (facetCounts.badge[m.key] || 0) > 0
+    (m) => !IMAGE_BADGE_KEYS.has(m.key) && (facetCounts.badge[m.key] || 0) > 0
   ).map((m) => ({
     key: m.key,
     label: m.label,
     count: facetCounts.badge[m.key],
     icon: <span aria-hidden>{m.emoji}</span>,
   }));
+
+  // « shortLabel » : affiché dans la chip (longueur proche entre les deux
+  // badges pour un rendu à largeur égale sans troncature) ; « label » complet
+  // gardé pour le title/tooltip.
+  const imageBadges: { key: string; img: string; label: string; shortLabel: string }[] = [
+    { key: "selection", img: "/badge-selection.png", label: "Recommandé Koté Moris", shortLabel: "Recommandé" },
+    { key: "kids-friendly", img: "/badge-kids.png", label: "Kids friendly", shortLabel: "Kids friendly" },
+  ].filter((m) => (facetCounts.badge[m.key] || 0) > 0);
 
   const hasFacets = groupOptionsList.length > 0 || priceOptions.length > 0 || badgeOptions.length > 0;
   // URL de l'alerte "cette recherche" pour l'agenda : thèmes (rubriques agenda
@@ -1658,6 +1703,32 @@ export default function DirectoryClient({
     if (filters.length > 0) params.set("filters", filters.join(","));
     return `/mon-compte/alertes?${params.toString()}`;
   }, [activeThemes, facetGroups]);
+  // Rangée dédiée aux badges image (Recommandé / Kids friendly) : largeur
+  // égale entre les deux boutons (flex-1 + texte centré) plutôt qu'une largeur
+  // qui suit la longueur du libellé, et séparée de la rangée des menus
+  // déroulants (Cuisine, Ambiance, Prix…) pour rester bien lisible.
+  const imageBadgesRow = imageBadges.length > 0 ? (
+    <div className="mb-2 flex items-stretch gap-2">
+      {imageBadges.map((m) => {
+        const isActive = facetBadges.has(m.key);
+        return (
+          <button
+            key={m.key}
+            onClick={() => toggleInSet(setFacetBadges, m.key)}
+            aria-pressed={isActive}
+            title={m.label}
+            className={`flex-1 min-w-0 flex items-center justify-center gap-1.5 rounded-full pl-1 pr-2.5 py-1 text-[12.5px] font-semibold transition-colors ${
+              isActive ? "bg-primary text-white" : "bg-surface-2 text-ink"
+            }`}
+          >
+            <img src={m.img} alt="" aria-hidden className="h-6 w-6 rounded-full shrink-0" />
+            <span className="truncate">{m.shortLabel}</span>
+          </button>
+        );
+      })}
+    </div>
+  ) : null;
+
   const restoFilterBar = (activeRubrique || agendaBrowseAll) && hasFacets ? (
     <div className="mb-3 border-b border-border pb-3 flex items-center gap-2 overflow-x-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
       {active === "agenda" && (
@@ -1718,37 +1789,94 @@ export default function DirectoryClient({
         className={`relative z-30 overflow-hidden ${
           showHome && homeMode === "menu"
             ? "bg-bg border-b border-transparent"
-            : "bg-surface border-b border-border shadow-sm"
+            : mobileTiles
+              ? "bg-surface border-b border-border shadow-sm"
+              : "border-b border-transparent shadow-sm"
         }`}
+        style={!showHome || homeMode !== "menu" ? (mobileTiles ? undefined : { background: "linear-gradient(120deg, #0d4a47 0%, #146b66 100%)" }) : undefined}
       >
         {showHome && homeMode === "menu" ? (
-          <div className="relative pb-3">
-            <button
-              onClick={goHome}
-              aria-label="Retour à l'accueil"
-              className="block w-full aspect-[864/281] hover:opacity-90 active:scale-[.98] transition"
-            >
-              <Logo light />
-            </button>
+          <div className="relative max-w-[820px] mx-auto pb-3">
+            {/* Bandeau d'accueil complet (illustration + panneau balise listant
+                partage/favoris/listes/vente entre particuliers/alertes) : un
+                seul visuel illustré cohérent, fourni par la cliente
+                (2026-09-16) — le panneau y est décoratif, les vrais points
+                d'accès rapides restent Mon compte + la barre de navigation. */}
+            <div className="w-full rounded-2xl overflow-hidden">
+              <Logo light tags />
+            </div>
           </div>
-        ) : (
+        ) : mobileTiles ? (
           <button
             onClick={goHome}
             aria-label="Retour à l'accueil"
-            className="block relative w-full aspect-[864/281] hover:opacity-90 active:scale-[.98] transition"
+            className="block relative w-full max-w-[820px] mx-auto rounded-2xl overflow-hidden hover:opacity-90 active:scale-[.98] transition"
           >
             <Logo light />
           </button>
+        ) : (
+          // Sur l'écran de résultats (liste/carte + barre de filtres), le grand
+          // bandeau image prend une place précieuse alors que la flèche
+          // « retour » et le bandeau « Autour de moi » juste en dessous sont
+          // déjà à l'étroit sur mobile. Header compact ici, une seule ligne :
+          // flèche retour + recherche (le nom « Koté Moris » a été retiré,
+          // il n'apportait rien ici et prenait de la place). Même dégradé
+          // teal que le bandeau de recherche de l'accueil pour une identité
+          // cohérente — sans le palmier détouré, qui rendait mal (rectangle
+          // visible) sur ce bandeau trop compact pour lui.
+          <div className="relative flex items-center gap-2 px-4 lg:px-5 py-3">
+            <button
+              onClick={goBackFromResults}
+              disabled={!canGoBack}
+              aria-label="Retour"
+              className={`relative shrink-0 w-8 h-8 -ml-1 rounded-full flex items-center justify-center active:scale-[.95] transition-transform ${
+                canGoBack ? "text-white" : "text-white/40"
+              }`}
+            >
+              <ArrowLeft size={19} weight="bold" aria-hidden />
+            </button>
+            <div className="relative flex-1 min-w-0">
+              {searchOpen ? (
+                <SearchInput
+                  value={query}
+                  onChange={setQuery}
+                  placeholder="Rechercher une activité, un lieu, un nom…"
+                  autoFocus={focusSearchOnMount}
+                />
+              ) : (
+                <button
+                  onClick={focusSearch}
+                  aria-label="Rechercher"
+                  className="w-9 h-9 rounded-full flex items-center justify-center bg-white/15 text-white active:scale-[.95] transition-transform"
+                >
+                  <MagnifyingGlass size={18} weight="bold" aria-hidden />
+                </button>
+              )}
+            </div>
+          </div>
         )}
-        {showHeaderSearch && (
+        {showHeaderSearch && mobileTiles && (
           <div className="relative max-w-[1400px] mx-auto px-5 pb-2.5">
             <div className="max-w-[640px]">
-              <SearchInput
-                value={query}
-                onChange={setQuery}
-                placeholder="Rechercher une activité, un lieu, un nom…"
-                autoFocus={focusSearchOnMount}
-              />
+              {searchOpen ? (
+                <SearchInput
+                  value={query}
+                  onChange={setQuery}
+                  placeholder="Rechercher une activité, un lieu, un nom…"
+                  autoFocus={focusSearchOnMount}
+                />
+              ) : (
+                // « Autour de moi »/« Voir tout » sans recherche explicite : juste
+                // la loupe, pour ne pas déployer un encart de texte qui prend de
+                // la place tant qu'on n'a pas vraiment l'intention de chercher.
+                <button
+                  onClick={focusSearch}
+                  aria-label="Rechercher"
+                  className="w-9 h-9 rounded-full flex items-center justify-center bg-surface-2 text-ink active:scale-[.95] transition-transform"
+                >
+                  <MagnifyingGlass size={18} weight="bold" aria-hidden />
+                </button>
+              )}
             </div>
           </div>
         )}
@@ -1770,29 +1898,32 @@ export default function DirectoryClient({
             <div className="max-w-[720px] mx-auto pb-6">
               <button
                 onClick={openSearchChoice}
-                className="relative w-full mb-6 rounded-2xl overflow-hidden text-left shadow-card active:scale-[.99] transition-transform"
+                className="relative block w-full mb-6 rounded-2xl overflow-hidden text-left shadow-card active:scale-[.99] transition-transform"
                 style={{ background: "linear-gradient(135deg, #0d4a47 0%, #146b66 65%)" }}
               >
-                <div className="relative z-10 p-3.5 pr-[92px]">
-                  <p className="text-white text-[14px] font-bold leading-tight">Trouve ta prochaine adresse</p>
-                  <p className="text-white/80 text-[11.5px] mt-0.5 leading-snug">
+                {/* Palmier détouré (teinté teal) posé à droite ; le texte
+                    reste en direct — bien plus grand que dans l'image bakée
+                    d'origine, toujours lisible quelle que soit la largeur. */}
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/bandeau-recherche-palmier.webp"
+                  alt=""
+                  aria-hidden
+                  className="pointer-events-none absolute inset-y-0 right-0 w-[38%] h-full object-cover opacity-90"
+                />
+                <div className="relative z-10 p-3.5 sm:p-4 pr-[92px]">
+                  <p className="text-white text-[15px] sm:text-[17px] font-bold leading-tight">Trouve ta prochaine adresse</p>
+                  <p className="text-white/85 text-[11.5px] sm:text-[12.5px] mt-0.5 leading-snug">
                     Restaurants, activités, sorties, bons plans à Maurice…
                   </p>
                   <span
-                    className="mt-2.5 inline-flex items-center gap-2 h-[34px] px-4 rounded-pill bg-white text-[13px] font-semibold"
+                    className="mt-2.5 inline-flex items-center gap-2 h-[36px] px-4 rounded-pill bg-white text-[13px] font-semibold"
                     style={{ color: "#0d4a47" }}
                   >
                     <MagnifyingGlass size={14} weight="bold" aria-hidden />
                     Rechercher
                   </span>
                 </div>
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src="/logo-octopus.png"
-                  alt=""
-                  aria-hidden
-                  className="pointer-events-none absolute -right-5 -bottom-6 w-[110px] h-[110px] object-contain opacity-25"
-                />
               </button>
 
               {/* Raccourci vers ses adresses enregistrées (favoris/à tester), en
@@ -1874,11 +2005,17 @@ export default function DirectoryClient({
               )}
 
               {coupsDeCoeur.length > 0 && (
-                <>
-                  <div className="flex items-center justify-between mb-2.5">
-                    <div className="flex items-center gap-2">
+                <div
+                  className="rounded-2xl p-3 mb-7"
+                  style={{
+                    background: `color-mix(in srgb, ${COUP_DE_COEUR_COLOR} 8%, var(--surface))`,
+                    border: `1px solid color-mix(in srgb, ${COUP_DE_COEUR_COLOR} 20%, var(--border))`,
+                  }}
+                >
+                  <div className="flex items-center justify-between mb-2">
+                    <div className="flex items-center gap-2.5">
                       {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img src="/badge-selection.png" alt="" aria-hidden className="h-9 w-9 shrink-0" />
+                      <img src="/badge-selection.png" alt="" aria-hidden className="h-14 w-14 shrink-0" />
                       <h2 className="text-[16px] font-bold text-ink">Les coups de cœur de Koté Moris</h2>
                     </div>
                     <button
@@ -1888,7 +2025,7 @@ export default function DirectoryClient({
                       Voir tout ›
                     </button>
                   </div>
-                  <div className="flex gap-3 overflow-x-auto pb-1 -mx-4 px-4 mb-7 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+                  <div className="flex gap-3 overflow-x-auto pb-1 -mx-3 px-3 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
                     {coupsDeCoeur.slice(0, 12).map((b) => (
                       <div
                         key={b.id}
@@ -1926,7 +2063,7 @@ export default function DirectoryClient({
                       </div>
                     ))}
                   </div>
-                </>
+                </div>
               )}
 
               <div className="flex items-center justify-between mb-2.5">
@@ -2074,11 +2211,17 @@ export default function DirectoryClient({
               </div>
 
               {kidsFriendly.length > 0 && (
-                <>
-                  <div className="flex items-center justify-between mt-7 mb-2.5">
-                    <div className="flex items-center gap-2">
+                <div
+                  className="rounded-2xl p-3 mt-7"
+                  style={{
+                    background: `color-mix(in srgb, ${KIDS_FRIENDLY_COLOR} 8%, var(--surface))`,
+                    border: `1px solid color-mix(in srgb, ${KIDS_FRIENDLY_COLOR} 20%, var(--border))`,
+                  }}
+                >
+                  <div className="flex items-center justify-between mb-2">
+                    <div className="flex items-center gap-2.5">
                       {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img src="/badge-kids.png" alt="" aria-hidden className="h-9 w-9 shrink-0" />
+                      <img src="/badge-kids.png" alt="" aria-hidden className="h-14 w-14 shrink-0" />
                       <h2 className="text-[16px] font-bold text-ink">Adresses kids friendly</h2>
                     </div>
                     <button
@@ -2095,7 +2238,7 @@ export default function DirectoryClient({
                       Voir tout ›
                     </button>
                   </div>
-                  <div className="flex gap-3 overflow-x-auto pb-1 -mx-4 px-4 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+                  <div className="flex gap-3 overflow-x-auto pb-1 -mx-3 px-3 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
                     {kidsFriendly.slice(0, 12).map((b) => (
                       <div
                         key={b.id}
@@ -2133,7 +2276,7 @@ export default function DirectoryClient({
                       </div>
                     ))}
                   </div>
-                </>
+                </div>
               )}
 
               <Link
@@ -3440,20 +3583,12 @@ export default function DirectoryClient({
               sur la recherche. */}
           {!mobileTiles && (
             <>
-          {/* Barre de résultats : retour + « Autour de moi » / zone + bascule
-              liste/carte, tenue sur une seule ligne (bande réduite) pour
-              laisser plus de place aux fiches en dessous. */}
+          {/* Barre de résultats : « Autour de moi » / zone + bascule liste/carte,
+              tenue sur une seule ligne (bande réduite) pour laisser plus de
+              place aux fiches en dessous. La flèche « retour » vit désormais
+              dans le header compact au-dessus (cf. mobileTiles ? ... : ...),
+              ce qui rend de la largeur à cette rangée. */}
           <div className="sticky top-0 z-20 -mx-4 lg:-mx-5 px-4 lg:px-5 flex items-center gap-2 py-1.5 border-b border-border mb-3" style={{ background: "var(--bg)" }}>
-            <button
-              onClick={goBackFromResults}
-              disabled={!canGoBack}
-              aria-label="Retour"
-              className={`shrink-0 w-7 h-7 -ml-1 rounded-full flex items-center justify-center active:scale-[.95] transition-transform ${
-                canGoBack ? "text-ink" : "text-muted/40"
-              }`}
-            >
-              <ArrowLeft size={17} weight="bold" aria-hidden />
-            </button>
             <button
               onClick={() => {
                 if (resultsView === "carte") {
@@ -3474,6 +3609,10 @@ export default function DirectoryClient({
             </button>
             {zoneControls}
           </div>
+
+          {/* Ligne dédiée pour « Ouvert maintenant » : évite qu'il soit
+              tronqué dans la rangée défilante ci-dessus sur petit écran. */}
+          <div className="-mx-4 lg:-mx-5 px-4 lg:px-5 pb-2">{openNowControl}</div>
 
           {/* Catégories — accessibles en mobile dans les résultats/la carte,
               uniquement en recherche/« voir tout » (browseAll) : quand on
@@ -3508,6 +3647,20 @@ export default function DirectoryClient({
                   </button>
                 );
               })}
+              {active !== "all" && (SUBCATEGORIES[active as keyof typeof SUBCATEGORIES]?.length ?? 0) > 1 && (
+                <FilterDropdown
+                  label="Sous-catégorie"
+                  options={(SUBCATEGORIES[active as keyof typeof SUBCATEGORIES] ?? []).map((s) => ({
+                    key: s.key,
+                    label: s.label,
+                    count: themeCountsAll[s.key] || 0,
+                    icon: <span aria-hidden>{s.emoji}</span>,
+                  }))}
+                  selected={activeThemes}
+                  onToggle={toggleActiveTheme}
+                  onClear={() => setActiveThemes(new Set())}
+                />
+              )}
             </div>
           )}
 
@@ -3538,6 +3691,7 @@ export default function DirectoryClient({
             </div>
           ) : (
             <>
+              {imageBadgesRow}
               {restoFilterBar}
 
               <div className="lg:gap-4 lg:h-[calc(100vh-190px)] lg:flex">
