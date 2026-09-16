@@ -1389,8 +1389,55 @@ export default function DirectoryClient({
     );
   }
 
+  // Le même calcul sert à la fois à la barre d'onglets mobile (tout en bas
+  // de l'écran) et à la nav desktop équivalente en haut de la sidebar : sur
+  // desktop, la barre d'onglets mobile est masquée (lg:hidden), donc Recherche/
+  // Autour de moi/Listes/Mon compte doivent rester atteignables autrement.
+  const activeTab: "accueil" | "recherche" | "listes" | "profil" | "autre" = searchOpen || homeMode === "recherche"
+    ? "recherche"
+    : homeMode === "listes"
+      ? "listes"
+      : homeMode === "profil"
+        ? "profil"
+        : showHome && homeMode === "menu"
+          ? "accueil"
+          : "autre";
+
+  const desktopNavItems: { key: typeof activeTab; label: string; icon: Icon; onClick: () => void }[] = [
+    { key: "accueil", label: "Accueil", icon: House, onClick: goHome },
+    { key: "recherche", label: "Recherche", icon: MagnifyingGlass, onClick: openSearchChoice },
+    {
+      key: "autre",
+      label: "Autour de moi",
+      icon: MapPin,
+      onClick: () => { toggleNearMe(); window.scrollTo({ top: 0, behavior: "smooth" }); },
+    },
+    { key: "listes", label: "Listes", icon: Star, onClick: () => leaveResults("listes") },
+    { key: "profil", label: "Mon compte", icon: UserCircle, onClick: () => leaveResults("profil") },
+  ];
+
   const sidebarContent = (
     <>
+      {/* Nav desktop (équivalent de la barre d'onglets mobile, masquée en
+          lg:hidden) : Accueil/Recherche/Autour de moi/Listes/Mon compte. */}
+      <div className="p-2 border-b border-border flex flex-col gap-0.5">
+        {desktopNavItems.map(({ key, label, icon: ItemIcon, onClick }) => {
+          const isActive = key === "autre" ? nearMe : activeTab === key;
+          return (
+            <button
+              key={key}
+              onClick={onClick}
+              aria-pressed={isActive}
+              className={`w-full flex items-center gap-2.5 px-3 py-2 rounded-lg text-[13.5px] font-semibold text-left transition-colors ${
+                isActive ? "bg-primary text-white" : "text-ink hover:bg-surface-2"
+              }`}
+            >
+              <ItemIcon size={18} weight={isActive ? "fill" : "regular"} aria-hidden />
+              {label}
+            </button>
+          );
+        })}
+      </div>
       {/* Zone : colonne verticale (activable dans la sidebar / le tiroir) */}
       <div className="px-3 pt-3 pb-2.5 border-b border-border">
         <div className="text-[11px] font-bold uppercase tracking-wide text-muted/80 mb-1.5 px-1">
@@ -1594,19 +1641,10 @@ export default function DirectoryClient({
   // « Carte » ont été retirés en amont : les catégories sont déjà en
   // permanence sur l'accueil, et la carte reste accessible via le bandeau
   // « Voir la carte » et le bouton liste/carte des résultats.
-  const activeTab: "accueil" | "recherche" | "listes" | "profil" | "autre" = searchOpen || homeMode === "recherche"
-    ? "recherche"
-    : homeMode === "listes"
-      ? "listes"
-      : homeMode === "profil"
-        ? "profil"
-        : showHome && homeMode === "menu"
-          ? "accueil"
-          : "autre";
   const tabBar = (
     <nav
       aria-label="Navigation principale"
-      className="fixed bottom-0 inset-x-0 z-40 border-t border-transparent"
+      className="lg:hidden fixed bottom-0 inset-x-0 z-40 border-t border-transparent"
       style={{
         paddingBottom: "env(safe-area-inset-bottom)",
         background: "linear-gradient(180deg, #146b66 0%, #0d4a47 100%)",
@@ -1834,7 +1872,7 @@ export default function DirectoryClient({
         }
       >
         {showHome && homeMode === "menu" ? (
-          <div className="relative max-w-[820px] mx-auto">
+          <div className="relative max-w-[820px] lg:max-w-[960px] mx-auto">
             {/* Bandeau d'accueil : logo + paysage zoomés (cf. Logo light tags),
                 rognés jusqu'au bas de la pastille de recherche bakée dans
                 l'image d'origine. La bulle de recherche est une simple
@@ -1967,14 +2005,14 @@ export default function DirectoryClient({
           {sidebarContent}
         </aside>
 
-        <div className="flex-1 min-w-0 px-4 lg:px-5 py-3 pb-24">
+        <div className="flex-1 min-w-0 px-4 lg:px-5 py-3 pb-24 lg:pb-8">
           {/* Accueil : barre de recherche (point d'entrée vers le mode
               recherche/résultats), rangée de catégories, coups de cœur de la
               rédaction et bandeau carte — inspiré du rendu fourni par la
               cliente. Remplace l'ancien menu à 4 tuiles (la tuile « Recherche »
               a été retirée : la recherche vit désormais ici en permanence). */}
           {showHome && homeMode === "menu" && (
-            <div className="max-w-[720px] mx-auto pb-6">
+            <div className="max-w-[720px] lg:max-w-[960px] mx-auto pb-6">
               {/* La recherche vit désormais dans le bandeau d'accueil lui-même
                   (pastille peinte dans l'image + bouton calé dessus, cf.
                   header) : plus de carte séparée ici. */}
