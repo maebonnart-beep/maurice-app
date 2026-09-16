@@ -1789,21 +1789,63 @@ export default function DirectoryClient({
         className={`relative z-30 overflow-hidden ${
           showHome && homeMode === "menu"
             ? "bg-bg border-b border-transparent"
-            : mobileTiles
+            : mobileTiles && homeMode !== "favoris"
               ? "bg-surface border-b border-border shadow-sm"
               : "border-b border-transparent shadow-sm"
         }`}
-        style={!showHome || homeMode !== "menu" ? (mobileTiles ? undefined : { background: "linear-gradient(120deg, #0d4a47 0%, #146b66 100%)" }) : undefined}
+        style={
+          !showHome || homeMode !== "menu"
+            ? mobileTiles && homeMode !== "favoris"
+              ? undefined
+              : { background: "linear-gradient(120deg, #0d4a47 0%, #146b66 100%)" }
+            : undefined
+        }
       >
         {showHome && homeMode === "menu" ? (
-          <div className="relative max-w-[820px] mx-auto pb-3">
-            {/* Bandeau d'accueil complet (illustration + panneau balise listant
-                partage/favoris/listes/vente entre particuliers/alertes) : un
-                seul visuel illustré cohérent, fourni par la cliente
-                (2026-09-16) — le panneau y est décoratif, les vrais points
-                d'accès rapides restent Mon compte + la barre de navigation. */}
-            <div className="w-full rounded-2xl overflow-hidden">
+          <div className="relative max-w-[820px] mx-auto">
+            {/* Bandeau d'accueil : logo + paysage, avec une pastille de
+                recherche intégrée au décor (peinte dans l'image, cf. Logo).
+                Le bouton ci-dessous est calé par coordonnées (% mesurés sur
+                l'image source, 1700×925) exactement sur cette pastille, pour
+                que le texte reste vivant/cliquable sans dupliquer de style. */}
+            <div className="relative w-full rounded-2xl overflow-hidden">
               <Logo light tags />
+              <button
+                onClick={openSearchChoice}
+                aria-label="Rechercher une activité, un lieu, un nom"
+                className="absolute flex flex-col justify-center items-center gap-0.5 sm:gap-1.5 text-center text-white active:opacity-80 transition-opacity overflow-hidden px-4 sm:px-6"
+                style={{ top: "70.5%", bottom: "9.8%", left: "4%", right: "4%" }}
+              >
+                <span className="text-[10px] sm:text-[14px] leading-tight font-semibold tracking-wide truncate">
+                  Trouve ta prochaine adresse
+                </span>
+                <span
+                  className="inline-flex items-center gap-1.5 h-[18px] sm:h-[34px] px-2.5 sm:px-4 rounded-pill bg-white text-[9.5px] sm:text-[13px] font-semibold shrink-0"
+                  style={{ color: "#0d4a47" }}
+                >
+                  <MagnifyingGlass size={10} weight="bold" className="shrink-0 sm:hidden" aria-hidden />
+                  <MagnifyingGlass size={14} weight="bold" className="hidden sm:block shrink-0" aria-hidden />
+                  Rechercher
+                </span>
+              </button>
+            </div>
+          </div>
+        ) : homeMode === "favoris" ? (
+          // Bandeau dédié « Mes adresses » (favoris/à tester/testé) : même
+          // dégradé teal que la pastille de recherche de l'accueil, pour
+          // rappeler ces couleurs plutôt que de réutiliser le bandeau image
+          // générique (qui n'a pas sa place ici, hors accueil).
+          <div className="relative flex items-center gap-3 px-4 lg:px-5 py-4 max-w-[820px] mx-auto">
+            <button
+              onClick={goHome}
+              aria-label="Retour à l'accueil"
+              className="shrink-0 w-8 h-8 -ml-1 rounded-full flex items-center justify-center text-white active:scale-[.95] transition-transform"
+            >
+              <ArrowLeft size={19} weight="bold" aria-hidden />
+            </button>
+            <div className="flex flex-col leading-tight">
+              <p className="m-0 text-white text-[17px] font-bold">Mes adresses</p>
+              <p className="m-0 text-white/75 text-[12px]">Favoris, à tester et testées</p>
             </div>
           </div>
         ) : mobileTiles ? (
@@ -1896,176 +1938,11 @@ export default function DirectoryClient({
               a été retirée : la recherche vit désormais ici en permanence). */}
           {showHome && homeMode === "menu" && (
             <div className="max-w-[720px] mx-auto pb-6">
-              <button
-                onClick={openSearchChoice}
-                className="relative block w-full mb-6 rounded-2xl overflow-hidden text-left shadow-card active:scale-[.99] transition-transform"
-                style={{ background: "linear-gradient(135deg, #0d4a47 0%, #146b66 65%)" }}
-              >
-                {/* Palmier détouré (teinté teal) posé à droite ; le texte
-                    reste en direct — bien plus grand que dans l'image bakée
-                    d'origine, toujours lisible quelle que soit la largeur. */}
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src="/bandeau-recherche-palmier.webp"
-                  alt=""
-                  aria-hidden
-                  className="pointer-events-none absolute inset-y-0 right-0 w-[38%] h-full object-cover opacity-90"
-                />
-                <div className="relative z-10 p-3.5 sm:p-4 pr-[92px]">
-                  <p className="text-white text-[15px] sm:text-[17px] font-bold leading-tight">Trouve ta prochaine adresse</p>
-                  <p className="text-white/85 text-[11.5px] sm:text-[12.5px] mt-0.5 leading-snug">
-                    Restaurants, activités, sorties, bons plans à Maurice…
-                  </p>
-                  <span
-                    className="mt-2.5 inline-flex items-center gap-2 h-[36px] px-4 rounded-pill bg-white text-[13px] font-semibold"
-                    style={{ color: "#0d4a47" }}
-                  >
-                    <MagnifyingGlass size={14} weight="bold" aria-hidden />
-                    Rechercher
-                  </span>
-                </div>
-              </button>
+              {/* La recherche vit désormais dans le bandeau d'accueil lui-même
+                  (pastille peinte dans l'image + bouton calé dessus, cf.
+                  header) : plus de carte séparée ici. */}
 
-              {/* Raccourci vers ses adresses enregistrées (favoris/à tester), en
-                  rappelant les icônes dédiées (cœur/drapeau) utilisées sur les fiches. */}
-              <div className="flex gap-2.5 mb-7">
-                <button
-                  onClick={() => { setHomeMode("favoris"); window.scrollTo({ top: 0, behavior: "smooth" }); }}
-                  className="flex-1 flex items-center gap-2.5 rounded-2xl border border-border p-3 active:scale-[.97] transition-transform"
-                  style={{ background: `color-mix(in srgb, ${COUP_DE_COEUR_COLOR} 10%, var(--surface))` }}
-                >
-                  <Heart size={20} weight="fill" aria-hidden style={{ color: COUP_DE_COEUR_COLOR }} />
-                  <span className="flex flex-col items-start leading-none">
-                    <span className="text-[15px] font-bold" style={{ color: COUP_DE_COEUR_COLOR }}>
-                      {favoriteBusinesses.length}
-                    </span>
-                    <span className="text-[11px] text-muted mt-0.5">Mes favoris</span>
-                  </span>
-                </button>
-                <button
-                  onClick={() => { setHomeMode("favoris"); window.scrollTo({ top: 0, behavior: "smooth" }); }}
-                  className="flex-1 flex items-center gap-2.5 rounded-2xl border border-border p-3 active:scale-[.97] transition-transform"
-                  style={{ background: "color-mix(in srgb, #f5a623 10%, var(--surface))" }}
-                >
-                  <Flag size={20} weight="fill" aria-hidden style={{ color: "#f5a623" }} />
-                  <span className="flex flex-col items-start leading-none">
-                    <span className="text-[15px] font-bold" style={{ color: "#f5a623" }}>
-                      {aTesterBusinesses.length}
-                    </span>
-                    <span className="text-[11px] text-muted mt-0.5">À tester</span>
-                  </span>
-                </button>
-              </div>
-
-              {newBusinesses.length > 0 && (
-                <>
-                  <div className="flex items-center gap-2 mb-2.5">
-                    <Sparkle size={20} weight="fill" className="text-primary-deep shrink-0" aria-hidden />
-                    <h2 className="text-[16px] font-bold text-ink">Nouveautés en avant-première</h2>
-                  </div>
-                  <div className="flex gap-3 overflow-x-auto pb-1 -mx-4 px-4 mb-7 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-                    {newBusinesses.slice(0, 12).map((b) => (
-                      <div
-                        key={b.id}
-                        role="button"
-                        tabIndex={0}
-                        onClick={() => selectFromCard(b.id)}
-                        onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") selectFromCard(b.id); }}
-                        className="relative shrink-0 w-[160px] rounded-card overflow-hidden bg-surface border border-border shadow-card text-left cursor-pointer active:scale-[.98] transition-transform"
-                      >
-                        <div className="relative h-[110px] bg-primary-tint flex items-center justify-center">
-                          {b.photoUrl ? (
-                            // eslint-disable-next-line @next/next/no-img-element
-                            <img src={b.photoUrl} alt="" className="absolute inset-0 w-full h-full object-cover" />
-                          ) : (
-                            (() => {
-                              const FallbackIcon = iconForKey(b.category);
-                              return FallbackIcon ? (
-                                <FallbackIcon size={30} weight="duotone" className="text-primary-deep opacity-50" aria-hidden />
-                              ) : null;
-                            })()
-                          )}
-                          <span
-                            className="absolute top-1.5 right-1.5 inline-flex items-center gap-1 px-1.5 py-1 rounded-full bg-surface/90 shadow-sm"
-                            onClick={(e) => e.stopPropagation()}
-                          >
-                            <FavoriteButton id={b.id} size={12.5} />
-                          </span>
-                        </div>
-                        <div className="p-2.5">
-                          <p className="text-[13px] font-bold text-ink truncate">{displayName(b.name)}</p>
-                          <p className="text-[11.5px] text-muted truncate">
-                            {CATEGORY_MAP[b.category].label} • {displayCity(b.address)}
-                          </p>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </>
-              )}
-
-              {coupsDeCoeur.length > 0 && (
-                <div
-                  className="rounded-2xl p-3 mb-7"
-                  style={{
-                    background: `color-mix(in srgb, ${COUP_DE_COEUR_COLOR} 8%, var(--surface))`,
-                    border: `1px solid color-mix(in srgb, ${COUP_DE_COEUR_COLOR} 20%, var(--border))`,
-                  }}
-                >
-                  <div className="flex items-center justify-between mb-2">
-                    <div className="flex items-center gap-2.5">
-                      {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img src="/badge-selection.png" alt="" aria-hidden className="h-14 w-14 shrink-0" />
-                      <h2 className="text-[16px] font-bold text-ink">Les coups de cœur de Koté Moris</h2>
-                    </div>
-                    <button
-                      onClick={() => { setBrowseAll(true); setFacetBadges(new Set(["selection"])); }}
-                      className="shrink-0 text-[13px] font-semibold text-primary-deep active:scale-[.98]"
-                    >
-                      Voir tout ›
-                    </button>
-                  </div>
-                  <div className="flex gap-3 overflow-x-auto pb-1 -mx-3 px-3 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-                    {coupsDeCoeur.slice(0, 12).map((b) => (
-                      <div
-                        key={b.id}
-                        role="button"
-                        tabIndex={0}
-                        onClick={() => selectFromCard(b.id)}
-                        onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") selectFromCard(b.id); }}
-                        className="relative shrink-0 w-[160px] rounded-card overflow-hidden bg-surface border border-border shadow-card text-left cursor-pointer active:scale-[.98] transition-transform"
-                      >
-                        <div className="relative h-[110px] bg-primary-tint flex items-center justify-center">
-                          {b.photoUrl ? (
-                            // eslint-disable-next-line @next/next/no-img-element
-                            <img src={b.photoUrl} alt="" className="absolute inset-0 w-full h-full object-cover" />
-                          ) : (
-                            (() => {
-                              const FallbackIcon = iconForKey(b.category);
-                              return FallbackIcon ? (
-                                <FallbackIcon size={30} weight="duotone" className="text-primary-deep opacity-50" aria-hidden />
-                              ) : null;
-                            })()
-                          )}
-                          <span
-                            className="absolute top-1.5 right-1.5 inline-flex items-center gap-1 px-1.5 py-1 rounded-full bg-surface/90 shadow-sm"
-                            onClick={(e) => e.stopPropagation()}
-                          >
-                            <FavoriteButton id={b.id} size={12.5} />
-                          </span>
-                        </div>
-                        <div className="p-2.5">
-                          <p className="text-[13px] font-bold text-ink truncate">{displayName(b.name)}</p>
-                          <p className="text-[11.5px] text-muted truncate">
-                            {CATEGORY_MAP[b.category].label} • {displayCity(b.address)}
-                          </p>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              )}
-
+              {/* Par catégorie remonté juste sous l'encart de recherche. */}
               <div className="flex items-center justify-between mb-2.5">
                 <h2 className="text-[16px] font-bold text-ink">
                   Par catégorie
@@ -2078,7 +1955,7 @@ export default function DirectoryClient({
                 </button>
               </div>
               <div
-                className="rounded-[32px] p-1.5 shadow-sm"
+                className="rounded-[32px] p-1.5 shadow-sm mb-7"
                 style={{
                   backgroundImage:
                     "url(/bandeau-palmiers-gauche.jpg), url(/bandeau-palmiers-droite.jpg), linear-gradient(180deg, #d3ecf6 0%, #e9f7f1 100%)",
@@ -2169,6 +2046,163 @@ export default function DirectoryClient({
               </div>
               </div>
               </div>
+
+              {/* Coups de cœur remontés juste sous l'encart de recherche : la
+                  sélection éditoriale est la première chose vue à l'accueil. */}
+              {coupsDeCoeur.length > 0 && (
+                <div
+                  className="rounded-2xl p-3 mb-7"
+                  style={{
+                    background: `color-mix(in srgb, ${COUP_DE_COEUR_COLOR} 8%, var(--surface))`,
+                    border: `1px solid color-mix(in srgb, ${COUP_DE_COEUR_COLOR} 20%, var(--border))`,
+                  }}
+                >
+                  <div className="flex items-center justify-between mb-2">
+                    <div className="flex items-center gap-2.5">
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img src="/badge-selection.png" alt="" aria-hidden className="h-14 w-14 shrink-0" />
+                      <h2 className="text-[16px] font-bold text-ink">Les coups de cœur de Koté Moris</h2>
+                    </div>
+                    <button
+                      onClick={() => { setBrowseAll(true); setFacetBadges(new Set(["selection"])); }}
+                      className="shrink-0 text-[13px] font-semibold text-primary-deep active:scale-[.98]"
+                    >
+                      Voir tout ›
+                    </button>
+                  </div>
+                  <div className="flex gap-3 overflow-x-auto pb-1 -mx-3 px-3 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+                    {coupsDeCoeur.slice(0, 12).map((b) => (
+                      <div
+                        key={b.id}
+                        role="button"
+                        tabIndex={0}
+                        onClick={() => selectFromCard(b.id)}
+                        onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") selectFromCard(b.id); }}
+                        className="relative shrink-0 w-[160px] rounded-card overflow-hidden bg-surface border border-border shadow-card text-left cursor-pointer active:scale-[.98] transition-transform"
+                      >
+                        <div className="relative h-[110px] bg-primary-tint flex items-center justify-center">
+                          {b.photoUrl ? (
+                            // eslint-disable-next-line @next/next/no-img-element
+                            <img src={b.photoUrl} alt="" className="absolute inset-0 w-full h-full object-cover" />
+                          ) : (
+                            (() => {
+                              const FallbackIcon = iconForKey(b.category);
+                              return FallbackIcon ? (
+                                <FallbackIcon size={30} weight="duotone" className="text-primary-deep opacity-50" aria-hidden />
+                              ) : null;
+                            })()
+                          )}
+                          <span
+                            className="absolute top-1.5 right-1.5 inline-flex items-center gap-1 px-1.5 py-1 rounded-full bg-surface/90 shadow-sm"
+                            onClick={(e) => e.stopPropagation()}
+                          >
+                            <FavoriteButton id={b.id} size={12.5} />
+                          </span>
+                        </div>
+                        <div className="p-2.5">
+                          <p className="text-[13px] font-bold text-ink truncate">{displayName(b.name)}</p>
+                          <p className="text-[11.5px] text-muted truncate">
+                            {CATEGORY_MAP[b.category].label} • {displayCity(b.address)}
+                          </p>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {/* Bandeau « Mes adresses » : même dégradé teal que l'en-tête dédié
+                  de l'écran favoris/à tester (cf. header, homeMode === "favoris"),
+                  pour identifier clairement ce raccourci comme menant au même
+                  endroit, plutôt que 2 chips isolées sans titre. */}
+              <div
+                className="rounded-2xl p-4 mt-4 mb-7"
+                style={{ background: "linear-gradient(120deg, #0d4a47 0%, #146b66 100%)" }}
+              >
+                <div className="flex items-center justify-between mb-3">
+                  <h2 className="m-0 text-white text-[15px] font-bold">Mes adresses</h2>
+                  <button
+                    onClick={() => { setHomeMode("favoris"); window.scrollTo({ top: 0, behavior: "smooth" }); }}
+                    className="shrink-0 text-[12.5px] font-semibold text-white/80 active:scale-[.98]"
+                  >
+                    Voir tout ›
+                  </button>
+                </div>
+                <div className="flex gap-2.5">
+                  <button
+                    onClick={() => { setHomeMode("favoris"); window.scrollTo({ top: 0, behavior: "smooth" }); }}
+                    className="flex-1 flex items-center gap-2.5 rounded-2xl bg-surface p-3 active:scale-[.97] transition-transform"
+                  >
+                    <Heart size={20} weight="fill" aria-hidden style={{ color: COUP_DE_COEUR_COLOR }} />
+                    <span className="flex flex-col items-start leading-none">
+                      <span className="text-[15px] font-bold" style={{ color: COUP_DE_COEUR_COLOR }}>
+                        {favoriteBusinesses.length}
+                      </span>
+                      <span className="text-[11px] text-muted mt-0.5">Mes favoris</span>
+                    </span>
+                  </button>
+                  <button
+                    onClick={() => { setHomeMode("favoris"); window.scrollTo({ top: 0, behavior: "smooth" }); }}
+                    className="flex-1 flex items-center gap-2.5 rounded-2xl bg-surface p-3 active:scale-[.97] transition-transform"
+                  >
+                    <Flag size={20} weight="fill" aria-hidden style={{ color: "#f5a623" }} />
+                    <span className="flex flex-col items-start leading-none">
+                      <span className="text-[15px] font-bold" style={{ color: "#f5a623" }}>
+                        {aTesterBusinesses.length}
+                      </span>
+                      <span className="text-[11px] text-muted mt-0.5">À tester</span>
+                    </span>
+                  </button>
+                </div>
+              </div>
+
+              {newBusinesses.length > 0 && (
+                <>
+                  <div className="flex items-center gap-2 mb-2.5">
+                    <Sparkle size={20} weight="fill" className="text-primary-deep shrink-0" aria-hidden />
+                    <h2 className="text-[16px] font-bold text-ink">Nouveautés en avant-première</h2>
+                  </div>
+                  <div className="flex gap-3 overflow-x-auto pb-1 -mx-4 px-4 mb-7 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+                    {newBusinesses.slice(0, 12).map((b) => (
+                      <div
+                        key={b.id}
+                        role="button"
+                        tabIndex={0}
+                        onClick={() => selectFromCard(b.id)}
+                        onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") selectFromCard(b.id); }}
+                        className="relative shrink-0 w-[160px] rounded-card overflow-hidden bg-surface border border-border shadow-card text-left cursor-pointer active:scale-[.98] transition-transform"
+                      >
+                        <div className="relative h-[110px] bg-primary-tint flex items-center justify-center">
+                          {b.photoUrl ? (
+                            // eslint-disable-next-line @next/next/no-img-element
+                            <img src={b.photoUrl} alt="" className="absolute inset-0 w-full h-full object-cover" />
+                          ) : (
+                            (() => {
+                              const FallbackIcon = iconForKey(b.category);
+                              return FallbackIcon ? (
+                                <FallbackIcon size={30} weight="duotone" className="text-primary-deep opacity-50" aria-hidden />
+                              ) : null;
+                            })()
+                          )}
+                          <span
+                            className="absolute top-1.5 right-1.5 inline-flex items-center gap-1 px-1.5 py-1 rounded-full bg-surface/90 shadow-sm"
+                            onClick={(e) => e.stopPropagation()}
+                          >
+                            <FavoriteButton id={b.id} size={12.5} />
+                          </span>
+                        </div>
+                        <div className="p-2.5">
+                          <p className="text-[13px] font-bold text-ink truncate">{displayName(b.name)}</p>
+                          <p className="text-[11.5px] text-muted truncate">
+                            {CATEGORY_MAP[b.category].label} • {displayCity(b.address)}
+                          </p>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </>
+              )}
+
 
               <div className="flex items-center justify-between mt-7 mb-1">
                 <h2 className="text-[16px] font-bold text-ink">Les listes de Koté Moris</h2>

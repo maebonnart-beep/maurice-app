@@ -10,18 +10,18 @@ export function Logo({
 }: {
   size?: number;
   light?: boolean;
-  /** Bandeau complet (illustration + panneau balise avec les usages clés de
-   *  l'appli) réservé à l'accueil. Ailleurs (Mon compte, Seconde main, écran
-   *  de résultats) : bandeau compact dédié, sans le panneau. */
+  /** Bandeau complet (illustration + emplacement recherche intégré au décor)
+   *  réservé à l'accueil. Ailleurs (Mon compte, Seconde main, écran de
+   *  résultats) : bandeau compact dédié, sans cet emplacement. */
   tags?: boolean;
 }) {
   if (light) {
-    // Bandeau clair — 2 images distinctes fournies par la cliente (2026-09-16),
-    // un seul style illustré cohérent pour les deux : version complète pour
-    // l'accueil (poulpe + paysage + panneau balise listant favoris/vente entre
-    // particuliers/alertes/partage), version compacte pour les autres écrans
-    // (même paysage, rognée, sans panneau). Chacune déjà au bon cadrage —
-    // plus besoin de recadrage CSS forcé comme sur l'ancienne version.
+    // Bandeau clair — images fournies par la cliente (2026-09-16), un seul
+    // style illustré cohérent : version accueil avec un wordmark plus grand
+    // et une pastille teal vide intégrée au décor (cf. SearchHeroOverlay dans
+    // DirectoryClient, calée dessus par coordonnées), version compacte pour
+    // les autres écrans (même paysage, rognée). Chacune déjà au bon
+    // cadrage — plus besoin de recadrage CSS forcé.
     if (!tags) {
       return (
         <div className="w-full">
@@ -38,7 +38,7 @@ export function Logo({
       <div className="w-full">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="/bandeau-kotemoris-clair-v7.webp"
+          src="/bandeau-kotemoris-clair-v8.webp"
           alt="Koté Moris — les adresses de l'île Maurice réunies sur une seule application"
           className="block w-full h-auto"
         />
