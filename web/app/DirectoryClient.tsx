@@ -1,6 +1,7 @@
 "use client";
 
-import { useCallback, useDeferredValue, useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useDeferredValue, useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
+import { createPortal } from "react-dom";
 import dynamic from "next/dynamic";
 import Link from "next/link";
 import type { Business, CategoryKey } from "@/lib/types";
@@ -428,7 +429,9 @@ export default function DirectoryClient({
   const [activeThemes, setActiveThemes] = useState<Set<string>>(new Set());
   const [activeZone, setActiveZone] = useState<string | null>(null);
   const [zonePickerOpen, setZonePickerOpen] = useState(false);
-  const zonePickerRef = useRef<HTMLDivElement>(null);
+  const [zonePickerPos, setZonePickerPos] = useState<{ top: number; left: number } | null>(null);
+  const zonePickerBtnRef = useRef<HTMLButtonElement>(null);
+  const zonePickerPanelRef = useRef<HTMLDivElement>(null);
   // Facettes de rubrique — multi-sélection. Une entrée par groupe de filtre
   // transversal (cf. FILTER_GROUPS), plus prix et badges qui ne dépendent pas
   // de la taxonomie.
@@ -437,6 +440,11 @@ export default function DirectoryClient({
   const [facetBadges, setFacetBadges] = useState<Set<string>>(new Set());
   const [expandedInSidebar, setExpandedInSidebar] = useState<Set<string>>(new Set());
   const [resultsView, setResultsView] = useState<"liste" | "carte">("liste");
+  // Une fois affichée, la carte mobile reste montée (juste masquée en CSS,
+  // comme sur desktop) : avant, elle était démontée à chaque retour en liste
+  // et donc entièrement recréée (tuiles OSM, marqueurs…) au prochain aller,
+  // ce qui causait un fort ralentissement à chaque bascule liste/carte.
+  const [mapEverOpened, setMapEverOpened] = useState(false);
   // Favoris : bascule optionnelle liste ↔ carte (pas affichée par défaut).
   const [favorisMapOpen, setFavorisMapOpen] = useState(false);
   // « Autour de moi » : tri par distance depuis la position de l'utilisateur.
@@ -712,11 +720,36 @@ export default function DirectoryClient({
     setActiveZone((prev) => (prev === key ? null : key));
   }
 
+  // Positionne le panneau du picker de zone (rendu dans un portail, cf. plus
+  // bas) : la rangée qui contient le bouton défile horizontalement
+  // (overflow-x-auto, ce qui clippe aussi overflow-y), donc un panneau en
+  // `absolute` s'y retrouvait tronqué / invisible — même bug déjà corrigé sur
+  // FilterDropdown, avec la même solution (portail + position fixed calculée).
+  useLayoutEffect(() => {
+    if (!zonePickerOpen) return;
+    const place = () => {
+      const r = zonePickerBtnRef.current?.getBoundingClientRect();
+      if (!r) return;
+      const width = 220;
+      const left = Math.min(r.left, window.innerWidth - width - 8);
+      setZonePickerPos({ top: r.bottom + 6, left: Math.max(8, left) });
+    };
+    place();
+    window.addEventListener("scroll", place, true);
+    window.addEventListener("resize", place);
+    return () => {
+      window.removeEventListener("scroll", place, true);
+      window.removeEventListener("resize", place);
+    };
+  }, [zonePickerOpen]);
+
   // Ferme le picker de zone (bandeau du bas) au clic extérieur / Échap.
   useEffect(() => {
     if (!zonePickerOpen) return;
     const onDoc = (e: MouseEvent) => {
-      if (zonePickerRef.current && !zonePickerRef.current.contains(e.target as Node)) setZonePickerOpen(false);
+      const t = e.target as Node;
+      if (zonePickerBtnRef.current?.contains(t) || zonePickerPanelRef.current?.contains(t)) return;
+      setZonePickerOpen(false);
     };
     const onKey = (e: KeyboardEvent) => e.key === "Escape" && setZonePickerOpen(false);
     document.addEventListener("mousedown", onDoc);
@@ -1593,8 +1626,9 @@ export default function DirectoryClient({
         <MapPin size={14} weight={nearMe ? "fill" : "regular"} aria-hidden />
         {geoStatus === "loading" ? "Localisation…" : "Autour de moi"}
       </button>
-      <div ref={zonePickerRef} className="relative min-w-0 shrink-0">
+      <div className="relative min-w-0 shrink-0">
         <button
+          ref={zonePickerBtnRef}
           onClick={() => setZonePickerOpen((o) => !o)}
           aria-expanded={zonePickerOpen}
           className={`flex items-center gap-1 rounded-full px-2.5 py-1 text-[12.5px] font-semibold min-w-0 transition-colors ${
@@ -1609,34 +1643,40 @@ export default function DirectoryClient({
             {!nearMe && activeZone ? ZONES.find((z) => z.key === activeZone)?.label : "Par zone"}
           </span>
         </button>
-        {zonePickerOpen && (
-          <div className="absolute z-30 top-full mt-2 left-0 w-[220px] max-h-[320px] overflow-y-auto rounded-card border border-border bg-surface shadow-pop p-1.5">
-            {zoneItems.map((z) => {
-              const active = !nearMe && (activeZone ?? "") === z.key;
-              const I = iconForKey(z.icon);
-              const n = z.key ? zoneCounts[z.key] || 0 : rows.length;
-              return (
-                <button
-                  key={z.key || "all"}
-                  onClick={() => {
-                    setNearMe(false);
-                    setActiveZone(z.key || null);
-                    setZonePickerOpen(false);
-                    if (showHome) setBrowseAll(true);
-                  }}
-                  aria-pressed={active}
-                  className={`w-full flex items-center gap-2 px-2 py-1.5 rounded-lg text-[13px] text-left transition-colors ${
-                    active ? "bg-primary-tint text-primary-deep font-semibold" : "text-ink hover:bg-surface-2"
-                  }`}
-                >
-                  {I ? <I size={16} weight={active ? "fill" : "regular"} aria-hidden /> : null}
-                  <span className="flex-1 truncate">{z.label === "Toute" ? "Toute l'île" : z.label}</span>
-                  <span className="text-[11px] font-bold opacity-55 shrink-0">{n}</span>
-                </button>
-              );
-            })}
-          </div>
-        )}
+        {zonePickerOpen && zonePickerPos && typeof document !== "undefined" &&
+          createPortal(
+            <div
+              ref={zonePickerPanelRef}
+              style={{ position: "fixed", top: zonePickerPos.top, left: zonePickerPos.left, width: 220 }}
+              className="z-50 max-h-[320px] overflow-y-auto rounded-card border border-border bg-surface shadow-pop p-1.5"
+            >
+              {zoneItems.map((z) => {
+                const active = !nearMe && (activeZone ?? "") === z.key;
+                const I = iconForKey(z.icon);
+                const n = z.key ? zoneCounts[z.key] || 0 : rows.length;
+                return (
+                  <button
+                    key={z.key || "all"}
+                    onClick={() => {
+                      setNearMe(false);
+                      setActiveZone(z.key || null);
+                      setZonePickerOpen(false);
+                      if (showHome) setBrowseAll(true);
+                    }}
+                    aria-pressed={active}
+                    className={`w-full flex items-center gap-2 px-2 py-1.5 rounded-lg text-[13px] text-left transition-colors ${
+                      active ? "bg-primary-tint text-primary-deep font-semibold" : "text-ink hover:bg-surface-2"
+                    }`}
+                  >
+                    {I ? <I size={16} weight={active ? "fill" : "regular"} aria-hidden /> : null}
+                    <span className="flex-1 truncate">{z.label === "Toute" ? "Toute l'île" : z.label}</span>
+                    <span className="text-[11px] font-bold opacity-55 shrink-0">{n}</span>
+                  </button>
+                );
+              })}
+            </div>,
+            document.body
+          )}
       </div>
     </div>
   );
@@ -3757,6 +3797,7 @@ export default function DirectoryClient({
                   setResultsView("liste");
                 } else {
                   setResultsView("carte");
+                  setMapEverOpened(true);
                   requestUserPosSilently();
                 }
               }}
@@ -3913,7 +3954,7 @@ export default function DirectoryClient({
                   </label>
                 </div>
                 <div className="flex-1 min-h-0 bg-surface-2">
-                  {(isDesktop || resultsView === "carte") && (
+                  {(isDesktop || mapEverOpened) && (
                     <Map
                       businesses={mapMarkerRows}
                       selectedId={selectedId}
