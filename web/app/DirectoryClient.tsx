@@ -71,12 +71,12 @@ const COUPS_DE_COEUR_FRAME_COLOR = "#1fb6ab";
 // à l'univers plage/lagon. Contrainte connue : border-image ignore le
 // border-radius, donc ces bandeaux perdent leurs coins arrondis.
 function wavyFrameBorder(color: string) {
-  const svg = `<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><g fill='none' stroke='${color}' stroke-width='5' stroke-linecap='round'><path d='M0,12 Q12.5,3 25,12 T50,12 T75,12 T100,12'/><path d='M0,88 Q12.5,97 25,88 T50,88 T75,88 T100,88'/><path d='M12,0 Q3,12.5 12,25 T12,50 T12,75 T12,100'/><path d='M88,0 Q97,12.5 88,25 T88,50 T88,75 T88,100'/></g></svg>`;
+  const svg = `<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><g fill='none' stroke='${color}' stroke-width='4' stroke-linecap='round'><path d='M0,12 Q12.5,3 25,12 T50,12 T75,12 T100,12'/><path d='M0,88 Q12.5,97 25,88 T50,88 T75,88 T100,88'/><path d='M12,0 Q3,12.5 12,25 T12,50 T12,75 T12,100'/><path d='M88,0 Q97,12.5 88,25 T88,50 T88,75 T88,100'/></g></svg>`;
   return {
-    borderWidth: "9px",
+    borderWidth: "5px",
     borderStyle: "solid",
     borderImageSource: `url("data:image/svg+xml,${encodeURIComponent(svg)}")`,
-    borderImageSlice: 24,
+    borderImageSlice: 20,
     borderImageRepeat: "round",
   } as const;
 }
