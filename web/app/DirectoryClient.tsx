@@ -1277,6 +1277,16 @@ export default function DirectoryClient({
   const mobileTiles =
     active === "all" && activeThemes.size === 0 && !hasQuery && !browseAll;
 
+  // Header uniquement : dès l'ouverture de la recherche (avant même de taper),
+  // on bascule sur le header compact (flèche retour + champ inline) et on n'en
+  // bouge plus tant qu'elle reste ouverte. Sans ça, `mobileTiles` (qui doit
+  // rester piloté par `hasQuery` pour le corps de page, cf. plus bas) bascule
+  // pile au 2ᵉ caractère tapé, démonte le <SearchInput> de son 1er
+  // emplacement pour le remonter ailleurs dans l'arbre, et fait perdre le
+  // focus/curseur en pleine frappe — d'où l'impression que la recherche
+  // « saute » après 2 lettres.
+  const headerMobileTiles = mobileTiles && !searchOpen;
+
   // Recherche affichée dans le flux dédié (tuile « Recherche », onglet
   // « Explorer », ou « Voir tout ») — pas pendant la navigation par
   // rubrique, où elle n'apporte rien et prend de la place.
@@ -1789,7 +1799,7 @@ export default function DirectoryClient({
         className={`relative z-30 overflow-hidden ${
           showHome && homeMode === "menu"
             ? "bg-bg border-b border-transparent"
-            : mobileTiles && homeMode !== "favoris"
+            : headerMobileTiles && homeMode !== "favoris"
               ? "bg-surface border-b border-border shadow-sm"
               : "border-b border-transparent shadow-sm"
         }`}
@@ -1797,7 +1807,7 @@ export default function DirectoryClient({
           !showHome || homeMode !== "menu"
             ? homeMode === "favoris"
               ? { background: "linear-gradient(135deg, #0a3d3a 0%, #1a8f86 100%)" }
-              : mobileTiles
+              : headerMobileTiles
                 ? undefined
                 : { background: "linear-gradient(120deg, #0d4a47 0%, #146b66 100%)" }
             : undefined
@@ -1805,44 +1815,30 @@ export default function DirectoryClient({
       >
         {showHome && homeMode === "menu" ? (
           <div className="relative max-w-[820px] mx-auto">
-            {/* Bandeau d'accueil : logo + paysage, avec une pastille de
-                recherche intégrée au décor (peinte dans l'image, cf. Logo).
-                Le bouton ci-dessous est calé par coordonnées (% mesurés sur
-                l'image source, 1700×925) exactement sur cette pastille, pour
-                que le texte reste vivant/cliquable sans dupliquer de style. */}
-            <div className="relative w-full rounded-2xl overflow-hidden">
+            {/* Bandeau d'accueil : logo + paysage seuls (la pastille de
+                recherche bakée dans l'image d'origine était trop basse pour
+                un texte vraiment lisible). La recherche vit maintenant dans
+                un bloc ordinaire juste en dessous, libre en taille. */}
+            <div className="w-full rounded-t-2xl overflow-hidden">
               <Logo light tags />
-              <button
-                onClick={openSearchChoice}
-                aria-label="Rechercher une activité, un lieu, un nom"
-                className="absolute flex flex-col justify-center items-center text-center text-white active:opacity-80 transition-opacity overflow-hidden px-[4%]"
-                style={{ top: "68%", bottom: "10.5%", left: "2%", right: "2%", gap: "clamp(2px, 0.5vw, 5px)" }}
-              >
-                {/* Tailles en vw (plafonnées via clamp), budgétées pour tenir
-                    dans la hauteur réelle de la pastille (~10.8% de la
-                    largeur d'écran, fixe quel que soit le recadrage vertical
-                    de l'image) — évite tout chevauchement/débordement sur les
-                    téléphones étroits, contrairement aux breakpoints fixes. */}
-                <span
-                  className="font-bold tracking-wide truncate"
-                  style={{ fontSize: "clamp(10px, 2.8vw, 14px)", lineHeight: 1.15 }}
-                >
-                  Trouve ta prochaine adresse
-                </span>
-                <span
-                  className="inline-flex items-center gap-1.5 rounded-pill bg-white font-semibold shrink-0"
-                  style={{
-                    color: "#0d4a47",
-                    height: "clamp(20px, 6vw, 34px)",
-                    padding: "0 clamp(8px, 3vw, 16px)",
-                    fontSize: "clamp(9.5px, 2.6vw, 13px)",
-                  }}
-                >
-                  <MagnifyingGlass size={13} weight="bold" className="shrink-0" aria-hidden />
-                  Rechercher
-                </span>
-              </button>
             </div>
+            <button
+              onClick={openSearchChoice}
+              aria-label="Rechercher une activité, un lieu, un nom"
+              className="flex flex-col items-center justify-center gap-1.5 w-full rounded-b-2xl text-center text-white active:opacity-90 transition-opacity py-4 px-4"
+              style={{ background: "linear-gradient(135deg, #0d4a47 0%, #146b66 100%)" }}
+            >
+              <span className="text-[16px] sm:text-[19px] font-bold tracking-wide leading-tight">
+                Trouve ta prochaine adresse
+              </span>
+              <span
+                className="inline-flex items-center gap-2 h-[38px] sm:h-[44px] px-5 sm:px-6 rounded-pill bg-white font-semibold text-[14px] sm:text-[16px]"
+                style={{ color: "#0d4a47" }}
+              >
+                <MagnifyingGlass size={17} weight="bold" className="shrink-0" aria-hidden />
+                Rechercher
+              </span>
+            </button>
           </div>
         ) : homeMode === "favoris" ? (
           // Bandeau dédié « Mes adresses » (favoris/à tester/testé) : même
@@ -1862,7 +1858,7 @@ export default function DirectoryClient({
               <p className="m-0 text-white/80 text-[13.5px]">Favoris, à tester et testées</p>
             </div>
           </div>
-        ) : mobileTiles ? (
+        ) : headerMobileTiles ? (
           <button
             onClick={goHome}
             aria-label="Retour à l'accueil"
@@ -1911,7 +1907,7 @@ export default function DirectoryClient({
             </div>
           </div>
         )}
-        {showHeaderSearch && mobileTiles && (
+        {showHeaderSearch && headerMobileTiles && (
           <div className="relative max-w-[1400px] mx-auto px-5 pb-2.5">
             <div className="max-w-[640px]">
               {searchOpen ? (

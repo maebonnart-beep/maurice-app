@@ -40,18 +40,20 @@ export function Logo({
       );
     }
     return (
-      // Recadré sur un ratio plus court (on rogne le ciel vide en haut, via
-      // object-cover + object-position bottom) pour que le wordmark/la
-      // mascotte/la pastille remplissent davantage la largeur — sans
-      // regénérer l'image, juste un zoom optique. Le bouton de recherche
-      // calé dessus (cf. DirectoryClient) a ses % recalculés pour ce cadrage
-      // (crop top = 925-860 = 65px ; pastille source y:650-834/925).
-      <div className="w-full aspect-[1700/860] overflow-hidden">
+      // Recadré pour ne garder que l'illustration (poulpe + paysage + texte),
+      // SANS la pastille de recherche bakée dans l'image d'origine : la
+      // pastille bakée était trop basse pour accueillir un texte lisible.
+      // La recherche vit maintenant dans un bloc CSS ordinaire juste en
+      // dessous (cf. DirectoryClient), libre en hauteur/taille de texte.
+      // object-position "50% 19%" : rogne 65px de ciel en haut et le reste
+      // (la pastille) en bas, sur les 925px source (1700×925).
+      <div className="w-full aspect-[1700/585] overflow-hidden">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src="/bandeau-kotemoris-clair-v8.webp"
           alt="Koté Moris — les adresses de l'île Maurice réunies sur une seule application"
-          className="block w-full h-full object-cover object-bottom"
+          className="block w-full h-full object-cover"
+          style={{ objectPosition: "50% 19%" }}
         />
       </div>
     );
