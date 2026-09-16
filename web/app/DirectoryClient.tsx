@@ -56,10 +56,30 @@ import { PREMIUM_PRICE_LABEL, MAX_ACTIVE_LISTINGS, listingPhotoUrl } from "@/lib
 import type { Listing } from "@/lib/marketplace/types";
 import { COUP_DE_COEUR_COLOR } from "@/components/ui/Badge";
 
-// Couleur dédiée au bandeau « Adresses kids friendly » (accueil), distincte du
-// rose des coups de cœur et de l'orange « à tester » pour que les deux rangées
-// éditoriales se distinguent davantage dans le flux de la page d'accueil.
-const KIDS_FRIENDLY_COLOR = "#2f9bd6";
+// Couleur dédiée au bandeau « Adresses kids friendly » (accueil) : vert
+// émeraude, distinct du turquoise des coups de cœur mais dans la même
+// famille vert-turquoise que le bandeau du haut (pas de rose, pas de bleu).
+const KIDS_FRIENDLY_COLOR = "#3aa876";
+// Encadrement du bandeau « coups de cœur » à l'accueil : turquoise repris du
+// lagon du bandeau du haut (au lieu du rose de COUP_DE_COEUR_COLOR, utilisé
+// ailleurs pour le badge « sélection »).
+const COUPS_DE_COEUR_FRAME_COLOR = "#1fb6ab";
+
+// Contour « vagues » des bandeaux éditoriaux de l'accueil (coups de cœur,
+// kids friendly) : un motif ondulé par bord (dessiné indépendamment en haut/
+// bas/gauche/droite) via border-image, plutôt qu'un trait plein — clin d'œil
+// à l'univers plage/lagon. Contrainte connue : border-image ignore le
+// border-radius, donc ces bandeaux perdent leurs coins arrondis.
+function wavyFrameBorder(color: string) {
+  const svg = `<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><g fill='none' stroke='${color}' stroke-width='5' stroke-linecap='round'><path d='M0,12 Q12.5,3 25,12 T50,12 T75,12 T100,12'/><path d='M0,88 Q12.5,97 25,88 T50,88 T75,88 T100,88'/><path d='M12,0 Q3,12.5 12,25 T12,50 T12,75 T12,100'/><path d='M88,0 Q97,12.5 88,25 T88,50 T88,75 T88,100'/></g></svg>`;
+  return {
+    borderWidth: "9px",
+    borderStyle: "solid",
+    borderImageSource: `url("data:image/svg+xml,${encodeURIComponent(svg)}")`,
+    borderImageSlice: 24,
+    borderImageRepeat: "round",
+  } as const;
+}
 import { FilterDropdown, type DropdownOption } from "@/components/ui/FilterDropdown";
 import { AddAddressForm } from "@/components/ui/AddAddressForm";
 import { iconForKey, mascotFor, prefIconFor, categoryTint, MapPin } from "@/lib/icons";
@@ -1815,30 +1835,37 @@ export default function DirectoryClient({
       >
         {showHome && homeMode === "menu" ? (
           <div className="relative max-w-[820px] mx-auto">
-            {/* Bandeau d'accueil : logo + paysage seuls (la pastille de
-                recherche bakée dans l'image d'origine était trop basse pour
-                un texte vraiment lisible). La recherche vit maintenant dans
-                un bloc ordinaire juste en dessous, libre en taille. */}
-            <div className="w-full rounded-t-2xl overflow-hidden">
+            {/* Bandeau d'accueil : logo + paysage zoomés (cf. Logo light tags),
+                rognés jusqu'au bas de la pastille de recherche bakée dans
+                l'image d'origine. La bulle de recherche est une simple
+                superposition (position absolue, calée en % sur les mêmes
+                coordonnées que le rognage de Logo) directement dans cette
+                pastille — pas de bloc séparé en dessous. */}
+            <div className="relative w-full rounded-2xl overflow-hidden">
               <Logo light tags />
-            </div>
-            <button
-              onClick={openSearchChoice}
-              aria-label="Rechercher une activité, un lieu, un nom"
-              className="flex flex-col items-center justify-center gap-1.5 w-full rounded-b-2xl text-center text-white active:opacity-90 transition-opacity py-4 px-4"
-              style={{ background: "linear-gradient(135deg, #0d4a47 0%, #146b66 100%)" }}
-            >
-              <span className="text-[16px] sm:text-[19px] font-bold tracking-wide leading-tight">
-                Trouve ta prochaine adresse
-              </span>
-              <span
-                className="inline-flex items-center gap-2 h-[38px] sm:h-[44px] px-5 sm:px-6 rounded-pill bg-white font-semibold text-[14px] sm:text-[16px]"
-                style={{ color: "#0d4a47" }}
+              {/* Fondu qui adoucit la coupure nette entre le décor (sable/mer)
+                  et le haut de la pastille bakée dans l'image, juste avant
+                  la bulle de recherche. */}
+              <div
+                className="absolute inset-x-0 pointer-events-none"
+                style={{
+                  top: "64%",
+                  height: "14%",
+                  background: "linear-gradient(to bottom, rgba(18,89,91,0) 0%, rgba(18,89,91,0.9) 100%)",
+                }}
+              />
+              <button
+                onClick={openSearchChoice}
+                aria-label="Rechercher une activité, un lieu, un nom"
+                className="absolute left-[8%] right-[8%] flex items-center gap-2 rounded-pill bg-white px-4 text-[12px] sm:text-[14px] active:opacity-90 transition-opacity shadow-sm"
+                style={{ top: "80%", height: "13%" }}
               >
-                <MagnifyingGlass size={17} weight="bold" className="shrink-0" aria-hidden />
-                Rechercher
-              </span>
-            </button>
+                <MagnifyingGlass size={24} weight="bold" className="shrink-0" style={{ color: "#0d4a47" }} aria-hidden />
+                <span className="truncate text-ink/50 font-medium">
+                  Rechercher une activité, un lieu, un nom…
+                </span>
+              </button>
+            </div>
           </div>
         ) : homeMode === "favoris" ? (
           // Bandeau dédié « Mes adresses » (favoris/à tester/testé) : même
@@ -2061,10 +2088,11 @@ export default function DirectoryClient({
                   sélection éditoriale est la première chose vue à l'accueil. */}
               {coupsDeCoeur.length > 0 && (
                 <div
-                  className="rounded-2xl p-3 mb-7"
+                  className="p-3 mb-7"
                   style={{
-                    background: `color-mix(in srgb, ${COUP_DE_COEUR_COLOR} 8%, var(--surface))`,
-                    border: `1px solid color-mix(in srgb, ${COUP_DE_COEUR_COLOR} 20%, var(--border))`,
+                    background: `linear-gradient(135deg, color-mix(in srgb, var(--primary-deep) 45%, var(--surface)) 0%, color-mix(in srgb, var(--primary) 10%, var(--surface)) 100%)`,
+                    ...wavyFrameBorder(COUPS_DE_COEUR_FRAME_COLOR),
+                    boxShadow: `0 0 18px 4px color-mix(in srgb, ${COUPS_DE_COEUR_FRAME_COLOR} 30%, transparent)`,
                   }}
                 >
                   <div className="flex items-center justify-between mb-2">
@@ -2256,10 +2284,11 @@ export default function DirectoryClient({
 
               {kidsFriendly.length > 0 && (
                 <div
-                  className="rounded-2xl p-3 mt-7"
+                  className="p-3 mt-7"
                   style={{
-                    background: `color-mix(in srgb, ${KIDS_FRIENDLY_COLOR} 8%, var(--surface))`,
-                    border: `1px solid color-mix(in srgb, ${KIDS_FRIENDLY_COLOR} 20%, var(--border))`,
+                    background: `linear-gradient(135deg, color-mix(in srgb, var(--primary-deep) 45%, var(--surface)) 0%, color-mix(in srgb, var(--primary) 10%, var(--surface)) 100%)`,
+                    ...wavyFrameBorder(KIDS_FRIENDLY_COLOR),
+                    boxShadow: `0 0 18px 4px color-mix(in srgb, ${KIDS_FRIENDLY_COLOR} 30%, transparent)`,
                   }}
                 >
                   <div className="flex items-center justify-between mb-2">
