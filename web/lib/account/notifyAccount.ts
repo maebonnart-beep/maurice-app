@@ -77,10 +77,40 @@ export async function sendWelcomeEmail(toEmail: string) {
   }
 }
 
+/** Notifie l'admin par e-mail (Resend) qu'un nouveau compte vient d'être créé.
+ *  Best-effort : une erreur d'envoi est loguée mais ne doit jamais faire échouer la connexion. */
+async function notifyAdminNewUser(userEmail: string) {
+  const apiKey = process.env.RESEND_API_KEY;
+  const adminEmail = process.env.NEW_USER_NOTIFICATION_EMAIL;
+  if (!apiKey || !adminEmail) return;
+
+  try {
+    const res = await fetch("https://api.resend.com/emails", {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${apiKey}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        from: "Koté Moris <notifications@kotemoris.com>",
+        to: adminEmail,
+        subject: "Nouveau compte créé sur Koté Moris",
+        html: `<p>Un nouveau compte vient d'être créé sur Koté Moris : <strong>${userEmail}</strong>.</p>`,
+      }),
+    });
+    if (!res.ok) {
+      console.error("notifyAdminNewUser: Resend error", res.status, await res.text());
+    }
+  } catch (err) {
+    console.error("notifyAdminNewUser: fetch failed", err);
+  }
+}
+
 /** Envoie le mail de bienvenue une seule fois (au tout premier login) : lit et pose
  *  le flag `profiles.welcome_email_sent_at` avec le client passé en argument (donc
  *  soumis à sa RLS — appeler avec un client lié à la session de l'utilisateur, ou
- *  service-role). Best-effort, ne throw jamais. */
+ *  service-role). Best-effort, ne throw jamais.
+ *  Notifie aussi l'admin par e-mail, puisque ce flag marque un tout nouveau compte. */
 export async function sendWelcomeEmailOnce(supabase: SupabaseClient, user: User) {
   if (!user.email) return;
 
@@ -92,6 +122,7 @@ export async function sendWelcomeEmailOnce(supabase: SupabaseClient, user: User)
   if (!profile || profile.welcome_email_sent_at) return;
 
   await sendWelcomeEmail(user.email);
+  await notifyAdminNewUser(user.email);
   await supabase.from("profiles").update({ welcome_email_sent_at: new Date().toISOString() }).eq("id", user.id);
 }
 
