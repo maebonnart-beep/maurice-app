@@ -39,6 +39,14 @@ export const viewport: Viewport = {
   themeColor: "#0d7a72",
   width: "device-width",
   initialScale: 1,
+  // Sans ça, `env(safe-area-inset-*)` renvoie 0 sur iOS (Safari ne laisse le
+  // contenu déborder sous les zones sûres — encoche/Dynamic Island en haut,
+  // barre d'accueil en bas — que si le viewport le demande explicitement).
+  // La barre de nav du bas s'appuyait déjà sur cet inset (paddingBottom) mais
+  // il ne servait à rien : elle se retrouvait collée au bord, tronquée par la
+  // zone du geste d'accueil sur les iPhone à Face ID (rapporté sur iPhone 17
+  // Pro, mais concerne tous les iPhone sans encoche physique).
+  viewportFit: "cover",
 };
 
 export default function RootLayout({
