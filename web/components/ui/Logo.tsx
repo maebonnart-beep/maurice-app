@@ -24,11 +24,12 @@ export function Logo({
     // cadrage — plus besoin de recadrage CSS forcé.
     if (!tags) {
       return (
-        // Recadré un peu plus serré (on rogne les franges de palmiers de
-        // chaque côté, via object-cover) pour que le wordmark ressorte
-        // davantage — même principe que le bandeau d'accueil, sans regénérer
-        // l'image.
-        <div className="w-full aspect-[1746/330] overflow-hidden">
+        // Recadré plus serré (on rogne les franges de palmiers de chaque
+        // côté, via object-cover — ratio plus étroit que le naturel 4.71:1
+        // force le crop en largeur, pas en hauteur) pour que le wordmark
+        // ressorte davantage — même principe que le bandeau d'accueil, sans
+        // regénérer l'image.
+        <div className="w-full aspect-[1746/415] overflow-hidden">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/bandeau-kotemoris-clair-v7-notags.webp"
@@ -43,8 +44,9 @@ export function Logo({
       // object-cover + object-position bottom) pour que le wordmark/la
       // mascotte/la pastille remplissent davantage la largeur — sans
       // regénérer l'image, juste un zoom optique. Le bouton de recherche
-      // calé dessus (cf. DirectoryClient) a ses % recalculés pour ce cadrage.
-      <div className="w-full aspect-[1700/770] overflow-hidden">
+      // calé dessus (cf. DirectoryClient) a ses % recalculés pour ce cadrage
+      // (crop top = 925-860 = 65px ; pastille source y:650-834/925).
+      <div className="w-full aspect-[1700/860] overflow-hidden">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src="/bandeau-kotemoris-clair-v8.webp"

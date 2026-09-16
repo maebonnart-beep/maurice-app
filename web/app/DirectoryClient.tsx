@@ -1815,18 +1815,30 @@ export default function DirectoryClient({
               <button
                 onClick={openSearchChoice}
                 aria-label="Rechercher une activité, un lieu, un nom"
-                className="absolute flex flex-col justify-center items-center gap-1 sm:gap-1.5 text-center text-white active:opacity-80 transition-opacity overflow-hidden px-4 sm:px-6"
-                style={{ top: "67%", bottom: "9%", left: "2%", right: "2%" }}
+                className="absolute flex flex-col justify-center items-center gap-[1.2%] text-center text-white active:opacity-80 transition-opacity overflow-hidden px-[4%]"
+                style={{ top: "68%", bottom: "10.5%", left: "2%", right: "2%" }}
               >
-                <span className="text-[13px] sm:text-[16px] leading-tight font-bold tracking-wide truncate">
+                {/* Tailles en vw (plafonnées via clamp) plutôt qu'en breakpoints
+                    fixes : sur mobile, la largeur du conteneur suit de très
+                    près celle de l'écran, donc le texte suit la même échelle
+                    que la pastille quel que soit le modèle de téléphone —
+                    plus de chevauchement icône/texte sur les écrans étroits. */}
+                <span
+                  className="leading-tight font-bold tracking-wide truncate"
+                  style={{ fontSize: "clamp(11px, 3.6vw, 17px)" }}
+                >
                   Trouve ta prochaine adresse
                 </span>
                 <span
-                  className="inline-flex items-center gap-1.5 h-[27px] sm:h-[38px] px-3 sm:px-4 rounded-pill bg-white text-[12px] sm:text-[14px] font-semibold shrink-0"
-                  style={{ color: "#0d4a47" }}
+                  className="inline-flex items-center gap-1.5 rounded-pill bg-white font-semibold shrink-0"
+                  style={{
+                    color: "#0d4a47",
+                    height: "clamp(22px, 7.5vw, 40px)",
+                    padding: "0 clamp(10px, 3.5vw, 20px)",
+                    fontSize: "clamp(10.5px, 3.1vw, 15px)",
+                  }}
                 >
-                  <MagnifyingGlass size={13} weight="bold" className="shrink-0 sm:hidden" aria-hidden />
-                  <MagnifyingGlass size={15} weight="bold" className="hidden sm:block shrink-0" aria-hidden />
+                  <MagnifyingGlass size={15} weight="bold" className="shrink-0" aria-hidden />
                   Rechercher
                 </span>
               </button>
