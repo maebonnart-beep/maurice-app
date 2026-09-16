@@ -24,23 +24,32 @@ export function Logo({
     // cadrage — plus besoin de recadrage CSS forcé.
     if (!tags) {
       return (
-        <div className="w-full">
+        // Recadré un peu plus serré (on rogne les franges de palmiers de
+        // chaque côté, via object-cover) pour que le wordmark ressorte
+        // davantage — même principe que le bandeau d'accueil, sans regénérer
+        // l'image.
+        <div className="w-full aspect-[1746/330] overflow-hidden">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/bandeau-kotemoris-clair-v7-notags.webp"
             alt="Koté Moris — les adresses de l'île Maurice"
-            className="block w-full h-auto"
+            className="block w-full h-full object-cover"
           />
         </div>
       );
     }
     return (
-      <div className="w-full">
+      // Recadré sur un ratio plus court (on rogne le ciel vide en haut, via
+      // object-cover + object-position bottom) pour que le wordmark/la
+      // mascotte/la pastille remplissent davantage la largeur — sans
+      // regénérer l'image, juste un zoom optique. Le bouton de recherche
+      // calé dessus (cf. DirectoryClient) a ses % recalculés pour ce cadrage.
+      <div className="w-full aspect-[1700/770] overflow-hidden">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src="/bandeau-kotemoris-clair-v8.webp"
           alt="Koté Moris — les adresses de l'île Maurice réunies sur une seule application"
-          className="block w-full h-auto"
+          className="block w-full h-full object-cover object-bottom"
         />
       </div>
     );

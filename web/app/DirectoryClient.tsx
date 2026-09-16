@@ -1576,11 +1576,11 @@ export default function DirectoryClient({
   const tabBar = (
     <nav
       aria-label="Navigation principale"
-      className="fixed bottom-0 inset-x-0 z-40 border-t border-band-deep"
+      className="fixed bottom-0 inset-x-0 z-40 border-t border-transparent"
       style={{
         paddingBottom: "env(safe-area-inset-bottom)",
-        background: "linear-gradient(180deg, var(--band) 0%, var(--band-deep) 100%)",
-        boxShadow: "0 -2px 14px -8px rgba(13, 43, 42, 0.18)",
+        background: "linear-gradient(180deg, #146b66 0%, #0d4a47 100%)",
+        boxShadow: "0 -2px 14px -8px rgba(13, 43, 42, 0.35)",
       }}
     >
       <div className="max-w-[640px] mx-auto grid grid-cols-5 items-end px-2 pt-1.5 pb-1.5">
@@ -1589,7 +1589,7 @@ export default function DirectoryClient({
           aria-label="Accueil"
           aria-pressed={activeTab === "accueil"}
           className={`flex flex-col items-center gap-0.5 py-1 rounded-xl transition-colors active:scale-[.97] ${
-            activeTab === "accueil" ? "text-on-band" : "text-on-band/60"
+            activeTab === "accueil" ? "text-white" : "text-white/60"
           }`}
         >
           <House size={22} weight={activeTab === "accueil" ? "fill" : "regular"} aria-hidden />
@@ -1600,7 +1600,7 @@ export default function DirectoryClient({
           aria-label="Recherche"
           aria-pressed={activeTab === "recherche"}
           className={`flex flex-col items-center gap-0.5 py-1 rounded-xl transition-colors active:scale-[.97] ${
-            activeTab === "recherche" ? "text-on-band" : "text-on-band/60"
+            activeTab === "recherche" ? "text-white" : "text-white/60"
           }`}
         >
           <MagnifyingGlass size={22} weight={activeTab === "recherche" ? "fill" : "regular"} aria-hidden />
@@ -1614,7 +1614,7 @@ export default function DirectoryClient({
           aria-label="Autour de moi"
           aria-pressed={nearMe}
           className={`flex flex-col items-center gap-0.5 py-1 rounded-xl transition-colors active:scale-[.97] ${
-            nearMe ? "text-on-band" : "text-on-band/60"
+            nearMe ? "text-white" : "text-white/60"
           }`}
         >
           <MapPin size={22} weight={nearMe ? "fill" : "regular"} aria-hidden />
@@ -1625,7 +1625,7 @@ export default function DirectoryClient({
           aria-label="Listes de Koté Moris"
           aria-pressed={activeTab === "listes"}
           className={`flex flex-col items-center gap-0.5 py-1 rounded-xl transition-colors active:scale-[.97] ${
-            activeTab === "listes" ? "text-on-band" : "text-on-band/60"
+            activeTab === "listes" ? "text-white" : "text-white/60"
           }`}
         >
           <Star size={22} weight={activeTab === "listes" ? "fill" : "regular"} aria-hidden />
@@ -1636,7 +1636,7 @@ export default function DirectoryClient({
           aria-label="Mon compte"
           aria-pressed={activeTab === "profil"}
           className={`flex flex-col items-center gap-0.5 py-1 rounded-xl transition-colors active:scale-[.97] ${
-            activeTab === "profil" ? "text-on-band" : "text-on-band/60"
+            activeTab === "profil" ? "text-white" : "text-white/60"
           }`}
         >
           <UserCircle size={22} weight={activeTab === "profil" ? "fill" : "regular"} aria-hidden />
@@ -1795,9 +1795,11 @@ export default function DirectoryClient({
         }`}
         style={
           !showHome || homeMode !== "menu"
-            ? mobileTiles && homeMode !== "favoris"
-              ? undefined
-              : { background: "linear-gradient(120deg, #0d4a47 0%, #146b66 100%)" }
+            ? homeMode === "favoris"
+              ? { background: "linear-gradient(135deg, #0a3d3a 0%, #1a8f86 100%)" }
+              : mobileTiles
+                ? undefined
+                : { background: "linear-gradient(120deg, #0d4a47 0%, #146b66 100%)" }
             : undefined
         }
       >
@@ -1813,18 +1815,18 @@ export default function DirectoryClient({
               <button
                 onClick={openSearchChoice}
                 aria-label="Rechercher une activité, un lieu, un nom"
-                className="absolute flex flex-col justify-center items-center gap-0.5 sm:gap-1.5 text-center text-white active:opacity-80 transition-opacity overflow-hidden px-4 sm:px-6"
-                style={{ top: "70.5%", bottom: "9.8%", left: "4%", right: "4%" }}
+                className="absolute flex flex-col justify-center items-center gap-1 sm:gap-1.5 text-center text-white active:opacity-80 transition-opacity overflow-hidden px-4 sm:px-6"
+                style={{ top: "67%", bottom: "9%", left: "2%", right: "2%" }}
               >
-                <span className="text-[10px] sm:text-[14px] leading-tight font-semibold tracking-wide truncate">
+                <span className="text-[13px] sm:text-[16px] leading-tight font-bold tracking-wide truncate">
                   Trouve ta prochaine adresse
                 </span>
                 <span
-                  className="inline-flex items-center gap-1.5 h-[18px] sm:h-[34px] px-2.5 sm:px-4 rounded-pill bg-white text-[9.5px] sm:text-[13px] font-semibold shrink-0"
+                  className="inline-flex items-center gap-1.5 h-[27px] sm:h-[38px] px-3 sm:px-4 rounded-pill bg-white text-[12px] sm:text-[14px] font-semibold shrink-0"
                   style={{ color: "#0d4a47" }}
                 >
-                  <MagnifyingGlass size={10} weight="bold" className="shrink-0 sm:hidden" aria-hidden />
-                  <MagnifyingGlass size={14} weight="bold" className="hidden sm:block shrink-0" aria-hidden />
+                  <MagnifyingGlass size={13} weight="bold" className="shrink-0 sm:hidden" aria-hidden />
+                  <MagnifyingGlass size={15} weight="bold" className="hidden sm:block shrink-0" aria-hidden />
                   Rechercher
                 </span>
               </button>
@@ -1844,8 +1846,8 @@ export default function DirectoryClient({
               <ArrowLeft size={19} weight="bold" aria-hidden />
             </button>
             <div className="flex flex-col leading-tight">
-              <p className="m-0 text-white text-[17px] font-bold">Mes adresses</p>
-              <p className="m-0 text-white/75 text-[12px]">Favoris, à tester et testées</p>
+              <p className="m-0 text-white text-[21px] font-bold">Mes adresses</p>
+              <p className="m-0 text-white/80 text-[13.5px]">Favoris, à tester et testées</p>
             </div>
           </div>
         ) : mobileTiles ? (
@@ -2117,7 +2119,7 @@ export default function DirectoryClient({
                   endroit, plutôt que 2 chips isolées sans titre. */}
               <div
                 className="rounded-2xl p-4 mt-4 mb-7"
-                style={{ background: "linear-gradient(120deg, #0d4a47 0%, #146b66 100%)" }}
+                style={{ background: "linear-gradient(135deg, #0a3d3a 0%, #1a8f86 100%)" }}
               >
                 <div className="flex items-center justify-between mb-3">
                   <h2 className="m-0 text-white text-[15px] font-bold">Mes adresses</h2>
