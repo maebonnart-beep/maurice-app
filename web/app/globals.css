@@ -14,9 +14,9 @@
   --accent: #f4c95d;
   --on-accent: #133c40;
 
-  /* Bandeau du bas (nav) : turquoise clair assorti au nouveau logo poulpe, texte foncé. */
-  --band: #2bacb8;
-  --band-deep: #1f8f99;
+  /* Bandeau du bas (nav) : fond clair menthe/blanc (cf. maquette poulpe lunettes), icônes/texte teal foncé. */
+  --band: #f3fbfa;
+  --band-deep: #dcf0ee;
   --on-band: #0b3a3e;
 
   /* Rayon historique (conservé pour compat). */

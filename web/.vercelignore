@@ -1,0 +1,6 @@
+# Dossiers de travail volumineux, non utilisés par le site en production.
+# Ils gonflaient le Deployment Storage Vercel (511 Mo dans public/, quota gratuit atteint).
+public/Adresses à rajouter/
+public/Icones DEF/
+public/Icones à stocker/
+public/ChatGPT Image*.png

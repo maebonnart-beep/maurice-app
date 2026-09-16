@@ -43,6 +43,11 @@ export type Business = {
   takeaway?: boolean;
   /** Absent = "free". Premium fiches surface first and unlock the perks below. */
   tier?: BusinessTier;
+  /** Date d'ajout de la fiche (ISO YYYY-MM-DD). Absente = fiche historique, jamais
+   *  considérée comme "nouvelle" (pas de backfill). À stamper sur toute nouvelle
+   *  fiche ajoutée à businesses.json — pilote la section "Nouveautés" premium et
+   *  le cron de notification (voir app/api/cron/notify-new-businesses). */
+  createdAt?: string;
   /** True once a business owner has claimed/verified this fiche. */
   claimed?: boolean;
   badge?: "partenaire" | "selection";

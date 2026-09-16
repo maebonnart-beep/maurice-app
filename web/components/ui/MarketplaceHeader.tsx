@@ -13,7 +13,7 @@ export function MarketplaceHeader() {
       <Link
         href="/"
         aria-label="Retour à l'accueil"
-        className="block relative w-full aspect-[864/281] hover:opacity-90 active:scale-[.98] transition"
+        className="block relative w-full max-w-[820px] mx-auto hover:opacity-90 active:scale-[.98] transition"
       >
         <Logo light />
       </Link>
