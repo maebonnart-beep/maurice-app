@@ -487,6 +487,10 @@ export default function DirectoryClient({
   // cocher, en plus du tap direct (une seule rubrique → résultats immédiats).
   // Vidée à chaque changement de catégorie.
   const [selectedRubriques, setSelectedRubriques] = useState<Set<string>>(new Set());
+  // Page de sous-rubriques (cuisine, discipline…) : même principe de
+  // sélection multiple via cases à cocher, en plus du tap direct. Vidée à
+  // chaque changement de rubrique ouverte (homeSubRubrique).
+  const [selectedSubOptions, setSelectedSubOptions] = useState<Set<string>>(new Set());
   const cardRefs = useRef<Record<string, HTMLElement | null>>({});
   const favorisSectionRef = useRef<HTMLDivElement>(null);
   const aTesterSectionRef = useRef<HTMLDivElement>(null);
@@ -512,6 +516,12 @@ export default function DirectoryClient({
   useEffect(() => {
     setSelectedRubriques(new Set());
   }, [homeCategory]);
+
+  // Change de rubrique ouverte (ou en sort) → vide les cases cochées de la
+  // page de sous-rubriques précédente.
+  useEffect(() => {
+    setSelectedSubOptions(new Set());
+  }, [homeSubRubrique]);
 
   // Précharge le chunk JS de la carte (Leaflet) pendant que l'utilisateur
   // est encore sur l'accueil, au lieu d'attendre le premier mot tapé : sans
@@ -743,6 +753,28 @@ export default function DirectoryClient({
     toggleTheme(rubriqueKey);
     toggleFacetGroup(group.key, optionKey);
     setHomeSubRubrique(null);
+  }
+
+  // Case à cocher d'une sous-rubrique (cuisine, discipline…) dans la page de
+  // sous-rubriques : indépendant du tap direct sur la ligne (qui va toujours
+  // directement aux résultats pour 1 seule option).
+  function toggleSubOptionSelection(key: string) {
+    setSelectedSubOptions((prev) => {
+      const next = new Set(prev);
+      if (next.has(key)) next.delete(key);
+      else next.add(key);
+      return next;
+    });
+  }
+
+  // Bouton « Voir les résultats » de la sélection multiple de sous-rubriques :
+  // combine les options cochées (OU entre elles) au lieu de n'en garder qu'une.
+  function viewSelectedSubOptions(rubriqueKey: string, group: FilterGroup) {
+    if (selectedSubOptions.size === 0) return;
+    toggleTheme(rubriqueKey);
+    setFacetGroups({ [group.key]: new Set(selectedSubOptions) });
+    setHomeSubRubrique(null);
+    setSelectedSubOptions(new Set());
   }
 
   function toggleTheme(key: string) {
@@ -2796,7 +2828,10 @@ export default function DirectoryClient({
                   <p className="text-[15px] font-semibold truncate">{rubriqueLabel}</p>
                 </div>
                 <div className="h-2.5" />
-                <div className="flex flex-col gap-2 sm:max-w-[560px] sm:mx-auto">
+                <p className="text-[12px] text-muted mb-2 px-0.5 sm:max-w-[560px] sm:mx-auto">
+                  Une case cochée à droite permet de combiner plusieurs options (ex. Mauricienne &amp; créole + Européenne &amp; française).
+                </p>
+                <div className="flex flex-col gap-2 pb-20 sm:max-w-[560px] sm:mx-auto">
                   {group.options
                     .filter((o) => (subRubriqueCounts[o.key] || 0) > 0)
                     .map((o) => (
@@ -2808,9 +2843,25 @@ export default function DirectoryClient({
                         label={o.label}
                         count={subRubriqueCounts[o.key] || 0}
                         onClick={() => selectSubRubrique(homeSubRubrique, group, o.key)}
+                        selected={selectedSubOptions.has(o.key)}
+                        onToggleSelect={() => toggleSubOptionSelection(o.key)}
                       />
                     ))}
                 </div>
+                {selectedSubOptions.size > 0 && (
+                  <div
+                    className="fixed inset-x-0 z-40 flex justify-center px-4"
+                    style={{ bottom: "calc(64px + env(safe-area-inset-bottom) + 10px)" }}
+                  >
+                    <button
+                      onClick={() => viewSelectedSubOptions(homeSubRubrique, group)}
+                      className="w-full sm:max-w-[560px] h-[46px] rounded-xl text-[14px] font-semibold text-white shadow-pop active:scale-[.98] transition-transform"
+                      style={{ background: "var(--primary)" }}
+                    >
+                      Voir les résultats ({selectedSubOptions.size} option{selectedSubOptions.size > 1 ? "s" : ""}) ›
+                    </button>
+                  </div>
+                )}
               </div>
             );
           })()}
