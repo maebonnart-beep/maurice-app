@@ -1815,17 +1815,17 @@ export default function DirectoryClient({
               <button
                 onClick={openSearchChoice}
                 aria-label="Rechercher une activité, un lieu, un nom"
-                className="absolute flex flex-col justify-center items-center gap-[1.2%] text-center text-white active:opacity-80 transition-opacity overflow-hidden px-[4%]"
-                style={{ top: "68%", bottom: "10.5%", left: "2%", right: "2%" }}
+                className="absolute flex flex-col justify-center items-center text-center text-white active:opacity-80 transition-opacity overflow-hidden px-[4%]"
+                style={{ top: "68%", bottom: "10.5%", left: "2%", right: "2%", gap: "clamp(2px, 0.5vw, 5px)" }}
               >
-                {/* Tailles en vw (plafonnées via clamp) plutôt qu'en breakpoints
-                    fixes : sur mobile, la largeur du conteneur suit de très
-                    près celle de l'écran, donc le texte suit la même échelle
-                    que la pastille quel que soit le modèle de téléphone —
-                    plus de chevauchement icône/texte sur les écrans étroits. */}
+                {/* Tailles en vw (plafonnées via clamp), budgétées pour tenir
+                    dans la hauteur réelle de la pastille (~10.8% de la
+                    largeur d'écran, fixe quel que soit le recadrage vertical
+                    de l'image) — évite tout chevauchement/débordement sur les
+                    téléphones étroits, contrairement aux breakpoints fixes. */}
                 <span
-                  className="leading-tight font-bold tracking-wide truncate"
-                  style={{ fontSize: "clamp(11px, 3.6vw, 17px)" }}
+                  className="font-bold tracking-wide truncate"
+                  style={{ fontSize: "clamp(10px, 2.8vw, 14px)", lineHeight: 1.15 }}
                 >
                   Trouve ta prochaine adresse
                 </span>
@@ -1833,12 +1833,12 @@ export default function DirectoryClient({
                   className="inline-flex items-center gap-1.5 rounded-pill bg-white font-semibold shrink-0"
                   style={{
                     color: "#0d4a47",
-                    height: "clamp(22px, 7.5vw, 40px)",
-                    padding: "0 clamp(10px, 3.5vw, 20px)",
-                    fontSize: "clamp(10.5px, 3.1vw, 15px)",
+                    height: "clamp(20px, 6vw, 34px)",
+                    padding: "0 clamp(8px, 3vw, 16px)",
+                    fontSize: "clamp(9.5px, 2.6vw, 13px)",
                   }}
                 >
-                  <MagnifyingGlass size={15} weight="bold" className="shrink-0" aria-hidden />
+                  <MagnifyingGlass size={13} weight="bold" className="shrink-0" aria-hidden />
                   Rechercher
                 </span>
               </button>
