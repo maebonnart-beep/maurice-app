@@ -702,8 +702,8 @@ export const SELECTIONS: Selection[] = [
     tagline: "Instituts de beauté, coiffeurs, spas, massages et cours de yoga pour souffler un peu",
     group: "sorti",
     icon: "Sparkle",
-    photoUrl: "https://images.pexels.com/photos/3865560/pexels-photo-3865560.jpeg?auto=compress&cs=tinysrgb&w=800",
-    photoCredit: "Elina Fairytale / Pexels",
+    photoUrl: "https://images.pexels.com/photos/6634828/pexels-photo-6634828.jpeg?auto=compress&cs=tinysrgb&w=800",
+    photoCredit: "Vlada Karpovich / Pexels",
     businessIds: [
       "signature-hair-studio-by-anousha",
       "ishiana-salon-de-beaute",
