@@ -181,10 +181,10 @@ export const FILTER_GROUPS: FilterGroup[] = [
   {
     key: "specialite-repas",
     label: "Spécialité",
-    appliesTo: ["restaurants", "livraisons"],
-    // Options propres à un repas (pas la liste "Type de commerce" des épiceries) :
-    // épiceries fines/boucheries/exotiques-épices n'ont pas de sens pour un
-    // restaurant et n'étaient d'ailleurs utilisées par aucune fiche restaurant.
+    // Retiré des Restaurants (2026-09-17) : ces tags (Vins & spiritueux,
+    // Boulangerie…) ressemblent à des catégories d'épicerie plutôt qu'à de
+    // vraies spécialités de restaurant. Conservé pour Livraisons.
+    appliesTo: ["livraisons"],
     options: [
       { key: "produits-francais", label: "Produits français", emoji: "🇫🇷" },
       { key: "produits-locaux", label: "Produits locaux", emoji: "🥭" },
