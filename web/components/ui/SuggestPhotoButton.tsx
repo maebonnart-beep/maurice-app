@@ -1,22 +1,23 @@
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
-import { Camera, CheckCircle, Copy, PaperPlaneTilt, X } from "@phosphor-icons/react";
+import { Camera, CheckCircle, Copy, PaperPlaneTilt, WarningCircle, X } from "@phosphor-icons/react";
 import { openMailto } from "@/lib/format";
+import { compressImageToBase64 } from "@/lib/compressImage";
 
 const CONTACT_EMAIL = "contact@kotemoris.com";
 
 /**
  * Depuis une fiche existante : envoyer une photo terrain (+ une note) pour
- * compléter cette fiche précise. Même contrainte que AddAddressForm — pas de
- * backend d'écriture, donc partage natif (avec pièce jointe) si possible,
- * sinon mailto (sans pièce jointe, à joindre à la main) : vérification
- * manuelle avant intégration à businesses.json, cf. méthodologie données.
+ * compléter cette fiche précise. Envoyé directement par le serveur (Resend,
+ * photo compressée et jointe en pièce jointe) plutôt que via le partage natif
+ * ou mailto — mêmes raisons que SuggestCommentButton : trop de points de
+ * défaillance côté client (destinataire jamais préréempli par l'API Web
+ * Share, redirection OVH peu fiable pour le mailto).
  *
- * Limite de l'API Web Share : elle ne permet pas de préremplir un
- * destinataire e-mail (contrairement au mailto). Quand le partage natif est
- * utilisé (cas avec photo), l'appli choisie par l'utilisateur ouvre donc un
- * brouillon sans destinataire — d'où le bouton "copier l'adresse" ci-dessous.
+ * Si l'envoi serveur échoue (réseau, photo trop lourde même compressée), on
+ * retombe sur le partage natif (si possible) puis sur mailto — d'où le
+ * bouton "copier l'adresse" qui ne concerne que ce cas de repli.
  */
 export function SuggestPhotoButton({ businessId, businessName }: { businessId: string; businessName: string }) {
   const [open, setOpen] = useState(false);
@@ -24,7 +25,9 @@ export function SuggestPhotoButton({ businessId, businessName }: { businessId: s
   const [note, setNote] = useState("");
   const [sent, setSent] = useState(false);
   const [photoShared, setPhotoShared] = useState(false);
+  const [fellBackToMailto, setFellBackToMailto] = useState(false);
   const [copied, setCopied] = useState(false);
+  const [sending, setSending] = useState(false);
   const fileInputRef = useRef<HTMLInputElement>(null);
 
   async function copyEmail() {
@@ -48,15 +51,12 @@ export function SuggestPhotoButton({ businessId, businessName }: { businessId: s
     setPhoto(null);
     setNote("");
     setSent(false);
+    setPhotoShared(false);
+    setFellBackToMailto(false);
     setCopied(false);
   }
 
-  async function handleSend() {
-    const subject = `Photo pour compléter la fiche — ${businessName}`;
-    const body = [`Fiche : ${businessName} (${businessId})`, note.trim() && `Note : ${note.trim()}`]
-      .filter(Boolean)
-      .join("\n");
-
+  async function shareOrMailtoFallback(subject: string, body: string) {
     if (photo && typeof navigator !== "undefined" && navigator.share && navigator.canShare?.({ files: [photo] })) {
       try {
         await navigator.share({ title: subject, text: `${body}\n\nÀ : ${CONTACT_EMAIL}`, files: [photo] });
@@ -71,7 +71,41 @@ export function SuggestPhotoButton({ businessId, businessName }: { businessId: s
     const mailto = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     openMailto(mailto);
     setPhotoShared(false);
+    setFellBackToMailto(true);
     setSent(true);
+  }
+
+  async function handleSend() {
+    const subject = `Photo pour compléter la fiche — ${businessName}`;
+    const body = [`Fiche : ${businessName} (${businessId})`, note.trim() && `Note : ${note.trim()}`]
+      .filter(Boolean)
+      .join("\n");
+
+    setSending(true);
+    try {
+      const attachment = photo ? await compressImageToBase64(photo).catch(() => null) : null;
+      if (photo && !attachment) {
+        // Photo trop lourde même compressée au maximum : le serveur ne peut pas la transporter.
+        await shareOrMailtoFallback(subject, body);
+        return;
+      }
+
+      const res = await fetch("/api/suggestions", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          subject,
+          body,
+          ...(attachment ? { attachments: [{ filename: "photo.jpg", contentBase64: attachment }] } : {}),
+        }),
+      });
+      if (!res.ok) throw new Error("send failed");
+      setSent(true);
+    } catch {
+      await shareOrMailtoFallback(subject, body);
+    } finally {
+      setSending(false);
+    }
   }
 
   if (!open) {
@@ -90,13 +124,19 @@ export function SuggestPhotoButton({ businessId, businessName }: { businessId: s
     return (
       <div className="flex flex-col items-start gap-1.5 pt-1 border-t border-border">
         <p className="m-0 flex items-center gap-1.5 text-[13px] font-semibold text-primary-deep">
-          <CheckCircle size={16} weight="fill" aria-hidden />
-          Presque fini !
+          {fellBackToMailto || photoShared ? (
+            <WarningCircle size={16} weight="fill" aria-hidden />
+          ) : (
+            <CheckCircle size={16} weight="fill" aria-hidden />
+          )}
+          {fellBackToMailto || photoShared ? "Presque fini !" : "Merci !"}
         </p>
         <p className="m-0 text-[12.5px] text-muted leading-snug">
           {photoShared
-            ? "L'appli qui vient de s'ouvrir ne préremplit pas le destinataire : ajoutez l'adresse ci-dessous avant d'envoyer."
-            : "Le message n'est pas encore parti : ouvrez votre appli mail (regardez dans Brouillons si elle ne s'affiche pas automatiquement), joignez la photo, puis appuyez sur Envoyer."}
+            ? "L'envoi direct a échoué : l'appli qui vient de s'ouvrir ne préremplit pas le destinataire, ajoutez l'adresse ci-dessous avant d'envoyer."
+            : fellBackToMailto
+              ? "L'envoi direct a échoué : votre appli mail va s'ouvrir à la place (regardez dans Brouillons si elle ne s'affiche pas automatiquement), joignez la photo, puis appuyez sur Envoyer."
+              : "Votre photo nous est bien parvenue."}
         </p>
         {photoShared && (
           <button
@@ -166,31 +206,15 @@ export function SuggestPhotoButton({ businessId, businessName }: { businessId: s
         className="w-full px-3.5 py-2.5 rounded-xl border border-border bg-surface text-ink text-[13.5px] shadow-sm focus:outline-none focus:border-primary resize-none"
       />
 
-      {photo && (
-        <div className="flex items-center justify-between gap-2 rounded-xl bg-primary-tint/40 px-3 py-2">
-          <p className="m-0 text-[12px] text-primary-deep leading-snug">
-            Avec une photo, le partage n'ajoute pas le destinataire automatiquement : copiez cette adresse avant d'envoyer.
-          </p>
-          <button
-            type="button"
-            onClick={copyEmail}
-            className="shrink-0 inline-flex items-center gap-1 text-[12px] font-semibold text-primary-deep bg-white/70 rounded-lg px-2 py-1"
-          >
-            <Copy size={13} weight="bold" aria-hidden />
-            {copied ? "Copié !" : "Copier"}
-          </button>
-        </div>
-      )}
-
       <button
         type="button"
         onClick={handleSend}
-        disabled={!photo && !note.trim()}
+        disabled={(!photo && !note.trim()) || sending}
         className="w-full h-[42px] rounded-xl font-semibold text-[13.5px] text-on-accent flex items-center justify-center gap-2 active:scale-[.98] transition-transform disabled:opacity-40"
         style={{ background: "var(--accent)" }}
       >
         <PaperPlaneTilt size={16} weight="bold" aria-hidden />
-        Envoyer
+        {sending ? "Envoi…" : "Envoyer"}
       </button>
     </div>
   );

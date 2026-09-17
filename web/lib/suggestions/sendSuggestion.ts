@@ -7,10 +7,12 @@ export async function sendSuggestionEmail({
   subject,
   html,
   replyTo,
+  attachments,
 }: {
   subject: string;
   html: string;
   replyTo?: string;
+  attachments?: { filename: string; content: string }[];
 }): Promise<{ ok: boolean }> {
   const apiKey = process.env.RESEND_API_KEY;
   const adminEmail = process.env.ADMIN_NOTIFICATION_EMAIL;
@@ -29,6 +31,7 @@ export async function sendSuggestionEmail({
         ...(replyTo ? { reply_to: replyTo } : {}),
         subject,
         html,
+        ...(attachments && attachments.length > 0 ? { attachments } : {}),
       }),
     });
     if (!res.ok) {
