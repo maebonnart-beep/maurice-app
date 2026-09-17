@@ -166,6 +166,22 @@ export function SuggestPhotoButton({ businessId, businessName }: { businessId: s
         className="w-full px-3.5 py-2.5 rounded-xl border border-border bg-surface text-ink text-[13.5px] shadow-sm focus:outline-none focus:border-primary resize-none"
       />
 
+      {photo && (
+        <div className="flex items-center justify-between gap-2 rounded-xl bg-primary-tint/40 px-3 py-2">
+          <p className="m-0 text-[12px] text-primary-deep leading-snug">
+            Avec une photo, le partage n'ajoute pas le destinataire automatiquement : copiez cette adresse avant d'envoyer.
+          </p>
+          <button
+            type="button"
+            onClick={copyEmail}
+            className="shrink-0 inline-flex items-center gap-1 text-[12px] font-semibold text-primary-deep bg-white/70 rounded-lg px-2 py-1"
+          >
+            <Copy size={13} weight="bold" aria-hidden />
+            {copied ? "Copié !" : "Copier"}
+          </button>
+        </div>
+      )}
+
       <button
         type="button"
         onClick={handleSend}
