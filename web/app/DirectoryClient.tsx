@@ -1682,10 +1682,12 @@ export default function DirectoryClient({
   );
   // « Ouvert maintenant » : sorti de la rangée défilante ci-dessus (il y était
   // tronqué sur mobile, faute de place à côté d'« Autour de moi » + la zone).
-  // Traité en bandeau à part entière (fond teinté accent même au repos, coins
-  // moins arrondis qu'une pill, police en gras) pour bien le distinguer visuellement
-  // des chips teal « Autour de moi »/zone au-dessus, sur sa propre ligne pleine
-  // largeur pour rester entièrement lisible.
+  // Traité en bandeau à part entière, sur sa propre ligne pleine largeur pour
+  // rester entièrement lisible. État repos volontairement neutre (gris, comme
+  // les autres chips inactives) pour trancher nettement avec l'état actif
+  // (fond accent plein + switch visuel à droite) : avant, les deux états
+  // utilisaient tous les deux un fond teinté accent et se distinguaient trop
+  // peu l'un de l'autre.
   const openNowControl = (
     <button
       onClick={() => setOpenNow((v) => !v)}
@@ -1695,11 +1697,27 @@ export default function DirectoryClient({
       style={
         openNow
           ? { background: "var(--accent)", borderColor: "var(--accent)", color: "var(--on-accent)" }
-          : { background: "color-mix(in srgb, var(--accent) 14%, var(--surface))", borderColor: "color-mix(in srgb, var(--accent) 45%, transparent)", color: "var(--ink)" }
+          : { background: "var(--surface-2)", borderColor: "transparent", color: "var(--ink)" }
       }
     >
       <Clock size={16} weight={openNow ? "fill" : "regular"} aria-hidden />
       Ouvert maintenant
+      <span className="ml-auto flex items-center gap-1.5 text-[11px] font-semibold uppercase tracking-wide opacity-80">
+        {openNow ? "Activé" : "Désactivé"}
+        <span
+          aria-hidden
+          className="relative inline-flex h-4 w-7 shrink-0 items-center rounded-full transition-colors"
+          style={{ background: openNow ? "var(--on-accent)" : "color-mix(in srgb, var(--ink) 25%, transparent)" }}
+        >
+          <span
+            className="absolute h-3 w-3 rounded-full transition-transform"
+            style={{
+              background: openNow ? "var(--accent)" : "var(--surface)",
+              transform: openNow ? "translateX(14px)" : "translateX(2px)",
+            }}
+          />
+        </span>
+      </span>
     </button>
   );
 
