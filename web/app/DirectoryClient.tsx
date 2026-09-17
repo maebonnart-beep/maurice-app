@@ -805,14 +805,29 @@ export default function DirectoryClient({
   function viewSelectedSubOptions(rubriqueKey: string, group: FilterGroup) {
     if (selectedSubOptions.size === 0) return;
     toggleTheme(rubriqueKey);
-    setFacetGroups({ [group.key]: new Set(selectedSubOptions) });
+    // Fusionne (et non remplace) : les autres groupes de filtre encore
+    // applicables à `rubriqueKey` (ex. Ambiance pour Restaurants), conservés
+    // par toggleTheme ci-dessus, ne doivent pas être écrasés par ce seul groupe.
+    setFacetGroups((prev) => ({ ...prev, [group.key]: new Set(selectedSubOptions) }));
     setHomeSubRubrique(null);
     setSelectedSubOptions(new Set());
   }
 
   function toggleTheme(key: string) {
     setActiveThemes((prev) => (prev.has(key) ? new Set() : new Set([key])));
-    resetFacets(); // les facettes ne valent que pour la rubrique courante
+    // Les facettes ne valent que pour la rubrique courante : on retire celles
+    // d'une rubrique précédente, mais on garde celles encore pertinentes pour
+    // `key` (ex. l'Ambiance déjà cochée pour Restaurants reste active si on
+    // revient sur Restaurants, y compris via la page de spécialités/cuisine).
+    setFacetGroups((prev) => {
+      const next: Record<string, Set<string>> = {};
+      for (const g of FILTER_GROUPS) {
+        if (g.appliesTo.includes(key) && prev[g.key]) next[g.key] = prev[g.key];
+      }
+      return next;
+    });
+    setFacetPrices(new Set());
+    setFacetBadges(new Set());
     // On conserve homeCategory : le bouton « Retour » de la page de résultats
     // ramène ainsi à la liste de rubriques de la bonne catégorie.
   }
@@ -847,7 +862,19 @@ export default function DirectoryClient({
   function viewSelectedRubriques() {
     if (selectedRubriques.size === 0) return;
     setActiveThemes(new Set(selectedRubriques));
-    resetFacets();
+    // Comme pour toggleTheme : on ne garde que les facettes encore
+    // pertinentes pour au moins une des rubriques cochées (ex. l'Ambiance de
+    // Restaurants reste active si Restaurants fait partie de la sélection
+    // combinée), au lieu de tout effacer.
+    setFacetGroups((prev) => {
+      const next: Record<string, Set<string>> = {};
+      for (const g of FILTER_GROUPS) {
+        if (g.appliesTo.some((k) => selectedRubriques.has(k)) && prev[g.key]) next[g.key] = prev[g.key];
+      }
+      return next;
+    });
+    setFacetPrices(new Set());
+    setFacetBadges(new Set());
     setSelectedRubriques(new Set());
   }
 
