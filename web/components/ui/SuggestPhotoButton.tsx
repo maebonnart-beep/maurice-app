@@ -1,8 +1,10 @@
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
-import { Camera, CheckCircle, PaperPlaneTilt, X } from "@phosphor-icons/react";
+import { Camera, CheckCircle, Copy, PaperPlaneTilt, X } from "@phosphor-icons/react";
 import { openMailto } from "@/lib/format";
+
+const CONTACT_EMAIL = "contact@kotemoris.com";
 
 /**
  * Depuis une fiche existante : envoyer une photo terrain (+ une note) pour
@@ -10,6 +12,11 @@ import { openMailto } from "@/lib/format";
  * backend d'écriture, donc partage natif (avec pièce jointe) si possible,
  * sinon mailto (sans pièce jointe, à joindre à la main) : vérification
  * manuelle avant intégration à businesses.json, cf. méthodologie données.
+ *
+ * Limite de l'API Web Share : elle ne permet pas de préremplir un
+ * destinataire e-mail (contrairement au mailto). Quand le partage natif est
+ * utilisé (cas avec photo), l'appli choisie par l'utilisateur ouvre donc un
+ * brouillon sans destinataire — d'où le bouton "copier l'adresse" ci-dessous.
  */
 export function SuggestPhotoButton({ businessId, businessName }: { businessId: string; businessName: string }) {
   const [open, setOpen] = useState(false);
@@ -17,7 +24,17 @@ export function SuggestPhotoButton({ businessId, businessName }: { businessId: s
   const [note, setNote] = useState("");
   const [sent, setSent] = useState(false);
   const [photoShared, setPhotoShared] = useState(false);
+  const [copied, setCopied] = useState(false);
   const fileInputRef = useRef<HTMLInputElement>(null);
+
+  async function copyEmail() {
+    try {
+      await navigator.clipboard.writeText(CONTACT_EMAIL);
+      setCopied(true);
+    } catch {
+      // Presse-papiers indisponible (permissions, contexte non sécurisé…) : tant pis.
+    }
+  }
 
   const photoUrl = useMemo(() => (photo ? URL.createObjectURL(photo) : null), [photo]);
   useEffect(() => {
@@ -31,6 +48,7 @@ export function SuggestPhotoButton({ businessId, businessName }: { businessId: s
     setPhoto(null);
     setNote("");
     setSent(false);
+    setCopied(false);
   }
 
   async function handleSend() {
@@ -41,7 +59,7 @@ export function SuggestPhotoButton({ businessId, businessName }: { businessId: s
 
     if (photo && typeof navigator !== "undefined" && navigator.share && navigator.canShare?.({ files: [photo] })) {
       try {
-        await navigator.share({ title: subject, text: `${body}\n\nÀ : contact@kotemoris.com`, files: [photo] });
+        await navigator.share({ title: subject, text: `${body}\n\nÀ : ${CONTACT_EMAIL}`, files: [photo] });
         setPhotoShared(true);
         setSent(true);
         return;
@@ -50,7 +68,7 @@ export function SuggestPhotoButton({ businessId, businessName }: { businessId: s
       }
     }
 
-    const mailto = `mailto:contact@kotemoris.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    const mailto = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     openMailto(mailto);
     setPhotoShared(false);
     setSent(true);
@@ -77,9 +95,19 @@ export function SuggestPhotoButton({ businessId, businessName }: { businessId: s
         </p>
         <p className="m-0 text-[12.5px] text-muted leading-snug">
           {photoShared
-            ? "Il ne reste qu'à valider l'envoi dans l'appli qui vient de s'ouvrir."
+            ? "L'appli qui vient de s'ouvrir ne préremplit pas le destinataire : ajoutez l'adresse ci-dessous avant d'envoyer."
             : "Votre appli mail va s'ouvrir : pensez à joindre la photo, puis envoyer."}
         </p>
+        {photoShared && (
+          <button
+            type="button"
+            onClick={copyEmail}
+            className="inline-flex items-center gap-1.5 text-[12.5px] font-semibold text-primary-deep bg-primary-tint/40 rounded-lg px-2.5 py-1.5"
+          >
+            <Copy size={14} weight="bold" aria-hidden />
+            {copied ? "Adresse copiée !" : `Copier ${CONTACT_EMAIL}`}
+          </button>
+        )}
         <button onClick={reset} className="text-[12.5px] font-semibold text-primary underline underline-offset-2">
           Fermer
         </button>
