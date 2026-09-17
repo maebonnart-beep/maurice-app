@@ -179,7 +179,7 @@ export function CategoryRow({
   return (
     <div className="w-full flex items-center gap-2 rounded-2xl border border-border bg-surface pr-2 shadow-sm">
       <button
-        onClick={onClick}
+        onClick={onToggleSelect ?? onClick}
         className="flex-1 min-w-0 flex items-center gap-3 px-3 py-2.5 text-left active:scale-[.99] transition-transform"
       >
         <span
