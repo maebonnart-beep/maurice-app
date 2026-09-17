@@ -45,9 +45,12 @@ export function SuggestCommentButton({ businessId, businessName }: { businessId:
       <div className="flex flex-col items-start gap-1.5 pt-1 border-t border-border">
         <p className="m-0 flex items-center gap-1.5 text-[13px] font-semibold text-primary-deep">
           <CheckCircle size={16} weight="fill" aria-hidden />
-          Merci !
+          Presque fini !
         </p>
-        <p className="m-0 text-[12.5px] text-muted leading-snug">Votre appli mail va s'ouvrir : il ne reste plus qu'à envoyer.</p>
+        <p className="m-0 text-[12.5px] text-muted leading-snug">
+          Le message n'est pas encore parti : ouvrez votre appli mail (regardez dans Brouillons si elle ne s'affiche pas
+          automatiquement) et appuyez sur Envoyer pour qu'il nous arrive vraiment.
+        </p>
         <button onClick={reset} className="text-[12.5px] font-semibold text-primary underline underline-offset-2">
           Fermer
         </button>

@@ -91,12 +91,12 @@ export function SuggestPhotoButton({ businessId, businessName }: { businessId: s
       <div className="flex flex-col items-start gap-1.5 pt-1 border-t border-border">
         <p className="m-0 flex items-center gap-1.5 text-[13px] font-semibold text-primary-deep">
           <CheckCircle size={16} weight="fill" aria-hidden />
-          Merci !
+          Presque fini !
         </p>
         <p className="m-0 text-[12.5px] text-muted leading-snug">
           {photoShared
             ? "L'appli qui vient de s'ouvrir ne préremplit pas le destinataire : ajoutez l'adresse ci-dessous avant d'envoyer."
-            : "Votre appli mail va s'ouvrir : pensez à joindre la photo, puis envoyer."}
+            : "Le message n'est pas encore parti : ouvrez votre appli mail (regardez dans Brouillons si elle ne s'affiche pas automatiquement), joignez la photo, puis appuyez sur Envoyer."}
         </p>
         {photoShared && (
           <button

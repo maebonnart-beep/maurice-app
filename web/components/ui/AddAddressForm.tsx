@@ -116,14 +116,14 @@ export function AddAddressForm() {
         <span className="w-14 h-14 rounded-2xl bg-primary-tint text-primary-deep flex items-center justify-center">
           <CheckCircle size={28} weight="duotone" aria-hidden />
         </span>
-        <p className="font-serif text-lg font-semibold leading-tight">Merci !</p>
+        <p className="font-serif text-lg font-semibold leading-tight">Presque fini !</p>
         <p className="text-[13px] text-muted leading-snug">
           {photoShared
-            ? `Votre message avec ${photos.length > 1 ? "les photos" : "la photo"} est prêt à être envoyé — il ne reste qu'à valider dans l'appli qui vient de s'ouvrir.`
+            ? `Votre message avec ${photos.length > 1 ? "les photos" : "la photo"} n'est pas encore parti — validez l'envoi dans l'appli qui vient de s'ouvrir.`
             : photos.length > 0
-              ? `Votre appli mail va s'ouvrir avec les infos pré-remplies : il ne reste qu'à joindre ${photos.length > 1 ? "vos photos" : "votre photo"} manuellement et envoyer.`
-              : "Votre appli mail va s'ouvrir avec les infos pré-remplies : il ne reste qu'à envoyer."}
-          {" "}L'adresse sera vérifiée puis ajoutée à l'annuaire.
+              ? `Le message n'est pas encore parti : ouvrez votre appli mail (regardez dans Brouillons si elle ne s'affiche pas automatiquement), joignez ${photos.length > 1 ? "vos photos" : "votre photo"} manuellement, puis appuyez sur Envoyer.`
+              : "Le message n'est pas encore parti : ouvrez votre appli mail (regardez dans Brouillons si elle ne s'affiche pas automatiquement) et appuyez sur Envoyer."}
+          {" "}Une fois reçue, l'adresse sera vérifiée puis ajoutée à l'annuaire.
         </p>
         <button
           type="button"
