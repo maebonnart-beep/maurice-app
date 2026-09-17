@@ -20,7 +20,7 @@ import {
   Eyeglasses, TestTube, PoliceCar, Mailbox, ShieldCheck, Money, Pill,
   IdentificationCard, Camera, Taxi, Car, DeviceMobile, WifiHigh, Suitcase,
   Gauge, Scroll, Gavel, Calculator, WashingMachine, Flag, FlowerLotus,
-  Scissors, Needle, PersonSimpleTaiChi, Plant, Handshake, Motorcycle, Medal,
+  Scissors, Needle, PersonSimpleTaiChi, Plant, Handshake, Motorcycle, Medal, Egg,
   MaskHappy, HandHeart, Coins, Diamond, MapPin, ArrowUp, ArrowDown, ArrowLeft, ArrowRight,
   Target, GlobeHemisphereWest, Jar,
   Clock, Phone, EnvelopeSimple, WhatsappLogo, Globe, NavigationArrow, Ruler,
@@ -95,7 +95,8 @@ export const ICON_MAP: Record<string, Icon> = {
   // Sous-rubriques restaurées (perdues lors de la refonte du 17/08/2026)
   "grandes-surfaces": Storefront, boulangeries: Bread, "epiceries-specialisees": Basket,
   boucheries: Cow, "fruits-et-legumes": Carrot, poissonneries: Fish, marches: Basket,
-  bars: Martini, "cafes-terrasses": Coffee, "snacks-plage": Hamburger, glaciers: IceCream,
+  bars: Martini, "cafes-terrasses": Coffee, "petit-dej-lunch": Egg,
+  "snacks-plage": Hamburger, glaciers: IceCream,
   "tables-hotes": CookingPot, "chefs-domicile": ChefHat, "cours-de-cuisine": ChefHat,
   plages: Umbrella, "parcs-nationaux-cascades": Mountains, "parcs-botaniques": Flower,
   "parcs-animaliers": PawPrint, "parcs-aventures": TreePalm,
