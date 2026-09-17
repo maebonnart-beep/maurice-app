@@ -45,6 +45,7 @@ import { SearchInput } from "@/components/ui/SearchInput";
 import { CategoryRow } from "@/components/ui/CategoryRow";
 import { BusinessCard } from "@/components/ui/BusinessCard";
 import { BusinessDetail } from "@/components/ui/BusinessDetail";
+import { ContactUsButton } from "@/components/ui/ContactUsButton";
 import { useFavorites, type FavoriteStatus } from "@/lib/favorites";
 import { useFavoriteSelections } from "@/lib/favoriteSelections";
 import { usePreferences } from "@/lib/preferences";
@@ -125,7 +126,6 @@ import {
   ShieldCheck,
   Package,
   Crown,
-  EnvelopeSimple,
   Clock,
 } from "@phosphor-icons/react";
 import type { Icon } from "@phosphor-icons/react";
@@ -3798,13 +3798,7 @@ export default function DirectoryClient({
                     </button>
                   </>
                 )}
-                <a
-                  href="mailto:contact@kotemoris.com"
-                  className="w-full flex items-center gap-3 px-4 py-3.5 text-left active:bg-surface-2 transition-colors"
-                >
-                  <EnvelopeSimple size={18} weight="regular" className="text-muted" aria-hidden />
-                  <span className="flex-1 text-[13.5px] text-ink">Nous contacter</span>
-                </a>
+                <ContactUsButton />
               </div>
               {backupFeedback && (
                 <p className="text-center text-[12.5px] font-semibold text-primary-deep -mt-1.5">{backupFeedback}</p>

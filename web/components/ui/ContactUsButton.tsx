@@ -1,35 +1,31 @@
 "use client";
 
 import { useState } from "react";
-import { CheckCircle, ChatText, PaperPlaneTilt, WarningCircle, X } from "@phosphor-icons/react";
+import { CheckCircle, EnvelopeSimple, PaperPlaneTilt, WarningCircle, X } from "@phosphor-icons/react";
 import { openMailto } from "@/lib/format";
 
 /**
- * Depuis une fiche existante : proposer un commentaire Koté Moris (ou une
- * correction) sur cette fiche précise. Envoyé directement par le serveur
- * (Resend) plutôt que via mailto : un mailto ouvre l'appli mail de
- * l'utilisateur, qui doit encore cliquer Envoyer lui-même, et le message
- * passait ensuite par une redirection OVH peu fiable — trop de points de
- * défaillance pour être exploitable. Si l'envoi serveur échoue (réseau…),
- * on retombe sur le mailto en dernier recours.
+ * Entrée "Nous contacter" du menu Mon compte. Même logique que
+ * SuggestCommentButton : envoi direct par le serveur (Resend), avec repli
+ * sur mailto si l'appel serveur échoue.
  */
-export function SuggestCommentButton({ businessId, businessName }: { businessId: string; businessName: string }) {
+export function ContactUsButton() {
   const [open, setOpen] = useState(false);
-  const [comment, setComment] = useState("");
+  const [message, setMessage] = useState("");
   const [sent, setSent] = useState(false);
   const [fellBackToMailto, setFellBackToMailto] = useState(false);
   const [sending, setSending] = useState(false);
 
   function reset() {
     setOpen(false);
-    setComment("");
+    setMessage("");
     setSent(false);
     setFellBackToMailto(false);
   }
 
   async function handleSend() {
-    const subject = `Suggestion de commentaire — ${businessName}`;
-    const body = [`Fiche : ${businessName} (${businessId})`, `Commentaire : ${comment.trim()}`].join("\n");
+    const subject = "Nous contacter — Koté Moris";
+    const body = message.trim();
 
     setSending(true);
     try {
@@ -53,17 +49,17 @@ export function SuggestCommentButton({ businessId, businessName }: { businessId:
     return (
       <button
         onClick={() => setOpen(true)}
-        className="self-start inline-flex items-center gap-1.5 text-[12.5px] font-semibold text-primary-deep active:scale-[.98]"
+        className="w-full flex items-center gap-3 px-4 py-3.5 text-left active:bg-surface-2 transition-colors"
       >
-        <ChatText size={15} weight="bold" aria-hidden />
-        Suggérer un commentaire pour cette fiche
+        <EnvelopeSimple size={18} weight="regular" className="text-muted" aria-hidden />
+        <span className="flex-1 text-[13.5px] text-ink">Nous contacter</span>
       </button>
     );
   }
 
   if (sent) {
     return (
-      <div className="flex flex-col items-start gap-1.5 pt-1 border-t border-border">
+      <div className="flex flex-col items-start gap-1.5 px-4 py-3.5">
         <p className="m-0 flex items-center gap-1.5 text-[13px] font-semibold text-primary-deep">
           {fellBackToMailto ? (
             <WarningCircle size={16} weight="fill" aria-hidden />
@@ -75,7 +71,7 @@ export function SuggestCommentButton({ businessId, businessName }: { businessId:
         <p className="m-0 text-[12.5px] text-muted leading-snug">
           {fellBackToMailto
             ? "L'envoi direct a échoué : votre appli mail va s'ouvrir à la place (regardez dans Brouillons si elle ne s'affiche pas automatiquement), il ne reste qu'à appuyer sur Envoyer."
-            : "Votre commentaire nous est bien parvenu."}
+            : "Votre message nous est bien parvenu."}
         </p>
         <button onClick={reset} className="text-[12.5px] font-semibold text-primary underline underline-offset-2">
           Fermer
@@ -85,18 +81,18 @@ export function SuggestCommentButton({ businessId, businessName }: { businessId:
   }
 
   return (
-    <div className="flex flex-col gap-2.5 pt-2 border-t border-border">
+    <div className="flex flex-col gap-2.5 px-4 py-3.5">
       <div className="flex items-center justify-between">
-        <p className="m-0 text-[13px] font-bold text-ink">Suggérer un commentaire pour cette fiche</p>
+        <p className="m-0 text-[13px] font-bold text-ink">Nous contacter</p>
         <button onClick={reset} aria-label="Annuler" className="text-muted">
           <X size={16} weight="bold" aria-hidden />
         </button>
       </div>
 
       <textarea
-        value={comment}
-        onChange={(e) => setComment(e.target.value)}
-        placeholder="Votre avis, une correction, un bon plan…"
+        value={message}
+        onChange={(e) => setMessage(e.target.value)}
+        placeholder="Une question, une remarque…"
         rows={3}
         className="w-full px-3.5 py-2.5 rounded-xl border border-border bg-surface text-ink text-[13.5px] shadow-sm focus:outline-none focus:border-primary resize-none"
       />
@@ -104,7 +100,7 @@ export function SuggestCommentButton({ businessId, businessName }: { businessId:
       <button
         type="button"
         onClick={handleSend}
-        disabled={!comment.trim() || sending}
+        disabled={!message.trim() || sending}
         className="w-full h-[42px] rounded-xl font-semibold text-[13.5px] text-on-accent flex items-center justify-center gap-2 active:scale-[.98] transition-transform disabled:opacity-40"
         style={{ background: "var(--accent)" }}
       >

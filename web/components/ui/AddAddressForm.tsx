@@ -32,6 +32,8 @@ export function AddAddressForm() {
   const [coords, setCoords] = useState<{ lat: number; lng: number } | null>(null);
   const [sent, setSent] = useState(false);
   const [photoShared, setPhotoShared] = useState(false);
+  const [fellBackToMailto, setFellBackToMailto] = useState(false);
+  const [sending, setSending] = useState(false);
 
   const { addSuggestion } = useSuggestions();
   const [photos, setPhotos] = useState<File[]>([]);
@@ -86,28 +88,50 @@ export function AddAddressForm() {
 
     addSuggestion(nom.trim(), categorie);
 
-    // Un lien mailto ne peut pas transporter de pièce jointe : si des photos
-    // sont choisies, on passe par le partage natif (Mail/WhatsApp/Messages...),
-    // qui sait les attacher ; sinon on retombe sur le mailto classique.
-    if (photos.length > 0 && typeof navigator !== "undefined" && navigator.share && navigator.canShare?.({ files: photos })) {
-      try {
-        await navigator.share({
-          title: subject,
-          text: `${body}\n\nÀ : contact@kotemoris.com`,
-          files: photos,
-        });
-        setPhotoShared(true);
-        setSent(true);
-        return;
-      } catch {
-        // Partage annulé ou indisponible : on continue sur le mailto ci-dessous.
+    // Un e-mail envoyé par le serveur (Resend) ne peut pas transporter de pièce
+    // jointe fournie par le navigateur : si des photos sont choisies, on passe
+    // par le partage natif (Mail/WhatsApp/Messages...) ou, à défaut, par
+    // mailto (l'utilisateur joint la photo à la main). Sans photo, on envoie
+    // directement depuis le serveur, avec repli sur mailto si ça échoue.
+    if (photos.length > 0) {
+      if (typeof navigator !== "undefined" && navigator.share && navigator.canShare?.({ files: photos })) {
+        try {
+          await navigator.share({
+            title: subject,
+            text: `${body}\n\nÀ : contact@kotemoris.com`,
+            files: photos,
+          });
+          setPhotoShared(true);
+          setSent(true);
+          return;
+        } catch {
+          // Partage annulé ou indisponible : on continue sur le mailto ci-dessous.
+        }
       }
+      const mailto = `mailto:contact@kotemoris.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      openMailto(mailto);
+      setPhotoShared(false);
+      setSent(true);
+      return;
     }
 
-    const mailto = `mailto:contact@kotemoris.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    openMailto(mailto);
-    setPhotoShared(false);
-    setSent(true);
+    setSending(true);
+    try {
+      const res = await fetch("/api/suggestions", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ subject, body }),
+      });
+      if (!res.ok) throw new Error("send failed");
+      setSent(true);
+    } catch {
+      const mailto = `mailto:contact@kotemoris.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      openMailto(mailto);
+      setFellBackToMailto(true);
+      setSent(true);
+    } finally {
+      setSending(false);
+    }
   }
 
   if (sent) {
@@ -116,13 +140,17 @@ export function AddAddressForm() {
         <span className="w-14 h-14 rounded-2xl bg-primary-tint text-primary-deep flex items-center justify-center">
           <CheckCircle size={28} weight="duotone" aria-hidden />
         </span>
-        <p className="font-serif text-lg font-semibold leading-tight">Presque fini !</p>
+        <p className="font-serif text-lg font-semibold leading-tight">
+          {photoShared || photos.length > 0 || fellBackToMailto ? "Presque fini !" : "Merci !"}
+        </p>
         <p className="text-[13px] text-muted leading-snug">
           {photoShared
             ? `Votre message avec ${photos.length > 1 ? "les photos" : "la photo"} n'est pas encore parti — validez l'envoi dans l'appli qui vient de s'ouvrir.`
             : photos.length > 0
               ? `Le message n'est pas encore parti : ouvrez votre appli mail (regardez dans Brouillons si elle ne s'affiche pas automatiquement), joignez ${photos.length > 1 ? "vos photos" : "votre photo"} manuellement, puis appuyez sur Envoyer.`
-              : "Le message n'est pas encore parti : ouvrez votre appli mail (regardez dans Brouillons si elle ne s'affiche pas automatiquement) et appuyez sur Envoyer."}
+              : fellBackToMailto
+                ? "L'envoi direct a échoué : votre appli mail va s'ouvrir à la place (regardez dans Brouillons si elle ne s'affiche pas automatiquement), il ne reste qu'à appuyer sur Envoyer."
+                : "Votre suggestion nous est bien parvenue."}
           {" "}Une fois reçue, l'adresse sera vérifiée puis ajoutée à l'annuaire.
         </p>
         <button
@@ -130,6 +158,7 @@ export function AddAddressForm() {
           onClick={() => {
             setSent(false);
             setPhotos([]);
+            setFellBackToMailto(false);
           }}
           className="text-[13px] font-semibold text-primary underline underline-offset-2"
         >
@@ -361,12 +390,12 @@ export function AddAddressForm() {
 
       <button
         type="submit"
-        disabled={!nom.trim() || !categorie}
+        disabled={!nom.trim() || !categorie || sending}
         className="w-full h-[48px] rounded-xl font-semibold text-[15px] text-on-accent flex items-center justify-center gap-2 active:scale-[.98] transition-transform disabled:opacity-40"
         style={{ background: "var(--accent)" }}
       >
         <PaperPlaneTilt size={18} weight="bold" aria-hidden />
-        Envoyer la suggestion
+        {sending ? "Envoi…" : "Envoyer la suggestion"}
       </button>
     </form>
   );
