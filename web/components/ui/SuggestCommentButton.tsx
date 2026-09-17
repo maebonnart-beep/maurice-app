@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { CheckCircle, ChatText, PaperPlaneTilt, X } from "@phosphor-icons/react";
+import { openMailto } from "@/lib/format";
 
 /**
  * Depuis une fiche existante : proposer un commentaire Koté Moris (ou une
@@ -23,7 +24,7 @@ export function SuggestCommentButton({ businessId, businessName }: { businessId:
   function handleSend() {
     const subject = `Suggestion de commentaire — ${businessName}`;
     const body = [`Fiche : ${businessName} (${businessId})`, `Commentaire : ${comment.trim()}`].join("\n");
-    window.location.href = `mailto:contact@kotemoris.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    openMailto(`mailto:contact@kotemoris.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`);
     setSent(true);
   }
 

@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import { Camera, CheckCircle, PaperPlaneTilt, X } from "@phosphor-icons/react";
+import { openMailto } from "@/lib/format";
 
 /**
  * Depuis une fiche existante : envoyer une photo terrain (+ une note) pour
@@ -50,7 +51,7 @@ export function SuggestPhotoButton({ businessId, businessName }: { businessId: s
     }
 
     const mailto = `mailto:contact@kotemoris.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    window.location.href = mailto;
+    openMailto(mailto);
     setPhotoShared(false);
     setSent(true);
   }

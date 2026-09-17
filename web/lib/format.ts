@@ -60,6 +60,17 @@ export function emailContactHref(email: string): string {
   return `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(contactMessage())}`;
 }
 
+// `window.location.href = "mailto:…"` navigue la page courante : en PWA
+// (mode standalone), revenir de l'appli mail après ça recharge parfois
+// l'appli à blanc, et le clic sur "Envoyer" semble n'avoir rien fait. Un
+// clic sur un <a> ne fait pas naviguer la page hôte, donc l'état React
+// (l'écran "Merci !") reste intact au retour.
+export function openMailto(mailtoUrl: string): void {
+  const a = document.createElement("a");
+  a.href = mailtoUrl;
+  a.click();
+}
+
 // Les numéros mobiles mauriciens (+230 5xxx xxxx) sont presque toujours
 // joignables sur WhatsApp, contrairement aux lignes fixes.
 export const MU_MOBILE_RE = /\+230\s?5\d{3}\s?\d{4}/;

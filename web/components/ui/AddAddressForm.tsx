@@ -5,6 +5,7 @@ import { MapPin, PaperPlaneTilt, CheckCircle, Camera, X } from "@phosphor-icons/
 import { CATEGORIES, SUBCATEGORIES } from "@/data/categories";
 import type { CategoryKey } from "@/lib/types";
 import { useSuggestions } from "@/lib/suggestions";
+import { openMailto } from "@/lib/format";
 
 const inputClass =
   "w-full h-[46px] px-4 rounded-xl border border-border bg-surface text-ink text-[15px] shadow-sm focus:outline-none focus:border-primary";
@@ -104,7 +105,7 @@ export function AddAddressForm() {
     }
 
     const mailto = `mailto:contact@kotemoris.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    window.location.href = mailto;
+    openMailto(mailto);
     setPhotoShared(false);
     setSent(true);
   }
