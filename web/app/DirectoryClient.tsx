@@ -172,20 +172,22 @@ const COMMON_HOME_CATEGORIES = CATEGORIES.filter((c) =>
 );
 
 // Écran « Explorer par catégorie » : visuel unique (planche fournie par la
-// cliente, cf. public/explorer-categories.webp — 1024×1536) plutôt que des
-// lignes recomposées en CSS. Chaque ligne est cliquable via une zone
-// invisible positionnée en % sur l'image (mêmes coordonnées que le bandeau
-// d'accueil, cf. header). Coordonnées mesurées sur l'image source.
+// cliente), recadré pour ne garder que les 9 lignes catégories — sans
+// l'encart de titre du haut ni le bandeau de fin (cf.
+// public/explorer-categories-rows.webp, recadrage de explorer-categories.webp
+// entre y=180 et y=1404 sur les 1536px d'origine). Chaque ligne est cliquable
+// via une zone invisible positionnée en % sur l'image. Coordonnées
+// recalculées pour ce recadrage (1024×1224).
 const EXPLORER_CATEGORIES_HOTSPOTS: { key: CategoryKey | "seconde-main"; label: string; top: number; height: number }[] = [
-  { key: "manger-boire", label: "Manger & boire", top: 11.7, height: 9.0 },
-  { key: "sortir-decouvrir", label: "Sortir & découvrir", top: 21.3, height: 8.0 },
-  { key: "faire-du-sport", label: "Faire du sport", top: 29.7, height: 8.2 },
-  { key: "sante-bien-etre", label: "Santé & bien-être", top: 38.3, height: 8.0 },
-  { key: "acheter-equiper", label: "Acheter & s'équiper", top: 46.9, height: 8.2 },
-  { key: "vie-pratique", label: "Vie pratique", top: 55.5, height: 8.4 },
-  { key: "famille-travail", label: "Famille & Travail", top: 64.5, height: 8.8 },
-  { key: "agenda", label: "Événements", top: 73.8, height: 8.2 },
-  { key: "seconde-main", label: "Seconde main", top: 82.6, height: 8.8 },
+  { key: "manger-boire", label: "Manger & boire", top: 0, height: 11.3 },
+  { key: "sortir-decouvrir", label: "Sortir & découvrir", top: 12.0, height: 10.0 },
+  { key: "faire-du-sport", label: "Faire du sport", top: 22.5, height: 10.3 },
+  { key: "sante-bien-etre", label: "Santé & bien-être", top: 33.3, height: 10.0 },
+  { key: "acheter-equiper", label: "Acheter & s'équiper", top: 44.1, height: 10.3 },
+  { key: "vie-pratique", label: "Vie pratique", top: 54.9, height: 10.5 },
+  { key: "famille-travail", label: "Famille & Travail", top: 66.2, height: 11.0 },
+  { key: "agenda", label: "Événements", top: 77.9, height: 10.3 },
+  { key: "seconde-main", label: "Seconde main", top: 89.0, height: 11.0 },
 ];
 
 // Agenda : peu de fiches, donc pas de liste de rubriques comme les autres
@@ -2847,11 +2849,11 @@ export default function DirectoryClient({
                   Voir tout ({rows.length}) ›
                 </button>
               </div>
-              <div className="relative w-full sm:max-w-[560px] rounded-2xl overflow-hidden shadow-card">
+              <div className="relative w-full sm:max-w-[720px] rounded-2xl overflow-hidden shadow-card">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/explorer-categories.webp"
-                  alt="Explorer par catégorie — l'île à portée de main"
+                  src="/explorer-categories-rows.webp"
+                  alt="Explorer par catégorie"
                   className="block w-full h-auto"
                   style={{ filter: "saturate(.72) brightness(1.02)" }}
                 />
