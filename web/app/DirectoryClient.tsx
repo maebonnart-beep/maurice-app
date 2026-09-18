@@ -2103,28 +2103,47 @@ export default function DirectoryClient({
                   </button>
                 </div>
 
-                <div className="grid grid-cols-2 gap-2 mt-2">
-                  <button
-                    onClick={() => scrollToHomeSection("accueil-coups-de-coeur")}
-                    className="rounded-2xl overflow-hidden shadow-sm active:scale-[.97] transition-transform"
-                  >
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img
-                      src="/carte-selection-kotemoris.webp"
-                      alt="La sélection Koté Moris — coups de cœur, listes par envies…"
-                      className="block w-full h-auto"
-                    />
-                  </button>
+                {/* Accès directs Favoris / Sélections KM : 2 petites icônes
+                    centrées en bas de l'illustration, plutôt que des cartes ou
+                    lignes pleine largeur (essayées puis retirées, redondantes
+                    avec « Mes adresses » et « Coups de cœur » juste en
+                    dessous). */}
+                <div className="flex items-center justify-center gap-8 mt-3">
                   <button
                     onClick={() => { setHomeMode("favoris"); window.scrollTo({ top: 0, behavior: "smooth" }); }}
-                    className="rounded-2xl overflow-hidden shadow-sm active:scale-[.97] transition-transform"
+                    aria-label="Mes favoris"
+                    className="flex flex-col items-center gap-1.5 active:scale-[.95] transition-transform"
                   >
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img
-                      src="/carte-mes-favoris.webp"
-                      alt="Mes favoris — adresses favorites, à tester, à partager"
-                      className="block w-full h-auto"
-                    />
+                    <span
+                      className="w-16 h-16 rounded-full flex items-center justify-center shadow-md backdrop-blur-sm border border-white/30"
+                      style={{ background: `color-mix(in srgb, ${COUP_DE_COEUR_COLOR} 55%, transparent)` }}
+                    >
+                      <Heart size={30} weight="fill" className="text-white" aria-hidden />
+                    </span>
+                    <span
+                      className="text-[13px] font-bold italic text-white tracking-wide"
+                      style={{ textShadow: "0 1px 4px rgba(0,0,0,.55)" }}
+                    >
+                      Mes favoris
+                    </span>
+                  </button>
+                  <button
+                    onClick={() => { setBrowseAll(true); setFacetBadges(new Set(["selection"])); }}
+                    aria-label="Sélections Koté Moris"
+                    className="flex flex-col items-center gap-1.5 active:scale-[.95] transition-transform"
+                  >
+                    <span
+                      className="w-16 h-16 rounded-full flex items-center justify-center shadow-md backdrop-blur-sm border border-white/30"
+                      style={{ background: "color-mix(in srgb, var(--primary) 55%, transparent)" }}
+                    >
+                      <Sparkle size={30} weight="fill" className="text-white" aria-hidden />
+                    </span>
+                    <span
+                      className="text-[13px] font-bold italic text-white tracking-wide"
+                      style={{ textShadow: "0 1px 4px rgba(0,0,0,.55)" }}
+                    >
+                      Sélections KM
+                    </span>
                   </button>
                 </div>
               </div>
