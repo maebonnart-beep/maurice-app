@@ -84,7 +84,7 @@ function wavyFrameBorder(color: string) {
 }
 import { FilterDropdown, type DropdownOption } from "@/components/ui/FilterDropdown";
 import { AddAddressForm } from "@/components/ui/AddAddressForm";
-import { iconForKey, mascotFor, prefIconFor, categoryTint, MapPin } from "@/lib/icons";
+import { iconForKey, prefIconFor, MapPin } from "@/lib/icons";
 import { displayName, displayCity, shareTagline } from "@/lib/format";
 import { FavoriteButton } from "@/components/ui/FavoriteButton";
 import {
@@ -162,6 +162,14 @@ const SIDEBAR_VISIBLE_RUBRIQUES = 5;
 // (seconde-main-boutiques / seconde-main-particuliers) → verrou au niveau rubrique.
 const PREMIUM_CATEGORY_KEYS = new Set<CategoryKey>(["agenda"]);
 const PREMIUM_RUBRIQUE_KEYS = new Set<string>(["seconde-main-particuliers"]);
+
+// Accueil → grille « Explorer par catégorie » : seulement les rubriques du
+// quotidien les plus courantes (le reste, dont Événements/Famille & Travail,
+// reste accessible via « Voir toutes »). Événements et Seconde main ont leur
+// propre raccourci VIP juste en dessous (cf. PREMIUM_CATEGORY_KEYS).
+const COMMON_HOME_CATEGORIES = CATEGORIES.filter((c) =>
+  ["manger-boire", "sortir-decouvrir", "faire-du-sport", "sante-bien-etre", "acheter-equiper", "vie-pratique"].includes(c.key)
+);
 
 // Agenda : peu de fiches, donc pas de liste de rubriques comme les autres
 // catégories — 3 grandes vignettes photo (style « Listes de Koté Moris »)
@@ -688,6 +696,13 @@ export default function DirectoryClient({
   // le geste utilisateur et retarderait le clavier mobile). N'active PAS
   // `browseAll` : tant qu'aucun mot n'est tapé, la liste complète (~2000
   // fiches) n'est pas montée — seule la recherche déclenche son affichage.
+  // Raccourcis de l'accueil (grille superposée sur l'illustration) : pour
+  // l'instant, amènent simplement vers les encarts dédiés déjà présents plus
+  // bas sur cette même page (pas de nouvelle navigation/filtre).
+  function scrollToHomeSection(id: string) {
+    document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+
   function focusSearch() {
     window.scrollTo({ top: 0, behavior: "smooth" });
     setSearchOpen(true);
@@ -2012,114 +2027,114 @@ export default function DirectoryClient({
               <button
                 onClick={openSearchChoice}
                 aria-label="Rechercher une activité, un lieu, un nom"
-                className="absolute flex items-center gap-2 rounded-pill bg-white px-4 text-[12px] sm:text-[14px] active:opacity-90 transition-opacity shadow-sm"
-                style={{ left: "9.35%", right: "8.08%", top: "38.46%", height: "5.68%" }}
+                className="absolute flex items-center gap-2 rounded-pill border border-white/30 px-4 text-[12px] sm:text-[14px] active:opacity-90 transition-opacity shadow-sm backdrop-blur-sm"
+                style={{ left: "9.35%", right: "8.08%", top: "43%", height: "5.68%", background: "color-mix(in srgb, var(--surface) 30%, transparent)" }}
               >
                 <MagnifyingGlass size={24} weight="bold" className="shrink-0" style={{ color: "#0d4a47" }} aria-hidden />
                 <span className="truncate text-ink/50 font-medium">
                   Rechercher une activité, un lieu, un nom…
                 </span>
               </button>
-              {/* Par catégorie calé juste sous l'encart de recherche, en
-                  superposition sur l'illustration (même logique que la
+              {/* Explorer par catégorie calé juste sous l'encart de recherche,
+                  en superposition sur l'illustration (même logique que la
                   pastille de recherche) — le fond d'écran reste visible tout
-                  autour de cette carte. */}
-              <div className="absolute" style={{ left: "9.35%", right: "8.08%", top: "46.5%" }}>
-                <div className="flex items-center justify-between mb-2 px-3 py-1.5 rounded-full" style={{ background: "color-mix(in srgb, var(--surface) 78%, transparent)" }}>
-                  <h2 className="text-[16px] font-bold text-ink">
-                    Par catégorie
-                  </h2>
+                  autour, en transparence, des tuiles et des 2 cartes promo
+                  (cf. maquette de référence de la cliente). */}
+              <div className="absolute" style={{ left: "9.35%", right: "8.08%", top: "50%" }}>
+                <div className="flex justify-end mb-1.5">
                   <button
                     onClick={() => setHomeMode("categories")}
-                    className="text-[13px] font-semibold text-primary-deep active:scale-[.98]"
+                    className="text-[13px] font-bold text-primary-deep shadow-sm px-3 py-1.5 rounded-full active:scale-[.98]"
+                    style={{ background: "color-mix(in srgb, var(--surface) 92%, transparent)" }}
                   >
-                    Tout voir ›
+                    Toutes les catégories ›
                   </button>
                 </div>
-                <div className="rounded-[32px] p-1.5 shadow-sm">
-                <div
-                  className="rounded-[24px] border border-white/30 px-3 py-3 shadow-sm backdrop-blur-sm"
-                  style={{ background: "color-mix(in srgb, var(--surface) 30%, transparent)" }}
-                >
-                <div className="flex items-start gap-3 overflow-x-auto pt-2 pb-2 -mx-3 px-3 text-left [scrollbar-width:none] [&::-webkit-scrollbar]:hidden lg:flex-wrap lg:justify-center lg:overflow-visible lg:gap-x-8">
-                  {homeTopCategories.map(({ category: c }) => {
-                    const mascot = mascotFor(c.key);
-                    const CIcon = iconForKey(c.key);
-                    return (
-                      <button
-                        key={c.key}
-                        onClick={() => { setHomeMode("categories"); setHomeCategory(c.key); }}
-                        className="flex flex-col items-center gap-1.5 w-[76px] shrink-0 active:scale-[.96] transition-transform"
-                      >
-                        <div className="h-[82px] flex items-end justify-center">
-                          <span
-                            className="relative w-[68px] h-[82px] shadow-sm flex items-center justify-center text-xl overflow-visible"
-                            style={{
-                              borderRadius: "50%",
-                              background: `linear-gradient(160deg, color-mix(in srgb, ${c.color} 45%, white) 0%, ${categoryTint(c.key)} 100%)`,
-                              border: `2.5px solid color-mix(in srgb, ${c.color} 55%, transparent)`,
-                            }}
-                          >
-                            {mascot ? (
-                              // eslint-disable-next-line @next/next/no-img-element
-                              <img
-                                src={mascot}
-                                alt=""
-                                className="pointer-events-none absolute -top-2 left-1/2 -translate-x-1/2 w-[115%] h-[115%] object-contain drop-shadow-sm"
-                              />
-                            ) : (
-                              c.emoji
-                            )}
-                            {CIcon && (
-                              <span
-                                className="absolute -bottom-1.5 left-1/2 -translate-x-1/2 w-6 h-6 rounded-full flex items-center justify-center shadow-sm"
-                                style={{
-                                  background: "var(--surface)",
-                                  border: `1.5px solid color-mix(in srgb, ${c.color} 55%, transparent)`,
-                                  color: c.color,
-                                }}
-                              >
-                                <CIcon size={12} weight="bold" aria-hidden />
-                              </span>
-                            )}
-                          </span>
-                        </div>
-                        <span className="text-[11px] font-bold text-ink text-center leading-tight mt-0.5">
-                          {c.label}
-                        </span>
-                      </button>
-                    );
-                  })}
 
-                  <span
-                    className="w-px h-[82px] shrink-0"
-                    style={{ borderLeft: "1px dashed var(--border)" }}
-                    aria-hidden
-                  />
+                <div className="grid grid-cols-3 gap-2">
+                  {COMMON_HOME_CATEGORIES.map((c) => (
+                    <button
+                      key={c.key}
+                      onClick={() => { setHomeMode("categories"); setHomeCategory(c.key); }}
+                      className="rounded-xl overflow-hidden shadow-sm active:scale-[.96] transition-transform"
+                    >
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img
+                        src={`/tuile-${c.key}.webp`}
+                        alt={c.label}
+                        className="block w-full h-auto"
+                      />
+                    </button>
+                  ))}
+                </div>
+
+                {/* Raccourcis VIP : Événements et Seconde main sont verrouillés
+                    (cf. PREMIUM_CATEGORY_KEYS / PREMIUM_RUBRIQUE_KEYS) — badge
+                    couronne identique à celui utilisé plus bas sur la page
+                    (bandeau Seconde main, cartes premium). Dans un 1er temps,
+                    amènent simplement vers ces encarts dédiés plus bas sur
+                    l'accueil plutôt que vers un nouvel écran. */}
+                <div className="grid grid-cols-2 gap-2 mt-2">
                   <button
-                    onClick={() => setHomeMode("categories")}
-                    className="flex flex-col items-center gap-1 w-[62px] shrink-0 active:scale-[.96] transition-transform"
+                    onClick={() => scrollToHomeSection("accueil-evenements")}
+                    className="flex items-center gap-2 h-[42px] rounded-xl border border-white/30 px-2.5 shadow-sm backdrop-blur-sm active:scale-[.96] transition-transform"
+                    style={{ background: "color-mix(in srgb, var(--surface) 35%, transparent)" }}
                   >
-                    <div className="h-[82px] flex items-end justify-center">
-                      <span
-                        className="w-[56px] h-[56px] rounded-full shadow-sm flex items-center justify-center text-xl font-bold"
-                        style={{
-                          background: "var(--primary-tint)",
-                          border: "2px dashed color-mix(in srgb, var(--primary) 55%, transparent)",
-                          color: "var(--primary-deep)",
-                        }}
-                      >
-                        ›
-                      </span>
-                    </div>
-                    <span className="text-[10.5px] font-semibold text-ink text-center leading-tight mt-0.5">
-                      Toutes les catégories
+                    <span
+                      className="shrink-0 inline-flex items-center justify-center w-5 h-5 rounded-full text-white"
+                      style={{ background: "linear-gradient(135deg, #f5a623, #e88a00)" }}
+                    >
+                      <Crown size={11} weight="fill" aria-hidden />
                     </span>
+                    <span className="text-[11.5px] font-bold text-ink leading-tight text-left">Événements</span>
+                  </button>
+                  <button
+                    onClick={() => scrollToHomeSection("accueil-seconde-main")}
+                    className="flex items-center gap-2 h-[42px] rounded-xl border border-white/30 px-2.5 shadow-sm backdrop-blur-sm active:scale-[.96] transition-transform"
+                    style={{ background: "color-mix(in srgb, var(--surface) 35%, transparent)" }}
+                  >
+                    <span
+                      className="shrink-0 inline-flex items-center justify-center w-5 h-5 rounded-full text-white"
+                      style={{ background: "linear-gradient(135deg, #f5a623, #e88a00)" }}
+                    >
+                      <Crown size={11} weight="fill" aria-hidden />
+                    </span>
+                    <span className="text-[11.5px] font-bold text-ink leading-tight text-left">Seconde main</span>
                   </button>
                 </div>
-                </div>
+
+                <div className="grid grid-cols-2 gap-2 mt-2">
+                  <button
+                    onClick={() => scrollToHomeSection("accueil-coups-de-coeur")}
+                    className="rounded-2xl overflow-hidden shadow-sm active:scale-[.97] transition-transform"
+                  >
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src="/carte-selection-kotemoris.webp"
+                      alt="La sélection Koté Moris — coups de cœur, listes par envies…"
+                      className="block w-full h-auto"
+                    />
+                  </button>
+                  <button
+                    onClick={() => { setHomeMode("favoris"); window.scrollTo({ top: 0, behavior: "smooth" }); }}
+                    className="rounded-2xl overflow-hidden shadow-sm active:scale-[.97] transition-transform"
+                  >
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src="/carte-mes-favoris.webp"
+                      alt="Mes favoris — adresses favorites, à tester, à partager"
+                      className="block w-full h-auto"
+                    />
+                  </button>
                 </div>
               </div>
+              {/* Joint visuel : fondu au raz du bas de l'illustration vers le
+                  fond de page, pour que la transition avec la suite de
+                  l'accueil (Mes adresses, etc.) ne soit pas une coupure nette. */}
+              <div
+                className="absolute inset-x-0 bottom-0 pointer-events-none"
+                style={{ height: "5%", background: "linear-gradient(to bottom, transparent 0%, var(--bg) 100%)" }}
+              />
             </div>
           </div>
         ) : homeMode === "favoris" ? (
@@ -2149,14 +2164,7 @@ export default function DirectoryClient({
                 <ArrowLeft size={19} weight="bold" aria-hidden />
               </button>
               <div className="relative flex-1 min-w-0">
-                {searchOpen ? (
-                  <SearchInput
-                    value={query}
-                    onChange={setQuery}
-                    placeholder="Rechercher une activité, un lieu, un nom…"
-                    autoFocus={focusSearchOnMount}
-                  />
-                ) : (
+                {!searchOpen && (
                   <button
                     onClick={focusSearch}
                     aria-label="Rechercher"
@@ -2236,14 +2244,7 @@ export default function DirectoryClient({
               <ArrowLeft size={19} weight="bold" aria-hidden />
             </button>
             <div className="relative flex-1 min-w-0">
-              {searchOpen ? (
-                <SearchInput
-                  value={query}
-                  onChange={setQuery}
-                  placeholder="Rechercher une activité, un lieu, un nom…"
-                  autoFocus={focusSearchOnMount}
-                />
-              ) : (
+              {!searchOpen && (
                 <button
                   onClick={focusSearch}
                   aria-label="Rechercher"
@@ -2289,6 +2290,23 @@ export default function DirectoryClient({
         </aside>
 
         <div className="flex-1 min-w-0 px-4 lg:px-5 py-3 pb-24 lg:pb-8">
+          {/* Champ de recherche : une fois `searchOpen`, il vit ici (dans
+              l'espace clair sous le bandeau) plutôt que dans le bandeau teal
+              du header — plus lisible, et un seul emplacement de montage
+              (gate uniquement sur `searchOpen`, jamais sur `mobileTiles`)
+              pour ne pas démonter/remonter le champ en pleine frappe (cf.
+              `headerMobileTiles` plus haut). */}
+          {searchOpen && (
+            <div className="max-w-[640px] mx-auto mb-3">
+              <SearchInput
+                value={query}
+                onChange={setQuery}
+                placeholder="Rechercher une activité, un lieu, un nom…"
+                autoFocus={focusSearchOnMount}
+              />
+            </div>
+          )}
+
           {/* Accueil : barre de recherche (point d'entrée vers le mode
               recherche/résultats), rangée de catégories, coups de cœur de la
               rédaction et bandeau carte — inspiré du rendu fourni par la
@@ -2300,15 +2318,60 @@ export default function DirectoryClient({
                   (pastille peinte dans l'image + bouton calé dessus, cf.
                   header) : plus de carte séparée ici. */}
 
+              {/* Bandeau « Mes adresses » remonté juste sous « Par catégorie »
+                  (superposé sur l'image, cf. header) : même dégradé teal que
+                  l'en-tête dédié de l'écran favoris/à tester (homeMode ===
+                  "favoris"), pour identifier clairement ce raccourci comme
+                  menant au même endroit, plutôt que 2 chips isolées sans titre. */}
+              <div
+                className="rounded-2xl p-4 mb-7"
+                style={{ background: "linear-gradient(135deg, #0a3d3a 0%, #1a8f86 100%)" }}
+              >
+                <div className="flex items-center justify-between mb-3">
+                  <h2 className="m-0 text-white text-[15px] font-bold">Mes adresses</h2>
+                  <button
+                    onClick={() => { setHomeMode("favoris"); window.scrollTo({ top: 0, behavior: "smooth" }); }}
+                    className="shrink-0 text-[12.5px] font-semibold text-white/80 active:scale-[.98]"
+                  >
+                    Voir tout ›
+                  </button>
+                </div>
+                <div className="flex gap-2.5">
+                  <button
+                    onClick={() => { setHomeMode("favoris"); window.scrollTo({ top: 0, behavior: "smooth" }); }}
+                    className="flex-1 flex items-center gap-2.5 rounded-2xl bg-surface p-3 active:scale-[.97] transition-transform"
+                  >
+                    <Heart size={20} weight="fill" aria-hidden style={{ color: COUP_DE_COEUR_COLOR }} />
+                    <span className="flex flex-col items-start leading-none">
+                      <span className="text-[15px] font-bold" style={{ color: COUP_DE_COEUR_COLOR }}>
+                        {favoriteBusinesses.length}
+                      </span>
+                      <span className="text-[11px] text-muted mt-0.5">Mes favoris</span>
+                    </span>
+                  </button>
+                  <button
+                    onClick={() => { setHomeMode("favoris"); window.scrollTo({ top: 0, behavior: "smooth" }); }}
+                    className="flex-1 flex items-center gap-2.5 rounded-2xl bg-surface p-3 active:scale-[.97] transition-transform"
+                  >
+                    <Flag size={20} weight="fill" aria-hidden style={{ color: "#f5a623" }} />
+                    <span className="flex flex-col items-start leading-none">
+                      <span className="text-[15px] font-bold" style={{ color: "#f5a623" }}>
+                        {aTesterBusinesses.length}
+                      </span>
+                      <span className="text-[11px] text-muted mt-0.5">À tester</span>
+                    </span>
+                  </button>
+                </div>
+              </div>
+
               {/* Coups de cœur remontés juste sous l'encart de recherche : la
                   sélection éditoriale est la première chose vue à l'accueil. */}
               {coupsDeCoeur.length > 0 && (
                 <div
-                  className="p-3 mb-7"
+                  id="accueil-coups-de-coeur"
+                  className="p-3 mb-7 rounded-2xl shadow-card"
                   style={{
                     background: `linear-gradient(135deg, color-mix(in srgb, var(--primary-deep) 45%, var(--surface)) 0%, color-mix(in srgb, var(--primary) 10%, var(--surface)) 100%)`,
-                    ...wavyFrameBorder(COUPS_DE_COEUR_FRAME_COLOR),
-                    boxShadow: `0 0 18px 4px color-mix(in srgb, ${COUPS_DE_COEUR_FRAME_COLOR} 30%, transparent)`,
                   }}
                 >
                   <div className="flex items-center justify-between mb-2">
@@ -2364,51 +2427,6 @@ export default function DirectoryClient({
                   </div>
                 </div>
               )}
-
-              {/* Bandeau « Mes adresses » : même dégradé teal que l'en-tête dédié
-                  de l'écran favoris/à tester (cf. header, homeMode === "favoris"),
-                  pour identifier clairement ce raccourci comme menant au même
-                  endroit, plutôt que 2 chips isolées sans titre. */}
-              <div
-                className="rounded-2xl p-4 mt-4 mb-7"
-                style={{ background: "linear-gradient(135deg, #0a3d3a 0%, #1a8f86 100%)" }}
-              >
-                <div className="flex items-center justify-between mb-3">
-                  <h2 className="m-0 text-white text-[15px] font-bold">Mes adresses</h2>
-                  <button
-                    onClick={() => { setHomeMode("favoris"); window.scrollTo({ top: 0, behavior: "smooth" }); }}
-                    className="shrink-0 text-[12.5px] font-semibold text-white/80 active:scale-[.98]"
-                  >
-                    Voir tout ›
-                  </button>
-                </div>
-                <div className="flex gap-2.5">
-                  <button
-                    onClick={() => { setHomeMode("favoris"); window.scrollTo({ top: 0, behavior: "smooth" }); }}
-                    className="flex-1 flex items-center gap-2.5 rounded-2xl bg-surface p-3 active:scale-[.97] transition-transform"
-                  >
-                    <Heart size={20} weight="fill" aria-hidden style={{ color: COUP_DE_COEUR_COLOR }} />
-                    <span className="flex flex-col items-start leading-none">
-                      <span className="text-[15px] font-bold" style={{ color: COUP_DE_COEUR_COLOR }}>
-                        {favoriteBusinesses.length}
-                      </span>
-                      <span className="text-[11px] text-muted mt-0.5">Mes favoris</span>
-                    </span>
-                  </button>
-                  <button
-                    onClick={() => { setHomeMode("favoris"); window.scrollTo({ top: 0, behavior: "smooth" }); }}
-                    className="flex-1 flex items-center gap-2.5 rounded-2xl bg-surface p-3 active:scale-[.97] transition-transform"
-                  >
-                    <Flag size={20} weight="fill" aria-hidden style={{ color: "#f5a623" }} />
-                    <span className="flex flex-col items-start leading-none">
-                      <span className="text-[15px] font-bold" style={{ color: "#f5a623" }}>
-                        {aTesterBusinesses.length}
-                      </span>
-                      <span className="text-[11px] text-muted mt-0.5">À tester</span>
-                    </span>
-                  </button>
-                </div>
-              </div>
 
               {newBusinesses.length > 0 && (
                 <>
@@ -2500,11 +2518,9 @@ export default function DirectoryClient({
 
               {kidsFriendly.length > 0 && (
                 <div
-                  className="p-3 mt-7"
+                  className="p-3 mt-7 rounded-2xl shadow-card"
                   style={{
                     background: `linear-gradient(135deg, color-mix(in srgb, var(--primary-deep) 45%, var(--surface)) 0%, color-mix(in srgb, var(--primary) 10%, var(--surface)) 100%)`,
-                    ...wavyFrameBorder(KIDS_FRIENDLY_COLOR),
-                    boxShadow: `0 0 18px 4px color-mix(in srgb, ${KIDS_FRIENDLY_COLOR} 30%, transparent)`,
                   }}
                 >
                   <div className="flex items-center justify-between mb-2">
@@ -2569,6 +2585,7 @@ export default function DirectoryClient({
               )}
 
               <Link
+                id="accueil-seconde-main"
                 href={canSeeEventDetail ? "/seconde-main" : "/mon-compte/upgrade"}
                 className="mt-7 block rounded-2xl p-4 overflow-hidden no-underline text-ink shadow-card active:scale-[.99] transition-transform"
                 style={{ background: "linear-gradient(135deg, #ffe3b0 0%, #fff7ea 60%)" }}
@@ -2625,6 +2642,7 @@ export default function DirectoryClient({
               </Link>
 
               <div
+                id="accueil-evenements"
                 role="button"
                 tabIndex={0}
                 onClick={() => {
