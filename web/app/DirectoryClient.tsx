@@ -2849,7 +2849,7 @@ export default function DirectoryClient({
                   Voir tout ({rows.length}) ›
                 </button>
               </div>
-              <div className="relative w-full rounded-2xl overflow-hidden shadow-card">
+              <div className="relative w-[calc(100%+2rem)] lg:w-[calc(100%+2.5rem)] -mx-4 lg:-mx-5 overflow-hidden">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src="/explorer-categories-rows.webp"
