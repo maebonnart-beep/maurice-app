@@ -52857,6 +52857,10 @@
     "hours": "7j/7 de 7h30 à 17h",
     "description": "Café-restaurant ouvert 7j/7, cuisine saine et fraîche : bols veggie, smoothie bowls, œufs Bénédicte, brunch du dimanche. Kid's friendly : grand jardin où les enfants peuvent jouer (balançoires, tir à l'arc, fléchettes) pendant que les parents profitent du repas.",
     "koteMorisComment": "Une adresse parfaite pour un petit-déjeuner ou un déjeuner, avec la possibilité de s'installer pour travailler sur place. Le grand jardin avec balançoire ravit les enfants pendant que les parents profitent du repas. Bon à savoir : un second parking se trouve juste en face lorsque le premier est complet.",
+    "photoUrl": "/photos/bloom-pereybere.jpg",
+    "photoUrls": [
+      "/photos/bloom-pereybere.jpg"
+    ],
     "filters": [
       "vegetarien",
       "cafes-terrasses",
