@@ -2220,11 +2220,11 @@ export default function DirectoryClient({
           </>
         ) : headerMobileTiles ? (
           // Bandeau illustré Koté Moris (mêmes visuels partout hors accueil),
-          // avec flèche retour + recherche ; la recherche déployée en pleine
-          // largeur vit dans le bloc dédié juste en dessous (cf.
-          // showHeaderSearch plus bas) une fois activée.
+          // avec flèche retour + recherche ; la loupe est calée en bas du
+          // bandeau, sous le texte « Koté Moris », plutôt que superposée au
+          // poulpe dessiné à droite de l'illustration.
           <div
-            className="relative flex items-center gap-2 px-4 lg:px-5 h-[88px] overflow-hidden"
+            className="relative flex items-center px-4 lg:px-5 h-[88px] overflow-hidden"
             style={{ background: "linear-gradient(135deg, #0a4d53 0%, #0f7a80 45%, #128a8f 100%)" }}
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -2244,12 +2244,11 @@ export default function DirectoryClient({
             >
               <ArrowLeft size={19} weight="bold" aria-hidden />
             </button>
-            <div className="relative flex-1 min-w-0" />
             {!showHeaderSearch && (
               <button
                 onClick={focusSearch}
                 aria-label="Rechercher"
-                className="relative shrink-0 w-9 h-9 rounded-full flex items-center justify-center bg-white/15 text-white active:scale-[.95] transition-transform"
+                className="absolute bottom-2 left-1/2 -translate-x-1/2 w-9 h-9 rounded-full flex items-center justify-center bg-white/15 text-white active:scale-[.95] transition-transform"
               >
                 <MagnifyingGlass size={18} weight="bold" aria-hidden />
               </button>
