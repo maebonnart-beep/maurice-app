@@ -1988,17 +1988,15 @@ export default function DirectoryClient({
         className={`relative z-30 overflow-hidden ${
           showHome && homeMode === "menu"
             ? "bg-bg border-b border-transparent"
-            : headerMobileTiles && homeMode !== "favoris"
+            : headerMobileTiles || homeMode === "favoris"
               ? "bg-surface border-b border-border shadow-sm"
               : "border-b border-transparent shadow-sm"
         }`}
         style={
           !showHome || homeMode !== "menu"
-            ? homeMode === "favoris"
-              ? { background: "linear-gradient(135deg, #0a3d3a 0%, #1a8f86 100%)" }
-              : headerMobileTiles
-                ? undefined
-                : { background: "linear-gradient(120deg, #0d4a47 0%, #146b66 100%)" }
+            ? headerMobileTiles || homeMode === "favoris"
+              ? undefined
+              : { background: "linear-gradient(135deg, #0a4d53 0%, #0f7a80 45%, #128a8f 100%)" }
             : undefined
         }
       >
@@ -2038,46 +2036,112 @@ export default function DirectoryClient({
           </div>
         ) : homeMode === "favoris" ? (
           // Bandeau dédié « Mes adresses » (favoris/à tester/testé) : même
-          // dégradé teal que la pastille de recherche de l'accueil, pour
-          // rappeler ces couleurs plutôt que de réutiliser le bandeau image
-          // générique (qui n'a pas sa place ici, hors accueil).
-          <div className="relative flex items-center gap-3 px-4 lg:px-5 py-4 max-w-[820px] mx-auto">
-            <button
-              onClick={goHome}
-              aria-label="Retour à l'accueil"
-              className="shrink-0 w-8 h-8 -ml-1 rounded-full flex items-center justify-center text-white active:scale-[.95] transition-transform"
+          // bandeau illustré Koté Moris que les autres écrans hors accueil
+          // (cf. bandeau-kotemoris-resultats.png), avec flèche retour +
+          // recherche. Le titre vit sur une ligne à part, sous l'image — le
+          // superposer directement sur le wordmark cuit dans l'illustration
+          // rendait les deux textes illisibles, imbriqués l'un dans l'autre.
+          <>
+            <div
+              className="relative flex items-center gap-2 px-4 lg:px-5 h-[88px] overflow-hidden"
+              style={{ background: "linear-gradient(135deg, #0a4d53 0%, #0f7a80 45%, #128a8f 100%)" }}
             >
-              <ArrowLeft size={19} weight="bold" aria-hidden />
-            </button>
-            <div className="flex flex-col leading-tight">
-              <p className="m-0 text-white text-[21px] font-bold">Mes adresses</p>
-              <p className="m-0 text-white/80 text-[13.5px]">Favoris, à tester et testées</p>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/bandeau-kotemoris-resultats.png"
+                alt="Koté Moris"
+                className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[433px] h-[88px] max-w-none object-cover"
+                style={{ filter: "brightness(1.14) saturate(1.05)" }}
+              />
+              <button
+                onClick={goHome}
+                aria-label="Retour à l'accueil"
+                className="relative shrink-0 w-9 h-9 -ml-1 rounded-full flex items-center justify-center text-white active:scale-[.95] transition-transform"
+              >
+                <ArrowLeft size={19} weight="bold" aria-hidden />
+              </button>
+              <div className="relative flex-1 min-w-0">
+                {searchOpen ? (
+                  <SearchInput
+                    value={query}
+                    onChange={setQuery}
+                    placeholder="Rechercher une activité, un lieu, un nom…"
+                    autoFocus={focusSearchOnMount}
+                  />
+                ) : (
+                  <button
+                    onClick={focusSearch}
+                    aria-label="Rechercher"
+                    className="w-9 h-9 rounded-full flex items-center justify-center bg-white/15 text-white active:scale-[.95] transition-transform"
+                  >
+                    <MagnifyingGlass size={18} weight="bold" aria-hidden />
+                  </button>
+                )}
+              </div>
             </div>
-          </div>
+            <div className="relative px-4 lg:px-5 pb-3 max-w-[820px] mx-auto leading-tight">
+              <p className="m-0 text-ink text-[19px] font-bold">Mes adresses</p>
+              <p className="m-0 text-muted text-[12.5px]">Favoris, à tester et testées</p>
+            </div>
+          </>
         ) : headerMobileTiles ? (
-          <button
-            onClick={goHome}
-            aria-label="Retour à l'accueil"
-            className="block relative w-full max-w-[820px] mx-auto rounded-2xl overflow-hidden hover:opacity-90 active:scale-[.98] transition"
+          // Bandeau illustré Koté Moris (mêmes visuels partout hors accueil),
+          // avec flèche retour + recherche ; la recherche déployée en pleine
+          // largeur vit dans le bloc dédié juste en dessous (cf.
+          // showHeaderSearch plus bas) une fois activée.
+          <div
+            className="relative flex items-center gap-2 px-4 lg:px-5 h-[88px] overflow-hidden"
+            style={{ background: "linear-gradient(135deg, #0a4d53 0%, #0f7a80 45%, #128a8f 100%)" }}
           >
-            <Logo light />
-          </button>
-        ) : (
-          // Sur l'écran de résultats (liste/carte + barre de filtres), le grand
-          // bandeau image prend une place précieuse alors que la flèche
-          // « retour » et le bandeau « Autour de moi » juste en dessous sont
-          // déjà à l'étroit sur mobile. Header compact ici, une seule ligne :
-          // flèche retour + recherche (le nom « Koté Moris » a été retiré,
-          // il n'apportait rien ici et prenait de la place). Même dégradé
-          // teal que le bandeau de recherche de l'accueil pour une identité
-          // cohérente — sans le palmier détouré, qui rendait mal (rectangle
-          // visible) sur ce bandeau trop compact pour lui.
-          <div className="relative flex items-center gap-2 px-4 lg:px-5 py-3">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/bandeau-kotemoris-resultats.png"
+              alt="Koté Moris"
+              className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[433px] h-[88px] max-w-none object-cover"
+                style={{ filter: "brightness(1.14) saturate(1.05)" }}
+            />
             <button
               onClick={goBackFromResults}
               disabled={!canGoBack}
               aria-label="Retour"
-              className={`relative shrink-0 w-8 h-8 -ml-1 rounded-full flex items-center justify-center active:scale-[.95] transition-transform ${
+              className={`relative shrink-0 w-9 h-9 -ml-1 rounded-full flex items-center justify-center active:scale-[.95] transition-transform ${
+                canGoBack ? "text-white" : "text-white/40"
+              }`}
+            >
+              <ArrowLeft size={19} weight="bold" aria-hidden />
+            </button>
+            <div className="relative flex-1 min-w-0" />
+            {!showHeaderSearch && (
+              <button
+                onClick={focusSearch}
+                aria-label="Rechercher"
+                className="relative shrink-0 w-9 h-9 rounded-full flex items-center justify-center bg-white/15 text-white active:scale-[.95] transition-transform"
+              >
+                <MagnifyingGlass size={18} weight="bold" aria-hidden />
+              </button>
+            )}
+          </div>
+        ) : (
+          // Sur l'écran de résultats (liste/carte + barre de filtres), même
+          // bandeau illustré Koté Moris que les autres écrans hors accueil,
+          // avec flèche retour + recherche (le nom « Koté Moris » vit dans
+          // l'illustration elle-même, plus besoin de le recréer en texte ici).
+          <div
+            className="relative flex items-center gap-2 px-4 lg:px-5 h-[88px] overflow-hidden"
+            style={{ background: "linear-gradient(135deg, #0a4d53 0%, #0f7a80 45%, #128a8f 100%)" }}
+          >
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/bandeau-kotemoris-resultats.png"
+              alt="Koté Moris"
+              className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[433px] h-[88px] max-w-none object-cover"
+                style={{ filter: "brightness(1.14) saturate(1.05)" }}
+            />
+            <button
+              onClick={goBackFromResults}
+              disabled={!canGoBack}
+              aria-label="Retour"
+              className={`relative shrink-0 w-9 h-9 -ml-1 rounded-full flex items-center justify-center active:scale-[.95] transition-transform ${
                 canGoBack ? "text-white" : "text-white/40"
               }`}
             >
