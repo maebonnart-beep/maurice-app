@@ -2002,36 +2002,124 @@ export default function DirectoryClient({
       >
         {showHome && homeMode === "menu" ? (
           <div className="relative max-w-[820px] lg:max-w-[1100px] mx-auto">
-            {/* Bandeau d'accueil : logo + paysage zoomés (cf. Logo light tags),
-                rognés jusqu'au bas de la pastille de recherche bakée dans
-                l'image d'origine. La bulle de recherche est une simple
-                superposition (position absolue, calée en % sur les mêmes
-                coordonnées que le rognage de Logo) directement dans cette
-                pastille — pas de bloc séparé en dessous. */}
-            <div className="relative w-full rounded-2xl overflow-hidden">
+            {/* Bandeau d'accueil : illustration pleine (cf. Logo light tags),
+                affichée dans son intégralité. La bulle de recherche est une
+                simple superposition (position absolue, calée en % sur la
+                pastille dessinée dans l'image) directement dessus — le reste
+                de l'écran d'accueil arrive en dessous, au scroll. */}
+            <div className="relative w-full">
               <Logo light tags />
-              {/* Fondu qui adoucit la coupure nette entre le décor (sable/mer)
-                  et le haut de la pastille bakée dans l'image, juste avant
-                  la bulle de recherche. */}
-              <div
-                className="absolute inset-x-0 pointer-events-none"
-                style={{
-                  top: "64%",
-                  height: "14%",
-                  background: "linear-gradient(to bottom, rgba(18,89,91,0) 0%, rgba(18,89,91,0.9) 100%)",
-                }}
-              />
               <button
                 onClick={openSearchChoice}
                 aria-label="Rechercher une activité, un lieu, un nom"
-                className="absolute left-[8%] right-[8%] flex items-center gap-2 rounded-pill bg-white px-4 text-[12px] sm:text-[14px] active:opacity-90 transition-opacity shadow-sm"
-                style={{ top: "80%", height: "13%" }}
+                className="absolute flex items-center gap-2 rounded-pill bg-white px-4 text-[12px] sm:text-[14px] active:opacity-90 transition-opacity shadow-sm"
+                style={{ left: "9.35%", right: "8.08%", top: "38.46%", height: "5.68%" }}
               >
                 <MagnifyingGlass size={24} weight="bold" className="shrink-0" style={{ color: "#0d4a47" }} aria-hidden />
                 <span className="truncate text-ink/50 font-medium">
                   Rechercher une activité, un lieu, un nom…
                 </span>
               </button>
+              {/* Par catégorie calé juste sous l'encart de recherche, en
+                  superposition sur l'illustration (même logique que la
+                  pastille de recherche) — le fond d'écran reste visible tout
+                  autour de cette carte. */}
+              <div className="absolute" style={{ left: "9.35%", right: "8.08%", top: "46.5%" }}>
+                <div className="flex items-center justify-between mb-2 px-3 py-1.5 rounded-full" style={{ background: "color-mix(in srgb, var(--surface) 78%, transparent)" }}>
+                  <h2 className="text-[16px] font-bold text-ink">
+                    Par catégorie
+                  </h2>
+                  <button
+                    onClick={() => setHomeMode("categories")}
+                    className="text-[13px] font-semibold text-primary-deep active:scale-[.98]"
+                  >
+                    Tout voir ›
+                  </button>
+                </div>
+                <div className="rounded-[32px] p-1.5 shadow-sm">
+                <div
+                  className="rounded-[24px] border border-white/30 px-3 py-3 shadow-sm backdrop-blur-sm"
+                  style={{ background: "color-mix(in srgb, var(--surface) 30%, transparent)" }}
+                >
+                <div className="flex items-start gap-3 overflow-x-auto pt-2 pb-2 -mx-3 px-3 text-left [scrollbar-width:none] [&::-webkit-scrollbar]:hidden lg:flex-wrap lg:justify-center lg:overflow-visible lg:gap-x-8">
+                  {homeTopCategories.map(({ category: c }) => {
+                    const mascot = mascotFor(c.key);
+                    const CIcon = iconForKey(c.key);
+                    return (
+                      <button
+                        key={c.key}
+                        onClick={() => { setHomeMode("categories"); setHomeCategory(c.key); }}
+                        className="flex flex-col items-center gap-1.5 w-[76px] shrink-0 active:scale-[.96] transition-transform"
+                      >
+                        <div className="h-[82px] flex items-end justify-center">
+                          <span
+                            className="relative w-[68px] h-[82px] shadow-sm flex items-center justify-center text-xl overflow-visible"
+                            style={{
+                              borderRadius: "50%",
+                              background: `linear-gradient(160deg, color-mix(in srgb, ${c.color} 45%, white) 0%, ${categoryTint(c.key)} 100%)`,
+                              border: `2.5px solid color-mix(in srgb, ${c.color} 55%, transparent)`,
+                            }}
+                          >
+                            {mascot ? (
+                              // eslint-disable-next-line @next/next/no-img-element
+                              <img
+                                src={mascot}
+                                alt=""
+                                className="pointer-events-none absolute -top-2 left-1/2 -translate-x-1/2 w-[115%] h-[115%] object-contain drop-shadow-sm"
+                              />
+                            ) : (
+                              c.emoji
+                            )}
+                            {CIcon && (
+                              <span
+                                className="absolute -bottom-1.5 left-1/2 -translate-x-1/2 w-6 h-6 rounded-full flex items-center justify-center shadow-sm"
+                                style={{
+                                  background: "var(--surface)",
+                                  border: `1.5px solid color-mix(in srgb, ${c.color} 55%, transparent)`,
+                                  color: c.color,
+                                }}
+                              >
+                                <CIcon size={12} weight="bold" aria-hidden />
+                              </span>
+                            )}
+                          </span>
+                        </div>
+                        <span className="text-[11px] font-bold text-ink text-center leading-tight mt-0.5">
+                          {c.label}
+                        </span>
+                      </button>
+                    );
+                  })}
+
+                  <span
+                    className="w-px h-[82px] shrink-0"
+                    style={{ borderLeft: "1px dashed var(--border)" }}
+                    aria-hidden
+                  />
+                  <button
+                    onClick={() => setHomeMode("categories")}
+                    className="flex flex-col items-center gap-1 w-[62px] shrink-0 active:scale-[.96] transition-transform"
+                  >
+                    <div className="h-[82px] flex items-end justify-center">
+                      <span
+                        className="w-[56px] h-[56px] rounded-full shadow-sm flex items-center justify-center text-xl font-bold"
+                        style={{
+                          background: "var(--primary-tint)",
+                          border: "2px dashed color-mix(in srgb, var(--primary) 55%, transparent)",
+                          color: "var(--primary-deep)",
+                        }}
+                      >
+                        ›
+                      </span>
+                    </div>
+                    <span className="text-[10.5px] font-semibold text-ink text-center leading-tight mt-0.5">
+                      Toutes les catégories
+                    </span>
+                  </button>
+                </div>
+                </div>
+                </div>
+              </div>
             </div>
           </div>
         ) : homeMode === "favoris" ? (
@@ -2211,111 +2299,6 @@ export default function DirectoryClient({
               {/* La recherche vit désormais dans le bandeau d'accueil lui-même
                   (pastille peinte dans l'image + bouton calé dessus, cf.
                   header) : plus de carte séparée ici. */}
-
-              {/* Par catégorie remonté juste sous l'encart de recherche. */}
-              <div className="flex items-center justify-between mb-2.5">
-                <h2 className="text-[16px] font-bold text-ink">
-                  Par catégorie
-                </h2>
-                <button
-                  onClick={() => setHomeMode("categories")}
-                  className="text-[13px] font-semibold text-primary-deep active:scale-[.98]"
-                >
-                  Tout voir ›
-                </button>
-              </div>
-              <div
-                className="rounded-[32px] p-1.5 shadow-sm mb-7"
-                style={{
-                  backgroundImage:
-                    "url(/bandeau-palmiers-gauche.jpg), url(/bandeau-palmiers-droite.jpg), linear-gradient(180deg, #d3ecf6 0%, #e9f7f1 100%)",
-                  backgroundPosition: "left center, right center, center",
-                  backgroundRepeat: "no-repeat, no-repeat, no-repeat",
-                  backgroundSize: "70px 100%, 70px 100%, 100% 100%",
-                }}
-              >
-              <div
-                className="rounded-[24px] border border-border px-3 py-3 shadow-sm"
-                style={{ background: "linear-gradient(180deg, color-mix(in srgb, var(--primary) 12%, var(--surface)) 0%, color-mix(in srgb, var(--primary) 4%, var(--surface)) 100%)" }}
-              >
-              <div className="flex items-start gap-3 overflow-x-auto pt-2 pb-2 -mx-3 px-3 text-left [scrollbar-width:none] [&::-webkit-scrollbar]:hidden lg:flex-wrap lg:justify-center lg:overflow-visible lg:gap-x-8">
-                {homeTopCategories.map(({ category: c }) => {
-                  const mascot = mascotFor(c.key);
-                  const CIcon = iconForKey(c.key);
-                  return (
-                    <button
-                      key={c.key}
-                      onClick={() => { setHomeMode("categories"); setHomeCategory(c.key); }}
-                      className="flex flex-col items-center gap-1.5 w-[76px] shrink-0 active:scale-[.96] transition-transform"
-                    >
-                      <div className="h-[82px] flex items-end justify-center">
-                        <span
-                          className="relative w-[68px] h-[82px] shadow-sm flex items-center justify-center text-xl overflow-visible"
-                          style={{
-                            borderRadius: "50%",
-                            background: `linear-gradient(160deg, color-mix(in srgb, ${c.color} 45%, white) 0%, ${categoryTint(c.key)} 100%)`,
-                            border: `2.5px solid color-mix(in srgb, ${c.color} 55%, transparent)`,
-                          }}
-                        >
-                          {mascot ? (
-                            // eslint-disable-next-line @next/next/no-img-element
-                            <img
-                              src={mascot}
-                              alt=""
-                              className="pointer-events-none absolute -top-2 left-1/2 -translate-x-1/2 w-[115%] h-[115%] object-contain drop-shadow-sm"
-                            />
-                          ) : (
-                            c.emoji
-                          )}
-                          {CIcon && (
-                            <span
-                              className="absolute -bottom-1.5 left-1/2 -translate-x-1/2 w-6 h-6 rounded-full flex items-center justify-center shadow-sm"
-                              style={{
-                                background: "var(--surface)",
-                                border: `1.5px solid color-mix(in srgb, ${c.color} 55%, transparent)`,
-                                color: c.color,
-                              }}
-                            >
-                              <CIcon size={12} weight="bold" aria-hidden />
-                            </span>
-                          )}
-                        </span>
-                      </div>
-                      <span className="text-[11px] font-bold text-ink text-center leading-tight mt-0.5">
-                        {c.label}
-                      </span>
-                    </button>
-                  );
-                })}
-
-                <span
-                  className="w-px h-[82px] shrink-0"
-                  style={{ borderLeft: "1px dashed var(--border)" }}
-                  aria-hidden
-                />
-                <button
-                  onClick={() => setHomeMode("categories")}
-                  className="flex flex-col items-center gap-1 w-[62px] shrink-0 active:scale-[.96] transition-transform"
-                >
-                  <div className="h-[82px] flex items-end justify-center">
-                    <span
-                      className="w-[56px] h-[56px] rounded-full shadow-sm flex items-center justify-center text-xl font-bold"
-                      style={{
-                        background: "var(--primary-tint)",
-                        border: "2px dashed color-mix(in srgb, var(--primary) 55%, transparent)",
-                        color: "var(--primary-deep)",
-                      }}
-                    >
-                      ›
-                    </span>
-                  </div>
-                  <span className="text-[10.5px] font-semibold text-ink text-center leading-tight mt-0.5">
-                    Toutes les catégories
-                  </span>
-                </button>
-              </div>
-              </div>
-              </div>
 
               {/* Coups de cœur remontés juste sous l'encart de recherche : la
                   sélection éditoriale est la première chose vue à l'accueil. */}
