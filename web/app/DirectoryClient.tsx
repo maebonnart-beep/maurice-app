@@ -1046,20 +1046,23 @@ export default function DirectoryClient({
     return c;
   }, [businesses, active]);
 
-  // Rubrique active (une seule) → détermine les groupes de filtre applicables.
-  const activeRubrique =
-    activeThemes.size === 1 && !activeThemes.has(UNCLASSIFIED) ? [...activeThemes][0] : null;
+  // Rubriques actives (une ou plusieurs) → déterminent les groupes de filtre
+  // applicables. Chaque rubrique cochée garde ses propres filtres : cocher
+  // « Restaurants » + une autre rubrique ne doit pas faire disparaître les
+  // filtres (cuisine, ambiance…) propres aux restaurants.
+  const activeRubriques = useMemo(
+    () => new Set([...activeThemes].filter((k) => k !== UNCLASSIFIED)),
+    [activeThemes]
+  );
   // Vue « Voir tout » de l'agenda (aucune rubrique unique choisie) : les 2
   // groupes de filtre de l'agenda (type d'événement + nature de l'événement
   // sportif) restent quand même proposés, pour filtrer par sous-catégorie
   // sans être passé par une des 3 grandes vignettes.
   const agendaBrowseAll = active === "agenda" && activeThemes.size === 0;
-  // Groupes de filtre transversaux applicables à la rubrique active (0, 1 ou plusieurs).
-  const applicableFilterGroups: FilterGroup[] = activeRubrique
-    ? FILTER_GROUPS.filter((g) => g.appliesTo.includes(activeRubrique))
-    : agendaBrowseAll
+  // Groupes de filtre transversaux applicables à l'union des rubriques actives.
+  const applicableFilterGroups: FilterGroup[] = agendaBrowseAll
     ? FILTER_GROUPS.filter((g) => g.appliesTo.some((k) => RUBRIQUE_CATEGORY_MAP[k] === "agenda"))
-    : [];
+    : FILTER_GROUPS.filter((g) => g.appliesTo.some((k) => activeRubriques.has(k)));
 
   // « Ménage » des fiches : on masque les tags déjà impliqués par le contexte de
   // navigation/filtre actif (rubriques + facettes sélectionnées). Le badge de
@@ -1125,12 +1128,19 @@ export default function DirectoryClient({
         }
         // Facettes de rubrique : chaque groupe de filtre applicable (OU en son
         // sein) — testé sur b.filters, quand une rubrique est active ou en
-        // vue « Voir tout » de l'agenda (les 2 groupes agenda combinés).
-        if (activeRubrique || agendaBrowseAll) {
+        // vue « Voir tout » de l'agenda (les 2 groupes agenda combinés). Un
+        // groupe qui ne s'applique pas à la rubrique de cette fiche (cas de
+        // plusieurs rubriques cochées à la fois, chacune avec ses propres
+        // groupes) ne doit pas l'exclure : seules les fiches concernées par
+        // ce groupe sont contraintes par la sélection.
+        if (activeRubriques.size > 0 || agendaBrowseAll) {
           const filters = b.filters || [];
+          const themes = b.themes || [];
           for (const g of applicableFilterGroups) {
             const sel = facetGroups[g.key];
-            if (sel && sel.size > 0 && !filters.some((f) => sel.has(f))) return false;
+            if (!sel || sel.size === 0) continue;
+            const groupAppliesToFiche = g.appliesTo.some((k) => themes.includes(k));
+            if (groupAppliesToFiche && !filters.some((f) => sel.has(f))) return false;
           }
         }
         // Prix et sélection/badge : facettes transversales, indépendantes de la rubrique.
@@ -1156,23 +1166,26 @@ export default function DirectoryClient({
         if (a.category === "agenda" && b.category === "agenda") return compareByEventDate(a, b);
         return 0;
       });
-  }, [businesses, deferredQuery, searchTokensById, active, activeThemes, activeZone, activeRubrique, agendaBrowseAll, applicableFilterGroups, facetGroups, facetPrices, facetBadges, openNow]);
+  }, [businesses, deferredQuery, searchTokensById, active, activeThemes, activeZone, activeRubriques, agendaBrowseAll, applicableFilterGroups, facetGroups, facetPrices, facetBadges, openNow]);
 
-  // Base rubrique (rubrique + zone + recherche, hors facettes) pour les compteurs.
+  // Base rubrique(s) (rubriques actives + zone + recherche, hors facettes) pour
+  // les compteurs. Avec plusieurs rubriques cochées, chaque groupe de filtre
+  // ne compte que sur les fiches des rubriques auxquelles il s'applique.
   const facetCounts = useMemo(() => {
     const perGroup: Record<string, Record<string, number>> = {};
     const price: Record<string, number> = {};
     const badge: Record<string, number> = {};
-    if (!activeRubrique && !agendaBrowseAll) return { perGroup, price, badge, total: 0 };
-    const groups = activeRubrique
-      ? FILTER_GROUPS.filter((g) => g.appliesTo.includes(activeRubrique))
-      : FILTER_GROUPS.filter((g) => g.appliesTo.some((k) => RUBRIQUE_CATEGORY_MAP[k] === "agenda"));
+    if (activeRubriques.size === 0 && !agendaBrowseAll) return { perGroup, price, badge, total: 0 };
+    const groups = agendaBrowseAll
+      ? FILTER_GROUPS.filter((g) => g.appliesTo.some((k) => RUBRIQUE_CATEGORY_MAP[k] === "agenda"))
+      : FILTER_GROUPS.filter((g) => g.appliesTo.some((k) => activeRubriques.has(k)));
     groups.forEach((g) => (perGroup[g.key] = {}));
     const q = deferredQuery.trim();
     let total = 0;
     businesses.forEach((b) => {
-      if (activeRubrique) {
-        if (!(b.themes || []).includes(activeRubrique)) return;
+      const themes = b.themes || [];
+      if (activeRubriques.size > 0) {
+        if (!themes.some((t) => activeRubriques.has(t))) return;
       } else if (b.category !== "agenda") {
         return;
       }
@@ -1181,6 +1194,7 @@ export default function DirectoryClient({
       total++;
       const filters = b.filters || [];
       groups.forEach((g) => {
+        if (!g.appliesTo.some((k) => themes.includes(k))) return;
         const optionKeys = new Set(g.options.map((o) => o.key));
         filters.forEach((f) => {
           if (optionKeys.has(f)) perGroup[g.key][f] = (perGroup[g.key][f] || 0) + 1;
@@ -1188,12 +1202,12 @@ export default function DirectoryClient({
       });
       if (b.priceRange) price[b.priceRange] = (price[b.priceRange] || 0) + 1;
       if (b.badge) badge[b.badge] = (badge[b.badge] || 0) + 1;
-      if ((b.themes || []).includes("kids-friendly")) {
+      if (themes.includes("kids-friendly")) {
         badge["kids-friendly"] = (badge["kids-friendly"] || 0) + 1;
       }
     });
     return { perGroup, price, badge, total };
-  }, [businesses, activeRubrique, agendaBrowseAll, activeZone, deferredQuery]);
+  }, [businesses, activeRubriques, agendaBrowseAll, activeZone, deferredQuery]);
 
   // Compteurs par option pour la page de sous-rubriques (avant sélection de
   // rubrique/facette — donc indépendant de activeRubrique/facetGroups).
@@ -1850,7 +1864,7 @@ export default function DirectoryClient({
     })
     .filter((g) => g.options.length > 0);
 
-  const priceOptions: DropdownOption[] = activeRubrique === "restaurants"
+  const priceOptions: DropdownOption[] = activeRubriques.has("restaurants")
     ? PRICE_RANGES.filter(
         (p) => (facetCounts.price[p.key] || 0) > 0
       ).map((p) => ({ key: p.key, label: `${p.symbol} ${p.label}`, count: facetCounts.price[p.key] }))
@@ -1914,7 +1928,7 @@ export default function DirectoryClient({
     </div>
   ) : null;
 
-  const restoFilterBar = (activeRubrique || agendaBrowseAll) && hasFacets ? (
+  const restoFilterBar = (activeRubriques.size > 0 || agendaBrowseAll) && hasFacets ? (
     <div className="mb-3 border-b border-border pb-3 flex items-center gap-2 overflow-x-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
       {active === "agenda" && (
         <Link
