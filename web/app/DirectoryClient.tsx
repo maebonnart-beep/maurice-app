@@ -51,7 +51,6 @@ import { useFavoriteSelections } from "@/lib/favoriteSelections";
 import { usePreferences } from "@/lib/preferences";
 import { usePreferencesSync } from "@/lib/preferencesSync";
 import { useFavoritesSync } from "@/lib/favoritesSync";
-import { useSuggestions, findIntegratedMatch } from "@/lib/suggestions";
 import { useAccount } from "@/lib/marketplace/useAccount";
 import { createClient as createSupabaseBrowserClient } from "@/lib/supabase/client";
 import { PREMIUM_PRICE_LABEL, MAX_ACTIVE_LISTINGS, listingPhotoUrl } from "@/lib/marketplace/constants";
@@ -292,7 +291,6 @@ export default function DirectoryClient({
   const { favoriteSelectionIds, isFavoriteSelection, toggleFavoriteSelection, mergeFavoriteSelections } =
     useFavoriteSelections();
   const { preferences, toggleInterest, setHasKids, mergePreferences } = usePreferences();
-  const { suggestions } = useSuggestions();
   const account = useAccount();
   const [loggingOut, setLoggingOut] = useState(false);
   async function handleLogout() {
@@ -310,12 +308,6 @@ export default function DirectoryClient({
       : "/avatar-decouverte.png";
   useFavoritesSync(account.loggedIn, mergeStatuses, mergeFavoriteSelections);
   usePreferencesSync(account.loggedIn, mergePreferences);
-  // Profil → Mes suggestions : pour chaque adresse proposée, détection best-effort
-  // (nom + catégorie) d'une fiche correspondante déjà intégrée à l'annuaire.
-  const suggestionsWithStatus = useMemo(
-    () => suggestions.map((s) => ({ ...s, integratedBusiness: findIntegratedMatch(s, businesses) })),
-    [suggestions, businesses]
-  );
   const favoriteBusinesses = useMemo(
     () => businesses.filter((b) => favoriteStatuses.get(b.id) === "favori"),
     [businesses, favoriteStatuses]
@@ -2222,11 +2214,9 @@ export default function DirectoryClient({
           </>
         ) : headerMobileTiles ? (
           // Bandeau illustré Koté Moris (mêmes visuels partout hors accueil),
-          // avec flèche retour + recherche ; la loupe est calée en bas du
-          // bandeau, sous le texte « Koté Moris », plutôt que superposée au
-          // poulpe dessiné à droite de l'illustration.
+          // avec flèche retour + recherche ; la loupe est calée juste à côté de la flèche retour, sur le bandeau.
           <div
-            className="relative flex items-center px-4 lg:px-5 h-[88px] overflow-hidden"
+            className="relative flex items-center gap-2 px-4 lg:px-5 h-[88px] overflow-hidden"
             style={{ background: "linear-gradient(135deg, #0a4d53 0%, #0f7a80 45%, #128a8f 100%)" }}
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -2250,7 +2240,7 @@ export default function DirectoryClient({
               <button
                 onClick={focusSearch}
                 aria-label="Rechercher"
-                className="absolute bottom-2 left-1/2 -translate-x-1/2 w-9 h-9 rounded-full flex items-center justify-center bg-white/15 text-white active:scale-[.95] transition-transform"
+                className="relative shrink-0 w-9 h-9 rounded-full flex items-center justify-center bg-white/15 text-white active:scale-[.95] transition-transform"
               >
                 <MagnifyingGlass size={18} weight="bold" aria-hidden />
               </button>
@@ -3845,41 +3835,6 @@ export default function DirectoryClient({
                   )}
                 </div>
               </div>
-
-              {/* Mes suggestions : historique local des adresses proposées, avec
-                  détection best-effort (nom + catégorie) de leur intégration. */}
-              {suggestionsWithStatus.length > 0 && (
-                <div className="bg-surface border border-border rounded-2xl shadow-sm p-4">
-                  <p className="m-0 mb-3 text-[13px] font-bold text-ink">Mes suggestions</p>
-                  <div className="flex flex-col gap-3">
-                    {suggestionsWithStatus.map((s) => (
-                      <div key={s.id} className="flex items-center gap-2.5">
-                        <span className="flex-1 min-w-0">
-                          <span className="block text-[13px] text-ink truncate">{s.nom}</span>
-                          <span className="block text-[11px] text-muted">
-                            {new Date(s.submittedAt).toLocaleDateString("fr-FR", { day: "numeric", month: "short", year: "numeric" })}
-                          </span>
-                        </span>
-                        {s.integratedBusiness ? (
-                          <span
-                            className="shrink-0 inline-flex items-center gap-1 text-[11px] font-semibold rounded-full px-2.5 py-1"
-                            style={{ background: "color-mix(in srgb, #2e9e5b 12%, var(--surface))", color: "#2e9e5b" }}
-                          >
-                            <CheckCircle size={13} weight="fill" aria-hidden /> Intégrée
-                          </span>
-                        ) : (
-                          <span className="shrink-0 text-[11px] font-semibold text-muted rounded-full px-2.5 py-1" style={{ background: "var(--surface-2)" }}>
-                            En attente
-                          </span>
-                        )}
-                      </div>
-                    ))}
-                  </div>
-                  <p className="mt-3 mb-0 text-[11px] text-muted leading-snug">
-                    Détection automatique et approximative, basée sur le nom — en cas de doute, vérifiez dans l'annuaire.
-                  </p>
-                </div>
-              )}
 
               {/* Actions rapides. */}
               <div className="bg-surface border border-border rounded-2xl shadow-sm overflow-hidden">
