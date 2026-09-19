@@ -176,10 +176,10 @@ const COMMON_HOME_CATEGORIES = CATEGORIES.filter((c) =>
 // l'encart de titre du haut ni le bandeau de fin, et resserré horizontalement
 // (moins de photo à droite) pour qu'une fois étiré en pleine largeur l'image
 // paraisse plus haute/grande (cf. public/explorer-categories-rows.webp,
-// recadrage de explorer-categories.webp : x=32-672, y=144-1437 sur les
-// 1024×1536 d'origine). Chaque ligne est cliquable via une zone invisible
-// positionnée en % sur l'image. Coordonnées recalculées pour ce recadrage
-// (640×1293).
+// recadrage de explorer-categories.webp : x=32-832, y=144-1437 sur les
+// 1024×1536 d'origine ; 832 garde les mascottes entières). Chaque ligne est
+// cliquable via une zone invisible positionnée en % sur l'image (verticales
+// uniquement, donc inchangées par le recadrage horizontal) — image 800×1293.
 const EXPLORER_CATEGORIES_HOTSPOTS: { key: CategoryKey | "seconde-main"; label: string; top: number; height: number }[] = [
   { key: "manger-boire", label: "Manger & boire", top: 0, height: 10.7 },
   { key: "sortir-decouvrir", label: "Sortir & découvrir", top: 11.1, height: 10.7 },
