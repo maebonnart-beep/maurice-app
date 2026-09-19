@@ -3539,7 +3539,8 @@
     "lat": -20.1858,
     "lng": 57.5323,
     "themes": [
-      "randonnee-trail"
+      "randonnee-trail",
+      "kids-friendly"
     ],
     "duration": "3h-4h aller-retour",
     "distance": "4,3 km",
@@ -21288,7 +21289,8 @@
     "lat": -20.4304733,
     "lng": 57.3789051,
     "themes": [
-      "randonnee-trail"
+      "randonnee-trail",
+      "kids-friendly"
     ],
     "zone": "sud",
     "distance": "2,7 km",
@@ -57940,7 +57942,8 @@
     "lat": -20.4165,
     "lng": 57.4886,
     "themes": [
-      "randonnee-trail"
+      "randonnee-trail",
+      "kids-friendly"
     ],
     "duration": "2h-3h",
     "distance": "8,9 km",
@@ -58028,7 +58031,8 @@
     "lat": -20.4483,
     "lng": 57.4908,
     "themes": [
-      "randonnee-trail"
+      "randonnee-trail",
+      "kids-friendly"
     ],
     "distance": "6 km aller-retour",
     "difficultyLevel": "debutant",
