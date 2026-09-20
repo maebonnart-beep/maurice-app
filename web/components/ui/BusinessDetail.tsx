@@ -81,6 +81,13 @@ function CircleAction({
       </span>
     );
   }
+  if (!href) {
+    return (
+      <button type="button" onClick={onClick} className={`${cls} bg-transparent border-0 p-0 cursor-pointer`}>
+        {inner}
+      </button>
+    );
+  }
   return (
     <a
       href={href}
@@ -117,6 +124,9 @@ export function BusinessDetail({
   const [descExpanded, setDescExpanded] = useState(false);
   const photos = b.photoUrls?.length ? b.photoUrls : b.photoUrl ? [b.photoUrl] : [];
   const [photoIndex, setPhotoIndex] = useState(0);
+  const [navChooserOpen, setNavChooserOpen] = useState(false);
+  const wazeUrl =
+    b.lat != null && b.lng != null ? `https://waze.com/ul?ll=${b.lat},${b.lng}&navigate=yes` : undefined;
   // Cf. BusinessCard : si la fiche correspond déjà au contexte de navigation
   // actif, on masque le sous-titre plutôt que d'en montrer un autre thème
   // (une fiche bar ET restaurant ne doit pas afficher « Restaurant » comme
@@ -338,10 +348,11 @@ export function BusinessDetail({
               )}
               {b.googleMapsUrl && (
                 <CircleAction
-                  href={b.googleMapsUrl}
+                  // Sans coordonnées, pas de Waze possible : lien Google Maps direct.
+                  href={wazeUrl ? undefined : b.googleMapsUrl}
                   external
                   icon={<CONTACT_ICONS.NavigationArrow size={19} weight="fill" aria-hidden />}
-                  onClick={() => trackEvent(b.id, "directions")}
+                  onClick={() => (wazeUrl ? setNavChooserOpen(true) : trackEvent(b.id, "directions"))}
                 >
                   Itinéraire
                 </CircleAction>
@@ -455,6 +466,41 @@ export function BusinessDetail({
           </div>
         </div>
       </div>
+
+      {/* Choix de l'appli d'itinéraire (Google Maps / Waze). */}
+      {navChooserOpen && (
+        <div className="absolute inset-0 z-10 flex flex-col justify-end lg:justify-center lg:items-center">
+          <div className="absolute inset-0 bg-black/40" onClick={() => setNavChooserOpen(false)} aria-hidden="true" />
+          <div className="relative w-full lg:max-w-[360px] bg-surface rounded-t-[20px] lg:rounded-card shadow-pop p-4 flex flex-col gap-2">
+            <p className="m-0 mb-1 text-[14px] font-bold text-ink text-center">Ouvrir l&apos;itinéraire avec</p>
+            {[
+              { label: "Google Maps", href: b.googleMapsUrl },
+              { label: "Waze", href: wazeUrl },
+            ].map((o) => (
+              <a
+                key={o.label}
+                href={o.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => {
+                  trackEvent(b.id, "directions");
+                  setNavChooserOpen(false);
+                }}
+                className="flex items-center justify-center py-3 rounded-xl bg-primary-tint text-primary-deep text-[15px] font-semibold no-underline"
+              >
+                {o.label}
+              </a>
+            ))}
+            <button
+              type="button"
+              onClick={() => setNavChooserOpen(false)}
+              className="py-2 bg-transparent border-0 text-[13px] text-muted cursor-pointer"
+            >
+              Annuler
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
