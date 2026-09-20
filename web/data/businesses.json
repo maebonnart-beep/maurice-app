@@ -8314,14 +8314,21 @@
     "themes": [
       "restaurants"
     ],
-    "badge": "selection",
     "zone": "ouest",
     "description": "Restaurant panoramique perché sur les hauteurs de la route de Plaine Champagne près de Chamarel, avec véranda de style colonial dominant le Parc national des Gorges de la Rivière Noire ; cuisine mêlant influences françaises et mauriciennes (currys, grillades de fruits de mer).",
     "hours": "Tous les jours 12h-16h30",
     "filters": [
       "mauricienne"
     ],
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "koteMorisComment": "Un cadre verdoyant et une agréable terrasse avec une vue splendide sur la baie et la végétation, dans une ambiance accueillante grâce à un personnel aux petits soins. Côté assiette, la carte est assez courte et plutôt classique, mais la cuisine mauricienne est de bonne qualité. Bémol : les prix (entrées à 800 Rs, plats à 1 200 Rs) ne nous ont pas paru justifiés pour ce type de cuisine, ce qui laisse un léger goût amer à la sortie.",
+    "photoUrls": [
+      "/photos/varangue-sur-morne-1.jpg",
+      "/photos/varangue-sur-morne-2.jpg",
+      "/photos/varangue-sur-morne-3.jpg",
+      "/photos/varangue-sur-morne-4.jpg"
+    ],
+    "photoUrl": "/photos/varangue-sur-morne-1.jpg"
   },
   {
     "id": "le-chamarel-restaurant",
