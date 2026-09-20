@@ -31216,13 +31216,18 @@
     "zone": "nord",
     "hours": "Tous les jours 10h-18h",
     "description": "Glace artisanale slow-churned, fabriquée localement en petites quantités à Trou aux Biches à partir d'ingrédients locaux (enseigne originaire d'Afrique du Sud, dont l'usine mère est au Cap), dans une boutique refaite à neuf avec coin salon et terrasse. Considérée comme l'un des meilleurs glaciers du Nord, réputée pour ses parfums caramel salé, honeycomb et praliné-pécan. Cônes faits maison, options sans sucre et végan. Boule Rs 110, pot 500ml Rs 300.",
-    "koteMorisComment": "Très bonnes glaces, à déguster sur place ou à emporter en pot de 500ml, avec des parfums originaux et qualitatifs. Nos coups de cœur validés : Fudge Coco, Coffee & Dark Chocolate, et Salted Caramel & Pecan / Pecans & Praline.",
+    "koteMorisComment": "Très bonnes glaces, à déguster sur place ou à emporter en pot de 500ml, avec des parfums originaux et qualitatifs. Nos coups de cœur validés : Fudge Coco, Coffee & Dark Chocolate, et Salted Caramel & Pecan / Pecans & Praline. Nous avons testé la glace vanille, onctueuse et crémeuse, juste parfaite. Nous reviendrons avec notre fille pour une petite pause gourmande après l’école !",
     "priceRange": "bon-marche",
     "badge": "selection",
     "filters": [
-      "glaciers"
+      "glaciers",
+      "kids-friendly"
     ],
-    "createdAt": "2026-07-15T18:07:37+02:00"
+    "createdAt": "2026-07-15T18:07:37+02:00",
+    "photoUrl": "/photos/kristens-ice-cream.jpg",
+    "photoUrls": [
+      "/photos/kristens-ice-cream.jpg"
+    ]
   },
   {
     "id": "gelato-heaven-flic-en-flac",
