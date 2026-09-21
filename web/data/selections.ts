@@ -813,7 +813,7 @@ export const SELECTIONS: Selection[] = [
   {
     id: "envie-dune-pizza",
     emoji: "🍕",
-    title: "Envie d'une pizza ?",
+    title: "Où manger des pizzas",
     tagline: "Les meilleures pizzerias de l'île, du four à bois à la pâte napolitaine",
     group: "manze",
     icon: "ForkKnife",
@@ -830,6 +830,14 @@ export const SELECTIONS: Selection[] = [
       "casa-pizza",
       "chez-pepe",
       "family-pizza",
+      "cocoloko",
+      "l-envol",
+      "la-golosona-triolet",
+      "la-cosa-nostra",
+      "la-voglia-matta-trou-aux-biches",
+      "da-andrea-e-maila",
+      "the-bamboo-restaurant-bar",
+      "la-glace-italiana-souillac",
     ],
   },
   {
