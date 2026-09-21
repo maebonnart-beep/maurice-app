@@ -58224,5 +58224,28 @@
       "grillades"
     ],
     "createdAt": "2026-09-13T04:56:50.068Z"
+  },
+  {
+    "id": "le-mediterranee",
+    "name": "Le Méditerranée",
+    "category": "manger-boire",
+    "address": "Coastal Road, Mont Choisy",
+    "phone": "+230 265 7539",
+    "website": "",
+    "googleMapsUrl": "https://maps.app.goo.gl/VM2NWDbQKiKCmrYk8",
+    "lat": -20.0263422,
+    "lng": 57.5522876,
+    "themes": [
+      "restaurants"
+    ],
+    "zone": "nord",
+    "description": "Restaurant de cuisine européenne, méditerranéenne et mauricienne à Mont Choisy, avec une belle place faite aux poissons et fruits de mer ; service à table, ambiance familiale, options végétariennes.",
+    "hours": "Dîner 17h30-22h, fermé lundi et mercredi",
+    "filters": [
+      "europeenne",
+      "fruits-de-mer"
+    ],
+    "createdAt": "2026-09-21T03:22:41.253Z",
+    "koteMorisComment": "Une adresse où l’on se sent bien accueillis : personnel souriant et attentionné, et des clients qui reviennent plusieurs soirs de suite sans jamais être déçus. Dans l’assiette, les avis saluent les croquettes poulet ou crevette, le poisson grillé (daurade, marlin), le tartare de thon, la soupe de crabe, le plateau de fruits de mer et ses frites maison. Bémol : le rapport qualité/prix et l’ambiance sont un cran en dessous du reste, on y va donc pour la cuisine plus que pour le cadre. Le bon réflexe : ne pas se laisser impressionner par la longue carte et demander conseil au personnel."
   }
 ]
