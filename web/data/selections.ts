@@ -112,6 +112,7 @@ export const SELECTIONS: Selection[] = [
       "splash-n-fun-quatre-cocos",
       "funtastic-venture-indoor-playground",
       "koala-happy-island",
+      "la-preneuse-public-beach",
     ],
   },
   {
