@@ -69,6 +69,7 @@ export const SUBCATEGORIES: Partial<Record<CategoryKey, Subcategory[]>> = {
     { key: "high-tech-electromenager", label: "High-tech & électroménager", emoji: "📱" },
     { key: "librairies-jeux-loisirs", label: "Librairies, jeux & loisirs", emoji: "📚" },
     { key: "souvenirs-cadeaux", label: "Souvenirs & cadeaux", emoji: "🎁" },
+    { key: "commander-en-ligne", label: "Commander en ligne", emoji: "🛒" },
     { key: "seconde-main-boutiques", label: "Seconde main (boutiques)", emoji: "🏪" },
     { key: "seconde-main-particuliers", label: "Seconde main (particuliers)", emoji: "🙋" },
   ],

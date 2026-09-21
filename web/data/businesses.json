@@ -58228,5 +58228,170 @@
     ],
     "createdAt": "2026-09-21T03:22:41.253Z",
     "koteMorisComment": "Une adresse où l’on se sent bien accueillis : personnel souriant et attentionné, et des clients qui reviennent plusieurs soirs de suite sans jamais être déçus. Dans l’assiette, les avis saluent les croquettes poulet ou crevette, le poisson grillé (daurade, marlin), le tartare de thon, la soupe de crabe, le plateau de fruits de mer et ses frites maison. Bémol : le rapport qualité/prix et l’ambiance sont un cran en dessous du reste, on y va donc pour la cuisine plus que pour le cadre. Le bon réflexe : ne pas se laisser impressionner par la longue carte et demander conseil au personnel."
+  },
+  {
+    "id": "dodomarket",
+    "name": "DodoMarket",
+    "category": "acheter-equiper",
+    "address": "Livraison partout à Maurice (en ligne)",
+    "phone": "",
+    "website": "https://dodomarket.mu",
+    "googleMapsUrl": "",
+    "themes": [
+      "commander-en-ligne"
+    ],
+    "description": "Boutique en ligne mauricienne spécialisée dans les cadeaux, fleurs, chocolats, friandises et aliments sains. Livraison same-day (commande avant 11h30) ou next-day partout à Maurice, abonnement DodoPrime avec livraison gratuite, support par WhatsApp. Livraison : 270 Rs (programmée) ou 570 Rs (same-day).",
+    "createdAt": "2026-09-21T04:03:29.448Z",
+    "koteMorisComment": "Le réflexe pour un cadeau ou un bouquet de dernière minute : la livraison same-day existe vraiment, à condition de commander avant 11h30. Les frais sont clairement affichés (270 Rs en programmé, 570 Rs le jour même) et le support répond sur WhatsApp. Bémol : le same-day est presque deux fois plus cher, et l'abonnement DodoPrime ne vaut le coup que si vous commandez régulièrement."
+  },
+  {
+    "id": "mycart-mu",
+    "name": "MyCart.mu",
+    "category": "acheter-equiper",
+    "address": "Livraison partout à Maurice (en ligne)",
+    "phone": "",
+    "website": "https://mycart.mu",
+    "googleMapsUrl": "",
+    "themes": [
+      "commander-en-ligne"
+    ],
+    "description": "Plateforme locale réunissant des milliers de vendeurs (gadgets, mode, électronique…). Livraison rapide, jusqu'à 5 jours, application mobile, plusieurs moyens de paiement et support disponible 24/7.",
+    "createdAt": "2026-09-21T04:03:29.448Z",
+    "koteMorisComment": "Une sorte de marketplace « à la mauricienne » : gros choix, appli mobile et livraison en quelques jours seulement, sans les délais de l'international. Comme les vendeurs sont multiples, les délais et la qualité peuvent varier d'une commande à l'autre : on lit les avis vendeur avant de valider, et on profite du support 24/7 en cas de souci."
+  },
+  {
+    "id": "priceguru-mu",
+    "name": "PriceGuru.mu",
+    "category": "acheter-equiper",
+    "address": "Livraison partout à Maurice (en ligne)",
+    "phone": "",
+    "website": "https://priceguru.mu",
+    "googleMapsUrl": "",
+    "themes": [
+      "commander-en-ligne"
+    ],
+    "description": "Comparateur de prix : ce n'est pas une boutique, mais il compare les tarifs de plusieurs détaillants mauriciens pour trouver la meilleure offre.",
+    "createdAt": "2026-09-21T04:03:29.448Z",
+    "koteMorisComment": "À consulter avant tout achat un peu conséquent (électronique, électroménager) : en quelques clics on voit quel détaillant local est le moins cher. Attention, ce n'est pas une boutique : on achète ensuite chez le revendeur, et il faut vérifier sur son site que le prix affiché est toujours d'actualité."
+  },
+  {
+    "id": "buynow-mu",
+    "name": "BuyNow.mu",
+    "category": "acheter-equiper",
+    "address": "Livraison partout à Maurice (en ligne)",
+    "phone": "",
+    "website": "https://buynow.mu",
+    "googleMapsUrl": "",
+    "themes": [
+      "commander-en-ligne"
+    ],
+    "description": "Boutique en ligne locale : électroménagers, équipements, meubles et produits de beauté, avec une large sélection.",
+    "createdAt": "2026-09-21T04:03:29.448Z",
+    "koteMorisComment": "Pratique pour équiper la maison sans courir les magasins : électroménager, meubles et même un rayon beauté au même endroit. Pour les gros achats, on compare quand même avec PriceGuru.mu et on vérifie les conditions de livraison avant de payer."
+  },
+  {
+    "id": "aliexpress",
+    "name": "AliExpress",
+    "category": "acheter-equiper",
+    "address": "Livraison partout à Maurice (en ligne)",
+    "phone": "",
+    "website": "https://www.aliexpress.com",
+    "googleMapsUrl": "",
+    "themes": [
+      "commander-en-ligne"
+    ],
+    "description": "Marketplace internationale d'électronique, gadgets et accessoires à très bas prix. Livraison à Maurice en général sous 2 à 4 semaines, frais de douane possibles.",
+    "createdAt": "2026-09-21T04:03:29.448Z",
+    "koteMorisComment": "Imbattable sur le prix pour les gadgets, accessoires et petite électronique. En contrepartie il faut être patient : comptez 2 à 4 semaines de livraison. Bémol à anticiper : des frais de douane peuvent s'ajouter à l'arrivée, donc on ne commande pas ce dont on a besoin la semaine prochaine."
+  },
+  {
+    "id": "ebay",
+    "name": "eBay",
+    "category": "acheter-equiper",
+    "address": "Livraison partout à Maurice (en ligne)",
+    "phone": "",
+    "website": "https://www.ebay.com",
+    "googleMapsUrl": "",
+    "themes": [
+      "commander-en-ligne"
+    ],
+    "description": "Marketplace internationale avec un large choix de vendeurs : électronique, vêtements, objets de collection. Vérifier que le vendeur livre à Maurice.",
+    "createdAt": "2026-09-21T04:03:29.448Z",
+    "koteMorisComment": "Le bon plan pour les objets de collection ou une pièce introuvable localement, avec énormément de vendeurs. Le piège : tous ne livrent pas à Maurice. On vérifie ce point avant d'enchérir ou d'acheter, avant de tomber amoureux de l'annonce."
+  },
+  {
+    "id": "amazon",
+    "name": "Amazon",
+    "category": "acheter-equiper",
+    "address": "Livraison partout à Maurice (en ligne)",
+    "phone": "",
+    "website": "https://www.amazon.com",
+    "googleMapsUrl": "",
+    "themes": [
+      "commander-en-ligne"
+    ],
+    "description": "Certains vendeurs Amazon livrent à Maurice, mais tous les articles ne sont pas disponibles et les frais d'expédition sont élevés.",
+    "createdAt": "2026-09-21T04:03:29.448Z",
+    "koteMorisComment": "Une valeur sûre pour trouver un produit précis, mais la disponibilité à Maurice dépend de l'article et du vendeur. Les frais d'expédition sont élevés : on regroupe les achats pour les amortir, et on regarde le total livré avant de comparer avec un site local."
+  },
+  {
+    "id": "compareprixces-mu",
+    "name": "Compareprixces.mu",
+    "category": "acheter-equiper",
+    "address": "Livraison partout à Maurice (en ligne)",
+    "phone": "",
+    "website": "https://compareprixces.mu",
+    "googleMapsUrl": "",
+    "themes": [
+      "commander-en-ligne"
+    ],
+    "description": "Comparateur de prix local qui aide à trouver les meilleurs tarifs.",
+    "createdAt": "2026-09-21T04:03:29.448Z",
+    "koteMorisComment": "Un deuxième comparateur local à ouvrir en parallèle de PriceGuru.mu : croiser les deux permet de repérer les écarts de prix. Comme pour tout comparateur, on finalise l'achat chez le revendeur en vérifiant que l'offre est toujours valable."
+  },
+  {
+    "id": "savegenie-mu",
+    "name": "SaveGenie.mu",
+    "category": "acheter-equiper",
+    "address": "Livraison partout à Maurice (en ligne)",
+    "phone": "",
+    "website": "https://savegenie.mu",
+    "googleMapsUrl": "",
+    "themes": [
+      "commander-en-ligne"
+    ],
+    "description": "Épicerie en ligne avec livraison locale.",
+    "createdAt": "2026-09-21T04:03:29.448Z",
+    "koteMorisComment": "Pratique pour faire ses courses sans passer en magasin, avec livraison à domicile à Maurice. On vérifie la zone et les créneaux de livraison au moment de commander, et on compare le total avec celui de TheShop.mu."
+  },
+  {
+    "id": "theshop-mu",
+    "name": "TheShop.mu",
+    "category": "acheter-equiper",
+    "address": "Livraison partout à Maurice (en ligne)",
+    "phone": "",
+    "website": "https://theshop.mu",
+    "googleMapsUrl": "",
+    "themes": [
+      "commander-en-ligne"
+    ],
+    "description": "Épicerie en ligne avec livraison locale.",
+    "createdAt": "2026-09-21T04:03:29.448Z",
+    "koteMorisComment": "Une autre option d'épicerie en ligne livrée à domicile, utile quand on n'a pas le temps de faire le supermarché. On compare les prix et les frais de livraison avec SaveGenie.mu avant de choisir celle qu'on adopte."
+  },
+  {
+    "id": "easy-delivery",
+    "name": "Easy-Delivery (réexpédition)",
+    "category": "acheter-equiper",
+    "address": "Livraison partout à Maurice (en ligne)",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "",
+    "themes": [
+      "commander-en-ligne"
+    ],
+    "description": "Service de réexpédition : si vous trouvez un produit en France ou en Europe, Easy-Delivery permet de le commander et de le faire livrer à Maurice (exemples de boutiques : Motovision, Primor…).",
+    "createdAt": "2026-09-21T04:03:29.448Z",
+    "koteMorisComment": "La solution quand un produit n'existe qu'en France ou en Europe et que la boutique ne livre pas à Maurice : le colis passe par Easy-Delivery, qui le réexpédie. À prévoir : les frais de transport en plus du prix du produit, et des délais plus longs qu'une livraison locale."
   }
 ]
