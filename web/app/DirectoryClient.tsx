@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useDeferredValue, useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
+import { Fragment, useCallback, useDeferredValue, useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import dynamic from "next/dynamic";
 import Link from "next/link";
@@ -83,9 +83,10 @@ function wavyFrameBorder(color: string) {
 }
 import { FilterDropdown, type DropdownOption } from "@/components/ui/FilterDropdown";
 import { AddAddressForm } from "@/components/ui/AddAddressForm";
-import { iconForKey, prefIconFor, MapPin } from "@/lib/icons";
+import { iconForKey, mascotFor, prefIconFor, MapPin } from "@/lib/icons";
 import { displayName, displayCity, shareTagline } from "@/lib/format";
 import { FavoriteButton } from "@/components/ui/FavoriteButton";
+import { BannerBackdrop } from "@/components/ui/BannerBackdrop";
 import {
   Heart,
   Flag,
@@ -181,16 +182,16 @@ const COMMON_HOME_CATEGORIES = CATEGORIES.filter((c) =>
 // 1024×1536 d'origine ; 832 garde les mascottes entières). Chaque ligne est
 // cliquable via une zone invisible positionnée en % sur l'image (verticales
 // uniquement, donc inchangées par le recadrage horizontal) — image 800×1293.
-const EXPLORER_CATEGORIES_HOTSPOTS: { key: CategoryKey | "seconde-main"; label: string; top: number; height: number }[] = [
-  { key: "manger-boire", label: "Manger & boire", top: 0, height: 10.7 },
-  { key: "sortir-decouvrir", label: "Sortir & découvrir", top: 11.1, height: 10.7 },
-  { key: "faire-du-sport", label: "Faire du sport", top: 22.5, height: 10.7 },
-  { key: "sante-bien-etre", label: "Santé & bien-être", top: 33.9, height: 10.7 },
-  { key: "acheter-equiper", label: "Acheter & s'équiper", top: 45.2, height: 10.7 },
-  { key: "vie-pratique", label: "Vie pratique", top: 56.6, height: 10.4 },
-  { key: "famille-travail", label: "Famille & Travail", top: 67.8, height: 10.4 },
-  { key: "agenda", label: "Événements", top: 78.7, height: 10.4 },
-  { key: "seconde-main", label: "Seconde main", top: 89.6, height: 10.4 },
+const EXPLORER_CATEGORIES_HOTSPOTS: { key: CategoryKey | "seconde-main"; label: string; top: number; height: number; color: string; sub: string }[] = [
+  { key: "manger-boire", label: "Manger & boire", top: 0, height: 10.7, color: "#E8743B", sub: "Restaurants, cafés, bars" },
+  { key: "sortir-decouvrir", label: "Sortir & découvrir", top: 11.1, height: 10.7, color: "#D8497A", sub: "Plages, visites, excursions" },
+  { key: "faire-du-sport", label: "Faire du sport", top: 22.5, height: 10.7, color: "#0E9AA7", sub: "Activités sportives, clubs" },
+  { key: "sante-bien-etre", label: "Santé & bien-être", top: 33.9, height: 10.7, color: "#7B5CC4", sub: "Soins, bien-être, détente" },
+  { key: "acheter-equiper", label: "Acheter & s'équiper", top: 45.2, height: 10.7, color: "#1FA37A", sub: "Boutiques, créateurs, déco" },
+  { key: "vie-pratique", label: "Vie pratique", top: 56.6, height: 10.4, color: "#8C7B45", sub: "Services, dépannage, transports" },
+  { key: "famille-travail", label: "Famille & Travail", top: 67.8, height: 10.4, color: "#E5A020", sub: "Enfants, éducation, télétravail" },
+  { key: "agenda", label: "Événements", top: 78.7, height: 10.4, color: "#C2456B", sub: "Sorties, ateliers, bons plans" },
+  { key: "seconde-main", label: "Seconde main", top: 89.6, height: 10.4, color: "#2E9E8F", sub: "Acheter, vendre, donner" },
 ];
 
 // Agenda : peu de fiches, donc pas de liste de rubriques comme les autres
@@ -2151,13 +2152,7 @@ export default function DirectoryClient({
               className="relative flex items-center gap-2 px-4 lg:px-5 h-[88px] overflow-hidden"
               style={{ background: "linear-gradient(135deg, #0a4d53 0%, #0f7a80 45%, #128a8f 100%)" }}
             >
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="/bandeau-kotemoris-resultats.png"
-                alt="Koté Moris"
-                className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[433px] h-[88px] max-w-none object-cover"
-                style={{ filter: "brightness(1.14) saturate(1.05)" }}
-              />
+              <BannerBackdrop />
               <button
                 onClick={goHome}
                 aria-label="Retour à l'accueil"
@@ -2189,13 +2184,7 @@ export default function DirectoryClient({
             className="relative flex items-center gap-2 px-4 lg:px-5 h-[88px] overflow-hidden"
             style={{ background: "linear-gradient(135deg, #0a4d53 0%, #0f7a80 45%, #128a8f 100%)" }}
           >
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/bandeau-kotemoris-resultats.png"
-              alt="Koté Moris"
-              className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[433px] h-[88px] max-w-none object-cover"
-                style={{ filter: "brightness(1.14) saturate(1.05)" }}
-            />
+            <BannerBackdrop />
             <button
               onClick={goBackFromResults}
               disabled={!canGoBack}
@@ -2225,13 +2214,7 @@ export default function DirectoryClient({
             className="relative flex items-center gap-2 px-4 lg:px-5 h-[88px] overflow-hidden"
             style={{ background: "linear-gradient(135deg, #0a4d53 0%, #0f7a80 45%, #128a8f 100%)" }}
           >
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/bandeau-kotemoris-resultats.png"
-              alt="Koté Moris"
-              className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[433px] h-[88px] max-w-none object-cover"
-                style={{ filter: "brightness(1.14) saturate(1.05)" }}
-            />
+            <BannerBackdrop />
             <button
               onClick={goBackFromResults}
               disabled={!canGoBack}
@@ -2808,33 +2791,60 @@ export default function DirectoryClient({
                   Voir tout ({rows.length}) ›
                 </button>
               </div>
-              <div className="relative w-[calc(100%+2rem)] lg:w-[calc(100%+2.5rem)] -mx-4 lg:-mx-5 overflow-hidden">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src="/explorer-categories-rows.webp"
-                  alt="Explorer par catégorie"
-                  className="block w-full h-auto"
-                  style={{ filter: "saturate(.55) brightness(1.02)" }}
-                />
-                {EXPLORER_CATEGORIES_HOTSPOTS.map((h) => (
-                  <button
-                    key={h.key}
-                    aria-label={h.label}
-                    onClick={() => {
-                      if (h.key === "seconde-main") {
-                        window.location.href = canSeeEventDetail ? "/seconde-main" : "/mon-compte/upgrade";
-                        return;
+              {/* Cartes franches (couleur vive, une ligne de description) à la
+                  place de la planche illustrée : moins chargé, couleurs
+                  pleines. Mêmes clics que les anciennes zones cliquables. */}
+              <div className="grid grid-cols-1 gap-2.5 sm:grid-cols-2">
+                {EXPLORER_CATEGORIES_HOTSPOTS.map((h) => {
+                  const Ico = h.key === "seconde-main" ? Package : iconForKey(h.key);
+                  const locked = h.key === "seconde-main" ? true : PREMIUM_CATEGORY_KEYS.has(h.key);
+                  return (
+                    <Fragment key={h.key}>
+                    {h.key === "agenda" && (
+                      <p className="sm:col-span-2 mt-3 mb-0.5 flex items-center gap-1.5 text-[13px] font-extrabold text-ink">
+                        <Crown size={15} weight="fill" aria-hidden style={{ color: "#e88a00" }} /> Réservé aux membres Premium
+                      </p>
+                    )}
+                    <button
+                      onClick={() => {
+                        if (h.key === "seconde-main") {
+                          window.location.href = canSeeEventDetail ? "/seconde-main" : "/mon-compte/upgrade";
+                          return;
+                        }
+                        if (PREMIUM_CATEGORY_KEYS.has(h.key) && !canSeeEventDetail) {
+                          window.location.href = "/mon-compte/upgrade";
+                        } else {
+                          setHomeCategory(h.key);
+                        }
+                      }}
+                      className={`relative flex items-center gap-3 w-full min-w-0 h-[84px] rounded-2xl px-4 text-left text-white active:scale-[.98] transition-transform ${locked ? "shadow-pop" : "shadow-card"}`}
+                      style={
+                        locked
+                          ? { background: "linear-gradient(135deg, #1d1a14 0%, #3d2c0c 100%)", border: "2px solid #f5c04a" }
+                          : { background: `linear-gradient(135deg, color-mix(in srgb, ${h.color} 72%, #fff) 0%, color-mix(in srgb, ${h.color} 86%, #fff) 100%)` }
                       }
-                      if (PREMIUM_CATEGORY_KEYS.has(h.key) && !canSeeEventDetail) {
-                        window.location.href = "/mon-compte/upgrade";
-                      } else {
-                        setHomeCategory(h.key);
-                      }
-                    }}
-                    className="absolute left-0 right-0 active:opacity-70 transition-opacity"
-                    style={{ top: `${h.top}%`, height: `${h.height}%` }}
-                  />
-                ))}
+                    >
+                      <span className={`shrink-0 flex items-center justify-center w-11 h-11 rounded-full ${locked ? "text-[#1d1a14]" : "bg-white/25"}`} style={locked ? { background: "linear-gradient(135deg, #ffe08a, #f5a623)" } : undefined}>
+                        {Ico && <Ico size={26} weight="fill" aria-hidden />}
+                      </span>
+                      <span className="flex-1 min-w-0 flex flex-col leading-tight">
+                        <span className="inline-flex items-center gap-1.5 text-[16px] font-extrabold">
+                          {h.label}
+                          {locked && <span className="inline-flex items-center gap-0.5 px-1.5 py-0.5 rounded-pill text-[9.5px] font-extrabold text-[#1d1a14]" style={{ background: "linear-gradient(135deg, #ffe08a, #f5a623)" }}><Crown size={10} weight="fill" aria-hidden /> VIP</span>}
+                        </span>
+                        <span className={`text-[12px] font-medium line-clamp-2 ${locked ? "text-[#ffe08a]" : "text-white/90"}`}>{h.sub}</span>
+                      </span>
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img
+                        src={mascotFor(h.key) ?? "/icon-secondemain.png"}
+                        alt=""
+                        aria-hidden
+                        className="shrink-0 h-[72px] w-[72px] -my-4 -mr-1 object-contain drop-shadow-md"
+                      />
+                    </button>
+                    </Fragment>
+                  );
+                })}
               </div>
 
               {topRubriques.length > 0 && (
