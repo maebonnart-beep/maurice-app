@@ -62,7 +62,7 @@ export const ICON_MAP: Record<string, Icon> = {
   // Rubriques — Acheter & s'équiper
   "malls-shopping": Buildings, "mode-accessoires": TShirt,
   "maison-equipement": Armchair, "high-tech-electromenager": DeviceMobile,
-  "librairies-jeux-loisirs": Books, "souvenirs-cadeaux": Gift, "commander-en-ligne": GlobeHemisphereWest,
+  "librairies-jeux-loisirs": Books, "mercerie-loisirs-creatifs": Needle, "souvenirs-cadeaux": Gift, "commander-en-ligne": GlobeHemisphereWest,
   "seconde-main-boutiques": Storefront, "seconde-main-particuliers": Recycle,
 
   // Rubriques — Vie pratique

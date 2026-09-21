@@ -53913,13 +53913,15 @@
     "address": "Mahogany Shopping Promenade, Beau Plan",
     "phone": "+230 208 0107",
     "themes": [
-      "librairies-jeux-loisirs"
+      "librairies-jeux-loisirs",
+      "mercerie-loisirs-creatifs"
     ],
     "zone": "nord",
     "hours": "Lu-ve 9h-19h, sa 20h, dim 15h",
     "description": "Jeux de cartes et de société, modélisme, peinture, confection.",
     "filters": [
-      "jeux"
+      "jeux",
+      "mercerie-loisirs-creatifs"
     ],
     "lat": -20.0992326,
     "lng": 57.5768495,
@@ -53932,13 +53934,13 @@
     "address": "Grand Baie La Croisette",
     "phone": "+230 269 6767",
     "themes": [
-      "librairies-jeux-loisirs"
+      "mode-accessoires"
     ],
     "zone": "nord",
     "hours": "Lu-je 9h30-19h, ven 19h30, sa 20h, dim 10h-14h",
-    "description": "Grande gamme de jouets de marques européennes, notamment pour les tout-petits.",
+    "description": "Magasin pour enfants et tout-petits : jouets de marques européennes, vêtements et petit équipement de puériculture.",
     "filters": [
-      "jeux"
+      "mode-enfants"
     ],
     "lat": -20.0228809,
     "lng": 57.5791416,
@@ -57536,12 +57538,14 @@
     "lat": -20.099693,
     "lng": 57.5767875,
     "themes": [
-      "librairies-jeux-loisirs"
+      "librairies-jeux-loisirs",
+      "mercerie-loisirs-creatifs"
     ],
     "zone": "nord",
     "description": "Boutique de loisirs créatifs, jeux et modélisme HobbyWorld, au Mahogany Shopping Promenade.",
     "filters": [
-      "librairies-jeux-loisirs"
+      "librairies-jeux-loisirs",
+      "mercerie-loisirs-creatifs"
     ],
     "createdAt": "2026-09-08T10:34:56+02:00"
   },
@@ -58393,5 +58397,77 @@
     "description": "Service de réexpédition : si vous trouvez un produit en France ou en Europe, Easy-Delivery permet de le commander et de le faire livrer à Maurice (exemples de boutiques : Motovision, Primor…).",
     "createdAt": "2026-09-21T04:03:29.448Z",
     "koteMorisComment": "La solution quand un produit n'existe qu'en France ou en Europe et que la boutique ne livre pas à Maurice : le colis passe par Easy-Delivery, qui le réexpédie. À prévoir : les frais de transport en plus du prix du produit, et des délais plus longs qu'une livraison locale."
+  },
+  {
+    "id": "magasin-differente-triolet",
+    "name": "Magasin Différente",
+    "category": "acheter-equiper",
+    "address": "9th Mile, Royal Road, Triolet",
+    "phone": "+230 261 8617",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Magasin%20Diff%C3%A9rente%209th%20Mile%2C%20Royal%20Road%2C%20Triolet%20Mauritius",
+    "themes": [
+      "mercerie-loisirs-creatifs"
+    ],
+    "zone": "nord",
+    "description": "Boutique d’accessoires de mode et de mercerie sur la Royal Road, à Triolet.",
+    "filters": [
+      "mercerie-loisirs-creatifs"
+    ],
+    "createdAt": "2026-09-21T04:46:22.219Z"
+  },
+  {
+    "id": "nazash-boutique-dor-triolet",
+    "name": "Nazash Boutique D’Or",
+    "category": "acheter-equiper",
+    "address": "9ème Mille, Triolet",
+    "phone": "+230 5977 9839",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Nazash%20Boutique%20D%E2%80%99Or%209%C3%A8me%20Mille%2C%20Triolet%20Mauritius",
+    "themes": [
+      "mercerie-loisirs-creatifs"
+    ],
+    "zone": "nord",
+    "description": "Boutique et atelier de couture au 9ème Mille, à Triolet.",
+    "filters": [
+      "mercerie-loisirs-creatifs"
+    ],
+    "createdAt": "2026-09-21T04:46:22.239Z"
+  },
+  {
+    "id": "magasin-central-grand-baie",
+    "name": "Magasin Central",
+    "category": "acheter-equiper",
+    "address": "Royal Road, Grand Baie",
+    "phone": "+230 263 8936",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Magasin%20Central%20Royal%20Road%2C%20Grand%20Baie%20Mauritius",
+    "themes": [
+      "mercerie-loisirs-creatifs"
+    ],
+    "zone": "nord",
+    "description": "Commerce local sur la Royal Road, à Grand Baie.",
+    "filters": [
+      "mercerie-loisirs-creatifs"
+    ],
+    "createdAt": "2026-09-21T04:46:22.239Z"
+  },
+  {
+    "id": "ishamrook-corderie-port-louis",
+    "name": "Ishamrook Ltée",
+    "category": "acheter-equiper",
+    "address": "28 Rue Corderie, Port-Louis",
+    "phone": "+230 208 6189",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Ishamrook%20Lt%C3%A9e%2028%20Rue%20Corderie%2C%20Port-Louis%20Mauritius",
+    "themes": [
+      "mercerie-loisirs-creatifs"
+    ],
+    "zone": "centre",
+    "description": "Magasin de textiles et accessoires vestimentaires, rue Corderie à Port-Louis.",
+    "filters": [
+      "mercerie-loisirs-creatifs"
+    ],
+    "createdAt": "2026-09-21T04:46:22.239Z"
   }
 ]
