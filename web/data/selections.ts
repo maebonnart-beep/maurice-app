@@ -173,7 +173,6 @@ export const SELECTIONS: Selection[] = [
     businessIds: [
       "bisou-rooftop-bar-restaurant-lux-grand-baie",
       "rooftop-adults-only-restaurant-bar-lounge",
-      "black-river-lounge-kitchen-tamarin",
       "c-beach-club-bel-ombre",
       "the-thirsty-fox-brewery",
       "cocochill-restaurant-bar-a-cocktails-swimming-pool",

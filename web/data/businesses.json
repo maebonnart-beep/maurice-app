@@ -3926,26 +3926,6 @@
     "createdAt": "2026-07-11T18:29:40+02:00"
   },
   {
-    "id": "black-river-lounge-kitchen-tamarin",
-    "name": "Black River Lounge & Kitchen",
-    "category": "manger-boire",
-    "address": "Tamarin",
-    "phone": "+230 5253 2019",
-    "website": "",
-    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Black%20River%20Lounge%20Kitchen%20Tamarin%20Mauritius",
-    "lat": -20.326,
-    "lng": 57.374,
-    "themes": [
-      "cafes-bars-glaciers"
-    ],
-    "zone": "ouest",
-    "description": "Bar-lounge afterwork de Tamarin (Palm Square Building), tapas, cocktails à base de gin et produits de mer du lagon ouest. Ambiance décontractée très appréciée.",
-    "filters": [
-      "bars"
-    ],
-    "createdAt": "2026-07-11T18:29:40+02:00"
-  },
-  {
     "id": "the-boathouse-grill-le-morne",
     "name": "The Boathouse Bar & Grill - St. Regis",
     "category": "manger-boire",
