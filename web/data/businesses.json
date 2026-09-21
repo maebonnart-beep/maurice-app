@@ -58469,5 +58469,23 @@
       "mercerie-loisirs-creatifs"
     ],
     "createdAt": "2026-09-21T04:46:22.239Z"
+  },
+  {
+    "id": "ishamrook-blondeau-rose-hill",
+    "name": "Ishamrook & Co Ltd",
+    "category": "acheter-equiper",
+    "address": "50 Blondeau Street, Rose Hill",
+    "phone": "+230 464 7523",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Ishamrook%20%26%20Co%20Ltd%2050%20Blondeau%20Street%2C%20Rose%20Hill%20Mauritius",
+    "themes": [
+      "mercerie-loisirs-creatifs"
+    ],
+    "zone": "centre",
+    "description": "Magasin de vêtements et accessoires, seconde adresse de l’enseigne Ishamrook, à Rose Hill.",
+    "filters": [
+      "mercerie-loisirs-creatifs"
+    ],
+    "createdAt": "2026-09-21T04:57:22.871Z"
   }
 ]
