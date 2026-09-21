@@ -2095,40 +2095,32 @@ export default function DirectoryClient({
                     (premium, badge couronne) scrollent vers leurs encarts plus
                     bas ; Favoris et coups de cœur gardent leurs handlers. */}
                 <div className="grid grid-cols-2 gap-2 mt-3">
-                  {/* Événements & Seconde main, version discrète : fine barre
-                      translucide (même verre que les autres cartes), petites
-                      vignettes rondes de vraies photos, mention Premium sobre.
-                      Non abonné → upgrade, abonné → encarts plus bas. Les
-                      Listes de Koté Moris seront présentées à part. */}
-                  <button
-                    onClick={() => {
-                      if (canSeeEventDetail) scrollToHomeSection("accueil-evenements");
-                      else window.location.href = "/mon-compte/upgrade";
-                    }}
-                    aria-label="Événements et Seconde main — accès Premium"
-                    className="col-span-2 mt-1 flex items-center gap-3 rounded-full border border-white/50 pl-2 pr-4 py-1.5 text-left shadow-sm backdrop-blur-md active:scale-[.98] transition-transform"
-                    style={{ background: "color-mix(in srgb, var(--surface) 60%, transparent)" }}
-                  >
-                    <span className="shrink-0 flex -space-x-3">
-                      {[
-                        "/photo-univers-evenements.png",
-                        "/photo-univers-seconde-main.png",
-                        previewListingPhotos.length > 0
-                          ? listingPhotoUrl(previewListingPhotos[0].photos![0].storagePath)
-                          : SECONDE_MAIN_ILLUSTRATIONS[0],
-                      ].map((src) => (
-                        // eslint-disable-next-line @next/next/no-img-element
-                        <img key={src} src={src} alt="" aria-hidden className="w-9 h-9 rounded-full object-cover object-top border-2 border-white" />
-                      ))}
-                    </span>
-                    <span className="flex-1 min-w-0 flex flex-col leading-tight">
-                      <span className="text-[13px] sm:text-[15px] font-extrabold text-ink">Événements &amp; Seconde main</span>
-                      <span className="inline-flex items-center gap-1 text-[11px] sm:text-[12.5px] font-semibold" style={{ color: "#c77700" }}>
-                        <Crown size={11} weight="fill" aria-hidden /> Accès Premium
+                  {/* Événements & Seconde main : les 2 vignettes fournies (texte
+                      déjà dessiné dans l'image) côte à côte, sans libellé en
+                      plus. Couronne dorée = accès Premium. Non abonné →
+                      upgrade, abonné → encart détaillé plus bas. Les Listes
+                      de Koté Moris seront présentées à part. */}
+                  {[
+                    { src: "/vignette-agenda.webp", alt: "Agenda des événements — accès Premium", target: "accueil-evenements" },
+                    { src: "/vignette-seconde-main.webp", alt: "Seconde main — accès Premium", target: "accueil-seconde-main" },
+                  ].map((v) => (
+                    <button
+                      key={v.src}
+                      onClick={() => {
+                        if (canSeeEventDetail) scrollToHomeSection(v.target);
+                        else window.location.href = "/mon-compte/upgrade";
+                      }}
+                      aria-label={v.alt}
+                      className="relative block h-[112px] sm:h-[150px] rounded-2xl overflow-hidden shadow-pop active:scale-[.97] transition-transform"
+                      style={{ border: "2px solid rgba(255,255,255,.85)" }}
+                    >
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img src={v.src} alt="" aria-hidden className="absolute inset-0 w-full h-full object-cover object-[50%_100%]" />
+                      <span className="absolute top-1.5 right-1.5 inline-flex items-center justify-center w-6 h-6 rounded-full text-white shadow-sm" style={{ background: "linear-gradient(135deg, #f5a623, #e88a00)" }}>
+                        <Crown size={13} weight="fill" aria-hidden />
                       </span>
-                    </span>
-                    <span className="shrink-0 text-[18px] font-bold text-ink/60" aria-hidden>›</span>
-                  </button>
+                    </button>
+                  ))}
                 </div>
               </div>
               {/* Joint visuel : fondu au raz du bas de l'illustration vers le
@@ -2301,7 +2293,7 @@ export default function DirectoryClient({
                   header) : plus de carte séparée ici. */}
 
               {/* -mt : chevauche le bas de l'illustration pour faire la jointure avec le scroll (z-40 > header z-30). */}
-              <div className="relative z-40 -mt-24 grid grid-cols-2 gap-2.5 mb-7">
+              <div className="relative z-40 -mt-20 grid grid-cols-2 gap-2.5 mb-7">
             {/* Deux pavés jumeaux (même trame : visuel en haut, libellé
                 gras dessous, même teinte) : « Mes adresses » (personnel →
                 Mon compte) et « Nos sélections Koté Moris » (badges
@@ -2747,30 +2739,45 @@ export default function DirectoryClient({
             <div className="max-w-[480px] mx-auto pb-16 pt-2">
               <h2 className="text-[18px] font-bold text-ink mb-1">Rechercher</h2>
               <p className="text-[13px] text-muted mb-5">Comment veux-tu chercher ton adresse ?</p>
-              <div className="flex flex-col gap-3">
+              {/* Deux cartes sur fond de lagon (même image que l'accueil) qui
+                  reprennent, en miniature, ce qu'on trouve à l'accueil : la
+                  barre de recherche translucide pour « Par mot clé », les
+                  tuiles de catégories pour « Par catégorie ». */}
+              <div className="grid grid-cols-1 gap-3">
                 <button
                   onClick={focusSearch}
-                  className="flex items-center gap-3.5 rounded-2xl border border-border bg-surface px-4 py-3 text-left shadow-card active:scale-[.98] transition-transform"
+                  className="relative block w-full overflow-hidden rounded-2xl text-left shadow-card active:scale-[.98] transition-transform"
                 >
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="/icon-recherche.png" alt="" aria-hidden className="shrink-0 w-[84px] h-[84px] object-contain" />
-                  <span>
-                    <span className="block text-[17px] font-bold text-ink">Par mot clé</span>
-                    <span className="block text-[14px] text-muted mt-0.5">
-                      Un nom, une activité, un lieu…
+                  <img src="/bandeau-kotemoris-accueil-v9.webp" alt="" aria-hidden className="absolute inset-0 w-full h-full object-cover object-[50%_66%]" />
+                  <span className="absolute inset-0" style={{ background: "linear-gradient(180deg, rgba(6,50,56,.62) 0%, rgba(6,50,56,.18) 100%)" }} />
+                  <span className="relative block px-4 pt-3.5 pb-4">
+                    <span className="block text-[18px] font-extrabold text-white">Par mot clé</span>
+                    <span className="block text-[12.5px] font-medium text-white/90">Un nom, une activité, un lieu…</span>
+                    <span
+                      className="mt-3 flex items-center gap-2.5 h-12 px-4 rounded-pill border border-white/50 text-white backdrop-blur-md"
+                      style={{ background: "linear-gradient(135deg, color-mix(in srgb, var(--primary-deep) 55%, transparent) 0%, color-mix(in srgb, var(--primary) 40%, transparent) 100%)", textShadow: "0 1px 3px rgba(0,0,0,.35)" }}
+                    >
+                      <MagnifyingGlass size={22} weight="bold" className="shrink-0" aria-hidden />
+                      <span className="truncate text-[14px] font-semibold">Rechercher une activité, un lieu…</span>
                     </span>
                   </span>
                 </button>
                 <button
                   onClick={() => setHomeMode("categories")}
-                  className="flex items-center gap-3.5 rounded-2xl border border-border bg-surface px-4 py-3 text-left shadow-card active:scale-[.98] transition-transform"
+                  className="relative block w-full overflow-hidden rounded-2xl text-left shadow-card active:scale-[.98] transition-transform"
                 >
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="/icon-categories.png" alt="" aria-hidden className="shrink-0 w-[84px] h-[84px] object-contain" />
-                  <span>
-                    <span className="block text-[17px] font-bold text-ink">Par catégorie</span>
-                    <span className="block text-[14px] text-muted mt-0.5">
-                      Restaurants, activités, sorties…
+                  <img src="/bandeau-kotemoris-accueil-v9.webp" alt="" aria-hidden className="absolute inset-0 w-full h-full object-cover object-[50%_82%]" />
+                  <span className="absolute inset-0" style={{ background: "linear-gradient(180deg, rgba(6,50,56,.62) 0%, rgba(6,50,56,.18) 100%)" }} />
+                  <span className="relative block px-4 pt-3.5 pb-4">
+                    <span className="block text-[18px] font-extrabold text-white">Par catégorie</span>
+                    <span className="block text-[12.5px] font-medium text-white/90">Restaurants, activités, sorties…</span>
+                    <span className="mt-3 grid grid-cols-3 gap-2">
+                      {["manger-boire", "sortir-decouvrir", "faire-du-sport"].map((k) => (
+                        // eslint-disable-next-line @next/next/no-img-element
+                        <img key={k} src={`/tuile-${k}.webp`} alt="" aria-hidden className="block w-full h-auto rounded-xl shadow-sm" />
+                      ))}
                     </span>
                   </span>
                 </button>
