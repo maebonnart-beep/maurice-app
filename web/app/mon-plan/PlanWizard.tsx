@@ -181,14 +181,25 @@ export default function PlanWizard({ businesses }: { businesses: Business[] }) {
         {visible.map((c, i) => (
           <article key={c.activity.id} className="mb-6">
             <div className="flex items-baseline justify-between gap-2">
-              <h2 className="text-[15px] font-extrabold text-ink">Idée {page * PAGE_SIZE + i + 1}</h2>
+              <h2 className="text-[15px] font-extrabold text-ink">
+                {1 + (c.restaurant ? 1 : 0) + c.extras.length > 1 ? "Plan" : "Adresse"} {page * PAGE_SIZE + i + 1}
+                {1 + (c.restaurant ? 1 : 0) + c.extras.length > 1 && (
+                  <span className="ml-1.5 text-[12px] font-semibold text-muted">
+                    · {1 + (c.restaurant ? 1 : 0) + c.extras.length} étapes
+                  </span>
+                )}
+              </h2>
               <p className="text-[12px] font-bold text-primary">≈ {formatMinutes(c.totalMinutes)} au total</p>
             </div>
             <p className="mt-0.5 text-[11.5px] text-muted leading-snug">
-              Activité {c.activityEstimated ? "≈ " : ""}
+              1. {c.activityEstimated ? "≈ " : ""}
               {formatMinutes(c.activityMinutes)}
               {c.activityEstimated ? " (durée estimée)" : ""}
-              {c.restaurant && ` · route ≈ ${formatMinutes(c.travelMinutes)} · repas ≈ ${formatMinutes(c.mealMinutes)}`}
+              {c.restaurant && ` · route ≈ ${formatMinutes(c.travelMinutes)} · 2. repas ≈ ${formatMinutes(c.mealMinutes)}`}
+              {c.extras.map((e, k) => {
+                const n = 2 + (c.restaurant ? 1 : 0) + k;
+                return ` · route ≈ ${formatMinutes(e.travelMinutes)} · ${n}. ${e.estimated ? "≈ " : ""}${formatMinutes(e.minutes)}`;
+              })}
             </p>
 
             <div className="mt-3 space-y-3">
@@ -207,6 +218,16 @@ export default function PlanWizard({ businesses }: { businesses: Business[] }) {
                   nearbyKm={c.legKm}
                 />
               )}
+              {c.extras.map((e) => (
+                <BusinessCard
+                  key={e.business.id}
+                  business={e.business}
+                  active={false}
+                  onSelect={() => setOpenBusiness(e.business)}
+                  onHover={() => {}}
+                  nearbyKm={e.legKm}
+                />
+              ))}
             </div>
           </article>
         ))}

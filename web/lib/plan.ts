@@ -3,7 +3,18 @@ import { haversineKm } from "@/lib/geo";
 
 export type PlanWho = "famille" | "couple" | "amis" | "solo";
 export type PlanZone = "nord" | "sud" | "est" | "ouest" | "centre" | "partout";
-export type PlanActivity = "excursion" | "plage" | "parc" | "culture" | "rando";
+export type PlanActivity =
+  | "excursion"
+  | "plage"
+  | "parc"
+  | "culture"
+  | "rando"
+  | "sport"
+  | "bienetre"
+  | "shopping"
+  | "equiper"
+  | "marche"
+  | "sortie";
 export type PlanMeal = "mauricienne" | "indienne" | "asiatique" | "europeenne" | "tous" | "aucun";
 
 export interface PlanCriteria {
@@ -12,6 +23,15 @@ export interface PlanCriteria {
   activity: PlanActivity;
   meal: PlanMeal;
   maxMinutes: number;
+}
+
+/** Étape supplémentaire après le repas (ou après l'activité s'il n'y a pas de repas). */
+export interface PlanExtraStop {
+  business: Business;
+  minutes: number;
+  estimated: boolean;
+  travelMinutes: number;
+  legKm: number;
 }
 
 export interface PlanCombo {
@@ -24,6 +44,8 @@ export interface PlanCombo {
   activityEstimated: boolean;
   travelMinutes: number;
   mealMinutes: number;
+  /** Étapes ajoutées tant qu'il reste du temps dans la durée max. */
+  extras: PlanExtraStop[];
   totalMinutes: number;
 }
 
@@ -49,6 +71,12 @@ export const PLAN_ACTIVITIES: { key: PlanActivity; label: string; themes: string
   { key: "parc", label: "Parc & activités", themes: ["parcs-activites-famille", "activites-enfants-famille"], defaultMinutes: 90 },
   { key: "culture", label: "Culture & patrimoine", themes: ["culture-patrimoine"], defaultMinutes: 60 },
   { key: "rando", label: "Randonnée", themes: ["randonnee-trail"], defaultMinutes: 120 },
+  { key: "sport", label: "Sport", themes: ["tennis-padel", "golf", "sports-nautiques", "equitation-autres-sports"], defaultMinutes: 90 },
+  { key: "bienetre", label: "Spa & bien-être", themes: ["spa-instituts-massages", "yoga-bien-etre"], defaultMinutes: 90 },
+  { key: "shopping", label: "Shopping", themes: ["malls-shopping", "mode-accessoires", "souvenirs-cadeaux", "librairies-jeux-loisirs"], defaultMinutes: 90 },
+  { key: "equiper", label: "S'équiper", themes: ["maison-equipement", "high-tech-electromenager", "mercerie-loisirs-creatifs"], defaultMinutes: 60 },
+  { key: "marche", label: "Marchés & produits locaux", themes: ["marches-produits-locaux"], defaultMinutes: 60 },
+  { key: "sortie", label: "Bar, café, cinéma", themes: ["cafes-bars-glaciers", "cinemas", "casinos-loisirs"], defaultMinutes: 90 },
 ];
 
 export const PLAN_MEALS: { key: PlanMeal; label: string }[] = [
@@ -69,6 +97,10 @@ export const PLAN_DURATIONS: { minutes: number; label: string }[] = [
 ];
 
 const MEAL_MINUTES = 60;
+/** Types où l'on peut enchaîner plusieurs adresses dans un même plan (pas 3 massages ou 2 golfs d'affilée). */
+const CHAINABLE = new Set<PlanActivity>(["plage", "culture", "shopping", "equiper", "marche", "sortie"]);
+/** Nombre max d'étapes ajoutées à l'activité de départ quand il reste du temps. */
+const MAX_EXTRA_STOPS = 2;
 /** Rayon max activité → restaurant (km, à vol d'oiseau). */
 const MAX_LEG_KM = 12;
 /** Vitesse moyenne retenue pour la route, en km/h, avec 1,4 de détour sur la distance à vol d'oiseau. */
@@ -140,9 +172,12 @@ export function buildPlan(businesses: Business[], c: PlanCriteria): PlanCombo[] 
 
   const combos: PlanCombo[] = [];
   const usedRestaurants = new Set<string>();
+  const usedExtras = new Set<string>();
 
   const sorted = [...activities].sort((a, b) => quality(b) - quality(a) || a.name.localeCompare(b.name));
   for (const a of sorted) {
+    // Une fiche déjà utilisée (comme étape d'un autre plan) n'est pas reproposée en départ.
+    if (usedExtras.has(a.id)) continue;
     const parsed = parseDurationMinutes(a.duration);
     const activityMinutes = parsed ?? act.defaultMinutes;
 
@@ -165,9 +200,35 @@ export function buildPlan(businesses: Business[], c: PlanCriteria): PlanCombo[] 
 
     const travelMinutes = legKm != null ? Math.round(((legKm * ROAD_DETOUR) / ROAD_KMH) * 60) : 0;
     const mealMinutes = wantsMeal ? MEAL_MINUTES : 0;
-    const totalMinutes = activityMinutes + travelMinutes + mealMinutes;
+    let totalMinutes = activityMinutes + travelMinutes + mealMinutes;
     if (totalMinutes > c.maxMinutes) continue;
     if (restaurant) usedRestaurants.add(restaurant.id);
+    usedExtras.add(a.id);
+
+    // Plan en plusieurs étapes : tant qu'il reste du temps, on enchaîne une autre adresse du même
+    // type à proximité de la dernière étape (max 2 étapes en plus). Sinon le plan reste court.
+    const extras: PlanExtraStop[] = [];
+    const chosen = new Set<string>([a.id]);
+    let anchor: Business = restaurant ?? a;
+    while (CHAINABLE.has(c.activity) && extras.length < MAX_EXTRA_STOPS) {
+      const next = sorted
+        .filter((x) => !chosen.has(x.id) && !usedExtras.has(x.id))
+        .map((x) => {
+          const km = haversineKm(anchor.lat as number, anchor.lng as number, x.lat as number, x.lng as number);
+          const parsedX = parseDurationMinutes(x.duration);
+          const minutes = parsedX ?? act.defaultMinutes;
+          const travel = Math.round(((km * ROAD_DETOUR) / ROAD_KMH) * 60);
+          return { x, km, minutes, travel, estimated: parsedX === undefined };
+        })
+        .filter((n) => n.km <= MAX_LEG_KM && totalMinutes + n.travel + n.minutes <= c.maxMinutes)
+        .sort((p, q) => quality(q.x) - quality(p.x) || p.km - q.km)[0];
+      if (!next) break;
+      extras.push({ business: next.x, minutes: next.minutes, estimated: next.estimated, travelMinutes: next.travel, legKm: next.km });
+      chosen.add(next.x.id);
+      usedExtras.add(next.x.id);
+      totalMinutes += next.travel + next.minutes;
+      anchor = next.x;
+    }
 
     combos.push({
       activity: a,
@@ -177,6 +238,7 @@ export function buildPlan(businesses: Business[], c: PlanCriteria): PlanCombo[] 
       activityEstimated: parsed === undefined,
       travelMinutes,
       mealMinutes,
+      extras,
       totalMinutes,
     });
   }
@@ -238,11 +300,17 @@ export function parsePlanText(text: string): Partial<PlanCriteria> {
     if (place) out.zone = place[0];
   }
 
-  if (/\b(rando|randonnee|randonnees|trek|trail|marche)\b/.test(t)) out.activity = "rando";
+  if (/\b(rando|randonnee|randonnees|trek|trail|marche a pied|balade a pied)\b/.test(t)) out.activity = "rando";
   else if (/\b(musee|musees|culture|culturel|patrimoine|histoire|visite)\b/.test(t)) out.activity = "culture";
   else if (/\b(plage|plages|baignade|snorkeling|detente au bord)\b/.test(t)) out.activity = "plage";
   else if (/\b(parc|parcs|jardin|zoo|accrobranche|quad|activite|activites|loisirs)\b/.test(t)) out.activity = "parc";
   else if (/\b(excursion|excursions|sortie|sorties|bateau|catamaran|croisiere|balade)\b/.test(t)) out.activity = "excursion";
+  else if (/\b(sport|tennis|padel|golf|plongee|surf|kitesurf|kayak|paddle|equitation|cheval)\b/.test(t)) out.activity = "sport";
+  else if (/\b(spa|massage|massages|yoga|bien-etre|institut|detente)\b/.test(t)) out.activity = "bienetre";
+  else if (/\b(shopping|magasin|magasins|boutique|boutiques|mall|malls|souvenir|souvenirs|cadeau|cadeaux|vetements)\b/.test(t)) out.activity = "shopping";
+  else if (/\b(equiper|materiel|electromenager|high-tech|bricolage|meuble|meubles|deco)\b/.test(t)) out.activity = "equiper";
+  else if (/\b(marche|marches|produits locaux|fruits|legumes)\b/.test(t)) out.activity = "marche";
+  else if (/\b(bar|bars|cafe|cafes|cinema|casino|soiree|apero|glace|glacier|boire un verre)\b/.test(t)) out.activity = "sortie";
 
   if (/\b(sans repas|pas de repas|sans resto|sans restaurant|pas de resto)\b/.test(t)) out.meal = "aucun";
   else if (/\b(creole|mauricien|mauricienne|cuisine locale|locale)\b/.test(t)) out.meal = "mauricienne";
