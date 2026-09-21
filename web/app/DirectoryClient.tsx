@@ -13,6 +13,7 @@ import type { SelectionGroup, SelectionIconKey } from "@/data/selections";
 import { fuzzyMatchTokens, tokenize, normalizeText } from "@/lib/fuzzyMatch";
 import { isPastEvent, compareByEventDate, eventColorFor } from "@/lib/events";
 import { matchesOpenNow } from "@/lib/openHours";
+import { haversineKm } from "@/lib/geo";
 
 const SELECTION_ICONS: Record<SelectionIconKey, Icon> = {
   CloudRain,
@@ -256,17 +257,6 @@ function shuffled<T>(arr: T[]): T[] {
     [a[i], a[j]] = [a[j], a[i]];
   }
   return a;
-}
-
-// Distance à vol d'oiseau (km) entre deux points GPS — pour « Autour de moi ».
-function haversineKm(aLat: number, aLng: number, bLat: number, bLng: number): number {
-  const R = 6371;
-  const dLat = ((bLat - aLat) * Math.PI) / 180;
-  const dLng = ((bLng - aLng) * Math.PI) / 180;
-  const s =
-    Math.sin(dLat / 2) ** 2 +
-    Math.cos((aLat * Math.PI) / 180) * Math.cos((bLat * Math.PI) / 180) * Math.sin(dLng / 2) ** 2;
-  return 2 * R * Math.asin(Math.sqrt(s));
 }
 
 const Map = dynamic(() => import("./Map"), {
@@ -2334,6 +2324,24 @@ export default function DirectoryClient({
               <span className="text-[13px] sm:text-[15px] font-extrabold text-ink leading-tight text-center">Nos sélections Koté Moris</span>
             </div>
               </div>
+
+              {/* Assistant « Créer mon plan » : activité + resto proche selon les critères de l'utilisateur. */}
+              <Link
+                href="/mon-plan"
+                className="mb-7 flex items-center gap-3 rounded-2xl p-3.5 no-underline text-ink shadow-card active:scale-[.99] transition-transform"
+                style={{ background: "linear-gradient(135deg, color-mix(in srgb, var(--primary) 22%, var(--surface)) 0%, var(--surface) 80%)" }}
+              >
+                <span className="shrink-0 flex items-center justify-center w-11 h-11 rounded-full bg-primary text-white" aria-hidden>
+                  <Sparkle size={22} weight="fill" />
+                </span>
+                <span className="min-w-0 flex-1">
+                  <span className="block text-[15px] font-extrabold leading-tight">Créer mon plan</span>
+                  <span className="block text-[11.5px] text-muted leading-snug mt-0.5">
+                    Une activité + un resto proche, selon ton groupe, ta zone et ton temps
+                  </span>
+                </span>
+                <span className="shrink-0 text-[18px] font-bold text-primary-deep" aria-hidden>›</span>
+              </Link>
 
               <div className="flex items-center justify-between mb-1">
                 <h2 className="text-[16px] font-bold text-ink">Les listes de Koté Moris</h2>
