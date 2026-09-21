@@ -189,3 +189,75 @@ export function formatMinutes(min: number): string {
   if (h === 0) return `${m} min`;
   return m === 0 ? `${h} h` : `${h} h ${String(m).padStart(2, "0")}`;
 }
+
+/** Minuscules, sans accents, apostrophes droites : base commune pour repérer les mots-clés. */
+function norm(text: string): string {
+  return text
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[’`]/g, "'");
+}
+
+const ZONE_PLACES: Record<Exclude<PlanZone, "partout">, string[]> = {
+  nord: ["grand baie", "grand-baie", "pereybere", "cap malheureux", "trou aux biches", "mont choisy", "pamplemousses", "grand gaube"],
+  ouest: ["flic en flac", "flic-en-flac", "le morne", "tamarin", "black river", "la gaulette", "albion", "wolmar"],
+  sud: ["mahebourg", "blue bay", "souillac", "bel ombre", "chamarel", "gris gris", "riviere des anguilles", "savanne", "pointe d'esny"],
+  est: ["belle mare", "trou d'eau douce", "ile aux cerfs", "poste de flacq", "roches noires", "centre de flacq"],
+  centre: ["curepipe", "vacoas", "ebene", "quatre bornes", "moka", "trou aux cerfs", "phoenix"],
+};
+
+/**
+ * Lit une phrase libre (« excursion en famille dans le sud avec resto créole, max 3h »)
+ * et renvoie les critères reconnus. Un critère non mentionné est absent du résultat
+ * (l'appelant garde alors la valeur déjà choisie) : on ne devine rien.
+ */
+export function parsePlanText(text: string): Partial<PlanCriteria> {
+  const t = norm(text);
+  const out: Partial<PlanCriteria> = {};
+
+  if (/\b(famille|enfants?|bebes?|kids|petits)\b/.test(t)) out.who = "famille";
+  else if (/\b(couple|romantique|amoureux|a deux|en duo)\b/.test(t)) out.who = "couple";
+  else if (/\b(amis|potes|copains|copines|groupe|bande)\b/.test(t)) out.who = "amis";
+  else if (/\b(solo|seul|seule)\b/.test(t)) out.who = "solo";
+
+  // Zone : un mot-clé de zone, sinon un lieu connu. « sud-est » → sud (1er cité gagne).
+  const zoneRegex: [PlanZone, RegExp][] = [
+    ["nord", /\bnord\b/],
+    ["sud", /\bsud\b/],
+    ["ouest", /\bouest\b/],
+    ["centre", /\bcentre\b|\bplateaux?\b/],
+    ["est", /(?:\bl'|\bcote |\bregion |\bzone )est\b|\best de l'ile\b/],
+  ];
+  const zoneHit = zoneRegex.find(([, re]) => re.test(t));
+  if (zoneHit) out.zone = zoneHit[0];
+  else {
+    const place = (Object.entries(ZONE_PLACES) as [Exclude<PlanZone, "partout">, string[]][]).find(([, names]) =>
+      names.some((n) => t.includes(n)),
+    );
+    if (place) out.zone = place[0];
+  }
+
+  if (/\b(rando|randonnee|randonnees|trek|trail|marche)\b/.test(t)) out.activity = "rando";
+  else if (/\b(musee|musees|culture|culturel|patrimoine|histoire|visite)\b/.test(t)) out.activity = "culture";
+  else if (/\b(plage|plages|baignade|snorkeling|detente au bord)\b/.test(t)) out.activity = "plage";
+  else if (/\b(parc|parcs|jardin|zoo|accrobranche|quad|activite|activites|loisirs)\b/.test(t)) out.activity = "parc";
+  else if (/\b(excursion|excursions|sortie|sorties|bateau|catamaran|croisiere|balade)\b/.test(t)) out.activity = "excursion";
+
+  if (/\b(sans repas|pas de repas|sans resto|sans restaurant|pas de resto)\b/.test(t)) out.meal = "aucun";
+  else if (/\b(creole|mauricien|mauricienne|cuisine locale|locale)\b/.test(t)) out.meal = "mauricienne";
+  else if (/\b(indien|indienne|curry|biryani)\b/.test(t)) out.meal = "indienne";
+  else if (/\b(asiatique|chinois|chinoise|thai|thailandais|japonais|sushi)\b/.test(t)) out.meal = "asiatique";
+  else if (/\b(europeen|europeenne|francais|italien|pizza|pizzeria)\b/.test(t)) out.meal = "europeenne";
+  else if (/\b(resto|restos|restaurant|manger|repas|dejeuner|diner|dejeuner)\b/.test(t)) out.meal = "tous";
+
+  // Durée : « 3h », « 2h30 », « 2 heures », « 90 min », « demi-journée », « journée ».
+  const hm = t.match(/(\d+)\s*(?:h|heures?)\s*(\d{1,2})?/);
+  const mn = t.match(/(\d+)\s*(?:min|minutes|mn)\b/);
+  if (hm) out.maxMinutes = parseInt(hm[1], 10) * 60 + (hm[2] ? parseInt(hm[2], 10) : 0);
+  else if (mn) out.maxMinutes = parseInt(mn[1], 10);
+  else if (/\bdemi[- ]?journee\b/.test(t)) out.maxMinutes = 360;
+  else if (/\b(journee|toute la journee)\b/.test(t)) out.maxMinutes = 600;
+
+  return out;
+}

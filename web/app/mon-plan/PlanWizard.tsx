@@ -13,6 +13,7 @@ import {
   PLAN_ZONES,
   buildPlan,
   formatMinutes,
+  parsePlanText,
   type PlanActivity,
   type PlanCriteria,
   type PlanMeal,
@@ -56,17 +57,56 @@ export default function PlanWizard({ businesses }: { businesses: Business[] }) {
   const [submitted, setSubmitted] = useState<PlanCriteria | null>(null);
   const [page, setPage] = useState(0);
   const [openBusiness, setOpenBusiness] = useState<Business | null>(null);
+  const [text, setText] = useState("");
+  const [textHint, setTextHint] = useState<string | null>(null);
 
   const combos = useMemo(() => (submitted ? buildPlan(businesses, submitted) : []), [businesses, submitted]);
   const visible = combos.slice(page * PAGE_SIZE, page * PAGE_SIZE + PAGE_SIZE);
   const hasMore = (page + 1) * PAGE_SIZE < combos.length;
 
-  const submit = () => {
-    setSubmitted({ who, zone, activity, meal, maxMinutes });
+  const run = (c: PlanCriteria) => {
+    setSubmitted(c);
     setPage(0);
     requestAnimationFrame(() =>
       document.getElementById("plan-resultats")?.scrollIntoView({ behavior: "smooth", block: "start" }),
     );
+  };
+
+  const submit = () => run({ who, zone, activity, meal, maxMinutes });
+
+  // Phrase libre : on lit les critères reconnus, on les reporte sur les puces
+  // (l'utilisateur voit ce qui a été compris et peut corriger), puis on lance.
+  const submitText = () => {
+    const found = parsePlanText(text);
+    if (Object.keys(found).length === 0) {
+      setTextHint("Je n'ai rien reconnu. Essaie par exemple : « excursion en famille dans le sud, resto créole, max 3h ».");
+      return;
+    }
+    const next: PlanCriteria = { who, zone, activity, meal, maxMinutes, ...found };
+    setWho(next.who);
+    setZone(next.zone);
+    setActivity(next.activity);
+    setMeal(next.meal);
+    setMaxMinutes(next.maxMinutes);
+    const labels = [
+      found.who && PLAN_WHO.find((o) => o.key === found.who)?.label,
+      found.zone && PLAN_ZONES.find((o) => o.key === found.zone)?.label,
+      found.activity && PLAN_ACTIVITIES.find((o) => o.key === found.activity)?.label,
+      found.meal && PLAN_MEALS.find((o) => o.key === found.meal)?.label,
+      found.maxMinutes && `≤ ${formatMinutes(found.maxMinutes)}`,
+    ].filter(Boolean);
+    const missing = [
+      !found.who && "groupe",
+      !found.zone && "zone",
+      !found.activity && "activité",
+      !found.meal && "repas",
+      !found.maxMinutes && "durée",
+    ].filter(Boolean);
+    setTextHint(
+      `J'ai compris : ${labels.join(" · ")}.` +
+        (missing.length ? ` Non précisé (choix des puces gardé) : ${missing.join(", ")}.` : ""),
+    );
+    run(next);
   };
 
   return (
@@ -75,6 +115,35 @@ export default function PlanWizard({ businesses }: { businesses: Business[] }) {
       <p className="mt-1 text-[13px] text-muted leading-snug">
         Dis-nous ce que tu veux faire : on te propose une activité et un resto proche, avec le temps total estimé.
       </p>
+
+      <section className="mt-5">
+        <label htmlFor="plan-texte" className="text-[14px] font-extrabold text-ink">
+          Décris ta sortie en une phrase
+        </label>
+        <textarea
+          id="plan-texte"
+          value={text}
+          onChange={(e) => setText(e.target.value)}
+          onKeyDown={(e) => {
+            if (e.key === "Enter" && !e.shiftKey) {
+              e.preventDefault();
+              submitText();
+            }
+          }}
+          rows={2}
+          placeholder="Ex. : excursion en famille dans le sud avec resto créole, max 3h le tout"
+          className="mt-2 w-full resize-none rounded-xl border border-border bg-surface px-3 py-2.5 text-[14px] text-ink placeholder:text-muted focus:border-primary focus:outline-none"
+        />
+        <button
+          onClick={submitText}
+          disabled={text.trim() === ""}
+          className="mt-2 w-full rounded-pill bg-primary px-4 py-2.5 text-[14px] font-extrabold text-white shadow-card active:scale-[.98] transition-transform disabled:opacity-40"
+        >
+          Trouver mon plan
+        </button>
+        {textHint && <p className="mt-2 text-[12px] text-muted leading-snug">{textHint}</p>}
+        <p className="mt-5 text-[12px] font-semibold text-muted">Ou choisis avec les puces :</p>
+      </section>
 
       <Question title="Vous êtes ?" options={PLAN_WHO.map((o) => ({ key: o.key, label: o.label }))} value={who} onChange={setWho} />
       <Question title="Où ?" options={PLAN_ZONES.map((o) => ({ key: o.key, label: o.label }))} value={zone} onChange={setZone} />
