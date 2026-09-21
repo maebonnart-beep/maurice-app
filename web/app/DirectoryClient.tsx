@@ -126,6 +126,8 @@ import {
   Package,
   Crown,
   Clock,
+  CalendarBlank,
+  Lock,
 } from "@phosphor-icons/react";
 import type { Icon } from "@phosphor-icons/react";
 
@@ -2040,12 +2042,12 @@ export default function DirectoryClient({
               <button
                 onClick={openSearchChoice}
                 aria-label="Rechercher une activité, un lieu, un nom"
-                className="absolute flex items-center gap-2 rounded-pill border border-white/30 px-4 text-[12px] sm:text-[14px] active:opacity-90 transition-opacity shadow-sm backdrop-blur-sm"
-                style={{ left: "9.35%", right: "8.08%", top: "43%", height: "5.68%", background: "color-mix(in srgb, var(--surface) 30%, transparent)" }}
+                className="absolute flex items-center gap-2.5 rounded-pill border border-white/50 px-5 text-[14px] sm:text-[17px] text-white backdrop-blur-md active:scale-[.99] transition-transform shadow-sm"
+                style={{ left: "7%", right: "6%", top: "42.2%", height: "7.4%", background: "linear-gradient(135deg, color-mix(in srgb, var(--primary-deep) 55%, transparent) 0%, color-mix(in srgb, var(--primary) 40%, transparent) 100%)", textShadow: "0 1px 3px rgba(0,0,0,.35)" }}
               >
-                <MagnifyingGlass size={24} weight="bold" className="shrink-0" style={{ color: "#0d4a47" }} aria-hidden />
-                <span className="truncate text-ink/50 font-medium">
-                  Rechercher une activité, un lieu, un nom…
+                <MagnifyingGlass size={28} weight="bold" className="shrink-0 text-white" aria-hidden />
+                <span className="truncate text-white font-semibold">
+                  Rechercher une activité, un lieu…
                 </span>
               </button>
               {/* Explorer par catégorie calé juste sous l'encart de recherche,
@@ -2053,19 +2055,15 @@ export default function DirectoryClient({
                   pastille de recherche) — le fond d'écran reste visible tout
                   autour, en transparence, des tuiles et des 2 cartes promo
                   (cf. maquette de référence de la cliente). */}
-              <div className="absolute" style={{ left: "9.35%", right: "8.08%", top: "50%" }}>
-                <div className="flex justify-end mb-1.5">
-                  <button
-                    onClick={() => setHomeMode("categories")}
-                    className="text-[13px] font-bold text-primary-deep shadow-sm px-3 py-1.5 rounded-full active:scale-[.98]"
-                    style={{ background: "color-mix(in srgb, var(--surface) 92%, transparent)" }}
-                  >
-                    Toutes les catégories ›
-                  </button>
-                </div>
-
-                <div className="grid grid-cols-3 gap-2">
-                  {COMMON_HOME_CATEGORIES.map((c) => (
+              <div className="absolute z-10" style={{ left: "5%", right: "4%", top: "51.5%" }}>
+                <div className="grid grid-cols-3 gap-1.5">
+                  {/* 3 tuiles seulement : d'abord les rubriques cochées dans
+                      « Mon compte » (preferences.interests), complétées par
+                      les plus courantes ; le reste via « Toutes les catégories ». */}
+                  {[
+                    ...COMMON_HOME_CATEGORIES.filter((c) => preferences.interests.includes(c.key)),
+                    ...COMMON_HOME_CATEGORIES.filter((c) => !preferences.interests.includes(c.key)),
+                  ].slice(0, 3).map((c) => (
                     <button
                       key={c.key}
                       onClick={() => { setHomeMode("categories"); setHomeCategory(c.key); }}
@@ -2081,82 +2079,54 @@ export default function DirectoryClient({
                   ))}
                 </div>
 
-                {/* Raccourcis VIP : Événements et Seconde main sont verrouillés
-                    (cf. PREMIUM_CATEGORY_KEYS / PREMIUM_RUBRIQUE_KEYS) — badge
-                    couronne identique à celui utilisé plus bas sur la page
-                    (bandeau Seconde main, cartes premium). Dans un 1er temps,
-                    amènent simplement vers ces encarts dédiés plus bas sur
-                    l'accueil plutôt que vers un nouvel écran. */}
-                <div className="grid grid-cols-2 gap-2 mt-2">
+                <div className="flex justify-center mt-2.5">
                   <button
-                    onClick={() => scrollToHomeSection("accueil-evenements")}
-                    className="flex items-center gap-2 h-[42px] rounded-xl border border-white/30 px-2.5 shadow-sm backdrop-blur-sm active:scale-[.96] transition-transform"
-                    style={{ background: "color-mix(in srgb, var(--surface) 35%, transparent)" }}
+                    onClick={() => setHomeMode("categories")}
+                    className="text-[13px] font-bold text-primary-deep shadow-sm px-4 py-1.5 rounded-full active:scale-[.98]"
+                    style={{ background: "color-mix(in srgb, var(--surface) 92%, transparent)" }}
                   >
-                    <span
-                      className="shrink-0 inline-flex items-center justify-center w-5 h-5 rounded-full text-white"
-                      style={{ background: "linear-gradient(135deg, #f5a623, #e88a00)" }}
-                    >
-                      <Crown size={11} weight="fill" aria-hidden />
-                    </span>
-                    <span className="text-[11.5px] font-bold text-ink leading-tight text-left">Événements</span>
-                  </button>
-                  <button
-                    onClick={() => scrollToHomeSection("accueil-seconde-main")}
-                    className="flex items-center gap-2 h-[42px] rounded-xl border border-white/30 px-2.5 shadow-sm backdrop-blur-sm active:scale-[.96] transition-transform"
-                    style={{ background: "color-mix(in srgb, var(--surface) 35%, transparent)" }}
-                  >
-                    <span
-                      className="shrink-0 inline-flex items-center justify-center w-5 h-5 rounded-full text-white"
-                      style={{ background: "linear-gradient(135deg, #f5a623, #e88a00)" }}
-                    >
-                      <Crown size={11} weight="fill" aria-hidden />
-                    </span>
-                    <span className="text-[11.5px] font-bold text-ink leading-tight text-left">Seconde main</span>
+                    Toutes les catégories ›
                   </button>
                 </div>
 
-                {/* Accès directs Favoris / Sélections KM : 2 petites icônes
-                    centrées en bas de l'illustration, plutôt que des cartes ou
-                    lignes pleine largeur (essayées puis retirées, redondantes
-                    avec « Mes adresses » et « Coups de cœur » juste en
-                    dessous). */}
-                <div className="flex items-center justify-center gap-8 mt-3">
+                {/* Accès rapides regroupés en une seule rangée de 4 (au lieu de
+                    2 pastilles + 2 grosses icônes) : Événements et Seconde main
+                    (premium, badge couronne) scrollent vers leurs encarts plus
+                    bas ; Favoris et coups de cœur gardent leurs handlers. */}
+                <div className="grid grid-cols-2 gap-2 mt-3">
+                  {/* Événements & Seconde main, version discrète : fine barre
+                      translucide (même verre que les autres cartes), petites
+                      vignettes rondes de vraies photos, mention Premium sobre.
+                      Non abonné → upgrade, abonné → encarts plus bas. Les
+                      Listes de Koté Moris seront présentées à part. */}
                   <button
-                    onClick={() => { setHomeMode("favoris"); window.scrollTo({ top: 0, behavior: "smooth" }); }}
-                    aria-label="Mes favoris"
-                    className="flex flex-col items-center gap-1.5 active:scale-[.95] transition-transform"
+                    onClick={() => {
+                      if (canSeeEventDetail) scrollToHomeSection("accueil-evenements");
+                      else window.location.href = "/mon-compte/upgrade";
+                    }}
+                    aria-label="Événements et Seconde main — accès Premium"
+                    className="col-span-2 mt-1 flex items-center gap-3 rounded-full border border-white/50 pl-2 pr-4 py-1.5 text-left shadow-sm backdrop-blur-md active:scale-[.98] transition-transform"
+                    style={{ background: "color-mix(in srgb, var(--surface) 60%, transparent)" }}
                   >
-                    <span
-                      className="w-16 h-16 rounded-full flex items-center justify-center shadow-md backdrop-blur-sm border border-white/30"
-                      style={{ background: `color-mix(in srgb, ${COUP_DE_COEUR_COLOR} 55%, transparent)` }}
-                    >
-                      <Heart size={30} weight="fill" className="text-white" aria-hidden />
+                    <span className="shrink-0 flex -space-x-3">
+                      {[
+                        "/photo-univers-evenements.png",
+                        "/photo-univers-seconde-main.png",
+                        previewListingPhotos.length > 0
+                          ? listingPhotoUrl(previewListingPhotos[0].photos![0].storagePath)
+                          : SECONDE_MAIN_ILLUSTRATIONS[0],
+                      ].map((src) => (
+                        // eslint-disable-next-line @next/next/no-img-element
+                        <img key={src} src={src} alt="" aria-hidden className="w-9 h-9 rounded-full object-cover object-top border-2 border-white" />
+                      ))}
                     </span>
-                    <span
-                      className="text-[12px] font-bold italic text-white tracking-wide px-2.5 py-0.5 rounded-pill"
-                      style={{ background: "rgba(10,40,45,.55)" }}
-                    >
-                      Mes favoris
+                    <span className="flex-1 min-w-0 flex flex-col leading-tight">
+                      <span className="text-[13px] sm:text-[15px] font-extrabold text-ink">Événements &amp; Seconde main</span>
+                      <span className="inline-flex items-center gap-1 text-[11px] sm:text-[12.5px] font-semibold" style={{ color: "#c77700" }}>
+                        <Crown size={11} weight="fill" aria-hidden /> Accès Premium
+                      </span>
                     </span>
-                  </button>
-                  <button
-                    onClick={() => { setBrowseAll(true); setFacetBadges(new Set(["selection"])); }}
-                    aria-label="Sélections Koté Moris"
-                    className="flex flex-col items-center gap-1.5 active:scale-[.95] transition-transform"
-                  >
-                    <span
-                      className="w-16 h-16 rounded-full flex items-center justify-center shadow-md backdrop-blur-sm border border-white/30"
-                      style={{ background: "color-mix(in srgb, var(--primary) 55%, transparent)" }}
-                    >
-                      <Sparkle size={30} weight="fill" className="text-white" aria-hidden />
-                    </span>
-                    <span
-                      className="text-[12px] font-bold italic text-white tracking-wide px-2.5 py-0.5 rounded-pill"
-                      style={{ background: "rgba(10,40,45,.55)" }}
-                    >
-                      Sélections KM
-                    </span>
+                    <span className="shrink-0 text-[18px] font-bold text-ink/60" aria-hidden>›</span>
                   </button>
                 </div>
               </div>
@@ -2165,7 +2135,7 @@ export default function DirectoryClient({
                   l'accueil (Mes adresses, etc.) ne soit pas une coupure nette. */}
               <div
                 className="absolute inset-x-0 bottom-0 pointer-events-none"
-                style={{ height: "5%", background: "linear-gradient(to bottom, transparent 0%, var(--bg) 100%)" }}
+                style={{ bottom: "4%", height: "7%", background: "linear-gradient(to bottom, transparent 0%, var(--bg) 100%)" }}
               />
             </div>
           </div>
@@ -2347,50 +2317,87 @@ export default function DirectoryClient({
                   (pastille peinte dans l'image + bouton calé dessus, cf.
                   header) : plus de carte séparée ici. */}
 
-              {/* Bandeau « Mes adresses » remonté juste sous « Par catégorie »
-                  (superposé sur l'image, cf. header) : même dégradé teal que
-                  l'en-tête dédié de l'écran favoris/à tester (homeMode ===
-                  "favoris"), pour identifier clairement ce raccourci comme
-                  menant au même endroit, plutôt que 2 chips isolées sans titre. */}
-              <div
-                className="rounded-2xl p-4 mb-7"
-                style={{ background: "linear-gradient(135deg, #0a3d3a 0%, #1a8f86 100%)" }}
-              >
-                <div className="flex items-center justify-between mb-3">
-                  <h2 className="m-0 text-white text-[15px] font-bold">Mes adresses</h2>
+              {/* -mt : chevauche le bas de l'illustration pour faire la jointure avec le scroll (z-40 > header z-30). */}
+              <div className="relative z-40 -mt-24 grid grid-cols-2 gap-2.5 mb-7">
+            {/* Deux pavés jumeaux (même trame : visuel en haut, libellé
+                gras dessous, même teinte) : « Mes adresses » (personnel →
+                Mon compte) et « Nos sélections Koté Moris » (badges
+                Recommandé → coups de cœur, Kids friendly → section kids,
+                plus bas sur l'accueil). */}
+            <button
+              onClick={() => { setHomeMode("profil"); window.scrollTo({ top: 0, behavior: "smooth" }); }}
+              className="flex flex-col items-center justify-between gap-1.5 rounded-xl border border-white/40 py-2.5 px-1 shadow-card active:scale-[.96] transition-transform"
+              style={{ background: "color-mix(in srgb, var(--primary) 16%, var(--surface))" }}
+            >
+              <span className="flex items-center justify-center gap-3 h-[60px] sm:h-[72px] text-[15px] sm:text-[17px] font-extrabold">
+                <span className="inline-flex flex-col items-center gap-0.5" style={{ color: COUP_DE_COEUR_COLOR }}><Heart size={26} weight="fill" aria-hidden />{favoriteBusinesses.length}<span className="text-[9.5px] sm:text-[11px] font-semibold text-ink/70 leading-none">Favoris</span></span>
+                <span className="inline-flex flex-col items-center gap-0.5" style={{ color: "#f5a623" }}><Flag size={26} weight="fill" aria-hidden />{aTesterBusinesses.length}<span className="text-[9.5px] sm:text-[11px] font-semibold text-ink/70 leading-none">À tester</span></span>
+                <span className="inline-flex flex-col items-center gap-0.5" style={{ color: "#2e9e5b" }}><CheckCircle size={26} weight="fill" aria-hidden />{testeBusinesses.length}<span className="text-[9.5px] sm:text-[11px] font-semibold text-ink/70 leading-none">Testé</span></span>
+              </span>
+              <span className="text-[13px] sm:text-[15px] font-extrabold text-ink leading-tight text-center">Mes adresses</span>
+            </button>
+            <div
+              role="button"
+              tabIndex={0}
+              onClick={() => scrollToHomeSection("accueil-coups-de-coeur")}
+              onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") scrollToHomeSection("accueil-coups-de-coeur"); }}
+              className="flex flex-col items-center justify-between gap-1.5 rounded-xl border border-white/40 py-2.5 px-1 shadow-card cursor-pointer active:scale-[.96] transition-transform"
+              style={{ background: "color-mix(in srgb, var(--primary) 16%, var(--surface))" }}
+            >
+              <span className="flex items-center justify-center gap-1 h-[60px] sm:h-[72px]">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="/badge-selection.png" alt="Recommandées" className="w-[60px] h-[60px] sm:w-[72px] sm:h-[72px] object-contain" />
+                <button
+                  onClick={(e) => { e.stopPropagation(); scrollToHomeSection("accueil-kids-friendly"); }}
+                  aria-label="Adresses kids friendly"
+                  className="active:scale-[.94] transition-transform"
+                >
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src="/badge-kids.png" alt="" aria-hidden className="w-[60px] h-[60px] sm:w-[72px] sm:h-[72px] object-contain" />
+                </button>
+              </span>
+              <span className="text-[13px] sm:text-[15px] font-extrabold text-ink leading-tight text-center">Nos sélections Koté Moris</span>
+            </div>
+              </div>
+
+              <div className="flex items-center justify-between mb-1">
+                <h2 className="text-[16px] font-bold text-ink">Les listes de Koté Moris</h2>
+                <button
+                  onClick={() => setHomeMode("listes")}
+                  className="text-[13px] font-semibold text-primary-deep active:scale-[.98]"
+                >
+                  Voir tout ›
+                </button>
+              </div>
+              <p className="text-[12.5px] text-muted mb-2.5">
+                Envie d&apos;inspiration ? On a déjà fait le tri pour toi.
+              </p>
+              <div className="flex gap-3 overflow-x-auto pb-1 -mx-4 px-4 mb-7 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+                {homeSelections.map((s) => (
                   <button
-                    onClick={() => { setHomeMode("favoris"); window.scrollTo({ top: 0, behavior: "smooth" }); }}
-                    className="shrink-0 text-[12.5px] font-semibold text-white/80 active:scale-[.98]"
+                    key={s.id}
+                    onClick={() => { setHomeMode("listes"); setSelectedListId(s.id); }}
+                    className="relative text-left shrink-0 w-[130px] aspect-[4/5] rounded-2xl overflow-hidden shadow-card active:scale-[.98] transition-transform"
                   >
-                    Voir tout ›
-                  </button>
-                </div>
-                <div className="flex gap-2.5">
-                  <button
-                    onClick={() => { setHomeMode("favoris"); window.scrollTo({ top: 0, behavior: "smooth" }); }}
-                    className="flex-1 flex items-center gap-2.5 rounded-2xl bg-surface p-3 active:scale-[.97] transition-transform"
-                  >
-                    <Heart size={20} weight="fill" aria-hidden style={{ color: COUP_DE_COEUR_COLOR }} />
-                    <span className="flex flex-col items-start leading-none">
-                      <span className="text-[15px] font-bold" style={{ color: COUP_DE_COEUR_COLOR }}>
-                        {favoriteBusinesses.length}
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src={s.photoUrl}
+                      alt=""
+                      aria-hidden
+                      loading="lazy"
+                      className="absolute inset-0 w-full h-full object-cover"
+                    />
+                    <div
+                      className="absolute inset-0"
+                      style={{ background: "linear-gradient(180deg, rgba(0,0,0,0) 45%, rgba(0,0,0,.72) 100%)" }}
+                    />
+                    <span className="absolute inset-x-0 bottom-0 p-2.5">
+                      <span className="block font-serif text-[12px] font-semibold leading-tight text-white line-clamp-2">
+                        {s.title}
                       </span>
-                      <span className="text-[11px] text-muted mt-0.5">Mes favoris</span>
                     </span>
                   </button>
-                  <button
-                    onClick={() => { setHomeMode("favoris"); window.scrollTo({ top: 0, behavior: "smooth" }); }}
-                    className="flex-1 flex items-center gap-2.5 rounded-2xl bg-surface p-3 active:scale-[.97] transition-transform"
-                  >
-                    <Flag size={20} weight="fill" aria-hidden style={{ color: "#f5a623" }} />
-                    <span className="flex flex-col items-start leading-none">
-                      <span className="text-[15px] font-bold" style={{ color: "#f5a623" }}>
-                        {aTesterBusinesses.length}
-                      </span>
-                      <span className="text-[11px] text-muted mt-0.5">À tester</span>
-                    </span>
-                  </button>
-                </div>
+                ))}
               </div>
 
               {/* Coups de cœur remontés juste sous l'encart de recherche : la
@@ -2505,49 +2512,10 @@ export default function DirectoryClient({
               )}
 
 
-              <div className="flex items-center justify-between mt-7 mb-1">
-                <h2 className="text-[16px] font-bold text-ink">Les listes de Koté Moris</h2>
-                <button
-                  onClick={() => setHomeMode("listes")}
-                  className="text-[13px] font-semibold text-primary-deep active:scale-[.98]"
-                >
-                  Voir tout ›
-                </button>
-              </div>
-              <p className="text-[12.5px] text-muted mb-2.5">
-                Envie d&apos;inspiration ? On a déjà fait le tri pour toi.
-              </p>
-              <div className="flex gap-3 overflow-x-auto pb-1 -mx-4 px-4 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-                {homeSelections.map((s) => (
-                  <button
-                    key={s.id}
-                    onClick={() => { setHomeMode("listes"); setSelectedListId(s.id); }}
-                    className="relative text-left shrink-0 w-[130px] aspect-[4/5] rounded-2xl overflow-hidden shadow-card active:scale-[.98] transition-transform"
-                  >
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img
-                      src={s.photoUrl}
-                      alt=""
-                      aria-hidden
-                      loading="lazy"
-                      className="absolute inset-0 w-full h-full object-cover"
-                    />
-                    <div
-                      className="absolute inset-0"
-                      style={{ background: "linear-gradient(180deg, rgba(0,0,0,0) 45%, rgba(0,0,0,.72) 100%)" }}
-                    />
-                    <span className="absolute inset-x-0 bottom-0 p-2.5">
-                      <span className="block font-serif text-[12px] font-semibold leading-tight text-white line-clamp-2">
-                        {s.title}
-                      </span>
-                    </span>
-                  </button>
-                ))}
-              </div>
-
               {kidsFriendly.length > 0 && (
                 <div
-                  className="p-3 mt-7 rounded-2xl shadow-card"
+                  id="accueil-kids-friendly"
+                  className="p-3 rounded-2xl shadow-card"
                   style={{
                     background: `linear-gradient(135deg, color-mix(in srgb, var(--primary-deep) 45%, var(--surface)) 0%, color-mix(in srgb, var(--primary) 10%, var(--surface)) 100%)`,
                   }}

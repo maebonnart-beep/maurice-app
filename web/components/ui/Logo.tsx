@@ -51,6 +51,9 @@ export function Logo({
           src="/bandeau-kotemoris-accueil-v9.webp"
           alt="Koté Moris — les adresses de l'île Maurice réunies sur une seule application mobile"
           className="block w-full h-full object-cover"
+          // Remonte le logo central : image décalée vers le haut (le bas,
+          // dégradé vers le fond de page, absorbe le léger vide créé).
+          style={{ transform: "translateY(-4%)" }}
         />
       </div>
     );
