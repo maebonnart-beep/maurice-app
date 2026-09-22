@@ -1,6 +1,7 @@
 import type { Business, PriceRange } from "@/lib/types";
 import { haversineKm } from "@/lib/geo";
 import { PRICE_RANGES } from "@/data/categories";
+import { matchesOpenNow } from "@/lib/openHours";
 
 export type PlanWho = "famille" | "couple" | "amis" | "solo";
 export type PlanZone = "nord" | "sud" | "est" | "ouest" | "centre" | "partout";
@@ -300,11 +301,18 @@ function matchesSetting(b: Business, setting: RestoSetting): boolean {
   return RESTO_SETTING_PATTERNS[setting].test(normPlain(b.name + " " + (b.description ?? "")));
 }
 
+/** Terrasse/extérieur : comme le cadre, détecté dans le descriptif, pas un champ dédié. */
+const TERRACE_PATTERN = /\bterrasses?\b/;
+function hasTerrace(b: Business): boolean {
+  return TERRACE_PATTERN.test(normPlain(b.name + " " + (b.description ?? "")));
+}
+
 /**
  * Plan simple « juste un resto » : pas d'activité ni de durée, seulement le
  * profil des clients, la cuisine, la zone et quelques critères pratiques
- * (vue, cadre, budget) — pour qui veut directement une liste de restaurants
- * plutôt qu'un programme à plusieurs étapes.
+ * (vue, cadre, budget, table d'exception, fréquenté locaux, coup de cœur,
+ * ouvert maintenant, terrasse) — pour qui veut directement une liste de
+ * restaurants plutôt qu'un programme à plusieurs étapes.
  */
 export interface QuickRestaurantCriteria {
   who: PlanWho;
@@ -316,6 +324,16 @@ export interface QuickRestaurantCriteria {
   setting?: RestoSetting;
   /** Budget (gamme de prix existante : bon marché / prix moyen / se faire plaisir). */
   budget?: PriceRange | "tous";
+  /** Table d'exception (filtre « tables-exception » existant). */
+  fineDining?: boolean;
+  /** Fréquenté par les locaux (filtre « frequente-locaux » existant). */
+  localFavorite?: boolean;
+  /** Coup de cœur Koté Moris (badge « selection » existant). */
+  featured?: boolean;
+  /** Ouvert au moment de la recherche (mêmes horaires que le reste de l'app). */
+  openNow?: boolean;
+  /** Terrasse/extérieur, détecté dans le descriptif — cf. hasTerrace. */
+  terrace?: boolean;
 }
 
 /**
@@ -334,7 +352,12 @@ export function buildRestaurantList(businesses: Business[], c: QuickRestaurantCr
       (c.meal === "tous" || (b.filters ?? []).includes(c.meal)) &&
       (!c.view || (b.filters ?? []).includes("plus-belles-vues")) &&
       matchesSetting(b, c.setting ?? "tous") &&
-      (budget === "tous" || b.priceRange === budget),
+      (budget === "tous" || b.priceRange === budget) &&
+      (!c.fineDining || (b.filters ?? []).includes("tables-exception")) &&
+      (!c.localFavorite || (b.filters ?? []).includes("frequente-locaux")) &&
+      (!c.featured || b.badge === "selection") &&
+      (!c.openNow || matchesOpenNow(b.hours)) &&
+      (!c.terrace || hasTerrace(b)),
   );
   if (c.who === "famille") {
     const kids = restaurants.filter(isKidsFriendly);

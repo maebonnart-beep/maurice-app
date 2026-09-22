@@ -22,6 +22,7 @@ import {
   type PlanMeal,
   type PlanWho,
   type PlanZone,
+  type QuickRestaurantCriteria,
   type RestoSetting,
 } from "@/lib/plan";
 
@@ -75,14 +76,12 @@ export default function PlanWizard({ businesses }: { businesses: Business[] }) {
   const [restoView, setRestoView] = useState(false);
   const [restoSetting, setRestoSetting] = useState<RestoSetting>("tous");
   const [restoBudget, setRestoBudget] = useState<PriceRange | "tous">("tous");
-  const [restoSubmitted, setRestoSubmitted] = useState<{
-    who: PlanWho;
-    zone: PlanZone;
-    meal: Exclude<PlanMeal, "aucun">;
-    view: boolean;
-    setting: RestoSetting;
-    budget: PriceRange | "tous";
-  } | null>(null);
+  const [restoFineDining, setRestoFineDining] = useState(false);
+  const [restoLocalFavorite, setRestoLocalFavorite] = useState(false);
+  const [restoFeatured, setRestoFeatured] = useState(false);
+  const [restoOpenNow, setRestoOpenNow] = useState(false);
+  const [restoTerrace, setRestoTerrace] = useState(false);
+  const [restoSubmitted, setRestoSubmitted] = useState<QuickRestaurantCriteria | null>(null);
   const [restoPage, setRestoPage] = useState(0);
 
   const combos = useMemo(() => (submitted ? buildPlan(businesses, submitted) : []), [businesses, submitted]);
@@ -97,7 +96,19 @@ export default function PlanWizard({ businesses }: { businesses: Business[] }) {
   const restoHasMore = (restoPage + 1) * RESTO_PAGE_SIZE < restoResults.length;
 
   const submitResto = () => {
-    setRestoSubmitted({ who, zone, meal: meal === "aucun" ? "tous" : meal, view: restoView, setting: restoSetting, budget: restoBudget });
+    setRestoSubmitted({
+      who,
+      zone,
+      meal: meal === "aucun" ? "tous" : meal,
+      view: restoView,
+      setting: restoSetting,
+      budget: restoBudget,
+      fineDining: restoFineDining,
+      localFavorite: restoLocalFavorite,
+      featured: restoFeatured,
+      openNow: restoOpenNow,
+      terrace: restoTerrace,
+    });
     setRestoPage(0);
     requestAnimationFrame(() =>
       document.getElementById("resto-resultats")?.scrollIntoView({ behavior: "smooth", block: "start" }),
@@ -209,6 +220,21 @@ export default function PlanWizard({ businesses }: { businesses: Business[] }) {
             <div className="mt-2 flex flex-wrap gap-2">
               <FilterChip active={restoView} onClick={() => setRestoView((v) => !v)}>
                 🌅 Belle vue
+              </FilterChip>
+              <FilterChip active={restoTerrace} onClick={() => setRestoTerrace((v) => !v)}>
+                🌿 Terrasse
+              </FilterChip>
+              <FilterChip active={restoFineDining} onClick={() => setRestoFineDining((v) => !v)}>
+                🏆 Table d&apos;exception
+              </FilterChip>
+              <FilterChip active={restoLocalFavorite} onClick={() => setRestoLocalFavorite((v) => !v)}>
+                👥 Fréquenté par les locaux
+              </FilterChip>
+              <FilterChip active={restoFeatured} onClick={() => setRestoFeatured((v) => !v)}>
+                ⭐ Coup de cœur Koté Moris
+              </FilterChip>
+              <FilterChip active={restoOpenNow} onClick={() => setRestoOpenNow((v) => !v)}>
+                🕐 Ouvert maintenant
               </FilterChip>
             </div>
           </section>
