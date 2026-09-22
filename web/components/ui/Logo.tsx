@@ -39,16 +39,17 @@ export function Logo({
         </div>
       );
     }
-    // Illustration pleine (poulpe + paysage + logo + recherche bakée dans le
-    // décor), affichée dans son intégralité, sans recadrage (image fournie
-    // par la cliente le 2026-09-18, 941×1672). La bulle de recherche réelle
-    // (cf. SearchHeroOverlay dans DirectoryClient) est superposée dessus par
-    // coordonnées en % calées sur la pastille dessinée dans l'image.
+    // Illustration pleine (tortue + gecko + paysage + logo, tentacules en
+    // filigrane à droite), affichée dans son intégralité, sans recadrage
+    // (image fournie par la cliente le 2026-09-22, 941×1670 — quasi identique
+    // au ratio de la précédente v9, donc le calage de l'espace de recherche
+    // par-dessus reste valable). La carte de recherche (cf. DirectoryClient)
+    // est superposée dessus par coordonnées en %.
     return (
-      <div className="relative w-full overflow-hidden" style={{ aspectRatio: "941 / 1672" }}>
+      <div className="relative w-full overflow-hidden" style={{ aspectRatio: "941 / 1670" }}>
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="/bandeau-kotemoris-accueil-v9.webp"
+          src="/bandeau-kotemoris-accueil-v10.png"
           alt="Koté Moris — les adresses de l'île Maurice réunies sur une seule application mobile"
           className="block w-full h-full object-cover"
           // Remonte le logo central : image décalée vers le haut (le bas,

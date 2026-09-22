@@ -511,6 +511,10 @@ export default function DirectoryClient({
   // Accueil « Par catégorie » : catégorie choisie, dont on affiche les rubriques
   // (un seul niveau de profondeur). null = grille des 8 catégories.
   const [homeCategory, setHomeCategory] = useState<CategoryKey | null>(null);
+  // Un seul espace de recherche sur l'accueil, 3 onglets (mot-clé / expérience
+  // / catégorie) qui changent le contenu affiché dans la même carte, plutôt
+  // que plusieurs blocs séparés côte à côte.
+  const [searchTab, setSearchTab] = useState<"mot" | "experience" | "categorie">("mot");
   // Accueil « Par catégorie » → rubrique choisie qui a des sous-rubriques
   // (cf. FILTER_GROUPS[].browsable) : page intermédiaire avant les résultats.
   const [homeSubRubrique, setHomeSubRubrique] = useState<string | null>(null);
@@ -718,18 +722,15 @@ export default function DirectoryClient({
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 
+  // Onglet « Recherche » (bandeau du bas), pastille du bandeau d'accueil et
+  // sidebar desktop : ouvrent directement le champ de recherche (plus
+  // l'ancien écran intermédiaire « Comment veux-tu chercher ? », qui ajoutait
+  // un tap avant de pouvoir taper — la recherche par catégorie reste
+  // accessible via les tuiles Explorer de l'accueil).
   function focusSearch() {
     window.scrollTo({ top: 0, behavior: "smooth" });
     setSearchOpen(true);
     setFocusSearchOnMount(true);
-  }
-
-  // Onglet « Recherche » (bandeau du bas) et bouton d'accueil « Trouve ta
-  // prochaine adresse » : au lieu d'ouvrir directement le champ de recherche,
-  // proposent d'abord le choix entre chercher par mot-clé (focusSearch) ou
-  // parcourir par catégorie (écran déjà existant, homeMode "categories").
-  function openSearchChoice() {
-    leaveResults("recherche");
   }
 
   function selectCategory(key: string) {
@@ -1558,7 +1559,7 @@ export default function DirectoryClient({
 
   const desktopNavItems: { key: typeof activeTab; label: string; icon: Icon; onClick: () => void }[] = [
     { key: "accueil", label: "Accueil", icon: House, onClick: goHome },
-    { key: "recherche", label: "Recherche", icon: MagnifyingGlass, onClick: openSearchChoice },
+    { key: "recherche", label: "Recherche", icon: MagnifyingGlass, onClick: focusSearch },
     {
       key: "autre",
       label: "Autour de moi",
@@ -1842,7 +1843,7 @@ export default function DirectoryClient({
           <span className="text-[10.5px] font-semibold leading-none">Accueil</span>
         </button>
         <button
-          onClick={openSearchChoice}
+          onClick={focusSearch}
           aria-label="Recherche"
           aria-pressed={activeTab === "recherche"}
           className={`flex flex-col items-center gap-0.5 py-1 rounded-xl transition-colors active:scale-[.97] ${
@@ -2056,87 +2057,110 @@ export default function DirectoryClient({
                 de l'écran d'accueil arrive en dessous, au scroll. */}
             <div className="relative w-full">
               <Logo light tags />
-              <button
-                onClick={openSearchChoice}
-                aria-label="Rechercher une activité, un lieu, un nom"
-                className="absolute flex items-center gap-2.5 rounded-pill border border-white/50 px-5 text-[14px] sm:text-[17px] text-white backdrop-blur-md active:scale-[.99] transition-transform shadow-sm"
-                style={{ left: "7%", right: "6%", top: "42.2%", height: "7.4%", background: "linear-gradient(135deg, color-mix(in srgb, var(--primary-deep) 55%, transparent) 0%, color-mix(in srgb, var(--primary) 40%, transparent) 100%)", textShadow: "0 1px 3px rgba(0,0,0,.35)" }}
+              {/* Un seul espace de recherche, superposé sur l'illustration et
+                  centré verticalement au niveau des bateaux (~55% de la
+                  hauteur de l'image, cf. bandeau-kotemoris-accueil-v9.webp) —
+                  translateY(-50%) le centre lui-même sur ce repère, quel que
+                  soit son contenu (l'onglet Catégorie est plus haut que
+                  Mot-clé). Les vignettes Événements/Seconde main ont été
+                  déplacées dans le corps de page (cf. plus bas). */}
+              <div
+                className="absolute z-20 overflow-hidden p-5"
+                style={{
+                  left: "6%",
+                  right: "6%",
+                  top: "60%",
+                  transform: "translateY(-50%)",
+                  // Translucide + flou : le lagon/les bateaux restent visibles derrière,
+                  // tout en gardant le texte lisible par-dessus (cf. pastille d'origine,
+                  // même principe de verre dépoli).
+                  background: "color-mix(in srgb, var(--surface) 45%, transparent)",
+                  backdropFilter: "blur(14px)",
+                  WebkitBackdropFilter: "blur(14px)",
+                  border: "1px solid rgba(255,255,255,.5)",
+                  borderRadius: "2rem",
+                  boxShadow: "0 18px 40px -12px rgba(6,50,56,.45), 0 2px 8px rgba(6,50,56,.12)",
+                }}
               >
-                <MagnifyingGlass size={28} weight="bold" className="shrink-0 text-white" aria-hidden />
-                <span className="truncate text-white font-semibold">
-                  Rechercher une activité, un lieu…
-                </span>
-              </button>
-              {/* Explorer par catégorie calé juste sous l'encart de recherche,
-                  en superposition sur l'illustration (même logique que la
-                  pastille de recherche) — le fond d'écran reste visible tout
-                  autour, en transparence, des tuiles et des 2 cartes promo
-                  (cf. maquette de référence de la cliente). */}
-              <div className="absolute z-10" style={{ left: "5%", right: "4%", top: "51.5%" }}>
-                <div className="grid grid-cols-3 gap-1.5">
-                  {/* 3 tuiles seulement : d'abord les rubriques cochées dans
-                      « Mon compte » (preferences.interests), complétées par
-                      les plus courantes ; le reste via « Toutes les catégories ». */}
-                  {[
-                    ...COMMON_HOME_CATEGORIES.filter((c) => preferences.interests.includes(c.key)),
-                    ...COMMON_HOME_CATEGORIES.filter((c) => !preferences.interests.includes(c.key)),
-                  ].slice(0, 3).map((c) => (
-                    <button
-                      key={c.key}
-                      onClick={() => { setHomeMode("categories"); setHomeCategory(c.key); }}
-                      className="rounded-xl overflow-hidden shadow-sm active:scale-[.96] transition-transform"
-                    >
-                      {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img
-                        src={`/tuile-${c.key}.webp`}
-                        alt={c.label}
-                        className="block w-full h-auto"
+                {/* Poulpe mascotte en filigrane, discret, dans un coin — juste la marque, ne gêne pas la lecture. */}
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/poulpe-filigrane.webp"
+                  alt=""
+                  aria-hidden
+                  className="pointer-events-none absolute -right-8 -bottom-10 w-40 h-40 object-contain opacity-[0.07]"
+                />
+                <div className="relative">
+                  <p className="text-center text-[15px] font-extrabold text-ink mb-3">Comment veux-tu chercher ?</p>
+                  <div className="grid grid-cols-3 gap-1 rounded-pill p-1" style={{ background: "color-mix(in srgb, var(--primary) 8%, var(--surface-2))" }}>
+                    {(
+                      [
+                        { key: "mot", label: "Mot-clé", icon: MagnifyingGlass },
+                        { key: "experience", label: "Expérience", icon: Sparkle },
+                        { key: "categorie", label: "Catégorie", icon: Compass },
+                      ] as const
+                    ).map((t) => (
+                      <button
+                        key={t.key}
+                        onClick={() => setSearchTab(t.key)}
+                        aria-pressed={searchTab === t.key}
+                        className={`flex flex-col items-center gap-0.5 rounded-pill py-2 text-[12px] font-bold transition-colors ${
+                          searchTab === t.key ? "bg-primary text-white shadow-sm" : "text-ink/70"
+                        }`}
+                      >
+                        <t.icon size={16} weight={searchTab === t.key ? "fill" : "bold"} aria-hidden />
+                        {t.label}
+                      </button>
+                    ))}
+                  </div>
+
+                  {searchTab === "mot" && (
+                    <div className="mt-4">
+                      <SearchInput
+                        value={query}
+                        onChange={(v) => { setQuery(v); if (!searchOpen) setSearchOpen(true); }}
+                        placeholder="Rechercher une activité, un lieu, un nom…"
                       />
-                    </button>
-                  ))}
-                </div>
+                      <p className="mt-2.5 text-[11.5px] text-muted leading-snug text-center">
+                        Un nom, un lieu, ou un besoin précis (opticien, plombier…).
+                      </p>
+                    </div>
+                  )}
 
-                <div className="flex justify-center mt-2.5">
-                  <button
-                    onClick={() => setHomeMode("categories")}
-                    className="text-[13px] font-bold text-primary-deep shadow-sm px-4 py-1.5 rounded-full active:scale-[.98]"
-                    style={{ background: "color-mix(in srgb, var(--surface) 92%, transparent)" }}
-                  >
-                    Toutes les catégories ›
-                  </button>
-                </div>
-
-                {/* Accès rapides regroupés en une seule rangée de 4 (au lieu de
-                    2 pastilles + 2 grosses icônes) : Événements et Seconde main
-                    (premium, badge couronne) scrollent vers leurs encarts plus
-                    bas ; Favoris et coups de cœur gardent leurs handlers. */}
-                <div className="grid grid-cols-2 gap-2 mt-3">
-                  {/* Événements & Seconde main : les 2 vignettes fournies (texte
-                      déjà dessiné dans l'image) côte à côte, sans libellé en
-                      plus. Couronne dorée = accès Premium. Non abonné →
-                      upgrade, abonné → encart détaillé plus bas. Les Listes
-                      de Koté Moris seront présentées à part. */}
-                  {[
-                    { src: "/vignette-agenda.webp", alt: "Agenda des événements — accès Premium", target: "accueil-evenements" },
-                    { src: "/vignette-seconde-main.webp", alt: "Seconde main — accès Premium", target: "accueil-seconde-main" },
-                  ].map((v) => (
-                    <button
-                      key={v.src}
-                      onClick={() => {
-                        if (canSeeEventDetail) scrollToHomeSection(v.target);
-                        else window.location.href = "/mon-compte/upgrade";
-                      }}
-                      aria-label={v.alt}
-                      className="relative block h-[112px] sm:h-[150px] rounded-2xl overflow-hidden shadow-pop active:scale-[.97] transition-transform"
-                      style={{ border: "2px solid rgba(255,255,255,.85)" }}
+                  {searchTab === "experience" && (
+                    <Link
+                      href="/mon-plan"
+                      className="mt-4 flex items-center gap-3 rounded-2xl p-3.5 no-underline text-ink active:scale-[.98] transition-transform"
+                      style={{ background: "linear-gradient(135deg, color-mix(in srgb, var(--primary) 16%, var(--surface)) 0%, var(--surface) 85%)" }}
                     >
-                      {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img src={v.src} alt="" aria-hidden className="absolute inset-0 w-full h-full object-cover object-[50%_100%]" />
-                      <span className="absolute top-1.5 right-1.5 inline-flex items-center justify-center w-6 h-6 rounded-full text-white shadow-sm" style={{ background: "linear-gradient(135deg, #f5a623, #e88a00)" }}>
-                        <Crown size={13} weight="fill" aria-hidden />
+                      <span className="shrink-0 flex items-center justify-center w-11 h-11 rounded-full bg-primary text-white" aria-hidden>
+                        <Sparkle size={22} weight="fill" />
                       </span>
-                    </button>
-                  ))}
+                      <span className="min-w-0 flex-1">
+                        <span className="block text-[14px] font-extrabold leading-tight">Créer mon plan</span>
+                        <span className="block text-[11.5px] text-muted leading-snug mt-0.5">
+                          Un programme sur mesure (activité, resto, sortie…) selon ton groupe, ta zone et ton temps
+                        </span>
+                      </span>
+                      <span className="shrink-0 text-[18px] font-bold text-primary-deep" aria-hidden>›</span>
+                    </Link>
+                  )}
+
+                  {searchTab === "categorie" && (
+                    <div className="mt-4 grid grid-cols-4 gap-2">
+                      {CATEGORIES.map((c) => (
+                        <button
+                          key={c.key}
+                          onClick={() => { setHomeMode("categories"); setHomeCategory(c.key); }}
+                          className="flex flex-col items-center gap-1 rounded-xl py-2.5 px-1 active:scale-[.96] transition-transform"
+                          style={{ background: "color-mix(in srgb, var(--primary) 8%, var(--surface-2))" }}
+                        >
+                          <span className="text-[20px]" aria-hidden>{c.emoji}</span>
+                          <span className="text-[10px] font-bold text-ink leading-tight text-center">{c.label}</span>
+                        </button>
+                      ))}
+                    </div>
+                  )}
                 </div>
               </div>
               {/* Joint visuel : fondu au raz du bas de l'illustration vers le
@@ -2144,7 +2168,7 @@ export default function DirectoryClient({
                   l'accueil (Mes adresses, etc.) ne soit pas une coupure nette. */}
               <div
                 className="absolute inset-x-0 bottom-0 pointer-events-none"
-                style={{ bottom: "4%", height: "7%", background: "linear-gradient(to bottom, transparent 0%, var(--bg) 100%)" }}
+                style={{ bottom: "-1%", height: "12%", background: "linear-gradient(to bottom, transparent 0%, var(--bg) 100%)" }}
               />
             </div>
           </div>
@@ -2304,17 +2328,15 @@ export default function DirectoryClient({
               a été retirée : la recherche vit désormais ici en permanence). */}
           {showHome && homeMode === "menu" && (
             <div className="max-w-[720px] lg:max-w-[1100px] mx-auto pb-6">
-              {/* La recherche vit désormais dans le bandeau d'accueil lui-même
-                  (pastille peinte dans l'image + bouton calé dessus, cf.
-                  header) : plus de carte séparée ici. */}
+              {/* Espace de recherche : superposé sur l'illustration, centré au
+                  niveau des bateaux (cf. header, juste au-dessus). */}
 
-              {/* -mt : chevauche le bas de l'illustration pour faire la jointure avec le scroll (z-40 > header z-30). */}
-              <div className="relative z-40 -mt-20 grid grid-cols-2 gap-2.5 mb-7">
-            {/* Deux pavés jumeaux (même trame : visuel en haut, libellé
-                gras dessous, même teinte) : « Mes adresses » (personnel →
-                Mon compte) et « Nos sélections Koté Moris » (badges
-                Recommandé → coups de cœur, Kids friendly → section kids,
-                plus bas sur l'accueil). */}
+              {/* Tuiles jumelles remontées juste sous l'encart de recherche (à
+                  la demande) : « Mes adresses » et « Nos sélections Koté
+                  Moris » (badges Recommandé → coups de cœur, Kids friendly →
+                  section kids, plus bas sur l'accueil). -mt : léger
+                  recouvrement avec le bas de l'illustration. */}
+              <div className="grid grid-cols-2 gap-2.5 -mt-6 sm:-mt-8 mb-6 relative z-40">
             <button
               onClick={() => { setHomeMode("profil"); window.scrollTo({ top: 0, behavior: "smooth" }); }}
               className="flex flex-col items-center justify-between gap-1.5 rounded-xl border border-white/40 py-2.5 px-1 shadow-card active:scale-[.96] transition-transform"
@@ -2349,25 +2371,37 @@ export default function DirectoryClient({
               </span>
               <span className="text-[13px] sm:text-[15px] font-extrabold text-ink leading-tight text-center">Nos sélections Koté Moris</span>
             </div>
+            </div>
+
+              {/* Vignettes Événements/Seconde main : sous les tuiles jumelles. */}
+              <h2 className="text-[16px] font-bold text-ink mb-2">Les avantages de mon abonnement Premium</h2>
+              <div className="grid grid-cols-2 gap-2 mb-7">
+                {[
+                  { src: "/vignette-agenda.webp", alt: "Agenda des événements — accès Premium", target: "accueil-evenements" },
+                  { src: "/vignette-seconde-main.webp", alt: "Seconde main — accès Premium", target: "accueil-seconde-main" },
+                ].map((v) => (
+                  <button
+                    key={v.src}
+                    onClick={() => {
+                      if (canSeeEventDetail) scrollToHomeSection(v.target);
+                      else window.location.href = "/mon-compte/upgrade";
+                    }}
+                    aria-label={v.alt}
+                    className="relative block h-[100px] sm:h-[130px] rounded-2xl overflow-hidden shadow-card active:scale-[.97] transition-transform"
+                  >
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img src={v.src} alt="" aria-hidden className="absolute inset-0 w-full h-full object-cover object-[50%_100%]" />
+                    <span className="absolute top-1.5 right-1.5 inline-flex items-center justify-center w-6 h-6 rounded-full text-white shadow-sm" style={{ background: "linear-gradient(135deg, #f5a623, #e88a00)" }}>
+                      <Crown size={13} weight="fill" aria-hidden />
+                    </span>
+                  </button>
+                ))}
               </div>
 
-              {/* Assistant « Créer mon plan » : activité + resto proche selon les critères de l'utilisateur. */}
-              <Link
-                href="/mon-plan"
-                className="mb-7 flex items-center gap-3 rounded-2xl p-3.5 no-underline text-ink shadow-card active:scale-[.99] transition-transform"
-                style={{ background: "linear-gradient(135deg, color-mix(in srgb, var(--primary) 22%, var(--surface)) 0%, var(--surface) 80%)" }}
-              >
-                <span className="shrink-0 flex items-center justify-center w-11 h-11 rounded-full bg-primary text-white" aria-hidden>
-                  <Sparkle size={22} weight="fill" />
-                </span>
-                <span className="min-w-0 flex-1">
-                  <span className="block text-[15px] font-extrabold leading-tight">Créer mon plan</span>
-                  <span className="block text-[11.5px] text-muted leading-snug mt-0.5">
-                    Compose un programme sur mesure (activité, resto, sortie…) selon ton groupe, ta zone et ton temps
-                  </span>
-                </span>
-                <span className="shrink-0 text-[18px] font-bold text-primary-deep" aria-hidden>›</span>
-              </Link>
+              {/* Le bandeau « Créer mon plan » a été retiré d'ici : le bloc
+                  « Par expérience » du bandeau d'accueil (au-dessus, cf.
+                  header) mène désormais directement à /mon-plan, sans
+                  doublon plus bas. */}
 
               <div className="flex items-center justify-between mb-1">
                 <h2 className="text-[16px] font-bold text-ink">Les listes de Koté Moris</h2>
@@ -2761,60 +2795,6 @@ export default function DirectoryClient({
                     Bientôt de nouveaux événements…
                   </p>
                 )}
-              </div>
-            </div>
-          )}
-
-          {/* Accueil → Recherche : choix entre chercher par mot-clé (champ de
-              recherche classique) ou parcourir par catégorie (écran existant,
-              homeMode "categories"). Point d'entrée commun à l'icône du
-              bandeau et à la tuile « Trouve ta prochaine adresse ». */}
-          {showHome && homeMode === "recherche" && (
-            <div className="max-w-[480px] mx-auto pb-16 pt-2">
-              <h2 className="text-[18px] font-bold text-ink mb-1">Rechercher</h2>
-              <p className="text-[13px] text-muted mb-5">Comment veux-tu chercher ton adresse ?</p>
-              {/* Deux cartes sur fond de lagon (même image que l'accueil) qui
-                  reprennent, en miniature, ce qu'on trouve à l'accueil : la
-                  barre de recherche translucide pour « Par mot clé », les
-                  tuiles de catégories pour « Par catégorie ». */}
-              <div className="grid grid-cols-1 gap-3">
-                <button
-                  onClick={focusSearch}
-                  className="relative block w-full overflow-hidden rounded-2xl text-left shadow-card active:scale-[.98] transition-transform"
-                >
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="/bandeau-kotemoris-accueil-v9.webp" alt="" aria-hidden className="absolute inset-0 w-full h-full object-cover object-[50%_66%]" />
-                  <span className="absolute inset-0" style={{ background: "linear-gradient(180deg, rgba(6,50,56,.62) 0%, rgba(6,50,56,.18) 100%)" }} />
-                  <span className="relative block px-4 pt-3.5 pb-4">
-                    <span className="block text-[18px] font-extrabold text-white">Par mot clé</span>
-                    <span className="block text-[12.5px] font-medium text-white/90">Un nom, une activité, un lieu…</span>
-                    <span
-                      className="mt-3 flex items-center gap-2.5 h-12 px-4 rounded-pill border border-white/50 text-white backdrop-blur-md"
-                      style={{ background: "linear-gradient(135deg, color-mix(in srgb, var(--primary-deep) 55%, transparent) 0%, color-mix(in srgb, var(--primary) 40%, transparent) 100%)", textShadow: "0 1px 3px rgba(0,0,0,.35)" }}
-                    >
-                      <MagnifyingGlass size={22} weight="bold" className="shrink-0" aria-hidden />
-                      <span className="truncate text-[14px] font-semibold">Rechercher une activité, un lieu…</span>
-                    </span>
-                  </span>
-                </button>
-                <button
-                  onClick={() => setHomeMode("categories")}
-                  className="relative block w-full overflow-hidden rounded-2xl text-left shadow-card active:scale-[.98] transition-transform"
-                >
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="/bandeau-kotemoris-accueil-v9.webp" alt="" aria-hidden className="absolute inset-0 w-full h-full object-cover object-[50%_82%]" />
-                  <span className="absolute inset-0" style={{ background: "linear-gradient(180deg, rgba(6,50,56,.62) 0%, rgba(6,50,56,.18) 100%)" }} />
-                  <span className="relative block px-4 pt-3.5 pb-4">
-                    <span className="block text-[18px] font-extrabold text-white">Par catégorie</span>
-                    <span className="block text-[12.5px] font-medium text-white/90">Restaurants, activités, sorties…</span>
-                    <span className="mt-3 grid grid-cols-3 gap-2">
-                      {["manger-boire", "sortir-decouvrir", "faire-du-sport"].map((k) => (
-                        // eslint-disable-next-line @next/next/no-img-element
-                        <img key={k} src={`/tuile-${k}.webp`} alt="" aria-hidden className="block w-full h-auto rounded-xl shadow-sm" />
-                      ))}
-                    </span>
-                  </span>
-                </button>
               </div>
             </div>
           )}
