@@ -1,5 +1,6 @@
-import type { Business } from "@/lib/types";
+import type { Business, PriceRange } from "@/lib/types";
 import { haversineKm } from "@/lib/geo";
+import { PRICE_RANGES } from "@/data/categories";
 
 export type PlanWho = "famille" | "couple" | "amis" | "solo";
 export type PlanZone = "nord" | "sud" | "est" | "ouest" | "centre" | "partout";
@@ -15,7 +16,21 @@ export type PlanActivity =
   | "equiper"
   | "marche"
   | "sortie";
-export type PlanMeal = "mauricienne" | "indienne" | "asiatique" | "europeenne" | "tous" | "aucun";
+export type PlanMeal =
+  | "mauricienne"
+  | "fruits-de-mer"
+  | "indienne"
+  | "asiatique"
+  | "sushis"
+  | "europeenne"
+  | "italien"
+  | "grillades"
+  | "vegetarien"
+  | "tous"
+  | "aucun";
+
+/** Cadre du restaurant (aucune fiche ne le déclare formellement : détecté dans nom/descriptif — cf. RESTO_SETTING_PATTERNS). */
+export type RestoSetting = "plage" | "hotel" | "golf" | "tous";
 
 export interface PlanCriteria {
   who: PlanWho;
@@ -81,11 +96,28 @@ export const PLAN_ACTIVITIES: { key: PlanActivity; label: string; themes: string
 
 export const PLAN_MEALS: { key: PlanMeal; label: string }[] = [
   { key: "mauricienne", label: "Créole / mauricien" },
+  { key: "fruits-de-mer", label: "Fruits de mer / poisson" },
   { key: "indienne", label: "Indien" },
   { key: "asiatique", label: "Asiatique" },
+  { key: "sushis", label: "Sushis" },
   { key: "europeenne", label: "Européen" },
+  { key: "italien", label: "Italien / pizza" },
+  { key: "grillades", label: "Grillades" },
+  { key: "vegetarien", label: "Végétarien" },
   { key: "tous", label: "Peu importe" },
   { key: "aucun", label: "Pas de repas" },
+];
+
+export const PLAN_SETTINGS: { key: RestoSetting; label: string }[] = [
+  { key: "tous", label: "Peu importe" },
+  { key: "plage", label: "Les pieds dans l'eau" },
+  { key: "hotel", label: "Restaurant d'hôtel" },
+  { key: "golf", label: "Restaurant de golf" },
+];
+
+export const PLAN_BUDGETS: { key: PriceRange | "tous"; label: string }[] = [
+  { key: "tous", label: "Peu importe" },
+  ...PRICE_RANGES.map((p) => ({ key: p.key, label: `${p.symbol} ${p.label}` })),
 ];
 
 export const PLAN_DURATIONS: { minutes: number; label: string }[] = [
@@ -246,26 +278,63 @@ export function buildPlan(businesses: Business[], c: PlanCriteria): PlanCombo[] 
 }
 
 /**
+ * Cadre du restaurant : aucune fiche n'a de champ dédié, donc détecté dans le
+ * nom/descriptif existants (même principe que les synonymes de recherche —
+ * rien n'est inventé, on repère juste ce qui est déjà écrit).
+ */
+const RESTO_SETTING_PATTERNS: Record<Exclude<RestoSetting, "tous">, RegExp> = {
+  plage: /\bplages?\b|bord de mer|pieds dans l'?eau|\bbeach\b/,
+  hotel: /\bhotels?\b|\bresorts?\b/,
+  golf: /\bgolfs?\b/,
+};
+
+function normPlain(s: string): string {
+  return s
+    .normalize("NFD")
+    .replace(/[̀-ͯ]/g, "")
+    .toLowerCase();
+}
+
+function matchesSetting(b: Business, setting: RestoSetting): boolean {
+  if (setting === "tous") return true;
+  return RESTO_SETTING_PATTERNS[setting].test(normPlain(b.name + " " + (b.description ?? "")));
+}
+
+/**
  * Plan simple « juste un resto » : pas d'activité ni de durée, seulement le
- * profil des clients, la cuisine et la zone — pour qui veut directement une
- * liste de restaurants plutôt qu'un programme à plusieurs étapes.
+ * profil des clients, la cuisine, la zone et quelques critères pratiques
+ * (vue, cadre, budget) — pour qui veut directement une liste de restaurants
+ * plutôt qu'un programme à plusieurs étapes.
  */
 export interface QuickRestaurantCriteria {
   who: PlanWho;
   zone: PlanZone;
   meal: Exclude<PlanMeal, "aucun">;
+  /** Belle vue (filtre « Plus belles vues » existant). */
+  view?: boolean;
+  /** Cadre (plage / hôtel / golf), détecté dans le descriptif — cf. RESTO_SETTING_PATTERNS. */
+  setting?: RestoSetting;
+  /** Budget (gamme de prix existante : bon marché / prix moyen / se faire plaisir). */
+  budget?: PriceRange | "tous";
 }
 
 /**
- * Liste de restaurants correspondant au profil, à la cuisine et à la zone
- * choisis — triée par qualité de fiche (commentaire, photo, descriptif) puis
- * par nom. Pas de contrainte GPS ici (pas de distance à calculer), donc plus
- * de fiches remontent que dans `buildPlan`.
+ * Liste de restaurants correspondant au profil, à la cuisine, à la zone et
+ * aux critères pratiques choisis — triée par qualité de fiche (commentaire,
+ * photo, descriptif) puis par nom. Pas de contrainte GPS ici (pas de distance
+ * à calculer), donc plus de fiches remontent que dans `buildPlan`.
  */
 export function buildRestaurantList(businesses: Business[], c: QuickRestaurantCriteria): Business[] {
   const zoneOk = (b: Business) => c.zone === "partout" || b.zone === c.zone;
+  const budget = c.budget ?? "tous";
   let restaurants = businesses.filter(
-    (b) => zoneOk(b) && (b.themes ?? []).includes("restaurants") && (c.meal === "tous" || (b.filters ?? []).includes(c.meal)),
+    (b) =>
+      zoneOk(b) &&
+      (b.themes ?? []).includes("restaurants") &&
+      (c.meal === "tous" || (b.filters ?? []).includes(c.meal)) &&
+      (!c.view || (b.filters ?? []).includes("plus-belles-vues")) &&
+      matchesSetting(b, c.setting ?? "tous") &&
+      (budget === "tous" || b.priceRange === budget),
   );
   if (c.who === "famille") {
     const kids = restaurants.filter(isKidsFriendly);
@@ -345,9 +414,14 @@ export function parsePlanText(text: string): Partial<PlanCriteria> {
 
   if (/\b(sans repas|pas de repas|sans resto|sans restaurant|pas de resto)\b/.test(t)) out.meal = "aucun";
   else if (/\b(creole|mauricien|mauricienne|cuisine locale|locale)\b/.test(t)) out.meal = "mauricienne";
+  else if (/\b(poisson|poissons|fruits de mer|crustaces|crabe|crevettes)\b/.test(t)) out.meal = "fruits-de-mer";
   else if (/\b(indien|indienne|curry|biryani)\b/.test(t)) out.meal = "indienne";
-  else if (/\b(asiatique|chinois|chinoise|thai|thailandais|japonais|sushi)\b/.test(t)) out.meal = "asiatique";
-  else if (/\b(europeen|europeenne|francais|italien|pizza|pizzeria)\b/.test(t)) out.meal = "europeenne";
+  else if (/\b(sushi|sushis)\b/.test(t)) out.meal = "sushis";
+  else if (/\b(asiatique|chinois|chinoise|thai|thailandais|japonais)\b/.test(t)) out.meal = "asiatique";
+  else if (/\b(italien|italienne|pizza|pizzeria)\b/.test(t)) out.meal = "italien";
+  else if (/\b(grillade|grillades|viande|viandes|barbecue|steak)\b/.test(t)) out.meal = "grillades";
+  else if (/\b(vegetarien|vegetarienne|vegan|sans viande)\b/.test(t)) out.meal = "vegetarien";
+  else if (/\b(europeen|europeenne|francais)\b/.test(t)) out.meal = "europeenne";
   else if (/\b(resto|restos|restaurant|manger|repas|dejeuner|diner|dejeuner)\b/.test(t)) out.meal = "tous";
 
   // Durée : « 3h », « 2h30 », « 2 heures », « 90 min », « demi-journée », « journée ».

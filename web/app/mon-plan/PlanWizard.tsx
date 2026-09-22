@@ -1,14 +1,16 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import type { Business } from "@/lib/types";
+import type { Business, PriceRange } from "@/lib/types";
 import { BusinessCard } from "@/components/ui/BusinessCard";
 import { BusinessDetail } from "@/components/ui/BusinessDetail";
 import { FilterChip } from "@/components/ui/FilterChip";
 import {
   PLAN_ACTIVITIES,
+  PLAN_BUDGETS,
   PLAN_DURATIONS,
   PLAN_MEALS,
+  PLAN_SETTINGS,
   PLAN_WHO,
   PLAN_ZONES,
   buildPlan,
@@ -20,6 +22,7 @@ import {
   type PlanMeal,
   type PlanWho,
   type PlanZone,
+  type RestoSetting,
 } from "@/lib/plan";
 
 /** Cuisines proposées pour le mode « Trouver un resto » : mêmes options que le plan complet, sans « Pas de repas » (hors-sujet ici). */
@@ -69,7 +72,17 @@ export default function PlanWizard({ businesses }: { businesses: Business[] }) {
   const [openBusiness, setOpenBusiness] = useState<Business | null>(null);
   const [text, setText] = useState("");
   const [textHint, setTextHint] = useState<string | null>(null);
-  const [restoSubmitted, setRestoSubmitted] = useState<{ who: PlanWho; zone: PlanZone; meal: Exclude<PlanMeal, "aucun"> } | null>(null);
+  const [restoView, setRestoView] = useState(false);
+  const [restoSetting, setRestoSetting] = useState<RestoSetting>("tous");
+  const [restoBudget, setRestoBudget] = useState<PriceRange | "tous">("tous");
+  const [restoSubmitted, setRestoSubmitted] = useState<{
+    who: PlanWho;
+    zone: PlanZone;
+    meal: Exclude<PlanMeal, "aucun">;
+    view: boolean;
+    setting: RestoSetting;
+    budget: PriceRange | "tous";
+  } | null>(null);
   const [restoPage, setRestoPage] = useState(0);
 
   const combos = useMemo(() => (submitted ? buildPlan(businesses, submitted) : []), [businesses, submitted]);
@@ -84,7 +97,7 @@ export default function PlanWizard({ businesses }: { businesses: Business[] }) {
   const restoHasMore = (restoPage + 1) * RESTO_PAGE_SIZE < restoResults.length;
 
   const submitResto = () => {
-    setRestoSubmitted({ who, zone, meal: meal === "aucun" ? "tous" : meal });
+    setRestoSubmitted({ who, zone, meal: meal === "aucun" ? "tous" : meal, view: restoView, setting: restoSetting, budget: restoBudget });
     setRestoPage(0);
     requestAnimationFrame(() =>
       document.getElementById("resto-resultats")?.scrollIntoView({ behavior: "smooth", block: "start" }),
@@ -179,6 +192,26 @@ export default function PlanWizard({ businesses }: { businesses: Business[] }) {
             value={meal === "aucun" ? "tous" : meal}
             onChange={setMeal}
           />
+          <Question
+            title="Cadre ?"
+            options={PLAN_SETTINGS.map((o) => ({ key: o.key, label: o.label }))}
+            value={restoSetting}
+            onChange={setRestoSetting}
+          />
+          <Question
+            title="Budget ?"
+            options={PLAN_BUDGETS.map((o) => ({ key: o.key, label: o.label }))}
+            value={restoBudget}
+            onChange={setRestoBudget}
+          />
+          <section className="mt-5">
+            <h2 className="text-[14px] font-extrabold text-ink">Autre chose ?</h2>
+            <div className="mt-2 flex flex-wrap gap-2">
+              <FilterChip active={restoView} onClick={() => setRestoView((v) => !v)}>
+                🌅 Belle vue
+              </FilterChip>
+            </div>
+          </section>
 
           <button
             onClick={submitResto}
@@ -191,7 +224,7 @@ export default function PlanWizard({ businesses }: { businesses: Business[] }) {
             {restoSubmitted && restoResults.length === 0 && (
               <div className="rounded-2xl border border-border bg-surface p-4 text-[13px] text-ink">
                 <p className="font-bold">Aucun restaurant ne correspond à ces critères.</p>
-                <p className="mt-1 text-muted">Essaie « Peu importe » pour la zone ou la cuisine.</p>
+                <p className="mt-1 text-muted">Essaie « Peu importe » pour un ou plusieurs critères (zone, cuisine, cadre, budget).</p>
               </div>
             )}
 
