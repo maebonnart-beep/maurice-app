@@ -245,6 +245,37 @@ export function buildPlan(businesses: Business[], c: PlanCriteria): PlanCombo[] 
   return combos;
 }
 
+/**
+ * Plan simple « juste un resto » : pas d'activité ni de durée, seulement le
+ * profil des clients, la cuisine et la zone — pour qui veut directement une
+ * liste de restaurants plutôt qu'un programme à plusieurs étapes.
+ */
+export interface QuickRestaurantCriteria {
+  who: PlanWho;
+  zone: PlanZone;
+  meal: Exclude<PlanMeal, "aucun">;
+}
+
+/**
+ * Liste de restaurants correspondant au profil, à la cuisine et à la zone
+ * choisis — triée par qualité de fiche (commentaire, photo, descriptif) puis
+ * par nom. Pas de contrainte GPS ici (pas de distance à calculer), donc plus
+ * de fiches remontent que dans `buildPlan`.
+ */
+export function buildRestaurantList(businesses: Business[], c: QuickRestaurantCriteria): Business[] {
+  const zoneOk = (b: Business) => c.zone === "partout" || b.zone === c.zone;
+  let restaurants = businesses.filter(
+    (b) => zoneOk(b) && (b.themes ?? []).includes("restaurants") && (c.meal === "tous" || (b.filters ?? []).includes(c.meal)),
+  );
+  if (c.who === "famille") {
+    const kids = restaurants.filter(isKidsFriendly);
+    // Comme pour buildPlan : si aucun resto n'est marqué adapté aux enfants pour ce
+    // choix, on n'exclut pas tout — le résultat reste utile, sans prétendre que c'est adapté.
+    if (kids.length > 0) restaurants = kids;
+  }
+  return [...restaurants].sort((a, b) => quality(b) - quality(a) || a.name.localeCompare(b.name));
+}
+
 export function formatMinutes(min: number): string {
   const h = Math.floor(min / 60);
   const m = min % 60;

@@ -12,6 +12,7 @@ import {
   PLAN_WHO,
   PLAN_ZONES,
   buildPlan,
+  buildRestaurantList,
   formatMinutes,
   parsePlanText,
   type PlanActivity,
@@ -20,6 +21,9 @@ import {
   type PlanWho,
   type PlanZone,
 } from "@/lib/plan";
+
+/** Cuisines proposées pour le mode « Trouver un resto » : mêmes options que le plan complet, sans « Pas de repas » (hors-sujet ici). */
+const RESTO_MEALS = PLAN_MEALS.filter((m) => m.key !== "aucun");
 
 const PAGE_SIZE = 3;
 
@@ -48,7 +52,13 @@ function Question<T extends string | number>({
   );
 }
 
+const RESTO_PAGE_SIZE = 6;
+
 export default function PlanWizard({ businesses }: { businesses: Business[] }) {
+  // « Plan complet » (programme à étapes) vs « Trouver un resto » (liste simple,
+  // 3 critères) : deux façons d'utiliser Mon plan, mêmes champs qui/zone/repas
+  // partagés entre les deux pour ne pas re-demander la même chose en changeant d'onglet.
+  const [mode, setMode] = useState<"plan" | "resto">("plan");
   const [who, setWho] = useState<PlanWho>("famille");
   const [zone, setZone] = useState<PlanZone>("sud");
   const [activity, setActivity] = useState<PlanActivity>("excursion");
@@ -59,10 +69,27 @@ export default function PlanWizard({ businesses }: { businesses: Business[] }) {
   const [openBusiness, setOpenBusiness] = useState<Business | null>(null);
   const [text, setText] = useState("");
   const [textHint, setTextHint] = useState<string | null>(null);
+  const [restoSubmitted, setRestoSubmitted] = useState<{ who: PlanWho; zone: PlanZone; meal: Exclude<PlanMeal, "aucun"> } | null>(null);
+  const [restoPage, setRestoPage] = useState(0);
 
   const combos = useMemo(() => (submitted ? buildPlan(businesses, submitted) : []), [businesses, submitted]);
   const visible = combos.slice(page * PAGE_SIZE, page * PAGE_SIZE + PAGE_SIZE);
   const hasMore = (page + 1) * PAGE_SIZE < combos.length;
+
+  const restoResults = useMemo(
+    () => (restoSubmitted ? buildRestaurantList(businesses, restoSubmitted) : []),
+    [businesses, restoSubmitted],
+  );
+  const restoVisible = restoResults.slice(restoPage * RESTO_PAGE_SIZE, restoPage * RESTO_PAGE_SIZE + RESTO_PAGE_SIZE);
+  const restoHasMore = (restoPage + 1) * RESTO_PAGE_SIZE < restoResults.length;
+
+  const submitResto = () => {
+    setRestoSubmitted({ who, zone, meal: meal === "aucun" ? "tous" : meal });
+    setRestoPage(0);
+    requestAnimationFrame(() =>
+      document.getElementById("resto-resultats")?.scrollIntoView({ behavior: "smooth", block: "start" }),
+    );
+  };
 
   const run = (c: PlanCriteria) => {
     setSubmitted(c);
@@ -113,9 +140,85 @@ export default function PlanWizard({ businesses }: { businesses: Business[] }) {
     <main className="mx-auto max-w-2xl px-4 pb-16 pt-5">
       <h1 className="text-[22px] font-extrabold text-ink leading-tight">Créer mon plan</h1>
       <p className="mt-1 text-[13px] text-muted leading-snug">
-        Dis-nous ce que tu veux faire : on te propose une activité et un resto proche, avec le temps total estimé.
+        {mode === "plan"
+          ? "Dis-nous ce que tu veux faire : on te propose une activité et un resto proche, avec le temps total estimé."
+          : "Juste un resto : dis-nous pour qui, où et quelle cuisine, on te fait une liste."}
       </p>
 
+      {/* Deux façons d'utiliser Mon plan : un programme à étapes (activité + resto,
+          voire plus), ou directement une liste de restaurants sans passer par une
+          activité — pour qui sait déjà qu'il veut « juste manger quelque part ». */}
+      <div className="mt-4 inline-flex rounded-pill border border-border bg-surface p-1">
+        <button
+          onClick={() => setMode("plan")}
+          aria-pressed={mode === "plan"}
+          className={`rounded-pill px-3.5 py-1.5 text-[13px] font-bold transition-colors ${
+            mode === "plan" ? "bg-primary text-white" : "text-ink"
+          }`}
+        >
+          Plan complet
+        </button>
+        <button
+          onClick={() => setMode("resto")}
+          aria-pressed={mode === "resto"}
+          className={`rounded-pill px-3.5 py-1.5 text-[13px] font-bold transition-colors ${
+            mode === "resto" ? "bg-primary text-white" : "text-ink"
+          }`}
+        >
+          Trouver un resto
+        </button>
+      </div>
+
+      {mode === "resto" ? (
+        <>
+          <Question title="Vous êtes ?" options={PLAN_WHO.map((o) => ({ key: o.key, label: o.label }))} value={who} onChange={setWho} />
+          <Question title="Où ?" options={PLAN_ZONES.map((o) => ({ key: o.key, label: o.label }))} value={zone} onChange={setZone} />
+          <Question
+            title="Quelle cuisine ?"
+            options={RESTO_MEALS.map((o) => ({ key: o.key, label: o.label }))}
+            value={meal === "aucun" ? "tous" : meal}
+            onChange={setMeal}
+          />
+
+          <button
+            onClick={submitResto}
+            className="mt-7 w-full rounded-pill bg-primary px-4 py-3 text-[15px] font-extrabold text-white shadow-card active:scale-[.98] transition-transform"
+          >
+            Voir les restos
+          </button>
+
+          <div id="resto-resultats" className="mt-8 scroll-mt-4">
+            {restoSubmitted && restoResults.length === 0 && (
+              <div className="rounded-2xl border border-border bg-surface p-4 text-[13px] text-ink">
+                <p className="font-bold">Aucun restaurant ne correspond à ces critères.</p>
+                <p className="mt-1 text-muted">Essaie « Peu importe » pour la zone ou la cuisine.</p>
+              </div>
+            )}
+
+            {restoVisible.length > 0 && (
+              <p className="mb-3 text-[12px] font-semibold text-muted">
+                {restoResults.length} restaurant{restoResults.length > 1 ? "s" : ""}
+              </p>
+            )}
+
+            <div className="space-y-3">
+              {restoVisible.map((b) => (
+                <BusinessCard key={b.id} business={b} active={false} onSelect={() => setOpenBusiness(b)} onHover={() => {}} />
+              ))}
+            </div>
+
+            {restoHasMore && (
+              <button
+                onClick={() => setRestoPage((p) => p + 1)}
+                className="mt-3 w-full rounded-pill border border-primary px-4 py-2.5 text-[14px] font-bold text-primary active:scale-[.98] transition-transform"
+              >
+                Voir d&apos;autres restos
+              </button>
+            )}
+          </div>
+        </>
+      ) : (
+        <>
       <section className="mt-5">
         <label htmlFor="plan-texte" className="text-[14px] font-extrabold text-ink">
           Décris ta sortie en une phrase
@@ -241,6 +344,8 @@ export default function PlanWizard({ businesses }: { businesses: Business[] }) {
           </button>
         )}
       </div>
+        </>
+      )}
 
       {openBusiness && <BusinessDetail business={openBusiness} onClose={() => setOpenBusiness(null)} />}
     </main>

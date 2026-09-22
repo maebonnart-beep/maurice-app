@@ -65,6 +65,7 @@ export const SEARCH_SYNONYMS: SearchSynonym[] = [
   { words: ["matelas", "canape", "meuble", "meubles"], rubriques: ["maison-equipement"] },
   { words: ["luminaire", "lampe"], rubriques: ["maison-equipement"] },
   { words: ["tapis", "rideaux"], rubriques: ["maison-equipement"] },
+  { words: ["filtre a eau", "fontaine a eau", "purificateur d'eau", "adoucisseur d'eau"], rubriques: ["maison-equipement"] },
   { words: ["telephone", "smartphone", "portable"], rubriques: ["high-tech-electromenager"] },
   { words: ["ordinateur", "laptop", "imprimante"], rubriques: ["high-tech-electromenager"] },
   { words: ["chaussures", "vetements", "sac a main", "bijoux", "montre"], rubriques: ["mode-accessoires"] },
