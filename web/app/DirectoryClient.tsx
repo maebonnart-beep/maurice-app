@@ -11,6 +11,7 @@ import type { FilterGroup } from "@/data/categories";
 import { SELECTIONS, SELECTION_GROUP_META } from "@/data/selections";
 import type { SelectionGroup, SelectionIconKey } from "@/data/selections";
 import { fuzzyMatchTokens, tokenize, normalizeText } from "@/lib/fuzzyMatch";
+import { SEARCH_SYNONYMS } from "@/lib/searchSynonyms";
 import { isPastEvent, compareByEventDate, eventColorFor } from "@/lib/events";
 import { matchesOpenNow } from "@/lib/openHours";
 import { haversineKm } from "@/lib/geo";
@@ -230,6 +231,14 @@ const RUBRIQUE_CATEGORY_MAP: Record<string, CategoryKey> = Object.fromEntries(
 // que l'emoji de rubrique pour distinguer les types d'événements sur l'accueil.
 const FILTER_OPTION_EMOJI: Record<string, string> = Object.fromEntries(
   FILTER_GROUPS.flatMap((g) => g.options.map((o) => [o.key, o.emoji]))
+);
+
+// Libellé par option de sous-filtre (ex. "opticiens" → "Opticiens", "pressing-blanchisserie" →
+// "Pressing & blanchisserie") : ces sous-filtres (spécialité, type de service…) ne sont pas des
+// rubriques, donc absents de RUBRIQUE_MAP — on les indexe quand même dans la recherche libre
+// (searchTokensById) pour que taper "opticien" ou "pressing" trouve les bonnes fiches.
+const FILTER_OPTION_LABEL: Record<string, string> = Object.fromEntries(
+  FILTER_GROUPS.flatMap((g) => g.options.map((o) => [o.key, o.label]))
 );
 
 
@@ -1114,12 +1123,26 @@ export default function DirectoryClient({
   // seulement quand `businesses` change, pas à chaque frappe) : évite de
   // renormaliser/redécouper nom + adresse + catégorie + rubriques de
   // chaque fiche à chaque caractère tapé, qui était la vraie source de
-  // lenteur pendant la saisie.
+  // lenteur pendant la saisie. Inclut aussi les libellés de sous-filtres
+  // (FILTER_OPTION_LABEL — « Opticiens », « Pressing & blanchisserie »…) et
+  // les synonymes métier sans équivalent dans la classification
+  // (SEARCH_SYNONYMS — « quincaillerie », « plombier »…), pour que la
+  // recherche libre les retrouve même sans naviguer par rubrique.
   const searchTokensById = useMemo(() => {
     const m: Record<string, string[]> = {};
     businesses.forEach((b) => {
-      const rubriqueLabels = (b.themes || []).map((t) => RUBRIQUE_MAP[t]?.label || "").join(" ");
-      m[b.id] = tokenize(b.name + " " + b.address + " " + CATEGORY_MAP[b.category].label + " " + rubriqueLabels);
+      const themes = b.themes || [];
+      const filters = b.filters || [];
+      const rubriqueLabels = themes.map((t) => RUBRIQUE_MAP[t]?.label || "").join(" ");
+      const filterLabels = filters.map((f) => FILTER_OPTION_LABEL[f] || "").join(" ");
+      const synonymWords = SEARCH_SYNONYMS.filter(
+        (s) => s.rubriques?.some((r) => themes.includes(r)) || s.filters?.some((f) => filters.includes(f))
+      )
+        .flatMap((s) => s.words)
+        .join(" ");
+      m[b.id] = tokenize(
+        b.name + " " + b.address + " " + CATEGORY_MAP[b.category].label + " " + rubriqueLabels + " " + filterLabels + " " + synonymWords
+      );
     });
     return m;
   }, [businesses]);
