@@ -84,7 +84,6 @@ function wavyFrameBorder(color: string) {
   } as const;
 }
 import { FilterDropdown, type DropdownOption } from "@/components/ui/FilterDropdown";
-import { FilterChip } from "@/components/ui/FilterChip";
 import { AddAddressForm } from "@/components/ui/AddAddressForm";
 import { iconForKey, mascotFor, prefIconFor, MapPin } from "@/lib/icons";
 import { displayName, displayCity, shareTagline } from "@/lib/format";
@@ -159,11 +158,6 @@ const SECONDE_MAIN_ILLUSTRATIONS = [
 ];
 
 const UNCLASSIFIED = "__unclassified__";
-
-// Groupes de filtre transversaux proposés en puces rapides pendant une
-// recherche libre, avant même d'avoir choisi une rubrique (cf. puces
-// « Bon marché »/« Cuisine locale » à côté de « Ouvert maintenant »).
-const QUICK_SEARCH_GROUP_KEYS = new Set(["cuisine"]);
 const SIDEBAR_VISIBLE_RUBRIQUES = 5;
 
 // Catégories/rubriques réservées aux membres Premium (aperçu verrouillé).
@@ -1098,9 +1092,7 @@ export default function DirectoryClient({
   // Groupes de filtre transversaux applicables à l'union des rubriques actives.
   const applicableFilterGroups: FilterGroup[] = agendaBrowseAll
     ? FILTER_GROUPS.filter((g) => g.appliesTo.some((k) => RUBRIQUE_CATEGORY_MAP[k] === "agenda"))
-    : FILTER_GROUPS.filter(
-        (g) => g.appliesTo.some((k) => activeRubriques.has(k)) || QUICK_SEARCH_GROUP_KEYS.has(g.key)
-      );
+    : FILTER_GROUPS.filter((g) => g.appliesTo.some((k) => activeRubriques.has(k)));
 
   // « Ménage » des fiches : on masque les tags déjà impliqués par le contexte de
   // navigation/filtre actif (rubriques + facettes sélectionnées). Le badge de
@@ -1136,7 +1128,10 @@ export default function DirectoryClient({
       const rubriqueLabels = themes.map((t) => RUBRIQUE_MAP[t]?.label || "").join(" ");
       const filterLabels = filters.map((f) => FILTER_OPTION_LABEL[f] || "").join(" ");
       const synonymWords = SEARCH_SYNONYMS.filter(
-        (s) => s.rubriques?.some((r) => themes.includes(r)) || s.filters?.some((f) => filters.includes(f))
+        (s) =>
+          s.rubriques?.some((r) => themes.includes(r)) ||
+          s.filters?.some((f) => filters.includes(f)) ||
+          s.businessIds?.includes(b.id)
       )
         .flatMap((s) => s.words)
         .join(" ");
@@ -1185,7 +1180,7 @@ export default function DirectoryClient({
         // plusieurs rubriques cochées à la fois, chacune avec ses propres
         // groupes) ne doit pas l'exclure : seules les fiches concernées par
         // ce groupe sont contraintes par la sélection.
-        if (activeRubriques.size > 0 || agendaBrowseAll || facetGroups.cuisine?.size) {
+        if (activeRubriques.size > 0 || agendaBrowseAll) {
           const filters = b.filters || [];
           const themes = b.themes || [];
           for (const g of applicableFilterGroups) {
@@ -3960,29 +3955,8 @@ export default function DirectoryClient({
           </div>
 
           {/* Ligne dédiée pour « Ouvert maintenant » : évite qu'il soit
-              tronqué dans la rangée défilante ci-dessus sur petit écran. Puces
-              rapides Prix/Cuisine à côté : uniquement tant qu'aucune rubrique
-              n'est choisie (sinon doublon avec les menus déroulants Cuisine/
-              Prix de `restoFilterBar`, qui prennent le relais). */}
-          <div className="-mx-4 lg:-mx-5 px-4 lg:px-5 pb-2 flex flex-wrap items-center gap-2">
-            {openNowControl}
-            {activeRubriques.size === 0 && !agendaBrowseAll && (
-              <>
-                <FilterChip
-                  active={facetPrices.has("bon-marche")}
-                  onClick={() => toggleInSet(setFacetPrices, "bon-marche")}
-                >
-                  € Bon marché
-                </FilterChip>
-                <FilterChip
-                  active={facetGroups.cuisine?.has("mauricienne") ?? false}
-                  onClick={() => toggleFacetGroup("cuisine", "mauricienne")}
-                >
-                  🌶️ Cuisine locale
-                </FilterChip>
-              </>
-            )}
-          </div>
+              tronqué dans la rangée défilante ci-dessus sur petit écran. */}
+          <div className="-mx-4 lg:-mx-5 px-4 lg:px-5 pb-2">{openNowControl}</div>
 
           {/* Catégories — accessibles en mobile dans les résultats/la carte,
               uniquement en recherche/« voir tout » (browseAll) : quand on
