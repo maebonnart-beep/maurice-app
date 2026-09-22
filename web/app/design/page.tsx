@@ -2,6 +2,7 @@
 
 import { useState, type ReactNode } from "react";
 import type { Business } from "@/lib/types";
+import type { Listing } from "@/lib/marketplace/types";
 import { CATEGORIES } from "@/data/categories";
 import {
   Logo,
@@ -13,7 +14,20 @@ import {
   SearchInput,
   CategoryTile,
   BusinessCard,
+  ListingCard,
 } from "@/components/ui";
+import { ProviderTypeBadge, PremiumSellerBadge } from "@/components/ui/Badge";
+import { BackButton } from "@/components/ui/BackButton";
+import { MarketplaceHeader } from "@/components/ui/MarketplaceHeader";
+import { FavoriteButton } from "@/components/ui/FavoriteButton";
+import { QuickAlertButton } from "@/components/ui/QuickAlertButton";
+import { FilterDropdown, type DropdownOption } from "@/components/ui/FilterDropdown";
+import { UniversCard } from "@/components/ui/UniversCard";
+import { CategoryRow } from "@/components/ui/CategoryRow";
+import { ContactUsButton } from "@/components/ui/ContactUsButton";
+import { SuggestCommentButton } from "@/components/ui/SuggestCommentButton";
+import { SuggestPhotoButton } from "@/components/ui/SuggestPhotoButton";
+import { AddAddressForm } from "@/components/ui/AddAddressForm";
 
 // Jetons de couleur documentés (valeurs = mode clair ; le mode sombre bascule via CSS).
 const COLOR_TOKENS: { name: string; var: string; hex: string; onDark?: boolean }[] = [
@@ -81,6 +95,28 @@ const SAMPLES: Business[] = [
   },
 ];
 
+// Annonce d'exemple pour ListingCard (rubrique Seconde main).
+const SAMPLE_LISTING: Listing = {
+  id: 1,
+  userId: "demo",
+  title: "Vélo enfant 16 pouces, très bon état",
+  description: "Peu servi, freins révisés.",
+  price: 1500,
+  category: "sport-loisirs",
+  whatsapp: "+230 5900 0000",
+  zone: "nord",
+  status: "approved",
+  createdAt: new Date(Date.now() - 2 * 86_400_000).toISOString(),
+  photos: [],
+};
+
+const FILTER_OPTIONS: DropdownOption[] = [
+  { key: "creole", label: "Créole", count: 42 },
+  { key: "indienne", label: "Indienne", count: 28 },
+  { key: "chinoise", label: "Chinoise", count: 11 },
+  { key: "fruits-de-mer", label: "Fruits de mer", count: 19 },
+];
+
 function Section({ title, hint, children }: { title: string; hint?: string; children: ReactNode }) {
   return (
     <section className="mb-12">
@@ -105,6 +141,9 @@ export default function DesignSystemPage() {
   const [zone, setZone] = useState<string | null>(null);
   const [query, setQuery] = useState("");
   const [selected, setSelected] = useState<string | null>(null);
+  const [cuisineFilter, setCuisineFilter] = useState<Set<string>>(new Set());
+  const [rowSelected, setRowSelected] = useState(false);
+  const [addAddressOpen, setAddAddressOpen] = useState(false);
 
   return (
     <div className="max-w-[900px] mx-auto px-5 py-10">
@@ -253,6 +292,110 @@ export default function DesignSystemPage() {
             />
           ))}
         </div>
+      </Section>
+
+      <Section title="Badges additionnels" hint="Type de prestataire, vendeur premium (rubrique Seconde main).">
+        <Row label="Type de prestataire">
+          <ProviderTypeBadge type="particulier" />
+          <ProviderTypeBadge type="organisme" />
+          <ProviderTypeBadge type="application" />
+        </Row>
+        <Row label="Vendeur premium">
+          <PremiumSellerBadge />
+          <PremiumSellerBadge compact />
+        </Row>
+      </Section>
+
+      <Section title="Favoris" hint="Trois statuts indépendants : coup de cœur, à tester, testé.">
+        <Row label="FavoriteButton">
+          <FavoriteButton id="demo-fav" />
+        </Row>
+      </Section>
+
+      <Section title="Filtre déroulant" hint="Menu multi-sélection (FilterDropdown), utilisé dans la barre de filtres.">
+        <Row label="FilterDropdown">
+          <FilterDropdown
+            label="Cuisine"
+            options={FILTER_OPTIONS}
+            selected={cuisineFilter}
+            onToggle={(key) =>
+              setCuisineFilter((prev) => {
+                const next = new Set(prev);
+                next.has(key) ? next.delete(key) : next.add(key);
+                return next;
+              })
+            }
+            onClear={() => setCuisineFilter(new Set())}
+          />
+        </Row>
+      </Section>
+
+      <Section title="Alerte rapide" hint="Bouton de création d'alerte en un clic (QuickAlertButton).">
+        <Row label="QuickAlertButton">
+          <QuickAlertButton type="listing" criteria={{ category: "sport-loisirs" }} />
+        </Row>
+      </Section>
+
+      <Section title="Carte annonce (ListingCard)" hint="Rubrique Seconde main — mêmes tokens/rythme que BusinessCard.">
+        <div className="max-w-[420px]">
+          <ListingCard listing={SAMPLE_LISTING} />
+        </div>
+      </Section>
+
+      <Section title="Carte univers" hint="Accueil « Explorer par catégorie » (UniversCard).">
+        <div className="grid grid-cols-2 sm:grid-cols-3 gap-2.5 max-w-[420px]">
+          <UniversCard photoKey="manger-boire" label="Manger & boire" subtitle="Restaurants, cafés, bars" onClick={() => {}} />
+          <UniversCard photoKey="sortir-decouvrir" label="Sortir" subtitle="Plages, visites, excursions" locked onClick={() => {}} />
+        </div>
+      </Section>
+
+      <Section title="Ligne de catégorie" hint="Navigation niveau 1 (mascotte) et niveau 2 (rubrique) — CategoryRow.">
+        <div className="flex flex-col gap-2.5 max-w-[520px]">
+          <CategoryRow category="manger-boire" onClick={() => {}} />
+          <CategoryRow
+            label="Cuisine créole"
+            iconKey="manger-boire"
+            count={42}
+            onClick={() => {}}
+            selected={rowSelected}
+            onToggleSelect={() => setRowSelected((s) => !s)}
+          />
+          <CategoryRow label="Rubrique Premium" iconKey="manger-boire" count={12} locked onClick={() => {}} />
+        </div>
+      </Section>
+
+      <Section title="En-tête & navigation" hint="Bandeau des pages secondaires (Seconde main, Mon compte) et flèche retour.">
+        <div className="max-w-[420px] rounded-card overflow-hidden border border-border">
+          <MarketplaceHeader />
+        </div>
+        <Row label="BackButton">
+          <div className="bg-surface-2 rounded-full">
+            <BackButton />
+          </div>
+        </Row>
+      </Section>
+
+      <Section title="Formulaires de contribution" hint="Contact, suggestion de commentaire, de photo — même gabarit modale.">
+        <Row label="Boutons">
+          <ContactUsButton />
+          <SuggestCommentButton businessId="demo-1" businessName="La Table du Chef" />
+          <SuggestPhotoButton businessId="demo-1" businessName="La Table du Chef" />
+        </Row>
+      </Section>
+
+      <Section title="Ajouter une adresse" hint="Formulaire complet (AddAddressForm) — ouvert depuis le bandeau du bas.">
+        <button
+          type="button"
+          onClick={() => setAddAddressOpen((o) => !o)}
+          className="text-body font-semibold text-primary-deep underline underline-offset-2"
+        >
+          {addAddressOpen ? "Masquer le formulaire" : "Afficher le formulaire"}
+        </button>
+        {addAddressOpen && (
+          <div className="mt-4 rounded-card border border-border bg-surface p-5">
+            <AddAddressForm />
+          </div>
+        )}
       </Section>
     </div>
   );
