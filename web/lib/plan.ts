@@ -314,7 +314,7 @@ function hasTerrace(b: Business): boolean {
  * FILTER_GROUPS dans data/categories.ts) — rien de nouveau à renseigner côté
  * fiches.
  */
-export type PlaceTheme = "resto" | "bar" | "excursion" | "visite";
+export type PlaceTheme = "resto" | "bar" | "plage" | "excursion" | "visite" | "shopping";
 
 export const PLACE_THEMES: {
   key: PlaceTheme;
@@ -322,11 +322,33 @@ export const PLACE_THEMES: {
   emoji: string;
   /** Rubriques (Business.themes) couvertes par la thématique. */
   rubriques: string[];
+  /** Filtre imposé par la thématique (ex. Plage → option « plages » de la rubrique Plages & nature). */
+  requiredFilter?: string;
+  /** Groupes de filtres rendus inutiles par requiredFilter : pas proposés en sous-critères. */
+  hiddenGroups?: string[];
 }[] = [
   { key: "resto", label: "Resto", emoji: "🍽️", rubriques: ["restaurants"] },
   { key: "bar", label: "Bar & café", emoji: "🍹", rubriques: ["cafes-bars-glaciers"] },
+  { key: "plage", label: "Plage", emoji: "🏖️", rubriques: ["plages-nature"], requiredFilter: "plages", hiddenGroups: ["plages-nature-types"] },
   { key: "excursion", label: "Excursion", emoji: "🚤", rubriques: ["excursions-sorties"] },
   { key: "visite", label: "Visite", emoji: "🏛️", rubriques: ["culture-patrimoine", "plages-nature", "parcs-activites-famille"] },
+  {
+    key: "shopping",
+    label: "Shopping",
+    emoji: "🛍️",
+    // Rubriques boutiques d'« Acheter & s'équiper » ; sans « Commander en ligne »
+    // (pas un lieu) ni « Seconde main (particuliers) » (annonces Premium).
+    rubriques: [
+      "malls-shopping",
+      "mode-accessoires",
+      "souvenirs-cadeaux",
+      "maison-equipement",
+      "high-tech-electromenager",
+      "librairies-jeux-loisirs",
+      "mercerie-loisirs-creatifs",
+      "seconde-main-boutiques",
+    ],
+  },
 ];
 
 export interface PlaceCriteria {
@@ -372,6 +394,7 @@ export function buildPlaceList(businesses: Business[], c: PlaceCriteria, groups:
   let list = businesses.filter((b) => {
     const filters = b.filters ?? [];
     if (!(b.themes ?? []).some((t) => rubriques.includes(t))) return false;
+    if (theme.requiredFilter && !filters.includes(theme.requiredFilter)) return false;
     if (c.zone !== "partout" && b.zone !== c.zone) return false;
     for (const [g, opts] of chosen) {
       const ok = groupBrowsable.get(g) ? opts.some((o) => filters.includes(o)) : opts.every((o) => filters.includes(o));
@@ -388,7 +411,9 @@ export function buildPlaceList(businesses: Business[], c: PlaceCriteria, groups:
     }
     return true;
   });
-  if (c.who === "famille") {
+  // Restos seulement : c'est là que le filtre « Kid's friendly » est renseigné ;
+  // ailleurs (plages, boutiques, bars…) il écarterait presque tout sans raison.
+  if (c.who === "famille" && c.theme === "resto") {
     const kids = list.filter(isKidsFriendly);
     // Si aucune fiche n’est marquée adaptée aux enfants pour ce choix, on n’exclut
     // pas tout — le résultat reste utile, sans prétendre que c’est adapté.

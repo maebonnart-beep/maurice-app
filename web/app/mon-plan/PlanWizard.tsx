@@ -110,7 +110,7 @@ export default function PlanWizard({
   // Sous-critères affichés : ceux des rubriques retenues (toutes celles de la
   // thématique tant qu'aucune n'est cochée).
   const activeRubriques = placeRubriques.length > 0 ? placeRubriques : theme.rubriques;
-  const placeGroups = groupsFor(activeRubriques);
+  const placeGroups = groupsFor(activeRubriques).filter((g) => !theme.hiddenGroups?.includes(g.key));
 
   const placeResults = useMemo(
     () => (placeSubmitted ? buildPlaceList(businesses, placeSubmitted, FILTER_GROUPS) : []),
@@ -207,12 +207,12 @@ export default function PlanWizard({
   };
 
   return (
-    <main className="mx-auto max-w-2xl px-4 pb-16 pt-5">
+    <main className="mx-auto w-full max-w-2xl px-4 pb-16 pt-5">
       <h1 className="text-[22px] font-extrabold text-ink leading-tight">Créer mon plan</h1>
       <p className="mt-1 text-[13px] text-muted leading-snug">
         {mode === "plan"
           ? "Dis-nous ce que tu veux faire : on te propose une activité et un resto proche, avec le temps total estimé."
-          : "Un resto, un bar, une excursion ou une visite : choisis la thématique et tes critères, on te fait une liste."}
+          : "Un resto, un bar, une plage, une excursion, une visite ou du shopping : choisis la thématique et tes critères, on te fait une liste."}
       </p>
 
       {/* Deux façons d'utiliser Mon plan : directement une liste de lieux pour une
@@ -263,7 +263,7 @@ export default function PlanWizard({
 
           <section className="mt-5">
             <h2 className="text-[14px] font-extrabold text-ink">Thématique</h2>
-            <div className="mt-2 grid grid-cols-4 gap-2">
+            <div className="mt-2 grid grid-cols-3 gap-2">
               {PLACE_THEMES.map((t) => (
                 <button
                   key={t.key}
@@ -299,7 +299,17 @@ export default function PlanWizard({
               thématique (cuisine, ambiance, type de bar, île…). */}
           {placeGroups.map((g) => (
             <section key={g.key} className="mt-5">
-              <h2 className="text-[14px] font-extrabold text-ink">{g.label}</h2>
+              <h2 className="text-[14px] font-extrabold text-ink">
+                {g.label}
+                {/* Thématique à plusieurs rubriques : plusieurs groupes peuvent
+                    porter le même nom (« Type de boutique ») → on précise la rubrique. */}
+                {theme.rubriques.length > 1 && (
+                  <span className="font-semibold text-muted">
+                    {" · "}
+                    {g.appliesTo.filter((k) => theme.rubriques.includes(k)).map((k) => RUBRIQUE_LABEL[k]?.label ?? k).join(", ")}
+                  </span>
+                )}
+              </h2>
               <div className="mt-2 flex flex-wrap gap-2">
                 {g.options.map((o) => (
                   <FilterChip
