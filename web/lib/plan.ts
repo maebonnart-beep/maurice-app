@@ -308,64 +308,93 @@ function hasTerrace(b: Business): boolean {
 }
 
 /**
- * Plan simple « juste un resto » : pas d'activité ni de durée, seulement le
- * profil des clients, la cuisine, la zone et quelques critères pratiques
- * (vue, cadre, budget, table d'exception, fréquenté locaux, coup de cœur,
- * ouvert maintenant, terrasse) — pour qui veut directement une liste de
- * restaurants plutôt qu'un programme à plusieurs étapes.
+ * « Trouver un lieu » : une liste simple (pas de programme à étapes) pour une
+ * thématique donnée. Les sous-critères proposés pour chaque thématique sont
+ * ceux des filtres déjà définis sur les rubriques correspondantes (cf.
+ * FILTER_GROUPS dans data/categories.ts) — rien de nouveau à renseigner côté
+ * fiches.
  */
-export interface QuickRestaurantCriteria {
+export type PlaceTheme = "resto" | "bar" | "excursion" | "visite";
+
+export const PLACE_THEMES: {
+  key: PlaceTheme;
+  label: string;
+  emoji: string;
+  /** Rubriques (Business.themes) couvertes par la thématique. */
+  rubriques: string[];
+}[] = [
+  { key: "resto", label: "Resto", emoji: "🍽️", rubriques: ["restaurants"] },
+  { key: "bar", label: "Bar & café", emoji: "🍹", rubriques: ["cafes-bars-glaciers"] },
+  { key: "excursion", label: "Excursion", emoji: "🚤", rubriques: ["excursions-sorties"] },
+  { key: "visite", label: "Visite", emoji: "🏛️", rubriques: ["culture-patrimoine", "plages-nature", "parcs-activites-famille"] },
+];
+
+export interface PlaceCriteria {
+  theme: PlaceTheme;
   who: PlanWho;
   zone: PlanZone;
-  meal: Exclude<PlanMeal, "aucun">;
-  /** Belle vue (filtre « Plus belles vues » existant). */
-  view?: boolean;
-  /** Cadre (plage / hôtel / golf), détecté dans le descriptif — cf. RESTO_SETTING_PATTERNS. */
+  /** Texte libre : nom, lieu, envie… cherché dans le nom, l’adresse, le descriptif et les filtres de la fiche. */
+  text?: string;
+  /** Sous-rubriques retenues (thématique à plusieurs rubriques, ex. Visite) ; vide = toutes. */
+  rubriques?: string[];
+  /** Options de filtre cochées, par groupe (clé de FILTER_GROUPS). */
+  options?: Record<string, string[]>;
+  /** Cadre (resto uniquement), détecté dans le descriptif — cf. RESTO_SETTING_PATTERNS. */
   setting?: RestoSetting;
-  /** Budget (gamme de prix existante : bon marché / prix moyen / se faire plaisir). */
   budget?: PriceRange | "tous";
-  /** Table d'exception (filtre « tables-exception » existant). */
-  fineDining?: boolean;
-  /** Fréquenté par les locaux (filtre « frequente-locaux » existant). */
-  localFavorite?: boolean;
   /** Coup de cœur Koté Moris (badge « selection » existant). */
   featured?: boolean;
-  /** Ouvert au moment de la recherche (mêmes horaires que le reste de l'app). */
+  /** Ouvert au moment de la recherche (mêmes horaires que le reste de l’app). */
   openNow?: boolean;
   /** Terrasse/extérieur, détecté dans le descriptif — cf. hasTerrace. */
   terrace?: boolean;
 }
 
+const TEXT_STOPWORDS = new Set(["les", "des", "une", "pour", "avec", "dans", "sur", "aux", "est", "qui", "pas", "tres", "plus", "bon", "bonne", "sympa", "endroit", "lieu"]);
+
 /**
- * Liste de restaurants correspondant au profil, à la cuisine, à la zone et
- * aux critères pratiques choisis — triée par qualité de fiche (commentaire,
- * photo, descriptif) puis par nom. Pas de contrainte GPS ici (pas de distance
- * à calculer), donc plus de fiches remontent que dans `buildPlan`.
+ * Liste des fiches de la thématique qui répondent aux critères, triées par
+ * qualité de fiche puis par nom. Options d’un même groupe : « l’une ou
+ * l’autre » pour les groupes de type sous-rubrique (cuisine, type de bar,
+ * île…), « toutes » pour les groupes transversaux (ambiance / public), comme
+ * dans l’annuaire.
  */
-export function buildRestaurantList(businesses: Business[], c: QuickRestaurantCriteria): Business[] {
-  const zoneOk = (b: Business) => c.zone === "partout" || b.zone === c.zone;
+export function buildPlaceList(businesses: Business[], c: PlaceCriteria, groups: { key: string; browsable?: boolean }[]): Business[] {
+  const theme = PLACE_THEMES.find((t) => t.key === c.theme)!;
+  const rubriques = c.rubriques && c.rubriques.length > 0 ? c.rubriques : theme.rubriques;
   const budget = c.budget ?? "tous";
-  let restaurants = businesses.filter(
-    (b) =>
-      zoneOk(b) &&
-      (b.themes ?? []).includes("restaurants") &&
-      (c.meal === "tous" || (b.filters ?? []).includes(c.meal)) &&
-      (!c.view || (b.filters ?? []).includes("plus-belles-vues")) &&
-      matchesSetting(b, c.setting ?? "tous") &&
-      (budget === "tous" || b.priceRange === budget) &&
-      (!c.fineDining || (b.filters ?? []).includes("tables-exception")) &&
-      (!c.localFavorite || (b.filters ?? []).includes("frequente-locaux")) &&
-      (!c.featured || b.badge === "selection") &&
-      (!c.openNow || matchesOpenNow(b.hours)) &&
-      (!c.terrace || hasTerrace(b)),
-  );
+  const words = normPlain(c.text ?? "")
+    .split(/[^a-z0-9]+/)
+    .filter((w) => w.length >= 3 && !TEXT_STOPWORDS.has(w));
+  const groupBrowsable = new Map(groups.map((g) => [g.key, !!g.browsable]));
+  const chosen = Object.entries(c.options ?? {}).filter(([, v]) => v.length > 0);
+
+  let list = businesses.filter((b) => {
+    const filters = b.filters ?? [];
+    if (!(b.themes ?? []).some((t) => rubriques.includes(t))) return false;
+    if (c.zone !== "partout" && b.zone !== c.zone) return false;
+    for (const [g, opts] of chosen) {
+      const ok = groupBrowsable.get(g) ? opts.some((o) => filters.includes(o)) : opts.every((o) => filters.includes(o));
+      if (!ok) return false;
+    }
+    if (c.theme === "resto" && !matchesSetting(b, c.setting ?? "tous")) return false;
+    if (budget !== "tous" && b.priceRange !== budget) return false;
+    if (c.featured && b.badge !== "selection") return false;
+    if (c.openNow && !matchesOpenNow(b.hours)) return false;
+    if (c.terrace && !hasTerrace(b)) return false;
+    if (words.length > 0) {
+      const hay = normPlain([b.name, b.address, b.description ?? "", ...filters, ...(b.themes ?? [])].join(" "));
+      if (!words.every((w) => hay.includes(w))) return false;
+    }
+    return true;
+  });
   if (c.who === "famille") {
-    const kids = restaurants.filter(isKidsFriendly);
-    // Comme pour buildPlan : si aucun resto n'est marqué adapté aux enfants pour ce
-    // choix, on n'exclut pas tout — le résultat reste utile, sans prétendre que c'est adapté.
-    if (kids.length > 0) restaurants = kids;
+    const kids = list.filter(isKidsFriendly);
+    // Si aucune fiche n’est marquée adaptée aux enfants pour ce choix, on n’exclut
+    // pas tout — le résultat reste utile, sans prétendre que c’est adapté.
+    if (kids.length > 0) list = kids;
   }
-  return [...restaurants].sort((a, b) => quality(b) - quality(a) || a.name.localeCompare(b.name));
+  return [...list].sort((a, b) => quality(b) - quality(a) || a.name.localeCompare(b.name));
 }
 
 export function formatMinutes(min: number): string {

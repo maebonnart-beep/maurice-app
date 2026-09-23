@@ -2143,23 +2143,43 @@ export default function DirectoryClient({
                     </div>
                   )}
 
+                  {/* Deux usages de /mon-plan : « Trouver un lieu » d'abord (le
+                      besoin le plus courant), puis le programme complet. */}
                   {searchTab === "experience" && (
-                    <Link
-                      href="/mon-plan"
-                      className="mt-4 flex items-center gap-3 rounded-2xl p-3.5 no-underline text-ink active:scale-[.98] transition-transform"
-                      style={{ background: "linear-gradient(135deg, color-mix(in srgb, var(--primary) 16%, var(--surface)) 0%, var(--surface) 85%)" }}
-                    >
-                      <span className="shrink-0 flex items-center justify-center w-11 h-11 rounded-full bg-primary text-white" aria-hidden>
-                        <Sparkle size={22} weight="fill" />
-                      </span>
-                      <span className="min-w-0 flex-1">
-                        <span className="block text-[14px] font-extrabold leading-tight">Créer mon plan</span>
-                        <span className="block text-[11.5px] text-muted leading-snug mt-0.5">
-                          Un programme sur mesure (activité, resto, sortie…) selon ton groupe, ta zone et ton temps
+                    <div className="mt-4 space-y-2">
+                      <Link
+                        href="/mon-plan"
+                        className="flex items-center gap-3 rounded-2xl p-3.5 no-underline text-ink active:scale-[.98] transition-transform"
+                        style={{ background: "linear-gradient(135deg, color-mix(in srgb, var(--primary) 16%, var(--surface)) 0%, var(--surface) 85%)" }}
+                      >
+                        <span className="shrink-0 flex items-center justify-center w-11 h-11 rounded-full bg-primary text-white" aria-hidden>
+                          <MapPin size={22} weight="fill" />
                         </span>
-                      </span>
-                      <span className="shrink-0 text-[18px] font-bold text-primary-deep" aria-hidden>›</span>
-                    </Link>
+                        <span className="min-w-0 flex-1">
+                          <span className="block text-[14px] font-extrabold leading-tight">Trouver un lieu</span>
+                          <span className="block text-[11.5px] text-muted leading-snug mt-0.5">
+                            Resto, bar, excursion ou visite : ta thématique, tes critères, une liste d'adresses
+                          </span>
+                        </span>
+                        <span className="shrink-0 text-[18px] font-bold text-primary-deep" aria-hidden>›</span>
+                      </Link>
+                      <Link
+                        href="/mon-plan?mode=plan"
+                        className="flex items-center gap-3 rounded-2xl p-3.5 no-underline text-ink active:scale-[.98] transition-transform"
+                        style={{ background: "linear-gradient(135deg, color-mix(in srgb, var(--primary) 16%, var(--surface)) 0%, var(--surface) 85%)" }}
+                      >
+                        <span className="shrink-0 flex items-center justify-center w-11 h-11 rounded-full bg-primary text-white" aria-hidden>
+                          <Sparkle size={22} weight="fill" />
+                        </span>
+                        <span className="min-w-0 flex-1">
+                          <span className="block text-[14px] font-extrabold leading-tight">Plan complet</span>
+                          <span className="block text-[11.5px] text-muted leading-snug mt-0.5">
+                            Un programme sur mesure (activité, resto, sortie…) selon ton groupe, ta zone et ton temps
+                          </span>
+                        </span>
+                        <span className="shrink-0 text-[18px] font-bold text-primary-deep" aria-hidden>›</span>
+                      </Link>
+                    </div>
                   )}
 
                 </div>

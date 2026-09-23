@@ -5,6 +5,7 @@ import type { Business, PriceRange } from "@/lib/types";
 import { BusinessCard } from "@/components/ui/BusinessCard";
 import { BusinessDetail } from "@/components/ui/BusinessDetail";
 import { FilterChip } from "@/components/ui/FilterChip";
+import { FILTER_GROUPS, SUBCATEGORIES } from "@/data/categories";
 import {
   PLAN_ACTIVITIES,
   PLAN_BUDGETS,
@@ -14,7 +15,8 @@ import {
   PLAN_WHO,
   PLAN_ZONES,
   buildPlan,
-  buildRestaurantList,
+  buildPlaceList,
+  PLACE_THEMES,
   formatMinutes,
   parsePlanText,
   type PlanActivity,
@@ -22,12 +24,20 @@ import {
   type PlanMeal,
   type PlanWho,
   type PlanZone,
-  type QuickRestaurantCriteria,
+  type PlaceCriteria,
+  type PlaceTheme,
   type RestoSetting,
 } from "@/lib/plan";
 
-/** Cuisines proposées pour le mode « Trouver un resto » : mêmes options que le plan complet, sans « Pas de repas » (hors-sujet ici). */
-const RESTO_MEALS = PLAN_MEALS.filter((m) => m.key !== "aucun");
+/** Libellé des sous-rubriques (ex. Visite → Culture & patrimoine / Plages & nature…). */
+const RUBRIQUE_LABEL: Record<string, { label: string; emoji: string }> = Object.fromEntries(
+  Object.values(SUBCATEGORIES).flatMap((subs) => (subs ?? []).map((s) => [s.key, { label: s.label, emoji: s.emoji }])),
+);
+
+/** Groupes de filtres existants qui s’appliquent à au moins une des rubriques données. */
+function groupsFor(rubriques: string[]) {
+  return FILTER_GROUPS.filter((g) => g.appliesTo.some((k) => rubriques.includes(k)));
+}
 
 const PAGE_SIZE = 3;
 
@@ -58,13 +68,20 @@ function Question<T extends string | number>({
 
 const RESTO_PAGE_SIZE = 6;
 
-export default function PlanWizard({ businesses }: { businesses: Business[] }) {
-  // « Plan complet » (programme à étapes) vs « Trouver un resto » (liste simple,
-  // 3 critères) : deux façons d'utiliser Mon plan, mêmes champs qui/zone/repas
-  // partagés entre les deux pour ne pas re-demander la même chose en changeant d'onglet.
-  const [mode, setMode] = useState<"plan" | "resto">("plan");
+export default function PlanWizard({
+  businesses,
+  initialMode = "lieu",
+}: {
+  businesses: Business[];
+  initialMode?: "lieu" | "plan";
+}) {
+  // « Trouver un lieu » (liste simple par thématique) vs « Plan complet »
+  // (programme à étapes) : deux façons d'utiliser Mon plan, mêmes champs
+  // qui/zone partagés entre les deux pour ne pas re-demander la même chose en
+  // changeant d'onglet. « Trouver un lieu » d'abord : c'est le besoin le plus courant.
+  const [mode, setMode] = useState<"lieu" | "plan">(initialMode);
   const [who, setWho] = useState<PlanWho>("famille");
-  const [zone, setZone] = useState<PlanZone>("sud");
+  const [zone, setZone] = useState<PlanZone>(initialMode === "lieu" ? "partout" : "sud");
   const [activity, setActivity] = useState<PlanActivity>("excursion");
   const [meal, setMeal] = useState<PlanMeal>("mauricienne");
   const [maxMinutes, setMaxMinutes] = useState(180);
@@ -73,45 +90,74 @@ export default function PlanWizard({ businesses }: { businesses: Business[] }) {
   const [openBusiness, setOpenBusiness] = useState<Business | null>(null);
   const [text, setText] = useState("");
   const [textHint, setTextHint] = useState<string | null>(null);
-  const [restoView, setRestoView] = useState(false);
-  const [restoSetting, setRestoSetting] = useState<RestoSetting>("tous");
-  const [restoBudget, setRestoBudget] = useState<PriceRange | "tous">("tous");
-  const [restoFineDining, setRestoFineDining] = useState(false);
-  const [restoLocalFavorite, setRestoLocalFavorite] = useState(false);
-  const [restoFeatured, setRestoFeatured] = useState(false);
-  const [restoOpenNow, setRestoOpenNow] = useState(false);
-  const [restoTerrace, setRestoTerrace] = useState(false);
-  const [restoSubmitted, setRestoSubmitted] = useState<QuickRestaurantCriteria | null>(null);
-  const [restoPage, setRestoPage] = useState(0);
+  const [placeTheme, setPlaceTheme] = useState<PlaceTheme>("resto");
+  const [placeText, setPlaceText] = useState("");
+  const [placeRubriques, setPlaceRubriques] = useState<string[]>([]);
+  const [placeOptions, setPlaceOptions] = useState<Record<string, string[]>>({});
+  const [placeSetting, setPlaceSetting] = useState<RestoSetting>("tous");
+  const [placeBudget, setPlaceBudget] = useState<PriceRange | "tous">("tous");
+  const [placeFeatured, setPlaceFeatured] = useState(false);
+  const [placeOpenNow, setPlaceOpenNow] = useState(false);
+  const [placeTerrace, setPlaceTerrace] = useState(false);
+  const [placeSubmitted, setPlaceSubmitted] = useState<PlaceCriteria | null>(null);
+  const [placePage, setPlacePage] = useState(0);
 
   const combos = useMemo(() => (submitted ? buildPlan(businesses, submitted) : []), [businesses, submitted]);
   const visible = combos.slice(page * PAGE_SIZE, page * PAGE_SIZE + PAGE_SIZE);
   const hasMore = (page + 1) * PAGE_SIZE < combos.length;
 
-  const restoResults = useMemo(
-    () => (restoSubmitted ? buildRestaurantList(businesses, restoSubmitted) : []),
-    [businesses, restoSubmitted],
-  );
-  const restoVisible = restoResults.slice(restoPage * RESTO_PAGE_SIZE, restoPage * RESTO_PAGE_SIZE + RESTO_PAGE_SIZE);
-  const restoHasMore = (restoPage + 1) * RESTO_PAGE_SIZE < restoResults.length;
+  const theme = PLACE_THEMES.find((t) => t.key === placeTheme)!;
+  // Sous-critères affichés : ceux des rubriques retenues (toutes celles de la
+  // thématique tant qu'aucune n'est cochée).
+  const activeRubriques = placeRubriques.length > 0 ? placeRubriques : theme.rubriques;
+  const placeGroups = groupsFor(activeRubriques);
 
-  const submitResto = () => {
-    setRestoSubmitted({
+  const placeResults = useMemo(
+    () => (placeSubmitted ? buildPlaceList(businesses, placeSubmitted, FILTER_GROUPS) : []),
+    [businesses, placeSubmitted],
+  );
+  const placeVisible = placeResults.slice(0, (placePage + 1) * RESTO_PAGE_SIZE);
+  const placeHasMore = placeVisible.length < placeResults.length;
+
+  const chooseTheme = (t: PlaceTheme) => {
+    setPlaceTheme(t);
+    setPlaceRubriques([]);
+    setPlaceOptions({});
+    setPlaceSetting("tous");
+    setPlaceSubmitted(null);
+  };
+
+  const toggleRubrique = (r: string) => {
+    const next = placeRubriques.includes(r) ? placeRubriques.filter((x) => x !== r) : [...placeRubriques, r];
+    setPlaceRubriques(next);
+    // Retire les options de groupes qui ne s'appliquent plus aux rubriques retenues.
+    const keep = new Set(groupsFor(next.length > 0 ? next : theme.rubriques).map((g) => g.key));
+    setPlaceOptions((o) => Object.fromEntries(Object.entries(o).filter(([g]) => keep.has(g))));
+  };
+
+  const toggleOption = (group: string, opt: string) =>
+    setPlaceOptions((o) => {
+      const cur = o[group] ?? [];
+      return { ...o, [group]: cur.includes(opt) ? cur.filter((x) => x !== opt) : [...cur, opt] };
+    });
+
+  const submitPlace = () => {
+    setPlaceSubmitted({
+      theme: placeTheme,
       who,
       zone,
-      meal: meal === "aucun" ? "tous" : meal,
-      view: restoView,
-      setting: restoSetting,
-      budget: restoBudget,
-      fineDining: restoFineDining,
-      localFavorite: restoLocalFavorite,
-      featured: restoFeatured,
-      openNow: restoOpenNow,
-      terrace: restoTerrace,
+      text: placeText,
+      rubriques: placeRubriques,
+      options: placeOptions,
+      setting: placeSetting,
+      budget: placeBudget,
+      featured: placeFeatured,
+      openNow: placeOpenNow,
+      terrace: placeTerrace,
     });
-    setRestoPage(0);
+    setPlacePage(0);
     requestAnimationFrame(() =>
-      document.getElementById("resto-resultats")?.scrollIntoView({ behavior: "smooth", block: "start" }),
+      document.getElementById("lieu-resultats")?.scrollIntoView({ behavior: "smooth", block: "start" }),
     );
   };
 
@@ -166,13 +212,22 @@ export default function PlanWizard({ businesses }: { businesses: Business[] }) {
       <p className="mt-1 text-[13px] text-muted leading-snug">
         {mode === "plan"
           ? "Dis-nous ce que tu veux faire : on te propose une activité et un resto proche, avec le temps total estimé."
-          : "Juste un resto : dis-nous pour qui, où et quelle cuisine, on te fait une liste."}
+          : "Un resto, un bar, une excursion ou une visite : choisis la thématique et tes critères, on te fait une liste."}
       </p>
 
-      {/* Deux façons d'utiliser Mon plan : un programme à étapes (activité + resto,
-          voire plus), ou directement une liste de restaurants sans passer par une
-          activité — pour qui sait déjà qu'il veut « juste manger quelque part ». */}
+      {/* Deux façons d'utiliser Mon plan : directement une liste de lieux pour une
+          thématique (le besoin le plus courant, d'où la 1re place), ou un
+          programme à étapes (activité + resto, voire plus). */}
       <div className="mt-4 inline-flex rounded-pill border border-border bg-surface p-1">
+        <button
+          onClick={() => setMode("lieu")}
+          aria-pressed={mode === "lieu"}
+          className={`rounded-pill px-3.5 py-1.5 text-[13px] font-bold transition-colors ${
+            mode === "lieu" ? "bg-primary text-white" : "text-ink"
+          }`}
+        >
+          Trouver un lieu
+        </button>
         <button
           onClick={() => setMode("plan")}
           aria-pressed={mode === "plan"}
@@ -182,96 +237,151 @@ export default function PlanWizard({ businesses }: { businesses: Business[] }) {
         >
           Plan complet
         </button>
-        <button
-          onClick={() => setMode("resto")}
-          aria-pressed={mode === "resto"}
-          className={`rounded-pill px-3.5 py-1.5 text-[13px] font-bold transition-colors ${
-            mode === "resto" ? "bg-primary text-white" : "text-ink"
-          }`}
-        >
-          Trouver un resto
-        </button>
       </div>
 
-      {mode === "resto" ? (
+      {mode === "lieu" ? (
         <>
+          <section className="mt-5">
+            <label htmlFor="lieu-texte" className="text-[14px] font-extrabold text-ink">
+              Tu cherches quoi ?
+            </label>
+            <input
+              id="lieu-texte"
+              type="search"
+              value={placeText}
+              onChange={(e) => setPlaceText(e.target.value)}
+              onKeyDown={(e) => {
+                if (e.key === "Enter") {
+                  e.preventDefault();
+                  submitPlace();
+                }
+              }}
+              placeholder="Ex. : Grand Baie, cocktails, dauphins…"
+              className="mt-2 w-full rounded-xl border border-border bg-surface px-3 py-2.5 text-[14px] text-ink placeholder:text-muted focus:border-primary focus:outline-none"
+            />
+          </section>
+
+          <section className="mt-5">
+            <h2 className="text-[14px] font-extrabold text-ink">Thématique</h2>
+            <div className="mt-2 grid grid-cols-4 gap-2">
+              {PLACE_THEMES.map((t) => (
+                <button
+                  key={t.key}
+                  onClick={() => chooseTheme(t.key)}
+                  aria-pressed={placeTheme === t.key}
+                  className={`flex flex-col items-center gap-1 rounded-xl border py-2.5 px-1 transition-colors active:scale-[.96] ${
+                    placeTheme === t.key ? "border-primary bg-primary text-white" : "border-border bg-surface text-ink"
+                  }`}
+                >
+                  <span className="text-[20px]" aria-hidden>{t.emoji}</span>
+                  <span className="text-[11.5px] font-bold leading-tight text-center">{t.label}</span>
+                </button>
+              ))}
+            </div>
+          </section>
+
+          {/* Thématique à plusieurs rubriques (Visite) : on laisse choisir
+              lesquelles — les sous-critères suivent la sélection. */}
+          {theme.rubriques.length > 1 && (
+            <section className="mt-5">
+              <h2 className="text-[14px] font-extrabold text-ink">Quel genre ?</h2>
+              <div className="mt-2 flex flex-wrap gap-2">
+                {theme.rubriques.map((r) => (
+                  <FilterChip key={r} active={placeRubriques.includes(r)} onClick={() => toggleRubrique(r)}>
+                    {RUBRIQUE_LABEL[r]?.emoji} {RUBRIQUE_LABEL[r]?.label ?? r}
+                  </FilterChip>
+                ))}
+              </div>
+            </section>
+          )}
+
+          {/* Sous-critères : les filtres déjà définis pour les rubriques de la
+              thématique (cuisine, ambiance, type de bar, île…). */}
+          {placeGroups.map((g) => (
+            <section key={g.key} className="mt-5">
+              <h2 className="text-[14px] font-extrabold text-ink">{g.label}</h2>
+              <div className="mt-2 flex flex-wrap gap-2">
+                {g.options.map((o) => (
+                  <FilterChip
+                    key={o.key}
+                    active={(placeOptions[g.key] ?? []).includes(o.key)}
+                    onClick={() => toggleOption(g.key, o.key)}
+                  >
+                    {o.emoji} {o.label}
+                  </FilterChip>
+                ))}
+              </div>
+            </section>
+          ))}
+
+          {placeTheme === "resto" && (
+            <Question
+              title="Cadre ?"
+              options={PLAN_SETTINGS.map((o) => ({ key: o.key, label: o.label }))}
+              value={placeSetting}
+              onChange={setPlaceSetting}
+            />
+          )}
           <Question title="Vous êtes ?" options={PLAN_WHO.map((o) => ({ key: o.key, label: o.label }))} value={who} onChange={setWho} />
           <Question title="Où ?" options={PLAN_ZONES.map((o) => ({ key: o.key, label: o.label }))} value={zone} onChange={setZone} />
           <Question
-            title="Quelle cuisine ?"
-            options={RESTO_MEALS.map((o) => ({ key: o.key, label: o.label }))}
-            value={meal === "aucun" ? "tous" : meal}
-            onChange={setMeal}
-          />
-          <Question
-            title="Cadre ?"
-            options={PLAN_SETTINGS.map((o) => ({ key: o.key, label: o.label }))}
-            value={restoSetting}
-            onChange={setRestoSetting}
-          />
-          <Question
             title="Budget ?"
             options={PLAN_BUDGETS.map((o) => ({ key: o.key, label: o.label }))}
-            value={restoBudget}
-            onChange={setRestoBudget}
+            value={placeBudget}
+            onChange={setPlaceBudget}
           />
           <section className="mt-5">
             <h2 className="text-[14px] font-extrabold text-ink">Autre chose ?</h2>
             <div className="mt-2 flex flex-wrap gap-2">
-              <FilterChip active={restoView} onClick={() => setRestoView((v) => !v)}>
-                🌅 Belle vue
-              </FilterChip>
-              <FilterChip active={restoTerrace} onClick={() => setRestoTerrace((v) => !v)}>
-                🌿 Terrasse
-              </FilterChip>
-              <FilterChip active={restoFineDining} onClick={() => setRestoFineDining((v) => !v)}>
-                🏆 Table d&apos;exception
-              </FilterChip>
-              <FilterChip active={restoLocalFavorite} onClick={() => setRestoLocalFavorite((v) => !v)}>
-                👥 Fréquenté par les locaux
-              </FilterChip>
-              <FilterChip active={restoFeatured} onClick={() => setRestoFeatured((v) => !v)}>
+              {(placeTheme === "resto" || placeTheme === "bar") && (
+                <FilterChip active={placeTerrace} onClick={() => setPlaceTerrace((v) => !v)}>
+                  🌿 Terrasse
+                </FilterChip>
+              )}
+              <FilterChip active={placeFeatured} onClick={() => setPlaceFeatured((v) => !v)}>
                 ⭐ Coup de cœur Koté Moris
               </FilterChip>
-              <FilterChip active={restoOpenNow} onClick={() => setRestoOpenNow((v) => !v)}>
+              <FilterChip active={placeOpenNow} onClick={() => setPlaceOpenNow((v) => !v)}>
                 🕐 Ouvert maintenant
               </FilterChip>
             </div>
           </section>
 
           <button
-            onClick={submitResto}
+            onClick={submitPlace}
             className="mt-7 w-full rounded-pill bg-primary px-4 py-3 text-[15px] font-extrabold text-white shadow-card active:scale-[.98] transition-transform"
           >
-            Voir les restos
+            Voir les adresses
           </button>
 
-          <div id="resto-resultats" className="mt-8 scroll-mt-4">
-            {restoSubmitted && restoResults.length === 0 && (
+          <div id="lieu-resultats" className="mt-8 scroll-mt-4">
+            {placeSubmitted && placeResults.length === 0 && (
               <div className="rounded-2xl border border-border bg-surface p-4 text-[13px] text-ink">
-                <p className="font-bold">Aucun restaurant ne correspond à ces critères.</p>
-                <p className="mt-1 text-muted">Essaie « Peu importe » pour un ou plusieurs critères (zone, cuisine, cadre, budget).</p>
+                <p className="font-bold">Aucune adresse ne correspond à ces critères.</p>
+                <p className="mt-1 text-muted">
+                  Essaie avec moins de mots dans le texte, moins de critères cochés, ou « Peu importe » pour la zone ou le budget.
+                </p>
               </div>
             )}
 
-            {restoVisible.length > 0 && (
+            {placeVisible.length > 0 && (
               <p className="mb-3 text-[12px] font-semibold text-muted">
-                {restoResults.length} restaurant{restoResults.length > 1 ? "s" : ""}
+                {placeResults.length} adresse{placeResults.length > 1 ? "s" : ""}
               </p>
             )}
 
             <div className="space-y-3">
-              {restoVisible.map((b) => (
+              {placeVisible.map((b) => (
                 <BusinessCard key={b.id} business={b} active={false} onSelect={() => setOpenBusiness(b)} onHover={() => {}} />
               ))}
             </div>
 
-            {restoHasMore && (
+            {placeHasMore && (
               <button
-                onClick={() => setRestoPage((p) => p + 1)}
+                onClick={() => setPlacePage((p) => p + 1)}
                 className="mt-3 w-full rounded-pill border border-primary px-4 py-2.5 text-[14px] font-bold text-primary active:scale-[.98] transition-transform"
               >
-                Voir d&apos;autres restos
+                Voir plus d&apos;adresses
               </button>
             )}
           </div>
