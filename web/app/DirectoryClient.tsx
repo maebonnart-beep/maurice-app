@@ -2158,7 +2158,7 @@ export default function DirectoryClient({
                         <span className="min-w-0 flex-1">
                           <span className="block text-[14px] font-extrabold leading-tight">Trouver un lieu</span>
                           <span className="block text-[11.5px] text-muted leading-snug mt-0.5">
-                            Resto, bar, excursion ou visite : ta thématique, tes critères, une liste d'adresses
+                            Resto, bar, excursion ou visite : ta thématique, tes critères, une liste d&apos;adresses
                           </span>
                         </span>
                         <span className="shrink-0 text-[18px] font-bold text-primary-deep" aria-hidden>›</span>
