@@ -11,7 +11,7 @@ import { ArrowLeft } from "@phosphor-icons/react/dist/ssr";
  *  pas de recherche ici, ces pages n'en ont pas. */
 export function MarketplaceHeader() {
   return (
-    <header className="relative z-30 overflow-hidden shadow-sm">
+    <header className="relative z-30 overflow-hidden bg-bg">
       <Link
         href="/"
         aria-label="Retour à l'accueil"

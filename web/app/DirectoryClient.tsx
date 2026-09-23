@@ -2035,20 +2035,11 @@ export default function DirectoryClient({
           reste blanc et compact pour bien séparer le contenu qui défile
           en dessous. */}
       <header
-        className={`relative z-30 overflow-hidden ${
-          showHome && homeMode === "menu"
-            ? "bg-bg border-b border-transparent"
-            : headerMobileTiles || homeMode === "favoris"
-              ? "bg-surface border-b border-border shadow-sm"
-              : "border-b border-transparent shadow-sm"
+        // Hors accueil : ni ombre ni bordure, le bandeau se fond dans le
+        // fond de page (cf. fondu en bas de BannerBackdrop).
+        className={`relative z-30 overflow-hidden bg-bg ${
+          showHome && homeMode === "menu" ? "border-b border-transparent" : ""
         }`}
-        style={
-          !showHome || homeMode !== "menu"
-            ? headerMobileTiles || homeMode === "favoris"
-              ? undefined
-              : { background: "linear-gradient(135deg, #0a4d53 0%, #0f7a80 45%, #128a8f 100%)" }
-            : undefined
-        }
       >
         {showHome && homeMode === "menu" ? (
           <div className="relative max-w-[820px] lg:max-w-[1100px] mx-auto">
