@@ -176,6 +176,7 @@ export default function Map({
   // is being reused » causée par le double-montage de React StrictMode en dev
   // (react-leaflet crée la carte dans un ref callback pendant le rendu).
   const [ready, setReady] = useState(false);
+  // eslint-disable-next-line react-hooks/set-state-in-effect -- rendu différé voulu (cf. ci-dessus), pas dérivable
   useEffect(() => setReady(true), []);
   // Clé stable propre à cette instance : garantit un conteneur DOM neuf si la
   // carte est un jour réellement démontée/remontée.
