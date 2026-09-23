@@ -514,7 +514,7 @@ export default function DirectoryClient({
   // Un seul espace de recherche sur l'accueil, 3 onglets (mot-clé / expérience
   // / catégorie) qui changent le contenu affiché dans la même carte, plutôt
   // que plusieurs blocs séparés côte à côte.
-  const [searchTab, setSearchTab] = useState<"mot" | "experience" | "categorie">("mot");
+  const [searchTab, setSearchTab] = useState<"mot" | "experience">("mot");
   // Accueil « Par catégorie » → rubrique choisie qui a des sous-rubriques
   // (cf. FILTER_GROUPS[].browsable) : page intermédiaire avant les résultats.
   const [homeSubRubrique, setHomeSubRubrique] = useState<string | null>(null);
@@ -2102,8 +2102,19 @@ export default function DirectoryClient({
                     ).map((t) => (
                       <button
                         key={t.key}
-                        onClick={() => setSearchTab(t.key)}
-                        aria-pressed={searchTab === t.key}
+                        onClick={() => {
+                          // « Catégorie » ouvre directement l’écran de toutes
+                          // les catégories plutôt qu’une mini-grille dans la carte.
+                          if (t.key === "categorie") {
+                            setHomeMode("categories");
+                            setHomeCategory(null);
+                            setHomeSubRubrique(null);
+                            window.scrollTo({ top: 0 });
+                            return;
+                          }
+                          setSearchTab(t.key);
+                        }}
+                        aria-pressed={t.key !== "categorie" && searchTab === t.key}
                         className={`flex flex-col items-center gap-0.5 rounded-pill py-2 text-[12px] font-bold transition-colors ${
                           searchTab === t.key ? "bg-primary text-white shadow-sm" : "text-ink/70"
                         }`}
@@ -2146,21 +2157,6 @@ export default function DirectoryClient({
                     </Link>
                   )}
 
-                  {searchTab === "categorie" && (
-                    <div className="mt-4 grid grid-cols-4 gap-2">
-                      {CATEGORIES.map((c) => (
-                        <button
-                          key={c.key}
-                          onClick={() => { setHomeMode("categories"); setHomeCategory(c.key); }}
-                          className="flex flex-col items-center gap-1 rounded-xl py-2.5 px-1 active:scale-[.96] transition-transform"
-                          style={{ background: "color-mix(in srgb, var(--primary) 8%, var(--surface-2))" }}
-                        >
-                          <span className="text-[20px]" aria-hidden>{c.emoji}</span>
-                          <span className="text-[10px] font-bold text-ink leading-tight text-center">{c.label}</span>
-                        </button>
-                      ))}
-                    </div>
-                  )}
                 </div>
               </div>
               {/* Joint visuel : fondu au raz du bas de l'illustration vers le
