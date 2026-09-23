@@ -212,7 +212,7 @@ export default function PlanWizard({
       <p className="mt-1 text-[13px] text-muted leading-snug">
         {mode === "plan"
           ? "Dis-nous ce que tu veux faire : on te propose une activité et un resto proche, avec le temps total estimé."
-          : "Un resto, un bar, une plage, une excursion, une visite, du sport ou du shopping : choisis la thématique et tes critères, on te fait une liste."}
+          : "Un resto, un bar, une plage, une excursion, une visite, du sport, du bien-être ou du shopping : choisis la thématique et tes critères, on te fait une liste."}
       </p>
 
       {/* Deux façons d'utiliser Mon plan : directement une liste de lieux pour une

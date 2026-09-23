@@ -314,7 +314,7 @@ function hasTerrace(b: Business): boolean {
  * FILTER_GROUPS dans data/categories.ts) — rien de nouveau à renseigner côté
  * fiches.
  */
-export type PlaceTheme = "resto" | "bar" | "plage" | "excursion" | "visite" | "sport" | "shopping";
+export type PlaceTheme = "resto" | "bar" | "plage" | "excursion" | "visite" | "sport" | "bien-etre" | "shopping";
 
 export const PLACE_THEMES: {
   key: PlaceTheme;
@@ -337,6 +337,13 @@ export const PLACE_THEMES: {
     label: "Sport",
     emoji: "🏄",
     rubriques: ["salles-sport-fitness", "tennis-padel", "golf", "randonnee-trail", "sports-nautiques", "equitation-autres-sports"],
+  },
+  {
+    key: "bien-etre",
+    label: "Bien-être",
+    emoji: "🧖",
+    // Sans le médical (médecins, pharmacies, cliniques) ni les vétérinaires : pas des lieux où l'on « va se faire du bien ».
+    rubriques: ["spa-instituts-massages", "coiffeurs-barbiers-beaute", "yoga-bien-etre"],
   },
   {
     key: "shopping",
