@@ -314,7 +314,7 @@ function hasTerrace(b: Business): boolean {
  * FILTER_GROUPS dans data/categories.ts) — rien de nouveau à renseigner côté
  * fiches.
  */
-export type PlaceTheme = "resto" | "bar" | "plage" | "excursion" | "visite" | "sport" | "bien-etre" | "shopping";
+export type PlaceTheme = "resto" | "bar" | "plage" | "excursion" | "visite" | "sport" | "bien-etre" | "enfants" | "shopping";
 
 export const PLACE_THEMES: {
   key: PlaceTheme;
@@ -326,6 +326,8 @@ export const PLACE_THEMES: {
   requiredFilter?: string;
   /** Groupes de filtres rendus inutiles par requiredFilter : pas proposés en sous-critères. */
   hiddenGroups?: string[];
+  /** Rubriques proposées dans « Quel genre ? » quand elles diffèrent de `rubriques` (ex. Enfants : pas l'étiquette « kids-friendly »). */
+  genres?: string[];
 }[] = [
   { key: "resto", label: "Resto", emoji: "🍽️", rubriques: ["restaurants"] },
   { key: "bar", label: "Bar & café", emoji: "🍹", rubriques: ["cafes-bars-glaciers"] },
@@ -344,6 +346,16 @@ export const PLACE_THEMES: {
     emoji: "🧖",
     // Sans le médical (médecins, pharmacies, cliniques) ni les vétérinaires : pas des lieux où l'on « va se faire du bien ».
     rubriques: ["spa-instituts-massages", "coiffeurs-barbiers-beaute", "yoga-bien-etre"],
+  },
+  {
+    key: "enfants",
+    label: "Enfants",
+    emoji: "🧒",
+    // Rubriques dédiées + toutes les fiches déjà étiquetées « kids-friendly »
+    // (parcs, excursions, randos, musées, plages…) ; le choix de genre ne
+    // porte que sur les rubriques dédiées.
+    rubriques: ["parcs-activites-famille", "activites-enfants-famille", "centres-loisirs-animations", "kids-friendly"],
+    genres: ["parcs-activites-famille", "activites-enfants-famille", "centres-loisirs-animations"],
   },
   {
     key: "shopping",
