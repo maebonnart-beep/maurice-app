@@ -1,7 +1,7 @@
 /**
- * Logo KOTÉ MORIS — emblème poulpe détouré (image fournie par la cliente) + wordmark
- * « Koté / MORIS » en serif, empilé et centré sous le poulpe. Le poulpe reprend les
- * couleurs de la marque ; sur le bandeau teal, le wordmark passe en clair + accent.
+ * Logo KOTÉ MORIS — variante compacte (marque carrée K + fronde + fleur, image
+ * fournie par la cliente) ; variantes `light` : bandeaux illustrés dédiés à
+ * l'accueil et aux écrans secondaires (poulpe + décor).
  */
 export function Logo({
   size = 96,
@@ -39,51 +39,36 @@ export function Logo({
         </div>
       );
     }
-    // Illustration pleine (poulpe + paysage + logo + recherche bakée dans le
-    // décor), affichée dans son intégralité, sans recadrage (image fournie
-    // par la cliente le 2026-09-18, 941×1672). La bulle de recherche réelle
-    // (cf. SearchHeroOverlay dans DirectoryClient) est superposée dessus par
-    // coordonnées en % calées sur la pastille dessinée dans l'image.
+    // Illustration pleine (tortue + gecko + paysage + logo, tentacules en
+    // filigrane à droite), affichée dans son intégralité, sans recadrage
+    // (image fournie par la cliente le 2026-09-22, 941×1670 — quasi identique
+    // au ratio de la précédente v9, donc le calage de l'espace de recherche
+    // par-dessus reste valable). La carte de recherche (cf. DirectoryClient)
+    // est superposée dessus par coordonnées en %.
     return (
-      <div className="relative w-full overflow-hidden" style={{ aspectRatio: "941 / 1672" }}>
+      <div className="relative w-full overflow-hidden" style={{ aspectRatio: "941 / 1670" }}>
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="/bandeau-kotemoris-accueil-v9.webp"
+          src="/bandeau-kotemoris-accueil-v10.png"
           alt="Koté Moris — les adresses de l'île Maurice réunies sur une seule application mobile"
           className="block w-full h-full object-cover"
+          // Remonte le logo central : image décalée vers le haut (le bas,
+          // dégradé vers le fond de page, absorbe le léger vide créé).
+          style={{ transform: "translateY(-4%)" }}
         />
       </div>
     );
   }
   return (
-    // Lockup horizontal : poulpe (petit) à gauche + bloc texte à droite. Compact
-    // en hauteur pour un bandeau fin, tout en gardant un wordmark généreux.
-    <span className="inline-flex items-center gap-2.5 text-left">
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
-        src="/logo-octopus.png"
-        alt="Koté Moris"
-        className="shrink-0 object-contain drop-shadow-sm"
-        style={{ height: size, width: size }}
-      />
-      <span className="flex flex-col items-start leading-none">
-        {/* Ligne 1 : « Koté » (serif) + « MORIS » (turquoise, petites capitales). */}
-        <span className="inline-flex items-baseline gap-2">
-          <span className={`font-serif font-semibold text-[34px] tracking-tight ${light ? "text-on-band" : "text-ink"}`}>
-            Koté
-          </span>
-          <span className="text-sm font-semibold tracking-[0.32em]" style={{ color: "#45c4c0" }}>
-            MORIS
-          </span>
-        </span>
-        {/* Ligne 2 : baseline cursive « les adresses de Maurice ». */}
-        <span
-          className={`mt-1 whitespace-nowrap leading-none ${light ? "text-on-band" : "text-ink"}`}
-          style={{ fontFamily: "var(--font-script), cursive", fontSize: 27 }}
-        >
-          les adresses de Maurice
-        </span>
-      </span>
-    </span>
+    // Marque carrée K + fronde + fleur, texte "Koté MORIS" et baseline bakés dans
+    // l'image (même déclinaison que les icônes app/favicon) — pas de composition
+    // séparée poulpe + texte.
+    // eslint-disable-next-line @next/next/no-img-element
+    <img
+      src="/logo-octopus.png"
+      alt="Koté Moris — les adresses de Maurice"
+      className="shrink-0 object-contain rounded-2xl drop-shadow-sm"
+      style={{ height: size, width: size }}
+    />
   );
 }

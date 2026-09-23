@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { BannerBackdrop } from "./BannerBackdrop";
 import { ArrowLeft } from "@phosphor-icons/react/dist/ssr";
 
 /** Bandeau pour les pages "Seconde main"/"Mon compte" — routes Next.js
@@ -17,13 +18,7 @@ export function MarketplaceHeader() {
         className="relative flex items-center w-full px-4 lg:px-5 h-[88px] hover:opacity-90 active:scale-[.98] transition"
         style={{ background: "linear-gradient(135deg, #0a4d53 0%, #0f7a80 45%, #128a8f 100%)" }}
       >
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src="/bandeau-kotemoris-resultats.png"
-          alt="Koté Moris"
-          className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[433px] h-[88px] max-w-none object-cover"
-          style={{ filter: "brightness(1.14) saturate(1.05)" }}
-        />
+        <BannerBackdrop />
         <span className="relative shrink-0 w-9 h-9 -ml-1 rounded-full flex items-center justify-center text-white">
           <ArrowLeft size={19} weight="bold" aria-hidden />
         </span>

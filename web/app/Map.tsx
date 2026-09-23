@@ -261,14 +261,27 @@ export default function Map({
                     </a>
                   )}
                   {b.googleMapsUrl && (
-                    <a
-                      href={b.googleMapsUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1 px-2 py-1.5 rounded-lg text-xs font-semibold no-underline bg-[#eef4f3] text-[#0a6d67]"
-                    >
-                      <CONTACT_ICONS.NavigationArrow size={13} weight="fill" aria-hidden /> Itinéraire
-                    </a>
+                    <details className="w-full">
+                      <summary className="inline-flex items-center gap-1 px-2 py-1.5 rounded-lg text-xs font-semibold cursor-pointer list-none bg-[#eef4f3] text-[#0a6d67]">
+                        <CONTACT_ICONS.NavigationArrow size={13} weight="fill" aria-hidden /> Itinéraire
+                      </summary>
+                      <div className="flex gap-1.5 mt-1.5">
+                        {[
+                          { label: "Google Maps", href: b.googleMapsUrl },
+                          { label: "Waze", href: `https://waze.com/ul?ll=${b.lat},${b.lng}&navigate=yes` },
+                        ].map((o) => (
+                          <a
+                            key={o.label}
+                            href={o.href}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="px-2 py-1.5 rounded-lg text-xs font-semibold no-underline bg-[#eef4f3] text-[#0a6d67]"
+                          >
+                            {o.label}
+                          </a>
+                        ))}
+                      </div>
+                    </details>
                   )}
                 </div>
               </div>

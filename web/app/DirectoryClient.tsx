@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useDeferredValue, useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
+import { Fragment, useCallback, useDeferredValue, useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import dynamic from "next/dynamic";
 import Link from "next/link";
@@ -11,8 +11,10 @@ import type { FilterGroup } from "@/data/categories";
 import { SELECTIONS, SELECTION_GROUP_META } from "@/data/selections";
 import type { SelectionGroup, SelectionIconKey } from "@/data/selections";
 import { fuzzyMatchTokens, tokenize, normalizeText } from "@/lib/fuzzyMatch";
+import { SEARCH_SYNONYMS } from "@/lib/searchSynonyms";
 import { isPastEvent, compareByEventDate, eventColorFor, eventTextColor } from "@/lib/events";
 import { matchesOpenNow } from "@/lib/openHours";
+import { haversineKm } from "@/lib/geo";
 
 const SELECTION_ICONS: Record<SelectionIconKey, Icon> = {
   CloudRain,
@@ -51,7 +53,6 @@ import { useFavoriteSelections } from "@/lib/favoriteSelections";
 import { usePreferences } from "@/lib/preferences";
 import { usePreferencesSync } from "@/lib/preferencesSync";
 import { useFavoritesSync } from "@/lib/favoritesSync";
-import { useSuggestions, findIntegratedMatch } from "@/lib/suggestions";
 import { useAccount } from "@/lib/marketplace/useAccount";
 import { createClient as createSupabaseBrowserClient } from "@/lib/supabase/client";
 import { PREMIUM_PRICE_LABEL, MAX_ACTIVE_LISTINGS, listingPhotoUrl } from "@/lib/marketplace/constants";
@@ -84,9 +85,10 @@ function wavyFrameBorder(color: string) {
 }
 import { FilterDropdown, type DropdownOption } from "@/components/ui/FilterDropdown";
 import { AddAddressForm } from "@/components/ui/AddAddressForm";
-import { iconForKey, mascotFor, prefIconFor, categoryTint, MapPin } from "@/lib/icons";
+import { iconForKey, mascotFor, prefIconFor, MapPin } from "@/lib/icons";
 import { displayName, displayCity, shareTagline } from "@/lib/format";
 import { FavoriteButton } from "@/components/ui/FavoriteButton";
+import { BannerBackdrop } from "@/components/ui/BannerBackdrop";
 import {
   Heart,
   Flag,
@@ -127,6 +129,8 @@ import {
   Package,
   Crown,
   Clock,
+  CalendarBlank,
+  Lock,
 } from "@phosphor-icons/react";
 import type { Icon } from "@phosphor-icons/react";
 
@@ -163,6 +167,35 @@ const SIDEBAR_VISIBLE_RUBRIQUES = 5;
 const PREMIUM_CATEGORY_KEYS = new Set<CategoryKey>(["agenda"]);
 const PREMIUM_RUBRIQUE_KEYS = new Set<string>(["seconde-main-particuliers"]);
 
+// Accueil → grille « Explorer par catégorie » : seulement les rubriques du
+// quotidien les plus courantes (le reste, dont Événements/Famille & Travail,
+// reste accessible via « Voir toutes »). Événements et Seconde main ont leur
+// propre raccourci VIP juste en dessous (cf. PREMIUM_CATEGORY_KEYS).
+const COMMON_HOME_CATEGORIES = CATEGORIES.filter((c) =>
+  ["manger-boire", "sortir-decouvrir", "faire-du-sport", "sante-bien-etre", "acheter-equiper", "vie-pratique"].includes(c.key)
+);
+
+// Écran « Explorer par catégorie » : visuel unique (planche fournie par la
+// cliente), recadré pour ne garder que les 9 lignes catégories — sans
+// l'encart de titre du haut ni le bandeau de fin, et resserré horizontalement
+// (moins de photo à droite) pour qu'une fois étiré en pleine largeur l'image
+// paraisse plus haute/grande (cf. public/explorer-categories-rows.webp,
+// recadrage de explorer-categories.webp : x=32-832, y=144-1437 sur les
+// 1024×1536 d'origine ; 832 garde les mascottes entières). Chaque ligne est
+// cliquable via une zone invisible positionnée en % sur l'image (verticales
+// uniquement, donc inchangées par le recadrage horizontal) — image 800×1293.
+const EXPLORER_CATEGORIES_HOTSPOTS: { key: CategoryKey | "seconde-main"; label: string; top: number; height: number; color: string; sub: string }[] = [
+  { key: "manger-boire", label: "Manger & boire", top: 0, height: 10.7, color: "#E8743B", sub: "Restaurants, cafés, bars" },
+  { key: "sortir-decouvrir", label: "Sortir & découvrir", top: 11.1, height: 10.7, color: "#D8497A", sub: "Plages, visites, excursions" },
+  { key: "faire-du-sport", label: "Faire du sport", top: 22.5, height: 10.7, color: "#0E9AA7", sub: "Activités sportives, clubs" },
+  { key: "sante-bien-etre", label: "Santé & bien-être", top: 33.9, height: 10.7, color: "#7B5CC4", sub: "Soins, bien-être, détente" },
+  { key: "acheter-equiper", label: "Acheter & s'équiper", top: 45.2, height: 10.7, color: "#1FA37A", sub: "Boutiques, créateurs, déco" },
+  { key: "vie-pratique", label: "Vie pratique", top: 56.6, height: 10.4, color: "#8C7B45", sub: "Services, dépannage, transports" },
+  { key: "famille-travail", label: "Famille & Travail", top: 67.8, height: 10.4, color: "#E5A020", sub: "Enfants, éducation, télétravail" },
+  { key: "agenda", label: "Événements", top: 78.7, height: 10.4, color: "#C2456B", sub: "Sorties, ateliers, bons plans" },
+  { key: "seconde-main", label: "Seconde main", top: 89.6, height: 10.4, color: "#2E9E8F", sub: "Acheter, vendre, donner" },
+];
+
 // Agenda : peu de fiches, donc pas de liste de rubriques comme les autres
 // catégories — 3 grandes vignettes photo (style « Listes de Koté Moris »)
 // qui mènent chacune vers le même sous-menu déroulant que sa rubrique
@@ -192,6 +225,14 @@ const RUBRIQUE_CATEGORY_MAP: Record<string, CategoryKey> = Object.fromEntries(
 // que l'emoji de rubrique pour distinguer les types d'événements sur l'accueil.
 const FILTER_OPTION_EMOJI: Record<string, string> = Object.fromEntries(
   FILTER_GROUPS.flatMap((g) => g.options.map((o) => [o.key, o.emoji]))
+);
+
+// Libellé par option de sous-filtre (ex. "opticiens" → "Opticiens", "pressing-blanchisserie" →
+// "Pressing & blanchisserie") : ces sous-filtres (spécialité, type de service…) ne sont pas des
+// rubriques, donc absents de RUBRIQUE_MAP — on les indexe quand même dans la recherche libre
+// (searchTokensById) pour que taper "opticien" ou "pressing" trouve les bonnes fiches.
+const FILTER_OPTION_LABEL: Record<string, string> = Object.fromEntries(
+  FILTER_GROUPS.flatMap((g) => g.options.map((o) => [o.key, o.label]))
 );
 
 
@@ -227,17 +268,6 @@ function shuffled<T>(arr: T[]): T[] {
   return a;
 }
 
-// Distance à vol d'oiseau (km) entre deux points GPS — pour « Autour de moi ».
-function haversineKm(aLat: number, aLng: number, bLat: number, bLng: number): number {
-  const R = 6371;
-  const dLat = ((bLat - aLat) * Math.PI) / 180;
-  const dLng = ((bLng - aLng) * Math.PI) / 180;
-  const s =
-    Math.sin(dLat / 2) ** 2 +
-    Math.cos((aLat * Math.PI) / 180) * Math.cos((bLat * Math.PI) / 180) * Math.sin(dLng / 2) ** 2;
-  return 2 * R * Math.asin(Math.sqrt(s));
-}
-
 const Map = dynamic(() => import("./Map"), {
   ssr: false,
   loading: () => (
@@ -263,7 +293,6 @@ export default function DirectoryClient({
   const { favoriteSelectionIds, isFavoriteSelection, toggleFavoriteSelection, mergeFavoriteSelections } =
     useFavoriteSelections();
   const { preferences, toggleInterest, setHasKids, mergePreferences } = usePreferences();
-  const { suggestions } = useSuggestions();
   const account = useAccount();
   const [loggingOut, setLoggingOut] = useState(false);
   async function handleLogout() {
@@ -281,12 +310,6 @@ export default function DirectoryClient({
       : "/avatar-decouverte.png";
   useFavoritesSync(account.loggedIn, mergeStatuses, mergeFavoriteSelections);
   usePreferencesSync(account.loggedIn, mergePreferences);
-  // Profil → Mes suggestions : pour chaque adresse proposée, détection best-effort
-  // (nom + catégorie) d'une fiche correspondante déjà intégrée à l'annuaire.
-  const suggestionsWithStatus = useMemo(
-    () => suggestions.map((s) => ({ ...s, integratedBusiness: findIntegratedMatch(s, businesses) })),
-    [suggestions, businesses]
-  );
   const favoriteBusinesses = useMemo(
     () => businesses.filter((b) => favoriteStatuses.get(b.id) === "favori"),
     [businesses, favoriteStatuses]
@@ -488,6 +511,10 @@ export default function DirectoryClient({
   // Accueil « Par catégorie » : catégorie choisie, dont on affiche les rubriques
   // (un seul niveau de profondeur). null = grille des 8 catégories.
   const [homeCategory, setHomeCategory] = useState<CategoryKey | null>(null);
+  // Un seul espace de recherche sur l'accueil, 3 onglets (mot-clé / expérience
+  // / catégorie) qui changent le contenu affiché dans la même carte, plutôt
+  // que plusieurs blocs séparés côte à côte.
+  const [searchTab, setSearchTab] = useState<"mot" | "experience">("mot");
   // Accueil « Par catégorie » → rubrique choisie qui a des sous-rubriques
   // (cf. FILTER_GROUPS[].browsable) : page intermédiaire avant les résultats.
   const [homeSubRubrique, setHomeSubRubrique] = useState<string | null>(null);
@@ -688,18 +715,22 @@ export default function DirectoryClient({
   // le geste utilisateur et retarderait le clavier mobile). N'active PAS
   // `browseAll` : tant qu'aucun mot n'est tapé, la liste complète (~2000
   // fiches) n'est pas montée — seule la recherche déclenche son affichage.
+  // Raccourcis de l'accueil (grille superposée sur l'illustration) : pour
+  // l'instant, amènent simplement vers les encarts dédiés déjà présents plus
+  // bas sur cette même page (pas de nouvelle navigation/filtre).
+  function scrollToHomeSection(id: string) {
+    document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+
+  // Onglet « Recherche » (bandeau du bas), pastille du bandeau d'accueil et
+  // sidebar desktop : ouvrent directement le champ de recherche (plus
+  // l'ancien écran intermédiaire « Comment veux-tu chercher ? », qui ajoutait
+  // un tap avant de pouvoir taper — la recherche par catégorie reste
+  // accessible via les tuiles Explorer de l'accueil).
   function focusSearch() {
     window.scrollTo({ top: 0, behavior: "smooth" });
     setSearchOpen(true);
     setFocusSearchOnMount(true);
-  }
-
-  // Onglet « Recherche » (bandeau du bas) et bouton d'accueil « Trouve ta
-  // prochaine adresse » : au lieu d'ouvrir directement le champ de recherche,
-  // proposent d'abord le choix entre chercher par mot-clé (focusSearch) ou
-  // parcourir par catégorie (écran déjà existant, homeMode "categories").
-  function openSearchChoice() {
-    leaveResults("recherche");
   }
 
   function selectCategory(key: string) {
@@ -997,11 +1028,13 @@ export default function DirectoryClient({
   }, [businesses, account.isPremium]);
 
   // Accueil → « Adresses kids friendly » : même logique que les coups de cœur,
-  // filtrée sur le thème kids-friendly.
+  // filtrée sur le thème kids-friendly. Affichée uniquement si l'utilisateur a
+  // coché « J'ai des enfants » dans ses préférences.
   const kidsFriendly = useMemo(() => {
+    if (!preferences.hasKids) return [];
     const all = businesses.filter((b) => (b.themes || []).includes("kids-friendly") && b.photoUrl);
     return shuffleReady ? shuffled(all) : all;
-  }, [businesses, shuffleReady]);
+  }, [businesses, shuffleReady, preferences.hasKids]);
 
   // Accueil → bandeau « Seconde main » : annonces réelles avec au moins une photo.
   const previewListingPhotos = useMemo(
@@ -1085,12 +1118,29 @@ export default function DirectoryClient({
   // seulement quand `businesses` change, pas à chaque frappe) : évite de
   // renormaliser/redécouper nom + adresse + catégorie + rubriques de
   // chaque fiche à chaque caractère tapé, qui était la vraie source de
-  // lenteur pendant la saisie.
+  // lenteur pendant la saisie. Inclut aussi les libellés de sous-filtres
+  // (FILTER_OPTION_LABEL — « Opticiens », « Pressing & blanchisserie »…) et
+  // les synonymes métier sans équivalent dans la classification
+  // (SEARCH_SYNONYMS — « quincaillerie », « plombier »…), pour que la
+  // recherche libre les retrouve même sans naviguer par rubrique.
   const searchTokensById = useMemo(() => {
     const m: Record<string, string[]> = {};
     businesses.forEach((b) => {
-      const rubriqueLabels = (b.themes || []).map((t) => RUBRIQUE_MAP[t]?.label || "").join(" ");
-      m[b.id] = tokenize(b.name + " " + b.address + " " + CATEGORY_MAP[b.category].label + " " + rubriqueLabels);
+      const themes = b.themes || [];
+      const filters = b.filters || [];
+      const rubriqueLabels = themes.map((t) => RUBRIQUE_MAP[t]?.label || "").join(" ");
+      const filterLabels = filters.map((f) => FILTER_OPTION_LABEL[f] || "").join(" ");
+      const synonymWords = SEARCH_SYNONYMS.filter(
+        (s) =>
+          s.rubriques?.some((r) => themes.includes(r)) ||
+          s.filters?.some((f) => filters.includes(f)) ||
+          s.businessIds?.includes(b.id)
+      )
+        .flatMap((s) => s.words)
+        .join(" ");
+      m[b.id] = tokenize(
+        b.name + " " + b.address + " " + CATEGORY_MAP[b.category].label + " " + rubriqueLabels + " " + filterLabels + " " + synonymWords
+      );
     });
     return m;
   }, [businesses]);
@@ -1511,7 +1561,7 @@ export default function DirectoryClient({
 
   const desktopNavItems: { key: typeof activeTab; label: string; icon: Icon; onClick: () => void }[] = [
     { key: "accueil", label: "Accueil", icon: House, onClick: goHome },
-    { key: "recherche", label: "Recherche", icon: MagnifyingGlass, onClick: openSearchChoice },
+    { key: "recherche", label: "Recherche", icon: MagnifyingGlass, onClick: focusSearch },
     {
       key: "autre",
       label: "Autour de moi",
@@ -1795,7 +1845,7 @@ export default function DirectoryClient({
           <span className="text-[10.5px] font-semibold leading-none">Accueil</span>
         </button>
         <button
-          onClick={openSearchChoice}
+          onClick={focusSearch}
           aria-label="Recherche"
           aria-pressed={activeTab === "recherche"}
           className={`flex flex-col items-center gap-0.5 py-1 rounded-xl transition-colors active:scale-[.97] ${
@@ -2009,117 +2059,140 @@ export default function DirectoryClient({
                 de l'écran d'accueil arrive en dessous, au scroll. */}
             <div className="relative w-full">
               <Logo light tags />
-              <button
-                onClick={openSearchChoice}
-                aria-label="Rechercher une activité, un lieu, un nom"
-                className="absolute flex items-center gap-2 rounded-pill bg-white px-4 text-[12px] sm:text-[14px] active:opacity-90 transition-opacity shadow-sm"
-                style={{ left: "9.35%", right: "8.08%", top: "38.46%", height: "5.68%" }}
+              {/* Un seul espace de recherche, superposé sur l'illustration et
+                  centré verticalement au niveau des bateaux (~55% de la
+                  hauteur de l'image, cf. bandeau-kotemoris-accueil-v9.webp) —
+                  translateY(-50%) le centre lui-même sur ce repère, quel que
+                  soit son contenu (l'onglet Catégorie est plus haut que
+                  Mot-clé). Les vignettes Événements/Seconde main ont été
+                  déplacées dans le corps de page (cf. plus bas). */}
+              <div
+                className="absolute z-20 overflow-hidden p-5"
+                style={{
+                  left: "6%",
+                  right: "6%",
+                  top: "60%",
+                  transform: "translateY(-50%)",
+                  // Translucide + flou : le lagon/les bateaux restent visibles derrière,
+                  // tout en gardant le texte lisible par-dessus (cf. pastille d'origine,
+                  // même principe de verre dépoli).
+                  background: "color-mix(in srgb, var(--surface) 45%, transparent)",
+                  backdropFilter: "blur(14px)",
+                  WebkitBackdropFilter: "blur(14px)",
+                  border: "1px solid rgba(255,255,255,.5)",
+                  borderRadius: "2rem",
+                  boxShadow: "0 18px 40px -12px rgba(6,50,56,.45), 0 2px 8px rgba(6,50,56,.12)",
+                }}
               >
-                <MagnifyingGlass size={24} weight="bold" className="shrink-0" style={{ color: "#0d4a47" }} aria-hidden />
-                <span className="truncate text-ink/50 font-medium">
-                  Rechercher une activité, un lieu, un nom…
-                </span>
-              </button>
-              {/* Par catégorie calé juste sous l'encart de recherche, en
-                  superposition sur l'illustration (même logique que la
-                  pastille de recherche) — le fond d'écran reste visible tout
-                  autour de cette carte. */}
-              <div className="absolute" style={{ left: "9.35%", right: "8.08%", top: "46.5%" }}>
-                <div className="flex items-center justify-between mb-2 px-3 py-1.5 rounded-full" style={{ background: "color-mix(in srgb, var(--surface) 78%, transparent)" }}>
-                  <h2 className="text-[16px] font-bold text-ink">
-                    Par catégorie
-                  </h2>
-                  <button
-                    onClick={() => setHomeMode("categories")}
-                    className="text-[13px] font-semibold text-primary-deep active:scale-[.98]"
-                  >
-                    Tout voir ›
-                  </button>
-                </div>
-                <div className="rounded-[32px] p-1.5 shadow-sm">
-                <div
-                  className="rounded-[24px] border border-white/30 px-3 py-3 shadow-sm backdrop-blur-sm"
-                  style={{ background: "color-mix(in srgb, var(--surface) 30%, transparent)" }}
-                >
-                <div className="flex items-start gap-3 overflow-x-auto pt-2 pb-2 -mx-3 px-3 text-left [scrollbar-width:none] [&::-webkit-scrollbar]:hidden lg:flex-wrap lg:justify-center lg:overflow-visible lg:gap-x-8">
-                  {homeTopCategories.map(({ category: c }) => {
-                    const mascot = mascotFor(c.key);
-                    const CIcon = iconForKey(c.key);
-                    return (
+                {/* Poulpe mascotte en filigrane, discret, dans un coin — juste la marque, ne gêne pas la lecture. */}
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/poulpe-filigrane.webp"
+                  alt=""
+                  aria-hidden
+                  className="pointer-events-none absolute -right-8 -bottom-10 w-40 h-40 object-contain opacity-[0.07]"
+                />
+                <div className="relative">
+                  <p className="text-center text-[15px] font-extrabold text-ink mb-3">Comment veux-tu chercher ?</p>
+                  <div className="grid grid-cols-3 gap-1 rounded-pill p-1" style={{ background: "color-mix(in srgb, var(--primary) 8%, var(--surface-2))" }}>
+                    {(
+                      [
+                        { key: "mot", label: "Mot-clé", icon: MagnifyingGlass },
+                        { key: "experience", label: "Expérience", icon: Sparkle },
+                        { key: "categorie", label: "Catégorie", icon: Compass },
+                      ] as const
+                    ).map((t) => (
                       <button
-                        key={c.key}
-                        onClick={() => { setHomeMode("categories"); setHomeCategory(c.key); }}
-                        className="flex flex-col items-center gap-1.5 w-[76px] shrink-0 active:scale-[.96] transition-transform"
-                      >
-                        <div className="h-[82px] flex items-end justify-center">
-                          <span
-                            className="relative w-[68px] h-[82px] shadow-sm flex items-center justify-center text-xl overflow-visible"
-                            style={{
-                              borderRadius: "50%",
-                              background: `linear-gradient(160deg, color-mix(in srgb, ${c.color} 45%, white) 0%, ${categoryTint(c.key)} 100%)`,
-                              border: `2.5px solid color-mix(in srgb, ${c.color} 55%, transparent)`,
-                            }}
-                          >
-                            {mascot ? (
-                              // eslint-disable-next-line @next/next/no-img-element
-                              <img
-                                src={mascot}
-                                alt=""
-                                className="pointer-events-none absolute -top-2 left-1/2 -translate-x-1/2 w-[115%] h-[115%] object-contain drop-shadow-sm"
-                              />
-                            ) : (
-                              c.emoji
-                            )}
-                            {CIcon && (
-                              <span
-                                className="absolute -bottom-1.5 left-1/2 -translate-x-1/2 w-6 h-6 rounded-full flex items-center justify-center shadow-sm"
-                                style={{
-                                  background: "var(--surface)",
-                                  border: `1.5px solid color-mix(in srgb, ${c.color} 55%, transparent)`,
-                                  color: `var(--cat-${c.key}-text)`,
-                                }}
-                              >
-                                <CIcon size={12} weight="bold" aria-hidden />
-                              </span>
-                            )}
-                          </span>
-                        </div>
-                        <span className="text-[11px] font-bold text-ink text-center leading-tight mt-0.5">
-                          {c.label}
-                        </span>
-                      </button>
-                    );
-                  })}
-
-                  <span
-                    className="w-px h-[82px] shrink-0"
-                    style={{ borderLeft: "1px dashed var(--border)" }}
-                    aria-hidden
-                  />
-                  <button
-                    onClick={() => setHomeMode("categories")}
-                    className="flex flex-col items-center gap-1 w-[62px] shrink-0 active:scale-[.96] transition-transform"
-                  >
-                    <div className="h-[82px] flex items-end justify-center">
-                      <span
-                        className="w-[56px] h-[56px] rounded-full shadow-sm flex items-center justify-center text-xl font-bold"
-                        style={{
-                          background: "var(--primary-tint)",
-                          border: "2px dashed color-mix(in srgb, var(--primary) 55%, transparent)",
-                          color: "var(--primary-deep)",
+                        key={t.key}
+                        onClick={() => {
+                          // « Catégorie » ouvre directement l’écran de toutes
+                          // les catégories plutôt qu’une mini-grille dans la carte.
+                          if (t.key === "categorie") {
+                            setHomeMode("categories");
+                            setHomeCategory(null);
+                            setHomeSubRubrique(null);
+                            window.scrollTo({ top: 0 });
+                            return;
+                          }
+                          setSearchTab(t.key);
                         }}
+                        aria-pressed={t.key !== "categorie" && searchTab === t.key}
+                        className={`flex flex-col items-center gap-0.5 rounded-pill py-2 text-[12px] font-bold transition-colors ${
+                          searchTab === t.key ? "bg-primary text-on-primary shadow-sm" : "text-ink/70"
+                        }`}
                       >
-                        ›
-                      </span>
+                        <t.icon size={16} weight={searchTab === t.key ? "fill" : "bold"} aria-hidden />
+                        {t.label}
+                      </button>
+                    ))}
+                  </div>
+
+                  {searchTab === "mot" && (
+                    <div className="mt-4">
+                      <SearchInput
+                        value={query}
+                        onChange={(v) => { setQuery(v); if (!searchOpen) focusSearch(); }}
+                        // Le champ de l’accueil est remplacé par celui de l’écran
+                        // de recherche dès que searchOpen passe à true : on bascule
+                        // dès le tap, avec autofocus sur le nouveau champ, pour ne
+                        // pas obliger à recliquer dedans.
+                        onFocus={() => { if (!searchOpen) focusSearch(); }}
+                        placeholder="Rechercher une activité, un lieu, un nom…"
+                      />
+                      <p className="mt-2.5 text-[11.5px] text-muted leading-snug text-center">
+                        Un nom, un lieu, ou un besoin précis (opticien, plombier…).
+                      </p>
                     </div>
-                    <span className="text-[10.5px] font-semibold text-ink text-center leading-tight mt-0.5">
-                      Toutes les catégories
-                    </span>
-                  </button>
-                </div>
-                </div>
+                  )}
+
+                  {/* Deux usages de /mon-plan : « Trouver un lieu » d'abord (le
+                      besoin le plus courant), puis le programme complet. */}
+                  {searchTab === "experience" && (
+                    <div className="mt-4 space-y-2">
+                      <Link
+                        href="/mon-plan"
+                        className="flex items-center gap-3 rounded-2xl p-3.5 no-underline text-ink active:scale-[.98] transition-transform"
+                        style={{ background: "linear-gradient(135deg, color-mix(in srgb, var(--primary) 16%, var(--surface)) 0%, var(--surface) 85%)" }}
+                      >
+                        <span className="shrink-0 flex items-center justify-center w-11 h-11 rounded-full bg-primary text-on-primary" aria-hidden>
+                          <MapPin size={22} weight="fill" />
+                        </span>
+                        <span className="min-w-0 flex-1">
+                          <span className="block text-[14px] font-extrabold leading-tight">Trouver un lieu</span>
+                          <span className="block text-[11.5px] text-muted leading-snug mt-0.5">
+                            Resto, bar, plage, excursion, visite, sport, bien-être, enfants ou shopping : ta thématique, tes critères, une liste d&apos;adresses
+                          </span>
+                        </span>
+                        <span className="shrink-0 text-[18px] font-bold text-primary-deep" aria-hidden>›</span>
+                      </Link>
+                      <Link
+                        href="/mon-plan?mode=plan"
+                        className="flex items-center gap-3 rounded-2xl p-3.5 no-underline text-ink active:scale-[.98] transition-transform"
+                        style={{ background: "linear-gradient(135deg, color-mix(in srgb, var(--primary) 16%, var(--surface)) 0%, var(--surface) 85%)" }}
+                      >
+                        <span className="shrink-0 flex items-center justify-center w-11 h-11 rounded-full bg-primary text-on-primary" aria-hidden>
+                          <Sparkle size={22} weight="fill" />
+                        </span>
+                        <span className="min-w-0 flex-1">
+                          <span className="block text-[14px] font-extrabold leading-tight">Plan complet</span>
+                          <span className="block text-[11.5px] text-muted leading-snug mt-0.5">
+                            Un programme sur mesure (activité, resto, sortie…) selon ton groupe, ta zone et ton temps
+                          </span>
+                        </span>
+                        <span className="shrink-0 text-[18px] font-bold text-primary-deep" aria-hidden>›</span>
+                      </Link>
+                    </div>
+                  )}
+
                 </div>
               </div>
+              {/* Joint visuel : fondu au raz du bas de l'illustration vers le
+                  fond de page, pour que la transition avec la suite de
+                  l'accueil (Mes adresses, etc.) ne soit pas une coupure nette. */}
+              <div
+                className="absolute inset-x-0 bottom-0 pointer-events-none"
+                style={{ bottom: "-1%", height: "12%", background: "linear-gradient(to bottom, transparent 0%, var(--bg) 100%)" }}
+              />
             </div>
           </div>
         ) : homeMode === "favoris" ? (
@@ -2134,13 +2207,7 @@ export default function DirectoryClient({
               className="relative flex items-center gap-2 px-4 lg:px-5 h-[88px] overflow-hidden"
               style={{ background: "linear-gradient(135deg, #0a4d53 0%, #0f7a80 45%, #128a8f 100%)" }}
             >
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="/bandeau-kotemoris-resultats.png"
-                alt="Koté Moris"
-                className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[433px] h-[88px] max-w-none object-cover"
-                style={{ filter: "brightness(1.14) saturate(1.05)" }}
-              />
+              <BannerBackdrop />
               <button
                 onClick={goHome}
                 aria-label="Retour à l'accueil"
@@ -2149,14 +2216,7 @@ export default function DirectoryClient({
                 <ArrowLeft size={19} weight="bold" aria-hidden />
               </button>
               <div className="relative flex-1 min-w-0">
-                {searchOpen ? (
-                  <SearchInput
-                    value={query}
-                    onChange={setQuery}
-                    placeholder="Rechercher une activité, un lieu, un nom…"
-                    autoFocus={focusSearchOnMount}
-                  />
-                ) : (
+                {!searchOpen && (
                   <button
                     onClick={focusSearch}
                     aria-label="Rechercher"
@@ -2174,20 +2234,12 @@ export default function DirectoryClient({
           </>
         ) : headerMobileTiles ? (
           // Bandeau illustré Koté Moris (mêmes visuels partout hors accueil),
-          // avec flèche retour + recherche ; la recherche déployée en pleine
-          // largeur vit dans le bloc dédié juste en dessous (cf.
-          // showHeaderSearch plus bas) une fois activée.
+          // avec flèche retour + recherche ; la loupe est calée juste à côté de la flèche retour, sur le bandeau.
           <div
             className="relative flex items-center gap-2 px-4 lg:px-5 h-[88px] overflow-hidden"
             style={{ background: "linear-gradient(135deg, #0a4d53 0%, #0f7a80 45%, #128a8f 100%)" }}
           >
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/bandeau-kotemoris-resultats.png"
-              alt="Koté Moris"
-              className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[433px] h-[88px] max-w-none object-cover"
-                style={{ filter: "brightness(1.14) saturate(1.05)" }}
-            />
+            <BannerBackdrop />
             <button
               onClick={goBackFromResults}
               disabled={!canGoBack}
@@ -2198,7 +2250,6 @@ export default function DirectoryClient({
             >
               <ArrowLeft size={19} weight="bold" aria-hidden />
             </button>
-            <div className="relative flex-1 min-w-0" />
             {!showHeaderSearch && (
               <button
                 onClick={focusSearch}
@@ -2218,13 +2269,7 @@ export default function DirectoryClient({
             className="relative flex items-center gap-2 px-4 lg:px-5 h-[88px] overflow-hidden"
             style={{ background: "linear-gradient(135deg, #0a4d53 0%, #0f7a80 45%, #128a8f 100%)" }}
           >
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/bandeau-kotemoris-resultats.png"
-              alt="Koté Moris"
-              className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[433px] h-[88px] max-w-none object-cover"
-                style={{ filter: "brightness(1.14) saturate(1.05)" }}
-            />
+            <BannerBackdrop />
             <button
               onClick={goBackFromResults}
               disabled={!canGoBack}
@@ -2236,14 +2281,7 @@ export default function DirectoryClient({
               <ArrowLeft size={19} weight="bold" aria-hidden />
             </button>
             <div className="relative flex-1 min-w-0">
-              {searchOpen ? (
-                <SearchInput
-                  value={query}
-                  onChange={setQuery}
-                  placeholder="Rechercher une activité, un lieu, un nom…"
-                  autoFocus={focusSearchOnMount}
-                />
-              ) : (
+              {!searchOpen && (
                 <button
                   onClick={focusSearch}
                   aria-label="Rechercher"
@@ -2289,6 +2327,23 @@ export default function DirectoryClient({
         </aside>
 
         <div className="flex-1 min-w-0 px-4 lg:px-5 py-3 pb-24 lg:pb-8">
+          {/* Champ de recherche : une fois `searchOpen`, il vit ici (dans
+              l'espace clair sous le bandeau) plutôt que dans le bandeau teal
+              du header — plus lisible, et un seul emplacement de montage
+              (gate uniquement sur `searchOpen`, jamais sur `mobileTiles`)
+              pour ne pas démonter/remonter le champ en pleine frappe (cf.
+              `headerMobileTiles` plus haut). */}
+          {searchOpen && (
+            <div className="max-w-[640px] mx-auto mb-3">
+              <SearchInput
+                value={query}
+                onChange={setQuery}
+                placeholder="Rechercher une activité, un lieu, un nom…"
+                autoFocus={focusSearchOnMount}
+              />
+            </div>
+          )}
+
           {/* Accueil : barre de recherche (point d'entrée vers le mode
               recherche/résultats), rangée de catégories, coups de cœur de la
               rédaction et bandeau carte — inspiré du rendu fourni par la
@@ -2296,19 +2351,131 @@ export default function DirectoryClient({
               a été retirée : la recherche vit désormais ici en permanence). */}
           {showHome && homeMode === "menu" && (
             <div className="max-w-[720px] lg:max-w-[1100px] mx-auto pb-6">
-              {/* La recherche vit désormais dans le bandeau d'accueil lui-même
-                  (pastille peinte dans l'image + bouton calé dessus, cf.
-                  header) : plus de carte séparée ici. */}
+              {/* Espace de recherche : superposé sur l'illustration, centré au
+                  niveau des bateaux (cf. header, juste au-dessus). */}
+
+              {/* Tuiles jumelles remontées juste sous l'encart de recherche (à
+                  la demande) : « Mes adresses » et « Nos sélections Koté
+                  Moris » (badges Recommandé → coups de cœur, Kids friendly →
+                  section kids, plus bas sur l'accueil). -mt : léger
+                  recouvrement avec le bas de l'illustration. */}
+              <div className="grid grid-cols-2 gap-2.5 -mt-6 sm:-mt-8 mb-6 relative z-40">
+            <button
+              onClick={() => { setHomeMode("profil"); window.scrollTo({ top: 0, behavior: "smooth" }); }}
+              className="flex flex-col items-center justify-between gap-1.5 rounded-xl border border-white/40 py-2.5 px-1 shadow-card active:scale-[.96] transition-transform"
+              style={{ background: "color-mix(in srgb, var(--primary) 16%, var(--surface))" }}
+            >
+              <span className="flex items-center justify-center gap-3 h-[60px] sm:h-[72px] text-[15px] sm:text-[17px] font-extrabold">
+                <span className="inline-flex flex-col items-center gap-0.5" style={{ color: COUP_DE_COEUR_COLOR }}><Heart size={26} weight="fill" aria-hidden />{favoriteBusinesses.length}<span className="text-[9.5px] sm:text-[11px] font-semibold text-ink/70 leading-none">Favoris</span></span>
+                <span className="inline-flex flex-col items-center gap-0.5" style={{ color: "#f5a623" }}><Flag size={26} weight="fill" aria-hidden />{aTesterBusinesses.length}<span className="text-[9.5px] sm:text-[11px] font-semibold text-ink/70 leading-none">À tester</span></span>
+                <span className="inline-flex flex-col items-center gap-0.5" style={{ color: "#2e9e5b" }}><CheckCircle size={26} weight="fill" aria-hidden />{testeBusinesses.length}<span className="text-[9.5px] sm:text-[11px] font-semibold text-ink/70 leading-none">Testé</span></span>
+              </span>
+              <span className="text-[13px] sm:text-[15px] font-extrabold text-ink leading-tight text-center">Mes adresses</span>
+            </button>
+            <div
+              role="button"
+              tabIndex={0}
+              onClick={() => scrollToHomeSection("accueil-coups-de-coeur")}
+              onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") scrollToHomeSection("accueil-coups-de-coeur"); }}
+              className="flex flex-col items-center justify-between gap-1.5 rounded-xl border border-white/40 py-2.5 px-1 shadow-card cursor-pointer active:scale-[.96] transition-transform"
+              style={{ background: "color-mix(in srgb, var(--primary) 16%, var(--surface))" }}
+            >
+              <span className="flex items-center justify-center gap-1 h-[60px] sm:h-[72px]">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="/badge-selection.png" alt="Recommandées" className="w-[60px] h-[60px] sm:w-[72px] sm:h-[72px] object-contain" />
+                {kidsFriendly.length > 0 && (
+                <button
+                  onClick={(e) => { e.stopPropagation(); scrollToHomeSection("accueil-kids-friendly"); }}
+                  aria-label="Adresses kids friendly"
+                  className="active:scale-[.94] transition-transform"
+                >
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src="/badge-kids.png" alt="" aria-hidden className="w-[60px] h-[60px] sm:w-[72px] sm:h-[72px] object-contain" />
+                </button>
+                )}
+              </span>
+              <span className="text-[13px] sm:text-[15px] font-extrabold text-ink leading-tight text-center">Nos sélections Koté Moris</span>
+            </div>
+            </div>
+
+              {/* Vignettes Événements/Seconde main : sous les tuiles jumelles. */}
+              <h2 className="text-[16px] font-bold text-ink mb-2">Les avantages de mon abonnement Premium</h2>
+              <div className="grid grid-cols-2 gap-2 mb-7">
+                {[
+                  { src: "/vignette-agenda.webp", alt: "Agenda des événements — accès Premium", target: "accueil-evenements" },
+                  { src: "/vignette-seconde-main.webp", alt: "Seconde main — accès Premium", target: "accueil-seconde-main" },
+                ].map((v) => (
+                  <button
+                    key={v.src}
+                    onClick={() => {
+                      if (canSeeEventDetail) scrollToHomeSection(v.target);
+                      else window.location.href = "/mon-compte/upgrade";
+                    }}
+                    aria-label={v.alt}
+                    className="relative block h-[100px] sm:h-[130px] rounded-2xl overflow-hidden shadow-card active:scale-[.97] transition-transform"
+                  >
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img src={v.src} alt="" aria-hidden className="absolute inset-0 w-full h-full object-cover object-[50%_100%]" />
+                    <span className="absolute top-1.5 right-1.5 inline-flex items-center justify-center w-6 h-6 rounded-full text-white shadow-sm" style={{ background: "linear-gradient(135deg, #f5a623, #e88a00)" }}>
+                      <Crown size={13} weight="fill" aria-hidden />
+                    </span>
+                  </button>
+                ))}
+              </div>
+
+              {/* Le bandeau « Créer mon plan » a été retiré d'ici : le bloc
+                  « Par expérience » du bandeau d'accueil (au-dessus, cf.
+                  header) mène désormais directement à /mon-plan, sans
+                  doublon plus bas. */}
+
+              <div className="flex items-center justify-between mb-1">
+                <h2 className="text-[16px] font-bold text-ink">Les listes de Koté Moris</h2>
+                <button
+                  onClick={() => setHomeMode("listes")}
+                  className="text-[13px] font-semibold text-primary-deep active:scale-[.98]"
+                >
+                  Voir tout ›
+                </button>
+              </div>
+              <p className="text-[12.5px] text-muted mb-2.5">
+                Envie d&apos;inspiration ? On a déjà fait le tri pour toi.
+              </p>
+              <div className="flex gap-3 overflow-x-auto pb-1 -mx-4 px-4 mb-7 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+                {homeSelections.map((s) => (
+                  <button
+                    key={s.id}
+                    onClick={() => { setHomeMode("listes"); setSelectedListId(s.id); }}
+                    className="relative text-left shrink-0 w-[130px] aspect-[4/5] rounded-2xl overflow-hidden shadow-card active:scale-[.98] transition-transform"
+                  >
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src={s.photoUrl}
+                      alt=""
+                      aria-hidden
+                      loading="lazy"
+                      className="absolute inset-0 w-full h-full object-cover"
+                    />
+                    <div
+                      className="absolute inset-0"
+                      style={{ background: "linear-gradient(180deg, rgba(0,0,0,0) 45%, rgba(0,0,0,.72) 100%)" }}
+                    />
+                    <span className="absolute inset-x-0 bottom-0 p-2.5">
+                      <span className="block font-serif text-[12px] font-semibold leading-tight text-white line-clamp-2">
+                        {s.title}
+                      </span>
+                    </span>
+                  </button>
+                ))}
+              </div>
 
               {/* Coups de cœur remontés juste sous l'encart de recherche : la
                   sélection éditoriale est la première chose vue à l'accueil. */}
               {coupsDeCoeur.length > 0 && (
                 <div
-                  className="p-3 mb-7"
+                  id="accueil-coups-de-coeur"
+                  className="p-3 mb-7 rounded-2xl shadow-card"
                   style={{
                     background: `linear-gradient(135deg, color-mix(in srgb, var(--primary-deep) 45%, var(--surface)) 0%, color-mix(in srgb, var(--primary) 10%, var(--surface)) 100%)`,
-                    ...wavyFrameBorder(COUPS_DE_COEUR_FRAME_COLOR),
-                    boxShadow: `0 0 18px 4px color-mix(in srgb, ${COUPS_DE_COEUR_FRAME_COLOR} 30%, transparent)`,
                   }}
                 >
                   <div className="flex items-center justify-between mb-2">
@@ -2365,51 +2532,6 @@ export default function DirectoryClient({
                 </div>
               )}
 
-              {/* Bandeau « Mes adresses » : même dégradé teal que l'en-tête dédié
-                  de l'écran favoris/à tester (cf. header, homeMode === "favoris"),
-                  pour identifier clairement ce raccourci comme menant au même
-                  endroit, plutôt que 2 chips isolées sans titre. */}
-              <div
-                className="rounded-2xl p-4 mt-4 mb-7"
-                style={{ background: "linear-gradient(135deg, #0a3d3a 0%, #1a8f86 100%)" }}
-              >
-                <div className="flex items-center justify-between mb-3">
-                  <h2 className="m-0 text-white text-[15px] font-bold">Mes adresses</h2>
-                  <button
-                    onClick={() => { setHomeMode("favoris"); window.scrollTo({ top: 0, behavior: "smooth" }); }}
-                    className="shrink-0 text-[12.5px] font-semibold text-white/80 active:scale-[.98]"
-                  >
-                    Voir tout ›
-                  </button>
-                </div>
-                <div className="flex gap-2.5">
-                  <button
-                    onClick={() => { setHomeMode("favoris"); window.scrollTo({ top: 0, behavior: "smooth" }); }}
-                    className="flex-1 flex items-center gap-2.5 rounded-2xl bg-surface p-3 active:scale-[.97] transition-transform"
-                  >
-                    <Heart size={20} weight="fill" aria-hidden style={{ color: COUP_DE_COEUR_COLOR }} />
-                    <span className="flex flex-col items-start leading-none">
-                      <span className="text-[15px] font-bold" style={{ color: COUP_DE_COEUR_COLOR }}>
-                        {favoriteBusinesses.length}
-                      </span>
-                      <span className="text-[11px] text-muted mt-0.5">Mes favoris</span>
-                    </span>
-                  </button>
-                  <button
-                    onClick={() => { setHomeMode("favoris"); window.scrollTo({ top: 0, behavior: "smooth" }); }}
-                    className="flex-1 flex items-center gap-2.5 rounded-2xl bg-surface p-3 active:scale-[.97] transition-transform"
-                  >
-                    <Flag size={20} weight="fill" aria-hidden style={{ color: "#f5a623" }} />
-                    <span className="flex flex-col items-start leading-none">
-                      <span className="text-[15px] font-bold" style={{ color: "#f5a623" }}>
-                        {aTesterBusinesses.length}
-                      </span>
-                      <span className="text-[11px] text-muted mt-0.5">À tester</span>
-                    </span>
-                  </button>
-                </div>
-              </div>
-
               {newBusinesses.length > 0 && (
                 <>
                   <div className="flex items-center gap-2 mb-2.5">
@@ -2458,53 +2580,12 @@ export default function DirectoryClient({
               )}
 
 
-              <div className="flex items-center justify-between mt-7 mb-1">
-                <h2 className="text-[16px] font-bold text-ink">Les listes de Koté Moris</h2>
-                <button
-                  onClick={() => setHomeMode("listes")}
-                  className="text-[13px] font-semibold text-primary-deep active:scale-[.98]"
-                >
-                  Voir tout ›
-                </button>
-              </div>
-              <p className="text-[12.5px] text-muted mb-2.5">
-                Envie d&apos;inspiration ? On a déjà fait le tri pour toi.
-              </p>
-              <div className="flex gap-3 overflow-x-auto pb-1 -mx-4 px-4 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-                {homeSelections.map((s) => (
-                  <button
-                    key={s.id}
-                    onClick={() => { setHomeMode("listes"); setSelectedListId(s.id); }}
-                    className="relative text-left shrink-0 w-[130px] aspect-[4/5] rounded-2xl overflow-hidden shadow-card active:scale-[.98] transition-transform"
-                  >
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img
-                      src={s.photoUrl}
-                      alt=""
-                      aria-hidden
-                      loading="lazy"
-                      className="absolute inset-0 w-full h-full object-cover"
-                    />
-                    <div
-                      className="absolute inset-0"
-                      style={{ background: "linear-gradient(180deg, rgba(0,0,0,0) 45%, rgba(0,0,0,.72) 100%)" }}
-                    />
-                    <span className="absolute inset-x-0 bottom-0 p-2.5">
-                      <span className="block font-serif text-[12px] font-semibold leading-tight text-white line-clamp-2">
-                        {s.title}
-                      </span>
-                    </span>
-                  </button>
-                ))}
-              </div>
-
               {kidsFriendly.length > 0 && (
                 <div
-                  className="p-3 mt-7"
+                  id="accueil-kids-friendly"
+                  className="p-3 rounded-2xl shadow-card"
                   style={{
                     background: `linear-gradient(135deg, color-mix(in srgb, var(--primary-deep) 45%, var(--surface)) 0%, color-mix(in srgb, var(--primary) 10%, var(--surface)) 100%)`,
-                    ...wavyFrameBorder(KIDS_FRIENDLY_COLOR),
-                    boxShadow: `0 0 18px 4px color-mix(in srgb, ${KIDS_FRIENDLY_COLOR} 30%, transparent)`,
                   }}
                 >
                   <div className="flex items-center justify-between mb-2">
@@ -2569,6 +2650,7 @@ export default function DirectoryClient({
               )}
 
               <Link
+                id="accueil-seconde-main"
                 href={canSeeEventDetail ? "/seconde-main" : "/mon-compte/upgrade"}
                 className="mt-7 block rounded-2xl p-4 overflow-hidden no-underline text-ink shadow-card active:scale-[.99] transition-transform"
                 style={{ background: "linear-gradient(135deg, #ffe3b0 0%, #fff7ea 60%)" }}
@@ -2625,6 +2707,7 @@ export default function DirectoryClient({
               </Link>
 
               <div
+                id="accueil-evenements"
                 role="button"
                 tabIndex={0}
                 onClick={() => {
@@ -2741,52 +2824,12 @@ export default function DirectoryClient({
             </div>
           )}
 
-          {/* Accueil → Recherche : choix entre chercher par mot-clé (champ de
-              recherche classique) ou parcourir par catégorie (écran existant,
-              homeMode "categories"). Point d'entrée commun à l'icône du
-              bandeau et à la tuile « Trouve ta prochaine adresse ». */}
-          {showHome && homeMode === "recherche" && (
-            <div className="max-w-[480px] mx-auto pb-16 pt-2">
-              <h2 className="text-[18px] font-bold text-ink mb-1">Rechercher</h2>
-              <p className="text-[13px] text-muted mb-5">Comment veux-tu chercher ton adresse ?</p>
-              <div className="flex flex-col gap-3">
-                <button
-                  onClick={focusSearch}
-                  className="flex items-center gap-3.5 rounded-2xl border border-border bg-surface px-4 py-3 text-left shadow-card active:scale-[.98] transition-transform"
-                >
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="/icon-recherche.png" alt="" aria-hidden className="shrink-0 w-[84px] h-[84px] object-contain" />
-                  <span>
-                    <span className="block text-[17px] font-bold text-ink">Par mot clé</span>
-                    <span className="block text-[14px] text-muted mt-0.5">
-                      Un nom, une activité, un lieu…
-                    </span>
-                  </span>
-                </button>
-                <button
-                  onClick={() => setHomeMode("categories")}
-                  className="flex items-center gap-3.5 rounded-2xl border border-border bg-surface px-4 py-3 text-left shadow-card active:scale-[.98] transition-transform"
-                >
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="/icon-categories.png" alt="" aria-hidden className="shrink-0 w-[84px] h-[84px] object-contain" />
-                  <span>
-                    <span className="block text-[17px] font-bold text-ink">Par catégorie</span>
-                    <span className="block text-[14px] text-muted mt-0.5">
-                      Restaurants, activités, sorties…
-                    </span>
-                  </span>
-                </button>
-              </div>
-            </div>
-          )}
-
           {/* Accueil → Par catégorie : grille des 8 catégories (un seul niveau
               de profondeur) — clic sur une catégorie → liste plate de ses
               rubriques ; clic sur une rubrique → résultats. */}
           {showHome && homeMode === "categories" && homeCategory === null && (
             <div className="pb-16">
-              <div className="flex items-center justify-between mb-2.5">
-                <h2 className="text-[16px] font-bold text-ink">Explorer par catégorie</h2>
+              <div className="flex items-center justify-end mb-2.5">
                 <button
                   onClick={() => setBrowseAll(true)}
                   className="text-[13px] font-semibold text-primary-deep active:scale-[.98]"
@@ -2794,22 +2837,60 @@ export default function DirectoryClient({
                   Voir tout ({rows.length}) ›
                 </button>
               </div>
-              <div className="flex flex-col gap-2 sm:max-w-[560px]">
-                {CATEGORIES.filter((c) => (counts[c.key] || 0) > 0).map((c) => (
-                  <CategoryRow
-                    key={c.key}
-                    category={c.key}
-                    count={counts[c.key] || 0}
-                    locked={PREMIUM_CATEGORY_KEYS.has(c.key)}
-                    onClick={() => {
-                      if (PREMIUM_CATEGORY_KEYS.has(c.key) && !canSeeEventDetail) {
-                        window.location.href = "/mon-compte/upgrade";
-                      } else {
-                        setHomeCategory(c.key);
+              {/* Cartes franches (couleur vive, une ligne de description) à la
+                  place de la planche illustrée : moins chargé, couleurs
+                  pleines. Mêmes clics que les anciennes zones cliquables. */}
+              <div className="grid grid-cols-1 gap-2.5 sm:grid-cols-2">
+                {EXPLORER_CATEGORIES_HOTSPOTS.map((h) => {
+                  const Ico = h.key === "seconde-main" ? Package : iconForKey(h.key);
+                  const locked = h.key === "seconde-main" ? true : PREMIUM_CATEGORY_KEYS.has(h.key);
+                  return (
+                    <Fragment key={h.key}>
+                    {h.key === "agenda" && (
+                      <p className="sm:col-span-2 mt-3 mb-0.5 flex items-center gap-1.5 text-[13px] font-extrabold text-ink">
+                        <Crown size={15} weight="fill" aria-hidden style={{ color: "#e88a00" }} /> Réservé aux membres Premium
+                      </p>
+                    )}
+                    <button
+                      onClick={() => {
+                        if (h.key === "seconde-main") {
+                          window.location.href = canSeeEventDetail ? "/seconde-main" : "/mon-compte/upgrade";
+                          return;
+                        }
+                        if (PREMIUM_CATEGORY_KEYS.has(h.key) && !canSeeEventDetail) {
+                          window.location.href = "/mon-compte/upgrade";
+                        } else {
+                          setHomeCategory(h.key);
+                        }
+                      }}
+                      className={`relative flex items-center gap-3 w-full min-w-0 h-[84px] rounded-2xl px-4 text-left text-white active:scale-[.98] transition-transform ${locked ? "shadow-pop" : "shadow-card"}`}
+                      style={
+                        locked
+                          ? { background: "linear-gradient(135deg, #1d1a14 0%, #3d2c0c 100%)", border: "2px solid #f5c04a" }
+                          : { background: `linear-gradient(135deg, color-mix(in srgb, ${h.color} 72%, #fff) 0%, color-mix(in srgb, ${h.color} 86%, #fff) 100%)` }
                       }
-                    }}
-                  />
-                ))}
+                    >
+                      <span className={`shrink-0 flex items-center justify-center w-11 h-11 rounded-full ${locked ? "text-[#1d1a14]" : "bg-white/25"}`} style={locked ? { background: "linear-gradient(135deg, #ffe08a, #f5a623)" } : undefined}>
+                        {Ico && <Ico size={26} weight="fill" aria-hidden />}
+                      </span>
+                      <span className="flex-1 min-w-0 flex flex-col leading-tight">
+                        <span className="inline-flex items-center gap-1.5 text-[16px] font-extrabold">
+                          {h.label}
+                          {locked && <span className="inline-flex items-center gap-0.5 px-1.5 py-0.5 rounded-pill text-[9.5px] font-extrabold text-[#1d1a14]" style={{ background: "linear-gradient(135deg, #ffe08a, #f5a623)" }}><Crown size={10} weight="fill" aria-hidden /> VIP</span>}
+                        </span>
+                        <span className={`text-[12px] font-medium line-clamp-2 ${locked ? "text-[#ffe08a]" : "text-white/90"}`}>{h.sub}</span>
+                      </span>
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img
+                        src={mascotFor(h.key) ?? "/icon-secondemain.png"}
+                        alt=""
+                        aria-hidden
+                        className="shrink-0 h-[72px] w-[72px] -my-4 -mr-1 object-contain drop-shadow-md"
+                      />
+                    </button>
+                    </Fragment>
+                  );
+                })}
               </div>
 
               {topRubriques.length > 0 && (
@@ -3778,41 +3859,6 @@ export default function DirectoryClient({
                   )}
                 </div>
               </div>
-
-              {/* Mes suggestions : historique local des adresses proposées, avec
-                  détection best-effort (nom + catégorie) de leur intégration. */}
-              {suggestionsWithStatus.length > 0 && (
-                <div className="bg-surface border border-border rounded-2xl shadow-sm p-4">
-                  <p className="m-0 mb-3 text-[13px] font-bold text-ink">Mes suggestions</p>
-                  <div className="flex flex-col gap-3">
-                    {suggestionsWithStatus.map((s) => (
-                      <div key={s.id} className="flex items-center gap-2.5">
-                        <span className="flex-1 min-w-0">
-                          <span className="block text-[13px] text-ink truncate">{s.nom}</span>
-                          <span className="block text-[11px] text-muted">
-                            {new Date(s.submittedAt).toLocaleDateString("fr-FR", { day: "numeric", month: "short", year: "numeric" })}
-                          </span>
-                        </span>
-                        {s.integratedBusiness ? (
-                          <span
-                            className="shrink-0 inline-flex items-center gap-1 text-[11px] font-semibold rounded-full px-2.5 py-1"
-                            style={{ background: "color-mix(in srgb, #2e9e5b 12%, var(--surface))", color: "#2e9e5b" }}
-                          >
-                            <CheckCircle size={13} weight="fill" aria-hidden /> Intégrée
-                          </span>
-                        ) : (
-                          <span className="shrink-0 text-[11px] font-semibold text-muted rounded-full px-2.5 py-1" style={{ background: "var(--surface-2)" }}>
-                            En attente
-                          </span>
-                        )}
-                      </div>
-                    ))}
-                  </div>
-                  <p className="mt-3 mb-0 text-[11px] text-muted leading-snug">
-                    Détection automatique et approximative, basée sur le nom — en cas de doute, vérifiez dans l'annuaire.
-                  </p>
-                </div>
-              )}
 
               {/* Actions rapides. */}
               <div className="bg-surface border border-border rounded-2xl shadow-sm overflow-hidden">
