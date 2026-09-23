@@ -314,7 +314,7 @@ function hasTerrace(b: Business): boolean {
  * FILTER_GROUPS dans data/categories.ts) — rien de nouveau à renseigner côté
  * fiches.
  */
-export type PlaceTheme = "resto" | "bar" | "plage" | "excursion" | "visite" | "shopping";
+export type PlaceTheme = "resto" | "bar" | "plage" | "excursion" | "visite" | "sport" | "shopping";
 
 export const PLACE_THEMES: {
   key: PlaceTheme;
@@ -332,6 +332,12 @@ export const PLACE_THEMES: {
   { key: "plage", label: "Plage", emoji: "🏖️", rubriques: ["plages-nature"], requiredFilter: "plages", hiddenGroups: ["plages-nature-types"] },
   { key: "excursion", label: "Excursion", emoji: "🚤", rubriques: ["excursions-sorties"] },
   { key: "visite", label: "Visite", emoji: "🏛️", rubriques: ["culture-patrimoine", "plages-nature", "parcs-activites-famille"] },
+  {
+    key: "sport",
+    label: "Sport",
+    emoji: "🏄",
+    rubriques: ["salles-sport-fitness", "tennis-padel", "golf", "randonnee-trail", "sports-nautiques", "equitation-autres-sports"],
+  },
   {
     key: "shopping",
     label: "Shopping",

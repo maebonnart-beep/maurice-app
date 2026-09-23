@@ -212,7 +212,7 @@ export default function PlanWizard({
       <p className="mt-1 text-[13px] text-muted leading-snug">
         {mode === "plan"
           ? "Dis-nous ce que tu veux faire : on te propose une activité et un resto proche, avec le temps total estimé."
-          : "Un resto, un bar, une plage, une excursion, une visite ou du shopping : choisis la thématique et tes critères, on te fait une liste."}
+          : "Un resto, un bar, une plage, une excursion, une visite, du sport ou du shopping : choisis la thématique et tes critères, on te fait une liste."}
       </p>
 
       {/* Deux façons d'utiliser Mon plan : directement une liste de lieux pour une
@@ -263,7 +263,7 @@ export default function PlanWizard({
 
           <section className="mt-5">
             <h2 className="text-[14px] font-extrabold text-ink">Thématique</h2>
-            <div className="mt-2 grid grid-cols-3 gap-2">
+            <div className="mt-2 grid grid-cols-4 gap-2">
               {PLACE_THEMES.map((t) => (
                 <button
                   key={t.key}
