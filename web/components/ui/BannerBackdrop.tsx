@@ -1,26 +1,20 @@
-/** Fond du bandeau du haut hors accueil : ancien décor (feuillages, logo
- *  « Koté MORIS ») sans la mascotte. L'image d'origine est conservée mais son
- *  côté droit (le poulpe) est recouvert par le côté gauche de la même image,
- *  retourné en miroir avec un fondu — on retrouve ainsi les grandes feuilles
- *  des deux côtés. À placer en premier enfant d'un conteneur
- *  `relative overflow-hidden h-[88px]` ; les boutons (retour, loupe) passent
- *  par-dessus grâce à leur `relative`. */
+/** Fond du bandeau du haut hors accueil : illustration « Koté MORIS — Les
+ *  adresses de Maurice » (feuillages, Morne, poulpe, gecko), cf.
+ *  bandeau-kotemoris-v2.webp. Boîte de largeur fixe centrée : l'image en
+ *  `object-cover` y est recadrée en hauteur autour du logo. Sur écran large,
+ *  les bords sont fondus dans le dégradé turquoise du conteneur. À placer en
+ *  premier enfant d'un conteneur `relative overflow-hidden h-[88px]` ; les
+ *  boutons (retour, loupe) passent par-dessus grâce à leur `relative`. */
 export function BannerBackdrop() {
-  const filter = "brightness(1.14) saturate(1.05)";
+  const mask = "linear-gradient(to right, transparent 0, #000 6%, #000 94%, transparent 100%)";
   return (
     <div aria-hidden className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[433px] h-[88px] max-w-none pointer-events-none">
       {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img src="/bandeau-kotemoris-resultats.png" alt="" className="absolute inset-0 w-full h-full object-cover" style={{ filter }} />
-      {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
-        src="/bandeau-kotemoris-resultats.png"
+        src="/bandeau-kotemoris-v2.webp"
         alt=""
-        className="absolute inset-0 w-full h-full object-cover -scale-x-100"
-        style={{
-          filter,
-          maskImage: "linear-gradient(to left, transparent 66%, #000 74%)",
-          WebkitMaskImage: "linear-gradient(to left, transparent 66%, #000 74%)",
-        }}
+        className="absolute inset-0 w-full h-full object-cover"
+        style={{ maskImage: mask, WebkitMaskImage: mask }}
       />
     </div>
   );
