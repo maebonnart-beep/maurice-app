@@ -21,7 +21,7 @@ export function FilterChip({
       aria-label={ariaLabel}
       className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-pill border text-body font-medium whitespace-nowrap shrink-0 transition-colors ${
         active
-          ? "bg-primary border-primary text-white"
+          ? "bg-primary border-primary text-on-primary"
           : "bg-surface border-border text-ink hover:border-primary"
       }`}
     >

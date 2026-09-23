@@ -74,7 +74,7 @@ export function LoginForm() {
         <button
           type="submit"
           disabled={status === "verifying" || code.trim().length < 4}
-          className="w-full h-[48px] rounded-xl font-semibold text-[15px] bg-primary text-white active:scale-[.98] transition-transform disabled:opacity-40"
+          className="w-full h-[48px] rounded-xl font-semibold text-[15px] bg-primary text-on-primary active:scale-[.98] transition-transform disabled:opacity-40"
         >
           {status === "verifying" ? "Vérification…" : "Se connecter"}
         </button>
@@ -113,7 +113,7 @@ export function LoginForm() {
       <button
         type="submit"
         disabled={status === "sending"}
-        className="w-full h-[48px] rounded-xl font-semibold text-[15px] bg-primary text-white active:scale-[.98] transition-transform disabled:opacity-40"
+        className="w-full h-[48px] rounded-xl font-semibold text-[15px] bg-primary text-on-primary active:scale-[.98] transition-transform disabled:opacity-40"
       >
         {status === "sending" ? "Envoi…" : "Recevoir le code de connexion"}
       </button>

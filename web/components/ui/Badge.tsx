@@ -6,7 +6,7 @@ import { iconForKey } from "@/lib/icons";
 // Couleurs d'accent des badges spéciaux — partagées avec l'accent latéral des fiches.
 export const COUP_DE_COEUR_COLOR = "#ff2d6a";
 export const SELECTION_COLOR = "#7c3aed";
-export const AGENCY_COLOR = "#6366f1";
+export const AGENCY_COLOR = "#6063f1";
 
 /** Badge de catégorie : pastille pleine colorée à la couleur de la catégorie. */
 export function CategoryBadge({ category }: { category: CategoryKey }) {
@@ -29,9 +29,9 @@ export const PROVIDER_TYPE_INFO: Record<
   "particulier" | "organisme" | "application",
   { emoji: string; label: string; color: string }
 > = {
-  particulier: { emoji: "🧑‍🏫", label: "Prof particulier", color: "#0891b2" },
+  particulier: { emoji: "🧑‍🏫", label: "Prof particulier", color: "#077f9c" },
   organisme: { emoji: "🏢", label: "Organisme", color: AGENCY_COLOR },
-  application: { emoji: "📱", label: "Application", color: "#059669" },
+  application: { emoji: "📱", label: "Application", color: "#04855d" },
 };
 
 /** Pastille indiquant si une fiche est un prof particulier, un organisme, ou une application. */
@@ -101,7 +101,7 @@ export function PremiumSellerBadge({ compact, className }: { compact?: boolean; 
         aria-label="Vendeur premium"
         className={
           className ??
-          "self-start inline-flex items-center justify-center w-5 h-5 rounded-full text-white shrink-0 bg-primary-deep"
+          "self-start inline-flex items-center justify-center w-5 h-5 rounded-full text-on-primary shrink-0 bg-primary-deep"
         }
       >
         <Crown size={11} weight="fill" aria-hidden />
@@ -112,7 +112,7 @@ export function PremiumSellerBadge({ compact, className }: { compact?: boolean; 
     <span
       className={
         className ??
-        "self-start inline-flex items-center gap-1 px-2.5 py-1 rounded-pill text-white text-xs font-bold bg-primary-deep"
+        "self-start inline-flex items-center gap-1 px-2.5 py-1 rounded-pill text-on-primary text-xs font-bold bg-primary-deep"
       }
     >
       <Crown size={13} weight="fill" aria-hidden /> Vendeur premium

@@ -6,7 +6,7 @@ import { displayName, displayCity, fallbackDescription } from "@/lib/format";
 import { accentColorFor, SpecialBadge, AGENCY_COLOR, PROVIDER_TYPE_INFO } from "./Badge";
 import { FavoriteButton } from "./FavoriteButton";
 import { FACT_ICONS, CONTACT_ICONS, iconForKey, subIconFor } from "@/lib/icons";
-import { eventColorFor, eventBannerLabel } from "@/lib/events";
+import { eventColorFor, eventBannerLabel, eventTextColor } from "@/lib/events";
 import type { Icon } from "@phosphor-icons/react";
 
 /** Toutes les options de filtre (cuisine, ambiance, discipline, spécialité…), à plat par clé. */
@@ -138,8 +138,8 @@ export function BusinessCard({
     >
       {eventDateLabel && (
         <p
-          className="m-0 px-2.5 py-1 text-[11px] font-bold text-white text-center tracking-wide"
-          style={{ background: eventBarColor }}
+          className="m-0 px-2.5 py-1 text-[11px] font-bold text-center tracking-wide"
+          style={{ background: eventBarColor, color: eventTextColor(eventBarColor ?? "") }}
         >
           {eventDateLabel}
         </p>
@@ -170,7 +170,7 @@ export function BusinessCard({
                 <span
                   key={key}
                   className="inline-flex items-center gap-1 text-[11px] font-bold px-1.5 py-0.5 rounded-pill"
-                  style={{ background: `color-mix(in srgb, ${categoryColor} 15%, var(--surface))`, color: categoryColor }}
+                  style={{ background: `color-mix(in srgb, ${categoryColor} 15%, var(--surface))`, color: `var(--cat-${b.category}-text)` }}
                 >
                   {RubriqueIcon ? (
                     <RubriqueIcon size={11} weight="bold" aria-hidden />

@@ -11,7 +11,7 @@ import type { FilterGroup } from "@/data/categories";
 import { SELECTIONS, SELECTION_GROUP_META } from "@/data/selections";
 import type { SelectionGroup, SelectionIconKey } from "@/data/selections";
 import { fuzzyMatchTokens, tokenize, normalizeText } from "@/lib/fuzzyMatch";
-import { isPastEvent, compareByEventDate, eventColorFor } from "@/lib/events";
+import { isPastEvent, compareByEventDate, eventColorFor, eventTextColor } from "@/lib/events";
 import { matchesOpenNow } from "@/lib/openHours";
 
 const SELECTION_ICONS: Record<SelectionIconKey, Icon> = {
@@ -1535,7 +1535,7 @@ export default function DirectoryClient({
               onClick={onClick}
               aria-pressed={isActive}
               className={`w-full flex items-center gap-2.5 px-3 py-2 rounded-lg text-[13.5px] font-semibold text-left transition-colors ${
-                isActive ? "bg-primary text-white" : "text-ink hover:bg-surface-2"
+                isActive ? "bg-primary text-on-primary" : "text-ink hover:bg-surface-2"
               }`}
             >
               <ItemIcon size={18} weight={isActive ? "fill" : "regular"} aria-hidden />
@@ -1554,7 +1554,7 @@ export default function DirectoryClient({
             onClick={() => setActiveZone(null)}
             aria-pressed={activeZone === null}
             className={`w-full flex items-center justify-between gap-2 px-3 py-1.5 rounded-lg text-[13px] font-medium text-left transition-colors ${
-              activeZone === null ? "bg-primary text-white" : "text-ink hover:bg-surface-2"
+              activeZone === null ? "bg-primary text-on-primary" : "text-ink hover:bg-surface-2"
             }`}
           >
             <span>📍 Toute l&apos;île</span>
@@ -1565,7 +1565,7 @@ export default function DirectoryClient({
               onClick={() => toggleZone(z.key)}
               aria-pressed={activeZone === z.key}
               className={`w-full flex items-center justify-between gap-2 px-3 py-1.5 rounded-lg text-[13px] font-medium text-left transition-colors ${
-                activeZone === z.key ? "bg-primary text-white" : "text-ink hover:bg-surface-2"
+                activeZone === z.key ? "bg-primary text-on-primary" : "text-ink hover:bg-surface-2"
               }`}
             >
               <span>
@@ -1597,7 +1597,7 @@ export default function DirectoryClient({
           onClick={() => selectCategory("all")}
           aria-pressed={active === "all"}
           className={`w-full flex items-center justify-between gap-2 px-3 py-2 rounded-xl text-[14px] font-semibold transition-colors ${
-            active === "all" ? "bg-primary text-white" : "text-ink hover:bg-surface-2"
+            active === "all" ? "bg-primary text-on-primary" : "text-ink hover:bg-surface-2"
           }`}
         >
           <span>🎯 Tout</span>
@@ -1614,7 +1614,7 @@ export default function DirectoryClient({
                 disabled={isEmpty}
                 className={`w-full flex items-center justify-between gap-2 px-3 py-2 rounded-xl text-[14px] font-semibold transition-colors ${
                   isOpen
-                    ? "bg-primary text-white"
+                    ? "bg-primary text-on-primary"
                     : isEmpty
                     ? "text-muted/50 cursor-default"
                     : "text-ink hover:bg-surface-2"
@@ -1661,7 +1661,7 @@ export default function DirectoryClient({
         aria-pressed={nearMe}
         title="Autour de moi"
         className={`flex items-center gap-1 rounded-full px-2.5 py-1 text-[12.5px] font-semibold shrink-0 transition-colors ${
-          nearMe ? "bg-primary text-white" : "bg-surface-2 text-ink"
+          nearMe ? "bg-primary text-on-primary" : "bg-surface-2 text-ink"
         }`}
       >
         <MapPin size={14} weight={nearMe ? "fill" : "regular"} aria-hidden />
@@ -1673,7 +1673,7 @@ export default function DirectoryClient({
           onClick={() => setZonePickerOpen((o) => !o)}
           aria-expanded={zonePickerOpen}
           className={`flex items-center gap-1 rounded-full px-2.5 py-1 text-[12.5px] font-semibold min-w-0 transition-colors ${
-            !nearMe && activeZone ? "bg-primary text-white" : "bg-surface-2 text-ink"
+            !nearMe && activeZone ? "bg-primary text-on-primary" : "bg-surface-2 text-ink"
           }`}
         >
           {(() => {
@@ -1917,7 +1917,7 @@ export default function DirectoryClient({
             aria-pressed={isActive}
             title={m.label}
             className={`flex-1 min-w-0 flex items-center justify-center gap-1.5 rounded-full pl-1 pr-2.5 py-1 text-[12.5px] font-semibold transition-colors ${
-              isActive ? "bg-primary text-white" : "bg-surface-2 text-ink"
+              isActive ? "bg-primary text-on-primary" : "bg-surface-2 text-ink"
             }`}
           >
             <img src={m.img} alt="" aria-hidden className="h-6 w-6 rounded-full shrink-0" />
@@ -2076,7 +2076,7 @@ export default function DirectoryClient({
                                 style={{
                                   background: "var(--surface)",
                                   border: `1.5px solid color-mix(in srgb, ${c.color} 55%, transparent)`,
-                                  color: c.color,
+                                  color: `var(--cat-${c.key}-text)`,
                                 }}
                               >
                                 <CIcon size={12} weight="bold" aria-hidden />
@@ -2721,8 +2721,8 @@ export default function DirectoryClient({
                             <p className="mt-1 text-[11px] text-muted leading-snug line-clamp-3">{b.description}</p>
                           )}
                           <span
-                            className="mt-2 inline-flex items-center gap-0.5 px-1.5 py-0.5 rounded-pill text-[9.5px] font-bold text-on-accent"
-                            style={{ background: eventColor }}
+                            className="mt-2 inline-flex items-center gap-0.5 px-1.5 py-0.5 rounded-pill text-[9.5px] font-bold"
+                            style={{ background: eventColor, color: eventTextColor(eventColor) }}
                           >
                             🔒 Premium
                           </span>
@@ -3317,7 +3317,7 @@ export default function DirectoryClient({
                   aria-pressed={nearMe}
                   title="Trier par distance depuis ma position"
                   className={`mb-3 flex items-center gap-1 rounded-full px-2.5 py-1 text-[12.5px] font-semibold shrink-0 transition-colors ${
-                    nearMe ? "bg-primary text-white" : "bg-surface-2 text-ink"
+                    nearMe ? "bg-primary text-on-primary" : "bg-surface-2 text-ink"
                   }`}
                 >
                   <MapPin size={14} weight={nearMe ? "fill" : "regular"} aria-hidden />
@@ -3407,7 +3407,7 @@ export default function DirectoryClient({
                         onClick={() => avatarFileRef.current?.click()}
                         disabled={avatarUploading}
                         aria-label="Modifier la photo de profil"
-                        className="absolute bottom-0 right-0 w-7 h-7 rounded-full bg-primary text-white flex items-center justify-center shadow-sm active:scale-[.95] transition-transform disabled:opacity-60"
+                        className="absolute bottom-0 right-0 w-7 h-7 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-sm active:scale-[.95] transition-transform disabled:opacity-60"
                       >
                         <Camera size={14} weight="bold" aria-hidden />
                       </button>
@@ -3456,7 +3456,7 @@ export default function DirectoryClient({
                     </p>
                     <Link
                       href="/mon-compte"
-                      className="h-[40px] px-5 rounded-xl bg-primary text-white text-[13.5px] font-semibold flex items-center justify-center active:scale-[.98] transition-transform"
+                      className="h-[40px] px-5 rounded-xl bg-primary text-on-primary text-[13.5px] font-semibold flex items-center justify-center active:scale-[.98] transition-transform"
                     >
                       Se connecter
                     </Link>
@@ -3904,7 +3904,7 @@ export default function DirectoryClient({
               aria-pressed={resultsView === "carte"}
               title={resultsView === "carte" ? "Voir en liste" : "Voir la carte"}
               className={`lg:hidden shrink-0 ml-auto order-last inline-flex items-center gap-1 rounded-full px-2.5 py-1 text-[12.5px] font-semibold transition-colors ${
-                resultsView === "carte" ? "bg-primary text-white" : "bg-surface-2 text-ink"
+                resultsView === "carte" ? "bg-primary text-on-primary" : "bg-surface-2 text-ink"
               }`}
             >
               <MapPin size={14} weight={resultsView === "carte" ? "fill" : "regular"} aria-hidden />
@@ -3942,7 +3942,7 @@ export default function DirectoryClient({
                     style={
                       isActive
                         ? { background: c.color, color: "#fff" }
-                        : { background: `${c.color}22`, color: c.color }
+                        : { background: `${c.color}22`, color: `var(--cat-${c.key}-text)` }
                     }
                   >
                     {CIcon ? <CIcon size={13} weight={isActive ? "fill" : "regular"} aria-hidden /> : <span aria-hidden>{c.emoji}</span>}

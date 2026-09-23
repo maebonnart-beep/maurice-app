@@ -83,7 +83,7 @@ export function FilterDropdown({
         {icon}
         <span className="truncate">{label}</span>
         {count > 0 && (
-          <span className="ml-0.5 min-w-[18px] h-[18px] px-1 inline-flex items-center justify-center rounded-full bg-primary text-white text-[11px] font-bold shrink-0">
+          <span className="ml-0.5 min-w-[18px] h-[18px] px-1 inline-flex items-center justify-center rounded-full bg-primary text-on-primary text-[11px] font-bold shrink-0">
             {count}
           </span>
         )}
@@ -118,7 +118,7 @@ export function FilterDropdown({
                 >
                   <span
                     className={`w-4 h-4 rounded border flex items-center justify-center shrink-0 text-[11px] ${
-                      on ? "bg-primary border-primary text-white" : "border-border"
+                      on ? "bg-primary border-primary text-on-primary" : "border-border"
                     }`}
                   >
                     {on ? "✓" : ""}

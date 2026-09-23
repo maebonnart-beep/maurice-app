@@ -82,7 +82,8 @@ export function CategoryRow({
   const iconBg = cat
     ? `color-mix(in srgb, ${cat.color} 15%, var(--surface))`
     : "var(--primary-tint)";
-  const iconColor = cat ? cat.color : "var(--primary-deep)";
+  // Icône en --cat-<clé>-text (≥ 4,5:1 sur la pastille, en clair comme en sombre).
+  const iconColor = cat ? `var(--cat-${cat.key}-text)` : "var(--primary-deep)";
   const resolvedKey = iconKey ?? category ?? "";
   // Mascotte poulpe uniquement sur les lignes de catégorie (niveau 1) —
   // les rubriques (niveau 2) gardent leur picto plat (subIcon).
@@ -133,7 +134,7 @@ export function CategoryRow({
         <span className="flex items-start gap-1.5">
           {Icon && (
             <span
-              className="shrink-0 mt-0.5 inline-flex items-center justify-center w-6 h-6 rounded-full text-on-accent"
+              className="shrink-0 mt-0.5 inline-flex items-center justify-center w-6 h-6 rounded-full text-white"
               style={{ background: cat.color }}
             >
               <Icon size={13} weight="bold" aria-hidden />

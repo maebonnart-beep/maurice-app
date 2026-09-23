@@ -169,7 +169,7 @@ export function AlertesClient({
               type="button"
               onClick={() => setType("listing")}
               className={`flex-1 h-[38px] rounded-xl text-[13px] font-semibold border ${
-                type === "listing" ? "bg-primary text-white border-primary" : "border-border text-ink"
+                type === "listing" ? "bg-primary text-on-primary border-primary" : "border-border text-ink"
               }`}
             >
               Annonces
@@ -178,7 +178,7 @@ export function AlertesClient({
               type="button"
               onClick={() => setType("event")}
               className={`flex-1 h-[38px] rounded-xl text-[13px] font-semibold border ${
-                type === "event" ? "bg-primary text-white border-primary" : "border-border text-ink"
+                type === "event" ? "bg-primary text-on-primary border-primary" : "border-border text-ink"
               }`}
             >
               Événements
@@ -252,7 +252,7 @@ export function AlertesClient({
                     type="button"
                     onClick={() => setThemes((prev) => toggleInList(prev, t.key))}
                     className={`text-[12.5px] font-semibold px-2.5 py-1 rounded-pill border ${
-                      themes.includes(t.key) ? "bg-primary text-white border-primary" : "border-border text-ink"
+                      themes.includes(t.key) ? "bg-primary text-on-primary border-primary" : "border-border text-ink"
                     }`}
                   >
                     {t.emoji} {t.label}
@@ -269,7 +269,7 @@ export function AlertesClient({
                     type="button"
                     onClick={() => setEventFilters((prev) => toggleInList(prev, o.key))}
                     className={`text-[12.5px] font-semibold px-2.5 py-1 rounded-pill border ${
-                      eventFilters.includes(o.key) ? "bg-primary text-white border-primary" : "border-border text-ink"
+                      eventFilters.includes(o.key) ? "bg-primary text-on-primary border-primary" : "border-border text-ink"
                     }`}
                   >
                     {o.emoji} {o.label}
@@ -299,7 +299,7 @@ export function AlertesClient({
         <button
           type="submit"
           disabled={submitting}
-          className="w-full h-[46px] rounded-xl font-semibold text-[14px] text-white bg-primary active:scale-[.98] transition-transform disabled:opacity-40"
+          className="w-full h-[46px] rounded-xl font-semibold text-[14px] text-on-primary bg-primary active:scale-[.98] transition-transform disabled:opacity-40"
         >
           {submitting ? "Création…" : "Créer l'alerte"}
         </button>
