@@ -1,11 +1,13 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import dynamic from "next/dynamic";
 import type { Business, PriceRange } from "@/lib/types";
 import { BusinessCard } from "@/components/ui/BusinessCard";
 import { BusinessDetail } from "@/components/ui/BusinessDetail";
 import { FilterChip } from "@/components/ui/FilterChip";
 import { FILTER_GROUPS, SUBCATEGORIES } from "@/data/categories";
+import { MapPin } from "@/lib/icons";
 import {
   PLAN_ACTIVITIES,
   PLAN_BUDGETS,
@@ -38,6 +40,12 @@ const RUBRIQUE_LABEL: Record<string, { label: string; emoji: string }> = Object.
 function groupsFor(rubriques: string[]) {
   return FILTER_GROUPS.filter((g) => g.appliesTo.some((k) => rubriques.includes(k)));
 }
+
+// Même carte que l'annuaire (Leaflet, client uniquement).
+const Map = dynamic(() => import("../Map"), {
+  ssr: false,
+  loading: () => <div className="flex items-center justify-center h-full text-sm text-muted">Chargement de la carte…</div>,
+});
 
 const PAGE_SIZE = 3;
 
@@ -101,6 +109,10 @@ export default function PlanWizard({
   const [placeTerrace, setPlaceTerrace] = useState(false);
   const [placeSubmitted, setPlaceSubmitted] = useState<PlaceCriteria | null>(null);
   const [placePage, setPlacePage] = useState(0);
+  // Résultats « Trouver un lieu » : liste ou carte (toutes les adresses trouvées, pas seulement la page affichée).
+  const [placeMapOpen, setPlaceMapOpen] = useState(false);
+  const [mapSelectedId, setMapSelectedId] = useState<string | null>(null);
+  const [mapHoveredId, setMapHoveredId] = useState<string | null>(null);
 
   const combos = useMemo(() => (submitted ? buildPlan(businesses, submitted) : []), [businesses, submitted]);
   const visible = combos.slice(page * PAGE_SIZE, page * PAGE_SIZE + PAGE_SIZE);
@@ -375,18 +387,42 @@ export default function PlanWizard({
             )}
 
             {placeVisible.length > 0 && (
-              <p className="mb-3 text-[12px] font-semibold text-muted">
-                {placeResults.length} adresse{placeResults.length > 1 ? "s" : ""}
-              </p>
+              <div className="mb-3 flex items-center justify-between gap-2">
+                <p className="text-[12px] font-semibold text-muted">
+                  {placeResults.length} adresse{placeResults.length > 1 ? "s" : ""}
+                </p>
+                <button
+                  onClick={() => setPlaceMapOpen((v) => !v)}
+                  aria-pressed={placeMapOpen}
+                  className="inline-flex items-center gap-1.5 rounded-pill border border-primary px-3 py-1.5 text-[12.5px] font-bold text-primary active:scale-[.97] transition-transform"
+                >
+                  <MapPin size={14} weight={placeMapOpen ? "fill" : "regular"} aria-hidden />
+                  {placeMapOpen ? "Voir la liste" : "Sur la carte"}
+                </button>
+              </div>
             )}
 
-            <div className="space-y-3">
-              {placeVisible.map((b) => (
-                <BusinessCard key={b.id} business={b} active={false} onSelect={() => setOpenBusiness(b)} onHover={() => {}} />
-              ))}
-            </div>
+            {placeMapOpen && placeResults.length > 0 ? (
+              <div className="rounded-card border border-border bg-surface shadow-card overflow-hidden isolate h-[65vh]">
+                <Map
+                  businesses={placeResults}
+                  selectedId={mapSelectedId}
+                  onSelect={setMapSelectedId}
+                  onBoundsChange={() => {}}
+                  fitKey={`lieu|${placeResults.map((b) => b.id).join(",")}`}
+                  hoveredId={mapHoveredId}
+                  onHover={setMapHoveredId}
+                />
+              </div>
+            ) : (
+              <div className="space-y-3">
+                {placeVisible.map((b) => (
+                  <BusinessCard key={b.id} business={b} active={false} onSelect={() => setOpenBusiness(b)} onHover={() => {}} />
+                ))}
+              </div>
+            )}
 
-            {placeHasMore && (
+            {placeHasMore && !placeMapOpen && (
               <button
                 onClick={() => setPlacePage((p) => p + 1)}
                 className="mt-3 w-full rounded-pill border border-primary px-4 py-2.5 text-[14px] font-bold text-primary active:scale-[.98] transition-transform"
