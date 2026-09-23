@@ -1028,11 +1028,13 @@ export default function DirectoryClient({
   }, [businesses, account.isPremium]);
 
   // Accueil → « Adresses kids friendly » : même logique que les coups de cœur,
-  // filtrée sur le thème kids-friendly.
+  // filtrée sur le thème kids-friendly. Affichée uniquement si l'utilisateur a
+  // coché « J'ai des enfants » dans ses préférences.
   const kidsFriendly = useMemo(() => {
+    if (!preferences.hasKids) return [];
     const all = businesses.filter((b) => (b.themes || []).includes("kids-friendly") && b.photoUrl);
     return shuffleReady ? shuffled(all) : all;
-  }, [businesses, shuffleReady]);
+  }, [businesses, shuffleReady, preferences.hasKids]);
 
   // Accueil → bandeau « Seconde main » : annonces réelles avec au moins une photo.
   const previewListingPhotos = useMemo(
@@ -2158,7 +2160,7 @@ export default function DirectoryClient({
                         <span className="min-w-0 flex-1">
                           <span className="block text-[14px] font-extrabold leading-tight">Trouver un lieu</span>
                           <span className="block text-[11.5px] text-muted leading-snug mt-0.5">
-                            Resto, bar, excursion ou visite : ta thématique, tes critères, une liste d&apos;adresses
+                            Resto, bar, plage, excursion, visite ou shopping : ta thématique, tes critères, une liste d&apos;adresses
                           </span>
                         </span>
                         <span className="shrink-0 text-[18px] font-bold text-primary-deep" aria-hidden>›</span>
@@ -2381,6 +2383,7 @@ export default function DirectoryClient({
               <span className="flex items-center justify-center gap-1 h-[60px] sm:h-[72px]">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src="/badge-selection.png" alt="Recommandées" className="w-[60px] h-[60px] sm:w-[72px] sm:h-[72px] object-contain" />
+                {kidsFriendly.length > 0 && (
                 <button
                   onClick={(e) => { e.stopPropagation(); scrollToHomeSection("accueil-kids-friendly"); }}
                   aria-label="Adresses kids friendly"
@@ -2389,6 +2392,7 @@ export default function DirectoryClient({
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img src="/badge-kids.png" alt="" aria-hidden className="w-[60px] h-[60px] sm:w-[72px] sm:h-[72px] object-contain" />
                 </button>
+                )}
               </span>
               <span className="text-[13px] sm:text-[15px] font-extrabold text-ink leading-tight text-center">Nos sélections Koté Moris</span>
             </div>
