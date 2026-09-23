@@ -529,6 +529,7 @@ export default function PlanWizard({
                     onSelect={setMapSelectedId}
                     onBoundsChange={() => {}}
                     fitKey={`plan|${steps.map((b) => b.id).join(",")}`}
+                    numbered
                     hoveredId={mapHoveredId}
                     onHover={setMapHoveredId}
                   />
