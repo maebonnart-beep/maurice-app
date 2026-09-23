@@ -35,7 +35,8 @@ export function CategoryTile({
   const iconBg = cat
     ? `color-mix(in srgb, ${cat.color} 15%, var(--surface))`
     : "var(--primary-tint)";
-  const iconColor = cat ? cat.color : "var(--primary-deep)";
+  // Icône en --cat-<clé>-text (≥ 4,5:1 sur la pastille, en clair comme en sombre).
+  const iconColor = cat ? `var(--cat-${cat.key}-text)` : "var(--primary-deep)";
   const resolvedKey = iconKey ?? category ?? "";
   const Icon = iconForKey(resolvedKey);
 

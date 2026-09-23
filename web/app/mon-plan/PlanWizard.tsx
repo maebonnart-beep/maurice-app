@@ -237,7 +237,7 @@ export default function PlanWizard({
           onClick={() => setMode("lieu")}
           aria-pressed={mode === "lieu"}
           className={`rounded-pill px-3.5 py-1.5 text-[13px] font-bold transition-colors ${
-            mode === "lieu" ? "bg-primary text-white" : "text-ink"
+            mode === "lieu" ? "bg-primary text-on-primary" : "text-ink"
           }`}
         >
           Trouver un lieu
@@ -246,7 +246,7 @@ export default function PlanWizard({
           onClick={() => setMode("plan")}
           aria-pressed={mode === "plan"}
           className={`rounded-pill px-3.5 py-1.5 text-[13px] font-bold transition-colors ${
-            mode === "plan" ? "bg-primary text-white" : "text-ink"
+            mode === "plan" ? "bg-primary text-on-primary" : "text-ink"
           }`}
         >
           Plan complet
@@ -284,7 +284,7 @@ export default function PlanWizard({
                   onClick={() => chooseTheme(t.key)}
                   aria-pressed={placeTheme === t.key}
                   className={`flex flex-col items-center gap-1 rounded-xl border py-2.5 px-1 transition-colors active:scale-[.96] ${
-                    placeTheme === t.key ? "border-primary bg-primary text-white" : "border-border bg-surface text-ink"
+                    placeTheme === t.key ? "border-primary bg-primary text-on-primary" : "border-border bg-surface text-ink"
                   }`}
                 >
                   <span className="text-[20px]" aria-hidden>{t.emoji}</span>
@@ -373,7 +373,7 @@ export default function PlanWizard({
 
           <button
             onClick={submitPlace}
-            className="mt-7 w-full rounded-pill bg-primary px-4 py-3 text-[15px] font-extrabold text-white shadow-card active:scale-[.98] transition-transform"
+            className="mt-7 w-full rounded-pill bg-primary px-4 py-3 text-[15px] font-extrabold text-on-primary shadow-card active:scale-[.98] transition-transform"
           >
             Voir les adresses
           </button>
@@ -457,7 +457,7 @@ export default function PlanWizard({
         <button
           onClick={submitText}
           disabled={text.trim() === ""}
-          className="mt-2 w-full rounded-pill bg-primary px-4 py-2.5 text-[14px] font-extrabold text-white shadow-card active:scale-[.98] transition-transform disabled:opacity-40"
+          className="mt-2 w-full rounded-pill bg-primary px-4 py-2.5 text-[14px] font-extrabold text-on-primary shadow-card active:scale-[.98] transition-transform disabled:opacity-40"
         >
           Trouver mon plan
         </button>
@@ -483,7 +483,7 @@ export default function PlanWizard({
 
       <button
         onClick={submit}
-        className="mt-7 w-full rounded-pill bg-primary px-4 py-3 text-[15px] font-extrabold text-white shadow-card active:scale-[.98] transition-transform"
+        className="mt-7 w-full rounded-pill bg-primary px-4 py-3 text-[15px] font-extrabold text-on-primary shadow-card active:scale-[.98] transition-transform"
       >
         Voir mon plan
       </button>

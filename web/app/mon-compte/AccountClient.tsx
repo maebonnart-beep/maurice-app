@@ -86,7 +86,7 @@ export function AccountClient({ email, isPremium }: { email: string; isPremium: 
         </div>
         <Link
           href="/mon-compte/nouvelle-annonce"
-          className="shrink-0 h-[38px] px-4 rounded-xl bg-primary text-white text-[13.5px] font-semibold flex items-center justify-center active:scale-[.98] transition-transform"
+          className="shrink-0 h-[38px] px-4 rounded-xl bg-primary text-on-primary text-[13.5px] font-semibold flex items-center justify-center active:scale-[.98] transition-transform"
         >
           Déposer
         </Link>

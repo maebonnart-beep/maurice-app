@@ -21,7 +21,7 @@ export default async function EditAnnoncePage({
         <p className="font-serif text-lg font-semibold leading-tight">Connexion requise</p>
         <Link
           href="/mon-compte"
-          className="h-[44px] px-5 rounded-xl bg-primary text-white text-[14px] font-semibold flex items-center justify-center active:scale-[.98] transition-transform"
+          className="h-[44px] px-5 rounded-xl bg-primary text-on-primary text-[14px] font-semibold flex items-center justify-center active:scale-[.98] transition-transform"
         >
           Se connecter
         </Link>

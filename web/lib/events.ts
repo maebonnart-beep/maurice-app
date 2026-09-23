@@ -2,16 +2,22 @@ import type { Business } from "./types";
 
 /** Couleur par type d'événement (filtre), pour distinguer visuellement concerts / sport / associatif / etc. */
 export const EVENT_TYPE_COLOR: Record<string, string> = {
-  concert: "#a855f7",
-  festival: "#f97316",
-  "spectacle-comedie": "#ec4899",
-  "clubbing-soiree": "#6366f1",
+  concert: "#9e42f6",
+  festival: "#c35305",
+  "spectacle-comedie": "#df177a",
+  "clubbing-soiree": "#6063f1",
   "culturel-traditionnel": "#eab308",
-  "associatif-caritatif": "#0ea5e9",
-  culinaire: "#ef4444",
+  "associatif-caritatif": "#0b7caf",
+  culinaire: "#e81414",
 };
-export const SPORT_EVENT_COLOR = "#22c55e";
-export const DEFAULT_EVENT_COLOR = "#e0518a";
+export const SPORT_EVENT_COLOR = "#178640";
+export const DEFAULT_EVENT_COLOR = "#d92c71";
+
+/** Couleur du texte posé sur une couleur d'événement : blanc (≥ 4,5:1), sauf sur le jaune
+ *  « culturel / traditionnel », gardé vif volontairement, où le texte passe en teal foncé. */
+export function eventTextColor(color: string): string {
+  return color === EVENT_TYPE_COLOR["culturel-traditionnel"] ? "var(--on-accent)" : "#ffffff";
+}
 
 /** Couleur d'un événement : verte pour toute la rubrique "Événements sportifs" (quelle que soit sa nature),
  * sinon celle de son premier filtre de type reconnu, sinon la couleur par défaut. */

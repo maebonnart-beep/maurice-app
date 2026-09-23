@@ -31,16 +31,18 @@ import { AddAddressForm } from "@/components/ui/AddAddressForm";
 
 // Jetons de couleur documentés (valeurs = mode clair ; le mode sombre bascule via CSS).
 const COLOR_TOKENS: { name: string; var: string; hex: string; onDark?: boolean }[] = [
-  { name: "bg", var: "--bg", hex: "#ede6d5" },
+  { name: "bg", var: "--bg", hex: "#e6f3f1" },
   { name: "surface", var: "--surface", hex: "#ffffff" },
-  { name: "surface-2", var: "--surface-2", hex: "#f7f1e3" },
+  { name: "surface-2", var: "--surface-2", hex: "#f1f9f8" },
   { name: "ink", var: "--ink", hex: "#123a3f", onDark: true },
-  { name: "muted", var: "--muted", hex: "#5f7377", onDark: true },
-  { name: "border", var: "--border", hex: "#e2dbc9" },
+  { name: "muted", var: "--muted", hex: "#596b6f", onDark: true },
+  { name: "border", var: "--border", hex: "#d6e9e6" },
   { name: "primary", var: "--primary", hex: "#087e8b", onDark: true },
   { name: "primary-deep", var: "--primary-deep", hex: "#066470", onDark: true },
   { name: "primary-tint", var: "--primary-tint", hex: "#d7ede9" },
+  { name: "on-primary", var: "--on-primary", hex: "#ffffff" },
   { name: "accent", var: "--accent", hex: "#f4c95d" },
+  { name: "on-accent", var: "--on-accent", hex: "#133c40", onDark: true },
 ];
 
 // Fiches d'exemple couvrant les variantes de BusinessCard.
@@ -188,9 +190,9 @@ export default function DesignSystemPage() {
       <Section title="Rayons & élévation" hint="Utilitaires rounded-* et shadow-* du design system.">
         <div className="flex flex-wrap gap-4">
           {[
-            { cls: "rounded-btn", label: "rounded-btn · 10px" },
-            { cls: "rounded-card", label: "rounded-card · 16px" },
-            { cls: "rounded-tile", label: "rounded-tile · 16px" },
+            { cls: "rounded-btn", label: "rounded-btn · 11px" },
+            { cls: "rounded-card", label: "rounded-card · 12px" },
+            { cls: "rounded-tile", label: "rounded-tile · 12px" },
             { cls: "rounded-pill", label: "rounded-pill · 999px" },
           ].map((r) => (
             <div key={r.cls} className="flex flex-col items-center gap-1.5">

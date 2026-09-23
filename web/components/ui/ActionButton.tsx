@@ -28,7 +28,7 @@ export function ActionButton({
   const base =
     "inline-flex items-center gap-1.5 px-3 py-1.5 rounded-btn text-body font-semibold no-underline transition-colors";
   const styles: Record<Variant, string> = {
-    primary: "bg-primary border border-primary text-white hover:bg-primary-deep",
+    primary: "bg-primary border border-primary text-on-primary hover:bg-primary-deep",
     secondary:
       "bg-surface-2 border border-border text-ink hover:border-primary hover:text-primary-deep",
   };

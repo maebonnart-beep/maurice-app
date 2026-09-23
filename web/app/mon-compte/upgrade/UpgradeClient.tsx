@@ -99,7 +99,7 @@ export function UpgradeClient() {
           <p className="text-[12.5px] text-muted -mt-1.5">Déjà abonné ? Connecte-toi pour retrouver ton accès.</p>
           <Link
             href="/mon-compte"
-            className="w-full h-[48px] rounded-xl font-semibold text-[15px] text-white bg-primary active:scale-[.98] transition-transform flex items-center justify-center"
+            className="w-full h-[48px] rounded-xl font-semibold text-[15px] text-on-primary bg-primary active:scale-[.98] transition-transform flex items-center justify-center"
           >
             Se connecter
           </Link>
@@ -108,7 +108,7 @@ export function UpgradeClient() {
         <button
           onClick={startCheckout}
           disabled={loading}
-          className="w-full h-[48px] rounded-xl font-semibold text-[15px] text-white bg-primary active:scale-[.98] transition-transform disabled:opacity-40"
+          className="w-full h-[48px] rounded-xl font-semibold text-[15px] text-on-primary bg-primary active:scale-[.98] transition-transform disabled:opacity-40"
         >
           {loading ? "Redirection…" : "S'abonner"}
         </button>

@@ -45,7 +45,7 @@ export default async function SecondeMainPage({
         </div>
         <Link
           href="/mon-compte/nouvelle-annonce"
-          className="shrink-0 h-[40px] px-4 rounded-xl bg-primary text-white text-[14px] font-semibold flex items-center justify-center active:scale-[.98] transition-transform"
+          className="shrink-0 h-[40px] px-4 rounded-xl bg-primary text-on-primary text-[14px] font-semibold flex items-center justify-center active:scale-[.98] transition-transform"
         >
           Déposer
         </Link>
@@ -63,7 +63,7 @@ export default async function SecondeMainPage({
         <Link
           href="/seconde-main"
           className={`text-[12.5px] font-semibold px-2.5 py-1 rounded-pill border ${
-            !categorie ? "bg-primary text-white border-primary" : "border-border text-ink"
+            !categorie ? "bg-primary text-on-primary border-primary" : "border-border text-ink"
           }`}
         >
           Tout
@@ -73,7 +73,7 @@ export default async function SecondeMainPage({
             key={c.key}
             href={`/seconde-main?categorie=${c.key}`}
             className={`text-[12.5px] font-semibold px-2.5 py-1 rounded-pill border ${
-              categorie === c.key ? "bg-primary text-white border-primary" : "border-border text-ink"
+              categorie === c.key ? "bg-primary text-on-primary border-primary" : "border-border text-ink"
             }`}
           >
             {c.label}

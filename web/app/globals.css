@@ -6,13 +6,26 @@
   --surface: #ffffff;
   --surface-2: #f1f9f8;
   --ink: #123a3f;
-  --muted: #5f7377;
+  --muted: #596b6f;
   --border: #d6e9e6;
   --primary: #087e8b;
   --primary-deep: #066470;
   --primary-tint: #d7ede9;
+  /* Texte posé sur --primary / --primary-deep (blanc en clair, teal foncé en sombre). */
+  --on-primary: #ffffff;
   --accent: #f4c95d;
   --on-accent: #133c40;
+
+  /* Texte et icônes posés sur la teinte à 15 % d'une couleur de catégorie
+     (puces rubrique, tuiles) : plus foncé en clair, plus clair en sombre, ≥ 4,5:1. */
+  --cat-manger-boire-text: #ba332a;
+  --cat-sortir-decouvrir-text: #bc3010;
+  --cat-faire-du-sport-text: #277449;
+  --cat-sante-bien-etre-text: #b43468;
+  --cat-acheter-equiper-text: #865f37;
+  --cat-vie-pratique-text: #4a6572;
+  --cat-famille-travail-text: #6945ee;
+  --cat-agenda-text: #bd2260;
 
   /* Bandeau du bas (nav) : fond clair menthe/blanc (cf. maquette poulpe lunettes), icônes/texte teal foncé. */
   --band: #f3fbfa;
@@ -40,8 +53,19 @@
     --primary: #45c4c0;
     --primary-deep: #7ad6d2;
     --primary-tint: #10302f;
+    /* --primary devient clair en sombre : le texte posé dessus passe en teal foncé. */
+    --on-primary: #071c1e;
     --accent: #f4c95d;
     --on-accent: #133c40;
+
+    --cat-manger-boire-text: #e07b74;
+    --cat-sortir-decouvrir-text: #f07053;
+    --cat-faire-du-sport-text: #3bb270;
+    --cat-sante-bien-etre-text: #d97da2;
+    --cat-acheter-equiper-text: #c09465;
+    --cat-vie-pratique-text: #819fad;
+    --cat-famille-travail-text: #a28cf4;
+    --cat-agenda-text: #e56f9e;
 
     /* Bandeau plus profond en mode sombre, distinct du fond. */
     --band: #0a2a2b;
@@ -66,6 +90,7 @@
   --color-primary-deep: var(--primary-deep);
   --color-primary-tint: var(--primary-tint);
   --color-accent: var(--accent);
+  --color-on-primary: var(--on-primary);
   --color-on-accent: var(--on-accent);
   --color-band: var(--band);
   --color-band-deep: var(--band-deep);

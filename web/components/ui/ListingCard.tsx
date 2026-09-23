@@ -42,7 +42,7 @@ export function ListingCard({ listing }: { listing: Listing }) {
         ) : (
           <span className="text-primary-deep text-xs font-semibold">Photo</span>
         )}
-        <PremiumSellerBadge compact className="absolute -top-1 -right-1 inline-flex items-center justify-center w-5 h-5 rounded-full text-white shrink-0 bg-primary-deep border-2 border-surface" />
+        <PremiumSellerBadge compact className="absolute -top-1 -right-1 inline-flex items-center justify-center w-5 h-5 rounded-full text-on-primary shrink-0 bg-primary-deep border-2 border-surface" />
       </span>
       <div className="flex-1 min-w-0">
         {categoryLabel && (

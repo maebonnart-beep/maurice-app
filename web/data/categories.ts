@@ -1,14 +1,14 @@
 import type { Category, CategoryKey, PriceRange } from "@/lib/types";
 
 export const CATEGORIES: Category[] = [
-  { key: "manger-boire", label: "Manger & boire", emoji: "🍽️", color: "#d4483f" },
-  { key: "sortir-decouvrir", label: "Sortir & découvrir", emoji: "🎡", color: "#ef6a4c" },
-  { key: "faire-du-sport", label: "Faire du sport", emoji: "🏃", color: "#2e8b57" },
+  { key: "manger-boire", label: "Manger & boire", emoji: "🍽️", color: "#d24137" },
+  { key: "sortir-decouvrir", label: "Sortir & découvrir", emoji: "🎡", color: "#da3813" },
+  { key: "faire-du-sport", label: "Faire du sport", emoji: "🏃", color: "#2c8453" },
   { key: "sante-bien-etre", label: "Santé & bien-être", emoji: "💆", color: "#c9457a" },
-  { key: "acheter-equiper", label: "Acheter & s'équiper", emoji: "🛍️", color: "#b07d48" },
+  { key: "acheter-equiper", label: "Acheter & s'équiper", emoji: "🛍️", color: "#986c3e" },
   { key: "vie-pratique", label: "Vie pratique", emoji: "🧰", color: "#4a6572" },
   { key: "famille-travail", label: "Famille & Travail", emoji: "🧑‍💼", color: "#7c5cf0" },
-  { key: "agenda", label: "Événements", emoji: "🎉", color: "#e0518a" },
+  { key: "agenda", label: "Événements", emoji: "🎉", color: "#d92c71" },
 ];
 
 export const CATEGORY_MAP = Object.fromEntries(

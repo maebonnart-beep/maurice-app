@@ -227,7 +227,7 @@ export function EditAnnonceClient({ id }: { id: string }) {
       <button
         type="submit"
         disabled={submitting || !title.trim() || !category || !whatsapp.trim()}
-        className="w-full h-[48px] rounded-xl font-semibold text-[15px] text-white bg-primary active:scale-[.98] transition-transform disabled:opacity-40"
+        className="w-full h-[48px] rounded-xl font-semibold text-[15px] text-on-primary bg-primary active:scale-[.98] transition-transform disabled:opacity-40"
       >
         {submitting ? "Enregistrement…" : "Enregistrer"}
       </button>

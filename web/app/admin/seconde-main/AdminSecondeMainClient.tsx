@@ -127,13 +127,13 @@ export function AdminSecondeMainClient() {
       <div className="flex gap-2 mb-4">
         <button
           onClick={() => setTab("pending")}
-          className={`text-sm px-3 py-1 rounded-md ${tab === "pending" ? "bg-primary text-white" : "bg-surface-2"}`}
+          className={`text-sm px-3 py-1 rounded-md ${tab === "pending" ? "bg-primary text-on-primary" : "bg-surface-2"}`}
         >
           En attente
         </button>
         <button
           onClick={() => setTab("all")}
-          className={`text-sm px-3 py-1 rounded-md ${tab === "all" ? "bg-primary text-white" : "bg-surface-2"}`}
+          className={`text-sm px-3 py-1 rounded-md ${tab === "all" ? "bg-primary text-on-primary" : "bg-surface-2"}`}
         >
           Toutes
         </button>
@@ -217,7 +217,7 @@ export function AdminSecondeMainClient() {
                     <button
                       onClick={() => saveEdit(listing.id)}
                       disabled={busyId === listing.id}
-                      className="text-sm px-3 py-1 rounded-md bg-primary text-white disabled:opacity-40"
+                      className="text-sm px-3 py-1 rounded-md bg-primary text-on-primary disabled:opacity-40"
                     >
                       Enregistrer
                     </button>

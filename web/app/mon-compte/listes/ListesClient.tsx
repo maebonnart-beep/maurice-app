@@ -259,7 +259,7 @@ export function ListesClient({ isPremium }: { isPremium: boolean }) {
         <button
           type="submit"
           disabled={creating || !newName.trim()}
-          className="shrink-0 h-[44px] px-4 rounded-xl font-semibold text-[13.5px] text-white bg-primary active:scale-[.98] transition-transform disabled:opacity-40"
+          className="shrink-0 h-[44px] px-4 rounded-xl font-semibold text-[13.5px] text-on-primary bg-primary active:scale-[.98] transition-transform disabled:opacity-40"
         >
           Créer
         </button>

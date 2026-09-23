@@ -86,7 +86,7 @@ export default async function ListingDetailPage({
             {categoryLabel}
           </span>
         )}
-        <PremiumSellerBadge className="inline-flex items-center gap-1 px-2 py-0.5 rounded-pill text-white text-[11px] font-bold bg-primary-deep" />
+        <PremiumSellerBadge className="inline-flex items-center gap-1 px-2 py-0.5 rounded-pill text-on-primary text-[11px] font-bold bg-primary-deep" />
       </div>
       <h1 className="m-0 mt-1.5 font-serif text-[22px] font-semibold leading-tight">{listing.title}</h1>
       <p className="m-0 mt-1 flex items-center gap-2 text-muted text-[13px]">
