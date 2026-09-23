@@ -113,6 +113,8 @@ export default function PlanWizard({
   const [placeMapOpen, setPlaceMapOpen] = useState(false);
   const [mapSelectedId, setMapSelectedId] = useState<string | null>(null);
   const [mapHoveredId, setMapHoveredId] = useState<string | null>(null);
+  // Plan complet : carte des étapes d'un plan (un seul ouvert à la fois, repéré par l'id de son activité).
+  const [planMapId, setPlanMapId] = useState<string | null>(null);
 
   const combos = useMemo(() => (submitted ? buildPlan(businesses, submitted) : []), [businesses, submitted]);
   const visible = combos.slice(page * PAGE_SIZE, page * PAGE_SIZE + PAGE_SIZE);
@@ -509,6 +511,30 @@ export default function PlanWizard({
               </h2>
               <p className="text-[12px] font-bold text-primary">≈ {formatMinutes(c.totalMinutes)} au total</p>
             </div>
+            <button
+              onClick={() => setPlanMapId((id) => (id === c.activity.id ? null : c.activity.id))}
+              aria-pressed={planMapId === c.activity.id}
+              className="mt-2 inline-flex items-center gap-1.5 rounded-pill border border-primary px-3 py-1.5 text-[12.5px] font-bold text-primary active:scale-[.97] transition-transform"
+            >
+              <MapPin size={14} weight={planMapId === c.activity.id ? "fill" : "regular"} aria-hidden />
+              {planMapId === c.activity.id ? "Masquer la carte" : "Sur la carte"}
+            </button>
+            {planMapId === c.activity.id && (() => {
+              const steps = [c.activity, ...(c.restaurant ? [c.restaurant] : []), ...c.extras.map((e) => e.business)];
+              return (
+                <div className="mt-3 rounded-card border border-border bg-surface shadow-card overflow-hidden isolate h-[45vh]">
+                  <Map
+                    businesses={steps}
+                    selectedId={mapSelectedId}
+                    onSelect={setMapSelectedId}
+                    onBoundsChange={() => {}}
+                    fitKey={`plan|${steps.map((b) => b.id).join(",")}`}
+                    hoveredId={mapHoveredId}
+                    onHover={setMapHoveredId}
+                  />
+                </div>
+              );
+            })()}
             <p className="mt-0.5 text-[11.5px] text-muted leading-snug">
               1. {c.activityEstimated ? "≈ " : ""}
               {formatMinutes(c.activityMinutes)}
