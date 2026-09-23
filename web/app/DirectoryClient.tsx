@@ -2129,7 +2129,12 @@ export default function DirectoryClient({
                     <div className="mt-4">
                       <SearchInput
                         value={query}
-                        onChange={(v) => { setQuery(v); if (!searchOpen) setSearchOpen(true); }}
+                        onChange={(v) => { setQuery(v); if (!searchOpen) focusSearch(); }}
+                        // Le champ de l’accueil est remplacé par celui de l’écran
+                        // de recherche dès que searchOpen passe à true : on bascule
+                        // dès le tap, avec autofocus sur le nouveau champ, pour ne
+                        // pas obliger à recliquer dedans.
+                        onFocus={() => { if (!searchOpen) focusSearch(); }}
                         placeholder="Rechercher une activité, un lieu, un nom…"
                       />
                       <p className="mt-2.5 text-[11.5px] text-muted leading-snug text-center">

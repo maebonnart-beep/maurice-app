@@ -6,6 +6,7 @@ export function SearchInput({
   onChange,
   placeholder = "Rechercher…",
   autoFocus = false,
+  onFocus,
 }: {
   value: string;
   onChange: (value: string) => void;
@@ -13,6 +14,7 @@ export function SearchInput({
   /** Focalise le champ dès son montage (pour ouvrir le clavier mobile
    *  sans délai, dans le même geste que le clic qui l'a fait apparaître). */
   autoFocus?: boolean;
+  onFocus?: () => void;
 }) {
   return (
     <div className="relative">
@@ -27,6 +29,7 @@ export function SearchInput({
         aria-label="Rechercher"
         autoComplete="off"
         autoFocus={autoFocus}
+        onFocus={onFocus}
         className="w-full h-[46px] pl-11 pr-4 rounded-pill border border-border bg-surface text-ink text-base shadow-sm focus:outline-none focus:border-primary"
       />
     </div>
