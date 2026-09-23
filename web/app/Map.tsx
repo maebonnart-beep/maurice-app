@@ -2,7 +2,7 @@
 
 import { useEffect, useId, useRef, useState } from "react";
 import { renderToStaticMarkup } from "react-dom/server";
-import { MapContainer, TileLayer, Marker, Popup, useMap, useMapEvents } from "react-leaflet";
+import { MapContainer, TileLayer, Marker, Popup, Polyline, useMap, useMapEvents } from "react-leaflet";
 import L from "leaflet";
 import type { Marker as LeafletMarker } from "leaflet";
 import type { Business } from "@/lib/types";
@@ -155,6 +155,7 @@ export default function Map({
   hoveredId = null,
   onHover,
   userPos,
+  numbered = false,
 }: {
   businesses: Business[];
   selectedId: string | null;
@@ -165,6 +166,8 @@ export default function Map({
   onHover?: (id: string | null) => void;
   /** Position de l'utilisateur (« Autour de moi ») : affichée comme pastille bleue. */
   userPos?: { lat: number; lng: number } | null;
+  /** Parcours (plan complet) : chaque marqueur affiche son rang dans `businesses` (1, 2, 3…) au lieu de l'icône. */
+  numbered?: boolean;
 }) {
   const markersRef = useRef<Record<string, LeafletMarker>>({});
   const mappable = businesses.filter((b) => b.lat !== undefined && b.lng !== undefined);
@@ -196,6 +199,13 @@ export default function Map({
       />
       <MapController businesses={mappable} selectedId={selectedId} markersRef={markersRef} fitKey={fitKey} />
       <BoundsReporter onBoundsChange={onBoundsChange} />
+      {/* Parcours : pointillés reliant les étapes dans l'ordre (1 → 2 → 3…), sous les marqueurs. */}
+      {numbered && mappable.length > 1 && (
+        <Polyline
+          positions={mappable.map((b) => [b.lat as number, b.lng as number] as [number, number])}
+          pathOptions={{ color: "#0a6d67", weight: 3, opacity: 0.8, dashArray: "6 8", lineCap: "round" }}
+        />
+      )}
       {userPos && (
         <Marker position={[userPos.lat, userPos.lng]} icon={userPosIcon}>
           <Popup minWidth={100}>Vous êtes ici</Popup>
@@ -210,7 +220,14 @@ export default function Map({
               if (el) markersRef.current[b.id] = el;
             }}
             position={[b.lat as number, b.lng as number]}
-            icon={buildIcon(markerGlyph(b), cat.color, b.id === selectedId, b.id === hoveredId)}
+            icon={buildIcon(
+              numbered
+                ? `<span style="color:#fff;font-weight:800;font-family:inherit">${businesses.indexOf(b) + 1}</span>`
+                : markerGlyph(b),
+              cat.color,
+              b.id === selectedId,
+              b.id === hoveredId,
+            )}
             eventHandlers={{
               click: () => onSelect(b.id),
               mouseover: () => onHover?.(b.id),
