@@ -88,7 +88,6 @@ import { AddAddressForm } from "@/components/ui/AddAddressForm";
 import { iconForKey, mascotFor, prefIconFor, MapPin } from "@/lib/icons";
 import { displayName, displayCity, shareTagline } from "@/lib/format";
 import { FavoriteButton } from "@/components/ui/FavoriteButton";
-import { MyListsStrip } from "@/components/ui/MyListsStrip";
 import { BannerBackdrop } from "@/components/ui/BannerBackdrop";
 import {
   Heart,
@@ -3083,11 +3082,6 @@ export default function DirectoryClient({
           {/* Accueil → Mes favoris : fiches enregistrées via le cœur (favori + à tester), stockage local. */}
           {showHome && homeMode === "favoris" && (
             <div className="pb-16">
-              {account.loggedIn && (
-                <div className="max-w-[560px] mx-auto pt-1 pb-4">
-                  <MyListsStrip />
-                </div>
-              )}
               {favoriteBusinesses.length === 0 && aTesterBusinesses.length === 0 && testeBusinesses.length === 0 ? (
                 <div className="mt-6 max-w-[420px] mx-auto text-center bg-surface border border-border rounded-2xl shadow-sm p-7 flex flex-col items-center gap-3">
                   <span className="w-14 h-14 rounded-2xl bg-primary-tint text-primary-deep flex items-center justify-center">
