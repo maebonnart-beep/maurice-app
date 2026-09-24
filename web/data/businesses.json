@@ -971,7 +971,8 @@
     "filters": [
       "fruits-de-mer"
     ],
-    "createdAt": "2026-07-09T18:41:47+02:00"
+    "createdAt": "2026-07-09T18:41:47+02:00",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488103-d15795355-Reviews-La_Kaza-Grand_Baie.html"
   },
   {
     "id": "au-feu-de-bois-grand-baie",
@@ -1068,7 +1069,8 @@
     "filters": [
       "europeenne"
     ],
-    "createdAt": "2026-07-09T18:41:47+02:00"
+    "createdAt": "2026-07-09T18:41:47+02:00",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488103-d17393587-Reviews-The_Trojan_Horse-Grand_Baie.html"
   },
   {
     "id": "la-terrasse",
@@ -1217,7 +1219,8 @@
     "filters": [
       "sushis"
     ],
-    "createdAt": "2026-07-09T18:41:47+02:00"
+    "createdAt": "2026-07-09T18:41:47+02:00",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488103-d33071662-Reviews-Mayniko_Restaurant_And_Lounge-Grand_Baie.html"
   },
   {
     "id": "la-payotte-restaurant-grand-baie-cocktail-bar-tapas",
@@ -1240,7 +1243,8 @@
       "europeenne",
       "bars"
     ],
-    "createdAt": "2026-07-09T18:41:47+02:00"
+    "createdAt": "2026-07-09T18:41:47+02:00",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g644023-d26694675-Reviews-La_Payotte_Mauritius-Pointe_aux_Canonniers.html"
   },
   {
     "id": "la-cabane-de-jules",
@@ -1264,7 +1268,8 @@
       "europeenne",
       "mauricienne"
     ],
-    "createdAt": "2026-07-09T18:41:47+02:00"
+    "createdAt": "2026-07-09T18:41:47+02:00",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488103-d9881112-Reviews-La_Cabane_de_Jules-Grand_Baie.html"
   },
   {
     "id": "lazy-lobster",
@@ -1311,7 +1316,8 @@
       "sushis",
       "tables-exception"
     ],
-    "createdAt": "2026-07-09T18:41:47+02:00"
+    "createdAt": "2026-07-09T18:41:47+02:00",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488103-d24070995-Reviews-Ai_KISU_LUX_Grand_Baie-Grand_Baie.html"
   },
   {
     "id": "the-fisherman-lounge",
@@ -1333,7 +1339,8 @@
     "filters": [
       "fruits-de-mer"
     ],
-    "createdAt": "2026-07-09T18:41:47+02:00"
+    "createdAt": "2026-07-09T18:41:47+02:00",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488103-d24070912-Reviews-The_Fisherman_Lounge_Coeur_de_ville_Super_U-Grand_Baie.html"
   },
   {
     "id": "beach-house-restaurant-bar",
@@ -30890,7 +30897,8 @@
       "plus-belles-vues"
     ],
     "hours": "Lun 12h-15h, Mar-Dim 12h-15h & 18h-21h",
-    "createdAt": "2026-07-13T16:28:35+02:00"
+    "createdAt": "2026-07-13T16:28:35+02:00",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g2027561-d18546462-Reviews-Station_A-Baie_du_Cap.html"
   },
   {
     "id": "kot-marie-michelle",
@@ -30959,7 +30967,8 @@
       "mauricienne",
       "tables-exception"
     ],
-    "createdAt": "2026-07-13T16:51:24+02:00"
+    "createdAt": "2026-07-13T16:51:24+02:00",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g2517030-d2571728-Reviews-La_Clef_des_Champs-Floreal.html"
   },
   {
     "id": "flowers-of-paradise-mont-choisy",
@@ -31270,7 +31279,8 @@
     "photoUrl": "/photos/kristens-ice-cream.jpg",
     "photoUrls": [
       "/photos/kristens-ice-cream.jpg"
-    ]
+    ],
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488106-d19068258-Reviews-Kristen_s_Kick_Ass_Ice_Cream-Trou_aux_Biches.html"
   },
   {
     "id": "gelato-heaven-flic-en-flac",
@@ -39781,7 +39791,8 @@
       "tables-exception"
     ],
     "hours": "Dîner 19h-22h30, fermé dim",
-    "createdAt": "2026-07-28T13:56:53+02:00"
+    "createdAt": "2026-07-28T13:56:53+02:00",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488104-d12911115-Reviews-Inti_Lux_Grand_Gaube-Grand_Gaube.html"
   },
   {
     "id": "atlantis-diving-center-vellin-bhurtun",
@@ -52898,7 +52909,8 @@
     ],
     "lat": -19.9966835,
     "lng": 57.5874228,
-    "createdAt": "2026-08-16T12:59:29+02:00"
+    "createdAt": "2026-08-16T12:59:29+02:00",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g1905319-d26813280-Reviews-Bloom-Pereybere.html"
   },
   {
     "id": "william-watt-magicien",
@@ -56992,7 +57004,8 @@
       "/photos/la-terrasse-labourdonnais-3.jpg",
       "/photos/la-terrasse-labourdonnais-4.jpg"
     ],
-    "createdAt": "2026-09-05T17:31:50+02:00"
+    "createdAt": "2026-09-05T17:31:50+02:00",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g3331628-d24116145-Reviews-La_Terrasse-Mapou.html"
   },
   {
     "id": "ti-moris-labourdonnais",
@@ -58265,7 +58278,8 @@
       "fruits-de-mer"
     ],
     "createdAt": "2026-09-21T03:22:41.253Z",
-    "koteMorisComment": "Une adresse où l’on se sent bien accueillis : personnel souriant et attentionné, et des clients qui reviennent plusieurs soirs de suite sans jamais être déçus. Dans l’assiette, les avis saluent les croquettes poulet ou crevette, le poisson grillé (daurade, marlin), le tartare de thon, la soupe de crabe, le plateau de fruits de mer et ses frites maison. Bémol : le rapport qualité/prix et l’ambiance sont un cran en dessous du reste, on y va donc pour la cuisine plus que pour le cadre. Le bon réflexe : ne pas se laisser impressionner par la longue carte et demander conseil au personnel."
+    "koteMorisComment": "Une adresse où l’on se sent bien accueillis : personnel souriant et attentionné, et des clients qui reviennent plusieurs soirs de suite sans jamais être déçus. Dans l’assiette, les avis saluent les croquettes poulet ou crevette, le poisson grillé (daurade, marlin), le tartare de thon, la soupe de crabe, le plateau de fruits de mer et ses frites maison. Bémol : le rapport qualité/prix et l’ambiance sont un cran en dessous du reste, on y va donc pour la cuisine plus que pour le cadre. Le bon réflexe : ne pas se laisser impressionner par la longue carte et demander conseil au personnel.",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g304008-d1803899-Reviews-Le_Mediterranee-Mont_Choisy.html"
   },
   {
     "id": "dodomarket",

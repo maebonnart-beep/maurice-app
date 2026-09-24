@@ -2056,8 +2056,8 @@ export default function DirectoryClient({
                   que centrées : le dépliant « Par expérience » s'ouvre vers le
                   bas sans remonter sur le logo. Empilées sur mobile (image à
                   gauche, texte à droite), 3 colonnes à partir de lg.
-                  Illustrations découpées dans la maquette (recherche-*.webp),
-                  à remplacer par des versions HD quand elles seront fournies. */}
+                  Illustrations HD fournies séparément (recherche-*.webp, 3:2,
+                  2026-09-24), affichées entières : ne pas les recadrer. */}
               <div className="absolute z-20 left-[5%] right-[5%]" style={{ top: "34%" }}>
                 <div className="text-center mb-3">
                   <p className="text-[15px] lg:text-[22px] font-extrabold tracking-[.14em] uppercase text-primary-deep">
@@ -2110,12 +2110,12 @@ export default function DirectoryClient({
                           src={c.img}
                           alt=""
                           aria-hidden
-                          className="shrink-0 w-[50%] lg:w-full aspect-[506/298] object-cover"
+                          className="shrink-0 w-[46%] lg:w-full aspect-[3/2] object-cover"
                         />
                         <span className="min-w-0 flex-1 flex flex-col justify-center px-3 py-2 lg:px-3.5 lg:py-4">
                           {/* « Par » en petite surcapitale au-dessus du mot principal :
                               le titre tient sur une ligne dans la colonne texte
-                              étroite (l'image prend la moitié de la carte sur mobile). */}
+                              étroite (l'image prend ~46% de la carte sur mobile). */}
                           <span className="block text-[10px] lg:text-[12px] font-bold uppercase tracking-[.22em] text-ink/55">Par</span>
                           <span className="block text-[19px] lg:text-[26px] font-extrabold leading-[1.1] text-primary-deep">{c.title}</span>
                           <span className="block text-[11px] lg:text-[14px] text-ink/70 leading-tight mt-1">{c.sub}</span>
