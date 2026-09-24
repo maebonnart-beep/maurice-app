@@ -4755,7 +4755,8 @@
       "fruits-de-mer",
       "tables-exception"
     ],
-    "createdAt": "2026-07-11T18:51:59+02:00"
+    "createdAt": "2026-07-11T18:51:59+02:00",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g293816-d4234592-Reviews-Blue_Marlin_Restaurant-Mauritius.html"
   },
   {
     "id": "emba-filao-lux-le-morne",
@@ -4825,7 +4826,8 @@
     "filters": [
       "indienne"
     ],
-    "createdAt": "2026-07-11T18:51:59+02:00"
+    "createdAt": "2026-07-11T18:51:59+02:00",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488105-d4735569-Reviews-Simply_India-Le_Morne.html"
   },
   {
     "id": "ginja-heritage-le-telfair-bel-ombre",
@@ -4894,7 +4896,8 @@
     "filters": [
       "mauricienne"
     ],
-    "createdAt": "2026-07-11T18:51:59+02:00"
+    "createdAt": "2026-07-11T18:51:59+02:00",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g612353-d3634954-Reviews-Infinity_Blue-Bel_Ombre.html"
   },
   {
     "id": "le-flamboyant-so-sofitel-bel-ombre",
@@ -6568,7 +6571,8 @@
       "europeenne"
     ],
     "hours": "Dim 11h-14h & 17h30-22h, Mar-Ven 17h30-22h, Sam 11h30-15h & 17h30-22h, fermé lun",
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g1905319-d28017279-Reviews-Kalatua-Pereybere.html"
   },
   {
     "id": "chez-vassen-restaurant",
@@ -6636,7 +6640,8 @@
       "italien"
     ],
     "hours": "Mer-Ven 18h-21h30, Sam-Dim 12h-14h30, fermé lun et mar",
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488103-d25324400-Reviews-Le_5_Terre_Restaurant_et_Pinsa-Grand_Baie.html"
   },
   {
     "id": "roots",
@@ -6659,7 +6664,8 @@
       "italien",
       "europeenne"
     ],
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g644023-d3784649-Reviews-Roots-Pointe_aux_Canonniers.html"
   },
   {
     "id": "la-creolo-cafe-resto",
@@ -6720,7 +6726,8 @@
       "europeenne",
       "plus-belles-vues"
     ],
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488103-d12215992-Reviews-L_Horizon-Grand_Baie.html"
   },
   {
     "id": "max-mamma-mia",
@@ -6837,7 +6844,8 @@
     "filters": [
       "grillades"
     ],
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488103-d24069194-Reviews-The_Garden_Grill_Restaurant-Grand_Baie.html"
   },
   {
     "id": "kogi-kogi-grand-baie",
@@ -6859,7 +6867,8 @@
       "asiatique",
       "kids-friendly"
     ],
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488103-d16864855-Reviews-Kogi_Kogi_Korean_BBQ-Grand_Baie.html"
   },
   {
     "id": "divino",
@@ -6880,7 +6889,8 @@
     "filters": [
       "italien"
     ],
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488103-d3931194-Reviews-Divino-Grand_Baie.html"
   },
   {
     "id": "island-babe-mauritius-pereybere",
@@ -6901,7 +6911,8 @@
     "filters": [
       "vegetarien"
     ],
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g1905319-d23626842-Reviews-Island_Babe_Mauritius-Pereybere.html"
   },
   {
     "id": "luigi-s-italian-pizzeria-pasta-bar",
@@ -6922,7 +6933,8 @@
       "italien"
     ],
     "hours": "Tous les jours 12h-14h30, Lun-Jeu et Dim 18h-22h30, Ven-Sam 18h-23h",
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488103-d1215559-Reviews-Luigi_s-Grand_Baie.html"
   },
   {
     "id": "grill-chill",
@@ -6942,7 +6954,8 @@
     "filters": [
       "grillades"
     ],
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g1905319-d7356877-Reviews-Grill_Chill-Pereybere.html"
   },
   {
     "id": "le-domaine-de-grand-baie",
@@ -6984,7 +6997,8 @@
       "fruits-de-mer"
     ],
     "hours": "Lun-Sam 9h-20h, fermé dim",
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g293816-d3679639-Reviews-Kiosque_Magique-Mauritius.html"
   },
   {
     "id": "restaurant-vieille-rouge",
@@ -7240,7 +7254,8 @@
       "mauricienne"
     ],
     "hours": "Mer-Lun 12h-15h & 18h-21h30, fermé mar",
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g298343-d10461565-Reviews-La_Marmite_Mauricienne-Flic_En_Flac.html"
   },
   {
     "id": "melanzana",
@@ -7261,7 +7276,8 @@
       "italien"
     ],
     "hours": "Tous les jours 11h-22h",
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g298343-d17478436-Reviews-Melanzana-Flic_En_Flac.html"
   },
   {
     "id": "buddha-bar-beach",
@@ -7283,7 +7299,8 @@
       "asiatique"
     ],
     "hours": "Tous les jours 12h30-15h & 19h-22h",
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g298343-d15198978-Reviews-Buddha_Bar_Beach-Flic_En_Flac.html"
   },
   {
     "id": "blacksalt-mauritius",
