@@ -15689,27 +15689,6 @@
     "createdAt": "2026-07-12T16:37:31+02:00"
   },
   {
-    "id": "oh-my-cake",
-    "name": "Oh My Cake",
-    "category": "manger-boire",
-    "address": "2H3R+R2W Coastal Road, Péreybère 7, Max Plaza Building, 2H3R+R3W, Coastal Road, Grand Baie",
-    "phone": "+230 5856 3072",
-    "website": "https://instagram.com/ohmycake_mu?igshid=YmMyMTA2M2Y=",
-    "googleMapsUrl": "https://maps.google.com/?cid=5527062521778604056&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-    "lat": -19.995438,
-    "lng": 57.590063,
-    "themes": [
-      "commerces-alimentaires"
-    ],
-    "zone": "nord",
-    "description": "Café-pâtisserie de Péreybère/Grand Baie : gâteaux sur commande, viennoiseries, cookies, tartes, babkas, petit-déjeuner et déjeuner, service traiteur événementiel. Très bien noté (5/5).",
-    "filters": [
-      "boulangeries",
-      "boulangeries-patisseries"
-    ],
-    "createdAt": "2026-07-12T16:37:31+02:00"
-  },
-  {
     "id": "maison-lux-lux-grand-baie",
     "name": "Maison LUX* - LUX* Grand Baie",
     "category": "manger-boire",
@@ -38997,27 +38976,6 @@
     "createdAt": "2026-07-26T08:23:22+02:00"
   },
   {
-    "id": "le-poivrier-ile-plate",
-    "name": "Le Poivrier - Île Plate",
-    "category": "manger-boire",
-    "address": "Île Plate",
-    "zone": "nord",
-    "lat": -20.05,
-    "lng": 57.6167,
-    "themes": [
-      "restaurants"
-    ],
-    "priceRange": "prix-moyen",
-    "description": "\"Governor's House\", antenne du Poivrier sur l'Île Plate (Flat Island) : cuisine française raffinée servie au milieu des ruines de l'époque des pirates, ambiance tropicale façon Saint-Tropez avec musique live. Sur réservation, privatisable, tarifs communiqués sur demande.",
-    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Le%20Poivrier%20-%20%C3%8Ele%20Plate%20%C3%8Ele%20Plate%20Mauritius",
-    "filters": [
-      "mauricienne"
-    ],
-    "phone": "+230 5702 5956",
-    "website": "https://www.lepoivrier.mu/ile-plate",
-    "createdAt": "2026-07-26T08:23:22+02:00"
-  },
-  {
     "id": "first-restaurant-port-louis",
     "name": "First Restaurant",
     "category": "manger-boire",
@@ -40024,7 +39982,7 @@
     "id": "the-lemon-tree-cafe-mapou",
     "name": "The Lemon Tree Café",
     "category": "manger-boire",
-    "address": "Espace Maison et Jardin, Forbach, Mapou",
+    "address": "Circle Square, route de Forbach, Mapou (à l'entrée de Circle Square)",
     "phone": "+230 266 8685",
     "lat": -20.0547225,
     "lng": 57.6132525,
