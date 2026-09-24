@@ -10943,7 +10943,8 @@
     "filters": [
       "asiatique"
     ],
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g481079-d2659063-Reviews-Salut_les_Copains-Mahebourg.html"
   },
   {
     "id": "le-phare-restaurant",
@@ -10994,7 +10995,8 @@
       "mauricienne",
       "plus-belles-vues"
     ],
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g8791755-d9150172-Reviews-Ferney_Falaise_Rouge_Restaurant-Vieux_Grand_Port.html"
   },
   {
     "id": "sea-fire-salt-restaurant",
@@ -11038,7 +11040,8 @@
       "fruits-de-mer"
     ],
     "hours": "Ven-Sam 10h-21h, Lun-Mer + Dim 10h-14h, fermé jeu",
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g481079-d20090264-Reviews-Chez_Francois-Mahebourg.html"
   },
   {
     "id": "blue-bay-snack-blue-bay-tuck-shop",
@@ -11082,7 +11085,8 @@
       "frequente-locaux"
     ],
     "hours": "Lun 9h-16h30, Mar-Ven 9h-15h, Sam 8h30-16h30, fermé dim",
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g481079-d7928869-Reviews-Pyramid_Snack-Mahebourg.html"
   },
   {
     "id": "saveur-kreol",
@@ -11164,7 +11168,8 @@
     "filters": [
       "mauricienne"
     ],
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g1182250-d1983007-Reviews-Blue_Bamboo-Pointe_d_Esny.html"
   },
   {
     "id": "saltyvibes",
@@ -11386,7 +11391,8 @@
       "europeenne"
     ],
     "hours": "Lun 12h-15h, Mar-Sam 12h-15h & 19h-22h, fermé dim",
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g480207-d2558936-Reviews-La_Potiniere_Curepipe-Curepipe.html"
   },
   {
     "id": "volcan-restaurant",
@@ -14729,7 +14735,8 @@
     "filters": [
       "snacks-plage"
     ],
-    "createdAt": "2026-07-12T16:37:31+02:00"
+    "createdAt": "2026-07-12T16:37:31+02:00",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488103-d10842771-Reviews-Chez_Nanda-Grand_Baie.html"
   },
   {
     "id": "la-jefa-loca",
@@ -14771,7 +14778,8 @@
     "filters": [
       "snacks-plage"
     ],
-    "createdAt": "2026-07-12T16:37:31+02:00"
+    "createdAt": "2026-07-12T16:37:31+02:00",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488103-d26791974-Reviews-La_Marinara_Focaccia_Lab-Grand_Baie.html"
   },
   {
     "id": "sarbon-burger-grill",
@@ -14914,7 +14922,8 @@
     "filters": [
       "snacks-plage"
     ],
-    "createdAt": "2026-07-12T16:37:31+02:00"
+    "createdAt": "2026-07-12T16:37:31+02:00",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488106-d13219631-Reviews-Le_BluVital_Fast_Food_Snack-Trou_aux_Biches.html"
   },
   {
     "id": "mam-gouz",
@@ -14937,7 +14946,8 @@
       "europeenne"
     ],
     "hours": "Mer-Sam 11h30-21h, fermé dim + lun + mar",
-    "createdAt": "2026-07-12T16:37:31+02:00"
+    "createdAt": "2026-07-12T16:37:31+02:00",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g1905319-d23811683-Reviews-Mam_Gouz-Pereybere.html"
   },
   {
     "id": "la-demeure-saint-antoine",
@@ -15790,7 +15800,8 @@
       "cafes-terrasses",
       "boulangeries"
     ],
-    "createdAt": "2026-07-12T16:37:31+02:00"
+    "createdAt": "2026-07-12T16:37:31+02:00",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488103-d28153445-Reviews-Maison_Des_Crepes-Grand_Baie.html"
   },
   {
     "id": "la-table-du-chateau-labourdonnais",
@@ -15816,7 +15827,8 @@
       "tables-exception",
       "plus-belles-vues"
     ],
-    "createdAt": "2026-08-17T17:56:47+02:00"
+    "createdAt": "2026-08-17T17:56:47+02:00",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g3331628-d2346648-Reviews-La_Table_du_Chateau-Mapou.html"
   },
   {
     "id": "brandon-l-artisant-patissier",
@@ -19272,7 +19284,8 @@
     "filters": [
       "snacks-plage"
     ],
-    "createdAt": "2026-07-12T16:37:31+02:00"
+    "createdAt": "2026-07-12T16:37:31+02:00",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g298343-d10911165-Reviews-Roti_Aka_Vinoda-Flic_En_Flac.html"
   },
   {
     "id": "beach-house-grill",
@@ -23025,7 +23038,8 @@
     "filters": [
       "mauricienne"
     ],
-    "createdAt": "2026-07-12T16:37:31+02:00"
+    "createdAt": "2026-07-12T16:37:31+02:00",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g1168948-d1733765-Reviews-Le_Palais_de_Barbizon-Chamarel.html"
   },
   {
     "id": "woolworths-so-flo-mauritius",
@@ -26061,7 +26075,8 @@
       "europeenne"
     ],
     "hours": "Tlj 11h-16h (dernières commandes), fermeture 17h",
-    "createdAt": "2026-07-12T16:37:31+02:00"
+    "createdAt": "2026-07-12T16:37:31+02:00",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g737038-d10087536-Reviews-Crocodile_Affame-Riviere_des_Anguilles.html"
   },
   {
     "id": "beach-rouge-lux-grand-gaube",
@@ -29955,7 +29970,8 @@
       "boulangeries-patisseries",
       "cafes-terrasses"
     ],
-    "createdAt": "2026-07-12T16:37:31+02:00"
+    "createdAt": "2026-07-12T16:37:31+02:00",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488106-d17752744-Reviews-Florensuc_Patisserie-Trou_aux_Biches.html"
   },
   {
     "id": "la-boite-a-gateaux-ile-maurice",
@@ -30166,7 +30182,8 @@
       "sushis",
       "asiatique"
     ],
-    "createdAt": "2026-07-12T16:37:31+02:00"
+    "createdAt": "2026-07-12T16:37:31+02:00",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488103-d29037369-Reviews-Tambourine-Grand_Baie.html"
   },
   {
     "id": "hangout-restaurant",
@@ -30610,7 +30627,8 @@
       "europeenne",
       "fruits-de-mer"
     ],
-    "createdAt": "2026-07-12T17:03:39+02:00"
+    "createdAt": "2026-07-12T17:03:39+02:00",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488101-d17847670-Reviews-Segala-Balaclava.html"
   },
   {
     "id": "quarter-deck-bar-maritim-balaclava",
@@ -30684,7 +30702,8 @@
     "filters": [
       "mauricienne"
     ],
-    "createdAt": "2026-07-13T12:11:25+02:00"
+    "createdAt": "2026-07-13T12:11:25+02:00",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g304008-d4778242-Reviews-Stephanie_Snack_et_Restaurant-Mont_Choisy.html"
   },
   {
     "id": "restaurant-malizo",
@@ -30731,7 +30750,8 @@
       "fruits-de-mer",
       "italien"
     ],
-    "createdAt": "2026-07-13T12:11:25+02:00"
+    "createdAt": "2026-07-13T12:11:25+02:00",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488106-d14974408-Reviews-La_Charette_D_Or-Trou_aux_Biches.html"
   },
   {
     "id": "helenas-cafe",
@@ -30776,7 +30796,8 @@
       "frequente-locaux"
     ],
     "hours": "Tous les jours 12h-15h & 18h-22h",
-    "createdAt": "2026-07-13T12:11:25+02:00"
+    "createdAt": "2026-07-13T12:11:25+02:00",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g1187975-d14005031-Reviews-Kanaco_Restaurant-Cap_Malheureux.html"
   },
   {
     "id": "amigo-restaurant-cap-malheureux",
@@ -30799,7 +30820,8 @@
       "fruits-de-mer"
     ],
     "hours": "Lun-Sam 11h30-14h30 & 18h30-22h30, fermé dim",
-    "createdAt": "2026-07-13T15:59:05+02:00"
+    "createdAt": "2026-07-13T15:59:05+02:00",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g1187975-d2500276-Reviews-Amigo_Restaurant-Cap_Malheureux.html"
   },
   {
     "id": "chez-marilyn",
