@@ -12,6 +12,7 @@ const COMMON_FIELDS: { key: keyof Business; label: string }[] = [
   { key: "hours", label: "Horaires" },
   { key: "phone", label: "Téléphone" },
   { key: "website", label: "Site web" },
+  { key: "tripadvisorUrl", label: "Lien TripAdvisor" },
   { key: "address", label: "Adresse" },
   { key: "animalsVisible", label: "Animaux visibles" },
   { key: "promoText", label: "Texte promo" },

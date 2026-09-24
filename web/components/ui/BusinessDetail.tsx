@@ -23,7 +23,7 @@ import { SuggestCommentButton } from "./SuggestCommentButton";
 import { Tag } from "./Tag";
 import { metaFacts } from "./BusinessCard";
 import { iconForKey, subIconFor, CONTACT_ICONS } from "@/lib/icons";
-import { ArrowLeft, ShareNetwork } from "@phosphor-icons/react";
+import { ArrowLeft, ArrowSquareOut, ShareNetwork } from "@phosphor-icons/react";
 
 /** Au-delà de ~6 lignes affichées, on replie la description (rare : ~90% des fiches tiennent en dessous). */
 const DESCRIPTION_CLAMP_THRESHOLD = 320;
@@ -424,6 +424,19 @@ export function BusinessDetail({
                   {b.koteMorisComment}
                 </p>
               </div>
+            )}
+
+            {/* Lien sortant simple vers TripAdvisor : ni logo, ni note, ni avis recopiés (contenu TripAdvisor). */}
+            {b.tripadvisorUrl && (
+              <a
+                href={b.tripadvisorUrl}
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+                className="self-start inline-flex items-center gap-1.5 text-[13px] font-semibold text-primary-deep underline"
+              >
+                Voir les avis sur TripAdvisor
+                <ArrowSquareOut size={14} weight="bold" aria-hidden />
+              </a>
             )}
 
             {(facts.length > 0 ||

@@ -121,4 +121,6 @@ export type Business = {
   photoUrls?: string[];
   /** Avis perso rédigé après une visite (vécue), affiché distinctement de la description factuelle. */
   koteMorisComment?: string;
+  /** URL de la page publique TripAdvisor (restaurants, cafés, bars). Simple lien sortant : ne jamais recopier note, avis ou photos TripAdvisor. Saisie manuelle, pas de scraping. */
+  tripadvisorUrl?: string;
 };
