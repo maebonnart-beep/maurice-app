@@ -511,10 +511,9 @@ export default function DirectoryClient({
   // Accueil « Par catégorie » : catégorie choisie, dont on affiche les rubriques
   // (un seul niveau de profondeur). null = grille des 8 catégories.
   const [homeCategory, setHomeCategory] = useState<CategoryKey | null>(null);
-  // Un seul espace de recherche sur l'accueil, 3 onglets (mot-clé / expérience
-  // / catégorie) qui changent le contenu affiché dans la même carte, plutôt
-  // que plusieurs blocs séparés côte à côte.
-  const [searchTab, setSearchTab] = useState<"mot" | "experience">("mot");
+  // Accueil → carte « Par expérience » : déplie le choix entre les deux
+  // usages de /mon-plan (Trouver un lieu / Plan complet).
+  const [experienceOpen, setExperienceOpen] = useState(false);
   // Accueil « Par catégorie » → rubrique choisie qui a des sous-rubriques
   // (cf. FILTER_GROUPS[].browsable) : page intermédiaire avant les résultats.
   const [homeSubRubrique, setHomeSubRubrique] = useState<string | null>(null);
@@ -2050,131 +2049,114 @@ export default function DirectoryClient({
                 de l'écran d'accueil arrive en dessous, au scroll. */}
             <div className="relative w-full">
               <Logo light tags />
-              {/* Un seul espace de recherche, superposé sur l'illustration et
-                  centré verticalement au niveau des bateaux (~55% de la
-                  hauteur de l'image, cf. bandeau-kotemoris-accueil-v9.webp) —
-                  translateY(-50%) le centre lui-même sur ce repère, quel que
-                  soit son contenu (l'onglet Catégorie est plus haut que
-                  Mot-clé). Les vignettes Événements/Seconde main ont été
-                  déplacées dans le corps de page (cf. plus bas). */}
-              <div
-                className="absolute z-20 overflow-hidden p-5"
-                style={{
-                  left: "6%",
-                  right: "6%",
-                  top: "60%",
-                  transform: "translateY(-50%)",
-                  // Translucide + flou : le lagon/les bateaux restent visibles derrière,
-                  // tout en gardant le texte lisible par-dessus (cf. pastille d'origine,
-                  // même principe de verre dépoli).
-                  background: "color-mix(in srgb, var(--surface) 45%, transparent)",
-                  backdropFilter: "blur(14px)",
-                  WebkitBackdropFilter: "blur(14px)",
-                  border: "1px solid rgba(255,255,255,.5)",
-                  borderRadius: "2rem",
-                  boxShadow: "0 18px 40px -12px rgba(6,50,56,.45), 0 2px 8px rgba(6,50,56,.12)",
-                }}
-              >
-                {/* Poulpe mascotte en filigrane, discret, dans un coin — juste la marque, ne gêne pas la lecture. */}
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src="/poulpe-filigrane.webp"
-                  alt=""
-                  aria-hidden
-                  className="pointer-events-none absolute -right-8 -bottom-10 w-40 h-40 object-contain opacity-[0.07]"
-                />
-                <div className="relative">
-                  <p className="text-center text-[15px] font-extrabold text-ink mb-3">Comment veux-tu chercher ?</p>
-                  <div className="grid grid-cols-3 gap-1 rounded-pill p-1" style={{ background: "color-mix(in srgb, var(--primary) 8%, var(--surface-2))" }}>
-                    {(
-                      [
-                        { key: "mot", label: "Mot-clé", icon: MagnifyingGlass },
-                        { key: "experience", label: "Expérience", icon: Sparkle },
-                        { key: "categorie", label: "Catégorie", icon: Compass },
-                      ] as const
-                    ).map((t) => (
+              {/* « Choisis ta façon de rechercher » : 3 cartes illustrées
+                  (maquette fournie par la cliente le 2026-09-23), superposées
+                  sur l'illustration sous le logo (~34% de la hauteur de
+                  bandeau-kotemoris-accueil-v10.png). Ancrées en haut plutôt
+                  que centrées : le dépliant « Par expérience » s'ouvre vers le
+                  bas sans remonter sur le logo. Empilées sur mobile (image à
+                  gauche, texte à droite), 3 colonnes à partir de lg.
+                  Illustrations découpées dans la maquette (recherche-*.webp),
+                  à remplacer par des versions HD quand elles seront fournies. */}
+              <div className="absolute z-20 left-[5%] right-[5%]" style={{ top: "34%" }}>
+                <div className="text-center mb-3">
+                  <p className="text-[15px] lg:text-[22px] font-extrabold tracking-[.14em] uppercase text-primary-deep">
+                    Choisis ta façon de rechercher
+                  </p>
+                  <div className="mx-auto mt-1.5 h-[2px] w-2/3 rounded-full" style={{ background: "linear-gradient(90deg, transparent, var(--primary), transparent)" }} aria-hidden />
+                  <p className="mt-1.5 text-[10.5px] lg:text-[13px] font-semibold tracking-[.3em] uppercase text-ink/70">
+                    Simple · Rapide · Inspirant
+                  </p>
+                </div>
+                <div className="grid gap-2.5 lg:grid-cols-3 lg:gap-5">
+                  {(
+                    [
+                      { key: "mot", title: "Mot-clé", sub: "Un nom, un lieu, une activité…", img: "/recherche-motcle.webp" },
+                      { key: "categorie", title: "Catégories", sub: "Explore nos univers", img: "/recherche-categories.webp" },
+                      { key: "experience", title: "Expérience", sub: "Des idées prêtes à vivre (plan combiné)", img: "/recherche-experience.webp" },
+                    ] as const
+                  ).map((c) => (
+                    // Dépliant « Par expérience » ouvert : sur mobile, les deux
+                    // autres cartes s'effacent au profit des options (sinon le
+                    // tout déborde du bandeau, qui est en overflow-hidden) ;
+                    // un nouveau tap sur la carte les fait revenir.
+                    <div key={c.key} className={experienceOpen && c.key !== "experience" ? "hidden lg:block" : undefined}>
                       <button
-                        key={t.key}
+                        type="button"
                         onClick={() => {
-                          // « Catégorie » ouvre directement l’écran de toutes
-                          // les catégories plutôt qu’une mini-grille dans la carte.
-                          if (t.key === "categorie") {
+                          if (c.key === "mot") {
+                            focusSearch();
+                          } else if (c.key === "categorie") {
                             setHomeMode("categories");
                             setHomeCategory(null);
                             setHomeSubRubrique(null);
                             window.scrollTo({ top: 0 });
-                            return;
+                          } else {
+                            setExperienceOpen((o) => !o);
                           }
-                          setSearchTab(t.key);
                         }}
-                        aria-pressed={t.key !== "categorie" && searchTab === t.key}
-                        className={`flex flex-col items-center gap-0.5 rounded-pill py-2 text-[12px] font-bold transition-colors ${
-                          searchTab === t.key ? "bg-primary text-on-primary shadow-sm" : "text-ink/70"
-                        }`}
+                        aria-expanded={c.key === "experience" ? experienceOpen : undefined}
+                        className="w-full flex lg:flex-col items-stretch overflow-hidden rounded-3xl text-left lg:text-center active:scale-[.98] transition-transform"
+                        style={{
+                          background: "color-mix(in srgb, var(--surface) 82%, transparent)",
+                          backdropFilter: "blur(12px)",
+                          WebkitBackdropFilter: "blur(12px)",
+                          border: "2px solid rgba(255,255,255,.75)",
+                          boxShadow: "0 14px 30px -12px rgba(6,50,56,.45), 0 2px 6px rgba(6,50,56,.10)",
+                        }}
                       >
-                        <t.icon size={16} weight={searchTab === t.key ? "fill" : "bold"} aria-hidden />
-                        {t.label}
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <img
+                          src={c.img}
+                          alt=""
+                          aria-hidden
+                          className="shrink-0 w-[50%] lg:w-full aspect-[506/298] object-cover"
+                        />
+                        <span className="min-w-0 flex-1 flex flex-col justify-center px-3 py-2 lg:px-3.5 lg:py-4">
+                          {/* « Par » en petite surcapitale au-dessus du mot principal :
+                              le titre tient sur une ligne dans la colonne texte
+                              étroite (l'image prend la moitié de la carte sur mobile). */}
+                          <span className="block text-[10px] lg:text-[12px] font-bold uppercase tracking-[.22em] text-ink/55">Par</span>
+                          <span className="block text-[19px] lg:text-[26px] font-extrabold leading-[1.1] text-primary-deep">{c.title}</span>
+                          <span className="block text-[11px] lg:text-[14px] text-ink/70 leading-tight mt-1">{c.sub}</span>
+                        </span>
                       </button>
-                    ))}
-                  </div>
 
-                  {searchTab === "mot" && (
-                    <div className="mt-4">
-                      <SearchInput
-                        value={query}
-                        onChange={(v) => { setQuery(v); if (!searchOpen) focusSearch(); }}
-                        // Le champ de l’accueil est remplacé par celui de l’écran
-                        // de recherche dès que searchOpen passe à true : on bascule
-                        // dès le tap, avec autofocus sur le nouveau champ, pour ne
-                        // pas obliger à recliquer dedans.
-                        onFocus={() => { if (!searchOpen) focusSearch(); }}
-                        placeholder="Rechercher une activité, un lieu, un nom…"
-                      />
-                      <p className="mt-2.5 text-[11.5px] text-muted leading-snug text-center">
-                        Un nom, un lieu, ou un besoin précis (opticien, plombier…).
-                      </p>
+                      {/* Deux usages de /mon-plan : « Trouver un lieu » d'abord (le
+                          besoin le plus courant), puis le programme complet. */}
+                      {c.key === "experience" && experienceOpen && (
+                        <div className="mt-2 space-y-2">
+                          {(
+                            [
+                              { href: "/mon-plan", icon: MapPin, title: "Trouver un lieu", sub: "Ta thématique, tes critères, une liste d'adresses" },
+                              { href: "/mon-plan?mode=plan", icon: Sparkle, title: "Plan complet", sub: "Un programme sur mesure selon ton groupe, ta zone et ton temps" },
+                            ] as const
+                          ).map((l) => (
+                            <Link
+                              key={l.href}
+                              href={l.href}
+                              className="flex items-center gap-3 rounded-2xl p-3 no-underline text-ink active:scale-[.98] transition-transform"
+                              style={{
+                                background: "color-mix(in srgb, var(--surface) 90%, transparent)",
+                                backdropFilter: "blur(12px)",
+                                WebkitBackdropFilter: "blur(12px)",
+                                boxShadow: "0 8px 20px -10px rgba(6,50,56,.4)",
+                              }}
+                            >
+                              <span className="shrink-0 flex items-center justify-center w-10 h-10 rounded-full bg-primary text-on-primary" aria-hidden>
+                                <l.icon size={20} weight="fill" />
+                              </span>
+                              <span className="min-w-0 flex-1">
+                                <span className="block text-[14px] font-extrabold leading-tight">{l.title}</span>
+                                <span className="block text-[11.5px] text-muted leading-snug mt-0.5">{l.sub}</span>
+                              </span>
+                              <span className="shrink-0 text-[18px] font-bold text-primary-deep" aria-hidden>›</span>
+                            </Link>
+                          ))}
+                        </div>
+                      )}
                     </div>
-                  )}
-
-                  {/* Deux usages de /mon-plan : « Trouver un lieu » d'abord (le
-                      besoin le plus courant), puis le programme complet. */}
-                  {searchTab === "experience" && (
-                    <div className="mt-4 space-y-2">
-                      <Link
-                        href="/mon-plan"
-                        className="flex items-center gap-3 rounded-2xl p-3.5 no-underline text-ink active:scale-[.98] transition-transform"
-                        style={{ background: "linear-gradient(135deg, color-mix(in srgb, var(--primary) 16%, var(--surface)) 0%, var(--surface) 85%)" }}
-                      >
-                        <span className="shrink-0 flex items-center justify-center w-11 h-11 rounded-full bg-primary text-on-primary" aria-hidden>
-                          <MapPin size={22} weight="fill" />
-                        </span>
-                        <span className="min-w-0 flex-1">
-                          <span className="block text-[14px] font-extrabold leading-tight">Trouver un lieu</span>
-                          <span className="block text-[11.5px] text-muted leading-snug mt-0.5">
-                            Resto, bar, plage, excursion, visite, sport, bien-être, enfants ou shopping : ta thématique, tes critères, une liste d&apos;adresses
-                          </span>
-                        </span>
-                        <span className="shrink-0 text-[18px] font-bold text-primary-deep" aria-hidden>›</span>
-                      </Link>
-                      <Link
-                        href="/mon-plan?mode=plan"
-                        className="flex items-center gap-3 rounded-2xl p-3.5 no-underline text-ink active:scale-[.98] transition-transform"
-                        style={{ background: "linear-gradient(135deg, color-mix(in srgb, var(--primary) 16%, var(--surface)) 0%, var(--surface) 85%)" }}
-                      >
-                        <span className="shrink-0 flex items-center justify-center w-11 h-11 rounded-full bg-primary text-on-primary" aria-hidden>
-                          <Sparkle size={22} weight="fill" />
-                        </span>
-                        <span className="min-w-0 flex-1">
-                          <span className="block text-[14px] font-extrabold leading-tight">Plan complet</span>
-                          <span className="block text-[11.5px] text-muted leading-snug mt-0.5">
-                            Un programme sur mesure (activité, resto, sortie…) selon ton groupe, ta zone et ton temps
-                          </span>
-                        </span>
-                        <span className="shrink-0 text-[18px] font-bold text-primary-deep" aria-hidden>›</span>
-                      </Link>
-                    </div>
-                  )}
-
+                  ))}
                 </div>
               </div>
               {/* Joint visuel : fondu au raz du bas de l'illustration vers le
