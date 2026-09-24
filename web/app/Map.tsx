@@ -70,7 +70,7 @@ function BoundsReporter({
     zoomend: () => emit(),
   });
   function emit() {
-    if (!onBoundsChange) return;
+    if (!onBoundsChange || !hasSize(map)) return;
     const b = map.getBounds();
     onBoundsChange({
       north: b.getNorth(),
@@ -81,6 +81,17 @@ function BoundsReporter({
   }
   useEffect(() => {
     emit();
+    // Carte masquée puis ré-affichée (bascule liste ↔ carte sur mobile) :
+    // Leaflet ne voit pas le changement de taille → tuiles grises et bornes
+    // fausses. On recalcule la taille dès que le conteneur change.
+    const el = map.getContainer();
+    const ro = new ResizeObserver(() => {
+      if (!hasSize(map)) return;
+      map.invalidateSize({ pan: false });
+      emit();
+    });
+    ro.observe(el);
+    return () => ro.disconnect();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return null;
@@ -170,6 +181,10 @@ export default function Map({
   numbered?: boolean;
 }) {
   const markersRef = useRef<Record<string, LeafletMarker>>({});
+  // Écrans tactiles : un tap déclenche un « mouseover » sans « mouseout »,
+  // qui re-rendait toute la page (hover) à chaque marqueur touché → lag.
+  const [canHover] = useState(() => typeof window !== "undefined" && window.matchMedia("(hover: hover)").matches);
+  const hover = canHover ? onHover : undefined;
   const mappable = businesses.filter((b) => b.lat !== undefined && b.lng !== undefined);
 
   // Montage différé au 1er effet client : évite l'erreur Leaflet « Map container
@@ -231,8 +246,8 @@ export default function Map({
             )}
             eventHandlers={{
               click: () => onSelect(b.id),
-              mouseover: () => onHover?.(b.id),
-              mouseout: () => onHover?.(null),
+              mouseover: () => hover?.(b.id),
+              mouseout: () => hover?.(null),
             }}
           >
             <Popup minWidth={210}>

@@ -88,6 +88,7 @@ import { AddAddressForm } from "@/components/ui/AddAddressForm";
 import { iconForKey, mascotFor, prefIconFor, MapPin } from "@/lib/icons";
 import { displayName, displayCity, shareTagline } from "@/lib/format";
 import { FavoriteButton } from "@/components/ui/FavoriteButton";
+import { MyListsStrip } from "@/components/ui/MyListsStrip";
 import { BannerBackdrop } from "@/components/ui/BannerBackdrop";
 import {
   Heart,
@@ -912,6 +913,7 @@ export default function DirectoryClient({
   // rubriques → sous-menu d'accueil → menu) au lieu de tout réinitialiser.
   // Utilisé par les bandeaux sticky de l'accueil et de la liste de résultats.
   const canGoBack =
+    (resultsView === "carte" && !isDesktop) ||
     homeSubRubrique !== null ||
     homeCategory !== null ||
     activeThemes.size > 0 ||
@@ -921,6 +923,11 @@ export default function DirectoryClient({
     active !== "all" ||
     homeMode !== "menu";
   function goBackFromResults() {
+    // Mobile, vue carte : le retour ramène d'abord à la liste.
+    if (resultsView === "carte" && !isDesktop) {
+      setResultsView("liste");
+      return;
+    }
     if (agendaBrowseAll) {
       setActive("all"); // retour aux 3 grandes vignettes Agenda (pas à la grille de catégories)
       return;
@@ -1275,19 +1282,24 @@ export default function DirectoryClient({
   const facetActive =
     Object.values(facetGroups).reduce((n, set) => n + set.size, 0) + facetPrices.size + facetBadges.size > 0;
 
+  // Mobile, vue carte : la liste affichée sous la carte reprend automatiquement
+  // les adresses de la zone visible (plus besoin de la case « Zone visible »).
+  const mobileMapView = !isDesktop && resultsView === "carte";
+  // Bornes différées : le recalcul de la liste après un déplacement de carte
+  // passe en basse priorité, pour que le glisser/zoomer reste fluide.
+  const deferredMapBounds = useDeferredValue(mapBounds);
+  const boundsFilterOn = filterByMap || mobileMapView;
+
   // Cartes affichées : limitées à la zone visible de la carte si le filtre est actif.
   const boundedRows = useMemo(() => {
-    if (!filterByMap || !mapBounds) return rows;
-    return rows.filter(
-      (b) =>
-        b.lat === undefined ||
-        b.lng === undefined ||
-        (b.lat <= mapBounds.north &&
-          b.lat >= mapBounds.south &&
-          b.lng <= mapBounds.east &&
-          b.lng >= mapBounds.west)
+    if (!boundsFilterOn || !deferredMapBounds) return rows;
+    const mb = deferredMapBounds;
+    return rows.filter((b) =>
+      b.lat === undefined || b.lng === undefined
+        ? !mobileMapView // sans GPS : invisibles sur la carte, donc absentes de la liste sous la carte
+        : b.lat <= mb.north && b.lat >= mb.south && b.lng <= mb.east && b.lng >= mb.west
     );
-  }, [rows, filterByMap, mapBounds]);
+  }, [rows, boundsFilterOn, deferredMapBounds, mobileMapView]);
 
   // « Autour de moi » : distance par fiche + tri du plus proche au plus loin.
   const distanceById = useMemo(() => {
@@ -1374,7 +1386,9 @@ export default function DirectoryClient({
 
   function selectFromMap(id: string) {
     setSelectedId(id);
-    cardRefs.current[id]?.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    // Mobile : la liste est sous la carte ; faire défiler la page ferait sortir
+    // la carte (et le popup ouvert) de l'écran.
+    if (isDesktop) cardRefs.current[id]?.scrollIntoView({ behavior: "smooth", block: "nearest" });
   }
 
   function selectFromCard(id: string) {
@@ -3069,6 +3083,11 @@ export default function DirectoryClient({
           {/* Accueil → Mes favoris : fiches enregistrées via le cœur (favori + à tester), stockage local. */}
           {showHome && homeMode === "favoris" && (
             <div className="pb-16">
+              {account.loggedIn && (
+                <div className="max-w-[560px] mx-auto pt-1 pb-4">
+                  <MyListsStrip />
+                </div>
+              )}
               {favoriteBusinesses.length === 0 && aTesterBusinesses.length === 0 && testeBusinesses.length === 0 ? (
                 <div className="mt-6 max-w-[420px] mx-auto text-center bg-surface border border-border rounded-2xl shadow-sm p-7 flex flex-col items-center gap-3">
                   <span className="w-14 h-14 rounded-2xl bg-primary-tint text-primary-deep flex items-center justify-center">
@@ -4016,17 +4035,25 @@ export default function DirectoryClient({
               {imageBadgesRow}
               {restoFilterBar}
 
-              <div className="lg:gap-4 lg:h-[calc(100vh-190px)] lg:flex">
-                {/* Liste */}
+              <div className="flex flex-col lg:flex-row lg:gap-4 lg:h-[calc(100vh-190px)]">
+                {/* Liste — en vue carte mobile, affichée sous la carte avec les
+                    seules adresses de la zone visible. */}
                 <div
                   className={`lg:w-[56%] lg:overflow-y-auto lg:pr-1 ${
-                    resultsView === "carte" ? "hidden lg:block" : ""
+                    mobileMapView ? "order-2 mt-3" : ""
                   }`}
                 >
+              {mobileMapView && visibleRows.length > 0 && (
+                <p className="mb-2 text-[12.5px] text-muted">
+                  {visibleRows.length} adresse{visibleRows.length > 1 ? "s" : ""} dans la zone visible
+                </p>
+              )}
               {visibleRows.length === 0 ? (
                 <div className="text-center py-[70px] px-5 text-muted">
                   <div className="text-4xl mb-2.5">🔍</div>
-                  {filterByMap
+                  {mobileMapView
+                    ? "Aucune adresse dans cette zone. Dézoomez ou déplacez la carte."
+                    : filterByMap
                     ? "Aucune adresse dans cette zone. Dézoomez, déplacez la carte, ou décochez « N'afficher que la zone de la carte »."
                     : "Aucun résultat. Essayez un autre mot-clé ou une autre catégorie."}
                 </div>
@@ -4052,12 +4079,15 @@ export default function DirectoryClient({
 
             {/* Carte */}
             <div
-              className={`lg:w-[44%] lg:h-full mt-3 lg:mt-0 ${
-                resultsView === "liste" ? "hidden lg:block" : ""
+              className={`lg:w-[44%] lg:h-full ${
+                resultsView === "liste" ? "hidden lg:block" : "order-1"
               }`}
             >
-              <div className="rounded-card border border-border bg-surface shadow-card overflow-hidden isolate h-[60vh] lg:h-full flex flex-col">
-                <div className="flex items-center justify-between gap-3 flex-wrap px-4 py-2.5 border-b border-border">
+              <div className="rounded-card border border-border bg-surface shadow-card overflow-hidden isolate h-[55vh] lg:h-full flex flex-col">
+                {/* Bandeau d'info + case « Zone visible » : desktop seulement. Sur
+                    mobile il mangeait la carte, et la liste sous la carte suit
+                    déjà la zone visible. */}
+                <div className="hidden lg:flex items-center justify-between gap-3 flex-wrap px-4 py-2.5 border-b border-border">
                   <span className="text-[12.5px] text-muted">
                     Carte des activités — positions GPS
                     {mapMarkerRows.length < rows.length && ` (${mapMarkerRows.length} les + proches sur ${rows.length})`}
