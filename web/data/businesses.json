@@ -4024,7 +4024,8 @@
       "grillades",
       "tables-exception"
     ],
-    "createdAt": "2026-07-11T18:29:40+02:00"
+    "createdAt": "2026-07-11T18:29:40+02:00",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g1168948-d5010642-Reviews-L_Alchimiste-Chamarel.html"
   },
   {
     "id": "chez-rosy-gris-gris-souillac",
@@ -4151,7 +4152,8 @@
     "filters": [
       "fruits-de-mer"
     ],
-    "createdAt": "2026-07-11T18:29:40+02:00"
+    "createdAt": "2026-07-11T18:29:40+02:00",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g481079-d15188634-Reviews-Le_Capitaine-Mahebourg.html"
   },
   {
     "id": "namaste-restaurant-caudan",
@@ -4173,7 +4175,8 @@
     "filters": [
       "indienne"
     ],
-    "createdAt": "2026-07-11T18:29:40+02:00"
+    "createdAt": "2026-07-11T18:29:40+02:00",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g293817-d1215581-Reviews-Namaste-Port_Louis.html"
   },
   {
     "id": "escale-creole-moka",
@@ -4585,7 +4588,8 @@
       "mauricienne",
       "bars"
     ],
-    "createdAt": "2026-07-11T18:51:59+02:00"
+    "createdAt": "2026-07-11T18:51:59+02:00",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g298343-d26227589-Reviews-Salt_Lemon-Flic_En_Flac.html"
   },
   {
     "id": "escale-cuisine-grill-flic-en-flac",
@@ -4606,7 +4610,8 @@
     "filters": [
       "grillades"
     ],
-    "createdAt": "2026-07-11T18:51:59+02:00"
+    "createdAt": "2026-07-11T18:51:59+02:00",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g298343-d26809819-Reviews-Escale_cuisine_et_grill-Flic_En_Flac.html"
   },
   {
     "id": "jeanno-burger-flic-en-flac",
@@ -4655,7 +4660,8 @@
     "filters": [
       "mauricienne"
     ],
-    "createdAt": "2026-07-11T18:51:59+02:00"
+    "createdAt": "2026-07-11T18:51:59+02:00",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g298343-d1215535-Reviews-Leslie_Restaurant-Flic_En_Flac.html"
   },
   {
     "id": "happy-rajah-tamarin",
@@ -4773,7 +4779,8 @@
       "europeenne",
       "cafes-terrasses"
     ],
-    "createdAt": "2026-07-11T18:51:59+02:00"
+    "createdAt": "2026-07-11T18:51:59+02:00",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488105-d7023362-Reviews-Emba_Filao-Le_Morne.html"
   },
   {
     "id": "wapalapam-le-morne",
@@ -4795,7 +4802,8 @@
     "filters": [
       "tables-exception"
     ],
-    "createdAt": "2026-07-11T18:51:59+02:00"
+    "createdAt": "2026-07-11T18:51:59+02:00",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488105-d12581185-Reviews-WAPALAPAM_Island_Eatery-Le_Morne.html"
   },
   {
     "id": "simply-india-st-regis-le-morne",
@@ -4840,7 +4848,8 @@
       "asiatique",
       "sushis"
     ],
-    "createdAt": "2026-07-11T18:51:59+02:00"
+    "createdAt": "2026-07-11T18:51:59+02:00",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g612353-d3843150-Reviews-Gin_ja-Bel_Ombre.html"
   },
   {
     "id": "c-beach-club-bel-ombre",
@@ -4863,7 +4872,8 @@
       "europeenne",
       "bars"
     ],
-    "createdAt": "2026-07-11T18:51:59+02:00"
+    "createdAt": "2026-07-11T18:51:59+02:00",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g612353-d10906525-Reviews-C_Beach_Club-Bel_Ombre.html"
   },
   {
     "id": "infinity-blue-heritage-awali-bel-ombre",
@@ -4928,7 +4938,8 @@
       "asiatique",
       "mauricienne"
     ],
-    "createdAt": "2026-07-11T18:51:59+02:00"
+    "createdAt": "2026-07-11T18:51:59+02:00",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g1124112-d1526391-Reviews-Le_Rochester-Souillac.html"
   },
   {
     "id": "domaine-de-saint-aubin-souillac",
@@ -4951,7 +4962,8 @@
       "mauricienne",
       "tables-exception"
     ],
-    "createdAt": "2026-07-11T18:51:59+02:00"
+    "createdAt": "2026-07-11T18:51:59+02:00",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g1124112-d1407517-Reviews-Domaine_de_Saint_Aubin_et_Le_Saint_Aubin_Restaurant-Souillac.html"
   },
   {
     "id": "hasu-long-beach-belle-mare",
@@ -4974,7 +4986,8 @@
       "asiatique",
       "sushis"
     ],
-    "createdAt": "2026-07-11T18:51:59+02:00"
+    "createdAt": "2026-07-11T18:51:59+02:00",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g298342-d6351064-Reviews-Hasu-Belle_Mare.html"
   },
   {
     "id": "amari-by-vineet-lux-belle-mare",
@@ -4997,7 +5010,8 @@
       "indienne",
       "tables-exception"
     ],
-    "createdAt": "2026-07-11T18:51:59+02:00"
+    "createdAt": "2026-07-11T18:51:59+02:00",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g298342-d12658931-Reviews-Amari_By_Vineet_LUX_Belle_Mare-Belle_Mare.html"
   },
   {
     "id": "mamie-sophie-table-hote-camp-ithier",
@@ -5114,7 +5128,8 @@
     "filters": [
       "mauricienne"
     ],
-    "createdAt": "2026-07-11T18:51:59+02:00"
+    "createdAt": "2026-07-11T18:51:59+02:00",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g481079-d25096419-Reviews-Restaurant_du_Lac-Mahebourg.html"
   },
   {
     "id": "chez-patrick-resto-mahebourg",
@@ -5137,7 +5152,8 @@
       "fruits-de-mer",
       "mauricienne"
     ],
-    "createdAt": "2026-07-11T18:51:59+02:00"
+    "createdAt": "2026-07-11T18:51:59+02:00",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g481079-d1215562-Reviews-Chez_Patrick_Resto-Mahebourg.html"
   },
   {
     "id": "stella-ti-baz-manze-mahebourg",
@@ -5182,7 +5198,8 @@
       "asiatique",
       "mauricienne"
     ],
-    "createdAt": "2026-07-11T18:51:59+02:00"
+    "createdAt": "2026-07-11T18:51:59+02:00",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g481079-d12035826-Reviews-Dragon_De_Chine-Mahebourg.html"
   },
   {
     "id": "good-korma-beau-vallon",
@@ -5228,7 +5245,8 @@
       "tables-exception",
       "produits-locaux"
     ],
-    "createdAt": "2026-07-11T18:51:59+02:00"
+    "createdAt": "2026-07-11T18:51:59+02:00",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g481079-d1215563-Reviews-Les_Copains_d_Abord-Mahebourg.html"
   },
   {
     "id": "flame-n-grill-curepipe",
@@ -5251,7 +5269,8 @@
       "indienne",
       "grillades"
     ],
-    "createdAt": "2026-07-11T18:51:59+02:00"
+    "createdAt": "2026-07-11T18:51:59+02:00",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g480207-d9698481-Reviews-Flame_n_Grill-Curepipe.html"
   },
   {
     "id": "kasafe-curepipe",
@@ -5273,7 +5292,8 @@
     "filters": [
       "asiatique"
     ],
-    "createdAt": "2026-07-11T18:51:59+02:00"
+    "createdAt": "2026-07-11T18:51:59+02:00",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g480207-d10308751-Reviews-Kasafe_Restaurant-Curepipe.html"
   },
   {
     "id": "dallas-yesh-curepipe",
@@ -6295,7 +6315,8 @@
       "mauricienne",
       "snacks-plage"
     ],
-    "createdAt": "2026-07-12T06:09:46+02:00"
+    "createdAt": "2026-07-12T06:09:46+02:00",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g298343-d8692210-Reviews-Menu_Des_Iles-Flic_En_Flac.html"
   },
   {
     "id": "chez-vanessa-pereybere",
