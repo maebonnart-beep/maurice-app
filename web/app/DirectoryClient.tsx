@@ -2202,7 +2202,10 @@ export default function DirectoryClient({
                           alt=""
                           aria-hidden
                           className={`w-[100px] h-[100px] lg:w-32 lg:h-32 rounded-[24%] ${on ? "ring-[3px] ring-primary" : ""}`}
-                          style={{ boxShadow: "0 8px 18px -8px rgba(6,50,56,.45)" }}
+                          // Fondu dans le décor : fond des tuiles rendu
+                          // semi-transparent dans les PNG (objets opaques) +
+                          // léger flou de ce qu'il y a derrière, sans ombre.
+                          style={{ backdropFilter: "blur(6px)", WebkitBackdropFilter: "blur(6px)" }}
                         />
                         {b.label}
                       </button>
