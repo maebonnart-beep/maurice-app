@@ -2163,7 +2163,7 @@ export default function DirectoryClient({
                     La carte a son propre onglet dans la barre du bas (openMap).
                     Icônes fournies par la cliente (planche de 4, découpées en
                     PNG 256×256 à coins transparents : public/recherche-icone-*). */}
-                <div className="grid grid-cols-3 gap-2 lg:gap-3">
+                <div className="-mx-3 lg:mx-0 grid grid-cols-3 gap-1.5 lg:gap-3">
                   {(
                     [
                       { key: "mot", label: "Mot-clé", img: "/recherche-icone-motcle.png" },
@@ -2194,21 +2194,21 @@ export default function DirectoryClient({
                         // pastille blanche en verre dépoli (un simple halo ne
                         // suffisait pas sur le ciel/les montagnes) ; anneau
                         // turquoise autour de l'icône quand Expérience est déplié.
-                        className="flex flex-col items-center gap-1.5 text-[15px] lg:text-[19px] font-extrabold text-primary-deep active:scale-[.96] transition-transform"
+                        className="flex flex-col items-center gap-1.5 text-[16px] lg:text-[20px] font-extrabold text-primary-deep active:scale-[.96] transition-transform"
                       >
                         {/* eslint-disable-next-line @next/next/no-img-element */}
                         <img
                           src={b.img}
                           alt=""
                           aria-hidden
-                          className={`w-[100px] h-[100px] lg:w-32 lg:h-32 rounded-[24%] ${on ? "ring-[3px] ring-primary" : ""}`}
+                          className={`w-[108px] h-[108px] lg:w-36 lg:h-36 rounded-[24%] ${on ? "ring-[3px] ring-primary" : ""}`}
                           // Fondu dans le décor : fond des tuiles rendu
                           // semi-transparent dans les PNG (objets opaques) +
                           // léger flou de ce qu'il y a derrière, sans ombre.
                           style={{ backdropFilter: "blur(6px)", WebkitBackdropFilter: "blur(6px)" }}
                         />
                         <span
-                          className="px-2 lg:px-3 py-0.5 rounded-pill leading-tight whitespace-nowrap"
+                          className="px-2.5 lg:px-3.5 py-1 rounded-pill leading-tight whitespace-nowrap"
                           style={{
                             background: "color-mix(in srgb, var(--surface) 82%, transparent)",
                             backdropFilter: "blur(6px)",
