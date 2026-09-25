@@ -51,7 +51,8 @@ async function load() {
   }
 }
 
-async function patch(id: number, body: Record<string, unknown>): Promise<FavoriteList | null> {
+/** `apply: false` : garde l'état optimiste local au lieu de la réponse serveur. */
+async function patch(id: number, body: Record<string, unknown>, apply = true): Promise<FavoriteList | null> {
   const res = await fetch(`/api/favorite-lists/${id}`, {
     method: "PATCH",
     headers: { "Content-Type": "application/json" },
@@ -60,7 +61,7 @@ async function patch(id: number, body: Record<string, unknown>): Promise<Favorit
   if (!res.ok) return null;
   const { list } = (await res.json()) as { list: Record<string, unknown> };
   const mapped = mapFavoriteListRow(list);
-  setLists((lists) => lists.map((l) => (l.id === id ? mapped : l)));
+  if (apply) setLists((lists) => lists.map((l) => (l.id === id ? mapped : l)));
   return mapped;
 }
 
@@ -112,6 +113,13 @@ const actions = {
       })
     );
     return patch(list.id, { setNote: { businessId, note } });
+  },
+
+  reorder(list: FavoriteList, businessIds: string[]) {
+    setLists((lists) => lists.map((l) => (l.id === list.id ? { ...l, businessIds } : l)));
+    // Clics rapides sur les flèches : une réponse arrivée en retard ne doit
+    // pas ramener un ordre intermédiaire, l'état local fait foi.
+    return patch(list.id, { order: businessIds }, false);
   },
 
   toggleShare(list: FavoriteList) {

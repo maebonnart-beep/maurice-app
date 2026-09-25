@@ -3,7 +3,7 @@
 import { useEffect, useState, type FormEvent } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { Trash, ShareNetwork, Check, PencilSimple, X, Plus, MapPin } from "@phosphor-icons/react";
+import { Trash, ShareNetwork, Check, PencilSimple, X, Plus, MapPin, CaretUp, CaretDown } from "@phosphor-icons/react";
 import { useFavorites } from "@/lib/favorites";
 import { useFavoriteLists } from "@/lib/useFavoriteLists";
 import { getBusinesses } from "@/lib/data";
@@ -243,7 +243,7 @@ function ListInfoForm({
 
 function ListDetail({ list, businesses }: { list: FavoriteList; businesses: Business[] }) {
   const router = useRouter();
-  const { update, toggleBusiness, setNote, toggleShare, remove } = useFavoriteLists();
+  const { update, toggleBusiness, setNote, toggleShare, remove, reorder } = useFavoriteLists();
   const { favoriteIds } = useFavorites();
   const [editing, setEditing] = useState(false);
   const [copied, setCopied] = useState(false);
@@ -256,6 +256,17 @@ function ListDetail({ list, businesses }: { list: FavoriteList; businesses: Busi
   const byId = new Map(businesses.map((b) => [b.id, b]));
   const listBusinesses = list.businessIds.map((id) => byId.get(id)).filter((b): b is Business => !!b);
   const favoritesNotInList = businesses.filter((b) => favoriteIds.has(b.id) && !list.businessIds.includes(b.id));
+
+  /** Échange une fiche avec sa voisine (dir = -1 : monter, +1 : descendre). */
+  function move(index: number, dir: -1 | 1) {
+    const visible = listBusinesses.map((b) => b.id);
+    const target = index + dir;
+    if (target < 0 || target >= visible.length) return;
+    [visible[index], visible[target]] = [visible[target], visible[index]];
+    // Les ids absents de businesses.json (fiche retirée de l'annuaire) restent en fin de liste.
+    const hidden = list.businessIds.filter((id) => !visible.includes(id));
+    reorder(list, [...visible, ...hidden]);
+  }
 
   async function copyLink(token: string) {
     const url = `${window.location.origin}/liste/${token}`;
@@ -381,13 +392,15 @@ function ListDetail({ list, businesses }: { list: FavoriteList; businesses: Busi
         </p>
       ) : (
         <div className="flex flex-col gap-2.5">
-          {listBusinesses.map((b) => (
+          {listBusinesses.map((b, i) => (
             <ListItem
               key={b.id}
               business={b}
               note={list.notes[b.id] ?? ""}
               onSaveNote={(note) => setNote(list, b.id, note)}
               onRemove={() => toggleBusiness(list, b.id)}
+              onMoveUp={i > 0 ? () => move(i, -1) : undefined}
+              onMoveDown={i < listBusinesses.length - 1 ? () => move(i, 1) : undefined}
             />
           ))}
         </div>
@@ -429,18 +442,44 @@ function ListItem({
   note,
   onSaveNote,
   onRemove,
+  onMoveUp,
+  onMoveDown,
 }: {
   business: Business;
   note: string;
   onSaveNote: (note: string) => void;
   onRemove: () => void;
+  /** Absent pour la première (resp. dernière) fiche. */
+  onMoveUp?: () => void;
+  onMoveDown?: () => void;
 }) {
+  const name = displayName(b.name);
   // Brouillon local, initialisé une fois : la note n'est modifiée que depuis ce champ.
   const [draft, setDraft] = useState(note);
 
   return (
     <div className="bg-surface border border-border rounded-2xl p-3 flex flex-col gap-2">
       <div className="flex items-start gap-2">
+        {(onMoveUp || onMoveDown) && (
+          <div className="shrink-0 -ml-1 flex flex-col">
+            <button
+              onClick={onMoveUp}
+              disabled={!onMoveUp}
+              aria-label={`Monter ${name}`}
+              className="w-7 h-6 rounded-md flex items-center justify-center text-muted hover:text-primary-deep disabled:opacity-25 active:scale-[.9]"
+            >
+              <CaretUp size={14} weight="bold" aria-hidden />
+            </button>
+            <button
+              onClick={onMoveDown}
+              disabled={!onMoveDown}
+              aria-label={`Descendre ${name}`}
+              className="w-7 h-6 rounded-md flex items-center justify-center text-muted hover:text-primary-deep disabled:opacity-25 active:scale-[.9]"
+            >
+              <CaretDown size={14} weight="bold" aria-hidden />
+            </button>
+          </div>
+        )}
         <Link href={`/?open=${b.id}`} className="flex-1 min-w-0 no-underline text-ink">
           <span className="block font-serif text-[15px] font-semibold leading-tight truncate">{displayName(b.name)}</span>
           <span className="mt-0.5 text-[12px] text-muted flex items-center gap-1 truncate">

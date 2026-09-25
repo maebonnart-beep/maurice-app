@@ -10,6 +10,8 @@ type PatchBody = {
   addBusinessId?: string;
   removeBusinessId?: string;
   setNote?: { businessId: string; note: string };
+  /** Nouvel ordre des fiches : doit contenir exactement les mêmes ids. */
+  order?: string[];
   shared?: boolean;
 };
 
@@ -18,7 +20,7 @@ function clearableText(value: string, max: number): string | null {
   return value.trim().slice(0, max) || null;
 }
 
-/** Modification d'une liste : infos, ajout/retrait d'une fiche, note par fiche, partage. */
+/** Modification d'une liste : infos, ajout/retrait/réordonnancement des fiches, note par fiche, partage. */
 export async function PATCH(
   request: Request,
   { params }: { params: Promise<{ id: string }> }
@@ -78,6 +80,19 @@ export async function PATCH(
     if (note) notes[body.setNote.businessId] = note;
     else delete notes[body.setNote.businessId];
     patch.notes = notes;
+  }
+
+  if (body.order) {
+    const same =
+      Array.isArray(body.order) &&
+      body.order.length === ids.length &&
+      new Set(body.order).size === ids.length &&
+      body.order.every((bid) => ids.includes(bid));
+    if (!same) {
+      return NextResponse.json({ error: "Ordre invalide." }, { status: 400 });
+    }
+    ids = body.order;
+    patch.business_ids = ids;
   }
 
   if (body.shared !== undefined) {
