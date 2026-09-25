@@ -9423,7 +9423,13 @@
       "plus-belles-vues"
     ],
     "hours": "Tlj 12h-15h & 19h-22h",
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "koteMorisRatings": {
+      "gout": 4,
+      "accueil": 5,
+      "cadre": 5
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "chalets-chamarel",
@@ -9494,7 +9500,13 @@
       "produits-locaux"
     ],
     "hours": "Tlj 19h-22h",
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "koteMorisRatings": {
+      "gout": 4,
+      "accueil": 4,
+      "cadre": 4
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "chez-bhim",
@@ -9557,7 +9569,13 @@
     "filters": [
       "asiatique"
     ],
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "koteMorisRatings": {
+      "gout": 5,
+      "accueil": 5,
+      "cadre": 4
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "ocean-vibes",
@@ -9599,7 +9617,13 @@
     "filters": [
       "indienne"
     ],
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "koteMorisRatings": {
+      "gout": 4,
+      "accueil": 5,
+      "cadre": 4
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "molakaz-bistrot-work-on-reservation",
@@ -9736,7 +9760,13 @@
       "tables-exception",
       "fruits-de-mer"
     ],
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "koteMorisRatings": {
+      "gout": 5,
+      "accueil": 3,
+      "cadre": 5
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "sunset-restaurant",
@@ -9807,7 +9837,13 @@
       "tables-exception",
       "mauricienne"
     ],
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "koteMorisRatings": {
+      "gout": 5,
+      "accueil": 5,
+      "cadre": 5
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "zafarani",
@@ -9932,7 +9968,13 @@
       "europeenne"
     ],
     "hours": "Tlj 12h-15h & 19h-22h",
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "koteMorisRatings": {
+      "gout": 4,
+      "accueil": 4,
+      "cadre": 5
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "restaurant-bistro-anvers-bel-ombre-mauritius",
@@ -10450,7 +10492,14 @@
     "filters": [
       "asiatique"
     ],
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "koteMorisRatings": {
+      "gout": 4,
+      "qualitePrix": 4,
+      "accueil": 4,
+      "cadre": 4
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "beach-rouge-lux-belle-mare",
@@ -10472,7 +10521,13 @@
       "europeenne",
       "plus-belles-vues"
     ],
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "koteMorisRatings": {
+      "gout": 5,
+      "accueil": 5,
+      "cadre": 5
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "blue-penny-cellar",
@@ -10495,7 +10550,13 @@
       "europeenne",
       "vins-spiritueux"
     ],
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "koteMorisRatings": {
+      "gout": 5,
+      "accueil": 5,
+      "cadre": 4
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "duck-laundry-lux-belle-mare",
@@ -10516,7 +10577,13 @@
     "filters": [
       "asiatique"
     ],
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "koteMorisRatings": {
+      "gout": 5,
+      "accueil": 5,
+      "cadre": 4
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "resto-7-by-kazi",
@@ -10560,7 +10627,13 @@
       "plus-belles-vues"
     ],
     "hours": "Tous les jours 19h-22h30",
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "koteMorisRatings": {
+      "gout": 5,
+      "accueil": 5,
+      "cadre": 5
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "beach-hut",
@@ -10582,7 +10655,13 @@
       "mauricienne"
     ],
     "hours": "Dim 11h30-22h en continu, Lun-Mar + Jeu-Sam 11h30-14h30 & 17h-22h, Mer 12h-14h30 & 17h-22h",
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "koteMorisRatings": {
+      "gout": 4,
+      "accueil": 4,
+      "cadre": 5
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "vicky-s-restaurant",
@@ -10603,7 +10682,14 @@
       "mauricienne",
       "fruits-de-mer"
     ],
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "koteMorisRatings": {
+      "gout": 4,
+      "qualitePrix": 4,
+      "accueil": 5,
+      "cadre": 3
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "tides",
@@ -10646,7 +10732,13 @@
     "filters": [
       "europeenne"
     ],
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "koteMorisRatings": {
+      "gout": 4,
+      "accueil": 2,
+      "cadre": 4
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "la-pointe-restaurant",
@@ -10690,7 +10782,14 @@
       "plus-belles-vues"
     ],
     "hours": "Tous les jours : petit-déj 7h30-10h, déjeuner 12h-14h30, cocktails 17h-19h30, dîner 19h30-22h",
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "koteMorisRatings": {
+      "gout": 4,
+      "qualitePrix": 4,
+      "accueil": 5,
+      "cadre": 5
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "chopsticks",
@@ -10711,7 +10810,14 @@
       "asiatique"
     ],
     "hours": "Tous les jours 18h30-22h",
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "koteMorisRatings": {
+      "gout": 4,
+      "qualitePrix": 4,
+      "accueil": 4,
+      "cadre": 3
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "la-flibuste",
@@ -10815,7 +10921,13 @@
       "italien"
     ],
     "hours": "Tous les jours 12h30-15h & 18h30-22h",
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "koteMorisRatings": {
+      "gout": 5,
+      "accueil": 5,
+      "cadre": 4
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "le-marche",
@@ -10879,7 +10991,14 @@
       "mauricienne",
       "tables-exception"
     ],
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "koteMorisRatings": {
+      "gout": 4,
+      "qualitePrix": 2,
+      "accueil": 3,
+      "cadre": 5
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "ashley-grillade",
@@ -10924,7 +11043,13 @@
       "tables-exception",
       "grillades"
     ],
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "koteMorisRatings": {
+      "gout": 5,
+      "accueil": 4,
+      "cadre": 5
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "oasis-bistro",
@@ -10964,7 +11089,12 @@
     "filters": [
       "asiatique"
     ],
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "koteMorisRatings": {
+      "gout": 3,
+      "cadre": 3
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "chinese-gourmet",
@@ -10985,7 +11115,13 @@
       "asiatique"
     ],
     "hours": "Mar-Jeu + Dim 11h-15h & 18h-21h, Ven-Sam 11h-15h & 18h-21h30, fermé lun",
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "blu-sushi-lounge",
@@ -11109,7 +11245,14 @@
       "fruits-de-mer",
       "mauricienne"
     ],
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 4,
+      "accueil": 5,
+      "cadre": 3
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "indigo-restaurant",
@@ -11130,7 +11273,13 @@
     "filters": [
       "plus-belles-vues"
     ],
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "koteMorisRatings": {
+      "gout": 4,
+      "accueil": 5,
+      "cadre": 3
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "chateau-mon-desir",
@@ -11202,7 +11351,13 @@
       "indienne"
     ],
     "hours": "Tous les jours 18h30-22h30",
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "koteMorisRatings": {
+      "gout": 5,
+      "accueil": 5,
+      "cadre": 4
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "pelouse-snack",
@@ -11467,7 +11622,13 @@
     "filters": [
       "fruits-de-mer"
     ],
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "koteMorisRatings": {
+      "gout": 3,
+      "accueil": 4,
+      "cadre": 5
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "la-belle-creole-restaurant",
@@ -11489,7 +11650,13 @@
       "mauricienne",
       "fruits-de-mer"
     ],
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "koteMorisRatings": {
+      "gout": 3,
+      "accueil": 4,
+      "cadre": 3
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "ti-kaz-kreol",
