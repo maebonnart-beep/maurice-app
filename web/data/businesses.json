@@ -8135,7 +8135,13 @@
     "filters": [
       "fruits-de-mer"
     ],
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "koteMorisRatings": {
+      "gout": 4,
+      "accueil": 3,
+      "cadre": 5
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "magenta-seafood-restaurant",
@@ -8668,7 +8674,13 @@
     "filters": [
       "grillades"
     ],
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "koteMorisRatings": {
+      "gout": 3,
+      "accueil": 2,
+      "cadre": 4
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "ti-mari-restaurant-bar",
@@ -8891,7 +8903,14 @@
     "filters": [
       "mauricienne"
     ],
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "koteMorisRatings": {
+      "gout": 4,
+      "qualitePrix": 5,
+      "accueil": 5,
+      "cadre": 4
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "chez-ruben-restaurant",
@@ -8913,7 +8932,13 @@
       "fruits-de-mer"
     ],
     "hours": "Fermé lun, Mar-Dim 10h-16h",
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "koteMorisRatings": {
+      "gout": 3,
+      "qualitePrix": 3,
+      "cadre": 4
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "rhumerie-de-chamarel-restaurant-rum-distillery",
@@ -8934,7 +8959,14 @@
     "filters": [
       "mauricienne"
     ],
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "koteMorisRatings": {
+      "gout": 4,
+      "qualitePrix": 3,
+      "accueil": 3,
+      "cadre": 5
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "nadi-miel-chamarel",
@@ -8979,7 +9011,14 @@
       "fruits-de-mer",
       "mauricienne"
     ],
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "koteMorisRatings": {
+      "gout": 4,
+      "qualitePrix": 4,
+      "accueil": 5,
+      "cadre": 4
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "lakaz-chamarel-view-bar",
@@ -9045,7 +9084,12 @@
     "filters": [
       "mauricienne"
     ],
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "koteMorisRatings": {
+      "gout": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "la-citronelle",
@@ -9066,7 +9110,13 @@
     "filters": [
       "mauricienne"
     ],
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "koteMorisRatings": {
+      "gout": 2,
+      "qualitePrix": 1,
+      "accueil": 2
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "saveur-tropical",
@@ -9088,7 +9138,13 @@
       "mauricienne",
       "asiatique"
     ],
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "koteMorisRatings": {
+      "gout": 4,
+      "accueil": 4,
+      "cadre": 3
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "one-love-snack",
@@ -9194,7 +9250,13 @@
     "filters": [
       "mauricienne"
     ],
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "koteMorisRatings": {
+      "gout": 2,
+      "qualitePrix": 1,
+      "accueil": 3
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "sugar-restaurant-bar",
@@ -9278,7 +9340,14 @@
       "mauricienne",
       "frequente-locaux"
     ],
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "koteMorisRatings": {
+      "gout": 3,
+      "qualitePrix": 4,
+      "accueil": 3,
+      "cadre": 5
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "floating-market-restaurant",
@@ -9299,7 +9368,13 @@
       "asiatique"
     ],
     "hours": "Tlj 18h30-22h",
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "koteMorisRatings": {
+      "gout": 4,
+      "accueil": 5,
+      "cadre": 5
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "gregory-s-secret-restaurant",
@@ -9320,7 +9395,13 @@
       "fruits-de-mer"
     ],
     "hours": "Tlj 15h-23h",
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "koteMorisRatings": {
+      "gout": 5,
+      "accueil": 5,
+      "cadre": 4
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "the-beach-lux-le-morne",
@@ -9384,7 +9465,14 @@
       "plus-belles-vues"
     ],
     "hours": "Fermé mer, Lun-Mar + Jeu-Sam 7h30-21h, Dim 12h-21h",
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "koteMorisRatings": {
+      "gout": 4,
+      "qualitePrix": 5,
+      "accueil": 4,
+      "cadre": 3
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "dina-s",
@@ -9572,7 +9660,13 @@
     "filters": [
       "fruits-de-mer"
     ],
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "koteMorisRatings": {
+      "gout": 4,
+      "accueil": 4,
+      "cadre": 5
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "paradis-bar",
@@ -9615,7 +9709,13 @@
       "vins-spiritueux"
     ],
     "hours": "Tlj 6h30-10h30 & 18h30-22h",
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "koteMorisRatings": {
+      "gout": 3,
+      "accueil": 4,
+      "cadre": 4
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "la-plage",
@@ -9679,7 +9779,13 @@
     "filters": [
       "mauricienne"
     ],
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "koteMorisRatings": {
+      "gout": 4,
+      "accueil": 5,
+      "cadre": 3
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "the-plantation-club",
@@ -9722,7 +9828,13 @@
     "filters": [
       "indienne"
     ],
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "koteMorisRatings": {
+      "gout": 5,
+      "accueil": 5,
+      "cadre": 4
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "escale-des-iles-restaurant-and-inn",
@@ -9743,7 +9855,13 @@
       "plus-belles-vues"
     ],
     "hours": "Tlj 9h30-22h",
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "koteMorisRatings": {
+      "gout": 4,
+      "accueil": 2,
+      "cadre": 4
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "la-roche-cari",
@@ -9764,7 +9882,14 @@
     "filters": [
       "mauricienne"
     ],
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "koteMorisRatings": {
+      "gout": 3,
+      "qualitePrix": 2,
+      "accueil": 3,
+      "cadre": 4
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "savana-restaurant",
@@ -9827,7 +9952,13 @@
     "filters": [
       "europeenne"
     ],
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "koteMorisRatings": {
+      "gout": 5,
+      "accueil": 5,
+      "cadre": 3
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "bois-cheri",
@@ -9873,7 +10004,13 @@
       "mauricienne"
     ],
     "hours": "Lun-Mer 11h-16h30, Jeu-Sam 11h-21h30, fermé dim",
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "koteMorisRatings": {
+      "gout": 4,
+      "accueil": 5,
+      "cadre": 4
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "rum-shed-bar-grill-restaurant-at-shanti-maurice-resort-spa",
@@ -9894,7 +10031,13 @@
     "filters": [
       "grillades"
     ],
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "koteMorisRatings": {
+      "gout": 5,
+      "accueil": 4,
+      "cadre": 5
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "kwizine-mama-manze-lakaz",
@@ -9914,7 +10057,13 @@
     "filters": [
       "mauricienne"
     ],
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "koteMorisRatings": {
+      "gout": 5,
+      "accueil": 5,
+      "cadre": 4
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "le-batelage",
@@ -9936,7 +10085,12 @@
       "mauricienne"
     ],
     "hours": "Tlj 10h-17h",
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "koteMorisRatings": {
+      "gout": 4,
+      "cadre": 5
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "pearl-fisher",
@@ -9977,7 +10131,13 @@
       "italien"
     ],
     "hours": "Mar-Sam + Dim 9h-20h30, fermé lun",
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "koteMorisRatings": {
+      "gout": 4,
+      "qualitePrix": 4,
+      "accueil": 4
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "le-fangourin",
@@ -10022,7 +10182,14 @@
       "mauricienne",
       "asiatique"
     ],
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "koteMorisRatings": {
+      "gout": 4,
+      "qualitePrix": 4,
+      "accueil": 5,
+      "cadre": 4
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "mo-filaos-restaurant",
@@ -10044,7 +10211,13 @@
       "fruits-de-mer"
     ],
     "hours": "Mar-Dim 11h-22h, fermé lun",
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "koteMorisRatings": {
+      "gout": 3,
+      "accueil": 3,
+      "cadre": 5
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "auberge-de-saint-aubin",
