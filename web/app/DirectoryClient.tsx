@@ -2189,12 +2189,12 @@ export default function DirectoryClient({
                           }
                         }}
                         aria-expanded={b.key === "experience" ? experienceOpen : undefined}
-                        // Sans encart (demande du 2026-09-25) : icône + libellé
-                        // posés directement sur l'illustration, halo blanc sur
-                        // le texte pour rester lisible sur le ciel ; anneau
+                        // Sans encart (demande du 2026-09-25) : icône posée
+                        // directement sur l'illustration ; libellé sur une
+                        // pastille blanche en verre dépoli (un simple halo ne
+                        // suffisait pas sur le ciel/les montagnes) ; anneau
                         // turquoise autour de l'icône quand Expérience est déplié.
-                        className="flex flex-col items-center gap-2 text-[17px] lg:text-[20px] font-extrabold text-primary-deep active:scale-[.96] transition-transform"
-                        style={{ textShadow: "0 0 6px rgba(255,255,255,.95), 0 0 12px rgba(255,255,255,.8)" }}
+                        className="flex flex-col items-center gap-1.5 text-[15px] lg:text-[19px] font-extrabold text-primary-deep active:scale-[.96] transition-transform"
                       >
                         {/* eslint-disable-next-line @next/next/no-img-element */}
                         <img
@@ -2207,7 +2207,17 @@ export default function DirectoryClient({
                           // léger flou de ce qu'il y a derrière, sans ombre.
                           style={{ backdropFilter: "blur(6px)", WebkitBackdropFilter: "blur(6px)" }}
                         />
-                        {b.label}
+                        <span
+                          className="px-2 lg:px-3 py-0.5 rounded-pill leading-tight whitespace-nowrap"
+                          style={{
+                            background: "color-mix(in srgb, var(--surface) 82%, transparent)",
+                            backdropFilter: "blur(6px)",
+                            WebkitBackdropFilter: "blur(6px)",
+                            boxShadow: "0 2px 8px -3px rgba(6,50,56,.35)",
+                          }}
+                        >
+                          {b.label}
+                        </span>
                       </button>
                     );
                   })}
