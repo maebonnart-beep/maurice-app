@@ -18,6 +18,7 @@ import {
 } from "@/lib/format";
 import { SpecialBadge, accentColorFor, ProviderTypeBadge } from "./Badge";
 import { FavoriteButton } from "./FavoriteButton";
+import { AddToListButton } from "./AddToListButton";
 import { SuggestPhotoButton } from "./SuggestPhotoButton";
 import { SuggestCommentButton } from "./SuggestCommentButton";
 import { Tag } from "./Tag";
@@ -197,12 +198,20 @@ export function BusinessDetail({
               >
                 <ArrowLeft size={18} weight="bold" aria-hidden />
               </button>
-              <FavoriteButton
-                id={b.id}
-                size={18}
-                className="absolute top-3 right-3 gap-2"
-                chipClassName="inline-flex items-center justify-center w-9 h-9 rounded-full bg-black/45 text-white backdrop-blur-sm"
-              />
+              <div className="absolute top-3 right-3 flex items-center gap-2">
+                <FavoriteButton
+                  id={b.id}
+                  size={18}
+                  className="gap-2"
+                  chipClassName="inline-flex items-center justify-center w-9 h-9 rounded-full bg-black/45 text-white backdrop-blur-sm"
+                />
+                <AddToListButton
+                  businessId={b.id}
+                  businessName={displayName(b.name)}
+                  size={18}
+                  className="inline-flex items-center justify-center w-9 h-9 rounded-full bg-black/45 text-white backdrop-blur-sm"
+                />
+              </div>
               {(b.badge === "selection" || b.themes?.includes("kids-friendly")) && (
                 <div className="absolute top-14 right-3 flex flex-col items-end gap-2">
                   {b.badge === "selection" && (
@@ -243,12 +252,20 @@ export function BusinessDetail({
               >
                 <ArrowLeft size={18} weight="bold" aria-hidden />
               </button>
-              <FavoriteButton
-                id={b.id}
-                size={18}
-                className="absolute top-3 right-3 gap-2"
-                chipClassName="inline-flex items-center justify-center w-9 h-9 rounded-full bg-black/20 text-on-band backdrop-blur-sm"
-              />
+              <div className="absolute top-3 right-3 flex items-center gap-2">
+                <FavoriteButton
+                  id={b.id}
+                  size={18}
+                  className="gap-2"
+                  chipClassName="inline-flex items-center justify-center w-9 h-9 rounded-full bg-black/20 text-on-band backdrop-blur-sm"
+                />
+                <AddToListButton
+                  businessId={b.id}
+                  businessName={displayName(b.name)}
+                  size={18}
+                  className="inline-flex items-center justify-center w-9 h-9 rounded-full bg-black/20 text-on-band backdrop-blur-sm"
+                />
+              </div>
               {(b.badge === "selection" || b.themes?.includes("kids-friendly")) && (
                 <div className="absolute top-14 right-3 flex flex-col items-end gap-2">
                   {b.badge === "selection" && (

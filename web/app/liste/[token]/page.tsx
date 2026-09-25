@@ -23,14 +23,17 @@ export default async function SharedListPage({
 
   const { data: list } = await createServiceRoleClient()
     .from("favorite_lists")
-    .select("name, business_ids")
+    .select("name, description, emoji, period, business_ids, notes")
     .eq("share_token", token)
     .single();
 
   if (!list) notFound();
 
   const businessIds = (list.business_ids as string[]) ?? [];
-  const businesses = (await getBusinesses()).filter((b) => businessIds.includes(b.id));
+  const notes = (list.notes as Record<string, string>) ?? {};
+  // Garde l'ordre choisi par l'auteur de la liste.
+  const byId = new Map((await getBusinesses()).map((b) => [b.id, b]));
+  const businesses = businessIds.map((id) => byId.get(id)).filter((b) => b !== undefined);
 
   return (
     <div className="max-w-[640px] mx-auto px-4 pb-24 pt-6">
@@ -41,10 +44,17 @@ export default async function SharedListPage({
       <p className="text-[12.5px] font-semibold text-primary-deep uppercase tracking-wide mb-1">
         Liste partagée
       </p>
-      <h1 className="m-0 font-serif text-[24px] font-semibold leading-tight">{list.name}</h1>
-      <p className="text-[13px] text-muted mt-1 mb-5">
-        {businesses.length} adresse{businesses.length > 1 ? "s" : ""} — depuis Koté Moris
+      <h1 className="m-0 font-serif text-[24px] font-semibold leading-tight">
+        {list.emoji && <span className="mr-2" aria-hidden>{list.emoji}</span>}
+        {list.name}
+      </h1>
+      <p className="text-[13px] text-muted mt-1 mb-3">
+        {businesses.length} adresse{businesses.length > 1 ? "s" : ""}
+        {list.period ? ` · ${list.period}` : ""} — depuis Koté Moris
       </p>
+      {list.description && (
+        <p className="m-0 mb-5 text-[14px] text-ink/80 leading-relaxed whitespace-pre-line">{list.description}</p>
+      )}
 
       {businesses.length === 0 ? (
         <p className="text-center text-muted text-[13px] mt-10">Cette liste est vide.</p>
@@ -73,6 +83,9 @@ export default async function SharedListPage({
                     <MapPin size={12} weight="fill" className="shrink-0 opacity-70" aria-hidden />
                     <span className="truncate">{displayCity(b.address)}</span>
                   </p>
+                  {notes[b.id] && (
+                    <p className="m-0 mt-1 text-[12.5px] text-ink/75 italic leading-snug">« {notes[b.id]} »</p>
+                  )}
                 </div>
               </Link>
             );

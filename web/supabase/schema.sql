@@ -288,6 +288,17 @@ create policy "favorite_lists: owner all" on favorite_lists for all
 grant select, insert, update, delete on favorite_lists to authenticated;
 grant all on favorite_lists to service_role;
 
+-- Listes personnalisées v2 : infos libres (description, emoji de couverture,
+-- période type « week-end du 12 octobre ») et une note perso par fiche,
+-- stockée en { businessId: "note" }. Couvert par la policy owner existante.
+-- Les listes ne sont plus 100 % premium : 2 gratuites avec un compte
+-- (FREE_LIST_LIMIT dans lib/favoriteLists.ts, vérifié côté API).
+alter table favorite_lists
+  add column description text,
+  add column emoji text,
+  add column period text,
+  add column notes jsonb not null default '{}'::jsonb;
+
 -- Rappel J-7 pour les alertes événements : en plus de l'email à la création
 -- de la fiche, un second email relance quand l'événement est à 7 jours ou
 -- moins (date exacte connue uniquement). reminded_ids suit les IDs déjà

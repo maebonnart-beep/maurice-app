@@ -2,9 +2,13 @@ import { redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
 import { ListesClient } from "./ListesClient";
 
-export const metadata = { title: "Mes listes — Maurice+" };
+export const metadata = { title: "Mes listes — Koté Moris" };
 
-export default async function ListesPage() {
+export default async function ListesPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ id?: string; new?: string }>;
+}) {
   const supabase = await createClient();
   const {
     data: { user },
@@ -14,11 +18,8 @@ export default async function ListesPage() {
     redirect("/mon-compte");
   }
 
-  const { data: profile } = await supabase
-    .from("profiles")
-    .select("subscription_status")
-    .eq("id", user.id)
-    .single();
+  const sp = await searchParams;
+  const listId = sp.id ? Number(sp.id) : null;
 
-  return <ListesClient isPremium={profile?.subscription_status === "active"} />;
+  return <ListesClient listId={Number.isFinite(listId) ? listId : null} startCreating={sp.new === "1"} />;
 }

@@ -5,6 +5,7 @@ import { SUBCATEGORIES, PRICE_RANGES, CATEGORY_MAP, FILTER_GROUPS } from "@/data
 import { displayName, displayCity, fallbackDescription } from "@/lib/format";
 import { accentColorFor, SpecialBadge, AGENCY_COLOR, PROVIDER_TYPE_INFO } from "./Badge";
 import { FavoriteButton } from "./FavoriteButton";
+import { AddToListButton } from "./AddToListButton";
 import { FACT_ICONS, CONTACT_ICONS, iconForKey, subIconFor } from "@/lib/icons";
 import { eventColorFor, eventBannerLabel, eventTextColor } from "@/lib/events";
 import type { Icon } from "@phosphor-icons/react";
@@ -250,6 +251,7 @@ export function BusinessCard({
           )}
         </span>
         <FavoriteButton id={b.id} size={17} className="text-muted" />
+        <AddToListButton businessId={b.id} businessName={displayName(b.name)} size={17} className="inline-flex items-center justify-center text-muted" />
       </div>
       </div>
     </article>
