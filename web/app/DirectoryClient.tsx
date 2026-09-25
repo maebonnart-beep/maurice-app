@@ -134,7 +134,6 @@ import {
   Clock,
   CalendarBlank,
   Lock,
-  Signpost,
   MapTrifold,
   ListBullets,
 } from "@phosphor-icons/react";
@@ -2158,23 +2157,18 @@ export default function DirectoryClient({
                   <div className="mx-auto mt-1.5 h-[2px] w-2/3 rounded-full" style={{ background: "linear-gradient(90deg, transparent, var(--primary), transparent)" }} aria-hidden />
                 </div>
 
-                {/* Champ mot-clé : le tap bascule sur l'écran de recherche (champ
-                    focalisé, cf. focusSearch), sans étape intermédiaire. */}
-                <SearchInput
-                  value={query}
-                  onChange={(v) => { setQuery(v); if (!searchOpen) focusSearch(); }}
-                  onFocus={() => { if (!searchOpen) focusSearch(); }}
-                  placeholder="Un nom, un lieu, une activité…"
-                />
-
-                {/* La carte a son propre onglet dans la barre du bas (openMap) :
-                    pas de doublon ici. Icônes Phosphor provisoires, à remplacer
-                    par les icônes « maison » quand elles seront fournies. */}
-                <div className="mt-2.5 grid grid-cols-2 gap-2">
+                {/* 3 tuiles égales (disposition A retenue le 2026-09-25) :
+                    grande icône « maison » au-dessus, libellé dessous. Mot-clé
+                    ouvre l'écran de recherche, champ focalisé (focusSearch).
+                    La carte a son propre onglet dans la barre du bas (openMap).
+                    Icônes fournies par la cliente (planche de 4, découpées en
+                    PNG 256×256 à coins transparents : public/recherche-icone-*). */}
+                <div className="grid grid-cols-3 gap-2 lg:gap-3">
                   {(
                     [
-                      { key: "categorie", label: "Catégories", icon: Signpost },
-                      { key: "experience", label: "Expérience", icon: Sparkle },
+                      { key: "mot", label: "Mot-clé", img: "/recherche-icone-motcle.png" },
+                      { key: "categorie", label: "Catégories", img: "/recherche-icone-categories.png" },
+                      { key: "experience", label: "Expérience", img: "/recherche-icone-experience.png" },
                     ] as const
                   ).map((b) => {
                     const on = b.key === "experience" && experienceOpen;
@@ -2183,7 +2177,9 @@ export default function DirectoryClient({
                         key={b.key}
                         type="button"
                         onClick={() => {
-                          if (b.key === "categorie") {
+                          if (b.key === "mot") {
+                            focusSearch();
+                          } else if (b.key === "categorie") {
                             setHomeMode("categories");
                             setHomeCategory(null);
                             setHomeSubRubrique(null);
@@ -2193,12 +2189,21 @@ export default function DirectoryClient({
                           }
                         }}
                         aria-expanded={b.key === "experience" ? experienceOpen : undefined}
-                        className={`flex items-center justify-center gap-2 rounded-2xl py-3 text-[13.5px] lg:text-[15px] font-bold active:scale-[.97] transition-transform ${
-                          on ? "bg-primary text-on-primary" : "bg-surface text-primary-deep"
-                        }`}
-                        style={{ boxShadow: "0 6px 16px -8px rgba(6,50,56,.35)" }}
+                        // Sans encart (demande du 2026-09-25) : icône + libellé
+                        // posés directement sur l'illustration, halo blanc sur
+                        // le texte pour rester lisible sur le ciel ; anneau
+                        // turquoise autour de l'icône quand Expérience est déplié.
+                        className="flex flex-col items-center gap-2 text-[17px] lg:text-[20px] font-extrabold text-primary-deep active:scale-[.96] transition-transform"
+                        style={{ textShadow: "0 0 6px rgba(255,255,255,.95), 0 0 12px rgba(255,255,255,.8)" }}
                       >
-                        <b.icon size={22} weight={on ? "fill" : "duotone"} aria-hidden />
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <img
+                          src={b.img}
+                          alt=""
+                          aria-hidden
+                          className={`w-[100px] h-[100px] lg:w-32 lg:h-32 rounded-[24%] ${on ? "ring-[3px] ring-primary" : ""}`}
+                          style={{ boxShadow: "0 8px 18px -8px rgba(6,50,56,.45)" }}
+                        />
                         {b.label}
                       </button>
                     );
