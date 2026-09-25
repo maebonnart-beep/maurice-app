@@ -24,6 +24,27 @@ export const LIST_LIMITS = { name: 60, description: 300, period: 60, note: 280, 
 /** Suggestions d'emoji de couverture proposées à la création/édition. */
 export const LIST_EMOJIS = ["🍽️", "🏖️", "🌴", "🥾", "🎉", "👨‍👩‍👧", "☕", "🛍️", "🤿", "🍹", "🏄", "❤️"];
 
+/**
+ * Illustration Koté Moris affichée à la place de chacun des emojis suggérés
+ * (planche « Planche DESIGN/ChatGPT Image 25 sept. 2026, 06_09_46.png »,
+ * détourée dans public/list-icons/). La colonne `emoji` garde l'emoji : un
+ * emoji libre saisi via « Autre » s'affiche tel quel.
+ */
+export const LIST_ICON_IMAGES: Record<string, string> = {
+  "🍽️": "/list-icons/repas.webp",
+  "🏖️": "/list-icons/plage.webp",
+  "🌴": "/list-icons/palmier.webp",
+  "🥾": "/list-icons/rando.webp",
+  "🎉": "/list-icons/fete.webp",
+  "👨‍👩‍👧": "/list-icons/famille.webp",
+  "☕": "/list-icons/cafe.webp",
+  "🛍️": "/list-icons/shopping.webp",
+  "🤿": "/list-icons/snorkeling.webp",
+  "🍹": "/list-icons/cocktail.webp",
+  "🏄": "/list-icons/surf.webp",
+  "❤️": "/list-icons/coeur.webp",
+};
+
 /** Convertit une ligne Supabase (snake_case) en FavoriteList (camelCase). */
 export function mapFavoriteListRow(row: Record<string, unknown>): FavoriteList {
   return {

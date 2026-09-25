@@ -11,6 +11,7 @@ import type { Business } from "@/lib/types";
 import { displayName, displayCity } from "@/lib/format";
 import { FREE_LIST_LIMIT, LIST_EMOJIS, LIST_LIMITS, type FavoriteList, type ListInfo } from "@/lib/favoriteLists";
 import { BackButton } from "@/components/ui/BackButton";
+import { ListCover } from "@/components/ui/ListCover";
 
 const inputClass =
   "w-full h-[44px] px-4 rounded-xl border border-border bg-surface text-ink text-[14px] shadow-sm focus:outline-none focus:border-primary";
@@ -84,7 +85,7 @@ function ListIndex({ businesses, startCreating }: { businesses: Business[]; star
                 className="bg-surface border border-border rounded-2xl p-3.5 flex items-start gap-3 no-underline text-ink"
               >
                 <span className="w-11 h-11 shrink-0 rounded-xl bg-primary-tint flex items-center justify-center text-xl" aria-hidden>
-                  {list.emoji ?? "📍"}
+                  <ListCover emoji={list.emoji} size={34} />
                 </span>
                 <span className="flex-1 min-w-0">
                   <span className="block text-[15px] font-semibold truncate">{list.name}</span>
@@ -163,6 +164,8 @@ function ListInfoForm({
   const [period, setPeriod] = useState(initial?.period ?? "");
   const [description, setDescription] = useState(initial?.description ?? "");
   const [saving, setSaving] = useState(false);
+  // Saisie d'un emoji libre, ouverte par la pastille « … » (ou d'office si l'emoji actuel n'est pas une suggestion).
+  const [customOpen, setCustomOpen] = useState(!!initial?.emoji && !LIST_EMOJIS.includes(initial.emoji));
 
   async function handleSubmit(e: FormEvent) {
     e.preventDefault();
@@ -179,24 +182,42 @@ function ListInfoForm({
           <button
             key={e}
             type="button"
-            onClick={() => setEmoji(e)}
+            onClick={() => {
+              setEmoji(e);
+              setCustomOpen(false);
+            }}
             aria-pressed={emoji === e}
-            className={`w-9 h-9 rounded-xl text-lg flex items-center justify-center border ${
+            className={`w-11 h-11 rounded-xl flex items-center justify-center border ${
               emoji === e ? "border-primary bg-primary-tint" : "border-transparent"
             }`}
           >
-            {e}
+            <ListCover emoji={e} size={32} />
           </button>
         ))}
-        <input
-          type="text"
-          value={LIST_EMOJIS.includes(emoji) ? "" : emoji}
-          onChange={(e) => setEmoji(e.target.value)}
-          maxLength={LIST_LIMITS.emoji}
-          placeholder="Autre"
+        <button
+          type="button"
+          onClick={() => setCustomOpen(true)}
+          aria-pressed={customOpen}
           aria-label="Autre emoji"
-          className="w-[64px] h-9 px-2 rounded-xl border border-border bg-surface text-center text-[14px] focus:outline-none focus:border-primary"
-        />
+          className={`h-11 px-1 rounded-xl flex items-center justify-center border ${
+            customOpen ? "border-primary bg-primary-tint" : "border-transparent"
+          }`}
+        >
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/list-icons/autre.webp" alt="" aria-hidden className="h-7 w-auto" />
+        </button>
+        {customOpen && (
+          <input
+            type="text"
+            autoFocus
+            value={LIST_EMOJIS.includes(emoji) ? "" : emoji}
+            onChange={(e) => setEmoji(e.target.value)}
+            maxLength={LIST_LIMITS.emoji}
+            placeholder="Ton emoji"
+            aria-label="Emoji personnalisé"
+            className="w-[96px] h-11 px-2 rounded-xl border border-border bg-surface text-center text-[18px] focus:outline-none focus:border-primary"
+          />
+        )}
       </div>
       <input
         type="text"
@@ -303,7 +324,7 @@ function ListDetail({ list, businesses }: { list: FavoriteList; businesses: Busi
         {!editing && (
           <div className="flex-1 min-w-0 flex items-start gap-3">
             <span className="w-12 h-12 shrink-0 rounded-2xl bg-primary-tint flex items-center justify-center text-2xl" aria-hidden>
-              {list.emoji ?? "📍"}
+              <ListCover emoji={list.emoji} size={38} />
             </span>
             <div className="min-w-0">
               <h1 className="m-0 font-serif text-xl font-semibold leading-tight break-words">{list.name}</h1>

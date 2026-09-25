@@ -5,6 +5,7 @@ import { createServiceRoleClient } from "@/lib/supabase/server";
 import { getBusinesses } from "@/lib/data";
 import { CATEGORY_MAP } from "@/data/categories";
 import { displayName, displayCity } from "@/lib/format";
+import { ListCover } from "@/components/ui/ListCover";
 
 export const metadata = { title: "Liste partagée — Koté Moris" };
 
@@ -45,7 +46,11 @@ export default async function SharedListPage({
         Liste partagée
       </p>
       <h1 className="m-0 font-serif text-[24px] font-semibold leading-tight">
-        {list.emoji && <span className="mr-2" aria-hidden>{list.emoji}</span>}
+        {list.emoji && (
+          <span className="mr-2 inline-flex align-middle">
+            <ListCover emoji={list.emoji} size={36} />
+          </span>
+        )}
         {list.name}
       </h1>
       <p className="text-[13px] text-muted mt-1 mb-3">

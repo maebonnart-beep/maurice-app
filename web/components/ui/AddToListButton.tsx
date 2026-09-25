@@ -6,6 +6,7 @@ import Link from "next/link";
 import { ListPlus, Check, Plus, X } from "@phosphor-icons/react";
 import { useFavoriteLists } from "@/lib/useFavoriteLists";
 import { FREE_LIST_LIMIT, LIST_EMOJIS, LIST_LIMITS } from "@/lib/favoriteLists";
+import { ListCover } from "./ListCover";
 
 /**
  * 4ᵉ bouton à côté des favoris : range la fiche dans une ou plusieurs listes
@@ -146,7 +147,7 @@ function AddToListSheet({
                       className="flex items-center gap-3 p-2 -mx-2 rounded-xl text-left hover:bg-primary-tint/60 active:scale-[.99] transition-transform"
                     >
                       <span className="w-10 h-10 shrink-0 rounded-xl bg-primary-tint flex items-center justify-center text-lg" aria-hidden>
-                        {list.emoji ?? "📍"}
+                        <ListCover emoji={list.emoji} size={32} />
                       </span>
                       <span className="flex-1 min-w-0">
                         <span className="block text-[14px] font-semibold truncate">{list.name}</span>
@@ -190,11 +191,11 @@ function AddToListSheet({
                       type="button"
                       onClick={() => setEmoji(e)}
                       aria-pressed={emoji === e}
-                      className={`w-9 h-9 rounded-xl text-lg flex items-center justify-center border ${
+                      className={`w-11 h-11 rounded-xl flex items-center justify-center border ${
                         emoji === e ? "border-primary bg-primary-tint" : "border-transparent"
                       }`}
                     >
-                      {e}
+                      <ListCover emoji={e} size={32} />
                     </button>
                   ))}
                 </div>

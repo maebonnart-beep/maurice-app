@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { Plus } from "@phosphor-icons/react";
 import { useFavoriteLists } from "@/lib/useFavoriteLists";
+import { ListCover } from "./ListCover";
 
 /**
  * Onglet Favoris : rangée horizontale des listes personnalisées de
@@ -31,7 +32,7 @@ export function MyListsStrip() {
             className="snap-start shrink-0 w-[150px] bg-surface border border-border rounded-2xl shadow-sm p-3 flex flex-col gap-1.5 no-underline text-ink"
           >
             <span className="w-9 h-9 rounded-xl bg-primary-tint flex items-center justify-center text-lg" aria-hidden>
-              {list.emoji ?? "📍"}
+              <ListCover emoji={list.emoji} size={30} />
             </span>
             <span className="text-[13.5px] font-semibold leading-tight line-clamp-2">{list.name}</span>
             <span className="text-[11.5px] text-muted truncate">
