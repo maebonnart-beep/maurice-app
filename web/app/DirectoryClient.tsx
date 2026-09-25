@@ -89,6 +89,7 @@ import { iconForKey, mascotFor, prefIconFor, MapPin } from "@/lib/icons";
 import { displayName, displayCity, shareTagline } from "@/lib/format";
 import { FavoriteButton } from "@/components/ui/FavoriteButton";
 import { MyListsStrip } from "@/components/ui/MyListsStrip";
+import { useFavoriteLists } from "@/lib/useFavoriteLists";
 import { BannerBackdrop } from "@/components/ui/BannerBackdrop";
 import {
   Heart,
@@ -132,6 +133,9 @@ import {
   Clock,
   CalendarBlank,
   Lock,
+  Signpost,
+  MapTrifold,
+  ListBullets,
 } from "@phosphor-icons/react";
 import type { Icon } from "@phosphor-icons/react";
 
@@ -277,6 +281,68 @@ const Map = dynamic(() => import("./Map"), {
     </div>
   ),
 });
+
+// Carte d'une sélection « vedette » (coups de cœur, kids friendly) au format
+// des cartes de sélections (photo 4:5 + titre), avec le badge rond Koté Moris
+// en coin pour la distinguer. Accueil (carrousel) + écran Sélections (grille).
+function FeaturedSelectionCard({
+  title,
+  photoUrl,
+  badge,
+  onClick,
+  className = "",
+}: {
+  title: string;
+  photoUrl?: string;
+  badge: string;
+  onClick: () => void;
+  className?: string;
+}) {
+  return (
+    <button
+      onClick={onClick}
+      className={`relative text-left aspect-[4/5] rounded-2xl overflow-hidden shadow-card bg-primary-tint active:scale-[.98] transition-transform ${className}`}
+    >
+      {photoUrl && (
+        // eslint-disable-next-line @next/next/no-img-element
+        <img src={photoUrl} alt="" aria-hidden loading="lazy" className="absolute inset-0 w-full h-full object-cover" />
+      )}
+      <div
+        className="absolute inset-0"
+        style={{ background: "linear-gradient(180deg, rgba(0,0,0,0) 45%, rgba(0,0,0,.72) 100%)" }}
+      />
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img src={badge} alt="" aria-hidden className="absolute top-1.5 left-1.5 w-11 h-11 object-contain drop-shadow" />
+      <span className="absolute inset-x-0 bottom-0 p-2.5">
+        <span className="block font-serif text-[12px] font-semibold leading-tight text-white line-clamp-2">{title}</span>
+      </span>
+    </button>
+  );
+}
+
+// Compte → raccourci vers les listes personnalisées (/mon-compte/listes).
+// Composant à part pour n'appeler useFavoriteLists (requête /api/favorite-lists)
+// que lorsque l'écran Compte est affiché à un utilisateur connecté.
+function MyListsLink() {
+  const { status, lists } = useFavoriteLists();
+  return (
+    <Link
+      href="/mon-compte/listes"
+      className="bg-surface border border-border rounded-2xl shadow-sm p-4 flex items-center gap-3 no-underline text-ink active:scale-[.99] transition-transform"
+    >
+      <ListBullets size={20} weight="bold" className="text-primary-deep" aria-hidden />
+      <span className="flex-1 min-w-0">
+        <span className="block text-[14px] font-bold text-ink">Mes listes</span>
+        <span className="block text-[12px] text-muted">
+          {status === "ready" && lists.length > 0
+            ? `${lists.length} liste${lists.length > 1 ? "s" : ""}`
+            : "Crée tes listes d'adresses"}
+        </span>
+      </span>
+      <span className="text-[18px] font-bold text-primary-deep" aria-hidden>›</span>
+    </Link>
+  );
+}
 
 export default function DirectoryClient({
   businesses,
@@ -715,12 +781,6 @@ export default function DirectoryClient({
   // le geste utilisateur et retarderait le clavier mobile). N'active PAS
   // `browseAll` : tant qu'aucun mot n'est tapé, la liste complète (~2000
   // fiches) n'est pas montée — seule la recherche déclenche son affichage.
-  // Raccourcis de l'accueil (grille superposée sur l'illustration) : pour
-  // l'instant, amènent simplement vers les encarts dédiés déjà présents plus
-  // bas sur cette même page (pas de nouvelle navigation/filtre).
-  function scrollToHomeSection(id: string) {
-    document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "start" });
-  }
 
   // Onglet « Recherche » (bandeau du bas), pastille du bandeau d'accueil et
   // sidebar desktop : ouvrent directement le champ de recherche (plus
@@ -731,6 +791,19 @@ export default function DirectoryClient({
     window.scrollTo({ top: 0, behavior: "smooth" });
     setSearchOpen(true);
     setFocusSearchOnMount(true);
+  }
+
+  // Onglet « Carte » : toutes les adresses en vue carte (même bascule que le
+  // bouton liste/carte des résultats), filtres remis à zéro, centrée sur
+  // l'utilisateur si la géolocalisation est déjà autorisée. « Autour de moi »
+  // reste disponible dans la barre des résultats.
+  function openMap() {
+    leaveResults("menu");
+    setBrowseAll(true);
+    setResultsView("carte");
+    setMapEverOpened(true);
+    requestUserPosSilently();
+    window.scrollTo({ top: 0 });
   }
 
   function selectCategory(key: string) {
@@ -1041,6 +1114,43 @@ export default function DirectoryClient({
     const all = businesses.filter((b) => (b.themes || []).includes("kids-friendly") && b.photoUrl);
     return shuffleReady ? shuffled(all) : all;
   }, [businesses, shuffleReady, preferences.hasKids]);
+
+  // Sélections « vedettes » (coups de cœur, kids friendly) : ce sont des filtres
+  // sur les badges/thèmes des fiches, pas des listes de data/selections.ts,
+  // mais présentées comme les autres sélections, en tête du carrousel de
+  // l'accueil et de l'écran Sélections (réorganisation du 2026-09-25 : elles
+  // avaient chacune leur bloc sur l'accueil, en doublon).
+  const featuredSelections: { key: string; title: string; photoUrl?: string; badge: string; onClick: () => void }[] = [];
+  if (coupsDeCoeur.length > 0) {
+    featuredSelections.push({
+      key: "coups-de-coeur",
+      title: "Les coups de cœur de Koté Moris",
+      photoUrl: coupsDeCoeur[0].photoUrl,
+      badge: "/badge-selection.png",
+      onClick: () => {
+        setBrowseAll(true);
+        setFacetBadges(new Set(["selection"]));
+        setResultsView("liste");
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      },
+    });
+  }
+  if (kidsFriendly.length > 0) {
+    featuredSelections.push({
+      key: "kids-friendly",
+      title: "Adresses kids friendly",
+      photoUrl: kidsFriendly[0].photoUrl,
+      badge: "/badge-kids.png",
+      onClick: () => {
+        setNearMe(false);
+        setBrowseAll(true);
+        setHomeCategory(null);
+        setActiveThemes(new Set(["kids-friendly"]));
+        setResultsView("liste");
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      },
+    });
+  }
 
   // Accueil → bandeau « Seconde main » : annonces réelles avec au moins une photo.
   const previewListingPhotos = useMemo(
@@ -1560,38 +1670,38 @@ export default function DirectoryClient({
 
   // Le même calcul sert à la fois à la barre d'onglets mobile (tout en bas
   // de l'écran) et à la nav desktop équivalente en haut de la sidebar : sur
-  // desktop, la barre d'onglets mobile est masquée (lg:hidden), donc Recherche/
-  // Autour de moi/Listes/Mon compte doivent rester atteignables autrement.
-  const activeTab: "accueil" | "recherche" | "listes" | "profil" | "autre" = searchOpen || homeMode === "recherche"
-    ? "recherche"
+  // desktop, la barre d'onglets mobile est masquée (lg:hidden), donc Carte/
+  // Sélections/Mes adresses/Compte doivent rester atteignables autrement.
+  // Un onglet = une destination, sans doublon avec l'accueil (réorganisation
+  // du 2026-09-25) : la recherche vit dans le champ de l'accueil et la loupe
+  // des en-têtes, « Autour de moi » dans la barre des résultats.
+  const activeTab: "accueil" | "carte" | "listes" | "favoris" | "profil" | "autre" = !showHome && resultsView === "carte"
+    ? "carte"
     : homeMode === "listes"
       ? "listes"
-      : homeMode === "profil"
-        ? "profil"
-        : showHome && homeMode === "menu"
-          ? "accueil"
-          : "autre";
+      : homeMode === "favoris"
+        ? "favoris"
+        : homeMode === "profil"
+          ? "profil"
+          : showHome && homeMode === "menu"
+            ? "accueil"
+            : "autre";
 
-  const desktopNavItems: { key: typeof activeTab; label: string; icon: Icon; onClick: () => void }[] = [
+  const navItems: { key: Exclude<typeof activeTab, "autre">; label: string; icon: Icon; onClick: () => void }[] = [
     { key: "accueil", label: "Accueil", icon: House, onClick: goHome },
-    { key: "recherche", label: "Recherche", icon: MagnifyingGlass, onClick: focusSearch },
-    {
-      key: "autre",
-      label: "Autour de moi",
-      icon: MapPin,
-      onClick: () => { toggleNearMe(); window.scrollTo({ top: 0, behavior: "smooth" }); },
-    },
-    { key: "listes", label: "Listes", icon: Star, onClick: () => leaveResults("listes") },
-    { key: "profil", label: "Mon compte", icon: UserCircle, onClick: () => leaveResults("profil") },
+    { key: "carte", label: "Carte", icon: MapTrifold, onClick: openMap },
+    { key: "listes", label: "Sélections", icon: Star, onClick: () => leaveResults("listes") },
+    { key: "favoris", label: "Mes adresses", icon: Heart, onClick: () => leaveResults("favoris") },
+    { key: "profil", label: "Compte", icon: UserCircle, onClick: () => leaveResults("profil") },
   ];
 
   const sidebarContent = (
     <>
       {/* Nav desktop (équivalent de la barre d'onglets mobile, masquée en
-          lg:hidden) : Accueil/Recherche/Autour de moi/Listes/Mon compte. */}
+          lg:hidden) : mêmes 5 entrées que la barre du bas (navItems). */}
       <div className="p-2 border-b border-border flex flex-col gap-0.5">
-        {desktopNavItems.map(({ key, label, icon: ItemIcon, onClick }) => {
-          const isActive = key === "autre" ? nearMe : activeTab === key;
+        {navItems.map(({ key, label, icon: ItemIcon, onClick }) => {
+          const isActive = activeTab === key;
           return (
             <button
               key={key}
@@ -1825,16 +1935,11 @@ export default function DirectoryClient({
     </button>
   );
 
-  // Barre de navigation principale (5 onglets) fixée tout en bas de l'écran :
-  // Accueil / Recherche / Autour de moi / Listes / Mon compte.
-  // Le bouton central « + » (Suggérer une adresse) a été retiré de la barre :
-  // cette action est réservée aux membres de la communauté et vit désormais
-  // dans Mon compte (Actions rapides), visible uniquement pour ce rôle.
-  // « Sélections » (favoris/à tester/testé) a été retiré plus tôt : ce
-  // contenu vit désormais uniquement dans Mon compte. « Explorer » et
-  // « Carte » ont été retirés en amont : les catégories sont déjà en
-  // permanence sur l'accueil, et la carte reste accessible via le bandeau
-  // « Voir la carte » et le bouton liste/carte des résultats.
+  // Barre de navigation principale (5 onglets) fixée tout en bas de l'écran,
+  // mêmes entrées que la nav desktop (navItems) : Accueil / Carte /
+  // Sélections / Mes adresses / Compte. Un onglet = une destination (cf.
+  // activeTab) : plus d'onglet Recherche (champ de l'accueil + loupe des
+  // en-têtes) ni Autour de moi (barre des résultats/carte).
   const tabBar = (
     <nav
       aria-label="Navigation principale"
@@ -1846,64 +1951,23 @@ export default function DirectoryClient({
       }}
     >
       <div className="max-w-[640px] mx-auto grid grid-cols-5 items-end px-2 pt-1.5 pb-1.5">
-        <button
-          onClick={goHome}
-          aria-label="Accueil"
-          aria-pressed={activeTab === "accueil"}
-          className={`flex flex-col items-center gap-0.5 py-1 rounded-xl transition-colors active:scale-[.97] ${
-            activeTab === "accueil" ? "text-white" : "text-white/60"
-          }`}
-        >
-          <House size={22} weight={activeTab === "accueil" ? "fill" : "regular"} aria-hidden />
-          <span className="text-[10.5px] font-semibold leading-none">Accueil</span>
-        </button>
-        <button
-          onClick={focusSearch}
-          aria-label="Recherche"
-          aria-pressed={activeTab === "recherche"}
-          className={`flex flex-col items-center gap-0.5 py-1 rounded-xl transition-colors active:scale-[.97] ${
-            activeTab === "recherche" ? "text-white" : "text-white/60"
-          }`}
-        >
-          <MagnifyingGlass size={22} weight={activeTab === "recherche" ? "fill" : "regular"} aria-hidden />
-          <span className="text-[10.5px] font-semibold leading-none">Recherche</span>
-        </button>
-        <button
-          onClick={() => {
-            toggleNearMe();
-            window.scrollTo({ top: 0, behavior: "smooth" });
-          }}
-          aria-label="Autour de moi"
-          aria-pressed={nearMe}
-          className={`flex flex-col items-center gap-0.5 py-1 rounded-xl transition-colors active:scale-[.97] ${
-            nearMe ? "text-white" : "text-white/60"
-          }`}
-        >
-          <MapPin size={22} weight={nearMe ? "fill" : "regular"} aria-hidden />
-          <span className="text-[10.5px] font-semibold leading-none">Autour de moi</span>
-        </button>
-        <button
-          onClick={() => leaveResults("listes")}
-          aria-label="Listes de Koté Moris"
-          aria-pressed={activeTab === "listes"}
-          className={`flex flex-col items-center gap-0.5 py-1 rounded-xl transition-colors active:scale-[.97] ${
-            activeTab === "listes" ? "text-white" : "text-white/60"
-          }`}
-        >
-          <Star size={22} weight={activeTab === "listes" ? "fill" : "regular"} aria-hidden />
-          <span className="text-[10.5px] font-semibold leading-none">Listes</span>
-        </button>
-        <button
-          onClick={() => leaveResults("profil")}
-          aria-label="Mon compte"
-          aria-pressed={activeTab === "profil"}
-          className={`flex flex-col items-center gap-0.5 py-1 rounded-xl transition-colors active:scale-[.97] ${
-            activeTab === "profil" ? "text-white" : "text-white/60"
-          }`}
-        >
-          <UserCircle size={22} weight={activeTab === "profil" ? "fill" : "regular"} aria-hidden />
-          <span className="text-[10.5px] font-semibold leading-none">Mon compte</span>
-        </button>
+        {navItems.map(({ key, label, icon: ItemIcon, onClick }) => {
+          const isActive = activeTab === key;
+          return (
+            <button
+              key={key}
+              onClick={onClick}
+              aria-label={label}
+              aria-pressed={isActive}
+              className={`flex flex-col items-center gap-0.5 py-1 rounded-xl transition-colors active:scale-[.97] ${
+                isActive ? "text-white" : "text-white/60"
+              }`}
+            >
+              <ItemIcon size={22} weight={isActive ? "fill" : "regular"} aria-hidden />
+              <span className="text-[10.5px] font-semibold leading-none">{label}</span>
+            </button>
+          );
+        })}
       </div>
     </nav>
   );
@@ -2061,46 +2125,63 @@ export default function DirectoryClient({
                 simple superposition (position absolue, calée en % sur la
                 pastille dessinée dans l'image) directement dessus — le reste
                 de l'écran d'accueil arrive en dessous, au scroll. */}
-            <div className="relative w-full">
-              <Logo light tags />
-              {/* « Choisis ta façon de rechercher » : 3 cartes illustrées
-                  (maquette fournie par la cliente le 2026-09-23), superposées
-                  sur l'illustration sous le logo (~34% de la hauteur de
-                  bandeau-kotemoris-accueil-v10.png). Ancrées en haut plutôt
-                  que centrées : le dépliant « Par expérience » s'ouvre vers le
-                  bas sans remonter sur le logo. Empilées sur mobile (image à
-                  gauche, texte à droite), 3 colonnes à partir de lg.
-                  Illustrations HD fournies séparément (recherche-*.webp, 3:2,
-                  2026-09-24), affichées entières : ne pas les recadrer. */}
-              <div className="absolute z-20 left-[5%] right-[5%]" style={{ top: "34%" }}>
-                <div className="text-center mb-3">
-                  <p className="text-[15px] lg:text-[22px] font-extrabold tracking-[.14em] uppercase text-primary-deep">
+            {/* Illustration et cartes empilées dans la même cellule de grille :
+                la hauteur du bloc = la plus grande des deux, donc les cartes
+                peuvent dépasser sous l'illustration (et repousser la suite de
+                l'accueil) au lieu d'être rognées. */}
+            <div className="grid w-full">
+              <div className="relative [grid-area:1/1]">
+                <Logo light tags />
+                {/* Joint visuel : fondu au raz du bas de l'illustration vers le
+                    fond de page, pour que la transition avec la suite de
+                    l'accueil (Mes adresses, etc.) ne soit pas une coupure nette. */}
+                <div
+                  className="absolute inset-x-0 bottom-0 pointer-events-none"
+                  style={{ bottom: "-1%", height: "12%", background: "linear-gradient(to bottom, transparent 0%, var(--bg) 100%)" }}
+                />
+              </div>
+              {/* « Choisis ta façon de rechercher » (option C retenue le
+                  2026-09-25, à la place des 3 cartes illustrées jugées « trop
+                  IA ») : un vrai champ de recherche, puis 3 accès directs
+                  (Catégories / Expérience / Carte), style plat turquoise comme
+                  le reste de l'appli. Superposé sur l'illustration sous le
+                  logo, à ~34% de la hauteur de bandeau-kotemoris-accueil-v10.png
+                  (941×1670) — soit 60,3% de sa largeur, d'où le paddingTop (un %
+                  de padding se rapporte à la largeur). */}
+              <div className="relative z-20 [grid-area:1/1] self-start px-[7%] lg:px-[18%] pb-5" style={{ paddingTop: "60.3%" }}>
+                <div className="-mx-2 lg:mx-0 text-center mb-3">
+                  <p className="text-[14px] lg:text-[20px] font-extrabold tracking-[.14em] uppercase text-primary-deep">
                     Choisis ta façon de rechercher
                   </p>
                   <div className="mx-auto mt-1.5 h-[2px] w-2/3 rounded-full" style={{ background: "linear-gradient(90deg, transparent, var(--primary), transparent)" }} aria-hidden />
-                  <p className="mt-1.5 text-[10.5px] lg:text-[13px] font-semibold tracking-[.3em] uppercase text-ink/70">
-                    Simple · Rapide · Inspirant
-                  </p>
                 </div>
-                <div className="grid gap-2.5 lg:grid-cols-3 lg:gap-5">
+
+                {/* Champ mot-clé : le tap bascule sur l'écran de recherche (champ
+                    focalisé, cf. focusSearch), sans étape intermédiaire. */}
+                <SearchInput
+                  value={query}
+                  onChange={(v) => { setQuery(v); if (!searchOpen) focusSearch(); }}
+                  onFocus={() => { if (!searchOpen) focusSearch(); }}
+                  placeholder="Un nom, un lieu, une activité…"
+                />
+
+                {/* La carte a son propre onglet dans la barre du bas (openMap) :
+                    pas de doublon ici. Icônes Phosphor provisoires, à remplacer
+                    par les icônes « maison » quand elles seront fournies. */}
+                <div className="mt-2.5 grid grid-cols-2 gap-2">
                   {(
                     [
-                      { key: "mot", title: "Mot-clé", sub: "Un nom, un lieu, une activité…", img: "/recherche-motcle.webp" },
-                      { key: "categorie", title: "Catégories", sub: "Explore nos univers", img: "/recherche-categories.webp" },
-                      { key: "experience", title: "Expérience", sub: "Des idées prêtes à vivre (plan combiné)", img: "/recherche-experience.webp" },
+                      { key: "categorie", label: "Catégories", icon: Signpost },
+                      { key: "experience", label: "Expérience", icon: Sparkle },
                     ] as const
-                  ).map((c) => (
-                    // Dépliant « Par expérience » ouvert : sur mobile, les deux
-                    // autres cartes s'effacent au profit des options (sinon le
-                    // tout déborde du bandeau, qui est en overflow-hidden) ;
-                    // un nouveau tap sur la carte les fait revenir.
-                    <div key={c.key} className={experienceOpen && c.key !== "experience" ? "hidden lg:block" : undefined}>
+                  ).map((b) => {
+                    const on = b.key === "experience" && experienceOpen;
+                    return (
                       <button
+                        key={b.key}
                         type="button"
                         onClick={() => {
-                          if (c.key === "mot") {
-                            focusSearch();
-                          } else if (c.key === "categorie") {
+                          if (b.key === "categorie") {
                             setHomeMode("categories");
                             setHomeCategory(null);
                             setHomeSubRubrique(null);
@@ -2109,77 +2190,48 @@ export default function DirectoryClient({
                             setExperienceOpen((o) => !o);
                           }
                         }}
-                        aria-expanded={c.key === "experience" ? experienceOpen : undefined}
-                        className="w-full flex lg:flex-col items-stretch overflow-hidden rounded-3xl text-left lg:text-center active:scale-[.98] transition-transform"
-                        style={{
-                          background: "color-mix(in srgb, var(--surface) 82%, transparent)",
-                          backdropFilter: "blur(12px)",
-                          WebkitBackdropFilter: "blur(12px)",
-                          border: "2px solid rgba(255,255,255,.75)",
-                          boxShadow: "0 14px 30px -12px rgba(6,50,56,.45), 0 2px 6px rgba(6,50,56,.10)",
-                        }}
+                        aria-expanded={b.key === "experience" ? experienceOpen : undefined}
+                        className={`flex items-center justify-center gap-2 rounded-2xl py-3 text-[13.5px] lg:text-[15px] font-bold active:scale-[.97] transition-transform ${
+                          on ? "bg-primary text-on-primary" : "bg-surface text-primary-deep"
+                        }`}
+                        style={{ boxShadow: "0 6px 16px -8px rgba(6,50,56,.35)" }}
                       >
-                        {/* eslint-disable-next-line @next/next/no-img-element */}
-                        <img
-                          src={c.img}
-                          alt=""
-                          aria-hidden
-                          className="shrink-0 w-[46%] lg:w-full aspect-[3/2] object-cover"
-                        />
-                        <span className="min-w-0 flex-1 flex flex-col justify-center px-3 py-2 lg:px-3.5 lg:py-4">
-                          {/* « Par » en petite surcapitale au-dessus du mot principal :
-                              le titre tient sur une ligne dans la colonne texte
-                              étroite (l'image prend ~46% de la carte sur mobile). */}
-                          <span className="block text-[10px] lg:text-[12px] font-bold uppercase tracking-[.22em] text-ink/55">Par</span>
-                          <span className="block text-[19px] lg:text-[26px] font-extrabold leading-[1.1] text-primary-deep">{c.title}</span>
-                          <span className="block text-[11px] lg:text-[14px] text-ink/70 leading-tight mt-1">{c.sub}</span>
-                        </span>
+                        <b.icon size={22} weight={on ? "fill" : "duotone"} aria-hidden />
+                        {b.label}
                       </button>
-
-                      {/* Deux usages de /mon-plan : « Trouver un lieu » d'abord (le
-                          besoin le plus courant), puis le programme complet. */}
-                      {c.key === "experience" && experienceOpen && (
-                        <div className="mt-2 space-y-2">
-                          {(
-                            [
-                              { href: "/mon-plan", icon: MapPin, title: "Trouver un lieu", sub: "Ta thématique, tes critères, une liste d'adresses" },
-                              { href: "/mon-plan?mode=plan", icon: Sparkle, title: "Plan complet", sub: "Un programme sur mesure selon ton groupe, ta zone et ton temps" },
-                            ] as const
-                          ).map((l) => (
-                            <Link
-                              key={l.href}
-                              href={l.href}
-                              className="flex items-center gap-3 rounded-2xl p-3 no-underline text-ink active:scale-[.98] transition-transform"
-                              style={{
-                                background: "color-mix(in srgb, var(--surface) 90%, transparent)",
-                                backdropFilter: "blur(12px)",
-                                WebkitBackdropFilter: "blur(12px)",
-                                boxShadow: "0 8px 20px -10px rgba(6,50,56,.4)",
-                              }}
-                            >
-                              <span className="shrink-0 flex items-center justify-center w-10 h-10 rounded-full bg-primary text-on-primary" aria-hidden>
-                                <l.icon size={20} weight="fill" />
-                              </span>
-                              <span className="min-w-0 flex-1">
-                                <span className="block text-[14px] font-extrabold leading-tight">{l.title}</span>
-                                <span className="block text-[11.5px] text-muted leading-snug mt-0.5">{l.sub}</span>
-                              </span>
-                              <span className="shrink-0 text-[18px] font-bold text-primary-deep" aria-hidden>›</span>
-                            </Link>
-                          ))}
-                        </div>
-                      )}
-                    </div>
-                  ))}
+                    );
+                  })}
                 </div>
+
+                {/* Deux usages de /mon-plan : « Trouver un lieu » d'abord (le
+                    besoin le plus courant), puis le programme complet. */}
+                {experienceOpen && (
+                  <div className="mt-2 space-y-2">
+                    {(
+                      [
+                        { href: "/mon-plan", icon: MapPin, title: "Trouver un lieu", sub: "Ta thématique, tes critères, une liste d'adresses" },
+                        { href: "/mon-plan?mode=plan", icon: Sparkle, title: "Plan complet", sub: "Un programme sur mesure selon ton groupe, ta zone et ton temps" },
+                      ] as const
+                    ).map((l) => (
+                      <Link
+                        key={l.href}
+                        href={l.href}
+                        className="flex items-center gap-3 rounded-2xl p-3 no-underline text-ink bg-surface active:scale-[.98] transition-transform"
+                        style={{ boxShadow: "0 6px 16px -8px rgba(6,50,56,.35)" }}
+                      >
+                        <span className="shrink-0 flex items-center justify-center w-10 h-10 rounded-full bg-primary-tint text-primary-deep" aria-hidden>
+                          <l.icon size={20} weight="duotone" />
+                        </span>
+                        <span className="min-w-0 flex-1">
+                          <span className="block text-[14px] font-extrabold leading-tight">{l.title}</span>
+                          <span className="block text-[11.5px] text-muted leading-snug mt-0.5">{l.sub}</span>
+                        </span>
+                        <span className="shrink-0 text-[18px] font-bold text-primary-deep" aria-hidden>›</span>
+                      </Link>
+                    ))}
+                  </div>
+                )}
               </div>
-              {/* Joint visuel : fondu au raz du bas de l'illustration vers le
-                  fond de page, pour que la transition avec la suite de
-                  l'accueil (Mes adresses, etc.) ne soit pas une coupure nette. */}
-              <div
-                className="absolute inset-x-0 bottom-0 pointer-events-none"
-                style={{ bottom: "-1%", height: "12%", background: "linear-gradient(to bottom, transparent 0%, var(--bg) 100%)" }}
-              />
             </div>
           </div>
         ) : homeMode === "favoris" ? (
@@ -2341,82 +2393,15 @@ export default function DirectoryClient({
               {/* Espace de recherche : superposé sur l'illustration, centré au
                   niveau des bateaux (cf. header, juste au-dessus). */}
 
-              {/* Tuiles jumelles remontées juste sous l'encart de recherche (à
-                  la demande) : « Mes adresses » et « Nos sélections Koté
-                  Moris » (badges Recommandé → coups de cœur, Kids friendly →
-                  section kids, plus bas sur l'accueil). -mt : léger
-                  recouvrement avec le bas de l'illustration. */}
-              <div className="grid grid-cols-2 gap-2.5 -mt-6 sm:-mt-8 mb-6 relative z-40">
-            <button
-              onClick={() => { setHomeMode("profil"); window.scrollTo({ top: 0, behavior: "smooth" }); }}
-              className="flex flex-col items-center justify-between gap-1.5 rounded-xl border border-white/40 py-2.5 px-1 shadow-card active:scale-[.96] transition-transform"
-              style={{ background: "color-mix(in srgb, var(--primary) 16%, var(--surface))" }}
-            >
-              <span className="flex items-center justify-center gap-3 h-[60px] sm:h-[72px] text-[15px] sm:text-[17px] font-extrabold">
-                <span className="inline-flex flex-col items-center gap-0.5" style={{ color: COUP_DE_COEUR_COLOR }}><Heart size={26} weight="fill" aria-hidden />{favoriteBusinesses.length}<span className="text-[9.5px] sm:text-[11px] font-semibold text-ink/70 leading-none">Favoris</span></span>
-                <span className="inline-flex flex-col items-center gap-0.5" style={{ color: "#f5a623" }}><Flag size={26} weight="fill" aria-hidden />{aTesterBusinesses.length}<span className="text-[9.5px] sm:text-[11px] font-semibold text-ink/70 leading-none">À tester</span></span>
-                <span className="inline-flex flex-col items-center gap-0.5" style={{ color: "#2e9e5b" }}><CheckCircle size={26} weight="fill" aria-hidden />{testeBusinesses.length}<span className="text-[9.5px] sm:text-[11px] font-semibold text-ink/70 leading-none">Testé</span></span>
-              </span>
-              <span className="text-[13px] sm:text-[15px] font-extrabold text-ink leading-tight text-center">Mes adresses</span>
-            </button>
-            <div
-              role="button"
-              tabIndex={0}
-              onClick={() => scrollToHomeSection("accueil-coups-de-coeur")}
-              onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") scrollToHomeSection("accueil-coups-de-coeur"); }}
-              className="flex flex-col items-center justify-between gap-1.5 rounded-xl border border-white/40 py-2.5 px-1 shadow-card cursor-pointer active:scale-[.96] transition-transform"
-              style={{ background: "color-mix(in srgb, var(--primary) 16%, var(--surface))" }}
-            >
-              <span className="flex items-center justify-center gap-1 h-[60px] sm:h-[72px]">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/badge-selection.png" alt="Recommandées" className="w-[60px] h-[60px] sm:w-[72px] sm:h-[72px] object-contain" />
-                {kidsFriendly.length > 0 && (
-                <button
-                  onClick={(e) => { e.stopPropagation(); scrollToHomeSection("accueil-kids-friendly"); }}
-                  aria-label="Adresses kids friendly"
-                  className="active:scale-[.94] transition-transform"
-                >
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="/badge-kids.png" alt="" aria-hidden className="w-[60px] h-[60px] sm:w-[72px] sm:h-[72px] object-contain" />
-                </button>
-                )}
-              </span>
-              <span className="text-[13px] sm:text-[15px] font-extrabold text-ink leading-tight text-center">Nos sélections Koté Moris</span>
-            </div>
-            </div>
-
-              {/* Vignettes Événements/Seconde main : sous les tuiles jumelles. */}
-              <h2 className="text-[16px] font-bold text-ink mb-2">Les avantages de mon abonnement Premium</h2>
-              <div className="grid grid-cols-2 gap-2 mb-7">
-                {[
-                  { src: "/vignette-agenda.webp", alt: "Agenda des événements — accès Premium", target: "accueil-evenements" },
-                  { src: "/vignette-seconde-main.webp", alt: "Seconde main — accès Premium", target: "accueil-seconde-main" },
-                ].map((v) => (
-                  <button
-                    key={v.src}
-                    onClick={() => {
-                      if (canSeeEventDetail) scrollToHomeSection(v.target);
-                      else window.location.href = "/mon-compte/upgrade";
-                    }}
-                    aria-label={v.alt}
-                    className="relative block h-[100px] sm:h-[130px] rounded-2xl overflow-hidden shadow-card active:scale-[.97] transition-transform"
-                  >
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src={v.src} alt="" aria-hidden className="absolute inset-0 w-full h-full object-cover object-[50%_100%]" />
-                    <span className="absolute top-1.5 right-1.5 inline-flex items-center justify-center w-6 h-6 rounded-full text-white shadow-sm" style={{ background: "linear-gradient(135deg, #f5a623, #e88a00)" }}>
-                      <Crown size={13} weight="fill" aria-hidden />
-                    </span>
-                  </button>
-                ))}
-              </div>
-
-              {/* Le bandeau « Créer mon plan » a été retiré d'ici : le bloc
-                  « Par expérience » du bandeau d'accueil (au-dessus, cf.
-                  header) mène désormais directement à /mon-plan, sans
-                  doublon plus bas. */}
-
-              <div className="flex items-center justify-between mb-1">
-                <h2 className="text-[16px] font-bold text-ink">Les listes de Koté Moris</h2>
+              {/* Nos sélections : un seul carrousel (réorganisation du
+                  2026-09-25) — sélections vedettes (coups de cœur, kids
+                  friendly) en tête, puis les listes de data/selections.ts. Il
+                  remplace les tuiles « Mes adresses » / « Nos sélections »
+                  (onglets dédiés dans la barre du bas), le bloc « Avantages
+                  Premium » (bloc Premium unique plus bas) et les sections
+                  coups de cœur / kids friendly séparées. */}
+              <div className="flex items-center justify-between mt-2 mb-1">
+                <h2 className="text-[16px] font-bold text-ink">Nos sélections</h2>
                 <button
                   onClick={() => setHomeMode("listes")}
                   className="text-[13px] font-semibold text-primary-deep active:scale-[.98]"
@@ -2428,6 +2413,16 @@ export default function DirectoryClient({
                 Envie d&apos;inspiration ? On a déjà fait le tri pour toi.
               </p>
               <div className="flex gap-3 overflow-x-auto pb-1 -mx-4 px-4 mb-7 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+                {featuredSelections.map((f) => (
+                  <FeaturedSelectionCard
+                    key={f.key}
+                    title={f.title}
+                    photoUrl={f.photoUrl}
+                    badge={f.badge}
+                    onClick={f.onClick}
+                    className="shrink-0 w-[130px]"
+                  />
+                ))}
                 {homeSelections.map((s) => (
                   <button
                     key={s.id}
@@ -2455,8 +2450,8 @@ export default function DirectoryClient({
                 ))}
               </div>
 
-              {/* Coups de cœur remontés juste sous l'encart de recherche : la
-                  sélection éditoriale est la première chose vue à l'accueil. */}
+              {/* À la une : aperçu de quelques coups de cœur de la rédaction (fiches).
+                  « Voir tout › » = toutes les fiches badgées « selection ». */}
               {coupsDeCoeur.length > 0 && (
                 <div
                   id="accueil-coups-de-coeur"
@@ -2469,7 +2464,7 @@ export default function DirectoryClient({
                     <div className="flex items-center gap-2.5">
                       {/* eslint-disable-next-line @next/next/no-img-element */}
                       <img src="/badge-selection.png" alt="" aria-hidden className="h-14 w-14 shrink-0" />
-                      <h2 className="text-[16px] font-bold text-ink">Les coups de cœur de Koté Moris</h2>
+                      <h2 className="text-[16px] font-bold text-ink">À la une</h2>
                     </div>
                     <button
                       onClick={() => { setBrowseAll(true); setFacetBadges(new Set(["selection"])); }}
@@ -2567,247 +2562,195 @@ export default function DirectoryClient({
               )}
 
 
-              {kidsFriendly.length > 0 && (
-                <div
-                  id="accueil-kids-friendly"
-                  className="p-3 rounded-2xl shadow-card"
-                  style={{
-                    background: `linear-gradient(135deg, color-mix(in srgb, var(--primary-deep) 45%, var(--surface)) 0%, color-mix(in srgb, var(--primary) 10%, var(--surface)) 100%)`,
-                  }}
-                >
-                  <div className="flex items-center justify-between mb-2">
-                    <div className="flex items-center gap-2.5">
-                      {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img src="/badge-kids.png" alt="" aria-hidden className="h-14 w-14 shrink-0" />
-                      <h2 className="text-[16px] font-bold text-ink">Adresses kids friendly</h2>
-                    </div>
-                    <button
-                      onClick={() => {
-                        setNearMe(false);
-                        setBrowseAll(true);
-                        setHomeCategory(null);
-                        setActiveThemes(new Set(["kids-friendly"]));
-                        setResultsView("liste");
+              {/* Premium : un seul bloc (réorganisation du 2026-09-25) —
+                  Événements (prochaines dates) puis Seconde main, avec un
+                  lien unique vers les avantages pour les non-abonnés. */}
+              <section className="mt-7" aria-labelledby="accueil-premium-titre">
+                <div className="flex items-center justify-between mb-2.5">
+                  <h2 id="accueil-premium-titre" className="flex items-center gap-1.5 text-[16px] font-bold text-ink">
+                    <Crown size={18} weight="fill" className="text-[#e0a100]" aria-hidden />
+                    Koté Moris Premium
+                  </h2>
+                  {!canSeeEventDetail && (
+                    <Link href="/mon-compte/upgrade" className="text-[13px] font-semibold text-primary-deep no-underline">
+                      Voir les avantages ›
+                    </Link>
+                  )}
+                </div>
+                <div className="flex flex-col gap-3">
+                  <div
+                    id="accueil-evenements"
+                    role="button"
+                    tabIndex={0}
+                    onClick={() => {
+                      if (canSeeEventDetail) {
+                        setHomeMode("categories");
+                        setHomeCategory("agenda");
                         window.scrollTo({ top: 0, behavior: "smooth" });
-                      }}
-                      className="shrink-0 text-[13px] font-semibold text-primary-deep active:scale-[.98]"
-                    >
-                      Voir tout ›
-                    </button>
-                  </div>
-                  <div className="flex gap-3 overflow-x-auto pb-1 -mx-3 px-3 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-                    {kidsFriendly.slice(0, 12).map((b) => (
-                      <div
-                        key={b.id}
-                        role="button"
-                        tabIndex={0}
-                        onClick={() => selectFromCard(b.id)}
-                        onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") selectFromCard(b.id); }}
-                        className="relative shrink-0 w-[160px] rounded-card overflow-hidden bg-surface border border-border shadow-card text-left cursor-pointer active:scale-[.98] transition-transform"
+                      } else {
+                        window.location.href = "/mon-compte/upgrade";
+                      }
+                    }}
+                    onKeyDown={(e) => {
+                      if (e.key === "Enter" || e.key === " ") {
+                        e.preventDefault();
+                        if (canSeeEventDetail) {
+                          setHomeMode("categories");
+                          setHomeCategory("agenda");
+                          window.scrollTo({ top: 0, behavior: "smooth" });
+                        } else {
+                          window.location.href = "/mon-compte/upgrade";
+                        }
+                      }
+                    }}
+                    aria-label="Voir tous les événements"
+                    className="rounded-2xl p-4 overflow-hidden shadow-card cursor-pointer active:scale-[.99] transition-transform"
+                    style={{ background: "linear-gradient(135deg, #ffd3df 0%, #fff2f5 60%)" }}
+                  >
+                    <div className="flex items-start justify-between gap-2">
+                      <div className="min-w-0">
+                        <span
+                          className="inline-flex items-center gap-1 px-2 py-1 rounded-pill text-[9.5px] font-bold text-white"
+                          style={{ background: "linear-gradient(135deg, #f5a623, #e88a00)" }}
+                        >
+                          <Crown size={11} weight="fill" aria-hidden /> PREMIUM
+                        </span>
+                        <p className="mt-2 text-[15px] font-bold leading-tight">Événements à Maurice</p>
+                        <p className="text-[11.5px] text-muted leading-snug mt-0.5">Ne ratez plus rien : concerts, festivals, sorties culturelles et sportives près de chez vous</p>
+                      </div>
+                      <span
+                        aria-hidden
+                        className="shrink-0 flex items-center justify-center w-8 h-8 rounded-full bg-white shadow-sm text-[14px] font-bold"
+                        style={{ color: "#e0567a" }}
                       >
-                        <div className="relative h-[110px] bg-primary-tint flex items-center justify-center">
-                          {b.photoUrl ? (
-                            // eslint-disable-next-line @next/next/no-img-element
-                            <img src={b.photoUrl} alt="" className="absolute inset-0 w-full h-full object-cover" />
-                          ) : (
-                            (() => {
-                              const FallbackIcon = iconForKey(b.category);
-                              return FallbackIcon ? (
-                                <FallbackIcon size={30} weight="duotone" className="text-primary-deep opacity-50" aria-hidden />
-                              ) : null;
-                            })()
-                          )}
-                          <span
-                            className="absolute top-1.5 right-1.5 inline-flex items-center gap-1 px-1.5 py-1 rounded-full bg-surface/90 shadow-sm"
-                            onClick={(e) => e.stopPropagation()}
-                          >
-                            <FavoriteButton id={b.id} size={12.5} />
-                          </span>
-                        </div>
-                        <div className="p-2.5">
-                          <p className="text-[13px] font-bold text-ink truncate">{displayName(b.name)}</p>
-                          <p className="text-[11.5px] text-muted truncate">
-                            {CATEGORY_MAP[b.category].label} • {displayCity(b.address)}
-                          </p>
+                        ›
+                      </span>
+                    </div>
+
+                    {upcomingEvents.length > 0 ? (
+                      <div className="mt-3.5 -mx-1">
+                        <div className="flex overflow-x-auto px-1 pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+                          {upcomingEvents.map((b) => {
+                            const rubrique = (b.themes || [])[0];
+                            const filterEmoji = (b.filters || []).map((f) => FILTER_OPTION_EMOJI[f]).find(Boolean);
+                            const emoji = filterEmoji ?? (rubrique ? RUBRIQUE_MAP[rubrique]?.emoji ?? "🎉" : "🎉");
+                            const eventColor = eventColorFor(b);
+                            const shortDate = b.eventStartDate
+                              ? new Date(b.eventStartDate + "T00:00:00").toLocaleDateString("fr-FR", { day: "numeric", month: "short" })
+                              : null;
+                            return (
+                              <div key={b.id} className="relative shrink-0 w-[150px] mr-3 last:mr-0 flex flex-col items-center">
+                                <span
+                                  className="relative z-10 mb-1.5 px-1.5 py-0.5 rounded-pill text-[10px] font-bold text-on-accent"
+                                  style={{ background: "var(--accent)" }}
+                                >
+                                  {shortDate ?? "—"}
+                                </span>
+                                <div
+                                  className="absolute left-0 top-[27px] h-px"
+                                  style={{ width: "calc(100% + 12px)", background: "var(--border)" }}
+                                  aria-hidden
+                                />
+                                <span
+                                  className="relative z-10 w-2.5 h-2.5 rounded-full mb-2"
+                                  style={{ background: "var(--accent)", boxShadow: "0 0 0 3px var(--surface)" }}
+                                  aria-hidden
+                                />
+                                <button
+                                  onClick={(e) => {
+                                    e.stopPropagation();
+                                    openEvent(b.id);
+                                  }}
+                                  className="relative text-left w-full rounded-2xl overflow-hidden p-3 shadow-card active:scale-[.98] transition-transform"
+                                  style={{ background: `linear-gradient(135deg, color-mix(in srgb, ${eventColor} 20%, var(--surface)) 0%, var(--surface) 75%)`, border: "1px solid var(--border)" }}
+                                >
+                              <span
+                                className="absolute top-2 right-2 flex items-center justify-center w-7 h-7 rounded-full text-[14px] shadow-sm"
+                                style={{ background: "var(--surface)", border: "1px solid var(--border)" }}
+                                aria-hidden
+                              >
+                                {emoji}
+                              </span>
+                              <p className="pr-7 text-[13px] font-bold text-ink leading-tight line-clamp-2">{b.name}</p>
+                              {b.description && (
+                                <p className="mt-1 text-[11px] text-muted leading-snug line-clamp-3">{b.description}</p>
+                              )}
+                              <span
+                                className="mt-2 inline-flex items-center gap-0.5 px-1.5 py-0.5 rounded-pill text-[9.5px] font-bold"
+                                style={{ background: eventColor, color: eventTextColor(eventColor) }}
+                              >
+                                🔒 Premium
+                              </span>
+                                </button>
+                              </div>
+                            );
+                          })}
                         </div>
                       </div>
-                    ))}
+                    ) : (
+                      <p className="mt-3.5 text-[11.5px] font-semibold" style={{ color: "#a8365f" }}>
+                        Bientôt de nouveaux événements…
+                      </p>
+                    )}
                   </div>
-                </div>
-              )}
-
-              <Link
-                id="accueil-seconde-main"
-                href={canSeeEventDetail ? "/seconde-main" : "/mon-compte/upgrade"}
-                className="mt-7 block rounded-2xl p-4 overflow-hidden no-underline text-ink shadow-card active:scale-[.99] transition-transform"
-                style={{ background: "linear-gradient(135deg, #ffe3b0 0%, #fff7ea 60%)" }}
-              >
-                <div className="flex items-start justify-between gap-2">
-                  <div className="min-w-0">
-                    <span
-                      className="inline-flex items-center gap-1 px-2 py-1 rounded-pill text-[9.5px] font-bold text-white"
-                      style={{ background: "linear-gradient(135deg, #f5a623, #e88a00)" }}
-                    >
-                      <Crown size={11} weight="fill" aria-hidden /> PREMIUM
-                    </span>
-                    <p className="mt-2 text-[15px] font-bold leading-tight">Seconde main entre particuliers</p>
-                    <p className="text-[11.5px] text-muted leading-snug mt-0.5">Dénichez de bonnes affaires ou trouvez preneur pour vos objets, en toute confiance entre membres</p>
-                  </div>
-                  <span
-                    className="shrink-0 flex items-center justify-center w-8 h-8 rounded-full bg-white shadow-sm text-[14px] font-bold"
-                    style={{ color: "#e88a00" }}
-                    aria-hidden
+                  <Link
+                    id="accueil-seconde-main"
+                    href={canSeeEventDetail ? "/seconde-main" : "/mon-compte/upgrade"}
+                    className="block rounded-2xl p-4 overflow-hidden no-underline text-ink shadow-card active:scale-[.99] transition-transform"
+                    style={{ background: "linear-gradient(135deg, #ffe3b0 0%, #fff7ea 60%)" }}
                   >
-                    ›
-                  </span>
-                </div>
-
-                {previewListingPhotos.length > 0 ? (
-                  <div className="mt-3.5 flex gap-2 overflow-x-auto pb-0.5 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-                    {previewListingPhotos.slice(0, 8).map((listing) => (
+                    <div className="flex items-start justify-between gap-2">
+                      <div className="min-w-0">
+                        <span
+                          className="inline-flex items-center gap-1 px-2 py-1 rounded-pill text-[9.5px] font-bold text-white"
+                          style={{ background: "linear-gradient(135deg, #f5a623, #e88a00)" }}
+                        >
+                          <Crown size={11} weight="fill" aria-hidden /> PREMIUM
+                        </span>
+                        <p className="mt-2 text-[15px] font-bold leading-tight">Seconde main entre particuliers</p>
+                        <p className="text-[11.5px] text-muted leading-snug mt-0.5">Dénichez de bonnes affaires ou trouvez preneur pour vos objets, en toute confiance entre membres</p>
+                      </div>
                       <span
-                        key={listing.id}
-                        className="relative shrink-0 w-[72px] h-[72px] rounded-xl overflow-hidden"
-                        style={{ border: "1px solid rgba(255,255,255,.85)" }}
+                        className="shrink-0 flex items-center justify-center w-8 h-8 rounded-full bg-white shadow-sm text-[14px] font-bold"
+                        style={{ color: "#e88a00" }}
+                        aria-hidden
                       >
-                        {/* eslint-disable-next-line @next/next/no-img-element */}
-                        <img src={listingPhotoUrl(listing.photos![0].storagePath)} alt="" className="w-full h-full object-cover" />
+                        ›
                       </span>
-                    ))}
-                  </div>
-                ) : (
-                  // Pas encore assez d'annonces avec photo : quelques visuels d'illustration
-                  // (objets génériques, non liés à de vraies annonces) pour donner le ton.
-                  <div className="mt-3.5 flex gap-2 overflow-x-auto pb-0.5 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-                    {SECONDE_MAIN_ILLUSTRATIONS.map((src) => (
-                      <span
-                        key={src}
-                        className="relative shrink-0 w-[72px] h-[72px] rounded-xl overflow-hidden"
-                        style={{ border: "1px solid rgba(255,255,255,.85)" }}
-                      >
-                        {/* eslint-disable-next-line @next/next/no-img-element */}
-                        <img src={src} alt="" className="w-full h-full object-cover" />
-                      </span>
-                    ))}
-                  </div>
-                )}
-              </Link>
-
-              <div
-                id="accueil-evenements"
-                role="button"
-                tabIndex={0}
-                onClick={() => {
-                  if (canSeeEventDetail) {
-                    setHomeMode("categories");
-                    setHomeCategory("agenda");
-                    window.scrollTo({ top: 0, behavior: "smooth" });
-                  } else {
-                    window.location.href = "/mon-compte/upgrade";
-                  }
-                }}
-                onKeyDown={(e) => {
-                  if (e.key === "Enter" || e.key === " ") {
-                    e.preventDefault();
-                    if (canSeeEventDetail) {
-                      setHomeMode("categories");
-                      setHomeCategory("agenda");
-                      window.scrollTo({ top: 0, behavior: "smooth" });
-                    } else {
-                      window.location.href = "/mon-compte/upgrade";
-                    }
-                  }
-                }}
-                aria-label="Voir tous les événements"
-                className="mt-4 rounded-2xl p-4 overflow-hidden shadow-card cursor-pointer active:scale-[.99] transition-transform"
-                style={{ background: "linear-gradient(135deg, #ffd3df 0%, #fff2f5 60%)" }}
-              >
-                <div className="flex items-start justify-between gap-2">
-                  <div className="min-w-0">
-                    <span
-                      className="inline-flex items-center gap-1 px-2 py-1 rounded-pill text-[9.5px] font-bold text-white"
-                      style={{ background: "linear-gradient(135deg, #f5a623, #e88a00)" }}
-                    >
-                      <Crown size={11} weight="fill" aria-hidden /> PREMIUM
-                    </span>
-                    <p className="mt-2 text-[15px] font-bold leading-tight">Événements à Maurice</p>
-                    <p className="text-[11.5px] text-muted leading-snug mt-0.5">Ne ratez plus rien : concerts, festivals, sorties culturelles et sportives près de chez vous</p>
-                  </div>
-                  <span
-                    aria-hidden
-                    className="shrink-0 flex items-center justify-center w-8 h-8 rounded-full bg-white shadow-sm text-[14px] font-bold"
-                    style={{ color: "#e0567a" }}
-                  >
-                    ›
-                  </span>
-                </div>
-
-                {upcomingEvents.length > 0 ? (
-                  <div className="mt-3.5 -mx-1">
-                    <div className="flex overflow-x-auto px-1 pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-                      {upcomingEvents.map((b) => {
-                        const rubrique = (b.themes || [])[0];
-                        const filterEmoji = (b.filters || []).map((f) => FILTER_OPTION_EMOJI[f]).find(Boolean);
-                        const emoji = filterEmoji ?? (rubrique ? RUBRIQUE_MAP[rubrique]?.emoji ?? "🎉" : "🎉");
-                        const eventColor = eventColorFor(b);
-                        const shortDate = b.eventStartDate
-                          ? new Date(b.eventStartDate + "T00:00:00").toLocaleDateString("fr-FR", { day: "numeric", month: "short" })
-                          : null;
-                        return (
-                          <div key={b.id} className="relative shrink-0 w-[150px] mr-3 last:mr-0 flex flex-col items-center">
-                            <span
-                              className="relative z-10 mb-1.5 px-1.5 py-0.5 rounded-pill text-[10px] font-bold text-on-accent"
-                              style={{ background: "var(--accent)" }}
-                            >
-                              {shortDate ?? "—"}
-                            </span>
-                            <div
-                              className="absolute left-0 top-[27px] h-px"
-                              style={{ width: "calc(100% + 12px)", background: "var(--border)" }}
-                              aria-hidden
-                            />
-                            <span
-                              className="relative z-10 w-2.5 h-2.5 rounded-full mb-2"
-                              style={{ background: "var(--accent)", boxShadow: "0 0 0 3px var(--surface)" }}
-                              aria-hidden
-                            />
-                            <button
-                              onClick={(e) => {
-                                e.stopPropagation();
-                                openEvent(b.id);
-                              }}
-                              className="relative text-left w-full rounded-2xl overflow-hidden p-3 shadow-card active:scale-[.98] transition-transform"
-                              style={{ background: `linear-gradient(135deg, color-mix(in srgb, ${eventColor} 20%, var(--surface)) 0%, var(--surface) 75%)`, border: "1px solid var(--border)" }}
-                            >
-                          <span
-                            className="absolute top-2 right-2 flex items-center justify-center w-7 h-7 rounded-full text-[14px] shadow-sm"
-                            style={{ background: "var(--surface)", border: "1px solid var(--border)" }}
-                            aria-hidden
-                          >
-                            {emoji}
-                          </span>
-                          <p className="pr-7 text-[13px] font-bold text-ink leading-tight line-clamp-2">{b.name}</p>
-                          {b.description && (
-                            <p className="mt-1 text-[11px] text-muted leading-snug line-clamp-3">{b.description}</p>
-                          )}
-                          <span
-                            className="mt-2 inline-flex items-center gap-0.5 px-1.5 py-0.5 rounded-pill text-[9.5px] font-bold"
-                            style={{ background: eventColor, color: eventTextColor(eventColor) }}
-                          >
-                            🔒 Premium
-                          </span>
-                            </button>
-                          </div>
-                        );
-                      })}
                     </div>
-                  </div>
-                ) : (
-                  <p className="mt-3.5 text-[11.5px] font-semibold" style={{ color: "#a8365f" }}>
-                    Bientôt de nouveaux événements…
-                  </p>
-                )}
-              </div>
+
+                    {previewListingPhotos.length > 0 ? (
+                      <div className="mt-3.5 flex gap-2 overflow-x-auto pb-0.5 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+                        {previewListingPhotos.slice(0, 8).map((listing) => (
+                          <span
+                            key={listing.id}
+                            className="relative shrink-0 w-[72px] h-[72px] rounded-xl overflow-hidden"
+                            style={{ border: "1px solid rgba(255,255,255,.85)" }}
+                          >
+                            {/* eslint-disable-next-line @next/next/no-img-element */}
+                            <img src={listingPhotoUrl(listing.photos![0].storagePath)} alt="" className="w-full h-full object-cover" />
+                          </span>
+                        ))}
+                      </div>
+                    ) : (
+                      // Pas encore assez d'annonces avec photo : quelques visuels d'illustration
+                      // (objets génériques, non liés à de vraies annonces) pour donner le ton.
+                      <div className="mt-3.5 flex gap-2 overflow-x-auto pb-0.5 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+                        {SECONDE_MAIN_ILLUSTRATIONS.map((src) => (
+                          <span
+                            key={src}
+                            className="relative shrink-0 w-[72px] h-[72px] rounded-xl overflow-hidden"
+                            style={{ border: "1px solid rgba(255,255,255,.85)" }}
+                          >
+                            {/* eslint-disable-next-line @next/next/no-img-element */}
+                            <img src={src} alt="" className="w-full h-full object-cover" />
+                          </span>
+                        ))}
+                      </div>
+                    )}
+                  </Link>
+                </div>
+              </section>
             </div>
           )}
 
@@ -3088,6 +3031,96 @@ export default function DirectoryClient({
                   <MyListsStrip />
                 </div>
               )}
+              {/* Listes Koté Moris mises en favori + partage des adresses (venus
+                  de Mon compte, réorganisation du 2026-09-25). */}
+              {(profilFavoriteSelections.length > 0 || favorisMapBusinesses.length > 0) && (
+                <div className="max-w-[560px] mx-auto pb-4">
+              <div className="bg-surface border border-border rounded-2xl shadow-sm p-4 flex flex-col gap-4">
+                {profilFavoriteSelections.length > 0 && (
+                  <div>
+                    <p className="m-0 mb-3 text-[13px] font-bold text-ink">Mes listes favorites</p>
+                    <div className="flex flex-col gap-2">
+                      {profilFavoriteSelections.map((s) => {
+                        const SIcon = SELECTION_ICONS[s.icon];
+                        return (
+                          <button
+                            key={s.id}
+                            onClick={() => { setBrowseAll(false); setHomeCategory(null); setHomeMode("listes"); setSelectedListId(s.id); window.scrollTo({ top: 0, behavior: "smooth" }); }}
+                            className="w-full flex items-center gap-2.5 rounded-xl border border-border p-2.5 text-left active:scale-[.98] transition-transform"
+                          >
+                            <span
+                              className="w-8 h-8 shrink-0 rounded-full flex items-center justify-center text-white"
+                              style={{ background: "var(--primary, #087e8b)" }}
+                            >
+                              <SIcon size={16} weight="fill" aria-hidden />
+                            </span>
+                            <span className="flex-1 min-w-0">
+                              <span className="block text-[13px] font-semibold text-ink truncate">{s.title}</span>
+                              <span className="block text-[11px] text-muted">{s.businessIds.length} adresses</span>
+                            </span>
+                            <Heart size={16} weight="fill" aria-hidden style={{ color: COUP_DE_COEUR_COLOR }} />
+                          </button>
+                        );
+                      })}
+                    </div>
+                  </div>
+                )}
+                <div className={`-mx-4 -mb-3 ${profilFavoriteSelections.length > 0 ? "border-t border-border pt-1" : "-mt-3"}`}>
+                  <button
+                    onClick={() => setSharePanelOpen((v) => !v)}
+                    disabled={favorisMapBusinesses.length === 0}
+                    aria-expanded={sharePanelOpen}
+                    className="w-full flex items-center gap-3 px-4 py-3 text-left active:bg-surface-2 transition-colors disabled:opacity-40 rounded-xl"
+                  >
+                    <Heart size={18} weight="regular" className="text-muted" aria-hidden />
+                    <span className="flex-1 text-[13.5px] text-ink">Partager mes adresses</span>
+                    {shareFeedback && <span className="text-[11.5px] font-semibold text-primary-deep">{shareFeedback}</span>}
+                  </button>
+                  {sharePanelOpen && (
+                    <div className="px-4 py-3.5 flex flex-col gap-3" style={{ background: "var(--surface-2)" }}>
+                      <p className="m-0 text-[12px] font-semibold text-muted">Quelles adresses partager ?</p>
+                      <div className="flex items-center gap-2 flex-wrap">
+                        {(
+                          [
+                            { status: "favori" as const, label: "Coups de cœur", color: COUP_DE_COEUR_COLOR, count: favoriteBusinesses.length },
+                            { status: "a-tester" as const, label: "À tester", color: "#f5a623", count: aTesterBusinesses.length },
+                            { status: "teste" as const, label: "Testé", color: "#2e9e5b", count: testeBusinesses.length },
+                          ]
+                        ).map(({ status, label, color, count }) => {
+                          const active = shareStatuses.has(status);
+                          return (
+                            <button
+                              key={status}
+                              type="button"
+                              onClick={() => toggleShareStatus(status)}
+                              disabled={count === 0}
+                              aria-pressed={active}
+                              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-pill text-[12.5px] font-bold active:scale-[.97] transition-transform disabled:opacity-40"
+                              style={
+                                active
+                                  ? { background: `color-mix(in srgb, ${color} 15%, var(--surface))`, color, boxShadow: `inset 0 0 0 1.5px ${color}` }
+                                  : { background: "var(--surface)", color: "var(--muted)" }
+                              }
+                            >
+                              {label} ({count})
+                            </button>
+                          );
+                        })}
+                      </div>
+                      <button
+                        onClick={shareFavoris}
+                        disabled={shareSelectionBusinesses.length === 0}
+                        className="w-full flex items-center justify-center gap-2 px-4 py-2.5 rounded-full text-[13px] font-bold text-white disabled:opacity-40 active:scale-[.98] transition-transform"
+                        style={{ background: "var(--primary)" }}
+                      >
+                        Partager ({shareSelectionBusinesses.length})
+                      </button>
+                    </div>
+                  )}
+                </div>
+              </div>
+                </div>
+              )}
               {favoriteBusinesses.length === 0 && aTesterBusinesses.length === 0 && testeBusinesses.length === 0 ? (
                 <div className="mt-6 max-w-[420px] mx-auto text-center bg-surface border border-border rounded-2xl shadow-sm p-7 flex flex-col items-center gap-3">
                   <span className="w-14 h-14 rounded-2xl bg-primary-tint text-primary-deep flex items-center justify-center">
@@ -3234,6 +3267,22 @@ export default function DirectoryClient({
                   Nos coups de cœur pour vivre Maurice autrement.
                 </p>
               </div>
+
+              {/* Sélections vedettes (coups de cœur, kids friendly) en tête,
+                  comme dans le carrousel de l'accueil. */}
+              {featuredSelections.length > 0 && (
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 mb-8">
+                  {featuredSelections.map((f) => (
+                    <FeaturedSelectionCard
+                      key={f.key}
+                      title={f.title}
+                      photoUrl={f.photoUrl}
+                      badge={f.badge}
+                      onClick={f.onClick}
+                    />
+                  ))}
+                </div>
+              )}
 
               {highlightSelections.length > 0 && (
                 <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 mb-8">
@@ -3728,129 +3777,24 @@ export default function DirectoryClient({
                 </div>
               )}
 
-              {/* Mes favoris : fiches (favoris/à tester/testé), listes KM favorites et
-                  partage regroupés dans une seule carte (demande utilisateur). */}
-              <div className="bg-surface border border-border rounded-2xl shadow-sm p-4 flex flex-col gap-4">
-                <div className="grid grid-cols-3 gap-2.5">
-                  <button
-                    onClick={() => { setHomeMode("favoris"); window.scrollTo({ top: 0, behavior: "smooth" }); }}
-                    className="flex flex-col items-center gap-1 rounded-2xl border border-border p-3 active:scale-[.97] transition-transform"
-                    style={{ background: `color-mix(in srgb, ${COUP_DE_COEUR_COLOR} 10%, var(--surface))` }}
-                  >
-                    <Heart size={20} weight="fill" aria-hidden style={{ color: COUP_DE_COEUR_COLOR }} />
-                    <span className="text-[17px] font-bold leading-none" style={{ color: COUP_DE_COEUR_COLOR }}>
-                      {favoriteBusinesses.length}
-                    </span>
-                    <span className="text-[11px] text-muted leading-none">Favoris</span>
-                  </button>
-                  <button
-                    onClick={() => { setHomeMode("favoris"); window.scrollTo({ top: 0, behavior: "smooth" }); }}
-                    className="flex flex-col items-center gap-1 rounded-2xl border border-border p-3 active:scale-[.97] transition-transform"
-                    style={{ background: "color-mix(in srgb, #f5a623 10%, var(--surface))" }}
-                  >
-                    <Flag size={20} weight="fill" aria-hidden style={{ color: "#f5a623" }} />
-                    <span className="text-[17px] font-bold leading-none" style={{ color: "#f5a623" }}>
-                      {aTesterBusinesses.length}
-                    </span>
-                    <span className="text-[11px] text-muted leading-none">À tester</span>
-                  </button>
-                  <button
-                    onClick={() => { setHomeMode("favoris"); window.scrollTo({ top: 0, behavior: "smooth" }); }}
-                    className="flex flex-col items-center gap-1 rounded-2xl border border-border p-3 active:scale-[.97] transition-transform"
-                    style={{ background: "color-mix(in srgb, #2e9e5b 10%, var(--surface))" }}
-                  >
-                    <CheckCircle size={20} weight="fill" aria-hidden style={{ color: "#2e9e5b" }} />
-                    <span className="text-[17px] font-bold leading-none" style={{ color: "#2e9e5b" }}>
-                      {testeBusinesses.length}
-                    </span>
-                    <span className="text-[11px] text-muted leading-none">Testé</span>
-                  </button>
-                </div>
-
-                {profilFavoriteSelections.length > 0 && (
-                  <div className="border-t border-border pt-4">
-                    <p className="m-0 mb-3 text-[13px] font-bold text-ink">Mes listes favorites</p>
-                    <div className="flex flex-col gap-2">
-                      {profilFavoriteSelections.map((s) => {
-                        const SIcon = SELECTION_ICONS[s.icon];
-                        return (
-                          <button
-                            key={s.id}
-                            onClick={() => { setBrowseAll(false); setHomeCategory(null); setHomeMode("listes"); setSelectedListId(s.id); window.scrollTo({ top: 0, behavior: "smooth" }); }}
-                            className="w-full flex items-center gap-2.5 rounded-xl border border-border p-2.5 text-left active:scale-[.98] transition-transform"
-                          >
-                            <span
-                              className="w-8 h-8 shrink-0 rounded-full flex items-center justify-center text-white"
-                              style={{ background: "var(--primary, #087e8b)" }}
-                            >
-                              <SIcon size={16} weight="fill" aria-hidden />
-                            </span>
-                            <span className="flex-1 min-w-0">
-                              <span className="block text-[13px] font-semibold text-ink truncate">{s.title}</span>
-                              <span className="block text-[11px] text-muted">{s.businessIds.length} adresses</span>
-                            </span>
-                            <Heart size={16} weight="fill" aria-hidden style={{ color: COUP_DE_COEUR_COLOR }} />
-                          </button>
-                        );
-                      })}
-                    </div>
-                  </div>
-                )}
-
-                <div className="border-t border-border pt-1 -mx-4">
-                  <button
-                    onClick={() => setSharePanelOpen((v) => !v)}
-                    disabled={favorisMapBusinesses.length === 0}
-                    aria-expanded={sharePanelOpen}
-                    className="w-full flex items-center gap-3 px-4 py-3 text-left active:bg-surface-2 transition-colors disabled:opacity-40 rounded-xl"
-                  >
-                    <Heart size={18} weight="regular" className="text-muted" aria-hidden />
-                    <span className="flex-1 text-[13.5px] text-ink">Partager mes adresses</span>
-                    {shareFeedback && <span className="text-[11.5px] font-semibold text-primary-deep">{shareFeedback}</span>}
-                  </button>
-                  {sharePanelOpen && (
-                    <div className="px-4 py-3.5 flex flex-col gap-3" style={{ background: "var(--surface-2)" }}>
-                      <p className="m-0 text-[12px] font-semibold text-muted">Quelles adresses partager ?</p>
-                      <div className="flex items-center gap-2 flex-wrap">
-                        {(
-                          [
-                            { status: "favori" as const, label: "Coups de cœur", color: COUP_DE_COEUR_COLOR, count: favoriteBusinesses.length },
-                            { status: "a-tester" as const, label: "À tester", color: "#f5a623", count: aTesterBusinesses.length },
-                            { status: "teste" as const, label: "Testé", color: "#2e9e5b", count: testeBusinesses.length },
-                          ]
-                        ).map(({ status, label, color, count }) => {
-                          const active = shareStatuses.has(status);
-                          return (
-                            <button
-                              key={status}
-                              type="button"
-                              onClick={() => toggleShareStatus(status)}
-                              disabled={count === 0}
-                              aria-pressed={active}
-                              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-pill text-[12.5px] font-bold active:scale-[.97] transition-transform disabled:opacity-40"
-                              style={
-                                active
-                                  ? { background: `color-mix(in srgb, ${color} 15%, var(--surface))`, color, boxShadow: `inset 0 0 0 1.5px ${color}` }
-                                  : { background: "var(--surface)", color: "var(--muted)" }
-                              }
-                            >
-                              {label} ({count})
-                            </button>
-                          );
-                        })}
-                      </div>
-                      <button
-                        onClick={shareFavoris}
-                        disabled={shareSelectionBusinesses.length === 0}
-                        className="w-full flex items-center justify-center gap-2 px-4 py-2.5 rounded-full text-[13px] font-bold text-white disabled:opacity-40 active:scale-[.98] transition-transform"
-                        style={{ background: "var(--primary)" }}
-                      >
-                        Partager ({shareSelectionBusinesses.length})
-                      </button>
-                    </div>
-                  )}
-                </div>
-              </div>
+              {/* Favoris, listes favorites et partage : déplacés dans l'onglet
+                  « Mes adresses » (réorganisation du 2026-09-25) — ici un
+                  simple raccourci. */}
+              <button
+                onClick={() => leaveResults("favoris")}
+                className="bg-surface border border-border rounded-2xl shadow-sm p-4 flex items-center gap-3 text-left active:scale-[.99] transition-transform"
+              >
+                <Heart size={20} weight="fill" aria-hidden style={{ color: COUP_DE_COEUR_COLOR }} />
+                <span className="flex-1 min-w-0">
+                  <span className="block text-[14px] font-bold text-ink">Mes adresses</span>
+                  <span className="block text-[12px] text-muted">
+                    {favoriteBusinesses.length} favoris · {aTesterBusinesses.length} à tester · {testeBusinesses.length} testé{testeBusinesses.length > 1 ? "s" : ""}
+                  </span>
+                </span>
+                <span className="text-[18px] font-bold text-primary-deep" aria-hidden>›</span>
+              </button>
+              {/* Listes personnalisées : compte requis. */}
+              {account.loggedIn && <MyListsLink />}
 
               {/* Actions rapides. */}
               <div className="bg-surface border border-border rounded-2xl shadow-sm overflow-hidden">
