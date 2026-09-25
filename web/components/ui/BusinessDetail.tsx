@@ -29,6 +29,10 @@ import { ArrowLeft, ArrowSquareOut, ShareNetwork } from "@phosphor-icons/react";
 /** Au-delà de ~6 lignes affichées, on replie la description (rare : ~90% des fiches tiennent en dessous). */
 const DESCRIPTION_CLAMP_THRESHOLD = 320;
 
+/** Lien sortant TripAdvisor masqué (2026-09-25) : on évite d'envoyer les utilisateurs vers un site concurrent.
+ *  Les URL restent dans businesses.json (champ tripadvisorUrl) ; repasser à true pour le réafficher. */
+const SHOW_TRIPADVISOR_LINK = false;
+
 /** Lien de partage WhatsApp pré-rempli, sans destinataire fixe (choisi dans l'appli). */
 function whatsappShareHref(text: string) {
   return `https://wa.me/?text=${encodeURIComponent(text)}`;
@@ -444,7 +448,7 @@ export function BusinessDetail({
             )}
 
             {/* Lien sortant simple vers TripAdvisor : ni logo, ni note, ni avis recopiés (contenu TripAdvisor). */}
-            {b.tripadvisorUrl && (
+            {SHOW_TRIPADVISOR_LINK && b.tripadvisorUrl && (
               <a
                 href={b.tripadvisorUrl}
                 target="_blank"
