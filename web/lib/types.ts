@@ -123,4 +123,14 @@ export type Business = {
   koteMorisComment?: string;
   /** URL de la page publique TripAdvisor (restaurants, cafés, bars). Simple lien sortant : ne jamais recopier note, avis ou photos TripAdvisor. Saisie manuelle, pas de scraping. */
   tripadvisorUrl?: string;
+  /** Notes éditoriales Koté Moris (1-5) par critère, saisies à la main dans l'admin — jamais importées de Google/TripAdvisor. Niveau calculé par lib/rating.ts. */
+  koteMorisRatings?: KoteMorisRatings;
+};
+
+export type KoteMorisRatings = {
+  gout?: number;
+  qualitePrix?: number;
+  accueil?: number;
+  cadre?: number;
+  regularite?: number;
 };

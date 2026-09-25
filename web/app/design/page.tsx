@@ -20,6 +20,7 @@ import { ProviderTypeBadge, PremiumSellerBadge } from "@/components/ui/Badge";
 import { BackButton } from "@/components/ui/BackButton";
 import { MarketplaceHeader } from "@/components/ui/MarketplaceHeader";
 import { FavoriteButton } from "@/components/ui/FavoriteButton";
+import { FrangipaniRating } from "@/components/ui/FrangipaniRating";
 import { QuickAlertButton } from "@/components/ui/QuickAlertButton";
 import { FilterDropdown, type DropdownOption } from "@/components/ui/FilterDropdown";
 import { UniversCard } from "@/components/ui/UniversCard";
@@ -305,6 +306,20 @@ export default function DesignSystemPage() {
         <Row label="Vendeur premium">
           <PremiumSellerBadge />
           <PremiumSellerBadge compact />
+        </Row>
+      </Section>
+
+      <Section
+        title="Classement Koté Moris"
+        hint="Fleurs de frangipanier (FrangipaniRating) : 3 = incontournable, 2 = recommandé ; le niveau 1 n'est pas affiché."
+      >
+        <Row label="Carte (13 px)">
+          <FrangipaniRating level={3} size={13} />
+          <FrangipaniRating level={2} size={13} />
+        </Row>
+        <Row label="Fiche détail (16 px)">
+          <FrangipaniRating level={3} size={16} />
+          <FrangipaniRating level={2} size={16} />
         </Row>
       </Section>
 

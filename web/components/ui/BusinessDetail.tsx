@@ -23,6 +23,8 @@ import { SuggestPhotoButton } from "./SuggestPhotoButton";
 import { SuggestCommentButton } from "./SuggestCommentButton";
 import { Tag } from "./Tag";
 import { metaFacts } from "./BusinessCard";
+import { FrangipaniRating } from "./FrangipaniRating";
+import { koteMorisLevel, LEVEL_LABELS } from "@/lib/rating";
 import { iconForKey, subIconFor, CONTACT_ICONS } from "@/lib/icons";
 import { ArrowLeft, ArrowSquareOut, ShareNetwork } from "@phosphor-icons/react";
 
@@ -125,6 +127,7 @@ export function BusinessDetail({
   const accentColor = accentColorFor(b.badge, b.isAgency);
   const waNumber = whatsappNumber(b);
   const facts = metaFacts(b);
+  const koteMorisLvl = koteMorisLevel(b);
   const price = b.priceRange ? PRICE_RANGES.find((p) => p.key === b.priceRange) : undefined;
   const [descExpanded, setDescExpanded] = useState(false);
   const photos = b.photoUrls?.length ? b.photoUrls : b.photoUrl ? [b.photoUrl] : [];
@@ -304,6 +307,12 @@ export function BusinessDetail({
               {b.badge === "partenaire" && <SpecialBadge variant="partenaire" />}
               {b.isAgency && <SpecialBadge variant="agence" />}
               {b.providerType && <ProviderTypeBadge type={b.providerType} />}
+              {koteMorisLvl >= 2 && (
+                <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-primary-deep">
+                  <FrangipaniRating level={koteMorisLvl} size={16} />
+                  {LEVEL_LABELS[koteMorisLvl as 2 | 3]}
+                </span>
+              )}
             </div>
 
             <h2 className="m-0 font-serif text-[22px] font-semibold leading-[1.15] tracking-[-.01em]">

@@ -6,6 +6,8 @@ import { displayName, displayCity, fallbackDescription } from "@/lib/format";
 import { accentColorFor, SpecialBadge, AGENCY_COLOR, PROVIDER_TYPE_INFO } from "./Badge";
 import { FavoriteButton } from "./FavoriteButton";
 import { AddToListButton } from "./AddToListButton";
+import { FrangipaniRating } from "./FrangipaniRating";
+import { koteMorisLevel } from "@/lib/rating";
 import { FACT_ICONS, CONTACT_ICONS, iconForKey, subIconFor } from "@/lib/icons";
 import { eventColorFor, eventBannerLabel, eventTextColor } from "@/lib/events";
 import type { Icon } from "@phosphor-icons/react";
@@ -162,6 +164,7 @@ export function BusinessCard({
           <h3 className="m-0 font-serif text-[15.5px] font-semibold leading-[1.2] tracking-[-.005em] truncate">
             {displayName(b.name)}
           </h3>
+          <FrangipaniRating level={koteMorisLevel(b)} size={13} />
         </div>
         {(rubriques.length > 0 || filterTags.length > 0 || b.isAgency || b.providerType) && (
           <p className="m-0 mt-0.5 flex items-center gap-1.5 flex-wrap">

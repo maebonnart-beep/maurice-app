@@ -91,6 +91,7 @@ import { FavoriteButton } from "@/components/ui/FavoriteButton";
 import { MyListsStrip } from "@/components/ui/MyListsStrip";
 import { useFavoriteLists } from "@/lib/useFavoriteLists";
 import { BannerBackdrop } from "@/components/ui/BannerBackdrop";
+import { koteMorisLevel } from "@/lib/rating";
 import {
   Heart,
   Flag,
@@ -1330,7 +1331,8 @@ export default function DirectoryClient({
         const tierDiff = (b.tier === "premium" ? 1 : 0) - (a.tier === "premium" ? 1 : 0);
         if (tierDiff !== 0) return tierDiff;
         if (a.category === "agenda" && b.category === "agenda") return compareByEventDate(a, b);
-        return 0;
+        // Classement Koté Moris (fleurs, puis niveau interne) : départage à statut premium égal.
+        return koteMorisLevel(b) - koteMorisLevel(a);
       });
   }, [businesses, deferredQuery, searchTokensById, active, activeThemes, activeZone, activeRubriques, agendaBrowseAll, applicableFilterGroups, facetGroups, facetPrices, facetBadges, openNow]);
 

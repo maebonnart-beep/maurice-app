@@ -4,6 +4,14 @@ import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import type { Business } from "@/lib/types";
 import { CATEGORY_MAP } from "@/data/categories";
+import { FrangipaniRating } from "@/components/ui/FrangipaniRating";
+import {
+  RATING_CRITERIA,
+  RATED_THEMES,
+  LEVEL_THRESHOLDS,
+  scoreFromRatings,
+  levelFromScore,
+} from "@/lib/rating";
 
 const COMMON_FIELDS: { key: keyof Business; label: string }[] = [
   { key: "name", label: "Nom" },
@@ -26,12 +34,23 @@ const BADGE_OPTIONS = [
 
 const ZONE_OPTIONS = ["", "nord", "sud", "est", "ouest", "centre"];
 
+/** Notes saisies (chaînes "1".."5" ou "") → objet koteMorisRatings, ou null si rien n'est noté. */
+function ratingsToObject(ratings: Record<string, string>): Business["koteMorisRatings"] | null {
+  const out: Record<string, number> = {};
+  for (const c of RATING_CRITERIA) {
+    const note = Number(ratings[c.key]);
+    if (note >= 1 && note <= 5) out[c.key] = note;
+  }
+  return Object.keys(out).length > 0 ? out : null;
+}
+
 export default function AdminFichesPage() {
   const [businesses, setBusinesses] = useState<Business[]>([]);
   const [loading, setLoading] = useState(true);
   const [query, setQuery] = useState("");
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [form, setForm] = useState<Record<string, string>>({});
+  const [ratings, setRatings] = useState<Record<string, string>>({});
   const [advancedJson, setAdvancedJson] = useState("");
   const [showAdvanced, setShowAdvanced] = useState(false);
   const [status, setStatus] = useState<string | null>(null);
@@ -57,12 +76,18 @@ export default function AdminFichesPage() {
   function selectBusiness(b: Business) {
     setSelectedId(b.id);
     setStatus(null);
-    const commonKeys = new Set(["badge", "zone", ...COMMON_FIELDS.map((f) => f.key)]);
+    const commonKeys = new Set(["badge", "zone", "koteMorisRatings", ...COMMON_FIELDS.map((f) => f.key)]);
     const nextForm: Record<string, string> = { badge: b.badge || "", zone: b.zone || "" };
     for (const f of COMMON_FIELDS) {
       nextForm[f.key] = (b[f.key] as string) || "";
     }
     setForm(nextForm);
+    const nextRatings: Record<string, string> = {};
+    for (const c of RATING_CRITERIA) {
+      const note = b.koteMorisRatings?.[c.key];
+      nextRatings[c.key] = typeof note === "number" ? String(note) : "";
+    }
+    setRatings(nextRatings);
 
     const rest: Record<string, unknown> = {};
     for (const key of Object.keys(b)) {
@@ -96,6 +121,9 @@ export default function AdminFichesPage() {
     }
     patch.badge = form.badge ?? "";
     patch.zone = form.zone ?? "";
+    // "" = pas de note : la route API supprime le champ.
+    const ratingsPatch = ratingsToObject(ratings);
+    patch.koteMorisRatings = ratingsPatch ?? "";
 
     try {
       const res = await fetch("/api/admin/businesses", {
@@ -222,6 +250,55 @@ export default function AdminFichesPage() {
               ))}
             </select>
           </label>
+
+          {selected.themes?.some((t) => RATED_THEMES.includes(t)) && (() => {
+            const score = scoreFromRatings(ratingsToObject(ratings) ?? undefined);
+            const level = levelFromScore(score);
+            return (
+              <fieldset className="rounded-lg border border-border p-3 space-y-2">
+                <legend className="px-1 text-sm font-medium">Note Koté Moris</legend>
+                <p className="text-xs text-muted m-0">
+                  Notes 1 à 5, à la main (Google/TripAdvisor : repère de lecture uniquement, jamais recopiés).
+                  Seuils : ≥ {LEVEL_THRESHOLDS[3]} → 3 fleurs, ≥ {LEVEL_THRESHOLDS[2]} → 2 fleurs, en dessous
+                  → interne (non affiché).
+                </p>
+                <div className="grid grid-cols-2 sm:grid-cols-5 gap-2">
+                  {RATING_CRITERIA.map((c) => (
+                    <label key={c.key} className="block text-xs">
+                      <span className="block text-muted mb-1">
+                        {c.label} ({Math.round(c.weight * 100)} %)
+                      </span>
+                      <select
+                        value={ratings[c.key] || ""}
+                        onChange={(e) => setRatings({ ...ratings, [c.key]: e.target.value })}
+                        className="w-full rounded-lg border border-border bg-surface-2 px-2 py-1.5"
+                      >
+                        <option value="">—</option>
+                        {[1, 2, 3, 4, 5].map((n) => (
+                          <option key={n} value={n}>
+                            {n}
+                          </option>
+                        ))}
+                      </select>
+                    </label>
+                  ))}
+                </div>
+                <p className="text-sm m-0 flex items-center gap-2">
+                  {score === null ? (
+                    <span className="text-muted">Pas encore noté</span>
+                  ) : (
+                    <>
+                      <span>
+                        Score : <strong>{score}</strong>/100 · niveau {level}
+                        {level < 2 && " (non affiché)"}
+                      </span>
+                      <FrangipaniRating level={level} size={16} />
+                    </>
+                  )}
+                </p>
+              </fieldset>
+            );
+          })()}
 
           <button
             className="text-sm text-primary underline"

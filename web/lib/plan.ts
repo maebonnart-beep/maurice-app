@@ -2,6 +2,7 @@ import type { Business, PriceRange } from "@/lib/types";
 import { haversineKm } from "@/lib/geo";
 import { PRICE_RANGES } from "@/data/categories";
 import { matchesOpenNow } from "@/lib/openHours";
+import { koteMorisLevel } from "@/lib/rating";
 
 export type PlanWho = "famille" | "couple" | "amis" | "solo";
 export type PlanZone = "nord" | "sud" | "est" | "ouest" | "centre" | "partout";
@@ -167,7 +168,12 @@ function isKidsFriendly(b: Business): boolean {
 
 /** Fiches plus complètes d'abord (commentaire KM, photo, description) : meilleures à proposer. */
 function quality(b: Business): number {
-  return (b.koteMorisComment ? 3 : 0) + (b.photoUrl || b.photoUrls?.length ? 2 : 0) + (b.description ? 1 : 0);
+  return (
+    (b.koteMorisComment ? 3 : 0) +
+    (b.photoUrl || b.photoUrls?.length ? 2 : 0) +
+    (b.description ? 1 : 0) +
+    koteMorisLevel(b)
+  );
 }
 
 function hasGps(b: Business): b is Business & { lat: number; lng: number } {
