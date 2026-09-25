@@ -46,15 +46,16 @@ export function Logo({
     // par-dessus reste valable). La carte de recherche (cf. DirectoryClient)
     // est superposée dessus par coordonnées en %.
     return (
-      <div className="relative w-full overflow-hidden" style={{ aspectRatio: "941 / 1670" }}>
+      // Remonte le logo central : l'image (941×1670) est décalée de 4 % de
+      // sa hauteur vers le haut, et le cadre raccourci d'autant (941×1603)
+      // pour ne pas laisser de bande vide sous l'illustration.
+      <div className="relative w-full overflow-hidden" style={{ aspectRatio: "941 / 1603" }}>
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src="/bandeau-kotemoris-accueil-v10.png"
           alt="Koté Moris — les adresses de l'île Maurice réunies sur une seule application mobile"
-          className="block w-full h-full object-cover"
-          // Remonte le logo central : image décalée vers le haut (le bas,
-          // dégradé vers le fond de page, absorbe le léger vide créé).
-          style={{ transform: "translateY(-4%)" }}
+          className="absolute left-0 w-full h-auto"
+          style={{ top: "-4.17%" }}
         />
       </div>
     );
