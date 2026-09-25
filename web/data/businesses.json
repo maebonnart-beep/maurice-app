@@ -15567,7 +15567,14 @@
       "asiatique",
       "snacks-plage"
     ],
-    "createdAt": "2026-07-12T16:37:31+02:00"
+    "createdAt": "2026-07-12T16:37:31+02:00",
+    "koteMorisRatings": {
+      "gout": 4,
+      "qualitePrix": 5,
+      "accueil": 5,
+      "cadre": 2
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "cafe-de-grand-baie-plage",
@@ -16376,7 +16383,13 @@
       "fruits-de-mer"
     ],
     "hours": "Lun-Ven 10h-23h, Sam-Dim 10h-23h30",
-    "createdAt": "2026-07-12T16:37:31+02:00"
+    "createdAt": "2026-07-12T16:37:31+02:00",
+    "koteMorisRatings": {
+      "gout": 4,
+      "accueil": 4,
+      "cadre": 3
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "ti-bazaar-de-grand-baie",
@@ -27025,7 +27038,13 @@
     "filters": [
       "bars"
     ],
-    "createdAt": "2026-07-12T16:37:31+02:00"
+    "createdAt": "2026-07-12T16:37:31+02:00",
+    "koteMorisRatings": {
+      "gout": 4,
+      "accueil": 5,
+      "cadre": 5
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "bus-snack",
@@ -30697,7 +30716,14 @@
       "fruits-de-mer"
     ],
     "hours": "Sam-Jeu 9h-18h30, fermé ven",
-    "createdAt": "2026-07-12T16:37:31+02:00"
+    "createdAt": "2026-07-12T16:37:31+02:00",
+    "koteMorisRatings": {
+      "gout": 4,
+      "qualitePrix": 5,
+      "accueil": 3,
+      "cadre": 3
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "souvenir",
@@ -30715,7 +30741,14 @@
     "zone": "nord",
     "description": "Adresse populaire à l'angle d'une rue passante de Trou-aux-Biches, en face d'un accès plage, ambiance simple façon relais routier mais portions généreuses. Immense carte (pizzas, pâtes, poisson, viandes, mine, plats chinois et créoles) ; ouvert 9h-23h sauf le jeudi, avis partagés sur la régularité du service.",
     "hours": "Tous les jours 9h-23h",
-    "createdAt": "2026-07-12T16:37:31+02:00"
+    "createdAt": "2026-07-12T16:37:31+02:00",
+    "koteMorisRatings": {
+      "gout": 4,
+      "qualitePrix": 5,
+      "accueil": 4,
+      "cadre": 2
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "family-pizza",
@@ -31065,7 +31098,14 @@
     "filters": [
       "snacks-plage"
     ],
-    "createdAt": "2026-07-12T16:37:31+02:00"
+    "createdAt": "2026-07-12T16:37:31+02:00",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "accueil": 5,
+      "cadre": 3
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "la-jonque-restaurant",
@@ -31085,7 +31125,14 @@
     "filters": [
       "snacks-plage"
     ],
-    "createdAt": "2026-07-12T16:37:31+02:00"
+    "createdAt": "2026-07-12T16:37:31+02:00",
+    "koteMorisRatings": {
+      "gout": 2,
+      "qualitePrix": 3,
+      "accueil": 2,
+      "cadre": 3
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "pomodoro-pizzeria-trattoria",
@@ -37969,7 +38016,14 @@
     "filters": [
       "fruits-de-mer"
     ],
-    "createdAt": "2026-07-20T09:32:16+02:00"
+    "createdAt": "2026-07-20T09:32:16+02:00",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 4,
+      "accueil": 5,
+      "cadre": 4
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "la-ravanne",
@@ -38262,7 +38316,14 @@
     "filters": [
       "snacks-plage"
     ],
-    "createdAt": "2026-07-20T09:32:16+02:00"
+    "createdAt": "2026-07-20T09:32:16+02:00",
+    "koteMorisRatings": {
+      "gout": 3,
+      "qualitePrix": 3,
+      "accueil": 2,
+      "cadre": 4
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "volcan-cruiser",
@@ -39843,7 +39904,14 @@
       "indienne"
     ],
     "hours": "Tous les jours 8h-10h, 12h-14h30 & 18h30-22h",
-    "createdAt": "2026-07-25T16:48:39+02:00"
+    "createdAt": "2026-07-25T16:48:39+02:00",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 4,
+      "accueil": 3,
+      "cadre": 4
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "sunshine-fusion-poste-lafayette",
@@ -39888,7 +39956,14 @@
     ],
     "phone": "+230 5972 9101",
     "website": "http://www.karaikreol.com/",
-    "createdAt": "2026-07-26T08:23:22+02:00"
+    "createdAt": "2026-07-26T08:23:22+02:00",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "accueil": 5,
+      "cadre": 3
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "rasoi-par-vineet-saint-geran",
@@ -40181,7 +40256,13 @@
       "mauricienne",
       "vins-spiritueux"
     ],
-    "createdAt": "2026-07-26T09:24:03+02:00"
+    "createdAt": "2026-07-26T09:24:03+02:00",
+    "koteMorisRatings": {
+      "gout": 5,
+      "accueil": 5,
+      "cadre": 5
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "le-bistro-morisyen-flic-en-flac",
@@ -40248,7 +40329,14 @@
       "cafes-terrasses"
     ],
     "phone": "+230 268 3050",
-    "createdAt": "2026-07-26T09:24:03+02:00"
+    "createdAt": "2026-07-26T09:24:03+02:00",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "accueil": 4,
+      "cadre": 4
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "desirata-boudoir-gourmand-quatre-bornes",
@@ -40292,7 +40380,14 @@
       "bars"
     ],
     "phone": "+230 5452 7968",
-    "createdAt": "2026-07-26T09:24:03+02:00"
+    "createdAt": "2026-07-26T09:24:03+02:00",
+    "koteMorisRatings": {
+      "gout": 4,
+      "qualitePrix": 3,
+      "accueil": 4,
+      "cadre": 5
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "kazafrica-dodo-nero-grand-baie",
@@ -40336,7 +40431,14 @@
     ],
     "hours": "Mar-Dim 12h-14h30 & 18h30-22h, fermé lun",
     "phone": "+230 265 7091",
-    "createdAt": "2026-07-26T11:37:08+02:00"
+    "createdAt": "2026-07-26T11:37:08+02:00",
+    "koteMorisRatings": {
+      "gout": 4,
+      "qualitePrix": 5,
+      "accueil": 4,
+      "cadre": 3
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "anno-1743-maritim-balaclava",
@@ -40359,7 +40461,13 @@
     ],
     "phone": "+230 204 1000",
     "website": "https://www.maritimresortandspa.mu/",
-    "createdAt": "2026-07-26T11:37:08+02:00"
+    "createdAt": "2026-07-26T11:37:08+02:00",
+    "koteMorisRatings": {
+      "gout": 3,
+      "accueil": 4,
+      "cadre": 5
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "la-marmite-mauricienne-trou-aux-biches",
@@ -40627,7 +40735,14 @@
     "filters": [
       "grillades"
     ],
-    "createdAt": "2026-07-27T12:08:10+02:00"
+    "createdAt": "2026-07-27T12:08:10+02:00",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 4,
+      "accueil": 5,
+      "cadre": 4
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "da-andrea-e-maila",
@@ -52969,7 +53084,14 @@
       "asiatique",
       "fruits-de-mer"
     ],
-    "createdAt": "2026-08-13T05:31:56+02:00"
+    "createdAt": "2026-08-13T05:31:56+02:00",
+    "koteMorisRatings": {
+      "gout": 4,
+      "qualitePrix": 5,
+      "accueil": 4,
+      "cadre": 3
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "36-beach-resto-bar-mystik-mont-choisy",
@@ -53816,7 +53938,14 @@
     ],
     "lat": -20.0160285,
     "lng": 57.5757312,
-    "createdAt": "2026-08-16T12:59:29+02:00"
+    "createdAt": "2026-08-16T12:59:29+02:00",
+    "koteMorisRatings": {
+      "gout": 4,
+      "qualitePrix": 4,
+      "accueil": 5,
+      "cadre": 5
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "jl-cuisine-passion",
@@ -53870,7 +53999,14 @@
     ],
     "lat": -19.9926834,
     "lng": 57.5922945,
-    "createdAt": "2026-08-16T12:59:29+02:00"
+    "createdAt": "2026-08-16T12:59:29+02:00",
+    "koteMorisRatings": {
+      "gout": 4,
+      "qualitePrix": 4,
+      "accueil": 5,
+      "cadre": 5
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "bloom-pereybere",
@@ -54349,7 +54485,13 @@
     ],
     "lat": -20.022258,
     "lng": 57.578756,
-    "createdAt": "2026-08-16T15:56:43+02:00"
+    "createdAt": "2026-08-16T15:56:43+02:00",
+    "koteMorisRatings": {
+      "gout": 5,
+      "accueil": 5,
+      "cadre": 3
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "restaurant-souvenir-trou-aux-biches",
@@ -54369,7 +54511,14 @@
     "hours": "Ven-Mer 9h-23h, fermé jeu",
     "lat": -20.0358431,
     "lng": 57.5457175,
-    "createdAt": "2026-08-16T15:56:43+02:00"
+    "createdAt": "2026-08-16T15:56:43+02:00",
+    "koteMorisRatings": {
+      "gout": 4,
+      "qualitePrix": 5,
+      "accueil": 4,
+      "cadre": 2
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "deja-vu-grand-baie",
@@ -59248,7 +59397,13 @@
     "filters": [
       "grillades"
     ],
-    "createdAt": "2026-09-13T04:56:50.068Z"
+    "createdAt": "2026-09-13T04:56:50.068Z",
+    "koteMorisRatings": {
+      "gout": 5,
+      "accueil": 5,
+      "cadre": 3
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "le-mediterranee",
