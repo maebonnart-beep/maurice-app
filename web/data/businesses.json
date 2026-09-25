@@ -1379,7 +1379,13 @@
       "fruits-de-mer"
     ],
     "createdAt": "2026-07-09T18:41:47+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488103-d24070912-Reviews-The_Fisherman_Lounge_Coeur_de_ville_Super_U-Grand_Baie.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488103-d24070912-Reviews-The_Fisherman_Lounge_Coeur_de_ville_Super_U-Grand_Baie.html",
+    "koteMorisRatings": {
+      "gout": 4,
+      "qualitePrix": 4,
+      "accueil": 4
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "beach-house-restaurant-bar",
@@ -1583,7 +1589,14 @@
       "bars"
     ],
     "createdAt": "2026-07-09T18:41:47+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488103-d23734182-Reviews-Bullies_Social-Grand_Baie.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488103-d23734182-Reviews-Bullies_Social-Grand_Baie.html",
+    "koteMorisRatings": {
+      "gout": 4,
+      "qualitePrix": 5,
+      "accueil": 5,
+      "cadre": 3
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "lecapitaine-restaurant",
@@ -7213,7 +7226,13 @@
       "vegetarien"
     ],
     "createdAt": "2026-07-12T07:06:58+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g1905319-d23626842-Reviews-Island_Babe_Mauritius-Pereybere.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g1905319-d23626842-Reviews-Island_Babe_Mauritius-Pereybere.html",
+    "koteMorisRatings": {
+      "gout": 5,
+      "accueil": 5,
+      "cadre": 5
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "luigi-s-italian-pizzeria-pasta-bar",
@@ -11377,7 +11396,14 @@
     "filters": [
       "fruits-de-mer"
     ],
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "koteMorisRatings": {
+      "gout": 4,
+      "qualitePrix": 4,
+      "accueil": 5,
+      "cadre": 4
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "coco-s",
@@ -11440,7 +11466,14 @@
     "filters": [
       "grillades"
     ],
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "koteMorisRatings": {
+      "gout": 3,
+      "qualitePrix": 4,
+      "accueil": 4,
+      "cadre": 4
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "les-alizes",
@@ -11486,7 +11519,14 @@
       "frequente-locaux"
     ],
     "hours": "Lun + Mer-Sam 9h-17h, Dim 9h-14h, fermé mar",
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "koteMorisRatings": {
+      "gout": 4,
+      "qualitePrix": 5,
+      "accueil": 4,
+      "cadre": 2
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "le-jardin-de-beau-vallon",
@@ -11577,7 +11617,14 @@
       "fruits-de-mer"
     ],
     "hours": "Tous les jours 11h-15h",
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "koteMorisRatings": {
+      "gout": 4,
+      "qualitePrix": 4,
+      "accueil": 3,
+      "cadre": 3
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "coin-casse-croute",
@@ -11676,7 +11723,14 @@
     "filters": [
       "mauricienne"
     ],
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 4,
+      "accueil": 5,
+      "cadre": 4
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "restaurant-take-baz-take",
@@ -11737,7 +11791,14 @@
       "mauricienne"
     ],
     "hours": "Tous les jours 11h-21h30",
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "koteMorisRatings": {
+      "gout": 3,
+      "qualitePrix": 3,
+      "accueil": 4,
+      "cadre": 2
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "salut-les-copains-kaushik",
@@ -11781,7 +11842,14 @@
       "grillades"
     ],
     "hours": "Tous les jours 9h-22h",
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "koteMorisRatings": {
+      "gout": 3,
+      "qualitePrix": 3,
+      "accueil": 3,
+      "cadre": 3
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "ferney-falaise-rouge-restaurant",
@@ -14900,7 +14968,13 @@
     "filters": [
       "cafes-terrasses"
     ],
-    "createdAt": "2026-07-12T16:37:31+02:00"
+    "createdAt": "2026-07-12T16:37:31+02:00",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 4,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "the-spot-mauritius-2",
@@ -14974,7 +15048,13 @@
     "filters": [
       "italien"
     ],
-    "createdAt": "2026-07-12T16:37:31+02:00"
+    "createdAt": "2026-07-12T16:37:31+02:00",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 4,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "team-building-mauritius",
@@ -15382,7 +15462,13 @@
       "produits-locaux"
     ],
     "hours": "Lun-Mar 10h-14h30, Mer-Sam 10h-14h30 & 18h30-22h30, fermé dim",
-    "createdAt": "2026-07-12T16:37:31+02:00"
+    "createdAt": "2026-07-12T16:37:31+02:00",
+    "koteMorisRatings": {
+      "gout": 4,
+      "accueil": 5,
+      "cadre": 4
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "seb-s-kitchen-grand-baie",
@@ -15403,7 +15489,14 @@
       "grillades"
     ],
     "hours": "Mar-Jeu 11h30-14h30 & 18h-20h30, Ven-Sam 11h30-14h30 & 18h-21h, fermé dim et lun",
-    "createdAt": "2026-07-12T16:37:31+02:00"
+    "createdAt": "2026-07-12T16:37:31+02:00",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 4,
+      "accueil": 4,
+      "cadre": 3
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "l-espadon-restaurant",
@@ -15424,7 +15517,14 @@
       "fruits-de-mer"
     ],
     "hours": "Lun-Jeu + Sam-Dim 10h45-15h & 17h30-22h30, fermé ven",
-    "createdAt": "2026-07-12T16:37:31+02:00"
+    "createdAt": "2026-07-12T16:37:31+02:00",
+    "koteMorisRatings": {
+      "gout": 4,
+      "qualitePrix": 4,
+      "accueil": 4,
+      "cadre": 2
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "insomnia-night-club",
@@ -15487,7 +15587,14 @@
     "filters": [
       "snacks-plage"
     ],
-    "createdAt": "2026-07-12T16:37:31+02:00"
+    "createdAt": "2026-07-12T16:37:31+02:00",
+    "koteMorisRatings": {
+      "gout": 3,
+      "qualitePrix": 2,
+      "accueil": 2,
+      "cadre": 4
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "camille-snack",
@@ -26866,7 +26973,14 @@
       "mauricienne"
     ],
     "hours": "Lun 11h-16h30, Mar-Dim 10h30-20h",
-    "createdAt": "2026-07-12T16:37:31+02:00"
+    "createdAt": "2026-07-12T16:37:31+02:00",
+    "koteMorisRatings": {
+      "gout": 4,
+      "qualitePrix": 2,
+      "accueil": 2,
+      "cadre": 3
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "le-crocodile-affame",
@@ -27203,7 +27317,14 @@
       "boulangeries",
       "boulangeries-patisseries"
     ],
-    "createdAt": "2026-07-12T16:37:31+02:00"
+    "createdAt": "2026-07-12T16:37:31+02:00",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "accueil": 5,
+      "cadre": 4
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "cakelover-mauritius",
@@ -29764,7 +29885,13 @@
       "fruits-de-mer",
       "plus-belles-vues"
     ],
-    "createdAt": "2026-07-12T16:37:31+02:00"
+    "createdAt": "2026-07-12T16:37:31+02:00",
+    "koteMorisRatings": {
+      "gout": 3,
+      "accueil": 3,
+      "cadre": 5
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "tamarin-bay-surf-school",
@@ -30269,7 +30396,14 @@
     "filters": [
       "snacks-plage"
     ],
-    "createdAt": "2026-07-12T16:37:31+02:00"
+    "createdAt": "2026-07-12T16:37:31+02:00",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "accueil": 5,
+      "cadre": 3
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "la-maison-d-ete",
@@ -39801,7 +39935,14 @@
     ],
     "phone": "+230 5511 5888",
     "website": "https://lechateaudebelombre.com/",
-    "createdAt": "2026-07-26T08:23:22+02:00"
+    "createdAt": "2026-07-26T08:23:22+02:00",
+    "koteMorisRatings": {
+      "gout": 4,
+      "qualitePrix": 3,
+      "accueil": 4,
+      "cadre": 5
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "cannelle-tamarin",
@@ -40530,7 +40671,13 @@
     "filters": [
       "italien"
     ],
-    "createdAt": "2026-07-28T13:56:53+02:00"
+    "createdAt": "2026-07-28T13:56:53+02:00",
+    "koteMorisRatings": {
+      "gout": 4,
+      "accueil": 4,
+      "cadre": 3
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "la-maison-du-pecheur-pereybere",
@@ -53206,7 +53353,14 @@
       "asiatique"
     ],
     "hours": "Fermé mar, Lun 11h-14h30, Mer-Dim 11h-14h30 & 18h-21h30",
-    "createdAt": "2026-07-11T18:51:59+02:00"
+    "createdAt": "2026-07-11T18:51:59+02:00",
+    "koteMorisRatings": {
+      "gout": 3,
+      "qualitePrix": 4,
+      "accueil": 3,
+      "cadre": 2
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "karay-mario-mahebourg",
@@ -53229,7 +53383,14 @@
       "frequente-locaux",
       "produits-locaux"
     ],
-    "createdAt": "2026-08-13T05:51:27+02:00"
+    "createdAt": "2026-08-13T05:51:27+02:00",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 4,
+      "accueil": 5,
+      "cadre": 4
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "la-vielle-rouge-mahebourg",
@@ -53251,7 +53412,14 @@
       "mauricienne"
     ],
     "hours": "Tlj 11h-15h",
-    "createdAt": "2026-08-13T05:51:27+02:00"
+    "createdAt": "2026-08-13T05:51:27+02:00",
+    "koteMorisRatings": {
+      "gout": 4,
+      "qualitePrix": 4,
+      "accueil": 3,
+      "cadre": 3
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "bato-constance-maquettes-mahebourg",
@@ -53346,7 +53514,14 @@
       "grillades"
     ],
     "hours": "Tlj 12h-20h30",
-    "createdAt": "2026-07-12T05:19:04+02:00"
+    "createdAt": "2026-07-12T05:19:04+02:00",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 4,
+      "accueil": 4,
+      "cadre": 3
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "le-bougainville-blue-bay",
@@ -53368,7 +53543,13 @@
       "fruits-de-mer",
       "italien"
     ],
-    "createdAt": "2026-08-13T05:57:04+02:00"
+    "createdAt": "2026-08-13T05:57:04+02:00",
+    "koteMorisRatings": {
+      "gout": 3,
+      "qualitePrix": 3,
+      "accueil": 2
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "totof-tours-blue-bay",
