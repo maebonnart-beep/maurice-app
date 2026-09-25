@@ -8,6 +8,7 @@ import { BusinessDetail } from "@/components/ui/BusinessDetail";
 import { FilterChip } from "@/components/ui/FilterChip";
 import { FILTER_GROUPS, SUBCATEGORIES } from "@/data/categories";
 import { MapPin } from "@/lib/icons";
+import { PLAN_OPTION_ICONS, PLAN_THEME_ICONS } from "@/lib/planIcons";
 import {
   PLAN_ACTIVITIES,
   PLAN_BUDGETS,
@@ -287,7 +288,18 @@ export default function PlanWizard({
                     placeTheme === t.key ? "border-primary bg-primary text-on-primary" : "border-border bg-surface text-ink"
                   }`}
                 >
-                  <span className="text-[20px]" aria-hidden>{t.emoji}</span>
+                  {PLAN_THEME_ICONS[t.key] ? (
+                    // eslint-disable-next-line @next/next/no-img-element
+                    <img
+                      src={PLAN_THEME_ICONS[t.key]}
+                      alt=""
+                      aria-hidden
+                      // Tuile sélectionnée (fond teal) : pastille claire pour garder le contraste de l'illustration.
+                      className={`w-11 h-11 object-contain rounded-xl p-0.5 ${placeTheme === t.key ? "bg-surface" : ""}`}
+                    />
+                  ) : (
+                    <span className="text-[20px]" aria-hidden>{t.emoji}</span>
+                  )}
                   <span className="text-[11.5px] font-bold leading-tight text-center">{t.label}</span>
                 </button>
               ))}
@@ -331,7 +343,13 @@ export default function PlanWizard({
                     active={(placeOptions[g.key] ?? []).includes(o.key)}
                     onClick={() => toggleOption(g.key, o.key)}
                   >
-                    {o.emoji} {o.label}
+                    {PLAN_OPTION_ICONS[o.key] ? (
+                      // eslint-disable-next-line @next/next/no-img-element
+                      <img src={PLAN_OPTION_ICONS[o.key]} alt="" aria-hidden className="inline-block w-5 h-5 object-contain align-[-4px] mr-1" />
+                    ) : (
+                      <>{o.emoji} </>
+                    )}
+                    {o.label}
                   </FilterChip>
                 ))}
               </div>
