@@ -7363,7 +7363,8 @@
       "grillades"
     ],
     "hours": "Mer-Jeu 18h-22h, Ven-Sam 18h-23h, fermé dim-lun-mar",
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g580097-d2434801-Reviews-Big_Willy_s-Tamarin.html"
   },
   {
     "id": "le-whatever-tamarin",
@@ -7451,7 +7452,8 @@
     "filters": [
       "italien"
     ],
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g298343-d1415194-Reviews-Mare_Mare_Beach_Restaurant-Flic_En_Flac.html"
   },
   {
     "id": "restaurant-le-bois-noir-number-1",
@@ -7473,7 +7475,8 @@
       "asiatique"
     ],
     "hours": "Lun-Mer + Ven-Dim 11h30-16h & 18h-22h, fermé jeu",
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g293816-d3674083-Reviews-Le_Bois_Noir-Mauritius.html"
   },
   {
     "id": "rib-reef",
@@ -7494,7 +7497,8 @@
     "filters": [
       "fruits-de-mer"
     ],
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g298343-d7147318-Reviews-Rib_Reef-Flic_En_Flac.html"
   },
   {
     "id": "osaka-sushi",
@@ -7515,7 +7519,8 @@
       "asiatique",
       "sushis"
     ],
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g18891812-d26451999-Reviews-Osaka_Sushi-Black_River.html"
   },
   {
     "id": "ravinala",
@@ -7556,7 +7561,8 @@
     "filters": [
       "grillades"
     ],
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g298343-d32701841-Reviews-Tiger_s_Milk_Flic_En_Flac-Flic_En_Flac.html"
   },
   {
     "id": "the-break",
@@ -7732,7 +7738,8 @@
       "bars",
       "cafes-terrasses"
     ],
-    "createdAt": "2026-07-13T16:28:35+02:00"
+    "createdAt": "2026-07-13T16:28:35+02:00",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g951345-d12330581-Reviews-Roots_Spirits-Riviere_Noire.html"
   },
   {
     "id": "coquillages-restaurant-bar",
@@ -7774,7 +7781,8 @@
     "filters": [
       "fruits-de-mer"
     ],
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g298343-d15691175-Reviews-Magenta_Seafood_Restaurant-Flic_En_Flac.html"
   },
   {
     "id": "marco-polo-resto-bar",
@@ -7887,7 +7895,8 @@
       "indienne",
       "tables-exception"
     ],
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g298343-d6350639-Reviews-Cilantro_Restaurant-Flic_En_Flac.html"
   },
   {
     "id": "medium-rare-steakhouse",
@@ -7910,7 +7919,8 @@
       "europeenne",
       "grillades"
     ],
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g1220557-d3478199-Reviews-Medium_Rare_Steakhouse-Grande_Riviere_Noire.html"
   },
   {
     "id": "moon-bar-k-floating-bar-dining-on-the-sea",
@@ -8020,7 +8030,8 @@
     "filters": [
       "mauricienne"
     ],
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g298343-d8041530-Reviews-Lakaz_Cascavelle-Flic_En_Flac.html"
   },
   {
     "id": "vanilla-cafe-restaurant",
@@ -8042,7 +8053,8 @@
       "vegetarien",
       "mauricienne"
     ],
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g951345-d17729385-Reviews-Vanilla_Cafe-Riviere_Noire.html"
   },
   {
     "id": "recif-bleu",
@@ -8088,7 +8100,8 @@
       "mauricienne",
       "produits-locaux"
     ],
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g1220557-d8040737-Reviews-Frenchie_Cafe-Grande_Riviere_Noire.html"
   },
   {
     "id": "apo-black-river",
