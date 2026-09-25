@@ -125,6 +125,9 @@ export type Business = {
   tripadvisorUrl?: string;
   /** Notes éditoriales Koté Moris (1-5) par critère, saisies à la main dans l'admin — jamais importées de Google/TripAdvisor. Niveau calculé par lib/rating.ts. */
   koteMorisRatings?: KoteMorisRatings;
+  /** Origine des notes : "estimation" = base initiale déduite de la lecture des avis publics (plafonnée à 2 fleurs),
+   *  "visite" = notée par Koté Moris après test (via l'admin). Absent = "visite". */
+  koteMorisRatingsSource?: "estimation" | "visite";
 };
 
 export type KoteMorisRatings = {

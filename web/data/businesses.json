@@ -972,7 +972,14 @@
       "fruits-de-mer"
     ],
     "createdAt": "2026-07-09T18:41:47+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488103-d15795355-Reviews-La_Kaza-Grand_Baie.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488103-d15795355-Reviews-La_Kaza-Grand_Baie.html",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 3,
+      "accueil": 5,
+      "cadre": 5
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "au-feu-de-bois-grand-baie",
@@ -1070,7 +1077,14 @@
       "europeenne"
     ],
     "createdAt": "2026-07-09T18:41:47+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488103-d17393587-Reviews-The_Trojan_Horse-Grand_Baie.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488103-d17393587-Reviews-The_Trojan_Horse-Grand_Baie.html",
+    "koteMorisRatings": {
+      "gout": 4,
+      "qualitePrix": 2,
+      "accueil": 4,
+      "cadre": 4
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "la-terrasse",
@@ -1220,7 +1234,13 @@
       "sushis"
     ],
     "createdAt": "2026-07-09T18:41:47+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488103-d33071662-Reviews-Mayniko_Restaurant_And_Lounge-Grand_Baie.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488103-d33071662-Reviews-Mayniko_Restaurant_And_Lounge-Grand_Baie.html",
+    "koteMorisRatings": {
+      "gout": 5,
+      "accueil": 5,
+      "cadre": 4
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "la-payotte-restaurant-grand-baie-cocktail-bar-tapas",
@@ -1244,7 +1264,14 @@
       "bars"
     ],
     "createdAt": "2026-07-09T18:41:47+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g644023-d26694675-Reviews-La_Payotte_Mauritius-Pointe_aux_Canonniers.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g644023-d26694675-Reviews-La_Payotte_Mauritius-Pointe_aux_Canonniers.html",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 3,
+      "accueil": 5,
+      "cadre": 4
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "la-cabane-de-jules",
@@ -1269,7 +1296,12 @@
       "mauricienne"
     ],
     "createdAt": "2026-07-09T18:41:47+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488103-d9881112-Reviews-La_Cabane_de_Jules-Grand_Baie.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488103-d9881112-Reviews-La_Cabane_de_Jules-Grand_Baie.html",
+    "koteMorisRatings": {
+      "gout": 4,
+      "cadre": 4
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "lazy-lobster",
@@ -1317,7 +1349,14 @@
       "tables-exception"
     ],
     "createdAt": "2026-07-09T18:41:47+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488103-d24070995-Reviews-Ai_KISU_LUX_Grand_Baie-Grand_Baie.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488103-d24070995-Reviews-Ai_KISU_LUX_Grand_Baie-Grand_Baie.html",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 3,
+      "accueil": 4,
+      "cadre": 5
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "the-fisherman-lounge",
@@ -1414,7 +1453,14 @@
       "bars"
     ],
     "createdAt": "2026-07-09T18:41:47+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488103-d13461803-Reviews-Eden_Beach_Restaurant-Grand_Baie.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488103-d13461803-Reviews-Eden_Beach_Restaurant-Grand_Baie.html",
+    "koteMorisRatings": {
+      "gout": 3,
+      "qualitePrix": 4,
+      "accueil": 3,
+      "cadre": 5
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "neo-s",
@@ -1507,7 +1553,14 @@
       "cafes-terrasses"
     ],
     "createdAt": "2026-07-09T18:41:47+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488103-d3486999-Reviews-Blue_Lagoon_Cafe-Grand_Baie.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488103-d3486999-Reviews-Blue_Lagoon_Cafe-Grand_Baie.html",
+    "koteMorisRatings": {
+      "gout": 4,
+      "qualitePrix": 5,
+      "accueil": 5,
+      "cadre": 4
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "bullies-social",
@@ -1556,7 +1609,14 @@
       "tables-exception"
     ],
     "createdAt": "2026-07-09T18:41:47+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488103-d1215553-Reviews-Le_Capitaine-Grand_Baie.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488103-d1215553-Reviews-Le_Capitaine-Grand_Baie.html",
+    "koteMorisRatings": {
+      "gout": 3,
+      "qualitePrix": 2,
+      "accueil": 4,
+      "cadre": 5
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "bisou-rooftop-bar-restaurant-lux-grand-baie",
@@ -1602,7 +1662,14 @@
       "cafes-terrasses"
     ],
     "createdAt": "2026-07-09T18:41:47+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488103-d2392184-Reviews-Sunset_Cafe_Grand_Baie-Grand_Baie.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488103-d2392184-Reviews-Sunset_Cafe_Grand_Baie-Grand_Baie.html",
+    "koteMorisRatings": {
+      "gout": 3,
+      "qualitePrix": 3,
+      "accueil": 3,
+      "cadre": 5
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "d-ernys-restaurant",
@@ -1721,7 +1788,13 @@
       "bars"
     ],
     "createdAt": "2026-07-09T18:41:47+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488103-d12250536-Reviews-The_Tavern_Resto_Pub-Grand_Baie.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488103-d12250536-Reviews-The_Tavern_Resto_Pub-Grand_Baie.html",
+    "koteMorisRatings": {
+      "gout": 3,
+      "accueil": 2,
+      "cadre": 3
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "rooftop-adults-only-restaurant-bar-lounge",
@@ -1787,7 +1860,14 @@
       "bars"
     ],
     "createdAt": "2026-07-09T18:41:47+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Attraction_Review-g488103-d14901819-Reviews-Shisha_Flavours_Lounge-Grand_Baie.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Attraction_Review-g488103-d14901819-Reviews-Shisha_Flavours_Lounge-Grand_Baie.html",
+    "koteMorisRatings": {
+      "gout": 4,
+      "qualitePrix": 4,
+      "accueil": 5,
+      "cadre": 3
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "omg-nightclub",
@@ -1853,7 +1933,13 @@
       "bars"
     ],
     "createdAt": "2026-07-09T18:41:47+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g644023-d23559288-Reviews-CocoChill-Pointe_aux_Canonniers.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g644023-d23559288-Reviews-CocoChill-Pointe_aux_Canonniers.html",
+    "koteMorisRatings": {
+      "gout": 5,
+      "accueil": 4,
+      "cadre": 5
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "le-pole",
@@ -1876,7 +1962,12 @@
     ],
     "hours": "Tous les jours 17h-01h",
     "createdAt": "2026-07-09T18:41:47+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488103-d11859219-Reviews-Le_Pole-Grand_Baie.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488103-d11859219-Reviews-Le_Pole-Grand_Baie.html",
+    "koteMorisRatings": {
+      "gout": 4,
+      "cadre": 4
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "la-scarpetta-grand-baie",
@@ -3905,7 +3996,13 @@
       "mauricienne"
     ],
     "createdAt": "2026-07-11T18:29:40+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g298343-d3574829-Reviews-The_Beach_Shack-Flic_En_Flac.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g298343-d3574829-Reviews-The_Beach_Shack-Flic_En_Flac.html",
+    "koteMorisRatings": {
+      "gout": 4,
+      "accueil": 3,
+      "cadre": 4
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "la-bonne-chute-tamarin",
@@ -3955,7 +4052,14 @@
       "italien"
     ],
     "createdAt": "2026-07-11T18:29:40+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g18891812-d23692880-Reviews-Il_Padrino_Italian_Restaurant-Black_River.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g18891812-d23692880-Reviews-Il_Padrino_Italian_Restaurant-Black_River.html",
+    "koteMorisRatings": {
+      "gout": 3,
+      "qualitePrix": 2,
+      "accueil": 3,
+      "cadre": 5
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "the-boathouse-grill-le-morne",
@@ -3999,7 +4103,14 @@
       "bars"
     ],
     "createdAt": "2026-07-11T18:29:40+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g1639466-d3722136-Reviews-ENSO_Restaurant_Bar_Lounge-La_Gaulette.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g1639466-d3722136-Reviews-ENSO_Restaurant_Bar_Lounge-La_Gaulette.html",
+    "koteMorisRatings": {
+      "gout": 4,
+      "qualitePrix": 4,
+      "accueil": 4,
+      "cadre": 4
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "lalchimiste-rhumerie-chamarel",
@@ -4025,7 +4136,14 @@
       "tables-exception"
     ],
     "createdAt": "2026-07-11T18:29:40+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g1168948-d5010642-Reviews-L_Alchimiste-Chamarel.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g1168948-d5010642-Reviews-L_Alchimiste-Chamarel.html",
+    "koteMorisRatings": {
+      "gout": 4,
+      "qualitePrix": 3,
+      "accueil": 3,
+      "cadre": 5
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "chez-rosy-gris-gris-souillac",
@@ -4153,7 +4271,13 @@
       "fruits-de-mer"
     ],
     "createdAt": "2026-07-11T18:29:40+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g481079-d15188634-Reviews-Le_Capitaine-Mahebourg.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g481079-d15188634-Reviews-Le_Capitaine-Mahebourg.html",
+    "koteMorisRatings": {
+      "gout": 4,
+      "qualitePrix": 4,
+      "cadre": 2
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "namaste-restaurant-caudan",
@@ -4176,7 +4300,14 @@
       "indienne"
     ],
     "createdAt": "2026-07-11T18:29:40+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g293817-d1215581-Reviews-Namaste-Port_Louis.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g293817-d1215581-Reviews-Namaste-Port_Louis.html",
+    "koteMorisRatings": {
+      "gout": 4,
+      "qualitePrix": 4,
+      "accueil": 2,
+      "cadre": 4
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "escale-creole-moka",
@@ -4589,7 +4720,13 @@
       "bars"
     ],
     "createdAt": "2026-07-11T18:51:59+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g298343-d26227589-Reviews-Salt_Lemon-Flic_En_Flac.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g298343-d26227589-Reviews-Salt_Lemon-Flic_En_Flac.html",
+    "koteMorisRatings": {
+      "gout": 4,
+      "accueil": 5,
+      "cadre": 4
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "escale-cuisine-grill-flic-en-flac",
@@ -4611,7 +4748,14 @@
       "grillades"
     ],
     "createdAt": "2026-07-11T18:51:59+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g298343-d26809819-Reviews-Escale_cuisine_et_grill-Flic_En_Flac.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g298343-d26809819-Reviews-Escale_cuisine_et_grill-Flic_En_Flac.html",
+    "koteMorisRatings": {
+      "gout": 4,
+      "qualitePrix": 4,
+      "accueil": 4,
+      "cadre": 2
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "jeanno-burger-flic-en-flac",
@@ -4661,7 +4805,14 @@
       "mauricienne"
     ],
     "createdAt": "2026-07-11T18:51:59+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g298343-d1215535-Reviews-Leslie_Restaurant-Flic_En_Flac.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g298343-d1215535-Reviews-Leslie_Restaurant-Flic_En_Flac.html",
+    "koteMorisRatings": {
+      "gout": 4,
+      "qualitePrix": 4,
+      "accueil": 4,
+      "cadre": 2
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "happy-rajah-tamarin",
@@ -4781,7 +4932,14 @@
       "cafes-terrasses"
     ],
     "createdAt": "2026-07-11T18:51:59+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488105-d7023362-Reviews-Emba_Filao-Le_Morne.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488105-d7023362-Reviews-Emba_Filao-Le_Morne.html",
+    "koteMorisRatings": {
+      "gout": 3,
+      "qualitePrix": 4,
+      "accueil": 3,
+      "cadre": 5
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "wapalapam-le-morne",
@@ -4804,7 +4962,13 @@
       "tables-exception"
     ],
     "createdAt": "2026-07-11T18:51:59+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488105-d12581185-Reviews-WAPALAPAM_Island_Eatery-Le_Morne.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488105-d12581185-Reviews-WAPALAPAM_Island_Eatery-Le_Morne.html",
+    "koteMorisRatings": {
+      "gout": 4,
+      "accueil": 3,
+      "cadre": 4
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "simply-india-st-regis-le-morne",
@@ -4827,7 +4991,13 @@
       "indienne"
     ],
     "createdAt": "2026-07-11T18:51:59+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488105-d4735569-Reviews-Simply_India-Le_Morne.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488105-d4735569-Reviews-Simply_India-Le_Morne.html",
+    "koteMorisRatings": {
+      "gout": 4,
+      "accueil": 5,
+      "cadre": 4
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "ginja-heritage-le-telfair-bel-ombre",
@@ -4851,7 +5021,13 @@
       "sushis"
     ],
     "createdAt": "2026-07-11T18:51:59+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g612353-d3843150-Reviews-Gin_ja-Bel_Ombre.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g612353-d3843150-Reviews-Gin_ja-Bel_Ombre.html",
+    "koteMorisRatings": {
+      "gout": 5,
+      "accueil": 4,
+      "cadre": 5
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "c-beach-club-bel-ombre",
@@ -4875,7 +5051,13 @@
       "bars"
     ],
     "createdAt": "2026-07-11T18:51:59+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g612353-d10906525-Reviews-C_Beach_Club-Bel_Ombre.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g612353-d10906525-Reviews-C_Beach_Club-Bel_Ombre.html",
+    "koteMorisRatings": {
+      "gout": 4,
+      "accueil": 5,
+      "cadre": 5
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "infinity-blue-heritage-awali-bel-ombre",
@@ -4897,7 +5079,13 @@
       "mauricienne"
     ],
     "createdAt": "2026-07-11T18:51:59+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g612353-d3634954-Reviews-Infinity_Blue-Bel_Ombre.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g612353-d3634954-Reviews-Infinity_Blue-Bel_Ombre.html",
+    "koteMorisRatings": {
+      "gout": 5,
+      "accueil": 5,
+      "cadre": 5
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "le-flamboyant-so-sofitel-bel-ombre",
@@ -4942,7 +5130,14 @@
       "mauricienne"
     ],
     "createdAt": "2026-07-11T18:51:59+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g1124112-d1526391-Reviews-Le_Rochester-Souillac.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g1124112-d1526391-Reviews-Le_Rochester-Souillac.html",
+    "koteMorisRatings": {
+      "gout": 4,
+      "qualitePrix": 4,
+      "accueil": 5,
+      "cadre": 4
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "domaine-de-saint-aubin-souillac",
@@ -4966,7 +5161,14 @@
       "tables-exception"
     ],
     "createdAt": "2026-07-11T18:51:59+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g1124112-d1407517-Reviews-Domaine_de_Saint_Aubin_et_Le_Saint_Aubin_Restaurant-Souillac.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g1124112-d1407517-Reviews-Domaine_de_Saint_Aubin_et_Le_Saint_Aubin_Restaurant-Souillac.html",
+    "koteMorisRatings": {
+      "gout": 4,
+      "qualitePrix": 4,
+      "accueil": 4,
+      "cadre": 5
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "hasu-long-beach-belle-mare",
@@ -4990,7 +5192,14 @@
       "sushis"
     ],
     "createdAt": "2026-07-11T18:51:59+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g298342-d6351064-Reviews-Hasu-Belle_Mare.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g298342-d6351064-Reviews-Hasu-Belle_Mare.html",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 2,
+      "accueil": 5,
+      "cadre": 4
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "amari-by-vineet-lux-belle-mare",
@@ -5014,7 +5223,14 @@
       "tables-exception"
     ],
     "createdAt": "2026-07-11T18:51:59+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g298342-d12658931-Reviews-Amari_By_Vineet_LUX_Belle_Mare-Belle_Mare.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g298342-d12658931-Reviews-Amari_By_Vineet_LUX_Belle_Mare-Belle_Mare.html",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 4,
+      "accueil": 5,
+      "cadre": 4
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "mamie-sophie-table-hote-camp-ithier",
@@ -5132,7 +5348,13 @@
       "mauricienne"
     ],
     "createdAt": "2026-07-11T18:51:59+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g481079-d25096419-Reviews-Restaurant_du_Lac-Mahebourg.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g481079-d25096419-Reviews-Restaurant_du_Lac-Mahebourg.html",
+    "koteMorisRatings": {
+      "gout": 3,
+      "accueil": 2,
+      "cadre": 4
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "chez-patrick-resto-mahebourg",
@@ -5156,7 +5378,14 @@
       "mauricienne"
     ],
     "createdAt": "2026-07-11T18:51:59+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g481079-d1215562-Reviews-Chez_Patrick_Resto-Mahebourg.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g481079-d1215562-Reviews-Chez_Patrick_Resto-Mahebourg.html",
+    "koteMorisRatings": {
+      "gout": 4,
+      "qualitePrix": 4,
+      "accueil": 2,
+      "cadre": 3
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "stella-ti-baz-manze-mahebourg",
@@ -5202,7 +5431,12 @@
       "mauricienne"
     ],
     "createdAt": "2026-07-11T18:51:59+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g481079-d12035826-Reviews-Dragon_De_Chine-Mahebourg.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g481079-d12035826-Reviews-Dragon_De_Chine-Mahebourg.html",
+    "koteMorisRatings": {
+      "gout": 3,
+      "qualitePrix": 4
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "good-korma-beau-vallon",
@@ -5249,7 +5483,13 @@
       "produits-locaux"
     ],
     "createdAt": "2026-07-11T18:51:59+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g481079-d1215563-Reviews-Les_Copains_d_Abord-Mahebourg.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g481079-d1215563-Reviews-Les_Copains_d_Abord-Mahebourg.html",
+    "koteMorisRatings": {
+      "gout": 3,
+      "accueil": 4,
+      "cadre": 5
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "flame-n-grill-curepipe",
@@ -5273,7 +5513,14 @@
       "grillades"
     ],
     "createdAt": "2026-07-11T18:51:59+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g480207-d9698481-Reviews-Flame_n_Grill-Curepipe.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g480207-d9698481-Reviews-Flame_n_Grill-Curepipe.html",
+    "koteMorisRatings": {
+      "gout": 4,
+      "qualitePrix": 3,
+      "accueil": 3,
+      "cadre": 3
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "kasafe-curepipe",
@@ -5296,7 +5543,13 @@
       "asiatique"
     ],
     "createdAt": "2026-07-11T18:51:59+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g480207-d10308751-Reviews-Kasafe_Restaurant-Curepipe.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g480207-d10308751-Reviews-Kasafe_Restaurant-Curepipe.html",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 4,
+      "accueil": 4
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "dallas-yesh-curepipe",
@@ -6319,7 +6572,13 @@
       "snacks-plage"
     ],
     "createdAt": "2026-07-12T06:09:46+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g298343-d8692210-Reviews-Menu_Des_Iles-Flic_En_Flac.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g298343-d8692210-Reviews-Menu_Des_Iles-Flic_En_Flac.html",
+    "koteMorisRatings": {
+      "gout": 4,
+      "qualitePrix": 5,
+      "cadre": 3
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "chez-vanessa-pereybere",
@@ -6550,7 +6809,13 @@
       "produits-francais"
     ],
     "createdAt": "2026-07-12T07:06:58+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g644023-d27110649-Reviews-Theo_Fourneaux-Pointe_aux_Canonniers.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g644023-d27110649-Reviews-Theo_Fourneaux-Pointe_aux_Canonniers.html",
+    "koteMorisRatings": {
+      "gout": 5,
+      "accueil": 5,
+      "cadre": 4
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "kalatua-garden-restaurant",
@@ -6572,7 +6837,14 @@
     ],
     "hours": "Dim 11h-14h & 17h30-22h, Mar-Ven 17h30-22h, Sam 11h30-15h & 17h30-22h, fermé lun",
     "createdAt": "2026-07-12T07:06:58+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g1905319-d28017279-Reviews-Kalatua-Pereybere.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g1905319-d28017279-Reviews-Kalatua-Pereybere.html",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 4,
+      "accueil": 5,
+      "cadre": 5
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "chez-vassen-restaurant",
@@ -6641,7 +6913,12 @@
     ],
     "hours": "Mer-Ven 18h-21h30, Sam-Dim 12h-14h30, fermé lun et mar",
     "createdAt": "2026-07-12T07:06:58+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488103-d25324400-Reviews-Le_5_Terre_Restaurant_et_Pinsa-Grand_Baie.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488103-d25324400-Reviews-Le_5_Terre_Restaurant_et_Pinsa-Grand_Baie.html",
+    "koteMorisRatings": {
+      "gout": 4,
+      "accueil": 4
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "roots",
@@ -6665,7 +6942,13 @@
       "europeenne"
     ],
     "createdAt": "2026-07-12T07:06:58+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g644023-d3784649-Reviews-Roots-Pointe_aux_Canonniers.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g644023-d3784649-Reviews-Roots-Pointe_aux_Canonniers.html",
+    "koteMorisRatings": {
+      "gout": 5,
+      "accueil": 4,
+      "cadre": 4
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "la-creolo-cafe-resto",
@@ -6845,7 +7128,13 @@
       "grillades"
     ],
     "createdAt": "2026-07-12T07:06:58+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488103-d24069194-Reviews-The_Garden_Grill_Restaurant-Grand_Baie.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488103-d24069194-Reviews-The_Garden_Grill_Restaurant-Grand_Baie.html",
+    "koteMorisRatings": {
+      "gout": 4,
+      "accueil": 5,
+      "cadre": 4
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "kogi-kogi-grand-baie",
@@ -6868,7 +7157,13 @@
       "kids-friendly"
     ],
     "createdAt": "2026-07-12T07:06:58+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488103-d16864855-Reviews-Kogi_Kogi_Korean_BBQ-Grand_Baie.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488103-d16864855-Reviews-Kogi_Kogi_Korean_BBQ-Grand_Baie.html",
+    "koteMorisRatings": {
+      "gout": 3,
+      "accueil": 2,
+      "cadre": 4
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "divino",
@@ -6890,7 +7185,13 @@
       "italien"
     ],
     "createdAt": "2026-07-12T07:06:58+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488103-d3931194-Reviews-Divino-Grand_Baie.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488103-d3931194-Reviews-Divino-Grand_Baie.html",
+    "koteMorisRatings": {
+      "gout": 3,
+      "qualitePrix": 4,
+      "cadre": 4
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "island-babe-mauritius-pereybere",
@@ -6934,7 +7235,13 @@
     ],
     "hours": "Tous les jours 12h-14h30, Lun-Jeu et Dim 18h-22h30, Ven-Sam 18h-23h",
     "createdAt": "2026-07-12T07:06:58+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488103-d1215559-Reviews-Luigi_s-Grand_Baie.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488103-d1215559-Reviews-Luigi_s-Grand_Baie.html",
+    "koteMorisRatings": {
+      "gout": 4,
+      "qualitePrix": 4,
+      "accueil": 4
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "grill-chill",
@@ -6955,7 +7262,14 @@
       "grillades"
     ],
     "createdAt": "2026-07-12T07:06:58+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g1905319-d7356877-Reviews-Grill_Chill-Pereybere.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g1905319-d7356877-Reviews-Grill_Chill-Pereybere.html",
+    "koteMorisRatings": {
+      "gout": 4,
+      "qualitePrix": 5,
+      "accueil": 5,
+      "cadre": 3
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "le-domaine-de-grand-baie",
@@ -6998,7 +7312,14 @@
     ],
     "hours": "Lun-Sam 9h-20h, fermé dim",
     "createdAt": "2026-07-12T07:06:58+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g293816-d3679639-Reviews-Kiosque_Magique-Mauritius.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g293816-d3679639-Reviews-Kiosque_Magique-Mauritius.html",
+    "koteMorisRatings": {
+      "gout": 4,
+      "qualitePrix": 4,
+      "accueil": 5,
+      "cadre": 5
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "restaurant-vieille-rouge",
@@ -7255,7 +7576,14 @@
     ],
     "hours": "Mer-Lun 12h-15h & 18h-21h30, fermé mar",
     "createdAt": "2026-07-12T07:06:58+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g298343-d10461565-Reviews-La_Marmite_Mauricienne-Flic_En_Flac.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g298343-d10461565-Reviews-La_Marmite_Mauricienne-Flic_En_Flac.html",
+    "koteMorisRatings": {
+      "gout": 4,
+      "qualitePrix": 4,
+      "accueil": 2,
+      "cadre": 4
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "melanzana",
@@ -7277,7 +7605,14 @@
     ],
     "hours": "Tous les jours 11h-22h",
     "createdAt": "2026-07-12T07:06:58+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g298343-d17478436-Reviews-Melanzana-Flic_En_Flac.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g298343-d17478436-Reviews-Melanzana-Flic_En_Flac.html",
+    "koteMorisRatings": {
+      "gout": 4,
+      "qualitePrix": 4,
+      "accueil": 4,
+      "cadre": 4
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "buddha-bar-beach",
@@ -7300,7 +7635,14 @@
     ],
     "hours": "Tous les jours 12h30-15h & 19h-22h",
     "createdAt": "2026-07-12T07:06:58+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g298343-d15198978-Reviews-Buddha_Bar_Beach-Flic_En_Flac.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g298343-d15198978-Reviews-Buddha_Bar_Beach-Flic_En_Flac.html",
+    "koteMorisRatings": {
+      "gout": 4,
+      "qualitePrix": 2,
+      "accueil": 4,
+      "cadre": 5
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "blacksalt-mauritius",
@@ -7364,7 +7706,14 @@
     ],
     "hours": "Mer-Jeu 18h-22h, Ven-Sam 18h-23h, fermé dim-lun-mar",
     "createdAt": "2026-07-12T07:06:58+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g580097-d2434801-Reviews-Big_Willy_s-Tamarin.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g580097-d2434801-Reviews-Big_Willy_s-Tamarin.html",
+    "koteMorisRatings": {
+      "gout": 3,
+      "qualitePrix": 4,
+      "accueil": 4,
+      "cadre": 4
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "le-whatever-tamarin",
@@ -7453,7 +7802,13 @@
       "italien"
     ],
     "createdAt": "2026-07-12T07:06:58+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g298343-d1415194-Reviews-Mare_Mare_Beach_Restaurant-Flic_En_Flac.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g298343-d1415194-Reviews-Mare_Mare_Beach_Restaurant-Flic_En_Flac.html",
+    "koteMorisRatings": {
+      "gout": 4,
+      "accueil": 4,
+      "cadre": 5
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "restaurant-le-bois-noir-number-1",
@@ -7476,7 +7831,14 @@
     ],
     "hours": "Lun-Mer + Ven-Dim 11h30-16h & 18h-22h, fermé jeu",
     "createdAt": "2026-07-12T07:06:58+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g293816-d3674083-Reviews-Le_Bois_Noir-Mauritius.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g293816-d3674083-Reviews-Le_Bois_Noir-Mauritius.html",
+    "koteMorisRatings": {
+      "gout": 4,
+      "qualitePrix": 3,
+      "accueil": 4,
+      "cadre": 2
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "rib-reef",
@@ -7498,7 +7860,14 @@
       "fruits-de-mer"
     ],
     "createdAt": "2026-07-12T07:06:58+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g298343-d7147318-Reviews-Rib_Reef-Flic_En_Flac.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g298343-d7147318-Reviews-Rib_Reef-Flic_En_Flac.html",
+    "koteMorisRatings": {
+      "gout": 4,
+      "qualitePrix": 3,
+      "accueil": 3,
+      "cadre": 3
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "osaka-sushi",
@@ -7739,7 +8108,13 @@
       "cafes-terrasses"
     ],
     "createdAt": "2026-07-13T16:28:35+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g951345-d12330581-Reviews-Roots_Spirits-Riviere_Noire.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g951345-d12330581-Reviews-Roots_Spirits-Riviere_Noire.html",
+    "koteMorisRatings": {
+      "gout": 5,
+      "accueil": 5,
+      "cadre": 3
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "coquillages-restaurant-bar",
@@ -7782,7 +8157,13 @@
       "fruits-de-mer"
     ],
     "createdAt": "2026-07-12T07:06:58+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g298343-d15691175-Reviews-Magenta_Seafood_Restaurant-Flic_En_Flac.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g298343-d15691175-Reviews-Magenta_Seafood_Restaurant-Flic_En_Flac.html",
+    "koteMorisRatings": {
+      "gout": 4,
+      "accueil": 5,
+      "cadre": 5
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "marco-polo-resto-bar",
@@ -7896,7 +8277,12 @@
       "tables-exception"
     ],
     "createdAt": "2026-07-12T07:06:58+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g298343-d6350639-Reviews-Cilantro_Restaurant-Flic_En_Flac.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g298343-d6350639-Reviews-Cilantro_Restaurant-Flic_En_Flac.html",
+    "koteMorisRatings": {
+      "gout": 5,
+      "cadre": 4
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "medium-rare-steakhouse",
@@ -7920,7 +8306,14 @@
       "grillades"
     ],
     "createdAt": "2026-07-12T07:06:58+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g1220557-d3478199-Reviews-Medium_Rare_Steakhouse-Grande_Riviere_Noire.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g1220557-d3478199-Reviews-Medium_Rare_Steakhouse-Grande_Riviere_Noire.html",
+    "koteMorisRatings": {
+      "gout": 4,
+      "qualitePrix": 2,
+      "accueil": 4,
+      "cadre": 3
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "moon-bar-k-floating-bar-dining-on-the-sea",
@@ -8101,7 +8494,14 @@
       "produits-locaux"
     ],
     "createdAt": "2026-07-12T07:06:58+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g1220557-d8040737-Reviews-Frenchie_Cafe-Grande_Riviere_Noire.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g1220557-d8040737-Reviews-Frenchie_Cafe-Grande_Riviere_Noire.html",
+    "koteMorisRatings": {
+      "gout": 3,
+      "qualitePrix": 3,
+      "accueil": 3,
+      "cadre": 4
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "apo-black-river",
@@ -8416,7 +8816,14 @@
       "/photos/varangue-sur-morne-4.jpg"
     ],
     "photoUrl": "/photos/varangue-sur-morne-1.jpg",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g1168948-d1308984-Reviews-Varangue_Sur_Morne-Chamarel.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g1168948-d1308984-Reviews-Varangue_Sur_Morne-Chamarel.html",
+    "koteMorisRatings": {
+      "gout": 4,
+      "qualitePrix": 3,
+      "accueil": 4,
+      "cadre": 5
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "le-chamarel-restaurant",
@@ -52969,7 +53376,13 @@
     "lat": -19.9966835,
     "lng": 57.5874228,
     "createdAt": "2026-08-16T12:59:29+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g1905319-d26813280-Reviews-Bloom-Pereybere.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g1905319-d26813280-Reviews-Bloom-Pereybere.html",
+    "koteMorisRatings": {
+      "gout": 4,
+      "accueil": 5,
+      "cadre": 4
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "william-watt-magicien",
@@ -58338,7 +58751,13 @@
     ],
     "createdAt": "2026-09-21T03:22:41.253Z",
     "koteMorisComment": "Une adresse où l’on se sent bien accueillis : personnel souriant et attentionné, et des clients qui reviennent plusieurs soirs de suite sans jamais être déçus. Dans l’assiette, les avis saluent les croquettes poulet ou crevette, le poisson grillé (daurade, marlin), le tartare de thon, la soupe de crabe, le plateau de fruits de mer et ses frites maison. Bémol : le rapport qualité/prix et l’ambiance sont un cran en dessous du reste, on y va donc pour la cuisine plus que pour le cadre. Le bon réflexe : ne pas se laisser impressionner par la longue carte et demander conseil au personnel.",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g304008-d1803899-Reviews-Le_Mediterranee-Mont_Choisy.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g304008-d1803899-Reviews-Le_Mediterranee-Mont_Choisy.html",
+    "koteMorisRatings": {
+      "gout": 4,
+      "accueil": 5,
+      "cadre": 4
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "dodomarket",

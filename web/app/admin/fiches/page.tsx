@@ -10,7 +10,8 @@ import {
   RATED_THEMES,
   LEVEL_THRESHOLDS,
   scoreFromRatings,
-  levelFromScore,
+  levelFor,
+  ESTIMATION_MAX_LEVEL,
 } from "@/lib/rating";
 
 const COMMON_FIELDS: { key: keyof Business; label: string }[] = [
@@ -51,6 +52,8 @@ export default function AdminFichesPage() {
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [form, setForm] = useState<Record<string, string>>({});
   const [ratings, setRatings] = useState<Record<string, string>>({});
+  // "estimation" tant que les notes estimées (avis en ligne) n'ont pas été retouchées ; passe à "visite" dès la première modification.
+  const [ratingsSource, setRatingsSource] = useState<"estimation" | "visite">("visite");
   const [advancedJson, setAdvancedJson] = useState("");
   const [showAdvanced, setShowAdvanced] = useState(false);
   const [status, setStatus] = useState<string | null>(null);
@@ -76,7 +79,7 @@ export default function AdminFichesPage() {
   function selectBusiness(b: Business) {
     setSelectedId(b.id);
     setStatus(null);
-    const commonKeys = new Set(["badge", "zone", "koteMorisRatings", ...COMMON_FIELDS.map((f) => f.key)]);
+    const commonKeys = new Set(["badge", "zone", "koteMorisRatings", "koteMorisRatingsSource", ...COMMON_FIELDS.map((f) => f.key)]);
     const nextForm: Record<string, string> = { badge: b.badge || "", zone: b.zone || "" };
     for (const f of COMMON_FIELDS) {
       nextForm[f.key] = (b[f.key] as string) || "";
@@ -88,6 +91,7 @@ export default function AdminFichesPage() {
       nextRatings[c.key] = typeof note === "number" ? String(note) : "";
     }
     setRatings(nextRatings);
+    setRatingsSource(b.koteMorisRatingsSource === "estimation" ? "estimation" : "visite");
 
     const rest: Record<string, unknown> = {};
     for (const key of Object.keys(b)) {
@@ -124,6 +128,8 @@ export default function AdminFichesPage() {
     // "" = pas de note : la route API supprime le champ.
     const ratingsPatch = ratingsToObject(ratings);
     patch.koteMorisRatings = ratingsPatch ?? "";
+    // Absent = "visite" : on ne garde le marqueur que pour une estimation non retouchée.
+    patch.koteMorisRatingsSource = ratingsPatch && ratingsSource === "estimation" ? "estimation" : "";
 
     try {
       const res = await fetch("/api/admin/businesses", {
@@ -253,7 +259,11 @@ export default function AdminFichesPage() {
 
           {selected.themes?.some((t) => RATED_THEMES.includes(t)) && (() => {
             const score = scoreFromRatings(ratingsToObject(ratings) ?? undefined);
-            const level = levelFromScore(score);
+            const level = levelFor(score, {
+              badge: (form.badge || undefined) as Business["badge"],
+              source: ratingsSource,
+              themes: selected.themes,
+            });
             return (
               <fieldset className="rounded-lg border border-border p-3 space-y-2">
                 <legend className="px-1 text-sm font-medium">Note Koté Moris</legend>
@@ -270,7 +280,10 @@ export default function AdminFichesPage() {
                       </span>
                       <select
                         value={ratings[c.key] || ""}
-                        onChange={(e) => setRatings({ ...ratings, [c.key]: e.target.value })}
+                        onChange={(e) => {
+                          setRatings({ ...ratings, [c.key]: e.target.value });
+                          setRatingsSource("visite");
+                        }}
                         className="w-full rounded-lg border border-border bg-surface-2 px-2 py-1.5"
                       >
                         <option value="">—</option>
@@ -284,13 +297,20 @@ export default function AdminFichesPage() {
                   ))}
                 </div>
                 <p className="text-sm m-0 flex items-center gap-2">
-                  {score === null ? (
+                  {form.badge === "selection" ? (
+                    <>
+                      <span>Sélection Koté Moris → 3 fleurs d&apos;office</span>
+                      <FrangipaniRating level={3} size={16} />
+                    </>
+                  ) : score === null ? (
                     <span className="text-muted">Pas encore noté</span>
                   ) : (
                     <>
                       <span>
                         Score : <strong>{score}</strong>/100 · niveau {level}
                         {level < 2 && " (non affiché)"}
+                        {ratingsSource === "estimation" &&
+                          ` · estimation avis en ligne (max ${ESTIMATION_MAX_LEVEL} fleurs ; modifier une note = visite)`}
                       </span>
                       <FrangipaniRating level={level} size={16} />
                     </>

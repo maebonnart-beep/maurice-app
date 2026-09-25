@@ -53,6 +53,26 @@ export function koteMorisScore(b: Business): number | null {
   return scoreFromRatings(b.koteMorisRatings);
 }
 
+/** Niveau maximal atteignable par une note simplement estimée (avis publics, lieu pas encore testé). */
+export const ESTIMATION_MAX_LEVEL: KoteMorisLevel = 2;
+
+/**
+ * Niveau affiché/trié d'une fiche :
+ * - badge « Sélection Koté Moris » → 3 fleurs d'office (reco éditoriale) ;
+ * - notes estimées (koteMorisRatingsSource "estimation") → plafonnées à 2 fleurs ;
+ * - notes issues d'une visite → niveau calculé sans plafond.
+ */
+export function levelFor(
+  score: number | null,
+  opts: { badge?: Business["badge"]; source?: Business["koteMorisRatingsSource"]; themes?: string[] }
+): KoteMorisLevel {
+  // Reco KM = 3 fleurs, limité aux rubriques couvertes par la grille (restauration).
+  if (opts.badge === "selection" && opts.themes?.some((t) => RATED_THEMES.includes(t))) return 3;
+  const level = levelFromScore(score);
+  if (opts.source === "estimation" && level > ESTIMATION_MAX_LEVEL) return ESTIMATION_MAX_LEVEL;
+  return level;
+}
+
 export function koteMorisLevel(b: Business): KoteMorisLevel {
-  return levelFromScore(koteMorisScore(b));
+  return levelFor(koteMorisScore(b), { badge: b.badge, source: b.koteMorisRatingsSource, themes: b.themes });
 }
