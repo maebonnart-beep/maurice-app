@@ -11646,9 +11646,10 @@
       "restaurants"
     ],
     "zone": "sud",
-    "description": "Table de fruits de mer et cuisine fusion au coin des rues Hangard et des Mares à Mahébourg, classée #4 sur 33 restaurants de la ville. Accueil très chaleureux, plats copieux et savoureux : poisson épicé aux raisins et cacahuètes cuit en feuille de bananier, crevettes créoles, curry de poisson. Excellent rapport qualité-prix, transfert hôtel gratuit proposé.",
+    "description": "Restaurant convivial de Mahébourg nommé d'après la « vieille rouge », un poisson de l'océan Indien. Cuisine locale et internationale mettant à l'honneur le poisson frais du jour, les currys mauriciens et les grillades, avec des options végétariennes. Service en salle ou en terrasse.",
     "filters": [
-      "fruits-de-mer"
+      "fruits-de-mer",
+      "mauricienne"
     ],
     "hours": "Tous les jours 11h-15h",
     "createdAt": "2026-07-12T07:06:58+02:00",
@@ -20308,15 +20309,19 @@
     "lat": -20.279653,
     "lng": 57.368543,
     "themes": [
-      "cafes-bars-glaciers"
+      "cafes-bars-glaciers",
+      "restaurants"
     ],
     "zone": "ouest",
     "hours": "Tous les jours 8h-20h, fermé Mer",
-    "description": "Wellness café ouvert en 2024 par Sabrina Patten : petits-déjeuners, déjeuners et dîners sains aux influences variées, massages ayurvédiques, et événements (projections, art-thérapie, soirées karaoké). Très bien noté (5/5), avis élogieux sur la fraîcheur des plats et l'ambiance calme.",
+    "description": "Café bien-être ouvert en 2024 par Sabrina Patten à Flic-en-Flac, cadre lumineux et véranda. Jus frais, power bowls, yaourts-granola ; propose aussi massages ayurvédiques et événements (soirées cinéma, art-thérapie, karaoké). Très bien noté.",
     "filters": [
-      "cafes-terrasses"
+      "cafes-terrasses",
+      "europeenne",
+      "vegetarien"
     ],
-    "createdAt": "2026-07-12T16:37:31+02:00"
+    "createdAt": "2026-07-12T16:37:31+02:00",
+    "priceRange": "prix-moyen"
   },
   {
     "id": "tidez",
@@ -31040,7 +31045,11 @@
       "accueil": 4,
       "cadre": 2
     },
-    "koteMorisRatingsSource": "estimation"
+    "koteMorisRatingsSource": "estimation",
+    "filters": [
+      "mauricienne"
+    ],
+    "priceRange": "bon-marche"
   },
   {
     "id": "family-pizza",
@@ -40687,28 +40696,6 @@
       "cadre": 4
     },
     "koteMorisRatingsSource": "estimation"
-  },
-  {
-    "id": "o8-wellness-cafe-flic-en-flac",
-    "name": "Ô8 Wellness Café",
-    "category": "manger-boire",
-    "address": "Avenue des Kestrels, Flic-en-Flac",
-    "phone": "+230 5733 3818",
-    "zone": "ouest",
-    "lat": -20.2833,
-    "lng": 57.3667,
-    "themes": [
-      "restaurants"
-    ],
-    "priceRange": "prix-moyen",
-    "description": "Café bien-être ouvert en 2024 par Sabrina Patten à Flic-en-Flac, cadre lumineux et véranda. Jus frais, power bowls, yaourts-granola ; propose aussi massages ayurvédiques et événements (soirées cinéma, art-thérapie, karaoké). Très bien noté.",
-    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=%C3%948%20Wellness%20Caf%C3%A9%20Avenue%20des%20Kestrels%2C%20Flic-en-Flac%20Mauritius",
-    "filters": [
-      "europeenne",
-      "vegetarien"
-    ],
-    "hours": "Fermé mer, autres jours 8h-20h",
-    "createdAt": "2026-07-26T09:24:03+02:00"
   },
   {
     "id": "fynbos-meeting-place-grand-baie",
@@ -53986,35 +53973,6 @@
     "koteMorisRatingsSource": "estimation"
   },
   {
-    "id": "la-vielle-rouge-mahebourg",
-    "name": "La Vielle Rouge — Mahébourg",
-    "category": "manger-boire",
-    "address": "Coin des rues Hangar et des Mares, Mahébourg",
-    "phone": "+230 631 3980",
-    "website": "",
-    "googleMapsUrl": "https://www.google.com/maps/search/La+Vielle+Rouge+Mahebourg",
-    "lat": -20.4091847,
-    "lng": 57.7110733,
-    "themes": [
-      "restaurants"
-    ],
-    "zone": "sud",
-    "description": "Restaurant convivial de Mahébourg nommé d'après la « vieille rouge », un poisson de l'océan Indien. Cuisine locale et internationale mettant à l'honneur le poisson frais du jour, les currys mauriciens et les grillades, avec des options végétariennes. Service en salle ou en terrasse.",
-    "filters": [
-      "fruits-de-mer",
-      "mauricienne"
-    ],
-    "hours": "Tlj 11h-15h",
-    "createdAt": "2026-08-13T05:51:27+02:00",
-    "koteMorisRatings": {
-      "gout": 4,
-      "qualitePrix": 4,
-      "accueil": 3,
-      "cadre": 3
-    },
-    "koteMorisRatingsSource": "estimation"
-  },
-  {
     "id": "bato-constance-maquettes-mahebourg",
     "name": "Bato Constance — Maquettes de bateaux (Mahébourg)",
     "category": "acheter-equiper",
@@ -54984,9 +54942,10 @@
     "zone": "nord",
     "priceRange": "prix-moyen",
     "hours": "Tous les jours 11h-21h30",
-    "description": "Brasserie chic de Grand Baie La Croisette, sous la houlette du chef français Stéphane : tartare de bœuf, foie gras maison, confit de canard, moules-frites le vendredi et grillades sur pierre de lave. Très bien notée (4,5/5, 330 avis, #24 des restaurants de Grand Baie).",
+    "description": "Brasserie chic de Grand Baie La Croisette, sous la houlette du chef français Stéphane : tartare de bœuf, foie gras maison, confit de canard, moules-frites le vendredi et grillades sur pierre de lave.",
     "filters": [
-      "bars"
+      "bars",
+      "grillades"
     ],
     "lat": -20.022258,
     "lng": 57.578756,
@@ -54996,34 +54955,8 @@
       "accueil": 5,
       "cadre": 3
     },
-    "koteMorisRatingsSource": "estimation"
-  },
-  {
-    "id": "restaurant-souvenir-trou-aux-biches",
-    "name": "Restaurant Souvenir",
-    "category": "manger-boire",
-    "address": "En face du poste de police, Trou aux Biches",
-    "phone": "+230 5291 1440",
-    "themes": [
-      "restaurants"
-    ],
-    "zone": "nord",
-    "priceRange": "bon-marche",
-    "description": "Adresse locale de Trou aux Biches, en face du poste de police, spécialisée dans le bol renversé — riz, viande et légumes mijotés démoulés en couches, plat convivial typique de la cuisine mauricienne. Fermé le jeudi.",
-    "filters": [
-      "mauricienne"
-    ],
-    "hours": "Ven-Mer 9h-23h, fermé jeu",
-    "lat": -20.0358431,
-    "lng": 57.5457175,
-    "createdAt": "2026-08-16T15:56:43+02:00",
-    "koteMorisRatings": {
-      "gout": 4,
-      "qualitePrix": 5,
-      "accueil": 4,
-      "cadre": 2
-    },
-    "koteMorisRatingsSource": "estimation"
+    "koteMorisRatingsSource": "estimation",
+    "googleMapsUrl": "https://www.google.com/maps/place/Red+Restaurant/@-20.022258,57.578756,17z/data=!3m1!4b1!4m6!3m5!1s0x217dab1301660143:0x9a507802a0eb8ce6!8m2!3d-20.022258!4d57.578756"
   },
   {
     "id": "deja-vu-grand-baie",
@@ -59887,34 +59820,6 @@
       "fruits-de-mer"
     ],
     "createdAt": "2026-09-13T04:56:50.068Z"
-  },
-  {
-    "id": "red-restaurant-grand-baie",
-    "name": "Red Restaurant",
-    "category": "manger-boire",
-    "address": "La Croisette, Grand Baie",
-    "phone": "+230 269 7478",
-    "website": "",
-    "googleMapsUrl": "https://www.google.com/maps/place/Red+Restaurant/@-20.022258,57.578756,17z/data=!3m1!4b1!4m6!3m5!1s0x217dab1301660143:0x9a507802a0eb8ce6!8m2!3d-20.022258!4d57.578756",
-    "lat": -20.022258,
-    "lng": 57.578756,
-    "themes": [
-      "restaurants"
-    ],
-    "hours": "Tlj 11h30-21h30 (ven-sam jusqu'à 22h30)",
-    "priceRange": "prix-moyen",
-    "zone": "nord",
-    "description": "Restaurant du centre commercial La Croisette spécialisé dans les grillades (bavette, faux-filet) et moules-frites, avec une carte street-food.",
-    "filters": [
-      "grillades"
-    ],
-    "createdAt": "2026-09-13T04:56:50.068Z",
-    "koteMorisRatings": {
-      "gout": 5,
-      "accueil": 5,
-      "cadre": 3
-    },
-    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "le-mediterranee",
