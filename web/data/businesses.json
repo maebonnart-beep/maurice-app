@@ -12374,7 +12374,14 @@
       "fruits-de-mer"
     ],
     "hours": "Tous les jours 11h30-22h",
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 4,
+      "accueil": 5,
+      "cadre": 4
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "yo-l-artisan",
@@ -12507,7 +12514,13 @@
       "indienne"
     ],
     "hours": "Dim-Jeu 11h-21h, Ven-Sam 11h-22h",
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "koteMorisRatings": {
+      "gout": 5,
+      "accueil": 5,
+      "cadre": 4
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "sitar-indian-restaurant",
@@ -12528,7 +12541,14 @@
     "filters": [
       "indienne"
     ],
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 3,
+      "accueil": 4,
+      "cadre": 4
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "restaurant-le-courtyard",
@@ -12577,7 +12597,14 @@
       "italien"
     ],
     "hours": "Dim-Mar 11h-16h & Mer-Sam 11h-22h",
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "koteMorisRatings": {
+      "gout": 3,
+      "qualitePrix": 3,
+      "accueil": 4,
+      "cadre": 4
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "le-sapin-d-or",
@@ -12599,7 +12626,14 @@
       "mauricienne"
     ],
     "hours": "Tlj 11h-22h",
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "koteMorisRatings": {
+      "gout": 4,
+      "qualitePrix": 4,
+      "accueil": 4,
+      "cadre": 3
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "eureka-la-maison-creole",
@@ -12669,7 +12703,14 @@
       "asiatique"
     ],
     "hours": "Mar-Dim 11h-14h30 & 18h30-21h, fermé lun",
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "koteMorisRatings": {
+      "gout": 4,
+      "qualitePrix": 5,
+      "accueil": 4,
+      "cadre": 2
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "la-case-75",
@@ -12691,7 +12732,14 @@
       "europeenne"
     ],
     "hours": "Mar-Dim 11h-21h, fermé lun",
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "koteMorisRatings": {
+      "gout": 3,
+      "qualitePrix": 2,
+      "accueil": 3,
+      "cadre": 4
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "red-phoenix-restaurant",
@@ -12712,7 +12760,14 @@
       "asiatique"
     ],
     "hours": "Lun-Sam 11h-15h & 18h-22h, fermé dim",
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "koteMorisRatings": {
+      "gout": 4,
+      "qualitePrix": 5,
+      "accueil": 4,
+      "cadre": 3
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "food-sensei",
@@ -12754,7 +12809,14 @@
     "filters": [
       "asiatique"
     ],
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "koteMorisRatings": {
+      "gout": 4,
+      "qualitePrix": 3,
+      "accueil": 3,
+      "cadre": 4
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "nobby-s-resto-bar",
@@ -12816,7 +12878,13 @@
     "filters": [
       "asiatique"
     ],
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "koteMorisRatings": {
+      "gout": 4,
+      "qualitePrix": 3,
+      "accueil": 3
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "rozi-darbarr-restaurant",
@@ -12836,7 +12904,14 @@
     "filters": [
       "indienne"
     ],
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 4,
+      "accueil": 5,
+      "cadre": 3
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "kono-grills",
@@ -12878,7 +12953,14 @@
       "europeenne"
     ],
     "hours": "Lun-Ven 9h-22h, Sam 11h-22h, fermé dim",
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "koteMorisRatings": {
+      "gout": 4,
+      "qualitePrix": 4,
+      "accueil": 5,
+      "cadre": 5
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "la-case-du-pecheur",
@@ -12939,7 +13021,14 @@
     "filters": [
       "asiatique"
     ],
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "koteMorisRatings": {
+      "gout": 4,
+      "qualitePrix": 3,
+      "accueil": 4,
+      "cadre": 4
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "beyond-burgers",
@@ -13051,7 +13140,14 @@
       "tables-exception",
       "indienne"
     ],
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "koteMorisRatings": {
+      "gout": 4,
+      "qualitePrix": 3,
+      "accueil": 3,
+      "cadre": 4
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "yum-cha-restaurant",
@@ -13072,7 +13168,14 @@
       "asiatique"
     ],
     "hours": "Tlj 11h-22h",
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "koteMorisRatings": {
+      "gout": 2,
+      "qualitePrix": 4,
+      "accueil": 2,
+      "cadre": 3
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "chinese-wok-restaurant",
@@ -39916,7 +40019,14 @@
     "filters": [
       "indienne"
     ],
-    "createdAt": "2026-07-25T16:48:39+02:00"
+    "createdAt": "2026-07-25T16:48:39+02:00",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "accueil": 4,
+      "cadre": 2
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "padharo-sa-jains-little-india-quatre-bornes",
@@ -39939,7 +40049,13 @@
       "indienne",
       "vegetarien"
     ],
-    "createdAt": "2026-07-25T16:48:39+02:00"
+    "createdAt": "2026-07-25T16:48:39+02:00",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "accueil": 4
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "nenban-indian-restaurant-bagatelle",
@@ -40231,7 +40347,14 @@
     "filters": [
       "asiatique"
     ],
-    "createdAt": "2026-07-26T09:11:55+02:00"
+    "createdAt": "2026-07-26T09:11:55+02:00",
+    "koteMorisRatings": {
+      "gout": 4,
+      "qualitePrix": 4,
+      "accueil": 5,
+      "cadre": 3
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "lao-zhao-hotpot-caudan",
@@ -40274,7 +40397,14 @@
     "filters": [
       "asiatique"
     ],
-    "createdAt": "2026-07-26T09:11:55+02:00"
+    "createdAt": "2026-07-26T09:11:55+02:00",
+    "koteMorisRatings": {
+      "gout": 4,
+      "qualitePrix": 5,
+      "accueil": 2,
+      "cadre": 2
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "yuzu-caudan-port-louis",
@@ -40297,7 +40427,14 @@
     ],
     "phone": "+230 202 4000",
     "website": "https://ninetysixhotels.com/labourdonnais-waterfront-hotel-port-louis-mauritius.html",
-    "createdAt": "2026-07-26T09:11:55+02:00"
+    "createdAt": "2026-07-26T09:11:55+02:00",
+    "koteMorisRatings": {
+      "gout": 4,
+      "qualitePrix": 2,
+      "accueil": 5,
+      "cadre": 4
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "bento-sushi-grand-baie",
@@ -40713,7 +40850,14 @@
       "vegetarien",
       "indienne"
     ],
-    "createdAt": "2026-07-26T12:14:26+02:00"
+    "createdAt": "2026-07-26T12:14:26+02:00",
+    "koteMorisRatings": {
+      "gout": 4,
+      "qualitePrix": 5,
+      "accueil": 5,
+      "cadre": 3
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "namo-india-belle-rose",
@@ -40850,7 +40994,13 @@
     "filters": [
       "grillades"
     ],
-    "createdAt": "2026-07-27T12:08:10+02:00"
+    "createdAt": "2026-07-27T12:08:10+02:00",
+    "koteMorisRatings": {
+      "gout": 5,
+      "accueil": 4,
+      "cadre": 4
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "cafe-international-pointe-aux-biches",
@@ -41208,7 +41358,14 @@
     "filters": [
       "cafes-terrasses"
     ],
-    "createdAt": "2026-07-29T06:15:44+02:00"
+    "createdAt": "2026-07-29T06:15:44+02:00",
+    "koteMorisRatings": {
+      "gout": 3,
+      "qualitePrix": 2,
+      "accueil": 4,
+      "cadre": 5
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "cafe-de-la-presse-port-louis",
@@ -41228,7 +41385,14 @@
     "filters": [
       "cafes-terrasses"
     ],
-    "createdAt": "2026-07-29T06:15:44+02:00"
+    "createdAt": "2026-07-29T06:15:44+02:00",
+    "koteMorisRatings": {
+      "gout": 4,
+      "qualitePrix": 3,
+      "accueil": 4,
+      "cadre": 4
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "mugg-and-bean-bo-valon-mahebourg",
@@ -54523,7 +54687,14 @@
     "hours": "Lun-Jeu 9h30-20h30, Ven-Sam 9h30-22h, Dim & jours fériés 9h30-15h",
     "lat": -20.2245789,
     "lng": 57.4963666,
-    "createdAt": "2026-08-16T15:56:43+02:00"
+    "createdAt": "2026-08-16T15:56:43+02:00",
+    "koteMorisRatings": {
+      "gout": 4,
+      "qualitePrix": 3,
+      "accueil": 2,
+      "cadre": 4
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "wat-cha-ri",
