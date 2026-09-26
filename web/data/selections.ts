@@ -779,7 +779,7 @@ export const SELECTIONS: Selection[] = [
       "jl-cuisine-passion",
       "cuisinier-ile-maurice",
       "mamie-sophie-table-hote-camp-ithier",
-      "les-palmiers-chez-dev-chamarel",
+      "restaurant-les-palmiers-chez-dev",
       "desmarais-experience",
       "la-maison-d-ete",
     ],
