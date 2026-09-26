@@ -40722,11 +40722,17 @@
     "createdAt": "2026-07-26T09:24:03+02:00",
     "koteMorisRatings": {
       "gout": 5,
-      "qualitePrix": 5,
-      "accueil": 4,
-      "cadre": 4
+      "accueil": 5,
+      "cadre": 5
     },
-    "koteMorisRatingsSource": "estimation"
+    "koteMorisRatingsSource": "visite",
+    "photoUrl": "/photos/Fynbos (1).jpeg",
+    "photoUrls": [
+      "/photos/Fynbos (1).jpeg",
+      "/photos/Fynbos (2).jpeg",
+      "/photos/Fynbos (3).jpeg"
+    ],
+    "koteMorisComment": "Une petite terrasse agréable, cachée de la route au bord du chemin Vingt Pieds, avec un accueil anglophone sympa et un service plutôt efficace. On y mange healthy et savoureux, avec des portions correctes mais pas copieuses. Le bémol, c'est l'addition : clairement au-dessus de ce qui se pratique à Maurice (smoothie à 440 Rs). Les produits (laits végétaux, yaourt, pain sans gluten) la justifient, mais à prendre en compte avant de venir."
   },
   {
     "id": "desirata-boudoir-gourmand-quatre-bornes",
