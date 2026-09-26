@@ -31599,15 +31599,28 @@
     "themes": [
       "livraisons"
     ],
-    "badge": "selection",
     "zone": "nord",
-    "description": "Cabane de plage à Trou-aux-Biches, cuisine créole et fruits de mer (poisson frais, crustacés, plat du jour).",
+    "description": "Mini cabanon de plage à Trou-aux-Biches qui dresse quelques tables à l'ombre d'un immense badamier, face à l'eau turquoise et aux bateaux de pêche. Cuisine créole et fruits de mer : poisson frais, crustacés, plat du jour.",
     "hours": "Lun-Sam 11h-16h (fermé le dimanche)",
     "filters": [
       "mauricienne",
       "fruits-de-mer"
     ],
-    "createdAt": "2026-07-12T16:37:31+02:00"
+    "createdAt": "2026-07-12T16:37:31+02:00",
+    "koteMorisRatings": {
+      "gout": 5,
+      "accueil": 5,
+      "cadre": 5
+    },
+    "koteMorisRatingsSource": "visite",
+    "photoUrl": "/photos/Chez Flipper (1).jpeg",
+    "photoUrls": [
+      "/photos/Chez Flipper (1).jpeg",
+      "/photos/Chez Flipper (2).jpeg",
+      "/photos/Chez Flipper (3).jpeg",
+      "/photos/Chez Flipper (4).jpeg"
+    ],
+    "koteMorisComment": "Un mini cabanon qui dresse une table à l'ombre d'un immense badamier, avec une vue splendide sur l'eau turquoise et les bateaux de pêche. L'ambiance snack tranche avec le contenu de l'assiette : poisson frais et très bien cuisiné (légumes grillés, sauce), servi avec des tagliatelles de légumes et un bol de riz (pas assaisonné). Un bon repas, mais rien d'exceptionnel. Le bémol : une note un peu salée pour le cadre « snack » (plat de poisson à 850 Rs, samossas à 250 Rs les 8), avec des prix de restaurant en salle."
   },
   {
     "id": "maharaja-mithai",
