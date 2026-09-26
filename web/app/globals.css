@@ -16,6 +16,17 @@
   --accent: #f4c95d;
   --on-accent: #133c40;
 
+  /* Fleurs de frangipanier Koté Moris : une couleur par critère souligné (5/5).
+     Le blanc (cadre) garde un contour gris pour rester visible sur fond clair. */
+  --flower-gout: #e24b4a;
+  --flower-gout-stroke: #a32d2d;
+  --flower-qualite-prix: #efa327;
+  --flower-qualite-prix-stroke: #b87412;
+  --flower-cadre: #ffffff;
+  --flower-cadre-stroke: #a9b3b1;
+  --flower-accueil: #ed93b1;
+  --flower-accueil-stroke: #c9577f;
+
   /* Texte et icônes posés sur la teinte à 15 % d'une couleur de catégorie
      (puces rubrique, tuiles) : plus foncé en clair, plus clair en sombre, ≥ 4,5:1. */
   --cat-manger-boire-text: #ba332a;
@@ -57,6 +68,11 @@
     --on-primary: #071c1e;
     --accent: #f4c95d;
     --on-accent: #133c40;
+
+    --flower-gout-stroke: #f09595;
+    --flower-qualite-prix-stroke: #fac775;
+    --flower-cadre-stroke: #ffffff;
+    --flower-accueil-stroke: #f4c0d1;
 
     --cat-manger-boire-text: #e07b74;
     --cat-sortir-decouvrir-text: #f07053;

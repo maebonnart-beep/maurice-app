@@ -4,15 +4,8 @@ import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import type { Business } from "@/lib/types";
 import { CATEGORY_MAP } from "@/data/categories";
-import { FrangipaniRating } from "@/components/ui/FrangipaniRating";
-import {
-  RATING_CRITERIA,
-  RATED_THEMES,
-  LEVEL_THRESHOLDS,
-  scoreFromRatings,
-  levelFor,
-  ESTIMATION_MAX_LEVEL,
-} from "@/lib/rating";
+import { CriteriaFlowers, ESTIMATION_NOTE } from "@/components/ui/FrangipaniRating";
+import { RATING_CRITERIA, RATED_THEMES, HIGHLIGHT_NOTE, scoreFromRatings } from "@/lib/rating";
 
 const COMMON_FIELDS: { key: keyof Business; label: string }[] = [
   { key: "name", label: "Nom" },
@@ -258,26 +251,20 @@ export default function AdminFichesPage() {
           </label>
 
           {selected.themes?.some((t) => RATED_THEMES.includes(t)) && (() => {
-            const score = scoreFromRatings(ratingsToObject(ratings) ?? undefined);
-            const level = levelFor(score, {
-              badge: (form.badge || undefined) as Business["badge"],
-              source: ratingsSource,
-              themes: selected.themes,
-            });
+            const currentRatings = ratingsToObject(ratings) ?? undefined;
+            const score = scoreFromRatings(currentRatings);
             return (
               <fieldset className="rounded-lg border border-border p-3 space-y-2">
                 <legend className="px-1 text-sm font-medium">Note Koté Moris</legend>
                 <p className="text-xs text-muted m-0">
                   Notes 1 à 5, à la main (Google/TripAdvisor : repère de lecture uniquement, jamais recopiés).
-                  Seuils : ≥ {LEVEL_THRESHOLDS[3]} → 3 fleurs, ≥ {LEVEL_THRESHOLDS[2]} → 2 fleurs, en dessous
-                  → interne (non affiché).
+                  Une fleur de couleur par critère noté {HIGHLIGHT_NOTE}/5 (« mérite d&apos;être souligné ») ;
+                  les autres notes servent seulement au tri.
                 </p>
-                <div className="grid grid-cols-2 sm:grid-cols-5 gap-2">
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
                   {RATING_CRITERIA.map((c) => (
                     <label key={c.key} className="block text-xs">
-                      <span className="block text-muted mb-1">
-                        {c.label} ({Math.round(c.weight * 100)} %)
-                      </span>
+                      <span className="block text-muted mb-1">{c.label}</span>
                       <select
                         value={ratings[c.key] || ""}
                         onChange={(e) => {
@@ -296,26 +283,26 @@ export default function AdminFichesPage() {
                     </label>
                   ))}
                 </div>
-                <p className="text-sm m-0 flex items-center gap-2">
-                  {form.badge === "selection" ? (
-                    <>
-                      <span>Sélection Koté Moris → 3 fleurs d&apos;office</span>
-                      <FrangipaniRating level={3} size={16} />
-                    </>
-                  ) : score === null ? (
-                    <span className="text-muted">Pas encore noté</span>
+                <div className="text-sm m-0 flex flex-wrap items-center gap-x-3 gap-y-1">
+                  {score === null ? (
+                    <span className="text-muted">
+                      Pas encore noté{form.badge === "selection" && " (badge Sélection affiché seul, sans fleurs)"}
+                    </span>
                   ) : (
                     <>
-                      <span>
-                        Score : <strong>{score}</strong>/100 · niveau {level}
-                        {level < 2 && " (non affiché)"}
-                        {ratingsSource === "estimation" &&
-                          ` · estimation avis en ligne (max ${ESTIMATION_MAX_LEVEL} fleurs ; modifier une note = visite)`}
+                      <span className="text-muted">Affiché :</span>
+                      {currentRatings && Object.values(currentRatings).includes(HIGHLIGHT_NOTE) ? (
+                        <CriteriaFlowers ratings={currentRatings} source={ratingsSource} size={16} withLabels />
+                      ) : (
+                        <span className="text-muted">aucune fleur (aucun critère à {HIGHLIGHT_NOTE}/5)</span>
+                      )}
+                      <span className="text-xs text-muted">
+                        · score de tri {score}/100
+                        {ratingsSource === "estimation" && ` · ${ESTIMATION_NOTE} (modifier une note = visite)`}
                       </span>
-                      <FrangipaniRating level={level} size={16} />
                     </>
                   )}
-                </p>
+                </div>
               </fieldset>
             );
           })()}

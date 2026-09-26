@@ -20,7 +20,7 @@ import { ProviderTypeBadge, PremiumSellerBadge } from "@/components/ui/Badge";
 import { BackButton } from "@/components/ui/BackButton";
 import { MarketplaceHeader } from "@/components/ui/MarketplaceHeader";
 import { FavoriteButton } from "@/components/ui/FavoriteButton";
-import { FrangipaniRating } from "@/components/ui/FrangipaniRating";
+import { CriteriaFlowers } from "@/components/ui/FrangipaniRating";
 import { QuickAlertButton } from "@/components/ui/QuickAlertButton";
 import { FilterDropdown, type DropdownOption } from "@/components/ui/FilterDropdown";
 import { UniversCard } from "@/components/ui/UniversCard";
@@ -311,15 +311,15 @@ export default function DesignSystemPage() {
 
       <Section
         title="Classement Koté Moris"
-        hint="Fleurs de frangipanier (FrangipaniRating) : 3 = incontournable, 2 = recommandé ; le niveau 1 n'est pas affiché."
+        hint="CriteriaFlowers : une fleur de frangipanier colorée par critère noté 5/5 (goût, qualité-prix, cadre, accueil et service). Tokens --flower-* dans globals.css."
       >
-        <Row label="Carte (13 px)">
-          <FrangipaniRating level={3} size={13} />
-          <FrangipaniRating level={2} size={13} />
+        <Row label="Les 4 critères (fiche)">
+          <CriteriaFlowers ratings={{ gout: 5, qualitePrix: 5, cadre: 5, accueil: 5 }} size={16} withLabels />
         </Row>
-        <Row label="Fiche détail (16 px)">
-          <FrangipaniRating level={3} size={16} />
-          <FrangipaniRating level={2} size={16} />
+        <Row label="Carte (13 px)">
+          <CriteriaFlowers ratings={{ gout: 5, qualitePrix: 4, cadre: 4, accueil: 5 }} size={13} />
+          <CriteriaFlowers ratings={{ gout: 4, qualitePrix: 5, cadre: 3, accueil: 2 }} size={13} />
+          <CriteriaFlowers ratings={{ gout: 5, qualitePrix: 5, cadre: 5, accueil: 5 }} size={13} />
         </Row>
       </Section>
 

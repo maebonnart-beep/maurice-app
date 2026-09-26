@@ -7,26 +7,49 @@ import type { Business, KoteMorisRatings } from "@/lib/types";
  * repère lors de la notation manuelle.
  */
 export const RATING_CRITERIA: { key: keyof KoteMorisRatings; label: string; weight: number }[] = [
-  { key: "gout", label: "Goût / qualité", weight: 0.35 },
-  { key: "qualitePrix", label: "Rapport qualité-prix", weight: 0.25 },
-  { key: "accueil", label: "Accueil / service", weight: 0.15 },
-  { key: "cadre", label: "Cadre / ambiance", weight: 0.15 },
-  { key: "regularite", label: "Régularité", weight: 0.1 },
+  { key: "gout", label: "Goût / qualité de la nourriture", weight: 0.35 },
+  { key: "qualitePrix", label: "Qualité-prix", weight: 0.25 },
+  { key: "cadre", label: "Cadre", weight: 0.15 },
+  { key: "accueil", label: "Accueil et service", weight: 0.15 },
 ];
+
+/**
+ * Affichage public : une fleur de frangipanier par critère, chacun sa couleur
+ * (tokens --flower-* dans globals.css), montrée seulement quand le critère
+ * mérite d'être souligné (note = HIGHLIGHT_NOTE).
+ */
+export const FLOWER_CRITERIA: { key: keyof KoteMorisRatings; label: string; color: string; stroke: string }[] = [
+  { key: "gout", label: "Goût", color: "var(--flower-gout)", stroke: "var(--flower-gout-stroke)" },
+  { key: "qualitePrix", label: "Qualité-prix", color: "var(--flower-qualite-prix)", stroke: "var(--flower-qualite-prix-stroke)" },
+  { key: "cadre", label: "Cadre", color: "var(--flower-cadre)", stroke: "var(--flower-cadre-stroke)" },
+  { key: "accueil", label: "Accueil et service", color: "var(--flower-accueil)", stroke: "var(--flower-accueil-stroke)" },
+];
+
+export const HIGHLIGHT_NOTE = 5;
+
+export type FlowerCriterion = (typeof FLOWER_CRITERIA)[number];
+
+/** Critères soulignés (notés HIGHLIGHT_NOTE), dans l'ordre d'affichage. Vide si rien n'est noté. */
+export function highlightedFromRatings(ratings?: KoteMorisRatings): FlowerCriterion[] {
+  if (!ratings) return [];
+  return FLOWER_CRITERIA.filter((c) => ratings[c.key] === HIGHLIGHT_NOTE);
+}
+
+export function highlightedCriteria(b: Business): FlowerCriterion[] {
+  return highlightedFromRatings(b.koteMorisRatings);
+}
 
 /** Rubriques couvertes par la grille (pensée pour la restauration). */
 export const RATED_THEMES = ["restaurants", "cafes-bars-glaciers"];
 
-/** Score minimal (sur 100) pour chaque niveau affiché. En dessous : niveau 1, interne seulement. */
+/**
+ * Score/niveau global : ne sert plus qu'au tri (liste, /mon-plan) — l'affichage
+ * public passe par les fleurs par critère ci-dessus.
+ * Score minimal (sur 100) pour chaque niveau. En dessous : niveau 1.
+ */
 export const LEVEL_THRESHOLDS = { 3: 85, 2: 70 } as const;
 
 export type KoteMorisLevel = 0 | 1 | 2 | 3;
-
-/** Libellés des niveaux affichés (infobulle / lecteur d'écran — visuellement on ne montre que des fleurs). */
-export const LEVEL_LABELS: Record<2 | 3, string> = {
-  3: "Incontournable Koté Moris",
-  2: "Recommandé par Koté Moris",
-};
 
 /** Moyenne pondérée des critères renseignés, ramenée sur 100 (1 → 0, 5 → 100). Null si rien n'est noté. */
 export function scoreFromRatings(ratings?: KoteMorisRatings): number | null {
@@ -57,9 +80,9 @@ export function koteMorisScore(b: Business): number | null {
 export const ESTIMATION_MAX_LEVEL: KoteMorisLevel = 2;
 
 /**
- * Niveau affiché/trié d'une fiche :
- * - badge « Sélection Koté Moris » → 3 fleurs d'office (reco éditoriale) ;
- * - notes estimées (koteMorisRatingsSource "estimation") → plafonnées à 2 fleurs ;
+ * Niveau de tri d'une fiche (non affiché) :
+ * - badge « Sélection Koté Moris » → niveau 3 d'office (reco éditoriale) ;
+ * - notes estimées (koteMorisRatingsSource "estimation") → plafonnées au niveau 2 ;
  * - notes issues d'une visite → niveau calculé sans plafond.
  */
 export function levelFor(
