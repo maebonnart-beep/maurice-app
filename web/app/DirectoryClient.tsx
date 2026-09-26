@@ -2221,13 +2221,8 @@ export default function DirectoryClient({
                           {b.label}
                         </span>
                         <span
-                          className="text-[12.5px] lg:text-[14px] font-semibold leading-snug text-center max-w-[118px] lg:max-w-[180px] px-2 py-1 rounded-xl text-primary-deep"
-                          style={{
-                            background: "color-mix(in srgb, var(--surface) 45%, transparent)",
-                            backdropFilter: "blur(10px)",
-                            WebkitBackdropFilter: "blur(10px)",
-                            textShadow: "0 0 5px rgba(255,255,255,.8)",
-                          }}
+                          className="text-[12.5px] lg:text-[14px] font-extrabold leading-snug text-center max-w-[118px] lg:max-w-[180px] text-white"
+                          style={{ textShadow: "0 1px 3px rgba(4,50,58,.9), 0 0 8px rgba(4,50,58,.7)" }}
                         >
                           {b.hint}
                         </span>
