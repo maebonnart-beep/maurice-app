@@ -12,7 +12,7 @@ import { SELECTIONS, SELECTION_GROUP_META } from "@/data/selections";
 import type { SelectionGroup, SelectionIconKey } from "@/data/selections";
 import { fuzzyMatchTokens, tokenize, normalizeText } from "@/lib/fuzzyMatch";
 import { SEARCH_SYNONYMS } from "@/lib/searchSynonyms";
-import { isPastEvent, compareByEventDate, eventColorFor, eventTextColor } from "@/lib/events";
+import { isPastEvent, compareByEventDate } from "@/lib/events";
 import { matchesOpenNow } from "@/lib/openHours";
 import { haversineKm } from "@/lib/geo";
 
@@ -157,10 +157,10 @@ const IMAGE_BADGE_KEYS = new Set(["selection", "kids-friendly"]);
 // Accueil → bandeau « Seconde main » : visuels d'illustration (objets génériques, Pexels
 // libre de droits) utilisés tant qu'il n'y a pas assez de vraies annonces avec photo.
 const SECONDE_MAIN_ILLUSTRATIONS = [
-  "https://images.pexels.com/photos/18953479/pexels-photo-18953479.jpeg?auto=compress&cs=tinysrgb&w=200",
-  "https://images.pexels.com/photos/7480783/pexels-photo-7480783.jpeg?auto=compress&cs=tinysrgb&w=200",
-  "https://images.pexels.com/photos/32046500/pexels-photo-32046500.jpeg?auto=compress&cs=tinysrgb&w=200",
-  "https://images.pexels.com/photos/37585377/pexels-photo-37585377.jpeg?auto=compress&cs=tinysrgb&w=200",
+  "https://images.pexels.com/photos/18953479/pexels-photo-18953479.jpeg?auto=compress&cs=tinysrgb&w=400",
+  "https://images.pexels.com/photos/7480783/pexels-photo-7480783.jpeg?auto=compress&cs=tinysrgb&w=400",
+  "https://images.pexels.com/photos/32046500/pexels-photo-32046500.jpeg?auto=compress&cs=tinysrgb&w=400",
+  "https://images.pexels.com/photos/37585377/pexels-photo-37585377.jpeg?auto=compress&cs=tinysrgb&w=400",
 ];
 
 const UNCLASSIFIED = "__unclassified__";
@@ -225,12 +225,6 @@ const RUBRIQUE_CATEGORY_MAP: Record<string, CategoryKey> = Object.fromEntries(
   Object.entries(SUBCATEGORIES).flatMap(([cat, subs]) =>
     (subs ?? []).map((s) => [s.key, cat as CategoryKey])
   )
-);
-
-// Emoji par option de filtre (ex. "concert" → 🎤, "festival" → 🎪), plus précis
-// que l'emoji de rubrique pour distinguer les types d'événements sur l'accueil.
-const FILTER_OPTION_EMOJI: Record<string, string> = Object.fromEntries(
-  FILTER_GROUPS.flatMap((g) => g.options.map((o) => [o.key, o.emoji]))
 );
 
 // Libellé par option de sous-filtre (ex. "opticiens" → "Opticiens", "pressing-blanchisserie" →
@@ -2592,9 +2586,9 @@ export default function DirectoryClient({
               )}
 
 
-              {/* Premium : un seul bloc (réorganisation du 2026-09-25) —
-                  Événements (prochaines dates) puis Seconde main, avec un
-                  lien unique vers les avantages pour les non-abonnés. */}
+              {/* Premium : Événements puis Seconde main (refonte du 2026-09-26) —
+                  encart teinté + badge rond façon « À la une », avec un
+                  carrousel de cartes photo 4:5 façon « Nos sélections ». */}
               <section className="mt-7" aria-labelledby="accueil-premium-titre">
                 <div className="flex items-center justify-between mb-2.5">
                   <h2 id="accueil-premium-titre" className="flex items-center gap-1.5 text-[16px] font-bold text-ink">
@@ -2610,175 +2604,177 @@ export default function DirectoryClient({
                 <div className="flex flex-col gap-3">
                   <div
                     id="accueil-evenements"
-                    role="button"
-                    tabIndex={0}
-                    onClick={() => {
-                      if (canSeeEventDetail) {
-                        setHomeMode("categories");
-                        setHomeCategory("agenda");
-                        window.scrollTo({ top: 0, behavior: "smooth" });
-                      } else {
-                        window.location.href = "/mon-compte/upgrade";
-                      }
-                    }}
-                    onKeyDown={(e) => {
-                      if (e.key === "Enter" || e.key === " ") {
-                        e.preventDefault();
-                        if (canSeeEventDetail) {
-                          setHomeMode("categories");
-                          setHomeCategory("agenda");
-                          window.scrollTo({ top: 0, behavior: "smooth" });
-                        } else {
-                          window.location.href = "/mon-compte/upgrade";
-                        }
-                      }
-                    }}
-                    aria-label="Voir tous les événements"
-                    className="rounded-2xl p-4 overflow-hidden shadow-card cursor-pointer active:scale-[.99] transition-transform"
-                    style={{ background: "linear-gradient(135deg, #ffd3df 0%, #fff2f5 60%)" }}
+                    className="p-3 rounded-2xl shadow-card"
+                    style={{ background: "linear-gradient(135deg, #ffd3df 0%, #fff4f7 100%)" }}
                   >
-                    <div className="flex items-start justify-between gap-2">
-                      <div className="min-w-0">
+                    <div className="flex items-center justify-between gap-2 mb-2.5">
+                      <div className="flex items-center gap-2.5 min-w-0">
                         <span
-                          className="inline-flex items-center gap-1 px-2 py-1 rounded-pill text-[9.5px] font-bold text-white"
-                          style={{ background: "linear-gradient(135deg, #f5a623, #e88a00)" }}
+                          aria-hidden
+                          className="shrink-0 flex items-center justify-center w-11 h-11 rounded-full text-white shadow-sm"
+                          style={{ background: "#D8497A" }}
                         >
-                          <Crown size={11} weight="fill" aria-hidden /> PREMIUM
+                          <CalendarBlank size={22} weight="fill" />
                         </span>
-                        <p className="mt-2 text-[15px] font-bold leading-tight">Événements à Maurice</p>
-                        <p className="text-[11.5px] text-muted leading-snug mt-0.5">Ne ratez plus rien : concerts, festivals, sorties culturelles et sportives près de chez vous</p>
-                      </div>
-                      <span
-                        aria-hidden
-                        className="shrink-0 flex items-center justify-center w-8 h-8 rounded-full bg-white shadow-sm text-[14px] font-bold"
-                        style={{ color: "#e0567a" }}
-                      >
-                        ›
-                      </span>
-                    </div>
-
-                    {upcomingEvents.length > 0 ? (
-                      <div className="mt-3.5 -mx-1">
-                        <div className="flex overflow-x-auto px-1 pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-                          {upcomingEvents.map((b) => {
-                            const rubrique = (b.themes || [])[0];
-                            const filterEmoji = (b.filters || []).map((f) => FILTER_OPTION_EMOJI[f]).find(Boolean);
-                            const emoji = filterEmoji ?? (rubrique ? RUBRIQUE_MAP[rubrique]?.emoji ?? "🎉" : "🎉");
-                            const eventColor = eventColorFor(b);
-                            const shortDate = b.eventStartDate
-                              ? new Date(b.eventStartDate + "T00:00:00").toLocaleDateString("fr-FR", { day: "numeric", month: "short" })
-                              : null;
-                            return (
-                              <div key={b.id} className="relative shrink-0 w-[150px] mr-3 last:mr-0 flex flex-col items-center">
-                                <span
-                                  className="relative z-10 mb-1.5 px-1.5 py-0.5 rounded-pill text-[10px] font-bold text-on-accent"
-                                  style={{ background: "var(--accent)" }}
-                                >
-                                  {shortDate ?? "—"}
-                                </span>
-                                <div
-                                  className="absolute left-0 top-[27px] h-px"
-                                  style={{ width: "calc(100% + 12px)", background: "var(--border)" }}
-                                  aria-hidden
-                                />
-                                <span
-                                  className="relative z-10 w-2.5 h-2.5 rounded-full mb-2"
-                                  style={{ background: "var(--accent)", boxShadow: "0 0 0 3px var(--surface)" }}
-                                  aria-hidden
-                                />
-                                <button
-                                  onClick={(e) => {
-                                    e.stopPropagation();
-                                    openEvent(b.id);
-                                  }}
-                                  className="relative text-left w-full rounded-2xl overflow-hidden p-3 shadow-card active:scale-[.98] transition-transform"
-                                  style={{ background: `linear-gradient(135deg, color-mix(in srgb, ${eventColor} 20%, var(--surface)) 0%, var(--surface) 75%)`, border: "1px solid var(--border)" }}
-                                >
-                              <span
-                                className="absolute top-2 right-2 flex items-center justify-center w-7 h-7 rounded-full text-[14px] shadow-sm"
-                                style={{ background: "var(--surface)", border: "1px solid var(--border)" }}
-                                aria-hidden
-                              >
-                                {emoji}
-                              </span>
-                              <p className="pr-7 text-[13px] font-bold text-ink leading-tight line-clamp-2">{b.name}</p>
-                              {b.description && (
-                                <p className="mt-1 text-[11px] text-muted leading-snug line-clamp-3">{b.description}</p>
-                              )}
-                              <span
-                                className="mt-2 inline-flex items-center gap-0.5 px-1.5 py-0.5 rounded-pill text-[9.5px] font-bold"
-                                style={{ background: eventColor, color: eventTextColor(eventColor) }}
-                              >
-                                🔒 Premium
-                              </span>
-                                </button>
-                              </div>
-                            );
-                          })}
+                        <div className="min-w-0">
+                          <h3 className="text-[16px] font-bold leading-tight" style={{ color: "#7a2345" }}>Événements à venir</h3>
+                          <p className="text-[11.5px] leading-snug" style={{ color: "#a8365f" }}>Concerts, festivals, sorties près de chez toi</p>
                         </div>
                       </div>
+                      <button
+                        onClick={() => {
+                          if (canSeeEventDetail) {
+                            setHomeMode("categories");
+                            setHomeCategory("agenda");
+                            window.scrollTo({ top: 0, behavior: "smooth" });
+                          } else {
+                            window.location.href = "/mon-compte/upgrade";
+                          }
+                        }}
+                        className="shrink-0 text-[13px] font-semibold active:scale-[.98]"
+                        style={{ color: "#a8365f" }}
+                      >
+                        Voir tout ›
+                      </button>
+                    </div>
+                    {upcomingEvents.length > 0 ? (
+                      <div className="flex gap-3 overflow-x-auto pb-1 -mx-3 px-3 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+                        {upcomingEvents.map((b) => {
+                          const rubrique = (b.themes || [])[0];
+                          const photo =
+                            b.photoUrl ??
+                            (AGENDA_GROUPS.find((g) => g.key === rubrique) ?? AGENDA_GROUPS[0]).photo;
+                          const shortDate = b.eventStartDate
+                            ? new Date(b.eventStartDate + "T00:00:00").toLocaleDateString("fr-FR", { day: "numeric", month: "short" })
+                            : null;
+                          return (
+                            <button
+                              key={b.id}
+                              onClick={() => openEvent(b.id)}
+                              className="relative text-left shrink-0 w-[130px] aspect-[4/5] rounded-2xl overflow-hidden shadow-card bg-surface active:scale-[.98] transition-transform"
+                            >
+                              {/* eslint-disable-next-line @next/next/no-img-element */}
+                              <img src={photo} alt="" aria-hidden loading="lazy" className="absolute inset-0 w-full h-full object-cover" />
+                              <div
+                                className="absolute inset-0"
+                                style={{ background: "linear-gradient(180deg, rgba(0,0,0,0) 45%, rgba(0,0,0,.72) 100%)" }}
+                              />
+                              {shortDate && (
+                                <span
+                                  className="absolute top-1.5 left-1.5 px-1.5 py-0.5 rounded-pill bg-white text-[10.5px] font-bold shadow-sm"
+                                  style={{ color: "#a8365f" }}
+                                >
+                                  {shortDate}
+                                </span>
+                              )}
+                              {!canSeeEventDetail && (
+                                <span
+                                  aria-hidden
+                                  className="absolute top-1.5 right-1.5 flex items-center justify-center w-6 h-6 rounded-full bg-white shadow-sm"
+                                  style={{ color: "#e88a00" }}
+                                >
+                                  <Lock size={12} weight="fill" />
+                                </span>
+                              )}
+                              <span className="absolute inset-x-0 bottom-0 p-2.5">
+                                <span className="block font-serif text-[12px] font-semibold leading-tight text-white line-clamp-2">
+                                  {b.name}
+                                </span>
+                              </span>
+                            </button>
+                          );
+                        })}
+                      </div>
                     ) : (
-                      <p className="mt-3.5 text-[11.5px] font-semibold" style={{ color: "#a8365f" }}>
+                      <p className="text-[11.5px] font-semibold" style={{ color: "#a8365f" }}>
                         Bientôt de nouveaux événements…
                       </p>
                     )}
                   </div>
-                  <Link
-                    id="accueil-seconde-main"
-                    href={canSeeEventDetail ? "/seconde-main" : "/mon-compte/upgrade"}
-                    className="block rounded-2xl p-4 overflow-hidden no-underline text-ink shadow-card active:scale-[.99] transition-transform"
-                    style={{ background: "linear-gradient(135deg, #ffe3b0 0%, #fff7ea 60%)" }}
-                  >
-                    <div className="flex items-start justify-between gap-2">
-                      <div className="min-w-0">
-                        <span
-                          className="inline-flex items-center gap-1 px-2 py-1 rounded-pill text-[9.5px] font-bold text-white"
-                          style={{ background: "linear-gradient(135deg, #f5a623, #e88a00)" }}
-                        >
-                          <Crown size={11} weight="fill" aria-hidden /> PREMIUM
-                        </span>
-                        <p className="mt-2 text-[15px] font-bold leading-tight">Seconde main entre particuliers</p>
-                        <p className="text-[11.5px] text-muted leading-snug mt-0.5">Dénichez de bonnes affaires ou trouvez preneur pour vos objets, en toute confiance entre membres</p>
-                      </div>
-                      <span
-                        className="shrink-0 flex items-center justify-center w-8 h-8 rounded-full bg-white shadow-sm text-[14px] font-bold"
-                        style={{ color: "#e88a00" }}
-                        aria-hidden
-                      >
-                        ›
-                      </span>
-                    </div>
 
-                    {previewListingPhotos.length > 0 ? (
-                      <div className="mt-3.5 flex gap-2 overflow-x-auto pb-0.5 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-                        {previewListingPhotos.slice(0, 8).map((listing) => (
-                          <span
-                            key={listing.id}
-                            className="relative shrink-0 w-[72px] h-[72px] rounded-xl overflow-hidden"
-                            style={{ border: "1px solid rgba(255,255,255,.85)" }}
-                          >
-                            {/* eslint-disable-next-line @next/next/no-img-element */}
-                            <img src={listingPhotoUrl(listing.photos![0].storagePath)} alt="" className="w-full h-full object-cover" />
-                          </span>
-                        ))}
+                  <div
+                    id="accueil-seconde-main"
+                    className="p-3 rounded-2xl shadow-card"
+                    style={{ background: "linear-gradient(135deg, #c9ede6 0%, #f1faf8 100%)" }}
+                  >
+                    <div className="flex items-center justify-between gap-2 mb-2.5">
+                      <div className="flex items-center gap-2.5 min-w-0">
+                        <span
+                          aria-hidden
+                          className="shrink-0 flex items-center justify-center w-11 h-11 rounded-full text-white shadow-sm"
+                          style={{ background: "#2E9E8F" }}
+                        >
+                          <Package size={22} weight="fill" />
+                        </span>
+                        <div className="min-w-0">
+                          <h3 className="text-[16px] font-bold leading-tight" style={{ color: "#155e55" }}>Seconde main</h3>
+                          <p className="text-[11.5px] leading-snug" style={{ color: "#227a6f" }}>Bonnes affaires entre membres</p>
+                        </div>
                       </div>
-                    ) : (
-                      // Pas encore assez d'annonces avec photo : quelques visuels d'illustration
-                      // (objets génériques, non liés à de vraies annonces) pour donner le ton.
-                      <div className="mt-3.5 flex gap-2 overflow-x-auto pb-0.5 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-                        {SECONDE_MAIN_ILLUSTRATIONS.map((src) => (
-                          <span
-                            key={src}
-                            className="relative shrink-0 w-[72px] h-[72px] rounded-xl overflow-hidden"
-                            style={{ border: "1px solid rgba(255,255,255,.85)" }}
-                          >
-                            {/* eslint-disable-next-line @next/next/no-img-element */}
-                            <img src={src} alt="" className="w-full h-full object-cover" />
-                          </span>
-                        ))}
-                      </div>
-                    )}
-                  </Link>
+                      <Link
+                        href={canSeeEventDetail ? "/seconde-main" : "/mon-compte/upgrade"}
+                        className="shrink-0 text-[13px] font-semibold no-underline"
+                        style={{ color: "#227a6f" }}
+                      >
+                        Voir tout ›
+                      </Link>
+                    </div>
+                    <div className="flex gap-3 overflow-x-auto pb-1 -mx-3 px-3 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+                      {previewListingPhotos.length > 0
+                        ? previewListingPhotos.slice(0, 8).map((listing) => (
+                            <Link
+                              key={listing.id}
+                              href={canSeeEventDetail ? `/seconde-main/${listing.id}` : "/mon-compte/upgrade"}
+                              className="relative shrink-0 w-[130px] aspect-[4/5] rounded-2xl overflow-hidden shadow-card bg-surface no-underline active:scale-[.98] transition-transform"
+                            >
+                              {/* eslint-disable-next-line @next/next/no-img-element */}
+                              <img
+                                src={listingPhotoUrl(listing.photos![0].storagePath)}
+                                alt=""
+                                aria-hidden
+                                loading="lazy"
+                                className="absolute inset-0 w-full h-full object-cover"
+                              />
+                              <div
+                                className="absolute inset-0"
+                                style={{ background: "linear-gradient(180deg, rgba(0,0,0,0) 45%, rgba(0,0,0,.72) 100%)" }}
+                              />
+                              {!canSeeEventDetail && (
+                                <span
+                                  aria-hidden
+                                  className="absolute top-1.5 right-1.5 flex items-center justify-center w-6 h-6 rounded-full bg-white shadow-sm"
+                                  style={{ color: "#e88a00" }}
+                                >
+                                  <Lock size={12} weight="fill" />
+                                </span>
+                              )}
+                              <span className="absolute inset-x-0 bottom-0 p-2.5">
+                                <span className="block font-serif text-[12px] font-semibold leading-tight text-white line-clamp-2">
+                                  {listing.title}
+                                </span>
+                                {listing.price !== undefined && (
+                                  <span className="block mt-0.5 text-[11px] font-bold text-white/90">
+                                    Rs {listing.price.toLocaleString("fr-FR")}
+                                  </span>
+                                )}
+                              </span>
+                            </Link>
+                          ))
+                        : // Pas encore assez d'annonces avec photo : quelques visuels d'illustration
+                          // (objets génériques, non liés à de vraies annonces) pour donner le ton.
+                          SECONDE_MAIN_ILLUSTRATIONS.map((src) => (
+                            <Link
+                              key={src}
+                              href={canSeeEventDetail ? "/seconde-main" : "/mon-compte/upgrade"}
+                              aria-label="Voir les annonces seconde main"
+                              className="relative shrink-0 w-[130px] aspect-[4/5] rounded-2xl overflow-hidden shadow-card bg-surface active:scale-[.98] transition-transform"
+                            >
+                              {/* eslint-disable-next-line @next/next/no-img-element */}
+                              <img src={src} alt="" aria-hidden loading="lazy" className="absolute inset-0 w-full h-full object-cover" />
+                            </Link>
+                          ))}
+                    </div>
+                  </div>
                 </div>
               </section>
             </div>
