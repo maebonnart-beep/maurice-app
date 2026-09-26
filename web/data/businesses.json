@@ -13238,7 +13238,14 @@
     "filters": [
       "asiatique"
     ],
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "koteMorisRatings": {
+      "gout": 4,
+      "qualitePrix": 4,
+      "accueil": 2,
+      "cadre": 3
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "thirsty-bistro",
@@ -37573,7 +37580,14 @@
       "mauricienne"
     ],
     "hours": "Tous les jours 7h30-22h",
-    "createdAt": "2026-07-20T09:32:16+02:00"
+    "createdAt": "2026-07-20T09:32:16+02:00",
+    "koteMorisRatings": {
+      "gout": 4,
+      "qualitePrix": 4,
+      "accueil": 2,
+      "cadre": 5
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "le-bistrot-de-la-poste",
@@ -40173,7 +40187,13 @@
     "filters": [
       "indienne"
     ],
-    "createdAt": "2026-07-25T16:48:39+02:00"
+    "createdAt": "2026-07-25T16:48:39+02:00",
+    "koteMorisRatings": {
+      "gout": 5,
+      "accueil": 5,
+      "cadre": 4
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "namo-india-port-louis",
@@ -41613,7 +41633,14 @@
     "filters": [
       "cafes-terrasses"
     ],
-    "createdAt": "2026-07-29T06:15:44+02:00"
+    "createdAt": "2026-07-29T06:15:44+02:00",
+    "koteMorisRatings": {
+      "gout": 3,
+      "qualitePrix": 3,
+      "accueil": 3,
+      "cadre": 4
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "editions-le-printemps-curepipe",
