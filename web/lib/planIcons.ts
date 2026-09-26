@@ -63,4 +63,6 @@ export const PLAN_ACTIVITY_ICONS: Record<string, string> = {
 export const PLAN_MEAL_ICONS: Record<string, string> = {
   ...PLAN_OPTION_ICONS,
   tous: "/list-icons/gastronomie.webp",
+  // Pas de repas : juste une pause café.
+  aucun: "/list-icons/cafe.webp",
 };
