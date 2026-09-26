@@ -7,6 +7,7 @@ import { accentColorFor, SpecialBadge, AGENCY_COLOR, PROVIDER_TYPE_INFO } from "
 import { FavoriteButton } from "./FavoriteButton";
 import { AddToListButton } from "./AddToListButton";
 import { CriteriaFlowers } from "./FrangipaniRating";
+import { highlightedCriteria } from "@/lib/rating";
 import { FACT_ICONS, CONTACT_ICONS, iconForKey, subIconFor } from "@/lib/icons";
 import { eventColorFor, eventBannerLabel, eventTextColor } from "@/lib/events";
 import type { Icon } from "@phosphor-icons/react";
@@ -82,6 +83,8 @@ export function BusinessCard({
   hiddenKeys?: Set<string>;
 }) {
   const accentColor = accentColorFor(b.badge, b.isAgency);
+  // Les fiches à fleurs (restos/bars/cafés) n'affichent pas le badge Reco : les fleurs suffisent.
+  const showSelectionBadge = b.badge === "selection" && highlightedCriteria(b).length === 0;
   const price = b.priceRange ? PRICE_RANGES.find((p) => p.key === b.priceRange) : undefined;
   // Type(s) de lieu (rubriques) : chaque rubrique/thème de la fiche est
   // affiché en tag coloré (couleur de la catégorie) pour dire au premier
@@ -147,9 +150,9 @@ export function BusinessCard({
         </p>
       )}
       <div className="relative flex items-center gap-3 p-2.5">
-      {(b.badge === "selection" || b.themes?.includes("kids-friendly")) && (
+      {(showSelectionBadge || b.themes?.includes("kids-friendly")) && (
         <div className="absolute top-1.5 right-1.5 flex items-center gap-1 z-10">
-          {b.badge === "selection" && (
+          {showSelectionBadge && (
             <SpecialBadge variant="selection" className="h-9 w-9 shrink-0 drop-shadow-md" />
           )}
           {b.themes?.includes("kids-friendly") && (

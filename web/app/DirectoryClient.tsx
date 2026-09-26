@@ -57,7 +57,9 @@ import { useAccount } from "@/lib/marketplace/useAccount";
 import { createClient as createSupabaseBrowserClient } from "@/lib/supabase/client";
 import { PREMIUM_PRICE_LABEL, MAX_ACTIVE_LISTINGS, listingPhotoUrl } from "@/lib/marketplace/constants";
 import type { Listing } from "@/lib/marketplace/types";
-import { COUP_DE_COEUR_COLOR } from "@/components/ui/Badge";
+import { COUP_DE_COEUR_COLOR, SpecialBadge } from "@/components/ui/Badge";
+import { CriteriaFlowers } from "@/components/ui/FrangipaniRating";
+import { highlightedCriteria } from "@/lib/rating";
 
 // Couleur dédiée au bandeau « Adresses kids friendly » (accueil) : vert
 // émeraude, distinct du turquoise des coups de cœur mais dans la même
@@ -1090,7 +1092,12 @@ export default function DirectoryClient({
   // chaque paquet restant mélangé — pas de tri figé à l'intérieur d'une rubrique.
   const coupsDeCoeur = useMemo(() => {
     const all = businesses.filter((b) => isEditorialPick(b) && b.photoUrl);
-    const pool = shuffleReady ? shuffled(all) : all;
+    const shuffledAll = shuffleReady ? shuffled(all) : all;
+    // Les fiches avec fleurs en tête (elles illustrent l'encadré « Comment lire nos notes »).
+    const pool = [
+      ...shuffledAll.filter((b) => highlightedCriteria(b).length > 0),
+      ...shuffledAll.filter((b) => highlightedCriteria(b).length === 0),
+    ];
     const preferredKeys = new Set<CategoryKey>(preferences.interests);
     if (preferences.hasKids) preferredKeys.add("famille-travail");
     if (preferredKeys.size === 0) return pool;
@@ -1098,6 +1105,31 @@ export default function DirectoryClient({
     const rest = pool.filter((b) => !preferredKeys.has(b.category));
     return [...matched, ...rest];
   }, [businesses, shuffleReady, preferences]);
+
+  // Accueil → « À la une » : trois sélections de fiches distinctes, choisies par
+  // pastilles (recommandées / tables fleuries / kids friendly).
+  const tablesFleuries = useMemo(() => {
+    const all = businesses.filter((b) => b.photoUrl && highlightedCriteria(b).length > 0);
+    return shuffleReady ? shuffled(all) : all;
+  }, [businesses, shuffleReady]);
+  const kidsAdresses = useMemo(() => {
+    const all = businesses.filter((b) => (b.themes || []).includes("kids-friendly") && b.photoUrl);
+    return shuffleReady ? shuffled(all) : all;
+  }, [businesses, shuffleReady]);
+  // Mixte : on alterne recommandées / tables fleuries / kids friendly (sans doublon),
+  // pour que chaque type reste visible dans les 12 cartes.
+  const uneList = useMemo(() => {
+    const seen = new Set<string>();
+    const out: Business[] = [];
+    const sources = [coupsDeCoeur, tablesFleuries, kidsAdresses];
+    for (let i = 0; out.length < 12 && i < 12; i++) {
+      for (const src of sources) {
+        const b = src[i];
+        if (b && !seen.has(b.id) && out.length < 12) { seen.add(b.id); out.push(b); }
+      }
+    }
+    return out;
+  }, [coupsDeCoeur, tablesFleuries, kidsAdresses]);
 
   // Accueil → « Nouveautés » : fiches ajoutées à l'annuaire dans les 30 derniers
   // jours (createdAt), en avant-première pour les comptes premium uniquement —
@@ -2434,17 +2466,43 @@ export default function DirectoryClient({
               <p className="text-[12.5px] text-muted mb-2.5">
                 Envie d&apos;inspiration ? On a déjà fait le tri pour toi.
               </p>
+              <details open className="group mb-4 rounded-2xl border-2 border-primary bg-white px-3.5 py-3 shadow-card text-[12.5px] text-muted">
+                <summary className="cursor-pointer list-none text-[15px] font-bold text-primary-deep flex items-center justify-between">
+                  Comment lire nos notes ?
+                  <span className="transition-transform group-open:rotate-90">›</span>
+                </summary>
+                <div className="mt-3 space-y-3.5 leading-snug">
+                  <div>
+                    <p className="text-[13px] font-semibold text-ink">Les fleurs</p>
+                    <p className="mt-0.5">
+                      Pour les bars, restaurants et cafés : une fleur de couleur pour chaque critère validé et approuvé par Koté Moris.
+                    </p>
+                    <div className="mt-2 grid grid-cols-2 gap-x-3 gap-y-1.5">
+                      {([["gout", "Goût"], ["qualitePrix", "Qualité-prix"], ["cadre", "Cadre"], ["accueil", "Accueil et service"]] as const).map(([k, label]) => (
+                        <span key={k} className="inline-flex items-center gap-1.5 text-[12.5px] text-ink">
+                          <CriteriaFlowers ratings={{ [k]: 5 }} size={18} />
+                          {label}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <SpecialBadge variant="selection" className="h-11 w-11 shrink-0" />
+                    <div>
+                      <p className="text-[13px] font-semibold text-ink">Badge Reco</p>
+                      <p>Une adresse que la rédaction Koté Moris recommande, testée et approuvée.</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <SpecialBadge variant="kids-friendly" className="h-11 w-11 shrink-0" />
+                    <div>
+                      <p className="text-[13px] font-semibold text-ink">Badge Kids friendly</p>
+                      <p>Un lieu où les enfants sont les bienvenus et bien accueillis.</p>
+                    </div>
+                  </div>
+                </div>
+              </details>
               <div className="flex gap-3 overflow-x-auto pb-1 -mx-4 px-4 mb-7 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-                {featuredSelections.map((f) => (
-                  <FeaturedSelectionCard
-                    key={f.key}
-                    title={f.title}
-                    photoUrl={f.photoUrl}
-                    badge={f.badge}
-                    onClick={f.onClick}
-                    className="shrink-0 w-[130px]"
-                  />
-                ))}
                 {homeSelections.map((s) => (
                   <button
                     key={s.id}
@@ -2472,69 +2530,122 @@ export default function DirectoryClient({
                 ))}
               </div>
 
-              {/* À la une : aperçu de quelques coups de cœur de la rédaction (fiches).
-                  « Voir tout › » = toutes les fiches badgées « selection ». */}
-              {coupsDeCoeur.length > 0 && (
-                <div
-                  id="accueil-coups-de-coeur"
-                  className="p-3 mb-7 rounded-2xl shadow-card"
-                  style={{
-                    background: `linear-gradient(135deg, color-mix(in srgb, var(--primary-deep) 45%, var(--surface)) 0%, color-mix(in srgb, var(--primary) 10%, var(--surface)) 100%)`,
-                  }}
-                >
-                  <div className="flex items-center justify-between mb-2">
-                    <div className="flex items-center gap-2.5">
-                      {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img src="/badge-selection.png" alt="" aria-hidden className="h-14 w-14 shrink-0" />
+              {/* À la une : trois lignes — recommandées (badge Reco), kids friendly
+                  (badge Kids) et tables fleuries (fleurs). Les fiches à fleurs n'ont
+                  pas de badge Reco : les fleurs suffisent. */}
+              {(() => {
+                const rows = [
+                  {
+                    key: "reco",
+                    tint: "#22b38a",
+                    title: "Nos coups de cœur",
+                    badge: <SpecialBadge variant="selection" className="h-12 w-12 shrink-0" />,
+                    hint: "Testées et approuvées par la rédaction : des lieux, activités et sorties qu'on te conseille les yeux fermés.",
+                    list: coupsDeCoeur.filter((b) => highlightedCriteria(b).length === 0),
+                    onAll: () => { setBrowseAll(true); setFacetBadges(new Set(["selection"])); },
+                  },
+                  {
+                    key: "kids",
+                    tint: "#3aa86e",
+                    title: "Kids friendly",
+                    badge: <SpecialBadge variant="kids-friendly" className="h-12 w-12 shrink-0" />,
+                    hint: "Des lieux où les enfants sont les bienvenus : activités, balades, sorties et tables adaptées aux familles.",
+                    list: kidsAdresses,
+                    onAll: () => {
+                      setNearMe(false);
+                      setBrowseAll(true);
+                      setHomeCategory(null);
+                      setActiveThemes(new Set(["kids-friendly"]));
+                      setResultsView("liste");
+                      window.scrollTo({ top: 0, behavior: "smooth" });
+                    },
+                  },
+                  {
+                    key: "fleurs",
+                    tint: "#2a9d8f",
+                    title: "Les tables recommandées",
+                    badge: (
+                      <span className="h-12 w-12 shrink-0 inline-flex items-center justify-center rounded-full bg-surface shadow-sm">
+                        <CriteriaFlowers ratings={{ gout: 5 }} size={26} />
+                      </span>
+                    ),
+                    hint: "Bars, restaurants et cafés testés par la rédaction. Une fleur par critère validé et approuvé : goût, qualité-prix, cadre, accueil et service.",
+                    list: tablesFleuries,
+                    onAll: undefined as (() => void) | undefined,
+                  },
+                ].filter((r) => r.list.length > 0);
+                if (rows.length === 0) return null;
+                return (
+                  <div id="accueil-coups-de-coeur" className="mb-7 space-y-4">
+                    <div>
                       <h2 className="text-[16px] font-bold text-ink">À la une</h2>
+                      <p className="text-[12.5px] text-muted">
+                        {preferences.interests.length > 0 || preferences.hasKids
+                          ? "Une sélection pensée pour toi, d'après tes préférences (Mon compte)."
+                          : "Nos adresses à ne pas manquer, par type."}
+                      </p>
                     </div>
-                    <button
-                      onClick={() => { setBrowseAll(true); setFacetBadges(new Set(["selection"])); }}
-                      className="shrink-0 text-[13px] font-semibold text-primary-deep active:scale-[.98]"
-                    >
-                      Voir tout ›
-                    </button>
-                  </div>
-                  <div className="flex gap-3 overflow-x-auto pb-1 -mx-3 px-3 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-                    {coupsDeCoeur.slice(0, 12).map((b) => (
+                    {rows.map((r) => (
                       <div
-                        key={b.id}
-                        role="button"
-                        tabIndex={0}
-                        onClick={() => selectFromCard(b.id)}
-                        onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") selectFromCard(b.id); }}
-                        className="relative shrink-0 w-[160px] rounded-card overflow-hidden bg-surface border border-border shadow-card text-left cursor-pointer active:scale-[.98] transition-transform"
+                        key={r.key}
+                        className="p-3 rounded-2xl shadow-card"
+                        style={{ background: `linear-gradient(135deg, color-mix(in srgb, ${r.tint} 38%, var(--surface)) 0%, color-mix(in srgb, ${r.tint} 6%, var(--surface)) 100%)` }}
                       >
-                        <div className="relative h-[110px] bg-primary-tint flex items-center justify-center">
-                          {b.photoUrl ? (
-                            // eslint-disable-next-line @next/next/no-img-element
-                            <img src={b.photoUrl} alt="" className="absolute inset-0 w-full h-full object-cover" />
-                          ) : (
-                            (() => {
-                              const FallbackIcon = iconForKey(b.category);
-                              return FallbackIcon ? (
-                                <FallbackIcon size={30} weight="duotone" className="text-primary-deep opacity-50" aria-hidden />
-                              ) : null;
-                            })()
+                        <div className="flex items-center justify-between mb-2">
+                          <div className="flex items-center gap-2.5 min-w-0">
+                            {r.badge}
+                            <div className="min-w-0">
+                              <h3 className="text-[14.5px] font-bold text-ink">{r.title}</h3>
+                              <p className="text-[11.5px] text-muted leading-snug">{r.hint}</p>
+                            </div>
+                          </div>
+                          {r.onAll && (
+                            <button onClick={r.onAll} className="shrink-0 text-[13px] font-semibold text-primary-deep active:scale-[.98]">
+                              Voir tout ›
+                            </button>
                           )}
-                          <span
-                            className="absolute top-1.5 right-1.5 inline-flex items-center gap-1 px-1.5 py-1 rounded-full bg-surface/90 shadow-sm"
-                            onClick={(e) => e.stopPropagation()}
-                          >
-                            <FavoriteButton id={b.id} size={12.5} />
-                          </span>
                         </div>
-                        <div className="p-2.5">
-                          <p className="text-[13px] font-bold text-ink truncate">{displayName(b.name)}</p>
-                          <p className="text-[11.5px] text-muted truncate">
-                            {CATEGORY_MAP[b.category].label} • {displayCity(b.address)}
-                          </p>
+                        <div className="flex gap-3 overflow-x-auto pb-1 -mx-3 px-3 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+                          {r.list.slice(0, 12).map((b) => (
+                            <div
+                              key={b.id}
+                              role="button"
+                              tabIndex={0}
+                              onClick={() => selectFromCard(b.id)}
+                              onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") selectFromCard(b.id); }}
+                              className="relative shrink-0 w-[160px] rounded-card overflow-hidden bg-surface border border-border shadow-card text-left cursor-pointer active:scale-[.98] transition-transform"
+                            >
+                              <div className="relative h-[110px] bg-primary-tint flex items-center justify-center">
+                                {b.photoUrl && (
+                                  // eslint-disable-next-line @next/next/no-img-element
+                                  <img src={b.photoUrl} alt="" className="absolute inset-0 w-full h-full object-cover" />
+                                )}
+                                <span
+                                  className="absolute top-1.5 right-1.5 inline-flex items-center gap-1 px-1.5 py-1 rounded-full bg-surface/90 shadow-sm"
+                                  onClick={(e) => e.stopPropagation()}
+                                >
+                                  <FavoriteButton id={b.id} size={12.5} />
+                                </span>
+                              </div>
+                              <div className="p-2.5">
+                                <p className="text-[13px] font-bold text-ink truncate">{displayName(b.name)}</p>
+                                <p className="text-[11.5px] text-muted truncate">
+                                  {CATEGORY_MAP[b.category].label} • {displayCity(b.address)}
+                                </p>
+                                {r.key === "fleurs" && (
+                                  <div className="mt-1 h-[16px]">
+                                    <CriteriaFlowers business={b} size={15} className="inline-flex items-center gap-0.5" />
+                                  </div>
+                                )}
+                              </div>
+                            </div>
+                          ))}
                         </div>
                       </div>
                     ))}
                   </div>
-                </div>
-              )}
+                );
+              })()}
 
               {newBusinesses.length > 0 && (
                 <>
