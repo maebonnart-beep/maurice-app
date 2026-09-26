@@ -3,7 +3,7 @@
 import { useEffect, useState, type FormEvent } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { Trash, ShareNetwork, Check, PencilSimple, X, Plus, MapPin, CaretUp, CaretDown } from "@phosphor-icons/react";
+import { Trash, ShareNetwork, Check, PencilSimple, X, Plus, MapPin, CaretUp, CaretDown, MagnifyingGlass } from "@phosphor-icons/react";
 import { useFavorites } from "@/lib/favorites";
 import { useFavoriteLists } from "@/lib/useFavoriteLists";
 import { getBusinesses } from "@/lib/data";
@@ -58,7 +58,7 @@ function Shell({ title, subtitle, children }: { title: string; subtitle?: string
 // ─── Vue index : toutes les listes + création ─────────────────────────────
 
 function ListIndex({ businesses, startCreating }: { businesses: Business[]; startCreating: boolean }) {
-  const { lists, isPremium, limitReached, create } = useFavoriteLists();
+  const { lists, unlimited, limitReached, create } = useFavoriteLists();
   const [creating, setCreating] = useState(startCreating);
   const [error, setError] = useState<string | null>(null);
 
@@ -137,7 +137,7 @@ function ListIndex({ businesses, startCreating }: { businesses: Business[]; star
         </button>
       )}
 
-      {!isPremium && !limitReached && (
+      {!unlimited && !limitReached && (
         <p className="m-0 text-[12px] text-muted text-center">
           {lists.length}/{FREE_LIST_LIMIT} listes gratuites utilisées · illimité en premium
         </p>
@@ -409,7 +409,7 @@ function ListDetail({ list, businesses }: { list: FavoriteList; businesses: Busi
       {/* Fiches de la liste, avec note perso */}
       {listBusinesses.length === 0 ? (
         <p className="m-0 text-[13px] text-muted text-center py-4">
-          Liste vide pour l&apos;instant. Ajoute des adresses depuis n&apos;importe quelle fiche avec le bouton « Ajouter à une liste ».
+          Liste vide pour l&apos;instant : touche « Ajouter une adresse » pour chercher des fiches à y mettre.
         </p>
       ) : (
         <div className="flex flex-col gap-2.5">
@@ -426,6 +426,14 @@ function ListDetail({ list, businesses }: { list: FavoriteList; businesses: Busi
           ))}
         </div>
       )}
+
+      {/* Ajout depuis la recherche : « mode ajout » (bandeau + ajout en un tap). */}
+      <Link
+        href={`/?addTo=${list.id}`}
+        className="h-[44px] rounded-xl font-semibold text-[13.5px] text-on-primary bg-primary inline-flex items-center justify-center gap-1.5 no-underline active:scale-[.98] transition-transform"
+      >
+        <MagnifyingGlass size={16} weight="bold" aria-hidden /> Ajouter une adresse
+      </Link>
 
       {/* Raccourci : ajouter depuis ses favoris */}
       {favoritesNotInList.length > 0 && (

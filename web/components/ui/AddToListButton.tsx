@@ -26,7 +26,10 @@ export function AddToListButton({
   className?: string;
 }) {
   const [open, setOpen] = useState(false);
-  const { lists } = useFavoriteLists();
+  const { lists, targetListId, toggleBusiness } = useFavoriteLists();
+  // Mode ajout (depuis la page d'une liste) : un tap ajoute/retire directement dans cette liste.
+  const target = targetListId !== null ? lists.find((l) => l.id === targetListId) : undefined;
+  const inTarget = !!target?.businessIds.includes(businessId);
   const inAnyList = lists.some((l) => l.businessIds.includes(businessId));
 
   return (
@@ -34,18 +37,31 @@ export function AddToListButton({
       <button
         onClick={(e) => {
           e.stopPropagation();
-          setOpen(true);
+          if (target) toggleBusiness(target, businessId);
+          else setOpen(true);
         }}
-        aria-label="Ajouter à une liste"
-        title="Ajouter à une liste"
+        aria-label={target ? (inTarget ? `Retirer de « ${target.name} »` : `Ajouter à « ${target.name} »`) : "Ajouter à une liste"}
+        aria-pressed={target ? inTarget : undefined}
+        title={target ? (inTarget ? `Retirer de « ${target.name} »` : `Ajouter à « ${target.name} »`) : "Ajouter à une liste"}
         className={`${className} active:scale-[.9] transition-transform`}
       >
-        <ListPlus
-          size={size}
-          weight={inAnyList ? "bold" : "regular"}
-          style={{ color: inAnyList ? "var(--primary)" : undefined }}
-          aria-hidden
-        />
+        {target ? (
+          <span
+            className={`inline-flex items-center justify-center rounded-full ${
+              inTarget ? "bg-primary text-on-primary" : "bg-primary-tint text-primary-deep"
+            }`}
+            style={{ width: size + 8, height: size + 8 }}
+          >
+            {inTarget ? <Check size={size - 3} weight="bold" aria-hidden /> : <Plus size={size - 3} weight="bold" aria-hidden />}
+          </span>
+        ) : (
+          <ListPlus
+            size={size}
+            weight={inAnyList ? "bold" : "regular"}
+            style={{ color: inAnyList ? "var(--primary)" : undefined }}
+            aria-hidden
+          />
+        )}
       </button>
       {open &&
         createPortal(

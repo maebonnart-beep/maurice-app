@@ -2,6 +2,13 @@ import { NextResponse } from "next/server";
 import { createClient } from "@/lib/supabase/server";
 import { FREE_LIST_LIMIT, LIST_COLUMNS, LIST_LIMITS } from "@/lib/favoriteLists";
 
+/** Listes illimitées : abonnés premium, contributeurs (communauté) et admins. */
+function hasUnlimitedLists(
+  profile: { subscription_status?: string | null; is_admin?: boolean | null; is_community_member?: boolean | null } | null
+) {
+  return profile?.subscription_status === "active" || !!profile?.is_admin || !!profile?.is_community_member;
+}
+
 /** Nettoie un champ texte optionnel : trim, coupe à `max`, vide → null. */
 function optionalText(value: unknown, max: number): string | null {
   if (typeof value !== "string") return null;
@@ -9,7 +16,7 @@ function optionalText(value: unknown, max: number): string | null {
   return trimmed || null;
 }
 
-/** Listes personnalisées de l'utilisateur connecté (+ statut premium, pour la limite gratuite). */
+/** Listes personnalisées de l'utilisateur connecté (+ `unlimited`, pour la limite gratuite). */
 export async function GET() {
   const supabase = await createClient();
   const {
@@ -26,17 +33,17 @@ export async function GET() {
       .select(LIST_COLUMNS)
       .eq("user_id", user.id)
       .order("created_at", { ascending: true }),
-    supabase.from("profiles").select("subscription_status").eq("id", user.id).single(),
+    supabase.from("profiles").select("subscription_status, is_admin, is_community_member").eq("id", user.id).single(),
   ]);
 
   if (error) {
     return NextResponse.json({ error: error.message }, { status: 500 });
   }
 
-  return NextResponse.json({ lists: data, isPremium: profile?.subscription_status === "active" });
+  return NextResponse.json({ lists: data, unlimited: hasUnlimitedLists(profile) });
 }
 
-/** Création d'une liste — FREE_LIST_LIMIT listes sans abonnement, illimité en premium. */
+/** Création d'une liste — FREE_LIST_LIMIT listes par défaut, illimité pour premium/contributeurs/admins. */
 export async function POST(request: Request) {
   const supabase = await createClient();
   const {
@@ -48,11 +55,11 @@ export async function POST(request: Request) {
   }
 
   const [{ data: profile }, { count }] = await Promise.all([
-    supabase.from("profiles").select("subscription_status").eq("id", user.id).single(),
+    supabase.from("profiles").select("subscription_status, is_admin, is_community_member").eq("id", user.id).single(),
     supabase.from("favorite_lists").select("id", { count: "exact", head: true }).eq("user_id", user.id),
   ]);
 
-  if (profile?.subscription_status !== "active" && (count ?? 0) >= FREE_LIST_LIMIT) {
+  if (!hasUnlimitedLists(profile) && (count ?? 0) >= FREE_LIST_LIMIT) {
     return NextResponse.json(
       { error: `Tu as atteint tes ${FREE_LIST_LIMIT} listes gratuites : passe premium pour en créer d'autres.` },
       { status: 403 }

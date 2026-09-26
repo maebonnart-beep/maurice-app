@@ -89,6 +89,7 @@ import { iconForKey, mascotFor, prefIconFor, MapPin } from "@/lib/icons";
 import { displayName, displayCity, shareTagline } from "@/lib/format";
 import { FavoriteButton } from "@/components/ui/FavoriteButton";
 import { MyListsStrip } from "@/components/ui/MyListsStrip";
+import { AddToListBanner } from "@/components/ui/AddToListBanner";
 import { useFavoriteLists } from "@/lib/useFavoriteLists";
 import { BannerBackdrop } from "@/components/ui/BannerBackdrop";
 import { koteMorisLevel } from "@/lib/rating";
@@ -792,6 +793,15 @@ export default function DirectoryClient({
     setSearchOpen(true);
     setFocusSearchOnMount(true);
   }
+
+  // Arrivée en « mode ajout » depuis la page d'une liste perso (?addTo=<id>) :
+  // on ouvre directement la recherche (le bandeau est géré par AddToListBanner).
+  useEffect(() => {
+    if (new URLSearchParams(window.location.search).get("addTo")) {
+      setSearchOpen(true);
+      setFocusSearchOnMount(true);
+    }
+  }, []);
 
   // Onglet « Carte » : toutes les adresses en vue carte (même bascule que le
   // bouton liste/carte des résultats), filtres remis à zéro, centrée sur
@@ -4099,6 +4109,10 @@ export default function DirectoryClient({
           canSuggest={account.role === "community" || account.role === "admin"}
         />
       )}
+
+      {/* « Mode ajout » d'une liste perso (?addTo=<id>, depuis sa page) :
+          bandeau + ajout direct via le bouton liste des fiches. */}
+      <AddToListBanner />
 
       {/* Barre de navigation principale (5 onglets), tout en bas de l'écran. */}
       {tabBar}

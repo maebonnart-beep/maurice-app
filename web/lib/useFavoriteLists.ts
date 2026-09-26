@@ -11,10 +11,17 @@ import { FREE_LIST_LIMIT, mapFavoriteListRow, type FavoriteList, type ListInfo }
 type StoreState = {
   status: "idle" | "loading" | "anon" | "ready";
   lists: FavoriteList[];
-  isPremium: boolean;
+  /** Premium, contributeur ou admin : pas de limite FREE_LIST_LIMIT. */
+  unlimited: boolean;
+  /**
+   * « Mode ajout » : liste ouverte depuis sa page via « + Ajouter une adresse ».
+   * Tant qu'il est actif, le bouton liste des fiches ajoute/retire directement
+   * dans cette liste (sans feuille de choix), cf. AddToListButton/AddToListBanner.
+   */
+  targetListId: number | null;
 };
 
-const INITIAL_STATE: StoreState = { status: "idle", lists: [], isPremium: false };
+const INITIAL_STATE: StoreState = { status: "idle", lists: [], unlimited: false, targetListId: null };
 let state: StoreState = INITIAL_STATE;
 const listeners = new Set<() => void>();
 
@@ -36,18 +43,18 @@ async function load() {
       data: { session },
     } = await createClient().auth.getSession();
     if (!session) {
-      setState({ status: "anon", lists: [], isPremium: false });
+      setState({ status: "anon", lists: [], unlimited: false });
       return;
     }
     const res = await fetch("/api/favorite-lists");
     if (!res.ok) {
-      setState({ status: "anon", lists: [], isPremium: false });
+      setState({ status: "anon", lists: [], unlimited: false });
       return;
     }
-    const data = (await res.json()) as { lists: Record<string, unknown>[]; isPremium: boolean };
-    setState({ status: "ready", lists: data.lists.map(mapFavoriteListRow), isPremium: data.isPremium });
+    const data = (await res.json()) as { lists: Record<string, unknown>[]; unlimited: boolean };
+    setState({ status: "ready", lists: data.lists.map(mapFavoriteListRow), unlimited: data.unlimited });
   } catch {
-    setState({ status: "anon", lists: [], isPremium: false });
+    setState({ status: "anon", lists: [], unlimited: false });
   }
 }
 
@@ -67,6 +74,10 @@ async function patch(id: number, body: Record<string, unknown>, apply = true): P
 
 const actions = {
   refresh: load,
+
+  setTargetList(id: number | null) {
+    setState({ targetListId: id });
+  },
 
   /** Crée une liste (et y ajoute éventuellement une fiche). Renvoie un message d'erreur ou null. */
   async create(info: ListInfo & { name: string }, addBusinessId?: string): Promise<string | null> {
@@ -154,7 +165,7 @@ export function useFavoriteLists() {
     if (state.status === "idle") load();
   }, []);
 
-  const limitReached = !snapshot.isPremium && snapshot.lists.length >= FREE_LIST_LIMIT;
+  const limitReached = !snapshot.unlimited && snapshot.lists.length >= FREE_LIST_LIMIT;
 
   return { ...snapshot, limitReached, ...actions };
 }
