@@ -8,7 +8,7 @@ import { BusinessDetail } from "@/components/ui/BusinessDetail";
 import { FilterChip } from "@/components/ui/FilterChip";
 import { FILTER_GROUPS, SUBCATEGORIES } from "@/data/categories";
 import { MapPin } from "@/lib/icons";
-import { PLAN_OPTION_ICONS, PLAN_THEME_ICONS } from "@/lib/planIcons";
+import { PLAN_ACTIVITY_ICONS, PLAN_MEAL_ICONS, PLAN_OPTION_ICONS, PLAN_THEME_ICONS, PLAN_WHO_ICONS } from "@/lib/planIcons";
 import {
   PLAN_ACTIVITIES,
   PLAN_BUDGETS,
@@ -55,11 +55,14 @@ function Question<T extends string | number>({
   options,
   value,
   onChange,
+  icons,
 }: {
   title: string;
   options: { key: T; label: string }[];
   value: T;
   onChange: (v: T) => void;
+  /** Illustration Koté Moris par clé d'option (facultative, option par option). */
+  icons?: Record<string, string>;
 }) {
   return (
     <section className="mt-5">
@@ -67,6 +70,10 @@ function Question<T extends string | number>({
       <div className="mt-2 flex flex-wrap gap-2">
         {options.map((o) => (
           <FilterChip key={String(o.key)} active={value === o.key} onClick={() => onChange(o.key)}>
+            {icons?.[String(o.key)] && (
+              // eslint-disable-next-line @next/next/no-img-element
+              <img src={icons[String(o.key)]} alt="" aria-hidden className={`inline-block w-5 h-5 object-contain align-[-4px] mr-1 ${value === o.key ? "rounded-full bg-surface" : ""}`} />
+            )}
             {o.label}
           </FilterChip>
         ))}
@@ -364,7 +371,7 @@ export default function PlanWizard({
               onChange={setPlaceSetting}
             />
           )}
-          <Question title="Vous êtes ?" options={PLAN_WHO.map((o) => ({ key: o.key, label: o.label }))} value={who} onChange={setWho} />
+          <Question title="Vous êtes ?" options={PLAN_WHO.map((o) => ({ key: o.key, label: o.label }))} value={who} onChange={setWho} icons={PLAN_WHO_ICONS} />
           <Question title="Où ?" options={PLAN_ZONES.map((o) => ({ key: o.key, label: o.label }))} value={zone} onChange={setZone} />
           <Question
             title="Budget ?"
@@ -483,15 +490,16 @@ export default function PlanWizard({
         <p className="mt-5 text-[12px] font-semibold text-muted">Ou choisis avec les puces :</p>
       </section>
 
-      <Question title="Vous êtes ?" options={PLAN_WHO.map((o) => ({ key: o.key, label: o.label }))} value={who} onChange={setWho} />
+      <Question title="Vous êtes ?" options={PLAN_WHO.map((o) => ({ key: o.key, label: o.label }))} value={who} onChange={setWho} icons={PLAN_WHO_ICONS} />
       <Question title="Où ?" options={PLAN_ZONES.map((o) => ({ key: o.key, label: o.label }))} value={zone} onChange={setZone} />
       <Question
         title="Quoi ?"
         options={PLAN_ACTIVITIES.map((o) => ({ key: o.key, label: o.label }))}
         value={activity}
         onChange={setActivity}
+        icons={PLAN_ACTIVITY_ICONS}
       />
-      <Question title="Repas ?" options={PLAN_MEALS.map((o) => ({ key: o.key, label: o.label }))} value={meal} onChange={setMeal} />
+      <Question title="Repas ?" options={PLAN_MEALS.map((o) => ({ key: o.key, label: o.label }))} value={meal} onChange={setMeal} icons={PLAN_MEAL_ICONS} />
       <Question
         title="Durée maximum (route et repas compris)"
         options={PLAN_DURATIONS.map((o) => ({ key: o.minutes, label: o.label }))}

@@ -32,3 +32,32 @@ export const PLAN_OPTION_ICONS: Record<string, string> = {
   "plus-belles-vues": "/plan-icons/plus-belles-vues.webp",
   "frequente-locaux": "/plan-icons/frequente-locaux.webp",
 };
+
+/**
+ * Puces « Vous êtes ? », « Quoi ? » et « Repas ? » : illustrations de la planche
+ * du 26/09 (public/list-icons/, partagées avec les couvertures de listes) et,
+ * à défaut, celles des thématiques / cuisines ci-dessus.
+ */
+export const PLAN_WHO_ICONS: Record<string, string> = {
+  famille: "/list-icons/famille-4.webp",
+  couple: "/list-icons/coeur.webp",
+  amis: "/list-icons/amis.webp",
+  solo: "/list-icons/carte.webp",
+};
+
+export const PLAN_ACTIVITY_ICONS: Record<string, string> = {
+  excursion: "/list-icons/catamaran.webp",
+  plage: "/list-icons/tortue.webp",
+  parc: "/list-icons/enfants.webp",
+  culture: "/list-icons/patrimoine.webp",
+  rando: "/list-icons/montagne.webp",
+  sport: PLAN_THEME_ICONS.sport,
+  bienetre: PLAN_THEME_ICONS["bien-etre"],
+  shopping: PLAN_THEME_ICONS.shopping,
+  sortie: "/list-icons/detente.webp",
+};
+
+export const PLAN_MEAL_ICONS: Record<string, string> = {
+  ...PLAN_OPTION_ICONS,
+  tous: "/list-icons/gastronomie.webp",
+};
