@@ -2170,9 +2170,9 @@ export default function DirectoryClient({
                 <div className="-mx-3 lg:mx-0 grid grid-cols-3 gap-1.5 lg:gap-3">
                   {(
                     [
-                      { key: "mot", label: "Mot-clé", hint: "Tape ce que tu cherches : plongée, brunch…", img: "/recherche-icone-motcle.png" },
-                      { key: "categorie", label: "Catégories", hint: "Parcours les adresses par rubrique", img: "/recherche-icone-categories.png" },
-                      { key: "experience", label: "Expérience", hint: "Un lieu ou un plan complet sur mesure", img: "/recherche-icone-experience.png" },
+                      { key: "categorie", label: "Catégories", img: "/recherche-icone-categories.png" },
+                      { key: "mot", label: "Mot-clé", img: "/recherche-icone-motcle.png" },
+                      { key: "experience", label: "Expérience", img: "/recherche-icone-experience.png" },
                     ] as const
                   ).map((b) => {
                     const on = b.key === "experience" && experienceOpen;
@@ -2219,12 +2219,6 @@ export default function DirectoryClient({
                           }}
                         >
                           {b.label}
-                        </span>
-                        <span
-                          className="text-[12.5px] lg:text-[14px] font-extrabold leading-snug text-center max-w-[118px] lg:max-w-[180px] text-white"
-                          style={{ textShadow: "0 1px 3px rgba(4,50,58,.9), 0 0 8px rgba(4,50,58,.7)" }}
-                        >
-                          {b.hint}
                         </span>
                       </button>
                     );
