@@ -55,6 +55,9 @@ export const PLAN_ACTIVITY_ICONS: Record<string, string> = {
   bienetre: PLAN_THEME_ICONS["bien-etre"],
   shopping: PLAN_THEME_ICONS.shopping,
   sortie: "/list-icons/detente.webp",
+  // Style plat des rubriques (public/subicons/) en attendant des illustrations assorties.
+  equiper: "/subicons/maison-equipement.png",
+  marche: "/subicons/marches-produits-locaux.png",
 };
 
 export const PLAN_MEAL_ICONS: Record<string, string> = {
