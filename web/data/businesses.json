@@ -4920,7 +4920,13 @@
       "tables-exception"
     ],
     "createdAt": "2026-07-11T18:51:59+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g293816-d4234592-Reviews-Blue_Marlin_Restaurant-Mauritius.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g293816-d4234592-Reviews-Blue_Marlin_Restaurant-Mauritius.html",
+    "koteMorisRatings": {
+      "gout": 5,
+      "accueil": 5,
+      "cadre": 5
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "emba-filao-lux-le-morne",
@@ -7023,7 +7029,14 @@
       "plus-belles-vues"
     ],
     "createdAt": "2026-07-12T07:06:58+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488103-d12215992-Reviews-L_Horizon-Grand_Baie.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488103-d12215992-Reviews-L_Horizon-Grand_Baie.html",
+    "koteMorisRatings": {
+      "gout": 4,
+      "qualitePrix": 3,
+      "accueil": 4,
+      "cadre": 3
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "max-mamma-mia",
@@ -8486,7 +8499,14 @@
       "mauricienne"
     ],
     "createdAt": "2026-07-12T07:06:58+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g951345-d17729385-Reviews-Vanilla_Cafe-Riviere_Noire.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g951345-d17729385-Reviews-Vanilla_Cafe-Riviere_Noire.html",
+    "koteMorisRatings": {
+      "gout": 3,
+      "qualitePrix": 4,
+      "accueil": 2,
+      "cadre": 5
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "recif-bleu",
@@ -12207,7 +12227,14 @@
     "filters": [
       "europeenne"
     ],
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "koteMorisRatings": {
+      "gout": 4,
+      "qualitePrix": 4,
+      "accueil": 3,
+      "cadre": 4
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "brasserie-chic-labourdonnais-waterfront-hotel",
@@ -12228,7 +12255,14 @@
       "europeenne"
     ],
     "hours": "Tous les jours 6h30-22h30",
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "koteMorisRatings": {
+      "gout": 4,
+      "qualitePrix": 3,
+      "accueil": 3,
+      "cadre": 5
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "wapalapam-la-place",
@@ -12655,7 +12689,14 @@
       "tables-exception"
     ],
     "hours": "Lun-Sam 9h-16h30, fermé dim",
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "koteMorisRatings": {
+      "gout": 4,
+      "qualitePrix": 5,
+      "accueil": 5,
+      "cadre": 5
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "mystic-masala",
@@ -15785,7 +15826,14 @@
     "filters": [
       "snacks-plage"
     ],
-    "createdAt": "2026-07-12T16:37:31+02:00"
+    "createdAt": "2026-07-12T16:37:31+02:00",
+    "koteMorisRatings": {
+      "gout": 4,
+      "qualitePrix": 5,
+      "accueil": 5,
+      "cadre": 4
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "vik-snack",
@@ -15912,7 +15960,14 @@
     "filters": [
       "snacks-plage"
     ],
-    "createdAt": "2026-07-12T16:37:31+02:00"
+    "createdAt": "2026-07-12T16:37:31+02:00",
+    "koteMorisRatings": {
+      "gout": 4,
+      "qualitePrix": 3,
+      "accueil": 4,
+      "cadre": 3
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "chez-poum-la-cuisine-roulante",
@@ -15932,7 +15987,14 @@
     "filters": [
       "snacks-plage"
     ],
-    "createdAt": "2026-07-12T16:37:31+02:00"
+    "createdAt": "2026-07-12T16:37:31+02:00",
+    "koteMorisRatings": {
+      "gout": 4,
+      "qualitePrix": 4,
+      "accueil": 4,
+      "cadre": 3
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "pizza-panpiz",
@@ -15952,7 +16014,14 @@
     "filters": [
       "snacks-plage"
     ],
-    "createdAt": "2026-07-12T16:37:31+02:00"
+    "createdAt": "2026-07-12T16:37:31+02:00",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "accueil": 5,
+      "cadre": 4
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "nana-mama",
@@ -20261,7 +20330,14 @@
     "filters": [
       "cafes-terrasses"
     ],
-    "createdAt": "2026-07-12T16:37:31+02:00"
+    "createdAt": "2026-07-12T16:37:31+02:00",
+    "koteMorisRatings": {
+      "gout": 4,
+      "qualitePrix": 5,
+      "accueil": 3,
+      "cadre": 3
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "mcdonald-s",
@@ -21065,7 +21141,14 @@
     "filters": [
       "italien"
     ],
-    "createdAt": "2026-07-12T16:37:31+02:00"
+    "createdAt": "2026-07-12T16:37:31+02:00",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "accueil": 5,
+      "cadre": 3
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "cafe-alexia",
@@ -34099,7 +34182,13 @@
     "filters": [
       "glaciers"
     ],
-    "createdAt": "2026-07-17T14:58:49+02:00"
+    "createdAt": "2026-07-17T14:58:49+02:00",
+    "koteMorisRatings": {
+      "gout": 4,
+      "qualitePrix": 2,
+      "cadre": 3
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "marche-de-quatre-bornes",
@@ -39997,7 +40086,14 @@
       "sushis",
       "asiatique"
     ],
-    "createdAt": "2026-07-25T16:33:53+02:00"
+    "createdAt": "2026-07-25T16:33:53+02:00",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 3,
+      "accueil": 5,
+      "cadre": 5
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "indian-summer-restaurant-ebene",
@@ -40173,7 +40269,14 @@
       "fruits-de-mer",
       "mauricienne"
     ],
-    "createdAt": "2026-07-25T16:54:24+02:00"
+    "createdAt": "2026-07-25T16:54:24+02:00",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 4,
+      "accueil": 5,
+      "cadre": 3
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "karai-creole-grand-baie",
@@ -40225,7 +40328,13 @@
     ],
     "phone": "+230 401 1688",
     "website": "https://www.oneandonlyresorts.com/le-saint-geran",
-    "createdAt": "2026-07-26T08:23:22+02:00"
+    "createdAt": "2026-07-26T08:23:22+02:00",
+    "koteMorisRatings": {
+      "gout": 5,
+      "accueil": 5,
+      "cadre": 5
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "chateau-de-bel-ombre-restaurant",
@@ -40762,7 +40871,14 @@
     "filters": [
       "mauricienne"
     ],
-    "createdAt": "2026-07-26T11:37:08+02:00"
+    "createdAt": "2026-07-26T11:37:08+02:00",
+    "koteMorisRatings": {
+      "gout": 3,
+      "qualitePrix": 5,
+      "accueil": 4,
+      "cadre": 2
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "linguini-cascavelle",
@@ -41123,7 +41239,13 @@
       "fruits-de-mer",
       "tables-exception"
     ],
-    "createdAt": "2026-07-28T13:56:53+02:00"
+    "createdAt": "2026-07-28T13:56:53+02:00",
+    "koteMorisRatings": {
+      "gout": 5,
+      "accueil": 5,
+      "cadre": 5
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "inti-lux-grand-gaube",
@@ -53415,7 +53537,14 @@
       "plus-belles-vues",
       "bars"
     ],
-    "createdAt": "2026-08-13T05:31:56+02:00"
+    "createdAt": "2026-08-13T05:31:56+02:00",
+    "koteMorisRatings": {
+      "gout": 4,
+      "qualitePrix": 4,
+      "accueil": 3,
+      "cadre": 5
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "la-plage-beach-club-food",
@@ -53556,7 +53685,14 @@
       "fruits-de-mer",
       "asiatique"
     ],
-    "createdAt": "2026-08-13T05:31:56+02:00"
+    "createdAt": "2026-08-13T05:31:56+02:00",
+    "koteMorisRatings": {
+      "gout": 4,
+      "qualitePrix": 5,
+      "accueil": 4,
+      "cadre": 3
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "banana-beach-club-grand-baie",
@@ -53600,7 +53736,14 @@
     "filters": [
       "bars"
     ],
-    "createdAt": "2026-08-13T05:51:27+02:00"
+    "createdAt": "2026-08-13T05:51:27+02:00",
+    "koteMorisRatings": {
+      "gout": 4,
+      "qualitePrix": 3,
+      "accueil": 3,
+      "cadre": 5
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "boutique-michel-abad-grand-baie",
@@ -54532,7 +54675,14 @@
     "hours": "Tous les jours 12h-14h30 & 18h30-1h",
     "lat": -20.0135938,
     "lng": 57.6187327,
-    "createdAt": "2026-08-16T15:56:43+02:00"
+    "createdAt": "2026-08-16T15:56:43+02:00",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "accueil": 5,
+      "cadre": 4
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "yes-food-moris",
@@ -54590,7 +54740,14 @@
     ],
     "lat": -20.0151832,
     "lng": 57.5810727,
-    "createdAt": "2026-08-16T15:56:43+02:00"
+    "createdAt": "2026-08-16T15:56:43+02:00",
+    "koteMorisRatings": {
+      "gout": 3,
+      "qualitePrix": 4,
+      "accueil": 3,
+      "cadre": 2
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "dalon-grand-baie",
@@ -54609,7 +54766,14 @@
     ],
     "lat": -20.0137439,
     "lng": 57.5882632,
-    "createdAt": "2026-08-16T15:56:43+02:00"
+    "createdAt": "2026-08-16T15:56:43+02:00",
+    "koteMorisRatings": {
+      "gout": 4,
+      "qualitePrix": 5,
+      "accueil": 5,
+      "cadre": 4
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "nature-et-delices-pointe-aux-canonniers",
@@ -54772,7 +54936,13 @@
     "hours": "Mar-Dim 11h30-14h & 17h30-21h30, fermé lun",
     "lat": -20.0410428,
     "lng": 57.558745,
-    "createdAt": "2026-08-16T15:56:43+02:00"
+    "createdAt": "2026-08-16T15:56:43+02:00",
+    "koteMorisRatings": {
+      "gout": 5,
+      "accueil": 5,
+      "cadre": 4
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "red-grand-baie",
@@ -56478,7 +56648,13 @@
       "italien",
       "boulangeries-patisseries"
     ],
-    "createdAt": "2026-08-20T19:19:36+02:00"
+    "createdAt": "2026-08-20T19:19:36+02:00",
+    "koteMorisRatings": {
+      "gout": 5,
+      "accueil": 5,
+      "cadre": 4
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "cabinet-antoine-menguy-petit-raffray",
