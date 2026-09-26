@@ -92,7 +92,7 @@ import { MyListsStrip } from "@/components/ui/MyListsStrip";
 import { AddToListBanner } from "@/components/ui/AddToListBanner";
 import { useFavoriteLists } from "@/lib/useFavoriteLists";
 import { BannerBackdrop } from "@/components/ui/BannerBackdrop";
-import { koteMorisLevel } from "@/lib/rating";
+import { koteMorisLevel, isEditorialPick } from "@/lib/rating";
 import {
   Heart,
   Flag,
@@ -1089,7 +1089,7 @@ export default function DirectoryClient({
   // fiches des rubriques préférées (Mes préférences, Profil) remontent devant,
   // chaque paquet restant mélangé — pas de tri figé à l'intérieur d'une rubrique.
   const coupsDeCoeur = useMemo(() => {
-    const all = businesses.filter((b) => b.badge === "selection" && b.photoUrl);
+    const all = businesses.filter((b) => isEditorialPick(b) && b.photoUrl);
     const pool = shuffleReady ? shuffled(all) : all;
     const preferredKeys = new Set<CategoryKey>(preferences.interests);
     if (preferences.hasKids) preferredKeys.add("famille-travail");

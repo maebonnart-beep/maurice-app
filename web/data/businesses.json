@@ -1019,7 +1019,6 @@
     ],
     "hours": "Lun-Mar 18h30-22h, Jeu-Dim 12h-14h & 18h30-22h, fermé mer",
     "priceRange": "prix-moyen",
-    "badge": "selection",
     "zone": "nord",
     "description": "Restaurant familial de Grand Baie réputé pour sa cuisine mauricienne et indienne, en particulier ses currys de poisson et fruits de mer frais, servis dans une ambiance conviviale à prix raisonnables.",
     "filters": [
@@ -1029,7 +1028,14 @@
       "grillades"
     ],
     "createdAt": "2026-07-09T18:41:47+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488103-d1592326-Reviews-Restaurant_Coolen_Chez_Ram-Grand_Baie.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488103-d1592326-Reviews-Restaurant_Coolen_Chez_Ram-Grand_Baie.html",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "la-rougaille-creole",
@@ -1046,7 +1052,6 @@
     ],
     "hours": "Tous les jours 11h-22h",
     "priceRange": "prix-moyen",
-    "badge": "selection",
     "zone": "nord",
     "description": "Restaurant familial niché dans une ruelle discrète de Grand Baie, murs orange et mobilier en bois miel. Cuisine créole traditionnelle (cari crabe, vindaye de crevettes, salade d'ourite), musique créole live, réservation conseillée.",
     "filters": [
@@ -1054,7 +1059,14 @@
       "fruits-de-mer"
     ],
     "createdAt": "2026-07-09T18:41:47+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488103-d1918622-Reviews-La_Rougaille_Creole-Grand_Baie.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488103-d1918622-Reviews-La_Rougaille_Creole-Grand_Baie.html",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "the-trojan-horse-the-greeks-are-inside",
@@ -1101,7 +1113,6 @@
     ],
     "hours": "Lun 10h30-14h & 17h30-22h, fermé mar, Mer-Dim 10h30-14h & 17h30-22h",
     "priceRange": "bon-marche",
-    "badge": "selection",
     "zone": "nord",
     "description": "Table familiale de la Route Royale à Grand Baie, cuisine locale aux influences européennes, indiennes et chinoises (soupe de crabe, vindaye de poisson, crevettes sauce provençale), vue sur la baie depuis le balcon à l'étage. Fermé le mardi.",
     "filters": [
@@ -1111,7 +1122,14 @@
       "fruits-de-mer"
     ],
     "createdAt": "2026-07-09T18:41:47+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488103-d2010351-Reviews-La_Terrasse-Grand_Baie.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488103-d2010351-Reviews-La_Terrasse-Grand_Baie.html",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "sauterelle-restaurant",
@@ -1128,7 +1146,6 @@
     ],
     "hours": "Fermé lun, Mar-Dim 12h-14h & 19h-22h",
     "priceRange": "prix-moyen",
-    "badge": "selection",
     "zone": "nord",
     "description": "Restaurant de Sunset Boulevard à Grand Baie mêlant influences françaises, mauriciennes et méditerranéennes, dans un cadre bistrot chic avec terrasse donnant sur une place à fontaine.",
     "filters": [
@@ -1137,7 +1154,14 @@
       "kids-friendly"
     ],
     "createdAt": "2026-07-09T18:41:47+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488103-d7810461-Reviews-Sauterelle-Grand_Baie.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488103-d7810461-Reviews-Sauterelle-Grand_Baie.html",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "le-poivrier",
@@ -1153,7 +1177,6 @@
       "restaurants"
     ],
     "hours": "Mar-Sam 12h-15h, Mer-Sam 19h-22h, fermé dim et lun",
-    "badge": "selection",
     "promoText": "Cadre très plaisant sous les arbres, cuisine ouverte au feu de bois. Très bons plats.",
     "zone": "nord",
     "description": "Antenne originelle du Poivrier, cachée derrière une entrée discrète dans un jardin tropical planté de fleurs et fréquenté de geckos verts. Cuisine méditerranéenne (poisson, sushis, tartares, pâtes fraîches) d'inspiration franco-italienne, fermé dimanche et lundi.",
@@ -1165,7 +1188,14 @@
       "mauricienne"
     ],
     "createdAt": "2026-07-09T18:41:47+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488103-d12242815-Reviews-Le_Poivrier-Grand_Baie.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488103-d12242815-Reviews-Le_Poivrier-Grand_Baie.html",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "cocoloko",
@@ -1183,7 +1213,6 @@
     ],
     "hours": "Tous les jours 10h-23h",
     "priceRange": "bon-marche",
-    "badge": "selection",
     "zone": "nord",
     "description": "Restaurant, pizzeria et bar dans un jardin tropical de Grand Baie, face à la mer. Ambiance décontractée sous les cocotiers, musique en soirée. Pizzas around 300-400 Rs. Portions généreuses appréciées, mais quelques avis signalent des additions parfois plus élevées que prévu.",
     "filters": [
@@ -1191,7 +1220,14 @@
       "bars"
     ],
     "createdAt": "2026-07-09T18:41:47+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488103-d2148030-Reviews-Cocoloko-Grand_Baie.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488103-d2148030-Reviews-Cocoloko-Grand_Baie.html",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "da-terra-restaurant-cafe",
@@ -1402,7 +1438,6 @@
     ],
     "hours": "Fermé lun, Mar-Dim 11h-00h",
     "priceRange": "prix-moyen",
-    "badge": "selection",
     "zone": "nord",
     "description": "Bar-restaurant décontracté de la Route Royale à Grand Baie offrant une vue imprenable sur la baie, connu pour ses burgers et sa carte façon sports bar (ailes de poulet, tapas, grillades).",
     "filters": [
@@ -1411,7 +1446,14 @@
       "bars"
     ],
     "createdAt": "2026-07-09T18:41:47+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488103-d1674515-Reviews-The_Beach_House_Restaurant_Beach_Bar-Grand_Baie.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488103-d1674515-Reviews-The_Beach_House_Restaurant_Beach_Bar-Grand_Baie.html",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "beach-rouge-lux-grand-baie",
@@ -1527,7 +1569,6 @@
       "restaurants"
     ],
     "priceRange": "se-faire-plaisir",
-    "badge": "selection",
     "promoText": "Très joli cadre, assiettes copieuses et fraîches. Belle carte de tapas.",
     "zone": "nord",
     "description": "Restaurant de Pereybère/Grand Baie tenu par Ashley et Shiran. Fruits de mer et viandes frais, rhum vanille maison ; paiement en espèces uniquement, stationnement limité.",
@@ -1536,7 +1577,14 @@
     ],
     "hours": "Mar-Dim 18h-22h, fermé lun",
     "createdAt": "2026-07-09T18:41:47+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g1905319-d26868004-Reviews-Coco_Piment-Pereybere.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g1905319-d26868004-Reviews-Coco_Piment-Pereybere.html",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "blue-lagoon-cafe",
@@ -1697,7 +1745,6 @@
     "themes": [
       "restaurants"
     ],
-    "badge": "selection",
     "zone": "nord",
     "description": "Restaurant familial du secteur de Grand Baie/Pereybère proposant une cuisine mauricienne et internationale, réputé pour ses plateaux de fruits de mer et son cadre extérieur convivial.",
     "hours": "Lun-Sam 11h-22h30, Dim 11h-16h30 & 18h-22h30",
@@ -1706,7 +1753,14 @@
       "fruits-de-mer"
     ],
     "createdAt": "2026-07-09T18:41:47+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g1905319-d12908366-Reviews-D_Erny_s_Restaurant-Pereybere.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g1905319-d12908366-Reviews-D_Erny_s_Restaurant-Pereybere.html",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "les-canisses-resto-plage",
@@ -1724,7 +1778,6 @@
     ],
     "hours": "Lun-Jeu et Dim 12h-22h, Ven-Sam 12h-22h30",
     "priceRange": "se-faire-plaisir",
-    "badge": "selection",
     "zone": "nord",
     "description": "Bar-restaurant au bord de la baie de Grand Baie, déjeuner à l'ombre d'un grand badamier. Fruits de mer, agneau et bœuf de qualité, rhum offert en digestif, musique live (classiques).",
     "filters": [
@@ -1734,7 +1787,14 @@
       "bars"
     ],
     "createdAt": "2026-07-09T18:41:47+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488103-d3640069-Reviews-Les_Canisses_Resto_Plage-Grand_Baie.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488103-d3640069-Reviews-Les_Canisses_Resto_Plage-Grand_Baie.html",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "amigo-bar",
@@ -1750,7 +1810,6 @@
       "cafes-bars-glaciers"
     ],
     "priceRange": "prix-moyen",
-    "badge": "selection",
     "zone": "nord",
     "hours": "Tous les jours 12h-15h et 18h-22h",
     "description": "Bar familial de Chemin Vingt Pieds (Grand Baie/Pereybère) depuis 1985, récemment rénové. Cocktails signature, infusions locales, happy hour, tapas et plats plus consistants (fruits de mer, grillades) ; apprécié pour les couchers de soleil et soirées à thème.",
@@ -1758,7 +1817,14 @@
       "bars"
     ],
     "createdAt": "2026-07-09T18:41:47+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g1905319-d25174365-Reviews-Amigo_Bar-Pereybere.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g1905319-d25174365-Reviews-Amigo_Bar-Pereybere.html",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "baywatch-bar",
@@ -3978,7 +4044,6 @@
     ],
     "hours": "Mar-Dim 11h30-14h30 & 18h30-22h30, fermé lun",
     "priceRange": "prix-moyen",
-    "badge": "selection",
     "zone": "ouest",
     "description": "Grand restaurant installé sur une ancienne plantation sucrière à Medine (Flic-en-Flac), organisé autour de barachois et de jardins avec tables au bord de l'eau. Cuisine chinoise et fruits de mer, fusion locale-internationale ; fermé le lundi.",
     "filters": [
@@ -3988,7 +4053,14 @@
       "grillades"
     ],
     "createdAt": "2026-07-11T18:29:40+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g298343-d1213106-Reviews-Domaine_Anna_Restaurant-Flic_En_Flac.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g298343-d1213106-Reviews-Domaine_Anna_Restaurant-Flic_En_Flac.html",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "beach-shack-flic-en-flac",
@@ -4032,7 +4104,6 @@
     ],
     "hours": "Ouvert midi et soir, fermé mar, jeu et dim",
     "priceRange": "prix-moyen",
-    "badge": "selection",
     "zone": "ouest",
     "description": "Ouvert depuis 1969, ce restaurant au cadre champêtre propose une cuisine mêlant influences européennes et créoles, avec des spécialités de gibier (sanglier, cerf) et des produits de la mer.",
     "filters": [
@@ -4042,7 +4113,14 @@
       "bars"
     ],
     "createdAt": "2026-07-11T18:29:40+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g580097-d3860465-Reviews-La_Bonne_Chute_Restaurant_Bar-Tamarin.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g580097-d3860465-Reviews-La_Bonne_Chute_Restaurant_Bar-Tamarin.html",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "il-padrino-black-river",
@@ -4173,7 +4251,6 @@
     ],
     "hours": "Tous les jours 12h-17h",
     "priceRange": "bon-marche",
-    "badge": "selection",
     "zone": "sud",
     "description": "Petite adresse familiale tenue par Rosy près du site du Gris Gris, ouverte uniquement le midi, réputée pour sa cuisine créole maison et sa langouste grillée au beurre persillé.",
     "filters": [
@@ -4181,7 +4258,14 @@
       "fruits-de-mer"
     ],
     "createdAt": "2026-07-11T18:29:40+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g1124112-d2035391-Reviews-Chez_Rosy_Le_Gris_Gris_Restaurant-Souillac.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g1124112-d2035391-Reviews-Chez_Rosy_Le_Gris_Gris_Restaurant-Souillac.html",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "green-island-beach-restaurant-trou-eau-douce",
@@ -4198,7 +4282,6 @@
     ],
     "hours": "Fermé lun, Mar-Dim 9h-22h",
     "priceRange": "prix-moyen",
-    "badge": "selection",
     "promoText": "Produits frais, assiettes copieuses, service impeccable — superbe cadre en bord de lagon.",
     "zone": "est",
     "description": "Petite adresse reconnaissable à sa façade vert vif sur la route côtière de Trou d'Eau Douce, proposant une cuisine mauricienne et asiatique à base de produits de la mer (soupe de crabe, salade d'ourite, curry de poulet aux crevettes), avec options végétariennes et halal.",
@@ -4208,7 +4291,14 @@
       "fruits-de-mer"
     ],
     "createdAt": "2026-07-11T18:29:40+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488107-d1897523-Reviews-Green_Island_Beach_Restaurant-Trou_d_eau_Douce.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488107-d1897523-Reviews-Green_Island_Beach_Restaurant-Trou_d_eau_Douce.html",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "la-case-poisson-trou-eau-douce",
@@ -4247,7 +4337,6 @@
     ],
     "hours": "Tous les jours 10h-23h",
     "priceRange": "prix-moyen",
-    "badge": "selection",
     "zone": "sud",
     "photoUrl": "/photos/le-bazilic-mahebourg.jpg",
     "photoUrls": [
@@ -4261,7 +4350,14 @@
       "asiatique"
     ],
     "createdAt": "2026-07-11T18:29:40+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g481079-d7337408-Reviews-Le_Bazilic-Mahebourg.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g481079-d7337408-Reviews-Le_Bazilic-Mahebourg.html",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "le-capitaine-mahebourg",
@@ -4648,7 +4744,6 @@
       "restaurants"
     ],
     "priceRange": "prix-moyen",
-    "badge": "selection",
     "zone": "ouest",
     "description": "Restaurant familial établi de longue date sur la route royale de Flic en Flac, spécialisé dans la cuisine chinoise (raviolis, rouleaux de printemps, sautés) dans un cadre décontracté.",
     "hours": "Mar-Dim 11h30-22h, fermé lundi",
@@ -4658,7 +4753,14 @@
       "fruits-de-mer"
     ],
     "createdAt": "2026-07-11T18:51:59+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g298343-d2010198-Reviews-Restaurant_Ah_Youn-Flic_En_Flac.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g298343-d2010198-Reviews-Restaurant_Ah_Youn-Flic_En_Flac.html",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "le-bougainville-flic-en-flac",
@@ -4675,7 +4777,6 @@
     ],
     "hours": "Fermé mer, Lun-Mar + Jeu-Dim 10h-22h30",
     "priceRange": "bon-marche",
-    "badge": "selection",
     "zone": "ouest",
     "description": "Restaurant en bord de plage sur la route côtière de Flic en Flac, offrant vue sur le coucher de soleil et une carte mêlant cuisine créole mauricienne, produits de la mer et pizzas.",
     "filters": [
@@ -4684,7 +4785,14 @@
       "fruits-de-mer"
     ],
     "createdAt": "2026-07-11T18:51:59+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g298343-d3961218-Reviews-Le_Bougainville-Flic_En_Flac.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g298343-d3961218-Reviews-Le_Bougainville-Flic_En_Flac.html",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "zub-express-flic-en-flac",
@@ -4700,7 +4808,6 @@
       "restaurants"
     ],
     "priceRange": "bon-marche",
-    "badge": "selection",
     "hours": "Tlj sauf jeudi 11h30-14h30 & 17h30-21h",
     "zone": "ouest",
     "description": "Cuisine fusion indienne et européenne en bord de plage, avec des spécialités mauriciennes ; deux terrasses avec vue sur le lagon. Portions généreuses et salle de prière sur place. Très bon rapport qualité-prix ; l'établissement ne sert pas d'alcool.",
@@ -4709,7 +4816,14 @@
       "asiatique"
     ],
     "createdAt": "2026-07-11T18:51:59+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g298343-d5308384-Reviews-Zub_Express_Restaurant-Flic_En_Flac.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g298343-d5308384-Reviews-Zub_Express_Restaurant-Flic_En_Flac.html",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "salt-lemon-flic-en-flac",
@@ -4786,7 +4900,6 @@
     ],
     "hours": "Fermé lun, Mar-Dim 11h-20h",
     "priceRange": "bon-marche",
-    "badge": "selection",
     "zone": "ouest",
     "description": "Stand de burgers (roulotte) posé directement sur le sable de la plage publique de Flic en Flac. Burgers, hot-dogs et paninis, options végétariennes et halal, prix très abordables. Plébiscité pour sa sauce maison.",
     "takeaway": true,
@@ -4795,7 +4908,14 @@
       "snacks-plage"
     ],
     "createdAt": "2026-07-11T18:51:59+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g298343-d3600800-Reviews-Jeanno_Burger-Flic_En_Flac.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g298343-d3600800-Reviews-Jeanno_Burger-Flic_En_Flac.html",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "leslie-restaurant-flic-en-flac",
@@ -4842,7 +4962,6 @@
     ],
     "hours": "Tous les jours 11h30-14h & 18h-21h30",
     "priceRange": "prix-moyen",
-    "badge": "selection",
     "zone": "ouest",
     "description": "Enseigne locale emblématique au décor chiné au Rajasthan (meubles anciens). Cuisine indienne traditionnelle et chaleureuse, même si le service peut sembler pressé aux heures d'affluence. Autre adresse : Grand Baie Cœur de Ville.",
     "filters": [
@@ -4850,7 +4969,14 @@
       "grillades"
     ],
     "createdAt": "2026-07-11T18:51:59+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g580097-d23853189-Reviews-Happy_Rajah-Tamarin.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g580097-d23853189-Reviews-Happy_Rajah-Tamarin.html",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "ousaporn-thai-black-river",
@@ -4867,14 +4993,20 @@
     ],
     "hours": "Fermé lun, Mar-Dim 11h30-14h30 & 17h30-21h30",
     "priceRange": "prix-moyen",
-    "badge": "selection",
     "zone": "ouest",
     "description": "Restaurant thaïlandais situé à Tamarin/La Mivoie (derrière Food Lovers Market), avec des chefs originaires de Thaïlande garantissant une cuisine authentique de style maison et street-food, dans un cadre de jardin arboré et calme. Plats parfumés et relevés, bonne offre végétarienne.",
     "filters": [
       "asiatique"
     ],
     "createdAt": "2026-07-11T18:51:59+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g951345-d4908866-Reviews-OUSAPORN_Thai_Restaurant-Riviere_Noire.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g951345-d4908866-Reviews-OUSAPORN_Thai_Restaurant-Riviere_Noire.html",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "smasher-tamarin",
@@ -5311,7 +5443,6 @@
     ],
     "hours": "Fermé mar, Mer-Lun 10h30-15h & 18h-22h",
     "priceRange": "prix-moyen",
-    "badge": "selection",
     "zone": "est",
     "description": "À Trou d'Eau Douce, petite adresse conviviale gérée par le fils d'un pêcheur du coin, avec vue dégagée sur l'Île aux Cerfs. Le curry de poulpe local fait partie des plats les plus demandés.",
     "filters": [
@@ -5319,7 +5450,14 @@
       "fruits-de-mer"
     ],
     "createdAt": "2026-07-11T18:51:59+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488107-d2467169-Reviews-Chez_Tino-Trou_d_eau_Douce.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488107-d2467169-Reviews-Chez_Tino-Trou_d_eau_Douce.html",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "cafe-des-arts-trou-eau-douce",
@@ -5336,7 +5474,6 @@
     ],
     "hours": "Fermé dim, dîner sur réservation 19h-22h30",
     "priceRange": "se-faire-plaisir",
-    "badge": "selection",
     "zone": "est",
     "description": "Restaurant confidentiel installé dans l'ancienne sucrerie Victoria 1840, à la fois table gastronomique française et galerie d'art (œuvres de Maniglier, dernier élève mauricien de Matisse). Produits locaux mis à l'honneur (langouste entière, filets de loup, poisson en croûte de sel). Avis partagés, certains jugent le rapport qualité-prix décevant.",
     "filters": [
@@ -5344,7 +5481,14 @@
       "produits-locaux"
     ],
     "createdAt": "2026-07-11T18:51:59+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488107-d1493455-Reviews-Le_Cafe_des_Arts-Trou_d_eau_Douce.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488107-d1493455-Reviews-Le_Cafe_des_Arts-Trou_d_eau_Douce.html",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "restaurant-du-lac-mahebourg",
@@ -6559,7 +6703,6 @@
       "cafes-bars-glaciers"
     ],
     "priceRange": "bon-marche",
-    "badge": "selection",
     "promoText": "Très bons roti à prix mini (25 Rs) — un peu d’attente aux heures de pointe.",
     "hours": "Lun-Sam 9h30-14h30, fermé dim",
     "zone": "nord",
@@ -6568,7 +6711,14 @@
       "mauricienne",
       "snacks-plage"
     ],
-    "createdAt": "2026-07-12T06:09:46+02:00"
+    "createdAt": "2026-07-12T06:09:46+02:00",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "menu-des-iles-flic-en-flac",
@@ -6900,7 +7050,6 @@
     "themes": [
       "restaurants"
     ],
-    "badge": "selection",
     "zone": "nord",
     "description": "Petite cantine (\"petit corridor\") en retrait de la Royal Road à Grand Baie, réputée pour ses raviolis chinois (poulet, porc, poisson, calamar, agneau) et ses bols de nouilles frites. Places limitées, souvent à emporter ; ouvert 11h-19h sauf dimanche.",
     "priceRange": "bon-marche",
@@ -6910,7 +7059,14 @@
       "asiatique"
     ],
     "createdAt": "2026-07-12T07:06:58+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488103-d2687375-Reviews-Ti_Kouloir-Grand_Baie.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488103-d2687375-Reviews-Ti_Kouloir-Grand_Baie.html",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "le-5-terre-restaurant-et-pinsa",
@@ -7051,7 +7207,6 @@
     "themes": [
       "restaurants"
     ],
-    "badge": "selection",
     "zone": "nord",
     "hours": "Lun, Mer, Dim 18h-21h45",
     "description": "Restaurant de bord de mer à Grand Baie ouvert en 2009. Large choix de spécialités italiennes (pizzas, pâtes, antipasti...) réalisées dans les règles de l'art \"à la romaine\", pâtes et pizzas maison (pâte reposée 24h). Possibilité de commander en ligne et de venir récupérer sur place.",
@@ -7059,7 +7214,14 @@
       "italien"
     ],
     "createdAt": "2026-07-12T07:06:58+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488103-d2499716-Reviews-Mamma_Mia_Restaurant_Pizzeria-Grand_Baie.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488103-d2499716-Reviews-Mamma_Mia_Restaurant_Pizzeria-Grand_Baie.html",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "the-beach-kitchen-restaurant",
@@ -7124,7 +7286,6 @@
     "themes": [
       "restaurants"
     ],
-    "badge": "selection",
     "zone": "nord",
     "hours": "Mar-Sam 18h-21h30, Dim 12h-14h30 et 18h-21h30, fermé Lun",
     "description": "Restaurant thaï réputé et abordable de Pereybère/Grand Baie, décor bouddhas et soieries. Tom yum, curry vert, poisson au tamarin, pad thaï, options véganes.",
@@ -7132,7 +7293,14 @@
       "asiatique"
     ],
     "createdAt": "2026-07-12T07:06:58+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g1905319-d1907172-Reviews-Wang_Thai-Pereybere.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g1905319-d1907172-Reviews-Wang_Thai-Pereybere.html",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "the-garden-grill",
@@ -7366,14 +7534,20 @@
     "themes": [
       "restaurants"
     ],
-    "badge": "selection",
     "zone": "nord",
     "description": "Restaurant du centre de Grand Baie (La Salette Road), spécialités créoles, poissons et fruits de mer (vivaneau du jour, plateaux de fruits de mer), musique live le vendredi. Service parfois jugé lent.",
     "filters": [
       "mauricienne"
     ],
     "hours": "Tlj 9h-00h",
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "esprit-libre-hotel-grand-baie",
@@ -7578,7 +7752,6 @@
     "themes": [
       "restaurants"
     ],
-    "badge": "selection",
     "zone": "ouest",
     "description": "Restaurant au décor blanc et bleu évoquant un paquebot (« pakbo » en créole) : maquette de bateau au plafond, filets de pêche et bouées aux murs. Cuisine mauricienne et indienne, tagliatelles aux fruits de mer et curry de crevettes au lait de coco, petit lounge à cocktails à l'entrée.",
     "filters": [
@@ -7586,7 +7759,14 @@
     ],
     "hours": "Lun-Mer + Ven-Dim 10h-21h30, fermé jeu",
     "createdAt": "2026-07-12T07:06:58+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g298343-d9754708-Reviews-Pakbo-Flic_En_Flac.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g298343-d9754708-Reviews-Pakbo-Flic_En_Flac.html",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "la-marmite-mauricienne-flic-en-flac-restaurant",
@@ -7803,7 +7983,6 @@
     "themes": [
       "restaurants"
     ],
-    "badge": "selection",
     "zone": "ouest",
     "description": "Jardin tropical caché derrière un grand mur à l'entrée de Flic en Flac, près du Klondike Hotel, cuisine mauricienne et européenne aux produits de saison et fruits de mer. Bar extérieur et musique live le week-end, ambiance intime.",
     "filters": [
@@ -7812,7 +7991,14 @@
     ],
     "hours": "Lun + Mer-Dim 11h30-15h & 18h-22h, fermé mar",
     "createdAt": "2026-07-12T07:06:58+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g298343-d1215537-Reviews-Sunset_Garden-Flic_En_Flac.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g298343-d1215537-Reviews-Sunset_Garden-Flic_En_Flac.html",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "mare-mare-beach-restaurant",
@@ -8026,7 +8212,6 @@
     "themes": [
       "restaurants"
     ],
-    "badge": "selection",
     "zone": "ouest",
     "description": "Pizzeria italienne à l'angle d'Anthurium Lane à Tamarin, pizzas fines au feu de bois et pâtes fraîches maison. Ambiance rustique animée ; service parfois ralenti aux heures d'affluence.",
     "hours": "Mar-Dim 10h-15h & 18h-22h",
@@ -8034,7 +8219,14 @@
       "italien"
     ],
     "createdAt": "2026-07-12T07:06:58+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g580097-d7142519-Reviews-La_Cosa_Nostra-Tamarin.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g580097-d7142519-Reviews-La_Cosa_Nostra-Tamarin.html",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "tabagie-nationale",
@@ -8114,7 +8306,6 @@
       "restaurants",
       "cafes-bars-glaciers"
     ],
-    "badge": "selection",
     "zone": "ouest",
     "hours": "Dim fermé, Lun-Jeu 18h30-22h, Ven-Sam 18h30-22h30",
     "description": "Restaurant italien du chef Rocco à La Mivoie (route royale, Rivière Noire/Tamarin), recettes sardes et siciliennes faites maison et glaces artisanales. Agréable terrasse couverte et jardin extérieur avec musique live le week-end ; jouxte une épicerie italienne.",
@@ -8123,7 +8314,14 @@
       "cafes-terrasses"
     ],
     "createdAt": "2026-07-12T07:06:58+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g580097-d20964285-Reviews-S_arrastu-Tamarin.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g580097-d20964285-Reviews-S_arrastu-Tamarin.html",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "roots-spirits",
@@ -8223,7 +8421,6 @@
     "themes": [
       "restaurants"
     ],
-    "badge": "selection",
     "zone": "ouest",
     "description": "Grill familial à ciel ouvert sur la Coastal Road de Flic en Flac, poulet et poisson grillés devant le restaurant. Curry d'ourite et grillades mixtes (agneau-poulet) réputés, portions généreuses à petit prix ; ouvert 10h-15h et 18h-22h.",
     "filters": [
@@ -8232,7 +8429,14 @@
     ],
     "hours": "Fermé lun, Mar-Jeu 18h-22h, Ven 18h-22h30, Sam 18h30-23h, Dim 16h-22h",
     "createdAt": "2026-07-12T07:06:58+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g298343-d17406462-Reviews-Marco_Polo_Resto_Grill_Bar-Flic_En_Flac.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g298343-d17406462-Reviews-Marco_Polo_Resto_Grill_Bar-Flic_En_Flac.html",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "twin-s-garden-ii",
@@ -8247,14 +8451,20 @@
     "themes": [
       "restaurants"
     ],
-    "badge": "selection",
     "zone": "ouest",
     "description": "Restaurant créé par des frères jumeaux de Montpellier dans un jardin exotique de la Coastal Road à Flic en Flac, buffet mauricien-français revisité. Soirée séga et buffet le vendredi (Rs 1000) ; ouvert 17h-1h, fermé le lundi.",
     "filters": [
       "mauricienne"
     ],
     "hours": "Mar-Dim 9h30-14h30 & 17h-00h, fermé lun",
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "mama-helene-so-lakwizine-table-d-hotes-cuisine-locale-creole-chez-l-habitant",
@@ -8291,7 +8501,6 @@
     "themes": [
       "restaurants"
     ],
-    "badge": "selection",
     "zone": "ouest",
     "description": "Petit restaurant familial de Flic en Flac (aussi connu sous \"Chez May\"), spécialités créoles à base de légumes BIO. Menu unique : festin créole multi-plats (riz, poulet, poulpe, saucisses créoles, légumes, dessert, rhum) pour environ Rs 1000/pers. Réservation obligatoire, peu de tables.",
     "filters": [
@@ -8299,7 +8508,14 @@
       "produits-bio"
     ],
     "createdAt": "2026-07-12T07:06:58+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g298343-d6435028-Reviews-Canne_a_Sucre_Chez_May-Flic_En_Flac.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g298343-d6435028-Reviews-Canne_a_Sucre_Chez_May-Flic_En_Flac.html",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "cilantro",
@@ -8394,7 +8610,6 @@
     "themes": [
       "restaurants"
     ],
-    "badge": "selection",
     "zone": "ouest",
     "hours": "Tous les jours 8h-15h30 (brunch Dim 11h30-15h30)",
     "description": "Éco-lodge et concept familial de Black River combinant guesthouse, café, boutique et restaurant végétarien/végan. Cuisine farm-to-table : wraps, salades, burgers végétaux, produits locaux.",
@@ -8403,7 +8618,14 @@
       "produits-locaux"
     ],
     "createdAt": "2026-07-12T07:06:58+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g951345-d17729385-Reviews-Vanilla_Cafe-Riviere_Noire.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g951345-d17729385-Reviews-Vanilla_Cafe-Riviere_Noire.html",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "the-chaser-mauritian-bistro",
@@ -8521,7 +8743,6 @@
     "themes": [
       "restaurants"
     ],
-    "badge": "selection",
     "zone": "ouest",
     "description": "Petit restaurant de Flic en Flac tenu par un patron mauricien qui cuisine lui-même, produits frais et portions généreuses (agneau, poulpe, langouste sur commande).",
     "filters": [
@@ -8529,7 +8750,14 @@
     ],
     "hours": "Lun-Sam 12h-15h, fermé dim",
     "createdAt": "2026-07-12T07:06:58+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g298343-d8131613-Reviews-Recif_Bleu_Blue_Recif-Flic_En_Flac.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g298343-d8131613-Reviews-Recif_Bleu_Blue_Recif-Flic_En_Flac.html",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "frenchie-cafe",
@@ -8616,14 +8844,20 @@
     "themes": [
       "restaurants"
     ],
-    "badge": "selection",
     "zone": "ouest",
     "description": "Petit bar-restaurant de l'Avenue Nenuphar à Flic en Flac, cabane rustique prolongée d'un jardin aux couleurs africaines et lanternes. Carte courte de produits frais (burgers, fish & chips, pavé de bœuf angus), Ti Punch maison ; concerts live mercredi et vendredi.",
     "filters": [
       "grillades"
     ],
     "hours": "Fermé dim-lun, Mar 18h-22h30, Mer 18h-23h, Jeu 18h-22h30, Ven 18h-23h30, Sam 18h-23h",
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "oasis-beach-bar",
@@ -8701,13 +8935,19 @@
     "themes": [
       "restaurants"
     ],
-    "badge": "selection",
     "zone": "ouest",
     "description": "Restaurant de grillades au cœur de Flic en Flac, viandes marinées, poissons grillés et spécialités locales (boulette chou-chou). Portions généreuses, réservation conseillée le week-end.",
     "filters": [
       "grillades"
     ],
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "le-kiosk-ruisseau-creole",
@@ -8903,7 +9143,6 @@
     "themes": [
       "restaurants"
     ],
-    "badge": "selection",
     "zone": "sud",
     "hours": "Tous les jours 9h-16h30",
     "description": "Perché à 260 mètres d'altitude à Chamarel, avec une vue dégagée sur la côte ouest et la presqu'île du Morne. L'ambiance reste familiale, dans un décor aux accents créoles, pour une carte mêlant plats locaux et influences européennes.",
@@ -8911,7 +9150,14 @@
       "mauricienne"
     ],
     "createdAt": "2026-07-12T07:06:58+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g1168948-d1049862-Reviews-Le_Chamarel_Panoramic_Restaurant-Chamarel.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g1168948-d1049862-Reviews-Le_Chamarel_Panoramic_Restaurant-Chamarel.html",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "restaurant-les-palmiers-chez-dev",
@@ -8926,7 +9172,6 @@
     "themes": [
       "restaurants"
     ],
-    "badge": "selection",
     "zone": "sud",
     "hours": "Tous les jours 9h-16h",
     "description": "Table d'hôtes familiale de Chamarel, cuisine mauricienne authentique avec fruits et légumes de leur propre potager bio.",
@@ -8935,7 +9180,14 @@
       "produits-bio"
     ],
     "createdAt": "2026-07-12T07:06:58+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g1168948-d3773643-Reviews-Les_Palmiers_Chez_Dev_Restaurant-Chamarel.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g1168948-d3773643-Reviews-Les_Palmiers_Chez_Dev_Restaurant-Chamarel.html",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "chez-pierre-paul",
@@ -9088,14 +9340,20 @@
       "cafes-bars-glaciers"
     ],
     "zone": "sud",
-    "badge": "selection",
     "hours": "Tous les jours 16h30-19h30",
     "description": "Bar perché sur les hauteurs du domaine de Lakaz Chamarel, à Piton Canot, avec une vue panoramique sur les terres colorées de Chamarel jusqu'à la mer. Réputé pour ses couchers de soleil \"magiques\", ses cocktails travaillés (dont le Chamarel Passion Mojito) et son ambiance intimiste ; DJ live le samedi soir. Ouvert tous les jours de 16h30 à 19h30, accessible aux résidents comme aux visiteurs sur réservation.",
     "filters": [
       "plus-belles-vues",
       "bars"
     ],
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "la-table-du-currybou",
@@ -9835,14 +10093,20 @@
       "restaurants"
     ],
     "priceRange": "bon-marche",
-    "badge": "selection",
     "zone": "sud",
     "description": "Restaurant de la Savanne Coast Road à Saint Martin, cuisine créole authentique (poisson grillé sauce créole, dholl puri) préparée avec soin. Vue sur la côte, idéal juste avant le coucher du soleil ; ouvert 11h30-20h30.",
     "filters": [
       "mauricienne"
     ],
     "hours": "Tlj 11h30-20h30",
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "le-tropical",
@@ -10068,7 +10332,6 @@
     "themes": [
       "restaurants"
     ],
-    "badge": "selection",
     "zone": "sud",
     "hours": "Lun-Sam 9h-17h, fermé Dim",
     "description": "Restaurant tout en verre du Domaine de Bois Chéri, perché en bordure du lac de cratère des Cygnes depuis 2008. Vue superbe sur le lagon, le lac et les champs de thé. Cuisine mauricienne traditionnelle soignée, avec de nombreuses préparations à base des thés du domaine (poulet au thé vert, chutney de thé, etc.). Plats environ 500 à 1 600 Rs.",
@@ -10077,7 +10340,14 @@
       "plus-belles-vues"
     ],
     "createdAt": "2026-07-12T07:06:58+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g2027591-d2431137-Reviews-Bois_Cheri-Bois_Cheri.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g2027591-d2431137-Reviews-Bois_Cheri-Bois_Cheri.html",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "saveurs-otentik-restaurant",
@@ -10247,7 +10517,6 @@
     "themes": [
       "restaurants"
     ],
-    "badge": "selection",
     "promoText": "Testé par nous : terrasse très agréable au cœur du parc de l'Aventure du Sucre, produits frais et bien cuisinés, jolie présentation, superbes boissons fraîches aux herbes du jardin.",
     "zone": "nord",
     "description": "Installé dans les jardins de l'ancienne usine sucrière de Beau Plan, à côté du site de l'Aventure du Sucre. La carte met en avant les racines créoles de l'île dans un décor industriel et patrimonial.",
@@ -10256,7 +10525,14 @@
       "mauricienne"
     ],
     "createdAt": "2026-07-12T07:06:58+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g804550-d2019949-Reviews-Le_Fangourin_Restaurant-Pamplemousses.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g804550-d2019949-Reviews-Le_Fangourin_Restaurant-Pamplemousses.html",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "les-robinsons-restaurant-bar",
@@ -10368,7 +10644,6 @@
       "restaurants",
       "cafes-bars-glaciers"
     ],
-    "badge": "selection",
     "zone": "sud",
     "hours": "Dim-Mer 12h-21h30, Jeu 7h-15h30, Ven-Sam 12h-23h",
     "description": "Adresse animée en bord de route côtière à Pointe d'Esny, à deux pas de la plage publique de Blue Bay. Cuisine cajun-créole, pizzas fines et croustillantes réputées parmi les meilleures de l'île, calamars frits généreux. Ambiance plage rustique et éclairage tamisé le soir, musique live.",
@@ -10377,7 +10652,14 @@
       "cafes-terrasses"
     ],
     "createdAt": "2026-07-12T07:06:58+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488102-d19492765-Reviews-The_Spot_Cafe-Blue_Bay.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488102-d19492765-Reviews-The_Spot_Cafe-Blue_Bay.html",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "sunset-snack",
@@ -10413,7 +10695,6 @@
     "themes": [
       "restaurants"
     ],
-    "badge": "selection",
     "zone": "sud",
     "description": "Petite adresse tenue par deux personnes accueillantes, sur rue Souffleur à Mahébourg. Cuisine simple, copieuse et très bon marché : panini au marlin fumé, poisson frit, riz frit, samoussas. Ambiance décontractée avec parfois un groupe local en live (reggae bar) — une adresse authentique où les touristes se font rares.",
     "filters": [
@@ -10421,7 +10702,14 @@
     ],
     "hours": "Mar-Sam 18h-00h, fermé lun + dim",
     "createdAt": "2026-07-12T07:06:58+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g481079-d4606578-Reviews-L_Ajoupa-Mahebourg.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g481079-d4606578-Reviews-L_Ajoupa-Mahebourg.html",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "legend-golf-course",
@@ -11347,7 +11635,6 @@
     "themes": [
       "restaurants"
     ],
-    "badge": "selection",
     "zone": "nord",
     "description": "Ancienne bâtisse coloniale dominant la Rivière Citron et les vestiges du site de Balaclava. Le tarif est élevé pour les standards locaux, mais l'expérience est généralement saluée.",
     "priceRange": "se-faire-plaisir",
@@ -11359,7 +11646,14 @@
       "grillades"
     ],
     "createdAt": "2026-07-12T07:06:58+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488101-d2436528-Reviews-Chateau_Mon_Desir-Balaclava.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488101-d2436528-Reviews-Chateau_Mon_Desir-Balaclava.html",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "lakaz-sandrine",
@@ -11374,7 +11668,6 @@
     "themes": [
       "restaurants"
     ],
-    "badge": "selection",
     "promoText": "Poisson frais grillé au BBQ.",
     "zone": "nord",
     "description": "Table familiale de Cap Malheureux ouverte depuis 2019, face à la chapelle rouge, les pieds dans le sable sous un banian. Poisson grillé du jour ; avis partagés sur la transparence des prix (pas de carte affichée).",
@@ -11383,7 +11676,14 @@
     ],
     "hours": "Lun-Sam 11h30-15h, fermé dim",
     "createdAt": "2026-07-12T07:06:58+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g1187975-d27696910-Reviews-Lakaz_Sandrine-Cap_Malheureux.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g1187975-d27696910-Reviews-Lakaz_Sandrine-Cap_Malheureux.html",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "safran",
@@ -11522,7 +11822,6 @@
     "themes": [
       "restaurants"
     ],
-    "badge": "selection",
     "zone": "est",
     "description": "Petite table de Trou d'Eau Douce tenue par Noel, cuisine asiatique/mauricienne abordable, réputée pour ses boulettes et nouilles.",
     "filters": [
@@ -11531,7 +11830,14 @@
     ],
     "hours": "Lun-Ven 11h30-14h30, fermé sam-dim",
     "createdAt": "2026-07-12T07:06:58+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488107-d10047422-Reviews-Les_Alizes-Trou_d_eau_Douce.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488107-d10047422-Reviews-Les_Alizes-Trou_d_eau_Douce.html",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "coin-bistro-by-casse-croute",
@@ -11575,7 +11881,6 @@
     "themes": [
       "restaurants"
     ],
-    "badge": "selection",
     "zone": "sud",
     "description": "Ancienne maison coloniale en bois du 19e siècle, toit de tôle, jardin arboré et cottages. Cuisine créole aux produits locaux : bouillon de crabe, currys, filet de cerf en saison, poisson du jour tout juste sorti du lagon. Cadre unique et plats généreux saluent par les avis, même si le service peut être lent aux heures de forte affluence.",
     "filters": [
@@ -11584,7 +11889,14 @@
     ],
     "hours": "Tous les jours 11h30-14h30 & 18h30-21h",
     "createdAt": "2026-07-12T07:06:58+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g481079-d2564847-Reviews-Le_Jardin_de_Beau_Vallon-Mahebourg.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g481079-d2564847-Reviews-Le_Jardin_de_Beau_Vallon-Mahebourg.html",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "le-bistrot-d-edwige",
@@ -11599,7 +11911,6 @@
     "themes": [
       "restaurants"
     ],
-    "badge": "selection",
     "zone": "sud",
     "description": "Bistrot ouvert tous les jours de 10h à 23h à Mahébourg, servant des plats typiquement mauriciens préparés avec soin dans une ambiance conviviale. Bonne réputation locale (plus de 800 abonnés sur sa page Facebook).",
     "filters": [
@@ -11607,7 +11918,14 @@
     ],
     "hours": "Tlj 10h-23h",
     "createdAt": "2026-07-12T07:06:58+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g293816-d3746287-Reviews-Le_Bistrot-Mauritius.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g293816-d3746287-Reviews-Le_Bistrot-Mauritius.html",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "taste-of-freedom",
@@ -11622,7 +11940,6 @@
     "themes": [
       "restaurants"
     ],
-    "badge": "selection",
     "zone": "sud",
     "description": "Food truck posé face à la baie de Mahébourg, quelques tables et tonneaux sous toile tendue, esprit rootsy et vue imprenable. Poissons ultra-frais et fruits de mer bien assaisonnés (poulpe et calamars grillés, poisson entier), soirée langouste le lundi. Service parfois lent car le chef cuisine pour toutes les tables, mais l'attente est unanimement jugée méritée. Cash only.",
     "filters": [
@@ -11630,7 +11947,14 @@
     ],
     "hours": "Ven-Sam 12h30-15h30 & 18h30-22h30, Lun + Jeu 18h30-22h30, Dim 12h30-16h, fermé mar + mer",
     "createdAt": "2026-07-12T07:06:58+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g481079-d26719552-Reviews-Taste_of_Freedom-Mahebourg.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g481079-d26719552-Reviews-Taste_of_Freedom-Mahebourg.html",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "la-vielle-rouge",
@@ -11674,7 +11998,6 @@
     "themes": [
       "restaurants"
     ],
-    "badge": "selection",
     "zone": "sud",
     "description": "Petite salle simple (une vingtaine de couverts) rue la Passe à Mahébourg, à l'accueil chaleureux et authentique. Spécialité de nouilles sauté aux fruits de mer, beignets croustillants en entrée, calamars croustillants — bon rapport qualité-prix et portions généreuses, service rapide.",
     "filters": [
@@ -11683,7 +12006,14 @@
     ],
     "hours": "Lun + Mer-Sam 10h30-18h, Dim 10h30-15h, fermé mar",
     "createdAt": "2026-07-12T07:06:58+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g481079-d5929130-Reviews-Snack_Coin_casse_croute-Mahebourg.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g481079-d5929130-Reviews-Snack_Coin_casse_croute-Mahebourg.html",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "1810-hotel-restaurant",
@@ -11848,14 +12178,20 @@
     "themes": [
       "restaurants"
     ],
-    "badge": "selection",
     "zone": "sud",
     "description": "Petit restaurant en front de mer à Mahébourg tenu par Kaushik Rungloll, cuisine asiatique (calamars, nouilles sautées, samoussas, crevettes à l'ail). Bon rapport qualité-prix.",
     "filters": [
       "asiatique"
     ],
     "createdAt": "2026-07-12T07:06:58+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g481079-d2659063-Reviews-Salut_les_Copains-Mahebourg.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g481079-d2659063-Reviews-Salut_les_Copains-Mahebourg.html",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "le-phare-restaurant",
@@ -11899,7 +12235,6 @@
     "themes": [
       "restaurants"
     ],
-    "badge": "selection",
     "zone": "sud",
     "photoUrl": "/photos/ferney-falaise-rouge-restaurant.jpg",
     "photoUrls": [
@@ -11914,7 +12249,14 @@
       "plus-belles-vues"
     ],
     "createdAt": "2026-07-12T07:06:58+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g8791755-d9150172-Reviews-Ferney_Falaise_Rouge_Restaurant-Vieux_Grand_Port.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g8791755-d9150172-Reviews-Ferney_Falaise_Rouge_Restaurant-Vieux_Grand_Port.html",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "sea-fire-salt-restaurant",
@@ -11950,7 +12292,6 @@
     "themes": [
       "restaurants"
     ],
-    "badge": "selection",
     "zone": "sud",
     "description": "Petite table simple de Mahébourg. Spécialité \"Minn Bwi Mangwak\" (nouilles aux palourdes locales), nouilles au bœuf et crevettes créoles, ambiance familiale.",
     "filters": [
@@ -11959,7 +12300,14 @@
     ],
     "hours": "Ven-Sam 10h-21h, Lun-Mer + Dim 10h-14h, fermé jeu",
     "createdAt": "2026-07-12T07:06:58+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g481079-d20090264-Reviews-Chez_Francois-Mahebourg.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g481079-d20090264-Reviews-Chez_Francois-Mahebourg.html",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "blue-bay-snack-blue-bay-tuck-shop",
@@ -11995,7 +12343,6 @@
     "themes": [
       "restaurants"
     ],
-    "badge": "selection",
     "zone": "sud",
     "description": "Snack familial de la Rue de Labourdonnais à Mahébourg (près de la station-service), sans carte ni service à table : on choisit son plat en cuisine et on s'installe. Briani au poulet généreux et bien préparé, kebabs ; prix doux, ambiance locale conviviale.",
     "filters": [
@@ -12004,7 +12351,14 @@
     ],
     "hours": "Lun 9h-16h30, Mar-Ven 9h-15h, Sam 8h30-16h30, fermé dim",
     "createdAt": "2026-07-12T07:06:58+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g481079-d7928869-Reviews-Pyramid_Snack-Mahebourg.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g481079-d7928869-Reviews-Pyramid_Snack-Mahebourg.html",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "saveur-kreol",
@@ -12080,14 +12434,20 @@
     "themes": [
       "restaurants"
     ],
-    "badge": "selection",
     "zone": "sud",
     "description": "Institution du sud de l'île sur la route côtière de Blue Bay (aussi connue sous le nom Blue Bamboo), pizzas au feu de bois à la croûte croustillante préparées par des pizzaiolos aguerris, cuisine créole et cocktails. Ambiance festive, service très bien noté.",
     "filters": [
       "mauricienne"
     ],
     "createdAt": "2026-07-12T07:06:58+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g1182250-d1983007-Reviews-Blue_Bamboo-Pointe_d_Esny.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g1182250-d1983007-Reviews-Blue_Bamboo-Pointe_d_Esny.html",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "saltyvibes",
@@ -12335,7 +12695,6 @@
     "themes": [
       "restaurants"
     ],
-    "badge": "selection",
     "zone": "centre",
     "description": "Table gastronomique installée face aux plantations de thé Corson à Curepipe, décor \"usine chic\" mêlant modernité et tradition. Cuisine franco-créole mettant en avant le végétal (jacque au lait de coco et safran) ; salon privé jusqu'à 14 personnes, fermé le dimanche.",
     "filters": [
@@ -12344,7 +12703,14 @@
     ],
     "hours": "Lun 12h-15h, Mar-Sam 12h-15h & 19h-22h, fermé dim",
     "createdAt": "2026-07-12T07:06:58+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g480207-d2558936-Reviews-La_Potiniere_Curepipe-Curepipe.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g480207-d2558936-Reviews-La_Potiniere_Curepipe-Curepipe.html",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "volcan-restaurant",
@@ -15856,13 +16222,19 @@
     "themes": [
       "cafes-bars-glaciers"
     ],
-    "badge": "selection",
     "zone": "nord",
     "description": "Snack local de Grand Baie, cuisine mauricienne préparée à la commande, bon rapport qualité-prix selon les avis disponibles.",
     "filters": [
       "snacks-plage"
     ],
-    "createdAt": "2026-07-12T16:37:31+02:00"
+    "createdAt": "2026-07-12T16:37:31+02:00",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "nanda-snack",
@@ -15877,7 +16249,6 @@
     "themes": [
       "cafes-bars-glaciers"
     ],
-    "badge": "selection",
     "zone": "nord",
     "hours": "Lun-Sam 11h-21h, fermé Dim",
     "description": "Snack de la Route Royale à Grand Baie (aussi connu sous \"Chez Nanda\"), cuisine mauricienne et chinoise (soupe halim, riz frit) midi et soir.",
@@ -15885,7 +16256,14 @@
       "snacks-plage"
     ],
     "createdAt": "2026-07-12T16:37:31+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488103-d10842771-Reviews-Chez_Nanda-Grand_Baie.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488103-d10842771-Reviews-Chez_Nanda-Grand_Baie.html",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "la-jefa-loca",
@@ -15921,13 +16299,19 @@
     "themes": [
       "cafes-bars-glaciers"
     ],
-    "badge": "selection",
     "zone": "nord",
     "description": "Pizzeria-focacceria de Grand Baie tenue par Rishi Gukhool, formé en Italie (Sicile/Turin), pizzas au levain, pâtes et focaccias.",
     "filters": [
       "snacks-plage"
     ],
-    "createdAt": "2026-07-12T16:37:31+02:00"
+    "createdAt": "2026-07-12T16:37:31+02:00",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "sarbon-burger-grill",
@@ -16085,14 +16469,20 @@
     "themes": [
       "cafes-bars-glaciers"
     ],
-    "badge": "selection",
     "zone": "nord",
     "description": "Snack familial de la plage de Trou aux Biches fondé en 1979, cuisine locale abordable (repas complet dès 3€), rotis/farathas au poulet.",
     "filters": [
       "snacks-plage"
     ],
     "createdAt": "2026-07-12T16:37:31+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488106-d13219631-Reviews-Le_BluVital_Fast_Food_Snack-Trou_aux_Biches.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488106-d13219631-Reviews-Le_BluVital_Fast_Food_Snack-Trou_aux_Biches.html",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "mam-gouz",
@@ -16107,7 +16497,6 @@
     "themes": [
       "restaurants"
     ],
-    "badge": "selection",
     "promoText": "Excellentes crêpes, produits locaux et régionaux. Super accueil, service aux petits soins.",
     "zone": "nord",
     "description": "Crêperie bretonne authentique installée dans le complexe Dodo La Lodge à Grand Baie, tenue par un couple français attaché aux recettes traditionnelles de galettes de sarrasin et crêpes sucrées. Avis très positifs, produits de qualité, service chaleureux, face à la plage.",
@@ -16116,7 +16505,14 @@
     ],
     "hours": "Mer-Sam 11h30-21h, fermé dim + lun + mar",
     "createdAt": "2026-07-12T16:37:31+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g1905319-d23811683-Reviews-Mam_Gouz-Pereybere.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g1905319-d23811683-Reviews-Mam_Gouz-Pereybere.html",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "la-demeure-saint-antoine",
@@ -16966,7 +17362,6 @@
     ],
     "zone": "nord",
     "hours": "Lun-Jeu 7h45-17h30, Ven-Sam 7h45-19h30, Dim 8h-13h",
-    "badge": "selection",
     "photoUrl": "/photos/maison-des-crepes.jpg",
     "description": "Petite enseigne artisanale prisée à l'angle du Grand Bazaar. Crêpes et gaufres maison, sucrées et salées, avec options sans gluten et vegan, ainsi qu'un large choix de boissons maison (smoothies, infusions glacées, milkshakes). Le tout préparé avec grand soin ; avis unanimes sur la gentillesse du personnel, la personnalisation des commandes et un service aux petits soins.",
     "filters": [
@@ -16976,7 +17371,14 @@
       "boulangeries"
     ],
     "createdAt": "2026-07-12T16:37:31+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488103-d28153445-Reviews-Maison_Des_Crepes-Grand_Baie.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488103-d28153445-Reviews-Maison_Des_Crepes-Grand_Baie.html",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "la-table-du-chateau-labourdonnais",
@@ -16994,7 +17396,6 @@
     "zone": "nord",
     "hours": "Ouvert le midi uniquement",
     "priceRange": "se-faire-plaisir",
-    "badge": "selection",
     "photoUrl": "/photos/la-table-du-chateau.jpg",
     "description": "Restaurant du Domaine de Labourdonnais, tout juste réouvert (12 août 2026) après rénovation. Cadre sublime, décoration épurée et modernisée, ouverte sur les jardins du château. Cuisine soignée, produits très frais (tartare de bœuf, thon mi-cuit) — un vrai coup de cœur. Ouvert le midi uniquement.",
     "filters": [
@@ -17003,7 +17404,14 @@
       "plus-belles-vues"
     ],
     "createdAt": "2026-08-17T17:56:47+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g3331628-d2346648-Reviews-La_Table_du_Chateau-Mapou.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g3331628-d2346648-Reviews-La_Table_du_Chateau-Mapou.html",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "brandon-l-artisant-patissier",
@@ -20489,7 +20897,6 @@
     "themes": [
       "cafes-bars-glaciers"
     ],
-    "badge": "selection",
     "zone": "ouest",
     "hours": "Tous les jours 10h-18h",
     "description": "Kiosque de rue emblématique de Flic en Flac, considéré comme le vendeur de farata (roti) le plus célèbre du coin, garni au choix de poisson, bœuf, poulet ou légumes. Prix très bas, forte affluence. Ouvert tous les jours 10h-18h.",
@@ -20497,7 +20904,14 @@
       "snacks-plage"
     ],
     "createdAt": "2026-07-12T16:37:31+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g298343-d10911165-Reviews-Roti_Aka_Vinoda-Flic_En_Flac.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g298343-d10911165-Reviews-Roti_Aka_Vinoda-Flic_En_Flac.html",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "beach-house-grill",
@@ -20946,13 +21360,19 @@
     "themes": [
       "cafes-bars-glaciers"
     ],
-    "badge": "selection",
     "zone": "ouest",
     "description": "Petit stand de streetfood mauricienne à Flic en Flac/Rivière Noire : gâteaux piments, samoussas, rotis, nouilles et riz frits, boissons locales.",
     "filters": [
       "snacks-plage"
     ],
-    "createdAt": "2026-07-12T16:37:31+02:00"
+    "createdAt": "2026-07-12T16:37:31+02:00",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "la-vie-claire",
@@ -24262,7 +24682,6 @@
     "themes": [
       "restaurants"
     ],
-    "badge": "selection",
     "zone": "sud",
     "hours": "Tous les jours 11h30-16h (soir sur réservation uniquement)",
     "description": "Petit restaurant familial tenu par Marie-Ange et Rico à Chamarel, où la cuisine créole traditionnelle est préparée avec des produits du potager et du marché local, sous forme de buffet dont le menu change chaque jour.",
@@ -24270,7 +24689,14 @@
       "mauricienne"
     ],
     "createdAt": "2026-07-12T16:37:31+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g1168948-d1733765-Reviews-Le_Palais_de_Barbizon-Chamarel.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g1168948-d1733765-Reviews-Le_Palais_de_Barbizon-Chamarel.html",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "woolworths-so-flo-mauritius",
@@ -27305,7 +27731,6 @@
     "themes": [
       "restaurants"
     ],
-    "badge": "selection",
     "zone": "sud",
     "description": "Restaurant perché dans les arbres au sein de La Vanille Nature Park (Rivière des Anguilles), spécialité viande de crocodile (brochettes, cari, burger). Avis mitigés sur le rapport quantité/prix.",
     "filters": [
@@ -27314,7 +27739,14 @@
     ],
     "hours": "Tlj 11h-16h (dernières commandes), fermeture 17h",
     "createdAt": "2026-07-12T16:37:31+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g737038-d10087536-Reviews-Crocodile_Affame-Riviere_des_Anguilles.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g737038-d10087536-Reviews-Crocodile_Affame-Riviere_des_Anguilles.html",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "beach-rouge-lux-grand-gaube",
@@ -31238,7 +31670,6 @@
       "cafes-bars-glaciers"
     ],
     "zone": "nord",
-    "badge": "selection",
     "koteMorisComment": "Gros coup de cœur pour les pâtisseries : éclairs, cheesecakes, tarte passion meringuée, tarte aux noix de pécan caramélisées... on a envie de tout goûter ! Les plats peuvent aussi être pris à emporter, avec un excellent rapport qualité-prix.",
     "photoUrl": "/photo-florensuc-1.jpg",
     "photoUrls": [
@@ -31253,7 +31684,14 @@
       "cafes-terrasses"
     ],
     "createdAt": "2026-07-12T16:37:31+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488106-d17752744-Reviews-Florensuc_Patisserie-Trou_aux_Biches.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488106-d17752744-Reviews-Florensuc_Patisserie-Trou_aux_Biches.html",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "la-boite-a-gateaux-ile-maurice",
@@ -31472,14 +31910,20 @@
     "zone": "nord",
     "hours": "Lun-Sam 11h-22h, Dim soir buffet à volonté",
     "priceRange": "se-faire-plaisir",
-    "badge": "selection",
     "description": "Sushi Cabaret dans une ambiance feutrée aux murs rouges et bois poli, bossa nova en fond sonore. Cuisine japonaise créative et généreuse (sushis, truffe, foie gras, tempuras), buffet à volonté le dimanche soir. Clients unanimes sur la fraîcheur des produits et l'ambiance, quelques bémols ponctuels sur le service en soirée très fréquentée.",
     "filters": [
       "sushis",
       "asiatique"
     ],
     "createdAt": "2026-07-12T16:37:31+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488103-d29037369-Reviews-Tambourine-Grand_Baie.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488103-d29037369-Reviews-Tambourine-Grand_Baie.html",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "hangout-restaurant",
@@ -31915,7 +32359,6 @@
     ],
     "hours": "Mar-Dim 12h-15h & 18h-22h30, fermé lun",
     "priceRange": "se-faire-plaisir",
-    "badge": "selection",
     "promoText": "Belles présentations, portions correctes, excellents desserts — haut de gamme mais raisonnable.",
     "zone": "nord",
     "description": "Table de l'hôtel InterContinental Balaclava Fort, Ségala propose une cuisine créole modernisée d'inspiration méditerranéenne (soupes, salades fraîches, grillades de viandes et de poissons), servie en salle ou en terrasse face à l'océan. Cadre élégant, service attentif ; fermé le lundi, dress code smart casual.",
@@ -31924,7 +32367,14 @@
       "fruits-de-mer"
     ],
     "createdAt": "2026-07-12T17:03:39+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488101-d17847670-Reviews-Segala-Balaclava.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488101-d17847670-Reviews-Segala-Balaclava.html",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "quarter-deck-bar-maritim-balaclava",
@@ -31940,7 +32390,6 @@
       "cafes-bars-glaciers"
     ],
     "priceRange": "prix-moyen",
-    "badge": "selection",
     "promoText": "Cadre et ambiance exceptionnels façon vieux gréement ; cocktails à prix très raisonnable.",
     "zone": "nord",
     "hours": "Tous les jours 9h-1h",
@@ -31948,7 +32397,14 @@
     "filters": [
       "bars"
     ],
-    "createdAt": "2026-07-12T17:03:39+02:00"
+    "createdAt": "2026-07-12T17:03:39+02:00",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "mine-saint-pierre-mangouste",
@@ -31966,7 +32422,6 @@
     "hours": "Lun-Mar & Jeu-Sam 11h-16h, fermé mer et dim",
     "priceRange": "bon-marche",
     "takeaway": true,
-    "badge": "selection",
     "promoText": "Mine frit sino-mauricien à moins de 3€ ; service très bien organisé malgré l’affluence du midi.",
     "zone": "centre",
     "description": "Aussi connu sous le nom de Chez Jacques, ce petit établissement de L'Agrément Road à Saint-Pierre sert des nouilles maison (mine bouilli, mine gros pois) depuis les années 1970.",
@@ -31974,7 +32429,14 @@
       "asiatique",
       "mauricienne"
     ],
-    "createdAt": "2026-07-13T04:56:37+02:00"
+    "createdAt": "2026-07-13T04:56:37+02:00",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "chez-stephanie-mont-choisy",
@@ -31989,7 +32451,6 @@
     "themes": [
       "restaurants"
     ],
-    "badge": "selection",
     "takeaway": true,
     "promoText": "Salade tropicale, sandwichs et plats créoles.",
     "zone": "nord",
@@ -31999,7 +32460,14 @@
       "mauricienne"
     ],
     "createdAt": "2026-07-13T12:11:25+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g304008-d4778242-Reviews-Stephanie_Snack_et_Restaurant-Mont_Choisy.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g304008-d4778242-Reviews-Stephanie_Snack_et_Restaurant-Mont_Choisy.html",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "restaurant-malizo",
@@ -32014,14 +32482,20 @@
     "themes": [
       "restaurants"
     ],
-    "badge": "selection",
     "promoText": "Cuisine italienne, et crêpes au goûter.",
     "zone": "nord",
     "description": "Restaurant méditerranéen de Trou aux Biches, repris par un nouveau propriétaire en 2023. Accueil décrit comme professionnel et chaleureux ; gamme de prix moyenne à élevée.",
     "filters": [
       "italien"
     ],
-    "createdAt": "2026-07-13T12:11:25+02:00"
+    "createdAt": "2026-07-13T12:11:25+02:00",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "la-charrette-dor",
@@ -32036,7 +32510,6 @@
     "themes": [
       "restaurants"
     ],
-    "badge": "selection",
     "promoText": "Cuisine mixte, italienne et créole.",
     "zone": "nord",
     "description": "Restaurant créole et de fruits de mer à Pointe aux Piments, au décor chic et soigné, à deux pas de la plage. Spécialités : poisson frit à la créole aux épices, curry créole, homard grillé et plateaux de fruits de mer, ainsi que des pizzas au feu de bois. Service attentionné et accueillant salué par les avis.",
@@ -32046,7 +32519,14 @@
       "fruits-de-mer",
       "italien"
     ],
-    "createdAt": "2026-07-13T12:11:25+02:00"
+    "createdAt": "2026-07-13T12:11:25+02:00",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "helenas-cafe",
@@ -32061,14 +32541,20 @@
     "themes": [
       "cafes-bars-glaciers"
     ],
-    "badge": "selection",
     "takeaway": true,
     "zone": "nord",
     "description": "Café en bord de mer sur la route de Mon Choisy à Cap Malheureux, réputé pour ses plats mauriciens et son bon café.",
     "filters": [
       "cafes-terrasses"
     ],
-    "createdAt": "2026-07-13T12:11:25+02:00"
+    "createdAt": "2026-07-13T12:11:25+02:00",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "restaurant-kanaco",
@@ -32083,7 +32569,6 @@
     "themes": [
       "restaurants"
     ],
-    "badge": "selection",
     "zone": "nord",
     "description": "Petit restaurant familial de Cap Malheureux fondé en 1984, cabane de pêcheur, réputé pour ses homards frais, curry de poisson/ourite et rhum arrangé maison.",
     "filters": [
@@ -32092,7 +32577,14 @@
     ],
     "hours": "Tous les jours 12h-15h & 18h-22h",
     "createdAt": "2026-07-13T12:11:25+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g1187975-d14005031-Reviews-Kanaco_Restaurant-Cap_Malheureux.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g1187975-d14005031-Reviews-Kanaco_Restaurant-Cap_Malheureux.html",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "amigo-restaurant-cap-malheureux",
@@ -32107,7 +32599,6 @@
     "themes": [
       "restaurants"
     ],
-    "badge": "selection",
     "promoText": "Cave à vins et bar à cocktails ; langouste, thon rouge, crevettes géantes.",
     "zone": "nord",
     "description": "Depuis près de quarante ans, Amigo est l'une des adresses de référence pour la langouste à l'Île Maurice, servie entière et grillée à la flamme, accompagnée de poissons frais et de plateaux de fruits de mer. Cadre convivial en bord de mer, personnel aux petits soins, quelques avis mentionnent un rapport qualité-prix élevé.",
@@ -32116,7 +32607,14 @@
     ],
     "hours": "Lun-Sam 11h30-14h30 & 18h30-22h30, fermé dim",
     "createdAt": "2026-07-13T15:59:05+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g1187975-d2500276-Reviews-Amigo_Restaurant-Cap_Malheureux.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g1187975-d2500276-Reviews-Amigo_Restaurant-Cap_Malheureux.html",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "chez-marilyn",
@@ -32131,7 +32629,6 @@
     "themes": [
       "restaurants"
     ],
-    "badge": "selection",
     "zone": "sud",
     "description": "Restaurant créole authentique de la rue de Labourdonnais à Mahébourg, apprécié pour son vindaye de poisson, sa daube de calamars, sa soupe de fruits de mer et ses currys. Accueil chaleureux, réservation conseillée.",
     "filters": [
@@ -32139,7 +32636,14 @@
       "frequente-locaux"
     ],
     "hours": "Lun 12h-17h, Mar + Jeu-Dim 18h-22h, fermé mer",
-    "createdAt": "2026-07-13T16:28:35+02:00"
+    "createdAt": "2026-07-13T16:28:35+02:00",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "naked-foods",
@@ -32154,7 +32658,6 @@
     "themes": [
       "cafes-bars-glaciers"
     ],
-    "badge": "selection",
     "zone": "sud",
     "description": "Cafe convivial de Pointe d Esny/Blue Bay (Main Coastal Road), reputee pour son pain au levain maison. Petit-dejeuner (crepes, mango bowl, plats faits maison), laits vegetaux disponibles.",
     "photoUrl": "/photos/naked-foods.jpg",
@@ -32162,7 +32665,14 @@
     "filters": [
       "cafes-terrasses"
     ],
-    "createdAt": "2026-07-13T16:28:35+02:00"
+    "createdAt": "2026-07-13T16:28:35+02:00",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "station-a",
@@ -32177,7 +32687,6 @@
     "themes": [
       "restaurants"
     ],
-    "badge": "selection",
     "zone": "sud",
     "description": "Restaurant-bar en bord de route royale à Baie du Cap, terrasse lumineuse avec vue dégagée sur le lagon et la mer. Cuisine mauricienne revisitée mêlée à la gastronomie française, concerts le samedi soir.",
     "filters": [
@@ -32186,7 +32695,14 @@
     ],
     "hours": "Lun 12h-15h, Mar-Dim 12h-15h & 18h-21h",
     "createdAt": "2026-07-13T16:28:35+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g2027561-d18546462-Reviews-Station_A-Baie_du_Cap.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g2027561-d18546462-Reviews-Station_A-Baie_du_Cap.html",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "kot-marie-michelle",
@@ -32223,7 +32739,6 @@
     "themes": [
       "cafes-bars-glaciers"
     ],
-    "badge": "selection",
     "hours": "Sam-Dim uniquement",
     "zone": "centre",
     "description": "Petit point de restauration de rue à Vacoas-Phoenix, connu pour ses roti dalpuri garnis de curry de haricots et de sauce rougaille, surtout le week-end.",
@@ -32231,7 +32746,14 @@
       "mauricienne",
       "snacks-plage"
     ],
-    "createdAt": "2026-07-13T16:36:01+02:00"
+    "createdAt": "2026-07-13T16:36:01+02:00",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "la-clef-des-champs",
@@ -32247,7 +32769,6 @@
       "restaurants"
     ],
     "priceRange": "se-faire-plaisir",
-    "badge": "selection",
     "zone": "centre",
     "hours": "Mer-Sam midi et soir (min. 10 pers., réservation), fermé Lun-Mar et Dim",
     "description": "Table gastronomique de l'Avenue Queen Mary à Floréal, cuisine française revisitée aux influences asiatiques et indiennes (cappuccino d'oursins, carpaccio de Saint-Jacques, souris d'agneau). Accueil personnalisé, souvent citée comme l'une des meilleures tables de l'île.",
@@ -32256,7 +32777,14 @@
       "tables-exception"
     ],
     "createdAt": "2026-07-13T16:51:24+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g2517030-d2571728-Reviews-La_Clef_des_Champs-Floreal.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g2517030-d2571728-Reviews-La_Clef_des_Champs-Floreal.html",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "flowers-of-paradise-mont-choisy",
@@ -32271,7 +32799,6 @@
     "themes": [
       "restaurants"
     ],
-    "badge": "selection",
     "zone": "nord",
     "description": "Restaurant de l'hôtel Flowers of Paradise, sous un toit de chaume face au lagon turquoise de Mont Choisy. Cuisine créole et française (poisson en feuille de bananier, grillades).",
     "priceRange": "se-faire-plaisir",
@@ -32280,7 +32807,14 @@
       "europeenne",
       "tables-exception"
     ],
-    "createdAt": "2026-07-13T16:53:08+02:00"
+    "createdAt": "2026-07-13T16:53:08+02:00",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "domaine-des-aubineaux",
@@ -32558,7 +33092,6 @@
     "description": "Glace artisanale slow-churned, fabriquée localement en petites quantités à Trou aux Biches à partir d'ingrédients locaux (enseigne originaire d'Afrique du Sud, dont l'usine mère est au Cap), dans une boutique refaite à neuf avec coin salon et terrasse. Considérée comme l'un des meilleurs glaciers du Nord, réputée pour ses parfums caramel salé, honeycomb et praliné-pécan. Cônes faits maison, options sans sucre et végan. Boule Rs 110, pot 500ml Rs 300.",
     "koteMorisComment": "Très bonnes glaces, à déguster sur place ou à emporter en pot de 500ml, avec des parfums originaux et qualitatifs. Nos coups de cœur validés : Fudge Coco, Coffee & Dark Chocolate, et Salted Caramel & Pecan / Pecans & Praline. Nous avons testé la glace vanille, onctueuse et crémeuse, juste parfaite. Un endroit agréable où l’on aime bien venir après l’école en famille.",
     "priceRange": "bon-marche",
-    "badge": "selection",
     "filters": [
       "glaciers",
       "kids-friendly"
@@ -32568,7 +33101,14 @@
     "photoUrls": [
       "/photos/kristens-ice-cream.jpg"
     ],
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488106-d19068258-Reviews-Kristen_s_Kick_Ass_Ice_Cream-Trou_aux_Biches.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488106-d19068258-Reviews-Kristen_s_Kick_Ass_Ice_Cream-Trou_aux_Biches.html",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "gelato-heaven-flic-en-flac",
@@ -32634,7 +33174,6 @@
     "promoText": "Cuisine plutôt méditerranéenne à base de produits frais (poisson selon la pêche du jour). Desserts délicieux à la présentation raffinée et soignée. Cadre très agréable au bord de la piscine.",
     "zone": "nord",
     "description": "Hôtel de bord de mer à Trou aux Biches dont la restauration est ouverte aux non-résidents : cadre calme face à la piscine, idéal pour une pause déjeuner ou pour télétravailler.",
-    "badge": "selection",
     "ttvFriendly": true,
     "photoUrl": "/photos/ava-beach.jpg",
     "filters": [
@@ -32642,7 +33181,14 @@
       "fruits-de-mer"
     ],
     "hours": "Tous les jours 7h-23h",
-    "createdAt": "2026-07-15T18:13:18+02:00"
+    "createdAt": "2026-07-15T18:13:18+02:00",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "zilwa-attitude-calodyne",
@@ -34464,7 +35010,6 @@
     "themes": [
       "cafes-bars-glaciers"
     ],
-    "badge": "selection",
     "description": "Glacier artisanal 100% naturel à l'intérieur du mall Mahogany : glaces sans conservateur ni additif, sauces maison, pâtes à gaufres et crêpes sans gluten, sans porc ni alcool ni gélatine animale. Une vingtaine de parfums qui changent (calamansi, snickers, vanille-mangue, fruit de la passion-pitaya, matcha, avocat-citron-gingembre...), plus crêpes salées et sucrées, gaufres, omelettes, jus maison et cafés latté végétal.",
     "entryPrice": "Rs 190 la boule, Rs 800 les 500ml",
     "zone": "nord",
@@ -34474,7 +35019,14 @@
     "phone": "+230 5430 7982",
     "hours": "Lun-Mar-Jeu-Ven-Sam 8h30-18h, Dim 8h30-15h",
     "koteMorisComment": "Gros coup de cœur pour ce glacier 100% naturel niché dans le mall Mahogany : glaces sans conservateur ni additif, sauces et pâtes à gaufres/crêpes maison sans gluten, une vingtaine de parfums qui tournent (calamansi, snickers, vanille-mangue, matcha, avocat-citron-gingembre...). Seul bémol, l'addition grimpe vite pour des glaces (190Rs la boule, 800Rs les 500ml) — mais la qualité est clairement au rendez-vous.",
-    "createdAt": "2026-07-19T16:57:45+02:00"
+    "createdAt": "2026-07-19T16:57:45+02:00",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "mahek-mahogany",
@@ -41175,13 +41727,19 @@
     ],
     "hours": "Mar-Dim",
     "priceRange": "prix-moyen",
-    "badge": "selection",
     "description": "Ristorante-pizzeria tenu par Andrea et Maila, une authentique adresse italienne à Trou aux Biches : pizzas au feu de bois, pâtes fraîches et tiramisu maison. Très bien noté par les clients pour son accueil chaleureux et son service rapide.",
     "zone": "nord",
     "filters": [
       "italien"
     ],
-    "createdAt": "2026-07-28T13:56:53+02:00"
+    "createdAt": "2026-07-28T13:56:53+02:00",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "dolce-vita-restaurant-belle-mare",
@@ -41274,7 +41832,6 @@
       "restaurants"
     ],
     "priceRange": "se-faire-plaisir",
-    "badge": "selection",
     "description": "Recommandation Maurice+ : cuisine fusion péruvienne, argentine et asiatique autour d'une cuisine ouverte au feu de bois et d'un bar à pisco. Présentation soignée, ceviches et grillades remarqués, ambiance animée avec musique live. Élu meilleur restaurant du nord de l'île par de nombreux avis. Sur réservation, prix élevé mais expérience jugée à la hauteur.",
     "zone": "nord",
     "filters": [
@@ -41282,7 +41839,14 @@
     ],
     "hours": "Dîner 19h-22h30, fermé dim",
     "createdAt": "2026-07-28T13:56:53+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488104-d12911115-Reviews-Inti_Lux_Grand_Gaube-Grand_Gaube.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488104-d12911115-Reviews-Inti_Lux_Grand_Gaube-Grand_Gaube.html",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "atlantis-diving-center-vellin-bhurtun",
@@ -41746,14 +42310,20 @@
     "themes": [
       "restaurants"
     ],
-    "badge": "selection",
     "zone": "nord",
     "description": "Restaurant du Club House du Labourdonnais Sports Club : cuisine snacking et européenne servie dans une ambiance bar-restaurant conviviale, avec un cadre magnifique donnant sur les terrains de sport (tennis, padel, football). Très bonne restauration, idéal après le sport ou pour un moment détente entre amis.",
     "filters": [
       "europeenne"
     ],
     "hours": "Lun-Sam 7h30-21h, fermé dim",
-    "createdAt": "2026-07-29T06:35:32+02:00"
+    "createdAt": "2026-07-29T06:35:32+02:00",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "orchestra-bagatelle-mall",
@@ -42443,7 +43013,6 @@
     "priceRange": "bon-marche",
     "zone": "nord",
     "description": "Bistrot caché au coeur de la pépinière Endemika, ouvert uniquement le midi et fermé le dimanche — possible de venir prendre un verre en journée. Cuisine maison et plats du jour au tableau, terrasse ombragée parmi les palmiers, accueil chaleureux. Une adresse familiale très appréciée dans le Nord pour son authenticité et son ambiance décontractée.",
-    "badge": "selection",
     "photoUrl": "/photos/la-mandrinette.jpg",
     "photoUrls": [
       "/photos/la-mandrinette.jpg",
@@ -42455,7 +43024,14 @@
       "mauricienne",
       "europeenne"
     ],
-    "createdAt": "2026-08-03T11:27:39+02:00"
+    "createdAt": "2026-08-03T11:27:39+02:00",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "le-french-rooftop",
@@ -53580,7 +54156,6 @@
       "restaurants",
       "cafes-bars-glaciers"
     ],
-    "badge": "selection",
     "promoText": "Vue splendide, les pieds dans le sable, du calme et un cheesecake à tomber !",
     "zone": "nord",
     "hours": "Tous les jours 9h-21h30",
@@ -53597,7 +54172,14 @@
       "europeenne",
       "bars"
     ],
-    "createdAt": "2026-08-13T05:31:56+02:00"
+    "createdAt": "2026-08-13T05:31:56+02:00",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "blue-water-diving-centre-trou-aux-biches",
@@ -58582,7 +59164,6 @@
     ],
     "hours": "Lun-Ven 7h30-18h, Sam 8h-17h, fermé dim et jours fériés",
     "priceRange": "prix-moyen",
-    "badge": "selection",
     "description": "Bistrot à ciel ouvert installé dans une ancienne serre à anthuriums du Domaine de Labourdonnais : poke bowls, pizzas, salades, bruschettas, plats de pâtes, burgers, tartare de bœuf, pavé de thon. Côté boissons : thés glacés maison (citron, citronnelle, calamondin, tamarin), milkshakes (vanille, chocolat, fraise, coco), limonade maison et jus Les Vergers de Labourdonnais. Cadre verdoyant apprécié pour un déjeuner au calme.",
     "filters": [
       "europeenne",
@@ -58597,7 +59178,14 @@
       "/photos/la-terrasse-labourdonnais-4.jpg"
     ],
     "createdAt": "2026-09-05T17:31:50+02:00",
-    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g3331628-d24116145-Reviews-La_Terrasse-Mapou.html"
+    "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g3331628-d24116145-Reviews-La_Terrasse-Mapou.html",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "ti-moris-labourdonnais",

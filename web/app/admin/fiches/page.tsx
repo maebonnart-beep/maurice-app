@@ -5,7 +5,7 @@ import Link from "next/link";
 import type { Business } from "@/lib/types";
 import { CATEGORY_MAP } from "@/data/categories";
 import { CriteriaFlowers, ESTIMATION_NOTE } from "@/components/ui/FrangipaniRating";
-import { RATING_CRITERIA, RATED_THEMES, HIGHLIGHT_NOTE, scoreFromRatings } from "@/lib/rating";
+import { RATING_CRITERIA, RATED_THEMES, HIGHLIGHT_NOTE, scoreFromRatings, selectionBadgeAllowed } from "@/lib/rating";
 
 const COMMON_FIELDS: { key: keyof Business; label: string }[] = [
   { key: "name", label: "Nom" },
@@ -228,11 +228,20 @@ export default function AdminFichesPage() {
               className="w-full rounded-lg border border-border bg-surface-2 px-3 py-2"
             >
               {BADGE_OPTIONS.map((o) => (
-                <option key={o.value} value={o.value}>
+                <option
+                  key={o.value}
+                  value={o.value}
+                  disabled={o.value === "selection" && !selectionBadgeAllowed(selected.themes)}
+                >
                   {o.label}
                 </option>
               ))}
             </select>
+            {!selectionBadgeAllowed(selected.themes) && (
+              <span className="block text-xs text-muted mt-1">
+                Restauration : pas de badge Sélection, la reco passe par les fleurs (5/5 sur un critère).
+              </span>
+            )}
           </label>
 
           <label className="block text-sm">
@@ -286,7 +295,7 @@ export default function AdminFichesPage() {
                 <div className="text-sm m-0 flex flex-wrap items-center gap-x-3 gap-y-1">
                   {score === null ? (
                     <span className="text-muted">
-                      Pas encore noté{form.badge === "selection" && " (badge Sélection affiché seul, sans fleurs)"}
+                      Pas encore noté
                     </span>
                   ) : (
                     <>

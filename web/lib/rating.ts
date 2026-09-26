@@ -81,21 +81,36 @@ export const ESTIMATION_MAX_LEVEL: KoteMorisLevel = 2;
 
 /**
  * Niveau de tri d'une fiche (non affiché) :
- * - badge « Sélection Koté Moris » → niveau 3 d'office (reco éditoriale) ;
  * - notes estimées (koteMorisRatingsSource "estimation") → plafonnées au niveau 2 ;
- * - notes issues d'une visite → niveau calculé sans plafond.
+ * - notes éditoriales / issues d'une visite → niveau calculé sans plafond.
+ * Le badge « Sélection » ne s'utilise plus pour la restauration (2026-09-26) : les
+ * anciennes reco KM food sont passées à 5/5 sur les 4 critères (4 fleurs).
  */
-export function levelFor(
-  score: number | null,
-  opts: { badge?: Business["badge"]; source?: Business["koteMorisRatingsSource"]; themes?: string[] }
-): KoteMorisLevel {
-  // Reco KM = 3 fleurs, limité aux rubriques couvertes par la grille (restauration).
-  if (opts.badge === "selection" && opts.themes?.some((t) => RATED_THEMES.includes(t))) return 3;
+export function levelFor(score: number | null, opts: { source?: Business["koteMorisRatingsSource"] }): KoteMorisLevel {
   const level = levelFromScore(score);
   if (opts.source === "estimation" && level > ESTIMATION_MAX_LEVEL) return ESTIMATION_MAX_LEVEL;
   return level;
 }
 
 export function koteMorisLevel(b: Business): KoteMorisLevel {
-  return levelFor(koteMorisScore(b), { badge: b.badge, source: b.koteMorisRatingsSource, themes: b.themes });
+  return levelFor(koteMorisScore(b), { source: b.koteMorisRatingsSource });
+}
+
+/**
+ * Reco de la rédaction : badge « Sélection » (hors restauration) ou, pour la
+ * restauration, les 4 critères à 5/5 en note éditoriale (pas une estimation).
+ */
+export function isEditorialPick(b: Business): boolean {
+  if (b.badge === "selection") return true;
+  const r = b.koteMorisRatings;
+  return (
+    b.koteMorisRatingsSource !== "estimation" &&
+    !!r &&
+    FLOWER_CRITERIA.every((c) => r[c.key] === HIGHLIGHT_NOTE)
+  );
+}
+
+/** Le badge « Sélection » est réservé aux fiches hors restauration (visites, activités…). */
+export function selectionBadgeAllowed(themes?: string[]): boolean {
+  return !themes?.some((t) => RATED_THEMES.includes(t));
 }
