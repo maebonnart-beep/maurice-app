@@ -1531,7 +1531,13 @@
       "grillades"
     ],
     "hours": "Mar-Sam 15h-23h, fermé dim et lun",
-    "createdAt": "2026-07-09T18:41:47+02:00"
+    "createdAt": "2026-07-09T18:41:47+02:00",
+    "koteMorisRatings": {
+      "gout": 5,
+      "accueil": 5,
+      "cadre": 4
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "park25-restaurant",
@@ -2135,7 +2141,13 @@
       "kids-friendly",
       "bars"
     ],
-    "createdAt": "2026-07-11T06:25:58+02:00"
+    "createdAt": "2026-07-11T06:25:58+02:00",
+    "koteMorisRatings": {
+      "gout": 5,
+      "accueil": 5,
+      "cadre": 5
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "ici-lux-grand-baie",
@@ -4171,7 +4183,14 @@
     "filters": [
       "bars"
     ],
-    "createdAt": "2026-07-11T18:29:40+02:00"
+    "createdAt": "2026-07-11T18:29:40+02:00",
+    "koteMorisRatings": {
+      "gout": 4,
+      "qualitePrix": 2,
+      "accueil": 3,
+      "cadre": 5
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "enso-la-gaulette",
@@ -4320,7 +4339,12 @@
     "filters": [
       "fruits-de-mer"
     ],
-    "createdAt": "2026-07-11T18:29:40+02:00"
+    "createdAt": "2026-07-11T18:29:40+02:00",
+    "koteMorisRatings": {
+      "gout": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "le-bazilic-mahebourg",
@@ -5263,7 +5287,12 @@
     "filters": [
       "europeenne"
     ],
-    "createdAt": "2026-07-11T18:51:59+02:00"
+    "createdAt": "2026-07-11T18:51:59+02:00",
+    "koteMorisRatings": {
+      "gout": 4,
+      "accueil": 4
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "le-rochester-souillac",
@@ -7681,7 +7710,14 @@
       "europeenne"
     ],
     "hours": "Tous les jours 7h-18h30",
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "koteMorisRatings": {
+      "gout": 4,
+      "qualitePrix": 3,
+      "accueil": 3,
+      "cadre": 3
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "creole-shack",
@@ -8667,7 +8703,14 @@
       "mauricienne"
     ],
     "hours": "Tous les jours 11h-22h",
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 4,
+      "accueil": 5,
+      "cadre": 4
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "teppanyaki",
@@ -10289,7 +10332,14 @@
       "kids-friendly"
     ],
     "hours": "Tlj 7h-10h30 & 19h-22h",
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "koteMorisRatings": {
+      "gout": 4,
+      "qualitePrix": 3,
+      "accueil": 3,
+      "cadre": 5
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "playa-restaurant-tamassa-resort",
@@ -10633,7 +10683,13 @@
     "filters": [
       "mauricienne"
     ],
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "koteMorisRatings": {
+      "gout": 4,
+      "accueil": 4,
+      "cadre": 4
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "blue-bar",
@@ -11314,7 +11370,13 @@
       "mauricienne"
     ],
     "hours": "Tlj 7h-10h & 18h30-22h",
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "koteMorisRatings": {
+      "gout": 4,
+      "accueil": 5,
+      "cadre": 5
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "escape-restaurant-bar",
@@ -13530,7 +13592,14 @@
       "asiatique"
     ],
     "hours": "Tlj 11h-22h",
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "koteMorisRatings": {
+      "gout": 2,
+      "qualitePrix": 3,
+      "accueil": 2,
+      "cadre": 3
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "elizabeth-burger-and-grill",
@@ -54384,7 +54453,13 @@
     "filters": [
       "bars"
     ],
-    "createdAt": "2026-08-13T05:51:27+02:00"
+    "createdAt": "2026-08-13T05:51:27+02:00",
+    "koteMorisRatings": {
+      "gout": 4,
+      "accueil": 4,
+      "cadre": 5
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "njoy-grand-baie",
