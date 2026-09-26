@@ -2170,9 +2170,9 @@ export default function DirectoryClient({
                 <div className="-mx-3 lg:mx-0 grid grid-cols-3 gap-1.5 lg:gap-3">
                   {(
                     [
-                      { key: "mot", label: "Mot-clé", img: "/recherche-icone-motcle.png" },
-                      { key: "categorie", label: "Catégories", img: "/recherche-icone-categories.png" },
-                      { key: "experience", label: "Expérience", img: "/recherche-icone-experience.png" },
+                      { key: "mot", label: "Mot-clé", hint: "Tape ce que tu cherches : plongée, brunch…", img: "/recherche-icone-motcle.png" },
+                      { key: "categorie", label: "Catégories", hint: "Parcours les adresses par rubrique", img: "/recherche-icone-categories.png" },
+                      { key: "experience", label: "Expérience", hint: "Un lieu ou un plan complet sur mesure", img: "/recherche-icone-experience.png" },
                     ] as const
                   ).map((b) => {
                     const on = b.key === "experience" && experienceOpen;
@@ -2212,15 +2212,19 @@ export default function DirectoryClient({
                           style={{ backdropFilter: "blur(6px)", WebkitBackdropFilter: "blur(6px)" }}
                         />
                         <span
-                          className="px-2.5 lg:px-3.5 py-1 rounded-pill leading-tight whitespace-nowrap"
+                          className="px-3 lg:px-4 py-1 rounded-pill text-[12px] lg:text-[15px] tracking-[.12em] uppercase leading-tight whitespace-nowrap text-white"
                           style={{
-                            background: "color-mix(in srgb, var(--surface) 82%, transparent)",
-                            backdropFilter: "blur(6px)",
-                            WebkitBackdropFilter: "blur(6px)",
-                            boxShadow: "0 2px 8px -3px rgba(6,50,56,.35)",
+                            background: "color-mix(in srgb, var(--primary-deep) 88%, transparent)",
+                            boxShadow: "0 2px 8px -3px rgba(6,50,56,.5)",
                           }}
                         >
                           {b.label}
+                        </span>
+                        <span
+                          className="text-[11px] lg:text-[13px] font-semibold leading-snug text-center max-w-[112px] lg:max-w-[170px]"
+                          style={{ textShadow: "0 0 6px rgba(255,255,255,.95), 0 0 2px rgba(255,255,255,.95)" }}
+                        >
+                          {b.hint}
                         </span>
                       </button>
                     );
