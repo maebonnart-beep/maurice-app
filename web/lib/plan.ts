@@ -37,8 +37,10 @@ export type RestoSetting = "plage" | "hotel" | "golf" | "tous";
 export interface PlanCriteria {
   who: PlanWho;
   zone: PlanZone;
-  activity: PlanActivity;
-  meal: PlanMeal;
+  /** Plusieurs types possibles : les fiches de tous les types cochés sont candidates. */
+  activity: PlanActivity[];
+  /** Plusieurs cuisines possibles (« aucun » et « tous » sont exclusifs côté interface). */
+  meal: PlanMeal[];
   maxMinutes: number;
 }
 
@@ -186,12 +188,13 @@ function hasGps(b: Business): b is Business & { lat: number; lng: number } {
  * (sauf GPS, indispensable) : on n'invente rien, on estime la durée et on le signale.
  */
 export function buildPlan(businesses: Business[], c: PlanCriteria): PlanCombo[] {
-  const act = PLAN_ACTIVITIES.find((a) => a.key === c.activity)!;
-  const wantsMeal = c.meal !== "aucun";
+  const acts = PLAN_ACTIVITIES.filter((a) => c.activity.includes(a.key));
+  const actOf = (b: Business) => acts.find((a) => (b.themes ?? []).some((t) => a.themes.includes(t))) ?? acts[0];
+  const wantsMeal = !c.meal.includes("aucun");
   const zoneOk = (b: Business) => c.zone === "partout" || b.zone === c.zone;
 
   let activities = businesses.filter(
-    (b) => hasGps(b) && zoneOk(b) && (b.themes ?? []).some((t) => act.themes.includes(t)),
+    (b) => hasGps(b) && zoneOk(b) && (b.themes ?? []).some((t) => acts.some((a) => a.themes.includes(t))),
   );
   if (c.who === "famille") {
     const kids = activities.filter(isKidsFriendly);
@@ -205,7 +208,7 @@ export function buildPlan(businesses: Business[], c: PlanCriteria): PlanCombo[] 
         (b) =>
           hasGps(b) &&
           (b.themes ?? []).includes("restaurants") &&
-          (c.meal === "tous" || (b.filters ?? []).includes(c.meal)),
+          (c.meal.length === 0 || c.meal.includes("tous") || c.meal.some((m) => (b.filters ?? []).includes(m))),
       )
     : [];
 
@@ -218,7 +221,7 @@ export function buildPlan(businesses: Business[], c: PlanCriteria): PlanCombo[] 
     // Une fiche déjà utilisée (comme étape d'un autre plan) n'est pas reproposée en départ.
     if (usedExtras.has(a.id)) continue;
     const parsed = parseDurationMinutes(a.duration);
-    const activityMinutes = parsed ?? act.defaultMinutes;
+    const activityMinutes = parsed ?? actOf(a).defaultMinutes;
 
     let restaurant: Business | undefined;
     let legKm: number | undefined;
@@ -249,13 +252,13 @@ export function buildPlan(businesses: Business[], c: PlanCriteria): PlanCombo[] 
     const extras: PlanExtraStop[] = [];
     const chosen = new Set<string>([a.id]);
     let anchor: Business = restaurant ?? a;
-    while (CHAINABLE.has(c.activity) && extras.length < MAX_EXTRA_STOPS) {
+    while (CHAINABLE.has(actOf(a).key) && extras.length < MAX_EXTRA_STOPS) {
       const next = sorted
         .filter((x) => !chosen.has(x.id) && !usedExtras.has(x.id))
         .map((x) => {
           const km = haversineKm(anchor.lat as number, anchor.lng as number, x.lat as number, x.lng as number);
           const parsedX = parseDurationMinutes(x.duration);
-          const minutes = parsedX ?? act.defaultMinutes;
+          const minutes = parsedX ?? actOf(x).defaultMinutes;
           const travel = Math.round(((km * ROAD_DETOUR) / ROAD_KMH) * 60);
           return { x, km, minutes, travel, estimated: parsedX === undefined };
         })
@@ -508,29 +511,39 @@ export function parsePlanText(text: string): Partial<PlanCriteria> {
     if (place) out.zone = place[0];
   }
 
-  if (/\b(rando|randonnee|randonnees|trek|trail|marche a pied|balade a pied)\b/.test(t)) out.activity = "rando";
-  else if (/\b(musee|musees|culture|culturel|patrimoine|histoire|visite)\b/.test(t)) out.activity = "culture";
-  else if (/\b(plage|plages|baignade|snorkeling|detente au bord)\b/.test(t)) out.activity = "plage";
-  else if (/\b(parc|parcs|jardin|zoo|accrobranche|quad|activite|activites|loisirs)\b/.test(t)) out.activity = "parc";
-  else if (/\b(excursion|excursions|sortie|sorties|bateau|catamaran|croisiere|balade)\b/.test(t)) out.activity = "excursion";
-  else if (/\b(sport|tennis|padel|golf|plongee|surf|kitesurf|kayak|paddle|equitation|cheval)\b/.test(t)) out.activity = "sport";
-  else if (/\b(spa|massage|massages|yoga|bien-etre|institut|detente)\b/.test(t)) out.activity = "bienetre";
-  else if (/\b(shopping|magasin|magasins|boutique|boutiques|mall|malls|souvenir|souvenirs|cadeau|cadeaux|vetements)\b/.test(t)) out.activity = "shopping";
-  else if (/\b(equiper|materiel|electromenager|high-tech|bricolage|meuble|meubles|deco)\b/.test(t)) out.activity = "equiper";
-  else if (/\b(marche|marches|produits locaux|fruits|legumes)\b/.test(t)) out.activity = "marche";
-  else if (/\b(bar|bars|cafe|cafes|cinema|casino|soiree|apero|glace|glacier|boire un verre)\b/.test(t)) out.activity = "sortie";
+  const actRules: [PlanActivity, RegExp][] = [
+    ["rando", /\b(rando|randonnee|randonnees|trek|trail|marche a pied|balade a pied)\b/],
+    ["culture", /\b(musee|musees|culture|culturel|patrimoine|histoire|visite)\b/],
+    ["plage", /\b(plage|plages|baignade|snorkeling|detente au bord)\b/],
+    ["parc", /\b(parc|parcs|jardin|zoo|accrobranche|quad|activite|activites|loisirs)\b/],
+    ["excursion", /\b(excursion|excursions|sortie|sorties|bateau|catamaran|croisiere|balade)\b/],
+    ["sport", /\b(sport|tennis|padel|golf|plongee|surf|kitesurf|kayak|paddle|equitation|cheval)\b/],
+    ["bienetre", /\b(spa|massage|massages|yoga|bien-etre|institut|detente)\b/],
+    ["shopping", /\b(shopping|magasin|magasins|boutique|boutiques|mall|malls|souvenir|souvenirs|cadeau|cadeaux|vetements)\b/],
+    ["equiper", /\b(equiper|materiel|electromenager|high-tech|bricolage|meuble|meubles|deco)\b/],
+    ["marche", /\b(marche|marches|produits locaux|fruits|legumes)\b/],
+    ["sortie", /\b(bar|bars|cafe|cafes|cinema|casino|soiree|apero|glace|glacier|boire un verre)\b/],
+  ];
+  const acts = actRules.filter(([, re]) => re.test(t)).map(([k]) => k);
+  if (acts.length) out.activity = acts;
 
-  if (/\b(sans repas|pas de repas|sans resto|sans restaurant|pas de resto)\b/.test(t)) out.meal = "aucun";
-  else if (/\b(creole|mauricien|mauricienne|cuisine locale|locale)\b/.test(t)) out.meal = "mauricienne";
-  else if (/\b(poisson|poissons|fruits de mer|crustaces|crabe|crevettes)\b/.test(t)) out.meal = "fruits-de-mer";
-  else if (/\b(indien|indienne|curry|biryani)\b/.test(t)) out.meal = "indienne";
-  else if (/\b(sushi|sushis)\b/.test(t)) out.meal = "sushis";
-  else if (/\b(asiatique|chinois|chinoise|thai|thailandais|japonais)\b/.test(t)) out.meal = "asiatique";
-  else if (/\b(italien|italienne|pizza|pizzeria)\b/.test(t)) out.meal = "italien";
-  else if (/\b(grillade|grillades|viande|viandes|barbecue|steak)\b/.test(t)) out.meal = "grillades";
-  else if (/\b(vegetarien|vegetarienne|vegan|sans viande)\b/.test(t)) out.meal = "vegetarien";
-  else if (/\b(europeen|europeenne|francais)\b/.test(t)) out.meal = "europeenne";
-  else if (/\b(resto|restos|restaurant|manger|repas|dejeuner|diner|dejeuner)\b/.test(t)) out.meal = "tous";
+  if (/\b(sans repas|pas de repas|sans resto|sans restaurant|pas de resto)\b/.test(t)) out.meal = ["aucun"];
+  else {
+    const mealRules: [PlanMeal, RegExp][] = [
+      ["mauricienne", /\b(creole|mauricien|mauricienne|cuisine locale|locale)\b/],
+      ["fruits-de-mer", /\b(poisson|poissons|fruits de mer|crustaces|crabe|crevettes)\b/],
+      ["indienne", /\b(indien|indienne|curry|biryani)\b/],
+      ["sushis", /\b(sushi|sushis)\b/],
+      ["asiatique", /\b(asiatique|chinois|chinoise|thai|thailandais|japonais)\b/],
+      ["italien", /\b(italien|italienne|pizza|pizzeria)\b/],
+      ["grillades", /\b(grillade|grillades|viande|viandes|barbecue|steak)\b/],
+      ["vegetarien", /\b(vegetarien|vegetarienne|vegan|sans viande)\b/],
+      ["europeenne", /\b(europeen|europeenne|francais)\b/],
+    ];
+    const meals = mealRules.filter(([, re]) => re.test(t)).map(([k]) => k);
+    if (meals.length) out.meal = meals;
+    else if (/\b(resto|restos|restaurant|manger|repas|dejeuner|diner)\b/.test(t)) out.meal = ["tous"];
+  }
 
   // Durée : « 3h », « 2h30 », « 2 heures », « 90 min », « demi-journée », « journée ».
   const hm = t.match(/(\d+)\s*(?:h|heures?)\s*(\d{1,2})?/);

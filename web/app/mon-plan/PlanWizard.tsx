@@ -82,6 +82,48 @@ function Question<T extends string | number>({
   );
 }
 
+/** Comme Question, mais plusieurs puces cochables. Les clés `exclusive` (« Peu importe », « Pas de repas ») décochent les autres, et inversement. */
+function MultiQuestion<T extends string>({
+  title,
+  options,
+  values,
+  onChange,
+  exclusive = [],
+  icons,
+}: {
+  title: string;
+  options: { key: T; label: string }[];
+  values: T[];
+  onChange: (v: T[]) => void;
+  exclusive?: T[];
+  icons?: Record<string, string>;
+}) {
+  const toggle = (k: T) => {
+    if (exclusive.includes(k)) return onChange(values.includes(k) ? [] : [k]);
+    const base = values.filter((v) => !exclusive.includes(v));
+    onChange(base.includes(k) ? base.filter((v) => v !== k) : [...base, k]);
+  };
+  return (
+    <section className="mt-5">
+      <h2 className="text-[14px] font-extrabold text-ink">{title}</h2>
+      <div className="mt-2 flex flex-wrap gap-2">
+        {options.map((o) => {
+          const on = values.includes(o.key);
+          return (
+            <FilterChip key={o.key} active={on} onClick={() => toggle(o.key)}>
+              {icons?.[o.key] && (
+                // eslint-disable-next-line @next/next/no-img-element
+                <img src={icons[o.key]} alt="" aria-hidden className={`inline-block w-5 h-5 object-contain align-[-4px] mr-1 ${on ? "rounded-full bg-surface" : ""}`} />
+              )}
+              {o.label}
+            </FilterChip>
+          );
+        })}
+      </div>
+    </section>
+  );
+}
+
 const RESTO_PAGE_SIZE = 6;
 
 export default function PlanWizard({
@@ -98,8 +140,8 @@ export default function PlanWizard({
   const [mode, setMode] = useState<"lieu" | "plan">(initialMode);
   const [who, setWho] = useState<PlanWho>("famille");
   const [zone, setZone] = useState<PlanZone>(initialMode === "lieu" ? "partout" : "sud");
-  const [activity, setActivity] = useState<PlanActivity>("excursion");
-  const [meal, setMeal] = useState<PlanMeal>("mauricienne");
+  const [activity, setActivity] = useState<PlanActivity[]>(["excursion"]);
+  const [meal, setMeal] = useState<PlanMeal[]>(["mauricienne"]);
   const [maxMinutes, setMaxMinutes] = useState(180);
   const [submitted, setSubmitted] = useState<PlanCriteria | null>(null);
   const [page, setPage] = useState(0);
@@ -210,8 +252,8 @@ export default function PlanWizard({
     const labels = [
       found.who && PLAN_WHO.find((o) => o.key === found.who)?.label,
       found.zone && PLAN_ZONES.find((o) => o.key === found.zone)?.label,
-      found.activity && PLAN_ACTIVITIES.find((o) => o.key === found.activity)?.label,
-      found.meal && PLAN_MEALS.find((o) => o.key === found.meal)?.label,
+      found.activity && PLAN_ACTIVITIES.filter((o) => found.activity!.includes(o.key)).map((o) => o.label).join(" + "),
+      found.meal && PLAN_MEALS.filter((o) => found.meal!.includes(o.key)).map((o) => o.label).join(" + "),
       found.maxMinutes && `≤ ${formatMinutes(found.maxMinutes)}`,
     ].filter(Boolean);
     const missing = [
@@ -492,14 +534,21 @@ export default function PlanWizard({
 
       <Question title="Vous êtes ?" options={PLAN_WHO.map((o) => ({ key: o.key, label: o.label }))} value={who} onChange={setWho} icons={PLAN_WHO_ICONS} />
       <Question title="Où ?" options={PLAN_ZONES.map((o) => ({ key: o.key, label: o.label }))} value={zone} onChange={setZone} />
-      <Question
-        title="Quoi ?"
+      <MultiQuestion
+        title="Quoi ? (plusieurs choix possibles)"
         options={PLAN_ACTIVITIES.map((o) => ({ key: o.key, label: o.label }))}
-        value={activity}
-        onChange={setActivity}
+        values={activity}
+        onChange={(v) => setActivity(v.length ? v : activity)}
         icons={PLAN_ACTIVITY_ICONS}
       />
-      <Question title="Repas ?" options={PLAN_MEALS.map((o) => ({ key: o.key, label: o.label }))} value={meal} onChange={setMeal} icons={PLAN_MEAL_ICONS} />
+      <MultiQuestion
+        title="Repas ? (plusieurs choix possibles)"
+        options={PLAN_MEALS.map((o) => ({ key: o.key, label: o.label }))}
+        values={meal}
+        onChange={(v) => setMeal(v.length ? v : meal)}
+        exclusive={["tous", "aucun"]}
+        icons={PLAN_MEAL_ICONS}
+      />
       <Question
         title="Durée maximum (route et repas compris)"
         options={PLAN_DURATIONS.map((o) => ({ key: o.minutes, label: o.label }))}
