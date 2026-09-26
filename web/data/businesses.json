@@ -4433,7 +4433,6 @@
     ],
     "hours": "Lun-Ven 12h-15h, réservation requise (~950 Rs)",
     "priceRange": "prix-moyen",
-    "badge": "selection",
     "zone": "sud",
     "description": "La référence des tables d'hôtes à Moka, tenue par une mère et sa fille depuis plus de 25 ans. Cuisine 100% créole servie sous la varangue et au jardin, sans carte fixe (rougaille, vindaye, cari zourite selon le marché). Ouvert uniquement le midi, du lundi au vendredi, sur réservation.",
     "filters": [
@@ -4441,7 +4440,14 @@
       "tables-exception",
       "tables-hotes"
     ],
-    "createdAt": "2026-07-11T18:29:40+02:00"
+    "createdAt": "2026-07-11T18:29:40+02:00",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "la-table-matisse-curepipe",
@@ -5754,7 +5760,6 @@
     ],
     "hours": "Lun-Sam 12h-15h",
     "priceRange": "bon-marche",
-    "badge": "selection",
     "promoText": "Uniquement le midi ; cuisine locale, terrasse extérieure, sorbets maison.",
     "zone": "nord",
     "description": "Table d'hôte au cadre insolite, installée près du Jardin Botanique de Pamplemousses au milieu de voitures anciennes. Menu 3 services traditionnel mauricien, dans un jardin atypique.",
@@ -5762,7 +5767,14 @@
       "mauricienne",
       "tables-hotes"
     ],
-    "createdAt": "2026-07-12T05:19:04+02:00"
+    "createdAt": "2026-07-12T05:19:04+02:00",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "ebony-table-dhote-vacoas",
@@ -8479,14 +8491,20 @@
     "themes": [
       "tables-hotes-chefs-domicile"
     ],
-    "badge": "selection",
     "zone": "ouest",
     "description": "Table d'hôte confidentielle chez l'habitant à Flic en Flac, menu surprise entier fait maison. Très bien notée, réservation obligatoire.",
     "filters": [
       "mauricienne",
       "tables-hotes"
     ],
-    "createdAt": "2026-07-12T07:06:58+02:00"
+    "createdAt": "2026-07-12T07:06:58+02:00",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "canne-a-sucre",
@@ -32717,14 +32735,20 @@
     "themes": [
       "tables-hotes-chefs-domicile"
     ],
-    "badge": "selection",
     "zone": "sud",
     "description": "Table d'hôte à Midlands tenue par Marie-Michèlle, proposant une cuisine créole familiale à base de produits du potager, sur réservation uniquement.",
     "filters": [
       "mauricienne",
       "tables-hotes"
     ],
-    "createdAt": "2026-07-13T16:36:01+02:00"
+    "createdAt": "2026-07-13T16:36:01+02:00",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "baz-gato-dalpuri-roti",

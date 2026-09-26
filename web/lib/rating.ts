@@ -40,7 +40,7 @@ export function highlightedCriteria(b: Business): FlowerCriterion[] {
 }
 
 /** Rubriques couvertes par la grille (pensée pour la restauration). */
-export const RATED_THEMES = ["restaurants", "cafes-bars-glaciers"];
+export const RATED_THEMES = ["restaurants", "cafes-bars-glaciers", "tables-hotes-chefs-domicile"];
 
 /**
  * Score/niveau global : ne sert plus qu'au tri (liste, /mon-plan) — l'affichage
