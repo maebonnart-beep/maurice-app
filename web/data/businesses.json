@@ -53507,12 +53507,14 @@
       "evenements-sportifs"
     ],
     "description": "Trail phare de l'île Rodrigues, à travers sentiers herbeux, pistes naturelles, zones rocheuses et littoral. 5 formats : Tortue (7 km), Gecko (16 km), Solitaire (26 km), Perroquet (52 km) et Hibou (75 km). Inscriptions généralement ouvertes jusqu'à fin septembre sur trailderodrigues.com, tarifs revus à la hausse à partir du 1er juillet.",
-    "period": "Novembre",
+    "period": "8 novembre 2026",
     "eventRecurrence": "annuel-variable",
     "filters": [
       "trail"
     ],
-    "createdAt": "2026-09-01T12:18:31+02:00"
+    "createdAt": "2026-09-01T12:18:31+02:00",
+    "eventStartDate": "2026-11-08",
+    "eventEndDate": "2026-11-08"
   },
   {
     "id": "ring-trail-evt",
@@ -53593,7 +53595,7 @@
       "evenements-sportifs"
     ],
     "description": "Trail incontournable de Moka depuis 2012, plus de 2500 participants chaque année. 5 formats : Fun Jog (5 km), Deux Mamelles (7 km), Bar le Duc (10 km), Petit Both (15 km) et Grand Pouce (30 km). Inscriptions en ligne sur mokatrail.mu généralement jusqu'à mi-septembre (environ Rs 1250 à partir de 14 ans), retrait des dossards chez Decathlon Bagatelle.",
-    "period": "Octobre",
+    "period": "3 octobre 2026",
     "lat": -20.2072322,
     "lng": 57.5661485,
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Beau%20Bois%20Moka%20Mauritius",
@@ -53602,7 +53604,9 @@
     "filters": [
       "trail"
     ],
-    "createdAt": "2026-09-01T12:18:31+02:00"
+    "createdAt": "2026-09-01T12:18:31+02:00",
+    "eventStartDate": "2026-10-03",
+    "eventEndDate": "2026-10-03"
   },
   {
     "id": "avalon-trail-evt",
@@ -53614,8 +53618,8 @@
     "themes": [
       "evenements-sportifs"
     ],
-    "description": "Trail 100 % en pleine nature (parc national et terrain de chasse privé) autour de l'Avalon Golf Estate, à travers forêts et plaines peuplées de cerfs, sangliers et oiseaux endémiques. 2 formats : Trail de Lancelot (11 km, 300 m D+, sentiers parfois techniques) et Trail d'Arthur (19 km, 500 m D+, singletracks avec racines, boue et rochers, très technique). Date 2026 pressentie fin octobre, à confirmer sur le site officiel (inscriptions pas encore ouvertes). Départ et arrivée au golf, grand parking et espace détente après la course.",
-    "period": "Octobre",
+    "description": "Trail 100 % en pleine nature (parc national et terrain de chasse privé) autour de l'Avalon Golf Estate, à travers forêts et plaines peuplées de cerfs, sangliers et oiseaux endémiques. 2 formats : Trail de Lancelot (11 km, 300 m D+, sentiers parfois techniques) et Trail d'Arthur (19 km, 500 m D+, singletracks avec racines, boue et rochers, très technique). Édition 2026 le 31 octobre. Départ et arrivée au golf, grand parking et espace détente après la course.",
+    "period": "31 octobre 2026",
     "lat": -20.4440891,
     "lng": 57.5198045,
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Avalon%20Golf%20Estate%20Bois%20Cheri%20Mauritius",
@@ -53624,7 +53628,9 @@
     "filters": [
       "trail"
     ],
-    "createdAt": "2026-09-01T12:18:31+02:00"
+    "createdAt": "2026-09-01T12:18:31+02:00",
+    "eventStartDate": "2026-10-31",
+    "eventEndDate": "2026-10-31"
   },
   {
     "id": "bazar-canonniers",
@@ -57951,7 +57957,7 @@
       "evenements-sportifs"
     ],
     "description": "Épreuve de montée dans le Parc National des Gorges de Rivière Noire : échauffement de 2,6 km depuis le parking jusqu'au bas du sentier Parakeet, puis 3,1 km de montée vers la Plaine Champagne. 2 formats, même distance (6 km) mais dénivelés différents : court (700 m D+, dès 11 ans) et long (600 m D+, dès 18 ans).",
-    "period": "Novembre",
+    "period": "14 novembre 2026",
     "eventStartDate": "2026-11-14",
     "eventEndDate": "2026-11-14",
     "distance": "6 km",
@@ -60842,5 +60848,138 @@
       "mercerie-loisirs-creatifs"
     ],
     "createdAt": "2026-09-21T04:57:22.871Z"
+  },
+  {
+    "id": "royal-raid-evt",
+    "name": "Royal Raid",
+    "category": "agenda",
+    "address": "Domaine de Bel Ombre, Bel Ombre",
+    "phone": "",
+    "website": "https://www.royalraid.com/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Bel%20Ombre%20Mauritius",
+    "themes": [
+      "evenements-sportifs"
+    ],
+    "description": "Grand trail du sud de Maurice, qui fête sa 20e édition en 2026 et sera repris par Lokal Adventure Ltd à partir de 2027. Parcours à travers les domaines de Bel Ombre, Yemen et Saint Félix, le Parc National des Gorges de Rivière Noire (montée du Parakeet Trail et du Watook Trail) et la côte sauvage. 3 formats : RR12 (12 km, 500 m D+, découverte), RR30 (30 km, 1200 m D+) et RR65 (65 km, 2350 m D+, l'épreuve reine). Terrain souvent sec et chaud. Prochaine édition en mai 2027, date exacte à confirmer sur le site officiel.",
+    "period": "Mai 2027",
+    "zone": "sud",
+    "eventRecurrence": "annuel-variable",
+    "filters": [
+      "trail"
+    ],
+    "createdAt": "2026-09-27T02:40:16+02:00"
+  },
+  {
+    "id": "randotrail-mu",
+    "name": "Rando-Trail & Nature",
+    "category": "faire-du-sport",
+    "address": "Maurice (site en ligne)",
+    "phone": "",
+    "website": "https://www.randotrail.mu/",
+    "themes": [
+      "randonnee-trail"
+    ],
+    "description": "Plateforme mauricienne dédiée aux coureurs de trail, randonneurs et passionnés de nature, gérée par un comité basé à Tamarin. On y trouve le calendrier des trails de l'île (Moka Trail, Avalon Trail, Trail de Rodrigues, Parakeet Challenge, Ring Trail…), l'inscription en ligne avec dossards numériques, les résultats et statistiques, ainsi qu'un système de ligues. L'adhésion (Rs 500 la première année, puis Rs 300) n'est pas obligatoire pour participer aux événements.",
+    "createdAt": "2026-09-27T02:40:16+02:00"
+  },
+  {
+    "id": "gotrail-run",
+    "name": "GoTrail",
+    "category": "faire-du-sport",
+    "address": "Maurice (site en ligne)",
+    "phone": "",
+    "website": "https://gotrail.run/en/calendar/mauritius",
+    "themes": [
+      "randonnee-trail"
+    ],
+    "description": "Calendrier international de trail running, avec une page dédiée à Maurice qui recense les courses de l'île sur la saison à venir (formats, distances, dates et lieux) : Dodo Trail, Beachcomber Trail, trails urbains, The Loop Backyard Ultra… Pratique pour repérer les prochaines épreuves et comparer les formats avant de s'inscrire.",
+    "createdAt": "2026-09-27T02:40:16+02:00"
+  },
+  {
+    "id": "bakery-lab-telfair",
+    "name": "Bakery Lab - Telfair",
+    "address": "The Hybrid, Telfair City Centre, Telfair, Moka",
+    "lat": -20.2297105,
+    "lng": 57.505306,
+    "zone": "centre",
+    "description": "Boulangerie artisanale très réputée pour ses viennoiseries. Antenne de Telfair.",
+    "hours": "Lun-Sam 7h-17h30, Dim 7h-15h",
+    "category": "manger-boire",
+    "phone": "+230 5859 4399",
+    "website": "https://bakerylab.mu",
+    "googleMapsUrl": "",
+    "themes": [
+      "commerces-alimentaires"
+    ],
+    "filters": [
+      "boulangeries",
+      "boulangeries-patisseries"
+    ],
+    "createdAt": "2026-09-27T02:40:44.385Z"
+  },
+  {
+    "id": "bakery-lab-bagatelle",
+    "name": "Bakery Lab - Bagatelle Mall",
+    "address": "Bagatelle Mall of Mauritius, Moka",
+    "lat": -20.2211,
+    "lng": 57.4931,
+    "zone": "centre",
+    "description": "Boulangerie artisanale très réputée pour ses viennoiseries. Antenne du Bagatelle Mall.",
+    "category": "manger-boire",
+    "phone": "+230 5859 4399",
+    "website": "https://bakerylab.mu",
+    "googleMapsUrl": "",
+    "themes": [
+      "commerces-alimentaires"
+    ],
+    "filters": [
+      "boulangeries",
+      "boulangeries-patisseries"
+    ],
+    "createdAt": "2026-09-27T02:40:44.385Z"
+  },
+  {
+    "id": "coq-de-bois-loop",
+    "name": "Coq de Bois Loop",
+    "category": "faire-du-sport",
+    "address": "Départ parking du centre d'accueil, Parc national de Bras d'Eau, Poste Lafayette",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Coq%20de%20Bois%20Loop%20Bras%20d%27Eau%20National%20Park%20Mauritius",
+    "lat": -20.1454122,
+    "lng": 57.7265865,
+    "themes": [
+      "randonnee-trail"
+    ],
+    "duration": "1h-2h",
+    "distance": "~5,5 km (boucle)",
+    "elevationGain": "~75 m D+",
+    "difficultyLevel": "debutant",
+    "guideRecommended": false,
+    "zone": "est",
+    "description": "Boucle facile et bien ombragée dans le Parc national de Bras d'Eau, au nord-est, au départ du parking du centre d'accueil. Le sentier traverse la forêt sèche côtière, longe quelques petits lacs intérieurs et peut se prolonger jusqu'à la plage de Bras d'Eau. Doit son nom au « coq de bois », le tchitrec de paradis de Maurice, oiseau endémique que l'on peut apercevoir en chemin. Distance et durée variables selon les sources.",
+    "createdAt": "2026-09-27T02:42:03+02:00"
+  },
+  {
+    "id": "vallee-de-ferney-blue-route",
+    "name": "Vallée de Ferney - Blue Route",
+    "category": "faire-du-sport",
+    "address": "La Vallée de Ferney, Grand Port",
+    "phone": "",
+    "website": "https://ferney.mu/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=La%20Vall%C3%A9e%20de%20Ferney%20Mauritius",
+    "lat": -20.3625775,
+    "lng": 57.7064693,
+    "themes": [
+      "randonnee-trail"
+    ],
+    "duration": "1h-1h30",
+    "distance": "~5,3 km (boucle)",
+    "elevationGain": "~55 m D+",
+    "difficultyLevel": "debutant",
+    "guideRecommended": false,
+    "zone": "sud",
+    "description": "Boucle balisée et courte de la Vallée de Ferney, réserve de forêt native du sud-est en cours de restauration écologique. Terrain assez plat, adapté aux familles et aux randonneurs occasionnels ; c'est la plus courte des routes de couleur du domaine (avec les routes jaune et rouge). Accès au domaine payant, à vérifier sur le site officiel.",
+    "createdAt": "2026-09-27T02:42:03+02:00"
   }
 ]
