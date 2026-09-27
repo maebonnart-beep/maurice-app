@@ -60976,5 +60976,26 @@
     "zone": "est",
     "description": "Bistro-pub au clubhouse du golf The Nine (Azuri), avec terrasse panoramique sur les fairways : classiques revisités et produits locaux, burgers, plats grillés, plats du jour, cocktails et bières pression.",
     "createdAt": "2026-09-27T02:48:17+00:00"
+  },
+  {
+    "id": "plage-bras-d-eau",
+    "name": "Plage de Bras d'Eau",
+    "category": "sortir-decouvrir",
+    "address": "Bras d'Eau (Est), à côté du Parc National",
+    "phone": "",
+    "website": "",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Bras%20d%27Eau%20beach%20Mauritius",
+    "lat": -20.1365566,
+    "lng": 57.7331934,
+    "zone": "est",
+    "themes": [
+      "plages-nature"
+    ],
+    "description": "Plage naturelle et peu fréquentée, bordée d'une épaisse frange de filaos qui offre beaucoup d'ombre. Eau turquoise, calme et peu profonde sur fond de sable mêlé de quelques roches. Idéale pour la détente, les pique-niques (tables en bois près du parking) et la marche, à côté du Parc National de Bras d'Eau. Très peu aménagée (toilettes).",
+    "beachActivities": "Baignade, pique-nique, marche, initiation au kitesurf (vent régulier)",
+    "filters": [
+      "plages"
+    ],
+    "createdAt": "2026-09-27T03:13:34+00:00"
   }
 ]
