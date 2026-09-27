@@ -30039,7 +30039,7 @@
   },
   {
     "id": "bras-d-eau-visitor-s-center",
-    "name": "Bras D'Eau Visitor's Center",
+    "name": "Coq de Bois Loop (Bras d'Eau)",
     "category": "faire-du-sport",
     "address": "VP3G+RJP, Poste Lafayette",
     "phone": "",
@@ -60937,28 +60937,6 @@
       "boulangeries-patisseries"
     ],
     "createdAt": "2026-09-27T02:40:44.385Z"
-  },
-  {
-    "id": "coq-de-bois-loop",
-    "name": "Coq de Bois Loop",
-    "category": "faire-du-sport",
-    "address": "Départ parking du centre d'accueil, Parc national de Bras d'Eau, Poste Lafayette",
-    "phone": "",
-    "website": "",
-    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Coq%20de%20Bois%20Loop%20Bras%20d%27Eau%20National%20Park%20Mauritius",
-    "lat": -20.1454122,
-    "lng": 57.7265865,
-    "themes": [
-      "randonnee-trail"
-    ],
-    "duration": "1h-2h",
-    "distance": "~5,5 km (boucle)",
-    "elevationGain": "~75 m D+",
-    "difficultyLevel": "debutant",
-    "guideRecommended": false,
-    "zone": "est",
-    "description": "Boucle facile et bien ombragée dans le Parc national de Bras d'Eau, au nord-est, au départ du parking du centre d'accueil. Le sentier traverse la forêt sèche côtière, longe quelques petits lacs intérieurs et peut se prolonger jusqu'à la plage de Bras d'Eau. Doit son nom au « coq de bois », le tchitrec de paradis de Maurice, oiseau endémique que l'on peut apercevoir en chemin. Distance et durée variables selon les sources.",
-    "createdAt": "2026-09-27T02:42:03+02:00"
   },
   {
     "id": "vallee-de-ferney-blue-route",
