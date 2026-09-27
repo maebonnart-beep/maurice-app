@@ -40,9 +40,9 @@ export const PLAN_OPTION_ICONS: Record<string, string> = {
  */
 export const PLAN_WHO_ICONS: Record<string, string> = {
   famille: "/list-icons/famille-4.webp",
-  couple: "/list-icons/carte.webp",
+  couple: "/list-icons/couple.webp",
   amis: "/list-icons/amis.webp",
-  solo: "/list-icons/coeur.webp",
+  solo: "/list-icons/solo.webp",
 };
 
 export const PLAN_ACTIVITY_ICONS: Record<string, string> = {
