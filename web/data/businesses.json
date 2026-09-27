@@ -60899,15 +60899,15 @@
     "id": "bakery-lab-telfair",
     "name": "Bakery Lab - Telfair",
     "address": "The Hybrid, La Promenade, Telfair City Centre, Moka Smart City, Moka",
-    "lat": -20.2297105,
-    "lng": 57.505306,
+    "lat": -20.2307599,
+    "lng": 57.5109509,
     "zone": "centre",
     "description": "Boulangerie artisanale très réputée pour ses viennoiseries. Antenne de Telfair.",
     "hours": "Lun-Sam 7h-17h30, Dim 7h-15h",
     "category": "manger-boire",
     "phone": "+230 5859 4399",
     "website": "https://bakerylab.mu",
-    "googleMapsUrl": "",
+    "googleMapsUrl": "https://maps.app.goo.gl/Rb5gn4vKcNZ1EYqVA",
     "themes": [
       "commerces-alimentaires"
     ],
