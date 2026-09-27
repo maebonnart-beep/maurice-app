@@ -60981,5 +60981,22 @@
     "zone": "sud",
     "description": "Boucle balisée et courte de la Vallée de Ferney, réserve de forêt native du sud-est en cours de restauration écologique. Terrain assez plat, adapté aux familles et aux randonneurs occasionnels ; c'est la plus courte des routes de couleur du domaine (avec les routes jaune et rouge). Accès au domaine payant, à vérifier sur le site officiel.",
     "createdAt": "2026-09-27T02:42:03+02:00"
+  },
+  {
+    "id": "the-nine-bistropub-azuri",
+    "name": "The Nine BistroPub",
+    "category": "manger-boire",
+    "address": "Clubhouse The Nine, Azuri Ocean & Golf Village, Roches Noires",
+    "phone": "+230 5423 1921",
+    "website": "https://azuri.mu/en/enjoy/the-nine-bistropub/",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=The%20Nine%20BistroPub%20Azuri%20Roches%20Noires%20Mauritius",
+    "lat": -20.0995029,
+    "lng": 57.7067159,
+    "themes": [
+      "restaurants"
+    ],
+    "zone": "est",
+    "description": "Bistro-pub au clubhouse du golf The Nine (Azuri), avec terrasse panoramique sur les fairways : classiques revisités et produits locaux, burgers, plats grillés, plats du jour, cocktails et bières pression.",
+    "createdAt": "2026-09-27T02:48:17+00:00"
   }
 ]
