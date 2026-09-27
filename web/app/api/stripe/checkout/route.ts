@@ -17,6 +17,11 @@ export async function POST(request: Request) {
         ? process.env.STRIPE_PRICE_ID_ANNUAL!
         : process.env.NEXT_PUBLIC_STRIPE_PRICE_ID!;
 
+  if (!priceId || !process.env.STRIPE_SECRET_KEY) {
+    console.error("[stripe/checkout] configuration manquante", { plan, currency, hasPrice: !!priceId });
+    return NextResponse.json({ error: "Paiement indisponible pour ce tarif." }, { status: 500 });
+  }
+
   const supabase = await createClient();
   const {
     data: { user },
@@ -32,30 +37,35 @@ export async function POST(request: Request) {
     .eq("id", user.id)
     .single();
 
-  const stripe = getStripe();
+  try {
+    const stripe = getStripe();
 
-  let customerId = profile?.stripe_customer_id;
-  if (!customerId) {
-    const customer = await stripe.customers.create({
-      email: user.email,
+    let customerId = profile?.stripe_customer_id;
+    if (!customerId) {
+      const customer = await stripe.customers.create({
+        email: user.email,
+        metadata: { supabase_user_id: user.id },
+      });
+      customerId = customer.id;
+      await supabase
+        .from("profiles")
+        .upsert({ id: user.id, stripe_customer_id: customerId });
+    }
+
+    const origin = new URL(request.url).origin;
+
+    const session = await stripe.checkout.sessions.create({
+      mode: "subscription",
+      customer: customerId,
+      line_items: [{ price: priceId, quantity: 1 }],
+      success_url: `${origin}/mon-compte?checkout=success`,
+      cancel_url: `${origin}/mon-compte/upgrade?checkout=cancel`,
       metadata: { supabase_user_id: user.id },
     });
-    customerId = customer.id;
-    await supabase
-      .from("profiles")
-      .upsert({ id: user.id, stripe_customer_id: customerId });
+    if (!session.url) throw new Error("Session Stripe sans URL");
+    return NextResponse.json({ url: session.url });
+  } catch (err) {
+    console.error("[stripe/checkout]", err);
+    return NextResponse.json({ error: "Impossible d'ouvrir le paiement. Réessaie dans un instant." }, { status: 500 });
   }
-
-  const origin = new URL(request.url).origin;
-
-  const session = await stripe.checkout.sessions.create({
-    mode: "subscription",
-    customer: customerId,
-    line_items: [{ price: priceId, quantity: 1 }],
-    success_url: `${origin}/mon-compte?checkout=success`,
-    cancel_url: `${origin}/mon-compte/upgrade?checkout=cancel`,
-    metadata: { supabase_user_id: user.id },
-  });
-
-  return NextResponse.json({ url: session.url });
 }

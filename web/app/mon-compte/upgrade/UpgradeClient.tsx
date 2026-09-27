@@ -23,22 +23,29 @@ const PLAN_LABELS: Record<Currency, Record<Plan, string>> = {
 export function UpgradeClient() {
   const account = useAccount();
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
   const [plan, setPlan] = useState<Plan>("monthly");
   const [currency, setCurrency] = useState<Currency>("mur");
 
   async function startCheckout() {
     setLoading(true);
-    const res = await fetch("/api/stripe/checkout", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ plan, currency }),
-    });
-    const json = await res.json();
-    if (json.url) {
-      window.location.href = json.url;
-    } else {
-      setLoading(false);
+    setError(null);
+    try {
+      const res = await fetch("/api/stripe/checkout", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ plan, currency }),
+      });
+      const json = await res.json().catch(() => ({}));
+      if (json.url) {
+        window.location.href = json.url;
+        return;
+      }
+      setError(json.error ?? "Impossible d'ouvrir le paiement. Réessaie dans un instant.");
+    } catch {
+      setError("Connexion impossible. Vérifie ton réseau et réessaie.");
     }
+    setLoading(false);
   }
 
   return (
@@ -113,6 +120,7 @@ export function UpgradeClient() {
           {loading ? "Redirection…" : "S'abonner"}
         </button>
       )}
+      {error && <p className="text-[12.5px] text-red-600">{error}</p>}
     </div>
   );
 }
