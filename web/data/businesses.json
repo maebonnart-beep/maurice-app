@@ -5735,8 +5735,8 @@
     "phone": "+230 5257 1055",
     "website": "",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Kasafe%20Thai%20restaurant%20Curepipe%20Mauritius",
-    "lat": -20.3153,
-    "lng": 57.5222,
+    "lat": -20.3138832,
+    "lng": 57.5202579,
     "themes": [
       "restaurants"
     ],
@@ -41268,8 +41268,8 @@
     "category": "manger-boire",
     "address": "Coeur de Ville, Grand Baie",
     "zone": "nord",
-    "lat": -20.0167,
-    "lng": 57.5833,
+    "lat": -20.0133001,
+    "lng": 57.586741,
     "themes": [
       "restaurants"
     ],
@@ -41426,20 +41426,23 @@
     "id": "desirata-boudoir-gourmand-quatre-bornes",
     "name": "Désirata le Boudoir Gourmand.mu by Gelatissimo",
     "category": "manger-boire",
-    "address": "5 Avenue des Glaïeuls, Quatre Bornes",
+    "address": "1 Avenue des Glaïeuls, Quatre Bornes",
     "zone": "centre",
-    "lat": -20.2667,
-    "lng": 57.4833,
+    "lat": -20.261697,
+    "lng": 57.4830085,
     "themes": [
       "restaurants",
-      "cafes-bars-glaciers"
+      "cafes-bars-glaciers",
+      "commerces-alimentaires"
     ],
     "priceRange": "prix-moyen",
     "description": "Pâtisserie française et gelato artisanal (pistache, rhum-raisin remarqués) à Quatre Bornes, salon de thé pour petit-déjeuner et déjeuner avec salle à l'étage et salon privé sur réservation, gâteaux sur mesure pour événements.",
-    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=D%C3%A9sirata%20le%20Boudoir%20Gourmand.mu%20by%20Gelatissimo%205%20Avenue%20des%20Gla%C3%AFeuls%2C%20Quatre%20Bornes%20Mauritius",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=D%C3%A9sirata%20le%20Boudoir%20Gourmand.mu%20by%20Gelatissimo%201%20Avenue%20des%20Gla%C3%AFeuls%2C%20Quatre%20Bornes%20Mauritius",
     "filters": [
       "europeenne",
-      "glaciers"
+      "glaciers",
+      "boulangeries",
+      "boulangeries-patisseries"
     ],
     "phone": "+230 5258 7387",
     "createdAt": "2026-07-26T09:24:03+02:00"
@@ -59104,27 +59107,6 @@
       "concert"
     ],
     "createdAt": "2026-08-31T05:56:22+02:00"
-  },
-  {
-    "id": "desirata-le-boudoir-gourmand",
-    "name": "Désirata Le Boudoir Gourmand.mu by Gelatissimo",
-    "category": "manger-boire",
-    "address": "1 Avenue des Glaïeuls, Quatre Bornes 72238",
-    "phone": "",
-    "website": "",
-    "googleMapsUrl": "",
-    "zone": "centre",
-    "themes": [
-      "commerces-alimentaires"
-    ],
-    "description": "Pâtisserie-salon de thé du centre de Quatre Bornes (face à l'arrêt Saint Jean du Metro Express) : pâtisserie française fine, gelato artisanal, petit-déjeuner et déjeuner, étage restaurant et espace lounge privatisable, gâteaux sur commande (anniversaires, mariages) et service traiteur.",
-    "filters": [
-      "boulangeries",
-      "boulangeries-patisseries"
-    ],
-    "lat": -20.261697,
-    "lng": 57.4830085,
-    "createdAt": "2026-09-04T10:43:23+02:00"
   },
   {
     "id": "ifu-cafe-trou-aux-biches",
