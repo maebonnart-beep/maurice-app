@@ -2156,7 +2156,7 @@ export default function DirectoryClient({
         }`}
       >
         {showHome && homeMode === "menu" ? (
-          <div className="relative max-w-[820px] lg:max-w-[1100px] mx-auto">
+          <div className="relative max-w-[820px] lg:max-w-[520px] mx-auto">
             {/* Bandeau d'accueil : illustration pleine (cf. Logo light tags),
                 affichée dans son intégralité. La bulle de recherche est une
                 simple superposition (position absolue, calée en % sur la
@@ -2185,9 +2185,9 @@ export default function DirectoryClient({
                   logo, à ~34% de la hauteur de bandeau-kotemoris-accueil-v10.png
                   (941×1670) — soit 60,3% de sa largeur, d'où le paddingTop (un %
                   de padding se rapporte à la largeur). */}
-              <div className="relative z-20 [grid-area:1/1] self-start px-[7%] lg:px-[18%] pb-5" style={{ paddingTop: "60.3%" }}>
+              <div className="relative z-20 [grid-area:1/1] self-start px-[7%] pb-5" style={{ paddingTop: "60.3%" }}>
                 <div className="-mx-2 lg:mx-0 text-center mb-3">
-                  <p className="text-[14px] lg:text-[20px] font-extrabold tracking-[.14em] uppercase text-primary-deep">
+                  <p className="text-[14px] font-extrabold tracking-[.14em] uppercase text-primary-deep">
                     Choisis ta façon de rechercher
                   </p>
                   <div className="mx-auto mt-1.5 h-[2px] w-2/3 rounded-full" style={{ background: "linear-gradient(90deg, transparent, var(--primary), transparent)" }} aria-hidden />
@@ -2199,7 +2199,7 @@ export default function DirectoryClient({
                     La carte a son propre onglet dans la barre du bas (openMap).
                     Icônes fournies par la cliente (planche de 4, découpées en
                     PNG 256×256 à coins transparents : public/recherche-icone-*). */}
-                <div className="-mx-3 lg:mx-0 grid grid-cols-3 gap-1.5 lg:gap-3">
+                <div className="-mx-3 lg:mx-0 grid grid-cols-3 gap-1.5">
                   {(
                     [
                       { key: "categorie", label: "Catégories", img: "/recherche-icone-categories.png" },
@@ -2230,21 +2230,21 @@ export default function DirectoryClient({
                         // pastille blanche en verre dépoli (un simple halo ne
                         // suffisait pas sur le ciel/les montagnes) ; anneau
                         // turquoise autour de l'icône quand Expérience est déplié.
-                        className="flex flex-col items-center gap-1.5 text-[16px] lg:text-[20px] font-extrabold text-primary-deep active:scale-[.96] transition-transform"
+                        className="flex flex-col items-center gap-1.5 text-[16px] font-extrabold text-primary-deep active:scale-[.96] transition-transform"
                       >
                         {/* eslint-disable-next-line @next/next/no-img-element */}
                         <img
                           src={b.img}
                           alt=""
                           aria-hidden
-                          className={`w-[108px] h-[108px] lg:w-36 lg:h-36 rounded-[24%] ${on ? "ring-[3px] ring-primary" : ""}`}
+                          className={`w-[108px] h-[108px] rounded-[24%] ${on ? "ring-[3px] ring-primary" : ""}`}
                           // Fondu dans le décor : fond des tuiles rendu
                           // semi-transparent dans les PNG (objets opaques) +
                           // léger flou de ce qu'il y a derrière, sans ombre.
                           style={{ backdropFilter: "blur(6px)", WebkitBackdropFilter: "blur(6px)" }}
                         />
                         <span
-                          className="px-3 lg:px-4 py-1 rounded-pill text-[12px] lg:text-[15px] tracking-[.12em] uppercase leading-tight whitespace-nowrap text-white"
+                          className="px-3 py-1 rounded-pill text-[12px] tracking-[.12em] uppercase leading-tight whitespace-nowrap text-white"
                           style={{
                             background: "color-mix(in srgb, var(--primary-deep) 88%, transparent)",
                             boxShadow: "0 2px 8px -3px rgba(6,50,56,.5)",
