@@ -30049,7 +30049,8 @@
     "lat": -20.1454122,
     "lng": 57.7265865,
     "themes": [
-      "randonnee-trail"
+      "randonnee-trail",
+      "kids-friendly"
     ],
     "duration": "1-1,5h (Coq de Bois Loop, boucle)",
     "difficultyLevel": "debutant",
@@ -30057,7 +30058,7 @@
     "zone": "est",
     "distance": "5,3 km",
     "elevationGain": "76 m D+",
-    "description": "Boucle ombragée (Coq de Bois Loop) dans une forêt de mahogany et un verger d'environ 2000 manguiers et 200 litchis, passant par les ruines d'une ancienne usine sucrière fermée en 1867 (Puits Français) et le lac Mare Sarcelle. Le gobemouche de paradis de Maurice, localement surnommé « coq de bois », y est parfois observé, aux côtés de singes macaques. Sentier bien balisé et peu accidenté, mais en grande partie sur roches volcaniques instables : de bonnes chaussures sont recommandées. Quelques chiens errants signalés dans les bois.",
+    "description": "Départ au parking du centre de visiteurs du Parc National de Bras d'Eau. Boucle simple et assez diversifiée en termes de paysages (mares, bois, chemins), ombragée, dans une forêt de mahogany et un verger d'environ 2000 manguiers et 200 litchis, passant par les ruines d'une ancienne usine sucrière fermée en 1867 (Puits Français) et le lac Mare Sarcelle. Le gobemouche de paradis de Maurice, localement surnommé « coq de bois », y est parfois observé, aux côtés de singes macaques. Sentier bien balisé et peu accidenté, mais en grande partie sur roches volcaniques instables : de bonnes chaussures sont recommandées. Possible avec des enfants.",
     "createdAt": "2026-07-12T16:37:31+02:00"
   },
   {
@@ -55522,7 +55523,6 @@
     "createdAt": "2026-08-16T15:56:43+02:00",
     "koteMorisRatings": {
       "gout": 5,
-      "qualitePrix": 3,
       "accueil": 5,
       "cadre": 5
     },
