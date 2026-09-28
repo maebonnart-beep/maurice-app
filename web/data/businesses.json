@@ -55508,8 +55508,7 @@
     "address": "Route royale, Pointe aux Canonniers",
     "phone": "+230 5934 5320",
     "themes": [
-      "restaurants",
-      "livraisons"
+      "restaurants"
     ],
     "zone": "nord",
     "priceRange": "se-faire-plaisir",
@@ -55520,7 +55519,14 @@
     "hours": "Lun 18h-22h, Mar-Sam 12h-15h & 18h-22h30, Dim 12h-15h",
     "lat": -20.0100163,
     "lng": 57.5626567,
-    "createdAt": "2026-08-16T15:56:43+02:00"
+    "createdAt": "2026-08-16T15:56:43+02:00",
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 3,
+      "accueil": 5,
+      "cadre": 5
+    },
+    "koteMorisRatingsSource": "estimation"
   },
   {
     "id": "blacksheep-ebene",
