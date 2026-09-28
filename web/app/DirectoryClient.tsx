@@ -57,7 +57,7 @@ import { useAccount } from "@/lib/marketplace/useAccount";
 import { createClient as createSupabaseBrowserClient } from "@/lib/supabase/client";
 import { PREMIUM_PRICE_LABEL, MAX_ACTIVE_LISTINGS, listingPhotoUrl } from "@/lib/marketplace/constants";
 import type { Listing } from "@/lib/marketplace/types";
-import { COUP_DE_COEUR_COLOR, SpecialBadge } from "@/components/ui/Badge";
+import { COUP_DE_COEUR_COLOR, KIDS_COLOR, SELECTION_COLOR, SpecialBadge } from "@/components/ui/Badge";
 import { CriteriaFlowers } from "@/components/ui/FrangipaniRating";
 import { highlightedCriteria } from "@/lib/rating";
 
@@ -1350,7 +1350,9 @@ export default function DirectoryClient({
         if (facetBadges.size > 0) {
           const matchesBadge = !!b.badge && facetBadges.has(b.badge);
           const matchesKids = facetBadges.has("kids-friendly") && (b.themes || []).includes("kids-friendly");
-          if (!matchesBadge && !matchesKids) return false;
+          const matchesFleurs = facetBadges.has("fleurs") && highlightedCriteria(b).length > 0;
+          const matchesFleurs4 = facetBadges.has("fleurs4") && highlightedCriteria(b).length === 4;
+          if (!matchesBadge && !matchesKids && !matchesFleurs && !matchesFleurs4) return false;
         }
         // Agenda : masque les événements dont la date exacte connue est passée (ponctuels ou récurrents).
         if (b.category === "agenda" && isPastEvent(b)) return false;
@@ -1407,6 +1409,9 @@ export default function DirectoryClient({
       if (b.badge) badge[b.badge] = (badge[b.badge] || 0) + 1;
       if (themes.includes("kids-friendly")) {
         badge["kids-friendly"] = (badge["kids-friendly"] || 0) + 1;
+      }
+      if (highlightedCriteria(b).length === 4) {
+        badge["fleurs4"] = (badge["fleurs4"] || 0) + 1;
       }
     });
     return { perGroup, price, badge, total };
@@ -2038,14 +2043,29 @@ export default function DirectoryClient({
   // propre chip image (voir imageBadges ci-dessous), plus visible et cliquable
   // directement qu'enfoui dans le menu déroulant « Sélection » — donc exclus
   // d'ici pour ne pas les dupliquer.
-  const badgeOptions: DropdownOption[] = BADGE_META.filter(
-    (m) => !IMAGE_BADGE_KEYS.has(m.key) && (facetCounts.badge[m.key] || 0) > 0
-  ).map((m) => ({
-    key: m.key,
-    label: m.label,
-    count: facetCounts.badge[m.key],
-    icon: <span aria-hidden>{m.emoji}</span>,
-  }));
+  const badgeOptions: DropdownOption[] = [
+    ...BADGE_META.filter(
+      (m) => !IMAGE_BADGE_KEYS.has(m.key) && (facetCounts.badge[m.key] || 0) > 0
+    ).map((m) => ({
+      key: m.key,
+      label: m.label,
+      count: facetCounts.badge[m.key],
+      icon: <span aria-hidden>{m.emoji}</span>,
+    })),
+    // « 4 fleurs » : les tables notées au maximum sur les 4 critères (goût,
+    // qualité-prix, cadre, accueil). Dérivé de koteMorisRatings, pas un vrai
+    // champ b.badge — géré à part (matchesFleurs4) dans le filtre.
+    ...((facetCounts.badge["fleurs4"] || 0) > 0
+      ? [
+          {
+            key: "fleurs4",
+            label: "4 fleurs",
+            count: facetCounts.badge["fleurs4"],
+            icon: <span aria-hidden>🌸</span>,
+          },
+        ]
+      : []),
+  ];
 
   // « shortLabel » : affiché dans la chip (longueur proche entre les deux
   // badges pour un rendu à largeur égale sans troncature) ; « label » complet
@@ -2471,32 +2491,55 @@ export default function DirectoryClient({
                   Comment lire nos notes ?
                   <span className="transition-transform group-open:rotate-90">›</span>
                 </summary>
-                <div className="mt-3 space-y-3.5 leading-snug">
-                  <div>
-                    <p className="text-[13px] font-semibold text-ink">Les fleurs</p>
-                    <p className="mt-0.5">
-                      Pour les bars, restaurants et cafés : une fleur de couleur pour chaque critère validé et approuvé par Koté Moris.
+                <div className="mt-3 space-y-2.5 leading-snug">
+                  {/* 3 cartes teintées (même grammaire que « À la une » plus bas) :
+                      une couleur d'accent par thématique de notation, pour que
+                      l'œil associe tout de suite fleurs = food, badge Reco =
+                      hors food, badge Kids = transversal — sans casser
+                      l'harmonie visuelle (même forme de carte, même mise en page). */}
+                  <div
+                    className="rounded-xl p-2.5"
+                    style={{ background: "color-mix(in srgb, var(--flower-gout) 12%, var(--surface))" }}
+                  >
+                    <p
+                      className="text-[10.5px] font-bold uppercase tracking-wide"
+                      style={{ color: "var(--flower-gout-stroke)" }}
+                    >
+                      Bars • restaurants • cafés
                     </p>
-                    <div className="mt-2 grid grid-cols-2 gap-x-3 gap-y-1.5">
+                    <p className="mt-0.5">Une <span className="font-semibold text-ink">fleur</span> de couleur pour chaque critère validé et approuvé par Koté Moris.</p>
+                    <div className="mt-2 flex flex-nowrap items-center gap-x-3 overflow-x-auto pb-0.5 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
                       {([["gout", "Goût"], ["qualitePrix", "Qualité-prix"], ["cadre", "Cadre"], ["accueil", "Accueil et service"]] as const).map(([k, label]) => (
-                        <span key={k} className="inline-flex items-center gap-1.5 text-[12.5px] text-ink">
+                        <span key={k} className="inline-flex items-center gap-1.5 shrink-0 whitespace-nowrap text-[12.5px] text-ink">
                           <CriteriaFlowers ratings={{ [k]: 5 }} size={18} />
                           {label}
                         </span>
                       ))}
                     </div>
                   </div>
-                  <div className="flex items-start gap-3">
+                  <div
+                    className="flex items-start gap-3 rounded-xl p-2.5"
+                    style={{ background: `color-mix(in srgb, ${SELECTION_COLOR} 10%, var(--surface))` }}
+                  >
                     <SpecialBadge variant="selection" className="h-11 w-11 shrink-0" />
                     <div>
-                      <p className="text-[13px] font-semibold text-ink">Badge Reco</p>
+                      <p className="text-[10.5px] font-bold uppercase tracking-wide" style={{ color: SELECTION_COLOR }}>
+                        Activités • shopping • sport
+                      </p>
+                      <p className="mt-0.5 text-[13px] font-semibold text-ink">Recommandé Koté Moris</p>
                       <p>Une adresse que la rédaction Koté Moris recommande, testée et approuvée.</p>
                     </div>
                   </div>
-                  <div className="flex items-start gap-3">
+                  <div
+                    className="flex items-start gap-3 rounded-xl p-2.5"
+                    style={{ background: `color-mix(in srgb, ${KIDS_COLOR} 10%, var(--surface))` }}
+                  >
                     <SpecialBadge variant="kids-friendly" className="h-11 w-11 shrink-0" />
                     <div>
-                      <p className="text-[13px] font-semibold text-ink">Badge Kids friendly</p>
+                      <p className="text-[10.5px] font-bold uppercase tracking-wide" style={{ color: KIDS_COLOR }}>
+                        Sur toutes les fiches
+                      </p>
+                      <p className="mt-0.5 text-[13px] font-semibold text-ink">Badge Kids friendly</p>
                       <p>Un lieu où les enfants sont les bienvenus et bien accueillis.</p>
                     </div>
                   </div>
@@ -2536,8 +2579,29 @@ export default function DirectoryClient({
               {(() => {
                 const rows = [
                   {
+                    key: "fleurs",
+                    tint: "var(--flower-gout)",
+                    title: "Les tables recommandées",
+                    badge: (
+                      <span className="h-12 w-12 shrink-0 inline-flex items-center justify-center rounded-full bg-surface shadow-sm">
+                        <CriteriaFlowers ratings={{ gout: 5 }} size={26} />
+                      </span>
+                    ),
+                    hint: "Bars, restaurants et cafés testés par la rédaction. Une fleur par critère validé et approuvé : goût, qualité-prix, cadre, accueil et service.",
+                    list: tablesFleuries,
+                    onAll: () => {
+                      setNearMe(false);
+                      setBrowseAll(true);
+                      setHomeCategory(null);
+                      setActiveThemes(new Set());
+                      setFacetBadges(new Set(["fleurs"]));
+                      setResultsView("liste");
+                      window.scrollTo({ top: 0, behavior: "smooth" });
+                    },
+                  },
+                  {
                     key: "reco",
-                    tint: "#22b38a",
+                    tint: SELECTION_COLOR,
                     title: "Nos coups de cœur",
                     badge: <SpecialBadge variant="selection" className="h-12 w-12 shrink-0" />,
                     hint: "Testées et approuvées par la rédaction : des lieux, activités et sorties qu'on te conseille les yeux fermés.",
@@ -2546,7 +2610,7 @@ export default function DirectoryClient({
                   },
                   {
                     key: "kids",
-                    tint: "#3aa86e",
+                    tint: KIDS_COLOR,
                     title: "Kids friendly",
                     badge: <SpecialBadge variant="kids-friendly" className="h-12 w-12 shrink-0" />,
                     hint: "Des lieux où les enfants sont les bienvenus : activités, balades, sorties et tables adaptées aux familles.",
@@ -2559,19 +2623,6 @@ export default function DirectoryClient({
                       setResultsView("liste");
                       window.scrollTo({ top: 0, behavior: "smooth" });
                     },
-                  },
-                  {
-                    key: "fleurs",
-                    tint: "#2a9d8f",
-                    title: "Les tables recommandées",
-                    badge: (
-                      <span className="h-12 w-12 shrink-0 inline-flex items-center justify-center rounded-full bg-surface shadow-sm">
-                        <CriteriaFlowers ratings={{ gout: 5 }} size={26} />
-                      </span>
-                    ),
-                    hint: "Bars, restaurants et cafés testés par la rédaction. Une fleur par critère validé et approuvé : goût, qualité-prix, cadre, accueil et service.",
-                    list: tablesFleuries,
-                    onAll: undefined as (() => void) | undefined,
                   },
                 ].filter((r) => r.list.length > 0);
                 if (rows.length === 0) return null;

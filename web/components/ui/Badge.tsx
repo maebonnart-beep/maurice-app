@@ -7,6 +7,7 @@ import { iconForKey } from "@/lib/icons";
 export const COUP_DE_COEUR_COLOR = "#ff2d6a";
 export const SELECTION_COLOR = "#7c3aed";
 export const AGENCY_COLOR = "#6063f1";
+export const KIDS_COLOR = "#2f8fd1";
 
 /** Badge de catégorie : pastille pleine colorée à la couleur de la catégorie. */
 export function CategoryBadge({ category }: { category: CategoryKey }) {
@@ -120,13 +121,22 @@ export function PremiumSellerBadge({ compact, className }: { compact?: boolean; 
   );
 }
 
-/** Couleur d'accent latéral d'une fiche selon son badge / statut d'agence. */
+/**
+ * Couleur d'accent latéral d'une fiche selon son badge / statut d'agence —
+ * alignée sur le code couleur du bloc « Comment lire nos notes ? » : corail
+ * pour les fleurs (tables notées), violet pour le badge Reco, bleu pour
+ * Kids friendly. Priorité : partenaire > fleurs > sélection > kids > agence.
+ */
 export function accentColorFor(
   badge?: "partenaire" | "selection",
-  isAgency?: boolean
+  isAgency?: boolean,
+  hasFlowers?: boolean,
+  isKidsFriendly?: boolean
 ): string | undefined {
-  if (badge === "selection") return SELECTION_COLOR;
   if (badge === "partenaire") return "var(--accent)";
+  if (hasFlowers) return "var(--flower-gout)";
+  if (badge === "selection") return SELECTION_COLOR;
+  if (isKidsFriendly) return KIDS_COLOR;
   if (isAgency) return AGENCY_COLOR;
   return undefined;
 }

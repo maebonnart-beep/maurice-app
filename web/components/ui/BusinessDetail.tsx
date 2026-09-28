@@ -124,10 +124,10 @@ export function BusinessDetail({
   /** Boutons « Suggérer une photo/un avis » réservés aux contributeurs (community/admin). */
   canSuggest?: boolean;
 }) {
-  const accentColor = accentColorFor(b.badge, b.isAgency);
   const waNumber = whatsappNumber(b);
   const facts = metaFacts(b);
   const hasFlowers = highlightedCriteria(b).length > 0;
+  const accentColor = accentColorFor(b.badge, b.isAgency, hasFlowers, b.themes?.includes("kids-friendly"));
   const price = b.priceRange ? PRICE_RANGES.find((p) => p.key === b.priceRange) : undefined;
   const [descExpanded, setDescExpanded] = useState(false);
   const photos = b.photoUrls?.length ? b.photoUrls : b.photoUrl ? [b.photoUrl] : [];

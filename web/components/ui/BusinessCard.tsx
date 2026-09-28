@@ -82,9 +82,9 @@ export function BusinessCard({
   /** Clés de tags/facettes déjà impliquées par le filtre actif → masquées. */
   hiddenKeys?: Set<string>;
 }) {
-  const accentColor = accentColorFor(b.badge, b.isAgency);
   // Les fiches à fleurs (restos/bars/cafés) n'affichent pas le badge Reco : les fleurs suffisent.
   const showSelectionBadge = b.badge === "selection" && highlightedCriteria(b).length === 0;
+  const accentColor = accentColorFor(b.badge, b.isAgency, highlightedCriteria(b).length > 0, b.themes?.includes("kids-friendly"));
   const price = b.priceRange ? PRICE_RANGES.find((p) => p.key === b.priceRange) : undefined;
   // Type(s) de lieu (rubriques) : chaque rubrique/thème de la fiche est
   // affiché en tag coloré (couleur de la catégorie) pour dire au premier
