@@ -496,12 +496,6 @@ export function BusinessDetail({
               </div>
             )}
 
-            {b.promoText && (
-              <p className="m-0 text-[14px] leading-[1.5] text-primary-deep border-l-2 border-primary pl-3 py-0.5">
-                💬 <span className="italic">{b.promoText}</span>
-              </p>
-            )}
-
             {canSuggest && (
               <>
                 <SuggestPhotoButton businessId={b.id} businessName={displayName(b.name)} />

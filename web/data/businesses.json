@@ -1177,9 +1177,8 @@
       "restaurants"
     ],
     "hours": "Mar-Sam 12h-15h, Mer-Sam 19h-22h, fermé dim et lun",
-    "promoText": "Cadre très plaisant sous les arbres, cuisine ouverte au feu de bois. Très bons plats.",
     "zone": "nord",
-    "description": "Antenne originelle du Poivrier, cachée derrière une entrée discrète dans un jardin tropical planté de fleurs et fréquenté de geckos verts. Cuisine méditerranéenne (poisson, sushis, tartares, pâtes fraîches) d'inspiration franco-italienne, fermé dimanche et lundi.",
+    "description": "Antenne originelle du Poivrier, cachée derrière une entrée discrète dans un jardin tropical planté de fleurs et fréquenté de geckos verts. Cuisine méditerranéenne (poisson, sushis, tartares, pâtes fraîches) d'inspiration franco-italienne, fermé dimanche et lundi. Cadre très plaisant sous les arbres, cuisine préparée au feu de bois, très bons plats.",
     "filters": [
       "europeenne",
       "italien",
@@ -1575,9 +1574,8 @@
       "restaurants"
     ],
     "priceRange": "se-faire-plaisir",
-    "promoText": "Très joli cadre, assiettes copieuses et fraîches. Belle carte de tapas.",
     "zone": "nord",
-    "description": "Restaurant de Pereybère/Grand Baie tenu par Ashley et Shiran. Fruits de mer et viandes frais, rhum vanille maison ; paiement en espèces uniquement, stationnement limité.",
+    "description": "Restaurant de Pereybère/Grand Baie tenu par Ashley et Shiran. Fruits de mer et viandes frais, rhum vanille maison ; paiement en espèces uniquement, stationnement limité. Cadre très joli, assiettes copieuses et fraîches, belle carte de tapas.",
     "filters": [
       "mauricienne"
     ],
@@ -2351,8 +2349,7 @@
     "hours": "Tous les jours à partir de 16h",
     "priceRange": "bon-marche",
     "zone": "nord",
-    "promoText": "Les pêcheurs locaux se rassemblent sur la plage pour vendre du poisson frais de toutes les couleurs et de toutes les tailles. Le marchandage et l'ambiance locale sont à l'ordre du jour.",
-    "description": "Marché improvisé sur le parking de la plage publique de Grand Baie, pêcheurs locaux vendant leur pêche du jour tous les après-midi (à partir d'environ 15h), prix à négocier.",
+    "description": "Marché improvisé sur le parking de la plage publique de Grand Baie, pêcheurs locaux vendant leur pêche du jour tous les après-midi (à partir d'environ 15h), prix à négocier. Poisson de toutes les couleurs et de toutes les tailles ; marchandage et ambiance locale au rendez-vous.",
     "filters": [
       "poissonneries",
       "produits-locaux"
@@ -2374,9 +2371,8 @@
       "livraisons"
     ],
     "badge": "selection",
-    "promoText": "Viande très correcte, livraison à J+1 et échanges WhatsApp faciles.",
     "zone": "nord",
-    "description": "Boucherie familiale haut de gamme de Grand Baie (Lifestyle Boulevard), viandes fraîches locales et importées (bœuf, poulet, porc), biltong sud-africain, snacks et plats faits maison. Vente en boutique, appli et livraison à domicile.",
+    "description": "Boucherie familiale haut de gamme de Grand Baie (Lifestyle Boulevard), viandes fraîches locales et importées (bœuf, poulet, porc), biltong sud-africain, snacks et plats faits maison. Vente en boutique, appli et livraison à domicile. Viande très correcte, livraison sous 24h, échanges faciles par WhatsApp.",
     "hours": "Lun-Ven 9h-19h, Sam 9h-17h, Dim 9h-13h",
     "filters": [
       "boucheries",
@@ -2400,7 +2396,6 @@
     ],
     "hours": "Tous les jours à partir de 7h",
     "badge": "selection",
-    "promoText": "Boulangerie à la française.",
     "zone": "nord",
     "description": "Boulangerie-pâtisserie artisanale française (siège à Pointe aux Canonniers, succursale Grand Baie depuis 2017) : pain, viennoiseries, pâtisseries, gâteaux sur commande, café, terrasse.",
     "filters": [
@@ -4301,9 +4296,8 @@
     ],
     "hours": "Fermé lun, Mar-Dim 9h-22h",
     "priceRange": "prix-moyen",
-    "promoText": "Produits frais, assiettes copieuses, service impeccable — superbe cadre en bord de lagon.",
     "zone": "est",
-    "description": "Petite adresse reconnaissable à sa façade vert vif sur la route côtière de Trou d'Eau Douce, proposant une cuisine mauricienne et asiatique à base de produits de la mer (soupe de crabe, salade d'ourite, curry de poulet aux crevettes), avec options végétariennes et halal.",
+    "description": "Petite adresse reconnaissable à sa façade vert vif sur la route côtière de Trou d'Eau Douce, proposant une cuisine mauricienne et asiatique à base de produits de la mer (soupe de crabe, salade d'ourite, curry de poulet aux crevettes), avec options végétariennes et halal. Produits frais, assiettes copieuses, service impeccable, dans un cadre en bord de lagon.",
     "filters": [
       "mauricienne",
       "grillades",
@@ -4450,8 +4444,8 @@
     "phone": "+230 433 1641",
     "website": "https://escalecreole.net/",
     "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Escale%20Creole%20restaurant%20Moka%20Mauritius",
-    "lat": -20.2318,
-    "lng": 57.5372,
+    "lat": -20.2207531,
+    "lng": 57.509447,
     "themes": [
       "tables-hotes-chefs-domicile"
     ],
@@ -4683,8 +4677,7 @@
       "marches-produits-locaux"
     ],
     "zone": "centre",
-    "promoText": "Ambiance animée, nourriture au rez-de-chaussée et produits artisanaux à l'étage. La section sud est consacrée aux spécialités culinaires mauriciennes : dholl puri, farata, alouda, pâtisserie.",
-    "description": "Coeur vibrant de la capitale : fruits, legumes, epices, vetements, artisanat et souvenirs. Ouvert du lundi au samedi 5h30-17h30, dimanche 5h30-11h30. Ambiance tres animee et touristique - mieux vaut y aller tot le matin pour les produits frais, et negocier les prix cote artisanat.",
+    "description": "Coeur vibrant de la capitale : fruits, legumes, epices, vetements, artisanat et souvenirs. Ouvert du lundi au samedi 5h30-17h30, dimanche 5h30-11h30. Ambiance tres animee et touristique - mieux vaut y aller tot le matin pour les produits frais, et negocier les prix cote artisanat. Nourriture au rez-de-chaussée, artisanat à l'étage ; la section sud est dédiée aux spécialités culinaires mauriciennes (dholl puri, farata, alouda, pâtisserie).",
     "createdAt": "2026-07-11T18:38:29+02:00"
   },
   {
@@ -4702,8 +4695,7 @@
       "marches-produits-locaux"
     ],
     "zone": "est",
-    "promoText": "Marché authentique, le plus grand de plein air : légumes, fruits, fruits de mer, vanille, spécialité de la région, tisanes et jus de canne.",
-    "description": "Marche ouvert tous les jours (env. 6h-17h/18h), mais mercredi et dimanche sont les vrais jours de marche, quand les agriculteurs locaux apportent fruits, legumes et cereales frais. Trois zones : legumes, vetements/accessoires, et restauration (food court).",
+    "description": "Marche ouvert tous les jours (env. 6h-17h/18h), mais mercredi et dimanche sont les vrais jours de marche, quand les agriculteurs locaux apportent fruits, legumes et cereales frais. Trois zones : legumes, vetements/accessoires, et restauration (food court). Le plus grand marché de plein air de l'île : on y trouve aussi vanille, tisanes et jus de canne frais.",
     "createdAt": "2026-07-11T18:38:29+02:00"
   },
   {
@@ -5796,9 +5788,8 @@
     ],
     "hours": "Lun-Sam 12h-15h",
     "priceRange": "bon-marche",
-    "promoText": "Uniquement le midi ; cuisine locale, terrasse extérieure, sorbets maison.",
     "zone": "nord",
-    "description": "Table d'hôte au cadre insolite, installée près du Jardin Botanique de Pamplemousses au milieu de voitures anciennes. Menu 3 services traditionnel mauricien, dans un jardin atypique.",
+    "description": "Table d'hôte au cadre insolite, installée près du Jardin Botanique de Pamplemousses au milieu de voitures anciennes. Menu 3 services traditionnel mauricien, dans un jardin atypique. Ouvert uniquement le midi, terrasse extérieure, sorbets maison.",
     "filters": [
       "mauricienne",
       "tables-hotes"
@@ -6114,8 +6105,7 @@
     "hours": "Lun-Sam 10h-16h (dernière entrée 15h15)",
     "priceRange": "prix-moyen",
     "zone": "nord",
-    "promoText": "Écomusée retraçant l'histoire du sucre à Maurice, parcours de 10 espaces thématiques avec dégustations de produits locaux. (1200 Rs/pers.)",
-    "description": "Ancienne usine sucrière du domaine de Beau Plan transformée en musée interactif, où un parcours de dix espaces thématiques retrace trois siècles d'histoire de la canne à sucre à Maurice, avec dégustation de sucres et de rhums en fin de visite.",
+    "description": "Ancienne usine sucrière du domaine de Beau Plan transformée en musée interactif, où un parcours de dix espaces thématiques retrace trois siècles d'histoire de la canne à sucre à Maurice, avec dégustation de sucres et de rhums en fin de visite. Compter environ 1200 Rs par personne.",
     "createdAt": "2026-07-12T05:37:28+02:00"
   },
   {
@@ -6134,8 +6124,7 @@
     "hours": "Lun-Ven 9h-16h, Sam 9h-12h, fermé dim",
     "priceRange": "bon-marche",
     "zone": "centre",
-    "promoText": "Site classé UNESCO retraçant l'arrivée des travailleurs engagés indiens dès 1849, centre d'interprétation avec objets et témoignages. (entrée gratuite)",
-    "description": "Site classé au patrimoine mondial de l'UNESCO où, à partir de 1849, près d'un demi-million de travailleurs engagés venus d'Inde débarquèrent pour travailler dans les champs de canne à sucre, marquant le début de la diaspora indienne moderne.",
+    "description": "Site classé au patrimoine mondial de l'UNESCO où, à partir de 1849, près d'un demi-million de travailleurs engagés venus d'Inde débarquèrent pour travailler dans les champs de canne à sucre, marquant le début de la diaspora indienne moderne. Centre d'interprétation avec objets et témoignages, entrée gratuite.",
     "filters": [
       "kids-friendly"
     ],
@@ -6158,10 +6147,9 @@
     ],
     "hours": "Tous les jours, visites guidées 9h30-16h30",
     "priceRange": "bon-marche",
-    "description": "Domaine touristique : calèche/petit train, safari en Land Rover, moulin à sucre et distillerie de rhum du 18e siècle",
+    "description": "Domaine touristique : calèche/petit train, safari en Land Rover, moulin à sucre et distillerie de rhum du 18e siècle Balade en petit train d'environ 15 minutes (150 Rs/pers., train 110 Rs).",
     "entryPrice": "Rs 150/pers (entrée) ; safari complet Rs 650",
     "zone": "centre",
-    "promoText": "Grand domaine vallonné, balade en petit train de 15 min à travers jardins et ateliers d'antan (sucre, rhum). (150 Rs/pers., train 110 Rs)",
     "filters": [
       "parcs-aventures"
     ],
@@ -6183,8 +6171,7 @@
     "hours": "Tous les jours 10h-17h",
     "priceRange": "bon-marche",
     "zone": "centre",
-    "promoText": "Musée d'art et d'histoire postale, célèbre pour ses timbres Blue Penny et Red Penny de 1847 visibles 10 min par heure. (225 Rs/pers.)",
-    "description": "Musée du Caudan Waterfront qui abrite les célèbres timbres Blue Penny et Red Penny de 1847, ainsi que des salles retraçant l'histoire de Maurice à travers cartes, peintures et objets d'époque.",
+    "description": "Musée du Caudan Waterfront qui abrite les célèbres timbres Blue Penny et Red Penny de 1847, ainsi que des salles retraçant l'histoire de Maurice à travers cartes, peintures et objets d'époque. Timbres visibles seulement 10 minutes par heure ; compter environ 225 Rs par personne.",
     "createdAt": "2026-07-12T05:37:28+02:00"
   },
   {
@@ -6200,7 +6187,6 @@
     "themes": [
       "plages-nature"
     ],
-    "promoText": "Cascade, roches, bassin naturel, baignade.",
     "zone": "sud",
     "description": "Cascade que l'on atteint après une piste d'environ 800 m au milieu des plantations de canne. Chute d'environ 12 m nichée dans une végétation luxuriante et paisible, dans un environnement préservé, réputée pour ses parois de basalte fracturées en blocs presque rectangulaires par l'érosion. À 2,5 km du village de Souillac. Accès libre sans guide, parking sur place ; baignade possible avec prudence, débit maximal après les pluies d'été.",
     "filters": [
@@ -6224,8 +6210,7 @@
     ],
     "priceRange": "prix-moyen",
     "zone": "centre",
-    "promoText": "Grande maison créole coloniale, visite guidée de la demeure et du parc aux 4 cascades. (300 Rs/pers.)",
-    "description": "Demeure créole coloniale d'environ 1830, entourée d'un jardin luxuriant menant, par un sentier, à quatre cascades le long de la rivière Moka.",
+    "description": "Demeure créole coloniale d'environ 1830, entourée d'un jardin luxuriant menant, par un sentier, à quatre cascades le long de la rivière Moka. Visite guidée de la demeure, comptez environ 300 Rs par personne.",
     "filters": [
       "parcs-botaniques"
     ],
@@ -6740,10 +6725,9 @@
       "cafes-bars-glaciers"
     ],
     "priceRange": "bon-marche",
-    "promoText": "Très bons roti à prix mini (25 Rs) — un peu d’attente aux heures de pointe.",
     "hours": "Lun-Sam 9h30-14h30, fermé dim",
     "zone": "nord",
-    "description": "Institution locale de Solitude (Triolet) spécialisée dans le roti et la farata, très fréquentée et bien notée par les habitués du coin.",
+    "description": "Institution locale de Solitude (Triolet) spécialisée dans le roti et la farata, très fréquentée et bien notée par les habitués du coin. Très bons roti à prix mini (environ 25 Rs), un peu d'attente aux heures de pointe.",
     "filters": [
       "mauricienne",
       "snacks-plage"
@@ -10593,9 +10577,8 @@
     "themes": [
       "restaurants"
     ],
-    "promoText": "Testé par nous : terrasse très agréable au cœur du parc de l'Aventure du Sucre, produits frais et bien cuisinés, jolie présentation, superbes boissons fraîches aux herbes du jardin.",
     "zone": "nord",
-    "description": "Installé dans les jardins de l'ancienne usine sucrière de Beau Plan, à côté du site de l'Aventure du Sucre. La carte met en avant les racines créoles de l'île dans un décor industriel et patrimonial.",
+    "description": "Installé dans les jardins de l'ancienne usine sucrière de Beau Plan, à côté du site de l'Aventure du Sucre. La carte met en avant les racines créoles de l'île dans un décor industriel et patrimonial. Terrasse très agréable, produits frais et bien cuisinés, jolie présentation, boissons fraîches aux herbes du jardin.",
     "hours": "Tous les jours 9h-17h",
     "filters": [
       "mauricienne"
@@ -11756,7 +11739,6 @@
     "themes": [
       "restaurants"
     ],
-    "promoText": "Poisson frais grillé au BBQ.",
     "zone": "nord",
     "description": "Table familiale de Cap Malheureux ouverte depuis 2019, face à la chapelle rouge, les pieds dans le sable sous un banian. Poisson grillé du jour ; avis partagés sur la transparence des prix (pas de carte affichée).",
     "filters": [
@@ -14735,8 +14717,7 @@
       "kids-friendly"
     ],
     "badge": "selection",
-    "promoText": "Superbe parc, organisation bien rodée. Idéal en famille.",
-    "description": "Superbe site naturel où l'on se balade sur un parcours fléché jalonné de belles cascades et bassins (accessible avec des enfants), ponctué de points de vue sur la vallée et le lagon. Le sentier longe aussi les couleurs de la terre mauricienne (23 variations) et un enclos animalier (tortues, paons, basse-cour en semi-liberté). De nombreuses activités en supplément : tyroliennes (dont une de plus de 1,5 km), pêche, balades à cheval, quad, luge d'été, buggies…",
+    "description": "Superbe site naturel où l'on se balade sur un parcours fléché jalonné de belles cascades et bassins (accessible avec des enfants), ponctué de points de vue sur la vallée et le lagon. Le sentier longe aussi les couleurs de la terre mauricienne (23 variations) et un enclos animalier (tortues, paons, basse-cour en semi-liberté). De nombreuses activités en supplément : tyroliennes (dont une de plus de 1,5 km), pêche, balades à cheval, quad, luge d'été, buggies… Organisation bien rodée, idéal en famille.",
     "duration": "~5h de visite",
     "entryPrice": "12€/adulte",
     "zone": "sud",
@@ -14844,7 +14825,6 @@
     "themes": [
       "plages-nature"
     ],
-    "promoText": "Randonnée pour marcheurs confirmés.",
     "duration": "4h-5h aller-retour",
     "difficultyLevel": "confirme",
     "guideRecommended": true,
@@ -15393,8 +15373,7 @@
       "culture-patrimoine"
     ],
     "zone": "sud",
-    "promoText": "Petit musée au fort hollandais du premier établissement colonial de Maurice, vue sur la baie. (entrée gratuite, fermé le mercredi)",
-    "description": "Musée du site historique du Vieux Grand Port présentant les vestiges archéologiques et objets retrouvés depuis 1997, témoins des premiers établissements hollandais et français à Maurice.",
+    "description": "Musée du site historique du Vieux Grand Port présentant les vestiges archéologiques et objets retrouvés depuis 1997, témoins des premiers établissements hollandais et français à Maurice. Vue sur la baie, entrée gratuite, fermé le mercredi.",
     "createdAt": "2026-07-12T16:37:31+02:00"
   },
   {
@@ -15411,8 +15390,7 @@
       "culture-patrimoine"
     ],
     "zone": "centre",
-    "promoText": "Musée philatélique installé dans l'ancienne poste centrale de 1868, collection de timbres mauriciens. (entrée à petit prix, gratuit pour les -7 ans)",
-    "description": "Installé dans un bâtiment victorien du Port Louis Waterfront, ce musée retrace l'histoire des services postaux mauriciens depuis 1772, avec uniformes, machines à oblitérer et reproductions des célèbres timbres Blue et Red Penny.",
+    "description": "Installé dans un bâtiment victorien du Port Louis Waterfront, ce musée retrace l'histoire des services postaux mauriciens depuis 1772, avec uniformes, machines à oblitérer et reproductions des célèbres timbres Blue et Red Penny. Entrée à petit prix, gratuite pour les moins de 7 ans.",
     "createdAt": "2026-07-12T16:37:31+02:00"
   },
   {
@@ -15429,8 +15407,7 @@
       "culture-patrimoine"
     ],
     "zone": "centre",
-    "promoText": "Musée dédié à l'histoire de l'esclavage et de l'engagisme, installé dans l'ancien hôpital militaire de 1740, ouvert en 2023. (entrée gratuite)",
-    "description": "Ouvert en 2023 dans l'ancien hôpital militaire de Port-Louis construit en 1740, ce musée est consacré à l'histoire de l'esclavage et de l'engagisme à Maurice, à travers objets d'époque et bustes ethnographiques du XIXe siècle.",
+    "description": "Ouvert en 2023 dans l'ancien hôpital militaire de Port-Louis construit en 1740, ce musée est consacré à l'histoire de l'esclavage et de l'engagisme à Maurice, à travers objets d'époque et bustes ethnographiques du XIXe siècle. Entrée gratuite.",
     "createdAt": "2026-07-12T16:37:31+02:00"
   },
   {
@@ -15448,8 +15425,7 @@
       "kids-friendly"
     ],
     "zone": "centre",
-    "promoText": "Petit musée abritant le célèbre squelette de dodo et des collections de faune mauricienne. (entrée gratuite)",
-    "description": "Plus ancien musée de Maurice, installé dans le bâtiment de l'Institut mauricien à Port-Louis, célèbre pour abriter l'un des squelettes de dodo les plus complets au monde ainsi que des collections sur la faune et la flore de l'île.",
+    "description": "Plus ancien musée de Maurice, installé dans le bâtiment de l'Institut mauricien à Port-Louis, célèbre pour abriter l'un des squelettes de dodo les plus complets au monde ainsi que des collections sur la faune et la flore de l'île. Entrée gratuite.",
     "filters": [
       "kids-friendly"
     ],
@@ -15489,8 +15465,7 @@
       "culture-patrimoine"
     ],
     "zone": "nord",
-    "promoText": "Galerie d'art dans un centre commercial de Grand Baie, toiles acryliques de Françoise Vrot sur les scènes de vie mauriciennes.",
-    "description": "Galerie de Grand Baie présentant les toiles de la peintre française Françoise Vrot, installée à Maurice depuis 1994, dont les œuvres colorées célèbrent les champs de canne, les lagons et les visages de l'île.",
+    "description": "Galerie de Grand Baie présentant les toiles de la peintre française Françoise Vrot, installée à Maurice depuis 1994, dont les œuvres colorées célèbrent les champs de canne, les lagons et les visages de l'île. Située dans un centre commercial de Grand Baie.",
     "createdAt": "2026-07-12T16:37:31+02:00"
   },
   {
@@ -16592,7 +16567,6 @@
     "themes": [
       "restaurants"
     ],
-    "promoText": "Excellentes crêpes, produits locaux et régionaux. Super accueil, service aux petits soins.",
     "zone": "nord",
     "description": "Crêperie bretonne authentique installée dans le complexe Dodo La Lodge à Grand Baie, tenue par un couple français attaché aux recettes traditionnelles de galettes de sarrasin et crêpes sucrées. Avis très positifs, produits de qualité, service chaleureux, face à la plage.",
     "filters": [
@@ -17151,8 +17125,7 @@
       "marches-produits-locaux"
     ],
     "zone": "nord",
-    "promoText": "Marché artisanal (et non alimentaire) : textile, jupes de séga, paréos, souvenirs, dodos en bois artisanaux.",
-    "description": "Marche couvert de Grand Baie, ouvert lundi-samedi 6h-18h, dimanche/jours feries 6h-12h. Fruits et legumes frais, artisanat local et souvenirs (vetements, bibelots, objets en bois, bijoux). Bon rapport qualite-prix, ambiance fraiche et locale.",
+    "description": "Marche couvert de Grand Baie, ouvert lundi-samedi 6h-18h, dimanche/jours feries 6h-12h. Fruits et legumes frais, artisanat local et souvenirs (vetements, bibelots, objets en bois, bijoux). Bon rapport qualite-prix, ambiance fraiche et locale. On y trouve notamment jupes de séga, paréos et dodos en bois artisanaux.",
     "hours": "Tous les jours 9h-17h, Dim 9h-12h",
     "createdAt": "2026-07-12T16:37:31+02:00"
   },
@@ -20025,8 +19998,7 @@
       "kids-friendly"
     ],
     "zone": "ouest",
-    "promoText": "Ancienne tour de défense britannique du 19e siècle transformée en musée, visite guidée incluse dans le billet. (70 Rs/pers. en semaine, 50 Rs le week-end)",
-    "description": "Tour de défense en pierre basaltique construite par les Britanniques entre 1832 et 1835 sur la plage de La Preneuse, transformée depuis 2000 en musée présentant armes d'époque et personnages en cire.",
+    "description": "Tour de défense en pierre basaltique construite par les Britanniques entre 1832 et 1835 sur la plage de La Preneuse, transformée depuis 2000 en musée présentant armes d'époque et personnages en cire. Visite guidée incluse dans le billet (70 Rs/pers. en semaine, 50 Rs le week-end).",
     "hours": "Mar-Ven 9h30-17h, Sam 9h30-13h, fermé lundi et dimanche",
     "entryPrice": "150 Rs/adulte, 75 Rs/enfant",
     "createdAt": "2026-07-12T16:37:31+02:00"
@@ -27449,8 +27421,7 @@
       "culture-patrimoine"
     ],
     "zone": "sud",
-    "promoText": "Ancienne demeure du poète mauricien Robert Edward Hart, avec ses effets personnels, manuscrits et éditions originales. (entrée gratuite)",
-    "description": "Musée installé à Souillac dans « La Nef », bungalow en pierre de corail où vécut le poète mauricien Robert Edward Hart jusqu'à sa mort en 1954, conservant ses lettres, poèmes et objets personnels.",
+    "description": "Musée installé à Souillac dans « La Nef », bungalow en pierre de corail où vécut le poète mauricien Robert Edward Hart jusqu'à sa mort en 1954, conservant ses lettres, poèmes et objets personnels. Entrée gratuite.",
     "createdAt": "2026-07-12T16:37:31+02:00"
   },
   {
@@ -27467,8 +27438,7 @@
       "culture-patrimoine"
     ],
     "zone": "sud",
-    "promoText": "Maison natale du professeur Sookdeo Bissoondoyal à Tyack, transformée en musée avec souvenirs, photos et documents. (entrée gratuite)",
-    "description": "Musée aménagé dans la maison natale de Sookdeo Bissoondoyal à Tyack, figure majeure de la lutte pour l'indépendance mauricienne, rassemblant photographies, documents et souvenirs de sa vie.",
+    "description": "Musée aménagé dans la maison natale de Sookdeo Bissoondoyal à Tyack, figure majeure de la lutte pour l'indépendance mauricienne, rassemblant photographies, documents et souvenirs de sa vie. Entrée gratuite.",
     "createdAt": "2026-07-12T16:37:31+02:00"
   },
   {
@@ -27485,8 +27455,7 @@
       "culture-patrimoine"
     ],
     "zone": "sud",
-    "promoText": "Collection privée éclectique de plus de 27 000 objets anciens (téléphones, machines à coudre, monnaies, vélos) réunis sur trois générations.",
-    "description": "Maison-musée insolite de Rose-Belle où trois générations d'une même famille, descendante de travailleurs engagés arrivés en 1855, ont accumulé et exposent des milliers d'objets du quotidien mauricien d'autrefois.",
+    "description": "Maison-musée insolite de Rose-Belle où trois générations d'une même famille, descendante de travailleurs engagés arrivés en 1855, ont accumulé et exposent des milliers d'objets du quotidien mauricien d'autrefois. Plus de 27 000 objets anciens exposés : téléphones, machines à coudre, monnaies, vélos…",
     "createdAt": "2026-07-12T16:37:31+02:00"
   },
   {
@@ -30254,8 +30223,7 @@
       "culture-patrimoine"
     ],
     "zone": "est",
-    "promoText": "Vestiges d'une ancienne sucrerie construite en 1822 et fermée en 1875, murs et cheminées classés au patrimoine national. (accès libre)",
-    "description": "Vestiges d'une ancienne usine sucrière du XIXe siècle près de Quatre Cocos, dont les ruines envahies de végétation témoignent du passé colonial et sucrier de la région de Belle Mare.",
+    "description": "Vestiges d'une ancienne usine sucrière du XIXe siècle près de Quatre Cocos, dont les ruines envahies de végétation témoignent du passé colonial et sucrier de la région de Belle Mare. Usine construite en 1822 et fermée en 1875, murs et cheminées classés au patrimoine national ; accès libre.",
     "createdAt": "2026-07-12T16:37:31+02:00"
   },
   {
@@ -30272,8 +30240,7 @@
       "culture-patrimoine"
     ],
     "zone": "est",
-    "promoText": "Monument élevé en 1944 en mémoire du naufrage du Saint-Géran en 1744, qui inspira le roman Paul et Virginie. (accès libre)",
-    "description": "Monument érigé à Poudre d'Or en mémoire du naufrage du navire Saint-Géran en 1744, tragédie qui inspira à Bernardin de Saint-Pierre son roman « Paul et Virginie » publié en 1788.",
+    "description": "Monument érigé à Poudre d'Or en mémoire du naufrage du navire Saint-Géran en 1744, tragédie qui inspira à Bernardin de Saint-Pierre son roman « Paul et Virginie » publié en 1788. Monument érigé en 1944, accès libre.",
     "createdAt": "2026-07-12T16:37:31+02:00"
   },
   {
@@ -32268,8 +32235,7 @@
       "marches-produits-locaux"
     ],
     "zone": "sud",
-    "promoText": "Des fleurs, de la street food mauricienne, du poisson frais, le meilleur de l'île, des légumes et des épices.",
-    "description": "Marche ouvert tous les jours mais double de taille le lundi (\"Monday Market\"). Fruits, legumes, fleurs, textiles, bric-a-brac et stands de street-food (gateaux piments, dholl puri, samoussas). Tres anime le lundi matin - arriver avant 9h30 pour eviter la foule.",
+    "description": "Marche ouvert tous les jours mais double de taille le lundi (\"Monday Market\"). Fruits, legumes, fleurs, textiles, bric-a-brac et stands de street-food (gateaux piments, dholl puri, samoussas). Tres anime le lundi matin - arriver avant 9h30 pour eviter la foule. On y trouve aussi du poisson frais et des épices.",
     "hours": "Tous les jours 6h-14h (marché élargi le lundi)",
     "createdAt": "2026-07-12T16:37:31+02:00"
   },
@@ -32468,9 +32434,8 @@
     "hours": "Lun-Ven 8h30-17h30, Sam 8h-17h, fermé dim",
     "priceRange": "prix-moyen",
     "badge": "selection",
-    "promoText": "Très jolie exploitation, visite commentée de 25 min avec dégustation. (450 Rs/pers.)",
     "zone": "sud",
-    "description": "Plantation fondée en 1992 à St Julien d'Hotman, où une visite guidée permet de découvrir la culture de la vanille ainsi que des plants de café, de cacao et diverses épices dans un cadre agricole préservé.",
+    "description": "Plantation fondée en 1992 à St Julien d'Hotman, où une visite guidée permet de découvrir la culture de la vanille ainsi que des plants de café, de cacao et diverses épices dans un cadre agricole préservé. Visite commentée de 25 minutes avec dégustation (450 Rs/pers.).",
     "createdAt": "2026-07-12T17:03:39+02:00"
   },
   {
@@ -32488,9 +32453,8 @@
     ],
     "hours": "Mar-Dim 12h-15h & 18h-22h30, fermé lun",
     "priceRange": "se-faire-plaisir",
-    "promoText": "Belles présentations, portions correctes, excellents desserts — haut de gamme mais raisonnable.",
     "zone": "nord",
-    "description": "Table de l'hôtel InterContinental Balaclava Fort, Ségala propose une cuisine créole modernisée d'inspiration méditerranéenne (soupes, salades fraîches, grillades de viandes et de poissons), servie en salle ou en terrasse face à l'océan. Cadre élégant, service attentif ; fermé le lundi, dress code smart casual.",
+    "description": "Table de l'hôtel InterContinental Balaclava Fort, Ségala propose une cuisine créole modernisée d'inspiration méditerranéenne (soupes, salades fraîches, grillades de viandes et de poissons), servie en salle ou en terrasse face à l'océan. Cadre élégant, service attentif ; fermé le lundi, dress code smart casual. Belles présentations, portions correctes, excellents desserts ; haut de gamme mais raisonnable.",
     "filters": [
       "europeenne",
       "fruits-de-mer"
@@ -32519,10 +32483,9 @@
       "cafes-bars-glaciers"
     ],
     "priceRange": "prix-moyen",
-    "promoText": "Cadre et ambiance exceptionnels façon vieux gréement ; cocktails à prix très raisonnable.",
     "zone": "nord",
     "hours": "Tous les jours 9h-1h",
-    "description": "Bar du Maritim Resort & Spa (Turtle Bay, Balaclava), boissons locales/internationales et snacks (dont thé de l'après-midi), inclus en formule all-inclusive. Bonne ambiance en soirée avec piano live selon les avis.",
+    "description": "Bar du Maritim Resort & Spa (Turtle Bay, Balaclava), boissons locales/internationales et snacks (dont thé de l'après-midi), inclus en formule all-inclusive. Bonne ambiance en soirée avec piano live selon les avis. Décor façon vieux gréement, cocktails à prix très raisonnable.",
     "filters": [
       "bars"
     ],
@@ -32551,9 +32514,8 @@
     "hours": "Lun-Mar & Jeu-Sam 11h-16h, fermé mer et dim",
     "priceRange": "bon-marche",
     "takeaway": true,
-    "promoText": "Mine frit sino-mauricien à moins de 3€ ; service très bien organisé malgré l’affluence du midi.",
     "zone": "centre",
-    "description": "Aussi connu sous le nom de Chez Jacques, ce petit établissement de L'Agrément Road à Saint-Pierre sert des nouilles maison (mine bouilli, mine gros pois) depuis les années 1970.",
+    "description": "Aussi connu sous le nom de Chez Jacques, ce petit établissement de L'Agrément Road à Saint-Pierre sert des nouilles maison (mine bouilli, mine gros pois) depuis les années 1970. Mine frit sino-mauricien à moins de 3€, service bien organisé malgré l'affluence du midi.",
     "filters": [
       "asiatique",
       "mauricienne"
@@ -32581,9 +32543,8 @@
       "restaurants"
     ],
     "takeaway": true,
-    "promoText": "Salade tropicale, sandwichs et plats créoles.",
     "zone": "nord",
-    "description": "Snack-restaurant de Stéphanie sur la plage de Mont Choisy, petit et cosy, service assuré par sa fille Lorry. Marlin fumé à l'ananas, curry de poisson, fruits flambés en dessert et rhum arrangé maison, sur place ou à emporter.",
+    "description": "Snack-restaurant de Stéphanie sur la plage de Mont Choisy, petit et cosy, service assuré par sa fille Lorry. Marlin fumé à l'ananas, curry de poisson, fruits flambés en dessert et rhum arrangé maison, sur place ou à emporter. Également au menu : salade tropicale, sandwichs et plats créoles.",
     "hours": "Tous les jours 10h30-14h30 & 18h-22h",
     "filters": [
       "mauricienne"
@@ -32611,9 +32572,8 @@
     "themes": [
       "restaurants"
     ],
-    "promoText": "Cuisine italienne, et crêpes au goûter.",
     "zone": "nord",
-    "description": "Restaurant méditerranéen de Trou aux Biches, repris par un nouveau propriétaire en 2023. Accueil décrit comme professionnel et chaleureux ; gamme de prix moyenne à élevée.",
+    "description": "Restaurant méditerranéen de Trou aux Biches, repris par un nouveau propriétaire en 2023. Accueil décrit comme professionnel et chaleureux ; gamme de prix moyenne à élevée. Cuisine plutôt italienne, avec des crêpes proposées au goûter.",
     "filters": [
       "italien"
     ],
@@ -32639,9 +32599,8 @@
     "themes": [
       "restaurants"
     ],
-    "promoText": "Cuisine mixte, italienne et créole.",
     "zone": "nord",
-    "description": "Restaurant créole et de fruits de mer à Pointe aux Piments, au décor chic et soigné, à deux pas de la plage. Spécialités : poisson frit à la créole aux épices, curry créole, homard grillé et plateaux de fruits de mer, ainsi que des pizzas au feu de bois. Service attentionné et accueillant salué par les avis.",
+    "description": "Restaurant créole et de fruits de mer à Pointe aux Piments, au décor chic et soigné, à deux pas de la plage. Spécialités : poisson frit à la créole aux épices, curry créole, homard grillé et plateaux de fruits de mer, ainsi que des pizzas au feu de bois. Service attentionné et accueillant salué par les avis. Cuisine mixte entre créole et italienne.",
     "hours": "Mar-Dim 10h-22h, fermé lundi",
     "filters": [
       "mauricienne",
@@ -32728,9 +32687,8 @@
     "themes": [
       "restaurants"
     ],
-    "promoText": "Cave à vins et bar à cocktails ; langouste, thon rouge, crevettes géantes.",
     "zone": "nord",
-    "description": "Depuis près de quarante ans, Amigo est l'une des adresses de référence pour la langouste à l'Île Maurice, servie entière et grillée à la flamme, accompagnée de poissons frais et de plateaux de fruits de mer. Cadre convivial en bord de mer, personnel aux petits soins, quelques avis mentionnent un rapport qualité-prix élevé.",
+    "description": "Depuis près de quarante ans, Amigo est l'une des adresses de référence pour la langouste à l'Île Maurice, servie entière et grillée à la flamme, accompagnée de poissons frais et de plateaux de fruits de mer. Cadre convivial en bord de mer, personnel aux petits soins, quelques avis mentionnent un rapport qualité-prix élevé. Cave à vins et bar à cocktails sur place ; au menu aussi thon rouge et crevettes géantes.",
     "filters": [
       "fruits-de-mer"
     ],
@@ -32967,8 +32925,7 @@
     ],
     "hours": "Tous les jours 9h-17h",
     "zone": "centre",
-    "promoText": "Demeure coloniale restaurée en musée du thé mauricien, visite guidée d'1h se terminant par une dégustation de thé et de rhum. (≈330 Rs/pers.)",
-    "description": "Demeure coloniale en bois construite en 1872 à Forest Side, première maison mauricienne équipée de l'électricité en 1889, aujourd'hui maison-musée et première étape de la Route du Thé. Visite guidée (français/anglais) à travers les pièces d'époque : bois récupéré d'anciens navires corsaires, mobilier en acajou, carreaux de ciment et souvenirs de la famille Guimbeau, au milieu de jardins centenaires (camphriers, araucarias). La visite se termine par une dégustation de thés de Bois Chéri et de rhum dans le salon de thé ; petite boutique de souvenirs sur place. Ouvert tous les jours 9h-17h.",
+    "description": "Demeure coloniale en bois construite en 1872 à Forest Side, première maison mauricienne équipée de l'électricité en 1889, aujourd'hui maison-musée et première étape de la Route du Thé. Visite guidée (français/anglais) à travers les pièces d'époque : bois récupéré d'anciens navires corsaires, mobilier en acajou, carreaux de ciment et souvenirs de la famille Guimbeau, au milieu de jardins centenaires (camphriers, araucarias). La visite se termine par une dégustation de thés de Bois Chéri et de rhum dans le salon de thé ; petite boutique de souvenirs sur place. Ouvert tous les jours 9h-17h. Compter environ 330 Rs par personne.",
     "createdAt": "2026-07-14T04:51:31+02:00"
   },
   {
@@ -33007,9 +32964,8 @@
     "themes": [
       "tables-hotes-chefs-domicile"
     ],
-    "promoText": "Atelier de cuisine mauricienne traditionnelle sur la plage, au feu de bois. Sur réservation par email.",
     "zone": "centre",
-    "description": "Ateliers de cuisine mauricienne (Moris Otreman) à Port-Louis : préparation de plats locaux, sur réservation.",
+    "description": "Ateliers de cuisine mauricienne (Moris Otreman) à Port-Louis : préparation de plats locaux, sur réservation. Atelier traditionnel au feu de bois, réservation par email.",
     "filters": [
       "cours-de-cuisine"
     ],
@@ -33029,9 +32985,8 @@
     "themes": [
       "tables-hotes-chefs-domicile"
     ],
-    "promoText": "Cuisine créole chez l'habitant + visite guidée du marché local. Mercredi & samedi. Réservation via Vacances Maurice.",
     "zone": "nord",
-    "description": "Cours de cuisine créole chez Rosemonde (Goodlands) : visite du marché local et préparation de plats mauriciens.",
+    "description": "Cours de cuisine créole chez Rosemonde (Goodlands) : visite du marché local et préparation de plats mauriciens. Cours proposés le mercredi et le samedi, réservation via Vacances Maurice.",
     "filters": [
       "cours-de-cuisine"
     ],
@@ -33051,7 +33006,6 @@
     "themes": [
       "tables-hotes-chefs-domicile"
     ],
-    "promoText": "Cours de cuisine et repas partagé chez l'habitant. Sur réservation.",
     "zone": "ouest",
     "description": "Cours de cuisine et repas chez l'habitant à Tamarin (Séjour Maurice) : découverte de la cuisine mauricienne, sur réservation.",
     "filters": [
@@ -33073,9 +33027,8 @@
     "themes": [
       "tables-hotes-chefs-domicile"
     ],
-    "promoText": "Atelier de cuisine privé en villa (concept « farm to table »). Sur réservation.",
     "zone": "ouest",
-    "description": "Cours de cuisine en villa (Muse Villas) à Rivière Noire / La Preneuse : ateliers culinaires sur la côte ouest, sur réservation.",
+    "description": "Cours de cuisine en villa (Muse Villas) à Rivière Noire / La Preneuse : ateliers culinaires sur la côte ouest, sur réservation. Concept « farm to table ».",
     "filters": [
       "cours-de-cuisine"
     ],
@@ -33123,8 +33076,7 @@
       "kids-friendly"
     ],
     "zone": "sud",
-    "promoText": "Petite distillerie artisanale d'huiles essentielles (ylang-ylang, citronnelle, poivre rose), visite guidée des étapes de fabrication.",
-    "description": "Distillerie artisanale à Anse Jonchée qui extrait l'huile essentielle d'ylang-ylang à partir de fleurs cueillies à la main, avec boutique proposant huiles, savons et produits locaux ; visite du site de production possible.",
+    "description": "Distillerie artisanale à Anse Jonchée qui extrait l'huile essentielle d'ylang-ylang à partir de fleurs cueillies à la main, avec boutique proposant huiles, savons et produits locaux ; visite du site de production possible. Production également de citronnelle et de poivre rose ; visite guidée des étapes de fabrication.",
     "createdAt": "2026-07-15T18:07:37+02:00"
   },
   {
@@ -33160,9 +33112,8 @@
       "parcs-activites-famille",
       "kids-friendly"
     ],
-    "promoText": "Visite uniquement accompagnée d'une soignante.",
     "zone": "ouest",
-    "description": "Refuge animalier (également appelé L'Arche de Noé) situé au cœur du Parc de loisirs de Gros-Cailloux sur la côte ouest, hébergeant une soixantaine d'animaux d'une vingtaine d'espèces (oiseaux, biches, lapins, tortues, singes) dans des enclos reliés par des ponts népalais.",
+    "description": "Refuge animalier (également appelé L'Arche de Noé) situé au cœur du Parc de loisirs de Gros-Cailloux sur la côte ouest, hébergeant une soixantaine d'animaux d'une vingtaine d'espèces (oiseaux, biches, lapins, tortues, singes) dans des enclos reliés par des ponts népalais. Visite uniquement accompagnée d'une soignante.",
     "createdAt": "2026-07-15T18:07:37+02:00"
   },
   {
@@ -33286,9 +33237,8 @@
     "themes": [
       "coworking-teletravail"
     ],
-    "promoText": "Vue magnifique, personnel attentionné et iced coffee délicieux. Musique parfois forte.",
     "zone": "nord",
-    "description": "Restaurant lounge-bar les pieds dans le sable à Grand Baie (ambiance Côte d'Azur), ouvert en continu du petit-déjeuner au dîner : cuisine méditerranéenne et fruits de mer, terrasse face au lagon — spot agréable pour bruncher ou travailler avec vue.",
+    "description": "Restaurant lounge-bar les pieds dans le sable à Grand Baie (ambiance Côte d'Azur), ouvert en continu du petit-déjeuner au dîner : cuisine méditerranéenne et fruits de mer, terrasse face au lagon — spot agréable pour bruncher ou travailler avec vue. Personnel attentionné, iced coffee très apprécié ; musique parfois forte en soirée.",
     "filters": [
       "cafe-coworking"
     ],
@@ -33307,9 +33257,8 @@
     "themes": [
       "restaurants"
     ],
-    "promoText": "Cuisine plutôt méditerranéenne à base de produits frais (poisson selon la pêche du jour). Desserts délicieux à la présentation raffinée et soignée. Cadre très agréable au bord de la piscine.",
     "zone": "nord",
-    "description": "Hôtel de bord de mer à Trou aux Biches dont la restauration est ouverte aux non-résidents : cadre calme face à la piscine, idéal pour une pause déjeuner ou pour télétravailler.",
+    "description": "Hôtel de bord de mer à Trou aux Biches dont la restauration est ouverte aux non-résidents : cadre calme face à la piscine, idéal pour une pause déjeuner ou pour télétravailler. Cuisine plutôt méditerranéenne à base de produits frais (poisson selon la pêche du jour), desserts délicieux à la présentation soignée.",
     "ttvFriendly": true,
     "photoUrl": "/photos/ava-beach.jpg",
     "filters": [
@@ -33339,9 +33288,8 @@
     "themes": [
       "coworking-teletravail"
     ],
-    "promoText": "Hôtel où tu peux te restaurer et travailler même sans être résident. Baignade : sable parfois vaseux.",
     "zone": "nord",
-    "description": "Hôtel du groupe Attitude à Calodyne (Nord), en bord de lagon : restauration et espaces accessibles même sans être résident, pour se restaurer et travailler au calme.",
+    "description": "Hôtel du groupe Attitude à Calodyne (Nord), en bord de lagon : restauration et espaces accessibles même sans être résident, pour se restaurer et travailler au calme. À noter : le sable peut être parfois vaseux à la baignade.",
     "filters": [
       "cafe-coworking"
     ],
@@ -34793,7 +34741,6 @@
     "description": "Un site sublime de 3 ha, planté d'arbres de plus de 200 ans, avec un accès direct à la plage. Les 40 chevaux pensionnaires y sont choyés par une équipe très soucieuse de leur bien-être : soins attentifs, entretien rigoureux, et certains évoluent même en semi-liberté dans le grand parc pour leur confort. Activités proposées : élevage de chevaux (le seul de l'île Maurice), pension, et promenades sur la plage (au lever du soleil ou en journée), toujours dans le respect du bien-être animal.",
     "zone": "est",
     "badge": "selection",
-    "promoText": "Gros coup de cœur pour ce lieu magique et l'attention portée aux chevaux.",
     "photoUrl": "/photos/legasea-stables.jpg",
     "filters": [
       "centres-equestres"
@@ -34902,9 +34849,8 @@
       "marches-produits-locaux"
     ],
     "hours": "Mer & Sam",
-    "promoText": "Objets atypiques et de nombreux tissus : tapisseries indiennes, nappes, vêtements traditionnels… plats typiques, du briani au mine frit en passant par le dholl puri.",
     "zone": "centre",
-    "description": "Ouvert du mardi au dimanche, 8h-17h (ferme le lundi). Reputé plus grand marche textile de l ile. Mercredi et samedi dedies aux legumes ; jeudi et dimanche dedies aux vetements. Ambiance tres locale et commercante, attire des visiteurs de toute l ile.",
+    "description": "Ouvert du mardi au dimanche, 8h-17h (ferme le lundi). Reputé plus grand marche textile de l ile. Mercredi et samedi dedies aux legumes ; jeudi et dimanche dedies aux vetements. Ambiance tres locale et commercante, attire des visiteurs de toute l ile. On y trouve aussi tapisseries indiennes, nappes et vêtements traditionnels, ainsi que des plats typiques (briani, mine frit, dholl puri).",
     "createdAt": "2026-07-17T15:02:45+02:00"
   },
   {
@@ -41161,8 +41107,8 @@
     "address": "Angle Route Royale / Rue de la Corderie, China Town, Port-Louis",
     "phone": "+230 211 9898",
     "zone": "centre",
-    "lat": -20.1611,
-    "lng": 57.5,
+    "lat": -20.1609077,
+    "lng": 57.5040862,
     "themes": [
       "restaurants"
     ],
@@ -41189,8 +41135,8 @@
     "address": "2e étage, Observatoire Building, Caudan Waterfront, Port-Louis",
     "phone": "+230 5733 9899",
     "zone": "centre",
-    "lat": -20.1611,
-    "lng": 57.5,
+    "lat": -20.1609044,
+    "lng": 57.4986055,
     "themes": [
       "restaurants"
     ],
@@ -41613,8 +41559,8 @@
     "address": "St Jean Road, Quatre Bornes",
     "phone": "+230 4245712",
     "zone": "centre",
-    "lat": -20.2667,
-    "lng": 57.4833,
+    "lat": -20.2695946,
+    "lng": 57.4761336,
     "themes": [
       "restaurants"
     ],
@@ -41635,8 +41581,8 @@
     "address": "33 Avenue Hillcrest, Sodnac, Quatre Bornes",
     "phone": "+230 5286 3333",
     "zone": "centre",
-    "lat": -20.25,
-    "lng": 57.4833,
+    "lat": -20.27004,
+    "lng": 57.4866529,
     "themes": [
       "restaurants"
     ],
@@ -41685,8 +41631,8 @@
     "category": "manger-boire",
     "address": "2 Avenue Remy Ollier, Belle Rose, Quatre Bornes",
     "zone": "centre",
-    "lat": -20.2667,
-    "lng": 57.4833,
+    "lat": -20.2472208,
+    "lng": 57.4804211,
     "themes": [
       "restaurants"
     ],
@@ -54306,7 +54252,6 @@
       "restaurants",
       "cafes-bars-glaciers"
     ],
-    "promoText": "Vue splendide, les pieds dans le sable, du calme et un cheesecake à tomber !",
     "zone": "nord",
     "hours": "Tous les jours 9h-21h30",
     "photoUrl": "/photos/la-plage.jpg",
@@ -54315,7 +54260,7 @@
       "/photos/la-plage-2.jpg",
       "/photos/la-plage-3.jpg"
     ],
-    "description": "Beach club (by Evaco) sur la plage de Trou aux Biches, ouvert au public midi et soir : cuisine variée mauricienne et européenne, cocktails et carte de bar, les pieds dans le sable face au lagon. Piscine, transats et glacier sur place.",
+    "description": "Beach club (by Evaco) sur la plage de Trou aux Biches, ouvert au public midi et soir : cuisine variée mauricienne et européenne, cocktails et carte de bar, les pieds dans le sable face au lagon. Piscine, transats et glacier sur place. Vue splendide, ambiance calme ; le cheesecake est particulièrement réputé.",
     "koteMorisComment": "Le cadre est vraiment magnifique : pieds dans le sable, tables installées sous les arbres, lumières guinguette le soir. Service impeccable, cocktails et vins bien choisis et de qualité — une adresse qu'on recommande sans hésiter pour un moment les pieds dans le sable.",
     "filters": [
       "mauricienne",
@@ -57426,8 +57371,7 @@
     "filters": [
       "grandes-surfaces"
     ],
-    "promoText": "Sélection de produits sans pesticide ni hormones. Livraison possible.",
-    "description": "Magasin de l’enseigne Votre Pôte Agé au Mont Choisy Le Mall (Grand Baie) : supermarché mauricien de fruits et légumes frais, livraison possible sous 24h.",
+    "description": "Magasin de l’enseigne Votre Pôte Agé au Mont Choisy Le Mall (Grand Baie) : supermarché mauricien de fruits et légumes frais, livraison possible sous 24h. Produits sans pesticide ni hormones.",
     "createdAt": "2026-08-21T08:46:22+02:00"
   },
   {
