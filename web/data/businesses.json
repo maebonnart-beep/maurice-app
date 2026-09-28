@@ -7280,7 +7280,8 @@
     "photoUrls": [
       "/photos/the-beach-kitchen-restaurant.jpg",
       "/photos/the-beach-kitchen-restaurant-2.jpg",
-      "/photos/the-beach-kitchen-restaurant-3.jpg"
+      "/photos/the-beach-kitchen-restaurant-3.jpg",
+      "/photos/the-beach-kitchen-restaurant-4.jpg"
     ],
     "filters": [
       "fruits-de-mer",
@@ -33232,7 +33233,8 @@
     "createdAt": "2026-07-15T18:07:37+02:00",
     "photoUrl": "/photos/kristens-ice-cream.jpg",
     "photoUrls": [
-      "/photos/kristens-ice-cream.jpg"
+      "/photos/kristens-ice-cream.jpg",
+      "/photos/kristens-ice-cream-2.jpg"
     ],
     "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488106-d19068258-Reviews-Kristen_s_Kick_Ass_Ice_Cream-Trou_aux_Biches.html",
     "koteMorisRatings": {
@@ -43154,7 +43156,8 @@
     "photoUrls": [
       "/photos/la-mandrinette.jpg",
       "/photos/la-mandrinette-2.jpg",
-      "/photos/la-mandrinette-3.jpg"
+      "/photos/la-mandrinette-3.jpg",
+      "/photos/la-mandrinette-4.jpg"
     ],
     "koteMorisComment": "Gros coup de cœur pour ce cadre verdoyant et paisible au cœur d'Endemika, parfait pour se poser en famille autour d'un café comme pour un vrai repas, avec son aire de jeux en bois pour les enfants. Carte courte mais produits extra frais (salades, sandwichs, burgers et plats mauriciens) — coup de cœur particulier pour la salade thaï au porc effiloché, pleine de saveurs et d'herbes fraîches. Desserts maison délicieux, service attentionné et excellent rapport qualité-prix (≈450 Rs salades/burgers, 750 Rs plats du jour) : on peut n'y venir que pour un café, mais on a vite envie d'y rester manger.",
     "filters": [
@@ -55189,7 +55192,8 @@
     "koteMorisComment": "Une adresse parfaite pour un petit-déjeuner ou un déjeuner, avec la possibilité de s'installer pour travailler sur place. Le grand jardin avec balançoire ravit les enfants pendant que les parents profitent du repas. Bon à savoir : un second parking se trouve juste en face lorsque le premier est complet.",
     "photoUrl": "/photos/bloom-pereybere.jpg",
     "photoUrls": [
-      "/photos/bloom-pereybere.jpg"
+      "/photos/bloom-pereybere.jpg",
+      "/photos/bloom-pereybere-2.jpg"
     ],
     "filters": [
       "vegetarien",
@@ -60975,7 +60979,22 @@
     ],
     "zone": "est",
     "description": "Bistro-pub au clubhouse du golf The Nine (Azuri), avec terrasse panoramique sur les fairways : classiques revisités et produits locaux, burgers, plats grillés, plats du jour, cocktails et bières pression.",
-    "createdAt": "2026-09-27T02:48:17+00:00"
+    "createdAt": "2026-09-27T02:48:17+00:00",
+    "koteMorisComment": "Un cadre extrêmement agréable : salle moderne, cuisine ouverte vitrée, bar central et mobilier contemporain, le tout ouvert sur le premier et le dernier trou du golf — magnifique. Service compétent et attentionné. Nous y sommes allés le midi (carte lunch) : des mets simples (club sandwich, trilogie de burgers, pizzas, salades...) mais très bien exécutés et à un très bon rapport qualité-prix. Desserts excellents et fins. La note reste très correcte au regard du cadre et de la qualité proposée — un très bon moment.",
+    "photoUrl": "/photos/the-nine-bistropub-azuri-1.jpg",
+    "photoUrls": [
+      "/photos/the-nine-bistropub-azuri-1.jpg",
+      "/photos/the-nine-bistropub-azuri-2.jpg",
+      "/photos/the-nine-bistropub-azuri-3.jpg",
+      "/photos/the-nine-bistropub-azuri-4.jpg"
+    ],
+    "koteMorisRatings": {
+      "gout": 5,
+      "qualitePrix": 5,
+      "cadre": 5,
+      "accueil": 5
+    },
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "plage-bras-d-eau",
