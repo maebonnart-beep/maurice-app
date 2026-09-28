@@ -33185,8 +33185,7 @@
     "createdAt": "2026-07-15T18:07:37+02:00",
     "photoUrl": "/photos/kristens-ice-cream.jpg",
     "photoUrls": [
-      "/photos/kristens-ice-cream.jpg",
-      "/photos/kristens-ice-cream-2.jpg"
+      "/photos/kristens-ice-cream.jpg"
     ],
     "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g488106-d19068258-Reviews-Kristen_s_Kick_Ass_Ice_Cream-Trou_aux_Biches.html",
     "koteMorisRatings": {
@@ -55154,11 +55153,12 @@
     "createdAt": "2026-08-16T12:59:29+02:00",
     "tripadvisorUrl": "https://www.tripadvisor.com/Restaurant_Review-g1905319-d26813280-Reviews-Bloom-Pereybere.html",
     "koteMorisRatings": {
-      "gout": 4,
+      "gout": 5,
+      "qualitePrix": 5,
       "accueil": 5,
-      "cadre": 4
+      "cadre": 5
     },
-    "koteMorisRatingsSource": "estimation"
+    "koteMorisRatingsSource": "visite"
   },
   {
     "id": "william-watt-magicien",
