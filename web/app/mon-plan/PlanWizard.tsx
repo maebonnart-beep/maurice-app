@@ -512,6 +512,7 @@ export default function PlanWizard({
                   fitKey={`lieu|${placeResults.map((b) => b.id).join(",")}`}
                   hoveredId={mapHoveredId}
                   onHover={setMapHoveredId}
+                  showPopup={false}
                 />
               </div>
             )}
@@ -648,6 +649,7 @@ export default function PlanWizard({
                     numbered
                     hoveredId={mapHoveredId}
                     onHover={setMapHoveredId}
+                    showPopup={false}
                   />
                 </div>
               );

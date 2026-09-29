@@ -167,6 +167,7 @@ export default function Map({
   onHover,
   userPos,
   numbered = false,
+  showPopup = true,
 }: {
   businesses: Business[];
   selectedId: string | null;
@@ -179,6 +180,8 @@ export default function Map({
   userPos?: { lat: number; lng: number } | null;
   /** Parcours (plan complet) : chaque marqueur affiche son rang dans `businesses` (1, 2, 3…) au lieu de l'icône. */
   numbered?: boolean;
+  /** false quand onSelect ouvre déjà une fiche complète : évite la mini-bulle Leaflet en double, qui reste ouverte derrière une fois la fiche fermée. */
+  showPopup?: boolean;
 }) {
   const markersRef = useRef<Record<string, LeafletMarker>>({});
   // Écrans tactiles : un tap déclenche un « mouseover » sans « mouseout »,
@@ -250,6 +253,7 @@ export default function Map({
               mouseout: () => hover?.(null),
             }}
           >
+            {showPopup && (
             <Popup minWidth={210}>
               <div>
                 <b className="block text-sm mb-0.5">{displayName(b.name)}</b>
@@ -319,6 +323,7 @@ export default function Map({
                 </div>
               </div>
             </Popup>
+            )}
           </Marker>
         );
       })}
