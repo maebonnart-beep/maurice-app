@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { DownloadSimple, DotsThreeCircle, Export, X } from "@phosphor-icons/react";
+import { DownloadSimple, DotsThreeCircle, Export, PlusSquare, X } from "@phosphor-icons/react";
 
 const DISMISS_KEY = "km_install_banner_dismissed";
 const SHOW_DELAY_MS = 4000;
@@ -95,9 +95,11 @@ export function InstallPWABanner() {
               <span className="inline-flex flex-wrap items-center gap-x-1">
                 Appuyez sur
                 <Export size={13} weight="bold" className="inline shrink-0" aria-hidden />
-                Partager, puis
+                «&nbsp;<em>Partager</em>&nbsp;», puis
                 <DotsThreeCircle size={13} weight="bold" className="inline shrink-0" aria-hidden />
-                Plus, puis « Sur l&apos;écran d&apos;accueil »
+                «&nbsp;<em>Plus</em>&nbsp;», puis
+                <PlusSquare size={13} weight="bold" className="inline shrink-0" aria-hidden />
+                «&nbsp;<em>Sur l&apos;écran d&apos;accueil</em>&nbsp;»
               </span>
             ) : (
               "Accès rapide depuis l'écran d'accueil"
