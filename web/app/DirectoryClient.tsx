@@ -791,13 +791,9 @@ export default function DirectoryClient({
   }
 
   // Arrivée en « mode ajout » depuis la page d'une liste perso (?addTo=<id>) :
-  // on ouvre directement la recherche (le bandeau est géré par AddToListBanner).
-  useEffect(() => {
-    if (new URLSearchParams(window.location.search).get("addTo")) {
-      setSearchOpen(true);
-      setFocusSearchOnMount(true);
-    }
-  }, []);
+  // on retombe sur l'accueil (menu des 3 méthodes de recherche), pas
+  // directement sur le clavier — le bandeau est géré par AddToListBanner et
+  // reste affiché quelle que soit la méthode choisie ensuite.
 
   // Onglet « Carte » : toutes les adresses en vue carte (même bascule que le
   // bouton liste/carte des résultats), filtres remis à zéro, centrée sur
@@ -2474,18 +2470,6 @@ export default function DirectoryClient({
                   (onglets dédiés dans la barre du bas), le bloc « Avantages
                   Premium » (bloc Premium unique plus bas) et les sections
                   coups de cœur / kids friendly séparées. */}
-              <div className="flex items-center justify-between mt-2 mb-1">
-                <h2 className="text-[16px] font-bold text-ink">Nos sélections</h2>
-                <button
-                  onClick={() => setHomeMode("listes")}
-                  className="text-[13px] font-semibold text-primary-deep active:scale-[.98]"
-                >
-                  Voir tout ›
-                </button>
-              </div>
-              <p className="text-[12.5px] text-muted mb-2.5">
-                Envie d&apos;inspiration ? On a déjà fait le tri pour toi.
-              </p>
               <details open className="group mb-4 rounded-2xl border-2 border-primary bg-white px-3.5 py-3 shadow-card text-[12.5px] text-muted">
                 <summary className="cursor-pointer list-none text-[15px] font-bold text-primary-deep flex items-center justify-between">
                   Comment lire nos notes ?
@@ -2499,11 +2483,11 @@ export default function DirectoryClient({
                       l'harmonie visuelle (même forme de carte, même mise en page). */}
                   <div
                     className="rounded-xl p-2.5"
-                    style={{ background: "color-mix(in srgb, var(--flower-gout) 12%, var(--surface))" }}
+                    style={{ background: "color-mix(in srgb, #0a4d53 52%, var(--surface))" }}
                   >
                     <p
                       className="text-[10.5px] font-bold uppercase tracking-wide"
-                      style={{ color: "var(--flower-gout-stroke)" }}
+                      style={{ color: "#0d4a52" }}
                     >
                       Bars • restaurants • cafés
                     </p>
@@ -2519,11 +2503,11 @@ export default function DirectoryClient({
                   </div>
                   <div
                     className="flex items-start gap-3 rounded-xl p-2.5"
-                    style={{ background: `color-mix(in srgb, ${SELECTION_COLOR} 10%, var(--surface))` }}
+                    style={{ background: "color-mix(in srgb, #0f7a80 44%, var(--surface))" }}
                   >
                     <SpecialBadge variant="selection" className="h-11 w-11 shrink-0" />
                     <div>
-                      <p className="text-[10.5px] font-bold uppercase tracking-wide" style={{ color: SELECTION_COLOR }}>
+                      <p className="text-[10.5px] font-bold uppercase tracking-wide" style={{ color: "#0d4a52" }}>
                         Activités • shopping • sport
                       </p>
                       <p className="mt-0.5 text-[13px] font-semibold text-ink">Recommandé Koté Moris</p>
@@ -2532,11 +2516,11 @@ export default function DirectoryClient({
                   </div>
                   <div
                     className="flex items-start gap-3 rounded-xl p-2.5"
-                    style={{ background: `color-mix(in srgb, ${KIDS_COLOR} 10%, var(--surface))` }}
+                    style={{ background: "color-mix(in srgb, #128a8f 40%, var(--surface))" }}
                   >
                     <SpecialBadge variant="kids-friendly" className="h-11 w-11 shrink-0" />
                     <div>
-                      <p className="text-[10.5px] font-bold uppercase tracking-wide" style={{ color: KIDS_COLOR }}>
+                      <p className="text-[10.5px] font-bold uppercase tracking-wide" style={{ color: "#0d4a52" }}>
                         Sur toutes les fiches
                       </p>
                       <p className="mt-0.5 text-[13px] font-semibold text-ink">Badge Kids friendly</p>
@@ -2545,12 +2529,24 @@ export default function DirectoryClient({
                   </div>
                 </div>
               </details>
+              <div className="flex items-center justify-between mt-2 mb-1">
+                <h2 className="font-serif text-[21px] font-bold text-ink">Les listes de Koté Moris</h2>
+                <button
+                  onClick={() => setHomeMode("listes")}
+                  className="text-[13px] font-semibold text-primary-deep active:scale-[.98]"
+                >
+                  Voir tout ›
+                </button>
+              </div>
+              <p className="text-[13px] text-muted leading-snug mb-2.5">
+                Des listes thématiques composées à la main par la rédaction : une sélection d&apos;adresses réunies autour d&apos;une envie, d&apos;une occasion ou d&apos;un moment (avec les enfants, un date, un weekend...).
+              </p>
               <div className="flex gap-3 overflow-x-auto pb-1 -mx-4 px-4 mb-7 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
                 {homeSelections.map((s) => (
                   <button
                     key={s.id}
                     onClick={() => { setHomeMode("listes"); setSelectedListId(s.id); }}
-                    className="relative text-left shrink-0 w-[130px] aspect-[4/5] rounded-2xl overflow-hidden shadow-card active:scale-[.98] transition-transform"
+                    className="relative text-left shrink-0 w-[160px] aspect-[4/5] rounded-2xl overflow-hidden shadow-card active:scale-[.98] transition-transform"
                   >
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
@@ -2565,7 +2561,7 @@ export default function DirectoryClient({
                       style={{ background: "linear-gradient(180deg, rgba(0,0,0,0) 45%, rgba(0,0,0,.72) 100%)" }}
                     />
                     <span className="absolute inset-x-0 bottom-0 p-2.5">
-                      <span className="block font-serif text-[12px] font-semibold leading-tight text-white line-clamp-2">
+                      <span className="block font-serif text-[13.5px] font-semibold leading-tight text-white line-clamp-2">
                         {s.title}
                       </span>
                     </span>
@@ -2580,14 +2576,14 @@ export default function DirectoryClient({
                 const rows = [
                   {
                     key: "fleurs",
-                    tint: "var(--flower-gout)",
+                    tint: "#0a4d53",
+                    strength: 52,
                     title: "Les tables recommandées",
                     badge: (
-                      <span className="h-12 w-12 shrink-0 inline-flex items-center justify-center rounded-full bg-surface shadow-sm">
-                        <CriteriaFlowers ratings={{ gout: 5 }} size={26} />
+                      <span className="h-11 w-11 shrink-0 inline-flex items-center justify-center rounded-full bg-surface shadow-sm">
+                        <CriteriaFlowers ratings={{ gout: 5 }} size={24} />
                       </span>
                     ),
-                    hint: "Bars, restaurants et cafés testés par la rédaction. Une fleur par critère validé et approuvé : goût, qualité-prix, cadre, accueil et service.",
                     list: tablesFleuries,
                     onAll: () => {
                       setNearMe(false);
@@ -2601,19 +2597,19 @@ export default function DirectoryClient({
                   },
                   {
                     key: "reco",
-                    tint: SELECTION_COLOR,
-                    title: "Nos coups de cœur",
-                    badge: <SpecialBadge variant="selection" className="h-12 w-12 shrink-0" />,
-                    hint: "Testées et approuvées par la rédaction : des lieux, activités et sorties qu'on te conseille les yeux fermés.",
+                    tint: "#0f7a80",
+                    strength: 44,
+                    title: "Nos adresses recommandées",
+                    badge: <SpecialBadge variant="selection" className="h-11 w-11 shrink-0" />,
                     list: coupsDeCoeur.filter((b) => highlightedCriteria(b).length === 0),
                     onAll: () => { setBrowseAll(true); setFacetBadges(new Set(["selection"])); },
                   },
                   {
                     key: "kids",
-                    tint: KIDS_COLOR,
-                    title: "Kids friendly",
-                    badge: <SpecialBadge variant="kids-friendly" className="h-12 w-12 shrink-0" />,
-                    hint: "Des lieux où les enfants sont les bienvenus : activités, balades, sorties et tables adaptées aux familles.",
+                    tint: "#128a8f",
+                    strength: 40,
+                    title: "Les adresses Kid's friendly",
+                    badge: <SpecialBadge variant="kids-friendly" className="h-11 w-11 shrink-0" />,
                     list: kidsAdresses,
                     onAll: () => {
                       setNearMe(false);
@@ -2629,34 +2625,31 @@ export default function DirectoryClient({
                 return (
                   <div id="accueil-coups-de-coeur" className="mb-7 space-y-4">
                     <div>
-                      <h2 className="text-[16px] font-bold text-ink">À la une</h2>
-                      <p className="text-[12.5px] text-muted">
+                      <h2 className="font-serif text-[21px] font-bold text-ink">Nos adresses spécialement sélectionnées</h2>
+                      <p className="text-[13px] text-muted leading-snug">
                         {preferences.interests.length > 0 || preferences.hasKids
                           ? "Une sélection pensée pour toi, d'après tes préférences (Mon compte)."
                           : "Nos adresses à ne pas manquer, par type."}
                       </p>
                     </div>
                     {rows.map((r) => (
-                      <div
-                        key={r.key}
-                        className="p-3 rounded-2xl shadow-card"
-                        style={{ background: `linear-gradient(135deg, color-mix(in srgb, ${r.tint} 38%, var(--surface)) 0%, color-mix(in srgb, ${r.tint} 6%, var(--surface)) 100%)` }}
-                      >
-                        <div className="flex items-center justify-between mb-2">
-                          <div className="flex items-center gap-2.5 min-w-0">
-                            {r.badge}
-                            <div className="min-w-0">
-                              <h3 className="text-[14.5px] font-bold text-ink">{r.title}</h3>
-                              <p className="text-[11.5px] text-muted leading-snug">{r.hint}</p>
-                            </div>
-                          </div>
+                      <div key={r.key}>
+                        <div
+                          className="flex items-center gap-2.5 mb-1.5 p-2 rounded-xl"
+                          style={{ background: `color-mix(in srgb, ${r.tint} ${Math.round(r.strength / 2)}%, var(--surface))` }}
+                        >
+                          {r.badge}
+                          <h3 className="flex-1 min-w-0 text-[14.5px] font-bold text-ink leading-tight">{r.title}</h3>
                           {r.onAll && (
                             <button onClick={r.onAll} className="shrink-0 text-[13px] font-semibold text-primary-deep active:scale-[.98]">
                               Voir tout ›
                             </button>
                           )}
                         </div>
-                        <div className="flex gap-3 overflow-x-auto pb-1 -mx-3 px-3 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+                        <div
+                          className="p-2.5 rounded-2xl shadow-card flex gap-3 overflow-x-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+                          style={{ background: `linear-gradient(135deg, color-mix(in srgb, ${r.tint} ${r.strength}%, var(--surface)) 0%, color-mix(in srgb, ${r.tint} 6%, var(--surface)) 100%)` }}
+                        >
                           {r.list.slice(0, 12).map((b) => (
                             <div
                               key={b.id}
@@ -2666,7 +2659,7 @@ export default function DirectoryClient({
                               onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") selectFromCard(b.id); }}
                               className="relative shrink-0 w-[160px] rounded-card overflow-hidden bg-surface border border-border shadow-card text-left cursor-pointer active:scale-[.98] transition-transform"
                             >
-                              <div className="relative h-[110px] bg-primary-tint flex items-center justify-center">
+                              <div className="relative h-[130px] bg-primary-tint flex items-center justify-center">
                                 {b.photoUrl && (
                                   // eslint-disable-next-line @next/next/no-img-element
                                   <img src={b.photoUrl} alt="" className="absolute inset-0 w-full h-full object-cover" />
@@ -2765,20 +2758,20 @@ export default function DirectoryClient({
                   <div
                     id="accueil-evenements"
                     className="p-3 rounded-2xl shadow-card"
-                    style={{ background: "linear-gradient(135deg, #ffd3df 0%, #fff4f7 100%)" }}
+                    style={{ background: "linear-gradient(135deg, #d7ecee 0%, #f5fbfb 100%)" }}
                   >
                     <div className="flex items-center justify-between gap-2 mb-2.5">
                       <div className="flex items-center gap-2.5 min-w-0">
                         <span
                           aria-hidden
                           className="shrink-0 flex items-center justify-center w-11 h-11 rounded-full text-white shadow-sm"
-                          style={{ background: "#D8497A" }}
+                          style={{ background: "#2f7f8c" }}
                         >
                           <CalendarBlank size={22} weight="fill" />
                         </span>
                         <div className="min-w-0">
-                          <h3 className="text-[16px] font-bold leading-tight" style={{ color: "#7a2345" }}>Événements à venir</h3>
-                          <p className="text-[11.5px] leading-snug" style={{ color: "#a8365f" }}>Concerts, festivals, sorties près de chez toi</p>
+                          <h3 className="text-[16px] font-bold leading-tight" style={{ color: "#0d4a52" }}>Événements à venir</h3>
+                          <p className="text-[11.5px] leading-snug" style={{ color: "#1f6e78" }}>Concerts, festivals, sorties près de chez toi</p>
                         </div>
                       </div>
                       <button
@@ -2792,7 +2785,7 @@ export default function DirectoryClient({
                           }
                         }}
                         className="shrink-0 text-[13px] font-semibold active:scale-[.98]"
-                        style={{ color: "#a8365f" }}
+                        style={{ color: "#1f6e78" }}
                       >
                         Voir tout ›
                       </button>
@@ -2822,7 +2815,7 @@ export default function DirectoryClient({
                               {shortDate && (
                                 <span
                                   className="absolute top-1.5 left-1.5 px-1.5 py-0.5 rounded-pill bg-white text-[10.5px] font-bold shadow-sm"
-                                  style={{ color: "#a8365f" }}
+                                  style={{ color: "#1f6e78" }}
                                 >
                                   {shortDate}
                                 </span>
@@ -2846,7 +2839,7 @@ export default function DirectoryClient({
                         })}
                       </div>
                     ) : (
-                      <p className="text-[11.5px] font-semibold" style={{ color: "#a8365f" }}>
+                      <p className="text-[11.5px] font-semibold" style={{ color: "#1f6e78" }}>
                         Bientôt de nouveaux événements…
                       </p>
                     )}
