@@ -1120,7 +1120,11 @@ export default function DirectoryClient({
       count: tablesFleuries.length,
       badge: (
         <span className="h-14 w-14 shrink-0 inline-flex items-center justify-center rounded-full bg-surface shadow-card">
-          <CriteriaFlowers ratings={{ gout: 5 }} size={26} />
+          <CriteriaFlowers
+            ratings={{ gout: 5, qualitePrix: 5, cadre: 5, accueil: 5 }}
+            size={20}
+            className="grid grid-cols-2 gap-0.5 place-items-center"
+          />
         </span>
       ),
       onClick: () => {
@@ -1132,8 +1136,8 @@ export default function DirectoryClient({
     },
     {
       key: "reco",
-      title: "Sorties & activités recommandées",
-      subtitle: "Adresses testées et approuvées, hors restauration",
+      title: "Activités coups de cœur",
+      subtitle: "Adresses testées et approuvées",
       tint: SELECTION_COLOR,
       count: recoSorties.length,
       badge: <SpecialBadge variant="selection" className="h-14 w-14 shrink-0 drop-shadow" />,
