@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { BannerBackdrop } from "./BannerBackdrop";
+import { HistoryBackLink } from "./HistoryBackLink";
 import { ArrowLeft } from "@phosphor-icons/react/dist/ssr";
 
 /** Bandeau pour les pages "Seconde main"/"Mon compte" — routes Next.js
@@ -9,10 +10,11 @@ import { ArrowLeft } from "@phosphor-icons/react/dist/ssr";
  *  l'accueil. La flèche retour (cf. BackButton) est aussi affichée au
  *  niveau du titre de chaque page, pour rester au plus près du contenu ;
  *  pas de recherche ici, ces pages n'en ont pas. */
-export function MarketplaceHeader() {
+export function MarketplaceHeader({ historyBack = false }: { historyBack?: boolean }) {
+  const Back = historyBack ? HistoryBackLink : Link;
   return (
     <header className="relative z-30 overflow-hidden bg-bg">
-      <Link
+      <Back
         href="/"
         aria-label="Retour à l'accueil"
         className="relative flex items-center w-full px-4 lg:px-5 h-[88px] hover:opacity-90 active:scale-[.98] transition"
@@ -22,7 +24,7 @@ export function MarketplaceHeader() {
         <span className="relative shrink-0 w-9 h-9 -ml-1 rounded-full flex items-center justify-center text-white">
           <ArrowLeft size={19} weight="bold" aria-hidden />
         </span>
-      </Link>
+      </Back>
     </header>
   );
 }
