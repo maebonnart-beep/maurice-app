@@ -279,44 +279,6 @@ const Map = dynamic(() => import("./Map"), {
   ),
 });
 
-// Carte d'une sélection « vedette » (coups de cœur, kids friendly) au format
-// des cartes de sélections (photo 4:5 + titre), avec le badge rond Koté Moris
-// en coin pour la distinguer. Accueil (carrousel) + écran Sélections (grille).
-function FeaturedSelectionCard({
-  title,
-  photoUrl,
-  badge,
-  onClick,
-  className = "",
-}: {
-  title: string;
-  photoUrl?: string;
-  badge: string;
-  onClick: () => void;
-  className?: string;
-}) {
-  return (
-    <button
-      onClick={onClick}
-      className={`relative text-left aspect-[4/5] rounded-2xl overflow-hidden shadow-card bg-primary-tint active:scale-[.98] transition-transform ${className}`}
-    >
-      {photoUrl && (
-        // eslint-disable-next-line @next/next/no-img-element
-        <img src={photoUrl} alt="" aria-hidden loading="lazy" className="absolute inset-0 w-full h-full object-cover" />
-      )}
-      <div
-        className="absolute inset-0"
-        style={{ background: "linear-gradient(180deg, rgba(0,0,0,0) 45%, rgba(0,0,0,.72) 100%)" }}
-      />
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img src={badge} alt="" aria-hidden className="absolute top-1.5 left-1.5 w-11 h-11 object-contain drop-shadow" />
-      <span className="absolute inset-x-0 bottom-0 p-2.5">
-        <span className="block font-serif text-[12px] font-semibold leading-tight text-white line-clamp-2">{title}</span>
-      </span>
-    </button>
-  );
-}
-
 // Compte → raccourci vers les listes personnalisées (/mon-compte/listes).
 // Composant à part pour n'appeler useFavoriteLists (requête /api/favorite-lists)
 // que lorsque l'écran Compte est affiché à un utilisateur connecté.
@@ -1138,41 +1100,57 @@ export default function DirectoryClient({
       .sort((a, b) => (b.createdAt as string).localeCompare(a.createdAt as string));
   }, [businesses, account.isPremium]);
 
-  // Accueil → « Adresses kids friendly » : même logique que les coups de cœur,
-  // filtrée sur le thème kids-friendly. Affichée uniquement si l'utilisateur a
-  // coché « J'ai des enfants » dans ses préférences.
-  const kidsFriendly = useMemo(() => {
-    if (!preferences.hasKids) return [];
-    const all = businesses.filter((b) => (b.themes || []).includes("kids-friendly") && b.photoUrl);
-    return shuffleReady ? shuffled(all) : all;
-  }, [businesses, shuffleReady, preferences.hasKids]);
-
-  // Sélections « vedettes » (coups de cœur, kids friendly) : ce sont des filtres
-  // sur les badges/thèmes des fiches, pas des listes de data/selections.ts,
-  // mais présentées comme les autres sélections, en tête du carrousel de
-  // l'accueil et de l'écran Sélections (réorganisation du 2026-09-25 : elles
-  // avaient chacune leur bloc sur l'accueil, en doublon).
-  const featuredSelections: { key: string; title: string; photoUrl?: string; badge: string; onClick: () => void }[] = [];
-  if (coupsDeCoeur.length > 0) {
-    featuredSelections.push({
-      key: "coups-de-coeur",
-      title: "Les coups de cœur de Koté Moris",
-      photoUrl: coupsDeCoeur[0].photoUrl,
-      badge: "/badge-selection.png",
+  // Écran Sélections → « Nos classements » : 3 raccourcis vers les 3 grilles
+  // de notation Koté Moris (tables à fleurs / recommandé hors food / kids
+  // friendly, même code couleur et mêmes badges que le bloc « Comment lire
+  // nos notes » et « À la une » de l'accueil), présentés en rangée compacte
+  // (pas en grandes cartes photo) pour ne pas dupliquer visuellement le
+  // carrousel « À la une » de l'accueil — ici ce sont des points d'entrée
+  // vers le filtre, pas un aperçu des fiches.
+  const recoSorties = useMemo(
+    () => coupsDeCoeur.filter((b) => highlightedCriteria(b).length === 0),
+    [coupsDeCoeur]
+  );
+  const classementShortcuts = [
+    {
+      key: "fleurs",
+      title: "Tables recommandées",
+      subtitle: "Restaurants, cafés, bars notés par la rédaction",
+      tint: "#0a4d53",
+      count: tablesFleuries.length,
+      badge: (
+        <span className="h-10 w-10 shrink-0 inline-flex items-center justify-center rounded-full bg-surface shadow-sm">
+          <CriteriaFlowers ratings={{ gout: 5 }} size={20} />
+        </span>
+      ),
+      onClick: () => {
+        setBrowseAll(true);
+        setFacetBadges(new Set(["fleurs"]));
+        setResultsView("liste");
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      },
+    },
+    {
+      key: "reco",
+      title: "Sorties & activités recommandées",
+      subtitle: "Adresses testées et approuvées, hors restauration",
+      tint: "#0f7a80",
+      count: recoSorties.length,
+      badge: <SpecialBadge variant="selection" className="h-10 w-10 shrink-0" />,
       onClick: () => {
         setBrowseAll(true);
         setFacetBadges(new Set(["selection"]));
         setResultsView("liste");
         window.scrollTo({ top: 0, behavior: "smooth" });
       },
-    });
-  }
-  if (kidsFriendly.length > 0) {
-    featuredSelections.push({
-      key: "kids-friendly",
+    },
+    {
+      key: "kids",
       title: "Adresses kids friendly",
-      photoUrl: kidsFriendly[0].photoUrl,
-      badge: "/badge-kids.png",
+      subtitle: "Des lieux où les enfants sont bien accueillis",
+      tint: "#128a8f",
+      count: kidsAdresses.length,
+      badge: <SpecialBadge variant="kids-friendly" className="h-10 w-10 shrink-0" />,
       onClick: () => {
         setNearMe(false);
         setBrowseAll(true);
@@ -1181,8 +1159,8 @@ export default function DirectoryClient({
         setResultsView("liste");
         window.scrollTo({ top: 0, behavior: "smooth" });
       },
-    });
-  }
+    },
+  ].filter((r) => r.count > 0);
 
   // Accueil → bandeau « Seconde main » : annonces réelles avec au moins une photo.
   const previewListingPhotos = useMemo(
@@ -3447,22 +3425,42 @@ export default function DirectoryClient({
                 </p>
               </div>
 
-              {/* Sélections vedettes (coups de cœur, kids friendly) en tête,
-                  comme dans le carrousel de l'accueil. */}
-              {featuredSelections.length > 0 && (
-                <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 mb-8">
-                  {featuredSelections.map((f) => (
-                    <FeaturedSelectionCard
-                      key={f.key}
-                      title={f.title}
-                      photoUrl={f.photoUrl}
-                      badge={f.badge}
-                      onClick={f.onClick}
-                    />
-                  ))}
+              {/* Nos classements : 3 raccourcis compacts vers les grilles de notation
+                  (tables à fleurs / recommandé hors food / kids friendly), en rangée
+                  fine pour rester des points d'entrée vers un filtre — pas des cartes
+                  photo qui dupliqueraient le carrousel « À la une » de l'accueil. */}
+              {classementShortcuts.length > 0 && (
+                <div className="mb-8">
+                  <h3 className="text-[13px] font-bold text-muted uppercase tracking-wide mb-2">Nos classements</h3>
+                  <div className="space-y-2">
+                    {classementShortcuts.map((r) => (
+                      <button
+                        key={r.key}
+                        onClick={r.onClick}
+                        className="w-full flex items-center gap-3 p-2.5 rounded-2xl shadow-sm active:scale-[.99] transition-transform text-left"
+                        style={{ background: `color-mix(in srgb, ${r.tint} 14%, var(--surface))` }}
+                      >
+                        {r.badge}
+                        <span className="flex-1 min-w-0">
+                          <span className="block text-[13.5px] font-bold text-ink leading-tight">{r.title}</span>
+                          <span className="block text-[11.5px] text-muted truncate">{r.subtitle}</span>
+                        </span>
+                        <span className="shrink-0 text-[16px] font-bold text-primary-deep" aria-hidden>›</span>
+                      </button>
+                    ))}
+                  </div>
                 </div>
               )}
 
+              {/* Listes éditoriales Koté Moris : le cœur de l'écran Sélections, mises
+                  en avant avec un vrai titre de section (distinct des classements
+                  ci-dessus, qui sont des filtres et non des listes composées à la main). */}
+              {highlightSelections.length > 0 && (
+                <div className="mb-2.5 flex items-center gap-1.5">
+                  <span aria-hidden>🌴</span>
+                  <h3 className="font-serif text-[17px] font-bold text-ink">Nos listes Koté Moris</h3>
+                </div>
+              )}
               {highlightSelections.length > 0 && (
                 <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 mb-8">
                   {highlightSelections.map((s) => {
