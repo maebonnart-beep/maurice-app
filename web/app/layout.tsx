@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Plus_Jakarta_Sans, Fraunces, Dancing_Script } from "next/font/google";
 import "./globals.css";
 import RegisterServiceWorker from "./RegisterServiceWorker";
+import { InstallPWABanner } from "@/components/ui/InstallPWABanner";
 
 // Polices du design system, auto-hébergées par next/font. Exposées en variables CSS
 // consommées par --font-sans / --font-serif dans globals.css.
@@ -58,6 +59,7 @@ export default function RootLayout({
     <html lang="fr" className={`h-full antialiased ${plusJakarta.variable} ${fraunces.variable} ${dancingScript.variable}`}>
       <body className="min-h-full flex flex-col">
         {children}
+        <InstallPWABanner />
         <RegisterServiceWorker />
       </body>
     </html>
