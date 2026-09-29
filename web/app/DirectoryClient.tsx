@@ -1231,8 +1231,9 @@ export default function DirectoryClient({
     activeThemes.forEach((k) => { if (k !== UNCLASSIFIED) s.add(k); });
     Object.values(facetGroups).forEach((set) => set.forEach((k) => s.add(k)));
     facetPrices.forEach((k) => s.add(k));
+    facetBadges.forEach((k) => s.add(k));
     return s;
-  }, [activeThemes, facetGroups, facetPrices]);
+  }, [activeThemes, facetGroups, facetPrices, facetBadges]);
 
   // Le filtrage flou (Levenshtein) sur ~2000 fiches est coûteux : on le
   // déporte sur `deferredQuery` pour que la frappe reste fluide (React
@@ -3426,26 +3427,23 @@ export default function DirectoryClient({
               </div>
 
               {/* Nos classements : 3 raccourcis compacts vers les grilles de notation
-                  (tables à fleurs / recommandé hors food / kids friendly), en rangée
-                  fine pour rester des points d'entrée vers un filtre — pas des cartes
-                  photo qui dupliqueraient le carrousel « À la une » de l'accueil. */}
+                  (tables à fleurs / recommandé hors food / kids friendly), en tuiles
+                  verticales pour rester des points d'entrée vers un filtre — pas des
+                  cartes photo qui dupliqueraient le carrousel « À la une » de l'accueil. */}
               {classementShortcuts.length > 0 && (
                 <div className="mb-8">
                   <h3 className="text-[13px] font-bold text-muted uppercase tracking-wide mb-2">Nos classements</h3>
-                  <div className="space-y-2">
+                  <div className="grid grid-cols-3 gap-2.5">
                     {classementShortcuts.map((r) => (
                       <button
                         key={r.key}
                         onClick={r.onClick}
-                        className="w-full flex items-center gap-3 p-2.5 rounded-2xl shadow-sm active:scale-[.99] transition-transform text-left"
+                        className="flex flex-col items-center text-center gap-1.5 p-3 rounded-2xl shadow-sm active:scale-[.98] transition-transform"
                         style={{ background: `color-mix(in srgb, ${r.tint} 14%, var(--surface))` }}
                       >
                         {r.badge}
-                        <span className="flex-1 min-w-0">
-                          <span className="block text-[13.5px] font-bold text-ink leading-tight">{r.title}</span>
-                          <span className="block text-[11.5px] text-muted truncate">{r.subtitle}</span>
-                        </span>
-                        <span className="shrink-0 text-[16px] font-bold text-primary-deep" aria-hidden>›</span>
+                        <span className="text-[12.5px] font-bold text-ink leading-tight">{r.title}</span>
+                        <span className="text-[10.5px] text-muted leading-snug line-clamp-2">{r.subtitle}</span>
                       </button>
                     ))}
                   </div>

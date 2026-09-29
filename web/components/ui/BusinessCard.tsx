@@ -83,7 +83,11 @@ export function BusinessCard({
   hiddenKeys?: Set<string>;
 }) {
   // Les fiches à fleurs (restos/bars/cafés) n'affichent pas le badge Reco : les fleurs suffisent.
-  const showSelectionBadge = b.badge === "selection" && highlightedCriteria(b).length === 0;
+  // Un badge déjà impliqué par le filtre actif (ex. dans la liste filtrée « Sorties &
+  // activités recommandées ») est masqué sur la fiche : redondant avec le contexte.
+  const showSelectionBadge = b.badge === "selection" && highlightedCriteria(b).length === 0 && !hiddenKeys?.has("selection");
+  const showKidsBadge = !!b.themes?.includes("kids-friendly") && !hiddenKeys?.has("kids-friendly");
+  const showFlowers = !hiddenKeys?.has("fleurs") && !hiddenKeys?.has("fleurs4");
   const accentColor = accentColorFor(b.badge, b.isAgency, highlightedCriteria(b).length > 0, b.themes?.includes("kids-friendly"));
   const price = b.priceRange ? PRICE_RANGES.find((p) => p.key === b.priceRange) : undefined;
   // Type(s) de lieu (rubriques) : chaque rubrique/thème de la fiche est
@@ -150,12 +154,12 @@ export function BusinessCard({
         </p>
       )}
       <div className="relative flex items-center gap-3 p-2.5">
-      {(showSelectionBadge || b.themes?.includes("kids-friendly")) && (
+      {(showSelectionBadge || showKidsBadge) && (
         <div className="absolute top-1.5 right-1.5 flex items-center gap-1 z-10">
           {showSelectionBadge && (
             <SpecialBadge variant="selection" className="h-9 w-9 shrink-0 drop-shadow-md" />
           )}
-          {b.themes?.includes("kids-friendly") && (
+          {showKidsBadge && (
             <SpecialBadge variant="kids-friendly" className="h-9 w-9 shrink-0 drop-shadow-md" />
           )}
         </div>
@@ -166,7 +170,7 @@ export function BusinessCard({
           <h3 className="m-0 font-serif text-[15.5px] font-semibold leading-[1.2] tracking-[-.005em] truncate">
             {displayName(b.name)}
           </h3>
-          <CriteriaFlowers business={b} size={13} />
+          {showFlowers && <CriteriaFlowers business={b} size={13} />}
         </div>
         {(rubriques.length > 0 || filterTags.length > 0 || b.isAgency || b.providerType) && (
           <p className="m-0 mt-0.5 flex items-center gap-1.5 flex-wrap">
