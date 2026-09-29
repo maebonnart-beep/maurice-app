@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { DownloadSimple, ShareFat, X } from "@phosphor-icons/react";
+import { DownloadSimple, DotsThreeCircle, Export, X } from "@phosphor-icons/react";
 
 const DISMISS_KEY = "km_install_banner_dismissed";
 const SHOW_DELAY_MS = 4000;
@@ -83,7 +83,7 @@ export function InstallPWABanner() {
       <div className="flex items-center gap-3 rounded-2xl bg-primary text-on-primary shadow-pop px-3 py-2.5">
         <span className="w-9 h-9 shrink-0 rounded-xl bg-surface flex items-center justify-center">
           {iosMode ? (
-            <ShareFat size={18} weight="bold" className="text-primary-deep" aria-hidden />
+            <Export size={18} weight="bold" className="text-primary-deep" aria-hidden />
           ) : (
             <DownloadSimple size={18} weight="bold" className="text-primary-deep" aria-hidden />
           )}
@@ -91,9 +91,17 @@ export function InstallPWABanner() {
         <span className="flex-1 min-w-0">
           <span className="block text-[13px] font-bold">Installer KOTÉ MORIS</span>
           <span className="block text-[11.5px] opacity-85">
-            {iosMode
-              ? "Partager, puis « Sur l'écran d'accueil »"
-              : "Accès rapide depuis l'écran d'accueil"}
+            {iosMode ? (
+              <span className="inline-flex flex-wrap items-center gap-x-1">
+                Appuyez sur
+                <Export size={13} weight="bold" className="inline shrink-0" aria-hidden />
+                Partager, puis
+                <DotsThreeCircle size={13} weight="bold" className="inline shrink-0" aria-hidden />
+                Plus, puis « Sur l&apos;écran d&apos;accueil »
+              </span>
+            ) : (
+              "Accès rapide depuis l'écran d'accueil"
+            )}
           </span>
         </span>
         {!iosMode && (
