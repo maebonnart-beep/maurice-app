@@ -1116,11 +1116,11 @@ export default function DirectoryClient({
       key: "fleurs",
       title: "Tables recommandées",
       subtitle: "Restaurants, cafés, bars notés par la rédaction",
-      tint: "#0a4d53",
+      tint: "var(--flower-gout)",
       count: tablesFleuries.length,
       badge: (
-        <span className="h-10 w-10 shrink-0 inline-flex items-center justify-center rounded-full bg-surface shadow-sm">
-          <CriteriaFlowers ratings={{ gout: 5 }} size={20} />
+        <span className="h-14 w-14 shrink-0 inline-flex items-center justify-center rounded-full bg-surface shadow-card">
+          <CriteriaFlowers ratings={{ gout: 5 }} size={26} />
         </span>
       ),
       onClick: () => {
@@ -1134,9 +1134,9 @@ export default function DirectoryClient({
       key: "reco",
       title: "Sorties & activités recommandées",
       subtitle: "Adresses testées et approuvées, hors restauration",
-      tint: "#0f7a80",
+      tint: SELECTION_COLOR,
       count: recoSorties.length,
-      badge: <SpecialBadge variant="selection" className="h-10 w-10 shrink-0" />,
+      badge: <SpecialBadge variant="selection" className="h-14 w-14 shrink-0 drop-shadow" />,
       onClick: () => {
         setBrowseAll(true);
         setFacetBadges(new Set(["selection"]));
@@ -1148,9 +1148,9 @@ export default function DirectoryClient({
       key: "kids",
       title: "Adresses kids friendly",
       subtitle: "Des lieux où les enfants sont bien accueillis",
-      tint: "#128a8f",
+      tint: KIDS_COLOR,
       count: kidsAdresses.length,
-      badge: <SpecialBadge variant="kids-friendly" className="h-10 w-10 shrink-0" />,
+      badge: <SpecialBadge variant="kids-friendly" className="h-14 w-14 shrink-0 drop-shadow" />,
       onClick: () => {
         setNearMe(false);
         setBrowseAll(true);
@@ -2462,11 +2462,11 @@ export default function DirectoryClient({
                       l'harmonie visuelle (même forme de carte, même mise en page). */}
                   <div
                     className="rounded-xl p-2.5"
-                    style={{ background: "color-mix(in srgb, #0a4d53 52%, var(--surface))" }}
+                    style={{ background: "color-mix(in srgb, var(--flower-gout) 30%, var(--surface))" }}
                   >
                     <p
                       className="text-[10.5px] font-bold uppercase tracking-wide"
-                      style={{ color: "#0d4a52" }}
+                      style={{ color: "color-mix(in srgb, var(--flower-gout) 70%, black)" }}
                     >
                       Bars • restaurants • cafés
                     </p>
@@ -2482,11 +2482,11 @@ export default function DirectoryClient({
                   </div>
                   <div
                     className="flex items-start gap-3 rounded-xl p-2.5"
-                    style={{ background: "color-mix(in srgb, #0f7a80 44%, var(--surface))" }}
+                    style={{ background: `color-mix(in srgb, ${SELECTION_COLOR} 22%, var(--surface))` }}
                   >
                     <SpecialBadge variant="selection" className="h-11 w-11 shrink-0" />
                     <div>
-                      <p className="text-[10.5px] font-bold uppercase tracking-wide" style={{ color: "#0d4a52" }}>
+                      <p className="text-[10.5px] font-bold uppercase tracking-wide" style={{ color: `color-mix(in srgb, ${SELECTION_COLOR} 70%, black)` }}>
                         Activités • shopping • sport
                       </p>
                       <p className="mt-0.5 text-[13px] font-semibold text-ink">Recommandé Koté Moris</p>
@@ -2495,11 +2495,11 @@ export default function DirectoryClient({
                   </div>
                   <div
                     className="flex items-start gap-3 rounded-xl p-2.5"
-                    style={{ background: "color-mix(in srgb, #128a8f 40%, var(--surface))" }}
+                    style={{ background: `color-mix(in srgb, ${KIDS_COLOR} 26%, var(--surface))` }}
                   >
                     <SpecialBadge variant="kids-friendly" className="h-11 w-11 shrink-0" />
                     <div>
-                      <p className="text-[10.5px] font-bold uppercase tracking-wide" style={{ color: "#0d4a52" }}>
+                      <p className="text-[10.5px] font-bold uppercase tracking-wide" style={{ color: `color-mix(in srgb, ${KIDS_COLOR} 70%, black)` }}>
                         Sur toutes les fiches
                       </p>
                       <p className="mt-0.5 text-[13px] font-semibold text-ink">Badge Kids friendly</p>
@@ -2555,8 +2555,8 @@ export default function DirectoryClient({
                 const rows = [
                   {
                     key: "fleurs",
-                    tint: "#0a4d53",
-                    strength: 52,
+                    tint: "var(--flower-gout)",
+                    strength: 30,
                     title: "Les tables recommandées",
                     badge: (
                       <span className="h-11 w-11 shrink-0 inline-flex items-center justify-center rounded-full bg-surface shadow-sm">
@@ -2576,17 +2576,17 @@ export default function DirectoryClient({
                   },
                   {
                     key: "reco",
-                    tint: "#0f7a80",
-                    strength: 44,
-                    title: "Nos adresses recommandées",
+                    tint: SELECTION_COLOR,
+                    strength: 22,
+                    title: "Nos adresses coups de cœur",
                     badge: <SpecialBadge variant="selection" className="h-11 w-11 shrink-0" />,
                     list: coupsDeCoeur.filter((b) => highlightedCriteria(b).length === 0),
                     onAll: () => { setBrowseAll(true); setFacetBadges(new Set(["selection"])); },
                   },
                   {
                     key: "kids",
-                    tint: "#128a8f",
-                    strength: 40,
+                    tint: KIDS_COLOR,
+                    strength: 26,
                     title: "Les adresses Kid's friendly",
                     badge: <SpecialBadge variant="kids-friendly" className="h-11 w-11 shrink-0" />,
                     list: kidsAdresses,
@@ -3429,21 +3429,30 @@ export default function DirectoryClient({
               {/* Nos classements : 3 raccourcis compacts vers les grilles de notation
                   (tables à fleurs / recommandé hors food / kids friendly), en tuiles
                   verticales pour rester des points d'entrée vers un filtre — pas des
-                  cartes photo qui dupliqueraient le carrousel « À la une » de l'accueil. */}
+                  cartes photo qui dupliqueraient le carrousel « À la une » de l'accueil.
+                  Badge en médaillon débordant en haut de la tuile (bien visible, taille
+                  réelle) ; la tuile teintée ne porte plus que le texte. Même code
+                  couleur que « Comment lire nos notes ? »/« À la une » de l'accueil :
+                  corail pour les tables à fleurs, violet pour Recommandé, bleu pour
+                  Kids friendly — pour bien distinguer les 3 types au premier coup d'œil. */}
               {classementShortcuts.length > 0 && (
                 <div className="mb-8">
                   <h3 className="text-[13px] font-bold text-muted uppercase tracking-wide mb-2">Nos classements</h3>
-                  <div className="grid grid-cols-3 gap-2.5">
+                  <div className="grid grid-cols-3 gap-2.5 mt-7">
                     {classementShortcuts.map((r) => (
                       <button
                         key={r.key}
                         onClick={r.onClick}
-                        className="flex flex-col items-center text-center gap-1.5 p-3 rounded-2xl shadow-sm active:scale-[.98] transition-transform"
-                        style={{ background: `color-mix(in srgb, ${r.tint} 14%, var(--surface))` }}
+                        className="relative w-full active:scale-[.98] transition-transform"
                       >
-                        {r.badge}
-                        <span className="text-[12.5px] font-bold text-ink leading-tight">{r.title}</span>
-                        <span className="text-[10.5px] text-muted leading-snug line-clamp-2">{r.subtitle}</span>
+                        <span className="absolute -top-7 left-1/2 -translate-x-1/2">{r.badge}</span>
+                        <span
+                          className="flex flex-col items-center text-center gap-1 pt-8 pb-3 px-2 rounded-2xl shadow-sm w-full"
+                          style={{ background: `color-mix(in srgb, ${r.tint} 16%, var(--surface))` }}
+                        >
+                          <span className="text-[12.5px] font-bold text-ink leading-tight">{r.title}</span>
+                          <span className="text-[10.5px] text-muted leading-snug line-clamp-2">{r.subtitle}</span>
+                        </span>
                       </button>
                     ))}
                   </div>
