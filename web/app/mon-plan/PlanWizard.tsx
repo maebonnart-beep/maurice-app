@@ -1,8 +1,9 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useDeferredValue, useMemo, useState } from "react";
 import dynamic from "next/dynamic";
 import type { Business, PriceRange } from "@/lib/types";
+import type { MapBounds } from "../Map";
 import { BusinessCard } from "@/components/ui/BusinessCard";
 import { BusinessDetail } from "@/components/ui/BusinessDetail";
 import { FilterChip } from "@/components/ui/FilterChip";
@@ -163,6 +164,7 @@ export default function PlanWizard({
   const [placeMapOpen, setPlaceMapOpen] = useState(false);
   const [mapSelectedId, setMapSelectedId] = useState<string | null>(null);
   const [mapHoveredId, setMapHoveredId] = useState<string | null>(null);
+  const [placeMapBounds, setPlaceMapBounds] = useState<MapBounds | null>(null);
   // Plan complet : carte des étapes d'un plan (un seul ouvert à la fois, repéré par l'id de son activité).
   const [planMapId, setPlanMapId] = useState<string | null>(null);
 
@@ -180,8 +182,29 @@ export default function PlanWizard({
     () => (placeSubmitted ? buildPlaceList(businesses, placeSubmitted, FILTER_GROUPS) : []),
     [businesses, placeSubmitted],
   );
-  const placeVisible = placeResults.slice(0, (placePage + 1) * RESTO_PAGE_SIZE);
-  const placeHasMore = placeVisible.length < placeResults.length;
+  // Liste sous la carte : uniquement les adresses de la zone visible, une fois
+  // la carte ouverte (le glisser/zoomer passe en basse priorité pour rester fluide).
+  const deferredPlaceMapBounds = useDeferredValue(placeMapBounds);
+  const placeResultsInView = useMemo(() => {
+    if (!placeMapOpen || !deferredPlaceMapBounds) return placeResults;
+    const mb = deferredPlaceMapBounds;
+    return placeResults.filter(
+      // Fiches sans GPS : jamais sur la carte, donc pas de zone à leur appliquer — on les garde toujours dans la liste.
+      (b) =>
+        b.lat === undefined ||
+        b.lng === undefined ||
+        (b.lat <= mb.north && b.lat >= mb.south && b.lng <= mb.east && b.lng >= mb.west),
+    );
+  }, [placeResults, placeMapOpen, deferredPlaceMapBounds]);
+  const placeVisible = placeResultsInView.slice(0, (placePage + 1) * RESTO_PAGE_SIZE);
+  const placeHasMore = placeVisible.length < placeResultsInView.length;
+
+  // Clic direct sur un marqueur : ouvre la fiche (pas juste une sélection/surbrillance).
+  const selectPlaceOnMap = (id: string) => {
+    setMapSelectedId(id);
+    const b = placeResults.find((x) => x.id === id);
+    if (b) setOpenBusiness(b);
+  };
 
   const chooseTheme = (t: PlaceTheme) => {
     setPlaceTheme(t);
@@ -220,6 +243,7 @@ export default function PlanWizard({
       terrace: placeTerrace,
     });
     setPlacePage(0);
+    setPlaceMapBounds(null);
     requestAnimationFrame(() =>
       document.getElementById("lieu-resultats")?.scrollIntoView({ behavior: "smooth", block: "start" }),
     );
@@ -455,13 +479,20 @@ export default function PlanWizard({
               </div>
             )}
 
-            {placeVisible.length > 0 && (
+            {placeResults.length > 0 && (
               <div className="mb-3 flex items-center justify-between gap-2">
                 <p className="text-[12px] font-semibold text-muted">
-                  {placeResults.length} adresse{placeResults.length > 1 ? "s" : ""}
+                  {placeMapOpen
+                    ? `${placeResultsInView.length} adresse${placeResultsInView.length > 1 ? "s" : ""} dans la zone visible`
+                    : `${placeResults.length} adresse${placeResults.length > 1 ? "s" : ""}`}
                 </p>
                 <button
-                  onClick={() => setPlaceMapOpen((v) => !v)}
+                  onClick={() => {
+                    setPlaceMapOpen((v) => !v);
+                    setPlacePage(0);
+                    // Repart sans zone : évite de filtrer avec les bornes d'une carte précédente.
+                    setPlaceMapBounds(null);
+                  }}
                   aria-pressed={placeMapOpen}
                   className="inline-flex items-center gap-1.5 rounded-pill border border-primary px-3 py-1.5 text-[12.5px] font-bold text-primary active:scale-[.97] transition-transform"
                 >
@@ -471,17 +502,23 @@ export default function PlanWizard({
               </div>
             )}
 
-            {placeMapOpen && placeResults.length > 0 ? (
-              <div className="rounded-card border border-border bg-surface shadow-card overflow-hidden isolate h-[65vh]">
+            {placeMapOpen && placeResults.length > 0 && (
+              <div className="mb-3 rounded-card border border-border bg-surface shadow-card overflow-hidden isolate h-[45vh]">
                 <Map
                   businesses={placeResults}
                   selectedId={mapSelectedId}
-                  onSelect={setMapSelectedId}
-                  onBoundsChange={() => {}}
+                  onSelect={selectPlaceOnMap}
+                  onBoundsChange={setPlaceMapBounds}
                   fitKey={`lieu|${placeResults.map((b) => b.id).join(",")}`}
                   hoveredId={mapHoveredId}
                   onHover={setMapHoveredId}
                 />
+              </div>
+            )}
+
+            {placeMapOpen && placeResultsInView.length === 0 ? (
+              <div className="rounded-2xl border border-border bg-surface p-4 text-center text-[13px] text-muted">
+                Aucune adresse dans cette zone. Dézoome ou déplace la carte.
               </div>
             ) : (
               <div className="space-y-3">
@@ -601,7 +638,11 @@ export default function PlanWizard({
                   <Map
                     businesses={steps}
                     selectedId={mapSelectedId}
-                    onSelect={setMapSelectedId}
+                    onSelect={(id) => {
+                      setMapSelectedId(id);
+                      const b = steps.find((x) => x.id === id);
+                      if (b) setOpenBusiness(b);
+                    }}
                     onBoundsChange={() => {}}
                     fitKey={`plan|${steps.map((b) => b.id).join(",")}`}
                     numbered
