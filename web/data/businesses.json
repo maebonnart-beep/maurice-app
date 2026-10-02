@@ -60946,5 +60946,195 @@
       "plages"
     ],
     "createdAt": "2026-09-27T03:13:34+00:00"
+  },
+  {
+    "id": "recital-piano-kenneth-babajie-evt",
+    "name": "Récital de piano classique – Kenneth Babajie",
+    "category": "agenda",
+    "address": "Maison de l'Étoile, Moka",
+    "phone": "",
+    "website": "",
+    "themes": [
+      "evenements-culturels"
+    ],
+    "description": "Récital de piano classique « Les éclats du romantisme » avec Kenneth Babajie : nocturnes, préludes et impromptus de Mendelssohn, Chopin et Grieg, clôturé par deux pièces de Manuel de Falla pour son 150e anniversaire.",
+    "period": "Samedi 3 octobre 2026, 18h30",
+    "eventStartDate": "2026-10-03",
+    "zone": "centre",
+    "eventRecurrence": "ponctuel",
+    "filters": [
+      "concert"
+    ],
+    "createdAt": "2026-10-02T05:04:24+02:00"
+  },
+  {
+    "id": "tedxalche-whats-next-evt",
+    "name": "TEDxALCHE – \"What's Next?\"",
+    "category": "agenda",
+    "address": "Caudan Arts Centre, Port-Louis",
+    "phone": "",
+    "website": "https://caudan.com/caudan-arts-centre/",
+    "themes": [
+      "evenements-culturels"
+    ],
+    "description": "Conférence TEDx réunissant intervenants autour du thème « What's Next ? » : innovation, futur et grandes mutations, à travers témoignages et nouvelles perspectives.",
+    "period": "Lundi 5 octobre 2026, 9h-16h",
+    "eventStartDate": "2026-10-05",
+    "lat": -20.16,
+    "lng": 57.5012,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Caudan%20Arts%20Centre%20Mauritius",
+    "zone": "centre",
+    "eventRecurrence": "annuel-variable",
+    "createdAt": "2026-10-02T05:04:24+02:00"
+  },
+  {
+    "id": "festival-poterie-ceramique-caudan-evt",
+    "name": "Festival de la poterie et de la céramique – Caudan",
+    "category": "agenda",
+    "address": "Caudan Arts Centre, Port-Louis",
+    "phone": "",
+    "website": "https://caudan.com/caudan-arts-centre/events-category/show/",
+    "themes": [
+      "evenements-culturels"
+    ],
+    "description": "Exposition-vente de poterie et céramique ouverte à tous les artisans travaillant la terre locale, sans frais de participation pour les exposants.",
+    "period": "Samedi 25 octobre 2026, 10h-15h",
+    "eventStartDate": "2026-10-25",
+    "lat": -20.16,
+    "lng": 57.5012,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Caudan%20Arts%20Centre%20Mauritius",
+    "zone": "centre",
+    "eventRecurrence": "annuel-variable",
+    "filters": [
+      "festival"
+    ],
+    "createdAt": "2026-10-02T05:04:24+02:00"
+  },
+  {
+    "id": "mfa-shield-ouverture-saison-evt",
+    "name": "MFA Shield – Ouverture de saison",
+    "category": "agenda",
+    "address": "Stade Saint-François-Xavier, Port-Louis",
+    "phone": "",
+    "website": "https://mauritiusfa.mu/",
+    "themes": [
+      "evenements-sportifs"
+    ],
+    "description": "Match d'ouverture de la saison de football mauricien : le champion de Super League affronte le finaliste de la MFA Cup pour le MFA Shield.",
+    "period": "Samedi 31 octobre 2026",
+    "eventStartDate": "2026-10-31",
+    "zone": "centre",
+    "eventRecurrence": "annuel-variable",
+    "createdAt": "2026-10-02T05:04:24+02:00"
+  },
+  {
+    "id": "ganga-asnan-grand-bassin-evt",
+    "name": "Ganga Asnan – Grand Bassin",
+    "category": "agenda",
+    "address": "Grand Bassin (Ganga Talao), Savanne",
+    "phone": "",
+    "website": "",
+    "themes": [
+      "evenements-culturels"
+    ],
+    "description": "Bain rituel dans les eaux sacrées de Grand Bassin (Ganga Talao), assimilées au Gange, célébré le jour de Kartik Purnima.",
+    "period": "Mercredi 4 novembre 2026",
+    "eventStartDate": "2026-11-04",
+    "lat": -20.4149,
+    "lng": 57.492,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Grand%20Bassin%20Ganga%20Talao%20Mauritius",
+    "zone": "ouest",
+    "eventRecurrence": "annuel-variable",
+    "filters": [
+      "culturel-traditionnel"
+    ],
+    "createdAt": "2026-10-02T05:04:24+02:00"
+  },
+  {
+    "id": "king-savers-night-run-blaze-evt",
+    "name": "King Savers Night Run Blaze",
+    "category": "agenda",
+    "address": "Bo Vallon Mall, Grand Port",
+    "phone": "",
+    "website": "https://sportevents.mu/",
+    "themes": [
+      "evenements-sportifs"
+    ],
+    "description": "Course nocturne (night run) organisée à Bo Vallon Mall, dans la région de Grand Port.",
+    "period": "Samedi 14 novembre 2026",
+    "eventStartDate": "2026-11-14",
+    "registrationDeadline": "20 octobre 2026",
+    "zone": "sud",
+    "eventRecurrence": "annuel-variable",
+    "filters": [
+      "course-a-pied"
+    ],
+    "createdAt": "2026-10-02T05:04:24+02:00"
+  },
+  {
+    "id": "misdirection-festival-international-magie-evt",
+    "name": "MISDIRECTION – Festival International de Magie",
+    "category": "agenda",
+    "address": "Caudan Arts Centre, Port-Louis",
+    "phone": "",
+    "website": "https://caudan.com/caudan-arts-centre/events/misdirection-festival-international-de-magie-edition-5/",
+    "themes": [
+      "evenements-culturels"
+    ],
+    "description": "Festival international de magie (5e édition) réunissant artistes du monde entier : grandes illusions, manipulation, mentalisme, certains numéros présentés pour la première fois à Maurice.",
+    "period": "Samedi 21 et dimanche 22 novembre 2026",
+    "eventStartDate": "2026-11-21",
+    "eventEndDate": "2026-11-22",
+    "lat": -20.16,
+    "lng": 57.5012,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Caudan%20Arts%20Centre%20Mauritius",
+    "zone": "centre",
+    "eventRecurrence": "annuel-variable",
+    "filters": [
+      "festival"
+    ],
+    "createdAt": "2026-10-02T05:04:24+02:00"
+  },
+  {
+    "id": "coupe-dor-champ-de-mars-evt",
+    "name": "Coupe d'Or (Duke of York Cup) – Champ de Mars",
+    "category": "agenda",
+    "address": "Hippodrome du Champ de Mars, Port-Louis",
+    "phone": "",
+    "website": "https://www.mtcjockeyclub.com/form-guide/fixtures",
+    "themes": [
+      "evenements-sportifs"
+    ],
+    "description": "Grande finale de la saison hippique mauricienne au Champ de Mars (Duke of York Cup), course classique en weight-for-age qui clôture la saison du Mauritius Turf Club.",
+    "period": "Dimanche 6 décembre 2026",
+    "eventStartDate": "2026-12-06",
+    "lat": -20.1637,
+    "lng": 57.503,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Coupe%20d%27Or%20%E2%80%93%20Champ%20de%20Mars%20Mauritius",
+    "zone": "centre",
+    "eventRecurrence": "annuel-variable",
+    "filters": [
+      "courses-hippiques"
+    ],
+    "createdAt": "2026-10-02T05:04:24+02:00"
+  },
+  {
+    "id": "phare-international-film-festival-evt",
+    "name": "Phare International Film Festival",
+    "category": "agenda",
+    "address": "Ave des Espadons, Albion",
+    "phone": "",
+    "website": "https://www.phare21.com/",
+    "themes": [
+      "evenements-culturels"
+    ],
+    "description": "Festival international du film réunissant réalisateurs locaux et internationaux : courts métrages, longs métrages, documentaires et films d'animation.",
+    "period": "Décembre (dates précises non confirmées à ce jour)",
+    "zone": "ouest",
+    "eventRecurrence": "annuel-variable",
+    "filters": [
+      "festival"
+    ],
+    "createdAt": "2026-10-02T05:04:24+02:00"
   }
 ]
